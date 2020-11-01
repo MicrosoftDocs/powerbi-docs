@@ -81,7 +81,7 @@ For **apps, and for reports and dashboards that are part of an app**, the easies
 
 ![Power BI publish app links ](./media/mobile-apps-links/mobile-link-copy-app-links.png)
 
-#### Links of items not in an app 
+#### Links to items not in an app 
 
 For reports and dashboards that are not part of an app, you need to extract the IDs from the item's URL.
 
@@ -112,20 +112,24 @@ https://app.powerbi.com/groups/me/reports/<report-guid-comes-here>/ReportSection
 ```
 
 Read more about [how to build query param to filter reports](../../collaborate-share/service-url-filters.md).
+
 ## Create a link that opens only on a device the Power BI mobile app installed
+
 You can create and use a uniform resource identifier (URI) to link to a specific location (a *deep link*) within the Power BI mobile apps on all the mobile platforms: iOS, Android devices, and Windows 10.
 
 URI links can point directly to dashboards, tiles, and reports.
 
 The destination of the deep link determines the format of the URI. Follow these steps to create deep links to different locations. 
 
-## Open the Power BI mobile app
+### Open the Power BI mobile app
+
 Use this URI to open the Power BI mobile app on any device:
 
-    mspbi://app/
+```html
+mspbi://app/
+```
+### Open to a specific dashboard
 
-
-## Open to a specific dashboard
 This URI opens the Power BI mobile app to a specific dashboard:
 
 ```html
@@ -136,58 +140,61 @@ To find the 36-character dashboard object id, navigate to the specific dashboard
 
 <code>https<nolink>://powerbi.com/groups/me/dashboards/**61b7e871-cb98-48ed-bddc-6572c921e270**</code>
 
+If the dashboard is not in My Workspace, you need to add the group object ID as well, either before or after the dashboard ID. The following URL from the Power BI service illustrates the IDs you would need to extract from the regular URL in the Power BI service in this case.
 
-If the dashboard is in a group other than My Workspace, add `&GroupObjectId=<36-character-group-id>` either before or after the dashboard ID. For example, 
+<code>mspbi<nolink>://app/OpenDashboard?DashboardObjectId=**e684af3a-9e7f-44ee-b679-b9a1c59b5d60**&GroupObjectId=**8cc900cc-7339-467f-8900-fec82d748248**</code>
+
+Note the ampersand (&) between the two.
+
+### Open to a specific tile in focus
+
+This URI opens a specific tile in focus mode in the Power BI mobile app:
+
 ```html
-mspbi://app/OpenDashboard?DashboardObjectId=e684af3a-9e7f-44ee-b679-b9a1c59b5d60**&GroupObjectId=<8cc900cc-7339-467f-8900-fec82d748248>
+mspbi://app/OpenTile?DashboardObjectId=<36-character-dashboard-id>&TileObjectId=<36-character-tile-id>
 ```
 
-mspbi://app/OpenDashboard?DashboardObjectId=e684af3a-9e7f-44ee-b679-b9a1c59b5d60**&GroupObjectId=8cc900cc-7339-467f-8900-fec82d748248**
+To find the 36-character dashboard and tile object IDs, navigate to the specific dashboard in the Power BI service (https://powerbi.com) and open the tile in focus mode. In the example below the dashboard and tile IDs are highlighted.
 
-Note the ampersand (&) between the two.
+<code>https<nolink>://powerbi.com/groups/me/dashboards/**3784f99f-b460-4d5e-b86c-b6d8f7ec54b7**/tiles/**565f9740-5131-4648-87f2-f79c4cf9c5f5**/infocus</code>
 
-## Open to a specific tile in focus
-This URI opens a specific tile in focus in the Power BI mobile app:
+To open to this tile directly then, the URI would be:
 
-    mspbi://app/OpenTile?DashboardObjectId=<36-character-dashboard-id>&TileObjectId=<36-character-tile-id>
+<code>mspbi<nolink>://app/OpenTile?DashboardObjectId=3784f99f-b460-4d5e-b86c-b6d8f7ec54b7&TileObjectId=565f9740-5131-4648-87f2-f79c4cf9c5f5</code>
 
-To find the 36-character dashboard and tile object IDs, navigate to the specific dashboard in the Power BI service (https://powerbi.com) and open the tile in focus mode. For example, see the highlighted sections of this URL:
+Note the ampersand (&) between the two parameters.
 
-`https://powerbi.com/groups/me/dashboards/**3784f99f-b460-4d5e-b86c-b6d8f7ec54b7**/tiles/**565f9740-5131-4648-87f2-f79c4cf9c5f5**/infocus`
+If the dashboard is not in My Workspace, add the GroupObjectId parameter, e.g. <code>&GroupObjectId=<36-character-group-id></code>
 
-For this tile, the URI would be:
+### Open to a specific report
 
-    mspbi://app/OpenTile?DashboardObjectId=3784f99f-b460-4d5e-b86c-b6d8f7ec54b7&TileObjectId=565f9740-5131-4648-87f2-f79c4cf9c5f5
-
-Note the ampersand (&) between the two.
-
-If the dashboard is in a group other than My Workspace, add `&GroupObjectId=<36-character-group-id>`
-
-## Open to a specific report
 This URI opens a specific report in the Power BI mobile app:
 
-    mspbi://app/OpenReport?ReportObjectId=<36-character-report-id>
+```html
+mspbi://app/OpenReport?ReportObjectId=<36-character-report-id>
+```
 
-To find the 36-character report object id, navigate to the specific report in the Power BI service (https://powerbi.com). For example, see the highlighted section of this URL:
+To find the 36-character report object id, navigate to the specific report in the Power BI service (https://powerbi.com). The following URL from the Power BI service illustrates the report ID you would need to extract.
 
-`https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300`
+<code>https<nolink>://powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**</code>
 
-If the report is in a group other than My Workspace, add `&GroupObjectId=<36-character-group-id>` either before or after the report ID. For example, 
+If the report is not in My Workspace, you need to add `&GroupObjectId=<36-character-group-id>` as well, either before or after the report ID. For example,
 
-mspbi://app/OpenReport?ReportObjectId=e684af3a-9e7f-44ee-b679-b9a1c59b5d60**&GroupObjectId=8cc900cc-7339-467f-8900-fec82d748248**
+<code>mspbi<nolink>://app/OpenReport?ReportObjectId=**e684af3a-9e7f-44ee-b679-b9a1c59b5d60**&GroupObjectId=**8cc900cc-7339-467f-8900-fec82d748248**</code>
 
 Note the ampersand (&) between the two.
 
-## Open to a specific report page
+### Open to a specific report page
+
 This URI opens a specific report page in the Power BI mobile app:
 
-    mspbi://app/OpenReport?ReportObjectId=<36-character-report-id>&reportPage=ReportSection<number>
+```html
+mspbi://app/OpenReport?ReportObjectId=<36-character-report-id>&reportPage=ReportSection<number>
+```
 
-The report page is called "ReportSection" followed by a number. Again, open the report in the Power BI service (https://powerbi.com) and navigate to the specific report page. 
+The report page is called **ReportSection**, followed by a number. Again, to find the values you need, open the report in the Power BI service (https://powerbi.com), navigate to the specific report page, and extract the values you need from the URL. For example, the highlighted sections of this URL represent the values you would need to open to a specific report page:
 
-For example, see the highlighted section of this URL:
-
-`https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/ReportSection11`
+<code>https<nolink>://powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**/ReportSection**11**</code>
 
 ## Open in full-screen mode
 Add the parameter in bold to open to a specific report in full-screen mode:
