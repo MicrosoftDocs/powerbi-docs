@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/23/2020
+ms.date: 10/30/2020
 ms.author: kfollis
 ms.custom: licensing support
 
@@ -123,11 +123,11 @@ The following table lists features that aren't available in a particular governm
 |[Large models](service-premium-large-models.md) | Q4 2020 |Q4 2020| ![not available](../media/no.png) |
 |[Dataflows - SQL Compute engine optimization](../transform-model/service-dataflows-enhanced-compute-engine.md) | Q4 2020 |Q4 2020| ![not available](../media/no.png) |
 |[Dataflows - Direct Query](../transform-model/service-dataflows-directquery.md) | Q4 2020 |Q4 2020|![not available](../media/no.png)|
-|[Service interruption notifications](service-premium-large-models.md)|Q4 2020 |Q4 2020|Q4 2020|
 |[Data Protection (MIP labels)](service-security-sensitivity-label-overview.md)|Q4 2020|Q4 2020 |Q4 2020|
 |[Template apps](../connect-data/service-template-apps-overview.md)<sup>3</sup>|Q4 2020 |Q4 2020| Q4 2020|
 |[Custom Visuals](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|Q4 2020 |Q4 2020| Q4 2020|
 |[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
+|[Bring Your Own Storage (Azure Data Lake Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[QR Code generation](../create-reports/service-create-qr-code-for-tile.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 
 <sup>1</sup> Although B2B Collaboration is available for GCC, the external user must be issued a license in that environment. Commercial cloud licenses aren't valid in GCC. For more information about known limitations with B2B Collaboration for US government, [Compare Azure Government and global Azure](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2)
