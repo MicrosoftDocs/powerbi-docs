@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 09/18/2020
+ms.date: 11/02/2020
 LocalizationGroup: Share your work
 ---
 
@@ -54,6 +54,8 @@ The following steps describe how to use **Publish to web**.
    ![Embed code dialog box](media/service-publish-to-web/publish_to_web5.png)
 
    You can only create one embed code for each report.
+
+If you make changes in the dialog, make sure to copy the updated URL or iFrame to use the updated settings in your page.
 
 
 ### Tips for view modes
@@ -109,11 +111,19 @@ Once you create a **Publish to web** embed code, you can manage your codes from 
 
 ## Updates to reports, and data refresh
 
-After you create your **Publish to web** embed code and share it, the report is updated with any changes you make, and the embed code link is immediately active. Anyone who opens the link can view it. After the initial creation, updates to reports or visuals may take up to two hours before your users see them. The data is cached for one hour from the time it is retrieved. We don’t recommend using Publish to web for data that needs to refresh frequently. To learn more, see the [**How it works**](#howitworks) section later in this article. 
+After you create your **Publish to web** embed code and share it, the report is updated with any changes you make, and the embed code link is immediately active. Anyone who opens the link can view it. The data is cached for one hour from the time it is retrieved. We don’t recommend using Publish to web for data that needs to refresh frequently. To learn more, see the [**How it works**](#howitworks) section later in this article. 
 
 ### Data refresh
 
-Data refreshes are automatically reflected in your embedded report or visual. It can take up to two hours for refreshed data to be visible from embed codes. To disable automatic refresh, select **don't refresh** on the schedule for the dataset the report uses.  
+Data refreshes are automatically reflected in your embedded report or visual. When data is refreshed for an import data model in the Power BI service, the service clears the data cache, making data update quickly. To disable automatic refresh, select **don't refresh** on the schedule for the dataset the report uses.  
+
+### Heavy usage
+
+A heavy usage experience can occur when too many queries are received for a report in a short amount of time. When heavy usage occurs, users won't be able to view or interact with the report until the period of heavy usage has passed. 
+
+It is highly recommended to set a placeholder image for your report. If heavy usage occurs, the placeholder is shown to users. 
+
+To help avoid the heavy usage experince, limit the number of distinct queries your report can generate and the frequency of data refresh.
 
 ## Power BI visuals
 
@@ -150,7 +160,7 @@ You need to be a Microsoft Power BI user to use **Publish to web**. Your report 
 
 When you create an embed code using **Publish to web**, the report is made visible to Internet users. It's publicly available, so you can expect viewers to easily share the report through social media in the future. As users view the report, either by opening the direct public URL or viewing it embedded in a web page or blog, Power BI caches the report definition and the results of the queries required to view the report. This caching ensures that thousands of concurrent users can view the report without impacting performance.
 
-The data is cached for one hour from the time it is retrieved. If you update the report definition (for example, if you change its View mode) or refresh the report data, it can take up to two hours before changes are reflected in the version of the report that your users view. Since each element and data value is cached independently, when a data update occurs a mix of current and previous values can be shown to a user. Therefore, we recommend staging your work ahead of time, and creating the **Publish to web** embed code only when you're satisfied with the settings. If your data will refresh, minimize the number of refreshes and perform the refreshes at off hours. We don’t recommend using Publish to web for data that needs to refresh frequently.
+The data is cached for one hour from the time it is retrieved. If you update the report definition (for example, if you change its View mode) or refresh the report data, it can take some time before changes are reflected in the version of the report that your users view. When a data refresh occurs for an import data model, the cached data is cleared and new data is retrieved. In most cases, the data is updated nearly simultaneous with the import of the data, but for reports  many distinct queries it may take some time to update. Since each element and data value is cached independently, when a data update occurs a mix of current and previous values can be shown to a user. Therefore, we recommend staging your work ahead of time, and creating the **Publish to web** embed code only when you're satisfied with the settings. If your data will refresh, minimize the number of refreshes and perform the refreshes at off hours. We don’t recommend using Publish to web for data that needs to refresh frequently.
 
 ## Find your Power BI administrator
 
