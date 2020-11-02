@@ -12,12 +12,17 @@ ms.author: painbar
 
 ---
 # Create a link to a specific location in the Power BI mobile apps
-Links can be used to directly access specific Power BI content, such as a specific report, report page, dashboard, tile, etc.
+You can use links to directly access specific Power BI content, such as a specific report, report page, dashboard, tile, etc.
 
-For the Power BI mobile apps, there are two two types of links that can be created for opening the Power BI mobile app on a device: 
+There are mainly two scenarios for using links to access content in the Power BI mobile apps: 
 
 * To open Power BI from **outside of the mobile app**, and land on specific content. This is usually an integration scenario, where you are opening the Power BI mobile app from another app. 
-* To **navigate** from one place inside Power BI to another place inside Power BI. This is typically done when you want to create custom navigation in Power BI.
+* To **navigate** inside Power BI. This is typically done when you want to create custom navigation in Power BI.
+
+This article covers the following cases:
+* Using links to open specific Power BI content from outside the mobile app.
+* Using links inside Power BI to navigate to specific Power BI content.
+* Using a report URL with a filter
 
 The second scenario is straightforward. If you want to include a link in an item inside Power BI, such as one of your reports, that points to another Power BI item, you can just copy the URL of the target item from the browser address bar and use that as the link you'll put into your report. **[PUT IN REFERENCE ABOUT INTERITEM LINKING]**
 
@@ -58,14 +63,15 @@ The query parameters are:
 
 In the following examples, placeholders for the parameter values are highlighted in bold. To get the actual values, you open the item you want to link to in the Power BI service and extract the values you need from the item's URL.
 
-* Open an app
+* **Open an app**
 
     https<nolink>://app.powerbi.com/Redirect?action=OpenApp&appId=**&lt;appid-guid&gt;**&ctid=**&lt;ctid-guid&gt;**
    
-* Open a dashboard that is part of an app
+* **Open a dashboard that is part of an app**
 
     https<nolink>://app.powerbi.com/Redirect?action=OpenDashboard&appId=**&lt;appid-guid&gt;**&dashboardObjectId=**&lt;dashboardid-guid&gt;**&ctid=**&lt;ctid-guid&gt;**
-* Open a report that is part of a workspace other than My Workspace
+
+* **Open a report that is part of a workspace other than My Workspace**
 
     https<nolink>://app.powerbi.com/Redirect?Action=OpenReport&reportObjectId=**&lt;reportid-guid&gt;**&groupObjectId=**&lt;groupobjectid-guid&gt;**&reportPage=**ReportSection&lt;num&gt;**
 
@@ -73,29 +79,30 @@ In the following examples, placeholders for the parameter values are highlighted
 
 #### Links to apps and items in apps
 
-For **apps, and for reports and dashboards that are part of an app**, the easiest way to get the link is to go to the app workspace and choose **Update app**. This opens the "publish app" experience. Open the permissions tab and expand the links section to see the links to the app and all its contents. You can use these links to access the app and its contents directly.
+For **apps, and for reports and dashboards that are part of an app**, the easiest way to get the link is to go to the app workspace and choose **Update app**. This opens the "publish app" experience. Open the permissions tab and expand the links section to see the links to the app and all its contents. You can use these links from outside Power BI to access the app and its contents directly.
 
 ![Power BI publish app links ](./media/mobile-apps-links/mobile-link-copy-app-links.png)
 
 #### Links to items that are not in an app 
 
-For reports and dashboards that are not part of an app, you need to extract the object IDs you need from the item's URL. To do this, navigate to the item you want to link to in the Power BI service, and look for the values you need in the URL you see in the browser's address bar.
+For reports and dashboards that are not part of an app, you need to extract the object IDs you need from the item's URL. To do this, navigate to the item you want to link to in the Power BI service and look for the values you need in the URL you see in the browser's address bar.
 
-For example, to find the 36-character dashboard object ID, navigate to the specific dashboard in the Power BI service and find the dashboard object ID and any other required IDs in the places indicated below:
+The examples below show how to look for the IDs you need in the URLs of the items you want to link to.
 
-https<nolink>://app.powerbi.com/groups/me/dashboards/**&lt;dashboard-object-id&gt;**?ctid=**&lt;org-object-id&gt;**
+* To find a 36-character dashboard object ID, navigate to the specific dashboard you want to link to in the Power BI service and find the dashboard object ID and any other required IDs in the places indicated below:
 
-To find the 36-character report object ID, navigate to the specific report in the Power BI service and find the necessary IDs as illustrated below. Note that the example also contains a reference to a specific report page.
+    https<nolink>://app.powerbi.com/groups/me/dashboards/**&lt;dashboard-object-id&gt;**?ctid=**&lt;org-object-id&gt;**
 
-https<nolink>://app.powerbi.com/groups/me/reports/**&lt;report-object-id&gt;**/**ReportSection&lt;num&gt;**?ctid=**&lt;org-object-id&gt;**
+* To find a 36-character report object ID, navigate to the specific report you want to link to in the Power BI service and find the necessary IDs as illustrated below. Note that this example also contains a reference to a specific report page.
 
-The following example, like the one above also points to a specific report with a reference to a specific report page. However, in this case, the report not located in My Workspace, hence a group object ID is required.
-The following is an example of a report from a workspace other than My Workspace. In such cases you need to extract the group object ID as well.
+    https<nolink>://app.powerbi.com/groups/me/reports/**&lt;report-object-id&gt;**/**ReportSection&lt;num&gt;**?ctid=**&lt;org-object-id&gt;**
 
-https<nolink>://app.powerbi.com/groups/**&lt;group-object-id&gt;**/reports/**&lt;report-object-id&gt;**/**ReportSection&lt;report-section-num&gt;**?ctid=**&lt;org-object-id&gt;**
+* To link to an item in a workspace other than My Workspace, you need to extract the group object ID. This example shows shows a report from a workspace other than My Workspace.
+
+    https<nolink>://app.powerbi.com/groups/**&lt;group-object-id&gt;**/reports/**&lt;report-object-id&gt;**/**ReportSection&lt;report-section-num&gt;**?ctid=**&lt;org-object-id&gt;**
 
 ## Use report URL with filter
-Same as Power BI service, Power BI Mobile apps also support report URL that contains a filter query param. You can open a report in Power BI Mobile app and filter it to specific state. 
+Like the Power BI service, the Power BI Mobile apps support report URLs that contain filter query parameters. You can open a report in Power BI Mobile app and filter it to specific state. 
 For example, this URL opens the Sales report and filter it by Territory
 
 ```html
@@ -202,6 +209,23 @@ For example, see the highlighted section of this URL:
 `https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/&context=SlackDeepLink`
 
 mspbi://app/OpenDashboard?DashboardObjectId=<36-character-dashboard-id>
+
+## Use links inside Power BI
+
+Links inside Power BI are working in the mobile apps exactly as in Power BI Service.
+
+If you want to add link to your report that points to another Power BI item, you can just copy that item URL from the browser address bar. Read more about [how to add a hyperlink to a text box in a report](https://docs.microsoft.com/power-bi/service-add-hyperlink-to-text-box).
+
+## Use report URL with filter
+Same as Power BI service, Power BI Mobile apps also support report URL that contains a filter query param. You can open a report in Power BI Mobile app and filter it to specific state. 
+For example, this URL opens the Sales report and filter it by Territory
+
+```html
+https://app.powerbi.com/groups/me/reports/**report guid comes here**/ReportSection3?ctid=**organization id comes here**&filter=Store/Territory eq 'NC'
+```
+
+Read more on [how to build query param to filter reports](https://docs.microsoft.com/power-bi/service-url-filters).
+
 
 
 ## Next steps
