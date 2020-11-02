@@ -48,7 +48,7 @@ Deployment pipelines displays a pipeline stage tag in workspaces that are assign
 
 To use deployment pipelines, you need to have one of the following licenses:
 
-* A [Pro user](../admin/service-admin-purchasing-power-bi-pro.md) license, with [Premium capacity](../admin/service-premium-what-is.md).
+* A [Pro user](../admin/service-admin-purchasing-power-bi-pro.md) license, with a workspace that resides on a [Premium capacity](../admin/service-premium-what-is.md).
 
 * Premium Per User (PPU).
 
