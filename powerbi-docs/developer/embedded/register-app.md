@@ -206,7 +206,7 @@ To change your Azure AD app permissions programmatically, you'll need to get the
 
 5. Grant app permissions to Azure AD, by assigning a value to `consentType`.
 
-# [C#](#tab/C_Sharp)
+# [C#](#tab/CSharp)
 
 You can also change your Azure AD app permissions using C#. This method can be useful if you're considering to automate some of your processes.
 
