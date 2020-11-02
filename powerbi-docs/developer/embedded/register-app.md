@@ -180,6 +180,9 @@ To change your Azure AD app permissions programmatically, you'll need to get the
     }
     ```
 
+    >[!NOTE]
+    >`displayName` is optional.
+
 4. Grant Power BI permissions to your app, by assigning one of these values to `consentType`:
 
     * `AllPrincipals` - Can only be used by a Power BI admin to grant permissions on behalf of all the users in the tenant.
@@ -222,7 +225,7 @@ To change your Azure AD app permissions programmatically, you'll need to get the
 
 # [C#](#tab/CSharp)
 
-You can also change your Azure AD app permissions using C#. This method can be useful if you're considering to automate some of your processes.
+You can also change your Azure AD app permissions using C#. This method can be useful if you're considering to automate some of your processes. For more information regarding the HTTP requests, refer to the [HTTP tab](register-app.md?tabs=customers%2CHTTP#change-your-azure-ad-apps-permissions).
 
 ```csharp
 var graphClient = GetGraphClient();
