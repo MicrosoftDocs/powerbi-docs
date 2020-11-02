@@ -4,8 +4,8 @@ description: SQL Server Analysis Services live data in Power BI. This is done vi
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-author: Minewiskan
-ms.author: owend
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: ""
 ms.date: 08/10/2017

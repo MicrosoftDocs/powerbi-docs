@@ -106,7 +106,7 @@ additionalContent:
           summary: The Power BI REST APIs provide service endpoints for embedding, administration, and user resources.
           url: /rest/api/power-bi/
         - title: Azure Resource Manager REST API
-          summary: An API that provides a RESTful set of web services enabling you to create, retrieve, update, and delete Power BI dedicated capacities.
+          summary: An API that provides a RESTful set of web services enabling you to create, retrieve, update, and delete Power BI capacities.
           url: /rest/api/power-bi-embedded/
         # Card
         - title: Power Platform documentation
