@@ -129,7 +129,7 @@ Use the Azure AD manual app registration only if you're creating an *embed for y
 
 After you register your application, you can make changes to its permissions. Permission changes can be made programmatically, or in the Azure portal.
 
-### Change your app's permissions in the Azure portal 
+# [Azure](#tab/Azure)
 
 In the Azure portal, you can view your app and make changes to its permissions.
 
@@ -157,9 +157,9 @@ In the Azure portal, you can view your app and make changes to its permissions.
     
     2. Select **Remove permission**.
     
-    3. In the *Remove permission* pop-up window, select **Yes, remove**. 
+    3. In the *Remove permission* pop-up window, select **Yes, remove**.
 
-### Change your app's permissions programmatically
+# [Programmatically](#tab/programmatically)
 
 To change your Azure AD app permissions programmatically, you'll need to get the existing service principals (users) within your tenant. For information on how to do that, see [servicePrincipal](/graph/api/resources/serviceprincipal).
 
@@ -219,6 +219,42 @@ To change your Azure AD app permissions programmatically, you'll need to get the
    "startTime":"2017-03-29T14:35:32.4933413+03:00"
    }
    ```
+
+# [C# example](#tab/C#)
+
+You can also change your Azure AD app using C#. This method might be useful if you're considering to automate some of your processes.
+
+```csharp
+var graphClient = GetGraphClient();
+
+currentState.createdApp = await graphClient.Applications
+    .Request()
+    .AddAsync(application);
+
+System.Threading.Thread.Sleep(2000);
+
+var passwordCredential = new PasswordCredential
+{
+    DisplayName = "Client Secret Created in C#"
+};
+
+currentState.createdSecret = await graphClient.Applications[currentState.createdApp.Id]
+    .AddPassword(passwordCredential)
+    .Request()
+    .PostAsync();
+
+var servicePrincipal = new ServicePrincipal
+{
+    AppId = currentState.createdApp.AppId
+};
+
+currentState.createdServicePrincipal = await graphClient.ServicePrincipals
+    .Request()
+    .AddAsync(servicePrincipal);
+
+```
+
+---
 
 ## Next steps
 
