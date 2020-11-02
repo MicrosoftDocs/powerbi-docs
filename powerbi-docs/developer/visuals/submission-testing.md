@@ -16,7 +16,7 @@ Before you publish your visual to [AppSource](https://appsource.microsoft.com/ma
 
 For more information about the publishing process, see [Publish Power BI visuals to Partner Center](./office-store.md).
 
-## Testing a new version of an existing visual
+## Testing a new version of a published visual
 
 If you're testing or debugging a new version of an already published visual, you can override the AppSource version with a local file version, by enabling Developer mode in Power BI Desktop.
 
