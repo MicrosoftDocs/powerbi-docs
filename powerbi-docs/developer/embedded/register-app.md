@@ -159,7 +159,7 @@ In the Azure portal, you can view your app and make changes to its permissions.
     
     3. In the *Remove permission* pop-up window, select **Yes, remove**.
 
-# [HTTP](#tab/programmatically)
+# [HTTP](#tab/HTTP)
 
 To change your Azure AD app permissions programmatically, you'll need to get the existing service principals (users) within your tenant. For information on how to do that, see [servicePrincipal](/graph/api/resources/serviceprincipal).
 
