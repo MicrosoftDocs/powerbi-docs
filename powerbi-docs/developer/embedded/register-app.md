@@ -225,7 +225,9 @@ To change your Azure AD app permissions programmatically, you'll need to get the
 
 # [C#](#tab/CSharp)
 
-You can also change your Azure AD app permissions using C#. This method can be useful if you're considering to automate some of your processes. For more information regarding the HTTP requests, refer to the [HTTP tab](register-app.md?tabs=customers%2CHTTP#change-your-azure-ad-apps-permissions).
+You can also change your Azure AD app permissions using C#. This method can be useful if you're considering to automate some of your processes.
+
+For more information regarding the HTTP requests, refer to the [HTTP tab](register-app.md?tabs=customers%2CHTTP#change-your-azure-ad-apps-permissions).
 
 ```csharp
 var graphClient = GetGraphClient();
