@@ -7,7 +7,7 @@ ms.reviewer: 'swgupt'
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 10/26/2020
+ms.date: 11/01/2020
 ---
 
 # Sample Power BI paginated reports
@@ -16,8 +16,6 @@ ms.date: 10/26/2020
 [!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)]
 
 This article provides information and links to several sample Power BI paginated reports to download and explore. They demonstrate typical ways you can use paginated reports.
-
-If you have feedback on any of these samples, you can send it to [paginatedreportsamples@microsoft.com](mailto:paginatedreportsamples@microsoft.com).
 
 ## Prerequisites
 
