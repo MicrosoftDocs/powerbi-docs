@@ -220,7 +220,7 @@ To change your Azure AD app permissions programmatically, you'll need to get the
    }
    ```
 
-# [C# example](#tab/C#)
+# [C Sharp example](#tab/C Sharp)
 
 You can also change your Azure AD app using C#. This method might be useful if you're considering to automate some of your processes.
 
