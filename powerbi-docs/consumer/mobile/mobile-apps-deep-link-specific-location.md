@@ -20,7 +20,7 @@ There are mainly two scenarios for using links to access content in the Power BI
 * To **navigate** inside Power BI. This is typically done when you want to create custom navigation in Power BI.
 
 This article covers the following cases:
-* Using links to open specific Power BI content from outside the mobile app. Two link formats are described. One uses a redirect method and can be used no matter where Power BI will open. The other opens directly in the Power BI mobile app and can be used only when you know the link will only be opened on a mobile device that has the mobile app installed.
+* Using links to open specific Power BI content from outside the mobile app. Two link formats are described. One uses a redirect method and can be used no matter where Power BI will open. The other opens directly in the Power BI mobile app and will work only on mobile devices that have the mobile app installed.
 * Using links inside Power BI to navigate to specific Power BI content
 * Using a report URL with a filter
 
