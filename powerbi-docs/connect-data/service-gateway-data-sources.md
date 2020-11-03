@@ -1,6 +1,6 @@
 ---
-title: "Manage data sources"
-description: Learn how to manage data sources in Power BI.
+title: "Add or remove a gateway data source"
+description: Learn how to add data sources to an on-premises gateway in Power BI.
 author: arthiriyer
 ms.reviewer: ''
 
@@ -14,7 +14,7 @@ ms.custom: seodec18
 LocalizationGroup: Gateways
 ---
 
-# Manage data sources
+# Add or remove a gateway data source
 
 [!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
@@ -49,7 +49,7 @@ If you don't have a gateway installed yet, see [Install an on-premises data gate
     > [!NOTE]
     > If the selected authentication method is OAuth, any query that runs longer than the OAuth token expiration policy may fail.
 
-6. Under **Advanced settings**, you could configure [Single Sign-On(SSO)](service-gateway-sso-overview.md) for your data source. 
+6. Under **Advanced settings**, you could configure [Single Sign-On (SSO)](service-gateway-sso-overview.md) for your data source. 
 
     ![advanced settings](media/service-gateway-data-sources/advanced-settings-02.png)
 
@@ -98,7 +98,7 @@ If you're listed in the **Users** tab of the data source configured in the gatew
 
 ### Limitations
 
-OAuth is a supported authentication scheme only for custom connectors with the on-premises data gateway. You can't add other data sources that require OAuth. If your dataset has a data source that requires OAuth and this data source isn't a custom connector, you won't be able to use the gateway for scheduled refresh.
+OAuth is a supported authentication scheme only for custom connectors with the on-premises data gateway. You can't add other data sources that require OAuth. If your dataset has a data source that requires OAuth and this data source isn't a custom connector, you can't use the gateway for scheduled refresh.
 
 ## Manage users
 
