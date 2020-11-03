@@ -119,11 +119,11 @@ Data refreshes are automatically reflected in your embedded report or visual. Wh
 
 ### Heavy usage
 
-A heavy usage experience can occur when too many queries are received for a report in a short amount of time. When heavy usage occurs, users won't be able to view or interact with the report until the period of heavy usage has passed. 
+A heavy usage experience can occur when a report receives too many queries in a short amount of time. When heavy usage occurs, users can't view or interact with the report until the period of heavy usage passes. 
 
-It is highly recommended to set a placeholder image for your report. If heavy usage occurs, the placeholder is shown to users. 
+We recommend setting a placeholder image for your report. If heavy usage occurs, users see the placeholder image. 
 
-To help avoid the heavy usage experince, limit the number of distinct queries your report can generate and the frequency of data refresh.
+To help avoid the heavy usage experience, limit the number of distinct queries your report can generate and the frequency of data refresh.
 
 ## Power BI visuals
 
