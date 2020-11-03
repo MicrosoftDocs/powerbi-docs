@@ -13,17 +13,15 @@ ms.date: 10/21/2020
 
 # Create an application for programmatic preconfiguration of template apps
 
-Perhaps Create an application for preconfigured template app installation
+Template apps are a great way for customers to start getting insights from their data. Template apps get them up and running quickly by connecting them to their data and providing them with prebuilt reports that they can then customize if they so desire.
 
-=========Paul=========
+Customers are not always familiar with the details of how to connect to their data, and having to provide these details while installing a template app can be a pain point for them.
 
-If you are a data services provider and have created a template app to help your customers get started with their data on your service, you can make it even easier for them install your template app by providing a special link on your service's website or portal. When clicked, this link will preconfigure the template app with the correct credentials and authentication information, which are known because the customer has logged into your service. Then, when they install the template app, the customer does not have to provide any credentials or authorization information - your application has already preconfigured the template app with the correct information. This saves the customer from having to know about template app parameters they might not be familiar with, and prevents installation failures.
+If you are a data services provider and have created a template app to help your customers get started with their data on your service, you can make it easy for them to install your template app by providing a special link on your service's website or portal. When clicked, this link preconfigures the template app with the necessary connection details and installs the template app for themT. The customer does not have to provide any connection details - all they have to do is give their consent to install, provide any sign in information required, and they are connected to their data. 
 
 The customer experience when clicking a link that launches a template app preconfiguration application is illustrated below. 
 
-![Animated gif of template app preconfiguration application.](media/template-apps-auto-install/template-app-preconfiguration-app-user-experience.gif)
-
-=========Paul=========
+![Illustration of user experience with auto install application.](media/template-apps-auto-install/highlevelflow.png)
 
 In this article, you learn how to:
 > [!div class="checklist"]
