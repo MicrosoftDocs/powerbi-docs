@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 07/24/2020
+ms.date: 10/16/2020
 ---
 
 # Install Power BI Desktop optimized for Power BI Report Server
@@ -40,9 +40,9 @@ The easiest way to be sure you have the most up-to-date version of Power BI Desk
     It starts automatically and you're ready to go.
 
 ## Verify you're using the correct version
-It's easy to verify that you're using the correct Power BI Desktop: Look at the launch screen or title bar within Power BI Desktop. You can tell you have the right version because **Power BI Desktop (May 2020)** is in the title bar. Also, the Power BI logo colors are reversed, yellow on black instead of black on yellow.
+It's easy to verify that you're using the correct Power BI Desktop: Look at the launch screen or title bar within Power BI Desktop. You can tell you have the right version because **Power BI Desktop (October 2020)** is in the title bar. Also, the Power BI logo colors are reversed, yellow on black instead of black on yellow.
 
-![Power BI Desktop May 2020](media/install-powerbi-desktop/power-bi-report-server-desktop-may-2020.png)
+![Power BI Desktop October 2020](media/install-powerbi-desktop/power-bi-report-server-desktop-may-2020.png)
 
 The version of Power BI Desktop for the Power BI service doesn't have the month and year in the title bar.
 
