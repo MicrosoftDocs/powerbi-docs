@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 10/14/2020
+ms.date: 11/03/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
 ---
@@ -84,13 +84,17 @@ By default, a Premium capacity has the XMLA Endpoint property setting enabled fo
 
 ## Connecting to a Premium workspace
 
-Workspaces assigned to a capacity have a connection string in URL format like this, `powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name]`.
+Workspaces assigned to a capacity have a connection string in URL format like this,  
+`powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name]`.
 
-Applications connecting to the workspace use the URL as it were an Analysis Services server name. For example, `powerbi://api.powerbi.com/v1.0/contoso.com/Sales Workspace`.
+Applications connecting to the workspace use the URL as it were an Analysis Services server name. For example,  
+`powerbi://api.powerbi.com/v1.0/contoso.com/Sales Workspace`.
 
-Users with UPNs in the same tenant (not B2B) can replace the tenant name with `myorg`. For example, `powerbi://api.powerbi.com/v1.0/myorg/Sales Workspace`.
+Users with UPNs in the same tenant (not B2B) can replace the tenant name with `myorg`. For example,  
+`powerbi://api.powerbi.com/v1.0/myorg/Sales Workspace`.
 
-B2B users must specify their organization UPN in tenant name. For example, `powerbi://api.powerbi.com/v1.0/fabrikam.com/Sales Workspace`.
+B2B users must specify their organization UPN in tenant name. For example,  
+`powerbi://api.powerbi.com/v1.0/fabrikam.com/Sales Workspace`.
 
 ### To get the workspace connection URL
 
@@ -146,12 +150,16 @@ Other users who have [Build permission](../connect-data/service-datasets-build-p
 
 ### Model roles
 
-Dataset metadata through the XMLA endpoint can create, modify or delete model roles from a dataset, including setting row-level security (RLS) filters. Model roles in Power BI are used only for RLS. Use the Power BI security model to control permissions beyond RLS.
+With the XMLA endpoint, roles can be defined for a dataset, role membership can be defined for Azure Active Directory (AAD) users, and row-level security (RLS) filters can be defined. Model roles in Power BI are used only for RLS. Use the Power BI security model to control permissions beyond RLS.
+
+For tabular model projects being authored in Visual Studio, roles can be defined by using Role Manager in the model designer. For datasets in Power BI, roles can be defined by using SSMS to create role objects and define role properties. In most cases, however, role object definitions can be scripted by using TMSL to create or modify the [Roles object](/analysis-services/tmsl/roles-object-tmsl?view=power-bi-premium-current&preserve-view=true). TMSL scripts can be executed in SSMS or with the [Invoke-ASCmd](/powershell/module/sqlserver/invoke-ascmd?view=sqlserver-ps&preserve-view=true) PowerShell cmdlet.
 
 The following limitations apply when working with dataset roles through the XMLA endpoint:
 
 - The only permission for a role that can be set for Power BI datasets is the Read permission. Build permission for a dataset is required for read access through the XMLA endpoint, regardless of the existence of dataset roles. Use the Power BI security model to control permissions beyond RLS.
-- Object-level security (OLS) rules are not currently supported in Power BI.
+- Object-level security (OLS) rules are currently not supported in Power BI.
+
+To learn more, see [Roles in tabular models](/analysis-services/tabular-models/roles-ssas-tabular).
 
 ### Setting data-source credentials
 
@@ -159,7 +167,16 @@ Metadata specified through the XMLA endpoint can create connections to data sour
 
 ### Service principals
 
-Azure service principals can be used to perform unattended resource and service level operations. To learn more, see [Automate Premium workspace and dataset tasks with service principals](service-premium-service-principal.md).
+Service principals are an Azure Active Directory app registration you create within your tenant to perform unattended resource and service level operations. They're a unique type of user identity with an app name, application ID, tenant ID, and client secret or certificate for a password. Power BI Premium uses the same service principal functionality as Power BI Embedded.
+
+In Power BI Premium, service principals can also be used with the XMLA endpoint to automate dataset management tasks such as provisioning workspaces, deploying models, and dataset refresh with:
+
+- PowerShell
+- Azure Automation
+- Azure Logic Apps
+- Custom client applications
+
+To learn more, see [Automate Premium workspace and dataset tasks with service principals](service-premium-service-principal.md).
 
 ## Deploy model projects from Visual Studio (SSDT)
 
