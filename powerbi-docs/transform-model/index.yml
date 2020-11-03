@@ -84,6 +84,6 @@ landingContent:
       - linkListType: concept
         links:
           - text: "Dataflows: Self-service data prep"
-            url: service-dataflows-overview.md
+            url: ./dataflows/dataflows-introduction-self-service.md
           - text: "Create and use dataflows"
-            url: service-dataflows-create-use.md
+            url: ./dataflows/dataflows-create.md
