@@ -168,9 +168,6 @@ The SSO option takes effect across all datasets that use this data source. It do
 - SQL Server
 - Teradata
 
-> [!Note]
-> Azure Multi-Factor Authentication (MFA) is not supported. Users who want to use SSO with DirectQuery must be exempted from MFA.
-
 ## Next steps
 
 [Connect to data in Power BI Desktop](desktop-quickstart-connect-to-data.md)  
