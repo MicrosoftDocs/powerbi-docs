@@ -5,7 +5,7 @@ services: powerbi
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: include
-ms.date: 10/28/2020
+ms.date: 11/04/2020
 ms.custom: include file
 ---
 
@@ -16,7 +16,7 @@ ms.custom: include file
     * To create a workspace, enter a name for your workspace and select **Create workspace**. Your Workspace name and ID appear in the *Summary* box. Copy these values for later use.
 
     >[!NOTE]
-    >For the embedded analytics sample app to work, you have to create a workspace using the tool.
+    >For the **embedded analytics sample app** to work as expected, you have to create a workspace using the tool.
 
 7. (Optional) In *Step 4 - Import content*, select one of following options:
 
@@ -24,4 +24,4 @@ ms.custom: include file
 
     * If you want to create a sample Power BI app using a sample report, select **Sample Power BI report** and then select **Import**.
 
-    * If you want to create a sample Power BI app using your own report, select **Upload a .pbix file**. After the registration tool uploads your PBIX to the workspace, select **Import**.
+    * If you want to create a sample Power BI app using your own report, select **Upload a .pbix file**, browse for your file and then select **Import**.
