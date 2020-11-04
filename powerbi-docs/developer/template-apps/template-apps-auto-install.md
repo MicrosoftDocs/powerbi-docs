@@ -15,15 +15,21 @@ ms.date: 10/21/2020
 
 Template apps are a great way for customers to start getting insights from their data. Template apps get them up and running quickly by connecting them to their data and providing them with prebuilt reports that they can then customize if they so desire.
 
-Customers are not always familiar with the details of how to connect to their data, and having to provide these details while installing a template app can be a pain point for them.
+Customers are not always familiar with the details of how to connect to their data, and having to provide these details when installing a template app can be a pain point for them.
 
-If you are a data services provider and have created a template app to help your customers get started with their data on your service, you can make it easy for them to install your template app by providing a special link on your service's website or portal. When clicked, this link preconfigures the template app with the necessary connection details and installs the template app for them. The customer does not have to provide any connection details - all they have to do is give their consent to install, provide any sign in information required, and they are connected to their data. 
+If you are a data services provider and have created a template app to help your customers get started with their data on your service, you can make it easier for them to install your template app by creating an application that pre-configures your template app's parameters for them. When the customer logs into your portal, they click a special link you've prepared. This launches your application, which then gathers the information it needs, preconfigures the template app parameters, and redirects the customer to their Power BI account where they can install the app. All they have to do there is click install, authenticate against their data source, and they're good to go! 
 
 The customer experience when clicking a link that launches a template app preconfiguration application is illustrated below. 
 
 ![Illustration of user experience with auto install application.](media/template-apps-auto-install/highlevelflow.png)
 
-In this article, you learn how to:
+This article has two main sections:
+* The first section introduces the steps you need to go through in order to create template app preconfiguration application such as the one described above, and the relevant APIs.
+* If you prefer to just dive in and get started, you can just skip to the second section where you create a application using a simple sample application we've prepared that uses an Azure Function.
+
+
+
+* In this article, you learn how to:
 > [!div class="checklist"]
 > * Register an application in Azure.
 > * Create an application that installs and configures a template app on a customers tenant.
