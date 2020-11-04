@@ -27,7 +27,10 @@ This article has two main sections:
 * The first section introduces the steps you need to go through in order to create template app preconfiguration application such as the one described above, and the relevant APIs.
 * If you prefer to just dive in and get started, you can just skip to the second section where you create a application using a simple sample application we've prepared that uses an Azure Function.
 
+## How to create an application for pre-configured template app installation
 
+
+## Create a short application using our sample application 
 
 * In this article, you learn how to:
 > [!div class="checklist"]
