@@ -1,22 +1,22 @@
 ---
 title: Tips and tricks for color formatting in reports
 description: Tips and tricks for color formatting in Power BI reports
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: 'mihart'
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/18/2020
-ms.author: mihart
+ms.date: 10/29/2020
+ms.author: rien
 
 LocalizationGroup: Visualizations
 ---
-# Tips and tricks for color formatting in Power BI
+# Tips and tricks for using color in reports
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
-Power BI provides many different ways to customize your dashboards and reports. This article details a collection of tips that can make your Power BI visualizations more compelling, interesting, and customized to your needs.
+Power BI provides many different ways to customize your reports. This article details a collection of tips that can make your Power BI visualizations more compelling, interesting, and customized to your needs.
 
 The following tips are provided. Have another great tip? Great! Send it our way and we’ll see about adding it to this list.
 

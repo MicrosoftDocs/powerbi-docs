@@ -1,7 +1,7 @@
 ---
 title: Use the Power BI Q&A visual
 description: How to set up the Power BI Q&A visual
-author: rien
+author: msftrien
 ms.reviewer: mihart
 
 ms.service: powerbi
