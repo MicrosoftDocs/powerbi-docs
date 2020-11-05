@@ -64,7 +64,7 @@ If you don't have a gateway installed yet, see [Install an on-premises data gate
 
 7. Under **Advanced settings**, optionally configure the [privacy level](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) for your data source (doesn't apply to [DirectQuery](desktop-directquery-about.md)).
 
-    :::image type="content" source="media/service-gateway-data-sources/privacy-level.png" alt-text="Privacy level selections.":::image type="content" source="{source}" alt-text="{alt-text}":::
+    :::image type="content" source="media/service-gateway-data-sources/privacy-level.png" alt-text="Privacy level selections.":::
 
 8. Select **Add**. You see *Connection Successful* if the process succeeds.
 
