@@ -56,7 +56,7 @@ Before getting started, you need to have:
 
 * Your own **Azure Active Directory tenant setup**. See [Create an Azure Active Directory tenant](https://docs.microsoft.com/power-bi/developer/embedded/create-an-azure-active-directory-tenant) for instructions how to set one up.
 
-* A **service principal (app-only token)** registered in the above tenant. See [Embed Power BI content with service principal and an application secret](https://docs.microsoft.com/power-bi/developer/embedded/embed-service-principal), for more detail. From this process you need to save the *Application ID* (Client ID) and *Application secret* (Client Secret) for later steps.
+* A **service principal (app-only token)** registered in the above tenant. See [Embed Power BI content with service principal and an application secret](https://docs.microsoft.com/power-bi/developer/embedded/embed-service-principal), for more detail. Make sure to register the application as a **server-side web application** app. You register a server-side web application to create an application secret. From this process you need to save the *Application ID* (Client ID) and *Application secret* (Client Secret) for later steps.
 
 * A **parameterized template app** that is ready for installation. The template app must be created in the same tenant in which you register your application in Azure Active Directory (Azure AD). See [template app tips](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips.md) or [Create a template app in Power BI](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create) for more information. From the template app you need to note the following information for the next steps:
      * *App ID*, *Package Key*, and *Owner ID* as they appear in the installation URL at then end of the [Define the properties of the template app](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app) process when the app was created. You can also get the same link by clicking **Get link** in the template app's [Release Management](../../connect-data/service-template-apps-create.md#manage-the-template-app-release).
@@ -173,7 +173,7 @@ public static string RedirectWithData(string url, string ticket)
 
 ## Tutorial: Create a short application using our sample application
 
-In this section you will use an automated install Azure Function sample that we've created to preconfigure and install your template app. This sample has deliberately been kept simple for demonstration purposes. It allows you to leverage an Azure Function and Azure App Configuration to easily deploy and use the automated install APIs for you template apps. The following is the basic flow of what the application does when the customer launches it by clicking the link on your portal.
+In this tutorial you will use an automated install Azure Function sample that we've created to preconfigure and install your template app. This sample has deliberately been kept simple for demonstration purposes. It allows you to leverage an Azure Function and Azure App Configuration to easily deploy and use the automated install APIs for you template apps. The following is the basic flow of what the application does when the customer launches it by clicking the link on your portal.
 
 1. The user logs in to the ISV's portal. This step initiates the flow. The ISV's portal prepares the user specific configuration at this stage.
 
@@ -196,32 +196,23 @@ Before getting started, you need to have:
 
 * Your own **Azure Active Directory tenant setup**. See [Create an Azure Active Directory tenant](https://docs.microsoft.com/power-bi/developer/embedded/create-an-azure-active-directory-tenant) for instructions how to set one up.
 
-* A **service principal (app-only token)** registered in the above tenant. See [Embed Power BI content with service principal and an application secret](https://docs.microsoft.com/power-bi/developer/embedded/embed-service-principal), for more detail.
+* A **parameterized template app** that is ready for installation. The template app must be created in the same tenant in which you register your application in Azure Active Directory (Azure AD). See [template app tips](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips.md) or [Create a template app in Power BI](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create) for more information. From the template app you need to note the following information for the next steps:
+     * *App ID*, *Package Key*, and *Owner ID* as they appear in the installation URL at then end of the [Define the properties of the template app](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app) process when the app was created. You can also get the same link by clicking **Get link** in the template app's [Release Management](../../connect-data/service-template-apps-create.md#manage-the-template-app-release).
 
-* A **parameterized template app** that is ready to be installed by Power BI users. This template app should be available on AppSource. The template app should be created in the same tenant in which you register your application in Azure Active Directory (Azure AD). See [template app tips](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips.md) or [Create a template app in Power BI](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create) for more information.
+    * *Parameter Names* as they are defined in the template app's dataset. Parameter names are case-sensitive strings and can also be retrieved from the **Parameter Settings** tab when you [Define the properties of the template app](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app) or from the dataset settings in Power BI.
+
+    >[!NOTE]
+    >You can test your preconfigured install application on your template app if the template app is ready for installation, even if it isn't publicly available on AppSource yet. However, for users outside your tenant to be able to use the automated install application to install your template app, the template app must be publicly available in the [Power BI Apps marketplace](https://app.powerbi.com/getdata/services). So before distributing your template app using the automated install application you're creating, be sure to publish it to the [Partner Center](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
 
 ### Set up your template apps automation development environment
 
 Before you continue setting up your application, follow the prerequisite steps described in [Quickstart: Create an Azure Functions app with Azure App Configuration](https://docs.microsoft.com/azure/azure-app-configuration/quickstart-azure-functions-csharp) to develop an Azure Function along with Azure App Configuration. Create your App Configuration as described in the article.
 
-#### Register an application in Azure Active Directory (Azure AD)
+### Register an application in Azure Active Directory (Azure AD)
 
-Create a **service principal**, according to the instructions in [Embed Power BI content with service principal and an application secret](https://docs.microsoft.com/power-bi/developer/embedded/embed-service-principal). Make sure to register the application as a **server-side web application** app. You register a server-side web application to create an application secret. Save the *Application ID* (Client ID) and *Application secret* (Client Secret) for later steps. See XXX for details about how to find these values.
+Create a **service principal (app-only token**, according to the instructions in [Embed Power BI content with service principal and an application secret](../developer/embedded/embed-service-principal.md). Make sure to register the application as a **server-side web application** app. You register a server-side web application to create an application secret. Save the *Application ID* (Client ID) and *Application secret* (Client Secret) for later steps.
 
 You can go through the [Embedding setup tool](https://aka.ms/embedsetup/AppOwnsData), to quickly get started creating an app registration. If you're using the [Power BI App Registration Tool](https://app.powerbi.com/embedsetup), select the *Embed for your customers* option.
-
-### Prepare your template app
-
-Before distributing your template app using the automated install application that you're going to create, make sure to publish it to the [Partner Center](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
-
->[!NOTE]
->For testing purposes, you can always use your automated install application to install template apps you own in your own tenant, even before they are publicly available. Users outside your tenant will not be able to use the automated install APIs to install and configure these template apps until they are publicly available in the [Power BI Apps marketplace](https://app.powerbi.com/getdata/services).
-
-Once you've prepared your template app and it's ready to be installed by your users, save the following information for the next steps:
-
-* *App ID*, *Package Key*, and *Owner ID* as they appear in the installation URL at then end of the [Define the properties of the template app](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create#define-the-properties-of-the-template-app) process when the app was created. You can also get the same link by clicking **Get Link** in the template app's [Release Management](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create#manage-the-template-app-release).
-
-* *Parameter Names* as they are defined in the template app's dataset. Parameter names are case-sensitive strings and can also be retrieved from the **Parameter Settings** tab when you [create an app](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create#manage-the-template-app-release) or from the dataset settings in Power BI.
 
 ### Install and configure your app using our Azure Function sample
 
