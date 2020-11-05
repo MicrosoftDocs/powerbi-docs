@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 09/11/2018
-ms.author: rienhu
+ms.author: rien
 
 LocalizationGroup: Create reports
 ---

@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 11/14/2019
-ms.author: rienhu
+ms.author: rien
 
 LocalizationGroup: Visualizations
 ---

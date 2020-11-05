@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/18/2020
-ms.author: rienhu
+ms.author: rien
 
 LocalizationGroup: Visualizations
 ---
