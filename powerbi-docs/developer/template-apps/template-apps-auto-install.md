@@ -211,7 +211,7 @@ Before you continue setting up your application, follow the prerequisite steps d
 
 ### Register an application in Azure Active Directory (Azure AD)
 
-Create a **service principal (app-only token**, according to the instructions in [Embed Power BI content with service principal and an application secret](../developer/embedded/embed-service-principal.md). Make sure to register the application as a **server-side web application** app. You register a server-side web application to create an application secret. Save the *Application ID* (Client ID) and *Application secret* (Client Secret) for later steps.
+Create a **service principal (app-only token**, according to the instructions in [Embed Power BI content with service principal and an application secret](../embedded/embed-service-principal.md). Make sure to register the application as a **server-side web application** app. You register a server-side web application to create an application secret. Save the *Application ID* (Client ID) and *Application secret* (Client Secret) for later steps.
 
 You can go through the [Embedding setup tool](https://aka.ms/embedsetup/AppOwnsData), to quickly get started creating an app registration. If you're using the [Power BI App Registration Tool](https://app.powerbi.com/embedsetup), select the *Embed for your customers* option.
 
@@ -304,7 +304,7 @@ The keys are also defined in the **Constants.cs** file.
 
 * **Fill in the Application secret**
 
-    Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in **Azure**.  This attribute works when using [service principal](embed-service-principal.md).
+    Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in **Azure**.  This attribute works when using [service principal](../embedded/embed-service-principal.md).
 
     To get the **ApplicationSecret**, follow these steps:
 
