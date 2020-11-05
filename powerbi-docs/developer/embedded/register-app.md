@@ -52,7 +52,7 @@ These steps describe how to register an Azure AD application for the Power BI [e
 
 [!INCLUDE[registration tool step 1](../../includes/register-tool-step-1.md)]
 
-2. In the *Choose an embedding solution*, select **Embed for your customers**.
+2. In the *Choose an embedding solution* section, select **Embed for your customers**.
 
 [!INCLUDE[registration tool step 3](../../includes/register-tool-step-3.md)]
 
@@ -80,7 +80,7 @@ These steps describe how to register an Azure AD application for the Power BI [e
 
 [!INCLUDE[registration tool step 1](../../includes/register-tool-step-1.md)]
 
-2. In the *Choose an embedding solution* window, select **Embed for your organization**.
+2. In the *Choose an embedding solution* section, select **Embed for your organization**.
 
 [!INCLUDE[registration tool step 3](../../includes/register-tool-step-3.md)]
 
