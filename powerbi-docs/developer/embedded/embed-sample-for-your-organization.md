@@ -48,9 +48,9 @@ If you choose to set up the environment manually, you can continue below.
 
 [Register your application](register-app.md) with Azure Active Directory to allow your application access to the [Power BI REST APIs](/rest/api/power-bi/). Registering your application allows you to establish an identity for your application and specify permissions to Power BI REST resources.
 
-You need to proceed with registering a **server-side web application** app. You register a server-side web application to create an application secret.
-
-After creating your application in Azure, open your application in Azure, navigate to *Authentication* and in the *Redirect URIs* add **/Redirect** to the *Redirect URI*.
+>[!NOTE]
+>In your own application you'll need to navigate to *Authentication* and in the *Redirect URIs* field, insert the redirect address.
+To learn more about redirecting, see [Redirect URI (reply URL) restrictions and limitations](https://docs.microsoft.com/azure/active-directory/develop/reply-url).
 
 ## Set up your Power BI environment
 
