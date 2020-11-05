@@ -279,8 +279,6 @@ When creating your embedded solution, it may be useful to configure Visual Studi
 
 4. Add the account that has access to your Azure Key Vault.
 
-[!INCLUDE[service principal limitations](../../includes/service-principal-limitations.md)]
-
 # [Certificate](#tab/certificate)
 
 ## Step 5 - Embed your content
@@ -292,9 +290,9 @@ You can embed your content within a sample application, or within your own appli
 
 Once your content is embedded, you're ready to [move to production](embed-sample-for-customers.md#move-to-production).
 
-[!INCLUDE[service principal limitations](../../includes/service-principal-limitations.md)]
-
 ---
+
+[!INCLUDE[service principal limitations](../../includes/service-principal-limitations.md)]
 
 ## Next steps
 
