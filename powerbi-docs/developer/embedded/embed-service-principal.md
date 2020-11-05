@@ -19,8 +19,8 @@ When you create an Azure Active Directory (Azure AD) app, a [service principal o
 
 To authenticate, the service principal uses the Azure AD app's *Application ID*, and one of the following:
 
-* Application secret
 * Certificate
+* Application secret
 
 >[!NOTE]
 >We recommend that you secure your backend services using certificates, rather than secret keys. [Learn more about getting access tokens from Azure AD using secret keys or certificates](/azure/architecture/multitenant-identity/client-assertion).
