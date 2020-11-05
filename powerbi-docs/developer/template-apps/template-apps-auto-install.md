@@ -35,7 +35,7 @@ This section describes the prerequisites you need to complete before creating yo
 
 The basic flow of what a preconfigured template app install application does when the customer launches it by clicking the link in your portal is as follows:
 
-1. The user logs in to the ISV's portal. This step initiates the flow. The ISV's portal prepares the user specific configuration at this stage.
+1. The user logs in to the ISV's portal and clicks the supplied link. This initiates the flow. The ISV's portal prepares the user specific configuration at this stage.
 
 2. The ISV acquires an **App-only** token based on a [service principal (app-only token)](../embedded/embed-service-principal.md), that is registered in the ISV's tenant.
 
