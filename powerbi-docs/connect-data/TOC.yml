@@ -284,7 +284,7 @@
         href: service-gateway-personal-mode.md
       - name: "Manage gateway data sources"
         items:
-        - name: "Manage data sources"
+        - name: "Add or remove a gateway data source"
           href: service-gateway-data-sources.md
         - name: "Manage your enterprise data source - Analysis Services"
           href: service-gateway-enterprise-manage-ssas.md
