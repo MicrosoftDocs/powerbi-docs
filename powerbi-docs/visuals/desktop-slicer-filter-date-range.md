@@ -2,7 +2,7 @@
 title: Use a relative date slicer or filter in Power BI
 description: Learn how to use a slicer or filter to constrain relative date ranges in Power BI.
 author: maggiesMSFT
-ms.reviewer: ''
+ms.reviewer: 'rien'
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to

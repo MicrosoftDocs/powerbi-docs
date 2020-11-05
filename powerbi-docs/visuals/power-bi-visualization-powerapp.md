@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 06/01/2020
-ms.author: rien
+ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---

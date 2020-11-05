@@ -1,8 +1,8 @@
 ---
 title: Scatter, bubble, and dot plot charts in Power BI
 description: 'Scatter chart, dot plot charts, and bubble charts in Power BI'
-author: mihart
-ms.reviewer: 'amac'
+author: msftrien
+ms.reviewer: 'mihart'
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
