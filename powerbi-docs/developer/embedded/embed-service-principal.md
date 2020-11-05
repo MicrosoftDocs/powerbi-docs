@@ -23,9 +23,7 @@ To authenticate, the service principal uses the Azure AD app's *Application ID*,
 * Certificate
 
 >[!NOTE]
->We recommend that you secure your backend services using certificates, rather than secret keys.
->* [Learn more about getting access tokens from Azure AD using secret keys or certificates](/azure/architecture/multitenant-identity/client-assertion).
->* [Embed Power BI content with service principal and a certificate](embed-service-principal-certificate.md).
+>We recommend that you secure your backend services using certificates, rather than secret keys. [Learn more about getting access tokens from Azure AD using secret keys or certificates](/azure/architecture/multitenant-identity/client-assertion).
 
 ## Method
 
@@ -138,6 +136,17 @@ $key = New-AzureADServicePrincipalPasswordCredential -ObjectId $sp.ObjectId
 [!INCLUDE[service create steps two, three and four](../../includes/service-principal-create-steps.md)]
 
 # [Application secret](#tab/secret)
+
+## Step 5 - Embed your content
+
+You can embed your content within a sample application, or within your own application.
+
+* [Embed content using the sample application](embed-sample-for-customers.md#embed-content-using-the-sample-application)
+* [Embed content within your application](embed-sample-for-customers.md#embed-content-within-your-application)
+
+Once your content is embedded, you're ready to [move to production](embed-sample-for-customers.md#move-to-production).
+
+# [Certificate](#tab/certificate)
 
 ## Step 5 - Create a certificate
 
@@ -278,17 +287,6 @@ When creating your embedded solution, it may be useful to configure Visual Studi
     ![A screenshot showing the account selection option in the Visual Studio options window.](media/embed-service-principal-certificate/account-selection.png)
 
 4. Add the account that has access to your Azure Key Vault.
-
-# [Certificate](#tab/certificate)
-
-## Step 5 - Embed your content
-
-You can embed your content within a sample application, or within your own application.
-
-* [Embed content using the sample application](embed-sample-for-customers.md#embed-content-using-the-sample-application)
-* [Embed content within your application](embed-sample-for-customers.md#embed-content-within-your-application)
-
-Once your content is embedded, you're ready to [move to production](embed-sample-for-customers.md#move-to-production).
 
 ---
 

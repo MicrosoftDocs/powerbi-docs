@@ -44,9 +44,7 @@
       href: embedded-faq.md
   - name: How to
     items:        
-    - name: "Embed using service principal with a certificate"
-      href: embed-service-principal-certificate.md
-    - name: "Embed using service principal with app secret"
+    - name: "Embed using service principal"
       href: embed-service-principal.md    
     - name: "Embed from an app"
       href: embed-from-apps.md
