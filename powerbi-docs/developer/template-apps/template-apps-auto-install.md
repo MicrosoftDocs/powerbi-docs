@@ -169,13 +169,14 @@ public static string RedirectWithData(string url, string ticket)
 }
 ```
 
-> [!Note] While there are various methods of using ```POST``` browser redirects, you should always use the most secure method, which depends on your service needs and restrictions. Remember that some forms of insecure redirection can result in exposing your users or service to security issues.
+>[!Note]
+>While there are various methods of using ```POST``` browser redirects, you should always use the most secure method, which depends on your service needs and restrictions. Remember that some forms of insecure redirection can result in exposing your users or service to security issues.
 
 ## Tutorial: Create a short application using our sample application
 
 In this tutorial you will use an automated install Azure Function sample that we've created to preconfigure and install your template app. This sample has deliberately been kept simple for demonstration purposes. It allows you to leverage an Azure Function and Azure App Configuration to easily deploy and use the automated install APIs for you template apps. The following is the basic flow of what the application does when the customer launches it by clicking the link on your portal.
 
-1. The user logs in to the ISV's portal. This step initiates the flow. The ISV's portal prepares the user specific configuration at this stage.
+1. The user logs in to the ISV's portal and clicks the supplied link. This initiates the flow. The ISV's portal prepares the user specific configuration at this stage.
 
 2. The ISV acquires an **App-only** token based on a [service principal (app-only token)](../embedded/embed-service-principal.md), that is registered in the ISV's tenant.
 
@@ -269,11 +270,11 @@ The keys are also defined in the **Constants.cs** file.
 
     4. Select the app version and get its install link.
 
-        ![Get link](media/template-apps-auto-install/release-management-002.png)
+        ![Screenshot of Release Management button.](media/template-apps-auto-install/release-management-002.png)
 
     5. Copy the link to clipboard.
 
-        ![Get link](media/template-apps-auto-install/release-management-003.png)
+        ![screenshot of Get link button.](media/template-apps-auto-install/release-management-003.png)
 
     6. This install URL hold the 3 url parameters whose values you need. Use the **appId**, **packageKey** & **ownerId** values for the application. A sample URL will be similar to what is shown below.
 
