@@ -25,9 +25,9 @@ Before registering your app, decide which of the following solutions is best sui
 
 Use the [embed for your customers](embed-sample-for-customers.md) solution, also known as *app owns data*, if you're planning to create an application that's designed for your customers. Users will not need to sign in to Power BI or have a Power BI license, to use your application. Your application will use one of the following methods to authenticate against Power BI:
 
-* *Master user* account (a Power BI Pro license used for signing in to Power BI)
+* **Master user** account (a Power BI Pro license used for signing in to Power BI)
 
-*  [service principal](embed-service-principal.md)
+*  [Service principal](embed-service-principal.md)
 
 The embed for your customers solution is usually used by independent software vendors (ISVs) and developers who are creating applications for a third party.
 
