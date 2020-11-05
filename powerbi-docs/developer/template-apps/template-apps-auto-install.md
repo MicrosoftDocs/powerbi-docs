@@ -223,8 +223,8 @@ In this section you will use an automated install Azure Function sample that we 
 
 Download [Visual Studio](https://www.visualstudio.com/) (version 2017 or later). Make sure to download the latest [NuGet package](https://www.nuget.org/profiles/powerbi).
 
-#### Step 2: Complete the prerequisites
-Follow the [prerequisites](https://docs.microsoft.com/azure/azure-app-configuration/quickstart-azure-functions-csharp) to develop an Azure Function along with Azure App Configuration.
+#### Step 2: Complete the prerequisites in the Create an Azure Functions app with Azure App Configuration quickstart
+Follow the [prerequisites in the Create an Azure Functions app with Azure App Configuration quickstart](https://docs.microsoft.com/azure/azure-app-configuration/quickstart-azure-functions-csharp) to develop an Azure Function along with Azure App Configuration.
 
 #### Step 3: Download the Automated Install Azure Function sample
 
