@@ -29,8 +29,132 @@ This article has two main sections:
 
 ## How to create an application for pre-configured template app installation
 
+This section describes the prerequisites you need to complete before creating your template app preconfiguration and install application, and the main steps and APIs you need to build the application.
 
-## Create a short application using our sample application 
+## Prerequisites
+
+Before getting started, you need to have:
+
+* A **Power BI Pro license**. If you're not signed up for Power BI Pro, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
+
+* Your own **Azure Active Directory tenant setup**. See [Create an Azure Active Directory tenant](https://docs.microsoft.com/en-us/power-bi/developer/embedded/create-an-azure-active-directory-tenant) for instructions how to set one up.
+
+* A **service principal (app-only token)** registered in the above tenant. See [Embed Power BI content with service principal and an application secret](https://docs.microsoft.com/en-us/power-bi/developer/embedded/embed-service-principal), for more detail. From this process you need to save the *Application ID* (Client ID) and *Application secret* (Client Secret) for later steps.
+
+* A **parameterized template app** that is ready for installation. The template app must be created in the same tenant in which you register your application in Azure Active Directory (Azure AD). See [template app tips](https://docs.microsoft.com/en-us/power-bi/connect-data/service-template-apps-tips.md) or [Create a template app in Power BI](https://docs.microsoft.com/en-us/power-bi/connect-data/service-template-apps-create) for more information. From the template app you need to note the following information for the next steps:
+     * *App ID*, *Package Key*, and *Owner ID* as they appear in the installation URL at then end of the [Define the properties of the template app](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app) process when the app was created. You can also get the same link by clicking **Get link** in the template app's [Release Management](../../connect-data/service-template-apps-create.md#manage-the-template-app-release).
+
+    * *Parameter Names* as they are defined in the template app's dataset. Parameter names are case-sensitive strings and can also be retrieved from the **Parameter Settings** tab when you [Define the properties of the template app](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app) or from the dataset settings in Power BI.
+
+    >[!NOTE]
+    >You can test your preconfigured install application on your template app if the template app is ready for installation, even if it isn't publicly available on AppSource yet. However, for users outside your tenant to be able to use the automated install application to install your template app, the template app must be publicly available in the [Power BI Apps marketplace](https://app.powerbi.com/getdata/services). So before distributing your template app using the automated install application you're creating, be sure to publish it to the [Partner Center](https://docs.microsoft.com/en-us/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
+
+## APIs
+
+Even though the steps to install and configure your template app for your customers are done with [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the codes examples described below are made with the **.NET SDK**.
+
+### Step 1: Create a Power BI client object 
+
+Using Power BI REST APIs requires you to get an **access token** for your [service principal](../embedded/embed-service-principal.md) from **Azure AD**. You're required to get an [Azure AD access token](../embedded/get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) for your Power BI application before you make calls to the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/).
+To create the Power BI Client with your **access token**, you need to create your Power BI client object, which allows you to interact with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/). You create the Power BI client object by wrapping the **AccessToken** with a ***Microsoft.Rest.TokenCredentials*** object.
+
+```csharp
+using Microsoft.IdentityModel.Clients.ActiveDirectory;
+using Microsoft.Rest;
+using Microsoft.PowerBI.Api.V2;
+
+var tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
+
+// Create a Power BI Client object. it's used to call Power BI APIs.
+using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
+{
+    // Your code to goes here.
+}
+```
+
+### Step 2: Create an install ticket
+
+Create an install ticket, which is used for when redirecting your users to Power BI. The API used for this operation is the **CreateInstallTicket** API.
+* [Template Apps CreateInstallTicket](https://docs.microsoft.com/en-us/rest/api/power-bi/templateapps/createinstallticket)
+
+A sample of creating an install ticket for template app installation and configuration is available from the following file in the [sample application](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample).
+
+* InstallTemplateApp/InstallAppFunction.cs
+
+Below is a code example for using the template app *CreateInstallTicket* REST API.
+```csharp
+using Microsoft.PowerBI.Api.V2;
+using Microsoft.PowerBI.Api.V2.Models;
+
+// Create Install Ticket Request.
+InstallTicket ticketResponse = null;
+var request = new CreateInstallTicketRequest()
+{
+    InstallDetails = new List<TemplateAppInstallDetails>()
+    {
+        new TemplateAppInstallDetails()
+        {
+            AppId = Guid.Parse(AppId),
+            PackageKey = PackageKey,
+            OwnerTenantId = Guid.Parse(OwnerId),
+            Config = new TemplateAppConfigurationRequest()
+            {
+                Configuration = Parameters
+                                    .GroupBy(p => p.Name)
+                                    .ToDictionary(k => k.Key, k => k.Select(p => p.Value).Single())
+            }
+        }
+    }
+};
+
+// Issue the request to the REST API using .NET SDK
+InstallTicket ticketResponse = await client.TemplateApps.CreateInstallTicketAsync(request);
+```
+
+### Step 3: Redirect users to Power BI with the ticket
+
+Once you have created an install ticket, you use it to redirect your users to Power BI to continue with the template app install and configuration. This is done by using a ```POST``` method redirection to the template app's install URL, with the install ticket in its request body.
+
+There are various documented methods of how to issue a redirection using ```POST``` requests. Choosing one or another depends on the scenario and how your users interact with your portal or service.
+
+A simple example, mostly used for testing purposes, leverages a form with a hidden field, which automatically submits itself upon loading.
+
+```javascript
+<html>
+    <body onload='document.forms["form"].submit()'>
+        <!-- form method is POST and action is the app install URL -->
+        <form name='form' action='https://app.powerbi.com/....' method='post' enctype='application/json'>
+            <!-- value should be the new install ticket -->
+            <input type='hidden' name='ticket' value='H4sI....AAA='>
+        </form>
+    </body>
+</html>
+```
+
+Below is an example of the [sample application](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample)'s response, which holds the install ticket and automatically redirects users to Power BI. The response for this Azure Function is in fact the same automatically self-submitting form mentioned above.
+
+```csharp
+...
+    return new ContentResult() { Content = RedirectWithData(redirectUrl, ticket.Ticket), ContentType = "text/html" };
+}
+
+...
+
+public static string RedirectWithData(string url, string ticket)
+{
+    StringBuilder s = new StringBuilder();
+    s.Append("<html>");
+    s.AppendFormat("<body onload='document.forms[\"form\"].submit()'>");
+    s.AppendFormat("<form name='form' action='{0}' method='post' enctype='application/json'>", url);
+    s.AppendFormat("<input type='hidden' name='ticket' value='{0}' />", ticket);
+    s.Append("</form></body></html>");
+    return s.ToString();
+}
+```
+
+> [!Note] While there are various methods of using ```POST``` browser redirects, you should always use the most secure method, which depends on your service needs and restrictions. Remember that some forms of insecure redirection can result in exposing your users or service to security issues.
+
+## Tutorial: Create a short application using our sample application 
 
 The following is the basic flow of what the application does when the customer launches it by clicking the link on your portal.
 
@@ -82,6 +206,13 @@ Once you've prepared your template app and it's ready to be installed by your us
 * *App ID*, *Package Key*, and *Owner ID* as they appear in the installation URL at then end of the [Define the properties of the template app](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create#define-the-properties-of-the-template-app) process when the app was created. You can also get the same link by clicking **Get Link** in the template app's [Release Management](https://docs.microsoft.com/en-us/power-bi/connect-data/service-template-apps-create#manage-the-template-app-release).
 
 * *Parameter Names* as they are defined in the template app's dataset. Parameter names are case-sensitive strings and can also be retrieved from the **Parameter Settings** tab when you [create an app](https://docs.microsoft.com/en-us/power-bi/connect-data/service-template-apps-create#manage-the-template-app-release) or from the dataset settings in Power BI.
+
+
+
+
+
+
+
 
 ## Install and configure your app using our Azure Function sample [Need to make title more clear]
 
