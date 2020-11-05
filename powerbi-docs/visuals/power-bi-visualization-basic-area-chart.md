@@ -1,14 +1,14 @@
 ---
 title: Basic Area chart
 description: 'Basic Area chart.'
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: 'mihart'
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/16/2020
-ms.author: rien
+ms.author: rienhu
 
 LocalizationGroup: Visualizations
 ---

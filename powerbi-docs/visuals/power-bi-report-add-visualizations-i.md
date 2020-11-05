@@ -1,14 +1,14 @@
 ---
 title: Part 1, Add visualizations to a Power BI report
 description: 'Part 1, Add visualizations to a Power BI report'
-author: mihart
-ms.reviewer: 'rien'
+author: msftrien
+ms.reviewer: 'mihart'
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 05/06/2020
-ms.author: mihart
+ms.author: rienhu
 LocalizationGroup: Visualizations
 ---
 
