@@ -20,7 +20,7 @@ If a user has access to an app, but the app isn't installed, then embedding fail
 
 ## Embed for Power BI users (User owns data)
 
-To allow auto install of apps for your users, you need to give your application the 'Content Create' permission when [registering your application](register-app.md#register-with-the-power-bi-application-registration-tool), or add it if you already registered your app.
+To allow auto install of apps for your users, you need to give your application the 'Content Create' permission when [registering your application](register-app.md#register-an-azure-ad-app), or add it if you already registered your app.
 
 ![Register app creates content](media/embed-auto-install-app/register-app-create-content.png)
 
