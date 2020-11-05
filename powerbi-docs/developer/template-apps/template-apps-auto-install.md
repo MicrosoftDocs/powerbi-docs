@@ -238,93 +238,90 @@ To run this sample, you need to setup your Azure App Configuration with the valu
 
 The keys are also defined in the **Constants.cs** file.
 
-    <center>
+| Configuration Key | Meaning           |
+|---------------    |-------------------|
+| TemplateAppInstall:Application:AppId | *AppId* from [install URL](#fill-in-the-template-app-properties) |
+| TemplateAppInstall:Application:PackageKey | *PackageKey* from [install URL]((#fill-in-the-template-app-properties) |
+| TemplateAppInstall:Application:OwnerId | *OwnerId* from [install URL]((#fill-in-the-template-app-properties) |
+| TemplateAppInstall:ServicePrincipal:ClientId | Service Principal [Application ID](#fill-in-the-application-id) |
+| TemplateAppInstall:ServicePrincipal:ClientSecret | Service Principal [Application secret](#fill-in-the-application-secret) |
+|||
 
-    | Configuration Key | Meaning           |
-    |---------------    |-------------------|
-    | TemplateAppInstall:Application:AppId | *AppId* from [install URL](#prepare-your-template-app) |
-    | TemplateAppInstall:Application:PackageKey | *PackageKey* from [install URL](#prepare-your-template-app) |
-    | TemplateAppInstall:Application:OwnerId | *OwnerId* from [install URL](#prepare-your-template-app) |
-    | TemplateAppInstall:ServicePrincipal:ClientId | Service Principal [Application ID](#application-ID) |
-    | TemplateAppInstall:ServicePrincipal:ClientSecret | Service Principal [Application secret](#application-secret) |
 
-    </center>
-    
-    The **Constants.cs** file:
+The **Constants.cs** file:
 
-    ![Constant.cs file](media/template-apps-auto-install/constants-app-configuration.png)
+![Constant.cs file](media/template-apps-auto-install/constants-app-configuration.png)
 
-* **Fill in the template app properties**
+##### Fill in the template app properties
+Fill in all relevant Template app properties as they are defined when the app is created. These properties are the template app's **AppId**, **PakcageKey** & **OwnerId**.
 
-    Fill in all relevant Template app properties as they are defined when the app is created. These properties are the template app's **AppId**, **PakcageKey** & **OwnerId**.
+To get the above values, follow these steps:
 
-    To get the above values, follow these steps:
+1. Sign into [Power BI](https://app.powerbi.com).
 
-    1. Sign into [Power BI](https://app.powerbi.com).
+2. Go to the application's original workspace.
 
-    2. Go to the application's original workspace.
+3. Open the Release management pane.
 
-    3. Open the Release management pane.
+    ![Release Management pane](media/template-apps-auto-install/release-management-001.png)
 
-        ![Release Management pane](media/template-apps-auto-install/release-management-001.png)
+4. Select the app version and get its install link.
 
-    4. Select the app version and get its install link.
+    ![Screenshot of Release Management button.](media/template-apps-auto-install/release-management-002.png)
 
-        ![Screenshot of Release Management button.](media/template-apps-auto-install/release-management-002.png)
+5. Copy the link to clipboard.
 
-    5. Copy the link to clipboard.
+    ![screenshot of Get link button.](media/template-apps-auto-install/release-management-003.png)
 
-        ![screenshot of Get link button.](media/template-apps-auto-install/release-management-003.png)
+6. This install URL hold the 3 url parameters whose values you need. Use the **appId**, **packageKey** & **ownerId** values for the application. A sample URL will be similar to what is shown below.
 
-    6. This install URL hold the 3 url parameters whose values you need. Use the **appId**, **packageKey** & **ownerId** values for the application. A sample URL will be similar to what is shown below.
+    ```html
+    https://app.powerbi.com/Redirect?action=InstallApp&appId=3c386...16bf71c67&packageKey=b2df4b...dLpHIUnum2pr6k&ownerId=72f9...1db47&buildVersion=5
+    ```
 
-        ```html
-        https://app.powerbi.com/Redirect?action=InstallApp&appId=3c386...16bf71c67&packageKey=b2df4b...dLpHIUnum2pr6k&ownerId=72f9...1db47&buildVersion=5
-        ```
+##### Fill in the Application ID
 
-* **Fill in the Application ID**
+Fill in the **applicationId** information with the **Application ID** from **Azure**. The **applicationId** is used by the application to identify itself to the users from which you're requesting permissions.
 
-    Fill in the **applicationId** information with the **Application ID** from **Azure**. The **applicationId** is used by the application to identify itself to the users from which you're requesting permissions.
+To get the **applicationId**, follow these steps:
 
-    To get the **applicationId**, follow these steps:
+1. Sign into the [Azure portal](https://portal.azure.com).
 
-    1. Sign into the [Azure portal](https://portal.azure.com).
+2. In the left-hand nav pane, select **All Services**, and select **App Registrations**.
 
-    2. In the left-hand nav pane, select **All Services**, and select **App Registrations**.
+    ![App registration search](media/template-apps-auto-install/embed-sample-for-customers-003.png)
 
-        ![App registration search](media/template-apps-auto-install/embed-sample-for-customers-003.png)
+3. Select the application that needs the **applicationId**.
 
-    3. Select the application that needs the **applicationId**.
+    ![Choosing App](media/template-apps-auto-install/embed-sample-for-customers-006.png)
 
-        ![Choosing App](media/template-apps-auto-install/embed-sample-for-customers-006.png)
+4. There's an **Application ID** that is listed as a GUID. Use this **Application ID** as the **applicationId** for the application.
 
-    4. There's an **Application ID** that is listed as a GUID. Use this **Application ID** as the **applicationId** for the application.
+    ![applicationId](media/template-apps-auto-install/embed-sample-for-customers-007.png)
 
-        ![applicationId](media/template-apps-auto-install/embed-sample-for-customers-007.png)
+##### Fill in the Application secret
 
-* **Fill in the Application secret**
+Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in **Azure**.  This attribute works when using [service principal](../embedded/embed-service-principal.md).
 
-    Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in **Azure**.  This attribute works when using [service principal](../embedded/embed-service-principal.md).
+To get the **ApplicationSecret**, follow these steps:
 
-    To get the **ApplicationSecret**, follow these steps:
+ 1. Sign in to the [Azure portal](https://portal.azure.com).
 
-    1. Sign in to the [Azure portal](https://portal.azure.com).
+ 2. In the left-hand nav pane, select **All services** and then select **App registrations**.
 
-    2. In the left-hand nav pane, select **All services** and then select **App registrations**.
+    ![App registration search](media/template-apps-auto-install/embed-sample-for-customers-003.png)
 
-        ![App registration search](media/template-apps-auto-install/embed-sample-for-customers-003.png)
+3. Select the application that needs to use the **ApplicationSecret**.
 
-    3. Select the application that needs to use the **ApplicationSecret**.
+    ![Choose an app](media/template-apps-auto-install/embed-sample-for-customers-0038.png)
 
-        ![Choose an app](media/template-apps-auto-install/embed-sample-for-customers-0038.png)
+4. Select **Certificates and secrets** under **Manage**.
 
-    4. Select **Certificates and secrets** under **Manage**.
+5. Select **New client secrets**.
 
-    5. Select **New client secrets**.
+6. Enter a name in the **Description** box and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you aren't able to retrieve the key value. If you lose the key value, create a new one in the Azure portal.
 
-    6. Enter a name in the **Description** box and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you aren't able to retrieve the key value. If you lose the key value, create a new one in the Azure portal.
-
-        ![Key value](media/template-apps-auto-install/embed-sample-for-customers-042.png)
+    ![Key value](media/template-apps-auto-install/embed-sample-for-customers-042.png)
 
 #### Step 5 Test your function locally
 
