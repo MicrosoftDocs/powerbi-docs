@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 11/03/2020
+ms.date: 11/05/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
 ---
@@ -55,19 +55,7 @@ These are some of the most common tools used with Azure Analysis Services and SQ
 
 Client applications don't communicate directly with the XMLA endpoint. Instead, they use *client libraries* as an abstraction layer. These are the same client libraries applications use to connect to Azure Analysis Services and SQL Server Analysis Services. Microsoft applications like Excel, SQL Server Management Studio (SSMS), and  Analysis Services projects extension for Visual Studio install all three client libraries and update them along with regular application and extension updates. Developers can also use the client libraries to build custom applications. In some cases, particularly with third-party applications, if not installed with the application, it may be necessary to install newer versions of the client libraries. Client libraries are updated monthly. To learn more, see [Client libraries for connecting to Analysis Services](/azure/analysis-services/analysis-services-data-providers).
 
-## Supported write operations
-
-Dataset metadata is exposed through the client libraries based on the Tabular Object Model (TOM) for developers to build custom applications. This enables Visual Studio and open-source community tools like Tabular Editor to provide additional data modeling and deployment capabilities supported by the Analysis Services engine but not yet supported in Power BI Desktop. Additional data modeling functionality includes:
-
-- [Calculation groups](/analysis-services/tabular-models/calculation-groups?view=power-bi-premium-current&preserve-view=true) for calculation reusability and simplified consumption of complex models.
-
-- [Metadata translations](/analysis-services/tabular-models/translations-in-tabular-models-analysis-services?view=power-bi-premium-current&preserve-view=true) to support multi-language reports and datasets.
-
-- [Perspectives](/analysis-services/tabular-models/perspectives-ssas-tabular?view=power-bi-premium-current&preserve-view=true) to define focused, business-domain specific views of dataset metadata.
-
-Object level security (OLS) is not yet supported in Power BI Premium datasets.
-
-## Optimize datasets for write operations
+## Optimize datasets for write operations by enabling large models
 
 When using the XMLA endpoint for dataset management with write operations, it's recommended you enable the dataset for large models. This reduces the overhead of write operations, which can make them considerably faster. For datasets over 1 GB in size (after compression), the difference can be significant. To learn more, see [Large models in Power BI Premium](service-premium-large-models.md).
 
@@ -156,7 +144,8 @@ For tabular model projects being authored in Visual Studio, roles can be defined
 
 The following limitations apply when working with dataset roles through the XMLA endpoint:
 
-- The only permission for a role that can be set for Power BI datasets is the Read permission. Build permission for a dataset is required for read access through the XMLA endpoint, regardless of the existence of dataset roles. Use the Power BI security model to control permissions beyond RLS.
+- The only permission for a role that can be set for Power BI datasets is the Read permission. 
+- Build permission for a dataset is required for read access through the XMLA endpoint, regardless of the existence of dataset roles. Use the Power BI security model to control permissions beyond RLS.
 - Object-level security (OLS) rules are currently not supported in Power BI.
 
 To learn more, see [Roles in tabular models](/analysis-services/tabular-models/roles-ssas-tabular).
