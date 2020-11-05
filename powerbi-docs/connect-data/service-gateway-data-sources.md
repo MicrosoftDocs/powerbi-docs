@@ -44,7 +44,7 @@ If you don't have a gateway installed yet, see [Install an on-premises data gate
 
 5. Select an **Authentication Method** to use when connecting to the data source. For SQL Server, choose **Windows** or **Basic** (SQL Authentication). Enter the credentials for your data source.
 
-    ![Basic authentication settings](media/service-gateway-data-sources/basic-auth.png)
+   :::image type="content" source="media/service-gateway-data-sources/basic-auth.png" alt-text="Basic authentication settings.":::
 
     > [!NOTE]
     > If the selected authentication method is OAuth, any query that runs longer than the OAuth token expiration policy may fail.
@@ -53,18 +53,18 @@ If you don't have a gateway installed yet, see [Install an on-premises data gate
 
     ![advanced settings](media/service-gateway-data-sources/advanced-settings-02.png)
 
-You could either configure **Use SSO via Kerberos for DirectQuery queries**  or **Use SSO via Kerberos for DirectQuery And Import queries** for DirectQuery-based Reports and **Use SSO via Kerberos for DirectQuery And Import queries** for Refresh-based Reports.
+    You could either configure **Use SSO via Kerberos for DirectQuery queries**  or **Use SSO via Kerberos for DirectQuery And Import queries** for DirectQuery-based Reports and **Use SSO via Kerberos for DirectQuery And Import queries** for Refresh-based Reports.
 
-If you use the **Use SSO via Kerberos for DirectQuery queries** and use this data source for a DirectQuery based Report, it will use the credentials of the user that signs in to the Power BI service. For a Refresh-based Report, it will use the credentials that you enter in the **Username** and **Password** fields.
+    If you use the **Use SSO via Kerberos for DirectQuery queries** and use this data source for a DirectQuery based Report, it will use the credentials of the user that signs in to the Power BI service. For a Refresh-based Report, it will use the credentials that you enter in the **Username** and **Password** fields.
 
-When you use the **Use SSO via Kerberos for DirectQuery And Import queries**, you don't need to provide any credentials. If this data source is used for DirectQuery based Report, it will use the user that's mapped to the (Azure) Active Directory user that signs in to the Power BI service.  For a Refresh based Report, it will use the dataset owner's security context
+    When you use the **Use SSO via Kerberos for DirectQuery And Import queries**, you don't need to provide any credentials. If this data source is used for DirectQuery based Report, it will use the user that's mapped to the (Azure) Active Directory user that signs in to the Power BI service.  For a Refresh based Report, it will use the dataset owner's security context
 
-> [!NOTE]
->SSO for Import Queries is available only for the list of SSO data sources using [Kerberos constrained delegation](service-gateway-sso-kerberos.md).
+    > [!NOTE]
+    >SSO for Import Queries is available only for the list of SSO data sources using [Kerberos constrained delegation](service-gateway-sso-kerberos.md).
 
 7. Under **Advanced settings**, optionally configure the [privacy level](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) for your data source (doesn't apply to [DirectQuery](desktop-directquery-about.md)).
 
-    ![Privacy level](media/service-gateway-data-sources/privacy-level.png)
+    :::image type="content" source="media/service-gateway-data-sources/privacy-level.png" alt-text="Privacy level selections.":::image type="content" source="{source}" alt-text="{alt-text}":::
 
 8. Select **Add**. You see *Connection Successful* if the process succeeds.
 
