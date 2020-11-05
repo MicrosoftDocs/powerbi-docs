@@ -48,11 +48,11 @@ Now that you have a [basic understanding of how to get Power BI content](end-use
 
 6. Choose whether to connect your own data, explore with sample data, or customize and share your new app. Because we've selected a Microsoft sample app, let's start by exploring. 
 
-    ![Explore with sample data](./media/end-user-app-marketing/power-bi-explore-app.png)
+    ![Screenshot shows Get started with your new app with the Explore with sample data option called out.](./media/end-user-app-marketing/power-bi-explore-app.png)
 
 7.  Your new app opens with a dashboard. The app *designer* could have set the app to open to a report instead.  
 
-    ![Explore with sample data](./media/end-user-app-marketing/power-bi-app-new.png)
+    ![Screenshot shows a dashboard for your app.](./media/end-user-app-marketing/power-bi-app-new.png)
 
 
 

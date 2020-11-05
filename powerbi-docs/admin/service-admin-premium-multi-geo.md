@@ -5,9 +5,9 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/26/2019
+ms.date: 10/29/2020
 LocalizationGroup: Premium 
 ---
 
@@ -85,14 +85,16 @@ You can take workspaces out of Multi-Geo capacity in one of two ways:
 - Delete the current capacity where the workspace is located.  This moves the workspace back to shared capacity in the home region.
 - Migrate individual workspaces back to Premium capacity located in the home tenant.
 
+Large-storage format datasets should not be moved from the region where they were created. Reports based on a large-format dataset will not be able to load the dataset, and return a *Cannot load model* error. Move the large-storage format dataset back to its original region to make it available again.
+
 ## Limitations and considerations
 
 - Confirm that any movement you initiate between regions follows all corporate and government compliance requirements prior to initiating data transfer.
 - A cached query stored in a remote region stays in that region at rest. However, other data in transit may go back and forth between multiple geographies.
 - When moving data from one region to another in a Multi-Geo environment, the source data may remain in the region from which the data was moved for up to 30 days. During that time end users don't have access to it. It's removed from this region and destroyed during the 30-day period.
 - Query text and query result traffic for imported data models does not transit through the home region. The report metadata does still come from the remote region, and certain DNS routing states may take traffic out of the region. 
-
 - The [dataflows](../transform-model/service-dataflows-overview.md) feature is not supported on Multi-GEO at this time.
+- Moving large-storage format datasets from the region where they were created will result in reports failing to load the dataset. Move the large-storage dataset back to its original region to make it available. 
 
 ## Next steps
 

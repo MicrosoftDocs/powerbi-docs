@@ -129,9 +129,9 @@ Files in that specified location with the **.pbitool.json** extension are loaded
 
 External Tools can be disabled using **Group Policies** or by editing the registry, which is similar to the process for disabling **Custom Visuals**.
 
-    Registry key: *Software\Policies\Microsoft\Power BI Desktop\*
+* Registry key: *Software\Policies\Microsoft\Power BI Desktop\\*
 
-    Registry value: *EnableExternalTools*
+* Registry value: *EnableExternalTools*
 
 A value of 1 (decimal) enables the use of external tools in Power BI, which is the default value.
 

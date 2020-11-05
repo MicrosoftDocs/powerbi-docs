@@ -1,11 +1,11 @@
 ---
 title: What is Microsoft Power BI Premium?
-description: Power BI Premium provides dedicated capacities for your organization, giving you more dependable performance and larger data volumes, without requiring you to purchase per-user licenses.
+description: Power BI Premium provides capacities for your organization, giving you more dependable performance and larger data volumes, without requiring you to purchase per-user licenses.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: conceptual
 ms.date: 07/28/2020
 ms.custom: licensing support
@@ -26,7 +26,7 @@ You can use Power BI Premium to get dedicated and enhanced resources for your or
 > * Share data with anyone without purchasing a per-user license
 
 
-![Admin portal](media/service-premium-what-is/premium-admin-portal.png) 
+![Screenshot shows the Power B I Admin portal.](media/service-premium-what-is/premium-admin-portal.png) 
 
 This article introduces key features in Power BI Premium. Where necessary, links to additional articles with more detailed information are provided. For more information about Power BI Pro and Power BI Premium, see the _Power BI features comparison_ section of [Power BI pricing](https://powerbi.microsoft.com/pricing/).
 
@@ -135,11 +135,11 @@ Global administrators and Power BI service administrators can create Premium cap
 
 When capacities are created, most administrative tasks are completed in the [Admin portal](service-admin-portal.md).
 
-![Admin portal](media/service-premium-what-is/premium-admin-portal.png)
+![Screenshot shows the Power B I Admin portal with My Workspace selected.](media/service-premium-what-is/premium-admin-portal.png)
 
 Capacity admins can assign workspaces to the capacity, manage user permissions, and assign other admins. Capacity admins can also configure workloads, adjusting memory allocations, and if necessary, restart a capacity, resetting operations in a capacity becomes overloaded.
 
-![Admin portal](media/service-premium-what-is/premium-admin-portal-mgmt.png)
+![Screenshot shows capacity management in the Power BI Admin portal.](media/service-premium-what-is/premium-admin-portal-mgmt.png)
 
 Capacity admins can also make sure a capacity is running smoothly. They can monitor capacity health right in the Admin portal or by using the Premium capacity metrics app.
 
@@ -151,7 +151,7 @@ Monitoring Premium capacities provides administrators with an understanding of h
 
 Monitoring in the portal provides a quick view with high-level metrics indicating loads placed and the resources utilized by your capacity, averaged, over the past seven days. 
 
-![Admin portal](media/service-premium-what-is/premium-admin-portal-health.png)
+![Screenshot shows capacity health in the Power B I Admin portal.](media/service-premium-what-is/premium-admin-portal-health.png)
 
 The **Power BI Premium Capacity Metrics** app provides the most in-depth information into how your capacities are performing. The app provides a high-level dashboard and more detailed reports.
 

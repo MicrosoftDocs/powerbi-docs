@@ -106,9 +106,7 @@ Or, in **Query Editor**:
 1. Right-click in the left **Queries** pane 
 2. Select **New Query > Blank Query** from the menu that appears
 
-In the **Formula bar**, type:
-
-    = MicrosoftAzureConsumptionInsights.Contents
+In the **Formula bar**, type: *= MicrosoftAzureConsumptionInsights.Contents*.
 
 The following image shows a samples collection that appears.
 
@@ -137,12 +135,14 @@ The first step is use the **Azure Consumption Insights** connector described in 
 ### Step 2: Create a query in Advanced Editor
 In **Query Editor**, select **Advanced Editor** from the **Home** ribbon's **Query** section. In the **Advanced Editor** window that appears, enter this query:
 
-    let    
-        enrollmentNumber = "100",
-        optionalParameters = [ numberOfMonth = 6, dataType="DetailCharges" ],
-        data = MicrosoftAzureConsumptionInsights.Contents(enrollmentNumber, optionalParameters)   
-    in     
-        data
+```console
+let    
+    enrollmentNumber = "100",
+    optionalParameters = [ numberOfMonth = 6, dataType="DetailCharges" ],
+    data = MicrosoftAzureConsumptionInsights.Contents(enrollmentNumber, optionalParameters)   
+in     
+    data
+```
 
 ![Screenshot of a dialog to Create a query in Advanced Editor.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_10.png)
 

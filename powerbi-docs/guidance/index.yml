@@ -142,7 +142,7 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: Tenant admin settings
+          - text: Tenant settings
             url: admin-tenant-settings.md 
           - text: On-premises data gateway sizing
             url: gateway-onprem-sizing.md 

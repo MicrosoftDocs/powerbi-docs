@@ -42,7 +42,7 @@
       href: power-bi-data-sources.md
     - name: "Power BI data source prerequisites"
       href: desktop-data-source-prerequisites.md
-    - name: "Using enhanced dataset metadata in Power BI Desktop (preview)"
+    - name: "Using enhanced dataset metadata in Power BI Desktop"
       href: desktop-enhanced-dataset-metadata.md      
     - name: "Work with multidimensional models in Power BI"
       href: desktop-default-member-multidimensional-models.md            
@@ -62,6 +62,8 @@
       items: 
       - name: "Connect to data sources"
         href: desktop-data-sources.md
+      - name: "Use dynamic M query parameters"
+        href: desktop-dynamic-m-query-parameters.md        
       - name: "Create a report on a SharePoint List"
         href: desktop-sharepoint-online-list.md
       - name: "Connect to LinkedIn Sales Navigator"
@@ -182,12 +184,6 @@
         href: service-datasets-copy-reports.md
       - name: "Control the use of datasets"
         href: service-datasets-admin-across-workspaces.md
-    - name: Endorse datasets
-      items: 
-      - name: "Promote datasets"
-        href: service-datasets-promote.md
-      - name: "Certify datasets"
-        href: service-datasets-certify.md
     - name: Get data from databases
       items: 
       - name: "Azure and Power BI"
@@ -288,7 +284,7 @@
         href: service-gateway-personal-mode.md
       - name: "Manage gateway data sources"
         items:
-        - name: "Manage data sources"
+        - name: "Add or remove a gateway data source"
           href: service-gateway-data-sources.md
         - name: "Manage your enterprise data source - Analysis Services"
           href: service-gateway-enterprise-manage-ssas.md

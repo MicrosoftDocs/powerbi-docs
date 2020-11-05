@@ -1,5 +1,5 @@
 ---
-title: Personalize visuals in a report (Preview)
+title: Personalize visuals in a report
 description: Create your own view of a report, without editing it. 
 author: mihart
 ms.reviewer: mihart
@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 09/17/2020
+ms.date: 10/13/2020
 ms.author: mihart
 
 LocalizationGroup: Reports
@@ -41,7 +41,7 @@ Not only does this feature allow for new exploration capabilities. It also inclu
 - Clear out your recent changes
 
 > [!IMPORTANT]
-> The ability to personalize a visual is a Preview feature that must be enabled by the report *designer*. If you don't see the **Personalize this visual** ![Personalize this visual icon](media/end-user-personalize-visuals/power-bi-personalize-visual-icon.png) icon, then the report designer has not enabled this feature for the current report. 
+> The ability to personalize a visual must be enabled by the report *designer*. If you don't see the **Personalize this visual** ![Personalize this visual icon](media/end-user-personalize-visuals/power-bi-personalize-visual-icon.png) icon, then the report designer has not enabled this feature for the current report. Check with the report owner or your Power BI administrator to have the feature enabled. To display contact information for the report owner, select the name of the report from the Power BI menu bar.
 
 ## Personalize visuals in the Power BI service
 
@@ -50,8 +50,6 @@ By personalizing a visual, you can explore your data in many ways, without leavi
 1. Open a report in reading view in the Power BI service.
 
 2. In the menu bar for the visual, select the **Personalize this visual** ![Personalize this visual icon](media/end-user-personalize-visuals/power-bi-personalize-visual-icon.png) icon. 
-
-3. To clear any of the **Personalize** fields, select **More options (...)** and choose **Remove field**.
 
 ### Change the visualization type
 
@@ -68,6 +66,16 @@ Replace the field being used for the X axis by selecting the field that you want
 By adding a legend, you can color-code a visual based on a category. In this example, we're color-coding based on company name. 
 
 :::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-legend.png" alt-text="Add or remove the legend":::
+
+### Change the placement of fields
+
+Using drag and drop, you can change the placement of fields within the same visual property or even across different visual properties. For example, you can quickly move a field in the legend to the axis of a visual.
+
+:::image type="content" source="media/end-user-personalize-visuals/personalize-drag-and-drop.png" alt-text="Screenshot of dragging a field in a visual.":::
+
+You can also quickly reorder the columns of a table or matrix.
+
+:::image type="content" source="media/end-user-personalize-visuals/personalize-reorder-columns.png" alt-text="Screenshot of reordering columns in a table.":::
 
 ### Compare two or more different measures
 Compare and contrast values for different measures by using the + icon to add multiple measures for a visual. To remove a measure, select **More options (...)** and choose **Remove field**.
@@ -109,20 +117,14 @@ Select the eraser icon to clear all recent changes you've made since you opened 
 
 :::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-revert-changes.png" alt-text="Revert recent changes":::
 
-## Limitations and known issues
+## Limitations
 
 Currently the feature has a few limitations to be aware of.
 
-- **Personalize this visual** can be turned off for an entire report or for a particular visual. If you don't have an option to personalize a visual, check with your tenant administrator or the report owner. To display contact information for the report owner, select the name of the report from the Power BI menu bar.
+- **Personalize this visual** can be turned off for an entire report or for a particular visual. If you don't have an option to personalize a visual, check with your Power BI admin or the report owner. To display contact information for the report owner, select the name of the report from the Power BI menu bar.
 - User explorations don't automatically persist. You need to save your view as a personal bookmark to capture your changes.
 - This feature is supported in the Power BI mobile apps for iOS and Android tablets and in the Power BI Windows app; it is not supported in the Power BI mobile apps for phones. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
-
-There are also some known issues that we're addressing:
-
-- Adding a hierarchy isn't supported; you need to add each of the individual child items.
-- With personal bookmarks, you might get results that are slightly different based on the sequence you select. Discrepancies are possible because we don't capture the full state of the report, but just the modifications made. The workaround is to select **Reset to default**, then select the bookmark you want to view. 
 
 ## Next steps
 [Copy a report visual as a static image](../visuals/power-bi-visualization-copy-paste.md)    
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/09/2019
+ms.date: 09/25/2020
 ms.author: kfollis
 
 LocalizationGroup: Administration
@@ -17,174 +17,51 @@ LocalizationGroup: Administration
 
 Microsoft Intune enables organizations to manage devices and applications. The Power BI mobile applications for iOS and Android integrate with Intune. This integration enables you to manage the application on your devices, and to control security. Through configuration policies, you can control items like requiring an access pin, how data is handled by the application, and even encrypting application data when the app is not in use.
 
+The Microsoft Power BI mobile app allows you to get access to your important business information. You can view and interact with your dashboards and reports for all your organization's managed device and app business data. For more information about supported Intune apps, see [Microsoft Intune protected apps](/intune/apps/apps-supported-intune-apps).
+
 ## General mobile device management configuration
 
 This article assumes that Intune is configured properly and you have devices enrolled with Intune. The article is not meant as a full configuration guide for Microsoft Intune. For more information on Intune, see [What is Intune?](/intune/introduction-intune/).
 
-Microsoft Intune can co-exist with Mobile Device Management (MDM) within Microsoft 365. If you're using MDM, the device will show enrolled within MDM, but is available to manage within Intune.
+Microsoft Intune can co-exist with Mobile Device Management (MDM) within Microsoft 365. If you're using MDM, the device will show as enrolled with MDM, but is available to manage in Intune.
+
+Before end users can use the Power BI app on their devices, an Intune admin must add the app to Intune and also assign the app to end users.
 
 > [!NOTE]
 > After you configure Intune, background data refresh is turned off for the Power BI mobile app on your iOS or Android device. Power BI refreshes the data from the Power BI service on the web when you enter the app.
 
-## Step 1: Get the URL for the application
+## Step 1: Add the Power BI app to Intune
 
-Before we create the application within Intune, we need to get the URLs for the apps. For iOS, we will get this from iTunes. For Android, you can get it from the Power BI mobile page.
+To add the Power BI app to Intune, use the steps provided in the following topics:
+- [Add iOS store apps to Microsoft Intune](/intune/apps/store-apps-ios)
+- [Add Android store apps to Microsoft Intune](/intune/apps/store-apps-android)
 
-Save the URL, as you will need it when we create the application.
+## Step 2: Assign the app to your end users
 
-### Get iOS URL
+After you've added the Power BI app to Microsoft Intune, you can assign the app to users and devices. It's important to note that you can assign an app to a device whether or not the device is managed by Intune.
 
-To get the app URL for iOS, we will need to get it from iTunes.
+To assign the Power BI app to users and devices, use the steps provided in [Assign apps to groups with Microsoft Intune](/intune/apps/apps-deploy).
 
-1. Open iTunes.
+## Step 3: Create and assign app protection policies
 
-1. Search for *Power BI*.
+App protection policies (APP) are rules that ensure an organization's data remains safe or contained in a managed app. A policy can be a rule that is enforced when the user attempts to access or move "corporate" data, or a set of actions that are prohibited or monitored when the user is inside the app. A managed app is an app that has app protection policies applied to it, and can be managed by Intune.
 
-1. You should see **Microsoft Power BI** listed under **iPhone Apps** and **iPad Apps**. You can use either, as you will get the same URL.
+Mobile Application Management (MAM) app protection policies allows you to manage and protect your organization's data within an application. With MAM without enrollment (MAM-WE), a work or school-related app that contains sensitive data can be managed on almost any device, including personal devices in bring-your-own-device (BYOD) scenarios. For more information, see [App protection policies overview](/intune/apps/app-protection-policy).
 
-1. Select the **Get** drop down and select **Copy Link**.
+To create and assign an app protection policy for the Power BI app, use the steps provided in [How to create and assign app protection policies](/intune/apps/app-protection-policies).
 
-    ![iTunes app URL](media/service-admin-mobile-intune/itunes-url.png)
+## Step 4: Use the application on a device
 
-It should look similar to the following: *https://itunes.apple.com/us/app/microsoft-power-bi/id929738808?mt=8*.
+Managed apps are apps that your company support can set up to help protect company data that you can access in that app. When you access company data in a managed app on your device, you may notice that the app works a little differently than what you expect. For example, you might not be able to copy and paste protected company data, or you might not be able to save that data to certain locations.
 
-### Get Android URL
-
-You can get the URL to Google Play from the [Power BI mobile page](https://powerbi.microsoft.com/mobile/). Select **Download from Google Play** to take you to the app page. You can copy the URL from the browser address bar. It should look similar to the following: *https://play.google.com/store/apps/details?id=com.microsoft.powerbim*.
-
-## Step 2: Create a mobile application management policy
-
-The mobile application management policy allows you to enforce items like an access pin. You can create one within the Intune portal.
-
-You can create the application, or the policy first. The order in which they are added doesn't matter. They will just need to both exist for the deploy step.
-
-1. In the Intune portal, select **Policy** > **Configuration Policies**.
-
-    ![Intune portal](media/service-admin-mobile-intune/intune-policy.png)
-
-1. Select **Add...**.
-
-1. Under **Software** you can select Mobile Application Management for either Android or iOS. To get started quickly, you can select **Create a policy with the recommended settings**, or you can create a custom policy.
-
-1. Edit the policy to configure the restrictions you want on the application.
-
-## Step 3: Create the application
-
-The application is a reference, or package, that is saved into Intune for deployment. We will need to create an application and reference the app URL that we got from either Google Play or iTunes.
-
-You can create the application, or the policy first. The order in which they are added doesn't matter. They will just need to both exist for the deploy step.
-
-1. Go to the Intune portal and select **Apps** from the left menu.
-
-1. Select **Add App**. This will launch the **Add Software** application.
-
-### Create for iOS
-
-1. Select **Managed iOS App from the App Store** from the drop down.
-
-1. Enter the app URL, that we got from [Step 1](#step-1-get-the-url-for-the-application), and select **Next**.
-
-    ![Software setup: iOS](media/service-admin-mobile-intune/intune-add-software-ios1.png)
-
-1. Provide a **Publisher**, **Name** and **Description**. You can optionally provide an **Icon**. The **Category** is for the Company Portal app. Once you are done, select **Next**.
-
-1. You can decide if you want the publish the app as **Any** (default), **iPad** or **iPhone**. By default it will show **Any** and will work for both device types. The Power BI app is the same URL for both iPhone and iPad. Select **Next**.
-
-1. Select **Upload**.
-
-1. If you don't see the app in the list, refresh the page: Go to **Overview** then back to **Apps**.
-
-    ![Apps tab](media/service-admin-mobile-intune/intune-add-software-ios2.png)
-
-### Create for Android
-
-1. Select **External Link** from the drop down.
-
-1. Enter the app URL, that we got from [Step 1](#step-1-get-the-url-for-the-application), and select **Next**.
-
-    ![Software setup: Android](media/service-admin-mobile-intune/intune-add-software-android1.png)
-
-1. Provide a **Publisher**, **Name** and **Description**. You can optionally provide an **Icon**. The **Category** is for the Company Portal app. Once you are done, select **Next**.
-
-1. Select **Upload**.
-
-1. If you don't see the app in the list, refresh the page: Go to **Overview** then back to **Apps**.
-
-    ![Apps tab](media/service-admin-mobile-intune/intune-add-software-android2.png)
-
-## Step 4: Deploy the application
-
-After you have added the application, you will need to deploy it so that it is available to your end users. This is the step where you will bind the policy you created with the app.
-
-### Deploy for iOS
-
-1. On the apps screen, select the app you created. Then select the **Manage Deployment...** link.
-
-    ![Manage deployment](media/service-admin-mobile-intune/intune-deploy-ios1.png)
-
-1. In the **Select Groups** screen, you can choose which groups you want to deploy this app to. Select **Next**.
-
-1. In the **Deployment Action** screen, you can choose how you want to deploy this app. Selecting **Available Install**, or **Required Install**, will make the app available in the Company Portal for users to install on-demand. After you are done making your selection, select **Next**.
-
-    ![Deployment action](media/service-admin-mobile-intune/intune-deploy-ios2.png)
-
-1. In the **Mobile App Management** screen, you can select the Mobile App Management policy that we created in [Step 2](#step-2-create-a-mobile-application-management-policy). It will default to the policy you made, if that is the only iOS policy available. Select **Next**.
-
-    ![Mobile app management](media/service-admin-mobile-intune/intune-deploy-ios3.png)
-
-1. In the **VPN Profile** screen, you can select a policy if you have one for your organization. It defaults to **None**. Select **Next**.
-
-1. In the **Mobile App Configuration** screen, you can select an **App Configuration Policy** if you created one. It defaults to **None**. This is not required. Select **Finish**.
-
-After you have deployed the app, it should show **Yes** for deployed, in the apps page.
-
-### Deploy for Android
-
-1. On the apps screen, select the app you created. Then select the **Manage Deployment...** link.
-
-    ![Manage deployment](media/service-admin-mobile-intune/intune-deploy-android1.png)
-1. In the **Select Groups** screen, you can choose which groups you want to deploy this app to. Select **Next**.
-
-1. In the **Deployment Action** screen, you can choose how you want to deploy this app. Selecting **Available Install**, or **Required Install**, will make the app available in the Company Portal for users to install on-demand. After you are done making your selection, select **Next**.
-
-    ![Deployment action](media/service-admin-mobile-intune/intune-deploy-android2.png)
-
-1. In the **Mobile App Management** screen, you can select the Mobile App Management policy that we created in [Step 2](#step-2-create-a-mobile-application-management-policy). It will default to the policy you made, if that is the only Android policy available. Select **Finish**.
-
-    ![Mobile app management](media/service-admin-mobile-intune/intune-deploy-android3.png)
-
-After you have deployed the app, it should show **Yes** for deployed, in the apps page.
-
-## Step 5: Install the application on a device
-
-You install the application through the *Company Portal* app. If you haven't installed the Company Portal, you can get it through the app store on either iOS or Android platforms. You will sign into the Company Portal with your organizational login.
-
-1. Open the Company Portal app.
-
-1. If you don't see the Power BI app listed as a featured app, select **Company Apps**.
-
-    ![Company Apps](media/service-admin-mobile-intune/intune-companyportal1.png)
-
-1. Select the Power BI app that you deployed.
-
-    ![Power BI app](media/service-admin-mobile-intune/intune-companyportal2.png)
-
-1. Select **Install**.
-
-    ![Install app](media/service-admin-mobile-intune/intune-companyportal3.png)
-
-1. If you are on iOS, it will push the app to you. Select **Install** on the push dialog.
-
-    ![App installation](media/service-admin-mobile-intune/intune-companyportal5.png)
-
-1. After the app is installed, you will see that it is **Managed by your company**. If you enabled access with a pin, in the policy, you will see the following.
-
-    ![Enter pin](media/service-admin-mobile-intune/intune-powerbi-pin.png)
+To understand how your end users can use the Power BI app on their device, review the steps provided in the following articles:
+- [Use managed apps on your iOS device](/intune-user-help/use-managed-apps-on-your-device-ios#how-do-i-get-managed-apps)
+- [Use managed apps on your Android device](/intune-user-help/use-managed-apps-on-your-device-android)
 
 ## Next steps
 
-[Configure and deploy mobile application management policies in the Microsoft Intune console](/intune/app-protection-policies/)  
+[How to create and assign app protection policies](/intune/app-protection-policies) 
 
 [Power BI apps for mobile devices](../consumer/mobile/mobile-apps-for-mobile-devices.md)  
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)  
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

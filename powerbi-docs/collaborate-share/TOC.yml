@@ -16,6 +16,8 @@
         href: service-usage-metrics.md
       - name: "Monitor usage in new workspaces"
         href: service-modern-usage-metrics.md
+      - name: "Content endorsement"
+        href: service-endorsement-overview.md
   - name: How-to guides
     expanded: true
     items: 
@@ -26,11 +28,13 @@
       - name: "Opt in to the new look for workspaces"
         href: service-workspaces-new-look.md
       - name: "Upgrade classic workspaces"
-        href: ../collaborate-share/service-upgrade-workspaces.md
+        href: service-upgrade-workspaces.md
       - name: "Create classic workspaces"
         href: service-create-workspaces.md
       - name: "Publish apps from workspaces"
         href: service-create-distribute-apps.md
+      - name: "Store files in OneDrive for a workspace"
+        href: service-connect-to-files-in-app-workspace-onedrive-for-business.md
       - name: "Manage data storage in workspaces"
         href: ../admin/service-admin-manage-your-data-storage-in-power-bi.md
       - name: "Data lineage"
@@ -41,8 +45,6 @@
         href: service-data-source-impact-analysis.md
       - name: "Apply data sensitivity labels"
         href: ../admin/service-security-apply-data-sensitivity-labels.md
-      - name: "Connect to files on your group's OneDrive"
-        href: ../connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business.md
       - name: "Collaborate in a classic workspace"
         href: service-collaborate-power-bi-workspace.md
       - name: "Manage your group in Power BI and Microsoft 365"
@@ -73,6 +75,8 @@
         href: service-url-filters.md
       - name: "Subscribe yourself and others"
         href: service-report-subscribe.md
+      - name: "Endorse your content"
+        href: service-endorse-content.md
       - name: "Feature content on Home"
         href: service-featured-content.md
       - name: "Embed report in SharePoint Online"

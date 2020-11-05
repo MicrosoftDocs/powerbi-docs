@@ -71,4 +71,8 @@ If the Power BI solution used in your organization involves one of the following
 
 ## Will gateways function when in failover mode?
 
-No. Data required from on-premises data sources (any reports and dashboards based on Direct Query and Live Connect) will not work during a failover. The gateway configuration doesn't change though: When the Power BI instance returns to its original state, the gateways return to their normal functions.
+No. Data required from on-premises data sources (any reports and dashboards based on Direct Query and Live Connect) won't work during a failover. The gateway configuration doesn't change though. When the Power BI instance returns to its original state, the gateways return to their normal functions.
+
+In the event of an extreme disaster in a primary region that prevents bringing it back online for considerable duration, the failed-over primary region will allow both read and write operations and customers can redeploy and configure gateways against the new region.
+
+Customers can choose to install a new gateway on a different machine or take over their existing gateway. Taking over the existing gateway should be simpler, since all the data sources associated with the old gateway will be carried over to the new one.

@@ -1,7 +1,7 @@
 ---
 title: Table visualizations in Power BI reports and dashboards
 description: Tutorial for working with table visualizations in Power BI reports and dashboards, including how to resize column widths.
-author: mihart
+author: msftrien
 ms.reviewer: 'willt'
 featuredvideoid: ''
 ms.service: powerbi
@@ -152,7 +152,7 @@ To copy the value of a single cell:
 
 1. Select **Copy** > **Copy value**.
 
-    ![copy options](media/power-bi-visualization-tables/power-bi-copy-value.png)
+    ![Screenshot shows Copy selected with the Copy value option selected.](media/power-bi-visualization-tables/power-bi-copy-value.png)
 
     With the unformatted cell value on your clipboard, you can paste it into another application.
 
@@ -164,7 +164,7 @@ To copy more than a single cell:
 
 1. Select **Copy** > **Copy selection**.
 
-    ![copy options](media/power-bi-visualization-tables/power-bi-copy-selection.png)
+    ![Screenshot shows Copy selected with the Copy selection option selected.](media/power-bi-visualization-tables/power-bi-copy-selection.png)
 
 ## Adjust the column width of a table
 
@@ -178,6 +178,8 @@ Sometimes Power BI will truncate a column heading in a report and on a dashboard
 * When applying column formatting, you can only choose one alignment option per column: **Auto**, **Left**, **Center**, **Right**. Usually, a column contains all text or all numbers, and not a mix. In cases where a column contains both numbers and text, **Auto** will align left for text and right for numbers. This behavior supports languages where you read left-to-right.
 
 * If the text data in your table's cells or headers contain new line characters, those characters will be ignored unless you toggle on the 'Word Wrap' option in the element's associated formatting pane card. 
+
+* Power BI calculates maximum cell size based on the first twenty columns and the first fifty rows. Cells beyond those points may not be appropriately sized.
 
 
 ## Next steps

@@ -341,7 +341,7 @@ With this approach, Contoso purchases Power BI Premium capacity and assigns its 
 
 External users are also subject to the consumption only experiences offered to "Free" users in Power BI when consuming content within Power BI Premium.
 
-Contoso can also take advantage of other Power BI premium capabilities for its apps like increased refresh rates, dedicated capacity, and large model sizes.
+Contoso can also take advantage of other Power BI premium capabilities for its apps like increased refresh rates, capacity, and large model sizes.
 
 ![Additional capabilities](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_24.png)
 
@@ -532,7 +532,7 @@ Details on the settings are available here:
 
 ### Control guest invites
 
-Power BI administrators can control external sharing just for Power BI by visiting the Power BI admin portal. But tenant administrators can also control external sharing with various Azure AD policies.  These policies allow tenant administrators to
+Power BI administrators can control external sharing just for Power BI by visiting the Power BI admin portal. But admins can also control external sharing with various Azure AD policies.  These policies allow admins to:
 
 - Turn off invitations by end users
 - Only admins and users in the Guest Inviter role can invite

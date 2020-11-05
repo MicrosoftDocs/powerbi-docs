@@ -43,7 +43,7 @@ Yet, a second role, named **Managers**, allows access to all **Payroll** table r
 TRUE()
 ```
 
-Take care: Should a report user map to both roles, they'll see all **Salary** table rows.
+Take care: Should a report user map to both roles, they'll see all **Payroll** table rows.
 
 ## Optimize RLS
 

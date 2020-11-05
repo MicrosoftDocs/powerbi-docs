@@ -49,7 +49,7 @@ The **Summarization** drop-down in the **Manage aggregations** dialog offers the
 - Sum
 - Count table rows
 
-![Manage aggregations dialog](media/desktop-aggregations/aggregations_07.jpg)
+![Screenshot shows the Manage aggregations dialog box.](media/desktop-aggregations/aggregations_07.jpg)
 
 In this relationship-based aggregation example, the GroupBy entries are optional. Except for DISTINCTCOUNT, they don't affect aggregation behavior, and are primarily for readability. Without the GroupBy entries, the aggregations would still get hit, based on the relationships. This is different from the [big data example](#aggregation-based-on-groupby-columns) later in this article, where the GroupBy entries are required.
 
@@ -240,11 +240,11 @@ The following query hits the aggregation, because the aggregation table covers *
 
 The following query doesn't hit the aggregation, because the aggregation table doesn't cover **CalendarDay**.
 
-![Query example that doesn't hit the aggregation](media/desktop-aggregations/aggregations-code_10.jpg)
+![Screenshot shows text of a query that includes CalendarDay.](media/desktop-aggregations/aggregations-code_10.jpg)
 
 The following time-intelligence query doesn't hit the aggregation, because the DATESYTD function generates a table of **CalendarDay** values, and the aggregation table doesn't cover **CalendarDay**.
 
-![Query example that doesn't hit the aggregation](media/desktop-aggregations/aggregations-code_11.jpg)
+![Screenshot shows text of a query that includes the DATESYTD function.](media/desktop-aggregations/aggregations-code_11.jpg)
 
 ## Aggregation precedence
 
@@ -267,7 +267,7 @@ The **Manage aggregations** dialog for **Driver Activity Agg2** sets the **Prece
 
 The table specified in the **Detail Table** column is **Driver Activity**, not **Driver Activity Agg**, because chained aggregations are not allowed.
 
-![Manage aggregations dialog](media/desktop-aggregations/aggregations_14.jpg)
+![Screenshot shows the Manage aggregations dialog box with Precedence called out.](media/desktop-aggregations/aggregations_14.jpg)
 
 The following table shows the aggregations for the **Driver Activity Agg2** table.
 

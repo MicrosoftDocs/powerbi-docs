@@ -39,7 +39,7 @@
   - name: Reference
     items:
     - name: "REST APIs"
-      href: https://docs.microsoft.com/rest/api/power-bi
+      href: /rest/api/power-bi
     - name: "Power BI REST API Reference"
       href: rest-api-reference.md
     - name: "Complete code listing"

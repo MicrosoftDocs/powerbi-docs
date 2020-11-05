@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 07/01/2020
+ms.date: 08/11/2020
 ---
 
 # Manage Power BI visuals admin settings
@@ -125,7 +125,7 @@ Use this method to add a new Power BI visual from a .pbiviz file.
 
 3. To initiate the upload request, select **Add** . Once uploaded, the visual will display in the organizational visuals list.
 
-### Add a visual from AppSource (preview)
+### Add a visual from AppSource
 
 Use this method to add a new Power BI visual from AppSource.
 
@@ -143,11 +143,11 @@ You can pick visuals from the organizational visuals page to automatically show 
 
 1. In the row of the visual you want to add , click **settings**.
 
-    ![organizational-pane](media/organizational-visuals/organizational-pane.png)organizational-pane
+    ![Screenshot shows the Admin portal with Organization visuals selected and a settings icon called out.](media/organizational-visuals/organizational-pane.png)organizational-pane
 
 2. Enable the visualization pane setting and click **Update**.
 
-    ![update-organizational-pane](media/organizational-visuals/update-organizational-pane.png)
+    ![Screenshot shows the Visual Settings dialog box where you can enable the visual to appear for your entire organization.](media/organizational-visuals/update-organizational-pane.png)
 
 ### Delete a visual uploaded from a file
 

@@ -225,7 +225,7 @@ After you follow Steps 2 to 5 in **Push data into a dataset**, your complete sou
 * [Create a dataset in Power BI](walkthrough-push-data-create-dataset.md)  
 * [Get a dataset to add rows into a Power BI table](walkthrough-push-data-get-datasets.md)  
 * [Add rows to a Power BI table](walkthrough-push-data-add-rows.md)  
-* [Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/)  
+* [Power BI REST API reference](/rest/api/power-bi/)  
 * [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

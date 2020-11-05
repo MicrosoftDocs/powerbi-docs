@@ -42,7 +42,7 @@ The following steps assume you are the coadministrator for the Azure subscriptio
 
 Sign in to the [Azure portal](https://portal.azure.com), and navigate to the **Subscriptions** page, which you can find using the **All Services** list in the nav pane menu.
 
-![Azure portal](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_01.png)
+![Screenshot shows the Azure portal with Subscriptions selected.](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_01.png)
 
 Select the Azure subscription that you used for publishing the model, and select **Access Control (IAM)**. Next select **Add role assignment**, then select the **Reader** role, and select the Power BI user. Select **Save** when you're done. The following image shows these selections.
 
@@ -62,7 +62,7 @@ This step assumes you have the data you want to score with your Azure ML model i
 
 ### Create a dataflow
 
-To create the entities in your dataflow, sign in to the Power BI service and navigate to a workspace on your dedicated capacity that has the AI preview enabled.
+To create the entities in your dataflow, sign in to the Power BI service and navigate to a workspace on your capacity that has the AI preview enabled.
 
 If you don't already have a workspace, you can create one by selecting **Workspaces** in the left menu, and then select **Create workspace** in the panel at the bottom.  This opens a panel to enter the workspace details. Enter a workspace name, and then select **Save**.
 
@@ -92,7 +92,7 @@ In the next screen, you're prompted to connect to a data source. Paste the link 
 
 Power Query Editor shows a preview of the data from the CSV file. Select **Transform Table** from the command ribbon and then select **Use first row as headers**.  This adds the _Promoted headers_ query step into the **Applied steps** pane on the right. You can also rename the query to a friendlier name, such as _Automobile Pricing_ using the pane on the right.
 
-![Azure portal](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_09.png)
+![Screenshot of Power Query Editor showing a preview of the data.](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_09.png)
 
 Our source dataset has unknown values set to '?'.  To clean this, we can replace '?' with '0' to avoid errors later for simplicity.  To do this, select the columns *normalized-losses*, *bore*, *stroke*, *compression-ratio*, *horsepower*, *peak-rpm* and *price* by clicking on their name in the column headers, then click on 'Transform columns' and select 'Replace values'.  Replace '?' with '0'.
 

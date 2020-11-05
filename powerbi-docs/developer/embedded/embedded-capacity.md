@@ -12,7 +12,7 @@ ms.date: 05/17/2020
 
 # Capacity and SKUs in Power BI embedded analytics
 
-When moving to production, Power BI embedded analytics requires a dedicated capacity (*A*, *EM*, or *P* SKU) for publishing embedded Power BI content.
+When moving to production, Power BI embedded analytics requires a capacity (*A*, *EM*, or *P* SKU) for publishing embedded Power BI content.
 
 Capacity is a dedicated set of resources reserved for exclusive use. It enables you to publish dashboards, reports, and datasets to users, without having to purchase per-user licenses. It also offers dependable, consistent performance for your content.
 
@@ -63,10 +63,9 @@ The table below provides a summary of features, the capacity they require, and t
 
 In this table, a custom app refers to a web app created using embedded analytics. When you embed to a custom web app as a developer (using the JavaScript or .NET SDKs, or the REST APIs), you have the ability to control and customize the UX. This ability is not available when you use other embedding options, such as Power BI service and Power BI Mobile.
 
-
-|         |         |         |
-|---------|---------|---------|
-|**Scenario**</br><p></p>|**Azure**</br>(A SKU)|**Office**</br>(P and EM SKUs)|
+| Scenario | Azure   | Office          |
+|----------|---------|-----------------|
+|          | (A SKU) | (P and EM SKUs) |
 |[Embed for your customers](embed-sample-for-customers.md)</br>(app owns data)     |✔        |✔        |
 |[Embed for your organization](embed-sample-for-your-organization.md)</br>(user owns data)     |✖        |✔         |
 |Microsoft 365 apps</br>(formerly known as Office 365 apps)<ul><li>[Embed in Teams](../../collaborate-share/service-embed-report-microsoft-teams.md)</li><li>[Embed in SharePoint](../../collaborate-share/service-embed-report-spo.md)</li></ul>     |✖        |✔        |

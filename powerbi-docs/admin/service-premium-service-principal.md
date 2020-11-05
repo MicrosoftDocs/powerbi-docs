@@ -3,14 +3,15 @@ title: Automate Power BI Premium workspace and dataset tasks with service princi
 description: Learn how service principals can be used for automating Power BI Premium workspace and dataset management tasks.
 author: minewiskan
 ms.author: owend
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/04/2020
+ms.date: 10/14/2020
 
 LocalizationGroup: Premium
 ---
+
 # Automate Premium workspace and dataset tasks with service principals
 
 Service principals are an Azure Active Directory *app registration* you create within your tenant to perform unattended resource and service level operations. They're a unique type of user identity with an app name, application ID, tenant ID, and *client secret* or certificate for a password.
