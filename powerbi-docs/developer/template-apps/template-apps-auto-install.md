@@ -230,7 +230,7 @@ Follow the [prerequisites](https://docs.microsoft.com/azure/azure-app-configurat
 
 Download the [Automated Install Azure Function sample](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function) from GitHub to get started.
 
-    ![Automated Install Azure Function sample](media/template-apps-auto-install/azure-function-sample.png)
+![Automated Install Azure Function sample](media/template-apps-auto-install/azure-function-sample.png)
 
 #### Step 4: Setup your Azure App Configuration
 
