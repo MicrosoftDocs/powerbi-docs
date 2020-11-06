@@ -98,7 +98,7 @@ You can also use your own report to test the circle card visuals.
     This is a simple visual that displays the number of times its update method has been called. At this stage, the visual does not retrieve any data.
 
     >[!NOTE]
-    >If the visual displays a connection error message, open a new tab in your browser, navigate to [https://localhost:8080/assets/status](https://localhost:8080/assets/status), and authorize your browser to use this address.
+    >If the visual displays a connection error message, open a new tab in your browser, navigate to `https://localhost:8080/assets/status`, and authorize your browser to use this address.
     >
     >![Screenshot of the new visual displaying a connection error.](media/develop-circle-card/connection-error.png)
 
