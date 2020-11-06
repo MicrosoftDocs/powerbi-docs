@@ -1,7 +1,7 @@
 ---
 title: Key influencers visualizations tutorial
 description: 'Tutorial: Create a key influencers visualization in Power BI'
-author: mihart
+author: msftrien
 ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -226,33 +226,33 @@ Finally, in the case of measures we are looking at the average year a house was 
 -	The scatterplot in the right pane plots the average house price for each distinct value in the table
 -	The value in the bubble shows by how much the average house price increases (in this case $1.35K) when the average year increases by its standard deviation (in this case 30 years)
 
-![Numeric target measures influencers](media/power-bi-visualization-influencers/power-bi-ki-numeric-measures.png)
+![Screenshot shows Key influencers for house prices with influencers on the left and the scatterplot on the right.](media/power-bi-visualization-influencers/power-bi-ki-numeric-measures.png)
 
 ## Interpret the results: Top Segments
 
 Top segments for numerical targets show groups where the house prices on average are higher than in the overall dataset. For example, below we can see that **Segment 1** is made up of houses where **GarageCars** (number of cars the garage can fit) is greater than 2 and the **RoofStyle** is Hip. Houses with those characteristics have an average price of $355K compared to the overall average in the data which is $180K.
 
-![Numeric target measures influencers](media/power-bi-visualization-influencers/power-bi-ki-numeric-segments.png)
+![Screenshot shows Top segments for house prices.](media/power-bi-visualization-influencers/power-bi-ki-numeric-segments.png)
 
 ## Analyze a metric that is a measure or a summarized column
 
-In the case of a measure or summarized column the analysis defaults to the **Continuous Analysis Type** described [above](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric). This cannot be changed. The biggest difference between analyzing a measure/summarized column and an unsummarized numeric column is the level at which the analysis runs.
+In the case of a measure or summarized column the analysis defaults to the **Continuous Analysis Type** described [above](#analyze-a-metric-that-is-numeric). This cannot be changed. The biggest difference between analyzing a measure/summarized column and an unsummarized numeric column is the level at which the analysis runs.
 
 In the case of unsummarized columns, the analysis always runs at the table level. In the house price example above, we analyzed the **House Price** metric to see what influences a house price to increase/decrease. The analysis automatically runs on the table level. Our table has a unique ID for each house so the analysis runs at a house level.
 
-![Measures table](media/power-bi-visualization-influencers/power-bi-ki-measures-table.png)
+![Screenshot shows the table level analysis for the house price example.](media/power-bi-visualization-influencers/power-bi-ki-measures-table.png)
 
 For measures and summarized columns, we don't immediately know what level to analyze them at. If **House Price** was summarized as an **Average**, we would need to consider what level we would like this average house price calculated. Is it the average house price at a neighborhood level? Or perhaps a regional level?
 
 Measures and summarized columns are automatically analyzed at the level of the **Explain by** fields used. Imagine we have three fields in **Explain By** we are interested in: **Kitchen Quality**, **Building Type** and **Air Conditioning**. **Average House Price** would be calculated for each unique combination of those three fields. It is often helpful to switch to a table view to take a look at what the data being evaluated looks like.
 
-![Measures table](media/power-bi-visualization-influencers/power-bi-ki-measures-table2.png)
+![Screenshot shows the three columns and the average house price.](media/power-bi-visualization-influencers/power-bi-ki-measures-table2.png)
 
 This analysis is very summarized and so it will be hard for the regression model to find any patterns in the data it can learn from. We should run the analysis at a more detailed level to get better results. If we wanted to analyze the house price at the house level we would need to explicitly add the **ID** field to the analysis. Nevertheless, we don't want the house ID to be considered an influencer. It is not helpful to learn that as house ID increases, the price of a house increase. This is where the **Expand By** field well option comes in handy. You can use **Expand By** to add fields you want to use for setting the level of the analysis without looking for new influencers.
 
-Take a look at what the visualization looks like once we add **ID** to **Expand By**. Once you have defined the level at which you want your measure evaluated, interpreting influencers is exactly the same as for [unsummarized numeric columns](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric).
+Take a look at what the visualization looks like once we add **ID** to **Expand By**. Once you have defined the level at which you want your measure evaluated, interpreting influencers is exactly the same as for [unsummarized numeric columns](#analyze-a-metric-that-is-numeric).
 
-![Measures table](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
+![Screenshot shows the house price visualization that depends on the three columns discussed in this section.](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
 
 If you would like to learn more about how you can analyze measures with the key influencers visualization please watch the following tutorial.
 

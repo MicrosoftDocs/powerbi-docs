@@ -92,6 +92,6 @@ Migrating from one Power BI Report Server is the same process as migrating from 
 
 [Administrator overview](admin-handbook-overview.md)  
 [Install Power BI Report Server](install-report-server.md)  
-[Script with the rs.exe Utility and the Web Service](https://docs.microsoft.com/sql/reporting-services/tools/script-with-the-rs-exe-utility-and-the-web-service)
+[Script with the rs.exe Utility and the Web Service](/sql/reporting-services/tools/script-with-the-rs-exe-utility-and-the-web-service)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -6,7 +6,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 04/30/2020
+ms.date: 10/30/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -15,8 +15,10 @@ LocalizationGroup: Share your work
 
 When you find a report you like in a workspace or an app, you can make a copy of it and save it to a different workspace. Then you can modify your copy of the report, adding or deleting visuals and other elements. You don't have to worry about creating the data model. It's already created for you. And it's much easier to modify an existing report than it is to start from scratch. However, when you make an app from your workspace, sometimes you can't publish your copy of the report in the app. See [Considerations and limitations in the article "Use datasets across workspaces"](service-datasets-across-workspaces.md#considerations-and-limitations) for details.
 
-> [!NOTE]
-> To make a copy, you need a Pro license, even if the original report is in a workspace in a Premium capacity.
+## Prerequisites
+
+- To copy or a report, you need a Pro license, even if the original report is in a workspace in a Premium capacity.
+- To copy a report, or to create a report in one workspace based on a dataset in another workspace, you need Build permission for the dataset. For datasets in the original workspace, the people with Admin, Member, and Contributor roles automatically have Build permission through their workspace role. See [Roles in the new workspaces](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) for details.
 
 ## Save a copy of a report in a workspace
 
@@ -77,7 +79,7 @@ When you have a report in one workspace based on a dataset in another workspace,
 
 1. In the Reports list view, select **View related**.
 
-    ![View related icon](media/service-datasets-copy-reports/power-bi-dataset-view-related.png)
+    ![Screenshot shows the View related icon under Actions.](media/service-datasets-copy-reports/power-bi-dataset-view-related.png)
 
 1. The **Related content** dialog box shows all related items. In this list, the dataset looks like any other. You can't tell it resides in a different workspace. This issue is known.
  
@@ -93,7 +95,7 @@ You may decide you no longer want the report and its associated shared dataset i
 
 2. In the list of datasets, you see the shared datasets don't have **Delete** icons. Refresh the page, or go to a different page and return. The dataset will be gone. If not, check **View related**. It may be related to another table in your workspace.
 
-    ![View related icon](media/service-datasets-across-workspaces/power-bi-dataset-view-related-icon.png)
+    ![Screenshot shows a dataset with View related option to check for related tables.](media/service-datasets-across-workspaces/power-bi-dataset-view-related-icon.png)
 
     > [!NOTE]
     > Deleting the shared dataset in this workspace doesn't delete the dataset. It just deletes the reference to it.

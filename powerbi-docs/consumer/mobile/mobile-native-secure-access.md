@@ -44,7 +44,7 @@ When this setting is turned on, every time you launch the app or bring it to the
 
 The image below shows the fingerprint authentication screen.
 
-![Power BI iOS Face ID](./media/mobile-native-secure-access/mobile-android-native-secured-fingerprint-id.png)
+![Screenshot shows Additional identification is required message on an Android phone.](./media/mobile-native-secure-access/mobile-android-native-secured-fingerprint-id.png)
 
 >[!NOTE]
 >To be able to use mobile app's  Require Biometric Authentification setting, you must first set up biometrics on your Android device. If your device doesn't support biometrics, you will not be able to secure access to your Power BI data using this mobile app setting.

@@ -108,7 +108,7 @@
         href: migrate-ssrs-reports-to-power-bi.md
     - name: Admin and deployment
       items:
-      - name: "Tenant admin settings"
+      - name: "Tenant settings"
         href: admin-tenant-settings.md 
       - name: "On-premises data gateway sizing"
         href: gateway-onprem-sizing.md 
@@ -118,6 +118,26 @@
         href: report-performance-troubleshoot.md
       - name: "Deployment pipelines best practices"
         href: ../create-reports/deployment-pipelines-best-practices.md
+      - name: "Access the Power BI activity log"
+        href: admin-activity-log.md
+  - name: Migrate to Power BI
+    items: 
+      - name: "Migration overview"
+        href: powerbi-migration-overview.md
+      - name: "Prepare to migrate"
+        href: powerbi-migration-pre-migration-steps.md
+      - name: "Gather requirements"
+        href: powerbi-migration-requirements.md
+      - name: "Plan deployment"
+        href: powerbi-migration-planning.md
+      - name: "Conduct proof of concept"
+        href: powerbi-migration-proof-of-concept.md
+      - name: "Create content"
+        href: powerbi-migration-create-validate-content.md
+      - name: "Deploy to Power BI"
+        href: powerbi-migration-deploy-support-monitor.md
+      - name: "Learn from customer Power BI migrations"
+        href: powerbi-migration-learn-from-customers.md
   - name: Center of Excellence (COE)
     items: 
       - name: "Microsoft's BI transformation"

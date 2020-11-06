@@ -125,5 +125,5 @@ Actions and subsequent updates in Power BI visuals occur in one of these three p
 
 Interested in creating visualizations and adding them to Microsoft AppSource? See these articles:
 
-* [Develop a Power BI visual](./custom-visual-develop-tutorial.md)
+* [Developing a Power BI circle card visual](./develop-circle-card.md)
 * [Publish Power BI visuals to Partner Center](office-store.md)

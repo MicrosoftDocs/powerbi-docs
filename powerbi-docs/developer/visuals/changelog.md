@@ -13,6 +13,10 @@ ms.date: 03/13/2019
 # Power BI visuals API changelog
 This page contains a quick summary of the API versions. Versions listed here are considered stable and will not change.
 
+
+## API v3.4.0
+  * `fetchMoreData` : new `aggregateSegments` parameter (default true), for supporting no-aggregation fetchMoreData
+
 ## API v3.2.0
   * Supports **[supportsMultiVisualSelection](./supportsmultivisualselection-feature.md)**
 
@@ -57,7 +61,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 * The `proto` property no longer stores hidden metadata\data inside the dataView. Visuals that access properties via `proto` may be broken by this update.
 
 ## API v1.13.0
-* Supports **[Sync Slicers](./enable-sync-slicers.md)**, note this only works for single field slicers due to PBI current code state, [read more](/power-bi/desktop-slicers).
+* Supports **[Sync Slicers](./enable-sync-slicers.md)**, note this only works for single field slicers due to PBI current code state, [read more](../../visuals/power-bi-visualization-slicers.md).
 * Accessibility: [High-contrast support](./high-contrast-support.md) 
 * Accessibility: Allow Keyboard Focus flag
 

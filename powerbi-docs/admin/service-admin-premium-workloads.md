@@ -5,7 +5,7 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 05/11/2020
 
@@ -20,13 +20,12 @@ This article describes enabling and configuring workloads for Power BI Premium c
 
 Query workloads are optimized for and limited by resources determined by your Premium capacity SKU. Premium capacities also support additional workloads that can use your capacity's resources. Default memory values for these workloads are based on the capacity nodes available for your SKU. Max memory settings are not cumulative. Memory up to the max value specified is dynamically allocated for AI and dataflows, but is statically allocated for paginated reports.
 
-|                   | EM1 / A1                  | EM2 / A2                  | EM3 / A3                  | P1 / A4                  | P2 / A5                  | P3 / A6                   |
-|-------------------|---------------------------|---------------------------|---------------------------|--------------------------|--------------------------|---------------------------|
-| AI                | Unsupported               | 40% default; 40% minimum  | 20% default; 20% minimum  | 20% default; 8% minimum  | 20% default; 4% minimum  | 20% default; 2% minimum   |
-| Datasets          | 100% default; 67% minimum | 100% default; 40% minimum | 100% default; 20% minimum | 100% default; 8% minimum | 100% default; 4% minimum | 100% default; 2% minimum  |
-| Dataflows         | 40% default; 40% minimum  | 24% default; 24% minimum  | 20% default; 12% minimum  | 20% default; 5% minimum  | 20% default; 3% minimum  | 20% default; 2% minimum   |
-| Paginated reports | Unsupported               | Unsupported               | Unsupported               | 20% default; 10% minimum | 20% default; 5% minimum  | 20% default; 2.5% minimum |
-|                   |                           |                           |                           |                          |                          |                           |
+|                       | EM1 / A1                  | EM2 / A2                  | EM3 / A3                  | P1 / A4                  | P2 / A5                  | P3 / A6                   |
+|-----------------------|---------------------------|---------------------------|---------------------------|--------------------------|--------------------------|---------------------------|
+| **AI**                | Unsupported               | 40% default; 40% minimum  | 20% default; 20% minimum  | 20% default; 8% minimum  | 20% default; 4% minimum  | 20% default; 2% minimum   |
+| **Datasets**          | 100% default; 67% minimum | 100% default; 40% minimum | 100% default; 20% minimum | 100% default; 8% minimum | 100% default; 4% minimum | 100% default; 2% minimum  |
+| **Dataflows**         | 40% default; 40% minimum  | 24% default; 24% minimum  | 20% default; 12% minimum  | 20% default; 5% minimum  | 20% default; 3% minimum  | 20% default; 2% minimum   |
+| **Paginated reports** | Unsupported               | Unsupported               | Unsupported               | 20% default; 10% minimum | 20% default; 5% minimum  | 20% default; 2.5% minimum |
 
 ## Workload settings
 
@@ -55,8 +54,10 @@ The datasets workload is enabled by default and cannot be disabled. Use the foll
 | **Max Result Row Set Count** | The maximum number of rows returned in a DAX query. The default value is -1 (no limit), and the allowable range is between 100000 and 2147483647. |
 | **Query Memory Limit (%)** | The maximum percentage of available memory in the workload that can be used for executing a MDX or DAX query. The default value is 0, which results in SKU-specific automatic query memory limit being applied. |
 | **Query Timeout (seconds)** | The maximum amount of time before a query times out. The default is 3600 seconds (1 hour). A value of 0 specifies that queries won't timeout. |
-| **Automatic page refresh (preview)** | On/Off toggle to allow premium workspaces to have reports with automatic page refresh. |
+| **Automatic page refresh** | On/Off toggle to allow premium workspaces to have reports with automatic page refresh based on fixed intervals. |
 | **Minimum refresh interval** | If automatic page refresh is on, the minimum interval allowed for page refresh interval. The default value is five minutes, and the minimum allowed is one second. |
+| **Change detection measure** | On/Off toggle to allow premium workspaces to have reports with automatic page refresh based on change detection. |
+| **Minimum execution interval** | If change detection measure is on, the minimum execution interval allowed to poll for data changes. The default value is five seconds, and the minimum allowed is one second. |
 |  |  |  |
 
 #### Max Intermediate Row Set Count
@@ -75,10 +76,9 @@ If you have an existing dataset that is larger than the size you specify for thi
 
 To safeguard the performance of the system, an additional SKU-specific hard ceiling for max offline dataset size is applied, regardless of the configured value. This hard ceiling does not apply to Power BI datasets which are optimized for large data sizes. For more information, see [Large models in Power BI Premium](service-premium-large-models.md).
 
-|                                           | EM1 / A1 | EM2 / A2 | EM3 / A3 | P1 / A4 | P2 / A5 | P3 / A6 |   
-|-------------------------------------------|----------|----------|----------|---------|---------|---------|
-| Hard ceiling for Max Offline Dataset Size | 3 GB     | 5 GB     | 6 GB     | 10 GB   | 10 GB   | 10 GB   |
-|                                           |          |          |          |         |         |         |
+|                                               | EM1 / A1 | EM2 / A2 | EM3 / A3 | P1 / A4 | P2 / A5 | P3 / A6 |
+|-----------------------------------------------|----------|----------|----------|---------|---------|---------|
+| **Hard ceiling for Max Offline Dataset Size** | 3 GB     | 5 GB     | 6 GB     | 10 GB   | 10 GB   | 10 GB   |
 
 #### Max Result Row Set Count
 
@@ -98,12 +98,11 @@ Note that data refresh operations may also execute DAX queries as part of refres
 
 The default setting is 0, which results in the following SKU-specific automatic query memory limit being applied.
 
-|                              | EM1 / A1 | EM2 / A2 | EM3 / A3 | P1 / A4 | P2 / A5 | P3 / A6 |   
-|------------------------------|----------|----------|----------|---------|---------|---------|
-| Automatic Query Memory Limit | 1 GB     | 2 GB     | 2 GB     | 6 GB    | 6 GB    | 10 GB   |
-|                              |          |          |          |         |         |         |
+|                                  | EM1 / A1 | EM2 / A2 | EM3 / A3 | P1 / A4 | P2 / A5 | P3 / A6 |
+|----------------------------------|----------|----------|----------|---------|---------|---------|
+| **Automatic Query Memory Limit** | 1 GB     | 2 GB     | 2 GB     | 6 GB    | 6 GB    | 10 GB   |
 
-To safeguard the performance of the system, a hard ceiling of 10 GB is enforced for all queries executed by Power BI reports, regardless of the query memory limit configured by the user. This hard ceiling does not apply to queries issued by tools that use the Analysis Services protocol (aka XMLA). Users should consider simplifying the query or its calculations if the query is too memory intensive.
+To safeguard the performance of the system, a hard ceiling of 10 GB is enforced for all queries executed by Power BI reports, regardless of the query memory limit configured by the user. This hard ceiling does not apply to queries issued by tools that use the Analysis Services protocol (also known as XMLA). Users should consider simplifying the query or its calculations if the query is too memory intensive.
 
 #### Query Timeout
 
@@ -192,7 +191,7 @@ Maximize your capacity's available resources by enabling workloads only if they 
 
 ### REST API
 
-Workloads can be enabled and assigned to a capacity by using the [Capacities](https://docs.microsoft.com/rest/api/power-bi/capacities) REST APIs.
+Workloads can be enabled and assigned to a capacity by using the [Capacities](/rest/api/power-bi/capacities) REST APIs.
 
 ## Monitoring workloads
 

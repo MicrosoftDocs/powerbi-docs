@@ -6,10 +6,11 @@ ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 05/06/2020
+ms.custom: contperfq1
+ms.date: 09/15/2020
 ---
 
-# Get started with deployment pipelines (preview)
+# Get started with deployment pipelines
 
 This article walks you through the basic settings required for using deployment pipelines.
 
@@ -30,13 +31,31 @@ You'll be able to access the deployment pipelines feature, if the following cond
 
 ## Step 1 - Create a deployment pipeline
 
-To create a deployment pipeline, do the following:
-
-1. In Power BI service, from the navigation pane, select **Deployment pipelines** and click **Create pipeline**.
-
-2. In the *Create a deployment pipeline* dialog box, enter a name and description for the pipeline, and click **Create**.
+You can create a pipeline from the deployment pipelines tab, or from a workspace.
 
 After the pipeline is created, you can share it with other users or delete it. When you share a pipeline with others, the users you share the pipeline with will be given [access to the pipeline](deployment-pipelines-process.md#user-with-pipeline-access). Pipeline access enables users to view, share, edit, and delete the pipeline.
+
+### Create a pipeline from the deployment pipelines tab
+
+To create a pipeline from the deployment pipelines tab, do the following:
+
+1. In Power BI service, from the navigation pane, select **Deployment pipelines** and then select **Create pipeline**.
+
+2. In the *Create a deployment pipeline* dialog box, enter a name and description for the pipeline, and select **Create**.
+
+### Create a pipeline from a workspace
+
+You can create a pipeline from an existing workspace, providing you're the admin of a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).
+
+1. From the workspace, select **Create a pipeline**.
+
+    > [!div class="mx-imgBorder"]
+    > ![A screenshot of the create a pipeline button in a workspace.](media/deployment-pipelines-get-started/workspace-deploy.png)
+
+2. In the *Create a deployment pipeline* dialog box, enter a name and description for the pipeline, and select **Create**.
+
+>[!NOTE]
+>If the workspace isn't assigned to your organization's Premium capacity, you'll get a notification to [assign it to a capacity](../admin/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity).  
 
 ## Step 2 - Assign a workspace to a deployment pipeline
 
@@ -46,9 +65,12 @@ You can assign one workspace to a deployment pipeline. Deployment pipelines will
 
 Follow these steps to assign a workspace in a deployment pipeline:
 
-1. In the newly created deployment pipeline, click **Assign a workspace**.
+1. In the newly created deployment pipeline, select **Assign a workspace**.
 
 2. In the *Choose the workspace* drop-down menu, select the workspace you want to assign to the pipeline.
+
+    >[!NOTE]
+    >If you're creating a pipeline from a workspace, you can skip this stage as the workspace is already selected.
 
 3. Select the stage you want to assign the workspace to.
 
@@ -77,13 +99,13 @@ Once the deployment is complete, refresh the dataset. For more information, see 
 
 ### Deploying all content
 
-Select the stage to deploy from and click the deployment button. The deployment process creates a duplicate workspace in the target stage. This workspace includes all the content existing in the current stage.
+Select the stage to deploy from and then select the deployment button. The deployment process creates a duplicate workspace in the target stage. This workspace includes all the content existing in the current stage.
 
 [![A screenshot showing the deploy button for the development and test stages in a deployment pipeline.](media/deployment-pipelines-get-started/deploy.png)](media/deployment-pipelines-get-started/deploy.png#lightbox)
 
 ### Selective deployment
 
-To deploy only specific items, click the **Show more** link, and select the items you wish to deploy. When clicking the deploy button, only the selected items are deployed to the next stage.
+To deploy only specific items, select the **Show more** link, and then select the items you wish to deploy. When clicking the deploy button, only the selected items are deployed to the next stage.
 
 Since dashboards, reports and datasets are related and have dependencies, you can use the select related button to check all items that those items are dependent on. For example, if you want to deploy a report to the next stage, clicking the select related button will mark the dataset that the report is connected to, so that both will be deployed at once and the report will not break.
 
@@ -114,7 +136,7 @@ Dataset rules are defined on data sources and parameters, in each dataset. They 
 
 ### Create a dataset rule
 
-1. In the pipeline stage you want to create a dataset rule for, click **Deployment settings**.
+1. In the pipeline stage you want to create a dataset rule for, select **Deployment settings**.
 
     ![A screenshot of the deployment settings button, located at the top right of each deployment pipeline stage.](media/deployment-pipelines-get-started/deployment-settings.png)
 
@@ -122,7 +144,7 @@ Dataset rules are defined on data sources and parameters, in each dataset. They 
 
     [![A screenshot showing selecting a dataset for creating a dataset rule.](media/deployment-pipelines-get-started/dataset-rules.png)](media/deployment-pipelines-get-started/dataset-rules.png#lightbox)
 
-3. Select the type of rule you want to create, expand the list, and click **Add rule**.
+3. Select the type of rule you want to create, expand the list, and then select **Add rule**.
 
      [![A screenshot showing selecting a data source rule, and clicking the add rule option.](media/deployment-pipelines-get-started/add-rule.png)](media/deployment-pipelines-get-started/add-rule.png#lightbox)
 
@@ -135,7 +157,7 @@ There are two types of rules you can create:
 
     1. Select from a list.
 
-    2. Click **Other** and manually add the new data source. You can only change to a data source from the same type.
+    2. Select **Other** and manually add the new data source. You can only change to a data source from the same type.
 
 * **Parameter rules**
     Select a parameter from the list of parameters; the current value is shown. Edit the value to the value you want to take effect after each deployment.
@@ -150,7 +172,7 @@ There are two types of rules you can create:
 
 * If the data source or parameters defined in a rule are changed or removed from the source dataset, the rule will not be valid and the deployment will fail.
 
-* Parameter rules cannot be defined for parameters that are of type *Any* or *Binary*. For more information, see [datasets update parameters restrictions](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparameters).
+* Parameter rules cannot be defined for parameters that are of type *Any* or *Binary*. For more information, see [datasets update parameters restrictions](/rest/api/power-bi/datasets/updateparameters).
 
 * Data source rules can only be defined for the following data sources:
     * Azure Analysis services
@@ -169,7 +191,7 @@ There are two types of rules you can create:
 
 Once you have content in a pipeline stage, you can deploy it to the next stage. Deploying content to another stage is usually done after you've performed some actions in the pipeline. For example, made development changes to your content in the development stage, or tested your content in the test stage. A typical workflow for moving content from stage to stage, is development to test, and then test to production. You can learn more about this process, in the [deploy content to an existing workspace](deployment-pipelines-process.md#deploy-content-to-an-existing-workspace) section.
 
-To deploy content to the next stage in the deployment pipeline, click the deploy button at the bottom of the stage.
+To deploy content to the next stage in the deployment pipeline, select the deploy button at the bottom of the stage.
 
 When reviewing the test and production stage cards, you can see the last deployment time. This indicates the last time content was deployed to the stage.
 

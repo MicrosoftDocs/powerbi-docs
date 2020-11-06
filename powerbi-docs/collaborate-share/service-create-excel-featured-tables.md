@@ -6,7 +6,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 07/30/2020
+ms.date: 09/17/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -20,7 +20,7 @@ In the Data Types Gallery in Excel, your users can find data from *featured tabl
 1. The rest of the organization can connect to those featured tables, referred to as *data types* in Excel, for relevant and refreshable data. The article [Access Power BI featured tables in Excel (preview)](service-excel-featured-tables.md) describes consuming these featured tables in Excel.
 
 > [!NOTE]
-> You can [promote or certify datasets in Power BI](../connect-data/service-datasets-promote.md). That's called *endorsement*. Excel prioritizes tables in endorsed datasets in the Data Types Gallery. Excel lists featured tables in certified datasets first, then tables in promoted datasets. Excel lists featured tables in unendorsed datasets after that. 
+> You can [promote or certify datasets in Power BI](../collaborate-share/service-endorse-content.md). That's called *endorsement*. Excel prioritizes tables in endorsed datasets in the Data Types Gallery. Excel lists featured tables in certified datasets first, then tables in promoted datasets. Excel lists featured tables in unendorsed datasets after that. 
 
 ## Turn on the featured table preview
 
@@ -61,19 +61,13 @@ In the Data Types Gallery in Excel, your users can find data from *featured tabl
 
 Here are limitations for the initial preview.
 
-- Featured tables in Power BI datasets that use the following capabilities aren't shown in Excel: 
+- Featured tables in Power BI datasets that use the following capabilities aren't shown in Excel:
 
-    - Row-level security datasets.
-    - Microsoft Information Protection enabled datasets.
     - DirectQuery datasets.
     - Datasets with a live connection.
 
-- Excel shows only data in columns and calculated columns in the featured table. The following aren't provided in the initial preview:
-
-    - Measures defined on the feature table.
-    - Measures defined on related tables, and implicit measures calculated from relationships.
-
-- Excel only displays featured tables that are stored in the new Power BI workspaces. Featured tables stored in the classic workspaces, or My Workspace, aren't shown as data types in Excel. You can [upgrade classic workspaces to the new workspaces](service-upgrade-workspaces.md) in Power BI.
+- Excel shows only data in columns and calculated columns in the featured table. Measures defined on related tables, and implicit measures calculated from relationships, aren't provided in the initial preview.
+- Excel only displays featured tables that are stored in the new Power BI workspaces. Featured tables stored in the classic workspaces aren't shown as data types in Excel. You can [upgrade classic workspaces to the new workspaces](service-upgrade-workspaces.md) in Power BI.
 - See [Considerations and limitations](service-excel-featured-tables.md#considerations-and-limitations) in the article "Access Power BI featured tables in Excel" for other Excel considerations.
 
 ## Next steps

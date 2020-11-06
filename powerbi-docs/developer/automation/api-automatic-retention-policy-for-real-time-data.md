@@ -21,5 +21,7 @@ The automatic retention policy in the Power BI service is a query string paramet
 </center>
 
 The retention policies are enabled when you first create your datasets. All you need to do is add the "default retention policy" query parameter to your POST datasets call and set it equal to *basicFIFO*.  
-  
-    POST https://api.powerbi.com/v1.0/myorg/datasets?defaultRetentionPolicy={None | basicFIFO}
+
+```console
+POST https://api.powerbi.com/v1.0/myorg/datasets?defaultRetentionPolicy={None | basicFIFO}
+```

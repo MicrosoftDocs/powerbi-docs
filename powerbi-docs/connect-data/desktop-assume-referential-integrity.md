@@ -35,7 +35,7 @@ The following example demonstrates how **Assume referential integrity** behaves 
    ![Screenshot of Orders table and Products table.](media/desktop-assume-referential-integrity/assume-referential-integrity_2.png)
 2. In the next image, notice that no referential integrity exists between **Orders[DepotID]** and **Depots[DepotID]**, because the **DepotID** is *Null* for some *Orders*. As such, **Assume Referential Integrity** should *not* be set.
    
-   ![Screenshot of Orders table and Products table.](media/desktop-assume-referential-integrity/assume-referential-integrity_3.png)
+   ![Screenshot of Orders table and Depots table.](media/desktop-assume-referential-integrity/assume-referential-integrity_3.png)
 3. Finally, no referential integrity exists between **Orders[CustomerID]** and **Customers[CustID]** in the following tables; the **CustomerID** contains some values (in this case, *CustX*) that do not exist in the *Customers* table. As such, **Assume Referential Integrity** should *not* be set.
    
    ![Screenshot of Orders table and Customers table.](media/desktop-assume-referential-integrity/assume-referential-integrity_4.png)

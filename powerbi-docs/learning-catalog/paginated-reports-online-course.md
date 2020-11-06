@@ -78,28 +78,29 @@ The [course of 24 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icI
 
 You can download and set up a self-study kit, which consists of the presentation content and eight hands-on labs:
 
-1. Use [this link](https://aka.ms/priad-student) to download the self-study kit (.zip) locally to your PC.
-1. Open the file properties, and check "unblock" (Windows may flag the file as potentially untrusted).
-1. Extract the file contents to a folder in your file system. We recommend you create a folder that will be easy to find, perhaps naming it **Training**. The lab documents will refer to this location as **&lt;CourseFolder&gt;**.
+1. Use [this link](https://aka.ms/priad-student) to download the self-study kit (.zip) locally to your PC (Windows 7, or later).
+1. Open the file properties of the zip file, and check "unblock" (Windows may flag the file as potentially untrusted).
+1. Create a root course folder. We recommend you name it something like "C:\Training". Remember this location, because you'll need to access the course files during the labs. All lab documents refer to this location as **&lt;CourseFolder&gt;**.
+1. Extract the **PowerBIPRIAD-Student.zip** file contents to your root course folder.
+1. In the **&lt;CourseFolder&gt;\PowerBIPRIAD** folder, open the **ReadMe.txt** file and work through the setup instructions.
 
-Once extracted, you'll have the **PowerBIPRIAD** folder, and within it you'll find the following folders:
-
-- **Lab01A** (and all other lab folders). The lab folders contain the lab document and lab resources, which may include assets and solution files.
-- **MySolution**: This folder stores your solution files. The lab instructions will direct you when to use it.
-- **Presentation**: This folder contains the course presentation file, which is available as a PDF document.
-
-### Get started with the kit
-
-We recommend watching the online course first. You can refer back to the presentation theory by opening the **&lt;CourseFolder&gt;\PowerBIPRIAD\Presentation\PowerBIPRIAD_Presentation.pdf** file. The presentation includes eight lab slides, which indicate when it's time to put the theory to practice. It also includes many resource links to help you find related content.
-
-When you're ready to commence the first lab, open the **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf** file. This document guides you to sign in to the Power BI service, upload a dataset, and then install [Power BI Report Builder](https://aka.ms/pbireportbuilder).
+> [!TIP]
+> The **ReadMe.txt** file, lab documents and presentation file (PDF) are available in English and also the following eight languages:
+> - German (de-DE)
+> - Spanish (es-ES)
+> - French (fr-FR)
+> - Italian (it-IT)
+> - Japanese (ja-JP)
+> - Korean (ko-KR)
+> - Portuguese, Brazilian (pt-BR)
+> - Chinese, simplified characters (zh-CN)
 
 > [!NOTE]
 > You're responsible for having your own Power BI account. If you don't already have one, see [Sign up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md).
 >
 > You must sign in to Power BI to publish a Power BI Desktop file to a workspace. The publication results in a dataset that's used as a report data source. You don't need a Power BI Pro license or a Power BI Premium subscription to use a dataset as a report data source.
 >
-> Some lab tasks involve publishing your paginated report to a workspace. You can only open a paginated report when it's been saved to a workspace on [dedicated capacity](../admin/service-premium-what-is.md#dedicated-capacities), which has the paginated reports workload enabled. If you don't have access to a suitable workspace, you'll be provided with a link to watch a video that demonstrates report publication instead.
+> Some lab tasks involve publishing your paginated report to a workspace. You can only open a paginated report when it's been saved to a workspace on a [capacity](../admin/service-premium-what-is.md#dedicated-capacities), which has the paginated reports workload enabled. If you don't have access to a suitable workspace, the lab will provide you with a link to watch a video that demonstrates report publication instead.
 
 ## Instructor kit
 

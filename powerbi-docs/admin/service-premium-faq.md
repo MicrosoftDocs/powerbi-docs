@@ -6,7 +6,7 @@ ms.author: davidi
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: conceptual
 ms.date: 09/16/2019
 
@@ -28,7 +28,7 @@ Power BI Premium is a capacity-based offering that includes:
 * One API surface, a consistent set of capabilities, and access to the latest features for embedded analytics.
 
 **What does Power BI Premium do? How does it work?**  
-Power BI Premium consists of capacity in the Power BI service exclusively allocated to each organization. The capacity is supported by dedicated hardware fully managed by Microsoft. Organizations can choose to apply their dedicated capacity broadly, or allocate it to assigned workspaces based on the number of users, workload needs, or other factors—and scale up or down as requirements change.
+Power BI Premium consists of capacity in the Power BI service exclusively allocated to each organization. The capacity is supported by dedicated hardware fully managed by Microsoft. Organizations can choose to apply their capacity broadly, or allocate it to assigned workspaces based on the number of users, workload needs, or other factors—and scale up or down as requirements change.
 
 **How is Power BI Pro different than Power BI Premium?**  
 Power BI Premium is a capacity-based license, while Power BI Pro is a user-based license. Power BI Pro is for those users publishing reports, sharing dashboards, collaborating with colleagues in workspaces and engaging in other related activities – such as the ability to:
@@ -79,11 +79,10 @@ For more information, see [Get started with Power BI Report Server](../report-se
 
 **Next steps**
 
-[What is Power BI Premium?](service-premium-what-is.md)
-[Power BI Premium release notes](../service-premium-release-notes.md)
-[Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
-[Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
-[Extended Pro Trial activation](../service-extended-pro-trial.md)
-[Power BI Embedded FAQ](../developer/embedded/embedded-faq.md)
+* [What is Power BI Premium?](service-premium-what-is.md)
+* [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
+* [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
+* [Extended Pro Trial activation](../fundamentals/service-self-service-signup-for-power-bi.md)
+* [Power BI Embedded FAQ](../developer/embedded/embedded-faq.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

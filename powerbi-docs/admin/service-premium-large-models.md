@@ -5,7 +5,7 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 03/03/2020
 
@@ -90,7 +90,7 @@ You should consider the impact of eviction on large models. Despite relatively f
 
 ## Checking dataset size
 
-After loading historical data, you can use [SSMS](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) through the [XMLA endpoint](service-premium-connect-tools.md) to check the estimated dataset size in the model properties window.
+After loading historical data, you can use [SSMS](/sql/ssms/download-sql-server-management-studio-ssms) through the [XMLA endpoint](service-premium-connect-tools.md) to check the estimated dataset size in the model properties window.
 
 ![Estimated dataset size](media/service-premium-large-models/estimated-dataset-size.png)
 
@@ -110,7 +110,6 @@ SELECT * FROM SYSTEMRESTRICTSCHEMA
 
 Keep in mind the following restrictions when using large models:
 
-- **Bring your own key BYOK encryption**: Datasets enabled for Premium Files are not encrypted by [BYOK](service-encryption-byok.md).
 - **Multi-geo support**: Datasets enabled for Premium Files will fail on capacities where [multi-geo](service-admin-premium-multi-geo.md) is also enabled.
 
 - **Download to Power BI Desktop**: If a dataset is stored on Premium Files, [downloading as a .pbix](../create-reports/service-export-to-pbix.md) file will fail.
@@ -119,7 +118,7 @@ Keep in mind the following restrictions when using large models:
 
 ## Availability in regions
 
-Large models in Power BI are only available in certain Azure regions that support [Azure Premium Files Storage](https://docs.microsoft.com/azure/storage/files/storage-files-planning#storage-tiers).
+Large models in Power BI are only available in certain Azure regions that support [Azure Premium Files Storage](/azure/storage/files/storage-files-planning#storage-tiers).
 
 The following list provides regions where large models in Power BI are available. Regions not in the following list are not supported for large models:
 
@@ -152,7 +151,7 @@ The following list provides regions where large models in Power BI are available
 
 The following links provide information that can be useful for working with large models:
 
-* [Azure Premium Files Storage](https://docs.microsoft.com/azure/storage/files/storage-files-planning#storage-tiers)
+* [Azure Premium Files Storage](/azure/storage/files/storage-files-planning#storage-tiers)
 * [Configure Multi-Geo support for Power BI Premium](service-admin-premium-multi-geo.md)
 * [Bring your own encryption keys for Power BI](service-encryption-byok.md)
 * [How capacities function](service-premium-what-is.md#how-capacities-function)
