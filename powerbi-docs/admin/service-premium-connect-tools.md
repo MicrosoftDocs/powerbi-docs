@@ -144,8 +144,8 @@ For tabular model projects being authored in Visual Studio, roles can be defined
 
 The following limitations apply when working with dataset roles through the XMLA endpoint:
 
-- The only permission for a role that can be set for Power BI datasets is the Read permission. 
-- Build permission for a dataset is required for read access through the XMLA endpoint, regardless of the existence of dataset roles. Use the Power BI security model to control permissions beyond RLS.
+- The only permission for a *role* that can be set for Power BI datasets is the Read permission. Other permissions are granted using the Power BI security model.
+- Build permission for a dataset is required for read access through the XMLA endpoint, regardless of the existence of dataset roles.
 - Object-level security (OLS) rules are currently not supported in Power BI.
 
 To learn more, see [Roles in tabular models](/analysis-services/tabular-models/roles-ssas-tabular).
