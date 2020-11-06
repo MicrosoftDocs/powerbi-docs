@@ -30,7 +30,7 @@ Anomaly detection helps you enhance your line charts by automatically detecting 
 
 ![Screenshot showing how to enable Anomaly detection preview feature switch](media/power-bi-visualization-anomaly-detection//preview-feature-switch.png)
  
-##Get started:
+## Get started:
 This tutorial uses online sales data for various products. You can find the pbix used  here: online sales.pbix
 
 You can enable Anomaly detection by selecting the chart and adding "Find Anomalies" option in the analytics pane. 
@@ -41,19 +41,19 @@ You can enable Anomaly detection by selecting the chart and adding "Find Anomali
 
  ![Screenshot showing how to add anomalies](media/power-bi-visualization-anomaly-detection/add-anomalies.gif)
  
-###Format anomalies:
+### Format anomalies:
 
 This experience  is highly customizable. You can format the anomaly's shape, size, color and also the color, style, transparency of expected range. You can also configure the parameter of the algorithm.  If you increase the sensitivity, the algorithm would be very sensitive to changes in your data such that even if  there is a slight deviation then it is marked as an anomaly. If you decrease the sensitivity, the algorithm would be more selective on what is considered an anomaly.
 
  ![Screenshot showing how to format anomalies](media/power-bi-visualization-anomaly-detection/format-anomalies.gif)
  
- ##Explanations:
+ ## Explanations:
 In addition to detecting anomalies, you can also automatically explain the anomalies that are found in the data. When you select the anomaly, Power BI runs an analysis across fields in your data model to figure out possible explanations. It gives you a natural language explanation of the anomaly, and factors associated with that anomaly sorted by its explanatory strength. Here I can see that on Aug 30, Revenue was $5187 which is above the expected range of $2447 - $3423. The cards in this pane can be opened to see more details of the explanation.
 
 ![Screenshot showing how to to view explanations](media/power-bi-visualization-anomaly-detection/view-explanations.gif)
  
- ###Configure explanations:
+ ### Configure explanations:
 You can also control the fields that are used for analysis. For example, by dragging seller, city into the Explain by field well Power BI just restricts the analysis to just those fields. In this case,  the anomaly on Aug 31 seems to be associated with particular seller and cities. Here, seller "Fabrikam" has a strength of 99%.  “Strength” is calculated as the ratio of the deviation from expected value when filtered by the dimension to the deviation in total value.  Concretely, it is the ratio of deviation (actual minus expected value) between the component time series (e.g., Revenue for Seller = Fabrikam) and the aggregate time series (e.g., overall Revenue) for the anomaly point. Opening this card shows the visual with a spike in the revenue for this seller on Aug 31. You can use the "Add to report" option to add this visual to the page.
 ![Screenshot showing how to configure explanations](media/power-bi-visualization-anomaly-detection/configure-explanations.gif)
 
-#Limitations
+
