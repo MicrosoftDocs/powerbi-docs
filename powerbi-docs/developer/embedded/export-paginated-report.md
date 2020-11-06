@@ -117,6 +117,8 @@ Here is an example for supplying an effective user name for RLS.
       }
 }
 ```
+## Concurrent requests
+The `exportToFile` API allows 1 request in a 5 minute window for Premium Per User SKU. Multipe (greater than 1) requests within a 5 minute window will result in a 429(Too Many Requests) error.
 
 ## Code examples
 
