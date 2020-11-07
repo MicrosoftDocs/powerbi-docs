@@ -44,6 +44,8 @@
         href: service-premium-capacity-scenarios.md
       - name: Power BI Premium FAQ
         href: service-premium-faq.md
+      - name: Power BI Premium Per User FAQ
+        href: service-premium-per-user-faq.md        
   - name: How to
     items: 
     - name: "Licensing and sign-up"

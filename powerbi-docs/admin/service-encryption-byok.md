@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 08/13/2020
+ms.date: 11/11/2020
 
 LocalizationGroup: Premium
 ---
@@ -19,6 +19,9 @@ Power BI encrypts data _at-rest_ and _in process_. By default, Power BI uses Mic
 ## Why use BYOK?
 
 BYOK makes it easier to meet compliance requirements that specify key arrangements with the cloud service provider (in this case Microsoft). With BYOK, you provide and control the encryption keys for your Power BI data at-rest at the application level. As a result, you can exercise control and revoke your organization's keys, should you decide to exit the service. By revoking the keys, the data is unreadable to the service within 30 minutes.
+
+> [!IMPORTANT]
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Preview Gen2 capacities do **not** support BYOK while in preview.
 
 ## Data source and storage considerations
 
@@ -198,3 +201,14 @@ Power BI provides additional cmdlets to help manage BYOK in your tenant:
 * [Embed with report web part in SharePoint Online](../collaborate-share/service-embed-report-spo.md)
 
 * [Publish to Web from Power BI](../collaborate-share/service-publish-to-web.md)
+
+
+Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+* Performance
+* Per-user licensing
+* Greater scale
+* Improved metrics
+* Autoscaling
+* Reduced management overhead
+
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

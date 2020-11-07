@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 02/13/2020
+ms.date: 11/11/2020
 
 LocalizationGroup: Premium
 ---
@@ -24,6 +24,9 @@ For more information about Power BI Premium, see [What is Power BI Premium?](ser
 
 > [!NOTE]
 > If a Premium subscription expires, you have 30 days of full access to your capacity. After that, your content reverts to a shared capacity. Models that are greater than 1 GB are not supported in shared capacity.
+
+> [!NOTE]
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
 
 ## Purchase P SKUs for typical production scenarios
 
@@ -104,66 +107,6 @@ You can cancel your subscription from within the Microsoft 365 admin center. To 
 
 When you cancel your Premium subscription, or your capacity license expires, you can continue to access your Premium capacities for a period of 30 days from the date of cancellation or license expiration. After 30 days, you will no longer be able to access your Premium capacities or workspaces in them.
 
-## Purchase A SKUs for testing and other scenarios
-
-A SKUs are made available through the Azure Power BI Embedded service. You can use A SKUs in the following ways:
-
-- Enable embedding of Power BI in third party applications. For more information, see [Power BI Embedded](../developer/embedded/azure-pbie-what-is-power-bi-embedded.md).
-
-- Test Premium functionality before you buy a P SKU.
-
-- Create development and test environments alongside a production environment that uses P SKUs.
-
-- Purchase Power BI Premium even though you're not a Microsoft 365 Global Administrator role or Billing Administrator role.
-
-> [!NOTE]
-> If you purchase an A4 or higher SKU, you can take advantage of all Premium features except for unlimited sharing of content. With A SKUs, _all users_ who consume content require Pro licenses.
-
-Follow these steps to purchase A SKUs in the Azure portal:
-
-1. Sign in to the [Azure portal](https://portal.azure.com) with an account that has at least capacity admin permissions in Power BI.
-
-1. Search for _Power BI Embedded_ and select the service in the search results.
-
-    ![Azure portal search](media/service-admin-premium-purchase/azure-portal-search.png)
-
-1. Select **Create Power BI Embedded**.
-
-    ![Create Power BI Embedded](media/service-admin-premium-purchase/create-power-bi-embedded.png)
-
-1. On the **Power BI Embedded** create screen, specify the following information:
-
-    - The **Subscription** in which to create the Power BI Embedded service.
-
-    - The physical **Location** in which to create the resource group that contains the service. For better performance, this location should be close to the location of your Azure Active Directory tenant for Power BI.
-
-    - The existing **Resource group** to use, or create a new one as shown in the example.
-
-    - The **Power BI capacity administrator**. The capacity admin must be a member user or a service principal in your Azure AD tenant.
-
-    ![Subscription and resource group](media/service-admin-premium-purchase/subscription-resource-group.png)
-
-1. If you want to use all features of Power BI Premium (except unlimited sharing), you need at at least an A4 SKU. Select **Change size**.
-
-    ![Change capacity size](media/service-admin-premium-purchase/change-capacity-size.png)
-
-1. Select a capacity size of A4, A5, or A6, which correspond to P1, P2, and P3.
-
-    ![Select A3 capacity](media/service-admin-premium-purchase/select-a3-capacity.png)
-
-1. Select **Review + Create**, review the options you chose, then select **Create**.
-
-    ![Create resource](media/service-admin-premium-purchase/create-resource.png)
-
-1. It can take a few minutes to complete the deployment. When it's ready, select **Go to resource**.
-
-    ![Deployment complete](media/service-admin-premium-purchase/deployment-complete.png)
-
-1. On the management screen, review the options you have for managing the service, including pausing the service when you're not using it.
-
-    ![Manage capacity](media/service-admin-premium-purchase/manage-capacity.png)
-
-After you purchase capacity, learn how to [manage capacities](service-admin-premium-manage.md#manage-capacity) and [assign workspaces](service-admin-premium-manage.md#assign-a-workspace-to-a-capacity) to a capacity.
 
 ## Next steps
 
@@ -174,3 +117,13 @@ After you purchase capacity, learn how to [manage capacities](service-admin-prem
 [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
+Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+* Performance
+* Per-user licensing
+* Greater scale
+* Improved metrics
+* Autoscaling
+* Reduced management overhead
+
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
