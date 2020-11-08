@@ -6,7 +6,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 09/14/2020
+ms.date: 11/06/2020
 ms.author: anphil
 
 LocalizationGroup: Visualizations
@@ -94,5 +94,6 @@ The smart narrative feature doesn't support the following functionality:
 - Cross-filtering out of a visual
 - Renaming dynamic values or editing automatically generated dynamic values
 - Summaries of visuals that contain on-the-fly calculations like QnA arithmetic and percentage of grand total 
+- [Calculation groups](/analysis-services/tabular-models/calculation-groups)
    
 

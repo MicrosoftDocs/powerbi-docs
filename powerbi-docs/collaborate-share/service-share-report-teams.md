@@ -38,7 +38,7 @@ Follow these steps to share links to reports, dashboards, and visuals in the Pow
     
       ![Screenshot of Share to Teams button in a visual contextual menu.](media/service-share-report-teams/service-teams-share-to-teams-visual-context-menu.png)
 
-1. In the **Share to Microsoft Teams** dialog box, select the channel or people you want to send the link to. You can enter a message if you want. You might be asked to sign in to Microsoft Teams first.
+1. In the **Share to Microsoft Teams** dialog box, select the team or channel you want to send the link to. You can enter a message if you want. You might be asked to sign in to Microsoft Teams first.
 
     ![Screenshot of Share to Microsoft Teams dialog box with information and message.](media/service-share-report-teams/service-teams-share-to-teams-dialog.png)
 
