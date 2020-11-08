@@ -1,7 +1,7 @@
 ---
 title: "Expression examples in Power BI Report Builder"
 description: Expressions are used frequently in Power BI Report Builder paginated reports to control content and report appearance.
-ms.date: 10/21/2019
+ms.date: 11/08/2020
 ms.service: powerbi
 ms.subservice: report-builder
 
@@ -448,6 +448,9 @@ For more information about simple and complex expressions, where you can use exp
     ```  
     =IIF(Parameters!IncludeURLs.Value,"https://adventure-works.com/productcatalog",Nothing)  
     ```  
+  
+> [!NOTE]
+>  Using JavaScript within a **Go To URL** expression is not supported.  
   
 ##  <a name="ReportData"></a> Report data  
  Expressions can be used to manipulate the data that is used in the report. You can refer to parameters and other report information. You can even change the query that is used to retrieve data for the report.  
