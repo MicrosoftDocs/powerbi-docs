@@ -27,26 +27,6 @@ To authenticate, the service principal uses the Azure AD app's *Application ID*,
 
 ## Method
 
-# [Certificate](#tab/certificate)
-
-To use service principal and a certificate with embedded analytics, follow these steps:
-
-1. Create an Azure AD Application.
-
-2. Create an Azure AD security group.
-
-3. Enable the Power BI service admin settings.
-
-4. Add the service principal to your workspace.
-
-5. Create a certificate.
-
-6. Set up certificate authentication.
-
-7. Get the certificate from Azure Key Vault.
-
-8. Authenticate using service principal and a certificate.
-
 # [Application secret](#tab/secret)
 
 To use service principal and an application ID  embedded analytics, follow these steps:
@@ -68,16 +48,32 @@ To use service principal and an application ID  embedded analytics, follow these
 
 5. Embed your content.
 
-> [!IMPORTANT]
-> Once you enable service principal to be used with Power BI, the application's AD permissions don't take effect anymore. The application's permissions are then managed through the Power BI admin portal.
+# [Certificate](#tab/certificate)
+
+To use service principal and a certificate with embedded analytics, follow these steps:
+
+1. Create an Azure AD Application.
+
+2. Create an Azure AD security group.
+
+3. Enable the Power BI service admin settings.
+
+4. Add the service principal to your workspace.
+
+5. Create a certificate.
+
+6. Set up certificate authentication.
+
+7. Get the certificate from Azure Key Vault.
+
+8. Authenticate using service principal and a certificate.
 
 ---
 
+> [!IMPORTANT]
+> Once you enable service principal to be used with Power BI, the application's AD permissions don't take effect anymore. The application's permissions are then managed through the Power BI admin portal.
+
 ## Step 1 - Create an Azure AD app
-
-# [Certificate](#tab/certificate)
-
-[!INCLUDE[service principal create app](../../includes/service-principal-create-app.md)]
 
 # [Application secret](#tab/secret)
 
@@ -131,9 +127,24 @@ $sp = New-AzureADServicePrincipal -AppId $app.AppId
 $key = New-AzureADServicePrincipalPasswordCredential -ObjectId $sp.ObjectId
 ```
 
+# [Certificate](#tab/certificate)
+
+[!INCLUDE[service principal create app](../../includes/service-principal-create-app.md)]
+
 ---
 
 [!INCLUDE[service create steps two, three and four](../../includes/service-principal-create-steps.md)]
+
+# [Application secret](#tab/secret)
+
+## Step 5 - Embed your content
+
+You can embed your content within a sample application, or within your own application.
+
+* [Embed content using the sample application](embed-sample-for-customers.md#embed-content-using-the-sample-application)
+* [Embed content within your application](embed-sample-for-customers.md#embed-content-within-your-application)
+
+Once your content is embedded, you're ready to [move to production](embed-sample-for-customers.md#move-to-production).
 
 # [Certificate](#tab/certificate)
 
@@ -276,17 +287,6 @@ When creating your embedded solution, it may be useful to configure Visual Studi
     ![A screenshot showing the account selection option in the Visual Studio options window.](media/embed-service-principal-certificate/account-selection.png)
 
 4. Add the account that has access to your Azure Key Vault.
-
-# [Application secret](#tab/secret)
-
-## Step 5 - Embed your content
-
-You can embed your content within a sample application, or within your own application.
-
-* [Embed content using the sample application](embed-sample-for-customers.md#embed-content-using-the-sample-application)
-* [Embed content within your application](embed-sample-for-customers.md#embed-content-within-your-application)
-
-Once your content is embedded, you're ready to [move to production](embed-sample-for-customers.md#move-to-production).
 
 ---
 
