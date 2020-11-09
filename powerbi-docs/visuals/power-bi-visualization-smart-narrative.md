@@ -8,6 +8,7 @@ ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 11/06/2020
 ms.author: anphil
+ms.custom: video
 
 LocalizationGroup: Visualizations
 ---
