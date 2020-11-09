@@ -28,9 +28,12 @@ Use smart narrative summaries in your reports to address key takeaways, to point
 >
 >![Screenshot showing Power BI Options. The Smart narrative visual option is selected.](media/power-bi-visualization-smart-narratives/2.png)
 
-To follow along with this tutorial, download the [sample file](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix) of an online-sales scenario.
+
 
 ## Get started 
+Watch Justyna show you how to use smart narratives, then try it out yourself using the tutorial, below the video.  To follow along with this tutorial, download the [sample file](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix) of an online-sales scenario.
+
+> [!VIDEO https://youtu.be/01UrT-z37sw]
 
 In the **Visualizations** pane, select the **Smart narrative** icon to automatically generate a summary.
 
