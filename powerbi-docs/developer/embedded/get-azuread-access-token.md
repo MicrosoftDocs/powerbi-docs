@@ -172,7 +172,7 @@ For this approach, you use a [service principal](embed-service-principal.md), th
 #### EmbedService.cs
 
 ```csharp
-var AuthorityURL  = "https://login.microsoftonline.com/common/"
+var AuthorityURL  = "https://login.microsoftonline.com/<TenantId>/"
 var ResourceURL  = "https://analysis.windows.net/powerbi/api"
 var authenticationContext = new AuthenticationContext(AuthorityUrl);
        AuthenticationResult authenticationResult = null;
