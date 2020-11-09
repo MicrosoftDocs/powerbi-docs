@@ -29,23 +29,26 @@ To authenticate, the service principal uses the Azure AD app's *Application ID*,
 
 |#  |Step  |Application secret  |Certificate  |
 |---------|---------|---------|---------|
-|1.     |[Create an Azure AD Application](embed-service-principal-v2.md#step-1---create-an-azure-ad-application)         |✔         |✔         |
-|2.     |[Get the app's *Application secret*](embed-service-principal-v2.md#step-2---get-the-app's-application-secret)         |✔         |✖         |
-|3.     |[Create an Azure AD security group](embed-service-principal-v2.md#step-3---create-an-azure-ad-security-group)         |✔         |✔         |
-|4.     |[Enable the Power BI service admin settings](embed-service-principal-v2.md#step-4---enable-the-Power-BI-service-admin-settings)         |✔         |✔         |
-|5.     |[Add the service principal to your workspace](embed-service-principal-v2.md#step-5---add-the-service-principal-to-your-workspace)         |✔         |✔         |
-|6.     |Create a certificate         |✖         |✔         |
-|7.     |Set up certificate authentication         |✖         |✔         |
-|8.     |Get the certificate from Azure Key Vault         |✖         |✔         |
-|9.     |Authenticate using service principal and a certificate         |✖         |✔         |
-|10.     |Embed your content         |✔         |✔         |
+|1.     |[Create an Azure AD Application](embed-service-principal-v2.md#step-1---create-an-azure-ad-app)         |![yes](../../media/yes.png)         |![yes](../../media/yes.png)         |
+|2.     |[Get the app's *Application secret*](embed-service-principal-v2.md#step-2---get-the-apps-application-secret)         |![yes](../../media/yes.png)         |![no](../../media/no.png)         |
+|3.     |[Create an Azure AD security group](embed-service-principal-v2.md#step-3---create-an-azure-ad-security-group)         |![yes](../../media/yes.png)         |![yes](../../media/yes.png)         |
+|4.     |[Enable the Power BI service admin settings](embed-service-principal-v2.md#step-4---enable-the-power-bi-service-admin-settings)         |![yes](../../media/yes.png)         |![yes](../../media/yes.png)         |
+|5.     |[Add the service principal to your workspace](embed-service-principal-v2.md#step-5---add-the-service-principal-to-your-workspace)         |![yes](../../media/yes.png)         |![yes](../../media/yes.png)         |
+|6.     |[Create a certificate](embed-service-principal-v2.md#step-6---create-a-certificate)         |![no](../../media/no.png)         |![yes](../../media/yes.png)         |
+|7.     |[Set up certificate authentication](embed-service-principal-v2.md#step-7---set-up-certificate-authentication)          |![no](../../media/no.png)         |![yes](../../media/yes.png)         |
+|8.     |[Get the certificate from Azure Key Vault](embed-service-principal-v2.md#step-8---get-the-certificate-from-azure-key-vault)         |![no](../../media/no.png)         |![yes](../../media/yes.png)         |
+|9.     |[Authenticate using service principal and a certificate](embed-service-principal-v2.md#step-9---authenticate-using-service-principal-and-a-certificate)         |![no](../../media/no.png)         |![yes](../../media/yes.png)         |
+|10.     |[Embed your content](embed-service-principal-v2.md#step-10---embed-your-content)         |![yes](../../media/yes.png)         |![yes](../../media/yes.png)         |
 
 > [!IMPORTANT]
 > Once you enable service principal to be used with Power BI, the application's AD permissions don't take effect anymore. The application's permissions are then managed through the Power BI admin portal.
 
 ## Step 1 - Create an Azure AD app
 
-<Token>**APPLIES TO:** ![yes](media/yes.png)Application secret ![yes](media/yes.png)Certificate</Token>
+|  |
+|---------|
+|**Required for:**<Token>![yes](../../media/yes.png)Application secret ![yes](../../media/yes.png)Certificate</Token>     |
+|  |
 
 Create an Azure AD app using one of these methods:
 
@@ -59,11 +62,11 @@ Create an Azure AD app using one of these methods:
 
 2. Search for **App registrations** and click the **App registrations** link.
 
-    ![azure app registration](media/embedded-service-principal/azure-app-registration.png)
+    ![azure app registration](../../includes/media/embedded-service-principal/azure-app-registration.png)
 
 3. Click **New registration**.
 
-    ![new registration](media/embedded-service-principal/new-registration.png)
+    ![new registration](../../includes/media/embedded-service-principal/new-registration.png)
 
 4. Fill in the required information:
     * **Name** - Enter a name for your application
@@ -74,7 +77,7 @@ Create an Azure AD app using one of these methods:
 
 6. After registering, the *Application ID* is available from the **Overview** tab. Copy and save the *Application ID* for later use.
 
-    ![Screenshot shows where to obtain an Application I D in the Overview tab.](media/embedded-service-principal/application-id.png)
+    ![Screenshot shows where to obtain an Application I D in the Overview tab.](../../includes/media/embedded-service-principal/application-id.png)
 
 ### Creating an Azure AD app using PowerShell
 
@@ -101,8 +104,13 @@ $key = New-AzureADServicePrincipalPasswordCredential -ObjectId $sp.ObjectId
 
 ## Step 2 - Get the app's *Application secret*
 
+|  |
+|---------|
+|**Required for:**<Token>![yes](../../media/yes.png)Application secret ![no](../../media/no.png)Certificate</Token>     |
+|  |
+
 >[!TIP]
->This step is only required if you're planning to use service principal with application secret. If you're planning to use service principal with a certificate, skip this step and continue with [setp 3]().
+>This step is only required if you're planning to use service principal with application secret. If you're planning to use service principal with a certificate, skip this step and continue with [setp 3](embed-service-principal-v2.md#step-3---create-an-azure-ad-security-group).
 
 1. Click the **Certificates & secrets** tab.
 
@@ -123,6 +131,11 @@ $key = New-AzureADServicePrincipalPasswordCredential -ObjectId $sp.ObjectId
     >After you leave this window, the client secret value will be hidden, and you'll not be able to view or copy it again.
 
 ## Step 3 - Create an Azure AD security group
+
+|  |
+|---------|
+|**Required for:**<Token>![yes](../../media/yes.png)Application secret ![yes](../../media/yes.png)Certificate</Token>     |
+|  |
 
 Your service principal doesn't have access to any of your Power BI content and APIs. To give the service principal access, create a security group in Azure AD, and add the service principal you created to that security group.
 
@@ -154,6 +167,11 @@ Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
 
 ## Step 4 - Enable the Power BI service admin settings
 
+|  |
+|---------|
+|**Required for:**<Token>![yes](../../media/yes.png)Application secret ![yes](../../media/yes.png)Certificate</Token>     |
+|  |
+
 For an Azure AD app to be able to access the Power BI content and APIs, a Power BI admin needs to enable service principal access in the Power BI admin portal.
 
 Add the security group you created in Azure AD, to the specific security group section in the **Developer settings**.
@@ -164,9 +182,14 @@ Add the security group you created in Azure AD, to the specific security group s
 >To restrict service principal access to specific tenant settings, allow access only to specific security groups. Alternatively, you can create a dedicated security group for service principals, and exclude it from the desired tenant settings.
 
 >[!div class="mx-imgBorder"]
->:::image type="content" source="../developer/embedded/media/embed-service-principal/admin-portal.png" alt-text="Screenshot showing the developer settings in the admin options in the Power BI portal.":::
+>:::image type="content" source="media/embed-service-principal/admin-portal.png" alt-text="Screenshot showing the developer settings in the admin options in the Power BI portal.":::
 
 ## Step 5 - Add the service principal to your workspace
+
+|  |
+|---------|
+|**Required for:**<Token>![yes](../../media/yes.png)Application secret ![yes](../../media/yes.png)Certificate</Token>     |
+|  |
 
 To enable your Azure AD app access artifacts such as reports, dashboards and datasets in the Power BI service, add the service principal entity as a member or admin to your workspace.
 
@@ -175,16 +198,21 @@ To enable your Azure AD app access artifacts such as reports, dashboards and dat
 
 1. Scroll to the workspace you want to enable access for, and from the **More** menu, select **Workspace access**.
 
-    :::image type="content" source="../developer/embedded/media/embed-service-principal/workspace-access.png" alt-text="Screenshot showing the workspace access button in the more menu of a Power BI workspace.":::
+    :::image type="content" source="media/embed-service-principal/workspace-access.png" alt-text="Screenshot showing the workspace access button in the more menu of a Power BI workspace.":::
 
 2. Add the service principal as an **Admin** or **Member** to the workspace.
 
-    :::image type="content" source="../developer/embedded/media/embed-service-principal/add-service-principal-in-the-UI.png" alt-text="Screenshot showing adding a member or an admin to the access pane in the Power BI portal.":::
+    :::image type="content" source="media/embed-service-principal/add-service-principal-in-the-UI.png" alt-text="Screenshot showing adding a member or an admin to the access pane in the Power BI portal.":::
 
 ## Step 6 - Create a certificate
 
+|  |
+|---------|
+|**Required for:**<Token>![no](../../media/no.png)Application secret ![yes](../../media/yes.png)Certificate</Token>     |
+|  |
+
 >[!TIP]
->Steps 6-9 are only relevant if you're using service principal with a certificate. If you're using service principal with an application secret, skip to [step 10]().
+>Steps 6-9 are only relevant if you're using service principal with a certificate. If you're using service principal with an application secret, skip to [step 10](embed-service-principal-v2.md#step-10---embed-your-content).
 
 You can procure a certificate from a trusted *Certificate Authority*, or generate a certificate yourself.
 
@@ -240,6 +268,11 @@ This section describes creating a certificate using [Azure Key Vault](/azure/key
 
 ## Step 7 - Set up certificate authentication
 
+|  |
+|---------|
+|**Required for:**<Token>![no](../../media/no.png)Application secret ![yes](../../media/yes.png)Certificate</Token>     |
+|  |
+
 1. In your Azure AD application, click the **Certificates & secrets** tab.
 
      ![A screenshot that shows the certificates and secrets pane for an app in the Azure portal.](media/embed-service-principal/certificates-and-secrets.png)
@@ -247,6 +280,11 @@ This section describes creating a certificate using [Azure Key Vault](/azure/key
 2. Click **Upload certificate** and upload the *.cer* file you created and downloaded in the [first step](#step-5---create-a-certificate) of this tutorial. The *.cer* file contains the public key.
 
 ## Step 8 - Get the certificate from Azure Key Vault
+
+|  |
+|---------|
+|**Required for:**<Token>![no](../../media/no.png)Application secret ![yes](../../media/yes.png)Certificate</Token>     |
+|  |
 
 Use Managed Service Identity (MSI) to get the certificate from Azure Key Vault. This process involves getting the *.pfx* certificate that contains both the public and private keys.
 
@@ -274,6 +312,11 @@ private X509Certificate2 ReadCertificateFromVault(string certName)
 ```
 
 ## Step 9 - Authenticate using service principal and a certificate
+
+|  |
+|---------|
+|**Required for:**<Token>![no](../../media/no.png)Application secret ![yes](../../media/yes.png)Certificate</Token>     |
+|  |
 
 You can authenticate your app using service principal and a certificate that's stored in Azure Key Vault, by connecting to Azure Key Vault.
 
@@ -325,6 +368,11 @@ When creating your embedded solution, it may be useful to configure Visual Studi
 4. Add the account that has access to your Azure Key Vault.
 
 ## Step 10 - Embed your content
+
+|  |
+|---------|
+|**Required for:**<Token>![yes](../../media/yes.png)Application secret ![yes](../../media/yes.png)Certificate</Token>     |
+|  |
 
 You can embed your content within a sample application, or within your own application.
 
