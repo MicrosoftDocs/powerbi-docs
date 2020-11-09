@@ -283,7 +283,7 @@ In Power BI Premium, Paginated reports are a workload that must be enabled for a
 
 When using Premium Gen2, Paginated reports in Power BI benefit from the architectural and engineering improvements reflected in Premium Gen2. The following sections describe the benefits of Premium Gen2 for Paginated reports.
 
-**Broader SKU availability** - Paginated reports running on Premium Gen2 can run reports across all available embedded and Premium SKUs. Billing is calculated per CPH hour, across a 24-hour period. This greatly expands the SKUs that support Paginated reports.
+**Broader SKU availability** - Paginated reports running on Premium Gen2 can run reports across all available embedded and Premium SKUs. Billing is calculated per CPU hour, across a 24-hour period. This greatly expands the SKUs that support Paginated reports.
 
 **Dynamic scaling** - With Premium Gen2, challenges associated with spikes in activity, or need for resources, can be handled dynamically as need arises. 
 
