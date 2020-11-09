@@ -60,7 +60,7 @@ The following examples outline how customers can meet their BI needs using a com
 Power BI Premium is purchased based on the number of virtual cores. You can see prices at the [Power BI pricing page](https://powerbi.microsoft.com/pricing/). For more information on nodes and v-cores, see the [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper). Also use this [calculator](https://powerbi.microsoft.com/calculator/) to get an estimate of how much Premium capacity you may need.
 
 **What do you mean by "capacity"?**  
-A capacity is an amount of computing power that is reserved to your organiztion for its Power BI utilization. It is provisioned by a service admin through the Power BI Premium admin portal, in the **Capacity Management** page.
+A capacity is an amount of computing power that is reserved to your organization for its Power BI utilization. It is provisioned by a service admin through the Power BI Premium admin portal, in the **Capacity Management** page.
 
 **How is Power BI Premium billed?**  
 Power BI Premium is billed monthly with an annual commitment.
