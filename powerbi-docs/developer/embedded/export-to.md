@@ -47,7 +47,7 @@ Specify the pages you want to print according to the [Get Pages](/rest/api/power
 
 ### Bookmarks
 
-[Bookmarks](../../consumer/end-user-bookmarks.md) can be used to save a report in a specific configuration, including applied filters and the state of the report's visuals. You can use the [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) API to programmatically export a report's bookmark, in two ways:
+[Bookmarks](../../consumer/end-user-bookmarks.md) can be used to save a report in a specific configuration, including applied filters and the state of the report's visuals. You can use the [exportToFile](/rest/api/power-bi/reports/exporttofile) API to programmatically export a report's bookmark, in two ways:
 
 * **Export an existing bookmark**
 
