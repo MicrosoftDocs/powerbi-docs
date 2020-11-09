@@ -108,6 +108,8 @@
         href: service-admin-premium-manage.md
       - name: Configure workloads
         href: service-admin-premium-workloads.md
+      - name: Purchase Power BI Premium for testing
+        href: service-admin-premium-testing.md        
       - name: Monitor capacities with the app
         href: service-admin-premium-monitor-capacity.md
       - name: Monitor Premium workload metrics

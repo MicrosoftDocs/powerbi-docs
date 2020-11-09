@@ -14,11 +14,9 @@ LocalizationGroup: Premium
 
 # How to purchase Power BI Premium
 
-This article describes how to purchase Power BI Premium capacity for your organization. The article covers two scenarios:
+This article describes how to purchase Power BI Premium capacity for your organization. The article covers the following scenario:
 
 - Using P SKUs for typical production scenarios. P SKUs require a monthly or yearly commitment, and are billed monthly.
-
-- Using A SKUs for testing scenarios, and for cases where you don't have the permissions necessary to purchase P SKUs (Microsoft 365 Global Administrator role or Billing Administrator role). A SKUs require no time commitment, and are billed hourly. You purchase A SKUs in the [Azure portal](https://portal.azure.com).
 
 For more information about Power BI Premium, see [What is Power BI Premium?](service-premium-what-is.md). For current pricing and planning information, see the [Power BI pricing page](https://powerbi.microsoft.com/pricing/) and the [Power BI Premium calculator](https://powerbi.microsoft.com/calculator/). Content creators still need a [Power BI Pro license](service-admin-purchasing-power-bi-pro.md), even if your organization uses Power BI Premium. Ensure you purchase at least one Power BI Pro license for your organization. With A SKUs, _all users_ who consume content also require Pro licenses.
 
@@ -107,6 +105,9 @@ You can cancel your subscription from within the Microsoft 365 admin center. To 
 
 When you cancel your Premium subscription, or your capacity license expires, you can continue to access your Premium capacities for a period of 30 days from the date of cancellation or license expiration. After 30 days, you will no longer be able to access your Premium capacities or workspaces in them.
 
+## Purchase A SKUs for testing and other scenarios
+
+You can also purchase A SKUs for testing and other scenarios, which provides Premium capacity on an hourly basis. For more information and steps, see [Purchase Power BI Premium for testing](service-admin-premium-testing.md).
 
 ## Next steps
 
