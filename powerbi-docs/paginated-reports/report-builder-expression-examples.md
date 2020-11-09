@@ -450,7 +450,7 @@ For more information about simple and complex expressions, where you can use exp
     ```  
   
 > [!NOTE]
->  Using JavaScript within a **Go To URL** expression is not supported.  
+>  Power BI paginated reports don't support using JavaScript within a **Go To URL** expression.  
   
 ##  <a name="ReportData"></a> Report data  
  Expressions can be used to manipulate the data that is used in the report. You can refer to parameters and other report information. You can even change the query that is used to retrieve data for the report.  
