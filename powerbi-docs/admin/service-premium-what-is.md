@@ -66,6 +66,17 @@ The following image shows how to enable Premium Gen2.
 
 ![Enabling Premium Generation 2](media/service-premium-what-is/enable-premium-gen2.gif#lightbox) 
 
+### Known limitations in Premium Gen2
+
+The following known limitations currently apply to Premium Gen2:
+
+1.	Premium Gen2 capacity utilization cannot be tracked in the metrics app.
+
+2.	Premium Gen2 capacity settings for specific workloads are not yet visible in the Premium Gen2 capacity settings page in the Admin portal. To change setttings, transition the capacity to the original version of Premium, change the settings, then set the capacity to using Premium Gen2 once again. Memory allocation settings are not applicable for Premium Gen2 capacities.
+
+3.	Dataflows with ADLS Gen2 data sources are not currently functional on Premium Gen2 capacities.
+
+
 ## Subscriptions and licensing
 
 Power BI Premium is a tenant-level Microsoft 365 subscription available in two SKU (Stock-Keeping Unit) families:
@@ -85,7 +96,7 @@ Power BI Premium subscriptions are purchased by administrators in the Microsoft 
 #### Power BI Premium Per User (preview)
 
 Power BI **Premium Per User** allows organizations to license Premium features on a per-user basis. Premium Per User (PPU) includes all Power BI Pro license capabilities, and also adds features such as paginated reports, AI, and other capabilities that are only available to Premium subscribers. 
-Premium Per User is currently in preview. For more information about Premium per user, including a feature comparison and other information about its preview release, see the **Premium Per User FAQ** article. 
+Premium Per User is currently in preview. For more information about Premium per user, including a feature comparison and other information about its preview release, see the [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.md) article. 
 
 
 ## Reserved capacities
@@ -283,7 +294,7 @@ In Power BI Premium, Paginated reports are a workload that must be enabled for a
 
 When using Premium Gen2, Paginated reports in Power BI benefit from the architectural and engineering improvements reflected in Premium Gen2. The following sections describe the benefits of Premium Gen2 for Paginated reports.
 
-**Broader SKU availability** - Paginated reports running on Premium Gen2 can run reports across all available embedded and Premium SKUs. Billing is calculated per CPH hour, across a 24-hour period. This greatly expands the SKUs that support Paginated reports.
+**Broader SKU availability** - Paginated reports running on Premium Gen2 can run reports across all available embedded and Premium SKUs. Billing is calculated per CPU hour, across a 24-hour period. This greatly expands the SKUs that support Paginated reports.
 
 **Dynamic scaling** - With Premium Gen2, challenges associated with spikes in activity, or need for resources, can be handled dynamically as need arises. 
 
