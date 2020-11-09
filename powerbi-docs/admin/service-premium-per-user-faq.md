@@ -27,7 +27,7 @@ This article groups questions and answers into the following categories:
 
 ## General questions
 
-1.	**What is Premium Per User (PPU)?**
+1.	**What is Premium Per User (PPU)?** 
 
     Premium Per User (PPU) is a new way to license premium features on a per user basis. It includes all Power BI Pro license capabilities, along with features like paginated reports, AI, and other capabilities only available in Premium today.
 
