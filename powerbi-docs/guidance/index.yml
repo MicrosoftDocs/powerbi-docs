@@ -43,7 +43,7 @@ landingContent:
           - text: Referencing Power Query queries
             url: power-query-referenced-queries.md
           - text: Dataflows best practices
-            url: ../transform-model/service-dataflows-best-practices.md
+            url: ../transform-model/dataflows/dataflows-introduction-self-service.md
  
   # Card (optional)
   - title: Data modeling
