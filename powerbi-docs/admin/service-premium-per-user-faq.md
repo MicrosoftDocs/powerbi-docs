@@ -21,9 +21,9 @@ This article provides answers to common questions about Premium Per User licensi
 ![Enabling premium per user](media/service-premium-per-user-faq/premium-per-user-faq-01.png)
 
 This article groups questions and answers into the following categories:
-* [General](#general-questions)
-* [Administration](#administrative-questions)
-* [End-user Experience](#end-user-experience-questions)
+* [General](#general-questions) 
+* [Administration](#administrative-questions) 
+* [End-user Experience](#end-user-experience-questions) 
 
 ## General questions
 
