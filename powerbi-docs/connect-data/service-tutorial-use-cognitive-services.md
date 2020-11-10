@@ -173,11 +173,11 @@ When no longer needed, delete the query by right-clicking the query name in the 
 In this tutorial, you applied sentiment scoring and image tagging functions on a Power BI dataflow. To learn more about Cognitive Services in Power BI, read the following articles.
 
 * [Cognitive Services in Azure](/azure/cognitive-services/)
-* Get started [with self-service data prep on dataflows](../transform-model/service-dataflows-overview.md)
+* Get started [with self-service data prep on dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md)
 * Learn more about [Power BI Premium](https://powerbi.microsoft.com/power-bi-premium/)
 
 You might also be interested in the following articles.
 
 * [Tutorial: Invoke a Machine Learning Studio (classic) model in Power BI (Preview)](service-tutorial-invoke-machine-learning-model.md)
-* [Azure Machine Learning integration in Power BI (Preview)](../transform-model/service-machine-learning-integration.md)
-* [Cognitive Services in Power BI (Preview)](../transform-model/service-cognitive-services.md)
+* [Azure Machine Learning integration in Power BI (Preview)](../transform-model/dataflows/dataflows-machine-learning-integration.md)
+* [Cognitive Services in Power BI (Preview)](../transform-model/dataflows/dataflows-machine-learning-integration.md)

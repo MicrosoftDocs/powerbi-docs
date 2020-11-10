@@ -121,8 +121,8 @@ The following table lists features that aren't available in a particular governm
 |[Power Automate connectivity for data-driven alerts](../connect-data/power-bi-data-sources.md)|![available](../media/yes.png)|![available](../media/yes.png)|![not available](../media/no.png)|
 |[Power BI tab in Teams](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>2</sup>|![available](../media/yes.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[Large models](service-premium-large-models.md) | Q4 2020 |Q4 2020| ![not available](../media/no.png) |
-|[Dataflows - SQL Compute engine optimization](../transform-model/service-dataflows-enhanced-compute-engine.md) | Q4 2020 |Q4 2020| ![not available](../media/no.png) |
-|[Dataflows - Direct Query](../transform-model/service-dataflows-directquery.md) | Q4 2020 |Q4 2020|![not available](../media/no.png)|
+|[Dataflows - SQL Compute engine optimization](../transform-model/dataflows/dataflows-premium-features.md) | Q4 2020 |Q4 2020| ![not available](../media/no.png) |
+|[Dataflows - Direct Query](../transform-model/dataflows/dataflows-configure-consume.md) | Q4 2020 |Q4 2020|![not available](../media/no.png)|
 |[Data Protection (MIP labels)](service-security-sensitivity-label-overview.md)|Q4 2020|Q4 2020 |Q4 2020|
 |[Template apps](../connect-data/service-template-apps-overview.md)<sup>3</sup>|Q4 2020 |Q4 2020| Q4 2020|
 |[Custom Visuals](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|Q4 2020 |Q4 2020| Q4 2020|
