@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/27/2020
+ms.date: 11/10/2020
 ---
 
 # Supported data sources for Power BI paginated reports
@@ -25,7 +25,7 @@ Paginated reports natively support the following list of data sources:
 | Azure SQL Database <br>Azure SQL Data Warehouse | Basic, single sign-on (SSO), OAuth2 | You may use an Enterprise Gateway with Azure SQL DB. However, you may not use SSO or oAuth2 to authenticate in those scenarios.   |
 | Azure SQL Managed Instance | Basic | via Public or Private Endpoint (Private Endpoint needs to be routed through Enterprise Gateway)  |
 | Azure Analysis Services | SSO, OAuth2 | The AAS firewall must be disabled or configured to allow all IP ranges in the BlackForest region. This applies only in the BlackForest region.  SSO from external tenant is not supported. |
-| Power BI dataset | SSO | Premium and non-Premium Power BI datasets. Requires Read permission |
+| Power BI dataset | SSO | Premium and non-Premium Power BI datasets. Requires Read permission. Only Import mode and DirectQuery Power BI datasets are supported. |
 | Premium Power BI dataset (XMLA) | SSO | Power BI datasets aren't supported as a data source for embedded paginated reports in "app owns data" scenarios.  To ensure proper connectivity in Power BI Report Builder, ensure that the "Do not use credentials" option is selected when setting your data source.   |
 | Enter Data | N/A | Data is embedded in the report. |
 
