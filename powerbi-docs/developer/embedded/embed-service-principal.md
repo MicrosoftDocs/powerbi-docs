@@ -57,9 +57,9 @@ To use service principal and an application ID  embedded analytics, follow these
 
 Create an Azure AD app using one of these methods:
 
-* Create the app in the [Microsoft Azure portal](https://portal.azure.com/#allservices)
+* [Create the app in the Microsoft Azure portal](embed-service-principal.md#creating-an-azure-ad-app-in-the-microsoft-azure-portal)
 
-* Create the app using [PowerShell](/powershell/azure/create-azure-service-principal-azureps).
+* [Create the app using PowerShell](embed-service-principal.md#creating-an-azure-ad-app-using-powershell)
 
 ### Creating an Azure AD app in the Microsoft Azure portal
 
@@ -128,8 +128,8 @@ $key = New-AzureADServicePrincipalPasswordCredential -ObjectId $sp.ObjectId
 Your service principal doesn't have access to any of your Power BI content and APIs. To give the service principal access, create a security group in Azure AD, and add the service principal you created to that security group.
 
 There are two ways to create an Azure AD security group:
-* Manually (in Azure)
-* Using PowerShell
+* [Manually (in Azure)](embed-service-principal.md#create-a-security-group-manually)
+* [Using PowerShell](embed-service-principal.md#create-a-security-group-using-powershell)
 
 ### Create a security group manually
 
