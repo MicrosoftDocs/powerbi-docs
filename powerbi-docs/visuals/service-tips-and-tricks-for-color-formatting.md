@@ -1,6 +1,6 @@
 ---
-title: Tips and tricks for color formatting in reports
-description: Tips and tricks for color formatting in Power BI reports
+title: Tips and tricks for formatting in reports
+description: Tips and tricks for formatting in Power BI reports
 author: msftrien
 ms.reviewer: 'mihart'
 
@@ -12,7 +12,7 @@ ms.author: rien
 
 LocalizationGroup: Visualizations
 ---
-# Tips and tricks for using color in reports
+# Tips and tricks for formatting in reports
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
@@ -32,7 +32,7 @@ The following tips are provided. Have another great tip? Great! Send it our way 
 
 To make any changes, you must have edit permissions for the report. In Power BI Desktop, open the report in **Report** view. In the Power BI service, that means opening the report and selecting **Edit** from the menu bar, as shown in the following image.
 
-![where to find the Edit menu](media/service-tips-and-tricks-for-color-formatting/power-bi-edit-report.png)
+![where to find the Edit menu](media/service-tips-and-tricks-for-color-formatting/power-bi-editing-view.png)
 
 When the **Filters** and **Visualizations** panes appear along the right side of the report canvas, you’re ready to start customizing. If the panes do not appear, select the arrow, from the top-right corner, to open them.
 

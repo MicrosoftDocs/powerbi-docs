@@ -154,7 +154,7 @@ With **Premium Gen2** the amount of memory available on each Node size is set to
 
 ### Capacity workloads
 
-Capacity workloads are services made available to users. By default, Premium and Azure capacities support only a dataset workload associated with running Power BI queries. The dataset workload cannot be disabled. Additional workloads can be enabled for [AI (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/), [Dataflows](../transform-model/service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium), and [Paginated reports](../paginated-reports/paginated-reports-save-to-power-bi-service.md). These workloads are supported in Premium subscriptions only. 
+Capacity workloads are services made available to users. By default, Premium and Azure capacities support only a dataset workload associated with running Power BI queries. The dataset workload cannot be disabled. Additional workloads can be enabled for [AI (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/), [Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md), and [Paginated reports](../paginated-reports/paginated-reports-save-to-power-bi-service.md). These workloads are supported in Premium subscriptions only. 
 
 Each additional workload allows configuring the maximum memory (as a percentage of total available memory) that can be used by the workload. Default values for maximum memory are determined by SKU. You can maximize your capacity's available resources by enabling only those additional workloads when they're used. And you can change memory settings only when you have determined default settings are not meeting your capacity resource requirements. Workloads can be enabled and configured for a capacity by capacity admins by using **Capacity settings** in the [Admin portal](service-admin-portal.md) or by using the [Capacities REST APIs](/rest/api/power-bi/capacities).  
 
@@ -320,7 +320,7 @@ Premium enables widespread distribution of content by Pro users without requirin
 
 To learn more, see [Power BI licensing](service-admin-licensing-organization.md).
 
-## Analysis Services in Power BI Premium (Preview)
+## Analysis Services in Power BI Premium
 
 Under the hood, the enterprise proven Microsoft **Analysis Services Vertipaq engine** powers Power BI Premium workspaces and datasets. Analysis Services provides programmability and client application and tool support through client libraries and APIs that support the open-standard XMLA protocol. By default, Power BI Premium capacity dataset workloads support *read-only* operations from Microsoft and third-party client applications and tools through an **XMLA endpoint**. Capacity admins can also choose to disable or allow *read/write* operations through the endpoint.
 

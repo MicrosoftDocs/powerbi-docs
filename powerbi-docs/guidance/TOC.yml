@@ -21,7 +21,7 @@
       - name: "Disable Power Query background refresh"
         href: power-query-background-refresh.md 
       - name: "Best practices for dataflows"
-        href: ../transform-model/service-dataflows-best-practices.md
+        href: ../transform-model/dataflows/dataflows-introduction-self-service.md
     - name: Data modeling    
       items:
       - name: "What is a star schema?"

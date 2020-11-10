@@ -472,7 +472,7 @@ Web apps registered in Azure Active Directory (Azure AD) will use an assigned se
 
 ### Create and use dataflows
 
-Users in the organization can create and use dataflows. For an overview of dataflows, see [Self-service data prep in Power BI](../transform-model/service-dataflows-overview.md). To enable dataflows in a Premium capacity, see [Configure workloads](service-admin-premium-workloads.md).
+Users in the organization can create and use dataflows. For an overview of dataflows, see [Self-service data prep in Power BI](../transform-model/dataflows/dataflows-introduction-self-service.md). To enable dataflows in a Premium capacity, see [Configure workloads](service-admin-premium-workloads.md).
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
@@ -529,7 +529,7 @@ All the Power BI visuals admin settings, including Power BI visuals tenant setti
 
 ### Tenant-level storage (preview)
 
-By default, data used with Power BI is stored in internal storage provided by Power BI. With the integration of dataflows and Azure Data Lake Storage Gen2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. For more information, see [Dataflows and Azure Data Lake integration (Preview)](../transform-model/service-dataflows-azure-data-lake-integration.md).
+By default, data used with Power BI is stored in internal storage provided by Power BI. With the integration of dataflows and Azure Data Lake Storage Gen2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. For more information, see [Dataflows and Azure Data Lake integration (Preview)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md).
 
 ### Workspace-level storage permissions (preview)
 
