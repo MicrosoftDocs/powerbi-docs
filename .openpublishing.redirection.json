@@ -3814,11 +3814,6 @@
             "source_path": "powerbi-docs/developer/visuals/custom-visual-develop-tutorial.md",
             "redirect_url": "/power-bi/developer/visuals/develop-circle-card",
             "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/developer/embedded/embed-service-principal-certificate.md",
-            "redirect_url": "/power-bi/developer/embedded/embed-service-principal",
-            "redirect_document_id": false
-        }                          
+        }                         
     ]
 }
