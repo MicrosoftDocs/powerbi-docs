@@ -23,7 +23,7 @@ You can learn more about certificates in Azure AD in the [Client credential flow
 
 1. [Embed your content with service principal](embed-service-principal.md).
 
-2. [Create a certificate](step-2---embed-service-principal-certificate.md#create-a-certificate).
+2. [Create a certificate](embed-service-principal-certificate.md#step-2---create-a-certificate).
 
 3. [Set up certificate authentication](embed-service-principal-certificate.md#step-3---set-up-certificate-authentication).
 
@@ -36,7 +36,7 @@ You can learn more about certificates in Azure AD in the [Client credential flow
 To embed your content with service principal, follow the instructions in [Embed Power BI content with service principal and an application secret](embed-service-principal.md).
 
 >[!NOTE]
->If you already have content that's embedded using a service principal, skip this step and advance to [step 2](step-2---embed-service-principal-certificate.md#create-a-certificate).
+>If you already have content that's embedded using a service principal, skip this step and advance to [step 2](embed-service-principal-certificate.md#step-2---create-a-certificate).
 
 ## Step 2 - Create a certificate
 
@@ -98,7 +98,7 @@ This section describes creating a certificate using [Azure Key Vault](/azure/key
 
      ![A screenshot that shows the certificates and secrets pane for an app in the Azure portal.](media/embed-service-principal/certificates-and-secrets.png)
 
-2. Click **Upload certificate** and upload the *.cer* file you created and downloaded in the [first step](#step-5---create-a-certificate) of this tutorial. The *.cer* file contains the public key.
+2. Click **Upload certificate** and upload the *.cer* file you created and downloaded in [step 2](#step-2---create-a-certificate) of this tutorial. The *.cer* file contains the public key.
 
 ## Step 4 - Get the certificate from Azure Key Vault
 
