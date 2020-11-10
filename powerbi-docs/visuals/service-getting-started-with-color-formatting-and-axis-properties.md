@@ -167,10 +167,10 @@ Here, we have a stacked column chart with data labels showing the value of each 
 
 By opening the visual in Editing view, you can change the display for data labels and total labels. Select the visual to make it active and open the Formatting pane. Scroll down to **Data labels** and **Total labels**. **Data labels** is On and **Total labels** is Off. 
 
-![area chart formatted](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-total-label.png)
+![column chart unformatted](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-total-label.png)
 
 Turn **Data labels** Off, and turn **Total labels** On. Power BI now displays the aggregate for each column.    
-![area chart formatted](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-totals.png)
+![column chart formatted](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-totals.png)
 
 These are just a few of the formatting tasks that are possible. Open a report in Editing mode and have fun exploring the Formatting pane to create beautiful and informative visualizations.
 
