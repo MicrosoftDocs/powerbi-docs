@@ -14,7 +14,7 @@ LocalizationGroup: Get started
 ---
 # Integrate Power BI data alerts with Power Automate
 
-Use [Power Automate](/power-automate/getting-started) to integrate Power BI with your favorite apps and services. With Power Automate, you create automated workflows to get notifications, synchronize files, collect data, and more. In this article, you automate generating an email from a Power BI data alert.
+Use [Power Automate](/power-automate/getting-started) to integrate Power BI with your favorite apps and services. With Power Automate, you create automated workflows to get notifications, synchronize files, collect data, and more. In this article, you automate exporting paginated reports to a variety of locations
 
 [Get started using Power Automate now.](/power-automate/getting-started)
 
