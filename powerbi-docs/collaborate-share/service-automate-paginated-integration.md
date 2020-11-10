@@ -1,6 +1,6 @@
 ---
-title: 'Integrate data alerts with Power Automate'
-description: Learn how to create Power Automate flows triggered by Power BI data alerts.
+title: 'Export paginated reports with Power Automate'
+description: Learn how to create Power Automate flows to export Power BI paginated reports.
 author: maggiesMSFT
 ms.reviewer: ''
 
@@ -12,9 +12,10 @@ ms.author: maggies
 
 LocalizationGroup: Get started
 ---
-# Integrate Power BI data alerts with Power Automate
+# Export Power BI paginated reports with Power Automate
 
-Use [Power Automate](/power-automate/getting-started) to integrate Power BI with your favorite apps and services. With Power Automate, you create automated workflows to get notifications, synchronize files, collect data, and more. In this article, you automate generating an email from a Power BI data alert.
+The Export to File for Paginated Reports action allows you to easily leverage the Power BI export API for paginated reports in your Power Automate flows. With this action, you can automate the export and distribution of Power BI paginated reports in a variety of supported formats and scenarios. In this article, you will learn to make use of templates to build your own flows that use the Export to File for Paginated Reports action.  
+Use [Power Automate](/power-automate/getting-started) to integrate Power BI with your favorite apps and services. With Power Automate, you create automated workflows to get notifications, synchronize files, collect data, and more. In this article, you automate exporting paginated reports to a variety of locations
 
 [Get started using Power Automate now.](/power-automate/getting-started)
 
