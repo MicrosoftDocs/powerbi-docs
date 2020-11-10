@@ -32,6 +32,6 @@ Here you will find the guidance and recommended practices for Power BI. Guidance
 
 | Guidance | Description |
 | --- | --- |
-| [Dataflows best practice](../transform-model/service-dataflows-best-practices.md) | Describes best practices for designing dataflows in Power BI. |
+| [Dataflows best practice](../transform-model/dataflows/dataflows-introduction-self-service.md) | Describes best practices for designing dataflows in Power BI. |
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

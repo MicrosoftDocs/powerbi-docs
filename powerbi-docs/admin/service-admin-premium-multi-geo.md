@@ -93,7 +93,7 @@ Large-storage format datasets should not be moved from the region where they wer
 - A cached query stored in a remote region stays in that region at rest. However, other data in transit may go back and forth between multiple geographies.
 - When moving data from one region to another in a Multi-Geo environment, the source data may remain in the region from which the data was moved for up to 30 days. During that time end users don't have access to it. It's removed from this region and destroyed during the 30-day period.
 - Query text and query result traffic for imported data models does not transit through the home region. The report metadata does still come from the remote region, and certain DNS routing states may take traffic out of the region. 
-- The [dataflows](../transform-model/service-dataflows-overview.md) feature is not supported on Multi-GEO at this time.
+- The [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md) feature is not supported on Multi-GEO at this time.
 - Moving large-storage format datasets from the region where they were created will result in reports failing to load the dataset. Move the large-storage dataset back to its original region to make it available. 
 
 ## Next steps
@@ -102,4 +102,3 @@ Large-storage format datasets should not be moved from the region where they wer
 - [Multi-Geo for Power BI Embedded capacities](../developer/embedded/embedded-multi-geo.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
