@@ -55,7 +55,7 @@ Premium Gen2 provides the following updates or improved experiences:
 
 ### Using Premium Gen2
 
-To enable Premium Gen2, take the following steps:
+You must enable Premium Gen2 to take advantage of its updates. To enable Premium Gen2, take the following steps:
 
 1. In the admin portal, navigate to **Capacity settings**.
 2. Select **Power BI Premium**.
