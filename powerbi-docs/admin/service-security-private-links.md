@@ -305,6 +305,7 @@ There are a few considerations to keep in mind while working with private links 
 * Export services, such as Export to PDF, exporting to Excel from a report, and other export services do not work when using a private link environment
 * SQL Server Reporting Services reports, commonly known as RDL files (*.rdl format files) do not render in private link environments
 * If Internet access is disabled, and if the dataset or dataflow is connecting to a Power BI dataset or dataflow as a data source, the connection will fail
+* Usage metrics do *not* work when private links are enabled
 
 
 ## Next steps
