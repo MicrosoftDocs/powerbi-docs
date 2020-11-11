@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: contperfq1
-ms.date: 10/21/2020
+ms.date: 11/11/2020
 ---
 
 # Get started with deployment pipelines
