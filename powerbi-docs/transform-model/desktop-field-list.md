@@ -80,6 +80,7 @@ There are new Field list icons as well. The following table shows the original i
 
 You might also be interested in the following articles:
 
-* [Use gridlines and snap-to-grid in Power BI Desktop reports](desktop-gridlines-snap-to-grid.md)
-* [About filters and highlighting in Power BI reports](power-bi-reports-filters-and-highlighting.md)
+* [Create calculated columns in Power BI Desktop](desktop-calculated-columns.md)
+* [Use grouping and binning in Power BI Desktop](../create-reports/desktop-grouping-and-binning.md)
+* [Use gridlines and snap-to-grid in Power BI Desktop reports](../create-reports/desktop-gridlines-snap-to-grid.md)
 
