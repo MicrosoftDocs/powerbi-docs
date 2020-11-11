@@ -100,14 +100,14 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 
 #### Step 2: Create an install ticket
 
-The next is to create an install ticket, which is used for redirecting your users to Power BI. The API used for this operation is the **CreateInstallTicket** API.
+The next is to create an install ticket, which will be used for redirecting your users to Power BI. The API used for this operation is the **CreateInstallTicket** API.
 * [Template Apps CreateInstallTicket](https://docs.microsoft.com/rest/api/power-bi/templateapps/createinstallticket)
 
-A sample of creating an install ticket for template app installation and configuration is available from the following file in the [sample application](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample).
+You can see an example of creating an install ticket for template app installation and configuration in the following file in the [sample application](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample).
 
 * [InstallTemplateApp/InstallAppFunction.cs](https://github.com/microsoft/Template-apps-examples/blob/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample/InstallTemplateApp/InstallAppFunction.cs)
 
-Below is a code example for using the template app *CreateInstallTicket* REST API.
+Below is a code sample using the template app *CreateInstallTicket* REST API.
 ```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
@@ -137,11 +137,11 @@ var request = new CreateInstallTicketRequest()
 InstallTicket ticketResponse = await client.TemplateApps.CreateInstallTicketAsync(request);
 ```
 
-#### Step 3: Redirect users to Power BI with the ticket
+### Step 3: Redirect users to Power BI with the install ticket
 
-Once you have created an install ticket, you use it to redirect your users to Power BI to continue with the template app install and configuration. This is done by using a ```POST``` method redirection to the template app's install URL, with the install ticket in its request body.
+Once you have created an install ticket, you use it to redirect your users to Power BI to continue with the template app installation and configuration. This is done using a ```POST``` method redirection in the template app's install URL, with the install ticket in its request body.
 
-There are various documented methods of how to issue a redirection using ```POST``` requests. Choosing one or another depends on the scenario and how your users interact with your portal or service.
+There are various documented methods of how to issue a redirection using ```POST``` requests. Choosing the best one depends on the scenario and how your users interact with your portal or service.
 
 A simple example, mostly used for testing purposes, leverages a form with a hidden field, which automatically submits itself upon loading.
 
@@ -157,7 +157,7 @@ A simple example, mostly used for testing purposes, leverages a form with a hidd
 </html>
 ```
 
-Below is an example of the [sample application](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample)'s response, which holds the install ticket and automatically redirects users to Power BI. The response for this Azure Function is in fact the same automatically self-submitting form mentioned above.
+Below is an example of the [sample application's response](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample), which holds the install ticket and automatically redirects users to Power BI. The response for this Azure Function is in fact the same automatically self-submitting form mentioned above.
 
 ```csharp
 ...
