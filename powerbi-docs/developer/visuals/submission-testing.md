@@ -12,11 +12,32 @@ ms.date: 04/15/2020
 
 # Submission testing of a Power BI visual
 
-Before you publish your visual to [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), it must pass these test cases. Test your visual before you submit it. If your visual doesn't pass required test cases, it will be rejected.
+Before you publish your visual to [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), it must pass the tests listed in this article. Test your visual before you submit it. If your visual doesn't pass the required test cases, it will be rejected.
 
 For more information about the publishing process, see [Publish Power BI visuals to Partner Center](./office-store.md).
 
+## Testing a new version of a published visual
+
+If you're testing or debugging a new version of an already published visual, you can override the AppSource version with a local file version, by enabling Developer mode in Power BI Desktop.
+
+To enable Developer mode, follow these steps:
+
+1. Open Power BI Desktop.
+
+2.  Select **File** > **Options and settings**.
+
+3.  Select **Options**.
+
+4. In the Options window, from the CURRENT FILE list, select **Report settings**.
+
+5. In Developer Mode, select the **Turn on developer mode for this session** option.
+
+>[!NOTE]
+>In Power BI Desktop, Developer mode is only valid for one session. If you open a new Power BI Desktop instance for testing, you'll need to enable Developer mode again.
+
 ## General test cases
+
+Verify that your visual passes the general test cases.
 
 | Test case | Expected results
 | --------- | ----------------

@@ -418,7 +418,7 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Data preparation
-* DirectQuery on Dataflows  [[video]](https://youtu.be/JtuHIslowxk?t=1883)   [[article]](../transform-model/service-dataflows-directquery.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_DQ_Dataflows) 
+* DirectQuery on Dataflows  [[video]](https://youtu.be/JtuHIslowxk?t=1883)   [[article]](../transform-model/dataflows/dataflows-configure-consume.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_DQ_Dataflows) 
 * Web by example now automatically suggests tables by default  [[video]](https://youtu.be/JtuHIslowxk?t=1916)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Web_by_example) 
 * Enhancements to Query Diagnostics: Privacy Level partitions  [[video]](https://youtu.be/JtuHIslowxk?t=1931)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Query_Diag) 
 
@@ -548,8 +548,8 @@ You can also download previous versions of Power BI Desktop if your organization
 
 Select the following links to download this earlier version: 
 
-* [April 2020 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-04.exe)
-* [April 2020 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-04_x64.exe)
+* [April 2020 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup.exe)
+* [April 2020 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup_x64.exe)
 
 
 

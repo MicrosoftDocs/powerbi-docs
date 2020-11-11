@@ -142,7 +142,7 @@ Dataflows can be set to refresh incrementally to avoid having to pull all the da
 
 ![Incremental refresh](media/dataflows-premium-features/incremental-refresh.png)
 
-Setting incremental refresh adds parameters to the dataflow to specify the date range. For detailed information on how to set up incremental refresh, see the [incremental refresh](https://docs.microsoft.com/power-query/dataflows/incremental-refresh) article.
+Setting incremental refresh adds parameters to the dataflow to specify the date range. For detailed information on how to set up incremental refresh, see the [incremental refresh](/power-query/dataflows/incremental-refresh) article.
 
 ### Considerations for when not to set incremental refresh
 
