@@ -14,7 +14,7 @@ LocalizationGroup: Administration
 
 # Private links for accessing Power BI
 
-Azure networking provides two security features, Azure Private Links and Private Endpoints, that enable Power BI to provide secure access. With Azure Private Links and Private Endpoints, data traffic is sent privately using Microsoft's backbone network infrastructure, and thus the data doesn’t traverse the Internet. 
+Azure networking provides the Azure Private Links feature that enables Power BI to provide secure access via Azure Networking Private endpoints. With Azure Private Links and Private Endpoints, data traffic is sent privately using Microsoft's backbone network infrastructure, and thus the data doesn’t traverse the Internet. 
 
 Private links ensure that Power BI users use the Microsoft private network backbone when going to resources in the Power BI service.
 
