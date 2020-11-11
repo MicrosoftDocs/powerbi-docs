@@ -29,10 +29,10 @@ This article provides information and links to several sample Power BI paginated
 To download the reports successfully, you need to download the repo as a zip file and then extract them. Paginated reports are .rdl files.
 
 1. Open the [Reporting Services GitHub repo](https://github.com/microsoft/Reporting-Services).
+1. Select the arrow on the green **Code** button > **Download ZIP**.
 
     :::image type="content" source="media/paginated-reports-samples/paginated-report-download-zip.png" alt-text="Screenshot of the GitHub repo containing the  sample Power BI paginated reports.":::
     
-1. Select the arrow on the green **Code** button > **Download ZIP**.
 1. Open the file, select **Extract all**, and choose a location for the files. By default, the folder name is **Reporting-Services-master**.
 1. Open the **Reporting-Services-master** folder, then open the **PaginatedReportSamples** folder.
 
