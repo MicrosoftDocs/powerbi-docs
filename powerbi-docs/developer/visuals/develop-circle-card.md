@@ -30,7 +30,7 @@ Before you start developing your Power BI visual, verify that you have everythin
 
 * [Visual Studio Code (VS Code)](https://www.visualstudio.com/). VS Code is an ideal Integrated Development Environment (IDE) for developing JavaScript and TypeScript applications.
 
-* [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell) version 4 or later (for Windows). Or [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) (for OSX).
+* [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell) version 4 or later (for Windows). Or [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) (for OSX).
 
 * An environment ready for developing a Power BI visual. [Set up your environment for developing a Power BI visual](environment-setup.md).
 
