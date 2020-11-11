@@ -27,7 +27,7 @@ Use the [embed for your customers](embed-sample-for-customers.md) solution, also
 
 * **Master user** account (a Power BI Pro license used for signing in to Power BI)
 
-*  [Service principal](embed-service-principal.md)
+* [Service principal](embed-service-principal.md)
 
 The embed for your customers solution is usually used by independent software vendors (ISVs) and developers who are creating applications for a third party.
 

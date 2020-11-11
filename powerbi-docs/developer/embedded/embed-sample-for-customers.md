@@ -14,38 +14,58 @@ ms.date: 06/02/2020
 
 # Tutorial: Embed Power BI content into an application for your customers
 
-With **Power BI Embedded in Azure** or **Power BI embedding in Office**, you can embed reports, dashboards, or tiles into an application using app owns data. **App owns data** is about having an application that uses Power BI as its embedded analytics platform. As an **ISV** or a **developer**, you can create Power BI content that displays reports, dashboards, or tiles in an application that is fully integrated and interactive, without requiring users to have a Power BI license. This tutorial demonstrates how to integrate a report into an application using the Power BI .NET SDK with the Power BI JavaScript API.
+**Embedded analytics** and **Power BI Embedded** (the Azure offer) allow you to embed reports, dashboards and tiles, into your application or web app.
 
-![Power BI Embed Report](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
+In this tutorial you'll learn how to create an *embed for your customers* (also known as *app owns data*) application. Users will not need to sign in to Power BI or have a Power BI license, to use your application. Your application will use one of the following methods to authenticate against Power BI:
 
-In this tutorial, you learn how to:
-> [!div class="checklist"]
-> * Register an application in Azure.
-> * Embed a Power BI report into an application.
+* **Master user** account (a Power BI Pro license used for signing in to Power BI)
+
+* [Service principal](embed-service-principal.md)
+
+Use the *embed for your customers* method of embedding Power BI content, if you're an independent software vendor (ISV) or a developer, who wants to create applications for third parties.
 
 ## Prerequisites
 
 To get started, you're required to have:
 
-* A [Power BI Pro account](../../fundamentals/service-self-service-signup-for-power-bi.md) (a master account that is a username and password to sign in to your Power BI Pro account), or a [service principal (app-only token)](embed-service-principal.md).
-* You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
+* Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md).
 
-If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
+* To authenticate your app against Power BI, you'll need one of the following:
+
+    * [Power BI Pro account](../../fundamentals/service-self-service-signup-for-power-bi.md) - This will be your **master user** and your app will use it to sign in to your Power BI Pro account.
+
+    * [Service principal](embed-service-principal.md) - An Azure Active Directory (Azure AD) [service principal object](azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) that allows Azure AD to authenticate your app. 
 
 >[!NOTE]
->Premium Per User (PPU) is not supported. You can use a PPU license to experiment with the *embed for your customers* solution, but you'll not be able to [move to production](embed-sample-for-customers.md#move-to-production).
+>To experiment with embedding, you can use one of these methods:
+>* Sign up for a [free *Power BI pro* trial](https://powerbi.microsoft.com/pricing/).
+>* Use a Premium Per User (PPU) license. You'll not be able to [move to production](embed-sample-for-customers.md#move-to-production).
 
-## Set up your embedded analytics development environment
+## Method
 
-Before you start embedding reports, dashboard, or tiles into your application, you need to make sure your environment allows for embedding with Power BI.
+To create an *embed for your customers* sample app, follow these steps:
 
-You can go through the [Embedding setup tool](https://app.powerbi.com/embedsetup), so you can quickly get started and download a sample application that helps you walk through creating an environment and embedding a report.
+1. Register an Azure AD app.
 
-However, if you choose to set up the environment manually, you can continue below.
+2. Create a Power BI workspace.
 
-### Register an application in Azure Active Directory (Azure AD)
+3. Create and publish a Power BI report.
 
-[Register your application](register-app.md) with Azure Active Directory to allow your application access to the [Power BI REST APIs](/rest/api/power-bi/). Registering your application allows you to establish an identity for your application and specify [permissions to Power BI REST resources](/azure/active-directory/develop/v2-permissions-and-consent). Depending if you want to use a master account or [service principal](embed-service-principal.md), determines how to get started registering an application.
+4. Embed your content.
+
+5. Test your application.
+
+>[!NOTE]
+>You can crete a ready made sample app using the the [embedding setup tool](https://app.powerbi.com/embedsetup). This tool replicates the steps described in this tutorial, and produces a .NET sample app that you can experiment with. 
+
+## Register an Azure AD application
+
+To register your application with Azure AD, follow the instructions in [Register your application](register-app.md). 
+
+
+with Azure AD to allow your application access to the [Power BI REST APIs](/rest/api/power-bi/).
+
+Registering your application allows you to establish an identity for your application and specify [permissions to Power BI REST resources](/azure/active-directory/develop/v2-permissions-and-consent). Depending if you want to use a master account or [service principal](embed-service-principal.md), determines how to get started registering an application.
 
 Depending on which method you take, affects which type of application you register in Azure.
 
