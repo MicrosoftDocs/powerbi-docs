@@ -36,12 +36,12 @@ To make any changes, you must have edit permissions for the report. In Power BI 
 
 When the **Filters** and **Visualizations** panes appear along the right side of the report canvas, you’re ready to start customizing. If the panes do not appear, select the arrow, from the top-right corner, to open them.
 
-![report canvas in editing view](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
+![report canvas in editing view](media/service-tips-and-tricks-for-color-formatting/power-bi-edit-filter.png)
 
 ## Apply a theme
 With report themes you can apply design changes to your entire report, such as using corporate colors, changing icon sets, or applying new default visual formatting. When you apply a report theme, all visuals in your report use the colors and formatting from your selected theme. To learn more, see [Use report themes](../create-reports/desktop-report-themes.md)
 
-![Switch theme icon in menu bar](media/service-tips-and-tricks-for-color-formatting/power-bi-theme.png)
+![Switch theme icon in menu bar](media/service-tips-and-tricks-for-color-formatting/power-bi-themes.png)
 
 Here, we've applied the **Innovate** theme to the Sales and Marketing report.
 
@@ -52,13 +52,13 @@ Sometimes you want to highlight one particular data point. Perhaps it’s a sale
 
 The following visualization ranks units sold by product segment. 
 
-![Change data colors to grey](media/service-tips-and-tricks-for-color-formatting/power-bi-data.png)
+![Change data colors to grey](media/service-tips-and-tricks-for-color-formatting/power-bi-format.png)
 
 Now imagine you want to call out the **Convenience** segment to show how well this brand new segment is performing, by using color. Here are the steps:
 
 Expand the **Data colors** card and turn the slider On for **Show all**. This displays the colors for each data element in the visualization. You can now modify any of the data points.
 
-![Format pane with Show all set to On](media/service-tips-and-tricks-for-color-formatting/power-bi-show.png)
+![Format pane with Show all set to On](media/service-tips-and-tricks-for-color-formatting/power-bi-show-all.png)
 
 Set **Convenience** to orange. 
 
@@ -80,9 +80,9 @@ Visualizations often benefit from dynamically setting color based on the numeric
 The following sections demonstrate different ways to base color on a numeric value.
 
 ### Base the color of data points on a value
-To change color based on a value, select a visualization to make it active. Open the Formatting pane by selecting the paint roller icon and then open the **Data colors** card. Hover over the card, and select the three vertical dots that appear and choose **Conditional formatting**.  
+To change color based on a value, select a visualization to make it active. Open the Formatting pane by selecting the paint roller icon and then choose the **Data colors** card. Below **Default color**, select the fx icon.  
 
-![select the conditional formatting option by clicking the three vertical dots](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting.gif)
+![select the conditional formatting option by clicking the three vertical dots](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional.png)
 
 In the **Default color** pane, use the dropdowns to identify the fields to use for conditional formatting. In this example, we've selected the **Sales fact** > **Total Units** field and selected light blue for the **Lowest value** and dark blue for **Highest value**. 
 
