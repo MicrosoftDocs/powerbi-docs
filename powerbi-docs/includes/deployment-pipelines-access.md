@@ -1,6 +1,6 @@
 ---
 title: Deployment pipelines access
-description: Deployment pipelines acess
+description: Deployment pipelines access
 services: powerbi
 author: KesemSharabi
 ms.author: kesharab
