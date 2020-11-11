@@ -61,14 +61,6 @@
         href: service-share-report-teams.md
       - name: "Get a link preview in Teams"
         href: service-teams-link-preview.md
-    - name: Power BI and Power Automate
-      items: 
-      - name: Integrate data alerts with Power Automate
-        href: service-flow-integration.md
-      - name: Export paginated reports with Power Automate
-        href: service-automate-paginated-integration.md
-      - name: Export paginated reports to OneDrive or SharePoint Online
-        href: service-automate-paginated-onedrive-sharepoint.md
     - name: Publish and share your work
       items: 
       - name: "Share dashboards and reports"
@@ -107,6 +99,16 @@
         href: desktop-troubleshooting-analyze-in-excel.md
       - name: "Error: We couldn't find data in your Excel workbook"
         href: ../connect-data/service-admin-troubleshoot-excel-workbook-data.md
+    - name: Power BI and Power Automate
+      items: 
+      - name: Integrate data alerts with Power Automate
+        href: service-flow-integration.md
+      - name: Export paginated reports with Power Automate
+        href: service-automate-paginated-integration.md
+      - name: Save paginated reports to OneDrive or SharePoint Online
+        href: service-automate-paginated-onedrive-sharepoint.md
+      - name: Export paginated reports from Excel Online or SharePoint list
+        href: service-automate-paginated-onedrive-sharepoint.md
     - name: "Use third-party apps"
       href: service-power-bi-get-started-third-party-apps.md
     - name: Organizational content packs

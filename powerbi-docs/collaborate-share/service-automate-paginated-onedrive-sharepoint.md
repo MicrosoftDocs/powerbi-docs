@@ -66,11 +66,7 @@ With either of these templates, you set up recurring exports of a paginated repo
     When you run the flow, Power Automate exports a paginated report in the specified format to OneDrive for Business or SharePoint Online.  
 
 ## Next steps
+
+- [Export Power BI paginated reports with Power Automate](service-automate-paginated-integration.md)
 - [Get started with Power Automate](/power-automate/getting-started/)
-
 - More questions? [Try the Power BI Community](https://community.powerbi.com/)
-
- 
-
-### Save a paginated report to  a SharePoint Online folder  
-
