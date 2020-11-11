@@ -7,7 +7,7 @@ ms.reviewer: 'swgupt'
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/01/2020
+ms.date: 11/10/2020
 ---
 
 # Sample Power BI paginated reports
@@ -22,8 +22,25 @@ This article provides information and links to several sample Power BI paginated
 - You can share these reports online, just as they are, with no editing. To do so, you need a Power BI Pro license. Sign up for a [free trial of a Power BI Pro license](../fundamentals/service-self-service-signup-for-power-bi.md#sign-up-for-an-individual-trial-of-power-bi-pro).
 - You also need access to a Power BI workspace in a [Premium capacity](../admin/service-premium-what-is.md).
 - To edit these reports, you need to [install Power BI Report Builder](https://aka.ms/pbireportbuilder) from the Microsoft Download Center.
-- OK, you're ready to [download these sample paginated reports](https://github.com/microsoft/Reporting-Services/tree/master/PaginatedReportSamples) from GitHub! You don't need a GitHub account. 
+- OK, you're ready to download these sample paginated reports from GitHub! You don't need a GitHub account. 
 
+## Download the reports
+
+To download the reports successfully, you need to download the repo as a zip file and then extract them. Paginated reports are .rdl files.
+
+1. Open the [Reporting Services GitHub repo](https://github.com/microsoft/Reporting-Services).
+1. Select the arrow on the green **Code** button > **Download ZIP**.
+
+    :::image type="content" source="media/paginated-reports-samples/paginated-report-download-zip.png" alt-text="Screenshot of the GitHub repo containing the  sample Power BI paginated reports.":::
+    
+1. Open the file, select **Extract all**, and choose a location for the files. By default, the folder name is **Reporting-Services-master**.
+1. Open the **Reporting-Services-master** folder, then open the **PaginatedReportSamples** folder.
+
+    >[!NOTE]
+    >You can delete all the other folders in the **Reporting-Services-master** folder. They contain other samples you don't need.
+
+1. Select one of the .rdl files to open it in Power BI Report Builder.
+1. Now you can [publish the paginated report to the Power BI service](paginated-reports-save-to-power-bi-service.md).
 
 ## Invoice
 

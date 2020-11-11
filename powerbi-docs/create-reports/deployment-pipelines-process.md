@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: contperfq1
-ms.date: 09/22/2020
+ms.date: 10/21/2020
 ---
 
 # Understand the deployment process
@@ -33,6 +33,8 @@ During first-time deployment, deployment pipelines checks if you have Premium ca
 If you have capacity permissions, the content of the workspace is copied to the stage you're deploying to, and a new  workspace for that stage is created on the Premium capacity.
 
 If you don't have capacity permissions, the workspace is created but the content isn’t copied. You can ask a capacity admin to add your workspace to a capacity, or ask for assignment permissions for the capacity. Later, when the workspace is assigned to a capacity, you can deploy content to this workspace.
+
+If you're using a Premium Per User (PPU) license, your workspace is automatically created in the capacity associated to your PPU license. In such cases capacity permissions are not required. However, workspaces created by a PPU user, can only be accessed by other PPU users. In addition, content created in such workspaces can only be consumed by users with a PPU license.
 
 ### Workspace and content ownership
 
@@ -62,7 +64,7 @@ With small changes, such as adding a table or measures, Power BI keeps the origi
 
 As long as the deployed content resides on a [premium capacity](../admin/service-premium-what-is.md), a user that meets the following conditions, can deploy it to a stage with an existing workspace:
 
-* A [Pro user](../admin/service-admin-purchasing-power-bi-pro.md) who's a member of both workspaces in the source and target deployment stages.
+* A user with a [Pro](../admin/service-admin-purchasing-power-bi-pro.md) or PPU license, who's a member of both workspaces in the source and target deployment stages.
 
 * An owner of all the datasets in the target workspace that are about to be deployed.
 
@@ -82,7 +84,7 @@ When you deploy content from one pipeline stage to another, the copied content c
 
 Deployment pipelines doesn't support the following items:
 
-* Datasets that do not originate from a .pbix
+* Datasets that do not originate from a PBIX
 
 * Reports based on unsupported datasets
 

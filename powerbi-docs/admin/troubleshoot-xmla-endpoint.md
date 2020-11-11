@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot XMLA endpoint connectivity in Power BI Premium (Preview) 
+title: Troubleshoot XMLA endpoint connectivity in Power BI
 description: Describes how to troubleshoot connectivity through the XMLA endpoint in Power BI Premium.
 author: minewiskan
 ms.author: owend
@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 10/14/2020
+ms.date: 10/20/2020
 ms.custom: seodec18, css_fy20Q4
 
 LocalizationGroup: Premium
@@ -138,7 +138,7 @@ Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tm
 
 ## See also
 
-[Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md)   
-[Automate Premium workspace and dataset tasks with service principals](service-premium-service-principal.md)   
-[Troubleshooting Analyze in Excel](../collaborate-share/desktop-troubleshooting-analyze-in-excel.md)   
-[Tabular model solution deployment](/analysis-services/deployment/tabular-model-solution-deployment?view=power-bi-premium-current)
+[Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md)  
+[Automate Premium workspace and dataset tasks with service principals](service-premium-service-principal.md)  
+[Troubleshooting Analyze in Excel](../collaborate-share/desktop-troubleshooting-analyze-in-excel.md)  
+[Tabular model solution deployment](/analysis-services/deployment/tabular-model-solution-deployment?view=power-bi-premium-current&preserve-view=true)
