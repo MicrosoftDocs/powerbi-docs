@@ -29,9 +29,9 @@ This article has two main sections:
 * The first section, [How to create an application for pre-configured template app installation](#how-to-create-an-application-for-pre-configured-template-app-installation), introduces the steps you need to go through in order to create a template app preconfiguration application such as the one described above, and the relevant APIs.
 * If you prefer to just dive in and get started, you can skip to the [tutorial](#tutorial-create-a-short-application-using-our-sample-application) where you create an application using a simple sample application we've prepared that uses an Azure Function.
 
-## How to create an application for pre-configured template app installation
+## How to create a pre-configured template app install experience
 
-This section describes the prerequisites you need to complete before creating your template app preconfiguration and install application, and the main steps and APIs you need to build the application.
+This section describes the prerequisites for providing a pre-configured template app install experience, and the main steps and APIs you need.
 
 The basic flow of what a preconfigured template app install application does when the customer launches it by clicking the link in your portal is as follows:
 
