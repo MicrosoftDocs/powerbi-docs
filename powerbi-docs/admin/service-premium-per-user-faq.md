@@ -18,7 +18,7 @@ Power BI **Premium Per User** allows organizations to license Premium features o
 
 This article provides answers to common questions about Premium Per User licensing. All information in this article is subject to change, and refinement, as Premium Per User moves through its preview period and is released for general availability (GA). 
 
-![Enabling premium per user](media/service-premium-per-user-faq/premium-per-user-faq-01.png)
+![Enabling premium per user](media/service-premium-per-user-faq/premium-per-user-faq-01a.png)
 
 This article groups questions and answers into the following categories:
 * [General questions](#general-questions) 
@@ -33,7 +33,7 @@ This article groups questions and answers into the following categories:
 
 2.	**When will it be available for purchase?**
 
-    Development is ongoing, and we do not anticipate PPU releasing to GA until spring of 2021. Until general availability, the public preview is available to all organizations and is free of charge.
+    Development is ongoing, and we do not anticipate PPU releasing to GA until 2021. Until general availability, the public preview is available to all organizations and is free of charge.
 
 3.	**Do I need a Power BI Pro AND a Premium Per User license?**
 
@@ -60,7 +60,7 @@ This article groups questions and answers into the following categories:
     
     Once a license is provisioned for PPU for the tenant, PPU features are available in any workspace for which you turn them on. For the preview, simply enable the Premium Per User features in the capacity dropdown by selecting the Premium per user item, as shown in the following image.
 
-    ![Enabling premium per user](media/service-premium-per-user-faq/premium-per-user-faq-01.png)
+    ![Enabling premium per user](media/service-premium-per-user-faq/premium-per-user-faq-01a.png)
 
 2.	**Does this work like a Premium capacity? Can you turn features on/off?**
 
@@ -76,7 +76,7 @@ This article groups questions and answers into the following categories:
 
 5.	**Can tenant admins see which workspaces are marked as Premium Per User?**
 
-    Yes, these are called out in the workspaces menu item in the tenant admin screen, where it shows you which workspaces are marked as Premium Per User.
+    Yes, these are called out in the workspaces menu item in the tenant admin screen, where it shows you which workspaces are marked as Premium.
 
 6.	**Can I move workspaces between Premium Per User and Premium capacities?**
 
@@ -86,9 +86,6 @@ This article groups questions and answers into the following categories:
 
     A limited set of the APIs are available to allow movement of workspaces, but you cannot do things like turn off workloads, and other such activities.  
 
-8.	**How can I prevent users from exporting paginated reports, as these aren’t currently controlled in the tenant settings?**
-
-    We are enabling controls such as these at a tenant level, ensuring all formats can be restricted if you choose. These settings will also affect all paginated report workloads running on Premium or Embedded capacities.
 
 ## End user experience questions
 
@@ -121,7 +118,7 @@ This article groups questions and answers into the following categories:
 
 7.	**Will the export API be available for Premium Per User?**
 
-    Yes, but there will be significant throttling limits there compared to a Premium capacity for both report types.  
+    This is currently available for paginated reports, and is restricted to a single call once every 5 minutes.  Power BI reports are not supported at this time.  
 
 8.	**How will e-mail subscriptions work in PPU?**
 
@@ -150,6 +147,10 @@ This article groups questions and answers into the following categories:
 14.	**Can I have a dataflow run in a Premium per user workspace, be imported into a Power BI dataset in another workspace, and users who consume that content not need a Premium per user license?**
 
     As long as the Power BI report author has a Premium Per User license, this is possible during the preview period for PPU.
+
+15. **Can I use the Power BI mobile apps with Premium per user?**
+
+    Yes, the Power BI mobile apps have been updated to work with any content published to a Premium per user app or workspace.
 
 
 **Next steps**
