@@ -9,11 +9,9 @@ ms.date: 10/21/2020
 ms.custom: include file
 ---
 
-* You're a Power BI [Pro user](../admin/service-admin-purchasing-power-bi-pro.md).
-
 * You have one of the following Premium licenses:
 
-    * Premium capacity as part of your organization.
+    * You're a Power BI [Pro user](../admin/service-admin-purchasing-power-bi-pro.md), and you belong to an organization that has Premium capacity.
 
     * Premium Per User (PPU).
 
