@@ -262,7 +262,7 @@ You can set this feature at the report level. However, the feature is off by def
 
 Currently, you can control some of the formatting for the **Apply** text for the button. In the **Filter pane** section of the **Format** pane, set these options:
 
-- **Checkbox** and **Apply color** controls fill color. 
+- **Checkbox and Apply color** controls fill color. 
 - **Font and icon color** controls text color.
 - **Header text size** controls text size.
 - **Font family** controls font.
