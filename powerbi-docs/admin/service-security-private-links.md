@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.author: davidi
-ms.date: 10/21/2020
+ms.date: 11/11/2020
 ms.custom: 
 LocalizationGroup: Administration
 ---
