@@ -177,4 +177,4 @@ In this tutorial, you created a simple experiment using Azure Machine Learning S
 - Create a dataflow
 - Apply insights from the Azure ML model to the dataflow
 
-For more information about Azure Machine Learning integration in Power BI, see [Azure Machine Learning integration in Power BI (Preview)](../transform-model/service-machine-learning-integration.md).
+For more information about Azure Machine Learning integration in Power BI, see [Azure Machine Learning integration in Power BI (Preview)](../transform-model/dataflows/dataflows-machine-learning-integration.md).

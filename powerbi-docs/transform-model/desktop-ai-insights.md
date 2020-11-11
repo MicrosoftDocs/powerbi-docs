@@ -154,7 +154,7 @@ To use this capability, a data scientist can simply grant access to the Azure ML
 
 This functionality is supported in Power BI Desktop, Power BI dataflows, and for Power Query Online in the Power BI service.
 
-To learn more about dataflows, see [Self-service data prep in Power BI](service-dataflows-overview.md).
+To learn more about dataflows, see [Self-service data prep in Power BI](./dataflows/dataflows-introduction-self-service.md).
 
 To learn more about Azure Machine Learning, see the following articles:
 
@@ -221,7 +221,7 @@ This article provided an overview of integrating Machine Learning into Power BI 
 
 - [Tutorial: Invoke a Machine Learning Studio (classic) model in Power BI](../connect-data/service-tutorial-invoke-machine-learning-model.md)
 - [Tutorial: Using Cognitive Services in Power BI](../connect-data/service-tutorial-use-cognitive-services.md)
-- [Cognitive Services in Power BI](service-cognitive-services.md)
-- [Azure Machine Learning integration in Power BI](service-machine-learning-integration.md)
+- [Cognitive Services in Power BI](./dataflows/dataflows-machine-learning-integration.md)
+- [Azure Machine Learning integration in Power BI](./dataflows/dataflows-machine-learning-integration.md)
 - [Monitoring Premium capacities with the app](../admin/service-admin-premium-monitor-capacity.md)
 - [AI metrics in the Premium capacity metrics app](https://powerbi.microsoft.com/blog/ai-metrics-now-available-in-power-bi-premium-capacity-metrics-app/)

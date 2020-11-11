@@ -1,8 +1,8 @@
 ---
 title: Radial gauge charts in Power BI  
 description: 'Radial gauge charts in Power BI'
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: 'mihart'
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop

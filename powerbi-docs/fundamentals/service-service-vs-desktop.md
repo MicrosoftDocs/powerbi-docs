@@ -51,7 +51,7 @@ After you've created your reports, you can save them to a *workspace* in the **P
 
 ### Self-service data prep with dataflows
 
-Dataflows help organizations unify data from disparate sources and prepare it for modeling. Analysts can easily create dataflows, using familiar, self-service tools. Analysts use dataflows to ingest, transform, integrate, and enrich big data by defining data source connections, ETL logic, refresh schedules, and more. Read more about [self-service data prep with dataflows](../transform-model/service-dataflows-overview.md).
+Dataflows help organizations unify data from disparate sources and prepare it for modeling. Analysts can easily create dataflows, using familiar, self-service tools. Analysts use dataflows to ingest, transform, integrate, and enrich big data by defining data source connections, ETL logic, refresh schedules, and more. Read more about [self-service data prep with dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md).
 
 ## Next steps
 

@@ -41,6 +41,9 @@ To get started, you're required to have:
 
 If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
+>[!NOTE]
+>Premium Per User (PPU) is supported. However, if you're using a PPU license, only PPU users in your organization will be able to access your solution.
+
 ## Set up your Power BI environment
 
 Follow the instructions in this section to set up Power BI for embedding your paginated reports.
