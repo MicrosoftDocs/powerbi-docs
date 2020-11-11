@@ -6,7 +6,7 @@ ms.reviewer: aphilip94
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 11/06/2020
+ms.date: 11/10/2020
 ms.author: anphil
 
 LocalizationGroup: Visualizations
@@ -22,7 +22,7 @@ This feature is in preview, so you first need to turn on the feature switch. Go 
 :::image type="content" source="media/power-bi-visualization-anomaly-detection//preview-feature-switch.png" alt-text="Screenshot showing how to enable Anomaly detection preview feature switch.":::
  
 ## Get started
-This tutorial uses online sales data for various products. You can find the pbix used  here: online sales.pbix
+This tutorial uses online sales data for various products. You can find the .pbix file used  here: online sales.pbix
 
 You can enable Anomaly detection by selecting the chart and adding "Find Anomalies" option in the analytics pane. 
 
@@ -34,7 +34,7 @@ You can enable Anomaly detection by selecting the chart and adding "Find Anomali
  
 ### Format anomalies
 
-This experience  is highly customizable. You can format the anomaly's shape, size, color and also the color, style, transparency of expected range. You can also configure the parameter of the algorithm.  If you increase the sensitivity, the algorithm would be very sensitive to changes in your data. In that case, even a slight deviation is marked as an anomaly. If you decrease the sensitivity, the algorithm is more selective on what it considers an anomaly.
+This experience  is highly customizable. You can format the anomaly's shape, size, and color, and also the color, style, and transparency of expected range. You can also configure the parameter of the algorithm.  If you increase the sensitivity, the algorithm is more sensitive to changes in your data. In that case, even a slight deviation is marked as an anomaly. If you decrease the sensitivity, the algorithm is more selective on what it considers an anomaly.
 
  ![Screenshot showing how to format anomalies](media/power-bi-visualization-anomaly-detection/format-anomalies.gif)
  
@@ -44,7 +44,7 @@ Besides detecting anomalies, you can also automatically explain the anomalies th
 ![Screenshot showing how to to view explanations](media/power-bi-visualization-anomaly-detection/view-explanations.gif)
  
 ### Configure explanations
-You can also control the fields that are used for analysis. For example, by dragging Seller and City into the **Explain by** field well, Power BI restricts the analysis to just those fields. In this case,  the anomaly on August 31 seems to be associated with a particular seller and particular cities. Here, seller "Fabrikam" has a strength of 99%. Power BI calculates *strength* as the ratio of the deviation from expected value, when filtered by the dimension to the deviation in total value.  Concretely, it's the ratio of deviation (actual minus expected value) between the component time series (for example, Revenue for Seller = Fabrikam) and the aggregate time series (for example, overall Revenue) for the anomaly point. Opening this card shows the visual with a spike in the revenue for this seller on August 31. Use the **Add to report** option to add this visual to the page.
+You can also control the fields that are used for analysis. For example, by dragging Seller and City into the **Explain by** field well, Power BI restricts the analysis to just those fields. In this case,  the anomaly on August 31 seems to be associated with a particular seller and particular cities. Here, seller "Fabrikam" has a strength of 99%. Power BI calculates *strength* as the ratio of the deviation from expected value, when filtered by the dimension to the deviation in total value.  It's the ratio of deviation between the component time series and the aggregate time series for the anomaly point. For example, it's the ratio of actual minus expected value between the component time series *Fabrikam* and the aggregate time series *overall Revenue* for the anomaly point. Opening this card shows the visual with a spike in the revenue for this seller on August 31. Use the **Add to report** option to add this visual to the page.
 ![Screenshot showing how to configure explanations](media/power-bi-visualization-anomaly-detection/configure-explanations.gif)
 
 
