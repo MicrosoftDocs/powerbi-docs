@@ -72,7 +72,7 @@ The following known limitations currently apply to Premium Gen2:
 
 1.	Premium Gen2 capacity utilization cannot be tracked in the metrics app.
 
-2.	Premium Gen2 capacity settings for specific workloads are not yet visible in the Premium Gen2 capacity settings page in the Admin portal. To change setttings, transition the capacity to the original version of Premium, change the settings, then set the capacity to using Premium Gen2 once again. Memory allocation settings are not applicable for Premium Gen2 capacities.
+2.	Premium Gen2 capacity settings for specific workloads are not yet visible in the Premium Gen2 capacity settings page in the Admin portal. To change settings, transition the capacity to the original version of Premium, change the settings, then set the capacity to using Premium Gen2 once again. Memory allocation settings are not applicable for Premium Gen2 capacities.
 
 3.	Dataflows with ADLS Gen2 data sources are not currently functional on Premium Gen2 capacities.  
 
