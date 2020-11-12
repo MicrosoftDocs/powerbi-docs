@@ -52,6 +52,7 @@ The query parameters are:
 | **reportObjectId** | 36 character guid | Report object ID (if action is OpenReport)<br>Example: **reportObjectId=6114cec7-78e1-4926-88ff-0bc5338452cf** |
 | **tileObjectId** | 36 character guid | Tile object ID (if action is OpenTile)<br>Example: **tileObjectId=a845dcb8-a289-43a8-94ea-67a8c0a068f9** |
 | **reportPage** | ReportSection&lt;num&gt; | Page name if you want to open a specific report page. (if action is OpenReport)<br>Example: **reportPage=ReportSection6**  |
+| **bookmarkGuid** | 36 character guid | Bookmark ID, if you want to open a specific bookmarked view. (if action is OpenReport)<br>Example: **bookmarkGuid=18e8872f-6db8-4cf8-8298-3b2ab254cc7f** |
 | **ctid** | 36 character guid | Item organization ID (relevant for B2B scenarios. This can be omitted if the item belongs to the user's organization)<br>Example: **ctid=5367c770-09d0-4110-bf6a-d760cb5ef681** . |
 ||||
 
@@ -89,11 +90,11 @@ The examples below show where you can find the IDs you need in the URLs of the i
 
     https<nolink>://app.powerbi.com/groups/me/dashboards/**&lt;dashboard-object-id&gt;**?ctid=**&lt;org-object-id&gt;**
 
-* To find a 36-character report object ID, navigate to the specific report you want to link to in the Power BI service and find the necessary IDs as illustrated below. Note that this example also contains a reference to a specific report page.
+* To find a 36-character report object ID, navigate to the specific report you want to link to in the Power BI service and find the necessary IDs as illustrated below. Note that this example contains a reference to a specific report page and a specific bookmark.
 
-    https<nolink>://app.powerbi.com/groups/me/reports/**&lt;report-object-id&gt;**/**ReportSection&lt;num&gt;**?ctid=**&lt;org-object-id&gt;**
+    https<nolink>://app.powerbi.com/groups/me/reports/**&lt;report-object-id&gt;**/**ReportSection&lt;num&gt;**?bookmarkGuid=**&lt;org-object-id&gt;**
 
-* To link to an item in a workspace other than My Workspace, you need to extract the group object ID. This example shows shows a report from a workspace other than My Workspace.
+* To link to an item in a workspace other than My Workspace, you need to extract the group object ID. This example shows a report from a workspace other than My Workspace.
 
     https<nolink>://app.powerbi.com/groups/**&lt;group-object-id&gt;**/reports/**&lt;report-object-id&gt;**/**ReportSection&lt;report-section-num&gt;**?ctid=**&lt;org-object-id&gt;**
 
@@ -169,7 +170,7 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
     https<nolink>://powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**/**ReportSection11**</code>
 
-* **Open in full-screen mode**
+* **Open in full-screen mode (Windows devices only)**
 
     You can also add the **openFullScreen** parameter to open specific report in full-screen mode. The following example opens a report page in full screen mode:
 
@@ -188,15 +189,6 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 In the Power BI mobile apps, links inside Power BI work just as they work in the Power BI service.
 
 If you want to add link to your report that points to another Power BI item, you can just copy that item's URL from the browser address bar. Read more about [how to add a hyperlink to a text box in a report](https://docs.microsoft.com/power-bi/service-add-hyperlink-to-text-box).
-
-## Use report URL with filter
-Like the Power BI service, the Power BI mobile apps support report URLs that contain a filter query parameters. You can open a report in Power BI Mobile app and filter it to specific state. 
-For example, this URL opens the Sales report and filters it by Territory:
-
-https<nolink>://app.powerbi.com/groups/me/reports/**&lt;report-object-id&gt;**/**ReportSection&lt;num&gt;**?ctid=**&lt;org-object-id&gt;**&filter=**&lt;Store/Territory eq 'NC'&gt;**
-
-
-Read more about [how to build query param to filter reports](https://docs.microsoft.com/power-bi/service-url-filters).
 
 ## Next steps
 Your feedback helps us decide what to implement in the future, so don’t forget to vote for other features you'd like to see in Power BI mobile apps. 
