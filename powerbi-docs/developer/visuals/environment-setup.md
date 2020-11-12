@@ -57,7 +57,7 @@ For a client (your computer) and a server (Power BI service) to interact securel
 This process describes running a PowerShell command that launches the **Certificate Import Wizard**. Follow the steps below to configure the certificate in the wizard.
 
 >[!IMPORTANT]
->Do not close the PowerSell window during this procedure.
+>Do not close the PowerShell window during this procedure.
 
 1. Open Windows PowerShell and enter the following command.
 

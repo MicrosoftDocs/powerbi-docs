@@ -187,4 +187,4 @@ In this tutorial, you created and applied a binary prediction model in Power BI 
 * Apply the model to a dataflow entity
 * Using the scored output from the model in a Power BI report
 
-For more information about Machine Learning automation in Power BI, see [Automated Machine Learning in Power BI](../transform-model/service-machine-learning-automated.md).
+For more information about Machine Learning automation in Power BI, see [Automated Machine Learning in Power BI](../transform-model/dataflows/dataflows-machine-learning-integration.md).

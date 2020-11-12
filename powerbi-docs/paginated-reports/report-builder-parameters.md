@@ -13,6 +13,8 @@ ms.date: 06/06/2019
 
 # Report parameters in Power BI Report Builder
 
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+
 This topic describes the common uses for Power BI Report Builder report parameters, the properties you can set, and much more. Report parameters enable you to control report data, connect related reports together, and vary report presentation. You can use report parameters in paginated reports you create in Report Builder.
 
 ## <a name="bkmk_Common_Uses_for_Parameters"></a> Common uses for parameters

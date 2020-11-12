@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 06/22/2020
+ms.date: 11/11/2020
 ms.author: davidi
 LocalizationGroup: Premium
 ---
@@ -21,6 +21,10 @@ Incremental refresh enables very large datasets in Power BI with the following b
 
 > [!NOTE]
 > Incremental refresh is now available for Power BI Pro, Premium, and shared subscriptions and datasets.
+
+> [!NOTE]
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. Premium Gen2 significantly improves scheduled refresh, by enabling autoscaling to avoid refresh conflicts. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+
 
 ## Configure incremental refresh
 
@@ -242,3 +246,14 @@ Download and install the latest version of the ALM Toolkit from the [Analysis Se
 
 [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md)   
 [Troubleshooting refresh scenarios](../connect-data/refresh-troubleshooting-refresh-scenarios.md)
+
+
+Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+* Performance
+* Per-user licensing
+* Greater scale
+* Improved metrics
+* Autoscaling
+* Reduced management overhead
+
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

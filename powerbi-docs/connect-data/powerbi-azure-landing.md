@@ -131,7 +131,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                     <div class="cardText"> 
                                           <h3>Azure Machine Learning</h3> 
                                           <p></p>
-                                                <a href="../transform-model/service-machine-learning-integration.md">Azure Machine Learning and Power BI</a><br/> 
+                                                <a href="/power-bi/transform-model/dataflows/dataflows-machine-learning-integration">Azure Machine Learning and Power BI</a><br/> 
                                                 <a href="service-tutorial-invoke-machine-learning-model.md">Tutorial: Invoke an AML model from Power BI</a><br/> 
                                     </div> 
                               </div> 
