@@ -28,11 +28,11 @@ You can enable Anomaly detection by selecting the chart and adding "Find Anomali
 
  ![Screenshot showing entry point for anomaly detection](media/power-bi-visualization-anomaly-detection/entry-point.png)
 
- For example, this chart shows Revenue over time. Adding anomaly detection automatically enriches the chart with anomalies, and the expected range of values. When a value goes outside this expected boundary, it's marked as an anomaly.
+ For example, this chart shows Revenue over time. Adding anomaly detection automatically enriches the chart with anomalies, and the expected range of values. When a value goes outside this expected boundary, it's marked as an anomaly. Check out this [technical blog](https://techcommunity.microsoft.com/t5/ai-customer-engineering-team/overview-of-sr-cnn-algorithm-in-azure-anomaly-detector/ba-p/982798) for more details about the Anomaly Detector algorithm.
 
  ![Screenshot showing how to add anomalies](media/power-bi-visualization-anomaly-detection/add-anomalies.gif)
  
-### Format anomalies
+## Format anomalies
 
 This experience  is highly customizable. You can format the anomaly's shape, size, and color, and also the color, style, and transparency of expected range. You can also configure the parameter of the algorithm.  If you increase the sensitivity, the algorithm is more sensitive to changes in your data. In that case, even a slight deviation is marked as an anomaly. If you decrease the sensitivity, the algorithm is more selective on what it considers an anomaly.
 
@@ -47,11 +47,11 @@ Besides detecting anomalies, you can also automatically explain the anomalies th
 You can also control the fields that are used for analysis. For example, by dragging Seller and City into the **Explain by** field well, Power BI restricts the analysis to just those fields. In this case,  the anomaly on August 31 seems to be associated with a particular seller and particular cities. Here, seller "Fabrikam" has a strength of 99%. Power BI calculates *strength* as the ratio of the deviation from expected value, when filtered by the dimension to the deviation in total value. For example, it's the ratio of actual minus expected value, between the component time series *Fabrikam* and the aggregate time series *overall Revenue* for the anomaly point. Opening this card shows the visual with a spike in the revenue for this seller on August 31. Use the **Add to report** option to add this visual to the page.
 ![Screenshot showing how to configure explanations](media/power-bi-visualization-anomaly-detection/configure-explanations.png)
 
-### Limitations
+## Limitations
 - Anomaly detection is only supported for line chart visuals containing time series data in the Axis field.
-- Anomaly detection is not supported with legends, multiple values or secondary values in line chart visual.
+- Anomaly detection isn't supported with legends, multiple values or secondary values in line chart visual.
 - Anomaly detection requires at least 12 data points.
-- Forecast/Min/Max/Average/ Median/Percentile lines does not work with Anomaly detection.
-- Direct Query over SAP data source, Power BI Report Server, Live Connection to Azure Analysis Services and SQL Server Analysis Services is not supported.
-- Anomaly Explanations does not work with 'Show Value As' options.
-- Drilling down to go to the next level in the hierarchy is not supported.
+- Forecast/Min/Max/Average/ Median/Percentile lines doesn't work with Anomaly detection.
+- Direct Query over SAP data source, Power BI Report Server, Live Connection to Azure Analysis Services and SQL Server Analysis Services aren't supported.
+- Anomaly Explanations doesn't work with 'Show Value As' options.
+- Drilling down to go to the next level in the hierarchy isn't supported.
