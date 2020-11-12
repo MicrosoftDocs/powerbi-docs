@@ -193,6 +193,7 @@ You need to [find one of these people](/office365/admin/admin-overview/admin-ove
 - Single sign-on data query models.
 - Secure confidential or proprietary information.
 - The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](../developer/embedded/embed-sample-for-your-organization.md) approach to embedding.
+- When you enable "Block Public internat access" mentioned in https://docs.microsoft.com/en-us/power-bi/admin/service-security-private-links , Publish to Web option will be grayed out or you tenant in Power BI Admin Portal. 
 
 ## Next steps
 
