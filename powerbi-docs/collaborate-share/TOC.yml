@@ -108,7 +108,7 @@
       - name: Save paginated reports to OneDrive or SharePoint Online
         href: service-automate-paginated-onedrive-sharepoint.md
       - name: Export paginated reports from Excel Online or SharePoint list
-        href: service-automate-paginated-onedrive-sharepoint.md
+        href: service-automate-paginated-excel-sharepoint-list.md
     - name: "Use third-party apps"
       href: service-power-bi-get-started-third-party-apps.md
     - name: Organizational content packs
