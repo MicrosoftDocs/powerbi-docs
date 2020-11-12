@@ -48,10 +48,10 @@ You can also control the fields that are used for analysis. For example, by drag
 ![Screenshot showing how to configure explanations](media/power-bi-visualization-anomaly-detection/configure-explanations.png)
 
 ### Limitations
-Anomaly detection is only supported for line chart visuals containing time series data in the Axis field
-Anomaly detection is not supported with legends, multiple values or secondary values in line chart visual.
-Anomaly detection requires at least 12 data points.
-Forecast/Min/Max/Average/ Median/Percentile lines does not work with Anomaly detection.
-Direct Query over SAP data source, Power BI Report Server, Live Connection to Azure Analysis Services and SQL Server Analysis Services is not supported.
-Anomaly Explanations does not work with 'Show Value As' options.
-Drilling down to go to the next level in the hierarchy is not supported.
+- Anomaly detection is only supported for line chart visuals containing time series data in the Axis field.
+- Anomaly detection is not supported with legends, multiple values or secondary values in line chart visual.
+- Anomaly detection requires at least 12 data points.
+- Forecast/Min/Max/Average/ Median/Percentile lines does not work with Anomaly detection.
+- Direct Query over SAP data source, Power BI Report Server, Live Connection to Azure Analysis Services and SQL Server Analysis Services is not supported.
+- Anomaly Explanations does not work with 'Show Value As' options.
+- Drilling down to go to the next level in the hierarchy is not supported.
