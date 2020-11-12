@@ -133,5 +133,7 @@
         href: ./dataflows/dataflows-machine-learning-integration.md
   - name: Reference
     items: 
+    - name: "Use the Field list in Power BI Desktop (preview)"
+      href: desktop-field-list.md
     - name: "Formula editor shortcuts"
       href: desktop-formula-editor.md
