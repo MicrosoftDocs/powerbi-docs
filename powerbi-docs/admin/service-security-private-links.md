@@ -7,14 +7,14 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.author: davidi
-ms.date: 10/21/2020
+ms.date: 11/11/2020
 ms.custom: 
 LocalizationGroup: Administration
 ---
 
 # Private links for accessing Power BI
 
-Azure networking provides two security features, Azure Private Links and Private Endpoints, that enable Power BI to provide secure access. With Azure Private Links and Private Endpoints, data traffic is sent privately using Microsoft's backbone network infrastructure, and thus the data doesn’t traverse the Internet. 
+Azure networking provides the Azure Private Links feature that enables Power BI to provide secure access via Azure Networking Private endpoints. With Azure Private Links and Private Endpoints, data traffic is sent privately using Microsoft's backbone network infrastructure, and thus the data doesn’t traverse the Internet. 
 
 Private links ensure that Power BI users use the Microsoft private network backbone when going to resources in the Power BI service.
 
@@ -305,6 +305,7 @@ There are a few considerations to keep in mind while working with private links 
 * Export services, such as Export to PDF, exporting to Excel from a report, and other export services do not work when using a private link environment
 * SQL Server Reporting Services reports, commonly known as RDL files (*.rdl format files) do not render in private link environments
 * If Internet access is disabled, and if the dataset or dataflow is connecting to a Power BI dataset or dataflow as a data source, the connection will fail
+* Usage metrics do *not* work when Private Links is enabled
 
 
 ## Next steps
