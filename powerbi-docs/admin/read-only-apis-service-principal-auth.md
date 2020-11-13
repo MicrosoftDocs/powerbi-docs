@@ -51,14 +51,14 @@ To use a service principal, follow these steps:
 * You can't sign into the Power BI portal using service principal.
 * Power BI admin rights are required to enable service principal in the developer settings in the Power BI admin portal.
 * Service principal currently support the following APIs:
-    1. [GetGroupsAsAdmin](https://docs.microsoft.com/en-us/rest/api/power-bi/admin/groups_getgroupsasadmin) with $expand for dashboards, datasets, reports, and dataflows 
-    1. [GetDashboardsAsAdmin](https://docs.microsoft.com/en-us/rest/api/power-bi/admin/dashboards_getdashboardsasadmin) with $expand tiles
-    1. [GetDatasourcesAsAdmin](https://docs.microsoft.com/en-us/rest/api/power-bi/admin/datasets_getdatasourcesasadmin) 
-    1. [GetDatasetToDataflowsLinksAsAdmin](https://docs.microsoft.com/en-us/rest/api/power-bi/admin/datasets_getdatasettodataflowslinksingroupasadmin)
-    1. [GetDataflowDatasourcesAsAdmin](https://docs.microsoft.com/en-us/rest/api/power-bi/admin/dataflows_getdataflowdatasourcesasadmin) 
-    1. [GetDataflowUpstreamDataflowsAsAdmin](https://docs.microsoft.com/en-us/rest/api/power-bi/admin/dataflows_getupstreamdataflowsingroupasadmin) 
-    1. [GetCapacitiesAsAdmin](https://docs.microsoft.com/en-us/rest/api/power-bi/admin/getcapacitiesasadmin)
-    1. [GetActivityLog](https://docs.microsoft.com/en-us/rest/api/power-bi/admin/getactivityevents)
+    1. [GetGroupsAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/groups_getgroupsasadmin) with $expand for dashboards, datasets, reports, and dataflows 
+    1. [GetDashboardsAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/dashboards_getdashboardsasadmin) with $expand tiles
+    1. [GetDatasourcesAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/datasets_getdatasourcesasadmin) 
+    1. [GetDatasetToDataflowsLinksAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/datasets_getdatasettodataflowslinksingroupasadmin)
+    1. [GetDataflowDatasourcesAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/dataflows_getdataflowdatasourcesasadmin) 
+    1. [GetDataflowUpstreamDataflowsAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/dataflows_getupstreamdataflowsingroupasadmin) 
+    1. [GetCapacitiesAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/getcapacitiesasadmin)
+    1. [GetActivityLog](https://docs.microsoft.com/rest/api/power-bi/admin/getactivityevents)
     1. GetModifiedWorkspaces
     1. WorkspaceGetInfo
     1. WorkspaceScanStatus
