@@ -105,3 +105,4 @@ The following articles provide more information about dataflows and Power BI:
 * [Premium features of dataflows](dataflows-premium-features.md)
 * [AI with dataflows](dataflows-machine-learning-integration.md)
 * [Dataflows limitations and considerations](dataflows-features-limitations.md)
+* [Dataflows best practices](dataflows-best-practices.md)
