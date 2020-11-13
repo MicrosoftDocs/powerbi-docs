@@ -107,3 +107,4 @@ The following articles provide more information about dataflows and Power BI:
 * [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [Premium features of dataflows](dataflows-premium-features.md)
 * [AI with dataflows](dataflows-machine-learning-integration.md)
+* [Dataflows best practices](dataflows-best-practices.md)
