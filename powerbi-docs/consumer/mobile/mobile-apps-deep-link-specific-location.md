@@ -21,8 +21,7 @@ There are mainly two scenarios for using links to access content in the Power BI
 
 This article covers the following cases:
 * Using links to open specific Power BI content from outside the mobile app. Two link formats are described. One uses a redirect method and can be used no matter where Power BI will open. The other opens directly in the Power BI mobile app and will work only on mobile devices that have the mobile app installed.
-* Using links inside Power BI to navigate to specific Power BI content
-* Using a report URL with a filter
+* Using links inside Power BI to navigate to specific Power BI content.
 
 ## Use links from outside the mobile app
 When you want to link to a specific item in Power BI from outside the mobile app, there are two options, depending on where the link is going to be opened:
@@ -100,7 +99,7 @@ The examples below show where you can find the IDs you need in the URLs of the i
 
 ### Create a link that opens only on a device that has the Power BI mobile app installed
 
-The link format described in this section links to a specific location within the Power BI mobile apps on all the mobile platforms: iOS, Android devices, and Windows 10. This link format opens the location directly, without any of the redirection involved in the method described in the previous section. This format can only be opened on mobile devices that have the Power BI mobile app installed.
+The link format described in this section links to a specific location within the Power BI mobile apps on all the mobile platforms: iOS, Android devices, and Windows 10. This link format opens the location directly, without any of the redirection involved in the method described in the previous section. **This format can only be opened on mobile devices that have the Power BI mobile app installed**.
 
 Links of this format can point directly to dashboards, tiles, and reports. The destination of the deep link determines its format. Follow these steps to create deep links to different locations. 
 
@@ -170,9 +169,9 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
     https<nolink>://app.powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**/**ReportSection11**</code>
 
-* **Open in full-screen mode (Windows devices only)**
+* **Open in full-screen mode (for Windows devices only)**
 
-    You can also add the **openFullScreen** parameter to open specific report in full-screen mode. The following example opens a report page in full screen mode:
+    For Windows devices, you can also add the **openFullScreen** parameter to open specific report in full-screen mode. The following example opens a report page in full screen mode:
 
     mspbi://app/OpenReport?ReportObjectId=500217de-50f0-4af1-b345-b81027224033&**openFullScreen=true**
 
