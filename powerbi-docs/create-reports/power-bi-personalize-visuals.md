@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 09/25/2020
+ms.date: 11/13/2020
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -92,7 +92,7 @@ Once you set the Perspective for the report page, the Personalize visuals experi
 
 ## Enable personalization in a report
 
-You can enable the feature either in Power BI Desktop or the Power BI service.
+You can enable the feature either in Power BI Desktop or the Power BI service. You can also enable it in embedded reports.
 
 ### In Power BI Desktop
 
