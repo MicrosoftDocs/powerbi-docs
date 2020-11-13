@@ -29,7 +29,7 @@ To use a service principal, follow these steps:
     ![Screenshot of new group creation dialog in Azure portal.](media/read-only-apis-service-principal-auth/azure-portal-new-group-dialog.png)
 
 3. Add your App-Id as a member of the security group you created. To do so:
-    1. Navigate to **Azure portal > Azure Active Directory > Groups**, and choose the security group you created in Step 1.
+    1. Navigate to **Azure portal > Azure Active Directory > Groups**, and choose the security group you created in Step 2.
     1. Select **Add Members**.
     Note: Make sure the app you use does not have any Power BI admin roles set on it in Azure portal. 
     * Sign into the **Azure portal** as a Global Administrator, an Application Administrator, or a Cloud Application Administrator. 
