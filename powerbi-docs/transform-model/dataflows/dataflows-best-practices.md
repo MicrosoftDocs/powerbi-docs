@@ -14,7 +14,10 @@ LocalizationGroup: Data from files
 ---
 # Dataflows best practices
 
-Power BI **dataflows** are an enterprise-focused data prep solution, enabling an ecosystem of data that's ready for consumption, reuse, and integration.
+Power BI **dataflows** are an enterprise-focused data prep solution, enabling an ecosystem of data that's ready for consumption, reuse, and integration. This article provides a list of best practices, with links to articles and other information that will help you understand and use dataflows to their full potential.
+
+
+## Dataflows best practices table and links
 
 The following table provides a collection of links to articles that describe best practices when creating or working with dataflows. The links include information about developing business logic, developing complex dataflows, re-use of dataflows, and how to achieve enterprise-scale with your dataflows.
 
@@ -31,7 +34,7 @@ The following table provides a collection of links to articles that describe bes
 |Joining and expanding tables     |Creating performant joins         |[Optimize expanding table operations](https://docs.microsoft.com/power-query/optimize-expanding-table-columns)         |
 |Query folding guidance     |Speeding up transformations using the source system         |[Query folding](https://docs.microsoft.com/power-query/power-query-folding)         |
 |Using data profiling     |Understand column quality, distribution, and profile         |[Data profiling tools](https://docs.microsoft.com/power-query/data-profiling-tools)         |
-|Implementing error handling     |Developing robust dataflows resilient to refresh errors, with suggestions         |* [Patterns for common errors](https://docs.microsoft.com/power-query/dealing-with-errors)  </br> * [Complex error handling](https://docs.microsoft.com/power-query/error-handling)      |
+|Implementing error handling     |Developing robust dataflows resilient to refresh errors, with suggestions         |[Patterns for common errors](https://docs.microsoft.com/power-query/dealing-with-errors)  </br> [Complex error handling](https://docs.microsoft.com/power-query/error-handling)      |
 |Use Schema view      |Improve the authoring experience when working with a wide table and performing schema level operations         |[Schema view](https://docs.microsoft.com/power-query/schema-view)         |
 |||
 
