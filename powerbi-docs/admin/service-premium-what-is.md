@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 11/12/2020
 ms.custom: licensing support
 
 LocalizationGroup: Premium
@@ -75,6 +75,8 @@ The following known limitations currently apply to Premium Gen2:
 2.	Premium Gen2 capacity settings for specific workloads are not yet visible in the Premium Gen2 capacity settings page in the Admin portal. To change settings, transition the capacity to the original version of Premium, change the settings, then set the capacity to using Premium Gen2 once again. Memory allocation settings are not applicable for Premium Gen2 capacities.
 
 3.	Dataflows with ADLS Gen2 data sources are not currently functional on Premium Gen2 capacities.  
+
+4.  If you're using XMLA on Premium Gen2, make sure you're using the most recent versions of the [data modeling and management tools](service-premium-connect-tools.md#data-modeling-and-management-tools). 
 
 
 ## Subscriptions and licensing
