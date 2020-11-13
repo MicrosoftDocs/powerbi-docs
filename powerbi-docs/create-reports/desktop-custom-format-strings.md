@@ -16,7 +16,7 @@ LocalizationGroup: Create reports
 
 With custom format strings in **Power BI Desktop**, you can customize how fields appear in visuals, and make sure your reports look just the way you want them to look.
 
-![Using custom format strings](media/desktop-custom-format-strings/custom-format-strings-01.png)
+![Screenshot shows Power B I desktop with a custom format selected. ](media/desktop-custom-format-strings/custom-format-strings-01.png)
 
 
 ## How to use custom format strings
@@ -27,7 +27,7 @@ To create custom format strings, select the field in the **Modeling** view, and 
 
 Once you've selected **Custom** from the **Format** drop down, you can select from a list of commonly used format strings. 
 
-![Using custom format strings](media/desktop-custom-format-strings/custom-format-strings-03.png)
+![Screenshot shows details of the custom format.](media/desktop-custom-format-strings/custom-format-strings-03.png)
 
 
 ## Supported custom format syntax
@@ -64,7 +64,7 @@ The following table shows supported **Time symbols**:
 | _ss_ | 00-59 (Second of minute, with a leading zero) |
 
 
-You can see an [example](https://docs.microsoft.com/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example) of how to format custom value strings.
+You can see an [example](/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example) of how to format custom value strings.
 
 A user-defined format expression for numbers can have from one to three sections separated by semicolons. If you include semicolons with nothing between them, the missing section will not be displayed (it will be &quot;&quot;). If the semi-colon is not specified, it will use the positive format.
 
@@ -147,7 +147,7 @@ The following table identifies characters you can use to create **user-defined n
 ## Next steps
 You might also be interested in the following articles:
 
-* [VBA format strings](https://docs.microsoft.com/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example)
+* [VBA format strings](/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example)
 * [Measures in Power BI Desktop](../transform-model/desktop-measures.md)
 * [Data types in Power BI Desktop](../connect-data/desktop-data-types.md)
 * [Conditional formatting in tables](desktop-conditional-table-formatting.md)

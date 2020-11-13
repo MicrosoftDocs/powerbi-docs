@@ -7,10 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/08/2020
+ms.date: 10/19/2020
 ---
 
 # Paginated reports in Power BI: FAQ 
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 This article answers frequently asked questions about paginated reports. These reports are highly formatted, pixel-perfect output optimized for printing or PDF generation. They're called "paginated" because they're formatted to fit well on multiple pages. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. 
 
@@ -71,7 +73,7 @@ Default memory in each Premium SKU for paginated reports:
 - **P2/A5**: 20% default; 5% minimum
 - **P3/A6**: 20% default; 2.5% minimum
 
-Power BI tenant admins can modify the default maximum memory percentage in the Admin portal. See the **Paginated Reports** workload section under **Power BI Premium** on the **Capacity settings** tab.
+Power BI admins can modify the default maximum memory percentage in the Admin portal. See the **Paginated Reports** workload section under **Power BI Premium** on the **Capacity settings** tab.
 
 :::image type="content" source="media/paginated-reports-faq/paginated-reports-capacity-settings.png" alt-text="Paginated reports Capacity settings tab":::
 

@@ -87,12 +87,12 @@ Your browser does not support scripts or has been configured to not allow script
  If you choose to view the report without script support, the report is rendered in HTML without report viewer capabilities such as the report toolbar and the document map.
 
 > [!NOTE]
-> The report toolbar is part of the HTML Viewer component. By default the toolbar appears at the top of every report that is rendered in a browser window. The report viewer provides features include the ability to search the report for information, scroll to a specific page, and adjust the page size for viewing purposes. For more information about the report toolbar or HTML Viewer, see [HTML Viewer and the Report Toolbar](https://docs.microsoft.com/sql/reporting-services/html-viewer-and-the-report-toolbar).
+> The report toolbar is part of the HTML Viewer component. By default the toolbar appears at the top of every report that is rendered in a browser window. The report viewer provides features include the ability to search the report for information, scroll to a specific page, and adjust the page size for viewing purposes. For more information about the report toolbar or HTML Viewer, see [HTML Viewer and the Report Toolbar](/sql/reporting-services/html-viewer-and-the-report-toolbar).
 > 
 > 
 
 ## Browser support for Report Viewer web server controls in Visual Studio
-The Report Viewer Web server control is used to embed report functionality in an ASP.NET web application. For more information on how to get the Report Viewer Control, see [Integrating Reporting Services Using Report Viewer Controls - Get Started](https://docs.microsoft.com/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started).
+The Report Viewer Web server control is used to embed report functionality in an ASP.NET web application. For more information on how to get the Report Viewer Control, see [Integrating Reporting Services Using Report Viewer Controls - Get Started](/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started).
 
 Use a browser that has script support enabled. If the browser cannot run scripts, you cannot view the report.
 
@@ -110,7 +110,6 @@ Use a browser that has script support enabled. If the browser cannot run scripts
 [Administrator overview](admin-handbook-overview.md)  
 [Install Power BI Report Server](install-report-server.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
+[Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

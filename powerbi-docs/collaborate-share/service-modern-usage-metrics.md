@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/22/2020
+ms.date: 08/31/2020
 LocalizationGroup: Dashboards
 ---
 
@@ -87,7 +87,7 @@ The improved usage metrics report includes the following report pages:
 | Report usage | Platform slicer | If the report was accessed via the Power BI service (powerbi.com), Power BI Embedded, or a mobile device. |
 | Report usage | Users with report views | Shows the list of users who opened the report sorted by view count. |
 | Report usage | Pages | If the report has more than 1 page, slice the report by the page(s) that was viewed. If you see a list option for "Blank," that means a report page was recently added (within 24 hours the actual name of the new page appears in the slicer list) and/or report pages have been deleted. "Blank" captures these types of situations. |
-| Report performance | Typical opening time | The typical report opening time corresponds to the 50th percentile of the time it takes to open the report. In other words, it is the time below which 50% of the open-report actions are completed. The Report performance page also breaks down the typical report opening time by consumption method and browser type.   |
+| Report performance | Typical opening time | The typical report opening time corresponds to the 50th percentile of the time it takes to open the report. In other words, it is the time below which 50% of the open-report actions are completed. The Report performance page also breaks down the typical report opening time by consumption method and browser type. At present we measure the performance for the initial report load and first page viewed. The measurement starts when the report is requested and ends when the last visual completes rendering. Report interactions such as slicing, filtering or changing pages are not included in performance metrics.  |
 | Report performance | Opening time trend | The opening time trend reflects open-report performance changes over time. It compares the opening times for the report of the first half of the selected time period with the opening times of the second half. |
 | Report performance | Date slicer | You can change the time period on the Report performance page, such as to calculate week-over-week or biweekly trends. In the lower left corner of the Report performance page, you can determine the earliest and latest date for which usage data is available for the selected report. |
 | Report performance | Daily performance | The performance for 10%, 50%, and 90% of the open report actions calculated for each individual day. |
@@ -179,6 +179,10 @@ When you create a copy of the read-only, pre-built usage report, Power BI create
 1. The new report is saved to the Reports tab in the current workspace and added to the Recent content list.
 
     ![The new report on the Reports tab](media/service-modern-usage-metrics/power-bi-modern-usage-metrics-new-report.png)
+    
+> [!NOTE]
+> When you save a copy of the usage metrics report it's treated like a regular Power BI report. It will be accessible to all users who have viewing permissions in the workspace, including users in the Viewer role.
+
 
 ### Create a new usage report in Power BI Desktop
 
@@ -237,7 +241,14 @@ When you connect to the usage data in Excel, you can create PivotTables that use
 
 ## Usage metrics in national clouds
 
-Power BI is available in separate national clouds. These clouds offer the same levels of security, privacy, compliance and transparency as the global version of Power BI, combined with a unique model for local regulations on service delivery, data residency, access, and control. Due to this unique model for local regulations, usage metrics aren't available in national clouds. For more information, see [national clouds](https://powerbi.microsoft.com/clouds/).
+Power BI is available in separate national clouds. These clouds offer the same levels of security, privacy, compliance and transparency as the global version of Power BI, combined with a unique model for local regulations on service delivery, data residency, access, and control. Modern usage metrics are currently available in following national clouds: 
+
+- US Government Community Cloud
+- US Government Community Cloud High
+- US Department of Defense
+- China
+
+For more information, see [national clouds](https://powerbi.microsoft.com/clouds/).
 
 ## Considerations and limitations
 
@@ -347,7 +358,7 @@ If you suspect data consistency or refresh issues, it might make sense to delete
 
     ![Usage metrics dataset URL](media/service-modern-usage-metrics/power-bi-usage-metrics-url.png)
 
-1. In your browser, go to [https://docs.microsoft.com/rest/api/power-bi/datasets/deletedatasetingroup](https://docs.microsoft.com/rest/api/power-bi/datasets/deletedatasetingroup), and select the **Try It** button.
+1. In your browser, go to [https://docs.microsoft.com/rest/api/power-bi/datasets/deletedatasetingroup](/rest/api/power-bi/datasets/deletedatasetingroup), and select the **Try It** button.
 
     ![Delete dataset Try it](media/service-modern-usage-metrics/power-bi-delete-dataset-try-it.png)
 

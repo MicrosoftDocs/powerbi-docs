@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-js
 ms.date: 02/05/2019
 ---
 
@@ -15,7 +15,7 @@ ms.date: 02/05/2019
 
 Learn how to embed analytical content within your business process applications for the national cloud. You can use the Power BI .NET SDK with the Power BI JavaScript API to embed a report, dashboard, or tile, into your web applications.
 
-Power BI also supports [national clouds](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud).
+Power BI also supports [national clouds](/azure/active-directory/develop/authentication-national-cloud).
 
 The different national clouds are:
 
@@ -38,7 +38,7 @@ To get started with this walkthrough, you need a **Power BI account**. If you do
 > [!NOTE]
 > Looking to embed a dashboard for your organization instead? See, [Integrate a dashboard into an app for your organization](embed-sample-for-your-organization.md).
 
-To integrate a dashboard into a web app, you use the **Power BI** API, and an Azure Active Directory (AD) authorization **access token** to get a dashboard. Then, you load the dashboard using an embed token. The **Power BI** API provides programmatic access to specific **Power BI** resources. For more information, see [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/), [Power BI .NET SDK, and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
+To integrate a dashboard into a web app, you use the **Power BI** API, and an Azure Active Directory (AD) authorization **access token** to get a dashboard. Then, you load the dashboard using an embed token. The **Power BI** API provides programmatic access to specific **Power BI** resources. For more information, see [Power BI REST API](/rest/api/power-bi/), [Power BI .NET SDK, and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## Download the sample
 
@@ -73,7 +73,7 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 3. Add the DoDCON parameters in the web.config file as follows.
 
 ```xml
-<add key="authorityUrl" value="https://login.microsoftonlineS.net/common/" />
+<add key="authorityUrl" value="https://login.microsoftonline.us/common/" />
 <add key="resourceUrl" value="https://high.analysis.usgovcloudapi.net/powerbi/api" />
 <add key="apiUrl" value="https://api.high.powerbigov.us/" />
 <add key="embedUrlBase" value="https://app.high.powerbigov.us" />
@@ -88,7 +88,7 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 3. Add the DoDCON parameters in the web.config file as follows.
 
 ```xml
-<add key="authorityUrl" value="https://login.microsoftonline.net/common/" />
+<add key="authorityUrl" value="https://login.microsoftonline.us/common/" />
 <add key="resourceUrl" value="https://mil.analysis.usgovcloudapi.net/powerbi/api" />
 <add key="apiUrl" value="https://api.mil.powerbigov.us/" />
 <add key="embedUrlBase" value="https://app.mil.powerbigov.us" />
@@ -138,7 +138,7 @@ Register your application with Azure AD to make REST API calls. For more informa
 
 * Power BI for China cloud - ```https://app.powerbi.cn/apps```
 
-If you downloaded the [Embedding for your customer sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData), you would use the **applicationId** you get, so that the sample can authenticate to Azure AD. To configure the sample, change the **applicationId** in the *web.config* file.
+If you downloaded the [Embedding for your customer sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData), you would use the **applicationId** you get, so that the sample can authenticate to Azure AD. To configure the sample, change the **applicationId** in the *web.config* file.
 
 ## Step 2 - get an access token from Azure AD
 
@@ -182,7 +182,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 
 Use the Power BI client object to retrieve a reference to the item you want to embed. You can embed dashboards, tiles, or reports. Here is an example of how to retrieve the first dashboard, tile, or report from a given workspace.
 
-A sample is available within **Controllers\HomeController.cs** of the [App Owns Data sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData).
+A sample is available within **Controllers\HomeController.cs** of the [App Owns Data sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData).
 
 #### Reports
 
@@ -233,12 +233,12 @@ Tile tile = tiles.Value.FirstOrDefault();
 
 ### Create the embed token
 
-Using the JavaScript API, you can generate an embed token. The embed token is specific to the item you're embedding. Anytime you embed a piece of Power BI content, you need to create a new embed token for it. For more information, including which **accessLevel** to use, see [Embed Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
+Using the JavaScript API, you can generate an embed token. The embed token is specific to the item you're embedding. Anytime you embed a piece of Power BI content, you need to create a new embed token for it. For more information, including which **accessLevel** to use, see [Embed Token](/rest/api/power-bi/embedtoken).
 
 > [!IMPORTANT]
-> Because embed tokens are intended for developer testing only, the number of embed tokens a Power BI master account can generate is limited. A [capacity must be purchased](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) for production embedding scenarios. There is no limit to embed token generation when a capacity is purchased.
+> Because embed tokens are intended for developer testing only, the number of embed tokens a Power BI master account can generate is limited. A [capacity must be purchased](./embedded-faq.md#technical) for production embedding scenarios. There is no limit to embed token generation when a capacity is purchased.
 
-A sample is available within **Controllers\HomeController.cs** of the [Embedding for your organization sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData).
+A sample is available within **Controllers\HomeController.cs** of the [Embedding for your organization sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData).
 
 A class is created for **EmbedConfig** and **TileEmbedConfig**. A sample is available within **Models\EmbedConfig.cs** and **Models\TileEmbedConfig.cs**.
 
@@ -304,7 +304,7 @@ var embedConfig = new TileEmbedConfig()
 
 You can use JavaScript to load a dashboard into a div element on your web page. The sample uses an EmbedConfig/TileEmbedConfig model along with views for a dashboard, tile, or report. For a full sample of using the JavaScript API, you can use the [Microsoft Power BI Embedded Sample](https://microsoft.github.io/PowerBI-JavaScript/demo).
 
-An application sample is available within the [Embedding for your organization sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData).
+An application sample is available within the [Embedding for your organization sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData).
 
 ### Views\Home\EmbedDashboard.cshtml
 
@@ -431,11 +431,11 @@ An application sample is available within the [Embedding for your organization s
 
 ## Next steps
 
-* A sample application is available on GitHub for you to review. The above examples are based on that sample. For more information, see [Embedding for your organization sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData).
+* A sample application is available on GitHub for you to review. The above examples are based on that sample. For more information, see [Embedding for your organization sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData).
 
 * For more information about JavaScript API, reference [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
-* For more information about for Power BI for Germany cloud, reference [Power BI for Germany cloud FAQ](https://docs.microsoft.com/power-bi/service-govde-faq)
+* For more information about for Power BI for Germany cloud, reference [Power BI for Germany cloud FAQ](../../admin/service-govde-faq.md)
 
 * [How to migrate Power BI Workspace Collection Workspace Collection content to Power BI](migrate-from-powerbi-embedded.md)
 

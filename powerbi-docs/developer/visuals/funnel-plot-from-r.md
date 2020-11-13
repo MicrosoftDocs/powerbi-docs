@@ -44,7 +44,7 @@ Next, edit the script to mirror [this script](https://github.com/microsoft/Power
 
 ## Create an R-powered visual and package in R code
 
-1. Before you begin, be sure to [install PBIVIZ tools](./custom-visual-develop-tutorial.md#installing-packages).
+1. Before you begin, be sure to [install PBIVIZ tools](./environment-setup.md#install-pbiviz).
 
 1. Run the following command to create a new R-powered visual:
 
@@ -61,11 +61,11 @@ Next, edit the script to mirror [this script](https://github.com/microsoft/Power
 
 1. Edit *capabilities.json* and replace the string `Values` with `dataset`. This replaces the name of "Role" in the template to be like in R-code.
 
-   ![before vs. after](./samples/funnel-plot/chapter-3/funnel-r-visual-v01/capabilities-changes.PNG)
+   ![Screenshot shows a diff comparison of the change in the json file.](./samples/funnel-plot/chapter-3/funnel-r-visual-v01/capabilities-changes.PNG)
 
 1. *(optional)* Edit *dependencies.json* and add a section for each R package required by the R script. This tells Power BI to automatically import these packages when the visual is loaded for the first time.
 
-   ![before vs. after](./samples/funnel-plot/chapter-3/funnel-r-visual-v01/dependencies-changes.PNG)
+   ![Screenshot shows a diff comparison where content has been added to the cranPackages items.](./samples/funnel-plot/chapter-3/funnel-r-visual-v01/dependencies-changes.PNG)
 
 1. Repackage the visual using the `pbiviz package` command and try to import it into Power BI.
 
@@ -114,7 +114,7 @@ The visual isn't yet user-friendly because the user has to know the order of col
 
 1. Add capabilities for the user to control colors and sizes of visual elements including internal parameters from the UI.
 
-   ![CV02to03](./media/funnel-plot/diagram-two.PNG)
+   ![Screenshot shows two version of the tools pane with options added to the version on the right.](./media/funnel-plot/diagram-two.PNG)
 
 1. Edit *capabilities.json* and update the `objects` section. Here we define names, tooltips and types of each parameter, and also decide on the partition of parameters into groups (three groups in this case).
 
@@ -269,7 +269,7 @@ Since the resulting visual is PNG-based, it isn't responsive to mouse hover, can
 
 * Each R Visual applies the `unique` operator to its input table. To avoid identical rows being removed, consider adding an extra input field with a unique ID and ignore it in the R code.   
 
-* If you have a Power BI account, use the Power BI service to develop a visual [on-the-fly](/power-bi/developer/visuals/custom-visual-develop-tutorial/) instead of repackaging them with the `pbiviz package` command.
+* If you have a Power BI account, use the Power BI service to develop a visual [on-the-fly](./develop-circle-card.md) instead of repackaging them with the `pbiviz package` command.
 
 ### HTML widgets gallery
 Explore visuals in the [HTML widgets gallery](http://gallery.htmlwidgets.org/) for use in your next visual. To make things easy, we've created a [visuals project repo](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/multipleRHTML) with over 20 interactive HTML visuals to choose from!
@@ -286,15 +286,15 @@ Explore visuals in the [HTML widgets gallery](http://gallery.htmlwidgets.org/) f
 1. Change metadata in *pbiviz.json*, most importantly the `guid` field.
 1. Repackage and continue to customize the visual as wanted. 
 
-![CV02to03](./media/funnel-plot/diagram-four.PNG)
+![Screenshot shows six widgets discussed earlier in this article.](./media/funnel-plot/diagram-four.PNG)
 
-![CV02to03](./media/funnel-plot/diagram-five.PNG)
+![Screenshot shows six more widgets discussed earlier in this article.](./media/funnel-plot/diagram-five.PNG)
 
 > [!NOTE]
 > Not all widgets in this project are supported by the service.
 
 ## Next steps
 
-To learn more, see additional tutorials on [Power BI visuals](./custom-visual-develop-tutorial.md) and [R visuals](/power-bi/visuals/service-r-visuals).
+To learn more, see additional Power BI tutorials, [Developing a Power BI circle card visual](./develop-circle-card.md) and [R visuals](../../visuals/service-r-visuals.md).
 
 Learn how to [develop and submit visuals](https://powerbi.microsoft.com/documentation/powerbi-developer-office-store/) to the [Office Store (gallery)](https://store.office.com/appshome.aspx?ui=en-US&rs=en-US&ad=US&clickedfilter=OfficeProductFilter%3aPowerBI&productgroup=PowerBI), or for further examples, see the [R-script showcase](https://community.powerbi.com/t5/R-Script-Showcase/bd-p/RVisuals)

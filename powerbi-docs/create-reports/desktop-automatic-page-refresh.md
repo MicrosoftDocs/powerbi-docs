@@ -8,14 +8,14 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 08/12/2020
+ms.date: 08/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ---
 
 # Automatic page refresh in Power BI
 
-When you monitor critical events, it's important for data to be refreshed as soon as the source data is updated. For example, in the manufacturing industry, it's critical to know when a machine is malfunctioning or is close to malfunctioning. If your monitoring signals like social media sentiment, you want to know about sudden changes as soon as they happen.
+When you monitor critical events, it's important for data to be refreshed as soon as the source data is updated. For example, in the manufacturing industry, it's critical to know when a machine is malfunctioning or is close to malfunctioning. If you're monitoring signals like social media sentiment, you want to know about sudden changes as soon as they happen.
 
 Automatic page refresh in Power BI enables your active report page to query for new data, at a predefined cadence, for [DirectQuery sources](../connect-data/desktop-directquery-about.md).
 
@@ -64,7 +64,7 @@ When selecting **Change detection** as your refresh type, you are presented with
 
 ![Change detection card](media/desktop-automatic-page-refresh/automatic-page-refresh-03.png)
 
-Once the window is open, you are presented with the **Measure type** option where you can select and existing measure or create a new one from scratch. When selecting an existing, you just have to select the desired measure from the fields list or drag and drop it into the **Choose existing measure** section. When creating a new measure, you can **Choose a calculation** for the measure between count, count distinct, minimum, maximum and sum. For example, you can use count distinct to count customer IDs and only refresh when a new customer is added to the list. Once you have a measure selected, you have to define how often Power BI will **Check for changes**. That's the interval on how often Power BI will calculate the measure and poll changes. Once you click apply, a new measure with the change detection icon will appear in your field list.
+Once the window is open, you are presented with the **Measure type** option where you can select an existing measure or create a new one from scratch. When selecting an existing, you just have to select the desired measure from the fields list or drag and drop it into the **Choose existing measure** section. When creating a new measure, you can **Choose a calculation** for the measure between count, count distinct, minimum, maximum and sum. For example, you can use count distinct to count customer IDs and only refresh when a new customer is added to the list. Once you have a measure selected, you have to define how often Power BI will **Check for changes**. That's the interval on how often Power BI will calculate the measure and poll changes. Once you click apply, a new measure with the change detection icon will appear in your field list.
 
 ![Change detection window](media/desktop-automatic-page-refresh/automatic-page-refresh-04.png)
 
@@ -194,6 +194,9 @@ This table describes with more detail where this feature is available and the li
 1. *FI: Fixed interval*
 2. *CD: Change detection*
 
+> [!WARNING]
+> When enabled in your dataset, change detection measure will open a connection to your DirectQuery data source to calculate the measure and poll for changes. This connection is different from the Low Priority refresh connections Power BI already makes.
+
 ## Considerations and limitations
 
 There are a few things to keep in mind when you use automatic page refresh in Power BI Desktop or in the Power BI service:
@@ -201,9 +204,8 @@ There are a few things to keep in mind when you use automatic page refresh in Po
 * Import, LiveConnect, and Push storage modes aren't supported for automatic page refresh.  
 * Composite models that have at least one DirectQuery data source are supported.
 * Power BI Desktop has no restrictions for refresh intervals. The interval can be as frequent as every second for both fixed interval and change detection refresh types. When reports are published to the Power BI service, certain restrictions do apply, as described [earlier](#restrictions-on-refresh-intervals) in this article.
-* There can only be a maximum of 10 models with change detection measure in a Power BI tenant.
 * You can only have one change detection measure per dataset.
-* SharePoint Online embedding, doesn't support automatic page refresh.
+* There can only be a maximum of 10 models with change detection measure in a Power BI tenant.
 
 ### Performance diagnostics
 

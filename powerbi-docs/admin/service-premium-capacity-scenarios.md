@@ -5,10 +5,10 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 04/09/2019
-ms.custom: seodec18
+ms.date: 11/11/2020
+ms.custom: 
 
 LocalizationGroup: Premium
 ---
@@ -25,7 +25,10 @@ This article describes real-world scenarios where Power BI premium capacities ha
 
 The steps, along with chart and table examples are from the **Power BI Premium Capacity Metrics app** that a Power BI administrator will have access to.
 
-## Keeping datasets up-to-date
+> [!NOTE]
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+
+## Keeping datasets up to date
 
 In this scenario, an investigation was triggered when users complained that report data sometimes appeared to be old or "stale".
 
@@ -48,54 +51,54 @@ There are several possible explanations for these results:
 To help investigate, the Power BI administrator can look for:
 
 - Low available memory at the time of data refreshes when available memory is less than 2x the size of the dataset to be refreshed.
-- Datasets not being refreshed and not in memory before refresh, yet started to show interactive traffic during heavy refresh times. To see which datasets are loaded into memory at any given time, a Power BI administrator can look at the datasets area of **Datasets** tab in the app. The admin can then cross filter to a given time by clicking on one of the bars in the **Hourly Loaded Dataset Counts**. A local spike,shown in the image below, indicates an hour when multiple datasets were loaded into memory, which could delay the start of scheduled refreshes.
-- Increased dataset evictions taking place when data refreshes are scheduled to start. Evictions can indicate there was high memory pressure caused by serving too many different interactive reports prior to the time of refresh. The **Hourly Dataset Evictions and Memory Consumption** visual can clearly indicate spikes in evictions.
+- Datasets not being refreshed and not in memory before refresh, yet started to show interactive traffic during heavy refresh times. To see which datasets are loaded into memory at any given time, a Power BI administrator can look at the datasets area of the **Datasets** tab in the app. The admin can then cross-filter to a given time by clicking on one of the bars in the **Hourly Loaded Dataset Counts**. A local spike, shown in the below image, indicates an hour when multiple datasets were loaded into memory, which could delay the start of scheduled refreshes.
+- Increased dataset evictions taking place when data refreshes are scheduled to start. Evictions can indicate that there was high memory pressure caused by serving too many different interactive reports before refresh. The **Hourly Dataset Evictions and Memory Consumption** visual can clearly indicate spikes in evictions.
 
-The following image shows a local spike in loaded datasets, which suggests interactive querying delayed start of refreshes. Selecting a time period in the **Hourly Loaded Dataset Counts** visual will cross filter the **Dataset Sizes** visual.
+The following image shows a local spike in loaded datasets, which suggests interactive querying delayed the start of refreshes. Selecting a time period in the **Hourly Loaded Dataset Counts** visual will cross-filter the **Dataset Sizes** visual.
 
 ![A local spike in loaded datasets suggests interactive querying delayed start of refreshes](media/service-premium-capacity-scenarios/hourly-loaded-dataset-counts.png)
 
 The Power BI administrator can attempt to resolve the issue by taking steps to ensure that sufficient memory is available for data refreshes to start by:
 
 - Contacting dataset owners and asking them to stagger and space out data refresh schedules.
-- Reducing dataset query load by removing unnecessary dashboards or dashboard tiles, especially those that enforce row-level security.
-- Speeding up data refreshes by optimizing Power Query logic. Improve modeling calculated columns or tables. Reduce dataset sizes or configure larger datasets to perform incremental data refresh.
+- Reducing dataset query load by removing unnecessary dashboards or dashboard tiles, especially content that enforces row-level security.
+- Speeding data refreshes by optimizing Power Query logic. Improve modeling calculated columns or tables. Reduce dataset sizes or configure larger datasets to perform incremental data refresh.
 
 ## Identifying slow-responding datasets
 
-In this scenario, an investigation began when users complained that certain reports took too long to open, and at times would stop responding.
+In this scenario, an investigation began when users complained that certain reports took too long to open. Sometimes the reports would stop responding.
 
-In the app, the Power BI administrator can use the **Query Durations** visual to determine the worst performing datasets by sorting datasets by descending **Average Duration**. This visual also shows dataset query counts, so you can see how often the datasets are queried.
+In the app, the Power BI administrator can use the **Query Durations** visual to determine the worst-performing datasets by sorting datasets by descending **Average Duration**. This visual also shows dataset query counts, so you can see how often the datasets are queried.
 
 ![Worst performing datasets](media/service-premium-capacity-scenarios/worst-performing-datasets.png)
 
-The administrator can refer to the **Query Duration Distribution** visual, which shows an overall distribution of bucketed query performance (<= 30ms, 0-100ms) for the filtered time period. Generally, queries that take one second or less are considered responsive by most users; queries that take longer tend to create a perception of bad performance.
+The administrator can refer to the **Query Duration Distribution** visual, which shows an overall distribution of bucketed query performance (<= 30ms, 0-100ms) for the filtered time period. Generally, queries that take one second or less are considered responsive by most users. Queries that take longer tend to create a perception of bad performance.
 
 The **Hourly Query Duration Distribution** visual allows the Power BI administrator to identify one-hour periods when the capacity performance could have been perceived as poor. The larger the bar segments that represent query durations over one second, the larger the risk that users will perceive poor performance.
 
 The visual is interactive, and when a segment of the bar is selected, the corresponding **Query Durations** table visual on the report page is cross-filtered to show the datasets it represents. This cross-filtering allows the Power BI administrator to easily identify which datasets are responding slowly.
 
-The following image shows a visual filtered by **Hourly Query Duration Distributions**, focusing on the worst performing datasets in one-hour buckets. 
+The following image shows a visual filtered by **Hourly Query Duration Distributions**, focusing on the worst-performing datasets in one-hour buckets.
 
 ![Filtered Hourly Query Duration Distributions visual shows the worse performing datasets](media/service-premium-capacity-scenarios/hourly-query-duration-distributions.png)
 
-Once the poor performing dataset in a specific one hour timespan is identified, the Power BI administrator can investigate whether poor performance is caused by an overloaded capacity, or due to a poorly designed dataset or report. They can refer to the **Query Wait Times** visual, and sort datasets by descending average query wait time. If a large percentage of queries is waiting, a high demand for the dataset is likely the cause of too many query waits. If the average query wait time is substantial (> 100 ms), it may be worth reviewing the dataset and report to see if optimizations can be made. For example, fewer visuals on given report pages or a DAX expression optimization.
+After the poor-performing dataset in a specific one-hour time span is identified, the Power BI administrator can investigate whether poor performance is caused by an overloaded capacity or due to a poorly designed dataset or report. They can refer to the **Query Wait Times** visual, and sort datasets by descending average query wait time. If a large percentage of queries is waiting, a high demand for the dataset is likely the cause of too many query delays. If the average query wait time is substantial (> 100 ms), it may be worth reviewing the dataset and report to see if optimizations can be made. For example, fewer visuals on given report pages or a DAX expression optimization.
 
 ![The Query Wait Times visual helps to reveal poorly performing datasets](media/service-premium-capacity-scenarios/query-wait-times.png)
 
 There are several possible reasons for query wait time buildup in datasets:
 
 - A suboptimal model design, measure expressions, or even report design - all circumstances that can contribute to long running queries that consume high levels of CPU. This forces new queries to wait until CPU threads become available and can create a convoy effect (think traffic jam), commonly seen during peak business hours. The **Query Waits** page will be the main resource to determine whether datasets have high average query wait times.
-- A high number of concurrent capacity users (hundreds to thousands) consuming the same report or dataset. Even well-designed datasets can perform badly beyond a concurrency threshold. This is usually indicated by a single dataset showing a dramatically higher value for query counts than other datasets show (for example, 300K queries for one dataset compared to <30K queries for all other datasets). At some point the query waits for this dataset will start to stagger, which can be seen in the **Query Durations** visual.
-- Many disparate datasets queried concurrently, causing thrashing as datasets frequently cycle in and out of memory. This results in users experiencing slow performance when the dataset is loaded into memory. To confirm, the Power BI administrator can refer to the **Hourly Dataset Evictions and Memory Consumption** visual, which may indicate that a high number of datasets loaded into memory are being repeatedly evicted.
+- A high number of concurrent capacity users (hundreds to thousands) consuming the same report or dataset. Even well-designed datasets can perform badly beyond a concurrency threshold. This performance problem is indicated by a single dataset showing a dramatically higher value for query counts than other datasets. For example, you may see 300K queries for one dataset compared to <30K queries for all other datasets. At some point the query waits for this dataset will start to stagger, which can be seen in the **Query Durations** visual.
+- Many disparate datasets queried concurrently, causing thrashing as datasets frequently cycle in and out of memory. This situation results in users experiencing slow performance when the dataset is loaded into memory. To confirm, the Power BI administrator can refer to the **Hourly Dataset Evictions and Memory Consumption** visual, which may indicate that a high number of datasets loaded into memory are being repeatedly evicted.
 
 ## Identifying causes for sporadically slow-responding datasets
 
-In this scenario, an investigation began when users described that report visuals sometimes were slow to respond or could become unresponsive, but at other times they were acceptably responsive.
+In this scenario, an investigation began when users described that report visuals sometimes were slow to respond or could become unresponsive. At other times the report visuals were acceptably responsive.
 
 Within the app, the **Query Durations** section was used to find the culprit dataset in the following way:
 
-- In the **Query Durations** visual the admin filtered dataset by dataset (starting at the top datasets queried) and examined the cross filtered bars in the **Hourly Query Distributions** visual.
+- In the Query Durations visual, the admin filtered dataset by dataset (starting at the top datasets queried) and examined the cross filtered bars in the **Hourly Query Distributions** visual.
 - When a single one-hour bar showed significant changes in the ratio between all query duration groups vs. other one-hour bars for that dataset (for example, the ratios between the colors changes drastically), it means this dataset demonstrated a sporadic change in performance.
 - The one-hour bars showing an irregular portion of poor performing queries, indicated a timespan where that dataset was impacted by a noisy neighbor effect, caused by other datasets' activities.
 
@@ -119,6 +122,9 @@ In a healthy capacity the visual will look like this, showing a gap between All 
 
 In a capacity experiencing memory pressure, the same visual will clearly show active memory and total memory converging, meaning that it is impossible to load additional datasets into memory then. In this case, the Power BI administrator can click **Capacity Restart** (in **Advanced Options** of the capacity settings area of the admin portal). Restarting the capacity results in all datasets being flushed from memory and allowing them to reload into memory as required (by queries or data refresh).
 
+> [!NOTE]
+> For Premium Gen2, memory consumption does not need to be tracked. The only limitation in Premium Gen2 is on the memory footprint of a single artifact. The footprint cannot exceed the memory available on the capacity. For more information about Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+
 ![**Active** memory converging with **All** memory](media/service-premium-capacity-scenarios/memory-unhealthy-capacity.png)
 
 ## Determining whether there is enough CPU
@@ -137,6 +143,9 @@ This effect can be especially apparent when a dataset is consumed in short burst
 
 In some cases, Power BI administrators can request that dataset owners create a less volatile query workload by creating a dashboard (which queries periodically with any dataset refresh for cached tiles) instead of a report. This can help prevent spikes when the dashboard is loaded. This solution may not always be possible for given business requirements, however it can be an effective way to avoid CPU saturation, without making changing to the dataset.
 
+> [!NOTE]
+> For Premium Gen2, CPU time utilization is tracked on a per-artifact level, and is visible in the capacity utilization app. Each artifact displays their total CPU time utilization on a given timespan. For more information about Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+
 ## Acknowledgments
 
 This article was written by Peter Myers, Data Platform MVP and independent BI expert with [Bitwise Solutions](https://www.bitwisesolutions.com.au/).
@@ -150,4 +159,13 @@ This article was written by Peter Myers, Data Platform MVP and independent BI ex
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
-||||||
+Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+* Performance
+* Per-user licensing
+* Greater scale
+* Improved metrics
+* Autoscaling
+* Reduced management overhead
+
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+

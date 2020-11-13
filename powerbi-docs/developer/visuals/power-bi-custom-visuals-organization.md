@@ -27,7 +27,7 @@ To learn more about how to use organizational Power BI visuals in the reports th
 
 ## Administer organizational Power BI visuals
 
-To learn more about how to administer, deploy, and manage organizational Power BI visuals in your organization, see the following article: [Learn more about deployment and management of organization Power BI visuals](https://go.microsoft.com/fwlink/?linkid=866790).
+To learn more about how to administer, deploy, and manage organizational Power BI visuals in your organization, see the following article: [Learn more about deployment and management of organization Power BI visuals](../../admin/organizational-visuals.md).
 
 > [!WARNING]
 > A Power BI visual installed from a file, can contain code with security or privacy risks. Make sure you trust the author and the source of the Power BI visual file, before deploying it to the organization repository.
@@ -44,7 +44,7 @@ Admin:
 
 End user:
 
-* Organizational Power BI visuals are private visuals imported from the organization repository. As any private visual they can't be [exported to PowerPoint](https://docs.microsoft.com/power-bi/consumer/end-user-powerpoint) or displayed in emails received when a user [subscribes to report pages](https://docs.microsoft.com/power-bi/consumer/end-user-subscribe). Only [certified Power BI visuals](power-bi-custom-visuals-certified.md) imported directly from the marketplace supports these features.
+* Organizational Power BI visuals are private visuals imported from the organization repository. As any private visual they can't be [exported to PowerPoint](../../consumer/end-user-powerpoint.md) or displayed in emails received when a user [subscribes to report pages](../../consumer/end-user-subscribe.md). Only [certified Power BI visuals](power-bi-custom-visuals-certified.md) imported directly from the marketplace supports these features.
 
 * Visio visual, PowerApps visual, the Map box visual, and the GlobeMap visual from AppSource marketplace don't render if deployed through the organization repository.
 

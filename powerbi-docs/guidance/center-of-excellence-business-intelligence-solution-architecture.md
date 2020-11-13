@@ -7,18 +7,25 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/02/2020
+ms.date: 11/11/2020
 ms.author: v-pemyer
 ---
 # BI solution architecture in the Center of Excellence
 
 This article targets IT professionals and IT managers. You'll learn about BI solution architecture in the COE and the different technologies employed. Technologies include Azure, Power BI, and Excel. Together, they can be leveraged to deliver a scalable and data-driven cloud BI platform.
 
-Designing a robust BI platform is somewhat like building a bridge; a bridge that connects transformed and enriched source data to data consumers. The design of such a complex structure requires an engineering mindset, though it can be one of the most creative and rewarding IT architectures you could design.
+Designing a robust BI platform is somewhat like building a bridge; a bridge that connects transformed and enriched source data to data consumers. The design of such a complex structure requires an engineering mindset, though it can be one of the most creative and rewarding IT architectures you could design. In a large organization, a BI solution architecture can consist of:
+
+- Data sources
+- Data ingestion
+- Big data / data preparation
+- Data warehouse
+- BI semantic models
+- Reports
+
+:::image type="content" source="media/center-of-excellence-business-intelligence-solution-architecture/azure-business-intelligence-platform.png" alt-text="Diagram showing the BI platform architecture diagram, from data sources to data ingestion, big data, store, data warehouse, BI semantic modeling, reporting, and machine learning.":::
 
 The platform must support specific demands. Specifically, it must scale and perform to meet the expectations of business services and data consumers. At the same time, it must be secure from the ground up. And, it must be sufficiently resilient to adapt to change—because it's a certainty that in time new data and subject areas must be brought online.
-
-:::image type="content" source="media/center-of-excellence-business-intelligence-solution-architecture/azure-business-intelligence-platform.png" alt-text="An image shows a BI platform architecture diagram, from data sources to data ingestion, big data, store, data warehouse, reporting, and machine learning.":::
 
 ## Frameworks
 
@@ -35,7 +42,7 @@ Data models provide you with control over how data is structured and accessed. T
 A BI platform can deliver three different types of models:
 
 - Enterprise models
-- BI models
+- BI semantic models
 - Machine Learning (ML) models
 
 ### Enterprise models
@@ -46,17 +53,15 @@ Enterprise models deliver a consistent and single source of data for reporting a
 
 In a cloud BI platform, enterprise models can be deployed to a [Synapse SQL pool in Azure Synapse](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-what-is#synapse-sql-pool-in-azure-synapse). The Synapse SQL pool then becomes the single version of truth the organization can count on for fast and robust insights.
 
-### BI models
+### BI semantic models
 
-**BI models** represent a semantic layer over enterprise models. They're built and maintained by BI developers and business users. BI developers create core BI models that source data from enterprise models. Business users can create smaller-scale, independent models—or, they can extend core BI models with departmental or external sources. BI models commonly focus on a single subject area, and are often widely shared.
+**BI semantic models** represent a semantic layer over enterprise models. They're built and maintained by BI developers and business users. BI developers create core BI semantic models that source data from enterprise models. Business users can create smaller-scale, independent models—or, they can extend core BI semantic models with departmental or external sources. BI semantic models commonly focus on a single subject area, and are often widely shared.
 
-Business capabilities are enabled not by data alone, but by BI models that describe concepts, relationships, rules, and standards. This way, they represent intuitive and easy-to-understand structures that define data relationships and encapsulate business rules as calculations. They can also enforce fine-grained data permissions, ensuring the right people have access to the right data. Importantly, they accelerate query performance, providing extremely responsive interactive analytics—even over terabytes of data. Like enterprise models, BI models adopt naming conventions ensuring consistency.
+Business capabilities are enabled not by data alone, but by BI semantic models that describe concepts, relationships, rules, and standards. This way, they represent intuitive and easy-to-understand structures that define data relationships and encapsulate business rules as calculations. They can also enforce fine-grained data permissions, ensuring the right people have access to the right data. Importantly, they accelerate query performance, providing extremely responsive interactive analytics—even over terabytes of data. Like enterprise models, BI semantic models adopt naming conventions ensuring consistency.
 
-In a cloud BI platform, BI developers can deploy BI models to [Azure Analysis Services](/azure/analysis-services/) or [Power BI Premium capacities](../admin/service-premium-what-is.md#dedicated-capacities). We recommend deploying to Power BI when it's used as your reporting and analytics layer. These products support different storage modes, allowing data model tables to cache their data or to use [DirectQuery](directquery-model-guidance.md), which is a technology that passes queries through to the underlying data source. DirectQuery is an ideal storage mode when model tables represent large data volumes or there's a need to deliver near-real time results. The two storage modes can be combined: [Composite models](composite-model-guidance.md) combine tables that use different storage modes in a single model.
+In a cloud BI platform, BI developers can deploy BI semantic models to [Azure Analysis Services](/azure/analysis-services/) or [Power BI Premium capacities](../admin/service-premium-what-is.md#reserved-capacities). We recommend deploying to Power BI when it's used as your reporting and analytics layer. These products support different storage modes, allowing data model tables to cache their data or to use [DirectQuery](directquery-model-guidance.md), which is a technology that passes queries through to the underlying data source. DirectQuery is an ideal storage mode when model tables represent large data volumes or there's a need to deliver near-real time results. The two storage modes can be combined: [Composite models](composite-model-guidance.md) combine tables that use different storage modes in a single model.
 
-For heavily queried models, [Azure Load Balancer](/azure/load-balancer/load-balancer-overview) can be used to evenly distribute the query load across model replicas. It also allows you to scale your applications and create highly available BI models.
-
-<!-- For more information on BI models, see [BI modeling and processing in the COE](https://TODO/).-->
+For heavily queried models, [Azure Load Balancer](/azure/load-balancer/load-balancer-overview) can be used to evenly distribute the query load across model replicas. It also allows you to scale your applications and create highly available BI semantic models.
 
 ### Machine Learning models
 
@@ -129,7 +134,7 @@ Refined data is then stored in a relational database to deliver a high-performan
 
 At the reporting layer, business services consume enterprise data sourced from the data warehouse. They also access data directly in the data lake for ad hoc analysis or data science tasks.
 
-Fine-grained permissions are enforced at all layers: in the data lake, enterprise models, and BI models. The permissions ensure data consumers can only see the data they have rights to access.
+Fine-grained permissions are enforced at all layers: in the data lake, enterprise models, and BI semantic models. The permissions ensure data consumers can only see the data they have rights to access.
 
 At Microsoft, we use Power BI reports and dashboards, and [Power BI paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md). Some reporting and ad hoc analysis is done in Excel—particularly for financial reporting.
 
@@ -137,11 +142,11 @@ We publish data dictionaries, which provide reference information about our data
 
 Typically, data consumption patterns differ based on role:
 
-- **Data analysts** connect directly to core BI models. When core BI models contain all data and logic they need, they use live connections to create Power BI reports and dashboards. When they need to extend the models with departmental data, they create Power BI [composite models](composite-model-guidance.md). If there's a need for spreadsheet-style reports, they use Excel to produce reports based on core BI models or departmental BI models.
-- **BI developers** and operational report authors connect directly to enterprise models. They use Power BI Desktop to create live connection analytic reports. They can also author operational-type BI reports as Power BI paginated reports, writing native SQL queries to access data from the Azure Synapse Analytics enterprise models by using T-SQL, or Power BI models by using DAX or MDX.
+- **Data analysts** connect directly to core BI semantic models. When core BI semantic models contain all data and logic they need, they use live connections to create Power BI reports and dashboards. When they need to extend the models with departmental data, they create Power BI [composite models](composite-model-guidance.md). If there's a need for spreadsheet-style reports, they use Excel to produce reports based on core BI semantic models or departmental BI semantic models.
+- **BI developers** and operational report authors connect directly to enterprise models. They use Power BI Desktop to create live connection analytic reports. They can also author operational-type BI reports as Power BI paginated reports, writing native SQL queries to access data from the Azure Synapse Analytics enterprise models by using T-SQL, or Power BI semantic models by using DAX or MDX.
 - **Data scientists** connect directly to data in the data lake. They use Azure Databricks and Python notebooks to develop ML models, which are often experimental and require specialty skills for production use.
 
-:::image type="content" source="media/center-of-excellence-business-intelligence-solution-architecture/azure-data-warehouse-consumption.png" alt-text="An image shows consumption of Azure Synapse Analytics with Power BI and Azure Machine Learning.":::
+:::image type="content" source="media/center-of-excellence-business-intelligence-solution-architecture/azure-data-warehouse-consumption.png" alt-text="An image shows consumption of Azure Synapse Analytics with Power BI, Excel, and Azure Machine Learning.":::
 
 ## Next steps
 
@@ -150,3 +155,9 @@ For more information about this article, check out the following resources:
 - [Enterprise BI in Azure with Azure Synapse Analytics](/azure/architecture/reference-architectures/data/enterprise-bi-synapse)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+
+### Professional services
+
+Certified Power BI partners are available to help your organization succeed when setting up a COE. They can provide you with cost-effective training or an audit of your data. To engage a Power BI partner, visit the [Power BI partner portal](https://powerbi.microsoft.com/partners/).
+
+You can also engage with experienced consulting partners. They can help you [assess](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=assessment&country=ALL&region=ALL), [evaluate](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=proof-of-concept&country=ALL&region=ALL), or [implement](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=implementation&country=ALL&region=ALL&page=1) Power BI.

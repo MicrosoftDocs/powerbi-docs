@@ -1,21 +1,22 @@
 ---
-title: Glossary for Power BI consumers
-description: Power BI introduces many new terms and new uses for familiar terms. Use our glossary to get comfortable with the Power BI terminology.
+title: Glossary for Power BI business users
+description: Power BI introduces many new terms and new uses for familiar terms. Use our glossary to get comfortable with the Power BI service terminology.
 services: power-bi
 author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 07/08/2020
+ms.topic: reference
+ms.date: 08/24/2020
+ms.custom: contperfq1
 ms.author: mihart
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and they don't get confused or frustrated and instead get the result they expect.
 ---
 
-# Glossary for Power BI service    
+# Glossary for business users of the Power BI service    
 The Power BI service may introduce terminology that is unfamiliar or confusing. The glossary is a great place to look up terminology, you might even want to keep it bookmarked. Another great resource for learning about the building blocks that make up Power BI service is [Basic Concepts](end-user-basic-concepts.md). Basic Concepts gives a high level overview of the Power BI *pieces* and how they're connected.
 
-This glossary is a community effort.  Don't see a word here? Please ask us to add it (you can use the documentation feedback button at the bottom of this article.
+This glossary is a community effort.  Don't see a word here? Please ask us to add it (you can use the documentation feedback button at the bottom of this article).
 
 ## A
 
@@ -47,7 +48,7 @@ Centralized online repository where you can browse and discover dashboards, repo
 ArcGIS is a mapping and analytics platform created by the company ESRI. The name of the visual included in the Power BI visuals library is called ArcGIS for Power BI.
 
 **assign**    
-[Power BI Premium] Verb for moving a workspace into or out of dedicated capacity. Don't use promote for moving a workspace to dedicated capacity because this has the connotation of dedicated being superior to shared capacity. 
+[Power BI Premium] Verb for moving a workspace into or out of a capacity. Don't use promote for moving a workspace to a capacity because this has the connotation of dedicated being superior to shared capacity. 
 
 **Auto Insights**    
 Are now called *Quick Insights*.
@@ -66,6 +67,9 @@ The navigation at the top left to quickly navigate between reports and dashboard
 
 **calculation**    
 A mathematical determination of the size or number of something.
+
+**Capacity**    
+[Power BI Premium] Data models running on dedicated hardware in Microsoft cloud data centers to help ensure consistent performance at scale. BI solutions are delivered to the entire organization regardless of Power BI license.
 
 **card** (visual type)    
 A Power BI [visual type](end-user-visual-type.md).
@@ -92,7 +96,7 @@ Content for the Power BI service is generally dashboards, reports, and apps. It 
 The content index for an app.
 
 **content pack**    
- A collection of pre-packaged datasets, reports, and dashboards. These are being replaced with **apps**, learn [about the new workspace experience](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
+ A collection of pre-packaged datasets, reports, and dashboards. These are being replaced with **apps**, learn [about the new workspace experience](../collaborate-share/service-create-the-new-workspaces.md). 
 
 **content view**
 
@@ -132,12 +136,8 @@ Dataflows ingest, transform, integrate, and enrich big data by defining data sou
 **dataset** vs **data source**    
 A **dataset** is a collection of data used to create visualizations and reports.
 
-**dedicated capacity**    
-[Power BI Premium] Data models running on dedicated hardware in Microsoft cloud data centers to help ensure consistent performance at scale. BI solutions are delivered to the entire organization regardless of Power BI license.
-
 **Desktop** or **Power BI Desktop**    
 Free Power BI tool used primarily be report designers, admins, and developers. 
-
 
 **diamond**    
 Power BI Premium. The shape of the icon that signifies a workspace is a Premium capacity workspace.
@@ -341,7 +341,7 @@ An on-premises report server with a web portal in which you display and manage r
 An online SaaS (Software as a service) service. For more information, see [What is Power BI](../fundamentals/power-bi-overview.md).
 
 **Premium workspace**    
-A workspace running in dedicated capacity, signified to customers by a diamond icon.  
+A workspace running in a capacity, signified to customers by a diamond icon.  
 
 **Pro** license or **Pro** account
 See *account*.

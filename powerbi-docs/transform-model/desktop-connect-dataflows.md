@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 05/07/2020
+ms.date: 10/01/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -33,7 +33,7 @@ You can improve data ingestion performance for dataflows. For example, if the in
 
 In that manner, the processing of large data is performed online in dataflows, rather than being performed locally in your running instance of **Power BI Desktop**. That approach lets Power BI Desktop ingest smaller amounts of data, and keeps the experience with dataflows responsive and quick.
 
-## Considerations and limitations
+## Additional considerations
 
 Most dataflows reside in the Power BI service tenant. However, **Power BI Desktop** users cannot access dataflows that are stored in Azure Data Lake Storage Gen2 account, unless they are the owner of the dataflow, or they have been explicitly authorized to the dataflow’s CDM folder. Consider the following situation:
 
@@ -41,31 +41,24 @@ Most dataflows reside in the Power BI service tenant. However, **Power BI Deskto
 2.	Ben, who is also a member of the workspace Anna created, wants to use Power BI Desktop and the dataflow connector to get data from the dataflow Anna created.
 3.	Ben receives an error caused by not being added as an authorized user to the dataflow’s CDM folder in the data lake.
 
-    ![Error attempting to use dataflow](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
-
-To resolve this issue, Ben must be granted reader permissions to the CDM Folder and its files. You can learn more about how to grant access to the CDM Folder in [this article](https://go.microsoft.com/fwlink/?linkid=2029121).
+To resolve this issue, Ben must be granted reader permissions to the CDM Folder and its files. You can learn more about how to grant access to the CDM Folder in [configure and consume a dataflow](dataflows/dataflows-configure-consume.md).
 
 
 
 
 ## Next steps
-There are all sorts of interesting things you can do with Power Platform dataflows. For more information, check out the following resources:
+There are all sorts of interesting things you can do with dataflows. For more information, check out the following resources:
 
-* [Self-service data prep with dataflows](service-dataflows-overview.md)
-* [Create and use dataflows in Power BI](service-dataflows-create-use.md)
-* [Using computed entities on Power BI Premium (Preview)](service-dataflows-computed-entities-premium.md)
-* [Using dataflows with on-premises data sources (Preview)](service-dataflows-on-premises-gateways.md)
-* [Developer resources for Power Platform dataflows (Preview)](service-dataflows-developer-resources.md)
+* [Introduction to dataflows and self-service data prep](dataflows/dataflows-introduction-self-service.md)
+* [Creating a dataflow](dataflows/dataflows-create.md)
+* [Configure and consume a dataflow](dataflows/dataflows-configure-consume.md)
+* [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows/dataflows-azure-data-lake-storage-integration.md)
+* [Premium features of dataflows](dataflows/dataflows-premium-features.md)
+* [AI with dataflows](dataflows/dataflows-machine-learning-integration.md)
 
-For more information about integration with Azure Data Lake Storage Gen2, see the following articles:
-
-* [Dataflows and Azure Data Lake integration (Preview)](service-dataflows-azure-data-lake-integration.md)
-* [Configure workspace dataflow settings (Preview)](service-dataflows-configure-workspace-storage-settings.md)
-* [Add a CDM folder to Power BI as a dataflow (Preview)](service-dataflows-add-cdm-folder.md)
-* [Connect Azure Data Lake Storage Gen2 for dataflow storage (Preview)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
 
 There are also articles about **Power BI Desktop** that you might find useful:
 
 * [Data Sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Enter data directly into Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)   
+* [Enter data directly into Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)

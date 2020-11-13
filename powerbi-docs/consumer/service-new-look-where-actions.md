@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 04/15/2020
+ms.date: 10/22/2020
 ms.author: maggies
 # Customer intent: As a Power BI customer or potential customer, I'd like to know what the differences are between the previous look of the Power BI service and the new look
 LocalizationGroup: Get started
@@ -21,50 +21,52 @@ Looking for information about the new look in **Power BI Desktop**? See [Use the
 
 ## Report actions in the new look
 
-|Action  |New look OFF  |New look ON  |
+|Action  |Old look |New look  |
 |---------|---------|---------|
-| Save as | File > Save as  | Menu bar More options (...) > Save a copy |
-| Print | File > Print | Export > Print |
-| Embed securely | File > Embed | Menu bar More options (...) > Embed > Website or portal |
-| Embed in SharePoint Online | File > Embed in SharePoint Online | Menu bar More options (...) > Embed > SharePoint Online |
-| Publish to Web | File > Publish to Web | Menu bar More options (...) > Embed > Publish to web (public) |
+| Save as | File > Save as  | File > Save a copy |
+| Print | File > Print | File > Print this page |
+| Embed securely | File > Embed | Share > Embed report > Website or portal |
+| Embed in SharePoint Online | File > Embed in SharePoint Online | Share > Embed report > SharePoint Online |
+| Publish to Web | File > Publish to Web | Share > Embed report > Publish to web (public) |
 | Export to PowerPoint | File > Export to PowerPoint | Export > PowerPoint |
 | Export to PDF | File > Export to PDF | Export > PDF |
-|Edit report  | Top bar   | Menu bar More options (...) > Edit |
+| Chat in Teams | (didn't exist) | Menu bar |
+|Edit report  | Menu bar   | Menu bar |
 | Fit to page | View > Fit to page | Menu bar View (right side) > Fit to page |
 | Fit to width | View > Fit to width | Menu bar View (right side) > Fit to width |
 | Actual size | View > Actual size | Menu bar View (right side) > Actual size |
+| Full screen mode | Full screen mode | Menu bar View (right side) > Full screen |
 | High-contrast colors | View > High-contrast colors | Menu bar View (right side) > High-contrast colors |
-| Bookmarks pane | View > Bookmarks pane |  Menu bar Bookmarks > Show more bookmarks |
-| Refresh | Refresh | Menu bar More options (...) > Refresh |
-| Pin a live page | Pin a live page | Menu bar More options (...) > Pin a live page |
-| Reset to default | Reset to default | Reset to default |
-| Comments | Comments | Comments |
-| View related | View related | Menu bar More options (...) > View related |
-| Favorite | Favorite | Favorite |
+| Bookmarks pane | View > Bookmarks pane |  Menu bar Bookmarks (right side) > Show more bookmarks |
+| Refresh | Refresh | Menu bar (right side) Refresh |
+| Pin a live page | Pin a live page | Menu bar More options (...) > Pin to a dashboard |
+| Reset to default | Reset to default | Reset to default (right side) |
+| Comments | Comments | Comment |
+| View related | View related | Menu bar More options (...) > See related content |
+| Favorite | Favorite | Add to Favorites (right side) |
 | Subscribe | Subscribe |Subscribe |
-| Share | Share | Share |
-| Generate QR code | Menu bar More options (...) > Generate QR code | Menu bar More options (...) > Generate QR code |
-| Analyze in Excel | Menu bar More options (...) > Analyze in Excel | Menu bar More options (...) > Analyze in Excel |
-| Full screen mode | Full screen mode | Top bar View (right side) > Full screen |
+| Share | Share | Share > Report |
+| Generate QR code | Menu bar More options (...) > Generate QR code | Share > Generate QR code |
+| Analyze in Excel | Menu bar More options (...) > Analyze in Excel | Export > Analyze in Excel |
+
 
 ## Dashboard actions in the new look
 
-|Action  |New look OFF  |New look ON  |
+|Action  |Old look  |New look  |
 |---------|---------|---------|
-| Add tile | Add tile | Menu bar More options (...) > Add tile |
-| Comments | Comments | Comments |
-| View related | View related | Menu bar More options (...) > View related |
+| Add tile | Add tile | Edit > Add tile |
+| Comments | Comments | Comment |
+| View related | View related | Menu bar More options (...) > See related content |
 | Set as featured | Set as featured| Menu bar More options (...) > Set as featured|
-| Favorite | Favorite | Favorite |
+| Favorite | Favorite | Add to Favorites (right side) |
 | Subscribe | Subscribe |Subscribe |
 | Share | Share | Share |
-| Phone view | Web view > Phone view | Menu bar More options (...) > Mobile view |
-| Dashboard theme | Menu bar More options (...) > Dashboard theme | Menu bar More options (...) > Dashboard theme |
-| Print dashboard | Menu bar More options (...) > Print dashboard | Export > Print this page |
-| Refresh dashboard tiles | Menu bar More options (...) > Refresh dashboard tiles | Menu bar More options (...) > Refresh |
-| Performance inspector | Menu bar More options (...) > Performance inspector | Menu bar More options (...) > Performance inspector |
-| Settings | Menu bar More options (...) > Settings | Menu bar More options (...) > Settings |
+| Phone view | Web view > Phone view | Edit > Mobile view |
+| Dashboard theme | Menu bar More options (...) > Dashboard theme | Edit > Dashboard theme |
+| Print dashboard | Menu bar More options (...) > Print dashboard | File > Print this page |
+| Refresh dashboard tiles | Menu bar More options (...) > Refresh dashboard tiles | Refresh visuals (right side) |
+| Performance inspector | Menu bar More options (...) > Performance inspector | File > Performance inspector |
+| Settings | Menu bar More options (...) > Settings | File > Settings |
 
 ## Next steps
 

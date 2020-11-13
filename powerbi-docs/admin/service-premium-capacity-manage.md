@@ -5,10 +5,10 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 04/10/2019
-ms.custom: seodec18
+ms.date: 11/11/2020
+ms.custom:
 
 LocalizationGroup: Premium
 ---
@@ -20,6 +20,9 @@ Managing Power BI Premium involves creating, managing, and monitoring Premium ca
 ## Creating and managing capacities
 
 The **Capacity Settings** page of the Power BI Admin portal displays the number of v-cores purchased and Premium capacities available. The page allows Global administrators or Power BI service administrators to create Premium capacities from available v-cores, or to modify existing Premium capacities.
+
+> [!NOTE]
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
 
 When creating a Premium capacity, administrators are required to define:
 
@@ -144,7 +147,7 @@ In general, slow reports can be an indication of an over-heating capacity. When 
 
 A more detailed explanation of how to use the metrics is covered in the [Optimizing Premium capacities](service-premium-capacity-optimize.md) article.
 
-## Acknowledgements
+## Acknowledgments
 
 This article was written by Peter Myers, Data Platform MVP and independent BI expert with [Bitwise Solutions](https://www.bitwisesolutions.com.au/).
 
@@ -157,3 +160,12 @@ This article was written by Peter Myers, Data Platform MVP and independent BI ex
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
+Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+* Performance
+* Per-user licensing
+* Greater scale
+* Improved metrics
+* Autoscaling
+* Reduced management overhead
+
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

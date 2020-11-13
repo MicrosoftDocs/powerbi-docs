@@ -32,7 +32,7 @@ For information about how to add a data source, see [Add a data source](service-
 Fill in the information for the data source, which includes **Server** and **Database**. The information that you enter for **Username** and **Password** is used by the gateway to connect to the Analysis Services instance.
 
 > [!NOTE]
-> The Windows account you enter must have Server Administrator permissions for the instance you're connecting to. If this account’s password is set to expire, users could get a connection error if the password isn’t updated for the data source. To learn more about how credentials are stored, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
+> The Windows account you enter must be a member of the Server Administrator role on the Analysis Services instance you're connecting to. If this account’s password is set to expire, users could get a connection error if the password isn’t updated for the data source. To learn more about how credentials are stored, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
 ![Filling in the data source settings](media/service-gateway-enterprise-manage-ssas/datasourcesettings3-ssas.png)
 
@@ -216,7 +216,9 @@ EffectiveUserName can't be used on a non-domain-joined Analysis Services server.
 
 You might not know what your UPN is, and you might not be a domain administrator. You can use the following command from your workstation to find out the UPN for your account.
 
-    whoami /upn
+```dos
+whoami /upn
+```
 
 The result looks similar to an email address, but it's the UPN that's on your domain account. If you use an Analysis Services data source for live connections, and if this UPN doesn't match the email address you use to sign in to Power BI, you might want to look at how to [map user names](#map-user-names-for-analysis-services-data-sources).
 
@@ -232,7 +234,7 @@ The cloud services only know about accounts within Azure AD. It doesn’t matter
 
 - You can use the [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis) tool to synchronize local accounts to your Azure AD tenant.
 
-   The Azure AD Connect tool provides options for directory synchronization and setting up authentication. Options include password hash sync, pass-through authentication, and federation. If you're not a tenant admin or a local domain administrator, contact your IT admin to help with configuration.
+   The Azure AD Connect tool provides options for directory synchronization and setting up authentication. Options include password hash sync, pass-through authentication, and federation. If you're not an admin or a local domain administrator, contact your IT admin to help with configuration.
 
    Using Azure AD Connect ensures that the UPN matches between Azure AD and your local Active Directory instance.
 

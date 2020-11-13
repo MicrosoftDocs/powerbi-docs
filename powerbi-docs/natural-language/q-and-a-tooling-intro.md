@@ -6,7 +6,7 @@ author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/17/2020
+ms.date: 08/31/2020
 ms.author: maggies
 
 ---
@@ -38,6 +38,24 @@ Q&A tooling is only available in Power BI Desktop, and currently only supports i
 
     ![Q&A Getting started](media/q-and-a-tooling-intro/qna-tooling-dialog.png)
 
+### Field Synonyms
+
+Select **Field Synonyms** to see all the tables and columns that belong to the model. This view allows you to add alternative names to match the columns to help users. You can also choose whether or not a column or table should be hidden from Q&A.
+
+![Q&A field synonyms home](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-home.png)
+
+Click on one of the tables to expand and you will see a dialog similar to the one below.
+
+![Q&A field synonyms expanded](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-expanded.png)
+
+The dialog will show all the columns and tables and their respective terms/synonyms that users can use when asking questions against the dataset. You can quickly see all the terms in one place and also add or remove terms for multiple columns. 
+
+- Add terms - If you have a field called sales, you may decide to add a term called revenue so a user can use this word instead of being required to use the word sales. Click the add sign to quickly add a new term
+
+- Include in Q&A - This option allows a column or table to be omitted from Q&A meaning it will not be shown nor a result can be displayed with this column. A circumstance where you may decide to not include a column is when dealing with dates. If there are numerous date fields, or foreign keys, you may decide to remove all but one of the date fields so the correct date column is picked when a user asks a date related question.
+
+- Suggested Terms - Q&A will also recommend suggested terms retrieved from our suggestions engine to help you quickly add terms/synonyms. If the suggestions are not added, They will still function but will give the user an orange dotted line indicating Q&A thinks it has an answer but is not sure. If the suggested synonym is correct, click the + icon so it can be used as a synonym. if the suggestion is incorrect, then click the x which will remove the term and ensure it will not be used as a term/synonym and will not function inside Q&A. The suggestions are powered by Office Dictionary and also come from renames found inside a report
+
 ### Review questions
 
 Select **Review questions** to see a list of datasets being used in the Power BI service for your tenant. The **Review questions** page also displays the dataset owner, workspace, and last refreshed date. From here you can select a dataset and see what questions users have been asking. The data also shows words that were not recognized. All data shown here is for the last 28 days.
@@ -58,7 +76,12 @@ Anything you've saved from the Teach Q&A section shows up here, so you can revie
 
 ### Suggest questions
 
-Without doing any setup, the Q&A visual will suggest several questions to get started with. These questions are automatically generated based on your data model. In **Suggest questions**, you can overwrite the auto-generated questions with your own questions. 
+> [!NOTE]
+> The suggested questions will show up for all instances of the Q&A visual. It isn't possible to create a separate set of suggestions for each Q&A visual.
+> 
+> 
+
+Without doing any setup, the Q&A visual will suggest several questions to get started with. These questions are automatically generated based on your data model. In **Suggest questions**, you can overwrite the auto-generated questions with your own questions.
 
 To start, type the question you want to add in the text box. In the preview section, you see what the result will look like in the Q&A visual. 
 
@@ -70,30 +93,7 @@ Select the **Add** button to add this question to **Your suggested questions**. 
  
 Make sure to select **Save** to show your list of suggested questions in the Q&A visual. 
 
-
 ## Other Q&A settings
-
-### Bulk synonyms
-
-The Power BI Desktop **Modeling** tab has more options for improving the Q&A experience. 
-
-1. In Power BI Desktop, select Modeling view.
-
-2. Select a field or table to display the **Properties** pane.  This pane displays on the right side of the canvas and lists several Q&A actions. One option is **Synonyms**. In the **Synonyms** box, you can quickly define alternatives for the table or field you select. You can also define synonyms the **Teach Q&A** section of the Tooling dialog box, but it's often faster to define synonyms here for lots of fields in a table.
-
-    ![Q&A Modeling pane synonyms](media/q-and-a-tooling-intro/qna-modelling-pane-synonyms.png)
-
-3. To define multiple synonyms for a single field, use commas to denote the next synonym.
-
-### Hide from Q&A
-
-You can also hide fields and tables, so they don't appear in Q&A results. 
-
-1. In Power BI Desktop, select Modeling view.
-
-2. Select a field or table to display the **Properties** pane, and turn **Is hidden** **On**.
-
-    Q&A respects that setting and ensures that field isn't recognized by Q&A. For example, you might want to hide ID fields and foreign keys to avoid unnecessary duplicate fields with the same name. Even if you hide the field, you can still use it in Power BI Desktop in visuals outside of Q&A.
 
 ### Set a row label
 

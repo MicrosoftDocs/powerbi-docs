@@ -48,7 +48,7 @@ The only way to visualize a streaming dataset is to add a tile and use the strea
 In practice, streaming datasets and their accompanying streaming visuals are best used in situations when it is critical to minimize the latency between when data is pushed and when it is visualized. In addition, it's best practice to have the data pushed in a format that can be visualized as-is, without any additional aggregations. Examples of data that's ready as-is include temperatures, and pre-calculated averages.
 
 ### PubNub streaming dataset
-With a **PubNub** streaming dataset, the Power BI web client uses the PubNub SDK to read an existing PubNub data stream. No data is stored by the Power BI service. Because this call is made from the web client directly, you would have to list traffic to PubNub as allowed, if you only allowed whitelisted outbound traffic from your network. Refer to the instructions in the support article about [whitelisting outbound traffic for PubNub](https://support.pubnub.com/support/solutions/articles/14000043522-can-i-whitelist-ips-for-pubnub-traffic-).
+With a **PubNub** streaming dataset, the Power BI web client uses the PubNub SDK to read an existing PubNub data stream. No data is stored by the Power BI service. Because this call is made from the web client directly, you would have to list traffic to PubNub as allowed, if you only allowed approved outbound traffic from your network. Refer to the instructions in the support article about [approving outbound traffic for PubNub](https://support.pubnub.com/support/solutions/articles/14000043522-can-i-whitelist-ips-for-pubnub-traffic-).
 
 As with the **streaming dataset**, with the **PubNub streaming dataset** there is no underlying database in Power BI, so you cannot build report visuals against the data that flows in, and cannot take advantage of report functionality such as filtering, Power BI visuals, and so on. As such, the **PubNub streaming dataset** can also only be visualized by adding a tile to the dashboard, and configuring a PubNub data stream as the source.
 
@@ -82,7 +82,7 @@ If the *defaultMode* value is set to *pushStreaming*, the dataset is both a **pu
 > [!NOTE]
 > When using datasets with the *defaultMode* flag set to *pushStreaming*, if a request exceeds the 15Kb size restriction for a **streaming** dataset, but is less than the 16MB size restriction of a **push** dataset, the request will succeed and the data will be updated in the push dataset. However, any streaming tiles will temporarily fail.
 
-Once a dataset is created, use the REST APIs to push data using the [**PostRows** API](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows).
+Once a dataset is created, use the REST APIs to push data using the [**PostRows** API](/rest/api/power-bi/pushdatasets/datasets_postrows).
 
 All requests to REST APIs are secured using **Azure AD OAuth**.
 
@@ -151,11 +151,14 @@ The next sections look at each option in turn.
 
 ![Screenshot of the New streaming dataset dialog, showing the Power B I REST A P I entries for connection.](media/service-real-time-streaming/real-time-streaming_5.png)
 
-If you want Power BI to store the data that's sent through this data stream, enable *Historic data analysis* and you'll be able to do reporting and analysis on the collected data stream. You can also [learn more about the API](https://docs.microsoft.com/rest/api/power-bi/).
+If you want Power BI to store the data that's sent through this data stream, enable *Historic data analysis* and you'll be able to do reporting and analysis on the collected data stream. You can also [learn more about the API](/rest/api/power-bi/).
 
 Once you successfully create your data stream, you're provided with a REST API URL endpoint, which your application can call using *POST* requests to push your data to Power BI **streaming data** dataset you created.
 
 When making *POST* requests, you should ensure the request body matches the sample JSON provided by the Power BI user interface. For example, wrap your JSON objects in an array.
+
+> [!WARNING]
+> For streaming datasets created using the Power BI service UI, the dataset owner receives a URL which includes a **resource key**. This key authorizes the requestor to push data into the dataset without using an Azure AD OAuth bearer token, so please keep in mind the implications of having a **secret key** in the URL when working with this type of dataset and method.
 
 ### Using PubNub
 With the integration of **PubNub** streaming with Power BI, you can use your low-latency **PubNub** data streams (or create new ones) and use them in Power BI. When you select **PubNub** and then select **Next**, you see the following window:
@@ -180,12 +183,9 @@ In this sample, we use a publicly available stream from **PubNub**. Here are the
 2. If you don't have and streaming data sources yet, select the **manage data** link (just above the **Next** button), then select **+ Add streaming data** from the link in the upper right of the window. Select **PubNub** and then select **Next**.
 3. Create a name for your dataset, then paste in the following values into the window that appears, then select **Next**:
    
-   *Subscribe key:*
-   
-       sub-c-5f1b7c8e-fbee-11e3-aa40-02ee2ddab7fe
-   *Channel:*
-   
-       pubnub-sensor-network
+   **Subscribe key:** *sub-c-5f1b7c8e-fbee-11e3-aa40-02ee2ddab7fe*
+
+   **Channel:** *pubnub-sensor-network*
    
    ![Screenshot of the New streaming dataset dialog, showing how to create a Dataset name and entries in the Sub-key and Channel name fields.](media/service-real-time-streaming/real-time-streaming_8.png)
 4. In the following window, just select the defaults (which are automatically populated), then select **Create**.
@@ -241,5 +241,5 @@ Learn more about automatic page refresh in the [automatic page refresh](../creat
 ## Next steps
 Here are a few links you might find useful when working with real-time streaming in Power BI:
 
-* [Overview of the Power BI REST API with real-time data](https://docs.microsoft.com/rest/api/power-bi/)
+* [Overview of the Power BI REST API with real-time data](/rest/api/power-bi/)
 * [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/)

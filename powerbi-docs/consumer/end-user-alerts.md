@@ -82,7 +82,7 @@ If you're not signed up for Power BI, [sign up for a free trial](https://app.pow
    
 1. On the **Manage alerts** pane, select **+ Add alert rule**.  Ensure the slider is set to **On**, and give your alert a title. Titles help you easily recognize your alerts.
    
-   ![Manage alerts window](media/end-user-alerts/power-bi-alert-manage.png)
+   ![Add alert rule window](media/end-user-alerts/power-bi-alert-manage.png)
 4. Scroll down and enter the alert details.  In this example we'll create an alert that notifies us once a day if our market share increases to 40 or higher. Alerts will appear in our [Notification center](end-user-notification-center.md). And we'll have Power BI send us an email as well.
    
    ![Manage alerts window, set Threshold](media/end-user-alerts/power-bi-manage-alert-detail.png)
@@ -138,7 +138,7 @@ There are many ways to manage your alerts: from the dashboard tile itself, from 
 
 ## Tips and troubleshooting 
 
-* If you are unable to set an alert for a gauge, KPI, or card, contact your tenant administrator or IT help desk for help. Sometimes alerts are turned off or unavailable for your dashboard or for specific types of dashboard tiles.
+* If you are unable to set an alert for a gauge, KPI, or card, contact your Power BI admin or IT help desk for help. Sometimes alerts are turned off or unavailable for your dashboard or for specific types of dashboard tiles.
 * Alerts only work on data that is refreshed. They do not work on static data. Most of the samples supplied by Microsoft are static. 
 * The ability to receive and view shared content requires a Power BI Pro or Premium license. For more information, read [Which license do I have?](end-user-license.md).
 * Alerts can be set on visuals created from streaming datasets that are pinned from a report to a dashboard. Alerts can't be set on streaming tiles created directly on the dashboard using **Add tile** > **Custom streaming data**.

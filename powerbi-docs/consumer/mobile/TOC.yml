@@ -28,7 +28,9 @@
       href: mobile-apps-data-in-real-world-context.md
     - name: "View your data offline in the mobile apps"
       href: mobile-apps-offline-data.md
-    - name: "Power BI for Mixed Reality app (Preview)"
+    - name: "Power BI for HoloLens 2"
+      href: mobile-hololens2-app.md
+    - name: "Power BI for HoloLens (1st gen)"
       href: mobile-mixed-reality-app.md
   - name: How to
     items: 
@@ -117,5 +119,4 @@
     - name: "Supported languages in the mobile apps"
       href: mobile-apps-supported-languages.md
     - name: "Power BI for Windows 10 mobile - End of support for Windows phones"
-      href: https://go.microsoft.com/fwlink/?linkid=2121400
-
+      href: /legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones

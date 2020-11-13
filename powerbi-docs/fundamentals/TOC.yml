@@ -15,7 +15,9 @@
       href: service-service-vs-desktop.md
   - name: Tutorials
     items: 
-    - name: Get started with the Power BI service
+    - name: "Get started with Power BI Desktop"
+      href: desktop-getting-started.md
+    - name: "Get started with the Power BI service"
       href: service-get-started.md
   - name: Concepts
     items: 
@@ -41,8 +43,6 @@
     items: 
     - name: "Get Power BI Desktop"
       href: desktop-get-the-desktop.md
-    - name: "Get started with Power BI Desktop"
-      href: desktop-getting-started.md
   - name: Reference
     items:
     - name: "Supported languages and countries/regions"

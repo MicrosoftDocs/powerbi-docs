@@ -41,7 +41,7 @@ If you encounter that error, there are a couple ways to fix the issue:
 * Use **Remove Duplicates** to create a column with unique values. The drawback to this approach is that you might lose information when duplicate rows are removed; often a key (row) is duplicated for good reason.
 * Add an intermediary table made of the list of distinct key values to the model, which will then be linked to both original columns in the relationship.
 
-For more information, see this [blog post](https://blogs.technet.microsoft.com/cansql/2016/12/19/relationships-in-power-bi-fixing-one-of-the-columns-must-have-unique-values-error-message/).
+For more information, see this [blog post](/archive/blogs/cansql/relationships-in-power-bi-fixing-one-of-the-columns-must-have-unique-values-error-message).
 
 
 ## Edit a relationship
@@ -61,7 +61,7 @@ The **Cardinality** option can have one of the following settings:
 
 **One to many (1:*)**: In a one-to-many relationship, the column in one table has only one instance of a particular value, and the other related table can have more than one instance of a value.
 
-**Many to many (\*:\*)**: With composite models, you can establish a many-to-many relationship between tables, which removes requirements for unique values in tables. It also removes previous workarounds, such as introducing new tables only to establish relationships. For more information, see [Relationships with a many-many cardinality](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships). 
+**Many to many (\*:\*)**: With composite models, you can establish a many-to-many relationship between tables, which removes requirements for unique values in tables. It also removes previous workarounds, such as introducing new tables only to establish relationships. For more information, see [Relationships with a many-many cardinality](./desktop-many-to-many-relationships.md). 
 
 For more information about when to change cardinality, see [Understanding additional options](#understanding-additional-options).
 
@@ -354,4 +354,3 @@ We can change the active relationship and get **SubmittedBy** instead of **Opene
 Sometimes your model has multiple tables and complex relationships between them. **Relationship** view in Power BI Desktop shows all of the relationships in your model, their direction, and cardinality in an easy to understand and customizable diagram. 
 
 To learn more, see [Work with Relationship view in Power BI Desktop](desktop-relationship-view.md).
-

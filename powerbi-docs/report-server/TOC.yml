@@ -40,9 +40,9 @@
       - name: "Paginated report data sources"
         href: connect-data-sources.md
       - name: "Subscriptions"
-        href: https://go.microsoft.com/fwlink/?linkid=851310
+        href: /sql/reporting-services/working-with-subscriptions-web-portal
       - name: "Using the mobile app"
-        href: https://go.microsoft.com/fwlink/?linkid=848711
+        href: ../consumer/mobile/mobile-apps-for-mobile-devices.md
       - name: "Troubleshoot scheduled refresh"
         href: scheduled-refresh-troubleshoot.md
     - name: Report server for developers
@@ -50,9 +50,9 @@
       - name: "Report server for developers"
         href: developer-handbook-overview.md
       - name: "Report Viewer control"
-        href: https://go.microsoft.com/fwlink/?linkid=848724
+        href: /sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started
       - name: "Develop extensions"
-        href: https://go.microsoft.com/fwlink/?linkid=848723
+        href: /sql/reporting-services/extensions/reporting-services-extension-library
       - name: "Embed reports"
         href: quickstart-embed.md
   - name: How to
@@ -74,11 +74,13 @@
       - name: "Enter data directly in a paginated report"
         href: ../paginated-reports/paginated-reports-enter-data.md
       - name: "Work with KPIs"
-        href: https://go.microsoft.com/fwlink/?linkid=849021
+        href: /sql/reporting-services/working-with-kpis-in-reporting-services
       - name: "Access shared datasets as OData feeds"
         href: access-dataset-odata.md
       - name: "Change data source connection strings with PowerShell"
         href: connect-data-source-apis.md
+      - name: "Change data source connection strings with PowerShell, pre-October 2020"
+        href: connect-data-source-apis-pre-oct-2020.md
       - name: "Configure scheduled refresh"
         href: configure-scheduled-refresh.md
       - name: "Add comments to a report"
@@ -102,7 +104,7 @@
       - name: "Configure a report server with Azure Application Proxy"
         href: azure-application-proxy.md
       - name: "Remote mobile access with Azure AD"
-        href: https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi
+        href: /azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi
       - name: "Host Excel workbooks"
         href: excel-oos.md
   - name: Reference
@@ -110,13 +112,13 @@
     - name: "REST API"
       href: rest-api.md
     - name: "WMI"
-      href: https://go.microsoft.com/fwlink/?linkid=848719
+      href: /sql/reporting-services/wmi-provider-library-reference/reporting-services-wmi-provider-library-reference-ssrs
     - name: "SOAP APIs"
-      href: https://go.microsoft.com/fwlink/?linkid=848721
+      href: /sql/reporting-services/report-server-web-service/net-framework/building-applications-using-the-web-service-and-the-net-framework
     - name: "URL Access"
-      href: https://go.microsoft.com/fwlink/?linkid=848722
+      href: /sql/reporting-services/url-access-ssrs
     - name: "Extensions"
-      href: https://go.microsoft.com/fwlink/?linkid=848723
+      href: /sql/reporting-services/extensions/reporting-services-extension-library
   - name: Resources
     items: 
       - name: "Capacity planning whitepaper"

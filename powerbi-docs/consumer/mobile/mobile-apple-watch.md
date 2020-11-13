@@ -19,16 +19,16 @@ The Power BI Apple Watch app is bundled with the Power BI for iOS app, so when y
 ## Use the Power BI app on the Apple Watch
 Get to the Power BI Apple Watch app either from the watch's springboard, or by clicking the Power BI widget (if configured) directly from the watch face.
 
-![Apple watch](./media/mobile-apple-watch/pbi_aplwatch_complicatn240arrow.png)
+![Photograph shows an Apple Watch with the Power B I app.](./media/mobile-apple-watch/pbi_aplwatch_complicatn240arrow.png)
 
 The Power BI Apple Watch app consists of two parts.
 
 * The **index screen** allows a quick overview of all KPI and card tiles from the synced dashboard.
   
-  ![Apple watch](./media/mobile-apple-watch/pbi_aplwatch_indexscreen240.png)
+  ![Photograph shows an Apple Watch with the index screen.](./media/mobile-apple-watch/pbi_aplwatch_indexscreen240.png)
 * The **in-focus tile**: Click a tile on the index screen for an in-depth view of a specific tile.
   
-  ![Apple watch](./media/mobile-apple-watch/pbi_aplwatch_kpi.png)
+  ![Photograph shows an Apple Watch displaying a tile.](./media/mobile-apple-watch/pbi_aplwatch_kpi.png)
 
 ## Refresh a dashboard from your Apple Watch
 You can refresh a synced dashboard directly from your watch.
@@ -70,7 +70,7 @@ Given the small space on the Apple Watch face, the Power BI Apple Watch app lets
 
 * On your iPhone, go to the Apple Watch control app, select Power BI, navigate to the widget name field, and type a new name.
   
-  ![Apple watch](./media/mobile-apple-watch/pbi_aplwatch_oniphone.png)
+  ![Photograph shows an iPhone with the My Watch app open and the Power B I icon visible.](./media/mobile-apple-watch/pbi_aplwatch_oniphone.png)
 
 > [!NOTE]
 > If you don't change the name, the Power BI widget will shorten the name to the number of characters that fit the small space on the watch face. 
