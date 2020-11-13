@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/15/2019
+ms.date: 11/11/2020
 ms.author: arthii
 
 LocalizationGroup: Gateways
@@ -58,6 +58,9 @@ The link between your dataset and the data source within the gateway is based on
 If you're listed in the **Users** tab of the data source configured within the gateway and the server name and database name match, you see the gateway as an option to use with scheduled refresh.
 
 ![Displaying the users](media/service-gateway-enterprise-manage-scheduled-refresh/powerbi-gateway-enterprise-schedule-refresh.png)
+
+> [!IMPORTANT]
+> Upon republish, the data set owner must reassociate the dataset to a gatweay and corresponding data source again. The previous association is not maintained upon republish. 
 
 > [!WARNING]
 > If your dataset contains multiple data sources, each data source must be added within the gateway. If one or more data sources aren't added to the gateway, you won't see the gateway as available for scheduled refresh.

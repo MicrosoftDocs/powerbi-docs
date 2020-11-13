@@ -138,7 +138,7 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 | P1 | 8 | 4 | 25 | 4 | 30 | 6 |
 | P2 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3 | 32 | 16 | 100 | 16 | 120 | 24 |
-| P4 | 64 | 32 | 200 | 32 | 240 | 48 |
+| P4 <sup>[1](#limit)</sup>| 64 | 32 | 200 | 32 | 240 | 48 |
 | P5 <sup>[1](#limit)</sup>| 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 

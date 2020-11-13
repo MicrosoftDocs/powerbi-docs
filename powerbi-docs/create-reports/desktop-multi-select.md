@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/12/2020
+ms.date: 11/11/2020
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -52,7 +52,7 @@ For more information on this feature, see the [blog post about the release of th
 
 There are a few limitations and considerations for multi-selecting data points within a visual:
 
-* Line, area, scatter chart, and treemap support lasso select
+* Line, area, scatter chart, treemap, and maps support lasso select
 * The maximum number of data points you can select at once is 300
 * When viewing a report in the Power BI service, rectangle select is enabled only if the lasso select feature was enabled when the report was saved and published
 
