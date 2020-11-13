@@ -92,7 +92,7 @@ The examples below show where you can find the IDs you need in the URLs of the i
 
 * To find a 36-character report object ID, navigate to the specific report you want to link to in the Power BI service and find the necessary IDs as illustrated below. Note that this example contains a reference to a specific report page and a specific bookmark.
 
-    https<nolink>://app.powerbi.com/groups/me/reports/**&lt;report-object-id&gt;**/**ReportSection&lt;num&gt;**?bookmarkGuid=**&lt;org-object-id&gt;**
+    https<nolink>://app.powerbi.com/groups/me/reports/**&lt;report-object-id&gt;**/**ReportSection&lt;num&gt;**?bookmarkGuid=**&lt;bookmark-id&gt;**
 
 * To link to an item in a workspace other than My Workspace, you need to extract the group object ID. This example shows a report from a workspace other than My Workspace.
 
@@ -116,11 +116,11 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
     mspbi://app/OpenDashboard?DashboardObjectId=**<36-character-dashboard-id>**
 
-    To get the 36-character dashboard object id, navigate to the specific dashboard in the Power BI service and extract it from the URL. For example, see the highlighted section of this URL from the Power BI service:
+    To get the 36-character dashboard object id, navigate to the specific dashboard in the Power BI service and extract it from the URL. For example, the dashboard object id is highlighted in the following URL from the Power BI service:
 
     https<nolink>://app.powerbi.com/groups/me/dashboards/**&lt;61b7e871-cb98-48ed-bddc-6572c921e270&gt;**
 
-    If the dashboard is not in My Workspace, you need to add the group object ID as well, either before or after the dashboard ID:
+    If the dashboard is not in My Workspace, you need to add the group object ID as well, either before or after the dashboard ID. The deep link shown below has the group object id parameter added after the dashboard object id:
 
     mspbi://app/OpenDashboard?DashboardObjectId=**e684af3a-9e7f-44ee-b679-b9a1c59b5d60**&GroupObjectId=**8cc900cc-7339-467f-8900-fec82d748248**</code>
 
@@ -134,7 +134,7 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
     To find the 36-character dashboard and tile object IDs, navigate to the specific dashboard in the Power BI service and open the tile in focus mode. In the example below the dashboard and tile IDs are highlighted.
 
-    https<nolink>://powerbi.com/groups/me/dashboards/**3784f99f-b460-4d5e-b86c-b6d8f7ec54b7**/tiles/**565f9740-5131-4648-87f2-f79c4cf9c5f5**/infocus
+    https<nolink>://app.powerbi.com/groups/me/dashboards/**3784f99f-b460-4d5e-b86c-b6d8f7ec54b7**/tiles/**565f9740-5131-4648-87f2-f79c4cf9c5f5**/infocus
 
     To open to this tile directly then, the link would be:
 
@@ -152,9 +152,9 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
     To find the 36-character report object id, navigate to the specific report in the Power BI service. The following URL from the Power BI service illustrates the report ID you would need to extract.
 
-    https<nolink>://powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**
+    https<nolink>://app.powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**
 
-    If the report is not in My Workspace, you need to add **&GroupObjectId=<36-character-group-id>** as well, either before or after the report ID. For example,
+    If the report is not in My Workspace, you need to add **&GroupObjectId=<36-character-group-id>** as well, either before or after the report ID. For example, in this case the deep link would be:
 
     mspbi://app/OpenReport?ReportObjectId=**e684af3a-9e7f-44ee-b679-b9a1c59b5d60**&GroupObjectId=**8cc900cc-7339-467f-8900-fec82d748248**
 
@@ -168,7 +168,7 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
     The report page is called **ReportSection**, followed by a number. Again, to find the values you need, open the report in the Power BI service, navigate to the specific report page, and extract the values you need from the URL. For example, the highlighted sections of this URL represent the values you would need to open to a specific report page:
 
-    https<nolink>://powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**/**ReportSection11**</code>
+    https<nolink>://app.powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**/**ReportSection11**</code>
 
 * **Open in full-screen mode (Windows devices only)**
 
@@ -180,9 +180,9 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
     You can also add context to the string. Then, if you need to contact us, we can use that context to filter our data to find what is relevant to your app. To add context, add the parameter **context=&lt;app-name&gt;** to the link:
 
-    For example, see the highlighted section of this URL: 
+    For example, the following example shows a link that includes a context parameter: 
 
-    https<nolink>://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/&**context=SlackDeepLink**
+    mspbi://app/OpenReport?ReportObjectId=**e684af3a-9e7f-44ee-b679-b9a1c59b5d60**&GroupObjectId=**8cc900cc-7339-467f-8900-fec82d748248**&**context=SlackDeepLink**
 
 ## Use links inside Power BI
 
