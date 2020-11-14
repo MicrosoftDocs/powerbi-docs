@@ -1,5 +1,5 @@
 ---
-title: Download a report from the Power BI service to Power BI Desktop (Preview)
+title: Download a report from the Power BI service to Power BI Desktop (preview)
 description: Download a report from the Power BI service to a Power BI Desktop file
 author: maggiesMSFT
 ms.reviewer: ''
@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 07/14/2020
+ms.date: 11/14/2020
 ms.author: maggies
 
 LocalizationGroup: Reports
 ---
-# Download a report from the Power BI service to Power BI Desktop (Preview)
+# Download a report from the Power BI service to Power BI Desktop (preview)
       
 In Power BI Desktop, you can publish a report (a *.pbix* file) from your local computer to the Power BI service. Power BI reports can go the other direction as well: You can download a report from the Power BI service to Power BI Desktop. The extension for a Power BI report, in either case, is .pbix.
 
@@ -50,7 +50,7 @@ There are a few important considerations and limitations associated with downloa
 * The report must have been created by using Power BI Desktop and *published* to the Power BI service, or the .pbix file must have been *uploaded* to the Power BI service.
 * Reports must be published or updated after November 23, 2016. Reports published earlier aren't downloadable.
 * This feature won't work with reports and content packs originally created in the Power BI service.
-* Always use the latest version of Power BI Desktop when you open downloaded files. Downloaded .pbix files might not open in non-current versions of Power BI Desktop.
+* Always use the latest version of Power BI Desktop when you open downloaded files. Downloaded .pbix files might not open in non-current versions of Power BI Desktop. For example, you cannot open downloaded .pbix files using a Desktop version that does not support information protection.
 * If your administrator has turned off the ability to download data, this feature won't be visible in the Power BI service.
 * Datasets with incremental refresh can't be downloaded to a .pbix file.
 * Datasets enabled for [large models](../admin/service-premium-large-models.md) can't be downloaded to a .pbix file.
