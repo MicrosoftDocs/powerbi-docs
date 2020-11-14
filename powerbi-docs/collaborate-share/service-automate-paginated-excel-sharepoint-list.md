@@ -16,7 +16,7 @@ LocalizationGroup: Get started
 
 With [Power Automate](/power-automate/getting-started), you can automate exporting and distributing Power BI paginated reports to a variety of supported formats and scenarios. In this article, you use a Power Automate template to automate setting up recurring exports of single or multiple paginated reports. You export them in a desired format for each row in an Excel Online table or SharePoint Online list. You can distribute the exported paginated report to OneDrive for Business or a SharePoint site, or email it via Office 365 Outlook.
 
-:::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/paginated-report-excel-template-excel-online.png" alt-text="Export a paginated report by using an Excel Online table.":::
+:::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-overview.png" alt-text="Export a paginated report by using an Excel Online table.":::
 
 Each row in your Excel Online table or SharePoint Online list can represent a single user to receive a paginated report on a subscription basis. Or instead, each row can represent a unique paginated report you wish to distribute. Your table or list requires a column that specifies how to distribute a report, whether OneDrive, SharePoint, or Outlook. The Power Automate flow uses this column in its Switch statement.
 
