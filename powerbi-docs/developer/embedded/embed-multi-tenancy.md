@@ -241,7 +241,7 @@ As end users edit or create reports, they can use the production multi-tenant da
 
 * Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](../../admin/service-premium-what-is.md).
 * For the recommended dataset size for each SKU, reference [Premium large datasets](../../admin/service-premium-what-is.md#large-datasets).
-* The max dataset size in a dedicated capacity is 10 GB.
+* The max dataset size in a capacity is 10 GB.
 * The number of scheduled refreshes for an *import mode* dataset in a day is 48.
 * The time between scheduled refreshes for an *import mode* dataset is 30 minutes.
 * For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](../../admin/service-premium-what-is.md#capacity-nodes).

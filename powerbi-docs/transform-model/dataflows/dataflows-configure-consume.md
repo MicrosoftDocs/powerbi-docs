@@ -57,7 +57,7 @@ Dataflows can be also set to refresh incrementally. To do so, select the dataflo
 
 ![dataflow incremental refresh](media/dataflows-configure-consume/dataflow-created-entity.png)
 
-Setting incremental refresh adds parameters to the dataflow to specify the date range. For detailed information on how to set up incremental refresh, see the [incremental refresh in Power Query](https://docs.microsoft.com/power-query/dataflows/incremental-refresh) article.
+Setting incremental refresh adds parameters to the dataflow to specify the date range. For detailed information on how to set up incremental refresh, see the [incremental refresh in Power Query](/power-query/dataflows/incremental-refresh) article.
 
 There are some circumstances under which you should not set incremental refresh:
 
@@ -105,3 +105,4 @@ The following articles provide more information about dataflows and Power BI:
 * [Premium features of dataflows](dataflows-premium-features.md)
 * [AI with dataflows](dataflows-machine-learning-integration.md)
 * [Dataflows limitations and considerations](dataflows-features-limitations.md)
+* [Dataflows best practices](dataflows-best-practices.md)

@@ -79,6 +79,8 @@
         href: access-dataset-odata.md
       - name: "Change data source connection strings with PowerShell"
         href: connect-data-source-apis.md
+      - name: "Change data source connection strings with PowerShell, pre-October 2020"
+        href: connect-data-source-apis-pre-oct-2020.md
       - name: "Configure scheduled refresh"
         href: configure-scheduled-refresh.md
       - name: "Add comments to a report"

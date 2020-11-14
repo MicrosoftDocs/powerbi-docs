@@ -1,8 +1,8 @@
 ---
 title: Basic Area chart
 description: 'Basic Area chart.'
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: 'mihart'
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop

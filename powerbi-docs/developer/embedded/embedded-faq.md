@@ -112,7 +112,7 @@ Yes, there are Powershell cmdlets and Azure Resource Manager REST APIs you can u
 * [Rest APIs](/rest/api/power-bi-embedded/) 
 * [Powershell cmdlets](/powershell/module/azurerm.powerbiembedded/)
 
-### What is the PBI Embedded dedicated capacity role in a PBI Embedded solution?
+### What is the PBI Embedded capacity role in a PBI Embedded solution?
 
 To [promote your solution to production](embed-sample-for-customers.md#move-to-production), you need to assign the Power BI content (workspace) your application uses to a Power BI Embedded (A SKU) capacity.
 
@@ -273,7 +273,7 @@ There's no special Azure pricing for non-profit and educational entities.
 
 2. Start with the **Power BI Embedded** application POC that uses Power BI content.
 
-3. Once you are ready for production, purchase a **Power BI Embedded** dedicated capacity and assign your Power BI content (workspace) to that capacity.
+3. Once you are ready for production, purchase a **Power BI Embedded** capacity and assign your Power BI content (workspace) to that capacity.
 
     > [!Note]
     > You can continue to use **Power BI Workspace Collection** while building in parallel with a **Power BI Embedded** solution. Once you are ready, you can move your customer to the new **Power BI Embedded** solution and retire the **Power BI Workspace Collection** solution.
@@ -307,12 +307,12 @@ Some of the features are:
 
 ### What is the Embedding setup tool?
 
-The [Embedding setup tool](https://aka.ms/embedsetup) allows you to quickly get started and download a sample application to begin embedding with Power BI.
+The [Embedding setup tool](https://app.powerbi.com/embedsetup) allows you to quickly get started and download a sample application to begin embedding with Power BI.
 
 ### Which solution should I choose?
 
-* [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. Run the [Embed for your customers](https://aka.ms/embedsetup/AppOwnsData) solution.
-* [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service. Run the [Embed for your organization](https://aka.ms/embedsetup/UserOwnsData) solution.
+* [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. In the [Embedding setup tool](https://app.powerbi.com/embedsetup), run the *Embed for your customers* solution.
+* [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service. In the [Embedding setup tool](https://app.powerbi.com/embedsetup), run the *Embed for your organization* solution.
 
 ### I've downloaded the sample app, which solution do I choose?
 

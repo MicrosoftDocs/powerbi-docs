@@ -62,7 +62,7 @@ This step assumes you have the data you want to score with your Azure ML model i
 
 ### Create a dataflow
 
-To create the entities in your dataflow, sign in to the Power BI service and navigate to a workspace on your dedicated capacity that has the AI preview enabled.
+To create the entities in your dataflow, sign in to the Power BI service and navigate to a workspace on your capacity that has the AI preview enabled.
 
 If you don't already have a workspace, you can create one by selecting **Workspaces** in the left menu, and then select **Create workspace** in the panel at the bottom.  This opens a panel to enter the workspace details. Enter a workspace name, and then select **Save**.
 
@@ -177,4 +177,4 @@ In this tutorial, you created a simple experiment using Azure Machine Learning S
 - Create a dataflow
 - Apply insights from the Azure ML model to the dataflow
 
-For more information about Azure Machine Learning integration in Power BI, see [Azure Machine Learning integration in Power BI (Preview)](../transform-model/service-machine-learning-integration.md).
+For more information about Azure Machine Learning integration in Power BI, see [Azure Machine Learning integration in Power BI (Preview)](../transform-model/dataflows/dataflows-machine-learning-integration.md).

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/15/2020
+ms.date: 11/11/2020
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -34,38 +34,16 @@ When reading a report, users can hover over any visual to see a read-only list o
 
 ![List of filters for a visual](media/power-bi-report-filter/power-bi-filter-visual.png)
 
-## Turn on new filters in existing reports 
-
-The new filter experience is on by default for new reports. You can enable the new experience for existing reports in Power BI Desktop or the Power BI service.
-
-### Turn on new filters for an existing report in Power BI Desktop
-
-1. In Power BI Desktop in an existing report, select **File** > **Options and Settings** > **Options**
-2. In the nav pane, under **Current file**, select **Report settings**.
-3. Under **Filtering experience**, select **Enable the updated Filters pane, and show filters in the visual header for this report**.
-
-### Turn on new filters for an existing report in the service
-
-If you've turned on the **New look** in the Power BI service ![New look turned on](media/power-bi-report-filter/power-bi-new-look-on.png), the new filter experience is turned on automatically. Read more about the [new look in the Power BI service](../consumer/service-new-look.md).
-
-If you haven't turned on the new look, you can still see the new filter experience by following these steps.
-
-1. In the Power BI service, open the content list for a workspace.
-2. Find the report you want to enable, select **More options (...)**, then select **Settings** for that report.
-
-    ![Report Settings](media/power-bi-report-filter/power-bi-filter-options.png)
-
-3. Under **Filtering experience**, select **Enable the updated Filters pane, and show filters in the visual header for this report**.
-
-    ![Enable the updated filters pane](media/power-bi-report-filter/power-bi-service-filter-enable.png)
+Read about [how report readers use filters](../consumer/end-user-report-filter.md) in your report.
 
 ## View filters for a visual in Reading mode
 
-In Reading mode, hover over the filter icon for a visual to see a pop-up filter list with all the filters, slicers, and so on, affecting that visual. The formatting of the pop-up filter list is the same as the Filters pane formatting. 
+In Reading mode, hover over the filter icon for a visual to see a pop-up filter list with all the filters, slicers, and so on, affecting that visual. The formatting of the pop-up filter list is the same as the Filters pane formatting.
 
 ![Filters affecting a visual](media/power-bi-report-filter/power-bi-filter-per-visual.png)
 
-Here are the types of filters this view shows: 
+Here are the types of filters this view shows:
+
 - Basic filters
 - Slicers
 - Cross-highlighting 
@@ -76,6 +54,8 @@ Here are the types of filters this view shows:
 - Sync-slicers
 - Include/Exclude filters
 - Filters passed through a URL
+
+Read more about [interacting with filters in reading mode](../consumer/end-user-report-filter.md).
 
 ## Build the Filters pane
 
@@ -244,23 +224,31 @@ You can also format the search box, just as you can format the other elements of
 
 ![Format the search box](media/power-bi-report-filter/power-bi-filter-format-search.png)
 
-While this Filters pane search feature will be on by default, you can also choose to turn it on or off by selecting **Enable search for Filters pane** in the Report settings of the Options dialog.
+While this Filters pane search feature is on by default, you can also choose to turn it on or off by selecting **Enable search for Filters pane** in the **Report** settings of the **Options** dialog.
 
 ![Turn search on or off](media/power-bi-report-filter/power-bi-enable-search-filter.png)
 
 ## Restrict changes to filter type
 
-Under the **Filtering experience** section of the report settings, you have an option to control if users can change the filter type.
+Under the **Filtering experience** section of **Report** settings, you have an option to control if users can change the filter type.
 
 ![Restrict changing filter type](media/power-bi-report-filter/power-bi-enable-change-filter-type.png)
 
-## Apply filters button (preview)
+## Allow saving filters
+
+By default, your report readers can save filters for your report. You can choose to not allow them to save filters.
+
+- Also in **Report** settings of the **Options** dialog, under **Persistent filters**, select **Don't allow end users to save filters on this report**.
+
+    :::image type="content" source="media/power-bi-report-filter/power-bi-persistent-filters.png" alt-text="Screenshot of Don't allow end users to save filters on this report.":::
+
+## Apply filters button
 
 You can add a single **Apply** button to the filter pane, allowing you and your end-users to apply all filter modifications at once. Having this button can be useful if you want to defer applying filter changes. You only have to wait once, after you're ready to apply all the filter changes to the report or visuals.
 
 :::image type="content" source="media/power-bi-report-filter/apply-filter-button.png" alt-text="Apply filter button":::
 
-### Turn on Apply
+### Turn on the Apply button
 
 You can set this feature at the report level. However, the feature is off by default.
 
@@ -268,12 +256,13 @@ You can set this feature at the report level. However, the feature is off by def
 
 1. Select **Add a single Apply button to the filter pane to apply changes at once**.
 
-    :::image type="content" source="media/power-bi-report-filter/turn-on-apply-filter-button.png" alt-text="Turn on Apply filter button":::
+    :::image type="content" source="media/power-bi-report-filter/apply-all-filters.png" alt-text="Turn on Apply filter button":::
 
 ### Format the Apply button
 
 Currently, you can control some of the formatting for the **Apply** text for the button. In the **Filter pane** section of the **Format** pane, set these options:
 
+- **Checkbox and Apply color** controls fill color. 
 - **Font and icon color** controls text color.
 - **Header text size** controls text size.
 - **Font family** controls font.

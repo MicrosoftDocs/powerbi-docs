@@ -85,6 +85,8 @@
       items: 
       - name: Report Builder in Power BI
         href: ../paginated-reports/report-builder-power-bi.md
+      - name: Sample Power BI paginated reports
+        href: ../paginated-reports/paginated-reports-samples.md
       - name: Get around Report Design View
         href: ../paginated-reports/paginated-reports-report-design-view.md
       - name: Planning a report
@@ -121,6 +123,8 @@
     items: 
     - name: Power BI reports
       items: 
+      - name: "Create a report in the service"
+        href: service-report-create-new.md
       - name: "Enable automatic page refresh"
         href: desktop-automatic-page-refresh.md
       - name: "Examine report elements with Performance Analyzer"
@@ -205,8 +209,12 @@
         href: desktop-grouping-visuals.md      
       - name: "Create report templates"
         href: desktop-templates.md      
-      - name: "Create a report from a dataset"
-        href: service-report-create-new.md
+      - name: "Change report settings"
+        href: power-bi-report-settings.md
+      - name: "Feature reports on others' Home pages"
+        href: ../collaborate-share/service-featured-content.md
+      - name: "Let consumers customize visuals (Preview)"
+        href: power-bi-personalize-visuals.md
       - name: "Save a report"
         href: service-report-save.md
       - name: "Interact with a report in Editing view"
@@ -269,6 +277,8 @@
         href: ../visuals/power-bi-visualization-decomposition-tree.md
       - name: "Smart narratives"
         href: ../visuals/power-bi-visualization-smart-narrative.md
+      - name: "Anomaly detection"
+        href: ../visuals/power-bi-visualization-anomaly-detection.md
       - name: "Doughnut charts"
         href: ../visuals/power-bi-visualization-doughnut-charts.md
       - name: "Filled maps (choropleths)"

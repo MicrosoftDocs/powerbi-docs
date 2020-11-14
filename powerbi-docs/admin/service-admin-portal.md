@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/25/2020
+ms.date: 10/22/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -134,14 +134,12 @@ To use audit logs, make sure the [**Create audit logs for internal activity audi
 > [!NOTE]
 > Tenant settings that control the availability of features in the Power BI user interface can help to establish governance policies, but they're not a security measure. For example, the **Export data** setting doesn't restrict the permissions of a Power BI user on a dataset. Power BI users with read access to a dataset have the permission to query this dataset and might be able to persist the results without using the **Export data** feature in the Power BI user interface.
 
-The following image shows several settings on the **Tenant settings** tab.
-
-![Tenant settings](media/service-admin-portal/powerbi-admin-tenant-settings-2.png)
+The following sections elaborate on the settings on the **Tenant settings** tab.
 
 > [!NOTE]
 > It can take up to 15 minutes for a setting change to take effect for everyone in your organization.
 
-Settings can have one of three states:
+Many of the settings can have one of three states:
 
 * **Disabled for the entire organization**: No one in your organization can use this feature.
 
@@ -162,6 +160,12 @@ Settings can have one of three states:
     ![Enable except setting](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
 
 The next few sections provide an overview of the different types of tenant settings.
+
+## Tenant-wide new look settings
+
+When the **New look** option is disabled, users in this organization can toggle on and off the new look of Power BI. When you enable the **New look** option, *all* users in this organization see the modern controls of the new look of Power BI all the time. They can no longer toggle off the new look. The New look option is enabled by default.
+
+:::image type="content" source="media/service-admin-portal/admin-portal-new-look-disable.png" alt-text="Screenshot of the Disable New Look option in the admin portal.":::
 
 ## Help and support settings
 
@@ -468,7 +472,7 @@ Web apps registered in Azure Active Directory (Azure AD) will use an assigned se
 
 ### Create and use dataflows
 
-Users in the organization can create and use dataflows. For an overview of dataflows, see [Self-service data prep in Power BI](../transform-model/service-dataflows-overview.md). To enable dataflows in a Premium capacity, see [Configure workloads](service-admin-premium-workloads.md).
+Users in the organization can create and use dataflows. For an overview of dataflows, see [Self-service data prep in Power BI](../transform-model/dataflows/dataflows-introduction-self-service.md). To enable dataflows in a Premium capacity, see [Configure workloads](service-admin-premium-workloads.md).
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
@@ -525,7 +529,7 @@ All the Power BI visuals admin settings, including Power BI visuals tenant setti
 
 ### Tenant-level storage (preview)
 
-By default, data used with Power BI is stored in internal storage provided by Power BI. With the integration of dataflows and Azure Data Lake Storage Gen2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. For more information, see [Dataflows and Azure Data Lake integration (Preview)](../transform-model/service-dataflows-azure-data-lake-integration.md).
+By default, data used with Power BI is stored in internal storage provided by Power BI. With the integration of dataflows and Azure Data Lake Storage Gen2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. For more information, see [Dataflows and Azure Data Lake integration (Preview)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md).
 
 ### Workspace-level storage permissions (preview)
 

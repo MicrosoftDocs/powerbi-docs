@@ -25,7 +25,7 @@ You may be familiar with each piece as existing Power BI features. When building
 <a name="queries"></a>
 
 ## Queries
-For template apps, queries developed in Power BI Desktop are used to connect to your data source and import data. These queries are required to return a consistent schema and are supported for Scheduled Data refresh (DirectQuery isn't supported).
+For template apps, queries developed in Power BI Desktop are used to connect to your data source and import data. These queries are required to return a consistent schema and are supported for Scheduled Data refresh.
 
 ### Connect to your API
 To get started, you need to connect to your API from Power BI Desktop to start building your queries.
@@ -136,7 +136,7 @@ After publishing the template app on AppSource, consider creating a download lin
 * AppSource download page - can be viewed by publicly, get the link from your AppSource page.
 * Power BI - Can be viewed by a Power BI user.
 
-In order to redirect a user to the app's download link in Power BI see the following code example: [GitHub repo](https://github.com/microsoft/Template-apps-examples/tree/master/src).
+In order to redirect a user to the app's download link in Power BI see the following code example: [GitHub repo](https://github.com/microsoft/Template-apps-examples).
 
 [![App Download link](media/service-template-apps-tips/service-template-apps-tips-download.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
 
