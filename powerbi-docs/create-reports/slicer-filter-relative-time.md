@@ -85,10 +85,7 @@ When a filter is applied to the page or report level, all visuals on that page o
 The following limitations and considerations currently apply to the relative time slicer and filter.
 
 - **Time zone considerations**: Data models in Power BI don't include time zone info. The models can store times, but there's no indication of the time zone they're in. The slicer and filter are always based on the time in UTC. If you set up a filter in a report and send it to a colleague in a different time zone, you both see the same data. Unless you or your colleague are in the UTC time zone, you both must account for the time offset you’ll experience. Use the Query Editor to convert data captured in a local time zone to UTC.
-- This new filter type is supported in Power BI Desktop, the Power BI service, Power BI Embedded, and the Power BI mobile apps. However, there are a few known support limitations:
-
-    - It isn't supported through the Embed API.
-    - It isn't supported for Publish to web.
+- This new filter type is supported in Power BI Desktop, the Power BI service, Power BI Embedded, and the Power BI mobile apps. However, it isn't supported for Publish to web.
 
 - **Query caching**: We use the client cache. Say you specify "last 1 minute," then "last 5 minutes," then back to "last 1 minute." At that point, you see the same results as when it was first run, unless you refresh the page or the page automatically refreshes.
 
