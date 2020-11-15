@@ -230,7 +230,7 @@ To change your Azure AD app permissions programmatically, you'll need to get the
 
 # [C#](#tab/CSharp)
 
-You can also change your Azure AD app permissions using C#. This method can be useful if you're considering to automate some of your processes.
+You can also change your Azure AD app permissions using C#. For more information see the [oAuth2PermissionGrant](graph/api/oauth2permissiongrant-get) API. This method can be useful if you're considering to automate some of your processes.
 
 For more information regarding the HTTP requests, refer to the [HTTP tab](register-app.md?tabs=customers%2CHTTP#change-your-azure-ad-apps-permissions).
 
@@ -262,6 +262,12 @@ currentState.createdServicePrincipal = await graphClient.ServicePrincipals
     .Request()
     .AddAsync(servicePrincipal);
 
+GraphServiceClient graphClient = new GraphServiceClient(authProvider);
+
+// Use oAuth2PermissionGrant to change permissions
+var oAuth2PermissionGrant = await graphClient.Oauth2PermissionGrants["{id}"]
+               .Request()
+               .GetAsync();
 ```
 
 ---
