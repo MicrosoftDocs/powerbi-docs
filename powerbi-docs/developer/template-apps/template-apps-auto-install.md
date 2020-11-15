@@ -31,7 +31,7 @@ This article has two main sections:
 
 ## How to create a pre-configured template app install experience
 
-This section describes the prerequisites for providing a pre-configured template app install experience, and the main steps and APIs you need.
+This section describes the prerequisites for providing a preconfigured template app installation experience, and the main steps and APIs you need.
 
 The basic flow of what a preconfigured template app install application does when the customer launches it by clicking the link in your portal is as follows:
 
@@ -50,7 +50,7 @@ The basic flow of what a preconfigured template app install application does whe
 
 ### Prerequisites
 
-Before getting started, you need to have:
+To provide a preconfigured installation experience for your template app, the following prerequisites are required:
 
 * A **Power BI Pro license**. If you're not signed up for Power BI Pro, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
