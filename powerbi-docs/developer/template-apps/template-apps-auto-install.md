@@ -1,6 +1,6 @@
 ---
-title: Automatically install and configure template apps for your customers
-description: Learn how to install and configure template apps for your customers.
+title: Automatically configure template app installation for your customers
+description: Learn about automating the configuration of template app installation.
 author: PaulInbar
 ms.author: painbar
 
@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 10/21/2020
-#Customer intent: As an ISV developer, I want to develop a mechanism whereby my customers can click a link that automatically installs and configures a template app that I own.
+#Customer intent: As an ISV developer, I want to automate configuration of the template app installation process for my customers.
 ---
 
 # Automate configuration of a template app installation
@@ -23,12 +23,7 @@ The customer experience when clicking a link that launches a template app precon
 
 ![Illustration of user experience with auto install application.](media/template-apps-auto-install/highlevelflow.png)
 
-This article has two main sections:
-* The first section, [How to create an application for pre-configured template app installation](#how-to-create-an-application-for-pre-configured-template-app-installation), introduces the steps you need to go through in order to create a template app preconfiguration application such as the one described above, and the relevant APIs.
-* If you prefer to just dive in and get started, you can skip to the [tutorial](#tutorial-create-a-short-application-using-our-sample-application) where you create an application using a simple sample application we've prepared that uses an Azure Function.
-
-
-This section describes the basic flow, prerequisites for automating the configuration of the template app installation, and the main steps and APIs you need.
+This article describes the basic flow, prerequisites for automating the configuration of the template app installation, and the main steps and APIs you need. If you prefer to just dive in and get started, you can skip to the [tutorial](#tutorial-create-a-short-application-using-our-sample-application) where you create an application using a simple sample application we've prepared that uses an Azure Function.
 
 ## Basic flow
 
@@ -69,7 +64,7 @@ To provide a preconfigured installation experience for your template app, the fo
 
 Even though the steps to install and configure your template app for your customers are done with [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the codes examples described below are made with the **.NET SDK**.
 
-###Step 1: Create a Power BI client object 
+## Step 1: Create a Power BI client object 
 
 Using Power BI REST APIs requires you to get an **access token** for your [service principal](../embedded/embed-service-principal.md) from **Azure AD**. You're required to get an [Azure AD access token](../embedded/get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) for your Power BI application before you make calls to the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/).
 To create the Power BI Client with your **access token**, you need to create your Power BI client object, which allows you to interact with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/). You create the Power BI client object by wrapping the **AccessToken** with a ***Microsoft.Rest.TokenCredentials*** object.
@@ -88,7 +83,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 }
 ```
 
-### Step 2: Create an install ticket
+## Step 2: Create an install ticket
 
 Create an install ticket, which is used for when redirecting your users to Power BI. The API used for this operation is the **CreateInstallTicket** API.
 * [Template Apps CreateInstallTicket](https://docs.microsoft.com/rest/api/power-bi/templateapps/createinstallticket)
@@ -127,7 +122,7 @@ var request = new CreateInstallTicketRequest()
 InstallTicket ticketResponse = await client.TemplateApps.CreateInstallTicketAsync(request);
 ```
 
-### Step 3: Redirect users to Power BI with the ticket
+## Step 3: Redirect users to Power BI with the ticket
 
 Once you have created an install ticket, you use it to redirect your users to Power BI to continue with the template app install and configuration. This is done by using a ```POST``` method redirection to the template app's install URL, with the install ticket in its request body.
 
