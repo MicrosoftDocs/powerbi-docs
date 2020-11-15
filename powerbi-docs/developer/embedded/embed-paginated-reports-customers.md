@@ -36,7 +36,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 > [!IMPORTANT]
 > * You must use a **service principal**. Master user is not supported.
->* [Premium Per User (PPU)](../../admin/service-premium-per-user-faq) is not supported. You can use PPU to experiment with the solution, but you'll not be able to [move to production](embed-sample-for-customers.md#move-to-production).
+>* [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) is not supported. You can use PPU to experiment with the solution, but you'll not be able to [move to production](embed-sample-for-customers.md#move-to-production).
 > * Datasources that require single sign-on (SSO), are not supported. For a list of supported datasets and their authentication methods, see [Supported data sources for Power BI paginated reports](../../paginated-reports/paginated-reports-data-sources.md). 
 > * Power BI dataset is not supported as a [datasource](../../connect-data/service-get-data.md).
 
