@@ -11,9 +11,7 @@ ms.date: 10/21/2020
 #Customer intent: As an ISV developer, I want to develop a mechanism whereby my customers can click a link that automatically installs and configures a template app that I own.
 ---
 
-# Preconfigured template app installation
-
-## Overview
+# Automate configuration of a template app installation
 
 Template apps are a great way for customers to start getting insights from their data. Template apps get them up and running quickly by connecting them to their data and providing them with prebuilt reports that they can then customize if they so desire.
 
@@ -29,9 +27,8 @@ This article has two main sections:
 * The first section, [How to create an application for pre-configured template app installation](#how-to-create-an-application-for-pre-configured-template-app-installation), introduces the steps you need to go through in order to create a template app preconfiguration application such as the one described above, and the relevant APIs.
 * If you prefer to just dive in and get started, you can skip to the [tutorial](#tutorial-create-a-short-application-using-our-sample-application) where you create an application using a simple sample application we've prepared that uses an Azure Function.
 
-## How to create a pre-configured template app install experience
 
-This section describes the prerequisites for providing a preconfigured template app installation experience, and the main steps and APIs you need.
+This section describes the basic flow, prerequisites for automating the configuration of the template app installation, and the main steps and APIs you need.
 
 ## Basic flow
 
@@ -50,7 +47,7 @@ The basic flow of what a preconfigured template app install application does whe
 >[!Note]
 >While parameter values are configured by the ISV when creating the install ticket, any data source related credentials need to be configured by the user in the final install stages. This is done to ensure a secure connection between the user and the template app data sources without risk of credential exposure to a 3rd party.
 
-### Prerequisites
+## Prerequisites
 
 To provide a preconfigured installation experience for your template app, the following prerequisites are required:
 
@@ -68,11 +65,11 @@ To provide a preconfigured installation experience for your template app, the fo
     >[!NOTE]
     >You can test your preconfigured install application on your template app if the template app is ready for installation, even if it isn't publicly available on AppSource yet. However, for users outside your tenant to be able to use the automated install application to install your template app, the template app must be publicly available in the [Power BI Apps marketplace](https://app.powerbi.com/getdata/services). So before distributing your template app using the automated install application you're creating, be sure to publish it to the [Partner Center](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
 
-### APIs
+## APIs
 
 Even though the steps to install and configure your template app for your customers are done with [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the codes examples described below are made with the **.NET SDK**.
 
-#### Step 1: Create a Power BI client object 
+###Step 1: Create a Power BI client object 
 
 Using Power BI REST APIs requires you to get an **access token** for your [service principal](../embedded/embed-service-principal.md) from **Azure AD**. You're required to get an [Azure AD access token](../embedded/get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) for your Power BI application before you make calls to the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/).
 To create the Power BI Client with your **access token**, you need to create your Power BI client object, which allows you to interact with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/). You create the Power BI client object by wrapping the **AccessToken** with a ***Microsoft.Rest.TokenCredentials*** object.
@@ -91,7 +88,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 }
 ```
 
-#### Step 2: Create an install ticket
+### Step 2: Create an install ticket
 
 Create an install ticket, which is used for when redirecting your users to Power BI. The API used for this operation is the **CreateInstallTicket** API.
 * [Template Apps CreateInstallTicket](https://docs.microsoft.com/rest/api/power-bi/templateapps/createinstallticket)
@@ -130,7 +127,7 @@ var request = new CreateInstallTicketRequest()
 InstallTicket ticketResponse = await client.TemplateApps.CreateInstallTicketAsync(request);
 ```
 
-#### Step 3: Redirect users to Power BI with the ticket
+### Step 3: Redirect users to Power BI with the ticket
 
 Once you have created an install ticket, you use it to redirect your users to Power BI to continue with the template app install and configuration. This is done by using a ```POST``` method redirection to the template app's install URL, with the install ticket in its request body.
 
@@ -173,8 +170,6 @@ public static string RedirectWithData(string url, string ticket)
 
 >[!Note]
 >While there are various methods of using ```POST``` browser redirects, you should always use the most secure method, which depends on your service needs and restrictions. Remember that some forms of insecure redirection can result in exposing your users or service to security issues.
-
-
 
 ## Next steps
 
