@@ -38,7 +38,7 @@
     items:
     - name: "Configure credentials"
       href: configure-credentials.md
-      - name: "Automate template app configuration"
+    - name: "Automate template app configuration"
       href: ../template-apps/template-apps-auto-install.md
   - name: Reference
     items:
