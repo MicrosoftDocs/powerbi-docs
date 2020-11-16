@@ -4,10 +4,10 @@ description: Learn about automating the configuration of template app installati
 author: PaulInbar
 ms.author: painbar
 
-ms.topic: tutorial
+ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 10/21/2020
+ms.date: 11/16/2020
 #Customer intent: As an ISV developer, I want to automate configuration of the template app installation process for my customers.
 ---
 
@@ -17,30 +17,30 @@ Template apps are a great way for customers to start getting insights from their
 
 Customers are not always familiar with the details of how to connect to their data, and having to provide these details when installing a template app can be a pain point for them.
 
-If you are a data services provider and have created a template app to help your customers get started with their data on your service, you can make it easier for them to install your template app by creating an application that pre-configures your template app's parameters for them. When the customer logs into your portal, they click a special link you've prepared. This launches your application, which then gathers the information it needs, preconfigures the template app parameters, and redirects the customer to their Power BI account where they can install the app. All they have to do there is click install, authenticate against their data source, and they're good to go! 
+If you are a data services provider and have created a template app to help your customers get started with their data on your service, you can make it easier for them to install your template app by automating the configuration of your template app's parameters. When the customer logs into your portal, they click a special link you've prepared. This launches the automation, which gathers the information it needs, preconfigures the template app parameters, and redirects the customer to their Power BI account where they can install the app. All they have to do there is click install, authenticate against their data source, and they're good to go! 
 
-The customer experience when clicking a link that launches a template app preconfiguration application is illustrated below. 
+This customer experience is illustrated below.
 
 ![Illustration of user experience with auto install application.](media/template-apps-auto-install/highlevelflow.png)
 
-This article describes the basic flow, prerequisites for automating the configuration of the template app installation, and the main steps and APIs you need. If you prefer to just dive in and get started, you can skip to the [tutorial](#tutorial-create-a-short-application-using-our-sample-application) where you create an application using a simple sample application we've prepared that uses an Azure Function.
+This article describes the basic flow, prerequisites, and main steps and APIs you need for automating template app parameter configuration. However, if you prefer to just dive in and get started, you can skip to the [tutorial](#tutorial-create-a-short-application-using-our-sample-application) where you create an application for automating template app parameter configuration using a simple sample application we've prepared that uses an Azure Function.
 
 ## Basic flow
 
-The basic flow of what a preconfigured template app install application does when the customer launches it by clicking the link in your portal is as follows:
+The basic flow of the automated configuration of a template app installation is as follows:
 
-1. The user logs in to the ISV's portal and clicks the supplied link. This initiates the flow. The ISV's portal prepares the user specific configuration at this stage.
+1. The user logs in to the ISV's portal and clicks the supplied link. This initiates the automated flow. The ISV's portal prepares the user specific configuration at this stage.
 
 2. The ISV acquires an **App-only** token based on a [service principal (app-only token)](../embedded/embed-service-principal.md), that is registered in the ISV's tenant.
 
 3. Using [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the ISV creates an **Install Ticket** which contains the user specific parameter configuration as prepared by the ISV.
 
-4. The ISV redirects the user to Power BI using a ```POST``` redirection method, containing the install ticket.
+4. The ISV redirects the user to Power BI using a ```POST``` redirection method that contains the install ticket.
 
 5. The user is redirected to their Power BI account with the install ticket and is prompted to install the template app. When the user clicks install, the template app is installed for them.
 
 >[!Note]
->While parameter values are configured by the ISV when creating the install ticket, any data source related credentials need to be configured by the user in the final install stages. This is done to ensure a secure connection between the user and the template app data sources without risk of credential exposure to a 3rd party.
+>While parameter values are configured by the ISV when creating the install ticket, data source related credentials are only supplied by the user in the final stages of the installation. This prevents them from being exposed to a third party, thus ensuring a secure connection between the user and the template app data sources.
 
 ## Prerequisites
 
@@ -60,9 +60,9 @@ To provide a preconfigured installation experience for your template app, the fo
     >[!NOTE]
     >You can test your preconfigured install application on your template app if the template app is ready for installation, even if it isn't publicly available on AppSource yet. However, for users outside your tenant to be able to use the automated install application to install your template app, the template app must be publicly available in the [Power BI Apps marketplace](https://app.powerbi.com/getdata/services). So before distributing your template app using the automated install application you're creating, be sure to publish it to the [Partner Center](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
 
-## APIs
+## Main steps and APIs
 
-Even though the steps to install and configure your template app for your customers are done with [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the codes examples described below are made with the **.NET SDK**.
+The main steps for automating the configuration of a template app installation, and the APIs you'll need, are described in the sections below. While most of the steps are done with [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the codes examples described below are made with the **.NET SDK**.
 
 ## Step 1: Create a Power BI client object 
 
