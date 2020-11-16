@@ -99,6 +99,8 @@
       items: 
       - name: "Create and use dataflows"
         href: ./dataflows/dataflows-create.md
+      - name: "Dataflows best practices"
+        href: ./dataflows/dataflows-best-practices.md        
       - name: "Use DirectQuery with dataflows in Power BI (preview)"
         href: ./dataflows/dataflows-configure-consume.md
       - name: "Use the enhanced compute engine with dataflows"
@@ -133,5 +135,7 @@
         href: ./dataflows/dataflows-machine-learning-integration.md
   - name: Reference
     items: 
+    - name: "Use the Field list in Power BI Desktop (preview)"
+      href: desktop-field-list.md
     - name: "Formula editor shortcuts"
       href: desktop-formula-editor.md

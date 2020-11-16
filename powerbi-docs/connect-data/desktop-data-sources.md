@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 10/12/2020
+ms.date: 11/11/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -86,7 +86,6 @@ The **Database** category provides the following data connections:
 * Snowflake
 * Essbase
 * AtScale cubes
-* BI Connector 
 * Data Virtuality LDW (Beta)
 * Denodo
 * Dremio
@@ -96,8 +95,10 @@ The **Database** category provides the following data connections:
 * Jethro (Beta)
 * Kyligence
 * Linkar PICK Style / MultiValue Databases (Beta)
-* MarkLogic
 * MariaDB (Beta)
+* MarkLogic
+* BI Connector
+* Actian (Beta)
 
 > [!NOTE]
 > Some database connectors require that you enable them by selecting **File > Options and settings > Options** then selecting **Preview Features** and enabling the connector. If you don't see some of the connectors mentioned above and want to use them, check your **Preview Features** settings. Also note that any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments.
@@ -137,8 +138,8 @@ The **Azure** category provides the following data connections:
 * Azure HDInsight Spark
 * HDInsight Interactive Query
 * Azure Cost Management
-* Azure Time Series Insights (Beta)
 * Azure Databricks
+* Azure Time Series Insights (Beta)
 
 
 The following image shows the **Get Data** window for **Azure**.
@@ -181,21 +182,21 @@ The **Online Services** category provides the following data connections:
 * Emigo Data Source
 * Entersoft Business Suite (Beta)
 * FactSet Analytics
-* Hexagon PPM Smart API
+* Palantir Foundry
+* Industrial App Store
 * Intune Data Warehouse (Beta)
 * Microsoft Graph Security (Beta)
+* Projectplace for Power BI
 * Product Insights (beta)
 * Quick Base
+* Spigit (Beta)
 * TeamDesk (Beta)
 * Webtrends Analytics (Beta)
 * Witivio (Beta)
 * Workplace Analytics (Beta)
 * Zoho Creator (Beta)
-* Palantir Foundry
-* Industrial App Store
-* Projectplace for Power BI
 * eWay-CRM (Beta)
-* Spigit (Beta)
+* Hexagon PPM Smart API
 
 
 The following image shows the **Get Data** window for **Online Services**.
@@ -213,7 +214,7 @@ The **Other** category provides the following data connections:
 * Microsoft Exchange
 * Hadoop File (HDFS)
 * Spark
-* Hive LLAP (Beta)
+* Hive LLAP
 * R script
 * Python script
 * ODBC
@@ -238,6 +239,8 @@ The **Other** category provides the following data connections:
 * Vena (Beta)
 * Vessel Insight (Beta)
 * Zucchetti HR Infinity (Beta)
+* Anaplan Connector v1.0 (Beta)
+* Starburst Enterprise Presto (Beta)
 * Blank Query
 
 
