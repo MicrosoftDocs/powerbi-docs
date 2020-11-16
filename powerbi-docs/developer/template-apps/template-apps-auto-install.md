@@ -23,11 +23,11 @@ This customer experience is illustrated below.
 
 ![Illustration of user experience with auto install application.](media/template-apps-auto-install/highlevelflow.png)
 
-This article describes the basic flow, prerequisites, and main steps and APIs you need for automating template app parameter configuration. However, if you prefer to just dive in and get started, you can skip to the [tutorial](#tutorial-create-a-short-application-using-our-sample-application) where you create an application for automating template app parameter configuration using a simple sample application we've prepared that uses an Azure Function.
+This article describes the basic flow, prerequisites, and the  main steps and APIs you need for automating the configuration of a template app installation. However, if you prefer to just dive in and get started, you can skip to the [tutorial](#tutorial-create-a-short-application-using-our-sample-application) where you automate the configuration of the template app installation using a simple sample application we've prepared that uses an Azure Function.
 
 ## Basic flow
 
-The basic flow of the automated configuration of a template app installation is as follows:
+The basic flow of automating the configuration of a template app installation is as follows:
 
 1. The user logs in to the ISV's portal and clicks the supplied link. This initiates the automated flow. The ISV's portal prepares the user specific configuration at this stage.
 
