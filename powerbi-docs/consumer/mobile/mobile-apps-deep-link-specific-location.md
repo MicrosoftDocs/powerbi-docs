@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 11/16/2020
 ms.author: painbar
 
 ---
@@ -31,7 +31,9 @@ When you want to link to a specific item in Power BI from outside the mobile app
 * If you know the link is only going to be opened on a mobile device that has the Power BI mobile app installed, you can avoid the redirect overhead of the above method and use another link syntax that opens the link directly in the Power BI mobile app on the mobile device. It is important to note however that while this link avoids the redirect overhead of the first method, it will not work if opened anywhere other than on a mobile device that has the Power BI mobile app installed.
 
 ### Create a link that works anywhere
-The link format described in this section makes sure that the device uses the app to open the link, and if the app is not installed on the device, it suggests to the user to go to the store to get it.
+The link format described in this section uses redirection to make sure the link works no matter where it is clicked.
+* If the link is clicked on a mobile device, it makes sure that the device uses the Power BI mobile app to open the link. If the mobile app is not installed on the device, it suggests to the user to go to the store to get it.
+* If the link is clicked on a PC, it will open the relevant item in the Power BI web portal.
 
 The link must start with a special prefix, followed by query parameters:
 
