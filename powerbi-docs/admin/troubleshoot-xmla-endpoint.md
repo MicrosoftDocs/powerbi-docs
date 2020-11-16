@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 11/12/2020
+ms.date: 11/16/2020
 ms.custom: seodec18, css_fy20Q4
 
 LocalizationGroup: Premium
@@ -136,7 +136,9 @@ When triggering a scheduled refresh or on-demand refresh in Power BI, Power BI t
 
 Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tmsl) allow users choosing a different partition query definition or data source definition for the refresh operation. Currently, **overrides are not supported** in Power BI Premium. An error,  "Out-of-line binding is not allowed in Power BI Premium. For additional information, see 'XMLA read/write support' in the product documentation." is returned.
 
-## Error in SSMS - Premium Gen 2
+## Errors in SSMS - Premium Gen 2
+
+### Query execution
 
 When connected to a workspace in a [Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2-preview) capacity, SQL Server Management Studio may display the following error:
 
@@ -146,6 +148,23 @@ Error -1052311437:
 ```
 
 This occurs because client libraries installed with SSMS v18.7.1 do not support session tracing. This will be resolved in an upcoming release of SSMS.
+
+### Refresh operations
+
+When using SSMS v18.7.1 or lower to perform a long running (<1 min) refresh operation on a dataset in a Premium Gen2 capacity, SSMS may display an error like the following even though the refresh operation succeeds:
+
+```
+Executing the query ...
+Error -1052311437:
+The remote server returned an error: (400) Bad Request.
+
+Technical Details:
+RootActivityId: 3716c0f7-3d01-4595-8061-e6b2bd9f3428
+Date (UTC): 11/13/2020 7:57:16 PM
+Run complete
+```
+
+This is due to a known issue in the client libraries where the status of the refresh request is incorrectly tracked. This will be resolved in an upcoming release of SSMS.
 
 ## See also
 
