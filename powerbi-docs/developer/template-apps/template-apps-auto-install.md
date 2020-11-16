@@ -142,7 +142,7 @@ A simple example, mostly used for testing purposes, leverages a form with a hidd
 </html>
 ```
 
-Below is an example of the [sample application](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample)'s response, which holds the install ticket and automatically redirects users to Power BI. The response for this Azure Function is in fact the same automatically self-submitting form mentioned above.
+Below is an example of the [sample application](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample)'s response, which holds the install ticket and automatically redirects users to Power BI. The response for this Azure Function is in fact the same automatically self-submitting form that we see in the html example above.
 
 ```csharp
 ...
@@ -168,6 +168,6 @@ public static string RedirectWithData(string url, string ticket)
 
 ## Next steps
 
-In this tutorial, you've learned how to install and configure Power BI template app for your customers.
+Use our sample application to automate the configuration of a template app installation using an Azure Function.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
