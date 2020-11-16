@@ -62,7 +62,7 @@ To provide a preconfigured installation experience for your template app, the fo
 
 ## Main steps and APIs
 
-The main steps for automating the configuration of a template app installation, and the APIs you'll need, are described in the sections below. While most of the steps are done with [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the codes examples described below are made with the **.NET SDK**.
+The main steps for automating the configuration of a template app installation, and the APIs you'll need, are described in the sections below. While most of the steps are done with [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the code examples described below are made with the **.NET SDK**.
 
 ## Step 1: Create a Power BI client object 
 
