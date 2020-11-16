@@ -20,6 +20,8 @@
       href: walkthrough-push-data-get-datasets.md
     - name: "Add rows to a table"
       href: walkthrough-push-data-add-rows.md
+    - name: "Automate template app configuration"
+      href: ../template-apps/template-apps-auto-install-tutorial.md
   - name: Concepts
     items:
     - name: "Automatic retention policy for real-time data"
@@ -36,6 +38,8 @@
     items:
     - name: "Configure credentials"
       href: configure-credentials.md
+      - name: "Automate template app configuration"
+      href: ../template-apps/template-apps-auto-install.md
   - name: Reference
     items:
     - name: "REST APIs"
