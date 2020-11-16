@@ -55,7 +55,7 @@ To create an *embed for your customers* sample app, follow these steps:
 
 5. Test your application.
 
->[!NOTE]
+>[!TIP]
 >You can crete a ready made sample app using the the [embedding setup tool](https://app.powerbi.com/embedsetup). This tool replicates the steps described in this tutorial, and produces a .NET sample app that you can experiment with.
 
 ## Register an Azure AD application
@@ -75,31 +75,47 @@ To register your application with Azure AD, follow the instructions in [Register
 
 ## Create a Power BI workspace
 
-If you already have a Power BI workspace you can skip this step.
+Power BI keeps your reports, dashboards and tiles in a workspace. To embed these items, you'll need to create them or upload them into a workspace.
+
+>[!TIP]
+>If you already have a workspace, you can skip this stage.
+
+To create a workspace, do the following:
+
+1. Sign in to Power BI.
+
+2. Select **Workspaces**.
+
+3. Select **Create a workspace**.
+
+4. Name your workspace and select **Save**.
+
+## Create and publish a Power BI report
+
+Your next step is to create a report and upload it to your workspace.
+
+* [Create your report](fundamentals/desktop-getting-started.md#build-reports) using Power BI Desktop, and then [publish](fundamentals/desktop-getting-started.md#share-your-work) it to your workspace.
+
+* Upload a sample report to your workspace.
+
+To download a sample report and publish it to your workspace, follow these steps:
+
+1. Open the GitHub [Power BI Desktop samples](https://github.com/microsoft/PowerBI-Developer-Samples) folder.
+
+2. Select the **Code arrow** and then select **Download zip**.
+
+    :::image type="content" source="media/embed-sample-for-customers/download-sample-report.png" alt-text="A screenshot showing the ZIP download option in the Power BI desktop samples GitHub":::
+
+3. Extract the downloaded zip and navigate to the **Samples Reports** folder.
+
+4. Select a report to embed, and [publish](fundamentals/desktop-getting-started.md#share-your-work) it to your workspace.
+
+## Embed your content
+
+tabs...
 
 
 
-## Set up your Power BI environment
-
-### Create a workspace
-
-If you're embedding reports, dashboards, or tiles for your customers, then you have to place your content within a workspace. There are different types of workspaces that you can set up: the [traditional workspaces](../../collaborate-share/service-create-workspaces.md) or the [new workspaces](../../collaborate-share/service-create-the-new-workspaces.md). If you're using a *master* account, then it doesn't matter which type of workspaces you use. However, if you use *[service principal](embed-service-principal.md)* to sign into your application, then you're required to use the new workspaces. In either scenario, both the *master* account or *service principal* must be an admin of the workspaces involved with your application.
-
-### Create and publish your reports
-
-You can create your reports and datasets using Power BI Desktop and then publish those reports to a workspace. There are two ways to accomplish this task: As an end user, you can publish reports to a traditional workspace with a master account (Power BI Pro license). If you're using service principal, you can publish reports to the new workspaces using the [Power BI REST APIs](/rest/api/power-bi/imports/postimportingroup).
-
-The below steps walk through how to publish your PBIX report to your Power BI workspace.
-
-1. Download the sample [Blog Demo](https://github.com/Microsoft/powerbi-desktop-samples) from GitHub.
-
-    ![report sample](media/embed-sample-for-customers/embed-sample-for-customers-026-1.png)
-
-2. Open sample PBIX report in **Power BI Desktop**.
-
-   ![PBI desktop report](media/embed-sample-for-customers/embed-sample-for-customers-027.png)
-
-3. Publish to **workspaces**. This process differs depending on whether you're using a master account (Power Pro license), or service principal. If you're using a master account, then you can publish your report through Power BI Desktop.  Now if you're using service principal, you must use the Power BI REST APIs.
 
 ## Embed content using the sample application
 
