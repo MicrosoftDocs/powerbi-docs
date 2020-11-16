@@ -18,7 +18,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ## October 2020
 - **Power BI Report Server**
-    - *Version: 1.9.7622.15502 (Build 15.0.1104.257), Released: November 16, 2020*
+    - *Version: 1.9.7622.15502 (Build 15.0.1104.257), Released: November 17, 2020*
         - Bug fixes
             - Fixed issue preventing users from changing fields in site settings via the portal.
             - Fixed issue with refresh of Power BI Reports when using 'EnterData' data source.
