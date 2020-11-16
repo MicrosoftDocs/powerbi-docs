@@ -200,4 +200,6 @@ The desired flow should be:
  
 ## Next steps
 
+### Publish your project to Azure
+
 Follow the [Azure function documentation](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio#publish-the-project-to-azure) for instructions about how to publish your project to Azure so that you can integrate template app automated install APIs into your product and begin testing it in production environments.
