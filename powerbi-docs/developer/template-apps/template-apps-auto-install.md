@@ -88,11 +88,10 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 Create an install ticket, which is used for when redirecting your users to Power BI. The API used for this operation is the **CreateInstallTicket** API.
 * [Template Apps CreateInstallTicket](https://docs.microsoft.com/rest/api/power-bi/templateapps/createinstallticket)
 
-A sample of creating an install ticket for template app installation and configuration is available from the following file in the [sample application](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample).
+A sample of creating an install ticket for template app installation and configuration is available from the [InstallTemplateApp/InstallAppFunction.cs](https://github.com/microsoft/Template-apps-examples/blob/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample/InstallTemplateApp/InstallAppFunction.cs) file in the [sample application](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample).
 
-* InstallTemplateApp/InstallAppFunction.cs
 
-Below is a code example for using the template app *CreateInstallTicket* REST API.
+Below is a code example of using the template app *CreateInstallTicket* REST API.
 ```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
@@ -166,8 +165,12 @@ public static string RedirectWithData(string url, string ticket)
 >[!Note]
 >While there are various methods of using ```POST``` browser redirects, you should always use the most secure method, which depends on your service needs and restrictions. Remember that some forms of insecure redirection can result in exposing your users or service to security issues.
 
+## Step 4: Move your automation to production
+
+When the automation you've designed is ready, be sure to move it to production.
+
 ## Next steps
 
-Use our sample application to automate the configuration of a template app installation using an Azure Function.
+* Try our [tutorial](template-apps-auto-install-tutorial.md) which uses a simple Azure Function to automate the configuration of a template app installation.
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+* More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
