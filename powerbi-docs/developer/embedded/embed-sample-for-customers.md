@@ -32,9 +32,9 @@ To get started, you're required to have:
 
 * To authenticate your app against Power BI, you'll need one of the following:
 
-    * [Power BI Pro account](../../fundamentals/service-self-service-signup-for-power-bi.md) - This will be your **master user** and your app will use it to sign in to your Power BI Pro account.
+    * [Service principal](embed-service-principal.md) - An Azure Active Directory (Azure AD) [service principal object](azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) that allows Azure AD to authenticate your app.
 
-    * [Service principal](embed-service-principal.md) - An Azure Active Directory (Azure AD) [service principal object](azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) that allows Azure AD to authenticate your app. 
+    * [Power BI Pro account](../../fundamentals/service-self-service-signup-for-power-bi.md) - This will be your **master user** and your app will use it to sign in to your Power BI Pro account.
 
 >[!NOTE]
 >To experiment with embedding, you can use one of these methods:
@@ -56,22 +56,28 @@ To create an *embed for your customers* sample app, follow these steps:
 5. Test your application.
 
 >[!NOTE]
->You can crete a ready made sample app using the the [embedding setup tool](https://app.powerbi.com/embedsetup). This tool replicates the steps described in this tutorial, and produces a .NET sample app that you can experiment with. 
+>You can crete a ready made sample app using the the [embedding setup tool](https://app.powerbi.com/embedsetup). This tool replicates the steps described in this tutorial, and produces a .NET sample app that you can experiment with.
 
 ## Register an Azure AD application
 
-To register your application with Azure AD, follow the instructions in [Register your application](register-app.md). 
+Registering your application with Azure AD allows you to:
+
+* Establish an identity for your app
+
+* Specify your app's [Power BI REST permissions](/azure/active-directory/develop/v2-permissions-and-consent)
+
+* Let your app access the [Power BI REST APIs](/rest/api/power-bi/)
+
+To register your application with Azure AD, follow the instructions in [Register your application](register-app.md).
+
+>[!NOTE]
+>Before registering your application, you'll need to decide which authentication method to use, *service principal* or *master user*.
+
+## Create a Power BI workspace
+
+If you already have a Power BI workspace you can skip this step.
 
 
-with Azure AD to allow your application access to the [Power BI REST APIs](/rest/api/power-bi/).
-
-Registering your application allows you to establish an identity for your application and specify [permissions to Power BI REST resources](/azure/active-directory/develop/v2-permissions-and-consent). Depending if you want to use a master account or [service principal](embed-service-principal.md), determines how to get started registering an application.
-
-Depending on which method you take, affects which type of application you register in Azure.
-
-If you proceed using a master account, then proceed with registering a **Native** app. You use a Native app because you're working with a non-interactive login.
-
-However, if you proceed using the service principal, you need to proceed with registering a **server-side web application** app. You register a server-side web application to create an application secret.
 
 ## Set up your Power BI environment
 
