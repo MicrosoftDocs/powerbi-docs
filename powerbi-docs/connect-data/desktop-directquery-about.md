@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/27/2020
+ms.date: 11/17/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
