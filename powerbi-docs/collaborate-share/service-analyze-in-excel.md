@@ -8,7 +8,7 @@ ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/26/2020
+ms.date: 09/22/2020
 ms.author: davidi
 
 LocalizationGroup: Reports
@@ -88,6 +88,15 @@ In the Power BI service, navigate to the dataset or report you want to analyze i
     >![Screenshot of Protected view enable editing banner](media/service-analyze-in-excel/protected-view-enable-editing-banner.png)
     >
     >![Screenshot of Trusted document enable content banner](media/service-analyze-in-excel/trusted-document-enable-content-banner.png)
+
+When using Excel to analyze Power BI using a PivotTable, Power BI extends sensitivity label inheritance to Excel. A sensitivity label applied on a Power BI dataset is automatically applied to the Excel file when you create a PivotTable in Excel. 
+
+If the label on the dataset subsequently changes to be more restrictive, the label applied to the Excel file is automatically updated upon data refresh in Excel. If the dataset changes to become less restrictive, no label inheritance or update occurs.
+
+Sensitivity labels in Excel that were manually set are not automatically overwritten by the dataset's label. If an Excel file has a manually set sensitivity label, a policy tip will appear with a recommendation to upgrade the label. 
+
+For more information, see [how to apply sensitivity labels in Power BI](../admin/service-security-apply-data-sensitivity-labels.md).
+
 
 ## Use Excel to analyze the data
 
@@ -173,4 +182,4 @@ You might also be interested in the following articles:
 * [Using slicers Power BI Desktop](../visuals/power-bi-visualization-slicers.md)
 * [Troubleshooting Analyze in Excel](desktop-troubleshooting-analyze-in-excel.md)
 * [Access Power BI featured tables in Excel (preview)](service-excel-featured-tables.md).
-
+* [How to apply sensitivity labels in Power BI](../admin/service-security-apply-data-sensitivity-labels.md)

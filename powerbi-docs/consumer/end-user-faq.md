@@ -33,7 +33,7 @@ The way you interact with Power BI will depend on your job role. As an end user 
 
 Power BI Pro is an individual user license that allows access to all content and capabilities in the Power BI service. You can even share content and collaborate with other Pro users. Only Pro users can publish content to other workspaces, share dashboards, and subscribe to dashboards and reports. 
 
-Power BI Premium provides dedicated capacity to deliver more consistent performance. It also supports larger data volumes in Power BI. For individual users, Premium enables widespread distribution of content by Pro users and it doesn't require per-user Pro licenses for recipients viewing the content. This means that *business users* can collaborate with colleagues and view and interact with dashboards, reports, and apps that have been shared with them. 
+Power BI Premium provides a capacity to deliver more consistent performance. It also supports larger data volumes in Power BI. For individual users, Premium enables widespread distribution of content by Pro users and it doesn't require per-user Pro licenses for recipients viewing the content. This means that *business users* can collaborate with colleagues and view and interact with dashboards, reports, and apps that have been shared with them. 
 
 To learn more, see [What type of license do I have?](end-user-license.md).
 
@@ -96,7 +96,7 @@ Here's a complete list of [regions and languages supported by Power BI](../funda
 
 Learn more about Power BI security, privacy, and compliance here:
 
-* This [Power BI Security](https://go.microsoft.com/fwlink/?LinkId=829185) white paper
+* This [Power BI Security](../guidance/whitepaper-powerbi-security.md) white paper
 
 * This [Power BI security support](../admin/service-admin-power-bi-security.md) article
 

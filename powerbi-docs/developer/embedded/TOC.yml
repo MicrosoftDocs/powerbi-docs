@@ -28,6 +28,8 @@
       href: embedded-capacity.md
     - name: "Capacity planning"
       href: embedded-capacity-planning.md
+    - name: "Consideration for generating an embed token"
+      href: generate-embed-token.md
     - name: "Performance best practices"
       href: embedded-performance-best-practices.md
     - name: "Row-level security"
@@ -41,11 +43,11 @@
     - name: "Embedding FAQ"
       href: embedded-faq.md
   - name: How to
-    items:
+    items:        
     - name: "Embed using service principal with a certificate"
       href: embed-service-principal-certificate.md
     - name: "Embed using service principal with app secret"
-      href: embed-service-principal.md      
+      href: embed-service-principal.md    
     - name: "Embed from an app"
       href: embed-from-apps.md
     - name: "Export report to file"
@@ -89,9 +91,9 @@
     - name: APIs
       items:
       - name: Azure Resource Management REST APIs
-        href: https://docs.microsoft.com/rest/api/power-bi-embedded/
+        href: /rest/api/power-bi-embedded/
       - name: Power BI REST APIs
-        href: https://docs.microsoft.com/rest/api/power-bi/
+        href: /rest/api/power-bi/
     - name: "Power BI libraries"
       href: https://go.microsoft.com/fwlink/?linkid=848274
     - name: "Embed custom layouts into an app"

@@ -44,7 +44,7 @@ To help describe how the relationship filter propagation works, the model diagra
 > [!NOTE]
 > It's not possible to display table rows in the Power BI Desktop model diagram. It's done in this article to support the discussion with clear examples.
 
-![Diagram showing that the model now reveals the table rows. The row details are described in the following paragraph.](media/relationships-many-to-many/bank-account-customer-model-related-tables-2.png)
+![Diagram showing that the model now reveals the table rows. The row details for the four tables are described in the following paragraph.](media/relationships-many-to-many/bank-account-customer-model-related-tables-2.png)
 
 The row details for the four tables are described in the following bulleted list:
 
@@ -133,7 +133,7 @@ The relationship cardinality is set to many-to-many to support storing duplicate
 
 Let's now take a look at the table rows. In the **Fulfillment** table, notice that order lines can be fulfilled by multiple shipments. (The absence of an order line means the order is yet to be fulfilled.)
 
-![Diagram showing that the model now reveals the table rows. The row details are described in the following paragraph.](media/relationships-many-to-many/order-fulfillment-model-related-tables.png)
+![Diagram showing that the model now reveals the table rows. The row details for the two tables are described in the following paragraph.](media/relationships-many-to-many/order-fulfillment-model-related-tables.png)
 
 The row details for the two tables are described in the following bulleted list:
 
@@ -157,7 +157,7 @@ The visual presents an accurate result. However, the usefulness of the model is 
 
 ### Relate many-to-many facts guidance
 
-Generally, we don't recommend relating two fact-type tables directly using many-to-many cardinality. The main reason is because the model won't provide flexibility in the ways you report visuals filter or group. In the example, it's only possible for visuals to filter or group by the **Order** table **OrderID** column. An additional reason relates to the quality of your data. If your data has integrity issues, it's possible some rows may be omitted during querying due to the nature of the _weak relationship_. For more information, see [Model relationships in Power BI Desktop (Relationship evaluation)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
+Generally, we don't recommend relating two fact-type tables directly using many-to-many cardinality. The main reason is because the model won't provide flexibility in the ways you report visuals filter or group. In the example, it's only possible for visuals to filter or group by the **Order** table **OrderID** column. An additional reason relates to the quality of your data. If your data has integrity issues, it's possible some rows may be omitted during querying due to the nature of the _limited relationship_. For more information, see [Model relationships in Power BI Desktop (Relationship evaluation)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
 Instead of relating fact-type tables directly, we recommend you adopt [Star Schema](star-schema.md) design principles. You do it by adding dimension-type tables. The dimension-type tables then relate to the fact-type tables by using one-to-many relationships. This design approach is robust as it delivers flexible reporting options. It lets you filter or group using any of the dimension-type columns, and summarize any related fact-type table.
 
@@ -180,7 +180,7 @@ Taking the time to apply star schema design principles delivers the following be
 - Your report visuals can _filter or group_ by any visible column from the dimension-type tables
 - Your report visuals can _summarize_ any visible column from the fact-type tables
 - Filters applied to the **OrderLine**, **OrderDate**, or **Product** tables will propagate to both fact-type tables
-- All relationships are one-to-many, and each relationship is a _strong relationship_. Data integrity issues won't be masked. For more information, see [Model relationships in Power BI Desktop (Relationship evaluation)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
+- All relationships are one-to-many, and each relationship is a _regular relationship_. Data integrity issues won't be masked. For more information, see [Model relationships in Power BI Desktop (Relationship evaluation)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
 ## Relate higher grain facts
 
@@ -224,7 +224,7 @@ IF(
 
 The following matrix visual now uses the **Target Quantity** measure. It shows that all monthly target quantities are BLANK.
 
-![Diagram showing a matrix visual revealing the year 2020 target quantity as 270.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-good.png)
+![Diagram showing a matrix visual revealing the year 2020 target quantity as 270 with blank monthly values.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-good.png)
 
 ### Relate higher grain (non-date)
 

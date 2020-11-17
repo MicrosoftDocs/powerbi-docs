@@ -34,17 +34,16 @@ There is no in-place upgrade for SQL Server Reporting Services. If you have an e
 ## Configuring your report server
 You have many options when configuring your report server. Will you use SSL? Are you configuring an email server? Do you want to integrate with the Power BI service to pin visualizations?
 
-The majority of your configuration will occur within the Report Server Configuration Manager. Check out the [configuration manager](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode) documentation for more details.
+The majority of your configuration will occur within the Report Server Configuration Manager. Check out the [configuration manager](/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode) documentation for more details.
 
 ## Security
-Security and protection are important to every organization. You can learn about authentication, authorization, roles, and permissions over in the [security](https://docs.microsoft.com/sql/reporting-services/security/reporting-services-security-and-protection) documentation.
+Security and protection are important to every organization. You can learn about authentication, authorization, roles, and permissions over in the [security](/sql/reporting-services/security/reporting-services-security-and-protection) documentation.
 
 ## Next steps
 [Install Power BI Report Server](install-report-server.md)  
 [Find your report server product key](find-product-key.md)  
 [Install Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
+[Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

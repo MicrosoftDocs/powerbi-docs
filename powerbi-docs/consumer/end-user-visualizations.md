@@ -1,5 +1,5 @@
 ---
-title: Working with visualizations (visuals) as a consumer
+title: Working with visualizations (visuals) as a business user
 description: Power BI concepts and terminology - visualizations, visuals. What is a Power BI visualization, visual.
 author: mihart
 ms.reviewer: mihart
@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 01/29/2020
+ms.date: 10/7/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -23,19 +23,21 @@ Visuals are found on dashboards, in reports, and can be created on-the-fly using
 ![Dashboard with tiles](media/end-user-visualizations/power-bi-dashboard.png)
 
 > [!TIP]
-> We recommend first reading the overview topic [Power BI basic concepts for *consumers*](end-user-basic-concepts.md) before reading this more-detailed content.
+> We recommend first reading the overview topic [Power BI basic concepts for *business users*](end-user-basic-concepts.md) before reading this more-detailed content.
 
 ## What can I do with visuals?
 
-Visuals are created by report and dashboard *designers* and shared with *consumers*. As a consumer, you have many options for interacting with visuals to uncover insights and make data-driven business decisions. Most of these options are listed in the table below, with links to step-by-step instructions.
+Visuals are created by report and dashboard *designers* and shared with colleagues. The designer assigns different permissions to their colleagues, depending on how the colleague is going to use the report or dashboard. For example, a *developer* may be assigned different permissions than a *business user*. 
 
-For many of these options, your administrator or the *designer* can disable your ability to see or use these features. And some of these features only work on specific visuals.  If you have any questions, contact your administrator or the owner of the report or dashboard. To find the owner, select the dashboard or report dropdown. 
+The most common tasks for a *business user* are listed in the table below, with links to step-by-step instructions. *Business users* have many options for interacting with visuals to uncover insights and make data-driven business decisions.  
 
-![Title dropdown showing owner](media/end-user-visualizations/power-bi-owner.png)
+For many of these options, your administrator or the *designer* can disable your ability to see or use these features. And some of these features only work on specific visual types.  If you have any questions, contact your administrator or the owner of the report or dashboard. To find the owner, select the dashboard or report dropdown. 
+
+![Title dropdown showing owner](media/end-user-visualizations/power-bi-designer.png)
 
 
 > [!IMPORTANT]
-> But first, a word about Q&A. Q&A is Power BI's natural language search tool. You type a question using natural language and Q&A answers the question in the form of a visual. Q&A is a way consumers can create their own visuals on the fly. However, the visuals you create with Q&A cannot be saved. But, if there's something specific you want to learn from the data, and the designer didn't include it in a report or on a dashboard, Q&A is a great option. To learn more about Q&A, see [Q&A for consumers](end-user-q-and-a.md).
+> But first, a word about Q&A. Q&A is Power BI's natural language search tool. You type a question using natural language and Q&A answers the question in the form of a visual. Q&A is a way business users can create their own visuals on the fly. However, the visuals you create with Q&A cannot be saved. But, if there's something specific you want to learn from the data, and the designer didn't include it in a report or on a dashboard, Q&A is a great option. To learn more about Q&A, see [Q&A for business users](end-user-q-and-a.md).
 
 
 
@@ -56,13 +58,13 @@ For many of these options, your administrator or the *designer* can disable your
 |[Cross-filter and cross-highlight other visuals on the page.](end-user-interactions.md)    |   no      |   yes      | na  |
 |[Show the data used to create the visual](end-user-show-data.md).     |  no       |   yes      | no  |
 | [Change the way the visual is sorted](end-user-change-sort.md). | no  | yes  | can change sort by rewording the question  |
-| Add a spotlight to a visual. | no  | yes  |  no |
+| [Add a spotlight to a visual](end-user-spotlight.md). | no  | yes  |  no |
 | [Export to Excel.](end-user-export.md) | yes | yes | no|
 | [Create an alert](end-user-alerts.md) to notify you when a value exceeds a threshold you've set.  | yes  | no  | no |
 | [Cross filter and cross highlight the other visuals on the page](end-user-report-filter.md).  | no      | yes  | na |
 | [Drill a visual that has a hierarchy](end-user-drill.md).  | no  | yes   | no |
 
 ## Next steps
-Back to [Basic concepts for consumers](end-user-basic-concepts.md)    
+Back to [Basic concepts for business users](end-user-basic-concepts.md)    
 [Select a visual to open a report](end-user-report-open.md)    
 [Types of visuals available in Power BI](end-user-visual-type.md)

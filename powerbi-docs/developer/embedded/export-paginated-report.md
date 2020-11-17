@@ -33,9 +33,9 @@ You can use the export feature in a variety of ways. Here are a couple of exampl
 
 ## Using the API
 
-The API is asynchronous. When the [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) API is called, it triggers an export job. After triggering an export job, use [polling](https://docs.microsoft.com/rest/api/power-bi/reports/getexporttofilestatus) to track the job, until it's complete.
+The API is asynchronous. When the [exportToFile](/rest/api/power-bi/reports/exporttofile) API is called, it triggers an export job. After triggering an export job, use [polling](/rest/api/power-bi/reports/getexporttofilestatus) to track the job, until it's complete.
 
-When the export is complete, the polling API call returns a [Power BI URL](https://docs.microsoft.com/rest/api/power-bi/reports/getfileofexporttofile) for getting the file. The URL will be available for 24 hours.
+When the export is complete, the polling API call returns a [Power BI URL](/rest/api/power-bi/reports/getfileofexporttofile) for getting the file. The URL will be available for 24 hours.
 
 ## Supported features
 
@@ -112,11 +112,13 @@ Here is an example for supplying an effective user name for RLS.
       "format": "PDF",
       "paginatedReportConfiguration":{
             "identities": [
-                  {"username": "john@contoso.com"}            
+                  {"username": "john@contoso.com"}
             ]
       }
 }
 ```
+## PPU concurrent requests
+The `exportToFile` API allows one request in a five minute window when using [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md). Multiple (greater than one) requests within a five minute window will result in a *Too Many Requests* (429) error.
 
 ## Code examples
 
@@ -148,13 +150,13 @@ private async Task<string> PostExportRequest(
             {"PageHeight", "14in"},
             {"PageWidth", "8.5in" },
             {"StartPage", "1"},
-            {"EndPage", "4"}
+            {"EndPage", "4"},
         },
         ParameterValues = new List<ParameterValue>()
         {
             { new ParameterValue() {Name = "State", Value = "WA"} },
-            { new ParameterValue() {Name = "City", Value = "Redmond"} }
-        }
+            { new ParameterValue() {Name = "City", Value = "Redmond"} },
+        },
     };
 
     var exportRequest = new ExportReportRequest

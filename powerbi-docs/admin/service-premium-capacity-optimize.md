@@ -5,10 +5,10 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 04/09/2019
-ms.custom: seodec18
+ms.date: 11/11/2020
+ms.custom: 
 
 LocalizationGroup: Premium
 ---
@@ -23,6 +23,11 @@ When additional Premium capacity is required, there are two options described in
 - Add a new Premium capacity
 
 Finally, testing approaches and Premium capacity sizing conclude this article.
+
+> [!NOTE]
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+
+The recommendations and best practices recommended in this article ensure CPU utilization of each dataset, and other Power BI artifacts, are optimized.
 
 ## Best practices
 
@@ -182,7 +187,7 @@ At the model layer:
 
 - Power Query query designs can minimize or remove complex transformations and especially those that merge different data sources (data warehouses achieve this during their Extract-Transform-Load stage). Also, ensuring that appropriate datasource privacy levels are set, this can avoid requiring Power BI to load full results to produce a combined result across queries.
 - The model structure determines the data to load and has a direct impact on the model size. It can be designed to avoid loading unnecessary data by removing columns, removing rows (especially historic data) or by loading summarized data (at the expense of loading detailed data). Dramatic size reduction can be achieved by removing high cardinality columns (especially text columns) which do not store or compress very efficiently.
-- Model query performance can be improved by configuring single direction relationships unless there is a compelling reason to allow bi-directional filtering. Consider also using the [CROSSFILTER](https://docs.microsoft.com/dax/crossfilter-function) function instead of bi-directional filtering.
+- Model query performance can be improved by configuring single direction relationships unless there is a compelling reason to allow bi-directional filtering. Consider also using the [CROSSFILTER](/dax/crossfilter-function) function instead of bi-directional filtering.
 - Aggregation tables can achieve fast query responses by loading pre-summarized data, however this will increase the size of the model and result in longer refresh times. Generally, aggregation tables should be reserved for very large models or Composite model designs.
 - Calculated tables and columns increase the model size and result in longer refresh times. Generally, a smaller storage size and faster refresh time can be achieved when the data is materialized or calculated in the datasource. If this is not possible, using Power Query custom columns can offer improved storage compression.
 - There may be opportunity to tune DAX expressions for measures and RLS rules, perhaps rewriting logic to avoid expensive formulas
@@ -254,7 +259,7 @@ If you already have a capacity and the reports you want to load test for, use th
 
 To generate a more complex test, consider developing a load testing application that simulates a realistic workload. For more information, see the webinar [Load Testing Power BI Applications with Visual Studio Load Test](https://powerbi.microsoft.com/blog/week-4-11-webinars-load-testing-power-bi-applications-with-visual-studio-load-test-and-getting-started-with-cds-for-apps-based-model-driven-apps/).
 
-## Acknowledgements
+## Acknowledgments
 
 This article was written by Peter Myers, Data Platform MVP and independent BI expert with [Bitwise Solutions](https://www.bitwisesolutions.com.au/).
 
@@ -264,3 +269,13 @@ This article was written by Peter Myers, Data Platform MVP and independent BI ex
 > [Premium capacity scenarios](service-premium-capacity-scenarios.md)   
   
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
+Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+* Performance
+* Per-user licensing
+* Greater scale
+* Improved metrics
+* Autoscaling
+* Reduced management overhead
+
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

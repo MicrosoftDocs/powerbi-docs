@@ -10,8 +10,8 @@
   - name: Tutorials
     expanded: true
     items:
-    - name: "Develop a Power BI visual"
-      href: custom-visual-develop-tutorial.md
+    - name: "Tutorial: Developing a Power BI circle card visual"
+      href: develop-circle-card.md  
     - name: "Create React-based Visuals"
       href: create-react-visual.md
     - name: "Build a bar chart"
@@ -54,6 +54,8 @@
       href: power-bi-custom-visuals-certified.md
     - name: "Publish Power BI visuals to AppSource"
       href: office-store.md
+    - name: "Setup your environment for developing a Power BI visual"
+      href: environment-setup.md
     - name: "Create R-powered visuals"
       href: create-r-based-power-bi-desktop.md
     - name: "Test your Power BI visual"  
@@ -132,8 +134,6 @@
         href: utils-test.md
       - name: "Tooltip utils"
         href: utils-tooltip.md
-      - name: "Data view utils"
-        href: utils-dataview.md
   - name: Resources
     items:
     - name: "Dev Center"

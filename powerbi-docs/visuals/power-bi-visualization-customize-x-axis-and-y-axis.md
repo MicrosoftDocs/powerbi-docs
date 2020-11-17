@@ -1,14 +1,14 @@
 ---
 title: Customize X-axis and Y-axis properties
 description: 'Customize X-axis and Y-axis properties'
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: 'mihart'
 featuredvideoid: 9DeAKM4SNJM
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to 
 ms.date: 05/06/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
 ---
 
@@ -70,7 +70,7 @@ The X-axis labels display below the columns in the chart. Right now, they're lig
 
 3. Move the **X-axis** slider to **On**.
 
-    ![Screenshot ot the On slider.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-slider-on.png)
+    ![Screenshot of the On slider for the X axis.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-slider-on.png)
 
     Some reasons you may want to set the X axis to **Off**, is if the visualization is self-explanatory without labels or if you have a crowded report page and need to make space to display more data.
 
@@ -134,7 +134,7 @@ The Y-axis labels are displayed to the left by default. Right now, they're light
 
 1. Move the **Y-Axis** slider to **On**.  
 
-    ![Screenshot ot the On slider.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis-on.png)
+    ![Screenshot of the On slider for the Y axis.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis-on.png)
 
     One reason you might want to turn off the Y-axis, is to save space for more data.
 

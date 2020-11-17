@@ -40,9 +40,9 @@ If you've already created Power BI reports in Power BI Desktop, then you're almo
 
 2. At the end of the installation, check **Start Power BI Desktop now**.
    
-    It starts automatically and you're ready to go. You can tell you have the right version because **Power BI Desktop (May 2020)** is in the title bar.
+    It starts automatically and you're ready to go. You can tell you have the right version because **Power BI Desktop (October 2020)** is in the title bar.
 
-    ![Power BI Desktop May 2020](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-may-2020.png)
+    ![Power BI Desktop October 2020](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-may-2020.png)
 
 3. If you're not familiar with Power BI Desktop, consider watching the videos on the welcome screen.
    

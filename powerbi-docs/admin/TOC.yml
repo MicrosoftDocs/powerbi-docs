@@ -44,6 +44,8 @@
         href: service-premium-capacity-scenarios.md
       - name: Power BI Premium FAQ
         href: service-premium-faq.md
+      - name: Power BI Premium Per User FAQ
+        href: service-premium-per-user-faq.md        
   - name: How to
     items: 
     - name: "Licensing and sign-up"
@@ -62,6 +64,8 @@
         href: service-admin-syndication-partner.md
     - name: "Using the admin portal"
       href: service-admin-portal.md
+    - name: "Use private links for Power BI"
+      href: service-security-private-links.md      
     - name: "Manage Power BI visuals admin settings"
       href: organizational-visuals.md
     - name: "Find users that have signed in"
@@ -78,7 +82,9 @@
       href: desktop-admin-sign-in-form.md
     - name: "Data protection"
       items:
-      - name: "Sensitivity labels in Power BI"
+      - name: "Data protection in Power BI"
+        href: service-security-data-protection-overview.md
+      - name: "Sensitivity label overview"
         href: service-security-sensitivity-label-overview.md
       - name: "Enable sensitivity labeling"
         href: service-security-enable-data-sensitivity-labels.md
@@ -90,7 +96,7 @@
         href: service-security-data-protection-metrics-report.md
     - name: "Row-level security"
       href: service-admin-rls.md
-    - name: Set up dataset and dataflow certification
+    - name: Enable content certification
       href: service-admin-setup-certification.md
     - name: Configure mobile apps with Intune
       href: service-admin-mobile-intune.md
@@ -102,6 +108,8 @@
         href: service-admin-premium-manage.md
       - name: Configure workloads
         href: service-admin-premium-workloads.md
+      - name: Purchase Power BI Premium for testing
+        href: service-admin-premium-testing.md        
       - name: Monitor capacities with the app
         href: service-admin-premium-monitor-capacity.md
       - name: Monitor Premium workload metrics
@@ -129,7 +137,7 @@
     - name: "PowerShell, REST APIs, and .NET SDK"
       href: service-admin-reference.md
     - name: "Power BI cmdlets for PowerShell"
-      href: https://docs.microsoft.com/powershell/power-bi/
+      href: /powershell/power-bi/
       maintainContext: true
     - name: Service URL reference
       href: power-bi-whitelist-urls.md

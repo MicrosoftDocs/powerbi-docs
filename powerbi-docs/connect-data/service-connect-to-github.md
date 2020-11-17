@@ -121,7 +121,9 @@ You can determine the owner and repository by looking at the repository in GitHu
 
 The first part "Azure" is the owner and the second part "azure-sdk-for-php" is the repository itself.  You see these same two items in the URL of the repository:
 
-    <https://github.com/Azure/azure-sdk-for-php> .
+```console
+<https://github.com/Azure/azure-sdk-for-php> .
+```
 
 ## Troubleshooting
 If necessary, you can verify your GitHub credentials.  

@@ -23,7 +23,7 @@ This feature provides a secure way of displaying a subset of the data, in a way 
 
 When applying row-level security to a Power BI paginated report, you need to assign a [parameter](../../paginated-reports/report-builder-parameters.md) to the **UserID** attribute. This parameter will restrict the data pulled from the dataset, before the report is embedded.
 
-After assigning the parameter to **UserID**, use the [Reports GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup) API to get the embed token.
+After assigning the parameter to **UserID**, use the [Reports GenerateTokenInGroup](/rest/api/power-bi/embedtoken/reports_generatetokeningroup) API to get the embed token.
 
 ## Use UserID as a filter at report or query level
 
@@ -37,7 +37,7 @@ You can use **UserId** as a *filter* or in a *query* to the datasource in [Power
 
 2. From the **Expression** dropdown menu, select the parameter you want to use for filtering the data.
 
-     ![Power BI Report Builder expression](media/paginated-reports-row-level-security/expression.png)
+     ![Screenshot shows the value Color selected from the Expression menu.](media/paginated-reports-row-level-security/expression.png)
 
 3. Click the **Value** function button. 
 
@@ -45,7 +45,7 @@ You can use **UserId** as a *filter* or in a *query* to the datasource in [Power
 
 4. In the **Expression** window, from the **Category** list, select **Built-in Fields**.
 
-    ![Power BI Report Builder expression](media/paginated-reports-row-level-security/built-in-fields.png)
+    ![Screenshot shows the Expression window with Built-in Fields selected as Category and ExecutionTime selected as Item.](media/paginated-reports-row-level-security/built-in-fields.png)
 
 5. From the **Item** list, select **UserID** and click **OK**.
 
@@ -73,7 +73,7 @@ You can use **UserId** as a *filter* or in a *query* to the datasource in [Power
 
 ## Passing the configured parameter using the embed token
 
-When embedding a paginated report for your customers, the [Reports GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup) API is used to get the embed token. This token can also be used to filter some of the data that is pulled out of the paginated report.
+When embedding a paginated report for your customers, the [Reports GenerateTokenInGroup](/rest/api/power-bi/embedtoken/reports_generatetokeningroup) API is used to get the embed token. This token can also be used to filter some of the data that is pulled out of the paginated report.
 
 To expose only some of the data, assign the `username` field with the information you want to be displayed. For example, in a paginated report that has a color parameter, if you enter *green* in the `username` field, the embed token will restrict the embedded data to display only the data that has the *green* value in the color column.
 

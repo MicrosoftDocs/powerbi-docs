@@ -5,9 +5,9 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 03/03/2020
+ms.date: 11/11/2020
 
 LocalizationGroup: Premium
 ---
@@ -90,7 +90,7 @@ You should consider the impact of eviction on large models. Despite relatively f
 
 ## Checking dataset size
 
-After loading historical data, you can use [SSMS](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) through the [XMLA endpoint](service-premium-connect-tools.md) to check the estimated dataset size in the model properties window.
+After loading historical data, you can use [SSMS](/sql/ssms/download-sql-server-management-studio-ssms) through the [XMLA endpoint](service-premium-connect-tools.md) to check the estimated dataset size in the model properties window.
 
 ![Estimated dataset size](media/service-premium-large-models/estimated-dataset-size.png)
 
@@ -118,7 +118,7 @@ Keep in mind the following restrictions when using large models:
 
 ## Availability in regions
 
-Large models in Power BI are only available in certain Azure regions that support [Azure Premium Files Storage](https://docs.microsoft.com/azure/storage/files/storage-files-planning#storage-tiers).
+Large models in Power BI are only available in certain Azure regions that support [Azure Premium Files Storage](/azure/storage/files/storage-files-planning#storage-tiers).
 
 The following list provides regions where large models in Power BI are available. Regions not in the following list are not supported for large models:
 
@@ -151,8 +151,19 @@ The following list provides regions where large models in Power BI are available
 
 The following links provide information that can be useful for working with large models:
 
-* [Azure Premium Files Storage](https://docs.microsoft.com/azure/storage/files/storage-files-planning#storage-tiers)
+* [Azure Premium Files Storage](/azure/storage/files/storage-files-planning#storage-tiers)
 * [Configure Multi-Geo support for Power BI Premium](service-admin-premium-multi-geo.md)
 * [Bring your own encryption keys for Power BI](service-encryption-byok.md)
 * [How capacities function](service-premium-what-is.md#how-capacities-function)
 * [Incremental refresh](service-premium-incremental-refresh.md).
+
+
+Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+* Performance
+* Per-user licensing
+* Greater scale
+* Improved metrics
+* Autoscaling
+* Reduced management overhead
+
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

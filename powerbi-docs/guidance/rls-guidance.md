@@ -43,16 +43,16 @@ Yet, a second role, named **Managers**, allows access to all **Payroll** table r
 TRUE()
 ```
 
-Take care: Should a report user map to both roles, they'll see all **Salary** table rows.
+Take care: Should a report user map to both roles, they'll see all **Payroll** table rows.
 
 ## Optimize RLS
 
 RLS works by automatically applying filters to every DAX query, and these filters may have a negative impact on query performance. So, efficient RLS comes down to good model design. It's important to follow model design guidance, as discussed in the following articles:
 
 - [Understand star schema and the importance for Power BI](star-schema.md)
-- All relationship guidance articles found in the [Power BI guidance documentation](https://docs.microsoft.com/power-bi/guidance/)
+- All relationship guidance articles found in the [Power BI guidance documentation](./index.yml)
 
-In general, it's often more efficient to enforce RLS filters on dimension-type tables, and not fact-type tables. And, rely on well-designed relationships to ensure RLS filters propagate to other model tables. So, avoid using the [LOOKUPVALUE](https://docs.microsoft.com/dax/lookupvalue-function-dax) DAX function when model relationships could achieve the same result.
+In general, it's often more efficient to enforce RLS filters on dimension-type tables, and not fact-type tables. And, rely on well-designed relationships to ensure RLS filters propagate to other model tables. So, avoid using the [LOOKUPVALUE](/dax/lookupvalue-function-dax) DAX function when model relationships could achieve the same result.
 
 Whenever RLS filters are enforced on DirectQuery tables and there are relationships to other DirectQuery tables, be sure to optimize the source database. It can involve designing appropriate indexes or using persisted computed columns. For more information, see [DirectQuery model guidance in Power BI Desktop](directquery-model-guidance.md).
 
@@ -70,7 +70,7 @@ Members can be user accounts or security groups. Whenever possible, we recommend
 
 Test each role to ensure it filters the model correctly. It's easily done by using the **View As** command on the **Modeling** ribbon tab.
 
-When the model has dynamic rules using the [USERNAME](https://docs.microsoft.com/dax/username-function-dax) DAX function, be sure to test for expected _and unexpected_ values. When embedding Power BI content—specifically using the [App owns data](../developer/embedded/embedding.md#embedding-for-your-customers) scenario—app logic can pass any value as an effective identity user name. Whenever possible, ensure accidental or malicious values result in filters that return no rows.
+When the model has dynamic rules using the [USERNAME](/dax/username-function-dax) DAX function, be sure to test for expected _and unexpected_ values. When embedding Power BI content—specifically using the [App owns data](../developer/embedded/embedding.md#embedding-for-your-customers) scenario—app logic can pass any value as an effective identity user name. Whenever possible, ensure accidental or malicious values result in filters that return no rows.
 
 Consider an example using Power BI embedded, where the app passes the user's job role as the effective user name: It's either "Manager" or "Worker". Managers can see all rows, but workers can only see rows where the **Type** column value is "Internal".
 
@@ -138,7 +138,7 @@ Each of the three model relationships is described in the following table:
 
 |Relationship|Description|
 |---------|---------|
-|![Flowchart terminator 1.](media/common/icon-01-red-30x30.png)|There's a many-to-many relationship between the **Salesperson** and **Sales** tables. The RLS rule filters the **EmailAddress** column of the hidden **Salesperson** table by using the [USERNAME](https://docs.microsoft.com/dax/username-function-dax) DAX function. The **Region** column value (for the report user) propagates to the **Sales** table.|
+|![Flowchart terminator 1.](media/common/icon-01-red-30x30.png)|There's a many-to-many relationship between the **Salesperson** and **Sales** tables. The RLS rule filters the **EmailAddress** column of the hidden **Salesperson** table by using the [USERNAME](/dax/username-function-dax) DAX function. The **Region** column value (for the report user) propagates to the **Sales** table.|
 |![Flowchart terminator 2.](media/common/icon-02-red-30x30.png)|There's a one-to-many relationships between the **Date** and **Sales** tables.|
 |![Flowchart terminator 3.](media/common/icon-03-red-30x30.png)|There's a one-to-many relationships between the **Date** and **SalesRevenueSummary** tables.|
 
@@ -159,7 +159,7 @@ DIVIDE(
 
 Avoid using RLS, whenever it makes sense to do so. If you have only a small number of simplistic RLS rules that apply static filters, consider publishing multiple datasets instead. None of the datasets define roles because each dataset contains data for a specific report user audience, which has the same data permissions. Then, create one workspace per audience and assign access permissions to the workspace or app.
 
-For example, a company that has just two sales regions decides to publish a dataset _for each sales region_ to different workspaces. The datasets don't enforce RLS. They do, however, use [query parameters](https://docs.microsoft.com/power-query/power-query-query-parameters) to filter source data. This way, the same model is published to each workspace—they just have different dataset parameter values. Salespeople are assigned access to just one of the workspaces (or published apps).
+For example, a company that has just two sales regions decides to publish a dataset _for each sales region_ to different workspaces. The datasets don't enforce RLS. They do, however, use [query parameters](/power-query/power-query-query-parameters) to filter source data. This way, the same model is published to each workspace—they just have different dataset parameter values. Salespeople are assigned access to just one of the workspaces (or published apps).
 
 There are several advantages associated with avoiding RLS:
 
@@ -187,7 +187,7 @@ If RLS produces unexpected results, check for the following issues:
 When a specific user can't see any data, it could be because their UPN isn't stored or it's entered incorrectly. It can happen abruptly because their user account has changed as the result of a name change.
 
 > [!TIP]
-> For testing purposes, add a measure that returns the [USERNAME](https://docs.microsoft.com/dax/username-function-dax) DAX function. You might name it something like "Who Am I". Then, add the measure to a card visual in a report and publish it to Power BI.
+> For testing purposes, add a measure that returns the [USERNAME](/dax/username-function-dax) DAX function. You might name it something like "Who Am I". Then, add the measure to a card visual in a report and publish it to Power BI.
 
 When a specific user can see all data, it's possible they're accessing reports directly in the workspace and they're the dataset owner. RLS is only enforced when:
 

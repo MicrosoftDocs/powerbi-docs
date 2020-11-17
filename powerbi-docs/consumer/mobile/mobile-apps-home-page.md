@@ -48,7 +48,7 @@ Activity items are aggregated, so all data updates coming from the same app or w
 
 At the bottom of the page you find the navigation bar.
 
-![Activity feed](./media/mobile-apps-home-page/powerbi-mobile-app-navbar.png)
+![Navigation bar](./media/mobile-apps-home-page/powerbi-mobile-app-navbar.png)
 
 The navigation bar provides quick access to:
 

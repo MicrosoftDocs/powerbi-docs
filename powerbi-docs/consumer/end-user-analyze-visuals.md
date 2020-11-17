@@ -46,7 +46,7 @@ Power BI then runs its machine learning algorithms over the data, and populates 
 
 By selecting the small icons at the bottom of the waterfall visual, you can choose to have insights display a scatter chart, stacked column chart, or a ribbon chart.
 
-![trio of insights visuals](media/end-user-analyze-visuals/power-bi-options.png)
+![Screenshot shows the icons at the bottom of the visual.](media/end-user-analyze-visuals/power-bi-options.png)
 
 Use the *thumbs up* and *thumbs down* icons at the top of the page to provide feedback about the visual and the feature.  
 
@@ -55,7 +55,7 @@ Use the *thumbs up* and *thumbs down* icons at the top of the page to provide fe
 
 You can use insights when your report is in Reading or Editing view, making it versatile for both analyzing data, and for creating visuals you can easily add to your reports. If you have the report open in Editing view, you'll see a plus icon next to the thumb icons. Select the plus icon to add the insight to your report as a new visual. 
 
-![trio of insights visuals](media/end-user-analyze-visuals/power-bi-add-visual.png)
+![Screenshot shows the plus icon used to add the insight.](media/end-user-analyze-visuals/power-bi-add-visual.png)
 
 ## Details of the results returned
 

@@ -73,7 +73,7 @@ completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 > It can take up to 24 hours for all events to show up, though full data is typically available much sooner.
 >
 >
-To learn more about using the Power BI REST API, including examples of how to get audit activity events, see [Admin - Get Activity Events](https://docs.microsoft.com/rest/api/power-bi/admin/getactivityevents) in the Power BI REST API reference documentation.
+To learn more about using the Power BI REST API, including examples of how to get audit activity events, see [Admin - Get Activity Events](/rest/api/power-bi/admin/getactivityevents) in the Power BI REST API reference documentation.
 
 ### Get-PowerBIActivityEvent cmdlet
 
@@ -118,7 +118,7 @@ You can filter the audit data by date range, user, dashboard, report, dataset, a
 
 You must meet these requirements to access audit logs:
 
-- You must either be a global admin or assigned the Audit Logs or View-Only Audit Logs role in Exchange Online to access the audit log. By default, the Compliance Management and Organization Management role groups come with these roles assigned on the **Permissions** page in the Exchange admin center. For more information about the roles that can view audit logs, see [Requirements to search the audit log](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#requirements-to-search-the-audit-log).
+- You must either be a global admin or assigned the Audit Logs or View-Only Audit Logs role in Exchange Online to access the audit log. By default, the Compliance Management and Organization Management role groups come with these roles assigned on the **Permissions** page in the Exchange admin center. For more information about the roles that can view audit logs, see [Requirements to search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#requirements-to-search-the-audit-log).
 
     To provide non-admin accounts with access to the audit log, add the user as a member of one of these role groups. If you want to do it another way, you can create a custom role group in the Exchange admin center, assign the Audit Logs or View-Only Audit Logs role to this group, and then add the non-admin account to the new role group. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
 
@@ -306,6 +306,7 @@ The following operations are available in both the audit and activity logs.
 | Failed to remove dataflow permissions             | FailedToRemoveDataflowPermissions           | Not currently used                       |
 | Generated Power BI dataflow SAS token             | GenerateDataflowSasToken                    |                                          |
 | Generated Power BI Embed Token                    | GenerateEmbedToken                          |                                          |
+| Generate screenshot                       | GenerateScreenshot |                     |
 | Imported file to Power BI                         | Import                                      |                                          |
 | Installed Power BI app                            | InstallApp                                  |                                          |
 | Migrated workspace to a capacity                  | MigrateWorkspaceIntoCapacity                |                                          |

@@ -48,7 +48,7 @@ The **WFE** cluster manages the initial connection and authentication process fo
 
 ![The WEF Cluster](media/whitepaper-powerbi-security/powerbi-security-whitepaper_02.png)
 
-When users attempt to connect to the Power BI service, the client's DNS service may communicate with the **Azure Traffic Manager** to find the nearest datacenter with a Power BI deployment. For more information about this process, see [Performance traffic routing method for Azure Traffic Manager](https://azure.microsoft.com/documentation/articles/traffic-manager-routing-methods/#performance-traffic-routing-method).
+When users attempt to connect to the Power BI service, the client's DNS service may communicate with the **Azure Traffic Manager** to find the nearest datacenter with a Power BI deployment. For more information about this process, see [Performance traffic routing method for Azure Traffic Manager](/azure/traffic-manager/traffic-manager-routing-methods#performance-traffic-routing-method).
 
 The WFE cluster nearest to the user manages the login and authentication sequence (described later in this article), and provides an AAD token to the user once authentication is successful. The ASP.NET component within the WFE cluster parses the request to determine which organization the user belongs to, and then consults the Power BI **Global Service**. The Global Service is a single Azure Table shared among all worldwide WFE and Back-End clusters that maps users and customer organizations to the datacenter that houses their Power BI tenant. The WFE specifies to the browser which Back-End cluster houses the organization's tenant. Once a user is authenticated, subsequent client interactions occur with the Back-End cluster directly, without the WFE being an intermediator for those requests.
 
@@ -166,12 +166,11 @@ A query for an import dataset consist of a collection of DAX queries that are _n
 
 The following table describes Power BI data based on the type of query being used. An **X** indicates the presence of Power BI data when using the associated query type.
 
-
-|  |Import  |DirectQuery  |Live Connect  |
-|---------|---------|---------|---------|
-|Schema     |     X    |    X     |         |
-|Row data     |    X     |         |         |
-|Visuals data caching     |    X     |     X    |    X     |
+|                         | Import   | DirectQuery | Live Connect  |
+|-------------------------|----------|-------------|---------------|
+|**Schema**               | X        | X           |               |
+|**Row data**             | X        |             |               |
+|**Visuals data caching** | X        | X           | X             |
 
 The distinction between a DirectQuery and other queries determines how the Power BI service handles the data at rest, and whether the query itself is encrypted. The following sections describe data at rest and in movement, and explain the encryption, location, and process for handling data.
 
@@ -222,19 +221,19 @@ For cloud-based data sources, the Data Movement Role encrypts encryption keys us
 
     a. Analysis Services on-premises, and DirectQuery – nothing is stored in the Power BI Service.
 
-    b. ETL – encrypted in Azure Blob storage, but all data currently in Azure Blob storage of the Power BI service uses [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption), also known as server-side encryption. Multi-geo uses SSE as well.
+    b. ETL – encrypted in Azure Blob storage, but all data currently in Azure Blob storage of the Power BI service uses [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption), also known as server-side encryption. Multi-geo uses SSE as well.
 
-    c. Push data v1 – stored encrypted in Azure Blob storage, but all data currently in Azure Blob storage in the Power BI service uses [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption), also known as server-side encryption. Multi-geo uses SSE as well. Push data v1 were discontinued beginning 2016. 
+    c. Push data v1 – stored encrypted in Azure Blob storage, but all data currently in Azure Blob storage in the Power BI service uses [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption), also known as server-side encryption. Multi-geo uses SSE as well. Push data v1 were discontinued beginning 2016. 
 
     d. Push data v2 – stored encrypted in Azure SQL.
 
-Power BI uses the client-side encryption approach, using cipher block chaining (CBC) mode with advanced encryption standard (AES), to encrypt its Azure Blob storage. You can [learn more about client-side encryption](https://azure.microsoft.com/documentation/articles/storage-client-side-encryption/).
+Power BI uses the client-side encryption approach, using cipher block chaining (CBC) mode with advanced encryption standard (AES), to encrypt its Azure Blob storage. You can [learn more about client-side encryption](/azure/storage/common/storage-client-side-encryption).
 
 Power BI provides data integrity monitoring in the following ways:
 
 * For data at rest in Azure SQL, Power BI uses dbcc, TDE, and constant page checksum as part of the native offerings of SQL.
 
-* For data at rest in Azure Blob storage, Power BI uses client-side encryption and HTTPS to transfer data into storage which includes integrity checks during the retrieval of the data. You can [learn more about Azure Blob storage security](https://azure.microsoft.com/documentation/articles/storage-security-guide/).
+* For data at rest in Azure Blob storage, Power BI uses client-side encryption and HTTPS to transfer data into storage which includes integrity checks during the retrieval of the data. You can [learn more about Azure Blob storage security](/azure/storage/blobs/security-recommendations).
 
 #### Reports
 
@@ -263,7 +262,7 @@ Power BI provides data integrity monitoring in the following ways:
 
 4. Original Power BI Desktop (.pbix) or Excel (.xlsx) files published to Power BI
 
-    Sometimes a copy or a shadow copy of the .xlsx or .pbix files are stored in Power BI's Azure Blob storage, and when that occurs, the data is encrypted. All such reports stored in the Power BI service, in Azure Blob storage, use [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption), also known as server-side encryption. Multi-geo uses SSE as well.
+    Sometimes a copy or a shadow copy of the .xlsx or .pbix files are stored in Power BI's Azure Blob storage, and when that occurs, the data is encrypted. All such reports stored in the Power BI service, in Azure Blob storage, use [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption), also known as server-side encryption. Multi-geo uses SSE as well.
 
 #### Dashboards and Dashboard Tiles
 
@@ -380,7 +379,7 @@ The following questions are common security questions and answers for Power BI. 
 
 * **SQL Server Analysis Services and Power BI:** For organizations that use on-premises SQL Server Analysis Services, Power BI offers the Power BI on-premises data gateway (which is a **Gateway**, as referenced in previous sections).  The Power BI on-premises data gateway can enforce role-level security on data sources (RLS). For more information on RLS, see **User Authentication to Data Sources** earlier in this document. For more information about gateways, see [on-premises data gateway](../connect-data/service-gateway-onprem.md).
 
-  In addition, organizations can use Kerberos for **single sign-on** (SSO) and seamlessly connect from Power BI to on-premises data sources such as SQL Server, SAP HANA, and Teradata. For more information, and the specific configuration requirements, see [**Use Kerberos for SSO from Power BI to on-premises data sources**](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data).
+  In addition, organizations can use Kerberos for **single sign-on** (SSO) and seamlessly connect from Power BI to on-premises data sources such as SQL Server, SAP HANA, and Teradata. For more information, and the specific configuration requirements, see [**Use Kerberos for SSO from Power BI to on-premises data sources**](../connect-data/service-gateway-sso-overview.md).
 
 * **Non-domain connections**: For data connections that are not domain-joined and not capable of Role Level Security (RLS), the user must provide credentials during the connection sequence, which Power BI then passes to the data source to establish the connection. If permissions are sufficient, data is loaded from the data source into the Power BI service.
 
@@ -464,7 +463,7 @@ The following questions are common security questions and answers for Power BI. 
 
 **How does Microsoft treat connections for customers who have Power BI Premium subscriptions? Are those connections different than those established for the non-Premium Power BI service?**
 
-* The connections established for customers with Power BI Premium subscriptions implement an [Azure Business-to-Business (B2B)](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) authorization process, using Azure Active Directory (AD) to enable access control and authorization. Power BI handles connections from Power BI Premium subscribers to Power BI Premium resources just as it would any other Azure AD user.
+* The connections established for customers with Power BI Premium subscriptions implement an [Azure Business-to-Business (B2B)](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) authorization process, using Azure Active Directory (AD) to enable access control and authorization. Power BI handles connections from Power BI Premium subscribers to Power BI Premium resources just as it would any other Azure AD user.
 
 ## Conclusion
 

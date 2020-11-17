@@ -87,7 +87,7 @@ Actions and subsequent updates in Power BI visuals occur in one of these three p
 
 * A user changes visual properties. (For example, a user expands a tree and the visual saves state in the visual properties.)
 
-    A visual can save properties values thought the Power BI API. For example, when a user interacts with the visual and the visual needs to save or update properties values, the visual can call the `presistProperties` method.
+    A visual can save properties values through the Power BI API. For example, when a user interacts with the visual and the visual needs to save or update properties values, the visual can call the `presistProperties` method.
 
 * A user selects a URL.
 
@@ -125,5 +125,5 @@ Actions and subsequent updates in Power BI visuals occur in one of these three p
 
 Interested in creating visualizations and adding them to Microsoft AppSource? See these articles:
 
-* [Develop a Power BI visual](./custom-visual-develop-tutorial.md)
+* [Developing a Power BI circle card visual](./develop-circle-card.md)
 * [Publish Power BI visuals to Partner Center](office-store.md)
