@@ -104,7 +104,7 @@ To download a sample report and publish it to your workspace, follow these steps
 
 2. Select the **Code arrow** and then select **Download zip**.
 
-    :::image type="content" source="media/embed-sample-for-customers/download-sample-report.png" alt-text="A screenshot showing the ZIP download option in the Power BI desktop samples GitHub":::
+    :::image type="content" source="media/embed-sample-for-customers/download-sample-report.png" alt-text="A screenshot showing the ZIP download option in the Power B I desktop samples GitHub":::
 
 3. Extract the downloaded zip and navigate to the **Samples Reports** folder.
 
@@ -112,83 +112,71 @@ To download a sample report and publish it to your workspace, follow these steps
 
 ## Embed your content
 
+To embed your content you'll need to obtain certain values. The table blow shows the required values, and indicates if they're applicable to the *service principal* authentication method, the *master user* authentication method, or both.
+
+|Value |Code name   |Service principal   |Master user  |
+|-------------------|--------------------|---|---|
+|[Application ID](#application-id) |`applicationId`     |![Applies to.](../../media/yes.png) |![Applies to.](../../media/yes.png) |
+|[Workspace ID](#workspace-id)     |`workspaceI`        |![Applies to.](../../media/yes.png) |![Applies to.](../../media/yes.png) |
+|[Report ID](#report-id)           |`reportId`          |![Applies to.](../../media/yes.png) |![Applies to.](../../media/yes.png) |
+|[Application secret](#application-secret) |`applicationsecret` |![Applies to.](../../media/yes.png) |![Does not apply to.](../../media/no.png) |
+|[Tenant](#tenant)                 |`tenant`            |![Applies to.](../../media/yes.png) |![Does not apply to.](../../media/no.png) |
+|[Power BI username](#power-bi-username)   |`pbiUsername`       |![Does not apply to.](../../media/no.png) |![Applies to.](../../media/yes.png) |
+|[Power BI password](#power-bi-password)   |`pbiPassword`       |![Does not apply to.](../../media/no.png) |![Applies to.](../../media/yes.png) |
+
+### Application ID
+
+|         |
+|---------|
+|<Token>Applies to: ![Applies to.](../../media/yes.png) Service principal ![Applies to.](../../media/yes.png) Master user</Token>     |
+|         |
+
+To get the application ID GUID, follow these steps:
+
+1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
+
+2. Search for **App registrations** and click the **App registrations** link.
+
+3. Select the Azure AD app your using for embedding your Power BI content.
+
+4. From the **Overview** blade, copy the **Application (clent) ID** GUID. 
+
+### Workspace ID
+
+|         |
+|---------|
+|<Token>Applies to: ![Applies to.](../../media/yes.png) Service principal ![Applies to.](../../media/yes.png) Master user</Token>     |
+|         |
+
+To get the workspace ID GUID, follow these steps:
+
+1. Sign in to Power BI service.
+
+2. Open the report you want to embed.
+
+3. Copy the GUID from the URL. The GUID is the number between **/groups/** and **/reports/**.
+
+    :::image type="content" source="media/embed-sample-for-customers/workspace-id.png" alt-text="A screenshot showing workspace ID GUID in the Power B I service U R L":::
+
+### Report ID
+
+|         |
+|---------|
+|<Token>Applies to: ![Applies to.](../../media/yes.png) Service principal ![Applies to.](../../media/yes.png) Master user</Token>     |
+|         |
+
+
+
 tabs...
 
 
 
 
-## Embed content using the sample application
 
-This sample is deliberately kept simple for demonstration purposes. It's up to you or your developers to protect the application secret or the master account credentials.
 
-Follow the steps below to start embedding your content using the sample application.
 
-1. Download [Visual Studio](https://www.visualstudio.com/) (version 2013 or later). Make sure to download the latest [NuGet package](https://www.nuget.org/profiles/powerbi).
 
-2. Download the [App Owns Data sample](https://github.com/Microsoft/PowerBI-Developer-Samples) from GitHub to get started.
 
-    ![App Owns Data application sample](media/embed-sample-for-customers/embed-sample-for-customers-026.png)
-
-3. Open the **Web.config** file in the sample application. There are fields you need to fill in to run the application. You can choose **MasterUser** or **ServicePrincipal** for the **AuthenticationType**. Depending on which type of authentication method you choose there are different fields to complete.
-
-    > [!Note]
-    > The default **AuthenticationType** in this sample is MasterUser.
-
-    <center>
-
-    | **MasterUser** <br> (Power BI Pro license) | **ServicePrincipal** <br> (app-only token)|
-    |---------------|-------------------|
-    | [applicationId](#application-id) | [applicationId](#application-id) |
-    | [workspaceId](#workspace-id) | [workspaceId](#workspace-id) |
-    | [reportId](#report-id) | [reportId](#report-id) |
-    | [pbiUsername](#power-bi-username-and-password) |  |
-    | [pbiPassword](#power-bi-username-and-password) |  |
-    |  | [applicationsecret](#application-secret) |
-    |  | [tenant](#tenant) |
-
-   </center>
-
-    ![Web Config file](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
-
-### Application ID
-
-This attribute is needed for both AuthenticationTypes (master account and [service principal](embed-service-principal.md)).
-
-Fill in the **applicationId** information with the **Application ID** from **Azure**. The **applicationId** is used by the application to identify itself to the users from which you're requesting permissions.
-
-To get the **applicationId**, follow these steps:
-
-1. Sign into the [Azure portal](https://portal.azure.com).
-
-2. In the left-hand nav pane, select **All Services**, and select **App Registrations**.
-
-    ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
-
-3. Select the application that needs the **applicationId**.
-
-    ![Choosing App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
-
-4. There's an **Application ID** that is listed as a GUID. Use this **Application ID** as the **applicationId** for the application.
-
-    ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
-
-### Workspace ID
-
-This attribute is needed for both AuthenticationTypes (master account and [service principal](embed-service-principal.md)).
-
-Fill in the **workspaceId** information with the workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using PowerShell.
-
-URL <br>
-
-![workspaceId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
-
-PowerShell <br>
-
-```powershell
-Get-PowerBIworkspace -name "App Owns Embed Test"
-```
-
-   ![workspaceId from PowerShell](media/embed-sample-for-customers/embed-sample-for-customers-031-ps.png)
 
 ### Report ID
 
