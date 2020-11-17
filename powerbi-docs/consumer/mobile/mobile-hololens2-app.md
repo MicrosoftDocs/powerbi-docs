@@ -20,7 +20,7 @@ The Power BI app for HoloLens 2 blends your Power BI reports and dashboards with
 
 The Power BI app for HoloLens 2 is available from the [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=526478).
 
-The Power BI app works with single sign on, meaning that the app uses the identity of the user currently signed in to the device to authenticate against the Power BI service.
+The app works with single sign on, meaning that the app uses the identity of the user currently signed in to the Hololens 2 device to authenticate against the Power BI service.
 
 [Learn more](/hololens/holographic-store-apps) about installing apps on your HoloLens 2 device.
 
