@@ -92,11 +92,7 @@ To create a workspace, do the following:
 
 ## Create and publish a Power BI report
 
-Your next step is to create a report and upload it to your workspace.
-
-* [Create your report](fundamentals/desktop-getting-started.md#build-reports) using Power BI Desktop, and then [publish](fundamentals/desktop-getting-started.md#share-your-work) it to your workspace.
-
-* Upload a sample report to your workspace.
+Your next step is to create a report and upload it to your workspace. You can [create your own report](fundamentals/desktop-getting-started.md#build-reports) using Power BI Desktop, and then [publish](fundamentals/desktop-getting-started.md#share-your-work) it to your workspace. Or, you can upload a sample report to your workspace.
 
 To download a sample report and publish it to your workspace, follow these steps:
 
@@ -165,36 +161,33 @@ To get the workspace ID GUID, follow these steps:
 |<Token>Applies to: ![Applies to.](../../media/yes.png) Service principal ![Applies to.](../../media/yes.png) Master user</Token>     |
 |         |
 
+1. Sign in to Power BI service.
+
+2. Open the report you want to embed.
+
+3. Copy the GUID from the URL. The GUID is the number between **/reports/** and **/ReportSection**.
+
+    :::image type="content" source="media/embed-sample-for-customers/report-id.png" alt-text="A screenshot showing report ID GUID in the Power B I service U R L":::
+
+# [Service Princial](#tab/SP)
+
+|         |
+|---------|
+|<Token>Applies to: ![Applies to.](../../media/yes.png) Service principal ![Does not apply to.](../../media/no.png) Master user</Token>     |
+|         |
+
+# [Master user](#tab/MU)
+
+|         |
+|---------|
+|<Token>Applies to: ![Does not apply to.](../../media/no.png) Service principal ![Applies to.](../../media/yes.png) Master user</Token>     |
+|         |
+
+Obtain the *user name* and *password* of the Power BI user you're using as your **master user**. This is the same user you used to sign in to Power BI service,
+
+---
 
 
-tabs...
-
-
-
-
-
-
-
-
-
-
-### Report ID
-
-This attribute is needed for both AuthenticationTypes (master account and [service principal](embed-service-principal.md)).
-
-Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using PowerShell.
-
-URL<br>
-
-![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
-
-PowerShell <br>
-
-```powershell
-Get-PowerBIworkspace -name "App Owns Embed Test" | Get-PowerBIReport
-```
-
-![reportId from PowerShell](media/embed-sample-for-customers/embed-sample-for-customers-032-ps.png)
 
 ### Power BI username and password
 
