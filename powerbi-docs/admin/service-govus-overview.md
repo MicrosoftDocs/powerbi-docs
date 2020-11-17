@@ -126,6 +126,7 @@ The following table lists features that aren't available in a particular governm
 |[Data Protection (MIP labels)](service-security-sensitivity-label-overview.md)|Q4 2020|Q4 2020 |Q4 2020|
 |[Template apps](../connect-data/service-template-apps-overview.md)<sup>3</sup>|Q4 2020 |Q4 2020| Q4 2020|
 |[Custom Visuals](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|Q4 2020 |Q4 2020| Q4 2020|
+|[Azure Stream Analytics](/azure/stream-analytics/stream-analytics-power-bi-dashboard)| Q4 2020|Q4 2020|Q4 2020|
 |[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[Bring Your Own Storage (Azure Data Lake Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[QR Code generation](../create-reports/service-create-qr-code-for-tile.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
