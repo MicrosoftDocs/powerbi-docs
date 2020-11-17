@@ -161,6 +161,7 @@ Almost all reporting capabilities are supported for DirectQuery models. As such,
 * **Quick Insights isn't supported:** Power BI Quick Insights searches different subsets of your dataset while applying a set of sophisticated algorithms to discover potentially interesting insights. Given the need for very high performance queries, this capability isn't available on datasets using DirectQuery.
 * **Q&A isn't supported:** Power BI Q&A enables you to explore your data using intuitive, natural language capabilities and receive answers in the form of charts and graphs. However, it's currently not supported on datasets using DirectQuery.
 * **Using Explore in Excel will likely result in poorer performance:** You can explore your data by using the Explore in Excel capability on a dataset. This approach allows Pivot Tables and Pivot Charts to be created in Excel. While this capability is supported on datasets using DirectQuery, the performance is generally slower than creating visuals in Power BI, and therefore if the use of Excel is important for your scenarios, this fact should be accounted for in your decision to use DirectQuery.
+* **Maximum length for text columns:** The maximum length of the data in a text column for datasets using DirectQuery is 32,764 characters. Reporting on longer texts than that will result in an error.
 
 ### Security
 
