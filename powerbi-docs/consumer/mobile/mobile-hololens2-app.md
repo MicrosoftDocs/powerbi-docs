@@ -24,7 +24,9 @@ The Power BI app for HoloLens 2 is available from the [Microsoft Store](https://
 
 ## Open the Power BI app on your HoloLens 2
 
-Open the **Start** menu and select the Power BI app. The app opens with all your favorited reports and dashboards loaded into your virtual toolbelt, where you can select them for viewing.
+Open the **Start** menu and select the Power BI app. The app will open with all your favorited reports and dashboards loaded into your virtual toolbelt, where you can select them for viewing.
+
+The app supports single sign on, meaning that the app uses the identity of the user currently signed in to the device to authenticate against the Power BI service.
 
 ## Using the Power BI app for HoloLens 2
 
