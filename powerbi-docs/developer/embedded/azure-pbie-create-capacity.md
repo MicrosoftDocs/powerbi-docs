@@ -8,7 +8,7 @@ ms.subservice: ''
 ms.devlang: csharp, javascript
 ms.topic: how-to
 ms.reviewer: zakharb
-ms.custom: subject-armqs
+ms.custom: subject-armqs, devx-track-azurecli
 ms.date: 08/02/2020
 ---
 
