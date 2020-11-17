@@ -455,6 +455,13 @@ Users in the organization can tag dashboards with classifications that indicate 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
 
+### Web content on dashboard tiles
+
+Users in the organization can add and view web content tiles on Power BI dashboards. [Learn more](../create-reports/service-dashboard-add-widget.md)
+
+> [!NOTE]
+> This may expose your org to security risks via malicious web content.
+
 ## Developer settings
 
 ### Embed content in apps
