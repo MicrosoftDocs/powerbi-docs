@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 11/12/2020
+ms.date: 11/17/2020
 ms.author: maggies
 
 LocalizationGroup: Get started
 ---
 # Export a paginated report for each row in an Excel Online table or SharePoint list
 
-With [Power Automate](/power-automate/getting-started), you can automate exporting and distributing Power BI paginated reports to a variety of supported formats and scenarios. In this article, you use a Power Automate template to automate setting up recurring exports of single or multiple paginated reports. You export them in a desired format for each row in an Excel Online table or SharePoint Online list. You can distribute the exported paginated report to OneDrive for Business or a SharePoint site, or email it via Office 365 Outlook.
+With [Power Automate](/power-automate/getting-started), you can automate exporting and distributing Power BI paginated reports to a variety of supported formats and scenarios. In this article, you use a Power Automate template to automate setting up recurring exports of single or multiple paginated reports. You export them in a desired format for each row in an Excel Online table or SharePoint Online list. You can distribute the exported paginated report to OneDrive for Business or a SharePoint Online site, or email it via Office 365 Outlook.
 
 :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-overview.png" alt-text="Export a paginated report by using an Excel Online table.":::
 
-Each row in your Excel Online table or SharePoint Online list can represent a single user to receive a paginated report on a subscription basis. Or instead, each row can represent a unique paginated report you wish to distribute. Your table or list requires a column that specifies how to distribute a report, whether OneDrive, SharePoint, or Outlook. The Power Automate flow uses this column in its Switch statement.
+Each row in your Excel Online table or SharePoint Online list can represent a single user to receive a paginated report on a subscription basis. Or instead, each row can represent a unique paginated report you wish to distribute. Your table or list requires a column that specifies how to distribute a report, whether OneDrive, SharePoint Online, or Outlook. The Power Automate flow uses this column in its Switch statement.
 
 Looking for other Power Automate templates for Power BI paginated reports? See [Export Power BI paginated reports with Power Automate](service-automate-paginated-integration.md).
 
@@ -40,7 +40,7 @@ To follow along, make sure you have:
 
     :::image type="content" source="media/service-automate-paginated-integration/power-bi-paginate-automate.png" alt-text="Screenshot of Power Automate templates for Power BI paginated reports.":::
 
-1. Select the **Export a Power BI paginated report for each row in an Excel Online table** or **Export a Power BI paginated report for items in a SharePoint Online list** template. Make sure you're signed into Excel Online, Power BI, OneDrive for Business, SharePoint, and Office 365 Outlook. Select **Continue**.  
+1. Select the **Export a Power BI paginated report for each row in an Excel Online table** or **Export a Power BI paginated report for items in a SharePoint Online list** template. Make sure you're signed into Excel Online, Power BI, OneDrive for Business, SharePoint Online, and Office 365 Outlook. Select **Continue**.  
 
    :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-excel-online-1.png" alt-text="Export a Power BI paginated report for each row in an Excel Online table.":::
 
@@ -52,7 +52,7 @@ To follow along, make sure you have:
 
     :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-advanced-recurrence-3.png" alt-text="Optional, select advanced recurrence options.":::
 
-1. In the **Location** box, select OneDrive for Business or the SharePoint site where your Excel Online table or SharePoint Online list is saved. Then select the **Document Library** from the dropdown.
+1. In the **Location** box, select OneDrive for Business or the SharePoint Online site where your Excel Online table or SharePoint Online list is saved. Then select the **Document Library** from the dropdown.
 
     :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-location-4.png" alt-text="Select the locaton of the Excel Online table.":::
 
@@ -91,9 +91,9 @@ To follow along, make sure you have:
 
     :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-case-onedrive-13.png" alt-text="In the case where you're saving to OneDrive.":::
 
-1. In the case where you're saving your paginated report to SharePoint, enter the **Site Address** and **Folder Path** where it should be saved. 
+1. In the case where you're saving your paginated report to SharePoint Online, enter the **Site Address** and **Folder Path** where it should be saved. 
 
-    :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-case-sharepoint-14.png" alt-text="In the case where you're saving your paginated report to SharePoint.":::
+    :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-case-sharepoint-14.png" alt-text="In the case where you're saving your paginated report to SharePoint Online.":::
 
 1. In the case where you're sending your paginated report as an email via Outlook, populate the **To**, **Subject**, and **Body** boxes. These boxes can contain static content, or dynamic content from your Excel Online table or SharePoint Online list. Power Automate attaches your paginated report to this email automatically.  
 
