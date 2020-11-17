@@ -54,7 +54,7 @@ To follow along, make sure you have:
 
 1. In the **Location** box, select OneDrive for Business or the SharePoint Online site where your Excel Online table or SharePoint Online list is saved. Then select the **Document Library** from the dropdown.
 
-    :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-location-4.png" alt-text="Select the locaton of the Excel Online table.":::
+    :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-location-4.png" alt-text="Select the location of the Excel Online table.":::
 
 1. Select the Excel Online file or SharePoint Online list in the **File** box. Select the name of the table or list from the dropdown in the **Table** box. 
  
