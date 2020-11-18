@@ -217,6 +217,7 @@ For example, say your report has an 8.5" X 11" format and you've set the side ma
 ## Limitations and considerations 
 
 - For datasets that use a Live Connection to Analysis Services, you can connect directly by using the underlying Analysis Services connection instead of a shared dataset.
+- If your Power BI dataset uses Direct Query, you must include a measure with any dataset you wish to create in Power BI Report Builder to return proper data results even if you don't wish to surface it in your report.
 - Datasets with Promoted or Certified endorsements appear in the list of available datasets, but they aren't marked as such. 
 - You can't embed paginated reports that are based on Power BI shared datasets in the "App Owns Data" scenario.
 
