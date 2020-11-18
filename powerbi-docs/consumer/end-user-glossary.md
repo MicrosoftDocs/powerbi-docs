@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: reference
-ms.date: 08/24/2020
+ms.date: 11/17/2020
 ms.custom: contperfq1
 ms.author: mihart
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and they don't get confused or frustrated and instead get the result they expect.
@@ -119,7 +119,7 @@ Visuals that are created by the community and Microsoft. They can be downloaded 
 ## D
 
 **dashboard**    
-A selection of visuals that communicate status and metrics. A dashboard organizes and presents data in an easy-to-understand way.
+In the Power BI service, a dashboard is a single page, often called a canvas, that uses visualizations to tell a story. Because it is limited to one page, a well-designed dashboard contains only the most important elements of that story. Dashboards can only be created and viewed in the Power BI service, not in Power BI Desktop. For more information, see [basic concepts, dashboards](end-user-basic-concepts#dashboards).
 
 **data classification**    
 See classification
