@@ -28,7 +28,7 @@ Relationship paths are deterministic, meaning that filters are always propagated
 
 Let's see how relationships propagate filters with an animated example.
 
-![Animated example of relationship filter propagation](media/desktop-relationships-understand/animation-filter-propagation.gif)
+:::image type="content" source="media/desktop-relationships-understand/animation-filter-propagation.gif" alt-text="Animated example of relationship filter propagation.":::
 
 In this example, the model consists of four tables: **Category**, **Product**, **Year**, and **Sales**. The **Category** table relates to the **Product** table, and the **Product** table relates to the **Sales** table. The **Year** table also relates to the **Sales** table. All relationships are one-to-many (the details of which are described later in this article).
 
@@ -146,7 +146,7 @@ A Composite model, however, can comprise tables using different storage modes (I
 
 Let's see an example of a Composite model.
 
-![Example of a Composite model consisting of two islands](media/desktop-relationships-understand/data-island-example.png)
+:::image type="content" source="media/desktop-relationships-understand/data-island-example.png" alt-text="Example of a Composite model consisting of two islands.":::
 
 In this example, the Composite model consists of two islands: a Vertipaq data island and a DirectQuery source data island. The Vertipaq data island contains three tables, and the DirectQuery source data island contains two tables. One cross-island relationship exists to relate a table in the Vertipaq data island to a table in the DirectQuery source data island.
 
@@ -156,7 +156,7 @@ A model relationship is _regular_ when the query engine can determine the "one" 
 
 In the following example, there are two regular relationships, both marked as **S**. Relationships include the One-to-many relationship contained within the Vertipaq island, and the One-to-many relationship contained within the DirectQuery source.
 
-![Example of a Composite model consisting of two islands with regular relationships marked](media/desktop-relationships-understand/data-island-example-strong.png)
+:::image type="content" source="media/desktop-relationships-understand/data-island-example-strong.png" alt-text="Example of a Composite model consisting of two islands with regular relationships marked.":::
 
 For Import models, where all data is stored in the Vertipaq cache, a data structure is created for each regular relationship at data refresh time. The data structures consist of indexed mappings of all column-to-column values, and their purpose is to accelerate joining tables at query time.
 
@@ -173,7 +173,7 @@ The blank virtual rows are effectively _Unknown Members_. Unknown members repres
 
 Let's see how table expansion works with an animated example.
 
-![Animated example of table expansion](media/desktop-relationships-understand/animation-expanded-table.gif)
+:::image type="content" source="media/desktop-relationships-understand/animation-expanded-table.gif" alt-text="Animated example of table expansion.":::
 
 In this example, the model consists of three tables: **Category**, **Product**, and **Sales**. The **Category** table relates to the **Product** table with a One-to-many relationship, and the **Product** table relates to the **Sales** table with a One-to-many relationship. The **Category** table contains two rows, the **Product** table contains three rows, and the **Sales** tables contains five rows. There are matching values on both sides of all relationships meaning that there are no referential integrity violations. A query-time expanded table is revealed. The table consists of the columns from all three tables. It's effectively a denormalized perspective of the data contained in the three tables. A new row is added to the **Sales** table, and it has a production identifier value (9) that has no matching value in the **Product** table. It's a referential integrity violation. In the expanded table, the new row has (Blank) values for the **Category** and **Product** table columns.
 
@@ -184,9 +184,9 @@ A model relationship is _limited_ when there's no guaranteed "one" side. It can 
 - The relationship uses a Many-to-many cardinality type (even if one or both columns contain unique values)
 - The relationship is cross-island (which can only ever be the case for Composite models)
 
-In the following example, there are two limited relationships, both marked as **W**. The two relationships include the Many-to-many relationship contained within the Vertipaq island, and the One-to-many cross-island relationship.
+In the following example, there are two limited relationships, both marked as **L**. The two relationships include the Many-to-many relationship contained within the Vertipaq island, and the One-to-many cross-island relationship.
 
-![Example of a Composite model consisting of two islands with limited relationships marked](media/desktop-relationships-understand/data-island-example-weak.png)
+:::image type="content" source="media/desktop-relationships-understand/data-island-example-limited.png" alt-text="Example of a Composite model consisting of two islands with limited relationships marked.":::
 
 For Import models, data structures are never created for limited relationships. This means table joins must be resolved at query time.
 
