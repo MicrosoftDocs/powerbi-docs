@@ -119,7 +119,7 @@ Visuals that are created by the community and Microsoft. They can be downloaded 
 ## D
 
 **dashboard**    
-In the Power BI service, a dashboard is a single page, often called a canvas, that uses visualizations to tell a story. Because it is limited to one page, a well-designed dashboard contains only the most important elements of that story. Dashboards can only be created and viewed in the Power BI service, not in Power BI Desktop. For more information, see [basic concepts, dashboards](end-user-basic-concepts#dashboards).
+In the Power BI service, a dashboard is a single page, often called a canvas, that uses visualizations to tell a story. Because it is limited to one page, a well-designed dashboard contains only the most important elements of that story. Dashboards can only be created and viewed in the Power BI service, not in Power BI Desktop. For more information, see [basic concepts, dashboards](end-user-basic-concepts.md).
 
 **data classification**    
 See classification
