@@ -47,9 +47,6 @@ Centralized online repository where you can browse and discover dashboards, repo
 **ArcGIS for Power BI**    
 ArcGIS is a mapping and analytics platform created by the company ESRI. The name of the visual included in the Power BI visuals library is called ArcGIS for Power BI.
 
-**assign**    
-[Power BI Premium] Verb for moving a workspace into or out of a capacity. Don't use promote for moving a workspace to a capacity because this has the connotation of dedicated being superior to shared capacity. 
-
 **Auto Insights**    
 Are now called *Quick Insights*.
 
@@ -69,7 +66,7 @@ The navigation at the top left to quickly navigate between reports and dashboard
 A mathematical determination of the size or number of something.
 
 **Capacity**    
-[Power BI Premium] Data models running on dedicated hardware in Microsoft cloud data centers to help ensure consistent performance at scale. BI solutions are delivered to the entire organization regardless of Power BI license.
+[Power BI Premium] Data models running on hardware fully managed by Microsoft in Microsoft cloud data centers to help ensure consistent performance at scale. BI solutions are delivered to the entire organization regardless of Power BI license.
 
 **card** (visual type)    
 A Power BI [visual type](end-user-visual-type.md).
@@ -326,7 +323,7 @@ Also referred to as *Desktop*. The free Windows application of Power BI you can 
 A product used by developers to embed Power BI dashboards and reports into their own apps, sites, and tools.
 
 **Power BI Premium**    
-An add-on to the Power BI Pro license that enables organizations to predictably scale BI solutions through the purchasing of dedicated hardware. See *account*.
+An add-on to the Power BI Pro license that enables organizations to predictably scale BI solutions through the purchasing of reserved hardware in the Microsoft cloud. See *account*.
 
 **Power BI Pro**    
 A monthly per-user license that provides the ability to build reports and dashboards, collaborate on shared data, keep data up-to date automatically, audit and govern how data is accessed and used, and the ability to package content to distribute (Power BI apps). See *account*.
