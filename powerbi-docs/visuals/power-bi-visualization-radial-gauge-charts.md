@@ -40,7 +40,7 @@ Radial gauges are a great choice to:
 
 ## Prerequisites
 
-This tutorial uses the [Financial sample Excel file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+This tutorial uses the [Financial sample Excel file](https://go.microsoft.com/fwlink/?LinkID=521962).
 
 1. From the upper left section of the menubar, select **Get Data** > **Excel**
    
