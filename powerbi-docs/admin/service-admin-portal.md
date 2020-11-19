@@ -373,9 +373,6 @@ Users in the organization can use the export report to file API to export report
 ### Certification
 Allow users in this org to certify datasets, dataflows, reports, and apps. See [Enable content certification](service-admin-setup-certification.md) for details.
 
->[!NOTE]
->When a user certifies an item, their contact details will be visible along with the certification badge.
-
 ### Email Subscriptions
 Users in the organization can create email subscriptions. Learn more about [subscriptions](../collaborate-share/service-publish-to-web.md).
 
