@@ -267,6 +267,16 @@ The **Invite external users to your organization** setting helps organizations c
 
 To invite external users to your organization, a user also needs the Azure Active Directory Guest Inviter role. This setting only controls the ability to invite through Power BI. 
 
+### Allow external guest users to edit and manage content in the organization
+
+Azure AD B2B guest users can edit and manage content in the organization. [Learn more](service-admin-azure-ad-b2b.md)
+
+The following image shows the option to Allow external guest users to edit and manage content in the organization.
+
+![Allow external guest users to edit and manage content in the organization](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
+
+In the admin portal, you also control which users have permissions to invite external users to the organization. See [Share content with external users](#export-and-sharing-settings) in this article for details.
+
 ### Publish to web
 
 As a Power BI admin, the **Publish to web** setting gives you options that let users create embed codes to publish reports to the web. This functionality makes the report and its data available to anyone on the web. Learn more about [publishing to the web](../collaborate-share/service-publish-to-web.md).
@@ -295,60 +305,76 @@ Users see different options in the UI based on what the **Publish to web** setti
 |**Embed codes** within admin portal|Status reflects one of the following:<br>* Active<br>* Not supported<br>* Blocked|Status displays **Disabled**|Status reflects one of the following:<br>* Active<br>* Not supported<br>* Blocked<br><br>If a user isn't authorized based on the tenant setting, status displays **infringed**.|
 |Existing published reports|All enabled|All disabled|Reports continue to render for all.|
 
-### Export data
+### Copy and paste visuals
 
-Users in the organization can export data from a tile or visualization. This setting controls Analyze in Excel, export to .csv, dataset downloads (.pbix), and Power BI Service Live Connect features. Learn more about [exporting data from a tile or visual](../visuals/power-bi-visualization-export-data.md).
+Users in the organization can copy visuals from a tile or report visual and paste them as static images into external applications.
 
->[!NOTE]
-> Before the introduction of the Export to Excel setting, this setting also controlled exporting data to Excel files. See the [note under Export to Excel](#export-to-excel) for detail.
-
-![Export data setting](media/service-admin-portal/powerbi-admin-portal-export-data-setting.png)
-
-The following image shows the option to export data from a tile.
-
-![Export data from a tile](media/service-admin-portal/powerbi-admin-export-data.png)
-
-> [!NOTE]
-> Disabling **Export Data** also prevents users from using the [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) feature, as well as using the Power BI service live connection.
+![Screenshot of copy paste visuals enable switch.](media/service-admin-portal/powerbi-admin-portal-copy-paste-visuals-setting.png)
 
 ### Export to Excel
 
 Users in the organization can export the data from a visualization to an Excel file.
 
-![Export to Excel setting](media/service-admin-portal/powerbi-admin-portal-export-to-excel-setting.png)
+![Screenshot of export to Excel setting](media/service-admin-portal/powerbi-admin-portal-export-to-excel-setting.png)
 
->[!IMPORTANT]
-> Before the introduction of the Export to Excel setting, exporting to an Excel file was controlled by the Export data setting. Therefore, on tenants that existed before the introduction of the Export to Excel setting, the first time Power BI admins look at the Export to Excel setting they will see that it has *Unapplied changes*. They must apply these changes in order for the new setting to take effect. Otherwise, exporting to an Excel file will continue to be controlled by the Export data setting.
+### Export to .csv
+
+Users in the organization can export data from a tile, visualization, or paginated report to a .csv file.
+
+![Screenshot of export to .csv setting](media/service-admin-portal/powerbi-admin-portal-export-to-csv-setting.png)
+
+### Download reports
+
+Users in the organization can download .pbix files and paginated reports.
+
+![Screenshot of download reports setting.](media/service-admin-portal/powerbi-admin-portal-download-reports-setting.png)
+
+### Allow live connections
+
+Users in the organization can use Power BI service Live Connect. This includes Analyze in Excel.
+
+![Screenshot of allow live connections setting.](media/service-admin-portal/powerbi-admin-portal-allow-live-connections-setting.png)
 
 ### Export reports as PowerPoint presentations or PDF documents
 
-Users in the organization can export Power BI reports as PowerPoint files or PDF documents. [Learn more](../consumer/end-user-powerpoint.md)
+Users in the organization can export reports as PowerPoint files or PDF documents.
 
-The following image shows the **File** menu for a report when the **Export reports as PowerPoint presentations or PDF documents** setting is enabled.
+![Screenshot of export reports as PowerPoint or PDF documents.](media/service-admin-portal/powerbi-admin-portal-export-pptx-pdf-setting.png)
 
-![Export reports as PowerPoint presentations](media/service-admin-portal/powerbi-admin-powerpoint.png)
+### Export reports as MHTML documents
+
+Users in the organization can export Paginated reports as MHTML documents.
+
+![Screenshot of export to MHTML setting.](media/service-admin-portal/powerbi-admin-portal-export-mhtml-setting.png)
+
+### Export reports as Word documents
+
+UUsers in the organization can export Paginated reports as Word documents.
+
+![Screenshot of export to Word setting.](media/service-admin-portal/powerbi-admin-portal-export-word-setting.png)
+
+### Export reports as XML documents
+
+Users in the organization can export Paginated reports as XML documents.
+
+![Screenshot of export to XML setting.](media/service-admin-portal/powerbi-admin-portal-export-xml-setting.png)
+
+### Export reports as image files (preview)
+
+Users in the organization can use the export report to file API to export reports as image files.
+
+![Screenshot of export as image setting.](media/service-admin-portal/powerbi-admin-portal-export-as-image-setting.png)
 
 ### Print dashboards and reports
 
-Users in the organization can print dashboards and reports. [Learn more](../consumer/end-user-print.md)
 
-The following image shows the option to print a dashboard.
+![Screenshot of print dashboards and reports setting.](media/service-admin-portal/powerbi-admin-portal-print-dashboards-reports-setting.png)
 
-![Print dashboard](media/service-admin-portal/powerbi-admin-print-dashboard.png)
+### Certification
+Allow users in this org to certify datasets, dataflows, reports, and apps. See [Enable content certification](service-admin-setup-certification.md) for details.
 
-The following image shows the **File** menu for a report when the **Print dashboards and reports** setting is enabled.
-
-![Print report](media/service-admin-portal/powerbi-admin-print-report.png)
-
-### Allow external guest users to edit and manage content in the organization
-
-Azure AD B2B guest users can edit and manage content in the organization. [Learn more](service-admin-azure-ad-b2b.md)
-
-The following image shows the option to Allow external guest users to edit and manage content in the organization.
-
-![Allow external guest users to edit and manage content in the organization](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
-
-In the admin portal, you also control which users have permissions to invite external users to the organization. See [Share content with external users](#export-and-sharing-settings) in this article for details.
+>[!NOTE]
+>When a user certifies an item, their contact details will be visible along with the certification badge.
 
 ### Email Subscriptions
 Users in the organization can create email subscriptions. Learn more about [subscriptions](../collaborate-share/service-publish-to-web.md).
@@ -362,6 +388,22 @@ Allow some or all report authors in your organization to feature their content o
 We recommend starting with a small set of promoters first. Allowing the entire organization to feature content on Home may make it difficult to keep track of all the promoted content. 
 
 After you enable featured content, you can also manage it in the Admin portal. See [Manage featured content](#manage-featured-content) in this article to read about controlling featured content in your domain.
+
+### Allow connections to featured tables
+
+This setting lets Power BI admins control who in the organization can use featured tables in the Excel Data Types Gallery. 
+
+![Screenshot of allow connections to featured tables setting.](media/service-admin-portal/powerbi-admin-portal-allow-connections-featured-tables-setting.png)
+
+Read more about [Power BI featured tables in Excel](../collaborate-share/service-excel-featured-tables.md).
+
+### Share to Teams
+
+This setting allows organizations to hide the **Share to Teams** buttons in the Power BI service. When set to disabled, users don't see **Share to Teams** buttons in the action bar or context menus when they view reports and dashboards in the Power BI service.
+
+![Screenshot of Share to Teams tenant setting in the Power B I admin portal.](media/service-admin-portal/service-teams-share-to-teams-tenant-setting.png)
+
+Read more about [sharing Power BI content to Teams](../collaborate-share/service-share-report-teams.md).
 
 ## Content pack and app settings
 
@@ -383,12 +425,9 @@ Report creators can share apps directly with end users without requiring install
 
 ## Integration settings
 
-### Use Analyze in Excel with on-premises datasets
+### Allow XMLA endpoints and Analyze in Excel with on-premises datasets
 
-Users in the organization can use Excel to view and interact with on-premises Power BI datasets. [Learn more](../collaborate-share/service-analyze-in-excel.md)
-
-> [!NOTE]
-> Disabling **Export Data** also prevents users from using the **Analyze in Excel** feature.
+Users in the organization can use Excel to view and interact with on-premises Power BI datasets. This also allows connections to XMLA endpoints. [Learn more](../collaborate-share/service-analyze-in-excel.md)
 
 ### Use ArcGIS Maps for Power BI
 
@@ -397,24 +436,6 @@ Users in the organization can use the ArcGIS Maps for Power BI visualization pro
 ### Use global search for Power BI (Preview)
 
 Users in the organization can use external search features that rely on Azure Search.
-
-## Featured tables settings
-
-Under **Tenant settings**, the **Allow connections to featured tables** setting lets Power BI admins control who in the organization can use featured tables in the Excel Data Types Gallery. 
-
-:::image type="content" source="media/service-admin-portal/admin-allow-connections-featured-tables.png" alt-text="All connections to featured tables":::
-
-Connections to featured tables are also disabled if the **Export data**  setting is set to **Disabled**.
-
-Read more about [Power BI featured tables in Excel](../collaborate-share/service-excel-featured-tables.md).
-
-## Share to Teams tenant setting
-
-The **Share to Teams** setting is in the **Tenant settings** section of the Power BI admin portal. The setting allows organizations to hide the **Share to Teams** buttons in the Power BI service. When set to disabled, users don't see **Share to Teams** buttons in the action bar or context menus when they view reports and dashboards in the Power BI service.
-
-![Screenshot of Share to Teams tenant setting in the Power B I admin portal.](media/service-admin-portal/service-teams-share-to-teams-tenant-setting.png)
-
-Read more about [sharing Power BI content to Teams](../collaborate-share/service-share-report-teams.md).
 
 ## R visuals settings
 
