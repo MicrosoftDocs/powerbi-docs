@@ -393,7 +393,7 @@ This setting lets Power BI admins control who in the organization can use featur
 ![Screenshot of allow connections to featured tables setting.](media/service-admin-portal/powerbi-admin-portal-allow-connections-featured-tables-setting.png)
 
 >[!NOTE]
->Connections to featured tables are also disabled if the [Allow live connections setting](#allow-live-connections) is set to Disabled.
+>Connections to featured tables are also disabled if the [Allow live connections](#allow-live-connections) setting is set to Disabled.
 
 Read more about [Power BI featured tables in Excel](../collaborate-share/service-excel-featured-tables.md).
 
