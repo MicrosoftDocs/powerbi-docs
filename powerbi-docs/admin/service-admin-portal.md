@@ -349,7 +349,7 @@ Users in the organization can export Paginated reports as MHTML documents.
 
 ### Export reports as Word documents
 
-UUsers in the organization can export Paginated reports as Word documents.
+Users in the organization can export Paginated reports as Word documents.
 
 ![Screenshot of export to Word setting.](media/service-admin-portal/powerbi-admin-portal-export-word-setting.png)
 
