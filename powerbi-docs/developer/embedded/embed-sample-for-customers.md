@@ -140,7 +140,7 @@ Before you embed your content, make sure you have all the values listed below. S
 |[Report ID](#report-id)           |`reportId`          |![Applies to.](../../media/yes.png) |![Applies to.](../../media/yes.png) |
 |[Application secret](#application-secret) |`applicationsecret` |![Applies to.](../../media/yes.png) |![Does not apply to.](../../media/no.png) |
 |[Tenant](#tenant)                 |`tenant`            |![Applies to.](../../media/yes.png) |![Does not apply to.](../../media/no.png) |
-|[Power BI username](#power-bi-username-and-password)   |`pbiUsername`       |![Does not apply to.](../../media/no.png) |![Applies to.](../../media/yes.png) |
+|[Power BI username](tabs=master-user%2Cnet-framework#power-bi-username-and-password)   |`pbiUsername`       |![Does not apply to.](../../media/no.png) |![Applies to.](../../media/yes.png) |
 |[Power BI password](#power-bi-username-and-password)   |`pbiPassword`       |![Does not apply to.](../../media/no.png) |![Applies to.](../../media/yes.png) |
 
 ### Application ID
