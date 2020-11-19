@@ -21,6 +21,10 @@ Power BI has several artifact types, such as dashboards, reports, datasets, and 
 
 In lineage view, you see the lineage relationships between all the artifacts in a workspace, and all its external dependencies. It shows connections between all workspace artifacts, including connections to dataflows, both upstream and downstream.    
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rUj06dqB98g" frameborder="0" allowfullscreen></iframe>
+
+
+
 > [!VIDEO https://youtu.be/rUj06dqB98g]
 
 ## Explore lineage view
