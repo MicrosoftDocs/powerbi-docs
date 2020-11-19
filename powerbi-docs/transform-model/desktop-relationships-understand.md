@@ -154,9 +154,9 @@ In this example, the Composite model consists of two islands: a Vertipaq data is
 
 A model relationship is _regular_ when the query engine can determine the "one" side of relationship. It has confirmation that the "one" side column contains unique values. All One-to-many intra-island relationships are regular relationships.
 
-In the following example, there are two regular relationships, both marked as **S**. Relationships include the One-to-many relationship contained within the Vertipaq island, and the One-to-many relationship contained within the DirectQuery source.
+In the following example, there are two regular relationships, both marked as **R**. Relationships include the One-to-many relationship contained within the Vertipaq island, and the One-to-many relationship contained within the DirectQuery source.
 
-:::image type="content" source="media/desktop-relationships-understand/data-island-example-strong.png" alt-text="Example of a Composite model consisting of two islands with regular relationships marked.":::
+:::image type="content" source="media/desktop-relationships-understand/data-island-example-regular.png" alt-text="Example of a Composite model consisting of two islands with regular relationships marked.":::
 
 For Import models, where all data is stored in the Vertipaq cache, a data structure is created for each regular relationship at data refresh time. The data structures consist of indexed mappings of all column-to-column values, and their purpose is to accelerate joining tables at query time.
 
