@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/29/2020
+ms.date: 11/18/2020
 ---
 
 # Change log for Power BI Report Server
@@ -18,6 +18,12 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ## October 2020
 - **Power BI Report Server**
+    - *Version: 1.9.7627.11028 (Build 15.0.1104.264), Released: November 18, 2020*
+        - Bug fixes
+            - Fixed issue preventing users from changing fields in site settings via the portal.
+            - Fixed issue with refresh of Power BI Reports when using 'EnterData' data source.
+            - Fixed issue with refresh of some models using enhanced dataset metadata.
+            - Fixed issue where some Power BI reports could not be published to the Report Server.
     - *Version: 1.9.7604.41261 (Build 15.0.1104.239), Released: October 27, 2020*
          - Features
             - Enabled support for enhanced dataset metadata in Power BI Report Server.
