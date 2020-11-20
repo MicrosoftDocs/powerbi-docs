@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/19/2020
+ms.date: 11/20/2020
 ms.custom: licensing support
 
 LocalizationGroup: Premium
@@ -15,7 +15,7 @@ LocalizationGroup: Premium
 
 # What is Power BI Premium?
 
-You can use Power BI Premium to access features and capabilities only available in Premium, and offer greater scale and performance for Power BI content in your organization. Power BI Premium enables more users in your organization to get the most out of Power BI with better performance and responsiveness. For example, with Power BI Premium, you and your organization's users get the following:
+You can use Power BI Premium to access features and capabilities only available in Premium, and offer greater scale and performance for Power BI content in your organization. Power BI Premium enables more users in your organization to get the most out of Power BI with better performance and responsiveness. For example, with Power BI Premium, you and your organization's users get the following capabilities:
 
 > [!div class="checklist"]
 > * Greater scale and performance for your Power BI reports
@@ -39,23 +39,23 @@ Premium Gen2 provides the following updates or improved experiences:
 
 * Ability to license **Premium Per User** in addition to by capacity.
 
-* Enhanced **performance** on any capacity size, any time: Analytics operations run up to 16X faster on Premium Gen2. Operations will always perform at top speed and will not slow down when the load on the capacity approaches the capacity limits.
+* Enhanced **performance** on any capacity size, anytime: Analytics operations run up to 16X faster on Premium Gen2. Operations will always perform at top speed and won't slow down when the load on the capacity approaches the capacity limits.
 
 * **Greater scale**:
     * *No limits* on refresh concurrency, no longer requiring you to track schedules for datasets being refreshed on your capacity
     * Fewer memory restrictions
     * Complete separation between report interaction and scheduled refreshes
 
-* **Improved metrics** with clear and normalized capacity utilization data, that’s dependent only on the complexity of analytics operations the capacity performs, and not on its size, level of load on the system while performing them, and so on. With the improved metrics, utilization analysis, budget planning, chargebacks and the need to upgrade are clearly visible with built-in reporting. Improved metrics will be made available, and enhanced, throughout the preview period. 
+* **Improved metrics** with clear and normalized capacity utilization data, that’s dependent only on the complexity of analytics operations the capacity performs, and not on its size, the level of load on the system while performing analytics, or other factors. With the improved metrics, utilization analysis, budget planning, chargebacks, and the need to upgrade are clearly visible with built-in reporting. Improved metrics will be made available and enhanced throughout the preview period.
 
-* **Autoscale** allows for *automatically adding* 1 v-core at a time for 24 hour periods when the load on the capacity exceeds its limits, thereby preventing slowdowns caused by overload. V-cores are automatically removed when idle time is detected. Additional v-cores are charged to your Azure subscription on a pay-as-you-go basis. Autoscale will be made available during the course of the preview period. 
+* **Autoscale** allows for *automatically adding* one v-core at a time for 24-hour periods when the load on the capacity exceeds its limits, preventing slowdowns caused by overload. V-cores are automatically removed when idle time is detected. Additional v-cores are charged to your Azure subscription on a pay-as-you-go basis. Autoscale will be made available during the course of the preview period. 
 
-* Significantly **reduced management overhead**, with proactive and configurable admin notifications about capacity utilization level and load increasing.
+* **Reduced management overhead** with proactive and configurable admin notifications about capacity utilization level and load increasing.
 
 
 ### Using Premium Gen2
 
-You must enable Premium Gen2 to take advantage of its updates. To enable Premium Gen2, take the following steps:
+Enable Premium Gen2 to take advantage of its updates. To enable Premium Gen2, take the following steps:
 
 1. In the admin portal, navigate to **Capacity settings**.
 2. Select **Power BI Premium**.
@@ -70,12 +70,19 @@ The following image shows how to enable Premium Gen2.
 
 The following known limitations currently apply to Premium Gen2:
 
-1.	Premium Gen2 capacity utilization cannot be tracked in the metrics app.
+1.	Premium Gen2 capacity utilization can't be tracked in the metrics app.
 
-2.	Premium Gen2 capacity settings for specific workloads are not yet visible in the Premium Gen2 capacity settings page in the Admin portal. To change settings, transition the capacity to the original version of Premium, change the settings, then set the capacity to using Premium Gen2 once again. Memory allocation settings are not applicable for Premium Gen2 capacities.
+2.	Premium Gen2 capacity settings for specific workloads aren't yet visible in the Premium Gen2 capacity settings page in the admin portal. To change settings, transition the capacity to the original version of Premium, change the settings, then set the capacity to using Premium Gen2 once again. Memory allocation settings don't apply to Premium Gen2 capacities.
 
 3.  If you're using XMLA on Premium Gen2, make sure you're using the most recent versions of the [data modeling and management tools](service-premium-connect-tools.md#data-modeling-and-management-tools). 
 
+4.  Analysis services features in Premium Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are:
+
+    |Tool|Minimum version required|Estimated release date|
+    |---|---|---|
+    |SQL Server Management Studio (SSMS)|18.8|December 8, 2020|
+    |SQL Server Data Tools (SSDT)|2.9.15|General availability November 30, 2020|
+    | AS PowerShell| Greater than 21.1.18229|November 26, 2020|
 
 ## Subscriptions and licensing
 
@@ -86,7 +93,7 @@ Power BI Premium is a tenant-level Microsoft 365 subscription available in two S
 - **EM** SKUs (EM1-EM3) for _organizational_ embedding, requiring a yearly commitment, billed monthly. EM1 and EM2 SKUs are available only through volume licensing plans. You can't purchase them directly.
 
 ### Updates for Premium Gen2 (Preview)
-Premium Gen2 is currently available as a fully-supported preview feature for **P** and **EM** SKUs only. **A** SKUs capacity do not yet offer all additional benefits introduced the Premium Gen2 preview update.
+Premium Gen2 is currently available as a fully supported preview feature for **P** and **EM** SKUs only. **A** SKUs capacity does not yet offer all additional benefits introduced the Premium Gen2 preview update.
 
 
 ### Purchasing
@@ -95,13 +102,13 @@ Power BI Premium subscriptions are purchased by administrators in the Microsoft 
 
 #### Power BI Premium Per User (preview)
 
-Power BI **Premium Per User** allows organizations to license Premium features on a per-user basis. Premium Per User (PPU) includes all Power BI Pro license capabilities, and also adds features such as paginated reports, AI, and other capabilities that are only available to Premium subscribers. 
+Power BI **Premium Per User** allows organizations to license Premium features on a per-user basis. Premium Per User (PPU) includes all Power BI Pro license capabilities, and adds features such as paginated reports, AI, and other capabilities that are only available to Premium subscribers. 
 Premium Per User is currently in preview. For more information about Premium per user, including a feature comparison and other information about its preview release, see the [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.md) article. 
 
 
 ## Reserved capacities
 
-With Power BI Premium, you get *reserved capacities*. In contrast to a shared capacity where workloads' analytics processing run on computational resources shared with other customers, a reserved capacity is for exclusive use by an organization. It's isolated with reserved computational resources, which provide dependable and consistent performance for hosted content. Note that the processing of the following types of Power BI content are stored in shared capacity rather than your reserved capacity:
+With Power BI Premium, you get *reserved capacities*. In contrast to a shared capacity where workloads' analytics processing run on computational resources shared with other customers, a reserved capacity is for exclusive use by an organization. It's isolated with reserved computational resources, which provide dependable and consistent performance for hosted content. Note that the processing of the following types of Power BI content is stored in shared capacity rather than your reserved capacity:
 
 * Excel workbooks (unless data is first imported into Power BI Desktop)
 * [Push datasets](/rest/api/power-bi/pushdatasets)
