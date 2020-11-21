@@ -171,7 +171,7 @@ To learn more, see [Configure workloads in a Premium capacity](service-admin-pre
 
 ### How capacities function
 
-At all times, the Power BI service makes the best use of capacity resources while not exceeding limits imposed by the capacity.
+At all times, the Power BI service makes the best use of capacity resources while not exceeding limits imposed on the capacity.
 
 Capacity operations are classified as either *interactive* or *background*. Interactive operations include rendering requests and responding to user interactions (filtering, Q&A querying, etc.). Background operations include dataflow and import model refreshes, and dashboard query caching.
 
