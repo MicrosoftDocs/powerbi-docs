@@ -15,7 +15,9 @@
       href: service-service-vs-desktop.md
   - name: Tutorials
     items: 
-    - name: Get started with the Power BI service
+    - name: "Get started with Power BI Desktop"
+      href: desktop-getting-started.md
+    - name: "Get started with the Power BI service"
       href: service-get-started.md
   - name: Concepts
     items: 
@@ -36,7 +38,7 @@
       - name: "Get help purchasing Power BI Pro"
         href: service-self-service-purchase-help.md 
       - name: "Get help signing up for Power BI"
-        href: service-self-service-sign-up-help.md
+        href: service-self-service-sign-up-help.md 
     - name: Security
       items: 
       - name: Security baseline
@@ -45,8 +47,6 @@
     items: 
     - name: "Get Power BI Desktop"
       href: desktop-get-the-desktop.md
-    - name: "Get started with Power BI Desktop"
-      href: desktop-getting-started.md
   - name: Reference
     items:
     - name: "Supported languages and countries/regions"
