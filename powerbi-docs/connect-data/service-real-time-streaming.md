@@ -98,7 +98,7 @@ When creating the new streaming dataset, you can select to enable **Historic dat
 When **Historic data analysis** is disabled, and it is by default, you create a **streaming dataset** as described earlier in this article. When **Historic data analysis** is *enabled*, the dataset created becomes both a **streaming dataset** and a **push dataset**. This is equivalent to using the Power BI REST APIs to create a dataset with its *defaultMode* set to *pushStreaming*, as described earlier in this article.
 
 > [!NOTE]
-> For streaming datasets created using the Power BI service UI, as described in the previous paragraph, Azure AD authentication is not required. In such datasets, the dataset owner receives a URL with a rowkey, which authorizes the requestor to push data into the dataset with out using an Azure AD OAuth bearer token. Take now, however, that the Azure AD (AAD) approach still works to push data into the dataset.
+> For streaming datasets created using the Power BI service UI, as described in the previous paragraph, Azure AD authentication is not required. In such datasets, the dataset owner receives a URL with a rowkey, which authorizes the requestor to push data into the dataset with out using an Azure AD OAuth bearer token. Take note, however, that the Azure AD (AAD) approach still works to push data into the dataset.
 > 
 > 
 
