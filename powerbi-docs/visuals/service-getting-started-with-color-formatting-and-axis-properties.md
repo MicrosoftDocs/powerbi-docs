@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/17/2020
+ms.date: 11/09/2020
 ms.author: rien
 
 LocalizationGroup: Visualizations
@@ -37,6 +37,7 @@ You can customize many elements of each visualization. The options available dep
 * Y-axis
 * Data colors
 * Data labels
+* Total labels
 * Shapes
 * Plot area
 * Title
@@ -62,6 +63,7 @@ The best way to learn how to use the Formatting options is to try them out. You 
 2. Apply a style    
 3. Change axis properties    
 4. Add data labels    
+1. Add total labels
 
 
 
@@ -137,7 +139,7 @@ You can remove the axis labels entirely, by toggling the radio button beside **X
 
 ## Adding data labels    
 
-One last formatting example before you start exploring on your own.  Let's add data labels to an area chart. 
+Let's add data labels to an area chart. 
 
 Here is the *before* picture. 
 
@@ -151,6 +153,27 @@ And, here is the *after* picture.
 We selected the visualization to make it active and opened the Formatting tab.  We selected **Data labels** and turned them On. Then we increased font to 12, changed font family to Arial Black, turned **Show background** to On and background color to white with a transparency of 5%.
 
 These are just a few of the formatting tasks that are possible. Open a report in Editing mode and have fun exploring the Formatting pane to create beautiful and informative visualizations.
+
+## Adding total labels    
+
+One last formatting example before you start exploring on your own.  Let's add total labels to a stacked column chart. Total labels are available for stacked charts, combo charts, and area charts.
+
+When you turn on total labels, Power BI displays the aggregate, or total, of the data. Let's look at an example. 
+
+Here, we have a stacked column chart with data labels showing the value of each portion of each full stack.  This is the default view. 
+
+![column chart with data labels](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-column-charts.png)
+
+
+By opening the visual in Editing view, you can change the display for data labels and total labels. Select the visual to make it active and open the Formatting pane. Scroll down to **Data labels** and **Total labels**. **Data labels** is On and **Total labels** is Off. 
+
+![column chart unformatted](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-total-label.png)
+
+Turn **Data labels** Off, and turn **Total labels** On. Power BI now displays the aggregate for each column.    
+![column chart formatted](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-totals.png)
+
+These are just a few of the formatting tasks that are possible. Open a report in Editing mode and have fun exploring the Formatting pane to create beautiful and informative visualizations.
+
 
 ## Next steps
 For more information, see the following article: 

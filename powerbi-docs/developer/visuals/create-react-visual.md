@@ -304,7 +304,6 @@ You can render data using React. The component can display data from its own sta
                     textLabel: dataView.metadata.columns[0].displayName,
                     textValue: dataView.single.value.toString()
                 });
-            }
             } else {
                 this.clear();
             }

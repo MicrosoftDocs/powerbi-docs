@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 10/23/2020
+ms.date: 11/11/2020
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -242,13 +242,13 @@ By default, your report readers can save filters for your report. You can choose
 
     :::image type="content" source="media/power-bi-report-filter/power-bi-persistent-filters.png" alt-text="Screenshot of Don't allow end users to save filters on this report.":::
 
-## Apply filters Apply button (preview)
+## Apply filters button
 
 You can add a single **Apply** button to the filter pane, allowing you and your end-users to apply all filter modifications at once. Having this button can be useful if you want to defer applying filter changes. You only have to wait once, after you're ready to apply all the filter changes to the report or visuals.
 
 :::image type="content" source="media/power-bi-report-filter/apply-filter-button.png" alt-text="Apply filter button":::
 
-### Turn on Apply
+### Turn on the Apply button
 
 You can set this feature at the report level. However, the feature is off by default.
 
@@ -256,12 +256,13 @@ You can set this feature at the report level. However, the feature is off by def
 
 1. Select **Add a single Apply button to the filter pane to apply changes at once**.
 
-    :::image type="content" source="media/power-bi-report-filter/turn-on-apply-filter-button.png" alt-text="Turn on Apply filter button":::
+    :::image type="content" source="media/power-bi-report-filter/apply-all-filters.png" alt-text="Turn on Apply filter button":::
 
 ### Format the Apply button
 
 Currently, you can control some of the formatting for the **Apply** text for the button. In the **Filter pane** section of the **Format** pane, set these options:
 
+- **Checkbox and Apply color** controls fill color. 
 - **Font and icon color** controls text color.
 - **Header text size** controls text size.
 - **Font family** controls font.

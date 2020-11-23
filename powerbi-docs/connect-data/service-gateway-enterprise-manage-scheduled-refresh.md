@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/15/2019
+ms.date: 11/17/2020
 ms.author: arthii
 
 LocalizationGroup: Gateways
@@ -59,12 +59,11 @@ If you're listed in the **Users** tab of the data source configured within the g
 
 ![Displaying the users](media/service-gateway-enterprise-manage-scheduled-refresh/powerbi-gateway-enterprise-schedule-refresh.png)
 
+> [!IMPORTANT]
+> Upon republish, the data set owner must reassociate the dataset to a gatweay and corresponding data source again. The previous association is not maintained upon republish. 
+
 > [!WARNING]
 > If your dataset contains multiple data sources, each data source must be added within the gateway. If one or more data sources aren't added to the gateway, you won't see the gateway as available for scheduled refresh.
-
-## Limitations
-
-OAuth isn't a supported authentication scheme with the on-premises data gateway. You can't add data sources that require OAuth. If your dataset has a data source that requires OAuth, you can't use the gateway for scheduled refresh.
 
 ## Next steps
 

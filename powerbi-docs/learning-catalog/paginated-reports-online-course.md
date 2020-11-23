@@ -7,7 +7,7 @@ featuredvideoid: DN1t5p9aui0
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
-ms.date: 03/18/2020
+ms.date: 11/11/2020
 ms.author: v-pemyer
 ---
 
@@ -100,7 +100,7 @@ You can download and set up a self-study kit, which consists of the presentation
 >
 > You must sign in to Power BI to publish a Power BI Desktop file to a workspace. The publication results in a dataset that's used as a report data source. You don't need a Power BI Pro license or a Power BI Premium subscription to use a dataset as a report data source.
 >
-> Some lab tasks involve publishing your paginated report to a workspace. You can only open a paginated report when it's been saved to a workspace on a [capacity](../admin/service-premium-what-is.md#dedicated-capacities), which has the paginated reports workload enabled. If you don't have access to a suitable workspace, the lab will provide you with a link to watch a video that demonstrates report publication instead.
+> Some lab tasks involve publishing your paginated report to a workspace. You can only open a paginated report when it's been saved to a workspace on a [capacity](../admin/service-premium-what-is.md#reserved-capacities), which has the paginated reports workload enabled. If you don't have access to a suitable workspace, the lab will provide you with a link to watch a video that demonstrates report publication instead.
 
 ## Instructor kit
 
