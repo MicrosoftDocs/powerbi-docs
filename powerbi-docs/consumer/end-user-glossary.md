@@ -27,7 +27,7 @@ Use your work or school account to sign in to Power BI. Administrators manage wo
 The location where Power BI admins manage users, features, and settings for Power BI in their organization. (Note: Microsoft 365, Azure, and PowerApps use admin center.)
 
 **aggregates**    
-When the values of multiple rows are grouped together as input on criteria to form a single value of more significant meaning or measurement. Only [implicit](#implicit-measures) measures can be aggregated.
+When the values of multiple rows are grouped together as input on criteria to form a single value of more significant meaning or measurement. Only implicit measures (see definition below) can be aggregated.
 
 **aggregation**    
 The reduction of rows in underlying data sources to fit in a model. The result is an aggregate.
@@ -175,7 +175,7 @@ In the Power BI developer offering, the process of integrating analytics into ap
 [Power BI Desktop, Power BI Mobile, the Power BI service, etc.] Another way to refer to one of the Power BI tools. It's okay to use Power BI environment (tenant) in documentation where it may help business analysts who are familiar with the term tenant to know it's the same thing.
 
 **explicit measures**
-Power BI uses explicit measures and [implicit measures](end-user-glossary.md#implicit-measures). Explicit measures are created by report designers and saved with the dataset. They are displayed in Power BI as fields, and can therefore be used over and over. For example, a report designer creates an explicit measure *TotalInvoice* that sums all invoice amounts used in a visual. Colleagues who use that dataset,and who have edit access to the report, can select that field and use it to create a visual. When an explicit measure is added or dragged onto a report canvas, Power BI does not apply an aggregation.  Creating explicit measures requires edit access to the dataset. 
+Power BI uses explicit measures and implicit measures(see definition below). Explicit measures are created by report designers and saved with the dataset. They are displayed in Power BI as fields, and can therefore be used over and over. For example, a report designer creates an explicit measure *TotalInvoice* that sums all invoice amounts used in a visual. Colleagues who use that dataset,and who have edit access to the report, can select that field and use it to create a visual. When an explicit measure is added or dragged onto a report canvas, Power BI does not apply an aggregation.  Creating explicit measures requires edit access to the dataset. 
 
 ## F
 
