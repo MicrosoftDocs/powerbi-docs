@@ -6,7 +6,7 @@ ms.author: painbar
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 11/16/2020
+ms.date: 11/23/2020
 #Customer intent: As an ISV developer, I want to develop a mechanism whereby my customers can click a link that automatically installs and configures a template app that I own.
 ---
 

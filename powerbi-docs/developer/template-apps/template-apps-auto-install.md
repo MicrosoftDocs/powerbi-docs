@@ -7,7 +7,7 @@ ms.author: painbar
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 11/16/2020
+ms.date: 11/23/2020
 #Customer intent: As an ISV developer, I want to automate configuration of the template app installation process for my customers.
 ---
 
