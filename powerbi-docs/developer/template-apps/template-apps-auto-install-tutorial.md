@@ -12,8 +12,6 @@ ms.date: 11/16/2020
 
 # Tutorial: Automate configuration of template app installation using an Azure function
 
-## Introduction
-
 Template apps are a great way for customers to start getting insights from their data. Template apps get them up and running quickly by connecting them to their data and providing them with prebuilt reports that they can then customize if they so desire.
 
 Customers are not always familiar with the details of how to connect to their data, and having to provide these details when installing a template app can be a pain point for them.
@@ -22,7 +20,7 @@ If you are a data services provider and have created a template app to help your
 
 This customer experience is illustrated below.
 
-![Illustration of user experience with auto install application.](media/template-apps-auto-install/highlevelflow.png)
+![Illustration of user experience with auto install application.](media/template-apps-auto-install/high-level-flow.png)
 
 In this tutorial you will use an automated install Azure Function sample that we've created to preconfigure and install your template app. This sample has deliberately been kept simple for demonstration purposes. It encapsulates the setup of an Azure function to leverage Power BI APIs for installing a template App and configuring it for your users automatically.
 

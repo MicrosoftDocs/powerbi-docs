@@ -21,7 +21,7 @@ If you are a data services provider and have created a template app to help your
 
 This customer experience is illustrated below.
 
-![Illustration of user experience with auto install application.](media/template-apps-auto-install/highlevelflow.png)
+![Illustration of user experience with auto install application.](media/template-apps-auto-install/high-level-flow.png)
 
 This article describes the basic flow, prerequisites, and the  main steps and APIs you need for automating the configuration of a template app installation. However, if you prefer to just dive in and get started, you can skip to the [tutorial](template-apps-auto-install-tutorial.md) where you automate the configuration of the template app installation using a simple sample application we've prepared that uses an Azure Function.
 
