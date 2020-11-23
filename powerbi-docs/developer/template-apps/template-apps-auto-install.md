@@ -1,5 +1,5 @@
 ---
-title: Automatically configure template app installation for your customers
+title: Automate configuration of template app installation for your customers
 description: Learn about automating the configuration of template app installation.
 author: PaulInbar
 ms.author: painbar
@@ -11,7 +11,7 @@ ms.date: 11/16/2020
 #Customer intent: As an ISV developer, I want to automate configuration of the template app installation process for my customers.
 ---
 
-# Automate configuration of a template app installation
+# Automated configuration of a template app installation
 
 Template apps are a great way for customers to start getting insights from their data. Template apps get them up and running quickly by connecting them to their data and providing them with prebuilt reports that they can then customize if they so desire.
 
