@@ -282,6 +282,8 @@ This section lists most of the limitations in deployment pipelines.
 
 * The maximum number of Power BI items that can be deployed in a single deployment is 300.
 
+* Downloading a PBIX file after deployment isn't supported.
+
 * For a list of workspace limitations, see [workspace assignment limitations](deployment-pipelines-get-started.md#workspace-assignment-limitations).
 
 * For a list of unsupported items, see [unsupported items](#unsupported-items).
