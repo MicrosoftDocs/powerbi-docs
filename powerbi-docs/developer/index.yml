@@ -35,8 +35,8 @@ highlightedContent:
       itemType: overview
       url: visuals/power-bi-custom-visuals.md
       # Card
-    - title: Automate  template app configuration
-      itemType: overview
+    - title: Automated  template app configuration
+      itemType: concept
       url: template-apps/template-apps-auto-install.md
 
 # conceptualContent section (optional)
