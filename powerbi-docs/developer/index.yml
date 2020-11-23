@@ -122,7 +122,7 @@ additionalContent:
           url: visuals/samples.md
         # Card
         - title: Power BI libraries
-          summary: Power BI libraries (NuGets).
+          summary: Power BI libraries (NuGet).
           url: https://www.nuget.org/profiles/powerbi
         # Card
         - title: Embedding setup tool
