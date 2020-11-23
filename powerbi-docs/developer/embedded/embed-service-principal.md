@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ""
-ms.date: 11/10/2020
+ms.date: 11/23/2020
 ---
 
 # Embed Power BI content with service principal and an application secret
@@ -178,9 +178,15 @@ To enable your Azure AD app access artifacts such as reports, dashboards and dat
 
     :::image type="content" source="media/embed-service-principal/workspace-access.png" alt-text="Screenshot showing the workspace access button in the more menu of a Power BI workspace.":::
 
-2. Add the service principal as an **Admin** or **Member** to the workspace.
+2. In the **Access** pane, text box, add one of the following:
 
-    :::image type="content" source="media/embed-service-principal/add-service-principal-in-the-UI.png" alt-text="Screenshot showing adding a member or an admin to the access pane in the Power BI portal.":::
+    * Your **service principal**. The name of your service principal is the *Display name* of your Azure AD app, as it appears in your Azure AD app's overview tab.
+
+    * The **security group** that includes your service principal.
+
+3. From the drop-down menu, select **Admin** or **Member**.
+
+4. Select **Add**.
 
 ## Step 5 - Embed your content
 
