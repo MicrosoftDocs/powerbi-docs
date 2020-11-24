@@ -22,11 +22,21 @@ In this tutorial you'll learn how to create an *embed for your customers* (also 
 
 * [Service principal](embed-service-principal.md)
 
-Use the *embed for your customers* method of embedding Power BI content, if you're an independent software vendor (ISV) or a developer, who wants to create applications for third parties.
+Use the *embed for your customers* method of embedding Power BI content, if you're an independent software vendor (ISV) or a developer, who wants to create applications for third parties. You can select a sample application in one of the following languages:
+
+* .NET Framework
+* .NET Core
+* Java
+* Node JS
+* Python
 
 ## Prerequisites
 
-To get started, you're required to have:
+Before you start this tutorial, verify that you're Power BI environment  both the xxx and the yyy 
+
+### Power BI dependencies
+
+To embed in Power BI, you're required to have the following:
 
 * Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md).
 
@@ -40,6 +50,54 @@ To get started, you're required to have:
 >To experiment with embedding, you can use one of these methods:
 >* Sign up for a [free *Power BI pro* trial](https://powerbi.microsoft.com/pricing/).
 >* Use a Premium Per User (PPU) license. You'll not be able to [move to production](embed-sample-for-customers.md#move-to-production).
+
+### Code dependencies
+
+Verify that you have your environment and tools set, according to the sample you're going to use.
+
+# [.NET Framework](#tab/net-framework)
+
+* [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/) (or higher)
+
+* An integrated development environment (IDE). We recommend using one of the following:
+
+    * [Visual Studio](https://visualstudio.microsoft.com/)
+
+    * [Visual Studio Code](https://code.visualstudio.com/)
+
+# [.NET Core](#tab/net-core)
+
+* [.NET Core 3.1 SKD](https://dotnet.microsoft.com/download/dotnet-core) (or higher)
+
+* An integrated development environment (IDE). We recommend using one of the following:
+
+    * [Visual Studio](https://visualstudio.microsoft.com/)
+
+    * [Visual Studio Code](https://code.visualstudio.com/)
+
+# [Python](#tab/python)
+
+# [Java](#tab/java)
+
+* [JDK (or JRE)](https://www.oracle.com/java/technologies/)
+
+* [Eclipse IDE](https://www.eclipse.org/downloads/packages/)
+
+* [Apache Tomcat Binary Distributions](https://tomcat.apache.org/)
+
+# [Node JS](#tab/node-js)
+
+---
+
+### Supported browsers
+
+The code samples in this tutorial support the following browsers:
+
+* Google Chrome
+
+* Microsoft Edge
+
+* Mozilla Firefox
 
 ## Method
 
@@ -287,13 +345,7 @@ For an Azure AD app to be able to access the Power BI content and APIs, a Power 
 
 ## Step 7 - Embed your content
 
-The Power BI embedded sample application allows you to create an *embed for your customers* Power BI app. You can select a sample application in one of the following languages:
-
-* .NET Framework
-* .NET Core
-* Java
-* Node JS
-* Python
+The Power BI embedded sample application allows you to create an *embed for your customers* Power BI app.
 
 Follow these steps to modify the a sample *embed for your customers* application, to embed your Power BI report.  
 
@@ -372,10 +424,111 @@ Follow these steps to modify the a sample *embed for your customers* application
 
 # [Java](#tab/java)
 
-6. Using your preferred integrated development environment (IDE), open the **xxx** file.
+The instructions for the Java *embed for your customers* solution, refer to [Eclipse](https://www.eclipse.org/downloads/packages/). If you're using a different application, you'll have to set it up yourself.
 
-    >[!NOTE]
-    >We recommend using [Visual Studio](https://visualstudio.microsoft.com/) or [Visual Studio Code](https://code.visualstudio.com/).
+Open **Eclipse** and follow the instructions described below.
+
+### Setup Eclipse for working with servers
+
+Follow these steps to set up the Eclipse to work with servers.
+
+1. Select **Help** > **Install New Software**.
+
+2. In the **Available Software** window, from the **Work with** drop-down menu, select **All Available Sites**.
+
+3. Search for **JST Server Adapters** and **JST Server Adapters Extensions**.
+
+### Add the server tab to the Eclipse UI
+
+1. Select **Window** > **Show View** > **Other**.
+
+2. In the **Show view** window, expand **Server** and select **Servers**. 
+
+3. Select **Open**.
+
+### Add the Tomcat server to Eclipse
+
+Add the Tomcat server to Eclipse.
+
+1. In the servers tab, select **No servers are available. Click this link to create new server**.
+
+1. In the **Define a New Server** window, expand **Apache** and select the Tomcat server you're running on your machine. For example, *Tomcat v9.0 Server*.
+
+3. Select **Next**.
+
+4. In the **Tomcat Server** window, select **Browse** and navigate to the folder that contains the Tomcat server.
+
+5. In the **Tomcat Server** window, select **Installed JREs**.
+
+6. In the **Installed JREs** window, select the available *jre*, and select **Apply and Close**.
+
+7. In the **Tomcat Server** window, select **Finish**. You'll be able to see the Tomcat server in the *Servers* tab.
+
+### Open the project in Eclipse
+
+Follow these steps to open the Java *AppOwnsData* project in Eclipse.
+
+1. Select **File** and then select **Open Projects from File System**.
+
+2. In the **Import Projects form File System or Archive** window, select **Directory** and open the **AppOwnsData** folder.
+
+3. Select **Finish**.
+
+### Add the Tomcat server to the project
+
+Follow these steps to add the Tomcat server to the *AppOwnsData* project in Eclipse.
+
+1. In the **Package Explorer** pane, right-click **AppOwnsData**, and select **Properties**.
+
+2. Select **Targeted Runtimes** and then select **Apache Tomcat**. This selection will include the version of *Apache Tomcat* you're using, for example *Apache Tomact v9.0*.
+
+5. Select **Apply and Close**.
+
+### Fill in the required parameters
+
+1. In the **Package explorer**, expand the **AppOwnsData** project.
+
+2. Expand **com.embedsample.appoensdata.config**.
+
+3. Open **Config.java**.
+
+4. Depending on your authentication method, fill in the following parameter values:
+
+    |Parameter            |Service principal  |Master user  |
+    |---------------------|---------|---------|
+    |`authenticationType` |ServicePrincipal         |MasterUser         |
+    |`workspaceId`        |The ID of the workspace with your embedded report, see [Workspace ID](#workspace-id)          |The ID of the workspace with your embedded report, see [Workspace ID](#workspace-id)         |
+    |`reportId`           |The ID of the report you're embedding, see [Report ID](#report-id)            |The ID of the report you're embedding, see [Report ID](#report-id)         | 
+    |`clientId`           |Your Azure AD app [client ID](#client-ID)         |Your Azure AD app [client ID](#client-ID)         |
+    |`pbiUsername`        |N/A         |Your *master user* username, see [Power BI username and password](#power-bi-username-and-password)         |
+    |`pbiPassword`        |N/A         |Your *master user* password, see [Power BI username and password](#power-bi-username-and-password)         |
+    |`tenantId`           |Your Azure AD [tenant ID](#tenant-id)         |N/A         |
+    |`appSecret`       |Your Azure AD [client secret](#client-secret)         |N/A         |
+
+### Run the project
+
+1. Select **Run ELParser** (the green play button).
+
+2. From the drop-down menu, select **Run configurations**.
+
+3. In the **Create, manage, and run configurations** window, under **Apache Tomcat** select **Tomact v9.0 Server ant localhost**. The Tomcat server version may differ depending on your Tomcat version.
+
+
+
+
+
+1. In the **Package Explorer**, right-click **AppOwnesData**.
+
+2. Select **Run As**  > **Java Application**.
+
+3. In the **Select Java Application** window, select **OK**.
+
+4. In the **Save and Launch** window, select **OK**.
+
+5. If the **Errors in Workspace** window appears, select **Proceed**.
+
+    3. Select the created server and click __Finish__
+    4. http://localhost:8080/appownsdatasample should open in browser
 
 # [Node JS](#tab/node-js)
 
