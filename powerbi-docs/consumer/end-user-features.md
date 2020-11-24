@@ -6,7 +6,7 @@ ms.reviewer:  mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: reference
-ms.date: 09/16/2020
+ms.date: 11/16/2020
 ms.author: mihart
 ms.custom: licensing support
 
@@ -63,7 +63,7 @@ The second column represents a *business user*.  A business user:
 
 - has a free user license
 - is part of an organization that has a Premium capacity subscription
-- gets content (apps, dashboards, reports) from Pro users who share that content using app workspaces in dedicated Premium capacity.
+- gets content (apps, dashboards, reports) from Pro users who share that content using app workspaces in Premium capacity.
 - is assigned the **Viewer** role to those app workspaces. 
 
 ### Legend

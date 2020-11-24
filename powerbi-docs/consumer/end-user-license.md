@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: powerbi-consumer
 Ms.custom: css_fy20Q4
 ms.topic: how-to
-ms.date: 10/07/2020
+ms.date: 11/16/2020
 ms.author: mihart
 ms.custom: licensing support
 
@@ -97,9 +97,9 @@ If you're a user with a free license, as long as the *designer* places the works
 
 When an organization buys a Premium subscription, the admin typically assigns Pro licenses to the employees who will be working in Premium capacity to create and share content. The Pro users create [workspaces](end-user-workspaces.md) and add content (dashboards, reports, apps) to those workspaces. To allow free users to collaborate in those workspaces, the admin or Pro user assigns the workspaces to a *capacity*.  
 
-|License type  |Shared capacity |Dedicated Premium capacity  |
+|License type  |Shared capacity | Premium capacity  |
 |---------|---------|---------|
-|**Free**     |  Use as a personal sandbox where you create content for yourself and interacts with that content. A free license is a great way to try out the Power BI service. You can't consume content from anyone else or share your content with others  <sup>1</sup>     |   Interact with content assigned to dedicated Premium capacity and shared with you. Free and Pro users can collaborate without requiring the free users to have Pro accounts.      |
+|**Free**     |  Use as a personal sandbox where you create content for yourself and interacts with that content. A free license is a great way to try out the Power BI service. You can't consume content from anyone else or share your content with others  <sup>1</sup>     |   Interact with content assigned to Premium capacity and shared with you. Free and Pro users can collaborate without requiring the free users to have Pro accounts.      |
 |**Pro**     |  Collaborate with other Pro users by creating and sharing content.        |  Collaborate with free and Pro users by creating and sharing content.       |
 
 
