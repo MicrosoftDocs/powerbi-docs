@@ -1,6 +1,6 @@
 ---
 title: Embed content in your application for your customers
-description: Learn how to integrate or embed, a report, dashboard, or tile into an application using the Power BI APIs for embedded analytics for your customers. Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
+description: Learn how to embed, a report, dashboard, or tile into a Power BI embedded analytics sample.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -441,9 +441,6 @@ Follow these steps to modify the a sample *embed for your customers* application
 
 7. Verify that you're in the **Python** > **Embed for your customers** folder, and that the file **requirements.txt** is in the folder, and run `pip3 install -r requirements.txt`.
 
-    >[!TIP]
-    >To open **PowerShell** in a specif folder, navigate to that folder in Windows **File Explorer**, and type **powershell** in the navigation pane.
-
 8. Open the **App Owns Data** folder using your preferred IDE. We recommend using one of the following:
 
     * [Visual Studio](https://visualstudio.microsoft.com/)
@@ -465,7 +462,13 @@ Follow these steps to modify the a sample *embed for your customers* application
     |`POWER_BI_USER`        |N/A         |Your *master user* username, see [Power BI username and password](#power-bi-username-and-password)         |
     |`POWER_BI_PASS`        |N/A         |Your *master user* password, see [Power BI username and password](#power-bi-username-and-password)         |
 
+11. Save the file.
 
+12. Run the project by doing the following:
+
+    a. In **PowerShell** or **Command Prompt**, navigate to the **Python** > **Embed for your customers** > **AppOwnesData** folder, and execute `flask run`.
+
+    b. Open a new tab in your browser and navigate to [http://localhost:5300](http://localhost:5300).
 
 # [Java](#tab/java)
 
@@ -771,69 +774,12 @@ Here is a sample that uses an **EmbedConfig** model and a **TileEmbedConfig** mo
 </script>
 ```
 
-## Move to production
-
-Now that you've completed developing your application, it's time to back your workspace with a capacity.
-
-> [!Important]
-> A capacity is required to move to production. All workspaces (the ones containing the reports or dashboards, and the ones containing the datasets) must be assigned to a capacity.
-
-### Create a capacity
-
-By creating a capacity, you can take advantage of having a resource for your customer. There are two types of capacity you can choose from:
-* **Power BI Premium** - A tenant-level Office 356 subscription available in two SKU families, *EM* and *P*. When embedding Power BI content, this solution is referred to as *Power BI embedding*. For more information regarding this subscription, see [What is Power BI Premium?](../../admin/service-premium-what-is.md)
-* **Azure Power BI Embedded** - You can purchase a capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
-> [!NOTE]
-> With A SKUs, you can't access Power BI content with a FREE Power BI license.
-
-The table below describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](./embedded-faq.md#which-solution-should-i-choose) table.
-
-| Capacity Nodes | Total v-cores | Backend v-cores | RAM (GB) | Frontend v-cores | DirectQuery/Live Connection (per sec) | Model Refresh Parallelism |
-| --- | --- | --- | --- | --- | --- | --- |
-| EM1/A1 | 1 | 0.5 | 2.5 | 0.5 | 3.75 | 1 |
-| EM2/A2 | 2 | 1 | 5 | 1 | 7.5 | 2 |
-| EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
-| P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
-| P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
-| P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
-| | | | | | | |
-
-### Development testing
-
-For development testing, you can use embed trial tokens with a Pro license. To embed in a production environment, use a capacity.
-
-The number of embed trial tokens a Power BI service principal or master account can generate is limited. Use the [Available Features](/rest/api/power-bi/availablefeatures/getavailablefeatures) API to check the percentage of your current embedded usage. The usage amount is displayed per service principal or master account.
-
-If you run out of embed tokens while testing, you need to purchase a Power BI Embedded or Premium [capacity](embedded-capacity.md). There's no limit to the number of embed tokens you can generate with a capacity.
-
-
-### Assign a workspace to a capacity
-
-Once you create a capacity, you can assign your workspace to that capacity.
-
-All the workspaces that contain Power BI resources related to the embedded content (including datasets, reports, and dashboards), must be assigned to capacities. For example, if an embedded report and the dataset bound to it reside in different workspaces, both workspaces must be assigned to capacities.
-
-To assign a capacity to a workspace using [service principal](embed-service-principal.md), use the [Power BI REST API](/rest/api/power-bi/capacities/groups_assigntocapacity). When you are using the Power BI REST APIs, make sure to use the [service principal object ID](embed-service-principal.md).
-
-Follow the steps below to assign a capacity to a workspace using a **master account**.
-
-1. Within the **Power BI service**, expand workspaces and select the ellipsis for the workspace you're using for embedding your content. Then select **Edit workspaces**.
-
-    ![Edit Workspace](media/embed-sample-for-customers/embed-sample-for-customers-036.png)
-
-2. Expand **Advanced**, then enable **Capacity**, then select the capacity you created. Then select **Save**.
-
-    ![Assign capacity](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
-
-3. After you select **Save**, you should see a **diamond** next to the workspace name.
-
-    ![workspace tied to a capacity](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
-
 ## Next steps
-
-In this tutorial, you've learned how to embed Power BI content into an application for your customers. You can also try to embed Power BI content for your organization.
 
 > [!div class="nextstepaction"]
 >[Embed for your organization](embed-sample-for-your-organization.md)
+
+> [!div class="nextstepaction"]
+>[Move to production](move-to-production.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
