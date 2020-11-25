@@ -81,7 +81,7 @@ Verify that you have your environment and tools set, according to the sample you
 
 * [JDK (or JRE)](https://www.oracle.com/java/technologies/)
 
-* [Eclipse IDE](https://www.eclipse.org/downloads/packages/)
+* [Eclipse IDE](https://www.eclipse.org/downloads/packages/) - Verify that you have the *Eclipse for Java EE Developers* (enterprise edition)
 
 * [Apache Tomcat Binary Distributions](https://tomcat.apache.org/)
 
@@ -424,7 +424,7 @@ Follow these steps to modify the a sample *embed for your customers* application
 
 # [Java](#tab/java)
 
-The instructions for the Java *embed for your customers* solution, refer to [Eclipse](https://www.eclipse.org/downloads/packages/). If you're using a different application, you'll have to set it up yourself.
+The instructions for the Java *embed for your customers* solution, refer to [Eclipse IDE for Java EE Developers](https://www.eclipse.org/downloads/packages/) (enterprise edition). If you're using a different application, you'll have to set it up yourself.
 
 Open **Eclipse** and follow the instructions described below.
 
@@ -480,9 +480,13 @@ Follow these steps to add the Tomcat server to the *AppOwnsData* project in Ecli
 
 1. In the **Package Explorer** pane, right-click **AppOwnsData**, and select **Properties**.
 
-2. Select **Targeted Runtimes** and then select **Apache Tomcat**. This selection will include the version of *Apache Tomcat* you're using, for example *Apache Tomact v9.0*.
+2. In the **Properties for AppOwnesData** window, select **Targeted Runtimes** and then select **Apache Tomcat**. This selection will include the version of *Apache Tomcat* you're using, for example *Apache Tomact v9.0*.
 
-5. Select **Apply and Close**.
+5. Select **Apply**
+
+6. In the **Properties for AppOwnesData** window, select **Project facets** and then select **Dynamic Web Module**.
+
+7. Select  **Apply and Close**.
 
 ### Fill in the required parameters
 
