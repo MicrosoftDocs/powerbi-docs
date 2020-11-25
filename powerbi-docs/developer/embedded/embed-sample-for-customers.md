@@ -77,6 +77,18 @@ Verify that you have your environment and tools set, according to the sample you
 
 # [Python](#tab/python)
 
+* [Python 3](https://www.python.org/downloads/) (or higher)
+
+    >[!NOTE]
+    >* If you're installing *Python* for the first time, select the **Add Python to PATH** option, to add the installation to the `PATH` variable.
+    >* If you already have *Python* installed, verify that the `PATH` variable includes its installation path. For more information, see the [Excursus: Setting environment variables](https://docs.python.org/3/using/windows.html#excursus-setting-environment-variables) Python documentation (this link refers to Python 3).
+
+* An integrated development environment (IDE). We recommend using one of the following:
+
+    * [Visual Studio](https://visualstudio.microsoft.com/)
+
+    * [Visual Studio Code](https://code.visualstudio.com/)
+
 # [Java](#tab/java)
 
 * [JDK (or JRE)](https://www.oracle.com/java/technologies/)
@@ -86,6 +98,14 @@ Verify that you have your environment and tools set, according to the sample you
 * [Apache Tomcat Binary Distributions](https://tomcat.apache.org/)
 
 # [Node JS](#tab/node-js)
+
+* [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/) (or higher)
+
+* An integrated development environment (IDE). We recommend using one of the following:
+
+    * [Visual Studio](https://visualstudio.microsoft.com/)
+
+    * [Visual Studio Code](https://code.visualstudio.com/)
 
 ---
 
@@ -371,7 +391,7 @@ Follow these steps to modify the a sample *embed for your customers* application
 
 # [.NET Framework](#tab/net-framework)
 
-6. Open the **Embed for your customers sample app** using one of these methods:
+6. Open the *embed for your customers sample app* using one of these methods:
 
     * If you're using [Visual Studio](https://visualstudio.microsoft.com/), open the **AppOwnsData.sln** file.
 
@@ -394,7 +414,7 @@ Follow these steps to modify the a sample *embed for your customers* application
 
 # [.NET Core](#tab/net-core)
 
-6. Open the **Embed for your customers sample app** using one of these methods:
+6. Open the *embed for your customers sample app* using one of these methods:
 
     * If you're using [Visual Studio](https://visualstudio.microsoft.com/), open the **AppOwnsData.sln** file.
 
@@ -417,86 +437,90 @@ Follow these steps to modify the a sample *embed for your customers* application
 
 # [Python](#tab/python)
 
-6. Using your preferred integrated development environment (IDE), open the **xxx** file.
+6. Open **PowerShell** or **Command Prompt**.
 
-    >[!NOTE]
-    >We recommend using [Visual Studio](https://visualstudio.microsoft.com/) or [Visual Studio Code](https://code.visualstudio.com/).
+7. Verify that you're in the **Python** > **Embed for your customers** folder, and that the file **requirements.txt** is in the folder, and run `pip3 install -r requirements.txt`.
+
+    >[!TIP]
+    >To open **PowerShell** in a specif folder, navigate to that folder in Windows **File Explorer**, and type **powershell** in the navigation pane.
+
+8. Open the **App Owns Data** folder using your preferred IDE. We recommend using one of the following:
+
+    * [Visual Studio](https://visualstudio.microsoft.com/)
+
+    * [Visual Studio Code](https://code.visualstudio.com/)
+
+9. Open **config.py**.
+
+10. Depending on your authentication method, fill in the following parameter values:
+
+    |Parameter            |Service principal  |Master user  |
+    |---------------------|---------|---------|
+    |`AUTHENTICATION_MODE` |ServicePrincipal         |MasterUser         |
+    |`WORKSPACE_ID`        |The ID of the workspace with your embedded report, see [Workspace ID](#workspace-id)          |The ID of the workspace with your embedded report, see [Workspace ID](#workspace-id)         |
+    |`REPORT_ID`           |The ID of the report you're embedding, see [Report ID](#report-id)            |The ID of the report you're embedding, see [Report ID](#report-id)         |
+    |`TENANT_ID`           |Your Azure AD [tenant ID](#tenant-id)         |N/A         |
+    |`CLIENT_ID`           |Your Azure AD app [client ID](#client-ID)         |Your Azure AD app [client ID](#client-ID)         |
+    |`CLIENT_SECRET`       |Your Azure AD [client secret](#client-secret)         |N/A         |
+    |`POWER_BI_USER`        |N/A         |Your *master user* username, see [Power BI username and password](#power-bi-username-and-password)         |
+    |`POWER_BI_PASS`        |N/A         |Your *master user* password, see [Power BI username and password](#power-bi-username-and-password)         |
+
+
 
 # [Java](#tab/java)
 
-The instructions for the Java *embed for your customers* solution, refer to [Eclipse IDE for Java EE Developers](https://www.eclipse.org/downloads/packages/) (enterprise edition). If you're using a different application, you'll have to set it up yourself.
+6. Open **Eclipse** and follow the instructions described below.
 
-Open **Eclipse** and follow the instructions described below.
+    >[!NOTE]
+    >The instructions for the Java *embed for your customers sample app*, refer to [Eclipse IDE for Java EE Developers](https://www.eclipse.org/downloads/packages/) (enterprise edition). If you're using a different application, you'll have to set it up yourself.
 
-### Setup Eclipse for working with servers
+7. Add the Tomcat server to Eclipse
 
-Follow these steps to set up the Eclipse to work with servers.
+    a. Select **Window** > **Show View** > **Servers**.
 
-1. Select **Help** > **Install New Software**.
+    b. In the servers tab, select **No servers are available. Click this link to create new server**.
 
-2. In the **Available Software** window, from the **Work with** drop-down menu, select **All Available Sites**.
+    c. In the **Define a New Server** window, expand **Apache** and select the Tomcat server you're running on your machine. For example, *Tomcat v9.0 Server*.
 
-3. Search for **JST Server Adapters** and **JST Server Adapters Extensions**.
+    d. Select **Next**.
 
-### Add the server tab to the Eclipse UI
+    e. In the **Tomcat Server** window, select **Browse** and navigate to the folder that contains the Tomcat server.
 
-1. Select **Window** > **Show View** > **Other**.
+    f. In the **Tomcat Server** window, select **Installed JREs**.
 
-2. In the **Show view** window, expand **Server** and select **Servers**. 
+    g. In the **Installed JREs** window, select the available *jre*, and select **Apply and Close**.
 
-3. Select **Open**.
+    h. In the **Tomcat Server** window, select **Finish**. You'll be able to see the Tomcat server in the *Servers* tab.
 
-### Add the Tomcat server to Eclipse
+8. Open the project in Eclipse
 
-Add the Tomcat server to Eclipse.
+    a. Select **File** and then select **Open Projects from File System**.
 
-1. In the servers tab, select **No servers are available. Click this link to create new server**.
+    b. In the **Import Projects form File System or Archive** window, select **Directory** and open the **AppOwnsData** folder.
 
-1. In the **Define a New Server** window, expand **Apache** and select the Tomcat server you're running on your machine. For example, *Tomcat v9.0 Server*.
+    c. Select **Finish**.
 
-3. Select **Next**.
+9. Add the Tomcat server to the project
 
-4. In the **Tomcat Server** window, select **Browse** and navigate to the folder that contains the Tomcat server.
+    a. In the **Package Explorer** pane, right-click **AppOwnsData**, and select **Properties**.
 
-5. In the **Tomcat Server** window, select **Installed JREs**.
+    b. In the **Properties for AppOwnesData** window, select **Targeted Runtimes** and then select **Apache Tomcat**. This selection will include the version of *Apache Tomcat* you're using, for example *Apache Tomact v9.0*.
 
-6. In the **Installed JREs** window, select the available *jre*, and select **Apply and Close**.
+    c. Select  **Apply and Close**.
 
-7. In the **Tomcat Server** window, select **Finish**. You'll be able to see the Tomcat server in the *Servers* tab.
+10. Fill in the required parameters
 
-### Open the project in Eclipse
+    a. In the **Package explorer**, expand the **AppOwnsData** project.
 
-Follow these steps to open the Java *AppOwnsData* project in Eclipse.
+    b. Expand **Java Resources**.
 
-1. Select **File** and then select **Open Projects from File System**.
+    c. Expand **src**.
 
-2. In the **Import Projects form File System or Archive** window, select **Directory** and open the **AppOwnsData** folder.
+    d. Expand **com.embedsample.appoensdata.config**.
 
-3. Select **Finish**.
+    e. Open **Config.java**.
 
-### Add the Tomcat server to the project
-
-Follow these steps to add the Tomcat server to the *AppOwnsData* project in Eclipse.
-
-1. In the **Package Explorer** pane, right-click **AppOwnsData**, and select **Properties**.
-
-2. In the **Properties for AppOwnesData** window, select **Targeted Runtimes** and then select **Apache Tomcat**. This selection will include the version of *Apache Tomcat* you're using, for example *Apache Tomact v9.0*.
-
-5. Select **Apply**
-
-6. In the **Properties for AppOwnesData** window, select **Project facets** and then select **Dynamic Web Module**.
-
-7. Select  **Apply and Close**.
-
-### Fill in the required parameters
-
-1. In the **Package explorer**, expand the **AppOwnsData** project.
-
-2. Expand **com.embedsample.appoensdata.config**.
-
-3. Open **Config.java**.
-
-4. Depending on your authentication method, fill in the following parameter values:
+    f. Depending on your authentication method, fill in the following parameter values:
 
     |Parameter            |Service principal  |Master user  |
     |---------------------|---------|---------|
@@ -509,32 +533,46 @@ Follow these steps to add the Tomcat server to the *AppOwnsData* project in Ecli
     |`tenantId`           |Your Azure AD [tenant ID](#tenant-id)         |N/A         |
     |`appSecret`       |Your Azure AD [client secret](#client-secret)         |N/A         |
 
-### Run the project
+11. Run the project
 
-1. Select **Run ELParser** (the green play button).
+    a. In the **Package Explorer**, right-click **AppOwnesData**.
 
-2. From the drop-down menu, select **Run configurations**.
+    b. Select **Run As**  > **Run on Server**.
 
-3. In the **Create, manage, and run configurations** window, under **Apache Tomcat** select **Tomact v9.0 Server ant localhost**. The Tomcat server version may differ depending on your Tomcat version.
+    c. In the **Run on Server** window, select **Choose an existing server** and select the *Tomcat* server.
 
-
-
-
-
-1. In the **Package Explorer**, right-click **AppOwnesData**.
-
-2. Select **Run As**  > **Java Application**.
-
-3. In the **Select Java Application** window, select **OK**.
-
-4. In the **Save and Launch** window, select **OK**.
-
-5. If the **Errors in Workspace** window appears, select **Proceed**.
-
-    3. Select the created server and click __Finish__
-    4. http://localhost:8080/appownsdatasample should open in browser
+    d. Select **Finish**.
 
 # [Node JS](#tab/node-js)
+
+6. Open the **App Owns Data** folder using your preferred IDE. We recommend using one of the following:
+
+    * [Visual Studio](https://visualstudio.microsoft.com/)
+
+    * [Visual Studio Code](https://code.visualstudio.com/)
+
+7. Open a terminal and install required dependencies by executing: `npm install`.
+
+8. Expand the **Config** folder and open **config.json**.
+
+9. Depending on your authentication method, fill in the following parameter values:
+
+    |Parameter            |Service principal  |Master user  |
+    |---------------------|---------|---------|
+    |`authenticationMode` |ServicePrincipal         |MasterUser         |
+    |`clientId`           |Your Azure AD app [client ID](#client-ID)         |Your Azure AD app [client ID](#client-ID)         |
+    |`workspaceId`        |The ID of the workspace with your embedded report, see [Workspace ID](#workspace-id)          |The ID of the workspace with your embedded report, see [Workspace ID](#workspace-id)         |
+    |`reportId`           |The ID of the report you're embedding, see [Report ID](#report-id)            |The ID of the report you're embedding, see [Report ID](#report-id)         |
+    |`pbiUsername`        |N/A         |Your *master user* username, see [Power BI username and password](#power-bi-username-and-password)         |
+    |`pbiPassword`        |N/A         |Your *master user* password, see [Power BI username and password](#power-bi-username-and-password)         |
+    |`clientSecret`       |Your Azure AD [client secret](#client-secret)         |N/A         |
+    |`tenantId`           |Your Azure AD [tenant ID](#tenant-id)         |N/A         |
+
+10. Run the project by doing the following:
+
+    a. In the IDE terminal, execute `npm start`.
+
+    b. Open a new tab in your browser and navigate to [http://localhost:5300](http://localhost:5300).
 
 ---
 
