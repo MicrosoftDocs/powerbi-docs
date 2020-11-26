@@ -74,7 +74,7 @@
       href: service-admin-auditing.md
     - name: "Track service health"
       href: service-admin-health.md
-    - name: "Use read-only admin APIs with service principal authentication"
+    - name: "Enable service principle authentication for Power BI read-only APIs"
       href: read-only-apis-service-principal-auth.md
     - name: "Closing your account"
       href: service-admin-closing-your-account.md
