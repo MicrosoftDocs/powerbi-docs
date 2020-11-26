@@ -15,44 +15,47 @@ ms.date: 11/23/2020
 
 Template apps are a great way for customers to start getting insights from their data. Template apps get them up and running quickly by connecting them to their data and providing them with prebuilt reports that they can then customize if they so desire.
 
-Customers are not always familiar with the details of how to connect to their data, and having to provide these details when installing a template app can be a pain point for them.
+Customers aren't always familiar with the details of how to connect to their data. Having to provide these details when they install a template app can be a pain point for them.
 
-If you are a data services provider and have created a template app to help your customers get started with their data on your service, you can make it easier for them to install your template app by automating the configuration of your template app's parameters. When the customer logs into your portal, they click a special link you've prepared. This launches the automation, which gathers the information it needs, preconfigures the template app parameters, and redirects the customer to their Power BI account where they can install the app. All they have to do there is click install, authenticate against their data source, and they're good to go! 
+If you're a data services provider and have created a template app to help your customers get started with their data on your service, you can make it easier for them to install your template app by automating the configuration of your template app's parameters. When the customer signs in to your portal, they select a special link you've prepared. This action:
 
-This customer experience is illustrated below.
+- Launches the automation, which gathers the information it needs.
+- Preconfigures the template app parameters.
+- Redirects the customer to their Power BI account where they can install the app.
 
-![Illustration of user experience with auto install application.](media/template-apps-auto-install/high-level-flow.png)
+All they have to do is select **Install** and authenticate against their data source, and they're good to go!
 
-This article describes the basic flow, prerequisites, and the  main steps and APIs you need for automating the configuration of a template app installation. However, if you prefer to just dive in and get started, you can skip to the [tutorial](template-apps-auto-install-tutorial.md) where you automate the configuration of the template app installation using a simple sample application we've prepared that uses an Azure Function.
+This customer experience is illustrated here.
+
+![Illustration of user experience with auto-installation application.](media/template-apps-auto-install/high-level-flow.png)
+
+This article describes the basic flow, the prerequisites, and the main steps and APIs you need for automating the configuration of a template app installation. If you prefer to just dive in and get started, you can skip to the [tutorial](template-apps-auto-install-tutorial.md) where you automate the configuration of the template app installation by using a simple sample application we've prepared that uses an Azure function.
 
 ## Basic flow
 
 The basic flow of automating the configuration of a template app installation is as follows:
 
-1. The user logs in to the ISV's portal and clicks the supplied link. This initiates the automated flow. The ISV's portal prepares the user specific configuration at this stage.
+1. The user signs in to the ISV's portal and selects the supplied link. This action initiates the automated flow. The ISV's portal prepares the user-specific configuration at this stage.
 
-2. The ISV acquires an **App-only** token based on a [service principal (app-only token)](../embedded/embed-service-principal.md), that is registered in the ISV's tenant.
+1. The ISV acquires an **App-only** token based on a [service principal (app-only token)](../embedded/embed-service-principal.md) that's registered in the ISV's tenant.
 
-3. Using [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the ISV creates an **Install Ticket** which contains the user specific parameter configuration as prepared by the ISV.
+1. Using [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the ISV creates an install ticket, which contains the user-specific parameter configuration as prepared by the ISV.
 
-4. The ISV redirects the user to Power BI using a ```POST``` redirection method that contains the install ticket.
+1. The ISV redirects the user to Power BI by using a ```POST``` redirection method that contains the install ticket.
 
-5. The user is redirected to their Power BI account with the install ticket and is prompted to install the template app. When the user clicks install, the template app is installed for them.
+1. The user is redirected to their Power BI account with the install ticket and is prompted to install the template app. When the user selects **Install**, the template app is installed for them.
 
 >[!Note]
->While parameter values are configured by the ISV when creating the install ticket, data source related credentials are only supplied by the user in the final stages of the installation. This prevents them from being exposed to a third party, thus ensuring a secure connection between the user and the template app data sources.
+>While parameter values are configured by the ISV when creating the install ticket, data source-related credentials are only supplied by the user in the final stages of the installation. This prevents them from being exposed to a third party, thus ensuring a secure connection between the user and the template app data sources.
 
 ## Prerequisites
 
 To provide a preconfigured installation experience for your template app, the following prerequisites are required:
 
 * A **Power BI Pro license**. If you're not signed up for Power BI Pro, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
-
-* Your own **Azure Active Directory tenant setup**. See [Create an Azure Active Directory tenant](https://docs.microsoft.com/power-bi/developer/embedded/create-an-azure-active-directory-tenant) for instructions how to set one up.
-
-* A **service principal (app-only token)** registered in the above tenant. See [Embed Power BI content with service principal and an application secret](https://docs.microsoft.com/power-bi/developer/embedded/embed-service-principal), for more detail. Make sure to register the application as a **server-side web application** app. You register a server-side web application to create an application secret. From this process you need to save the *Application ID* (Client ID) and *Application secret* (Client Secret) for later steps.
-
-* A **parameterized template app** that is ready for installation. The template app must be created in the same tenant in which you register your application in Azure Active Directory (Azure AD). See [template app tips](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips.md) or [Create a template app in Power BI](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create) for more information. From the template app you need to note the following information for the next steps:
+* Your own **Azure Active Directory (Azure AD) tenant setup**. See [Create an Azure Active Directory tenant](https://docs.microsoft.com/power-bi/developer/embedded/create-an-azure-active-directory-tenant) for instructions how to set one up.
+* A **service principal (app-only token)** registered in the preceding tenant. For more information, see [Embed Power BI content with service principal and an application secret](https://docs.microsoft.com/power-bi/developer/embedded/embed-service-principal). Make sure to register the application as a **server-side web application** app. You register a server-side web application to create an application secret. From this process, you need to save the *Application ID* (Client ID) and *Application secret* (Client Secret) for later steps.
+* A **parameterized template app** that is ready for installation. The template app must be created in the same tenant in which you register your application in Azure AD. For more information, see [template app tips](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips.md) or [Create a template app in Power BI](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create). From the template app you need to note the following information for the next steps:
      * *App ID*, *Package Key*, and *Owner ID* as they appear in the installation URL at then end of the [Define the properties of the template app](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app) process when the app was created. You can also get the same link by clicking **Get link** in the template app's [Release Management](../../connect-data/service-template-apps-create.md#manage-the-template-app-release).
 
     * *Parameter Names* as they are defined in the template app's dataset. Parameter names are case-sensitive strings and can also be retrieved from the **Parameter Settings** tab when you [Define the properties of the template app](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app) or from the dataset settings in Power BI.
@@ -85,13 +88,13 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 
 ## Step 2: Create an install ticket
 
-Create an install ticket, which is used for when redirecting your users to Power BI. The API used for this operation is the **CreateInstallTicket** API.
+Create an install ticket, which is used when you redirect your users to Power BI. The API used for this operation is the **CreateInstallTicket** API.
 * [Template Apps CreateInstallTicket](https://docs.microsoft.com/rest/api/power-bi/templateapps/createinstallticket)
 
 A sample of creating an install ticket for template app installation and configuration is available from the [InstallTemplateApp/InstallAppFunction.cs](https://github.com/microsoft/Template-apps-examples/blob/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample/InstallTemplateApp/InstallAppFunction.cs) file in the [sample application](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample).
 
 
-Below is a code example of using the template app *CreateInstallTicket* REST API.
+The following code example shows how to use the template app *CreateInstallTicket* REST API.
 ```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
@@ -141,7 +144,7 @@ A simple example, mostly used for testing purposes, leverages a form with a hidd
 </html>
 ```
 
-Below is an example of the [sample application](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample)'s response, which holds the install ticket and automatically redirects users to Power BI. The response for this Azure Function is in fact the same automatically self-submitting form that we see in the html example above.
+What follows is an example of the [sample application](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample)'s response, which holds the install ticket and automatically redirects users to Power BI. The response for this Azure function is the same automatically self-submitting form that we see in the preceding HTML example.
 
 ```csharp
 ...
@@ -171,6 +174,5 @@ When the automation you've designed is ready, be sure to move it to production.
 
 ## Next steps
 
-* Try our [tutorial](template-apps-auto-install-tutorial.md) which uses a simple Azure Function to automate the configuration of a template app installation.
-
-* More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+* Try our [tutorial](template-apps-auto-install-tutorial.md), which uses a simple Azure function to automate the configuration of a template app installation.
+* More questions? [Try asking the Power BI Community](https://community.powerbi.com/).
