@@ -146,7 +146,7 @@ For more information about how to register applications in Azure Active Director
 After you register your application, you can make changes to its permissions. Permission changes can be made programmatically, or in the Azure portal.
 
 >[!NOTE]
->Azure AD app permissions are only applicable for solutions that use the *master user* authentication method.
+>Azure AD app permissions are only applicable for the *embed for your customers* solution with the *master user* authentication method.
 
 # [Azure](#tab/Azure)
 
