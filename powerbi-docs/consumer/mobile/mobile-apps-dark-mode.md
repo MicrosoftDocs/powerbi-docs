@@ -6,13 +6,13 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 06/04/2020
+ms.date: 11/26/2020
 ms.author: painbar
 
 ---
 # Dark mode
 
-To accommodate your individual viewing preferences, the Power BI mobile app for iOS supports both light and dark screen modes. Dark mode reduces the brightness of the screen, making it easier to see your content.
+To accommodate your individual viewing preferences, the Power BI mobile apps for iOS and Android support both light and dark screen modes. Dark mode reduces the brightness of the screen, making it easier to see your content.
 
 ![Dark versus light mode](media/mobile-apps-dark-mode/powerbi-mobile-darkmode-lightmode.png)
 

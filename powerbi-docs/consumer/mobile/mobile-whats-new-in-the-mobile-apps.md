@@ -23,18 +23,15 @@ For related "What's New" information, see:
 
 ## December 2020
 ### Maximize the view with full-screen mode (iPads)
-
-We added a new button that lets you remove the app headers and footers, giving you maximum space for viewing your content. Simply tap the full-screen toggle button in the top right corner of the screen to switch between modes.
+We've now added a new button to the mobile app for iPads that lets you remove app headers and footers, giving you the maximum space for viewing your content. Simply tap the full-screen toggle button ![Screenshot of full screen mode icon.](media/mobile-whats-new-in-the-mobile-apps/power-bi-full-screen-icon.png) in the top right corner of the screen to switch between modes.
 
 ### We've added dark mode to Power BI mobile (Android)
 
-Try out the new dark mode in Power BI app. In dark mode, you'll see light text on a dark background, reducing the brightness of the screen and making it easier to see your content.  
-
-You can switch between themes in the app appearance settings.
+Try out the new dark mode in the Power BI mobile app for Android devices. In dark mode, you'll see light text on a dark background, reducing the brightness of the screen and making it easier to see your content. You can switch between themes in the app appearance settings. [Learn more](mobile-apps-dark-mode.md)
 
 ## November 2020
 ### Maximize the view with full-screen mode (Android tablets)
-We've added a new button to the mobile app for Android tablets that lets you remove app headers and footers, giving you the maximum space for viewing your content. Simply tap the full-screen toggle button in the top right corner of the screen to switch between modes.
+We've added a new button to the mobile app for Android tablets that lets you remove app headers and footers, giving you the maximum space for viewing your content. Simply tap the full-screen toggle button ![Screenshot of full screen mode icon.](media/mobile-whats-new-in-the-mobile-apps/power-bi-full-screen-icon.png) in the top right corner of the screen to switch between modes.
 
 ## October 2020
 ### Automatic page refresh is now supported (Windows)
