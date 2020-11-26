@@ -192,10 +192,10 @@ To enable your Azure AD app access artifacts such as reports, dashboards and dat
 
 You can embed your content within a sample application, or within your own application.
 
-* [Embed content using the sample application](embed-sample-for-customers.md#embed-content-using-the-sample-application)
+* [Embed content using the sample application](embed-sample-for-customers.md)
 * [Embed content within your application](embed-sample-for-customers.md#embed-content-within-your-application)
 
-Once your content is embedded, you're ready to [move to production](embed-sample-for-customers.md#move-to-production).
+Once your content is embedded, you're ready to [move to production](move-to-production.md).
 
 >[!NOTE]
 >To secure your content using a certificate, follow the steps described in [Embed Power BI content with service principal and a certificate](embed-service-principal-certificate.md).

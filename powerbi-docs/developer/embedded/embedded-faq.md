@@ -114,7 +114,7 @@ Yes, there are Powershell cmdlets and Azure Resource Manager REST APIs you can u
 
 ### What is the PBI Embedded capacity role in a PBI Embedded solution?
 
-To [promote your solution to production](embed-sample-for-customers.md#move-to-production), you need to assign the Power BI content (workspace) your application uses to a Power BI Embedded (A SKU) capacity.
+To [promote your solution to production](move-to-production.md), you need to assign the Power BI content (workspace) your application uses to a Power BI Embedded (A SKU) capacity.
 
 ### In what Azure regions is PBI Embedded available?
 
@@ -193,7 +193,7 @@ This situation matters when you add the service principal as an **admin** to the
 
 ### When to use an application ID vs. a service principal object ID?
 
-The **[application ID](embed-sample-for-customers.md#application-id)** is used to create the access token when passing the application ID for authentication.
+The **[application ID](embed-sample-for-customers.md#client-id)**, also known as *client ID*, is used to create the access token when passing the application ID for authentication.
 
 To reference a service principal for operations or to make changes you use the **[service principal object ID](embed-service-principal.md)** — for example, applying a service principal as an admin to a workspace.
 
