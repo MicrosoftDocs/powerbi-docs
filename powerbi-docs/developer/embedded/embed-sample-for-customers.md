@@ -33,7 +33,7 @@ To get started, you're required to have:
 If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
 >[!NOTE]
->Premium Per User (PPU) is not supported. You can use a PPU license to experiment with the *embed for your customers* solution, but you'll not be able to [move to production](embed-sample-for-customers.md#move-to-production).
+>[Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) is not supported. PPU can be used to experiment with the *embed for your customers* solution, but you'll not be able to [move to production](embed-sample-for-customers.md#move-to-production).
 
 ## Set up your embedded analytics development environment
 
@@ -339,9 +339,9 @@ var targetWorkspaces = new List<GenerateTokenRequestV2TargetWorkspace>()
 
 var request = new GenerateTokenRequestV2()
 {
-    Datasets = datasetsRequestDetails ?? null,
-    Reports = reportsRequestDetails,
-    TargetWorkspaces = targetWSRequestdetials ?? null,
+    Datasets = datasets,
+    Reports = reports,
+    TargetWorkspaces = targetWorkspaces,
 };
 
 var token = client.GetClient().EmbedToken.GenerateToken(request);
