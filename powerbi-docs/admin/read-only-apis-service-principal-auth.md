@@ -1,6 +1,6 @@
 ---
-title: Enable service principle authentication for Power BI read-only APIs (preview)
-description: Learn how to enable service principal authentication to permit use of Power BI read-only APIs.
+title: Enable service principle authentication for read-only admin APIs (preview)
+description: Learn how to enable service principal authentication to permit use of read-only admin APIs.
 author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
@@ -13,14 +13,14 @@ ms.custom:
 LocalizationGroup: Administration
 ---
 
-# Enable service principle authentication for Power BI read-only APIs (preview)
+# Enable service principle authentication for read-only admin APIs (preview)
 
 Service principal is an authentication method that can be used to let an Azure Active Directory (Azure AD) application access Power BI service content and APIs.
 When you create an Azure AD app, a [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is created. The service principal object, also known simply as the service principal, allows Azure AD to authenticate your app. Once authenticated, the app can access Azure AD tenant resources.
 
 ## Method
 
-To enable service principal authentication for Power BI ready only APIs, follow these steps:
+To enable service principal authentication for Power BI read-only APIs, follow these steps:
 
 1. [Create an Azure AD app](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal). You can skip this step if you already have an Azure AD app you want to use. Take note of the App-Id for later steps. 
 2. Create a new **Security Group** in Azure Active Directory. [Read more about how to create a basic group and add members using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). You can skip this step if you already have a security group you would like to use.
