@@ -1,6 +1,6 @@
 ---
 title: Use Power BI read-only Admin APIs with service principal authentication (preview)
-description: Learn how to enable service principal authentication to permit use of Power BI APIs.
+description: Learn how to enable service principal authentication to permit use of Power BI read-only APIs.
 author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
@@ -13,7 +13,7 @@ ms.custom:
 LocalizationGroup: Administration
 ---
 
-# Use Power BI read-only Admin APIs with service principal authentication (preview)
+# Use Power BI read-only admin APIs with service principal authentication (preview)
 
 Service principal is an authentication method that can be used to let an Azure Active Directory (Azure AD) application access Power BI service content and APIs.
 When you create an Azure AD app, a [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is created. The service principal object, also known simply as the service principal, allows Azure AD to authenticate your app. Once authenticated, the app can access Azure AD tenant resources.
@@ -24,7 +24,7 @@ To use a service principal, follow these steps:
 
 1. [Create an Azure AD app](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal). You can skip this step if you already have an Azure AD app you want to use. Take note of the App-Id for later steps. 
 2. Create a new **Security Group** in Azure Active Directory. [Read more about how to create a basic group and add members using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). You can skip this step if you already have a security group you would like to use.
-    Make sure to select **Security** as the Group Type.
+    Make sure to select **Security** as the Group type.
 
     ![Screenshot of new group creation dialog in Azure portal.](media/read-only-apis-service-principal-auth/azure-portal-new-group-dialog.png)
 
@@ -37,15 +37,15 @@ To use a service principal, follow these steps:
         * Select the application you want to grant access to Power BI. 
         * Select **Permissions**. Make sure there are no Power BI admin-consent-required permissions set on this application. See [Managing consent to applications and evaluating consent requests](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-consent-requests) for more information. 
 4. Enable the Power BI service admin settings. To do this:
-    1. Log into the Power BI Admin portal. You need to be a Power BI admin to see the Tenant settings page.
-    1. Under **Developer settings**, you will see **Allow service principals to use read-only Power BI Admin APIs (preview)**. Set the toggle to Enabled, and then select the **Specific security groups** radio button and add the security group you created in Step 2 in the text field that appears below it, as shown in the figure below.
+    1. Log into the Power BI admin portal. You need to be a Power BI admin to see the tenant settings page.
+    1. Under **Developer settings**, you will see **Allow service principals to use read-only Power BI admin APIs (Preview)**. Set the toggle to Enabled, and then select the **Specific security groups** radio button and add the security group you created in Step 2 in the text field that appears below it, as shown in the figure below.
 
         ![Screenshot of allow service principals tenant setting.](media/read-only-apis-service-principal-auth/allow-service-principals-tenant-setting.png)
 
- 5. Start using the read-only Admin APIs. See the list of supported APIs below.
+ 5. Start using the read-only admin APIs. See the list of supported APIs below.
 
     >[!IMPORTANT]
-    >Once you enable the service principal to be used with Power BI, the application's AD permissions no longer have any effect. The application's permissions are then managed through the Power BI admin portal.
+    >Once you enable the service principal to be used with Power BI, the application's Azure AD permissions no longer have any effect. The application's permissions are then managed through the Power BI admin portal.
 
 ## Considerations and limitations
 * You can't sign into the Power BI portal using service principal.
