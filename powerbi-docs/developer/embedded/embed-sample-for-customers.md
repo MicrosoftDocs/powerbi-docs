@@ -32,7 +32,7 @@ Use the *embed for your customers* method of embedding Power BI content, if you'
 
 ## Prerequisites
 
-Before you start this tutorial, verify that you have bothe the Power BI and code dependencies listed below:
+Before you start this tutorial, verify that you have both the Power BI and code dependencies listed below:
 
 * **Power BI dependencies**
 
@@ -130,7 +130,7 @@ To create an *embed for your customers* sample app, follow these steps:
 
 7. [Service principal API access](#step-7---service-principal-api-access)
 
-8. [Embed your content](embed-your-content).
+8. [Embed your content](#embed-your-content).
 
 >[!TIP]
 >You can crete a ready made sample app using the the [embedding setup tool](https://app.powerbi.com/embedsetup). This tool replicates the steps described in this tutorial, and produces a .NET sample app that you can experiment with.
@@ -216,8 +216,9 @@ Before you embed your content, make sure you have all the values listed below. S
 |[Power BI username](#power-bi-username-and-password)   |![Does not apply to.](../../media/no.png) |![Applies to.](../../media/yes.png) |
 |[Power BI password](#power-bi-username-and-password)   |![Does not apply to.](../../media/no.png) |![Applies to.](../../media/yes.png) |
 
-### Client ID 
+### Client ID
 
+>[!TIP]
 >**Applies to:** ![Applies to.](../../media/yes.png)Service principal ![Applies to.](../../media/yes.png)Master user
 
 To get the client ID GUID (also know as *application ID*), follow these steps:
@@ -232,6 +233,7 @@ To get the client ID GUID (also know as *application ID*), follow these steps:
 
 ### Workspace ID
 
+>[!TIP]
 >**Applies to:** ![Applies to.](../../media/yes.png)Service principal ![Applies to.](../../media/yes.png)Master user
 
 To get the workspace ID GUID, follow these steps:
@@ -246,6 +248,7 @@ To get the workspace ID GUID, follow these steps:
 
 ### Report ID
 
+>[!TIP]
 >**Applies to:** ![Applies to.](../../media/yes.png)Service principal ![Applies to.](../../media/yes.png)Master user
 
 1. Sign in to Power BI service.
@@ -258,6 +261,7 @@ To get the workspace ID GUID, follow these steps:
 
 ### Client secret
 
+>[!TIP]
 >**Applies to:** ![Applies to.](../../media/yes.png)Service principal ![Does not apply to.](../../media/no.png)Master user
 
 To get the client secret, follow these steps:
@@ -278,6 +282,7 @@ To get the client secret, follow these steps:
 
 ### Tenant ID
 
+>[!TIP]
 >**Applies to:** ![Applies to.](../../media/yes.png)Service principal ![Does not apply to.](../../media/no.png)Master user
 
 To get the tenant ID GUID, follow these steps:
@@ -292,6 +297,7 @@ To get the tenant ID GUID, follow these steps:
 
 ### Power BI username and password
 
+>[!TIP]
 >**Applies to:** ![Does not apply to.](../../media/no.png)Service principal ![Applies to.](../../media/yes.png)Master user
 
 Obtain the *user name* and *password* of the Power BI user you're using as your **master user**. This is the same user you used to create a workspace and upload a report to, in Power BI service.
@@ -322,6 +328,8 @@ To enable your Azure AD app access artifacts such as reports, dashboards and dat
 ## Step 7 - Service principal API access
 
 >[!TIP]
+>**Applies to:** ![Applies to.](../../media/yes.png)Service principal ![Does not apply to.](../../media/no.png)Master user
+>
 >This step is only relevant if you're using the *service principal* authentication method. If you're using a *master user*, skip this step and continue with [Step 8 - Embed your content](#step-8---embed-your-content).
 
 For an Azure AD app to be able to access the Power BI content and APIs, a Power BI admin needs to enable service principal access in the Power BI admin portal. If you're not the admin of your tenant, get the tenant's admin to enable the *Tenant settings* for you.
