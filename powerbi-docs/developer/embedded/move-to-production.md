@@ -73,19 +73,29 @@ Follow the steps below to assign a capacity to a workspace using a **master user
     >[!div class="mx-imgBorder"]
     >:::image type="content" source="media/move-to-production/workspace-settings.png" alt-text="A screenshot showing the workspace settings menu in Power B I service portal.":::
 
-2. Select the **Premium** tab, then enable **Capacity**, then select the capacity you created. Then select **Save**.
+2. Select the **Premium** tab, and do the folowing:
 
-    ![Assign capacity](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
+    * Enable **Capacity**.
 
-3. After you select **Save**, you should see a **diamond** next to the workspace name.
+    * Select the capacity you created.
 
-    ![workspace tied to a capacity](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
+    * Select **Save**.
+
+    >[!div class="mx-imgBorder"]
+    >:::image type="content" source="media/move-to-production/premium-tab.png" alt-text="A screenshot showing the workspace premium settings tab in Power B I service portal.":::
+
+After assigning your workspace to a capacity, a diamond appears next to it 
+
+>[!div class="mx-imgBorder"]
+>:::image type="content" source="media/move-to-production/premium-workspace.png" alt-text="A screenshot showing the diamond next to a workspace with a premium capacity in Power B I service portal.":::
 
 ## Next steps
 
-In this tutorial, you've learned how to embed Power BI content into an application for your customers. You can also try to embed Power BI content for your organization.
+>[!div class="nextstepaction"]
+>[Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
 
-> [!div class="nextstepaction"]
->[Embed for your organization](embed-sample-for-your-organization.md)
+>[!div class="nextstepaction"]
+>[Capacity planning in Power BI embedded analytics](embedded-capacity-planning.md)
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+>[!div class="nextstepaction"]
+>[Considerations when generating an embed token](generate-embed-token.md)

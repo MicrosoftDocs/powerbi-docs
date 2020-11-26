@@ -777,9 +777,16 @@ Here is a sample that uses an **EmbedConfig** model and a **TileEmbedConfig** mo
 ## Next steps
 
 > [!div class="nextstepaction"]
+>[Move to production](move-to-production.md)
+
+>[!div class="nextstepaction"]
 >[Embed for your organization](embed-sample-for-your-organization.md)
 
 > [!div class="nextstepaction"]
->[Move to production](move-to-production.md)
+>[Embed paginated reports for your customers](embed-paginated-reports-customers.md)
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+> [!div class="nextstepaction"]
+>[Embed paginated reports for your organization](embed-paginated-reports-organization.md)
+
+>[!div class="nextstepaction"]
+>[Ask the Power BI Community](https://community.powerbi.com/)
