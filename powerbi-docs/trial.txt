@@ -1,0 +1,1 @@
+pbi-collaborate-share	https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-create-distribute-apps	maggiesMSFT
