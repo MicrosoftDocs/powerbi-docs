@@ -42,14 +42,14 @@ To embed in Power BI, you're required to have the following:
 
 * To authenticate your app against Power BI, you'll need one of the following:
 
-    * [Service principal](embed-service-principal.md) - An Azure Active Directory (Azure AD) [service principal object](azure/active-directory/develop/app-objects-and-service-principals.md#service-principal-object) that allows Azure AD to authenticate your app.
+    * [Service principal](embed-service-principal.md) - An Azure Active Directory (Azure AD) [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) that allows Azure AD to authenticate your app.
 
     * [Power BI Pro account](../../admin/service-admin-purchasing-power-bi-pro.md) - This will be your **master user** and your app will use it to sign in to your Power BI Pro account.
 
 >[!NOTE]
 >To experiment with embedding, you can use one of these methods:
 >* Sign up for a [free *Power BI pro* trial](https://powerbi.microsoft.com/pricing/).
->* Use a Premium Per User (PPU) license. You'll not be able to [move to production](embed-sample-for-customers.md#move-to-production).
+>* Use a Premium Per User (PPU) license. You'll not be able to [move to production](move-to-production.md).
 
 ### Code dependencies
 
@@ -193,7 +193,7 @@ To create a workspace, do the following:
 >[!Tip]
 >If you already have a workspace with a report, you can skip this step.
 
-Your next step is to create a report and upload it to your workspace. You can [create your own report](powerbi-docs/fundamentals/desktop-getting-started.md#build-reports) using Power BI Desktop, and then [publish](powerbi-docs/fundamentals/desktop-getting-started.md#share-your-work) it to your workspace. Or, you can upload a sample report to your workspace.
+Your next step is to create a report and upload it to your workspace. You can [create your own report](/powerbi-docs/fundamentals/desktop-getting-started#build-reports) using Power BI Desktop, and then [publish](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work) it to your workspace. Or, you can upload a sample report to your workspace.
 
 To download a sample report and publish it to your workspace, follow these steps:
 
@@ -205,7 +205,7 @@ To download a sample report and publish it to your workspace, follow these steps
 
 3. Extract the downloaded zip and navigate to the **Samples Reports** folder.
 
-4. Select a report to embed, and [publish](powerbi-docs/fundamentals/desktop-getting-started.md#share-your-work) it to your workspace.
+4. Select a report to embed, and [publish](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work) it to your workspace.
 
 ## Step 5 - Get values needed for embedding
 
@@ -218,16 +218,14 @@ Before you embed your content, make sure you have all the values listed below. S
 |[Client ID](#client-id) |![Applies to.](../../media/yes.png) |![Applies to.](../../media/yes.png) |
 |[Workspace ID](#workspace-id)     |![Applies to.](../../media/yes.png) |![Applies to.](../../media/yes.png) |
 |[Report ID](#report-id)           |![Applies to.](../../media/yes.png) |![Applies to.](../../media/yes.png) |
-|[Client secret](#application-secret) |![Applies to.](../../media/yes.png) |![Does not apply to.](../../media/no.png) |
+|[Client secret](#client-secret) |![Applies to.](../../media/yes.png) |![Does not apply to.](../../media/no.png) |
 |[Tenant ID](#tenant-id)                 |![Applies to.](../../media/yes.png) |![Does not apply to.](../../media/no.png) |
-|[Power BI username](tabs=master-user%2Cnet-framework#power-bi-username-and-password)   |![Does not apply to.](../../media/no.png) |![Applies to.](../../media/yes.png) |
+|[Power BI username](#power-bi-username-and-password)   |![Does not apply to.](../../media/no.png) |![Applies to.](../../media/yes.png) |
 |[Power BI password](#power-bi-username-and-password)   |![Does not apply to.](../../media/no.png) |![Applies to.](../../media/yes.png) |
 
-### Parameter needed for both authentication methods
+### Client ID 
 
-Get the following parameters required for using both *service principal* and *master user*.
-
-#### Client ID
+>**Applies to:** ![Applies to.](../../media/yes.png)Service principal ![Applies to.](../../media/yes.png)Master user
 
 To get the client ID GUID (also know as *application ID*), follow these steps:
 
@@ -239,7 +237,9 @@ To get the client ID GUID (also know as *application ID*), follow these steps:
 
 4. From the **Overview** blade, copy the **Application (clent) ID** GUID.
 
-#### Workspace ID
+### Workspace ID
+
+>**Applies to:** ![Applies to.](../../media/yes.png)Service principal ![Applies to.](../../media/yes.png)Master user
 
 To get the workspace ID GUID, follow these steps:
 
@@ -251,7 +251,9 @@ To get the workspace ID GUID, follow these steps:
 
     :::image type="content" source="media/embed-sample-for-customers/workspace-id.png" alt-text="A screenshot showing workspace ID GUID in the Power B I service U R L":::
 
-#### Report ID
+### Report ID
+
+>**Applies to:** ![Applies to.](../../media/yes.png)Service principal ![Applies to.](../../media/yes.png)Master user
 
 1. Sign in to Power BI service.
 
@@ -261,91 +263,71 @@ To get the workspace ID GUID, follow these steps:
 
     :::image type="content" source="media/embed-sample-for-customers/report-id.png" alt-text="A screenshot showing report ID GUID in the Power B I service U R L":::
 
-:::row:::
-    :::column:::
+### Client secret
 
-        ### Service principal
+>**Applies to:** ![Applies to.](../../media/yes.png)Service principal ![Does not apply to.](../../media/no.png)Master user
 
-        This column contains the parameters required when using the *service principal* authentication method.
-
-        #### Client ID
-
-        To get the client secret, follow these steps:
-        
-        1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
-        
-        2. Search for **App registrations** and click the **App registrations** link.
-        
-        3. Select the Azure AD app your using for embedding your Power BI content.
-        
-        4. Under **Mange**, select **Certificates & secrets**.
-        
-        5. Under **Client secrets**, select **New client secret**.
-        
-        6. In the **Add a client secret** pop-up window, provide a description for your application secret, select when the application secret expires, and select **Add**.
-        
-        7. From the **Client secrets** section, copy the string in the **Value** column of the newly created application secret. The client secret value is your *client ID*.
-
-        #### Tenant ID
-
-        To get the tenant ID GUID, follow these steps:
-        
-        1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
-        
-        2. Search for **App registrations** and click the **App registrations** link.
-        
-        3. Select the Azure AD app your using for embedding your Power BI content.
-    
-        4. From the **Overview** blade, copy the **Directory (tenant) ID** GUID.  
-
-    :::column-end:::
-    :::column span="":::
-
-        ### Master user
-        
-        This column contains the parameters required when using the *master user* authentication method.
-
-        #### Power BI username and password
-
-        Obtain the *user name* and *password* of the Power BI user you're using as your **master user**. This is the same user you used to create a workspace and upload a report to, in Power BI service.
-
-    :::column-end:::
-:::row-end:::
-
-## Step 6 - Service principal settings
-
->[!TIP]
->The settings described in this step are only required if you're using a *service principal*.
-></br>If your using a **master user** as your authentication method, skip this step and continue with [Step 7 - Embed your content](#step-7---embed-your-content).
-
-### Add the service principal to your workspace
-
-To enable your Azure AD app access artifacts such as reports, dashboards and datasets in the Power BI service, add the service principal entity as a member or admin to your workspace.
+To get the client secret, follow these steps:
 
 1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
-        
+
 2. Search for **App registrations** and click the **App registrations** link.
-        
+
 3. Select the Azure AD app your using for embedding your Power BI content.
-    
-4. From the **Overview** blade, copy the **Display name**. This is the name of your *service principal*.
 
-5. Sign in to Power BI service.
+4. Under **Mange**, select **Certificates & secrets**.
 
-6. Scroll to the workspace you want to enable access for, and from the **More** menu, select **Workspace access**.
+5. Under **Client secrets**, select **New client secret**.
+
+6. In the **Add a client secret** pop-up window, provide a description for your application secret, select when the application secret expires, and select **Add**.
+
+7. From the **Client secrets** section, copy the string in the **Value** column of the newly created application secret. The client secret value is your *client ID*.
+
+### Tenant ID
+
+>**Applies to:** ![Applies to.](../../media/yes.png)Service principal ![Does not apply to.](../../media/no.png)Master user
+
+To get the tenant ID GUID, follow these steps:
+
+1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
+
+2. Search for **App registrations** and click the **App registrations** link.
+
+3. Select the Azure AD app your using for embedding your Power BI content.
+
+4. From the **Overview** blade, copy the **Directory (tenant) ID** GUID.
+
+### Power BI username and password
+
+>**Applies to:** ![Does not apply to.](../../media/no.png)Service principal ![Applies to.](../../media/yes.png)Master user
+
+Obtain the *user name* and *password* of the Power BI user you're using as your **master user**. This is the same user you used to create a workspace and upload a report to, in Power BI service.
+
+## Step 6 - Enable workspace access
+
+To enable your Azure AD app access artifacts such as reports, dashboards and datasets in the Power BI service, add the *service principal* or *master user*, as a *member* or *admin* to your workspace.
+
+1. Sign in to Power BI service.
+
+2. Scroll to the workspace you want to enable access for, and from the **More** menu, select **Workspace access**.
 
     :::image type="content" source="media/embed-service-principal/workspace-access.png" alt-text="Screenshot showing the workspace access button in the more menu of a Power BI workspace.":::
 
-7. In the **Access** pane, do the following:
+3. In the **Access** pane, depending on which authentication method you're using, copy the *service principal* or *master user* to the **Enter email address** text box.
 
-    * Copy the *service principal* (your Azure AD app's *display name*) to the **Enter email address** text box.
+    >[!NOTE]
+    >If you're using a *service principal*, follow these steps to get it's name:
+    >1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
+    >2. Search for **App registrations** and click the **App registrations** link.
+    >3. Select the Azure AD app your using for embedding your Power BI content.
+    >4. From the **Overview** blade, copy the **Display name**. This is the name of your *service principal*.
 
-    * From the dropdown menu, select **Admin** or **Member**.
+4. From the dropdown menu, select **Admin** or **Member**.
 
-8. Select **Add**.
+5. Select **Add**.
 
-### Service principal API access
-        
+#### Service principal API access
+
 For an Azure AD app to be able to access the Power BI content and APIs, a Power BI admin needs to enable service principal access in the Power BI admin portal. If you're not the admin of your tenant, get the tenant's admin to enable the *Tenant settings* for you.
         
 1. In *Power BI service*, select **Settings** > **Settings** > **Admin portal**.
@@ -359,7 +341,7 @@ For an Azure AD app to be able to access the Power BI content and APIs, a Power 
     :::image type="content" source="media/embed-sample-for-customers/developer-settings.png" alt-text="A screenshot showing how to enable the developer settings option, in the tenant settings menu option, in Power B I service":::
         
 >[!NOTE]
->When using a *service principal*, it's recommended to limit their access to the tenant settings using a *security group*. To learn more about this feature, see these sections in the [service principal](embed-service-principal.md) article:
+>When using a *service principal*, it's recommended to limit its access to the tenant settings using a *security group*. To learn more about this feature, see these sections in the [service principal](embed-service-principal.md) article:
 > * [Create an Azure AD security group](embed-service-principal.md#step-2---create-an-azure-ad-security-group)
 >* [Enable the Power BI service admin settings](embed-service-principal.md#step-3---enable-the-power-bi-service-admin-settings)
 
@@ -404,7 +386,7 @@ Follow these steps to modify the a sample *embed for your customers* application
     |Parameter            |Service principal  |Master user  |
     |---------------------|---------|---------|
     |`authenticationType` |ServicePrincipal         |MasterUser         |
-    |`applicationId`           |Your Azure AD app [client ID](#client-ID)         |Your Azure AD app [client ID](#client-ID)         |
+    |`applicationId`           |Your Azure AD app [client ID](#client-id)         |Your Azure AD app [client ID](#client-id)         |
     |`workspaceId`        |The ID of the workspace with your embedded report, see [Workspace ID](#workspace-id)          |The ID of the workspace with your embedded report, see [Workspace ID](#workspace-id)         |
     |`reportId`           |The ID of the report you're embedding, see [Report ID](#report-id)            |The ID of the report you're embedding, see [Report ID](#report-id)         |
     |`pbiUsername`        |N/A         |Your *master user* username, see [Power BI username and password](#power-bi-username-and-password)         |
@@ -427,7 +409,7 @@ Follow these steps to modify the a sample *embed for your customers* application
     |Parameter            |Service principal  |Master user  |
     |---------------------|---------|---------|
     |`AuthenticationMode` |ServicePrincipal         |MasterUser         |
-    |`ClientId`           |Your Azure AD app [client ID](#client-ID)         |Your Azure AD app [client ID](#client-ID)         |
+    |`ClientId`           |Your Azure AD app [client ID](#client-id)         |Your Azure AD app [client ID](#client-id)         |
     |`TenantId`           |Your Azure AD [tenant ID](#tenant-id)         |N/A         |
     |`PbiUsername`        |N/A         |Your *master user* username, see [Power BI username and password](#power-bi-username-and-password)         |
     |`PbiPassword`        |N/A         |Your *master user* password, see [Power BI username and password](#power-bi-username-and-password)         |
@@ -457,7 +439,7 @@ Follow these steps to modify the a sample *embed for your customers* application
     |`WORKSPACE_ID`        |The ID of the workspace with your embedded report, see [Workspace ID](#workspace-id)          |The ID of the workspace with your embedded report, see [Workspace ID](#workspace-id)         |
     |`REPORT_ID`           |The ID of the report you're embedding, see [Report ID](#report-id)            |The ID of the report you're embedding, see [Report ID](#report-id)         |
     |`TENANT_ID`           |Your Azure AD [tenant ID](#tenant-id)         |N/A         |
-    |`CLIENT_ID`           |Your Azure AD app [client ID](#client-ID)         |Your Azure AD app [client ID](#client-ID)         |
+    |`CLIENT_ID`           |Your Azure AD app [client ID](#client-id)         |Your Azure AD app [client ID](#client-id)         |
     |`CLIENT_SECRET`       |Your Azure AD [client secret](#client-secret)         |N/A         |
     |`POWER_BI_USER`        |N/A         |Your *master user* username, see [Power BI username and password](#power-bi-username-and-password)         |
     |`POWER_BI_PASS`        |N/A         |Your *master user* password, see [Power BI username and password](#power-bi-username-and-password)         |
@@ -530,7 +512,7 @@ Follow these steps to modify the a sample *embed for your customers* application
     |`authenticationType` |ServicePrincipal         |MasterUser         |
     |`workspaceId`        |The ID of the workspace with your embedded report, see [Workspace ID](#workspace-id)          |The ID of the workspace with your embedded report, see [Workspace ID](#workspace-id)         |
     |`reportId`           |The ID of the report you're embedding, see [Report ID](#report-id)            |The ID of the report you're embedding, see [Report ID](#report-id)         | 
-    |`clientId`           |Your Azure AD app [client ID](#client-ID)         |Your Azure AD app [client ID](#client-ID)         |
+    |`clientId`           |Your Azure AD app [client ID](#client-id)         |Your Azure AD app [client ID](#client-id)         |
     |`pbiUsername`        |N/A         |Your *master user* username, see [Power BI username and password](#power-bi-username-and-password)         |
     |`pbiPassword`        |N/A         |Your *master user* password, see [Power BI username and password](#power-bi-username-and-password)         |
     |`tenantId`           |Your Azure AD [tenant ID](#tenant-id)         |N/A         |
@@ -563,7 +545,7 @@ Follow these steps to modify the a sample *embed for your customers* application
     |Parameter            |Service principal  |Master user  |
     |---------------------|---------|---------|
     |`authenticationMode` |ServicePrincipal         |MasterUser         |
-    |`clientId`           |Your Azure AD app [client ID](#client-ID)         |Your Azure AD app [client ID](#client-ID)         |
+    |`clientId`           |Your Azure AD app [client ID](#client-id)         |Your Azure AD app [client ID](#client-id)         |
     |`workspaceId`        |The ID of the workspace with your embedded report, see [Workspace ID](#workspace-id)          |The ID of the workspace with your embedded report, see [Workspace ID](#workspace-id)         |
     |`reportId`           |The ID of the report you're embedding, see [Report ID](#report-id)            |The ID of the report you're embedding, see [Report ID](#report-id)         |
     |`pbiUsername`        |N/A         |Your *master user* username, see [Power BI username and password](#power-bi-username-and-password)         |
@@ -578,201 +560,6 @@ Follow these steps to modify the a sample *embed for your customers* application
     b. Open a new tab in your browser and navigate to [http://localhost:5300](http://localhost:5300).
 
 ---
-
-
-
-
-
-### Run the application
-
-1. Select **Run** in **Visual Studio**.
-
-    ![Run the application](media/embed-sample-for-customers/embed-sample-for-customers-033.png)
-
-2. Then select **Embed Report**. Depending on which content you choose to test with - reports, dashboards or tiles - then select that option in the application.
-
-    ![Select a content](media/embed-sample-for-customers/embed-sample-for-customers-034.png)
-
-3. Now you can view the report in the sample application.
-
-    ![View application](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
-
-## Embed content within your application
-
-Even though the steps to embed your content are done with the [Power BI REST APIs](/rest/api/power-bi/), the example codes described in this article are made with the **.NET SDK**.
-
-Embedding for your customers within your application requires you to get an **access token** for your master account or [service principal](embed-service-principal.md) from **Azure AD**. You're required to get an [Azure AD access token](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) for your Power BI application before you make calls to the [Power BI REST APIs](/rest/api/power-bi/).
-
-To create the Power BI Client with your **access token**, you want to create your Power BI client object, which allows you to interact with the [Power BI REST APIs](/rest/api/power-bi/). You create the Power BI client object by wrapping the **AccessToken** with a ***Microsoft.Rest.TokenCredentials*** object.
-
-```csharp
-using Microsoft.IdentityModel.Clients.ActiveDirectory;
-using Microsoft.Rest;
-using Microsoft.PowerBI.Api.V2;
-
-var tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
-
-// Create a Power BI Client object. it's used to call Power BI APIs.
-using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
-{
-    // Your code to embed items.
-}
-```
-
-### Get the content item you want to embed
-
-You can use the Power BI client object to retrieve a reference to the item you want to embed.
-
-Here is a code sample of how to retrieve the first report from a given workspace.
-
-*A sample of getting a content item whether it's a report, dashboard, or tile that you want to embed is available within the Services\EmbedService.cs file in the [sample application](https://github.com/Microsoft/PowerBI-Developer-Samples).*
-
-```csharp
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
-
-// You need to provide the workspaceId where the dashboard resides.
-ODataResponseListReport reports = await client.Reports.GetReportsInGroupAsync(workspaceId);
-
-// Get the first report in the group.
-Report report = reports.Value.FirstOrDefault();
-```
-
-### Create the embed token
-Generate an embed token, which can be used from the JavaScript API. There are two types of APIs, the first group contains five APIs, each generates an embed token for a specific item. The second group, which contains only one API, generates a token that can be used to embed multiple items.
-
-**APIs for generating an embed token for a specific item**
-
-The embed token created with these APIs is specific to the item you're embedding. Any time you embed a Power BI item (such as a report, dashboard, or tile) with these APIs, you need to create a new embed token for it.
-* [Dashboards GenerateTokenInGroup](/rest/api/power-bi/embedtoken/dashboards_generatetokeningroup)
-* [Datasets GenerateTokenInGroup](/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
-* [Reports GenerateTokenForCreateInGroup](/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
-* [Reports GenerateTokenInGroup](/rest/api/power-bi/embedtoken/reports_generatetokeningroup)
-* [Tiles GenerateTokenInGroup](/rest/api/power-bi/embedtoken/tiles_generatetokeningroup)
-
-Samples of creating an embed token for a report, dashboard, or tile, are available from the following files in the [sample application](https://github.com/Microsoft/PowerBI-Developer-Samples).
-* Services\EmbedService.cs
-* Models\EmbedConfig.cs
-* Models\TileEmbedConfig.cs
-
-Below is a code example for using the reports GenerateTokenInGroup embed token API.
-```csharp
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
-
-// Generate Embed Token.
-var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
-EmbedToken tokenResponse = client.Reports.GenerateTokenInGroup(workspaceId, report.Id, generateTokenRequestParameters);
-
-// Generate Embed Configuration.
-var embedConfig = new EmbedConfig()
-{
-    EmbedToken = tokenResponse,
-    EmbedUrl = report.EmbedUrl,
-    Id = report.Id
-};
-```
-
-**API for generating an embed token for multiple items**<a id="multiEmbedToken"></a>
-
-The [Generate Token](/rest/api/power-bi/embedtoken/generatetoken) embed API generates a token that can be used for embedding multiple items.
-
-It can also be used for dynamically selecting a dataset while embedding a report. For more information about this use of the API, see [dynamic binding](embed-dynamic-binding.md).
-
-
-Below is an example of using this API.
- 
-```csharp
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
-
-var reports = new List<GenerateTokenRequestV2Report>()
-{ 
-    new GenerateTokenRequestV2Report()
-    {
-        AllowEdit = false,
-        Id = report1.Id
-    },
-    new GenerateTokenRequestV2Report()
-    {
-        AllowEdit = true,
-        Id = report2.Id
-    }
-};
-
-var datasets= new List<GenerateTokenRequestV2Dataset>()
-{
-    new GenerateTokenRequestV2Dataset(dataset1.Id),
-    new GenerateTokenRequestV2Dataset(dataset2.Id),
-    new GenerateTokenRequestV2Dataset(dataset3.Id),
-};
-
-var targetWorkspaces = new List<GenerateTokenRequestV2TargetWorkspace>()
-{
-    new GenerateTokenRequestV2TargetWorkspace(workspace1.Id),
-    new GenerateTokenRequestV2TargetWorkspace(workspace2.Id),
-};
-
-var request = new GenerateTokenRequestV2()
-{
-    Datasets = datasets,
-    Reports = reports,
-    TargetWorkspaces = targetWorkspaces,
-};
-
-var token = client.GetClient().EmbedToken.GenerateToken(request);
-```
-
-### Load an item using JavaScript
-
-You can use JavaScript to load a report into a div element on your web page.
-
-For a full sample of using the JavaScript API, you can use the [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo). The Playground tool is a quick way to play with different types of Power BI Embedded samples. You can also get more Information about the JavaScript API by visiting the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
-
-Here is a sample that uses an **EmbedConfig** model and a **TileEmbedConfig** model along with views for a report.
-
-*A sample of adding a view for a report, dashboard, or tile is available within the Views\Home\EmbedReport.cshtml, Views\Home\EmbedDashboard.cshtml, or Views\Home\Embedtile.cshtml files in the [sample application](#embed-content-using-the-sample-application).*
-
-```javascript
-<script src="~/scripts/powerbi.js"></script>
-<div id="reportContainer"></div>
-<script>
-    // Read embed application token from Model
-    var accessToken = "@Model.EmbedToken.Token";
-
-    // Read embed URL from Model
-    var embedUrl = "@Html.Raw(Model.EmbedUrl)";
-
-    // Read report Id from Model
-    var embedReportId = "@Model.Id";
-
-    // Get models. models contains enums that can be used.
-    var models = window['powerbi-client'].models;
-
-    // Embed configuration used to describe what and how to embed.
-    // This object is used when calling powerbi.embed.
-    // This also includes settings and options such as filters.
-    // You can find more information at https://github.com/Microsoft/PowerBI-JavaScript/wiki/Embed-Configuration-Details.
-    var config = {
-        type: 'report',
-        tokenType: models.TokenType.Embed,
-        accessToken: accessToken,
-        embedUrl: embedUrl,
-        id: embedReportId,
-        permissions: models.Permissions.All,
-        settings: {
-            filterPaneEnabled: true,
-            navContentPaneEnabled: true
-        }
-    };
-
-    // Get a reference to the embedded report HTML element
-    var reportContainer = $('#reportContainer')[0];
-
-    // Embed the report and display it within the div container.
-    var report = powerbi.embed(reportContainer, config);
-</script>
-```
 
 ## Next steps
 
