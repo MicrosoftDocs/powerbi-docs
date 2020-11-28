@@ -63,7 +63,7 @@ You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). I
    ![Power BI GitHub authenticate process](media/service-connect-to-github/power-bi-github-authenticate-process.png)
 
 
-Once you've finished filling out the connection dialogs and signed in to Github, the connection process starts. A banner informs you that the data is being refreshed, and that in the meantime you are viewing sample data.
+Once you've finished filling out the connection dialogs and signed in to GitHub, the connection process starts. A banner informs you that the data is being refreshed, and that in the meantime you are viewing sample data.
 
 ![Power BI GitHub app refresh in progress](media/service-connect-to-github/service-github-app-refresh-monitor.png)
 
@@ -101,7 +101,7 @@ The following data is available from GitHub in Power BI:
 * Permission granted to the Power BI for GitHub app during first login. See details below on revoking access.  
 * Sufficient API calls available to pull and refresh the data.
 >[!NOTE]
->This template app does not support Github Enterprise.
+>This template app does not support GitHub Enterprise.
 
 ### De-authorize Power BI
 To de-authorize Power BI from being connected to your GitHub repo, you can Revoke access in GitHub. See this [GitHub help](https://help.github.com/articles/keeping-your-ssh-keys-and-application-access-tokens-safe/#reviewing-your-authorized-applications-oauth) topic for details.
