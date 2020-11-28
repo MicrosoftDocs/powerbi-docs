@@ -133,7 +133,7 @@ If you originally downloaded the app from AppSource, when a new version of the t
 ## Delete a template app
 
 An installed template app consists of the app and its associated workspace. If you want to remove the template app, you have two options:
-* **Delete**: To completely remove template app and its associated workspace, go to the app tile on the Apps page, select the trash icon, and then click **Delete** in the dialog that appears.
+* **Completely remove the app and its associated workspace**: To completely remove template app and its associated workspace, go to the app tile on the Apps page, select the trash icon, and then click **Delete** in the dialog that appears.
 * **Unpublish the app**: This option removes the app but keeps its associated workspace. This option is useful if, for instance, there are customizations that you made that you want to keep.
 
     To unpublish the app:
