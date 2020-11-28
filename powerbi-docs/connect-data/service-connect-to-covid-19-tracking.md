@@ -34,11 +34,11 @@ After you've installed the template app and connected to the data sources, you c
 
 ## Connect to data sources
 
-1. Click the icon on your Apps page to open the app.
+1. Click the icon on your Apps page to open the app. The app opens, showing sample data.
 
-1. On the splash screen that appears choose **Connect**.
+1. Select the **Connect your data** link on the banner at the top of the page.
 
-   ![Template app splash screen](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-splash-screen.png)
+   ![GitHub app connect your data link](media/service-connect-to-covid-19-tracking/power-bi-covid-19-connect-data.png)
 
 1. The parameters dialog will appear. There are no required parameters. Click **Next**.
 
