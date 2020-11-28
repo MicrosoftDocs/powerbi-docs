@@ -130,6 +130,20 @@ If you originally downloaded the app from AppSource, when a new version of the t
 >[!IMPORTANT]
 >Remember to [update the app](#customize-and-share-the-app) after overwriting to apply changes to the reports and dashboard for your organizational app users.
 
+## Delete a template app
+
+An installed template app consists of the app and its associated workspace. If you want to remove the template app, you have two options:
+* **Delete**: To completely remove template app and its associated workspace, go to the app tile on the Apps page, select the trash icon, and then click **Delete** in the dialog that appears.
+* **Unpublish the app**: This option removes the app but keeps its associated workspace. This option is useful if, for instance, there are customizations that you made that you want to keep.
+
+    To unpublish the app:
+    1. Open the app.
+    1. Click the edit app pencil icon to open the template app's workspace.
+    1. In the template app workspace, select **More option (...)**, and then choose **Unpublish App**.
+
+        ![Screenshot of unpublish app option.](media/service-template-apps-install-distribute/power-bi-template-app-unpublish.png)
+
+
 ## Next steps
 
 [Create workspaces with your colleagues in Power BI](../collaborate-share/service-create-the-new-workspaces.md)

@@ -53,9 +53,6 @@ When installing the Crisis Communication sample, take note of the [SharePoint li
 
 1. Select the icon on your Apps page to open the app.
 
-1. On the splash screen, select **Explore**.
-
-   ![Template app splash screen](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-splash-screen.png)
 
    The app opens, showing sample data.
 
