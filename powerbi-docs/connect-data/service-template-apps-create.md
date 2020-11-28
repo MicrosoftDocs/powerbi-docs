@@ -173,12 +173,10 @@ Let's go through the stages:
     When installation succeeds, you see a notification that the new app is ready.
 
 6. Select **Go to app**.
-7. In **Get started with your new app**, you see your app as your customers will see it.
 
-    ![Get started with your app](media/service-template-apps-create/power-bi-template-app-get-started.png)
-8. Select **Explore App** to verify the test app with the sample data.
-9. To make any changes, go back to the app in the original workspace. Update the test app until you're satisfied.
-10. When you're ready to promote your app to pre-production for further testing outside your tenant, go back to the **Release Management** pane and select **Promote app**.
+    Verify that the test app has the sample data. To make any changes, go back to the app in the original workspace. Update the test app until you're satisfied.
+
+1. When you're ready to promote your app to pre-production for further testing outside your tenant, go back to the **Release Management** pane and select **Promote app**.
 
     ![Promote app to pre-production](media/service-template-apps-create/power-bi-template-app-promote.png)
     >[!NOTE]

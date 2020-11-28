@@ -60,10 +60,6 @@ To install, customize, and distribute a template app, you need:
 
 1. Select **Go to app**.
 
-1. On the **Get started with your new app** window, select **Explore**.
-
-   ![Template app splash screen](media/service-template-apps-install-distribute/power-bi-template-app-get-started.png)
-
    The app opens, showing sample data.
 
 1. Select the **Connect your data** link on the banner at the top of the page.
