@@ -55,7 +55,7 @@ For a Power BI report, you will land on the page captured when you created the s
 You can edit your shortcut phrase by using the **Siri shortcut** button on the **Report** or **Dashboard** actions menu (...). The Siri shortcut page will be opened with an option to **Re-Record phrase**. 
 
 ## Create a home screen shortcut from your Siri shortcut 
-You can easily create a home screen shortcut for any Siri shortcut you've created. 
+You can easily create a home screen shortcut from any Siri shortcut you've created. 
 1. Open the **Shortcuts** app on your iOS device.
 
    ![Screenshot of the Shortcuts app icon on i O S.](./media/mobile-apps-ios-siri-search/power-bi-mobile-shortcuts-app.png)
