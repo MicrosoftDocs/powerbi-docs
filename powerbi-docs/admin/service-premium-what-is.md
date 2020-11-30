@@ -114,12 +114,13 @@ With Power BI Premium, you get *reserved capacities*. In contrast to a shared ca
 * [Streaming datasets](../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
 * [Q&A](../create-reports/power-bi-tutorial-q-and-a.md)
 
-Workspaces reside within capacities. Each Power BI user has a personal workspace known as **My Workspace**. Additional workspaces known as **workspaces** can be created to enable collaboration. By default workspaces, including personal workspaces, are created in the shared capacity. When you have Premium capacities, both My Workspaces and workspaces can be assigned to Premium capacities.
+Workspaces reside within capacities. Each Power BI user has a personal workspace known as **My Workspace**. Additional workspaces known as **workspaces** can be created to enable collaboration. By default, workspaces, including personal workspaces, are created in the shared capacity. When you have Premium capacities, both My Workspaces and workspaces can be assigned to Premium capacities.
 
 Capacity administrators automatically have their my workspaces assigned to Premium capacities.
 
 ### Updates for Premium Gen2 (Preview)
-Premium Gen 2 nodes no longer use reserved infrastructure. Instead, the service makes sure enough computing power is available to each workload running, by allocating enough resources out of a shared pool of very-capable computing nodes.
+
+Premium Gen 2 nodes no longer use reserved infrastructure. Instead, the service makes sure enough computing power is available to each workload running by allocating enough resources out of a shared pool of very-capable computing nodes.
 
 
 ### Capacity nodes
@@ -155,14 +156,14 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 
 #### Updates for Premium Gen2 (Preview)
 
-With **Premium Gen2** the amount of memory available on each Node size is set to the limit of memory footprint of a single artifact, and not to the cumulative consumption of memory. For example, in Premium Gen2 only a single dataset size is limited to 25GB, in comparison to the original Premium, where the total memory footprint of the datasets being handles at the same time was limited to 25Gb.
+With **Premium Gen2** the amount of memory available on each node size is set to the limit of memory footprint of a single artifact, and not to the cumulative consumption of memory. For example, in Premium Gen2 only a single dataset size is limited to 25 GB, in comparison to the original Premium, where the total memory footprint of the datasets being handled at the same time was limited to 25 GB.
 
 
 ### Capacity workloads
 
 Capacity workloads are services made available to users. By default, Premium and Azure capacities support only a dataset workload associated with running Power BI queries. The dataset workload cannot be disabled. Additional workloads can be enabled for [AI (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/), [Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md), and [Paginated reports](../paginated-reports/paginated-reports-save-to-power-bi-service.md). These workloads are supported in Premium subscriptions only. 
 
-Each additional workload allows configuring the maximum memory (as a percentage of total available memory) that can be used by the workload. Default values for maximum memory are determined by SKU. You can maximize your capacity's available resources by enabling only those additional workloads when they're used. And you can change memory settings only when you have determined default settings are not meeting your capacity resource requirements. Workloads can be enabled and configured for a capacity by capacity admins by using **Capacity settings** in the [Admin portal](service-admin-portal.md) or by using the [Capacities REST APIs](/rest/api/power-bi/capacities).  
+Each additional workload allows configuring the maximum memory (as a percentage of total capacity memory) that can be used by the workload. Default values for maximum memory are determined by SKU. You can maximize your capacity's available resources by enabling only those additional workloads when they're used. And you can change memory settings only when you have determined default settings aren't meeting your capacity resource requirements. Workloads can be enabled and configured for a capacity by capacity admins using **Capacity settings** in the [Admin portal](service-admin-portal.md) or using the [Capacities REST APIs](/rest/api/power-bi/capacities).  
 
 ![Enable workloads](media/service-admin-premium-workloads/admin-portal-workloads.png)
 
@@ -172,32 +173,34 @@ To learn more, see [Configure workloads in a Premium capacity](service-admin-pre
 
 At all times, the Power BI service makes the best use of capacity resources while not exceeding limits imposed on the capacity.
 
-Capacity operations are classified as either *interactive* or *background*. Interactive operations include rendering requests and responding to user interactions (filtering, Q&A querying, etc.). Generally, import model querying is memory resource-intensive, while querying DirectQuery and Live Connection models is CPU-intensive. Background operations include dataflow and import model refreshes, and dashboard query caching.
+Capacity operations are classified as either *interactive* or *background*. Interactive operations include rendering requests and responding to user interactions (filtering, Q&A querying, etc.). Background operations include dataflow and import model refreshes, and dashboard query caching.
 
-It's important to understand that interactive operations are always prioritized over background operations to ensure the best possible user experience. If there are insufficient resources, background operations are added to a queue for processing when resources free up. Background operations, like dataset refreshes, can be stopped mid-process by the Power BI service and added to a queue.
+It's important to understand that interactive operations are always prioritized over background operations to ensure the best possible user experience. If there are insufficient resources, background operations are added to a waiting queue until resources free up. Background operations, like dataset refreshes, can be interrupted mid-process by the Power BI service, added to a queue, and retried later on.
 
-Import models must be fully loaded into memory so they can be queried or refreshed. The Power BI service manages memory usage by using sophisticated algorithms to ensure maximum use of available memory, and can cause over-committing the capacity: While it's possible for a capacity to store many import models (up to 100 TB per Premium capacity), when their combined disk storage exceeds the supported memory (and additional memory is required for querying and refresh), then they cannot all be loaded into memory at the same time.
+Import models must be fully loaded into memory so they can be queried or refreshed. The Power BI service uses sophisticated algorithms to manage memory usage fairly, but in rare cases, the capacity can get overloaded if there are insufficient resources to meet customers' realtime demands. While it's possible for a capacity to store many import models in persistent storage (up to 100 TB per Premium capacity), not all the models necessarily reside in memory at the same time, otherwise their in-memory dataset size can easily exceed the capacity memory limit. Besides the memory required to load the datasets, additional memory is needed for execution of queries and refresh operations.
 
-Import models are therefore loaded into and removed from memory according to usage. An import model is loaded when it is queried (interactive operation) and not yet in memory, or when it's to be refreshed (background operation).
+Import models are therefore loaded and removed from memory according to usage. An import model is loaded when it is queried (interactive operation), or if it needs to be refreshed (background operation).
 
-The removal of a model from memory is known as *eviction*. It's an operation Power BI can perform quickly depending on the size of the models. If the capacity is not experiencing any memory pressure, models are simply loaded into memory and remain there. However, when insufficient memory is available to load a model, the Power BI service will first need to free-up memory. It frees memory by detecting models that have become inactive by seeking models that have not been used in the last three minutes \[[1](#endnote-1)\], and then evicting them. If there are no inactive models to evict, the Power BI service seeks to evict models loaded for background operations. A last resort, after 30 seconds of failed attempts \[[1](#endnote-1)\], is to fail the interactive operation. In this case, the report user is notified of failure with a suggestion to try again shortly. In some cases, models may be unloaded from memory due to service operations.
+The removal of a model from memory is known as *eviction*. It's an operation Power BI can perform quickly depending on the size of the models. If the capacity isn't experiencing any memory pressure and the model isn't idle (i.e., actively in-used), the model can reside in memory without being evicted. When Power BI determines there is insufficient memory to load a model, the Power BI service will attempt to free up memory by evicting inactive models, typically defined as models loaded for interactive operations which have not been used in the last three minutes \[[1](#endnote-1)\]. If there are no inactive models to evict, the Power BI service attempts to evict models loaded for background operations. A last resort, after 30 seconds of failed attempts \[[1](#endnote-1)\], is to fail the interactive operation. In this case, the report user is notified of failure with a suggestion to try again shortly. In some cases, models may be unloaded from memory due to service operations.
 
-It's important to stress that dataset eviction is a normal and expected behavior. It strives to maximize memory usage by loading and unloading models whose combined sizes can exceed available memory. This is by design, and transparent to report users. High eviction rates do not necessarily mean the capacity is insufficiently resourced. They can, however, become a concern if query or refresh responsiveness is suffering because of high eviction rates.
+It's important to stress that dataset eviction is a normal behavior on the capacity. The capacity strives to balance memory usage by managing the in-memory lifecycle of models in a way that is transparent to users. A high eviction rate does not necessarily mean the capacity is insufficiently resourced. It can, however, become a concern if the performance of queries or refreshes degrades due to the overhead of loading and evicting models repeatedly within a short span of time.
 
-Refreshes of import models are always memory intensive as models must be loaded into memory. Additional memory is required for processing. A full refresh can use approximately double the amount of memory required by the model. This ensures the model can be queried even when being processed, because queries are sent to the existing model, until the refresh has completed and the new model data is available. Incremental refresh will require less memory and could complete faster, and so can substantially reduce pressure on capacity resources. Refreshes can also be CPU-intensive for models, especially those with complex Power Query transformations, or calculated tables/columns that are complex or are based on large tables.
+Refreshes of import models are always memory intensive as models must be loaded into memory. Additional intermediate memory is also required for processing. A full refresh can use approximately double the amount of memory required by the model because Power BI maintains an existing snapshot of the model in memory until the processing operation is completed. This allows the model to be queried even when being it's being processed. Queries can be sent to the existing snapshot of the model until the refresh has completed and the new model data is available.
 
-Refreshes, like queries, require the model be loaded into memory. If there is insufficient memory, the Power BI service will attempt to evict inactive models, and if this is not possible (as all models are active), the refresh job is queued. Refreshes are typically CPU-intensive, even more so than queries. For this reason, there are capacity limits on the number of concurrent refreshes, set to 1.5 x the number of backend v-cores, rounded up. If there are too many concurrent refreshes, a scheduled refresh will be queued. When these situations occur, it takes longer for the refresh to complete. On-demand refreshes such as those triggered by a user request or an API call will retry three times \[[1](#endnote-1)\]. If there still aren't enough resources, the refresh will then fail.
+Incremental refresh performs partition refresh instead of a full model refresh, and will typically be faster and require less memory, and can substantially reduce the capacity's resource usage. Refreshes can also be CPU-intensive for models, especially those with complex Power Query transformations, or calculated tables or columns that are complex or are based on a large volume of data.
+
+Refreshes, like queries, require the model be loaded into memory. If there is insufficient memory, the Power BI service will attempt to evict inactive models, and if this isn't possible (as all models are active), the refresh job is queued. Refreshes are typically CPU-intensive, even more so than queries. For this reason, a limit on the number of concurrent refreshes, calculated as the ceiling of 1.5 x the number of backend v-cores, is imposed. If there are too many concurrent refreshes, the scheduled refresh is queued until a refresh slot is available, resulting in the operation taking longer to complete. On-demand refreshes such as those triggered by a user request or an API call will retry three times \[[1](#endnote-1)\]. If there still aren't enough resources, the refresh will then fail.
 
 #### Updates for Premium Gen2 (Preview)
-Premium Gen2 does not require cumulative memory limits, and therefore refreshes always have enough memory available. In addition, there is no limit of 1.5X refreshes running per v-core. You can schedule and run as many refreshes as required at any given time, and the Power BI service will run those refreshes at the time scheduled as a best effort.
 
+Premium Gen2 doesn't require cumulative memory limits, and therefore concurrent dataset refreshes don't contribute to resource constraints. There is no limit on the number of refreshes running per v-core. However, the refresh of individual datasets continues to be governed by existing capacity memory and CPU limits. You can schedule and run as many refreshes as required at any given time, and the Power BI service will run those refreshes at the time scheduled as a best effort.
 
 Section notes:   
 <a name="endnote-1"></a>\[1\] Subject to change.
 
 ### Regional support
 
-When creating a new capacity, Global administrators and Power BI service administrators can specify a region where workspaces assigned to the capacity will reside. This is known as **Multi-Geo**. With Multi-Geo, organizations can meet data residency requirements by deploying content to datacenters in a specific region, even if it's different than the region in which the Microsoft 365 Subscription resides. To learn more, see [Multi-Geo support for Power BI Premium](service-admin-premium-multi-geo.md).
+When creating a new capacity, global administrators and Power BI service administrators can specify a region where workspaces assigned to the capacity will reside. This is known as **Multi-Geo**. With Multi-Geo, organizations can meet data residency requirements by deploying content to datacenters in a specific region, even if it's different than the region where the Microsoft 365 subscription resides. To learn more, see [Multi-Geo support for Power BI Premium](service-admin-premium-multi-geo.md).
 
 ### Capacity management
 
@@ -209,7 +212,7 @@ When capacities are created, most administrative tasks are completed in the [Adm
 
 ![Screenshot shows the Power B I Admin portal with My Workspace selected.](media/service-premium-what-is/premium-admin-portal.png)
 
-Capacity admins can assign workspaces to the capacity, manage user permissions, and assign other admins. Capacity admins can also configure workloads, adjusting memory allocations, and if necessary, restart a capacity, resetting operations in a capacity becomes overloaded.
+Capacity admins can assign workspaces to the capacity, manage user permissions, and assign other admins. Capacity admins can also configure workloads, adjust memory allocations, and if necessary, restart a capacity, resetting operations if a capacity becomes overloaded.
 
 ![Screenshot shows capacity management in the Power BI Admin portal.](media/service-premium-what-is/premium-admin-portal-mgmt.png)
 
@@ -226,7 +229,7 @@ Monitoring in the portal provides a quick view with high-level metrics indicatin
 ![Screenshot shows capacity health in the Power B I Admin portal.](media/service-premium-what-is/premium-admin-portal-health.png)
 
 > [!NOTE]
-> **Updates for Premium Gen2 (Preview)** - Premium Gen2 only requires monitoring a single aspect: how much CPU time your capacity requires to serve the load at any moment. If you exceed you CPU time per the SKU size you purchased, your capacity either autoscales to accommodate the need, or throttles you interactive operations, based on your configuration settings.
+> **Updates for Premium Gen2 (Preview)** - Premium Gen2 only requires monitoring a single aspect: how much CPU time your capacity requires to serve the load at any moment. If you exceed your CPU time per the SKU size you purchased, your capacity either autoscales to accommodate the need, or throttles your interactive operations, based on your configuration settings.
 
 
 The **Power BI Premium Capacity Metrics** app provides the most in-depth information into how your capacities are performing. The app provides a high-level dashboard and more detailed reports.
@@ -240,7 +243,7 @@ From the app's dashboard, you can click a metric cell to open an in-depth report
 To learn more about monitoring capacities, see [Monitoring in the Power BI Admin portal](service-admin-premium-monitor-portal.md) and [Monitoring with the Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capacity.md).
 
 #### Updates for Premium Gen2 (Preview)
-**Premium Gen2** capacities do not use the Metrics app, they use the Capacity Utilization App, which will be made available during the preview. The Capacity Utilization App can be launched from your capacity management page in the **Admin portal** for each capacity.
+**Premium Gen2** capacities don't use the Metrics app, they use the Capacity Utilization App, which will be made available during the preview. The Capacity Utilization App can be launched from your capacity management page in the **Admin portal** for each capacity.
 
 
 ### Optimizing capacities
