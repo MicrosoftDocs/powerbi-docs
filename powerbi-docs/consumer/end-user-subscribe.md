@@ -6,7 +6,7 @@ ms.author: mihart
 ms.reviewer: cmfinlan
 featuredvideoid: 
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/06/2020
 LocalizationGroup: Common tasks

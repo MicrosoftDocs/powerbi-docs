@@ -8,7 +8,6 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 09/28/2020
-
 ---
 
 # Create parameters for paginated reports in the Power BI service

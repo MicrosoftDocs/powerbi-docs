@@ -1,14 +1,13 @@
 ---
 title: Control the use of datasets across workspaces - Power BI
 description: Learn how to restrict the flow of information in the Power BI tenant.
-author: maggiesMSFT
+author: paulinbar
+ms.author: painbar
 ms.reviewer: kayu
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 04/30/2020
-ms.author: maggies
-
 LocalizationGroup: Share your work
 ---
 

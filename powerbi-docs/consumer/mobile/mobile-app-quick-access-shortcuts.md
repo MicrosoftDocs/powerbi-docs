@@ -2,13 +2,11 @@
 title: Use Android app Shortcuts in the Power BI Android app
 description: Learn how to quickly access frequent viewed content directly with shortcuts and Google Search.
 author: paulinbar
-
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 04/06/2020
-ms.author: painbar
-
 ---
 # Use Android app Shortcuts in the Power BI Android app
 

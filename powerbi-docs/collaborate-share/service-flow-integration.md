@@ -2,14 +2,12 @@
 title: 'Integrate data alerts with Power Automate'
 description: Learn how to create Power Automate flows triggered by Power BI data alerts.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 11/09/2020
-ms.author: maggies
-
 LocalizationGroup: Get started
 ---
 # Integrate data alerts with Power Automate

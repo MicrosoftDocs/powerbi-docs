@@ -1,11 +1,11 @@
 ---
 title: Azure SQL Data Warehouse with DirectQuery
 description: Azure SQL Data Warehouse with DirectQuery
-ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: how-to
 author: davidiseminger
 ms.author: davidi
+ms.service: powerbi
+ms.subservice: pbi-data-sources
+ms.topic: how-to
 ms.reviewer: ""
 ms.custom: ""
 ms.date: 06/03/2020

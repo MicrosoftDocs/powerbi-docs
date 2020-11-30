@@ -2,14 +2,12 @@
 title: Supported languages in the Power BI mobile apps
 description: See the list of languages supported in the Power BI mobile apps.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
-ms.author: painbar
-
 ---
 # Supported languages in the Power BI mobile apps
 The Power BI mobile apps currently support these languages:

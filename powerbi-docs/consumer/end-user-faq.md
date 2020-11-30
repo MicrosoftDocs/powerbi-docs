@@ -2,14 +2,13 @@
 title: Frequently asked end-user questions in Power BI
 description: Browse a list of frequently asked questions and answers about the Power BI service and the Power BI mobile apps.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 09/02/2020
-ms.author: mihart
 ms.custom: licensing support
-
 LocalizationGroup: Get started
 ---
 

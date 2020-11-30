@@ -2,14 +2,12 @@
 title: Understand Power BI Desktop privacy levels
 description: Power BI Desktop privacy levels
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi-admin
 ms.topic: reference
 ms.date: 09/09/2019
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Power BI Desktop privacy levels

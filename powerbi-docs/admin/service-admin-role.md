@@ -2,14 +2,12 @@
 title: Understanding Power BI service administrator roles
 description: This article describes the Power BI service administrator and the specific roles that provide administrator privileges.
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 01/02/2020
-ms.author: kfollis
-
 LocalizationGroup: Administration
 ---
 

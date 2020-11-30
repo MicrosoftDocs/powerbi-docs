@@ -2,13 +2,11 @@
 title: Connect to the COVID-19 US tracking report
 description: How to get and install the COVID-19 US Cases template app, and how to connect to data.
 author: paulinbar
-
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 04/05/2020
-ms.author: painbar
-
 LocalizationGroup: Connect to services
 ---
 # Connect to the COVID-19 US tracking report

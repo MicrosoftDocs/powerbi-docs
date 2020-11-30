@@ -2,14 +2,12 @@
 title: Connect to datasets in the Power BI service from Power BI Desktop
 description: Use a common dataset for multiple Power BI Desktop reports in multiple workspaces, and manage your report lifecycle
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/13/2020
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Connect to datasets in the Power BI service from Power BI Desktop

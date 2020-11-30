@@ -2,14 +2,12 @@
 title: 'Tutorial: Analyze Facebook data by using Power BI Desktop'
 description: Learn how to import data from Facebook and use it in Power BI Desktop.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: tutorial
 ms.date: 05/06/2020
-ms.author: davidi
-
 LocalizationGroup: Learn more
 ---
 # Tutorial: Analyze Facebook data by using Power BI Desktop

@@ -2,14 +2,12 @@
 title: Manage your data source - SAP HANA
 description: How to manage the on-premises data gateway and data sources that belong to that gateway. This article is specific to SAP HANA. 
 author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 07/16/2019
-ms.author: arthii
-
 LocalizationGroup: Gateways
 ---
 

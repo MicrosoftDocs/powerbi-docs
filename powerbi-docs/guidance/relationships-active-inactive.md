@@ -2,13 +2,12 @@
 title: "Active vs inactive relationship guidance"
 description: Guidance for using active or inactive model relationships.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 03/02/2020
-ms.author: v-pemyer
 ---
 
 # Active vs inactive relationship guidance

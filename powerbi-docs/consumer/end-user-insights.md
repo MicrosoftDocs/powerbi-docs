@@ -2,14 +2,13 @@
 title: Run and view insights on dashboard tiles
 description: As a Power BI end user, learn how to get insights about your dashboard tiles.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: et_MLSL2sA8
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 09/09/2020
-ms.author: mihart
 # As a Power BI end user, I want to learn how to get insights about my dashboard tiles.
 LocalizationGroup: Dashboards
 ---

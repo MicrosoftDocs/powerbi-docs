@@ -2,14 +2,12 @@
 title: Use dashboard themes in Power BI service
 description: Learn how to use a custom color palette, and apply it to an entire dashboard in Power BI service
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 08/22/2018
-ms.author: maggies
-
 LocalizationGroup: Create reports
 ---
 # Use Dashboard Themes in Power BI service

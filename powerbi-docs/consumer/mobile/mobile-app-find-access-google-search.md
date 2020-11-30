@@ -2,13 +2,11 @@
 title: Find and access your content with Google Search
 description: Learn find and access your content with Google Search.
 author: paulinbar
-
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 04/06/2020
-ms.author: painbar
-
 ---
 # Find and access your content with Google Search
 

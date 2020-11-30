@@ -2,14 +2,12 @@
 title: Connect to data using generic interfaces in Power BI Desktop
 description: Learn how to connect different data sources with generic interfaces in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/08/2019
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Connect to data by using Power BI Desktop generic interfaces 

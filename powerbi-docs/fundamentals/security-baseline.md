@@ -1,15 +1,14 @@
 ---
 title: Azure security baseline for Power BI
 description: The Power BI security baseline provides procedural guidance and resources for implementing the security recommendations specified in the Azure Security Benchmark.
-author: msmbaldwin
-ms.service: security
+author: mbaldwin
+ms.author: margoc
+ms.service: powerbi
+ms.subservice: pbi-security
 ms.topic: conceptual
 ms.date: 11/20/2020
-ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-
 # Important: This content is machine generated; do not modify this topic directly. Contact mbaldwin for more information.
-
 ---
 
 # Azure security baseline for Power BI
