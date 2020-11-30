@@ -16,17 +16,13 @@ ms.date: 12/02/2020
 
 **Embedded analytics** and **Power BI Embedded** (the Azure offer) allow you to embed reports, dashboards and tiles, into your application or web app.
 
-In this tutorial, you'll learn how to create an *embed for your customers* (also known as *app owns data*) application. To use your application, your users will not need to sign in to Power BI or have a Power BI license. Your application will use one of the following methods to authenticate against Power BI:
-
-* **Master user** - A Power BI Pro license used for signing in to Power BI
-
-* [Service principal](embed-service-principal.md)
+In this tutorial, you'll learn how to create an *embed for your customers* (also known as *app owns data*) application. To use your application, your users will not need to sign in to Power BI or have a Power BI license.
 
 Use the *embed for your customers* method to embed your Power BI content, if you're an independent software vendor (ISV) or a developer, who wants to create applications for third parties.
 
-## Code samples specifications
+## Code sample specifications
 
-This tutorial includes instructions for configuring an *embed for your customers* sample applications in one of the following languages:
+This tutorial includes instructions for configuring an *embed for your customers* sample application in one of the following languages:
 
 * .NET Framework
 * .NET Core
