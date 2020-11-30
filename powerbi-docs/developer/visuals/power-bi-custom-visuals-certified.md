@@ -6,8 +6,8 @@ ms.author: kesharab
 ms.reviewer: ""
 featuredvideoid: ''
 ms.service: powerbi
-ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
+ms.topic: how-to
 ms.date: 03/08/2020
 ---
 

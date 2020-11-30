@@ -2,14 +2,12 @@
 title: Run R scripts in Power BI Desktop
 description: Run R scripts in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/14/2020
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Run R scripts in Power BI Desktop

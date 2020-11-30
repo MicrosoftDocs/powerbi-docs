@@ -2,13 +2,11 @@
 title: Use Power BI Q&A to explore and create visuals
 description: How to use Power BI Q&A to create new visualizations on dashboards and in reports.
 author: maggiesMSFT
-
+ms.author: maggies
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/13/2019
-ms.author: maggies
-
 LocalizationGroup: Ask questions of your data
 ---
 # Use Power BI Q&A to explore your data and create visuals

@@ -1,15 +1,13 @@
 ---
 title: Trusted Third-Party Connectors in Power BI
 description: How to trust a signed third-party connector in Power BI
-author: cpopell
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 04/3/2019
-ms.author: gepopell
-
 LocalizationGroup: Connect to data
 ---
 # Trusted third-party connectors

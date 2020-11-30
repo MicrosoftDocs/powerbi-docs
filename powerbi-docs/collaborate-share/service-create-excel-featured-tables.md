@@ -2,13 +2,12 @@
 title: Set featured tables in Power BI Desktop (preview)
 description: Create featured tables in Power BI Desktop so they show up in the Data Types Gallery in Excel. 
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 09/17/2020
-ms.author: maggies
-
 LocalizationGroup: Share your work
 ---
 # Set featured tables in Power BI Desktop (preview)

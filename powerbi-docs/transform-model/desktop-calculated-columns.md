@@ -2,14 +2,12 @@
 title: Using calculated columns in Power BI Desktop
 description: Calculated columns in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 05/07/2019
-ms.author: davidi
-
 LocalizationGroup: Model your data
 ---
 # Create calculated columns in Power BI Desktop

@@ -1,15 +1,13 @@
 ---
 title: Basic Area chart
 description: 'Basic Area chart.'
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: 'mihart'
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: conceptual
 ms.date: 06/16/2020
-ms.author: rien
-
 LocalizationGroup: Visualizations
 ---
 # Create and use basic area charts

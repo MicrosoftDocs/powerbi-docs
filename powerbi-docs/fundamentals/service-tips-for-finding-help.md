@@ -1,15 +1,13 @@
 ---
 title: 10 tips for getting help with your Power BI questions
 description: Here are 10 ways to get help when you have a question about how Power BI works
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 06/28/2018
-ms.author: maggies
-
 LocalizationGroup: Get started
 ---
 # 10 tips for getting help with your Power BI questions

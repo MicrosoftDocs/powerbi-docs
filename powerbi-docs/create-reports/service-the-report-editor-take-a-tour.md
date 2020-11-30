@@ -2,15 +2,13 @@
 title: Tour the report editor
 description: In Power BI Desktop and in the Power BI service, the report editor is where you design the reports your end users see. It's similar in the two environments. 
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 08/14/2019
-ms.author: maggies
-
 LocalizationGroup: Reports
 ---
 # Tour the report editor in Power BI

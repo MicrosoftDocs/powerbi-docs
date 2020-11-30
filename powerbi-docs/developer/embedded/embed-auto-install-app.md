@@ -1,11 +1,11 @@
 ---
 title: Auto install Power BI apps when embedding for your organization
 description: Learn how to auto install Power BI apps when embedding for your organization.
-ms.subservice: powerbi-developer
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
+ms.subservice: powerbi-developer
 ms.custom:
 ms.date: 04/16/2019
 ---

@@ -2,14 +2,12 @@
 title: Show items with no data in Power BI
 description: Learn how Power BI handles and displays items with no data
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 08/16/2019
-ms.author: davidi
-
 LocalizationGroup: Data from files
 ---
 # Show items with no data in Power BI

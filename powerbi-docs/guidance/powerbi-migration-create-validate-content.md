@@ -2,13 +2,12 @@
 title: Create content to migrate to Power BI
 description: Guidance on creating and validating content when migrating to Power BI.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/20/2020
-ms.author: v-pemyer
 ---
 
 # Create content to migrate to Power BI

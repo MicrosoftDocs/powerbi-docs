@@ -1,13 +1,13 @@
 ---
 title: Self-service Power BI Pro purchase help
 description: What to do if self-service purchase is disabled. Can't purchase Power BI Pro for the Power BI service.
-services: powerbi
 author: mihart
 ms.author: mihart
+services: powerbi
 ms.topic:  conceptual
 ms.service: powerbi
+ms.subservice: pbi-fundamentals
 ms.date: 07/09/2020
-
 ---
 # What to do if purchasing Power BI Pro is disabled
 

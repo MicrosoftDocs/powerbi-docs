@@ -2,14 +2,13 @@
 title: How content is organized in workspaces
 description: Learn about workspaces and workspace roles
 author: mihart
+ms.author: mihart
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/09/2020
-ms.author: mihart
 ms.custom: licensing support
-
 LocalizationGroup: Consumers
 ---
 

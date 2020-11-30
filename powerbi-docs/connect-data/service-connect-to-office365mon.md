@@ -2,14 +2,12 @@
 title: Connect to Office365Mon with Power BI
 description: Office365Mon for Power BI
 author: paulinbar
+ms.author: painbar
 ms.reviewer: maggiesMSFT
-
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 11/26/2019
-ms.author: painbar
-
 LocalizationGroup: Connect to services
 ---
 # Connect to Office365Mon with Power BI
