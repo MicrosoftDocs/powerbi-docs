@@ -1,15 +1,13 @@
 ---
 title: Paginated reports in the Power BI service
 description: Documentation describing paginated reports and how to view them in the Power BI service
-author: mihart
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: christopher.finlan
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/11/2020
-ms.author: mihart
-
 LocalizationGroup: Common tasks
 ---
 # Paginated reports in the Power BI service

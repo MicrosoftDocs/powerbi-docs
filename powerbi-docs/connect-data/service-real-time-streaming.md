@@ -2,14 +2,12 @@
 title: Real-time streaming in Power BI
 description: Get real-time data streaming and visuals in Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 07/16/2020
-ms.author: davidi
-
 LocalizationGroup: Data from files
 ---
 # Real-time streaming in Power BI

@@ -2,14 +2,12 @@
 title: Working with visualizations (visuals) as a business user
 description: Power BI concepts and terminology - visualizations, visuals. What is a Power BI visualization, visual.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/7/2020
-ms.author: mihart
-
 LocalizationGroup: Visualizations
 ---
 # Interact with visuals in reports, dashboards, and apps

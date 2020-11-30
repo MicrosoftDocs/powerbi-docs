@@ -2,13 +2,12 @@
 title: Overview of bookmarks in Power BI service reports
 description: Documentation overview topic for bookmarks in the Power BI service.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 08/26/2020
-ms.author: mihart
-
 LocalizationGroup: Create reports
 ---
 # What are bookmarks?

@@ -2,14 +2,12 @@
 title: Data source impact analysis
 description: Understand where your data source is being used.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: 
-
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 07/20/2020
-ms.author: painbar
-
 LocalizationGroup: 
 ---
 # Data source impact analysis

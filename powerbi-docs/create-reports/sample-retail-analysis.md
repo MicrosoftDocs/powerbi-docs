@@ -2,14 +2,12 @@
 title: 'Retail Analysis sample for Power BI: Take a tour'
 description: 'Retail Analysis sample for Power BI: Take a tour'
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: amac
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 07/02/2019
-ms.author: maggies
-
 LocalizationGroup: Samples
 ---
 # Retail Analysis sample for Power BI: Take a tour

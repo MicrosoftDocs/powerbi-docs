@@ -4,12 +4,10 @@ description: Learn how to use the Power BI Premium Metrics app to manage and tro
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 11/11/2020
-
 LocalizationGroup: Premium
 ---
 # Power BI Premium Metrics app

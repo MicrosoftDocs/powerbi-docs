@@ -2,14 +2,12 @@
 title: Create Power BI visuals using R
 description: With Power BI Desktop, you can use the R engine to visualize your data.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 11/04/2019
-ms.author: davidi
-
 LocalizationGroup: Create reports
 ---
 # Create Power BI visuals using R

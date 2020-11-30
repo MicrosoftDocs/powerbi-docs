@@ -1,14 +1,13 @@
 ---
 title: Tenant settings guidance
 description: Guidance for Power BI tenant settings.
-author: peter-myers
+author: paulinbar
+ms.author: painbar
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/10/2020
-ms.author: v-pemyer
 ---
 
 # Tenant settings guidance

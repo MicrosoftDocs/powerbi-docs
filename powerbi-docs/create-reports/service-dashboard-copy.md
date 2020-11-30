@@ -2,15 +2,13 @@
 title: Create a copy of a Power BI dashboard
 description: 'How to duplicate a Power BI dashboard '
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 03/02/2018
-ms.author: maggies
-
 LocalizationGroup: Dashboards
 ---
 # Create a copy of a dashboard in Power BI service

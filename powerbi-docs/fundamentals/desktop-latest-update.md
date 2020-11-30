@@ -2,14 +2,12 @@
 title: What's new in the latest Power BI Desktop update
 description: This article describes in detail the latest monthly update for Power BI Desktop.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 11/11/2020
-ms.author: davidi
-
 LocalizationGroup: Get started
 ---
 # What's new in Power BI Desktop?

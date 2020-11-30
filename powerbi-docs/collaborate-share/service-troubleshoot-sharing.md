@@ -2,15 +2,13 @@
 title: Troubleshoot sharing dashboards and reports
 description: How to resolve issues for sharing Power BI dashboards and reports with colleagues in and out of your organization.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 featuredvideoid: 0tUwn8DHo3s
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: troubleshooting
 ms.date: 06/23/2020
-ms.author: maggies
-
 LocalizationGroup: Share your work
 ---
 # Troubleshoot sharing dashboards and reports

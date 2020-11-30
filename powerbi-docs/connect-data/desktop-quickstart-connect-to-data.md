@@ -2,15 +2,14 @@
 title: Quickstart Connect to data in Power BI Desktop
 description: How to connect to the data sources available in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: quickstart
 ms.date: 01/10/2020
-ms.author: davidi
 LocalizationGroup: quickstart
 #Customer intent: As a data analyst or report creator, I want to connect to data in Power BI Desktop, so I can use Power BI Desktop to build data models and create reports.
-
 ---
 # Quickstart: Connect to data in Power BI Desktop
 

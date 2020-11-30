@@ -2,13 +2,12 @@
 title: "Auto date/time in Power BI Desktop"
 description: Understand auto date/time functionality in Power BI Desktop.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 10/23/2019
-ms.author: v-pemyer
 ---
 
 # Apply auto date/time in Power BI Desktop
