@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 06/02/2020
+ms.date: 12/02/2020
 #Customer intent: As an ISV developer, I want to embed a report, dashboard or tile into an application so that my customers can share data.
 ---
 
@@ -16,7 +16,7 @@ ms.date: 06/02/2020
 
 **Embedded analytics** and **Power BI Embedded** (the Azure offer) allow you to embed reports, dashboards and tiles, into your application or web app.
 
-In this tutorial you'll learn how to create an *embed for your customers* (also known as *app owns data*) application. Users will not need to sign in to Power BI or have a Power BI license, to use your application. Your application will use one of the following methods to authenticate against Power BI:
+In this tutorial, you'll learn how to create an *embed for your customers* (also known as *app owns data*) application. Users will not need to sign in to Power BI or have a Power BI license, to use your application. Your application will use one of the following methods to authenticate against Power BI:
 
 * **Master user** account (a Power BI Pro license used for signing in to Power BI)
 
@@ -166,7 +166,7 @@ To register your application with Azure AD, follow the instructions in [Register
 
 ## Step 3 - Create a Power BI workspace
 
-Power BI keeps your reports, dashboards and tiles in a workspace. To embed these items, you'll need to create them or upload them into a workspace.
+Power BI keeps your reports, dashboards, and tiles in a workspace. To embed these items, you'll need to create them or upload them into a workspace.
 
 >[!TIP]
 >If you already have a workspace, you can skip this step.
@@ -202,7 +202,7 @@ To download a sample report and publish it to your workspace, follow these steps
 
 ## Step 5 - Get values needed for embedding
 
-To embed your content you'll need to obtain certain parameter values. The table blow shows the required values, and indicates if they're applicable to the *service principal* authentication method, the *master user* authentication method, or both.
+To embed your content, you'll need to obtain certain parameter values. The table blow shows the required values, and indicates if they're applicable to the *service principal* authentication method, the *master user* authentication method, or both.
 
 Before you embed your content, make sure you have all the values listed below. Some of the values will differ, depending on the authentication method you're using.
 
@@ -225,11 +225,11 @@ To get the client ID GUID (also know as *application ID*), follow these steps:
 
 1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
 
-2. Search for **App registrations** and click the **App registrations** link.
+2. Search for **App registrations** and select the **App registrations** link.
 
 3. Select the Azure AD app your using for embedding your Power BI content.
 
-4. From the **Overview** blade, copy the **Application (clent) ID** GUID.
+4. From the **Overview** section, copy the **Application (client) ID** GUID.
 
 ### Workspace ID
 
@@ -268,11 +268,11 @@ To get the client secret, follow these steps:
 
 1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
 
-2. Search for **App registrations** and click the **App registrations** link.
+2. Search for **App registrations** and select the **App registrations** link.
 
 3. Select the Azure AD app your using for embedding your Power BI content.
 
-4. Under **Mange**, select **Certificates & secrets**.
+4. Under **Manage**, select **Certificates & secrets**.
 
 5. Under **Client secrets**, select **New client secret**.
 
@@ -289,11 +289,11 @@ To get the tenant ID GUID, follow these steps:
 
 1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
 
-2. Search for **App registrations** and click the **App registrations** link.
+2. Search for **App registrations** and select the **App registrations** link.
 
 3. Select the Azure AD app your using for embedding your Power BI content.
 
-4. From the **Overview** blade, copy the **Directory (tenant) ID** GUID.
+4. From the **Overview** section, copy the **Directory (tenant) ID** GUID.
 
 ### Power BI username and password
 
@@ -353,7 +353,7 @@ For an Azure AD app to be able to access the Power BI content and APIs, a Power 
 
 The Power BI embedded sample application allows you to create an *embed for your customers* Power BI app.
 
-Follow these steps to modify the a sample *embed for your customers* application, to embed your Power BI report.  
+Follow these steps to modify the *embed for your customers* sample application, to embed your Power BI report.  
 
 1. Open the [Power BI developer samples](https://github.com/microsoft/PowerBI-Developer-Samples) folder.
 
@@ -430,7 +430,7 @@ Follow these steps to modify the a sample *embed for your customers* application
 >1.	Right-click on the project name (AppOwnesData), and select **Manage NuGet packages**.
 >2. Search for **Power BI JavaScript** and then reinstall the package.
 >
->For more information see [How to reinstall and update packages](/nuget/consume-packages/reinstalling-and-updating-packages).
+>For more information, see [How to reinstall and update packages](/nuget/consume-packages/reinstalling-and-updating-packages).
 
 # [Java](#tab/java)
 
