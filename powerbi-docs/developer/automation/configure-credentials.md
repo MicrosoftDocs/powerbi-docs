@@ -6,17 +6,21 @@ ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
-ms.date: 02/23/2020
+ms.topic: how-to
+ms.date: 06/23/2020
 ---
 
 # Configure credentials programmatically for Power BI
 
-Follow these steps to configure credentials programmatically for Power BI.
+Follow the steps in this article, to configure credentials programmatically for Power BI.
+
+>[!NOTE]
+>* The calling user must be a dataset owner, or a gateway admin. You can also use a [service principal](../embedded/embed-service-principal.md). For example, the service principal can be the dataset owner.
+>* Cloud data sources and their corresponding credentials are managed at the user level.
 
 ## Update credentials flow for data sources
 
-1. Call [Get Datasources](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasourcesingroup) to discover the data sources of the dataset. In the response body for each data source, are the type, connection details, gateway, and data source ID.
+1. Call [Get Datasources](/rest/api/power-bi/datasets/getdatasourcesingroup) to discover the data sources of the dataset. In the response body for each data source, are the type, connection details, gateway, and data source ID.
 
     ```csharp
     // Select a datasource
@@ -24,7 +28,7 @@ Follow these steps to configure credentials programmatically for Power BI.
     var datasource = datasources.First();
     ```
 
-2. Build credentials string according to [Update Datasource Examples](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) depending on the credentials type.
+2. Build credentials string according to [Update Datasource Examples](/rest/api/power-bi/gateways/updatedatasource) depending on the credentials type.
 
     # [.NET SDK v3](#tab/sdk3)
 
@@ -40,13 +44,16 @@ Follow these steps to configure credentials programmatically for Power BI.
 
     ---
 
-2. Call [Get Gateway](https://docs.microsoft.com/rest/api/power-bi/gateways/getgateways) to retrieve the gateway public key.
+    >[!NOTE]
+    >If you're using cloud data sources don't follow the next steps in this section. Set the credentials using the gateway ID and data source ID obtained in step 1, by calling [Update Datasource](/rest/api/power-bi/gateways/updatedatasource). 
+
+3. Call [Get Gateway](/rest/api/power-bi/gateways/getgateways) to retrieve the gateway public key.
 
     ```csharp
     var gateway = pbiClient.Gateways.GetGatewayById(datasource.GatewayId);
     ```
 
-3. Encrypt the credentials.
+4. Encrypt the credentials.
 
     # [.NET SDK v3](#tab/sdk3)
 
@@ -64,7 +71,7 @@ Follow these steps to configure credentials programmatically for Power BI.
 
     ---  
 
-4. Build credential details with encrypted credentials.
+5. Build credential details with encrypted credentials.
 
     # [.NET SDK v3](#tab/sdk3)
 
@@ -92,7 +99,7 @@ Follow these steps to configure credentials programmatically for Power BI.
 
     ---
 
-5. Call [Update Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) to set credentials.
+6. Call [Update Datasource](/rest/api/power-bi/gateways/updatedatasource) to set credentials.
 
     ```csharp
     pbiClient.Gateways.UpdateDatasource(gatewayId, datasourceId, credentialDetails);
@@ -102,7 +109,7 @@ Follow these steps to configure credentials programmatically for Power BI.
 
 1. Install the [On-premises data gateway](https://powerbi.microsoft.com/gateway/) on your machine.
 
-2. Call [Get Gateways](https://docs.microsoft.com/rest/api/power-bi/gateways/getgateways) to retrieve the gateway ID and public key.
+2. Call [Get Gateways](/rest/api/power-bi/gateways/getgateways) to retrieve the gateway ID and public key.
 
     ```csharp
     // Select a gateway
@@ -122,7 +129,7 @@ Follow these steps to configure credentials programmatically for Power BI.
             dataSourceName: "my sql datasource");
     ```
 
-5. Call the [Create Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/createdatasource) API.
+5. Call the [Create Datasource](/rest/api/power-bi/gateways/createdatasource) API.
 
     ```csharp
     pbiClient.Gateways.CreateDatasource(gateway.Id, request);
@@ -130,7 +137,7 @@ Follow these steps to configure credentials programmatically for Power BI.
 
 ## Credential types
 
-When you call [Create Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/createdatasource) or [Update Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) under an **enterprise on-prem gateway** using [Power BI Rest API](https://docs.microsoft.com/rest/api/power-bi/), the credentials value needs to be encrypted using the gateway's public key.
+When you call [Create Datasource](/rest/api/power-bi/gateways/createdatasource) or [Update Datasource](/rest/api/power-bi/gateways/updatedatasource) under an **enterprise on-prem gateway** using [Power BI Rest API](/rest/api/power-bi/), the credentials value needs to be encrypted using the gateway's public key.
 
 >[!NOTE]
 >.NET SDK v3 can also run the .NET SDK v2 examples listed below.
@@ -221,6 +228,6 @@ This issue means the dataset isn't bound to a gateway. When creating a new datas
 
 After you create the dataset, an automatic binding is created between the dataset and a suitable gateway, which contains matching data sources for all connections. If there's no such gateway or multiple suitable gateways, the automatic binding fails.
 
-If you're using on-premises datasets, create the missing on-premises data sources, and bind the dataset to a gateway manually by using [Bind To Gateway](https://docs.microsoft.com/rest/api/power-bi/datasets/bindtogateway).
+If you're using on-premises datasets, create the missing on-premises data sources, and bind the dataset to a gateway manually by using [Bind To Gateway](/rest/api/power-bi/datasets/bindtogateway).
 
-To discover gateways that could be bound, use [Discover Gateways](https://docs.microsoft.com/rest/api/power-bi/datasets/discovergateways).
+To discover gateways that could be bound, use [Discover Gateways](/rest/api/power-bi/datasets/discovergateways).

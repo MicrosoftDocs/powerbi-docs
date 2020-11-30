@@ -2,11 +2,11 @@
 title: Use a relative date slicer or filter in Power BI
 description: Learn how to use a slicer or filter to constrain relative date ranges in Power BI.
 author: maggiesMSFT
-ms.reviewer: ''
+ms.reviewer: 'rien'
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
-ms.date: 05/05/2020
+ms.topic: how-to
+ms.date: 09/09/2020
 ms.author: maggies
 LocalizationGroup: Create reports
 ---
@@ -40,9 +40,7 @@ For the first setting in the *relative date slicer*, you have the following choi
 ![Screenshot of the Relative config options with the first setting called out.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04.png)
 
 * Last
-
 * Next
-
 * This
 
 The second (middle) setting in the *relative date slicer* lets you enter a number to define the relative date range.
@@ -54,26 +52,19 @@ The third setting lets you pick the date measurement. You have the following cho
 ![Screenshot of the Relative config options with the third setting called out.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-05.png)
 
 * Days
-
 * Weeks
-
 * Weeks (Calendar)
-
 * Months
-
 * Months (Calendar)
-
 * Years
-
 * Years (Calendar)
 
 If you select **Months** from that list, and enter *2* in the middle setting, here's what happens:
 
-* if today is July 20
+* If today is July 20:
 
-* the data included in visuals constrained by the slicer will show data for the previous two months
-
-* starting on May 21 and going through July 20 (today's date)
+    - The data included in visuals constrained by the slicer will show data for the previous two months,
+    - Starting on May 21 and going through July 20 (today's date).
 
 In comparison, if you selected *Months (Calendar)*, the visuals constrained would show data from May 1 through June 30 (the last two complete calendar months).
 
@@ -95,13 +86,12 @@ Once you've selected **Relative date filtering**, you see three sections to chan
 
 The following limitations and considerations currently apply to the **relative date range slicer** and filter.
 
+* The data type for the field in the slicer must be a date, and not the default of text. Otherwise, the relative options don't show up in the slicer.
 * Data models in **Power BI** don't include time zone info. The models can store times, but there's no indication of the time zone they're in.
-
 * The slicer and filter are always based on the time in UTC. If you set up a filter in a report and send it to a colleague in a different time zone, you both see the same data. Unless you are in the UTC time zone, you and your colleague must account for the time offset you experience.
-
 * You can convert data captured in a local time zone to UTC using the **Query Editor**.
 
 ## Next steps
 
-- [Use a relative date slicer and filter in Power BI](desktop-slicer-filter-date-range.md)
+- [Use a relative time slicer and filter in Power BI](../create-reports/slicer-filter-relative-time.md)
 - [Slicers in Power BI](power-bi-visualization-slicers.md)

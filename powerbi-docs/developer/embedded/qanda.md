@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/20/2017 
 ---
 
@@ -91,7 +91,7 @@ qna.on("visualRendered", function(event) {
 
 ## Embed token
 
-Create an embed token off of a dataset to start a Q&A part. For more information, see [Generate token](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
+Create an embed token off of a dataset to start a Q&A part. For more information, see [Generate token](/rest/api/power-bi/embedtoken).
 
 ## Next steps
 

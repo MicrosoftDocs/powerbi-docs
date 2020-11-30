@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/13/2020
 ms.author: davidi
 
@@ -143,19 +143,19 @@ Changing existing reports to use Implementation 2.0 is only possible in import m
 
     Determine whether the query already contains an option record, such as the following example:
 
-    ![query snippet](media/desktop-sap-bw-connector/sap_bw_9.png)
+    ![Screenshot shows a plaintext query with an option record.](media/desktop-sap-bw-connector/sap_bw_9.png)
 
     If so, add the `Implementation` 2.0 option, and remove the `ScaleMeasures` option, if present, as shown:
 
-    ![query snippet](media/desktop-sap-bw-connector/sap_bw_10.png)
+    ![Screenshot shows a plaintext query with the added value Implementation = 2.0.](media/desktop-sap-bw-connector/sap_bw_10.png)
 
     If the query doesn't already include an options record, just add it. For the following option:
 
-    ![query snippet](media/desktop-sap-bw-connector/sap_bw_11.png)
+    ![Screenshot shows a plaintext query with an option record added.](media/desktop-sap-bw-connector/sap_bw_11.png)
 
     Just change it to:
 
-    ![query snippet](media/desktop-sap-bw-connector/sap_bw_12.png)
+    ![Screenshot shows a plaintext query of the new option with the added value Implementation = 2.0.](media/desktop-sap-bw-connector/sap_bw_12.png)
 
 Every effort has been made to make Implementation 2.0 of the SAP BW Connector compatible with version 1. However, there may be some differences because of the different SAP BW MDX execution modes being used. To resolve any discrepancies, try switching between execution modes.
 

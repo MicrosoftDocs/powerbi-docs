@@ -3,11 +3,11 @@ title: "Subscribe to paginated reports in the Power BI service"
 description: In this article, you learn things to keep in mind about subscribing to paginated reports in the Power BI service. 
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: ''
+ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
-ms.date: 12/03/2019
+ms.topic: how-to
+ms.date: 09/01/2020
 ---
 
 # Subscribe yourself and others to paginated reports in the Power BI service 
@@ -22,7 +22,7 @@ In setting up subscriptions, you choose how often you want to receive the emails
 
 - You may include a preview image of the report in the email body.  This is optional, and may differ slightly than the first page of your attached report document, depending on the attachment format selected. 
 
-- The maximum report attachment size is 25 MB. 
+- The maximum report attachment size is 24 MB. 
 
 - You can subscribe other users for paginated reports that connect to any currently supported data sources, including Azure Analysis Services or Power BI datasets. Keep in mind the report attachment reflects the data based on your permissions, just as SQL Server Reporting Services does today. 
 

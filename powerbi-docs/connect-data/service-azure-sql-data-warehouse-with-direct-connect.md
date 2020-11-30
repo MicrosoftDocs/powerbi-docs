@@ -3,7 +3,7 @@ title: Azure SQL Data Warehouse with DirectQuery
 description: Azure SQL Data Warehouse with DirectQuery
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ""
@@ -70,7 +70,7 @@ Your fully qualified server name and database name can be found in the Azure por
 ![Azure portal](media/service-azure-sql-data-warehouse-with-direct-connect/azureportal.png)
 
 > [!NOTE]
-> If your Power BI tenant is in the same region as the Azure SQL Data Warehouse there will be no egress charges. You can find where your Power BI tenant is located using [these instructions](https://docs.microsoft.com/power-bi/service-admin-where-is-my-tenant-located).
+> If your Power BI tenant is in the same region as the Azure SQL Data Warehouse there will be no egress charges. You can find where your Power BI tenant is located using [these instructions](../admin/service-admin-where-is-my-tenant-located.md).
 
 [!INCLUDE [direct-query-sso](../includes/direct-query-sso.md)]
 

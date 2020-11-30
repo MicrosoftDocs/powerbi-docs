@@ -4,7 +4,7 @@ description: Learn how to auto install Power BI apps when embedding for your org
 ms.subservice: powerbi-developer
 author: KesemSharabi
 ms.author: kesharab
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: powerbi
 ms.custom:
 ms.date: 04/16/2019
@@ -20,11 +20,11 @@ If a user has access to an app, but the app isn't installed, then embedding fail
 
 ## Embed for Power BI users (User owns data)
 
-To allow auto install of apps for your users, you need to give your application the 'Content Create' permission when [registering your application](register-app.md#register-with-the-power-bi-application-registration-tool), or add it if you already registered your app.
+To allow auto install of apps for your users, you need to give your application the 'Content Create' permission when [registering your application](register-app.md#register-an-azure-ad-app), or add it if you already registered your app.
 
 ![Register app creates content](media/embed-auto-install-app/register-app-create-content.png)
 
-Next, you need to provide the app ID in the embed URL. To provide the app ID, the app creator first needs to install the app then use one of the supported [Power BI Rest API](https://docs.microsoft.com/rest/api/power-bi/) calls - [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) or [Get Dashboards](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards). Then the app creator needs to take the embed Url from the REST API response. The app ID appears in the URL if the content is from an app.  After you have the embed URL, you can use it to embed regularly.
+Next, you need to provide the app ID in the embed URL. To provide the app ID, the app creator first needs to install the app then use one of the supported [Power BI Rest API](/rest/api/power-bi/) calls - [Get Reports](/rest/api/power-bi/reports/getreports) or [Get Dashboards](/rest/api/power-bi/dashboards/getdashboards). Then the app creator needs to take the embed Url from the REST API response. The app ID appears in the URL if the content is from an app.  After you have the embed URL, you can use it to embed regularly.
 
 ## Secure Embed
 

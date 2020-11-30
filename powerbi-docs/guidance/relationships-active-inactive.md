@@ -25,7 +25,7 @@ Consider an example of an Import model designed to analyze airline flight on-tim
 
 Here's a partial model diagram of the two tables.
 
-![A model diagram contains two tables: Flight and Airport. The relationship design is described in the following paragraph.](media/relationships-active-inactive/flight-model-1.png)
+![Diagram showing a model containing two tables: Flight and Airport. The relationship design is described in the following paragraph.](media/relationships-active-inactive/flight-model-1.png)
 
 There are two model relationships between the **Flight** and **Airport** tables. In the **Flight** table, the **DepartureAirport** and **ArrivalAirport** columns relate to the **Airport** column of the **Airport** table. In star schema design, the **Airport** table is described as a [role-playing dimension](star-schema.md#role-playing-dimensions). In this model, the two roles are _departure airport_ and _arrival airport_.
 
@@ -35,13 +35,13 @@ This model design imposes severe limitations on how the data can be reported. Sp
 
 Here's the improved model design.
 
-![A model diagram now contains four tables: Date, Flight, Departure Airport, and Arrival Airport. The relationship design is described in the following paragraph.](media/relationships-active-inactive/flight-model-2.png)
+![Diagram showing a model containing four tables: Date, Flight, Departure Airport, and Arrival Airport.](media/relationships-active-inactive/flight-model-2.png)
 
 The model now has two airport tables: **Departure Airport** and **Arrival Airport**. The model relationships between these tables and the **Flight** table are active. Notice also that the column names in the **Departure Airport** and **Arrival Airport** tables are prefixed with the word _Departure_ or _Arrival_.
 
 The improved model design supports producing the following report design.
 
-![A report page has two slicers and a table visual. The slicers are Month and Departure Airport. The table visual lists Arrival Airports and various statistics.](media/relationships-active-inactive/flight-report-design.png)
+![Diagram showing a report page has two slicers and a table visual. The slicers are Month and Departure Airport.](media/relationships-active-inactive/flight-report-design.png)
 
 The report page filters by Melbourne as the departure airport, and the table visual groups by arrival airports.
 
@@ -82,7 +82,7 @@ Let's now consider different model and reporting requirements:
 
 Here's a partial model diagram of the two tables.
 
-![A model diagram contains two tables: Sales and Date. The Sales table includes six measures. The relationship design is described in the following paragraph.](media/relationships-active-inactive/sales-model.png)
+![Diagram showing a model containing two tables: Sales and Date. The Sales table includes six measures.](media/relationships-active-inactive/sales-model.png)
 
 There are two model relationships between the **Sales** and **Date** tables. In the **Sales** table, the **OrderDate** and **ShipDate** columns relate to the **Date** column of the **Date** table. In this model, the two roles for the **Date** table are _order date_ and _ship date_. It's the relationship to the **OrderDate** column that's active.
 
@@ -106,11 +106,11 @@ CALCULATE(
 
 This model design supports producing the following report design.
 
-![A report page has one slicer and a table visual. The slicer is Quarter, and the table visual lists monthly sales statistics.](media/relationships-active-inactive/sales-report-design.png)
+![Diagram showing a report page with one slicer and a table visual. The slicer is Quarter, and the table visual lists monthly sales statistics.](media/relationships-active-inactive/sales-report-design.png)
 
 The report page filters by quarter 2019 Q4. The table visual groups by month and displays various sales statistics. The **Orders** and **Orders Shipped** measures produce different results. They each use the same summarization logic (count rows of the **Sales** table), but different **Date** table filter propagation.
 
-Notice that the quarter slicer includes a BLANK item. This slicer item appears as a result of [table expansion](../transform-model/desktop-relationships-understand.md#strong-relationships). While each **Sales** table row has an order date, some rows have a BLANK ship date—these orders are yet to be shipped. Table expansion considers inactive relationships too, and so BLANKs can appear due to BLANKs on the many-side of the relationship, or due to data integrity issues.
+Notice that the quarter slicer includes a BLANK item. This slicer item appears as a result of [table expansion](../transform-model/desktop-relationships-understand.md#regular-relationships). While each **Sales** table row has an order date, some rows have a BLANK ship date—these orders are yet to be shipped. Table expansion considers inactive relationships too, and so BLANKs can appear due to BLANKs on the many-side of the relationship, or due to data integrity issues.
 
 ## Recommendations
 

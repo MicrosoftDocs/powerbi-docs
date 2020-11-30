@@ -6,8 +6,8 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-gateways
-ms.topic: conceptual
-ms.date: 07/15/2019
+ms.topic: how-to
+ms.date: 11/09/2020
 ms.author: arthii
 
 LocalizationGroup: Gateways
@@ -28,13 +28,13 @@ The following table describes differences between an on-premises data gateway an
 
 |   |On-premises data gateway | On-premises data gateway (personal mode) |
 | ---- | ---- | ---- |
-|Cloud services supported |Power BI, PowerApps, Azure Logic Apps, Power Automate, Azure Analysis Services, dataflows |Power BI |
-|Runs |As configured by users who have access to the gateway |As you for Windows authentication and as configured by you for other authentication types |
-|Can install only as computer admin |Yes |No |
-|Centralized gateway and data source management |Yes |No |
-|Import data and schedule refresh |Yes |Yes |
-|DirectQuery support |Yes |No |
-|LiveConnect support for Analysis Services |Yes |No |
+|**Cloud services supported** |Power BI, PowerApps, Azure Logic Apps, Power Automate, Azure Analysis Services, dataflows |Power BI |
+|**Runs** |As configured by users who have access to the gateway |As you for Windows authentication and as configured by you for other authentication types |
+|**Can install only as computer admin** |Yes |No |
+|**Centralized gateway and data source management** |Yes |No |
+|**Import data and schedule refresh** |Yes |Yes |
+|**DirectQuery support** |Yes |No |
+|**LiveConnect support for Analysis Services** |Yes |No |
 
 ## Install the on-premises data gateway (personal mode)
 
@@ -96,6 +96,7 @@ Fast Combine on a personal gateway helps you ignore specified privacy levels whi
 
 ## Next steps
 
+* [Add or remove a gateway data source](service-gateway-data-sources.md)
 * [Configuring proxy settings for the on-premises data gateway](/data-integration/gateway/service-gateway-proxy)  
 
 More questions? Try the [Power BI Community](https://community.powerbi.com/).

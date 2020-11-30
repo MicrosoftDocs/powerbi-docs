@@ -6,7 +6,7 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: ""
 ms.date: 01/31/2020 
 LocalizationGroup: Create reports
@@ -31,6 +31,9 @@ You can now configure RLS for data models imported into Power BI with Power BI D
 
 ## Next steps
 
-[Row-level security (RLS) with the Power BI service](../admin/service-admin-rls.md)  
+For more information related to this article, check out the following resources:
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/).
+- [Row-level security (RLS) with Power BI](../admin/service-admin-rls.md)
+- [Row-level security (RLS) guidance in Power BI Desktop](../guidance/rls-guidance.md)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

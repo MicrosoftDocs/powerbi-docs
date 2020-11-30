@@ -3,7 +3,7 @@ title: Power BI get started with third-party apps
 description: Power BI get started with third-party apps
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ""
@@ -53,4 +53,4 @@ On the **Office 365 My apps** site, here's how to revoke third-party permissions
 
 3. Hover over the app tile, click the **(...)** button, and click **Remove**.
 
-   ![Remove](media/service-power-bi-get-started-third-party-apps/remove.png)
+   ![Screenshot shows the Remove option to revoke third-party permissions.](media/service-power-bi-get-started-third-party-apps/remove.png)

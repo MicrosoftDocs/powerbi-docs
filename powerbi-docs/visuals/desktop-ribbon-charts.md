@@ -1,12 +1,12 @@
 ---
 title: Use ribbon charts in Power BI
 description: Create and consume ribbon charts in the Power BI Desktop
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: 'mihart'
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/05/2019
 ms.author: rien
 
@@ -20,7 +20,7 @@ LocalizationGroup: Visualizations
 
 You can create ribbon charts to visualize data, and quickly discover which data category has the highest rank (largest value). Ribbon charts are effective at showing rank change, with the highest range (value) always displayed on top for each time period. 
 
-![ribbon chart](media/desktop-ribbon-charts/ribbon-charts-01.png)
+![Screenshot shows a ribbon chart with data for Audio, Cell phones, and other categories displayed by year and quarter.](media/desktop-ribbon-charts/ribbon-charts-01.png)
 
 > [!NOTE]
 > Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../collaborate-share/service-share-reports.md).
@@ -53,12 +53,12 @@ This tutorial uses the [Retail Analysis sample PBIX file](https://download.micro
 
 3. The ribbon chart shows rank for every month. Notice how rank changes across time. For example, the Home category moves from second to fifth from February to March.
 
-    ![ribbon chart](media/desktop-ribbon-charts/power-bi-ribbon.png)
+    ![Screenshot shows the ribbon chart you created with some data called out.](media/desktop-ribbon-charts/power-bi-ribbon.png)
 
 ## Format a ribbon chart
 When you create a ribbon chart, you have formatting options available in the **Format** section of the **Visualizations** pane. The formatting options for ribbon charts are similar to those for a stacked column chart, with additional formatting options that are specific to the ribbons.
 
-![ribbon template on Visualization pane](media/desktop-ribbon-charts/power-bi-format-ribbon.png)
+![Screenshot shows the format icon selected and the Ribbons area expanded.](media/desktop-ribbon-charts/power-bi-format-ribbon.png)
 
 These formatting options for ribbon charts let you make adjustments.
 
@@ -73,7 +73,7 @@ Since the ribbon chart does not have y-axis labels, you may want to add data lab
 
 Set formatting options for your data labels. In this example, we've set the text color to white and display units to thousands.
 
-![ribbon template on Visualization pane](media/desktop-ribbon-charts/power-bi-data-labels.png)
+![Screenshot shows your final formatted ribbon chart.](media/desktop-ribbon-charts/power-bi-data-labels.png)
 
 ## Next steps
 

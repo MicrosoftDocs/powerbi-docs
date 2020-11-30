@@ -1,12 +1,12 @@
 ---
 title: Create a QR code for a tile to use in Power BI mobile apps
-description: QR codes in Power BI can connect anything in the real world directly to related BI information in the Power BI mobile app, no search needed.
+description: QR codes in Power BI tiles can connect anything in the real world directly to related BI information in the Power BI mobile app, no search needed.
 author: maggiesMSFT
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/07/2018
 ms.author: maggies
 
@@ -22,13 +22,13 @@ Colleagues you've shared the dashboard with can [scan the QR code for access to 
 
 ## Create a QR code for a tile
 1. Open a dashboard in the Power BI service.
-2. Select **More options** (...) in the top-right corner of the tile and select **Focus mode** ![](media/service-create-qr-code-for-tile/fullscreen-icon.jpg).
+2. Select **More options** (...) in the top-right corner of the tile and select **Focus mode** ![Fullscreen icon](media/service-create-qr-code-for-tile/fullscreen-icon.jpg).
 3. Select **More options** (...) in the top-right corner and select **Generate QR code**. 
    
-    ![](media/service-create-qr-code-for-tile/power-bi-create-qr-code-tile.png)
+    ![Screenshot of a tile, showing a pointer from the ellipsis to Generate Q R code.](media/service-create-qr-code-for-tile/power-bi-create-qr-code-tile.png)
 4. A dialog box with the QR code appears. 
    
-    ![](media/service-create-qr-code-for-tile/pbi_qrcode_opportunity_count.png)
+    ![Screenshot of a dialog, showing the Q R code is ready to download or save.](media/service-create-qr-code-for-tile/pbi_qrcode_opportunity_count.png)
 5. From here you can scan the QR code or download and save it so you can: 
    
    * Add it to an email or other document, or 

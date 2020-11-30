@@ -1,12 +1,12 @@
 ---
 title: Manage your data source - Oracle
-description: How to manage the on-premises data gateway and data sources that belong to that gateway.
+description: How to manage the on-premises data gateway and Oracle data sources that belong to that gateway.
 author: arthiriyer
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-gateways
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/15/2019
 ms.author: arthii
 
@@ -19,44 +19,22 @@ LocalizationGroup: Gateways
 
 After you [install the on-premises data gateway](/data-integration/gateway/service-gateway-install), you need to [add data sources](service-gateway-data-sources.md#add-a-data-source) that can be used with the gateway. This article looks at how to work with gateways and Oracle data sources either for scheduled refresh or for DirectQuery.
 
+## Connect to an Oracle database
+To connect to an Oracle database with the on-premises data gateway, the correct Oracle client software must be installed on the computer running the gateway. The Oracle client software you use depends on the Oracle server version, but will always match the 64-bit gateway.
+
+Supported Oracle versions: 
+- Oracle Server 9 and later
+- Oracle Data Access Client (ODAC) software 11.2 and later
+
 ## Install the Oracle client
+- [download and install the 64-bit Oracle client](https://www.oracle.com/database/technologies/odac-downloads.html).
 
-To connect the gateway to your Oracle server, the Oracle Data Provider for .NET (ODP.NET) must be installed and configured. ODP.NET is part of the Oracle Data Access Components (ODAC).
-
-For 32-bit versions of Power BI Desktop, use the following link to download and install the 32-bit Oracle client:
-
-* [32-bit Oracle Data Access Components (ODAC) with Oracle Developer Tools for Visual Studio (12.1.0.2.4)](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
-
-For 64-bit versions of Power BI Desktop or for the on-premises data gateway, use the following link to download and install the 64-bit Oracle client:
-
-* [64-bit ODAC 12.2c Release 1 (12.2.0.1.0) for Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
-
-After the client is installed, configure your tnsnames.ora file with the proper information for your database. Power BI Desktop and the gateway go off of the net_service_name defined in the tnsnames.ora file. If the net_service_name isn't configured, you can't connect. The default path for tnsnames.ora is `[Oracle Home Directory]\Network\Admin\tnsnames.ora`. For more information about how to configure tnsnames.ora files, see [Oracle: Local naming parameters (tnsnames.ora)](https://docs.oracle.com/cd/B28359_01/network.111/b28317/tnsnames.htm).
-
-### Example tnsnames.ora file entry
-
-Here's the basic format of an entry in tnsname.ora:
-
-```
-net_service_name=
- (DESCRIPTION=
-   (ADDRESS=(protocol_address_information))
-   (CONNECT_DATA=
-     (SERVICE_NAME=service_name)))
-```
-
-Here's an example of the server and port information filled in:
-
-```
-CONTOSO =
-  (DESCRIPTION =
-    (ADDRESS = (PROTOCOL = TCP)(HOST = oracleserver.contoso.com)(PORT = 1521))
-    (CONNECT_DATA =
-      (SERVER = DEDICATED)
-      (SERVICE_NAME = CONTOSO)
-    )
-  )
-```
+> [!NOTE]
+> Choose a version of Oracle Data Access Client (ODAC) which is compatible with your Oracle Server. For instance, ODAC 12.x does not always support Oracle Server version 9.
+> Choose the Windows installer of the Oracle Client.
+> During the setup of the Oracle client, make sure you enable *Configure ODP.NET and/or Oracle Providers for ASP.NET at machine-wide level* by selecting the corresponding checkbox during the setup wizard. Some versions of the Oracle client wizard selects the checkbox by default, others do not. Make sure that checkbox is selected so that Power BI can connect to your Oracle database.
+ 
+After the client is installed and ODAC is configured properly, we recommend using PowerBI Desktop or other test client to verify correct installation and configuration on the Gateway.
 
 ## Add a data source
 
@@ -108,7 +86,7 @@ If you're listed in the **Users** tab of the data source configured within the g
 
 ## Troubleshooting
 
-You might encounter several errors from Oracle when the naming syntax is either incorrect or not configured properly:
+You might encounter any of several errors from Oracle when the naming syntax is either incorrect or not configured properly:
 
 * ORA-12154: TNS:could not resolve the connect identifier specified.
 * ORA-12514: TNS:listener does not currently know of service requested in connect descriptor.
@@ -118,8 +96,9 @@ You might encounter several errors from Oracle when the naming syntax is either 
 
 These errors might occur if the Oracle client either isn't installed or isn't configured properly. If it's installed, verify that the tnsnames.ora file is properly configured and you're using the proper net_service_name. You also need to make sure that the net_service_name is the same between the machine that uses Power BI Desktop and the machine that runs the gateway. For more information, see [Install the Oracle client](#install-the-oracle-client).
 
-> [!NOTE]
-> You might also encounter a compatibility issue between the Oracle server version and the Oracle client version. Typically, you want these versions to match.
+You might also encounter a compatibility issue between the Oracle server version and the Oracle Data Access Client version. Typically, you want these versions to match, as some combinations are incompatible. For instance, ODAC 12.x does not support Oracle Server version 9.
+
+For diagnosing connectivity issues between the data source server and the Gateway machine, we recommend installing a client(such as PowerBI Desktop or Oracle ODBC Test) on the gateway machine. You can use the client to check connectivity to the data source server.
 
 For additional troubleshooting information that relates to the gateway, see [Troubleshooting the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot).
 

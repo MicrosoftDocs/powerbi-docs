@@ -1,12 +1,12 @@
 ---
 title: Use natural language to explore your data using Power BI Q&A
-description: How to use Power BI Q&A to explore your data
+description: How to use Power BI Q&A to explore your data and create visualizations by using natural language for queries.
 author: mohaali
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/17/2019
+ms.date: 07/01/2020
 ms.author: mohaali
 
 ---
@@ -14,7 +14,7 @@ ms.author: mohaali
 
 Sometimes the fastest way to get an answer from your data is to perform a search over your data using natural language. The Q&A feature in Power BI lets you explore your data in your own words using natural language. Q&A is interactive, even fun. Often, one question leads to others as the visualizations reveal interesting paths to pursue. Asking the question is just the beginning. Travel through your data, refining or expanding your question, uncovering new information, zeroing in on details, or zooming out for a broader view. The experience is interactive and fast, powered by an in-memory storage. 
 
-Power BI Q&A is free and available to all users. In Power BI Desktop, report designers can use Q&A to explore data and create visualizations. In the Power BI service, everyone can explore their data with Q&A. If you have permission to edit a dashboard or report, you can also pin your Q&A results.
+Power BI Q&A is free and available to all users. In Power BI Desktop, report designers can use Q&A to explore data and create visualizations. In the Power BI service, everyone can explore their data with Q&A. Our mobile apps support Q&A too, with the Q&A virtual assistant in iOS and the Q&A visual on Android devices. If you have permission to edit a dashboard or report, you can also pin your Q&A results.
 
 ## How to use Q&A
 
@@ -39,22 +39,20 @@ As you type your question, Power BI Q&A shows relevant and contextual suggestion
 
 ![Q&A phrase completion](media/qna-suggestion-phrase-completion.png)
 
-### Red/Blue underlines
+### Red/Blue/Orange underlines
 
 Q&A shows words with underlines to help you see which words the system understood or didn't recognize. A solid blue underline indicates that the system successfully matched the word to a field or value in the data-model. The example below shows that Q&A recognized the word *EU Sales*.
 
 ![Q&A blue underline](media/qna-blue-underline.png)
 
-Often when you type in a word into Q&A, it's marked with a red underline. A red underline can indicate one of two potential issues. The first type of issue is categorized as *low confidence*. If you type a vague or ambiguous word, the field is underlined in red. An example could be the word 'Sales'. Multiple fields could contain the word 'Sales', so the system uses a red underline to prompt you to choose the field you meant. Another example of low confidence could be if you type the word 'area', but the column it matches is 'region'. Power BI Q&A recognizes words that mean the same thing, thanks to the integration with Bing and Office. Q&A underlines the word in red so you know it's not a direct match.
+ An orange underline indicates the word/words is categorized as *low confidence*. If you type a vague or ambiguous word, the field is underlined in orange. An example could be the word 'Sales'. Multiple fields could contain the word 'Sales', so the system uses a orange underline to prompt you to choose the field you meant. Another example of low confidence could be if you type the word 'area', but the column it matches is 'region'. Power BI Q&A recognizes words that mean the same thing, thanks to the integration with Bing and Office and also interpreting renames from within a report as potential suggestions. Q&A underlines the word in orange so you know it's not a direct match.
 
-![Q&A red underline Sales](media/qna-red-underline-sales.png)
-
-The second type of issue is when Q&A doesn't recognize the word at all. You could encounter this issue by using a domain-specific term that isn't mentioned anywhere in the data, or the data fields are incorrectly named. An example could be using the word 'Costs' though it doesn't exist anywhere in the data. The word is in the English dictionary, but Q&A marks this term with a red underline.
+A red underline means Q&A didn't recognize the word at all. You could encounter this issue by using a domain-specific term that isn't mentioned anywhere in the data, or the data fields are incorrectly named. An example could be using the word 'Costs' though the word doesn't exist anywhere in the data. The word is in the English dictionary, but Q&A will mark this term with a red underline to indicate it didn't find this term with respect to the data.
 
 ![Q&A red underline Sales](media/qna-red-underline-costs.png)
 
 > [!NOTE]
-> You can customize the blue/red underline colors in the Q&A **Visual formatting** pane. Also, the [Q&A tooling](q-and-a-tooling-teach-q-and-a.md) article explains *Teach Q&A*, which you use to define terms Q&A didn't recognize.
+> You can customize the blue/red/orange underline colors in the Q&A **Visual formatting** pane. Also, the [Q&A tooling](q-and-a-tooling-teach-q-and-a.md) article explains *Teach Q&A*, which you use to define terms Q&A didn't recognize.
 
 ### Visualization results
 

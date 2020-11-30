@@ -1,12 +1,12 @@
 ---
 title: Create advanced analytics and visualizations using R scripts
 description: Use R scripts in Power BI Desktop to create advanced analytics and advanced visualizations
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: 'mihart'
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/14/2019
 ms.author: rien
 
@@ -100,15 +100,19 @@ R visuals in the Power BI service have a few limitations:
   
   * Add the following line at the beginning of the R script:
     
-        powerbi_rEnableShowText =  1
+```powerbi_rEnableShowText =  1```
+
 * Chinese, Japanese, and Korean fonts require all of the additional following steps to work properly in the Power BI service:
   
   * First, install the R package *showtext* and all of its dependencies. You can do this by running the following script:
     
-        *install.packages("showtext")*
+```install.packages("showtext")```
+
   * Next, add the following line at the beginning of the R script:
     
-        powerbi_rEnableShowTextForCJKLanguages =  1
+```R script
+powerbi_rEnableShowTextForCJKLanguages =  1
+```
 
 ## Overview of R packages
 R packages are collections of R functions, data, and compiled code that are combined in a well-defined format. When R is installed, it comes with a standard set of packages, and other packages are available for download and installation. Once installed, an R package must be loaded into the session to be used. The primary source of free R packages is CRAN, the [Comprehensive R Archive Network](https://cran.r-project.org/web/packages/available_packages_by_name.html).

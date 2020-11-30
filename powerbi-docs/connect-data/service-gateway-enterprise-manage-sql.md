@@ -1,12 +1,12 @@
 ---
 title: Manage your data source - SQL
-description: How to manage the on-premises data gateway and data sources that belong to that gateway.
+description: How to manage the on-premises data gateway and SQL Server data sources that belong to that gateway.
 author: arthiriyer
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-gateways
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/15/2019
 ms.author: arthii
 

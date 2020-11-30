@@ -5,8 +5,8 @@ author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: conceptual
-ms.date: 05/11/2020
+ms.topic: how-to
+ms.date: 08/20/2020
 ms.author: kfollis
 ms.custom: licensing support
 
@@ -28,6 +28,10 @@ Knowing who is taking what action on which item in your Power BI tenant can be c
 
 
 ## Use the activity log
+
+> [!NOTE]
+> Activity logging isn't supported for Microsoft Cloud Deutschland. Learn more about service limitations for the Germany cloud in [Frequently Asked Questions for Power BI for Germany Cloud customers](service-govde-faq.md).
+
 
 As a Power BI service admin, you can analyze usage for all Power BI resources at the tenant level by using custom reports based on the Power BI activity log. You can download the activities by using a REST API or PowerShell cmdlet. You can also filter the activity data by date range, user, and activity type.
 
@@ -69,6 +73,8 @@ completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 > It can take up to 24 hours for all events to show up, though full data is typically available much sooner.
 >
 >
+To learn more about using the Power BI REST API, including examples of how to get audit activity events, see [Admin - Get Activity Events](/rest/api/power-bi/admin/getactivityevents) in the Power BI REST API reference documentation.
+
 ### Get-PowerBIActivityEvent cmdlet
 
 Download activity events by using the Power BI Management cmdlets for PowerShell. The **Get-PowerBIActivityEvent** cmdlet  automatically handles the continuation token for you. The **Get-PowerBIActivityEvent** cmdlet takes a StartDateTime and an EndDateTime parameter with the same restrictions as the **ActivityEvents** REST API. In other words, the start date and end date must reference the same date value because you can only retrieve the activity data for one day at a time.
@@ -99,6 +105,9 @@ $activities[0]
 
 ```
 
+> [!NOTE]
+> A PowerShell sample is available to help you learn how to filter and retrieve Power BI activity log events. For more information, see [Access the Power BI activity log](../guidance/admin-activity-log.md).
+
 ## Use the audit log
 
 If your task is to track user activities across Power BI and Microsoft 365, you work with auditing in the Office 365 Security & Compliance Center or use PowerShell. Auditing relies on functionality in Exchange Online, which is automatically provisioned to support Power BI.
@@ -109,7 +118,7 @@ You can filter the audit data by date range, user, dashboard, report, dataset, a
 
 You must meet these requirements to access audit logs:
 
-- You must either be a global admin or assigned the Audit Logs or View-Only Audit Logs role in Exchange Online to access the audit log. By default, the Compliance Management and Organization Management role groups come with these roles assigned on the **Permissions** page in the Exchange admin center.
+- You must either be a global admin or assigned the Audit Logs or View-Only Audit Logs role in Exchange Online to access the audit log. By default, the Compliance Management and Organization Management role groups come with these roles assigned on the **Permissions** page in the Exchange admin center. For more information about the roles that can view audit logs, see [Requirements to search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#requirements-to-search-the-audit-log).
 
     To provide non-admin accounts with access to the audit log, add the user as a member of one of these role groups. If you want to do it another way, you can create a custom role group in the Exchange admin center, assign the Audit Logs or View-Only Audit Logs role to this group, and then add the non-admin account to the new role group. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
 
@@ -141,7 +150,7 @@ Restrict results to only Power BI activities by following these steps. For a lis
 
 2. Select **Power BI activities**.
 
-   ![Screenshot of Audit log search with Power BI activities called out.](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
+   ![Screenshot of the Audit log search with Power B I activities called out.](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
 
 3. Select anywhere outside of the selection box to close it.
 
@@ -153,13 +162,13 @@ You can search the logs by date range using the **Start date** and **End date** 
 
 You'll receive an error if the selected date range is greater than 90 days. If you're using the maximum date range of 90 days, select the current time for **Start date**. Otherwise, you'll receive an error saying that the start date is earlier than the end date. If you've turned on auditing within the last 90 days, the date range can't start before the date that auditing was turned on.
 
-![Screenshot of Audit log search with Start Date and End Date options called out.](media/service-admin-auditing/search-audit-log-by-date.png)
+![Screenshot of the Audit log search with Start Date and End Date options called out.](media/service-admin-auditing/search-audit-log-by-date.png)
 
 ### Search the audit logs by users
 
 You can search for audit log entries for activities done by specific users. Enter one or more user names in the **Users** field. The user name looks like an email address. It's the account that users log into Power BI with. Leave this box blank to return entries for all users (and service accounts) in your organization.
 
-![Search by users](media/service-admin-auditing/search-audit-log-by-user.png)
+![Screenshot of the Audit log search with Users called out.](media/service-admin-auditing/search-audit-log-by-user.png)
 
 ### View search results
 
@@ -194,7 +203,7 @@ To export the Power BI audit log to a CSV file, follow these steps.
 
 1. Select either **Save loaded results** or **Download all results**.
 
-    ![Screenshot of the Export results option.](media/service-admin-auditing/export-auditing-results.png)
+    ![Screenshot of the Export results option with the Download all results called out.](media/service-admin-auditing/export-auditing-results.png)
 
 ### Use PowerShell to search audit logs
 
@@ -242,6 +251,7 @@ The following operations are available in both the audit and activity logs.
 | Admin attached dataflow storage account to tenant | AdminAttachedDataflowStorageAccountToTenant | Not currently used                       |
 | Analyzed Power BI dataset                         | AnalyzedByExternalApplication               | Generated when users interact with the service                                         |
 | Analyzed Power BI report                          | AnalyzeInExcel                              |                                          |
+| Assigned a workspace to a deployment pipeline                          | AssignWorkspaceToPipeline                              |                                          |
 | Attached dataflow storage account                 | AttachedDataflowStorageAccount              |                                          |
 | Binded Power BI dataset to gateway                | BindToGateway                               |                                          |
 | Canceled dataflow refresh                        | CancelDataflowRefresh                       |                                          |
@@ -250,7 +260,9 @@ The following operations are available in both the audit and activity logs.
 | Changed Power BI dataset connections              | SetAllConnections                           |                                          |
 | Changed Power BI gateway admins                   | ChangeGatewayAdministrators                 |                                          |
 | Changed Power BI gateway data source users        | ChangeGatewayDatasourceUsers                |                                          |
+| Created an organizational custom visual                          | InsertOrganizationalGalleryItem                                |                                          |
 | Created organizational Power BI content pack      | CreateOrgApp                                |                                          |
+| Created deployment pipeline      | CreateAlmPipeline                                |                                          |
 | Created Power BI app                              | CreateApp                                   |                                          |
 | Created Power BI dashboard                        | CreateDashboard                             |                                          |
 | Created Power BI dataflow                         | CreateDataflow                              |                                          |
@@ -260,9 +272,16 @@ The following operations are available in both the audit and activity logs.
 | Created Power BI gateway                          | CreateGateway                               |                                          |
 | Created Power BI group                            | CreateGroup                                 |                                          |
 | Created Power BI report                           | CreateReport <sup>1</sup>                                |                                          |
+| Create Power BI template app workspace | CreateTemplateApp   |
+| Create Power BI template app install ticket | CreateTemplateAppInstallTicket |
+| Create Power BI template app package | CreateTemplateAppPackage |
+| Custom visual requested Azure AD access token                           | GenerateCustomVisualAADAccessToken                                |                                          |
+| Custom visual requested Office Web Apps access token                           | GenerateCustomVisualWACAccessToken                                |                                          |
 | Dataflow migrated to external storage account     | DataflowMigratedToExternalStorageAccount    | Not currently used                       |
 | Dataflow permissions added                        | DataflowPermissionsAdded                    | Not currently used                       |
 | Dataflow permissions removed                      | DataflowPermissionsRemoved                  | Not currently used                       |
+| Deleted an organizational custom visual     | DeleteOrganizationalGalleryItem                                |                                          |
+| Deleted deployment pipeline      | DeleteAlmPipeline                                |                                          |
 | Deleted organizational Power BI content pack      | DeleteOrgApp                                |                                          |
 | Deleted Power BI comment                          | DeleteComment                               |                                          |
 | Deleted Power BI dashboard                        | DeleteDashboard                             | Not currently used                       |
@@ -274,6 +293,9 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI gateway                          | DeleteGateway                               |                                          |
 | Deleted Power BI group                            | DeleteGroup                                 |                                          |
 | Deleted Power BI report                           | DeleteReport                                |                                          |
+| Deleted Power BI template app workspace | DeleteTemplateApp |
+| Deleted Power BI template app package | DeleteTemplateAppPackage |
+| Deployed to a pipeline stage                           | DeployAlmPipeline                                |                                          |
 | Discovered Power BI dataset data sources          | GetDatasources                              |                                          |
 | Downloaded Power BI report                        | DownloadReport                              |                                          |
 | Edited dataflow properties                        | EditDataflowProperties                      |                                          |
@@ -285,19 +307,24 @@ The following operations are available in both the audit and activity logs.
 | Exported Power BI dataflow                        | ExportDataflow                              |                                          |
 | Exported Power BI report visual data              | ExportReport                                |                                          |
 | Exported Power BI tile data                       | ExportTile                                  |                                          |
+| Extracted Power BI template app package to workspace | ExtractTemplateAppPackage |
 | Failed to add dataflow permissions                | FailedToAddDataflowPermissions              | Not currently used                       |
 | Failed to remove dataflow permissions             | FailedToRemoveDataflowPermissions           | Not currently used                       |
 | Generated Power BI dataflow SAS token             | GenerateDataflowSasToken                    |                                          |
 | Generated Power BI Embed Token                    | GenerateEmbedToken                          |                                          |
+| Generate screenshot                       | GenerateScreenshot |                     |
 | Imported file to Power BI                         | Import                                      |                                          |
 | Installed Power BI app                            | InstallApp                                  |                                          |
+| Installed Power BI template app | InstallTemplateApp |
 | Migrated workspace to a capacity                  | MigrateWorkspaceIntoCapacity                |                                          |
 | Posted Power BI comment                           | PostComment                                 |                                          |
 | Printed Power BI dashboard                        | PrintDashboard                              |                                          |
 | Printed Power BI report page                      | PrintReport                                 |                                          |
+| Promoted Power BI template app package | PromoteTemplateAppPackage |
 | Published Power BI report to web                  | PublishToWebReport <sup>2</sup>                         |                                          |
 | Published or updated featured tables | UpdateFeaturedTables <sup>3</sup>   | |
 | Received Power BI dataflow secret from Key Vault  | ReceiveDataflowSecretFromKeyVault           |                                          |
+| Removed a workspace from a deployment pipeline         | UnassignWorkspaceFromPipeline                 |                                          |
 | Removed data source from Power BI gateway         | RemoveDatasourceFromGateway                 |                                          |
 | Removed Power BI group members                    | DeleteGroupMembers                          |                                          |
 | Removed workspace from a capacity                 | RemoveWorkspacesFromCapacity                |                                          |
@@ -305,6 +332,9 @@ The following operations are available in both the audit and activity logs.
 | Requested Power BI dataflow refresh               | RequestDataflowRefresh                      | Not currently used                       |
 | Requested Power BI dataset refresh                | RefreshDataset                              |                                          |
 | Retrieved Power BI workspaces                     | GetWorkspaces                               |                                          |
+| Sensitivity Label Applied                         | SensitivityLabelApplied                     |                                          |
+| Sensitivity Label Changed                         | SensitivityLabelChanged                     |                                          |
+| Sensitivity Label Removed                         | SensitivityLabelRemoved                     |                                          |
 | Set dataflow storage location for a workspace     | SetDataflowStorageLocationForWorkspace      |                                          |
 | Set scheduled refresh on Power BI dataflow        | SetScheduledRefreshOnDataflow               |                                          |
 | Set scheduled refresh on Power BI dataset         | SetScheduledRefresh                         |                                          |
@@ -317,9 +347,13 @@ The following operations are available in both the audit and activity logs.
 | Took over a Power BI dataflow                     | TookOverDataflow                             |                                          |
 | Unpublished Power BI app                          | UnpublishApp                                |                                          |
 | Update capacity resource governance settings      | UpdateCapacityResourceGovernanceSettings    | Not currently in Microsoft 365 admin center |
+| Updated an organizational custom visual                     | UpdateOrganizationalGalleryItem                   |                                          |
 | Updated capacity admin                            | UpdateCapacityAdmins                        |                                          |
 | Updated capacity display name                     | UpdateCapacityDisplayName                   |                                          |
 | Updated dataflow storage assignment permissions   | UpdatedDataflowStorageAssignmentPermissions |                                          |
+| Updated deployment pipeline access   | UpdateAlmPipelineAccess |                                          |
+| Updated installed Power BI template app parameters | UpdateInstalledTemplateAppParameters |
+| Updated deployment pipeline configuration   | SetConfigurationAlmPipeline |                                          |
 | Updated organization's Power BI settings          | UpdatedAdminFeatureSwitch                   |                                          |
 | Updated Power BI app                              | UpdateApp                                   |                                          |
 | Updated Power BI dataflow                         | UpdateDataflow                              |                                          |
@@ -329,6 +363,8 @@ The following operations are available in both the audit and activity logs.
 | Updated Power BI folder                           | UpdateFolder                                |                                          |
 | Updated Power BI folder access                    | UpdateFolderAccess                          |                                          |
 | Updated Power BI gateway data source credentials  | UpdateDatasourceCredentials                 |                                          |
+| Updated Power BI template app settings | UpdateTemplateAppSettings |
+| Updated Power BI template app test access permissions | UpdateTemplateAppTestPackagePermissions |
 | Viewed Power BI dashboard                         | ViewDashboard                               |                                          |
 | Viewed Power BI dataflow                          | ViewDataflow                                |                                          |
 | Viewed Power BI report                            | ViewReport                                  |                                          |
@@ -344,8 +380,8 @@ The following operations are available in both the audit and activity logs.
 
 ## Next steps
 
-[What is Power BI administration?](service-admin-administering-power-bi-in-your-organization.md)  
-
-[Power BI Admin Portal](service-admin-portal.md)  
-
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- [What is Power BI administration?](service-admin-administering-power-bi-in-your-organization.md)
+- [Power BI Admin Portal](service-admin-portal.md)
+- [Access the Power BI activity log](../guidance/admin-activity-log.md)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

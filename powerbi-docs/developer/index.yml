@@ -34,10 +34,10 @@ highlightedContent:
     - title: Visuals in Power BI
       itemType: overview
       url: visuals/power-bi-custom-visuals.md
-    # Card
-    - title: What can developers do with the Power BI API?
-      itemType: overview
-      url: automation/overview-of-power-bi-rest-api.md
+      # Card
+    - title: Automated  template app configuration
+      itemType: concept
+      url: template-apps/template-apps-auto-install.md
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -67,7 +67,7 @@ conceptualContent:
         - url: visuals/power-bi-custom-visuals.md
           itemType: overview
           text: Visuals in Power BI
-        - url: visuals/custom-visual-develop-tutorial.md
+        - url: visuals/develop-circle-card.md
           itemType: tutorial
           text: Develop a Power BI visual
         - url: visuals/office-store.md
@@ -104,14 +104,14 @@ additionalContent:
         # Card
         - title: Power BI REST APIs
           summary: The Power BI REST APIs provide service endpoints for embedding, administration, and user resources.
-          url: https://docs.microsoft.com/rest/api/power-bi/
+          url: /rest/api/power-bi/
         - title: Azure Resource Manager REST API
-          summary: An API that provides a RESTful set of web services enabling you to create, retrieve, update, and delete Power BI dedicated capacities.
-          url: https://docs.microsoft.com/rest/api/power-bi-embedded/
+          summary: An API that provides a RESTful set of web services enabling you to create, retrieve, update, and delete Power BI capacities.
+          url: /rest/api/power-bi-embedded/
         # Card
         - title: Power Platform documentation
           summary: Learn how Power BI, Power Apps, Power Automate, and Power Virtual Agents work together to enhance each other.
-          url: https://docs.microsoft.com/power-platform/
+          url: /power-platform/
         # Card
         - title: Power BI developer center
           summary: Build with Power BI.
@@ -122,7 +122,7 @@ additionalContent:
           url: visuals/samples.md
         # Card
         - title: Power BI libraries
-          summary: Power BI libraries (NuGets).
+          summary: Power BI libraries (NuGet).
           url: https://www.nuget.org/profiles/powerbi
         # Card
         - title: Embedding setup tool

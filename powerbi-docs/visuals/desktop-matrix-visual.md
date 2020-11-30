@@ -1,12 +1,12 @@
 ---
 title: Create a matrix visual in Power BI
 description: Learn how the matrix visual enables step layouts and granular highlighting in Power BI.
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/10/2020
+ms.date: 06/18/2020
 ms.author: rien
 
 LocalizationGroup: Visualizations
@@ -45,17 +45,17 @@ When you look at totals and subtotals, remember that those values are based on t
 ## Expanding and collapsing row headers
 There are two ways you can expand row headers. The first is through the right-click menu. You’ll see options to expand the specific row header you selected, the entire level, or everything down to the very last level of the hierarchy. You have similar options for collapsing row headers as well.
 
-![](media/desktop-matrix-visual/power-bi-expand1.png)
+![menu showing Expand and Selection](media/desktop-matrix-visual/power-bi-expand1.png)
 
 You can also add +/- buttons to the row headers through the formatting pane under the **Row headers** card. By default, the icons will match the formatting of the row header, but you can customize the icons’ colors and sizes separately if you want.
 
 Once the icons are turned on, they work similar to PivotTable icons in Excel.
 
-![](media/desktop-matrix-visual/power-bi-expand2.png)
+![matrix showing icons turned on](media/desktop-matrix-visual/power-bi-expand2.png)
 
 The expansion state of the matrix will save with your report. A matrix can be pinned to a dashboard expanded or collapsed. When that dashboard tile is selected, and the report opens, the expansion state can still be changed in the report. 
 
-![](media/desktop-matrix-visual/power-bi-expand3.png)
+![matrix showing expansion state](media/desktop-matrix-visual/power-bi-expand3.png)
 
 > [!NOTE]
 > If you're building a report on top of an Analysis Services multidimensional model, there are some special considerations for expand/collapse if the model uses the Default Member feature. For more information see [Work with multidimensional models in Power BI](../connect-data/desktop-default-member-multidimensional-models.md)
@@ -203,7 +203,7 @@ Your matrix or table may have content that you'd like to use in other applicatio
 
 If you have a column or measure that contains website URLs, you can use conditional formatting to apply those URLs to fields as active links. You’ll find this option under the **Conditional formatting** card in the formatting pane.
 
-![Filters card showing which rows are chosen](media/desktop-matrix-visual/power-bi-web-url.png)
+![Screenshot shows the formatting icon associated with Web U R L.](media/desktop-matrix-visual/power-bi-web-url.png)
 
 Turn **Web URL** On, and select a field to use as the URL for the column. Once applied, the values in that field (column) become active links. Hover to see the link, and select to jump to that page. 
 

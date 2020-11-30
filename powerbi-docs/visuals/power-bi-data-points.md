@@ -1,12 +1,12 @@
 ---
 title: Large datasets, data point limits, and data strategies
 description: Data limits for visuals and data reduction strategies
-author: mihart
+author: msftrien
 ms.reviewer: 'justyna'
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/10/2020
 ms.author: rien
 
@@ -37,7 +37,7 @@ For each strategy, there are defaults based on the shape and type of data being 
 ## Statistics
 Certain models can provide statistics about the number of values for certain columns. When such information is present, we leverage that information to provide better balancing across multiple hierarchies, if a visual does not explicitly override the count of values for a strategy.
 
-For more information, see [What's new in Analysis Services](https://docs.microsoft.com/sql/analysis-services/what-s-new-in-analysis-services?view=sql-server-2017)
+For more information, see [What's new in Analysis Services](/sql/analysis-services/what-s-new-in-analysis-services)
 
 ## Dynamic limits
 In addition to the strategies above, visuals with two hierarchies of grouping columns (axis and legend, or category and series) use one additional strategy called *dynamic limits*.  Dynamic limits are designed to better balance data points. 
@@ -46,7 +46,7 @@ Dynamic limits provide a better selection of points for sparse data than static 
 
 Dynamic limits are automatically applied when the server is capable as detailed below:
 
-* In Power BI Desktop with On-premises SSAS version 2016 or higher [leveraging the SuperDax capabilities of the server](https://blogs.msdn.microsoft.com/analysisservices/2015/09/02/whats-new-in-microsoft-sql-server-analysis-services-tabular-models-in-sql-server-2016-ctp-2-3/)
+* In Power BI Desktop with On-premises SSAS version 2016 or higher [leveraging the SuperDax capabilities of the server](/archive/blogs/analysisservices/whats-new-in-microsoft-sql-server-analysis-services-tabular-models-in-sql-server-2016-ctp-2-3)
 
 * In Desktop and Power BI service when using an imported model, Direct Query, live connect to the service, or live connect to AS PaaS. 
 
@@ -128,7 +128,7 @@ No reduction strategy
 - Values: Virtualization by using Window of 200 rows at a time
 
 ### Scatter chart (high density)
-See [High density scatter](https://docs.microsoft.com/power-bi/visuals/desktop-high-density-scatter-charts)
+See [High density scatter](./desktop-high-density-scatter-charts.md)
 
 ### Pie
 - Max points: 3,500

@@ -5,7 +5,7 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
-ms.topic: conceptual
+ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/27/2018
 LocalizationGroup: Create reports
@@ -119,20 +119,25 @@ The Power BI team is actively working on mitigating these issues before they rea
 
 3. Install R packages manually, using any R console. The steps for this approach follow:
 
-   a.  Download the R-powered visual installation script and save that file to a local drive.
+   a. Download the R-powered visual installation script and save that file to a local drive.
 
-   b.  From the R console, run the following:
+   b. From the R console, run the following:
 
-       source("C:/Users/david/Downloads/ScriptInstallPackagesForForecastWithWorkarounds.R")
+      ```console
+      source("C:/Users/david/Downloads/ScriptInstallPackagesForForecastWithWorkarounds.R")
+      ```
 
    Typical default installation locations are the following:
 
+   ```console
        c:\Program Files\R\R-3.3.x\bin\x64\Rterm.exe (for CRAN-R)
        c:\Program Files\R\R-3.3.x\bin\x64\Rgui.exe (for CRAN-R)
        c:\Program Files\R\R-3.3.x\bin\R.exe (for CRAN-R)
        c:\Program Files\Microsoft\MRO-3.3.x\bin\R.exe (for MRO)
        c:\Program Files\Microsoft\MRO-3.3.x\bin\x64\Rgui.exe (for MRO)
        c:\Program Files\RStudio\bin\rstudio.exe (for RStudio)
+   ```
+
 4. If the previous steps don't work, try the following:
 
    a. Use **R Studio** and follow the step outlined in 3.b. above (run the script line from the R console).

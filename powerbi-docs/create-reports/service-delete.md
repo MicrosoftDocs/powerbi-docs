@@ -1,139 +1,124 @@
 ---
 title: Delete a dashboard, report, workbook, dataset, or workspace
-description: Learn how to delete almost anything from Power BI
+description: Learn how to delete almost anything from the Power BI service.
 author: maggiesMSFT
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 09/11/2018
+ms.topic: how-to
+ms.date: 10/29/2020
 ms.author: maggies
 
 LocalizationGroup: Common tasks
 ---
-# Delete almost anything in Power BI service
-This article teaches you how to delete a dashboard, report, workbook, dataset, app, visualization, and workspace in Power BI service.
+# Delete almost anything in the Power BI service
+This article shows you how to delete a dashboard, report, workbook, dataset, app, visualization, or a workspace in the Power BI service. You can delete almost anything in the Power BI service, with some exceptions. 
 
-## Delete a dashboard
-Dashboards can be removed. Removing the dashboard does not delete the underlying dataset or any reports associated with that dashboard.
+## Delete a dashboard, report, dataset, or workbook
 
-* If you are the owner of the dashboard, you can remove it. If you've shared the dashboard with colleagues, removing the dashboard from your Power BI workspace will remove the dashboard from their Power BI workspaces.
-* If a dashboard is shared with you and you no longer want to see it, you can remove it.  Removing a dashboard does not remove it from anyone else's Power BI workspace.
-* If a dashboard is part of an [organizational content pack](../collaborate-share/service-organizational-content-pack-disconnect.md), the only way to remove it is to remove the associated dataset.
+1. In your workspace, select the **All** tab.
+1. Select **More options (...)** next to the asset you want to delete, and select **Delete**.
 
-### To delete a dashboard
-1. In your workspace, select the **Dashboards** tab.
-2. Locate the dashboard to delete and select the Delete icon ![delete icon](media/service-delete/power-bi-delete-icon.png).
+    ![Screenshot of Select More options, then select Delete.](media/service-delete/power-bi-delete-dashboard.png)
 
-    ![video](media/service-delete/power-bi-delete-dash.gif)
+1. Select **Delete** to confirm the deletion.
 
-## Delete a report
-Don't worry, deleting a report does not delete the dataset that the report is based on.  And any visualizations that you pinned from the report are also safe -- they remain on the dashboard until you delete them individually.
+## Remove an app from your app list page
 
-### To delete a report
-1. In your workspace, select the **Reports** tab.
-2. Locate the report to delete and select the Delete icon   ![delete icon](media/service-delete/power-bi-delete-icon.png).   
+You can easily remove apps from your apps list page. Removing an app doesn't delete the app for other members. Only an admin or member or a workspace can permanently delete the app from that workspace.
 
-    ![reports tab of workspace](media/service-delete/power-bi-delete-reportnew.png)
-3. Confirm the deletion.
+1. In the nav pane, select **Apps** to open the apps list page.
+2. Hover over the app to delete, and select the Delete :::image type="icon" source="media/service-delete/power-bi-delete-report2.png" border="false":::  icon.
 
-   ![Delete report dialog](media/service-delete/power-bi-delete-report.png)
+   ![Screenshot of select apps.](media/service-delete/power-bi-delete-app.png)
 
-   > [!NOTE]
-   > If the report is part of a [content pack](../collaborate-share/service-organizational-content-pack-introduction.md), you will not be able to delete it using this method.  See [Remove your connection to an organizational content pack](../collaborate-share/service-organizational-content-pack-disconnect.md).
-   >
-   >
+   If you remove an app accidentally, you have several options for getting it back.  You can ask the app creator to resend it, you can find the original email with the link to the app, you can check your [Notifications center](../consumer/end-user-notification-center.md) to see if the notification for that app is still listed, or you can check [your organization's AppSource](../consumer/end-user-apps.md).
 
-## Delete a workbook
-Workbooks can be removed. However, removing a workbook also removes all reports and dashboard tiles that contain data from this workbook.
+## Remove or delete a workspace
 
-If the workbook is stored on OneDrive for Business, deleting it from Power BI does not delete it from OneDrive.
+Power BI has two different kinds of workspaces: the original, or *classic* workspaces, and the new workspaces. The processes for removing or deleting them are different. Read more about [new and classic workspaces](../collaborate-share/service-new-workspaces.md).
 
-### To delete a workbook
-1. In your workspace, select the **Workbooks** tab.
-2. Locate the workbook to delete and select the Delete ![delete icon](media/service-delete/power-bi-delete-report2.png) icon.
+### Remove members from a new workspace
 
-    ![Workbooks tab](media/service-delete/power-bi-delete-workbooknew.png)
-3. Confirm the deletion.
+Only workspace admins can remove people from a new workspace. If you're an admin, you can remove yourself or anyone else. However, if you're the only admin for a workspace, Power BI won't let you remove yourself.
 
-   ![Remove workbook dialog](media/service-delete/power-bi-delete-confirm.png)
+1. In the workspace list view, select **Access** in the upper-right corner.
 
-## Delete a dataset
-Datasets can be deleted. However, deleting a dataset also deletes all reports and dashboard tiles that contain data from that dataset.
+    :::image type="content" source="media/service-delete/power-bi-select-access.png" alt-text="Screenshot of Select Access.":::
 
-If a dataset is part of one or more [organizational content packs](../collaborate-share/service-organizational-content-pack-disconnect.md), the only way to delete it is to remove it from the content packs where it's being used, wait for it to be processed, and then try deleting it again.
+1. In the **Access** pane, select **More options (...)** next to the name of the person you want to remove, and select **Remove**.
 
-### To delete a dataset
-1. In your workspace, select the **Datasets** tab.
-2. Locate the dataset to delete and select **More options** (...).  
+    :::image type="content" source="media/service-delete/power-bi-access-remove.png" alt-text="Screenshot of In the Access pane, select Remove.":::
 
-    ![Datasets tab](media/service-delete/power-bi-delete-datasetnew.png)
-3. From the dropdown, select **Delete**.
+### Delete a new workspace
 
-   ![ellipses menu](media/service-delete/power-bi-delete-datasetnew2.png)
-4. Confirm the deletion.
+When you create one of the *new workspaces*, you don't create an associated Microsoft 365 group. If you're a workspace admin, you can delete a new workspace with no effect on any Microsoft 365 groups. Read more about [new and classic workspaces](../collaborate-share/service-new-workspaces.md).
 
-   ![Delete dashboard dialog](media/service-delete/power-bi-delete-dataset-confirm.png)
+As admin for a workspace, you can delete it, or remove others from it. When you delete it, the associated app is also deleted for all group members, and the app is removed from AppSource. 
 
-## Delete a workspace
-> [!WARNING]
-> When you create a workspace, you create a Microsoft 365 group. And when you delete a workspace you delete that Microsoft 365 group. What this means is that the group will also be deleted from other Microsoft 365 products like SharePoint and Microsoft Teams.
->
->
-
-As the workspace author, you can delete it. When you delete it, the associated app is also deleted for all group members and removed from your AppSource if you had published the app to your entire organization. Deleting a workspace is different from leaving a workspace.
-
-### To delete a workspace - if you are an Admin
 1. From the nav pane, select **Workspaces**
 
-2. Select **More options** (...) to the right of the workspace to be deleted and choose **Edit workspace**.
+2. Select **More options** (...) to the right of the workspace to be deleted and choose **Workspace settings**.
 
-    ![workspaces](media/service-delete/power-bi-delete-workspace.png)
+    ![Screenshot of More options, select Workspace settings.](media/service-delete/power-bi-delete-workspace.png)
 
-3. In the **Edit workspace** window, select **Delete workspace** > **Delete**.
+3. In the **Workspace settings** pane, select **Delete workspace** > **Delete**.
 
-    ![delete workspace](media/service-delete/power-bi-delete-workspace2.png)
+### Remove a classic workspace from your list
 
-### To remove a workspace from your list
-If you no longer want to be a member of a workspace, you can ***leave*** it and it will be removed from your list. Leaving a workspace leaves it in place for all other workspace members.  
+If you no longer want to be a member of a classic workspace, you can ***leave*** it and it will be removed from your list. Leaving a workspace leaves it in place for all other workspace members.  
 
-> [!IMPORTANT]
-> If you are the only Admin for the workspace, Power BI will not allow you to leave.
->
+> [!NOTE]
+> If you are the only admin for the workspace, Power BI won't allow you to leave.
 >
 
 1. Start in the workspace you'd like to remove.
 
 2. In the top-right corner, select **More options** (...) and choose **Leave workspace** > **Leave**.
 
-      ![leave workspace](media/service-delete/power-bi-leave-workspace.png)
+      :::image type="content" source="media/service-delete/power-bi-leave-workspace.png" alt-text="Screenshot of More options, Leave workspace.":::
 
    > [!NOTE]
    > The options you see in the dropdown depend on whether you are an Admin or Member of that workspace.
    >
-   >
 
-## Delete or remove an App
-Apps can be easily removed from your apps list page. But only an app Admin can permanently delete an app.
+### Delete a classic workspace
 
-### Remove an app from your app list page
-Deleting an app from your app list page does not delete the app for other members.
+> [!WARNING]
+> When you create a *classic* workspace, you create a Microsoft 365 group. When you delete a classic workspace, you delete that Microsoft 365 group. The group is also deleted from other Microsoft 365 products like SharePoint and Microsoft Teams.
+> 
 
-1. In the nav pane, select **Apps** to open the apps list page.
-2. Hover over the app to delete, and select the Delete ![](media/service-delete/power-bi-delete-report2.png)  icon.
+Deleting a workspace is different from leaving a workspace. You have to be a workspace admin to delete it. When you delete it, the associated app is also deleted for all group members and removed from AppSource. However, if you're the only admin for a workspace, Power BI won't let you leave.
 
-   ![select Apps](media/service-delete/power-bi-delete-app.png)
+1. From the nav pane, select **Workspaces**.
 
-   If you remove an app accidentally, you have several options for getting it back.  You can ask the app creator to re-send it, you can find the original email with the link to the app, you can check your [Notifications center](../consumer/end-user-notification-center.md) to see if the notification for that app is still listed, or you can check [your organization's AppSource](../consumer/end-user-apps.md).
+2. Next to the workspace to be deleted, select **More options (...)** > **Workspace settings**.
 
-## Considerations and troubleshooting
-This article covered how to delete the major building blocks of Power BI service. But there are more things that you can delete in Power BI.  
+    ![Screenshot of Workspace settings.](media/service-delete/power-bi-workspace-settings-classic.png)
 
-* [Remove your Featured dashboard](../consumer/end-user-featured.md)
-* [Remove (unfavorite) a dashboard](../consumer/end-user-favorite.md)
-* [Delete a report page](service-delete.md)
-* [Delete a dashboard tile](service-dashboard-edit-tile.md)
-* [Delete a report visualization](service-delete.md)
+3. In the **settings** pane, select **Delete workspace**, then confirm **Delete**.
+
+    ![Screenshot of Delete workspace.](media/service-delete/power-bi-delete-classic-workspace.png)
+
+
+## Considerations and limitations
+
+- Removing a *dashboard* doesn't delete the underlying dataset or any reports associated with that dashboard.
+- If you're the *owner of a dashboard or report*, you can remove it. If you've shared it with colleagues, removing it from your Power BI workspace removes it from their Power BI workspaces, too.
+- If a *dashboard or report is shared with you*, you can't remove it.
+- Deleting a report doesn't delete the dataset that the report is based on.  Any visualizations that you pinned to a dashboard from the report are also safe. They remain on the dashboard until you delete them individually.
+- You can delete a *dataset*. However, deleting a dataset also deletes all reports and dashboard tiles that contain data from that dataset.
+- You can remove *workbooks*. However, removing a workbook also removes all reports and dashboard tiles that contain data from this workbook. If a workbook is stored on OneDrive for Business, deleting it from Power BI doesn't delete it from OneDrive.
+- If a *dashboard or report* is part of an [organizational content pack](../collaborate-share/service-organizational-content-pack-disconnect.md), you can't delete it using this method.  See [Remove your connection to an organizational content pack](../collaborate-share/service-organizational-content-pack-disconnect.md).
+- If a *dataset* is part of one or more organizational content packs, the only way to delete it is to remove it from the content packs where it's being used, wait for it to be processed, and then try deleting it again.
+
+## Next steps
+
+This article covered how to delete the major building blocks of the Power BI service. Here are a few other things you can also delete.  
+
+- [Remove your Featured dashboard](../consumer/end-user-featured.md)
+- [Remove (unfavorite) a dashboard](../consumer/end-user-favorite.md)
+- [Delete a dashboard tile](service-dashboard-edit-tile.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

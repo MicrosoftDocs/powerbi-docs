@@ -7,8 +7,8 @@ featuredvideoid: e2PD8m1Q0vU
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 07/25/2019
+ms.topic: how-to
+ms.date: 10/28/2020
 ms.author: maggies
 
 LocalizationGroup: Dashboards
@@ -235,6 +235,7 @@ To make changes to an existing tile:
 ## Considerations and troubleshooting
 * To make it easier to move the tile on your dashboard, add a title and an optional subtitle.
 * If you'd like to embed content from a website, but the website doesn't provide embed code to copy and paste, see embed.ly for help with generating the embed code.
+* Make sure security credentials aren't required to access the image file. For example, because OneDrive and SharePoint require authentication, images stored there can't be added to a dashboard this way.  
 
 ## Next steps
 [Intro to dashboard tiles for Power BI designers](service-dashboard-tiles.md)

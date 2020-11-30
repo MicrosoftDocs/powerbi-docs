@@ -13,7 +13,7 @@ ms.author: maggies
 ---
 # Always Encrypted in Power BI Report Server
 
-This article spells out Always Encrypted support in Power BI Report Server when using the data source types Microsoft SQL Server and Microsoft Azure SQL Database. For more information about Always Encrypted capabilities in SQL Server, see the [Always Encrypted](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine) article.
+This article spells out Always Encrypted support in Power BI Report Server when using the data source types Microsoft SQL Server and Microsoft Azure SQL Database. For more information about Always Encrypted capabilities in SQL Server, see the [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine) article.
 
 ## Always Encrypted user isolation
 
@@ -33,8 +33,8 @@ At this time, Power BI Report Server doesn't restrict access to Always Encrypted
 
 The account that requires access to the certificate is the service account. The certificate should be stored in the local computer certificate store. For more information, see:
 
-- [Configure the Report Server Service Account](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager) (Configuration Manager)
-- [Making certificates available to applications and users](https://docs.microsoft.com/sql/relational-databases/security/encryption/create-and-store-column-master-keys-always-encrypted#making-certificates-available-to-applications-and-users) section in the SQL Server article "Create and store column master keys for Always Encrypted."
+- [Configure the Report Server Service Account](/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager) (Configuration Manager)
+- [Making certificates available to applications and users](/sql/relational-databases/security/encryption/create-and-store-column-master-keys-always-encrypted#making-certificates-available-to-applications-and-users) section in the SQL Server article "Create and store column master keys for Always Encrypted."
 
 ### Column encryption strategy
 
@@ -47,7 +47,7 @@ In Power BI Report Server, the column encryption strategy can be *deterministic*
 |Can be used as an aggregate field, except for COUNT and DISTINCT. | No, except for COUNT and DISTINCT | No |
 |Can be used as a report parameter | Yes | No |
 
-Read more about [deterministic vs. randomized encryption](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine#selecting--deterministic-or-randomized-encryption).
+Read more about [deterministic vs. randomized encryption](/sql/relational-databases/security/encryption/always-encrypted-database-engine#selecting--deterministic-or-randomized-encryption).
 
 ### Parameter usage
 
@@ -69,7 +69,7 @@ Parameter usage only applies to deterministic encryption.
 | --- | --- | --- | --- | --- | --- |
 | int | Yes | Yes | COUNT, DISTINCT | Yes, as Integer |   |
 | float | Yes | Yes | COUNT, DISTINCT | Yes, as Float |   |
-| nvarchar | Yes | Yes | COUNT, DISTINCT | Yes, as Text | Deterministic encryption must use a column collation with a binary2 sort order for character columns. See the SQL Server [Always Encrypted](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine#selecting--deterministic-or-randomized-encryption) article for details.  |
+| nvarchar | Yes | Yes | COUNT, DISTINCT | Yes, as Text | Deterministic encryption must use a column collation with a binary2 sort order for character columns. See the SQL Server [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine#selecting--deterministic-or-randomized-encryption) article for details.  |
 | varchar | Yes | Yes | COUNT, DISTINCT | No |   |
 | decimal | Yes | Yes | COUNT, DISTINCT | No |   |
 | numeric | Yes | Yes | COUNT, DISTINCT | No |   |
@@ -82,11 +82,10 @@ Currently the only supported aggregations against deterministic Always Encrypted
 
 ## Always Encrypted in connection strings
 
-You need to to enable Always Encrypted in the connection string for a SQL Server data source. Read more about enabling [Always Encrypted in application queries](https://docs.microsoft.com/sql/relational-databases/security/encryption/develop-using-always-encrypted-with-net-framework-data-provider#enabling-always-encrypted-for-application-queries).
+You need to to enable Always Encrypted in the connection string for a SQL Server data source. Read more about enabling [Always Encrypted in application queries](/sql/relational-databases/security/encryption/develop-using-always-encrypted-with-net-framework-data-provider#enabling-always-encrypted-for-application-queries).
 
 ## Next steps
 
-[Always Encrypted](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine) in SQL Server and Azure SQL Database
+[Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine) in SQL Server and Azure SQL Database
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

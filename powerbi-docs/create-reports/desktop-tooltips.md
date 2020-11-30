@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/26/2019
 ms.author: davidi
 
@@ -42,7 +42,7 @@ You can also name the report page so its purpose is clear. Just select the **Pag
 
 From there, you can create whatever visuals you would like to show up in your tooltip. In the following image, there are two cards and one clustered bar chart on the tooltip page, along with a background color for the page itself, and backgrounds for each of the visuals, to give it the look we wanted.
 
-![Report tooltips for Power BI Desktop](media/desktop-tooltips/desktop-tooltips_06.png)
+![Screenshot shows a customized report tooltip.](media/desktop-tooltips/desktop-tooltips_06.png)
 
 There are more steps to complete before your tooltip report page is ready to work as a tooltip. You need to configure the tooltip page in a few ways, as described in the next section. 
 

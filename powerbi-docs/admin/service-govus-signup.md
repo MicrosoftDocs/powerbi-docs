@@ -28,7 +28,7 @@ For more information about the Power BI service for US government, check out [Po
 
 Your US government organization might be new to the government cloud community, or might already have a subscription. The following sections detail the sign-up steps based on where you are with the Microsoft 365 Government plans and Power BI. The steps are different depending on your current enrollment.
 
-After you sign up for Power BI US government, work with your account team to start the [*whitelisting* process](#additional-signup-information) described in this article. That step is needed to fully enable your organization in the government community cloud.
+After you sign up for Power BI US government, work with your account team to start the [allow list process](#additional-signup-information) described in this article. That step is needed to fully enable your organization in the government community cloud.
 
 ## Sign up for a new Microsoft 365 Government plan
 
@@ -65,12 +65,12 @@ If your organization already has a Microsoft 365 Government plan, follow these s
 
 ## Additional signup information
 
-Before you can use US government Power BI services, you have to work with your Microsoft account team to initiate *whitelisting* for your organization. Whitelisting is a process that the Power BI engineering team uses to move customers from the commercial cloud environment into the secure, government community cloud. This step ensures that features available in the US government cloud work as expected. 
+Before you can use US government Power BI services, you have to work with your Microsoft account team to have your organization added to our allow list. The allow list process is used by the Power BI engineering team  to move customers from the commercial cloud environment into the secure, government community cloud. This step ensures that features available in the US government cloud work as expected. 
 
-To start the whitelisting process, contact your Microsoft account team for assistance. Only administrators can request whitelisting. The process takes about three weeks. During this time, the Power BI engineering team makes appropriate changes to ensure your tenant operates properly in the US government cloud.
+To start the allow list process, contact your Microsoft account team for assistance. Only administrators can request addition to the allow list. The process takes about three weeks. During this time, the Power BI engineering team makes appropriate changes to ensure your tenant operates properly in the US government cloud.
 
 
 ## Next steps
 
 * [Overview of Power BI for US government](service-govus-overview.md)
-- [How do I buy Microsoft 365 Government?](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy#how-do-i-buy-microsoft-365-government)
+- [How do I buy Microsoft 365 Government?](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy#how-do-i-buy-microsoft-365-government)

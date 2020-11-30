@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/20/2019
 ms.author: maggies
 
@@ -73,7 +73,7 @@ By the way, this procedure uses the Retail Analysis sample, if you'd like to dow
    
     The visual changes to reflect the new filter. If you save your report with the filter, report readers will see the visual filtered to begin with, and can interact with the filter in Reading view, selecting or clearing values.
      
-    ![The filtered visual](media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png)
+    ![Screenshot shows a bar chart that reflects the filtered values.](media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png)
     
     When you use the filter on a field used in the visual where the field is aggregated (for example a sum, average, or count), you're filtering on the *aggregated* value in each data point. So, asking to filter the visual above where **This Year Sales > 500000** means you would see only the **13 - Charleston Fashion Direct** data point in the result. Filters on [model measures](../transform-model/desktop-measures.md) always apply to the aggregated value of the data point.
 
@@ -91,7 +91,7 @@ Now let's add a new field to our visualization as a visual-level filter.
 
     And the visualization itself is now filtered to show only those managers' sales this year for the specified stores.
      
-    ![The filtered visual](media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png)
+    ![Screenshot shows a bar chart that reflects the filtered values based on the new field.](media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png)
 
     If you save your report with this filter, report readers can interact with the **District Manager** filter in Reading view, selecting or clearing values.
     

@@ -6,8 +6,8 @@ ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 02/25/2020
+ms.topic: how-to
+ms.date: 07/27/2020
 ms.author: maggies
 
 LocalizationGroup: Administration
@@ -23,7 +23,7 @@ Workspace storage limits, whether for My Workspace or an app workspace, depend o
 ### Shared capacity limits
 For workspaces in shared capacity: 
 
-- There is a per-workspace storage limit of 100 GB.
+- There is a per-workspace storage limit of 10 GB.
 - For app workspaces, the total usage can’t exceed the tenant storage limit of 10 GB multiplied by the number of Pro licenses in the tenant.
 
 ### Premium capacity limits
@@ -43,40 +43,38 @@ Included in your data storage are your own datasets and Excel reports, and those
 
 The size of a dashboard that you share varies, depending on what's pinned to it. For example, if you pin items from two reports that are part of two different datasets, the size includes both datasets.
 
-<a name="manage"/>
-
 ## Manage items you own
 
 See how much data storage you’re using in your Power BI account, and manage your account.
 
 1. To manage your own storage, go to **My Workspace** on the navigation pane.
    
-    ![My Workspace](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
+    ![Screenshot of the navigation pane with My Workspace called out.](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
 
-2. Select the gear icon ![Gear icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) in the upper-right corner \> **Manage personal storage**.
+2. Select the gear icon ![Gear icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) in the upper-right corner **Manage personal storage**.
    
     The top bar shows how much of your storage limit you’ve used.
    
-    ![Manage storage limit](media/service-admin-manage-your-data-storage-in-power-bi/pbi_persnlstorage.png)
+    ![Screenshot of the Manage storage limit, showing how much storage has been used.](media/service-admin-manage-your-data-storage-in-power-bi/pbi_persnlstorage.png)
    
     The datasets and reports are separated onto two tabs:
    
     **Owned by me:** You’ve uploaded these reports and datasets to your Power BI account, including service datasets such as Salesforce and Dynamics CRM.  
 
     **Owned by others:** Others have shared these reports and datasets with you.
-1. To delete a dataset or report, select the trash can icon ![trash can icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
+1. To delete a dataset or report, select the trash can icon ![Trash can icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
 
 Keep in mind that you or someone else may have reports and dashboards based on a dataset. If you delete the dataset, those reports and dashboards won’t work anymore.
 
 ## Manage your workspace
-1. Select the arrow next to **Workspaces** \> select the name of the workspace.
+1. Select the arrow next to **Workspaces** select the name of the workspace.
    
-    ![Select a workspace](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
-2. Select the gear icon ![gear icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) in the upper-right corner \> **Manage group storage**.
+    ![Screenshot of the Workspace selection, showing the Sales Group workspace.](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
+2. Select the gear icon ![Gear icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) in the upper-right corner **Manage group storage**.
    
     The top bar shows how much of the group’s storage limit is used.
    
-    ![Manage workspace storage](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupstorage.png)
+    ![Screenshot of the Manage storage, showing how much the Sales Group's storage limit has been used.](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupstorage.png)
    
     The datasets and reports are separated onto two tabs:
    
@@ -84,7 +82,7 @@ Keep in mind that you or someone else may have reports and dashboards based on a
 
     **Owned by others:** Others have shared these reports and datasets with your group.
 
-3. To delete a dataset or report, select the trash can icon ![trash can icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
+3. To delete a dataset or report, select the trash can icon ![Trash can icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
    
    > [!NOTE]
    > Keep in mind that you or someone else in the group may have reports and dashboards based on a dataset. If you delete the dataset, those reports and dashboards won’t work anymore.
@@ -97,17 +95,17 @@ There is a 1 GB limit per dataset that is imported into Power BI. If you have ch
 ## What happens when you reach a limit
 When you reach the data capacity limit of what you can do, you see prompts within the service. 
 
-When you select the gear icon ![gear icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png), you see a red bar indicating you are over your data capacity limit.
+When you select the gear icon ![Gear icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png), you see a red bar indicating you are over your data capacity limit.
 
-![Storage limit reached](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit.png)
+![Screenshot of the storage capacity, showing the limit has been reached.](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit.png)
 
 This limit also is indicated within **Manage personal storage**.
 
- ![Manage personal storage, storage limit reached](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit2.png)
+ ![Screenshot of the personal storage capacity, showing Jane's limit has been reached.](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit2.png)
 
- When you try to perform an action that will reach one of the limits, you see a message you are over the limit. You can [manage](#manage) your storage to reduce your storage amount and get past the limit.
+ When you try to perform an action that will reach one of the limits, you see a message you are over the limit. You can [manage your storage](#manage-items-you-own) to reduce your storage amount and get past the limit.
 
- ![Over your storage limit](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
+ ![Screenshot of the Over your storage limit dialog, showing limits have been reached.](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
 
  ## Next steps
 

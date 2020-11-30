@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/09/2020
 
 ms.author: davidi
@@ -84,7 +84,7 @@ In this example, you group rows in an education enrollment dataset. The data is 
 
 Let’s find out how many Agencies each state has. (Agencies can include school districts, other education agencies such as regional service districts, and more.) Select the **Agency ID - NCES Assigned \[District\] Latest available year** column, then select the **Group By** button in the **Transform** tab or the **Home** tab of the ribbon. (**Group By** is available in both tabs.)
 
-![Group By dialog box, Power Query Editor, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_groupby.png)
+![Screenshot shows how to group rows in a table.](media/desktop-common-query-tasks/commonquerytasks_groupby.png)
 
 The **Group By** dialog box appears. When Power Query Editor groups rows, it creates a new column into which it places the **Group By** results. You can adjust the **Group By** operation in the following ways:
 
@@ -95,7 +95,7 @@ The **Group By** dialog box appears. When Power Query Editor groups rows, it cre
 
 Select **Add grouping** or **Add aggregation** to add more groupings or aggregations to a **Group By** operation. To remove a grouping or aggregation, select the ellipsis icon (**...**) to the right of the row, and then **Delete**. Go ahead and try the **Group By** operation using the default values to see what occurs.
 
-![Group By dialog box, Power Query Editor, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_groupbynumbered.png)
+![Screenshot shows the Group By dialog box with Add grouping and Add aggregation called out.](media/desktop-common-query-tasks/commonquerytasks_groupbynumbered.png)
 
 When you select **OK**, Query does the **Group By** operation and returns the results. Whew, look at that – Ohio, Illinois, Texas, and California now each have over a thousand agencies!
 

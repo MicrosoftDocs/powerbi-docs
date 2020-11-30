@@ -99,4 +99,6 @@ For more information about this article, check out the following resources:
 
 - [Data Analysis Expressions (DAX) Reference](/dax/)
 - [Filter functions (DAX)](/dax/filter-function-dax)
+- Learning path: [Use DAX in Power BI Desktop](/learn/paths/dax-power-bi/)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)

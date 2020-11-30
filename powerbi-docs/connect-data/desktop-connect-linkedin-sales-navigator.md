@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/11/2019
 ms.author: davidi
 
@@ -82,7 +82,7 @@ The template app provides four tabs to help analyze and share your information:
 
 The **Usage** tab shows your overall LinkedIn Sales Navigator data.
 
-![LinkedIn Sales Navigator Usage tab](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-12.png)
+![LinkedIn Sales Navigator Usage tab shows your overall LinkedIn Sales Navigator data.](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-12.png)
 
 The **Search** tab lets you drill deeper into your search results:
 

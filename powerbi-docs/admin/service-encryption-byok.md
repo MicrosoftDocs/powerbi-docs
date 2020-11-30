@@ -6,8 +6,8 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: conceptual
-ms.date: 02/20/2020
+ms.topic: how-to
+ms.date: 11/11/2020
 
 LocalizationGroup: Premium
 ---
@@ -20,6 +20,9 @@ Power BI encrypts data _at-rest_ and _in process_. By default, Power BI uses Mic
 
 BYOK makes it easier to meet compliance requirements that specify key arrangements with the cloud service provider (in this case Microsoft). With BYOK, you provide and control the encryption keys for your Power BI data at-rest at the application level. As a result, you can exercise control and revoke your organization's keys, should you decide to exit the service. By revoking the keys, the data is unreadable to the service within 30 minutes.
 
+> [!IMPORTANT]
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Preview Gen2 capacities do **not** support BYOK while in preview.
+
 ## Data source and storage considerations
 
 To use BYOK, you must upload data to the Power BI service from a Power BI Desktop (PBIX) file. You cannot use BYOK in the following scenarios:
@@ -28,14 +31,14 @@ To use BYOK, you must upload data to the Power BI service from a Power BI Deskto
 - Excel workbooks (unless data is first imported into Power BI Desktop)
 - [Push datasets](/rest/api/power-bi/pushdatasets)
 - [Streaming datasets](../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
-- [Large models](service-premium-large-models.md)
+
 
 BYOK applies only to datasets. Push datasets, Excel files, and CSV files that users can upload to the service are not encrypted using your own key. To identify which artifacts are stored in your workspaces, use the following PowerShell command:
 
 ```PS C:\> Get-PowerBIWorkspace -Scope Organization -Include All```
 
 > [!NOTE]
-> This cmdlet requires Power BI management module v1.0.840. You can see which version you have by running Get-InstalledModule -Name MicrosoftPowerBIMgmt. Install the latest version by running Install-Module -Name MicrosoftPowerBIMgmt. You can get more information about the Power BI cmdlet and its parameters in [Power BI PowerShell cmdlet module](https://docs.microsoft.com/powershell/power-bi/overview).
+> This cmdlet requires Power BI management module v1.0.840. You can see which version you have by running Get-InstalledModule -Name MicrosoftPowerBIMgmt. Install the latest version by running Install-Module -Name MicrosoftPowerBIMgmt. You can get more information about the Power BI cmdlet and its parameters in [Power BI PowerShell cmdlet module](/powershell/power-bi/overview).
 
 ## Configure Azure Key Vault
 
@@ -63,7 +66,7 @@ The instructions in this section assume basic knowledge of Azure Key Vault. For 
 
 1. Under **Key permissions**, select **Unwrap Key** and **Wrap Key**.
 
-    ![PBIX file components](media/service-encryption-byok/service-principal.png)
+    ![P B I X file select service principal and cryptographic operations](media/service-encryption-byok/service-principal.png)
 
 1. Select **OK**, then **Save**.
 
@@ -76,7 +79,7 @@ The instructions in this section assume basic knowledge of Azure Key Vault. For 
 
 1. Select a **Key Type** of RSA and an **RSA Key Size** of 4096.
 
-    ![PBIX file components](media/service-encryption-byok/create-rsa-key.png)
+    ![Create a key with key type and size highlighted](media/service-encryption-byok/create-rsa-key.png)
 
 1. Select **Create**.
 
@@ -86,7 +89,7 @@ The instructions in this section assume basic knowledge of Azure Key Vault. For 
 
 1. Check that **Wrap Key** and **Unwrap Key** are both selected. Copy the **Key Identifier** to use when you enable BYOK in Power BI.
 
-    ![PBIX file components](media/service-encryption-byok/key-properties.png)
+    ![Properties with key identifier and permitted operations highlighted](media/service-encryption-byok/key-properties.png)
 
 ### Soft delete option
 
@@ -104,13 +107,13 @@ Before you enable BYOK, keep the following considerations in mind:
 
 - At this time, you cannot disable BYOK after you enable it. Depending on how you specify parameters for `Add-PowerBIEncryptionKey`, you can control how you use BYOK for one or more of your capacities. However, you can't undo the introduction of keys to your tenant. For more information, see [Enable BYOK](#enable-byok).
 
-- You cannot _directly_ move a workspace that uses BYOK from a dedicated capacity in Power BI Premium to shared capacity. You must first move the workspace to a dedicated capacity that doesn't have BYOK enabled.
+- You cannot _directly_ move a workspace that uses BYOK from a capacity in Power BI Premium to a shared capacity. You must first move the workspace to a capacity that doesn't have BYOK enabled.
 
-- If you move a workspace that uses BYOK from a dedicated capacity in Power BI Premium, to shared, reports and datasets will become inaccessible, as they are encrypted with the Key. To avoid this situation, you must first move the workspace to a dedicated capacity that doesn’t have BYOK enabled.
+- If you move a workspace that uses BYOK from a capacity in Power BI Premium, to shared, reports and datasets will become inaccessible, as they are encrypted with the Key. To avoid this situation, you must first move the workspace to a capacity that doesn’t have BYOK enabled.
 
 ### Enable BYOK
 
-To enable BYOK, you must be a tenant administrator of the Power BI service, signed in using the `Connect-PowerBIServiceAccount` cmdlet. Then use [`Add-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/Add-PowerBIEncryptionKey) to enable BYOK, as shown in the following example:
+To enable BYOK, you must be a Power BI admin, signed in using the `Connect-PowerBIServiceAccount` cmdlet. Then use [`Add-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/Add-PowerBIEncryptionKey) to enable BYOK, as shown in the following example:
 
 ```powershell
 Add-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
@@ -150,7 +153,7 @@ After you enable BYOK on your tenant, set the encryption key for one or more Pow
 1. Use [`Set-PowerBICapacityEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/set-powerbicapacityencryptionkey) to set the encryption key:
 
     ```powershell
-    Set-PowerBICapacityEncryptionKey-CapacityId xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -KeyName 'Contoso Sales'
+    Set-PowerBICapacityEncryptionKey -CapacityId xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -KeyName 'Contoso Sales'
     ```
 
 You have control over how you use BYOK across your tenant. For example, to encrypt a single capacity, call `Add-PowerBIEncryptionKey` without `-Activate` or `-Default`. Then call `Set-PowerBICapacityEncryptionKey` for the capacity where you want to enable BYOK.
@@ -189,7 +192,7 @@ Power BI provides additional cmdlets to help manage BYOK in your tenant:
 
 ## Next steps
 
-* [Power BI PowerShell cmdlet module](https://docs.microsoft.com/powershell/power-bi/overview) 
+* [Power BI PowerShell cmdlet module](/powershell/power-bi/overview) 
 
 * [Ways to share your work in Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md)
 
@@ -199,3 +202,13 @@ Power BI provides additional cmdlets to help manage BYOK in your tenant:
 
 * [Publish to Web from Power BI](../collaborate-share/service-publish-to-web.md)
 
+
+Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+* Performance
+* Per-user licensing
+* Greater scale
+* Improved metrics
+* Autoscaling
+* Reduced management overhead
+
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

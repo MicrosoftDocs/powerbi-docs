@@ -7,10 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 04/29/2020
+ms.date: 10/19/2020
 ---
 
 # Paginated reports in Power BI: FAQ 
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 This article answers frequently asked questions about paginated reports. These reports are highly formatted, pixel-perfect output optimized for printing or PDF generation. They're called "paginated" because they're formatted to fit well on multiple pages. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. 
 
@@ -71,7 +73,7 @@ Default memory in each Premium SKU for paginated reports:
 - **P2/A5**: 20% default; 5% minimum
 - **P3/A6**: 20% default; 2.5% minimum
 
-Power BI tenant admins can modify the default maximum memory percentage in the Admin portal. See the **Paginated Reports** workload section under **Power BI Premium** on the **Capacity settings** tab.
+Power BI admins can modify the default maximum memory percentage in the Admin portal. See the **Paginated Reports** workload section under **Power BI Premium** on the **Capacity settings** tab.
 
 :::image type="content" source="media/paginated-reports-faq/paginated-reports-capacity-settings.png" alt-text="Paginated reports Capacity settings tab":::
 
@@ -157,7 +159,7 @@ Yes, this can be accomplished using URL parameters with your paginated reports.
 
 Yes, paginated reports are supported to be deployed with apps from both v1 and v2 workspaces. 
 
-### Will other report-specific features in Power BI, like pinning to report tiles to dashboards, work with paginated reports?
+### Will other report-specific features in Power BI, like pinning report tiles to dashboards, work with paginated reports?
 
 We plan to have the reports support the same major scenarios in the service as much as possible.  Ideally, though the tool to author them is different, from a consumer perspective it's just another report in their list in the portal. They don't care how it was created, they can accomplish what they need to.  A good example of this feature parity is the planned comment support. Though the feature itself may work slightly differently for each report type, you'll be able to use comments for both.
 
@@ -173,6 +175,12 @@ Yes, you can now search for your paginated reports from Home.  You also see them
 Here's something to keep in mind when working with DateTime fields in paginated reports.
 
 - Currently there are some globalization limitations related to DateTime parameters. All DateTime parameters in the Power BI service are fetched in US format (MM/DD/YYYY) regardless of how you design the DataTime in Power BI Report Builder.
+
+When viewing paginated reports in the Power BI service, sessions may time out, presenting the user with the following notification:
+
+:::image type="content" source="media/paginated-reports-faq/expired-session-notification.png" alt-text="Paginated reports session expired notification":::
+
+- The session will time out after 60 minutes of inactivity, or earlier when the device is locked or inactive, or when the report isn't displayed in the active tab of the browser.
 
 ## Next steps
 

@@ -1,15 +1,15 @@
 ---
 title: Export data from a Power BI visualization
 description: Export data from a report visualization and dashboard visualization and view it in Excel.
-author: mihart
+author: msftrien
 manager: kvivek
 ms.reviewer: 'tessa'
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
-ms.date: 05/20/2020
-ms.author: mihart
+ms.topic: how-to
+ms.date: 09/09/2020
+ms.author: rien
 LocalizationGroup: Visualizations
 ---
 
@@ -151,7 +151,7 @@ When you select **Export**, Power BI exports the data to an *.xlsx* file and you
 
 ## Customize the export data user experience
 
-Users who are granted access to a report are **granted access to the entire underlying dataset**, unless [row-level security (RLS)(../admin/service-admin-rls.md) limits their access. Report authors and Power BI administrators can use the capabilities described below to customize the user experience.
+Users who are granted access to a report are **granted access to the entire underlying dataset**, unless [row-level security (RLS)](../admin/service-admin-rls.md) limits their access. Report authors and Power BI administrators can use the capabilities described below to customize the user experience.
 
 - Report authors [decide which *export options*](#set-the-export-options) are available to users.  
 
@@ -223,7 +223,7 @@ It's important to note that if the Power BI admin portal settings conflict with 
 ## Limitations and considerations
 These limitations and considerations apply to Power BI Desktop and the Power BI service, including Power BI Pro and Premium.
 
-- To export the data from a visual, you need to have [Build permission for the underlying dataset](https://docs.microsoft.com/power-bi/service-datasets-build-permissions).
+- To export the data from a visual, you need to have [Build permission for the underlying dataset](../connect-data/service-datasets-build-permissions.md).
 
 -  The maximum number of rows that **Power BI Desktop** and **Power BI service** can export from an **import mode report** to a *.csv* file is 30,000.
 
@@ -263,7 +263,9 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
   
   1. Go to the local folder where the file is stored and select the *.csv*.
 
-- When exporting to *.csv* certain characters will be escaped with a leading **'**.
+- When exporting to *.csv*, certain characters will be escaped with a leading **'** to prevent script execution when opened in Excel. This happens when:
+  - The column is defined as type "text" in the data model, **_and_**
+  - The first character of the text is one of the following: **=, @, +, -**
 
 - Power BI admins can disable the export of data.
 

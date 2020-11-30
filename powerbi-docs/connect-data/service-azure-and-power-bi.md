@@ -1,12 +1,12 @@
 ---
 title: Azure and Power BI
-description: Azure and Power BI
+description: Learn how to turn your data processing efforts into analytics and reports that provide real-time insights into your business with Azure and Power BI.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/08/2019
 LocalizationGroup: Data from databases
 ---
@@ -61,4 +61,4 @@ Embed stunning, interactive data visualizations in applications, websites, porta
 
 ## What could you do with Azure and Power BI?
 
-There are all sorts of scenarios where **Azure** and **Power BI** can be combined - the possibilities and opportunities are as unique as your business. For more information about **Azure services**, check out this [overview page](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/plan-your-environment), which describes **Data Analytics Scenarios using Azure**, and learn how to transform your data sources into intelligence that drives your business ahead.
+There are all sorts of scenarios where **Azure** and **Power BI** can be combined - the possibilities and opportunities are as unique as your business. For more information about **Azure services**, check out this [overview page](/azure/machine-learning/team-data-science-process/plan-your-environment), which describes **Data Analytics Scenarios using Azure**, and learn how to transform your data sources into intelligence that drives your business ahead.

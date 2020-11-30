@@ -7,8 +7,8 @@ featuredvideoid:
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 05/15/2020
+ms.topic: how-to
+ms.date: 11/17/2020
 ms.author: maggies
 
 LocalizationGroup: Common tasks
@@ -44,13 +44,13 @@ Subscribing to paginated reports is a little different. See [Subscribe yourself 
 ![select the Subscribe icon](media/service-report-subscribe/power-bi-subscribe-orientation.png).
 
 1. Open the dashboard or report.
-2. From the top menu bar, select **Subscribe** or select the envelope icon ![Subscribe icon](media/service-report-subscribe/power-bi-icon-envelope.png).
+2. From the top menu bar, select **Subscribe** or select the envelope icon :::image type="icon" source="media/service-report-subscribe/power-bi-icon-envelope.png" border="false":::.
    
     ![Subscribe icon](media/service-report-subscribe/power-bi-subscribe-icon.png)
 
 1. Use the yellow slider to turn the subscription on and off. Setting the slider to  **Off**  doesn't delete the subscription. To delete the subscription, select the trashcan icon.
 
-2. Your email is already in the  **Subscribe**  box. You can add other email addresses in the same domain to the subscription as well. If the report or dashboard is hosted in a [Premium capacity](https://docs.microsoft.com/power-bi/service-premium-what-is), you can subscribe other individual email addresses and group aliases, whether they're in your domain or not. If the report or dashboard isn't hosted in a Premium capacity, you can subscribe other individuals, but they too must have Power BI Pro licenses. See [Considerations and troubleshooting](#considerations-and-troubleshooting) below for details.
+2. Your email is already in the  **Subscribe**  box. You can add other email addresses in the same domain to the subscription as well. If the report or dashboard is hosted in a [Premium capacity](../admin/service-premium-what-is.md), you can subscribe other individual email addresses and group aliases, whether they're in your domain or not. If the report or dashboard isn't hosted in a Premium capacity, you can subscribe other individuals, but they too must have Power BI Pro licenses. See [Considerations and troubleshooting](#considerations-and-troubleshooting) below for details.
 
 3. Fill in the email  **Subject**  and  **Message**  details.
 
@@ -105,14 +105,20 @@ Power BI administrators can use the Power BI audit logs to view details around s
 
 ### General
 
-- Like other BI products, the time you set your subscription for is when the subscription begins processing.  When the report processing is complete, the subscription is queued and sent to the e-mail recipients.  We strive to process and deliver all subscriptions as quickly as possible. However, sometimes at peak demand you may see a longer delay due to the number of subscriptions that Power BI can send at once. Most customers shouldn’t see a delay of more than 15 minutes to process and send reports. It may take up to 30 minutes for certain times and tenants that have significant usage.  We never expect any delay in delivery to be more than 60 minutes from the time the subscription is scheduled.  If you experience a delay that long, first ensure that the address `no-reply-powerbi@microsoft.com` is whitelisted by your e-mail provider.  If it is, contact Power BI support for assistance.
+- Like other BI products, the time you set your subscription for is when the subscription begins processing.  When the report processing is complete, the subscription is queued and sent to the e-mail recipients.  We strive to process and deliver all subscriptions as quickly as possible. However, sometimes at peak demand you may see a longer delay due to the number of subscriptions that Power BI can send at once. Most customers shouldn’t see a delay of more than 15 minutes to process and send reports. It may take up to 30 minutes for certain times and tenants that have significant usage.  We never expect any delay in delivery to be more than 60 minutes from the time the subscription is scheduled.  If you experience a delay that long, first ensure that the address `no-reply-powerbi@microsoft.com` is on your safe sender list and isn't blocked by your e-mail provider.  If the email isn't being blocked, contact Power BI support for assistance.
 - Currently, email subscriptions for reports and dashboards using live connection datasets aren't supported when subscribing users other than yourself, except for paginated reports. You can subscribe others to a paginated report, using your security context. Read more about [subscribing to paginated reports](../consumer/paginated-reports-subscriptions.md).
 - Power BI automatically pauses refresh on datasets associated with dashboards and reports that haven't been visited in more than two months. However, if you add a subscription to a dashboard or report, it doesn't pause even if it goes unvisited.
-- If you aren't receiving the subscription emails, ensure that your User Principal Name (UPN) can receive emails.
+- If you aren't receiving the subscription emails:
+
+    - Make sure that your User Principal Name (UPN) can receive emails.
+    - Though you have a Power BI Pro license, you may not have a Microsoft Exchange license. If not, your Azure Active Directory account may not have an email or alternate email address specified. In this case, though the subscription appears to go out, you never receive a copy.  If your Power BI admin assigns an email address, Power BI will synchronize the update the next time you sign in, and use that e-mail address for the subscription.
+
 - If your dashboard or report is in Premium capacity, you can use group email aliases for subscriptions, instead of subscribing colleagues one email address at a time. The aliases are based on the current active directory.
 - If your content isn't in a Premium capacity, only Power BI Pro users can receive email subscriptions. 
 - Subscriptions don't currently support bookmarks.
 - The option to provide access to the report/dashboard always shows as enabled when you edit an existing subscription.  If you clear this option and save the subscription, it saves that state. However, when you go to edit the report again it will be checked by default.
+- If you have an alternate email address but no primary, Power BI uses that to deliver the subscription.
+- If you subscribe external users to a report or dashboard, they will receive a share notification immediately after you select **Save and close** in the subscription pane. This notification is sent only to external users, not internal users, because they require an invitation link to view the report or dashboard. 
 
 ### Dashboards
 
@@ -127,7 +133,7 @@ Power BI administrators can use the Power BI audit logs to view details around s
 - For report email subscriptions, if the dataset uses RLS, you can create a subscription for yourself. You can't subscribe others to a report with row-level security (RLS) applied, except for paginated reports. You can subscribe others to a paginated report, using your security context. Read more about [subscribing to paginated reports](../consumer/paginated-reports-subscriptions.md).
 - Report page subscriptions are tied to the name of the report page. If you subscribe to a report page and then rename it, you have to re-create your subscription.
 - Your organization may configure certain settings in Azure Active Directory that limit the ability to use email subscriptions in Power BI. These limitations include, but aren't limited to, having multi-factor authentication or IP range restrictions when accessing resources.
-- Email subscriptions don't support most [custom visuals](../developer/power-bi-custom-visuals.md). The one exception is those custom visuals that have been [certified](../developer/power-bi-custom-visuals-certified.md).
+- Email subscriptions don't support most [custom visuals](../developer/visuals/power-bi-custom-visuals.md). The one exception is those custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
 - Email subscriptions don't support R-powered custom visuals at this time.
 - Email subscriptions are sent with the report's default filter and slicer states. Any changes to the defaults that you make after subscribing don't show up in the email. Paginated reports do support this capability and allow you to set the specific parameter values per subscription.
 - Say you have a report with a live connection to Analysis Services, and you have the subscription set to run after data refresh. It will run the first time the Power BI service detects a change in your on-premises model when it polls the Analysis Services instance.  Power BI checks every hour for a change in the Analysis Services data model, to determine when to send the subscription.

@@ -3,7 +3,7 @@ title: Connect a report to a dataset using dynamic binding
 description: Learn how to embed a report using dynamic binding.
 author: KesemSharabi
 ms.author: kesharab
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/07/2019

@@ -5,7 +5,7 @@ author: maggiesMSFT
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/13/2019
 ms.author: maggies
 
@@ -29,7 +29,7 @@ In the Power BI service (app.powerbi.com), a dashboard contains tiles pinned fro
 
 The Q&A question box is located in the upper-left corner of your dashboard, where you type your question using natural language. Don't see the Q&A box? See [Considerations and troubleshooting](../consumer/end-user-q-and-a.md#considerations-and-troubleshooting) in the **Q&A for consumers** article.  Q&A recognizes the words you type and figures out where (in which dataset) to find the answer. Q&A also helps you form your question with auto-completion, restatement, and other textual and visual aids.
 
-![The Q&A question box](media/power-bi-tutorial-q-and-a/powerbi-qna.png)
+![Screenshot shows a Power B I dashboard with an option to Ask a question about your data.](media/power-bi-tutorial-q-and-a/powerbi-qna.png)
 
 The answer to your question is displayed as an interactive visualization and updates as you modify the question.
 
@@ -83,7 +83,7 @@ To use Q&A in reports, you must have edit permissions for the report and underly
 
 2. A Q&A question box displays on your report canvas. In the example below, the question box displays on top of another visualization. This is fine, but it might be better to add a blank page to the report before asking a question.
 
-    ![The Q&A question box](media/power-bi-tutorial-q-and-a/power-bi-ask-question.png)
+    ![Screenshot shows a canvas with the Q&A question box on a visualization.](media/power-bi-tutorial-q-and-a/power-bi-ask-question.png)
 
 3. Place your cursor in the question box. As you type, Q&A displays suggestions to help you form your question.
 

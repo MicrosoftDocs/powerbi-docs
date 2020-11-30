@@ -7,22 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 04/08/2020
+ms.date: 10/29/2020
 ms.author: maggies
 
 ---
 # Power BI report data sources in Power BI Report Server
-Power BI reports can connect to a number of data sources. Depending on how data is used, different data sources are available. Data can be imported or data can be queried directly using DirectQuery or a live connection to SQL Server Analysis Services.
+Power BI reports can connect to a number of data sources. Depending on how data is used, different data sources are available. Data can be imported or data can be queried directly using DirectQuery or a live connection to SQL Server Analysis Services. Some data sources are available in Power BI Desktop optimized for Power BI Report Server, but aren't supported when published to Power BI Report Server.
 
-These data sources are specific to Power BI reports used within Power BI Report Server. For information about data sources supported with paginated reports (.rdl), see [Data Sources Supported by Reporting Services](https://docs.microsoft.com/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
+These data sources are specific to Power BI reports used within Power BI Report Server. For information about data sources supported with paginated reports (.rdl), see [Data Sources Supported by Reporting Services](/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
 
 > [!IMPORTANT]
 > All data sources in a Power BI Desktop report must support configuring scheduled refresh.
 >  
 
 ## List of supported data sources
-
-Other data sources may work even though they aren't on the supported list.
 
 | **Data source** | **Cached data** | **Scheduled refresh** | **Live/DirectQuery** |
 | --- | --- | --- | --- |
@@ -188,6 +186,8 @@ Power BI Report Server does not support OAuth-based authentication for model ref
 
 **Using LDAP authentication with Teradata (enabled in Power BI Desktop by using the Command Prompt command 'setx PBI_EnableTeradataLdap true') is not supported for model refresh.
 
+Power BI Report Server has a limitation when using web data: only data files from web can be refreshed. Data based on Page or By example aren't refreshable. This limitation is because the M expressions created with Web.BrowserContents and Web.Page can't be refreshed. Power BI Report Server can only refresh Web.Contents data sources.
+
 ## List of supported authentication methods for DirectQuery
 
 Power BI Report Server does not support OAuth-based authentication for DirectQuery.
@@ -206,6 +206,9 @@ Power BI Report Server does not support OAuth-based authentication for DirectQue
 **SAP HANA supports DirectQuery with Integrated Windows Authentication only when using it as a relational database in the published Power BI Desktop file (.pbix).
 
 ## Next steps
+
+[Data sources for Power BI reports](../connect-data/power-bi-data-sources.md) in the Power BI service
+
 Now that you've connected to your data source, [create a Power BI report](quickstart-create-powerbi-report.md) using data from that data source.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

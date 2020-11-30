@@ -45,7 +45,7 @@ LocalizationGroup: Gateways
 
 ## Analysis Services in Power BI
 
-**Question:** Can I use msdmpump.dll to create custom effective username mappings for Analysis Services? 
+**Question:** Can I use msmdpump.dll to create custom effective username mappings for Analysis Services? 
 
 **Answer:** No. This use isn't supported at this time.
 

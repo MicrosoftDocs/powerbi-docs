@@ -3,14 +3,15 @@ title: Automate Power BI Premium workspace and dataset tasks with service princi
 description: Learn how service principals can be used for automating Power BI Premium workspace and dataset management tasks.
 author: minewiskan
 ms.author: owend
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: conceptual
-ms.date: 05/20/2020
+ms.topic: how-to
+ms.date: 10/20/2020
 
 LocalizationGroup: Premium
 ---
+
 # Automate Premium workspace and dataset tasks with service principals
 
 Service principals are an Azure Active Directory *app registration* you create within your tenant to perform unattended resource and service level operations. They're a unique type of user identity with an app name, application ID, tenant ID, and *client secret* or certificate for a password.
@@ -28,21 +29,18 @@ Only [New workspaces](../collaborate-share/service-new-workspaces.md) support XM
 
 To perform write operations, the capacity's **Datasets workload** must have the [XMLA endpoint enabled for read-write](service-premium-connect-tools.md#enable-xmla-read-write). Datasets published from Power BI Desktop should have the [Enhanced metadata format](../connect-data/desktop-enhanced-dataset-metadata.md) feature enabled.
 
-> [!NOTE]
-> The XMLA endpoint feature in Power BI Premium is **Preview**. Features in preview should not be used in a production environment. Certain functionality, support, and documentation is limited.  Refer to the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products?rtc=1) for details.
-
 ## Create a service principal
 
 Service principals are created as an app registration in the Azure portal or by using PowerShell. When creating your service principal, be sure to copy and save separately the app name, Application (client) ID, Directory (tenant) ID, and client secret. For steps on how to create a service principal, see:
 
-[Create service principal - Azure portal](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)   
-[Create service principal - PowerShell](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell)
+[Create service principal - Azure portal](/azure/active-directory/develop/howto-create-service-principal-portal)   
+[Create service principal - PowerShell](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)
 
 ## Create an Azure AD security group
 
 By default, service principals have access to any tenant settings they're enabled for. Depending on your admin settings, access can include specific security groups or the entire organization.
 
-To restrict service principal access to specific tenant settings, you can allow access to specific security groups. Alternatively, you can create a dedicated security group for service principals, and exclude it from the desired tenant settings. For steps on how to create a security group and add a service principal, see [Create a basic group and add members using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
+To restrict service principal access to specific tenant settings, you can allow access to specific security groups. Alternatively, you can create a dedicated security group for service principals, and exclude it from the desired tenant settings. For steps on how to create a security group and add a service principal, see [Create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
 
 ## Enable service principals
 
@@ -54,15 +52,15 @@ In the Power BI **Admin portal** > **Tenant settings**, expand **Allow service p
 
 ## Workspace access
 
-In order for your service principal to have the necessary permissions to perform Premium workspace and dataset operations, you must add the service principal as a workspace Member or Admin. Using Workspace access in the Power BI service is described here, but you can also use the [Add Group User REST API](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser).
+In order for your service principal to have the necessary permissions to perform Premium workspace and dataset operations, you must add the service principal as a workspace Member or Admin. Using Workspace access in the Power BI service is described here, but you can also use the [Add Group User REST API](/rest/api/power-bi/groups/addgroupuser).
 
 1. In the Power BI service, for a workspace, select **More** > **Workspace access**.
 
-    ![Workspace settings](media/service-premium-service-principal/workspace-access.png)
+    ![Workspace access settings](media/service-premium-service-principal/workspace-access.png)
 
 2. Search by application name, Add the service principal as an **Admin** or **Member** to the workspace.
 
-    ![Workspace admin](media/service-premium-service-principal/add-service-principal-in-the-UI.png)
+    ![Access dialog](media/service-premium-service-principal/add-service-principal-in-the-UI.png)
 
 ## Connection strings for the XMLA endpoint
 
@@ -91,7 +89,7 @@ Invoke-ProcessTable -Server "powerbi://api.powerbi.com/v1.0/myorg/myworkspace" -
 
 ### AMO and ADOMD
 
-When connecting with client applications and web apps, [AMO and ADOMD client libraries](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers) version 15.0.2 and higher installable packages from NuGet support service principals in connection strings using the following syntax: `app:AppID` and password or `cert:thumbprint`.
+When connecting with client applications and web apps, [AMO and ADOMD client libraries](/azure/analysis-services/analysis-services-data-providers) version 15.1.42.26 (June 2020) and higher installable packages from NuGet support service principals in connection strings using the following syntax: `app:AppID` and password or `cert:thumbprint`.
 
 In the following example, `appID` and a `password` are used to perform a model database refresh operation:
 
@@ -110,6 +108,6 @@ db.Model.SaveChanges();
 ## Next steps
 
 [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md)  
-[Azure Automation](https://docs.microsoft.com/azure/automation)  
-[Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps/)  
-[Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/)
+[Azure Automation](/azure/automation)  
+[Azure Logic Apps](/azure/logic-apps/)  
+[Power BI REST APIs](/rest/api/power-bi/)

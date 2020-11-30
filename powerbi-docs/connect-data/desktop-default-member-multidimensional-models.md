@@ -16,7 +16,7 @@ LocalizationGroup: Data from files
 
 You can connect to multidimensional models in Power BI, and create reports that visualize all sorts of data within the model. When working with multidimensional models, Power BI applies rules to how it processes data, based on which column is defined as the *default member*. 
 
-When working with multidimensional models, Power BI handles data from the model based on where the column that contains the **DefaultMember** is used. The *DefaultMember* attribute is set in CSDL (Conceptual Schema Definition Language) for a particular column in a multidimensional model. You can learn more about the default member in its [attribute properties article](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/attribute-properties-define-a-default-member?view=sql-server-2017). When a DAX query is executed, the default member specified in the model is applied automatically.
+When working with multidimensional models, Power BI handles data from the model based on where the column that contains the **DefaultMember** is used. The *DefaultMember* attribute is set in CSDL (Conceptual Schema Definition Language) for a particular column in a multidimensional model. You can learn more about the default member in its [attribute properties article](/sql/analysis-services/multidimensional-models/attribute-properties-define-a-default-member?view=sql-server-2017). When a DAX query is executed, the default member specified in the model is applied automatically.
 
 This article described how Power BI behaves under various circumstances when working with multidimensional models, based on where the *default member* is found. 
 

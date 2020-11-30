@@ -8,10 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.custom: seodec18
-ms.date: 06/06/2019
+ms.date: 08/04/2020
 ---
 
 # Report data in Power BI Report Builder
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 Report data can come from multiple sources of data in your organization. Your first step in designing a Power BI Report Builder report is to create data sources and datasets that represent the underlying report data. Each data source includes data connection information. Each dataset includes a query command that defines the set of fields to use as data from a data source. To visualize data from each dataset, add a data region, such as a table, matrix, chart, or map. When the report is processed, the queries run on the data source, and each data region expands as needed to display the query results for the dataset.  
 
@@ -22,7 +24,10 @@ Learn how to [Create an embedded data source for paginated reports in Power BI R
   
 - **Data connection.** Also known as a *data source*. A data connection includes a name and connection properties that are dependent on the connection type. By design, a data connection doesn't include credentials. A data connection doesn't specify which data to retrieve from the external data source. To do that, you specify a query when you create a dataset.  
   
-- **Connection string.** A connection string is a string version of the connection properties that are needed to connect to a data source. Connection properties differ based on data connection type.  
+- **Connection string.** A connection string is a string version of the connection properties that are needed to connect to a data source. Connection properties differ based on data connection type. 
+
+    > [!NOTE]
+    > Data source connection strings can't be expression-based.
   
 - **Embedded data source.** Also known as a *report-specific data source*. A data source that is defined in a report and used only by that report.  
   

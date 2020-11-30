@@ -1,14 +1,14 @@
 ---
 title: Troubleshooting unsupported data source for refresh
 description: Troubleshooting unsupported data source for refresh
-author: maggiesMSFT
+author: davidiseminger
 ms.reviewer: kayu
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
 ms.date: 05/08/2020
-ms.author: maggies
+ms.author: davidi
 ms.custom: seodec18
 
 LocalizationGroup: Troubleshooting
@@ -16,7 +16,9 @@ LocalizationGroup: Troubleshooting
 # Troubleshooting unsupported data source for refresh
 You may see an error when trying to configured a dataset for scheduled refresh.
 
-        You cannot schedule refresh for this dataset because it gets data from sources that currently don’t support refresh.
+```output
+You cannot schedule refresh for this dataset because it gets data from sources that currently don’t support refresh.
+```
 
 This happens when the data source you used, within Power BI Desktop, isn’t supported for refresh. You will need to find the data source that you are using and compare that against the list of supported data sources at [Refresh data in Power BI](refresh-data.md). 
 

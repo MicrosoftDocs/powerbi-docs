@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
 
@@ -26,7 +26,7 @@ Then interact with your dashboards and reports, explore the data, and share them
   Your device must run Windows 10. The app can run on devices with at least 3-GB RAM and 8-GB internal storage.
 
   >[!NOTE]
-  >Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+  >Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
    
 * Find out'[what's new in the Power BI mobile apps](mobile-whats-new-in-the-mobile-apps.md).
 
@@ -63,12 +63,12 @@ You can view and interact with the Power BI dashboard samples. But, there are a 
 
 ### Reporting Services mobile report samples
 1. Tap the global navigation button ![global navigation button](././media/mobile-windows-10-phone-app-get-started/power-bi-windows-10-navigation-icon.png) in the upper-left corner.
-2. Tap **Settings** icon ![](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-settings-icon.png), right-click or tap and hold **Connect to server**, then tap **View samples**.
+2. Tap **Settings** icon ![Settings icon](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-settings-icon.png), right-click or tap and hold **Connect to server**, then tap **View samples**.
    
-   ![](media/mobile-windows-10-phone-app-get-started/power-bi-win10-connect-ssrs-samples.png)
+   ![Screenshot of the Settings screen, showing a pointer from the settings icon to connect to a server.](media/mobile-windows-10-phone-app-get-started/power-bi-win10-connect-ssrs-samples.png)
 3. Open the Retail Reports or Sales Reports folder to explore their KPIs and mobile reports.
    
-   ![](media/mobile-windows-10-phone-app-get-started/power-bi-win10-ssrs-sample-kpis.png)
+   ![Screenshot of a report, showing  K P I and mobile reports.](media/mobile-windows-10-phone-app-get-started/power-bi-win10-ssrs-sample-kpis.png)
 
 ## Search for dashboards, reports, and apps
 Find your dashboards, reports, and apps quickly by typing in the search box, always at the top of the app.
@@ -102,7 +102,7 @@ View your favorite Power BI dashboards, together with Reporting Services KPIs an
 
 Read more about [favorites in the Power BI mobile apps](mobile-apps-favorites.md).
 
-## Next steps
+## Other tasks
 Here are some other things you can do in the Power BI app for Windows 10 devices with dashboards and reports in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal.
 
 ### Power BI dashboards and reports

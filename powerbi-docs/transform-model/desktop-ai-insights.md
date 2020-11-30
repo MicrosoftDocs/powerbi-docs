@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/10/2020
 ms.author: davidi
 
@@ -36,10 +36,10 @@ With Text Analytics and Vision in Power BI, you can apply different algorithms f
 
 The services that are supported today are the following:
 
-* [Sentiment Analysis](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis)
-* [Key Phrase Extraction](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction)
-* [Language Detection](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection)
-* [Image Tagging](https://docs.microsoft.com/azure/cognitive-services/computer-vision/concept-tagging-images). 
+* [Sentiment Analysis](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis)
+* [Key Phrase Extraction](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction)
+* [Language Detection](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection)
+* [Image Tagging](/azure/cognitive-services/computer-vision/concept-tagging-images). 
 
 The transformations are executed on the Power BI service and do not require an Azure Cognitive Services subscription. 
 
@@ -59,7 +59,7 @@ This section describes the available functions in Cognitive Services in Power BI
 
 The language detection function evaluates text input, and for each field, returns the language name and ISO identifier. This function is useful for data columns that collect arbitrary text, where language is unknown. The function expects data in text format as input.
 
-Text Analytics recognizes up to 120 languages. For more information, see [supported languages](https://docs.microsoft.com/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
+Text Analytics recognizes up to 120 languages. For more information, see [supported languages](/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
 
 #### Extract key phrases
 
@@ -71,11 +71,11 @@ Key phrase extraction works best when you give it bigger chunks of text to work 
 
 The **Score Sentiment** function evaluates text input and returns a sentiment score for each document, ranging from 0 (negative) to 1 (positive). This function is useful for detecting positive and negative sentiment in social media, customer reviews, and discussion forums.
 
-Text Analytics uses a machine learning classification algorithm to generate a sentiment score between 0 and 1. Scores closer to 1 indicate positive sentiment, scores closer to 0 indicate negative sentiment. The model is pre-trained with an extensive body of text with sentiment associations. Currently, it's not possible to provide your own training data. The model uses a combination of techniques during text analysis, including text processing, part-of-speech analysis, word placement, and word associations. For more information about the algorithm, see [Introducing Text Analytics](https://blogs.technet.microsoft.com/machinelearning/2015/04/08/introducing-text-analytics-in-the-azure-ml-marketplace/).
+Text Analytics uses a machine learning classification algorithm to generate a sentiment score between 0 and 1. Scores closer to 1 indicate positive sentiment, scores closer to 0 indicate negative sentiment. The model is pre-trained with an extensive body of text with sentiment associations. Currently, it's not possible to provide your own training data. The model uses a combination of techniques during text analysis, including text processing, part-of-speech analysis, word placement, and word associations. For more information about the algorithm, see [Introducing Text Analytics](/archive/blogs/machinelearning/machine-learning-and-text-analytics).
 
 Sentiment analysis is performed on the entire input field, as opposed to extracting sentiment for a particular entity in the text. In practice, there's a tendency for scoring accuracy to improve when documents contain one or two sentences rather than a large block of text. During an objectivity assessment phase, the model determines whether an input field as a whole is objective or contains sentiment. An input field that is mostly objective does not progress to the sentiment detection phrase, resulting in a .50 score, with no further processing. For input fields continuing in the pipeline, the next phase generates a score above or below .50, depending on the degree of sentiment detected in the input field.
 
-Currently, Sentiment Analysis supports English, German, Spanish, and French. Other languages are in preview. For more information, see [supported languages](https://docs.microsoft.com/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
+Currently, Sentiment Analysis supports English, German, Spanish, and French. Other languages are in preview. For more information, see [supported languages](/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
 
 #### Tag images
 
@@ -83,7 +83,7 @@ The **Tag Images** function returns tags based on more than two thousand recogni
 
 After uploading an image or specifying an image URL, Computer Vision algorithms output tags based on the objects, living beings, and actions identified in the image. Tagging is not limited to the main subject, such as a person in the foreground, but also includes the setting (indoor or outdoor), furniture, tools, plants, animals, accessories, gadgets, and so on.
 
-This function requires an image URL or a base-64 field as input. At this time, image tagging supports English, Spanish, Japanese, Portuguese, and Simplified Chinese. For more information, see [supported languages](https://docs.microsoft.com/rest/api/cognitiveservices/computervision/tagimage/tagimage#uri-parameters).
+This function requires an image URL or a base-64 field as input. At this time, image tagging supports English, Spanish, Japanese, Portuguese, and Simplified Chinese. For more information, see [supported languages](/rest/api/cognitiveservices/computervision/tagimage/tagimage#uri-parameters).
 
 ### Invoking Text Analytics or Vision functions in Power Query
 
@@ -154,12 +154,12 @@ To use this capability, a data scientist can simply grant access to the Azure ML
 
 This functionality is supported in Power BI Desktop, Power BI dataflows, and for Power Query Online in the Power BI service.
 
-To learn more about dataflows, see [Self-service data prep in Power BI](service-dataflows-overview.md).
+To learn more about dataflows, see [Self-service data prep in Power BI](./dataflows/dataflows-introduction-self-service.md).
 
 To learn more about Azure Machine Learning, see the following articles:
 
-- Overview: [What is Azure Machine Learning?](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml)
-- Quick Starts and Tutorials for Azure Machine Learning: [Azure Machine Learning Documentation](https://docs.microsoft.com/azure/machine-learning/)
+- Overview: [What is Azure Machine Learning?](/azure/machine-learning/service/overview-what-is-azure-ml)
+- Quick Starts and Tutorials for Azure Machine Learning: [Azure Machine Learning Documentation](/azure/machine-learning/)
 
 ### Granting access to an Azure ML model
 
@@ -168,7 +168,7 @@ To access an Azure ML model from Power BI, the user must have **Read** access to
 - For Machine Learning Studio (classic) models, **Read** access to Machine Learning Studio (classic) web service
 - For Machine Learning models, **Read** access to the Machine Learning workspace
 
-The steps in this section describe how to grant a Power BI user access to a model hosted on the Azure ML service, so they can access this model as a Power Query function. For further details, please see [Manage access using RBAC and the Azure portal](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).
+The steps in this section describe how to grant a Power BI user access to a model hosted on the Azure ML service, so they can access this model as a Power Query function. For further details, please see [Manage access using RBAC and the Azure portal](/azure/role-based-access-control/role-assignments-portal).
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 2. Go to the **Subscriptions** page. You can find the **Subscriptions** page through the **All Services** list in the left navigation menu of the Azure portal.
@@ -182,7 +182,7 @@ The steps in this section describe how to grant a Power BI user access to a mode
 
 Data scientists primarily use Python to develop, and even deploy, their machine learning models for Machine Learning. Unlike the Machine Learning Studio (classic), which helps automate the task of creating a schema file for the model, in the case of Machine Learning, the data scientist must explicitly generate the schema file using Python.
 
-This schema file must be included in the deployed web service for Machine Learning models. To automatically generate the schema for web service, you must provide a sample of the input/output in the entry script for the deployed model. Please see the subsection on [(Optional) Automatic Swagger schema generation in the Deploy models with the Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/how-to-deploy-and-where#optional-define-model-web-service-schema) service documentation. The link includes the example entry script with the statements for the schema generation.
+This schema file must be included in the deployed web service for Machine Learning models. To automatically generate the schema for web service, you must provide a sample of the input/output in the entry script for the deployed model. Please see the subsection on [(Optional) Automatic Swagger schema generation in the Deploy models with the Azure Machine Learning](/azure/machine-learning/how-to-deploy-and-where#optional-define-model-web-service-schema) service documentation. The link includes the example entry script with the statements for the schema generation.
 
 Specifically, the _@input\_schema_ and _@output\_schema_ functions in the entry script reference the input and output sample formats in the _input\_sample_ and _output\_sample_ variables, and use these samples to generate an OpenAPI (Swagger) specification for the web service during deployment.
 
@@ -195,13 +195,13 @@ These instructions for schema generation by updating the entry script must also 
 
 You can invoke any Azure ML model to which you have been granted access, directly from the Power Query Editor. To access the Azure ML models, select **Azure Machine Learning** button in the **Home** or **Add Column** ribbon in the Power Query editor.
 
-![Azure Machine Learning](media/desktop-ai-insights/ai-insights-06.png)
+![Screenshot shows the Azure Machine Learning button in the Power Query Editor.](media/desktop-ai-insights/ai-insights-06.png)
 
 All Azure ML models to which you have access are listed here as Power Query functions. Also, the input parameters for the Azure ML model are automatically mapped as parameters of the corresponding Power Query function.
 
 To invoke an Azure ML model, you can specify any of the selected entity's columns as an input from the drop-down. You can also specify a constant value to be used as an input by toggling the column icon to the left of the input dialog.
 
-![Azure Machine Learning](media/desktop-ai-insights/ai-insights-07.png)
+![Screenshot shows Azure Machine Learning Models you can select.](media/desktop-ai-insights/ai-insights-07.png)
 
 Select **OK** to view the preview of the Azure ML model's output as a new column in the entity table. You will also see the model invocation as an applied step for the query.
 
@@ -221,7 +221,7 @@ This article provided an overview of integrating Machine Learning into Power BI 
 
 - [Tutorial: Invoke a Machine Learning Studio (classic) model in Power BI](../connect-data/service-tutorial-invoke-machine-learning-model.md)
 - [Tutorial: Using Cognitive Services in Power BI](../connect-data/service-tutorial-use-cognitive-services.md)
-- [Cognitive Services in Power BI](service-cognitive-services.md)
-- [Azure Machine Learning integration in Power BI](service-machine-learning-integration.md)
+- [Cognitive Services in Power BI](./dataflows/dataflows-machine-learning-integration.md)
+- [Azure Machine Learning integration in Power BI](./dataflows/dataflows-machine-learning-integration.md)
 - [Monitoring Premium capacities with the app](../admin/service-admin-premium-monitor-capacity.md)
 - [AI metrics in the Premium capacity metrics app](https://powerbi.microsoft.com/blog/ai-metrics-now-available-in-power-bi-premium-capacity-metrics-app/)

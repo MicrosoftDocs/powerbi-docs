@@ -14,11 +14,11 @@ ms.date: 02/05/2019
 
 This article is part of a step-by-step walkthrough to [push data into a dataset](walkthrough-push-data.md).
 
-In **step 4** of Push data into a dataset, [Get a dataset to add rows into a Power BI table](walkthrough-push-data-get-datasets.md), you used the [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) operation and Newtonsoft.Json to get a dataset id. In this step, you use the dataset id with the [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) operation to add rows to a **Power BI** dataset. 
+In **step 4** of Push data into a dataset, [Get a dataset to add rows into a Power BI table](walkthrough-push-data-get-datasets.md), you used the [Get Datasets](/rest/api/power-bi/datasets/getdatasets) operation and Newtonsoft.Json to get a dataset id. In this step, you use the dataset id with the [PostRows](/rest/api/power-bi/pushdatasets/datasets_postrows) operation to add rows to a **Power BI** dataset. 
 
-When you call the [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) operation, you add rows to a dataset.
+When you call the [PostRows](/rest/api/power-bi/pushdatasets/datasets_postrows) operation, you add rows to a dataset.
 
-![](media/walkthrough-push-data-add-rows/powerbi-developer-add-rows.png)
+![add rows](media/walkthrough-push-data-add-rows/powerbi-developer-add-rows.png)
 
 Here's how to add rows to a dataset using the Power BI API.
 
@@ -100,9 +100,7 @@ Add this code into Program.cs.
     #endregion
 ```
 
-Below is the [complete code listing](#code).
-
-<a name="code"/>
+Below is the complete code listing.
 
 ## Complete code listing
 
@@ -310,5 +308,5 @@ Although, we specify that we **_//Get the first id_** in the code above, the cor
 ## Next steps
 [Push data into a Power BI Dashboard](walkthrough-push-data.md)  
 [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
-[Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/)  
+[Power BI REST API reference](/rest/api/power-bi/)  
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

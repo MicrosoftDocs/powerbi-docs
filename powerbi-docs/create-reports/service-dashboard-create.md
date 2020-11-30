@@ -7,7 +7,7 @@ featuredvideoid: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/17/2019
 ms.author: maggies
 
@@ -23,7 +23,7 @@ After you complete this article, you'll have a good understanding of:
 - How to pin tiles 
 - How to navigate between a dashboard and a report 
  
-![Dashboard](media/service-dashboard-create/power-bi-completed-dashboard-small.png)
+![Screenshot shows a Power B I dashboard with several visualizations.](media/service-dashboard-create/power-bi-completed-dashboard-small.png)
 
 > [!NOTE] 
 > Dashboards are a feature of the Power BI service, not Power BI Desktop. Although you don't create dashboards in the Power BI mobile apps, you can [view and share](../consumer/mobile/mobile-apps-view-dashboard.md) there.
@@ -55,7 +55,7 @@ In this step-by-step, we import one of the Power BI sample datasets and use it t
     ![OneDrive for Business window](media/service-dashboard-create/power-bi-import.png)
 8. When the success message appears, select the **x** to dismiss it.
 
-   ![Success message](media/service-dashboard-create/power-bi-view-datasetnew.png)
+   ![Screenshot shows a success message with the X called out.](media/service-dashboard-create/power-bi-view-datasetnew.png)
 
 > [!TIP]
 > Did you know? You can narrow the nav pane by selecting the icon with three lines at the top ![nav pane show or hide icon](media/service-dashboard-create/power-bi-new-look-hide-nav-pane.png). That gives you more room for the report itself.
@@ -74,17 +74,17 @@ In this step-by-step, we import one of the Power BI sample datasets and use it t
     ![Hover over tile](media/service-dashboard-create/power-bi-hover.png)
 4. Because we're creating a new dashboard, select the option for **New dashboard** and give it a name.
 
-    ![Pin to dashboard dialog](media/service-dashboard-create/power-bi-pin-tile.png)
+    ![Screenshot shows the Pin to dashboard window.](media/service-dashboard-create/power-bi-pin-tile.png)
 5. When you select **Pin**, Power BI creates the new dashboard in the current workspace. After the **Pinned to dashboard** message appears, select **Go to dashboard**. If you're prompted to save the report, choose **Save**.
 
-    ![Success message](media/service-dashboard-create/power-bi-pin-success.png)
+    ![Screenshot shows a success message with the Go to dashboard option called out.](media/service-dashboard-create/power-bi-pin-success.png)
 
     Power BI opens the new dashboard. It has one tile: the visualization you just pinned.
 
    ![dashboard with one tile](media/service-dashboard-create/power-bi-pinned.png)
 7. Select the tile to return to the report. Pin a few more tiles to the new dashboard. When the **Pin to dashboard** window displays, select **Existing dashboard**.  
 
-   ![Pin to dashboard dialog](media/service-dashboard-create/power-bi-existing-dashboard.png)
+   ![Screenshot shows the Pin to dashboard window with the Existing dashboard option called out.](media/service-dashboard-create/power-bi-existing-dashboard.png)
 
 ## Pin an entire report page to the dashboard
 Instead of pinning one visual at a time, you can [pin an entire report page as a *live tile*](service-dashboard-pin-live-tile-from-report.md). Let's do it.
@@ -99,11 +99,11 @@ Instead of pinning one visual at a time, you can [pin an entire report page as a
 
 3. When the **Pin to dashboard** window appears, select **Existing dashboard**.
 
-   ![Pin to dashboard dialog](media/service-dashboard-create/power-bi-pin-live2.png)
+   ![Screenshot shows the Pin to dashboard window with the Existing dashboard option selected and a Pin live button.](media/service-dashboard-create/power-bi-pin-live2.png)
 
 4. After the Success message appears, select **Go to dashboard**. There you see the tiles you pinned from the report. In the example below, we've pinned two tiles from page one of the report and one live tile, which is page two of the report.
 
-   ![Dashboard](media/service-dashboard-create/power-bi-dashboard.png)
+   ![Screenshot shows a Power B I dashboard with the visualizations from this article.](media/service-dashboard-create/power-bi-dashboard.png)
 
 ## Next steps
 Congratulations on creating your first dashboard! Now that you have a dashboard, there's much more you can do with it. Follow one of the suggested articles below, or start exploring on your own: 

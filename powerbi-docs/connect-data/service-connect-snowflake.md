@@ -1,68 +1,84 @@
 ---
 title: Connect to Snowflake with Power BI
-description: Snowflake with SSO for Power BI
+description: Learn how to connect to Snowflake for Power BI by using SSO authentication.
 author: cpopell
 ms.reviewer: 
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 11/20/2019
+ms.topic: how-to
+ms.date: 06/26/2020
 ms.author: gepopell
 
 LocalizationGroup: Connect to services
 ---
-#  Connecting to Snowflake in Power BI Service
+# Connect to Snowflake in Power BI Service
 
 ## Introduction
 
-Connecting to Snowflake in the Power BI service only differs from other connectors in one way, which is that an additional capability is offered for AAD (with an option for SSO). Different parts of the integration require different administrative roles across Snowflake, Power BI, and Azure. You can also choose to enable AAD authentication without using SSO. Basic authentication works similarly to other connectors in the service.
+Connecting to Snowflake in the Power BI service  differs from other connectors in only one way. Snowflake has an additional capability for Azure Active Directory (AAD), with an option for SSO. Parts of the integration require different administrative roles across Snowflake, Power BI, and Azure. You can also choose to enable AAD authentication without using SSO. Basic authentication works similarly to other connectors in the service.
 
-If you're interested in configuring AAD integration, as well as optionally enabling SSO:
-* If you are the Snowflake admin, please read the [Power BI SSO to Snowflake - Getting Started](https://docs.snowflake.net/manuals/LIMITEDACCESS/oauth-powerbi.html) article in the Snowflake documentation.
-* (SSO) If you are a Power BI admin, look at the 'Power BI Service configuration - Admin Portal' section
-* (SSO) If you are a Power BI dataset creator, look at the 'Power BI Service configuration - Enabling a dataset' section
+To configure AAD integration and optionally enable SSO, follow the steps in this article:
+
+* If you're the Snowflake admin, read the [Power BI SSO to Snowflake - Getting Started](https://docs.snowflake.com/en/user-guide/oauth-powerbi.html) article in the Snowflake documentation.
+* If you're a Power BI admin, reference [Power BI Service configuration - Admin Portal](service-connect-snowflake.md#admin-portal) to learn how to enable SSO.
+* If you're a Power BI dataset creator, reference [Power BI Service configuration - Configuring a dataset with AAD](service-connect-snowflake.md#configuring-a-dataset-with-aad) to learn how to enable SSO.
 
 ## Power BI Service configuration
 
-### Admin Portal
+### Admin portal
 
-If you want to enable SSO, the tenant admin is required to go to the Admin Portal and approve sending Power BI AAD credentials to  Snowflake.
+To enable SSO, a global admin has to turn on the setting in the Power BI Admin portal. This setting approves sending AAD credentials to Snowflake for authentication for the entire organization. Follow these steps to enable SSO:
 
-![Tenant admin setting for Snowflake SSO](media/service-connect-snowflake/snowflakessotenant.png)
+1. [Sign in to Power BI](https://app.powerbi.com) using global admin credentials.
+1. Select **Settings** from the page header menu, then select **Admin portal**.
+1. Select **Tenant settings**, then scroll to locate **Integration settings**.
 
-Navigate to your "Admin Portal", select the "Tenant Settings" sidebar item, scroll down to "Integration Settings" and you will see an option for "Snowflake  SSO".
+   ![Tenant setting for Snowflake SSO](media/service-connect-snowflake/snowflake-sso-tenant.png)
 
-As warned, you have to manually enable this to consent to sending your AAD token to the  Snowflake  servers. To enable it, click the 'Disabled' toggle, , press apply and wait for the settings change to take effect. It may take up to an hour for the service to propagate the configuration.
+4. Expand **Snowflake SSO**, toggle the setting to **Enabled**, then select **Apply**.
 
-Once this is done you will be able to use reports with SSO.
+This step is required to consent to sending your AAD token to the  Snowflake  servers. After you enable the setting, it may take up to an hour for it to take effect.
+
+After SSO is enabled you can use reports with SSO.
 
 ### Configuring a Dataset with AAD
 
-Once a report based on the Snowflake connector has been published to the web, in the Power BI web service, the dataset creator needs to navigate to the appropriate workspace, select 'Datasets', and select 'Settings' (under the '...' menu for additional actions next to the relevant dataset).
+After a report that is based on the Snowflake connector is published to the Power BI service, the dataset creator has to update settings for the appropriate workspace so that it will use SSO.
 
-Due to the way that Power BI works, SSO will only work when no data sources are run through the on-premise data gateway.
+Because of the way that Power BI works, SSO will only work when no data sources are run through the on-premises data gateway. Limitations are listed below:
 
-* If you are using only a Snowflake source in your data model, then you can use SSO if you choose not to use the on-premise data gateway
-* If you are using a Snowflake source alongside another source, then you can use SSO if none of the sources use the on-premise data gateway
-* If you are using a Snowflake source through the on-premise data gateway, AAD credentials are not currently supported. This might be relevant in case you're trying to access a VNet from a single IP with the Gateway installed on it, rather than from the entire Power BI IP range.
-* If you are using a Snowflake source alongside another source that requires a Gateway, you will be required to use Snowflake through the on-premise data gateway as well and will not be able to use SSO.
+* If you're using only a Snowflake source in your data model, then you can use SSO if you choose not to use the on-premises data gateway.
+* If you're using a Snowflake source and another source, then you can use SSO if none of the sources use the on-premises data gateway.
+* If you're using a Snowflake source through the on-premises data gateway, AAD credentials aren't currently supported. This consideration might be relevant in case you're trying to access a VNet from a single IP with the gateway installed on it, rather than from the entire Power BI IP range.
+* If you're using a Snowflake source and another source that requires a gateway, you need to use Snowflake through the on-premises data gateway as well. You won't be able to use SSO in this case.
 
-For more about how to use the on-premises data gateway, see the article [What is an on-premises data gateway?](https://docs.microsoft.com/power-bi/service-gateway-onprem)
+Learn more about how to use the on-premises data gateway, in [What is an on-premises data gateway?](service-gateway-onprem.md)
 
-If you aren't using the Gateway, you're all set. If you have Snowflake credentials configured on your on-premises data gateway, but are only using that data source in your model, you can click the toggle on the Dataset settings page to turn off the gateway for that data model.
+If you aren't using the gateway, you're all set. When you have Snowflake credentials configured on your on-premises data gateway, but are only using that data source in your model, you can click the toggle on the Dataset settings page to turn off the gateway for that data model.
 
-![Dataset setting to toggle off Gateway](media/service-connect-snowflake/snowflake_gateway_toggle_off.png)
+![Dataset setting to toggle off Gateway](media/service-connect-snowflake/snowflake-gateway-toggle-off.png)
 
-The dataset creator needs to select 'Data source credentials' and sign in. The dataset can be signed into Snowflake with Basic credentials or OAuth2 (AAD) credentials. If you choose to use AAD, the dataset can be enabled to use SSO. When this first user goes to sign in to Snowflake  for the dataset, they need to select the option that other users will have their Oauth2 credentials used to retrieve data. This will enable AAD SSO. Regardless of whether the initial user signs in with Basic authentication or OAuth2 (AAD), the AAD credentials are what will be sent for SSO. 
+To turn on SSO for a dataset, follow these steps:
 
-![Dataset setting for Snowflake SSO](media/service-connect-snowflake/snowflakessocredui.png)
+1. [Sign in to Power BI](https://app.powerbi.com) using dataset creator credentials.
+1. Select the appropriate workspace, then choose **Settings** from the more options menu that's located next to the dataset name.
+  ![More options menu appears on hover](media/service-connect-snowflake/dataset-settings-2.png)
+1. Select **Data source credentials** and sign in. The dataset can be signed into Snowflake with Basic or OAuth2 (AAD) credentials. if you use AAD, you can enable SSO in the next step.
+1. Select the option **End users use their own OAuth2 credentials when accessing this data source via DirectQuery**. This setting will enable AAD SSO. Whether the first user signs in with Basic authentication or OAuth2 (AAD), the AAD credentials are what will be sent for SSO.
 
-Once this is done, any additional users should automatically use their AAD authentication to connect to data from that Snowflake dataset.
+    ![Dataset setting for Snowflake SSO](media/service-connect-snowflake/snowflake-sso-cred-ui.png)
+
+After these steps are done, users should automatically use their AAD authentication to connect to data from that Snowflake dataset.
 
 If you choose not to enable SSO, then users refreshing the report will use the credentials of the user who signed in, like most other Power BI reports.
 
 ### Troubleshooting
 
-If you run into any issues with the integration, please refer to the Snowflake [troubleshooting guide](https://docs.snowflake.net/manuals/LIMITEDACCESS/oauth-powerbi.html#troubleshooting).
+If you run into any issues with the integration, refer to the Snowflake [troubleshooting guide](https://docs.snowflake.com/en/user-guide/oauth-powerbi.html#troubleshooting).
 
+## Next steps
+
+* [Data sources for the Power BI service](service-get-data.md)
+* [Connect to datasets in the Power BI service from Power BI desktop](desktop-report-lifecycle-datasets.md)
+* [Connect to a Snowflake computing warehouse](desktop-connect-snowflake.md)

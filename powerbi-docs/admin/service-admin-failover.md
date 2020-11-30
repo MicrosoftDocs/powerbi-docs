@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/20/2020
+ms.date: 06/18/2020
 ms.author: kfollis
 
 LocalizationGroup: Administration
@@ -35,7 +35,7 @@ All Power BI service components regularly sync their backup instances. We target
 
 Backup instances reside within the same geographic location (geo) that you selected when your organization signed up for Power BI, except where noted in the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location). A geo can contain several regions, and Microsoft may replicate data to any of the regions within a given geo for data resiliency. Microsoft will not replicate or move customer data outside the geo. For a mapping of the geos offered by Power BI and the regions within them, see the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location).
 
-## How does Microsoft decide to failover?
+## How does Microsoft decide to fail over?
 
 There are two different systems that indicate when a failover might be required:
 
@@ -52,8 +52,11 @@ A notification is posted on the Power BI support page ([https://powerbi.microsof
 
 Power BI takes approximately 15 minutes to become operational again once it's identified that a failover is required. The time to identify that a failover is required varies, based on the scenario that is broken. 
 
-Once a failover is performed, Power BI uses Azure Storage GEO replication to perform the failover. Such replications usually have a return point of 15 minutes, however, [Azure Storage does not guarantee this timeframe](https://docs.microsoft.com/azure/storage/common/storage-redundancy) with an SLA, and thus, Power BI is also unable to guarantee a timeframe. 
+Once a failover is performed, Power BI uses Azure Storage GEO replication to perform the failover. Such replications usually have a return point of 15 minutes, however, [Azure Storage does not guarantee this timeframe](/azure/storage/common/storage-redundancy) with an SLA, and thus, Power BI is also unable to guarantee a timeframe. 
 
+## What happens to workspaces and reports if my Premium capacity becomes unavailable? 
+
+If a Premium capacity becomes unavailable, workspaces and reports remain accessible and visible to all Power BI Pro licensed users who previously had access to them.
 
 ## When does my Power BI instance return to the original region?
 
@@ -68,4 +71,8 @@ If the Power BI solution used in your organization involves one of the following
 
 ## Will gateways function when in failover mode?
 
-No. Data required from on-premises data sources (any reports and dashboards based on Direct Query and Live Connect) will not work during a failover. The gateway configuration doesn't change though: When the Power BI instance returns to its original state, the gateways return to their normal functions.
+No. Data required from on-premises data sources (any reports and dashboards based on Direct Query and Live Connect) won't work during a failover. The gateway configuration doesn't change though. When the Power BI instance returns to its original state, the gateways return to their normal functions.
+
+In the event of an extreme disaster in a primary region that prevents bringing it back online for considerable duration, the failed-over primary region will allow both read and write operations and customers can redeploy and configure gateways against the new region.
+
+Customers can choose to install a new gateway on a different machine or take over their existing gateway. Taking over the existing gateway should be simpler, since all the data sources associated with the old gateway will be carried over to the new one.

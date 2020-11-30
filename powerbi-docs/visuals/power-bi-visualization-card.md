@@ -1,12 +1,12 @@
 ---
 title: Card visualizations (big number tiles)
 description: Create a Card visualization in Power BI
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: 'mihart'
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/05/2020
 ms.author: rien
 
@@ -99,7 +99,8 @@ The Formatting pane is available when interacting with the card in a report.
 5. Continue to explore the formatting options until your card is exactly how you'd like it. 
 
 ## Considerations and troubleshooting
-If you do not see a question box at all, contact your system or tenant administrator.    
+
+If you do not see a question box at all, contact your Power BI admin.
 
 ## Next steps
 [Combo charts in Power BI](power-bi-visualization-combo-chart.md)

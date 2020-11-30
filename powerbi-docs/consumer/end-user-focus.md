@@ -2,13 +2,13 @@
 title: Focus mode and full screen mode - how to zoom in to see more detail
 description: Documentation for displaying a Power BI dashboard, dashboard tile, report, or report visual in focus mode or full screen mode
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 featuredvideoid: dtdLul6otYE
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 03/09/2020
+ms.topic: how-to
+ms.date: 09/09/2020
 ms.author: mihart
 
 LocalizationGroup: Common tasks
@@ -22,7 +22,7 @@ LocalizationGroup: Common tasks
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dtdLul6otYE" frameborder="0" allowfullscreen></iframe>
 
-Focus mode and full screen mode are two different ways to see more detail in your visuals, reports, and dashboards.  The main difference is that full screen removes all the panes surrounding your content while focus mode allows you to still interact with your visuals. Let's take a closer look at the similarities and differences.  
+Focus mode and full screen mode are two different ways to see more detail in your visuals, reports, and dashboards.  The main difference between the two is that full screen removes all the panes surrounding your content while focus mode allows you to still interact with your visuals. Let's take a closer look at the similarities and differences.  
 
 |Content    | Focus mode  |Full screen mode  |
 |---------|---------|----------------------|
@@ -32,7 +32,11 @@ Focus mode and full screen mode are two different ways to see more detail in you
 |Dashboard tile | yes    | Not possible |
 |Windows 10 mobile | Not possible | Yes |
 
-## What is full screen mode
+In this example below, we started with a report (1), opened one of the visuals in focus mode (2) and then opened that same visual in full screen mode (3). 
+
+![Screenshot made up of three report views](media/end-user-focus/power-bi-reports.png)
+
+## When to use full screen mode
 
 ![dashboard full screen mode before and after](media/end-user-focus/power-bi-dashboards-focus.png)
 
@@ -47,13 +51,13 @@ Some uses for full screen mode are:
 * viewing on a small screen
 * reviewing in locked mode -- you can touch the screen or mouse over tiles without opening the underlying report or dashboard
 
-## What is focus mode?
+## When to use focus mode?
 
 ***Focus*** mode lets you expand (pop out) a visual or tile to see more detail.  Maybe you have a dashboard or report that is a little crowded and you want to zoom in on only one visual.  This is a perfect use of focus mode.  
 
 ![dashboard tile focus mode before and after](media/end-user-focus/power-bi-compare-dash.png)
 
-While in focus mode, a Power BI *consumer* can interact with any filters that were applied when this visual was created.  In the Power BI service, you can use focus mode on a dashboard tile or report visual.
+While in focus mode, a Power BI *business user* can interact with any filters that were applied when this visual was created.  In the Power BI service, you can use focus mode on a dashboard tile or report visual.
 
 ## Working in full screen mode
 
@@ -69,29 +73,20 @@ Full screen mode is available for dashboards, report pages, and report visuals.
 - To see a visual in full screen mode, first open it in focus mode and then select **View** > **Full screen**.  
 
 
-Your selected content fills the entire screen.    Once you're in full screen mode, moving  your mouse or cursor reveals a contextual menu. Because full screen is available for such a wide variety of content, the options in the contextual menu are each a little different but fairly self-explanatory.  Simply hover over an icon for a definition.
+Your selected content fills the entire screen. Once you're in full screen mode, navigate using either the menu bars at the top and bottom (reports) or the menu that appears when you move your cursor (dashboards and visuals). Because full screen is available for such a wide variety of content, the navigation options vary.   
 
-Menu for dashboards    
-![Menu for dashboards](media/end-user-focus/power-bi-full-screen-dash.png)    
 
-Menu for report pages and report visuals    
-![Menu for reports](media/end-user-focus/power-bi-report-full-screen.png)    
-
-  * ![Back icon](media/end-user-focus/power-bi-back-icon.png)    
-  Use the **Back** button  to navigate to the previous page in your browser. If the previous page was a Power BI page, it too will display in full screen mode.  Full screen mode will persist until you exit out.
-
-  * ![Print icon](media/end-user-focus/power-bi-print-icon.png)    
-  Use this button to print your dashboard or report page in full screen mode.
+  * Select the **Back**, **Go back**, or **Back to report** button  to navigate to the previous page in your browser. If the previous page was a Power BI page, it too will display in full screen mode.  Full screen mode will persist until you exit out.
 
   * ![Fit to screen icon](media/end-user-focus/power-bi-fit-to-screen-icon.png)    
     Use the **Fit to screen** button to display your dashboard at the largest size possible without resorting to scrollbars.  
 
-    ![Fit to screen](media/end-user-focus/power-bi-fit-screen.png)
+    ![Screenshot showing hos fit to screen appears](media/end-user-focus/power-bi-fit-screen.png)
 
   * ![Fit to width icon](media/end-user-focus/power-bi-fit-width.png)       
     Sometimes you don't care about scrollbars, but want the dashboard to fill the entire width of the available space. Select the **Fit to width** button.    
 
-    ![Fit to screen icon](media/end-user-focus/power-bi-fit-to-width-new.png)
+    ![Screenshot showing how Fit to width changes the appearance of the canvas. ](media/end-user-focus/power-bi-fit-to-width-new.png)
 
   * ![Report navigation icon](media/end-user-focus/power-bi-report-nav2.png)       
     In full screen reports, use these arrows to move between the pages in the report.    
@@ -106,32 +101,30 @@ Focus mode is available for dashboards tiles and report visuals.
 
 - To open a dashboard tile in focus mode, hover over a dashboard tile or report visual, select **More options** (...) and choose **Open in focus mode**.
 
-    ![ellipsis menu for tile](media/end-user-focus/power-bi-dashboard-focus.png).. 
+    ![ellipsis menu for tile](media/end-user-focus/power-bi-focus-dashboard.png).. 
 
 - To open a report visual in focus mode, hover over the visual and select the **focus mode** icon ![focus mode icon](media/end-user-focus/pbi_popout.jpg).  
 
-   ![focus icon displays on tile](media/end-user-focus/power-bi-hover-focus-icon.png)
+   ![focus icon displays on tile](media/end-user-focus/power-bi-hover-focus.png)
 
 
 
-The visual opens and fills the entire canvas. Notice that you still have a **Filters** pane that you can use to interact with the visual. The **Filters** pane and the navigation pane can be collapsed.
+The visual opens and fills the entire canvas. Notice that you still have a **Filters** pane that you can use to interact with the visual. The **Filters** pane can be collapsed.
 
-   ![tile fills report canvas](media/end-user-focus/power-bi-focus-filter.png)
+   ![tile fills report canvas](media/end-user-focus/power-bi-filter.png)
 
 
-   ![tile fills report canvas and both menus collapsed](media/end-user-focus/power-bi-menu-collapse.png)  
+   ![tile fills report canvas and both menus collapsed](media/end-user-focus/power-bi-filter-collapse.png)  
 
-Explore further by [modifying the filters](end-user-report-filter.md) and looking for interesting discoveries in your data.  
-
-Dig into the data looking for new insights and answers to questions. As a *consumer*, you can't add new filters, change the fields being used in the visuals, or create new visuals.  However, you can interact with the existing filters. 
+Explore further by [modifying the filters](end-user-report-filter.md) and looking for interesting discoveries in your data. As a *business user*, you can't add new filters, change the fields being used in the visuals, or create new visuals.  However, you can interact with the existing filters. 
 
 For a dashboard tile, your changes can't be saved. For a report visual, any modifications you make to the existing filters are saved when you exit Power BI. If  you don't want Power BI to remember your modifications, select **Reset to default**. ![reset to default button](media/end-user-focus/power-bi-resets.png)  
 
-Leave focus mode and return to the dashboard by selecting either **Exit focus mode**  or **Back to report** (in the upper left corner of the visual).
+Leave focus mode and return to the dashboard or report by selecting either **Exit focus mode**,  or **Back to report** (in the upper left corner of the visual).
 
-![leave focus mode](media/end-user-focus/power-bi-exit.png)    
+![Exit focus mode button](media/end-user-focus/power-bi-exit.png)    
 
-![leave focus mode](media/end-user-focus/power-bi-back-to-report.png)  
+![Back to report icon](media/end-user-focus/power-bi-back-to-report.png)  
 
 ## Considerations and troubleshooting
 

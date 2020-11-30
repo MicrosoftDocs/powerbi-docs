@@ -5,7 +5,7 @@ author: KesemSharabi
 ms.author: kesharab
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/30/2018
 ---
 
@@ -27,9 +27,9 @@ The current Power BI Workspace Collection will continue to be available for a li
 Before you get started migrating to the new Power BI Embedded, you can quickly go through a walkthrough that helps you set up your new Power BI Embedded environment using the [Embedding setup tool](https://aka.ms/embedsetup).
 
 Choose the solution that is right for you:
-* **Embed for your customers** - when you are interested in an [app owns data](https://aka.ms/embedsetup/AppOwnsData) solution. [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. 
+* **Embed for your customers** - when you are interested in an *app owns data* solution. [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. 
 
-* **Embed for your organization** - when you are interested in a [user owns data](https://aka.ms/embedsetup/UserOwnsData) solution. [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service.
+* **Embed for your organization** - when you are interested in a *user owns data* solution. [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service.
 
 ## Prepare for the migration
 
@@ -43,7 +43,7 @@ There are a few things you need to do to prepare for migrating from Power BI Wor
    * Use a separate tenant for your application?
    * Use a separate tenant for each customer?
 
-     If you decide to create a new tenant for your application, or each customer, see [Create an Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) or [How to get an Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant).
+     If you decide to create a new tenant for your application, or each customer, see [Create an Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) or [How to get an Azure Active Directory tenant](/azure/active-directory/develop/active-directory-howto-tenant).
 2. Create a user within this new tenant that will act as your application "master" account. That account needs to sign up for Power BI and needs to have a Power BI Pro license assigned to it.
 
 ## Accounts within Azure AD
@@ -53,7 +53,7 @@ The following accounts will need to exist within your tenant.
 > [!NOTE]
 > These accounts will need to have Power BI Pro licenses in order to use workspaces.
 
-1. A tenant admin user.
+1. A Power BI admin.
 
     It is recommended that this user be a member of all workspaces created for the purpose of embedding.
 
@@ -163,7 +163,7 @@ In addition to the content you migrated from the Power BI Workspace Collection, 
 ## Rebuild your application
 
 1. You will need to modify your application to use the Power BI REST APIs and the report location inside powerbi.com.
-2. Rebuild your AuthN/AuthZ authentication using the *master* account for your application. You can take advantage of using an [embed token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) to allow this user to act on behalf of other users.
+2. Rebuild your AuthN/AuthZ authentication using the *master* account for your application. You can take advantage of using an [embed token](/rest/api/power-bi/embedtoken) to allow this user to act on behalf of other users.
 3. Embed your reports from powerbi.com into your application.
 
 ## Map your users to a Power BI user
@@ -175,7 +175,7 @@ Within your application, you will map users that you manage within the applicati
 When you are ready to move to production, you will need to do the following.
 
 * If you are using a separate tenant for development, then you will need to make sure your workspaces, along with dashboards and reports, are available in your production environment. You will also need to make sure that you created the application in Azure AD for your production tenant and assigned the proper app permissions as indicated in Step 1.
-* Purchase a capacity that fits your needs. To better understand how the amount and type of capacity you need, see the [Power BI Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper). You can [purchase capacity](https://portal.azure.com/#create/Microsoft.PowerBIDedicated) in Azure.
+* Purchase a capacity that fits your needs. To better understand how the amount and type of capacity you need, see the [Power BI Embedded analytics capacity planning whitepaper](./embedded-capacity-planning.md). You can [purchase capacity](https://portal.azure.com/#create/Microsoft.PowerBIDedicated) in Azure.
 * Edit the workspace and assign it to a Premium capacity under advanced.
 
     ![Premium capacity](media/migrate-from-powerbi-embedded/powerbi-embedded-premium-capacity02.png)
@@ -199,7 +199,7 @@ You should do some cleanup within Azure.
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
-[Workspace Collection analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper)  
+[Workspace Collection analytics capacity planning whitepaper](./embedded-capacity-planning.md)  
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

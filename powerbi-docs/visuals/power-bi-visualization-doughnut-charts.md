@@ -1,12 +1,12 @@
 ---
 title: Doughnut charts in Power BI
 description: 'Doughnut charts in Power BI'
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: 'mihart'
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/05/2020
 ms.author: rien
 

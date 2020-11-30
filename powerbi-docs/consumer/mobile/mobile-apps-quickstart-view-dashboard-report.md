@@ -21,7 +21,7 @@ Applies to:
 | iPhone | iPad | Android | Windows 10 |
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 A dashboard is a portal to your company's life cycle and processes. It is an overview, a single place to monitor the current state of the business. Reports are interactive views of your data, with visuals representing different findings and insights from that data. 
 
@@ -64,7 +64,7 @@ Once you've completed the prerequisites and downloaded the Retail Analysis Sampl
 
 10. Swipe up to see a toolbar across the bottom, and tap **More options (...)**.
 
-    ![Tap the pencil](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-pencil.png)
+    ![Screenshot shows the location of the More options control in the lower right corner.](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-pencil.png)
 
 
 11. Scroll down the list and select **Annotate**.
@@ -108,4 +108,3 @@ In this quickstart, you explored a sample dashboard and report on your mobile de
 
 > [!div class="nextstepaction"]
 > [Quickstart: Getting around in the Power BI service](../end-user-experience.md)
-

@@ -6,8 +6,8 @@ ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
-ms.date: 02/13/2020
+ms.topic: how-to
+ms.date: 10/15/2020
 ms.author: maggies
 
 LocalizationGroup: Visualizations
@@ -130,8 +130,7 @@ Another way to add hyperlinks to your Power BI tables and matrixes is to create 
 URLS must start with one of the following:
 - http
 - https
-- -mailto
-- file
+- mailto
 - ftp
 - news
 - telnet

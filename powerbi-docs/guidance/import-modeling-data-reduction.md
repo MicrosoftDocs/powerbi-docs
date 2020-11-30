@@ -80,7 +80,7 @@ However, in some instances, model calculated columns may be the better choice. I
 
 Power Query queries that are intended support data integration with other queries should not be loaded to the model. To avoid loading the query to the model, take care to ensure that you disable query load in these instances.
 
-![Disabling the load for a Power Query query](media/import-modeling-data-reduction/power-query-disable-query-load.png)
+![Screenshot of Power Query showing "Enable load" option.](media/import-modeling-data-reduction/power-query-disable-query-load.png)
 
 ## Disable auto date/time
 

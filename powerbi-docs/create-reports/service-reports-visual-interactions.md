@@ -6,7 +6,7 @@ ms.reviewer: ''
 featuredvideoid: N_xYsCbyHPw
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/04/2020
 ms.author: mihart
 

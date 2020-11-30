@@ -5,8 +5,9 @@ author: paulinbar
 ms.reviewer: 
 
 ms.service: powerbi
-ms.topic: conceptual
-ms.date: 04/13/2020
+ms.subservice: powerbi-eim
+ms.topic: how-to
+ms.date: 06/15/2020
 ms.author: painbar
 
 LocalizationGroup: 

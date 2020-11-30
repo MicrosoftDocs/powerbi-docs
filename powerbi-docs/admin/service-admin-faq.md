@@ -52,7 +52,7 @@ This article addresses frequently asked questions for Power BI administration. F
 
 ### Using PowerShell
 
-Some of the procedures in this section require Windows PowerShell scripts. If you're not familiar with PowerShell, we recommend the [PowerShell getting started guide](https://go.microsoft.com/fwlink/p/?LinkID=286814). To run the scripts, first install the latest 64-bit version of the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/).
+Some of the procedures in this section require Windows PowerShell scripts. If you're not familiar with PowerShell, we recommend the [PowerShell getting started guide](/powershell/scripting/overview). To run the scripts, first install the latest 64-bit version of the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/overview).
 
 ### How do users sign up for Power BI?
 
@@ -127,7 +127,7 @@ Use the following PowerShell script to disable ad hoc subscriptions.([Learn more
      connect-msolservice -credential $msolcred
     ```
 
-   ![Screenshot of Azure Active Directory sign in through PowerShell](media/service-admin-licensing-organization/azure-ad-sign-in.png)
+   ![Screenshot of the Azure Active Directory sign in through PowerShell.](media/service-admin-licensing-organization/azure-ad-sign-in.png)
 
 1. Once you sign in, run the following command to see how your tenant is currently set up.
 
@@ -262,4 +262,4 @@ Microsoft built Power BI on the foundation of Microsoft 365, which in turn build
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
-[1]: https://docs.microsoft.com/powershell/scripting/overview
+[1]: /powershell/scripting/overview

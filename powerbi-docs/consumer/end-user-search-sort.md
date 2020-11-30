@@ -2,18 +2,18 @@
 title: Search and find your content using global search
 description: documentation for searching, finding, and navigating content in Power BI service
 author: mihart
-ms.reviewer: 'willt'
+ms.reviewer: willt
 ms.custom: 
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 03/11/2020
+ms.topic: how-to
+ms.date: 10/01/2020
 ms.author: mihart
 
 LocalizationGroup: Get started
 ---
-# Navigation for Power BI consumers: global search
+# Navigation for Power BI business users: global search
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
@@ -25,9 +25,9 @@ When you're new to the Power BI service, you'll have only a few pieces of conten
 ## Searching for content
  Search is available from almost every part of the Power BI service. Just look for the search box or search icon ![magnifying glass icon](./media/end-user-search-sort/power-bi-search-icon.png).
 
- In the Search field, type all or part of the name of a dashboard, report, workbook, app, or owner. Power BI searches all of your content. 
+ In the Search field, type all or part of the name of a dashboard, report, workbook, workspace, app, or owner. Power BI searches all of your content. 
 
- ![search for a report](./media/end-user-search-sort/power-bi-search-field.png) 
+ ![Screenshot shows the search field with the word Procurement entered.](./media/end-user-search-sort/power-bi-search-field.png) 
 
  In some areas of Power BI, such as workspaces, you'll find two different search fields. The search field in the menu bar searches all of your content while the search field on the workspace canvas searches only that workspace.
 
@@ -35,26 +35,31 @@ When you're new to the Power BI service, you'll have only a few pieces of conten
 
 ## Sorting content lists
 
-If you only have a few pieces of content, sorting may not be necessary.  But when you have long lists of dashboards and reports, sorting will help you find what you need. For example, this **Shared with me** content list has 63 items. 
+If you only have a few pieces of content, sorting may not be necessary.  But when you have long lists of dashboards and reports, sorting will help you find what you need. For example, this **Shared with me** content list has 70 items. 
 
-![shared with me content list](./media/end-user-search-sort/power-bi-long-lists.png)
+![shared with me content list](./media/end-user-search-sort/power-bi-a-to-z.png)
 
-Right now, this content list is sorted by date, from newest to oldest. To change the sort criteria, select the arrow to the right of **Date (Newest)**.
+Right now, this content list is sorted alphabetical by name, from Z to A. To change the sort criteria, select the arrow to the right of **Name (A-Z)**.
 
-![Sort dropdown menu](./media/end-user-search-sort/power-bi-sort-date.png)
+![Sort dropdown menu](./media/end-user-search-sort/power-bi-sort-z-to-a.png)
 
 
-Sorting is also available in workspaces. In this example, the content is sorted by **Refreshed** date. To set sorting criteria for workspaces, select column headers and select once to select that header and select again to change sorting direction. 
+Sorting is also available in workspaces. In this example, the content is sorted by **Refreshed** date. To set sorting criteria for workspaces, select column headers and select again to change sorting direction. 
 
-![search for a report](./media/end-user-search-sort/power-bi-workspace-sort.png)
+
+![search for a report](./media/end-user-search-sort/power-bi-refreshed.png)
 
 Not all columns can be sorted. Hover over the column headings to discover which can be sorted.
 
+## Filtering content lists
+Another way to locate content quickly is by using the content list **Filters**. Display the filters by selecting **Filters** from the upper right corner. The filters available will depend on your location in the Power BI service.  The example below is from a **Recent** content list.  It allows you to filter the list by content type.  On a **Shared with me** content list, the **Filters** available include Owner as well as content type.
 
-## Considerations and troubleshooting
-* For datasets, **Sort by** isn't available by owner.
+![Screenshot of filter on content list.](./media/end-user-search-sort/power-bi-sort-filters.png)
+
 
 ## Next steps
 [Sort visuals in reports](end-user-change-sort.md)
+
+[Sorting data in visuals](end-user-change-sort.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

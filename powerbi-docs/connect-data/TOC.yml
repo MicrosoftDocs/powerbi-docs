@@ -26,12 +26,8 @@
       href: desktop-tutorial-facebook-analytics.md
     - name: "Implement row-level security in an Analysis Services tabular model"
       href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
-    - name: "Get started with Power BI"
-      href: ../fundamentals/service-get-started.md
     - name: "Connect to a GitHub sample"
       href: service-tutorial-connect-to-github.md
-    - name: "Use Analyze in Excel"
-      href: ../collaborate-share/service-tutorial-analyze-in-excel.md
     - name: "Use Cognitive Services"
       href: service-tutorial-use-cognitive-services.md
     - name: "Machine Learning integration"
@@ -46,7 +42,7 @@
       href: power-bi-data-sources.md
     - name: "Power BI data source prerequisites"
       href: desktop-data-source-prerequisites.md
-    - name: "Using enhanced dataset metadata in Power BI Desktop (preview)"
+    - name: "Using enhanced dataset metadata in Power BI Desktop"
       href: desktop-enhanced-dataset-metadata.md      
     - name: "Work with multidimensional models in Power BI"
       href: desktop-default-member-multidimensional-models.md            
@@ -66,6 +62,8 @@
       items: 
       - name: "Connect to data sources"
         href: desktop-data-sources.md
+      - name: "Use dynamic M query parameters"
+        href: desktop-dynamic-m-query-parameters.md        
       - name: "Create a report on a SharePoint List"
         href: desktop-sharepoint-online-list.md
       - name: "Connect to LinkedIn Sales Navigator"
@@ -94,6 +92,8 @@
           href: desktop-python-ide.md
         - name: "Create visuals with Python"
           href: desktop-python-visuals.md
+        - name: "Learn which Python packages are supported"
+          href: service-python-packages-support.md
       - name: "Run R scripts"
         href: desktop-r-scripts.md
       - name: "Use R in Query Editor"
@@ -156,8 +156,6 @@
       items: 
       - name: "Getting data from files"
         href: service-get-data-from-files.md
-      - name: "From Excel to stunning report"
-        href: service-from-excel-to-stunning-report.md
       - name: "Get data from Excel workbook files"
         href: service-excel-workbook-files.md
       - name: "Get data from Power BI Desktop files"
@@ -186,12 +184,6 @@
         href: service-datasets-copy-reports.md
       - name: "Control the use of datasets"
         href: service-datasets-admin-across-workspaces.md
-    - name: Endorse datasets
-      items: 
-      - name: "Promote datasets"
-        href: service-datasets-promote.md
-      - name: "Certify datasets"
-        href: service-datasets-certify.md
     - name: Get data from databases
       items: 
       - name: "Azure and Power BI"
@@ -274,8 +266,6 @@
         href: service-connect-to-pbi-premium-capacity-metrics.md
       - name: "Project Online"
         href: service-connect-to-project-online.md
-      - name: "QuickBooks Online"
-        href: service-connect-to-quickbooks-online.md
       - name: "Regional Emergency Response Dashboard"
         href: service-connect-to-regional-emergency-response.md
       - name: "Salesforce"
@@ -294,7 +284,7 @@
         href: service-gateway-personal-mode.md
       - name: "Manage gateway data sources"
         items:
-        - name: "Manage data sources"
+        - name: "Add or remove a gateway data source"
           href: service-gateway-data-sources.md
         - name: "Manage your enterprise data source - Analysis Services"
           href: service-gateway-enterprise-manage-ssas.md

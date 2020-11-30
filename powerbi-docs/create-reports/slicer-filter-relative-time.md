@@ -5,8 +5,8 @@ author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
-ms.date: 04/22/2020
+ms.topic: how-to
+ms.date: 07/06/2020
 ms.author: maggies
 LocalizationGroup: Create reports
 ---
@@ -17,18 +17,12 @@ LocalizationGroup: Create reports
 
 With emerging fast refresh scenarios, the ability to filter to a smaller window of time can be useful. Using the relative time slicer or relative time filter, you can apply time-based filters to any date or time column in your data model. For example, you can use the relative time slicer to show only video views within the last minute or hour. 
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time.gif" alt-text="Relative time example":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time.gif" alt-text="Screenshot of relative time example.":::
 
 You don't have to use the feature in conjunction with the [automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) feature. However, many relative time scenarios pair well with the automatic page refresh feature.  
 
 > [!NOTE]
 > When you apply a relative time filter or slicer at the page or report level, all visuals on that page or report are filtered to the exact same time range, using a shared *anchor* time. Because visuals might have slightly different execution times, this shared anchor time ensures that visuals are synchronized across your page or across your report. Read more about [anchor time](#understanding-anchor-time) in this article.
-
-## Turn on relative time preview
-
-The relative time filter is in preview, so you need to turn on the feature switch. Go to **File** > **Options and Settings** > **Options**. Under **Global settings** > **Preview features**, make sure **Relative time filter** is selected.
-
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set-preview.png" alt-text="Set the relative time preview option":::
 
 ## Create a relative time slicer or filter
 
@@ -40,7 +34,7 @@ After you've enabled the feature, you can drag and drop the date or time field t
 
 2. Select the **Slicer** visualization type.
 
-    :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-create-slicer.png" alt-text="Create a time slicer":::
+    :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-create-slicer.png" alt-text="Screenshot of creating a time slicer.":::
 
 ### Create a filter
  
@@ -50,27 +44,27 @@ After you've enabled the feature, you can drag and drop the date or time field t
 
 Next, you change the filter type to **Relative Time**.
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set.png" alt-text="Changet to relative time":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set.png" alt-text="Screenshot of changing to relative time.":::
  
 Here’s how it looks in a slicer:
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-slicer.png" alt-text="Relative time in a slicer":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-slicer.png" alt-text="Screenshot of relative time in a slicer.":::
 
 Here’s how it looks in a filter card: 
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-filter.png" alt-text="Relative time in a filter":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-filter.png" alt-text="Screenshot of relative time in a filter.":::
  
-With this new filter type, you have the option to filter based on **Last**, **Next**, or **This time period**: 
+With this new filter type, you can filter based on **Last**, **Next**, or **This time period**: 
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-last-next.png" alt-text="Choose Last, Next, or This time period":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-last-next.png" alt-text="Screenshot of choosing Last, Next, or This time period.":::
  
 You specify the time window using a whole number and a unit of time: **Minutes** or **Hours**.
  
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-minutes-hours.png" alt-text="Choose minutes or hours":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-minutes-hours.png" alt-text="Screenshot of choosing minutes or hours.":::
 
 If you need to save space on the canvas, you can also create the relative time filter as a filter card in the Filters pane.
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set-filter.png" alt-text="Set relative time in a filter instead":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set-filter.png" alt-text="Screenshot of setting relative time in a filter instead.":::
  
 ## Understanding anchor time
 
@@ -91,12 +85,9 @@ When a filter is applied to the page or report level, all visuals on that page o
 The following limitations and considerations currently apply to the relative time slicer and filter.
 
 - **Time zone considerations**: Data models in Power BI don't include time zone info. The models can store times, but there's no indication of the time zone they're in. The slicer and filter are always based on the time in UTC. If you set up a filter in a report and send it to a colleague in a different time zone, you both see the same data. Unless you or your colleague are in the UTC time zone, you both must account for the time offset you’ll experience. Use the Query Editor to convert data captured in a local time zone to UTC.
-- This new filter type is supported in Power BI Desktop, the Power BI service, Power BI Embedded, and the Power BI mobile apps. However, there are a few known support limitations:
+- This new filter type is supported in Power BI Desktop, the Power BI service, Power BI Embedded, and the Power BI mobile apps. However, it isn't supported for Publish to web.
 
-    - It isn't supported through the Embed API.
-    - It isn't supported for Publish to web.
-
-- **Query caching**: We utilize the client cache. Therefore, say you specify "last 1 minute," then "last 5 minutes," then back to "last 1 minute." At that point, you see the same results as when it was first run, unless you refresh the page or the page automatically refreshes.
+- **Query caching**: We use the client cache. Say you specify "last 1 minute," then "last 5 minutes," then back to "last 1 minute." At that point, you see the same results as when it was first run, unless you refresh the page or the page automatically refreshes.
 
 ## Next steps
 

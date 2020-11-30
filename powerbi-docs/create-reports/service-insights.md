@@ -1,5 +1,5 @@
 ---
-title: Generate data insights automatically with Power BI
+title: Generate data insights on your dataset automatically
 description: Learn how to get insights about your datasets and dashboard tiles.
 author: maggiesMSFT
 ms.reviewer: ''
@@ -7,25 +7,25 @@ featuredvideoid: et_MLSL2sA8
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 08/06/2019
+ms.topic: how-to
+ms.date: 09/28/2020
 ms.author: maggies
 
 LocalizationGroup: Dashboards
 ---
-# Generate data insights automatically with Power BI
-Do you have a new dataset and aren't quite sure where to start?  Need to build a dashboard quickly?  Want to look for insights you may have missed?
+# Generate data insights on your dataset automatically with Power BI
+Do you have a new dataset and aren't sure where to start?  Need to build a dashboard quickly?  Want to look for insights you may have missed?
 
-Run quick insights to generate interesting interactive visualizations based on your data. Quick insights can be run on an entire dataset (quick insights) or on a specific dashboard tile (scoped insights). You can even run insights on an insight!
+Run quick insights to generate interesting visualizations based on your data. This article explains how to run quick insights on an entire dataset (quick insights). You can also run [quick insights on a specific dashboard tile](../consumer/end-user-insights.md) (scoped insights). You can even run insights on an insight!
 
 > [!NOTE]
 > Insights doesn't work with DirectQuery; it only works with data uploaded to Power BI.
 > 
 
-The insights feature is built on a growing [set of advanced analytical algorithms](../consumer/end-user-insight-types.md) developed in conjunction with Microsoft Research that we’ll continue to use to allow more people to find insights in their data in new and intuitive ways.
+We built the insights feature on a growing [set of advanced analytical algorithms](../consumer/end-user-insight-types.md) that we developed with Microsoft Research. We continue to use these algorithms to help more people to find insights in their data in new and intuitive ways. You might also be interested in learning how to [optimize your data for quick insights](service-insights-optimize.md).
 
 ## Run quick insights on a dataset
-Watch Amanda run quick insights on a dataset, open an insight in Focus mode, pin one of these insights as a tile on her dashboard, and then get insights for a dashboard tile.
+Watch Amanda run quick insights on a dataset and open an insight in Focus mode. Amanda pins an insight as a tile on the dashboard, then gets insights for a dashboard tile.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/et_MLSL2sA8" frameborder="0" allowfullscreen></iframe>
 
@@ -63,7 +63,7 @@ Now it's your turn. Explore insights by using the [Supplier Quality Analysis sam
     ![Insight Focus mode](media/service-insights/power-bi-insight-focus.png)
 3. In Focus mode you can:
    
-   * Filter the visualizations. If the **Filters** pane isn't already open, expand it by select the arrow on the right side of the window.
+   * Filter the visualizations. If the **Filters** pane isn't already open, expand it by selecting the arrow on the right side of the window.
 
        ![Insight Filters menu expanded](media/service-insights/power-bi-insights-filter-new.png)
    * Pin the insight card to a dashboard by selecting **Pin visual**.
@@ -71,20 +71,10 @@ Now it's your turn. Explore insights by using the [Supplier Quality Analysis sam
      
        ![Get Insights icon](media/service-insights/pbi-autoinsights-tile.png)
      
-     The insight displays on the left and new cards, based solely on the data in that single insight, display along the right.
+     The insight displays on the left. New cards, based solely on the data in that single insight, display along the right.
      
        ![Insights on insights](media/service-insights/power-bi-insights-on-insights-new.png)
 4. To return to the original insights canvas, in the top-left corner, select **Exit Focus mode**.
-
-## Run insights on a dashboard tile
-Instead of searching for insights against an entire dataset, narrow your search to do a scoped insight on the data that's used to create a single dashboard tile. 
-
-1. Open a dashboard.
-2. Hover over a tile. select **More options** (...), and then choose **View insights**. The tile opens in [Focus mode](../consumer/end-user-focus.md) with the insights cards displayed along the right.    
-   
-    ![Focus mode](media/service-insights/pbi-insights-tile.png)    
-3. Does one insight pique your interest? Select that insight card to dig further. The selected insight appears on the left and new insight cards, based solely on the data in that single insight, display along the right.    
-4. Continue digging into your data, and when you find an interesting insight, pin it to your dashboard by selecting **Pin visual** from the top-right corner.
 
 ## Next steps
 - If you own a dataset, [optimize it for Quick Insights](service-insights-optimize.md).

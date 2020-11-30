@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/02/2019
 ms.author: painbar
 
@@ -23,14 +23,14 @@ Applies to:
 
 Say a colleague has [tagged a barcode field in a report Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md) and shared the report with you. 
 
-![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
+![Screenshot of a product barcode scan, showing the scanner over the barcode of a colored beverage.](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
 
 When you scan a product barcode with the scanner in the Power BI app on your device, you see the report (or list of reports) with that barcode. You can open that report filtered to that barcode.
 
 ## Scan a barcode with the Power BI scanner
 1. On the navigation bar, tap **More options** (...) and then tap **Scanner**.
 
-    ![](media/mobile-apps-scan-barcode-iphone/power-bi-scanner.png)
+    ![Screenshot of the More options on the navigation pane, showing the scanner selection.](media/mobile-apps-scan-barcode-iphone/power-bi-scanner.png)
 
 2. If your camera is not enabled, you need to approve the Power BI app to use the camera. This is a one-time approval. 
 4. Point the scanner at a barcode on a product. You will see a list of reports associated with that barcode.
@@ -39,8 +39,8 @@ When you scan a product barcode with the scanner in the Power BI app on your dev
 ## Filter by other barcodes while in a report
 While looking at a report filtered by a barcode on your device, you may want to filter the same report by a different barcode.
 
-* If the barcode icon has a filter ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png), the filter is active and report Is already filtered by a barcode. 
-* If the icon doesn't contain a filter ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-unfiltered-icon.png), the filter isn't active and the report isn't filtered by a barcode. 
+* If the barcode icon has a filter ![Filtered icon](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png), the filter is active and report Is already filtered by a barcode. 
+* If the icon doesn't contain a filter ![Unfiltered icon](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-unfiltered-icon.png), the filter isn't active and the report isn't filtered by a barcode. 
 
 Either way, tap the icon to open a small menu with a floating scanner.
 

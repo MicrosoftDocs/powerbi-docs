@@ -7,7 +7,7 @@ featuredvideoid: lJKgWnvl6bQ
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: maggies
 
@@ -53,6 +53,11 @@ Now create your own dashboard by using one of the Power BI sample reports.
 Another option is to pin an entire report page to a dashboard, which is an easy way to pin more than one visualization at a time. When you pin an entire page, the tiles are *live*. That is, you can interact with them there on the dashboard. Changes you make to any of the visualizations in the report editor, like adding a filter or changing the fields used in the chart, are reflected in the dashboard tile as well.  
 
 For more information, see [Pin an entire report page](service-dashboard-pin-live-tile-from-report.md).
+
+> [!NOTE]
+> Some formatting options are not applied to visuals when they're pinned to a dashboard. Border, shadow, and background settings will be ignored in the pinned tile. For card visuals, the text used for the value is always shown in dashboards using the 'DIN' font family. 
+> 
+>
 
 ## Next steps
 - [Dashboards for Power BI service consumers](../consumer/end-user-dashboards.md)

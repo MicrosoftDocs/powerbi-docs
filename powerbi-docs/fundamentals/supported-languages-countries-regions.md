@@ -78,7 +78,7 @@ At this time, a few features are available in English only:
 Stay tuned as we work to bring additional features to other languages. 
 
 ### Choose your language in the Power BI service
-1. In the Power BI service, select the **Settings** icon ![Settings icon](media/supported-languages-countries-regions/pbi_settings_icon.png) > **Settings**.
+1. In the Power BI service, select the **Settings** icon ![Screenshot of Power B I service showing Settings icon.](media/supported-languages-countries-regions/pbi_settings_icon.png) > **Settings**.
 2. On the **General** tab > **Language**.
 3. Select your language > **Apply**.
 
@@ -88,25 +88,25 @@ Power BI detects your language based on the language preferences on your compute
 #### Internet Explorer (version 11)
 1. Click the **Tools** button in the top-right corner of your browser window:
    
-   ![Internet Explorer Tools button](media/supported-languages-countries-regions/languages1.png)
+   ![Screenshot of Internet Explorer showing the Tools button.](media/supported-languages-countries-regions/languages1.png)
 2. Click **Internet Options**.
 3. In the Internet Options dialog, on the General tab under Appearance, click the **Languages** button.
 
 #### Google Chrome (version 42)
 1. Click the menu button in the top-right corner of your browser window:
    
-   ![Chrome menu button](media/supported-languages-countries-regions/languages2.png)
+   ![Screenshot of Google Chrome showing the menu button.](media/supported-languages-countries-regions/languages2.png)
 2. Click **Settings**.
 3. Click **Show advanced settings**.
 4. Under Languages, click the **Language and input settings** button.
 5. Click **Add**, select a language, and click **OK**.
    
-   ![Chrome languages list](media/supported-languages-countries-regions/pbi_langs_enus.png)
+   ![Screenshot of Google Chrome showing the languages list.](media/supported-languages-countries-regions/pbi_langs_enus.png)
    
    The new language is at the end of the list. 
 6. Drag the new language to the top of the list, and click **Display Google Chrome in this language**.
    
-   ![Display Google Chrome in this language](media/supported-languages-countries-regions/pbi_langs_eses.png)
+   ![Screenshot of Google Chrome showing the display language.](media/supported-languages-countries-regions/pbi_langs_eses.png)
    
    You may need to close and reopen your browser to see the change.
 
@@ -126,10 +126,10 @@ You have two ways of getting Power BI Desktop: You can download it as a standalo
 
 3. In **Windows Settings**, select **Time & language**.
    
-     ![Windows settings dialog box](media/supported-languages-countries-regions/power-bi-service-windows-settings.png)
+     ![Screenshot of Power B I Desktop showing the Windows settings dialog box.](media/supported-languages-countries-regions/power-bi-service-windows-settings.png)
 4. Select **Language** and select a language. Select **Add a Windows display language in Microsoft Store** if necessary.
    
-     ![Windows language settings dialog box](media/supported-languages-countries-regions/power-bi-service-language-settings.png)
+     ![Screenshot of Power B I Desktop showing the Windows language settings dialog box.](media/supported-languages-countries-regions/power-bi-service-language-settings.png)
    
      The next time you start Power BI Desktop it will use the language you set as the default. 
 
@@ -148,7 +148,7 @@ Power BI Desktop gets its default number and date formatting from the Windows Re
 
 2. In **Windows Settings**, select **Time & language**.
    
-     ![Windows settings dialog box](media/supported-languages-countries-regions/power-bi-service-windows-settings.png)
+     ![Screenshot of Power B I Desktop showing the Windows settings dialog box.](media/supported-languages-countries-regions/power-bi-service-windows-settings.png)
 
 3. Select **Region** > **Additional date, time, and regional settings**.
 
@@ -163,13 +163,13 @@ Power BI Desktop gets its default number and date formatting from the Windows Re
     :::image type="content" source="media/supported-languages-countries-regions/power-bi-service-match-windows.png" alt-text="Match Windows display language":::
 
 ### Choose the locale for importing data into Power BI Desktop
-Whether you download Power BI Desktop or install it from the Windows Store, you can choose a locale for a specific report to be something other than the locale in your version of Power BI Desktop. The locale changes the way Power BI interprets data when it’s imported from your data source. For example, is "3/4/2017" interpreted as 3 April or March 4?
+Whether you download Power BI Desktop or install it from the Windows Store, you can choose a locale for a specific report to be something other than the locale in your version of Power BI Desktop. The locale changes the way Power BI interprets data when it's imported from your data source. For example, is "3/4/2017" interpreted as 3 April or March 4?
 
 1. In Power BI Desktop, go to **File** > **Options and settings** > **Options**.
 2. Under **Current file**, select **Regional Settings**.
 3. In the **Locale for import** box, select a different locale. 
    
-   ![Power BI Desktop Options dialog box](media/supported-languages-countries-regions/power-bi_supptdlangs-locale.png)
+   ![Screenshot of Power B I Desktop showing the Options dialog box.](media/supported-languages-countries-regions/power-bi_supptdlangs-locale.png)
 4. Select **OK**.
 
 ### Choose the language for the model in Power BI Desktop
@@ -180,7 +180,7 @@ Besides setting the language for the Power BI Desktop application, you can also 
 - The language Power BI Desktop uses when creating hidden date tables from date fields. For example, fields are called Month/Monat/Mois, and so on.
 
 > [!NOTE]
-> The Power BI model currently uses a locale that is not case-sensitive (or kana-sensitive) so “ABC” and “abc” will be treated as equivalent. If “ABC” is loaded into the database first, other strings that differ only by case such as “Abc” won’t be loaded as a separate value.
+> The Power BI model currently uses a locale that is not case-sensitive (or kana-sensitive) so "ABC" and "abc" will be treated as equivalent. If "ABC" is loaded into the database first, other strings that differ only by case such as "Abc" won't be loaded as a separate value.
 > 
 >
 
@@ -190,7 +190,7 @@ Here's how to set the model language.
 2. Under **Global**, select **Regional Settings**.
 3. In the **Model language** box, select a different language. 
 
-    ![Set model language in Power BI Desktop](media/supported-languages-countries-regions/power-bi-supported-model-languages.png)
+    ![Screenshot of Power B I Desktop showing how to set the model language.](media/supported-languages-countries-regions/power-bi-supported-model-languages.png)
 
 > [!NOTE]
 > Once created, the language of a Power BI model can't be changed.

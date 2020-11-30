@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: tutorial
+ms.topic: how-to
 ms.date: 05/11/2020
 ---
 
@@ -26,9 +26,9 @@ In this tutorial, you learn how to:
 ## Prerequisites
 
 * A **Power BI Pro** account. [Sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
-* The R engine. You can download it free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). For more information, see [Create Power BI visuals using R](../../desktop-r-visuals.md).
+* The R engine. You can download it free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). For more information, see [Create Power BI visuals using R](../../create-reports/desktop-r-visuals.md).
 * [Power BI Desktop](../../fundamentals/desktop-get-the-desktop.md).
-* [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell?view=powershell-6) version 4 or later for Windows users OR the [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) for OSX users.
+* [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell?view=powershell-6) version 4 or later for Windows users OR the [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) for OSX users.
 
 ## Getting started
 
@@ -73,7 +73,7 @@ When you use `pbiviz` to create the R-powered visual based on the `rvisual` temp
 
 1. In Power BI Desktop, select **R script visual**:
 
-   ![R visual in visualization pane](./media/create-r-based-power-bi-desktop/r-script-icon.png)
+   ![Screenshot shows the R script visual control in the Power B I Desktop.](./media/create-r-based-power-bi-desktop/r-script-icon.png)
 
 1. Paste this R code into the **R script editor**:
 
@@ -89,7 +89,7 @@ When you use `pbiviz` to create the R-powered visual based on the `rvisual` temp
 
 1. Select the **Run script** icon to see the result.
 
-    ![R visual in visualization pane](./media/create-r-based-power-bi-desktop/run-r-script.png)
+    ![Screenshot shows the result of running the script, which is a line plot.](./media/create-r-based-power-bi-desktop/run-r-script.png)
 
 1. When your R script is ready, copy it to the `script.r` file in your visual project created at one of the previous steps.
 
@@ -171,7 +171,7 @@ This procedure allows your visual to use the `corrplot` package.
 
 The result of using `corrplot` package looks like this example:
 
-![R visual in visualization pane](./media/create-r-based-power-bi-desktop/r-corrplot-result.png)
+![Screenshot shows the visualization pane with four ovals created by corrplot.](./media/create-r-based-power-bi-desktop/r-corrplot-result.png)
 
 ## Adding a static property to the property pane
 
@@ -278,6 +278,6 @@ Your final visual looks like the following example:
 
 ## Next steps
 
-To learn more about R-powered visuals, see [Use R-powered Power BI visuals in Power BI](../../desktop-r-powered-custom-visuals.md).
+To learn more about R-powered visuals, see [Use R-powered Power BI visuals in Power BI](../../create-reports/desktop-r-powered-custom-visuals.md).
 
-For more information about R-powered visuals in Power BI Desktop, see [Create Power BI visuals using R](../../desktop-r-visuals.md).
+For more information about R-powered visuals in Power BI Desktop, see [Create Power BI visuals using R](../../create-reports/desktop-r-visuals.md).

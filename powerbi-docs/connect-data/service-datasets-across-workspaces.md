@@ -1,11 +1,11 @@
 ---
 title: Intro to datasets across workspaces
-description: Learn how you can share a dataset with users across the organization. Then they can build reports based on your dataset in their own workspaces.
+description: Learn about dataset sharing and discovery for workspaces. Users across the organization can build reports based on your dataset in their own workspaces.
 author: maggiesMSFT
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/30/2020
 ms.author: maggies
 
@@ -17,7 +17,7 @@ Business intelligence is a collaborative activity. It's important to establish s
 
 ![Select a shared dataset](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
-In Power BI, dataset creators can control who has access to their data by using the [Build permission](service-datasets-build-permissions.md). Dataset creators can also *certify* or *promote* datasets so others can discover them. That way, report authors know which datasets are high quality and official, and they can use those datasets wherever they author in Power BI. Tenant administrators have a new tenant setting to [govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md).
+In Power BI, dataset creators can control who has access to their data by using the [Build permission](service-datasets-build-permissions.md). Dataset creators can also *certify* or *promote* datasets so others can discover them. That way, report authors know which datasets are high quality and official, and they can use those datasets wherever they author in Power BI. Admins have a new tenant setting to [govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md).
 
 ## Dataset sharing and the new workspace experience
 
@@ -42,7 +42,7 @@ With Build permission type, if you're a dataset creator you can determine who in
 
 ## Promotion and certification
 
-If you create datasets, when you create one that others can benefit from, you can make it easier for them to discover it by [promoting your dataset](service-datasets-promote.md). You can also request that experts in your organization [certify your dataset](service-datasets-certify.md).
+If you create datasets, when you create one that others can benefit from, you can make it easier for them to discover it by [promoting your dataset](../collaborate-share/service-endorse-content.md#promote-content). You can also request that experts in your organization [certify your dataset](../collaborate-share/service-endorse-content.md#request-content-certification).
 
 ## Licensing
 
@@ -64,7 +64,8 @@ The specific features and experiences built on shared dataset capabilities are l
 
 ## Next steps
 
-- [Promote datasets](service-datasets-promote.md)
-- [Certify datasets](service-datasets-certify.md)
+- [Promote datasets](../collaborate-share/service-endorse-content.md#promote-content)
+- [Certify datasets](../collaborate-share/service-endorse-content.md#certify-content)
+- [Request dataset certification](../collaborate-share/service-endorse-content.md#request-content-certification)
 - [Govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -31,8 +31,8 @@ In this tutorial, you learn how to:
 
 * A **Power BI Pro** account. [Sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 * [Visual Studio Code](https://www.visualstudio.com/).
-* [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell?view=powershell-6) version 4 or later for windows users OR the [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) for OSX users.
-* An environment as described in [Setting up the developer environment](custom-visual-develop-tutorial.md#setting-up-the-developer-environment).
+* [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell) version 4 or later for windows users OR the [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) for OSX users.
+* An environment as described in [Set up your environment for developing a Power BI visual](environment-setup.md).
 
 ## Getting started
 
@@ -304,7 +304,6 @@ You can render data using React. The component can display data from its own sta
                     textLabel: dataView.metadata.columns[0].displayName,
                     textValue: dataView.single.value.toString()
                 });
-            }
             } else {
                 this.clear();
             }

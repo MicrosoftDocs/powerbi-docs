@@ -6,8 +6,8 @@ ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
-ms.topic: conceptual
-ms.date: 10/10/2019
+ms.topic: how-to
+ms.date: 10/22/2020
 LocalizationGroup: Gateways
 ---
 
@@ -21,71 +21,132 @@ We currently support SAP HANA with SAML. For more information about setting up a
 
 We support additional data sources with [Kerberos](service-gateway-sso-kerberos.md) (including SAP HANA).
 
-For SAP HANA, it's recommended you enable encryption before you establish a SAML SSO connection. To enable encryption, configure the HANA server to accept encrypted connections and configure the gateway to use encryption to communicate with your HANA server. Because the HANA ODBC driver doesn't encrypt SAML assertions by default, the signed SAML assertion is sent from the gateway to the HANA server *in the clear* and is vulnerable to interception and reuse by third parties. For instructions about how to enable encryption for HANA with the OpenSSL library, see [Enable encryption for SAP HANA](/power-bi/desktop-sap-hana-encryption).
+For SAP HANA, it's recommended you enable encryption before you establish a SAML SSO connection. To enable encryption, configure the HANA server to accept encrypted connections and configure the gateway to use encryption to communicate with your HANA server. Because the HANA ODBC driver doesn't encrypt SAML assertions by default, the signed SAML assertion is sent from the gateway to the HANA server *in the clear* and is vulnerable to interception and reuse by third parties.
+
+> [!IMPORTANT]
+> SAP no longer supports the OpenSSL, and as a result, Microsoft also has discontinued its support. Existing and new connections will continue to work properly until the end of 2020, but will not work from January 1, 2021 onwards. Use CommonCryptoLib instead.
 
 ## Configuring the gateway and data source
 
-To use SAML, you must establish a trust relationship between the HANA servers for which you want to enable SSO and the gateway. In this scenario, the gateway serves as the SAML Identity Provider (IdP). There are various ways to establish this relationship, such as importing the gateway IdP's x509 certificate into the HANA servers' trust store, or by having the gateway's X509 certificate signed by a root Certification Authority (CA) trusted by the HANA servers. Although we describe the latter approach in this guide, you can use another approach if it's more convenient.
+To use SAML, you must establish a trust relationship between the HANA servers for which you want to enable SSO and the gateway. In this scenario, the gateway serves as the SAML Identity Provider (IdP). There are various ways to establish this relationship. SAP recommends you use the SAP Cryptographic Library (also known as CommonCryptoLib or sapcrypto) to complete the setup steps in which we establish the trust relationship. For more information, see the official SAP documentation.
 
-While this guide uses OpenSSL as the HANA server's cryptographic provider, SAP recommends you use the SAP Cryptographic Library (also known as CommonCryptoLib or sapcrypto) instead of OpenSSL to complete the setup steps in which we establish the trust relationship. For more information, see the official SAP documentation.
+The following steps describe how to establish a trust relationship between a HANA server and the gateway IdP by signing the gateway IdP's X509 certificate with a Root CA trusted by the HANA server. 
 
-The following steps describe how to establish a trust relationship between a HANA server and the gateway IdP by signing the gateway IdP's X509 certificate with a Root CA trusted by the HANA server. You'll create this Root CA:
+### Create the certificates
 
-1. Create the Root CA's X509 certificate and private key. For example, to create the Root CA's X509 certificate and private key in .pem format, enter this command:
+Take the following steps to create the certificates:
 
-   ```
-   openssl req -new -x509 -newkey rsa:2048 -days 3650 -sha256 -keyout CA_Key.pem -out CA_Cert.pem -extensions v3_ca
-   ```
-
-    Ensure that the Root CA's private key is secured properly. If it's obtained by a third party, it could be used to gain unauthorized access to the HANA server. 
-
- 1. Add the certificate (for example, CA_Cert.pem) to the HANA server's trust store so that the HANA server will trust any certificates signed by the Root CA you created. 
-
-    You can find the location of your HANA server's trust store by examining the **ssltruststore** configuration setting. If you've followed the instructions in the SAP documentation covering how to configure OpenSSL, your HANA server might already trust a Root CA you that can reuse. For more information, see [How to Configure Open SSL for SAP HANA Studio to SAP HANA Server](https://archive.sap.com/documents/docs/DOC-39571). If you have multiple HANA servers for which you want to enable SAML SSO, make sure that each of the servers trusts this Root CA.
-
-1. Create the gateway IdP's X509 certificate. 
-
-   For example, to create a certificate-signing request (IdP_Req.pem) and a private key (IdP_Key.pem) that are valid for a year, execute the following command:
+1. On the device that is running SAP HANA, create an empty folder to store your certificates, then navigate to that folder.
+2. Create the root certificates by running the following command:
 
    ```
-   openssl req -newkey rsa:2048 -days 365 -sha256 -keyout IdP_Key.pem -out IdP_Req.pem -nodes
+   openssl req -new -x509 -newkey rsa:2048 -days 3650 -sha256 -keyout CA_Key.pem -out CA_Cert.pem -extensions v3_ca'''
    ```
 
- 1. Sign the certificate-signing request by using the Root CA you've configured your HANA servers to trust. 
+    You must remember the passphrase to use this certificate to sign other certificates.
+    You should see *CA_Cert.pem* and *CA_Key.pem* being created.
 
-    For example, to sign IdP_Req.pem using CA_Cert.pem and CA_Key.pem (the certificate and key of the Root CA), execute the following command:
+   
+3. Create the IdP certificates by running the following command:
+ 
+    ```
+    openssl req -newkey rsa:2048 -days 365 -sha256 -keyout IdP_Key.pem -out IdP_Req.pem -nodes
+    ```
+    You should see *IdP_Key.pem* and *IdP_Req.pem* being created.
+
+4. Sign the IdP Certificates with the root certificates:
 
     ```
     openssl x509 -req -days 365 -in IdP_Req.pem -sha256 -extensions usr_cert -CA CA_Cert.pem -CAkey CA_Key.pem -CAcreateserial -out IdP_Cert.pem
     ```
+    You should see *CA_Cert.srl* and *IdP_Cert.pem* being created.
+    We are only concerned about the *IdP_Cert.pem*.    
 
-     The resulting IdP certificate is valid for a year (see the -days option). 
+### Create SAML identity provider certificate mapping
 
-Import your IdP's certificate in HANA Studio to create a new SAML Identity Provider:
+Create the SAML Identity Provider certificate mapping with the following steps.
 
-1. In SAP HANA Studio, right-click your SAP HANA server name, then navigate to **Security** &gt; **Open Security Console** &gt; **SAML Identity Provider** &gt; **OpenSSL Cryptographic Library**.
+1. In **SAP HANA Studio**, right-click your SAP HANA server name then navigate to **Security > Open Security Console > SAML Identity Provider**.
+2. If the SAP Cryptographic Library is not selected, select it. Do *not* use the OpenSSL Cryptographic Library (the selection on the left, in the following image), it is deprecated by SAP.
 
-    ![Identity providers](media/service-gateway-sso-saml/identity-providers.png)
+    ![Select the SAP Cryptographic Library](media/service-gateway-sso-saml/service-gateway-sso-saml-01.png)
 
-1. Select **Import**, navigate to IdP_Cert.pem, and import it.
+3. Import the signed certificate *IdP_Cert.pem* by clicking the blue import button, shown in the following image.
 
-1. In SAP HANA Studio, select the **Security** folder.
+    ![Select the blue import button](media/service-gateway-sso-saml/service-gateway-sso-saml-02.png)
 
-    ![Security folder](media/service-gateway-sso-saml/security-folder.png)
+Remember to assign a name to your *Identity Provider Name*.
 
-1. Expand **Users**, and then select the user you want to map your Power BI user to.
+### Import and create the signed certificates in HANA
 
-1. Select **SAML**, and then select **Configure**.
+Next, you'll import and create the signed certificates in HANA. Follow these steps:
 
-    ![Configure SAML](media/service-gateway-sso-saml/configure-saml.png)
+1. In **HANA Studio**, run the following query:
 
-1. Select the identity provider you created in step 2. For **External Identity**, enter the Power BI user's UPN (typically the email address the user uses to sign in to Power BI), and then select **Add**. If you've configured your gateway to use the *ADUserNameReplacementProperty* configuration option, enter the value that will replace the Power BI user's original UPN. 
+    ```
+    CREATE CERTIFICATE FROM '<idp_cert_pem_certificate_content>'
+    ```
+    
+    Here's an example:
 
-   For example, if you set *ADUserNameReplacementProperty* to **SAMAccountName** you should enter the user's **SAMAccountName**.
+    ```
+    CREATE CERTIFICATE FROM
+    '-----BEGIN CERTIFICATE-----
+    MIIDyDCCArCgA...veryLongString...0WkC5deeawTyMje6
+    -----END CERTIFICATE-----
+    '
+    ```
 
-    ![Select identity provider](media/service-gateway-sso-saml/select-identity-provider.png)
+2. If there is no PSEwith SAML Purpose, create one by running the following query in **HANA Studio**:
+    
+    ```
+    CREATE PSE SAMLCOLLECTION;<br>set pse SAMLCOLLECTION purpose SAML;<br>
+    ```
 
-Now that you have the gateway's certificate and identity configured, convert the certificate to a pfx format and configure the gateway to use the certificate:
+3. Add the newly created signed certificate to the PSE with the following command:
+
+    ```
+    alter pse SAMLCOLLECTION add CERTIFICATE <certificate_id>;
+    ```
+
+    For example:
+    ```
+    alter pse SAMLCOLLECTION add CERTIFICATE 1978320;
+    ```
+
+    You can check the list of certificated created with the following query:
+    ```
+    select * from PUBLIC"."CERTIFICATES"
+    ```
+
+    The certificate is now properly installed. You can run the following query to confirm:
+    ```
+    select * from "PUBLIC"."PSE_CERTIFICATES"
+    ```
+
+### Map the user
+
+Follow these steps to map the user:
+
+1. In **SAP HANA Studio**, select the **Security** folder:
+
+    ![Select the Security folder](media/service-gateway-sso-saml/service-gateway-sso-saml-03.png)
+
+2. Expand **Users**, and then select the user to whom you want to map your Power BI user.
+
+3. Select the **SAML** checkbox, and then select **Configure**, shown highlighted in the following image.
+
+    ![Select SAML then the Configure link](media/service-gateway-sso-saml/service-gateway-sso-saml-04.png)
+
+4. Select the identity provider you created in the [create SAML identity provider certificate mapping](#create-saml-identity-provider-certificate-mapping) section, earlier in this article. For External Identity, enter the Power BI user's UPN (typically the email address the user uses to sign in to Power BI), and then select **Add**.  The following image shows the options and selections.
+
+    ![Configure SAML identities window](media/service-gateway-sso-saml/service-gateway-sso-saml-05.png)
+
+    If you've configured your gateway to use the *ADUserNameReplacementProperty* configuration option, enter the value that will replace the Power BI user's original UPN. For example, if you set *ADUserNameReplacementProperty* to *SAMAccountName* enter the user's *SAMAccountName*.
+
+### Configure the gateway
+
+Now that you have the gateway's certificate and identity configured, convert the certificate to a pfx format and configure the gateway to use the certificate with the following steps.
 
 1. Convert the certificate to pfx format by running the following command. This command names the resulting .pfx file samlcert.pfx and sets *root* as its password:
 
@@ -93,35 +154,35 @@ Now that you have the gateway's certificate and identity configured, convert the
     openssl pkcs12 -export -out samltest.pfx -in IdP_Cert.pem -inkey IdP_Key.pem -passin pass:root -passout pass:root
     ```
 
-1. Copy the pfx file to the gateway machine:
+2. Copy the pfx file to the gateway machine:
 
-    1. Double-click samltest.pfx, then select **Local Machine** &gt; **Next**.
+    1. Double-click *samltest.pfx*, then select **Local Machine** > **Next**.
 
-    1. Enter the password, then select **Next**.
+    2. Enter the password, then select **Next**.
 
-    1. Select **Place all certificates in the following store,** then select **Browse** &gt; **Personal** &gt; **OK**.
+    3. Select **Place all certificates in the following store,** then select **Browse** > **Personal** > **OK**.
 
-    1. Select **Next**, and then **Finish**.
+    4. Select **Next**, and then **Finish**.
 
-       ![Import certificate](media/service-gateway-sso-saml/import-certificate.png)
+       ![Import certificate](media/service-gateway-sso-saml/service-gateway-sso-saml-06.png)
 
-1. Grant the gateway service account access to the private key of the certificate:
+3. Grant the gateway service account access to the private key of the certificate, with the following steps:
 
     1. On the gateway machine, run the Microsoft Management Console (MMC).
 
         ![Run MMC](media/service-gateway-sso-saml/run-mmc.png)
 
-    1. Under **File**, select **Add/Remove Snap-in**.
+    2. Under **File**, select **Add/Remove Snap-in**.
 
         ![Add snap-in](media/service-gateway-sso-saml/add-snap-in.png)
 
-    1. Select **Certificates** &gt; **Add**, then select **Computer account** &gt; **Next**.
+    3. Select **Certificates** > **Add**, then select **Computer account** > **Next**.
 
-    1. Select **Local Computer** &gt; **Finish** &gt; **OK**.
+    4. Select **Local Computer** > **Finish** > **OK**.
 
-    1. Expand **Certificates** &gt; **Personal** &gt; **Certificates**, and find the certificate.
+    5. Expand **Certificates** > **Personal** > **Certificates**, and find the certificate.
 
-    1. Right-click the certificate and navigate to **All Tasks** &gt; **Manage Private Keys**.
+    6. Right-click the certificate and navigate to **All Tasks** &gt; **Manage Private Keys**.
 
         ![Manage private keys](media/service-gateway-sso-saml/manage-private-keys.png)
 
@@ -137,13 +198,13 @@ Finally, follow these steps to add the certificate thumbprint to the gateway con
     Get-ChildItem -path cert:\LocalMachine\My
     ```
 
-1. Copy the thumbprint for the certificate you created.
+2. Copy the thumbprint for the certificate you created.
 
-1. Navigate to the gateway directory, which by default is C:\Program Files\On-premises data gateway.
+3. Navigate to the gateway directory, which by default is *C:\Program Files\On-premises data gateway*.
 
-1. Open PowerBI.DataMovement.Pipeline.GatewayCore.dll.config, and find the *SapHanaSAMLCertThumbprint* section. Paste the thumbprint you copied.
+4. Open *PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*, and find the *SapHanaSAMLCertThumbprint* section. Paste the thumbprint you copied.
 
-1. Restart the gateway service.
+5. Restart the gateway service.
 
 ## Running a Power BI report
 

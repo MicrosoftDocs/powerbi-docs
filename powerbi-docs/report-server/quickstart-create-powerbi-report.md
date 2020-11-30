@@ -6,8 +6,8 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-report-server
-ms.topic: conceptual
-ms.date: 02/03/2020
+ms.topic: how-to
+ms.date: 07/24/2020
 ms.author: maggies
 
 ---
@@ -36,13 +36,13 @@ If you've already created Power BI reports in Power BI Desktop, then you're almo
 
     - **PBIDesktopRS_x64.msi** (the 64-bit version).
 
-4. After you download the installer, run the Power BI Desktop (September 2019) Setup Wizard.
+4. After you download the installer, run the Power BI Desktop Setup Wizard.
 
 2. At the end of the installation, check **Start Power BI Desktop now**.
    
-    It starts automatically and you're ready to go. You can tell you have the right version because **Power BI Desktop (September 2019)** is in the title bar.
+    It starts automatically and you're ready to go. You can tell you have the right version because **Power BI Desktop (October 2020)** is in the title bar.
 
-    ![Power BI Desktop September 2019](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-sept-2019.png)
+    ![Power BI Desktop October 2020](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-may-2020.png)
 
 3. If you're not familiar with Power BI Desktop, consider watching the videos on the welcome screen.
    

@@ -7,8 +7,8 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 05/04/2020
+ms.topic: how-to
+ms.date: 07/16/2020
 LocalizationGroup: Reports
 ---
 
@@ -16,7 +16,9 @@ LocalizationGroup: Reports
 
 When you open a report in Power BI service, each page of the report has its own unique URL. To filter that report page, you could use the Filters pane on the report canvas.  Or you could add query string parameters to the URL to pre-filter the report. Perhaps you have a report you'd like to show colleagues and you want to pre-filter it for them. One way to filter it is to start with the default URL for the report, add the filter parameters to the URL, and then email them the entire new URL.
 
-![Power BI report in the service](media/service-url-filters/power-bi-report2.png)
+This article uses the Retail Analysis Sample report. If you want to follow along, you can [download the sample report](../create-reports/sample-retail-analysis.md#get-the-sample).
+
+![Screenshot of Power BI report in the service.](media/service-url-filters/power-bi-retail-analysis-sample.png)
 
 ## Uses for query string parameters
 
@@ -30,18 +32,10 @@ With parameters, you can filter the report for one or more values, even if those
 
 *URL*?filter=*Table*/*Field* eq '*value*'
 
-![URL with filter](media/service-url-filters/power-bi-filter-urls7b.png)
+![Screenshot of U R L with filter.](media/service-url-filters/power-bi-filter-urls7b.png)
 
 * **Table** and **Field** names are case-sensitive, **value** isn't.
 * Fields that are hidden from report view can still be filtered.
-
-### Reports in apps
-
-If you want to add a URL filter to a report in an app, the formatting is a little different. Links to reports in an app have a query parameter (ctid) that gets added to the URL. Separate the query parameters with an ampersand (&). Keep “?filter=” and move the ctid parameter to the end of the URL, preceded by an ampersand (&). 
-
-Like this example:
-
-app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=*Table*/*Field* eq '*value*'&ctid=*ctid*
 
 ### Field types
 
@@ -57,27 +51,19 @@ If it's still confusing, continue reading and we'll break it down.
 
 Let’s assume that the URL to our report is the following.
 
-![starting URL](media/service-url-filters/power-bi-filter-urls6.png)
+![Screenshot of starting URL.](media/service-url-filters/power-bi-filter-urls6.png)
 
-And we see in our map visualization (above) that we have stores in North Carolina.
+And we see in our map visualization above that we have stores in North Carolina. *NC* is the value that represents North Carolina in the **Territory** field of the **Store** table. So to filter the report to show data only for stores in "NC", we append this string to the URL:
 
->[!NOTE]
->This example is based on the [Retail Analysis sample](../create-reports/sample-datasets.md).
-> 
-
-To filter the report to show data only for stores in "NC" (North Carolina), append the URL with the following;
-
+```
 ?filter=Store/Territory eq 'NC'
+```
 
-![URL with filter](media/service-url-filters/power-bi-filter-urls7.png)
+![Screenshot of U R L with filter for North Carolina.](media/service-url-filters/power-bi-filter-urls7.png)
 
->[!NOTE]
->*NC* is a value stored in the **Territory** field of the **Store** table.
-> 
+Our report is now filtered for North Carolina; all the visualizations in the report show data for only North Carolina.
 
-Our report is filtered for North Carolina; all the visualizations on the report page show data for only North Carolina.
-
-![Report filtered for North Carolina](media/service-url-filters/power-bi-report4.png)
+![Screenshot of Report filtered for North Carolina.](media/service-url-filters/power-bi-url-filter-nc.png)
 
 ## Filter on more than one value in a field
 
@@ -87,7 +73,9 @@ To filter on more than one value in a single field, you use the **in** operator 
 
 Using the same example, to filter the report to show data only for stores in "NC" (North Carolina) or "TN" (Tennessee), append the URL with the following;
 
+```
 ?filter=Store/Territory in ('NC', 'TN')
+```
 
 See the [Operators](#operators) table later in the article for a list of other useful operators.
 
@@ -163,11 +151,11 @@ Special characters and spaces in table and column names require some additional 
 |**Column+Plus**     | + is 0x2B        |  Column_x002B_Plus       |
 
 Table_x0020_Name/Column_x002B_Plus eq 3
-![table visual rendering special characters](media/service-url-filters/power-bi-special-characters1.png)
+![Screenshot of table visual rendering special characters for Unicode.](media/service-url-filters/power-bi-special-characters1.png)
 
 
 Table_x0020_Special/_x005B_Column_x0020_Brackets_x005D_ eq '[C]'
-![table visual rendering special characters](media/service-url-filters/power-bi-special-characters2.png)
+![Screenshot of table visual rendering special characters for coding for Power B I.](media/service-url-filters/power-bi-special-characters2.png)
 
 ### Special characters in values
 
@@ -197,7 +185,9 @@ TerritoryChain = [Territory] & " - " & [Chain]
 
 Publish the report to Power BI service and then use the URL query string to filter to display data for only Lindseys stores in NC.
 
-    https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq 'NC – Lindseys'
+```
+https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq 'NC – Lindseys'
+```
 
 ## Pin a tile from a filtered report
 
@@ -214,6 +204,7 @@ There are a couple of things to be aware of when using the query string paramete
     `https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'`
 * Report URL filters have a 10-expression limit (10 filters connected by AND).
 * The long data type is (2^53-1) due to JavaScript limitations.
+* Power BI doesn't limit the number of characters in URL query strings. Different browsers have different length restrictions.
 
 URL filters are supported in some embedding scenarios and not in others.
 

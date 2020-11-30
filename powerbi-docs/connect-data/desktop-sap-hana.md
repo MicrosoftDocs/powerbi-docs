@@ -1,19 +1,19 @@
 ---
-title: Use SAP HANA in Power BI Desktop
-description: Use SAP HANA in Power BI Desktop
+title: Use SAP HANA in Power BI
+description: Use SAP HANA in Power BI
 author: davidiseminger
 ms.reviewer: ''
 
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/15/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
 ---
-# Connect to SAP HANA databases in Power BI Desktop
+# Connect to SAP HANA databases in Power BI
 
 With Power BI Desktop, you can now access *SAP HANA* databases. To use SAP HANA, you must have the SAP HANA ODBC driver installed on the local client computer for the Power BI Desktop's SAP HANA data connection to work properly. You can download the SAP HANA Client tools from [SAP Development Tools](https://tools.hana.ondemand.com/#hanatools), which contains the necessary ODBC driver. Or you can get it from the [SAP Software Download Center](https://support.sap.com/en/my-support/software-downloads.html). In the Software portal, search for the *SAP HANA CLIENT* for Windows computers. Since the SAP Software Download Center changes its structure frequently, more specific guidance for navigating that site isn't available.
 
@@ -57,6 +57,7 @@ There are also a few limitations to using SAP HANA, shown below:
 * SMALLDECIMAL isn't supported.
 * VARBINARY isn't supported.
 * Valid Dates are between 1899/12/30 and 9999/12/31.
+* SAP HANA refresh with SSO is currently not supported for Excel workbook refreshes at the current time. To refresh the data in Power BI, you can use a Power BI report with SAP HANA SSO.
 
 ## Next steps
 

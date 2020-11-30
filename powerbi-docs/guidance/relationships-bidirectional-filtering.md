@@ -36,7 +36,7 @@ Bi-directional relationships play an important role when creating the following 
 
 Bi-directional relationships can deliver slicers that limit items to where data exists. (If you're familiar with Excel PivotTables and slicers, it's the default behavior when sourcing data from a Power BI dataset, or an Analysis Services model.) To help explain what it means, first consider the following model diagram.
 
-![A model diagram contains three tables. The design is described in the following paragraph.](media/relationships-bidirectional-filtering/sales-model-diagram.png)
+![Diagram showing a model containing three tables. The design is described in the following paragraph.](media/relationships-bidirectional-filtering/sales-model-diagram.png)
 
 The first table is named **Customer**, and it contains three columns: **Country-Region**, **Customer**, and **CustomerCode**. The second table is named **Product**, and it contains three columns: **Color**, **Product**, and **SKU**. The third table is named **Sales**, and it contains four columns: **CustomerCode**, **OrderDate**, **Quantity**, and **SKU**. The **Customer** and **Product** tables are dimension-type tables, and each has a one-to-many relationship to the **Sales** table. Each relationship filters in a single direction.
 
@@ -45,7 +45,7 @@ To help describe how bi-directional filtering works, the model diagram has been 
 > [!NOTE]
 > It's not possible to display table rows in the Power BI Desktop model diagram. It's done in this article to support the discussion with clear examples.
 
-![The model diagram now reveals the table rows. The row details are described in the following paragraph.](media/relationships-bidirectional-filtering/sales-model-diagram-rows.png)
+![Diagram showing that the model now reveals the table rows. The row details are described in the following paragraph.](media/relationships-bidirectional-filtering/sales-model-diagram-rows.png)
 
 The row details for the three tables are described in the following bulleted list:
 
@@ -63,17 +63,17 @@ The row details for the three tables are described in the following bulleted lis
 
 Now consider the following report page.
 
-![The report page contains three visuals. The details are described in the following paragraph.](media/relationships-bidirectional-filtering/sales-report-no-bi-directional-filter.png)
+![Diagram showing the report page containing three visuals. The details are described in the following paragraph.](media/relationships-bidirectional-filtering/sales-report-no-bi-directional-filter.png)
 
 The page consists of two slicers and a card visual. The first slicer is for **Country-Region** and it has two items: Australia and United States. It currently slices by Australia. The second slicer is for **Product**, and it has three items: Hat, Jeans, and T-shirt. No items are selected (meaning _no products_ are filtered). The card visual displays a quantity of 30.
 
 When report users slice by Australia, you might want to limit the **Product** slicer to display items where data _relates_ to Australian sales. It's what's meant by showing slicer items "with data". You can achieve this behavior by configuring the relationship between the **Product** and **Sales** table to filter in both directions.
 
-![The model diagram shows that the relationship between the Product and Sales table is now bi-directional.](media/relationships-bidirectional-filtering/sales-model-diagram-rows-bi-directional-filter.png)
+![Diagram showing a model that the relationship between the Product and Sales table is now bi-directional.](media/relationships-bidirectional-filtering/sales-model-diagram-rows-bi-directional-filter.png)
 
 The **Product** slicer now lists a single item: T-shirt. This item represents the only product sold to Australian customers.
 
-![The report page contains three visuals. The details are described in the following paragraph.](media/relationships-bidirectional-filtering/sales-report-bi-directional-filter.png)
+![Diagram showing the report page containing three visuals with Product called out. The details are described in the following paragraph.](media/relationships-bidirectional-filtering/sales-report-bi-directional-filter.png)
 
 We first suggest you consider carefully whether this design works for your report users. Some report users find the experience confusing. They don't understand why slicer items dynamically appear or disappear when they interact with other slicers.
 
@@ -89,7 +89,7 @@ Total Quantity = SUM(Sales[Quantity])
 
 To show the **Product** slicer items "with data", it simply needs to be filtered by the **Total Quantity** measure using the "is not blank" condition.
 
-![The Filters pane for the Product slicer now filters by "Total Quantity is not blank".](media/relationships-bidirectional-filtering/filter-product-slicer-measure-is-not-blank.png)
+![Diagram showing that the Filters pane for the Product slicer now filters by "Total Quantity is not blank".](media/relationships-bidirectional-filtering/filter-product-slicer-measure-is-not-blank.png)
 
 ## Dimension-to-dimension analysis
 
@@ -124,7 +124,7 @@ During the evaluation of the **Different Countries Sold** measure expression, th
 
 The following table visual present statistics for each product sold. The **Quantity** column is simply the sum of quantity values. The **Different Countries Sold** column represents the distinct count of country-region values of all customers who have purchased the product.
 
-![Two products are listed in a table visual. In the "Different Countries Sold" column, Jeans is 1, and T-shirt is 2.](media/relationships-bidirectional-filtering/country-sales-crossfilter-function.png)
+![Diagram showing that two products are listed in a table visual. In the "Different Countries Sold" column, Jeans is 1, and T-shirt is 2.](media/relationships-bidirectional-filtering/country-sales-crossfilter-function.png)
 
 ## Next steps
 
@@ -137,4 +137,3 @@ For more information related to this article, check out the following resources:
 - [Relationship troubleshooting guidance](relationships-troubleshoot.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
-

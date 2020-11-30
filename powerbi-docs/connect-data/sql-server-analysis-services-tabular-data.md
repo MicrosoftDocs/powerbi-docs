@@ -3,9 +3,9 @@ title: SQL Server Analysis Services live data in Power BI
 description: SQL Server Analysis Services live data in Power BI. This is done via a data source that was configured for an enterprise gateway.
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-author: Minewiskan
-ms.author: owend
+ms.topic: how-to
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: ""
 ms.date: 08/10/2017

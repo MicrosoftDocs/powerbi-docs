@@ -6,7 +6,7 @@ ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/27/2020
 LocalizationGroup: Share your work
 ---
@@ -55,10 +55,10 @@ To view the embedded report, users need either a Power BI Pro license or the con
 
 You can customize the user experience using the embed URL's input settings. In the provided iFrame, you can update the URL's  **src** settings.
 
-| Property  | Description  |  |  |  |
-|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|---|
-| pageName  | You can use the **pageName** query string parameter to set which report page to open. You can find this value at the report URL's end when viewing a report in the Power BI service, as shown below. |  |  |  |
-| URL Filters  | You can use [URL Filters](service-url-filters.md) in the embed URL you received from the Power BI UI to filter the embed content. This way you can build low-code integrations with only basic HTML and JavaScript experience.  |  |  |  |
+| Property  | Description  |
+|-----------|--------------|
+| pageName  | You can use the **pageName** query string parameter to set which report page to open. You can find this value at the report URL's end when viewing a report in the Power BI service, as shown below. |
+| URL Filters  | You can use [URL Filters](service-url-filters.md) in the embed URL you received from the Power BI UI to filter the embed content. This way you can build low-code integrations with only basic HTML and JavaScript experience.  |
 
 ## Set which page opens for an embedded report 
 
@@ -118,8 +118,6 @@ You can add as many buttons as you'd like to create a low-code custom experience
 
 * Paginated reports are supported with secure embed scenarios, and paginated reports with URL parameters are also supported. Read more about [passing report parameters in a URL for a paginated report](../paginated-reports/report-builder-url-pass-parameters.md).
 
-* Doesn't support external guest users with Azure business to business (B2B).
-
 * Secure embed works for reports published to the Power BI service.
 
 * The user needs to sign in to view the report whenever they open a new browser window.
@@ -134,7 +132,7 @@ You can add as many buttons as you'd like to create a low-code custom experience
 
 * The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](../developer/embedded/embed-sample-for-your-organization.md) embedding method. 
 
-* The authentication token lifetime is controlled based on your AAD settings. When the authentication token expires, the user will need to refresh their browser to get an updated authentication token. The default lifetime is one hour, but it could be shorter or longer in your organization.
+* The authentication token lifetime is controlled based on your AAD settings. When the authentication token expires, the user will need to refresh their browser to get an updated authentication token. The default lifetime is one hour, but it could be shorter or longer in your organization.  There is no ability to automatically refresh the token in this scenario.
 
 ## Next steps
 

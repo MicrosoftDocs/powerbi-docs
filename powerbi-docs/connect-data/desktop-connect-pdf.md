@@ -6,8 +6,8 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
-ms.date: 05/08/2019
+ms.topic: how-to
+ms.date: 07/16/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -35,6 +35,10 @@ Selecting a checkbox next to discovered elements in the PDF file displays them i
 Beginning with the November 2018 release of **Power BI Desktop**, you can specify the **Start page** and **End Page** as optional parameters for your PDF connection. You can also specify these parameters in the M formula language, using the following format:
 
 `Pdf.Tables(File.Contents("c:\sample.pdf"), [StartPage=10, EndPage=11])`
+
+## Limitations and considerations
+
+When working with the PDF connector on datasets in a Premium capacity, the PDF connector does not properly make the connection. To enable the PDF connector to work on a dataset in a Premium capacity, configure that dataset to use a gateway, and confirm the connection to that dataset goes through the gateway.  
 
 
 ## Next steps

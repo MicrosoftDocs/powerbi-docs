@@ -23,11 +23,11 @@ Each Power BI deployment consists of two clusters – a Web Front End (**WFE**) 
 
 The **WFE** cluster manages the initial connection and authentication process for Power BI, using AAD to authenticate clients and provide tokens for subsequent client connections to the Power BI service. Power BI also uses the **Azure Traffic Manager** (ATM) to direct user traffic to the nearest datacenter, determined by the DNS record of the client attempting to connect, for the authentication process and to download static content and files. Power BI uses the **Azure Content Delivery Network** (CDN) to efficiently distribute the necessary static content and files to users based on geographical locale.
 
-![](media/service-admin-power-bi-security/pbi_security_v2_wfe.png)
+![Diagram showing Power B I Architecture for Web Front End cluster.](media/service-admin-power-bi-security/pbi_security_v2_wfe.png)
 
 The **Back-End** cluster is how authenticated clients interact with the Power BI service. The **Back-End** cluster manages visualizations, user dashboards, datasets, reports, data storage, data connections, data refresh, and other aspects of interacting with the Power BI service. The **Gateway Role** acts as a gateway between user requests and the Power BI service. Users do not interact directly with any roles other than the **Gateway Role**. **Azure API Management** will eventually handle the **Gateway Role**.
 
-![](media/service-admin-power-bi-security/pbi_security_v2_backend_updated.png)
+![Diagram showing Power B I Architecture for Web Back End cluster.](media/service-admin-power-bi-security/pbi_security_v2_backend_updated.png)
 
 > [!IMPORTANT]
 > It is imperative to note that only **Azure API Management** (APIM) and **Gateway** (GW) roles are accessible through the public Internet. They provide authentication, authorization, DDoS protection, Throttling, Load Balancing, Routing, and other capabilities.
@@ -56,10 +56,10 @@ An exception is connections to **SQL Server Analysis Services** using the **On-p
 
 ## Enforcing TLS version usage
 
-Network and IT administrators can enforce the requirement to use current TLS (Transport Layer Security) for any secured communication on their network. Windows provides support for TLS versions over the Microsoft Schannel Provider, as [described in the TLS Schannel SSP article](https://docs.microsoft.com/windows/desktop/SecAuthN/protocols-in-tls-ssl--schannel-ssp-).
+Network and IT administrators can enforce the requirement to use current TLS (Transport Layer Security) for any secured communication on their network. Windows provides support for TLS versions over the Microsoft Schannel Provider, as [described in the TLS Schannel SSP article](/windows/desktop/SecAuthN/protocols-in-tls-ssl--schannel-ssp-).
 
-This enforcement can be done by administratively setting registry keys. Enforcement is described in the [Managing SSL Protocols in AD FS article](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/manage-ssl-protocols-in-ad-fs). 
+This enforcement can be done by administratively setting registry keys. Enforcement is described in the [Managing SSL Protocols in AD FS article](/windows-server/identity/ad-fs/operations/manage-ssl-protocols-in-ad-fs). 
 
 **Power BI Desktop** respects the registry key settings described in those articles, and only created connections using the version of TLS allowed based on those registry settings, when present.
 
-For more information about setting these registry keys, see the [TLS Registry Settings](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings) article.
+For more information about setting these registry keys, see the [TLS Registry Settings](/windows-server/security/tls/tls-registry-settings) article.

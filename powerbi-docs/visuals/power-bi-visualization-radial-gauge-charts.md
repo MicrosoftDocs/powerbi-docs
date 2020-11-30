@@ -1,13 +1,13 @@
 ---
 title: Radial gauge charts in Power BI  
 description: 'Radial gauge charts in Power BI'
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: 'mihart'
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/05/2020
+ms.date: 06/17/2020
 ms.author: rien
 LocalizationGroup: Visualizations
 ---
@@ -40,7 +40,7 @@ Radial gauges are a great choice to:
 
 ## Prerequisites
 
-This tutorial uses the [Financial sample Excel file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+This tutorial uses the [Financial sample Excel file](https://go.microsoft.com/fwlink/?LinkID=521962).
 
 1. From the upper left section of the menubar, select **Get Data** > **Excel**
    
@@ -64,7 +64,7 @@ This tutorial uses the [Financial sample Excel file](https://download.microsoft.
 
 1. From the **Fields** pane, select **Gross Sales**.
 
-   ![](media/power-bi-visualization-radial-gauge-charts/grosssalesvalue-new.png)
+   ![financials table expanded and Gross Sales selected](media/power-bi-visualization-radial-gauge-charts/grosssalesvalue-new.png)
 
 1. Change the aggregation to **Average**.
 

@@ -2,11 +2,11 @@
 title: Change the display size and ratio of a report page
 description: 'Change the display settings for a page in a Power BI report'
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 03/11/2020
+ms.topic: how-to
+ms.date: 09/27/2020
 ms.author: mihart
 LocalizationGroup: Reports
 ---
@@ -23,7 +23,7 @@ People view reports on many different devices with varying screen sizes and aspe
 
 ## Explore the View menu
 
-![Screenshot of the View drop-down options.](media/end-user-report-view/power-bi-viewmenu.png)
+![Screenshot of the View drop-down options.](media/end-user-report-view/power-bi-menu-view.png)
 
 
 The options in the **View** menu give you flexibility to display report pages at the size and width you choose:

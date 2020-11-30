@@ -11,6 +11,10 @@
   - name: Tutorials
     expanded: true
     items: 
+    - name: "Power BI Desktop: From Excel to report"
+      href: desktop-excel-stunning-report.md
+    - name: "Power BI service: From Excel to report"
+      href: service-from-excel-to-stunning-report.md
     - name: "Online course: Paginated reports"
       href: ../learning-catalog/paginated-reports-online-course.md
     - name: Create a paginated report and upload
@@ -47,6 +51,8 @@
     items: 
     - name: Power BI reports
       items: 
+      - name: "Power BI Desktop and external tools"
+        href: desktop-external-tools.md
       - name: "Power BI modern ribbon"
         href: desktop-ribbon.md
       - name: "Work with Report view"
@@ -65,6 +71,8 @@
         items: 
         - name: "Q&A introduction"
           href: ../natural-language/q-and-a-intro.md
+        - name: "Q&A data sources"
+          href: ../natural-language/q-and-a-data-sources.md
         - name: "Q&A tooling introduction"
           href: ../natural-language/q-and-a-tooling-intro.md
         - name: "Q&A tooling advanced"
@@ -77,6 +85,8 @@
       items: 
       - name: Report Builder in Power BI
         href: ../paginated-reports/report-builder-power-bi.md
+      - name: Sample Power BI paginated reports
+        href: ../paginated-reports/paginated-reports-samples.md
       - name: Get around Report Design View
         href: ../paginated-reports/paginated-reports-report-design-view.md
       - name: Planning a report
@@ -113,7 +123,9 @@
     items: 
     - name: Power BI reports
       items: 
-      - name: "Enable automatic page refresh (preview)"
+      - name: "Create a report in the service"
+        href: service-report-create-new.md
+      - name: "Enable automatic page refresh"
         href: desktop-automatic-page-refresh.md
       - name: "Examine report elements with Performance Analyzer"
         href: desktop-performance-analyzer.md        
@@ -197,8 +209,12 @@
         href: desktop-grouping-visuals.md      
       - name: "Create report templates"
         href: desktop-templates.md      
-      - name: "Create a report from a dataset"
-        href: service-report-create-new.md
+      - name: "Change report settings"
+        href: power-bi-report-settings.md
+      - name: "Feature reports on others' Home pages"
+        href: ../collaborate-share/service-featured-content.md
+      - name: "Let consumers customize visuals (Preview)"
+        href: power-bi-personalize-visuals.md
       - name: "Save a report"
         href: service-report-save.md
       - name: "Interact with a report in Editing view"
@@ -209,7 +225,7 @@
         href: service-aggregates.md
       - name: "Create a QR code for a report"
         href: service-create-qr-code-for-report.md
-      - name: "Let consumers customize visuals (Preview)"
+      - name: "Let users customize visuals"
         href: power-bi-personalize-visuals.md
       - name: "Export a report to Power BI Desktop (Preview)"
         href: service-export-to-pbix.md
@@ -251,8 +267,6 @@
         href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
       - name: "Interact with ArcGIS maps in Power BI visuals"
         href: ../visuals/power-bi-visualizations-arcgis.md
-      - name: "Create ArcGIS maps for Power BI visuals"
-        href: ../visuals/power-bi-visualization-arcgis.md
       - name: "Basic area charts"
         href: ../visuals/power-bi-visualization-basic-area-chart.md
       - name: "Create card visuals (big number tiles)"
@@ -261,6 +275,10 @@
         href: ../visuals/power-bi-visualization-combo-chart.md
       - name: "Decomposition tree visuals"
         href: ../visuals/power-bi-visualization-decomposition-tree.md
+      - name: "Smart narratives"
+        href: ../visuals/power-bi-visualization-smart-narrative.md
+      - name: "Anomaly detection"
+        href: ../visuals/power-bi-visualization-anomaly-detection.md
       - name: "Doughnut charts"
         href: ../visuals/power-bi-visualization-doughnut-charts.md
       - name: "Filled maps (choropleths)"
@@ -339,6 +357,8 @@
         href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
       - name: Create a report with a Power BI shared dataset
         href: ../paginated-reports/report-builder-shared-datasets.md
+      - name: Download the .rdl for a paginated report
+        href: ../paginated-reports/paginated-reports-download-rdl.md
       - name: Create parameters
         href: ../paginated-reports/paginated-reports-parameters.md
       - name: Set report views

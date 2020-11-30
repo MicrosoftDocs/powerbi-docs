@@ -6,14 +6,14 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-report-server
-ms.topic: conceptual
-ms.date: 05/27/2020
+ms.topic: how-to
+ms.date: 07/28/2020
 ms.author: maggies
 
 ---
 # Configure Power BI Report Server with Azure Application Proxy
 
-This article discusses how to use Azure Active Directory Application Proxy to connect to Power BI Report Server and SQL Server Reporting Services (SSRS) 2016 and later. Through this integration, users who are away from the corporate network can access their Power BI Report Server and Reporting Services reports from their client browsers and be protected by Azure Active Directory (AD). Read more about remote access to on-premises applications through [Azure Active Directory's Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+This article discusses how to use Azure Active Directory Application Proxy to connect to Power BI Report Server and SQL Server Reporting Services (SSRS) 2016 and later. Through this integration, users who are away from the corporate network can access their Power BI Report Server and Reporting Services reports from their client browsers and be protected by Azure Active Directory (AD). Read more about remote access to on-premises applications through [Azure Active Directory's Application Proxy](/azure/active-directory/manage-apps/application-proxy).
 
 ## Environment details
 
@@ -106,7 +106,7 @@ We have to configure the delegation settings on the report server service accoun
 3. We want to configure constrained delegation with protocol transiting. With constrained delegation, we need to be explicit about which services we want to delegate to.
 4. Right click the **report server service account** and select **Properties**.
 5. Select the **Delegation** tab.
-6. Select **Trust this computer for delegation to specified services only**.
+6. Select **Trust this user for delegation to specified services only**.
 7. Select **Use any authentication protocol**.
 8. Under the **Services to which this account can present delegated credentials** : select **Add**.
 9. In the new dialog, select **Users or Computers**.
@@ -121,7 +121,7 @@ These steps help configure Power BI Report Server to work with Kerberos authenti
 
 ## Configure Azure Application Proxy connector
 
-Refer to the article for [configuration related to Application Proxy connector](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad)
+Refer to the article for [configuration related to Application Proxy connector](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad)
 
 We installed Application Proxy connector on Power BI Report Server, but you can configure it on a separate server and make sure that delegation is set up properly.
 
@@ -146,14 +146,14 @@ To configure KCD, repeat the following steps for each connector machine.
 
 Now you're ready to configure Azure AD Application Proxy.
 
-Publish Power BI Report Server through Application Proxy with the following settings. For step-by-step instructions on how to publish an application through Application Proxy, see [Publishing applications using Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad).
+Publish Power BI Report Server through Application Proxy with the following settings. For step-by-step instructions on how to publish an application through Application Proxy, see [Publishing applications using Azure AD Application Proxy](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad).
 
 - **Internal URL** : Enter the URL to the report server that the connector can reach in the corporate network. Make sure this URL is reachable from the server the connector is installed on. A best practice is using a top-level domain such as `https://servername/` to avoid issues with subpaths published through Application Proxy. For example, use `https://servername/` and not `https://servername/reports/` or `https://servername/reportserver/`. We've configured our environment with `https://pbirsazureapp.eastus.cloudapp.azure.com/`.
 
     > [!NOTE]
-    > We recommend using a secure HTTPS connection to the report server. See [Configure SSL connections on a native mode report server](https://docs.microsoft.com/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server?view=sql-server-2017) for information how to.
+    > We recommend using a secure HTTPS connection to the report server. See [Configure SSL connections on a native mode report server](/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server) for how-to information.
 
-- **External URL** : Enter the public URL the Power BI mobile app will connect to. For example, it may look like `https://reports.contoso.com` if a custom domain is used. To use a custom domain, upload a certificate for the domain, and point a DNS record to the default msappproxy.net domain for your application. For detailed steps, see [Working with custom domains in Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-custom-domain).
+- **External URL** : Enter the public URL the Power BI mobile app will connect to. For example, it may look like `https://reports.contoso.com` if a custom domain is used. To use a custom domain, upload a certificate for the domain, and point a DNS record to the default msappproxy.net domain for your application. For detailed steps, see [Working with custom domains in Azure AD Application Proxy](/azure/active-directory/manage-apps/application-proxy-configure-custom-domain).
 
 We've configured the external URL to be `https://pbirsazureapp-umacontoso2410.msappproxy.net/` for our environment.
 
@@ -180,7 +180,7 @@ Once your app is published, configure the single sign-on settings with the follo
     - Try running a report or perform test connection to data source so that a Kerberos ticket gets created.
     - After successful execution of the report/ test connection, open command prompt and run the command: `klist`. In the result section, you should see a ticket with `http/` SPN. If it's same as the SPN you have configured with Power BI Report Server, use that SPN in this section.
 
-1. Choose the **Delegated Login Identity** for the connector to use on behalf of your users. For more information, see [Working with different on-premises and cloud identities](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd#working-with-different-on-premises-and-cloud-identities).
+1. Choose the **Delegated Login Identity** for the connector to use on behalf of your users. For more information, see [Working with different on-premises and cloud identities](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd#working-with-different-on-premises-and-cloud-identities).
 
     We recommend using User Principal name. In our sample, we configured it to work with **User Principal name** option:
 
@@ -197,7 +197,7 @@ To finish setting up your application, go to the **Users and groups** section an
     - Create a new Redirect URL and configure it with **Type** = **Web** and **Redirect URI** = `https://pbirsazureapp-umacontoso2410.msappproxy.net/`
     - In the **Advanced Settings** section, configure the **Logout URL** to `https://pbirsazureapp-umacontoso2410.msappproxy.net/?Appproxy=logout`
 
-    ![Authentication settings](media/azure-application-proxy/azure-report-server-authentication-1.png)
+    ![Screenshot shows the P B I R S Authentication pane with Redirect U R I s and Advanced settings.](media/azure-application-proxy/azure-report-server-authentication-1.png)
 
 1. Continue configuring the **Authentication** section of App registration for the Power BI Report Server application as follows for **Implicit grant**, **Default client type**, and **Supported account types**:
 
@@ -205,14 +205,14 @@ To finish setting up your application, go to the **Users and groups** section an
     - Set **Default client type** to **No**.
     - Set **Supported account types** to **Accounts in this organizational directory only (UmaContoso only – Single tenant)**.
 
-    ![Authentication settings](media/azure-application-proxy/azure-report-server-authentication-2.png)
+    ![Screenshot shows the P B I R S Authentication pane with the settings as described.](media/azure-application-proxy/azure-report-server-authentication-2.png)
 
 1. Once the single sign-on is set up and the URL `https://pbirsazureapp-umacontoso2410.msappproxy.net` is working, we have to make sure that the account that we log in with is synced with the account to which the permissions are provided in Power BI Report Server.
 
 1. We first have to configure the custom domain that we are planning to use in the login, then make sure it is verified
 2. In this case, we purchased a domain called umacontoso.com and configured the DNS zone with the entries. You can also try using the `onmicrosoft.com` domain and sync it with on-premises AD.
 
-    See the article [Tutorial: Map an existing custom DNS name to Azure App Service](https://docs.microsoft.com/Azure/app-service/app-service-web-tutorial-custom-domain) for reference.
+    See the article [Tutorial: Map an existing custom DNS name to Azure App Service](/Azure/app-service/app-service-web-tutorial-custom-domain) for reference.
 
 1. After successfully verifying the DNS entry for the custom domain, you should be able to see the status as **Verified** corresponding to the domain from the portal.
 
@@ -291,8 +291,6 @@ Before the Power BI mobile app can connect and access Power BI Report Server, yo
 
 ## Next steps
 
-[Enable remote access to Power BI Mobile with Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi)
+[Enable remote access to Power BI Mobile with Azure AD Application Proxy](/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
-                

@@ -1,14 +1,14 @@
 ---
-title: Troubleshoot XMLA endpoint connectivity in Power BI Premium (Preview) 
+title: Troubleshoot XMLA endpoint connectivity in Power BI
 description: Describes how to troubleshoot connectivity through the XMLA endpoint in Power BI Premium.
 author: minewiskan
 ms.author: owend
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: conceptual
-ms.date: 06/10/2020
-ms.custom: seodec18
+ms.topic: troubleshooting
+ms.date: 11/16/2020
+ms.custom: seodec18, css_fy20Q4
 
 LocalizationGroup: Premium
 ---
@@ -20,6 +20,17 @@ XMLA endpoints in Power BI Premium rely on the native Analysis Services communic
 ## Before you begin
 
 Before troubleshooting an XMLA endpoint scenario, be sure to review the basics covered in [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md). Most common XMLA endpoint use cases are covered there. Other Power BI troubleshooting guides, such as [Troubleshoot gateways - Power BI](../connect-data/service-gateway-onprem-tshoot.md) and [Troubleshooting Analyze in Excel](../collaborate-share/desktop-troubleshooting-analyze-in-excel.md), can also be helpful.
+
+## Enabling the XMLA endpoint
+
+The XMLA endpoint can be enabled on both Power BI Premium and Power BI Embedded capacities. On smaller capacities, such as an A1 capacity with only 2.5 GB of memory, you might encounter an error in Capacity settings when trying to set the XMLA Endpoint to **Read/Write** and then selecting **Apply**. The error states "There was an issue with your workload settings. Try again in a little while.".
+
+Here are a couple things to try:
+
+- Limit the memory consumption of other services on the capacity, such as Dataflows, to 40% or less, or disable an unnecessary service completely.  
+- Upgrade the capacity to a larger SKU. For example, upgrading from an A1 to an A3 capacity solves this configuration issue without having to disable Dataflows.
+
+Keep in-mind, you must also enable the tenant-level [Export data setting](service-premium-connect-tools.md#security) in the Power BI Admin Portal. This setting is also required for the Analyze in Excel feature.
 
 ## Establishing a client connection
 
@@ -74,7 +85,7 @@ Creating a new tabular project in Visual Studio by importing the metadata from a
 
 It's recommended you specify the 1500 (or higher) compatibility level for tabular models. This compatibility level supports the most capabilities and data source types. Later compatibility levels are backwards compatible with earlier levels.
 
-### Unsupported data providers
+### Supported data providers
 
 At the 1500 compatibility level, Power BI supports the following data source types:
 
@@ -121,9 +132,43 @@ When triggering a scheduled refresh or on-demand refresh in Power BI, Power BI t
 
 :::image type="content" source="media/troubleshoot-xmla-endpoint/process-tables.png" alt-text="Process tables in SSMS":::
 
+### Overrides in Refresh TMSL command
+
+Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tmsl) allow users choosing a different partition query definition or data source definition for the refresh operation. Currently, **overrides are not supported** in Power BI Premium. An error,  "Out-of-line binding is not allowed in Power BI Premium. For additional information, see 'XMLA read/write support' in the product documentation." is returned.
+
+## Errors in SSMS - Premium Gen 2
+
+### Query execution
+
+When connected to a workspace in a [Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2-preview) capacity, SQL Server Management Studio may display the following error:
+
+```
+Executing the query ...
+Error -1052311437:
+```
+
+This occurs because client libraries installed with SSMS v18.7.1 do not support session tracing. This will be resolved in an upcoming release of SSMS.
+
+### Refresh operations
+
+When using SSMS v18.7.1 or lower to perform a long running (>1 min) refresh operation on a dataset in a Premium Gen2 capacity, SSMS may display an error like the following even though the refresh operation succeeds:
+
+```
+Executing the query ...
+Error -1052311437:
+The remote server returned an error: (400) Bad Request.
+
+Technical Details:
+RootActivityId: 3716c0f7-3d01-4595-8061-e6b2bd9f3428
+Date (UTC): 11/13/2020 7:57:16 PM
+Run complete
+```
+
+This is due to a known issue in the client libraries where the status of the refresh request is incorrectly tracked. This will be resolved in an upcoming release of SSMS.
+
 ## See also
 
-[Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md)   
-[Automate Premium workspace and dataset tasks with service principals](service-premium-service-principal.md)   
-[Troubleshooting Analyze in Excel](../collaborate-share/desktop-troubleshooting-analyze-in-excel.md)   
-[Tabular model solution deployment](https://docs.microsoft.com/analysis-services/deployment/tabular-model-solution-deployment?view=power-bi-premium-current)
+[Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md)  
+[Automate Premium workspace and dataset tasks with service principals](service-premium-service-principal.md)  
+[Troubleshooting Analyze in Excel](../collaborate-share/desktop-troubleshooting-analyze-in-excel.md)  
+[Tabular model solution deployment](/analysis-services/deployment/tabular-model-solution-deployment?view=power-bi-premium-current&preserve-view=true)

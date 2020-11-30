@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
-ms.date: 06/08/2020
+ms.topic: how-to
+ms.date: 06/15/2020
 ms.author: painbar
 
 LocalizationGroup: Create reports
 ---
 # Optimize Power BI reports for the mobile app
-Mobile users can view any Power BI report page in landscape orientation. However, report authors can create an additional view that is optimized for mobile devices and displays in portrait orientation. This design option enables authors to select and rearrange just those visuals that make sense for mobile users on the go.
+Mobile users can view any Power BI report page in landscape orientation. However, report authors can create an additional view that is optimized for mobile devices and displays in portrait orientation. This design option, which is available in both Power BI Desktop and in the Power BI service, enables authors to select and rearrange just those visuals that make sense for mobile users on the go.
 
 ![Mobile-optimized report](media/desktop-create-phone-report/desktop-mobile-optimized-report.png).
 
@@ -29,7 +29,7 @@ The first step is to design and create the report in the regular web view. After
 
 To create the mobile-optimized view, open the mobile layout view:
    * In Power BI Desktop, select the **View** ribbon and choose **Mobile layout**.
-   * In the Power BI service, select **Edit report > Mobile Layout**.
+   * In the Power BI service, choose **More options (...) > Edit report > Mobile Layout**.
 
    You see a scrollable canvas shaped like a phone, and a **Visualizations** pane that lists all of the visuals that are on the original report page.
 
@@ -115,5 +115,5 @@ If you optimize only some pages, when readers come to an unoptimized page they w
 ## Next steps
 * [Create a phone view of a dashboard in Power BI](service-create-dashboard-mobile-phone-view.md).
 * [View Power BI reports optimized for your phone](../consumer/mobile/mobile-apps-view-phone-report.md).
-* [Power BI documentation on creating reports and dashboards](https://docs.microsoft.com/power-bi/create-reports/).
+* [Power BI documentation on creating reports and dashboards](./index.yml).
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/).
