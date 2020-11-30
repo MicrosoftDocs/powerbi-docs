@@ -178,6 +178,7 @@ There are two types of rules you can create:
 
 * Data source rules can only be defined for the following data sources:
     * Azure Analysis Services
+    * Azure Synapse
     * SQL Server Analysis Services (SSAS)
     * Azure SQL Server
     * SQL server
