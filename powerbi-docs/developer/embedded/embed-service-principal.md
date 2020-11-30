@@ -190,10 +190,7 @@ To enable your Azure AD app access artifacts such as reports, dashboards and dat
 
 ## Step 5 - Embed your content
 
-You can embed your content within a sample application, or within your own application.
-
-* [Embed content using the sample application](embed-sample-for-customers.md)
-* [Embed content within your application](embed-sample-for-customers.md#embed-content-within-your-application)
+You can [embed your content within a sample application](embed-sample-for-customers.md), or within your own application.
 
 Once your content is embedded, you're ready to [move to production](move-to-production.md).
 
