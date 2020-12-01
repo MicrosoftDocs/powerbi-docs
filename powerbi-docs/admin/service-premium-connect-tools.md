@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/05/2020
+ms.date: 12/01/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
 ---
@@ -124,9 +124,9 @@ The following datasets are not accessible by the XMLA endpoint. These datasetsâ€
 
 ## Security
 
-In addition to the XMLA Endpoint property being enabled read-write by the capacity admin, the tenant-level **Export data** setting in the Power BI Admin Portal, also required for Analyze in Excel, must be enabled.
+In addition to the XMLA Endpoint property being enabled read-write by the capacity admin, the tenant-level **Allow live connections** setting in the Power BI Admin Portal, also required for Analyze in Excel, must be enabled.
 
-![Enable Export data](media/service-premium-connect-tools/xmla-endpoint-export-data.png)
+:::image type="content" source="media/service-premium-connect-tools/allow-live-connections.png" alt-text="Export and sharing setting allow live connections.":::
 
 Access through the XMLA endpoint will honor security group membership set at the workspace/app level.
 
