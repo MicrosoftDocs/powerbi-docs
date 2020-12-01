@@ -1,15 +1,14 @@
 ---
 title: Dataset modes in the Power BI service
 description: "Understand Power BI service dataset modes: Import, DirectQuery, and Composite."
-author: peter-myers
+author: davidiseminger
+ms.author: davidi
 manager: asaxton
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 11/09/2019
-ms.author: v-pemyer
 ---
 
 # Dataset modes in the Power BI service

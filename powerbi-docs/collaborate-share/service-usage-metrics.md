@@ -6,7 +6,7 @@ ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 ms.date: 10/21/2019
 LocalizationGroup: Dashboards

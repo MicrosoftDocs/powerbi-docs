@@ -2,14 +2,12 @@
 title: Use Machine Learning and Cognitive Services with dataflows
 description: Overview of how to use machine learning and automated ml with dataflows
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 10/01/2020
-ms.author: davidi
-
 LocalizationGroup: Data from files
 ---
 # AI with dataflows

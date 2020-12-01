@@ -2,14 +2,12 @@
 title: Types of Insights supported by Power BI
 description: Quick Insights and View insights with Power BI.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 10/12/2020
-ms.author: mihart
-
 LocalizationGroup: Dashboards
 ---
 # Types of insights supported by Power BI

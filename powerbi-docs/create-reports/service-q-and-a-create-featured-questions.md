@@ -2,14 +2,12 @@
 title: Create featured questions for Power BI Q&A
 description: Documentation on how to create featured questions for Power BI Q&A
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/26/2020
-ms.author: maggies
-
 LocalizationGroup: Ask questions of your data
 ---
 # Create featured questions for Power BI Q&A

@@ -4,7 +4,8 @@ description: Learn about setting up diagnostic logging for the Power BI Embedded
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
-ms.service: power-bi-embedded
+ms.service: powerbi
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/13/2018
 ---

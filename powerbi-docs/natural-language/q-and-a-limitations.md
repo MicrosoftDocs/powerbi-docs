@@ -2,13 +2,11 @@
 title: Limitations of Power BI Q&A
 description: Current limitations of Power BI Q&A
 author: maggiesMSFT
-
+ms.author: maggies
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 09/09/2020
-ms.author: maggies
-
 ---
 # Limitations of Power BI Q&A
 

@@ -2,14 +2,12 @@
 title: Intro to organizational content packs in Power BI
 description: Read about packaging up your dashboards, reports, Excel workbooks, and datasets into organizational content packs you can share with your coworkers.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 10/23/2019
-ms.author: maggies
-
 LocalizationGroup: Share your work
 ---
 # Intro to organizational content packs in Power BI

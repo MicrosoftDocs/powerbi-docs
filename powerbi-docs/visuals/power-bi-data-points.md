@@ -1,15 +1,13 @@
 ---
 title: Large datasets, data point limits, and data strategies
 description: Data limits for visuals and data reduction strategies
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: 'justyna'
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 01/10/2020
-ms.author: rien
-
 LocalizationGroup: Visualizations
 ---
 # Apply data-point limits and strategies by visual type

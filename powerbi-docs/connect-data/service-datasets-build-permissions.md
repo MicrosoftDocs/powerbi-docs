@@ -1,14 +1,13 @@
 ---
 title: Build permission for shared datasets
 description: Learn how you can control access to the data by using Build permission.
-author: maggiesMSFT
+author: paulinbar
+ms.author: painbar
 ms.reviewer: kayu
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 10/21/2020
-ms.author: maggies
-
 LocalizationGroup: Share your work
 ---
 # Build permission for shared datasets

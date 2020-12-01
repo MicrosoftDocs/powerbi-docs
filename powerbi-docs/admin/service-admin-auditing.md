@@ -2,14 +2,13 @@
 title: Track user activities in Power BI
 description: Learn how you can use activity logs and auditing with Power BI to monitor and investigate actions taken.
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 08/20/2020
-ms.author: kfollis
 ms.custom: licensing support
-
 LocalizationGroup: Administration
 ---
 
@@ -272,6 +271,9 @@ The following operations are available in both the audit and activity logs.
 | Created Power BI gateway                          | CreateGateway                               |                                          |
 | Created Power BI group                            | CreateGroup                                 |                                          |
 | Created Power BI report                           | CreateReport <sup>1</sup>                                |                                          |
+| Create Power BI template app workspace | CreateTemplateApp   |
+| Create Power BI template app install ticket | CreateTemplateAppInstallTicket |
+| Create Power BI template app package | CreateTemplateAppPackage |
 | Custom visual requested Azure AD access token                           | GenerateCustomVisualAADAccessToken                                |                                          |
 | Custom visual requested Office Web Apps access token                           | GenerateCustomVisualWACAccessToken                                |                                          |
 | Dataflow migrated to external storage account     | DataflowMigratedToExternalStorageAccount    | Not currently used                       |
@@ -290,6 +292,8 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI gateway                          | DeleteGateway                               |                                          |
 | Deleted Power BI group                            | DeleteGroup                                 |                                          |
 | Deleted Power BI report                           | DeleteReport                                |                                          |
+| Deleted Power BI template app workspace | DeleteTemplateApp |
+| Deleted Power BI template app package | DeleteTemplateAppPackage |
 | Deployed to a pipeline stage                           | DeployAlmPipeline                                |                                          |
 | Discovered Power BI dataset data sources          | GetDatasources                              |                                          |
 | Downloaded Power BI report                        | DownloadReport                              |                                          |
@@ -302,6 +306,7 @@ The following operations are available in both the audit and activity logs.
 | Exported Power BI dataflow                        | ExportDataflow                              |                                          |
 | Exported Power BI report visual data              | ExportReport                                |                                          |
 | Exported Power BI tile data                       | ExportTile                                  |                                          |
+| Extracted Power BI template app package to workspace | ExtractTemplateAppPackage |
 | Failed to add dataflow permissions                | FailedToAddDataflowPermissions              | Not currently used                       |
 | Failed to remove dataflow permissions             | FailedToRemoveDataflowPermissions           | Not currently used                       |
 | Generated Power BI dataflow SAS token             | GenerateDataflowSasToken                    |                                          |
@@ -309,10 +314,12 @@ The following operations are available in both the audit and activity logs.
 | Generate screenshot                       | GenerateScreenshot |                     |
 | Imported file to Power BI                         | Import                                      |                                          |
 | Installed Power BI app                            | InstallApp                                  |                                          |
+| Installed Power BI template app | InstallTemplateApp |
 | Migrated workspace to a capacity                  | MigrateWorkspaceIntoCapacity                |                                          |
 | Posted Power BI comment                           | PostComment                                 |                                          |
 | Printed Power BI dashboard                        | PrintDashboard                              |                                          |
 | Printed Power BI report page                      | PrintReport                                 |                                          |
+| Promoted Power BI template app package | PromoteTemplateAppPackage |
 | Published Power BI report to web                  | PublishToWebReport <sup>2</sup>                         |                                          |
 | Published or updated featured tables | UpdateFeaturedTables <sup>3</sup>   | |
 | Received Power BI dataflow secret from Key Vault  | ReceiveDataflowSecretFromKeyVault           |                                          |
@@ -344,6 +351,7 @@ The following operations are available in both the audit and activity logs.
 | Updated capacity display name                     | UpdateCapacityDisplayName                   |                                          |
 | Updated dataflow storage assignment permissions   | UpdatedDataflowStorageAssignmentPermissions |                                          |
 | Updated deployment pipeline access   | UpdateAlmPipelineAccess |                                          |
+| Updated installed Power BI template app parameters | UpdateInstalledTemplateAppParameters |
 | Updated deployment pipeline configuration   | SetConfigurationAlmPipeline |                                          |
 | Updated organization's Power BI settings          | UpdatedAdminFeatureSwitch                   |                                          |
 | Updated Power BI app                              | UpdateApp                                   |                                          |
@@ -354,6 +362,8 @@ The following operations are available in both the audit and activity logs.
 | Updated Power BI folder                           | UpdateFolder                                |                                          |
 | Updated Power BI folder access                    | UpdateFolderAccess                          |                                          |
 | Updated Power BI gateway data source credentials  | UpdateDatasourceCredentials                 |                                          |
+| Updated Power BI template app settings | UpdateTemplateAppSettings |
+| Updated Power BI template app test access permissions | UpdateTemplateAppTestPackagePermissions |
 | Viewed Power BI dashboard                         | ViewDashboard                               |                                          |
 | Viewed Power BI dataflow                          | ViewDataflow                                |                                          |
 | Viewed Power BI report                            | ViewReport                                  |                                          |

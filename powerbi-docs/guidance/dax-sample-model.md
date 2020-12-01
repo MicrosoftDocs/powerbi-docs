@@ -2,13 +2,12 @@
 title: "DAX sample model"
 description: DAX sample model to support reference articles.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 06/25/2020
-ms.author: v-pemyer
 ---
 
 # DAX sample model

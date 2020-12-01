@@ -4,12 +4,10 @@ description: Browse a list of frequently asked questions and answers about the P
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
 ms.date: 11/11/2020
-
 LocalizationGroup: Premium
 ---
 # Power BI Premium FAQ

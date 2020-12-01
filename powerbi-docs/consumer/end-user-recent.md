@@ -2,15 +2,13 @@
 title: Display recently visited content in the Power BI service
 description: documentation for recents in Power BI
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: G26dr2PsEpk
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/24/2020
-ms.author: mihart
-
 LocalizationGroup: Common tasks
 ---
 # **Recent** content in the Power BI service

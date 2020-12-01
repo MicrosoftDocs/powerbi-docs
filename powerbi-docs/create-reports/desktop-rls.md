@@ -1,11 +1,11 @@
 ---
 title: Restrict data access with row-level security (RLS) for Power BI Desktop
 description: How to configure row-level security for imported datasets, and DirectQuery, within Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.custom: ""
 ms.date: 01/31/2020 

@@ -2,14 +2,12 @@
 title: Resolve issues when starting Power BI Desktop
 description: Resolve issues when starting Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
 ms.date: 11/14/2020
-ms.author: davidi
-
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshoot opening Power BI Desktop

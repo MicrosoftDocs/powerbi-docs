@@ -2,12 +2,12 @@
 title: What are Power BI template apps?
 description: This article is an overview of the Power BI template app program. Learn how to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/04/2020
-ms.author: painbar
 ---
 
 # What are Power BI template apps?
@@ -106,7 +106,7 @@ See [Tips for authoring template apps in Power BI](service-template-apps-tips.md
 |Contents from files | Only PBIX files are allowed. <br>Not supported: .rdl files (paginated reports), Excel workbooks   |
 | Data sources | Data sources supported for cloud Scheduled Data refresh are allowed. <br>Not supported: <li>Live connections (no Azure AS)</li> <li>On-premises data sources (personal and enterprise gateways aren't supported)</li> <li>Real time (no support for push dataset)</li> <li>Composite models</li></ul> |
 | Dataset: cross-workspace | No cross-workspace datasets are allowed  |
-| Query parameters | Not supported: Parameters of type "Any" or "Binary" type block refresh operation for dataset |
+| Query parameters | Not supported: Parameters of type "Any", "Date" or "Binary" type block refresh operation for dataset |
 | Power BI visuals | Only publicly available Power BI visuals are supported. [Organizational Power BI visuals](../developer/visuals/power-bi-custom-visuals-organization.md) not supported |
 | Sovereign clouds | Template apps are not available in sovereign clouds |
 

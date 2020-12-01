@@ -2,14 +2,12 @@
 title: Manage your data source - Import/scheduled refresh
 description: How to manage the on-premises data gateway and data sources that belong to that gateway. This article is specific to data sources that can be used with import/scheduled refresh.
 author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 11/11/2020
-ms.author: arthii
-
+ms.date: 11/17/2020
 LocalizationGroup: Gateways
 ---
 
@@ -64,10 +62,6 @@ If you're listed in the **Users** tab of the data source configured within the g
 
 > [!WARNING]
 > If your dataset contains multiple data sources, each data source must be added within the gateway. If one or more data sources aren't added to the gateway, you won't see the gateway as available for scheduled refresh.
-
-## Limitations
-
-OAuth isn't a supported authentication scheme with the on-premises data gateway. You can't add data sources that require OAuth. If your dataset has a data source that requires OAuth, you can't use the gateway for scheduled refresh.
 
 ## Next steps
 

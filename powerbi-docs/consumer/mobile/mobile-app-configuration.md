@@ -2,12 +2,11 @@
 title: 'Power BI app configuration settings'
 description: How to customize the behavior of Power BI using MDM tool
 author: paulinbar
-
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 07/14/2020
-ms.author: painbar
 ---
 
 # Remotely configure Power BI app using mobile device management (MDM) tool

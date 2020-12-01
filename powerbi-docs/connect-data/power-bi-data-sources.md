@@ -2,12 +2,12 @@
 title: Power BI data sources
 description: This article lists the data sources that Power BI supports, including information about DirectQuery and the on-premises data gateway.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 10/07/2020
-ms.author: davidi
+ms.date: 11/17/2020
 ---
 
 # Power BI data sources
@@ -57,7 +57,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Folder | Yes | Yes | No | Yes | Yes | Yes |
 | GitHub | Yes | Yes | No | No | No | No |
 | Google Analytics | Yes | Yes | No | No | No | No |
-| Google BigQuery | Yes | Yes | Yes | No | No | Yes |
+| Google BigQuery | Yes | Yes | Yes | Yes | No | Yes |
 | Hadoop File (HDFS) | Yes | No | No | No | No | No |
 | Hive LLAP | Yes | Yes | Yes | Yes | No | No |
 | HDInsight Interactive Query | Yes | Yes | Yes | No | No | No |
@@ -143,7 +143,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 
 <sup>6</sup> Required for .html, .xls, and Access Databases
 
-<sup>7</sup> Power BI service doesn't support OData feeds that require authentication.
+<sup>7</sup> Power BI service doesn't support generic OAuth2.
 
 <sup>8</sup> Paxata is supported in the version of Power BI Desktop optimized for Power BI Report Server. It isn't supported in Power BI reports published to Power BI Report Server. See [Power BI report data sources in Power BI Report Server](../report-server/data-sources.md) for the list of supported data sources.
 

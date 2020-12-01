@@ -2,15 +2,14 @@
 title: Getting around in Power BI service
 description: Overview of the Power BI navigation experience
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: G26dr2PsEpk
 ms.custom: seodec18
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: quickstart
 ms.date: 10/12/2020
-ms.author: mihart
 #customer intent: As a PBI consumer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently. 
 LocalizationGroup: Get started
 ---
