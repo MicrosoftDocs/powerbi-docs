@@ -55,8 +55,6 @@ You can edit your shortcut phrase by using the **Siri shortcut** button on the *
 ## Create a home screen shortcut from your Siri shortcut 
 Once you’ve created a Siri shortcut to some Power BI content, you can add it to your device’s home screen as well, so you can open that content directly from your home screen with a single tap. Follow the instructions at https://support.apple.com/en-il/guide/shortcuts/apd735880972/ios.
 
-
-
 ## Delete Siri shortcut 
 To delete a shortcut, go to the item, and from the actions menu (...), tap the **Siri shortcut** action. The **Siri shortcut** page will open. Choose **Delete Shortcut**.
 
