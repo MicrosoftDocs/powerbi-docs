@@ -8,13 +8,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 01/15/2020
+ms.date: 12/01/2020
 ---
 # Using Siri Shortcuts in Power BI Mobile iOS App
 
 Use Siri Shortcuts to directly access the Power BI content you need.
 
-To get easy and quick access to your frequently used reports or dashboards, use the Siri Shortcuts integration. Create a shortcut to your item, and then you can ask Siri to launch it whenever you need look at the data.
+To get easy and quick access to your frequently used reports or dashboards, you can create a Siri Shortcut for direct access to the Power BI content you need. With a Siri Shortcut, you just need to ask Siri to open it whenever you need look at the data.
+
+> [!NOTE]
+> The Siri Shortcuts integration with the Power BI mobile app is available for iPhones and iPads running iOS12 and later.
 
 ## Create Siri shortcut for a report or dashboard
 
@@ -49,13 +52,11 @@ For a Power BI report, you will land on the page captured when you created the s
 ## Edit Siri shortcut phrase 
 You can edit your shortcut phrase by using the **Siri shortcut** button on the **Report** or **Dashboard** actions menu (...). The Siri shortcut page will be opened with an option to **Re-Record phrase**. 
 
+## Create a home screen shortcut from your Siri shortcut 
+Once you’ve created a Siri shortcut to some Power BI content, you can add it to your device’s home screen as well, so you can open that content directly from your home screen with a single tap. Follow the instructions at https://support.apple.com/en-il/guide/shortcuts/apd735880972/ios.
+
 ## Delete Siri shortcut 
 To delete a shortcut, go to the item, and from the actions menu (...), tap the **Siri shortcut** action. The **Siri shortcut** page will open. Choose **Delete Shortcut**.
-
-
-> [!NOTE]
-> Siri Shortcuts integration with Power BI app is available for iPhone and iPad running on iOS12 and later.
-> 
 
 ## Next steps
 Learn more about the Power BI mobile app by doing the following: 
@@ -63,4 +64,3 @@ Learn more about the Power BI mobile app by doing the following:
 * Downloading the [Power BI iPhone mobile app](https://go.microsoft.com/fwlink/?LinkId=522062)
 * Following [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
 * Joining the conversation at the [Power BI Community](https://community.powerbi.com/)
-
