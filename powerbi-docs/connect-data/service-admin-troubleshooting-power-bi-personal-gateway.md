@@ -2,14 +2,12 @@
 title: Troubleshooting Power BI gateway (personal mode)
 description: Troubleshooting Power BI gateway (personal mode)
 author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
 ms.date: 5/06/2019
-ms.author: arthii
-
 LocalizationGroup: Troubleshooting
 ---
 

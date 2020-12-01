@@ -2,14 +2,12 @@
 title: Dynamic M query parameters in Power BI Desktop (preview)
 description: Create dynamic M query parameters in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 10/22/2020
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Dynamic M query parameters in Power BI Desktop (preview)

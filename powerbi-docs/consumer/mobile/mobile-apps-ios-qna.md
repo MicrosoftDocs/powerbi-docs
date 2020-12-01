@@ -2,15 +2,13 @@
 title: 'Q&A virtual analyst in iOS apps - Power BI'
 description: Ask questions about sample data in your own words with the Q&A virtual analyst in the Power BI mobile app on on your iOS device.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
-ms.author: painbar
 #customer intent: As a Power BI end user, I want to see how the virtual analyst works in the iOS mobile apps so I can use the analyst to explore my own data. 
-
 ---
 # Q&A virtual analyst in iOS apps - Power BI
 

@@ -2,15 +2,13 @@
 title: Dynamic row-level security with Analysis services tabular model
 description: 'Dynamic row-level security with on-premises Analysis services tabular model'
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: davidi
 editor: davidi
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: tutorial
 ms.date: 01/17/2020
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Implement row-level security in an on-premises Analysis Services tabular model

@@ -2,14 +2,12 @@
 title: Save a paginated report to OneDrive for Business or SharePoint Online
 description: In this article, you use Power Automate to automate saving a Power BI paginated report to OneDrive for Business or a SharePoint Online folder.  
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 11/17/2020
-ms.author: maggies
-
 LocalizationGroup: Get started
 ---
 # Save a paginated report to OneDrive for Business or SharePoint Online

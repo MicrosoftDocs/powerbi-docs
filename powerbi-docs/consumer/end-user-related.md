@@ -2,15 +2,13 @@
 title: See related content from dashboards, reports, and datasets
 description: Navigation made easier, see related content in dashboards, reports, and datasets
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: B2vd4MQrz4M
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/25/2020
-ms.author: mihart
-
 LocalizationGroup: Get started
 ---
 # See related content in the Power BI service

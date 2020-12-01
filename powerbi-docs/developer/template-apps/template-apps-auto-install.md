@@ -1,9 +1,8 @@
 ---
 title: Automate configuration of template app installation for your customers
 description: Learn about automating the configuration of template app installation.
-author: PaulInbar
+author: paulinbar
 ms.author: painbar
-
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer

@@ -2,14 +2,12 @@
 title: Export your reports to PDF format from Power BI Desktop
 description: Easily export to PDF from Power BI Desktop, and easily print those PDF reports
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 02/28/2019
-ms.author: davidi
-
 LocalizationGroup: Create reports
 ---
 # Export reports to PDF from Power BI Desktop

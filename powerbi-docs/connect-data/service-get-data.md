@@ -2,14 +2,12 @@
 title: Data sources for Power BI
 description: Data sources for Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 08/29/2019
-ms.author: davidi
-
 LocalizationGroup: Get started
 ---
 # Data sources for the Power BI service

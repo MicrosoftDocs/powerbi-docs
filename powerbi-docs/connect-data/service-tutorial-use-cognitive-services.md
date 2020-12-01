@@ -2,16 +2,14 @@
 title: 'Tutorial: Use Cognitive Services in Power BI (Preview)'
 description: In this tutorial you use Cognitive Services and dataflows in Power BI.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: SarinaJoan
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.custom: connect-to-services
 ms.topic: tutorial
 ms.date: 02/20/2020
-ms.author: davidi
 #customer intent: "As a Power BI end user, I want to use Cognitive Services, so I can use create dataflows in Power BI."
-
 LocalizationGroup: Connect to services
 ---
 

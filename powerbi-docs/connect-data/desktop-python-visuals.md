@@ -2,14 +2,12 @@
 title: Create Power BI visuals using Python in Power BI Desktop
 description: Create Power BI visuals using Python
 author: otarb
+ms.author: otarb
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 04/03/2020
-ms.author: otarb
-
 LocalizationGroup: Create reports
 ---
 # Create Power BI visuals by using Python
