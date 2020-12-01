@@ -74,6 +74,8 @@ You can easily create a home screen shortcut from any Siri shortcut you've creat
 
     ![Screenshot of edit name and add screen.](./media/mobile-apps-ios-siri-search/power-bi-mobile-shortcuts-edit-name-add.png)
 
+See the [Shortcuts User Guide](https://support.apple.com/guide/shortcuts/apd735880972/ios) on support.apple.com for more detail about creating shortcuts on iOS devices. 
+
 ## Delete Siri shortcut 
 To delete a shortcut, go to the item, and from the actions menu (...), tap the **Siri shortcut** action. The **Siri shortcut** page will open. Choose **Delete Shortcut**.
 
