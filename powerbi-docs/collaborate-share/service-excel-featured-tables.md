@@ -2,13 +2,12 @@
 title: Access Power BI featured tables in Excel (preview)
 description: In Excel, you can find data from featured tables in Power BI datasets in the Data Types Gallery. 
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 08/04/2020
-ms.author: maggies
-
 LocalizationGroup: Share your work
 ---
 # Access Power BI featured tables in Excel (preview)

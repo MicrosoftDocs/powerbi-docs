@@ -2,14 +2,12 @@
 title: Create a visual with Power BI Q&A
 description: 'Learn to create a visual with Q&A in the Power BI service using the Retail Analysis sample'
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/13/2019
-ms.author: maggies
-
 LocalizationGroup: Ask questions of your data
 ---
 

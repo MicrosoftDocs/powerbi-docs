@@ -2,14 +2,12 @@
 title: Conditional table formatting in Power BI Desktop
 description: Apply customized formatting to tables
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/06/2020
-ms.author: davidi
-
 LocalizationGroup: Create reports
 ---
 # Use conditional formatting in tables 

@@ -1,15 +1,13 @@
 ---
 title: Create a QR code for a tile to use in Power BI mobile apps
 description: QR codes in Power BI tiles can connect anything in the real world directly to related BI information in the Power BI mobile app, no search needed.
-author: maggiesMSFT
+author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 03/07/2018
-ms.author: maggies
-
 LocalizationGroup: Dashboards
 ---
 # Create a QR code for a tile in Power BI to use in the mobile apps

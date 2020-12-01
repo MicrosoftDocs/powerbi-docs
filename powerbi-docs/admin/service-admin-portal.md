@@ -1,13 +1,13 @@
 ---
 title: Power BI admin portal
 description: The admin portal lets you configure org-wide settings for Power BI. You can view usage metrics, configure tenant settings, work with capacity, view workspaces, organizational visuals, and featured content.
-author: kfollis
+author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 10/22/2020
-ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
 ---

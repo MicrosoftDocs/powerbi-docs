@@ -4,7 +4,7 @@ description: Learn how to migrate from Power BI Workspace Collection to the Powe
 author: KesemSharabi
 ms.author: kesharab
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/30/2018
 ---

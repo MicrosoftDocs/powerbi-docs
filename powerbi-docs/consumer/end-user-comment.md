@@ -2,15 +2,13 @@
 title: Add comments to dashboards and reports
 description: This document shows how to add comments to a dashboard, report, or visual and how to use comments to have conversations with collaborators.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: 
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/25/2020
-ms.author: mihart
-
 LocalizationGroup: Consumer
 ---
 # Add comments to a dashboard or report

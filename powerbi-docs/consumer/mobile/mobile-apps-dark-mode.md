@@ -2,13 +2,11 @@
 title: Dark mode
 description: Learn how to turn dark mode on and off.
 author: paulinbar
-
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 06/04/2020
-ms.author: painbar
-
 ---
 # Dark mode
 

@@ -2,14 +2,12 @@
 title: Opt in to the workspace 'new look' (preview)
 description: Workspaces have a new look that coincides with the new look of the Power BI service.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: nikhilga
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 04/15/2020
-ms.author: maggies
-
 LocalizationGroup: Share your work
 ---
 # Opt in to the workspace 'new look' (preview)

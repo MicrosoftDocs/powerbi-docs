@@ -2,14 +2,12 @@
 title: Get data from Excel workbook files
 description: Learn how to get data from Excel workbook files into Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 09/06/2019
-ms.author: davidi
-
 LocalizationGroup: Data from files
 ---
 # Get data from Excel workbook files

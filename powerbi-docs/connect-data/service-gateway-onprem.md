@@ -5,7 +5,7 @@ author: arthiriyer
 ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 07/15/2019

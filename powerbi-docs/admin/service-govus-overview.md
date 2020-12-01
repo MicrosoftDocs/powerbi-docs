@@ -2,15 +2,13 @@
 title: Power BI for US government customers - Overview
 description: US government customers can add a Power BI Pro subscription to their Microsoft 365 government plan. Learn how to sign up, connect, and review feature availability in this service description. 
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/17/2020
-ms.author: kfollis
 ms.custom: licensing support
-
 LocalizationGroup: Get started
 ---
 

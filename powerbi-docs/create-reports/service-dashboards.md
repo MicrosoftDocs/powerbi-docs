@@ -2,14 +2,12 @@
 title: Intro to dashboards for Power BI designers
 description: Dashboards are a key feature of Power BI service. They're a single page, often called a canvas, that tells a story through visualizations.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 09/19/2019
-ms.author: maggies
-
 LocalizationGroup: Dashboards
 ---
 # Introduction to dashboards for Power BI designers

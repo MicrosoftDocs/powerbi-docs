@@ -2,12 +2,12 @@
 title: Learn how buttons work in the Power BI service
 description: Buttons can be used to launch various actions including in-report navigation, drillthrough, and cross-report drillthrough
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/10/2020
-ms.author: mihart
 LocalizationGroup: Reports
 ---
 # Buttons in the Power BI service

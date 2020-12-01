@@ -1,15 +1,13 @@
 ---
 title: Tips and tricks for formatting in reports
 description: Tips and tricks for formatting in Power BI reports
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: 'mihart'
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: conceptual
 ms.date: 10/29/2020
-ms.author: rien
-
 LocalizationGroup: Visualizations
 ---
 # Tips and tricks for formatting in reports

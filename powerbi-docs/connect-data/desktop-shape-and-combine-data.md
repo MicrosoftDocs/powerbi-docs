@@ -2,14 +2,12 @@
 title: "Tutorial: Shape and combine data in Power BI Desktop"
 description: In this tutorial, you learn how to shape and combine data in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: tutorial
 ms.date: 10/18/2019
-ms.author: davidi
-
 LocalizationGroup: Transform and shape data
 #Customer intent: As a data analyst or report creator, I want to connect to more than one data source, so that I can use those data sources to create data models and build reports..
 ---
