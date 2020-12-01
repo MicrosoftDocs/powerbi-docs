@@ -53,29 +53,9 @@ For a Power BI report, you will land on the page captured when you created the s
 You can edit your shortcut phrase by using the **Siri shortcut** button on the **Report** or **Dashboard** actions menu (...). The Siri shortcut page will be opened with an option to **Re-Record phrase**. 
 
 ## Create a home screen shortcut from your Siri shortcut 
-You can easily create a home screen shortcut from any Siri shortcut you've created. Just find your Siri shortcut in the Shortcuts app on your iOS device and follow the instructions given in the [Shortcuts User Guide](https://support.apple.com/guide/shortcuts/apd735880972/ios) at support.apple.com.
+Once you’ve created a Siri shortcut to some Power BI content, you can add it to your device’s home screen as well, so you can open that content directly from your home screen with a single tap. Follow the instructions at https://support.apple.com/en-il/guide/shortcuts/apd735880972/ios.
 
-1. Open the **Shortcuts** app on your iOS device.
 
-   ![Screenshot of the Shortcuts app icon on i O S.](./media/mobile-apps-ios-siri-search/power-bi-mobile-shortcuts-app.png)
-
-1. In the Shortcuts app, find your Siri shortcut and tap on **More options (...)** to edit it.
-
-    ![Screenshot of shortcut more options.](./media/mobile-apps-ios-siri-search/power-bi-mobile-shortcuts-more-options.png)
-
-1. When the shortcut opens for editing, tap the three dots.
-
-    ![Screenshot of shortcut edit options.](./media/mobile-apps-ios-siri-search/power-bi-mobile-shortcuts-edit-options.png)
-
-1. Choose **Add to Home Screen**.
-
-    ![Screenshot of shortcut Add to Home Screen option.](./media/mobile-apps-ios-siri-search/power-bi-mobile-shortcuts-add-to-home-screen.png)
-
-1. Edit the shortcut name, if desired, and tap **Add**.
-
-    ![Screenshot of edit name and add screen.](./media/mobile-apps-ios-siri-search/power-bi-mobile-shortcuts-edit-name-add.png)
-
-See the [Shortcuts User Guide](https://support.apple.com/guide/shortcuts/apd735880972/ios) on support.apple.com for more detail about creating shortcuts on iOS devices. 
 
 ## Delete Siri shortcut 
 To delete a shortcut, go to the item, and from the actions menu (...), tap the **Siri shortcut** action. The **Siri shortcut** page will open. Choose **Delete Shortcut**.
