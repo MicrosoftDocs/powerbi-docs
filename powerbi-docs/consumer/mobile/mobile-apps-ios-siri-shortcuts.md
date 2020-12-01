@@ -85,4 +85,3 @@ Learn more about the Power BI mobile app by doing the following:
 * Downloading the [Power BI iPhone mobile app](https://go.microsoft.com/fwlink/?LinkId=522062)
 * Following [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
 * Joining the conversation at the [Power BI Community](https://community.powerbi.com/)
-
