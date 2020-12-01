@@ -114,7 +114,7 @@ Use the Azure AD manual app registration only if you're creating one of the foll
 
 * An *embed for your organization* application.
 
-* An *embed for your customers* application with a *master user*.
+* An *embed for your customers* application with a *service principal*.
 
     >[!NOTE]
     >If you choose this option, after you register your Azure AD app you'll have to [add Power BI permissions](#change-your-azure-ad-apps-permissions) to it.
