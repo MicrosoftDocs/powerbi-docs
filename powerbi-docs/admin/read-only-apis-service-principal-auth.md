@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 11/13/2020
+ms.date: 12/01/2020
 ms.author: painbar
 ms.custom:
 
