@@ -12,13 +12,18 @@ ms.date: 12/02/2020
 #Customer intent: As an ISV developer, I want to embed a report, dashboard or tile into an application so that my customers can share data.
 ---
 
-# Tutorial: Embed Power BI content into an application for your customers
+# Tutorial: Embed Power BI content using a sample *embed for your customers* application
 
-**Embedded analytics** and **Power BI Embedded** (the Azure offer) allow you to embed reports, dashboards and tiles, into your application or web app.
+**Embedded analytics** and **Power BI Embedded** (the Azure offer) allow you to embed Power BI content such as reports, dashboards and tiles, into your application.
 
-In this tutorial, you'll learn how to create an *embed for your customers* (also known as *app owns data*) application. To use your application, your users will not need to sign in to Power BI or have a Power BI license.
+In this tutorial, you'll learn how to:
+>[!div class="checklist"]
+>* Set up your embedded environment.
+>* Configure an *embed for your customers* (also known as *app owns data*) sample application.
 
-Use the *embed for your customers* method to embed your Power BI content, if you're an independent software vendor (ISV) or a developer, who wants to create applications for third parties.
+To use your application, your users will not need to sign in to Power BI or have a Power BI license.
+
+We recommend using the *embed for your customers* method to embed your Power BI content, if you're an independent software vendor (ISV) or a developer, who wants to create applications for third parties.
 
 ## Code sample specifications
 
@@ -52,10 +57,10 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
         * [Power BI Pro account](../../admin/service-admin-purchasing-power-bi-pro.md) - This will be your **master user** and your app will use it to sign in to your Power BI Pro account.
 
+        * A Power BI [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) license - This will be your **master user** and your app will use it to sign in to your Power BI Pro account.
+
     >[!NOTE]
-    >To experiment with embedding, you can use one of these methods:
-    >* Sign up for a [free *Power BI pro* trial](https://powerbi.microsoft.com/pricing/).
-    >* Use a Premium Per User (PPU) license. You'll not be able to [move to production](move-to-production.md).
+    >To [move to production](move-to-production.md) you'll need a [capacity](embedded-capacity.md).
 
 * **Code dependencies**
 
@@ -115,7 +120,7 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 To create an *embed for your customers* sample app, follow these steps:
 
 >[!TIP]
->You can crete a ready made sample app using the the [embedding setup tool](https://app.powerbi.com/embedsetup). This tool replicates the steps described in this tutorial, and produces a .NET sample app that you can experiment with.
+>You can create a ready made sample app using the the [embedding setup tool](https://app.powerbi.com/embedsetup). This tool replicates the steps described in this tutorial, and produces a .NET sample app that you can experiment with.
 
 1. [Select your authentication method](#step-1---select-your-authentication-method).
 
@@ -135,27 +140,24 @@ To create an *embed for your customers* sample app, follow these steps:
 
 ## Step 1 - Select your authentication method
 
-To embed your Power BI content, you'll need to create an Azure AD app, which will authenticate itself against Power BI. Authenticating against Azure AD allows your embedded app to get an Azure AD token, which lists the permissions (also known as scopes) for the Power BI REST APIs.
-
 You're embedded solution will vary depending on the authentication method you select. Therefore, it's important to understand the differences between the authentication methods, and decide which one best suits your solution.
 
 The table below describes a few key differences between the [service principal](embed-service-principal.md) and **master user** authentication methods.
 
 |Consideration  |Service principal  |Master user  |
 |---------|---------|---------|
-|Mechanism     |Your Azure AD app's [service principal object](/azure/active-directory/develop/app-objects-and-service-principals.md#service-principal-object) allows Azure AD to authenticate your embedded solution app against Power BI.         |Your Azure AD app uses the credentials (username and password) of a Power BI user, to authenticate against Power BI.         |
+|Mechanism     |Your Azure AD app's [service principal object](/azure/active-directory/develop/app-objects-and-service-principals.md#service-principal-object) allows Azure AD to authenticate your embedded solution app against Power BI.</br></br>Authenticating against Azure AD allows your embedded app to get an Azure AD token, which lists the permissions (also known as scopes) for the Power BI REST APIs.         |Your Azure AD app uses the credentials (username and password) of a Power BI user, to authenticate against Power BI.</br></br>The *master user* credentials determine which Power BI content your app can access.         |
 |Security     |*Service principal* is the Azure AD recommended authorization method. If you're using a *service principal* you can authenticate using either an *application secret* or a *certificate*.</br></br>This tutorial only describes using *service principal* with an *application secret*. To embed using a *service principal* and a *certificate*, refer to the [service principal with a certificate](embed-service-principal-certificate.md) article.         |This authentication method is not considered as secure as using a *service principal*. This is because you have to be vigilant with the *master user* credentials (username and password). For example, you must not expose them in your embedding application, and you should change the password frequently.         |
+|Power BI service access |You can't access Power BI service with a *service principal*.|You can access Power BI service with your *master user* credentials.|
 |License     |Doesn't require a Pro license. You can use content from any workspace that you're a member or an admin of.         |Requires a [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) license.         |
 
 ## Step 2 - Register an Azure AD application
 
 Registering your application with Azure AD allows you to:
-
-* Establish an identity for your app
-
-* Specify your app's [Power BI REST permissions](/azure/active-directory/develop/v2-permissions-and-consent)
-
-* Let your app access the [Power BI REST APIs](/rest/api/power-bi/)
+> [!div class="checklist"]
+>* Establish an identity for your app
+>* Specify your app's [Power BI REST permissions](/azure/active-directory/develop/v2-permissions-and-consent)
+>* Let your app access the [Power BI REST APIs](/rest/api/power-bi/)
 
 To register your application with Azure AD, follow the instructions in [Register your application](register-app.md).
 
@@ -313,13 +315,7 @@ To enable your Azure AD app access artifacts such as reports, dashboards and dat
 3. In the **Access** pane, depending on which authentication method you're using, copy the *service principal* or *master user* to the **Enter email address** text box.
 
     >[!NOTE]
-    >If you're using a *service principal*, follow these steps to get its name:
-    >1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
-    >2. Search for **App registrations** and select the **App registrations** link.
-    >3. Select the Azure AD app your using for embedding your Power BI content.
-    >4. From the **Overview** blade, copy the **Display name**. This is the name of your *service principal*.
-
-4. From the dropdown menu, select **Admin** or **Member**.
+    >If you're using a *service principal*, its name is the name you gave your Azure AD app.
 
 5. Select **Add**.
 
@@ -576,6 +572,13 @@ Follow these steps to modify the *embed for your customers* sample application, 
     b. Open a new tab in your browser and navigate to [http://localhost:5300](http://localhost:5300).
 
 ---
+
+## Move to production
+
+After configuring and running the *embed for customers* sample application, you can start developing your own application.
+
+When you're ready, review the [move to production](move-to-production.md) requirements. You'll also need a [capacity](embedded-capacity.md), and should review the [capacity planning](embedded-capacity-planning.md) article to establish witch SKU suites your needs.
+
 
 ## Next steps
 
