@@ -2,12 +2,12 @@
 title: Find Power BI users that have signed in
 description: If you're an admin, and want to see who has signed into Power BI, you can use the Azure Active Directory access and usage reports/
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 09/25/2020
-ms.author: kfollis
 LocalizationGroup: Administration
 ---
 

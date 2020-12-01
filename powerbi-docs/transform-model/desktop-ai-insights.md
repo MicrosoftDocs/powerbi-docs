@@ -2,14 +2,12 @@
 title: Connect to AI Insights in Power BI Desktop
 description: Easily connect to and use data from AI Insights in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 06/10/2020
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Use AI Insights in Power BI Desktop

@@ -2,15 +2,13 @@
 title: Visual types in Power BI for business users
 description: Visual types in Power BI service
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/07/2020
-ms.author: mihart
 ms.custom: contperfq4
-
 LocalizationGroup: Consumer
 ---
 # Visual types in Power BI

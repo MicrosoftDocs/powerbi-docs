@@ -4,12 +4,10 @@ description: Query caching in Power BI Premium
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: 'bhmerc'
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 10/04/2019
-
 LocalizationGroup: 
 ---
 

@@ -5,8 +5,8 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
-ms.topic: troubleshooting
 ms.subservice: powerbi-custom-visuals
+ms.topic: troubleshooting
 ms.date: 11/06/2018
 ---
 

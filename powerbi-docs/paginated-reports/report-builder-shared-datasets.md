@@ -1,13 +1,12 @@
 ---
 title: "Create a paginated report with a Power BI shared dataset - Power BI Report Builder"
 description: Create a paginated report in Power BI Report Builder based on a Power BI shared dataset.
+author: maggiesMSFT
+ms.author: maggies
 ms.date: 11/18/2020
 ms.service: powerbi
 ms.subservice: report-builder
-
 ms.topic: how-to
-author: maggiesMSFT
-ms.author: maggies
 ---
 # Create a paginated report based on a Power BI shared dataset
 

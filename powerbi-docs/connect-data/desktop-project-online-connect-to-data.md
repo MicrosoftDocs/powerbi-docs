@@ -2,15 +2,13 @@
 title: 'Project Online: connect to data through Power BI Desktop'
 description: 'Project Online: connect to data through Power BI Desktop'
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 04/01/2020
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Connect to Project Online data through Power BI Desktop

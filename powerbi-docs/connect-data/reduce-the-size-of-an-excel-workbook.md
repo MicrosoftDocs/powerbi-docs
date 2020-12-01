@@ -2,14 +2,12 @@
 title: Reduce the size of an Excel workbook to view it in Power BI
 description: Reduce the size of an Excel workbook to view it in Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/10/2019
-ms.author: davidi
-
 LocalizationGroup: Data from files
 ---
 # Reduce the size of an Excel workbook to view it in Power BI

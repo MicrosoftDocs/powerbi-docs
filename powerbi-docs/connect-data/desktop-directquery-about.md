@@ -2,14 +2,12 @@
 title: Using DirectQuery in Power BI
 description: Understand using DirectQuery with Power BI and best practices for how and when to use DirectQuery or other options
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 11/17/2020
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # About using DirectQuery in Power BI

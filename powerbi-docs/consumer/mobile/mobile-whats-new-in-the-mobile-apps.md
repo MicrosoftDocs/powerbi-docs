@@ -2,14 +2,12 @@
 title: What's new in the mobile apps for Power BI
 description: What's new in the mobile apps for Power BI
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/30/2020
-ms.author: painbar
-
+ms.date: 12/01/2020
 ---
 # What's new in the mobile apps for Power BI
 For related "What's New" information, see:

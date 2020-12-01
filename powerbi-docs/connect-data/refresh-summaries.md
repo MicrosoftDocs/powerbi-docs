@@ -2,14 +2,12 @@
 title: Refresh summaries for Power BI
 description: Learn how to use refresh summaries in Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: 
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 08/27/2020
-ms.author: davidi
-
 LocalizationGroup: Data refresh
 ---
 

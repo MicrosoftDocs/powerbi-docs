@@ -1,17 +1,15 @@
 ---
 title: "The 'new look': Where did the actions go?"
 description: The Power BI service (app.powerbi.com) has a new look, and many actions have moved. This article features tables mapping the old locations to the new.
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 ms.reviewer: maggies
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 10/22/2020
-ms.author: maggies
 # Customer intent: As a Power BI customer or potential customer, I'd like to know what the differences are between the previous look of the Power BI service and the new look
 LocalizationGroup: Get started
-
 ---
 # The 'new look': Where did the actions go?
 

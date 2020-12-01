@@ -2,12 +2,12 @@
 title: Migrate your Power BI subscription to the new Local German regions
 description: Provides information about how existing Microsoft Cloud Germany (Microsoft Cloud Deutschland) customers can migrate their Power BI users to new Local German regions.
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/02/2020
-ms.author: kfollis
 LocalizationGroup: Administration
 ---
 
