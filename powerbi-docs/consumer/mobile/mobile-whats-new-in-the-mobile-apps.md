@@ -24,6 +24,8 @@ For related "What's New" information, see:
 
 Try out the new dark mode in the Power BI mobile app for Android devices. In dark mode, you'll see light text on a dark background, reducing the brightness of the screen and making it easier to see your content. You can switch between themes in the app appearance settings. [Learn more](mobile-apps-dark-mode.md)
 
+![Screenshot of dark mode in the Power BI mobile app for Android.](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-dark-mode-android.png)
+
 ### Maximize the view with full-screen mode (iPads)
 We've now added a new button to the mobile app for iPads that lets you remove app headers and footers, giving you the maximum space for viewing your content. Simply tap the full-screen toggle button ![Screenshot of full screen mode icon.](media/mobile-whats-new-in-the-mobile-apps/power-bi-full-screen-icon.png) in the top right corner of the screen to switch between modes.
 
