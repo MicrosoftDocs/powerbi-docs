@@ -75,7 +75,7 @@
     - name: "Track service health"
       href: service-admin-health.md
     - name: "Enable service principle authentication for read-only admin APIs"
-      href: read-only-apis-service-principal-auth.md
+      href: read-only-apis-service-principal-authentication.md
     - name: "Closing your account"
       href: service-admin-closing-your-account.md
     - name: "Using Azure AD B2B"
