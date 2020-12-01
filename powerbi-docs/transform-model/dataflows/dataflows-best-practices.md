@@ -2,14 +2,12 @@
 title: Dataflows best practices
 description: A collection of best practice links and guidance for dataflows
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 11/13/2020
-ms.author: davidi
-
 LocalizationGroup: Data from files
 ---
 # Dataflows best practices

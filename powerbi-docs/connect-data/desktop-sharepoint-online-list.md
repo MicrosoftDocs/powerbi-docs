@@ -2,14 +2,12 @@
 title: Create a report on a SharePoint List
 description: This tutorial shows how to transform your SharePoint List data into a Power BI report.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/10/2020
-ms.author: davidi
-
 LocalizationGroup: Visualizations
 ---
 # Create a report on a SharePoint List

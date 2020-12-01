@@ -2,13 +2,12 @@
 title: Upgrade classic workspaces to the new workspaces
 description: Learn about upgrading a classic workspace to the new workspace experience. You can upgrade any workspace, but you may need to be aware of and plan for some changes.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 09/30/2020
-ms.author: maggies
-
 LocalizationGroup: Share your work
 ---
 

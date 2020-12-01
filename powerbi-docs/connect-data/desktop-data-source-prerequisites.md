@@ -2,14 +2,12 @@
 title: Power BI data source prerequisites
 description: Power BI data source prerequisites
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 01/29/2020
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Power BI data source prerequisites

@@ -2,14 +2,12 @@
 title: Design filters in Power BI reports
 description: You have a lot of control over report filter design and functionality. 
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 11/11/2020
-ms.author: maggies
-
 LocalizationGroup: Reports
 ---
 # Design filters in Power BI reports

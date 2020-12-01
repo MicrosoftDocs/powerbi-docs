@@ -1,13 +1,13 @@
 ---
 title: View and manage Power BI user licenses
 description: How to information for admins to view and manage the Power BI user licenses in their organization.
-author: kfollis
+author: mihart
+ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 04/08/2020
-ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---

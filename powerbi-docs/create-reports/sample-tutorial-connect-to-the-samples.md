@@ -2,14 +2,13 @@
 title: Explore to the Retail Analysis sample
 description: Learn to install and explore the Retail Analysis sample in the Power BI service and in Power BI Desktop.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: amac
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 03/27/2020
-ms.author: maggies
-
 LocalizationGroup: Samples
 ---
 # Explore the Retail Analysis sample

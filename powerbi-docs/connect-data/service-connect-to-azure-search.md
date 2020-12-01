@@ -1,15 +1,13 @@
 ---
 title: Connect to Azure Search with Power BI
 description: Azure Search for Power BI
-author: SarinaJoan
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maggiesMSFT
-
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 08/29/2019
-ms.author: sarinas
-
 LocalizationGroup: Connect to services
 ---
 # Connect to Azure Search with Power BI

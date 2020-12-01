@@ -1,11 +1,11 @@
 ---
 title: Power BI get started with third-party apps
 description: Power BI get started with third-party apps
-ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: how-to
 author: maggiesMSFT
 ms.author: maggies
+ms.service: powerbi
+ms.subservice: pbi-collaborate-share
+ms.topic: how-to
 ms.reviewer: ""
 ms.cunstom: ""
 ms.date: 09/16/2019

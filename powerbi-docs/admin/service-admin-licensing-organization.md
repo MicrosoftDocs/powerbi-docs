@@ -1,16 +1,14 @@
 ---
 title: Power BI licensing for users in your organization 
 description: Overview of the different user license types available in Power BI and how admins purchase and manage licensing for users in their organization.
-author: kfollis
+author: mihart
+ms.author: mihart
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/11/2020
-ms.author: kfollis
 ms.custom: licensing support
-
 LocalizationGroup: Administration
 ---
 

@@ -2,14 +2,12 @@
 title: Use the Analyze feature to explain fluctuations in report visuals 
 description: Easily gain insights to increases or decreases in Power BI service
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 08/12/2020
-ms.author: mihart
-
 LocalizationGroup: Create reports
 ---
 # Use the Analyze feature to explain fluctuations in report visuals

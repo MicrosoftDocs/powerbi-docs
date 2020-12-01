@@ -2,14 +2,12 @@
 title: Visual table and records in Power BI Desktop visuals
 description: Use the Visual table and Data point table features of Power BI Desktop to drill into details
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/21/2020
-ms.author: davidi
-
 LocalizationGroup: Learn more
 ---
 # Use Visual table and Data point table in Power BI Desktop

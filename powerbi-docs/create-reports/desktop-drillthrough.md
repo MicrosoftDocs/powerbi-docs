@@ -2,14 +2,12 @@
 title: Set up drill through in Power BI reports
 description: Learn how to use drill through to drill down into data, on a new report page, in Power BI reports
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 03/12/2020
-ms.author: maggies
-
 LocalizationGroup: Create reports
 ---
 # Set up drill through in Power BI reports

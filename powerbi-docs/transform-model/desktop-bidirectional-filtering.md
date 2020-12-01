@@ -2,14 +2,13 @@
 title: Bidirectional cross-filtering in Power BI Desktop
 description: Enable cross-filtering using DirectQuery in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 01/15/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
 ---
 # Enable bidirectional cross-filtering for DirectQuery in Power BI Desktop

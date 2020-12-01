@@ -1,15 +1,15 @@
 ---
 title: Export data from a Power BI visualization
 description: Export data from a report visualization and dashboard visualization and view it in Excel.
-author: msftrien
+author: mihart
+ms.author: mihart
 manager: kvivek
 ms.reviewer: 'tessa'
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 09/09/2020
-ms.author: rien
 LocalizationGroup: Visualizations
 ---
 

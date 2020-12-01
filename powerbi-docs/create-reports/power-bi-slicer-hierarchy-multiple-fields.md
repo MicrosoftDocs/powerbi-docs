@@ -2,14 +2,12 @@
 title: Add multiple fields to a hierarchy slicer
 description: Learn how to create a hierarchy slicer that contains multiple fields in a hierarchy.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 07/06/2020
-ms.author: maggies
-
 LocalizationGroup: Create reports
 ---
 # Add multiple fields to a hierarchy slicer

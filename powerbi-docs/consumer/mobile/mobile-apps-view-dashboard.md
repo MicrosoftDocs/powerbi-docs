@@ -2,14 +2,12 @@
 title: View dashboards in the Power BI mobile apps
 description: Create or connect to dashboards in the Power BI service. Then view them in the Power BI mobile apps.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 08/10/2020
-ms.author: painbar
-
 ---
 # View dashboards in the Power BI mobile apps
 Applies to:

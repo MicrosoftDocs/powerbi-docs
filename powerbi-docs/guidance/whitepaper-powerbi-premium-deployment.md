@@ -8,7 +8,6 @@ ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
 ms.date: 03/06/2019
-
 LocalizationGroup: Premium
 ---
 
