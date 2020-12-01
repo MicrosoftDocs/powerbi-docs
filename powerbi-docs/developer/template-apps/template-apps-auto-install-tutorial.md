@@ -72,7 +72,7 @@ Create a service principal as described in [Embed Power BI content with service 
 
 Make sure to register the application as a **server-side web application** app. You register a server-side web application to create an application secret.
 
-Save the *Application ID* (Client ID) and *Application secret* (Client Secret) for later steps.
+Save the *application ID* (ClientID) and *application secret* (ClientSecret) for later steps.
 
 You can go through the [Embedding setup tool](https://aka.ms/embedsetup/AppOwnsData) to quickly get started creating an app registration. If you're using the [Power BI App Registration Tool](https://app.powerbi.com/embedsetup), select the **Embed for your customers** option.
 
@@ -106,17 +106,17 @@ Download the [automated installation Azure Functions sample](https://github.com/
 
 ### Set up your Azure app configuration
 
-To run this sample, you need to set up your Azure app configuration with the values and keys as described here. The keys are the **Application ID**, the **Application secret**, and your template app's **AppId**, **PackageKey**, and **OwnerId** values. See the following sections for information about how to get these values.
+To run this sample, you need to set up your Azure app configuration with the values and keys as described here. The keys are the **application ID**, the **application secret**, and your template app's **AppId**, **PackageKey**, and **OwnerId** values. See the following sections for information about how to get these values.
 
 The keys are also defined in the **Constants.cs** file.
 
 | Configuration key | Meaning           |
 |---------------    |-------------------|
-| TemplateAppInstall:Application:AppId | **AppId** from the  [installation URL](#getting-the-template-app-properties) |
-| TemplateAppInstall:Application:PackageKey | **PackageKey** from the [installation URL](#getting-the-template-app-properties) |
-| TemplateAppInstall:Application:OwnerId | **OwnerId** from the [installation URL](#getting-the-template-app-properties) |
-| TemplateAppInstall:ServicePrincipal:ClientId | Service principal [Application ID](#getting-the-application-id) |
-| TemplateAppInstall:ServicePrincipal:ClientSecret | Service principal [Application secret](#getting-the-application-secret) |
+| TemplateAppInstall:Application:AppId | **AppId** from the  [installation URL](#get-the-template-app-properties) |
+| TemplateAppInstall:Application:PackageKey | **PackageKey** from the [installation URL](#get-the-template-app-properties) |
+| TemplateAppInstall:Application:OwnerId | **OwnerId** from the [installation URL](#get-the-template-app-properties) |
+| TemplateAppInstall:ServicePrincipal:ClientId | Service principal [application ID](#get-the-application-id) |
+| TemplateAppInstall:ServicePrincipal:ClientSecret | Service principal [application secret](#get-the-application-secret) |
 |||
 
 
@@ -152,11 +152,11 @@ To get the preceding values, follow these steps:
     https://app.powerbi.com/Redirect?action=InstallApp&appId=3c386...16bf71c67&packageKey=b2df4b...dLpHIUnum2pr6k&ownerId=72f9...1db47&buildVersion=5
     ```
 
-#### Get the Application ID
+#### Get the application ID
 
-Fill in the **applicationId** information with the **Application ID** from Azure. The **applicationId** value is used by the application to identify itself to the users from which you're requesting permissions.
+Fill in the **applicationId** information with the application ID from Azure. The **applicationId** value is used by the application to identify itself to the users from which you're requesting permissions.
 
-To get the **Application ID**, follow these steps:
+To get the application ID, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
@@ -164,19 +164,19 @@ To get the **Application ID**, follow these steps:
 
     ![Screenshot that shows app registrations search.](media/template-apps-auto-install/embed-sample-for-customers-003.png)
 
-1. Select the application that needs the **Application ID**.
+1. Select the application that needs the **application ID**.
 
     ![Screenshot that shows choosing an app.](media/template-apps-auto-install/embed-sample-for-customers-006.png)
 
-1. There's an **Application ID** that's listed as a GUID. Use this **Application ID** as the **applicationId** value for the application.
+1. There's an application ID that's listed as a GUID. Use this application ID as the **applicationId** value for the application.
 
     ![Screenshot that shows the applicationId value.](media/template-apps-auto-install/embed-sample-for-customers-007.png)
 
-#### Get the Application secret
+#### Get the application secret
 
 Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in Azure. This attribute works when you use the [service principal](../embedded/embed-service-principal.md).
 
-To get the **Application secret**, follow these steps:
+To get the application secret, follow these steps:
 
  1. Sign in to the [Azure portal](https://portal.azure.com).
 
@@ -184,9 +184,9 @@ To get the **Application secret**, follow these steps:
 
     ![Screenshot that shows App registration search.](media/template-apps-auto-install/embed-sample-for-customers-003.png)
 
-1. Select the application that needs to use the **Application secret**.
+1. Select the application that needs to use the **application secret**.
 
-    ![Screenshot that shows choosing an app.](media/template-apps-auto-install/embed-sample-for-customers-0038.png)
+    ![Screenshot shows choosing an app.](media/template-apps-auto-install/embed-sample-for-customers-0038.png)
 
 1. Select **Certificates and secrets** under **Manage**.
 
