@@ -21,6 +21,6 @@ To accommodate your individual viewing preferences, the Power BI mobile apps for
 >[!NOTE]
 >Device-level support for dark mode on Android devices is officially available from Android 10. On devices running earlier Android versions, dark mode in the Power BI mobile app can be controlled by the app's appearance settings.
 
-To switch between light and dark mode, or to let device settings determine the mode, go to **Settings > Preferences** and tap on **Appearance** to choose your desired mode.
+To switch between light and dark mode, or to let device settings determine the mode, go to the **Settings** page, scroll down to **Appearance**, tap it, and choose your desired mode.
 
 ![Appearance settings](media/mobile-apps-dark-mode/powerbi-mobile-appearance-settings.png)
