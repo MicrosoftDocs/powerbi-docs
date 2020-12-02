@@ -51,6 +51,8 @@ The following tables show the field list updates.
 |**Tooltips**       ||
 |![original tooltip](media/desktop-field-list/field-list-04a.png)     |![new tooltip](media/desktop-field-list/field-list-04b.png)    |
 
+## Field list icons
+
 There are new Field list icons as well. The following table shows the original icons and their new equivalent, and provides a brief description of each. 
 
 
