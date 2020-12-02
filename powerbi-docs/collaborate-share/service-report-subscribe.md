@@ -9,7 +9,6 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 12/01/2020
-ms.author: maggies
 
 LocalizationGroup: Common tasks
 ---
