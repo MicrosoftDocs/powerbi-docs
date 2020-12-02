@@ -14,6 +14,14 @@ ms.date: 12/02/2020
 
 An application embedding Power BI content such as reports and dashboards, needs to authenticate against both Azure Active Directory (Azure AD) and Power BI service.
 
+
+|Solution  |Authentication method  |Required token  |
+|---------|---------|---------|
+|Embed for your customers      |Service principal         |Azure AD token         |
+|Embed for your customers      |Master user         |Azure AD token         |
+|Embed for your organization     |Interactive (user's credentials)         |Azure AD token         |
+
+
 ## Azure AD token
 
 Before your application can access Power BI service, it must authenticate against Azure AD. This authentication process is done using an **Azure AD token** and is required for all [REST API](/rest/api/power-bi/) operations.
@@ -22,38 +30,30 @@ During the authentication process, your app will get [permissions](/azure/active
 
 By default, the Azure AD access token expires after an hour.
 
-:::row:::
-    :::column span="":::
-
-        ### Embed for your customers
+### Embed for your customers
         
-        In an *embed for your customers* solution, your app authenticates using one of these methods:
+In an *embed for your customers* solution, your app authenticates using one of these methods:
 
-        * [Service principal](embed-service-principal.md)
+* [Service principal](embed-service-principal.md)
 
-            Your app uses the Azure AD [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) to authenticate against Azure AD and get the Azure AD access token. Your app is authorized to access the Power BI REST APIs according to your Azure AD permissions.
+    Your app uses the Azure AD [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) to authenticate against Azure AD and get the Azure AD access token. Your app is authorized to access the Power BI REST APIs according to your Azure AD permissions.
 
-        * Master user
+* Master user
 
-            Your app uses a Power BI Pro account to authenticate against Azure AD and get the Azure AD access token. Your app is authorized to access the Power BI REST APIs according to your master user's account permissions. 
+    Your app uses a Power BI Pro account to authenticate against Azure AD and get the Azure AD access token. Your app is authorized to access the Power BI REST APIs according to your master user's account permissions. 
 
-        >[!NOTE]
-        >Requires specific licensing: A, EM, or P SKUs.       
+To embed using the *embed for your customers* solution, you'll need specific licensing: A, EM, or P SKUs.
 
-    :::column-end:::
-    :::column span="":::
+### Embed for your organization
 
-        ### Embed for your organization
+In an *embed for your customers* solution, your app users have Power BI accounts and use them to access your app. Your app then uses your customer's Power BI credentials to generate an Azure AD access token. The token allows your app to use access content and query data in accordance with the logged in user's permissions. Any Power BI content the user has access to, can be embedded.
 
-        In an *embed for your customers* solution, your app users have Power BI accounts and use them to access your app. Your app then uses your customer's Power BI credentials to generate an Azure AD access token. The token allows your app to use access content and query data in accordance with the logged in user's permissions. Any Power BI content the user has access to, can be embedded.
+The *embed for your organization* solution doesn't support A SKUs.
 
-        >[!NOTE]
-        >A SKUs are not supported.
-
-    :::column-end:::
-:::row-end:::
 
 ## Embed token
+
+Embed token's are needed when you're using the *embed for your customers* solution
 
 When accessing Power BI, the embed token specifies which content your application can access, and how long it can access it for. It also specifies your app's  access level (view, create, or edit).
 
