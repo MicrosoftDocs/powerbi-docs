@@ -124,9 +124,15 @@ The following datasets are not accessible by the XMLA endpoint. These datasetsâ€
 
 ## Security
 
-In addition to the XMLA Endpoint property being enabled read-write by the capacity admin, the tenant-level **Allow live connections** setting in the Power BI Admin Portal, also required for Analyze in Excel, must be enabled.
+In addition to the XMLA Endpoint property being enabled read-write by the capacity admin, the tenant-level settings **Allow live connections** and **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** must be enabled in the admin portal. These settings are enabled by default.
+
+**Allow live connections** is an export and sharing setting that also enables Analyze in Excel.
 
 :::image type="content" source="media/service-premium-connect-tools/allow-live-connections.png" alt-text="Export and sharing setting allow live connections.":::
+
+**Allow XMLA endpoints and Analyze in Excel with on-premises datasets** is an integration setting.
+
+:::image type="content" source="media/service-premium-connect-tools/allow-xmla-endpoints.png" alt-text="Integration setting allow XMLA endpoints.":::
 
 Access through the XMLA endpoint will honor security group membership set at the workspace/app level.
 
