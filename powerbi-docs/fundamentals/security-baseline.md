@@ -374,7 +374,7 @@ How to create queries with Azure
 
 ## Logging and Threat Detection
 
-*For more information, see the [Azure Security Benchmark: Logging and Threat Detection](https://docs.microsoft.com/en-us/azure/security/benchmarks/security-controls-v2-logging-threat-detection).*
+*For more information, see the [Azure Security Benchmark: Logging and Threat Detection](/azure/security/benchmarks/security-controls-v2-logging-threat-detection).*
 
 ### LT-2: Enable threat detection for Azure identity and access management
 
