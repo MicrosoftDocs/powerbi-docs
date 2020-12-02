@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 10/22/2020
+ms.date: 12/01/2020
 ms.author: maggies
 
 LocalizationGroup: Common tasks
@@ -136,11 +136,18 @@ Power BI administrators can use the Power BI audit logs to view details around s
 - Email subscriptions don't support R-powered custom visuals at this time.
 - Email subscriptions are sent with the report's default filter and slicer states. Any changes to the defaults that you make after subscribing don't show up in the email. Paginated reports do support this capability and allow you to set the specific parameter values per subscription.
 - Say you have a report with a live connection to Analysis Services, and you have the subscription set to run after data refresh. It will run the first time the Power BI service detects a change in your on-premises model when it polls the Analysis Services instance.  Power BI checks every hour for a change in the Analysis Services data model, to determine when to send the subscription.
-- The full report attachment feature is available on reports in an upgraded workspace with premium or premium-per-user. The attachment file must also be under 25 MB in size, and the report must have fewer than 20 pages. If these 3 conditions are not met, then the user will not be able to create subscriptions with full reports as attachments. Any existing subscriptions with full reports as attachments will be disabled, and the user will receive an email explaining the error:
-![Full report attachment error email](media/service-report-subscribe/full-report-attachment-error-email.png)
+- The full report attachment feature is available for reports that meet these three conditions:
+
+    - They're in an upgraded workspace with [Power BI Premium or Premium Per User](../admin/service-premium-what-is.md). 
+    - The attachment file is under 25 MB in size.
+    - The report has fewer than 20 pages. 
+    
+    If the report doesn't meet these three conditions, then you can't create subscriptions with full reports as attachments. Any existing subscriptions with full reports as attachments are disabled, and you receive an email explaining the error:
+    
+    :::image type="content" source="media/service-report-subscribe/full-report-attachment-error-email.png" alt-text="Full report attachment error email.":::
 
 ## Next steps
 
-- [Subscribe yourself and others to a paginated report in the Power BI service](../consumer/paginated-reports-subscriptions.md)
+- [Paginated reports in the Power BI service: Subscribe yourself and others](../consumer/paginated-reports-subscriptions.md)
 - More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-- [Read the blog post](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)
+- Read the [Power BI blog post about email subscriptions for dashboards](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)
