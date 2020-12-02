@@ -53,7 +53,7 @@ Before getting started, you need to have:
 
 * A [service principal (app-only token)](https://docs.microsoft.com/power-bi/developer/embedded/embed-service-principal) registered in the above tenant.
 
-* A parameterized [template app](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-overview) that is ready for installation. The template app must be created in the same tenant in which you register your application in Azure Active Directory (Azure AD). See [template app tips](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips.md) or [Create a template app in Power BI](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create) for more information.
+* A parameterized [template app](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-overview) that is ready for installation. The template app must be created in the same tenant in which you register your application in Azure Active Directory (Azure AD). See [template app tips](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips) or [Create a template app in Power BI](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create) for more information.
 
 * A **Power BI Pro license**. If you're not signed up for Power BI Pro, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
