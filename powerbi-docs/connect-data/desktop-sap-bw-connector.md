@@ -2,14 +2,12 @@
 title: Use the SAP Business Warehouse (BW) Connector in Power BI Desktop
 description: Use the SAP BW Connector in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/13/2020
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Use the SAP Business Warehouse connector in Power BI Desktop

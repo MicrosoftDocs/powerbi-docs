@@ -5,7 +5,7 @@ author: KesemSharabi
 ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-deployment
 ms.custom: contperfq1
 ms.date: 11/11/2020
 ---
@@ -178,6 +178,7 @@ There are two types of rules you can create:
 
 * Data source rules can only be defined for the following data sources:
     * Azure Analysis Services
+    * Azure Synapse
     * SQL Server Analysis Services (SSAS)
     * Azure SQL Server
     * SQL server

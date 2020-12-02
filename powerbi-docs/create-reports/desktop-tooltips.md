@@ -2,14 +2,12 @@
 title: Using report tooltip pages in Power BI 
 description: Tooltip pages in Power BI Desktop let you create rich hover-based tooltips for visuals in your reports
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 07/26/2019
-ms.author: davidi
-
 LocalizationGroup: Create reports
 ---
 # Create tooltips based on report pages in Power BI Desktop

@@ -2,13 +2,12 @@
 title: Create classic workspaces in Power BI
 description: Learn how to create classic workspaces, collections of dashboards, reports, and paginated reports built to deliver key metrics for your organization.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 10/29/2020
-ms.author: maggies
-
 LocalizationGroup: Share your work
 ---
 # Create classic workspaces in Power BI

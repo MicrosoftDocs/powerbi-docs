@@ -9,7 +9,6 @@ ms.subservice: powerbi-premium
 ms.topic: conceptual
 ms.date: 11/11/2020
 ms.custom:
-
 LocalizationGroup: Premium
 ---
 

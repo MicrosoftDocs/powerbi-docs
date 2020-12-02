@@ -8,7 +8,6 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 11/11/2020
-
 LocalizationGroup: Premium
 ---
 

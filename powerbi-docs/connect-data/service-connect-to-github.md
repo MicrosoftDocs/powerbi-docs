@@ -2,13 +2,11 @@
 title: Connect to GitHub with Power BI
 description: GitHub for Power BI
 author: paulinbar
-
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/19/2020
-ms.author: painbar
-
 LocalizationGroup: Connect to services
 ---
 # Connect to GitHub with Power BI

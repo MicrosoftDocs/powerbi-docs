@@ -1,14 +1,13 @@
 ---
 title: "Planning a report in Power BI Report Builder"
 description: Power BI Report Builder lets you create many kinds of paginated reports. To create a useful, easily understood report, it helps to plan first.
+author: maggiesMSFT
+ms.author: maggies
 ms.date: 07/25/2019
 ms.service: powerbi
 ms.subservice: report-builder
-
 ms.topic: conceptual
 ms.assetid: 79113505-1ce8-4f8c-9260-d861838f7813
-author: maggiesMSFT
-ms.author: maggies
 ---
 # Planning a report in Power BI Report Builder
 

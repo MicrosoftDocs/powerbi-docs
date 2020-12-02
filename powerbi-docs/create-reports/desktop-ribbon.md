@@ -2,14 +2,12 @@
 title: Use the updated ribbon in Power BI Desktop
 description: Easily navigate menus and commands with the new ribbon in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 05/21/2020
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Use the updated ribbon in Power BI Desktop

@@ -2,12 +2,12 @@
 title: Drill down and drill up in a visual
 description: This article shows how to drill down in a visual in the Microsoft Power BI service.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/10/2020
-ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 # Drill mode in a visual in Power BI

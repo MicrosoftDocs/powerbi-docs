@@ -2,13 +2,12 @@
 title: 'A quick look at the Mobile app home page'
 description: This article introduces you to the main features of the Mobile app home page.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 12/16/2019
-ms.author: painbar
 #customer intent: As a Power BI end user, I want at a glance to understand how to get around the Power BI mobile app.
 ---
 # A quick tour of the Mobile app home page

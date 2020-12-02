@@ -2,14 +2,12 @@
 title: 'Create a paginated report for Power BI Report Server'
 description: Learn how to create a paginated report for Power BI Report Server in a few simple steps.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 01/07/2020
-ms.author: maggies
-
 ---
 # Create a paginated report for Power BI Report Server
 In this article, you create a paginated report for Power BI Report Server in a few simple steps.

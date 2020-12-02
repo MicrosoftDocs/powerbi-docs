@@ -5,7 +5,7 @@ author: KesemSharabi
 ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-deployment
 ms.custom: contperfq1
 ms.date: 10/21/2020
 ---
@@ -281,6 +281,8 @@ This section lists most of the limitations in deployment pipelines.
 * Power BI items such as reports and dashboards that have Power BI [sensitivity labels](../admin/service-security-sensitivity-label-overview.md), cannot be deployed.
 
 * The maximum number of Power BI items that can be deployed in a single deployment is 300.
+
+* Downloading a PBIX file after deployment isn't supported.
 
 * For a list of workspace limitations, see [workspace assignment limitations](deployment-pipelines-get-started.md#workspace-assignment-limitations).
 

@@ -2,21 +2,17 @@
 title: 'Export paginated reports with Power Automate'
 description: Learn how to create Power Automate flows to export Power BI paginated reports.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 11/17/2020
-ms.author: maggies
-
 LocalizationGroup: Get started
 ---
 # Export Power BI paginated reports with Power Automate
 
 With [Power Automate](/power-automate/getting-started), you can automate exporting and distributing Power BI paginated reports to a variety of supported formats and scenarios. In this article, you learn which templates to use to build your own flows to export your paginated reports.  
-
-:::image type="content" source="media/service-automate-paginated-integration/Power-automate-export-paginated.png" alt-text="Screenshot of the Power Automate flow for exporting a paginated report":::
 
 ## Prerequisites  
 

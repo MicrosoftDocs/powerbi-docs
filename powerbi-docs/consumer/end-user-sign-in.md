@@ -2,14 +2,13 @@
 title: Sign in and sign out
 description: Learn how to sign in to Power BI service on the web and how to sign out.
 author: mihart
+ms.author: mihart
 ms.reviewer:  mihart
 Ms.custom: css_fy20Q4
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 10/06/2020
-ms.author: mihart
-
 LocalizationGroup: Get started
 ---
 

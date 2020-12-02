@@ -2,13 +2,12 @@
 title: When to use paginated reports in Power BI
 description: Guidance for when to use Power BI paginated reports.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: report-builder
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 01/04/2020
-ms.author: v-pemyer
 ---
 
 # When to use paginated reports in Power BI

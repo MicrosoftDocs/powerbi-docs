@@ -1,16 +1,14 @@
 ---
 title: Interacting with an ArcGIS map that has been shared with you
 description: 'Using ArcGIS Map for Power BI visual in reading view as a report consumer'
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: 'willt, lukasz'
 featuredvideoid: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 09/30/2020
-ms.author: rien
-
 LocalizationGroup: Visualizations
 ---
 # Create ArcGIS maps in Power BI

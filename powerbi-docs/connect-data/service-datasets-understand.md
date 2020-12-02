@@ -1,14 +1,13 @@
 ---
 title: Datasets in the Power BI service
 description: Understand Power BI service datasets, which represent a source of data ready for reporting and visualization.
-author: peter-myers
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 11/09/2019
-ms.author: v-pemyer
 ---
 
 # Datasets in the Power BI service

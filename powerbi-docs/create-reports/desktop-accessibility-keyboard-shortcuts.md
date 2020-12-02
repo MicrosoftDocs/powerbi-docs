@@ -2,14 +2,12 @@
 title: Keyboard shortcuts in Power BI Desktop
 description: How Power BI Desktop is accessible using keyboard shortcuts
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/28/2019
-ms.author: davidi
-
 LocalizationGroup: Create reports
 ---
 # Keyboard shortcuts in Power BI Desktop

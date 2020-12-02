@@ -126,4 +126,4 @@ The table also shows the considerations and limitation applicable to each RLS ty
 >[Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
 
 >[!div class="nextstepaction"]
->[Embed Power BI content with service principal and a certificate](embed-service-principal-certificate.md)
+>[Embed Power BI content with service principal](embed-service-principal.md)

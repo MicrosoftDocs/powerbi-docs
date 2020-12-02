@@ -2,14 +2,12 @@
 title: Guidance for deploying a data gateway for Power BI
 description: Learn best practices and considerations for deploying a gateway for Power BI.
 author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
-ms.author: arthii
-
 LocalizationGroup: Gateways
 ---
 

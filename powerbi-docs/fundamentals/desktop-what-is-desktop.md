@@ -2,14 +2,12 @@
 title: What is Power BI Desktop?
 description: Learn about Power BI Desktop and how to start using it.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-fundamentals
 ms.topic: overview
 ms.date: 07/23/2020
-ms.author: davidi
-
 LocalizationGroup: Get started
 #Customer intent: As a data analyst or report creator, I want to know what Power BI Desktop is, so that I can decide whether it has the features and services I need to create reports.
 ---

@@ -2,15 +2,13 @@
 title: Learn which R packages are supported
 description: R packages that are supported and unsupported in Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/06/2020
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Create visuals by using R packages in the Power BI service

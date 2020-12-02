@@ -2,14 +2,12 @@
 title: Optimize your data for Power BI quick insights
 description: Optimize your data for Power BI quick insights. If Power BI doesn't find insights in your data, here are some things you can do
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 03/02/2017
-ms.author: maggies
-
 LocalizationGroup: Dashboards
 ---
 # Optimize your data for Power BI Quick Insights

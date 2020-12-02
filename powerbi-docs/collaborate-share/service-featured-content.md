@@ -2,14 +2,12 @@
 title: Feature content on colleagues' Power BI Home page
 description: How to feature Power BI dashboards and reports on the Power BI Home page for colleagues in your organization.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: nikhilga
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 10/14/2020
-ms.author: maggies
-
 LocalizationGroup: Share your work
 ---
 # Feature content on colleagues' Power BI Home page

@@ -2,14 +2,12 @@
 title: Import and display KPIs in Power BI
 description: Import and display KPIs
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 05/08/2019
-ms.author: davidi
-
 LocalizationGroup: Model your data
 ---
 

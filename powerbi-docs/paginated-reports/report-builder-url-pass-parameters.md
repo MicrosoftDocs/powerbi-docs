@@ -1,11 +1,11 @@
 ---
 title: "Pass a report parameter in a URL for a paginated report - Power BI Report Builder"
 description: This topic describes how to pass report parameters to a report by including them in a paginated report URL.
+author: maggiesMSFT
+ms.author: maggies
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-author: maggiesMSFT
-ms.author: maggies
 ms.reviewer: "cfinlan"
 ms.custom: ""
 ms.date: 05/01/2020

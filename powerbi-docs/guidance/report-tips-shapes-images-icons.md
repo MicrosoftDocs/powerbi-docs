@@ -2,13 +2,13 @@
 title: Tips to improve analysis with shapes, images, and icons in Power BI reports
 description: Four tips to improve analysis with shapes, images, and icons in Power BI report visuals, in Power BI Desktop or the Power BI service.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 featuredvideoid: -gLwXonWNsI
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 03/25/2020
-ms.author: v-pemyer
 ---
 
 # Tips to improve analysis with shapes, images, and icons in Power BI reports

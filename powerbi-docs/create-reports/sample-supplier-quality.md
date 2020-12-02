@@ -2,14 +2,12 @@
 title: 'Supplier Quality Analysis sample for Power BI: Take a tour'
 description: 'Supplier Quality Analysis sample for Power BI: Take a tour'
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: amac
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 07/19/2019
-ms.author: maggies
-
 LocalizationGroup: Samples
 ---
 # Supplier Quality Analysis sample for Power BI: Take a tour

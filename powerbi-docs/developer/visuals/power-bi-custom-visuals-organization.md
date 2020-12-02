@@ -5,7 +5,7 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations

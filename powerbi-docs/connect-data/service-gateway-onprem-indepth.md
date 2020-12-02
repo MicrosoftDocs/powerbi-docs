@@ -2,14 +2,12 @@
 title: On-premises data gateway in-depth
 description: This article looks at the on-premises gateway in-depth. This looks at how the service works with Azure Active Directory and your local Active Directory when working with Analysis Services
 author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 07/15/2019
-ms.author: arthii
-
 LocalizationGroup: Gateways
 ---
 
