@@ -66,14 +66,14 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
     # [.NET Framework](#tab/net-framework)
     
-    * [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/) (or higher)
+    * [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
     
     * [Visual Studio](https://visualstudio.microsoft.com/)
     
     
     # [.NET Core](#tab/net-core)
     
-    * [.NET Core 3.1 SKD](https://dotnet.microsoft.com/download/dotnet-core) (or higher)
+    * [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (or higher)
     
     * An integrated development environment (IDE). We recommend using one of the following:
     
@@ -91,7 +91,7 @@ Before you start this tutorial, verify that you have both the Power BI and code 
     
     # [Node JS](#tab/node-js)
     
-    * [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/) (or higher)
+    * [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
     
     * An integrated development environment (IDE). We recommend using one of the following:
     
@@ -132,15 +132,15 @@ To create an *embed for your customers* sample app, follow these steps:
 
 5. [Get the embedding parameter values](#step-5---get-the-embedding-parameter-values).
 
-6. [Enable workspace access](#step-6---enable-workspace-access).
-
-7. [Service principal API access](#step-7---service-principal-api-access)
+6. [Service principal API access](#step-6---service-principal-api-access)
+ 
+7. [Enable workspace access](#step-7---enable-workspace-access).
 
 8. [Embed your content](#step-8---embed-your-content).
 
 ## Step 1 - Select your authentication method
 
-You're embedded solution will vary depending on the authentication method you select. Therefore, it's important to understand the differences between the authentication methods, and decide which one best suits your solution.
+Your embedded solution will vary depending on the authentication method you select. Therefore, it's important to understand the differences between the authentication methods, and decide which one best suits your solution.
 
 The table below describes a few key differences between the [service principal](embed-service-principal.md) and **master user** authentication methods.
 
@@ -300,31 +300,14 @@ To get the tenant ID GUID, follow these steps:
 >[!TIP]
 >**Applies to:** ![Does not apply to.](../../media/no.png)Service principal ![Applies to.](../../media/yes.png)Master user
 
-Obtain the *user name* and *password* of the Power BI user you're using as your **master user**. This is the same user you used to create a workspace and upload a report to, in Power BI service.
+Obtain the *username* and *password* of the Power BI user you're using as your **master user**. This is the same user you used to create a workspace and upload a report to, in Power BI service.
 
-## Step 6 - Enable workspace access
-
-To enable your Azure AD app access artifacts such as reports, dashboards and datasets in the Power BI service, add the *service principal* or *master user*, as a *member* or *admin* to your workspace.
-
-1. Sign in to Power BI service.
-
-2. Scroll to the workspace you want to enable access for, and from the **More** menu, select **Workspace access**.
-
-    :::image type="content" source="media/embed-service-principal/workspace-access.png" alt-text="Screenshot showing the workspace access button in the more menu of a Power BI workspace.":::
-
-3. In the **Access** pane, depending on which authentication method you're using, copy the *service principal* or *master user* to the **Enter email address** text box.
-
-    >[!NOTE]
-    >If you're using a *service principal*, its name is the name you gave your Azure AD app.
-
-5. Select **Add**.
-
-## Step 7 - Service principal API access
+## Step 6 - Service principal API access
 
 >[!TIP]
 >**Applies to:** ![Applies to.](../../media/yes.png)Service principal ![Does not apply to.](../../media/no.png)Master user
 >
->This step is only relevant if you're using the *service principal* authentication method. If you're using a *master user*, skip this step and continue with [Step 8 - Embed your content](#step-8---embed-your-content).
+>This step is only relevant if you're using the *service principal* authentication method. If you're using a *master user*, skip this step and continue with [Step 7 - Enable workspace access](#step-7---enable-workspace-access).
 
 For an Azure AD app to be able to access the Power BI content and APIs, a Power BI admin needs to enable service principal access in the Power BI admin portal. If you're not the admin of your tenant, get the tenant's admin to enable the *Tenant settings* for you.
         
@@ -342,6 +325,23 @@ For an Azure AD app to be able to access the Power BI content and APIs, a Power 
 >When using a *service principal*, it's recommended to limit its access to the tenant settings using a *security group*. To learn more about this feature, see these sections in the [service principal](embed-service-principal.md) article:
 > * [Create an Azure AD security group](embed-service-principal.md#step-2---create-an-azure-ad-security-group)
 >* [Enable the Power BI service admin settings](embed-service-principal.md#step-3---enable-the-power-bi-service-admin-settings)
+
+## Step 7 - Enable workspace access
+
+To enable your Azure AD app access artifacts such as reports, dashboards and datasets in the Power BI service, add the *service principal* or *master user*, as a *member* or *admin* to your workspace.
+
+1. Sign in to Power BI service.
+
+2. Scroll to the workspace you want to enable access for, and from the **More** menu, select **Workspace access**.
+
+    :::image type="content" source="media/embed-service-principal/workspace-access.png" alt-text="Screenshot showing the workspace access button in the more menu of a Power BI workspace.":::
+
+3. In the **Access** pane, depending on which authentication method you're using, copy the *service principal* or *master user* to the **Enter email address** text box.
+
+    >[!NOTE]
+    >If you're using a *service principal*, its name is the name you gave your Azure AD app.
+
+5. Select **Add**.
 
 ## Step 8 - Embed your content
 
@@ -575,7 +575,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
 ## Move to production
 
-After configuring and running the *embed for customers* sample application, you can start developing your own application.
+After configuring and running the *embed for your customers* sample application, you can start developing your own application.
 
 When you're ready, review the [move to production](move-to-production.md) requirements. You'll also need a [capacity](embedded-capacity.md), and should review the [capacity planning](embedded-capacity-planning.md) article to establish witch SKU suites your needs.
 
