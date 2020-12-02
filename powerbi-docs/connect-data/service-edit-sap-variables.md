@@ -1,11 +1,11 @@
 ---
 title: Edit SAP variables in the Power BI service
 description: Azure and Power BI
-author: Sujata994
-ms.author: sunaraya
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 11/12/2019
 LocalizationGroup: Data from databases

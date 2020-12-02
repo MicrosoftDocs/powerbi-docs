@@ -2,13 +2,11 @@
 title: Enable sensitivity labels in Power BI
 description: Learn how to enable sensitivity labels in Power BI
 author: paulinbar
-
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 08/10/2020
-ms.author: painbar
-
 LocalizationGroup: Data from files
 ---
 # Enable sensitivity labels in Power BI

@@ -47,7 +47,7 @@ Specify the pages you want to print according to the [Get Pages](/rest/api/power
 
 ### Bookmarks
 
-[Bookmarks](../../consumer/end-user-bookmarks.md) can be used to save a report in a specific configuration, including applied filters and the state of the report's visuals. You can use the [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) API to programmatically export a report's bookmark, in two ways:
+[Bookmarks](../../consumer/end-user-bookmarks.md) can be used to save a report in a specific configuration, including applied filters and the state of the report's visuals. You can use the [exportToFile](/rest/api/power-bi/reports/exporttofile) API to programmatically export a report's bookmark, in two ways:
 
 * **Export an existing bookmark**
 
@@ -88,6 +88,9 @@ When using the `exportToFile` API, you can pass your desired local. The localiza
 `exportToFile` supports concurrent export job requests. The table below shows the number of jobs you can run at the same time, depending on the SKU your report resides on. Concurrent requests refer to report pages. For example, 20 pages in one export request on an A6 SKU, will be processed concurrently. This will take roughly the same time as sending 20 export requests with one page each.
 
 A job that exceeds its number of concurrent requests doesn't terminate. For example, if you export three pages in an A1 SKU, the first job will run, and the latter two will wait for the next two execution cycles.
+
+>[!NOTE]
+>Exporting a Power BI report to file using the `exporToFile` API, is not supported for [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md). 
 
 |Azure SKU  |Office SKU  |Maximum concurrent report pages  |
 |-----------|------------|-----------|

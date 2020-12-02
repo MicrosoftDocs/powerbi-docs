@@ -44,6 +44,8 @@
         href: service-premium-capacity-scenarios.md
       - name: Power BI Premium FAQ
         href: service-premium-faq.md
+      - name: Power BI Premium Per User FAQ
+        href: service-premium-per-user-faq.md        
   - name: How to
     items: 
     - name: "Licensing and sign-up"
@@ -72,6 +74,8 @@
       href: service-admin-auditing.md
     - name: "Track service health"
       href: service-admin-health.md
+    - name: "Enable service principle authentication for read-only admin APIs"
+      href: read-only-apis-service-principal-authentication.md
     - name: "Closing your account"
       href: service-admin-closing-your-account.md
     - name: "Using Azure AD B2B"
@@ -106,6 +110,8 @@
         href: service-admin-premium-manage.md
       - name: Configure workloads
         href: service-admin-premium-workloads.md
+      - name: Purchase Power BI Premium for testing
+        href: service-admin-premium-testing.md        
       - name: Monitor capacities with the app
         href: service-admin-premium-monitor-capacity.md
       - name: Monitor Premium workload metrics

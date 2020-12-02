@@ -5,8 +5,8 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
-ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
+ms.topic: tutorial
 ms.date: 09/02/2020
 ---
 
@@ -30,7 +30,7 @@ Before you start developing your Power BI visual, verify that you have everythin
 
 * [Visual Studio Code (VS Code)](https://www.visualstudio.com/). VS Code is an ideal Integrated Development Environment (IDE) for developing JavaScript and TypeScript applications.
 
-* [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell) version 4 or later (for Windows). Or [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) (for OSX).
+* [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell) version 4 or later (for Windows). Or [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) (for OSX).
 
 * An environment ready for developing a Power BI visual. [Set up your environment for developing a Power BI visual](environment-setup.md).
 
@@ -98,7 +98,7 @@ You can also use your own report to test the circle card visuals.
     This is a simple visual that displays the number of times its update method has been called. At this stage, the visual does not retrieve any data.
 
     >[!NOTE]
-    >If the visual displays a connection error message, open a new tab in your browser, navigate to [https://localhost:8080/assets/status](https://localhost:8080/assets/status), and authorize your browser to use this address.
+    >If the visual displays a connection error message, open a new tab in your browser, navigate to `https://localhost:8080/assets/status`, and authorize your browser to use this address.
     >
     >![Screenshot of the new visual displaying a connection error.](media/develop-circle-card/connection-error.png)
 

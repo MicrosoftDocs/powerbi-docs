@@ -2,14 +2,12 @@
 title: Personalize visuals in a report
 description: Create your own view of a report, without editing it. 
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/13/2020
-ms.author: mihart
-
 LocalizationGroup: Reports
 ---
 # Personalize visuals in a report

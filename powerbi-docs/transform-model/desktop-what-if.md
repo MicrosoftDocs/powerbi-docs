@@ -2,15 +2,13 @@
 title: Use what-if parameters to visualize variables
 description: Create your own what-if variable to imagine and visualize variables in Power BI reports
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 01/21/2020
-ms.author: davidi
-
 LocalizationGroup: Create reports
 ---
 # Create and use what-if parameters to visualize variables in Power BI Desktop

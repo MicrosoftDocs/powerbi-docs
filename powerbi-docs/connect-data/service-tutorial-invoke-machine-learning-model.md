@@ -2,16 +2,14 @@
 title: 'Tutorial: Invoke a Machine Learning Studio (classic) model in Power BI (Preview)'
 description: In this tutorial you invoke a Machine Learning Studio (classic) model in Power BI.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: SarinaJoan
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.custom: connect-to-services
 ms.topic: tutorial
 ms.date: 03/12/2019
-ms.author: davidi
 #customer intent: "As a Power BI end user, I want to use Machine Learning Studio (classic) models, so I can use machine learning models in Power BI."
-
 LocalizationGroup: Connect to services
 ---
 # Tutorial: Invoke a Machine Learning Studio (classic) model in Power BI (Preview)
@@ -177,4 +175,4 @@ In this tutorial, you created a simple experiment using Azure Machine Learning S
 - Create a dataflow
 - Apply insights from the Azure ML model to the dataflow
 
-For more information about Azure Machine Learning integration in Power BI, see [Azure Machine Learning integration in Power BI (Preview)](../transform-model/service-machine-learning-integration.md).
+For more information about Azure Machine Learning integration in Power BI, see [Azure Machine Learning integration in Power BI (Preview)](../transform-model/dataflows/dataflows-machine-learning-integration.md).

@@ -2,14 +2,12 @@
 title: Introduction to dataflows and self-service data prep
 description: Overview of what are Power BI dataflows and when to use them
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 10/01/2020
-ms.author: davidi
-
 LocalizationGroup: Data from files
 ---
 # Introduction to dataflows and self-service data prep
@@ -45,7 +43,8 @@ The following articles provide more information about dataflows and Power BI:
 * [Premium features of dataflows](dataflows-premium-features.md)
 * [AI with dataflows](dataflows-machine-learning-integration.md)
 * [Dataflows limitations and considerations](dataflows-features-limitations.md)
+* [Dataflows best practices](dataflows-best-practices.md)
 
 
 For more information about the Common Data Model, you can read its overview article:
-* [Common Data Model - overview](https://docs.microsoft.com/powerapps/common-data-model/overview)
+* [Common Data Model - overview](/powerapps/common-data-model/overview)

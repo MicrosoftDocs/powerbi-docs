@@ -2,13 +2,12 @@
 title: Create date tables in Power BI Desktop
 description: Techniques and guidance for creating date tables in Power BI Desktop.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 06/24/2020
-ms.author: v-pemyer
 ---
 
 # Create date tables in Power BI Desktop
@@ -56,7 +55,7 @@ You can generate a date table using Power Query. Here are two blog entries that 
 - [Generating A Date Dimension Table In Power Query](https://blog.crossjoin.co.uk/2013/11/19/generating-a-date-dimension-table-in-power-query/) by Chris Webb
 
 > [!TIP]
-> If you don't have a data warehouse or other consistent definition for time in your organization, consider using Power Query to publish a [dataflow](../transform-model/service-dataflows-overview.md). Then, have all data modelers connect to the dataflow to add date tables to their models. The dataflow becomes the single source of truth for time in your organization.
+> If you don't have a data warehouse or other consistent definition for time in your organization, consider using Power Query to publish a [dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md). Then, have all data modelers connect to the dataflow to add date tables to their models. The dataflow becomes the single source of truth for time in your organization.
 
 If you need to generate a date table, consider doing it with DAX. You might find it's easier. What's more, it's likely to be more convenient, because DAX includes some built-in intelligence to simplify creating and managing date tables.
 
@@ -78,7 +77,7 @@ For more information related to this article, check out the following resources:
 - [Auto date/time in Power BI Desktop](../transform-model/desktop-auto-date-time.md)
 - [Auto date/time guidance in Power BI Desktop](auto-date-time.md)
 - [Set and use date tables in Power BI Desktop](../transform-model/desktop-date-tables.md)
-- [Self-service data prep in Power BI](../transform-model/service-dataflows-overview.md)
+- [Self-service data prep in Power BI](../transform-model/dataflows/dataflows-introduction-self-service.md)
 - [CALENDAR function (DAX)](/dax/calendar-function-dax)
 - [CALENDARAUTO function (DAX)](/dax/calendarauto-function-dax)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

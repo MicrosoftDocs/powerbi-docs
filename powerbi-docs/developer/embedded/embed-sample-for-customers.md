@@ -32,11 +32,14 @@ To get started, you're required to have:
 
 If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
+>[!NOTE]
+>[Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) is not supported. PPU can be used to experiment with the *embed for your customers* solution, but you'll not be able to [move to production](embed-sample-for-customers.md#move-to-production).
+
 ## Set up your embedded analytics development environment
 
 Before you start embedding reports, dashboard, or tiles into your application, you need to make sure your environment allows for embedding with Power BI.
 
-You can go through the [Embedding setup tool](https://aka.ms/embedsetup/AppOwnsData), so you can quickly get started and download a sample application that helps you walk through creating an environment and embedding a report.
+You can go through the [Embedding setup tool](https://app.powerbi.com/embedsetup), so you can quickly get started and download a sample application that helps you walk through creating an environment and embedding a report.
 
 However, if you choose to set up the environment manually, you can continue below.
 
@@ -336,9 +339,9 @@ var targetWorkspaces = new List<GenerateTokenRequestV2TargetWorkspace>()
 
 var request = new GenerateTokenRequestV2()
 {
-    Datasets = datasetsRequestDetails ?? null,
-    Reports = reportsRequestDetails,
-    TargetWorkspaces = targetWSRequestdetials ?? null,
+    Datasets = datasets,
+    Reports = reports,
+    TargetWorkspaces = targetWorkspaces,
 };
 
 var token = client.GetClient().EmbedToken.GenerateToken(request);

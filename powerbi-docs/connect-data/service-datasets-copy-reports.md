@@ -1,14 +1,13 @@
 ---
 title: Copy reports from other apps or workspaces - Power BI
 description: Learn how you can create a copy of a report and save it to your own workspace.
-author: maggiesMSFT
+author: paulinbar
+ms.author: painbar
 ms.reviewer: kayu
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 10/30/2020
-ms.author: maggies
-
 LocalizationGroup: Share your work
 ---
 # Copy reports from other workspaces
@@ -17,7 +16,7 @@ When you find a report you like in a workspace or an app, you can make a copy of
 
 ## Prerequisites
 
-- To copy or a report, you need a Pro license, even if the original report is in a workspace in a Premium capacity.
+- To copy a report, you need a Pro license, even if the original report is in a workspace in a Premium capacity.
 - To copy a report, or to create a report in one workspace based on a dataset in another workspace, you need Build permission for the dataset. For datasets in the original workspace, the people with Admin, Member, and Contributor roles automatically have Build permission through their workspace role. See [Roles in the new workspaces](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) for details.
 
 ## Save a copy of a report in a workspace

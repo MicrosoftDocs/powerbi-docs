@@ -2,14 +2,12 @@
 title: Select which dashboard to display when you open Power BI service
 description: Documentation on how to create a Featured dashboard in the Power BI service
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/03/2020
-ms.author: mihart
-
 LocalizationGroup: Dashboards
 ---
 # Featured dashboards in the Power BI service

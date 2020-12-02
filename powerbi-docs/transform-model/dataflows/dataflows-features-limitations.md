@@ -2,14 +2,12 @@
 title: Dataflows Limitations, restrictions and supported connectors and features
 description: Overview of all the capabilities of dataflows
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 10/01/2020
-ms.author: davidi
-
 LocalizationGroup: Data from files
 ---
 # Dataflows limitations and considerations
@@ -20,7 +18,7 @@ There are a few dataflow limitations across authoring, refreshes, and capacity m
 
 When authoring dataflows, users should be mindful of the following considerations:
 
-* Authoring in Dataflows is done in the Power Query Online (PQO) environment; see the limitations described in [Power Query limits](https://docs.microsoft.com/power-query/power-query-online-limits).
+* Authoring in Dataflows is done in the Power Query Online (PQO) environment; see the limitations described in [Power Query limits](/power-query/power-query-online-limits).
 Because dataflows authoring is done in the  Power Query Online (PQO) environment, updates performed on the Dataflows workload configurations  only impact refreshes, and will not have an impact on the authoring experience
 
 * Dataflows can only be modified by their owners
@@ -33,7 +31,7 @@ Because dataflows authoring is done in the  Power Query Online (PQO) environment
 
 ## API Considerations
 
-More about supported Dataflows REST APIs can be found in the [REST API reference](https://docs.microsoft.com/rest/api/power-bi/dataflows). Here are some considerations to keep in mind:
+More about supported Dataflows REST APIs can be found in the [REST API reference](/rest/api/power-bi/dataflows). Here are some considerations to keep in mind:
 
 * Exporting and Importing a dataflow gives that dataflow a new ID
 
@@ -107,4 +105,4 @@ The following articles provide more information about dataflows and Power BI:
 * [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [Premium features of dataflows](dataflows-premium-features.md)
 * [AI with dataflows](dataflows-machine-learning-integration.md)
-
+* [Dataflows best practices](dataflows-best-practices.md)

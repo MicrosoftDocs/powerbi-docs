@@ -2,15 +2,13 @@
 title: Learn which Python packages are supported
 description: Python packages that are supported and unsupported in Power BI
 author: otarb
+ms.author: otarb
 ms.reviewer: ''
-
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 06/26/2020
-ms.author: otarb
-
 LocalizationGroup: Connect to data
 ---
 # Create visuals by using Python packages in the Power BI service

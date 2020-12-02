@@ -5,9 +5,9 @@ author: KesemSharabi
 ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-deployment
 ms.custom: contperfq1
-ms.date: 09/15/2020
+ms.date: 11/11/2020
 ---
 
 # Get started with deployment pipelines
@@ -18,11 +18,13 @@ This article walks you through the basic settings required for using deployment 
 
 You'll be able to access the deployment pipelines feature, if the following conditions are met:
 
-* You're a Power BI [Pro user](../admin/service-admin-purchasing-power-bi-pro.md)
+* You have one of the following Premium licenses:
 
-* You belong to an organization that has Premium capacity
+    * You're a Power BI [Pro user](../admin/service-admin-purchasing-power-bi-pro.md), and you belong to an organization that has Premium capacity.
 
-* You're an admin of a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md)
+    * [Premium Per User (PPU)](../admin/service-premium-per-user-faq.md).
+
+* You're an admin of a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).
 
 >[!NOTE]
 > You'll also be able to see the deployment pipelines button, if you previously created a pipeline, or if a pipeline was shared with you.
@@ -55,7 +57,7 @@ You can create a pipeline from an existing workspace, providing you're the admin
 2. In the *Create a deployment pipeline* dialog box, enter a name and description for the pipeline, and select **Create**.
 
 >[!NOTE]
->If the workspace isn't assigned to your organization's Premium capacity, you'll get a notification to [assign it to a capacity](../admin/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity).  
+>If the workspace isn't assigned to your organization's Premium capacity, or to your PPU capacity, you'll get a notification to [assign it to a capacity](../admin/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity).  
 
 ## Step 2 - Assign a workspace to a deployment pipeline
 
@@ -82,7 +84,7 @@ Follow these steps to assign a workspace in a deployment pipeline:
 
 * The workspace is not assigned to any other pipeline.
 
-* The workspace must reside on a [premium capacity](../admin/service-premium-what-is.md).
+* The workspace must reside on a [Premium capacity](../admin/service-premium-what-is.md).
 
 * You cannot assign a workspace with [Power BI samples](../create-reports/sample-datasets.md) to a pipeline stage.
 
@@ -119,7 +121,7 @@ Since dashboards, reports and datasets are related and have dependencies, you ca
 
 You can choose to deploy to a previous stage, for example in a scenario where you assign an existing workspace to a production stage and then deploy it backwards, first to the test stage, and then to the development one.
 
-Deploying to a previous stage works only if the previous stage is empty of content. When deploying to previous stage, you can't select specific items. All content in the stage will be deployed.
+Deploying to a previous stage works only if the previous stage is empty. When deploying to a previous stage, you can't select specific items. All content in the stage will be deployed.
 
 [![A screenshot showing the deploy to previous stage button, available from the test or production stage menus.](media/deployment-pipelines-get-started/deploy-back.png)](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
 
@@ -129,7 +131,7 @@ When working in a deployment pipeline, different stages may have different confi
 
 When you deploy content between pipeline stages, configuring dataset rules enables you to allow changes to content, while keeping some settings intact.
 
-Dataset rules are defined on data sources and parameters, in each dataset. They determine the values of the data sources or parameters for a specific dataset. For example, if you want a dataset in a production stage to point to a production database, you can define a rule for this. The rule is defined in the production stage, under the appropriate dataset. Once the rule is defined, content deployed from test to production, will inherit the value as defined in the dataset rules, and will always apply as long as the rule is unchanged and valid.
+Dataset rules are defined on data sources and parameters, in each dataset. They determine the values of the data sources or parameters for a specific dataset. For example, if you want a dataset in a production stage to point to a production database, you can define a rule for this. The rule is defined in the production stage, under the appropriate dataset. Once the rule is defined, content deployed from test to production, will inherit the value as defined in the dataset rule, and will always apply as long as the rule is unchanged and valid.
 
 >[!NOTE]
 > Dataset rules work only when the source and target data source are of the same type.
@@ -175,7 +177,8 @@ There are two types of rules you can create:
 * Parameter rules cannot be defined for parameters that are of type *Any* or *Binary*. For more information, see [datasets update parameters restrictions](/rest/api/power-bi/datasets/updateparameters).
 
 * Data source rules can only be defined for the following data sources:
-    * Azure Analysis services
+    * Azure Analysis Services
+    * Azure Synapse
     * SQL Server Analysis Services (SSAS)
     * Azure SQL Server
     * SQL server

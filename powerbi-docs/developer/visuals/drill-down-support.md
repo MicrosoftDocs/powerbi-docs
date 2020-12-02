@@ -244,6 +244,11 @@ import "core-js/stable";
 import "./../style/visual.less";
 // imports
 
+import powerbiVisualsApi from "powerbi-visuals-api";
+import ISelectionManager = powerbiVisualsApi.extensibility.ISelectionManager;
+import ISelectionId = powerbiVisualsApi.visuals.ISelectionId;
+import ISelectionIdBuilder = powerbiVisualsApi.visuals.ISelectionIdBuilder;
+
 export class Visual implements IVisual {
     // visual properties
     // ...

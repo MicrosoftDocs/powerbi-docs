@@ -7,8 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 03/03/2020
-
+ms.date: 11/11/2020
 LocalizationGroup: Premium
 ---
 
@@ -156,3 +155,14 @@ The following links provide information that can be useful for working with larg
 * [Bring your own encryption keys for Power BI](service-encryption-byok.md)
 * [How capacities function](service-premium-what-is.md#how-capacities-function)
 * [Incremental refresh](service-premium-incremental-refresh.md).
+
+
+Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+* Performance
+* Per-user licensing
+* Greater scale
+* Improved metrics
+* Autoscaling
+* Reduced management overhead
+
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

@@ -2,13 +2,12 @@
 title: Overview of bookmarks in Power BI service reports
 description: Documentation overview topic for bookmarks in the Power BI service.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 08/26/2020
-ms.author: mihart
-
+ms.date: 12/02/2020
 LocalizationGroup: Create reports
 ---
 # What are bookmarks?
@@ -25,6 +24,16 @@ There are many uses for bookmarks. Say you discover an interesting insight and w
 You can also create a collection of bookmarks, arrange them in the order you want, and subsequently step through each bookmark in a presentation to highlight a series of insights that tell a story.  
 
 ![Show Bookmarks Pane by selecting it from ribbon.](media/end-user-bookmarks/power-bi-bookmark-icon.png)
+
+Share your bookmarked report with colleagues who also have read access to the report. The bookmarked view of the report does not override the designer's original report.  Sharing with colleagues who don't already have read access requires reshare permissions. If you are unable to share your view of the report, contact the report owner to request reshare permission.  
+
+
+### Share changes 
+If you have read and reshare permissions, when you share the report you can choose to include your changes.
+
+:::image type="content" source="media/end-user-bookmarks/power-bi-personalize-share-changes.png" alt-text="Share changes":::
+ 
+
 
 ## Open bookmarks
 To open the Bookmarks pane, select **Bookmarks** > **Show more bookmarks** from the menu bar. 
@@ -159,17 +168,22 @@ Note that selecting **Ungroup** for any bookmark from a group takes all bookmark
 -->
 
 
+### Reset all your changes to a report
+
+From the upper-right corner of your report canvas, select **Reset to default**. This removes all your changes in the report and sets it back to the author's last saved view of the report.
+
+:::image type="content" source="media/end-user-bookmarks/power-bi-personalize-reset-all.png" alt-text="Reset all changes":::
 
 
 
 ## Limitations and considerations
 In this release of **bookmarks**, there are a few limitations and considerations to keep in mind.
 
-* Most Power BI visuals should work well with bookmarking. If you run into trouble with bookmarking and a Power BI visual, contact the creator of that Power BI visual and ask them to add support for bookmarks to their visual.
+* Most Power BI custom visuals should work well with bookmarking. If you run into trouble with bookmarking and a Power BI custom visual, contact the creator of that visual and ask them to add support for bookmarks.    
 * If you add a visual on a report page after creating a bookmark, the visual will be displayed in its default state. This also means that if you introduce a slicer into a page where you previously created bookmarks, the slicer will behave in its default state.
 * Generally, your bookmarks will not be affected if the report *designer* updates or republishes the report. However, if the designer makes major changes to the report, such as removing fields used by a bookmark, then you will receive an error message the next time you attempt to open that bookmark. 
+* This feature is supported in the Power BI mobile apps for iOS and Android tablets and in the Power BI Windows app; it is not supported in the Power BI mobile apps for phones. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
 
-<!--
+
 ## Next steps
-spotlight?
--->
+[Personalize visuals in a report](end-user-personalize-visuals.md)

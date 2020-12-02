@@ -2,12 +2,12 @@
 title: Distribute content to external guest users with Azure AD B2B
 description: Power BI enables sharing content with external guest users through Azure Active Directory Business-to-business (Azure AD B2B).
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 07/02/2020
-ms.author: kfollis
 LocalizationGroup: Administration
 ---
 

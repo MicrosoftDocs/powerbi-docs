@@ -2,14 +2,12 @@
 title: Power BI Desktop Send a Smile Privacy Statement
 description: Power BI Desktop Send a Smile Privacy Statement
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 05/08/2019
-ms.author: davidi
-
 LocalizationGroup: Learn more
 ---
 # Power BI Desktop Send a Smile Privacy Statement

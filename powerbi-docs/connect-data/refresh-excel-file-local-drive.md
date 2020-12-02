@@ -2,14 +2,12 @@
 title: Refresh a dataset created from an Excel workbook - local
 description: Refresh a dataset created from an Excel workbook on a local drive
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: kayu
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 11/28/2018
-ms.author: davidi
-
 LocalizationGroup: Data refresh
 ---
 # Refresh a dataset created from an Excel workbook on a local drive
