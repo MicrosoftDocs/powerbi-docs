@@ -14,13 +14,11 @@ ms.date: 12/02/2020
 
 An application embedding Power BI content such as reports and dashboards, needs to authenticate against both Azure Active Directory (Azure AD) and Power BI service.
 
-
 |Solution  |Authentication method  |Required token  |
 |---------|---------|---------|
 |Embed for your customers      |Service principal         |Azure AD token         |
 |Embed for your customers      |Master user         |Azure AD token         |
 |Embed for your organization     |Interactive (user's credentials)         |Azure AD token         |
-
 
 ## Azure AD token
 
@@ -50,7 +48,6 @@ In an *embed for your customers* solution, your app users have Power BI accounts
 
 The *embed for your organization* solution doesn't support A SKUs.
 
-
 ## Embed token
 
 Embed token's are needed when you're using the *embed for your customers* solution
@@ -62,6 +59,22 @@ Access level
 Duration that the content can be accessed
 Optionally, effective identities used to access content, and in turn, query data
 
+## Authentication flows
+
+This section describes the authentication flows for the *embed for your customers* and *embed for your organization* embedding solutions.
+
+:::row:::
+    :::column span="":::
+
+        ### Embed for your customers
+
+    :::column-end:::
+    :::column span="":::
+        
+        ### Embed for your organization
+
+    :::column-end:::
+:::row-end:::
 
 ## Next steps
 
