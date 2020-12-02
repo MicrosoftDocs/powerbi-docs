@@ -549,7 +549,7 @@ You can also download previous versions of Power BI Desktop if your organization
 Select the following links to download this earlier version: 
 
 * [May 2020 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/9/0/3/903DCAE8-44D9-4A7E-856C-40C0754723ED/PBIDesktopRS.msi)
-* [May 2020 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-05_x64.exe)
+* [May 2020 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/9/0/3/903DCAE8-44D9-4A7E-856C-40C0754723ED/PBIDesktopRS_x64.msi)
 
 
 
