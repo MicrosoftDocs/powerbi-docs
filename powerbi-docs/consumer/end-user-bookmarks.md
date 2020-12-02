@@ -31,7 +31,7 @@ Share your bookmarked report with colleagues who also have read access to the re
 ### Share changes 
 If you have read and reshare permissions, when you share the report you can choose to include your changes.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-share-changes.png" alt-text="Share changes":::
+:::image type="content" source="media/end-user-bookmarks/power-bi-personalize-share-changes.png" alt-text="Share changes":::
  
 
 
@@ -172,7 +172,7 @@ Note that selecting **Ungroup** for any bookmark from a group takes all bookmark
 
 From the upper-right corner of your report canvas, select **Reset to default**. This removes all your changes in the report and sets it back to the author's last saved view of the report.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-reset-all.png" alt-text="Reset all changes":::
+:::image type="content" source="media/end-user-bookmarks/power-bi-personalize-reset-all.png" alt-text="Reset all changes":::
 
 
 
@@ -186,4 +186,4 @@ In this release of **bookmarks**, there are a few limitations and considerations
 
 
 ## Next steps
-[Personalize visuals in a report](end-user-personalize-visuals)
+[Personalize visuals in a report](end-user-personalize-visuals.md)
