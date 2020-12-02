@@ -2,14 +2,12 @@
 title: Using Python in Power BI Query Editor
 description: Use Python in Power BI Desktop Query Editor for advanced analytics
 author: otarb
+ms.author: otarb
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 06/18/2018
-ms.author: otarb
-
 LocalizationGroup: Connect to data
 ---
 # Use Python in Query Editor

@@ -1,16 +1,14 @@
 ---
 title: Sign Up for Power BI for United States government customers
 description: For U.S. government customers, learn how to sign up for Power BI is the government community cloud.
-author: davidiseminger
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/07/2020
-ms.author: kfollis
 ms.custom: licensing support
-
 LocalizationGroup: Get started
 ---
 # Enroll your US government organization in the Power BI service

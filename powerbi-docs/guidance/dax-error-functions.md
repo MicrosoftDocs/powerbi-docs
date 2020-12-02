@@ -2,13 +2,12 @@
 title: "DAX: Appropriate use of error functions"
 description: Guidance on when to use the DAX error functions.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 09/26/2019
-ms.author: v-pemyer
 ---
 
 # DAX: Appropriate use of error functions

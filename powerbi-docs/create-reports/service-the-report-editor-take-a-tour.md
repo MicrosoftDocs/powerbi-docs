@@ -2,15 +2,13 @@
 title: Tour the report editor
 description: In Power BI Desktop and in the Power BI service, the report editor is where you design the reports your end users see. It's similar in the two environments. 
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 08/14/2019
-ms.author: maggies
-
+ms.date: 12/01/2020
 LocalizationGroup: Reports
 ---
 # Tour the report editor in Power BI
@@ -29,14 +27,14 @@ In the Power BI service, the report editor is only available in Editing View. To
 
 The Power BI report editor is divided into several main sections:  
 
-1. Top nav pane
+1. The ribbon
 1. Report canvas
 1. Filters pane
 1. Visualizations pane
 1. Fields pane
 
-## 1. The top nav pane
-The actions available from the top nav pane are numerous, with new actions being added all the time. For information about a particular action, use the Power BI documentation table of contents, or Search box.
+## 1. The ribbon
+The actions available from the ribbon are numerous, with new actions being added all the time. For information about a particular action, use the Power BI documentation table of contents, or Search box.
 
 
 ## 2. The report canvas
@@ -131,23 +129,7 @@ In Power BI Desktop, you also have options to show/hide fields, add calculations
 
 ## The field icons
 
-Power BI uses a number of different icons to indicate the types of fields in a report. When you can recognize them, you understand better how they act in different visuals. Here are some of the more common ones.
-
-
-|Icon  |Meaning  |
-|---------|---------|
-| ![Folder](media/service-the-report-editor-take-a-tour/power-bi-field-list-folder.png) | Folder in the Fields list |
-|![Numeric field](media/service-the-report-editor-take-a-tour/power-bi-field-list-numeric.png) | Numeric field: Numeric fields are aggregates that can be summed or averaged, for example. Aggregates are imported with the data and defined in the data model your report is based on. For more information, see [Aggregates in Power BI reports](service-aggregates.md). |
-|![Non-numeric calculated column](media/service-the-report-editor-take-a-tour/power-bi-field-list-calculated-column.png) | Calculated column with a non-numeric data type: A new non-numeric column you create with a Data Analysis Expressions (DAX) formula that defines the column’s values. Read more about [calculated columns](../transform-model/desktop-calculated-columns.md). |
-|![Numeric calculated column](media/service-the-report-editor-take-a-tour/power-bi-field-list-numeric-calculated-column.png)     |   Numeric calculated column: A new column you create with a Data Analysis Expressions (DAX) formula that defines the column’s values. Read more about [calculated columns](../transform-model/desktop-calculated-columns.md). |
-|![Measure](media/service-the-report-editor-take-a-tour/power-bi-field-list-measure.png) |  Measure: A measure has its own hard-coded formula. You can’t change the calculation, for example, if it’s a sum, it can only be a sum. The values aren't stored in a column. They're calculated on the fly, depending solely on their location in a visual. For more information, read [Understanding measures](../transform-model/desktop-measures.md). |
-|![Measure group](media/service-the-report-editor-take-a-tour/power-bi-field-list-measure-group.png)     | Measure group  |
-|![KPI icon](media/service-the-report-editor-take-a-tour/power-bi-field-list-kpi.png) |      KPI: A visual cue that communicates the amount of progress made toward a measurable goal. Read more about [Key Performance Indicator (KPI)](../visuals/power-bi-visualization-kpi.md) visuals |
-|![Hierarchy icon](media/service-the-report-editor-take-a-tour/power-bi-field-list-hierarchy.png)     |  Hierarchy of fields: Select the arrow to see the fields that make up the hierarchy.  Watch this Power BI video on YouTube about [Creating and working with hierarchies](https://www.youtube.com/watch?v=q8WDUAiTGeU) for more information. |
-|![Geo data](media/service-the-report-editor-take-a-tour/power-bi-field-list-geo-data.png)     | Geo data: These location fields can be used to create map visualizations. |
-| ![Identity field](media/service-the-report-editor-take-a-tour/power-bi-field-list-identity.png)     | Identity field: Fields with this icon are *unique fields*, set to show all values, even if they have duplicates. For example, your data might have records for two different people named 'Robin Smith', and each will be treated as unique. They won't be summed.   |
-|![Parameter](media/service-the-report-editor-take-a-tour/power-bi-field-list-parameter.png)   | Parameter: Set parameters to make parts of your reports and data models (such as a query filter, a data source reference, a measure definition, etc.) depend on one or more parameter values. See this Power BI blog post about [query parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/) for more information. |
-| ![Calendar](media/service-the-report-editor-take-a-tour/power-bi-field-list-calendar.png) | Calendar date field with a built-in date table |
+Power BI uses a number of different icons to indicate the types of fields in a report. When you can recognize them, you understand better how they act in different visuals. See the [Field list icons section of Using the Field list in Power BI Desktop](../transform-model/desktop-field-list.md#field-list-changes) for a complete list.
 
 ## Next steps
 [Create a report](service-report-create-new.md)

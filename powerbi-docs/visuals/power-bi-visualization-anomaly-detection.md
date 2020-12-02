@@ -2,13 +2,12 @@
 title: Anomaly detection tutorial
 description: 'Tutorial: Detect Anomalies in Power BI'
 author: aphilip94
+ms.author: anphil
 ms.reviewer: aphilip94
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 11/10/2020
-ms.author: anphil
-
 LocalizationGroup: Visualizations
 ---
 # Anomaly detection (preview)

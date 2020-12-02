@@ -2,14 +2,12 @@
 title: Save a report in Power BI
 description: Save a report in Power BI service and Power BI Desktop
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 03/01/2018
-ms.author: maggies
-
 LocalizationGroup: Reports
 ---
 # Save a report in Power BI service and Power BI Desktop

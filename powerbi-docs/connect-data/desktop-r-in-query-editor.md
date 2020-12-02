@@ -2,15 +2,13 @@
 title: Use R in Power Query Editor
 description: Use R in Power BI Desktop Power Query Editor for advanced analytics.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/28/2020
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Use R in Power Query Editor

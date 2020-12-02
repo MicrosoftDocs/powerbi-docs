@@ -2,14 +2,12 @@
 title: 'Tutorial: Create calculated columns in Power BI Desktop'
 description: 'Tutorial: Create calculated columns in Power BI Desktop'
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: tutorial
 ms.date: 11/26/2019
-ms.author: davidi
-
 LocalizationGroup: Learn more
 ---
 # Tutorial: Create calculated columns in Power BI Desktop

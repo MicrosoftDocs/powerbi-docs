@@ -2,14 +2,13 @@
 title: Smart narratives tutorial
 description: 'Tutorial: Create smart narrative summary visualizations in Power BI'
 author: aphilip94
+ms.author: anphil
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 11/06/2020
-ms.author: anphil
 ms.custom: video
-
 LocalizationGroup: Visualizations
 ---
 # Create smart narrative summaries (preview)

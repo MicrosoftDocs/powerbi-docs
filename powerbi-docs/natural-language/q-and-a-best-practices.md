@@ -2,13 +2,11 @@
 title: Best practices to optimize Q&A
 description: How to optimize Power BI Q&A and make it work better
 author: mohaali
-
+ms.author: mohaali
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/23/2019
-ms.author: mohaali
-
 ---
 # Best practices to optimize Q&A in Power BI
 Using common phrases and natural language to ask questions of your data is powerful. Even more powerful is when your data answers, which is what Q&A in Power BI does.

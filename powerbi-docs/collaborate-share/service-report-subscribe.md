@@ -2,11 +2,11 @@
 title: Subscribe yourself and others to reports and dashboards
 description: Learn how to subscribe yourself and others to a snapshot of a Power BI report page, dashboard, or paginated report.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-featuredvideoid:
-
+featuredvideoid: 
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 12/01/2020
 ms.author: maggies
@@ -118,6 +118,7 @@ Power BI administrators can use the Power BI audit logs to view details around s
 - Subscriptions don't currently support bookmarks.
 - The option to provide access to the report/dashboard always shows as enabled when you edit an existing subscription.  If you clear this option and save the subscription, it saves that state. However, when you go to edit the report again it will be checked by default.
 - If you have an alternate email address but no primary, Power BI uses that to deliver the subscription.
+- If you subscribe external users to a report or dashboard, they will receive a share notification immediately after you select **Save and close** in the subscription pane. This notification is sent only to external users, not internal users, because they require an invitation link to view the report or dashboard. 
 
 ### Dashboards
 

@@ -2,14 +2,12 @@
 title: Multi-select data elements in visuals, or multiple visuals, in Power BI Desktop
 description: You can select multiple data points in Power BI Desktop visuals with simple CTRL+Click
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 11/11/2020
-ms.author: davidi
-
 LocalizationGroup: Create reports
 ---
 # Multi-select data elements, data points, and visuals in Power BI Desktop
