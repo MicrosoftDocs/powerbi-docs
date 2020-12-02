@@ -1,20 +1,19 @@
 ---
 title: Power BI consumer capabilities in Power BI service
 description: In this quickstart, **consumers** will learn about Power BI, apps, reports, and dashboards.
+author: mihart
+ms.author: mihart
 services: powerbi
 documentationcenter: ''
-author: mihart
 ms.reviewer: mihart
 editor: ''
 tags: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/30/2020
-ms.author: mihart
 #As a Power BI consumer, I want to get a quick lesson on what I can do with Power BI service so that I can get up and running quickly.
 ---
 # Quickstart: learn about the Power BI capabilities for *business users*

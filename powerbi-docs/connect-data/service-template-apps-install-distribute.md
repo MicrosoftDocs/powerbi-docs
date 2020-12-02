@@ -2,12 +2,12 @@
 title: Install and distribute template apps in your organization - Power BI
 description: Learn about installing, customizing, and distributing template apps in your organization in Power BI.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 09/17/2020
-ms.author: painbar
 ---
 
 # Install and distribute template apps in your organization

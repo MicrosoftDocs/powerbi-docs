@@ -2,13 +2,11 @@
 title: Connect to the Crisis Communication Presence Report
 description: How to get and install the COVID-19 Crisis Communication Presence Report template app, and how to connect to data
 author: paulinbar
-
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 04/06/2020
-ms.author: painbar
-
 LocalizationGroup: Connect to services
 ---
 # Connect to the Crisis Communication Presence Report

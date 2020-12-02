@@ -2,14 +2,12 @@
 title: Configure Power BI Report Server with Azure Application Proxy
 description: Learn how to configure your Power BI Report Server with the Azure Active Directory Application Proxy.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 07/28/2020
-ms.author: maggies
-
 ---
 # Configure Power BI Report Server with Azure Application Proxy
 

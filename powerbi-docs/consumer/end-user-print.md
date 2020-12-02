@@ -2,15 +2,13 @@
 title: Print from the Power BI service
 description: Printing a dashboard, tile, or report page from the Power BI service.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/19/2020
-ms.author: mihart
-
 LocalizationGroup: Common tasks
 ---
 # Printing from the Power BI service

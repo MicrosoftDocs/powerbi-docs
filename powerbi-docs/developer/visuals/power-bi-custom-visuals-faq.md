@@ -5,8 +5,8 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
-ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
+ms.topic: conceptual
 ms.custom: ''
 ms.date: 09/30/2020
 ---

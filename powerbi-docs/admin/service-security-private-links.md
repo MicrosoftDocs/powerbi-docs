@@ -2,11 +2,11 @@
 title: Private links for accessing Power BI
 description: How to configure a private link for using Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: pbi-security
 ms.topic: how-to
-ms.author: davidi
 ms.date: 11/12/2020
 ms.custom: 
 LocalizationGroup: Administration

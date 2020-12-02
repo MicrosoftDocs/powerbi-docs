@@ -2,14 +2,12 @@
 title: Sort by column in Power BI Desktop
 description: In Power BI, you can change how a visual looks by sorting it by different data fields.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 01/30/2020
-ms.author: davidi
-
 LocalizationGroup: Create reports
 ---
 # Sort by column in Power BI Desktop

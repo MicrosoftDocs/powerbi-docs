@@ -2,14 +2,12 @@
 title: Premium features of dataflows
 description: Overview of the Premium features available with Power BI dataflows
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 11/13/2020
-ms.author: davidi
-
 LocalizationGroup: Data from files
 ---
 # Premium features of dataflows

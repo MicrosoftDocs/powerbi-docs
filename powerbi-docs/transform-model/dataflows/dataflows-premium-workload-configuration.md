@@ -2,15 +2,13 @@
 title: Configure Power BI Premium dataflow workloads
 description: How to configure Power BI Premium for dataflow workloads
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 11/13/2020
-ms.author: davidi
 ms.custom: references_regions
-
 LocalizationGroup: Data from files
 ---
 # Configure Power BI Premium dataflow workloads

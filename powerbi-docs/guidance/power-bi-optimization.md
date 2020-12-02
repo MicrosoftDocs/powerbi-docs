@@ -2,13 +2,12 @@
 title: Optimization guide for Power BI
 description: Optimization guide for Power BI.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 02/16/2020
-ms.author: v-pemyer
 ---
 
 # Optimization guide for Power BI

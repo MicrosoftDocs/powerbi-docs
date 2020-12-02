@@ -2,12 +2,12 @@
 title: Reports in the Power BI service
 description: Reports in the Power BI service, for business users
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/09/2020
-ms.author: mihart
 LocalizationGroup: Reports
 ---
 

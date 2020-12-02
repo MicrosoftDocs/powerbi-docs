@@ -8,7 +8,6 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 02/05/2019
-
 ---
 
 # Code snippets for migrating content from Power BI Workspace Collection

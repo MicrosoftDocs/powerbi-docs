@@ -2,15 +2,12 @@
 title: Q&A for Power BI business users
 description: Documentation overview topic for Power BI Q&A natural language queries.
 author: mihart
+ms.author: mihart
 ms.reviewer: mohammad.ali
-
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/23/2020
-ms.author: mihart
-
 LocalizationGroup: Ask questions of your data
 ---
 # Q&A for Power BI business users

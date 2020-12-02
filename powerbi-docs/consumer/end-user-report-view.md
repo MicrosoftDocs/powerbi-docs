@@ -2,12 +2,12 @@
 title: Change the display size and ratio of a report page
 description: 'Change the display settings for a page in a Power BI report'
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/27/2020
-ms.author: mihart
 LocalizationGroup: Reports
 ---
 

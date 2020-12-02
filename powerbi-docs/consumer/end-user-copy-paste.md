@@ -2,14 +2,12 @@
 title: Copy and paste a visualization in the Power BI service
 description: Copy and paste a visualization in the Power BI service
 author: mihart
+ms.author: mihart
 ms.reviewer: maggie.tsang
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 08/25/2020
-ms.author: mihart
-
 LocalizationGroup: Visualizations
 ---
 # Copy a visual as an image to your clipboard

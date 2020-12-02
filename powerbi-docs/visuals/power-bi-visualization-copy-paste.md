@@ -1,15 +1,13 @@
 ---
 title: Copy and paste a visualization in Power BI
 description: Copy and paste a visualization in Power BI
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: 'maggie tsang'
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 09/18/2020
-ms.author: rien
-
 LocalizationGroup: Visualizations
 ---
 # Copy and paste a report visualization

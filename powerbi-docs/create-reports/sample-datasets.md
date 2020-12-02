@@ -2,14 +2,13 @@
 title: Get samples for Power BI
 description: Sample content packs, apps, .pbix files, and Excel datasets for Power BI
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: 
 ms.custom:
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 03/27/2020
-ms.author: maggies
-
 LocalizationGroup: Samples
 ---
 # Get samples for Power BI

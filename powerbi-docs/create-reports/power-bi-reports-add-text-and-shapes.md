@@ -2,15 +2,13 @@
 title: Text boxes and shapes in Power BI reports
 description: Add and create text boxes and shapes in a report by using the Microsoft Power BI service.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: _3q6VEBhGew
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/29/2019
-ms.author: maggies
-
 LocalizationGroup: Visualizations
 ---
 # Add text boxes and shapes to Power BI reports

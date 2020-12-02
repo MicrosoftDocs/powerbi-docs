@@ -2,14 +2,13 @@
 title: Organize work in the new workspaces in Power BI
 description: Learn about the new workspaces, which are collections of dashboards and reports built to deliver key metrics for your organization.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 ms.date: 10/21/2020
-ms.author: maggies
 ms.custom: contperfq4
-
 LocalizationGroup: Share your work
 ---
 

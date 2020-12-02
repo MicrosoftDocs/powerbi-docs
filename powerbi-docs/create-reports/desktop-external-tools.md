@@ -2,14 +2,12 @@
 title: Using external tools in Power BI (preview)
 description: Extend the use of Power BI Desktop with external tools
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 07/29/2020
-ms.author: davidi
-
 LocalizationGroup: Create reports
 ---
 

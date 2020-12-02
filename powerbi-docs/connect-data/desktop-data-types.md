@@ -2,14 +2,12 @@
 title: Data types in Power BI Desktop
 description: Data types in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: reference
 ms.date: 05/06/2020
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Data types in Power BI Desktop

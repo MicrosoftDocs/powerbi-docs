@@ -1,14 +1,13 @@
 ---
 title: "Tables, matrixes, and lists in Power BI Report Builder"
 description: In Power BI Report Builder, tables, matrixes, and lists are data regions that display paginated report data in cells that are organized into rows and columns. 
+author: maggiesMSFT
+ms.author: maggies
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
-
 ms.topic: conceptual
 ms.assetid: 9dcf3fc8-bf9c-4a14-a03d-e78254aa4098
-author: maggiesMSFT
-ms.author: maggies
 ---
 # Tables, matrixes, and lists in Power BI Report Builder
 

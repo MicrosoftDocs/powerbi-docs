@@ -2,14 +2,12 @@
 title: Many-to-many relationships in Power BI Desktop
 description: Use relationships with a many-many cardinality in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 12/19/2019
-ms.author: davidi
-
 LocalizationGroup: Transform and shape data
 ---
 # Apply many-many relationships in Power BI Desktop

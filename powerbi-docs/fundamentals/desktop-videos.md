@@ -2,14 +2,12 @@
 title: Power BI Desktop videos
 description: Power BI Desktop videos
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 01/02/2020
-ms.author: davidi
-
 LocalizationGroup: Get started
 ---
 # Power BI Desktop videos

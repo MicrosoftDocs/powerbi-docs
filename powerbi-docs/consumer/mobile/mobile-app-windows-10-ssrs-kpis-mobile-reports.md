@@ -2,13 +2,11 @@
 title: View on-premises reports and KPIs in the Power BI Windows app
 description: The Power BI mobile app for Windows 10 offers live, touch-enabled mobile access to your important on-premises business information.
 author: paulinbar
-
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 05/19/2020
-ms.author: painbar
-
 ---
 # View on-premises reports and KPIs in the Power BI Windows app
 The Power BI app for Windows 10 offers live, touch-enabled mobile access to your important on-premises business information in SQL Server 2016 Reporting Services. 

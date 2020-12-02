@@ -2,12 +2,12 @@
 title: Create template apps in Power BI
 description: How to create template apps in Power BI that you can distribute to any Power BI customer.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 09/15/2020
-ms.author: painbar
 ---
 
 # Create a template app in Power BI

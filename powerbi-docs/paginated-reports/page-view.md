@@ -5,7 +5,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer:
 ms.service: powerbi
-ms.subservice: 
+ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 05/14/2020
 ---

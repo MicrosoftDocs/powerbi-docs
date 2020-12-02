@@ -1,14 +1,13 @@
 ---
 title: "Expression examples in Power BI Report Builder"
 description: Expressions are used frequently in Power BI Report Builder paginated reports to control content and report appearance.
+author: maggiesMSFT
+ms.author: maggies
 ms.date: 11/08/2020
 ms.service: powerbi
 ms.subservice: report-builder
-
 ms.topic: conceptual
 ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
-author: maggiesMSFT
-ms.author: maggies
 ---
 # Expression examples in Power BI Report Builder
 
