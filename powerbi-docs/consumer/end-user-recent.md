@@ -2,20 +2,22 @@
 title: Display recently visited content in the Power BI service
 description: documentation for recents in Power BI
 author: mihart
-ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: G26dr2PsEpk
+
 ms.service: powerbi
-ms.subservice: pbi-explore
+ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 09/24/2020
+ms.date: 11/24/2020
+ms.author: mihart
+
 LocalizationGroup: Common tasks
 ---
 # **Recent** content in the Power BI service
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-**Recent** content contains the last items you visited in the Power BI service. This include: dashboards, reports, apps, and workbooks. When you select **Recent** from the nav bar, Power BI displays this content in descending order by date.  To change the sort order, select one of the headings and choose ascending or descending.
+**Recent** content contains the last items you visited in the Power BI service. This include: dashboards, reports, apps, workspaces, and workbooks. When you select **Recent** from the nav bar, Power BI displays this content in descending order by date.  To change the sort order, select one of the headings and choose ascending or descending.
 
 
 ![Recent content window](./media/end-user-recent/power-bi-recents.png)
