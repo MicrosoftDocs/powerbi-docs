@@ -23,7 +23,7 @@ Changing the colors of the report visuals on a dashboard doesn't affect the visu
 
 
 ## How dashboard themes work
-To get started, open a dashboard that you created (or have edit permission) and want to customize. Select **More options** (...), and choose **Dashboard theme**. 
+To get started, open a dashboard that you created, or can edit. Select **Edit** > **Dashboard theme**. 
 
 ![dashboard theme option](media/service-dashboard-themes/power-bi-dashboard-theme.png)
 
