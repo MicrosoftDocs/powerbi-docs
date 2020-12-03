@@ -35,19 +35,21 @@ A [protection metrics report](service-security-data-protection-metrics-report.md
 
 ## Important considerations
 
-Sensitivity labeling **does not** affect access to content within Power BI – access to content within Power BI is managed solely by Power BI permissions. While the labels are visible, any associated encryption settings (configured in either the [Microsoft 365 security center](https://security.microsoft.com/) or the [Microsoft 365 compliance center](https://compliance.microsoft.com/)) are not applied. They are applied only to data that leaves Power BI via a supported export path, such as export to Excel, PowerPoint, or PDF, download to .pbix, and **Save** (Power BI Desktop).
+In the Power BI service, sensitivity labeling **does not** affect access to content. Access to content in the service is managed solely by Power BI permissions. While the labels are visible, any associated encryption settings (configured in either the [Microsoft 365 security center](https://security.microsoft.com/) or the [Microsoft 365 compliance center](https://compliance.microsoft.com/)) are not applied. They are applied only to data that leaves the service via a supported export path, such as export to Excel, PowerPoint, or PDF, and download to .pbix.
 
-Sensitivity labels and file encryption **are not** applied in non-supported export paths. The Power BI admin can block export from non-supported export paths:
+In Power BI Desktop (preview), sensitivity labels with encryption settings **do** affect access to content. If a user does not have sufficient permissions[add link to limitations section] according to the encryption settings of the sensitivity label on the .pbix file, they will not be able to open the file. In addition, in Desktop, when you save your work, any sensitivity label you've added and its associated encryption settings will be applied to the saved .pbix file.
+
+Sensitivity labels and file encryption **are not** applied in non-supported export paths. The Power BI admin can block export from non-supported export paths.
 
 >[!NOTE]
 > Users who are granted access to a report are granted access to the entire underlying dataset, unless [row-level security (RLS)](./service-admin-rls.md) limits their access. Report authors can classify and label reports using sensitivity labels. If the sensitivity label has protection settings, Power BI applies these protection settings when the report data leaves Power BI via a supported export path such as export to Excel, PowerPoint, or PDF, download to .pbix, and **Save** (Desktop). Only authorized users will be able to open protected files.
 
 ### Supported export paths
-Applying sensitivity labels and their associated protection to data that leaves Power BI is currently supported for the following export paths:
+Applying sensitivity labels and their associated protection to data that leaves the Power BI service is currently supported for the following export paths:
 * Export to Excel, PDF files (Service only), and PowerPoint.
 * Analyze in Excel from the Power BI service, which triggers download of an Excel file with a live connection to a Power BI dataset.
 * PivotTable in Excel with a live connection to a Power BI dataset, for users with M365 E3 and above.
-* Download to .pbix (Service) / Save to .pbix (Desktop).
+* Download to .pbix (Service)
 
 >[!NOTE]
 >When using **Download the .pbix** in the Power BI service, if the downloaded report and its dataset have different labels, the more restrictive label will be applied to the .pbix file. 
@@ -57,7 +59,7 @@ Applying sensitivity labels and their associated protection to data that leaves 
 When you apply a sensitivity label to Power BI content and files, it's similar to applying a tag on that resource that has the following benefits:
 * **Customizable** - you can create categories for different levels of sensitive content in your organization, such as Personal, Public, General, Confidential, and Highly Confidential.
 * **Clear text** - since the label is in clear text, it's easy for users to understand how to treat the content according to sensitivity label guidelines.
-* **Persistent** - after a sensitivity label has been applied to content, it accompanies that content when it is exported to  Excel, PowerPoint and PDF files, downloaded to .pbix, or saved (in Desktop).and becomes the basis for applying and enforcing policies.
+* **Persistent** - after a sensitivity label has been applied to content, it accompanies that content when it is exported to  Excel, PowerPoint and PDF files, downloaded to .pbix, or saved (in Desktop) and becomes the basis for applying and enforcing policies.
 
 Here's a quick example of how sensitivity labels in Power BI work. The image below shows how a sensitivity label is applied on a report in the Power BI service, then how the data from the report is exported to an Excel file, and finally how the sensitivity label and its protections persist in the exported file.
 
@@ -67,15 +69,21 @@ The sensitivity labels you apply to content persist and roam with the content as
 
 ## Sensitivity labels in Power BI Desktop (preview)
 
-Sensitivity labels can also be applied in Power BI Desktop. This makes it possible to protect your data from the moment you first start developing your content. When you save your work in Desktop, the sensitivity label you applied is saved in the resulting .pbix or .pbit file. The file is thus protected wherever it goes and however it is transmitted. Only those with the necessary RMS permissions will be able to open it.
+Sensitivity labels can also be applied in Power BI Desktop. This makes it possible to protect your data from the moment you first start developing your content. When you save your work in Desktop, the sensitivity label you applied, along with any associated encryption settings, is applied to the resulting .pbix file. If the label has encryption settings, the file is thus protected wherever it goes and however it is transmitted. Only those with the [necessary RMS permissions](#power-bi-desktop-preview) will be able to open it.
 
-If you apply a sensitivity label in Desktop, when you publish your work to the service, or when you upload a .pbix file of that work to the service, the label travels with the data into the service. In the service, the label will be applied to both the dataset and the report that you get with the file.
+>[!NOTE]
+>In this preview release, some limitations may apply. See [Limitations](#limitations).
 
-The same is also true in the opposite direction - when you save to .pbix in the service and then load the .pbix into Desktop, the label that was in the service will be applied to the downloaded .pbix file and from there be loaded into Desktop. If the report and dataset in the service have different labels, the more restrictive of the two will be applied to the downloaded .pbix file. 
+If you apply a sensitivity label in Desktop, when you publish your work to the service, or when you upload a .pbix file of that work to the service, the label travels with the data into the service. In the service, the label will be applied to both the dataset and the report that you get with the file. If the dataset and report already have sensitivity labels, those labels will be overwritten by the label coming from Desktop, in accordance with label change enforcement rules[https://review.docs.microsoft.com/en-us/power-bi/admin/service-security-sensitivity-label-overview?branch=pr-en-us-4545#sensitivity-label-change-enforcement].
+ 
+If you upload a .pbix file that has never been published to the service before, and that has the same name as a report or dataset that already exists on the service, the upload will succeed only if the uploader has the RMS permissions necessary to change the label.
+
+The same is also true in the opposite direction - when you download to .pbix in the service and then load the .pbix into Desktop, the label that was in the service will be applied to the downloaded .pbix file and from there be loaded into Desktop. If the report and dataset in the service have different labels, the more restrictive of the two will be applied to the downloaded .pbix file.
 
 When you apply a label in Desktop, it shows up in the status bar.
 
 [Screenshot]
+
 
 ## Sensitivity label inheritance upon creation of new content
 
