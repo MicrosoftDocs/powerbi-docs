@@ -26,7 +26,7 @@ Exporting data requires a Power BI Pro license, or for the dashboard or report t
 1. Start on a Power BI dashboard. Here we're using the dashboard from the ***Marketing and sales sample*** app. You can [download this app from AppSource.com](https://appsource.microsoft.com/en-us/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample
 ).
 
-    ![App dashboard](media/end-user-export/power-bi-dashboards.png)
+    ![App dashboard](media/end-user-export/power-bi-dashboard.png)
 
 2. Hover over a visual to reveal **More options** (...) and click to display the action menu.
 
