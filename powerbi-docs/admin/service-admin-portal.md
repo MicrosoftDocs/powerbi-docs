@@ -600,8 +600,8 @@ The following table gives more details about the status of the upgrade.
 |Status  |Description  |
 |---------|---------|
 | **(Blank)** | The workspace is not being upgraded by a Power BI admin. |
-| **Pending** | The workspace is queued to be upgraded. The upgrade can be cancelled. |
-| **In Progress** | The workspace is actively being upgraded. The upgrade can't be cancelled. |
+| **Pending** | The workspace is queued to be upgraded. The upgrade can be canceled. |
+| **In Progress** | The workspace is actively being upgraded. The upgrade can't be canceled. |
 | **Completed** | The workspace was upgraded in the last 30 days by a Power BI admin. A workspace admin can go back to classic option if desired during the 30-day period after the workspace was upgraded. |
 
 
