@@ -17,7 +17,7 @@ Enabling SSO makes it easy for Power BI reports and dashboards to refresh data f
 
 ## Supported data sources
 
-We currently support SAP HANA with SAML. For more information about setting up and configuring single sign-on for SAP HANA by using SAML, see [SAML SSO for BI Platform to HANA](https://wiki.scn.sap.com/wiki/display/SAPHANA/SAML+SSO+for+BI+Platform+to+HANA).
+We currently support SAP HANA with SAML. For more information about setting up and configuring single sign-on for SAP HANA by using SAML, see [SAML SSO for BI Platform to HANA](https://blogs.sap.com/2020/03/22/sap-bi-platform-saml-sso-to-hana-database/).
 
 We support additional data sources with [Kerberos](service-gateway-sso-kerberos.md) (including SAP HANA).
 

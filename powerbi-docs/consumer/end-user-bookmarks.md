@@ -7,14 +7,13 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/02/2020
+ms.date: 12/03/2020
 LocalizationGroup: Create reports
 ---
 # What are bookmarks?
 
 [!INCLUDE[consumer-appliesto-ynnm](../includes/consumer-appliesto-ynnm.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Bookmarks capture the currently configured view of a report page, including filters, slicers, and the state of visuals. When you select a bookmark, Power BI takes you back to that view. There are two types of bookmarks - those you create yourself and those created by report *designers*. Any Power BI user can create personal bookmarks. However, the ability to use bookmarks created by others requires a Power BI Pro or Premium license. [Which license do I have?](end-user-license.md)
 
