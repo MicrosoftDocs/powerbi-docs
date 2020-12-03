@@ -87,7 +87,10 @@ After you've applied the label, it will be visible in the status bar.
 * When using "Download to .pbix" in the Power BI service, if the report and dataset being downloaded both have labels, and those labels are different, the label that will be applied to the .pbix file is the more restrictive of the two.
 
 ## Remove sensitivity labels
-To remove a sensitivity label from a report, dashboard, dataset, or dataflow, follow the [same procedure used for applying labels](#applying-sensitivity-labels), but choose **(None)** when prompted to classify the sensitivity of the data. 
+To remove a sensitivity label from a report, dashboard, dataset, or dataflow, follow the same procedure used for applying labels, but choose **(None)** when prompted to classify the sensitivity of the data.
+
+>[!NOTE]
+> It is currently not possible to remove a label in Power BI Desktop. 
 
 ## Considerations and limitations
 

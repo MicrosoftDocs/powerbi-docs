@@ -67,7 +67,7 @@ For organizations that want to make sure that .pbix files **do not** work with s
 
 1. Find the valueName **EnableInformationProtection** and set it to **false**.
 
-See the [sensitivity label overview](./service-security-sensitivity-label-overview#limitations) for further limitations and considerations related to using sensitivity labels in Power BI Desktop.
+See the [sensitivity label overview](./service-security-sensitivity-label-overview.md#limitations) for further limitations and considerations related to using sensitivity labels in Power BI Desktop.
 
 ## Troubleshooting
 
