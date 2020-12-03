@@ -124,7 +124,7 @@ The following datasets are not accessible by the XMLA endpoint. These datasetsâ€
 
 ## Security
 
-In addition to the XMLA Endpoint property being enabled read-write by the capacity admin, the tenant-level setting **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** must be enabled in the admin portal. If you need to generate AIXL files through the XMLA Endpoint, the tenant-level setting **Allow live connections** should also be enabled. These settings are both enabled by default.
+In addition to the XMLA Endpoint property being enabled read-write by the capacity admin, the tenant-level setting **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** must be enabled in the admin portal. If you need to generate AIXL files that connect to the XMLA Endpoint, the tenant-level setting **Allow live connections** should also be enabled. These settings are both enabled by default.
 
 **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** is an integration setting.
 
@@ -133,8 +133,6 @@ In addition to the XMLA Endpoint property being enabled read-write by the capaci
 **Allow live connections** is an export and sharing setting.
 
 :::image type="content" source="media/service-premium-connect-tools/allow-live-connections.png" alt-text="Export and sharing setting allow live connections.":::
-
-
 
 Access through the XMLA endpoint will honor security group membership set at the workspace/app level.
 
