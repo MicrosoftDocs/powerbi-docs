@@ -8,14 +8,13 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 08/28/2020
+ms.date: 12/03/2020
 LocalizationGroup: Consumers
 ---
 # Export data from a visual
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 To see the data that's used to create a visual, [you can display that data in Power BI](end-user-show-data.md), or export it to Excel. The option to export the data requires a certain type or license and edit permissions to the content. If you can't export, check with your Power BI administrator or IT help desk. 
 
