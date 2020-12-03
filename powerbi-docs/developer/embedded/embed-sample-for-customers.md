@@ -153,8 +153,8 @@ The table below describes a few key differences between the [service principal](
 Registering your application with Azure AD allows you to:
 > [!div class="checklist"]
 >* Establish an identity for your app
->* Specify your app's [Power BI REST permissions](/azure/active-directory/develop/v2-permissions-and-consent)
 >* Let your app access the [Power BI REST APIs](/rest/api/power-bi/)
+>* If you're using a *master user* - Specify your app's [Power BI REST permissions](/azure/active-directory/develop/v2-permissions-and-consent)
 
 To register your application with Azure AD, follow the instructions in [Register your application](register-app.md).
 
