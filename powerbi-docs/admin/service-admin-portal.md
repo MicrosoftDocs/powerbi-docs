@@ -593,7 +593,7 @@ Admins can also manage and recover workspaces, using either the admin portal or 
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
 
-Admins can upgrade classic workspaces to the new workspace experience. Admins can select one or more workspaces with Type **Group** to upgrade. Upgrades are queued and executed asynchronously. It may take several minutes to several days to complete all **Pending** upgrades because the overall rate of admin-initiated upgrades is limited to keep the service running smoothly. The **Workspace upgrade status** column helps admins track the progress of the admin-initiated upgrades. Admins can cancel admin-initiated upgrades when they are **Pending**. To upgrade a workspace immediately, contact the Workspace Admin and have them start the upgrade through the workspace settings pane. 
+Admins can upgrade classic workspaces to the new workspace experience. Admins can select one or more workspaces with Type **Group** to upgrade. Upgrades are queued and executed asynchronously. It may take several minutes to several days to complete all **Pending** upgrades because the overall rate of admin-initiated upgrades is limited to keep the service running smoothly. The **Workspace upgrade status** column helps admins track the progress of the admin-initiated upgrades. Admins can cancel admin-initiated upgrades when they are **Pending**. To upgrade a workspace immediately, contact the Workspace Admin and have them start the upgrade through the workspace settings pane. [Learn more about workspace upgrade before starting your Power BI admin-initiated workspace upgrade.](../collaborate-share/service-upgrade-workspaces.md).
 
 The following table gives more details about the status of the upgrade.
 
