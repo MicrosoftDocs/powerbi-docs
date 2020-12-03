@@ -63,7 +63,7 @@ To use sensitivity labels in Power BI Desktop:
 * All [licensing and other requirements](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements) must have been met.
 * The information protection preview feature switch in Power BI Desktop must be turned on. If you see the sensitivity button on the home tab, the preview feature is on. If you don't see the button, go to **File > Options and settings > Options > Preview features**, and check the box next to **Information protection**.
 
-    ![Screenshot of Desktop preview features page.](images/service-security-apply-data-sensitivity-labels/desktop-preview-features-page.png)
+    ![Screenshot of Desktop preview features page.](media/service-security-apply-data-sensitivity-labels/desktop-preview-features-page.png)
 
     If you don't see the Information protection preview option, the information protection preview feature may be blocked for your organization. In this case contact your Power BI administrator.
 
