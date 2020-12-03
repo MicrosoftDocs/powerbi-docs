@@ -27,7 +27,7 @@ By default, *read-only* connectivity using the endpoint is enabled for the **Dat
 
 ## Data modeling and management tools
 
-These are some of the most common tools used with Azure Analysis Services and SQL Server Analysis Services, and now supported by Power BI Premium datasets:
+Listed below are some of the most common tools used with Azure Analysis Services and SQL Server Analysis Services, and now supported by Power BI Premium datasets:
 
 **Visual Studio with Analysis Services projects** – Also known as SQL Server Data Tools, or simply **SSDT**, is an enterprise grade model authoring tool for Analysis Services tabular models. Analysis Services projects extensions are supported on all Visual Studio 2017 and later editions, including the free Community edition. Extension version 2.9.6 or higher is required to deploy tabular models to a Premium workspace. When deploying to a Premium workspace, the model must be at the 1500 or higher compatibility level. XMLA read-write is required on the datasets workload. To learn more, see [Tools for Analysis Services](/analysis-services/tools-and-applications-used-in-analysis-services?view=power-bi-premium-current&preserve-view=true).
 
@@ -45,7 +45,7 @@ These are some of the most common tools used with Azure Analysis Services and SQ
 
 **DAX Studio** – An open-source tool for DAX authoring, diagnosis, performance tuning, and analysis. Features include object browsing, integrated tracing, query execution breakdowns with detailed statistics, DAX syntax highlighting and formatting. XMLA read-only is required for query operations. To learn more, see [daxstudio.org](https://daxstudio.org/).
 
-**ALM Toolkit** - An open-source schema compare tool for Power BI datasets, most often used for application lifecycle management (ALM) scenarios. Perform deployment across environments and retain incremental refresh historical data. Diff and merge metadata files, branches and repos. Reuse common definitions between datasets. Read-only is required for query operations. Read-write is required for metadata operations. To learn more, see [alm-toolkit.com](http://alm-toolkit.com/).
+**ALM Toolkit** - An open-source schema compare tool for Power BI datasets, most often used for application lifecycle management (ALM) scenarios. Perform deployment across environments and retain incremental refresh historical data. Diff and merge metadata files, branches, and repos. Reuse common definitions between datasets. Read-only is required for query operations. Read-write is required for metadata operations. To learn more, see [alm-toolkit.com](http://alm-toolkit.com/).
 
 **Microsoft Excel** – Excel PivotTables are one of the most common tools used to summarize, analyze, explore, and present summary data from Power BI datasets. Read-only is required for query operations. Click-to-Run version of Office 16.0.11326.10000 or higher is required.
 
@@ -53,7 +53,7 @@ These are some of the most common tools used with Azure Analysis Services and SQ
 
 ### Client libraries
 
-Client applications don't communicate directly with the XMLA endpoint. Instead, they use *client libraries* as an abstraction layer. These are the same client libraries applications use to connect to Azure Analysis Services and SQL Server Analysis Services. Microsoft applications like Excel, SQL Server Management Studio (SSMS), and  Analysis Services projects extension for Visual Studio install all three client libraries and update them along with regular application and extension updates. Developers can also use the client libraries to build custom applications. In some cases, particularly with third-party applications, if not installed with the application, it may be necessary to install newer versions of the client libraries. Client libraries are updated monthly. To learn more, see [Client libraries for connecting to Analysis Services](/azure/analysis-services/analysis-services-data-providers).
+Client applications don't communicate directly with the XMLA endpoint. Instead, they use *client libraries* as an abstraction layer. These are the same client libraries that applications use to connect to Azure Analysis Services and SQL Server Analysis Services. Microsoft applications like Excel, SQL Server Management Studio (SSMS), and  Analysis Services projects extension for Visual Studio install all three client libraries and update them along with regular application and extension updates. Developers can also use the client libraries to build custom applications. In some cases, particularly with third-party applications, if not installed with the application, it may be necessary to install newer versions of the client libraries. Client libraries are updated monthly. To learn more, see [Client libraries for connecting to Analysis Services](/azure/analysis-services/analysis-services-data-providers).
 
 ## Optimize datasets for write operations by enabling large models
 
@@ -65,7 +65,7 @@ By default, a Premium capacity has the XMLA Endpoint property setting enabled fo
 
 ### To enable read-write for a capacity
 
-1. In the Admin portal, click **Capacity settings** > **Power BI Premium** > capacity name.
+1. In the Admin portal, select **Capacity settings** > **Power BI Premium** > capacity name.
 2. Expand **Workloads**. In the **XMLA Endpoint** setting, select **Read Write**.
 
     ![Enable XMLA endpoint](media/service-premium-connect-tools/xmla-endpoint-enable.png)
@@ -75,7 +75,7 @@ By default, a Premium capacity has the XMLA Endpoint property setting enabled fo
 Workspaces assigned to a capacity have a connection string in URL format like this,  
 `powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name]`.
 
-Applications connecting to the workspace use the URL as it were an Analysis Services server name. For example,  
+Applications connecting to the workspace use the URL as if it were an Analysis Services server name. For example,  
 `powerbi://api.powerbi.com/v1.0/contoso.com/Sales Workspace`.
 
 Users with UPNs in the same tenant (not B2B) can replace the tenant name with `myorg`. For example,  
@@ -86,7 +86,7 @@ B2B users must specify their organization UPN in tenant name. For example,
 
 ### To get the workspace connection URL
 
-In workspace **Settings** > **Premium** > **Workspace Connection**, click **Copy**.
+In workspace **Settings** > **Premium** > **Workspace Connection**, select **Copy**.
 
 ![Workspace connection string](media/service-premium-connect-tools/xmla-endpoint-workspace-connection.png)
 
@@ -94,11 +94,11 @@ In workspace **Settings** > **Premium** > **Workspace Connection**, click **Copy
 
 ### Initial catalog
 
-With some tools, such as SQL Server Profiler, you may need to specify an *Initial Catalog*. Specify a dataset (database) in your workspace. In the **Connect to Server** dialog, click **Options** > **Connection Properties** > **Connect to database**, enter the dataset name.
+With some tools, such as SQL Server Profiler, you may need to specify an *Initial Catalog*. Specify a dataset (database) in your workspace. In the **Connect to Server** dialog, select **Options** > **Connection Properties** > **Connect to database**, enter the dataset name.
 
 ### Duplicate workspace names
 
-[New workspaces](../collaborate-share/service-new-workspaces.md) (created using the new workspace experience) in Power BI impose validation to disallow creation or renaming workspaces with duplicate names. Workspaces that have not been migrated can result in duplicate names. When connecting to a workspace with the same name as another workspace, you may get the following error:
+[New workspaces](../collaborate-share/service-new-workspaces.md) (created using the new workspace experience) in Power BI impose validation to disallow creating or renaming workspaces with duplicate names. Workspaces that haven't been migrated can result in duplicate names. When connecting to a workspace with the same name as another workspace, you may get the following error:
 
 **Cannot connect to powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name].**
 
@@ -115,7 +115,7 @@ When connecting to a workspace, changes from new, deleted, and renamed datasets 
 
 ### Unsupported datasets
 
-The following datasets are not accessible by the XMLA endpoint. These datasets will not appear under the workspace in SSMS or in other tools:
+The following datasets aren't accessible by the XMLA endpoint. These datasets won't appear under the workspace in SSMS or in other tools:
 
 - Datasets based on a live connection to an Azure Analysis Services or SQL Server Analysis Services model. 
 - Datasets based on a live connection to a Power BI dataset in another workspace. To learn more, see [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md).
@@ -185,7 +185,7 @@ When the Deployment Server property has been specified, the project can then be 
 
 **When deployed the first time**, a dataset is created in the workspace by using metadata from the model.bim. As part of the deployment operation, after the dataset has been created in the workspace from model metadata, processing to load data into the dataset from data sources will fail.
 
-Processing fails because unlike when deploying to an Azure or SQL Server Analysis Server instance, where data source credentials are prompted for as part of the deployment operation, when deploying to a Premium workspace data source credentials cannot be specified as part of the deployment operation. Instead, after metadata deployment has succeeded and the dataset has been created, data source credentials are then specified in the Power BI Service in dataset settings. In the workspace, click **Datasets** > **Settings** > **Data source credentials** > **Edit credentials**.
+Processing fails because unlike when deploying to an Azure or SQL Server Analysis Server instance, where data source credentials are prompted for as part of the deployment operation, when deploying to a Premium workspace data source credentials cannot be specified as part of the deployment operation. Instead, after metadata deployment has succeeded and the dataset has been created, data source credentials are then specified in the Power BI Service in dataset settings. In the workspace, select **Datasets** > **Settings** > **Data source credentials** > **Edit credentials**.
 
 ![Data source credentials](media/service-premium-connect-tools/xmla-endpoint-datasource-credentials.png)
 
@@ -199,7 +199,7 @@ Using SSMS to connect to a workspace is just like connecting to an Azure or SQL 
 
 ### Connect to a workspace by using SSMS
 
-1. In SQL Server Management Studio, click **Connect** > **Connect to Server**.
+1. In SQL Server Management Studio, select **Connect** > **Connect to Server**.
 
 2. In **Server Type**, select **Analysis Services**. In **Server name**, enter the workspace URL. In **Authentication**, select **Active Directory - Universal with MFA**, and then in **User name**, enter your organizational user ID.
 
