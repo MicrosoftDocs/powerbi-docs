@@ -10,6 +10,7 @@ ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 12/03/2020
 LocalizationGroup: Dashboards
+ms.custom: video-bZMSv5KAlcE
 ---
 # View Power BI notifications
 
