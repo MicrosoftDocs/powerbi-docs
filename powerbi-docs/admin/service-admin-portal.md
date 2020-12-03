@@ -292,7 +292,7 @@ The **Publish to web** setting in the admin portal gives options for which users
 
 ![Publish to web setting](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
 
-Admins can set **Publish to web** to **Enabled** and **Choose how embed codes work** to **Allow only existing embed codes**. In that case, users can create embed codes, but they have to contact the Power BI admin to allow them do so.
+Admins can set **Publish to web** to **Enabled** and **Choose how embed codes work** to **Allow only existing embed codes**. In that case, users can create embed codes, but they have to contact the Power BI admin to allow them to do so.
 
 ![Publish to web prompt](../collaborate-share/media/service-publish-to-web/publish_to_web_admin_prompt.png)
 
@@ -302,7 +302,7 @@ Users see different options in the UI based on what the **Publish to web** setti
 |---------|---------|---------|---------|
 |**Publish to web** under report **More options (...)** menu|Enabled for all|Not visible for all|Only visible for authorized users or groups.|
 |**Manage embed codes** under **Settings**|Enabled for all|Enabled for all|Enabled for all<br><br>* **Delete** option only for authorized users or groups.<br>* **Get codes** enabled for all.|
-|**Embed codes** within admin portal|Status reflects one of the following:<br>* Active<br>* Not supported<br>* Blocked|Status displays **Disabled**|Status reflects one of the following:<br>* Active<br>* Not supported<br>* Blocked<br><br>If a user isn't authorized based on the tenant setting, status displays **infringed**.|
+|**Embed codes** within admin portal|Status has one of the following values:<br>* Active<br>* Not supported<br>* Blocked|Status displays **Disabled**|Status has one of the following values:<br>* Active<br>* Not supported<br>* Blocked<br><br>If a user isn't authorized based on the tenant setting, status displays **infringed**.|
 |Existing published reports|All enabled|All disabled|Reports continue to render for all.|
 
 ### Copy and paste visuals
@@ -331,7 +331,7 @@ Users in the organization can download .pbix files and paginated reports.
 
 ### Allow live connections
 
-Users in the organization can use Power BI service Live Connect. This includes Analyze in Excel.
+Users in the organization can use Power BI service Live Connect. Allowing live connections also allows users to Analyze in Excel.
 
 ![Screenshot of allow live connections setting.](media/service-admin-portal/powerbi-admin-portal-allow-live-connections-setting.png)
 
@@ -452,7 +452,7 @@ Users in the organization can interact with and share visuals created with R scr
 
 Users in the organization can use auditing to monitor actions taken in Power BI by other users in the organization. [Learn more](service-admin-auditing.md)
 
-This setting must be enabled for audit log entries to be recorded. There can be up to a 48 hour delay between enabling auditing and being able to view audit data. If you don't see data immediately, check the audit logs later. There can be a similar delay between getting permission to view audit logs and being able to access the logs.
+This setting must be enabled for audit log entries to be recorded. There can be up to a 48-hour delay between enabling auditing and being able to view audit data. If you don't see data immediately, check the audit logs later. There can be a similar delay between getting permission to view audit logs and being able to access the logs.
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
