@@ -12,7 +12,7 @@ ms.custom: licensing support
 LocalizationGroup: consumers
 ---
 
-# Power BI feature list for *consumers* and others with free licenses
+# Power BI feature list for *business users* and others with free licenses
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
