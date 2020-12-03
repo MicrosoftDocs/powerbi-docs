@@ -55,9 +55,9 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
         * [Service principal](embed-service-principal.md) - An Azure Active Directory (Azure AD) [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) that allows Azure AD to authenticate your app.
 
-        * [Power BI Pro account](../../admin/service-admin-purchasing-power-bi-pro.md) - This will be your **master user** and your app will use it to sign in to your Power BI Pro account.
+        * [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) license - This will be your **master user** and your app will use it to authenticate to Power BI.
 
-        * A Power BI [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) license - This will be your **master user** and your app will use it to sign in to your Power BI Pro account.
+        * A Power BI [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) license - This will be your **master user** and your app will use it to authenticate to Power BI.
 
     >[!NOTE]
     >To [move to production](move-to-production.md) you'll need a [capacity](embedded-capacity.md).
@@ -119,9 +119,6 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
 To create an *embed for your customers* sample app, follow these steps:
 
->[!TIP]
->You can create a ready made sample app using the the [embedding setup tool](https://app.powerbi.com/embedsetup). This tool replicates the steps described in this tutorial, and produces a .NET sample app that you can experiment with.
-
 1. [Select your authentication method](#step-1---select-your-authentication-method).
 
 2. [Register an Azure AD application](#step-2---register-an-azure-ad-application).
@@ -146,7 +143,7 @@ The table below describes a few key differences between the [service principal](
 
 |Consideration  |Service principal  |Master user  |
 |---------|---------|---------|
-|Mechanism     |Your Azure AD app's [service principal object](/azure/active-directory/develop/app-objects-and-service-principals.md#service-principal-object) allows Azure AD to authenticate your embedded solution app against Power BI.</br></br>Authenticating against Azure AD allows your embedded app to get an Azure AD token, which lists the permissions (also known as scopes) for the Power BI REST APIs.         |Your Azure AD app uses the credentials (username and password) of a Power BI user, to authenticate against Power BI.</br></br>The *master user* credentials determine which Power BI content your app can access.         |
+|Mechanism     |Your Azure AD app's [service principal object](/azure/active-directory/develop/app-objects-and-service-principals.md#service-principal-object) allows Azure AD to authenticate your embedded solution app against Power BI.        |Your Azure AD app uses the credentials (username and password) of a Power BI user, to authenticate against Power BI.         |
 |Security     |*Service principal* is the Azure AD recommended authorization method. If you're using a *service principal* you can authenticate using either an *application secret* or a *certificate*.</br></br>This tutorial only describes using *service principal* with an *application secret*. To embed using a *service principal* and a *certificate*, refer to the [service principal with a certificate](embed-service-principal-certificate.md) article.         |This authentication method is not considered as secure as using a *service principal*. This is because you have to be vigilant with the *master user* credentials (username and password). For example, you must not expose them in your embedding application, and you should change the password frequently.         |
 |Power BI service access |You can't access Power BI service with a *service principal*.|You can access Power BI service with your *master user* credentials.|
 |License     |Doesn't require a Pro license. You can use content from any workspace that you're a member or an admin of.         |Requires a [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) license.         |
