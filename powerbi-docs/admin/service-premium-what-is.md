@@ -272,7 +272,9 @@ The following table shows the recommended SKUs for .pbix file upload or publish 
 
 The Power BI Embedded A4 SKU is equal to the P1 SKU, A5 = P2 and A6 = P3.
 
-If you enable the [Large dataset storage format](service-premium-large-models.md) setting for a dataset, the .pbix file size limitations still apply to file upload or publish. However, with incremental refresh and large models combined, datasets can grow much larger than these limits. With large models, the dataset size is limited only by the Power BI Premium capacity size.
+### Large dataset storage format
+
+If you enable the [Large dataset storage format](service-premium-large-models.md) setting for a dataset, the .pbix file size limitations still apply to file upload or publish. The upload size limit is unaffected by the large dataset storage format. However, when published to the service, with incremental refresh and large dataset storage format enabled, datasets can grow much larger than these limits. With large dataset storage format, the dataset size is limited only by the Power BI Premium capacity size.
 
 Your .pbix files represent data in a *highly compressed state*. The data will likely expand when loaded in memory, and from there it may expand several more times during data refresh.
 
