@@ -86,7 +86,7 @@ In our continued effort to improve accessibility, the previous list of experienc
 | :------------------- | :------------------- |
 | Move line up / down | **Alt + Up arrow key** / **Down arrow key** |
 | Copy line up / down | **Shift + Alt + Up arrow key** / **Down arrow key** |
-| Insert line below | **Ctrl + Enter** |
+| Insert line below | **Shift + Enter** |
 | Insert line above | **Ctrl + Shift + Enter** |
 | Jump to matching bracket | **Ctrl + Shift +** \ |
 | Indent line / Extend line into the margin | **Ctrl + ]** / **[** |
@@ -94,6 +94,10 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Select current line | **Ctrl + I** |
 | Select all occurrences of current selection | **Ctrl + Shift + L** |
 | Select all occurrences of current word | **Ctrl + F2** |
+| Comment a line | **Ctrl + /** or **Ctrl + K + C** |
+| Uncomment a line | **Ctrl + /** or **Ctrl + K + U** |
+| Increase font size | **Ctrl + +** Or **Scroll Up** |
+| Decrease font size | **Ctrl + -** Or **Scroll Down** |
 
 ## Enter data
 | To do this action           | Press                |
