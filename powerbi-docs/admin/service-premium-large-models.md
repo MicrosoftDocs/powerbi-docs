@@ -13,26 +13,30 @@ LocalizationGroup: Premium
 
 # Large datasets in Power BI Premium
 
-Power BI datasets can store data in a highly compressed, in-memory cache for optimized query performance to enable fast user interactivity over large datasets. Large datasets, beyond the default 10 GB limit, can be enabled for datasets in Premium capacities with the **Large dataset storage format** setting. When enabled, the size of the dataset is instead limited by the Premium capacity size, which is similar to how Azure Analysis Services works in terms of model size limitations. To learn more about capacity sizes in Power BI Premium, see Capacity nodes. You can set up large datasets for all Premium P SKUs and Embedded A SKUs; but they work only with the [new workspaces](../collaborate-share/service-create-the-new-workspaces.md).
+Power BI datasets can store data in a highly compressed in-memory cache for optimized query performance, enabling fast user interactivity. With Premium capacities, large datasets, beyond the default 10 GB limit, can be enabled  with the **Large dataset storage format** setting. 
 
-If you're planning to use XMLA based tools for write operations on a dataset, be sure to enable the **Large dataset storage format** setting, even for datasets that you wouldn't necessarily characterize as large datasett. When enabled, the large dataset storage format can improve XMLA write operations performance.
+When enabled, dataset size is not limited to 10 GB, but instead limited by the Premium capacity size. Large datasets can be enabled for all Premium P SKUs and Embedded A SKUs, and work only with [New workspaces](../collaborate-share/service-create-the-new-workspaces.md). The large dataset size limit in Premium is similar to Azure Analysis Services, in terms of data model size limitations.
 
-Large datasets in the service don't affect the PBIX upload size, which is still limited to 10 GB. Instead, datasets grow beyond 10 GB in the service on refresh. You can use incremental refresh to configure a dataset to grow beyond 10 GB.
+While required for datasets to grow beyond 10 GB, enabling the Large dataset storage format setting has additional benefits. If you're planning to use XMLA endpoint based tools for dataset write operations, be sure to enable the  setting, even for datasets that you wouldn't necessarily characterize as a large dataset. When enabled, the large dataset storage format can improve XMLA write operations performance.
+
+Large datasets in the service do not affect the .pbix upload size, which is still limited to 10 GB. Instead, datasets grow beyond 10 GB in the service on refresh.
 
 ## To enable large datasets
 
-1. Create a model in Power BI Desktop and configure [incremental refresh](service-premium-incremental-refresh.md).
+1. Create a model in Power BI Desktop. If your dataset will become larger and progressively consume more memory, be sure to configure [Incremental refresh](service-premium-incremental-refresh.md).
 
-1. Publish the model as a dataset to the Power BI Premium service.
+1. Publish the model as a dataset to the service.
 
-1. In dataset **Settings**, expand **Large dataset storage format**, click the slider to **On**, and then click **Apply**.
+1. In the service > dataset > **Settings**, expand **Large dataset storage format**, click the slider to **On**, and then click **Apply**.
     :::image type="content" source="media/service-premium-large-models/enable-large-dataset.png" alt-text="Enable large dataset slider":::
 
-1. Invoke a refresh to load historical data based on the incremental refresh policy. The first refresh could take a while to load the history. Subsequent refreshes should be faster because they are incremental.
+1. Invoke a refresh to load historical data based on the incremental refresh policy. The first refresh could take a while to load the history. Subsequent refreshes should be faster, depending on your incremental refresh policy.
 
 ## Set default storage format
 
-1. In your workspace, click **Settings** > **Premium**.
+All datasets in a workspace assigned to Premium capacity can have the large dataset storage format enabled by default.
+
+1. In the workspace, click **Settings** > **Premium**.
 1. In **Default storage format**, select **Large dataset storage format**, and then click **Save**.
 :::image type="content" source="media/service-premium-large-models/default-storage-format.png" alt-text="Enable default storage format":::
 

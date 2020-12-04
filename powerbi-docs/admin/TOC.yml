@@ -118,7 +118,7 @@
         href: service-premium-metrics-app.md      
       - name: Monitor capacities in the Admin portal
         href: service-admin-premium-monitor-portal.md
-      - name: Configure large models (preview)
+      - name: Configure large datasets
         href: service-premium-large-models.md
       - name: Configure Multi-Geo
         href: service-admin-premium-multi-geo.md
