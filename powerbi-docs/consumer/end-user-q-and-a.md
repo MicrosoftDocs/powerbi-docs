@@ -14,7 +14,6 @@ LocalizationGroup: Ask questions of your data
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 ## What is Q&A?
 Sometimes the fastest way to get an answer from your data is to ask a question using natural language. For example, "what were total sales last year."
@@ -167,7 +166,7 @@ Then choose **Settings** > **Dashboards**. Make sure there is a checkmark next t
 **Question**: I'm not getting the results I'd like to see when I type a question.    
 **Answer**: Select the option to contact the report or dashboard owner. You can do this directly from the Q&A dashboard page or the Q&A visual. Or, you can look up the owner from the Power BI header.  There are many things the owner can do to improve the Q&A results. For example, the owner can rename columns in the dataset to use terms that are easily understood (`CustomerFirstName` instead of `CustFN`). Since the owner knows the dataset really well, they can also come up with helpful questions and add them to the Q&A suggested questions.
 
-![Display contact information](media/end-user-q-and-a/power-bi-qna-contact.png)
+![Display contact information](media/end-user-q-and-a/power-bi-qna-contacts.png)
 
 ## Privacy
 
