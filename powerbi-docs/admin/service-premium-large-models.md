@@ -21,7 +21,7 @@ While required for datasets to grow beyond 10 GB, enabling the Large dataset sto
 
 Large datasets in the service do not affect the Power BI Desktop model upload size, which is still limited to 10 GB. Instead, datasets can grow beyond 10 GB in the service on refresh.
 
-## To enable large datasets
+## Enable large datasets
 
 Steps here describe enabling large datasets for a new model published to the service. For existing datasets, only step three is necessary.
 
@@ -45,7 +45,7 @@ All new datasets created in a workspace assigned to Premium capacity can have th
 
     :::image type="content" source="media/service-premium-large-models/default-storage-format.png" alt-text="Enable default storage format":::
 
-### Enable large datasets with PowerShell
+### Enable with PowerShell
 
 You can also enable large dataset storage format by using PowerShell. You must have capacity admin and workspace admin privileges to run the PowerShell cmdlets.
 
@@ -132,7 +132,7 @@ Keep in mind the following restrictions when using large datasets:
 - **Download to Power BI Desktop**: If a dataset is stored on Premium Files, [downloading as a .pbix](../create-reports/service-export-to-pbix.md) file will fail.
 - **Supported regions**: Large datasets are supported in all Azure regions that support Premium Files Storage. To learn more, see [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=storage), and consult the table in the following section.
 
-## Availability in regions
+## Region availability
 
 Large datasets in Power BI are only available in certain Azure regions that support [Azure Premium Files Storage](/azure/storage/files/storage-files-planning#storage-tiers).
 
