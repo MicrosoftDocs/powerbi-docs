@@ -28,6 +28,7 @@ Large datasets in the service do not affect the .pbix upload size, which is stil
 1. Publish the model as a dataset to the service.
 
 1. In the service > dataset > **Settings**, expand **Large dataset storage format**, click the slider to **On**, and then click **Apply**.
+
     :::image type="content" source="media/service-premium-large-models/enable-large-dataset.png" alt-text="Enable large dataset slider":::
 
 1. Invoke a refresh to load historical data based on the incremental refresh policy. The first refresh could take a while to load the history. Subsequent refreshes should be faster, depending on your incremental refresh policy.
@@ -37,8 +38,10 @@ Large datasets in the service do not affect the .pbix upload size, which is stil
 All datasets in a workspace assigned to Premium capacity can have the large dataset storage format enabled by default.
 
 1. In the workspace, click **Settings** > **Premium**.
+
 1. In **Default storage format**, select **Large dataset storage format**, and then click **Save**.
-:::image type="content" source="media/service-premium-large-models/default-storage-format.png" alt-text="Enable default storage format":::
+
+    :::image type="content" source="media/service-premium-large-models/default-storage-format.png" alt-text="Enable default storage format":::
 
 ### PowerShell cmdlets
 
