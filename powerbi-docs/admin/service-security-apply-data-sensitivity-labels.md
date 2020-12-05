@@ -11,16 +11,19 @@ LocalizationGroup: Data from files
 ---
 # How to apply sensitivity labels in Power BI
 
-Microsoft Information Protection sensitivity labels on your reports, dashboards, datasets, and dataflows can guard your sensitive content against unauthorized data access and leakage. Labeling your data correctly with sensitivity labels ensures that only authorized people can access your data. This article shows you how to apply sensitivity labels to your content.
-
-To be able to apply sensitivity labels in Power BI:
-* You must have a Power BI Pro license and edit permissions on the content you wish to label.
-* You must belong to a security group that has permissions to apply sensitivity labels, as described in the article entitled [Enable sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md).
-* All [licensing and other requirements](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements) must have been met.
+Microsoft Information Protection sensitivity labels on your reports, dashboards, datasets, dataflows, and .pbix files can guard your sensitive content against unauthorized data access and leakage. Labeling your data correctly with sensitivity labels ensures that only authorized people can access your data. This article shows you how to apply sensitivity labels in the Power BI service and in Power BI Desktop.
 
 For more information about sensitivity labels in Power BI, see [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md).
 
 ## Apply sensitivity labels in the Power BI service
+
+In the Power BI service, you can apply sensitivity labels to reports, dashboards, datasets, and dataflows.
+
+To be able to apply sensitivity labels in the Power BI service:
+* You must have a [Power BI Pro license](./service-admin-purchasing-power-bi-pro.md) and edit permissions on the content you wish to label.
+* Sensitivity labels must be enabled for your organization. Contact your Power BI admin if you aren’t sure about this.
+* You must belong to a security group that has permissions to apply sensitivity labels, as described in [Enable sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md).
+* All [licensing and other requirements](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements) must have been met.
 
 When data protection is enabled on your tenant, sensitivity labels appear in the sensitivity column in the list view of dashboards, reports, datasets, and dataflows.
 
@@ -40,7 +43,8 @@ The following image illustrates these steps on a report
 
 1. Click **More options (...)**.
 1. Select **Settings**.
-1. In the settings side pane choose the appropriate sensitivity label.
+1. Select the datasets or dataflows tab, whichever is relevant.
+1. Expand the sensitivity labels section and choose the appropriate sensitivity label.
 1. Apply the settings.
 
 The following two images illustrate these steps on a dataset.
@@ -49,7 +53,7 @@ Choose **More options (...)** and then **Settings**.
 
 ![Open dataset settings](media/service-security-apply-data-sensitivity-labels/apply-data-sensitivity-labels-05.png)
 
-On the settings page, open the sensitivity label section, choose the desired sensitivity label, and click **Apply**.
+On the settings datasets tab, open the sensitivity label section, choose the desired sensitivity label, and click **Apply**.
 
 ![Choose sensitivity label](media/service-security-apply-data-sensitivity-labels/apply-data-sensitivity-labels-06.png)
 
@@ -87,10 +91,12 @@ After you've applied the label, it will be visible in the status bar.
 * When using "Download to .pbix" in the Power BI service, if the report and dataset being downloaded both have labels, and those labels are different, the label that will be applied to the .pbix file is the more restrictive of the two.
 
 ## Remove sensitivity labels
-To remove a sensitivity label from a report, dashboard, dataset, or dataflow, follow the same procedure used for applying labels, but choose **(None)** when prompted to classify the sensitivity of the data.
 
->[!NOTE]
-> It is currently not possible to remove a label in Power BI Desktop. 
+### Service
+To remove a sensitivity label from a report, dashboard, dataset, or dataflow, follow the [same procedure used for applying labels in the Power BI service](#apply-sensitivity-labels-in-the-power-bi-service), but choose **(None)** when prompted to classify the sensitivity of the data.
+
+### Desktop
+Removing the sensitivity label from a .pbix file after it has been saved with the label is currently not supported in Desktop. In such cases it is recommended to publish the file to the Power BI service and then there in the service to remove the label from the subsequent report and dataset.
 
 ## Considerations and limitations
 
