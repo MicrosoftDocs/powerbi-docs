@@ -175,19 +175,21 @@ To access sensitivity labels in either of these centers, navigate to **Classific
 
 ### Power BI Desktop (preview)
 
-* Protected .pbix files can be only opened and/or published by a user who is the RMS owner of the file (the user who applied the label to the file originally) or who has [**Full control** and/or **Export** usage rights](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide) usage rights for the relevant label.
+* Protected .pbix files can be only opened and/or published by a user who is the RMS owner of the file (the user who applied the label to the file originally) or who has [**Full control** and/or **Export** usage rights](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide) usage rights for the relevant label. The RMS owner has Full control and can never be locked out. [See more detail](https://docs.microsoft.com/azure/information-protection/configure-usage-rights).
 
-* Users who have the necessary usage rights for modifying lables but are not enabled by the [Power BI service sensitivity label tenant settings](service-security-enable-data-sensitivity-labels.md#enable-sensitivity-labels) to apply or modify sensitivity labels, will not be able to apply a label to a .pbix file or modify an existing label.
+* Power BI Desktop users may experience problems saving their work when internet connectivity is lost, such as after going offline. With no internet connection, some actions related to sensitivity labels and rights management might not complete properly. In such cases it is recommended to go back online and try saving again.
 
-* Users may experience problems saving their work after going offline or into a sleep mode when they use the Power BI Desktop app instead of the Power BI service. These users are recommended to try saving again when they resume their session.
+* If you've created a large model and the resulting protected .pbix file is very large (over 2GB), it may crash when you try to save or open it. To work around this, consider removing the protection from the .pbix file and re-applying it after the file has been published to the Power BI service.
 
-* Opening and saving large protected files may take time or even possibly fail. To work around this, consider removing the sensitivity label from the .pbix file and re-applying it after the file has been published to the Power BI service. In general, for very large files it is recommended to use another encryption method, such as pagefile encryption, NTFS encryption, bitlockers, antimalware etc, rather than sensitivity labels. See [**REFERENCE?**] for recommended alternatives.
+    In general, when you protect a file with a sensitivity label that applies encryption, it is good practice to use another encryption method as well, such as pagefile encryption, NTFS encryption, bitlockers, antimalware, etc.
 
 * Temp files are not encrypted.
 
 * **Get data** can upload protected files only if they are local. Protected files from online services such as SharePoint Online or OneDrive for Business cannot be uploaded. For a protected file, you can either upload it from your local device, or first remove the file's label in Power BI Desktop and then upload it via one of the online services.
 
 * **Export to PDF** does not support sensitivity labels. If you export a file that has a sensitivity label to PDF, the PDF will not receive the label and no protection will be applied.
+
+* Information protection in Power BI Desktop doesn’t support **B2B** and **multi-tenant scenarios**.
 
 ## Next steps
 
