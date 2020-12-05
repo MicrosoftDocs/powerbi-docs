@@ -15,8 +15,8 @@ In order for [Microsoft Information Protection sensitivity labels](/microsoft-36
 
 When sensitivity labels are enabled:
 
-* Specified users and security groups in the organization can classify and [apply sensitivity labels](./service-security-apply-data-sensitivity-labels.md) to their reports, dashboards, datasets, and dataflows in the Power BI service, and to their .pbix files in Power BI Desktop.
-* All members of the organization can see those labels.
+* Specified users and security groups in the organization can classify and [apply sensitivity labels](./service-security-apply-data-sensitivity-labels.md) to their Power BI content. In the Power BI service, this means their reports, dashboards, datasets, and dataflows. In Power BI Desktop, it means their .pbix files.
+* In the service, all members of the organization will be able to see those labels. In Desktop, only members of the organization who have the labels published to them will be able to see the labels.
 
 Enabling sensitivity labels requires an Azure Information Protection license. See [Licensing and requirements](#licensing-and-requirements) for detail.
 
@@ -30,14 +30,19 @@ Enabling sensitivity labels requires an Azure Information Protection license. Se
 
 * Before enabling sensitivity labels on your tenant, make sure that sensitivity labels have been defined and published for relevant users and groups. See [Create and configure sensitivity labels and their policies](/microsoft-365/compliance/create-sensitivity-labels) for detail.
 
-* For Desktop, version [**FROM WHICH VERSION IS SENSITIVITY LABEL SUPPORT AVAILABLE**].
+* Using sensitivity labels in Desktop requires the Desktop December 2020 release and later.
+
+    >[!NOTE]
+    > If you try to open a protected .pbix file with a Desktop version earlier than December 2020, it will fail, and you will be prompted to upgrade your Desktop version.
 
 >[!NOTE]
 > If your organization uses Azure Information Protection sensitivity labels, they need to be migrated to the Microsoft Information Protection Unified Labeling platform in order for the them to be used in Power BI. [Learn more about migrating sensitivity labels](/azure/information-protection/configure-policy-migrate-labels).
 
 ## Enable sensitivity labels
 
-Go to the Power BI **Admin portal**, open the **Tenant settings** pane, and find the **Information protection** section.
+Sensitivity labels must be enabled on the tenant before they can be used in both the service and in Desktop. This section describes how to enable them in the tenant settings. For additional considerations pertaining to Desktop, see [Disabling sensitivity labels in Desktop across your org](#disable-sensitivity-labels-in-desktop-across-your-org) below. 
+
+To enable sensitivity labels on the tenant, go to the Power BI **Admin portal**, open the **Tenant settings** pane, and find the **Information protection** section.
 
 ![Find the Information Protection section](media/service-security-enable-data-sensitivity-labels/enable-data-sensitivity-labels-01.png)
 
