@@ -60,7 +60,6 @@ On the settings datasets tab, open the sensitivity label section, choose the des
 ## Apply sensitivity labels in Power BI Desktop (preview)
 
 To use sensitivity labels in Power BI Desktop:
-
 * You must have a [Power BI Pro license](./service-admin-purchasing-power-bi-pro.md).
 * Sensitivity labels must be enabled for your organization. Contact your Power BI admin if you aren't sure about this.
 * You must belong to a security group that has permissions to apply sensitivity labels, as described in [Enable sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md).
