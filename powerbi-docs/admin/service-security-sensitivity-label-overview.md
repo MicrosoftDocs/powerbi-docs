@@ -82,7 +82,7 @@ The same is also true in the opposite direction - when you download to .pbix in 
 
 When you apply a label in Desktop, it shows up in the status bar.
 
-[Screenshot]
+![Screenshot of sensitivity label in Desktop status bar.](media/service-security-sensitivity-label-overview/sensitivity-label-in-desktop-status-bar.png)
 
 
 ## Sensitivity label inheritance upon creation of new content
