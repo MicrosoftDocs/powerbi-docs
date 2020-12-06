@@ -3814,6 +3814,11 @@
             "source_path": "powerbi-docs/developer/visuals/custom-visual-develop-tutorial.md",
             "redirect_url": "/power-bi/developer/visuals/develop-circle-card",
             "redirect_document_id": false
-        }                         
+        },
+        {
+            "source_path": "powerbi-docs/developer/visuals/embedded-custom-layout.md",
+            "redirect_url": "https://github.com/Microsoft/PowerBI-JavaScript/wiki/Custom-Layout",
+            "redirect_document_id": false
+        }                                
     ]
 }

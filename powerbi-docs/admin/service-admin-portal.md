@@ -292,7 +292,7 @@ The **Publish to web** setting in the admin portal gives options for which users
 
 ![Publish to web setting](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
 
-Admins can set **Publish to web** to **Enabled** and **Choose how embed codes work** to **Allow only existing embed codes**. In that case, users can create embed codes, but they have to contact the Power BI admin to allow them do so.
+Admins can set **Publish to web** to **Enabled** and **Choose how embed codes work** to **Allow only existing embed codes**. In that case, users can create embed codes, but they have to contact the Power BI admin to allow them to do so.
 
 ![Publish to web prompt](../collaborate-share/media/service-publish-to-web/publish_to_web_admin_prompt.png)
 
@@ -302,7 +302,7 @@ Users see different options in the UI based on what the **Publish to web** setti
 |---------|---------|---------|---------|
 |**Publish to web** under report **More options (...)** menu|Enabled for all|Not visible for all|Only visible for authorized users or groups.|
 |**Manage embed codes** under **Settings**|Enabled for all|Enabled for all|Enabled for all<br><br>* **Delete** option only for authorized users or groups.<br>* **Get codes** enabled for all.|
-|**Embed codes** within admin portal|Status reflects one of the following:<br>* Active<br>* Not supported<br>* Blocked|Status displays **Disabled**|Status reflects one of the following:<br>* Active<br>* Not supported<br>* Blocked<br><br>If a user isn't authorized based on the tenant setting, status displays **infringed**.|
+|**Embed codes** within admin portal|Status has one of the following values:<br>* Active<br>* Not supported<br>* Blocked|Status displays **Disabled**|Status has one of the following values:<br>* Active<br>* Not supported<br>* Blocked<br><br>If a user isn't authorized based on the tenant setting, status displays **infringed**.|
 |Existing published reports|All enabled|All disabled|Reports continue to render for all.|
 
 ### Copy and paste visuals
@@ -331,7 +331,7 @@ Users in the organization can download .pbix files and paginated reports.
 
 ### Allow live connections
 
-Users in the organization can use Power BI service Live Connect. This includes Analyze in Excel.
+Users in the organization can use Power BI service Live Connect. Allowing live connections also allows users to Analyze in Excel.
 
 ![Screenshot of allow live connections setting.](media/service-admin-portal/powerbi-admin-portal-allow-live-connections-setting.png)
 
@@ -452,7 +452,7 @@ Users in the organization can interact with and share visuals created with R scr
 
 Users in the organization can use auditing to monitor actions taken in Power BI by other users in the organization. [Learn more](service-admin-auditing.md)
 
-This setting must be enabled for audit log entries to be recorded. There can be up to a 48 hour delay between enabling auditing and being able to view audit data. If you don't see data immediately, check the audit logs later. There can be a similar delay between getting permission to view audit logs and being able to access the logs.
+This setting must be enabled for audit log entries to be recorded. There can be up to a 48-hour delay between enabling auditing and being able to view audit data. If you don't see data immediately, check the audit logs later. There can be a similar delay between getting permission to view audit logs and being able to access the logs.
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
@@ -572,10 +572,11 @@ As an administrator, you can view the workspaces that exist in your tenant on th
 - See details about a workspace, including its ID, its users and their roles, and its dashboards, reports, and datasets.
 - Edit the list of people who have access. This means you can delete the workspace. You can add yourself to a workspace as an admin, then open the workspace and delete it.
 - Edit the Name and Description fields.
+- Upgrade classic workspaces to the new workspace experience
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
 
-Admins can also control users' ability to create new workspace experience workspaces, and classic workspaces. See [Workspace settings](#workspace-settings) in this article for details. 
+Admins can also control users' ability to create new workspace experience workspaces, and classic workspaces. See [Workspace settings](#workspace-settings) in this article for details.
 
 The table columns on the **Workspaces** tab correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Organize work in the new workspaces](../collaborate-share/service-new-workspaces.md).
 
@@ -591,6 +592,18 @@ On the **Workspaces** tab, you see the *state* for each workspace. The following
 Admins can also manage and recover workspaces, using either the admin portal or PowerShell cmdlets. 
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
+
+Admins can upgrade classic workspaces to the new workspace experience. Admins can select one or more workspaces with Type **Group** to upgrade. Upgrades are queued and executed asynchronously. It may take several minutes to several days to complete all **Pending** upgrades because the overall rate of admin-initiated upgrades is limited to keep the service running smoothly. The **Workspace upgrade status** column helps admins track the progress of the admin-initiated upgrades. Admins can cancel admin-initiated upgrades when they are **Pending**. To upgrade a workspace immediately, contact the Workspace Admin and have them start the upgrade through the workspace settings pane. [Learn more about workspace upgrade before starting your Power BI admin-initiated workspace upgrade.](../collaborate-share/service-upgrade-workspaces.md).
+
+The following table gives more details about the status of the upgrade.
+
+|Status  |Description  |
+|---------|---------|
+| **(Blank)** | The workspace is not being upgraded by a Power BI admin. |
+| **Pending** | The workspace is queued to be upgraded. The upgrade can be canceled. |
+| **In Progress** | The workspace is actively being upgraded. The upgrade can't be canceled. |
+| **Completed** | The workspace was upgraded in the last 30 days by a Power BI admin. A workspace admin can go back to classic option if desired during the 30-day period after the workspace was upgraded. |
+
 
 ## Custom branding
 
