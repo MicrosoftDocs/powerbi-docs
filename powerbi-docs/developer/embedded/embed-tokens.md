@@ -12,7 +12,15 @@ ms.date: 12/02/2020
 
 # Embedded application tokens
 
-An application embedding Power BI content such as reports and dashboards, needs to authenticate against both Azure Active Directory (Azure AD) and Power BI service.
+An application embedding Power BI content such as reports and dashboards, needs to authenticate against Azure Active Directory (Azure AD), before it can access Power BI.
+
+To authenticate against Azure AD, your app will need to use an [Azure AD token](#azure-ad-token).
+
+Access to Power BI content varies depending on your app's type:
+
+* An *embed for your customers* app, will need an [embed token](#embed-token) to gain access to Power BI content.
+
+* An *embed for your organization app* can access the Power BI content that its signed in user has access to.
 
 ## Azure AD token
 
