@@ -54,13 +54,13 @@ This diagram shows the authentication flow for the *embed for your customers* so
 
 2. Your Power BI embedded app gets an access token from Azure AD. Power BI REST API access is given according to: 
     * If you're using a *service principal*, your Azure AD app's permissions.
-    * If you're using a *master user*, the concent your provide to your *master user*. 
+    * If you're using a *master user*, the concent your provide to your *master user*.
 
 3. Your Power BI embedded app App caches the access token, and uses it to embed any Power BI content that the *service principal* or *master user* has rights to view.
 
 ### Embed for your organization
 
-In an *embed for your organization* solution, your app users have Power BI accounts and use them to access your app. Users need to grant concent in the Microsoft *Permissions requested* dialog pop-up window.
+*Embed for your organization* is an interactive solution. Your app users have Power BI accounts and use them to access your app. Users need to grant concent in the Microsoft *Permissions requested* dialog pop-up window.
 
 >[!div class="mx-imgBorder"]
 >:::image type="content" source="media/embed-tokens/permissions-requested.png" alt-text="Screenshot showing the Microsoft permissions requested pop-up window which asks customers to grant permissions for accessing Power B I.":::
@@ -70,6 +70,9 @@ Your app then uses your customer's Power BI credentials to generate an Azure AD 
 The *embed for your organization* solution doesn't support A SKUs.
 
 This diagram shows the authentication flow for the *embed for your organization* solution.
+
+>[!div class="mx-imgBorder"]
+>:::image type="content" source="media/embed-tokens/saas-authentiction.png" alt-text="Screenshot showing the Microsoft permissions requested pop-up window which asks customers to grant permissions for accessing Power B I.":::
 
 1. A user signs in to your Power BI embedded app.
 
