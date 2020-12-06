@@ -14,22 +14,21 @@ ms.date: 12/02/2020
 
 An application embedding Power BI content such as reports and dashboards, needs to authenticate against both Azure Active Directory (Azure AD) and Power BI service.
 
-First your app will authenticating against Azure AD. After successfully authenticating against Azure AD, your app receives an access token allowing it to access Power BI.
+## Azure AD token
 
-Your app will require different tokens, depending on the type of Power BI embedded analytics solution its using. The table below shows the type of access tokens needed for each solution.
+Before your application can access Power BI service, it must authenticate against Azure AD. After successfully authenticating against Azure AD, your app receives an Azure AD token (also known as an *access token*) allowing it to access Power BI. This token is required for all [REST API](/rest/api/power-bi/) operations, and it expires after an hour.
 
-|  |Embed for your customers  |Embed for your organization  |
-|---------|---------|---------|
-|**Authentication method**      |*Service principal* or *master user*         |Interactive (user's credentials)         |
-|**Required token**      |*Azure AD token*           |*Azure AD token* and an *embed token*         |
+## Embed token
 
-## Token types
+When you're using the *embed for your customers* solution, your application needs to know which Power BI content it can access. Use the [Embed Token](/rest/api/power-bi/embedtoken) REST API, to generate an embed token which specifies the following:
 
-This section lists the token types required for an app embedding Power BI content. 
+* Which content your app can access
 
-* **Azure AD token** - Before your application can access Power BI service, it must authenticate against Azure AD. This authentication process is done using an **Azure AD token** and is required for all [REST API](/rest/api/power-bi/) operations. By default, the Azure AD access token expires after an hour.
+* How long your app can access the content for
 
-* **Embed token** - Embed token's are needed when you're using the *embed for your customers* solution. When accessing Power BI, the embed token specifies which content your application can access, and for how long. It also specifies your app's access level (view, create, or edit). For more information see [Considerations when generating an embed token](generate-embed-token.md).
+* Your app's access level (view, create, or edit)
+
+For more information see [Considerations when generating an embed token](generate-embed-token.md).
 
 ## Authentication flows
 
@@ -64,7 +63,7 @@ This diagram shows the authentication flow for the *embed for your customers* so
 In an *embed for your organization* solution, your app users have Power BI accounts and use them to access your app. Users need to grant concent in the Microsoft *Permissions requested* dialog pop-up window.
 
 >[!div class="mx-imgBorder"]
->:::image type="content" source="media/embedded-tokens/permissions-requested.png" alt-text="Screenshot showing the Microsoft permissions requested pop-up window which asks customers to grant permissions for accessing Power B I.":::
+>:::image type="content" source="media/embed-tokens/permissions-requested.png" alt-text="Screenshot showing the Microsoft permissions requested pop-up window which asks customers to grant permissions for accessing Power B I.":::
 
 Your app then uses your customer's Power BI credentials to generate an Azure AD access token. The token allows your app to access content and query data in accordance with the permissions granted by the logged in user. Any Power BI content the user has access to, can be embedded.
 
@@ -73,12 +72,14 @@ The *embed for your organization* solution doesn't support A SKUs.
 This diagram shows the authentication flow for the *embed for your organization* solution.
 
 1. A user signs in to your Power BI embedded app.
-        
+
 2. Your Power BI embedded app uses the user's credentials to authenticate against Azure AD.
-        
-3. Your Power BI embedded app gets an access token from Azure AD.
-         
-4. Your Power BI embedded app App caches the access token, and uses it to embed any Power BI content the user has rights to view.
+
+3. The user grants the app concent to access Power BI.
+
+4. Your Power BI embedded app gets an access token from Azure AD.
+
+5. Your Power BI embedded app App caches the access token, and uses it to embed any Power BI content the user has rights to view.
 
 ## Next steps
 
