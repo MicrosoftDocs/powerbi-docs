@@ -15,7 +15,6 @@ LocalizationGroup: Dashboards
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 When a colleague shares a dashboard or a report with you, it appears in your **Shared with me** container. When a colleague shares an app with you, the app appears in your **Apps** container, and the app's reports and dashboards appear in your **Shared with me** container.   
 
