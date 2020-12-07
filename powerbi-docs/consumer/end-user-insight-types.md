@@ -18,7 +18,7 @@ You can ask Power BI to look through your data and find interesting trends and p
 
 To learn how to use Insights, see [Power BI Insights](end-user-insights.md)
 
-![a set of Insights](media/end-user-insight-types/power-bi-insight.png)
+![a set of Insights](media/end-user-insight-types/power-bi-insight-line.png)
 
 ## How does Insights work?
 Power BI quickly searches different subsets of your dataset. As it searches, Power BI applies a set of sophisticated algorithms to discover potentially interesting insights. Power BI *business users* can run Insights on dashboard tiles.
