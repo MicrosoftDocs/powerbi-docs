@@ -28,7 +28,7 @@ Before your application can access Power BI service, it must authenticate agains
 
 ## Embed token
 
-When you're using the *embed for your customers* solution, your application needs to know which Power BI content it can access. Use the [Embed Token](/rest/api/power-bi/embedtoken) REST API, to generate an embed token which specifies the following:
+When you're using the *embed for your customers* solution, your application needs to know which Power BI content it can access. Use the [embed token](/rest/api/power-bi/embedtoken) REST API, to generate an embed token, which specifies the following:
 
 * Which content your app can access
 
@@ -36,7 +36,7 @@ When you're using the *embed for your customers* solution, your application need
 
 * Your app's access level (view, create, or edit)
 
-For more information see [Considerations when generating an embed token](generate-embed-token.md).
+For more information, see [Considerations when generating an embed token](generate-embed-token.md).
 
 ## Authentication flows
 
@@ -44,7 +44,7 @@ This section describes the authentication flows for the *embed for your customer
 
 ### Embed for your customers
         
-In an *embed for your customers* solution, your app authenticates using one of these methods:
+*Embed for your customers* is a non-interactive solution. App users do not need to sign in for your app to access Power BI. Instead, your app authenticates using one of these methods:
 
 * **[Service principal](embed-service-principal.md)**
 
@@ -52,23 +52,30 @@ In an *embed for your customers* solution, your app authenticates using one of t
 
 * **Master user**
 
-    Your app uses a Power BI Pro account to authenticate against Azure AD and get the Azure AD access token. Your app is authorized to access the Power BI REST APIs according to your master user's account permissions. 
+    Your app uses a [Power BI Pro](/power-bi/admin/service-admin-purchasing-power-bi-pro) or a [Premium Per User (PPU)](/power-bi/admin/service-premium-per-user-faq) account to authenticate against Azure AD and get the Azure AD access token. Your app is authorized to access the Power BI REST APIs according to your master user's account permissions. 
+
+After successful authentication against Azure AD, your app will use an [embed token](/rest/api/power-bi/embedtoken) for accessing specific Power BI content.
 
 To embed using the *embed for your customers* solution, you'll need an A, EM, or P SKU.
 
 This diagram shows the authentication flow for the *embed for your customers* solution.
 
+>[!div class="mx-imgBorder"]
+>:::image type="content" source="media/embed-tokens/paas-authentiction.png" alt-text="A diagram of the authentication flow in an embed for your customers Power B I embedded analytics solution.":::
+
 1. Your Power BI embedded app uses a *service principal* or a *master user* to authenticate against Azure AD.
 
-2. Your Power BI embedded app gets an access token from Azure AD. Power BI REST API access is given according to: 
-    * If you're using a *service principal*, your Azure AD app's permissions.
-    * If you're using a *master user*, the concent your provide to your *master user*.
+2. Your Power BI embedded app gets an access token from Azure AD. Power BI REST API access is given according to:
+    1. If you're using a *service principal*, your Azure AD app's permissions.
+    2. If you're using a *master user*, the consent your provide to your *master user*.
 
-3. Your Power BI embedded app App caches the access token, and uses it to embed any Power BI content that the *service principal* or *master user* has rights to view.
+3. Your Power BI embedded app caches the *Azure AD token*, and uses it to access Power BI.
+
+4. Your Power BI embedded app generates an *embed token, which specifies which Power BI content it can embed.  
 
 ### Embed for your organization
 
-*Embed for your organization* is an interactive solution. Your app users have Power BI accounts and use them to access your app. Users need to grant concent in the Microsoft *Permissions requested* dialog pop-up window.
+*Embed for your organization* is an interactive solution. Your app users have Power BI accounts and use them to access your app. Users need to grant consent in the Microsoft *Permissions requested* dialog pop-up window.
 
 >[!div class="mx-imgBorder"]
 >:::image type="content" source="media/embed-tokens/permissions-requested.png" alt-text="Screenshot showing the Microsoft permissions requested pop-up window which asks customers to grant permissions for accessing Power B I.":::
@@ -80,13 +87,13 @@ The *embed for your organization* solution doesn't support A SKUs.
 This diagram shows the authentication flow for the *embed for your organization* solution.
 
 >[!div class="mx-imgBorder"]
->:::image type="content" source="media/embed-tokens/saas-authentiction.png" alt-text="Screenshot showing the Microsoft permissions requested pop-up window which asks customers to grant permissions for accessing Power B I.":::
+>:::image type="content" source="media/embed-tokens/saas-authentiction.png" alt-text="A diagram of the authentication flow in an embed for your organization Power B I embedded analytics solution.":::
 
 1. A user signs in to your Power BI embedded app.
 
 2. Your Power BI embedded app uses the user's credentials to authenticate against Azure AD.
 
-3. The user grants the app concent to access Power BI.
+3. The user grants the app consent to access Power BI.
 
 4. Your Power BI embedded app gets an access token from Azure AD.
 
