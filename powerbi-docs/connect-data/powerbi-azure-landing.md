@@ -1,14 +1,13 @@
 ---
 title: Power BI for Azure users
 description: Do you work with data, manage infrastructure, or build applications in Microsoft Azure?
+author: willthom
+ms.author: willthom
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: landing-page
 ms.date: 12/12/2019
-ms.author: willthom
-author: MI77
 layout: LandingPage
-
 LocalizationGroup: Get started
 # Customer intent: As an Azure user, wanting to get started with Power BI, I want a link to all the pages.
 ---

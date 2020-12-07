@@ -7,9 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 04/09/2019
-ms.custom: seodec18
-
+ms.date: 11/11/2020
+ms.custom: 
 LocalizationGroup: Premium
 ---
 
@@ -24,6 +23,9 @@ This article describes real-world scenarios where Power BI premium capacities ha
 - [Determining whether there is enough CPU](#determining-whether-there-is-enough-cpu)
 
 The steps, along with chart and table examples are from the **Power BI Premium Capacity Metrics app** that a Power BI administrator will have access to.
+
+> [!NOTE]
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
 
 ## Keeping datasets up to date
 
@@ -119,6 +121,9 @@ In a healthy capacity the visual will look like this, showing a gap between All 
 
 In a capacity experiencing memory pressure, the same visual will clearly show active memory and total memory converging, meaning that it is impossible to load additional datasets into memory then. In this case, the Power BI administrator can click **Capacity Restart** (in **Advanced Options** of the capacity settings area of the admin portal). Restarting the capacity results in all datasets being flushed from memory and allowing them to reload into memory as required (by queries or data refresh).
 
+> [!NOTE]
+> For Premium Gen2, memory consumption does not need to be tracked. The only limitation in Premium Gen2 is on the memory footprint of a single artifact. The footprint cannot exceed the memory available on the capacity. For more information about Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+
 ![**Active** memory converging with **All** memory](media/service-premium-capacity-scenarios/memory-unhealthy-capacity.png)
 
 ## Determining whether there is enough CPU
@@ -137,6 +142,9 @@ This effect can be especially apparent when a dataset is consumed in short burst
 
 In some cases, Power BI administrators can request that dataset owners create a less volatile query workload by creating a dashboard (which queries periodically with any dataset refresh for cached tiles) instead of a report. This can help prevent spikes when the dashboard is loaded. This solution may not always be possible for given business requirements, however it can be an effective way to avoid CPU saturation, without making changing to the dataset.
 
+> [!NOTE]
+> For Premium Gen2, CPU time utilization is tracked on a per-artifact level, and is visible in the capacity utilization app. Each artifact displays their total CPU time utilization on a given timespan. For more information about Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+
 ## Acknowledgments
 
 This article was written by Peter Myers, Data Platform MVP and independent BI expert with [Bitwise Solutions](https://www.bitwisesolutions.com.au/).
@@ -150,4 +158,13 @@ This article was written by Peter Myers, Data Platform MVP and independent BI ex
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
-||||||
+Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+* Performance
+* Per-user licensing
+* Greater scale
+* Improved metrics
+* Autoscaling
+* Reduced management overhead
+
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+

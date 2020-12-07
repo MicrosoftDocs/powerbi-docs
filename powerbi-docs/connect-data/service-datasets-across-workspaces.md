@@ -1,14 +1,13 @@
 ---
 title: Intro to datasets across workspaces
 description: Learn about dataset sharing and discovery for workspaces. Users across the organization can build reports based on your dataset in their own workspaces.
-author: maggiesMSFT
+author: paulinbar
+ms.author: painbar
 ms.reviewer: kayu
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 04/30/2020
-ms.author: maggies
-
 LocalizationGroup: Share your work
 ---
 # Intro to datasets across workspaces

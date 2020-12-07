@@ -2,14 +2,12 @@
 title: View presentation mode on Surface Hub and Windows 10 - Power BI
 description: Read about displaying Power BI reports in Surface Hub, and displaying Power BI dashboards, reports, and tiles in presentation mode on Windows 10 devices.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 08/12/2020
-ms.author: painbar
-
 ---
 # View reports and dashboards in presentation mode on Surface Hub and Windows 10 devices
 You can use presentation mode to display reports and dashboards in full-screen on Windows 10 devices and Surface Hub. Presentation mode is useful for displaying Power BI at meetings or conferences, or on a dedicated projector at the office, or even just for maximizing space on a small screen.

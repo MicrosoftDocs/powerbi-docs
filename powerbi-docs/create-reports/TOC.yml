@@ -277,6 +277,8 @@
         href: ../visuals/power-bi-visualization-decomposition-tree.md
       - name: "Smart narratives"
         href: ../visuals/power-bi-visualization-smart-narrative.md
+      - name: "Anomaly detection"
+        href: ../visuals/power-bi-visualization-anomaly-detection.md
       - name: "Doughnut charts"
         href: ../visuals/power-bi-visualization-doughnut-charts.md
       - name: "Filled maps (choropleths)"

@@ -1,16 +1,14 @@
 ---
 title: Analyze in Excel for Power BI
 description: Analyze Power BI datasets in Microsoft Excel
-author: davidiseminger
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-
 ms.custom: contperfq4
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 09/22/2020
-ms.author: davidi
-
 LocalizationGroup: Reports
 ---
 # Analyze in Excel

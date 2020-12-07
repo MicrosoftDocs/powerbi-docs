@@ -2,14 +2,12 @@
 title: Using enhanced dataset metadata in Power BI Desktop
 description: This article describes how to use enhanced dataset metadata in Power BI.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 09/22/2020
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Using enhanced dataset metadata

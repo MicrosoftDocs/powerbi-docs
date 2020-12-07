@@ -2,21 +2,19 @@
 title: Install and use apps with dashboards and reports in Power BI
 description: Find, install, and use apps in the Power BI service.
 author: mihart
+ms.author: mihart
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/09/2020
-ms.author: mihart
+ms.date: 12/03/2020
 ms.custom: licensing support
-
 LocalizationGroup: Share your work
 ---
 # Install and use apps with dashboards and reports in Power BI
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Now that you have a [basic understanding of apps](end-user-apps.md), let's learn how to open and interact with apps. 
 

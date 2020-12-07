@@ -2,14 +2,12 @@
 title: Use composite models in Power BI Desktop
 description: Create data models with multiple data connections and many-to-many relationships in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 01/15/2020
-ms.author: davidi
-
 LocalizationGroup: Transform and shape data
 ---
 # Use composite models in Power BI Desktop

@@ -1,14 +1,13 @@
 ---
 title: "Previewing reports in Power BI Report Builder"
 description: While you create a Report Builder paginated report, it's helpful to preview the report often to verify that the report displays what you want.
+author: maggiesMSFT
+ms.author: maggies
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
-
 ms.topic: conceptual
 ms.assetid: ba6b5bdd-d8c6-4aa8-ba32-3a10b11969d4
-author: maggiesMSFT
-ms.author: maggies
 ---
 # Previewing reports in Power BI Report Builder
 

@@ -2,14 +2,12 @@
 title: Connect to a PDF file in Power BI Desktop
 description: Easily connect to and use data from PDF files in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 07/16/2020
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Connect to PDF files in Power BI Desktop

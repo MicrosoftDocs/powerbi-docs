@@ -2,22 +2,21 @@
 title: The Power BI service - basic concepts for business users
 description: The Power BI service apps, workspaces, dashboards, reports, datasets, and workbooks.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
+ms.subservice: pbi-explore
 ms.custom: seodec18
-ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/08/2020
-ms.author: mihart
+ms.date: 12/03/2020
 LocalizationGroup: Get started
 ---
 
-# Basic concepts for the Power BI service consumers
+# Basic concepts for the Power BI service business user
 
 [!INCLUDE[consumer-appliesto-ynnm](../includes/consumer-appliesto-ynnm.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 This article assumes that you've already read the [Power BI overview](../fundamentals/power-bi-overview.md) and have identified yourself as a [Power BI business user](end-user-consumer.md). *Business users* receive Power BI content, like dashboards, reports, and apps, from colleagues. *Business users* work with the Power BI service (app.powerbi.com), which is the website-based version of Power BI.
 
@@ -45,7 +44,7 @@ As you use the Power BI service, you'll personalize what you see when you open t
 
 - [Featured dashboards in the Power BI service](end-user-featured.md)
 
-![A screenshot that shows Home page view and dashboard view.](media/end-user-basic-concepts/power-bi-dash-home.png)
+![A screenshot that shows Home page view and dashboard view.](media/end-user-basic-concepts/power-bi-dashboard-home.png)
 
 But before we get much further, let's back up and talk about the building blocks that make up the Power BI service.
 

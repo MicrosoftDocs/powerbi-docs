@@ -2,14 +2,12 @@
 title: Dataflows Limitations, restrictions and supported connectors and features
 description: Overview of all the capabilities of dataflows
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 10/01/2020
-ms.author: davidi
-
 LocalizationGroup: Data from files
 ---
 # Dataflows limitations and considerations
@@ -107,3 +105,4 @@ The following articles provide more information about dataflows and Power BI:
 * [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [Premium features of dataflows](dataflows-premium-features.md)
 * [AI with dataflows](dataflows-machine-learning-integration.md)
+* [Dataflows best practices](dataflows-best-practices.md)

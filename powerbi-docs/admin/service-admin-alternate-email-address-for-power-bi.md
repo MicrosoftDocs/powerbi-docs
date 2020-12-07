@@ -1,13 +1,13 @@
 ---
 title: Use an alternate email address
 description: Use an alternate email address
-author: kfollis
+author: mihart
+ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/23/2019
-ms.author: kfollis
 LocalizationGroup: Troubleshooting
 ---
 

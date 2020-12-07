@@ -2,20 +2,18 @@
 title: View a report
 description: This topic shows Power BI business users and end users had to open and view a Power BI report.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/09/2020
-ms.author: mihart
 #This article teaches business users how to find and open a report whether it has been shared directly or shared via an app, so that the consumer can view and interact with the report to make business decisions.
 ---
 # View a report in the Power BI service for *business users*
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 A report is one or more pages of visuals. Reports are created by Power BI *designers* and [shared with *business users directly*](end-user-shared-with-me.md) or as part of an [app](end-user-apps.md). To open a report, you'll need either a Power BI Pro license, or for the report to be part of a workspace that is stored in a Premium capacity. [Learn about licenses and subscriptions](end-user-license.md)
 

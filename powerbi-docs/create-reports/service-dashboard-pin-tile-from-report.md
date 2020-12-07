@@ -2,15 +2,13 @@
 title: Pin a tile to a Power BI dashboard from a report
 description: Pin a tile to a Power BI dashboard from a report.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: lJKgWnvl6bQ
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/23/2019
-ms.author: maggies
-
+ms.date: 12/03/2020
 LocalizationGroup: Dashboards
 ---
 # Pin a tile to a Power BI dashboard from a report
@@ -54,10 +52,12 @@ Another option is to pin an entire report page to a dashboard, which is an easy 
 
 For more information, see [Pin an entire report page](service-dashboard-pin-live-tile-from-report.md).
 
-> [!NOTE]
-> Some formatting options are not applied to visuals when they're pinned to a dashboard. Border, shadow, and background settings will be ignored in the pinned tile. For card visuals, the text used for the value is always shown in dashboards using the 'DIN' font family. 
-> 
->
+## Limitations
+Some report formatting options or themes aren't applied to visuals when you pin them to a dashboard.
+- Border, shadow, and background settings are ignored in the pinned tile.
+- For card visuals, the text used for the value is shown in dashboards using the 'DIN' font family, with black text. You can change the text color for all the tiles on a dashboard by [creating a custom dashboard theme](service-dashboard-themes.md).
+- Conditional formatting isn't applied.
+- Visuals will adjust their size to fit the size of the tile. This can result in differences in layout as if the visual had been resized on the report.
 
 ## Next steps
 - [Dashboards for Power BI service consumers](../consumer/end-user-dashboards.md)

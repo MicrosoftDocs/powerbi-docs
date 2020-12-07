@@ -2,13 +2,11 @@
 title: Connect to Power BI Premium Capacity Metrics
 description: How to get and install the Power BI Premium Capacity Metrics template app, and how to connect to data
 author: paulinbar
-
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/18/2020
-ms.author: painbar
-
 LocalizationGroup: Connect to services
 ---
 # Connect to Power BI Premium Capacity Metrics

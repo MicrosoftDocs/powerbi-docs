@@ -36,6 +36,9 @@ If you're not signed up for **Power BI Pro**, [sign up for a free trial](https:/
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
+>[!NOTE]
+>[Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) is supported. However, if you're using PPU, only PPU users in your organization will be able to access your solution.
+
 ## Set up your embedded analytics development environment
 
 Before you start embedding reports, dashboard, or tiles into your application, you need to make sure your environment allows for embedding with Power BI.

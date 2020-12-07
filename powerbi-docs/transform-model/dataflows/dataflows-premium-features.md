@@ -2,14 +2,12 @@
 title: Premium features of dataflows
 description: Overview of the Premium features available with Power BI dataflows
 author: davidiseminger
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: how-to
-ms.date: 10/01/2020
 ms.author: davidi
-
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: pbi-dataflows
+ms.topic: how-to
+ms.date: 11/13/2020
 LocalizationGroup: Data from files
 ---
 # Premium features of dataflows
@@ -33,7 +31,7 @@ The enhanced compute engine in Power BI enables Power BI Premium subscribers to 
 * Drastically reduces the refresh time required for long-running ETL steps over computed entities, such as performing *joins*, *distinct*, *filters,* and *group by*
 * Perform DirectQuery queries over entities
 
-Enabling the enhanced compute engine is described next, along with answers to common questions.
+By default, the enhanced compute engine is **On**. If the enhanced compute engine is not on, enabling the enhanced compute engine is described in the next section, along with answers to common questions.
 
 ### Using the enhanced compute engine
 
@@ -154,6 +152,8 @@ Do not set a dataflow to incremental refresh in the following situations:
 ## Next steps
 The following articles provide more information about dataflows and Power BI:
 
+* [Dataflows best practices](dataflows-best-practices.md)
+* [Configure Power BI Premium dataflow workloads](dataflows-premium-workload-configuration.md)
 * [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md)
 * [Creating a dataflow](dataflows-create.md)
 * [Configure and consume a dataflow](dataflows-configure-consume.md)

@@ -2,15 +2,13 @@
 title: Power BI videos
 description: Power BI Videos and link to YouTube channel.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 03/03/2020
-ms.author: davidi
-
 ---
 # Power BI videos
 We have a YouTube channel for Power BI! You can visit [our channel](https://www.youtube.com/user/mspowerbi/videos) and, if you're new to Power BI a good place to start is the [Analyze and Visualize data with Power BI playlist](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP).

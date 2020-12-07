@@ -2,14 +2,12 @@
 title: Connect to LinkedIn Sales Navigator in Power BI Desktop
 description: Easily connect to and use data from LinkedIn in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 11/11/2019
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Connect to LinkedIn Sales Navigator in Power BI Desktop

@@ -7,9 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 04/09/2019
-ms.custom: seodec18
-
+ms.date: 11/11/2020
+ms.custom: 
 LocalizationGroup: Premium
 ---
 
@@ -23,6 +22,11 @@ When additional Premium capacity is required, there are two options described in
 - Add a new Premium capacity
 
 Finally, testing approaches and Premium capacity sizing conclude this article.
+
+> [!NOTE]
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+
+The recommendations and best practices recommended in this article ensure CPU utilization of each dataset, and other Power BI artifacts, are optimized.
 
 ## Best practices
 
@@ -254,7 +258,7 @@ If you already have a capacity and the reports you want to load test for, use th
 
 To generate a more complex test, consider developing a load testing application that simulates a realistic workload. For more information, see the webinar [Load Testing Power BI Applications with Visual Studio Load Test](https://powerbi.microsoft.com/blog/week-4-11-webinars-load-testing-power-bi-applications-with-visual-studio-load-test-and-getting-started-with-cds-for-apps-based-model-driven-apps/).
 
-## Acknowledgements
+## Acknowledgments
 
 This article was written by Peter Myers, Data Platform MVP and independent BI expert with [Bitwise Solutions](https://www.bitwisesolutions.com.au/).
 
@@ -264,3 +268,13 @@ This article was written by Peter Myers, Data Platform MVP and independent BI ex
 > [Premium capacity scenarios](service-premium-capacity-scenarios.md)   
   
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
+Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+* Performance
+* Per-user licensing
+* Greater scale
+* Improved metrics
+* Autoscaling
+* Reduced management overhead
+
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

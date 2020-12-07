@@ -2,18 +2,17 @@
 title: Feature availability for users with free licenses
 description: Explanation and chart showing features available to consumers and free users.
 author: mihart
+ms.author: mihart
 ms.reviewer:  mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: reference
-ms.date: 09/16/2020
-ms.author: mihart
+ms.date: 11/16/2020
 ms.custom: licensing support
-
 LocalizationGroup: consumers
 ---
 
-# Power BI feature list for *consumers* and others with free licenses
+# Power BI feature list for *business users* and others with free licenses
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
@@ -47,14 +46,14 @@ Each Power BI service user has either a free license or a Pro license. *Business
 
     ![screen showing Premium user](media/end-user-features/power-bi-free-organization.png)
 
-    For free users, being a member of an organization that has Premium capacity is what gives you super powers. As long as your Pro colleagues use Premium capacity workspaces to share content, free users can view and collaborate with those Pro colleagues.  **In this way, the free user gains the ability to consume content created by others. Together with their colleagues, including Pro users, the business user receives, shares, and collaborates on the same dashboards and reports and apps to make business decisions.** 
+    For free users, being a member of an organization that has Premium capacity is what gives you super powers. As long as your Pro colleagues use Premium capacity workspaces to share content, free users can view and collaborate with those Pro colleagues.  In this way, the free user gains the ability to consume content created by others. Together with their colleagues, including Pro users, the free user receives, shares, and collaborates on the same dashboards and reports and apps to make business decisions. 
  
     ![screen showing Free user](media/end-user-features/power-bi-free-user.png)
 
 
    
 
-## Power BI feature list for *consumers* and free users
+## Power BI feature list for *business users* and free users
 The following chart identifies which tasks can be performed by a *business user* interacting with content in Premium capacity.    
 
 The first column represents a free user working with content in **My workspace**. This user cannot collaborate with colleagues in the Power BI service. Colleagues cannot directly share content with this user, and this user cannot share from **My workspace**. 
@@ -63,7 +62,7 @@ The second column represents a *business user*.  A business user:
 
 - has a free user license
 - is part of an organization that has a Premium capacity subscription
-- gets content (apps, dashboards, reports) from Pro users who share that content using app workspaces in dedicated Premium capacity.
+- gets content (apps, dashboards, reports) from Pro users who share that content using app workspaces in Premium capacity.
 - is assigned the **Viewer** role to those app workspaces. 
 
 ### Legend

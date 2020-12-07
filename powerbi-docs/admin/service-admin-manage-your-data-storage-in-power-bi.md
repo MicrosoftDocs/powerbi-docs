@@ -2,14 +2,13 @@
 title: Manage data storage in your workspaces
 description: Learn how to manage data storage in your individual or workspace to make sure you can continue to publish reports and datasets.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 07/27/2020
-ms.author: maggies
-
 LocalizationGroup: Administration
 ---
 # Manage data storage in Power BI workspaces

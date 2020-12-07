@@ -2,15 +2,13 @@
 title: Use an external R IDE with Power BI
 description: You can launch an external IDE, and use it with Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/08/2019
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Use an external R IDE with Power BI
