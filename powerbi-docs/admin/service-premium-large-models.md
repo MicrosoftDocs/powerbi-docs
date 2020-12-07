@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 12/04/2020
+ms.custom: references_regions
 LocalizationGroup: Premium
 ---
 
