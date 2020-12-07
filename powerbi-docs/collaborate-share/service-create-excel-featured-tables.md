@@ -48,14 +48,13 @@ In the Data Types Gallery in Excel, your users can find data from *featured tabl
 
 1. In Excel: 
     - Excel caches the list of data types so you need to restart Excel to see newly published featured tables.
-    - Some datasets aren't supported in the preview, featured tables defined in those datasets won’t appear in Excel. See the next section, Considerations and limitations, for details.
+    - Some datasets aren't supported. Featured tables defined in those datasets won’t appear in Excel. See the next section, Considerations and limitations, for details.
 
 ## Considerations and limitations
 
-Here are limitations for the initial preview:
+Here are the current limitations:
 
 - The integration is available in Excel in the current channel.
-- The Excel Data Types Gallery includes featured tables for users with the appropriate license in Power BI Desktop and the Power BI service. Support for the Power BI service may not be available at the launch of the preview but will be added.
 - Featured tables in Power BI datasets that use the following capabilities aren't shown in Excel: 
 
     - DirectQuery datasets.
@@ -79,10 +78,10 @@ The Data Types experience in Excel is similar to a lookup function. It takes a c
     - Importantly, rows that contain “Orange” or “County” but don’t start with them aren't returned.
 
 - Power BI returns at most 100 row suggestions for each cell.
-- Some symbols are not supported.
-- Setting or updating the featured table is not supported in the XMLA endpoint
-- Excel files with a data model can be used to publish featured tables. Load the data into Power BI desktop and then publish the featured table.
-- Changing the Table name, Row Label, or Key Column the featured table may impact Excel users with linked cells to rows in the table. 
+- Some symbols aren't supported.
+- Setting or updating the featured table isn't supported in the XMLA endpoint
+- Excel files with a data model can be used to publish featured tables. Load the data into Power BI Desktop and then publish the featured table.
+- Changing the Table name, Row Label, or Key Column in the featured table may impact Excel users with linked cells to rows in the table. 
 - Excel shows when the data was retrieved from the Power BI dataset. This time isn't necessarily the time that the data was refreshed in Power BI, or the time of the most recent data point in a dataset. For example, say a dataset in Power BI was refreshed a week ago, but the underlying source data was a week old when the refresh happened. The actual data would be two weeks old, but Excel would show data retrieved as the date/time at which the data was pulled into Excel.
 - See [Considerations and limitations](service-excel-featured-tables.md#considerations-and-limitations) in the article "Access Power BI featured tables in Excel" for other Excel considerations.
 
