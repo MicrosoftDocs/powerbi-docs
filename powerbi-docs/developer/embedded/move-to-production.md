@@ -73,7 +73,7 @@ Follow the steps below to assign a capacity to a workspace using a **master user
     >[!div class="mx-imgBorder"]
     >:::image type="content" source="media/move-to-production/workspace-settings.png" alt-text="A screenshot showing the workspace settings menu in Power B I service portal.":::
 
-2. Select the **Premium** tab, and do the folowing:
+2. Select the **Premium** tab, and do the following:
 
     * Enable **Capacity**.
 
@@ -84,10 +84,10 @@ Follow the steps below to assign a capacity to a workspace using a **master user
     >[!div class="mx-imgBorder"]
     >:::image type="content" source="media/move-to-production/premium-tab.png" alt-text="A screenshot showing the workspace premium settings tab in Power B I service portal.":::
 
-After assigning your workspace to a capacity, a diamond appears next to it 
+    After assigning your workspace to a capacity, a diamond appears next to it 
 
->[!div class="mx-imgBorder"]
->:::image type="content" source="media/move-to-production/premium-workspace.png" alt-text="A screenshot showing the diamond next to a workspace with a premium capacity in Power B I service portal.":::
+    >[!div class="mx-imgBorder"]
+    >:::image type="content" source="media/move-to-production/premium-workspace.png" alt-text="A screenshot showing the diamond next to a workspace with a premium capacity in Power B I service portal.":::
 
 ## Next steps
 

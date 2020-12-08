@@ -571,11 +571,11 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
 ---
 
-## Move to production
+## Developing your application
 
 After configuring and running the *embed for your customers* sample application, you can start developing your own application.
 
-When you're ready, review the [move to production](move-to-production.md) requirements. You'll also need a [capacity](embedded-capacity.md), and should review the [capacity planning](embedded-capacity-planning.md) article to establish witch SKU suites your needs.
+When you're ready, review the [move to production](move-to-production.md) requirements. You'll also need a [capacity](embedded-capacity.md), and should review the [capacity planning](embedded-capacity-planning.md) article to establish witch SKU best suites your needs.
 
 
 ## Next steps

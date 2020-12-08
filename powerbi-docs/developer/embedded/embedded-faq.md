@@ -107,10 +107,10 @@ Power BI requires you to sign up with an organizational account. Trying to sign 
 
 ### Can I use APIs to create and manage Azure capacities?
 
-Yes, there are Powershell cmdlets and Azure Resource Manager REST APIs you can use to create and manage PBIE resources.
+Yes, there are PowerShell cmdlets and Azure Resource Manager REST APIs you can use to create and manage PBIE resources.
 
 * [Rest APIs](/rest/api/power-bi-embedded/) 
-* [Powershell cmdlets](/powershell/module/azurerm.powerbiembedded/)
+* [PowerShell cmdlets](/powershell/module/azurerm.powerbiembedded/)
 
 ### What is the PBI Embedded capacity role in a PBI Embedded solution?
 
@@ -179,7 +179,7 @@ There's often confusion around when to use RLS versus JavaScript filters, becaus
 
 For RLS, the ISV developer controls the data filtering as part of the model creation and embed token generation. The end user sees only what the ISV allows the user to see. In this case, the user can choose to see less than what's being filtered, but won't be able to bypass the RLS configuration and see more than what's allowed.
 
-For client-side filtering (JavaScript), the ISV might decide what the end user sees at the initial view, but they can't control changes the end user might apply to the view itself. Since user Javascript client code can trigger data filtering on the backend, it can't be considered secure.
+For client-side filtering (JavaScript), the ISV might decide what the end user sees at the initial view, but they can't control changes the end user might apply to the view itself. Since user JavaScript client code can trigger data filtering on the backend, it can't be considered secure.
 
 Reference [RLS vs JavaScript filters](embedded-row-level-security.md#using-rls-vs-javascript-filters) for more details.
 
