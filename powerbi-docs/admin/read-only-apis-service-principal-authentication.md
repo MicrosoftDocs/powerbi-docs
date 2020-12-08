@@ -60,6 +60,6 @@ To enable service principal authentication for Power BI read-only APIs, follow t
     * [GetCapacitiesAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/getcapacitiesasadmin)
     * [GetActivityLog](https://docs.microsoft.com/rest/api/power-bi/admin/getactivityevents)
     * [GetModifiedWorkspaces](https://docs.microsoft.com/rest/api/power-bi/admin/workspaceinfo_getmodifiedworkspaces)
-    * [WorkspaceGetInfo](https://docs.microsoft.com/en-us/rest/api/power-bi/admin/workspaceinfo_postworkspaceinfo)
+    * [WorkspaceGetInfo](https://docs.microsoft.com/rest/api/power-bi/admin/workspaceinfo_postworkspaceinfo)
     * [WorkspaceScanStatus](https://docs.microsoft.com/rest/api/power-bi/admin/workspaceinfo_getscanstatus)
     * [WorkspaceScanResult](https://docs.microsoft.com/rest/api/power-bi/admin/workspaceinfo_getscanresult)
