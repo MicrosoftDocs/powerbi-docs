@@ -7,7 +7,7 @@ ms.service: machine-learning
 ms.subservice: core
 ms.topic: tutorial
 ms.author: samkemp
-author: samkemp
+author: samuel100
 ms.reviewer: sdgilley
 ms.date: 04/09/2020
 ---
