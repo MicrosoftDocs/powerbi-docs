@@ -201,6 +201,6 @@ Error message: "'AuthenticationContext' doesn't contain a definition for 'Acquir
 
 ## Next steps
 
-Now that you have the access token, you can call the Power BI REST API to embed content. For information, see [How to embed your Power BI content](embed-sample-for-customers.md#embed-content-within-your-application).
+Now that you have the access token, you can call the Power BI REST API to embed content.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
