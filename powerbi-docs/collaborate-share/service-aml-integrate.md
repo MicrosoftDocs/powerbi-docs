@@ -22,9 +22,9 @@ At the end of this how-to article you be able to:
 ## Prerequisites
 
 - Trained and deployed a machine learning model in Azure Machine Learning using either:
-    - [Option A: Code](./tutorial-pbi-custom-model.md)
-    - [Option B: Designer](/tutorial-pbi-designer-model.md)
-    - [Option C: AutoML UI](/tutorial-pbi-automl-model.md)
+    - Option A: Code
+    - Option B: Designer
+    - Option C: AutoML UI
 - An Introductory knowledge of Microsoft Power BI.
 - A Microsoft Power BI Account ([a free trial is available](https://powerbi.microsoft.comget-started/)).
 - Microsoft Power BI Desktop application, which can be [downloaded here](https://powerbi.microsoft.com/downloads).
