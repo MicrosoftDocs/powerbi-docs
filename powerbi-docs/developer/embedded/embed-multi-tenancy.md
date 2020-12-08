@@ -158,7 +158,7 @@ Multi-geo involves purchasing capacity in the desired regions and assigning a wo
 
 ### Cost
 
-Application developers using Power BI Embedded need to [purchase Power BI Embedded capacity to go to production](embed-sample-for-customers.md#move-to-production).  It's important to understand the impact of workspace-based isolation model and their effect on capacities.
+Application developers using Power BI Embedded need to [purchase Power BI Embedded capacity to go to production](move-to-production.md).  It's important to understand the impact of workspace-based isolation model and their effect on capacities.
 
 The workspace-based isolation model sits well with capacities for the following reasons:
 

@@ -16,7 +16,6 @@ LocalizationGroup: Reports
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 This article takes a look at the report **Filters** pane in the Power BI service. Use the filters to discover new insights in your data.
 
