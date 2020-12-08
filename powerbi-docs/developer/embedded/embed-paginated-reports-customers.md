@@ -36,7 +36,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 > [!IMPORTANT]
 > * You must use a **service principal**. Master user is not supported.
->* [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) is not supported. You can use PPU to experiment with the solution, but you'll not be able to [move to production](embed-sample-for-customers.md#move-to-production).
+>* [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) is not supported. You can use PPU to experiment with the solution, but you'll not be able to [move to production](move-to-production.md).
 > * Datasources that require single sign-on (SSO), are not supported. For a list of supported datasets and their authentication methods, see [Supported data sources for Power BI paginated reports](../../paginated-reports/paginated-reports-data-sources.md). 
 > * Power BI dataset is not supported as a [datasource](../../connect-data/service-get-data.md).
 
@@ -180,7 +180,7 @@ To get the **ApplicationSecret**, follow these steps:
 
 ### Tenant
 
-Fill in the **tenant** information with your azure tenant ID. You can get this information from the [Azure AD admin center](/onedrive/find-your-office-365-tenant-id) when signed into the Power BI service or by using PowerShell.
+Fill in the **tenant** information with your Azure tenant ID. You can get this information from the [Azure AD admin center](/onedrive/find-your-office-365-tenant-id) when signed into the Power BI service or by using PowerShell.
 
 ### Run the application
 
