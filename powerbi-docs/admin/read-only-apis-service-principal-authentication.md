@@ -1,5 +1,5 @@
 ---
-title: Enable service principle authentication for read-only admin APIs (preview)
+title: Enable service principal authentication for read-only admin APIs (preview)
 description: Learn how to enable service principal authentication to permit use of read-only admin APIs.
 author: paulinbar
 ms.reviewer: ''
@@ -13,7 +13,7 @@ ms.custom:
 LocalizationGroup: Administration
 ---
 
-# Enable service principle authentication for read-only admin APIs (preview)
+# Enable service principal authentication for read-only admin APIs (preview)
 
 Service principal is an authentication method that can be used to let an Azure Active Directory (Azure AD) application access Power BI service content and APIs.
 When you create an Azure AD app, a [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is created. The service principal object, also known simply as the service principal, allows Azure AD to authenticate your app. Once authenticated, the app can access Azure AD tenant resources.
@@ -59,7 +59,7 @@ To enable service principal authentication for Power BI read-only APIs, follow t
     * [GetDataflowUpstreamDataflowsAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/dataflows_getupstreamdataflowsingroupasadmin) 
     * [GetCapacitiesAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/getcapacitiesasadmin)
     * [GetActivityLog](https://docs.microsoft.com/rest/api/power-bi/admin/getactivityevents)
-    * GetModifiedWorkspaces
-    * WorkspaceGetInfo
-    * WorkspaceScanStatus
-    * WorkspaceScanResult
+    * [GetModifiedWorkspaces](https://docs.microsoft.com/rest/api/power-bi/admin/workspaceinfo_getmodifiedworkspaces)
+    * [WorkspaceGetInfo](https://docs.microsoft.com/en-us/rest/api/power-bi/admin/workspaceinfo_postworkspaceinfo)
+    * [WorkspaceScanStatus](https://docs.microsoft.com/rest/api/power-bi/admin/workspaceinfo_getscanstatus)
+    * [WorkspaceScanResult](https://docs.microsoft.com/rest/api/power-bi/admin/workspaceinfo_getscanresult)
