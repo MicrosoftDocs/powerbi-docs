@@ -7,14 +7,14 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/09/2020
+ms.date: 12/07/2020
+ms.custom: video-G26dr2PsEpk
 LocalizationGroup: Dashboards
 ---
 # Display the dashboards and reports that have been shared with me
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 When a colleague shares a dashboard or a report with you, it appears in your **Shared with me** container. When a colleague shares an app with you, the app appears in your **Apps** container, and the app's reports and dashboards appear in your **Shared with me** container.   
 

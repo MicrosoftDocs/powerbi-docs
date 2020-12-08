@@ -55,9 +55,8 @@ The following basic flow lists what the application does when the customer launc
 
 ## Prerequisites
 
-Before you get started, you need to have:
-
-* Your own Azure Active Directory (Azure AD) tenant setup. For instructions on how to set one up, see [Create an Azure AD tenant](https://docs.microsoft.com/power-bi/developer/embedded/create-an-azure-active-directory-tenant).
+* A parameterized [template app](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-overview) that's ready for installation. The template app must be created in the same tenant in which you register your application in Azure Active Directory (Azure AD). For more information, see [Template app tips](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips) or [Create a template app in Power BI](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create).
+* Your own Azure AD tenant set up. For instructions on how to set one up, see [Create an Azure AD tenant](https://docs.microsoft.com/power-bi/developer/embedded/create-an-azure-active-directory-tenant).
 * A [service principal (app-only token)](https://docs.microsoft.com/power-bi/developer/embedded/embed-service-principal) registered in the preceding tenant.
 * A parameterized [template app](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-overview) that's ready for installation. The template app must be created in the same tenant in which you register your application in Azure AD. For more information, see [Template app tips](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips.md) or [Create a template app in Power BI](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create).
 * A Power BI Pro license. If you're not signed up for Power BI Pro, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.

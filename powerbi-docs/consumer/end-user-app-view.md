@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/09/2020
+ms.date: 12/03/2020
 ms.custom: licensing support
 LocalizationGroup: Share your work
 ---
@@ -15,7 +15,6 @@ LocalizationGroup: Share your work
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Now that you have a [basic understanding of apps](end-user-apps.md), let's learn how to open and interact with apps. 
 
