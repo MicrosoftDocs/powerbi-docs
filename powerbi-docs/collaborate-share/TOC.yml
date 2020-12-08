@@ -20,7 +20,9 @@
         href: service-endorsement-overview.md
   - name: How-to guides
     expanded: true
-    items: 
+    items:
+    - name: "Azure Machine Learning"
+      href: service-aml-integrate.md
     - name: Collaborate in Power BI
       items: 
       - name: "Create the new workspaces"
