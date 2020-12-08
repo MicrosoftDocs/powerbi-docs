@@ -1,6 +1,6 @@
 ---
 title: Save a paginated report to a local folder
-description: In this article, you use Power Automate to automate exporting a paginated report for each row in an Excel Online table or SharePoint Online list.
+description: In this article, you use a template to set up recurring exports of a paginated report to your file system, in a desired format. 
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -14,7 +14,7 @@ LocalizationGroup: Get started
 
 With [Power Automate](/power-automate/getting-started), you can automate exporting and distributing Power BI paginated reports to a variety of supported formats and scenarios. In this article, you use a template to set up recurring exports of a paginated report to your file system, in a desired format. See the Prerequisites if it's your first time using the Export to File for Paginated Reports action in a Power Automate flow.
 
-:::image type="content" source="media/service-automate-paginated-local-file/paginated-local-file-overview.png" alt-text="Set up recurring exports of a paginated report to your file system.":::
+:::image type="content" source="media/service-automate-paginated-local-file/paginated-local-file-overview.png" alt-text="Set up recurring exports of a paginated report.":::
 
 Looking for other Power Automate templates for Power BI paginated reports? See [Export Power BI paginated reports with Power Automate](service-automate-paginated-integration.md).
 
@@ -36,11 +36,11 @@ To follow along, make sure you have:
 
     :::image type="content" source="media/service-automate-paginated-local-file/paginated-local-file-set-file-system-2.png" alt-text="Enter a Connection name and Root folder.":::
  
-3. Set the **Recurrence** frequency for your flow by selecting an option from the **Frequency** dropdown and entering a desired interval value.  
+3. To set the **Recurrence** frequency for your flow, select an option from the **Frequency** dropdown and enter a desired interval value.  
 
     :::image type="content" source="media/service-automate-paginated-local-file/paginated-local-file-recurrence-frequency-3.png" alt-text="Set the Recurrence frequency for your flow.":::
 
-4. Optionally, select **Show advanced options** to set additional **Recurrence** parameters, including **Time zone**, **Start time**, **On these days,** **At these hours**, and **At these minutes**. 
+4. Optionally, select **Show advanced options**. Set additional **Recurrence** parameters such as **Time zone**, **Start time**, **On these days,** **At these hours**, and **At these minutes**. 
  
     :::image type="content" source="media/service-automate-paginated-local-file/paginated-local-file-recurrence-advanced-4.png" alt-text="Set advanced options for recurrence.":::
 
@@ -57,7 +57,7 @@ To follow along, make sure you have:
 9. If Power Automate finds errors, select **Edit flow** to fix them. Otherwise, select the Back arrow to view the flow details and to run the new flow.
 10. When you run the flow, Power Automate exports a paginated report in the specified format to the selected folder in your file system.
 
-    :::image type="content" source="media/service-automate-paginated-local-file/paginated-local-file-exported-10.png" alt-text="Power Automate exports a paginated report in the specified format to the selected folder in your file system.":::
+    :::image type="content" source="media/service-automate-paginated-local-file/paginated-local-file-exported-10.png" alt-text="Power Automate exports a paginated report in the specified format.":::
 
 ## Next steps
 
