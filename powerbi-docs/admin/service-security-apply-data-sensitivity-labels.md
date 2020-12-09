@@ -59,6 +59,9 @@ On the settings datasets tab, open the sensitivity label section, choose the des
 
 ## Apply sensitivity labels in Power BI Desktop (preview)
 
+>[!NOTE]
+>During the first 48 hours after you opt in to the Power BI Desktop Information Protection preview feature, **you may experience issues with .pbix files that have sensitivity labels applied (e.g. publishing the .pbix to the service, downloading the .pbix from the service)**. Such issues are expected and will resolve automatically within 48 hours.
+
 To use sensitivity labels in Power BI Desktop:
 * You must have a [Power BI Pro license](./service-admin-purchasing-power-bi-pro.md).
 * Sensitivity labels must be enabled for your organization. Contact your Power BI admin if you aren't sure about this.
