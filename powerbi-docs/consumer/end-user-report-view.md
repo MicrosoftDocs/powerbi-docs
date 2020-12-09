@@ -15,7 +15,6 @@ LocalizationGroup: Reports
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 People view reports on many different devices with varying screen sizes and aspect ratios. Change the way a report page displays to fit your needs.
 
