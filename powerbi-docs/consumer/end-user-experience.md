@@ -4,7 +4,7 @@ description: Overview of the Power BI navigation experience
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
-featuredvideoid: G26dr2PsEpk
+featuredvideoid: removed
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: pbi-explore

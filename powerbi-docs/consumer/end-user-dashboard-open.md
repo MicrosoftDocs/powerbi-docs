@@ -9,7 +9,7 @@ ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 12/03/2020
 LocalizationGroup: Dashboards
-ms.custom: video
+ms.custom:  
 ---
 # View a dashboard
 
