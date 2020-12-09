@@ -7,17 +7,32 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 09/22/2020
+ms.date: 12/08/2020
 LocalizationGroup: Connect to data
 ---
 # Using enhanced dataset metadata
 
-When Power BI Desktop creates reports, it also creates dataset metadata in the corresponding PBIX and PBIT files. Previously the metadata was stored in a format that was specific to Power BI Desktop. It used base-64 encoded M expressions and data sources, and assumptions were made about how that metadata was stored.
+When Power BI Desktop creates reports, it also creates dataset metadata in the corresponding PBIX and PBIT files. Previously the metadata was stored in a format that was specific to Power BI Desktop. The metadata used base-64 encoded M expressions and data sources. Power BI made assumptions about how that metadata was stored.
 
 With the release of the **enhanced dataset metadata** feature, many of these limitations are removed. PBIX files are automatically upgraded to enhanced metadata upon opening the file. With **enhanced dataset metadata**, metadata created by Power BI Desktop uses a format similar to what is used for Analysis Services tabular models, based on the [Tabular Object Model](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo).
 
 
-The **enhanced dataset metadata** feature is strategic and foundational, because future Power BI functionality will be built upon its metadata. Some additional capabilities that stand to benefit from enhanced dataset metadata include [XMLA read/write](/power-platform-release-plan/2019wave2/business-intelligence/xmla-readwrite) for management of Power BI datasets, and the migration of Analysis Services workloads to Power BI to benefit from next-generation features.
+The **enhanced dataset metadata** feature is strategic and foundational. Future Power BI functionality will be built upon its metadata. These other capabilities stand to benefit from enhanced dataset metadata:
+
+- [XMLA read/write](/power-platform-release-plan/2019wave2/business-intelligence/xmla-readwrite) for management of Power BI datasets
+- Migration of Analysis Services workloads to Power BI to benefit from next-generation features.
+
+## Limitations
+Before enhanced metadata support, for SQL Server, Oracle, Teradata, and legacy HANA connections, Power BI Desktop added a native query to the data model. This query is used by Power BI Service data models. With enhanced metadata support, the Power BI service data model regenerates the native query at runtime. It doesn't use the query that Power BI Desktop created. In most cases, this retrieval resolves itself correctly, but some transformations won't work without reading underlying data. You may see some errors in reports that previously worked. For example, the error will say: 
+
+“Unable to convert an M query in table 'Dimension City' into a native source query. Try again later or contact support. If you contact support, provide these details." 
+
+You can fix your queries in three different places in Power BI Desktop:
+
+- When you apply changes or do a refresh.
+- In a warning bar in the Power Query Editor informing you that the expression couldn’t be folded to the data source.
+    :::image type="content" source="media/desktop-enhanced-dataset-metadata/enhanced-metadata-apply-query-changes.png" alt-text="Screenshot of Apply query changes message: We couldn't fold the expression to the data source.":::
+- When you run evaluations when you open a report to check if you have unsupported queries. Running these evaluations can result in performance implications.
 
 
 ## Next steps
