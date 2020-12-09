@@ -5,6 +5,7 @@ author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
 featuredvideoid: ajTPGNpthcg
+ms.custom: video-ajTPGNpthcg
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
