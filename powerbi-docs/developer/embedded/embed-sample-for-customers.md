@@ -1,9 +1,9 @@
 ---
 title: Embed content in your application for your customers
-description: Learn how to embed, a report, dashboard, or tile into a Power BI embedded analytics sample.
+description: Learn how to embed, a report, dashboard, or tile into a Power BI embedded analytics embed for your organization sample.
 author: KesemSharabi
 ms.author: kesharab
-ms.reviewer: rkarlin
+ms.reviewer: ""
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -14,9 +14,8 @@ ms.date: 12/02/2020
 
 # Tutorial: Embed Power BI content using a sample *embed for your customers* application
 
-**Embedded analytics** and **Power BI Embedded** (the Azure offer) allow you to embed Power BI content such as reports, dashboards and tiles, into your application.
+[!INCLUDE[embedded analytics overview](../../includes/embed-tutorial-overview.md)]
 
-In this tutorial, you'll learn how to:
 >[!div class="checklist"]
 >* Set up your embedded environment.
 >* Configure an *embed for your customers* (also known as *app owns data*) sample application.

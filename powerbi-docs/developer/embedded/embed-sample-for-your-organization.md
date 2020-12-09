@@ -1,6 +1,6 @@
 ---
 title: Embed content in your application for your organization
-description: Learn how to integrate or embed, a report (Power BI or Paginated), dashboard, or tile into an application using the Power BI APIs for embedded analytics for your organization. Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
+description: Learn how to embed, a report, dashboard, or tile into a Power BI embedded analytics embed for your customers sample.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
@@ -8,20 +8,21 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 02/04/2020
+ms.date: 12/09/2020
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
 
-# Tutorial: Embed Power BI content into an application for your organization
+# Tutorial: Embed Power BI content using a sample *embed for your organization* application
 
-In **Power BI**, you can embed reports (Power BI or Paginated), dashboards, or tiles into an application by using user owns data. **User owns data** lets your application extend the Power BI service so it can use embedded analytics. This tutorial demonstrates how to integrate a report (Power BI or Paginated) into an application. You use the Power BI .NET SDK with the Power BI JavaScript API to embed Power BI into an application for your organization.
+[!INCLUDE[embedded analytics overview](../../includes/embed-tutorial-overview.md)]
 
-![Power BI Embed Report](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
+>[!div class="checklist"]
+>* Set up your embedded environment.
+>* Configure an *embed for your organization* (also known as *user owns data*) sample application.
 
-In this tutorial, you learn the following tasks:
-> [!div class="checklist"]
-> * Register an application in Azure.
-> * Embed a Power BI or Paginated report into an application using your Power BI tenant.
+To use your application, your users will need to sign in to Power BI.
+
+The embed for your organization solution is usually used by enterprises and big organizations, and is intended for internal users.
 
 ## Prerequisites
 
