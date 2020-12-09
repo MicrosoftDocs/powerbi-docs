@@ -8,7 +8,6 @@ featuredvideoid: B2vd4MQrz4M
 ms.custom: video-B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: pbi-explore
-ms.custom: seodec18
 ms.topic: conceptual
 ms.date: 12/03/2020
 LocalizationGroup: Get started
