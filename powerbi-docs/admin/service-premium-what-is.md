@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 12/04/2020
+ms.date: 12/09/2020
 ms.custom: licensing support
 LocalizationGroup: Premium
 ---
@@ -276,9 +276,11 @@ The Power BI Embedded A4 SKU is equal to the P1 SKU, A5 = P2 and A6 = P3.
 
 If you enable the [Large dataset storage format](service-premium-large-models.md) setting for a dataset, the .pbix file size limitations still apply to file upload or publish. The upload size limit is unaffected by the large dataset storage format. However, when published to the service, with incremental refresh and large dataset storage format enabled, datasets can grow much larger than these limits. With large dataset storage format, the dataset size is limited only by the Power BI Premium capacity size.
 
+Power BI datasets can store data in a highly compressed, in-memory cache for optimized query performance enabling fast user interactivity over large datasets. Previously, datasets in Power BI Premium have been limited to 10 GB after compression. With large models, the limitation is removed and dataset sizes are limited only by the capacity size, or a maximum size set by the administrator. Enabling such large dataset sizes enables Power BI dataset sizes to align better to Azure Analysis Services model sizes.
+
 Your .pbix files represent data in a *highly compressed state*. The data will likely expand when loaded in memory, and from there it may expand several more times during data refresh.
 
-Scheduled refresh of large datasets can take a long time and be resource-intensive. It's important to not schedule too many overlapping refreshes. It's  recommended [incremental refresh](service-premium-incremental-refresh.md) is configured, because it's faster, more reliable, and consumes fewer resources.
+Scheduled refresh of large datasets can take a long time and be resource-intensive. It's important to not schedule too many overlapping refreshes. It's recommended [incremental refresh](service-premium-incremental-refresh.md) is configured, because it's faster, more reliable, and consumes fewer resources.
 
 The initial report load of large datasets can take a long time if it has been a while since the last time the dataset was used. A loading bar for longer-loading reports displays the load progress.
 
