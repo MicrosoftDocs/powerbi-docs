@@ -6,6 +6,7 @@ ms.author: mihart
 ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: pbi-visuals
+ms.custom: video-fDb5zZ3xmxU
 ms.topic: how-to
 ms.date: 01/10/2020
 LocalizationGroup: Visualizations
