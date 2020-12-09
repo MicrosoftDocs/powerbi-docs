@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 10/21/2019
+ms.date: 12/09/2020
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshoot importing Access and Excel .xls files in Power BI Desktop
@@ -18,6 +18,8 @@ In Power BI Desktop, both Access databases and early versions of Excel workbooks
 ## Situation 1: No Access Database Engine is installed
 
 If the Power BI Desktop error message indicates the Access Database Engine isn't installed, you must install the Access Database Engine version, either 32-bit or 64-bit, that matches your Power BI Desktop version. You can install the Access Database Engine from the [downloads page](https://www.microsoft.com/download/details.aspx?id=13255).
+
+If you're working with dataflows and using a gateway to connect to the data, you must install the Access Database Engine onto the computer running the gateway. 
 
 >[!NOTE]
 >If the installed Access Database Engine bit-version is different from your Microsoft Office installation's bit-version, Office applications won't be able to use the Access Database Engine.

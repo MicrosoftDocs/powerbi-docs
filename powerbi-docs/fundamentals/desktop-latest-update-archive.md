@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 12/09/2020
 LocalizationGroup: Get started
 ---
 # Previous monthly updates to Power BI Desktop
@@ -545,13 +545,6 @@ You can also download previous versions of Power BI Desktop if your organization
 * It may not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
 * If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
 * We only archive the English versions of Power BI Desktop.
-
-Select the following links to download this earlier version: 
-
-* [May 2020 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/9/0/3/903DCAE8-44D9-4A7E-856C-40C0754723ED/PBIDesktopRS.msi)
-* [May 2020 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/9/0/3/903DCAE8-44D9-4A7E-856C-40C0754723ED/PBIDesktopRS_x64.msi)
-
-
 
 
 

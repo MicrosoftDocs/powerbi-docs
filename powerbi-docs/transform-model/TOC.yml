@@ -50,7 +50,9 @@
     - name: "Premium features of dataflows"
       href: dataflows/dataflows-premium-features.md      
     - name: "Use Machine Learning and Cognitive Services with dataflows"
-      href: dataflows/dataflows-machine-learning-integration.md      
+      href: dataflows/dataflows-machine-learning-integration.md  
+    - name: "Dataflows best practices"
+      href: ./dataflows/dataflows-best-practices.md                  
     - name: "Dataflows limitations and considerations"
       href: dataflows/dataflows-features-limitations.md            
   - name: How-to guides
@@ -95,44 +97,6 @@
         href: desktop-import-and-display-kpis.md
       - name: "Apply auto date/time"
         href: desktop-auto-date-time.md   
-    - name: Self-service data prep
-      items: 
-      - name: "Create and use dataflows"
-        href: ./dataflows/dataflows-create.md
-      - name: "Dataflows best practices"
-        href: ./dataflows/dataflows-best-practices.md        
-      - name: "Use DirectQuery with dataflows in Power BI (preview)"
-        href: ./dataflows/dataflows-configure-consume.md
-      - name: "Use the enhanced compute engine with dataflows"
-        href: ./dataflows/dataflows-premium-features.md
-      - name: "Computed entities with Power BI Premium"
-        href: ./dataflows/dataflows-premium-features.md
-      - name: "Connect to data sources with dataflows"
-        href: ./dataflows/dataflows-configure-consume.md
-      - name: "Use dataflows with on-premises data sources"
-        href: ./dataflows/dataflows-configure-consume.md
-      - name: "Link entities between dataflows"
-        href: ./dataflows/dataflows-premium-features.md
-      - name: "Use incremental refresh with dataflows"
-        href: ./dataflows/dataflows-premium-features.md
-      - name: "Developer resources for dataflows"
-        href: ./dataflows/dataflows-configure-consume.md
-      - name: "Connect to dataflows in Power BI Desktop"
-        href: desktop-connect-dataflows.md  
-      - name: "Dataflows and Azure Data Lake integration (Preview)"
-        href: ./dataflows/dataflows-azure-data-lake-storage-integration.md
-      - name: "Connect Azure Data Lake Storage Gen2 for dataflow storage"
-        href: ./dataflows/dataflows-azure-data-lake-storage-integration.md
-      - name: "Configure workspace dataflow settings (Preview)"
-        href: ./dataflows/dataflows-configure-consume.md
-      - name: "Add a CDM folder to Power BI as a dataflow (Preview)"
-        href: ./dataflows/dataflows-machine-learning-integration.md
-      - name: "Integrate Machine Learning in Power BI"
-        href: ./dataflows/dataflows-machine-learning-integration.md
-      - name: "Use Cognitive Services in Power BI"
-        href: ./dataflows/dataflows-machine-learning-integration.md
-      - name: "Automated Machine Learning in Power BI"
-        href: ./dataflows/dataflows-machine-learning-integration.md
   - name: Reference
     items: 
     - name: "Use the Field list in Power BI Desktop (preview)"
