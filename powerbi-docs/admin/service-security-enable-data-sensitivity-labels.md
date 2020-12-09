@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 08/10/2020
+ms.date: 12/09/2020
 LocalizationGroup: Data from files
 ---
 # Enable sensitivity labels in Power BI
