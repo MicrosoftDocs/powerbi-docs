@@ -54,7 +54,7 @@ To follow along, make sure you have:
 
 7. Power Automate automatically generates a **File name** and **File content** for you. You can modify the **File name**, but keep the dynamically generated **File content** value.
 8. When you're done, select **Next step** or **Save**. Power Automate creates and evaluates the flow.
-9. If Power Automate finds errors, select **Edit flow** to fix them. Otherwise, select the Back arrow to view the flow details and to run the new flow.
+9. If Power Automate finds errors, select **Edit flow** to fix them. Otherwise, select the Back arrow to view the flow details and run the new flow.
 10. When you run the flow, Power Automate exports a paginated report in the specified format to the selected folder in your file system.
 
     :::image type="content" source="media/service-automate-paginated-local-file/paginated-local-file-exported-10.png" alt-text="Power Automate exports a paginated report in the specified format.":::

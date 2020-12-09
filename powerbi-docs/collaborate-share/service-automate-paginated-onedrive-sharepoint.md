@@ -64,7 +64,7 @@ With either of these templates, you set up recurring exports of a paginated repo
 
 1. When you're done, select **Next step** or **Save**. Power Automate creates and evaluates the flow, and lets you know if it finds errors. 
 
-1. If there are errors, select **Edit flow** to fix them. Otherwise, select the **Back** arrow to view the flow details and to run the new flow. 
+1. If there are errors, select **Edit flow** to fix them. Otherwise, select the **Back** arrow to view the flow details and run the new flow. 
 
     When you run the flow, Power Automate exports a paginated report in the specified format to OneDrive for Business or SharePoint Online.  
 

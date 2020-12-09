@@ -42,7 +42,7 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
  
     :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-recurrence-6.png" alt-text="Set recurrence in Power Automate.":::
 
-7. **Select New Step**.
+7. Select **New Step**.
 8. In **Choose an action**, search for **Power BI** and select **Export to File for Power BI Reports**.
  
     :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-choose-action-8.png" alt-text="Choose an action in Power Automate.":::
@@ -63,13 +63,13 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
 13. Select **New Step**.
 14. In **Choose an action**, search for **Outlook** and select **Send an email (V2)**.
 15. In **Send an email (V2)**, complete the **To**, **Subject**, and **Body** fields for your email.
-16. **Select Show advanced options**. In **Attachments Name – 1**, enter a name for your attachment. Add a file extension to the file name (for example, .PDF) that matches your desired **Export Format**.
+16. Select **Show advanced options**. In **Attachments Name – 1**, enter a name for your attachment. Add a file extension to the file name (for example, .PDF) that matches your desired **Export Format**.
 17. In **Attachment Content**, select **File Content** to attach your exported Power BI report.  
  
     :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-send-email-17.png" alt-text="Select your exported report to email.":::
 
-18. When you're done, select **Next step** or **Save**.Power Automate creates and evaluates the flow, and lets you know if it finds errors.
-1. If there are errors, select **Edit flow** to fix them. Otherwise, select the **Back** arrow to view the flow details and to run the new flow.
+18. When you're done, select **Next step** or **Save**. Power Automate creates and evaluates the flow, and lets you know if it finds errors.
+1. If there are errors, select **Edit flow** to fix them. Otherwise, select the **Back** arrow to view the flow details and run the new flow.
     When you run the flow, Power Automate exports a Power BI report in the specified format and sends it as an email attachment as scheduled.  
 
 ## Next steps
