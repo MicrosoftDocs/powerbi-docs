@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 11/17/2020
+ms.date: 12/08/2020
 LocalizationGroup: Get started
 ---
 # Export a paginated report for each row in an Excel Online table or SharePoint list
@@ -67,7 +67,7 @@ To follow along, make sure you have:
 
 1. In **Apply to Each**, the **Select an output from previous step** box is set to **value** by default. This setting iterates through the actions contained in **Apply to Each** for each row in your Excel Online table or SharePoint Online list.  
 
-1. In the **Workspace** box, select a workspace in a dedicated capacity. In the **Report** box, select the paginated report in the selected workspace you wish to export. If you set **Enter a custom value** from the dropdown, you can set **Workspace** and **Report** to equal a column in your Excel Online table or SharePoint Online list. These columns should contain Workspace IDs and Report IDs, respectively.  
+1. In the **Workspace** box, select a workspace in a reserved capacity. In the **Report** box, select the paginated report in the selected workspace you wish to export. If you set **Enter a custom value** from the dropdown, you can set **Workspace** and **Report** to equal a column in your Excel Online table or SharePoint Online list. These columns should contain Workspace IDs and Report IDs, respectively.  
 
 1. Select an **Export Format** from the dropdown, or set it equal to a column in your Excel Online table containing desired export formats. for example PDF, DOCX, or PPTX. Optionally, you can specify parameters for the paginated report. Find detailed descriptions of the parameters in the [connector reference for the Power BI REST API](/connectors/powerbi/#export-to-file-for-paginated-reports).
 

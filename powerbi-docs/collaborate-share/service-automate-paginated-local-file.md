@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/07/2020
+ms.date: 12/08/2020
 LocalizationGroup: Get started
 ---
 # Save a Power BI paginated report to a local folder  with Power Automate
@@ -36,7 +36,7 @@ To follow along, make sure you have:
 
     :::image type="content" source="media/service-automate-paginated-local-file/paginated-local-file-set-file-system-2.png" alt-text="Enter a Connection name and Root folder.":::
  
-3. To set the **Recurrence** frequency for your flow, select an option from the **Frequency** dropdown and enter a desired interval value.  
+3. To set the **Recurrence** frequency for your flow, select an option from the **Frequency** dropdown and enter a desired **Interval** value.  
 
     :::image type="content" source="media/service-automate-paginated-local-file/paginated-local-file-recurrence-frequency-3.png" alt-text="Set the Recurrence frequency for your flow.":::
 
@@ -44,7 +44,7 @@ To follow along, make sure you have:
  
     :::image type="content" source="media/service-automate-paginated-local-file/paginated-local-file-recurrence-advanced-4.png" alt-text="Set advanced options for recurrence.":::
 
-5. In the **Workspace** box, select a workspace in a dedicated capacity where the report is. In the **Report** box, select the paginated report that you wish to export in the workspace. In the **Export Format** box, select the desired export format. Optionally, you can specify parameters for the paginated report. See detailed descriptions of the parameters in the [connector reference for the Power BI REST API](/connectors/powerbi/#export-to-file-for-paginated-reports).  
+5. In the **Workspace** box, select a workspace in a reserved capacity where the report is. In the **Report** box, select the paginated report that you wish to export in the workspace. In the **Export Format** box, select the desired export format. Optionally, you can specify parameters for the paginated report. See detailed descriptions of the parameters in the [connector reference for the Power BI REST API](/connectors/powerbi/#export-to-file-for-paginated-reports).  
  
     :::image type="content" source="media/service-automate-paginated-local-file/paginated-local-file-select-workspace-report-5.png" alt-text="Select the workspace and the report.":::
 
