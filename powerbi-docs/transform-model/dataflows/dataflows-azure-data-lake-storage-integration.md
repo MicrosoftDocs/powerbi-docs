@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 11/13/2020
+ms.date: 12/10/2020
 LocalizationGroup: Data from files
 ---
 # Configuring dataflow storage to use Azure Data Lake Gen 2 
@@ -19,6 +19,8 @@ There are two ways to configure which ADLS Gen 2 store to use: you can use a ten
 ## Pre-requisites
 
 To bring your own ADLS Gen 2 account, you must have owner permissions at either the storage account, resource group or subscription layer. If you are an administrator, you still must assign yourself owner permission. 
+
+The storage account must be created with the [Hierarchical Namespace (HNS)](https://docs.microsoft.com/azure/storage/blobs/create-data-lake-storage-account) enabled. 
 
 Also, the ADLS Gen 2 account must be deployed in the same region as your Power BI tenant. An error occurs if the locations of the resources are not in the same region.
 
