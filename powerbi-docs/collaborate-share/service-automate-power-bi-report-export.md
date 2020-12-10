@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/08/2020
+ms.date: 12/09/2020
 LocalizationGroup: Get started
 ---
 # Export and email a Power BI report with Power Automate
@@ -20,7 +20,7 @@ With [Power Automate](/power-automate/getting-started), you can automate exporti
 
 To follow along, make sure you have:
 
-- At least one workspace in your Power BI tenant backed by a reserved capacity. This capacity can be any of the A4/P1 – A6/P3 SKUs. Read more about [reserved capacities for paginated reports in Power BI Premium](../admin/service-premium-what-is.md#paginated-reports)
+- At least one workspace in your Power BI tenant backed by a reserved capacity. This capacity can be any of the A1/EM1 - A6/P3 SKUs. Read more about [reserved capacities for Power BI Reports in Power BI Premium](../admin/service-premium-what-is.md)
 - Access to the standard connectors in Power Automate, which come with any Office 365 subscription.
 
 ## Create a flow from scratch 
