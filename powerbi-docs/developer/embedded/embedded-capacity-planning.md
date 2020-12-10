@@ -1,5 +1,5 @@
 ---
-title: Embedded analytics capacity planning
+title: Power BI embedded analytics capacity planning
 description: Planning capacity in Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
