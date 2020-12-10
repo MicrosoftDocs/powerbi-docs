@@ -1,5 +1,5 @@
 ---
-title: Considerations for generating an embed token
+title: Considerations for generating an embed token in Power BI embedded analytics
 description: Learn about the considerations, limitations, and required permissions for generating an embed token
 author: KesemSharabi
 ms.author: kesharab

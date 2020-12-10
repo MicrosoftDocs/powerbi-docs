@@ -1,5 +1,5 @@
 ---
-title: Export Power BI reports API
+title: Export Power BI embedded analytics reports API
 description: Learn how to export an embedded Power BI report 
 author: KesemSharabi
 ms.author: kesharab
