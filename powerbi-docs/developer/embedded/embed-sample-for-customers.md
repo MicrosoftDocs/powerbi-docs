@@ -1,5 +1,5 @@
 ---
-title: Embed content in your application for your customers
+title: Embed content in your Power BI embedded analytics application for your customers
 description: Learn how to embed, a report, dashboard, or tile into a Power BI embedded analytics embed for your organization sample.
 author: KesemSharabi
 ms.author: kesharab
@@ -269,23 +269,16 @@ The Power BI embedded sample application allows you to create an *embed for your
 
 Follow these steps to modify the *embed for your customers* sample application, to embed your Power BI report.  
 
-1. Open the [Power BI developer samples](https://github.com/microsoft/PowerBI-Developer-Samples) folder.
+[!INCLUDE[Embedding steps](../../includes/embed-tutorial-embedding-steps.md)]
 
-2. Select **Code** and then select **Download zip**.
+    * .NET Core
+    * .NET Framework
+    * Java
+    * Node JS
+    * Python
 
-    :::image type="content" source="media/embed-sample-for-customers/developer-samples.png" alt-text="A screenshot showing the ZIP download option in the Power B I developer samples GitHub":::
-
-3. Extract the downloaded ZIP and navigate to the **PowerBI-Developer-Samples-master** folder.
-
-4. Depending on the language you want your application to use, open one of these folders:
-
-* .NET Core
-* .NET Framework
-* Java
-* Node JS
-* Python
     >[!NOTE]
-    >The *embed for your customers* sample applications only support the languages listed above. The *React TS* sample application only supports the *[embed for your organization](embed-sample-for-your-organization.md)* solution.
+    >The *embed for your customers* sample applications only support the languages listed above. The *React* sample application only supports the *[embed for your organization](embed-sample-for-your-organization.md)* solution.
 
 5. Open the **Embed for your customers** folder.
 
@@ -295,7 +288,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
     * If you're using [Visual Studio](https://visualstudio.microsoft.com/), open the **AppOwnsData.sln** file.
 
-    * If you're using [Visual Studio Code](https://code.visualstudio.com/), open the **App Owns Data** folder.
+    * If you're using [Visual Studio Code](https://code.visualstudio.com/), open the **AppOwnsData** folder.
 
 7. Open **appsettings.json**.
 
@@ -497,8 +490,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
 After configuring and running the *embed for your customers* sample application, you can start developing your own application.
 
-When you're ready, review the [move to production](move-to-production.md) requirements. You'll also need a [capacity](embedded-capacity.md), and should review the [capacity planning](embedded-capacity-planning.md) article to establish witch SKU best suites your needs.
-
+[!INCLUDE[Move to production](../../includes/embed-tutorial-production.md)]
 
 ## Next steps
 
