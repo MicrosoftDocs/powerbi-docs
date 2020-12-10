@@ -31,7 +31,7 @@
     - name: "Use Cognitive Services"
       href: service-tutorial-use-cognitive-services.md
     - name: "Machine Learning integration"
-      href: service-tutorial-invoke-machine-learning-model.md
+      href: service-aml-integrate.md
     - name: "Build a Machine Learning model"
       href: service-tutorial-build-machine-learning-model.md
     - name: "Refresh data from SQL Server"
