@@ -448,9 +448,9 @@ Once you save your dataflow, the model is automatically invoked when the dataflo
 
 This article provided an overview of Automated Machine Learning for Dataflows in the Power BI service. The following articles may also be useful.
 
-- [Tutorial: Consume an Azure Machine Learning model in Power BI](../../connect-data/service-aml-integrate.md)
+- [Tutorial: Build a Machine Learning model in Power BI](../../connect-data/service-tutorial-build-machine-learning-model.md)
 - [Tutorial: Using Cognitive Services in Power BI](../../connect-data/service-tutorial-use-cognitive-services.md)
-- [Tutorial: Invoke a Machine Learning Studio (classic) model in Power BI (Preview)](../../connect-data/service-tutorial-invoke-machine-learning-model.md)
+- [Tutorial: Consume Azure Machine Learning models in Power BI](../../connect-data/service-aml-integrate.md)
 
 The following articles provide more information about dataflows and Power BI:
 
