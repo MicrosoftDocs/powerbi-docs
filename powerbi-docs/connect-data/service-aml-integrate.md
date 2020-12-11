@@ -59,7 +59,7 @@ In the Home ribbon of the Power Query Editor, select the **Azure Machine Learnin
 
 :::image type="content" source="media/service-aml-integrate/aml-button.png" alt-text="Screenshot showing Power Query Editor.":::
 
-After signing in to your Azure account using single sign-on, you see a list of available services. Select **my-sklearn-service**. 
+After signing in to your Azure account using single sign-on, you see a list of available services. Select the **my-sklearn-service** that you created from the Train and deploy a machine learning model tutorial. 
 
 Power Query populates the columns automatically for you. You remember that in our schema for the service, we had a Python decorator that specified the inputs. Select **OK**.
 
