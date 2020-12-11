@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 09/30/2020
+ms.date: 12/10/2020
 LocalizationGroup: Connect to data
 ---
 
@@ -51,7 +51,7 @@ To connect with a **Microsoft Customer Agreement** account, you can get your **B
 
     ![Screenshot shows the Azure Cost Management properties with a scope of Billing Profile I D.](media/desktop-connect-azure-cost-management/azure-cost-management-01a.png)
 
-7.	When prompted, sign in with your Azure user account and password. 
+7.	When prompted, sign in with your Azure user account and password. You must use a Billing account owner for successful access. 
 
 
 ## Connect to an Enterprise Agreement account
@@ -66,13 +66,11 @@ To connect with an Enterprise Agreement (EA) account, you can get your enrollmen
 
     ![Screenshot shows the Azure Cost Management properties with a scope of Enrollment number.](media/desktop-connect-azure-cost-management/azure-cost-management-01b.png)
 
-6.	When prompted, sign in with your Azure user account and password. 
+6.	When prompted, sign in with your Azure user account and password. You must use an Enterprise Administrator account for Enterprise Agreements.
 
 ## Data available through the connector
 
 Once you successfully authenticate, a **Navigator** window appears with the following available data tables:
-
-
 
 | **Table** | **Description** |
 | --- | --- |
