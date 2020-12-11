@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 11/17/2020
+ms.date: 12/10/2020
 ---
 
 # Power BI data sources
@@ -38,7 +38,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Azure Table Storage | Yes | Yes | No | Yes | No | Yes |
 | BI Connector | Yes | Yes | Yes | Yes | Yes | No |
 | BI360 - Budgeting & Financial Reporting | Yes | Yes | No | No | No | No |
-| Common Data Service | Yes | Yes | No | No | No | Yes |
+| Microsoft Dataverse | Yes | Yes | No | No | No | Yes |
 | Data.World - Get Dataset | Yes | Yes | No | No | No | No |
 | Denodo | Yes | Yes | Yes | Yes | Yes | No |
 | Dremio | Yes | Yes | Yes | Yes | Yes | No |

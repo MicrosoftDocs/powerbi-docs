@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 12/09/2020
+ms.date: 12/10/2020
 ms.custom: references_regions
 LocalizationGroup: Premium
 ---
@@ -143,6 +143,9 @@ The following list provides regions where large datasets in Power BI are availab
 |---------|---------|
 |Australia East     | australiaeast        |
 |Australia Southeast     | australiasoutheast        |
+|Canada East     | canadaeast        |
+|Canada Central     | canadacentral        |
+|Central India     | centralindia        |
 |Central US     | centralus        |
 |East Asia     | eastasia        |
 |East US     | eastus        |
@@ -158,6 +161,7 @@ The following list provides regions where large datasets in Power BI are availab
 |UK South     | uksouth        |
 |UK West     | ukwest        |
 |West Europe     | westeurope        |
+|West India     | westindia        |
 |West US     | westus        |
 |West US 2     | westus2        |
 
