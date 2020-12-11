@@ -136,7 +136,7 @@ Follow the instructions for both **azureMLFunctions** and **Web**. Make sure tha
 
 :::image type="content" source="media/service-aml-integrate/schedule-refresh.png" alt-text="Screenshot showing dataset and scoring refresh.":::
 
-Selet **Apply**.
+Select **Apply**.
 
 >[!NOTE]
 > When the data is refreshed, it also sends the data to your Azure Machine Learning endpoint for scoring.
