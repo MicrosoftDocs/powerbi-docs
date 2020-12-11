@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 10/21/2019
+ms.date: 12/11/2020
 LocalizationGroup: Dashboards
 ---
 
@@ -50,7 +50,7 @@ You can only run usage metrics reports in the Power BI service. However, if you 
 
     Usage metrics are a powerful ally as you work to deploy and maintain Power BI dashboards and reports. Wondering which pages of your report are most useful, and which ones you should phase out? Slice by **Report page** to find out. Wondering if you should build a mobile layout for your dashboard? Slice by **Platforms** to discover how many users are accessing your content via the mobile apps vs. via web browser.
 
-5. Optionally, hover over a visualization and select the pin icon to add the visualization to a dashboard. Or, from the top menu bar, select **Pin Live Page** to add the entire page to a dashboard. From the dashboard you can monitor the usage metrics more easily or share them with others.
+5. Optionally, hover over a visualization and select the pin icon to add the visualization to a dashboard. Or, from the top menu bar, select **Pin Live Page** to add the entire page to a dashboard. From the dashboard, you can monitor the usage metrics more easily or share them with others.
 
     > [!NOTE]
     > If you pin a tile from a usage metrics report to a dashboard, you can't add that dashboard to an app.
@@ -90,7 +90,7 @@ To dig into the report data, or to build your own reports against the underlying
 | Total views |yes |yes |Number of views in the past 90 days. |
 | Total viewers |yes |yes |Number of unique viewers in the past 90 days. |
 | Total shares |yes |no |Number of times the dashboard or report was shared in the past 90 days. |
-| Total in organization |yes |yes |Count of all dashboards or reports in the entire organization which had at least one view in the past 90 days.  Used to calculate rank. |
+| Total in organization |yes |yes |Count of all dashboards or reports in the entire organization that had at least one view in the past 90 days.  Used to calculate rank. |
 | Rank: Total views |yes |yes |For total views of all dashboards or reports in the organization over the past 90 days, where does this dashboard or report rank. |
 | Rank: Total shares |yes |no |For total shares of all dashboards in the organization over the past 90 days, where does this dashboard or report rank. |
 
@@ -142,13 +142,13 @@ See [Control usage metrics](../admin/service-admin-portal.md#control-usage-metri
 
 ## Usage metrics in national clouds
 
-Power BI is available in separate national clouds. These clouds offer the same levels of security, privacy, compliance and transparency as the global version of Power BI, combined with a unique model for local regulations on service delivery, data residency, access, and control. Due to this unique model for local regulations, usage metrics aren't available in national clouds. For more information, see [national clouds](https://powerbi.microsoft.com/clouds/).
+Power BI is available in separate national clouds. These clouds offer the same levels of security, privacy, compliance, and transparency as the global version of Power BI, combined with a unique model for local regulations on service delivery, data residency, access, and control. Due to this unique model for local regulations, usage metrics aren't available in national clouds. For more information, see [national clouds](https://powerbi.microsoft.com/clouds/).
 
 ## Considerations and limitations
 
 ### Discrepancies between audit logs and usage metrics
 
-It's important to understand that differences can occur when comparing usage metrics and audit logs, and why. *Audit logs* are collected using data from the Power BI service, and *usage metrics* are collected on the client. Aggregate counts of activities in audit logs may not always match usage metrics, because of the following:
+It's important to understand that differences can occur when comparing usage metrics and audit logs, and why. *Audit logs* are collected using data from the Power BI service, and *usage metrics* are collected on the client. Aggregate counts of activities in audit logs may not always match usage metrics, because of the following differences:
 
 * Usage metrics may sometimes undercount activities due to inconsistent network connections, ad blockers, or other issues that can disrupt sending the events from the client.
 * Certain types of views aren't included in usage metrics, as described earlier in this article.
@@ -157,7 +157,7 @@ It's important to understand that differences can occur when comparing usage met
 
 ### Discrepancies between REST APIs and usage metrics
 
-The Power BI [Reports REST APIs](https://docs.microsoft.com/rest/api/power-bi/reports) and [Admin REST APIs](https://docs.microsoft.com/rest/api/power-bi/admin) also use Power BI Service data. For the reasons described above, report counts (i.e. number of reports) from the APIs can differ from report counts in usage metrics. Report counts derived from the APIs are unaffected by client issues and should be considered accurate.
+The Power BI [Reports REST APIs](https://docs.microsoft.com/rest/api/power-bi/reports) and [Admin REST APIs](https://docs.microsoft.com/rest/api/power-bi/admin) also use Power BI service data. For the reasons described in the previous section, report counts (the number of reports) from the APIs can differ from report counts in usage metrics. Report counts derived from the APIs are unaffected by client issues and should be considered accurate.
 
 ### Other considerations
 
