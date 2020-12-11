@@ -155,6 +155,10 @@ It's important to understand that differences can occur when comparing usage met
 * Usage metrics may sometimes overcount activities, in situations where the client refreshes without the need for a request being sent back to the Power BI service.
 * Sharing is disabled for the usage metrics report. To give people read access to the report, you first need to give them access to the workspace.
 
+### Discrepancies between REST APIs and usage metrics
+
+The Power BI [Reports REST APIs](https://docs.microsoft.com/rest/api/power-bi/reports) and [Admin REST APIs](https://docs.microsoft.com/rest/api/power-bi/admin) also use Power BI Service data. For the reasons described above, report counts (i.e. number of reports) from the APIs can differ from report counts in usage metrics. Report counts derived from the APIs are unaffected by client issues and should be considered accurate.
+
 ### Other considerations
 
 You need to view the content in your workspace, from within that workspace, at least once. If there are no views of the content from the workspace itself at least once, data isn't correlated from the application views in the Usage Metrics Report. To unblock the processing of data for this report, just view the content from your workspace at least once.
