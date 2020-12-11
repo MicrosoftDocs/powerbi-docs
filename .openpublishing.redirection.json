@@ -2862,7 +2862,12 @@
         },
         {
             "source_path": "powerbi-docs/service-tutorial-build-machine-learning-model.md",
-            "redirect_url": "/power-bi/connect-data/service-tutorial-build-machine-learning-model",
+            "redirect_url": "/power-bi/connect-data/service-aml-integrate",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/service-tutorial-build-machine-learning-model.md",
+            "redirect_url": "/power-bi/connect-data/service-aml-integrate",
             "redirect_document_id": true
         },
         {

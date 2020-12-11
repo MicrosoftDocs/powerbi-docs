@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Consume Azure Machine Learning models in Power BI"
+title: "Tutorial: Consume an Azure Machine Learning model in Power BI"
 titleSuffix: Azure Machine Learning
 description: Learn how to consume Azure Machine Learning models in Power BI.
 services: machine-learning
@@ -17,7 +17,7 @@ ms.date: 12/10/2020
 This tutorial walks you through creating a Power BI report based on a machine learning model. By the end of this tutorial, you'll be able to:
 
 > [!div class="checklist"]
-> * Score machine learning models (deployed using Azure Machine Learning) in Power BI
+> * Score machine learning models (deployed using Azure Machine Learning) in Power BI.
 > * Connect to an Azure Machine Learning model in the Power Query Editor.
 > * Create a report with a visualization based on that model.
 > * Publish that report to the Power BI service.
@@ -75,7 +75,12 @@ Once the data is scored, Power Query creates an additional column named **AzureM
 
 :::image type="content" source="media/service-aml-integrate/scored-data.png" alt-text="Screenshot showing added scored column":::
 
-The data that the service returns is a **list**. If you deployed a designer model, you will see a **record**. To get the predictions, on the **Transform** ribbon select the **Expand column** button > **Expand to New Rows**.
+The data that the service returns is a **list**. 
+
+> [!NOTE]
+> If you deployed a designer model, you see a **record**.
+
+To get the predictions, on the **Transform** ribbon select the **Expand column** button > **Expand to New Rows**.
 
 After the expansion, you see the predictions in the AzureML.my-diabetes-model column.
 
