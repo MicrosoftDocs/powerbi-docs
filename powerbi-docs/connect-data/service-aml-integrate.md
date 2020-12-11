@@ -41,7 +41,7 @@ Before starting this tutorial, you need to:
 Open Power BI Desktop and select **Get Data**. 
 In the **Get Data** dialog box, search for **web**. Select the **Web** source > **Connect**.
 
-:::image type="content" source="media/service-aml-integrate/pbi-get-data.png" alt-text="Screenshot showing web data":::
+:::image type="content" source="media/service-aml-integrate/pbi-get-data.png" alt-text="Screenshot showing web data.":::
 
 In the **From Web** dialog box, copy and paste the following URL in the box:
 
@@ -49,7 +49,7 @@ In the **From Web** dialog box, copy and paste the following URL in the box:
 https://www4.stat.ncsu.edu/~boos/var.select/diabetes.tab.txt
 ```
 
-:::image type="content" source="media/service-aml-integrate/pbi-data.png" alt-text="Screenshot showing web url":::
+:::image type="content" source="media/service-aml-integrate/pbi-data.png" alt-text="Screenshot showing web url.":::
 
 Select **OK**.
 
@@ -63,17 +63,17 @@ After signing in to your Azure account using single sign-on, you see a list of a
 
 Power Query populates the columns automatically for you. You remember that in our schema for the service, we had a Python decorator that specified the inputs. Select **OK**.
 
-:::image type="content" source="media/service-aml-integrate/aml-pbi-run.png" alt-text="Screenshot showing Azure Machine Learning Models":::
+:::image type="content" source="media/service-aml-integrate/aml-pbi-run.png" alt-text="Screenshot showing Azure Machine Learning Models.":::
 
 Selecting **OK** calls the Azure Machine Learning service. It triggers a warning on data privacy for both the data and the endpoint.
 
-:::image type="content" source="media/service-aml-integrate/data_privacy_warning.png" alt-text="Screenshot showing privacy warning":::
+:::image type="content" source="media/service-aml-integrate/data_privacy_warning.png" alt-text="Screenshot showing privacy warning.":::
 
 Select **Continue**. In the next screen, select **Ignore Privacy Levels checks for this file** > **Save**.
 
 Once the data is scored, Power Query creates an additional column named **AzureML.my-diabetes-model**.
 
-:::image type="content" source="media/service-aml-integrate/scored-data.png" alt-text="Screenshot showing added scored column":::
+:::image type="content" source="media/service-aml-integrate/scored-data.png" alt-text="Screenshot showing added scored column.":::
 
 The data that the service returns is a **list**. 
 
@@ -84,7 +84,7 @@ To get the predictions, on the **Transform** ribbon select the **Expand column**
 
 After the expansion, you see the predictions in the AzureML.my-diabetes-model column.
 
-:::image type="content" source="media/service-aml-integrate/after-expand.png" alt-text="Screenshot showing expansion":::
+:::image type="content" source="media/service-aml-integrate/after-expand.png" alt-text="Screenshot showing expansion.":::
 
 Follow these next steps to finish cleaning up your data model.
 
@@ -106,19 +106,19 @@ Now you can create some visualizations to show your data.
 
 Resize the line chart to fill the page. Your report now has a single line chart with two lines, one for the predicted and one for the actual values, distributed by age.
 
-:::image type="content" source="media/service-aml-integrate/report-viz.png" alt-text="Screenshot showing report visualization":::
+:::image type="content" source="media/service-aml-integrate/report-viz.png" alt-text="Screenshot showing report visualization.":::
 
 ## Publish the report
 
 You can add more visualizations if you wish. In the interest of brevity, in this tutorial we'll publish the report.
 
 1. Save the report.
-1. Select **File ** > **Publish** > **Publish to Power BI**.
+1. Select **File** > **Publish** > **Publish to Power BI**.
 1. Sign in to the Power BI service.
 1. Select **My Workspace**.
-1. When the report is published successfully, select the **Open <MY_PBIX_FILE.pbix> in Power BI** link. The report opens in your browser to the report.
+1. When the report is published successfully, select the **Open <MY_PBIX_FILE.pbix> in Power BI** link. The report opens the report in Power BI in your browser.
 
-     :::image type="content" source="media/service-aml-integrate/publish-success.png" alt-text="Screenshot showing successful publish":::
+     :::image type="content" source="media/service-aml-integrate/publish-success.png" alt-text="Screenshot showing successful publish.":::
 
 ## Enable datasets to refresh
 
@@ -126,15 +126,15 @@ In a scenario where the data source is refreshed with new data to score, you nee
 
 In My Workspace in the Power BI service, in the black header bar, select **More options (...)** > **Settings** > **Settings**.
 
-:::image type="content" source="media/service-aml-integrate/settings-pbi.png" alt-text="Screenshot showing settings":::
+:::image type="content" source="media/service-aml-integrate/settings-pbi.png" alt-text="Screenshot showing settings.":::
 
 Select **Datasets**, expand **Data source credentials**, then select **Edit Credentials**.
 
-:::image type="content" source="media/service-aml-integrate/data-refresh.png" alt-text="Screenshot showing credential refresh":::
+:::image type="content" source="media/service-aml-integrate/data-refresh.png" alt-text="Screenshot showing credential refresh.":::
 
 Follow the instructions for both **azureMLFunctions** and **Web**. Make sure that you select a privacy level. You can now set a **Scheduled refresh** of the data. Select a **Refresh frequency** and **Time zone**. You can also select an email address where Power BI can send refresh failure notifications.
 
-:::image type="content" source="media/service-aml-integrate/schedule-refresh.png" alt-text="Screenshot showing dataset and scoring refresh":::
+:::image type="content" source="media/service-aml-integrate/schedule-refresh.png" alt-text="Screenshot showing dataset and scoring refresh.":::
 
 Selet **Apply**.
 
@@ -157,7 +157,7 @@ If you don't plan to use the resources that you created, delete them so you don'
    ![Screenshot of the selections to delete a resource group in the Azure portal.](./media/service-aml-integrate/delete-resources.png)
 
 1. Enter the resource group name. Then select **Delete**.
-1. In My Workspace in the Power BI service, delete the report and the related dataset. 
+1. In My Workspace in the Power BI service, delete the report and the related dataset. You don't need to delete Power BI Desktop or the report on your computer. Power BI Desktop is free.
 
 ## Next steps
 
