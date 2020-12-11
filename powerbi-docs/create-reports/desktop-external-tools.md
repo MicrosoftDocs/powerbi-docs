@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 07/29/2020
+ms.date: 12/10/2020
 LocalizationGroup: Create reports
 ---
 
@@ -27,6 +27,9 @@ These featured external tools include the following, with links to their install
 
 
 The following sections describe the operations supported by external tools, a list of featured tools included in Power BI Desktop, and instructions on how to register additional tools.
+
+> [!NOTE]
+> External tools are not available for use with the Power BI Report Server version of Power BI Desktop.
 
 ## Supported write operations
 

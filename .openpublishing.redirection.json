@@ -2866,14 +2866,19 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/connect-data/service-tutorial-invoke-machine-learning-model.md",
+            "redirect_url": "/power-bi/connect-data/service-aml-integrate",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/service-tutorial-connect-to-github.md",
             "redirect_url": "/power-bi/connect-data/service-tutorial-connect-to-github",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-tutorial-invoke-machine-learning-model.md",
-            "redirect_url": "/power-bi/connect-data/service-tutorial-invoke-machine-learning-model",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/connect-data/service-aml-integrate",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-tutorial-use-cognitive-services.md",
