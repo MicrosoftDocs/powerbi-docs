@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/03/2020
+ms.date: 12/10/2020
 LocalizationGroup: Connect to data
 ---
 # About using DirectQuery in Power BI
@@ -75,7 +75,7 @@ When connecting to SQL Server Analysis Services, there's an option to either imp
 The situation described in the previous paragraph applies to connecting to the following sources as well, except that there's no option to import the data:
 
 * Power BI datasets, for example, when connecting to a Power BI dataset that has previously been created and published to the service, to author a new report over it.
-* Common Data Services.
+* Microsoft Dataverse.
 
 The behavior of reports over SQL Server Analysis Services, upon publishing to the Power BI service, is similar to DirectQuery reports in the following ways:
 
