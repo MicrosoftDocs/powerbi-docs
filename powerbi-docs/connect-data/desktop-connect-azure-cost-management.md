@@ -30,7 +30,7 @@ The Azure Cost Management connector uses OAuth 2.0 for authentication with Azure
 To use the **Azure Cost Management connector** in Power BI Desktop, take the following steps:
 
 1.	In the **Home** ribbon, select **Get Data**.
-2.	Select **Azure** from the list of data catagories.
+2.	Select **Azure** from the list of data categories.
 3.	Select **Azure Cost Management**.
 
     ![Get data](media/desktop-connect-azure-cost-management/azure-cost-management-00b.png)
