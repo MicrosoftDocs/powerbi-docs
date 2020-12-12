@@ -27,6 +27,9 @@ Enabling sensitivity labels requires an Azure Information Protection license. Se
 
 * An Azure Information Protection Premium P1 or Premium P2 license is required to apply or view Microsoft Information Protection sensitivity labels in Power BI. Azure Information Protection can be purchased either standalone or through one of the Microsoft licensing suites. See [Azure Information Protection pricing](https://azure.microsoft.com/pricing/details/information-protection/) for detail.
 
+    >[!NOTE]
+    > If your organization uses Azure Information Protection sensitivity labels, they need to be migrated to the Microsoft Information Protection Unified Labeling platform in order for the them to be used in Power BI. [Learn more about migrating sensitivity labels](/azure/information-protection/configure-policy-migrate-labels).
+
 * To be able to apply labels to Power BI content and files, a user must have a Power BI Pro license in addition to one of the Azure Information Protection licenses mentioned above.
 
 * Office apps have their own [licensing requirements for viewing and applying sensitivity labels]( https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels#subscription-and-licensing-requirements-for-sensitivity-labels ).
@@ -37,9 +40,6 @@ Enabling sensitivity labels requires an Azure Information Protection license. Se
 
     >[!NOTE]
     > If you try to open a protected .pbix file with a Desktop version earlier than December 2020, it will fail, and you will be prompted to upgrade your Desktop version.
-
->[!NOTE]
-> If your organization uses Azure Information Protection sensitivity labels, they need to be migrated to the Microsoft Information Protection Unified Labeling platform in order for the them to be used in Power BI. [Learn more about migrating sensitivity labels](/azure/information-protection/configure-policy-migrate-labels).
 
 ## Enable sensitivity labels
 
