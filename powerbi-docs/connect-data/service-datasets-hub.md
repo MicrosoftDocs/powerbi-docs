@@ -36,17 +36,27 @@ The list shows you
 * Endorsement status
 * Owner
 * The workspace the dataset is located in
-* Last refresh time (rounded to hour, day, month, and year). See the dataset info on the detail page for exact time of last refresh).
-* Sensitivity, if set.
+* Last refresh time (rounded to hour, day, month, and year. See the dataset info on the detail page for exact time of last refresh).
+* Sensitivity, if set. Click on the info icon to view label description.
 
 Click on a column header to sort by that column.
 
 The list has three tabs to filter the items shown.
-* **All: Shows all the datasets in your organization that you have at least [build permissions](connect-data/service-datasets-build-permissions.md) to.
-* Recent: Shows datasets whose related reports you’ve recently accessed. When you access a report, there may be a delay of several minutes until the dataset it's build on shows up in the Recent column.
-* My datasets: Shows the datasets you own. 
+* **All**: Shows all the datasets in your organization that you have at least [build permissions](connect-data/service-datasets-build-permissions.md) to.
+* **Recent**: Shows datasets whose related reports you’ve recently accessed. When you access a report, there may be a delay of several minutes until the dataset it's build on shows up in the Recent column.
+* **My datasets**: Shows the datasets you own. 
 
-Use the search box to further filter down the items on the currently viewed tab. 
+Use the search box to further filter down the items on the currently viewed tab.
+
+**To create a new report based on the dataset, or to pull the data into Excel with Analzye in Excel, or to view dataset lineage**, select **More options (...)** either at the bottom right corner of a recommendated dataset tile, or on the dataset entry in the list of datasets. Other actions may be appear on the drop-down menu, depending on the permissions you have on the database.
+
+When you create a new report based on the dataset, the report edit canvas opens. When you save the new report, it will be saved in the workspace that contains the dataset if you have write permissions on the workspace the dataset is located in. If you don't have permissions, or if you are a free user and the dataset resides in a Premium capacity, the new report will be saved in "My Workspace".
+
+**To see info about recommended datasets**, click **Details** at the bottom left of a recommended dataset tile.
+
+To see 
+
+
 
 
 The hub page has two sections
