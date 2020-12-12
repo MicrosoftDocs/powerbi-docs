@@ -1,5 +1,5 @@
 ---
-title: Embed content in your application for your customers
+title: Embed content in your Power BI embedded analytics application for your customers
 description: Learn how to embed, a report, dashboard, or tile into a Power BI embedded analytics sample.
 author: KesemSharabi
 ms.author: kesharab

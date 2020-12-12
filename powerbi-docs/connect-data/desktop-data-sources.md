@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/11/2020
+ms.date: 12/10/2020
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
@@ -111,7 +111,7 @@ The **Power Platform** category provides the following data connections:
 
 * Power BI datasets
 * Power BI dataflows
-* Common Data Service
+* Microsoft Dataverse
 * Power Platform dataflows (Beta)
 
 The following image shows the **Get Data** window for **Power Platform**.

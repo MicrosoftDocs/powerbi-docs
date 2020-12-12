@@ -1,5 +1,5 @@
 ---
-title: Frequently asked questions about Power BI Embedded
+title: Frequently asked questions about Power BI embedded analytics
 description: Browse a list of frequently asked questions and answers about Power BI Embedded.
 author: KesemSharabi
 ms.author: kesharab
