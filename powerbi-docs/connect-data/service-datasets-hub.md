@@ -1,6 +1,6 @@
 ---
-title: Create reports based on datasets from different workspaces - Power BI
-description: Learn how you can share a dataset with users across the organization. Then they can build reports based on your dataset in their own workspaces.
+title: Dataset hub
+description: Learn how you can explore the datasets in your organization and their related reports.
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
@@ -9,103 +9,94 @@ ms.topic: how-to
 ms.date: 12/12/2020
 LocalizationGroup: Share your work
 ---
-# Find, manage, and connect to datasets
+# Find and explore datasets and their related reports
 
-The Dataset hub makes it easy to find and explore the datasets in your organization. It provides information about the datasets as well as entry points for creating reports on top of those datasets or for using those datasets with Analyze in Excel.
+The Datasets hub makes it easy to find and explore the datasets in your organization. It provides information about the datasets as well as entry points for creating reports on top of those datasets or for using those datasets with Analyze in Excel.
 
-The datasets hub can be useful for many purposes:
-* Dataset owners can use the information about dataset use, refresh status, related reports, and lineage to help monitor and manage their datasets.  Manage your own datasets. Use “My datasets” tab to see and manage all the datasets you own, and click on a dataset to see its details including usage metrics. View dataset lineage to understand its source and its downstream artifacts
+The datasets hub can be useful in many scenarios:
+* Dataset owners can see dataset usage metrics, refresh status, related reports, and lineage to help monitor and manage their datasets.
 * Report creators can use the hub to find suitable datasets to build their reports on and use links to easily create reports based on the dataset, either from scratch or from templates.
-* It makes it easy to find reports that are build on a dataset. This helps prevent the creation of redundant reports. It also makes it easy to find a good report to use as a starting point from creating new reports. 
 * Report consumers can use this page to find reports based on trustworthy datasets.
 
-**The datasets you can see via the datasets hub are those that you have [build permissions](connect-data/service-datasets-build-permissions.md) to**.
+By making it easy to find quality datasets and their related reports, the Datasets hub helps prevent the creation of redundant reports. It also makes it easy to find good reports to use as starting points for creating new reports. 
 
-[Image]
+**The datasets you can see via the datasets hub are those that you have at least [build permissions](connect-data/service-datasets-build-permissions.md) to. If you're a free user, you only see datasets in your My Workspace, or datasets for which you have Build permission that are in Premium-capacity workspaces**.
 
-**Recommended datasets**
+## Find the dataset you need
 
-Recommended datasets are endorsed datasets (promoted or certified) that are presented to you based on a calculation that takes into account how recently they've been refreshed and the number of recent visitors to reports based them.
+The dataset discovery experience starts on the Datasets hub page. To get to the Datasets hub page:
+* In the Power BI service: Select Datasets in navigation pane.
+* In the Power BI app in Teams: Select either the Datasets tab or Datasets in the navigation pane. 
 
-**Dataset list**
+![Screenshot of datasets hub page](media/service-datasets-hub/datasets-hub-main-page.png)
 
-The dataset list shows you all the datasets in the organization that you have at least [build permissions](connect-data/service-datasets-build-permissions.md) to.
+The datasets hub presents you with a selection of recommended datasets and a list of all the datasets in the organization that you have permissions to access.
 
-The list shows you 
-* The database name (if a description exists for the database, a small “i” icon will appear at the end of the name. Mouseover the icon to display the description).
-* Endorsement status
-* Owner
-* The workspace the dataset is located in
-* Last refresh time (rounded to hour, day, month, and year. See the dataset info on the detail page for exact time of last refresh).
-* Sensitivity, if set. Click on the info icon to view label description.
+The sections below describe these sections and the actions you can perform.
 
-Click on a column header to sort by that column.
+### Recommended datasets
 
-The list has three tabs to filter the items shown.
-* **All**: Shows all the datasets in your organization that you have at least [build permissions](connect-data/service-datasets-build-permissions.md) to.
-* **Recent**: Shows datasets whose related reports you’ve recently accessed. When you access a report, there may be a delay of several minutes until the dataset it's build on shows up in the Recent column.
+Recommended datasets are endorsed datasets (promoted or certified) that are presented to you based on a calculation that takes into account how recently they've been refreshed and the number of recent visitors to reports based on them.
+
+### Dataset list
+
+The dataset list shows you datasets in the organization that you have at least [build permissions](connect-data/service-datasets-build-permissions.md) to. The list has three tabs to filter the list of datasets.
+* **All datasets**: Shows all the datasets in your organization that you have at least [build permissions](connect-data/service-datasets-build-permissions.md) to.
+* **Recent**: Shows datasets whose related reports you’ve recently accessed. When you access a report, there may be a delay of several minutes until the related dataset shows up in the Recent column.
 * **My datasets**: Shows the datasets you own. 
 
-Use the search box to further filter down the items on the currently viewed tab.
+Use the search box to further filter down the items on the current tab.
 
-**To create a new report based on the dataset, or to pull the data into Excel with Analzye in Excel, or to view dataset lineage**, select **More options (...)** either at the bottom right corner of a recommendated dataset tile, or on the dataset entry in the list of datasets. Other actions may be appear on the drop-down menu, depending on the permissions you have on the database.
+The columns of the list are described below. Click on a column header to sort by that column. 
+* **Name**: The database name. Click the dataset name to explore reports that are built using this dataset.
+* **Endorsement**: Endorsement status.
+* **Owner**: Dataset owner.
+* **Workspace**: The workspace the dataset is located in.
+* **Refreshed**: Last refresh time (rounded to hour, day, month, and year. See the dataset info on the dataset detail page for exact time of last refresh).
+* **Sensitivity**: Sensitivity, if set. Click on the info icon to view sensitivity label description.
 
-When you create a new report based on the dataset, the report edit canvas opens. When you save the new report, it will be saved in the workspace that contains the dataset if you have write permissions on the workspace the dataset is located in. If you don't have permissions, or if you are a free user and the dataset resides in a Premium capacity, the new report will be saved in "My Workspace".
+### Create new reports or pull data into Excel via Analyze in Excel
 
-**To see info about recommended datasets**, click **Details** at the bottom left of a recommended dataset tile.
+To create a new report based on dataset, or to pull the data into Excel with Analzye in Excel, select **More options (...)** either at the bottom right corner of a recommended dataset tile, or on a dataset's line in the list of datasets. Other actions may be appear on the drop-down menu, depending on the permissions you have on the database.
 
-To see 
+When you create a new report based on the dataset, the report edit canvas opens. When you save the new report, it will be saved in the workspace that contains the dataset if you have write permissions on that workspace. If you don't have write permissions on that workspace, or if you are a free user and the dataset resides in a Premium-capacity workspace, the new report will be saved in "My workspace".
 
+## Explore related reports
 
+To see more information about the dataset, to explore related reports, or to create a new report based on the dataset from scratch or from a template, pick a dataset from the recommended datasets or from the datasets list. A page will open that shows you information about the dataset, lists the reports that are built on top of the dataset, and provides entry points for creating new reports based on the dataset or pulling the data into Excel via Analyze in Excel.
 
+![Screenshot of datasets hub explore related reports page](media/service-datasets-hub/datasets-hub-explore-related-reports.png)
 
-The hub page has two sections
-####################
+The page header displays the dataset name, endorsement, if any, and dataset owner. To send an email to the dataset owner or the dataset certifier (if any), click the header and then click the name of the owner.
 
+### Dataset details
 
+The dataset details section shows the name of the workspace where the dataset is located, the exact time of the last refresh, sensitivity (if set), the dataset description (if any), and certifier name (if certified). You can also open the dataset lineage from here.
 
-Learn how you can create reports in your own workspaces based on datasets in other workspaces. To build a report on top of an existing dataset, you can start from Power BI Desktop or from the Power BI service, in your My Workspace or in a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).
+### Related reports
 
-- In the Power BI service: **Get data** > **Published datasets**.
-- In Power BI Desktop: **Get data** > **Power BI datasets**.
+The Explore related reports section shows you all the reports that are built on the selected dataset. You can create a copy of a report by selecting the report line in the list and then clicking the Save a copy of this report icon.
 
-    ![Connect to an existing dataset](media/service-datasets-across-workspaces/power-bi-connect-dataset-pk.png)
-   
-In both cases, the dataset discovery experience starts in this dialog box, **Select a dataset to create a report**. You see all the datasets you have access to, regardless of where they are:
+The columns in the list of related reports are:
+* **Name**: Report name. If the name ends with (template), it means that this report has been specially constructed to be used as a template.
+* **Endorsement**: Endorsement status.
+* **Workspace**: The name of the workspace where the report is located.
+* **Unique viewers**: Shows the total number of unique users who viewed the report at least once in the last 30 days, excluding today's views. Unique viewers helps you get an idea about whether people are actually looking at the data from you dataset.
 
-![Select a dataset](media/service-datasets-across-workspaces/power-bi-select-dataset.png)
+### Create a report built on the dataset
 
-You notice the first one is labeled **Promoted**. We'll get to that in [Find an endorsed dataset](#find-an-endorsed-dataset), later in this article.
+In the Create a report section, click the **Create** button to open the report editing canvas. You can chose to create the report from scratch or from a template, if one exists.
 
-The datasets you see in this list meet at least one of the following conditions:
+The report will be saved in My workspace.
 
-- The dataset is in one of the new workspace experience workspaces, and you're a member of that workspace. See [Considerations and limitations](service-datasets-across-workspaces.md#considerations-and-limitations).
-- You have Build permission for the dataset, which is in a new workspace experience workspace.
-- The dataset is in your My Workspace.
+>[!NOTE]
+> Only one template will be shown in the Create report drop-down, even if more than one report template exists for this dataset. 
 
-> [!NOTE]
-> If you're a free user, you only see datasets in your My Workspace, or datasets for which you have Build permission that are in Premium-capacity workspaces.
+### Pull the dataset into Excel via Analyze in Excel
 
-When you click **Create**, you create a live connection to the dataset, and the report creation experience opens with the full dataset available. You haven't made a copy of the dataset. The dataset still resides in its original location. You can use all tables and measures in the dataset to build your own reports. Row-level security (RLS) restrictions on the dataset are in effect, so you only see data you have permissions to see based on your RLS role.
-
-You can save the report to the current workspace in the Power BI service, or publish the report to a workspace from Power BI Desktop. Power BI automatically creates an entry in the list of datasets if the report is based on a dataset outside of the workspace. The icon for this dataset is different from the icon for datasets in the workspace: ![Shared dataset icon](media/service-datasets-discover-across-workspaces/power-bi-shared-dataset-icon.png)
-
-That way, members of the workspace can tell which reports and dashboards use datasets that are outside the workspace. The entry shows information about the dataset, and a few select actions.
-
-![Dataset actions](media/service-datasets-across-workspaces/power-bi-dataset-actions.png)
-
-## Find an endorsed dataset
-
-There are two different kinds of endorsed datasets. Dataset owners can *promote* a dataset that they recommend to you. Also, the Power BI admin can designate experts in your organization who can *certify* datasets for everyone to use. Promoted and certified datasets both display *badges* that you see both when looking for a dataset, and in the list of datasets in a workspace. The name of the person who certified a dataset is displayed in a tooltip during the dataset discovery experience; hover over the **Certified** label and you see it.
-
-- In the Power BI service: **Get data** > **Published datasets**.
-- In Power BI Desktop: **Get data** > **Power BI datasets**.
-
-    In the **Select a dataset** dialog box, endorsed datasets top the list by default. 
-
-    ![Promoted dataset](media/service-datasets-discover-across-workspaces/power-bi-dataset-promoted.png)
-
+In the Analyze in Excel section, select **Analyze** to pull the dataset into Excel via Analysis in Excel.
+  
 ## Next steps
-
-- [Use datasets across workspaces](service-datasets-across-workspaces.md)
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+* [Use datasets across workspaces](service-datasets-across-workspaces.md)
+* [Create reports based on datasets from different workspaces](service-datasets-discover-across-workspaces.md)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
