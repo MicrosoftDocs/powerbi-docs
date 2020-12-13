@@ -57,7 +57,7 @@ The columns of the list are described below. Click on a column header to sort by
 
 ### Create new reports or pull data into Excel via Analyze in Excel
 
-To create a new report based on dataset, or to pull the data into Excel with Analzye in Excel, select **More options (...)** either at the bottom right corner of a recommended dataset tile, or on a dataset's line in the list of datasets. Other actions may be appear on the drop-down menu, depending on the permissions you have on the database.
+To create a new report based on dataset, or to pull the data into Excel with Analyze in Excel, select **More options (...)** either at the bottom right corner of a recommended dataset tile, or on a dataset's line in the list of datasets. Other actions may be appear on the drop-down menu, depending on the permissions you have on the database.
 
 When you create a new report based on the dataset, the report edit canvas opens. When you save the new report, it will be saved in the workspace that contains the dataset if you have write permissions on that workspace. If you don't have write permissions on that workspace, or if you are a free user and the dataset resides in a Premium-capacity workspace, the new report will be saved in "My workspace".
 
