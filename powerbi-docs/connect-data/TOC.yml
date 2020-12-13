@@ -58,6 +58,8 @@
     items: 
     - name: "Connect to data sources"
       href: desktop-connect-to-data.md
+    - name: "Find and explore datasets in the Power BI service"
+      href: service-datasets-hub.md
     - name: Connect to data
       items: 
       - name: "Connect to data sources"

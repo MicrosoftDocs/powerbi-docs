@@ -20,7 +20,7 @@ The datasets hub can be useful in many scenarios:
 
 By making it easy to find quality datasets and their related reports, the Datasets hub helps prevent the creation of redundant reports. It also makes it easy to find good reports to use as starting points for creating new reports. 
 
-**The datasets you can see via the datasets hub are those that you have at least [build permissions](connect-data/service-datasets-build-permissions.md) to. If you're a free user, you only see datasets in your My Workspace, or datasets for which you have Build permission that are in Premium-capacity workspaces**.
+**The datasets you can see via the datasets hub are those that you have at least [build permissions](service-datasets-build-permissions.md) to. If you're a free user, you only see datasets in your My Workspace, or datasets for which you have Build permission that are in Premium-capacity workspaces**.
 
 ## Find the dataset you need
 
@@ -40,8 +40,8 @@ Recommended datasets are endorsed datasets (promoted or certified) that are pres
 
 ### Dataset list
 
-The dataset list shows you datasets in the organization that you have at least [build permissions](connect-data/service-datasets-build-permissions.md) to. The list has three tabs to filter the list of datasets.
-* **All datasets**: Shows all the datasets in your organization that you have at least [build permissions](connect-data/service-datasets-build-permissions.md) to.
+The dataset list shows you datasets in the organization that you have at least [build permissions](service-datasets-build-permissions.md) to. The list has three tabs to filter the list of datasets.
+* **All datasets**: Shows all the datasets in your organization that you have at least [build permissions](service-datasets-build-permissions.md) to.
 * **Recent**: Shows datasets whose related reports you’ve recently accessed. When you access a report, there may be a delay of several minutes until the related dataset shows up in the Recent column.
 * **My datasets**: Shows the datasets you own. 
 
