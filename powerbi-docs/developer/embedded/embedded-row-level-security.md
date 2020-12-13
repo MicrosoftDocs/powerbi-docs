@@ -1,5 +1,5 @@
 ---
-title: Using row-level security with Power BI embedded content
+title: Using row-level security with embedded content in Power BI embedded analytics
 description: Learn about the steps you need to take to embed Power BI content within your application
 author: KesemSharabi
 ms.author: kesharab

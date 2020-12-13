@@ -1,5 +1,5 @@
 ---
-title: Embed Power BI content with service principal and an application secret
+title: Embed Power BI content in an embedded analytics application with service principal and an application secret
 description: Learn how to authenticate for embedded analytics using an Azure Active Directory application service principal and an application secret.
 author: KesemSharabi
 ms.author: kesharab

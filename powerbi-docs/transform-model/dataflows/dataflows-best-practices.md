@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 12/09/2020
+ms.date: 12/10/2020
 LocalizationGroup: Data from files
 ---
 # Dataflows best practices
@@ -39,7 +39,7 @@ The following table provides a collection of links to articles that describe bes
 |Implementing error handling     |Developing robust dataflows resilient to refresh errors, with suggestions         |[Patterns for common errors](https://docs.microsoft.com/power-query/dealing-with-errors)  </br> [Complex error handling](https://docs.microsoft.com/power-query/error-handling)      |
 |Use Schema view      |Improve the authoring experience when working with a wide table and performing schema level operations         |[Schema view](https://docs.microsoft.com/power-query/schema-view)         |
 |Linked entities      |Reusing and referencing transformations         |[Linked Entities](https://docs.microsoft.com/power-query/dataflows/linked-entities)         |
-|Incremental refresh      |Load the latest or changed data versus a full reload         |[Linked Entities](https://docs.microsoft.com/power-query/dataflows/incremental-refresh)         |
+|Incremental refresh      |Load the latest or changed data versus a full reload         |[Incremental refresh](https://docs.microsoft.com/power-query/dataflows/incremental-refresh)         |
 |||
 
 
