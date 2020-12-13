@@ -84,23 +84,18 @@ To create an *embed for your organization* sample app, follow these steps:
 
 ## Step 4 - Get the embedding parameter values
 
-To embed your content, you'll need to obtain certain parameter values. Before you embed your content, make sure you have all the values listed below.
+To embed your content, you'll need to obtain the following parameter values:
 
 * [Client ID](#client-id)
-* [Workspace ID](#workspace-id)
-* [Report ID](#report-id)
+* [Client secret](#workspace-id)
 
 ### Client ID
 
 [!INCLUDE[Get the client ID](../../includes/embed-tutorial-client-id.md)]
 
-### Workspace ID
+### Client secret
 
-[!INCLUDE[Get the workspace ID](../../includes/embed-tutorial-workspace-id.md)]
-
-### Report ID
-
-[!INCLUDE[Get the report ID](../../includes/embed-tutorial-report-id.md)]
+[!INCLUDE[Get the client secret](../../includes/embed-tutorial-client-secret.md)]
 
 ## Step 5 - Embed your content
 
@@ -117,23 +112,76 @@ Follow these steps to modify the *embed for your organization* sample applicatio
     >[!NOTE]
     >The *embed for your organization* sample applications only support the languages listed above. The *Java*, *Node JS* and *Python* sample applications, only support the *[embed for your customers](embed-sample-for-customers.md)* solution.
 
-5. Open the **Embed for your organization** folder.
-
 # [.NET Core](#tab/net-core)
 
-6. Open the *embed for your organization sample app* using one of these methods:
+### Configure your Azure AD app
+
+[!INCLUDE[Configure the Azure AD authentication options](../../includes/embed-tutorial-org-azure-ad-app.md)]
+
+    1. In **Redirect URIs** add `https://localhost:5000/signin-oidc` and select **Configure**.
+    
+    2. In *Implicit grant and hybrid flows*, enable the **Access tokens (use for implicit flows)** option.
+    
+    3. Select **Configure**.
+
+    :::image type="content" source="media/embed-sample-for-your-organization/azure-ad-net-configurations.png" alt-text="Screenshot showing the Azure AD app authentication configurations including the web redirect U R I and the selected access token option for the .NET core app sample.":::
+
+[!INCLUDE[Configure the Azure AD permissions](../../includes/embed-tutorial-org-azure-ad-permissions.md)]
+
+### Configure the sample embedding app
+
+1. Open the **Embed for your organization** folder.
+
+2. Open the *embed for your organization sample app* using one of these methods:
 
     * If you're using [Visual Studio](https://visualstudio.microsoft.com/), open the **UserOwnsData.sln** file.
 
     * If you're using [Visual Studio Code](https://code.visualstudio.com/), open the **UserOwnsData** folder.
 
-7. Open **appsettings.json**.
+3. Open **appsettings.json** and fill in the following parameter values:
 
-8. Fill in the following parameter values:
+    * `ClientId` - Use the [client ID](#client-id) GUID
 
+    * `ClientSecret` - Use the [client secret](#client-secret)
+
+4. Run the project by selecting the appropriate option:
+
+    * If you're using **Visual Studio**, select **IIS Express** (play).
+
+    * If you're using **Visual Studio Code**, select **Run > Start Debugging**.
+
+[!INCLUDE[The embedded application sample app interface](../../includes/embed-tutorial-org-sample-app.md)]
 
 # [.NET Framework](#tab/net-framework)
 
+### Configure your Azure AD app
+
+[!INCLUDE[Configure the Azure AD authentication options](../../includes/embed-tutorial-org-azure-ad-app.md)]
+
+    1. In **Redirect URIs** add `https://localhost:44300/` and select **Configure**.
+    
+    2. In *Implicit grant and hybrid flows*, enable the **Access tokens (use for implicit flows)** option.
+    1. Select **Configure**.
+
+    :::image type="content" source="media/embed-sample-for-your-organization/azure-ad-framework-configurations.png" alt-text="Screenshot showing the Azure AD app authentication configurations including the web redirect U R I and the selected access token option for the .NET framework app sample.":::
+
+[!INCLUDE[Configure the Azure AD permissions](../../includes/embed-tutorial-org-azure-ad-permissions.md)]
+
+### Configure the sample embedding app
+
+1. Open the **Embed for your organization** folder.
+
+2. Using [Visual Studio](https://visualstudio.microsoft.com/), open the **UserOwnsData.sln** file.
+
+3. Open **Web.config** and fill in the following parameter values:
+
+    * `clientId` - Use the [client ID](#client-id) GUID
+
+    * `clientSecret` - Use the [client secret](#client-secret)
+
+4. Run the project by selecting **IIS Express** (play).
+
+[!INCLUDE[The embedded application sample app interface](../../includes/embed-tutorial-org-sample-app.md)]
 
 # [React](#tab/react)
 

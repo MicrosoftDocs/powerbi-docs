@@ -170,35 +170,35 @@ Before you embed your content, make sure you have all the values listed below. S
 
 To get the workspace ID GUID, follow these steps:
 
-[!INCLUDE[Get the workspace ID](../../includes/embed-tutorial-workspace-id.md)]
+1. Sign in to Power BI service.
+
+2. Open the report you want to embed.
+
+3. Copy the GUID from the URL. The GUID is the number between **/groups/** and **/reports/**.
+
+    :::image type="content" source="media/embed-sample-for-customers/workspace-id.png" alt-text="A screenshot showing workspace ID GUID in the Power B I service U R L":::
 
 ### Report ID
 
 >[!TIP]
 >**Applies to:** ![Applies to.](../../media/yes.png)Service principal ![Applies to.](../../media/yes.png)Master user
 
-[!INCLUDE[Get the report ID](../../includes/embed-tutorial-report-id.md)]
+To get the report ID GUID, follow these steps:
+
+1. Sign in to Power BI service.
+
+2. Open the report you want to embed.
+
+3. Copy the GUID from the URL. The GUID is the number between **/reports/** and **/ReportSection**.
+
+    :::image type="content" source="media/embed-sample-for-customers/report-id.png" alt-text="A screenshot showing report ID GUID in the Power B I service U R L":::
 
 ### Client secret
 
 >[!TIP]
 >**Applies to:** ![Applies to.](../../media/yes.png)Service principal ![Does not apply to.](../../media/no.png)Master user
 
-To get the client secret, follow these steps:
-
-1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
-
-2. Search for **App registrations** and select the **App registrations** link.
-
-3. Select the Azure AD app your using for embedding your Power BI content.
-
-4. Under **Manage**, select **Certificates & secrets**.
-
-5. Under **Client secrets**, select **New client secret**.
-
-6. In the **Add a client secret** pop-up window, provide a description for your application secret, select when the application secret expires, and select **Add**.
-
-7. From the **Client secrets** section, copy the string in the **Value** column of the newly created application secret. The client secret value is your *client ID*.
+[!INCLUDE[Get the client secret](../../includes/embed-tutorial-client-secret.md)]
 
 ### Tenant ID
 
@@ -261,7 +261,7 @@ To enable your Azure AD app access artifacts such as reports, dashboards and dat
     >[!NOTE]
     >If you're using a *service principal*, its name is the name you gave your Azure AD app.
 
-5. Select **Add**.
+4. Select **Add**.
 
 ## Step 8 - Embed your content
 
