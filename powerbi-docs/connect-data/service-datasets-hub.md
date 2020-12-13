@@ -1,5 +1,5 @@
 ---
-title: Dataset hub
+title: Find and explore datasets and their related reports
 description: Learn how you can explore the datasets in your organization and their related reports.
 author: paulinbar
 ms.author: painbar
@@ -11,20 +11,20 @@ LocalizationGroup: Share your work
 ---
 # Find and explore datasets and their related reports
 
-The Datasets hub makes it easy to find and explore the datasets in your organization. It provides information about the datasets as well as entry points for creating reports on top of those datasets or for using those datasets with Analyze in Excel.
+The datasets hub makes it easy to find and explore the datasets in your organization. It provides information about the datasets as well as entry points for creating reports on top of those datasets or for using those datasets with Analyze in Excel.
 
 The datasets hub can be useful in many scenarios:
 * Dataset owners can see dataset usage metrics, refresh status, related reports, and lineage to help monitor and manage their datasets.
 * Report creators can use the hub to find suitable datasets to build their reports on and use links to easily create reports based on the dataset, either from scratch or from templates.
 * Report consumers can use this page to find reports based on trustworthy datasets.
 
-By making it easy to find quality datasets and their related reports, the Datasets hub helps prevent the creation of redundant reports. It also makes it easy to find good reports to use as starting points for creating new reports. 
+By making it easy to find quality datasets and their related reports, the datasets hub helps prevent the creation of redundant reports. It also makes it easy to find good reports to use as starting points for creating new reports. 
 
 **The datasets you can see via the datasets hub are those that you have at least [build permissions](service-datasets-build-permissions.md) to. If you're a free user, you only see datasets in your My Workspace, or datasets for which you have Build permission that are in Premium-capacity workspaces**.
 
 ## Find the dataset you need
 
-The dataset discovery experience starts on the Datasets hub page. To get to the Datasets hub page:
+The dataset discovery experience starts on the datasets hub page. To get to the datasets hub page:
 * In the Power BI service: Select Datasets in navigation pane.
 * In the Power BI app in Teams: Select either the Datasets tab or Datasets in the navigation pane. 
 
@@ -48,7 +48,7 @@ The dataset list shows you datasets in the organization that you have at least [
 Use the search box to further filter down the items on the current tab.
 
 The columns of the list are described below. Click on a column header to sort by that column. 
-* **Name**: The database name. Click the dataset name to explore reports that are built using this dataset.
+* **Name**: The dataset name. Click the dataset name to explore reports that are built using this dataset.
 * **Endorsement**: Endorsement status.
 * **Owner**: Dataset owner.
 * **Workspace**: The workspace the dataset is located in.
@@ -57,7 +57,7 @@ The columns of the list are described below. Click on a column header to sort by
 
 ### Create new reports or pull data into Excel via Analyze in Excel
 
-To create a new report based on dataset, or to pull the data into Excel with Analyze in Excel, select **More options (...)** either at the bottom right corner of a recommended dataset tile, or on a dataset's line in the list of datasets. Other actions may be appear on the drop-down menu, depending on the permissions you have on the database.
+To create a new report based on dataset, or to pull the data into Excel with Analyze in Excel, select **More options (...)** either at the bottom right corner of a recommended dataset tile, or on a dataset's line in the list of datasets. Other actions may be appear on the drop-down menu, depending on the permissions you have on the dataset.
 
 When you create a new report based on the dataset, the report edit canvas opens. When you save the new report, it will be saved in the workspace that contains the dataset if you have write permissions on that workspace. If you don't have write permissions on that workspace, or if you are a free user and the dataset resides in a Premium-capacity workspace, the new report will be saved in "My workspace".
 
