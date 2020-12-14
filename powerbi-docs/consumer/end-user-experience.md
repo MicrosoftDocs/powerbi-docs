@@ -2,21 +2,19 @@
 title: Getting around in Power BI service
 description: Overview of the Power BI navigation experience
 author: mihart
-ms.reviewer: mihart
-featuredvideoid: G26dr2PsEpk
-ms.custom: seodec18
-
-ms.service: powerbi
-ms.subservice: powerbi-consumer
-ms.topic: quickstart
-ms.date: 10/12/2020
 ms.author: mihart
+ms.reviewer: mihart
+featuredvideoid: removed
+ms.custom: seodec18
+ms.service: powerbi
+ms.subservice: pbi-explore
+ms.topic: quickstart
+ms.date: 12/03/2020
 #customer intent: As a PBI consumer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently. 
 LocalizationGroup: Get started
 ---
 # Quickstart - Getting around in Power BI service
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Now that you know the [basics of Power BI](end-user-basic-concepts.md), let's take a look around the **Power BI service**. As mentioned in the previous article, colleagues on your team might spend all of their time in **Power BI Desktop**, combining data and creating reports, dashboards, and apps for others. They're *designers*. You, on the other hand, might spend all of your time in the Power BI service, viewing and interacting with content created by others (**consuming** experience). You're a *business user*. This quickstart is for *business users*. 
 
@@ -84,7 +82,7 @@ A workspace is also one of the paths into your data. From a workspace you can op
 
 1. Select the name of the dashboard to open it. Dashboards are something that differentiates the Power BI service from Power BI Desktop. [Learn about dashboards](end-user-dashboards.md)
 
-    ![Dashboards open](./media/end-user-experience/power-bi-dashboard-open.png)
+    ![Dashboards open](./media/end-user-experience/power-bi-dash-open.png)
 
 2. The actions you can take on a dashboard are displayed in the top menu bar.    
 
@@ -109,7 +107,7 @@ The nav pane will become more useful as colleagues share content with you. In th
 
     Home brings together the searching and sorting tools, the nav pane, and a canvas with *cards* that you can select to open your dashboards, reports, and apps. At first, you might not have many cards on your Home canvas, but that will change as you start to use Power BI with your colleagues. Your Home canvas also updates with recommended content and learning resources.
 
-   ![Screenshot of a full Home.](./media/end-user-experience/power-bi-full-home.png)
+   ![Screenshot of a full Home.](./media/end-user-experience/power-bi-full.png)
 
     To learn more, see [Power BI Home](end-user-home.md)
 

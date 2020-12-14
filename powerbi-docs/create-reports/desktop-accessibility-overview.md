@@ -2,14 +2,12 @@
 title: Overview of accessibility in Power BI
 description: Features and suggestions for creating accessible Power BI Desktop reports including Web Content Accessibility Guidelines (WCAG)
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 02/21/2020
-ms.author: davidi
-
 LocalizationGroup: Create reports
 ---
 

@@ -1,15 +1,13 @@
 ---
 title: Set contact information for reports and dashboards
 description: Learn how to set contact information for reports and dashboards.
-author: LukaszPawlowski-MS
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/08/2019
-ms.author: lukaszp
-
 LocalizationGroup: Common tasks
 ---
 # Set contact information for reports and dashboards in the Power BI service

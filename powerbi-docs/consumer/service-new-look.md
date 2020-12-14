@@ -1,17 +1,15 @@
 ---
 title: "The 'new look' of the Power BI service"
 description: The Power BI service (app.powerbi.com) has a new look. This article describes how to navigate reports using the new look. 
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 10/22/2020
-ms.author: maggies
+ms.date: 12/09/2020
 # Customer intent: As a Power BI customer or potential customer, I'd like to know what the differences are between the previous look of the Power BI service and the new look
 LocalizationGroup: Get started
-
 ---
 # The 'new look' of the Power BI service
 
@@ -62,7 +60,7 @@ We’ve kept the authoring experience similar to the experience in Desktop. The 
 
 Dashboards also have a simplified action bar. It's just like reports and apps, for a consistent experience, but it retains the functional differences. Here's a walkthrough of actions in a dashboard.
  
-![Screenshot of Dashboard action bar in new look.](media/service-new-look/power-bi-dashboard-action-bar-new-look.png)
+![Screenshot of Dashboard action bar in new look.](media/service-new-look/power-bi-dashboard-action-bar-new.png)
 
 ## Next steps
 

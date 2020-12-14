@@ -2,14 +2,12 @@
 title: Configure report interaction settings
 description: Learn how to override default interaction settings for reports.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/08/2020
-ms.author: painbar
-
 ---
 # Configure report interaction settings
 

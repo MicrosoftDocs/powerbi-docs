@@ -2,14 +2,12 @@
 title: Power BI high availability, failover, and disaster recovery FAQ
 description: Understand how the Power BI service delivers high availability and provides business continuity and disaster recovery to its users.
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/18/2020
-ms.author: kfollis
-
 LocalizationGroup: Administration
 ---
 

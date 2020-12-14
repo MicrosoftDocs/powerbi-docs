@@ -2,13 +2,12 @@
 title: Power BI webinars
 description: Power BI webinars
 author: kfollis
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 09/22/2020
 ms.author: kfollis
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: pbi-fundamentals
+ms.topic: conceptual
+ms.date: 12/01/2020
 ---
 # Power BI webinars
 [//]: # "Tatevik Tatero (tatevik.teroyan@simple-concepts.com) is a vendor who works with Chauncy Freels and helps to maintain this list of webinars"
@@ -17,19 +16,31 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Upcoming webinars
 
-**Get up and Running Quickly with Power BI**  
-by Miguel Martinez, Microsoft  
-[Register to watch on November 5, 2020 10:00 AM–11:00 AM PDT](https://info.microsoft.com/ww-landing-get-up-and-running-quickly-with-power-bi.html?lcid=en-us)
-
 [Upcoming webinars from the Power BI community](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
 ## Featured webinars
 
-Get started with these popular on-demand webinars
+Get started with these popular on-demand webinars:
+
+**Get up and Running Quickly with Power BI**  
+by Miguel Martinez, Microsoft  
+[Register to watch on November 5, 2020 10:00 AM–11:00 AM PDT](https://info.microsoft.com/ww-landing-get-up-and-running-quickly-with-power-bi.html?lcid=en-us)
+
+**Drive a Remote Data Culture with Power BI and Microsoft Teams**  
+by Lukasz Pawlowski  
+[Watch now](https://info.microsoft.com/ww-Landing-RemoteDataCulturePowerBIandMicrosoftTeams.html?LCID=EN-US)
+
+**Better Together: 5 Benefits Excel Users Will Get From Using Power BI**  
+by Miguel Martinez and Carlos Otero  
+[Watch now](https://info.microsoft.com/ww-Landing-FiveBenefitsExcelUsersWillGetFromUsingPowerBI-Webinar.html?LCID=EN-US)
 
 **Monitor Your Data in Real-time with Microsoft Power BI**  
 by Miguel Martinez and Peter Myers  
 [Watch now](https://info.microsoft.com/ww-landing-Monitor-Your-Data-in-Real-time-with-Microsoft-Power-BI.html?lcid=en-us)
+
+**Accelerate Power BI on Azure Data Lake Storage with Dremio**  
+by Chris Webb and Tomer Shiran
+[Watch now]( https://info.microsoft.com/ww-landing-Accelerate-Power-BI-on-Azure-Data-Lake-Storage-with-Dremio.html?lcid=en-us)
 
 **Build Scalable BI Solutions Using Power BI and Snowflake**  
 by Chris Webb, Craig Collier, and Chris Holliday  

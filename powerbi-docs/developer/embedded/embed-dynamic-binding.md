@@ -1,5 +1,5 @@
 ---
-title: Connect a report to a dataset using dynamic binding 
+title: Connect a report to a dataset using dynamic binding in Power BI embedded analytics 
 description: Learn how to embed a report using dynamic binding.
 author: KesemSharabi
 ms.author: kesharab
@@ -28,7 +28,7 @@ Dynamic binding is supported for both *Embedding for your organization* and *Emb
 |Scenario  |Data ownership  |Token  |Requirements  |
 |---------|---------|---------|---------|
 |*Embedding for your organization*    |User owns data         |Access token for Power BI users         |The user who's Azure AD token is used, must have appropriate permissions for all artifacts.         |
-|*Embedding for your customers*     |App owns data         |Access token for non-Power BI users         |Must include permissions for both the report and the dynamically bound dataset. Use the [API for generating an embed token for multiple items](embed-sample-for-customers.md#multiEmbedToken), to generate an embed token that supports multiple artifacts.         |
+|*Embedding for your customers*     |App owns data         |Access token for non-Power BI users         |Must include permissions for both the report and the dynamically bound dataset. Use the [API for generating an embed token for multiple items](/rest/api/power-bi/embedtoken/generatetoken), to generate an embed token that supports multiple artifacts.         |
 
 ## Adjusting the config object
 Add `datasetBinding` to the config object. Use the example below as a reference.

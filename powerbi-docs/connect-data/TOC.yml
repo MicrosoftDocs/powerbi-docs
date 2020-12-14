@@ -9,6 +9,8 @@
       href: service-get-data.md
     - name: "What is an on-premises data gateway?"
       href: service-gateway-onprem.md
+    - name: "Datasets discovery in the Power BI service"
+      href: service-datasets-hub.md
   - name: Quickstarts
     expanded: true
     items: 
@@ -30,10 +32,10 @@
       href: service-tutorial-connect-to-github.md
     - name: "Use Cognitive Services"
       href: service-tutorial-use-cognitive-services.md
-    - name: "Machine Learning integration"
-      href: service-tutorial-invoke-machine-learning-model.md
-    - name: "Build a Machine Learning model"
+    - name: "Build a machine learning model"
       href: service-tutorial-build-machine-learning-model.md
+    - name: "Consume a machine learning model in a report"
+      href: service-aml-integrate.md
     - name: "Refresh data from SQL Server"
       href: service-gateway-sql-tutorial.md                  
   - name: Concepts

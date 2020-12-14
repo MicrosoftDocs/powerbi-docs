@@ -2,14 +2,12 @@
 title: Using the Field list in Power BI Desktop (preview)
 description: Use the Field list to model data and create reports in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 11/11/2020
-ms.author: davidi
-
 LocalizationGroup: Transform and shape data
 ---
 
@@ -52,6 +50,8 @@ The following tables show the field list updates.
 |![original context menu for table](media/desktop-field-list/field-list-03a.png)     |![new context menu for table](media/desktop-field-list/field-list-03b.png)    |
 |**Tooltips**       ||
 |![original tooltip](media/desktop-field-list/field-list-04a.png)     |![new tooltip](media/desktop-field-list/field-list-04b.png)    |
+
+## Field list icons
 
 There are new Field list icons as well. The following table shows the original icons and their new equivalent, and provides a brief description of each. 
 

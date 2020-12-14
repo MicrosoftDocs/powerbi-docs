@@ -2,14 +2,12 @@
 title: Data lineage
 description: In modern business intelligence (BI) projects, understanding the flow of data from the data source to its destination is a key challenge for many customers.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: 
-
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 06/15/2020
-ms.author: painbar
-
 LocalizationGroup: 
 ---
 # Data lineage
@@ -21,7 +19,7 @@ Power BI has several artifact types, such as dashboards, reports, datasets, and 
 
 In lineage view, you see the lineage relationships between all the artifacts in a workspace, and all its external dependencies. It shows connections between all workspace artifacts, including connections to dataflows, both upstream and downstream.    
 
-> [!VIDEO https://youtu.be/rUj06dqB98g]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rUj06dqB98g" frameborder="0" allowfullscreen></iframe>
 
 ## Explore lineage view
 

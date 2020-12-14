@@ -1,14 +1,13 @@
 ---
 title: Migrate SQL Server Reporting Services reports to Power BI
 description: Guidance to help you migrate your SQL Server Reporting Services (SSRS) reports to Power BI.
-author: peter-myers
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 01/03/2020
-ms.author: v-pemyer
 ---
 
 # Migrate SQL Server Reporting Services reports to Power BI

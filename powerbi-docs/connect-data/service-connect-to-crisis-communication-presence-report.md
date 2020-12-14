@@ -2,13 +2,11 @@
 title: Connect to the Crisis Communication Presence Report
 description: How to get and install the COVID-19 Crisis Communication Presence Report template app, and how to connect to data
 author: paulinbar
-
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 04/06/2020
-ms.author: painbar
-
 LocalizationGroup: Connect to services
 ---
 # Connect to the Crisis Communication Presence Report
@@ -53,9 +51,6 @@ When installing the Crisis Communication sample, take note of the [SharePoint li
 
 1. Select the icon on your Apps page to open the app.
 
-1. On the splash screen, select **Explore**.
-
-   ![Template app splash screen](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-splash-screen.png)
 
    The app opens, showing sample data.
 
@@ -65,7 +60,7 @@ When installing the Crisis Communication sample, take note of the [SharePoint li
 
 1. In the dialog box:
    1. In the SharePoint_Folder field, enter your ["CI_Employee Status" SharePoint list path](/powerapps/maker/canvas-apps/sample-crisis-communication-app#monitor-office-absences-with-power-bi).
-   1. In the List_ID field, enter your list id that you got from list settings. When done, click **Next**.
+   1. In the List_ID field, enter your list ID that you got from list settings. When done, click **Next**.
 
    ![Crisis Communication Presence Report app URL dialog](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-url-dialog.png)
 

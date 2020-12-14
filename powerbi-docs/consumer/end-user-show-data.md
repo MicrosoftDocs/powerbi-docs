@@ -2,20 +2,19 @@
 title: Show the data that was used to create the report visual
 description: This document explains how Power BI business users can "see" the data used to create a report visual.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/6/2020
-ms.author: mihart
-
+ms.date: 12/06/2020
 LocalizationGroup: Visualizations
 ---
 # Show data with Power BI reports
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 
 A Power BI visual is constructed using data from underlying datasets. If you're interested in seeing behind-the-scenes, the Power BI service lets you *display* the data that is being used to create a visual in a report. When you select **Show as a table**, Power BI displays the data below (or next to) the visual.
 

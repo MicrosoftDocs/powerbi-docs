@@ -2,14 +2,12 @@
 title: DirectQuery and SAP Business Warehouse (BW) in Power BI
 description: Considerations when using DirectQuery with SAP Business Warehouse (BW)
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 11/28/2018
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Connect to SAP Business Warehouse by using DirectQuery in Power BI

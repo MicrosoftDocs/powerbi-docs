@@ -2,12 +2,11 @@
 title: Use natural language with import, live connect, and direct query
 description: In this article, we look at how the Q&A feature works with the different types of data sources available in Power BI. We'll also look inside the concepts of indexing and caching.
 author: mohaali
-
+ms.author: mohaali
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 08/19/2020
-ms.author: mohaali
 ---
 
 # Use natural language with import, live connect, and direct query

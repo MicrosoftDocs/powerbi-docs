@@ -2,14 +2,12 @@
 title: Data protection metrics report
 description: Learn about the data protection metrics report
 author: paulinbar
+ms.author: painbar
 manager: rkarlin
-
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 08/16/2020
-ms.author: painbar
-
 LocalizationGroup: Data from files
 ---
 # Data protection metrics report

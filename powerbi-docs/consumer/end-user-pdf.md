@@ -2,22 +2,19 @@
 title: Export reports to PDF
 description: Learn how to export a Power BI report to PDF.
 author: mihart
+ms.author: mihart
 ms.custom:  
 ms.reviewer: cmfinlan
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/17/2020
-ms.author: mihart
-
+ms.date: 12/03/2020
 LocalizationGroup: Share your work
 ---
 # Export reports from Power BI to PDF
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 With Power BI, you can publish your report to PDF format and easily create a document based on your Power BI report. When you export to PDF, each page in the Power BI report becomes an individual page in your PDF document.
 

@@ -2,14 +2,12 @@
 title: Use and manage aggregations in Power BI Desktop
 description: Use aggregations to perform interactive analysis over big data in Power BI Desktop.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 02/14/2020
-ms.author: davidi
-
 LocalizationGroup: Transform and shape data
 ---
 # Use aggregations in Power BI Desktop

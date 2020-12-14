@@ -2,14 +2,13 @@
 title: Connect to Azure Cost Management data in Power BI Desktop
 description: Easily connect to Azure and gain insights about your Azure cost and usage with Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.custom:
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 09/30/2020
-ms.author: davidi
+ms.date: 12/10/2020
 LocalizationGroup: Connect to data
 ---
 
@@ -31,7 +30,7 @@ The Azure Cost Management connector uses OAuth 2.0 for authentication with Azure
 To use the **Azure Cost Management connector** in Power BI Desktop, take the following steps:
 
 1.	In the **Home** ribbon, select **Get Data**.
-2.	Select **Azure** from the list of data catagories.
+2.	Select **Azure** from the list of data categories.
 3.	Select **Azure Cost Management**.
 
     ![Get data](media/desktop-connect-azure-cost-management/azure-cost-management-00b.png)
@@ -52,7 +51,7 @@ To connect with a **Microsoft Customer Agreement** account, you can get your **B
 
     ![Screenshot shows the Azure Cost Management properties with a scope of Billing Profile I D.](media/desktop-connect-azure-cost-management/azure-cost-management-01a.png)
 
-7.	When prompted, sign in with your Azure user account and password. 
+7.	When prompted, sign in with your Azure user account and password. You must use a Billing account owner for successful access. 
 
 
 ## Connect to an Enterprise Agreement account
@@ -67,13 +66,11 @@ To connect with an Enterprise Agreement (EA) account, you can get your enrollmen
 
     ![Screenshot shows the Azure Cost Management properties with a scope of Enrollment number.](media/desktop-connect-azure-cost-management/azure-cost-management-01b.png)
 
-6.	When prompted, sign in with your Azure user account and password. 
+6.	When prompted, sign in with your Azure user account and password. You must use an Enterprise Administrator account for Enterprise Agreements.
 
 ## Data available through the connector
 
 Once you successfully authenticate, a **Navigator** window appears with the following available data tables:
-
-
 
 | **Table** | **Description** |
 | --- | --- |
