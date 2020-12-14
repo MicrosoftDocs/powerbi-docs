@@ -121,4 +121,5 @@ There are a number of ways you can enhance the discoverability of your datasets:
 ## Next steps
 * [Use datasets across workspaces](service-datasets-across-workspaces.md)
 * [Create reports based on datasets from different workspaces](service-datasets-discover-across-workspaces.md)
+* [Endorse your dataset](../collaborate-share/service-endorse-content.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
