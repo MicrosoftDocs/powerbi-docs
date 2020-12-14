@@ -105,7 +105,7 @@ In the Analyze in Excel section, select **Analyze** to pull the dataset into Exc
 ## Make your dataset discoverable
 
 There are a number of ways you can enhance the discoverability of your datasets:
-* **Endorse your dataset**: You can promote or certify your dataset to make it easier for users to find and to let them know that it is a trustworthy source of data. Endorsed datasets are labeled with badges and are readily identifiable in Power BI. In the datasets hub, only endorsed datasets fshow up in the recommended datasets section, and the datasets list by default lists endorsed datasets first.
+* **Endorse your dataset**: You can promote or certify your dataset to make it easier for users to find and to let them know that it is a trustworthy source of data. Endorsed datasets are labeled with badges and are readily identifiable in Power BI. In the datasets hub, only endorsed datasets show up in the recommended datasets section, and the datasets list by default lists endorsed datasets first.
 
     [Learn how to endorse your datasets](../collaborate-share/service-endorse-content.md). 
 * **Provide a meaningful description of the dataset**: You can help users discover the right dataset for them by providing useful, meaningful descriptions of your datasets. [You provide the description as part of the process of endorsing the dataset](../collaborate-share/service-endorse-content.md#promote-content). 
