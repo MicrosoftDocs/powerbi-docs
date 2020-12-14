@@ -7,8 +7,6 @@
     items: 
     - name: "Query Editor overview"
       href: desktop-query-overview.md
-    - name: "Self-service data prep with dataflows"
-      href: ./dataflows/dataflows-introduction-self-service.md
   - name: Tutorials
     expanded: true
     items: 

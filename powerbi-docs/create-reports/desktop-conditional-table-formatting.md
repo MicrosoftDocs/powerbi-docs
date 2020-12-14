@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/06/2020
+ms.date: 12/14/2020
 LocalizationGroup: Create reports
 ---
 # Use conditional formatting in tables 
