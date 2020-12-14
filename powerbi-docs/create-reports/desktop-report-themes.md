@@ -8,7 +8,7 @@ ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/28/2020
+ms.date: 12/14/2020
 LocalizationGroup: Create reports
 ---
 # Use report themes in Power BI Desktop

@@ -7,12 +7,14 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/18/2019
+ms.date: 12/13/2020
 ---
 
 # Fetch more data from Power BI
 
-This article discusses how to load more data to bypass the hard limit of a 30-KB data point by using the `fetchMoreData` method. This approach provides data in chunks. To improve performance, you can configure the chunk size to accommodate your use case.
+The `fetchMoreData` API enables Power BI visuals to bypass the hard limit of a 30K rows data view. With the new 3.4 API release, the `fetchMoreData` API’s functionality is extended to support a new approach of loading data chunks. In addition to the existing approach, which aggregates all the chunks requested, the API will support loading only the incremental data chunks.
+
+The new approach allows more flexibility in the way additional data chunks are loaded to the visual. To improve performance, you can configure the chunk size to accommodate your use case.
 
 ## Limitations of fetchMoreData
 

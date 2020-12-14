@@ -8,7 +8,7 @@ ms.custom: contperfq1
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 08/19/2020
+ms.date: 12/14/2020
 LocalizationGroup: Get started
 ---
 # Get started with Power BI Desktop
