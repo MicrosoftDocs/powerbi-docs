@@ -2,13 +2,11 @@
 title: Connect to the Regional Emergency Response Dashboard
 description: How to get and install the COVID-19 Decision Support Dashboard for regional emergency response template app, and how to connect to data
 author: paulinbar
-
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 04/24/2020
-ms.author: painbar
-
 LocalizationGroup: Connect to services
 ---
 # Connect to the Regional Emergency Response Dashboard

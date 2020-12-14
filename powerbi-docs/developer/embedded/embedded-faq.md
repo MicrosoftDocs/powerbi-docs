@@ -1,5 +1,5 @@
 ---
-title: Frequently asked questions about Power BI Embedded
+title: Frequently asked questions about Power BI embedded analytics
 description: Browse a list of frequently asked questions and answers about Power BI Embedded.
 author: KesemSharabi
 ms.author: kesharab
@@ -107,14 +107,14 @@ Power BI requires you to sign up with an organizational account. Trying to sign 
 
 ### Can I use APIs to create and manage Azure capacities?
 
-Yes, there are Powershell cmdlets and Azure Resource Manager REST APIs you can use to create and manage PBIE resources.
+Yes, there are PowerShell cmdlets and Azure Resource Manager REST APIs you can use to create and manage PBIE resources.
 
 * [Rest APIs](/rest/api/power-bi-embedded/) 
-* [Powershell cmdlets](/powershell/module/azurerm.powerbiembedded/)
+* [PowerShell cmdlets](/powershell/module/azurerm.powerbiembedded/)
 
 ### What is the PBI Embedded capacity role in a PBI Embedded solution?
 
-To [promote your solution to production](embed-sample-for-customers.md#move-to-production), you need to assign the Power BI content (workspace) your application uses to a Power BI Embedded (A SKU) capacity.
+To [promote your solution to production](move-to-production.md), you need to assign the Power BI content (workspace) your application uses to a Power BI Embedded (A SKU) capacity.
 
 ### In what Azure regions is PBI Embedded available?
 
@@ -179,7 +179,7 @@ There's often confusion around when to use RLS versus JavaScript filters, becaus
 
 For RLS, the ISV developer controls the data filtering as part of the model creation and embed token generation. The end user sees only what the ISV allows the user to see. In this case, the user can choose to see less than what's being filtered, but won't be able to bypass the RLS configuration and see more than what's allowed.
 
-For client-side filtering (JavaScript), the ISV might decide what the end user sees at the initial view, but they can't control changes the end user might apply to the view itself. Since user Javascript client code can trigger data filtering on the backend, it can't be considered secure.
+For client-side filtering (JavaScript), the ISV might decide what the end user sees at the initial view, but they can't control changes the end user might apply to the view itself. Since user JavaScript client code can trigger data filtering on the backend, it can't be considered secure.
 
 Reference [RLS vs JavaScript filters](embedded-row-level-security.md#using-rls-vs-javascript-filters) for more details.
 
@@ -193,7 +193,7 @@ This situation matters when you add the service principal as an **admin** to the
 
 ### When to use an application ID vs. a service principal object ID?
 
-The **[application ID](embed-sample-for-customers.md#application-id)** is used to create the access token when passing the application ID for authentication.
+The **[application ID](embed-sample-for-customers.md#client-id)**, also known as *client ID*, is used to create the access token when passing the application ID for authentication.
 
 To reference a service principal for operations or to make changes you use the **[service principal object ID](embed-service-principal.md)** — for example, applying a service principal as an admin to a workspace.
 
@@ -307,12 +307,12 @@ Some of the features are:
 
 ### What is the Embedding setup tool?
 
-The [Embedding setup tool](https://aka.ms/embedsetup) allows you to quickly get started and download a sample application to begin embedding with Power BI.
+The [Embedding setup tool](https://app.powerbi.com/embedsetup) allows you to quickly get started and download a sample application to begin embedding with Power BI.
 
 ### Which solution should I choose?
 
-* [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. Run the [Embed for your customers](https://aka.ms/embedsetup/AppOwnsData) solution.
-* [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service. Run the [Embed for your organization](https://aka.ms/embedsetup/UserOwnsData) solution.
+* [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. In the [Embedding setup tool](https://app.powerbi.com/embedsetup), run the *Embed for your customers* solution.
+* [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service. In the [Embedding setup tool](https://app.powerbi.com/embedsetup), run the *Embed for your organization* solution.
 
 ### I've downloaded the sample app, which solution do I choose?
 

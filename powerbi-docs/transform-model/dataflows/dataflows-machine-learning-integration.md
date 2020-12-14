@@ -2,14 +2,12 @@
 title: Use Machine Learning and Cognitive Services with dataflows
 description: Overview of how to use machine learning and automated ml with dataflows
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 10/01/2020
-ms.author: davidi
-
 LocalizationGroup: Data from files
 ---
 # AI with dataflows
@@ -24,7 +22,7 @@ In this article we discuss ways you can use artificial intelligence (AI) with da
 
 With  Cognitive Services in Power BI, you can apply different algorithms from [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) to enrich your data in the self-service data prep for Dataflows.
 
-The services that are supported today are [Sentiment Analysis](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis), [Key Phrase Extraction](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction), [Language Detection](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection), and [Image Tagging](https://docs.microsoft.com/azure/cognitive-services/computer-vision/concept-tagging-images). The transformations are executed on the Power BI Service and do not require an Azure Cognitive Services subscription. This feature requires Power BI Premium.
+The services that are supported today are [Sentiment Analysis](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis), [Key Phrase Extraction](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction), [Language Detection](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection), and [Image Tagging](/azure/cognitive-services/computer-vision/concept-tagging-images). The transformations are executed on the Power BI Service and do not require an Azure Cognitive Services subscription. This feature requires Power BI Premium.
 
 ### **Enabling AI features**
 
@@ -68,7 +66,7 @@ This section describes the available functions in Cognitive Services in Power BI
 
 The language detection function evaluates text input, and for each field, returns the language name and ISO identifier. This function is useful for data columns that collect arbitrary text, where language is unknown. The function expects data in text format as input.
 
-Text Analytics recognizes up to 120 languages. For more information, see [supported languages](https://docs.microsoft.com/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
+Text Analytics recognizes up to 120 languages. For more information, see [supported languages](/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
 
 #### **Extract Key Phrases**
 
@@ -84,7 +82,7 @@ Text Analytics uses a machine learning classification algorithm to generate a se
 
 Sentiment analysis is performed on the entire input field, as opposed to extracting sentiment for a particular entity in the text. In practice, there's a tendency for scoring accuracy to improve when documents contain one or two sentences rather than a large block of text. During an objectivity assessment phase, the model determines whether an input field as a whole is objective or contains sentiment. An input field that is mostly objective does not progress to the sentiment detection phrase, resulting in a .50 score, with no further processing. For input fields continuing in the pipeline, the next phase generates a score above or below .50, depending on the degree of sentiment detected in the input field.
 
-Currently, Sentiment Analysis supports English, German, Spanish, and French. Other languages are in preview. For more information, see [Supported languages](https://docs.microsoft.com/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
+Currently, Sentiment Analysis supports English, German, Spanish, and French. Other languages are in preview. For more information, see [Supported languages](/azure/cognitive-services/text-analytics/text-analytics-supported-languages).
 
 #### **Tag Images**
 
@@ -92,7 +90,7 @@ The **Tag Images** function returns tags based on more than 2,000 recognizable o
 
 After uploading an image or specifying an image URL, Computer Vision algorithms output tags based on the objects, living beings, and actions identified in the image. Tagging is not limited to the main subject, such as a person in the foreground, but also includes the setting (indoor or outdoor), furniture, tools, plants, animals, accessories, gadgets, and so on.
 
-This function requires an image URL or abase-64 field as input. At this time, image tagging supports English, Spanish, Japanese, Portuguese, and Simplified Chinese. For more information, see [Supported languages](https://docs.microsoft.com/rest/api/cognitiveservices/computervision/tagimage/tagimage#uri-parameters).
+This function requires an image URL or abase-64 field as input. At this time, image tagging supports English, Spanish, Japanese, Portuguese, and Simplified Chinese. For more information, see [Supported languages](/rest/api/cognitiveservices/computervision/tagimage/tagimage#uri-parameters).
 
 ## Automated Machine Learning in Power BI
 
@@ -110,7 +108,7 @@ AutoML in Power BI enables data analysts to use dataflows to build machine learn
 
 AutoML supports the creation of **Binary Prediction**, **Classification**, and **Regression Models** for dataflows. These are types of supervised machine learning techniques, which means that they learn from the known outcomes of past observations to predict the outcomes of other observations. The input dataset for training an AutoML model is a set of records that are **labeled** with the known outcomes.
 
-AutoML in Power BI integrates [automated ML](https://docs.microsoft.com/azure/machine-learning/service/concept-automated-ml) from [Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml) to create your ML models. However, you don't need an Azure subscription to use AutoML in Power BI. The process of training and hosting the ML models is managed entirely by the Power BI service.
+AutoML in Power BI integrates [automated ML](/azure/machine-learning/service/concept-automated-ml) from [Azure Machine Learning](/azure/machine-learning/service/overview-what-is-azure-ml) to create your ML models. However, you don't need an Azure subscription to use AutoML in Power BI. The process of training and hosting the ML models is managed entirely by the Power BI service.
 
 After an ML model is trained, AutoML automatically generates a Power BI report that explains the likely performance of your ML model. AutoML emphasizes explainability by highlighting the key influencers among your inputs that influence the predictions returned by your model. The report also includes key metrics for the model.
 
@@ -370,8 +368,8 @@ To learn more about dataflows, see [Introduction to dataflows and self-service d
 
 To learn more about Azure Machine Learning, please see:
 
-- Overview:  [What is Azure Machine Learning?](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml)
-- Quick Starts and Tutorials for Azure Machine Learning:  [Azure Machine Learning Documentation](https://docs.microsoft.com/azure/machine-learning/)
+- Overview:  [What is Azure Machine Learning?](/azure/machine-learning/service/overview-what-is-azure-ml)
+- Quick Starts and Tutorials for Azure Machine Learning:  [Azure Machine Learning Documentation](/azure/machine-learning/)
 
 > [!NOTE]
 > A Power BI Premium subscription is required to use Azure Machine learning integration.
@@ -383,7 +381,7 @@ To access an Azure ML model from Power BI, the user must have **Read** access to
 - For Machine Learning Studio (classic) models, **Read** access to Machine Learning Studio (classic) web service
 - For Machine Learning models, **Read** access to the Machine Learning workspace
 
-The steps in this article describe how to grant a Power BI user access to a model hosted on the Azure ML service, so they can access this model as a Power Query function.  For further details, please see [Manage access using RBAC and the Azure portal](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).
+The steps in this article describe how to grant a Power BI user access to a model hosted on the Azure ML service, so they can access this model as a Power Query function.  For further details, please see [Manage access using RBAC and the Azure portal](/azure/role-based-access-control/role-assignments-portal).
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
@@ -411,7 +409,7 @@ The steps in this article describe how to grant a Power BI user access to a mode
 
 Data scientists primarily use Python to develop, and even deploy, their machine learning models for Machine Learning.  Unlike the Machine Learning Studio (classic), which helps automate the task of creating a schema file for the model, in the case of Machine Learning, the data scientist must explicitly generate the schema file using Python.
 
-This schema file must be included in the deployed web service for Machine Learning models. To automatically generate the schema for web service, you must provide a sample of the input/output in the entry script for the deployed model. Please see the subsection on [(Optional) Automatic Swagger schema generation in the Deploy models with the Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/how-to-deploy-and-where#optional-define-model-web-service-schema) service documentation. The link includes the example entry script with the statements for the schema generation. 
+This schema file must be included in the deployed web service for Machine Learning models. To automatically generate the schema for web service, you must provide a sample of the input/output in the entry script for the deployed model. Please see the subsection on [(Optional) Automatic Swagger schema generation in the Deploy models with the Azure Machine Learning](/azure/machine-learning/how-to-deploy-and-where#optional-define-model-web-service-schema) service documentation. The link includes the example entry script with the statements for the schema generation. 
 
 Specifically, the *\@input_schema* and *\@output_schema* functions in the entry script reference the input and output sample formats in the *input_sample* and *output_sample* variables, and use these samples to generate an OpenAPI (Swagger) specification for the web service during deployment.
 
@@ -450,9 +448,9 @@ Once you save your dataflow, the model is automatically invoked when the dataflo
 
 This article provided an overview of Automated Machine Learning for Dataflows in the Power BI service. The following articles may also be useful.
 
-- [Tutorial: Build a Machine Learning model in Power BI ](../../connect-data/service-tutorial-build-machine-learning-model.md)
+- [Tutorial: Build a Machine Learning model in Power BI](../../connect-data/service-tutorial-build-machine-learning-model.md)
 - [Tutorial: Using Cognitive Services in Power BI](../../connect-data/service-tutorial-use-cognitive-services.md)
-- [Tutorial: Invoke a Machine Learning Studio (classic) model in Power BI (Preview)](../../connect-data/service-tutorial-invoke-machine-learning-model.md)
+- [Tutorial: Consume Azure Machine Learning models in Power BI](../../connect-data/service-aml-integrate.md)
 
 The following articles provide more information about dataflows and Power BI:
 
@@ -461,4 +459,5 @@ The following articles provide more information about dataflows and Power BI:
 * [Configure and consume a dataflow](dataflows-configure-consume.md)
 * [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [Premium features of dataflows](dataflows-premium-features.md)
-* [Dataflows limitations and considerations](dataflows-features-limitations.md) 
+* [Dataflows limitations and considerations](dataflows-features-limitations.md)
+* [Dataflows best practices](dataflows-best-practices.md)

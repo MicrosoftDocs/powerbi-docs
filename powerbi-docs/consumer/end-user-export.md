@@ -2,22 +2,19 @@
 title: Export data from a Power BI visual
 description: Export data from a report visual and dashboard visual and view it in Excel.
 author: mihart
+ms.author: mihart
 ms.reviewer: cmfinlan
 featuredvideoid: jtlLGRKBvXY
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 08/28/2020
-ms.author: mihart
-
+ms.date: 12/03/2020
 LocalizationGroup: Consumers
 ---
 # Export data from a visual
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 To see the data that's used to create a visual, [you can display that data in Power BI](end-user-show-data.md), or export it to Excel. The option to export the data requires a certain type or license and edit permissions to the content. If you can't export, check with your Power BI administrator or IT help desk. 
 
@@ -29,7 +26,7 @@ Exporting data requires a Power BI Pro license, or for the dashboard or report t
 1. Start on a Power BI dashboard. Here we're using the dashboard from the ***Marketing and sales sample*** app. You can [download this app from AppSource.com](https://appsource.microsoft.com/en-us/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample
 ).
 
-    ![App dashboard](media/end-user-export/power-bi-dashboards.png)
+    ![App dashboard](media/end-user-export/power-bi-dashboard.png)
 
 2. Hover over a visual to reveal **More options** (...) and click to display the action menu.
 

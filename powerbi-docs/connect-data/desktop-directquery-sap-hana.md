@@ -2,14 +2,12 @@
 title: DirectQuery for SAP HANA in Power BI
 description: Considerations when using DirectQuery with SAP HANA
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 04/10/2019
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Connect to SAP HANA data sources by using DirectQuery in Power BI

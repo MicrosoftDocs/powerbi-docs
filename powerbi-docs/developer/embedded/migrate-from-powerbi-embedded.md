@@ -4,7 +4,7 @@ description: Learn how to migrate from Power BI Workspace Collection to the Powe
 author: KesemSharabi
 ms.author: kesharab
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/30/2018
 ---
@@ -27,9 +27,9 @@ The current Power BI Workspace Collection will continue to be available for a li
 Before you get started migrating to the new Power BI Embedded, you can quickly go through a walkthrough that helps you set up your new Power BI Embedded environment using the [Embedding setup tool](https://aka.ms/embedsetup).
 
 Choose the solution that is right for you:
-* **Embed for your customers** - when you are interested in an [app owns data](https://aka.ms/embedsetup/AppOwnsData) solution. [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. 
+* **Embed for your customers** - when you are interested in an *app owns data* solution. [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. 
 
-* **Embed for your organization** - when you are interested in a [user owns data](https://aka.ms/embedsetup/UserOwnsData) solution. [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service.
+* **Embed for your organization** - when you are interested in a *user owns data* solution. [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service.
 
 ## Prepare for the migration
 

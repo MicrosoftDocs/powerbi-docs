@@ -1,15 +1,13 @@
 ---
 title: Power BI Desktop Privacy
 description: Power BI Desktop Privacy options
-author: MI77
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/14/2018
-ms.author: willthom
-
 LocalizationGroup: Learn more
 ---
 # Power BI Desktop Privacy

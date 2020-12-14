@@ -2,16 +2,14 @@
 title: 'Tutorial: Build a Machine Learning model in Power BI'
 description: In this tutorial you build a Machine Learning model in Power BI.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.custom: connect-to-services
 ms.topic: tutorial
 ms.date: 08/03/2020
-ms.author: davidi
 #customer intent: "As a Power BI end user, I want to build a Machine Learning model, so I can use machine learning with Power BI."
-
 LocalizationGroup: Connect to services
 ---
 # Tutorial: Build a Machine Learning model in Power BI
@@ -187,4 +185,4 @@ In this tutorial, you created and applied a binary prediction model in Power BI 
 * Apply the model to a dataflow entity
 * Using the scored output from the model in a Power BI report
 
-For more information about Machine Learning automation in Power BI, see [Automated Machine Learning in Power BI](../transform-model/service-machine-learning-automated.md).
+For more information about Machine Learning automation in Power BI, see [Automated Machine Learning in Power BI](../transform-model/dataflows/dataflows-machine-learning-integration.md).

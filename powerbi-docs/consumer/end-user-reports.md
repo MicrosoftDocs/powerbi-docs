@@ -2,12 +2,12 @@
 title: Reports in the Power BI service
 description: Reports in the Power BI service, for business users
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/09/2020
-ms.author: mihart
 LocalizationGroup: Reports
 ---
 
@@ -15,7 +15,6 @@ LocalizationGroup: Reports
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yyn.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 A Power BI report is a multi-perspective view into a dataset, with visuals that represent different findings and insights from that dataset.  A report can have a single visual or pages full of visuals. Depending on your job role, you may be someone who *designs* reports. You also may be a *business user* who *consumes* or uses reports. This article is for *business users*.
 

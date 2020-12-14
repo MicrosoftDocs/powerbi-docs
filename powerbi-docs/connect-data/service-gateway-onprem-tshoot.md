@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
-ms.date: 09/25/2020
+ms.date: 12/10/2020
 LocalizationGroup: Gateways 
 ---
 
@@ -233,6 +233,37 @@ You get the "-10709 Connection failed" error message if your delegation isn't co
 * Make sure that you have the SAP Hana server on the delegation tab in Active Directory for the gateway service account.
 
    ![Delegation tab](media/service-gateway-onprem-tshoot/delegation-in-AD.png)
+
+## Export logs for a support ticket
+
+Gateway logs are required for troubleshooting and creating a support ticket. Use the following steps for extracting these logs.
+
+1. Identify the gateway cluster.
+
+    If you're a dataset owner, first check the gateway cluster name associated with your dataset. In the following image, *IgniteGateway* is the gateway cluster.
+
+    ![Gateway cluster](media/service-gateway-onprem-tshoot/gateway-cluster.png)
+
+2. Check the gateway properties.
+
+    The gateway admin should then check the number of gateway members in the cluster and if load balancing is enabled.
+
+    If load balancing is enabled, then step 3 should be repeated for all gateway members. If it's not enabled, then exporting logs on the primary gateway is sufficient.
+
+3. Retrieve and export the gateway logs.
+
+    Next, the gateway admin, who is also the administrator of the gateway system, should do the following steps:
+
+    a. Sign in to the gateway machine, and then launch the [on-premises data gateway app](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-app) to sign in to the gateway.
+    
+    b. Enable [additional logging](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-performance#slow-performing-queries).
+    
+    c. Optionally, you can [enable the performance monitoring features](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-performance#enable-performance-logging) and include performance logs to provide additional details for troubleshooting.
+    
+    d. Run the scenario for which you're trying to capture gateway logs.
+    
+    e. [Export the gateway logs](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
+
 
 ## Refresh history
 

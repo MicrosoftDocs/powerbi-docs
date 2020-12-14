@@ -1,5 +1,5 @@
 ---
-title: Embed content in your application for your organization
+title: Embed content in your Power BI embedded analytics application for your organization
 description: Learn how to integrate or embed, a report (Power BI or Paginated), dashboard, or tile into an application using the Power BI APIs for embedded analytics for your organization. Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
 author: KesemSharabi
 ms.author: kesharab
@@ -36,11 +36,14 @@ If you're not signed up for **Power BI Pro**, [sign up for a free trial](https:/
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
+>[!NOTE]
+>[Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) is supported. However, if you're using PPU, only PPU users in your organization will be able to access your solution.
+
 ## Set up your embedded analytics development environment
 
 Before you start embedding reports, dashboard, or tiles into your application, you need to make sure your environment allows for embedding with Power BI.
 
-You can go through the [Embedding setup tool](https://aka.ms/embedsetup/UserOwnsData), so you can quickly get started and download a sample application that helps you walk through creating an environment and embedding a report. In the case of embedding a paginated report you need to assign at least a P1 capacity to the created workspace.
+You can go through the [Embedding setup tool](https://app.powerbi.com/embedsetup), so you can quickly get started and download a sample application that helps you walk through creating an environment and embedding a report. In the case of embedding a paginated report you need to assign at least a P1 capacity to the created workspace.
 
 If you choose to set up the environment manually, you can continue below.
 
@@ -48,9 +51,9 @@ If you choose to set up the environment manually, you can continue below.
 
 [Register your application](register-app.md) with Azure Active Directory to allow your application access to the [Power BI REST APIs](/rest/api/power-bi/). Registering your application allows you to establish an identity for your application and specify permissions to Power BI REST resources.
 
-You need to proceed with registering a **server-side web application** app. You register a server-side web application to create an application secret.
-
-After creating your application in Azure, open your application in Azure, navigate to *Authentication* and in the *Redirect URIs* add **/Redirect** to the *Redirect URI*.
+>[!NOTE]
+>In your own application you'll need to navigate to *Authentication* and in the *Redirect URIs* field, insert the redirect address.
+To learn more about redirecting, see [Redirect URI (reply URL) restrictions and limitations](https://docs.microsoft.com/azure/active-directory/develop/reply-url).
 
 ## Set up your Power BI environment
 

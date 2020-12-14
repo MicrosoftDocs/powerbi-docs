@@ -2,14 +2,12 @@
 title: View Power BI reports optimized for your phone
 description: Read about interacting with report pages optimized for viewing in the Power BI phone apps.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 05/05/2020
-ms.author: painbar
-
 ---
 # View Power BI reports optimized for your phone
 

@@ -6,7 +6,7 @@ ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
 ms.date: 07/31/2020
@@ -20,7 +20,7 @@ You can share Power BI dashboards, reports, and visuals directly to Microsoft Te
 
 To use the **Share to Teams** functionality in Power BI, ensure this setting:
 
-- Power BI administrators haven't disabled **Share to Teams** tenant setting in the Power BI admin portal. This setting allows organizations to hide the **Share to Teams** buttons. See the [Power BI admin portal](../admin/service-admin-portal.md#share-to-teams-tenant-setting) article for details.
+- Power BI administrators haven't disabled **Share to Teams** tenant setting in the Power BI admin portal. This setting allows organizations to hide the **Share to Teams** buttons. See the [Power BI admin portal](../admin/service-admin-portal.md#share-to-teams) article for details.
 
 See [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md) for background on how Power BI and Microsoft Teams work together, including other requirements.
 
@@ -38,7 +38,7 @@ Follow these steps to share links to reports, dashboards, and visuals in the Pow
     
       ![Screenshot of Share to Teams button in a visual contextual menu.](media/service-share-report-teams/service-teams-share-to-teams-visual-context-menu.png)
 
-1. In the **Share to Microsoft Teams** dialog box, select the channel or people you want to send the link to. You can enter a message if you want. You might be asked to sign in to Microsoft Teams first.
+1. In the **Share to Microsoft Teams** dialog box, select the team or channel you want to send the link to. You can enter a message if you want. You might be asked to sign in to Microsoft Teams first.
 
     ![Screenshot of Share to Microsoft Teams dialog box with information and message.](media/service-share-report-teams/service-teams-share-to-teams-dialog.png)
 

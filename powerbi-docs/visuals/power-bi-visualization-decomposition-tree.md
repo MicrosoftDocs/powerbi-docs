@@ -2,14 +2,12 @@
 title: Decomposition tree
 description: 'Tutorial: Create a decomposition tree visualization in Power BI'
 author: mihart
-manager: kvivek
+ms.author: mihart
 ms.reviewer: juluczni
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 01/10/2020
-ms.author: rien
-
 LocalizationGroup: Visualizations
 ---
 

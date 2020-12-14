@@ -2,19 +2,19 @@
 title: Private links for accessing Power BI
 description: How to configure a private link for using Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: pbi-security
 ms.topic: how-to
-ms.author: davidi
-ms.date: 10/21/2020
+ms.date: 12/09/2020
 ms.custom: 
 LocalizationGroup: Administration
 ---
 
 # Private links for accessing Power BI
 
-Azure networking provides two security features, Azure Private Links and Private Endpoints, that enable Power BI to provide secure access. With Azure Private Links and Private Endpoints, data traffic is sent privately using Microsoft's backbone network infrastructure, and thus the data doesn’t traverse the Internet. 
+Azure networking provides the Azure Private Links feature that enables Power BI to provide secure access via Azure Networking Private endpoints. With Azure Private Links and Private Endpoints, data traffic is sent privately using Microsoft's backbone network infrastructure, and thus the data doesn’t traverse the Internet. 
 
 Private links ensure that Power BI users use the Microsoft private network backbone when going to resources in the Power BI service.
 
@@ -113,9 +113,9 @@ The next step is to create a virtual network and subnet. Replace the sample para
 | ```<resource-group-name>```	| myResourceGroup |
 | ```<virtual-network-name>```	| myVirtualNetwork |
 | ```<region-name>```	| Central US  |
-| ```<IPv4-address-space>```	| 10.1.0.0/16 |
+| ```<IPv4-address-space>```	| 10.5.0.0/16 |
 | ```<subnet-name>```	| mySubnet |
-| ```<subnet-address-range>```	| 10.1.0.0/24 |
+| ```<subnet-address-range>```	| 10.5.0.0/24 |
 
 1. On the upper-left side of the screen, select **Create a resource > Networking > Virtual network** or search for **Virtual network** in the search box.
 2. In **Create virtual network** enter or select the following information in the **Basics** tab:
@@ -161,7 +161,6 @@ Once you've completed these steps, you can create a virtual machine (VM), as des
 
 ## Create a virtual machine (VM)
 
-
 The next step is to create virtual network, and the subnet to host the virtual machine (VM).
 
 1. On the upper-left side of the screen in your Azure portal, select **Create a resource > Compute > Virtual Machine**.
@@ -195,8 +194,8 @@ The next step is to create virtual network, and the subnet to host the virtual m
     |Settings |	Value |
     |-------------------|---------|
     |Virtual network|	Leave the default **MyVirtualNetwork**|
-    |Address space|	Leave the default **10.1.0.0/24**|
-    |Subnet	|Leave the default **mySubnet (10.1.0.0/24)**|
+    |Address space|	Leave the default **10.5.0.0/24**|
+    |Subnet	|Leave the default **mySubnet (10.5.0.0/24)**|
     |Public IP|	Leave the default **(new) myVm-ip**|
     |Public inbound ports|	Select **Allow selected **|
     |Select inbound ports|	Select **RDP**|
@@ -284,7 +283,7 @@ The next step is to access Power BI privately, from the virtual machine you crea
     
     Non-authoritative answer:
     Name:    52d40f65ad6d48c3906f1ccf598612d4-api.privatelink.analysis.windows.net
-    Address:  10.1.0.4
+    Address:  10.5.0.4
     ```
 
 4. Open the browser and go to app.powerbi.com to access Power BI privately.
@@ -305,6 +304,8 @@ There are a few considerations to keep in mind while working with private links 
 * Export services, such as Export to PDF, exporting to Excel from a report, and other export services do not work when using a private link environment
 * SQL Server Reporting Services reports, commonly known as RDL files (*.rdl format files) do not render in private link environments
 * If Internet access is disabled, and if the dataset or dataflow is connecting to a Power BI dataset or dataflow as a data source, the connection will fail
+* Usage metrics do *not* work when Private Links is enabled
+* Publish to Web is not supported (and grayed out) when you enable **Block Public Internet access** in Power BI
 
 
 ## Next steps

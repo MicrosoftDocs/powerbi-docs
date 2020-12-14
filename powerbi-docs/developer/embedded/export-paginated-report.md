@@ -1,5 +1,5 @@
 ---
-title: Export Power BI paginated reports API
+title: Export Power BI embedded analytics paginated reports API
 description: Learn how to export an embedded Power BI paginated report 
 author: KesemSharabi
 ms.author: kesharab
@@ -112,11 +112,13 @@ Here is an example for supplying an effective user name for RLS.
       "format": "PDF",
       "paginatedReportConfiguration":{
             "identities": [
-                  {"username": "john@contoso.com"}            
+                  {"username": "john@contoso.com"}
             ]
       }
 }
 ```
+## PPU concurrent requests
+The `exportToFile` API allows one request in a five minute window when using [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md). Multiple (greater than one) requests within a five minute window will result in a *Too Many Requests* (429) error.
 
 ## Code examples
 
@@ -148,13 +150,13 @@ private async Task<string> PostExportRequest(
             {"PageHeight", "14in"},
             {"PageWidth", "8.5in" },
             {"StartPage", "1"},
-            {"EndPage", "4"}
+            {"EndPage", "4"},
         },
         ParameterValues = new List<ParameterValue>()
         {
             { new ParameterValue() {Name = "State", Value = "WA"} },
-            { new ParameterValue() {Name = "City", Value = "Redmond"} }
-        }
+            { new ParameterValue() {Name = "City", Value = "Redmond"} },
+        },
     };
 
     var exportRequest = new ExportReportRequest

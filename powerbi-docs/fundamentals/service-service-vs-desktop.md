@@ -1,16 +1,14 @@
 ---
 title: Comparing Power BI Desktop and the Power BI service
 description: Power BI Desktop is a complete data analysis and report creation tool. The Power BI service is a cloud-based, online service for light report editing and collaboration for teams and corporations.
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 08/07/2020
-ms.author: maggies
-
 LocalizationGroup: Reports
 ---
 # Comparing Power BI Desktop and the Power BI service
@@ -51,7 +49,7 @@ After you've created your reports, you can save them to a *workspace* in the **P
 
 ### Self-service data prep with dataflows
 
-Dataflows help organizations unify data from disparate sources and prepare it for modeling. Analysts can easily create dataflows, using familiar, self-service tools. Analysts use dataflows to ingest, transform, integrate, and enrich big data by defining data source connections, ETL logic, refresh schedules, and more. Read more about [self-service data prep with dataflows](../transform-model/service-dataflows-overview.md).
+Dataflows help organizations unify data from disparate sources and prepare it for modeling. Analysts can easily create dataflows, using familiar, self-service tools. Analysts use dataflows to ingest, transform, integrate, and enrich big data by defining data source connections, ETL logic, refresh schedules, and more. Read more about [self-service data prep with dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md).
 
 ## Next steps
 

@@ -5,9 +5,9 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 09/18/2020
+ms.date: 12/03/2020
 LocalizationGroup: Share your work
 ---
 
@@ -55,16 +55,18 @@ The following steps describe how to use **Publish to web**.
 
    You can only create one embed code for each report.
 
+If you make changes in the dialog, make sure to copy the updated URL or iFrame to use the updated settings in your page.
+
 
 ### Tips for view modes
 
-When you embed content within a blog post, you typically need to fit it within a specific screen size.  You can adjust the height and the width in the iFrame tag as needed. However, you need to ensure your report fits within the given iFrame area, so you also need to set an appropriate View Mode when editing the report.
+When you embed content within a blog post, you typically need to fit it within a specific screen size.  You can adjust the height and the width in the iFrame tag as needed. However, you need to ensure your report fits within the given iFrame area, so set an appropriate View Mode when you're editing the report.
 
 The following table provides guidance about the View Mode, and how it will appear when embedded.
 
 | View Mode | How it looks when embedded |
 | --- | --- |
-| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**Fit to page** respects your report's page height and width. If you set your page to *dynamic* ratios like 16:9 or 4:3, your content scales to fit within the iFrame. When embedded in an iFrame, using **Fit to page** can result in *letterboxing*, where a gray background is shown in iFrame areas after the content is scaled to fit within the iFrame. To minimize letterboxing, set the height and width of the iFrame appropriately. |
+| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**Fit to page** respects your report's page height and width. If you set your page to *dynamic* ratios like 16:9 or 4:3, your content scales to fit within the iFrame. When embedded in an iFrame, using **Fit to page** can result in *letterboxing*: a gray background is shown in iFrame areas after the content scales to fit within the iFrame. To minimize letterboxing, set the height and width of the iFrame appropriately. |
 | ![PtW6d](media/service-publish-to-web/publish_to_web6d.png) |**Actual size** ensures the report preserves its size as set on the report page. This can result in scrollbars appearing in your iFrame. Set the iFrame height and width to avoid scrollbars. |
 | ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |**Fit to width** ensures the content fills the horizontal area of the iFrame. A border is still shown, but the content scales to use all the horizontal space available. |
 
@@ -109,11 +111,19 @@ Once you create a **Publish to web** embed code, you can manage your codes from 
 
 ## Updates to reports, and data refresh
 
-After you create your **Publish to web** embed code and share it, the report is updated with any changes you make, and the embed code link is immediately active. Anyone who opens the link can view it. After the initial creation, updates to reports or visuals may take up to two hours before your users see them. The data is cached for one hour from the time it is retrieved. We don’t recommend using Publish to web for data that needs to refresh frequently. To learn more, see the [**How it works**](#howitworks) section later in this article. 
+After you create your **Publish to web** embed code and share it, the report updates with any changes you make. The embed code link is immediately active. Anyone who opens the link can view it. The data is cached for one hour from the time it is retrieved. We don’t recommend using Publish to web for data that needs to refresh frequently. To learn more, see the [**How it works**](#howitworks) section later in this article. 
 
 ### Data refresh
 
-Data refreshes are automatically reflected in your embedded report or visual. It can take up to two hours for refreshed data to be visible from embed codes. To disable automatic refresh, select **don't refresh** on the schedule for the dataset the report uses.  
+Data refreshes are automatically reflected in your embedded report or visual. When data is refreshed for an import data model in the Power BI service, the service clears the data cache, making data update quickly. To disable automatic refresh, select **don't refresh** on the schedule for the dataset the report uses.  
+
+### Heavy usage
+
+A heavy usage experience can occur when a report receives too many queries in a short amount of time. When heavy usage occurs, users can't view or interact with the report until the period of heavy usage passes. 
+
+We recommend setting a placeholder image for your report. If heavy usage occurs, users see the placeholder image. 
+
+To help avoid the heavy usage experience, limit the number of distinct queries your report can generate and the frequency of data refresh.
 
 ## Power BI visuals
 
@@ -148,9 +158,9 @@ You need to be a Microsoft Power BI user to use **Publish to web**. Your report 
 <a name="howitworks"></a>
 ## How it works (technical details)
 
-When you create an embed code using **Publish to web**, the report is made visible to Internet users. It's publicly available, so you can expect viewers to easily share the report through social media in the future. As users view the report, either by opening the direct public URL or viewing it embedded in a web page or blog, Power BI caches the report definition and the results of the queries required to view the report. This caching ensures that thousands of concurrent users can view the report without impacting performance.
+When you create an embed code using **Publish to web**, the report is made visible to Internet users. It's publicly available, so you can expect viewers to easily share the report through social media in the future. Users view the report either by opening the direct public URL or viewing it embedded in a web page or blog. As they do, Power BI caches the report definition and the results of the queries required to view the report. This caching ensures that thousands of concurrent users can view the report without impacting performance.
 
-The data is cached for one hour from the time it is retrieved. If you update the report definition (for example, if you change its View mode) or refresh the report data, it can take up to two hours before changes are reflected in the version of the report that your users view. Since each element and data value is cached independently, when a data update occurs a mix of current and previous values can be shown to a user. Therefore, we recommend staging your work ahead of time, and creating the **Publish to web** embed code only when you're satisfied with the settings. If your data will refresh, minimize the number of refreshes and perform the refreshes at off hours. We don’t recommend using Publish to web for data that needs to refresh frequently.
+The data is cached for one hour from the time it is retrieved. If you update the report definition (for example, if you change its View mode) or refresh the report data, it can take some time before changes are reflected in the version of the report that your users view. When a data refresh occurs for an import data model, the service clears the cached data and retrieves new data. In most cases, the data is updated nearly simultaneous with the import of the data. However, for reports with many distinct queries, it may take some time to update. Since each element and data value is cached independently, when a data update occurs, a user may see a mix of current and previous values. Therefore, we recommend staging your work ahead of time, and creating the **Publish to web** embed code only when you're satisfied with the settings. If your data will refresh, minimize the number of refreshes and perform the refreshes at off hours. We don’t recommend using Publish to web for data that needs to refresh frequently.
 
 ## Find your Power BI administrator
 
@@ -183,6 +193,7 @@ You need to [find one of these people](/office365/admin/admin-overview/admin-ove
 - Single sign-on data query models.
 - Secure confidential or proprietary information.
 - The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](../developer/embedded/embed-sample-for-your-organization.md) approach to embedding.
+- Admins can block public internet access, as described in [Private links for accessing Power BI](../admin/service-security-private-links.md). In that case, the **Publish to Web** option is grayed out for your tenant in the Power BI admin portal. 
 
 ## Next steps
 

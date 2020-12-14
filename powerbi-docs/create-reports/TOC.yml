@@ -85,6 +85,8 @@
       items: 
       - name: Report Builder in Power BI
         href: ../paginated-reports/report-builder-power-bi.md
+      - name: Sample Power BI paginated reports
+        href: ../paginated-reports/paginated-reports-samples.md
       - name: Get around Report Design View
         href: ../paginated-reports/paginated-reports-report-design-view.md
       - name: Planning a report
@@ -275,6 +277,8 @@
         href: ../visuals/power-bi-visualization-decomposition-tree.md
       - name: "Smart narratives"
         href: ../visuals/power-bi-visualization-smart-narrative.md
+      - name: "Anomaly detection"
+        href: ../visuals/power-bi-visualization-anomaly-detection.md
       - name: "Doughnut charts"
         href: ../visuals/power-bi-visualization-doughnut-charts.md
       - name: "Filled maps (choropleths)"

@@ -26,8 +26,8 @@ You can go through the [Embedding setup tool](https://aka.ms/embedsetup) to quic
 
 Choose the solution that is right for you:
 
-* [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service. To do this, implement the [Embed for your organization](https://aka.ms/embedsetup/UserOwnsData) solution.
-* [Embedding for your customers](embedding.md#embedding-for-your-customers) allows you to embed dashboards and reports to users who don't have a Power BI account. To do this, implement the [Embed for your customers](https://aka.ms/embedsetup/AppOwnsData) solution.
+* [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service. To do this, in the [Embedding setup tool](https://app.powerbi.com/embedsetup), implement the *Embed for your organization* solution.
+* [Embedding for your customers](embedding.md#embedding-for-your-customers) allows you to embed dashboards and reports to users who don't have a Power BI account. To do this, in the [Embedding setup tool](https://app.powerbi.com/embedsetup), implement the *Embed for your customers* solution.
 
 ![PBIE sample](media/embedding/what-can-you-do-02.png)
 
@@ -54,7 +54,7 @@ To embed for your organization, see [Tutorial: Embed Power BI content into an ap
 
 Self-service capabilities, such as edit, save, and more, are available through the [JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript) when embedding for Power BI users.
 
-You can go through the [Embedding setup tool](https://aka.ms/embedsetup/UserOwnsData) to get started and download a sample application that walks you through integrating a report for your organization.
+You can go through the [Embedding setup tool](https://app.powerbi.com/embedsetup) to get started and download a sample application that walks you through integrating a report for your organization.
 
 ## Embedding for your customers
 

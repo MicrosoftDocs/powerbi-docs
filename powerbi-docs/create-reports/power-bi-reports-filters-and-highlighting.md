@@ -2,14 +2,12 @@
 title: Filters and highlighting in Power BI reports
 description: About filters and highlighting in Power BI reports
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 10/23/2019
-ms.author: maggies
-
 LocalizationGroup: Reports
 ---
 # Filters and highlighting in Power BI reports

@@ -1,15 +1,13 @@
 ---
 title: DAX basics in Power BI Desktop
 description: DAX basics in Power BI Desktop
-author: davidiseminger
+author: Minewiskan
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 10/21/2019
-ms.author: davidi
-
 LocalizationGroup: Model your data
 ---
 # Apply DAX basics in Power BI Desktop

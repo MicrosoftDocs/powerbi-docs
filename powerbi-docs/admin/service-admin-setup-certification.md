@@ -2,12 +2,11 @@
 title: Enable content certification
 description: Learn how to enable certification for datasets, dataflows, reports, and apps.
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 10/26/2020
-ms.author: painbar
-
 LocalizationGroup: Share your work
 ---
 # Enable content certification

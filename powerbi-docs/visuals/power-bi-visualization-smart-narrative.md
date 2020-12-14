@@ -2,13 +2,13 @@
 title: Smart narratives tutorial
 description: 'Tutorial: Create smart narrative summary visualizations in Power BI'
 author: aphilip94
-ms.reviewer: aphilip94
-ms.service: powerbi
-ms.subservice: powerbi-desktop
-ms.topic: how-to
-ms.date: 09/14/2020
 ms.author: anphil
-
+ms.reviewer: mihart
+ms.service: powerbi
+ms.subservice: pbi-visuals
+ms.topic: how-to
+ms.date: 11/06/2020
+ms.custom: video-01UrT-z37sw
 LocalizationGroup: Visualizations
 ---
 # Create smart narrative summaries (preview)
@@ -28,9 +28,12 @@ Use smart narrative summaries in your reports to address key takeaways, to point
 >
 >![Screenshot showing Power BI Options. The Smart narrative visual option is selected.](media/power-bi-visualization-smart-narratives/2.png)
 
-To follow along with this tutorial, download the [sample file](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix) of an online-sales scenario.
+
 
 ## Get started 
+Watch Justyna show you how to use smart narratives, then try it out yourself using the tutorial, below the video.  To follow along with this tutorial, download the [sample file](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix) of an online-sales scenario.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/01UrT-z37sw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 In the **Visualizations** pane, select the **Smart narrative** icon to automatically generate a summary.
 
@@ -94,5 +97,6 @@ The smart narrative feature doesn't support the following functionality:
 - Cross-filtering out of a visual
 - Renaming dynamic values or editing automatically generated dynamic values
 - Summaries of visuals that contain on-the-fly calculations like QnA arithmetic and percentage of grand total 
+- [Calculation groups](/analysis-services/tabular-models/calculation-groups)
    
 

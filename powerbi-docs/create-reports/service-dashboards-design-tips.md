@@ -2,14 +2,12 @@
 title: Tips for designing a great Power BI dashboard
 description: Tips for designing a great Power BI dashboard
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 08/14/2019
-ms.author: maggies
-
 LocalizationGroup: Dashboards
 ---
 # Tips for designing a great Power BI dashboard

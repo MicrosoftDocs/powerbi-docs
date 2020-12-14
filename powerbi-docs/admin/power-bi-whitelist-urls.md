@@ -5,7 +5,7 @@ author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/25/2020
 ms.custom: seodec18
@@ -71,7 +71,7 @@ To get data from specific data sources, such as OneDrive, you must be able to co
 | 2 | **Optional:** Sign in and get data for content packs | Depends on content packs used | Depends on content packs used |
 | 3 | **Optional:** Import files From OneDrive personal | See the [Required URLs and ports for OneDrive site](/onedrive/required-urls-and-ports) | N/A |
 | 4 | **Optional:** Power BI in 60-Seconds tutorial video | *.doubleclick.net <br> *.ggpht.com <br> *.google.com <br> *.googlevideo.com <br> *.youtube.com <br> *.ytimg.com <br> fonts.gstatic.com | TCP 443 |
-| 5 | **Optional:** PubNub streaming data sources | See the [PubNub documentation](https://support.pubnub.com/support/solutions/articles/14000043522) | N/A |
+| 5 | **Optional:** PubNub streaming data sources | See the [PubNub documentation](https://support.pubnub.com/hc/en-us/categories/360004336832-PubNub-101) | N/A |
 | | | |
 
 ## Dashboard and report integration

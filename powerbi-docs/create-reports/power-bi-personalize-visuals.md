@@ -2,14 +2,12 @@
 title: Let users personalize visuals in a report
 description: Let report readers create their own view of a report, without editing it. 
 author: maggiesMSFT
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: how-to
-ms.date: 09/25/2020
 ms.author: maggies
-
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: pbi-reports-dashboards
+ms.topic: how-to
+ms.date: 11/13/2020
 LocalizationGroup: Reports
 ---
 # Let users personalize visuals in a report
@@ -92,7 +90,7 @@ Once you set the Perspective for the report page, the Personalize visuals experi
 
 ## Enable personalization in a report
 
-You can enable the feature either in Power BI Desktop or the Power BI service.
+You can enable the feature either in Power BI Desktop or the Power BI service. You can also enable it in embedded reports.
 
 ### In Power BI Desktop
 

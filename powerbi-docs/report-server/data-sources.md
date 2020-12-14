@@ -2,14 +2,12 @@
 title: Power BI report data sources in Power BI Report Server
 description: Power BI reports can connect to a number of data sources. Depending on how data is used, different data sources are available.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/04/2020
-ms.author: maggies
-
+ms.date: 10/29/2020
 ---
 # Power BI report data sources in Power BI Report Server
 Power BI reports can connect to a number of data sources. Depending on how data is used, different data sources are available. Data can be imported or data can be queried directly using DirectQuery or a live connection to SQL Server Analysis Services. Some data sources are available in Power BI Desktop optimized for Power BI Report Server, but aren't supported when published to Power BI Report Server.
@@ -185,6 +183,8 @@ Power BI Report Server does not support OAuth-based authentication for model ref
 | Zendesk (Beta) |No |No |No |No |
 
 **Using LDAP authentication with Teradata (enabled in Power BI Desktop by using the Command Prompt command 'setx PBI_EnableTeradataLdap true') is not supported for model refresh.
+
+Power BI Report Server has a limitation when using web data: only data files from web can be refreshed. Data based on Page or By example aren't refreshable. This limitation is because the M expressions created with Web.BrowserContents and Web.Page can't be refreshed. Power BI Report Server can only refresh Web.Contents data sources.
 
 ## List of supported authentication methods for DirectQuery
 

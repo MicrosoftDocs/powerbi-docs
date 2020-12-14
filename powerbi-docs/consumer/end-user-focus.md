@@ -2,23 +2,22 @@
 title: Focus mode and full screen mode - how to zoom in to see more detail
 description: Documentation for displaying a Power BI dashboard, dashboard tile, report, or report visual in focus mode or full screen mode
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: dtdLul6otYE
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/09/2020
-ms.author: mihart
-
+ms.date: 12/03/2020
 LocalizationGroup: Common tasks
+ms.custom: video-dtdLul6otYE
 ---
 
 # Display content in more detail: focus mode and full screen mode
 
 [!INCLUDE [consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]    
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dtdLul6otYE" frameborder="0" allowfullscreen></iframe>
 
@@ -38,7 +37,7 @@ In this example below, we started with a report (1), opened one of the visuals i
 
 ## When to use full screen mode
 
-![dashboard full screen mode before and after](media/end-user-focus/power-bi-dashboards-focus.png)
+![dashboard full screen mode before and after](media/end-user-focus/power-bi-dashboard-focus.png)
 
 Display your Power BI service content (dashboards, report pages, and visuals) without the distraction of menus and nav panes.  You get an unadulterated, full view of your content at a glance, all the time. This is sometimes referred to as TV mode.   
 
@@ -55,7 +54,7 @@ Some uses for full screen mode are:
 
 ***Focus*** mode lets you expand (pop out) a visual or tile to see more detail.  Maybe you have a dashboard or report that is a little crowded and you want to zoom in on only one visual.  This is a perfect use of focus mode.  
 
-![dashboard tile focus mode before and after](media/end-user-focus/power-bi-compare-dash.png)
+![dashboard tile focus mode before and after](media/end-user-focus/power-bi-compare.png)
 
 While in focus mode, a Power BI *business user* can interact with any filters that were applied when this visual was created.  In the Power BI service, you can use focus mode on a dashboard tile or report visual.
 

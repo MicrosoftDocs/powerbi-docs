@@ -2,17 +2,17 @@
 title: Power BI data sources
 description: This article lists the data sources that Power BI supports, including information about DirectQuery and the on-premises data gateway.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 10/07/2020
-ms.author: davidi
+ms.date: 12/10/2020
 ---
 
 # Power BI data sources
 
-The following table shows the data sources that Power BI supports for datasets, including information about DirectQuery and the on-premises data gateway. For information about dataflows, see [Connect to data sources for Power BI dataflows](../transform-model/service-dataflows-data-sources.md).
+The following table shows the data sources that Power BI supports for datasets, including information about DirectQuery and the on-premises data gateway. For information about dataflows, see [Connect to data sources for Power BI dataflows](../transform-model/dataflows/dataflows-configure-consume.md).
 
 | Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
 |---|---|---|---|---|---|---|---|
@@ -38,7 +38,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Azure Table Storage | Yes | Yes | No | Yes | No | Yes |
 | BI Connector | Yes | Yes | Yes | Yes | Yes | No |
 | BI360 - Budgeting & Financial Reporting | Yes | Yes | No | No | No | No |
-| Common Data Service | Yes | Yes | No | No | No | Yes |
+| Microsoft Dataverse | Yes | Yes | No | No | No | Yes |
 | Data.World - Get Dataset | Yes | Yes | No | No | No | No |
 | Denodo | Yes | Yes | Yes | Yes | Yes | No |
 | Dremio | Yes | Yes | Yes | Yes | Yes | No |
@@ -57,8 +57,9 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Folder | Yes | Yes | No | Yes | Yes | Yes |
 | GitHub | Yes | Yes | No | No | No | No |
 | Google Analytics | Yes | Yes | No | No | No | No |
-| Google BigQuery | Yes | Yes | Yes | No | No | Yes |
+| Google BigQuery | Yes | Yes | Yes | Yes | No | Yes |
 | Hadoop File (HDFS) | Yes | No | No | No | No | No |
+| Hive LLAP | Yes | Yes | Yes | Yes | No | No |
 | HDInsight Interactive Query | Yes | Yes | Yes | No | No | No |
 | IBM DB2 | Yes | Yes | Yes | Yes | No | Yes |
 | IBM Informix Database | Yes | Yes | No | Yes | No | No |
@@ -142,7 +143,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 
 <sup>6</sup> Required for .html, .xls, and Access Databases
 
-<sup>7</sup> Power BI service doesn't support OData feeds that require authentication.
+<sup>7</sup> Power BI service doesn't support generic OAuth2.
 
 <sup>8</sup> Paxata is supported in the version of Power BI Desktop optimized for Power BI Report Server. It isn't supported in Power BI reports published to Power BI Report Server. See [Power BI report data sources in Power BI Report Server](../report-server/data-sources.md) for the list of supported data sources.
 
@@ -166,9 +167,6 @@ The SSO option takes effect across all datasets that use this data source. It do
 - Spark
 - SQL Server
 - Teradata
-
-> [!Note]
-> Azure Multi-Factor Authentication (MFA) is not supported. Users who want to use SSO with DirectQuery must be exempted from MFA.
 
 ## Next steps
 

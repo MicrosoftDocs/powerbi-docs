@@ -37,7 +37,13 @@ You have several API options for interacting with Power BI Report Server. This t
 You can also use the open-source [PowerShell utilities](https://github.com/Microsoft/ReportingServicesTools) to manage your report server.
 
 > [!NOTE]
-> The PowerShell utilities don't currently support Power BI Desktop files (.pbix).
+> The PowerShell utilities support Power BI Desktop files (.pbix) via the -RsRest* commands.
+
+Run the following command to find which commands in the ReportingServicesTools PowerShell module support Power BI Desktop files (.pbix).
+
+```powershell
+Get-Command -Module ReportingServicesTools -Noun RsRest*
+```
 
 ## Custom extensions
 
