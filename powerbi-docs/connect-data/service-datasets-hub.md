@@ -68,7 +68,7 @@ When you create a new report based on the dataset, the report edit canvas opens.
 
 ## View dataset details and explore related reports
 
-To see more information about the dataset, to explore related reports, or to create a new report based on the dataset, from scratch or from a template, pick a dataset from the recommended datasets or from the datasets list. A page will open that shows you information about the dataset, lists the reports that are built on top of the dataset, and provides entry points for creating new reports based on the dataset or pulling the data into Excel via Analyze in Excel.
+To see more information about the dataset, to explore related reports, or to create a new report based on the dataset, from scratch or from a template, pick a dataset from the recommended datasets or from the datasets list. A page will open that shows you information about the dataset, lists the reports that are built on top of the dataset, and provides entry points for creating new reports based on the dataset or pulling the data into Excel via [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md).
 
 ![Screenshot of datasets hub explore related reports page](media/service-datasets-hub/datasets-hub-explore-related-reports.png)
 
@@ -100,7 +100,7 @@ If there are no report templates, clicking **Create** will open the report editi
 
 ### Pull the dataset into Excel via Analyze in Excel
 
-In the Analyze in Excel section, select **Analyze** to pull the dataset into Excel via Analysis in Excel.
+In the Analyze in Excel section, select **Analyze** to pull the dataset into Excel via Analyze in Excel.
 
 ## Make your dataset discoverable
 
