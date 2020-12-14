@@ -120,7 +120,7 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
     1. In **Redirect URIs** add `https://localhost:5000/signin-oidc` and select **Configure**.
     
-    2. In *Implicit grant and hybrid flows*, enable the **Access tokens (use for implicit flows)** option.
+    2. In *Implicit grant and hybrid flows*, enable the **Access tokens** option.
     
     3. Select **Configure**.
 
@@ -160,8 +160,9 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
     1. In **Redirect URIs** add `https://localhost:44300/` and select **Configure**.
     
-    2. In *Implicit grant and hybrid flows*, enable the **Access tokens (use for implicit flows)** option.
-    1. Select **Configure**.
+    2. In *Implicit grant and hybrid flows*, enable the **ID tokens** option.
+    
+    3. Select **Configure**.
 
     :::image type="content" source="media/embed-sample-for-your-organization/azure-ad-framework-configurations.png" alt-text="Screenshot showing the Azure AD app authentication configurations including the web redirect U R I and the selected access token option for the .NET framework app sample.":::
 
@@ -184,6 +185,44 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 [!INCLUDE[The embedded application sample app interface](../../includes/embed-tutorial-org-sample-app.md)]
 
 # [React](#tab/react)
+
+### Configure your Azure AD app
+
+[!INCLUDE[Configure the Azure AD authentication options](../../includes/embed-tutorial-org-azure-ad-app.md)]
+
+    1. In **Redirect URIs** add `https://localhost:3000` and select **Configure**.
+    
+    2. In *Implicit grant and hybrid flows*, enable the **Access tokens** option.
+    
+    3. Select **Configure**.
+
+    :::image type="content" source="media/embed-sample-for-your-organization/azure-ad-net-configurations.png" alt-text="Screenshot showing the Azure AD app authentication configurations including the web redirect U R I and the selected access token option for the .NET core app sample.":::
+
+[!INCLUDE[Configure the Azure AD permissions](../../includes/embed-tutorial-org-azure-ad-permissions.md)]
+
+### Configure the sample embedding app
+
+1. Open the **Embed for your organization** > **UserOwnsData** > **src** folder.
+
+2. Using a text editor, open the **Config.ts** file and fill in the following parameter values:
+
+    * `clientId` - Use the [client ID](#client-id) GUID
+
+    * `workspaceId` - Use the [client secret](#client-secret)
+
+    * `reportId` - 
+
+3. Save the file.
+
+4. Open a terminal in and navigate to **Embed for your organization** > **UserOwnsData**.
+
+5. Install required dependencies by executing the following command:
+
+   `npm install`
+
+6. Run the application by executing the following command:
+
+   `npm run start`
 
 ---
 
