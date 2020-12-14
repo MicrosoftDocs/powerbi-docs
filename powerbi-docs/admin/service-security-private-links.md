@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 12/09/2020
+ms.date: 12/14/2020
 ms.custom: 
 LocalizationGroup: Administration
 ---
@@ -300,12 +300,10 @@ And that's it - after following these steps, Power BI for your organizations is 
 
 There are a few considerations to keep in mind while working with private links in Power BI:
 
-* Any use of external images or themes are not available when using a private link environment
-* Export services, such as Export to PDF, exporting to Excel from a report, and other export services do not work when using a private link environment
-* SQL Server Reporting Services reports, commonly known as RDL files (*.rdl format files) do not render in private link environments
-* If Internet access is disabled, and if the dataset or dataflow is connecting to a Power BI dataset or dataflow as a data source, the connection will fail
-* Usage metrics do *not* work when Private Links is enabled
-* Publish to Web is not supported (and grayed out) when you enable **Block Public Internet access** in Power BI
+* Any use of external images or themes are not available when using a private link environment, and may affect custom visuals.
+* If Internet access is disabled, and if the dataset or dataflow is connecting to a Power BI dataset or dataflow as a data source, the connection will fail.
+* Usage metrics do *not* work when Private Links is enabled.
+* Publish to Web is not supported (and grayed out) when you enable **Block Public Internet access** in Power BI.
 
 
 ## Next steps
