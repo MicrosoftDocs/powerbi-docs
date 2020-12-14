@@ -60,6 +60,17 @@ Specify the pages you want to print according to the [Get Pages](/rest/api/power
 >[!NOTE]
 >[Personal bookmarks](../../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
 
+### Filters
+
+Using the [ExportFilter](/rest/api/power-bi/reports/exporttofile#exportfilter) method you can export a report in a filtered condition.
+
+|Syntax    |Example    |    |
+|----|----|----|
+|Table/Field eq 'value'    |Store/Territory eq 'NC    |    |
+|Table/Field in ('value1', 'value2')     |Store/Territory in ('NC', 'TN')    |    |
+|    |Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'    |    |
+
+
 ### Authentication
 
 You can authenticate using a user (or master user) or a [service principal](embed-service-principal.md).
