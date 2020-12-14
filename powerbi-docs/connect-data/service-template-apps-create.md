@@ -14,7 +14,7 @@ ms.date: 12/14/2020
 
 Power BI *template apps* enable Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  This article contains step-by-step instructions for creating a Power BI template app.
 
-If you can create Power BI reports and dashboards, you can become a *template app builder* and build and package analytical content into an *app*. You can then deploy your app to other Power BI tenants through any available platform, such as AppSource or your own web service. If you're distributing your template app through your own web service, you can even [automate part of the installation process](../developer/template-apps/template-apps-auto-install) to make things easier for your customers.
+If you can create Power BI reports and dashboards, you can become a *template app builder* and build and package analytical content into an *app*. You can then deploy your app to other Power BI tenants through any available platform, such as AppSource or your own web service. If you're distributing your template app through your own web service, you can even [automate part of the installation process](../developer/template-apps/template-apps-auto-install.md) to make things easier for your customers.
 
 Power BI admins govern and control who in their organization can create template apps, and who can install them. Those users who are authorized can install your template app, then modify it and distribute it to the Power BI consumers in their organization.
 
