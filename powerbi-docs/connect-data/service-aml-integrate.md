@@ -29,9 +29,9 @@ Before starting this tutorial, you need to:
 
 - Train and deploy a machine learning model in Azure Machine Learning. Use one of these three Azure Machine Learning tutorials: 
 
-    - Option A: Code
-    - Option B: Designer
-    - Option C: AutoML UI
+    - [Option A: Code](/azure/machine-learning/tutorial-power-bi-custom-model)
+    - [Option B: Designer](/azure/machine-learning/tutorial-power-bi-designer-model)
+    - [Option C: Automated ML](/azure/machine-learning/tutorial-power-bi-automated-model)
 
 - Sign up for a [free Power BI trial](https://app.powerbi.com/signupredirect?pbi_source=web).
 - [Install Power BI Desktop](https://powerbi.microsoft.com/desktop/) on a local computer.
