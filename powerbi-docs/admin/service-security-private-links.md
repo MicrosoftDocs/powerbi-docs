@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 12/09/2020
+ms.date: 12/14/2020
 ms.custom: 
 LocalizationGroup: Administration
 ---
