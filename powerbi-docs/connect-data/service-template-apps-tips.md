@@ -50,6 +50,8 @@ Ensure your queries are resilient to changes in your system, changes in schema o
 > Template apps support all parameters except Any and Binary.
 >
 
+If you are an ISV and are distributing your template app via your web service, you can create automation that configures template app parameters automatically when your customers install the app in their Power BI account. This makes things easier for your customers and increases the likelihood of a successful installation because they don't have to supply details that they might not know. See [Automated configuration of a template app installation](../developer/template-apps/template-apps-auto-install.md) for details.
+
 ### Additional query tips
 
 * Ensure all columns are typed appropriately.
