@@ -24,7 +24,7 @@ This command installs the package and adds a package as a dependency to your pac
 
 ## DataViewWildcard
 
-`DataViewWildcard` provides the `createDataViewWildcardSelector` function to support a property's [conditional formatting](conditional-formatting.md#define-how-conditional-formatting-behaves).
+`DataViewWildcard` provides the `createDataViewWildcardSelector` function to support a property's [conditional formatting](conditional-format.md#define-how-conditional-formatting-behaves).
 
 `createDataViewWildcardSelector` returns a selector required for defining how the conditional formatting entry in the format pane will be applied, based on `dataviewWildcardMatchingOption (InstancesAndTotals (default), InstancesOnly, TotalsOnly)`.
 
