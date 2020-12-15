@@ -72,7 +72,7 @@ Read more about [collaborating in Microsoft Teams with Power BI](service-collabo
 
 ## Share dashboards and reports
 
-Let's say you've finalized a report in Power BI Desktop, and you want other people to have access to it. One way to get it to them is to *share* it in the Power BI service. You publish it to your own My Workspace or another workspace. Maybe you create a dashboard to go with it, and you're ready.
+Let's say your report in Power BI Desktop is ready, and you want other people to have access to it. One way to get it to them is to *share* it in the Power BI service. You publish it to your own My Workspace or another workspace. Maybe you create a dashboard to go with it, and you're ready.
 
 ![Share a report](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-report.png)
 
@@ -113,14 +113,14 @@ You can publish apps to people outside your organization, too. They can view and
 ### Embed in secure portals
 
 You can embed Power BI reports in portals or web sites where your users expect to see them.  
-With the **Embed in SharePoint Online** and the **Embed** option in the Power BI service, you can securely embed reports for your internal users. Whichever option you choose, Power BI enforces all permissions and data security before users can see content. The person viewing the report needs the appropriate license.  
+With the **Embed in SharePoint Online** and the **Embed** option in the Power BI service, you can securely embed reports for your internal users. Whichever option you choose, Power BI enforces all permissions and data security before users see content. The person viewing the report needs the appropriate license.  
 
 - **Embed in SharePoint Online** works with the Power BI web part for SharePoint Online. It provides a single sign-on experience with control over how the report is embedded. Read more about [Embedding in SharePoint Online](service-embed-report-spo.md).
 - **Embed** works with any portal or web site that supports embedding content using a URL or an iFrame. Read more about the [Embed](service-embed-secure.md) option.
 
 ### Publish to public web sites
 
-With **Publish to web**, you can publish Power BI reports to the whole Internet by embedding visualizations in blog posts, web sites, social media, and other online communications. Anyone on the Internet can view your reports, and you have no control over who can see what you've published. They don't need a Power BI license. Publishing to the web is available only for reports that you can edit. You can't publish reports to the web if they're shared with you or if they're in an app. Read about how to [publish to the web](service-publish-to-web.md).
+**Publish to web** allows you to publish Power BI reports to the whole Internet by embedding visualizations in blog posts, web sites, social media, and other online communications. Anyone on the Internet can view your reports, and you have no control over who sees what you've published. They don't need a Power BI license. Publishing to the web is available only for reports that you can edit. You can't publish reports to the web if they're shared with you or if they're in an app. Read about how to [publish to the web](service-publish-to-web.md).
 
 >[!Warning]
 >Use [Publish to web](service-publish-to-web.md) only to share content publicly, not for internal sharing.
