@@ -84,7 +84,7 @@ The improved usage metrics report includes the following report pages:
 | Report usage | Rank | Based on view count, the rank shows the popularity of a report in comparison to all other reports in the organization. A rank of 1 would mean the report has the most views of all reports in the organization.   |
 | Report usage | Report views per day | Total number of Report Views per day. Counted at report level, does not consider Report Page Views. |
 | Report usage | Report viewers per day | Total number of different users who viewed the report (based on the AAD user account). |
-| Report usage | Distribution method | How users got access to the report, such as by being members of a workspace, by having the report shared with them, or by installing an app. |
+| Report usage | Distribution method | How users got access to the report, such as being members of a workspace, having the report shared with them, or installing an app. |
 | Report usage | Platform slicer | If the report was accessed via the Power BI service (powerbi.com), Power BI Embedded, or a mobile device. |
 | Report usage | Users with report views | Shows the list of users who opened the report sorted by view count. |
 | Report usage | Pages | If the report has more than 1 page, slice the report by the page(s) that was viewed. "Blank" means either a report page was added within 24 hours of the new page appearing in the slicer list, or report pages have been deleted. "Blank" captures these types of situations. |
@@ -92,7 +92,7 @@ The improved usage metrics report includes the following report pages:
 | Report performance | Opening time trend | The opening time trend reflects open-report performance changes over time. It compares the opening times for the report of the first half of the selected time period with the opening times of the second half. |
 | Report performance | Date slicer | You can change the time period on the Report performance page, such as to calculate week-over-week or biweekly trends. In the lower left corner of the Report performance page, you can determine the earliest and latest date for which usage data is available for the selected report. |
 | Report performance | Daily performance | The performance for 10%, 50%, and 90% of the open report actions calculated for each individual day. |
-| Report performance | seven-day performance | The performance for 10%, 50%, and 90% of the open report actions calculated across the past 7 days for each date. |
+| Report performance | seven-day performance | The performance for 10%, 50%, and 90% of the open report actions calculated across the past seven days for each date. |
 | Report performance | Consumption method | How users opened the report, such as via the Power BI service (powerbi.com), Power BI Embedded, or a mobile device. |
 | Report performance | Browsers | What browser the users used to open the report, such as Firefox, Edge, and Chrome. |
 
@@ -160,11 +160,11 @@ Usage metrics reports are a feature that the Power BI or global administrator ca
 
 ## Exclude user information from usage metrics reports
 
-By default, per-user data is enabled for usage metrics, and content consumer account information is included in the metrics report. If admins don't want to expose this information for some or all users, they can exclude user information from your usage report by disabling Per-user data in usage metrics for content creators in the Power BI admin portal tenant settings for specified security groups or for the entire organization.
+By default, per-user data is enabled for usage metrics. Content consumer account information is included in the metrics report. If admins don't want to expose this information for some or all users, they can exclude user information from your usage report. In the Power BI admin portal tenant settings, they can disable per-user data in usage metrics for specified security groups or for the entire organization.
 
 1. On the **Tenant settings** tab in the admin portal, under **Audit and usage settings**, expand **Per-user data in metrics for content creators** and select **Disabled**.
 
-2. Decide whether to **Delete all existing per-user data in current usage metrics content**, and select **Apply**.
+2. Decide whether to **Delete all existing per-user data in current usage metrics content**. Select **Apply**.
 
     ![Disable per-user metrics](media/service-modern-usage-metrics/power-bi-admin-disable-per-user-metrics.png)
 
@@ -181,7 +181,7 @@ To dig into the report data, or to build your own reports against the underlying
 
 - **[Make a copy of the report](#create-a-copy-of-the-usage-report) in the Power BI service.**   Use **Save a copy** to create a separate instance of the usage metrics report, which you can customize to meet your specific needs.
 - **[Connect to the dataset](#create-a-new-usage-report-in-power-bi-desktop) with a new report.**   For every workspace, the dataset has the name "Usage Metrics Report," as explained earlier in the section [Usage metrics report dataset](#usage-metrics-report-dataset). You can use Power BI Desktop to build custom usage metrics reports based on the underlying dataset.
-- **[Use Analyze in Excel](#analyze-usage-data-in-excel).**   You can also take advantage of PivotTables, charts, and slicer features in Microsoft Excel 2010 SP1 or later to analyze the Power BI usage data. Read more about the [Analyze in Excel](service-analyze-in-excel.md) feature.
+- **[Use Analyze in Excel](#analyze-usage-data-in-excel).**   You can also analyze the Power BI usage data in PivotTables, charts, and slicer features in Microsoft Excel. Read more about the [Analyze in Excel](service-analyze-in-excel.md) feature.
 
 ### Create a copy of the usage report
 
@@ -243,7 +243,7 @@ When you connect to the usage data in Excel, you can create PivotTables that use
 
     ![Analyze in Excel](media/service-modern-usage-metrics/power-bi-export-excel.png)
 
-1. If you see the **First, you need some Excel updates** dialog box, select **Download** and install the latest updates for Power BI connectivity, or select **I've already installed these updates**.
+1. If you see the **First, you need some Excel updates** dialog box, select **Download** and install the latest updates for Power BI connectivity. Otherwise, select **I've already installed these updates**.
 
     ![Excel updates](media/service-modern-usage-metrics/power-bi-excel-updates.png)
 
