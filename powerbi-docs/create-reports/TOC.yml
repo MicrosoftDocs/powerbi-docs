@@ -124,7 +124,7 @@
     items: 
     - name: Power BI reports
       items: 
-      - name: "Create reports quickly in the service"
+      - name: "Create quick reports in the service"
         href: service-quick-create-report.md
       - name: "Create a report from Excel in the service"
         href: service-report-create-new.md
