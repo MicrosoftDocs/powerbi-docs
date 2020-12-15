@@ -41,11 +41,10 @@ You can also watch the entire [Power BI monthly update video](#power-bi-desktop-
 
 The following updates are new to Power BI Desktop this month:
 
-
 ### Reporting
-* DirectQuery for Power BI datasets and Azure Analysis Services (preview) [[video]](https://youtu.be/68YvRs49VZM?t=33)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831296)   [[article]](../create-reports/power-bi-personalize-visuals.md)
+* DirectQuery for Power BI datasets and Azure Analysis Services (preview) [[video]](https://youtu.be/68YvRs49VZM?t=33)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831296)   [[article]](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)
 * Small multiples (preview) [[video]](https://youtu.be/68YvRs49VZM?t=378)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831297)
-* Data protection sensitivity labels in Power BI Desktop (preview) [[video]](https://youtu.be/68YvRs49VZM?t=656)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831298)  [[article]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
+* Data protection sensitivity labels in Power BI Desktop (preview) [[video]](https://youtu.be/68YvRs49VZM?t=656)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831298) 
 * Increased rectangle select data point limit [[video]](https://youtu.be/68YvRs49VZM?t=734)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831299) 
 * Selection pane now available in mobile layout view [[video]](https://youtu.be/68YvRs49VZM?t=757)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831300) 
 * Automatic page refresh for Analysis Services sources [[video]](https://youtu.be/68YvRs49VZM?t=789)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2020-feature-summary/#_Toc58831301) 

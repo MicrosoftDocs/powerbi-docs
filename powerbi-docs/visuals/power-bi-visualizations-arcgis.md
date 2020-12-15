@@ -63,7 +63,7 @@ To add a map to a report, follow these steps:
 3. From the **Fields** pane, drag a data field to the **Location** field, or drag coordinates into the appropriate **Latitude** and/or  **Longitude**  buckets. In this example, we're using **Store > City**.
 
     > [!NOTE]
-    > ArcGIS for Power BI automatically detects whether the fields you've selected are best viewed as a shape or a point on a map. You can adjust the default in the settings (see [format the ArcGIS for Power BI visualization](#format-the-arcgis-maps-for-power-bi-visualization)).
+    > ArcGIS for Power BI automatically detects whether the fields you've selected are best viewed as a shape or a point on a map. You can adjust the default in the settings (see [format the ArcGIS for Power BI visualization](#format-the-arcgis-for-power-bi-visualization)).
 
     ![ArcGIS City field](media/power-bi-visualizations-arcgis/arcgis-tutorial-04.png)
 

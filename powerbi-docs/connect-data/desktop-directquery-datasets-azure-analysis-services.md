@@ -17,9 +17,7 @@ With **DirectQuery for Power BI datasets and Azure Analysis Services (AAS)**, yo
 
 ## Enable the preview feature
 
-Since the functionality is currently in preview, you must enable first enable it. To do so, in Power BI Desktop go to Options > blah > blah, and in the **Reports** section, enable the checkbox next to BLAH.
-
-[image]
+Since the functionality is currently in preview, you must enable first enable it. To do so, in Power BI Desktop go to **File > Options and settings > options**, and in the **Report settings** section, select the preview feature checkbox to enable this preview feature. You may need to restart Power BI Desktop for the change to take effect.
 
 ## Using DirectQuery for live connections
 
@@ -81,7 +79,7 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
 
 - To build reports in the Power BI service on a composite model that's based on another dataset, all credentials must be set. On the refresh credential settings page, for Azure Analysis Services sources, the following error will appear, even though the credentials have been set:
     
-    ![Security warning](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-06.png)
+    ![Credentials false warning](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-06.png)
 - As this is confusing and incorrect, this is something we will take care of soon.
 
 - RLS rules will be applied on the source on which they are defined, but will not be applied to any other datasets in the model. RLS defined in the report will not be applied to remote sources, and RLS set on remote sources will not be applied to other data sources.
@@ -90,7 +88,7 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
 
 - You may see some unexpected behavior when using a date hierarchy. To resolve this issue, use a date column instead. After adding a date hierarchy to a visual, you can switch to a date column by clicking on the down arrow in the field name, and then clicking on the name of that field instead of using *Date Hierarchy*:
 
-    ![Security warning](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-07.png)
+    ![Unexpected date hierarchy behavior](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-07.png)
 
     For more information on using date columns versus date hierarchies, visit this article.
 
