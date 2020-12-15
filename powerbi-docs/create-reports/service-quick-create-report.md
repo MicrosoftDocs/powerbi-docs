@@ -1,6 +1,6 @@
 ---
-title: Create reports quickly in the Power BI service
-description: Create reports quickly in the Power BI service
+title: Create quick reports in the Power BI service
+description: There's a new way to create reports quickly in the Power BI service. Paste data straight into Power BI on the web, and Power BI automatically generates visuals for you.  
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -10,12 +10,15 @@ ms.topic: how-to
 ms.date: 12/14/2020
 LocalizationGroup: Reports
 ---
-# Create reports quickly in the Power BI service 
+# Create quick reports in the Power BI service 
 
-There's a new way to quickly create reports in the Power BI service. Instead of downloading the Power BI Desktop app and importing the data, you can paste data straight into Power BI on the web, and Power BI will automatically generate visuals for you.  
+There's a new way to create reports quickly in the Power BI service. Instead of downloading the Power BI Desktop app and importing the data, you can paste data straight into Power BI on the web, and Power BI automatically generates visuals for you.  
+
+New to creating in Power BI? Try reading [Reports in Power BI](../consumer/end-user-reports.md) for some quick background.
 
 :::image type="content" source="media/service-quick-create-report/quick-create.gif" alt-text="Use Power B I Quick Create to create a report quickly.":::
 
+## Create a quick report
 In the navigation pane in the Power BI service, you can select the **Create** button that opens a page where you can select your data source. It's also accessible from the Create button on Home.
 
 :::image type="content" source="media/service-quick-create-report/create-entry-point.png" alt-text="Create entry point icon in the Power B I service."::: 
@@ -56,6 +59,5 @@ This experience should make it easier to create reports on your data and unlock 
 
 ## Next steps
 
-* [Pin visualizations to a dashboard](service-dashboard-pin-tile-from-report.md)
-* [Change report settings in the Power BI service](power-bi-report-settings.md)
+* [Reports in Power BI](../consumer/end-user-reports.md)
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)
