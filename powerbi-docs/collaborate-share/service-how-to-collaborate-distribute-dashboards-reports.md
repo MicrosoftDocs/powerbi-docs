@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 06/18/2020
+ms.date: 12/14/2020
 ms.custom: contperfq4
 LocalizationGroup: Share your work
 ---
@@ -22,22 +22,22 @@ You've created dashboards and reports. Maybe you want to collaborate on them wit
 
 **Collaborate**
 
-- Collaborate with coworkers in *workspaces* to create meaningful reports and dashboards.
-- Collaborate in *Microsoft Teams*.
+- [Collaborate with coworkers in *workspaces*](#collaborate-in-a-workspace) to create meaningful reports and dashboards.
+- [Collaborate in *Microsoft Teams*](#collaborate-in-microsoft-teams).
 
 **Distribute or share dashboards and reports**
 
-- *Share dashboards or reports* from your My Workspace or another workspace.
-- Annotate and share from the Power BI *mobile apps*.
-- Bundle dashboards and reports in workspaces into *apps* and distribute them to a larger group or your whole organization.
-- Embed reports in *secure portals* or *public web sites*.
-- Print reports.
-- Create a *template app* that you can distribute to external Power BI users, via Microsoft AppSource.
+- [*Share dashboards or reports*](#share-dashboards-and-reports) from your My Workspace or another workspace.
+- Annotate and [share from the Power BI *mobile apps*](#annotate-and-share-from-the-power-bi-mobile-apps).
+- Bundle dashboards and reports in workspaces into *apps* and [distribute your apps](#distribute-insights-in-an-app) to a larger group or your whole organization.
+- [Embed reports](#embed-reports-in-secure-portals-or-public-web-sites) in *secure portals* or *public web sites*.
+- [Print reports](#print-or-save-as-pdf-or-other-static-file).
+- [Create a *template app*](#create-and-deploy-template-apps) that you can distribute to external Power BI users, via Microsoft AppSource.
  
 **Share data**
 
-- Create *shared datasets* that coworkers can use as the basis for their own reports, in their own workspaces.
-- Create *dataflows* as a way to share a common data source.
+- [Create *shared datasets*](#share-a-dataset) that coworkers can use as the basis for their own reports, in their own workspaces.
+- [Create *dataflows*](#create-dataflows) as a way to share a common data source.
 
 No matter which option you choose, to share your content you need a [Power BI Pro license](../fundamentals/service-features-license-type.md), or the content needs to be in a [Premium capacity](../admin/service-premium-what-is.md). License requirements vary for the colleagues who view your content, depending on the option you choose. The following sections spell out details. 
 
@@ -62,7 +62,7 @@ Read about how to [create the new workspaces](service-create-the-new-workspaces.
 
 ## Collaborate in Microsoft Teams
 
-Increase data-driven collaboration in your organization by embedding your Power BI reports and Power BI paginated reports in Microsoft Teams. The Power BI service has a **Share in Teams** button for reports. You can add separate Power BI tabs for each individual report, and give each tab the name of the report, or any other name. 
+Increase data-driven collaboration in your organization by embedding your Power BI reports and Power BI paginated reports in Microsoft Teams. The Power BI service has a **Chat in Teams** button for reports. You can add separate Power BI tabs for each individual report, and give each tab the name of the report, or any other name. 
 
 When you add a Power BI report tab to Microsoft Teams, Teams automatically creates a tab conversation for the report. Everyone in that Microsoft Teams channel can see and discuss the report in the conversation. 
 
