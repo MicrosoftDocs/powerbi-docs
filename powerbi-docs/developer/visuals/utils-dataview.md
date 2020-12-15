@@ -28,7 +28,7 @@ This command installs the package and adds a package as a dependency to your pac
 
 `createDataViewWildcardSelector` returns a selector required for defining how the conditional formatting entry in the format pane will be applied, based on `dataviewWildcardMatchingOption (InstancesAndTotals (default), InstancesOnly, TotalsOnly)`.
 
-Eample:
+Example:
 
  ```typescript
 import { dataViewWildcard } from "powerbi-visuals-utils-dataviewutils";
