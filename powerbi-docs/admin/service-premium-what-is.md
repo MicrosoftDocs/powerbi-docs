@@ -45,7 +45,7 @@ Premium Gen2 provides the following updates or improved experiences:
     * Fewer memory restrictions
     * Complete separation between report interaction and scheduled refreshes
 
-* **Improved metrics** with clear and normalized capacity utilization data, that’s dependent only on the complexity of analytics operations the capacity performs, and not on its size, the level of load on the system while performing analytics, or other factors. With the improved metrics, utilization analysis, budget planning, chargebacks, and the need to upgrade are clearly visible with built-in reporting. Improved metrics will be made available and enhanced throughout the preview period.
+* **Improved metrics** with clear and normalized capacity utilization data, that's dependent only on the complexity of analytics operations the capacity performs, and not on its size, the level of load on the system while performing analytics, or other factors. With the improved metrics, utilization analysis, budget planning, chargebacks, and the need to upgrade are clearly visible with built-in reporting. Improved metrics will be made available and enhanced throughout the preview period.
 
 * **Autoscale** allows for *automatically adding* one v-core at a time for 24-hour periods when the load on the capacity exceeds its limits, preventing slowdowns caused by overload. V-cores are automatically removed when idle time is detected. Additional v-cores are charged to your Azure subscription on a pay-as-you-go basis. Autoscale will be made available during the course of the preview period. 
 
@@ -69,9 +69,9 @@ The following image shows how to enable Premium Gen2.
 
 The following known limitations currently apply to Premium Gen2:
 
-1.	Premium Gen2 capacity utilization can't be tracked in the metrics app.
+1.    Premium Gen2 capacity utilization can't be tracked in the metrics app.
 
-2.	Premium Gen2 capacity settings for specific workloads aren't yet visible in the Premium Gen2 capacity settings page in the admin portal. To change settings, transition the capacity to the original version of Premium, change the settings, then set the capacity to using Premium Gen2 once again. Memory allocation settings don't apply to Premium Gen2 capacities.
+2.    Premium Gen2 capacity settings for specific workloads aren't yet visible in the Premium Gen2 capacity settings page in the admin portal. To change settings, transition the capacity to the original version of Premium, change the settings, then set the capacity to using Premium Gen2 once again. Memory allocation settings don't apply to Premium Gen2 capacities.
 
 3.  If you're using XMLA on Premium Gen2, make sure you're using the most recent versions of the [data modeling and management tools](service-premium-connect-tools.md#data-modeling-and-management-tools). 
 
