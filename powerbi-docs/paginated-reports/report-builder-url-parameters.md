@@ -165,8 +165,6 @@ PPTX (PowerPoint):
 
 XML:
 
-- rdl:XSLT=string
-- rdl:MIMEType=string
 - rdl:UseFormattedValues=true/false
 - rdl:Indented=true/false
 - rdl:OmitNamespace=true/false
