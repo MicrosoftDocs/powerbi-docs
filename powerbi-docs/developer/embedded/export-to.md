@@ -62,18 +62,15 @@ Specify the pages you want to print according to the [Get Pages](/rest/api/power
 
 ### Filters
 
-Using the [ExportFilter](/rest/api/power-bi/reports/exporttofile#exportfilter) method you can export a report in a filtered condition. The method works similarly to using [URL query string parameters](../../collaborate-share/service-url-filters.md). However, when you enter the string to `ExportFilter`, you must remove the `?Filter=` part of the URL query.
+Using `reportLevelFilters` in [PowerBIReportExportConfiguration](/rest/api/power-bi/reports/exporttofile#powerbireportexportconfiguration), you can set up the [ExportFilter](/rest/api/power-bi/reports/exporttofile#exportfilter) configuration to export a report in a filtered condition. The configuration works similarly to using [URL query string parameters](../../collaborate-share/service-url-filters.md). However, when you enter the string to `ExportFilter`, you must remove the `?filter=` part of the URL query.
 
-The table below includes a few syntax examples of strings you can pass to the `ExportFilter` method. 
+The table below includes a few syntax examples of strings you can pass to  `ExportFilter`.
 
 |Syntax    |Example    |
 |----|----|----|
-|Table/Field eq 'value'    |Store/Territory eq 'NC    |
+|Table/Field eq 'value'    |Store/Territory eq 'NC'    |
 |Table/Field in ('value1', 'value2')     |Store/Territory in ('NC', 'TN')    |
 |Table/Field1 eq 'value1' and Table/Field2 eq 'value2'    |Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'    |
-
->[!NOTE]
->[ExportFilter](/rest/api/power-bi/reports/exporttofile#exportfilter) only supports report filters.
 
 ### Authentication
 
@@ -152,7 +149,7 @@ private async Task<string> PostExportRequest(
     Guid reportId,
     Guid groupId,
     FileFormat format,
-    IList<string> pageNames = null /* Get the page names from the GetPages REST API */
+    IList<string> pageNames = null, /* Get the page names from the GetPages REST API */
     string urlFilter = null)
 {
     var powerBIReportExportConfiguration = new PowerBIReportExportConfiguration
@@ -277,7 +274,7 @@ private async Task<ExportedFile> ExportPowerBIReport(
 	FileFormat format,
 	int pollingtimeOutInMinutes,
 	CancellationToken token,
-	IList<string> pageNames = null  /* Get the page names from the GetPages REST API */
+	IList<string> pageNames = null,  /* Get the page names from the GetPages REST API */
     string urlFilter = null)
 {
 	const int c_maxNumberOfRetries = 3; /* Can be set to any desired number */
