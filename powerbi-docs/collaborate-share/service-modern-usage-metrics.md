@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 08/31/2020
+ms.date: 12/15/2020
 LocalizationGroup: Dashboards
 ---
 
@@ -76,8 +76,8 @@ The improved usage metrics report includes the following report pages:
 
 | **Page** | **Metric** | **Description** |
 | --- | --- | --- |
-| Report usage | Report views/Report opens | A Report View is recorded each time someone opens a report and represents unique landings on the report. It answers the question "How often is the report accessed?" Note this definition of a Report View differs from previous usage metrics reports. Changing report pages is no longer considered an additional Report View. Activities such as sharing and pinning are no longer considered in usage metrics. |
-| Report usage | Report Page views | A Report Page View is recorded every time a report page is viewed and represents total views across any pages. It ansers the question "How often are report pages accessed?", thus changing report pages is counted for Report Page View. Please see [Considerations and Limitations](#considerations-and-limitations) for important details. |
+| Report usage | Report views/Report opens | A Report View is recorded each time someone opens a report and represents unique landings on the report. It answers the question, "How often is the report accessed?" This definition of a Report View differs from previous usage metrics reports. Changing report pages is no longer considered an additional Report View. Instead, changing report pages counts for the next metric, Report Page Views. Activities such as sharing and pinning are no longer considered in usage metrics. |
+| Report usage | Report Page views | A Report Page View is recorded every time someone views a report page. It represents total views across any pages. It answers the question, "How often are report pages accessed?" So changing report pages counts for Report Page Views. See [Considerations and Limitations](#considerations-and-limitations) for important details. |
 | Report usage | Unique viewers | A viewer is someone who opened the report at least once during the time period (based on the AAD user account). |
 | Report usage | View trend | The view trend reflects view count changes over time. It compares the first half of the selected time period with the second half. |
 | Report usage | Date slicer | You can change the time period on the Report usage page, such as to calculate week-over-week or biweekly trends. In the lower left corner of the Report usage page, you can determine the earliest and latest date for which usage data is available for the selected report. |
