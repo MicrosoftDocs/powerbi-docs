@@ -103,3 +103,4 @@ For more information about DirectQuery, check out the following resources:
 - [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md)
 - [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)
 - [What is an on-premises data gateway?](service-gateway-onprem.md)
+- [Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)
