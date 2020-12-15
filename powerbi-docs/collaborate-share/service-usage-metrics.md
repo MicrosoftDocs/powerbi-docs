@@ -14,7 +14,7 @@ LocalizationGroup: Dashboards
 
 # Monitor usage metrics in classic workspaces
 
-If you create dashboards and reports, usage metrics help you understand their impact. When you run either dashboard usage metrics or report usage metrics, you discover how those dashboards and reports are being used throughout your organization, who's using them, and for what purpose. This article outlines usage metrics reports for [classic workspaces](service-create-workspaces.md). If your reports are in on of the new workspaces, see the article [Monitor usage metrics in the new workspace experience](service-usage-metrics.md)  
+Usage metrics help you understand the impact of your dashboards and reports. When you run either dashboard usage metrics or report usage metrics, you discover how those dashboards and reports are being used throughout your organization, who's using them, and for what purpose. This article outlines usage metrics reports for [classic workspaces](service-create-workspaces.md). If your reports are in on of the new workspaces, see the article [Monitor usage metrics in the new workspace experience](service-usage-metrics.md)  
 
 Usage metrics reports are read-only. However, you can copy a usage metrics report. Copying creates a standard Power BI report that you can edit. You can also build your own reports in Power BI Desktop based on the underlying dataset, which contains usage metrics for all dashboards or all reports in a workspace. To begin with, the copied report shows metrics just for the selected dashboard or report. You can remove the default filter and have access to the underlying dataset, with all the usage metrics of the selected workspace. You may even see the names of specific users, if your admin has allowed that.
 
@@ -65,7 +65,7 @@ You can only run usage metrics reports in the Power BI service. However, if you 
 
 ## About the Usage Metrics report
 
-When you select **Usage metrics** or the icon ![usage metrics icon](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png) next to a dashboard or report, Power BI generates a pre-built report with usage metrics for that content for the last 90 days.  The report looks similar to the Power BI reports you're already familiar with. You can slice based on how your end users received access, whether they accessed via the web or mobile app, etc. As your dashboards and reports evolve, so too will the usage metrics report, which updates every day with new data.  
+When you select **Usage metrics** or the icon ![usage metrics icon](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png) next to a dashboard or report, Power BI generates a pre-built report with usage metrics for that content for the last 90 days.  The report looks similar to the Power BI reports you're already familiar with. You can slice based on how your end users received access, whether they accessed via the web or mobile app, and so on. As your dashboards and reports evolve, so too will the usage metrics report, which updates every day with new data.  
 
 Usage metrics reports don't show up in **Recent**, **Workspaces**, **Favorites**, or other content lists. They can't be added to an app. If you pin a tile from a usage metrics report to a dashboard, you can't add that dashboard to an app.
 
@@ -82,7 +82,7 @@ To dig into the report data, or to build your own reports against the underlying
 | --- | --- | --- | --- |
 | Distribution method slicer |yes |yes |How users got access to the content. There are 3 possible methods: users can access the dashboard or report by being members of a [workspace](../consumer/end-user-experience.md), by having the content [shared with them](service-share-dashboards.md), or by installing a content pack/app.  Note that views through an app are counted as "content pack." |
 | Platforms slicer |yes |yes |Was the dashboard or report accessed via the Power BI service (powerbi.com) or a mobile device? Mobile includes all our iOS, Android, and Windows apps. |
-| Report page slicer |no |yes |If the report has more than 1 page, slice the report by the page(s) that was viewed. If you see a list option for "Blank," that means a report page was recently added (within 24 hours the actual name of the new page appears in the slicer list) and/or report pages have been deleted. "Blank" captures these types of situations. |
+| Report page slicer |no |yes |If the report has more than 1 page, slice the report by the page(s) that was viewed. "Blank" means a report page was recently added (within 24 hours the actual name of the new page appears in the slicer list) or report pages have been deleted. "Blank" captures these types of situations. |
 | Views per day |yes |yes |Total number of views per day - a view is defined as a user loading a report page or dashboard. |
 | Unique viewers per day |yes |yes |Number of *different* users who viewed the dashboard or report (based on the AAD user account). |
 | Views per user |yes |yes |Number of views in the past 90 days, broken down by individual users. |
@@ -98,7 +98,7 @@ To dig into the report data, or to build your own reports against the underlying
 
 Use **Save as** to convert the usage metrics report to a regular Power BI report that you can customize to meet your specific needs. You can also use Power BI Desktop to build custom usage metrics reports based on the underlying dataset. See [Establish a connection to a published dataset](../connect-data/desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset) for details.
 
-Better yet, the underlying dataset includes the usage details for all dashboards or reports in the workspace. This opens up more possibilities. You could, for example, create a report that compares all dashboards in your workspace based on usage. Or you could create a usage metrics dashboard for your Power BI app by aggregating usage across all the content distributed within that app.  See how to remove the filter and [see all usage metrics for the workspace](#see-all-workspace-usage-metrics) later in this article.
+Better yet, the underlying dataset includes the usage details for all dashboards or reports in the workspace. This opens up more possibilities. You could, for example, create a report that compares the dashboards in your workspace, based on usage. Or you could create a usage metrics dashboard for your Power BI app by aggregating usage across all the content distributed within that app.  See how to remove the filter and [see all usage metrics for the workspace](#see-all-workspace-usage-metrics) later in this article.
 
 ### Create a copy of the usage report
 
@@ -107,7 +107,7 @@ When you create a copy of the read-only, pre-built usage report, Power BI create
 1. From the pre-built usage metrics report, select **File > Save As**. Power BI creates an editable Power BI report, saved in the current workspace.
 
     ![Save as](media/service-usage-metrics/power-bi-save-as.png)
-2. Open the report in Editing view and [interact with it as you would with any other Power BI report](../create-reports/service-interact-with-a-report-in-editing-view.md). For example, add new pages and build new visualizations, add filters, format the fonts and colors, etc.
+2. Open the report in Editing view and [interact with it as you would with any other Power BI report](../create-reports/service-interact-with-a-report-in-editing-view.md). For example, add new pages and build new visualizations, add filters, format the fonts and colors, and so on.
 
     ![Open report in Editing view](media/service-usage-metrics/power-vi-editing-view.png)
 3. The new report is saved to the **Reports** tab in the current workspace, and added to the **Recent** content list.
@@ -136,13 +136,13 @@ Usage metrics reports are a feature that the global administrator or Power BI ad
 
 By default, per-user data is enabled for usage metrics, and content consumer account information is included in the metrics report. If admins don’t want to expose this information for some or all users, they can disable the feature for specified security groups or for an entire organization. Account information then shows in the report as *Unnamed*.
 
-When disabling usage metrics for their entire organization, admins can use the **delete all existing usage metrics content** option to delete all existing reports and dashboard tiles that were built using the usage metrics reports. This option removes all access to usage metrics data for all users in the organization who may already be using it. Deleting existing usage metrics content is irreversible.
+When disabling usage metrics for their entire organization, admins can use the **delete all existing usage metrics content** option to delete all existing reports and dashboard tiles that were built using the usage metrics reports. This option removes access to usage metrics data for users in the organization who may already be using it. Deleting existing usage metrics content is irreversible.
 
 See [Control usage metrics](../admin/service-admin-portal.md#control-usage-metrics) in the Admin portal article for details on these settings. 
 
 ## Usage metrics in national clouds
 
-Power BI is available in separate national clouds. These clouds offer the same levels of security, privacy, compliance, and transparency as the global version of Power BI, combined with a unique model for local regulations on service delivery, data residency, access, and control. Due to this unique model for local regulations, usage metrics aren't available in national clouds. For more information, see [national clouds](https://powerbi.microsoft.com/clouds/).
+Power BI is available in separate national clouds. These clouds offer the same levels of security, privacy, compliance, and transparency as the global version of Power BI, combined with a unique model for local regulations on service delivery, data residency, access, and control. Because of this unique model for local regulations, usage metrics aren't available in national clouds. For more information, see [national clouds](https://powerbi.microsoft.com/clouds/).
 
 ## Considerations and limitations
 
@@ -150,7 +150,7 @@ Power BI is available in separate national clouds. These clouds offer the same l
 
 It's important to understand that differences can occur when comparing usage metrics and audit logs, and why. *Audit logs* are collected using data from the Power BI service, and *usage metrics* are collected on the client. Aggregate counts of activities in audit logs may not always match usage metrics, because of the following differences:
 
-* Usage metrics may sometimes undercount activities due to inconsistent network connections, ad blockers, or other issues that can disrupt sending the events from the client.
+* Usage metrics may sometimes undercount activities because of inconsistent network connections, ad blockers, or other issues that can disrupt sending the events from the client.
 * Certain types of views aren't included in usage metrics, as described earlier in this article.
 * Usage metrics may sometimes overcount activities, in situations where the client refreshes without the need for a request being sent back to the Power BI service.
 * Sharing is disabled for the usage metrics report. To give people read access to the report, you first need to give them access to the workspace.
@@ -182,7 +182,7 @@ In addition to potential differences between usage metrics and audit logs, the f
 
 **A2:**    Usage metrics is a Power BI Pro feature.
 
-**Q:**    The data doesn't seem up to date. For example, distribution methods don't show up, report pages are missing, etc.
+**Q:**    The data doesn't seem up to date. For example, distribution methods don't show up, report pages are missing, and so on.
 
 **A:**    It can take up to 24 hours for data to update.
 
