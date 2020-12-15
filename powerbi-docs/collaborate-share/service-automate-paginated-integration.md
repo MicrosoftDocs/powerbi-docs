@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 11/17/2020
+ms.date: 12/14/2020
 LocalizationGroup: Get started
 ---
 # Export Power BI paginated reports with Power Automate
@@ -34,7 +34,7 @@ Select a template from the list to get started with a step-by-step walkthrough.
 
 - [Save a Power BI paginated report to OneDrive for Business or a SharePoint Online folder](service-automate-paginated-onedrive-sharepoint.md).  
 - [Export a Power BI paginated report for items in a SharePoint Online List, or for each row in an Excel Online table](service-automate-paginated-excel-sharepoint-list.md).
-- Save a Power BI paginated report to a local system folder.
+- [Save a Power BI paginated report to a local system folder](service-automate-paginated-local-file.md).
 
 ## Next steps
 

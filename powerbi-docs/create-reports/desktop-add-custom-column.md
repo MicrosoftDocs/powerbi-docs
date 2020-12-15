@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/18/2019
+ms.date: 12/14/2020
 LocalizationGroup: Create reports
 ---
 # Add a custom column in Power BI Desktop
