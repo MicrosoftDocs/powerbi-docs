@@ -62,15 +62,17 @@ Specify the pages you want to print according to the [Get Pages](/rest/api/power
 
 ### Filters
 
-Using `reportLevelFilters` in [PowerBIReportExportConfiguration](/rest/api/power-bi/reports/exporttofile#powerbireportexportconfiguration), you can set up the [ExportFilter](/rest/api/power-bi/reports/exporttofile#exportfilter) configuration to export a report in a filtered condition. The configuration works similarly to using [URL query string parameters](../../collaborate-share/service-url-filters.md). However, when you enter the string to `ExportFilter`, you must remove the `?filter=` part of the URL query.
+Using `reportLevelFilters` in [PowerBIReportExportConfiguration](/rest/api/power-bi/reports/exporttofile#powerbireportexportconfiguration), you can export a report in a filtered condition.
+
+To export a filtered report, enter [URL query string parameters](../../collaborate-share/service-url-filters.md) to [ExportFilter](/rest/api/power-bi/reports/exporttofile#exportfilter). When you enter the string, you must remove the `?filter=` part of the URL query parameter.”
 
 The table below includes a few syntax examples of strings you can pass to  `ExportFilter`.
 
-|Syntax    |Example    |
-|----|----|----|
-|Table/Field eq 'value'    |Store/Territory eq 'NC'    |
-|Table/Field in ('value1', 'value2')     |Store/Territory in ('NC', 'TN')    |
-|Table/Field1 eq 'value1' and Table/Field2 eq 'value2'    |Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'    |
+|Action    |Syntax    |Example    |
+|---|----|----|----|
+|Filtering a value in a field    |Table/Field eq 'value'    |Store/Territory eq 'NC'    |
+|Filtering multiple values in one field    |Table/Field in ('value1', 'value2')     |Store/Territory in ('NC', 'TN')    |
+|Filtering against a distinct value in one field, and a different distinct value in another field    |Table/Field1 eq 'value1' and Table/Field2 eq 'value2'    |Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'    |
 
 ### Authentication
 
