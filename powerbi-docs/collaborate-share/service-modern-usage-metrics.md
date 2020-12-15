@@ -14,9 +14,9 @@ LocalizationGroup: Dashboards
 
 # Monitor usage metrics in the new workspace experience (preview)
 
-Knowing how your content is being used helps you demonstrate your impact and prioritize your efforts. Your usage metrics may show that one of your reports is used daily by a huge segment of the organization and it may show that a dashboard you created isn't being viewed at all. This type of feedback is invaluable in guiding your work efforts.
+Knowing how your content is being used helps you demonstrate your impact and prioritize your efforts. Your usage metrics may show that one of your reports is used daily by a huge segment of the organization. It may show that nobody is viewing a dashboard you created at all. This type of feedback is invaluable in guiding your work efforts.
 
-If you create reports in modern workspaces, you have access to improved usage metrics reports that enable you to discover how those reports are being used throughout your organization and who's using them. You can also identify high-level performance issues. The improved usage reports in the modern Workspace experience replace the existing usage metrics reports documented in [Monitor usage metrics for Power BI dashboards and reports](service-usage-metrics.md).
+If you create reports in modern workspaces, you have access to improved usage metrics reports. They enable you to discover who's using those reports throughout your organization, and and how they're using them. You can also identify high-level performance issues. The improved usage reports in the modern Workspace experience replace the existing usage metrics reports documented in [Monitor usage metrics for Power BI dashboards and reports](service-usage-metrics.md).
 
 ![New Usage Metrics report](media/service-modern-usage-metrics/power-bi-modern-usage-metrics.png)
 
@@ -52,14 +52,14 @@ Only users with admin, member, or contributor permissions can view the improved 
 
 ## About the improved usage metrics report
 
-When you display the improved usage metrics report by following the above procedure, Power BI generates a pre-built report with usage metrics for that content for the last 30 days. The report looks similar to the Power BI reports you're already familiar with. You can slice based on how your end users received access, whether they accessed via the web or mobile app, etc. As your reports evolve, so too will the usage metrics report, which updates every day with new data.
+When you display this improved usage metrics report, Power BI generates a pre-built report. It contains usage metrics for that content for the last 30 days. The report looks similar to the Power BI reports you're already familiar with. You can slice based on how your end users received access, whether they accessed via the web or mobile app, and so on. As your reports evolve, so too will the usage metrics report. It updates every day with new data.
 
 > [!NOTE]
 > Usage metrics reports don't show up in Recent, Workspaces, Favorites, or other content lists. They can't be added to an app. If you pin a tile from a usage metrics report to a dashboard, you can't add that dashboard to an app.
 
 ### Usage metrics report dataset
 
-The improved usage metrics report relies on a Usage Metrics Report dataset, which Power BI creates automatically when you first launch the improved usage metrics report. Power BI then refreshes this dataset daily. While you can't change the refresh schedule, you can update the credentials that Power BI uses to refresh the usage metrics data. This might be necessary to resume scheduled refresh if the credentials expired of if you removed the user who first launched the usage metrics report from the workspace where the dataset resides.
+When you first launch the improved usage metrics report, Power BI automatically creates a Usage Metrics Report dataset. The improved usage metrics report relies on that dataset. Power BI then refreshes this dataset daily. While you can't change the refresh schedule, you can update the credentials that Power BI uses to refresh the usage metrics data. You may need to resume scheduled refresh if the credentials expired, or if you removed the user who first launched the usage metrics report from the workspace where the dataset resides.
 
 > [!NOTE]
 > While still in preview, the usage metrics dataset may have minor changes which affect custom reports.  
@@ -87,23 +87,23 @@ The improved usage metrics report includes the following report pages:
 | Report usage | Distribution method | How users got access to the report, such as by being members of a workspace, by having the report shared with them, or by installing an app. |
 | Report usage | Platform slicer | If the report was accessed via the Power BI service (powerbi.com), Power BI Embedded, or a mobile device. |
 | Report usage | Users with report views | Shows the list of users who opened the report sorted by view count. |
-| Report usage | Pages | If the report has more than 1 page, slice the report by the page(s) that was viewed. If you see a list option for "Blank," that means a report page was recently added (within 24 hours the actual name of the new page appears in the slicer list) and/or report pages have been deleted. "Blank" captures these types of situations. |
-| Report performance | Typical opening time | The typical report opening time corresponds to the 50th percentile of the time it takes to open the report. In other words, it is the time below which 50% of the open-report actions are completed. The Report performance page also breaks down the typical report opening time by consumption method and browser type. At present we measure the performance for the initial report load and first page viewed. The measurement starts when the report is requested and ends when the last visual completes rendering. Report interactions such as slicing, filtering or changing pages are not included in performance metrics.  |
+| Report usage | Pages | If the report has more than 1 page, slice the report by the page(s) that was viewed. "Blank" means either a report page was added within 24 hours of the new page appearing in the slicer list, or report pages have been deleted. "Blank" captures these types of situations. |
+| Report performance | Typical opening time | The typical report opening time corresponds to the 50th percentile of the time it takes to open the report. In other words, it is the time below which 50% of the open-report actions are completed. The Report performance page also breaks down the typical report opening time by consumption method and browser type. At present, we measure the performance for the initial report load and first page viewed. The measurement starts when the report is requested and ends when the last visual completes rendering. Report interactions such as slicing, filtering, or changing pages are not included in performance metrics.  |
 | Report performance | Opening time trend | The opening time trend reflects open-report performance changes over time. It compares the opening times for the report of the first half of the selected time period with the opening times of the second half. |
 | Report performance | Date slicer | You can change the time period on the Report performance page, such as to calculate week-over-week or biweekly trends. In the lower left corner of the Report performance page, you can determine the earliest and latest date for which usage data is available for the selected report. |
 | Report performance | Daily performance | The performance for 10%, 50%, and 90% of the open report actions calculated for each individual day. |
-| Report performance | 7-day performance | The performance for 10%, 50%, and 90% of the open report actions calculated across the past 7 days for each date. |
+| Report performance | seven-day performance | The performance for 10%, 50%, and 90% of the open report actions calculated across the past 7 days for each date. |
 | Report performance | Consumption method | How users opened the report, such as via the Power BI service (powerbi.com), Power BI Embedded, or a mobile device. |
 | Report performance | Browsers | What browser the users used to open the report, such as Firefox, Edge, and Chrome. |
 
 ### Worked example of View and Viewer metrics
 
-Suppose we have a 4 reports which are accessed by 3 users as follows:
+Suppose we have four reports that are accessed by three users as follows:
 
 | **Report Name** | **Usage Pattern** |
 | --- | --- |
 | KPI Report | <ul><li>User A opens the report on page 1. |
-| HR Report | <ul><li>User A opens the report on page 1, then views page 2, page 3 and page 4. Then they view page 1 again. |
+| HR Report | <ul><li>User A opens the report on page 1, then views page 2, page 3, and page 4. Then they view page 1 again. |
 | Finance Report | <ul><li>User A opens the report on page 1, then views page 2.</li><li>User B opens the report on page 1.</li><li>User C opens the report on page 1, then views page 3.</li></ul> |
 | Sales Report | <ul><li>User A opens the report on page 1, then views page 2</li><li>User C opens the report on page 2 (e.g. via bookmark)</li><li>Later in the day, User C opens the report on page 1 </li></ul> |
 
@@ -264,7 +264,7 @@ When you connect to the usage data in Excel, you can create PivotTables that use
 
 ## Usage metrics in national clouds
 
-Power BI is available in separate national clouds. These clouds offer the same levels of security, privacy, compliance and transparency as the global version of Power BI, combined with a unique model for local regulations on service delivery, data residency, access, and control. Modern usage metrics are currently available in following national clouds: 
+Power BI is available in separate national clouds. These clouds offer the same levels of security, privacy, compliance, and transparency as the global version of Power BI, combined with a unique model for local regulations on service delivery, data residency, access, and control. Modern usage metrics are currently available in following national clouds: 
 
 - US Government Community Cloud
 - US Government Community Cloud High
@@ -275,14 +275,14 @@ For more information, see [national clouds](https://powerbi.microsoft.com/clouds
 
 ## Considerations and limitations
 
-It's important to understand that differences can occur when comparing the improved usage metrics report with its predecessor. Particularly Report View metrics are now based on activity data collected from the Power BI service. Previous versions of the usage metrics report relied only on client telemetry which does not always match usage metrics collected from the service. Moreover, the improved usage metrics report uses a different definition for a "Report View." A Report View is an open-report event, as recorded in the service each time someone opens a report. Changing report pages is no longer considered an additional Report View. We now include a Report Page View metric which specifically counts every page view.
+It's important to understand that differences can occur when comparing the improved usage metrics report with its predecessor. Particularly Report View metrics are now based on activity data collected from the Power BI service. Previous versions of the usage metrics report relied only on client telemetry, which doesn't always match usage metrics collected from the service. Moreover, the improved usage metrics report uses a different definition for a "Report View." A Report View is an open-report event, as recorded in the service each time someone opens a report. Changing report pages is no longer considered an additional Report View. We now include a Report Page View metric, which specifically counts every page view.
 
 > [!NOTE]
 > Because the improved usage metrics report relies on activity data collected from the Power BI service, the Report View metrics now match the aggregate counts of activities in audit logs and activity logs. Under- and overcounting of activities due to inconsistent network connections, ad blockers, or other client-side issues no longer skew the Viewer and Report View counts. However, Report Page Views still rely on client telemetry and can be affected.
 
 In addition to the above differences between previous and improved usage metrics reports, note the following limitations for the preview release:
 
-- Dashboard usage metrics still rely on the previous version of the usage metrics reports and are not yet available in modern isage metrics.
+- Dashboard usage metrics still rely on the previous version of the usage metrics reports and are not yet available in modern usage metrics.
 - Improved usage metrics reports are only available for reports in modern workspaces. Reports in legacy workspaces only support the previous version of the usage metrics reports.
 - Performance data and Report Page View metrics rely on the client/device sending data to Power BI. Depending on network latency, ad blockers, firewalls, and network rules set by your organization, this data may never reach Power BI. Therefore, the performance and Report Page View data may not include all views or all users.
 - Certain types of views aren't included in performance measurements. For example, when a user selects a link to a report in an email message, the Report View is accounted for in the report usage but there is no event in the performance metrics.
@@ -291,7 +291,7 @@ In addition to the above differences between previous and improved usage metrics
 - Initializing the Usage Metrics Report dataset might take a few minutes, resulting in showing a blank usage metrics report because the Power BI user interface does not wait for the refresh to finish. Check the refresh history in the Usage Metrics Report dataset settings to verify that the refresh operation succeeded.
 - Initializing the Usage Metrics Report dataset might fail due to a timeout encountered during refresh. Refer to the Troubleshooting section below to resolve this issue.
 - Sharing is disabled for the usage metrics report. To give people read access to the report, you first need to give them access to the workspace.
-- In some scenarios you may notice the performance data is missing. This can occur if a user opens a report and interacts with the report before it has completed loading or if an error occured during the report load. 
+- In some scenarios, you may notice the performance data is missing. This can occur if a user opens a report and interacts with the report before it has completed loading or if an error occurred during the report load. 
 
 ## Frequently asked questions
 
