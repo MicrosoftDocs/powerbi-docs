@@ -111,9 +111,7 @@ There are a number of ways you can enhance the discoverability of your datasets:
 
     [Learn how to endorse your datasets](../collaborate-share/service-endorse-content.md). 
 * **Provide a meaningful description of the dataset**: You can help users discover the right dataset for them by providing useful, meaningful descriptions of your datasets. [You provide the description as part of the process of endorsing the dataset](../collaborate-share/service-endorse-content.md#promote-content). 
-* **Give your dataset a memorable image**: You can make it easier for users to find and remember your dataset by giving it memorable image. This makes your dataset stand out on the datasets hub page and anywhere else that supports displaying dataset images.
-n
-    To give your dataset an image, open your dataset's settings, and expand the dataset image section.
+* **Give your dataset a memorable image**: You can make it easier for users to find and remember your dataset by giving it memorable image. This makes your dataset stand out on the datasets hub page and anywhere else that supports displaying dataset images. To give your dataset an image, open your dataset's settings, and expand the dataset image section.
 * **Create a report template built on the dataset**: You can create a report template that users can use to get started building their own reports based on your dataset. This template is simply a regular report that you design keeping in mind that it to be used as a template. When you save it, you must add the suffix "(template)" to the report name, e.g. *Monthly Sales (template)*.
 
     When a user selects **Create > From template** in the create a report section in the dataset details view of the datasets hub, a copy of the template will be created in the user's *My workspace*, and then opened in the report editing canvas.
