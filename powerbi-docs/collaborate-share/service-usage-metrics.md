@@ -1,6 +1,6 @@
 ---
-title: Monitor usage metrics for dashboards and reports
-description: How to view, save, and use usage metrics for Power BI dashboards and reports. 
+title: Monitor usage metrics in classic workspaces
+description: How to view, save, and use usage metrics for Power BI dashboards and reports in classic workspaces. 
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -8,13 +8,13 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 12/11/2020
+ms.date: 12/15/2020
 LocalizationGroup: Dashboards
 ---
 
-# Monitor usage metrics for Power BI dashboards and reports
+# Monitor usage metrics in classic workspaces
 
-If you create dashboards and reports, usage metrics help you understand their impact. When you run either dashboard usage metrics or report usage metrics, you discover how those dashboards and reports are being used throughout your organization, who's using them, and for what purpose.  
+If you create dashboards and reports, usage metrics help you understand their impact. When you run either dashboard usage metrics or report usage metrics, you discover how those dashboards and reports are being used throughout your organization, who's using them, and for what purpose. This article outlines usage metrics reports for [classic workspaces](service-create-workspaces.md). If your reports are in on of the new workspaces, see the article [Monitor usage metrics in the new workspace experience](service-usage-metrics.md)  
 
 Usage metrics reports are read-only. However, you can copy a usage metrics report. Copying creates a standard Power BI report that you can edit. You can also build your own reports in Power BI Desktop based on the underlying dataset, which contains usage metrics for all dashboards or all reports in a workspace. To begin with, the copied report shows metrics just for the selected dashboard or report. You can remove the default filter and have access to the underlying dataset, with all the usage metrics of the selected workspace. You may even see the names of specific users, if your admin has allowed that.
 
