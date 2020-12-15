@@ -8,7 +8,7 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.reviewer: "cfinlan"
 ms.custom: ""
-ms.date: 09/09/2020
+ms.date: 12/15/2020
 ---
 
 # URL parameters in paginated reports in Power BI
