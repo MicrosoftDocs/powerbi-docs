@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/10/2020
+ms.date: 12/14/2020
 ---
 
 # Power BI data sources
@@ -29,6 +29,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Azure Data Explorer (kusto) | Yes | Yes | Yes | Yes | No | Yes |
 | Azure Data Lake Storage Gen1 | Yes | Yes | No | No | No | No |
 | Azure Data Lake Storage Gen2 | Yes | Yes | No | Yes | No | Yes |
+| Azure Databricks | Yes | Yes | Yes | Yes | No | No |
 | Azure DevOps | Yes | Yes | No | No | No | No |
 | Azure DevOps Server | Yes | Yes | No | Yes | Yes | No |
 | Azure HDInsight (HDFS) | Yes | Yes | No | No | No | No |
