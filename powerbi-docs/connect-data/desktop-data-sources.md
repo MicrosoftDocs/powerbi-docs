@@ -221,7 +221,7 @@ The **Other** category provides the following data connections:
 * Automation Anywhere (Beta)
 * Solver
 * Cherwell (Beta)
-* Cognite Data Fusion (Beta)
+* Cognite Data Fusion
 * FHIR
 * Information Grid (Beta)
 * Jamf Pro (Beta)
