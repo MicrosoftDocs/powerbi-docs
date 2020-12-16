@@ -1,5 +1,5 @@
 ---
-title: Embed Power BI content with service principal and an application secret
+title: Embed Power BI content in an embedded analytics application with service principal and an application secret
 description: Learn how to authenticate for embedded analytics using an Azure Active Directory application service principal and an application secret.
 author: KesemSharabi
 ms.author: kesharab
@@ -165,7 +165,7 @@ Add the security group you created in Azure AD, to the specific security group s
 >To restrict service principal access to specific tenant settings, allow access only to specific security groups. Alternatively, you can create a dedicated security group for service principals, and exclude it from the desired tenant settings.
 
 >[!div class="mx-imgBorder"]
->:::image type="content" source="media/embed-service-principal/admin-portal.png" alt-text="Screenshot showing the developer settings in the admin options in the Power BI portal.":::
+>:::image type="content" source="media/embed-service-principal/admin-portal.png" alt-text="Screenshot showing the developer settings in the admin options in Power B I service.":::
 
 ## Step 4 - Add the service principal to your workspace
 
@@ -190,12 +190,9 @@ To enable your Azure AD app access artifacts such as reports, dashboards and dat
 
 ## Step 5 - Embed your content
 
-You can embed your content within a sample application, or within your own application.
+You can [embed your content within a sample application](embed-sample-for-customers.md), or within your own application.
 
-* [Embed content using the sample application](embed-sample-for-customers.md#embed-content-using-the-sample-application)
-* [Embed content within your application](embed-sample-for-customers.md#embed-content-within-your-application)
-
-Once your content is embedded, you're ready to [move to production](embed-sample-for-customers.md#move-to-production).
+Once your content is embedded, you're ready to [move to production](move-to-production.md).
 
 >[!NOTE]
 >To secure your content using a certificate, follow the steps described in [Embed Power BI content with service principal and a certificate](embed-service-principal-certificate.md).

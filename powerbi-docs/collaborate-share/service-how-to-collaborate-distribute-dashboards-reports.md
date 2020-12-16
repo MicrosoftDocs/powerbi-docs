@@ -7,8 +7,8 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 06/18/2020
-ms.custom: contperfq4
+ms.date: 12/14/2020
+ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
 ---
 
@@ -22,22 +22,22 @@ You've created dashboards and reports. Maybe you want to collaborate on them wit
 
 **Collaborate**
 
-- Collaborate with coworkers in *workspaces* to create meaningful reports and dashboards.
-- Collaborate in *Microsoft Teams*.
+- [Collaborate with coworkers in *workspaces*](#collaborate-in-a-workspace) to create meaningful reports and dashboards.
+- [Collaborate in *Microsoft Teams*](#collaborate-in-microsoft-teams).
 
 **Distribute or share dashboards and reports**
 
-- *Share dashboards or reports* from your My Workspace or another workspace.
-- Annotate and share from the Power BI *mobile apps*.
-- Bundle dashboards and reports in workspaces into *apps* and distribute them to a larger group or your whole organization.
-- Embed reports in *secure portals* or *public web sites*.
-- Print reports.
-- Create a *template app* that you can distribute to external Power BI users, via Microsoft AppSource.
+- [*Share dashboards or reports*](#share-dashboards-and-reports) from your My Workspace or another workspace.
+- Annotate and [share from the Power BI *mobile apps*](#annotate-and-share-from-the-power-bi-mobile-apps).
+- Bundle dashboards and reports in workspaces into *apps* and [distribute your apps](#distribute-insights-in-an-app) to a larger group or your whole organization.
+- [Embed reports](#embed-reports-in-secure-portals-or-public-web-sites) in *secure portals* or *public web sites*.
+- [Print reports](#print-or-save-as-pdf-or-other-static-file).
+- [Create a *template app*](#create-and-deploy-template-apps) that you can distribute to external Power BI users, via Microsoft AppSource.
  
 **Share data**
 
-- Create *shared datasets* that coworkers can use as the basis for their own reports, in their own workspaces.
-- Create *dataflows* as a way to share a common data source.
+- [Create *shared datasets*](#share-a-dataset) that coworkers can use as the basis for their own reports, in their own workspaces.
+- [Create *dataflows*](#create-dataflows) as a way to share a common data source.
 
 No matter which option you choose, to share your content you need a [Power BI Pro license](../fundamentals/service-features-license-type.md), or the content needs to be in a [Premium capacity](../admin/service-premium-what-is.md). License requirements vary for the colleagues who view your content, depending on the option you choose. The following sections spell out details. 
 
@@ -62,7 +62,7 @@ Read about how to [create the new workspaces](service-create-the-new-workspaces.
 
 ## Collaborate in Microsoft Teams
 
-Increase data-driven collaboration in your organization by embedding your Power BI reports and Power BI paginated reports in Microsoft Teams. The Power BI service has a **Share in Teams** button for reports. You can add separate Power BI tabs for each individual report, and give each tab the name of the report, or any other name. 
+Increase data-driven collaboration in your organization by embedding your Power BI reports and Power BI paginated reports in Microsoft Teams. The Power BI service has a **Chat in Teams** button for reports. You can add separate Power BI tabs for each individual report, and give each tab the name of the report, or any other name. 
 
 When you add a Power BI report tab to Microsoft Teams, Teams automatically creates a tab conversation for the report. Everyone in that Microsoft Teams channel can see and discuss the report in the conversation. 
 
@@ -72,7 +72,7 @@ Read more about [collaborating in Microsoft Teams with Power BI](service-collabo
 
 ## Share dashboards and reports
 
-Let's say you've finalized a report in Power BI Desktop, and you want other people to have access to it. One way to get it to them is to *share* it in the Power BI service. You publish it to your own My Workspace or another workspace. Maybe you create a dashboard to go with it, and you're ready.
+Let's say your report in Power BI Desktop is ready, and you want other people to have access to it. One way to get it to them is to *share* it in the Power BI service. You publish it to your own My Workspace or another workspace. Maybe you create a dashboard to go with it, and you're ready.
 
 ![Share a report](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-report.png)
 
@@ -113,14 +113,14 @@ You can publish apps to people outside your organization, too. They can view and
 ### Embed in secure portals
 
 You can embed Power BI reports in portals or web sites where your users expect to see them.  
-With the **Embed in SharePoint Online** and the **Embed** option in the Power BI service, you can securely embed reports for your internal users. Whichever option you choose, Power BI enforces all permissions and data security before users can see content. The person viewing the report needs the appropriate license.  
+With the **Embed in SharePoint Online** and the **Embed** option in the Power BI service, you can securely embed reports for your internal users. Whichever option you choose, Power BI enforces all permissions and data security before users see content. The person viewing the report needs the appropriate license.  
 
 - **Embed in SharePoint Online** works with the Power BI web part for SharePoint Online. It provides a single sign-on experience with control over how the report is embedded. Read more about [Embedding in SharePoint Online](service-embed-report-spo.md).
 - **Embed** works with any portal or web site that supports embedding content using a URL or an iFrame. Read more about the [Embed](service-embed-secure.md) option.
 
 ### Publish to public web sites
 
-With **Publish to web**, you can publish Power BI reports to the whole Internet by embedding visualizations in blog posts, web sites, social media, and other online communications. Anyone on the Internet can view your reports, and you have no control over who can see what you've published. They don't need a Power BI license. Publishing to the web is available only for reports that you can edit. You can't publish reports to the web if they're shared with you or if they're in an app. Read about how to [publish to the web](service-publish-to-web.md).
+**Publish to web** allows you to publish Power BI reports to the whole Internet by embedding visualizations in blog posts, web sites, social media, and other online communications. Anyone on the Internet can view your reports, and you have no control over who sees what you've published. They don't need a Power BI license. Publishing to the web is available only for reports that you can edit. You can't publish reports to the web if they're shared with you or if they're in an app. Read about how to [publish to the web](service-publish-to-web.md).
 
 >[!Warning]
 >Use [Publish to web](service-publish-to-web.md) only to share content publicly, not for internal sharing.

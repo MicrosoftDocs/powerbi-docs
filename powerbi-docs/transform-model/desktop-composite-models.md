@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 12/16/2020
 LocalizationGroup: Transform and shape data
 ---
 # Use composite models in Power BI Desktop
@@ -182,3 +182,4 @@ For more information about composite models and DirectQuery, see the following a
 * [Storage mode in Power BI Desktop](desktop-storage-mode.md)
 * [Use DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
 * [Data sources supported by DirectQuery in Power BI](../connect-data/power-bi-data-sources.md)
+* [Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)

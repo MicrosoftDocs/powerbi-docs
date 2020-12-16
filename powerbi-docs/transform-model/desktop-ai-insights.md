@@ -217,7 +217,7 @@ The following considerations and limitations apply to Azure ML in Power BI Deskt
 
 This article provided an overview of integrating Machine Learning into Power BI Desktop. The following articles might also be interesting and useful.
 
-- [Tutorial: Invoke a Machine Learning Studio (classic) model in Power BI](../connect-data/service-tutorial-invoke-machine-learning-model.md)
+- [Tutorial: Consume Azure Machine Learning models in Power BI](../connect-data/service-aml-integrate.md)
 - [Tutorial: Using Cognitive Services in Power BI](../connect-data/service-tutorial-use-cognitive-services.md)
 - [Cognitive Services in Power BI](./dataflows/dataflows-machine-learning-integration.md)
 - [Azure Machine Learning integration in Power BI](./dataflows/dataflows-machine-learning-integration.md)

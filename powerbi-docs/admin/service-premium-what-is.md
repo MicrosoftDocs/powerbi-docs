@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/20/2020
+ms.date: 12/09/2020
 ms.custom: licensing support
 LocalizationGroup: Premium
 ---
@@ -45,7 +45,7 @@ Premium Gen2 provides the following updates or improved experiences:
     * Fewer memory restrictions
     * Complete separation between report interaction and scheduled refreshes
 
-* **Improved metrics** with clear and normalized capacity utilization data, that's dependent only on the complexity of analytics operations the capacity performs, and not on its size, the level of load on the system while performing analytics, or other factors. With the improved metrics, utilization analysis, budget planning, chargebacks, and the need to upgrade are clearly visible with built-in reporting. Improved metrics will be made available and enhanced throughout the preview period.
+* **Improved metrics** with clear and normalized capacity utilization data, that's dependent only on the complexity of analytics operations the capacity performs, and not on its size, the level of load on the system while performing analytics, or other factors. With the improved metrics, utilization analysis, budget planning, chargebacks, and the need to upgrade are clearly visible with built-in reporting. Improved metrics will be made available later in the preview period. Customers seeking access to utilization metrics for past 7 days can do so by contacting customer support. 
 
 * **Autoscale** allows for *automatically adding* one v-core at a time for 24-hour periods when the load on the capacity exceeds its limits, preventing slowdowns caused by overload. V-cores are automatically removed when idle time is detected. Additional v-cores are charged to your Azure subscription on a pay-as-you-go basis. Autoscale will be made available during the course of the preview period. 
 
@@ -177,7 +177,7 @@ Capacity operations are classified as either *interactive* or *background*. Inte
 
 It's important to understand that interactive operations are always prioritized over background operations to ensure the best possible user experience. If there are insufficient resources, background operations are added to a waiting queue until resources free up. Background operations, like dataset refreshes, can be interrupted mid-process by the Power BI service, added to a queue, and retried later on.
 
-Import models must be fully loaded into memory so they can be queried or refreshed. The Power BI service uses sophisticated algorithms to manage memory usage fairly, but in rare cases, the capacity can get overloaded if there are insufficient resources to meet customers' realtime demands. While it's possible for a capacity to store many import models in persistent storage (up to 100 TB per Premium capacity), not all the models necessarily reside in memory at the same time, otherwise their in-memory dataset size can easily exceed the capacity memory limit. Besides the memory required to load the datasets, additional memory is needed for execution of queries and refresh operations.
+Import models must be fully loaded into memory so they can be queried or refreshed. The Power BI service uses sophisticated algorithms to manage memory usage fairly, but in rare cases, the capacity can get overloaded if there are insufficient resources to meet customers' real-time demands. While it's possible for a capacity to store many import models in persistent storage (up to 100 TB per Premium capacity), not all the models necessarily reside in memory at the same time, otherwise their in-memory dataset size can easily exceed the capacity memory limit. Besides the memory required to load the datasets, additional memory is needed for execution of queries and refresh operations.
 
 Import models are therefore loaded and removed from memory according to usage. An import model is loaded when it is queried (interactive operation), or if it needs to be refreshed (background operation).
 
@@ -243,7 +243,8 @@ From the app's dashboard, you can click a metric cell to open an in-depth report
 To learn more about monitoring capacities, see [Monitoring in the Power BI Admin portal](service-admin-premium-monitor-portal.md) and [Monitoring with the Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capacity.md).
 
 #### Updates for Premium Gen2 (Preview)
-**Premium Gen2** capacities don't use the Metrics app, they use the Capacity Utilization App, which will be made available during the preview. The Capacity Utilization App can be launched from your capacity management page in the **Admin portal** for each capacity.
+**Premium Gen2** capacities don't use the Metrics app, they use the Capacity Utilization App, which will be made available during the preview. Customers wanting to review their utilization can receieve a copy of their utilization report for the past 7 days by requsting one from customer support. The report will be supplied within 72 hours of requestung. The Capacity Utilization App will be launched from your capacity management page in the **Admin portal** for each capacity, and will allow anlayis of 30 days of data and more.
+
 
 
 ### Optimizing capacities
@@ -268,15 +269,19 @@ The following table shows the recommended SKUs for .pbix file upload or publish 
    |---------|---------|
    |P1    | < 3 GB        |
    |P2    | < 6 GB        |
-   |P3, P4, P5    | up to 10 GB   |
+   |P3, P4, P5    | up to 10 GB  |
 
 The Power BI Embedded A4 SKU is equal to the P1 SKU, A5 = P2 and A6 = P3.
 
-If you enable [large models](service-premium-large-models.md) on a data set, the .pbix file size limitations still apply to file upload or publish. However, with incremental refresh and large models combined, datasets can grow much larger than these limits. With large models, the dataset size is limited only by the Power BI Premium capacity size.
+### Large dataset storage format
+
+If you enable the [Large dataset storage format](service-premium-large-models.md) setting for a dataset, the .pbix file size limitations still apply to file upload or publish. The upload size limit is unaffected by the large dataset storage format. However, when published to the service, with incremental refresh and large dataset storage format enabled, datasets can grow much larger than these limits. With large dataset storage format, the dataset size is limited only by the Power BI Premium capacity size.
+
+Power BI datasets can store data in a highly compressed, in-memory cache for optimized query performance enabling fast user interactivity over large datasets. Previously, datasets in Power BI Premium have been limited to 10 GB after compression. With large models, the limitation is removed and dataset sizes are limited only by the capacity size, or a maximum size set by the administrator. Enabling such large dataset sizes enables Power BI dataset sizes to align better to Azure Analysis Services model sizes.
 
 Your .pbix files represent data in a *highly compressed state*. The data will likely expand when loaded in memory, and from there it may expand several more times during data refresh.
 
-Scheduled refresh of large datasets can take a long time and be resource-intensive. It's important to not schedule too many overlapping refreshes. It's  recommended [incremental refresh](service-premium-incremental-refresh.md) is configured, because it's faster, more reliable, and consumes fewer resources.
+Scheduled refresh of large datasets can take a long time and be resource-intensive. It's important to not schedule too many overlapping refreshes. It's recommended [incremental refresh](service-premium-incremental-refresh.md) is configured, because it's faster, more reliable, and consumes fewer resources.
 
 The initial report load of large datasets can take a long time if it has been a while since the last time the dataset was used. A loading bar for longer-loading reports displays the load progress.
 

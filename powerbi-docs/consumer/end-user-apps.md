@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/09/2020
+ms.date: 12/03/2020
 ms.custom: licensing support, css_fy20Q4
 LocalizationGroup: Share your work
 ---
@@ -16,7 +16,6 @@ LocalizationGroup: Share your work
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 ## What is a Power BI app?
 An *app* is a Power BI content type that combines related dashboards and reports, all in one place. An app can have one or more dashboards and one or more reports, all bundled together. Apps are created by Power BI *designers* who distribute and share the apps with their colleagues. There are many different ways a *designer* can share an app. To learn more, see the **Get a new app** section, below. 

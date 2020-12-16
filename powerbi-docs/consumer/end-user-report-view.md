@@ -15,7 +15,6 @@ LocalizationGroup: Reports
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 People view reports on many different devices with varying screen sizes and aspect ratios. Change the way a report page displays to fit your needs.
 
@@ -54,7 +53,7 @@ When you exit the report, your **View** settings aren't saved, but revert to the
 
 The zoom controls in your browser increase and decrease the available canvas area. Decreasing the zoom causes the available canvas area to expand, and vice versa. 
 
-![short video showing browser zoom controls](media/end-user-report-view/power-bi-zoom.png)
+![browser zoom controls](media/end-user-report-view/power-bi-zoom.png)
 
 Resizing your entire browser is another way to change the display size of your report. 
 

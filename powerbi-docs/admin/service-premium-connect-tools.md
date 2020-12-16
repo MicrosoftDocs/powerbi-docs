@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 12/01/2020
+ms.date: 12/09/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
 ---
@@ -18,7 +18,7 @@ Power BI Premium workspaces and datasets at the 1500 and higher compatibility le
 
 ## What's an XMLA endpoint?
 
-Power BI Premium uses the [XML for Analysis](/analysis-services/xmla/xml-for-analysis-xmla-reference?view=power-bi-premium-current&preserve-view=true) (XMLA) protocol for communications between client applications and the engine that manages your Power BI workspaces and datasets. These communications are through what are commonly referred to as XMLA endpoints. XMLA is the same communication protocol used by the Microsoft Analysis Services engine, which under the hood, runs Power BI's semantic modeling, governance, lifecycle, and data management.
+Power BI Premium uses the [XML for Analysis](/analysis-services/xmla/xml-for-analysis-xmla-reference?view=power-bi-premium-current&preserve-view=true) (XMLA) protocol for communications between client applications and the engine that manages your Power BI workspaces and datasets. These communications are through what are commonly referred to as XMLA endpoints. XMLA is the same communication protocol used by the Microsoft Analysis Services engine, which under the hood, runs Power BI's semantic modeling, governance, lifecycle, and data management. Data sent over the XMLA protocol is fully encrypted.
 
 By default, *read-only* connectivity using the endpoint is enabled for the **Datasets workload** in a capacity. With read-only, data visualization applications and tools can query dataset model data, metadata, events, and schema. *Read-write* operations using the endpoint can be enabled providing additional dataset management, governance, advanced semantic modeling, debugging, and monitoring. With read-write enabled, Power BI Premium datasets have more parity with Azure Analysis Services and SQL Server Analysis Services enterprise grade tabular modeling tools and processes.
 
@@ -29,9 +29,9 @@ By default, *read-only* connectivity using the endpoint is enabled for the **Dat
 
 Listed below are some of the most common tools used with Azure Analysis Services and SQL Server Analysis Services, and now supported by Power BI Premium datasets:
 
-**Visual Studio with Analysis Services projects** – Also known as SQL Server Data Tools, or simply **SSDT**, is an enterprise grade model authoring tool for Analysis Services tabular models. Analysis Services projects extensions are supported on all Visual Studio 2017 and later editions, including the free Community edition. Extension version 2.9.6 or higher is required to deploy tabular models to a Premium workspace. When deploying to a Premium workspace, the model must be at the 1500 or higher compatibility level. XMLA read-write is required on the datasets workload. To learn more, see [Tools for Analysis Services](/analysis-services/tools-and-applications-used-in-analysis-services?view=power-bi-premium-current&preserve-view=true).
+**Visual Studio with Analysis Services projects** – Also known as SQL Server Data Tools, or simply **SSDT**, is an enterprise grade model authoring tool for Analysis Services tabular models. Analysis Services projects extensions are supported on all Visual Studio 2017 and later editions, including the free Community edition. Extension version 2.9.14 or higher is required to deploy tabular models to a Premium workspace. When deploying to a Premium workspace, the model must be at the 1500 or higher compatibility level. XMLA read-write is required on the datasets workload. To learn more, see [Tools for Analysis Services](/analysis-services/tools-and-applications-used-in-analysis-services?view=power-bi-premium-current&preserve-view=true).
 
-**SQL Server Management Studio (SSMS)** - Supports DAX, MDX, and XMLA queries. Perform fine-grain refresh operations and scripting of dataset metadata by using the [Tabular Model Scripting Language](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference) (TMSL). Read-only is required for query operations. Read-write is required for scripting metadata. Requires SSMS version 18.4 or above. Download [here](/sql/ssms/download-sql-server-management-studio-ssms).
+**SQL Server Management Studio (SSMS)** - Supports DAX, MDX, and XMLA queries. Perform fine-grain refresh operations and scripting of dataset metadata by using the [Tabular Model Scripting Language](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference) (TMSL). Read-only is required for query operations. Read-write is required for scripting metadata. Requires SSMS version 18.7.1 or above. Download [here](/sql/ssms/download-sql-server-management-studio-ssms).
 
 **SQL Server Profiler** – Installed with SSMS, this tool provides tracing and debugging of dataset events. While officially deprecated for SQL Server, Profiler continues to be included in SSMS and remains supported for Analysis Services and Power BI Premium. XMLA read-only is required. To learn more, see [SQL Server Profiler for Analysis Services](/analysis-services/instances/use-sql-server-profiler-to-monitor-analysis-services?view=power-bi-premium-current&preserve-view=true).
 

@@ -8,7 +8,7 @@ ms.subservice: pbi-explore
 ms.reviewer: mihart
 ms.custom:  
 ms.topic: how-to
-ms.date: 09/15/2020
+ms.date: 12/03/2020
 LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to be sure that I'm using the most-recent data and learn how to determine this.
 ---
@@ -17,11 +17,10 @@ LocalizationGroup: Get started
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 As a *business user*, you interact with content that is created by *designers* and shared with you. You might wonder if that content is up-to-date or maybe you just want to know when that content was last refreshed. Knowing that you are working with the freshest content gives you confidence.  
  
-![Power BI dashboard](media/end-user-fresh/power-bi-dashboards.png)
+![Power BI dashboard](media/end-user-fresh/power-bi-dashboard.png)
 
 
 Making sure you’re using the latest data is often critical in making the right decisions. What can you do to ensure you're using the latest content? In most cases, you don’t need to do anything at all. Apps that have been shared with you are automatically refreshed and updated on a schedule set by the app designer. Same goes for dashboards and reports that have been shared with you -- the designer either manually, or using an automated refresh schedule, ensures that the content is fresh.  

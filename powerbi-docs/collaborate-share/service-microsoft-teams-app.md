@@ -7,7 +7,7 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.topic: conceptual
+ms.topic: how-to
 LocalizationGroup: Share your work
 ms.date: 09/15/2020
 ---
