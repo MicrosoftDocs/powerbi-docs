@@ -7,14 +7,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 01/14/2020
+ms.date: 11/14/2020
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshoot opening Power BI Desktop
 
-In Power BI Desktop, users who installed and are running previous versions of the *Power BI On-premises data gateway* can be blocked from opening Power BI Desktop, because of administrative policy restrictions that the Power BI on-premises gateway placed on named pipes on the local machine.
+This article describes and provides a remedy for a number of circumstances where Power BI cannot open. 
+
+## Resolve issues with opening encrypted PBIX files
+
+You cannot open encrypted PBIX files using a Power BI Desktop version that does not support information protection.
+
+If you need to continue using Power BI Desktop, the recommended resolution is to update it to a version that supports information protection. You can download the [latest version of Power BI Desktop](https://www.microsoft.com/download/confirmation.aspx?id=58494) (this link is a direct download link to the installation executable). The latest version of Power BI Desktop supports information protection and can decrypt and open any encrypted PBIX file.
+
+###
 
 ## Resolve issues with the On-premises data gateway and Power BI Desktop
+
+In Power BI Desktop, users who installed and are running previous versions of the *Power BI On-premises data gateway* can be blocked from opening Power BI Desktop, because of administrative policy restrictions that the Power BI on-premises gateway placed on named pipes on the local machine.
 
 You have three options to resolve the issue associated with the On-premises data gateway, and to enable Power BI Desktop to open:
 
