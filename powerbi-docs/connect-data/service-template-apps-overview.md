@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 05/04/2020
+ms.date: 12/14/2020
 ---
 
 # What are Power BI template apps?
@@ -93,6 +93,7 @@ To publish a template app to the Power BI service and AppSource, you must meet t
 - Use AppSource as your online store to host your application. This way everyone using Power BI can find your app. 
 - Consider offering more than one template app for separate unique scenarios. 
 - Enable data customization; for example, support custom connection and parameters configuration by the installer.
+- If you are an ISV and are distributing your app through your web service, consider automating parameter configuration during installation to make things easier for your customers and to increase the likelihood of a successful installation. See [Automated configuration of a template app installation](../developer/template-apps/template-apps-auto-install.md) for details.
 
 See [Tips for authoring template apps in Power BI](service-template-apps-tips.md) for more suggestions.
 
