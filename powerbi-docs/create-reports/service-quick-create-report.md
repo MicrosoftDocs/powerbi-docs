@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/14/2020
+ms.date: 12/15/2020
 LocalizationGroup: Reports
 ---
 # Create quick reports in the Power BI service 
@@ -56,6 +56,32 @@ If you want to switch to a full edit experience, select the **Edit** button in t
 :::image type="content" source="media/service-quick-create-report/edit-entry-point.png" alt-text="Select the Edit button in the menu bar.":::
 
 This experience should make it easier to create reports on your data and unlock the power of report building to a whole new set of users. Try the new Create experience today.
+
+## Limitations and considerations
+
+### Get data limitations 
+
+- If you use the **Paste or manually enter data** option, there’s currently no way to update the data later. If you want to add, modify, or delete data later, you need to go through the **Create** workflow again and get a new report.  
+- If you have a CSV or Excel file, you need to use the paste option to add your data. A file upload option is coming later. 
+- When copying data into the **Enter data** window, the size of data you paste in can't exceed 512 KB. 
+- The table name can’t be longer than 80 characters, and column names can’t be longer than 512 characters.  
+- Table and column names can’t contain double quotes ("), periods (.), or leading or trailing white spaces.  
+
+### Model limitations
+
+When going through this create process, you’re creating a model behind the scenes on the web. These web-authored models are similar to the ones created in Power BI Desktop, but do have a few limitations.
+
+| Feature | Status  | Details  |
+| ALM | Not currently supported | ALM is doesn't work for web-authored datasets. |
+| Bring your own key (BYOK) | Not currently supported | Can't use your own encryption key for web-authored datasets. |
+| Template apps | Not currently supported | You can't create apps for workspaces with web-authored datasets. |  
+| Admin public APIs | Partially supported | Most admin public APIs are supported. However there is a known issue with the following operation, **Admin - Groups GetGroupsAsAdmin with datasets expanded**. For this operation, web-authored datasets are returned, but the ContentProviderType is incorrectly marked as "RealTime". |
+
+### Report limitations  
+
+If you use the **Edit** option to switch into full editing mode and save the report, you can no longer switch back to the auto-generated view with the summarize pane. Power BI reminds you of this when you select **Edit**.  
+
+:::image type="content" source="media/service-quick-create-report/quick-create-switch-edit-mode.png" alt-text="Switch to Edit mode from Quick Create mode.":::
 
 ## Next steps
 
