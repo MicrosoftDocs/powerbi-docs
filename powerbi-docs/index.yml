@@ -10,12 +10,12 @@ metadata:
   description: Power BI amplifies your insights and the value of your data. Find expert information and answers here, no matter how you use Power BI.
   services: service
   ms.service: powerbi #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.subservice: subservice
+  ms.subservice: powerbi-service
   ms.topic: hub-page # Required
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/09/2020 #Required; mm/dd/yyyy format.
+  ms.date: 12/16/2020 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -27,13 +27,13 @@ highlightedContent:
       itemType: get-started
       url: fundamentals/desktop-getting-started.md
     # Card
-    - title: Collaborate with Power BI in Microsoft Teams
+    - title: DirectQuery for Power BI datasets and Azure Analysis
       itemType: concept
-      url: collaborate-share/service-collaborate-microsoft-teams.md
+      url: connect-data/desktop-directquery-datasets-azure-analysis-services.md
     # Card
-    - title: Embed Power BI content into an application
+    - title: Consume Azure Machine Learning models in Power BI
       itemType: tutorial
-      url: developer/embedded/embed-sample-for-customers.md
+      url: connect-data/service-aml-integrate.md
     # Card
     - title: Power BI on Microsoft Learn 
       itemType: learn
@@ -116,9 +116,9 @@ conceptualContent:
         - url: connect-data/service-gateway-onprem.md
           itemType: concept
           text: On-premises data gateways
-        - url: connect-data/refresh-data.md
+        - url: connect-data/service-datasets-hub.md
           itemType: concept
-          text: Data refresh
+          text: Discover data on the datasets hub
       # footerLink (optional)
       footerLink:
         url: connect-data/index.yml
@@ -180,9 +180,9 @@ conceptualContent:
         - url: collaborate-share/service-create-the-new-workspaces.md
           itemType: how-to-guide
           text: Create the new workspaces
-        - url: connect-data/service-datasets-across-workspaces.md
+        - url: collaborate-share/service-collaborate-microsoft-teams.md
           itemType: concept
-          text: Intro to shared datasets
+          text: Collaborate in Microsoft Teams
       # footerLink (optional)
       footerLink:
         url: collaborate-share/index.yml
@@ -196,9 +196,9 @@ conceptualContent:
         - url: collaborate-share/service-analyze-in-excel.md
           itemType: concept
           text: Analyze in Excel
-        - url: collaborate-share/service-embed-report-spo.md
+        - url: collaborate-share/service-automate-power-bi-report-export.md
           itemType: concept
-          text: Embed in SharePoint Online
+          text: Export and email with Power Automate
       # footerLink (optional)
       footerLink:
         url: collaborate-share/index.yml

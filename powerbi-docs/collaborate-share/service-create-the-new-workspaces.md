@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 09/04/2020
-ms.custom: contperfq1, contperfq4
+ms.custom: contperf-fy21q1, contperf-fy20q4
 LocalizationGroup: Share your work
 ---
 # Create the new workspaces in Power BI
