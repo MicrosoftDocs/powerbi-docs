@@ -74,9 +74,9 @@ When going through this create process, you’re creating a model behind the sce
 | Feature | Status  | Details |
 |---------|---------|---------|
 | ALM | Not currently supported | ALM is doesn't work for web-authored datasets. |
-| Bring your own key (BYOK) | Not currently supported | Can't use your own encryption key for web-authored datasets. |
+| Bring your own key (BYOK) | Not currently supported | You can't use your own encryption key for web-authored datasets. |
 | Template apps | Not currently supported | You can't create apps for workspaces with web-authored datasets. |  
-| Admin public APIs | Partially supported | Most admin public APIs are supported. However there is a known issue with the following operation, **Admin - Groups GetGroupsAsAdmin with datasets expanded**. For this operation, web-authored datasets are returned, but the ContentProviderType is incorrectly marked as "RealTime". |
+| Admin public APIs | Partially supported | Most admin public APIs are supported. However, there is a known issue with the following operation, **Admin - Groups GetGroupsAsAdmin with datasets expanded**. For this operation, web-authored datasets are returned, but the ContentProviderType is incorrectly marked as "RealTime". |
 
 ### Report limitations  
 
