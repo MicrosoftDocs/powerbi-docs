@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/07/2020
-ms.custom: contperfq4
+ms.custom: contperf-fy20q4
 LocalizationGroup: Consumer
 ---
 # Visual types in Power BI
