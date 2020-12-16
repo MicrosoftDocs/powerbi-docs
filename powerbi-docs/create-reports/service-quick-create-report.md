@@ -71,7 +71,8 @@ This experience should make it easier to create reports on your data and unlock 
 
 When going through this create process, you’re creating a model behind the scenes on the web. These web-authored models are similar to the ones created in Power BI Desktop, but do have a few limitations.
 
-| Feature | Status  | Details  |
+| Feature | Status  | Details |
+|---------|---------|---------|
 | ALM | Not currently supported | ALM is doesn't work for web-authored datasets. |
 | Bring your own key (BYOK) | Not currently supported | Can't use your own encryption key for web-authored datasets. |
 | Template apps | Not currently supported | You can't create apps for workspaces with web-authored datasets. |  
