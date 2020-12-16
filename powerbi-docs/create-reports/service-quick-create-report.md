@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/15/2020
+ms.date: 12/16/2020
 LocalizationGroup: Reports
 ---
 # Create quick reports in the Power BI service 
@@ -78,7 +78,7 @@ When going through this create process, you’re creating a model behind the sce
 
 | Feature | Status  | Details |
 |---------|---------|---------|
-| ALM | Not currently supported | ALM is doesn't work for web-authored datasets. |
+| ALM | Not currently supported | ALM doesn't work for web-authored datasets. |
 | Bring your own key (BYOK) | Not currently supported | You can't use your own encryption key for web-authored datasets. |
 | Template apps | Not currently supported | You can't create apps for workspaces with web-authored datasets. |  
 | Admin public APIs | Partially supported | Most admin public APIs are supported. However, there is a known issue with the following operation, **Admin - Groups GetGroupsAsAdmin with datasets expanded**. For this operation, web-authored datasets are returned, but the ContentProviderType is incorrectly marked as "RealTime". |
