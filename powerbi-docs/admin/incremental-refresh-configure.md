@@ -13,9 +13,11 @@ LocalizationGroup:
 
 # Configure incremental refresh
 
+This article describes how to define incremental refresh parameters, optionally convert parameter date/time data type to integer data type, apply filters, and define a policy that is applied when a manual or scheduled refresh operation is performed on the dataset in the service. Before completing these steps, be sure to fully understand the functionality described in [Incremental refresh overview](service-incremental-refresh-overview.md).
+
 ## Define parameters
 
-In this task, you define RangeStart and RangeEnd parameters with default values. The default values only apply when filtering the data to be loaded into the model in Power BI Desktop. The values you enter should encompass only a small portion of the most recent data. When published to the service, these values are overridden by the Incremental refresh policy you configure later.
+In this task, you define RangeStart and RangeEnd parameters with default values. The default values apply only when filtering the data to be loaded into the model in Power BI Desktop. The values you enter should encompass only a small portion of the most recent data. When published to the service, these values are overridden by the Incremental refresh policy you configure later.
 
 1. In Power BI Desktop, click **Transform data** to open Power Query Editor.
 
@@ -49,9 +51,27 @@ With RangeStart and RangeEnd parameters defined, you can then apply a filter bas
 
 1. In Power Query Editor, click **Close & Apply**. Power Query will then import data based on the filters defined in the RangeStart and RangeEnd parameters, and any other filters you defined.
 
-## Define Incremental refresh policy
+## (Optional) Convert date/time to integer
 
-After you've defined RangeStart and RangeEnd parameters, and filtered data based on those parameters, you define an Incremental refresh policy. The policy is applied only after the model is published to the service and a manual or scheduled refresh operation is performed.
+The data type of the RangeStart and RangeEnd parameters must be of date/time data type. However, for many data sources, fact tables do not contain a column of date/time data type, but instead have a date column of integer surrogate keys in the form of *yyyymmdd*. You can create a function that converts the date/time value in the parameters to match the integer surrogate key of the data source table. The function is then called in a filter step. This step is required if the data source table contains *only* a surrogate key as integer data type.
+
+1. In Power Query Editor, right-click in **Queries** > **New Query** > **Blank Query**.
+
+1. Name the function, for example, DateKey, and then in the formula editor, enter the following formula:
+
+    `= (x as datetime) => Date.Year(x)*10000 + Date.Month(x)*100 + Date.Day(x)`
+
+    ![Create DateKey function](media/service-incremental-refresh-configure/datekey-function.png)
+
+1. In **Queries**, select the fact table, and then edit the query formula to call the function with the RangeStart and RangeEnd parameters. For example,
+
+    `= Table.SelectRows(#"Sorted Rows", each [OrderDateKey] > DateKey(RangeStart) and [OrderDateKey] <= DateKey(RangeEnd))`
+
+    ![Apply DateKey filter](media/service-incremental-refresh-configure/apply-datekey-filter.png)
+
+## Define policy
+
+After you've defined RangeStart and RangeEnd parameters, and filtered data based on those parameters, you define an incremental refresh policy. The policy is applied only after the model is published to the service and a manual or scheduled refresh operation is performed.
 
 1. In Data view > **Fields** > open the context menu for the fact table, and then click **Incremental refresh**.
 
@@ -65,4 +85,18 @@ After you've defined RangeStart and RangeEnd parameters, and filtered data based
 
     ![Table context menu](media/service-incremental-refresh-configure/incremental-refresh-policy-dialog.png)
 
-1. 
+1. Select optional advanced settings:
+
+    Select **Detect data changes** to specify a date/time column used to identify and refresh only the days where the data has changed. This assumes such a column exists in the source system, which is typically for auditing purposes. This **should not be the same column** used to partition the data with the RangeStart/RangeEnd parameters. The maximum value of this column is evaluated for each of the periods in the incremental range. If it has not changed since the last refresh, there is no need to refresh the period.
+
+    Select **Only refresh complete days** to refresh only complete, full days. If the refresh operation detects a day is not complete, rows for that day are not refreshed.
+
+1. Click **Apply all** to complete the refresh policy. Source data is not imported with this step.
+
+## Save and publish to the service
+
+When your RangeStart and RangeEnd parameters, filtering, and refresh parameters are complete, be sure to save your model, and then publish to the service.
+
+## Refresh dataset
+
+In the service, refresh the dataset. The first refresh may take longer to import historical data. Subsequent refreshes, either manual or scheduled, are typically faster because the incremental refresh policy is applied.
