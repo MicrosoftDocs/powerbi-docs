@@ -50,6 +50,8 @@
       href: desktop-default-member-multidimensional-models.md            
     - name: "About using DirectQuery in Power BI"
       href: desktop-directquery-about.md
+    - name: "Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)"
+      href: desktop-directquery-datasets-azure-analysis-services.md      
     - name: Gateways
       items:
       - name: "Guidance for deploying a data gateway"
