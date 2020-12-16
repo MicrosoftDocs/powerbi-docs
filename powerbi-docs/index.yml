@@ -10,7 +10,7 @@ metadata:
   description: Power BI amplifies your insights and the value of your data. Find expert information and answers here, no matter how you use Power BI.
   services: service
   ms.service: powerbi #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.subservice: subservice
+  ms.subservice: powerbi-service
   ms.topic: hub-page # Required
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
