@@ -120,6 +120,7 @@
       - name: "Best practices"
         href: deployment-pipelines-best-practices.md        
   - name: How-to guides
+    expanded: true
     items: 
     - name: Power BI reports
       items: 
