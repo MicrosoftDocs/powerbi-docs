@@ -14,12 +14,12 @@ LocalizationGroup: Reports
 
 There's a new way to create reports quickly in the Power BI service. Instead of downloading the Power BI Desktop app and importing the data, you can paste data straight into Power BI on the web, and Power BI automatically generates visuals for you.  
 
-New to creating in Power BI? Try reading [Reports in Power BI](../consumer/end-user-reports.md) for some quick background.
+New to creating in Power BI? Try reading [Reports in Power BI](../consumer/end-user-reports.md) for some quick background information.
 
 :::image type="content" source="media/service-quick-create-report/quick-create.gif" alt-text="Use Power B I Quick Create to create a report quickly.":::
 
 ## Create a quick report
-In the navigation pane in the Power BI service, you can select the **Create** button that opens a page where you can select your data source. It's also accessible from the Create button on Home.
+In the navigation pane in the Power BI service, you can select the **Create** button that opens a page where you can select your data source. It's also accessible from the **New report** button on Home.
 
 :::image type="content" source="media/service-quick-create-report/create-entry-point.png" alt-text="Create entry point icon in the Power B I service."::: 
 
@@ -57,7 +57,12 @@ If you want to switch to a full edit experience, select the **Edit** button in t
 
 This experience should make it easier to create reports on your data and unlock the power of report building to a whole new set of users. Try the new Create experience today.
 
-## Limitations and considerations
+## Considerations and limitations
+
+### Licenses
+
+You need the same license to create a quick report as you do to create any other report in Power BI. If you have a free Power BI license and your My Workspace is assigned to a Premium capacity, you can create quick reports there. If you have a Power BI Pro license, you can create quick reports anywhere in the Power BI service. See [Power BI service features by license type](../fundamentals/service-features-license-type.md) for details.
+
 
 ### Get data limitations 
 
