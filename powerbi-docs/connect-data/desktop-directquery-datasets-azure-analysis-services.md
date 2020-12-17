@@ -125,9 +125,11 @@ There are also a few **limitations** you need to keep in mind:
 
 - Calculation groups on remote sources are not supported, with undefined query results.
 
-- Some queries may return wrong results when there is a relationship between calculated tables and table(s) in a remote source. This is not supported, but is not currently blocked in the interface.
+- Some queries may return wrong results when there's a relationship between calculated tables and table(s) in a remote source. Creating calculated tables over a remote dataset isn't supported, although it isn't currently blocked in the interface.
 
-- Sort by column is not supported at this time. 
+- Sort by column isn't supported at this time.
+
+- Automatic page refresh (APR) is only supported for some scenarios, depending on the data source type. See the article [Automatic page refresh in Power BI](../create-reports/desktop-automatic-page-refresh.md) for more information.
 
 ## Next steps
 
