@@ -12,7 +12,7 @@ ms.date: 12/18/2020
 LocalizationGroup: Visualizations
 ---
 
-# Customize visualization titles, backgrounds, and legends
+# Customize visualization titles, backgrounds, labels, and legends
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
