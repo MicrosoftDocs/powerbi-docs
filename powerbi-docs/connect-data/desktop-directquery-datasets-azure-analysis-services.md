@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/16/2020
+ms.date: 12/17/2020
 LocalizationGroup: Connect to data
 ---
 # Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)
@@ -17,7 +17,7 @@ With **DirectQuery for Power BI datasets and Azure Analysis Services (AAS)**, yo
 
 ## Enable the preview feature
 
-Since the functionality is currently in preview, you must enable first enable it. To do so, in Power BI Desktop go to **File > Options and settings > options**, and in the **Report settings** section, select the preview feature checkbox to enable this preview feature. You may need to restart Power BI Desktop for the change to take effect.
+Since the functionality is currently in preview, you must first enable it. To do so, in Power BI Desktop go to **File > Options and settings > Options**, and in the **Preview features** section, select the **DirectQuery for Poewr BI datasets and Analysis Services** checkbox to enable this preview feature. You may need to restart Power BI Desktop for the change to take effect.
 
 ## Using DirectQuery for live connections
 
