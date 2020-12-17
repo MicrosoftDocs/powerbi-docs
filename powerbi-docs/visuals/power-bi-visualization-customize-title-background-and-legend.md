@@ -126,7 +126,7 @@ Stacked visuals can display data labels and total labels. On a stacked column ch
 
 Watch Rien add total labels to a stacked chart, and then follow the steps below to try it out yourself.
 
- [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IY3L]
+ [!VIDEO https://www.youtube.com/embed/OgjX-pFGgfM]
 
 1. Open the **Overview** report page and select the **Average selling area size by chain and store type** bar chart.
 
