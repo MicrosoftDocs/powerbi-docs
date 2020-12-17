@@ -59,13 +59,15 @@ With RangeStart and RangeEnd parameters defined, you can then apply a filter bas
 
 The data type of the RangeStart and RangeEnd parameters must be of date/time data type. However, for many data sources, tables do not contain a column of date/time data type, but instead have a date column of integer surrogate keys in the form of *yyyymmdd*. You can create a function that converts the date/time value in the parameters to match the integer surrogate key of the data source table. The function is then called in a filter step. This step is required if the data source table contains *only* a surrogate key as integer data type.
 
-1. In Power Query Editor, right-click in **Queries** > **New Query** > **Blank Query**.
+1. In Power Query Editor, click **Get data** > **Blank Query**.
 
-1. Name the function, for example, DateKey, and then in the formula editor, enter the following formula:
+1. In **Query Settings**, type a name the function, for example, DateKey, and then in the formula editor, enter the following formula:
 
     `= (x as datetime) => Date.Year(x)*10000 + Date.Month(x)*100 + Date.Day(x)`
 
     ![Create DateKey function](media/service-incremental-refresh-configure/datekey-function.png)
+
+1. To test the formula, in **Enter Parameter**, enter a date value, and then click **Invoke**. If the formula is correct, an integer value for the date is returned. After verifying, delete the invoked function query.
 
 1. In **Queries**, select the table, and then edit the query formula to call the function with the RangeStart and RangeEnd parameters. For example,
 
