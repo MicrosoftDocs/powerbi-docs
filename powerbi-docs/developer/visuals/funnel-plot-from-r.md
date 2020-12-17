@@ -145,7 +145,7 @@ The visual isn't yet user-friendly because the user has to know the order of col
    > #RVIZ_IN_PBI_GUIDE:END:Removed to enable user parameters
    > ```
 
-   ![script before and after](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script_r_before_after_1.png)
+   ![script before and after](https://raw.githubusercontent.com/microsoft/PowerBI-visuals/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script_r_before_after_1.png)
 
    You can decide not to expose the parameters to the UI, like we did.  
 

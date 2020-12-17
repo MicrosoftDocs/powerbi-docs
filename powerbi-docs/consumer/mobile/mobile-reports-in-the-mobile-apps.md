@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/12/2020
+ms.date: 12/17/2020
 ---
 # Explore reports in the Power BI mobile apps
 Applies to:
@@ -149,6 +149,29 @@ When a bookmark view of a report is open, the name of the bookmark appears at th
 ![bookmark view](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
 
 [Learn more about bookmarks in the Power BI service](../end-user-bookmarks.md).
+
+## Investigate anomalies in time series data
+
+[Anomaly detection](https://powerbi.microsoft.com/blog/anomaly-detection-preview/) is a Power BI feature that automatically detects anomalies (i.e. values that lay outside expected ranges) on line charts with time series data. In addition, it provides possible explanations, ranked according their explanatory strength, for the cause of the anomalous values. Anomaly detection is available if it has been enabled on the chart by the report creator. 
+
+When you view a report that has anomaly detection enabled on a chart with time series data, you’ll see the the anomalies indicated on chart, just like you would in the Power BI service and in Power BI Desktop. 
+
+![Screenshot of line chart that has anomaly indications.](media/mobile-reports-in-the-mobile-apps/mobile-detected-anomalies.png)
+
+To see additional information and the explanations, you need to open the Anomalies panel. There are a number of ways to do this:
+* Tap the anomaly indication on the chart. 
+* Tap **More options (…)** and choose **Show anomalies** from the menu that appears.    
+* Tap the data point to display a tooltip, and choose **Anomalies**.
+
+The image below illustrates the three ways of opening the Anomalies panel.
+
+![Screenshots showing how to open the anomalies panel.](media/mobile-reports-in-the-mobile-apps/mobile-opening-anomalies-panel.png)
+
+In the anomalies panel you’ll see a natural language explanation of the anomaly detected, as well as associated factors sorted by their explanatory strength. Swipe from right to left to view all relevant factors and their strengths.
+
+![Screenshot showing right to left swipe to view anomaly explanations.](media/mobile-reports-in-the-mobile-apps/mobile-swipe-to-see-explanations.png)
+
+While the Anomalies panel is visible, the mobile report is still scrollable under it, so you can continue interacting with your report, slicing and dicing to better understand anomalies in your data. For each interaction, Power BI re-runs anomaly detection to detect anomalies in the data in scope. 
 
 ## Refresh your data
 
