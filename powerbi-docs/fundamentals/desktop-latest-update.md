@@ -12,7 +12,7 @@ LocalizationGroup: Get started
 ---
 # What's new in Power BI Desktop?
 
-## December 2020 Update (2.87.261.0)
+## December 2020 Update (2.88.321.0)
 
 Our December Power BI Desktop updates are sure to dazzle you like a snowy lane filled with lights and sleigh rides. 
 
