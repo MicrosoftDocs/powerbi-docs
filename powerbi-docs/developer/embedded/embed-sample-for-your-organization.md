@@ -53,7 +53,8 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
         * [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md)
 
-[!INCLUDE[move to production note](../../includes/embed-tutorial-production-note.md)]
+    >[!NOTE]
+    >To [move to production](move-to-production.md) you'll need a [capacity](embedded-capacity.md).
 
 * **Code dependencies**
 
@@ -74,6 +75,8 @@ Before you start this tutorial, verify that you have both the Power BI and code 
     * [Visual Studio](https://visualstudio.microsoft.com/)
 
     # [React TypeScript](#tab/react)
+
+    A text editor.
 
 ---
 
@@ -177,6 +180,9 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
     :::image type="content" source="media/embed-sample-for-your-organization/azure-ad-net-configurations.png" alt-text="Screenshot showing the Azure AD app authentication configurations including the web redirect U R I and the selected access token option for the .NET core app sample.":::
 
+    >[!NOTE]
+    >If you don't have a **Web** platform, select **Add a platform** and in the *Configure platforms* window, select **Web**.
+
 [!INCLUDE[Configure the Azure AD permissions](../../includes/embed-tutorial-org-azure-ad-permissions.md)]
 
 ### Configure the sample embedding app
@@ -218,6 +224,9 @@ Follow these steps to modify the *embed for your organization* sample applicatio
     3. Select **Configure**.
 
     :::image type="content" source="media/embed-sample-for-your-organization/azure-ad-framework-configurations.png" alt-text="Screenshot showing the Azure AD app authentication configurations including the web redirect U R I and the selected access token option for the .NET framework app sample.":::
+
+    >[!NOTE]
+    >If you don't have a **Web** platform, select **Add a platform** and in the *Configure platforms* window, select **Web**.
 
 [!INCLUDE[Configure the Azure AD permissions](../../includes/embed-tutorial-org-azure-ad-permissions.md)]
 
