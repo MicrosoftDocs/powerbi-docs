@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 17/09/2020
+ms.date: 12/17/2020
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
 
@@ -274,7 +274,7 @@ After configuring and running the *embed for your customers* sample application,
 >[Move to production](move-to-production.md)
 
 >[!div class="nextstepaction"]
->[Embed for your customers](embed-sample-for-your-customers.md)
+>[Embed for your customers](embed-sample-for-customers.md)
 
 > [!div class="nextstepaction"]
 >[Embed paginated reports for your customers](embed-paginated-reports-customers.md)

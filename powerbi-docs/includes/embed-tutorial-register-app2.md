@@ -9,4 +9,4 @@ ms.date: 12/09/2020
 ms.custom: include file
 ---
 
-To register your application with Azure AD, follow the instructions in [Register your application](register-app.md).
+To register your application with Azure AD, follow the instructions in [Register your application](../developer/embedded/register-app.md).

@@ -21,4 +21,4 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
 * **Power BI dependencies**
 
-    * Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md).
+    * Your own [Azure Active Directory tenant](../developer/embedded/create-an-azure-active-directory-tenant.md).
