@@ -4,7 +4,7 @@ description: 'Customize visualization title, background, and legend'
 author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
-featuredvideoid: IkJda4O7oGs
+featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
