@@ -6,6 +6,7 @@ ms.author: mihart
 manager: kvivek
 ms.reviewer: 'tessa'
 featuredvideoid: jtlLGRKBvXY
+ms.custom: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to

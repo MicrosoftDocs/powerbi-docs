@@ -17,6 +17,7 @@
     - name: "Connect to data in Power BI Desktop"
       href: desktop-quickstart-connect-to-data.md
   - name: Tutorials
+    expanded: true
     items: 
     - name: "Shape and combine multiple data sources"
       href: desktop-shape-and-combine-data.md
@@ -39,6 +40,7 @@
     - name: "Refresh data from SQL Server"
       href: service-gateway-sql-tutorial.md                  
   - name: Concepts
+    expanded: true
     items: 
     - name: "Power BI data sources"
       href: power-bi-data-sources.md
@@ -50,6 +52,8 @@
       href: desktop-default-member-multidimensional-models.md            
     - name: "About using DirectQuery in Power BI"
       href: desktop-directquery-about.md
+    - name: "Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)"
+      href: desktop-directquery-datasets-azure-analysis-services.md      
     - name: Gateways
       items:
       - name: "Guidance for deploying a data gateway"
@@ -57,6 +61,7 @@
       - name: "On-premises data gateway FAQ"
         href: service-gateway-power-bi-faq.md
   - name: How-to guides
+    expanded: true
     items: 
     - name: "Connect to data sources"
       href: desktop-connect-to-data.md

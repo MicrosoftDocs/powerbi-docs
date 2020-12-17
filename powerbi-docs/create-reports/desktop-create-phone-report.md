@@ -4,7 +4,7 @@ description: Learn how to optimize report pages for the Power BI mobile apps by 
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
-ms.custom: contperfq4
+ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
