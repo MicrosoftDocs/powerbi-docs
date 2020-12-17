@@ -125,9 +125,11 @@ There are also a few **limitations** you need to keep in mind:
 
 - Calculation groups on remote sources are not supported, with undefined query results.
 
-- Some queries may return wrong results when there is a relationship between calculated tables and table(s) in a remote source. This is not supported, but is not currently blocked in the interface.
+- Some queries may return wrong results when there is a relationship between calculated tables and table(s) in a remote source. Creating calculated tables over a remote dataset is not supported, although it is not currently blocked in the interface.
 
-- Sort by column is not supported at this time. 
+- Sort by column is not supported at this time.
+
+- APR (automatic page refresh) is only supported for some scenarios depending on the data source type. You can find more information in the APR documentation.
 
 ## Next steps
 
