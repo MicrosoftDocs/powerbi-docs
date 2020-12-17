@@ -21,10 +21,14 @@ For related "What's New" information, see:
 
 ## December 2020
 ### We've added anomaly detection to the mobile apps
-If the report creator has set up anomaly detection for a report visual, you can see if there are unexpectedly high peaks or low dips in your data caused by data outliers (i.e., anomalies).
+If the report creator has set up anomaly detection for a report visual, you can see if there are unexpectedly high peaks or low dips in your data caused by data outliers (i.e., anomalies). [Learn more!](mobile-reports-in-the-mobile-apps.md#investigate-anomalies-in-time-series-data)
+
+![Screenshot of anomaly detection.](media/mobile-whats-new-in-the-mobile-apps/mobile-anomaly-detection.png)
 
 ### Easily find your org's endorsed content
 Content that's been [promoted or certified](../../collaborate-share/service-endorsement-overview.md) in the Power BI service is now tagged in the app with a badge. Report creators promote their content to show that it's ready for you to use (promoted) or certify their content to show that it's been approved by your org (certified).
+
+![Screenshot of certified report in report info on mobile.](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-certified-badge.png)
 
 ### We've added dark mode to Power BI mobile (Android)
 Try out the new dark mode in the Power BI mobile app for Android devices. In dark mode, you'll see light text on a dark background, reducing the brightness of the screen and making it easier to see your content. You can switch between themes in the app appearance settings. [Learn more](mobile-apps-dark-mode.md)
