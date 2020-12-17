@@ -45,7 +45,7 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
 * **Power BI dependencies**
 
-    * Your own [Azure Active Directory tenant](../developer/embedded/create-an-azure-active-directory-tenant.md).
+    * Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md).
 
     * One of the following licenses:
 
@@ -59,9 +59,9 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
     # [.NET Core](#tab/net-core)
 
-* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (or higher)
+    * [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (or higher)
     
-* An integrated development environment (IDE). We recommend using one of the following:
+    * An integrated development environment (IDE). We recommend using one of the following:
     
     * [Visual Studio](https://visualstudio.microsoft.com/)
     
@@ -111,7 +111,7 @@ To embed your content, you'll need to obtain a few parameter values. The paramet
 
 |Parameter  |.NET Core  |.NET Framework  |React TypeScript |
 |---------|---------|---------|---------|
-|[Client ID](#client-id) |![Applies to.](../../media/yes.png) |![Applies to.](../../media/yes.png)         |![Does not apply to.](../../media/no.png) |
+|[Client ID](#client-id) |![Appli    es to.](../../media/yes.png) |![Applies to.](../../media/yes.png)         |![Does not apply to.](../../media/no.png) |
 |[Client secret](#workspace-id) |![Applies to.](../../media/yes.png) |![Applies to.](../../media/yes.png) |![Does not apply to.](../../media/no.png) |
 |[Workspace ID]() |![Does not apply to.](../../media/no.png) |![Does not apply to.](../../media/no.png) |![Applies to.](../../media/yes.png) |
 |[Report ID]() |![Does not apply to.](../../media/no.png) |![Does not apply to.](../../media/no.png) |![Applies to.](../../media/yes.png) |
