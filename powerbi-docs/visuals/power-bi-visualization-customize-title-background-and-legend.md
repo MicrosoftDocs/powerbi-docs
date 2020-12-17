@@ -124,6 +124,10 @@ If you ever need to revert all of the changes, select **Revert to default**, at 
 ## Customize total labels for stacked visuals
 Stacked visuals can display data labels and total labels. On a stacked column chart, data labels identify the value for each portion of a column. Total labels display the total value for the entire aggregated column. 
 
+Watch Rien add total labels to a stacked chart, and then follow the steps below to try it out yourself.
+
+ [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IY3L]
+
 1. Open the **Overview** report page and select the **Average selling area size by chain and store type** bar chart.
 
 1. In the **Visualization** tab, select ![icon for the stacked bar chart](media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-bar.png) to convert this bar chart to a stacked bar chart. Notice that the visual retains its data labels. 
