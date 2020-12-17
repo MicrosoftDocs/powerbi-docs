@@ -16,5 +16,3 @@ ms.custom: include file
     :::image type="content" source="media/embed-sample-for-customers/developer-samples.png" alt-text="A screenshot showing the ZIP download option in the Power B I developer samples GitHub":::
 
 3. Extract the downloaded ZIP and navigate to the **PowerBI-Developer-Samples-master** folder.
-
-4. Depending on the language you want your application to use, open one of these folders:

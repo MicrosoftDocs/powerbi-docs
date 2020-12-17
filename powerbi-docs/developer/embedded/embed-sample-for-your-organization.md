@@ -24,7 +24,7 @@ To use your application, your users will need to sign in to Power BI.
 
 The embed for your organization solution is usually used by enterprises and big organizations, and is intended for internal users.
 
-[!INCLUDE[embedded analytics specifications](../../includes/embed-tutorial-specs1.md)]
+[!INCLUDE[embedded analytics specifications](../../includes/embed-tutorial-specs.md)]
 
 * .NET Framework
 * .NET Core
@@ -33,7 +33,19 @@ The embed for your organization solution is usually used by enterprises and big 
 >[!NOTE]
 >The *.NET Core* and the *.NET Framework* samples will allow the end user to view any Power BI dashboard, report or tile they have access to in Power BI service. The *React TypeScript* sample lets you embed only one report that your end user already has access to on Power BI service.
 
-[!INCLUDE[embedded analytics specifications and prerequisites](../../includes/embed-tutorial-specs2.md)]
+The code samples support the following browsers:
+
+* Google Chrome
+* Microsoft Edge
+* Mozilla Firefox
+
+## Prerequisites
+
+Before you start this tutorial, verify that you have both the Power BI and code dependencies listed below:
+
+* **Power BI dependencies**
+
+    * Your own [Azure Active Directory tenant](../developer/embedded/create-an-azure-active-directory-tenant.md).
 
     * One of the following licenses:
 
@@ -47,11 +59,19 @@ The embed for your organization solution is usually used by enterprises and big 
 
     # [.NET Core](#tab/net-core)
 
-    [!INCLUDE[.NET Core dependencies](../../includes/embed-tutorial-core-dependencies.md)]
+* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (or higher)
+    
+* An integrated development environment (IDE). We recommend using one of the following:
+    
+    * [Visual Studio](https://visualstudio.microsoft.com/)
+    
+    * [Visual Studio Code](https://code.visualstudio.com/)
 
     # [.NET Framework](#tab/net-framework)
 
-    [!INCLUDE[.NET Framework dependencies](../../includes/embed-tutorial-net-dependencies.md)]
+    * [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
+    
+    * [Visual Studio](https://visualstudio.microsoft.com/)
 
     # [React TypeScript](#tab/react)
 
@@ -132,6 +152,8 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
 [!INCLUDE[Embedding steps](../../includes/embed-tutorial-embedding-steps.md)]
 
+4. Depending on the language you want your application to use, open one of these folders:
+
     * .NET Core
     * .NET Framework
     * React-TS
@@ -144,6 +166,8 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 ### Configure your Azure AD app
 
 [!INCLUDE[Configure the Azure AD authentication options](../../includes/embed-tutorial-org-azure-ad-app.md)]
+
+5. In *Platform configurations* configure your **Web** platform as follows:
 
     1. In **Redirect URIs** add `https://localhost:5000/signin-oidc` and select **Configure**.
     
@@ -184,6 +208,8 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 ### Configure your Azure AD app
 
 [!INCLUDE[Configure the Azure AD authentication options](../../includes/embed-tutorial-org-azure-ad-app.md)]
+
+5. In *Platform configurations* configure your **Web** platform as follows:
 
     1. In **Redirect URIs** add `https://localhost:44300/` and select **Configure**.
     

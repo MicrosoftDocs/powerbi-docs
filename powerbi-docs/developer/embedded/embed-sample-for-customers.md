@@ -24,7 +24,7 @@ To use your application, your users will not need to sign in to Power BI or have
 
 We recommend using the *embed for your customers* method to embed your Power BI content, if you're an independent software vendor (ISV) or a developer, who wants to create applications for third parties.
 
-[!INCLUDE[embedded analytics specifications](../../includes/embed-tutorial-specs1.md)]
+[!INCLUDE[embedded analytics specifications](../../includes/embed-tutorial-specs.md)]
 
 * .NET Framework
 * .NET Core
@@ -32,7 +32,19 @@ We recommend using the *embed for your customers* method to embed your Power BI 
 * Node JS
 * Python
 
-[!INCLUDE[embedded analytics specifications and prerequisites](../../includes/embed-tutorial-specs2.md)]
+The code samples support the following browsers:
+
+* Google Chrome
+* Microsoft Edge
+* Mozilla Firefox
+
+## Prerequisites
+
+Before you start this tutorial, verify that you have both the Power BI and code dependencies listed below:
+
+* **Power BI dependencies**
+
+    * Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md).
 
     * To authenticate your app against Power BI, you'll need one of the following:
 
@@ -48,11 +60,19 @@ We recommend using the *embed for your customers* method to embed your Power BI 
 
     # [.NET Core](#tab/net-core)
     
-    [!INCLUDE[.NET Core dependencies](../../includes/embed-tutorial-core-dependencies.md)]
+    * [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (or higher)
+    
+    * An integrated development environment (IDE). We recommend using one of the following:
+    
+        * [Visual Studio](https://visualstudio.microsoft.com/)
+    
+        * [Visual Studio Code](https://code.visualstudio.com/)
 
     # [.NET Framework](#tab/net-framework)
     
-    [!INCLUDE[.NET dependencies](../../includes/embed-tutorial-net-dependencies.md)]
+    * [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
+    
+    * [Visual Studio](https://visualstudio.microsoft.com/)
 
     # [Java](#tab/java)
     
@@ -256,6 +276,8 @@ The Power BI embedded sample application allows you to create an *embed for your
 Follow these steps to modify the *embed for your customers* sample application, to embed your Power BI report.  
 
 [!INCLUDE[Embedding steps](../../includes/embed-tutorial-embedding-steps.md)]
+
+4. Depending on the language you want your application to use, open one of these folders:
 
     * .NET Core
     * .NET Framework
