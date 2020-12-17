@@ -17,6 +17,6 @@ ms.custom: include file
         * Read all reports
         * Read all dashboards
 
-    2. That your API permissions are granted. An![Applies to](media/yes.png) symbol next to each permission indicates that it's granted. If you don't see this symbol next to your permissions, select **Grant admin concent**.
+    2. That your API permissions are granted. A![Applies to](media/yes.png) symbol next to each permission indicates that it's granted. If you don't see this symbol next to your permissions, select **Grant admin concent**.
 
     :::image type="content" source="media/embed-sample-for-your-organization/azure-ad-permissions.png" alt-text="Screenshot showing the Azure AD app API permissions.":::
