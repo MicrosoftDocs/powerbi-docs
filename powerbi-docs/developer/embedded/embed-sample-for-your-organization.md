@@ -84,27 +84,38 @@ To create an *embed for your organization* sample app, follow these steps:
 
 ## Step 4 - Get the embedding parameter values
 
-To embed your content, you'll need to obtain the following parameter values:
-
+To embed your content, you'll need to obtain the a few parameter values. The parameter values you'll need depend on the language of the sample application you want use. The table below lists which parameter values are required for each sample.
 
 |Parameter  |.NET Core  |.NET Framework  |React  |
 |---------|---------|---------|---------|
-|[Client ID](#client-id)     |         |         |         |
-|[Client secret](#workspace-id)     |         |         |         |
-|Row3     |         |         |         |
-|Row4     |         |         |         |
-
-
-* [Client ID](#client-id)
-* [Client secret](#workspace-id)
+|[Client ID](#client-id) |![Applies to.](../../media/yes.png) |![Applies to.](../../media/yes.png)         |![Does not apply to.](../../media/no.png) |
+|[Client secret](#workspace-id) |![Applies to.](../../media/yes.png) |![Applies to.](../../media/yes.png) |![Does not apply to.](../../media/no.png) |
+|[Workspace ID]() |![Does not apply to.](../../media/no.png) |![Does not apply to.](../../media/no.png) |![Applies to.](../../media/yes.png) |
+|[Report ID]() |![Does not apply to.](../../media/no.png) |![Does not apply to.](../../media/no.png) |![Applies to.](../../media/yes.png) |
 
 ### Client ID
+
+>[!TIP]
+>**Applies to:** ![Applies to.](../../media/yes.png).NET Core ![Applies to.](../../media/yes.png).NET Framework ![Does not apply to.](../../media/no.png)React
 
 [!INCLUDE[Get the client ID](../../includes/embed-tutorial-client-id.md)]
 
 ### Client secret
 
+>[!TIP]
+>**Applies to:** ![Applies to.](../../media/yes.png).NET Core ![Applies to.](../../media/yes.png).NET Framework ![Does not apply to.](../../media/no.png)React
+
 [!INCLUDE[Get the client secret](../../includes/embed-tutorial-client-secret.md)]
+
+### Workspace ID
+
+>[!TIP]
+>**Applies to:** ![Does not apply to.](../../media/no.png).NET Core ![Does not apply to.](../../media/no.png).NET Framework ![Applies to.](../../media/yes.png)React
+
+### Report ID
+
+>[!TIP]
+>**Applies to:** ![Does not apply to.](../../media/no.png).NET Core ![Does not apply to.](../../media/no.png).NET Framework ![Applies to.](../../media/yes.png)React
 
 ## Step 5 - Embed your content
 
