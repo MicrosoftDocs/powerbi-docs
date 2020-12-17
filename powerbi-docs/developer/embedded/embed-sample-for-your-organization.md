@@ -86,6 +86,15 @@ To create an *embed for your organization* sample app, follow these steps:
 
 To embed your content, you'll need to obtain the following parameter values:
 
+
+|Parameter  |.NET Core  |.NET Framework  |React  |
+|---------|---------|---------|---------|
+|[Client ID](#client-id)     |         |         |         |
+|[Client secret](#workspace-id)     |         |         |         |
+|Row3     |         |         |         |
+|Row4     |         |         |         |
+
+
 * [Client ID](#client-id)
 * [Client secret](#workspace-id)
 
@@ -192,13 +201,22 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
     1. In **Redirect URIs** add `https://localhost:3000` and select **Configure**.
     
-    2. In *Implicit grant and hybrid flows*, enable the **Access tokens** option.
+    2. In *Implicit grant and hybrid flows*, enable the **ID tokens** option.
     
     3. Select **Configure**.
 
-    :::image type="content" source="media/embed-sample-for-your-organization/azure-ad-net-configurations.png" alt-text="Screenshot showing the Azure AD app authentication configurations including the web redirect U R I and the selected access token option for the .NET core app sample.":::
+    :::image type="content" source="media/embed-sample-for-your-organization/azure-ad-framework-configurations.png" alt-text="Screenshot showing the Azure AD app authentication configurations including the web redirect U R I and the selected access token option for the .NET framework app sample.":::
 
-[!INCLUDE[Configure the Azure AD permissions](../../includes/embed-tutorial-org-azure-ad-permissions.md)]
+    >[!NOTE]
+    >If you don't have a **Web** platform, select **Add a platform** and in the *Configure platforms* window, select **Web**.
+
+6. From the *Manage* menu, select **Permissions** and verify the following:
+
+    1. That your Azure AD app has the **Read all reports** permission listed. To change your Azure AD app permissions, refer to [Change your Azure AD app's permissions](register-app.md#change-your-azure-ad-apps-permissions).
+
+    2. That the **Read all reports** permission is granted. An![Applies to.](../../media/yes.png) symbol next to the permission indicates that it's granted. If you don't see this symbol, select **Grant admin concent**.
+
+    :::image type="content" source="media/embed-sample-for-your-organization/azure-ad-permissions.png" alt-text="Screenshot showing the Azure AD app API permissions.":::
 
 ### Configure the sample embedding app
 
