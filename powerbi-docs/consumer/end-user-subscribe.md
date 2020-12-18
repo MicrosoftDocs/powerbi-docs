@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/16/2020
+ms.date: 12/17/2020
 LocalizationGroup: Common tasks
 ---
 
@@ -48,7 +48,7 @@ Whether you're subscribing to a dashboard or to a report, the process is similar
     
     The screen on the left appears when you're on a report page and select **Subscribe**. The screen on the right appears when you're on a dashboard and select **Subscribe**. 
     
-    a. To subscribe to more than one page in a report, select **Add new subscription** and select a different page from the dropdown near the top.
+    a. To subscribe to more than one page in a report, you can either select **Full report attachment as** or set up a new subscription by selecting  **Add another subscription**.
 
     b. Use the yellow slider to turn the subscription on and off.  Setting the slider to **Off** doesn't delete the subscription. To delete the subscription, select the trashcan icon.
 
@@ -65,7 +65,7 @@ Whether you're subscribing to a dashboard or to a report, the process is similar
     - Give recipients permission to open and view the report or dashboard.
     - Select **Go to report/dashboard** to add a "Go to report" link to the body of the email.
     - Add a thumbnail preview of the report page to the body of the email.
-    - Add an attachment and select either PDF or PowerPoint. The size of the attachment is limited to no more than 20 pages and less than 25MB. The attachment respects all privacy labels for the report. 
+    - Add the full report as an attachment instead of only a single report page and select either PDF or PowerPoint. The size of the attachment is limited to no more than 20 pages and less than 25MB. The attachment respects all privacy labels for the report. 
     
     h. To review your subscription and test it out, select **Run now**.  This sends the email to you right away. 
 
@@ -99,6 +99,10 @@ A subscription will end if the Pro license expires, the dashboard or report is d
 * Subscriptions may fail on dashboards or reports with extremely large images due to email size limits.    
 * Power BI automatically pauses refresh on datasets associated with dashboards and reports that haven't been visited in more than two months.  However, if you add a subscription to a dashboard or report, it won't pause even if it goes unvisited.
 * Keep in mind that like other BI products, the time you set your subscription for is when the subscription begins processing.  Once the report processing is complete, then the subscription is queued and sent to the e-mail recipients.  While we strive to process and deliver all subscriptions as quickly as possible, there are times at peak demand when you may see a longer delay due to the number of subscriptions that can be sent at once.  For the majority of customers, they shouldn’t see a delay of more than 15 minutes to process and send their reports, though it may take up to 30 minutes for certain times and tenants that have significant usage.  We never expect any delay in delivery to be more than 60 minutes from the time the subscription is scheduled.  If any customer experiences a delay of that length, they should first ensure that the address no-reply-powerbi@microsoft.com is on your safe sender list and isn't blocked by your e-mail provider.  If the email isn't being blocked, they should contact their Power BI administrator or IT help desk for assistance.
+* The full report attachment feature is available for reports that meet the following three conditions. Any existing subscriptions with full reports as attachments that do not meet these conditions are disabled and you will receive an email explaining the error.
+    - They're in an upgraded workspace with [Power BI Premium or Premium Per User](../admin/service-premium-what-is.md). 
+    - The attachment file is under 25 MB in size.
+    - The report has fewer than 20 pages.
 
 ## Next steps
 
