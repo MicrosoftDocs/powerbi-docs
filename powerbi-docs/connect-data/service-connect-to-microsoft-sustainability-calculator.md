@@ -43,11 +43,7 @@ To find your company’s Access key:
 
 ### How to connect
 
-1. Select **Apps** in the Power BI nav pane, and then select **Get apps** in the upper right corner.
-   ![Select Get apps](./media/filename.png)
-
-2. In AppSource, select the **Apps** tab, and then search for the app.
-   ![Search for the app](./media/filename.png)
+[!INCLUDE powerbi-service-apps-get-more-apps]
 
 3. Select **Microsoft Sustainability Calculator**, and then select **Get it now**.
 
@@ -66,7 +62,7 @@ To find your company’s Access key:
    | Field | Value |
    | --- | --- |
    | **Authentication method** | Select **Key**. |
-   | **Account key** | Enter your Access key. |
+   | **Account key** | Enter your access key. |
    | **Privacy level setting for this data source | Select **Organizational**. |
 
    ![Access Key Entry](media/service-connect-to-microsoft-sustainability-calculator/access-key-entry.png)
