@@ -65,7 +65,7 @@ Whether you're subscribing to a dashboard or to a report, the process is similar
     - Give recipients permission to open and view the report or dashboard.
     - Select **Go to report/dashboard** to add a "Go to report" link to the body of the email.
     - Add a thumbnail preview of the report page to the body of the email.
-    - Add the full report as an attachment instead of only a single report page and select either PDF or PowerPoint. The size of the attachment is limited to no more than 20 pages and less than 25MB. The attachment respects all privacy labels for the report. 
+    - Add the full report as an attachment instead of only a single report page and select either PDF or PowerPoint. The size of the attachment is limited to no more than 20 pages and less than 25 MB. The attachment respects all privacy labels for the report. 
     
     h. To review your subscription and test it out, select **Run now**.  This sends the email to you right away. 
 
