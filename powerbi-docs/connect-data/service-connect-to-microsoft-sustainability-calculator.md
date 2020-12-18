@@ -122,7 +122,7 @@ You’ll need your Azure enrollment number. If you don’t have it, ask your org
       ![Pick an account](media/service-connect-to-microsoft-sustainability-calculator/pick-account.png)
        
    - In **You are connecting (2 of 2)**, under **Authentication method**, select **Anonymous**, and under **Privacy level setting for this data source**, select **Organizational**.
-   
+
      ![Enter authentication parameters](media/service-connect-to-microsoft-sustainability-calculator/connecting-2-of-2.png)
     
 5. Wait for the view to build, which can take up to 24 hours.
@@ -134,13 +134,13 @@ You’ll need your Azure enrollment number. If you don’t have it, ask your org
 
 ### FAQ
 
-#### App Setup
+#### App setup
 
 **I’m receiving an error at the time of connecting my data with the calculator. What can I do?**
 
 First, check in Azure Cost Management that you have IT Admin privileges. If you don’t, request this access from your administrator. Next, ensure you’re using the correct enrollment number.
 
-**I entered my enrollment number, but my company data isn’t loading. What’is the issue?**
+**I entered my enrollment number, but my company data isn’t loading. What’s the issue?**
 
 The Sustainability Calculator Public Preview may take up to 24 hours to load your data. Return after 24 hours and select the **Refresh** button in Power BI.
 
