@@ -12,7 +12,7 @@ LocalizationGroup: Connect to services
 
 # Microsoft Sustainability Calculator Support Page
 
-The Microsoft Sustainability Calculator provides new insight into carbon emissions data associated with Azure services. Those responsible for reporting on and driving sustainability within their organizations can now quantify the carbon impact of each Azure subscription, as well as see estimated carbon savings from running those workloads in Azure versus on-premises datacenters. This data may be used for greenhouse gas reporting of Scope 3 emissions.
+The Microsoft Sustainability Calculator provides new insight into carbon emissions data associated with Azure services. People responsible for reporting on and driving sustainability within their organizations can now quantify the carbon impact of each Azure subscription, and see estimated carbon savings from running those workloads in Azure versus on-premises datacenters. This data may be used for greenhouse gas reporting of Scope 3 emissions.
 
 > [!NOTE]
 > This connector version only supports enrollments from the [Azure Enterprise portal](https://ea.azure.com). China enrollments aren't currently supported.
@@ -51,7 +51,7 @@ To find your company’s Access key:
 
 3. Select **Microsoft Sustainability Calculator**, and then select **Get it now**.
 
-4. In **Install this Power BI App?**, select **Install**.
+4. In **Install this Power BI App?** select **Install**.
 
 5. In the **Apps** pane, select the **Microsoft Sustainability Calculator** tile.
 
@@ -93,13 +93,13 @@ Microsoft’s carbon accounting extends across all three scopes of emissions wit
 
 ### Before you start
 
-The Microsoft Sustainability Calculator runs on Power BI Pro. If you don’t have Power BI Pro, [click here](https://powerbi.microsoft.com/power-bi-pro) to get a free trial now.
+The Microsoft Sustainability Calculator runs on Power BI Pro. If you don’t have Power BI Pro, [get a free trial now](https://powerbi.microsoft.com/power-bi-pro).
 
 You’ll need your Azure enrollment number. If you don’t have it, ask your organization’s Azure administrator for help. For more information, see [Prerequisites](#prerequisites).
 
 ### Connecting the calculator: Five easy steps to carbon accounting
 
-1. Download the app. Click [here](https://appsource.microsoft.com/link) to download the app via AppSource.
+1. Download the app from [AppSource](https://appsource.microsoft.com/link).
    ![Microsoft Sustainability Calculator on AppSource](filename.png)
 
    You can also search for the app in Power BI.
@@ -119,7 +119,7 @@ You’ll need your Azure enrollment number. If you don’t have it, ask your org
        
    - In **You are connecting (2 of 2)**, under **Authentication method**, select **Anonymous**, and under **Privacy level setting for this data source**, select **Organizational**.
     
-5. Wait for the view to build. This may take up to 24 hours.
+5. Wait for the view to build, which can take up to 24 hours.
 
 ### Additional resources
 
@@ -137,13 +137,13 @@ First, check in Azure Cost Management that you have IT Admin privileges. If you 
 The Sustainability Calculator Public Preview may take up to 24 hours to load your data. Return after 24 hours and select the **Refresh** button in Power BI.
 
 **Is Microsoft trying to shift responsibility for emissions from Microsoft to me?**
-No. Carbon emissions from Azure services are reported as Microsoft's scope 1 and 2 emissions, consistent with the industry-standard [Greenhouse Gas (GHG) Protocol](https://ghgprotocol.org/). The GHG Protocol defines scope 3 emissions as those that another entity emits on your behalf, and are inherently double-counted. The sustainability dashboard provides new transparency to your scope 3 emissions associated with the use of Azure services, specifically Scope 3 Category 1 "Purchased goods and services".
+No. Carbon emissions from Azure services are reported as Microsoft's scope 1 and 2 emissions, consistent with the industry-standard [Greenhouse Gas (GHG) Protocol](https://ghgprotocol.org/). The GHG Protocol defines scope 3 emissions as emissions another entity emits on your behalf, and are inherently double-counted. The Microsoft Sustainability Calculator provides new transparency to your scope 3 emissions associated with the use of Azure services, specifically Scope 3 Category 1 "Purchased goods and services".
 
 **Why are my emissions from use of the Microsoft cloud so much lower than they would be if I were using an on-premises solution?**
-Microsoft conducted [a study, published in 2018](https://blogs.microsoft.com/on-the-issues/2018/05/17/microsoft-cloud-delivers-when-it-comes-to-energy-efficiency-and-carbon-emission-reductions-study-finds/) that evaluated the difference between the Microsoft cloud and on-premises or traditional datacenters. The results show that Azure Compute and Storage are between 52 and 79 percent more energy efficient than traditional enterprise datacenters, depending on the specific comparison to low, medium, or high efficiency on-premises alternative being made. When taking into account our renewable energy purchases, Azure is between 79 and 98 percent more carbon efficient. These savings are attributable to four key features of the Microsoft Cloud: IT operational efficiency, IT equipment efficiency, datacenter infrastructure efficiency, and renewable electricity.
+Microsoft conducted [a study, published in 2018](https://blogs.microsoft.com/on-the-issues/2018/05/17/microsoft-cloud-delivers-when-it-comes-to-energy-efficiency-and-carbon-emission-reductions-study-finds/) that evaluated the difference between the Microsoft cloud and on-premises or traditional datacenters. The results show that Azure Compute and Storage are between 52 and 79 percent more energy-efficient than traditional enterprise datacenters, depending on the specific comparison too low, medium, or high efficiency on-premises alternative being made. When taking into account our renewable energy purchases, Azure is between 79 and 98 percent more carbon efficient. These savings are due to four key features of the Microsoft Cloud: IT operational efficiency, IT equipment efficiency, datacenter infrastructure efficiency, and renewable electricity.
 
 **If Microsoft's operations are carbon neutral and powered by renewables, why aren't customer emissions from Azure services zero?**
-There are two primary reasons why customer emissions from Microsoft aren’t zero. The first is related to GHG accounting practices, and the second has to do with the boundary of this analysis. To achieve carbon neutral operations, Microsoft uses carbon offsets to reduce certain emission sources such as onsite fuel combustion for backup generators, refrigerants, and vehicle fleets. These reduce Microsoft’s *net* emissions to zero. The calculator reports *gross* GHG emissions prior to the application of these offsets, though the volume of offsets applied and *net* emissions are reported in the **GHG Reporting** tab for additional transparency. The second reason is that in addition to the energy and emissions associated with the operation of Microsoft's datacenters, the emissions footprint includes the energy used by Internet Service Providers outside of Microsoft’s operational boundary to transmit data between Microsoft datacenters and Azure customers.
+There are two primary reasons why customer emissions from Microsoft aren’t zero. The first is related to GHG accounting practices, and the second has to do with the boundary of this analysis. To achieve carbon neutral operations, Microsoft uses carbon offsets to reduce certain emission sources such as onsite fuel combustion for backup generators, refrigerants, and vehicle fleets. These reduce Microsoft’s *net* emissions to zero. The calculator reports *gross* GHG emissions before the application of these offsets, though the volume of offsets applied and net emissions is reported in the **GHG Reporting** tab for further transparency. The second reason is that in addition to the energy and emissions associated with the operation of Microsoft's datacenters, the emissions footprint includes the energy used by Internet Service Providers outside of Microsoft’s operational boundary to transmit data between Microsoft datacenters and Azure customers.
 
 **How am I supposed to use this data, and where do I report it?**
 Your emissions can be reported as part of your company's scope 3 indirect carbon emissions. Scope 3 emissions are often disclosed in sustainability reports, CDP climate change, and other reporting outlets. In addition to the emissions totals, the emissions savings provide a clear example of how your company's decision to use Microsoft Azure services is contributing to global emissions reductions. To contextualize, the app indicates the equivalent vehicle miles avoided corresponding to the reduction in GHG emissions, based on EPA’s equivalency calculator factors as of January 2020.
@@ -154,7 +154,7 @@ Being resource and cost efficient in Azure will reduce the environmental impact 
 #### Methodology
 
 **What is the methodology behind the tool?**
-The Microsoft Sustainability Calculator reflects the specific cloud services consumed and the associated energy requirements, efficiency of the datacenters providing those services, electricity fuel mixes in the regions in which those datacenters operate, and Microsoft’s purchases of renewable energy. As part of the app’s development, the methodology and its implementation went through third-party verification to ensure that it aligns to the World Resources Institute (WRI)/World Business Council for Sustainable Development (WBCSD) Greenhouse Gas (GHG) Protocol Corporate Accounting and Reporting Standard. The scope of the verification, conducted in accordance with ISO 14064-3: Greenhouse gases -- Part 3: Specification with guidance for the validation and verification of greenhouse gas assertions, included the estimation of emissions from Azure services, but excluded the estimation of on-premises emissions given the counterfactual nature of that estimate. A more detailed description of the carbon calculation is documented in the **Calculation Methodology** tab in the tool.
+The Microsoft Sustainability Calculator reflects the specific cloud services consumed and the associated energy requirements, efficiency of the datacenters providing those services, electricity fuel mixes in the regions in which those datacenters operate, and Microsoft’s purchases of renewable energy. As part of the app’s development, the methodology and its implementation went through third-party verification to ensure that it aligns to the World Resources Institute (WRI)/World Business Council for Sustainable Development (WBCSD) Greenhouse Gas (GHG) Protocol Corporate Accounting and Reporting Standard. The scope of the verification, conducted in accordance with ISO 14064-3: Greenhouse gases--Part 3: Specification with guidance for the validation and verification of greenhouse gas assertions, included the estimation of emissions from Azure services, but excluded the estimation of on-premises emissions given the counterfactual nature of that estimate. A more detailed description of the carbon calculation is documented in the **Calculation Methodology** tab in the tool.
 
 **What data is required to calculate the Azure carbon footprint? Do you access my company's data?**
 The estimated carbon calculations are performed based on consumption of Azure services accessed using Azure Consumed Revenue. The Calculator does not access any of your stored customer data. The consumption data is combined with Microsoft's energy and carbon tracking data to compute the estimated emissions associated with your consumption of Azure services based on the datacenters that provide those services.
@@ -171,7 +171,7 @@ The Microsoft Sustainability Calculator doesn’t obtain any information specifi
 Efficiencies associated with Microsoft cloud services include far more than improved PUE. While Microsoft datacenters strive to optimize PUE, the primary efficiency improvements come from IT operational efficiency (dynamic provisioning, multitenancy, server utilization) and IT equipment efficiency (tailoring hardware to services ensuring more energy goes towards useful output), in addition to datacenter infrastructure efficiency (PUE improvements). Our [2018 study](https://blogs.microsoft.com/on-the-issues/2018/05/17/microsoft-cloud-delivers-when-it-comes-to-energy-efficiency-and-carbon-emission-reductions-study-finds/) quantifies these savings compared to a range of on-premises alternatives ranging from low-efficiency to high-efficiency datacenters. These findings are used to estimate the energy use required for a corresponding on-premises datacenter to provide the same services that each customer consumes on the Microsoft cloud.
 
 **What is the assumed energy mix for the on-premises infrastructure?
-By default, the Microsoft Sustainability Calculator estimates on-premises emissions based on the mix of renewables and non-renewables on the grid. It is assumed that the on-premises datacenter would be located on the same grid as Microsoft’s datacenters. However, for customers who purchase renewable electricity *in addition to* what’s on the grid (e.g., through Power Purchase Agreements), users can select the percentage of renewable electricity, and the Microsoft Sustainability Calculator will adjust on-premises emissions accordingly.
+By default, the Microsoft Sustainability Calculator estimates on-premises emissions based on the mix of renewables and non-renewables on the grid. It is assumed that the on-premises datacenter would be located on the same grid as Microsoft’s datacenters. However, for customers who purchase renewable electricity *in addition to* what’s on the grid (for example, through Power Purchase Agreements), users can select the percentage of renewable electricity, and the Microsoft Sustainability Calculator will adjust on-premises emissions accordingly.
 
 **When should I choose Low, Medium, or High for the efficiency of the on-premises infrastructure?**
 Users should select the efficiency most representative of the on-premises deployment they would like to compare against, based on the equipment and datacenter characteristics here:
