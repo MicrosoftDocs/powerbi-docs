@@ -59,13 +59,13 @@ Subscribing to paginated reports is a little different. See [Subscribe yourself 
 
 6. By default, the start date for your subscription is the date you create it. You have the option to select an end date. If you don't set an end date, the end date is automatically one year after the start date. You can change it to any date in the future (up to the year 9999) at any time before the subscription ends. When a subscription reaches an end date, it stops until you re-enable it. You'll receive notification(s) before the scheduled end date to ask if you'd like to extend it.
 
-    In the screenshot below, notice that when you subscribe to a report, you're actually subscribing to a report _page_. To subscribe to more than one page in a report, select  **Add another subscription**  and select a different page.
+    In the screenshot below, notice that when you subscribe to a report, you're actually subscribing to a report _page_. To subscribe to more than one page in a report, you can either select **Full report attachment as** or set up a new subscription by selecting  **Add another subscription**.
 
     ![Subscribe pane](media/service-report-subscribe/power-bi-email.png)
 
 1. (Optional) Select whether to include a link back to the content in Power BI and whether to give users access to the content you're subscribing them to.  If you choose to include a link, for the best experience, ensure that all users have access to the report.
 
-1. (Optional) Select whether to add an attachment and choose either PDF or PowerPoint. The size of the attachment is limited to no more than 20 pages and less than 25MB. The attachment respects all privacy labels for the report.
+1. (Optional) Select whether to add the _full report_ as an attachment instead of only a single report page. Choose either PDF or PowerPoint. The size of the attachment is limited to no more than 20 pages and less than 25MB. The attachment respects all privacy labels for the report.
 
 1. Select  **Save and close**. Those subscribed receive an email and snapshot of the dashboard or report page for the frequency and time you selected. In all, you may create up to 24 subscriptions per report or dashboard, and can provide unique recipients, times, and frequencies for each subscription. All subscriptions set to  **After Data Refresh**  for your dashboard or report will still only send an email after the first scheduled refresh.
 
@@ -147,10 +147,8 @@ Power BI administrators can use the Power BI audit logs to view details around s
     - The attachment file is under 25 MB in size.
     - The report has fewer than 20 pages. 
     
-    If the report doesn't meet these three conditions, then you can't create subscriptions with full reports as attachments. Any existing subscriptions with full reports as attachments are disabled, and you receive an email explaining the error:
+    If the report doesn't meet these three conditions, then you can't create subscriptions with full reports as attachments. Any existing subscriptions with full reports as attachments are disabled, and you receive an email explaining the error.
     
-    :::image type="content" source="media/service-report-subscribe/full-report-attachment-error-email.png" alt-text="Full report attachment error email.":::
-
 ## Next steps
 
 - [Paginated reports in the Power BI service: Subscribe yourself and others](../consumer/paginated-reports-subscriptions.md)
