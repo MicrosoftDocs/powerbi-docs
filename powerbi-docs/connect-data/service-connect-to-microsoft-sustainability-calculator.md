@@ -44,7 +44,7 @@ To find your company’s access key:
 
 ### How to connect
 
-[!INCLUDE powerbi-service-apps-get-more-apps]
+[!INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-get-more-apps.md)]
 
 3. Select **Microsoft Sustainability Calculator**, and then select **Get it now**.
 
