@@ -57,7 +57,7 @@
         href: service-microsoft-teams-app.md
       - name: Embed reports in Teams tabs
         href: service-embed-report-microsoft-teams.md
-      - name: "Share directly to Teams"
+      - name: "Chat in Teams directly"
         href: service-share-report-teams.md
       - name: "Get a link preview in Teams"
         href: service-teams-link-preview.md

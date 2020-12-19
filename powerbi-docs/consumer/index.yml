@@ -7,7 +7,7 @@ metadata:
   title: Power BI for consumers 
   description: Getting started with Power BI? Get to know the features and capabilities of the Power BI service, and see what you can do with them as a Power BI consumer or end user.
   ms.service: powerbi
-  ms.subservice: powerbi-consumer
+  ms.subservice: pbi-explore
   ms.topic: landing-page # Required
   author: mihart
   ms.author: mihart

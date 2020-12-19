@@ -3824,6 +3824,11 @@
             "source_path": "powerbi-docs/developer/visuals/embedded-custom-layout.md",
             "redirect_url": "https://github.com/Microsoft/PowerBI-JavaScript/wiki/Custom-Layout",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-mixed-reality-app.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-hololens2-app",
+            "redirect_document_id": false
         }                                
     ]
 }

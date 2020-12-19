@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 10/22/2020
+ms.date: 12/18/2020
 ms.custom: seodec18
 LocalizationGroup: Administration
 ---
 
 # Administering Power BI in the admin portal
 
-The admin portal enables you to manage the Power BI settings for your organization. The portal includes items such as usage metrics, access to the Microsoft 365 admin center, and tenant settings.
+The admin portal enables you to manage the Power BI settings for your organization. The portal includes items such as usage metrics, access to the Microsoft 365 admin center, and settings that govern Power BI for all your users.
 
 The full admin portal can be accessed by global admins and users who have the Power BI service administrator role. If you're not in one of these roles, you only see **Capacity settings** in the portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
 
@@ -26,14 +26,15 @@ You have to be a global admin or Power BI service admin to access the Power BI a
 
 1. From the page header, select **Settings** > **Admin portal**.
 
-    ![Settings to admin portal](media/service-admin-portal/powerbi-admin-settings.png)
+   :::image type="content" source="media/service-admin-portal/settings-portal.png" alt-text="Settings menu with admin portal selected.":::
 
 There are several sections in the Admin portal. The rest of this article provides information about each of these sections.
 
-![Admin portal navigation](media/service-admin-portal/powerbi-admin-landing-page.png)
+   :::image type="content" source="media/service-admin-portal/portal-menu.png" alt-text="Admin portal menu.":::
 
 * [Usage metrics](#usage-metrics)
 * [Users](#users)
+* [Premium per user (preview)](#premium-per-user-preview)
 * [Audit logs](#audit-logs)
 * [Tenant settings](#tenant-settings)
 * [Capacity settings](#capacity-settings)
@@ -120,6 +121,14 @@ Be careful, because deleting existing usage and per-user metrics content is irre
 You manage Power BI users, groups, and admins in the Microsoft 365 admin center. The **Users** tab provides a link to the admin center.
 
 ![Go to Microsoft 365 admin center](media/service-admin-portal/powerbi-admin-manage-users.png)
+
+## Premium per user (preview)
+
+Premium per user is a new way to license Premium features on a per user basis. This feature is currently in preview. After at least one user is assigned a Premium per user license, the associated features can be turned on in any workspace. Admins can manage the auto refresh and dataset workload settings that are shown to users and their default values. For example, access to the XMLA Endpoint can be turned off, set to read-only, or set to read-write.
+
+   :::image type="content" source="media/service-admin-portal/premium-per-user-options.png" alt-text="Premium per user settings.":::
+
+Reference [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.md) to learn more about this licensing model.
 
 ## Audit logs
 

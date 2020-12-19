@@ -4,7 +4,7 @@ description: Analyze Power BI datasets in Microsoft Excel
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom: contperfq4
+ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
