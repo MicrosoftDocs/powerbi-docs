@@ -76,7 +76,9 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
     # [React TypeScript](#tab/react)
 
-        A text editor.
+    * A text editor
+
+    * Command line terminal (or PowerShell)
 
 ---
 
