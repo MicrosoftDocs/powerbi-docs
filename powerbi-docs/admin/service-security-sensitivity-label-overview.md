@@ -6,8 +6,9 @@ ms.author: painbar
 manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-eim
-ms.topic: overview
-ms.date: 12/09/2020
+ms.topic: conceptual
+ms.custom: contperf-fy21q2
+ms.date: 12/20/2020
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
