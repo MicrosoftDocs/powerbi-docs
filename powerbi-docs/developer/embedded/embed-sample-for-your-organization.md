@@ -96,9 +96,12 @@ To create an *embed for your organization* sample app, follow these steps:
 
 ## Step 1 - Register an Azure AD application
 
-[!INCLUDE[Register Azure AD app part 1](../../includes/embed-tutorial-register-app1.md)]
+Registering your application with Azure AD allows you to:
+> [!div class="checklist"]
+>* Establish an identity for your app
+>* Let your app access the [Power BI REST APIs](/rest/api/power-bi/)
 
-[!INCLUDE[Register Azure AD app part 2](../../includes/embed-tutorial-register-app2.md)]
+[!INCLUDE[Register Azure AD app](../../includes/embed-tutorial-register-app.md)]
 
 ## Step 2 - Create a Power BI workspace
 
@@ -256,16 +259,12 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
     1. In **Redirect URIs** add `https://localhost:3000` and select **Configure**.
 
-        :::image type="content" source="media/embed-sample-for-your-organization/localhost3000.png" alt-text="Screenshot showing the Azure AD app authentication configurations including the web redirect U R I set for localhost 3000.":::
+        > [!NOTE]
+        >If you don't have a **Web** platform, select **Add a platform** and in the *Configure platforms* window, select **Web**.
     
-    2. In *Implicit grant and hybrid flows*, enable the **ID tokens** option.
-    
-    3. Select **Configure**.
+    3. Save your changes.
 
-    :::image type="content" source="media/embed-sample-for-your-organization/azure-ad-framework-configurations.png" alt-text="Screenshot showing the Azure AD app authentication configurations including the web redirect U R I and the selected access token option for the .NET framework app sample.":::
-
-    > [!NOTE]
-    >If you don't have a **Web** platform, select **Add a platform** and in the *Configure platforms* window, select **Web**.
+        :::image type="content" source="media/embed-sample-for-your-organization/azure-ad-react-configurations.png" alt-text="Screenshot showing the Azure AD app authentication configurations including the web redirect U R I set for localhost 3000.":::
 
 6. From the *Manage* menu, select **Permissions** and verify the following:
 

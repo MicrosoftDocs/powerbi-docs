@@ -145,10 +145,13 @@ The table below describes a few key differences between the [service principal](
 
 ## Step 2 - Register an Azure AD application
 
-[!INCLUDE[Register Azure AD app part 1](../../includes/embed-tutorial-register-app1.md)]
+Registering your application with Azure AD allows you to:
+> [!div class="checklist"]
+>* Establish an identity for your app
+>* Let your app access the [Power BI REST APIs](/rest/api/power-bi/)
 >* If you're using a *master user* - Specify your app's [Power BI REST permissions](/azure/active-directory/develop/v2-permissions-and-consent)
 
-[!INCLUDE[Register Azure AD app part 2](../../includes/embed-tutorial-register-app2.md)]
+[!INCLUDE[Register Azure AD app](../../includes/embed-tutorial-register-app.md)]
 
 >[!NOTE]
 >Before registering your application, you'll need to decide which authentication method to use, *service principal* or *master user*.

@@ -1,5 +1,5 @@
 ---
-title: Embedded analytics tutorial register Azure AD app (part 2)
+title: Embedded analytics tutorial register Azure AD app
 description: Part 2 of the register Azure AD app for the embedded analytics tutorials.
 services: powerbi
 author: KesemSharabi
