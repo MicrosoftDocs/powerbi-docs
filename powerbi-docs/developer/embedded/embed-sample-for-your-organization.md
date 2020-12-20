@@ -183,7 +183,6 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
     :::image type="content" source="media/embed-sample-for-your-organization/azure-ad-net-configurations.png" alt-text="Screenshot showing the Azure AD app authentication configurations including the web redirect U R I and the selected access token option for the .NET core app sample.":::
 
-
 [!INCLUDE[Configure the Azure AD permissions](../../includes/embed-tutorial-org-azure-ad-permissions.md)]
 
 ### Configure the sample embedding app
