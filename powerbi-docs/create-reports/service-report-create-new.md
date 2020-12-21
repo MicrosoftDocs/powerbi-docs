@@ -15,7 +15,7 @@ You've read [Reports in Power BI](../consumer/end-user-reports.md) and now you w
 
 ## Prerequisites
 - [Sign up for the Power BI service](../fundamentals/service-self-service-signup-for-power-bi.md). 
-- [Download the Retail Analysis sample Excel file](https://go.microsoft.com/fwlink/?LinkId=529778) and save it to OneDrive for Business or locally.
+- [Download the Retail Analysis sample Excel file](https://go.microsoft.com/fwlink/?LinkId=529778) and save it to your computer or to OneDrive for Business.
 
 ## Import the Excel file
 This method of creating a report starts with a file and a blank report canvas. You can follow along in the Retail Analysis sample Excel file.

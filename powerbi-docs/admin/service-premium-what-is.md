@@ -236,7 +236,7 @@ The **Power BI Premium Capacity Metrics** app provides the most in-depth informa
 
 ![Metrics app dashboard](media/service-admin-premium-monitor-capacity/app-dashboard.png)
 
-From the app's dashboard, you can click a metric cell to open an in-depth report. Reports provide in-depth metrics and filtering capability to drill-down on the most important information you need to keep your capacities running smoothly.
+From the app's dashboard, you can click a metric cell to open an in-depth report. Reports provide in-depth metrics and filtering capability to drill down on the most important information you need to keep your capacities running smoothly.
 
 ![Periodic peaks of query wait time counts indicate potential CPU saturation](media/service-premium-capacity-scenarios/peak-query-wait-times.png)
 

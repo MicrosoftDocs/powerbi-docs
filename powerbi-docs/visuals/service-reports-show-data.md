@@ -46,7 +46,7 @@ You can also export the data that is being used to create the visualization as a
 6. To hide the data, de-select **Explore** > **show data**.
 
 ## Using Show records
-You can also focus on one data record in a visualization, and drill into the data behind it. 
+You can also focus on one data record in a visualization, and drill into the details behind it. 
 
 1. To use **See records**, select a visualization to make it active. 
 
