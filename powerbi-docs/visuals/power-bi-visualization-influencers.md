@@ -404,3 +404,4 @@ Sharing your report with a Power BI colleague requires that you both have indivi
 ## Next steps
 - [Combo charts in Power BI](power-bi-visualization-combo-chart.md)
 - [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [How Power BI uses ML.NET to identify key influencers](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet/customers/power-bi)
