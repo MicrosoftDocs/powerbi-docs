@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 01/06/2020
+ms.date: 12/21/2020
 LocalizationGroup: Connect to services
 ---
 
