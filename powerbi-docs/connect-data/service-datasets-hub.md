@@ -1,5 +1,5 @@
 ---
-title: Datasets discovery using the datasets hub
+title: Datasets discovery using the datasets hub (preview)
 description: Learn how you can find, explore, and use the datasets in your organization and their related reports.
 author: paulinbar
 ms.author: painbar
@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.date: 12/14/2020
 LocalizationGroup: Share your work
 ---
-# Datasets discovery using the datasets hub
+# Datasets discovery using the datasets hub (preview)
 
 The datasets hub makes it easy to find, explore, and use the datasets in your organization. It provides information about the datasets as well as entry points for creating reports on top of those datasets or for using those datasets with Analyze in Excel.
 
