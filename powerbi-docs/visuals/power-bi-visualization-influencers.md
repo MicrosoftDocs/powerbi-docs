@@ -254,7 +254,7 @@ Take a look at what the visualization looks like once we add **ID** to **Expand 
 
 ![Screenshot shows the house price visualization that depends on the three columns discussed in this section.](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
 
-If you would like to learn more about how you can analyze measures with the key influencers visualization please watch the following tutorial.
+If you would like to learn more about how you can analyze measures with the key influencers visualization please watch the following video. To learn how Power BI uses ML.NET behind the scenes to reason over data and surface insights in a natural way, see [Power BI identifies key influencers using ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet/customers/power-bi).
 
 <iframe width="1167" height="631" src="https://www.youtube.com/embed/2X1cW8oPtc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
