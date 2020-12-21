@@ -1,8 +1,8 @@
 ---
 title: Connect the Microsoft Sustainability Calculator
 description: Microsoft Sustainability Calculator for Power BI
-author: paulinbar
-ms.author: painbar
+author: andreabichsel
+ms.author: rosode
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
