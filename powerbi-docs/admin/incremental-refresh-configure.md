@@ -29,11 +29,11 @@ In this task, you define RangeStart and RangeEnd parameters with default values.
 
 1. In **Manage Parameters** > **Name**, type **RangeStart** (case sensitive), then in **Type**, select **Date/Time**, and then in **Current Value** enter a start date and time value, for example, 1/25/2014 12:00:00 AM.
 
-    ![Define Range Start parameter in Manage Parameters dialog](media/service-incremental-refresh-configure/create-range-start.png)
+    ![Define Range Start parameter in Manage Parameters dialog](media/incremental-refresh-configure/create-range-start.png)
 
 1. Create a second parameter named **RangeEnd**. In **Type**, select **Date/Time**, and then in **Current Value** enter an end date and time value. In this example, we specify 1/27/2014 12:00:00 AM, which is the last transaction date and time in the data source  table.
 
-    ![Define Range End parameter in Manage Parameters dialog](media/service-incremental-refresh-configure/create-range-end.png)
+    ![Define Range End parameter in Manage Parameters dialog](media/incremental-refresh-configure/create-range-end.png)
 
 Now that you have RangeStart and RangeEnd parameters configured, you then filter the data to be imported into the model based on those parameters.
 
@@ -47,7 +47,7 @@ With RangeStart and RangeEnd parameters defined, you can then apply a filter bas
 
     To specify the second condition, if you selected *is after* in the first condition, then select **is before or equal to**, or if you selected *is after or equal to* in the first condition, then select **is before** for the second condition, then select **Parameter**, and then select **RangeEnd**. For example,
 
-    ![Filter rows](media/service-premium-incremental-refresh/filter-rows.png)
+    ![Filter rows](media/incremental-refresh-configure/filter-rows.png)
 
    **Important:** Verify queries have an equal to (=) on either RangeStart or RangeEnd, but not both. If the equal to (=) exists on both parameters, a row could satisfy the conditions for two partitions, which could lead to duplicate data in the model. For example, `#"Filtered Rows" = Table.SelectRows(dbo_Fact, each [OrderDate] >= RangeStart and [OrderDate] <= RangeEnd)` could result in duplicate data.
 
@@ -65,7 +65,7 @@ The data type of the RangeStart and RangeEnd parameters must be of date/time dat
 
     `= (x as datetime) => Date.Year(x)*10000 + Date.Month(x)*100 + Date.Day(x)`
 
-    ![Create DateKey function](media/service-incremental-refresh-configure/datekey-function.png)
+    ![Create DateKey function](media/incremental-refresh-configure/datekey-function.png)
 
 1. To test the formula, in **Enter Parameter**, enter a date value, and then click **Invoke**. If the formula is correct, an integer value for the date is returned. After verifying, delete the invoked function query.
 
@@ -73,7 +73,7 @@ The data type of the RangeStart and RangeEnd parameters must be of date/time dat
 
     `= Table.SelectRows(#"Sorted Rows", each [OrderDateKey] > DateKey(RangeStart) and [OrderDateKey] <= DateKey(RangeEnd))`
 
-    ![Apply DateKey filter](media/service-incremental-refresh-configure/apply-datekey-filter.png)
+    ![Apply DateKey filter](media/incremental-refresh-configure/apply-datekey-filter.png)
 
 ## Define policy
 
@@ -81,7 +81,7 @@ After you've defined RangeStart and RangeEnd parameters, and filtered data based
 
 1. In Data view > **Fields** > open the context menu for the table, and then click **Incremental refresh**.
 
-    ![Table context menu](media/service-incremental-refresh-configure/incremental-refresh-context-menu.png)
+    ![Table context menu](media/incremental-refresh-configure/incremental-refresh-context-menu.png)
 
 1. In **Incremental refresh**, in **Table**, verify or select the table, and then click the **Incremental refresh** slider to **On**. If the slider is disabled, it means the Power Query expression for the table doesn't refer to the parameters with reserved names.
 
@@ -89,7 +89,7 @@ After you've defined RangeStart and RangeEnd parameters, and filtered data based
 
 1. In **Refresh rows where column "columnname" is in the last:**, specify the range you want to refresh. All rows with dates in this range will be refreshed in the dataset each time a manual or scheduled refresh operation is performed
 
-    ![Table context menu](media/service-incremental-refresh-configure/incremental-refresh-policy-dialog.png)
+    ![Table context menu](media/incremental-refresh-configure/incremental-refresh-policy-dialog.png)
 
 1. Select optional advanced settings:
 
@@ -105,7 +105,7 @@ When your RangeStart and RangeEnd parameters, filtering, and refresh parameters 
 
 ## Refresh dataset
 
-In the service, refresh the dataset. The first refresh may take longer to import historical data. Subsequent refreshes, either manual or scheduled, are typically faster because the incremental refresh policy is applied.
+In the service, refresh the dataset. The first refresh may take longer to import historical data. Subsequent refreshes, either manual or scheduled are typically faster because the incremental refresh policy is applied.
 
 ## See also
 
