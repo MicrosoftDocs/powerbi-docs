@@ -188,6 +188,38 @@ To enable your Azure AD app access artifacts such as reports, dashboards and dat
 
 4. Select **Add**.
 
+### Add a service principal as a workspace member using PowerShell
+
+This section includes a sample script to add a service principal as a workspace member using [PowerShell](/powershell/azure/create-azure-service-principal-azureps).
+
+```powershell
+Login-PowerBI
+
+# Service Principal Object ID for the created Service Principal
+$SPObjectId = 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX'
+
+$pbiWorkspace = Get-PowerBIWorkspace -Name "YourWorkspaceName"
+
+Add-PowerBIWorkspaceUser -Id $pbiWorkspace.Id -AccessRight Member -PrincipalType App -Identifier $SPObjectId 
+
+```
+
+### Add a security group as a workspace member using PowerShell
+
+This section includes a sample script to add a security group as a workspace member using [PowerShell](/powershell/azure/create-azure-service-principal-azureps).
+
+```powershell
+Login-PowerBI
+
+# Security Group Object ID for the created Security Group
+$SGObjectId = 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX'
+
+$pbiWorkspace = Get-PowerBIWorkspace -Name "YourWorkspaceName"
+
+Add-PowerBIWorkspaceUser -Id $pbiWorkspace.Id -AccessRight Member -PrincipalType Group -Identifier $SGObjectId 
+
+```
+
 ## Step 5 - Embed your content
 
 You can [embed your content within a sample application](embed-sample-for-customers.md), or within your own application.

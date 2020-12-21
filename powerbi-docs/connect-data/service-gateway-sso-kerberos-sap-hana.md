@@ -7,11 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 10/10/2019
+ms.date: 12/16/2020
 LocalizationGroup: Gateways
 ---
 
 # Use Kerberos for single sign-on (SSO) to SAP HANA
+
+> [!IMPORTANT]
+> As [SAP no longer supports the OpenSSL](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.05/en-US/de15ffb1bb5710148386ffdfd857482a.html), Microsoft also has discontinued its support. Existing connections will continue to work, but you won't be able to create new connections starting February 2021. Going forward, please use CommonCryptoLib instead.
 
 This article describes how to configure your SAP HANA data source to enable SSO from the Power BI service.
 
