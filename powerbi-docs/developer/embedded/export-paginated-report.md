@@ -1,5 +1,5 @@
 ---
-title: Export Power BI paginated reports API
+title: Export Power BI embedded analytics paginated reports API
 description: Learn how to export an embedded Power BI paginated report 
 author: KesemSharabi
 ms.author: kesharab
@@ -284,6 +284,10 @@ private async Task<ExportedFile> ExportPaginatedReport(
     }
 }
 ```
+
+## Limitations
+
+Exporting a paginated report that has a Power BI dataset as its data source, is not supported for service principals.
 
 ## Next steps
 

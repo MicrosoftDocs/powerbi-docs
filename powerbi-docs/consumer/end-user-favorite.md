@@ -4,7 +4,7 @@ description: Documentation on how to set dashboards, reports, and apps as favori
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
-featuredvideoid: G26dr2PsEpk
+featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to

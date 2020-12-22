@@ -21,10 +21,6 @@ In lineage view, you see the lineage relationships between all the artifacts in 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rUj06dqB98g" frameborder="0" allowfullscreen></iframe>
 
-
-
-> [!VIDEO https://youtu.be/rUj06dqB98g]
-
 ## Explore lineage view
 
 Every workspace, whether new or classic, automatically has a lineage view. You need at least a Contributor role in the workspace to view it. See [Permissions](#permissions) in this article for details.

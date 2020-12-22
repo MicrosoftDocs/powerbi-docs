@@ -20,7 +20,7 @@
         href: service-endorsement-overview.md
   - name: How-to guides
     expanded: true
-    items: 
+    items:
     - name: Collaborate in Power BI
       items: 
       - name: "Create the new workspaces"
@@ -57,7 +57,7 @@
         href: service-microsoft-teams-app.md
       - name: Embed reports in Teams tabs
         href: service-embed-report-microsoft-teams.md
-      - name: "Share directly to Teams"
+      - name: "Chat in Teams directly"
         href: service-share-report-teams.md
       - name: "Get a link preview in Teams"
         href: service-teams-link-preview.md
@@ -103,12 +103,16 @@
       items: 
       - name: Integrate data alerts with Power Automate
         href: service-flow-integration.md
+      - name: Export and email reports with Power Automate
+        href: service-automate-power-bi-report-export.md
       - name: Export paginated reports with Power Automate
         href: service-automate-paginated-integration.md
       - name: Save paginated reports to OneDrive or SharePoint Online
         href: service-automate-paginated-onedrive-sharepoint.md
       - name: Export paginated reports from Excel Online or SharePoint list
         href: service-automate-paginated-excel-sharepoint-list.md
+      - name: Save a paginated report to a local folder
+        href: service-automate-paginated-local-file.md
     - name: "Use third-party apps"
       href: service-power-bi-get-started-third-party-apps.md
     - name: Organizational content packs

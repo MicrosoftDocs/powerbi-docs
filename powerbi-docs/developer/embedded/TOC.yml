@@ -49,7 +49,9 @@
     - name: "Embed using service principal"
       href: embed-service-principal.md
     - name: "Embed using service principal and a certificate"
-      href: embed-service-principal-certificate.md          
+      href: embed-service-principal-certificate.md
+    - name: "Move an embedded app to production"
+      href: move-to-production.md          
     - name: "Embed from an app"
       href: embed-from-apps.md
     - name: "Export report to file"

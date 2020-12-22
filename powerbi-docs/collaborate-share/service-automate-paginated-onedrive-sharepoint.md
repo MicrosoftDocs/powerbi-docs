@@ -14,6 +14,7 @@ LocalizationGroup: Get started
 
 With [Power Automate](/power-automate/getting-started), you can automate exporting and distributing Power BI paginated reports to a variety of supported formats and scenarios. In this article, you use Power Automate to automate saving a Power BI paginated report to OneDrive for Business or a SharePoint Online folder.
 
+
 :::image type="content" source="media/service-automate-paginated-onedrive-sharepoint/paginated-onedrive-flow.png" alt-text="Screenshot of the Power Automate flow for saving a paginated report to OneDrive or SharePoint Online":::
 
 Looking for other Power Automate templates for Power BI paginated reports? See [Export Power BI paginated reports with Power Automate](service-automate-paginated-integration.md). 
@@ -22,7 +23,7 @@ Looking for other Power Automate templates for Power BI paginated reports? See [
 
 To follow along, make sure you have:
 
-- At least one workspace in your Power BI tenant backed by a reserved capacity. This capacity can be any of the A4/P1 – A6/P3 SKUs. Read more about [reserved capacities in Power BI Premium](../admin/service-premium-what-is.md).
+- At least one workspace in your Power BI tenant backed by a reserved capacity. This capacity can be any of the A4/P1 – A6/P3 SKUs. Read more about [reserved capacities for paginated reports in Power BI Premium](../admin/service-premium-what-is.md#paginated-reports)
 - Access to the standard connectors in Power Automate, which come with any Office 365 subscription.
 
 ## Save a paginated report to OneDrive for Business or a SharePoint Online folder 
@@ -51,7 +52,7 @@ With either of these templates, you set up recurring exports of a paginated repo
 
     :::image type="content" source="media/service-automate-paginated-onedrive-sharepoint/onedrive-template-3-advanced-recurrence.png" alt-text="showing advanced options for recurrence.":::
 
-1. In the **Workspace** box, select a workspace in a reserved capacity. In the **Report** box, select the paginated report in the selected workspace you wish to export. In the **Export Format** box, select the desired export format. Optionally, you can specify parameters for the paginated report. Find detailed descriptions of the parameters in the [connector reference for the Power BI Rest API](/connectors/powerbi/#export-to-file-for-paginated-reports).  
+1. In the **Workspace** box, select a workspace in a reserved capacity. In the **Report** box, select the paginated report in the selected workspace you wish to export. In the **Export Format** box, select the desired export format. Optionally, you can specify parameters for the paginated report. Find detailed descriptions of the parameters in the [connector reference for the Power BI REST API](/connectors/powerbi/#export-to-file-for-paginated-reports).  
 
     :::image type="content" source="media/service-automate-paginated-onedrive-sharepoint/onedrive-template-4-export-format.png" alt-text="selecting the paginated report, the workspace, and the export format.":::
 
@@ -63,7 +64,7 @@ With either of these templates, you set up recurring exports of a paginated repo
 
 1. When you're done, select **Next step** or **Save**. Power Automate creates and evaluates the flow, and lets you know if it finds errors. 
 
-1. If there are errors, select **Edit flow** to fix them. Otherwise, select the **Back** arrow to view the flow details and to run the new flow. 
+1. If there are errors, select **Edit flow** to fix them. Otherwise, select the **Back** arrow to view the flow details and run the new flow. 
 
     When you run the flow, Power Automate exports a paginated report in the specified format to OneDrive for Business or SharePoint Online.  
 

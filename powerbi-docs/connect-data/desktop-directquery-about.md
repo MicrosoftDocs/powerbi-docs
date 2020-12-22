@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/03/2020
+ms.date: 12/14/2020
 LocalizationGroup: Connect to data
 ---
 # About using DirectQuery in Power BI
@@ -75,7 +75,7 @@ When connecting to SQL Server Analysis Services, there's an option to either imp
 The situation described in the previous paragraph applies to connecting to the following sources as well, except that there's no option to import the data:
 
 * Power BI datasets, for example, when connecting to a Power BI dataset that has previously been created and published to the service, to author a new report over it.
-* Common Data Services.
+* Microsoft Dataverse.
 
 The behavior of reports over SQL Server Analysis Services, upon publishing to the Power BI service, is similar to DirectQuery reports in the following ways:
 
@@ -328,6 +328,9 @@ The setting is only enabled when there's at least one DirectQuery source in the 
 Increasing **Maximum connections per data source** ensures more queries, up to the maximum number specified, can be sent to the underlying data source. This approach is useful when many visuals are on a single page, or many users access a report at the same time. Once the maximum number of connections is reached, further queries are queued until a connection becomes available. Increasing this limit does result in more load on the underlying source, so the setting isn't guaranteed to improve overall performance.
 
 Once a report is published, the maximum number of concurrent queries sent to the underlying data source also depend upon fixed limits. The limits depend on the target environment to which the report is published. Different environments, such as Power BI, Power BI Premium, or Power BI Report Server, can impose different limits.
+
+> [!NOTE]
+> The maximum number of DirectQuery connections setting applies to all DirectQuery sources when [enhanced metadata](desktop-enhanced-dataset-metadata.md) is enabled, which is the default setting for all models created in Power BI Desktop beginning in October 2020. 
 
 ### Diagnosing performance issues
 

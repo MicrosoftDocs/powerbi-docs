@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 12/16/2020
 LocalizationGroup: Get started
 ---
 # Previous monthly updates to Power BI Desktop
@@ -32,6 +32,86 @@ The links beside each update mean the following:
 You can also watch the **Latest Updates** video from the beginning, right inside this article, by clicking on the **play** icon on the video image found below the list of updates.
 
 The following sections describe previous months' updates to **Power BI Desktop**.
+
+
+
+## November 2020 Update (2.87.261.0)
+
+Our November Power BI Desktop updates included an entire family gathering of new and improved features; they were a feast of goodness. 
+
+The monthly blog and video updates for Power BI Desktop now also includes what's new updates for Power BI mobile and the Power BI service. This article discusses the updates for Power BI Desktop. To learn about updates for mobile and the Power BI service, check out their respective what's new articles:
+
+* [What's new in the Power BI service](service-whats-new.md)
+* [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+
+Get the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from the [Microsoft Store](https://aka.ms/pbidesktopstore). Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering may differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
+
+> [!IMPORTANT]
+> Power BI Desktop is updated and released on a monthly basis, incorporating customer feedback and new features. Only the most recent version of Power BI Desktop is supported; customers who contact support for Power BI Desktop will be asked to upgrade to the most recent version. 
+> You can get the most recent version of Power BI Desktop from the [Windows Store](https://aka.ms/pbidesktopstore), or as a single executable containing all supported languages that you [download](https://www.microsoft.com/download/details.aspx?id=58494) and install on your computer.
+
+The links beside each feature in the Power BI Desktop update list are interpreted as follows:
+
+* \[blog\]: Most features are explained in a section in the monthly update blog post.
+* \[video\]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
+* \[article\]: Some features have an article that provides more detail.
+* The remaining features are self-explanatory and don't need an article or video.
+
+You can also watch the entire [Power BI monthly update video](#power-bi-desktop-monthly-update-video).
+
+> [!IMPORTANT]
+> Power BI Desktop will no longer be supported on Windows 7 after January 31st, 2021. After that date, Power BI Desktop will be supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only. 
+
+The following updates are new to Power BI Desktop this month:
+
+
+### Reporting
+* New Field List (preview) [[video]](https://youtu.be/DT_tOas5YIo?t=15)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467053) 
+* New Model View (preview) [[video]](https://youtu.be/DT_tOas5YIo?t=61)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467054) [[article]](../create-reports/power-bi-personalize-visuals.md)
+* Apply all filters now generally available [[video]](https://youtu.be/DT_tOas5YIo?t=98)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467055)  [[article]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
+* Visual zoom slider [[video]](https://youtu.be/DT_tOas5YIo?t=160)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467056)  [[article]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
+* Data point rectangle select extended to Map visual [[video]](https://youtu.be/DT_tOas5YIo?t=185)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467057)  [[article]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
+* Certificate revocation check for web connections [[video]](https://youtu.be/DT_tOas5YIo?t=292)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467058)  [[article]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
+* Paginated reports updates [[video]](https://youtu.be/DT_tOas5YIo?t=292)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467059)  [[article]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
+
+### Analytics
+* Anomaly detection (preview) [[video]](https://youtu.be/DT_tOas5YIo?t=199)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467061) 
+* Q&A now supports partial matching data values [[video]](https://youtu.be/DT_tOas5YIo?t=438)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467062)  [[article]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
+
+### Data connectivity
+* Hive LLAP connector now generally available [[video]](https://youtu.be/DT_tOas5YIo?t=461)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467064)
+* New data connectors - Actian, Anaplan, Starburst Presto [[video]](https://youtu.be/DT_tOas5YIo?t=487)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467065)
+
+
+### Visuals
+* New visuals from various providers [[video]](https://youtu.be/DT_tOas5YIo?t=688)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/#_Toc55467072)
+
+
+For detailed information about each of these new features, see [Power BI Desktop feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-november-2020-feature-summary/).
+
+
+> [!NOTE]
+> See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
+
+
+### Power BI Desktop monthly update video
+The following video describes each of these updates. You can also watch this video from the blog post:
+
+> [!VIDEO https://www.youtube.com/embed/DT_tOas5YIo]
+
+
+You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
+
+* Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
+* It may not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
+* If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
+* We only archive the English versions of Power BI Desktop.
+
+Select the following links to download this earlier version: 
+
+* [November 2020 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-11.exe)
+* [November 2020 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-11_x64.exe)
+
 
 
 ## October 2020 Update (2.86.321.0)
@@ -546,13 +626,6 @@ You can also download previous versions of Power BI Desktop if your organization
 * If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
 * We only archive the English versions of Power BI Desktop.
 
-Select the following links to download this earlier version: 
-
-* [May 2020 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/9/0/3/903DCAE8-44D9-4A7E-856C-40C0754723ED/PBIDesktopRS.msi)
-* [May 2020 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/9/0/3/903DCAE8-44D9-4A7E-856C-40C0754723ED/PBIDesktopRS_x64.msi)
-
-
-
 
 
 ## April 2020 Update (2.80.5803.282)
@@ -707,21 +780,6 @@ Check out [what's new in the Power BI service](service-whats-new.md), and [what'
 The following video describes each of these updates. You can also watch this video from the blog post:
 
 > [!VIDEO https://www.youtube.com/embed/DMjvJGGB_LQ]
-
-You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
-
-* Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
-* It may not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
-* If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
-* We only archive the English versions of Power BI Desktop.
-
-Select the following links to download this earlier version: 
-
-* [March 2020 version of Power BI Desktop - 32-bit](https://www.microsoft.com/download/confirmation.aspx?id=58494&6B49FDFB-8E5B-4B07-BC31-15695C5A2143=1)
-* [March 2020 version of Power BI Desktop - 64-bit](https://www.microsoft.com/download/confirmation.aspx?id=58494&6B49FDFB-8E5B-4B07-BC31-15695C5A2143=1)
-
-
-
 
 
 ## February 2020 Update (2.78.5740.642)

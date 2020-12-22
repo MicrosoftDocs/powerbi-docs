@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 12/04/2020
+ms.date: 12/10/2020
 ms.custom: references_regions
 LocalizationGroup: Premium
 ---
 
 # Large datasets in Power BI Premium
 
-Power BI datasets can store data in a highly compressed in-memory cache for optimized query performance, enabling fast user interactivity. With Premium capacities, large datasets beyond the default 10 GB limit can be enabled with the **Large dataset storage format** setting. When enabled, dataset size is limited by the Premium *capacity* size.
+Power BI datasets can store data in a highly compressed in-memory cache for optimized query performance, enabling fast user interactivity. With Premium capacities, large datasets beyond the default 10 GB limit can be enabled with the **Large dataset storage format** setting. When enabled, dataset size is limited by the Premium *capacity* size or the maximum size set by the administrator.
 
 Large datasets can be enabled for all Premium P SKUs and Embedded A SKUs. The large dataset size limit in Premium is comparable to Azure Analysis Services, in terms of data model size limitations.
 
@@ -131,6 +131,8 @@ Keep in mind the following restrictions when using large datasets:
 - **Download to Power BI Desktop**: If a dataset is stored on Premium Files, [downloading as a .pbix](../create-reports/service-export-to-pbix.md) file will fail.
 - **Supported regions**: Large datasets are supported in all Azure regions that support Premium Files Storage. To learn more, see [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=storage), and consult the table in the following section.
 
+- **Setting maximum dataset size**: Maximum dataset size can be set by administrators. Maximum value can be set from 0.1 GB up to the maximum capacity of the SKU.
+
 ## Region availability
 
 Large datasets in Power BI are only available in certain Azure regions that support [Azure Premium Files Storage](/azure/storage/files/storage-files-planning#storage-tiers).
@@ -141,6 +143,9 @@ The following list provides regions where large datasets in Power BI are availab
 |---------|---------|
 |Australia East     | australiaeast        |
 |Australia Southeast     | australiasoutheast        |
+|Canada East     | canadaeast        |
+|Canada Central     | canadacentral        |
+|Central India     | centralindia        |
 |Central US     | centralus        |
 |East Asia     | eastasia        |
 |East US     | eastus        |
@@ -156,6 +161,7 @@ The following list provides regions where large datasets in Power BI are availab
 |UK South     | uksouth        |
 |UK West     | ukwest        |
 |West Europe     | westeurope        |
+|West India     | westindia        |
 |West US     | westus        |
 |West US 2     | westus2        |
 

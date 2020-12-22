@@ -75,7 +75,7 @@ Follow the steps in this article, to configure credentials programmatically for 
 
     # [.NET SDK v3](#tab/sdk3)
 
-    Use the AssymetricKeyEncriptor class with the public key retrieved in **Step 3**.
+    Use the AssymetricKeyEncryptor class with the public key retrieved in **Step 3**.
 
     ```csharp
     var credentialDetails = new CredentialDetails(

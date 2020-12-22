@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 09/15/2020
+ms.date: 12/14/2020
 ---
 
 # Create a template app in Power BI
 
 Power BI *template apps* enable Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  This article contains step-by-step instructions for creating a Power BI template app.
 
-If you can create Power BI reports and dashboards, you can become a *template app builder* and build and package analytical content into an *app*. You may deploy your app to other Power BI tenants through any available platform, such as AppSource, or by using it in your own web service. As a builder you can create a protected analytics package for distribution.
+If you can create Power BI reports and dashboards, you can become a *template app builder* and build and package analytical content into an *app*. You can then deploy your app to other Power BI tenants through any available platform, such as AppSource or your own web service. If you're distributing your template app through your own web service, you can even [automate part of the installation process](../developer/template-apps/template-apps-auto-install.md) to make things easier for your customers.
 
 Power BI admins govern and control who in their organization can create template apps, and who can install them. Those users who are authorized can install your template app, then modify it and distribute it to the Power BI consumers in their organization.
 
@@ -173,12 +173,10 @@ Let's go through the stages:
     When installation succeeds, you see a notification that the new app is ready.
 
 6. Select **Go to app**.
-7. In **Get started with your new app**, you see your app as your customers will see it.
 
-    ![Get started with your app](media/service-template-apps-create/power-bi-template-app-get-started.png)
-8. Select **Explore App** to verify the test app with the sample data.
-9. To make any changes, go back to the app in the original workspace. Update the test app until you're satisfied.
-10. When you're ready to promote your app to pre-production for further testing outside your tenant, go back to the **Release Management** pane and select **Promote app**.
+    Verify that the test app has the sample data. To make any changes, go back to the app in the original workspace. Update the test app until you're satisfied.
+
+1. When you're ready to promote your app to pre-production for further testing outside your tenant, go back to the **Release Management** pane and select **Promote app**.
 
     ![Promote app to pre-production](media/service-template-apps-create/power-bi-template-app-promote.png)
     >[!NOTE]
@@ -195,6 +193,10 @@ Let's go through the stages:
     ![App in production](media/service-template-apps-create/power-bi-template-app-production.png)
 
 To make your app widely available to thousands of Power BI users in the world, we encourage you to submit it to AppSource. See the [Power BI Application offer](/azure/marketplace/partner-center-portal/create-power-bi-app-offer) for details.
+
+## Automate parameter configuration during installation
+
+If you are an ISV and are distributing your template app via your web service, you can create automation that configures template app parameters automatically when your customers install the app in their Power BI account. This makes things easier for your customers and increases the likelihood of a successful installation because they don't have to supply details that they might not know. See [Automated configuration of a template app installation](../developer/template-apps/template-apps-auto-install.md) for details.
 
 ## Next steps
 
