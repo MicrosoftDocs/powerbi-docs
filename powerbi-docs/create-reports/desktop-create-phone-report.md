@@ -64,7 +64,7 @@ To show/hide the **Selection** pane, click the **Selection** toggle in the **Sho
 
 The **Selection** pane lists all the visuals that are on the canvas. The order of the list reflects the layer ordering on the canvas - the first listed visual is on the top-most layer, the last listed visual is on the bottom-most layer. To change the order, you can either drag and drop a visual to another place on the list, or select a visual and use the arrow buttons to move it up or down.
 
-The **Selection** pane shows the visibility of the visuals, but it is not possible to change the visibility in the mobile layout view - this must be done in the regular web layout view.
+The **Selection** pane also has a visibility indication for each visual in the list, but it is not possible to change the visibility in the mobile layout view - this must be done in the regular web layout view.
 
 ![Screenshot showing selection pane and how to open it.](media/desktop-create-phone-report/selection-pane-mobile-layout.png)
 
