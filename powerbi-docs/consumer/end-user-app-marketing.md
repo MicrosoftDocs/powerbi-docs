@@ -1,57 +1,50 @@
 ---
 title: Install and use the Sales and Marketing app in the Power BI service
-description: In Power BI, apps bring related dashboards and reports together, all in one place. Install the Sales and Marketing app from the Power BI apps marketplace.
+description: In Power BI, apps bring related dashboards and reports together, all in one place. Install the Sales and Marketing app from Power BI AppSource.
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 08/12/2020
+ms.date: 12/22/2020
 LocalizationGroup: Share your work
 ---
 # Install and use the sample Sales and Marketing app in the Power BI service
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-Now that you have a [basic understanding of how to get Power BI content](end-user-app-view.md), let's use Microsoft AppSource to get the Marketing and Sales app. 
+Now that you have a [basic understanding of how to get Power BI content](end-user-app-view.md), let's use Microsoft AppSource to get the Marketing and Sales template app. The Marketing and Sales template app contains sample data that you can use to explore the Power BI service. This particular app has one dashboard and several report pages. 
 
+> [!IMPORTANT]
+> Installing this app from Microsoft AppSource requires that you have a **Power BI Pro** license.  For more information, see [licenses](end-user-license.md).
 
 ## Get the app from Microsoft AppSource
 
 1. Open [https://appsource.microsoft.com](https://appsource.microsoft.com).
 
-   ![open AppSource site  ](./media/end-user-app-marketing/power-bi-appsource.png)
+   ![open AppSource site  ](./media/end-user-app-marketing/power-bi-appsource-start.png)
 
-1. In the search box, enter **Marketing** and place a checkmark next to **Refine by product > Power BI apps**. 
+1. In the search box, enter **Microsoft sample** and select **Microsoft sample - Sales & Marketing**. 
 
-    ![Get apps  ](./media/end-user-app-marketing/power-bi-search-appsource.png)
+    ![Get apps  ](./media/end-user-app-marketing/power-bi-appsource-search.png)
 
+1. Optionally, read through the overview and reviews and take a look at the images.  Then, select **Get it now**.
 
-1. Select the app tile for **Microsoft sample - Sales & Marketing**. Optionally, read through the overview and reviews and take a look at the images.  Then, select **Get it now**.
-
-   ![App offering in AppSource](./media/end-user-app-marketing/power-bi-app-offering.png)
+   ![App offering in AppSource](./media/end-user-app-marketing/power-bi-app-offer.png)
 
 1. Confirm that you want to install this app.
 
-   ![Install this app?](./media/end-user-app-marketing/power-bi-installs.png)
+   ![Install this app?](./media/end-user-app-marketing/power-bi-install-confirm.png)
 
-5. The Power BI service displays a success message once the app is installed. Select **Go to app** to open the app. Depending on how the designer created the app, either the app dashboard or app report will display.
-
-    ![App successfully installed ](./media/end-user-app-marketing/power-bi-app-ready.png)
-
-    You can also open the app directly from your app content list by selecting **Apps** and choosing the **Sales & Marketing** app tile.
-
-    ![Apps in Power BI](./media/end-user-app-marketing/power-bi-sales-marketing.png)
+5. The Power BI service displays a success message once the app is installed. Select **Go to app**. Or select the app itself from your **Apps** canvas. Depending on how the designer created the app, either the app dashboard or app report will display.
 
 
-6. Choose whether to connect your own data, explore with sample data, or customize and share your new app. Because we've selected a Microsoft sample app, let's start by exploring. 
+    ![Apps in Power BI](./media/end-user-app-marketing/power-bi-marketing.png)
 
-    ![Screenshot shows Get started with your new app with the Explore with sample data option called out.](./media/end-user-app-marketing/power-bi-explore-app.png)
+7.  This template app is set to open to the dashboard. The app *designer* could have set the app to open to one of the report pages instead.  
 
-7.  Your new app opens with a dashboard. The app *designer* could have set the app to open to a report instead.  
-
-    ![Screenshot shows a dashboard for your app.](./media/end-user-app-marketing/power-bi-app-new.png)
+    ![Screenshot shows a dashboard for your app.](./media/end-user-app-marketing/power-bi-dashboard.png)
 
 
 
