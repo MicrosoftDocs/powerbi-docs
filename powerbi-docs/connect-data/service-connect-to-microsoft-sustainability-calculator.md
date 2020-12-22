@@ -23,15 +23,12 @@ To access the Microsoft Sustainability Calculator, you’ll need the following i
 
 - Tenant ID
 - Access key
-- Enrollment number or billing ID
+- Enrollment number
 
->[!NOTE]
->Billing IDs will be supported in January 2021.
-
-To find your company’s enrollment number or billing ID:
+To find your company’s enrollment number:
 
 1. Sign into the [Azure Enterprise portal](https://ea.azure.com) as an admin.
-2. Select **Active Directory** or **Manage** on the left-hand nav bar. Your company’s enrollment number or billing ID will display.
+2. Select **Active Directory** or **Manage** on the left-hand nav bar. Your company’s enrollment number or will display.
 
    ![Find enrollment number](media/service-connect-to-microsoft-sustainability-calculator/enrollment-number.png)
 
