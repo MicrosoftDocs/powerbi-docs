@@ -112,7 +112,7 @@ You’ll need your Azure enrollment number. If you don’t have it, ask your org
 4. Connect your account:
    - In **You are connecting to (1 of 2)**, under **Authentication method**, select **OAuth2**, and under **Privacy level setting for this data source**, select **Organizational**.
 
-      ![Enter authentication parameters](media/service-connect-to-microsoft-sustainability-calculator/connecting-1-of-2.png)
+      ![Screenshot of parameters authentication first dialog.](media/service-connect-to-microsoft-sustainability-calculator/connecting-1-of-2.png)
  
    - Select the user account.
 
@@ -120,7 +120,7 @@ You’ll need your Azure enrollment number. If you don’t have it, ask your org
        
    - In **You are connecting (2 of 2)**, under **Authentication method**, select **Anonymous**, and under **Privacy level setting for this data source**, select **Organizational**.
 
-     ![Enter authentication parameters](media/service-connect-to-microsoft-sustainability-calculator/connecting-2-of-2.png)
+     ![Screenshot of parameters authentication second dialog.](media/service-connect-to-microsoft-sustainability-calculator/connecting-2-of-2.png)
     
 5. Wait for the view to build, which can take up to 24 hours.
 
