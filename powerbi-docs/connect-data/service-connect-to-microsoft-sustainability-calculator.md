@@ -6,7 +6,7 @@ ms.author: rosode
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 12/21/2020
+ms.date: 12/22/2020
 LocalizationGroup: Connect to services
 ---
 
@@ -95,7 +95,7 @@ You’ll need your Azure enrollment number. If you don’t have it, ask your org
 
 ### Connecting the calculator: Five easy steps to carbon accounting
 
-1. Download the app from [AppSource](https://appsource.microsoft.com/link).
+1. Download the app from [AppSource](https://go.microsoft.com/fwlink/?linkid=2151690).
 
    ![Microsoft Sustainability Calculator on AppSource](media/service-connect-to-microsoft-sustainability-calculator/appsource.png)
 
