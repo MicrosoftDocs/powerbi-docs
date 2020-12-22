@@ -8,8 +8,8 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 12/02/2020
-#Customer intent: As an ISV developer, I want to embed a report, dashboard or tile into an application so that my customers can share data.
+ms.date: 12/22/2020
+
 ---
 
 # Tutorial: Embed Power BI content using a sample *embed for your customers* application
@@ -188,7 +188,7 @@ Your next step is to create a report and upload it to your workspace. You can [c
 
 To download a sample report and publish it to your workspace, follow these steps:
 
-1. Open the GitHub [Power BI Desktop samples](https://github.com/microsoft/PowerBI-Developer-Samples) folder.
+1. Open the GitHub [Power BI Desktop samples](https://github.com/Microsoft/PowerBI-Desktop-Samples) folder.
 
 2. Select **Code** and then select **Download zip**.
 
