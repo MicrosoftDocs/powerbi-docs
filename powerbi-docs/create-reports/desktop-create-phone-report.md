@@ -56,9 +56,15 @@ The image below illustrates dragging and dropping visuals from the **Visualizati
 
 The phone report grid scales across phones of different sizes, so your report looks good on small- and large-screen phones.
 
-## Set/Determine the layering order of visuals on the mobile layout canvas
+## Set the layering order of visuals on the mobile layout canvas
 
-
+![Screenshot showing selection pane and how to open it.](media/desktop-create-phone-report/selection-pane-mobile-layout.png)
+* How to display the selection pane.
+* Shows all the visuals on the canvas
+* Shows visibility, but can't change visibility
+* No grouping
+* Each visual is added on its own layer
+* Can work with bookmarks and selection
 
 
 ## Remove visuals from the mobile layout canvas
