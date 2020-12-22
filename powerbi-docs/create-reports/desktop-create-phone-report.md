@@ -58,14 +58,15 @@ The phone report grid scales across phones of different sizes, so your report lo
 
 ## Set the layering order of visuals on the mobile layout canvas
 
-![Screenshot showing selection pane and how to open it.](media/desktop-create-phone-report/selection-pane-mobile-layout.png)
-* How to display the selection pane.
-* Shows all the visuals on the canvas
-* Shows visibility, but can't change visibility
-* No grouping
-* Each visual is added on its own layer
-* Can work with bookmarks and selection
+Each time you drag a visual onto the canvas, it is added on its own layer on top of any other visuals that are already on the canvas. The **Selection** pane enables you to change the layering order. Used together with bookmarks, this makes it possible to build attractive, effective reports that are well-suited to viewing on a mobile device.
 
+To show/hide the **Selection** pane, click the **Selection** toggle in the **Show panes** section on the **View** tab. 
+
+The **Selection** pane lists all the visuals that are on the canvas. The order of the list reflects the layer ordering on the canvas - the first listed visual is on the top-most layer, the last listed visual is on the bottom-most layer. To change the order, you can either drag and drop a visual to another place on the list, or select a visual and use the arrow buttons to move it up or down.
+
+The **Selection** pane shows the visibility of the visuals, but it is not possible to change the visibility in the mobile layout view - this must be done in the regular web layout view.
+
+![Screenshot showing selection pane and how to open it.](media/desktop-create-phone-report/selection-pane-mobile-layout.png)
 
 ## Remove visuals from the mobile layout canvas
 To remove a visual from the mobile layout, click the **X** in the top-right corner of the visual on the phone canvas, or select the visual and press **Delete**.
