@@ -28,7 +28,7 @@ To access the Microsoft Sustainability Calculator, you’ll need the following i
 To find your company’s enrollment number:
 
 1. Sign into the [Azure Enterprise portal](https://ea.azure.com) as an admin.
-2. Select **Active Directory** or **Manage** on the left-hand nav bar. Your company’s enrollment number or will display.
+2. Select **Active Directory** or **Manage** on the left-hand nav bar. Your company’s enrollment number will display.
 
    ![Find enrollment number](media/service-connect-to-microsoft-sustainability-calculator/enrollment-number.png)
 
