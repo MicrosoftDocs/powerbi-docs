@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 
-In this tutorial, you'll learn a few different ways to customize your visualizations. There are so many options for customizing your visualizations. The best way to learn about them all is by exploring the **Format** pane (select the paint roller icon). To get you started, this article shows you how to customize a visualization title, legend, background, and add a theme.
+In this tutorial, you'll learn a few different ways to customize your visualizations. There are so many options for customizing your visualizations. The best way to learn about them all is by exploring the **Format** pane (select the paint roller icon). To get you started, this article shows you how to customize a visualization title, legend, background, label, and add a theme.
 
 You can't customize all visualizations. See the [complete list](#visualization-types-that-you-can-customize) of visualizations for details.
 
@@ -36,7 +36,7 @@ You can't customize all visualizations. See the [complete list](#visualization-t
 To follow along, sign into Power BI Desktop and open the [Retail Analysis Sample](../create-reports/sample-datasets.md) report.
 
 > [!NOTE]
-> When you pin a visualization to a dashboard, it becomes a dashboard tile. You can also customize the tiles themselves with [new titles and subtitles, hyperlinks, and resized](../create-reports/service-dashboard-edit-tile.md).
+> When you pin a visualization to a dashboard, it becomes a dashboard tile. You can also customize the tiles themselves with [new titles and subtitles, hyperlinks, and resizing](../create-reports/service-dashboard-edit-tile.md).
 
 1. Go to the **New Stores** page of the **Retail Analysis Sample** report.
 
