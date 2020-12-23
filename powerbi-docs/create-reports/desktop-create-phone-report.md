@@ -15,7 +15,7 @@ LocalizationGroup: Create reports
 
 Mobile users can view any Power BI report page in landscape orientation. However, report authors can create an additional view that is optimized for mobile devices and displays in portrait orientation. This design option, which is available in both Power BI Desktop and in the Power BI service, enables authors to select and rearrange just those visuals that make sense for mobile users on the go.
 
-![Screenshot of mobile-optimized reports in portrait and landscape orientation.](media/desktop-create-phone-report/desktop-mobile-optimized-report.png).
+![Screenshot of mobile-optimized reports in portrait and landscape orientation.](media/desktop-create-phone-report/desktop-mobile-optimized-report.png)
 
 Power BI provides a number of features to help you create mobile-optimized versions of your reports:
 * A mobile layout view where you can create your mobile-optimized report by dragging and dropping visuals onto a phone emulator canvas.
@@ -36,10 +36,10 @@ To create the mobile-optimized view, open the report in either Power BI Desktop 
 * Each visual in the **Visualizations** pane appears with its name for easy identification.
 * Each visual also has a visibility indicator. The visibility indicator of a visual changes depending on the visibility status of the visual in the current state of the web report view. The visibility indicator is useful when working with bookmarks.
 
-   ![Mobile layout view](media/desktop-create-phone-report/desktop-mobile-layout.png).
+   ![Mobile layout view](media/desktop-create-phone-report/desktop-mobile-layout.png)
 
 ## Add visuals to the mobile layout canvas
-To add a visual to the mobile layout, drag it from the **Visualizations** pane to the phone canvas. When you drag the visual to the canvas, it snaps to the grid. Alternatively, you can double click the visual in the visualization pane and the visual will be added to the canvas.
+To add a visual to the mobile layout, drag it from the **Visualizations** pane to the phone canvas. When you drag the visual to the canvas, it snaps to the grid. Alternatively, you can double-click the visual in the visualization pane and the visual will be added to the canvas.
 
 You can add some or all of the web report page visuals to the mobile-optimized report page. You can add each visual only once, and you don't have to include all the visuals.
 
