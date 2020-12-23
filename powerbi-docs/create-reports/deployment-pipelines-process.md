@@ -148,7 +148,7 @@ The following dataset properties are also not copied during deployment:
 
 This section lists two of the main Power BI dataset features supported by deployment pipelines:
 
-* [Incremental refresh](incremental-refresh)
+* [Incremental refresh](#incremental-refresh)
 
 * [Composite models](#composite-models)
 
@@ -200,7 +200,7 @@ Other changes such as adding a column, removing a column, and renaming a calcula
 
 ### Composite models
 
-[Composite models](desktop-composite-models) allow you to connect a Power BI dataset to an external dataset such as Azure Analysis Services. To learn more, see [Using DirectQuery for Power BI datasets and Azure Analysis Services](desktop-directquery-datasets-azure-analysis-services).
+[Composite models](../transform-model/desktop-composite-models.md) allow you to connect a Power BI dataset to an external dataset such as Azure Analysis Services. To learn more, see [Using DirectQuery for Power BI datasets and Azure Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md).
 
 You can use composite models to connect a dataset in a deployment pipeline, to another Power BI dataset external to the pipeline.  
 
