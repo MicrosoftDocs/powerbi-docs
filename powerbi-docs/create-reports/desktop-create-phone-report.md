@@ -58,9 +58,9 @@ The phone report grid scales across phones of different sizes, so your report lo
 
 ## Set the layering order of visuals on the mobile layout canvas
 
-Each time you drag a visual onto the canvas, it is added on its own layer on top of any other visuals that are already on the canvas. The **Selection** pane enables you to change the layering order. Used together with bookmarks, this makes it possible to build attractive, effective reports that are well-suited to viewing on a mobile device.
+Each time you drag a visual onto the canvas, it is added on its own layer on top of any other visuals that are already on the canvas. The **Selection** pane enables you to change the layering order.
 
-To show/hide the **Selection** pane, click the **Selection** toggle in the **Show panes** section on the **View** tab. 
+To open the **Selection** pane, click the **Selection** button in the **Show panes** section on the **View** tab. 
 
 The **Selection** pane lists all the visuals that are on the canvas. The order of the list reflects the layer ordering on the canvas - the first listed visual is on the top-most layer, the last listed visual is on the bottom-most layer. To change the order, you can either drag and drop a visual to another place on the list, or select a visual and use the arrow buttons to move it up or down.
 
