@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 10/21/2020
+ms.date: 12/23/2020
 ---
 
 # Understand the deployment process
@@ -144,13 +144,21 @@ The following dataset properties are also not copied during deployment:
 
 * Endorsement settings
 
-## Incremental refresh
+## Supported dataset features
+
+This section lists two of the main Power BI dataset features supported by deployment pipelines:
+
+* [Incremental refresh](incremental-refresh)
+
+* [Composite models](#composite-models)
+
+### Incremental refresh
 
 Deployment pipelines supports [incremental refresh](../admin/service-premium-incremental-refresh.md), a feature that allows large datasets faster and more reliable refreshes, with lower consumption.
 
 With deployment pipelines, you can make updates to a dataset with incremental refresh while retaining both data and partitions. When you deploy the dataset, the policy is copied along.
 
-### Activating incremental refresh in a pipeline
+#### Activating incremental refresh in a pipeline
 
 To enable incremental refresh, [turn it on in Power BI Desktop](../admin/service-premium-incremental-refresh.md#configure-incremental-refresh), and then publish your dataset. After you publish, the incremental refresh policy is similar across the pipeline, and can be authored only in Power BI Desktop.
 
@@ -164,7 +172,7 @@ Once your pipeline is configured with incremental refresh, we recommend that you
 
 4. Review the changes you made in the *test* stage, and after you verify them, deploy to the *production* stage.
 
-### Usage examples
+#### Usage examples
 
 Below are a few examples of how you may integrate incremental refresh with deployment pipelines.
 
@@ -176,7 +184,7 @@ Below are a few examples of how you may integrate incremental refresh with deplo
 
 * Publish a dataset that uses incremental refresh to a workspace that's part of an existing pipeline.
 
-### Limitations and considerations
+#### Limitations and considerations
 
 For incremental refresh, deployment pipelines only supports datasets that use [enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md). Beginning with the September 2020 release of Power BI Desktop, all datasets created or modified with Power BI Desktop automatically implement enhanced dataset metadata.
 
@@ -189,6 +197,22 @@ When republishing a dataset to an active pipeline with incremental refresh enabl
 * Renaming non-calculated columns in a table with incremental refresh enabled.
 
 Other changes such as adding a column, removing a column, and renaming a calculated column, are permitted. However, if the changes affect the display, you'll need to refresh before the change is visible.
+
+### Composite models
+
+[Composite models](desktop-composite-models) allow you to connect a Power BI dataset to an external dataset such as Azure Analysis Services. To learn more, see [Using DirectQuery for Power BI datasets and Azure Analysis Services](desktop-directquery-datasets-azure-analysis-services).
+
+You can use composite models to connect a dataset in a deployment pipeline, to another Power BI dataset external to the pipeline.  
+
+#### Limitations
+
+The following composite models connections are not supported:
+
+* Connecting datasets that reside in the same workspace.
+
+* Connecting datasets that reside in distinct pipelines.
+
+* Connecting datasets that reside in the same pipeline. 
 
 ## Deploying Power BI apps
 
