@@ -87,7 +87,7 @@ The *Embed for your organization* solution uses an interactive flow. Your user's
 **REPLACE SCREENSHOT**
 
 >[!div class="mx-imgBorder"]
->:::image type="content" source="media/embed-tokens/permissions-requested.png" alt-text="Screenshot showing the Microsoft permissions requested pop-up window which asks customers to grant permissions for accessing Power B I.":::
+>:::image type="content" source="media/embed-tokens/requested-premissions.png" alt-text="Screenshot showing the Microsoft permissions requested pop-up window which asks customers to grant permissions for accessing Power B I.":::
 
 >[!NOTE]
 >* The *embed for your organization* solution doesn't support A SKUs.
