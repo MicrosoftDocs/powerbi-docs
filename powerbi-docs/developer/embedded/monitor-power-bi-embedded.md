@@ -7,11 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how to
-ms.date: 12/21/2020
+ms.date: 12/23/2020
 ---
-
-
-<!--Put accompanying reference information into an article in the Reference section of your TOC with the name *monitor-[service-name]-reference.md* and the TOC title "Monitoring data". -->
 
 # Monitor Power BI Embedded
 
@@ -51,22 +48,50 @@ Resource Logs are not collected and stored until you create a diagnostic setting
 
 See [Create diagnostic setting to collect platform logs and metrics in Azure](/azure/azure-monitor/platform/diagnostic-settings) for the detailed process for creating a diagnostic setting using the Azure portal, CLI, or PowerShell. When you create a diagnostic setting, you specify which categories of logs to collect. The categories for *Power BI Embedded* are listed in [Power BI Embedded monitoring data reference](monitor-service-reference.md#resource-logs).
 
-<!-- OPTIONAL: Add specific examples of configuration for this service. For example, CLI and PowerShell commands for creating diagnostic setting. Ideally, customers should set up a policy to automatically turn on collection for services. Azure monitor has Resource Manager template examples you can point to. See https://docs.microsoft.com/azure/azure-monitor/samples/resource-manager-diagnostic-settings.  Contact azmondocs@microsoft.com if you have questions.   -->
+### Using PowerShell to enable diagnostics
+
+To enable metrics and diagnostics logging by using PowerShell, use the following commands:
+
+* To enable storage of diagnostics logs in a storage account, use this command:
+
+    ```powershell
+    Set-AzureRmDiagnosticSetting -ResourceId [your resource id] -StorageAccountId [your storage account id] -Enabled $true
+    ```
+    The storage account ID is the resource ID for the storage account where you want to send the logs.
+
+* To enable streaming of diagnostics logs to an event hub, use this command:
+
+    ```powershell
+    Set-AzureRmDiagnosticSetting -ResourceId [your resource id] -ServiceBusRuleId [your service bus rule id] -Enabled $true
+    ```
+* The Azure Service Bus rule ID is a string with this format:
+
+    ```powershell
+    {service bus resource ID}/authorizationrules/{key name}
+    ```
+
+* To enable sending diagnostics logs to a Log Analytics workspace, use this command:
+
+    ```powershell
+        Set-AzureRmDiagnosticSetting -ResourceId [your resource id] -WorkspaceId [resource id of the log analytics workspace] -Enabled $true
+    ```
+
+* You can obtain the resource ID of your Log Analytics workspace by using the following command:
+
+    ```powershell
+    (Get-AzureRmOperationalInsightsWorkspace).ResourceId
+    ```
+
+You can combine these parameters to enable multiple output options.
 
 The metrics and logs you can collect are discussed in the following sections.
 
 ## Analyzing metrics
 
-<!-- REQUIRED. Please keep headings in this order 
-If you don't support metrics, say so. Some services may be only onboarded to logs -->
-
-You can analyze metrics for *Power BI Embedded* with metrics from other Azure services using metrics explorer by opening **Metrics** from the **Azure Monitor** menu. See [Getting started with Azure Metrics Explorer](/azure/azure-monitor/platform/metrics-getting-started) for details on using this tool. 
+You can analyze metrics for *Power BI Embedded* with metrics from other Azure services using metrics explorer by opening **Metrics** from the **Azure Monitor** menu. See [Getting started with Azure Metrics Explorer](/azure/azure-monitor/platform/metrics-getting-started) for details on using this tool.
 
 <!-- Point to the list of metrics available in your monitor-service-reference article. -->
 For a list of the platform metrics collected for Power BI Embedded, see [Monitoring *[service-name]* data reference metrics](monitor-service-reference#metrics)  
-
-<!-- REQUIRED for services that use a Guest OS. That includes agent based services like Virtual Machines, Service Fabric, Cloud Services, and perhaps others. Delete the section otherwise -->
-Guest OS metrics must be collected by agents running on the virtual machines hosting your service. <!-- Add additional information as appropriate -->. For more information, see [Overview of Azure Monitor agents](/azure/azure-monitor/platform/agents-overview)  
 
 For reference, you can see a list of [all resource metrics supported in Azure Monitor](/azure/azure-monitor/platform/metrics-supported).
 
@@ -79,7 +104,7 @@ If you don't support resource logs, say so. Some services may be only onboarded 
 
 Data in Azure Monitor Logs is stored in tables where each table has its own set of unique properties.  
 
-All resource logs in Azure Monitor have the same fields followed by service-specific fields. The common schema is outlined in [Azure Monitor resource log schema](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-logs-schema#top-level-resource-logs-schema) The schema for [service name] resource logs is found in the [Power BI Embedded Data Reference](monitor-service-reference#schemas) 
+All resource logs in Azure Monitor have the same fields followed by service-specific fields. The common schema is outlined in [Azure Monitor resource log schema](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-logs-schema#top-level-resource-logs-schema) The schema for [service name] resource logs is found in the [Power BI Embedded Data Reference](monitor-service-reference#schemas)
 
 The [Activity log](/azure/azure-monitor/platform/activity-log) is a platform login Azure that provides insight into subscription-level events. You can view it independently or route it to Azure Monitor Logs, where you can do much more complex queries using Log Analytics.  
 
