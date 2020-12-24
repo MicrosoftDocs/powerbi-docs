@@ -28,7 +28,7 @@
       href: embedded-capacity.md
     - name: "Capacity planning"
       href: embedded-capacity-planning.md
-    - name: "Embedded application tokens"
+    - name: "Embedded analytics application tokens"
       href: embed-tokens.md      
     - name: "Consideration for generating an embed token"
       href: generate-embed-token.md
