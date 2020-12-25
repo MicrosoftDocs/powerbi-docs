@@ -94,7 +94,9 @@ In workspace **Settings** > **Premium** > **Workspace Connection**, select **Cop
 
 ### Initial catalog
 
-With some tools, such as SQL Server Profiler, you may need to specify an *Initial Catalog*. Specify a dataset (database) in your workspace. In the **Connect to Server** dialog, select **Options** > **Connection Properties** > **Connect to database**, enter the dataset name.
+With some tools, such as SQL Server Profiler, you must specify an *Initial Catalog*, which is the dataset (database) to connect to in your workspace. In the **Connect to Server** dialog, select **Options** > **Connection Properties** > **Connect to database**, enter the dataset name.
+
+![Selecting the dataset in SQL Server Profiler](media/service-premium-connect-tools/sql-profiler-connection-properties.png)
 
 ### Duplicate workspace names
 
