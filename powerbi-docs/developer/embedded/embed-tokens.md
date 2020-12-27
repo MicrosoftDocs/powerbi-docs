@@ -7,7 +7,7 @@ ms.reviewer: amshuste
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 12/23/2020
+ms.date: 12/27/2020
 ---
 
 # Embedded analytics application tokens
@@ -47,7 +47,7 @@ The *Embed for your customers* solution uses a non-interactive flow. Users do no
 
 * **[Service principal](embed-service-principal.md)**
 
-    Your web app uses the Azure AD [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) to authenticate against Azure AD and get the *Azure AD token*.
+    Your web app uses the Azure AD [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) to authenticate against Azure AD and get an *Azure AD token*. Using a service principal doesn't require user authorization, i    t only requires your web  app to authorize against Azure AD, and is  the Azure AD recommended authentication method.
 
 * **Master user**
 
@@ -59,18 +59,25 @@ After successful authentication against Azure AD, your web app will generate an 
 >* To embed using the *embed for your customers* solution, you'll need an A, EM, or P SKU.
 >* To [move to production](move-to-production.md) you'll need a capacity.
 
-This diagram shows the authentication flow for the *embed for your customers* solution.
+These two diagrams show the authentication flow for the *embed for your customers* solution.
+
+**Receiving the Azure AD token**
 
 >[!div class="mx-imgBorder"]
->:::image type="content" source="media/embed-tokens/paas-authentiction.png" alt-text="A diagram of the authentication flow in an embed for your customers Power B I embedded analytics solution.":::
+>:::image type="content" source="media/embed-tokens/receiving-azure-ad-token.png" alt-text="A diagram showing how a web app receives an Azure A D token as part of the authentication flow in an embed for your customers Power B I embedded analytics solution.":::
+
+**Generating an embed token for the web app user**
+
+>[!div class="mx-imgBorder"]
+>:::image type="content" source="media/embed-tokens/generating-embed-token.png" alt-text="A diagram showing how the web app generates an embed token as part of the authentication flow in an embed for your customers Power B I embedded analytics solution.":::
 
 1. Web app user authenticates against your web app (with your authentication method).
 
 2. Your web app uses a *service principal* or a *master user* to authenticate against Azure AD.
 
 3. Your web app gets an access token from Azure AD, caches the *Azure AD token*, and uses it to access Power BI REST APIs. Access to the APIs is given according to your authentication method:
-    1. If you're using a *service principal*, your Azure AD app has access to all the APIs.
-    2. If you're using a *master user*, the *master user* (or an administrator) has to provide consent for the APIs your app can use.
+    * If you're using a *service principal*, your Azure AD app has access to all the APIs.
+    * If you're using a *master user*, the *master user* (or an administrator) has to provide consent for the APIs your app can use.
 
 4. Your web app calls the generate token REST API requesting the *embed token*.
 
