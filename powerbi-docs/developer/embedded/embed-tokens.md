@@ -59,17 +59,12 @@ After successful authentication against Azure AD, your web app will generate an 
 >* To embed using the *embed for your customers* solution, you'll need an A, EM, or P SKU.
 >* To [move to production](move-to-production.md) you'll need a capacity.
 
-These two diagrams show the authentication flow for the *embed for your customers* solution.
+The following diagrams show the authentication flow for the *embed for your customers* solution.
 
-**Receiving the Azure AD token**
+#### Receiving the Azure AD token
 
 >[!div class="mx-imgBorder"]
 >:::image type="content" source="media/embed-tokens/receiving-azure-ad-token.png" alt-text="A diagram showing how a web app receives an Azure A D token as part of the authentication flow in an embed for your customers Power B I embedded analytics solution.":::
-
-**Generating an embed token for the web app user**
-
->[!div class="mx-imgBorder"]
->:::image type="content" source="media/embed-tokens/generating-embed-token.png" alt-text="A diagram showing how the web app generates an embed token as part of the authentication flow in an embed for your customers Power B I embedded analytics solution.":::
 
 1. Web app user authenticates against your web app (with your authentication method).
 
@@ -78,6 +73,11 @@ These two diagrams show the authentication flow for the *embed for your customer
 3. Your web app gets an access token from Azure AD, caches the *Azure AD token*, and uses it to access Power BI REST APIs. Access to the APIs is given according to your authentication method:
     * If you're using a *service principal*, your Azure AD app has access to all the APIs.
     * If you're using a *master user*, the *master user* (or an administrator) has to provide consent for the APIs your app can use.
+
+#### Generating an embed token for the web app user
+
+>[!div class="mx-imgBorder"]
+>:::image type="content" source="media/embed-tokens/generating-embed-token.png" alt-text="A diagram showing how the web app generates an embed token as part of the authentication flow in an embed for your customers Power B I embedded analytics solution.":::
 
 4. Your web app calls the generate token REST API requesting the *embed token*.
 
@@ -90,8 +90,6 @@ These two diagrams show the authentication flow for the *embed for your customer
 ### Embed for your organization
 
 The *Embed for your organization* solution uses an interactive flow. Your user's authenticate against Azure AD using their Power BI credentials. Users need to grant consent to your web app requested permissions. Consent is granted in the Microsoft *Permissions requested* dialog pop-up window. Any Power BI content the web app user has access to, can be embedded.
-
-**REPLACE SCREENSHOT**
 
 >[!div class="mx-imgBorder"]
 >:::image type="content" source="media/embed-tokens/requested-premissions.png" alt-text="Screenshot showing the Microsoft permissions requested pop-up window which asks customers to grant permissions for accessing Power B I.":::
