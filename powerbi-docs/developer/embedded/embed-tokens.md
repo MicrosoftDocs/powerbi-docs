@@ -47,7 +47,7 @@ The *Embed for your customers* solution uses a non-interactive flow. Users do no
 
 * **[Service principal](embed-service-principal.md)**
 
-    Your web app uses the Azure AD [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) to authenticate against Azure AD and get an *Azure AD token*. Using a service principal doesn't require user authorization, i    t only requires your web  app to authorize against Azure AD, and is  the Azure AD recommended authentication method.
+    Your web app uses the Azure AD [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) to authenticate against Azure AD and get an *Azure AD token*. Using a service principal doesn't require user authorization, it only requires your web  app to authorize against Azure AD, and is  the Azure AD recommended authentication method.
 
 * **Master user**
 
