@@ -285,6 +285,10 @@ private async Task<ExportedFile> ExportPaginatedReport(
 }
 ```
 
+## Limitations
+
+Exporting a paginated report that has a Power BI dataset as its data source, is not supported for service principals.
+
 ## Next steps
 
 Review how to embed content for your customers and your organization:
