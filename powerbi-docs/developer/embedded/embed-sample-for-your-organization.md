@@ -263,6 +263,10 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
         > [!NOTE]
         >If you don't have a **Web** platform, select **Add a platform** and in the *Configure platforms* window, select **Web**.
+
+    2. In *Implicit grant and hybrid flows*, enable both options:
+        * **Access tokens**
+        * **ID tokens**
     
     3. Save your changes.
 
@@ -284,9 +288,9 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
     * `clientId` - Use the [client ID](#client-id) GUID
 
-    * `workspaceId` - Use the [client secret](#client-secret)
+    * `workspaceId` - Use the [workspace ID](#client-secret)
 
-    * `reportId` - 
+    * `reportId` - Use the [report ID](#repoert-id)
 
 3. Save the file.
 
