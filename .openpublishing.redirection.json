@@ -3829,6 +3829,11 @@
             "source_path": "powerbi-docs/consumer/mobile/mobile-mixed-reality-app.md",
             "redirect_url": "/power-bi/consumer/mobile/mobile-hololens2-app",
             "redirect_document_id": false
-        }                                
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/embed-from-apps.md",
+            "redirect_url": "/power-bi/developer/embedded/",
+            "redirect_document_id": false
+        }                                        
     ]
 }
