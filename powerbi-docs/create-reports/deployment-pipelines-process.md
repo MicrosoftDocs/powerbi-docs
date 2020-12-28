@@ -202,7 +202,7 @@ Other changes such as adding a column, removing a column, and renaming a calcula
 
 Using [composite models](../transform-model/desktop-composite-models.md) you can set up a report with multiple data connections.
 
-You can use the *composite models* functionality to connect a Power BI dataset to an external dataset such as Azure Analysis Services. For more information, see [Using DirectQuery for Power BI datasets and Azure Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md).
+You can use the composite models functionality to connect a Power BI dataset to an external dataset such as Azure Analysis Services. For more information, see [Using DirectQuery for Power BI datasets and Azure Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md).
 
 In a deployment pipeline, you can use composite models to connect a dataset to another Power BI dataset external to the pipeline.  
 
