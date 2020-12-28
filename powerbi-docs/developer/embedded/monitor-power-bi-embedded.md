@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how to
-ms.date: 12/23/2020
+ms.date: 12/28/2020
 ---
 
 # Monitor Power BI Embedded
@@ -16,7 +16,15 @@ When you have critical applications and business processes relying on Azure reso
 
 ## Monitor overview
 
-The **Overview** page in the Azure portal for each *[Service resource]* includes *[provide a description of the data in the Overview page.]*.
+The **Overview** page in the Azure portal for each *Power BI Embedded* instance, includes the following information:
+
+* **Resource group** - The [resource group](/azure/azure-resource-manager/management/overview.md#resource-groups) the instance belongs to
+* **Status** - The status of your Power BI Embedded instance
+* **Location** - The location of your Power BI Embedded instance
+* **Resource name** - The name of your Power BI Embedded instance
+* **SKU** - The SKU your Power BI Embedded instance is using
+* **Subscription name** - Your Power BI Embedded instance subscription name
+* **Subscription ID** - Your Power BI Embedded instance subscription ID
 
 ## What is Azure Monitor?
 
@@ -43,8 +51,6 @@ See [Monitoring *Power BI Embedded* data reference](monitor-service-reference.md
 Platform metrics and the Activity log are collected and stored automatically, but can be routed to other locations by using a diagnostic setting.  
 
 Resource Logs are not collected and stored until you create a diagnostic setting and route them to one or more locations.
-
-<!-- Include any additional information on collecting logs.  The number of things that diagnostics settings control is expanding -->
 
 See [Create diagnostic setting to collect platform logs and metrics in Azure](/azure/azure-monitor/platform/diagnostic-settings) for the detailed process for creating a diagnostic setting using the Azure portal, CLI, or PowerShell. When you create a diagnostic setting, you specify which categories of logs to collect. The categories for *Power BI Embedded* are listed in [Power BI Embedded monitoring data reference](monitor-service-reference.md#resource-logs).
 
@@ -104,7 +110,7 @@ If you don't support resource logs, say so. Some services may be only onboarded 
 
 Data in Azure Monitor Logs is stored in tables where each table has its own set of unique properties.  
 
-All resource logs in Azure Monitor have the same fields followed by service-specific fields. The common schema is outlined in [Azure Monitor resource log schema](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-logs-schema#top-level-resource-logs-schema) The schema for [service name] resource logs is found in the [Power BI Embedded Data Reference](monitor-service-reference#schemas)
+All resource logs in Azure Monitor have the same fields followed by service-specific fields. The common schema is outlined in [Azure Monitor resource log schema](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-logs-schema#top-level-resource-logs-schema) The schema for Power BI Embedded resource logs is found in the [Power BI Embedded Data Reference](monitor-service-reference#schemas)
 
 The [Activity log](/azure/azure-monitor/platform/activity-log) is a platform login Azure that provides insight into subscription-level events. You can view it independently or route it to Azure Monitor Logs, where you can do much more complex queries using Log Analytics.  
 
