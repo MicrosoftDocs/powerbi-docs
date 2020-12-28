@@ -28,7 +28,7 @@
       href: embedded-capacity.md
     - name: "Capacity planning"
       href: embedded-capacity-planning.md
-    - name: "Consideration for generating an embed token"
+    - name: "Considerations for generating an embed token"
       href: generate-embed-token.md
     - name: "Performance best practices"
       href: embedded-performance-best-practices.md
@@ -50,8 +50,6 @@
       href: embed-service-principal-certificate.md
     - name: "Move an embedded app to production"
       href: move-to-production.md          
-    - name: "Embed from an app"
-      href: embed-from-apps.md
     - name: "Export report to file"
       href: export-to.md
     - name: "Export paginated report to file"
