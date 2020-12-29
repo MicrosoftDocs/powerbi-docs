@@ -7,7 +7,7 @@ ms.reviewer: amshuste
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 12/27/2020
+ms.date: 12/29/2020
 ---
 
 # Embedded analytics application tokens
