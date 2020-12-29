@@ -95,7 +95,7 @@ You’ll need your Azure enrollment number. If you don’t have it, ask your org
 
 ### Connecting the calculator: Five easy steps to carbon accounting
 
-1. Download the app from [AppSource](https://go.microsoft.com/fwlink/?linkid=2151690).
+1. Download the app from [AppSource](https://appsource.microsoft.com/product/power-bi/coi-sustainability.sustainability_calculator_public_preview).
 
    ![Microsoft Sustainability Calculator on AppSource](media/service-connect-to-microsoft-sustainability-calculator/appsource.png)
 
