@@ -79,13 +79,13 @@ The following diagrams show the authentication flow for the *embed for your cust
 >[!div class="mx-imgBorder"]
 >:::image type="content" source="media/embed-tokens/generating-embed-token.png" alt-text="A diagram showing how the web app generates an embed token as part of the authentication flow in an embed for your customers Power B I embedded analytics solution.":::
 
-4. Your web app calls the generate token REST API requesting the *embed token*.
+4. Your web app calls the generate token REST API requesting the *embed token*, which specifies which Power BI content can be embedded.
 
-5. Your web app generates an *embed token*, which specifies which Power BI content can be embedded.
+5. The REST API returns the *embed token* to your web app.
 
-6. Your web app provides the *embed token* to its user.
+6. The web app passes the embed token to the user's web browser.
 
-7. The web app user uses the *embed token* to access Power BI.
+7. The web app user uses the embed token to access Power BI.
 
 ### Embed for your organization
 
