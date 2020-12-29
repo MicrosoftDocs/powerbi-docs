@@ -84,20 +84,8 @@ The following diagram show the authentication flow for the *embed for your custo
 
 The *Embed for your organization* solution uses an interactive flow. Your user's authenticate against Azure AD using their Power BI credentials. Users need to grant consent to your web app requested permissions. Consent is granted in the Microsoft *Permissions requested* dialog pop-up window. Any Power BI content the web app user has access to, can be embedded.
 
-Permissions 1
-
 >[!div class="mx-imgBorder"]
 >:::image type="content" source="media/embed-tokens/requested-premissions.png" alt-text="Screenshot showing the Microsoft permissions requested pop-up window which asks customers to grant permissions for accessing Power B I.":::
-
-Permissions 2
-
->[!div class="mx-imgBorder"]
->:::image type="content" source="media/embed-tokens/requested-premissions2.png" alt-text="Screenshot showing the Microsoft permissions requested pop-up window which asks customers to grant permissions for accessing Power B I.":::
-
-Permissions 3
-
->[!div class="mx-imgBorder"]
->:::image type="content" source="media/embed-tokens/requested-premissions3.png" alt-text="Screenshot showing the Microsoft permissions requested pop-up window which asks customers to grant permissions for accessing Power B I.":::
 
 >[!NOTE]
 >* The *embed for your organization* solution doesn't support A SKUs.
