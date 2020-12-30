@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: how to
+ms.topic: how-to
 ms.date: 12/30/2020
 ---
 
@@ -108,9 +108,9 @@ All resource logs in Azure Monitor have the same fields followed by service-spec
 
 The [Activity log](/azure/azure-monitor/platform/activity-log) is a platform login Azure that provides insight into subscription-level events. You can view it independently or route it to Azure Monitor Logs, where you can do much more complex queries using Log Analytics.  
 
-For a list of the types of resource logs collected for Power BI Embedded, see [Monitoring Power BI Embedded data reference](monitor-power-bi-embedded-reference.md#logs)  
+For a list of the types of resource logs collected for Power BI Embedded, see [Monitoring Power BI Embedded data reference](monitor-power-bi-embedded-reference.md#resource-logs)  
 
-For a list of the tables used by Azure Monitor Logs and queryable by Log Analytics, see [Monitoring Power BI Embedded data reference](monitor-power-bi-embedded-reference.md#azuremonitorlogstables)  
+For a list of the tables used by Azure Monitor Logs and queryable by Log Analytics, see [Monitoring Power BI Embedded data reference](monitor-power-bi-embedded-reference.md#azure-monitor-logs-tables)  
 
 ### Sample Kusto queries
 
@@ -150,15 +150,10 @@ The following table lists common and recommended alert rules for Power BI Embedd
 
 ## Next steps
 
-- See [Monitoring Power BI Embedded data reference](monitor-power-bi-embedded-reference.md) for a reference of the metrics, logs, and other important values created by [service name].
-- See [Monitoring Azure resources with Azure Monitor](/azure/azure-monitor/insights/monitor-azure-resource) for details on monitoring Azure resources.
-
-## Next steps
-
 You can learn more about Azure resource diagnostic logging.
 
-> [!div class="nextstepaction"]
-> [Azure resource diagnostic logging](/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs)
+>[!div class="nextstepaction"]
+>[Monitoring Power BI Embedded data reference](monitor-power-bi-embedded-reference.md)
 
-> [!div class="nextstepaction"]
-> [Set-AzureRmDiagnosticSetting](/powershell/module/azurerm.insights/Set-AzureRmDiagnosticSetting)
+>[!div class="nextstepaction"]
+>[Monitoring Azure resources with Azure Monitor](/azure/azure-monitor/insights/monitor-azure-resource)

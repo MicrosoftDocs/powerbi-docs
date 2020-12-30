@@ -6,13 +6,13 @@ ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: how to
+ms.topic: how-to
 ms.date: 12/30/2020
 ---
 
 # Monitoring Power BI Embedded data reference
 
-See [Monitor Power BI Embedded](monitor-service.md) for details on collecting and analyzing monitoring data for Power BI Embedded.
+See [Monitor Power BI Embedded](monitor-power-bi-embedded.md) for details on collecting and analyzing monitoring data for Power BI Embedded.
 
 ## Metrics
 
@@ -139,7 +139,6 @@ The engine category instructs the resource to log the events listed below. For e
 | ApplicationName | null | Name of the client application that created the connection to the server. |
 | CapacityName | pbi641fb41260f84aa2b778a85891ae2d97 | The name of the Power BI Embedded capacity resource. |
 
-
 ### AllMetrics
 
 Checking the **AllMetrics** option logs the data of all the metrics that you can use with a Power BI Embedded resource.
@@ -159,8 +158,8 @@ Power BI Embedded uses the **Power BI Dedicated** schema.
 
 You can learn more about Azure resource diagnostic logging.
 
-> [!div class="nextstepaction"]
-> [Azure resource diagnostic logging](/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs)
+>[!div class="nextstepaction"]
+>[Azure resource diagnostic logging](/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs)
 
-> [!div class="nextstepaction"]
-> [Set-AzureRmDiagnosticSetting](/powershell/module/azurerm.insights/Set-AzureRmDiagnosticSetting)
+>[!div class="nextstepaction"]
+>[Set-AzureRmDiagnosticSetting](/powershell/module/azurerm.insights/Set-AzureRmDiagnosticSetting)

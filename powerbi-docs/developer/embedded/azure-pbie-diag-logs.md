@@ -137,7 +137,6 @@ The engine category instructs the resource to log the following events, and on e
 | ApplicationName | null | Name of the client application that created the connection to the server. |
 | CapacityName | pbi641fb41260f84aa2b778a85891ae2d97 | The name of the Power BI Embedded capacity resource. |
 
-
 ### AllMetrics
 
 Checking the **AllMetrics** option logs the data of all the metrics that you can use with a Power BI Embedded resource.
