@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how to
-ms.date: 12/21/2020
+ms.date: 12/30/2020
 ---
 
 # Monitoring Power BI Embedded data reference
@@ -16,184 +16,60 @@ See [Monitor Power BI Embedded](monitor-service.md) for details on collecting an
 
 ## Metrics
 
-<!-- REQUIRED if you support Metrics. If you don't, keep the section but call that out. Some services are only onboarded to logs.
-<!-- Please keep headings in this order -->
-
-<!-- 2 options here depending on the level of extra content you have. -->
-
-------------**OPTION 1 EXAMPLE** ---------------------
-
-<!-- OPTION 1 - Minimum -  Link to relevant bookmarks in https://docs.microsoft.com/azure/azure-monitor/platform/metrics-supported, which is auto generated from the metrics REST API.  Not all metrics are published depending on whether your product group wants them to be.  If the metric is published, but descriptions are wrong of missing, contact your PM and tell them to update them  in the Azure Monitor "shoebox" manifest.  If this article is missing metrics that you and the PM know are available, both of you contact azmondocs@microsoft.com.  
--->
-
-<!-- Example format. There should be AT LEAST one Resource Provider/Resource Type here. -->
-
 This section lists all the automatically collected platform metrics collected for Power BI Embedded.  
 
 |Metric Type | Resource Provider / Type Namespace<br/> and link to individual metrics |
 |-------|-----|
-| Virtual Machine | [Microsoft.Compute/virtualMachine](/azure/azure-monitor/platform/metrics-supported#microsoftcomputevirtualmachines) |
-| Virtual machine scale set | [Microsoft.Compute/virtualMachinescaleset](/azure/azure-monitor/platform/metrics-supported#microsoftcomputevirtualmachinescaleset) 
+| Capacities | [Microsoft.PowerBIDedicated/capacities](/azure/azure-monitor/platform/metrics-supported#microsoftpowerbidedicatedcapacities) |
 
+### Capacities
 
+Resource Provider and Type: [Microsoft.PowerBIDedicated/capacities](/azure/azure-monitor/platform/metrics-supported#microsoftpowerbidedicatedcapacities)
 
---------------**OPTION 2 EXAMPLE** -------------
-
-<!--  OPTION 2 -  Link to the metrics as above, but work in extra information not found in the automated metric-supported reference article.  NOTE: YOU WILL NOW HAVE TO MANUALLY MAINTAIN THIS SECTION to make sure it stays in sync with the metrics-supported link. For highly customized example, see [CosmosDB](https://docs.microsoft.com/azure/cosmos-db/monitor-cosmos-db-reference#metrics). They even regroup the metrics into usage type vs. resource provider and type.
--->
-
-<!-- Example format. Mimic the setup of metrics supported, but add extra information -->
-
-### Virtual Machine metrics
-
-Resource Provider and Type: [Microsoft.Compute/virtualMachines](/azure/azure-monitor/platform/metrics-supported#microsoftcomputevirtualmachines)
-
-| Metric | Unit | Description | *TODO replace this label with other information*  |
-|:-------|:-----|:------------|:------------------|
-|        |      |             | Use this metric for <!-- put your specific information in here -->  |
-|        |      |             |  |
-
-### Virtual machine scale set metrics
-
-Namespace- [Microsoft.Compute/virtualMachinesscaleset](/azure/azure-monitor/platform/metrics-supported#microsoftcomputevirtualmachinescalesets) 
-
-| Metric | Unit | Description | *TODO replace this label with other information*  |
-|:-------|:-----|:------------|:------------------|
-|        |      |             | Use this metric for <!-- put your specific information in here -->  |
-|        |      |             |  |
-
-
-<!-- Add additional explanation of reference information as needed here. Link to other articles such as your Monitor [servicename] article as appropriate. -->
-
-<!-- Keep this text as-is -->
-For more information, see a list of [all platform metrics supported in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/metrics-supported).
-
-
+| Name | Metric | Unit | Description |
+|:---|:-------|:-----|:------------|
+|Memory                      |memory_metric               |Bytes        |Memory. Range 0-3 GB for A1, 0-5 GB for A2, 0-10 GB for A3, 0-25 GB for A4, 0-50 GB for A5 and 0-100 GB for A6             |
+|Memory Thrashing (Datasets) |memory_thrashing_metric     |Percent      |Average memory thrashing             |
+|QPU High Utilization        |qpu_high_utilization_metric |Count        |QPU High Utilization In Last Minute, 1 For High QPU Utilization, Otherwise 0             |
+|Query Duration (Datasets)   |QueryDuration               |Milliseconds |DAX Query duration in last interval             |
+|Query Pool Job Queue Length (Datasets) |QueryPoolJobQueueLength     |Count        |Number of jobs in the queue of the query thread pool             |
 
 ## Metric Dimensions
 
-<!-- REQUIRED. Please  keep headings in this order -->
-<!-- If you have metrics with dimensions, outline it here. If you have no dimensions, say so. 
-Questions email azmondocs@microsoft.com -->
-
 For more information on what metric dimensions are, see [Multi-dimensional metrics](/azure/azure-monitor/platform/data-platform-metrics#multi-dimensional-metrics).
-
 
 Power BI Embedded does not have any metrics that contain dimensions.
 
-*OR*
-
-Power BI Embedded has the following dimensions associated with its metrics.
-
-<!-- See https://docs.microsoft.com/azure/storage/common/monitor-storage-reference#metrics-dimensions for an example. Part is copied below. -->
-
-**--------------EXAMPLE format when you have dimensions------------------**
-
-Azure Storage supports following dimensions for metrics in Azure Monitor.
-
-| Dimension Name | Description |
-| ------------------- | ----------------- |
-| **BlobType** | The type of blob for Blob metrics only. The supported values are **BlockBlob**, **PageBlob**, and **Azure Data Lake Storage**. Append blobs are included in **BlockBlob**. |
-| **BlobTier** | Azure storage offers different access tiers, which allow you to store blob object data in the most cost-effective manner. See more in [Azure Storage blob tier](azure/storage/blobs/storage-blob-storage-tiers). The supported values include: <br/> <li>**Hot**: Hot tier</li> <li>**Cool**: Cool tier</li> <li>**Archive**: Archive tier</li> <li>**Premium**: Premium tier for block blob</li> <li>**P4/P6/P10/P15/P20/P30/P40/P50/P60**: Tier types for premium page blob</li> <li>**Standard**: Tier type for standard page Blob</li> <li>**Untiered**: Tier type for general purpose v1 storage account</li> |
-| **GeoType** | Transaction from Primary or Secondary cluster. The available values include **Primary** and **Secondary**. It applies to Read Access Geo Redundant Storage(RA-GRS) when reading objects from secondary tenant. |
-
 ## Resource logs
-<!-- REQUIRED. Please  keep headings in this order -->
 
-This section lists the types of resource logs you can collect for Power BI Embedded. 
-
-<!-- List all the resource log types you can have and what they are for -->  
+This section lists the types of resource logs you can collect for Power BI Embedded.
 
 For reference, see a list of [all resource logs category types supported in Azure Monitor](/azure/azure-monitor/platform/resource-logs-schema).
-
-------------**OPTION 1 EXAMPLE** ---------------------
-
-<!-- OPTION 1 - Minimum -  Link to relevant bookmarks in https://docs.microsoft.com/azure/azure-monitor/platform/resource-logs-categories, which is auto generated from the REST API.  Not all resource log types metrics are published depending on whether your product group wants them to be.  If the resource log is published, but category display names are wrong or missing, contact your PM and tell them to update them in the Azure Monitor "shoebox" manifest.  If this article is missing resource logs that you and the PM know are available, both of you contact azmondocs@microsoft.com.  
--->
-
-<!-- Example format. There should be AT LEAST one Resource Provider/Resource Type here. -->
 
 This section lists all the resource log category types collected for Power BI Embedded.  
 
 |Resource Log Type | Resource Provider / Type Namespace<br/> and link to individual metrics |
 |-------|-----|
-| Web Sites | [Microsoft.web/sites](/azure/azure-monitor/platform/resource-logs-categories#microsoftwebsites) |
-| Web Site Slots | [Microsoft.web/sites/slots](/azure/azure-monitor/platform/resource-logs-categories#microsoftwebsitesslots) 
-
---------------**OPTION 2 EXAMPLE** -------------
-
-<!--  OPTION 2 -  Link to the resource logs as above, but work in extra information not found in the automated metric-supported reference article.  NOTE: YOU WILL NOW HAVE TO MANUALLY MAINTAIN THIS SECTION to make sure it stays in sync with the resource-log-categories link. You can group these sections however you want provided you include the proper links back to resource-log-categories article. 
--->
-
-<!-- Example format. Add extra information -->
-
-### Web Sites
-
-Resource Provider and Type: [Microsoft.web/sites](/azure/azure-monitor/platform/resource-logs-categories#microsoftwebsites)
-
-| Category | Display Name | *TODO replace this label with other information*  |
-|:---------|:-------------|------------------|
-| AppServiceAppLogs   | App Service Application Logs | *TODO other important information about this type* |
-| AppServiceAuditLogs | Access Audit Logs            | *TODO other important information about this type* |
-|  etc.               |                              |                                                   |  
-
-### Web Site Slots
-
-Resource Provider and Type: [Microsoft.web/sites/slots](/azure/azure-monitor/platform/resource-logs-categories#microsoftwebsitesslots)
-
-| Category | Display Name | *TODO replace this label with other information*  |
-|:---------|:-------------|------------------|
-| AppServiceAppLogs   | App Service Application Logs | *TODO other important information about this type* |
-| AppServiceAuditLogs | Access Audit Logs            | *TODO other important information about this type* |
-|  etc.               |                              |                                                   |  
-
---------------**END Examples** -------------
+| Capacities | [Microsoft.PowerBIDedicated/capacities](/azure/azure-monitor/platform/resource-logs-categories#microsoftpowerbidedicatedcapacities) |
 
 ## Azure Monitor Logs tables
-<!-- REQUIRED. Please keep heading in this order -->
 
-This section refers to all of the Azure Monitor Logs Kusto tables relevant to Power BI Embedded and available for query by Log Analytics. 
-
-------------**OPTION 1 EXAMPLE** ---------------------
-
-<!-- OPTION 1 - Minimum -  Link to relevant bookmarks in https://docs.microsoft.com/azure/azure-monitor/reference/tables/tables-resourcetype where your service tables are listed. These files are auto generated from the REST API.   If this article is missing tables that you and the PM know are available, both of you contact azmondocs@microsoft.com.  
--->
-
-<!-- Example format. There should be AT LEAST one Resource Provider/Resource Type here. -->
+This section refers to all of the Azure Monitor Logs Kusto tables relevant to Power BI Embedded and available for query by Log Analytics.
 
 |Resource Type | Notes |
 |-------|-----|
-| [Virtual Machines](/azure/azure-monitor/reference/tables/tables-resourcetype#virtual-machines) | |
-| [Virtual machine scale sets](/azure/azure-monitor/reference/tables/tables-resourcetype#virtual-machine-scale-sets) | |
+| [Power BI Embedded](/azure/azure-monitor/reference/tables/tables-resourcetype#power-bi-embedded) |See a list of tables below |
 
---------------**OPTION 2 EXAMPLE** -------------
+### Power BI Embedded
 
-<!--  OPTION 2 -  List out your tables adding additional information on what each table is for. Individually link to each table using the table name.  For example, link to [AzureMetrics](https://docs.microsoft.com/azure/azure-monitor/reference/tables/azuremetrics).  
-
-NOTE: YOU WILL NOW HAVE TO MANUALLY MAINTAIN THIS SECTION to make sure it stays in sync with the automatically generated list. You can group these sections however you want provided you include the proper links back to the proper tables. 
--->
-
-### Virtual Machines
-
-| Table |  Description | *TODO replace this label with proper title for your additional information*  |
+| Table |  Description |
 |:---------|:-------------|------------------|
-| [AzureActivity](/azure/azure-monitor/reference/tables/azureactivity)   | <!-- description copied from previous link --> Entries from the Azure Activity log that provides insight into any subscription-level or management group level events that have occurred in Azure. | *TODO other important information about this type |
-| [AzureMetrics](/azure/azure-monitor/reference/tables/azuremetrics) | <!-- description copied from previous link --> Metric data emitted by Azure services that measure their health and performance.    | *TODO other important information about this type |
-|  etc.               |                              |                                                   |  
-
-### Virtual Machine Scale Sets
-
-| Table |  Description | *TODO replace this label with other information*  |
-|:---------|:-------------|------------------|
-| [ADAssessmentRecommendation](/azure/azure-monitor/reference/tables/adassessmentrecommendation)   | <!-- description copied from previous link --> Recommendations generated by AD assessments that are started through a scheduled task. When you schedule the assessment it runs by default every 7 days and upload the data into Azure Log Analytics | *TODO other important information about this type |
-| [ADReplicationResult](/azure/azure-monitor/reference/tables/adreplicationresult) | <!-- description copied from previous link --> The AD Replication Status solution regularly monitors your Active Directory environment for any replication failures.    | *TODO other important information about this type |
-|  etc.               |                              |                                                   |  
-
-<!-- Add extra information if required -->
+| [AzureActivity](/azure/azure-monitor/reference/tables/azureactivity) | Entries from the Azure Activity log that provides insight into any subscription-level or management group level events that have occurred in Azure.    |
+|  etc.               |                              |                                                   | 
+| [AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)   | Stores resource logs for Azure services that use Azure Diagnostics mode. Resource logs describe the internal operation of Azure resources. |
+| [AzureMetrics](/azure/azure-monitor/reference/tables/azuremetrics)   | Metric data emitted by Azure services that measure their health and performance. |
 
 For a reference of all Azure Monitor Logs / Log Analytics tables, see the [Azure Monitor Log Table Reference](/azure/azure-monitor/reference/tables/tables-resourcetype).
-
---------------**END EXAMPLES** -------------
 
 ### Diagnostics tables
 <!-- REQUIRED. Please keep heading in this order -->
@@ -216,29 +92,67 @@ Power BI Embedded uses the [Azure Diagnostics](https://docs.microsoft.com/azure/
 |  |  |
 
 ## Activity log
-<!-- REQUIRED. Please keep heading in this order -->
+
+You can select **Engine** and/or the **AllMetrics** categories.
+
+### Engine
+
+The engine category instructs the resource to log the events listed below. For each event, there are properties.
+
+|     Event Name     |     Event Description     |
+|----------------------------|----------------------------------------------------------------------------------|
+|    Audit Login    |    Records all new connection to   the engine events since the trace started.    |
+|    Session Initialize    |    Records all session   initialization events since the trace started.    |
+|    Vertipaq Query Begin    |    Records all VertiPaq SE query   begin events since the trace started.    |
+|    Query Begin    |    Records all query begin events   since the trace started.    |
+|    Query End    |    Records all query end events   since the trace started.    |
+|    Vertipaq Query End    |    Records all VertiPaq SE query   end events since the trace started.    |
+|    Audit Logout    |    Records all disconnect from   engine events since the trace started.    |
+|    Error    |    Records all engine error   events since the trace started.    |
+
+<br>
+<br>
+
+| Property Name | Vertipaq Query End Example | Property Description |
+|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| EventClass | XM_SEQUERY_END | Event Class is used to categorize events. |
+| EventSubclass | 0 | Event Subclass provides additional information about each event class. (for example, 0: VertiPaq Scan) |
+| RootActivityId | ff217fd2-611d-43c0-9c12-19e202a94f70 | Root activity ID. |
+| CurrentTime | 2018-04-06T18:30:11.9137358Z | Time at which the event started when available. |
+| StartTime | 2018-04-06T18:30:11.9137358Z | Time at which the event started when available. |
+| JobID | 0 | Job ID for progress. |
+| ObjectID | 464 | Object ID |
+| ObjectType | 802012 | ObjectType |
+| EndTime | 2018-04-06T18:30:11.9137358Z | Time at which the event ended. |
+| Duration | 0 | Amount of time (in milliseconds) taken by the event. |
+| SessionType | User | Session type (what entity caused the operation). |
+| ProgressTotal | 0 | Progress total. |
+| IntegerData | 0 | Integer data. |
+| Severity | 0 | Severity level of an exception. |
+| Success | 1 | 1 = success. 0 = failure (for example, a 1 means success of a permissions check and a 0 means a failure of that check). |
+| Error | 0 | Error number of a given event. |
+| ConnectionID | 3 | Unique connection ID. |
+| DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | Id of the dataset in which the statement of the user is running. |
+| SessionID | 3D063F66-A111-48EE-B960-141DEBDA8951 | Session GUID. |
+| SPID | 180 | Server process ID. This uniquely identifies a user session. This directly corresponds to the session GUID used by XML/A. |
+| ClientProcessID | null | The process ID of the client application. |
+| ApplicationName | null | Name of the client application that created the connection to the server. |
+| CapacityName | pbi641fb41260f84aa2b778a85891ae2d97 | The name of the Power BI Embedded capacity resource. |
+
+
+### AllMetrics
+
+Checking the **AllMetrics** option logs the data of all the metrics that you can use with a Power BI Embedded resource.
 
 The following table lists the operations related to Power BI Embedded that may be created in the Activity log.
 
-<!-- Fill in the table with the operations that can be created in the Activity log for the service. -->
-| Operation | Description |
-|:---|:---|
-| | |
-| | |
-
-<!-- NOTE: This information may be hard to find or not listed anywhere.  Please ask your PM for at least an incomplete list of what type of messages could be written here. If you can't locate this, contact azmondocs@microsoft.com for help -->
-
 ## Schemas
-<!-- REQUIRED. Please keep heading in this order -->
 
-The following schemas are in use by Power BI Embedded
-
-<!-- List the schema and their usage. This can be for resource logs, alerts, event hub formats, etc depending on what you think is important. -->
+Power BI Embedded uses the **Power BI Dedicated** schema.
 
 ## See Also
 
-<!-- replace below with the proper link to your main monitoring service article -->
-- See [Monitor Azure Power BI Embedded](monitor-service-name.md) for a description of monitoring Azure Power BI Embedded.
+- See [Monitor Azure Power BI Embedded](monitor-power-bi-embedded.md) for a description of monitoring Azure Power BI Embedded.
 - See [Monitoring Azure resources with Azure Monitor](/azure/azure-monitor/insights/monitor-azure-resources) for details on monitoring Azure resources.
 
 ## Next steps

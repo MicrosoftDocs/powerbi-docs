@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how to
-ms.date: 12/28/2020
+ms.date: 12/30/2020
 ---
 
 # Monitor Power BI Embedded
@@ -42,9 +42,9 @@ The following sections build on this article by describing the specific data gat
 
 ## Monitoring data
 
-Power BI Embedded collects the same kinds of monitoring data as other Azure resources that are described in [Monitoring data from Azure resources](/azure/azure-monitor/insights/monitor-azure-resource#monitoring-data-from-Azure-resources). 
+Power BI Embedded collects the same kinds of monitoring data as other Azure resources that are described in [Monitoring data from Azure resources](/azure/azure-monitor/insights/monitor-azure-resource#monitoring-data-from-Azure-resources).
 
-See [Monitoring *Power BI Embedded* data reference](monitor-service-reference.md) for detailed information on the metrics and logs metrics created by Power BI Embedded.
+See [Monitoring *Power BI Embedded* data reference](monitor-power-bi-embedded-reference.md) for detailed information on the metrics and logs metrics created by Power BI Embedded.
 
 ## Collection and routing
 
@@ -52,7 +52,7 @@ Platform metrics and the Activity log are collected and stored automatically, bu
 
 Resource Logs are not collected and stored until you create a diagnostic setting and route them to one or more locations.
 
-See [Create diagnostic setting to collect platform logs and metrics in Azure](/azure/azure-monitor/platform/diagnostic-settings) for the detailed process for creating a diagnostic setting using the Azure portal, CLI, or PowerShell. When you create a diagnostic setting, you specify which categories of logs to collect. The categories for *Power BI Embedded* are listed in [Power BI Embedded monitoring data reference](monitor-service-reference.md#resource-logs).
+See [Create diagnostic setting to collect platform logs and metrics in Azure](/azure/azure-monitor/platform/diagnostic-settings) for the detailed process for creating a diagnostic setting using the Azure portal, CLI, or PowerShell. When you create a diagnostic setting, you specify which categories of logs to collect. The categories for *Power BI Embedded* are listed in [Power BI Embedded monitoring data reference](monitor-power-bi-embedded-reference.md#resource-logs).
 
 ### Using PowerShell to enable diagnostics
 
@@ -96,59 +96,51 @@ The metrics and logs you can collect are discussed in the following sections.
 
 You can analyze metrics for *Power BI Embedded* with metrics from other Azure services using metrics explorer by opening **Metrics** from the **Azure Monitor** menu. See [Getting started with Azure Metrics Explorer](/azure/azure-monitor/platform/metrics-getting-started) for details on using this tool.
 
-<!-- Point to the list of metrics available in your monitor-service-reference article. -->
-For a list of the platform metrics collected for Power BI Embedded, see [Monitoring *[service-name]* data reference metrics](monitor-service-reference#metrics)  
+For a list of the platform metrics collected for Power BI Embedded, see [Monitoring *Power BI Embedded* data reference metrics](monitor-power-bi-embedded-reference.md#metrics)  
 
 For reference, you can see a list of [all resource metrics supported in Azure Monitor](/azure/azure-monitor/platform/metrics-supported).
 
-<!--  Optional: Call out additional information to help your customers. For example, you can include additional information here about how to use metrics explorer specifically for your service. Remember that the UI is subject to change quite often so you will need to maintain these screenshots yourself if you add them in. -->
-
 ## Analyzing logs
-
-<!-- REQUIRED. Please keep headings in this order
-If you don't support resource logs, say so. Some services may be only onboarded to metrics and the activity log. -->
 
 Data in Azure Monitor Logs is stored in tables where each table has its own set of unique properties.  
 
-All resource logs in Azure Monitor have the same fields followed by service-specific fields. The common schema is outlined in [Azure Monitor resource log schema](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-logs-schema#top-level-resource-logs-schema) The schema for Power BI Embedded resource logs is found in the [Power BI Embedded Data Reference](monitor-service-reference#schemas)
+All resource logs in Azure Monitor have the same fields followed by service-specific fields. The common schema is outlined in [Azure Monitor resource log schema](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-logs-schema#top-level-resource-logs-schema) The schema for Power BI Embedded resource logs is found in the [Power BI Embedded Data Reference](monitor-power-bi-embedded-reference.md#schemas).
 
 The [Activity log](/azure/azure-monitor/platform/activity-log) is a platform login Azure that provides insight into subscription-level events. You can view it independently or route it to Azure Monitor Logs, where you can do much more complex queries using Log Analytics.  
 
-For a list of the types of resource logs collected for Power BI Embedded, see [Monitoring Power BI Embedded data reference](monitor-service-reference#logs)  
+For a list of the types of resource logs collected for Power BI Embedded, see [Monitoring Power BI Embedded data reference](monitor-power-bi-embedded-reference.md#logs)  
 
-For a list of the tables used by Azure Monitor Logs and queryable by Log Analytics, see [Monitoring Power BI Embedded data reference](monitor-service-reference#azuremonitorlogstables)  
-
-<!--  Optional: Call out additional information to help your customers. For example, you can include additional information here about log usage or what logs are most important. Remember that the UI is subject to change quite often so you will need to maintain these screenshots yourself if you add them in. -->
+For a list of the tables used by Azure Monitor Logs and queryable by Log Analytics, see [Monitoring Power BI Embedded data reference](monitor-power-bi-embedded-reference.md#azuremonitorlogstables)  
 
 ### Sample Kusto queries
 
-<!-- REQUIRED if you support logs. Please keep headings in this order -->
-<!-- Add sample Log Analytics Kusto queries for your service. -->
-
 > [!IMPORTANT]
-> When you select **Logs** from the [service-name] menu, Log Analytics is opened with the query scope set to the current [Service resource]. This means that log queries will only include data from that resource. If you want to run a query that includes data from other [resource] or data from other Azure services, select **Logs** from the **Azure Monitor** menu. See [Log query scope and time range in Azure Monitor Log Analytics](/azure/azure-monitor/log-query/scope/) for details.
-
-<!-- REQUIRED: Include queries that are helpful for figuring out the health and state of your service. Ideally, use some of these queries in the alerts section. It's possible that some of your queries may be in the Log Analytics UI (sample or example queries). Check if so.  -->
+> When you select **Logs** from the Power BI Embedded menu, Log Analytics is opened with the query scope set to the current Power BI Embedded resource. This means that log queries will only include data from that resource. If you want to run a query that includes data from other Power BI Embedded resource or data from other Azure services, select **Logs** from the **Azure Monitor** menu. See [Log query scope and time range in Azure Monitor Log Analytics](/azure/azure-monitor/log-query/scope/) for details.
 
 Following are queries that you can use to help you monitor your [Service] resource. 
 
-<!-- Put in a code section here. -->  
-```Kusto
-   
-```
+* Query return that took less than five minutes (300,000 milliseconds) to complete.
+
+    ```Kusto
+        search *
+        | where Type == "AzureDiagnostics"
+        | where ( OperationName == "QueryEnd" )
+        | where toint(Duration_s) < 300000   
+    ```
+* Identify capacity names.
+
+    ```Kusto
+        search *
+        | where Type == "AzureDiagnostics"
+        | where ( OperationName == "QueryEnd" )
+        | where toint(Duration_s) < 300000   
+    ```
 
 ## Alerts
 
-<!-- SUGGESTED: Include useful alerts on metrics, logs, log conditions or activity log. Ask your PMs if you don't know. 
-This information is the BIGGEST request we get in Azure Monitor so do not avoid it long term. People don't know what to monitor for best results. Be prescriptive  
--->
-
 Azure Monitor alerts proactively notify you when important conditions are found in your monitoring data. They allow you to identify and address issues in your system before your customers notice them. You can set alerts on [metrics](/azure/azure-monitor/platform/alerts-metric-overview), [logs](/azure/azure-monitor/platform/alerts-unified-log), and the [activity log](/azure/azure-monitor/platform/activity-log-alerts). Different types of alerts have benefits and drawbacks
 
-<!-- only include next line if applications run on your service and work with App Insights. --> If you are creating or running an application which run on <*service*> [Azure Monitor Application Insights](/azure/azure-monitor/overview#application-insights) may offer additional types of alerts.
-<!-- end -->
-
-The following table lists common and recommended alert rules for [service-name].
+The following table lists common and recommended alert rules for Power BI Embedded.
 
 <!-- Fill in the table with metric and log alerts that would be valuable for your service. Change the format as necessary to make it more readable -->
 | Alert type | Condition | Description  |
@@ -158,10 +150,7 @@ The following table lists common and recommended alert rules for [service-name].
 
 ## Next steps
 
-<!-- Add additional links. You can change the wording of these and add more if useful.   -->
-
-- See [Monitoring [service-name] data reference](monitor-service-reference.md) for a reference of the metrics, logs, and other important values created by [service name].
-*>.
+- See [Monitoring Power BI Embedded data reference](monitor-power-bi-embedded-reference.md) for a reference of the metrics, logs, and other important values created by [service name].
 - See [Monitoring Azure resources with Azure Monitor](/azure/azure-monitor/insights/monitor-azure-resource) for details on monitoring Azure resources.
 
 ## Next steps
