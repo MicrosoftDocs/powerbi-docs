@@ -250,9 +250,13 @@ Follow these steps to create a Rect component class.
 
 ## Configure capabilities
 
-You can configure the capabilities of the visual.
+Configure the capabilities of the visual.
 
-1. Open `capabilities.json`. Remove the `Category Data` object from `dataRoles`. The `ReactCircleCard` displays a single value, so we need only `Measure Data`. The `dataRoles` key now looks like this:
+1. In VS Code, from the *CircleCardFolder*, open `capabilities.json`.
+
+2. The `ReactCircleCard` displays a single value, `Measure Data`. Remove the `Category Data` object from `dataRoles`.
+
+    After removing the `Category Data` object, the `dataRoles` key looks like this:
 
     ```json
     "dataRoles": [
@@ -264,13 +268,15 @@ You can configure the capabilities of the visual.
     ],
     ```
 
-1. Remove all the content of `objects` key. You'll fill it in later.
+3. Remove all the content of the `objects` key (you'll fill it in later).
+
+    After removing its content, the `objects` key looks like this: 
 
     ```json
         "objects": {},
     ```
 
-1. Copy the following code of `dataViewMappings` property. The value of `max: 1` means that the only one measure column can be submitted.
+4. Copy the following code of `dataViewMappings` property. The value of `max: 1` means that the only one measure column can be submitted.
 
     ```json
         "dataViewMappings": [
