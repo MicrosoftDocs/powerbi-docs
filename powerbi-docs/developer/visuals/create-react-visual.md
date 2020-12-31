@@ -75,7 +75,7 @@ npm i react react-dom
 
 ### Install React
 
-To install React 16 and the corresponding versions of `react-dom`, open PowerShell in your *ReactCircleCard* folder and run the following command:
+To install React 16 and the corresponding versions of `react-dom`, open PowerShell in your *reactCircleCard* folder and run the following command:
 
 ```powershell
 npm i @types/react @types/react-dom
@@ -85,7 +85,7 @@ npm i @types/react @types/react-dom
 
 Follow these steps to create a Rect component class.
 
-1. Open **VS Code** and navigate to the **ReactCircleCard** folder.
+1. Open **VS Code** and navigate to the **reactCircleCard** folder.
 
 2. Create a new file by selecting **File** > **New File**.
 
@@ -143,15 +143,17 @@ Follow these steps to create a Rect component class.
         }
     }
     ```
+
     >[!NOTE]
     >As default Power BI TypeScript settings don't recognize React *tsx* files, VS Code highlights `component` as an error.
 
-7. In the **ReactCircleCard** folder, open **tsconfig.json** and add two lines to the beginning of the `compilerOptions` item.
+7. In the **reactCircleCard** folder, open **tsconfig.json** and add two lines to the beginning of the `compilerOptions` item.
 
     ```json
     "jsx": "react",
     "types": ["react", "react-dom"],
     ```
+
     Your **tsconfig.json** file should now look like this, and the `component` error in **visual.ts** should be gone.
 
     ```json
@@ -181,14 +183,14 @@ Follow these steps to create a Rect component class.
 8.  To render the component, add the target HTML element to **visual.ts**. This element is `HTMLElement` in `VisualConstructorOptions`, which is passed into the constructor.
 
     1. In the **src** folder, open **visual.ts**.
-    
+
     2. Add the following code to the `Visual` class:
 
     ```typescript
     private target: HTMLElement;
     private reactRoot: React.ComponentElement<any, any>;
     ```
-    
+
     3. Add the following lines to the `VisualConstructorOptions` constructor:
 
     ```Typescript
@@ -246,13 +248,13 @@ Follow these steps to create a Rect component class.
     When you add a new **Developer Visual** to your report in Power BI service, it will look like this:
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot showing the hello React message in the newly created developer visual in Power B I service.](./media/create-react-visual/hello-react-message-visual.png)
+    >![Screenshot showing the hello React message in the newly created developer visual in Power B I service.](media/create-react-visual/hello-react-message-visual.png)
 
-## Configure capabilities
+## Configure your visual's capabilities
 
-Configure the capabilities of the visual.
+Configure your visual's capabilities file so that only one data field can be submitted to the visual's *Measure data* field.
 
-1. In VS Code, from the *CircleCardFolder*, open `capabilities.json`.
+1. In VS Code, from the **reactCircleCard** folder, open **capabilities.json**.
 
 2. The `ReactCircleCard` displays a single value, `Measure Data`. Remove the `Category Data` object from `dataRoles`.
 
@@ -273,39 +275,84 @@ Configure the capabilities of the visual.
     After removing its content, the `objects` key looks like this: 
 
     ```json
-        "objects": {},
+    "objects": {},
     ```
 
-4. Copy the following code of `dataViewMappings` property. The value of `max: 1` means that the only one measure column can be submitted.
+4. Replace the `dataViewMappings` property with the code below. `max: 1` in `measure` specifies that only one data field can be submitted to the visual's *Measure data* field.
 
     ```json
-        "dataViewMappings": [
-            {
-                "conditions": [
-                    {
-                        "measure": {
-                            "max": 1
-                        }
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "measure": {
+                        "max": 1
                     }
-                ],
-                "single": {
-                    "role": "measure"
                 }
+            ],
+            "single": {
+                "role": "measure"
             }
-        ]
+        }
+    ]
     ```
 
-Now you can bring data from the `Fields` pane into the visual settings.
+5. Save the changes you made to **capabilities.json**.
 
-![Measure Data in Power BI](./media/create-react-visual/measure-data-powerbi-react-visual.png)
+6. Verify that `pbiviz start` is running and in Power BI service, refresh your *React Circle Card* visual. The **Measure data** field can except only one data field, as specified by `max: 1`.  
 
-## Receive properties from Power BI
+    >[!div class="mx-imgBorder"]
+    >![Screenshot showing the measure Data field in the react circle card in Power B I service.](media/create-react-visual/measure-data.png)
+
+## Update the visual's style
+
+In this section you'll turn your visual's shape into a circle.
+
+Use the **visual.less** file to control the style of your visual.
+
+1. From the **style** folder, open **visual.less**.
+
+2. Replace the content of **visual.less** with the code below.
+
+    ```css
+    .circleCard {
+        position: relative;
+        box-sizing: border-box;
+        border: 1px solid #000;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+    }
+
+    p {
+        text-align: center;
+        line-height: 30px;
+        font-size: 20px;
+        font-weight: bold;
+
+        position: relative;
+        top: -30px;
+        margin: 50% 0 0 0;
+    }
+    ```
+
+3. Save **visual.less**.
+
+## Set your visual to receive properties from Power BI
+
+In this section you'll configure your visual to receive data from Power BI, and send updates to the instances in the *component* file.
+
+### Render data using React
 
 You can render data using React. The component can display data from its own state.
 
-1. Modify *src/component.tsx*.
+1. In VS Code, from the **reactCircleCard** folder, open **component.tsx**.
+
+2. Replace the content of **component.tsx** with the code below.
 
     ```javascript
+    import * as React from "react";
+
     export interface State {
         textLabel: string,
         textValue: string
@@ -338,161 +385,169 @@ You can render data using React. The component can display data from its own sta
     }
     ```
 
-1. Add styles for new markup by editing *styles/visual.less*.
+3. Save **component.tsx**.
 
-    ```css
-    .circleCard {
-        position: relative;
-        box-sizing: border-box;
-        border: 1px solid #000;
-        border-radius: 50%;
-        width: 200px;
-        height: 200px;
-    }
+### Set your visual to receive data
 
-    p {
-        text-align: center;
-        line-height: 30px;
-        font-size: 20px;
-        font-weight: bold;
+Visuals receive data as an argument of the `update` method. In this section you'll update this method to receive data.
 
-        position: relative;
-        top: -30px;
-        margin: 50% 0 0 0;
-    }
-    ```
+The code below selects `textLabel` and `textValue` from `DataView`, and if the data exists, updates the component state.
 
-1. Visuals receive current data as an argument of the `update` method. Open *src/visual.ts* and add code to `ReactCircleCard.update`.
+1. In VS Code, from the **src** folder, open **visual.ts**.
+
+2. Replace the *ReactCircleCard* import, with the following line:
 
     ```typescript
-    //...
     import { ReactCircleCard, initialState } from "./component";
-    //...
+    ```
 
-    export class Visual implements IVisual {
-        //...
-        public update(options: VisualUpdateOptions) {
+3. Add the following code to the `update` method.
 
-            if(options.dataViews && options.dataViews[0]){
-                const dataView: DataView = options.dataViews[0];
+    ```typescript
+    if(options.dataViews && options.dataViews[0]){
+        const dataView: DataView = options.dataViews[0];
 
-                ReactCircleCard.update({
-                    textLabel: dataView.metadata.columns[0].displayName,
-                    textValue: dataView.single.value.toString()
-                });
-            } else {
-                this.clear();
-            }
-        }
-
-        private clear() {
-            ReactCircleCard.update(initialState);
-        }
+        ReactCircleCard.update({
+            textLabel: dataView.metadata.columns[0].displayName,
+                textValue: dataView.single.value.toString()
+        });
+    } else {
+        this.clear();
     }
     ```
 
-    The code selects `textLabel` and `textValue` from `DataView` and, if the data exists, updates the component state.
-
-1. To send updates to component instance, insert the following code in the `ReactCircleCard` class:
+4. Create a `clear` method by adding the following code below the `update` method.
 
     ```typescript
-        private static updateCallback: (data: object) => void = null;
-
-        public static update(newState: State) {
-            if(typeof ReactCircleCard.updateCallback === 'function'){
-                ReactCircleCard.updateCallback(newState);
-            }
-        }
-
-        public state: State = initialState;
-
-        public componentWillMount() {
-            ReactCircleCard.updateCallback = (newState: State): void => { this.setState(newState); };
-        }
-
-        public componentWillUnmount() {
-            ReactCircleCard.updateCallback = null;
-        }
+    private clear() {
+        ReactCircleCard.update(initialState);
+    }
     ```
 
-1. Test the visual. Make sure that `pbiviz start` has been run, and save all files. Refresh the visual.
+5. Save **visual.ts**
 
-   ![Value displayed in circle in React visual](./media/create-react-visual/value-display-circle-powerbi-react.png)
+### Set your visual to send data
+
+In this section you'll update your visual to send updates to instances in the *component* file.
+
+1. In VS Code, from the **src** folder, open **component.tsx**.
+
+2. Replace the content of the `ReactCircleCard` class, with the following code.
+
+    ```typescript
+    private static updateCallback: (data: object) => void = null;
+
+    public static update(newState: State) {
+        if(typeof ReactCircleCard.updateCallback === 'function'){
+            ReactCircleCard.updateCallback(newState);
+        }
+    }
+
+    public state: State = initialState;
+
+    public componentWillMount() {
+            ReactCircleCard.updateCallback = (newState: State): void => { this.setState(newState); };
+    }
+
+    public componentWillUnmount() {
+        ReactCircleCard.updateCallback = null;
+    }
+    ```
+
+3. Save **component.tsx**.
+
+### Test your visual
+
+Test your *React Circle Card* visual to view the changes you made.
+
+1. Verify that `pbiviz start` is running, and in Power BI service, refresh your *React Circle Card* visual.
+
+2. Add **Sales** to the visual's *Measure data* field.
+
+>[!div class="mx-imgBorder"]
+>![Screenshot of the sales value displayed in the react circle card visual in Power B I service.](./media/create-react-visual/value-display-circle-powerbi-react.png)
 
 ## Make component resizable
 
-In this section, you make the component resizable. Currently, the component has fixed width and height.
+Currently, your visual has fixed width and height. In this section, you'll make the visual resizable.
+
+After completing the steps outlined in this section, the circle diameter in your visual will correspond to the minimal width or height size, and you'll be able to resize it in Power BI service.
+
+### Configure the visual.ts file
 
 Get the current size of the visual viewport from the `options` object.
 
-1. Open *src/visual.ts*. Import the `IViewport` interface and add the `viewport` property to the `visual` class.
+1. In VS Code, from the **src** folder, open **visual.ts**.
+
+2. Insert this code to import the `IViewport` interface.
 
     ```typescript
     import IViewport = powerbi.IViewport;
-
-    //...
-
-    export class Visual implements IVisual {
-        private viewport: IViewport;
-        //...
-    }
     ```
 
-1. Add the following code to the `update` method of `visual`.
+3. Add the `viewport` property to the `visual` class.
 
     ```typescript
-      if (options.dataViews && options.dataViews[0]) {
-          const dataView: DataView = options.dataViews[0];
-
-          this.viewport = options.viewport;
-          const { width, height } = this.viewport;
-          const size = Math.min(width, height);
-
-          ReactCircleCard.update({
-              size,
-              //...
-          });
-      }
+    private viewport: IViewport;
     ```
 
-1. Add properties to the `State` interface in *src/component.tsx*.
+4. In the `update` method, before `ReactCircleCard.update`, add the following code.
 
     ```typescript
-    export interface State {
-        //...
-        size: number
-    }
-
-    const initialState: State = {
-        //...
-        size: 200
-    }
+    this.viewport = options.viewport;
+    const { width, height } = this.viewport;
+    const size = Math.min(width, height);
     ```
 
-1. Make the following changes in the `render` method in *src/component.tsx*:
+5. In the `update` method, in `ReactCircleCard.update`, add `size`.
 
     ```typescript
-        render() {
-            const { textLabel, textValue, size } = this.state;
-
-            const style: React.CSSProperties = { width: size, height: size };
-
-            return (
-                <div className="circleCard" style={style}>
-                    {/* ... */}
-                </div>
-            )
-        }
+    size,
     ```
 
-1. Replace `width` and `height` rules in *style/visual.less* with `min-width` and `min-height`.
+6. Save **visual.ts**.
+
+### Configure the component.tsx file
+
+1. In VS Code, from the **src** folder, open **component.tsx**.
+
+2. Add the following code to `export interface State`.
+
+    ```typescript
+    size: number
+    ```
+
+3. Add the following code to `export const initialState: State`.
+
+    ```typescript
+    size: 200
+    ```
+
+4. In the `render` method, add `size` to `const { textLabel, textValue, size } = this.state;`. This declaration should now look like this:
+
+    ```typescript
+    const { textLabel, textValue, size } = this.state;
+    ```
+
+4. In the `render` method, add the following code above `return`.
+
+    ```typescript
+    const style: React.CSSProperties = { width: size, height: size };
+    ```
+
+6. Save **component.tsx**.
+
+### Configure the visual.less file
+
+1. In VS Code, from the **style** folder, open **visual.less**.
+
+2. In `.circleCard`, replace `width` and `height` with `min-width` and `min-height`.
 
     ```css
-        min-width: 200px;
-        min-height: 200px;
+    min-width: 200px;
+    min-height: 200px;
     ```
-
-Now you can resize the viewport. The circle diameter corresponds to minimal size as width or height.
+3. Save **visual.less**.
 
 ## Make your Power BI visual customizable
 
