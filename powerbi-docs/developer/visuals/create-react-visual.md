@@ -7,81 +7,89 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 03/30/2020
+ms.date: 12/30/2020
 ---
 
-# Tutorial: Create a React-based visual
+# Tutorial: Create a Power BI visual based on React
 
-This tutorial explains how to create a Power BI visual using [React](https://reactjs.org/). The visual displays a value in a circle. The visual has adaptive size and settings to customize it. With the information in this article, you can create your own Power BI visuals with React.
+[!INCLUDE[Power B I visuals tutorials overview](../../includes/visual-tutorial-overview.md)]
 
-![The ColoredCircleCard Power BI visual](./media/create-react-visual/powerbi-visuals-colored-circle-card.png)
+In this tutorial, you'll develop a Power BI visual using [React](https://reactjs.org/). The visual displays a formatted measure value inside a circle. The visual has adaptive size and allows you to customize its settings.
 
 In this tutorial, you learn how to:
-
 > [!div class="checklist"]
->
-> * Set up your development environment
-> * Create a React visual
-> * Configure capabilities for the visual
-> * Render data from Power BI
-> * Resize the visual
-> * Make the visual customizable
+> * Create a development project for your visual.
+> * Develop your visual React.
+> * Configure capabilities for the visual.
+> * Render data from Power BI.
+> * Resize the visual.
+> * Make the visual customizable.
 
 ## Prerequisites
 
-* A **Power BI Pro** account. [Sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
-* [Visual Studio Code](https://www.visualstudio.com/).
-* [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell) version 4 or later for windows users OR the [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) for OSX users.
-* An environment as described in [Set up your environment for developing a Power BI visual](environment-setup.md).
+[!INCLUDE[Power B I tutorials prerequisites](../../includes/visual-tutorial-prerequisites.md)]
 
-## Getting started
+## Create a development project
 
-To begin, create a minimal Power BI visual by using `pbiviz`. For more information about projects and project structure, see [Power BI visual project structure](visual-project-structure.md). For the full source code of this visual, see [Circle Card React Visual](https://github.com/Microsoft/powerbi-visuals-circlecard-react).
+In this section you'll create a project for the React circle card visual.
 
-You can clone or download the full source code of the visual from [GitHub](https://github.com/Microsoft/powerbi-visuals-circlecard-react).
+1. Open PowerShell and navigate to the folder you want to create your project in.
 
-1. Open PowerShell and run the following command:
+2. Enter the following command:
 
-   ```powershell
-   pbiviz new ReactCircleCard
-   ```
+    ```PowerShell
+    pbiviz new ReactCircleCard
+    ```
 
-   The command creates a folder called *ReactCircleCard*.
+3. Navigate to the project's folder.
 
-1. Change directories to that folder and open Visual Studio Code.
+    ```powershell
+    cd ReactCircleCard
+    ```
 
-   ```powershell
-   cd ./ReactCircleCard
-   code .
-   ```
+4. Start the React circle card visual. Your visual is now running while being hosted on your computer.
 
-1. Start the developer server for your visual.
+    ```powershell
+    pbiviz start
+    ```
+    >[!IMPORTANT]
+    >To stop the visual from running, in PowerShell enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
 
-   ```powershell
-   pbiviz start
-   ```
+## View the React circle card in Power BI service
 
-   ![Update the React visual](./media/create-react-visual/update-react-visual.png)
+[!INCLUDE[View the Power B I visual in Power B I service](../../includes/visual-tutorial-view.md)]
 
-This basic visual represents updates count. Let's transform it to a circle card at the next step.
+## Set up React in your project
 
-## Change the visual to a circle card
+In this section you'll learn how to set up React for your Power BI visual project.
 
-This basic visual represents an updates count. Next, transform it to a circle card, which represents a measure and its title.
+Open PowerShell and stop the visual from running by entering Ctrl+C. If prompted to terminate the batch job, enter Y, and press *Enter*.
 
-1. Run the following command to install required dependencies:
+### Install dependencies
 
-   ```powershell
-   npm i react react-dom
-   ```
+To install the required React dependencies, open PowerShell in your *ReactCircleCard* folder, and run the following command:
 
-1. Run the following command to install React 16 and corresponding versions of `react-dom` and typings:
+```powershell
+npm i react react-dom
+```
 
-   ```powershell
-   npm i @types/react @types/react-dom
-   ```
+### Install React
 
-1. Create a React component class. In Visual Studio Code, select **File** > **New File**. Copy the following code into the file.
+To install React 16 and the corresponding versions of `react-dom`, open PowerShell in your *ReactCircleCard* folder and run the following command:
+
+```powershell
+npm i @types/react @types/react-dom
+```
+
+### Create a React component class
+
+Follow these steps to create a Rect component class.
+
+1. Open **VS Code** and navigate to the **ReactCircleCard** folder.
+
+2. Create a new file by selecting **File** > **New File**.
+
+3. Copy the following code into the new file.
 
     ```typescript
     import * as React from "react";
@@ -99,9 +107,14 @@ This basic visual represents an updates count. Next, transform it to a circle ca
     export default ReactCircleCard;
     ```
 
-1. Select **Save As**. Go to the *src* directory. Enter the name *component*. For **Save as type**, select **TypeScript React**.
+4. Select **Save As** and navigate to the **src** folder.
 
-1. Open *src/visual.ts*. Replace the current code with the following code:
+5. Save the file as follows:
+
+    * In the *File name* field, enter **component**.
+    * From the *Save as type* drop-down menu, select **TypeScript React**.
+
+6. In the **src** folder, open **visual.ts** and replace the code in the file with the following code:
 
     ```typescript
     "use strict";
@@ -111,6 +124,11 @@ This basic visual represents an updates count. Next, transform it to a circle ca
     import VisualConstructorOptions = powerbi.extensibility.visual.VisualConstructorOptions;
     import VisualUpdateOptions = powerbi.extensibility.visual.VisualUpdateOptions;
     import IVisual = powerbi.extensibility.visual.IVisual;
+
+    // Import React dependencies and the added component
+    import * as React from "react";
+    import * as ReactDOM from "react-dom";
+    import ReactCircleCard from "./component";
 
     import "./../style/visual.less";
 
@@ -125,58 +143,110 @@ This basic visual represents an updates count. Next, transform it to a circle ca
         }
     }
     ```
+    >[!NOTE]
+    >As default Power BI TypeScript settings don't recognize React *tsx* files, VS Code highlights `component` as an error.
 
-1. Import React dependencies and the component you just added.
+7. In the **ReactCircleCard** folder, open **tsconfig.json** and add two lines to the beginning of the `compilerOptions` item.
 
-    ```typescript
-    import * as React from "react";
-    import * as ReactDOM from "react-dom";
-    ...
-    import ReactCircleCard from "./component";
+    ```json
+    "jsx": "react",
+    "types": ["react", "react-dom"],
     ```
-
-   Default Power BI TypeScript settings don't take React *tsx* files. Visual Studio Code highlights `component` as an error.
-
-1. Open the file *tsconfig.json* and add two lines to the beginning of the `compilerOptions` item.
+    Your **tsconfig.json** file should now look like this, and the `component` error in **visual.ts** should be gone.
 
     ```json
     {
-      "compilerOptions": {
-        "jsx": "react",
-        "types": ["react", "react-dom"],
-        //...
-      }
+        "compilerOptions": {
+            "jsx": "react",
+            "types": ["react", "react-dom"],
+            "allowJs": false,
+            "emitDecoratorMetadata": true,
+            "experimentalDecorators": true,
+            "target": "es6",
+            "sourceMap": true,
+            "outDir": "./.tmp/build/",
+            "moduleResolution": "node",
+            "declaration": true,
+            "lib": [
+                "es2015",
+                "dom"
+            ]
+        },
+        "files": [
+            "./src/visual.ts"
+        ]
     }
     ```
 
-   The error on `component` should be gone.
+8.  To render the component, add the target HTML element to **visual.ts**. This element is `HTMLElement` in `VisualConstructorOptions`, which is passed into the constructor.
 
-   To render the component, add the target HTML element. This element is `HTMLElement` in `VisualConstructorOptions`, which is passed into constructor.
-
-1. Modify the `Visual` class, as in the following code:
+    1. In the **src** folder, open **visual.ts**.
+    
+    2. Add the following code to the `Visual` class:
 
     ```typescript
-      private target: HTMLElement;
-      private reactRoot: React.ComponentElement<any, any>;
+    private target: HTMLElement;
+    private reactRoot: React.ComponentElement<any, any>;
+    ```
+    
+    3. Add the following lines to the `VisualConstructorOptions` constructor:
 
-      constructor(options: VisualConstructorOptions) {
-          this.reactRoot = React.createElement(ReactCircleCard, {});
-          this.target = options.element;
+    ```Typescript
+    this.reactRoot = React.createElement(ReactCircleCard, {});
+    this.target = options.element;
 
-          ReactDOM.render(this.reactRoot, this.target);
-      }
+    ReactDOM.render(this.reactRoot, this.target);
     ```
 
-1. Save the changes and run the existing code by using this command:
+    Your **visual.ts** file should now look like this:
+
+    ```Typescript
+    "use strict";
+    import powerbi from "powerbi-visuals-api";
+
+    import DataView = powerbi.DataView;
+    import VisualConstructorOptions = powerbi.extensibility.visual.VisualConstructorOptions;
+    import VisualUpdateOptions = powerbi.extensibility.visual.VisualUpdateOptions;
+    import IVisual = powerbi.extensibility.visual.IVisual;
+    import * as React from "react";
+    import * as ReactDOM from "react-dom";
+    import ReactCircleCard from "./component";    
+    
+    import "./../style/visual.less";
+
+    export class Visual implements IVisual {
+        private target: HTMLElement;
+        private reactRoot: React.ComponentElement<any, any>;
+    
+        constructor(options: VisualConstructorOptions) {
+            this.reactRoot = React.createElement(ReactCircleCard, {});
+            this.target = options.element;
+        
+            ReactDOM.render(this.reactRoot, this.target);
+        }
+    
+        public update(options: VisualUpdateOptions) {
+    
+        }
+    }
+    ```
+
+9. In VS Code, save the changes you made to the following files:
+
+* **visual.ts**
+* **tsconfig.json**
+* **visual.ts**
+
+10. Open PowerShell in the *CircleCardVisual* folder, and run your project:
 
     ```bash
     pbiviz start
     ```
 
-   > [!NOTE]
-   > If you previously ran `pbiviz`, you must restart it to apply changes in *tsconfig.json*.
+    When you add a new **Developer Visual** to your report in Power BI service, it will look like this:
 
-  ![hello React message in visual](./media/create-react-visual/hello-react-message-visual.png)
+    >[!div class="mx-imgBorder"]
+    >![Screenshot showing the hello React message in the newly created developer visual in Power B I service.](./media/create-react-visual/hello-react-message-visual.png)
 
 ## Configure capabilities
 
