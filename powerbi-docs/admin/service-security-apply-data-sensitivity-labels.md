@@ -59,9 +59,6 @@ On the settings datasets tab, open the sensitivity label section, choose the des
 
 ## Apply sensitivity labels in Power BI Desktop (preview)
 
->[!NOTE]
->During the first 48 hours after you opt in to the Power BI Desktop Information Protection preview feature, **you may experience issues with .pbix files that have sensitivity labels applied (e.g. publishing the .pbix to the service, downloading the .pbix from the service)**. Such issues are expected and will resolve automatically within 48 hours.
-
 To use sensitivity labels in Power BI Desktop:
 * You must have a [Power BI Pro license](./service-admin-purchasing-power-bi-pro.md).
 * Sensitivity labels must be enabled for your organization. Contact your Power BI admin if you aren't sure about this.
@@ -71,10 +68,13 @@ To use sensitivity labels in Power BI Desktop:
 
     ![Screenshot of Desktop preview features page.](media/service-security-apply-data-sensitivity-labels/desktop-preview-features-page.png)
 
+    >[!Important]
+    >After turning on the information protection preview feature, you must restart Desktop in order to start using sensitivity labels.
+    >
+    >If Desktop crashes when you restart it, it may be because your machine lacks the required Visual C++ redistributable runtime library version. If you experience such a crash, download and install the most recent version of the library from XXX, and then try launching Desktop again.
+
     If you don't see the Information protection preview option, the information protection preview feature may be blocked for your organization. In this case contact your Power BI administrator.
 
-    >[!NOTE]
-    >After turning on the information protection preview feature, you must restart Desktop in order to start using sensitivity labels.
 * You must be signed in.
 
 To apply a sensitivity label on the file you're working on, click the sensitivity button in the home tab and choose the desired label from the menu that appears.
