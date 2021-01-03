@@ -467,7 +467,7 @@ Test your *React Circle Card* visual to view the changes you made.
 >[!div class="mx-imgBorder"]
 >![Screenshot of the sales value displayed in the react circle card visual in Power B I service.](./media/create-react-visual/value-display-circle-powerbi-react.png)
 
-## Make component resizable
+## Make your visual resizable
 
 Currently, your visual has fixed width and height. In this section, you'll make the visual resizable.
 
@@ -529,13 +529,19 @@ Get the current size of the visual viewport from the `options` object.
     const { textLabel, textValue, size } = this.state;
     ```
 
-4. In the `render` method, add the following code above `return`.
+5. In the `render` method, add the following code above `return`.
 
     ```typescript
     const style: React.CSSProperties = { width: size, height: size };
     ```
 
-6. Save **component.tsx**.
+6. In the `render` method, replace the first *return* line `<div className="circleCard">` with:
+
+    ```typescript
+    <div className="circleCard" style={style}>
+    ```
+
+7. Save **component.tsx**.
 
 ### Configure the visual.less file
 
@@ -551,41 +557,51 @@ Get the current size of the visual viewport from the `options` object.
 
 ## Make your Power BI visual customizable
 
-In this section, you make the visual customizable.
+In this section, you'll add the ability to customize your visual, allowing users to make changes to its color and border thickness.
 
-1. Open *capabilities.json*. Add the following settings to the `objects` property.
+### Add color and thickness to the capabilities file
+
+Add the color and border thickness to the `object` property in *capabilities.json*. 
+
+1. In VS Code, from the **reactCircleCard** folder, open **capabilities.json**.
+
+2. Add the following settings to the `objects` property.
 
     ```json
-    //...
-        "objects": {
-            "circle": {
-                "displayName": "Circle",
-                "properties": {
-                    "circleColor": {
-                        "displayName": "Color",
-                        "description": "The fill color of the circle.",
-                        "type": {
-                            "fill": {
-                                "solid": {
-                                    "color": true
-                                }
-                            }
-                        }
-                    },
-                    "circleThickness": {
-                        "displayName": "Thickness",
-                        "description": "The circle thickness.",
-                        "type": {
-                            "numeric": true
+    "circle": {
+        "displayName": "Circle",
+        "properties": {
+           "circleColor": {
+                "displayName": "Color",
+                "description": "The fill color of the circle.",
+                "type": {
+                    "fill": {
+                        "solid": {
+                            "color": true
                         }
                     }
                 }
+            },
+            "circleThickness": {
+                "displayName": "Thickness",
+                "description": "The circle thickness.",
+                "type": {
+                    "numeric": true
+                }
             }
-        },
-    //...
+        }
+    }
     ```
 
-1. Replace existing code in *src/settings.ts* with this code:
+3. Save **capabilities.json**.
+
+### Add a circle settings class to the settings file
+
+Add the `CircleSettings` class to *settings.ts*.
+
+1. In VS Code, from the **src** folder, open **settings.ts**.
+
+2. Replace the code in **settings.ts** with the following code:
 
     ```typescript
     "use strict";
@@ -603,7 +619,15 @@ In this section, you make the visual customizable.
     }
     ```
 
-1. Add these `import` statements at the top of *src/visual.ts*:
+3. Save **settings.ts**.
+
+### Add a method to apply visual settings
+
+Add the `enumerateObjectInstances` method used to apply visual settings, and required imports to the *visuals.ts* file.
+
+1. In VS Code, from the **src** folder, open **visuals.ts**.
+
+2. Add these `import` statements at the top of **visual.ts**.
 
     ```typescript
     import VisualObjectInstance = powerbi.VisualObjectInstance;
@@ -611,10 +635,9 @@ In this section, you make the visual customizable.
     import VisualObjectInstanceEnumerationObject = powerbi.VisualObjectInstanceEnumerationObject;
 
     import { VisualSettings } from "./settings";
-
     ```
 
-1. Add the `enumerateObjectInstances` method to *src/visual.ts*. This method is used to apply visual settings.
+3. Add the `enumerateObjectInstances` method to **visual.ts**.
 
     ```typescript
     export class Visual implements IVisual {
@@ -631,43 +654,51 @@ In this section, you make the visual customizable.
     }
     ```
 
-1. Add code so that the `dataView` object can now receive settings.
+4. In the `Visual` class, add the following code to `update` so that the `dataView` object will be able to receive `settings`.
 
-    ```typescript
-        public update(options: VisualUpdateOptions) {
+    * Add this code to the *if* statement after `const size = Math.min(width, height);`.
 
-            if(options.dataViews && options.dataViews[0]){
-                //...
-                this.settings = VisualSettings.parse(dataView) as VisualSettings;
-                const object = this.settings.circle;
+        ```typescript
+        this.settings = VisualSettings.parse(dataView) as VisualSettings;
+        const object = this.settings.circle;
+        ```
 
-                ReactCircleCard.update({
-                    borderWidth: object && object.circleThickness ? object.circleThickness : undefined,
-                    background: object && object.circleColor ? object.circleColor : undefined,
-                    //...
-                });
-            }
+    * Add this code to `ReactCircleCard.update` after `size`.
+
+        ```typescript
+        borderWidth: object && object.circleThickness ? object.circleThickness : undefined,
+        background: object && object.circleColor ? object.circleColor : undefined,
         }
-    }
-    ```
+        ```
 
-1. Apply the corresponding changes to *src/component.tsx*, first by adding these values to `State`:
+5. Save **visual.ts**.
 
-    ```typescript
-    export interface State {
-        //...
-        background?: string,
-        borderWidth?: number
-    }
-    ```
+### 
 
-1. Then add the following code to the `render` method:
+1. In VS Code, from the **src** folder, open **component.tsx**.
+
+2. Add these values to `State`:
 
     ```typescript
-        const { /*...*/ background, borderWidth } = this.state;
-
-        const style: React.CSSProperties = { /*...*/ background, borderWidth };
+    background?: string,
+    borderWidth?: number
     ```
+
+3. In the `render` method, replace the following code lines:
+
+    * `const { textLabel, textValue, size } = this.state;` with:
+
+        ```typescript
+        const { textLabel, textValue, size, background, borderWidth } = this.state;
+        ```
+
+    * `const style: React.CSSProperties = { width: size, height: size };` with:
+
+        ```typescript
+        const style: React.CSSProperties = { width: size, height: size, background, borderWidth };
+        ```
+
+4. Save **component.tsx**.
 
     ![Final ColoredCircleCard Power BI visual](./media/create-react-visual/powerbi-visuals-colored-circle-card.png)
 
