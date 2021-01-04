@@ -174,7 +174,7 @@ Failed to save modifications to the server.
 Error returned: ‘Metadata change of current operation cannot be resolved, please check the command or try again later.’ 
 ```
 
-This is due to a known issue in the app services REST API. This will be resolved in an upcoming release. In the meantime, to get around this error, in **ROle Properties**, click **Script**, and then enter and execute the following TMSL command:
+This is due to a known issue in the app services REST API. This will be resolved in an upcoming release. In the meantime, to get around this error, in **Role Properties**, click **Script**, and then enter and execute the following TMSL command:
 
 ```json
 { 
@@ -205,9 +205,9 @@ This is due to a known issue in the app services REST API. This will be resolved
 
 When republishing a live connected dataset utilizing the Analysis Services connector, the following error may be shown:
 
-:::image type="content" source="media/troubleshoot-xmla-endpoint/couldnt-pulbish-to-powerbi.png" alt-text="Couldn't pulbish to Power BI error.":::
+:::image type="content" source="media/troubleshoot-xmla-endpoint/couldnt-publish-to-powerbi.png" alt-text="Couldn't publish to Power BI error.":::
 
-As stated in the error messasge, to resolve this issue, either delete or rename the existing dataset. Also be sure to republish any apps that are dependent on the report. If necessary, downstream users should also be informed to update any bookmarks with the new report address to ensure they access the latest report.  
+As stated in the error message, to resolve this issue, either delete or rename the existing dataset. Also be sure to republish any apps that are dependent on the report. If necessary, downstream users should also be informed to update any bookmarks with the new report address to ensure they access the latest report.  
 
 ## See also
 
