@@ -12,7 +12,7 @@ ms.date: 11/23/2020
 
 # Automated configuration of a template app installation
 
-Template apps are a great way for customers to start getting insights from their data. Template apps get them up and running quickly by connecting them to their data. The template apps provide them with prebuilt reports they can customize if they so desire.
+Template apps are a great way for customers to start getting insights from their data. Template apps get them up and running quickly by connecting them to their data. The template apps provide them with prebuilt reports that they can customize if they so desire.
 
 Customers aren't always familiar with the details of how to connect to their data. Having to provide these details when they install a template app can be a pain point for them.
 
