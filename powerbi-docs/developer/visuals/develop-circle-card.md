@@ -21,6 +21,11 @@ In this tutorial, you learn how to:
 > * Create a development project for your visual.
 > * Develop your visual with D3 visual elements.
 > * Configure your visual to process data.
+> * Configure your visual to adapt to size changes.
+> * Configure adaptive color and border settings for your visual.
+
+>[!NOTE]
+>For the full source code of this visual, see [circle card Power BI visual](https://github.com/microsoft/powerbi-visuals-circlecard).
 
 ## Prerequisites
 

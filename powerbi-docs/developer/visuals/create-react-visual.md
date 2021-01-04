@@ -20,10 +20,12 @@ In this tutorial, you learn how to:
 > [!div class="checklist"]
 > * Create a development project for your visual.
 > * Develop your visual React.
-> * Configure capabilities for the visual.
-> * Render data from Power BI.
-> * Resize the visual.
-> * Make the visual customizable.
+> * Configure your visual to process data.
+> * Configure your visual to adapt to size changes.
+> * Configure adaptive color and border settings for your visual.
+
+>[!NOTE]
+>For the full source code of this visual, see [React circle card Power BI visual](https://github.com/Microsoft/powerbi-visuals-circlecard-react).
 
 ## Prerequisites
 
@@ -314,9 +316,7 @@ Configure your visual's capabilities file so that only one data field can be sub
 
 ## Update the visual's style
 
-In this section, you'll turn your visual's shape into a circle.
-
-Use the **visual.less** file to control the style of your visual.
+In this section, you'll turn your visual's shape into a circle. Use the **visual.less** file to control the style of your visual.
 
 1. From the **style** folder, open **visual.less**.
 
@@ -348,7 +348,7 @@ Use the **visual.less** file to control the style of your visual.
 
 ## Set your visual to receive properties from Power BI
 
-In this section you'll configure your visual to receive data from Power BI, and send updates to the instances in the *component* file.
+In this section you'll configure your visual to receive data from Power BI, and send updates to the instances in the **component.tsx** file.
 
 ### Render data using React
 
@@ -531,25 +531,27 @@ Get the current size of the visual viewport from the `options` object.
     size: 200
     ```
 
-4. In the `render` method, add `size` to `const { textLabel, textValue, size } = this.state;`. This declaration should now look like this:
+4. In the `render` method, do the following:
 
-    ```typescript
-    const { textLabel, textValue, size } = this.state;
-    ```
+    1. Add `size` to `const { textLabel, textValue, size } = this.state;`. This declaration should now look like this:
 
-5. In the `render` method, add the following code above `return`.
+        ```typescript
+        const { textLabel, textValue, size } = this.state;
+        ```
 
-    ```typescript
-    const style: React.CSSProperties = { width: size, height: size };
-    ```
+    2. Add the following code above `return`.
 
-6. In the `render` method, replace the first *return* line `<div className="circleCard">` with:
+        ```typescript
+        const style: React.CSSProperties = { width: size, height: size };
+        ```
 
-    ```typescript
-    <div className="circleCard" style={style}>
-    ```
+    3. Replace the first *return* line `<div className="circleCard">` with:
 
-7. Save **component.tsx**.
+        ```typescript
+        <div className="circleCard" style={style}>
+        ```
+
+5. Save **component.tsx**.
 
 ### Configure the visual file
 
@@ -561,6 +563,7 @@ Get the current size of the visual viewport from the `options` object.
     min-width: 200px;
     min-height: 200px;
     ```
+
 3. Save **visual.less**.
 
 ## Make your Power BI visual customizable
@@ -663,14 +666,14 @@ Add the `enumerateObjectInstances` method used to apply visual settings, and req
 
 5. In the `Visual` class, add the following code to `update` so that the `dataView` object will be able to receive `settings`.
 
-    * Add this code to the *if* statement after `const size = Math.min(width, height);`.
+    1. Add this code to the *if* statement after `const size = Math.min(width, height);`.
 
         ```typescript
         this.settings = VisualSettings.parse(dataView) as VisualSettings;
         const object = this.settings.circle;
         ```
 
-    * Add this code to `ReactCircleCard.update` after `size`.
+    2. Add this code to `ReactCircleCard.update` after `size`.
 
         ```typescript
         borderWidth: object && object.circleThickness ? object.circleThickness : undefined,
@@ -695,13 +698,13 @@ Edit the component file so that it can render the changes to the visual's color 
 
 3. In the `render` method, replace the following code lines:
 
-    * `const { textLabel, textValue, size } = this.state;` with:
+    1. `const { textLabel, textValue, size } = this.state;` with:
 
         ```typescript
         const { textLabel, textValue, size, background, borderWidth } = this.state;
         ```
 
-    * `const style: React.CSSProperties = { width: size, height: size };` with:
+    2. `const style: React.CSSProperties = { width: size, height: size };` with:
 
         ```typescript
         const style: React.CSSProperties = { width: size, height: size, background, borderWidth };
@@ -719,7 +722,8 @@ Experiment with the visual's color and border thickness, which you can now contr
 
 3. Adjust the visual's **Color** and **Thickness** settings, and review their effect on the visual.
 
-![A screenshot of the react circle card visual in Power B I service, showing the color and border thickness format options.](./media/create-react-visual/powerbi-visuals-colored-circle-card.png)
+>[!div class="mx-imgBorder"]
+>![A screenshot of the react circle card visual in Power B I service, showing the color and border thickness format options.](./media/create-react-visual/powerbi-visuals-colored-circle-card.png)
 
 ## Next steps
 
