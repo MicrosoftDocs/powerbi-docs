@@ -120,10 +120,13 @@
       - name: "Best practices"
         href: deployment-pipelines-best-practices.md        
   - name: How-to guides
+    expanded: true
     items: 
     - name: Power BI reports
       items: 
-      - name: "Create a report in the service"
+      - name: "Create quick reports in the service"
+        href: service-quick-create-report.md
+      - name: "Create a report from Excel in the service"
         href: service-report-create-new.md
       - name: "Enable automatic page refresh"
         href: desktop-automatic-page-refresh.md

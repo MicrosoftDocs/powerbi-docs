@@ -1,6 +1,6 @@
 ---
-title: Register an app to embed Power BI content
-description: Learn how to register an application within Azure Active Directory for use with embedding Power BI content.
+title: Register an app to embed Power BI content in a Power BI embedded analytics application for better embedded BI insights
+description: Learn how to register an application within Azure Active Directory for use with embedding Power BI content. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: nishalit
@@ -27,7 +27,7 @@ Use the [embed for your customers](embed-sample-for-customers.md) solution, also
 
 * **Master user** account (a Power BI Pro license used for signing in to Power BI)
 
-*  [Service principal](embed-service-principal.md)
+* [Service principal](embed-service-principal.md)
 
 The embed for your customers solution is usually used by independent software vendors (ISVs) and developers who are creating applications for a third party.
 
@@ -110,7 +110,16 @@ These steps describe how to register an Azure AD application for the Power BI [e
 
 # [Manual registration](#tab/manual)
 
-Use the Azure AD manual app registration only if you're creating an *embed for your organization* solution. For more information about how to register applications in Azure Active Directory, see [Register an app with the Azure Active Directory](/azure/active-directory/develop/quickstart-v2-register-an-app).
+Use the Azure AD manual app registration only if you're creating one of the following solutions:
+
+* An *embed for your organization* application.
+
+* An *embed for your customers* application with a *service principal*.
+
+    >[!NOTE]
+    >If you choose this option, after you register your Azure AD app you'll have to [add Power BI permissions](#change-your-azure-ad-apps-permissions) to it.
+
+For more information about how to register applications in Azure Active Directory, see [Register an app with the Azure Active Directory](/azure/active-directory/develop/quickstart-v2-register-an-app).
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 
@@ -135,6 +144,9 @@ Use the Azure AD manual app registration only if you're creating an *embed for y
 ## Change your Azure AD app's permissions
 
 After you register your application, you can make changes to its permissions. Permission changes can be made programmatically, or in the Azure portal.
+
+>[!NOTE]
+>Azure AD app permissions are only applicable for the *embed for your customers* solution with the *master user* authentication method.
 
 # [Azure](#tab/Azure)
 

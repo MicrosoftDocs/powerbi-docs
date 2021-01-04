@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/01/2020
+ms.date: 12/17/2020
 ---
 # What's new in the mobile apps for Power BI
 For related "What's New" information, see:
@@ -20,8 +20,17 @@ For related "What's New" information, see:
 >The Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## December 2020
-### We've added dark mode to Power BI mobile (Android)
+### We've added anomaly detection to the mobile apps
+If the report creator has set up anomaly detection for a report visual, you can see if there are unexpectedly high peaks or low dips in your data caused by data outliers (i.e., anomalies). [Learn more!](mobile-reports-in-the-mobile-apps.md#investigate-anomalies-in-time-series-data)
 
+![Screenshot of anomaly detection.](media/mobile-whats-new-in-the-mobile-apps/mobile-anomaly-detection.png)
+
+### Easily find your org's endorsed content
+Content that's been [promoted or certified](../../collaborate-share/service-endorsement-overview.md) in the Power BI service is now tagged in the app with a badge. Report creators promote their content to show that it's ready for you to use (promoted) or certify their content to show that it's been approved by your org (certified).
+
+![Screenshot of certified report in report info on mobile.](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-certified-badge.png)
+
+### We've added dark mode to Power BI mobile (Android)
 Try out the new dark mode in the Power BI mobile app for Android devices. In dark mode, you'll see light text on a dark background, reducing the brightness of the screen and making it easier to see your content. You can switch between themes in the app appearance settings. [Learn more](mobile-apps-dark-mode.md)
 
 ![Screenshot of dark mode in the Power BI mobile app for Android.](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-dark-mode-android.png)
@@ -44,7 +53,7 @@ We've added support for notch displays on iPhone and iPads, giving you more scre
 ## September 2020
 ### Power BI app (preview) for HoloLens 2 is out in the stores!
 
-The Power BI app for HoloLens 2 brings you an entirely immersive experience. Using HoloLens 2’s hand gesture system, you can get your favorite reports and dashboards out of the toolbelt, resize and place them around you in space where you need them, and even browse through the pages of the report. Reports and dashboards update while you’re using the app, so if data changes you’ll see those changes right away. Learn more in our [documentation](mobile-hololens2-app.md) and [blog](https://powerbi.microsoft.com/blog/power-bi-app-for-mixed-reality-now-available-for-hololens-2/)!
+The Power BI app for HoloLens 2 brings you an entirely immersive experience. Using HoloLens 2’s hand gesture system, you can get your favorite reports and dashboards out of the tool belt, resize and place them around you in space where you need them, and even browse through the pages of the report. Reports and dashboards update while you’re using the app, so if data changes you’ll see those changes right away. Learn more in our [documentation](mobile-hololens2-app.md) and [blog](https://powerbi.microsoft.com/blog/power-bi-app-for-mixed-reality-now-available-for-hololens-2/)!
 
 
 ## August 2020
@@ -428,7 +437,7 @@ Your IT admin can now use an MDM tool to configure Power BI iOS mobile app acces
 
 #### Power BI for Mixed Reality app (Preview)
 
-The Power BI for Mixed Reality app is now in the Microsoft Store. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. See the new [Introducing Power BI on Hololens](https://www.youtube.com/watch?v=J_X_nOFUBss) video for context, or read the article about the new [Power BI for Mixed Reality app](mobile-mixed-reality-app.md).
+The Power BI for Mixed Reality app is now in the Microsoft Store. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. See the new [Introducing Power BI on HoloLens](https://www.youtube.com/watch?v=J_X_nOFUBss) video for context, or read the article about the new [Power BI for Mixed Reality app](mobile-mixed-reality-app.md).
 
 
 ### April 2018

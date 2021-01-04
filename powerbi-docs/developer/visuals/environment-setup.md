@@ -1,6 +1,6 @@
 ---
-title: Setting up an environment for developing a Power BI visual
-description: This article explains how to set up your environment so that you can develop a Power BI visual
+title: Setting up an environment for developing a Power BI visual in Power BI embedded analytics for better embedded BI insights
+description: This article explains how to set up your environment so that you can develop a Power BI visual. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
@@ -193,15 +193,15 @@ npm i powerbi-visuals-api --save-dev
 
 ### (Optional) Verify that the D3 library is installed
 
-[Visual Studio Code](https://code.visualstudio.com/) (VS Code) is an ideal Integrated Development Environment (IDE) for developing TypeScript applications. In this section, we'll use VS code to verify that the D3 library you need to develop your Power BI visual, is correctly installed.
+[Visual Studio Code](https://code.visualstudio.com/) (VS Code) is an ideal Integrated Development Environment (IDE) for developing TypeScript applications. In this section, we'll use VS Code to verify that the D3 library you need to develop your Power BI visual, is correctly installed.
 
 >[!NOTE]
 >The verification process described in this section assumes you have an existing Power BI visuals project. If you don't have a Power BI visuals project, you can create one by following the [circle card project creation](develop-circle-card.md#create-a-development-project) instructions.
 
-1. Open VS code.
+1. Open VS Code.
 
     >[!TIP]
-    >You can open VS code from PowerShell by executing the following command:
+    >You can open VS Code from PowerShell by executing the following command:
     >
     >```powershell
     >code .

@@ -5,6 +5,7 @@ author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
 featuredvideoid: lnv66cTZ5ho
+ms.custom: lnv66cTZ5ho
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual

@@ -1,12 +1,12 @@
 ---
-title: Export Power BI reports API
-description: Learn how to export an embedded Power BI report 
+title: Export Power BI embedded analytics reports API for better embedded BI insights
+description: Learn how to export an embedded Power BI report to enhance your Power BI embedded analytics embedded BI experience. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 10/01/2020
+ms.date: 12/28/2020
 ---
 
 # Export Power BI report to file (preview)
@@ -25,7 +25,7 @@ You can use the export feature in a variety of ways. Here are a couple of exampl
 
 * **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a .pdf or a .pptx, and when it's complete, the user can receive the file as a download. Using bookmarks you can export the report in a specific state, including configured filters, slicers, and additional settings. As the API is asynchronous, it may take some time for the file to be available.
 
-* **Email attachment** - Send an automated email at set intervals, with an attached .pdf report. This scenario can be useful if you want to automate sending a weekly report to executives.
+* **Email attachment** - Send an automated email at set intervals, with an attached .pdf report. This scenario can be useful if you want to automate sending a weekly report to executives. For more information see [Export and email a Power BI report with Power Automate](../../collaborate-share/service-automate-power-bi-report-export.md)
 
 ## Using the API
 
@@ -59,6 +59,23 @@ Specify the pages you want to print according to the [Get Pages](/rest/api/power
 
 >[!NOTE]
 >[Personal bookmarks](../../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
+
+### Filters
+
+Using `reportLevelFilters` in [PowerBIReportExportConfiguration](/rest/api/power-bi/reports/exporttofile#powerbireportexportconfiguration), you can export a report in a filtered condition.
+
+To export a filtered report, insert the [URL query string parameters](../../collaborate-share/service-url-filters.md) you want to use as your filter, to [ExportFilter](/rest/api/power-bi/reports/exporttofile#exportfilter). When you enter the string, you must remove the `?filter=` part of the URL query parameter.
+
+The table below includes a few syntax examples of strings you can pass to  `ExportFilter`.
+
+|Filter    |Syntax    |Example    |
+|---|----|----|----|
+|A value in a field    |Table/Field eq 'value'    |Store/Territory eq 'NC'    |
+|Multiple values in a field    |Table/Field in ('value1', 'value2')     |Store/Territory in ('NC', 'TN')    |
+|A distinct value in one field, and a different distinct value in another field    |Table/Field1 eq 'value1' and Table/Field2 eq 'value2'    |Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'    |
+
+>[!NOTE]
+>`ReportLevelFilters` can only contain a single [ExportFilter](/rest/api/power-bi/reports/exporttofile#exportfilter).
 
 ### Authentication
 
@@ -137,7 +154,8 @@ private async Task<string> PostExportRequest(
     Guid reportId,
     Guid groupId,
     FileFormat format,
-    IList<string> pageNames = null /* Get the page names from the GetPages REST API */)
+    IList<string> pageNames = null, /* Get the page names from the GetPages REST API */
+    string urlFilter = null)
 {
     var powerBIReportExportConfiguration = new PowerBIReportExportConfiguration
     {
@@ -148,6 +166,9 @@ private async Task<string> PostExportRequest(
         // Note that page names differ from the page display names
         // To get the page names use the GetPages REST API
         Pages = pageNames?.Select(pn => new ExportReportPage(Name = pn)).ToList(),
+        // ReportLevelFilters collection needs to be instantiated explicitly
+        ReportLevelFilters = !string.IsNullOrEmpty(urlFilter) ? new List<ExportFilter>() { new ExportFilter(urlFilter) } : null,
+
     };
 
     var exportRequest = new ExportReportRequest
@@ -258,7 +279,8 @@ private async Task<ExportedFile> ExportPowerBIReport(
 	FileFormat format,
 	int pollingtimeOutInMinutes,
 	CancellationToken token,
-	IList<string> pageNames = null  /* Get the page names from the GetPages REST API */)
+	IList<string> pageNames = null,  /* Get the page names from the GetPages REST API */
+    string urlFilter = null)
 {
 	const int c_maxNumberOfRetries = 3; /* Can be set to any desired number */
 	const int c_secToMillisec = 1000;
@@ -268,7 +290,7 @@ private async Task<ExportedFile> ExportPowerBIReport(
 		int retryAttempt = 1;
 		do
 		{
-			var exportId = await PostExportRequest(reportId, groupId, format, pageNames);
+			var exportId = await PostExportRequest(reportId, groupId, format, pageNames, urlFilter);
 			var httpMessage = await PollExportRequest(reportId, groupId, exportId, pollingtimeOutInMinutes, token);
 			export = httpMessage.Body;
 			if (export == null)
@@ -334,3 +356,6 @@ Review how to embed content for your customers and your organization:
 
 > [!div class="nextstepaction"]
 >[Embed for your organization](embed-sample-for-your-organization.md)
+
+> [!div class="nextstepaction"]
+>[Export and email a Power BI report with Power Automate](../../collaborate-share/service-automate-power-bi-report-export.md)

@@ -4,7 +4,7 @@ description: 'Waterfall charts in Power BI'
 author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
-featuredvideoid: maTzOJSRB3g
+featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to

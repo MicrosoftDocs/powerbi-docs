@@ -51,9 +51,6 @@ When installing the Crisis Communication sample, take note of the [SharePoint li
 
 1. Select the icon on your Apps page to open the app.
 
-1. On the splash screen, select **Explore**.
-
-   ![Template app splash screen](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-splash-screen.png)
 
    The app opens, showing sample data.
 
@@ -63,7 +60,7 @@ When installing the Crisis Communication sample, take note of the [SharePoint li
 
 1. In the dialog box:
    1. In the SharePoint_Folder field, enter your ["CI_Employee Status" SharePoint list path](/powerapps/maker/canvas-apps/sample-crisis-communication-app#monitor-office-absences-with-power-bi).
-   1. In the List_ID field, enter your list id that you got from list settings. When done, click **Next**.
+   1. In the List_ID field, enter your list ID that you got from list settings. When done, click **Next**.
 
    ![Crisis Communication Presence Report app URL dialog](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-url-dialog.png)
 

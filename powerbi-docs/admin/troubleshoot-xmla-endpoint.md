@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 11/16/2020
+ms.date: 01/04/2021
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
 ---
@@ -146,7 +146,7 @@ Executing the query ...
 Error -1052311437:
 ```
 
-This occurs because client libraries installed with SSMS v18.7.1 do not support session tracing. This will be resolved in an upcoming release of SSMS.
+This occurs because client libraries installed with SSMS v18.7.1 do not support session tracing. This will be resolved in an upcoming release of SSMS. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
 
 ### Refresh operations
 
@@ -163,7 +163,7 @@ Date (UTC): 11/13/2020 7:57:16 PM
 Run complete
 ```
 
-This is due to a known issue in the client libraries where the status of the refresh request is incorrectly tracked. This will be resolved in an upcoming release of SSMS.
+This is due to a known issue in the client libraries where the status of the refresh request is incorrectly tracked. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
 
 ## See also
 

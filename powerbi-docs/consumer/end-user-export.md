@@ -4,11 +4,11 @@ description: Export data from a report visual and dashboard visual and view it i
 author: mihart
 ms.author: mihart
 ms.reviewer: cmfinlan
-featuredvideoid: jtlLGRKBvXY
+featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 12/21/2020
 LocalizationGroup: Consumers
 ---
 # Export data from a visual
@@ -34,7 +34,7 @@ Exporting data requires a Power BI Pro license, or for the dashboard or report t
 
 3. Select  **Export to .csv**.
 
-4. What happens next depends on which browser you're using. You may be prompted to save the file or you may see a link to the exported file at the bottom of the browser. 
+4. What happens next depends on which browser you're using. You may be prompted to save the file or you may see a link to the exported file at the bottom of the browser. By default, your export is saved to your local Downloads folder. 
 
     ![Chrome browser showing exported file link](media/end-user-export/power-bi-dashboards-export.png)
 
@@ -73,7 +73,7 @@ You can export data from a visual in a report as .csv or .xlsx (Excel) format.
 
     ![Menu where you choose underlying or summarized](media/end-user-export/power-bi-export-underlying.png)
 
-5. What happens next depends on which browser you're using. You might be prompted to save the file or you might see a link to the exported file at the bottom of the browser. 
+5. What happens next depends on which browser you're using. You might be prompted to save the file or you might see a link to the exported file at the bottom of the browser. If you're using the Power BI app in Microsoft Teams, your exported file is saved in your local Downloads folder. 
 
     ![Exported file displaying in Microsoft Edge browser](media/end-user-export/power-bi-export-edge-screen.png)
 

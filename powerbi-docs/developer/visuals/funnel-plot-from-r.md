@@ -1,6 +1,6 @@
 ---
-title: Build a funnel plot from R script to R visual
-description: This article describes how to build a funnel plot from R script to R Power BI visual.
+title: Build a funnel plot from R script to R visual in Power BI embedded analytics for better embedded BI insights
+description: This article describes how to build a funnel plot from R script to R Power BI visual. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -145,7 +145,7 @@ The visual isn't yet user-friendly because the user has to know the order of col
    > #RVIZ_IN_PBI_GUIDE:END:Removed to enable user parameters
    > ```
 
-   ![script before and after](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script_r_before_after_1.png)
+   ![script before and after](https://raw.githubusercontent.com/microsoft/PowerBI-visuals/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script_r_before_after_1.png)
 
    You can decide not to expose the parameters to the UI, like we did.  
 

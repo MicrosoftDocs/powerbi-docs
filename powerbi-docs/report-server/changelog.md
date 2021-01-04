@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/18/2020
+ms.date: 12/31/2020
 ---
 
 # Change log for Power BI Report Server
@@ -35,10 +35,16 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             - Fixed issue with exporting reports with periods in their name.
             - Fixed screen reader issues in a tablix.
             - Fixed issue with log files being blank in some circumstances.
-            - Fixed issue with "Connect to Power BI" dialog not closing
-            - Updated MHTML renderer to use newer HTML DOCTYPE
+            - Fixed issue with overwriting Excel file during upload.
+            - Fixed issue with Model.UpdateCacheSnapshot REST API method.
+            - Fixed issue with SAP BW data source connections via XMLA.
+            - Fixed issue with "Connect to Power BI" dialog not closing.
+            - Fixed issue with CustomHeaders advanced feature default value.
+            - Updated MHTML renderer to use newer HTML DOCTYPE.
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
+   - *Version: 2.86.1321.0 (October 2020), Released: November 18, 2020*
+        - Bug fixes
    - *Version: 2.86.961.0 (October 2020), Released: October 27, 2020* (new build and new version)
         - Contains changes required for connection with Power BI Report Server (October 2020)        
    

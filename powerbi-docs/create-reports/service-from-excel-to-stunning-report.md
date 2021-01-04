@@ -7,11 +7,11 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 07/30/2020
+ms.date: 12/14/2020
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to a report in the Power BI service to Microsoft Teams
-Your manager wants to see a report on your latest sales and profit figures by the end of the day. But the latest data is in various third-party systems and files on your laptop. In the past, it’s taken hours to create visuals and format a report, and you’re beginning to feel anxious.
+Your manager wants to see a report on your latest sales and profit figures by the end of the day. But the latest data is in files on your laptop. In the past, it’s taken hours to create a report, and you’re beginning to feel anxious.
 
 No worries. With Power BI, you can create a stunning report and share it in Microsoft Teams in no time!
 
@@ -26,6 +26,11 @@ In this tutorial, we upload an Excel file, create a new report, and share it wit
 > * Pin the report visuals to a dashboard.
 > * Share a link to the dashboard.
 > * Share the dashboard in Microsoft Teams
+
+## Prerequisites
+- [Sign up for the Power BI service](../fundamentals/service-self-service-signup-for-power-bi.md). 
+- Download the [Financial Sample workbook](https://go.microsoft.com/fwlink/?LinkID=521962) and save it your computer or to OneDrive for Business.
+
 
 ## Prepare data in Excel
 Let’s take a simple Excel file as an example. 
@@ -43,10 +48,7 @@ Let’s take a simple Excel file as an example.
    ![Screenshot of Data formatted as a table.](media/service-from-excel-to-stunning-report/pbi_excel_table.png)
 
 ## Upload your Excel file to the Power BI service
-The Power BI service connects to many data sources, including Excel files that live on your computer. 
-
- > [!NOTE] 
- > To follow along with the rest of this tutorial, download the [Financial Sample workbook](https://go.microsoft.com/fwlink/?LinkID=521962).
+The Power BI service connects to many data sources, including Excel files that live on your computer.
 
 1. To get started, sign in to the Power BI service. If you haven’t signed up, [you can do so for free](https://powerbi.com).
 1. In **My workspace**, select **New** > **Upload a file**.
@@ -184,9 +186,9 @@ Now it's time to share your dashboard with your manager. You can share your dash
 
 You can also share reports and dashboards directly to your colleagues in Microsoft Teams.
 
-1. To share in Teams, at the top of the dashboard, select **Share to Teams**.
+1. To share in Teams, at the top of the dashboard, select **Chat in Teams**.
 
-   ![Screenshot of Share to Teams option.](media/service-from-excel-to-stunning-report/power-bi-share-teams.png)
+   ![Screenshot of Chat in Teams option.](media/service-from-excel-to-stunning-report/power-bi-share-teams.png)
 
 2. Power BI displays the **Share to Teams** dialog. Enter the name of a person, group, or channel and select **Share**. 
    
