@@ -185,7 +185,7 @@ A model relationship is _limited_ when there's no guaranteed "one" side. It can 
 
 In the following example, there are two limited relationships, both marked as **L**. The two relationships include the Many-to-many relationship contained within the Vertipaq source group, and the One-to-many cross source group relationship.
 
-:::image type="content" source="mmedia/desktop-relationships-understand/source-group-example-limited.png" alt-text="Example of a Composite model consisting of two source groups with limited relationships marked.":::
+:::image type="content" source="media/desktop-relationships-understand/source-group-example-limited.png" alt-text="Example of a Composite model consisting of two source groups with limited relationships marked.":::
 
 For Import models, data structures are never created for limited relationships. This means table joins must be resolved at query time.
 
