@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/27/2020
+ms.date: 01/04/2021
 LocalizationGroup: Share your work
 ---
 
@@ -21,11 +21,11 @@ The **Embed** option supports [URL filters](service-url-filters.md) and URL sett
 
 1. Open a report in the Power BI service.
 
-2. On the **More options (...)** menu, select **Embed** >  **Website or portal**.
+2. On the **Share** menu, select **Embed report** >  **Website or portal**.
 
     ![Website or portal option](media/service-embed-secure/power-bi-more-options-website.png)
 
-2. Select the **Embed** option to open a dialog that provides a link and an iFrame you can use to embed the report securely.
+2. In the **Secure embed code** dialog, select the **link you can use to embed this content**, or the **HTML you can paste into your blog or website** in an iFrame.
 
     ![Embed option dialog box](media/service-embed-secure/secure-embed-code-dialog.png)
 
