@@ -49,13 +49,13 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * New activity log API that enables Power BI service admins to track user and admin activities within their tenant.
 
 ### November 2019
-* Public preview of [large models in Power BI Premium](../admin/service-premium-large-models.md].
+* Public preview of [large models in Power BI Premium](../admin/service-premium-large-models.md).
 * Public preview of using Microsoft cloud app security controls in Power BI.
 
 ### October 2019
 * New Power Automate action to refresh Power BI datasets.
 * [Contact list](https://powerbi.microsoft.com/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) for reports and dashboards in the Power BI service.
-* General availability of [Automated Machine Learning](../transform-model/service-machine-learning-automated
+* General availability of [Automated Machine Learning](../transform-model/service-machine-learning-automated)
 * Public preview of Power BI data lineage view.
 
 ### September 2019
