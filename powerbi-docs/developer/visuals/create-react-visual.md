@@ -1,5 +1,5 @@
 ---
-title: Tutorial: Create a React-based visual for Power BI in Power BI embedded analytics for better embedded BI insights
+title: Create a React-based visual for Power BI in Power BI embedded analytics for better embedded BI insights
 description: This tutorial shows how to create a Power BI visual using React. It displays a value in a circle. Adaptive size and settings allow you to customize it. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab

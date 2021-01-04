@@ -1,5 +1,5 @@
 ---
-title: Tutorial: Create an R-powered Power BI visual in Power BI embedded analytics for better embedded BI insights
+title: Create an R-powered Power BI visual in Power BI embedded analytics for better embedded BI insights
 description: This tutorial describes how to create an R-based visual for Power BI by using the R script editor in Power BI Desktop. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
