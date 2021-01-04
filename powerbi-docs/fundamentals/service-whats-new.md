@@ -55,7 +55,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 ### October 2019
 * New Power Automate action to refresh Power BI datasets.
 * [Contact list](https://powerbi.microsoft.com/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) for reports and dashboards in the Power BI service.
-* General availability of [Automated Machine Learning](../transform-model/service-machine-learning-automated)
+* General availability of [Automated Machine Learning](../transform-model/service-machine-learning-automated.md)
 * Public preview of Power BI data lineage view.
 
 ### September 2019
