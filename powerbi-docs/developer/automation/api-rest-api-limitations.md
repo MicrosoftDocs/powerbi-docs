@@ -1,6 +1,6 @@
 ---
-title: Power BI REST API limitations
-description: The Power BI REST API has the following limitations
+title: Power BI REST API limitations in Power BI embedded analytics for better embedded BI insights
+description: The Power BI REST API has the following limitations. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
