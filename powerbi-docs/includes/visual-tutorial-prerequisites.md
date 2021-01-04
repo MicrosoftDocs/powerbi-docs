@@ -17,6 +17,6 @@ Before you start developing your Power BI visual, verify that you have everythin
 
 * [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell) version 4 or later (for Windows). Or [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) (for OSX).
 
-* An environment ready for developing a Power BI visual. [Set up your environment for developing a Power BI visual](environment-setup.md).
+* An environment ready for developing a Power BI visual. [Set up your environment for developing a Power BI visual](../developer/visuals/environment-setup.md).
 
-* This tutorial uses the **US Sales Analysis** report. You can [download](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/images/US_Sales_Analysis.pbix) this report and upload it to Power BI service, or use your own report. If you need more information about Power BI service, and uploading files, refer to the [Get started creating in the Power BI service](../../fundamentals/service-get-started.md) tutorial.
+* This tutorial uses the **US Sales Analysis** report. You can [download](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/images/US_Sales_Analysis.pbix) this report and upload it to Power BI service, or use your own report. If you need more information about Power BI service, and uploading files, refer to the [Get started creating in the Power BI service](../fundamentals/service-get-started.md) tutorial.

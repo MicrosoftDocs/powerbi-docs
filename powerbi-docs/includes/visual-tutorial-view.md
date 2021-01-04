@@ -14,7 +14,7 @@ To test the visual in Power BI service, we'll use the **US Sales Analysis** repo
 You can also use your own report to test the visual.
 
 >[!NOTE]
->Before you continue, verify that you [enabled the visuals developer settings](environment-setup.md#set-up-power-bi-service-for-developing-a-visual).
+>Before you continue, verify that you [enabled the visuals developer settings](../developer/visuals/environment-setup.md#set-up-power-bi-service-for-developing-a-visual).
 
 1. Sign in to [PowerBI.com](https://powerbi.microsoft.com/) and open the **US Sales Analysis** report.
 
@@ -33,7 +33,7 @@ You can also use your own report to test the visual.
     >[!div class="mx-imgBorder"]
     >![Screenshot of the developer visual in the visualizations pane.](media/visual-tutorial-view/developer-visual.png)
 
-    This visual represents the custom visual that you're running on your computer. It's only available when the [custom visual debugging](environment-setup.md#set-up-power-bi-service-for-developing-a-visual) setting is enabled.
+    This visual represents the custom visual that you're running on your computer. It's only available when the [custom visual debugging](../developer/visuals/environment-setup.md#set-up-power-bi-service-for-developing-a-visual) setting is enabled.
 
 5. Verify that a visual was added to the report canvas.
 
