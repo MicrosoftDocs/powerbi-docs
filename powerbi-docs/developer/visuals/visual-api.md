@@ -1,6 +1,6 @@
 ---
-title:  Visual API
-description: This article describes how to use IVisual API for Power BI visuals
+title:  Visual API in Power BI embedded analytics for better embedded BI insights
+description: This article describes how to use IVisual API for Power BI visuals. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins

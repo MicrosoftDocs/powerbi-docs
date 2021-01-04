@@ -1,6 +1,6 @@
 ---
-title: Power BI visuals samples
-description: This article presents sample Power BI visuals including slicers, more than 20 types of charts, WebGL, and R visuals and scripts.
+title: Power BI visuals samples in Power BI embedded analytics for better embedded BI insights
+description: This article presents sample Power BI visuals including slicers, more than 20 types of charts, WebGL, and R visuals and scripts. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
