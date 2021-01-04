@@ -205,7 +205,7 @@ This is due to a known issue in the app services REST API. This will be resolved
 
 When republishing a live connected dataset utilizing the Analysis Services connector, the following error may be shown:
 
-:::image type="content" source="media/troubleshoot-xmla-endpoint/couldnt-publish-to-powerbi.png" alt-text="Couldn't publish to Power BI error.":::
+:::image type="content" source="media/troubleshoot-xmla-endpoint/couldnt-publish-to-power-bi.png" alt-text="Couldn't publish to Power BI error.":::
 
 As stated in the error message, to resolve this issue, either delete or rename the existing dataset. Also be sure to republish any apps that are dependent on the report. If necessary, downstream users should also be informed to update any bookmarks with the new report address to ensure they access the latest report.  
 
