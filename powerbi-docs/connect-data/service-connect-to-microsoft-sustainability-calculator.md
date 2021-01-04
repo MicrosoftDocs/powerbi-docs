@@ -24,6 +24,7 @@ To access the Microsoft Sustainability Calculator, you’ll need the following i
 - Tenant ID
 - Access key
 - Enrollment number
+- Only Azure Administrator roles can authenticate and connect calculator to company data. (**Only for December 2020 preview version**)
 
 To find your company’s enrollment number:
 
