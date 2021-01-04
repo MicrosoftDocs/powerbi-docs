@@ -114,7 +114,11 @@ Follow these steps to create a Rect component class.
     * In the *File name* field, enter **component**.
     * From the *Save as type* drop-down menu, select **TypeScript React**.
 
-6. In the **src** folder, open **visual.ts** and replace the code in the file with the following code:
+### Add React to the visual file
+
+Replace the code in the **visual.ts** file with code that enables using React.
+
+1. In the **src** folder, open **visual.ts** and replace the code in the file with the following code:
 
     ```typescript
     "use strict";
@@ -147,40 +151,7 @@ Follow these steps to create a Rect component class.
     >[!NOTE]
     >As default Power BI TypeScript settings don't recognize React *tsx* files, VS Code highlights `component` as an error.
 
-7. In the **reactCircleCard** folder, open **tsconfig.json** and add two lines to the beginning of the `compilerOptions` item.
-
-    ```json
-    "jsx": "react",
-    "types": ["react", "react-dom"],
-    ```
-
-    Your **tsconfig.json** file should now look like this, and the `component` error in **visual.ts** should be gone.
-
-    ```json
-    {
-        "compilerOptions": {
-            "jsx": "react",
-            "types": ["react", "react-dom"],
-            "allowJs": false,
-            "emitDecoratorMetadata": true,
-            "experimentalDecorators": true,
-            "target": "es6",
-            "sourceMap": true,
-            "outDir": "./.tmp/build/",
-            "moduleResolution": "node",
-            "declaration": true,
-            "lib": [
-                "es2015",
-                "dom"
-            ]
-        },
-        "files": [
-            "./src/visual.ts"
-        ]
-    }
-    ```
-
-8.  To render the component, add the target HTML element to **visual.ts**. This element is `HTMLElement` in `VisualConstructorOptions`, which is passed into the constructor.
+2. To render the component, add the target HTML element to **visual.ts**. This element is `HTMLElement` in `VisualConstructorOptions`, which is passed into the constructor.
 
     1. In the **src** folder, open **visual.ts**.
 
@@ -233,24 +204,61 @@ Follow these steps to create a Rect component class.
     }
     ```
 
-9. In VS Code, save the changes you made to the following files:
+3. Save **visual.ts**.
 
-* **visual.ts**
-* **tsconfig.json**
-* **visual.ts**
+### Edit the tsconfig file
 
-10. Open PowerShell in the *CircleCardVisual* folder, and run your project:
+Edit the **tsconfig.json** to work with React.
 
-    ```bash
-    pbiviz start
+1. In the **reactCircleCard** folder, open **tsconfig.json** and add two lines to the beginning of the `compilerOptions` item.
+
+    ```json
+    "jsx": "react",
+    "types": ["react", "react-dom"],
     ```
 
-    When you add a new **Developer Visual** to your report in Power BI service, it will look like this:
+    Your **tsconfig.json** file should now look like this, and the `component` error in **visual.ts** should be gone.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot showing the hello React message in the newly created developer visual in Power B I service.](media/create-react-visual/hello-react-message-visual.png)
+    ```json
+    {
+        "compilerOptions": {
+            "jsx": "react",
+            "types": ["react", "react-dom"],
+            "allowJs": false,
+            "emitDecoratorMetadata": true,
+            "experimentalDecorators": true,
+            "target": "es6",
+            "sourceMap": true,
+            "outDir": "./.tmp/build/",
+            "moduleResolution": "node",
+            "declaration": true,
+            "lib": [
+                "es2015",
+                "dom"
+            ]
+        },
+        "files": [
+            "./src/visual.ts"
+        ]
+    }
+    ```
 
-## Configure your visual's capabilities
+2. Save **tsconfig.json**.
+
+### Test your visual
+
+Open PowerShell in the *CircleCardVisual* folder, and run your project:
+
+```bash
+pbiviz start
+```
+
+When you add a new **Developer Visual** to your report in Power BI service, it will look like this:
+
+>[!div class="mx-imgBorder"]
+>![Screenshot showing the hello React message in the newly created developer visual in Power B I service.](media/create-react-visual/hello-react-message-visual.png)
+
+## Configure your visual's data field
 
 Configure your visual's capabilities file so that only one data field can be submitted to the visual's *Measure data* field.
 
@@ -456,7 +464,7 @@ In this section you'll update your visual to send updates to instances in the *c
 
 3. Save **component.tsx**.
 
-### Test your visual
+### View the changes to the visual
 
 Test your *React Circle Card* visual to view the changes you made.
 
@@ -543,7 +551,7 @@ Get the current size of the visual viewport from the `options` object.
 
 7. Save **component.tsx**.
 
-### Configure the visual.less file
+### Configure the visual file
 
 1. In VS Code, from the **style** folder, open **visual.less**.
 
@@ -633,28 +641,27 @@ Add the `enumerateObjectInstances` method used to apply visual settings, and req
     import VisualObjectInstance = powerbi.VisualObjectInstance;
     import EnumerateVisualObjectInstancesOptions = powerbi.EnumerateVisualObjectInstancesOptions;
     import VisualObjectInstanceEnumerationObject = powerbi.VisualObjectInstanceEnumerationObject;
-
     import { VisualSettings } from "./settings";
     ```
 
-3. Add the `enumerateObjectInstances` method to **visual.ts**.
+3. Add the following declaration to  to **Visual**.
 
     ```typescript
-    export class Visual implements IVisual {
-        private settings: VisualSettings;
+    private settings: VisualSettings;
+    ```
 
-        //...
+4. Add the `enumerateObjectInstances` method to **Visual**.
 
-        public enumerateObjectInstances(
-            options: EnumerateVisualObjectInstancesOptions
-        ): VisualObjectInstance[] | VisualObjectInstanceEnumerationObject {
+    ```typescript
+    public enumerateObjectInstances(
+        options: EnumerateVisualObjectInstancesOptions
+    ): VisualObjectInstance[] | VisualObjectInstanceEnumerationObject {
 
-            return VisualSettings.enumerateObjectInstances(this.settings || VisualSettings.getDefault(), options);
-        }
+        return VisualSettings.enumerateObjectInstances(this.settings || VisualSettings.getDefault(), options);
     }
     ```
 
-4. In the `Visual` class, add the following code to `update` so that the `dataView` object will be able to receive `settings`.
+5. In the `Visual` class, add the following code to `update` so that the `dataView` object will be able to receive `settings`.
 
     * Add this code to the *if* statement after `const size = Math.min(width, height);`.
 
@@ -671,9 +678,11 @@ Add the `enumerateObjectInstances` method used to apply visual settings, and req
         }
         ```
 
-5. Save **visual.ts**.
+6. Save **visual.ts**.
 
-### 
+### Edit the component file
+
+Edit the component file so that it can render the changes to the visual's color and border thickness.
 
 1. In VS Code, from the **src** folder, open **component.tsx**.
 
@@ -700,8 +709,31 @@ Add the `enumerateObjectInstances` method used to apply visual settings, and req
 
 4. Save **component.tsx**.
 
-    ![Final ColoredCircleCard Power BI visual](./media/create-react-visual/powerbi-visuals-colored-circle-card.png)
+### Review your changes
+
+Experiment with the visual's color and border thickness, which you can now control.
+
+1. Verify that `pbiviz start` is running, and in Power BI service, refresh your *React Circle Card* visual.
+
+2. Select the **Format** tab and expand **Circle**.
+
+3. Adjust the visual's **Color** and **Thickness** settings, and review their effect on the visual.
+
+![A screenshot of the react circle card visual in Power B I service, showing the color and border thickness format options.](./media/create-react-visual/powerbi-visuals-colored-circle-card.png)
 
 ## Next steps
 
-For more about Power BI development, see [Guidelines for Power BI visuals](guidelines-powerbi-visuals.md) and [Visuals in Power BI](power-bi-visuals-concept.md).
+> [!div class="nextstepaction"]
+> [Add formatting options to the circle card visual](custom-visual-develop-tutorial-format-options.md)
+
+> [!div class="nextstepaction"]
+> [Create a Power BI bar chart visual](create-bar-chart.md)
+
+> [!div class="nextstepaction"]
+> [Learn how to debug a Power BI visual you created](visuals-how-to-debug.md)
+
+> [!div class="nextstepaction"]
+> [Power BI visuals project structure](visual-project-structure.md)
+
+> [!div class="nextstepaction"]
+> [Guidelines for Power BI visuals](guidelines-powerbi-visuals.md)
