@@ -7,10 +7,10 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 12/30/2020
+ms.date: 01/02/2021
 ---
 
-# Tutorial: Create a Power BI visual based on React
+# Tutorial: Create a Power BI visual using React
 
 [!INCLUDE[Power B I visuals tutorials overview](../../includes/visual-tutorial-overview.md)]
 
