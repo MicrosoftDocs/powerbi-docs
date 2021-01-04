@@ -31,7 +31,7 @@ In this tutorial, you learn how to:
 
 ## Create a development project
 
-In this section you'll create a project for the React circle card visual.
+In this section, you'll create a project for the React circle card visual.
 
 1. Open PowerShell and navigate to the folder you want to create your project in.
 
@@ -61,7 +61,7 @@ In this section you'll create a project for the React circle card visual.
 
 ## Set up React in your project
 
-In this section you'll learn how to set up React for your Power BI visual project.
+In this section, you'll learn how to set up React for your Power BI visual project.
 
 Open PowerShell and stop the visual from running by entering Ctrl+C. If prompted to terminate the batch job, enter Y, and press *Enter*.
 
@@ -83,7 +83,7 @@ npm i @types/react @types/react-dom
 
 ### Create a React component class
 
-Follow these steps to create a Rect component class.
+Follow these steps to create a React component class.
 
 1. Open **VS Code** and navigate to the **reactCircleCard** folder.
 
@@ -314,7 +314,7 @@ Configure your visual's capabilities file so that only one data field can be sub
 
 ## Update the visual's style
 
-In this section you'll turn your visual's shape into a circle.
+In this section, you'll turn your visual's shape into a circle.
 
 Use the **visual.less** file to control the style of your visual.
 
@@ -397,7 +397,7 @@ You can render data using React. The component can display data from its own sta
 
 ### Set your visual to receive data
 
-Visuals receive data as an argument of the `update` method. In this section you'll update this method to receive data.
+Visuals receive data as an argument of the `update` method. In this section, you'll update this method to receive data.
 
 The code below selects `textLabel` and `textValue` from `DataView`, and if the data exists, updates the component state.
 
@@ -436,7 +436,7 @@ The code below selects `textLabel` and `textValue` from `DataView`, and if the d
 
 ### Set your visual to send data
 
-In this section you'll update your visual to send updates to instances in the *component* file.
+In this section, you'll update your visual to send updates to instances in the *component* file.
 
 1. In VS Code, from the **src** folder, open **component.tsx**.
 
@@ -644,7 +644,7 @@ Add the `enumerateObjectInstances` method used to apply visual settings, and req
     import { VisualSettings } from "./settings";
     ```
 
-3. Add the following declaration to  to **Visual**.
+3. Add the following declaration to **Visual**.
 
     ```typescript
     private settings: VisualSettings;
