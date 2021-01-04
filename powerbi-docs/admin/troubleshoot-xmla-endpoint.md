@@ -170,7 +170,8 @@ This is due to a known issue in the client libraries where the status of the ref
 When using the SQL Server Management Studio (SSMS) v18.8 to edit a role membership on a dataset, SSMS may display the following error:
 
 ```
-Failed to save modifications to the server. Error returned: ‘Metadata change of current operation cannot be resolved, please check the command or try again later.’ 
+Failed to save modifications to the server. 
+Error returned: ‘Metadata change of current operation cannot be resolved, please check the command or try again later.’ 
 ```
 
 This is due to a known issue in the app services REST API. This will be resolved in an upcoming release. In the meantime, to get around this error, in **ROle Properties**, click **Script**, and then enter and execute the following TMSL command:
