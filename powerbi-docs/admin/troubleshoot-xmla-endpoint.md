@@ -146,7 +146,7 @@ Executing the query ...
 Error -1052311437:
 ```
 
-This occurs because client libraries installed with SSMS v18.7.1 do not support session tracing. This will be resolved in an upcoming release of SSMS. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
+This occurs because client libraries installed with SSMS v18.7.1 do not support session tracing. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
 
 ### Refresh operations
 
@@ -164,6 +164,49 @@ Run complete
 ```
 
 This is due to a known issue in the client libraries where the status of the refresh request is incorrectly tracked. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
+
+## Editing role memberships in SSMS
+
+When using the SQL Server Management Studio (SSMS) v18.8 to edit a role membership on a dataset, SSMS may display the following error:
+
+```
+Failed to save modifications to the server. Error returned: ‘Metadata change of current operation cannot be resolved, please check the command or try again later.’ 
+```
+
+This is due to a known issue in the app services REST API. This will be resolved in an upcoming release. In the meantime, to get around this error, in **ROle Properties**, click **Script**, and then enter and execute the following TMSL command:
+
+```json
+{ 
+  "createOrReplace": { 
+    "object": { 
+      "database": "AdventureWorks", 
+      "role": "Role" 
+    }, 
+    "role": { 
+      "name": "Role", 
+      "modelPermission": "read", 
+      "members": [ 
+        { 
+          "memberName": "xxxx", 
+          "identityProvider": "AzureAD" 
+        }, 
+        { 
+          "memberName": “xxxx” 
+          "identityProvider": "AzureAD" 
+        } 
+      ] 
+    } 
+  } 
+} 
+```
+
+## Publish Error - Live connected dataset
+
+When republishing a live connected dataset utilizing the Analysis Services connector, the following error may be shown:
+
+:::image type="content" source="media/troubleshoot-xmla-endpoint/couldnt-pulbish-to-powerbi.png" alt-text="Couldn't pulbish to Power BI error.":::
+
+As stated in the error messasge, to resolve this issue, either delete or rename the existing dataset. Also be sure to republish any apps that are dependent on the report. If necessary, downstream users should also be informed to update any bookmarks with the new report address to ensure they access the latest report.  
 
 ## See also
 
