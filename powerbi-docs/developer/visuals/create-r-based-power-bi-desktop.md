@@ -28,7 +28,7 @@ In this tutorial, you learn how to:
 * A **Power BI Pro** account. [Sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 * The R engine. You can download it free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). For more information, see [Create Power BI visuals using R](../../create-reports/desktop-r-visuals.md).
 * [Power BI Desktop](../../fundamentals/desktop-get-the-desktop.md).
-* [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell?view=powershell-6) version 4 or later for Windows users OR the [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) for OSX users.
+* [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell) version 4 or later for Windows users OR the [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) for OSX users.
 
 ## Getting started
 
