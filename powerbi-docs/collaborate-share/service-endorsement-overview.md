@@ -23,9 +23,9 @@ There are two kinds of endorsement: **promotion** and **certification**.
 
 * **Certification**: Certification means that the content meets the organization's quality standards and can be regarded as reliable, authoritative content that is ready for use across the organization.
 
-    Only a select group of reviewers (defined by the Power BI administrator) is authorized to certify content. Content owners who wish to see their content certified and are not authorized to certify it themselves need to follow their organization's guidelines about getting their content certified.
+    Only a [select group of reviewers (defined by the Power BI administrator)](../admin/service-admin-setup-certification.md) is authorized to certify content. Content owners who wish to see their content certified and are not authorized to certify it themselves need to follow their organization's guidelines about getting their content certified.
 
-    **Certification is available only if a Power BI administrator has enabled and configured it for your organization**.
+    **Certification is available only if a Power BI administrator has [enabled and configured](../admin/service-admin-setup-certification.md) it for your organization**.
 
 The image below illustrates how endorsed content (promoted and certified) is clearly identified when you're searching for a dataset to build a report on.
 
