@@ -68,8 +68,8 @@ The following diagram show the authentication flow for the *embed for your custo
 
 2. Your web app uses a *service principal* or a *master user* to authenticate against Azure AD.
 
-3. Your web app gets an access token from Azure AD, caches the *Azure AD token*, and uses it to access Power BI REST APIs. Access to the APIs is given according to your authentication method:
-    * If you're using a *service principal*, your Azure AD app has access to all the APIs.
+3. Your web app gets an access token from Azure AD, caches the *Azure AD token*, and uses it to access Power BI REST APIs. Access to the Power BI REST APIs is given according to your authentication method:
+    * If you're using a *service principal*, your Azure AD app has access to all the Power BI REST APIs.
     * If you're using a *master user*, the *master user* (or an administrator) has to provide consent for the APIs your app can use.
 
 4. Your web app calls the generate token REST API requesting the *embed token*, which specifies which Power BI content can be embedded.
@@ -104,7 +104,9 @@ This diagram shows the authentication flow for the *embed for your organization*
 
 4. Azure AD redirects the web app user back to the web app with the Azure AD token.
 
-5. Your Power BI web app caches the Azure AD token, and uses it to embed any Power BI content the web app user has rights to view.
+5. The web app passes the Azure AD token to the user's web browser.
+
+6. Your Power BI web app uses the Azure AD token to embed any Power BI content the web app user has rights to view.
 
 ## Next steps
 
