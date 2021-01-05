@@ -45,11 +45,15 @@ The following steps describe how to use **Publish to web**.
 
    ![Review the warning](media/service-publish-to-web/publish_to_web3_ga.png)
 
-5. In the **Success** dialog, select the **Size** and **Default page**. You can also add a **Placeholder** image. Make those changes first. Then copy the link to send it in email, or copy the HTML to paste into a website. You can embed it in code such as an iFrame, or paste it directly into a web page or blog.
+5. In the **Success** dialog, you see a preview of how the report will look. Select the **Size** and **Default page**. 
+
+    You can also add a **Placeholder** image, to make the web page load faster. With a placeholder image, people viewing your report on the web see a **View interactive content** button they can select to view the report itself. 
+
+    Make those changes first. Then copy the link to send it in email, or copy the HTML to paste into a website. You can embed it in code such as an iFrame, or paste it directly into a web page or blog.
 
    ![Success: a link and HTML](media/service-publish-to-web/publish_to_web4.png)
 
-6. If you previously created an embed code for a report and you select **Publish to web**, you won't see the dialogs in steps 2-4. Instead, the **Embed code** dialog appears:
+6. If you previously created an embed code for a report and you select **Publish to web**, you won't see the dialogs in steps 2-4. Instead, you see the **Embed code** dialog.
 
    ![Embed code dialog box](media/service-publish-to-web/publish_to_web5.png)
 
@@ -120,7 +124,7 @@ A heavy usage experience can occur when a report receives too many queries in a 
 
 We recommend setting a placeholder image for your report. If heavy usage occurs, users see the placeholder image. 
 
-To help avoid the heavy usage experience, limit the number of distinct queries your report can generate and the frequency of data refresh.
+To help avoid the heavy usage experience, limit the number of distinct queries your report can generate and the frequency of data refresh. See the [Power BI optimization guide](../guidance/power-bi-optimization.md) for tips on streamlining your reports.
 
 ## Power BI visuals
 
