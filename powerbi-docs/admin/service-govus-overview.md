@@ -1,14 +1,14 @@
 ---
 title: Power BI for US government customers - Overview
-description: US government customers can add a Power BI Pro subscription to their Microsoft 365 government plan. Learn how to sign up, connect, and review feature availability in this service description. 
+description: US government customers can add a Power BI subscription to their Microsoft 365 government plan. Learn how to sign up, connect, and review feature availability in this service description. 
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/17/2020
-ms.custom: licensing support
+ms.date: 01/05/2021
+ms.custom: gcc
 LocalizationGroup: Get started
 ---
 
@@ -108,9 +108,14 @@ To set up firewalls for SQL databases, see [Create and manage IP firewall rules]
 
 ## Power BI feature availability
 
-To accommodate the requirements of government cloud customers, there are some differences between government plans and commercial plans. Our goal is to make all features available in government clouds within 30 days of general availability. In some cases, underlying dependencies prevent us from making a feature available.
+To accommodate the requirements of government cloud customers, there are some differences between government plans and commercial plans. Our goal is to make all features available in government clouds within 30 days of general availability. In some cases, underlying dependencies prevent us from making a feature available. The list below shows features that aren't yet available in a particular government environment or that are available with limited functionality. The list uses the following key:
 
-The following table lists features that aren't available in a particular government environment. We include estimated availability if release is planned:
+|Key |Description|
+|-----|------|
+|![available](../media/yes.png)|The feature is available in the environment, with any exceptions defined in footnotes.|
+|![not available](../media/no.png)| The feature isn't available in the environment and we don't have an estimated time frame for delivery.|
+
+We include the quarter for estimated availability if release is planned for an environment.
 
 |Feature |GCC |GCC High |DoD|
 |------|------|------|------|
@@ -118,18 +123,18 @@ The following table lists features that aren't available in a particular governm
 |[Embed in SharePoint Online using the Power BI web part](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![available](../media/yes.png)|![Available](../media/yes.png)|![not available](../media/no.png)|
 |[Power Automate connectivity for data-driven alerts](../connect-data/power-bi-data-sources.md)|![available](../media/yes.png)|![available](../media/yes.png)|![not available](../media/no.png)|
 |[Power BI tab in Teams](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>2</sup>|![available](../media/yes.png)|![not available](../media/no.png)|![not available](../media/no.png)|
-|[Large models](service-premium-large-models.md) | Q4 2020 |Q4 2020| ![not available](../media/no.png) |
-|[Dataflows - SQL Compute engine optimization](../transform-model/dataflows/dataflows-premium-features.md) | Q4 2020 |Q4 2020| ![not available](../media/no.png) |
-|[Dataflows - Direct Query](../transform-model/dataflows/dataflows-configure-consume.md) | Q4 2020 |Q4 2020|![not available](../media/no.png)|
-|[Data Protection (MIP labels)](service-security-sensitivity-label-overview.md)|Q4 2020|Q4 2020 |Q4 2020|
-|[Template apps](../connect-data/service-template-apps-overview.md)<sup>3</sup>|Q4 2020 |Q4 2020| Q4 2020|
-|[Custom Visuals](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|Q4 2020 |Q4 2020| Q4 2020|
-|[Azure Stream Analytics](/azure/stream-analytics/stream-analytics-power-bi-dashboard)| Q4 2020|Q4 2020|Q4 2020|
+|[Large models](service-premium-large-models.md) | ![not available](../media/no.png) |![not available](../media/no.png)| ![not available](../media/no.png) |
+|[Dataflows - SQL Compute engine optimization](../transform-model/dataflows/dataflows-premium-features.md) | ![not available](../media/no.png) |![not available](../media/no.png)| ![not available](../media/no.png) |
+|[Dataflows - Direct Query](../transform-model/dataflows/dataflows-configure-consume.md) | ![not available](../media/no.png) |![not available](../media/no.png)|![not available](../media/no.png)|
+|[Data Protection (MIP labels)](service-security-sensitivity-label-overview.md)|![not available](../media/no.png)|![not available](../media/no.png) |![not available](../media/no.png)|
+|[Template apps](../connect-data/service-template-apps-overview.md)<sup>3</sup>|![not available](../media/no.png) |![not available](../media/no.png)| ![not available](../media/no.png)|
+|[Custom Visuals](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|![not available](../media/no.png) |![not available](../media/no.png)| ![not available](../media/no.png)|
+|[Azure Stream Analytics](/azure/stream-analytics/stream-analytics-power-bi-dashboard)| ![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[Bring Your Own Storage (Azure Data Lake Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[QR Code generation](../create-reports/service-create-qr-code-for-tile.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 
-<sup>1</sup> Although B2B Collaboration is available for GCC, the external user must be issued a license in that environment. Commercial cloud licenses aren't valid in GCC. For more information about known limitations with B2B Collaboration for US government, [Compare Azure Government and global Azure](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2)
+<sup>1</sup> Although B2B Collaboration is available for GCC, the external user must be issued a license in that environment. Commercial cloud licenses aren't valid in GCC. For more information about known limitations with B2B Collaboration for US government, [Compare Azure Government and global Azure](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2).
 
 <sup>2</sup> The Power BI experience in Teams for GCC is limited, works only for classic workspaces, and doesn't include the enhanced functionality described in [Embed Power BI Content in Microsoft Teams](../collaborate-share/service-embed-report-microsoft-teams.md).
 
