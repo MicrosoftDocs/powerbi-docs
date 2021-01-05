@@ -33,7 +33,7 @@ Certification is part of Power BI's *endorsement* feature. See [Endorsement: Pro
 
 1. Set the toggle to **Enabled**.
 1. If your organization has a published certification policy, provide its URL here. This will become the **Learn more** link in the certification section of the [endorsement settings dialog](../collaborate-share/service-endorse-content.md#request-content-certification). If you do not supply a link, users who want to request certification of their content will be advised to contact their Power BI administrator.
-1. Specify one or more security groups whose members will be authorized to certify content. These authorized certifiers will able to use the Certification button in the certification section of the [endorsement settings dialog](../collaborate-share/service-endorse-content.md#certify-content).
+1. Specify one or more security groups whose members will be authorized to certify content. These authorized certifiers will able to use the Certification button in the certification section of the [endorsement settings dialog](../collaborate-share/service-endorse-content.md#certify-content). This field acccepts security groups only. You cannot enter named users.
     
     If a security group contains sub-security groups that you do not want to give certification rights to, you can check the **Except specific security groups** box and enter the name(s) of those group(s) in a text box that will appear.
 1. Click **Apply**.
