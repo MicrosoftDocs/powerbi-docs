@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 11/16/2020
+ms.date: 01/04/2021
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
 ---
@@ -146,7 +146,7 @@ Executing the query ...
 Error -1052311437:
 ```
 
-This occurs because client libraries installed with SSMS v18.7.1 do not support session tracing. This will be resolved in an upcoming release of SSMS.
+This occurs because client libraries installed with SSMS v18.7.1 do not support session tracing. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
 
 ### Refresh operations
 
@@ -163,7 +163,51 @@ Date (UTC): 11/13/2020 7:57:16 PM
 Run complete
 ```
 
-This is due to a known issue in the client libraries where the status of the refresh request is incorrectly tracked. This will be resolved in an upcoming release of SSMS.
+This is due to a known issue in the client libraries where the status of the refresh request is incorrectly tracked. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
+
+## Editing role memberships in SSMS
+
+When using the SQL Server Management Studio (SSMS) v18.8 to edit a role membership on a dataset, SSMS may display the following error:
+
+```
+Failed to save modifications to the server. 
+Error returned: ‘Metadata change of current operation cannot be resolved, please check the command or try again later.’ 
+```
+
+This is due to a known issue in the app services REST API. This will be resolved in an upcoming release. In the meantime, to get around this error, in **Role Properties**, click **Script**, and then enter and execute the following TMSL command:
+
+```json
+{ 
+  "createOrReplace": { 
+    "object": { 
+      "database": "AdventureWorks", 
+      "role": "Role" 
+    }, 
+    "role": { 
+      "name": "Role", 
+      "modelPermission": "read", 
+      "members": [ 
+        { 
+          "memberName": "xxxx", 
+          "identityProvider": "AzureAD" 
+        }, 
+        { 
+          "memberName": “xxxx” 
+          "identityProvider": "AzureAD" 
+        } 
+      ] 
+    } 
+  } 
+} 
+```
+
+## Publish Error - Live connected dataset
+
+When republishing a live connected dataset utilizing the Analysis Services connector, the following error may be shown:
+
+:::image type="content" source="media/troubleshoot-xmla-endpoint/couldnt-publish-to-power-bi.png" alt-text="Couldn't publish to Power BI error.":::
+
+As stated in the error message, to resolve this issue, either delete or rename the existing dataset. Also be sure to republish any apps that are dependent on the report. If necessary, downstream users should also be informed to update any bookmarks with the new report address to ensure they access the latest report.  
 
 ## See also
 

@@ -1,6 +1,6 @@
 ---
-title: Auto install Power BI apps when embedding for your organization
-description: Learn how to auto install Power BI apps when embedding for your organization.
+title: Auto install Power BI apps when embedding for your organization using Power BI embedded analytics to create embedded BI insights
+description: Learn how to auto install Power BI apps when embedding for your organization using Power BI embedded analytics to create embedded BI insights.
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: how-to

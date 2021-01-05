@@ -1,6 +1,6 @@
 ---
-title: Scale your Power BI Embedded capacity | Microsoft Docs
-description: This article walks through how to scale a Power BI Embedded capacity in Microsoft Azure.
+title: Scale your Power BI Embedded capacity for your Power BI embedded analytics embedded BI solution
+description: This article walks through how to scale a Power BI Embedded capacity in Microsoft Azure, for your Power BI embedded analytics embedded BI solution.
 author: KesemSharabi
 ms.author: kesharab
 services: power-bi-embedded

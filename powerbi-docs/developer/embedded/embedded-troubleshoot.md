@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting your Power BI embedded analytics application
-description: This article discusses some common issues you may encounter when embedding content from Power BI.
+title: Troubleshooting your Power BI embedded analytics application to enable better embedded BI insights
+description: This article discusses some common issues you may encounter when embedding content from Power BI. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -114,7 +114,7 @@ We recommend you enable this policy only as a per-app basis.
 
 To create this policy, you need to be a **Global Administrator** for the directory where you're creating the policy and assigning. Here is a sample script for creating the policy and assigning it to the SP for this application:
 
-1. Install the [Azure AD Preview PowerShell Module](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
+1. Install the [Azure AD Preview PowerShell Module](/powershell/azure/active-directory/install-adv2).
 
 2. Run the following PowerShell commands line-by-line (making sure the variable $sp doesn't have more than one application as a result).
 
