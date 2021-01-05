@@ -1,6 +1,6 @@
 ---
-title: Certified Power BI visuals
-description: Requirements and process to submit a custom visual for certification, and a list of certified Power BI visuals.
+title: Certified Power BI visuals in Power BI embedded analytics for better embedded BI insights
+description: Requirements and process to submit a custom visual for certification, and a list of certified Power BI visuals. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""

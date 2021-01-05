@@ -1,6 +1,6 @@
 ---
-title: Power BI visual data point selections
-description: The article describes how to add selections into Power BI visuals
+title: Power BI visual data point selections in Power BI embedded analytics for better embedded BI insights
+description: The article describes how to add selections into Power BI visuals. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin

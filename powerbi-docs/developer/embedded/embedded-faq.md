@@ -1,6 +1,6 @@
 ---
-title: Frequently asked questions about Power BI embedded analytics
-description: Browse a list of frequently asked questions and answers about Power BI Embedded.
+title: Frequently asked questions about Power BI embedded analytics helping you to enable better embedded BI insights
+description: Browse a list of frequently asked questions and answers about Power BI embedded analytics which enhance customers embedded BI insights.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''

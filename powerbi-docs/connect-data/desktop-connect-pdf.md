@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 07/16/2020
+ms.date: 01/04/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to PDF files in Power BI Desktop
