@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 01/04/2021
 LocalizationGroup: Share your work
 ---
 
@@ -45,7 +45,7 @@ The following steps describe how to use **Publish to web**.
 
    ![Review the warning](media/service-publish-to-web/publish_to_web3_ga.png)
 
-5. A dialog appears with a link. Select the link to send it in email, or copy the HTML. You can embed it in code such as an iFrame, or paste it directly into a web page or blog.
+5. In the **Success** dialog, select the **Size** and **Default page**. You can also add a **Placeholder** image. Make those changes first. Then copy the link to send it in email, or copy the HTML to paste into a website. You can embed it in code such as an iFrame, or paste it directly into a web page or blog.
 
    ![Success: a link and HTML](media/service-publish-to-web/publish_to_web4.png)
 
@@ -54,9 +54,6 @@ The following steps describe how to use **Publish to web**.
    ![Embed code dialog box](media/service-publish-to-web/publish_to_web5.png)
 
    You can only create one embed code for each report.
-
-If you make changes in the dialog, make sure to copy the updated URL or iFrame to use the updated settings in your page.
-
 
 ### Tips for view modes
 
