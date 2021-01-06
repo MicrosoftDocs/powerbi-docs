@@ -1,31 +1,27 @@
 ---
-title: Use the Power BI Q&A visual
-description: How to set up the Power BI Q&A visual
-author: rien
-ms.author: rien
+title: Create a Q&A visual in Power BI
+description: How to create and format a Power BI Q&A visual in Power BI Desktop or the Power BI service.
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/19/2019
+ms.date: 01/05/2021
 ---
-# Introduction to Power BI Q&A visualizations
+# Create a Q&A visual in Power BI
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+The Q&A visual allows users to ask natural language questions and get answers in the form of a visual. *Consumers* can use it to quickly get answers to their data. *Designers* can also use it to create visuals quickly. If you're a report designer, this article is for you. You can double-click anywhere on a report and use natural language to get started. In this article, you create, format, and customize a Q&A visual. It supports themes and other default formatting options available inside Power BI. After you create it, it behaves like any other visual, supporting cross-filtering, cross-highlighting, and bookmarks. 
 
-## What are Q&A visualizations?
-
-The Q&A visual allows users to ask natural language questions and get answers in the form of a visual. 
+Looking for more background about Q&A in Power BI? Check out [Introduction to Q&A](../natural-language/q-and-a-intro.md). 
 
 ![Q&A visual walkthrough](../natural-language/media/qna-visual-walkthrough.gif)
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-The Q&A visual can be both used as a tool to allow *consumers* to quickly get answers to their data, and by *designers* to create visuals in report by simply double-clicking anywhere on a report and using natural language to get started. As it behaves like any other visual, the Q&A visual can be cross-filtered/cross-highlighted and also supports bookmarks. The Q&A visual also supports themes and other default formatting options available inside Power BI.
-
-The Q&A visual consists of four core components;
+The Q&A visual consists of four core components:
 
 - The question box. This is where users type in their question and are shown suggestions to help them complete their question.
 - A pre-populated list of suggested questions.
@@ -34,20 +30,20 @@ The Q&A visual consists of four core components;
 
 ## Prerequisites
 
-1. This tutorial uses the [Sales & Marketing sample PBIX file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix). 
+1. Download [Sales & Marketing sample PBIX file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) to follow along.
 
-1. From the upper left section of the Power BI Desktop menu bar, select **File** > **Open**
+1. In the upper left section of the Power BI Desktop, select **File** > **Open**.
    
-2. Find your copy of the **Sales & Marketing sample PBIX file**
+2. Find your copy of the **Sales & Marketing sample PBIX file**.
 
 1. Open the file in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
+1. Select the plus sign ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
 
-If you see an error when creating a Q&A visual, be sure to check out the [limitations](../natural-language/q-and-a-limitations.md) section to see if the datasource configuration is supported.    
+If you see an error when creating a Q&A visual, be sure to check the [Q&A limitations](../natural-language/q-and-a-limitations.md) article to see if the data source configuration is supported.    
 
 > [!NOTE]
-> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../collaborate-share/service-share-reports.md).
+> Sharing your report with a Power BI colleague requires that either you both have individual Power BI Pro licenses or you save the report in a Premium capacity workspace. See [sharing reports](../collaborate-share/service-share-dashboards.md).
 
 ## Create a Q&A visual using a suggested question
 In this exercise, we'll select one of the suggested questions to create our Q&A visual. 
