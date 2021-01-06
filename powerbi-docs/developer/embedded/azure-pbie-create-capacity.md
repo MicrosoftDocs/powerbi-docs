@@ -41,8 +41,9 @@ Before creating a Power BI Embedded capacity, make sure you have signed into Pow
 3. Within Power BI Embedded, select **Add**.
 
 4. Fill in the required information and then click **Review + Create**.
-
-    ![Screenshot shows the Basics tab of the Power B I Embedded page to create new capacity in the Azure portal.](media/azure-pbie-create-capacity/azure-create-capacity.png)
+    
+    > [!div class="mx-imgBorder"]
+    >![Screenshot shows the Basics tab of the Power B I Embedded page to create new capacity in the Azure portal.](media/azure-pbie-create-capacity/azure-create-capacity.png)
 
     * **Subscription** - The subscription you would like to create the capacity against.
 
@@ -59,6 +60,15 @@ Before creating a Power BI Embedded capacity, make sure you have signed into Pow
         >* By default, the capacity administrator is the user creating the capacity.
         >* You can select a different user or service principal, as capacity administrator.
         >* The capacity administrator must belong to the tenant where the capacity is provisioned. Business to business (B2B) users cannot be capacity administrators.
+
+    * **Resource mode** - Select between these two Power BI Embedded resources:
+
+        * **Embedded Generation 1** - The classic Power BI Embedded resource.
+
+        * **Embedded Generation 2** - The new Power BI Embedded resource, offering enhanced performance. For more information, see [Power BI Embedded Premium Generation 2](power-bi-embedded-premium-gen2.md). 
+        
+        >[!IMPORTANT]
+        >Once you create a capacity resource, you cannot switch generations. If you want to change your Power BI Embedded resource, you can pause the capacity resource, create another one using a different generation, and reassign your workspaces to it. You can also automate this process using ARM APIs.
 
 # [Azure CLI](#tab/CLI)
 
@@ -134,6 +144,9 @@ az powerbi embedded-capacity delete --name
 You can view all the Power BI Embedded Azure CLI commands, in [az powerbi](/cli/azure/ext/powerbidedicated/powerbi).
 
 # [ARM template](#tab/ARM-template)
+
+>[!NOTE]
+>ARM template is not supported for [Power BI Embedded Premium Generation 2](power-bi-embedded-premium-gen2.md).
 
 ### Use Resource Manager template
 

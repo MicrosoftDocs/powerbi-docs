@@ -1,13 +1,12 @@
 ---
-title: Gen2 Premium explained in Power BI embedded analytics enabling better embedded BI insights
-description: Learn about the Gen2 Premium offering in Power BI embedded analytics, which enable better embedded BI insights.
+title: Power BI Embedded Gen2 Premium explained as part of Power BI embedded analytics enabling better embedded BI insights
+description: Learn about the Power BI Embedded Gen2 Premium offering in Power BI embedded analytics, which enable better embedded BI insights.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
-ms.custom: seodec18, devx-track-js
 ms.date: 06/01/2021
 ---
 
@@ -16,9 +15,9 @@ ms.date: 06/01/2021
 Power BI Embedded recently released a new version of Power BI Embedded, **Power BI Embedded Generation 2**, referred to as **Embedded Gen2** for convenience. Embedded Gen2 is currently in preview, and is available for Embedded subscribers to use during the preview period. You can still create the original version of Power BI Embedded resource, called Embedded Gen 1, or create a new Embedded Gen 2 resource. During the preview period, you can run both types of Power BI Embedded resources in parallel, each assigned to a different workspace.
 
 >[!NOTE]
->This article lists the **Power BI Embedded** Premium Gen2 enhancements. To review all the Power BI Premium Gen2 benefits, refer to [Power BI Premium Generation 2](../../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview). 
+>This article lists the **Power BI Embedded** Premium Gen2 enhancements. To review all the Power BI Premium Gen2 benefits, refer to [Power BI Premium Generation 2](../../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview).
 
-Embedded Gen2 capacity resource provides the following updates and improved experience:
+All of the Power BI Embedded Gen 1 capabilities (such as pausing and resuming the capacity) are preserved in Gen 2. In addition, the Gen 2 capacity resource provides the following updates and improved experience:
 
 * **Enhanced performance** - Better performance on any capacity size, anytime. Analytics operations run up to 16 times faster on Embedded Gen2. Operations will always perform at top speed and won't slow down when the load on the capacity approaches the capacity limits.
 
@@ -48,8 +47,15 @@ Embedded Gen2 capacity resource provides the following updates and improved expe
 
 Create an Embedded Gen2 capacity resource to take advantage of its updates. To create an Embedded Gen2 capacity resource, follow the instructions in [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 
+## Known limitations
 
+* Embedded Gen2 capacity utilization can't be tracked in the metrics app.
 
+* Memory allocation settings for specific workloads don't apply to Embedded Gen2 capacities.
+
+* If you're using XMLA on Embedded Gen2, make sure you're using the most recent versions of the data modeling and management tools.
+
+* Analysis services features in Embedded Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are listed in [Known limitations in Premium Gen2](../../admin/service-premium-what-is.md#known-limitations-in-premium-gen2).
 
 ## Next steps
 
