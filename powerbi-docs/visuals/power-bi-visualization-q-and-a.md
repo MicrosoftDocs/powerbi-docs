@@ -3,7 +3,7 @@ title: Create a Q&A visual in Power BI
 description: How to create and format a Power BI Q&A visual in Power BI Desktop or the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: mihart
+ms.reviewer: rien
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
