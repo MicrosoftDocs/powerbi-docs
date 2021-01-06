@@ -234,7 +234,7 @@ Run the project by selecting the appropriate option:
 
 [!INCLUDE[Configure the Azure AD permissions](../../includes/embed-tutorial-org-azure-ad-permissions.md)]
 
-### Reinstall the Power BI JavaScript package
+### Reinstall the Power BI JavaScript NuGet package
 
 1. Open [Visual Studio](https://visualstudio.microsoft.com/).
 
