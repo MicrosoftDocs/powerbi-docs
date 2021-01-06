@@ -26,7 +26,7 @@ The Q&A visual consists of four core components:
 - The question box. This is where users type in their question and are shown suggestions to help them complete their question.
 - A pre-populated list of suggested questions.
 - Icon to convert the Q&A visual into a standard visual. 
-- Icon to open Q&A tooling which allows designers to configure the underlying natural language engine.
+- Icon to open Q&A tooling, which allows designers to configure the underlying natural language engine.
 
 ## Prerequisites
 
@@ -67,7 +67,7 @@ In this exercise, we'll select one of the suggested questions to create our Q&A 
 ## Create a Q&A visual using a natural language query
 In the example above, we selected one of the suggested questions to create our Q&A visual.  In this exercise, we'll type our own question. As we type our question, Power BI helps us with autocomplete, suggestion, and feedback.
 
-If you're unsure what type of questions to ask or terminology to use, expand **Show all suggestions** or look through the Fields pane which can be found along the right side of the canvas. This will get you familiar with the terms and content of the Sales & Marketing dataset.
+If you're unsure what type of questions to ask or terminology to use, expand **Show all suggestions** or look through the Fields pane along the right side of the canvas. The Fields pane will get you familiar with the terms and content of the Sales & Marketing dataset.
 
 ![canvas with Show all suggestions and the Fields pane outlined](media/power-bi-visualization-q-and-a/power-bi-terminology.png)
 
@@ -105,7 +105,7 @@ When you select a theme, that theme is applied to the entire report page. There 
 
     
     
-2. In this example we've selected **More themes** > **Color blind safe**.
+2. In this example, we've selected **More themes** > **Color blind safe**.
 
     ![Q&A visual with color blind theme applied](media/power-bi-visualization-q-and-a/power-bi-color-blind.png)
 
@@ -115,7 +115,7 @@ Format the Q&A visual, the question field, and the way suggestions are displayed
 ![Q&A visual showing our formatting results](media/power-bi-visualization-q-and-a/power-bi-q-and-a-format.png)
 
 ## Convert your Q&A visual into a standard visual
-We've formatted our color blind safe column chart visual a bit -- added a title and a border. Now we're ready to convert it to a standard visual in our report and also pin it to a dashboard.
+We've formatted our color blind safe column chart visual a bit: We added a title and a border. Now we're ready to convert it to a standard visual in our report and also pin it to a dashboard.
 
 Select the icon ![cog icon](media/power-bi-visualization-q-and-a/power-bi-convert-icon.png) to **Turn this Q&A result into a standard visual**.
 
@@ -134,7 +134,7 @@ Selecting the cog icon opens the Q&A visual Tooling pane.
 
 ![Q&A visual with Tooling icon selected](media/power-bi-visualization-q-and-a/power-bi-q-and-a-tooling.png)
 
-Use the Tooling pane to teach Q&A terms it doesn't recognize, to manage those terms, and to manage the suggested questions for this dataset and report. In the Tooling pane you can also review questions that have been asked using this Q&A visual and see questions that have been flagged by users. To learn more, see [Q&A Tooling into](../natural-language/q-and-a-tooling-intro.md).
+Use the Tooling pane to teach Q&A terms it doesn't recognize, to manage those terms, and to manage the suggested questions for this dataset and report. In the Tooling pane, you can also review questions that users have asked in this Q&A visual and see questions that users have flagged. To learn more, see [Intro to Q&A tooling to train Power BI Q&A](../natural-language/q-and-a-tooling-intro.md).
 
 ![The Q&A Tooling pane](media/power-bi-visualization-q-and-a/power-bi-q-and-a-tooling-pane.png)
 
@@ -143,7 +143,7 @@ The Q&A visual integrates with Office and Bing to attempt to match unrecognized 
 
 ## Next steps
 
-There are a variety of ways you can integrate natural language. For more information, see the following articles:
+There are several ways you can integrate natural language. For more information, see the following articles:
 
 * [Q&A Tooling](../natural-language/q-and-a-tooling-intro.md)
 * [Q&A Best Practices](../natural-language/q-and-a-best-practices.md)
