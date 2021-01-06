@@ -452,7 +452,7 @@ When you put data into data-field buckets, Power BI produces a categorical `data
 
 In unit tests, you don't have Power BI core functions to reproduce the data. But you need to map your static data to the categorical `dataview`. The `TestDataViewBuilder` class can help you map it.
 
-For more information about Data View mapping, see [DataViewMappings](https://github.com/Microsoft/PowerBI-visuals/blob/master/Capabilities/DataViewMappings.md).
+For more information about Data View mapping, see [DataViewMappings](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/Capabilities/DataViewMappings.md).
 
 In the `getDataView` method, you call the `createCategoricalDataViewBuilder` method with your data.
 
