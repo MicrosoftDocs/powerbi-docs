@@ -217,8 +217,6 @@ Run the project by selecting the appropriate option:
 
 ### Configure your Azure AD app
 
-1. Open [Visual Studio](https://visualstudio.microsoft.com/).
-
 [!INCLUDE[Configure the Azure AD authentication options](../../includes/embed-tutorial-org-azure-ad-app.md)]
 
 5. In *Platform configurations* configure the following:
@@ -238,7 +236,13 @@ Run the project by selecting the appropriate option:
 
 ### Reinstall the Power BI JavaScript package
 
-[!INCLUDE[Instructions for reinstalling the Microsoft.PowerBI.JavaScript NuGet Package](../../includes/embed-tutorial-reinstall-nuget.md)]
+1. Open [Visual Studio](https://visualstudio.microsoft.com/).
+
+2. Open **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**.
+
+3. Search for **Microsoft.PowerBI.JavaScript**.
+
+4. Reinstall the package. For more information, see [How to reinstall and update packages](/nuget/consume-packages/reinstalling-and-updating-packages).
 
 ### Configure the sample embedding app
 
