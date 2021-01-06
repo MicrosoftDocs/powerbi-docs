@@ -325,17 +325,13 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
 # [.NET Framework](#tab/net-framework)
 
-### Reinstall the Power BI JavaScript package
+6. Using [Visual Studio](https://visualstudio.microsoft.com/), open the **AppOwnsData.sln** file.
+
+7. Open **Web.config**.
 
 [!INCLUDE[Instructions for reinstalling the Microsoft.PowerBI.JavaScript NuGet Package](../../includes/embed-tutorial-reinstall-nuget.md)]
 
-### Run the sample application
-
-1. Using [Visual Studio](https://visualstudio.microsoft.com/), open the **AppOwnsData.sln** file.
-
-2. Open **Web.config**.
-
-3. Depending on your authentication method, fill in the following parameter values:
+11. Depending on your authentication method, fill in the following parameter values:
 
     |Parameter            |Service principal  |Master user  |
     |---------------------|---------|---------|
@@ -348,7 +344,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
     |`applicationSecret`       |Your Azure AD [client secret](#client-secret)         |N/A         |
     |`tenant`           |Your Azure AD [tenant ID](#tenant-id)         |N/A         |
 
-4. Run the project by selecting **IIS Express** (play).
+12. Run the project by selecting **IIS Express** (play).
 
 # [Java](#tab/java)
 

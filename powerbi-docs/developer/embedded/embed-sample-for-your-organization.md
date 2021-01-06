@@ -203,17 +203,21 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
     * `ClientSecret` - Use the [client secret](#client-secret)
 
-4. Run the project by selecting the appropriate option:
+### Run the sample app
 
-    * If you're using **Visual Studio**, select **IIS Express** (play).
+Run the project by selecting the appropriate option:
 
-    * If you're using **Visual Studio Code**, select **Run > Start Debugging**.
+* If you're using **Visual Studio**, select **IIS Express** (play).
+
+* If you're using **Visual Studio Code**, select **Run > Start Debugging**.
 
 [!INCLUDE[The embedded application sample app interface](../../includes/embed-tutorial-org-sample-app.md)]
 
 # [.NET Framework](#tab/net-framework)
 
 ### Configure your Azure AD app
+
+1. Open [Visual Studio](https://visualstudio.microsoft.com/).
 
 [!INCLUDE[Configure the Azure AD authentication options](../../includes/embed-tutorial-org-azure-ad-app.md)]
 
@@ -248,7 +252,9 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
     * `clientSecret` - Use the [client secret](#client-secret)
 
-4. Run the project by selecting **IIS Express** (play).
+### Run the sample app
+
+1. Run the project by selecting **IIS Express** (play).
 
 [!INCLUDE[The embedded application sample app interface](../../includes/embed-tutorial-org-sample-app.md)]
 
@@ -295,13 +301,15 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
 3. Save the file.
 
-4. Open a terminal in and navigate to **Embed for your organization** > **UserOwnsData**.
+### Run the sample app
 
-5. Install required dependencies by executing the following command:
+1. Open a terminal in and navigate to **Embed for your organization** > **UserOwnsData**.
+
+2. Install required dependencies by executing the following command:
 
    `npm install`
 
-6. Run the application by executing the following command:
+3. Run the application by executing the following command:
 
    `npm run start`
 
