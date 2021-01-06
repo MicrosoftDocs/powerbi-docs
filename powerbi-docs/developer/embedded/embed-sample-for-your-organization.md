@@ -1,6 +1,6 @@
 ---
-title: Embed content in your Power BI embedded analytics application for your organization
-description: Learn how to embed, a report, dashboard, or tile into a Power BI embedded analytics embed for your customers sample.
+title: Embed content in your Power BI embedded analytics application enabling better embedded BI insights for your organization
+description: Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
@@ -98,10 +98,7 @@ To create an *embed for your organization* sample app, follow these steps:
 
 ## Step 1 - Register an Azure AD application
 
-Registering your application with Azure AD allows you to:
-> [!div class="checklist"]
->* Establish an identity for your app
->* Let your app access the [Power BI REST APIs](/rest/api/power-bi/)
+Registering your application with Azure AD allows you to establish an identity for your app.
 
 [!INCLUDE[Register Azure AD app](../../includes/embed-tutorial-register-app.md)]
 
@@ -234,6 +231,10 @@ Follow these steps to modify the *embed for your organization* sample applicatio
     :::image type="content" source="media/embed-sample-for-your-organization/azure-ad-framework-configurations.png" alt-text="Screenshot showing the Azure AD app authentication configurations including the web redirect U R I and the selected access token option for the .NET framework app sample.":::
 
 [!INCLUDE[Configure the Azure AD permissions](../../includes/embed-tutorial-org-azure-ad-permissions.md)]
+
+### Reinstall the Power BI JavaScript package
+
+[!INCLUDE[Instructions for reinstalling the Microsoft.PowerBI.JavaScript NuGet Package](../../includes/embed-tutorial-reinstall-nuget.md)]
 
 ### Configure the sample embedding app
 

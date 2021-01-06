@@ -1,6 +1,6 @@
 ---
-title: Highlighting
-description: Data points selections highlighting in Power BI Visuals
+title: Highlighting in Power BI embedded analytics for better embedded BI insights
+description: Data points selections highlighting in Power BI Visuals. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin

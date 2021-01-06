@@ -1,6 +1,6 @@
 ---
-title: Embed content in your Power BI embedded analytics application for your customers
-description: Learn how to embed, a report, dashboard, or tile into a Power BI embedded analytics embed for your organization sample.
+title: Embed content in your Power BI embedded analytics application enabling better embedded BI insights for your customers
+description: Learn how to embed, a report, dashboard, or tile into a Power BI embedded analytics sample. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
@@ -325,11 +325,17 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
 # [.NET Framework](#tab/net-framework)
 
-6. Using [Visual Studio](https://visualstudio.microsoft.com/), open the **AppOwnsData.sln** file.
+### Reinstall the Power BI JavaScript package
 
-7. Open **Web.config**.
+[!INCLUDE[Instructions for reinstalling the Microsoft.PowerBI.JavaScript NuGet Package](../../includes/embed-tutorial-reinstall-nuget.md)]
 
-8. Depending on your authentication method, fill in the following parameter values:
+### Run the sample application
+
+1. Using [Visual Studio](https://visualstudio.microsoft.com/), open the **AppOwnsData.sln** file.
+
+2. Open **Web.config**.
+
+3. Depending on your authentication method, fill in the following parameter values:
 
     |Parameter            |Service principal  |Master user  |
     |---------------------|---------|---------|
@@ -342,14 +348,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
     |`applicationSecret`       |Your Azure AD [client secret](#client-secret)         |N/A         |
     |`tenant`           |Your Azure AD [tenant ID](#tenant-id)         |N/A         |
 
-9. Run the project by selecting **IIS Express** (play).
-
->[!NOTE]
->If you're not seeing the embedded report when running the sample app, refresh the Power BI packages by following these steps:
->1.	Right-click on the project name (AppOwnesData), and select **Manage NuGet packages**.
->2. Search for **Power BI JavaScript** and then reinstall the package.
->
->For more information, see [How to reinstall and update packages](/nuget/consume-packages/reinstalling-and-updating-packages).
+4. Run the project by selecting **IIS Express** (play).
 
 # [Java](#tab/java)
 
