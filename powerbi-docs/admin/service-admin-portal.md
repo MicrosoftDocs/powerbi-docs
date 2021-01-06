@@ -383,7 +383,7 @@ Users in the organization can use the export report to file API to export report
 Allow users in this org to certify datasets, dataflows, reports, and apps. See [Enable content certification](service-admin-setup-certification.md) for details.
 
 ### Email Subscriptions
-Users in the organization can create email subscriptions. Learn more about [subscriptions](../collaborate-share/service-publish-to-web.md).
+Users in the organization can create email subscriptions. Learn more about [subscriptions](../collaborate-share/service-report-subscribe.md).
 
 ![Enable email subscriptions](media/service-admin-portal/power-bi-manage-email-subscriptions.png)
 
