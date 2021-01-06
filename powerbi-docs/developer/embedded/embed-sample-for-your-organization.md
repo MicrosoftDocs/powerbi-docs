@@ -291,7 +291,7 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
     * `workspaceId` - Use the [workspace ID](#client-secret)
 
-    * `reportId` - Use the [report ID](#repoert-id)
+    * `reportId` - Use the [report ID](#report-id)
 
 3. Save the file.
 
