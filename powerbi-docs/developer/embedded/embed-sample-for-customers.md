@@ -181,7 +181,7 @@ To create a workspace, do the following:
 
 ## Step 4 - Create and publish a Power BI report
 
-Your next step is to create a report and upload it to your workspace. You can [create your own report](/powerbi-docs/fundamentals/desktop-getting-started#build-reports) using Power BI Desktop, and then [publish](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work) it to your workspace. Or, you can upload a sample report to your workspace.
+Your next step is to create a report and upload it to your workspace. You can [create your own report](/power-bi/fundamentals/desktop-getting-started#build-reports) using Power BI Desktop, and then [publish](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work) it to your workspace. Or, you can upload a sample report to your workspace.
 
 >[!Tip]
 >If you already have a workspace with a report, you can skip this step.
