@@ -22,53 +22,57 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 Get started with these popular on-demand webinars:
 
+**Data-driven insights for real-time decisions and stronger customer connections**  
+by Shruti Shukla and Chandra Stevens  
+[Watch now](https://info.microsoft.com/ww-Landing-DataDrivenInsights.html)
+
 **Get up and Running Quickly with Power BI**  
 by Miguel Martinez, Microsoft  
-[Register to watch on November 5, 2020 10:00 AM–11:00 AM PDT](https://info.microsoft.com/ww-landing-get-up-and-running-quickly-with-power-bi.html?lcid=en-us)
+[Watch now](https://info.microsoft.com/ww-landing-get-up-and-running-quickly-with-power-bi.html)
 
 **Drive a Remote Data Culture with Power BI and Microsoft Teams**  
 by Lukasz Pawlowski  
-[Watch now](https://info.microsoft.com/ww-Landing-RemoteDataCulturePowerBIandMicrosoftTeams.html?LCID=EN-US)
+[Watch now](https://info.microsoft.com/ww-Landing-RemoteDataCulturePowerBIandMicrosoftTeams.html)
 
 **Better Together: 5 Benefits Excel Users Will Get From Using Power BI**  
 by Miguel Martinez and Carlos Otero  
-[Watch now](https://info.microsoft.com/ww-Landing-FiveBenefitsExcelUsersWillGetFromUsingPowerBI-Webinar.html?LCID=EN-US)
+[Watch now](https://info.microsoft.com/ww-Landing-FiveBenefitsExcelUsersWillGetFromUsingPowerBI-Webinar.html)
 
 **Monitor Your Data in Real-time with Microsoft Power BI**  
 by Miguel Martinez and Peter Myers  
-[Watch now](https://info.microsoft.com/ww-landing-Monitor-Your-Data-in-Real-time-with-Microsoft-Power-BI.html?lcid=en-us)
+[Watch now](https://info.microsoft.com/ww-landing-Monitor-Your-Data-in-Real-time-with-Microsoft-Power-BI.html)
 
 **Accelerate Power BI on Azure Data Lake Storage with Dremio**  
 by Chris Webb and Tomer Shiran
-[Watch now]( https://info.microsoft.com/ww-landing-Accelerate-Power-BI-on-Azure-Data-Lake-Storage-with-Dremio.html?lcid=en-us)
+[Watch now]( https://info.microsoft.com/ww-landing-Accelerate-Power-BI-on-Azure-Data-Lake-Storage-with-Dremio.html)
 
 **Build Scalable BI Solutions Using Power BI and Snowflake**  
 by Chris Webb, Craig Collier, and Chris Holliday  
-[Watch now](https://info.microsoft.com/ww-landing-build-scalable-BI-solutions-using-power-BI-and-snowflake.html?lcid=en-us)
+[Watch now](https://info.microsoft.com/ww-landing-build-scalable-BI-solutions-using-power-BI-and-snowflake.html)
 
 **Boost User Satisfaction with Best Practices for Managing BI Content**  
 by Nimrod Shalit  
-[Watch now](https://info.microsoft.com/ww-landing-Boost-User-Satisfaction-with-Best-Practices-for-Managing-BI-Content.html?lcid=en-us)
+[Watch now](https://info.microsoft.com/ww-landing-Boost-User-Satisfaction-with-Best-Practices-for-Managing-BI-Content.html)
 
 **From Insight to Action: Driving a Data Culture with Power BI**  
 by Arun Ulagaratchagan and Amir Netz  
-[Watch now]( https://info.microsoft.com/ww-landing-From-Insight-to-Action-Driving-a-Data-Culture-with-Power-BI.html?lcid=en-us)
+[Watch now]( https://info.microsoft.com/ww-landing-From-Insight-to-Action-Driving-a-Data-Culture-with-Power-BI.html)
 
 **Enable Better Analytics with Power BI Embedded**  
 by Alon Baram  
-[Watch now](https://info.microsoft.com/ww-landing-Enable-Better-Analytics-with-Power-BI-Embedded.html?Lcid=EN-US)
+[Watch now](https://info.microsoft.com/ww-landing-Enable-Better-Analytics-with-Power-BI-Embedded.html)
 
 **How the Miami HEAT Used Power BI to Drive Business Decisions**  
 by Edson Crevecoeur, Frank Mesa and Xinrou Tan  
-[Watch now]( https://info.microsoft.com/ww-Landing-How-the-Miami-HEAT-Used-Power-BI-to-Drive-Business-Decisions.html?Lcid=EN-US)
+[Watch now]( https://info.microsoft.com/ww-Landing-How-the-Miami-HEAT-Used-Power-BI-to-Drive-Business-Decisions.html)
 
 **Simplify Big Data Prep and Analysis with Power BI**  
 by Priya Sathy  
-[Watch now](https://info.microsoft.com/ww-landing-simplify-big-data-prep-and-analysis-with-power-BI.html?lcid=en-us)
+[Watch now](https://info.microsoft.com/ww-landing-simplify-big-data-prep-and-analysis-with-power-BI.html)
 
 **Improve Decision-Making with Power BI**  
 by Kim Manis and Lukasz Pawlowski  
-[Watch now](https://info.microsoft.com/ww-Landing-Improve-Decision-Making-with-Power-BI.html?LCID=EN-US)
+[Watch now](https://info.microsoft.com/ww-Landing-Improve-Decision-Making-with-Power-BI.html)
 
 ## On-demand webinars
 
@@ -76,7 +80,7 @@ Watch recorded sessions at any time.
 
 **Explore the Total Economic Impact of Microsoft Power BI**  
 by Megan Tomlin, Microsoft and Jonathan Lipsitz, Forrester Consulting  
-[Watch now]( https://info.microsoft.com/ww-landing-Explore-the-Total-Economic-Impact-Of-Microsoft-Power-BI.html?Lcid=EN-US)
+[Watch now]( https://info.microsoft.com/ww-landing-Explore-the-Total-Economic-Impact-Of-Microsoft-Power-BI.html)
 
 **Analytics in Azure virtual event: Accelerate time to insight with Azure Synapse Analytics**  
 by Gayle Sheppard and John Macintyre  
@@ -84,23 +88,23 @@ by Gayle Sheppard and John Macintyre
 
 **How Microsoft Is Changing BI Data Protection**  
 by Anton Fritz and Adi Regev  
-[Register and watch now](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
+[Register and watch now](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html)
 
 **How to Become an Insights-Driven Business**  
 by Amir Netz, Microsoft and Boris Evelson, Forrester  
-[Register and watch now](https://info.microsoft.com/ww-landing-how-to-become-an-insights-driven-business.html?lcid=en-us)
+[Register and watch now](https://info.microsoft.com/ww-landing-how-to-become-an-insights-driven-business.html)
 
 **Three Ways AI Is Changing BI**  
 by Justyna Lucznik  
-[Register and watch now](https://info.microsoft.com/ww-landing-Three-Ways-AI-Is-Changing-BI.html?lcid=EN-US&ocid=mkto_eml_EM581230A1LA1)
+[Register and watch now](https://info.microsoft.com/ww-landing-Three-Ways-AI-Is-Changing-BI.html&ocid=mkto_eml_EM581230A1LA1)
 
 **Power BI and the Future of Modern and Enterprise BI**  
 by Arun Ulag and Amir Netz  
-[Register and watch now](https://info.microsoft.com/ww-landing-The-Future-of-Modern-and-Enterprise-BI-video.html?LCID=EN-US)
+[Register and watch now](https://info.microsoft.com/ww-landing-The-Future-of-Modern-and-Enterprise-BI-video.html)
 
 **Nine Trends Shaping the Future of Big Data Analytics**  
 by Vijay Gopalakrishnan  
-[Register and watch now](https://info.microsoft.com/ww-landing-Nine-Trends-Shaping-the-Future-of-Big-Data-Analytics.html?Lcid=EN-US)
+[Register and watch now](https://info.microsoft.com/ww-landing-Nine-Trends-Shaping-the-Future-of-Big-Data-Analytics.html)
 
 **Getting Started with Power BI**  
 by Miguel Martinez  
@@ -108,7 +112,7 @@ by Miguel Martinez
 
 **Get Started with the Power BI Mobile App**  
 by Maya Shenhav  
-[Register and watch now](https://info.microsoft.com/ww-Landing-Getting-Started-with-the-Power-BI-Mobile-App-Video.html?LCID=EN-US)
+[Register and watch now](https://info.microsoft.com/ww-Landing-Getting-Started-with-the-Power-BI-Mobile-App-Video.html)
 
 **Learn to Navigate Your Way Through a Power BI Dashboard in 20 Minutes**  
 by Miguel Martinez  
@@ -120,7 +124,7 @@ by Kasper de Jonge
 
 **Using Power BI with Dynamics 365 Finance and Operations**  
 by Kevin Horlock  
-[Register and watch now](https://info.microsoft.com/ww-landing-Using-Power-BI-with-Dynamics-365-Finance-and-Operations.html?LCID=EN-US)
+[Register and watch now](https://info.microsoft.com/ww-landing-Using-Power-BI-with-Dynamics-365-Finance-and-Operations.html)
 
 **Microsoft Runs on Power BI – Financial Planning & Analysis Made Easy**  
 by Cory Hrncirik and Miguel Martinez  
@@ -128,7 +132,7 @@ by Cory Hrncirik and Miguel Martinez
 
 **Microsoft Runs on Power BI: Using Power BI in Modern Treasury**  
 by Pankaj Gudimella and Guru Kirthigavasan  
-[Register and watch now](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
+[Register and watch now](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html)
 
 **Supercharge Your Applications Using the Power BI JavaScript API**  
 by Nimrod Shalit  
@@ -152,7 +156,7 @@ by Wim Coorevits and Enrique Plaza Garcia
 
 **Best Practices for Managing Power BI Embedded Analytics for Multi-Tenant Deployments**  
 by Nimrod Shalit  
-[Register and watch now](https://info.microsoft.com/ww-landing-PBI-webinar-Best-Practices-for-Managing-Power-BI-Embedded-video.html?LCID=EN-US)
+[Register and watch now](https://info.microsoft.com/ww-landing-PBI-webinar-Best-Practices-for-Managing-Power-BI-Embedded-video.html)
 
 **Power BI: Analytics Done Right**  
 by Gohul Shanmugalingam  
@@ -195,7 +199,7 @@ by Reid Havens
 
 **Power BI: How to Get Insights from Your Workday HR Data**  
 by Iman Eftekhari, Julia Paton from Agile Analytics and Shahram Karimi from QBE Insurance  
-[Register and watch now](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
+[Register and watch now](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html)
 
 **Achieving a Win-Win for Consumer Product Goods Manufacturers and Retailers**  
 by Liz McCreesh from Thorogood  
@@ -203,7 +207,7 @@ by Liz McCreesh from Thorogood
 
 **Transform Customer Data into Retail Success with Power BI**  
 by Angad Soni from Hitachi Solutions  
-[Register and watch now](https://info.microsoft.com/Transform-Your-Customer-Data-into-Retail-Success-OnDemandRegistration.html?LCID=EN-US?wt.mc_id=undefined)
+[Register and watch now](https://info.microsoft.com/Transform-Your-Customer-Data-into-Retail-Success-OnDemandRegistration.html?wt.mc_id=undefined)
 
 **Proven Healthcare Solutions to Improve Both Patient Outcomes and Profitability**  
 by Stephen Cracknell and Stuart Macanliss from US Medical IT  
@@ -223,7 +227,7 @@ by Scott Ball from Esri and Enrique Plaza from Microsoft
 
 **5 Habits of a Successful Trend Curator - Rohit Bhargava**  
 by Rohit Bhargava from Non-Obvious  
-[Register and watch now](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
+[Register and watch now](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html)
 
 ### Community ###
 

@@ -239,7 +239,7 @@ For info about high availability and failover, see [Power BI high availability, 
 
 ### Does Power BI meet national, regional, and industry-specific compliance requirements?
 
-To learn more about Power BI compliance, see the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/default.aspx).
+To learn more about Power BI compliance, see the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview).
 
 ### How does security work in Power BI?
 
