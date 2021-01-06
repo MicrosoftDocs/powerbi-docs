@@ -15,7 +15,7 @@ ms.date: 06/01/2021
 Power BI Embedded recently released a new version of Power BI Embedded, **Power BI Embedded Generation 2**, referred to as **Embedded Gen2** for convenience. Embedded Gen2 is currently in preview, and is available for Embedded subscribers to use during the preview period. You can still create the original version of Power BI Embedded resource, called Embedded Gen 1, or create a new Embedded Gen 2 resource. During the preview period, you can run both types of Power BI Embedded resources in parallel, each assigned to a different workspace.
 
 >[!NOTE]
->This article lists the **Power BI Embedded** Premium Gen2 enhancements. To review all the Power BI Premium Gen2 benefits, refer to [Power BI Premium Generation 2](../../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview).
+>This article lists the **Embedded Gen2** enhancements. To review all the Power BI Premium Gen2 benefits, refer to [Power BI Premium Generation 2](../../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview).
 
 All of the Power BI Embedded Gen 1 capabilities (such as pausing and resuming the capacity) are preserved in Gen 2. In addition, the Gen 2 capacity resource provides the following updates and improved experience:
 
@@ -32,7 +32,7 @@ All of the Power BI Embedded Gen 1 capabilities (such as pausing and resuming th
 
 * **Scaling without downtime** - Scale your Power BI Embedded resource without experiencing downtime.
 
-* **Improved metrics** - Including clear and normalized capacity utilization data, depending only on the complexity of analytics operations the capacity performs. Metrics are not impacted by other factors such as the size of the capacity, and the level of load on the system while performing analytics. 
+* **Improved metrics** - Including clear and normalized capacity utilization data, depending only on the complexity of analytics operations the capacity performs. Metrics are not impacted by other factors such as the size of the capacity, and the level of load on the system while performing analytics.
 
     When using the improved metrics, you can clearly see the following using the built-in reporting:
     * Utilization analysis

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 12/09/2020
+ms.date: 01/07/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
 ---
@@ -32,7 +32,10 @@ This article introduces key features in Power BI Premium. Where necessary, links
 
 ## Power BI Premium Generation 2 (preview)
 
-Power BI Premium recently released a new version of Power BI Premium, **Power BI Premium Generation 2**, referred to as **Premium Gen2** for convenience. Premium Gen2 is currently in preview, and is available for Premium subscribers to use during the preview period. You can select to use the original version of Premium, or switch to using Premium Gen2. You can only use one or the other for your Premium capacity. 
+Power BI Premium recently released a new version of Power BI Premium, **Power BI Premium Generation 2**, referred to as **Premium Gen2** for convenience. Premium Gen2 is currently in preview, and is available for Premium subscribers to use during the preview period. You can select to use the original version of Premium, or switch to using Premium Gen2. You can only use one or the other for your Premium capacity.
+
+>[!NOTE]
+>To review the Power BI Embedded Premium Gen2 enhancements, refer to [Power BI Embedded Premium Generation 2](../../developer/embedded/power-bi-embedded-premium-gen2.md).
 
 Premium Gen2 provides the following updates or improved experiences:
 
@@ -90,10 +93,6 @@ Power BI Premium is a tenant-level Microsoft 365 subscription available in two S
 - **P** SKUs (P1-P5) for embedding and enterprise features, requiring a monthly or yearly commitment, billed monthly, and includes a license to install Power BI Report Server on-premises.
 
 - **EM** SKUs (EM1-EM3) for _organizational_ embedding, requiring a yearly commitment, billed monthly. EM1 and EM2 SKUs are available only through volume licensing plans. You can't purchase them directly.
-
-### Updates for Premium Gen2 (Preview)
-Premium Gen2 is currently available as a fully supported preview feature for **P** and **EM** SKUs only. **A** SKUs capacity does not yet offer all additional benefits introduced the Premium Gen2 preview update.
-
 
 ### Purchasing
 
