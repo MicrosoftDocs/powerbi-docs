@@ -300,7 +300,7 @@ And that's it - after following these steps, Power BI for your organizations is 
 
 There are a few considerations to keep in mind while working with private links in Power BI:
 
-* Any use of external images or themes are not available when using a private link environment, and may affect custom visuals.
+* Any use of external images or themes are not available when using a private link environment.
 * If Internet access is disabled, and if the dataset or dataflow is connecting to a Power BI dataset or dataflow as a data source, the connection will fail.
 * Usage metrics do *not* work when Private Links is enabled.
 * Publish to Web is not supported (and grayed out) when you enable **Block Public Internet access** in Power BI.
