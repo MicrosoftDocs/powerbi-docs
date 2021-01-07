@@ -71,7 +71,7 @@ To use sensitivity labels in Power BI Desktop:
     >[!Important]
     >After turning on the information protection preview feature, you must restart Desktop in order to start using sensitivity labels.
     >
-    >If Desktop crashes when you restart it, it may be because your machine lacks the required Visual C++ redistributable runtime library version. If you experience such a crash, download and install [XXX] from [YYY], and then try launching Desktop again.
+    >If Desktop crashes when you restart it, it may be because your machine lacks the required Visual C++ redistributable runtime library version. If you experience such a crash, download and install [Microsoft Visual C++ 2015 Redistributable Update 3](https://www.microsoft.com/download/details.aspx?id=53587) and then try launching Desktop again.
 
     If you don't see the Information protection preview option, the information protection preview feature may be blocked for your organization. In this case contact your Power BI administrator.
 
