@@ -54,7 +54,8 @@ Before you import or upload a paginated report to embed, the workspace containin
 * **Power BI Premium** - For embedding a paginated report, a *P* SKU capacity is required. When embedding Power BI content, this solution is referred to as *Power BI embedding*. For more information regarding this subscription, see [What is Power BI Premium?](../../admin/service-premium-what-is.md)
 * **Azure Power BI Embedded** - You can purchase a capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For embedding paginated reports you need at least an *A4* subscription. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 
-[!INCLUDE[A short note explaining about Power BI Embedded Premium Generation 2](../../includes/embedded-gen2.md)]
+    >[!NOTE]
+    >Power BI Embedded recently released a new version of Premium, called **Embedded Gen2**. Embedded Gen2 will simplify the management of Embedded capacities, and reduce management overhead. For more information, see [Power BI Embedded Premium Generation 2](../developer/embedded/power-bi-embedded-premium-gen2.md).
 
 The table below describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](./embedded-faq.md#which-solution-should-i-choose) table.
 

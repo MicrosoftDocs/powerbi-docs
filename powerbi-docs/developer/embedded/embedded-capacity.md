@@ -22,16 +22,19 @@ Capacity is a dedicated set of resources reserved for exclusive use. It enables 
 ## What is embedded analytics?
 
 Power BI embedded analytics includes two solutions:
-* *Power BI Embedded*  - Azure offering
-* Embedding Power BI as part of *Power BI Premium*  - Microsoft Office offering
 
-[!INCLUDE[A short note explaining about Power BI Embedded Premium Generation 2](../../includes/embedded-gen2.md)]
+* *Power BI Embedded*  - Azure offering
+
+* Embedding Power BI as part of *Power BI Premium*  - Microsoft Office offering
 
 ### Power BI Embedded
 
 Power BI Embedded is for ISVs and developers who want to embed visuals into their applications.
 
 Applications using Power BI Embedded allow users to consume content stored on Power BI Embedded capacity.
+
+>[!NOTE]
+>Power BI Embedded recently released a new version of Premium, called **Embedded Gen2**. Embedded Gen2 will simplify the management of Embedded capacities, and reduce management overhead. For more information, see [Power BI Embedded Premium Generation 2](../developer/embedded/power-bi-embedded-premium-gen2.md).
 
 ### Power BI Premium
 
@@ -138,7 +141,7 @@ The table below describes the resources and limits of each SKU.
 | P5 | 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 
-### Power BI Embedded Premium Generation 2
+### Power BI Embedded Premium Generation 2 memory enhancements
 
 With [Power BI Embedded Premium Generation 2](power-bi-embedded-premium-gen2.md) (also known as Embedded Gen 2), the amount of memory available on each node size is set to the memory footprint limit of a single Power BI item (such as a report or a dashboard), and not to the cumulative consumption of memory. For example, in Embedded Gen2 only a single dataset size is limited to 25 GB, in comparison to the original Power BI Embedded capacity, where the total memory footprint of the datasets being handled at the same time is limited to 25 GB.
 
