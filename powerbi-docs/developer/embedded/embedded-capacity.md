@@ -34,7 +34,7 @@ Power BI Embedded is for ISVs and developers who want to embed visuals into thei
 Applications using Power BI Embedded allow users to consume content stored on Power BI Embedded capacity.
 
 >[!NOTE]
->Power BI Embedded recently released a new version of Premium, called **Embedded Gen2**. Embedded Gen2 will simplify the management of Embedded capacities, and reduce management overhead. For more information, see [Power BI Embedded Premium Generation 2](../developer/embedded/power-bi-embedded-premium-gen2.md).
+>Power BI Embedded recently released a new version of Premium, called **Embedded Gen2**. Embedded Gen2 will simplify the management of Embedded capacities, and reduce management overhead. For more information, see [Power BI Embedded Premium Generation 2](power-bi-embedded-premium-gen2.md).
 
 ### Power BI Premium
 
