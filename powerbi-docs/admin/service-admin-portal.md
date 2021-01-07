@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 12/18/2020
+ms.date: 01/05/2020
 ms.custom: seodec18
 LocalizationGroup: Administration
 ---
@@ -196,11 +196,11 @@ Admins can specify internal URLs to override the destination of links on the Pow
 
 Mail-enabled security groups will receive email notifications if this tenant is impacted by a service outage or incident. Learn more about [Service interruption notifications](service-interruption-notifications.md).
 
-### Allow users to try Power BI Pro
+### Allow users to try Power BI paid features
 
 ![Allow users to try Power BI Pro settings U I](media/service-admin-portal/allow-pro-trial.png)
 
-The setting to **Allow users to try Power BI Pro** is enabled by default. This setting increases your control over how users acquire Power BI Pro licenses. In scenarios where you have blocked self-service purchase, this setting lets users start a Power BI Pro trial. The end-user experience depends on how you combine license settings. The table below shows how the upgrade experience from Power BI (free) to Power BI Pro is affected by different setting combinations:
+The setting to **Allow users to try Power BI paid features** is enabled by default. This setting increases your control over how users acquire Power BI Pro licenses. In scenarios where you have blocked self-service purchase, this setting lets users start a Power BI Pro trial. The end-user experience depends on how you combine license settings. The table below shows how the upgrade experience from Power BI (free) to Power BI Pro is affected by different setting combinations:
 
 | Self-service purchase setting | Allow user to try Power BI Pro setting | End-user experience |
 | ------ | ------ | ----- |
@@ -213,6 +213,30 @@ The setting to **Allow users to try Power BI Pro** is enabled by default. This s
 > You can add an internal URL for licensing requests in [Help and support settings](#help-and-support-settings). If you set the URL, it overrides the default self-service purchase experience. It doesn't redirect signup for a Power BI Pro license trial. Users who can buy a license in the scenarios described in the table above are redirected to your internal URL.
 
 To learn more, see [Enable or disable self-service sign-up and purchasing](service-admin-disable-self-service.md).
+
+### Show a custom message before publishing reports  
+
+Admins can provide a custom message that appears before a user publishes a report from Power BI Desktop. After you enable the setting, you need to provide a **Custom message**. The Custom message can be plain text or follow Markdown syntax, as in the following example message:
+
+```markdown
+#### Important Disclaimer 
+
+Before publishing the report to a workspace, be sure to validate that the appropriate users or groups have access to the destination workspace. If some users or groups should *not* have access to the content and underlying artifacts, remove or modify their access to the workspace, or publish the report to a different workspace. [Learn more](https://docs.microsoft.com/power-bi/collaborate-share/service-create-the-new-workspaces#give-access-to-your-workspace). 
+```
+
+The **Custom message** text area does support scrolling, so you can provide a message up to 5,000 characters.
+
+:::image type="content" source="media/service-admin-portal/admin-show-custom-message.png" alt-text="Screenshot of the custom message box.":::
+
+When your users publish reports to workspaces in Power BI, they see the message you've written.
+
+:::image type="content" source="media/service-admin-portal/admin-user-show-custom-message.png" alt-text="The dialog box your users see when publishing reports to a workspace.":::
+
+As with other tenant settings, you can choose who the **Custom message** applies to:
+
+- **The entire organization**.
+- **Specific security groups**.
+- Or **Except specific security groups**.
 
 ## Workspace settings
 
