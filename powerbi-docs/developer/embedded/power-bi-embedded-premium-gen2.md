@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
-ms.date: 06/01/2021
+ms.date: 01/06/2021
 ---
 
 # Power BI Embedded Premium Generation 2 (preview)
