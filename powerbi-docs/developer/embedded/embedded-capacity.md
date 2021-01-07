@@ -141,7 +141,7 @@ The table below describes the resources and limits of each SKU.
 | P5 | 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 
-### Power BI Embedded Premium Generation 2 memory enhancements
+#### Power BI Embedded Premium Generation 2 memory enhancements
 
 With [Power BI Embedded Premium Generation 2](power-bi-embedded-premium-gen2.md) (also known as Embedded Gen 2), the amount of memory available on each node size is set to the memory footprint limit of a single Power BI item (such as a report or a dashboard), and not to the cumulative consumption of memory. For example, in Embedded Gen2 only a single dataset size is limited to 25 GB, in comparison to the original Power BI Embedded capacity, where the total memory footprint of the datasets being handled at the same time is limited to 25 GB.
 
