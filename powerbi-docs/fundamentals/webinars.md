@@ -22,7 +22,7 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 Get started with these popular on-demand webinars:
 
-**Data-driven insights for real-time decisions and stronger customer connections**  
+**Data-driven Insights for Real-time Decisions and Stronger Customer Connections**  
 by Shruti Shukla and Chandra Stevens  
 [Watch now](https://info.microsoft.com/ww-Landing-DataDrivenInsights.html)
 
