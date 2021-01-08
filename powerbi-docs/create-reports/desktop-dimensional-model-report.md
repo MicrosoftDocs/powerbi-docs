@@ -40,35 +40,19 @@ In this tutorial, you'll learn how to:
 - Before you start, you need to [download Power BI Desktop](../fundamentals/desktop-get-the-desktop.md). 
 - If you're planning to publish your report to the Power BI service and you aren't signed up yet, [sign up for a free trial](../fundamentals/service-self-service-signup-for-power-bi.md). 
 
-## Get data 
+## Get data: Download the sample 
 
-You can get the data for this tutorial one of two ways. 
+1. Download the AdventureWorks Sales sample Excel workbook from ____. 
 
-### Get data in Power BI Desktop 
+1. Open Power BI Desktop. 
 
-When you open Power BI Desktop, select **Try a sample dataset** from the blank canvas. 
+1. In the **Data** section of the **Home** ribbon, select **Excel**. 
 
-Screenshot of Try a sample dataset on the canvas. 
+1. Navigate to where you saved the sample workbook, and select **Open**. 
 
-If you’ve landed on this tutorial from Power Bi Desktop, go ahead and choose **Load data**. 
+## Prepare your data 
 
-Screenshot of Two ways to use sample data > Load data. 
-
-Download the sample 
-
-You can also download the sample workbook directly. 
-
-Download the AdventureWorks Sales sample Excel workbook. 
-
-Open Power BI Desktop. 
-
-In the Data section of the Home ribbon, select Excel. 
-
-Navigate to where you saved the sample workbook, and select Open. 
-
-Prepare your data 
-
-In Navigator, you have the option to transform or load the data. The Navigator provides a preview of your data so you can verify that you have the correct range of data. Numeric data types are italicized. If you need to make changes, transform your data before loading.  
+In the Navigator pane, you have the option to transform or load the data. The Navigator provides a preview of your data so you can verify that you have the correct range of data. Numeric data types are italicized. If you need to make changes, transform your data before loading.  
 
 Select all tables, and choose Transform Data. Please make sure not to select the Sheets (labeled _data). 
 
