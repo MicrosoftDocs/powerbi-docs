@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/19/2019
+ms.date: 01/08/2021
 LocalizationGroup: Dashboards
 ---
 # Introduction to dashboards for Power BI designers
@@ -47,9 +47,9 @@ The ability to create a dashboard is considered a *creator* feature and requires
 | Data sources |One or more reports and one or more datasets per dashboard |A single dataset per report |
 | Available in Power BI Desktop |No | Yes. Can build and view reports in Power BI Desktop |
 | Subscribe |Yes. Can subscribe to a dashboard |Yes. Can subscribe to a report page |
-| Filtering |No. Can't filter or slice |Yes. Many different ways to filter, highlight, and slice |
+| Filtering |No. Can't filter or slice a dashboard. *Can* filter a [dashboard tile in focus mode](../consumer/end-user-focus#working-in-focus-mode.md), but can't save the filter. |Yes. Many different ways to filter, highlight, and slice |
 | Featured |Yes. Can set one dashboard as your *featured* dashboard |No |
-| Favorite | Yes. Can set multiple dashboards as *favorites* | Yes. Can set multiple reports as *favorites*
+| Favorite | Yes. Can set multiple dashboards as *favorites* | Yes. Can set multiple reports as *favorites* |
 | Set alerts |Yes. Available for dashboard tiles in certain circumstances |No |
 | Natural language queries (Q&A) |Yes | Yes, provided you have edit permissions for the report and underlying dataset |
 | Can see underlying dataset tables and fields |No. Can export data but can't see tables and fields in the dashboard itself |Yes |
