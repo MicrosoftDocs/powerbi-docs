@@ -15,7 +15,7 @@ LocalizationGroup: Administration
 
 To administer Power BI for your organization, you must be in one of the following roles: Power BI admin, Power Platform admin, or Microsoft 365 global admin. Microsoft 365 user management administrators assign users to the Power BI admin or Power Platform admin roles in the Microsoft 365 admin center, or by using a PowerShell script. For more information, see [Assign roles to user accounts with PowerShell](/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell).
 
-Users in Power BI admin and Power Platform admin roles have full control over org-wide Power BI settings and administrative features, except for licensing. Once a user is assigned the admin role, they can access the [Power BI admin portal](service-admin-portal.md). There, they have access to org-wide usage metrics, and can control org-wide usage of Power BI features. These admin roles are ideal for users who need access to the Power BI admin portal without also granting those users complete Microsoft 365 administrative access.
+Users in Power BI admin and Power Platform admin roles have full control over org-wide Power BI settings and administrative features, except for licensing. Once a user is assigned the admin role, they can access the [Power BI admin portal](service-admin-portal.md). There, they have access to org-wide usage metrics, and can control org-wide usage of Power BI features. These admin roles are ideal for users who need access to the Power BI admin portal without also granting those users full Microsoft 365 administrative access.
 
 > [!NOTE]
 > In Power BI documentation, "Power BI admin" refers to users in either the Power BI admin or Power Platform admin roles. The documentation makes it clear when the Microsoft 365 global admin role is required for a task.
@@ -102,7 +102,7 @@ To learn more about using PowerShell to assign admin roles, see [AzureAD Directo
 
 ## Next steps
 
-[Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  
+[Administering Power BI in your organization](service-admin-administering-power-bi-in-your-organization.md)  
 [Power BI admin portal](service-admin-portal.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
