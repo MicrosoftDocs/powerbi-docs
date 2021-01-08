@@ -14,7 +14,7 @@ LocalizationGroup: Dashboards
 
 # Monitor usage metrics in classic workspaces
 
-Usage metrics help you understand the impact of your dashboards and reports. When you run either dashboard usage metrics or report usage metrics, you discover how those dashboards and reports are being used throughout your organization, who's using them, and for what purpose. This article outlines usage metrics reports for [classic workspaces](service-create-workspaces.md). If your reports are in on of the new workspaces, see the article [Monitor usage metrics in the new workspace experience](service-usage-metrics.md)  
+Usage metrics help you understand the impact of your dashboards and reports. When you run either dashboard usage metrics or report usage metrics, you discover how those dashboards and reports are being used throughout your organization, who's using them, and for what purpose. This article outlines usage metrics reports for [classic workspaces](service-create-workspaces.md). If your reports are in on of the new workspaces, see the article [Monitor usage metrics in the new workspace experience](service-modern-usage-metrics.md)  
 
 Usage metrics reports are read-only. However, you can copy a usage metrics report. Copying creates a standard Power BI report that you can edit. You can also build your own reports in Power BI Desktop based on the underlying dataset, which contains usage metrics for all dashboards or all reports in a workspace. To begin with, the copied report shows metrics just for the selected dashboard or report. You can remove the default filter and have access to the underlying dataset, with all the usage metrics of the selected workspace. You may even see the names of specific users, if your admin has allowed that.
 
