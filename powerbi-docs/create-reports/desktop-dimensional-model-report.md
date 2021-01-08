@@ -104,11 +104,11 @@ Description automatically generated
 
 The data you loaded is almost ready for reporting. Let’s inspect the data model and make some changes. 
 
-1. Select **Model View** on the left. 
+Select **Model View** on the left. 
 
 Screenshot of Model View icon. 
 
-2. You see your data model. It should look like the following image, with boxes for each table. 
+You see your data model. It should look like the following image, with boxes for each table. 
 
 Graphical user interface, application
 
@@ -116,105 +116,82 @@ Description automatically generated
 
  
 
-This is a typical star schema as you might have seen from Data Warehouses: it resembles a star, where the center of the star is a Fact table and the surrounding tables are called Dimensions which are related to the Fact table with Relationships. The Fact table contains numerical information about Sales transactions, such as Sales Amount and Product Standard Cost. The Dimensions provide context so you can, amongst others, analyze: 
+This model is a typical star schema as you might see from data warehouses: It resembles a star. The center of the star is a Fact table and the surrounding tables are called Dimension tables, which are related to the Fact table with relationships. The Fact table contains numerical information about sales transactions, such as Sales Amount and Product Standard Cost. The Dimensions provide context so you can, among other things, analyze: 
 
-what Product was sold 
+- what Product was sold 
+- to which Customer 
+- by which Reseller 
+- in which Sales Territory  
 
-to which Customer 
+If you look closely, you notice that all Dimension tables are related to the Fact with a Relationship, except for the Date table. Let’s add some relationships to Date now. Drag the DateKey from the Date table to OrderDateKey on the Sales table. You've created a so-called "one-to-many" relationship from Date to Sales, as indicated by the **1** and the asterisk ***** (many) at the two ends of the line.  
 
-by which Reseller 
-
-in which Sales Territory  
-
- 
-
-If you look closely, you will notice that all Dimension tables are related to the Fact with a Relationship, except for Date. Let’s add some relationships to Date now. Drag the DateKey from the Date table to OrderDateKey on the Sales table. This creates a so-called “one-to-many” relationship from Date to Sales as indicated by the 1 and * (many) at both ends of the line.  
-
-The relationship is “one-to-many” since we have one or more Sales orders for a given Date. If we had maximum one Sales order for each date the relationship would have been “one-to-one”. The little arrow in the middle of the line indicates the “cross-filtering direction”, which indicates that you can use values from the Date table to filter the Sales table, so the relationship will allow you to analyze when a Sales order was placed.  
+The relationship is "one-to-many" because we have one or more Sales orders for a given Date. If we had a maximum of one Sales order for each date, the relationship would be "one-to-one". The little arrow in the middle of the line indicates the "cross-filtering direction." It indicates that you can use values from the Date table to filter the Sales table, so the relationship allows you to analyze when a Sales order was placed.  
 
 Graphical user interface, text, application
 
 Description automatically generated 
-
- 
 
 The Sales table contains more information about dates related to Sales orders, such as Due Date and Ship Date. Let’s add two more relationships to the Date table by dragging: 
 
-DateKey to DueDateKey 
+- DateKey to DueDateKey 
+- DateKey to ShipDateKey 
+    
+Graphical user interface, application
 
-DateKey to ShipDateKey 
+Description automatically generated 
+
+You notice that the first relationship, on OrderDateKey, is active, shown by the continuous line. The other two are inactive, shown by the dashed line. Power BI uses the active relationship by default to relate Sales and Date. Hence, a sum of SalesAmount is calculated by Order Date, not Due Date or Ship Date. You can influence this behavior. See later in this tutorial. 
+
+The typical star schema contains several keys that hold the relationships between Facts and Dimensions. Normally we don't want to use any key columns in our reports. Let’s hide the key columns from view, so the Fields List shows fewer fields, and the data model is easier to use. 
+
+Go over all tables and hide any column whose name ends with *Key*: 
+
+Select the **Eye** icon next to the column and choose **Hide in report view**.
+
+You can also select the **Eye** icon next to the column in the Properties pane.
+
+ 
+
+Hidden fields have this icon, an eye with a line through it. 
+
+ 
+Hide these fields.
+
+|Table  |Column  |
+|---------|---------|
+|Customer  | CustomerKey |
+|Date     | DateKey |
+|     | MonthKey |
+|Product     | ProductKey  |
+|Reseller   | ResellerKey  |
+|Sales     | CustomerKey  |
+|     | DueDateKey |
+|     | OrderDateKey |
+|     | ProductKey |
+|     | ResellerKey        |
+|     | SalesOrderLineKey        |
+|     | SalesTerritoryKey        |
+|     | ShipDateKey        |
+| SalesOrder    | SalesOrderLineKey |
+| SalesTerritory  | SalesTerritoryKey |
+|     |         |
+|     |         |
+|     |         |
+
+
+Your data model should now look like this data model, with relationships between Sales and all the other tables, and all the key fields hidden: 
 
 Graphical user interface, application
 
 Description automatically generated 
 
-You will notice that the first relationship (on OrderDateKey) is active (shown by the continuous line) and the other two are inactive (dashed). Power BI will by default use the active relationship to relate Sales and Date hence a sum of SalesAmount will by calculated by Order Date, not Due Date or Ship Date. You can influence this behavior, see later in this tutorial. 
+Now that our data model is easier to consume because of the hidden columns, we can add a couple of *hierarchies* to make the model even easier to use. Hierarchies enable easier navigation of groupings. For example, cities are in a State or Province, which is in a Country or Region. 
 
-The typical star schema contains several keys that hold the relationships between Facts and Dimensions. Normally we do not want to use any key columns in our reports, so let’s hide these from view so less fields are shown in the Fields List and the data model is easier to use. Go over all tables and hide any column whose name ends with Key by clicking the Eye icon behind the column and choosing ‘Hide in report view’ or using the Properties pane: 
-
- 
-
-Fields that are hidden will have the following icon: 
-
- 
-
-TABLE 
-
-COLUMN 
-
-CUSTOMER 
-
-CustomerKey 
-
-DATE 
-
-DateKey 
-MonthKey 
-
-PRODUCT 
-
-ProductKey 
-
-RESELLER 
-
-ResellerKey 
-
-SALES 
-
-CustomerKey 
-DueDateKey 
-OrderDateKey 
-ProductKey 
-ResellerKey 
-SalesOrderLineKey 
-SalesTerritoryKey 
-ShipDateKey 
-
-SALESORDER 
-
-SalesOrderLineKey 
-
-SALESTERRITORY 
-
-SalesTerritoryKey 
-
- 
-
-Your data model should now look like this: 
-
-Graphical user interface, application
-
-Description automatically generated 
-
-Now that our data model is easier to consume because some columns are hidden, we can add a couple of hierarchies to make the model even easier to use. Hierarchies enable easier navigation of groupings, such as Cities that are in a State or Province which are in a Country or Region. 
-
-Create the following hierarchies by right-clicking on the highest level (the least granular) in the hierarchy and choosing Create hierarchy. Use the Properties pane to set the Name of the hierarchy and set the levels. Be sure to Apply Level Changes. 
+Create the following hierarchies. Right-click the highest level, or the least granular, field in the hierarchy and choose **Create hierarchy**. In the Properties pane, set the Name of the hierarchy and set the levels. Then **Apply Level Changes**. 
 
 Graphical user interface, text, application
 
 Description automatically generated 
-
- 
 
 You can also use the Properties pane to rename levels in a hierarchy after you added them as you need to do for the Year and Quarter level of the Fiscal hierarchy in the Date table. 
 
@@ -363,7 +340,7 @@ Let’s build the final report, one visual at a time.
 
 Visual 1: Add a title 
 
-On the Insert ribbon, select Text Box. Type “Executive Summary – Sales Report”. 
+On the Insert ribbon, select Text Box. Type "Executive Summary – Sales Report". 
 
 Select the text you typed. Set the font size to 20 and bold. 
 
@@ -495,11 +472,11 @@ Make the following changes on the Format tab in the Visualizations pane.
 
 Screenshot of the Format tab in the Visualizations pane. 
 
-Select Visual 2 (Sales Amount by Date). In the Title section, change Title text to “Sales Amount by Order Date” if you did not add the DAX measure. If you did, change Title text to ““Sales Amount by Order Date / Due Date”. Set Text size to 16 pt. Toggle Shadow to On. 
+Select Visual 2 (Sales Amount by Date). In the Title section, change Title text to "Sales Amount by Order Date" if you did not add the DAX measure. If you did, change Title text to "Sales Amount by Order Date / Due Date". Set Text size to 16 pt. Toggle Shadow to On. 
 
-Select Visual 3 (Order Quantity by Reseller Country). In the Map styles section, change Theme to Grayscale. In the Title section, change Title text to “Order Quantity by Reseller Country“ and Text size to 16 pt. Toggle Shadow to On. 
+Select Visual 3 (Order Quantity by Reseller Country). In the Map styles section, change Theme to Grayscale. In the Title section, change Title text to "Order Quantity by Reseller Country" and Text size to 16 pt. Toggle Shadow to On. 
 
-Select Visual 4 (Sales Amount by Product Category and Reseller Business Type). In the Title section, change Title text to “Sales Amount by Product Category and Reseller Business Type” and change title Text size to 16 pt. Toggle Shadow to On. 
+Select Visual 4 (Sales Amount by Product Category and Reseller Business Type). In the Title section, change Title text to "Sales Amount by Product Category and Reseller Business Type" and change title Text size to 16 pt. Toggle Shadow to On. 
 
 Select Visual 5 (Fiscal calendar slicer). In the Selection controls section, toggle Show "Select all" option to On. In the Slicer header section, increase Text size to 16 pt. 
 
@@ -517,7 +494,7 @@ Select the text in Visual 1, the title, and change the font color to White.
 
 Finished report 
 
-Select “FY2019” in the slicer. 
+Select "FY2019" in the slicer. 
 
 Here's how your final polished report will look: 
 
