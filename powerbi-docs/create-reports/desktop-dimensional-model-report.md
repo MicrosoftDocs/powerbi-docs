@@ -52,119 +52,63 @@ In this tutorial, you'll learn how to:
 
 ## Prepare your data 
 
-In the Navigator pane, you have the option to transform or load the data. The Navigator provides a preview of your data so you can verify that you have the correct range of data. Numeric data types are italicized. If you need to make changes, transform your data before loading.  
+In the Navigator pane, you have the option to *transform* or *load* the data. The Navigator provides a preview of your data so you can verify that you have the correct range of data. Numeric data types are italicized. In this tutorial, we're going to transform the data before loading.
 
-Select all tables, and choose Transform Data. Please make sure not to select the Sheets (labeled _data). 
+Select all tables, and choose **Transform Data**. Make sure not to select the sheets (labeled *_data*). 
 
 Graphical user interface, table
 
 Description automatically generated 
 
-Check the data types on the following columns match the table below. To make any changes, select a query and select one or more columns. On the Home tab, select Data Type, then select the appropriate Data type from the table below. 
+Check that the data types of the columns match those in the following table. To make any changes, select a query, then select one or more columns. On the **Home** tab, select **Data Type**, then select the appropriate data type from the table. 
 
 Graphical user interface, application, table, Excel
 
 Description automatically generated 
 
-QUERY 
+|Query  |Column  |Data type  |
+|---------|---------|---------|
+|Customer  |  CustomerKey | Whole Number |
+|Date | DateKey |    Whole Number     |
+|     | Date | Date      |
+|     | MonthKey  | Whole Number |
+|Product  | ProductKey | Whole Number  | 
+|     | Standard Cost | Decimal Number  | 
+|     | List Price | Decimal Number  | 
+|Reseller  | ResellerKey | Whole Number  | 
+|Sales   | SalesOrderLineKey | Whole Number  | 
+|     | ResellerKey  | Whole Number  | 
+|     | CustomerKey | Whole Number  | 
+|     | ProductKey  | Whole Number  | 
+|     | OrderDateKey | Whole Number  | 
+|     | DueDateKey  | Whole Number  | 
+|     | ShipDateKey | Whole Number  | 
+|     | SalesTerritoryKey | Whole Number  | 
+|     | Order Quantity   | Whole Number  | 
+|     | Unit Price  | Decimal Number  | 
+|     | Extended Amount  | Decimal Number  | 
+|     | Unit Price Discount Pct | Percentage  | 
+|     | Product Standard Cost | Decimal Number  | 
+|     | Total Product Cost | Decimal Number  | 
+|     | Sales Amount | Decimal Number  | 
+| SalesTerritory  | SalesTerritoryKey | Whole Number  | 
+|  SalesOrder   |  SalesOrderLineKey | Whole Number  | 
 
-COLUMN 
-
-DATA TYPE 
-
-CUSTOMER 
-
-CustomerKey 
-
-Whole Number 
-
-DATE 
-
-DateKey 
-Date 
-MonthKey 
-
-Whole Number 
-Date 
-Whole Number 
-
-PRODUCT 
-
-ProductKey 
-Standard Cost 
-List Price 
-
-Whole Number 
-Decimal Number 
-Decimal Number 
-
-RESELLER 
-
-ResellerKey 
-
-Whole Number 
-
-SALES 
-
-SalesOrderLineKey 
-ResellerKey 
-CustomerKey 
-ProductKey 
-OrderDateKey 
-DueDateKey 
-ShipDateKey 
-SalesTerritoryKey 
-Order Quantity 
-Unit Price 
-Extended Amount 
-Unit Price Discount Pct 
-Product Standard Cost 
-Total Product Cost 
-Sales Amount 
-
-Whole Number 
-Whole Number 
-Whole Number 
-Whole Number 
-Whole Number 
-Whole Number 
-Whole Number 
-Whole Number 
-Whole Number 
-Decimal Number 
-Decimal Number 
-Percentage 
-Decimal Number 
-Decimal Number 
-Decimal Number 
-
-SALESTERRITORY 
-
-SalesTerritoryKey 
-
-Whole Number 
-
-SALESORDER 
-
-SalesOrderLineKey 
-
-Whole Number 
-
-Back on the Home tab, selec t Close & Apply. 
+Back on the **Home** tab, select **Close & Apply**. 
 
 Graphical user interface, application, table, Word
 
 Description automatically generated 
 
-Model your data 
+## Model your data 
 
 The data you loaded is almost ready for reporting. Let’s inspect the data model and make some changes. 
 
-Select Model View on the left. 
+1. Select **Model View** on the left. 
 
 Screenshot of Model View icon. 
 
-Your data model is shown. It should look like this: 
+2. You see your data model. It should look like the following image, with boxes for each table. 
 
 Graphical user interface, application
 
