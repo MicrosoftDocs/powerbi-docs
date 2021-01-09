@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/07/2021
+ms.date: 01/08/2021
 LocalizationGroup: Reports
 ---
 # Tutorial: From dimensional model to stunning report in Power BI Desktop 
@@ -114,14 +114,14 @@ Graphical user interface, application
 
 Description automatically generated 
 
- 
+### Create relationships
 
 This model is a typical star schema as you might see from data warehouses: It resembles a star. The center of the star is a Fact table and the surrounding tables are called Dimension tables, which are related to the Fact table with relationships. The Fact table contains numerical information about sales transactions, such as Sales Amount and Product Standard Cost. The Dimensions provide context so you can, among other things, analyze: 
 
-- what Product was sold 
-- to which Customer 
-- by which Reseller 
-- in which Sales Territory  
+- what Product was sold... 
+- to which Customer.. 
+- by which Reseller... 
+- in which Sales Territory.  
 
 If you look closely, you notice that all Dimension tables are related to the Fact with a Relationship, except for the Date table. Let’s add some relationships to Date now. Drag the DateKey from the Date table to OrderDateKey on the Sales table. You've created a so-called "one-to-many" relationship from Date to Sales, as indicated by the **1** and the asterisk ***** (many) at the two ends of the line.  
 
@@ -142,6 +142,8 @@ Description automatically generated
 
 You notice that the first relationship, on OrderDateKey, is active, shown by the continuous line. The other two are inactive, shown by the dashed line. Power BI uses the active relationship by default to relate Sales and Date. Hence, a sum of SalesAmount is calculated by Order Date, not Due Date or Ship Date. You can influence this behavior. See later in this tutorial. 
 
+### Hide key columns
+
 The typical star schema contains several keys that hold the relationships between Facts and Dimensions. Normally we don't want to use any key columns in our reports. Let’s hide the key columns from view, so the Fields List shows fewer fields, and the data model is easier to use. 
 
 Go over all tables and hide any column whose name ends with *Key*: 
@@ -150,10 +152,7 @@ Select the **Eye** icon next to the column and choose **Hide in report view**.
 
 You can also select the **Eye** icon next to the column in the Properties pane.
 
- 
-
 Hidden fields have this icon, an eye with a line through it. 
-
  
 Hide these fields.
 
@@ -185,6 +184,8 @@ Graphical user interface, application
 
 Description automatically generated 
 
+### Create hierarchies
+
 Now that our data model is easier to consume because of the hidden columns, we can add a couple of *hierarchies* to make the model even easier to use. Hierarchies enable easier navigation of groupings. For example, cities are in a State or Province, which is in a Country or Region. 
 
 Create the following hierarchies. Right-click the highest level, or the least granular, field in the hierarchy and choose **Create hierarchy**. In the Properties pane, set the Name of the hierarchy and set the levels. Then **Apply Level Changes**. 
@@ -193,219 +194,161 @@ Graphical user interface, text, application
 
 Description automatically generated 
 
-You can also use the Properties pane to rename levels in a hierarchy after you added them as you need to do for the Year and Quarter level of the Fiscal hierarchy in the Date table. 
+You can also rename levels in a hierarchy in the Properties pane after you add them. You'll need to rename the Year and Quarter level of the Fiscal hierarchy in the Date table. 
 
+Here are the hierarchies you need to create.
+
+| Table |Hierarchy name |Levels  |
+|---------|---------|---------|
+|Customer     | Geography   | Country-Region  |
+|     | | State-Province  |
+|     |         | City |
+|Row4     |         | Postal Code |
+|Row5     |         | Customer   |
+|Date     | Fiscal  | Year (Fiscal Year)  |
+|     |         | Quarter (Fiscal Quarter) |
+|     |         | Month |
+|     |         | Date |
+| Product  | Products | Category |
+|     |         | Subcategory |
+|     |         | Model |
+|     |         | Product |
+| Reseller   | Geography | Country-Region |
+|     |         | State-Province |
+|     |         | City  |
+|     |         | Postal Code  |
+|     |         | Reseller |
+| SalesOrder  | Sales Orders | Sales Order |
+|     |         | Sales Order Line |
+| SalesTerritory    | Sales Territories | Group |
+|     |         | Country |
+|     |         | Region |
  
-
-TABLE 
-
-HIERARCHY NAME 
-
-LEVELS 
-
-CUSTOMER 
-
-Geography 
-
-Country-Region 
-
-State-Province 
-
-City 
-
-Postal Code 
-
-Customer 
-
-DATE 
-
-Fiscal 
-
-Year (Fiscal Year) 
-
-Quarter (Fiscal Quarter) 
-
-Month 
-
-Date 
-
-PRODUCT 
-
-Products 
-
-Category 
-
-Subcategory 
-
-Model 
-
-Product 
-
-RESELLER 
-
-Geography 
-
-Country-Region 
-
-State-Province 
-
-City 
-
-Postal Code 
-
-Reseller 
-
-SALESORDER 
-
-Sales Orders 
-
-Sales Order 
-
-Sales Order Line 
-
-SALESTERRITORY 
-
-Sales Territories 
-
-Group 
-
-Country 
-
-Region 
-
- 
-
-Your data model should now look like this: 
-
- 
+Your data model should now look like the following data model. It has the same tables, but each of the dimension tables contains a hierarchy: 
 
 Graphical user interface, application
 
 Description automatically generated 
 
-To finish up our modeling, lets rename the following tables using the Properties pane: 
+### Rename tables
 
-OLD TABLE NAME 
+To finish modeling, let's rename the following tables in the Properties pane: 
 
-NEW TABLE NAME 
+|Old table name  |New table name  |
+|---------|---------|
+|SalesTerritory    |  Sales Territory   |
+|SalesOrder  |  Sales Order   |
 
-SALESTERRITORY 
+This step is necessary because Excel table names can't contain spaces.
 
-Sales Territory 
-
-SALESORDER 
-
-Sales Order 
-
- 
-
-Your final data model should look like this: 
+Here's how your final data model should look:
 
 Graphical user interface, application
 
 Description automatically generated 
 
-Extra credit: Write a measure in DAX 
+## Extra credit: Write a measure in DAX 
 
-Writing measures in the DAX formula language is super powerful for data modeling. There's lots to learn about DAX in the Power BI documentation. For now, let's write a basic measure that calculates the total sales amount by due date on the sales order instead of the default order date. 
+Writing *measures* in the DAX formula language is super powerful for data modeling. There's lots to learn about DAX in the Power BI documentation. For now, let's write a basic measure that calculates the total sales amount by due date on the sales order instead of the default order date. 
 
-Select Data View on the left. 
+1. Select Data View on the left. 
 
 Graphical user interface, application, Word
 
 Description automatically generated 
 
-Select the Sales table in the Fields list: 
+1. Select the Sales table in the Fields list.
 
 Graphical user interface, application
 
 Description automatically generated 
 
-On the Home ribbon, select New Measure. 
+1. On the **Home** ribbon, select **New Measure**. 
 
-Type this measure to calculate the total sales amount by due date on the sales order instead of the default order date: 
-Sales Amount by Due Date = CALCULATE(SUM(Sales[Sales Amount]), USERELATIONSHIP(Sales[DueDateKey],'Date'[DateKey]))  
+1. Type this measure to calculate the total sales amount by due date on the sales order instead of the default order date:
 
-Select the check mark to commit: 
+    ```dax
+    Sales Amount by Due Date = CALCULATE(SUM(Sales[Sales Amount]), USERELATIONSHIP(Sales[DueDateKey],'Date'[DateKey]))
+    ```
+
+1. Select the check mark to commit. 
 
  
 
-Build your report 
+## Build your report 
 
-Now that you’ve modeled your data, it is time to create your report. Go to the Report View and in the Fields pane on the right, you see the fields in the data model you created. 
+Now that you’ve modeled your data, it's time to create your report. Go to Report View. In the Fields pane on the right, you see the fields in the data model you created.
 
 Let’s build the final report, one visual at a time. 
 
- 
+### Visual 1: Add a title 
 
-Visual 1: Add a title 
+1. On the **Insert** ribbon, select **Text Box**. Type "Executive Summary – Sales Report". 
 
-On the Insert ribbon, select Text Box. Type "Executive Summary – Sales Report". 
-
-Select the text you typed. Set the font size to 20 and bold. 
+1. Select the text you typed. Set the font size to **20** and **Bold**. 
 
 Graphical user interface, text, application, Word
 
 Description automatically generated 
 
-In the Visualizations pane, toggle the Background to Off. 
+1. In the Visualizations pane, toggle the **Background** to **Off**. 
 
-Resize the box to fit on one line. 
+1. Resize the box to fit on one line. 
 
-Visual 2: Sales Amount by Date 
+### Visual 2: Sales Amount by Date 
 
-Now, you create a line chart to see which month and year had the highest Sales Amount. 
+Now, you create a line chart to see which month and year had the highest sales amount. 
 
-From the Fields pane, drag the Sales Amount field from the Sales table to a blank area on the report canvas. By default, Power BI displays a column chart with one column, Sales Amount. 
+1. From the Fields pane, drag the **Sales Amount** field from the **Sales** table to a blank area on the report canvas. By default, Power BI displays a column chart with one column, Sales Amount. 
 
-Drag the Month field from the Fiscal hierarchy in the Date table and drop it on the column chart: 
+1. Drag the **Month** field from the **Fiscal** hierarchy in the **Date** table and drop it on the column chart. 
 
 Chart, bar chart
 
 Description automatically generated 
 
-In the Fields section of the Visualizations pane, remove the Year and Quarter: 
+1. In the **Fields** section of the Visualizations pane, remove the **Year** and **Quarter** fields: 
 
  
 
- 
-
-In the Visualizations pane, change the visualization type to Area Chart. 
+1. In the Visualizations pane, change the visualization type to **Area Chart**. 
 
 Graphical user interface, application, Word
 
 Description automatically generated 
 
-If you added the DAX measure in the extra credit above, add it to Values as well. Open the Format pane, open Data colors and change the color of Sales Amount by Due Date to more contrasting color such as red: 
+1. If you added the DAX measure in the extra credit above, add it to **Values** as well. 
+1. Open the Format pane, open Data colors and change the color of **Sales Amount by Due Date** to a more contrasting color, such as red.
 
-Graphical user interface, application
+    Area chart with red Sales Amount.
 
-Description automatically generated 
+    Description automatically generated 
 
-As you can see here Sales Amount by Due Date trails slightly behind the Sales Amount, which proofs that it uses the relationship between Sales and Date that uses DueDateKey. 
+    As you can see, Sales Amount by Due Date trails slightly behind Sales Amount. This proves that it uses the relationship between the Sales and Date tables that uses DueDateKey. 
 
  
 
-Visual 3: Order Quantity by Reseller Country 
+### Visual 3: Order Quantity by Reseller Country 
 
-Create a map to see Resellers in which Country have the highest Order Quantity Amount. 
+Now we'll create a map to see in which Country the Resellers have the highest Order Quantity Amount.
 
-From the Fields pane, drag the Country-Region field from the Reseller table to a blank area on your report canvas to create a map. 
+1. From the Fields pane, drag the **Country-Region** field from the **Reseller** table to a blank area on your report canvas. Power BI creates a map. 
 
-Drag the Order Quantity from the Sales table and drop it on the map. Make sure Country-Region is in the Location well and Order Quantity in the Size well. 
+1. Drag the **Order Quantity** field from the **Sales** table and drop it on the map. Make sure **Country-Region** is in the **Location** well and **Order Quantity** in the **Size** well. 
+
 Graphical user interface, application
 
 Description automatically generated 
 
-Visual 4: Sales Amount by Product Category and Reseller Business type 
+### Visual 4: Sales Amount by Product Category and Reseller Business type 
 
-Create a column chart to investigate which products are sold by what type of reseller business. 
+Next we create a column chart to investigate which products are sold by what type of reseller business.
 
-Drag the two charts you've created to be side by side in the top half of the canvas. Save some room on the left side of the canvas. 
+1. Drag the two charts you've created to be side by side in the top half of the canvas. Save some room on the left side of the canvas. 
 
-Select a blank area in the lower half of your report canvas. 
+1. Select a blank area in the lower half of your report canvas. 
 
-In the Fields pane, select Sales Amount from Sales, Product Category from Product and Business Type from Reseller. 
+1. In the Fields pane, select **Sales Amount** from **Sales**, **Product Category** from **Product**, and **Business Type** from **Reseller**. 
 
 Power BI automatically creates a clustered column chart. Change the visualization to a Matrix: 
 
@@ -413,21 +356,21 @@ Power BI automatically creates a clustered column chart. Change the visualizatio
 
 Description automatically generated 
 
-With the matrix still selected, filter out Business Type [Not Applicable] by setting the following Filter: 
+1. With the matrix still selected, in the Filters pane, under **Business Type**, **Select all**, then clear the **[Not Applicable]** box. 
 
 Graphical user interface, text, application
 
 Description automatically generated 
 
-Drag the matrix so it's wide enough to fill the space under the two upper charts. 
+1. Drag the matrix so it's wide enough to fill the space under the two upper charts. 
 
 A picture containing graphical user interface
 
 Description automatically generated 
 
-In the formatting pane for the matrix, open the Conditional formatting section and turn the Data bars on. Select Advanced controls and set a lighter color for the positive bar. Click OK. 
+1. In the Formatting pane for the matrix, open the **Conditional formatting** section and turn on **Data bars**. Select **Advanced controls** and set a lighter color for the positive bar. Select **OK**. 
 
-Increase the width of the Sales Amount column so it covers the whole area: 
+1. Increase the width of the Sales Amount column so it covers the whole area. 
 
 A picture containing application
 
@@ -437,66 +380,84 @@ It looks like Bikes have a higher Sales Amount overall and the Value Added Resel
 
  
 
-Visual 5: Fiscal calendar slicer 
+### Visual 5: Fiscal calendar slicer 
 
 Slicers are a valuable tool for filtering the visuals on a report page to a specific selection. In this case, we can create a slicer to narrow in on performance for each month, quarter and year. 
 
-In the Fields pane, select the Fiscal hierarchy from the Date table and drag it to the blank area on the left of the canvas. 
+1. In the Fields pane, select the **Fiscal** hierarchy from the **Date** table and drag it to the blank area on the left of the canvas. 
 
-In the Visualizations pane, choose Slicer. 
+1. In the Visualizations pane, choose **Slicer**. 
 
 Graphical user interface, application
 
 Description automatically generated 
 
-In the Fields section of the Visualizations pane, remove Quarter and Date so only Year and Month are left. 
+1. In the Fields section of the Visualizations pane, remove **Quarter** and **Date** so only **Year** and **Month** are left. 
  
 
-Now if your manager asks to see data only for a specific month, you can use the slicer to switch between years or specific months each year. 
+Now if your manager asks to see data only for a specific month, you can use the slicer to switch between years or specific months in each year. 
 
-Extra credit: Format the report 
+## Extra credit: Format the report 
 
 If you want to do some light formatting on this report to add more polish, here are a few easy steps. 
 
-Theme 
+### Theme 
 
-On the View ribbon, change the theme to Executive. 
+- On the **View** ribbon, change the theme to **Executive**. 
 
 Graphical user interface
 
 Description automatically generated 
 
-Spruce up the visuals 
+### Spruce up the visuals 
 
-Make the following changes on the Format tab in the Visualizations pane. 
+Make the following changes on the **Format** tab in the Visualizations pane. 
 
 Screenshot of the Format tab in the Visualizations pane. 
 
-Select Visual 2 (Sales Amount by Date). In the Title section, change Title text to "Sales Amount by Order Date" if you did not add the DAX measure. If you did, change Title text to "Sales Amount by Order Date / Due Date". Set Text size to 16 pt. Toggle Shadow to On. 
+**Visual 2, Sales Amount by Date**
 
-Select Visual 3 (Order Quantity by Reseller Country). In the Map styles section, change Theme to Grayscale. In the Title section, change Title text to "Order Quantity by Reseller Country" and Text size to 16 pt. Toggle Shadow to On. 
+1. Select Visual 2, Sales Amount by Date. 
+1. In the **Title** section, if you didn't add the DAX measure, change **Title** text to "Sales Amount by Order Date" . 
+    If you did add the DAX measure, change **Title text** to "Sales Amount by Order Date / Due Date". 
+1. Set **Text** size to **16 pt**. 
+1. Toggle **Shadow** to **On**. 
 
-Select Visual 4 (Sales Amount by Product Category and Reseller Business Type). In the Title section, change Title text to "Sales Amount by Product Category and Reseller Business Type" and change title Text size to 16 pt. Toggle Shadow to On. 
+**Visual 3, Order Quantity by Reseller Country**
 
-Select Visual 5 (Fiscal calendar slicer). In the Selection controls section, toggle Show "Select all" option to On. In the Slicer header section, increase Text size to 16 pt. 
+1. Select Visual 3, Order Quantity by Reseller Country. 
+1. In the **Map styles** section, change **Theme** to **Grayscale**. 
+1. In the **Title** section, change **Title text** to "Order Quantity by Reseller Country".
+1. Set **Text size** to **16 pt**. 
+1. Toggle **Shadow** to **On**.  
 
-Add a background shape for the title 
+**Visual 4, Sales Amount by Product Category and Reseller Business Type**
 
-On the Insert ribbon, select Shapes > Rectangle. Place it at the top of the page, and stretch it to be the width of the page and height of the title. 
+1. Select Visual 4, Sales Amount by Product Category and Reseller Business Type. 
+1. In the **Title** section, change **Title text** to "Sales Amount by Product Category and Reseller Business Type".
+1. Set **Text size** to **16 pt**. 
+1. Toggle **Shadow** to **On**. 
 
-In the Format shape pane, in the Line section, change Transparency to 100%. 
+**Visual 5, Fiscal calendar slicer**
 
-In the Fill section, change Fill color to Theme color 5 #6B91C9 (blue). 
+1. Select Visual 5, Fiscal calendar slicer.
+1. In the **Selection controls** section, toggle **Show "Select all"** option to **On**. 
+1. In the **Slicer header** section, set **Text size** to **16 pt**. 
 
-On the Format tab, select Send backward > Send to back. 
+### Add a background shape for the title 
 
-Select the text in Visual 1, the title, and change the font color to White. 
+1. On the **Insert** ribbon, select **Shapes** > **Rectangle**. 
+1. Place it at the top of the page, and stretch it to be the width of the page and height of the title. 
+1. In the **Format shape** pane, in the **Line** section, change **Transparency** to **100%**. 
+1. In the **Fill** section, change **Fill color** to **Theme color 5 #6B91C9 (blue)**. 
+1. On the **Format** tab, select **Send backward** > **Send to back**. 
+1. Select the text in Visual 1, the title, and change **Font color** to **White**. 
 
-Finished report 
+## Finished report 
 
-Select "FY2019" in the slicer. 
+1. Select "FY2019" in the slicer.
 
-Here's how your final polished report will look: 
+Here's how your final polished report will look. 
 
 Graphical user interface, application
 
@@ -504,42 +465,35 @@ Description automatically generated
 
 In summary, this report answers your manager’s top questions: 
 
-Which day had the most sales in February 2019? 
+- Which day had the most sales in February 2019? 
+    February 25, with a sales amount of $253,915.47. 
 
-25th of February with a sales amount of $253,915.47 
+- Which country is the company seeing the most success in? 
+    In the United States, with an order quantity of 132,748. 
 
-Which country is the company seeing the most success in? 
+- Which product category and reseller business types should the company continue to invest in? 
+    The company should continue to invest in the Bikes category and the Value Added Reseller and Warehouse reseller businesses. 
 
-In the United States, with an order quantity of 132748. 
+## Save your report 
 
-Which product category and reseller business types should the company continue to invest in? 
-
-The company should continue to invest in the Bikes category and the Value Added Reseller and Warehouse reseller business. 
-
-Save your report 
-
-On the File menu, select Save. 
-
- 
-
-Publish to the Power BI service to share 
-
-To share your report with your manager and colleagues, publish it to the Power BI service. When you share with colleagues that have a Power BI account, they can interact with your report, but can’t save changes. 
-
-In Power BI Desktop, select Publish on the Home ribbon. 
-You may need to sign in to the Power BI service. If you don't have an account yet, you can sign up for a free trial. 
-
-Select a destination such as My workspace in the Power BI service > Select. 
-
-Select Open 'your-file-name' in Power BI. Your completed report opens in the browser. 
-
-Select Share at the top of the report to share your report with others. 
-
-Next steps 
-
-Learn more about DAX and data modeling in Power BI Desktop. 
+- On the **File** menu, select **Save**. 
 
 
-## Next steps
+## Publish to the Power BI service to share 
+
+To share your report with your manager and colleagues, publish it to the Power BI service. When you share with colleagues that have a Power BI account, they can interact with your report, but can’t save changes.
+
+1. In Power BI Desktop, on the **Home** ribbon select **Publish**. 
+1. You may need to sign in to the Power BI service. If you don't have an account yet, you can [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web). 
+
+1. Select a destination such as My workspace in the Power BI service > **Select**. 
+
+1. Select **Open 'your-file-name' in Power BI**. Your completed report opens in the browser. 
+
+1. Select **Share** at the top of the report to share your report with others.
+
+## Next steps 
+
+Learn more about [DAX and data modeling in Power BI Desktop](/learn/modules/dax-power-bi-models/). 
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
