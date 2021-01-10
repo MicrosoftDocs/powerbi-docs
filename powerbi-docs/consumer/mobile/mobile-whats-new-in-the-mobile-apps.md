@@ -573,7 +573,7 @@ Read the [mobile apps feature summary for April 2017](https://powerbi.microsoft.
 When you define a background color for a report in Power BI Desktop, the phone report will have the same background color. More about [optimizing report pages for phones](../../create-reports/desktop-create-phone-report.md).
 
 **Develop mobile-friendly Power BI visual**
-Read this [Developer guide](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) for tips on creating Power BI visuals that look good and work well on mobile devices.
+Read this [Developer guide](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) for tips on creating Power BI visuals that look good and work well on mobile devices.
 
 #### iOS devices
 **Talk to your data: ask questions by speaking**

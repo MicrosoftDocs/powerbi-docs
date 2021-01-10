@@ -48,7 +48,7 @@ Platform security for Power BI also includes multi-tenant environment security, 
 
 ## Data and Service Security
 
-For more information, please visit the [Microsoft Trust Center](https://www.microsoft.com/trustcenter).
+For more information, please visit the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview).
 
 As described earlier in this article, a user’s Power BI login is used by on-premises Active Directory servers to map to a UPN for credentials. However, it’s **important** to note that users are responsible for the data they share: if a user connects to data sources using their credentials, then shares a report (or dashboard, or dataset) based on that data, users with whom the dashboard is shared are not authenticated against the original data source, and will be granted access to the report.
 

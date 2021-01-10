@@ -42,7 +42,7 @@ The visual should restore the filter values to display the corresponding state o
 
 ### Visuals with Selection
 
-If your visual interacts with other visuals by using [Selection](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/Selection.md), you can add bookmarks in either of two ways:
+If your visual interacts with other visuals by using [Selection](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/Tutorial/Selection.md), you can add bookmarks in either of two ways:
 
 * If the visual hasn't already used [InteractivityService](https://github.com/microsoft/powerbi-visuals-utils-interactivityutils/blob/master/src/interactivityService.ts), you can use the `FilterManager.restoreSelectionIds` method.
 
