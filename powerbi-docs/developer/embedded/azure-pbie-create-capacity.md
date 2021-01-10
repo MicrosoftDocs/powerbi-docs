@@ -287,8 +287,6 @@ Use this template to create a [Power BI Embedded Generation 2](power-bi-embedded
 }
 ```
 
----
-
 One Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capacities Az](/azure/templates/microsoft.powerbidedicated/allversions) - Create a Power BI Embedded capacity.
 
 ### Deploy the template
