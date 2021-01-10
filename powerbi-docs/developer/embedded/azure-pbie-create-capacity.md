@@ -73,7 +73,7 @@ Before creating a Power BI Embedded capacity, make sure you have signed into Pow
 # [Azure CLI](#tab/CLI)
 
 >[!NOTE]
->Azure CLI is not supported for [Power BI Embedded Generation 2](power-bi-embedded-gen2.md).
+>Azure CLI is not supported for [Power BI Embedded Generation 2 (preview)](power-bi-embedded-gen2.md).
 
 ### Use Azure Cloud Shell
 
@@ -158,8 +158,9 @@ If you don't have an Azure subscription, create a [free](https://azure.microsoft
 
 The template used in this quickstart is from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/101-power-bi-embedded).
 
->[!NOTE]
->To create an ARM template for [Power BI Embedded Gen 2](power-bi-embedded-gen2.md), enable the code in the comments.
+# [Gen 1](#tab/ARM-template/gen1)
+
+Use this template to create a classic Power BI Embedded (generation 1) resource.
 
 ```json
 {
@@ -214,13 +215,79 @@ The template used in this quickstart is from [Azure Quickstart Templates](https:
                     "members": [
                         "[parameters('admin')]"
                     ]
-                } // For Embedded Gen2, add a comma: ,
-                // For Embedded Gen to, add the following code: "mode": "Gen2"
+                }
             }
         }
     ]
 }
 ```
+
+# [Gen 2](#tab/ARM-template/gen2)
+
+Use this template to create a [Power BI Embedded Generation 2](power-bi-embedded-gen2.md) (also known as Embedded Gen2) resource.
+
+```json
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "name": {
+            "type": "string",
+            "metadata": {
+              "description": "The capacity name, which is displayed in the Azure portal and the Power BI admin portal"
+            }
+        },
+        "location": {
+            "type": "string",
+            "defaultValue": "[resourceGroup().location]",
+            "metadata": {
+              "description": "The location where Power BI is hosted for your tenant"
+            }
+        },
+        "sku": {
+            "type": "string",
+            "allowedValues": [
+                "A1",
+                "A2",
+                "A3",
+                "A4",
+                "A5",
+                "A6"
+            ],
+            "metadata": {
+              "description": "The pricing tier, which determines the v-core count and memory size for the capacity"
+            }
+        },
+        "admin": {
+            "type": "string",
+            "metadata": {
+              "description": "A user within your Power BI tenant, who will serve as an admin for this capacity"
+            }
+        }
+    },
+    "resources": [
+        {
+            "type": "Microsoft.PowerBIDedicated/capacities",
+            "apiVersion": "2018-09-01-preview",
+            "name": "[parameters('name')]",
+            "location": "[parameters('location')]",
+            "sku": {
+                "name": "[parameters('sku')]"
+            },
+            "properties": {
+                "administration": {
+                    "members": [
+                        "[parameters('admin')]"
+                    ]
+                },
+                "mode": "Gen2"
+            }
+        }
+    ]
+}
+```
+
+---
 
 One Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capacities Az](/azure/templates/microsoft.powerbidedicated/allversions) - Create a Power BI Embedded capacity.
 

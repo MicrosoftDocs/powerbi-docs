@@ -28,7 +28,7 @@ All of the Power BI Embedded Gen 1 capabilities such as pausing and resuming the
 
 * **Lower entry level for paginated reports and AI workloads** – Start with an *A1* SKU and grow as you need.
 
-* **Scaling a resource instantly** - Instantly scale your Power BI Embedded resource.
+* **Scaling a resource instantly** - Instantly scale your Power BI Embedded resource. From scaling a Gen1 resource in minutes, to scaling a Gen2 resource in seconds.
 
 * **Scaling without downtime** - With Embedded Gen2 you can scale your Power BI Embedded resource without experiencing any downtime.
 
@@ -58,17 +58,16 @@ Create an Embedded Gen2 capacity resource to take advantage of its updates. To c
 ## Next steps
 
 > [!div class="nextstepaction"]
->[Embed for your customers](embed-sample-for-customers.md)
-
-> [!div class="nextstepaction"]
->[Embed for your organization](embed-sample-for-your-organization.md)
+> [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md)
 
 > [!div class="nextstepaction"]
 > [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
 
-
-> [!div class="nextstepaction"]
-> [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md)
-
 > [!div class="nextstepaction"]
 > [What is Power BI Premium?](../../admin/service-premium-what-is.md)
+
+> [!div class="nextstepaction"]
+>[Embed for your customers](embed-sample-for-customers.md)
+
+> [!div class="nextstepaction"]
+>[Embed for your organization](embed-sample-for-your-organization.md)
