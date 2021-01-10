@@ -224,7 +224,7 @@ Use this template to create a classic Power BI Embedded resource.
 }
 ```
 
-#### Embedded Gen2
+#### Embedded Gen2 (preview)
 
 Use this template to create an [Embedded Gen 2](power-bi-embedded-gen2.md) resource.
 
