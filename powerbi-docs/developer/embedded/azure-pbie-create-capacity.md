@@ -160,8 +160,10 @@ The template used in this quickstart is from [Azure Quickstart Templates](https:
 
 :::row:::
     :::column span="":::
-        Use this template to create a classic Power BI Embedded (generation 1) resource.
+        #### Embedded Gen1
 
+        Use this template to create a classic Power BI Embedded resource.
+        </br>
         ```json
         {
             "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
@@ -223,8 +225,9 @@ The template used in this quickstart is from [Azure Quickstart Templates](https:
         ```      
    :::column-end:::
    :::column span="":::
-        Use this template to create a [Power BI Embedded Generation 2](power-bi-embedded-gen2.md) (also known as Embedded Gen2) resource.
-        
+        #### Embedded Gen2
+        Use this template to create an [Embedded Gen 2](power-bi-embedded-gen2.md) resource.
+        </br>
         ```json
         {
             "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
