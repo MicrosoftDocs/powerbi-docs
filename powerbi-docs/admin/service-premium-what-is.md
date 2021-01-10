@@ -155,8 +155,7 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 
 #### Updates for Premium Gen2 (Preview)
 
-With **Premium Gen2** and [Embedded Gen 2](../developer/embedded/power-bi-embedded-gen2.md), the amount of memory available on each node size is set to the limit of memory footprint of a single artifact, and not to the cumulative consumption of memory. For example, in Premium Gen2 only a single dataset size is limited to 25 GB, in comparison to the original Premium, where the total memory footprint of the datasets being handled at the same time was limited to 25 GB.
-
+With **Premium Gen2** and [Embedded Gen 2](../developer/embedded/power-bi-embedded-gen2.md), the amount of memory available on each node size is set to the limit of memory footprint of a single artifact, and not to the cumulative consumption of memory. For example, in Premium Gen2, only a single dataset size is limited to 25 GB, in comparison to the original Premium, where the total memory footprint of the datasets being handled at the same time was limited to 25 GB.
 
 ### Capacity workloads
 
