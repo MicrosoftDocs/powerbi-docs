@@ -87,7 +87,7 @@ Follow the code requirements listed below to make sure that your code is in line
 * Only use public reviewable OSS components such as public JavaScript or TypeScript libraries.
 * The code must support the [Rendering Events API](event-service.md).
 * Ensure DOM is manipulated safely. Use sanitization for user input or user data, before adding it to DOM.
-* Use the [sample report](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) as a test dataset.
+* Use the [sample report](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/gh-pages/assets) as a test dataset.
 
 **Not allowed**
 * Accessing external services or resources. For example, no HTTP/S or WebSocket requests can go out of Power BI to any services.

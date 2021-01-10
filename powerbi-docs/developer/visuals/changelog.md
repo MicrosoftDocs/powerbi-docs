@@ -91,7 +91,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 
 ## API v1.6.2
 * Supports **[Edit mode](./advanced-edit-mode.md)** for visual to enter in-visual edit mode
-* Supports **[Interactive (html) R Power BI visuals](https://github.com/Microsoft/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)**, based on html
+* Supports **[Interactive (html) R Power BI visuals](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)**, based on html
 
 ## API v1.5.0
 * Supports **[Allow interactions](./visuals-interactions.md)** for visual interactivity
@@ -105,7 +105,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 ## API v1.2.0
 * Adds **colorPalette** to manage the colors used on your visual.
 * Supports **Multiple selection** - selectionManager can accept an array of `SelectionId`.
-* Supports **[R visuals](https://github.com/Microsoft/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)** using R scripts
+* Supports **[R visuals](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)** using R scripts
 
 ## API v1.1.0
 * Supports debug visual in iFrame
