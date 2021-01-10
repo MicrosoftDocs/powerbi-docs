@@ -16,6 +16,24 @@ ms.date: 01/06/2021
 
 This article walks through how to create a [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) capacity in Microsoft Azure. Power BI Embedded simplifies Power BI capabilities by helping you quickly add stunning visuals, reports, and dashboards to your apps.
 
+You can create a capacity for one of the following resources:
+
+# [Classic](#tab/portal)
+
+Create a Power BI Embedded classic resource, also know as generation 1.
+
+>[!NOTE]
+>Selecting this tab will display an ARM template for creating a classic Power BI Embedded capacity in the [Create a capacity](#create-a-capacity) section.
+
+# [Gen 2](#tab/portal)
+
+Create a Power BI Embedded Generation 2 resource, also known as [Embedded Gen2](power-bi-embedded-gen2.md).
+
+>[!NOTE]
+>Selecting this tab will display an ARM template for creating an Embedded Gen2 capacity in the [Create a capacity](#create-a-capacity) section.
+
+---
+
 ## Before you begin
 
 To complete this quickstart, you need:
@@ -65,7 +83,7 @@ Before creating a Power BI Embedded capacity, make sure you have signed into Pow
 
         * **Embedded Generation 1** - The classic Power BI Embedded resource.
 
-        * **Embedded Generation 2** - The new Power BI Embedded resource, offering improved experience. For more information, see [Power BI Embedded Premium Generation 2](power-bi-embedded-gen2.md). 
+        * **Embedded Generation 2** - The new Power BI Embedded resource, offering improved experience. For more information, see [Power BI Embedded Premium Generation 2](power-bi-embedded-gen2.md).
         
         >[!IMPORTANT]
         >Once you create a capacity resource, you cannot switch generations. If you want to change your Power BI Embedded generation, you can create another resource using a different generation, and reassign your workspaces to it. You can also automate this process using ARM APIs.
