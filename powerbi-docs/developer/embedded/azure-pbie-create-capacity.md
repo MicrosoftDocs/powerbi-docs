@@ -158,13 +158,12 @@ If you don't have an Azure subscription, create a [free](https://azure.microsoft
 
 The templates used in this quickstart are from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/101-power-bi-embedded).
 
-:::row:::
-    :::column span="":::
+Once Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capacities Az](/azure/templates/microsoft.powerbidedicated/allversions) - Create a Power BI Embedded capacity.
+
 #### Embedded Gen1
 
 Use this template to create a classic Power BI Embedded resource.
-</br>
-</br>
+
 ```json
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
@@ -223,13 +222,12 @@ Use this template to create a classic Power BI Embedded resource.
         }
     ]
 }
-```      
-   :::column-end:::
-   :::column span="":::
+```
+
 #### Embedded Gen2
+
 Use this template to create an [Embedded Gen 2](power-bi-embedded-gen2.md) resource.
-</br>
-</br>
+
 ```json
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
@@ -290,10 +288,6 @@ Use this template to create an [Embedded Gen 2](power-bi-embedded-gen2.md) resou
     ]
 }
 ```
-   :::column-end:::
-:::row-end:::
-
-One Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capacities Az](/azure/templates/microsoft.powerbidedicated/allversions) - Create a Power BI Embedded capacity.
 
 ### Deploy the template
 
