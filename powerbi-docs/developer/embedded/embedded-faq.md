@@ -37,9 +37,9 @@ Power BI Premium is capacity geared toward enterprises who want a complete BI so
 
 Power BI Embedded is for ISVs who want to embed visuals into their applications. Power BI Embedded helps your customers make decisions because Power BI Embedded is for application developers, customers of that application can consume content stored on Power BI Embedded capacity, including anyone inside or outside the organization. You can't share Power BI Embedded capacity content through one-click publish to Web or one-click publish to SharePoint.
 
-### What is Power BI Embedded Premium Generation 2?
+### What is Power BI Embedded Generation 2?
 
-Power BI Embedded recently released a new version of Premium, called **Embedded Gen2**. Embedded Gen2 will simplify the management of Embedded capacities, and reduce management overhead. For more information, see [Power BI Embedded Premium Generation 2](power-bi-embedded-premium-gen2.md).
+Power BI Embedded recently released a new version, called **Embedded Gen2**. Embedded Gen2 will simplify the management of embedded capacities, and reduce management overhead. For more information, see [Power BI Embedded Generation 2](power-bi-embedded-gen2.md).
 
 ### What is the Microsoft recommendation for when a customer should buy Power BI Premium vs. Power BI Embedded?
 

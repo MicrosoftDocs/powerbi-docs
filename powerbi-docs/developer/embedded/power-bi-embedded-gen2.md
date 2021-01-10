@@ -1,6 +1,6 @@
 ---
-title: Power BI Embedded Gen2 Premium explained as part of Power BI embedded analytics enabling better embedded BI insights
-description: Learn about the Power BI Embedded Gen2 Premium offering in Power BI embedded analytics, which enable better embedded BI insights.
+title: Power BI Embedded Gen2 explained as part of Power BI embedded analytics enabling better embedded BI insights
+description: Learn about the Power BI Embedded Gen2 offering in Power BI embedded analytics, which enable better embedded BI insights.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -10,12 +10,9 @@ ms.topic: tutorial
 ms.date: 01/06/2021
 ---
 
-# Power BI Embedded Premium Generation 2 (preview)
+# Power BI Embedded Generation 2 (preview)
 
 Power BI Embedded recently released a new version of Power BI Embedded, **Power BI Embedded Generation 2**, referred to as **Embedded Gen2** for convenience. Embedded Gen2 is currently in preview, and is available for embedded subscribers to use during the preview period. You can still create the original version of the Power BI Embedded resource, called *Embedded Gen 1*, or create a new *Embedded Gen 2* resource. During the preview period, you can run both types of Power BI Embedded resources in parallel, each assigned to a different workspace.
-
->[!NOTE]
->This article lists the **Embedded Gen2** enhancements. To review all the Power BI Premium Gen2 benefits, refer to [Power BI Premium Generation 2](../../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview).
 
 All of the Power BI Embedded Gen 1 capabilities such as pausing and resuming the capacity, are preserved in Gen 2. In addition, the Gen 2 capacity resource provides the following updates and improved experience:
 
@@ -33,7 +30,7 @@ All of the Power BI Embedded Gen 1 capabilities such as pausing and resuming the
 
 * **Scaling a resource instantly** - Instantly scale your Power BI Embedded resource.
 
-* **Scaling without downtime** - Scale your Power BI Embedded resource without experiencing downtime.
+* **Scaling without downtime** - With Embedded Gen2 you can scale your Power BI Embedded resource without experiencing any downtime.
 
 * **Improved metrics** - Including clear and normalized capacity utilization data, depending only on the complexity of the analysis operations the capacity performs. Metrics are not impacted by other factors such as the size of the capacity, and the level of load on the system while performing analytics. When using the improved metrics, the built-in reporting tool allows you to clearly see:
     * Utilization analysis
@@ -68,6 +65,10 @@ Create an Embedded Gen2 capacity resource to take advantage of its updates. To c
 
 > [!div class="nextstepaction"]
 > [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
+
+
+> [!div class="nextstepaction"]
+> [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md)
 
 > [!div class="nextstepaction"]
 > [What is Power BI Premium?](../../admin/service-premium-what-is.md)

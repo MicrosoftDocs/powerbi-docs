@@ -35,7 +35,7 @@ This article introduces key features in Power BI Premium. Where necessary, links
 Power BI Premium recently released a new version of Power BI Premium, **Power BI Premium Generation 2**, referred to as **Premium Gen2** for convenience. Premium Gen2 is currently in preview, and is available for Premium subscribers to use during the preview period. You can select to use the original version of Premium, or switch to using Premium Gen2. You can only use one or the other for your Premium capacity.
 
 >[!NOTE]
->To review the Power BI Embedded Premium Gen2 enhancements, refer to [Power BI Embedded Premium Generation 2](../developer/embedded/power-bi-embedded-premium-gen2.md).
+>To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-gen2.md).
 
 Premium Gen2 provides the following updates or improved experiences:
 
@@ -155,7 +155,7 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 
 #### Updates for Premium Gen2 (Preview)
 
-With **Premium Gen2** and [Embedded Gen 2](../developer/embedded/power-bi-embedded-premium-gen2.md), the amount of memory available on each node size is set to the limit of memory footprint of a single artifact, and not to the cumulative consumption of memory. For example, in Premium Gen2 only a single dataset size is limited to 25 GB, in comparison to the original Premium, where the total memory footprint of the datasets being handled at the same time was limited to 25 GB.
+With **Premium Gen2** and [Embedded Gen 2](../developer/embedded/power-bi-embedded-gen2.md), the amount of memory available on each node size is set to the limit of memory footprint of a single artifact, and not to the cumulative consumption of memory. For example, in Premium Gen2 only a single dataset size is limited to 25 GB, in comparison to the original Premium, where the total memory footprint of the datasets being handled at the same time was limited to 25 GB.
 
 
 ### Capacity workloads
@@ -192,7 +192,7 @@ Refreshes, like queries, require the model be loaded into memory. If there is in
 
 #### Updates for Premium Gen2 (Preview)
 
-Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-premium-gen2.md) don't require cumulative memory limits, and therefore concurrent dataset refreshes don't contribute to resource constraints. There is no limit on the number of refreshes running per v-core. However, the refresh of individual datasets continues to be governed by existing capacity memory and CPU limits. You can schedule and run as many refreshes as required at any given time, and the Power BI service will run those refreshes at the time scheduled as a best effort.
+Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-gen2.md) don't require cumulative memory limits, and therefore concurrent dataset refreshes don't contribute to resource constraints. There is no limit on the number of refreshes running per v-core. However, the refresh of individual datasets continues to be governed by existing capacity memory and CPU limits. You can schedule and run as many refreshes as required at any given time, and the Power BI service will run those refreshes at the time scheduled as a best effort.
 
 Section notes:   
 <a name="endnote-1"></a>\[1\] Subject to change.
@@ -242,7 +242,7 @@ From the app's dashboard, you can click a metric cell to open an in-depth report
 To learn more about monitoring capacities, see [Monitoring in the Power BI Admin portal](service-admin-premium-monitor-portal.md) and [Monitoring with the Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capacity.md).
 
 #### Updates for Premium Gen2 (Preview)
-**Premium Gen2** and [Embedded Gen 2](../developer/embedded/power-bi-embedded-premium-gen2.md) capacities don't use the Metrics app, they use the Capacity Utilization App, which will be made available during the preview. Customers wanting to review their utilization can receieve a copy of their utilization report for the past 7 days by requsting one from customer support. The report will be supplied within 72 hours of requestung. The Capacity Utilization App will be launched from your capacity management page in the **Admin portal** for each capacity, and will allow anlayis of 30 days of data and more.
+**Premium Gen2** and [Embedded Gen 2](../developer/embedded/power-bi-embedded-gen2.md) capacities don't use the Metrics app, they use the Capacity Utilization App, which will be made available during the preview. Customers wanting to review their utilization can receieve a copy of their utilization report for the past 7 days by requsting one from customer support. The report will be supplied within 72 hours of requestung. The Capacity Utilization App will be launched from your capacity management page in the **Admin portal** for each capacity, and will allow anlayis of 30 days of data and more.
 
 
 
