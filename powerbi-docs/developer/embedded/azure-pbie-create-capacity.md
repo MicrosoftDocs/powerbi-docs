@@ -146,6 +146,8 @@ az powerbi embedded-capacity delete --name
 
 You can view all the Power BI Embedded Azure CLI commands, in [az powerbi](/cli/azure/ext/powerbidedicated/powerbi).
 
+# [ARM template](#tab/ARM-template)
+
 ### Use Resource Manager template
 
 [Resource Manager template](/azure/azure-resource-manager/templates/overview) is a JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for your project. The template uses declarative syntax, which lets you state what you intend to deploy without having to write the sequence of programming commands to create it. If you want to learn more about developing Resource Manager templates, see [Resource Manager documentation](/azure/azure-resource-manager/) and the [template reference](/azure/templates/).
@@ -156,12 +158,13 @@ If you don't have an Azure subscription, create a [free](https://azure.microsoft
 
 The templates used in this quickstart are from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/101-power-bi-embedded).
 
-Once Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capacities Az](/azure/templates/microsoft.powerbidedicated/allversions) - Create a Power BI Embedded capacity.
-
-#### Power BI Embedded
+:::row:::
+    :::column span="":::
+#### Embedded Gen1
 
 Use this template to create a classic Power BI Embedded resource.
-
+</br>
+</br>
 ```json
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
@@ -220,10 +223,10 @@ Use this template to create a classic Power BI Embedded resource.
         }
     ]
 }
-```
-
+```      
+   :::column-end:::
+   :::column span="":::
 #### Embedded Gen2
-
 Use this template to create an [Embedded Gen 2](power-bi-embedded-gen2.md) resource.
 </br>
 </br>
@@ -287,6 +290,10 @@ Use this template to create an [Embedded Gen 2](power-bi-embedded-gen2.md) resou
     ]
 }
 ```
+   :::column-end:::
+:::row-end:::
+
+One Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capacities Az](/azure/templates/microsoft.powerbidedicated/allversions) - Create a Power BI Embedded capacity.
 
 ### Deploy the template
 
