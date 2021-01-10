@@ -156,13 +156,14 @@ If you don't have an Azure subscription, create a [free](https://azure.microsoft
 
 ### Review the template
 
-The template used in this quickstart is from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/101-power-bi-embedded).
+The templates used in this quickstart are from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/101-power-bi-embedded).
 
 :::row:::
     :::column span="":::
         #### Embedded Gen1
 
         Use this template to create a classic Power BI Embedded resource.
+        </br>
         </br>
         ```json
         {
@@ -227,6 +228,7 @@ The template used in this quickstart is from [Azure Quickstart Templates](https:
    :::column span="":::
         #### Embedded Gen2
         Use this template to create an [Embedded Gen 2](power-bi-embedded-gen2.md) resource.
+        </br>
         </br>
         ```json
         {
