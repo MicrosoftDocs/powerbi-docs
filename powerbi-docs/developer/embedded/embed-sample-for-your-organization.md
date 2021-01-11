@@ -14,7 +14,9 @@ ms.date: 12/17/2020
 
 # Tutorial: Embed Power BI content using a sample *embed for your organization* application
 
-[!INCLUDE[embedded analytics overview](../../includes/embed-tutorial-overview.md)]
+Power BI embedded analytics allows you to embed Power BI content such as reports, dashboards and tiles, into your application.
+
+In this tutorial, you'll learn how to:
 
 >[!div class="checklist"]
 >* Set up your embedded environment.
@@ -24,7 +26,9 @@ To use your application, your users will need to sign in to Power BI.
 
 The embed for your organization solution is usually used by enterprises and big organizations, and is intended for internal users.
 
-[!INCLUDE[embedded analytics specifications](../../includes/embed-tutorial-specs.md)]
+## Code sample specifications
+
+This tutorial includes instructions for configuring an *embed for your organization* sample application in one of the following frameworks:
 
 * .NET Framework
 * .NET Core
@@ -35,8 +39,8 @@ The embed for your organization solution is usually used by enterprises and big 
 
 The code samples support the following browsers:
 
-* Google Chrome
 * Microsoft Edge
+* Google Chrome
 * Mozilla Firefox
 
 ## Prerequisites
@@ -54,7 +58,10 @@ Before you start this tutorial, verify that you have both the Power BI and code 
         * [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md)
 
     >[!NOTE]
-    >To [move to production](move-to-production.md) you'll need a [capacity](embedded-capacity.md).
+    >To [move to production](move-to-production.md) you'll need one of the following configurations:
+    >* All users with Pro licenses.
+    >* All users with PPU licenses.
+    >* A [capacity](embedded-capacity.md). This configuration allows all users to have free licenses.
 
 * **Code dependencies**
 
@@ -63,10 +70,10 @@ Before you start this tutorial, verify that you have both the Power BI and code 
     * [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (or higher)
     
     * An integrated development environment (IDE). We recommend using one of the following:
-    
-    * [Visual Studio](https://visualstudio.microsoft.com/)
-    
-    * [Visual Studio Code](https://code.visualstudio.com/)
+
+        * [Visual Studio](https://visualstudio.microsoft.com/)
+
+        * [Visual Studio Code](https://code.visualstudio.com/)
 
     # [.NET Framework](#tab/net-framework)
 
@@ -131,7 +138,7 @@ To embed your content, you'll need to obtain a few parameter values. The paramet
 ### Client secret
 
 >[!TIP]
->**Applies to:** ![Applies to.](../../media/yes.png).NET Core ![Applies to.](../../media/yes.png).NET Framework ![Does not apply to.](../../media/no.png)React TypeScript
+>**Applies to:** ![Applies to.](../../media/yes.png).NET Core ![Applies to.](../../media/yes.png).NET Framework ![Applies to.](../../media/yes.png)(../../media/no.png)React TypeScript
 
 [!INCLUDE[Get the client secret](../../includes/embed-tutorial-client-secret.md)]
 
@@ -164,7 +171,7 @@ Follow these steps to modify the *embed for your organization* sample applicatio
     * React-TS
 
     >[!NOTE]
-    >The *embed for your organization* sample applications only support the languages listed above. The *Java*, *Node JS* and *Python* sample applications, only support the *[embed for your customers](embed-sample-for-customers.md)* solution.
+    >The *embed for your organization* sample applications only support the frameworks listed above. The *Java*, *Node JS* and *Python* sample applications, only support the *[embed for your customers](embed-sample-for-customers.md)* solution.
 
 # [.NET Core](#tab/net-core)
 

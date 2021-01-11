@@ -14,7 +14,9 @@ ms.date: 12/22/2020
 
 # Tutorial: Embed Power BI content using a sample *embed for your customers* application
 
-[!INCLUDE[embedded analytics overview](../../includes/embed-tutorial-overview.md)]
+**Embedded analytics** and **Power BI Embedded** (the Azure offer) allow you to embed Power BI content such as reports, dashboards and tiles, into your application.
+
+In this tutorial, you'll learn how to:
 
 >[!div class="checklist"]
 >* Set up your embedded environment.
@@ -24,7 +26,9 @@ To use your application, your users will not need to sign in to Power BI or have
 
 We recommend using the *embed for your customers* method to embed your Power BI content, if you're an independent software vendor (ISV) or a developer, who wants to create applications for third parties.
 
-[!INCLUDE[embedded analytics specifications](../../includes/embed-tutorial-specs.md)]
+## Code sample specifications
+
+This tutorial includes instructions for configuring an *embed for your customers* sample application in one of the following frameworks:
 
 * .NET Framework
 * .NET Core
@@ -34,8 +38,8 @@ We recommend using the *embed for your customers* method to embed your Power BI 
 
 The code samples support the following browsers:
 
-* Google Chrome
 * Microsoft Edge
+* Google Chrome
 * Mozilla Firefox
 
 ## Prerequisites
@@ -290,7 +294,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
     * Python
 
     >[!NOTE]
-    >The *embed for your customers* sample applications only support the languages listed above. The *React* sample application only supports the *[embed for your organization](embed-sample-for-your-organization.md)* solution.
+    >The *embed for your customers* sample applications only support the frameworks listed above. The *React* sample application only supports the *[embed for your organization](embed-sample-for-your-organization.md)* solution.
 
 5. Open the **Embed for your customers** folder.
 
