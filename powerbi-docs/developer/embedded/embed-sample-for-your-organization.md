@@ -123,7 +123,7 @@ To embed your content, you'll need to obtain a few parameter values. The paramet
 
 |Parameter  |.NET Core  |.NET Framework  |React TypeScript |
 |---------|---------|---------|---------|
-|[Client ID](#client-id) |![Appli    es to.](../../media/yes.png) |![Applies to.](../../media/yes.png)         |![Does not apply to.](../../media/no.png) |
+|[Client ID](#client-id) |![Applies to.](../../media/yes.png) |![Applies to.](../../media/yes.png)         |![Applies to.](../../media/yes.png) |
 |[Client secret](#workspace-id) |![Applies to.](../../media/yes.png) |![Applies to.](../../media/yes.png) |![Does not apply to.](../../media/no.png) |
 |[Workspace ID]() |![Does not apply to.](../../media/no.png) |![Does not apply to.](../../media/no.png) |![Applies to.](../../media/yes.png) |
 |[Report ID]() |![Does not apply to.](../../media/no.png) |![Does not apply to.](../../media/no.png) |![Applies to.](../../media/yes.png) |
@@ -131,14 +131,14 @@ To embed your content, you'll need to obtain a few parameter values. The paramet
 ### Client ID
 
 >[!TIP]
->**Applies to:** ![Applies to.](../../media/yes.png).NET Core ![Applies to.](../../media/yes.png).NET Framework ![Does not apply to.](../../media/no.png)React TypeScript
+>**Applies to:** ![Applies to.](../../media/yes.png).NET Core ![Applies to.](../../media/yes.png).NET Framework ![Applies to.](../../media/yes.png)React TypeScript
 
 [!INCLUDE[Get the client ID](../../includes/embed-tutorial-client-id.md)]
 
 ### Client secret
 
 >[!TIP]
->**Applies to:** ![Applies to.](../../media/yes.png).NET Core ![Applies to.](../../media/yes.png).NET Framework ![Applies to.](../../media/yes.png)React TypeScript
+>**Applies to:** ![Applies to.](../../media/yes.png).NET Core ![Applies to.](../../media/yes.png).NET Framework ![Does not apply to.](../../media/no.png)React TypeScript
 
 [!INCLUDE[Get the client secret](../../includes/embed-tutorial-client-secret.md)]
 
