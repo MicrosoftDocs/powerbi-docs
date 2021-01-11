@@ -65,15 +65,15 @@ Before creating a Power BI Embedded capacity, make sure you have signed into Pow
 
         * **Embedded Generation 1** - The classic Power BI Embedded resource.
 
-        * **Embedded Generation 2** - The new Power BI Embedded resource, offering improved experience. For more information, see [Power BI Embedded Premium Generation 2](power-bi-embedded-gen2.md).
+        * **Embedded Generation 2** - The new Power BI Embedded resource, offering improved experience. For more information, see [Power BI Embedded Premium Generation 2](power-bi-embedded-generation-2.md).
         
         >[!IMPORTANT]
-        >Once you create a capacity resource, you cannot switch generations. If you want to change your Power BI Embedded generation, you can create another resource using a different generation, and reassign your workspaces to it. You can also automate this process using ARM APIs.
+        >Once you create a capacity resource, you cannot switch generations. If you want to change your Power BI Embedded generation, you can create another resource using a different generation, and reassign your workspaces to it. You can also automate this process using Azure Resource Manager (ARM) APIs.
 
 # [Azure CLI](#tab/CLI)
 
 >[!NOTE]
->Azure CLI is not supported for [Power BI Embedded Generation 2 (preview)](power-bi-embedded-gen2.md).
+>Azure CLI is not supported for [Power BI Embedded Generation 2 (preview)](power-bi-embedded-generation-2.md).
 
 ### Use Azure Cloud Shell
 
@@ -135,7 +135,7 @@ az powerbi embedded-capacity create --location westeurope
 
 ### Delete a capacity with Azure CLI
 
-To delete a capacity using Azure CLI, use the [az powerbi embedded-capacity delete](/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity#ext-powerbidedicated-az-powerbi-embedded-capacity-delete) command.
+To delete a capacity using Azure CLI, use the [Azure Power BI embedded-capacity delete](/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity#ext-powerbidedicated-az-powerbi-embedded-capacity-delete) command.
 
 ```azurecli
 az powerbi embedded-capacity delete --name
@@ -144,7 +144,7 @@ az powerbi embedded-capacity delete --name
 
 ### Manage your capacity with Azure CLI
 
-You can view all the Power BI Embedded Azure CLI commands, in [az powerbi](/cli/azure/ext/powerbidedicated/powerbi).
+You can view all the Power BI Embedded Azure CLI commands, in [Azure Power BI](/cli/azure/ext/powerbidedicated/powerbi).
 
 # [ARM template](#tab/ARM-template)
 
@@ -226,7 +226,7 @@ Use this template to create a classic Power BI Embedded resource.
 
 #### Embedded Gen2 (preview)
 
-Use this template to create an [Embedded Gen 2](power-bi-embedded-gen2.md) resource.
+Use this template to create an [Embedded Gen 2](power-bi-embedded-generation-2.md) resource.
 
 ```json
 {
