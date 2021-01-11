@@ -13,7 +13,7 @@ ms.date: 11/23/2020
 
 # Embed Power BI content with service principal and a certificate
 
-Certificate-based authentication enables you to be authenticated by Azure Active Directory (Azure AD) with a client certificate on a Windows, Android or iOS device, or kept in an [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/basic-concepts).
+Certificate-based authentication enables you to be authenticated by Azure Active Directory (Azure AD) with a client certificate on a Windows, Android or iOS device, or kept in an [Azure Key Vault](/azure/key-vault/basic-concepts).
 
 Using this method of authentication allows managing certificates from a central place, using the CA, for rotation or revocation.
 

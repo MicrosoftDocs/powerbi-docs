@@ -154,4 +154,4 @@ With [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md) (also k
 >[Embed for your organization](embed-sample-for-your-organization.md)
 
 > [!div class="nextstepaction"]
-> [Embed from apps](embed-from-apps.md)
+> [Embed from apps](./index.yml)
