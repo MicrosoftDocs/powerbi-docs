@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 12/09/2020
+ms.date: 1/11/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
 ---
@@ -123,6 +123,10 @@ The following datasets aren't accessible by the XMLA endpoint. These datasets 
 - Datasets based on a live connection to a Power BI dataset in another workspace. To learn more, see [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md).
 - Datasets with Push data by using the REST API.
 - Excel workbook datasets.
+
+### Server/workspace alias
+
+Server name aliases, supported in Azure Analysis Services are not supported for Power BI Premium workspaces.
 
 ## Security
 
