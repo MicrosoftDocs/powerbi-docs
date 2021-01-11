@@ -138,7 +138,7 @@ To embed your content, you'll need to obtain a few parameter values. The paramet
 ### Client secret
 
 >[!TIP]
->**Applies to:** ![Applies to.](../../media/yes.png).NET Core ![Applies to.](../../media/yes.png).NET Framework ![Applies to.](../../media/yes.png)(../../media/no.png)React TypeScript
+>**Applies to:** ![Applies to.](../../media/yes.png).NET Core ![Applies to.](../../media/yes.png).NET Framework ![Applies to.](../../media/yes.png)React TypeScript
 
 [!INCLUDE[Get the client secret](../../includes/embed-tutorial-client-secret.md)]
 
@@ -179,15 +179,12 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
 [!INCLUDE[Configure the Azure AD authentication options](../../includes/embed-tutorial-org-azure-ad-app.md)]
 
-5. In *Platform configurations* configure the following:
-
-6. In your *Web* platform, in the **Redirect URIs** section, add `https://localhost:5000/signin-oidc`.
+5. In *Platform configurations*, open your *Web* platform and in the **Redirect URIs** section, add `https://localhost:5000/signin-oidc`.
 
     > [!NOTE]
     >If you don't have a **Web** platform, select **Add a platform** and in the *Configure platforms* window, select **Web**.
 
-
-7. Save your changes.
+6. Save your changes.
 
 :::image type="content" source="media/embed-sample-for-your-organization/azure-ad-net-configurations.png" alt-text="Screenshot showing the Azure AD app authentication configurations including the web redirect U R I for the .NET core app sample.":::
 
