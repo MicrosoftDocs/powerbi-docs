@@ -1,5 +1,5 @@
 ---
-title: Automate configuration of template app installation using an Azure function
+title: Automate configuration of template app installation using an Azure Function
 description: Use a sample application to learn how to install and configure template apps for your customers.
 author: paulinbar
 ms.author: painbar
@@ -10,7 +10,7 @@ ms.date: 11/23/2020
 #Customer intent: As an ISV developer, I want to develop a mechanism whereby my customers can click a link that automatically installs and configures a template app that I own.
 ---
 
-# Tutorial: Automate configuration of template app installation using an Azure function
+# Tutorial: Automate configuration of template app installation using an Azure Function
 
 Template apps are a great way for customers to start getting insights from their data. Template apps get them up and running quickly by connecting them to their data. The template apps provide customers with prebuilt reports that they can customize if they so desire.
 
@@ -30,11 +30,11 @@ The customer experience is illustrated here.
 
 ![Illustration of user experience with an auto-installation application.](media/template-apps-auto-install/high-level-flow.png)
 
-In this tutorial, you'll use an automated installation Azure Functions sample that we've created to preconfigure and install your template app. This sample has deliberately been kept simple for demonstration purposes. It encapsulates the setup of an Azure function to use Power BI APIs for installing a template app and configuring it for your users automatically.
+In this tutorial, you'll use an automated installation Azure Functions sample that we've created to preconfigure and install your template app. This sample has deliberately been kept simple for demonstration purposes. It encapsulates the setup of an Azure Function to use Power BI APIs for installing a template app and configuring it for your users automatically.
 
 For more information about the general automation flow and the APIs that the app uses, see [Automate configuration of a template app installation](template-apps-auto-install.md).
 
-Our simple application uses an Azure function. For more information about Azure Functions, see the [Azure Functions documentation](https://docs.microsoft.com/azure/azure-functions/).
+Our simple application uses an Azure Function. For more information about Azure Functions, see the [Azure Functions documentation](https://docs.microsoft.com/azure/azure-functions/).
 
 ## Basic flow
 
@@ -62,7 +62,7 @@ The following basic flow lists what the application does when the customer launc
 
 ## Set up your template apps automation development environment
 
-Before you continue setting up your application, follow the instructions in [Quickstart: Create an Azure Functions app with Azure App Configuration](https://docs.microsoft.com/azure/azure-app-configuration/quickstart-azure-functions-csharp) to develop an Azure function along with an Azure app configuration. Create your app configuration as described in the article.
+Before you continue setting up your application, follow the instructions in [Quickstart: Create an Azure Functions app with Azure App Configuration](https://docs.microsoft.com/azure/azure-app-configuration/quickstart-azure-functions-csharp) to develop an Azure Function along with an Azure app configuration. Create your app configuration as described in the article.
 
 ### Register an application in Azure AD
 
@@ -90,7 +90,7 @@ After you've created your template app and it's ready for installation, save the
 
 ## Install and configure your template app
 
-In this section, you'll use an automated installation Azure Functions sample that we created to preconfigure and install your template app. This sample has deliberately been kept simple for demonstration purposes. It allows you to use an [Azure function](https://docs.microsoft.com/azure/azure-functions/functions-overview) and [Azure App Configuration](https://docs.microsoft.com/azure/azure-app-configuration/overview) to easily deploy and use the automated installation API for your template apps.
+In this section, you'll use an automated installation Azure Functions sample that we created to preconfigure and install your template app. This sample has deliberately been kept simple for demonstration purposes. It allows you to use an [Azure Function](https://docs.microsoft.com/azure/azure-functions/functions-overview) and [Azure App Configuration](https://docs.microsoft.com/azure/azure-app-configuration/overview) to easily deploy and use the automated installation API for your template apps.
 
 ### Download [Visual Studio](https://www.visualstudio.com/) (version 2017 or later)
 
@@ -206,7 +206,7 @@ Configure your portal to issue a ```POST``` request to the URL of the function. 
 The desired flow should be:
 
 1. The portal prepares the request, per user or session.
-1. The ```POST /api/install``` request is issued to your Azure function. The request body consists of key-value pairs. The key is the parameter name. The value is the desired value to be set.
+1. The ```POST /api/install``` request is issued to your Azure Function. The request body consists of key-value pairs. The key is the parameter name. The value is the desired value to be set.
 1. If everything is configured properly, the browser should automatically redirect to the customer's Power BI account and show the automated installation flow.
 1. Upon installation, parameter values are set as configured in steps 1 and 2.
  
