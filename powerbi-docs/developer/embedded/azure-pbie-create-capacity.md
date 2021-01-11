@@ -68,7 +68,7 @@ Before creating a Power BI Embedded capacity, make sure you have signed into Pow
         * **Embedded Generation 2** - The new Power BI Embedded resource, offering improved experience. For more information, see [Power BI Embedded Premium Generation 2](power-bi-embedded-generation-2.md).
         
         >[!IMPORTANT]
-        >Once you create a capacity resource, you cannot switch generations. If you want to change your Power BI Embedded generation, you can create another resource using a different generation, and reassign your workspaces to it. You can also automate this process using Azure Resource Manager (ARM) APIs.
+        >Once you create a capacity resource, you cannot switch generations. If you want to change your Power BI Embedded generation, you can create another resource using a different generation, and reassign your workspaces to it. You can also automate this process using Azure Resource Manager APIs.
 
 # [Azure CLI](#tab/CLI)
 
