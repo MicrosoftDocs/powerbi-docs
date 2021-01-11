@@ -28,7 +28,7 @@ The customer experience is illustrated here.
 
 ![Illustration of user experience with an auto-installation application.](media/template-apps-auto-install/high-level-flow.png)
 
-This article describes the basic flow, the prerequisites, and the main steps and APIs you need to automate the configuration of a template app installation. If you want to dive in and get started, you can skip to the [tutorial](template-apps-auto-install-tutorial.md) where you automate the configuration of the template app installation by using a simple sample application we've prepared that uses an Azure function.
+This article describes the basic flow, the prerequisites, and the main steps and APIs you need to automate the configuration of a template app installation. If you want to dive in and get started, you can skip to the [tutorial](template-apps-auto-install-tutorial.md) where you automate the configuration of the template app installation by using a simple sample application we've prepared that uses an Azure Function.
 
 ## Basic flow
 
@@ -142,7 +142,7 @@ A simple example, mostly used for testing purposes, uses a form with a hidden fi
 </html>
 ```
 
-The following example of the [sample application](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample)'s response holds the install ticket and automatically redirects users to Power BI. The response for this Azure function is the same automatically self-submitting form that we see in the preceding HTML example.
+The following example of the [sample application](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample)'s response holds the install ticket and automatically redirects users to Power BI. The response for this Azure Function is the same automatically self-submitting form that we see in the preceding HTML example.
 
 ```csharp
 ...
@@ -172,5 +172,5 @@ When the automation you've designed is ready, be sure to move it to production.
 
 ## Next steps
 
-* Try our [tutorial](template-apps-auto-install-tutorial.md), which uses a simple Azure function to automate the configuration of a template app installation.
+* Try our [tutorial](template-apps-auto-install-tutorial.md), which uses a simple Azure Function to automate the configuration of a template app installation.
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/).
