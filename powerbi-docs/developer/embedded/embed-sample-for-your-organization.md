@@ -181,18 +181,15 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
 5. In *Platform configurations* configure the following:
 
-    1. In your *Web* platform, in the **Redirect URIs** section, add `https://localhost:5000/signin-oidc`.
+6. In your *Web* platform, in the **Redirect URIs** section, add `https://localhost:5000/signin-oidc`.
 
-        > [!NOTE]
-        >If you don't have a **Web** platform, select **Add a platform** and in the *Configure platforms* window, select **Web**.
-    
-    2. In *Implicit grant and hybrid flows*, enable the **Access tokens** option.
+    > [!NOTE]
+    >If you don't have a **Web** platform, select **Add a platform** and in the *Configure platforms* window, select **Web**.
 
-    3. Save your changes.
 
-    :::image type="content" source="media/embed-sample-for-your-organization/azure-ad-net-configurations.png" alt-text="Screenshot showing the Azure AD app authentication configurations including the web redirect U R I and the selected access token option for the .NET core app sample.":::
+7. Save your changes.
 
-[!INCLUDE[Configure the Azure AD permissions](../../includes/embed-tutorial-org-azure-ad-permissions.md)]
+:::image type="content" source="media/embed-sample-for-your-organization/azure-ad-net-configurations.png" alt-text="Screenshot showing the Azure AD app authentication configurations including the web redirect U R I for the .NET core app sample.":::
 
 ### Configure the sample embedding app
 
@@ -235,11 +232,9 @@ Run the project by selecting the appropriate option:
     
     2. In *Implicit grant and hybrid flows*, enable the **ID tokens** option.
     
-    3. Save your changes.
+6. Save your changes.
 
-    :::image type="content" source="media/embed-sample-for-your-organization/azure-ad-framework-configurations.png" alt-text="Screenshot showing the Azure AD app authentication configurations including the web redirect U R I and the selected access token option for the .NET framework app sample.":::
-
-[!INCLUDE[Configure the Azure AD permissions](../../includes/embed-tutorial-org-azure-ad-permissions.md)]
+:::image type="content" source="media/embed-sample-for-your-organization/azure-ad-framework-configurations.png" alt-text="Screenshot showing the Azure AD app authentication configurations including the web redirect U R I and the selected access token option for the .NET framework app sample.":::
 
 ### Reinstall the Power BI JavaScript NuGet package
 
@@ -286,17 +281,9 @@ Run the project by selecting the appropriate option:
         * **Access tokens**
         * **ID tokens**
     
-    3. Save your changes.
+6. Save your changes.
 
-        :::image type="content" source="media/embed-sample-for-your-organization/azure-ad-react-configurations.png" alt-text="Screenshot showing the Azure AD app authentication configurations including the web redirect U R I set for localhost 3000.":::
-
-6. From the *Manage* menu, select **Permissions** and verify the following:
-
-    1. That your Azure AD app has the **Read all reports** permission listed. To change your Azure AD app permissions, refer to [Change your Azure AD app's permissions](register-app.md#change-your-azure-ad-apps-permissions).
-
-    2. That the **Read all reports** permission is granted. A![Applies to.](../../media/yes.png) symbol next to the permission indicates that it's granted. If you don't see this symbol, select **Grant admin consent**.
-
-    :::image type="content" source="media/embed-sample-for-your-organization/azure-ad-permission.png" alt-text="Screenshot showing the Azure AD app API permissions.":::
+:::image type="content" source="media/embed-sample-for-your-organization/azure-ad-react-configurations.png" alt-text="Screenshot showing the Azure AD app authentication configurations including the web redirect U R I set for localhost 3000.":::
 
 ### Configure the sample embedding app
 
