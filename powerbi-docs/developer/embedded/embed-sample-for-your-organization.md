@@ -220,7 +220,7 @@ Run the project by selecting the appropriate option:
 
 [!INCLUDE[Configure the Azure AD authentication options](../../includes/embed-tutorial-org-azure-ad-app.md)]
 
-5. In *Platform configurations* configure the following:
+5. In *Platform configurations*, configure the following:
 
     1. In your *Web* platform, in the **Redirect URIs** section, add `https://localhost:44300/`.
 
@@ -267,7 +267,7 @@ Run the project by selecting the appropriate option:
 
 [!INCLUDE[Configure the Azure AD authentication options](../../includes/embed-tutorial-org-azure-ad-app.md)]
 
-5. In *Platform configurations* configure your **Web** platform as follows:
+5. In *Platform configurations*, configure your **Web** platform as follows:
 
     1. In **Redirect URIs** add `https://localhost:3000` and select **Configure**.
 
