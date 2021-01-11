@@ -64,7 +64,7 @@ When the dashboards and reports in your workspace are ready, you choose which da
     
     >[!IMPORTANT]
     >If your app relies on datasets from other workspaces, it is your responsibility to ensure all app users have access to the underlying datasets.
-    >
+    >If the app or report are in the same workspace than the dataset, you need to make sure the report associated with the  dataset is added to the app as well.
 
 6. You can install the app automatically for the recipients, if your Power BI admin has enabled this setting for you in the Power BI Admin Portal. Read more about [automatically installing an app](#automatically-install-apps-for-end-users) in this article.
 
