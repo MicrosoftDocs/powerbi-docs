@@ -38,7 +38,7 @@ To enable service principal authentication for Power BI read-only APIs, follow t
         * Select **Permissions**. Make sure there are no Power BI admin-consent-required permissions set on this application. See [Managing consent to applications and evaluating consent requests](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-consent-requests) for more information. 
 4. Enable the Power BI service admin settings. To do this:
     1. Log into the Power BI admin portal. You need to be a Power BI admin to see the tenant settings page.
-    1. Under **Developer settings**, you will see **Allow service principals to use read-only Power BI admin APIs (Preview)**. Set the toggle to Enabled, and then select the **Specific security groups** radio button and add the security group you created in Step 2 in the text field that appears below it, as shown in the figure below.
+    1. Under **Admin API settings**, you will see **Allow service principals to use read-only Power BI admin APIs (Preview)**. Set the toggle to Enabled, and then select the **Specific security groups** radio button and add the security group you created in Step 2 in the text field that appears below it, as shown in the figure below.
 
         ![Screenshot of allow service principals tenant setting.](media/read-only-apis-service-principal-auth/allow-service-principals-tenant-setting.png)
 
@@ -49,7 +49,7 @@ To enable service principal authentication for Power BI read-only APIs, follow t
 
 ## Considerations and limitations
 * You can't sign into the Power BI portal using service principal.
-* Power BI admin rights are required to enable service principal in the developer settings in the Power BI admin portal.
+* Power BI admin rights are required to enable service principal in the Admin API settings in the Power BI admin portal.
 * Service principal currently supports the following APIs:
     * [GetGroupsAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/groups_getgroupsasadmin) with $expand for dashboards, datasets, reports, and dataflows 
     * [GetDashboardsAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/dashboards_getdashboardsasadmin) with $expand tiles
