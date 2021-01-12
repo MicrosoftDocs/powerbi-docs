@@ -6,7 +6,7 @@ ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: how-to
+ms.topic: tutorial
 ms.date: 01/11/2021
 LocalizationGroup: Reports
 ---
