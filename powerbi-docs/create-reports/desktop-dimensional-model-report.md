@@ -26,14 +26,14 @@ Using our sample AdventureWorks sales workbook (link to workbook), we can build 
 
 Let’s get started! 
 
-In this tutorial, you'll learn how to: 
+In this tutorial, you'll learn how to:
 
-- Download sample data two different ways 
-- Prepare your data with a few transformations 
-- Build a report with a title, three visuals, and a slicer 
-- Publish your report to the Power BI service so you can share it with your colleagues 
+- Download sample data two different ways.
+- Prepare your data with a few transformations.
+- Build a report with a title, three visuals, and a slicer.
+- Publish your report to the Power BI service so you can share it with your colleagues.
 
-## Prerequisites 
+## Prerequisites
 
 - Before you start, you need to [download Power BI Desktop](../fundamentals/desktop-get-the-desktop.md). 
 - If you're planning to publish your report to the Power BI service and you aren't signed up yet, [sign up for a free trial](../fundamentals/service-self-service-signup-for-power-bi.md). 
@@ -56,9 +56,11 @@ Select all tables, and choose **Transform Data**. Make sure not to select th
 
 :::image type="content" source="media/desktop-dimensional-model-report/desktop-load-tables.png" alt-text="Load tables in Navigator.":::
 
-Check that the data types of the columns match those in the following table. To make any changes, select a query, then select one or more columns. On the **Home** tab, select **Data Type**, then select the appropriate data type from the table. 
+Check that the data types of the columns match those in the following table. To make any changes, select a query, then select one or more columns.
 
 :::image type="content" source="media/desktop-dimensional-model-report/power-query-change-data-types.png" alt-text="Check the data types of the columns.":::
+
+On the **Home** tab, select **Data Type**, then select the appropriate data type from the table.
 
 |Query  |Column  |Data type  |
 |---------|---------|---------|
@@ -100,22 +102,22 @@ Select **Model View** on the left.
 
 :::image type="content" source="media/desktop-dimensional-model-report/desktop-select-model-view.png" alt-text="Select Model view in Power BI Desktop.":::
 
-You see your data model. It should look like the following image, with boxes for each table. 
+Your data model should look like the following image, with each table in a box. 
 
 :::image type="content" source="media/desktop-dimensional-model-report/desktop-data-model-1.png" alt-text="The data model to start with.":::
 
 ### Create relationships
 
-This model is a typical star schema as you might see from data warehouses: It resembles a star. The center of the star is a Fact table and the surrounding tables are called Dimension tables, which are related to the Fact table with relationships. The Fact table contains numerical information about sales transactions, such as Sales Amount and Product Standard Cost. The Dimensions provide context so you can, among other things, analyze: 
+This model is a typical *star schema* that you might see from data warehouses: It resembles a star. The center of the star is a Fact table. The surrounding tables are called Dimension tables, which are related to the Fact table with relationships. The Fact table contains numerical information about sales transactions, such as Sales Amount and Product Standard Cost. The Dimensions provide context so you can, among other things, analyze: 
 
-- what Product was sold... 
+- What Product was sold... 
 - to which Customer.. 
 - by which Reseller... 
 - in which Sales Territory.  
 
-If you look closely, you notice that all Dimension tables are related to the Fact with a Relationship, except for the Date table. Let’s add some relationships to Date now. Drag the DateKey from the Date table to OrderDateKey on the Sales table. You've created a so-called "one-to-many" relationship from Date to Sales, as indicated by the **1** and the asterisk ***** (many) at the two ends of the line.  
+If you look closely, you notice that all Dimension tables are related to the Fact with a Relationship, except for the Date table. Let’s add some relationships to Date now. Drag the DateKey from the Date table to OrderDateKey on the Sales table. You've created a so-called "one-to-many" relationship from Date to Sales, as indicated by the **1** and the asterisk * (many) at the two ends of the line.  
 
-The relationship is "one-to-many" because we have one or more Sales orders for a given Date. If we had a maximum of one Sales order for each date, the relationship would be "one-to-one". The little arrow in the middle of the line indicates the "cross-filtering direction." It indicates that you can use values from the Date table to filter the Sales table, so the relationship allows you to analyze when a Sales order was placed.  
+The relationship is "one-to-many" because we have one or more Sales orders for a given Date. If each date had only one Sales order, the relationship would be "one-to-one". The little arrow in the middle of the line indicates the "cross-filtering direction." It indicates that you can use values from the Date table to filter the Sales table, so the relationship allows you to analyze when a Sales order was placed.  
 
 :::image type="content" source="media/desktop-dimensional-model-report/desktop-date-sales-relationship.png" alt-text="Relationship between the Sales and Date table.":::
 
@@ -126,7 +128,7 @@ The Sales table contains more information about dates related to Sales orders, s
     
 :::image type="content" source="media/desktop-dimensional-model-report/desktop-date-sales-relationships-done.png" alt-text="Three relationships between Sales and Date tables.":::
 
-You notice that the first relationship, on OrderDateKey, is active, shown by the continuous line. The other two are inactive, shown by the dashed line. Power BI uses the active relationship by default to relate Sales and Date. Hence, a sum of SalesAmount is calculated by Order Date, not Due Date or Ship Date. You can influence this behavior. See later in this tutorial. 
+You notice that the first relationship, on OrderDateKey, is active, shown by the continuous line. The other two are inactive, shown by the dashed lines. Power BI uses the active relationship by default to relate Sales and Date. Hence, a sum of SalesAmount is calculated by Order Date, not Due Date or Ship Date. You can influence this behavior. See [Extra credit: Write a measure in DAX](#extra-credit-write-a-measure-in-dax) later in this tutorial.
 
 ### Hide key columns
 
@@ -163,10 +165,6 @@ Hide these fields.
 |     | ShipDateKey        |
 | SalesOrder    | SalesOrderLineKey |
 | SalesTerritory  | SalesTerritoryKey |
-|     |         |
-|     |         |
-|     |         |
-
 
 Your data model should now look like this data model, with relationships between Sales and all the other tables, and all the key fields hidden: 
 
@@ -174,11 +172,17 @@ Your data model should now look like this data model, with relationships between
 
 ### Create hierarchies
 
-Now that our data model is easier to consume because of the hidden columns, we can add a couple of *hierarchies* to make the model even easier to use. Hierarchies enable easier navigation of groupings. For example, cities are in a State or Province, which is in a Country or Region. 
+Now that our data model is easier to consume because of the hidden columns, we can add a few *hierarchies* to make the model even easier to use. Hierarchies enable easier navigation of groupings. For example, cities are in a State or Province, which is in a Country or Region. 
 
-Create the following hierarchies. Right-click the highest level, or the least granular, field in the hierarchy and choose **Create hierarchy**. In the **Properties** pane, set the **Name** of the hierarchy and set the levels. Then **Apply Level Changes**. 
+Create the following hierarchies. 
 
-:::image type="content" source="media/desktop-dimensional-model-report/desktop-hierarchy-properties.png" alt-text="Hierarchy Properties pane.":::
+1. Right-click the highest level, or the least granular, field in the hierarchy and choose **Create hierarchy**. 
+
+1. In the **Properties** pane, set the **Name** of the hierarchy and set the levels. 
+
+1. Then **Apply Level Changes**. 
+
+    :::image type="content" source="media/desktop-dimensional-model-report/desktop-hierarchy-properties.png" alt-text="Hierarchy Properties pane.":::
 
 You can also rename levels in a hierarchy in the Properties pane after you add them. You'll need to rename the Year and Quarter level of the Fiscal hierarchy in the Date table. 
 
@@ -210,7 +214,7 @@ Here are the hierarchies you need to create.
 |     |         | Country |
 |     |         | Region |
  
-Your data model should now look like the following data model. It has the same tables, but each of the dimension tables contains a hierarchy: 
+Your data model should now look like the following data model. It has the same tables, but each dimension table contains a hierarchy: 
 
 :::image type="content" source="media/desktop-dimensional-model-report/desktop-data-model-3-added-hierarchies.png" alt-text="Data model with dimension tables with hierarchies.":::
 
@@ -243,7 +247,7 @@ Writing *measures* in the DAX formula language is super powerful for data modeli
 
 1. On the **Home** ribbon, select **New Measure**. 
 
-1. Type this measure to calculate the total sales amount by due date on the sales order instead of the default order date:
+1. Select or type this measure to calculate the total sales amount by due date on the sales order instead of the default order date:
 
     ```dax
     Sales Amount by Due Date = CALCULATE(SUM(Sales[Sales Amount]), USERELATIONSHIP(Sales[DueDateKey],'Date'[DateKey]))
@@ -275,7 +279,7 @@ Let’s build the final report, one visual at a time.
 
 ### Visual 2: Sales Amount by Date 
 
-Now, you create a line chart to see which month and year had the highest sales amount. 
+Next you create a line chart to see which month and year had the highest sales amount.
 
 1. From the Fields pane, drag the **Sales Amount** field from the **Sales** table to a blank area on the report canvas. By default, Power BI displays a column chart with one column, Sales Amount. 
 
@@ -320,7 +324,7 @@ Next we create a column chart to investigate which products are sold by what typ
 
 1. In the Fields pane, select **Sales Amount** from **Sales**, **Product Category** from **Product**, and **Business Type** from **Reseller**. 
 
-    Power BI automatically creates a clustered column chart. Change the visualization to a Matrix: 
+    Power BI automatically creates a clustered column chart. Change the visualization to a **Matrix**: 
 
     :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-change-to-matrix.png" alt-text="Change the clustered column chart to a matrix.":::
 
@@ -344,7 +348,7 @@ It looks like Bikes have a higher Sales Amount overall and the Value Added Resel
 
 ### Visual 5: Fiscal calendar slicer 
 
-Slicers are a valuable tool for filtering the visuals on a report page to a specific selection. In this case, we can create a slicer to narrow in on performance for each month, quarter and year. 
+Slicers are a valuable tool for filtering the visuals on a report page to a specific selection. In this case, we can create a slicer to narrow in on performance for each month, quarter, and year. 
 
 1. In the Fields pane, select the **Fiscal** hierarchy from the **Date** table and drag it to the blank area on the left of the canvas. 
 
@@ -377,8 +381,10 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 **Visual 2, Sales Amount by Date**
 
 1. Select Visual 2, Sales Amount by Date. 
-1. In the **Title** section, if you didn't add the DAX measure, change **Title** text to "Sales Amount by Order Date" . 
+1. In the **Title** section, if you didn't add the DAX measure, change **Title** text to "Sales Amount by Order Date". 
+
     If you did add the DAX measure, change **Title text** to "Sales Amount by Order Date / Due Date". 
+
 1. Set **Text** size to **16 pt**. 
 1. Toggle **Shadow** to **On**. 
 
@@ -439,7 +445,7 @@ In summary, this report answers your manager’s top questions:
 To share your report with your manager and colleagues, publish it to the Power BI service. When you share with colleagues that have a Power BI account, they can interact with your report, but can’t save changes.
 
 1. In Power BI Desktop, on the **Home** ribbon select **Publish**. 
-1. You may need to sign in to the Power BI service. If you don't have an account yet, you can [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web). 
+1. You may need to sign in to the Power BI service. If you don't have an account yet, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web). 
 
 1. Select a destination such as My workspace in the Power BI service > **Select**. 
 
