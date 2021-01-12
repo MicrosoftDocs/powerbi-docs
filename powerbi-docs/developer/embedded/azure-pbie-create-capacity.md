@@ -42,7 +42,8 @@ Before creating a Power BI Embedded capacity, make sure you have signed into Pow
 
 4. Fill in the required information and then click **Review + Create**.
 
-    ![Screenshot shows the Basics tab of the Power B I Embedded page to create new capacity in the Azure portal.](media/azure-pbie-create-capacity/azure-create-capacity-old.png)
+    >[!div class="mx-imgBorder"]
+    >![Screenshot shows the Basics tab of the Power B I Embedded page to create new capacity in the Azure portal.](media/azure-pbie-create-capacity/azure-create-capacity-old.png)
 
     * **Subscription** - The subscription you would like to create the capacity against.
 
