@@ -184,7 +184,7 @@ You need to [find one of these people](/office365/admin/admin-overview/admin-ove
 - Reports using any Live Connection data source, including Analysis Services Tabular hosted on-premises, Analysis Services Multidimensional, and Azure Analysis Services.
 - Reports using a [shared dataset](../connect-data/service-datasets-across-workspaces.md) that is stored in a different workspace from the report.
 - [Shared and certified datasets](../connect-data/service-datasets-share.md).
-- Reports shared to you directly or through an organizational content pack.
+- Reports shared to you directly or through an app.
 - Reports in a workspace in which you aren't an edit member.
 - "R" and Python visuals aren't currently supported in **Publish to web** reports.
 - Exporting data from visuals in a report that has been published to the web.

@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 10/29/2020
+ms.date: 01/12/2020
 LocalizationGroup: Share your work
 ---
 # Create classic workspaces in Power BI
@@ -63,7 +63,7 @@ When you view content in the content list of a workspace, the workspace name is 
 
 Apps are provided for all the third-party services Power BI supports, making it easy for you to get data from the services you use, such as Microsoft Dynamics CRM, Salesforce, or Google Analytics. You can publish organizational apps to give your users the data they need.
 
-In the current workspaces, you can also connect using organizational content packs, and third-party content packs such as Microsoft Dynamics CRM, Salesforce, or Google Analytics. Consider migrating your organizational content packs to apps.
+In the classic workspaces, you can also connect using organizational content packs, and third-party apps such as Microsoft Dynamics CRM, Salesforce, or Google Analytics. Organizational content packs are being deprecated. Now is a good time to upgrade your content packs to apps, if you haven't started yet. See the workspace upgrade roadmap section of this blog post [Announcing Power BI admins can upgrade classic workspaces](https://powerbi.microsoft.com/blog/announcing-power-bi-admins-can-upgrade-classic-workspaces-and-roadmap-update/) for the timeline.
 
 ## Distribute an app
 
@@ -79,7 +79,7 @@ Users see updated app content automatically after you publish an update from you
 ## Power BI classic apps FAQ
 
 ### How are apps different from organizational content packs?
-Apps are the evolution of organizational content packs. If you have organizational content packs already, they'll continue to work side by side with apps. Apps and content packs have a few major differences. 
+Apps are the evolution of organizational content packs, which are being deprecated. Now is a good time to upgrade your content packs to apps, if you haven't started yet. See the workspace upgrade roadmap section of this blog post [Announcing Power BI admins can upgrade classic workspaces](https://powerbi.microsoft.com/blog/announcing-power-bi-admins-can-upgrade-classic-workspaces-and-roadmap-update/) for the timeline. 
 
 * After business users install a content pack, it loses its grouped identity: it's just a list of dashboards and reports interspersed with other dashboards and reports. Apps, on the other hand, maintain their grouping and identity even after installation. This grouping makes it easy for business users to continue to navigate to them over time.
 * You can create multiple content packs from any workspace, but an app has a 1:1 relationship with its workspace. 
