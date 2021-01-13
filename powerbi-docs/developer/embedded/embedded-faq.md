@@ -1,6 +1,6 @@
 ---
-title: Frequently asked questions about Power BI embedded analytics
-description: Browse a list of frequently asked questions and answers about Power BI Embedded.
+title: Frequently asked questions about Power BI embedded analytics helping you to enable better embedded BI insights
+description: Browse a list of frequently asked questions and answers about Power BI embedded analytics which enhance customers embedded BI insights.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -30,7 +30,6 @@ Developers and software companies, also known as independent software vendors (I
 Power BI is a software-as-a-service analytics solution that gives organizations a single view of their most critical business data.
 
 Microsoft developed Power BI Embedded for ISVs wanting to embed visuals into their applications to help their customers make analytic decisions. This spares ISVs from having to build their own analytics' solution themselves. [Embedded analytics](embedding.md) enables business users to access business data and execute queries against it to generate insights within the application.
-
 
 ### What is the difference between Power BI Premium and Power BI Embedded?
 

@@ -74,7 +74,7 @@ Sensitivity labels can also be applied in Power BI Desktop. This makes it possib
 
 >[!NOTE]
 >* In this preview release, some limitations may apply. See [Limitations](#limitations).
->* During the first 48 hours after opting in to the Information Protection preview feature, **you may experience issues with .pbix files that have sensitivity labels applied (e.g. publishing the .pbix to the service, downloading the .pbix from the service)**. Such issues are expected and will resolve automatically within 48 hours.
+>* To be able to use sensitivity labels in Power BI Desktop, you must first [enable the information protection preview feature](service-security-apply-data-sensitivity-labels.md#apply-sensitivity-labels-in-power-bi-desktop-preview) and then restart the program. If the program crashes after restart, it may be because your machine lacks the required Visual C++ redistributable runtime library version. If you experience such a crash, visit the [Microsoft Visual C++ 2015 Redistributable Update 3 download page](https://www.microsoft.com/download/details.aspx?id=53587) for instructions about how to download and install the update. After installing the update, try launching Desktop again.
 
 If you apply a sensitivity label in Desktop, when you publish your work to the service, or when you upload a .pbix file of that work to the service, the label travels with the data into the service. In the service, the label will be applied to both the dataset and the report that you get with the file. If the dataset and report already have sensitivity labels, those labels will be overwritten by the label coming from Desktop.
  
