@@ -215,7 +215,7 @@ Unlike Azure Analysis Services, server name [aliases](/azure/analysis-services/a
 
 ## Dataset refresh through the XMLA endpoint
 
-Last dataset refresh date and time is shown in a number of places in Power BI such as Refreshed columns in reports and lists, Dataset details, Dataset settings, Dataset refresh history. Refresh date and times shown **do not** include refresh operations performed through the XMLA endpoint by using TMSL/TOM, SSMS, or third-party tools.
+Last refresh date and time is shown in a number of places in Power BI such as Refreshed columns in reports and lists, Dataset details, Dataset settings, and Dataset refresh history. Refresh date and times shown **do not** include refresh operations performed through the XMLA endpoint by using TMSL/TOM, SSMS, or third-party tools. History for refresh operations performed through the XMLA endpoint are not shown in Power BI.
 
 ## See also
 
