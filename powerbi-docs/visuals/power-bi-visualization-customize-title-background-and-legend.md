@@ -5,8 +5,7 @@ author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
 featuredvideoid: removed
-ms.custom: video-OgjX-pFGgfM
-ms.custom: video-RE4IY3L
+ms.custom: video-OgjX-pFGgfM, video-RE4IY3L
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
