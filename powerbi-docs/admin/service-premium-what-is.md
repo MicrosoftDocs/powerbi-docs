@@ -295,7 +295,7 @@ Paginated reports, supported on P1-P3 and A4_A6 SKUs, are based on Report Defini
 In Power BI Premium, Paginated reports are a workload that must be enabled for a capacity by using the Admin portal. Capacity admins can enable and then specify the amount of memory as a percentage of the capacity's overall memory resources. Unlike other types of workloads, Premium runs paginated reports in a contained space within the capacity. The maximum memory specified for this space is used whether or not the workload is active. The default is 20%.
 
 > [!NOTE]
-> In **Premium Gen2 (preview)** there is no memory management for Paginated reports. With Premium Gen2 Paginated reports are supported on the EM1-EM3.
+> In **Premium Gen2 (preview)** there is no memory management for Paginated reports. With Premium Gen2 Paginated reports are supported on the EM1-EM3 SKUs.
 
 ### Paginated reports and Premium Gen2
 
