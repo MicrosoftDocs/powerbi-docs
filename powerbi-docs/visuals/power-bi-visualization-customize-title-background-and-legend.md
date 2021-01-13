@@ -5,10 +5,12 @@ author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
 featuredvideoid: removed
+ms.custom: video-OgjX-pFGgfM
+ms.custom: video-RE4IY3L
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 12/18/2020
+ms.date: 1/13/2021
 LocalizationGroup: Visualizations
 ---
 
@@ -17,7 +19,7 @@ LocalizationGroup: Visualizations
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 
-In this tutorial, you'll learn a few different ways to customize your visualizations. There are so many options for customizing your visualizations. The best way to learn about them all is by exploring the **Format** pane (select the paint roller icon). To get you started, this article shows you how to customize a visualization title, legend, background, label, and add a theme.
+In this tutorial, you'll learn a few different ways to customize your visualizations. There are so many options for customizing your visualizations. The best way to learn about them all is by exploring the **Format** pane (select the paint roller icon). To get you started, this article shows you how to customize a visualization title, legend, background, label, layer, and add a theme.
 
 You can't customize all visualizations. See the [complete list](#visualization-types-that-you-can-customize) of visualizations for details.
 
@@ -143,6 +145,36 @@ Watch Rien add total labels to a stacked chart, and then follow the steps below 
 1. Optionally, format the total labels. In this example, we've changed color to black, increased font size, and opted to display the values as **Thousands**.
 
     ![Screenshot of the new stacked bar chart with total labels.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-bar-totals.png)
+
+
+## Customize layer order
+Change the layering order of visuals and shapes in your reports. Layer order determines which objects will come to the front when selected. Whenever you select an object on the report canvas, it becomes active and moves to the top layer. For visuals, this makes it easier to interact with the selected visual. But, for shapes and backgrounds, you may want to secure them to the bottom layer, so that you can't accidentally select them and cover or obscure your report visuals. 
+
+Layering controls are available in the Power BI service, Power BI Desktop, mobile, and Report server. This article shows you how to change layer order behavior in the Power BI service.
+
+Watch Rien change layer order behavior, and then follow the steps below to try it out yourself.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4IY3L]
+
+1. Add a new report page by selecting the yellow plus sign. 
+
+1. Add a shape to the canvas. Here, we've added a blue rectangle. 
+
+    ![Screenshot of the new report page with a blue rectangle.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-shape.png)
+
+1. Copy-paste a visual from another page in the report. 
+
+    ![Screenshot of the new report page with a blue rectangle and a pie chart.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-layer.png)
+
+    Now that you have 2 layers, try selecting the pie chart and then the background. When you select the pie chart, Power BI makes that object active and displays its header menu. When you select the rectangle, Power BI makes that object active and brings it to the front where it obscures the pie chart. You can change this default behavior.
+
+1. Select the rectangle and open the Formatting pane. Expand **General** and locate the **Maintain layer order** toggle. Save the report changes and switch to Reading view.
+
+    ![Screenshot of the new report page and the Maintain layer order set to On.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-maintain-layer.png)
+
+1. In Reading view, when you select the blue rectangle, it stays in the back layer.
+
 
 ## Customize colors using a theme
 
