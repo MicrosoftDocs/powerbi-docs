@@ -180,7 +180,7 @@ The removal of a model from memory is known as *eviction*. It's an operation Pow
 
 It's important to stress that dataset eviction is a normal behavior on the capacity. The capacity strives to balance memory usage by managing the in-memory lifecycle of models in a way that is transparent to users. A high eviction rate does not necessarily mean the capacity is insufficiently resourced. It can, however, become a concern if the performance of queries or refreshes degrades due to the overhead of loading and evicting models repeatedly within a short span of time.
 
-Refreshes of import models are always memory intensive as models must be loaded into memory. Additional intermediate memory is also required for processing. A full refresh can use approximately double the amount of memory required by the model because Power BI maintains an existing snapshot of the model in memory until the processing operation is completed. This allows the model to be queried even when being it's being processed. Queries can be sent to the existing snapshot of the model until the refresh has completed and the new model data is available.
+Refreshes of import models are always memory intensive as models must be loaded into memory. Additional intermediate memory is also required for processing. A full refresh can use approximately double the amount of memory required by the model because Power BI maintains an existing snapshot of the model in memory until the processing operation is completed. This allows the model to be queried even when it's being processed. Queries can be sent to the existing snapshot of the model until the refresh has completed and the new model data is available.
 
 Incremental refresh performs partition refresh instead of a full model refresh, and will typically be faster and require less memory, and can substantially reduce the capacity's resource usage. Refreshes can also be CPU-intensive for models, especially those with complex Power Query transformations, or calculated tables or columns that are complex or are based on a large volume of data.
 
@@ -295,7 +295,7 @@ Paginated reports, supported on P1-P3 and A4_A6 SKUs, are based on Report Defini
 In Power BI Premium, Paginated reports are a workload that must be enabled for a capacity by using the Admin portal. Capacity admins can enable and then specify the amount of memory as a percentage of the capacity's overall memory resources. Unlike other types of workloads, Premium runs paginated reports in a contained space within the capacity. The maximum memory specified for this space is used whether or not the workload is active. The default is 20%.
 
 > [!NOTE]
-> In **Premium Gen2 (preview)** there is no memory management for Paginated reports. With Premium Gen2 Paginated reports are supported on the EM1-EM3 and A1-A3 SKUs.
+> In **Premium Gen2 (preview)** there is no memory management for Paginated reports. With Premium Gen2 Paginated reports are supported on the EM1-EM3 SKUs.
 
 ### Paginated reports and Premium Gen2
 
