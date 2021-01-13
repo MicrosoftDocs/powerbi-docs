@@ -21,7 +21,7 @@ This feature is in preview, so you first need to turn on the feature switch. Go 
 :::image type="content" source="media/power-bi-visualization-anomaly-detection//preview-feature-switch.png" alt-text="Screenshot showing how to enable Anomaly detection preview feature switch.":::
  
 ## Get started
-This tutorial uses online sales data for various products.To follow along with this tutorial, download the [sample file](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix) of an online-sales scenario.
+This tutorial uses online sales data for various products.To follow along with this tutorial, download the [sample file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix) of an online-sales scenario.
 
 You can enable Anomaly detection by selecting the chart and adding "Find Anomalies" option in the analytics pane. 
 
