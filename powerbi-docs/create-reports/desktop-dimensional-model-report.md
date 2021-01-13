@@ -24,7 +24,7 @@ Using our [AdventureWorks Sales sample Excel workbook](https://github.com/micros
 
 :::image type="content" source="media/desktop-dimensional-model-report/adventureworks-finished-report.png" alt-text="Finished AdventureWorks report.":::
 
-Want to see the finished product? You can also download the [completed Power BI .bix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.pbix).
+Want to see the finished product? You can also download the [completed Power BI .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.pbix).
 
 Let’s get started! 
 
@@ -457,7 +457,7 @@ To share your report with your manager and colleagues, publish it to the Power B
 
 ## Next steps 
 
-- Download the [completed Power BI .bix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.pbix)
+- Download the [completed Power BI .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.pbix)
 - Learn more about [DAX and data modeling in Power BI Desktop](/learn/modules/dax-power-bi-models/)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
