@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 12/30/2020
+ms.date: 01/13/2021
 ---
 
 # Monitor Power BI Embedded
@@ -56,7 +56,7 @@ See [Create diagnostic setting to collect platform logs and metrics in Azure](/a
 
 ### Using PowerShell to enable diagnostics
 
-To enable metrics and diagnostics logging by using PowerShell, use the following commands:
+To enable metrics and diagnostics logging by using PowerShell, use the commands listed below. To learn more, see [Create and configure a Log Analytics workspace in Azure Monitor using PowerShell](/azure/azure-monitor/platform/powershell-workspace-configuration).
 
 * To enable storage of diagnostics logs in a storage account, use this command:
 
@@ -117,9 +117,9 @@ For a list of the tables used by Azure Monitor Logs and queryable by Log Analyti
 > [!IMPORTANT]
 > When you select **Logs** from the Power BI Embedded menu, Log Analytics is opened with the query scope set to the current Power BI Embedded resource. This means that log queries will only include data from that resource. If you want to run a query that includes data from other Power BI Embedded resource or data from other Azure services, select **Logs** from the **Azure Monitor** menu. See [Log query scope and time range in Azure Monitor Log Analytics](/azure/azure-monitor/log-query/scope/) for details.
 
-Following are queries that you can use to help you monitor your [Service] resource. 
+Below are query examples for monitoring Power BI Embedded.
 
-* Query return that took less than five minutes (300,000 milliseconds) to complete.
+* This is a query that is completed in less than five minutes (300,000 milliseconds).
 
     ```Kusto
         search *
@@ -138,15 +138,7 @@ Following are queries that you can use to help you monitor your [Service] resour
 
 ## Alerts
 
-Azure Monitor alerts proactively notify you when important conditions are found in your monitoring data. They allow you to identify and address issues in your system before your customers notice them. You can set alerts on [metrics](/azure/azure-monitor/platform/alerts-metric-overview), [logs](/azure/azure-monitor/platform/alerts-unified-log), and the [activity log](/azure/azure-monitor/platform/activity-log-alerts). Different types of alerts have benefits and drawbacks
-
-The following table lists common and recommended alert rules for Power BI Embedded.
-
-<!-- Fill in the table with metric and log alerts that would be valuable for your service. Change the format as necessary to make it more readable -->
-| Alert type | Condition | Description  |
-|:---|:---|:---|
-| | | |
-| | | |
+Azure Monitor alerts proactively notify you when important conditions are found in your monitoring data. They allow you to identify and address issues in your system before your customers notice them. You can set alerts on [metrics](/azure/azure-monitor/platform/alerts-metric-overview), [logs](/azure/azure-monitor/platform/alerts-unified-log), and the [activity log](/azure/azure-monitor/platform/activity-log-alerts).
 
 ## Next steps
 

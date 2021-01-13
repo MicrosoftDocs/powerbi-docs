@@ -28,11 +28,11 @@ Resource Provider and Type: [Microsoft.PowerBIDedicated/capacities](/azure/azure
 
 | Name | Metric | Unit | Description |
 |:---|:-------|:-----|:------------|
-|Memory                      |memory_metric               |Bytes        |Memory. Range 0-3 GB for A1, 0-5 GB for A2, 0-10 GB for A3, 0-25 GB for A4, 0-50 GB for A5 and 0-100 GB for A6             |
-|Memory Thrashing (Datasets) |memory_thrashing_metric     |Percent      |Average memory thrashing             |
-|QPU High Utilization        |qpu_high_utilization_metric |Count        |QPU High Utilization In Last Minute, 1 For High QPU Utilization, Otherwise 0             |
-|Query Duration (Datasets)   |QueryDuration               |Milliseconds |DAX Query duration in last interval             |
-|Query Pool Job Queue Length (Datasets) |QueryPoolJobQueueLength     |Count        |Number of jobs in the queue of the query thread pool             |
+|Memory (Gen1) |memory_metric               |Bytes        |Memory. Range 0-3 GB for A1, 0-5 GB for A2, 0-10 GB for A3, 0-25 GB for A4, 0-50 GB for A5 and 0-100 GB for A6. Supported only for Power BI Embedded Generation 1 resources. |
+|Memory Thrashing (Datasets) (Gen1) |memory_thrashing_metric     |Percent      |Average memory thrashing. Supported only for Power BI Embedded Generation 1 resources. |
+|QPU High Utilization (Gen1) |qpu_high_utilization_metric |Count        |QPU High Utilization In Last Minute, 1 For High QPU Utilization, Otherwise 0. Supported only for Power BI Embedded Generation 1 resources. |
+|Query Duration (Datasets) (Gen1) |QueryDuration               |Milliseconds |DAX Query duration in last interval. Supported only for Power BI Embedded Generation 1 resources. |
+|Query Pool Job Queue Length (Datasets) (Gen1) |QueryPoolJobQueueLength     |Count        |Number of jobs in the queue of the query thread pool. Supported only for Power BI Embedded Generation 1 resources. |
 
 ## Metric Dimensions
 
@@ -64,32 +64,11 @@ This section refers to all of the Azure Monitor Logs Kusto tables relevant to Po
 
 | Table |  Description |
 |:---------|:-------------|------------------|
-| [AzureActivity](/azure/azure-monitor/reference/tables/azureactivity) | Entries from the Azure Activity log that provides insight into any subscription-level or management group level events that have occurred in Azure.    |
-|  etc.               |                              |                                                   | 
+| [AzureActivity](/azure/azure-monitor/reference/tables/azureactivity) | Entries from the Azure Activity log that provides insight into any subscription-level or management group level events that have occurred in Azure.    |                             |                                                   | 
 | [AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)   | Stores resource logs for Azure services that use Azure Diagnostics mode. Resource logs describe the internal operation of Azure resources. |
 | [AzureMetrics](/azure/azure-monitor/reference/tables/azuremetrics)   | Metric data emitted by Azure services that measure their health and performance. |
 
 For a reference of all Azure Monitor Logs / Log Analytics tables, see the [Azure Monitor Log Table Reference](/azure/azure-monitor/reference/tables/tables-resourcetype).
-
-### Diagnostics tables
-<!-- REQUIRED. Please keep heading in this order -->
-<!-- If your service uses the AzureDiagnostics table in Azure Monitor Logs / Log Analytics, list what fields you use and what they are for. Azure Diagnostics is over 500 columns wide with all services using the fields that are consistent across Azure Monitor and then adding extra ones just for themselves.  If it uses service specific diagnostic table, refers to that table. If it uses both, put both types of information in. Most services in the future will have their own specific table. If you have questions, contact azmondocs@microsoft.com -->
-
-Power BI Embedded uses the [Azure Diagnostics](https://docs.microsoft.com/azure/azure-monitor/reference/tables/azurediagnostics) table and the [TODO whatever additional] table to store resource log information. The following columns are relevant.
-
-**Azure Diagnostics**
-
-| Property | Description |
-|:--- |:---|
-|  |  |
-|  |  |
-
-**[TODO Service-specific table]**
-
-| Property | Description |
-|:--- |:---|
-|  |  |
-|  |  |
 
 ## Activity log
 
@@ -110,11 +89,12 @@ The engine category instructs the resource to log the events listed below. For e
 |    Audit Logout    |    Records all disconnect from   engine events since the trace started.    |
 |    Error    |    Records all engine error   events since the trace started.    |
 
-<br>
-<br>
+#### Event example
+
+The table below shows an event example.
 
 | Property Name | Vertipaq Query End Example | Property Description |
-|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+|---|---|---|
 | EventClass | XM_SEQUERY_END | Event Class is used to categorize events. |
 | EventSubclass | 0 | Event Subclass provides additional information about each event class. (for example, 0: VertiPaq Scan) |
 | RootActivityId | ff217fd2-611d-43c0-9c12-19e202a94f70 | Root activity ID. |
