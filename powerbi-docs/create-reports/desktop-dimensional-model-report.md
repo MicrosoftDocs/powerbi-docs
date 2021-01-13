@@ -20,18 +20,20 @@ You work at AdventureWorks and your manager wants to see a report on your latest
 - Which country is the company seeing the most success in? 
 - Which product category and reseller business types should the company continue to invest in? 
 
-Using our sample AdventureWorks sales workbook (link to workbook), we can build this report in no time. Here’s what the final report will look like. 
+Using our [AdventureWorks Sales sample Excel workbook](https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.xlsx), we can build this report in no time. Here’s what the final report will look like. 
 
 :::image type="content" source="media/desktop-dimensional-model-report/adventureworks-finished-report.png" alt-text="Finished AdventureWorks report.":::
 
+Want to see the finished product? You can also download the [completed Power BI .bix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.pbix).
+
 Let’s get started! 
 
-In this tutorial, you'll learn how to:
+In this tutorial, you'll learn to:
 
-- Download sample data two different ways.
-- Prepare your data with a few transformations.
-- Build a report with a title, three visuals, and a slicer.
-- Publish your report to the Power BI service so you can share it with your colleagues.
+> [!div class="checklist"]
+> * Prepare your data with a few transformations
+> * Build a report with a title, three visuals, and a slicer
+> * Publish your report to the Power BI service so you can share it with your colleagues
 
 ## Prerequisites
 
@@ -40,7 +42,7 @@ In this tutorial, you'll learn how to:
 
 ## Get data: Download the sample 
 
-1. Download the AdventureWorks Sales sample Excel workbook from ____. 
+1. Download the [AdventureWorks Sales sample Excel workbook](https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.xlsx). 
 
 1. Open Power BI Desktop. 
 
@@ -455,6 +457,7 @@ To share your report with your manager and colleagues, publish it to the Power B
 
 ## Next steps 
 
-Learn more about [DAX and data modeling in Power BI Desktop](/learn/modules/dax-power-bi-models/). 
+- Download the [completed Power BI .bix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.pbix)
+- Learn more about [DAX and data modeling in Power BI Desktop](/learn/modules/dax-power-bi-models/)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
