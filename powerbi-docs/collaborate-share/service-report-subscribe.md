@@ -135,7 +135,7 @@ Power BI administrators can use the Power BI audit logs to view details around s
 
 ### Reports
 
-- For report email subscriptions, if the dataset uses RLS, you can create a subscription for yourself. You can't subscribe others to a report with row-level security (RLS) applied, except for paginated reports. You can subscribe others to a paginated report, using your security context. Read more about [subscribing to paginated reports](../consumer/paginated-reports-subscriptions.md).
+- For paginated and Power BI report email subscriptions, if the dataset uses row-level security (RLS), you can create subscriptions for yourself. You may also subscribe others to a report with RLS. Those subscriptions will be generated using your security context.
 - Report page subscriptions are tied to the name of the report page. If you subscribe to a report page and then rename it, you have to re-create your subscription.
 - Your organization may configure certain settings in Azure Active Directory that limit the ability to use email subscriptions in Power BI. These limitations include, but aren't limited to, having multi-factor authentication or IP range restrictions when accessing resources.
 - Email subscriptions don't support most [custom visuals](../developer/visuals/power-bi-custom-visuals.md). The one exception is those custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
