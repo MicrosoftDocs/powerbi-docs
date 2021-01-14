@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/04/2021
+ms.date: 01/14/2021
 LocalizationGroup: Share your work
 ---
 

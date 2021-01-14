@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/12/2020
+ms.date: 01/12/2021
 LocalizationGroup: Share your work
 ---
 # Create classic workspaces in Power BI
@@ -83,8 +83,7 @@ Apps are the evolution of organizational content packs, which are being deprecat
 
 * After business users install a content pack, it loses its grouped identity: it's just a list of dashboards and reports interspersed with other dashboards and reports. Apps, on the other hand, maintain their grouping and identity even after installation. This grouping makes it easy for business users to continue to navigate to them over time.
 * You can create multiple content packs from any workspace, but an app has a 1:1 relationship with its workspace. 
-* Over time we plan to deprecate organizational content packs, so we recommend you create apps from now on.  
-* With the new workspace experience, we're taking the first steps towards deprecating organizational content packs. You can't consume or create them in the new workspaces.
+* You can't consume or create content packs in the new workspaces.
 
 See [New and classic workspace differences](service-new-workspaces.md#new-and-classic-workspace-differences) to compare the two. 
 
