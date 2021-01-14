@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 01/13/2021
+ms.date: 01/14/2021
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
 ---
@@ -212,16 +212,6 @@ As stated in the error message, to resolve this issue, either delete or rename t
 ## Workspace/server alias
 
 Unlike Azure Analysis Services, server name [aliases](/azure/analysis-services/analysis-services-server-alias) **are not supported** for Power BI Premium workspaces. 
-
-## EffectiveUserName 
-
-EffectiveUserName is an Analysis Services connection string property used to impersonate a user by UPN or domain\user format. The EffectiveUserName property is currently not supported when connecting to Premium datasets.
-
-- Workspace administrator permissions cannot be acquired through XMLA endpoints. Operations that require server admin permissions such as SQL Profiler trace session without Initial Catalog specified, some Data Management Views (DMVs) such as DISCOVER_SESSIONS, EffectiveUserName and etc.
-- Row level security (RLS) roles in Premium can be defined with Read model permissions only. Roles with any other model permissions cannot be created.
-- Unlike Azure Analysis Services, Service Principals (SPN) cannot be added as RLS role members.
-- For RLS to be applied, the user must have Read permission to the dataset and also belong to the relevant RLS role.
-- If a user has Write permission for a dataset, the user can use the “Roles=” connection string property to downgrade to Read permission only. This is typically used when testing RLS using impersonation. The user, however, must still be a member of the relevant RLS role. This is different comparing to Impersonation behavior on SSAS or AAS, where if user is server admin, the RLS role membership is assumed. In XMLA EP, since there is no server admin, user must belong to a role to get RLS applied.
 
 ## Dataset refresh through the XMLA endpoint
 
