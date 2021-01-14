@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 01/11/2021
+ms.date: 01/13/2021
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
 ---
@@ -223,6 +223,9 @@ EffectiveUserName is an Analysis Services connection string property used to imp
 - For RLS to be applied, the user must have Read permission to the dataset and also belong to the relevant RLS role.
 - If a user has Write permission for a dataset, the user can use the “Roles=” connection string property to downgrade to Read permission only. This is typically used when testing RLS using impersonation. The user, however, must still be a member of the relevant RLS role. This is different comparing to Impersonation behavior on SSAS or AAS, where if user is server admin, the RLS role membership is assumed. In XMLA EP, since there is no server admin, user must belong to a role to get RLS applied.
 
+## Dataset refresh through the XMLA endpoint
+
+Last refresh date and time is shown in a number of places in Power BI such as Refreshed columns in reports and lists, Dataset details, Dataset settings, and Dataset refresh history. Currently, refresh date and times shown in Power BI **do not** include refresh operations performed through the XMLA endpoint by using TMSL/TOM, SSMS, or third-party tools.
 
 ## See also
 
