@@ -13,6 +13,8 @@
     items: 
     - name: "Power BI Desktop: From Excel to report"
       href: desktop-excel-stunning-report.md
+    - name: "Power BI Desktop: Dimensional model to report"
+      href: desktop-dimensional-model-report.md
     - name: "Power BI service: From Excel to report"
       href: service-from-excel-to-stunning-report.md
     - name: "Online course: Paginated reports"

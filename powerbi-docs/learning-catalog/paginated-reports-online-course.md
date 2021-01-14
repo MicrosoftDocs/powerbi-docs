@@ -8,7 +8,7 @@ featuredvideoid: DN1t5p9aui0
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: tutorial
-ms.date: 11/11/2020
+ms.date: 12/31/2020
 ---
 
 # Power BI Paginated Reports in a Day course
@@ -38,7 +38,7 @@ Watch the welcome and introduction video to start the course.
 
 ## Course outline
 
-The [course of 24 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT) is organized into eight modules. We recommend you watch the videos in the recorded sequence, starting with video 01 and ending with video 24.
+The [course of 25 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT) is organized into eight modules. We recommend you watch the videos in the recorded sequence, starting with video 01 and ending with video 25.
 
 - **Introduction**
   - Video 01: [Welcome and Course Introduction](https://www.youtube.com/watch?v=DN1t5p9aui0&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
@@ -73,6 +73,7 @@ The [course of 24 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icI
   - Video 22: [Bonus Content: Review](https://www.youtube.com/watch?v=w5zlJ8BodxI&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
   - Video 23: [Bonus Content: Evolution of Paginated Reporting](https://www.youtube.com/watch?v=pevpai65MvY&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
   - Video 24: [Bonus Content: Lowering the Barrier to Entry](https://www.youtube.com/watch?v=vu32LfckCt8&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
+  - Video 25: [Bonus Content: December 2020 Update](https://www.youtube.com/watch?v=-7M4muS_3BI&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
 
 ## Self-study kit
 
