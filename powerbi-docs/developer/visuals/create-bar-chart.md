@@ -1,6 +1,6 @@
 ---
-title: Build a bar chart
-description: Use this step-by-step guide to build a simple Power BI bar chart visual with code.
+title: Build a bar chart in Power BI embedded analytics for better embedded BI insights
+description: Use this step-by-step guide to build a simple Power BI bar chart visual with code. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins

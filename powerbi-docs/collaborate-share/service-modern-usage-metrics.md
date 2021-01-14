@@ -114,7 +114,7 @@ Assuming all client telemetry reaches Power BI, the resulting metrics would be:
 | KPI Report | 1 | 1 | 1 |
 | HR Report | 1 | 5 | 1 | 
 | Finance Report | 3 | 5 | 3 |
-| Sales Report | 3 | 3 | 2 |
+| Sales Report | 3 | 4 | 2 |
 
 
 

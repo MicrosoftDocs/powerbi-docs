@@ -1,6 +1,6 @@
 ---
-title: Embed content in your Power BI embedded analytics application for your customers
-description: Learn how to embed, a report, dashboard, or tile into a Power BI embedded analytics sample.
+title: Embed content in your Power BI embedded analytics application enabling better embedded BI insights for your customers
+description: Learn how to embed, a report, dashboard, or tile into a Power BI embedded analytics sample. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -143,7 +143,7 @@ The table below describes a few key differences between the [service principal](
 
 |Consideration  |Service principal  |Master user  |
 |---------|---------|---------|
-|Mechanism     |Your Azure AD app's [service principal object](/azure/active-directory/develop/app-objects-and-service-principals.md#service-principal-object) allows Azure AD to authenticate your embedded solution app against Power BI.        |Your Azure AD app uses the credentials (username and password) of a Power BI user, to authenticate against Power BI.         |
+|Mechanism     |Your Azure AD app's [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) allows Azure AD to authenticate your embedded solution app against Power BI.        |Your Azure AD app uses the credentials (username and password) of a Power BI user, to authenticate against Power BI.         |
 |Security     |*Service principal* is the Azure AD recommended authorization method. If you're using a service principal,* you can authenticate using either an *application secret* or a *certificate*.</br></br>This tutorial only describes using *service principal* with an *application secret*. To embed using a *service principal* and a *certificate*, refer to the [service principal with a certificate](embed-service-principal-certificate.md) article.         |This authentication method is not considered as secure as using a *service principal*. This is because you have to be vigilant with the *master user* credentials (username and password). For example, you must not expose them in your embedding application, and you should change the password frequently.         |
 |Azure AD delegated permissions |Not required. |Your *master user* or an administrator has to grant consent for your app to access Power BI REST API [permissions](/azure/active-directory/develop/v2-permissions-and-consent) (also known as scopes). For example, *Report.ReadWrite.All*. |
 |Power BI service access |You can't access Power BI service with a *service principal*.|You can access Power BI service with your *master user* credentials.|
@@ -181,7 +181,7 @@ To create a workspace, do the following:
 
 ## Step 4 - Create and publish a Power BI report
 
-Your next step is to create a report and upload it to your workspace. You can [create your own report](/powerbi-docs/fundamentals/desktop-getting-started#build-reports) using Power BI Desktop, and then [publish](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work) it to your workspace. Or, you can upload a sample report to your workspace.
+Your next step is to create a report and upload it to your workspace. You can [create your own report](/power-bi/fundamentals/desktop-getting-started#build-reports) using Power BI Desktop, and then [publish](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work) it to your workspace. Or, you can upload a sample report to your workspace.
 
 >[!Tip]
 >If you already have a workspace with a report, you can skip this step.
@@ -532,7 +532,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
     a. In the IDE terminal, execute `npm start`.
 
-    b. Open a new tab in your browser and navigate to [http://localhost:5300](http://localhost:5300).
+    b. Open a new tab in your browser and navigate to `http://localhost:5300`.
 
 # [Python](#tab/python)
 
@@ -567,7 +567,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
     a. In **PowerShell** or **Command Prompt**, navigate to the **Python** > **Embed for your customers** > **AppOwnesData** folder, and execute `flask run`.
 
-    b. Open a new tab in your browser and navigate to [http://localhost:5300](http://localhost:5300).
+    b. Open a new tab in your browser and navigate to `http://localhost:5300`.
 
 ---
 
@@ -575,7 +575,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
 After configuring and running the *embed for your customers* sample application, you can start developing your own application.
 
-When you're ready, review the [move to production](move-to-production.md) requirements. You'll also need a [capacity](embedded-capacity.md), and should review the [capacity planning](embedded-capacity-planning.md) article to establish witch SKU best suites your needs.
+When you're ready, review the [move to production](move-to-production.md) requirements. You'll also need a [capacity](embedded-capacity.md), and should review the [capacity planning](embedded-capacity-planning.md) article to establish which SKU best suits your needs.
 
 
 ## Next steps

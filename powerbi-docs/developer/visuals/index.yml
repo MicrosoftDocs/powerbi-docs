@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
-title: Power BI visuals documentation
-summary: Develop your own Power BI visuals, to be used by you, your organization, or the entire Power BI community. Our documentation provides the information you need.
+title: Power BI visuals documentation in Power BI embedded analytics for better embedded BI insights
+summary: Develop your own Power BI visuals, to be used by you, your organization, or the entire Power BI community. Our documentation provides the information you need. Enable better embedded BI insights using Power BI embedded analytics.
 
 metadata:
   title: Power BI visuals documentation
@@ -64,4 +64,4 @@ landingContent:
           - text: "Samples of Power BI visuals"
             url: https://microsoft.github.io/PowerBI-visuals/samples/
           - text: "Git repository"
-            url: https://github.com/Microsoft/PowerBI-visuals
+            url: https://github.com/PowerBi-Projects/PowerBI-visuals
