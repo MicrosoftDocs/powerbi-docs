@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/06/2021 
+ms.date: 01/14/2021 
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
@@ -32,6 +32,9 @@ Power BI embedded analytics includes two solutions:
 Power BI Embedded is for ISVs and developers who want to embed visuals into their applications.
 
 Applications using Power BI Embedded allow users to consume content stored on Power BI Embedded capacity.
+
+>[!NOTE]
+>Power BI Embedded recently released a new version, called **Embedded Gen2**. Embedded Gen2 will simplify the management of embedded capacities, and improve the Power BI Embedded experience. For more information, see [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md).
 
 ### Power BI Premium
 
@@ -137,6 +140,10 @@ The table below describes the resources and limits of each SKU.
 | P4 | 64 | 32 | 200 | 32 | 240 | 48 |
 | P5 | 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
+
+#### Embedded Gen 2 memory enhancements (preview)
+
+With [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md) (also known as Embedded Gen 2), the amount of memory available on each node size is set to the memory footprint limit of a single Power BI item (such as a report or a dashboard), and not to the cumulative consumption of memory. For example, in an Embedded Gen2 A4 capacity, only a single dataset size is limited to 25 GB, in comparison to the original Power BI Embedded capacity, where the total memory footprint of the datasets being handled at the same time is limited to 25 GB.
 
 ## Next steps
 

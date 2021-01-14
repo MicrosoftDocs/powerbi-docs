@@ -1,6 +1,6 @@
 ---
-title: Embed paginated reports in your Power BI embedded analytics application enabling better embedded BI insights for your customers
-description: Learn how to integrate or embed a Power BI paginated report into an application, using the Power BI APIs. Enable better embedded BI insights using Power BI embedded analytics.
+title: Embed paginated reports in your Power BI embedded analytics application for your customers
+description: Learn how to integrate or embed a Power BI paginated report into an embedded analytics application.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 01/04/2019
+ms.date: 01/14/2021
 #Customer intent: As an ISV developer, I want to embed a Power BI paginated report into an application so that my customers can share data.
 ---
 
@@ -54,10 +54,16 @@ Before you import or upload a paginated report to embed, the workspace containin
 * **Power BI Premium** - For embedding a paginated report, a *P* SKU capacity is required. When embedding Power BI content, this solution is referred to as *Power BI embedding*. For more information regarding this subscription, see [What is Power BI Premium?](../../admin/service-premium-what-is.md)
 * **Azure Power BI Embedded** - You can purchase a capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For embedding paginated reports you need at least an *A4* subscription. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 
+    >[!NOTE]
+    >Power BI Embedded recently released a new version, called **Embedded Gen2**. Embedded Gen2 will simplify the management of embedded capacities, and improve the Power BI Embedded experience. For more information, see [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md).
+
 The table below describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](./embedded-faq.md#which-solution-should-i-choose) table.
 
 | Capacity Nodes | Total v-cores | Backend v-cores | RAM (GB) | Frontend v-cores | 
 | --- | --- | --- | --- | --- |
+| A1 with [Embedded Gen2](power-bi-embedded-generation-2.md) | 1 | 0.5 | 2.5 | 0.5 |
+| A2 with [Embedded Gen2](power-bi-embedded-generation-2.md) | 2 | 1 | 5 | 1 |
+| A3 with [Embedded Gen2](power-bi-embedded-generation-2.md) | 4 | 2 | 10 | 2 |
 | P1/A4 | 8 | 4 | 25 | 4 |
 | P2/A5 | 16 | 8 | 50 | 8 |
 | P3/A6 | 32 | 16 | 100 | 16 |
