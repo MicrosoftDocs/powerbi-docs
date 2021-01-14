@@ -30,9 +30,11 @@ When you scan a product barcode with the scanner in the Power BI app on your dev
 
     ![Screenshot of the More options on the navigation pane, showing the scanner selection.](media/mobile-apps-scan-barcode-iphone/power-bi-scanner.png)
 
-2. If your camera is not enabled, you need to approve the Power BI app to use the camera. This is a one-time approval. 
-4. Point the scanner at a barcode on a product. You will see a list of reports associated with that barcode.
-5. Tap the report name to open it on your device, automatically filtered according to that barcode.
+1. If your camera is not enabled, you need to approve the Power BI app to use the camera. This is a one-time approval. 
+1. Point the scanner at a barcode on the item you're interested in. You will see a list of reports that have barcode fields.
+1. Tap a report name to open that report on your device, automatically filtered according to the barcode you scanned. If the report doesn't contain the barcode, you'll get the message "Couldn't filter report". In that case you can go back to the list and try another report.
+    
+>[!NOTE] If there is only one report with a barcode field, you won't get a list of reports, but rather the report will open directly, filtered according to the barcode you scanned. If the report doesn't contain the barcode, you will also get the message "Couldn't filter report".
 
 ## Filter by other barcodes while in a report
 While looking at a report filtered by a barcode on your device, you may want to filter the same report by a different barcode.
