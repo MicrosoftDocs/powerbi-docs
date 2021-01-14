@@ -56,7 +56,7 @@ See [Create diagnostic setting to collect platform logs and metrics in Azure](/a
 
 ### Using PowerShell to enable diagnostics
 
-To enable metrics and diagnostics logging by using PowerShell, use the commands listed below. To learn more, see [Create and configure a Log Analytics workspace in Azure Monitor using PowerShell](/azure/azure-monitor/platform/powershell-workspace-configuration).
+To enable metrics and diagnostics logging by using PowerShell, use the commands listed below. To learn more about using PowerShell to enable diagnostics, see [Create and configure a Log Analytics workspace in Azure Monitor using PowerShell](/azure/azure-monitor/platform/powershell-workspace-configuration).
 
 * To enable storage of diagnostics logs in a storage account, use this command:
 
