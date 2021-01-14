@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 01/13/2021
+ms.date: 01/14/2021
 ---
 
 # Monitor Power BI Embedded
