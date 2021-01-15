@@ -25,7 +25,7 @@ You can scan the QR code for immediate access to the relevant tile or report, ri
 If your colleague hasn't shared the dashboard or report with you, you can request access directly from the mobile app. 
 
 > [!NOTE]
-> You can also [scan a report QR code with the Power BI for Mixed Reality app](./mobile-hololens2-app.md#scan-a-report-qr-code-in-holographic-view).
+> You can also [scan a report QR code with the Power BI for Mixed Reality app](./mobile-hololens2-app.md#open-reports-with-qr-codes).
 
 ## Scan a Power BI QR code on your iPhone with the Power BI scanner
 
