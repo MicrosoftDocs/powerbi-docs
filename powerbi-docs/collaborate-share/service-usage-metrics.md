@@ -159,6 +159,10 @@ It's important to understand that differences can occur when comparing usage met
 
 The Power BI [Reports REST APIs](https://docs.microsoft.com/rest/api/power-bi/reports) and [Admin REST APIs](https://docs.microsoft.com/rest/api/power-bi/admin) also use Power BI service data. For the reasons described in the previous section, report counts (the number of reports) from the APIs can differ from report counts in usage metrics. Report counts derived from the APIs are unaffected by client issues and should be considered accurate.
 
+### Classic Usage Metrics are not supported with Private Links 
+
+If your organization is using [Private Links](https://docs.microsoft.com/power-bi/admin/service-security-private-links), classic usage metrics reports will contain no data. There is currently a limitation when transferring client information over private links. 
+
 ### Other considerations
 
 You need to view the content in your workspace, from within that workspace, at least once. If there are no views of the content from the workspace itself at least once, data isn't correlated from the application views in the Usage Metrics Report. To unblock the processing of data for this report, just view the content from your workspace at least once.
