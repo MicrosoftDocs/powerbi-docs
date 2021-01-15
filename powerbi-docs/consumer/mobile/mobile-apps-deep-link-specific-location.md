@@ -187,7 +187,7 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
 In the Power BI mobile apps, links inside Power BI work just as they work in the Power BI service.
 
-If you want to add link to your report that points to another Power BI item, you can just copy that item's URL from the browser address bar. Read more about [how to add a hyperlink to a text box in a report](https://docs.microsoft.com/power-bi/service-add-hyperlink-to-text-box).
+If you want to add link to your report that points to another Power BI item, you can just copy that item's URL from the browser address bar. Read more about [how to add a hyperlink to a text box in a report](../../create-reports/service-add-hyperlink-to-text-box.md).
 
 ## Next steps
 Your feedback helps us decide what to implement in the future, so don’t forget to vote for other features you'd like to see in Power BI mobile apps. 
@@ -195,4 +195,4 @@ Your feedback helps us decide what to implement in the future, so don’t forget
 * [Power BI apps for mobile devices](mobile-apps-for-mobile-devices.md)
 * Follow @MSPowerBI on Twitter
 * Join the conversation at the [Power BI Community](http://community.powerbi.com/)
-* [What is Power BI?](../../power-bi-overview.md)
+* [What is Power BI?](../../fundamentals/power-bi-overview.md)
