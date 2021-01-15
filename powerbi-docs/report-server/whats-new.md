@@ -42,7 +42,7 @@ Here are some highlights of new features.
 
 **V3 enhanced metadata in Power BI Report Server** (preview)
 
-https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-enhanced-dataset-metadata 
+[Using enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md)
 
 **Internet Explorer deprecation**
 
