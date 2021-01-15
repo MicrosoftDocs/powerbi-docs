@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/30/2020
+ms.date: 01/14/2021
 ---
 
 # What's new in Power BI Report Server
@@ -15,6 +15,38 @@ ms.date: 10/30/2020
 Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop optimized for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log for Power BI Report Server](changelog.md).
 
 Download [Power BI Report Server and Power BI Desktop optimized for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+
+## January 2021
+
+What follows is a complete list of new and updated features. For details, see the [Power BI Report Server blog post for January 2021](https://powerbi.microsoft.com/blog/power-bi-report-server-october-2020-feature-summary/).
+
+### Power BI Desktop optimized for Power BI Report Server
+
+Here are some highlights of new features.
+
+**Reports**
+
+- Apply all filters is now generally available
+- Visual Zoom Slider
+- Certificate revocation check for web connections
+- Selection pane in the mobile layout view
+- ArcGIS Maps support
+- New connection metadata format (preview)
+
+**Data connectivity**
+
+- Hive LLAP connector generally available
+- New connectors: Actian, Anaplan, Starburst Presto
+
+### Power BI Report Server
+
+**V3 enhanced metadata in Power BI Report Server** (preview)
+
+https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-enhanced-dataset-metadata 
+
+**Internet Explorer deprecation**
+
+You'll see a warning in the Power BI Report Server web portal that Internet Explorer 11 is being deprecated. Time to upgrade! See [Browser support for Power BI Report Server](browser-support.md) for details.
 
 ## October 2020
 
