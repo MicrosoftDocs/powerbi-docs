@@ -161,7 +161,7 @@ The Power BI [Reports REST APIs](https://docs.microsoft.com/rest/api/power-bi/re
 
 ### Classic Usage Metrics are not supported with Private Links 
 
-If your organization is using [Private Links](https://docs.microsoft.com/power-bi/admin/service-security-private-links), classic usage metrics reports will contain no data. There is currently a limitation when transferring client information over private links. 
+If your organization is using [Private Links](../admin/service-security-private-links.md), classic usage metrics reports will contain no data. There is currently a limitation when transferring client information over private links. 
 
 ### Other considerations
 
