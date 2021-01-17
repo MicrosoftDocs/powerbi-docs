@@ -1,12 +1,12 @@
 ---
-title: Connect a report to a dataset using dynamic binding for embedded BI insights in Power BI embedded analytics
-description: Learn how to embed a report using dynamic binding in Power BI embedded analytics, creating better embedded BI insights for your customers.
+title: Connect a Power BI report to a dataset using dynamic binding
+description: Learn how to embed a Power BI report using dynamic binding in Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 11/07/2019
+ms.date: 01/17/2021
 ---
 
 # Connect a report to a dataset using dynamic binding 
@@ -31,33 +31,15 @@ Dynamic binding is supported for both *Embedding for your organization* and *Emb
 |*Embedding for your customers*     |App owns data         |Access token for non-Power BI users         |Must include permissions for both the report and the dynamically bound dataset. Use the [API for generating an embed token for multiple items](/rest/api/power-bi/embedtoken/generatetoken), to generate an embed token that supports multiple artifacts.         |
 
 ## Adjusting the config object
-Add `datasetBinding` to the config object. Use the example below as a reference.
 
-```javascript
-var config = {
-    type: 'report',
-    tokenType: models.TokenType.Embed,
-    accessToken: accessToken,
-    embedUrl: embedUrl,
-    id: "reportId", // The wanted report id
-    permissions: permissions,
-
-    // -----  Adjustment required for dynamic binding ---- //
-    datasetBinding: {
-        datasetId: "notOriginalDatasetId",  // </The wanted dataset id
-    }
-    // ---- End of dynamic binding adjustment ---- //
-};
-
-// Get a reference to the embedded report HTML element
-var embedContainer = $('#embedContainer')[0];
-
-// Embed the report and display it within the div container
-var report = powerbi.embed(embedContainer, config);
-```
+For dynamic binding to work, you need to add `datasetBinding` to the config object. To learn how this is done, see [Bind datasets dynamically to a report](/javascript/api/overview/powerbi/bind-report-datasets). 
 
 ## Next steps
 
-If you're new to embedding in Power BI, review these tutorials to learn how to embed your Power BI content:
-* [Tutorial: Embed Power BI content into an application for your customers](embed-sample-for-customers.md)
-* [Tutorial: Embed Power BI content into an application for your organization](embed-sample-for-your-organization.md)
+If you're new to embedding in Power BI, review these tutorials to learn how to embed your Power BI content.
+
+>[!div class="nextstepaction"]
+>[Embed Power BI content into an application for your customers](embed-sample-for-customers.md)
+
+>[!div class="nextstepaction"]
+>[Embed Power BI content into an application for your organization](embed-sample-for-your-organization.md)
