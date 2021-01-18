@@ -28,7 +28,7 @@ LocalizationGroup: Conceptual
 
 **Power BI** is an online software service (_SaaS_, or Software as a Service) offering from Microsoft that lets you easily and quickly create self-service Business Intelligence dashboards, reports, datasets, and visualizations. With Power BI, you can connect to many different data sources, combine and shape data from those connections, then create reports and dashboards that can be shared with others.
 
-The Power BI service is governed by the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31), and the [Microsoft Enterprise Privacy Statement](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). For the location of data processing, refer to the Location of Data Processing terms in the Microsoft Online Services Terms. For compliance information, the [Microsoft Trust Center](https://www.microsoft.com/trustcenter) is the primary resource for Power BI. The Power BI team is working hard to bring its customers the latest innovations and productivity. Power BI is currently in Tier D of the Microsoft 365 Compliance Framework. Learn more about compliance in the [Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview).
+The Power BI service is governed by the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31), and the [Microsoft Enterprise Privacy Statement](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). For the location of data processing, refer to the Location of Data Processing terms in the Microsoft Online Services Terms. For compliance information, the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview) is the primary resource for Power BI. The Power BI team is working hard to bring its customers the latest innovations and productivity. Power BI is currently in Tier D of the Microsoft 365 Compliance Framework. Learn more about compliance in the [Microsoft Trust Center](/compliance/regulatory/offering-home).
 
 This article describes Power BI security by providing an explanation of the Power BI architecture, then explaining how users authenticate to Power BI and data connections are established, and then describing how Power BI stores and moves data through the service. The last section is dedicated to security-related questions, with answers provided for each.
 
@@ -114,13 +114,13 @@ The following links provide additional information about Azure datacenters.
 - [Azure Regions](https://azure.microsoft.com/regions/) – information about Azure's global presence and locations
 - [Azure Services, by region](https://azure.microsoft.com/regions/#services) – a complete listing of Azure services (both infrastructure services and platform services) available from Microsoft in each region.
 
-Currently, the Power BI service is available in specific regions, serviced by datacenters as described in the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location). The following link shows a map of Power BI datacenters, you can hover over a region to see the datacenters located there:
+Currently, the Power BI service is available in specific regions, serviced by datacenters as described in the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview). The following link shows a map of Power BI datacenters, you can hover over a region to see the datacenters located there:
 
 * [Power BI Datacenters](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)
 
 Microsoft also provides datacenters for sovereignties. For more information about Power BI service availability for national clouds, see [Power BI national clouds](https://powerbi.microsoft.com/clouds/).
 
-For more information on where your data is stored and how it is used, refer to the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Commitments about the location of customer data at rest are specified in the **Data Processing Terms** of the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31).
+For more information on where your data is stored and how it is used, refer to the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview). Commitments about the location of customer data at rest are specified in the **Data Processing Terms** of the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31).
 
 ## User Authentication
 

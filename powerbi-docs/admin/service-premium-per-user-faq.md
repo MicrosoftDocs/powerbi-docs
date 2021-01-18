@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 1/13/2021
 LocalizationGroup: Premium
 ---
 # Power BI Premium Per User FAQ (preview)
@@ -40,15 +40,21 @@ This article groups questions and answers into the following categories:
 4.	**How do I get a trial?**
 
     There is an in-product trial experience and a trial experience available through Microsoft 365. Any user, assuming their organization has not restricted PPU, can access the in-product trial experience by turning on Premium Per User for a workspace. Trial experiences through Microsoft 365 can be enabled through the portal just like Power BI Pro trials are initiated today.  
+    
+5.	**My initial trial has expired and we're still in the preview period.  How do I extend/renew my trial for Premium per user during the preview period?**
 
-5.	**What features are available in Premium per user?**
+    For customers who are using the in-product trial, you may initiate a new trial any time after your original trial expires by clicking on your profile icon in the upper-right hand corner of the portal.  You'll see an option to opt-in to the trial once again.  Doing so will initiate another 60 day trial.  This will continue to be an option throughout the preview period.  
+    
+    For customers who are using the trial offered through Microsoft 365, your tenant administrator may extend your original 30-day trial for another 30 days. This is the maximum length of time that trial can be extended.
+
+6.	**What features are available in Premium per user?**
 
     The feature comparison grid is as follows:    
 
     ![Premium per user feature comparison](media/service-premium-per-user-faq/premium-per-user-faq-02.png)
 
 
-6.	**My organization already has Power BI Premium. Do I now need a Premium Per User license to publish content to my capacity?**
+7.	**My organization already has Power BI Premium. Do I now need a Premium Per User license to publish content to my capacity?**
     
     Your organization may choose to supplement their Premium capacity with Premium Per User licenses, but Premium Per User is not required to publish content to existing capacities.  
 
@@ -83,6 +89,10 @@ This article groups questions and answers into the following categories:
 7.	**Are the capacity APIs available for Premium Per User?**
 
     A limited set of the APIs are available to allow movement of workspaces, but you cannot do things like turn off workloads, and other such activities.  
+    
+7.	**Are service principals supported with Premium Per User workspaces?**
+
+    No, we don't currently support service principals in Premium Per User workspaces.  
 
 
 ## End user experience questions
@@ -107,9 +117,10 @@ This article groups questions and answers into the following categories:
 
     Premium Per User will work in the same way embedded use cases work when you use a Pro license. You can embed the content and each user will need a PPU license to view it.
 
-5.	**What happens to my PPU workspace if my trial expires?**
+5.	**What happens to my PPU workspace at the end of the preview period if I choose not to purchase Premium per user licenses?**
 
-    Users will still have access to the workspace, however, content that requires that license type will be unavailable. You either need to move the workspace to a Premium capacity, or simply the turn the requirement off. 
+    You and your users will still have access to the workspace, however, content that requires that license type will be unavailable. You either need to move the workspace to a Premium capacity, or simply the turn the requirement off. 
+
 6.	**How much total storage do I get with Premium Per User?**
 
     The entire tenant will have the same 100 TB limit that a Premium capacity has, in terms of storage.

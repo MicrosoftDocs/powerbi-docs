@@ -1,6 +1,6 @@
 ---
-title: Create Power BI Embedded capacity in the Azure portal for your Power BI embedded analytics embedded BI solution
-description: This article walks through creating a Power BI Embedded capacity in Microsoft Azure, for your Power BI embedded analytics embedded BI solution.
+title: Create Power BI Embedded capacity in the Azure portal | Microsoft Docs
+description: This article walks through how to create a Power BI Embedded capacity in Microsoft Azure.
 author: KesemSharabi
 ms.author: kesharab
 ms.service: powerbi
@@ -42,7 +42,8 @@ Before creating a Power BI Embedded capacity, make sure you have signed into Pow
 
 4. Fill in the required information and then click **Review + Create**.
 
-    ![Screenshot shows the Basics tab of the Power B I Embedded page to create new capacity in the Azure portal.](media/azure-pbie-create-capacity/azure-create-capacity.png)
+    >[!div class="mx-imgBorder"]
+    >![Screenshot shows the Basics tab of the Power B I Embedded page to create new capacity in the Azure portal.](media/azure-pbie-create-capacity/azure-create-capacity-old.png)
 
     * **Subscription** - The subscription you would like to create the capacity against.
 

@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/18/2020
+ms.date: 01/13/2021
 
 LocalizationGroup: Common tasks
 ---
@@ -123,6 +123,7 @@ Power BI administrators can use the Power BI audit logs to view details around s
 - The option to provide access to the report/dashboard always shows as enabled when you edit an existing subscription.  If you clear this option and save the subscription, it saves that state. However, when you go to edit the report again it will be checked by default.
 - If you have an alternate email address but no primary, Power BI uses that to deliver the subscription.
 - If you subscribe external users to a report or dashboard, they will receive a share notification immediately after you select **Save and close** in the subscription pane. This notification is sent only to external users, not internal users, because they require an invitation link to view the report or dashboard. 
+- There is a limit to the number of subscribers for one report or dashboard. After you pass 200 subscribers, you may encounter issues with delivery. To reduce the number of subscribers, use email aliases instead. Each email alias is counted as one subscriber.
 
 ### Dashboards
 
@@ -134,7 +135,7 @@ Power BI administrators can use the Power BI audit logs to view details around s
 
 ### Reports
 
-- For report email subscriptions, if the dataset uses RLS, you can create a subscription for yourself. You can't subscribe others to a report with row-level security (RLS) applied, except for paginated reports. You can subscribe others to a paginated report, using your security context. Read more about [subscribing to paginated reports](../consumer/paginated-reports-subscriptions.md).
+- For paginated and Power BI report email subscriptions, if the dataset uses row-level security (RLS), you can create subscriptions for yourself. You may also subscribe others to a report with RLS. Those subscriptions will be generated using your security context.
 - Report page subscriptions are tied to the name of the report page. If you subscribe to a report page and then rename it, you have to re-create your subscription.
 - Your organization may configure certain settings in Azure Active Directory that limit the ability to use email subscriptions in Power BI. These limitations include, but aren't limited to, having multi-factor authentication or IP range restrictions when accessing resources.
 - Email subscriptions don't support most [custom visuals](../developer/visuals/power-bi-custom-visuals.md). The one exception is those custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
