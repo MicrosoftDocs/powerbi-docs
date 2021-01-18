@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 01/06/2021
+ms.date: 01/18/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
 ---
@@ -82,6 +82,15 @@ The following known limitations currently apply to Premium Gen2:
     |SQL Server Management Studio (SSMS)|18.8|December 8, 2020|
     |SQL Server Data Tools (SSDT)|2.9.15|General availability November 30, 2020|
     | AS PowerShell| Greater than 21.1.18229|November 26, 2020|
+
+5.  Re-assigning a workspace containing dataflows from one Premium Gen2 Capacity to another Premium capacity in a different region is not supported. Also unsupported is moving a large-storage format models from one Premium capacity to another. If you've already migrated to a capacity in a different region, take one of the following steps to restore functionality:
+ 
+    1.	Create a new workspace and copy the dataflows
+    2.	Migrate the workspace back to the capacity in previous region
+    3.	Switch back to Premium Gen 1
+
+This limitation may be removed upon General Availability (GA) of Premium Gen 2.
+
 
 ## Subscriptions and licensing
 
@@ -329,7 +338,7 @@ To learn more, see [Power BI licensing](service-admin-licensing-organization.md)
 
 ## Analysis Services in Power BI Premium
 
-Under the hood, the enterprise proven Microsoft **Analysis Services Vertical engine** powers Power BI Premium workspaces and datasets. Analysis Services provides programmability and client application and tool support through client libraries and APIs that support the open-standard XMLA protocol. By default, Power BI Premium capacity dataset workloads support *read-only* operations from Microsoft and third-party client applications and tools through an **XMLA endpoint**. Capacity admins can also choose to disable or allow *read/write* operations through the endpoint.
+Under the hood, the enterprise proven Microsoft **Analysis Services Vertipaq engine** powers Power BI Premium workspaces and datasets. Analysis Services provides programmability and client application and tool support through client libraries and APIs that support the open-standard XMLA protocol. By default, Power BI Premium capacity dataset workloads support *read-only* operations from Microsoft and third-party client applications and tools through an **XMLA endpoint**. Capacity admins can also choose to disable or allow *read/write* operations through the endpoint.
 
 With read-only access, Microsoft tools like SQL Server Management Studio (SSMS) and SQL Server Profiler, and third-party apps such as DAX Studio and data visualization applications, can connect to and query Premium datasets by using XMLA, DAX, MDX, DMVs, and Trace events. With read/write access, enterprise data modeling tools like Visual Studio with Analysis Services projects extension or the open source Tabular Editor can deploy tabular models as a dataset to a Premium workspace. And with tools like SSMS, admins can use Tabular Model Scripting Language (TMSL) to script metadata changes and advanced data refresh scenarios. 
 

@@ -12,7 +12,7 @@ LocalizationGroup: Reports
 ---
 # Tutorial: From dimensional model to stunning report in Power BI Desktop 
 
-In this tutorial, you start with a dimensional model and build a beautiful report from start to finish in 20 minutes.
+In this tutorial, you start with a dimensional model and build a beautiful report from start to finish in 45 minutes.
 
 You work at AdventureWorks and your manager wants to see a report on your latest sales figures. They have requested an executive summary of: 
 
@@ -237,7 +237,7 @@ Now your final data model is ready.
 
 ## Extra credit: Write a measure in DAX 
 
-Writing *measures* in the DAX formula language is super powerful for data modeling. There's lots to learn about DAX in the Power BI documentation. For now, let's write a basic measure that calculates the total sales amount by due date on the sales order instead of the default order date. 
+Writing *measures* in the DAX formula language is super powerful for data modeling. There's lots to [learn about DAX in the Power BI documentation](/dax/). For now, let's write a basic measure that calculates the total sales amount by due date on the sales order instead of the default order date. This measure uses the [USERELATIONSHIP function](/dax/userelationship-function-dax) to activate the relationship between Sales and Date on DueDate for the context of the measure. It then uses [CALCULATE](/dax/calculate-function-dax) to sum the Sales Amount in that context.
 
 1. Select Data View on the left. 
 

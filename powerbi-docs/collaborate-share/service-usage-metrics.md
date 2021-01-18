@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 12/15/2020
+ms.date: 01/15/2021
 LocalizationGroup: Dashboards
 ---
 
@@ -157,7 +157,11 @@ It's important to understand that differences can occur when comparing usage met
 
 ### Discrepancies between REST APIs and usage metrics
 
-The Power BI [Reports REST APIs](https://docs.microsoft.com/rest/api/power-bi/reports) and [Admin REST APIs](https://docs.microsoft.com/rest/api/power-bi/admin) also use Power BI service data. For the reasons described in the previous section, report counts (the number of reports) from the APIs can differ from report counts in usage metrics. Report counts derived from the APIs are unaffected by client issues and should be considered accurate.
+The Power BI [Reports REST APIs](/rest/api/power-bi/reports) and [Admin REST APIs](/rest/api/power-bi/admin) also use Power BI service data. For the reasons described in the previous section, report counts (the number of reports) from the APIs can differ from report counts in usage metrics. Report counts derived from the APIs are unaffected by client issues and should be considered accurate.
+
+### Classic Usage Metrics are not supported with Private Links 
+
+If your organization is using [Private Links](../admin/service-security-private-links.md), classic usage metrics reports will contain no data. There is currently a limitation when transferring client information over private links. 
 
 ### Other considerations
 

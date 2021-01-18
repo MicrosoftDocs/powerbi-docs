@@ -34,7 +34,7 @@ In this tutorial, you'll use an automated installation Azure Functions sample th
 
 For more information about the general automation flow and the APIs that the app uses, see [Automate configuration of a template app installation](template-apps-auto-install.md).
 
-Our simple application uses an Azure function. For more information about Azure Functions, see the [Azure Functions documentation](https://docs.microsoft.com/azure/azure-functions/).
+Our simple application uses an Azure function. For more information about Azure Functions, see the [Azure Functions documentation](/azure/azure-functions/).
 
 ## Basic flow
 
@@ -44,7 +44,7 @@ The following basic flow lists what the application does when the customer launc
 
 1. The ISV acquires an *app-only* token based on a [service principal (app-only token)](../embedded/embed-service-principal.md) that's registered in the ISV's tenant.
 
-1. Using [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the ISV creates an *install ticket*, which contains the user-specific parameter configuration as prepared by the ISV.
+1. Using [Power BI REST APIs](/rest/api/power-bi/), the ISV creates an *install ticket*, which contains the user-specific parameter configuration as prepared by the ISV.
 
 1. The ISV redirects the user to Power BI by using a ```POST``` redirection method, which contains the install ticket.
 
@@ -55,18 +55,18 @@ The following basic flow lists what the application does when the customer launc
 
 ## Prerequisites
 
-* Your own Azure Active Directory (Azure AD) tenant set up. For instructions on how to set one up, see [Create an Azure AD tenant](https://docs.microsoft.com/power-bi/developer/embedded/create-an-azure-active-directory-tenant).
-* A [service principal (app-only token)](https://docs.microsoft.com/power-bi/developer/embedded/embed-service-principal) registered in the preceding tenant.
-* A parameterized [template app](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-overview) that's ready for installation. The template app must be created in the same tenant in which you register your application in Azure AD. For more information, see [Template app tips](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips.md) or [Create a template app in Power BI](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create).
+* Your own Azure Active Directory (Azure AD) tenant set up. For instructions on how to set one up, see [Create an Azure AD tenant](../embedded/create-an-azure-active-directory-tenant.md).
+* A [service principal (app-only token)](../embedded/embed-service-principal.md) registered in the preceding tenant.
+* A parameterized [template app](../../connect-data/service-template-apps-overview.md) that's ready for installation. The template app must be created in the same tenant in which you register your application in Azure AD. For more information, see [Template app tips](../../connect-data/service-template-apps-tips.md) or [Create a template app in Power BI](../../connect-data/service-template-apps-create.md).
 * A Power BI Pro license. If you're not signed up for Power BI Pro, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
 ## Set up your template apps automation development environment
 
-Before you continue setting up your application, follow the instructions in [Quickstart: Create an Azure Functions app with Azure App Configuration](https://docs.microsoft.com/azure/azure-app-configuration/quickstart-azure-functions-csharp) to develop an Azure function along with an Azure app configuration. Create your app configuration as described in the article.
+Before you continue setting up your application, follow the instructions in [Quickstart: Create an Azure Functions app with Azure App Configuration](/azure/azure-app-configuration/quickstart-azure-functions-csharp) to develop an Azure function along with an Azure app configuration. Create your app configuration as described in the article.
 
 ### Register an application in Azure AD
 
-Create a service principal as described in [Embed Power BI content with service principal and an application secret](https://docs.microsoft.com/power-bi/developer/embedded/embed-service-principal).
+Create a service principal as described in [Embed Power BI content with service principal and an application secret](../embedded/embed-service-principal.md).
 
 Make sure to register the application as a **server-side web application** app. You register a server-side web application to create an application secret.
 
@@ -85,12 +85,12 @@ After you've created your template app and it's ready for installation, save the
 * *Parameter names* as they're defined in the template app's dataset. Parameter names are case-sensitive strings. They can also be retrieved from the **Parameter Settings** tab when you [define the properties of the template app](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app) or from the dataset settings in Power BI.
 
 >[!NOTE]
->You can test your preconfigured installation application on your template app if the template app is ready for installation, even if it isn't publicly available on AppSource yet. For users outside your tenant to be able to use the automated installation application to install your template app, the template app must be publicly available in the [Power BI apps marketplace](https://app.powerbi.com/getdata/services). Before you distribute your template app by using the automated installation application you're creating, be sure to publish it to [Partner Center](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
+>You can test your preconfigured installation application on your template app if the template app is ready for installation, even if it isn't publicly available on AppSource yet. For users outside your tenant to be able to use the automated installation application to install your template app, the template app must be publicly available in the [Power BI apps marketplace](https://app.powerbi.com/getdata/services). Before you distribute your template app by using the automated installation application you're creating, be sure to publish it to [Partner Center](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
 
 
 ## Install and configure your template app
 
-In this section, you'll use an automated installation Azure Functions sample that we created to preconfigure and install your template app. This sample has deliberately been kept simple for demonstration purposes. It allows you to use an [Azure function](https://docs.microsoft.com/azure/azure-functions/functions-overview) and [Azure App Configuration](https://docs.microsoft.com/azure/azure-app-configuration/overview) to easily deploy and use the automated installation API for your template apps.
+In this section, you'll use an automated installation Azure Functions sample that we created to preconfigure and install your template app. This sample has deliberately been kept simple for demonstration purposes. It allows you to use an [Azure function](/azure/azure-functions/functions-overview) and [Azure App Configuration](/azure/azure-app-configuration/overview) to easily deploy and use the automated installation API for your template apps.
 
 ### Download [Visual Studio](https://www.visualstudio.com/) (version 2017 or later)
 
@@ -196,7 +196,7 @@ To get the application secret, follow these steps:
 
 ## Test your function locally
 
-Follow the steps as described in [Run the function locally](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio#run-the-function-locally) to run your function.
+Follow the steps as described in [Run the function locally](/azure/azure-functions/functions-create-your-first-function-visual-studio#run-the-function-locally) to run your function.
 
 Configure your portal to issue a ```POST``` request to the URL of the function. An example is ```POST http://localhost:7071/api/install```. The request body should be a JSON object that describes key-value pairs. Keys are *parameter names* as defined in Power BI Desktop. Values are the desired values to be set for each parameter in the template app.
 
@@ -214,4 +214,4 @@ The desired flow should be:
 
 ### Publish your project to Azure
 
-To publish your project to Azure, follow the instructions in the [Azure Functions documentation](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio#publish-the-project-to-azure). Then you can integrate template app automated installation APIs into your product and begin testing it in production environments.
+To publish your project to Azure, follow the instructions in the [Azure Functions documentation](/azure/azure-functions/functions-create-your-first-function-visual-studio#publish-the-project-to-azure). Then you can integrate template app automated installation APIs into your product and begin testing it in production environments.
