@@ -30,7 +30,7 @@ All of the Power BI Embedded Gen 1 capabilities such as pausing and resuming the
 
 * **Scaling a resource instantly** - Instantly scale your Power BI Embedded resource. From scaling a Gen1 resource in minutes, to scaling a Gen2 resource in seconds.
 
-* **Scaling without downtime** - With Embedded Gen2 you can scale your Power BI Embedded resource without experiencing any downtime. From minutes for scaling a classic Power BI Embedded resource, to seconds for scaling an Embedded Gen 2 resource.
+* **Scaling without downtime** - With Embedded Gen2 you can scale your Power BI Embedded resource without experiencing any downtime.
 
 * **Improved metrics** - Including clear and normalized capacity utilization data, depending only on the complexity of the analysis operations the capacity performs. Metrics are not impacted by other factors such as the size of the capacity, and the level of load on the system while performing analytics. When using the improved metrics, the built-in reporting tool allows you to clearly see:
     * Utilization analysis
