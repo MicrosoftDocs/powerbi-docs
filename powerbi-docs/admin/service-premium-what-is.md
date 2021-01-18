@@ -141,9 +141,9 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 | EM1/A1 | 1 | 0.5 | 3 | 0.5 | 3.75 | 1 |
 | EM2/A2 | 2 | 1 | 5 | 1 | 7.5 | 2 |
 | EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
-| P1 | 8 | 4 | 25 | 4 | 30 | 6 |
-| P2 | 16 | 8 | 50 | 8 | 60 | 12 |
-| P3 | 32 | 16 | 100 | 16 | 120 | 24 |
+| P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
+| P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
+| P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
 | P4 <sup>[1](#limit)</sup>| 64 | 32 | 200 | 32 | 240 | 48 |
 | P5 <sup>[1](#limit)</sup>| 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
@@ -155,7 +155,7 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 
 #### Updates for Premium Gen2 (Preview)
 
-With **Premium Gen2** and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md), the amount of memory available on each node size is set to the limit of memory footprint of a single artifact, and not to the cumulative consumption of memory. For example, in Premium Gen2, only a single dataset size is limited to 25 GB, in comparison to the original Premium, where the total memory footprint of the datasets being handled at the same time was limited to 25 GB.
+With **Premium Gen2** and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md), the amount of memory available on each node size is set to the limit of memory footprint of a single artifact, and not to the cumulative consumption of memory. For example, in Premium Gen2 P1 capacity, only a single dataset size is limited to 25 GB, in comparison to the original Premium, where the total memory footprint of the datasets being handled at the same time was limited to 25 GB.
 
 ### Capacity workloads
 
