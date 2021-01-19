@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/06/2020
+ms.date: 01/19/2021
 LocalizationGroup: Create reports
 ---
 # Add multiple fields to a hierarchy slicer
@@ -72,8 +72,9 @@ If space is tight on your report, you may want to reduce the amount you indent t
     :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-indentation.png" alt-text="Screenshot of Set the hierarchy slicer indentation.":::
     
 ## Limitations and considerations
-- For tabular models, this feature requires SQL Server Analysis Services 2017 or newer
-- For multi-dimensional models, this feature requires SQL Server Analysis Services 2019 CU5 or newer with SuperDAXMD enabled
+
+- For tabular models, this feature requires SQL Server Analysis Services 2017 or newer.
+- For multi-dimensional models, this feature requires SQL Server Analysis Services 2019 CU5 or newer with SuperDAXMD enabled. Read more about [SuperDAXMD](/analysis-services/multidimensional-models/dax-for-multidimensional-models?view=asallproducts-allversions#superdaxmd).
 
 ## Next steps
 
