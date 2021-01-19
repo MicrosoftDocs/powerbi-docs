@@ -74,7 +74,7 @@ If space is tight on your report, you may want to reduce the amount you indent t
 ## Limitations and considerations
 
 - For tabular models, this feature requires SQL Server Analysis Services 2017 or newer.
-- For multi-dimensional models, this feature requires SQL Server Analysis Services 2019 CU5 or newer with SuperDAXMD enabled. Read more about [SuperDAXMD](/analysis-services/multidimensional-models/dax-for-multidimensional-models?view=asallproducts-allversions#superdaxmd).
+- For multi-dimensional models, this feature requires SQL Server Analysis Services 2019 CU5 or newer with SuperDAXMD enabled. Read more about [SuperDAXMD](/analysis-services/multidimensional-models/dax-for-multidimensional-models#superdaxmd).
 
 ## Next steps
 
