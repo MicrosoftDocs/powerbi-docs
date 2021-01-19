@@ -70,6 +70,10 @@ If space is tight on your report, you may want to reduce the amount you indent t
 1. Expand **Items**, then drag **Stepped layout indentation** smaller or larger. You can also just type a number in the box.
 
     :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-indentation.png" alt-text="Screenshot of Set the hierarchy slicer indentation.":::
+    
+## Limitations and considerations
+- For tabular models, this feature requires SQL Server Analysis Services 2017 or newer
+- For multi-dimensional models, this feature requires SQL Server Analysis Services 2019 CU5 or newer with SuperDAXMD enabled
 
 ## Next steps
 
