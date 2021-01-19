@@ -31,7 +31,7 @@ You can change data source connection strings of Power BI reports hosted in Powe
 2. Fetch the existing data source information for the Power BI file via the PowerShell commandlets:
 
     ```powershell
-    Get-RsRestItemDataSource -RsItem '/MyPbixReport'
+    $dataSources = Get-RsRestItemDataSource -RsItem '/MyPbixReport'
     ```
 
     To view information for the first data source contained in the Power BI report: 
