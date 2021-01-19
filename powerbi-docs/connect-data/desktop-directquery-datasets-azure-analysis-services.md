@@ -117,8 +117,6 @@ There are also a few **limitations** you need to keep in mind:
 
 - Using DirectQuery on datasets from “My workspace” is not currently supported. 
 
-- Deleting connections to remote sources that use DirectQuery is not currently supported.
-
 - Using Power BI Embedded with datasets that include a DirectQuery connection to a Power BI datasets or Azure Analysis Services model is not currently supported.
 
 - Format strings on columns and measures from a remote source are not imported to the composite model.
