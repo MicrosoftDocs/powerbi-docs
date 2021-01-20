@@ -38,11 +38,26 @@ Here are some highlights of new features.
 - Hive LLAP connector generally available
 - New connectors: Actian, Anaplan, Starburst Presto
 
-### Power BI Report Server
+### New connection metadata format (preview)
 
-**V3 enhanced metadata in Power BI Report Server** (preview)
+We've updated the way that connection metadata is stored in the .pbix file format. This update is part of a long-term journey to make .pbix files more programmatically accessible and editable. We've already enabled the change in the monthly
+V3 enhanced metadata in Power BI Report Server (preview)
+
+Either of these registry keys will force V3 off and hide the preview feature check box:
+
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop SSRS]
+"AllowV3Models"=dword:00000000
+
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop SSRS]
+"AllowV3Models"=dword:00000000
+
 
 [Using enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md)
+
+### Power BI Report Server
 
 **Internet Explorer deprecation**
 
