@@ -34,7 +34,7 @@ Resource Provider and Type: [Microsoft.PowerBIDedicated/capacities](/azure/azure
 |Query Duration (Datasets) (Gen1) |QueryDuration               |Milliseconds |DAX Query duration in last interval. Supported only for Power BI Embedded Generation 1 resources. |
 |Query Pool Job Queue Length (Datasets) (Gen1) |QueryPoolJobQueueLength     |Count        |Number of jobs in the queue of the query thread pool. Supported only for Power BI Embedded Generation 1 resources. |
 
-## Metric Dimensions
+## Metric dimensions
 
 For more information on what metric dimensions are, see [Multi-dimensional metrics](/azure/azure-monitor/platform/data-platform-metrics#multi-dimensional-metrics).
 
@@ -129,14 +129,10 @@ The following table lists the operations related to Power BI Embedded that may b
 
 Power BI Embedded uses the **Power BI Dedicated** schema.
 
-## See Also
-
-- See [Monitor Azure Power BI Embedded](monitor-power-bi-embedded.md) for a description of monitoring Azure Power BI Embedded.
-- See [Monitoring Azure resources with Azure Monitor](/azure/azure-monitor/insights/monitor-azure-resources) for details on monitoring Azure resources.
-
 ## Next steps
 
-You can learn more about Azure resource diagnostic logging.
+>[!div class="nextstepaction"]
+>[Monitor Azure Power BI Embedded](monitor-power-bi-embedded.md)
 
 >[!div class="nextstepaction"]
 >[Azure resource diagnostic logging](/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs)
