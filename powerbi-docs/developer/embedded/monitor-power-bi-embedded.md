@@ -18,7 +18,7 @@ When you have critical applications and business processes relying on Azure reso
 
 The **Overview** page in the Azure portal for each *Power BI Embedded* instance, includes the following information:
 
-* **Resource group** - The [resource group](/azure/azure-resource-manager/management/overview.md#resource-groups) the instance belongs to
+* **Resource group** - The [resource group](/azure/azure-resource-manager/management/overview#resource-groups) the instance belongs to
 * **Status** - The status of your Power BI Embedded instance
 * **Location** - The location of your Power BI Embedded instance
 * **Resource name** - The name of your Power BI Embedded instance
