@@ -323,7 +323,7 @@ Next we create a column chart to investigate which products are sold by what typ
 
 1. Select a blank area in the lower half of your report canvas. 
 
-1. In the Fields pane, select **Sales Amount** from **Sales**, **Product Category** from **Product**, and **Business Type** from **Reseller**:
+1. In the Fields pane, select **Sales Amount** from **Sales**, **Product Category** from **Product**, and **Business Type** from **Reseller**.
     :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-field-well.png" alt-text="Check that Category and Business Type are on Rows and Sales Amount is selected as Values.":::
     
     Power BI automatically creates a clustered column chart. Change the visualization to a **Matrix**: 
