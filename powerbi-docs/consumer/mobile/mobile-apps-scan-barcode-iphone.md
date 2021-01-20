@@ -1,5 +1,5 @@
 ---
-title: Scan a barcode from the Power BI mobile app
+title: Scan barcode from the Power BI mobile app
 description: Scan barcodes in the real world to go directly to filtered BI information in the Power BI mobile app.
 author: paulinbar
 ms.author: painbar
@@ -9,9 +9,8 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 12/02/2019
 ---
-# Scan a barcode with your device from the Power BI mobile app
-Scan barcodes in the real world to go directly to filtered BI information in the Power BI mobile app.
-
+# Scan barcodes from the mobile app to get filtered data 
+You can scan barcodes in the real world to get directly to filtered BI information in the Power BI mobile app.
 
 Applies to:
 
@@ -19,11 +18,13 @@ Applies to:
 |:--- |:--- |:--- |:--- |
 |iPhones |iPads |Android phones |Android tablets |
 
-Say a colleague has [tagged a barcode field in a report Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md) and shared the report with you. 
+Say your organization has reports that have data that has been [tagged as barcode data in Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md). When you scan a product barcode with the scanner in the Power BI app on your device, you'll get a list of the reports that have barcode data. You can open the report you're looking for, automatically filtered to the information you need.
 
 ![Screenshot of a product barcode scan, showing the scanner over the barcode of a colored beverage.](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
 
-When you scan a product barcode with the scanner in the Power BI app on your device, you see the report (or list of reports) with that barcode. You can open that report filtered to that barcode.
+Here are two scenarios where barcode scanning is useful
+* Taking inventory: Imagine you're checking inventory in a large supermarket and need to get information about particular products, such as how many the store has in stock, what departments the items are stocked in, etc., while your out in the aisles. You can just open the Power BI scanner on your mobile device and scan an item's barcode. You'll get a list of reports that have that barcode. You choose the relevant report, say, the Inventory report, and the report will open, filtered to the relevant data.
+* In the manufacturing domain. Say the machines on a factory floor are identified with barcodes, and the telemetry from those machines is being processed and sent to Power BI. When engineers are out on the floor checking machine status, they can easily scan a machine's barcode and to a KPI report about it's performance and status.
 
 ## Scan a barcode with the Power BI scanner
 1. On the navigation bar, tap **More options** (...) and then tap **Scanner**.
