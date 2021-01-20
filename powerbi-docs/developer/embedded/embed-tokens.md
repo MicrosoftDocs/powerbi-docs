@@ -19,21 +19,23 @@ If you're using the *embed for your customers* solution, your web app users will
 >[!NOTE]
 >When using the *embed for your customers* solution, you can use any authentication method you want to allow access to your web app.
 
-If you're using the *embed for your organization* solution, your web app users will be authenticating against Azure AD using their own credentials. Your app users ***credentials*** will determine which Power BI content they can access.
+If you're using the *embed for your organization* solution, your web app users will be authenticating against Azure AD using their own credentials. Your app users will have access to the Power BI content they can access on Power BI service.
 
 ## Azure AD token
 
-In both *embed for your customers* and *embed for your organization* solutions, ***before your web app can access Power BI service, it must authenticate against Azure AD.*** After successfully authenticating against Azure AD, your web app receives an [Azure AD token](#azure-ad-token) allowing it to access Power BI. This token is required for all [REST API](/rest/api/power-bi/) operations, and it expires after an hour.
+For both *embed for your customers* and *embed for your organization* solutions, you need an [Azure AD token](#azure-ad-token). This token is required for all [REST API](/rest/api/power-bi/) operations, and it expires after an hour.
 
-When using the *embed for your customers* solution, the *Azure AD token* is used to generate *embed tokens*.
+* In the *embed for your customers*, the Azure AD token is used to generate the *embed token*.
+
+* In the *embed for your organization*, the Azure AD token is used to access Power BI.
 
 ## Embed token
 
-When you're using the *embed for your customers* solution, your web app needs to know which Power BI content its user can access. Use the [embed token](/rest/api/power-bi/embedtoken) REST API, to generate an *embed token*, which specifies the following:
+When you're using the *embed for your customers* solution, your web app needs to know which Power BI content its user can access. Use the [embed token](/rest/api/power-bi/embedtoken) REST APIs, to generate an *embed token*, which specifies the following:
 
-* Which content your web app can access
+* Which content your web app user can access.
 
-* Your web app's access level (view, create, or edit)
+* The web app user's access level (view, create, or edit).
 
 For more information, see [Considerations when generating an embed token](generate-embed-token.md).
 
@@ -43,15 +45,15 @@ This section describes the authentication flows for the *embed for your customer
 
 ### Embed for your customers
 
-The *Embed for your customers* solution uses a non-authentication flow. Users do not need to sign in to Azure AD, to access Power BI. Instead, your web app uses a dedicated Azure AD identity to authenticate and generate the *embed token*. The dedicated identity can be one of the following:
+The *Embed for your customers* solution uses a non interactive authentication flow. Users do not need to sign in to Azure AD, to access Power BI. Instead, your web app uses a dedicated Azure AD identity to authenticate against Azure AD, and generate the *embed token*. The dedicated identity can be one of the following:
 
 * **[Service principal](embed-service-principal.md)**
 
-    Your web app uses the Azure AD [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) to authenticate against Azure AD and get an *Azure AD token*. Using a service principal doesn't require user authorization, it only requires your web  app to authorize against Azure AD, and is  the Azure AD recommended authentication method.
+    Your web app uses the Azure AD [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) to authenticate against Azure AD and get an *Azure AD token*. This is an *app-only* authentication method, which is recommended by Azure AD.
 
 * **Master user**
 
-    Your web app uses a [Power BI Pro](/power-bi/admin/service-admin-purchasing-power-bi-pro) or a [Premium Per User (PPU)](/power-bi/admin/service-premium-per-user-faq) account to authenticate against Azure AD and get the *Azure AD token*. When using a *master user* you'll need to define your app [permissions](/azure/active-directory/develop/v2-permissions-and-consent) (also known as scopes). The *master user* or *tenant admin* is required to grant consent for using these permissions.
+    Your web app uses a [Power BI Pro](/power-bi/admin/service-admin-purchasing-power-bi-pro) or a [Premium Per User (PPU)](/power-bi/admin/service-premium-per-user-faq) account to authenticate against Azure AD and get the *Azure AD token*. When using a *master user* you'll need to define your app's [deligated permissions](/azure/active-directory/develop/v2-permissions-and-consent) (also known as scopes). The *master user* or *tenant admin* is required to grant consent for using these permissions.
 
 After successful authentication against Azure AD, your web app will generate an [embed token](/rest/api/power-bi/embedtoken) to allow its users to access specific Power BI content.
 
@@ -69,8 +71,8 @@ The following diagram show the authentication flow for the *embed for your custo
 2. Your web app uses a *service principal* or a *master user* to authenticate against Azure AD.
 
 3. Your web app gets an *Azure AD token* token from Azure AD, and uses it to access Power BI REST APIs. Access to the Power BI REST APIs is given according to your authentication method:
-    * If you're using a *service principal*, ***you don’t need to set any additional permissions*** to access all the Power BI REST APIs.
-    * If you're using a *master user*, the *master user* (or a tenant administrator) should consent to using the Power BI REST APIs that your web app is requesting permission for.
+    * If you're using a *service principal*, you need to [enable Power BI APIs access](embed-sample-for-customers.md#step-6---service-principal-api-access) in the Power BI service *admin* settings. This allows your web app to access all the Power BI REST APIs.
+    * If you're using a *master user*, the *master user* (or a tenant administrator) should provide the required [scopes](/azure/active-directory/develop/v2-permissions-and-consent), and consent to them using the Power BI REST APIs.
 
 4. Your web app calls the generate token REST API requesting the *embed token*, which specifies which Power BI content can be embedded.
 
