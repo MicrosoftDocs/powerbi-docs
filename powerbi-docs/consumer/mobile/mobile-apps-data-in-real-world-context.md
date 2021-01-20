@@ -21,7 +21,7 @@ More about:
 
 * [Creating a QR code for a tile in Power BI](../../create-reports/service-create-qr-code-for-tile.md)
 * [Scanning a Power BI QR code from your mobile device](mobile-apps-qr-code.md)
-* [Scanning a QR code with the Power BI for Mixed Reality app](mobile-mixed-reality-app.md#scan-a-report-qr-code-in-holographic-view).
+* [Scanning a QR code with the Power BI for Mixed Reality app](./mobile-hololens2-app.md#open-reports-with-qr-codes).
 
 ## QR codes for reports
 Create a QR code for a report.  When your colleagues scan the code with their iPhones (Android phones are coming soon), they see the report you've associated with that QR code. 
