@@ -78,3 +78,4 @@ The following limitations and considerations apply to the numeric range slicer:
 * The numeric range slicer filters every underlying row in the data, not any aggregated value. For example, let's say that you use a *Sales Amount* field. The slicer then filters each transaction based on the sales amount, not the sum of the sales amount for each data point of a visual.
 * It doesn't currently work with measures.
 * You can type any number into a numeric slicer, even if it is outside the range of values in the underlying column. This option lets you set up filters if you know the data may change in future.
+* The date range slicer allows for any date values even if they do not exist in the underlying date column.

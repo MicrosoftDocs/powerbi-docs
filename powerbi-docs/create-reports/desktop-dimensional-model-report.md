@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 01/11/2021
+ms.date: 01/19/2021
 LocalizationGroup: Reports
 ---
 # Tutorial: From dimensional model to stunning report in Power BI Desktop 
 
-In this tutorial, you start with a dimensional model and build a beautiful report from start to finish in 20 minutes.
+In this tutorial, you start with a dimensional model and build a beautiful report from start to finish in 45 minutes.
 
 You work at AdventureWorks and your manager wants to see a report on your latest sales figures. They have requested an executive summary of: 
 
@@ -58,11 +58,10 @@ Select all tables, and choose **Transform Data**. Make sure not to select th
 
 :::image type="content" source="media/desktop-dimensional-model-report/desktop-load-tables.png" alt-text="Load tables in Navigator.":::
 
-Check that the data types of the columns match those in the following table. To make any changes, select a query, then select one or more columns.
+Check that the data types of the columns match those in the following table. To let Power BI detect data types for you, select a query, then select one or more columns. On the **Transform** tab, select **Detect Data Type**. To make any changes to the detected data type, on the **Home** tab, select **Data Type**, then select the appropriate data type from the table.
 
 :::image type="content" source="media/desktop-dimensional-model-report/power-query-change-data-types.png" alt-text="Check the data types of the columns.":::
 
-On the **Home** tab, select **Data Type**, then select the appropriate data type from the table.
 
 |Query  |Column  |Data type  |
 |---------|---------|---------|
@@ -237,7 +236,7 @@ Now your final data model is ready.
 
 ## Extra credit: Write a measure in DAX 
 
-Writing *measures* in the DAX formula language is super powerful for data modeling. There's lots to learn about DAX in the Power BI documentation. For now, let's write a basic measure that calculates the total sales amount by due date on the sales order instead of the default order date. 
+Writing *measures* in the DAX formula language is super powerful for data modeling. There's lots to [learn about DAX in the Power BI documentation](/dax/). For now, let's write a basic measure that calculates the total sales amount by due date on the sales order instead of the default order date. This measure uses the [USERELATIONSHIP function](/dax/userelationship-function-dax) to activate the relationship between Sales and Date on DueDate for the context of the measure. It then uses [CALCULATE](/dax/calculate-function-dax) to sum the Sales Amount in that context.
 
 1. Select Data View on the left. 
 
@@ -324,8 +323,9 @@ Next we create a column chart to investigate which products are sold by what typ
 
 1. Select a blank area in the lower half of your report canvas. 
 
-1. In the Fields pane, select **Sales Amount** from **Sales**, **Product Category** from **Product**, and **Business Type** from **Reseller**. 
-
+1. In the Fields pane, select **Sales Amount** from **Sales**, **Product Category** from **Product**, and **Business Type** from **Reseller**.
+    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-field-well.png" alt-text="Check that Category and Business Type are on Rows and Sales Amount is selected as Values.":::
+    
     Power BI automatically creates a clustered column chart. Change the visualization to a **Matrix**: 
 
     :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-change-to-matrix.png" alt-text="Change the clustered column chart to a matrix.":::
@@ -340,7 +340,7 @@ Next we create a column chart to investigate which products are sold by what typ
 
 1. In the Formatting pane for the matrix, open the **Conditional formatting** section and turn on **Data bars**. Select **Advanced controls** and set a lighter color for the positive bar. Select **OK**. 
 
-1. Increase the width of the Sales Amount column so it covers the whole area. 
+1. Increase the width of the Sales Amount column so it covers the whole area by dragging the matrix.
 
     :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-add-databars.png" alt-text="Matrix with data bars for Sales Amount.":::
 
