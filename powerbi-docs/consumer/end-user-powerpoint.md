@@ -83,9 +83,7 @@ What you do with your PowerPoint deck from there, or any of the high-resolution 
 There are a few considerations and limitations to keep in mind when you work with the **Export to PowerPoint** feature.
  
 
-* If you don't see the **Export** option, make sure that you have turned on "New look" and that you are viewing a report (not a dashboard).
-
-    ![Screenshot of the New look toggle](media/end-user-powerpoint/power-bi-new-look.png)
+* If you don't see the **Export** option, make sure that you are viewing a report (not a dashboard).
 
 * [URL filters](../collaborate-share/service-url-filters.md) aren't currently respected when you choose **Current Values** for your export.
 
