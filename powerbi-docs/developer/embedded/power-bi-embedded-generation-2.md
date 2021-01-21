@@ -55,6 +55,8 @@ Create an Embedded Gen2 capacity resource to take advantage of its updates. To c
 
 * Analysis services features in Embedded Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are listed in [Known limitations in Premium Gen2](../../admin/service-premium-what-is.md#known-limitations-in-premium-gen2).
 
+* All the current Azure metrics and log diagnostics for Power BI Embedded, support only Gen1 capacities.
+
 ## Next steps
 
 > [!div class="nextstepaction"]
