@@ -40,6 +40,8 @@
       href: paginated-reports-row-level-security.md
     - name: "Manage multi-tenants"
       href: embed-multi-tenancy.md
+    - name: "Connect a report using dynamic binding"
+      href: embed-dynamic-binding.md
     - name: "Azure diagnostic logging for Power BI Embedded"
       href: azure-pbie-diag-logs.md
     - name: "Embedding FAQ"
@@ -62,10 +64,10 @@
       href: create-an-azure-active-directory-tenant.md
     - name: "Register an application"
       href: register-app.md
+    - name: "Monitor Power BI Embedded"
+      href: monitor-power-bi-embedded.md      
     - name: "Get an Azure AD access token"
       href: get-azuread-access-token.md
-    - name: "Connect a report using dynamic binding"
-      href: embed-dynamic-binding.md
     - name: "Embedding Q&A"
       href: qanda.md
     - name: "Troubleshoot your embedded application"
@@ -96,6 +98,8 @@
         href: /rest/api/power-bi-embedded/
       - name: Power BI REST APIs
         href: /rest/api/power-bi/
+    - name: "Monitor Power BI Embedded data reference"
+      href: monitor-power-bi-embedded-reference.md        
     - name: "Power BI libraries"
       href: https://go.microsoft.com/fwlink/?linkid=848274
     - name: Azure CLI

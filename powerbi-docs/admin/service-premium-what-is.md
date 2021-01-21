@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 01/14/2021
+ms.date: 01/18/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
 ---
@@ -85,6 +85,15 @@ The following known limitations currently apply to Premium Gen2:
     |SQL Server Management Studio (SSMS)|18.8|December 8, 2020|
     |SQL Server Data Tools (SSDT)|2.9.15|General availability November 30, 2020|
     | AS PowerShell| Greater than 21.1.18229|November 26, 2020|
+
+5.  Re-assigning a workspace containing dataflows from one Premium Gen2 Capacity to another Premium capacity in a different region is not supported. Also unsupported is moving a large-storage format models from one Premium capacity to another. If you've already migrated to a capacity in a different region, take one of the following steps to restore functionality:
+ 
+    1.	Create a new workspace and copy the dataflows
+    2.	Migrate the workspace back to the capacity in previous region
+    3.	Switch back to Premium Gen 1
+
+This limitation may be removed upon General Availability (GA) of Premium Gen 2.
+
 
 ## Subscriptions and licensing
 
