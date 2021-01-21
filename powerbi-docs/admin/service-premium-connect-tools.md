@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 12/09/2020
+ms.date: 1/11/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
 ---
@@ -31,9 +31,9 @@ Listed below are some of the most common tools used with Azure Analysis Services
 
 **Visual Studio with Analysis Services projects** – Also known as SQL Server Data Tools, or simply **SSDT**, is an enterprise grade model authoring tool for Analysis Services tabular models. Analysis Services projects extensions are supported on all Visual Studio 2017 and later editions, including the free Community edition. Extension version 2.9.14 or higher is required to deploy tabular models to a Premium workspace. When deploying to a Premium workspace, the model must be at the 1500 or higher compatibility level. XMLA read-write is required on the datasets workload. To learn more, see [Tools for Analysis Services](/analysis-services/tools-and-applications-used-in-analysis-services?view=power-bi-premium-current&preserve-view=true).
 
-**SQL Server Management Studio (SSMS)** - Supports DAX, MDX, and XMLA queries. Perform fine-grain refresh operations and scripting of dataset metadata by using the [Tabular Model Scripting Language](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference) (TMSL). Read-only is required for query operations. Read-write is required for scripting metadata. Requires SSMS version 18.7.1 or above. Download [here](/sql/ssms/download-sql-server-management-studio-ssms).
+**SQL Server Management Studio (SSMS)** - Supports DAX, MDX, and XMLA queries. Perform fine-grain refresh operations and scripting of dataset metadata by using the [Tabular Model Scripting Language](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference) (TMSL). Read-only is required for query operations. Read-write is required for scripting metadata. Requires SSMS version **18.8** or higher. Download [here](/sql/ssms/download-sql-server-management-studio-ssms).
 
-**SQL Server Profiler** – Installed with SSMS, this tool provides tracing and debugging of dataset events. While officially deprecated for SQL Server, Profiler continues to be included in SSMS and remains supported for Analysis Services and Power BI Premium. XMLA read-only is required. To learn more, see [SQL Server Profiler for Analysis Services](/analysis-services/instances/use-sql-server-profiler-to-monitor-analysis-services?view=power-bi-premium-current&preserve-view=true).
+**SQL Server Profiler** – Installed with SSMS, this tool provides tracing and debugging of dataset events. While officially deprecated for SQL Server, Profiler continues to be included in SSMS and remains supported for Analysis Services and Power BI Premium. Requires SQL Server Profiler version **18.8** or higher, and XMLA read-only setting to be enabled on the Premium capacity. User must specify the dataset ([initial catalog](#initial-catalog)) when connecting to the XMLA endpoint. To learn more, see [SQL Server Profiler for Analysis Services](/analysis-services/instances/use-sql-server-profiler-to-monitor-analysis-services?view=power-bi-premium-current&preserve-view=true).
 
 **Analysis Services Deployment Wizard** – Installed with SSMS, this tool provides deployment of Visual Studio authored tabular model projects to Analysis Services and Power BI Premium workspaces. It can be run interactively or from the command line for automation. XMLA read-write is required. To learn more, see [Analysis Services Deployment Wizard](/analysis-services/deployment/deploy-model-solutions-using-the-deployment-wizard?view=power-bi-premium-current&preserve-view=true).
 
@@ -94,7 +94,9 @@ In workspace **Settings** > **Premium** > **Workspace Connection**, select **Cop
 
 ### Initial catalog
 
-With some tools, such as SQL Server Profiler, you may need to specify an *Initial Catalog*. Specify a dataset (database) in your workspace. In the **Connect to Server** dialog, select **Options** > **Connection Properties** > **Connect to database**, enter the dataset name.
+With some tools, such as SQL Server Profiler, you must specify an *Initial Catalog*, which is the dataset (database) to connect to in your workspace. In the **Connect to Server** dialog, select **Options** > **Connection Properties** > **Connect to database**, enter the dataset name.
+
+![Selecting the dataset in SQL Server Profiler](media/service-premium-connect-tools/sql-profiler-connection-properties.png)
 
 ### Duplicate workspace names
 
@@ -121,6 +123,10 @@ The following datasets aren't accessible by the XMLA endpoint. These datasets 
 - Datasets based on a live connection to a Power BI dataset in another workspace. To learn more, see [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md).
 - Datasets with Push data by using the REST API.
 - Excel workbook datasets.
+
+### Server/workspace alias
+
+Server name aliases, supported in Azure Analysis Services are not supported for Power BI Premium workspaces.
 
 ## Security
 

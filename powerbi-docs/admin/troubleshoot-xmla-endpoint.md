@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 01/04/2021
+ms.date: 01/13/2021
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
 ---
@@ -208,6 +208,14 @@ When republishing a live connected dataset utilizing the Analysis Services conne
 :::image type="content" source="media/troubleshoot-xmla-endpoint/couldnt-publish-to-power-bi.png" alt-text="Couldn't publish to Power BI error.":::
 
 As stated in the error message, to resolve this issue, either delete or rename the existing dataset. Also be sure to republish any apps that are dependent on the report. If necessary, downstream users should also be informed to update any bookmarks with the new report address to ensure they access the latest report.  
+
+## Workspace/server alias
+
+Unlike Azure Analysis Services, server name [aliases](/azure/analysis-services/analysis-services-server-alias) **are not supported** for Power BI Premium workspaces. 
+
+## Dataset refresh through the XMLA endpoint
+
+Last refresh date and time is shown in a number of places in Power BI such as Refreshed columns in reports and lists, Dataset details, Dataset settings, and Dataset refresh history. Currently, refresh date and times shown in Power BI **do not** include refresh operations performed through the XMLA endpoint by using TMSL/TOM, SSMS, or third-party tools.
 
 ## See also
 

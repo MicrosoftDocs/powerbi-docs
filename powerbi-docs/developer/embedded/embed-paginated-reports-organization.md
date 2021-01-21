@@ -205,7 +205,7 @@ For embedding with a guest, use the URL - *`https://login.microsoftonline.com/re
 In this tutorial, you learned how to embed Power BI paginated reports into an application by using your Power BI organization account. 
 
 > [!div class="nextstepaction"]
-> [Embed from apps](embed-from-apps.md)
+> [Embed from apps](./index.yml)
 
 > [!div class="nextstepaction"]
 >[Embed Power BI content for your customers](embed-sample-for-customers.md)

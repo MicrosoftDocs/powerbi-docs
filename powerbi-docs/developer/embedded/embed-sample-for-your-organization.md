@@ -206,11 +206,11 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
 ### Run the sample app
 
-Run the project by selecting the appropriate option:
+1. Run the project by selecting the appropriate option:
 
-* If you're using **Visual Studio**, select **IIS Express** (play).
+    * If you're using **Visual Studio**, select **IIS Express** (play).
 
-* If you're using **Visual Studio Code**, select **Run > Start Debugging**.
+    * If you're using **Visual Studio Code**, select **Run > Start Debugging**.
 
 [!INCLUDE[The embedded application sample app interface](../../includes/embed-tutorial-org-sample-app.md)]
 

@@ -31,7 +31,6 @@ Power BI is a software-as-a-service analytics solution that gives organizations 
 
 Microsoft developed Power BI Embedded for ISVs wanting to embed visuals into their applications to help their customers make analytic decisions. This spares ISVs from having to build their own analytics' solution themselves. [Embedded analytics](embedding.md) enables business users to access business data and execute queries against it to generate insights within the application.
 
-
 ### What is the difference between Power BI Premium and Power BI Embedded?
 
 Power BI Premium is capacity geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers. Power BI Premium helps your organization make decisions. Power BI Premium is a SaaS product that allows users to consume content through mobile apps, internally developed apps, or at the Power BI portal.
