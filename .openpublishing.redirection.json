@@ -1926,9 +1926,9 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/service-create-workspaces.md",
+            "source_path": "powerbi-docs/collaborate-share/service-workspaces-new-look.md",
             "redirect_url": "/power-bi/collaborate-share/service-create-workspaces",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-embed-report-microsoft-teams.md",
@@ -3839,6 +3839,11 @@
             "source_path": "powerbi-docs/developer/embedded/power-bi-embedded-generation-2.md",
             "redirect_url": "/power-bi/admin/service-premium-what-is",
             "redirect_document_id": false
-        }                                                 
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/azure-pbie-diag-logs.md",
+            "redirect_url": "/power-bi/developer/embedded/monitor-power-bi-embedded",
+            "redirect_document_id": false
+        }                                                         
     ]
 }
