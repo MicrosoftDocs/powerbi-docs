@@ -12,6 +12,9 @@ ms.date: 10/24/2018
 # Browser support for Power BI Report Server
 Learn about what browser versions are supported for managing and viewing Power BI Report Server and the Report Viewer Controls.
 
+> [!NOTE]
+> The Microsoft Edge Legacy browser won’t be supported beginning 3/9/21, and Microsoft Internet Explorer 11 won’t be supported beginning 8/17/21.
+
 ## Browser requirements for the web portal
 The following is the current list of browsers supported for the web portal.
 
