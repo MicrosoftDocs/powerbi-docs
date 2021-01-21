@@ -1926,11 +1926,6 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/service-create-the-new-workspaces.md",
-            "redirect_url": "/power-bi/collaborate-share/service-create-the-new-workspaces",
-            "redirect_document_id": true
-        },
-        {
             "source_path": "powerbi-docs/collaborate-share/service-workspaces-new-look.md",
             "redirect_url": "/power-bi/collaborate-share/service-create-workspaces",
             "redirect_document_id": false
