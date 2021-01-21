@@ -16,7 +16,7 @@ Power BI Embedded recently released a new version of Power BI Embedded, **Power 
 
 All of the Power BI Embedded Gen 1 capabilities such as pausing and resuming the capacity, are preserved in Gen 2. In addition, the Gen 2 capacity resource provides the following updates and improved experience:
 
-* **Enhanced performance** - Better performance on any capacity size, anytime. BI analysis operations run up to 16 times faster on Embedded Gen2. Operations will always perform at top speed and won't slow down when the load on the capacity approaches the capacity limits.
+* **Enhanced performance** - Better performance on any capacity size, anytime. Operations will always perform at top speed and won't slow down when the load on the capacity approaches the capacity limits.
 
 * **Greater scale** - Including the following enhancements:
 
