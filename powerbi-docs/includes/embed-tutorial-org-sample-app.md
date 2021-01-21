@@ -9,8 +9,8 @@ ms.date: 13/09/2020
 ms.custom: include file
 ---
 
-5. Sign into the embedding sample application.
+2. Sign into the embedding sample application. 
 
-6. When the embedding sample application loads, select the Power BI content you want to embed and then select **Embed**.
+3. When the embedding sample application loads, select the Power BI content you want to embed and then select **Embed**.
 
     :::image type="content" source="media/embed-sample-for-your-organization/app-execution.png" alt-text="Screenshot showing the Power BI embedding sample app.":::
