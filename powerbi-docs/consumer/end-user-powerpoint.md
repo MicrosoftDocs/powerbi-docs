@@ -32,8 +32,6 @@ You can also copy one visual at a time from the Power BI service and paste it in
 ## Export your Power BI report to PowerPoint
 In the **Power BI service**, select a report to display it on the canvas. You can also select a report from **Home**, **Apps**, or any other container from the nav pane.
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
-
 When the report you want to export to PowerPoint is displayed on the canvas, select **File** > **Export to PowerPoint** from the menu bar.
 
 ![Select Export from the menu bar](media/end-user-powerpoint/power-bi-export.png)
