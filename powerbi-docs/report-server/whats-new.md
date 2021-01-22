@@ -18,20 +18,19 @@ Download [Power BI Report Server and Power BI Desktop optimized for Power BI Rep
 
 ## January 2021
 
-What follows is a complete list of new and updated features. For details, see the [Power BI Report Server blog post for January 2021](https://powerbi.microsoft.com/blog/power-bi-report-server-october-2020-feature-summary/).
+What follows is a list of new and updated features. For details, see the [Power BI Report Server blog post for January 2021](https://powerbi.microsoft.com/blog/power-bi-report-server-october-2020-feature-summary/).
 
 ### Power BI Desktop optimized for Power BI Report Server
 
 Here are some highlights of new features.
 
-**Reports**
+**Power BI reports**
 
 - Apply all filters is now generally available
 - Visual Zoom Slider
 - Certificate revocation check for web connections
 - Selection pane in the mobile layout view
 - ArcGIS Maps support
-- New connection metadata format (preview)
 
 **Data connectivity**
 
@@ -40,9 +39,11 @@ Here are some highlights of new features.
 
 ### New connection metadata format (preview)
 
-We've updated the way that connection metadata is stored in the .pbix file format. This update is part of a long-term journey to make .pbix files more programmatically accessible and editable. We've already enabled the change in the version of Power BI Desktop that releases monthly in line with the Power BI service. We’re previewing the changes in this release of Power BI Desktop for Report Server starting this month.
+We've updated the way that connection metadata is stored in the .pbix file format. This update is part of a long-term journey to make .pbix files more programmatically accessible and editable. We've already enabled the change in the version of Power BI Desktop that releases monthly in line with the Power BI service. We're previewing the changes in this release of Power BI Desktop for Report Server, starting this month.
 
-We are excited to preview the enhanced metadata format, previously introduced for Power BI Service, for Power BI Report Server and Power BI Desktop for Report Server. Starting with this release you will see the following notification prompting you to upgrade to the enhanced format:
+Starting with this release you'll see the following notification prompting you to turn on the preview and upgrade to the enhanced format:
+
+"Coming soon--turn on the enhanced metadata format preview to get better performance and security updates in Power BI."
 
 Note the following:
 
@@ -50,27 +51,31 @@ Note the following:
 - Power BI Desktop for Report Server will automatically upgrade an existing dataset to the enhanced format for you. We recommend not overwriting existing reports on Report Server with this upgraded version, in case you want to revert back to the previous format.
 - Joining this preview is optional, although we encourage you to try it out and give us your feedback! We aim to make the enhanced format generally available as the only option in the next release of Report Server.
  
-If you want to disable this preview as an administrator, set the following DWORD value to 0 in the registry: AllowV3Models in either HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop SSRS or HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop SSRS.
-
-Either of these registry keys will force V3 off and hide the preview feature check box:
+If you want to disable this preview as an administrator, either of these registry keys will force V3 off and hide the preview feature check box:
 
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop SSRS]
 "AllowV3Models"=dword:00000000
 
-
 [HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop SSRS]
 "AllowV3Models"=dword:00000000
 
-
-[Using enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md)
+See [Using enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md) for more information.
 
 ### Power BI Report Server
 
-**Internet Explorer deprecation**
+**Browser support deprecation**
+
+If you're using Edge Legacy or Internet Explorer 11, it's time to upgrade your browser. Support for the Edge Legacy browser ends beginning March 9, 2021. Support for Internet Explorer 11 ends beginning August 17, 2021. 
 
 You'll see a warning in the Power BI Report Server web portal that Internet Explorer 11 is being deprecated. Time to upgrade! See [Browser support for Power BI Report Server](browser-support.md) for details.
+
+**New product icon**
+
+Power BI Report Server has a new product icon, in keeping with the new icons rolling out across all Microsoft products.
+
+:::image type="content" source="media/whats-new/power-bi-report-server-new-logo.png" alt-text="Power BI Report Server new logo.":::
 
 ## October 2020
 
