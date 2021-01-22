@@ -126,7 +126,7 @@ What can make access tokens confusing is getting the correct access token for th
 - For Azure SQL, the resource is https://database.windows.net
 - For Dataverse, the resource is the https:// address for your environment. Example https://contoso.crm.dynamics.com
 
-Access token API [here](https://docs.microsoft.com/en-us/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenasync?view=azure-dotnet)
+Access token API [here](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenasync?view=azure-dotnet)
 
 Here is an example for supplying an effective user name with an access token.
 
