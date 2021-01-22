@@ -90,6 +90,7 @@ If you're using integrated security with DirectQuery, then your users may notice
 
 Report authors don't have access to view the report data in Power BI Report Server until they've assigned themselves roles accordingly after uploading the report. 
 
+Role assignments through group memberships are only supported when the Power BI Report Server is configured to run with NTLM or Kerberos authentication. Servers running with Custom authentication or Windows Basic need explicitly users assigned to roles.
  
 
 ## FAQ 
