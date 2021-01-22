@@ -16,18 +16,25 @@ LocalizationGroup: Visualizations
 
 Small multiples, or trellising, splits a visual into multiple versions of itself, presented side-by-side, with its data partitioned across these versions by a chosen dimension. For example, a small multiple could split a “sales by category” column chart across product lines or regions. In this preview, small multiples have a small set of capabilities, with more coming in later releases.
 
+:::image type="content" source="media/power-bi-visualization-small-multiples/small-mulitple-sales-category-region.png" alt-text="Screenshot of small multiples for category and region":::
+
 ## Enable the preview feature
 
 On the **File** menu, select **Options and settings** > **Options** > **Preview features**, and select the **Small multiples** check box.
 
-:::image type="content" source="media/power-bi-visualization-small-multiples/small-mulitple-sales-category-region.png" alt-text="Screenshot of small multiples for category and region":::
+:::image type="content" source="media/power-bi-visualization-small-multiples/small-multiple-enable-preview.png" alt-text="Enable the preview for small multiples.":::
 
 Restart Power BI Desktop, and you're ready to try small multiples.
 
-b. Creating small multiples
-Currently, you can create small multiples on your bar/column, line, and area charts. To get started, create one of the above visuals and choose a field along which you would like to partition its data. Drag that field into the “small multiples” well in the Fields pane. You will see your chart split into a 2×2 grid, where the data has been divided along your chosen dimension. The grid should be filled with the small multiples charts, sorted by the sort order of the chosen dimension, from left-to-right, then top-to-bottom.
+## Create small multiples
 
+Currently, you can create small multiples on bar, column, line, and area charts. 
 
+To get started, create one of the above visuals and 
+Choose a field along which you'd like to partition its data. Drag that field into the **Small multiples** well in the Fields section of the Visualizations pane. 
+Your chart splits into a 2×2 grid, with the data divided along your chosen dimension. The grid should be filled with the small multiples charts, sorted by the sort order of the chosen dimension, from left-to-right, then top-to-bottom.
+
+:::image type="content" source="media/power-bi-visualization-small-multiples/small-multiple-two-by-two-grid.png" alt-text="Small multiples in a two-by-two grid":::
 
 You’ll see that the axes are synchronized, with one Y axis at the left of each row and one X axis at the bottom of each column.
 
