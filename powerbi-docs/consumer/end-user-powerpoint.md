@@ -95,7 +95,7 @@ There are a few considerations and limitations to keep in mind when you work wit
 
 * Some reports cannot be exported. These include:
     - If you share a dashboard with someone outside of your organization, and thereby, a user who isn't in your Power BI tenant, that user can't export the shared dashboard's associated reports to PowerPoint. For example, if you're aaron@contoso.com, you can share with david@cohowinery.com. But david@cohowinery.com can't export the associated reports to PowerPoint.
-    - Reports with more than 50 report pages.
+    - Reports with more than 50 report pages. Paginated reports don't have this limitation. See [Print a paginated report](end-user-paginated-report.md#interact-with-a-paginated-report) for details.
     - Reports larger than 500 MB when exported. 
     - Reports being exported to older versions of PowerPoint.
     - Reports that take longer than an hour to process. 
