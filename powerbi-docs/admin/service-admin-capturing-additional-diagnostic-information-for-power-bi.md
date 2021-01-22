@@ -47,7 +47,7 @@ Google Chrome and Microsoft Edge (Chromium) are both based on the [Chromium open
      
 2. Now, you'll reproduce the problem that you were having in the Power BI service. To start, in **Developer tools** select the **Network** tab. Select **Record network log**. Refresh the browser page. Reproduce the steps that resulted in the problem you need help with.
 
-     :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browsertrace-recordnetworklog.png" alt-text="Developer tools with network tab and preserve log selected." :::
+     :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browsertrace-recordnetworklog.png" alt-text="Developer tools with network tab and record network log selected." :::
 
     As you reproduce the problem, you'll see output similar to the following image in the **Developer tools** window.
 
