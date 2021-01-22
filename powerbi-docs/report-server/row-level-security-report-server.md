@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 01/22/2019
+ms.date: 01/22/2021
 ---
 
 # Row-level security (RLS) in Power BI Report Server
@@ -90,6 +90,7 @@ If you're using integrated security with DirectQuery, then your users may notice
 
 Report authors don't have access to view the report data in Power BI Report Server until they've assigned themselves roles accordingly after uploading the report. 
 
+Role assignments through group memberships are only supported when the Power BI Report Server is configured to run with NTLM or Kerberos authentication. Servers running with Custom authentication or Windows Basic need users explicitly assigned to roles.
  
 
 ## FAQ 
