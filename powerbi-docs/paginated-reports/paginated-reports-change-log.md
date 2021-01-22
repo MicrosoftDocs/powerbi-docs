@@ -16,15 +16,15 @@ ms.date: 01/22/2021
 
 [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
 
-Learn about new items, bug fixes, and known issues for each released build of Power BI Report Builder and paginated reports, starting from September 2020. We update this article with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/desktop-latest-update.md).
+Learn about new items, bug fixes, and known issues for each release of Power BI Report Builder, starting with September 2020. We update this article with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/desktop-latest-update.md).
 
 ## January 2021 
 
-Version TBD, released: TBD 
+Version TBD, released TBD 
 
 ### Bug fixes 
 
-- Fixed the name Common Data Service to Dataverse. 
+- Changed the name Common Data Service to Dataverse. 
 - [TBD] other bug fixes 
 
 ### Features
@@ -43,18 +43,18 @@ See the January 2021 Power BI Report Builder blog post for the complete list of 
 
 ## September 2020 
 
-Version 15.6.01340.0002, released: 9/3/2020 
+Version 15.6.01340.0002, released September 3, 2020 
 
 ### Bug fixes
 
-- Fixed tracing to better understand issues related to PBI Service integration as well as client side. 
+- Fixed tracing to better understand issues related to PBI service integration, as well as client side. 
 - Fixed the connection string to not have an affinity to a cluster. 
 
 ### Features
 
-- Enabled new authentication type support for Azure SQL DB and Azure Synapse using Azure AD Multi-Factor Authentication to align with Power Bi Service 
-- Enabled connectivity to Dataverse through the SQL data connection supporting the use of native relational query designer for SQL. 
-- Enabled auto expansion of parameter drop down to support even the largest item in the list. 
+- Enabled new authentication type support for Azure SQL DB and Azure Synapse. It uses Azure AD Multi-Factor Authentication to align with the Power BI service.
+- Enabled connectivity to Dataverse through the SQL data connection. This connectivity supports the use of the native relational query designer for SQL. 
+- Enabled auto expansion of parameter drop-down to support even the largest item in the list. 
 - Enabled better support for multi-value parameter for DAX. 
 
 ### Other 
