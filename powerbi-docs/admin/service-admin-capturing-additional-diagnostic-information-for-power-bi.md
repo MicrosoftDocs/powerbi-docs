@@ -12,7 +12,7 @@ ms.custom: seodec18
 LocalizationGroup: Troubleshooting
 ---
 
-# Capture diagnostic information for Support from the Power BI service
+# Capture diagnostic information from the Power BI service
 
 Before you contact Microsoft Support for help with a problem you're having with the Power BI service, you can collect files that will help us solve your problem. We recommend you get a browser trace from your browser session. A browser trace is a diagnostic file that can provide important details about what is happening in the Power BI service when the problem occurs.
 
