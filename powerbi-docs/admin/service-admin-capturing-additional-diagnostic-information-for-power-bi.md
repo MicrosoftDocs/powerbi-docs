@@ -45,7 +45,12 @@ Google Chrome and Microsoft Edge (Chromium) are both based on the [Chromium open
    
    :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browsertrace-stoprecording.png" alt-text="Developer tools with network tab  and stop and clear recording options selected." :::
      
-2. Now, you'll reproduce the problem that you were having in the Power BI service. To start, in **Developer tools** select the **Network** tab. Select **Record network log**. Refresh the browser page. Reproduce the steps that resulted in the problem you need help with.
+2. Now, you'll reproduce the problem that you were having in the Power BI service. To start, in **Developer tools** select the **Network** tab. Select **Record network log**.
+
+    > [!IMPORTANT]
+    >Refresh the browser page in the Power BI service before you start to reproduce the problem so that traces are correctly captured.
+
+   Reproduce the steps that resulted in the problem you need help with.
 
      :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browsertrace-recordnetworklog.png" alt-text="Developer tools with network tab and record network log selected." :::
 
@@ -96,7 +101,11 @@ The following steps show how to use the developer tools in Apple Safari. For mor
     :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/safari-clearnetworkitems.png" alt-text="Web Inspector menu with Network and Clear Network Items selected." :::
 
 
-4. Now you're ready to reproduce the problem. In the Power BI service, refresh the page, then go through the steps to reproduce the issue you're having. As you reproduce the problem, you'll see output similar to the following image in the **Network** window.
+4. Now you're ready to reproduce the problem. 
+    > [!IMPORTANT]
+    >Refresh the browser page in the Power BI service before you start to reproduce the problem so that traces are correctly captured.
+
+    Go through the steps to reproduce the issue you're having. As you reproduce the problem, you'll see output similar to the following image in the **Network** window.
 
     :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/safari-sessionoutput.png" alt-text="Network window displaying sample output." :::
 
@@ -130,7 +139,11 @@ The following steps show how to use the developer tools in Firefox. For more inf
    
    :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browsertrace-stoprecording.png" alt-text="Developer tools with network tab  and stop and clear recording options selected." :::
      
-2. Now you're ready to reproduce the problem. In the Power BI service, refresh the page, then go through the steps to reproduce the issue you're having.
+2. Now you're ready to reproduce the problem. 
+    > [!IMPORTANT]
+    >Refresh the browser page in the Power BI service before you start to reproduce the problem so that traces are correctly captured.
+ 
+    Go through the steps to reproduce the issue you're having.
     
 3. After reproducing the problem behavior, you need to save the log files and attach them to your support request.
     1. To export the network log, select **Network** > **HAR Export/Import** then **Save All as HAR**.
