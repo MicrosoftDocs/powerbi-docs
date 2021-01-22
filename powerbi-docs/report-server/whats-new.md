@@ -40,8 +40,17 @@ Here are some highlights of new features.
 
 ### New connection metadata format (preview)
 
-We've updated the way that connection metadata is stored in the .pbix file format. This update is part of a long-term journey to make .pbix files more programmatically accessible and editable. We've already enabled the change in the monthly
-V3 enhanced metadata in Power BI Report Server (preview)
+We've updated the way that connection metadata is stored in the .pbix file format. This update is part of a long-term journey to make .pbix files more programmatically accessible and editable. We've already enabled the change in the version of Power BI Desktop that releases monthly in line with the Power BI service. We’re previewing the changes in this release of Power BI Desktop for Report Server starting this month.
+
+We are excited to preview the enhanced metadata format, previously introduced for Power BI Service, for Power BI Report Server and Power BI Desktop for Report Server. Starting with this release you will see the following notification prompting you to upgrade to the enhanced format:
+
+Note the following:
+
+- Existing datasets will continue to work, even without upgrading. They will get upgraded when the enhanced format is made generally available.
+- Power BI Desktop for Report Server will automatically upgrade an existing dataset to the enhanced format for you. We recommend not overwriting existing reports on Report Server with this upgraded version, in case you want to revert back to the previous format.
+- Joining this preview is optional, although we encourage you to try it out and give us your feedback! We aim to make the enhanced format generally available as the only option in the next release of Report Server.
+ 
+If you want to disable this preview as an administrator, set the following DWORD value to 0 in the registry: AllowV3Models in either HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop SSRS or HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop SSRS.
 
 Either of these registry keys will force V3 off and hide the preview feature check box:
 
