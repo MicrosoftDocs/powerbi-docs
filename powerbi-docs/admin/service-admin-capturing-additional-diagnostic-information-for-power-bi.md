@@ -1,6 +1,6 @@
 ---
 title: Capture diagnostic information for support
-description: Instructions for manually collecting additional diagnostic information from the Power BI service. Send this info to support to help them troubleshoot.
+description: Instructions for manually collecting diagnostic information from the Power BI service. Send this info to support to help them troubleshoot.
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
@@ -14,11 +14,11 @@ LocalizationGroup: Troubleshooting
 
 # Capture diagnostic information for Support from the Power BI service
 
-If you need to contact Microsoft Support for help with a problem you're having with the Power BI service, we recommend you first collect some additional information from your browser session. A browser trace is a diagnostic file that can provide important details about what is happening in the Power BI service when the problem occurs.
+Before you contact Microsoft Support for help with a problem you're having with the Power BI service, you can collect files that will help us solve your problem. We recommend you get a browser trace from your browser session. A browser trace is a diagnostic file that can provide important details about what is happening in the Power BI service when the problem occurs.
 
-Power BI admins can use the **Help + support** experience in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) to get self-help solutions and to contact Support. The diagnostic files that you collect using the steps below can be attached to your support request to help with troubleshooting. For additional support options, see [Power BI support options](service-support-options.md).
+Power BI admins can use the **Help + support** experience in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) to get self-help solutions and to contact Support. The diagnostic files that you collect using the steps below can be attached to your support request to help with troubleshooting. For more support options, see [Power BI support options](service-support-options.md).
 
-To collect a browser trace and other session information to send to Support, follow the steps below that are specific to the browser you use.
+To collect a browser trace and other session information, follow the steps below for the browser you use.
 
 ## Collect a browser trace
 
@@ -27,10 +27,10 @@ To collect a browser trace and other session information to send to Support, fol
 
 #### [Google Chrome or Microsoft Edge](#tab/google-chrome-or-microsoft-edge)
 
-Google Chrome and Microsoft Edge (Chromium) are both based on the [Chromium open source project](https://www.chromium.org/Home). The following steps show how to use the developer tools, which are very similar in the two browsers. For more information, see [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) and [Microsoft Edge (Chromium) Developer Tools](/microsoft-edge/devtools-guide-chromium).
+Google Chrome and Microsoft Edge (Chromium) are both based on the [Chromium open source project](https://www.chromium.org/Home). The following steps show how to use the developer tools, which are similar in the two browsers. For more information, see [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) and [Microsoft Edge (Chromium) Developer Tools](/microsoft-edge/devtools-guide-chromium).
 
 1. After signing in, press F12 on your keyboard. Or, in Microsoft Edge select **Settings and more (...)** > **More tools** > **Developer tools**. In Google Chrome, select **Customize and control Google Chrome** :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/chromium-icon-settings.png" alt-text="Google Chrome settings menu." border="false"::: > **More tools** > **Developer tools**.
-1. Prepare to collect the browser trace by setting trace options. You will also stop and clear any information that was collected before you start to reproduce the problem. By default, the browser keeps trace information only for the page that's currently loaded. Follow these steps to set up the browser to keep all trace information, even if your repro goes to more than one page:
+1. Prepare to collect the browser trace by setting trace options. You'll also stop and clear any information that was collected before you start to reproduce the problem. By default, the browser keeps trace information only for the page that's currently loaded. Follow these steps to set up the browser to keep all trace information, even if your repro goes to more than one page:
     1. In the **Developer tools** window, select the **Network** tab. Then, select **Preserve log**.
     
        :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browsertrace-preservelog.png" alt-text="Developer tools with network tab and preserve log selected." :::
@@ -49,7 +49,7 @@ Google Chrome and Microsoft Edge (Chromium) are both based on the [Chromium open
 
      :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browsertrace-recordnetworklog.png" alt-text="Developer tools with network tab and preserve log selected." :::
 
-    As you reproduce the problem, you will see output similar to the following image in the **Developer tools** window.
+    As you reproduce the problem, you'll see output similar to the following image in the **Developer tools** window.
 
     :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browsertrace-output.png" alt-text="Developer tools with network tab displaying session output." :::
     
@@ -145,7 +145,7 @@ The following steps show how to use the developer tools in Firefox. For more inf
 
 ---
 
-After you have collected the diagnostic files, attach them to your support request to help the support engineer solve your problem. The HAR file will contain all the information about network requests between the browser window and the Power BI service, including:
+After you collect the diagnostic files, attach them to your support request to help the support engineer solve your problem. The HAR file will contain all the information about network requests between the browser window and the Power BI service, including:
 
 * The activity IDs for each request.
 
