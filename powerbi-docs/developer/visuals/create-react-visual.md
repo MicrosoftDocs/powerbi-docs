@@ -19,7 +19,7 @@ In this tutorial, you'll develop a Power BI visual using [React](https://reactjs
 In this tutorial, you learn how to:
 > [!div class="checklist"]
 > * Create a development project for your visual.
-> * Develop your visual React.
+> * Develop your visual using React.
 > * Configure your visual to process data.
 > * Configure your visual to adapt to size changes.
 > * Configure adaptive color and border settings for your visual.
@@ -67,7 +67,7 @@ In this section, you'll learn how to set up React for your Power BI visual proje
 
 Open PowerShell and stop the visual from running by entering Ctrl+C. If prompted to terminate the batch job, enter Y, and press *Enter*.
 
-### Install dependencies
+### Install React
 
 To install the required React dependencies, open PowerShell in your *ReactCircleCard* folder, and run the following command:
 
@@ -75,9 +75,9 @@ To install the required React dependencies, open PowerShell in your *ReactCircle
 npm i react react-dom
 ```
 
-### Install React
+### Install React type definitions
 
-To install React 16 and the corresponding versions of `react-dom`, open PowerShell in your *reactCircleCard* folder and run the following command:
+To install type definitions for React, open PowerShell in your *reactCircleCard* folder and run the following command:
 
 ```powershell
 npm i @types/react @types/react-dom
