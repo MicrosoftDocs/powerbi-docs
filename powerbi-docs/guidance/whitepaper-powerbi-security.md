@@ -82,7 +82,7 @@ Power BI uses two primary repositories for storing and managing data: data that 
 
 For example, when a user imports an Excel workbook into the Power BI service, an in-memory Analysis Services tabular database is created, and the data is stored in-memory for up to one hour (or until memory pressure occurs on the system). The data is also sent to **Azure Blob** storage.
 
-Metadata about a user's Power BI subscription, such as dashboards, reports, recent data sources, workspaces, organizational information, tenant information, and other metadata about the system is stored and updated in **Azure SQL Database**. All information stored in Azure SQL Database is fully encrypted using [Azure SQL's Transparent Data Encryption](/azure/sql-database/transparent-data-encryption-azure-sql) (TDE) technology. All data that is stored in Azure Blob storage is also encrypted. More information about the process of loading, storing, and moving data is described in the **Data Storage and Movement** section.
+Metadata about a user's Power BI subscription, such as dashboards, reports, recent data sources, workspaces, organizational information, tenant information, and other metadata about the system is stored and updated in **Azure SQL Database**. All information stored in Azure SQL Database is fully encrypted using [Azure SQL's Transparent Data Encryption](/azure/sql-database/transparent-data-encryption-azure-sql) (TDE) technology. All data that is stored in Azure Blob Storage is also encrypted. More information about the process of loading, storing, and moving data is described in the **Data Storage and Movement** section.
 
 ## Tenant Creation
 
@@ -102,7 +102,7 @@ There are multiple technical details that should be evaluated in the context of 
 
 - A remote query execution layer is hosted in the remote capacity region, to ensure that the data model, caches, and most data processing remain in the remote capacity region. There are some exceptions, as detailed on the [multi-geo for Power BI Premium](../admin/service-admin-premium-multi-geo.md) article.
 - A cached query text and corresponding result stored in a remote region will stay in that region at rest, however other data in transit may go back and forth between multiple geographies.
-- PBIX or XLSX files that are published (uploaded) to a multi-geo capacity of the Power BI service may result in a copy being temporarily stored in Azure Blob storage in Power BI's tenant region. In such circumstances, the data is encrypted using Azure Storage Service Encryption (SSE), and the copy is scheduled for garbage collection as soon as the file content processing and transfer to the remote region is completed. 
+- PBIX or XLSX files that are published (uploaded) to a multi-geo capacity of the Power BI service may result in a copy being temporarily stored in Azure Blob Storage in Power BI's tenant region. In such circumstances, the data is encrypted using Azure Storage Service Encryption (SSE), and the copy is scheduled for garbage collection as soon as the file content processing and transfer to the remote region is completed. 
 - When moving data across regions in a multi-geo environment, the instance of the data in the source region will be deleted within 7-30 days. 
 
 ### Datacenters and Locales
@@ -200,7 +200,7 @@ For cloud-based data sources, the Data Movement Role encrypts encryption keys us
 
     a. For Analysis Services on-premises nothing is stored in the service except for a reference to that database stored encrypted in Azure SQL.
 
-    b. All other metadata for ETL, DirectQuery, and Push Data is encrypted and stored in Azure Blob storage.
+    b. All other metadata for ETL, DirectQuery, and Push Data is encrypted and stored in Azure Blob Storage.
 
 1. Credentials to the original data sources
   
@@ -221,19 +221,19 @@ For cloud-based data sources, the Data Movement Role encrypts encryption keys us
 
     a. Analysis Services on-premises, and DirectQuery – nothing is stored in the Power BI Service.
 
-    b. ETL – encrypted in Azure Blob storage, but all data currently in Azure Blob storage of the Power BI service uses [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption), also known as server-side encryption. Multi-geo uses SSE as well.
+    b. ETL – encrypted in Azure Blob Storage, but all data currently in Azure Blob Storage of the Power BI service uses [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption), also known as server-side encryption. Multi-geo uses SSE as well.
 
-    c. Push data v1 – stored encrypted in Azure Blob storage, but all data currently in Azure Blob storage in the Power BI service uses [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption), also known as server-side encryption. Multi-geo uses SSE as well. Push data v1 were discontinued beginning 2016. 
+    c. Push data v1 – stored encrypted in Azure Blob Storage, but all data currently in Azure Blob Storage in the Power BI service uses [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption), also known as server-side encryption. Multi-geo uses SSE as well. Push data v1 were discontinued beginning 2016. 
 
     d. Push data v2 – stored encrypted in Azure SQL.
 
-Power BI uses the client-side encryption approach, using cipher block chaining (CBC) mode with advanced encryption standard (AES), to encrypt its Azure Blob storage. You can [learn more about client-side encryption](/azure/storage/common/storage-client-side-encryption).
+Power BI uses the client-side encryption approach, using cipher block chaining (CBC) mode with advanced encryption standard (AES), to encrypt its Azure Blob Storage. You can [learn more about client-side encryption](/azure/storage/common/storage-client-side-encryption).
 
 Power BI provides data integrity monitoring in the following ways:
 
 * For data at rest in Azure SQL, Power BI uses dbcc, TDE, and constant page checksum as part of the native offerings of SQL.
 
-* For data at rest in Azure Blob storage, Power BI uses client-side encryption and HTTPS to transfer data into storage which includes integrity checks during the retrieval of the data. You can [learn more about Azure Blob storage security](/azure/storage/blobs/security-recommendations).
+* For data at rest in Azure Blob Storage, Power BI uses client-side encryption and HTTPS to transfer data into storage which includes integrity checks during the retrieval of the data. You can [learn more about Azure Blob Storage security](/azure/storage/blobs/security-recommendations).
 
 #### Reports
 
@@ -251,7 +251,7 @@ Power BI provides data integrity monitoring in the following ways:
 
     &ensp; &ensp; a. For reports created with Excel for Microsoft 365, nothing is stored.
 
-    &ensp; &ensp; b. For Power BI reports, the static data is stored and is encrypted in Azure Blob storage.
+    &ensp; &ensp; b. For Power BI reports, the static data is stored and is encrypted in Azure Blob Storage.
 
 3. Caches
 
@@ -262,13 +262,13 @@ Power BI provides data integrity monitoring in the following ways:
 
 4. Original Power BI Desktop (.pbix) or Excel (.xlsx) files published to Power BI
 
-    Sometimes a copy or a shadow copy of the .xlsx or .pbix files are stored in Power BI's Azure Blob storage, and when that occurs, the data is encrypted. All such reports stored in the Power BI service, in Azure Blob storage, use [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption), also known as server-side encryption. Multi-geo uses SSE as well.
+    Sometimes a copy or a shadow copy of the .xlsx or .pbix files are stored in Power BI's Azure Blob Storage, and when that occurs, the data is encrypted. All such reports stored in the Power BI service, in Azure Blob Storage, use [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption), also known as server-side encryption. Multi-geo uses SSE as well.
 
 #### Dashboards and Dashboard Tiles
 
 1. Caches – The data needed by the visuals on the dashboard is usually cached and stored in the Visual Data Cache described in the following section. Other tiles such as pinned visuals from Excel or SQL Server Reporting Services (SSRS) are stored in Azure Blob as images, and are also encrypted.
 
-2. Static data – that includes artifacts such as background images and Power BI visuals that are stored, encrypted, in Azure Blob storage.
+2. Static data – that includes artifacts such as background images and Power BI visuals that are stored, encrypted, in Azure Blob Storage.
 
 Regardless of the encryption method used, Microsoft manages the key encryption on customers' behalf.
 
