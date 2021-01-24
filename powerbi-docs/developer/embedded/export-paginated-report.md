@@ -124,8 +124,8 @@ In Power BI, you have the option to set OAuth with SSO. When you do, the credent
 
 What can make access tokens confusing is getting the correct access token for the resource that you want to access.
 
-- For Azure SQL, the resource is `https://database.windows.net`
-- For Dataverse, the resource is the `https://` address for your environment. For example `https://contoso.crm.dynamics.com`
+- For Azure SQL, the resource is `https://database.windows.net`.
+- For Dataverse, the resource is the `https://` address for your environment. For example `https://contoso.crm.dynamics.com`.
 
 Access the token API using the [AuthenticationContext.AcquireTokenAsync](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenasync) method.
 
