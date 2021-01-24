@@ -27,5 +27,5 @@ Power BI supports these browsers on all platforms where they're available:
 
 ## Next steps
 * [What is Power BI?](power-bi-overview.md)
-* Try asking the [Power BI Community](https://community.powerbi.com/)
+* Ask the [Power BI Community](https://community.powerbi.com/)
 * Still have an issue? Visit the [Power BI support page](https://powerbi.microsoft.com/support/)
