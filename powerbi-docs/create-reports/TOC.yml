@@ -13,6 +13,8 @@
     items: 
     - name: "Power BI Desktop: From Excel to report"
       href: desktop-excel-stunning-report.md
+    - name: "Power BI Desktop: Dimensional model to report"
+      href: desktop-dimensional-model-report.md
     - name: "Power BI service: From Excel to report"
       href: service-from-excel-to-stunning-report.md
     - name: "Online course: Paginated reports"
@@ -63,8 +65,6 @@
         href: power-bi-reports-filters-and-highlighting.md
       - name: "High-density line sampling"
         href: desktop-high-density-sampling.md
-      - name: "About Q&A visuals"
-        href: ../visuals/power-bi-visualization-q-and-a.md
       - name: "About accessibility"
         href: desktop-accessibility-overview.md     
       - name: Natural language Q&A
@@ -268,6 +268,8 @@
         href: ../visuals/power-bi-map-tips-and-tricks.md
       - name: "Customize x-axis and y-axis properties"
         href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
+      - name: "Anomaly detection"
+        href: ../visuals/power-bi-visualization-anomaly-detection.md
       - name: "Interact with ArcGIS maps in Power BI visuals"
         href: ../visuals/power-bi-visualizations-arcgis.md
       - name: "Basic area charts"
@@ -278,10 +280,6 @@
         href: ../visuals/power-bi-visualization-combo-chart.md
       - name: "Decomposition tree visuals"
         href: ../visuals/power-bi-visualization-decomposition-tree.md
-      - name: "Smart narratives"
-        href: ../visuals/power-bi-visualization-smart-narrative.md
-      - name: "Anomaly detection"
-        href: ../visuals/power-bi-visualization-anomaly-detection.md
       - name: "Doughnut charts"
         href: ../visuals/power-bi-visualization-doughnut-charts.md
       - name: "Filled maps (choropleths)"
@@ -312,6 +310,8 @@
         href: ../visuals/desktop-high-density-scatter-charts.md
       - name: "Shape Map visuals (preview)"
         href: ../visuals/desktop-shape-map.md
+      - name: "Smart narratives"
+        href: ../visuals/power-bi-visualization-smart-narrative.md
       - name: "Tables in reports and dashboards"
         href: ../visuals/power-bi-visualization-tables.md
       - name: "Treemaps"
@@ -320,7 +320,7 @@
         href: ../visuals/power-bi-visualization-waterfall-charts.md
     - name: Natural language Q&A
       items: 
-      - name: "Q&A visual"
+      - name: "Create a Q&A visual"
         href: ../visuals/power-bi-visualization-q-and-a.md
       - name: "Teach Q&A to understand"
         href: ../natural-language/q-and-a-tooling-teach-q-and-a.md

@@ -24,6 +24,7 @@ To access the Microsoft Sustainability Calculator, you’ll need the following i
 - Tenant ID
 - Access key
 - Enrollment number
+- Only Azure Administrator roles can authenticate and connect calculator to company data. (**Only for December 2020 preview version**)
 
 To find your company’s enrollment number:
 
@@ -159,7 +160,7 @@ Your emissions can be reported as part of your company's scope 3 indirect carbon
 
 **What can I do to reduce emissions further?**
 
-Being resource and cost efficient in Azure will reduce the environmental impact from your use of Azure. As an example, unused virtual machines are wasteful whether in the cloud or on-premises. Right-sizing virtual machines to improve compute utilization factors (CUF) decreases energy use per useful output, just as it does with physical servers. [Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices) gives you the tools to plan for, analyze and reduce your spending to maximize your cloud investment.
+Being resource and cost efficient in Azure will reduce the environmental impact from your use of Azure. As an example, unused virtual machines are wasteful whether in the cloud or on-premises. Right-sizing virtual machines to improve compute utilization factors (CUF) decreases energy use per useful output, just as it does with physical servers. [Azure Cost Management](/azure/cost-management-billing/costs/cost-mgt-best-practices) gives you the tools to plan for, analyze and reduce your spending to maximize your cloud investment.
 
 #### Methodology
 

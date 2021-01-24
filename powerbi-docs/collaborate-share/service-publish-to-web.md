@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 01/14/2021
 LocalizationGroup: Share your work
 ---
 
@@ -45,18 +45,19 @@ The following steps describe how to use **Publish to web**.
 
    ![Review the warning](media/service-publish-to-web/publish_to_web3_ga.png)
 
-5. A dialog appears with a link. Select the link to send it in email, or copy the HTML. You can embed it in code such as an iFrame, or paste it directly into a web page or blog.
+5. In the **Success** dialog, you see a preview of how the report will look. Select the **Size** and **Default page**. 
+
+    You can also add a **Placeholder** image, to make the web page load faster. With a placeholder image, people viewing your report on the web see a **View interactive content** button they can select to view the report itself. 
+
+    Make those changes first. Then copy the link to send it in email, or copy the HTML to paste into a website. You can embed it in code such as an iFrame, or paste it directly into a web page or blog.
 
    ![Success: a link and HTML](media/service-publish-to-web/publish_to_web4.png)
 
-6. If you previously created an embed code for a report and you select **Publish to web**, you won't see the dialogs in steps 2-4. Instead, the **Embed code** dialog appears:
+6. If you previously created an embed code for a report and you select **Publish to web**, you won't see the dialogs in steps 2-4. Instead, you see the **Embed code** dialog.
 
    ![Embed code dialog box](media/service-publish-to-web/publish_to_web5.png)
 
    You can only create one embed code for each report.
-
-If you make changes in the dialog, make sure to copy the updated URL or iFrame to use the updated settings in your page.
-
 
 ### Tips for view modes
 
@@ -123,7 +124,7 @@ A heavy usage experience can occur when a report receives too many queries in a 
 
 We recommend setting a placeholder image for your report. If heavy usage occurs, users see the placeholder image. 
 
-To help avoid the heavy usage experience, limit the number of distinct queries your report can generate and the frequency of data refresh.
+To help avoid the heavy usage experience, limit the number of distinct queries your report can generate and the frequency of data refresh. See the [Power BI optimization guide](../guidance/power-bi-optimization.md) for tips on streamlining your reports.
 
 ## Power BI visuals
 
@@ -183,7 +184,7 @@ You need to [find one of these people](/office365/admin/admin-overview/admin-ove
 - Reports using any Live Connection data source, including Analysis Services Tabular hosted on-premises, Analysis Services Multidimensional, and Azure Analysis Services.
 - Reports using a [shared dataset](../connect-data/service-datasets-across-workspaces.md) that is stored in a different workspace from the report.
 - [Shared and certified datasets](../connect-data/service-datasets-share.md).
-- Reports shared to you directly or through an organizational content pack.
+- Reports shared to you directly or through an app.
 - Reports in a workspace in which you aren't an edit member.
 - "R" and Python visuals aren't currently supported in **Publish to web** reports.
 - Exporting data from visuals in a report that has been published to the web.

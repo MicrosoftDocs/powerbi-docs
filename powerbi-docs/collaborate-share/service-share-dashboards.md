@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 06/26/2020
+ms.date: 01/04/2021
 LocalizationGroup: Share your work
 ---
 # Share Power BI dashboards and reports with coworkers and others
@@ -16,7 +16,7 @@ LocalizationGroup: Share your work
 
 When you share a dashboard or report, the people you share it with can view it and interact with it, but can't edit it. They see the same data that you see in the dashboard and reports and get access to the entire underlying dataset unless row-level security (RLS) is applied to the underlying dataset.  The coworkers you share with can also share with their coworkers, if you allow them to. The people outside your organization can view and interact with the dashboard or report, but can't share it. 
 
-![Share icon in a list of dashboards](media/service-share-dashboards/power-bi-share-new-look.png)
+![Share icon for a report](media/service-share-dashboards/power-bi-share-new-look.png)
 
 You can share dashboards and reports from many places in the Power BI service: Favorites, Recent, My Workspace. You can share from other workspaces, too, if you have the [Admin, Member, or Contributor role](service-new-workspaces.md#roles-in-the-new-workspaces) in the workspace. And you can share dashboards and reports in Shared with me, if the owner allows it. 
 

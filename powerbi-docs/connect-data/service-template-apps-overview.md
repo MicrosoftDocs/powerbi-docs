@@ -39,7 +39,12 @@ Power BI Template Apps allow Power BI Pro or Power BI Premium users to gain imme
     :::column-end:::
 :::row-end:::
 
+ > [!NOTE] 
+ > Marketplace apps aren't available for US government cloud instances. See [Power BI for US government customers](../admin/service-govus-overview.md) for more detail.
+
+
 ## Process
+
 The general process to develop and submit a template app involves several stages. Some stages can include more than one activity at the same time.
 
 

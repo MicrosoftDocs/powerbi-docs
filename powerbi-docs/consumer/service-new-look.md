@@ -65,5 +65,4 @@ Dashboards also have a simplified action bar. It's just like reports and apps, f
 ## Next steps
 
 - [Use the updated ribbon in Power BI Desktop](../create-reports/desktop-ribbon.md)
-- [Opt in to the workspace 'new look'](../collaborate-share/service-workspaces-new-look.md)
 - [Power BI for consumers](end-user-consumer.md)

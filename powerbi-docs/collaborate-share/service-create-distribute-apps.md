@@ -64,7 +64,7 @@ When the dashboards and reports in your workspace are ready, you choose which da
     
     >[!IMPORTANT]
     >If your app relies on datasets from other workspaces, it is your responsibility to ensure all app users have access to the underlying datasets.
-    >
+    >If the app or report are in the same workspace as the dataset, make sure you add the report associated with the  dataset to the app as well.
 
 6. You can install the app automatically for the recipients, if your Power BI admin has enabled this setting for you in the Power BI Admin Portal. Read more about [automatically installing an app](#automatically-install-apps-for-end-users) in this article.
 
@@ -201,7 +201,7 @@ Things to keep in mind about publishing apps:
 * The permissions page doesn't change permission on datasets in other workspaces. You do see a warning reminding you to grant access to those datasets independently. A best practice is to contact the dataset owner before starting to build your app to ensure it is OK to give all your app users access those datasets. 
 * You can have at most 100 users or groups in the access list for the app. However, you can give more than 100 users access to the app. To do so, use one or more user groups that contain all the desired users.
 * For the new workspace experience, if the user added to the app access list already has access to the app through the workspace, they will not be shown in the access list for the app.  
-* When using the new look for the Power BI service, the support site URL is shown in the item information card. Read more about the ['new look' in Power BI](../consumer/service-new-look.md).
+* The support site URL is shown in the item information card.
 * Apps have an option to allow users to share the app and the app's underlying datasets by using the share permission. For new apps, this option is off by default. We recommend turning this option off for your existing apps and updating permission on the underlying datasets. The option was enabled for existing apps because apps were initially designed to replace content packs, which had this behavior.
 * Apps can have a maximum of 200 dashboards. 
 

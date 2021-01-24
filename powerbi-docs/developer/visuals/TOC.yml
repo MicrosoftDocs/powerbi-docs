@@ -143,6 +143,6 @@
     - name: "Samples of Power BI visuals"
       href: samples.md
     - name: "Custom Visuals Git Repo"
-      href: https://go.microsoft.com/fwlink/?linkid=848277
+      href: https://github.com/PowerBi-Projects/PowerBI-visuals/
     - name: "Creating SSL certificate"
       href: create-ssl-certificate.md

@@ -86,7 +86,7 @@ Following are the steps to browse and select visuals from the online **AppSource
 
 If you create your own R visuals for use in your reports, you can share those visuals with the world by contributing your custom visual to the **Power BI visuals gallery**. Contributions are made through GitHub, and the process is outlined in the following location:
 
-* [Contributing to the R-powered Power BI visuals gallery](https://github.com/Microsoft/PowerBI-visuals#building-r-powered-custom-visual-corrplot)
+* [Contributing to the R-powered Power BI visuals gallery](https://github.com/PowerBi-Projects/PowerBI-visuals#building-r-powered-custom-visual-corrplot)
 
 ## Troubleshoot R-powered Power BI visuals
 

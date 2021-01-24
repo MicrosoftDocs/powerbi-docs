@@ -1,6 +1,6 @@
 ---
-title: Embed content in your Power BI embedded analytics application for your organization
-description: Learn how to integrate or embed, a report (Power BI or Paginated), dashboard, or tile into an application using the Power BI APIs for embedded analytics for your organization. Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
+title: Embed content in your Power BI embedded analytics application enabling better embedded BI insights for your organization
+description: Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
@@ -53,7 +53,7 @@ If you choose to set up the environment manually, you can continue below.
 
 >[!NOTE]
 >In your own application you'll need to navigate to *Authentication* and in the *Redirect URIs* field, insert the redirect address.
-To learn more about redirecting, see [Redirect URI (reply URL) restrictions and limitations](https://docs.microsoft.com/azure/active-directory/develop/reply-url).
+To learn more about redirecting, see [Redirect URI (reply URL) restrictions and limitations](/azure/active-directory/develop/reply-url).
 
 ## Set up your Power BI environment
 
@@ -425,7 +425,7 @@ Global admins or Power BI service administrators can turn the ability to use the
 In this tutorial, you learned how to embed Power BI content into an application by using your Power BI organization account. You can now try to embed Power BI content into an application by using apps. You can also try to embed Power BI content for your customers (not supported yet for embedding paginated reports):
 
 > [!div class="nextstepaction"]
-> [Embed from apps](embed-from-apps.md)
+> [Embed from apps](./index.yml)
 
 > [!div class="nextstepaction"]
 >[Embed for your customers](embed-sample-for-customers.md)

@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/08/2019
+ms.date: 01/19/2021
 LocalizationGroup: Data from databases
 ---
 # Power BI and Azure egress
 
-When using Power BI with Azure data sources, you can avoid Azure egress charges by making sure your Power BI tenant is in the same region as your Azure data sources.
+Data moving out (egress) of Azure data centers can incur bandwidth charges. When using Power BI with Azure data sources, you can avoid Azure egress charges by making sure your Power BI tenant is in the same region as your Azure data sources.
 
 When your Power BI tenant is deployed in the same Azure region as you deploy your data sources, you do not incur egress charges for scheduled refresh and DirectQuery interactions. 
 
@@ -26,6 +26,7 @@ For Power BI Premium Multi-Geo customers, if your Power BI tenant is not in the 
 
 For more information about Power BI Premium or Multi-Geo, take a look at the following resources:
 
+* [Azure bandwidth pricing details](https://azure.microsoft.com/pricing/details/bandwidth/)
 * [What is Microsoft Power BI Premium?](../admin/service-premium-what-is.md)
 * [How to purchase Power BI Premium](../admin/service-admin-premium-purchase.md)
 * [Multi-Geo support for Power BI Premium (Preview)](../admin/service-admin-premium-multi-geo.md)

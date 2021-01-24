@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 12/15/2020
+ms.date: 01/15/2021
 LocalizationGroup: Dashboards
 ---
 
@@ -114,7 +114,7 @@ Assuming all client telemetry reaches Power BI, the resulting metrics would be:
 | KPI Report | 1 | 1 | 1 |
 | HR Report | 1 | 5 | 1 | 
 | Finance Report | 3 | 5 | 3 |
-| Sales Report | 3 | 3 | 2 |
+| Sales Report | 3 | 4 | 2 |
 
 
 
@@ -292,6 +292,7 @@ In addition to the above differences between previous and improved usage metrics
 - Initializing the Usage Metrics Report dataset might fail due to a timeout encountered during refresh. Refer to the Troubleshooting section below to resolve this issue.
 - Sharing is disabled for the usage metrics report. To give people read access to the report, you first need to give them access to the workspace.
 - In some scenarios, you may notice the performance data is missing. This can occur if a user opens a report and interacts with the report before it has completed loading or if an error occurred during the report load. 
+- If your organization is using [Private Links](../admin/service-security-private-links.md), modern usage metrics reports will contain partial data (only Report Views). A current limitation when transferring client information over private links prevents us from capturing Report Page Views and performance data over Private Links. 
 
 ## Frequently asked questions
 
