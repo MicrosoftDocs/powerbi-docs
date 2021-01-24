@@ -264,7 +264,7 @@ var embedConfig = new EmbedConfig()
 
 You can use JavaScript to load a paginated report into a div element on your web page.
 
-For a full sample of using the JavaScript API, you can use the [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo). The Playground tool is a quick way to play with different types of Power BI Embedded samples. You can also get more Information about the JavaScript API by visiting the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
+For a full sample of using the JavaScript API, you can use the [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo). The Playground tool is a quick way to play with different types of Power BI Embedded samples. You can also get more Information about the Power BI Client API by visiting the [Power BI embedded analytics Client APIs](/javascript/api/overview/powerbi/) page.
 
 ## Next steps
 
