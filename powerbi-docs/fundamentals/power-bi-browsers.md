@@ -12,7 +12,7 @@ LocalizationGroup: Get started
 ---
 # Supported browsers for Power BI
 
-Power BI is designed to work with any of these supported browsers, but performance does differ depending on your choice of browser. If you're using Internet Explorer in particular, you may encounter worse performance. We strongly recommend switching from Internet Explorer to a modern browser, including Microsoft Edge. If you're still encountering unacceptable performance, test other supported modern browsers to see if they provide better results for your Power BI solution.
+Power BI is designed to work with any of these supported browsers; howerver, performance differs depending on your choice of a browser. If you're using Internet Explorer, you may encounter worse performance. We strongly recommend to switch from Internet Explorer to a modern browser, including Microsoft Edge. If you still encounter unacceptable performance, test other supported modern browsers to see if they provide better results for your Power BI solution.
 
 Power BI supports these browsers on all platforms where they're available:
 
