@@ -1,6 +1,6 @@
 ---
-title: Auto install Power BI apps when embedding for your organization
-description: Learn how to auto install Power BI apps when embedding for your organization.
+title: Auto install Power BI apps when embedding for your organization using Power BI embedded analytics to create embedded BI insights
+description: Learn how to auto install Power BI apps when embedding for your organization using Power BI embedded analytics to create embedded BI insights.
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: how-to
@@ -12,7 +12,7 @@ ms.date: 04/16/2019
 
 # Auto-install Power BI apps when embedding for your organization
 
-To embed content from an app, the user that is embedding must have [access to the app](../../collaborate-share/service-create-distribute-apps.md). If the app is installed for the user, then embedding works smoothly. For more information, see [Embed reports or dashboards from app](embed-from-apps.md). It's possible to define in PowerBI.com that all apps can be [installed automatically](https://powerbi.microsoft.com/blog/automatically-install-apps/). However, this action is done at the tenant level and applies to all apps.
+To embed content from an app, the user that is embedding must have [access to the app](../../collaborate-share/service-create-distribute-apps.md). If the app is installed for the user, then embedding works smoothly. For more information, see [Embed reports or dashboards from app](./index.yml). It's possible to define in PowerBI.com that all apps can be [installed automatically](https://powerbi.microsoft.com/blog/automatically-install-apps/). However, this action is done at the tenant level and applies to all apps.
 
 ## Auto-install app on embedding
 

@@ -1,6 +1,6 @@
 ---
-title: Embed paginated reports in your Power BI embedded analytics application for your customers
-description: Learn how to integrate or embed a Power BI paginated report into an application, using the Power BI APIs.
+title: Embed paginated reports in your Power BI embedded analytics application enabling better embedded BI insights for your customers
+description: Learn how to integrate or embed a Power BI paginated report into an application, using the Power BI APIs. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -14,7 +14,7 @@ ms.date: 01/04/2019
 
 # Tutorial: Embed Power BI paginated reports into an application for your customers
 
-With **Power BI Embedded in Azure** or **Power BI embedding in Office**, you can embed paginated reports into an application using app owns data. **App owns data** is about having an application that uses Power BI as its embedded analytics platform. As an **ISV** or a **developer**, you can create Power BI content that displays paginated reports in an application that is fully integrated and interactive, without requiring users to have a Power BI license. This tutorial demonstrates how to integrate a paginated report into an application using the Power BI .NET SDK with the Power BI JavaScript API.
+With **Power BI Embedded in Azure** or **Power BI embedding in Office**, you can embed paginated reports into an application using app owns data. **App owns data** is about having an application that uses Power BI as its embedded analytics platform. As an **ISV** or a **developer**, you can create Power BI content that displays paginated reports in an application that is fully integrated and interactive, without requiring users to have a Power BI license. This tutorial demonstrates how to integrate a paginated report into an application using the Power BI .NET SDK with the Power BI Client APIs.
 
 ![Power BI Embed Report](media/embed-paginated-reports-for-customers/embedded-paginated-report.png)
 
@@ -239,7 +239,7 @@ Report report = reports.Value.FirstOrDefault();
 
 ### Create the embed token
 
-Generate an embed token, which can be used from the JavaScript API. To create an embedded token for embedding Power BI paginated reports, use the [Reports GenerateTokenInGroup](/rest/api/power-bi/embedtoken/reports_generatetokeningroup) API.
+Generate an embed token, which can be used from the Power BI embedded analytics Client APIs. To create an embedded token for embedding Power BI paginated reports, use the [Reports GenerateTokenInGroup](/rest/api/power-bi/embedtoken/reports_generatetokeningroup) API.
 
 A sample of creating an embed token is available within the *Services\EmbedService.cs* file in the [sample application](https://github.com/Microsoft/PowerBI-Developer-Samples).
 
@@ -260,11 +260,11 @@ var embedConfig = new EmbedConfig()
 };
 ```
 
-### Load an item using JavaScript
+### Load an item using the Client APIs
 
-You can use JavaScript to load a paginated report into a div element on your web page.
+You can use the Power BI embedded analytics Client APIs to load a paginated report into a div element on your web page.
 
-For a full sample of using the JavaScript API, you can use the [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo). The Playground tool is a quick way to play with different types of Power BI Embedded samples. You can also get more Information about the JavaScript API by visiting the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
+For a full sample of using the Client API, you can use the [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo). The Playground tool is a quick way to play with different types of Power BI Embedded samples. You can also get more Information about the Power BI embedded analytics Client API by visiting the [Power BI embedded analytics Client APIs](/javascript/api/overview/powerbi/) page.
 
 ## Next steps
 

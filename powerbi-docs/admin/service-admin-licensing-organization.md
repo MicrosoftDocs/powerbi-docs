@@ -116,7 +116,7 @@ Power BI Pro has the same license lifecycle as Microsoft 365. For more informati
 
 Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
 * Performance
-* Per-user licensing
+* Per-user licensing. See the [Premium Per User FAQ](service-premium-per-user-faq.md) for more information.
 * Greater scale
 * Improved metrics
 * Autoscaling

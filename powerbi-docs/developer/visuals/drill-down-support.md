@@ -1,6 +1,6 @@
 ---
-title: Add Drill-Down support
-description: This article describes how to add drill-down support to Power BI Visuals
+title: Add Drill-Down support in Power BI embedded analytics for better embedded BI insights
+description: This article describes how to add drill-down support to Power BI Visuals. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin

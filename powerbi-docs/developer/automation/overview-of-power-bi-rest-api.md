@@ -1,6 +1,6 @@
 ---
-title: What can I do with the Power BI API
-description: What can I do with the Power BI API
+title: What can I do with the Power BI API  in Power BI embedded analytics for better embedded BI insights
+description: What can I do with the Power BI API. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -32,8 +32,8 @@ Here are some of the things you can do with the Power BI APIs.
 
 | Tool(s) | Description |
 |---------|-------------|
-| [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo) | Experience a full sample of using the Power BI JavaScript APIs. This tool is also a quick way to play with different types of Power BI Embedded samples. |
-| [Power BI JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) | To get more Information about the Power BI JavaScript APIs. |
+| [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo) | Experience a full sample of using the Power BI embedded analytics Client APIs. This tool is also a quick way to play with different types of Power BI Embedded samples. |
+| [Power BI embedded analytics Client APIs](/javascript/api/overview/powerbi/) | To get more Information about the Power BI Client APIs. |
 | [Postman](https://www.getpostman.com/) | Run requests, test, debug, monitor, run automated tests and more. |
 
 ## Push data into Power BI
@@ -46,7 +46,7 @@ You can use the Power BI API to [push data into a dataset](walkthrough-push-data
 
 * [Power BI Developer samples](https://github.com/Microsoft/PowerBI-Developer-Samples)
 * [.NET SDK](https://github.com/Microsoft/PowerBI-CSharp)
-* [JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript)
+* [Power BI embedded analytics Client APIs](/javascript/api/overview/powerbi/)
 
 ## Next Steps
 

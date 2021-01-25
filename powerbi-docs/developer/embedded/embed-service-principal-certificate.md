@@ -1,6 +1,6 @@
 ---
-title: Embed Power BI content in an embedded analytics application with service principal and a certificate
-description: Learn how to authenticate for embedded analytics using an Azure Active Directory application service principal and a certificate.
+title: Embed Power BI content in an Power BI embedded analytics application with service principal and a certificate enabling better embedded BI insights
+description: Learn how to authenticate for Power BI embedded analytics using an Azure Active Directory application service principal and a certificate. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
@@ -13,7 +13,7 @@ ms.date: 11/23/2020
 
 # Embed Power BI content with service principal and a certificate
 
-Certificate-based authentication enables you to be authenticated by Azure Active Directory (Azure AD) with a client certificate on a Windows, Android or iOS device, or kept in an [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/basic-concepts).
+Certificate-based authentication enables you to be authenticated by Azure Active Directory (Azure AD) with a client certificate on a Windows, Android or iOS device, or kept in an [Azure Key Vault](/azure/key-vault/basic-concepts).
 
 Using this method of authentication allows managing certificates from a central place, using the CA, for rotation or revocation.
 

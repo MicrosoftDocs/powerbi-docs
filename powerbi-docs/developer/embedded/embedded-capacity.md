@@ -1,13 +1,13 @@
 ---
-title: Capacity and SKUs in Power BI embedded analytics
-description: Understand capacity and SKUs in Power BI embedded analytics.
+title: Capacity and SKUs in Power BI embedded analytics enabling better embedded BI insights
+description: Understand capacity and SKUs in Power BI embedded analytics. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/17/2020 
+ms.date: 01/06/2021 
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
@@ -22,8 +22,10 @@ Capacity is a dedicated set of resources reserved for exclusive use. It enables 
 ## What is embedded analytics?
 
 Power BI embedded analytics includes two solutions:
+
 * *Power BI Embedded*  - Azure offering
-* Embedding Power BI as part of *Power BI Premium*  - Office offering
+
+* Embedding Power BI as part of *Power BI Premium*  - Microsoft Office offering
 
 ### Power BI Embedded
 
@@ -145,4 +147,4 @@ The table below describes the resources and limits of each SKU.
 >[Embed for your organization](embed-sample-for-your-organization.md)
 
 > [!div class="nextstepaction"]
-> [Embed from apps](embed-from-apps.md)
+> [Embed from apps](./index.yml)

@@ -12,7 +12,7 @@
     items:
     - name: "Tutorial: Developing a Power BI circle card visual"
       href: develop-circle-card.md  
-    - name: "Create React-based Visuals"
+    - name: "Tutorial: Create a Power BI visual using React"
       href: create-react-visual.md
     - name: "Build a bar chart"
       href: create-bar-chart.md
@@ -143,6 +143,6 @@
     - name: "Samples of Power BI visuals"
       href: samples.md
     - name: "Custom Visuals Git Repo"
-      href: https://go.microsoft.com/fwlink/?linkid=848277
+      href: https://github.com/PowerBi-Projects/PowerBI-visuals/
     - name: "Creating SSL certificate"
       href: create-ssl-certificate.md
