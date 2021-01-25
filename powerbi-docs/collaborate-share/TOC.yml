@@ -25,8 +25,6 @@
       items: 
       - name: "Create the new workspaces"
         href: service-create-the-new-workspaces.md
-      - name: "Opt in to the new look for workspaces"
-        href: service-workspaces-new-look.md
       - name: "Upgrade classic workspaces"
         href: service-upgrade-workspaces.md
       - name: "Create classic workspaces"

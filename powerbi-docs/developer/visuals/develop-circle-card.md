@@ -12,7 +12,7 @@ ms.date: 09/02/2020
 
 # Tutorial: Develop a Power BI circle card visual
 
-As a developer you can create your own Power BI visuals. These visuals can be used by you, your organization or by third parties.
+[!INCLUDE[Power B I visuals tutorials overview](../../includes/visual-tutorial-overview.md)]
 
 In this tutorial, you'll develop a Power BI visual named circle card that displays a formatted measure value inside a circle. The circle card visual supports customization of fill color and outline thickness.
 
@@ -21,20 +21,15 @@ In this tutorial, you learn how to:
 > * Create a development project for your visual.
 > * Develop your visual with D3 visual elements.
 > * Configure your visual to process data.
+> * Configure your visual to adapt to size changes.
+> * Configure adaptive color and border settings for your visual.
+
+>[!NOTE]
+>For the full source code of this visual, see [circle card Power BI visual](https://github.com/microsoft/powerbi-visuals-circlecard).
 
 ## Prerequisites
 
-Before you start developing your Power BI visual, verify that you have everything listed in this section.
-
-* You need a **Power BI Pro** account. If you don't have one, [sign up for a free trial](https://powerbi.microsoft.com/pricing/).
-
-* [Visual Studio Code (VS Code)](https://www.visualstudio.com/). VS Code is an ideal Integrated Development Environment (IDE) for developing JavaScript and TypeScript applications.
-
-* [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell) version 4 or later (for Windows). Or [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) (for OSX).
-
-* An environment ready for developing a Power BI visual. [Set up your environment for developing a Power BI visual](environment-setup.md).
-
-* This tutorial uses the **US Sales Analysis** report. You can [download](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/images/US_Sales_Analysis.pbix) this report and upload it to Power BI service, or use your own report. If you need more information about Power BI service, and uploading files, refer to the [Get started creating in the Power BI service](../../fundamentals/service-get-started.md) tutorial.
+[!INCLUDE[Power B I tutorials prerequisites](../../includes/visual-tutorial-prerequisites.md)]
 
 ## Create a development project
 
@@ -64,53 +59,7 @@ In this section you'll create a project for the circle card visual.
 
 ## View the circle card in Power BI service
 
-To test the circle card visual in Power BI service, we'll use the **US Sales Analysis** report. You can [download](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/images/US_Sales_Analysis.pbix) this report and upload it to Power BI service.
-
-You can also use your own report to test the circle card visuals.
-
->[!NOTE]
->Before you continue, verify that you [enabled the visuals developer settings](environment-setup.md#set-up-power-bi-service-for-developing-a-visual).
-
-1. Sign in to [PowerBI.com](https://powerbi.microsoft.com/) and open the **US Sales Analysis** report.
-
-2. Select **More options** > **Edit**.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the edit option in Power B I service.](media/develop-circle-card/edit-report.png)
-
-3. Create a new page for testing, by clicking on the **New page** button at the bottom of the Power BI service interface.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the new page button in Power B I service.](media/develop-circle-card/new-page.png)
-
-4. From the **Visualizations** pane, select the **Developer Visual**.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the developer visual in the visualizations pane.](media/develop-circle-card/developer-visual.png)
-
-    This visual represents the custom visual that you're running on your computer. It's only available when the [custom visual debugging](environment-setup.md#set-up-power-bi-service-for-developing-a-visual) setting is enabled.
-
-5. Verify that a visual was added to the report canvas.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the new visual added to the report.](media/develop-circle-card/new-visual.png)
-
-    This is a simple visual that displays the number of times its update method has been called. At this stage, the visual does not retrieve any data.
-
-    >[!NOTE]
-    >If the visual displays a connection error message, open a new tab in your browser, navigate to `https://localhost:8080/assets/status`, and authorize your browser to use this address.
-    >
-    >![Screenshot of the new visual displaying a connection error.](media/develop-circle-card/connection-error.png)
-
-6. While the new visual is selected, go to the **Fields** pane, expand **Sales**, and select **Quantity**.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the Power B I service quantity field in the sales table in the U S sales analysis report.](media/develop-circle-card/fields-sales-quantity.png)
-
-7. To test how the visual is responding, resize it and notice that the *Update count* value increments every time you resize the visual.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the new visual displaying a different update count number, after being resized.](media/develop-circle-card/resized-visual.png)
+[!INCLUDE[View the Power B I visual in Power B I service](../../includes/visual-tutorial-view.md)]
 
 ## Add visual elements and text
 
