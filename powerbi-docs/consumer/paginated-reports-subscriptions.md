@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/04/2021
+ms.date: 01/22/2021
 ---
 
 # Subscribe yourself and others to paginated reports in the Power BI service 
@@ -18,13 +18,15 @@ In setting up subscriptions, you choose how often you want to receive the emails
 
 ## Considerations for paginated report subscriptions 
 
+- You don't need edit permissions to the paginated report to create a subscription for yourself, but you must have edit permissions to create one for someone else. If you have at least a Contributor role in the workspace where the paginated report is, then you can create subscriptions for others. Read more about [Roles in workspaces](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces).
+
 - Unlike subscriptions for dashboards or Power BI reports, your subscription contains an attachment of the entire report output.  The following attachment types are supported: PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML.
 
 - You may include a preview image of the report in the email body.  This is optional, and may differ slightly than the first page of your attached report document, depending on the attachment format selected. 
 
 - The maximum report attachment size is 24 MB. 
 
-- You can subscribe other users for paginated reports that connect to any currently supported data sources, including Azure Analysis Services or Power BI datasets. Keep in mind the report attachment reflects the data based on your permissions, just as SQL Server Reporting Services does today. 
+- You can subscribe other users to paginated reports that connect to any currently supported data sources, including Azure Analysis Services or Power BI datasets. Keep in mind the report attachment reflects the data based on your permissions, just as SQL Server Reporting Services does today. 
 
 - Email subscriptions can be sent with either the currently selected or default parameters for your report.  You may set different parameter values for each subscription you create for your report. 
 
