@@ -110,11 +110,11 @@
       href: https://aka.ms/embedsetup
     - name: "JavaScript Playground Sample"
       href: https://go.microsoft.com/fwlink/?linkid=848279
-    - name: "Power BI JavaScript wiki"
-      href: https://github.com/Microsoft/powerbi-javascript/wiki
+    - name: "Power BI embedded analytics Client APIs"
+      href: /javascript/api/overview/powerbi/
     - name: "Developer samples and scripts"
       href: https://go.microsoft.com/fwlink/?linkid=851293
     - name: "Power BI community"
       href: https://go.microsoft.com/fwlink/?linkid=848280
     - name: "Stack Overflow"
-      href: https://go.microsoft.com/fwlink/?linkid=848281
+      href: https://go.microsoft.com/fwlink/?linkid=2153505
