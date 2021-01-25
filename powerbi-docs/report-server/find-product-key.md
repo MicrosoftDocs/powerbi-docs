@@ -39,7 +39,7 @@ If you have a SQL Server Enterprise SA agreement, you can get your product key f
  
 ## Next steps
 [Install Power BI Report Server](install-report-server.md)  
-[Install Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md)  
+[Install Power BI Desktop for Power BI report Server](install-powerbi-desktop.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 

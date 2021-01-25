@@ -1,6 +1,6 @@
 ---
-title: Certification revocation check in Power BI Desktop
-description: How to revoke certification in Power BI Desktop in the UI and in the registry
+title: Certificate revocation check in Power BI Desktop
+description: How to revoke certificates in Power BI Desktop in the UI and in the registry
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/25/2021
 LocalizationGroup: Create reports
 ---
-# Certification revocation in Power BI Desktop
+# Certificate revocation in Power BI Desktop
 
-Power BI now offers two ways to enable or disable a certification check. 
+Power BI offers two ways to enable or disable a certificate check. 
 In November 2020, we introduced a simple on/off certificate revocation check for web connections in Power BI Desktop. Now you can have more fine-grained control over the certificate revocation check.
 
-## Simple certification revocation
+## Simple certificate revocation
 
 In the user interface in Power BI Desktop, you can enable or disable the feature.
 
@@ -23,7 +23,7 @@ In the user interface in Power BI Desktop, you can enable or disable the feature
 
 ## More fine-grained control
 
-Now you can have more fine-grained control over the certificate revocation check with a third option. 
+You can have more fine-grained control over the certificate revocation check with a third option. 
 
 - **Basic**  The basic check accepts certificates whose revocation status is unknown, for example because the certificate doesn't specify it. This check is important for organizations that use corporate proxy servers. It's the same as selecting the checkbox in Power BI Desktop.
 - **Disabled** The same as disabling the checkbox in Power BI Desktop.

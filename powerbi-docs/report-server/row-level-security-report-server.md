@@ -39,7 +39,7 @@ After you save your report in Power BI Report Server, you manage security and ad
 
  If the report doesn't have the roles it needs, you need to open it in Power BI Desktop, add or modify roles, then save it back to Power BI Report Server. 
 
-1. In Power BI Desktop, save the report to Power BI Report Server. You need to use the version of Power BI Desktop optimized for Power BI Report Server.
+1. In Power BI Desktop, save the report to Power BI Report Server. You need to use the version of Power BI Desktop for Power BI report Server.
 2. In Power BI Report Service, select the ellipsis (**…**) next to the report. 
 
 3. Select **Manage** > **Row-level security**. 

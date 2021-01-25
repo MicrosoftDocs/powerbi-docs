@@ -147,7 +147,7 @@ Open up the TCP port that you've configured for your Web Service URL and Web Por
 
 [Administrator overview](admin-handbook-overview.md)  
 [How to find your report server product key](find-product-key.md)  
-[Install Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md)  
+[Install Power BI Desktop for Power BI report Server](install-powerbi-desktop.md)  
 [Verify a Reporting Services installation](/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
 [Configure the report server service account](/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
 [Configure report server URLs](/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  

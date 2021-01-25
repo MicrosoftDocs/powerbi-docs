@@ -12,15 +12,15 @@ ms.date: 01/25/2021
 
 # What's new in Power BI Report Server
 
-Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop optimized for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log for Power BI Report Server](changelog.md).
+Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop for Power BI report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log for Power BI Report Server](changelog.md).
 
-Download [Power BI Report Server and Power BI Desktop optimized for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+Download [Power BI Report Server and Power BI Desktop for Power BI report Server](https://powerbi.microsoft.com/report-server/).
 
 ## January 2021
 
 What follows is a list of new and updated features. For details, see the [Power BI Report Server blog post for January 2021](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2021-feature-summary/).
 
-### Power BI Desktop optimized for Power BI Report Server
+### Power BI Desktop for Power BI report Server
 
 Here are some highlights of new features.
 
@@ -30,7 +30,7 @@ Here are some highlights of new features.
 - Visual Zoom Slider
 - Certificate revocation check for web connections
 - Selection pane in the mobile layout view
-- ArcGIS Maps support
+- ArcGIS for Power BI support
 
 **Data connectivity**
 
@@ -81,15 +81,15 @@ Power BI Report Server has a new product icon, in keeping with the new icons rol
 
 What follows is a complete list of new and updated features. For details, see the [Power BI Report Server blog post for October 2020](https://powerbi.microsoft.com/blog/power-bi-report-server-october-2020-feature-summary/). 
 
-### Power BI Desktop optimized for Power BI Report Server
+### Power BI Desktop for Power BI report Server
 
 Here are some highlights of new features.
 
 **Modern ribbon**  
 
-The modern ribbon has come to Power BI Desktop optimized for Power BI Report Server. We'll continue to make additions and add more features to the ribbon. See [Use the updated ribbon in Power BI Desktop](../create-reports/desktop-ribbon.md) to learn more about its changes and benefits.
+The modern ribbon has come to Power BI Desktop for Power BI report Server. We'll continue to make additions and add more features to the ribbon. See [Use the updated ribbon in Power BI Desktop](../create-reports/desktop-ribbon.md) to learn more about its changes and benefits.
 
-:::image type="content" source="media/whats-new/report-server-new-ribbon.png" alt-text="Screenshot of new ribbon in Power BI Desktop optimized for Power BI Report Server.":::
+:::image type="content" source="media/whats-new/report-server-new-ribbon.png" alt-text="Screenshot of new ribbon in Power BI Desktop for Power BI report Server.":::
 
 **Hierarchy slicers**
 
@@ -100,7 +100,7 @@ You can build what's called a *hierarchy slicer* to filter multiple related fiel
 - Customizable indentation for child items.
 - Further customization for slicer header text.
 
-:::image type="content" source="media/whats-new/report-server-slicer-hierarchy.png" alt-text="Hierarchy slicer in Power BI Desktop optimized for Power BI Report Server.":::
+:::image type="content" source="media/whats-new/report-server-slicer-hierarchy.png" alt-text="Hierarchy slicer in Power BI Desktop for Power BI report Server.":::
 
 See [Slicers in Power BI](../visuals/power-bi-visualization-slicers.md) in the documentation for details.
 
@@ -116,7 +116,7 @@ Here are the new experiences and capabilities for building mobile-optimized repo
 - Bookmarks available in the mobile layout view  
 - Turn off gridlines and snap to grid  
 
-:::image type="content" source="media/whats-new/report-server-mobile-layout.png" alt-text="Enhanced mobile layout in Power BI Desktop optimized for Power BI Report Server.":::
+:::image type="content" source="media/whats-new/report-server-mobile-layout.png" alt-text="Enhanced mobile layout in Power BI Desktop for Power BI report Server.":::
 
 See this blog post, [Enhancements to mobile authoring](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_mobile), for details.
 
@@ -124,7 +124,7 @@ See this blog post, [Enhancements to mobile authoring](https://powerbi.microsoft
 
 This new feature of the Excel connector automatically identifies sections of each Excel spreadsheet to extract into a table. It shows them under a “Suggested Tables” group in the Navigator. Previously, data had to be formatted as a table or named range in Excel. Otherwise you had to scrape the relevant rows/columns with specific transforms, such as skip rows and remove columns, from worksheet objects, as in Sheet1 in the following example. To use this feature, you need to enable it in the **Settings** dialog box.
 
-:::image type="content" source="media/whats-new/report-server-excel-table.png" alt-text="Recognizing an Excel table in Power BI Desktop optimized for Power BI Report Server.":::
+:::image type="content" source="media/whats-new/report-server-excel-table.png" alt-text="Recognizing an Excel table in Power BI Desktop for Power BI report Server.":::
 
 **Modeling: Enhanced Dataset Metadata**
 
@@ -145,7 +145,7 @@ After 10 years, support for Windows 7 ended on January 14, 2020. In line with th
 
 **Complete list of updates**
 
-Here’s a complete list of the updates in the October edition of Power BI Desktop optimized for Power BI Report Server. 
+Here’s a complete list of the updates in the October edition of Power BI Desktop for Power BI report Server. 
 
 **Reporting**
 
@@ -201,7 +201,7 @@ In the October release of Power BI Report Server, we are enabling the ability to
 
 ## May 2020
 
-### Power BI Desktop optimized for Power BI Report Server
+### Power BI Desktop for Power BI report Server
 
 Among the highlights of this update are the hierarchical slicer and decomposition tree visuals, and query diagnostics. What follows is a complete list of new and updated features. For details, see the [Power BI Report Server blog post for May 2020](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2020-feature-summary/). 
 
@@ -259,7 +259,7 @@ The API version shipped with this release is 3.2.
 
 See the Power BI Report Server January 2020 blog post for more details.
 
-### Power BI Desktop optimized for Power BI Report Server
+### Power BI Desktop for Power BI report Server
 
 This release brings many new features, such as conditional formatting for buttons, data profiling enhancements, and more formatting settings for KPIs and table visuals. Here's a summarized list of updates:
 
@@ -562,7 +562,7 @@ Sets a comma-separated list of the URI schemes allowed to be defined on Hyperlin
 
 ## August 2018
 
-August 2018 sees many new features added to the version of Power BI Desktop optimized for Power BI Report Server. Here they are, broken out by area:
+August 2018 sees many new features added to the version of Power BI Desktop for Power BI report Server. Here they are, broken out by area:
 
 - [Reporting](#reporting)
 - [Analytics](#analytics)
@@ -668,7 +668,7 @@ As an IT admin, you can now use your organization's MDM tool to remotely configu
 
 ## March 2018
 
-March 2018 sees many, many new features added to the version of Power BI Desktop optimized for Power BI Report Server. Here they are, broken out by area:
+March 2018 sees many, many new features added to the version of Power BI Desktop for Power BI report Server. Here they are, broken out by area:
 
 - [Visuals](#visuals-updates)
 - [Reporting](#reporting)
