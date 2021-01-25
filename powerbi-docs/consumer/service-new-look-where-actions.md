@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 10/22/2020
+ms.date: 1/25/2021
 # Customer intent: As a Power BI customer or potential customer, I'd like to know what the differences are between the previous look of the Power BI service and the new look
 LocalizationGroup: Get started
 ---
 # The 'new look': Where did the actions go?
 
-The Power BI service (app.powerbi.com) has a new look that makes it easier to view and interact with your reports. As a result, many menu actions have moved. The tables in this article map the old location to the new. For background, see [the 'new look' of the Power BI service](service-new-look.md).
+The Power BI service (app.powerbi.com) has moved to a new look that makes it easier to view and interact with your reports. As a result, many menu actions have moved. If your organization has made the move to the new look, but you're more familiar with the old look, this article will help you find your way around. The tables in this article map the old location to the new. 
 
 Looking for information about the new look in **Power BI Desktop**? See [Use the updated ribbon in Power BI Desktop](../create-reports/desktop-ribbon.md).
 
@@ -65,7 +65,3 @@ Looking for information about the new look in **Power BI Desktop**? See [Use the
 | Refresh dashboard tiles | Menu bar More options (...) > Refresh dashboard tiles | Refresh visuals (right side) |
 | Performance inspector | Menu bar More options (...) > Performance inspector | File > Performance inspector |
 | Settings | Menu bar More options (...) > Settings | File > Settings |
-
-## Next steps
-
-[The 'new look' of the Power BI service](service-new-look.md)
