@@ -20,13 +20,6 @@ metadata:
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
-  # Card (optional)
-  - title: Client APIs
-    linkLists:
-      - linkListType: whats-new
-        links:
-          - text: "Power BI embedded analytics Client APIs"
-            url: /javascript/api/overview/powerbi/
 
   # Card (optional)
   - title: Get started
@@ -40,6 +33,14 @@ landingContent:
           - text: "Frequently asked questions"
             url: embedded-faq.md
 
+  # Card (optional)
+  - title: Client APIs
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: "Power BI embedded analytics Client APIs"
+            url: /javascript/api/overview/powerbi/
+            
   # Card
   - title: Embed reports or dashboards
     linkLists:

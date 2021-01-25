@@ -23,10 +23,6 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Power BI embedded analytics Client APIs
-      itemType: whats-new
-      url: /javascript/api/overview/powerbi/  
-    # Card
     - title: Embedded analytics with Power BI
       itemType: overview
       url: embedded/embedding.md
@@ -38,6 +34,10 @@ highlightedContent:
     - title: Visuals in Power BI
       itemType: overview
       url: visuals/power-bi-custom-visuals.md
+    # Card
+    - title: Power BI embedded analytics Client APIs
+      itemType: whats-new
+      url: /javascript/api/overview/powerbi/  
       # Card
     - title: Automated  template app configuration
       itemType: concept
