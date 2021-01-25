@@ -33,17 +33,17 @@ Google Chrome and Microsoft Edge (Chromium) are both based on the [Chromium open
 1. Prepare to collect the browser trace by setting trace options. You'll also stop and clear any information that was collected before you start to reproduce the problem. By default, the browser keeps trace information only for the page that's currently loaded. Follow these steps to set up the browser to keep all trace information, even if your repro goes to more than one page:
     1. In the **Developer tools** window, select the **Network** tab. Then, select **Preserve log**.
     
-       :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browsertrace-preservelog.png" alt-text="Developer tools with network tab and preserve log selected." :::
+       :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browser-trace-preserve-log.png" alt-text="Developer tools with network tab and preserve log selected." :::
 
      2. Select the **Console** tab, then select **Settings** > **Preserve log**. 
    
-           :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browsertrace-consolesettings.png" alt-text="Developer tools with console tab and preserve log selected." :::
+           :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browser-trace-console-settings.png" alt-text="Developer tools with console tab and preserve log selected." :::
 
         Select **Settings** again to close the **Console settings**.
 
 3. Next, stop and clear any recording in progress. Select the **Network** tab, select **Stop recording network log**, then **Clear**.
    
-   :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browsertrace-stoprecording.png" alt-text="Developer tools with network tab  and stop and clear recording options selected." :::
+   :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browser-trace-stop-recording.png" alt-text="Developer tools with network tab  and stop and clear recording options selected." :::
      
 2. Now, you'll reproduce the problem that you were having in the Power BI service. To start, in **Developer tools** select the **Network** tab. Select **Record network log**.
 
@@ -52,20 +52,20 @@ Google Chrome and Microsoft Edge (Chromium) are both based on the [Chromium open
 
    Reproduce the steps that resulted in the problem you need help with.
 
-     :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browsertrace-recordnetworklog.png" alt-text="Developer tools with network tab and record network log selected." :::
+     :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browser-trace-record-network-log.png" alt-text="Developer tools with network tab and record network log selected." :::
 
     As you reproduce the problem, you'll see output similar to the following image in the **Developer tools** window.
 
-    :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browsertrace-output.png" alt-text="Developer tools with network tab displaying session output." :::
+    :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browser-trace-output.png" alt-text="Developer tools with network tab displaying session output." :::
     
 3. After reproducing the problem behavior, you need to save the log files and attach them to your support request.
     1. To export the network log, in **Developer tools** select the **Network** tab. Select **Stop recording network log**. Then, select **Export HAR...** and save the file.
 
-         :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browsertrace-exporthar.png" alt-text="Developer tools with network tab, stop recording, and export HAR options selected." :::
+         :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browser-trace-export-har.png" alt-text="Developer tools with network tab, stop recording, and export HAR options selected." :::
 
     2. To export the console output, in **Developer tools** select the **Console** tab. Right-click on a displayed message, then select **Save as...**,  and save the console output to a text file.
     
-         :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browsertrace-saveas.png" alt-text="Developer tools with console tab selected and save as option shown." :::
+         :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browser-trace-save-as.png" alt-text="Developer tools with console tab selected and save as option shown." :::
 
    Package the saved HAR file, console output, and screen recording in a compressed format, such as .zip, and attach the file to your support request.
 
@@ -80,25 +80,25 @@ The following steps show how to use the developer tools in Apple Safari. For mor
 
     2. Select **Advanced**, then select **Show Develop menu in menu bar** to enable the developer tools.
     
-       :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/safari-showdevelopmenu.png" alt-text="Safari advanced menu with show develop menu in menu bar selected." :::
+       :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/safari-show-develop-menu.png" alt-text="Safari advanced menu with show develop menu in menu bar selected." :::
 
 2. Next, you'll set options in the **Web Inspector** to enable your browser to keep all trace information. By default, the browser keeps trace information only for the page that's currently loaded. These settings ensure that trace information is collected even if your repro requires going to more than one page.
 
     1. Select **Develop** > **Show Web Inspector**.
     
-        :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/safari-webinspector.png" alt-text="Develop menu with Show Web Inspector selected." :::
+        :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/safari-web-inspector.png" alt-text="Develop menu with Show Web Inspector selected." :::
 
     2. Select **Network** > **Preserve Log**
        
-         :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/safari-network-preservelog.png" alt-text="Web Inspector menu with Network and Preserve Log selected." :::
+         :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/safari-network-preserve-log.png" alt-text="Web Inspector menu with Network and Preserve Log selected." :::
 
     1. Select **Console** > **Preserve Log**
    
-       :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/safari-console-preservelog.png" alt-text="Web Inspector menu with Console and Preserve Log selected." :::
+       :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/safari-console-preserve-log.png" alt-text="Web Inspector menu with Console and Preserve Log selected." :::
 
 3. After the options are set, select **Network** > **Clear Network Items** to make sure your logs contain only details about the problem repro.
 
-    :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/safari-clearnetworkitems.png" alt-text="Web Inspector menu with Network and Clear Network Items selected." :::
+    :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/safari-clear-network-items.png" alt-text="Web Inspector menu with Network and Clear Network Items selected." :::
 
 
 4. Now you're ready to reproduce the problem. 
@@ -107,7 +107,7 @@ The following steps show how to use the developer tools in Apple Safari. For mor
 
     Go through the steps to reproduce the issue you're having. As you reproduce the problem, you'll see output similar to the following image in the **Network** window.
 
-    :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/safari-sessionoutput.png" alt-text="Network window displaying sample output." :::
+    :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/safari-session-output.png" alt-text="Network window displaying sample output." :::
 
 5. After reproducing the problem behavior, you need to save the log files and attach them to your support request.
 
@@ -129,15 +129,15 @@ The following steps show how to use the developer tools in Firefox. For more inf
 
     1. In the **Inspector** window, select the **Network** tab. Then, select **Persist Logs**.
     
-       :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/firefox-network-persistlogs.png" alt-text="Inspector tools with network tab and persist logs selected." :::
+       :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/firefox-network-persist-logs.png" alt-text="Inspector tools with network tab and persist logs selected." :::
 
      2. Select the **Console** tab, then select **Console settings** > **Persist Logs**. 
    
-           :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/firefox-console-persistlogs.png" alt-text="Inspector tools with console tab and persist logs selected." :::
+           :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/firefox-console-persist-logs.png" alt-text="Inspector tools with console tab and persist logs selected." :::
 
 3. After the options are set, clear any recording in progress. Select the **Network** tab, then **Clear**.
    
-   :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browsertrace-stoprecording.png" alt-text="Developer tools with network tab  and stop and clear recording options selected." :::
+   :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browser-trace-stop-recording.png" alt-text="Developer tools with network tab  and stop and clear recording options selected." :::
      
 2. Now you're ready to reproduce the problem. 
     > [!IMPORTANT]
@@ -148,11 +148,11 @@ The following steps show how to use the developer tools in Firefox. For more inf
 3. After reproducing the problem behavior, you need to save the log files and attach them to your support request.
     1. To export the network log, select **Network** > **HAR Export/Import** then **Save All as HAR**.
 
-         :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/firefox-savehar.png" alt-text="Network tab with HAR export/import menu and save all options selected." :::
+         :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/firefox-save-har.png" alt-text="Network tab with HAR export/import menu and save all options selected." :::
 
     2. To export the console output, select the **Console** tab. Right-click on a displayed message, then select **Export Visible Messages To**,  and save the console output to a text file.
     
-         :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/firefox-exportvisiblemessages.png" alt-text="Console tab selected and export visible messages option shown." :::
+         :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/firefox-export-visible-messages.png" alt-text="Console tab selected and export visible messages option shown." :::
 
    Package the saved HAR file, console output, and screen recording in a compressed format, such as .zip, and attach the file to your support request.
 
