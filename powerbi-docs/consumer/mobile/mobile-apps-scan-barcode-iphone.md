@@ -22,8 +22,8 @@ Say your organization has reports that have data that has been [tagged as barcod
 
 ![Screenshot of a product barcode scan, showing the scanner over the barcode of a colored beverage.](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
 
-Here are two scenarios where barcode scanning is useful
-* Imagine you're checking inventory in a large supermarket and while your out in the aisles you need to get information about particular products, such as how many the store has in stock, what departments the items are stocked in, etc. You can just open the Power BI scanner on your mobile device and scan an item's barcode. You'll get a list of reports that have barcode data. You choose the relevant report, say, the Inventory report, and the report will open, filtered to the relevant data.
+Here are two scenarios where barcode scanning is useful:
+* Imagine you're checking inventory in a large supermarket and while your out in the aisles you need to get information about particular products, such as how many the store has in stock, what departments the items are stocked in, etc. You can just open the Power BI scanner on your mobile device and scan an item's barcode. You'll get a list of reports that have barcode data. You choose the relevant report and the report will open, filtered to the relevant data.
 * Say the machines on a factory floor are identified with barcodes, and the telemetry from those machines is being processed and sent to Power BI. When engineers are out on the floor checking machine status, they can easily scan a machine's barcode and get to a KPI report about its performance and status.
 
 ## Scan a barcode with the Power BI scanner
