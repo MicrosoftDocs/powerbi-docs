@@ -113,7 +113,7 @@ Power BI detects your language based on the language preferences on your compute
 ## Choose the language or locale of Power BI Desktop
 You have two ways of getting Power BI Desktop: You can download it as a standalone installer, or install it from the Windows Store. 
 
-* When you install Power BI Desktop from the Windows Store, it installs all the languages and by default shows the language that corresponds to the Windows default language.
+* When you install Power BI Desktop from the Windows Store, it installs all the languages (currently, 42 languages) and by default shows the language that corresponds to the Windows default language.
 * When you download Power BI Desktop as a standalone installer, you choose the default language when you run the installer. You can change it at a later date.
 * You can also [choose a locale to be used when importing data](#choose-the-locale-for-importing-data-into-power-bi-desktop) for a specific report.
 
