@@ -34,7 +34,7 @@ If the workspace doesn't have the diamond icon ![Power BI Premium capacity diamo
 
 ## From Report Builder, publish a paginated report to the Power BI Service
 
-1. Create a new paginated report or open an existing paginated report from the Power BI Service in Report Builder. If you open an existing paginated report from the service, you the **Save** option is disabled because you're updating a report that's live in the Power BI Service.
+1. Create a new paginated report or open an existing paginated report from the Power BI Service in Report Builder. If you open an existing paginated report from the service, the **Save** option is disabled because you're updating a report that's live in the Power BI Service.
 
 1. On the Report Builder **File** menu, select **Publish**.
 
