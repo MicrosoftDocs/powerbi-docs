@@ -47,7 +47,7 @@ The simple Enable or Disable checkbox is still in the Power BI Desktop user inte
 - On a 64-bit operation system:
 
     ```
-    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop . 
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop
     ```
 
 Set the registry value to one of the following values: 
