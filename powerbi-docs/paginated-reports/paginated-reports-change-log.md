@@ -6,8 +6,8 @@ ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: how-to
-ms.date: 01/22/2021
+ms.topic: conceptual
+ms.date: 01/25/2021
 ---
 
 # Power BI Report Builder change log
