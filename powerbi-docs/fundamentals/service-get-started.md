@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 07/08/2020
+ms.date: 01/13/2021
 # Customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
 LocalizationGroup: Get started
 ---
@@ -35,7 +35,7 @@ You need a Power BI Pro license to create content in Power BI. If you don't have
 
 ## Step 1: Get data
 
-Often when you want to create a Power BI report, you start in Power BI Desktop. Power BI Desktop offers more power. You can transform, shape, and model data, before you start designing report. This time though, we're going to start from scratch creating a report in the Power BI service.
+Often, when you want to create a Power BI report, you start in Power BI Desktop. Power BI Desktop offers more power. You can transform, shape, and model data, before you start designing reports. This time though, we're going to start from scratch creating a report in the Power BI service.
 
 In this tutorial, we get data from a simple Microsoft Excel file. Want to follow along? [Download the Financial Sample file](https://go.microsoft.com/fwlink/?LinkID=521962).
 
@@ -218,6 +218,8 @@ Now that you've finished the tutorial, you can delete the dataset, report, and d
 4. Select **Delete**.
 
 ## Next steps
+
+[Quickly create a report by pasting data into the Power BI service](https://powerbi.microsoft.com/en-us/blog/quickly-create-reports-power-bi-service/)
 
 Explore these collections of Microsoft Learn content for Power BI:
 
