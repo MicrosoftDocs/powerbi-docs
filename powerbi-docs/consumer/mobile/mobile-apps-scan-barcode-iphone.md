@@ -53,7 +53,7 @@ Either way, tap the icon to open a small menu with a floating scanner.
 
 ## Clear a barcode filter
 To clear barcode filtering while in a filtered report:
-1. On the report's action bar, tap **More options (...)** and find the filled barcode scanner icon ![Filtered icon](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png) that indicates that a filter is active.
+1. On the report's action bar, tap **More options (...)** and find the filled barcode scanner icon ![Filtered icon](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png) that indicates that a filter is active and tap it to open the scanner.
 1. Select **Clear barcode filter** to go back to the unfiltered report.
 
 ## Limitations
@@ -61,7 +61,7 @@ To clear barcode filtering while in a filtered report:
 The mobile apps support Barcode filtering only for reports that have only one barcode column across all report data tables. If you scan a barcode for a report that has more than one barcode column, no filtering takes place.
 
 ## Issues with scanning a barcode
-Here are some issus you may encounter when you scan a barcode on a product.
+Here are some issus you may encounter when you scan a barcode on an item.
 
 * You get a message **Couldn't filter report - Looks like this barcode doesn't exist in the report data**: This means that the value of the barcode you scanned doesn't appear in datamodel of the report you chose to filter. This might be the case, for instance, if the product whose barcode you scanned isn't included in the report. You can scan a different product, choose a different report (if more than one report is available), or view the report unfiltered.
 
