@@ -34,6 +34,10 @@ highlightedContent:
     - title: Visuals in Power BI
       itemType: overview
       url: visuals/power-bi-custom-visuals.md
+    # Card
+    - title: Power BI embedded analytics Client APIs
+      itemType: whats-new
+      url: /javascript/api/overview/powerbi/  
       # Card
     - title: Automated  template app configuration
       itemType: concept
@@ -133,6 +137,6 @@ additionalContent:
           summary: Try features and explore APIs.
           url: https://aka.ms/pbieplayground
         # Card
-        - title: JavaScript wiki
-          summary: Explore the JavaScript knowledge base.
-          url: https://github.com/Microsoft/powerbi-javascript/wiki
+        - title: Power BI embedded analytics Client APIs
+          summary: Explore the Power BI embedded analytics Client APIs.
+          url: /javascript/api/overview/powerbi/

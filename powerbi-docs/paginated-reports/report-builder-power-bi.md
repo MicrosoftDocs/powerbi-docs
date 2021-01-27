@@ -16,7 +16,7 @@ ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 
 Power BI Report Builder is a tool for authoring paginated reports that you can publish to the Power BI service.  When you design a paginated report, you're creating a report definition that specifies what data to retrieve, where to get it, and how to display it. When you run the report, the report processor takes the report definition you have specified, retrieves the data, and combines it with the report layout to generate the report. You preview your report in Report Builder. Then publish your report to the Power BI service.
  
-Ready to start authoring? [Install Power BI Report Builder](https://aka.ms/pbireportbuilder) from the Microsoft Download Center.
+Ready to start authoring? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
 
 Prefer learning from videos? Check out the [Video-based course: Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md).
 
