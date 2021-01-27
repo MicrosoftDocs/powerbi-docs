@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 01/25/2021
+ms.date: 01/27/2021
 ---
 
 # Power BI Report Builder change log
@@ -20,19 +20,16 @@ Learn about new items, bug fixes, and known issues for each release of Power BI 
 
 ## January 2021 
 
-Version TBD, released TBD 
+Version 15.6.01487.0002, released January 26, 2021 
 
 ### Bug fixes 
 
 - Changed the name Common Data Service to Dataverse. 
-- [TBD] other bug fixes 
 
 ### Features
 
 - Enabled an improved experience to publish to the service to align with the Power BI service. 
 - Added new Power BI Report Builder and Premium per user icons to create brand consistency and bring a modern, full color experience.
-- [TBD] Edit actions. 
-- [TBD] Oracle legacy mode.
 
 ### Known issues
 
