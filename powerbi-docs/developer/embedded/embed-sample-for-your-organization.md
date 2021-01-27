@@ -233,16 +233,6 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
 :::image type="content" source="media/embed-sample-for-your-organization/azure-ad-framework-configurations.png" alt-text="Screenshot showing the Azure AD app authentication configurations including the web redirect U R I and the selected access token option for the .NET framework app sample.":::
 
-### Reinstall the Power BI JavaScript NuGet package
-
-1. Open [Visual Studio](https://visualstudio.microsoft.com/).
-
-2. Open **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**.
-
-3. Search for **Microsoft.PowerBI.JavaScript**.
-
-4. Reinstall the package. For more information, see [How to reinstall and update packages](/nuget/consume-packages/reinstalling-and-updating-packages).
-
 ### Configure the sample embedding app
 
 1. Open the **Embed for your organization** folder.
