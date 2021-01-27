@@ -35,7 +35,8 @@ Here are examples of two scenarios where barcode scanning is useful:
 1. Point the scanner at a barcode on the item you're interested in. You will see a list of reports that have barcode fields.
 1. Find the report you're looking for and tap to open it on your device, automatically filtered according to the barcode you scanned. If the report doesn't contain the barcode, you'll get the message "Couldn't filter report". In that case you can go back to the list and try another report.
     
->[!NOTE] If there is only one report with a barcode field, you won't get a list of reports, but rather the report will open directly, filtered according to the barcode you scanned. If the report doesn't contain the barcode you scanned, you will also get the message "Couldn't filter report".
+>[!NOTE]
+>If there is only one report with a barcode field, you won't get a list of reports, but rather the report will open directly, filtered according to the barcode you scanned. If the report doesn't contain the barcode you scanned, you will also get the message "Couldn't filter report".
 
 ## Filter by other barcodes while in a report
 While looking at a report filtered by a barcode on your device, you may want to filter the same report by a different barcode.
