@@ -20,8 +20,8 @@ For related "What's New" information, see:
 >The Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## January 2021
-### Workspace support with Power BI free license
-Users with a Power BI free license can now view and access workspaces where they've been added as viewer directly from the workspaces list. This change is applicable for content that's hosted on a Power BI Premium capacity.
+### Workspace support with a Power BI free license
+Users with a Power BI free license can now view and access workspaces where they've been added as viewers directly from the workspaces list. This change is applicable for content that's hosted on a Power BI Premium capacity.
 
 ## December 2020
 ### We've added anomaly detection to the mobile apps
