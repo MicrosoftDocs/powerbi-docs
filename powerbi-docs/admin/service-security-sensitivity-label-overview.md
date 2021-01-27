@@ -197,6 +197,8 @@ To access sensitivity labels in either of these centers, navigate to **Classific
 
 * Information protection in Power BI Desktop doesn’t support **B2B** and **multi-tenant scenarios**.
 
+* If you overwrite a labeled dataset or report in the service with an unlabeled .pbix file, the labels in the service will be retained.
+
 ## Next steps
 
 This article provided an overview of data protection in Power BI. The following articles provide more details about data protection in Power BI. 
