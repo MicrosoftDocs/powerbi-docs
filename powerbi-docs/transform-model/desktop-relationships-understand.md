@@ -48,7 +48,7 @@ A model relationship relates one column in a table to one column in a different 
 
 ### Cardinality
 
-Each model relationship must be defined with a cardinality type. There are four cardinality type options, representing the data characteristics of the "from" and "to" related columns. The "one" side means the column contains unique values; the "two" side means the column can contain duplicate values.
+Each model relationship must be defined with a cardinality type. There are four cardinality type options, representing the data characteristics of the "from" and "to" related columns. The "one" side means the column contains unique values; the "many" side means the column can contain duplicate values.
 
 > [!NOTE]
 > If a data refresh operation attempts to load duplicate values into a "one" side column, the entire data refresh will fail.
