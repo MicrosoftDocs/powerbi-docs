@@ -36,19 +36,17 @@ You can have more fine-grained control over the certificate revocation check wit
 |Unknown  |  ❌    |  ✔   |    ✔  |
 |Not revoked  | ✔  |    ✔ |    ✔  |
 
-The simple Enable or Disable checkbox is still in the Power BI Desktop user interface. To use the more fine-grained control, set the following DWORD registry value: `DisableCertificateRevocationCheck`. You set this value in the Power BI Desktop registry key:
+The simple Enable or Disable checkbox is still in the Power BI Desktop user interface. To use the more fine-grained control, set the following DWORD registry value: `DisableCertificateRevocationCheck`. You set this value in the Power BI Desktop registry key. It's one of these, depending on your operating system:
 
-- On a 32-bit operating system: 
+```
+HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Microsoft Power BI Desktop
+```
 
-    ```
-    HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Microsoft Power BI Desktop
-    ```
+Or:
 
-- On a 64-bit operation system:
-
-    ```
-    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop
-    ```
+```
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop
+```
 
 Set the registry value to one of the following values: 
 
