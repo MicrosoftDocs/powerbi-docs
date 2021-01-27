@@ -19,6 +19,10 @@ For related "What's New" information, see:
 >[!NOTE]
 >The Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
+## January 2021
+### Workspace support with a Power BI free license
+Users with a Power BI free license can now view and access workspaces where they've been added as viewers directly from the workspaces list. This change is applicable for content that's hosted on a Power BI Premium capacity.
+
 ## December 2020
 ### We've added anomaly detection to the mobile apps
 If the report creator has set up anomaly detection for a report visual, you can see if there are unexpectedly high peaks or low dips in your data caused by data outliers (i.e., anomalies). [Learn more!](mobile-reports-in-the-mobile-apps.md#investigate-anomalies-in-time-series-data)
