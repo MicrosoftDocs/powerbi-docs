@@ -59,7 +59,11 @@ To clear barcode filtering while in a filtered report:
 
 ## Limitations
 
-* Barcode filtering is not indicated in any way in the filters pane. To know whether a report is currently filtered by a barcode, look at the icon on the Barcode Scanner menu item. ![Filtered icon](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png) indicates an active barcode filter. ![Unfiltered icon](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-unfiltered-icon.png) indicates no active barcode filter. 
+* The Filters pane gives no indication of barcode filtering. To know whether a report is currently filtered by a barcode, look at the icon on the Barcode Scanner menu item:
+
+    ![Filtered icon](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png) indicates that the report is currently filtered by a barcode.
+    
+    ![Unfiltered icon](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-unfiltered-icon.png) indicates that the report is currently not filtered by a barcode. 
 * The mobile apps support Barcode filtering only for reports that have only one barcode column across all report data tables. If you scan a barcode for a report that has more than one barcode column, no filtering takes place.
 
 ## Issues with scanning a barcode
