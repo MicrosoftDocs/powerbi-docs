@@ -15,9 +15,9 @@ LocalizationGroup:
 
 This article describes how to configure incremental refresh for **datasets**. To learn about configuring incremental refresh for dataflows, see [Incremental refresh in Premium features of dataflows](../transform-model/dataflows/dataflows-premium-features.md#incremental-refresh).
 
-Configuring incremental refresh includes defining refresh parameters,  applying filters, and defining a policy that is applied when a manual or scheduled refresh operation is performed on the dataset in the service. Before completing these steps, be sure to fully understand the functionality described in [Incremental refresh overview](service-incremental-refresh-overview.md). 
+Configuring incremental refresh includes defining refresh parameters,  applying filters, and defining a policy that is applied when a manual or scheduled refresh operation is performed on the dataset in the service. Before completing these steps, be sure to fully understand the functionality described in [Incremental refresh overview](service-incremental-refresh-overview.md).
 
-Examples in this article show configuring incremental refresh for a single fact table, FactInternetSales, importing data from the sample AdventureWorksDW database (Yeah, we know. It's an old, but popular sample dataset:). Incremental refresh policies can be defined for more than one table in the same dataset by using the same RangeStart and RangeEnd parameters.
+Examples in this article show configuring incremental refresh for a single fact table, FactInternetSales, importing data from the sample AdventureWorksDW database (Yeah, we know. It's an old, but popular sample dataset:). For models with more than one fact table, incremental refresh policies can be defined for more than one table in the same dataset by using the same RangeStart and RangeEnd parameters.
 
 ## Define parameters
 
@@ -55,9 +55,11 @@ With RangeStart and RangeEnd parameters defined, you can then apply a filter bas
 
 1. In Power Query Editor, click **Close & Apply**. Power Query will then import data based on the filters defined in the RangeStart and RangeEnd parameters, and any other filters you defined.
 
-## (Optional) Convert date/time to integer
+## Convert DateTime to integer
 
-The data type of the RangeStart and RangeEnd parameters must be of date/time data type. However, for many data sources, tables do not contain a column of date/time data type, but instead have a date column of integer surrogate keys in the form of *yyyymmdd*. You can create a function that converts the date/time value in the parameters to match the integer surrogate key of the data source table. The function is then called in a filter step. This step is required if the data source table contains *only* a surrogate key as integer data type.
+This task is optional.
+
+The data type of the RangeStart and RangeEnd parameters must be of date/time data type. However, for many data sources, tables do not contain a column of date/time data type, but instead have a date column of integer surrogate keys in the form of *yyyymmdd*. You can create a function that converts the date/time value in the parameters to match the integer surrogate key of the data source table. The function is then called in a filter step. This step is required if the data source table contains *only* a surrogate key as integer data type. 
 
 1. In Power Query Editor, click **Get data** > **Blank Query**.
 
