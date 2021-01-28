@@ -49,7 +49,7 @@ This section describes the operation of the following supported features:
 * [Filters](#filters)
 * [Authentication](#authentication)
 * [Row Level Security (RLS)](#row-level-security-rls)
-* [Data protection](data-protection)
+* [Data protection](#data-protection)
 * [Localization](#localization)
 
 ### Selecting which pages to print
