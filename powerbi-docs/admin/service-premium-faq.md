@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 01/28/2021
 LocalizationGroup: Premium
 ---
 # Power BI Premium FAQ
@@ -55,7 +55,7 @@ The following examples outline how customers can meet their BI needs using a com
 | **Solution:**<br/><br/>1. Power BI Pro for every user<br/><br/>2. Look to expand the opportunity by adding Power BI Premium – see the additional scenarios |**Solution:**<br/><br/>1. Power BI Pro for users that require self-service BI and collaboration<br/><br/>2. Add Power BI Premium to be able to distribute BI content to users who only need to consume |**Solution:**<br/><br/>1. Power BI Pro for users that require self-service BI and collaboration<br/><br/>2. Add Power BI Premium to be able to publish reports on-premises – and move to the cloud as appropriate |**Solution:**<br/><br/>1. Power BI Pro for every user in the finance department<br/><br/>2. Add Power BI Premium for the dedicated resources – in the cloud – to be used exclusively by the finance team, providing larger scale and greater performance |
 
 **How much does Power BI Premium cost? How many SKUs will you make available?**  
-Power BI Premium is purchased based on the number of virtual cores. You can see prices at the [Power BI pricing page](https://powerbi.microsoft.com/pricing/). For more information on nodes and v-cores, see the [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper). Also use this [calculator](https://powerbi.microsoft.com/calculator/) to get an estimate of how much Premium capacity you may need.
+Power BI Premium is purchased based on the number of virtual cores. You can see prices at the [Power BI pricing page](https://powerbi.microsoft.com/pricing/). For more information on nodes and v-cores, see the [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper).
 
 **What do you mean by "capacity"?**  
 A capacity is an amount of computing power that is reserved to your organization for its Power BI utilization. It is provisioned by a service admin through the Power BI Premium admin portal, in the **Capacity Management** page.
@@ -65,9 +65,6 @@ Power BI Premium is billed monthly with an annual commitment.
 
 **How do I buy Power BI Premium?**  
 Power BI Premium is available from the Microsoft 365 admin center. For more information, see [How to purchase Power BI Premium](service-admin-premium-purchase.md). You can also contact your Microsoft representative for more information.
-
-**How do I know how much Power BI Premium capacity I need to purchase?**  
-Use the [cost calculator](https://powerbi.microsoft.com/calculator/) to estimate how much Power BI Premium capacity you may need.
 
 **Is Power BI Premium available with Office 365 E5?**  
 Power BI Premium is available as an add-on to Power BI Pro. Office 365 E5 includes Power BI Pro. E5 customers can purchase Premium as an add-on to their existing Pro licenses.
