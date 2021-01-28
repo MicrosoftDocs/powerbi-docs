@@ -58,7 +58,7 @@ Specify the pages you want to print according to the [Get Pages](/rest/api/power
 
 ### Exporting a single visual
 
-You can specify a single visual to export using `visualName` in the [ExportReportPage](/rest/api/power-bi/reports/exporttofile#exportreportpage) API.
+You can specify a single visual to export using the `visualName` value in the [ExportReportPage](/rest/api/power-bi/reports/exporttofile#exportreportpage) API.
 
 ### Bookmarks
 
