@@ -41,9 +41,15 @@ When the export is complete, the polling API call returns a [Power BI URL](/rest
 
 ## Supported features
 
+This section lists the main features supported by the *export Power BI report to file* feature.
+
 ### Selecting which pages to print
 
 Specify the pages you want to print according to the [Get Pages](/rest/api/power-bi/reports/getpages) or [Get Pages in Group](/rest/api/power-bi/reports/getpagesingroup) return value. You can also specify the order of the pages you're exporting.
+
+### Exporting a single visual
+
+You can specify a single visual to export using `visualName` in the [ExportReportPage](/rest/api/power-bi/reports/exporttofile#exportreportpage) API. 
 
 ### Bookmarks
 
