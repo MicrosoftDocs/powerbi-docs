@@ -3845,5 +3845,9 @@
             "redirect_url": "/power-bi/developer/embedded/monitor-power-bi-embedded",
             "redirect_document_id": false
         }                                                         
-    ]
+        {
+            "source_path": "powerbi-docs//power-bi/admin/power-bi-whitelist-urls.md",
+            "redirect_url": "/power-bi/power-bi/admin/power-bi-allow-list-urls",
+            "redirect_document_id": false
+        }      ]
 }
