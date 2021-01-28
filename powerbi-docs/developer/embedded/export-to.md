@@ -41,7 +41,16 @@ When the export is complete, the polling API call returns a [Power BI URL](/rest
 
 ## Supported features
 
-This section lists the main features supported by the *export Power BI report to file* feature.
+This section describes the operation of the following supported features:
+
+* [Selecting pages](#selecting-which-pages-to-print)
+* [Exporting a single visual](#exporting-a-single-visual)
+* [Bookmarks](#bookmarks)
+* [Filters](#filters)
+* [Authentication](#authentication)
+* [Row Level Security (RLS)](#row-level-security-rls)
+* [Data protection](data-protection)
+* [Localization](#localization)
 
 ### Selecting which pages to print
 
@@ -49,7 +58,7 @@ Specify the pages you want to print according to the [Get Pages](/rest/api/power
 
 ### Exporting a single visual
 
-You can specify a single visual to export using `visualName` in the [ExportReportPage](/rest/api/power-bi/reports/exporttofile#exportreportpage) API. 
+You can specify a single visual to export using `visualName` in the [ExportReportPage](/rest/api/power-bi/reports/exporttofile#exportreportpage) API.
 
 ### Bookmarks
 
