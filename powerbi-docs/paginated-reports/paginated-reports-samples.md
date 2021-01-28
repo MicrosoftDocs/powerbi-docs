@@ -7,7 +7,7 @@ ms.reviewer: 'swgupt'
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/10/2020
+ms.date: 01/28/2021
 ---
 
 # Sample Power BI paginated reports
@@ -123,17 +123,17 @@ Data source: Included in the .rdl
 
 Regional Sales is a self-contained paginated report sample. The scenario for this report is that you want a pixel-perfect printable report to see total sales vs. quota. It showcases these features:
 
-- The use of a parameter to show selected details in the table .
+- The use of a parameter to show selected details in the table.
 - Headers and footers.
 - Report items such as text boxes, lines, and rectangles using expression placeholders.
 - Gauge panels.
-- Line chart placed inside the table
+- Line chart placed inside the table.
 
 Data source: Included in the .rdl
 
 ## Organization Expenditures
 
-:::image type="content" source="media/paginated-reports-samples/paginated-report-orgnization-expenditures.png" alt-text="Screenshot of sample Power BI paginated report for Organization Expenditures.":::
+:::image type="content" source="media/paginated-reports-samples/paginated-report-organization-expenditures.png" alt-text="Screenshot of sample Power BI paginated report for Organization Expenditures.":::
 
 Organization Expenditures is a self-contained paginated report sample. The scenario for this report is that you want a pixel-perfect printable expense report to see breakdown of expenses in your organization. It showcases these features:
 
@@ -142,7 +142,6 @@ Organization Expenditures is a self-contained paginated report sample. The scena
 - Charts such as treemap and sun burst.
 
 Data source: Included in the .rdl
-
   
 ## Next steps
 
