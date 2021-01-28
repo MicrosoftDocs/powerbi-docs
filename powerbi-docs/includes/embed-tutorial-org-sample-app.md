@@ -9,7 +9,10 @@ ms.date: 13/09/2020
 ms.custom: include file
 ---
 
-2. Sign into the embedding sample application. 
+2. Sign into the embedding sample application.
+
+    >[!NOTE]
+    >During your first sign in, you'll be prompted to allow Azure AD permissions for the app.
 
 3. When the embedding sample application loads, select the Power BI content you want to embed and then select **Embed**.
 
