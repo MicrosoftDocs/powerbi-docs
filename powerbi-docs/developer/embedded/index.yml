@@ -32,6 +32,10 @@ landingContent:
             url: azure-pbie-what-is-power-bi-embedded.md
           - text: "Frequently asked questions"
             url: embedded-faq.md
+      - linkListType: reference
+        links:
+          - text: "Power BI Developer in a Day course"
+            url: /power-bi/learning-catalog/developer-online-course
 
   # Card (optional)
   - title: Client APIs

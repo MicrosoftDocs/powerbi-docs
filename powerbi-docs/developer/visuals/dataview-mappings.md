@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 06/18/2019
+ms.date: 01/28/2021
 ---
 
 # Understand data view mapping in Power BI visuals
@@ -424,7 +424,7 @@ Code sample for processing categorical data view mapping is described below. The
 "use strict";
 import powerbi from "powerbi-visuals-api";
 import DataView = powerbi.DataView;
-import DataViewDataViewCategoricalSingle = powerbi.DataViewCategorical;
+import DataViewCategorical = powerbi.DataViewCategorical;
 import DataViewValueColumnGroup = powerbi.DataViewValueColumnGroup;
 import PrimitiveValue = powerbi.PrimitiveValue;
 // standart imports
