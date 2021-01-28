@@ -99,7 +99,7 @@ When your VM opens, here are the items you see on the desktop.
 |---------|---------|
 |![Number 1](media/tutorial-explore-report-server-web-portal/number-1.png) | Sample Power BI (.PBIX) reports |
 |![Number 2](media/tutorial-explore-report-server-web-portal/number-2.png) | Links to Power BI Report Server documentation |
-|![Number 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Starts Power BI Desktop for Power BI report Server (January 2021) |
+|![Number 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Starts Power BI Desktop for Power BI Report Server (January 2021) |
 |![Number 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Opens Power BI Report Server web portal in the browser |
 |![Number 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Starts SQL Server Data Tools, for creating paginated (.RDL) reports |
 

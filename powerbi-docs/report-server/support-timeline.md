@@ -30,7 +30,7 @@ This support policy allows us to deliver innovation to customers at a rapid rate
 | October 2020 | October 2020 | October 2021
 | January 2021 | January 2021 | January 2022
 
-To download Power BI Report Server, and Power BI Desktop for Power BI report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+To download Power BI Report Server, and Power BI Desktop for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
 ## Next steps
 [What's new in Power BI Report Server](whats-new.md)  

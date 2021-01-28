@@ -16,9 +16,9 @@ You can store and manage Power BI reports on premises in the Power BI Report Ser
 
 Here are four quick steps to get you started.
 
-## Step 1: Install Power BI Desktop for Power BI report Server
+## Step 1: Install Power BI Desktop for Power BI Report Server
 
-If you've already created Power BI reports in Power BI Desktop, then you're almost ready to create Power BI reports for Power BI Report Server. We recommend installing the version of Power BI Desktop for Power BI report Server so you know the server and the app are always in sync. You can have both versions of Power BI Desktop on the same computer.
+If you've already created Power BI reports in Power BI Desktop, then you're almost ready to create Power BI reports for Power BI Report Server. We recommend installing the version of Power BI Desktop for Power BI Report Server so you know the server and the app are always in sync. You can have both versions of Power BI Desktop on the same computer.
 
 1. In the report server web portal, select the **Download** arrow > **Power BI Desktop**.
 
@@ -96,7 +96,7 @@ There are so many great resources for creating reports in Power BI Desktop. This
 * Guided learning: [Explore Power BI Desktop](/learn/modules/get-data-power-bi/2-getting-started-power-bi-desktop)
 
 ### Power BI Report Server
-* [Install Power BI Desktop for Power BI report Server](install-powerbi-desktop.md)  
+* [Install Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md)  
 * [What is Power BI Report Server?](get-started.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

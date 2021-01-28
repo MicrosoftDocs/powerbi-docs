@@ -1,6 +1,6 @@
 ---
-title: Install Power BI Desktop for Power BI report Server
-description: Learn how to install Power BI Desktop for Power BI report Server
+title: Install Power BI Desktop for Power BI Report Server
+description: Learn how to install Power BI Desktop for Power BI Report Server
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -10,15 +10,15 @@ ms.topic: how-to
 ms.date: 10/16/2020
 ---
 
-# Install Power BI Desktop for Power BI report Server
+# Install Power BI Desktop for Power BI Report Server
 
 To create Power BI reports for Power BI Report Server, you need to download and install the version of Power BI Desktop that's optimized for Power BI Report Server. This release is different from the Power BI Desktop used with the Power BI service. For example, the version of Power BI Desktop for the Power BI service includes preview features. Those features aren't in the Power BI Report Server version until they're generally available. Using this release makes sure that the report server can interact with a known version of the reports and model. 
 
-Not to worry. You can install Power BI Desktop, and Power BI Desktop for Power BI report Server, side by side on the same computer.
+Not to worry. You can install Power BI Desktop, and Power BI Desktop for Power BI Report Server, side by side on the same computer.
 
 ## Download and install Power BI Desktop
 
-The easiest way to be sure you have the most up-to-date version of Power BI Desktop for Power BI report Server is to start from the web portal of your report server.
+The easiest way to be sure you have the most up-to-date version of Power BI Desktop for Power BI Report Server is to start from the web portal of your report server.
 
 1. In the report server web portal, select the **Download** arrow > **Power BI Desktop**.
 
@@ -47,9 +47,9 @@ It's easy to verify that you're using the correct Power BI Desktop: Look at the 
 The version of Power BI Desktop for the Power BI service doesn't have the month and year in the title bar.
 
 ## File extension association
-Say you've installed both Power BI Desktop and Power BI Desktop for Power BI report Server on the same machine. Your most recent installation of Power BI Desktop has the file association with .pbix files. Thus, when you double-click a .pbix file, it launches the Power BI Desktop you installed most recently.
+Say you've installed both Power BI Desktop and Power BI Desktop for Power BI Report Server on the same machine. Your most recent installation of Power BI Desktop has the file association with .pbix files. Thus, when you double-click a .pbix file, it launches the Power BI Desktop you installed most recently.
 
-If you have Power BI Desktop and then install Power BI Desktop for Power BI report Server, all .pbix files open in Power BI Desktop for Power BI report Server by default. If you would rather have Power BI Desktop be the default to launch when opening a .pbix file, reinstall [Power BI Desktop from the Microsoft Store](https://aka.ms/pbidesktopstore).
+If you have Power BI Desktop and then install Power BI Desktop for Power BI Report Server, all .pbix files open in Power BI Desktop for Power BI Report Server by default. If you would rather have Power BI Desktop be the default to launch when opening a .pbix file, reinstall [Power BI Desktop from the Microsoft Store](https://aka.ms/pbidesktopstore).
 
 You can always open the version of Power BI Desktop you want to use first. And then open the file from within Power BI Desktop.
 
@@ -61,7 +61,7 @@ Power BI reports in Power BI Report Server, in the Power BI service (`https://ap
 
 ### Selecting a language
 
-For Power BI Desktop for Power BI report Server, you select the language when you install the app. You can't change it after, but you can install a version in another language.
+For Power BI Desktop for Power BI Report Server, you select the language when you install the app. You can't change it after, but you can install a version in another language.
 
 ### Report visuals in a browser
 
@@ -88,7 +88,7 @@ Power BI Report Server reports don’t support these features in the Power BI mo
 
 ### Custom Security
 
-Power BI Desktop for Power BI report Server does not support custom security. If your Power BI Report Server is configured with a custom security extension, you can't save a Power BI report from Power BI Desktop (optimized for Power BI Report Server) to the Power BI Report Server instance. You need to save the .pbix report file from Power BI Desktop and upload it to the Power BI Report Server portal site.
+Power BI Desktop for Power BI Report Server does not support custom security. If your Power BI Report Server is configured with a custom security extension, you can't save a Power BI report from Power BI Desktop (optimized for Power BI Report Server) to the Power BI Report Server instance. You need to save the .pbix report file from Power BI Desktop and upload it to the Power BI Report Server portal site.
 
 ### Saving reports to a Power BI Report Server in a different domain
 
