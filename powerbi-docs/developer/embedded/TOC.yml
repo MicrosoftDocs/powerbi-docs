@@ -96,6 +96,8 @@
         href: /rest/api/power-bi-embedded/
       - name: Power BI REST APIs
         href: /rest/api/power-bi/
+    - name: "Power BI Developer in a Day course"
+      href: /power-bi/learning-catalog/developer-online-course         
     - name: "Monitor Power BI Embedded data reference"
       href: monitor-power-bi-embedded-reference.md        
     - name: "Power BI libraries"
