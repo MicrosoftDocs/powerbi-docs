@@ -22,7 +22,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
     - *Version: 1.10.7698.12811 (Build 15.0.1105.194), Released: January 21, 2021*
         - Features
             - New Icons releate to Power BI and Power BI reports.
-            - New portal preview experience added behide UsePortalV2 feature switch in catalog's ConfigurationInfo table.
+            - New portal preview experience added behind 'UsePortalV2' feature switch in ReportServer catalog's ConfigurationInfo table.
         - Bug fixes
             - Fixed issue with scheduled refresh of Power BI reports with certain models using enhanced model metadata.
             - Fixed issue editing data driven subscriptions in portal.
