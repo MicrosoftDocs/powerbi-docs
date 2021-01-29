@@ -26,7 +26,27 @@ LocalizationGroup: Conceptual
 
 ## Introduction
 
-**Power BI** is an online software service (_SaaS_, or Software as a Service) offering from Microsoft that lets you easily and quickly create self-service Business Intelligence dashboards, reports, datasets, and visualizations. With Power BI, you can connect to many different data sources, combine and shape data from those connections, then create reports and dashboards that can be shared with others.
+**Power BI** is an online software service (*SaaS*, or Software as a Service) offering from Microsoft that lets you easily and quickly create self-service Business Intelligence dashboards, reports, datasets, and visualizations. With Power BI, you can connect to many different data sources, combine and shape data from those connections, then create reports and dashboards that can be shared with others.
+
+The world is rapidly changing; organizations are going through an accelerated digital transformation, and we are seeing a massive increase in remote working, increased customer demand for online services, and increased use of advanced technologies in operations and business decision-making. And all of this is powered by the cloud.
+
+As the transition to the cloud has changed from a trickle to a flood, and with the new, exposed surface area that comes with it, more and more companies are asking *how secure is my data in the cloud?* and *what end-to protection is available to prevent my sensitive data from leaking?* And for the BI platforms that often handle some of the most strategic information in the enterprise, these questions are doubly important.
+
+The decades-old foundation of the BI security model - object-level and row-level security - while still important, are clearly no longer sufficient for providing the kind of security that is needed in the cloud era. Instead, organizations must look for a cloud-native, multi-tiered, defense-in-depth security solution for their business intelligence data.
+
+Power BI was built to provide industry-leading complete and hermetic protection for data. The product has earned the highest security classifications available in the industry, and today many national security agencies, financial institutions, and health care providers entrust it with their most sensitive information.
+
+It all starts with the foundation. After a rough period in the early 2000s, Microsoft made massive investments to address its vulnerabilities, and in the following decades built a very strong security stack that goes as deep as the machine on-chip bios kernel and extends all the way up to the end-user experience. These deep investments continue, and today over 3,500 Microsoft engineers are engaged in building and enhancing its security stack and proactively addressing the ever-shifting threat landscape. With billions of computers, trillions of logins, and countless zettabytes of information entrusted to Microsoft’s protection, the company now possesses the most advanced security stack in the tech industry and is broadly viewed as the global leader in fighting malicious actors.
+
+Power BI builds on this very strong foundation. It uses the same security stack that earned Azure the right to serve and protect the world’s most sensitive data, and it integrates with the most advanced information protection and compliance tools of Microsoft 365. On top of these, it delivers security through multi-layered security measures, resulting in end-to-end protection designed to deal with the unique challenges of the cloud.
+
++++++++
+
+To provide an end-to-end solution to protect sensitive assets, the product team needed to address challenges on multiple simultaneous fronts: “How we control who connects? From where they can connect? How they connect and how we can control connections?” it continues to “how is the data stored? How is it encrypted? What controls do I have on my data?” Moreover, “How can I control and protect sensitive data? How do I ensure this data cannot leak outside the organization?” and ends with, “How do I audit who conducts what operations? How do I react quickly in case of suspicious activity within the service?”.
+
+This document provides a comprehensive answer to all those questions; it starts with an overview of the service architecture and explains how main flows in the system work, then how users authenticate to Power BI and data connections are established, and then describes how Power BI stores and moves data through the service and continues to security features that allows you as the admin of the service protect your most valuable assets.
+
++++++++
 
 The Power BI service is governed by the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31), and the [Microsoft Enterprise Privacy Statement](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). For the location of data processing, refer to the Location of Data Processing terms in the Microsoft Online Services Terms. For compliance information, the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview) is the primary resource for Power BI. The Power BI team is working hard to bring its customers the latest innovations and productivity. Power BI is currently in Tier D of the Microsoft 365 Compliance Framework. Learn more about compliance in the [Microsoft Trust Center](/compliance/regulatory/offering-home).
 
