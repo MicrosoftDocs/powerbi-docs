@@ -52,7 +52,7 @@ After you install the matching Oracle client driver, you can connect to an Oracl
    > [!NOTE]
    > If you are using a local database, or autonomous database connections, you may need to place the server name in quotation marks to avoid connection errors. 
       
-4. If you want to import data by using a native database query, put your query in the **SQL statement** box, which appears when you expand the **Advanced options** section of the **Oracle database** dialog.
+4. If you want to import data by using a native database query, put your query in the **SQL statement** box, which appears when you expand the **Advanced options** section of the **Oracle database** dialog.  Power BI Desktop does not support Oracle native queries that execute a stored procedure and Oracle native queries in "begin ... end" block does not return any result set.  
    
    ![Expand Advanced options](media/desktop-connect-oracle-database/connect-oracle-database_4.png)
 
