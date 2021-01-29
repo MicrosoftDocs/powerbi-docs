@@ -2,7 +2,7 @@
 title: "DAX: Use COUNTROWS instead of COUNT"
 description: Guidance on when to use the COUNTROWS functions.
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi
