@@ -2,7 +2,7 @@
 title: Access the Power BI activity log
 description: Guidance and sample PowerShell script code to work with the Power BI activity log.
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -25,7 +25,7 @@ A PowerShell sample is available to help you learn how to filter and retrieve Po
 - Retrieve a list of users for direct report sharing.
 
 > [!NOTE]
-> You'll need to have some familiarity with the [Power BI Admin API](/rest/api/power-bi/admin) and [Power BI PowerShell modules](/powershell/power-bi/overview?view=powerbi-ps). PowerShell modules must be installed prior to executing these script blocks. For more information, see [Track user activities in Power BI](../admin/service-admin-auditing.md#use-the-activity-log).
+> You'll need to have some familiarity with the [Power BI Admin API](/rest/api/power-bi/admin) and [Power BI PowerShell modules](/powershell/power-bi/overview?view=powerbi-ps&preserve-view=true). PowerShell modules must be installed prior to executing these script blocks. For more information, see [Track user activities in Power BI](../admin/service-admin-auditing.md#use-the-activity-log).
 >
 > There can be a lag of up to 30 minutes to retrieve Power BI events.
 
