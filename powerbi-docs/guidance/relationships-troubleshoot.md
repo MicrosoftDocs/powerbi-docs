@@ -2,7 +2,7 @@
 title: Relationship troubleshooting guidance
 description: Guidance for troubleshooting model relationship issues.
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi

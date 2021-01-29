@@ -2,7 +2,7 @@
 title: "DAX: Avoid converting BLANKs to values"
 description: Guidance on converting BLANKs to values.
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi

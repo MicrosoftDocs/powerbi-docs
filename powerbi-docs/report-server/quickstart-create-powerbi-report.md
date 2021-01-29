@@ -16,13 +16,13 @@ You can store and manage Power BI reports on premises in the Power BI Report Ser
 
 Here are four quick steps to get you started.
 
-## Step 1: Install Power BI Desktop optimized for Power BI Report Server
+## Step 1: Install Power BI Desktop for Power BI Report Server
 
-If you've already created Power BI reports in Power BI Desktop, then you're almost ready to create Power BI reports for Power BI Report Server. We recommend installing the version of Power BI Desktop optimized for Power BI Report Server so you know the server and the app are always in sync. You can have both versions of Power BI Desktop on the same computer.
+If you've already created Power BI reports in Power BI Desktop, then you're almost ready to create Power BI reports for Power BI Report Server. We recommend installing the version of Power BI Desktop for Power BI Report Server so you know the server and the app are always in sync. You can have both versions of Power BI Desktop on the same computer.
 
 1. In the report server web portal, select the **Download** arrow > **Power BI Desktop**.
 
-    ![Download Power BI Desktop from the web portal](media/quickstart-create-powerbi-report/report-server-download-web-portal.png)
+    ![Download Power BI Desktop from the web portal](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
     Or go to the [Power BI Report Server](https://powerbi.microsoft.com/report-server/) home page and select **Advanced download options**.
 
@@ -38,9 +38,9 @@ If you've already created Power BI reports in Power BI Desktop, then you're almo
 
 2. At the end of the installation, check **Start Power BI Desktop now**.
    
-    It starts automatically and you're ready to go. You can tell you have the right version because **Power BI Desktop (October 2020)** is in the title bar.
+    It starts automatically and you're ready to go. You can tell you have the right version because **Power BI Desktop (January 2021)** is in the title bar.
 
-    ![Power BI Desktop October 2020](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-may-2020.png)
+    ![Power BI Desktop January 2021](media/install-powerbi-desktop/power-bi-report-server-desktop.png)
 
 3. If you're not familiar with Power BI Desktop, consider watching the videos on the welcome screen.
    
@@ -96,7 +96,7 @@ There are so many great resources for creating reports in Power BI Desktop. This
 * Guided learning: [Explore Power BI Desktop](/learn/modules/get-data-power-bi/2-getting-started-power-bi-desktop)
 
 ### Power BI Report Server
-* [Install Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md)  
+* [Install Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md)  
 * [What is Power BI Report Server?](get-started.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
