@@ -2,7 +2,7 @@
 title: "DAX: Use variables to improve your formulas"
 description: Guidance on using variables in DAX expressions.
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi

@@ -3844,6 +3844,10 @@
             "source_path": "powerbi-docs/developer/embedded/azure-pbie-diag-logs.md",
             "redirect_url": "/power-bi/developer/embedded/monitor-power-bi-embedded",
             "redirect_document_id": false
-        }                                                         
-    ]
+        },                                                         
+        {
+            "source_path": "powerbi-docs/admin/power-bi-whitelist-urls.md",
+            "redirect_url": "/power-bi/admin/power-bi-allow-list-urls",
+            "redirect_document_id": false
+        }      ]
 }

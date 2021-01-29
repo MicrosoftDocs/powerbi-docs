@@ -38,9 +38,9 @@ If self-service sign-up is enabled, the value of **AllowAdHocSubscriptions** is 
 
 ### Before you begin
 
-These steps use Azure Active Directory PowerShell commands to change the value of the **AllowAdHocSubscriptions** setting. You must have the Azure AD PowerShell module installed for these commands to be available. For more information about using PowerShell, see [Getting started with Windows PowerShell](/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-7).
+These steps use Azure Active Directory PowerShell commands to change the value of the **AllowAdHocSubscriptions** setting. You must have the Azure AD PowerShell module installed for these commands to be available. For more information about using PowerShell, see [Getting started with Windows PowerShell](/powershell/scripting/getting-started/getting-started-with-windows-powershell).
 
-To install the Azure AD module, start Windows PowerShell as an administrator. Make sure your local execution policy allows you to run scripts. If you run into problems, see [PowerShell execution policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7#powershell-execution-policies) to learn how to change your local policy.
+To install the Azure AD module, start Windows PowerShell as an administrator. Make sure your local execution policy allows you to run scripts. If you run into problems, see [PowerShell execution policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies#powershell-execution-policies) to learn how to change your local policy.
 
 Run the following command to install the Azure AD module:
 
@@ -84,9 +84,9 @@ If self-service purchasing is enabled, the value of **AllowSelfServicePurchase**
 
 ### Before you begin
 
-These steps use MSCommerce PowerShell commands to change the value of the **AllowSelfServicePurchase** setting. You must have the MSCommerce PowerShell module installed for these commands to be available. For more information about using PowerShell, see [Getting started with Windows PowerShell](/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-7).
+These steps use MSCommerce PowerShell commands to change the value of the **AllowSelfServicePurchase** setting. You must have the MSCommerce PowerShell module installed for these commands to be available. For more information about using PowerShell, see [Getting started with Windows PowerShell](/powershell/scripting/getting-started/getting-started-with-windows-powershell).
 
-To install the MSCommerce module, start Windows PowerShell as an administrator. Make sure your local execution policy allows you to run scripts. If you run into problems, see [PowerShell execution policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7#powershell-execution-policies) to learn how to change your local policy.
+To install the MSCommerce module, start Windows PowerShell as an administrator. Make sure your local execution policy allows you to run scripts. If you run into problems, see [PowerShell execution policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies#powershell-execution-policies) to learn how to change your local policy.
 
 Run the following command to install the MSCommerce module:
 
@@ -122,5 +122,5 @@ After running this command, self-service purchase for Power BI is disabled for a
 
 For more information about the self-service purchase in Power BI and the rest of the Power Platform, see these articles:
 
-- [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide#admin-capabilities)
-- [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](/microsoft-365/commerce/subscriptions/allowselfservicepurchase-powershell?view=o365-worldwide)
+- [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq#admin-capabilities)
+- [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](/microsoft-365/commerce/subscriptions/allowselfservicepurchase-powershell)
