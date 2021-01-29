@@ -1,13 +1,13 @@
 ---
 title: Power BI security whitepaper
 description: Whitepaper that discusses and describes security architecture and implementation for Power BI
-author: davidiseminger
-ms.author: davidi
+author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
-ms.date: 05/14/2020
+ms.date: 01/29/2021
 LocalizationGroup: Conceptual
 ---
 
