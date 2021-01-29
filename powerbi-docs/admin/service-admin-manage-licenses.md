@@ -31,11 +31,11 @@ Your active Power BI subscriptions are listed along with any other subscriptions
 
   ![Screenshot of the Power B I subscription, showing a free subscription.](media/service-admin-manage-licenses/power-bi-free-user-activated.png)
 
-This type of subscription is created for you when users take advantage of self-service sign-up. To read more, see [Power BI in your organization](/microsoft-365/admin/misc/power-bi-in-your-organization?view=o365-worldwide).
+This type of subscription is created for you when users take advantage of self-service sign-up. To read more, see [Power BI in your organization](/microsoft-365/admin/misc/power-bi-in-your-organization).
 
 ## Manage user licenses in Microsoft 365
 
-To use Microsoft 365 admin center to manage user licenses, see the [Business subscriptions and billing documentation](/microsoft-365/commerce/?view=o365-worldwide).
+To use Microsoft 365 admin center to manage user licenses, see the [Business subscriptions and billing documentation](/microsoft-365/commerce/).
 
 ## Manage user licenses in Azure portal
 
