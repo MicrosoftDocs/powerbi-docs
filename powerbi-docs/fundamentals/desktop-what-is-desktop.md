@@ -66,7 +66,7 @@ In Power BI Desktop, you can clean and transform data using the built-in [Power 
 
 To start Power Query Editor:
 
-- Select **Edit Queries** > **Edit Queries** from the **Home** ribbon.
+- On the **Home** ribbon, in the **Queries** section, select **Transform data**.
 
    The **Power Query Editor** window appears.
 
