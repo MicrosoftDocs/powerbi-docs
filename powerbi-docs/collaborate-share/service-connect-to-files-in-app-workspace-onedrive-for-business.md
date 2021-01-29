@@ -14,9 +14,9 @@ LocalizationGroup: Share your work
 When you [create a *classic* workspace in Power BI](service-create-workspaces.md), you're also creating a Microsoft 365 group, with an associated OneDrive for Business. This article explains how to store and update your Excel, CSV, and Power BI Desktop files on that OneDrive for Business. Those updates are automatically reflected in the Power BI reports and dashboards based on the files.
 
 > [!NOTE]
-> The *new* workspace experience changes the relationship between Power BI workspaces and Microsoft 365 groups. You don't automatically create a Microsoft 365 group every time you create one of the new workspaces. Read about [creating the new workspaces](service-create-the-new-workspaces.md)
+> The *new* workspace experience changes the relationship between Power BI workspaces and Microsoft 365 groups. You don't automatically create a Microsoft 365 group every time you create one of the new workspaces. You can also [set a workspace OneDrive for a new workspace](service-create-the-new-workspaces.md#set-a-workspace-onedrive).
 
-Adding files to your workspace is a two-step process: 
+Adding files to your classic workspace is a two-step process: 
 
 1. First you [upload files to the OneDrive for Business](#1-upload-files-to-the-onedrive-for-business-for-your-workspace) for your workspace.
 2. Then you [connect to those files from Power BI](#2-import-excel-files-as-datasets-or-as-excel-online-workbooks).
