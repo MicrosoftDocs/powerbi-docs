@@ -32,7 +32,7 @@ You can select different subsets of data by selecting different parts of the vis
 
 ### Select data points
 
-Hover over the data point on one multiple to show the tooltip in that multiple, as well as a guide line on the x axis for line charts. Select that data point to cross-highlight other visuals by both the axis value and the small multiple category, and dim the other multiples.
+Hover over the data point on one multiple to show the tooltip in that multiple, and a guide line on the x axis for line charts. Select that data point to cross-highlight other visuals by both the axis value and the small-multiple category, and dim the other multiples.
 
 :::image type="content" source="media/power-bi-visualization-small-multiples/small-multiple-select-data-point.png" alt-text="Select a data point in a small multiple.":::
 
@@ -57,7 +57,7 @@ Select a legend category to cross-highlight other visuals and cross-highlight ot
 
 ## Sort
 
-A new sort functionality lets you to sort multiple different aspects of a visual at once. You can sort by the category, and also by the axis in each multiple. 
+A new sort functionality lets you sort multiple different aspects of a visual at once. You can sort by the category, and also by the axis in each multiple. 
 
 :::image type="content" source="media/power-bi-visualization-small-multiples/small-multiple-sort.png" alt-text="Sort the small multiples.":::
 
