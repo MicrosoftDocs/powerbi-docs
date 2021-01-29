@@ -1,20 +1,20 @@
 ---
-title: Connect to files in OneDrive for a Power BI workspace
-description: Read about storing and connecting to your Excel, CSV, and Power BI Desktop files on the OneDrive for your Power BI workspace.
+title: Connect to files in OneDrive for a classic workspace
+description: Read about storing and connecting to your Excel, CSV, and Power BI Desktop files on the OneDrive for your classic Power BI workspace.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: lukasz
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 10/15/2020
+ms.date: 01/28/2021
 LocalizationGroup: Share your work
 ---
-# Connect to files stored in OneDrive for your Power BI workspace
-When you [create a workspace in Power BI](service-create-workspaces.md), you're also creating a Microsoft 365 group, with an associated OneDrive for Business. This article explains how to store and update your Excel, CSV, and Power BI Desktop files on that OneDrive for Business. Those updates are automatically reflected in the Power BI reports and dashboards based on the files.
+# Connect to files stored in OneDrive for a classic workspace
+When you [create a *classic* workspace in Power BI](service-create-workspaces.md), you're also creating a Microsoft 365 group, with an associated OneDrive for Business. This article explains how to store and update your Excel, CSV, and Power BI Desktop files on that OneDrive for Business. Those updates are automatically reflected in the Power BI reports and dashboards based on the files.
 
 > [!NOTE]
-> The new workspace experience changes the relationship between Power BI workspaces and Microsoft 365 groups. You don't automatically create a Microsoft 365 group every time you create one of the new workspaces. Read about [creating the new workspaces](service-create-the-new-workspaces.md)
+> The *new* workspace experience changes the relationship between Power BI workspaces and Microsoft 365 groups. You don't automatically create a Microsoft 365 group every time you create one of the new workspaces. Read about [creating the new workspaces](service-create-the-new-workspaces.md)
 
 Adding files to your workspace is a two-step process: 
 
