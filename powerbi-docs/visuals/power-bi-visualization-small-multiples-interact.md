@@ -7,18 +7,18 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 01/21/2021
+ms.date: 01/28/2021
 LocalizationGroup: Visualizations
 ---
 # Interact with small multiples in Power BI (preview)
 
 [!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
-Small multiples, or trellising, splits a visual into multiple versions of itself. This article explains how to get the most out of interacting with them. 
+Small multiples, or trellising, splits a visual into multiple versions of itself. This article explains how to get the most out of interacting with them.
+
+:::image type="content" source="media/power-bi-visualization-small-multiples/small-mulitple-sales-category-region.png" alt-text="Screenshot of small multiples for category and region.":::
 
 Want to create small multiples? See [Create small multiples in Power BI (preview)](power-bi-visualization-small-multiples.md).
-
-:::image type="content" source="media/power-bi-visualization-small-multiples/small-mulitple-sales-category-region.png" alt-text="Screenshot of small multiples for category and region":::
 
 ## Scroll in a small multiple
 
@@ -32,24 +32,34 @@ You can select different subsets of data by selecting different parts of the vis
 
 ### Select data points
 
-Hover over the data point on one multiple to show the tooltip in that multiple, as well as a guide line on the x axis for line charts. Select that data point to cross-highlight other visuals by both the axis value and the small multiple category, as well as dim other multiples.
+Hover over the data point on one multiple to show the tooltip in that multiple, as well as a guide line on the x axis for line charts. Select that data point to cross-highlight other visuals by both the axis value and the small multiple category, and dim the other multiples.
+
+:::image type="content" source="media/power-bi-visualization-small-multiples/small-multiple-select-data-point.png" alt-text="Select a data point in a small multiple.":::
 
 ### Select a categorical axis value
 
 Select a category label to cross-highlight other visuals by that axis value.
 
+:::image type="content" source="media/power-bi-visualization-small-multiples/small-multiple-select-category-axis.png" alt-text="Select a category axis in a small multiple.":::
+
 ### Select a title
 
 Select the title of a multiple to cross-highlight other visuals by the category or combination of categories listed on that subheader.
+
+:::image type="content" source="media/power-bi-visualization-small-multiples/small-multiple-select-title.png" alt-text="Select a title in a small multiple.":::
 
 ### Legend
 
 Select a legend category to cross-highlight other visuals and cross-highlight other multiples.
 
+:::image type="content" source="media/power-bi-visualization-small-multiples/small-multiple-select-legend.png" alt-text="Select an item in the legend in a small multiple.":::
+
 
 ## Sort
 
-A new sort UI lets you to sort multiple different aspects of a visual at once. You can sort by the category, and also by the axis in each multiple. 
+A new sort functionality lets you to sort multiple different aspects of a visual at once. You can sort by the category, and also by the axis in each multiple. 
+
+:::image type="content" source="media/power-bi-visualization-small-multiples/small-multiple-sort.png" alt-text="Sort the small multiples.":::
 
 ## Next steps
 
