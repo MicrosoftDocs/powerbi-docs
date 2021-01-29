@@ -2,7 +2,7 @@
 title: "DAX: DIVIDE function vs divide operator (/)"
 description: Guidance on when to use the DAX DIVIDE function.
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi

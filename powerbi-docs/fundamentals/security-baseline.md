@@ -169,7 +169,7 @@ Enable just-in-time (JIT) privileged access for the Power BI admin accounts usin
 
 - [Administrator roles related to Power BI](../admin/service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi)
 
-- [M365 Privileged Access Management](/microsoft-365/compliance/privileged-access-management-overview?amp;preserve-view=true&view=o365-worldwide)
+- [M365 Privileged Access Management](/microsoft-365/compliance/privileged-access-management-overview?view=o365-worldwide&preserve-view=true)
 
 - [Cloud App Security controls in Power BI](../admin/service-security-using-microsoft-cloud-app-security-controls.md)
 
@@ -181,7 +181,7 @@ Enable just-in-time (JIT) privileged access for the Power BI admin accounts usin
 
 **Guidance**: Limit the number of highly-privileged accounts or roles with elevated access to Power BI.
 
-You can enable just-in-time (JIT) privileged access using the M365 Privileged access management guidance [here](/microsoft-365/compliance/privileged-access-management-overview?amp;preserve-view=true&view=o365-worldwide).
+You can enable just-in-time (JIT) privileged access using the M365 Privileged access management guidance [here](/microsoft-365/compliance/privileged-access-management-overview?view=o365-worldwide&preserve-view=true).
 
 Additional details can be found on page 183 of the Power BI Enterprise Deployment document [here](https://aka.ms/PBIEnterpriseDeploymentWP).
 
@@ -582,7 +582,7 @@ Ensure that there are written incident response plans that define all roles of p
  
 Microsoft Threat Protection applies correlation analytics and aggregates all related alerts and investigations from different products into one incident. Microsoft Threat Protection also triggers unique alerts on activities that can only be identified as malicious given the end-to-end visibility that Microsoft Threat Protection has across the entire estate and suite of products. By doing so, Microsoft Threat Protection narrates the broader attack story, allowing a security operations analyst to understand and deal with complex threats across the organization.
 
-- [Prioritize incidents in Microsoft Threat Protection](/microsoft-365/security/mtp/incident-queue?amp;preserve-view=true&view=o365-worldwide)
+- [Prioritize incidents in Microsoft Threat Protection](/microsoft-365/security/mtp/incident-queue?view=o365-worldwide&preserve-view=true)
 
 **Azure Security Center monitoring**: Not applicable
 

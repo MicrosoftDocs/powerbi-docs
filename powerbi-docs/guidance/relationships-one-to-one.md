@@ -2,7 +2,7 @@
 title: One-to-one relationship guidance
 description: Guidance for developing one-to-one model relationships.
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi
