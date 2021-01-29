@@ -312,6 +312,10 @@
         href: ../visuals/power-bi-visualization-scatter.md
       - name: "Use high-density scatter charts"
         href: ../visuals/desktop-high-density-scatter-charts.md
+      - name: "Create small multiples (preview)"
+        href: ../visuals/power-bi-visualization-small-multiples.md
+      - name: "Interact with small multiples (preview)"
+        href: ../visuals/power-bi-visualization-small-multiples-interact.md
       - name: "Shape Map visuals (preview)"
         href: ../visuals/desktop-shape-map.md
       - name: "Smart narratives"

@@ -24,7 +24,7 @@ Want to create small multiples? See [Create small multiples in Power BI (preview
 
 Small multiples may contain more individual charts that can fit in the grid. If so, you can scroll down to see the rest of your categories.
 
-If a categorical X axis has many categories, you also see a scroll bar for each copy of that axis. Scrolling on that axis moves them all together. If you are using a scroll wheel, hold Shift to scroll the categorical axes.
+For a categorical X axis with many categories, you also see a scroll bar for each copy of that axis. Scrolling on that axis moves them all together. If you're using a scroll wheel, hold Shift to scroll the categorical axes.
 
 ## Select data to cross-highlight
 
@@ -32,7 +32,7 @@ You can select different subsets of data by selecting different parts of the vis
 
 ### Select data points
 
-Hover over the data point on one multiple to show the tooltip in that multiple, and a guide line on the x axis for line charts. Select that data point to cross-highlight other visuals by both the axis value and the small-multiple category, and dim the other multiples.
+Hover over the data point on one multiple to show the tooltip in that multiple. You also see a guide line on the X axis for line charts. Select that data point to cross-highlight other visuals by both the axis value and the small-multiple category, and dim the other multiples.
 
 :::image type="content" source="media/power-bi-visualization-small-multiples/small-multiple-select-data-point.png" alt-text="Select a data point in a small multiple.":::
 
@@ -44,7 +44,7 @@ Select a category label to cross-highlight other visuals by that axis value.
 
 ### Select a title
 
-Select the title of a multiple to cross-highlight other visuals by the category or combination of categories listed on that subheader.
+Select the title of a multiple to cross-highlight other visuals by the category in that subheader.
 
 :::image type="content" source="media/power-bi-visualization-small-multiples/small-multiple-select-title.png" alt-text="Select a title in a small multiple.":::
 
@@ -57,7 +57,7 @@ Select a legend category to cross-highlight other visuals and cross-highlight ot
 
 ## Sort
 
-A new sort functionality lets you sort multiple different aspects of a visual at once. You can sort by the category, and also by the axis in each multiple. 
+WIth the new sort functionality, you can sort multiple aspects of a visual at once. Sort by the category, and also by the axis in each multiple. 
 
 :::image type="content" source="media/power-bi-visualization-small-multiples/small-multiple-sort.png" alt-text="Sort the small multiples.":::
 
