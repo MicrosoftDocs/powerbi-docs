@@ -44,19 +44,28 @@ Power BI builds on this very strong foundation. It uses the same security stack 
 
 To provide an end-to-end solution to protect sensitive assets, the product team needed to address challenges on multiple simultaneous fronts: “How we control who connects? From where they can connect? How they connect and how we can control connections?” it continues to “how is the data stored? How is it encrypted? What controls do I have on my data?” Moreover, “How can I control and protect sensitive data? How do I ensure this data cannot leak outside the organization?” and ends with, “How do I audit who conducts what operations? How do I react quickly in case of suspicious activity within the service?”.
 
-This document provides a comprehensive answer to all those questions; it starts with an overview of the service architecture and explains how main flows in the system work, then how users authenticate to Power BI and data connections are established, and then describes how Power BI stores and moves data through the service and continues to security features that allows you as the admin of the service protect your most valuable assets.
-
 +++++++
 
-The Power BI service is governed by the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31), and the [Microsoft Enterprise Privacy Statement](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). For the location of data processing, refer to the Location of Data Processing terms in the Microsoft Online Services Terms. For compliance information, the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview) is the primary resource for Power BI. The Power BI team is working hard to bring its customers the latest innovations and productivity. Power BI is currently in Tier D of the Microsoft 365 Compliance Framework. Learn more about compliance in the [Microsoft Trust Center](/compliance/regulatory/offering-home).
+This article provides a comprehensive answer to all these questions. It starts with an overview of the service architecture and explains how the main flows in the system work. It then moves on to describe how users authenticate to Power BI, how data connections are established, and how Power BI stores and moves data through the service. The last section discusses the security features that allow you as the service admin to protect your most valuable assets.
 
-This article describes Power BI security by providing an explanation of the Power BI architecture, then explaining how users authenticate to Power BI and data connections are established, and then describing how Power BI stores and moves data through the service. The last section is dedicated to security-related questions, with answers provided for each.
+The Power BI service is governed by the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) **[link in word doc: https://www.microsoft.com/en-us/licensing/product-licensing/products]**, and the [Microsoft Enterprise Privacy Statement](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). For the location of data processing, refer to the Location of Data Processing terms in the Microsoft Online Services Terms and to the Data Protection Addendum **[where is this??]**. For compliance information, the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview) **[docx has https://www.microsoft.com/trustcenter]** is the primary resource for Power BI. The Power BI team is working hard to bring its customers the latest innovations and productivity. Learn more about compliance in the [Microsoft compliance offerings](/compliance/regulatory/offering-home).
+
+Power BI service follows the Security Development Lifecycle (SDL), strict security practices that support security assurance and compliance requirements. The SDL helps developers build more secure software by reducing the number and severity of vulnerabilities in software, while reducing development cost. Learn more at [Microsoft Security Development Lifecycle Practices](https://www.microsoft.com/securityengineering/sdl/practices).
 
 ## Power BI Architecture
 
-The **Power BI** service is built on **Azure**, which is Microsoft's [cloud computing platform](https://azure.microsoft.com/overview/what-is-azure/). Power BI is currently deployed in many datacenters around the world – there are many active deployments made available to customers in the regions served by those datacenters, and an equal number of passive deployments that serve as backups for each active deployment.
+The **Power BI** service is built on **Azure**, Microsoft's [cloud computing platform](https://azure.microsoft.com/overview/what-is-azure/). Power BI is currently deployed in many datacenters around the world – there are many active deployments made available to customers in the regions served by those datacenters, and an equal number of passive deployments that serve as backups for each active deployment.
 
-Each Power BI deployment consists of two clusters – a Web Front End (**WFE**) cluster, and a **Back-End** cluster. These two clusters are shown in the following image, and provide the backdrop for the rest of this article. 
+E
+
+
+
+
+
+
+
+
+ach Power BI deployment consists of two clusters – a Web Front End (**WFE**) cluster, and a **Back-End** cluster. These two clusters are shown in the following image, and provide the backdrop for the rest of this article. 
 
 ![The WFE and Back End](media/whitepaper-powerbi-security/powerbi-security-whitepaper_01.png)
 
