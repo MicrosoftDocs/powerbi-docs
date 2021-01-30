@@ -52,7 +52,7 @@ After you install the matching Oracle client driver, you can connect to an Oracl
    > [!NOTE]
    > If you are using a local database, or autonomous database connections, you may need to place the server name in quotation marks to avoid connection errors. 
       
-4. If you want to import data by using a native database query, put your query in the **SQL statement** box, which appears when you expand the **Advanced options** section of the **Oracle database** dialog.
+4. If you want to import data by using a native database query, put your query in the **SQL statement** box, which appears when you expand the **Advanced options** section of the **Oracle database** dialog.  Power BI Desktop does not support Oracle native queries that execute a stored procedure and Oracle native queries in "begin ... end" block does not return any result set.  
    
    ![Expand Advanced options](media/desktop-connect-oracle-database/connect-oracle-database_4.png)
 
@@ -84,3 +84,4 @@ If you downloaded Power BI Desktop from the Microsoft Store, you might be unable
 If you see the error message, *Object reference not set*, in the Power BI Gateway when you connect to an Oracle database, follow the instructions in [Manage your data source - Oracle](service-gateway-onprem-manage-oracle.md).
 
 If you're using Power BI Report Server, consult the guidance in the [Oracle Connection Type](/sql/reporting-services/report-data/oracle-connection-type-ssrs) article.
+
