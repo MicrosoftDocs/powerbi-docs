@@ -7,11 +7,11 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 10/23/2019
+ms.date: 01/29/2021
 LocalizationGroup: Reports
 ---
 # Filters and highlighting in Power BI reports
- This article introduces you to filtering and highlighting in the Power BI service. The experience is almost exactly the same in Power BI Desktop. *Filters* remove all but the data you want to focus on. *Highlighting* isn't filtering. It doesn't remove data, but instead highlights a subset of the visible data; the data that isn't highlighted remains visible but dimmed.
+ This article introduces you to filtering and highlighting in the Power BI service. The experience is almost exactly the same in Power BI Desktop. *Filters* remove all but the data you want to focus on. In general, *highlighting* isn't filtering. In most visuals it doesn't remove the unrelated data. Instead it highlights the subset of related data. The rest of the data remains visible but dimmed. See [Ad hoc cross-filtering and cross-highlighting](#ad-hoc-cross-filtering-and-cross-highlighting) later in this article for details.
 
 There are many different ways you can filter and highlight reports in Power BI. Putting all of that information in one article would get confusing, so we've broken it into these sections:
 
@@ -77,11 +77,15 @@ As in Reading view, we see this page of the report has six page-level filters an
 
 We can do more with filters and highlighting in Editing view. Mainly, we can add new filters. Learn how to [Add a filter to a report](power-bi-report-add-filter.md) and much more.
 
-## Ad hoc highlighting
-Select a value or axis label in a visual to highlight the other visuals on the page. To remove the highlighting, select the value again, or select any empty space in the same visual. Highlighting is a fun way to quickly explore data impacts. To fine-tune how this type of cross-highlighting works, see [Visual interactions](service-reports-visual-interactions.md).
+## Ad hoc cross-filtering and cross-highlighting
+Select a value or axis label in one visual to cross-filter or cross-highlight the related values in other visuals on the page. In most visuals, selecting a value in one visual doesn't remove the unrelated data in the other visuals. Instead it highlights the subset of related data. The unrelated data remains visible but dimmed. In some visuals, however, selecting a value in one visual acts more like a filter in the other visuals. For example, in line charts and scatter charts, only the related data remains visible. The unrelated data isn't visible, just as you'd see with a filter. 
 
-![Cross-highlighting](media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif)
+To remove the highlighting, select the value again, or select any empty space in the same visual. Highlighting is a fun way to quickly explore data impacts. 
+For more examples, see the [Cross-filtering and cross-highlighting section](../consumer/end-user-interactions.md#cross-filtering-and-cross-highlighting) of "How visuals cross-filter each other in a Power BI report."
 
+![Animation showing cross-filtering and cross-highlighting.](media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif)
+
+Report editors can change the way visuals interact. To fine-tune how cross-highlighting works, see [Change how visuals interact in  report](service-reports-visual-interactions.md).
 
 ## Next steps
 
@@ -91,6 +95,6 @@ Select a value or axis label in a visual to highlight the other visuals on the p
 
 [Take a tour of report filters](../consumer/end-user-report-filter.md)
 
-[Change how report visuals cross-filter and cross-highlight each other](../consumer/end-user-interactions.md)
+[How report visuals cross-filter and cross-highlight each other in a report](../consumer/end-user-interactions.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
