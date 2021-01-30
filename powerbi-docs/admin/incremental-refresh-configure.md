@@ -15,13 +15,13 @@ LocalizationGroup:
 
 This article describes how to configure incremental refresh for **datasets**. To learn about configuring incremental refresh for dataflows, see [Incremental refresh in Premium features of dataflows](../transform-model/dataflows/dataflows-premium-features.md#incremental-refresh).
 
-Configuring incremental refresh includes defining refresh parameters,  applying filters, and defining a policy that is applied when a manual or scheduled refresh operation is performed on the dataset in the service. Before completing these steps, be sure to fully understand the functionality described in [Incremental refresh overview](service-incremental-refresh-overview.md).
+Configuring incremental refresh includes creating range parameters, applying filters, and defining a policy for a table that is applied when a manual or scheduled refresh operation is performed on the dataset in the service. Before completing these steps, be sure to fully understand the functionality described in [Incremental refresh](incremental-refresh-overview.md).
 
 Examples in this article show configuring incremental refresh for a single fact table, FactInternetSales, importing data from the sample AdventureWorksDW database (Yeah, we know. It's an old, but popular sample dataset:). For models with more than one fact table, incremental refresh policies can be defined for more than one table in the same dataset by using the same RangeStart and RangeEnd parameters.
 
-## Define parameters
+## Create parameters
 
-In this task, you define RangeStart and RangeEnd parameters with default values. The default values apply only when filtering the data to be imported into the model in Power BI Desktop. The values you enter should encompass only a small portion of the most recent data. When published to the service, these values are overridden by the incremental refresh policy.
+In this task, you create RangeStart and RangeEnd parameters with default values. The default values apply only when filtering the data to be imported into the model in Power BI Desktop. The values you enter should encompass only a small portion of the most recent data. When published to the service, these values are overridden by the incremental refresh policy.
 
 1. In Power BI Desktop, click **Transform data** to open Power Query Editor.
 
@@ -111,8 +111,6 @@ In the service, refresh the dataset. The first refresh may take longer to import
 
 ## See also
 
-[Incremental refresh overview](incremental-refresh-overview.md)  
-[Data refresh in Power BI](../connect-data/refresh-data.md)  
-[Troubleshooting refresh scenarios](../connect-data/refresh-troubleshooting-refresh-scenarios.md) 
-[Configure scheduled refresh](../connect-data/refresh-scheduled-refresh.md)
-
+[Configure scheduled refresh](../connect-data/refresh-scheduled-refresh.md)  
+[Incremental refresh](incremental-refresh-overview.md)  
+[Troubleshoot incremental refresh](incremental-refresh-troubleshoot.md)  

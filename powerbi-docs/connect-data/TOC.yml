@@ -211,8 +211,16 @@
         href: refresh-scheduled-refresh.md
       - name: "Refresh summaries"
         href: refresh-summaries.md        
-      - name: Configure incremental refresh
-        href: ../admin/service-premium-incremental-refresh.md   
+      - name: Incremental refresh
+        items:
+        - name: Incremental refresh
+          href: ../admin/incremental-refresh-overview.md
+        - name: Configure incremental refresh
+          href: ../admin/incremental-refresh-configure.md
+        - name: Advanced incremental refresh with the XMLA endpoint
+          href: ../admin/incremental-refresh-xmla.md
+        - name: Troubleshoot incremental refresh
+          href: ../admin/incremental-refresh-troubleshoot.md
       - name: "Refresh a dataset from a local Power BI Desktop file"
         href: refresh-desktop-file-local-drive.md
       - name: "Refresh a dataset from a cloud Power BI Desktop file"

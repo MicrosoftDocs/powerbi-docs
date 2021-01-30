@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 01/27/2021
 LocalizationGroup: 
 ---
-# Troubleshoot incremental refresh
+# Troubleshooting incremental refresh
 
 XMLA endpoints in Power BI Premium rely on the native Analysis Services communication protocol for access to Power BI datasets. Because of this, XMLA endpoint troubleshooting is much the same as troubleshooting a typical Analysis Services connection. However, some differences around Power BI-specific dependencies apply.
 
