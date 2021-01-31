@@ -2,7 +2,7 @@
 title: On-premises data gateway sizing
 description: Guidance for working sizing the On-premises data gateway.
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -79,7 +79,7 @@ Plan for the best possible connectivity between the Power BI service and your ga
 
 - Strive for reliability, fast speeds, and low, consistent latencies
 - Eliminate—or reduce—machine hops between the gateway and your data sources
-- Remove any network throttling imposed by your firewall proxy layer. For more information about Power BI endpoints, see [Add Power BI URLs to your allow list](../admin/power-bi-whitelist-urls.md).
+- Remove any network throttling imposed by your firewall proxy layer. For more information about Power BI endpoints, see [Add Power BI URLs to your allow list](../admin/power-bi-allow-list-urls.md).
 - Configure [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) to establish private, managed connections to Power BI
 - For data sources in Azure VMs, ensure the VMs are [colocated with the Power BI service](../admin/service-admin-where-is-my-tenant-located.md)
 - For Live Connection workloads to SQL Server Analysis Services (SSAS) involving dynamic RLS, ensure good connectivity between the gateway machine and the on-premises Active Directory

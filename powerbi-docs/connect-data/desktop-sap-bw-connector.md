@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/13/2020
+ms.date: 01/21/2021
 LocalizationGroup: Connect to data
 ---
 # Use the SAP Business Warehouse connector in Power BI Desktop
@@ -39,8 +39,8 @@ You can download the [SAP .NET Connector 3.0](https://support.sap.com/en/product
 
 The connector comes in 32-bit and 64-bit versions. Choose the version that matches your Power BI Desktop installation. Currently, the website lists two versions for .NET 4.0 framework:
 
-* SAP Connector for Microsoft .NET 3.0.22.0 for Windows 32-bit (x86) as zip file (6.896 KB), June 1, 2019
-* SAP Connector for Microsoft .NET 3.0.22.0 for Windows 64-bit (x64) as zip file (7.180 KB), June 1, 2019
+* SAP Connector for Microsoft .NET 3.0.22.0 for Windows 32-bit (x86) or later (.NET Framework 4.0)
+* SAP Connector for Microsoft .NET 3.0.22.0 for Windows 64-bit (x64) or later (.NET Framework 4.0)
 
 When you install, in **Optional setup steps**, make sure you select *Install assemblies to GAC*.
 

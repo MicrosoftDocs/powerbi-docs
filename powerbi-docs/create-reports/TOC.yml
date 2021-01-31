@@ -67,6 +67,8 @@
         href: desktop-high-density-sampling.md
       - name: "About accessibility"
         href: desktop-accessibility-overview.md     
+      - name: "Certificate revocation"
+        href: desktop-certificate-revocation.md     
       - name: Natural language Q&A
         items: 
         - name: "Q&A introduction"
@@ -85,6 +87,8 @@
       items: 
       - name: Report Builder in Power BI
         href: ../paginated-reports/report-builder-power-bi.md
+      - name: Report Builder change log
+        href: ../paginated-reports/paginated-reports-change-log.md
       - name: Sample Power BI paginated reports
         href: ../paginated-reports/paginated-reports-samples.md
       - name: Get around Report Design View

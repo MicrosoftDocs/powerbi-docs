@@ -61,7 +61,7 @@ Your account might be set up in more than one cloud. If your account is set up t
 
 To use the Power BI service, you must allow connections to required endpoints on the internet. These destinations have to be reachable to enable communication between your own network, Power BI, and other dependent services.
 
-In the table below, we list the required endpoints to add to your allow list to enable connection to the Power BI service for general site usage. These endpoints are unique to the US government cloud. The Power BI service requires only TCP Port 443 to be opened for the listed endpoints. The endpoints for getting data, dashboard and report integration, Power BI visuals, and other optional services aren’t unique to the US government cloud. To also add these URLs to your allow list, see [Add Power BI URLs to your allow list](power-bi-whitelist-urls.md).
+In the table below, we list the required endpoints to add to your allow list to enable connection to the Power BI service for general site usage. These endpoints are unique to the US government cloud. The Power BI service requires only TCP Port 443 to be opened for the listed endpoints. The endpoints for getting data, dashboard and report integration, Power BI visuals, and other optional services aren’t unique to the US government cloud. To also add these URLs to your allow list, see [Add Power BI URLs to your allow list](power-bi-allow-list-urls.md).
 
 Authentication, identity, and administration for Power BI depend on connectivity to Microsoft 365 services. You also have to connect to Microsoft 365 to view audit logs. To identify the endpoints for these services, see Microsoft 365 integration in the table below.
 
@@ -124,9 +124,9 @@ We include the quarter for estimated availability if release is planned for an e
 |[Embed in SharePoint Online using the Power BI web part](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![available](../media/yes.png)|![available](../media/yes.png)|![not available](../media/no.png)|
 |[Data Protection (MIP labels)](service-security-sensitivity-label-overview.md)|![available](../media/yes.png)|![available](../media/yes.png) |Q1 2021|
 |[Dataflows - Direct Query](../transform-model/dataflows/dataflows-configure-consume.md) | ![available](../media/yes.png) |![available](../media/yes.png)|Not planned |
+|[Dataflows - SQL Compute engine optimization](../transform-model/dataflows/dataflows-premium-features.md) | ![available](../media/yes.png) |![available](../media/yes.png)|Not planned |
 |[Power BI tab in Teams](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>3</sup>|![available](../media/yes.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[Large models](service-premium-large-models.md) | Q1 2021 |Q1 2021| Not planned |
-|[Dataflows - SQL Compute engine optimization](../transform-model/dataflows/dataflows-premium-features.md) | ![not available](../media/no.png) |![not available](../media/no.png)| ![not available](../media/no.png) |
 |[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[Bring Your Own Storage (Azure Data Lake Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 

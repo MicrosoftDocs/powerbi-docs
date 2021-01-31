@@ -98,6 +98,8 @@
         href: /rest/api/power-bi-embedded/
       - name: Power BI REST APIs
         href: /rest/api/power-bi/
+    - name: "Power BI Developer in a Day course"
+      href: /power-bi/learning-catalog/developer-online-course         
     - name: "Monitor Power BI Embedded data reference"
       href: monitor-power-bi-embedded-reference.md        
     - name: "Power BI libraries"
@@ -112,11 +114,11 @@
       href: https://aka.ms/embedsetup
     - name: "JavaScript Playground Sample"
       href: https://go.microsoft.com/fwlink/?linkid=848279
-    - name: "Power BI JavaScript wiki"
-      href: https://github.com/Microsoft/powerbi-javascript/wiki
+    - name: "Power BI embedded analytics Client APIs"
+      href: /javascript/api/overview/powerbi/
     - name: "Developer samples and scripts"
       href: https://go.microsoft.com/fwlink/?linkid=851293
     - name: "Power BI community"
       href: https://go.microsoft.com/fwlink/?linkid=848280
     - name: "Stack Overflow"
-      href: https://go.microsoft.com/fwlink/?linkid=848281
+      href: https://go.microsoft.com/fwlink/?linkid=2153505
