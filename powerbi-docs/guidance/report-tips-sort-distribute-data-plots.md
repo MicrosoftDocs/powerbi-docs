@@ -2,7 +2,7 @@
 title: Tips to sort and distribute data plots in Power BI reports
 description: Nine tips to sort and distribute data plots in Power BI report visuals, in Power BI Desktop or the Power BI service.
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 featuredvideoid: BnhA4qa-9Jk
 ms.service: powerbi

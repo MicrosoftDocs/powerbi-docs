@@ -142,7 +142,7 @@
       href: /powershell/power-bi/
       maintainContext: true
     - name: Service URL reference
-      href: power-bi-whitelist-urls.md
+      href: power-bi-allow-list-urls.md
   - name: Resources
     items: 
     - name: "Power BI governance and deployment approaches"

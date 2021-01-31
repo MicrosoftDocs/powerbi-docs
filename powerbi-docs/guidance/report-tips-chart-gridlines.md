@@ -2,7 +2,7 @@
 title: Control chart gridlines in Power BI reports
 description: Three tips to control chart gridlines in Power BI report visuals, in Power BI Desktop or the Power BI service.
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 featuredvideoid: Y-igshes2LI
 ms.service: powerbi
