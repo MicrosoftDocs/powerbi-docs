@@ -388,7 +388,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
     a. In the **Package Explorer** pane, right-click **AppOwnsData**, and select **Properties**.
 
-    b. In the **Properties for AppOwnesData** window, select **Targeted Runtimes** and then select **Apache Tomcat**. This selection will include the version of *Apache Tomcat* you're using, for example *Apache Tomact v9.0*.
+    b. In the **Properties for AppOwnesData** window, select **Targeted Runtimes** and then select **Apache Tomcat**. This selection will include the version of *Apache Tomcat* you're using, for example *Apache Tomcat v9.0*.
 
     c. Select  **Apply and Close**.
 
