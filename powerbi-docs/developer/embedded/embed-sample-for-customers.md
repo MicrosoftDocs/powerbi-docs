@@ -333,15 +333,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
 7. Open **Web.config**.
 
-8. Reinstall the **Microsoft.PowerBI.JavaScript** NuGet package by following these steps:
-
-    1. Open **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**.
-
-    2. Search for **Microsoft.PowerBI.JavaScript**.
-
-    3. Reinstall the package. For more information, see [How to reinstall and update packages](/nuget/consume-packages/reinstalling-and-updating-packages).
-
-9. Depending on your authentication method, fill in the following parameter values:
+8. Depending on your authentication method, fill in the following parameter values:
 
     |Parameter            |Service principal  |Master user  |
     |---------------------|---------|---------|
@@ -354,7 +346,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
     |`applicationSecret`       |Your Azure AD [client secret](#client-secret)         |N/A         |
     |`tenant`           |Your Azure AD [tenant ID](#tenant-id)         |N/A         |
 
-10. Run the project by selecting **IIS Express** (play).
+9. Run the project by selecting **IIS Express** (play).
 
 # [Java](#tab/java)
 

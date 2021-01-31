@@ -298,6 +298,9 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
    `npm run start`
 
+    >[!NOTE]
+    >During your first sign in, you'll be prompted to allow Azure AD permissions for the app.
+
 ---
 
 ## Developing your application
