@@ -15,11 +15,11 @@ LocalizationGroup: Conceptual
 
 **Summary:** Power BI is an online software service (*SaaS*, or Software as a Service) offering from Microsoft that lets you easily and quickly create self-service Business Intelligence dashboards, reports, datasets, and visualizations. With Power BI, you can connect to many different data sources, combine and shape data from those connections, then create reports and dashboards that can be shared with others.
 
-**Writer:** David Iseminger
+**Writers:** Yitzhak Kesselman, Paddy Osborne, Matt Neely, Tony Bencic, Srinivasan Turuvekere, Cristian Petculescu, Adi Regev, Naveen Sivaraj, Ben Glastein, Evgeny Tshiorny, Arthi Ramasubramanian Iyer, Sid Jayadevan, Ronald Chang, Ori Eduar, Anton Fritz, Idan Sheinberg, Ron Gilad, Sagiv Hadaya, Paul Inbar, Igor Uzhviev, Michael Roth, Jamie Tarquino, Gennady Pats, Orion Lee, Yury Berezansky, Maya Shenhav, Romit Chattopadhyay, Yariv Maimon, Bogdan Crivat
 
-**Technical Reviewers:** Pedram Rezaei, Cristian Petculescu, Siva Harinath, Tod Manning, Haydn Richardson, Adam Wilson, Ben Childs, Robert Bruckner, Sergei Gundorov, Kasper de Jonge
+**Technical Reviewers:** Cristian Petculescu, Amir Netz, Sergei Gundorov
 
-**Applies to:** Power BI SaaS, Power BI Desktop, Power BI Embedded, Power BI Premium
+**Applies to:** Power BI SaaS, Power BI Desktop, Power BI Premium, Power BI Embedded, Power BI Mobile
 
 > [!NOTE]
 > You can save or print this whitepaper by selecting **Print** from your browser, then selecting **Save as PDF**.
@@ -64,9 +64,30 @@ The **WFE** cluster provides the user's browser with the initial HTML page conte
 
 ![The WEF Cluster](media/whitepaper-powerbi-security/powerbi-security-whitepaper_02.png)
 
-ach Power BI deployment consists of two clusters – a Web Front End (**WFE**) cluster, and a **Back-End** cluster. These two clusters are shown in the following image, and provide the backdrop for the rest of this article. 
+A WFE cluster consists of an ASP.NET website running in the [Azure App Service Environment](/azure/app-service/environment/intro). When users attempt to connect to the Power BI service, the client's DNS service may communicate with the Azure Traffic Manager to find the most appropriate (usually nearest) datacenter with a Power BI deployment. For more information about this process, see [Performance traffic-routing method for Azure Traffic Manager](/azure/traffic-manager/traffic-manager-routing-methods#performance-traffic-routing-method).
 
-![The WFE and Back End](media/whitepaper-powerbi-security/powerbi-security-whitepaper_01.png)
+The WFE cluster assigned to the user manages the login and authentication sequence (described later in this article) and obtains an AAD access token once authentication is successful. The ASP.NET component within the WFE cluster parses the token to determine which organization the user belongs to, and then consults the Power BI Global Service. The WFE specifies to the browser which Back End cluster houses the organization's tenant. Once a user is authenticated, subsequent client interactions for customer data occur with the Back End or Premium cluster directly, without the WFE being an intermediator for those requests.
+
+Static resources such as *.js, *.css, and image files are mostly stored on Azure CDN and retrieved directly by the browser. Note that Sovereign Government cluster deployments are an exception to this rule, will omit the CDN and instead use a WFE cluster from a compliant region for hosting static content for compliance reasons.
+
+### Power BI Back End Cluster (BE)
+
+The backend cluster is a backbone of all the functionality available in Power BI. It consists of several service endpoints consumed by Web Front End and API clients as well as background working services, databases, caches, and a variety of other components.
+
+The Back End is available in most Azure regions, and is being deployed into new regions as they become available. A single Azure region hosts one or more Back End clusters that allow unlimited horizontal scaling of the Power BI service once the vertical and horizontal scaling limits of a single cluster are exhausted.
+
+Each Back End cluster is stateful and hosts all the data of all the tenants assigned to that cluster. A cluster that contains the data of a specific tenant is referred to as the tenant’s home cluster. The home cluster information of an authenticated user is provided by Global Service and used by the Web Front End to route requests to the tenant’s home cluster. 
+
+Each Back End cluster consists of multiple virtual machines combined into multiple resizable scale sets tuned for performing specific tasks, stateful resources such as SQL databases, storage accounts, service buses, caches, and other necessary cloud components.
+
+Tenant metadata and data are stored within cluster limits except for data replication to a secondary backend cluster in a paired Azure region in the same Azure geography. 
+The secondary backend cluster serves as a failover cluster in case of regional outage, and is passive at any other time.
+
+The Back End functionality is served by micro-services running on different machines within the cluster’s virtual network not accessible from outside except for two components accessible from public internet:
+* Gateway Service
+* Azure API Management
+
++++++++
 
 Power BI uses Azure Active Directory (**AAD**) for account authentication and management. Power BI also uses the **Azure Traffic Manager (ATM)** to direct user traffic to the nearest datacenter, determined by the DNS record of the client attempting to connect, for the authentication process and to download static content and files. Power BI uses the geographically closest WFE to efficiently distribute the necessary static content and files to users, with the exception of Power BI visuals which are delivered using the **Azure Content Delivery Network (CDN)**.
 
