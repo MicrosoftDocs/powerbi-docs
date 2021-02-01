@@ -56,14 +56,13 @@ Power BI service follows the Security Development Lifecycle (SDL), strict securi
 
 The **Power BI** service is built on **Azure**, Microsoft's [cloud computing platform](https://azure.microsoft.com/overview/what-is-azure/). Power BI is currently deployed in many datacenters around the world – there are many active deployments made available to customers in the regions served by those datacenters, and an equal number of passive deployments that serve as backups for each active deployment.
 
-E
+![The WFE and Back End](media/whitepaper-powerbi-security/powerbi-security-whitepaper_01.png)
 
+### Web Front End Cluster (WFE)
 
+The **WFE** cluster provides the user's browser with the initial HTML page contents on site load and manages the initial connection and authentication process for Power BI, using AAD to authenticate clients and provide tokens for subsequent client connections to the Power BI Band End service.
 
-
-
-
-
+![The WEF Cluster](media/whitepaper-powerbi-security/powerbi-security-whitepaper_02.png)
 
 ach Power BI deployment consists of two clusters – a Web Front End (**WFE**) cluster, and a **Back-End** cluster. These two clusters are shown in the following image, and provide the backdrop for the rest of this article. 
 
@@ -73,7 +72,7 @@ Power BI uses Azure Active Directory (**AAD**) for account authentication and ma
 
 ### The WFE Cluster
 
-The **WFE** cluster manages the initial connection and authentication process for Power BI, using AAD to authenticate clients and provide tokens for subsequent client connections to the Power BI service.
+The **WFE** cluster provides the user's browser with the initial HTML page contents on site load and manages the initial connection and authentication process for Power BI, using AAD to authenticate clients and provide tokens for subsequent client connections to the Power BI Band End service.
 
 ![The WEF Cluster](media/whitepaper-powerbi-security/powerbi-security-whitepaper_02.png)
 
