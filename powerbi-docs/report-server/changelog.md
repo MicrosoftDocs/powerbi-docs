@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/28/2021
+ms.date: 02/01/2021
 ---
 
 # Change log for Power BI Report Server
