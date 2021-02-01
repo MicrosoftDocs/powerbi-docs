@@ -203,8 +203,6 @@ Before you embed your content, make sure you have all the values listed below. S
 >[!TIP]
 >**Applies to:** ![Applies to.](../../media/yes.png)Service principal ![Applies to.](../../media/yes.png)Master user
 
-To get the report ID GUID, follow these steps:
-
 [!INCLUDE[Get the report ID](../../includes/embed-tutorial-report-id.md)]
 
 ### Client secret
