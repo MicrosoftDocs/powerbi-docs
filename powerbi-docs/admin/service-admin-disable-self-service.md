@@ -173,7 +173,7 @@ Users who have joined your tenant via self-service sign-up get assigned a unique
 
 
     > [!NOTE]
-    > If your organization doesn't have a Microsoft 365 environment connected to your email domain, self-service users were added to a new, cloud-only user directory. You may need to find, claim, and [take over tenants that were already created](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/domains-admin-takeover). 
+    > If your organization doesn't have a Microsoft 365 environment connected to your email domain, self-service users were added to a new, cloud-only user directory. You may need to find, claim, and [take over tenants that were already created](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover). 
 
 ## Next steps
 
