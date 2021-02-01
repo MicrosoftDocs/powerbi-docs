@@ -42,14 +42,14 @@ Notifications are sent to you for a variety of reasons, and often the same notif
 
 
    
-2. In the Power BI service menu bar, select the bell icon. In this example, the user has two new notifications since the last time they opened the notification center.
+1. In the Power BI service menu bar, select the bell icon. In this example, the user has two new notifications since the last time they opened the notification center.
    
    ![top menu bar with Notifications icon selected](./media/end-user-notification-center/power-bi-notification-icon.png)
-3. Notifications are displayed with the most-recent on top and unread messages highlighted. Notifications are retained for 90 days, unless you delete them sooner or reach the maximum limit of 100.
+2. Notifications are displayed with the most-recent on top and unread messages highlighted. Notifications are retained for 90 days, unless you delete them sooner or reach the maximum limit of 100.
    
    ![Notification Center](./media/end-user-notification-center/power-bi-notifications-center.png)
 
-4. Read the notification and take action. Most notifications contain one or more active links.  The example below contains a link to a dashboard.
+3. Read the notification and take action. Most notifications contain one or more active links.  The example below contains a link to a dashboard.
 
    ![Notification that a new dashboard has been added.](./media/end-user-notification-center/power-bi-alert.png)
 
