@@ -150,7 +150,7 @@ This occurs because client libraries installed with SSMS v18.7.1 do not support 
 
 ### Refresh operations
 
-When using SSMS v18.7.1 or lower to perform a long running (>1 min) refresh operation on a dataset in a Premium Gen2 and an [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) capacity, SSMS may display an error like the following even though the refresh operation succeeds:
+When using SSMS v18.7.1 or lower to perform a long running (>1 min) refresh operation on a dataset in a Premium Gen2 or an [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) capacity, SSMS may display an error like the following even though the refresh operation succeeds:
 
 ```
 Executing the query ...
