@@ -2,15 +2,13 @@
 title: Add images, videos, and more to your dashboard
 description: Documentation on how to use the Add tile widget to add an image, video, text box, web code, and streaming data tile to a dashboard.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: e2PD8m1Q0vU
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/25/2019
-ms.author: maggies
-
+ms.date: 10/28/2020
 LocalizationGroup: Dashboards
 ---
 # Add images, videos, and more to your dashboard
@@ -235,6 +233,7 @@ To make changes to an existing tile:
 ## Considerations and troubleshooting
 * To make it easier to move the tile on your dashboard, add a title and an optional subtitle.
 * If you'd like to embed content from a website, but the website doesn't provide embed code to copy and paste, see embed.ly for help with generating the embed code.
+* Make sure security credentials aren't required to access the image file. For example, because OneDrive and SharePoint require authentication, images stored there can't be added to a dashboard this way.  
 
 ## Next steps
 [Intro to dashboard tiles for Power BI designers](service-dashboard-tiles.md)

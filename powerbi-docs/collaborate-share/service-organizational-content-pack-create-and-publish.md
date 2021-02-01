@@ -2,25 +2,26 @@
 title: Create and publish an organizational content pack - Power BI
 description: In this tutorial, you create an organizational content pack, restrict access to a specific group, and publish it to your organization's content pack library on Power BI.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 08/06/2019
-ms.author: maggies
+ms.date: 01/12/2021
 LocalizationGroup: Share your work
 ---
 
 # Tutorial: Create and publish a Power BI organizational content pack
+
+> [!NOTE]
+> Organizational content packs are being deprecated. Now is a good time to upgrade your content packs to apps, if you haven't started yet. See the workspace upgrade roadmap section of this blog post [Announcing Power BI admins can upgrade classic workspaces](https://powerbi.microsoft.com/blog/announcing-power-bi-admins-can-upgrade-classic-workspaces-and-roadmap-update/) for the timeline.
+> 
 
 In this tutorial, you create an organizational content pack, give access to a specific group, and publish it to your organization's content pack library on Power BI.
 
 Creating content packs is different from sharing dashboards or collaborating on them in a group. Read [Ways to share your work in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md) to decide on the best option for your situation.
 
 Creating an organizational content pack requires a [Power BI Pro account](https://powerbi.microsoft.com/pricing) for you and your colleagues.
-
-> [!NOTE]
-> You can't create or install organizational content packs in the new workspace experiences. If you haven't started yet, Now is a good time to upgrade your content packs to apps. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
 
 ## Create and publish a content pack
 

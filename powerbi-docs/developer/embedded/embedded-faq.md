@@ -1,6 +1,6 @@
 ---
-title: Frequently asked questions about Power BI Embedded
-description: Browse a list of frequently asked questions and answers about Power BI Embedded.
+title: Frequently asked questions about Power BI embedded analytics helping you to enable better embedded BI insights
+description: Browse a list of frequently asked questions and answers about Power BI embedded analytics which enhance customers embedded BI insights.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -31,7 +31,6 @@ Power BI is a software-as-a-service analytics solution that gives organizations 
 
 Microsoft developed Power BI Embedded for ISVs wanting to embed visuals into their applications to help their customers make analytic decisions. This spares ISVs from having to build their own analytics' solution themselves. [Embedded analytics](embedding.md) enables business users to access business data and execute queries against it to generate insights within the application.
 
-
 ### What is the difference between Power BI Premium and Power BI Embedded?
 
 Power BI Premium is capacity geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers. Power BI Premium helps your organization make decisions. Power BI Premium is a SaaS product that allows users to consume content through mobile apps, internally developed apps, or at the Power BI portal.
@@ -46,7 +45,7 @@ There may be some cases where an ISV (typically large), in addition to app embed
 
 ### How many embed tokens can I create?
 
-Embed tokens with PRO license are intended for development testing, so a Power BI master account or [service principal](embed-service-principal.md) can only generate a limited number of tokens. [Purchase a capacity](#technical) for embedding in a production environment. There's no limit to how many embed tokens you can generate when you purchase a capacity. Go to [Available Features](https://docs.microsoft.com/rest/api/power-bi/availablefeatures) to check the usage value that indicates the current embedded usage in percentage.
+Embed tokens with PRO license are intended for development testing, so a Power BI master account or [service principal](embed-service-principal.md) can only generate a limited number of tokens. [Purchase a capacity](#technical) for embedding in a production environment. There's no limit to how many embed tokens you can generate when you purchase a capacity. Go to [Available Features](/rest/api/power-bi/availablefeatures) to check the usage value that indicates the current embedded usage in percentage.
 
 ## Technical
 
@@ -64,7 +63,7 @@ Refer to the [Capacity and SKUs in Power BI embedded analytics](embedded-capacit
 
 * Using the [Power BI Admin portal](../../admin/service-admin-portal.md#power-bi-embedded).
 
-* Downloading the [metric app](https://docs.microsoft.com/power-bi/service-admin-premium-monitor-capacity) in Power BI.
+* Downloading the [metric app](../../admin/service-admin-premium-monitor-capacity.md) in Power BI.
 
 * Using [Azure diagnostic logging](azure-pbie-diag-logs.md).
 
@@ -74,7 +73,7 @@ While there's no automatic scaling now, all the APIs are available to scale at a
 
 ### Why creating/scaling/resuming a capacity results in putting the capacity into a suspended state?
 
-Capacity provisioning (scale/resume/create) may fail. You can use the Get Details API to check a capacity's ProvisioningState: [Capacities - Get Details](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities/getdetails).
+Capacity provisioning (scale/resume/create) may fail. You can use the Get Details API to check a capacity's ProvisioningState: [Capacities - Get Details](/rest/api/power-bi-embedded/capacities/getdetails).
 
 ### Can I only create Power BI Embedded capacities in a specific region?
 
@@ -84,7 +83,7 @@ With the [Multi-geo (Preview)](embedded-multi-geo.md) feature, you can purchase 
 
 When a user is granted permissions to a workspace, app, or artifact, it might not be immediately available through API calls.
 The result can either be a missing artifact in a 'GET' API response, or an error when trying to use the artifact.
-The user can resolve this issue by calling [refreshUserPermissions API](https://docs.microsoft.com/rest/api/power-bi/users/refreshuserpermissions), which updates the user permissions.
+The user can resolve this issue by calling [refreshUserPermissions API](/rest/api/power-bi/users/refreshuserpermissions), which updates the user permissions.
 
 
 ### How can I find my PBI tenant region?
@@ -107,14 +106,14 @@ Power BI requires you to sign up with an organizational account. Trying to sign 
 
 ### Can I use APIs to create and manage Azure capacities?
 
-Yes, there are Powershell cmdlets and Azure Resource Manager REST APIs you can use to create and manage PBIE resources.
+Yes, there are PowerShell cmdlets and Azure Resource Manager REST APIs you can use to create and manage PBIE resources.
 
-* [Rest APIs](https://docs.microsoft.com/rest/api/power-bi-embedded/) 
-* [Powershell cmdlets](https://docs.microsoft.com/powershell/module/azurerm.powerbiembedded/)
+* [Rest APIs](/rest/api/power-bi-embedded/) 
+* [PowerShell cmdlets](/powershell/module/azurerm.powerbiembedded/)
 
-### What is the PBI Embedded dedicated capacity role in a PBI Embedded solution?
+### What is the PBI Embedded capacity role in a PBI Embedded solution?
 
-To [promote your solution to production](embed-sample-for-customers.md#move-to-production), you need to assign the Power BI content (workspace) your application uses to a Power BI Embedded (A SKU) capacity.
+To [promote your solution to production](move-to-production.md), you need to assign the Power BI content (workspace) your application uses to a Power BI Embedded (A SKU) capacity.
 
 ### In what Azure regions is PBI Embedded available?
 
@@ -140,7 +139,7 @@ Power BI Embedded continues to use Azure AD for master user (a designated Power 
 
 You can use your existing directory if you already have an Azure AD tenant. You can also create a new Azure AD tenant for your embedded application content security.
 
-To get an AAD token, you can use one of the [Azure Active Directory Authentication Libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries). There are client libraries available for multiple platforms.
+To get an AAD token, you can use one of the [Azure Active Directory Authentication Libraries](/azure/active-directory/develop/active-directory-authentication-libraries). There are client libraries available for multiple platforms.
 
 ### My Application already uses AAD for User Authentication. How can we use this Identity when authenticating to Power BI in a "User Owns Data" scenario?
 
@@ -179,7 +178,7 @@ There's often confusion around when to use RLS versus JavaScript filters, becaus
 
 For RLS, the ISV developer controls the data filtering as part of the model creation and embed token generation. The end user sees only what the ISV allows the user to see. In this case, the user can choose to see less than what's being filtered, but won't be able to bypass the RLS configuration and see more than what's allowed.
 
-For client-side filtering (JavaScript), the ISV might decide what the end user sees at the initial view, but they can't control changes the end user might apply to the view itself. Since user Javascript client code can trigger data filtering on the backend, it can't be considered secure.
+For client-side filtering (JavaScript), the ISV might decide what the end user sees at the initial view, but they can't control changes the end user might apply to the view itself. Since user JavaScript client code can trigger data filtering on the backend, it can't be considered secure.
 
 Reference [RLS vs JavaScript filters](embedded-row-level-security.md#using-rls-vs-javascript-filters) for more details.
 
@@ -189,11 +188,11 @@ Once you enable [service principal](embed-service-principal.md) to use with Powe
 
 Service principals inherit the permissions for all Power BI tenant settings from their security group. To restrict permissions, create a dedicated security group for service principals and add it to the **Except specific security groups** list for the relevant, enabled Power BI settings.
 
-This situation matters when you add the service principal as an **admin** to the new workspace. You can manage this task through the [APIs](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) or with the Power BI service.
+This situation matters when you add the service principal as an **admin** to the new workspace. You can manage this task through the [APIs](/rest/api/power-bi/groups/addgroupuser) or with the Power BI service.
 
 ### When to use an application ID vs. a service principal object ID?
 
-The **[application ID](embed-sample-for-customers.md#application-id)** is used to create the access token when passing the application ID for authentication.
+The **[application ID](embed-sample-for-customers.md#client-id)**, also known as *client ID*, is used to create the access token when passing the application ID for authentication.
 
 To reference a service principal for operations or to make changes you use the **[service principal object ID](embed-service-principal.md)** — for example, applying a service principal as an admin to a workspace.
 
@@ -273,12 +272,12 @@ There's no special Azure pricing for non-profit and educational entities.
 
 2. Start with the **Power BI Embedded** application POC that uses Power BI content.
 
-3. Once you are ready for production, purchase a **Power BI Embedded** dedicated capacity and assign your Power BI content (workspace) to that capacity.
+3. Once you are ready for production, purchase a **Power BI Embedded** capacity and assign your Power BI content (workspace) to that capacity.
 
     > [!Note]
     > You can continue to use **Power BI Workspace Collection** while building in parallel with a **Power BI Embedded** solution. Once you are ready, you can move your customer to the new **Power BI Embedded** solution and retire the **Power BI Workspace Collection** solution.
 
-For more information,  please reference [How to migrate Power BI Workspace Collection content to Power BI Embedded](https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded)
+For more information,  please reference [How to migrate Power BI Workspace Collection content to Power BI Embedded](./migrate-from-powerbi-embedded.md)
 
 ### Is Power BI Workspace Collection on a deprecation path?
 
@@ -307,12 +306,12 @@ Some of the features are:
 
 ### What is the Embedding setup tool?
 
-The [Embedding setup tool](https://aka.ms/embedsetup) allows you to quickly get started and download a sample application to begin embedding with Power BI.
+The [Embedding setup tool](https://app.powerbi.com/embedsetup) allows you to quickly get started and download a sample application to begin embedding with Power BI.
 
 ### Which solution should I choose?
 
-* [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. Run the [Embed for your customers](https://aka.ms/embedsetup/AppOwnsData) solution.
-* [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service. Run the [Embed for your organization](https://aka.ms/embedsetup/UserOwnsData) solution.
+* [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. In the [Embedding setup tool](https://app.powerbi.com/embedsetup), run the *Embed for your customers* solution.
+* [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service. In the [Embedding setup tool](https://app.powerbi.com/embedsetup), run the *Embed for your organization* solution.
 
 ### I've downloaded the sample app, which solution do I choose?
 
@@ -322,11 +321,11 @@ If you're working with the **Embed for your organization** experience, save and 
 
 ### How can I edit my registered application?
 
-To learn how to edit Azure AD-registered applications, see [Quickstart: Update an application in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-update-azure-ad-app).
+To learn how to edit Azure AD-registered applications, see [Quickstart: Update an application in Azure Active Directory](/azure/active-directory/develop/quickstart-v1-update-azure-ad-app).
 
 ### How can I edit my Power BI user profile or data?
 
-You can learn how to edit your Power BI data [here](https://docs.microsoft.com/power-bi/service-basic-concepts).
+You can learn how to edit your Power BI data [here](../../fundamentals/service-basic-concepts.md).
 
 For more information, see [Troubleshooting your embedded application](embedded-troubleshoot.md).
 

@@ -1,16 +1,18 @@
 ---
 title: "Expression examples in Power BI Report Builder"
 description: Expressions are used frequently in Power BI Report Builder paginated reports to control content and report appearance.
-ms.date: 10/21/2019
-ms.service: powerbi
-ms.subservice: report-builder
-
-ms.topic: conceptual
-ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
+ms.date: 11/08/2020
+ms.service: powerbi
+ms.subservice: report-builder
+ms.topic: conceptual
+ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 ---
 # Expression examples in Power BI Report Builder
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+
 Expressions are used frequently in Power BI Report Builder paginated reports to control content and report appearance. Expressions are written in Microsoft Visual Basic, and can use built-in functions, custom code, report and group variables, and user-defined variables. Expressions begin with an equal sign (=).   
 
 This topic provides examples of expressions that can be used for common tasks in a report.  
@@ -445,6 +447,9 @@ For more information about simple and complex expressions, where you can use exp
     ```  
     =IIF(Parameters!IncludeURLs.Value,"https://adventure-works.com/productcatalog",Nothing)  
     ```  
+  
+> [!NOTE]
+>  Power BI paginated reports don't support using JavaScript within a **Go To URL** expression.  
   
 ##  <a name="ReportData"></a> Report data  
  Expressions can be used to manipulate the data that is used in the report. You can refer to parameters and other report information. You can even change the query that is used to retrieve data for the report.  

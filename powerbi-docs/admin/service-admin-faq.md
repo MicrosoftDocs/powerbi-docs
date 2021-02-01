@@ -2,14 +2,12 @@
 title: Administering Power BI - frequently asked questions (FAQ)
 description: Learn the answers to frequently asked questions on Power BI sign up, tenant management, and other administrative tasks.
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: kfollis
-
 LocalizationGroup: Administration
 ---
 
@@ -52,7 +50,7 @@ This article addresses frequently asked questions for Power BI administration. F
 
 ### Using PowerShell
 
-Some of the procedures in this section require Windows PowerShell scripts. If you're not familiar with PowerShell, we recommend the [PowerShell getting started guide](https://go.microsoft.com/fwlink/p/?LinkID=286814). To run the scripts, first install the latest 64-bit version of the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/overview).
+Some of the procedures in this section require Windows PowerShell scripts. If you're not familiar with PowerShell, we recommend the [PowerShell getting started guide](/powershell/scripting/overview). To run the scripts, first install the latest 64-bit version of the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/overview).
 
 ### How do users sign up for Power BI?
 
@@ -241,7 +239,7 @@ For info about high availability and failover, see [Power BI high availability, 
 
 ### Does Power BI meet national, regional, and industry-specific compliance requirements?
 
-To learn more about Power BI compliance, see the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/default.aspx).
+To learn more about Power BI compliance, see the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview).
 
 ### How does security work in Power BI?
 

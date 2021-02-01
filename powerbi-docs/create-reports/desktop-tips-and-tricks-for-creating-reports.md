@@ -2,15 +2,13 @@
 title: Tips and tricks for creating reports in Power BI
 description: Learn best practices for building reports in the Power BI service and Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: willthom
-
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/07/2020
-ms.author: davidi
-
 ---
 # Tips and tricks for creating reports in Power BI Desktop
 To get the most out of your data, sometimes you need a little extra help. We’ve put together some tips & tricks you can use when creating reports in the Microsoft Power BI Desktop *and* in Microsoft Excel 2016, or Excel 2013 Pro-Plus editions with the Power Pivot add-in enabled and Power Query installed and enabled. 
@@ -40,7 +38,9 @@ Taking an example of a simple table of Temperatures and the Time the reading was
 ## Reference lines in your report
 You can use a calculated column in Power BI Desktop to define a reference line. Identify the table and column on which you want to create a reference line. Select "New Column" in the ribbon and, in the formula bar, type the following formula:
 
-    Target Value = 100
+```console
+Target Value = 100
+```
 
 This calculated column will return the value 100 regardless of where it is used. Your new column will show up in the Field List. Add the Target Value calculated column to a line chart to show how any series relates to that specific reference line. 
 
@@ -62,7 +62,9 @@ Another way to ensure fields are correctly geocoded is by setting the Data Categ
 ## Better geocoding with more specific locations
 Sometimes, even setting the data categories for mapping is insufficient. Build a more specific location like a street address using the Query Editor in Power BI Desktop. Use the Add Column feature to build a custom column. Then build the desired location as follows: 
 
-    = [Field1] & " " & [Field2]
+```console
+= [Field1] & " " & [Field2]
+```
 
 Then use this resulting field in the map visualizations. This is very useful for building street addresses from shipping address fields that are common in data sets. One note is that the concatenation only works with text fields. If needed, convert the street number to a text data type before using it to build an address.
 
@@ -73,11 +75,13 @@ Simplest Histograms - Determine which query has the field you want to build a hi
 
 Defining buckets to build a histogram - Determine which query has the field you want to build a histogram on. Use the "Reference" option for the query to create a new query and name it "FieldName". Now define the buckets with a rule. Use the Add Custom Column option on the Add Column ribbon and build a custom rule. A simple bucketing rule might look like this:
 
-    if([FieldName] \< 2) then "\<2 min" else
-    if([FieldName] \< 5) then "\<5 min" else
-    if([FieldName] \< 10) then "\<10 min" else
-    if([FieldName] \< 30) then "\<30 min" else
-    "longer")
+```console
+if([FieldName] \< 2) then "\<2 min" else
+if([FieldName] \< 5) then "\<5 min" else
+if([FieldName] \< 10) then "\<10 min" else
+if([FieldName] \< 30) then "\<30 min" else
+"longer")
+```
 
 Ensure the data type is a number for the resulting aggregate column. Now you can use the group by technique described in Simplest Histogram to achieve the histogram. This option handles more data points but still does not help with brushing.
 

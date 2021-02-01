@@ -2,13 +2,12 @@
 title: Many-to-many relationship guidance
 description: Guidance for developing many-to-many model relationships.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 03/02/2020
-ms.author: v-pemyer
 ---
 
 # Many-to-many relationship guidance
@@ -44,7 +43,7 @@ To help describe how the relationship filter propagation works, the model diagra
 > [!NOTE]
 > It's not possible to display table rows in the Power BI Desktop model diagram. It's done in this article to support the discussion with clear examples.
 
-![Diagram showing that the model now reveals the table rows. The row details are described in the following paragraph.](media/relationships-many-to-many/bank-account-customer-model-related-tables-2.png)
+![Diagram showing that the model now reveals the table rows. The row details for the four tables are described in the following paragraph.](media/relationships-many-to-many/bank-account-customer-model-related-tables-2.png)
 
 The row details for the four tables are described in the following bulleted list:
 
@@ -133,7 +132,7 @@ The relationship cardinality is set to many-to-many to support storing duplicate
 
 Let's now take a look at the table rows. In the **Fulfillment** table, notice that order lines can be fulfilled by multiple shipments. (The absence of an order line means the order is yet to be fulfilled.)
 
-![Diagram showing that the model now reveals the table rows. The row details are described in the following paragraph.](media/relationships-many-to-many/order-fulfillment-model-related-tables.png)
+![Diagram showing that the model now reveals the table rows. The row details for the two tables are described in the following paragraph.](media/relationships-many-to-many/order-fulfillment-model-related-tables.png)
 
 The row details for the two tables are described in the following bulleted list:
 
@@ -224,7 +223,7 @@ IF(
 
 The following matrix visual now uses the **Target Quantity** measure. It shows that all monthly target quantities are BLANK.
 
-![Diagram showing a matrix visual revealing the year 2020 target quantity as 270.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-good.png)
+![Diagram showing a matrix visual revealing the year 2020 target quantity as 270 with blank monthly values.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-good.png)
 
 ### Relate higher grain (non-date)
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/27/2020
+ms.date: 01/25/2021
 ---
 
 # Support timeline for Power BI Report Server
@@ -25,17 +25,12 @@ This support policy allows us to deliver innovation to customers at a rapid rate
 
 | **Version** | **Availability date** | **Support end date** |
 | --- | --- | --- |
-| June 2017 |June 12, 2017 |No longer supported |
-| October 2017 |October 31, 2017 | No longer supported |
-| March 2018 | March 19, 2018 | No longer supported |
-| August 2018 | August 15, 2018 | No longer supported |
-| January 2019 | January 23, 2019 | No longer supported |
-| May 2019 | May 22, 2019 | No longer supported |
-| September 2019 | September 2019 | September 2020 
-| January 2020 | January 2020 | January 2021
+| January 2020 | January 2020 | January 2020 and all previous versions no longer supported
 | May 2020 | May 2020 | May 2021
+| October 2020 | October 2020 | October 2021
+| January 2021 | January 2021 | January 2022
 
-To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+To download Power BI Report Server, and Power BI Desktop for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
 ## Next steps
 [What's new in Power BI Report Server](whats-new.md)  

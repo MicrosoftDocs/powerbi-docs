@@ -4,12 +4,10 @@ description: Learn how to use the Power BI Premium Metrics app to manage and tro
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/11/2020
-
+ms.date: 11/11/2020
 LocalizationGroup: Premium
 ---
 # Power BI Premium Metrics app
@@ -27,6 +25,8 @@ The following sections describe the landing page, and the three metrics report p
 > [!IMPORTANT]
 > If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. See [capacity and reliability notifications](service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
 
+> [!NOTE]
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. In particular, it greatly reduces the metrics administrators must monitor (CPU only) to ensure performance and users’ experience. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
 
 
 ## Premium capacity health center
@@ -57,7 +57,7 @@ To learn the details of the active memory KPI, click the **Explore** button to s
 
 There are two scenarios explained, which you can show on the report page by selecting **Scenario 1** or **Scenario 2** on the page. 
 
-![The active memory detail page](media/service-premium-metrics-app/premium-metrics-app-03.png)
+![Screenshot shows the active memory detail page.](media/service-premium-metrics-app/premium-metrics-app-03.png)
 
 The troubleshooting guides, associated with each scenario, provide detailed explanations about what the metrics mean, so you can better understand the state of the capacity, and what can be done to mitigate any issues. 
 
@@ -112,7 +112,7 @@ You can take the following steps to remedy the problems associated with scenario
 
 To determine whether there's enough memory for the capacity to complete its workloads, you can refer to the **A: Consumed Memory Percentages** visual on the top of the page, representing the memory consumed by datasets that are being actively processed so cannot be evicted. The black dotted line highlights the trends. In a capacity experiencing memory pressure, the same visual will clearly show the memory trendline (black dotted line) upwards, meaning that it is possibly preventing additional datasets from being loaded into memory at that point in time. The trend line, the black dashed line, shows the trend of growth based on the seven days of data. 
 
-![The active memory detail page](media/service-premium-metrics-app/premium-metrics-app-07.png)
+![Screenshot shows the active memory detail page for scenario two.](media/service-premium-metrics-app/premium-metrics-app-07.png)
 
 #### Diagnosing scenario two
 
@@ -263,7 +263,7 @@ If there isn't enough memory to load a dataset for an interactive query, schedul
 
 To diagnose scenario one, first determine whether throttling is due to insufficient memory. The steps to do so are the following.
 
-1.    Select the dataset you're interested in from **Table A** by clicking on it: 
+1. Select the dataset you're interested in from **Table A** by clicking on it: 
 
     ![Table A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
@@ -298,7 +298,7 @@ You can take the following steps to remedy the problems associated with scenario
 
 In scenario two, there isn't enough available CPU to carry out the refresh. 
 
-For dedicated capacities, Power BI limits the number of refreshes that can happen concurrently. This number is equal to the number of back-end cores x 1.5. For example, a P1 dedicated capacity, which has four back-end cores, can run 6 refreshes concurrently. Once the maximum number of concurrent refreshes has been reached, other refreshes will wait until an executing refresh finishes.
+For capacities, Power BI limits the number of refreshes that can happen concurrently. This number is equal to the number of back-end cores x 1.5. For example, a P1 capacity, which has four back-end cores, can run 6 refreshes concurrently. Once the maximum number of concurrent refreshes has been reached, other refreshes will wait until an executing refresh finishes.
 
 ![Scenario two for refresh](media/service-premium-metrics-app/premium-metrics-app-26.png)
 
@@ -306,7 +306,7 @@ For dedicated capacities, Power BI limits the number of refreshes that can happe
 
 To diagnose scenario two, first determine whether throttling is due to running into the maximum concurrency for refreshes. The steps to do so are the following.
 
-1.    Select the dataset you're interested in from **Table A** by clicking on it: 
+1. Select the dataset you're interested in from **Table A** by clicking on it: 
 
     ![Table A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
@@ -344,3 +344,13 @@ To diagnose scenario two, first determine whether throttling is due to running i
 * [Power BI Embedded FAQ](../developer/embedded/embedded-faq.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
+Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+* Performance
+* Per-user licensing
+* Greater scale
+* Improved metrics
+* Autoscaling
+* Reduced management overhead
+
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

@@ -1,15 +1,13 @@
 ---
 title: Connect to Project Online with Power BI
 description: Project Online for Power BI
-author: SarinaJoan
+author: paulinbar
+ms.author: painbar
 ms.reviewer: maggiesMSFT
-
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 07/25/2019
-ms.author: sarinas
-
 LocalizationGroup: Connect to services
 ---
 
@@ -26,7 +24,7 @@ Connect to the [Project Web App Template App](https://appsource.microsoft.com/pr
 
 2. In the **Services** box, select **Get**.
    
-   ![AppSource](media/service-connect-to-project-online/AppSource.png)
+   ![Screenshot shows the AppSource window with five Apps available.](media/service-connect-to-project-online/AppSource.png)
 3. In AppSource, select the **Apps** tab, and search/select **Microsoft Project Web App**.
    
 4. You will get a message saying - **Install this Power BI App?** select **Install**. 

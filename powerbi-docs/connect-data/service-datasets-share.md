@@ -1,14 +1,13 @@
 ---
 title: Share a dataset
 description: As a dataset owner, you can create and share your datasets so others can use them. Learn how to share them.
-author: maggiesMSFT
+author: paulinbar
+ms.author: painbar
 ms.reviewer: kayu
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 04/30/2020
-ms.author: maggies
-
 LocalizationGroup: Share your work
 ---
 # Share a dataset

@@ -1926,9 +1926,9 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/service-create-workspaces.md",
+            "source_path": "powerbi-docs/collaborate-share/service-workspaces-new-look.md",
             "redirect_url": "/power-bi/collaborate-share/service-create-workspaces",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-embed-report-microsoft-teams.md",
@@ -2541,8 +2541,8 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/service-connect-to-files-in-app-workspace-onedrive-for-business.md",
-            "redirect_url": "/power-bi/connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business",
+            "source_path": "powerbi-docs/connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business.md",
+            "redirect_url": "/power-bi/collaborate-share/service-connect-to-files-in-app-workspace-onedrive-for-business",
             "redirect_document_id": true
         },
         {
@@ -2617,8 +2617,8 @@
         },
         {
             "source_path": "powerbi-docs/service-datasets-certify.md",
-            "redirect_url": "/power-bi/connect-data/service-datasets-certify",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/collaborate-share/service-endorse-content",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-datasets-copy-reports.md",
@@ -2632,8 +2632,13 @@
         },
         {
             "source_path": "powerbi-docs/service-datasets-promote.md",
-            "redirect_url": "/power-bi/connect-data/service-datasets-promote",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/collaborate-share/service-endorse-content",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/service-datasets-promote.md",
+            "redirect_url": "/power-bi/collaborate-share/service-endorse-content",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-datasets-share.md",
@@ -2861,14 +2866,19 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/connect-data/service-tutorial-invoke-machine-learning-model.md",
+            "redirect_url": "/power-bi/connect-data/service-aml-integrate",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/service-tutorial-connect-to-github.md",
             "redirect_url": "/power-bi/connect-data/service-tutorial-connect-to-github",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-tutorial-invoke-machine-learning-model.md",
-            "redirect_url": "/power-bi/connect-data/service-tutorial-invoke-machine-learning-model",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/connect-data/service-aml-integrate",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-tutorial-use-cognitive-services.md",
@@ -3709,6 +3719,135 @@
             "source_path": "powerbi-docs/collaborate-share/service-security-apply-data-sensitivity-labels.md",
             "redirect_url": "/power-bi/admin/service-security-apply-data-sensitivity-labels",
             "redirect_document_id": true
-        }
-    ]
+        },
+        {
+            "source_path": "powerbi-docs/visuals/power-bi-visualization-arcgis.md",
+            "redirect_url": "/power-bi/visuals/power-bi-visualizations-arcgis",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/transform-model/service-cognitive-services.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-machine-learning-integration",
+            "redirect_document_id": true
+        },       
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-add-cdm-folder.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-machine-learning-integration",
+            "redirect_document_id": false
+        },                       
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-azure-data-lake-integration.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration",
+            "redirect_document_id": true
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-best-practices.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-introduction-self-service",
+            "redirect_document_id": true
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-computed-entities-premium.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-premium-features",
+            "redirect_document_id": true
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-configure-workspace-storage-settings.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-configure-consume",
+            "redirect_document_id": true
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-connect-azure-data-lake-storage-gen2.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration",
+            "redirect_document_id": false
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-create-use.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-create",
+            "redirect_document_id": true
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-data-sources.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-configure-consume",
+            "redirect_document_id": false
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-developer-resources.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-configure-consume",
+            "redirect_document_id": false
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-directquery.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-configure-consume",
+            "redirect_document_id": false
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-enhanced-compute-engine.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-premium-features",
+            "redirect_document_id": false
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-incremental-refresh.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-premium-features",
+            "redirect_document_id": false
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-linked-entities.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-premium-features",
+            "redirect_document_id": false
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-on-premises-gateways.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-configure-consume",
+            "redirect_document_id": false
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-overview.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-introduction-self-service",
+            "redirect_document_id": false
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-machine-learning-automated.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-machine-learning-integration",
+            "redirect_document_id": false
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-machine-learning-integration.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-machine-learning-integration",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/visuals/custom-visual-develop-tutorial.md",
+            "redirect_url": "/power-bi/developer/visuals/develop-circle-card",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/visuals/embedded-custom-layout.md",
+            "redirect_url": "https://github.com/Microsoft/PowerBI-JavaScript/wiki/Custom-Layout",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-mixed-reality-app.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-hololens2-app",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/embed-from-apps.md",
+            "redirect_url": "/power-bi/developer/embedded/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/power-bi-embedded-generation-2.md",
+            "redirect_url": "/power-bi/admin/service-premium-what-is",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/azure-pbie-diag-logs.md",
+            "redirect_url": "/power-bi/developer/embedded/monitor-power-bi-embedded",
+            "redirect_document_id": false
+        },                                                         
+        {
+            "source_path": "powerbi-docs/admin/power-bi-whitelist-urls.md",
+            "redirect_url": "/power-bi/admin/power-bi-allow-list-urls",
+            "redirect_document_id": false
+        }      ]
 }

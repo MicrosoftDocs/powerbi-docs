@@ -5,16 +5,16 @@ author: KesemSharabi
 ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
-ms.subservice: powerbi-service
-ms.custom: contperfq1
-ms.date: 09/15/2020
+ms.subservice: pbi-deployment
+ms.custom: contperf-fy21q1
+ms.date: 10/21/2020
 ---
 
 # Introduction to deployment pipelines
 
 In today’s world, analytics is a vital part of decision making in almost every organization. The growing use of Power BI as an analytics tool, requires it to use more data, look appealing and  be user-friendly. Above all however, Power BI needs to always be available and reliable. To meet these requirements, BI creators must collaborate effectively.
 
-The deployment pipelines tool enables BI creators to manage the lifecycle of organizational content. The tool is efficient and reusable for creators in an enterprise with Premium capacity. The tool enables creators to develop and test Power BI content before the content is consumed by users. The content types include reports, dashboards, and datasets.
+The deployment pipelines tool enables BI creators to manage the lifecycle of organizational content. It's an efficient and reusable tool for creators in an enterprise with Premium capacity. Deployment pipelines enables creators to develop and test Power BI content before the content is consumed by users. The content types include reports, dashboards, and datasets.
 
 The tool is designed as a pipeline with three stages:
 
@@ -24,7 +24,7 @@ The tool is designed as a pipeline with three stages:
 
 * **<a name="test"></a>Test**
 
-    You are ready to enter the test stage after you have made all the changes to your content. You upload the modified content so it can be moved to this test stage. Here are three examples of what can be done in the test environment:
+    You're ready to enter the test stage after you've made all the needed changes to your content. You upload the modified content so it can be moved to this test stage. Here are three examples of what can be done in the test environment:
 
     * Share content with testers and reviewers
 

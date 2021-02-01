@@ -2,14 +2,12 @@
 title: Many-to-many relationships in Power BI Desktop
 description: Use relationships with a many-many cardinality in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 12/19/2019
-ms.author: davidi
-
 LocalizationGroup: Transform and shape data
 ---
 # Apply many-many relationships in Power BI Desktop
@@ -89,7 +87,7 @@ You could leave the workaround table visible. Or you may hide the workaround tab
 
 A visual that displays **State** (from the **CityData** table), along with total **Population** and total **Sales**, would then appear as follows:
 
-![State, Population, and Sales tables, Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_09.png)
+![Screenshot shows a table with State, Population, and Sales data.](media/desktop-many-to-many-relationships/many-to-many-relationships_09.png)
 
 > [!NOTE]
 > Because the state from the **CityData** table is used in this workaround, only the states in that table are listed, so TX is excluded. Also, unlike *Many-1* relationships, while the total row includes all **Sales** (including those of TX), the details don't include a blank row covering such mismatched rows. Similarly, no blank row would cover **Sales** for which there's a null value for the **State**.

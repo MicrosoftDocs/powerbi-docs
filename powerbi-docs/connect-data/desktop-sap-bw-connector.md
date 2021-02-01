@@ -2,14 +2,12 @@
 title: Use the SAP Business Warehouse (BW) Connector in Power BI Desktop
 description: Use the SAP BW Connector in Power BI Desktop
 author: davidiseminger
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-desktop
-ms.topic: how-to
-ms.date: 01/13/2020
 ms.author: davidi
-
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: pbi-data-sources
+ms.topic: how-to
+ms.date: 01/21/2021
 LocalizationGroup: Connect to data
 ---
 # Use the SAP Business Warehouse connector in Power BI Desktop
@@ -41,8 +39,8 @@ You can download the [SAP .NET Connector 3.0](https://support.sap.com/en/product
 
 The connector comes in 32-bit and 64-bit versions. Choose the version that matches your Power BI Desktop installation. Currently, the website lists two versions for .NET 4.0 framework:
 
-* SAP Connector for Microsoft .NET 3.0.22.0 for Windows 32-bit (x86) as zip file (6.896 KB), June 1, 2019
-* SAP Connector for Microsoft .NET 3.0.22.0 for Windows 64-bit (x64) as zip file (7.180 KB), June 1, 2019
+* SAP Connector for Microsoft .NET 3.0.22.0 for Windows 32-bit (x86) or later (.NET Framework 4.0)
+* SAP Connector for Microsoft .NET 3.0.22.0 for Windows 64-bit (x64) or later (.NET Framework 4.0)
 
 When you install, in **Optional setup steps**, make sure you select *Install assemblies to GAC*.
 
@@ -143,19 +141,19 @@ Changing existing reports to use Implementation 2.0 is only possible in import m
 
     Determine whether the query already contains an option record, such as the following example:
 
-    ![query snippet](media/desktop-sap-bw-connector/sap_bw_9.png)
+    ![Screenshot shows a plaintext query with an option record.](media/desktop-sap-bw-connector/sap_bw_9.png)
 
     If so, add the `Implementation` 2.0 option, and remove the `ScaleMeasures` option, if present, as shown:
 
-    ![query snippet](media/desktop-sap-bw-connector/sap_bw_10.png)
+    ![Screenshot shows a plaintext query with the added value Implementation = 2.0.](media/desktop-sap-bw-connector/sap_bw_10.png)
 
     If the query doesn't already include an options record, just add it. For the following option:
 
-    ![query snippet](media/desktop-sap-bw-connector/sap_bw_11.png)
+    ![Screenshot shows a plaintext query with an option record added.](media/desktop-sap-bw-connector/sap_bw_11.png)
 
     Just change it to:
 
-    ![query snippet](media/desktop-sap-bw-connector/sap_bw_12.png)
+    ![Screenshot shows a plaintext query of the new option with the added value Implementation = 2.0.](media/desktop-sap-bw-connector/sap_bw_12.png)
 
 Every effort has been made to make Implementation 2.0 of the SAP BW Connector compatible with version 1. However, there may be some differences because of the different SAP BW MDX execution modes being used. To resolve any discrepancies, try switching between execution modes.
 

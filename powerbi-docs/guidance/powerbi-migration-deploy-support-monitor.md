@@ -2,13 +2,12 @@
 title: Deploy to Power BI
 description: Guidance on deploying, supporting, and monitoring content when migrating to Power BI.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/20/2020
-ms.author: v-pemyer
 ---
 
 # Deploy to Power BI
@@ -72,7 +71,7 @@ During the deployment process, you may need to work with your Power BI administr
 - **Gateway maintenance:** A [new data source](../connect-data/service-gateway-data-sources.md) registration in the data gateway may be required.
 - **Gateway drivers and connectors:** A new proprietary data source may require installation of a new driver or custom connector on each server in the gateway cluster.
 - **Create a new Premium capacity:** You may be able to use an existing [Premium capacity](../admin/service-premium-capacity-manage.md). Or, there may be situations when a new Premium capacity is warranted. It could be the case when you purposely wish to separate a departmental workload.
-- **Set up a Power BI dataflow:** Data preparation activities can be set up once in a [Power BI dataflow](../transform-model/service-dataflows-overview.md) using Power Query Online. It helps avoid replicating data preparation work in many different Power BI Desktop files.
+- **Set up a Power BI dataflow:** Data preparation activities can be set up once in a [Power BI dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md) using Power Query Online. It helps avoid replicating data preparation work in many different Power BI Desktop files.
 - **Register a new organizational visual:** [Organizational visual](../developer/visuals/power-bi-custom-visuals-organization.md) registration can be done in the admin portal for custom visuals that didn't originate from AppSource.
 - **Set featured content:** A tenant setting exists that controls who may [feature content](https://powerbi.microsoft.com/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/) in the Power BI service home page.
 - **Set up sensitivity labels:** All [sensitivity labels](../admin/service-security-data-protection-overview.md) are integrated with Microsoft Information Protection.
@@ -89,7 +88,7 @@ Key activities during a deployment to the production workspace typically include
 - **App:** If apps are part of your content distribution strategy, publish an [app](../consumer/end-user-apps.md) using the content from the production workspace.
 - **Security:** Update and verify [workspace roles](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) based on your content distribution and collaboration strategy.
 - **Dataset settings:** Update and verify settings for each dataset, including:
-  - [Endorsement](../connect-data/service-datasets-certify.md) (such as certified or promoted)
+  - [Endorsement](../collaborate-share/service-endorse-content.md) (such as certified or promoted)
   - Gateway connection or data source credentials
   - Scheduled refresh
   - [Featured Q&A questions](../create-reports/service-q-and-a-create-featured-questions.md)

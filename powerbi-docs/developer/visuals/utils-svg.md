@@ -1,6 +1,6 @@
 ---
-title: Introduction to use SVG utils in Power BI visual
-description: This article describes how to use SVG utils to simplify SVG manipulations for Power BI visuals
+title: Introduction to use SVG utils in Power BI visual in Power BI embedded analytics for better embedded BI insights
+description: This article describes how to use SVG utils to simplify SVG manipulations for Power BI visuals. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin

@@ -2,14 +2,12 @@
 title: Connect to AI Insights in Power BI Desktop
 description: Easily connect to and use data from AI Insights in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 06/10/2020
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Use AI Insights in Power BI Desktop
@@ -154,7 +152,7 @@ To use this capability, a data scientist can simply grant access to the Azure ML
 
 This functionality is supported in Power BI Desktop, Power BI dataflows, and for Power Query Online in the Power BI service.
 
-To learn more about dataflows, see [Self-service data prep in Power BI](service-dataflows-overview.md).
+To learn more about dataflows, see [Self-service data prep in Power BI](./dataflows/dataflows-introduction-self-service.md).
 
 To learn more about Azure Machine Learning, see the following articles:
 
@@ -195,13 +193,13 @@ These instructions for schema generation by updating the entry script must also 
 
 You can invoke any Azure ML model to which you have been granted access, directly from the Power Query Editor. To access the Azure ML models, select **Azure Machine Learning** button in the **Home** or **Add Column** ribbon in the Power Query editor.
 
-![Azure Machine Learning](media/desktop-ai-insights/ai-insights-06.png)
+![Screenshot shows the Azure Machine Learning button in the Power Query Editor.](media/desktop-ai-insights/ai-insights-06.png)
 
 All Azure ML models to which you have access are listed here as Power Query functions. Also, the input parameters for the Azure ML model are automatically mapped as parameters of the corresponding Power Query function.
 
 To invoke an Azure ML model, you can specify any of the selected entity's columns as an input from the drop-down. You can also specify a constant value to be used as an input by toggling the column icon to the left of the input dialog.
 
-![Azure Machine Learning](media/desktop-ai-insights/ai-insights-07.png)
+![Screenshot shows Azure Machine Learning Models you can select.](media/desktop-ai-insights/ai-insights-07.png)
 
 Select **OK** to view the preview of the Azure ML model's output as a new column in the entity table. You will also see the model invocation as an applied step for the query.
 
@@ -219,9 +217,9 @@ The following considerations and limitations apply to Azure ML in Power BI Deskt
 
 This article provided an overview of integrating Machine Learning into Power BI Desktop. The following articles might also be interesting and useful.
 
-- [Tutorial: Invoke a Machine Learning Studio (classic) model in Power BI](../connect-data/service-tutorial-invoke-machine-learning-model.md)
+- [Tutorial: Consume Azure Machine Learning models in Power BI](../connect-data/service-aml-integrate.md)
 - [Tutorial: Using Cognitive Services in Power BI](../connect-data/service-tutorial-use-cognitive-services.md)
-- [Cognitive Services in Power BI](service-cognitive-services.md)
-- [Azure Machine Learning integration in Power BI](service-machine-learning-integration.md)
+- [Cognitive Services in Power BI](./dataflows/dataflows-machine-learning-integration.md)
+- [Azure Machine Learning integration in Power BI](./dataflows/dataflows-machine-learning-integration.md)
 - [Monitoring Premium capacities with the app](../admin/service-admin-premium-monitor-capacity.md)
 - [AI metrics in the Premium capacity metrics app](https://powerbi.microsoft.com/blog/ai-metrics-now-available-in-power-bi-premium-capacity-metrics-app/)

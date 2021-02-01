@@ -2,14 +2,13 @@
 title: Connect to Azure Cost Management data in Power BI Desktop
 description: Easily connect to Azure and gain insights about your Azure cost and usage with Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.custom:
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 10/14/2019
-ms.author: davidi
+ms.date: 12/10/2020
 LocalizationGroup: Connect to data
 ---
 
@@ -22,12 +21,16 @@ The Azure Cost Management connector uses OAuth 2.0 for authentication with Azure
 > [!NOTE]
 > This connector replaces the previously available [Azure Consumption Insights and Azure Cost Management (Beta)](desktop-connect-azure-consumption-insights.md) connectors. Any reports created with the previous connector must be recreated using this connector.
 
+> [!NOTE]
+> The Azure Cost Management connector for Power BI Desktop does not support connecting to government clouds. 
+
+
 ## Connect using Azure Cost Management
 
 To use the **Azure Cost Management connector** in Power BI Desktop, take the following steps:
 
 1.	In the **Home** ribbon, select **Get Data**.
-2.	Select **Azure** from the list of data catagories.
+2.	Select **Azure** from the list of data categories.
 3.	Select **Azure Cost Management**.
 
     ![Get data](media/desktop-connect-azure-cost-management/azure-cost-management-00b.png)
@@ -46,9 +49,9 @@ To connect with a **Microsoft Customer Agreement** account, you can get your **B
 5.	For **Choose Scope**, select **Billing Profile ID** and paste the billing profile ID from the previous step. 
 6.	Enter the number of months and select **OK**.
 
-    ![Get billing ID](media/desktop-connect-azure-cost-management/azure-cost-management-01a.png)
+    ![Screenshot shows the Azure Cost Management properties with a scope of Billing Profile I D.](media/desktop-connect-azure-cost-management/azure-cost-management-01a.png)
 
-7.	When prompted, sign in with your Azure user account and password. 
+7.	When prompted, sign in with your Azure user account and password. You must use a Billing account owner for successful access. 
 
 
 ## Connect to an Enterprise Agreement account
@@ -61,15 +64,13 @@ To connect with an Enterprise Agreement (EA) account, you can get your enrollmen
 4.	For **Choose Scope**, select **Enrollment Number** and paste the billing account ID from the previous step. 
 5.	Enter the number of months and then select **OK**.
 
-    ![Get billing ID](media/desktop-connect-azure-cost-management/azure-cost-management-01b.png)
+    ![Screenshot shows the Azure Cost Management properties with a scope of Enrollment number.](media/desktop-connect-azure-cost-management/azure-cost-management-01b.png)
 
-6.	When prompted, sign in with your Azure user account and password. 
+6.	When prompted, sign in with your Azure user account and password. You must use an Enterprise Administrator account for Enterprise Agreements.
 
 ## Data available through the connector
 
 Once you successfully authenticate, a **Navigator** window appears with the following available data tables:
-
-
 
 | **Table** | **Description** |
 | --- | --- |
@@ -89,7 +90,7 @@ Once you successfully authenticate, a **Navigator** window appears with the foll
 
 You can select a table to see a preview dialog. You can select one or more tables by selecting the boxes beside their name and then select **Load**.
 
-![Get billing ID](media/desktop-connect-azure-cost-management/azure-cost-management-01c.png)
+![Screenshot shows the Navigator dialog box.](media/desktop-connect-azure-cost-management/azure-cost-management-01c.png)
 
 When you select **Load**, the data is loaded into Power BI Desktop. 
 

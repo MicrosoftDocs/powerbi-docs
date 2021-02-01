@@ -1,14 +1,13 @@
 ---
 title: Build permission for shared datasets
 description: Learn how you can control access to the data by using Build permission.
-author: maggiesMSFT
+author: paulinbar
+ms.author: painbar
 ms.reviewer: kayu
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/30/2020
-ms.author: maggies
-
+ms.date: 10/21/2020
 LocalizationGroup: Share your work
 ---
 # Build permission for shared datasets
@@ -27,7 +26,7 @@ Users also need Build permissions to work with the data *outside* Power BI:
 
 You give Build permission for a dataset in a few different ways:
 
-- Members of a workspace with at least a Contributor role automatically have Build permission for datasets in that workspace, and permission to copy a report.
+- Members of a workspace with at least a Contributor role automatically have Build permission for datasets in that workspace, and permission to copy a report. Read more about [roles in the new workspaces](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces).
  
 - Members of the workspace where the dataset resides can assign the permission to specific users or security groups in the Permission center. If you're a member of the workspace, select **More options** (...) next to a dataset > **Manage Permissions**.
 

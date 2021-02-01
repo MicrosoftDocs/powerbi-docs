@@ -1,13 +1,13 @@
 ---
 title: Self-service sign up help
 description: What to do if self-service sign up is disabled. Can't sign up for the Power BI service.
-services: powerbi
 author: mihart
 ms.author: mihart
+services: powerbi
 ms.topic:  conceptual
 ms.service: powerbi
+ms.subservice: pbi-fundamentals
 ms.date: 07/01/2020
-
 ---
 # What to do if sign up is disabled
 

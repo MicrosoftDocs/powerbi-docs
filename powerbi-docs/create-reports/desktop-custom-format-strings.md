@@ -2,21 +2,19 @@
 title: Use custom format strings in Power BI Desktop
 description: Learn how to customize format strings in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 09/11/2019
-ms.author: davidi
-
 LocalizationGroup: Create reports
 ---
 # Use custom format strings in Power BI Desktop
 
 With custom format strings in **Power BI Desktop**, you can customize how fields appear in visuals, and make sure your reports look just the way you want them to look.
 
-![Using custom format strings](media/desktop-custom-format-strings/custom-format-strings-01.png)
+![Screenshot shows Power B I desktop with a custom format selected. ](media/desktop-custom-format-strings/custom-format-strings-01.png)
 
 
 ## How to use custom format strings
@@ -27,7 +25,7 @@ To create custom format strings, select the field in the **Modeling** view, and 
 
 Once you've selected **Custom** from the **Format** drop down, you can select from a list of commonly used format strings. 
 
-![Using custom format strings](media/desktop-custom-format-strings/custom-format-strings-03.png)
+![Screenshot shows details of the custom format.](media/desktop-custom-format-strings/custom-format-strings-03.png)
 
 
 ## Supported custom format syntax

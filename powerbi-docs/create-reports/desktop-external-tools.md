@@ -2,14 +2,12 @@
 title: Using external tools in Power BI (preview)
 description: Extend the use of Power BI Desktop with external tools
 author: davidiseminger
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-desktop
-ms.topic: conceptual
-ms.date: 07/29/2020
 ms.author: davidi
-
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: pbi-reports-dashboards
+ms.topic: conceptual
+ms.date: 12/10/2020
 LocalizationGroup: Create reports
 ---
 
@@ -29,6 +27,9 @@ These featured external tools include the following, with links to their install
 
 
 The following sections describe the operations supported by external tools, a list of featured tools included in Power BI Desktop, and instructions on how to register additional tools.
+
+> [!NOTE]
+> External tools are not available for use with the Power BI Report Server version of Power BI Desktop.
 
 ## Supported write operations
 
@@ -129,9 +130,9 @@ Files in that specified location with the **.pbitool.json** extension are loaded
 
 External Tools can be disabled using **Group Policies** or by editing the registry, which is similar to the process for disabling **Custom Visuals**.
 
-    Registry key: *Software\Policies\Microsoft\Power BI Desktop\*
+* Registry key: *Software\Policies\Microsoft\Power BI Desktop\\*
 
-    Registry value: *EnableExternalTools*
+* Registry value: *EnableExternalTools*
 
 A value of 1 (decimal) enables the use of external tools in Power BI, which is the default value.
 

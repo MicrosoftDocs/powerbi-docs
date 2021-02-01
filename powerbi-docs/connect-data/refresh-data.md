@@ -2,13 +2,12 @@
 title: Data refresh in Power BI
 description: This article describes the data refresh features of Power BI and their dependencies at a conceptual level.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: kayu
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 06/16/2020
-ms.author: davidi
-
+ms.date: 12/14/2020
 LocalizationGroup: Data refresh
 ---
 
@@ -280,7 +279,8 @@ In most cases, Power BI datasets that use dynamic data sources cannot be refresh
  
 To determine whether your dynamic data source can be refreshed, open the **Data Source Settings** dialog in **Power Query Editor**, and then select **Data Sources In Current File**. In the window that appears, look for the following warning message, as shown in the following image:
  
-    Some data sources may not be listed because of hand-authored queries.
+> [!NOTE]
+> Some data sources may not be listed because of hand-authored queries.
 
 ![Dynamic data source indicator](media/refresh-data/dynamic-data-source.png)
 

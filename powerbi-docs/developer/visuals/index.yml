@@ -38,7 +38,7 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: "Tutorial: Develop a Power BI visual"
-            url: custom-visual-develop-tutorial.md
+            url: develop-circle-card.md
           - text: "Tutorial: Adding formatting options to a Power BI visual"
             url: custom-visual-develop-tutorial-format-options.md
       - linkListType: concept
@@ -64,4 +64,4 @@ landingContent:
           - text: "Samples of Power BI visuals"
             url: https://microsoft.github.io/PowerBI-visuals/samples/
           - text: "Git repository"
-            url: https://github.com/Microsoft/PowerBI-visuals
+            url: https://github.com/PowerBi-Projects/PowerBI-visuals

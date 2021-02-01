@@ -12,6 +12,8 @@ ms.date: 09/28/2020
 
 # Create parameters for paginated reports in the Power BI service
 
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+
 In this article, you learn how to create parameters for paginated reports in the Power BI service.  A report parameter provides a way to choose report data and vary the report presentation. You can provide a default value and a list of available values. Your report readers can change the selection. They can also type in the parameter text boxes to search for values. See [View parameters for paginated reports](../consumer/paginated-reports-view-parameters.md) to see how your business users interact with parameters in the Power BI service.  
 
 The following illustration shows Design view in Power BI Report Builder for a report with the parameters @BuyingGroup, @Customer, @FromDate, and @ToDate. 
@@ -57,11 +59,6 @@ The following illustration shows Design view in Power BI Report Builder for a re
   
 9. Select **OK**. 
 
-## Considerations and troubleshooting
-
-- If you're using a Power BI dataset or Analysis Services model as your data source, you can't pass more than 1,000 parameter values in a single request. DAX limits parameters to 1,000 values. 
-
- 
 ## Next steps
 
 See [View parameters for paginated reports](../consumer/paginated-reports-view-parameters.md) to see how the parameters look in the Power BI service.

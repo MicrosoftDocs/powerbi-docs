@@ -2,14 +2,12 @@
 title: Whitepapers for Power BI
 description: Whitepapers allow you to explore Power BI topics at a deeper level.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 06/03/2020
-ms.author: maggies
-
 ---
 # Whitepapers for Power BI
 

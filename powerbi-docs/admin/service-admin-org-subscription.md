@@ -2,12 +2,12 @@
 title: Get a Power BI service subscription for your organization
 description: How to sign up for a Power BI service subscription as an admin and purchase licenses in bulk.
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 05/13/2020
-ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -50,7 +50,7 @@ Follow these steps to purchase Power BI Pro licenses in the Microsoft 365 admin 
 
 8. To verify your purchase, go to **Billing** > **Products & services** and look for  **Power BI Pro**.
 
-To read more about how your organization can control and acquire the Power BI service, see [Power BI in your organization](/microsoft-365/admin/misc/power-bi-in-your-organization?view=o365-worldwide).
+To read more about how your organization can control and acquire the Power BI service, see [Power BI in your organization](/microsoft-365/admin/misc/power-bi-in-your-organization).
 
 ## More ways to get Power BI for your organization
 
@@ -93,4 +93,4 @@ The account you created is now the global admin of a new Power BI Pro trial tena
 
 - [View and manage user licenses](service-admin-manage-licenses.md)
 - [Enable or disable self-service sign-up and purchasing](service-admin-disable-self-service.md)
-- [Business subscriptions and billing documentation](/microsoft-365/commerce/?view=o365-worldwide)
+- [Business subscriptions and billing documentation](/microsoft-365/commerce/)

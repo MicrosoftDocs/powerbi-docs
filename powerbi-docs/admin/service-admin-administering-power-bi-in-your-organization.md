@@ -2,14 +2,13 @@
 title: What is Power BI administration?
 description: Learn about the admin roles, tasks, and tools used to manage Power BI.
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
-ms.custom: contperfq4
+ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: overview
 ms.date: 09/25/2020
-ms.author: kfollis
-
 LocalizationGroup: Administration
 #Customer intent: As an administrator of the Power BI service, I want to understand the tools, tasks, and roles that I can use to configure, manage, and secure the service.
 ---

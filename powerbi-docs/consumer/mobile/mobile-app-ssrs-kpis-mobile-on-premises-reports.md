@@ -2,14 +2,12 @@
 title: View on-premises reports and KPIs in the Power BI mobile apps
 description: The Power BI mobile apps offer live, touch-enabled mobile access to your on-premises business information in SQL Server Reporting Services and Power BI Report Server.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 12/05/2019
-ms.author: painbar
-
 ---
 # View on-premises report server reports and KPIs in the Power BI mobile apps
 
@@ -90,7 +88,7 @@ If you're viewing Power BI in the iOS or Android mobile app, your IT admin may h
 
 3. Type a password to authenticate, then tap **Sign in**. 
 
-    ![Report server details filled in](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-config-server-address.png)
+    ![Screenshot shows password entry with a Sign In button.](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-config-server-address.png)
 
 Now you can view and interact with KPIs and Power BI reports stored on the report server.
 

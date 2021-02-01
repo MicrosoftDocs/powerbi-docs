@@ -1,13 +1,13 @@
 ---
-title: Certified Power BI visuals
-description: Requirements and process to submit a custom visual for certification, and a list of certified Power BI visuals.
+title: Certified Power BI visuals in Power BI embedded analytics for better embedded BI insights
+description: Requirements and process to submit a custom visual for certification, and a list of certified Power BI visuals. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 featuredvideoid: ''
 ms.service: powerbi
-ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
+ms.topic: how-to
 ms.date: 03/08/2020
 ---
 
@@ -79,7 +79,7 @@ You must compile your Power BI visual with `pbiviz package`. If you're using you
 
 ### Source code requirements
 
-Verify that you follow the [Power BI visuals additional certification](https://docs.microsoft.com/legal/marketplace/certification-policies#1200-power-bi-visuals-additional-certification) policy list. If your submission doesn't follow these guidelines, the rejection email from Partner Center will include the policy numbers listed in this link.
+Verify that you follow the [Power BI visuals additional certification](/legal/marketplace/certification-policies#1200-power-bi-visuals-additional-certification) policy list. If your submission doesn't follow these guidelines, the rejection email from Partner Center will include the policy numbers listed in this link.
 
 Follow the code requirements listed below to make sure that your code is in line with the Power BI certification policies.  
 
@@ -87,7 +87,7 @@ Follow the code requirements listed below to make sure that your code is in line
 * Only use public reviewable OSS components such as public JavaScript or TypeScript libraries.
 * The code must support the [Rendering Events API](event-service.md).
 * Ensure DOM is manipulated safely. Use sanitization for user input or user data, before adding it to DOM.
-* Use the [sample report](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) as a test dataset.
+* Use the [sample report](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/gh-pages/assets) as a test dataset.
 
 **Not allowed**
 * Accessing external services or resources. For example, no HTTP/S or WebSocket requests can go out of Power BI to any services.
@@ -166,11 +166,9 @@ Your Power BI visual will be available to download from AppSource when this proc
 
 ## Next steps
 
-* If you're a web developer interested in creating your own Power BI visuals and adding them to the [Microsoft AppSource](https://appsource.microsoft.com), start with the [Developing a Power BI visual](custom-visual-develop-tutorial.md) tutorial.
+* If you're a web developer interested in creating your own Power BI visuals and adding them to the [Microsoft AppSource](https://appsource.microsoft.com), start with the [Developing a Power BI circle card visual](develop-circle-card.md) tutorial.
 
 * For more information about visuals, see [Frequently asked questions about certified visuals](power-bi-custom-visuals-faq.md#certified-power-bi-visuals).
-
-* [Developing a Power BI visual](custom-visual-develop-tutorial.md)
 
 * [Microsoft's Power BI visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)
 

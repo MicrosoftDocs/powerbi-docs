@@ -2,12 +2,12 @@
 title: Learn how buttons work in the Power BI service
 description: Buttons can be used to launch various actions including in-report navigation, drillthrough, and cross-report drillthrough
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 07/01/2020
-ms.author: mihart
+ms.date: 12/21/2020
 LocalizationGroup: Reports
 ---
 # Buttons in the Power BI service
@@ -17,30 +17,29 @@ In the reports that you receive from colleagues, you may have noticed buttons an
 Buttons can look a lot like shapes, images, or icons on a report page. But if an action occurs when you select (click) it -- then it's probably a button.
 
 ## Types of buttons
-Report creators add buttons to reports to help you with navigation and exploration. The types of buttons are: **Back**, **Bookmark**, **Drill through**, **Page navigation**, **Q&A**, and **Web URL**. 
+Report creators add buttons to reports to help you with navigation and exploration. Just some of the button types are: back, bookmark, arrows, Q&A, help, and blank. 
 
 ### Back buttons 
-A Back button may have an arrow icon and when you select it, Power BI takes you back to the previous page.  Back buttons are often used with drillthrough. Here's an example of a Back button used with drillthrough.
+A back button may have an arrow icon and when you select it, Power BI takes you back to the previous page.  Back buttons are often used with drillthrough. Here's an example of a back button used with drillthrough.
 
-1. Select **Word** in the bar chart.
-1. Select **Drill through** and choose **Market basket analysis**.
+1. The user has selected **Word** in the bar chart and is drilling through to  **Market basket analysis**.
 
-    ![screenshot of Back button](media/end-user-buttons/power-bi-drillthrough.png)
+    ![Screenshot of Drill through button.](media/end-user-buttons/power-bi-drillthrough.png)
 
-    By choosing **Market basket analysis**, Power BI opens the *Market basket analysis* report page and uses the selections made on the source page to filter what is shown on the destination page.
+2. By choosing **Market basket analysis**, Power BI opens the *Market basket analysis* report page and uses the selections made on the source page to filter what is shown on the destination page.
 
-    ![screenshot of Back button](media/end-user-buttons/power-bi-go-back.png)
+    ![Screenshot of Back button.](media/end-user-buttons/power-bi-back.png)
 
-    You're now on the **Market basket analysis** report page, which is filtered for Word. To return to the previous page, select the Back button. 
+    You're now on the **Market basket analysis** report page, which is filtered for **Word**. To return to the previous page, select the back button that is labeled **Go back**. 
 
 ## Bookmark buttons
-Report designers often include bookmarks with their reports. You can view the list of report bookmarks by selecting **View** > **Bookmarks** from the upper right corner. When a report designer adds a bookmark *button*, it's just an alternate way to navigate to the particular report page that's associated with that bookmark. The page will have the applied filters and settings that are captured by the bookmark. [Learn more about bookmarks in Power BI](end-user-bookmarks.md). 
+Report *designers* often include bookmarks with their reports. You can view the list of report bookmarks by selecting **Bookmarks** from the upper right corner. When a report designer adds a bookmark *button*, it's just an alternate way to navigate to the particular report page that's associated with that bookmark. The page will have the applied filters and settings that are captured by the bookmark. [Learn more about bookmarks in Power BI](end-user-bookmarks.md). 
 
 In this example, the button has a bookmark icon and the name of the bookmark, *Urban*. 
 
 ![screenshot of bookmark button](media/end-user-buttons/power-bi-bookmark.png)
 
-By choosing the Bookmark button, Power BI takes you to the location and settings as defined for that bookmark.  In this case, the bookmark is on the *Growth opportunities* report page and that page is cross-filtered for **Urban**.
+By choosing the bookmark button, Power BI takes you to the location and settings as defined for that bookmark.  In this case, the bookmark is on the *Growth opportunities* report page and that page is cross-filtered for **Urban**.
 
 ![screenshot of report page filtered for Urban](media/end-user-buttons/power-bi-urban.png)
 
@@ -48,40 +47,40 @@ By choosing the Bookmark button, Power BI takes you to the location and settings
 ## Drillthrough buttons
 There are two ways to drill through in the Power BI service. Drillthrough takes you to a different report page and the data on that destination page is presented according to the filters and selections you've made on the source page.
 
-One way to drill through in a report is to right-click a data point in a visual, select **Drill through**, and choose the destination. This method is described above in the section titled **Back button**. But sometimes the report designers use a drillthrough *button* instead, to make the action more obvious and to call attention to important insights.  
+One way to use drillthrough in a report is to right-click a data point in a visual, select **Drill through**, and choose the destination. This method is described above in the section titled **Back button**. But sometimes the report designers use a drillthrough *button* instead, to make the action more obvious and to call attention to important insights.  
 
 Drillthrough buttons can have more than one prerequisite. Unless you fulfill all the prerequisites, the button will not work. Let's look at an example.
 
 Here is a drillthrough button that will take us to the *Store details* page. Hovering over the button reveals a tooltip that lets us know that we need to select both a store and a product. Until we select one of each, the button remains inactive.
 
-![screenshot of drillthrough button with hover tooltip](media/end-user-buttons/power-bi-drill-two-selections.png)
+![Screenshot of drillthrough button with hover tooltip.](media/end-user-buttons/power-bi-drill-two-selections.png)
 
 Now that we've selected one product (**Word**), and one store (**Leo**), the button changes color to let us know that it is now active.
 
-![screenshot of drillthrough button with hover tooltip](media/end-user-buttons/power-bi-select-both.png)
+![Screenshot of drillthrough to Store details button.](media/end-user-buttons/power-bi-select-both.png)
 
 Selecting the drillthrough button takes us to the *Store* report page. The *Store* page is filtered for our selections of **Word** and **Leo**.
 
-![screenshot of drillthrough button with hover tooltip](media/end-user-buttons/power-bi-store.png)
+![Screenshot of the Store reports page.](media/end-user-buttons/power-bi-store.png)
 
-Drillthrough buttons can also have dropdown menus that offer you a choice of destinations. Once you've made your selections on the source report page, select the destination report page for the drillthrough. In the example below, we're changing our selection to drill through to the *Market details* report page. 
+Drillthrough buttons can also have dropdown menus that offer you a choice of destinations. Once you've made your selections on the source report page, select the destination report page for the drillthrough. In the example below, we're changing our selection to drillthrough to the *Market details* report page. 
 
 ![screenshot of drillthrough dropdown with multiple destinations](media/end-user-buttons/power-bi-destination.png)
 
 ## Page navigation
 
-Page navigation buttons take you to a different page in the same report. Report designers often create navigation buttons to tell a story or guide you through the report insights. In the example below, the report designer added a button on each report page that takes you to the first page, the top-level summary page, in the report. This page navigation button is helpful because there are many pages in this report.
+Page navigation buttons take you to a different page in the same report. Report designers often create navigation buttons to tell a story or guide you through the report insights. In the example below, the report designer added a button on each report page that takes you back to the first page, the top-level summary page, in the report. This page navigation button is helpful because there are many pages in this report.
 
-![screenshot of page navigation button named Team scorecard](media/end-user-buttons/power-bi-nav-button.png)
+![Screenshot of page navigation button named Team scorecard.](media/end-user-buttons/power-bi-nav-button.png)
 
 
 ## Q&A buttons 
 Selecting a Q&A button opens the Power BI Q&A Explorer window. The Q&A window displays on top of the report page and can be closed by selecting the X. [Learn about Q&A](end-user-q-and-a.md)
 
-![screenshot of page navigation button named Team scorecard](media/end-user-buttons/power-bi-qna.png)
+![Screenshot of the Power B I Q&A Explorer window with the text Ask a question about your data.](media/end-user-buttons/power-bi-qna.png)
 
 ## Web URL
-Web URL buttons open a new browser window. Report designers might add this type of button as a reference source, to link to the corporate website, or even as a link to a different report or dashboard. In the example below, the Web URL button let's you download the source file for the report. 
+Web URL buttons open a new browser window. Report designers might add this type of button as a reference source, to link to the corporate website or a help page, or even as a link to a different report or dashboard. In the example below, the Web URL button let's you download the source file for the report. 
 
 Since the page opens in a separate window, close the window or select your Power BI tab to return to the Power BI report.
 

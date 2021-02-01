@@ -1,6 +1,6 @@
 ---
-title: Embed Power BI paginated reports in your application for your organization
-description: Learn how to integrate or embed a Power BI paginated report into an application, using the Power BI APIs.
+title: Embed Power BI paginated reports in your Power BI embedded analytics application enabling better embedded BI insights to your organization
+description: In this tutorial, learn how to integrate or embed a Power BI paginated report into an application, using the Power BI APIs. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -17,7 +17,7 @@ ms.date: 06/25/2020
 In **Power BI**, you can embed paginated reports into an application for your organization by using the *user owns data* scenario.
 
 Paginated reports are reports designed for high-quality printing. Usually these reports contain a lot of data, rendered in a way that makes it fit printed pages.
-To understand how Power BI supports paginated reports, see [What are paginated reports in Power BI Premium?](https://docs.microsoft.com/power-bi/paginated-reports-report-builder-power-bi)
+To understand how Power BI supports paginated reports, see [What are paginated reports in Power BI Premium?](../../paginated-reports/paginated-reports-report-builder-power-bi.md)
 
 **User owns data** lets your application extend the Power BI service so it can use embedded analytics. This tutorial demonstrates how to integrate a paginated report into an application.
 
@@ -41,6 +41,9 @@ To get started, you're required to have:
 
 If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
+>[!NOTE]
+>[Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) is supported. However, if you're using PPU, only PPU users in your organization will be able to access your solution.
+
 ## Set up your Power BI environment
 
 Follow the instructions in this section to set up Power BI for embedding your paginated reports.
@@ -54,11 +57,11 @@ Follow the instructions in [Register an Azure AD application to use with Power B
 >* Get the application secret
 >* Apply the **Report.ReadAll** permissions (scope) to your app.
 
-### Create a dedicated capacity
+### Create a capacity
 
-By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. For paginated reports, you must back your app workspace with at least a P1 capacity. You can create a dedicated capacity by using [Power BI Premium](../../admin/service-premium-what-is.md).
+By creating a capacity, you can take advantage of having a resource for the content in your app workspace. For paginated reports, you must back your app workspace with at least a P1 capacity. You can create a capacity by using [Power BI Premium](../../admin/service-premium-what-is.md).
 
-The following table lists the Power BI Premium SKUs that can be used to create a dedicated capacity for paginated reports in [Microsoft Office 365](../../admin/service-admin-premium-purchase.md):
+The following table lists the Power BI Premium SKUs that can be used to create a capacity for paginated reports in [Microsoft Office 365](../../admin/service-admin-premium-purchase.md):
 
 | Capacity node | Total vCores<br/>(back end + front end) | Back-end vCores | Front-end vCores | DirectQuery/live connection limits |
 | --- | --- | --- | --- | --- | --- |
@@ -71,7 +74,7 @@ The following table lists the Power BI Premium SKUs that can be used to create a
 
 ### Enable paginated reports workload
 
-You need to enable the paginated report workload on your dedicated capacity.
+You need to enable the paginated report workload on your capacity.
 
 1. Sign into [Power BI > Admin portal > Capacity settings](https://app.powerbi.com/admin-portal/capacities).
 
@@ -87,17 +90,17 @@ You need to enable the paginated report workload on your dedicated capacity.
 
     ![Paginated reports workload](media/embed-paginated-reports-organization/paginated-reports-workload.png)
 
-### Assign an app workspace to a dedicated capacity
+### Assign an app workspace to a capacity
 
-After you create a dedicated capacity, you can assign your app workspace to that dedicated capacity. To complete this process, follow these steps:
+After you create a capacity, you can assign your app workspace to that capacity. To complete this process, follow these steps:
 
 1. Within the Power BI service, expand workspaces and select **More** for the workspace you're using for embedding your content. Then select **Workspace settings**.
 
     ![Edit a workspace](media/embed-paginated-reports-organization/workspace-settings.png)
 
-2. Select **Premium** and enable **Dedicated capacity**. Select the dedicated capacity you created. Then select **Save**.
+2. Select **Premium** and enable **Capacity**. Select the capacity you created. Then select **Save**.
 
-    ![Assign a dedicated capacity](media/embed-paginated-reports-organization/dedicated-capacity.png)
+    ![Assign a capacity](media/embed-paginated-reports-organization/capacity.png)
 
 3. After you select **Save**, you should see a diamond next to the app workspace name.
 
@@ -202,7 +205,7 @@ For embedding with a guest, use the URL - *`https://login.microsoftonline.com/re
 In this tutorial, you learned how to embed Power BI paginated reports into an application by using your Power BI organization account. 
 
 > [!div class="nextstepaction"]
-> [Embed from apps](embed-from-apps.md)
+> [Embed from apps](./index.yml)
 
 > [!div class="nextstepaction"]
 >[Embed Power BI content for your customers](embed-sample-for-customers.md)

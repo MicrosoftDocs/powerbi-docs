@@ -2,14 +2,12 @@
 title: Connect to Adobe Analytics in Power BI Desktop
 description: Easily connect to and use Adobe Analytics Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/07/2019
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Connect to Adobe Analytics in Power BI Desktop 

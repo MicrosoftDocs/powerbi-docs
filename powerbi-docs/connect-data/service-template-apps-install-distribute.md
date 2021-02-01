@@ -2,12 +2,12 @@
 title: Install and distribute template apps in your organization - Power BI
 description: Learn about installing, customizing, and distributing template apps in your organization in Power BI.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 09/17/2020
-ms.author: painbar
 ---
 
 # Install and distribute template apps in your organization
@@ -59,10 +59,6 @@ To install, customize, and distribute a template app, you need:
 ## Connect to data
 
 1. Select **Go to app**.
-
-1. On the **Get started with your new app** window, select **Explore**.
-
-   ![Template app splash screen](media/service-template-apps-install-distribute/power-bi-template-app-get-started.png)
 
    The app opens, showing sample data.
 
@@ -133,6 +129,20 @@ If you originally downloaded the app from AppSource, when a new version of the t
 
 >[!IMPORTANT]
 >Remember to [update the app](#customize-and-share-the-app) after overwriting to apply changes to the reports and dashboard for your organizational app users.
+
+## Delete a template app
+
+An installed template app consists of the app and its associated workspace. If you want to remove the template app, you have two options:
+* **Completely remove the app and its associated workspace**: To completely remove template app and its associated workspace, go to the app tile on the Apps page, select the trash icon, and then click **Delete** in the dialog that appears.
+* **Unpublish the app**: This option removes the app but keeps its associated workspace. This option is useful if, for instance, there are customizations that you made that you want to keep.
+
+    To unpublish the app:
+    1. Open the app.
+    1. Click the edit app pencil icon to open the template app's workspace.
+    1. In the template app workspace, select **More option (...)**, and then choose **Unpublish App**.
+
+        ![Screenshot of unpublish app option.](media/service-template-apps-install-distribute/power-bi-template-app-unpublish.png)
+
 
 ## Next steps
 

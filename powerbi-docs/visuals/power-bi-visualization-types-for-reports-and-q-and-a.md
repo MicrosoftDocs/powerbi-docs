@@ -2,14 +2,12 @@
 title: Visualization types in Power BI
 description: Visualization types in Power BI
 author: mihart
-ms.reviewer: ''
-
+ms.author: mihart
+ms.reviewer: 'mihart'
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: conceptual
 ms.date: 01/14/2020
-ms.author: rien
-
 LocalizationGroup: Visualizations
 ---
 # Visualization types in Power BI
@@ -109,7 +107,7 @@ For more information, see [Tips and tricks for map visuals](power-bi-map-tips-an
 ### Maps: ArcGIS maps
 ![ArcGIS map](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
 
-For more information, see [ArcGIS maps in Power BI](power-bi-visualization-arcgis.md).
+For more information, see [ArcGIS maps in Power BI](power-bi-visualizations-arcgis.md).
 
 ### Maps: Filled maps (Choropleth)
 ![filled map](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)

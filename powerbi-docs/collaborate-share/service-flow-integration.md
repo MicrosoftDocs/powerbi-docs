@@ -1,22 +1,18 @@
 ---
-title: 'Integrate data alerts with Power Automate'
+title: 'Integrate Power BI data alerts with Power Automate'
 description: Learn how to create Power Automate flows triggered by Power BI data alerts.
 author: maggiesMSFT
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: how-to
-ms.date: 09/25/2020
 ms.author: maggies
-
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: pbi-collaborate-share
+ms.topic: how-to
+ms.date: 12/08/2020
 LocalizationGroup: Get started
 ---
 # Integrate Power BI data alerts with Power Automate
 
-[Power Automate](/power-automate/getting-started) is a SaaS offering for automating workflows across a growing number of applications and SaaS services. You can automate tasks by integrating your favorite apps and services, including Power BI, to get notifications, synchronize files, collect data, and more. In this article, you automate generating an email from a Power BI data alert.
-
-[Get started using Power Automate now.](/power-automate/getting-started)
+Use [Power Automate](/power-automate/getting-started) to integrate Power BI with your favorite apps and services. With Power Automate, you create automated workflows to get notifications, synchronize files, collect data, and more. In this article, you automate generating an email from a Power BI data alert.
 
 ## Prerequisites
 This article shows how to create two different flows: one from a template and one from scratch. To follow along, [create a data alert in Power BI](../create-reports/service-set-data-alerts.md), and [sign up for Power Automate](https://flow.microsoft.com/#home-signup). It's free!
@@ -27,7 +23,7 @@ In this task, we use a template to create a simple flow that is triggered by a P
 1. Sign in to Power Automate (flow.microsoft.com).
 2. Select **Templates**, search for **Power BI** > **Send an e-mail to any audience when a Power BI data alert is triggered**.
    
-    :::image type="content" source="media/service-flow-integration/power-automate-templates.png" alt-text="Screenshot of Power Automate Send an e-mail to any audience when a Power B I data alert is triggered template.":::
+    :::image type="content" source="media/service-flow-integration/power-automate-templates.png" alt-text="Screenshot of Power Automate Send an e-mail to any audience when a Power BI data alert is triggered template.":::
 
 ### Build the flow
 This template has one trigger, a Power BI data alert, and one action, to send an email. As you select a field, Power Automate displays dynamic content that you can include.  In this example, we include the tile value and the tile URL in the message body.
@@ -38,7 +34,7 @@ This template has one trigger, a Power BI data alert, and one action, to send an
 
 1. In the **Alert ID** box, select a Power BI data alert. To learn how to create an alert, see [Data alerts in Power BI](../create-reports/service-set-data-alerts.md).
    
-    :::image type="content" source="media/service-flow-integration/power-automate-select-alert-id.png" alt-text="Screenshot of Select an alert in the Alert I D box.":::
+    :::image type="content" source="media/service-flow-integration/power-automate-select-alert-id.png" alt-text="Screenshot of Select an alert in the Alert ID box.":::
 2. Enter one or more valid email addresses.
 
 3. Power Automate automatically generates a **Subject** and **Body** for you, which you can keep or modify. The body text uses HTML for formatting.
@@ -88,6 +84,5 @@ In this task, we create a simple flow from scratch that is triggered by a Power 
 
 ## Next steps
 * [Get started with Power Automate](/power-automate/getting-started/)
-* [Set data alerts in the Power BI service](../create-reports/service-set-data-alerts.md)
-* [Set data alerts on your iPhone](../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
+* [Export and email a Power BI report with Power Automate](service-automate-power-bi-report-export.md)
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)

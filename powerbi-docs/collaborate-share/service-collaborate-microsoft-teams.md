@@ -6,10 +6,10 @@ ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 09/15/2020
+ms.date: 12/14/2020
 ---
 
 # Collaborate in Microsoft Teams with Power BI
@@ -18,7 +18,7 @@ As a distributed workforce becomes the norm, more organizations are relying on M
 
 - With the **Power BI tab** for Microsoft Teams, you can [embed interactive reports in Microsoft Teams](service-embed-report-microsoft-teams.md) channels and chats. The Power BI tab helps your colleagues find your team's data and discuss the data within your team channels. 
 - Create a [link preview](service-teams-link-preview.md) when you paste a link to your reports, dashboards, and apps into the Microsoft Teams message box. The link preview shows information about the link. 
-- Use [Share to Microsoft Teams](service-share-report-teams.md) when viewing reports and dashboards in the Power BI service to quickly start conversations in Microsoft Teams.
+- Use [Chat in Microsoft Teams](service-share-report-teams.md) when viewing reports and dashboards in the Power BI service to quickly start conversations in Microsoft Teams.
 - Use the [Power BI app in Microsoft Teams](service-microsoft-teams-app.md) to bring your entire basic Power BI service experience into Microsoft Teams.
  
 :::image type="content" source="media/service-collaborate-microsoft-teams/power-bi-embed-teams-report.png" alt-text="Screenshot of a Power B I report embedded in a Microsoft Teams channel.":::
@@ -39,6 +39,14 @@ Embedding a report in Microsoft Teams or sending a link to an item doesn't autom
 > Make sure to review who can see the report within the Power BI service and grant access to those not listed.
 
 One way to ensure everyone in a team has access to reports is to place the reports in a single workspace and give the Microsoft 365 Group for your team access.
+
+## Share with external users
+
+You can integrate a Power BI report in Teams and share it with external users. Here are the steps to follow.
+
+1.	You invite the external user to the organization, and they accept your invitation. See [Distribute Power BI content to external guest users using Azure Active Directory B2B](../guidance/whitepaper-azure-b2b-power-bi.md) for details.
+2.	Give the external user permission on the report. Individual permissions assignment works best.
+3.	Make sure the external user has a Power BI license assigned to them. If the content is in a Premium capacity, the user only needs a Free license. If not, the user can [sign up for an individual free trial of Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md#sign-up-for-an-individual-trial-of-power-bi-pro).
 
 ## Known issues and limitations
 
@@ -65,6 +73,6 @@ The other Microsoft Power Platform apps also integrate with Microsoft Teams.
 
 - [Embed Power BI content in Microsoft Teams](service-embed-report-microsoft-teams.md)
 - [Get a Power BI link preview in Microsoft Teams](service-teams-link-preview.md)
-- [Share directly to Microsoft Teams from the Power BI service](service-share-report-teams.md)
+- [Chat in Microsoft Teams directly from the Power BI service](service-share-report-teams.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/).

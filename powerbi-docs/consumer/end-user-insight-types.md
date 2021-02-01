@@ -2,14 +2,12 @@
 title: Types of Insights supported by Power BI
 description: Quick Insights and View insights with Power BI.
 author: mihart
-ms.reviewer: mihart
-
-ms.service: powerbi
-ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 09/09/2020
 ms.author: mihart
-
+ms.reviewer: mihart
+ms.service: powerbi
+ms.subservice: pbi-explore
+ms.topic: conceptual
+ms.date: 10/12/2020
 LocalizationGroup: Dashboards
 ---
 # Types of insights supported by Power BI
@@ -20,7 +18,7 @@ You can ask Power BI to look through your data and find interesting trends and p
 
 To learn how to use Insights, see [Power BI Insights](end-user-insights.md)
 
-![a set of Insights](media/end-user-insight-types/power-bi-insight.png)
+![a set of Insights](media/end-user-insight-types/power-bi-insight-line.png)
 
 ## How does Insights work?
 Power BI quickly searches different subsets of your dataset. As it searches, Power BI applies a set of sophisticated algorithms to discover potentially interesting insights. Power BI *business users* can run Insights on dashboard tiles.
@@ -62,6 +60,11 @@ Finds cases where a majority of a total value can be attributed to a single fact
 
 ![Major factors example](./media/end-user-insight-types/pbi-auto-insight-type-majority.png)
 
+### Outliers
+This insight type uses a clustering model to find outliers in non-time series data. Outliers detects when there are specific categories with values significantly different than the other categories.
+
+![outliers example](./media/end-user-insight-types/power-bi-outliers.png)
+
 ### Overall trends in time series
 Detects upward or downward trends in time series data.
 
@@ -83,6 +86,7 @@ The steady share insight is similar to the low variance insight, because they bo
 For data across a time series, detects when there are specific dates or times with values significantly different than the other date/time values.
 
 ![Time series outliers example](./media/end-user-insight-types/pbi-auto-insight-type-time-series-outliers-purple.png)
+
 
 ## Next steps
 [Power BI insights](end-user-insights.md)

@@ -2,13 +2,12 @@
 title: "Bi-directional relationship guidance"
 description: Guidance for developing bi-directional filtering model relationships.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 03/02/2020
-ms.author: v-pemyer
 ---
 
 # Bi-directional relationship guidance
@@ -73,7 +72,7 @@ When report users slice by Australia, you might want to limit the **Product** sl
 
 The **Product** slicer now lists a single item: T-shirt. This item represents the only product sold to Australian customers.
 
-![Diagram showing the report page containing three visuals. The details are described in the following paragraph.](media/relationships-bidirectional-filtering/sales-report-bi-directional-filter.png)
+![Diagram showing the report page containing three visuals with Product called out. The details are described in the following paragraph.](media/relationships-bidirectional-filtering/sales-report-bi-directional-filter.png)
 
 We first suggest you consider carefully whether this design works for your report users. Some report users find the experience confusing. They don't understand why slicer items dynamically appear or disappear when they interact with other slicers.
 

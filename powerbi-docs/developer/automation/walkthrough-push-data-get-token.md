@@ -1,6 +1,6 @@
 ---
-title: Get an authentication access token
-description: Walk through to push data - Get an authentication access token
+title: Get an authentication access token  in Power BI embedded analytics for better embedded BI insights
+description: Walk through to push data - Get an authentication access token. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: madia
@@ -83,7 +83,7 @@ Add this code to Program {...}.
            string resourceUri = "https://analysis.windows.net/powerbi/api";
 
            //OAuth2 authority Uri
-           string authorityUri = "https://login.microsoftonline.net/common/";
+           string authorityUri = "https://login.microsoftonline.com/common/";
 
            //Get access token:
            // To call a Power BI REST operation, create an instance of AuthenticationContext and call AcquireToken
@@ -179,6 +179,6 @@ namespace walkthrough_push_data
 
 * The next article in this series is [Create a dataset in Power BI](walkthrough-push-data-create-dataset.md)
 * [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
-* [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/)  
+* [Power BI REST APIs](/rest/api/power-bi/)  
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

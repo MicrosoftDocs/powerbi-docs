@@ -1,6 +1,6 @@
 ---
-title: Add colors to your Power BI visuals
-description: This article describes how to add colors to your Power BI visuals and how to handle data points for a visual with color.
+title: Add colors to your Power BI visuals  in Power BI embedded analytics for better embedded BI insights
+description: This article describes how to add colors to your Power BI visuals and how to handle data points for a visual with color. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -18,7 +18,7 @@ This article describes how to add colors to your visuals and how to handle data 
 The example code in this article modifies the [SampleBarChart visual](https://github.com/microsoft/PowerBI-visuals-sampleBarChart).
 For source code, see [barChart.ts](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts).
 
-To get started creating visuals, see [Develop a Power BI visual](custom-visual-develop-tutorial.md).
+To get started creating visuals, see [Developing a a Power BI circle card visual](develop-circle-card.md).
 
 ## Add color to data points
 

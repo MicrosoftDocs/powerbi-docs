@@ -2,14 +2,12 @@
 title: Query overview in Power BI Desktop
 description: Query overview in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 01/11/2020
-ms.author: davidi
-
 LocalizationGroup: Transform and shape data
 ---
 # Query overview in Power BI Desktop

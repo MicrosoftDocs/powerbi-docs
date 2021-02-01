@@ -1,15 +1,14 @@
 ---
 title: COVID-19 tracking sample for US state and local governments
 description: Download and modify the sample report with US state and local data for the COVID-19 pandemic.
-author: LukaszPawlowski-MS
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: maggies
 ms.custom:
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 04/28/2020
-ms.author: lukaszp
-
 LocalizationGroup: Samples
 ---
 # COVID-19 tracking sample for US state and local governments

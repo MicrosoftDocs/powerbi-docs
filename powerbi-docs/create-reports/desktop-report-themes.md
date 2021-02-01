@@ -2,15 +2,13 @@
 title: Use report themes in Power BI Desktop
 description: Learn how to use a custom color palette, and apply it to an entire report in Power BI Desktop.
 author: davidiseminger
-ms.reviewer: ''
-
-ms.custom: contperfq4
-ms.service: powerbi
-ms.subservice: powerbi-desktop
-ms.topic: how-to
-ms.date: 07/28/2020
 ms.author: davidi
-
+ms.reviewer: ''
+ms.custom: contperf-fy20q4
+ms.service: powerbi
+ms.subservice: pbi-reports-dashboards
+ms.topic: how-to
+ms.date: 12/14/2020
 LocalizationGroup: Create reports
 ---
 # Use report themes in Power BI Desktop
@@ -49,11 +47,11 @@ To select from the available built-in report themes:
 
 1. Select the **Themes** drop-down arrow button **Switch Theme** from the **View** ribbon.
 
-   ![Select a report theme](media/desktop-report-themes/report-themes-02.png)
+   ![Screenshot shows the View ribbon selected, which provides several themes.](media/desktop-report-themes/report-themes-02.png)
 
 2. Select from among the included themes from the drop-down menu that appears.
 
-   ![Select a report theme](media/desktop-report-themes/report-themes-03.png)
+   ![Screenshot shows Power B I themes expanded for you to select.](media/desktop-report-themes/report-themes-03.png)
 
    Your report theme is now applied to the report.
 
@@ -596,7 +594,9 @@ Booleans are either true or false. Strings must be in double quotes, as in "this
 
 Colors use the following format, where your custom hexadecimal code replaces "FFFFFF" is in the following example:
 
-    { "solid": { "color": "#FFFFFF" } }
+```json
+{ "solid": { "color": "#FFFFFF" } }
+```
 
 An enumeration, most commonly used for drop-down formatting options, means it can be set to any of the options seen in the pane, for example "RightCenter" for legend position or "Data value, percent of total" for pie data label. The enumeration options are shown below the property list.
 

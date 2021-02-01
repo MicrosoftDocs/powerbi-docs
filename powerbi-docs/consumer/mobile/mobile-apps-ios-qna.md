@@ -2,15 +2,13 @@
 title: 'Q&A virtual analyst in iOS apps - Power BI'
 description: Ask questions about sample data in your own words with the Q&A virtual analyst in the Power BI mobile app on on your iOS device.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
-ms.author: painbar
 #customer intent: As a Power BI end user, I want to see how the virtual analyst works in the iOS mobile apps so I can use the analyst to explore my own data. 
-
 ---
 # Q&A virtual analyst in iOS apps - Power BI
 
@@ -49,7 +47,7 @@ Once you've completed the prerequisites you are ready to try the Q&A virtual ana
 4. Tap **by** from the keywords, then tap **item** from the suggestion list > **Send** ![Send icon](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![Sales by item](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-sale-by-item.png)
-5. Tap **as** from the keywords, tap the column chart icon ![Chart icon](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-column-chart-icon.png), then tap **Send** ![Send icon](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+5. Tap **as** from the keywords, tap the column chart icon :::image type="icon" source="./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-column-chart-icon.png" border="false":::, then tap **Send** ![Send icon](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 6. Long-tap the resulting chart, then tap **Expand**.
 
     ![Screenshot of a column chart, showing a pointer to Expand.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-tap-expand-feedback.png)
@@ -65,7 +63,7 @@ Once you've completed the prerequisites you are ready to try the Q&A virtual ana
 10. Choose **by** from the keywords, tap **time** from the suggestion list at the top > **Send** ![Send icon](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
      ![Screenshot of a chart, showing the top sale by average amount per unit by time.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-by-time.png)
-11. Type **as**, pick the line chart icon ![Chart icon](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-line-chart-icon.png) from the suggestion list > **Send** ![Send icon](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+11. Type **as**, pick the line chart icon :::image type="icon" source="./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-line-chart-icon.png" border="false"::: from the suggestion list > **Send** ![Send icon](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![Screenshot of a column and line chart, showing a pointer from the column to line chart](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-as-line.png)
 

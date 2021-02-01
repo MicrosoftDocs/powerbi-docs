@@ -2,15 +2,13 @@
 title: Learn which R packages are supported
 description: R packages that are supported and unsupported in Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/06/2020
-ms.author: davidi
-
+ms.date: 01/15/2021
 LocalizationGroup: Connect to data
 ---
 # Create visuals by using R packages in the Power BI service
@@ -188,7 +186,6 @@ The following table shows which packages **are supported** in the Power BI servi
 |curl|3.2|https://cran.r-project.org/web/packages/curl/index.html|
 |CVST|0.2-1|https://cran.r-project.org/web/packages/CVST/index.html|
 |cvTools|0.3.2|https://cran.r-project.org/web/packages/cvTools/index.html|
-|d3heatmap|0.6.1.2|https://cran.r-project.org/web/packages/d3heatmap/index.html|
 |d3Network|0.5.2.1|https://cran.r-project.org/web/packages/d3Network/index.html|
 |d3r|0.8.0|https://cran.r-project.org/web/packages/d3r/index.html|
 |data.table|1.10.4-3|https://cran.r-project.org/web/packages/data.table/index.html|
@@ -339,7 +336,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |ggm|2.3|https://cran.r-project.org/web/packages/ggm/index.html|
 |ggmap|2.6.1|https://cran.r-project.org/web/packages/ggmap/index.html|
 |ggmcmc|1.1|https://cran.r-project.org/web/packages/ggmcmc/index.html|
-|ggplot2|3.2.0|https://cran.r-project.org/web/packages/ggplot2/index.html|
+|ggplot2|3.3.2|https://cran.r-project.org/web/packages/ggplot2/index.html|
 |ggplot2movies|0.0.1|https://cran.r-project.org/web/packages/ggplot2movies/index.html|
 |ggpmisc|0.2.16|https://cran.r-project.org/web/packages/ggpmisc/index.html|
 |ggpubr|0.1.6|https://cran.r-project.org/web/packages/ggpubr/index.html|

@@ -1,15 +1,15 @@
 ---
 title: Glossary for Power BI business users
 description: Power BI introduces many new terms and new uses for familiar terms. Use our glossary to get comfortable with the Power BI service terminology.
-services: power-bi
 author: mihart
+ms.author: mihart
+services: power-bi
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: reference
-ms.date: 08/24/2020
-ms.custom: contperfq1
-ms.author: mihart
+ms.date: 11/21/2020
+ms.custom: contperf-fy21q1
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and they don't get confused or frustrated and instead get the result they expect.
 ---
 
@@ -27,7 +27,7 @@ Use your work or school account to sign in to Power BI. Administrators manage wo
 The location where Power BI admins manage users, features, and settings for Power BI in their organization. (Note: Microsoft 365, Azure, and PowerApps use admin center.)
 
 **aggregates**    
-When the values of multiple rows are grouped together as input on criteria to form a single value of more significant meaning or measurement.
+When the values of multiple rows are grouped together as input on criteria to form a single value of more significant meaning or measurement. Only implicit measures (see definition below) can be aggregated.
 
 **aggregation**    
 The reduction of rows in underlying data sources to fit in a model. The result is an aggregate.
@@ -47,9 +47,6 @@ Centralized online repository where you can browse and discover dashboards, repo
 **ArcGIS for Power BI**    
 ArcGIS is a mapping and analytics platform created by the company ESRI. The name of the visual included in the Power BI visuals library is called ArcGIS for Power BI.
 
-**assign**    
-[Power BI Premium] Verb for moving a workspace into or out of dedicated capacity. Don't use promote for moving a workspace to dedicated capacity because this has the connotation of dedicated being superior to shared capacity. 
-
 **Auto Insights**    
 Are now called *Quick Insights*.
 
@@ -67,6 +64,9 @@ The navigation at the top left to quickly navigate between reports and dashboard
 
 **calculation**    
 A mathematical determination of the size or number of something.
+
+**Capacity**    
+[Power BI Premium] Data models running on hardware fully managed by Microsoft in Microsoft cloud data centers to help ensure consistent performance at scale. BI solutions are delivered to the entire organization regardless of Power BI license.
 
 **card** (visual type)    
 A Power BI [visual type](end-user-visual-type.md).
@@ -116,7 +116,7 @@ Visuals that are created by the community and Microsoft. They can be downloaded 
 ## D
 
 **dashboard**    
-A selection of visuals that communicate status and metrics. A dashboard organizes and presents data in an easy-to-understand way.
+In the Power BI service, a dashboard is a single page, often called a canvas, that uses visualizations to tell a story. Because it is limited to one page, a well-designed dashboard contains only the most important elements of that story. Dashboards can only be created and viewed in the Power BI service, not in Power BI Desktop. For more information, see [basic concepts, dashboards](end-user-basic-concepts.md).
 
 **data classification**    
 See classification
@@ -133,12 +133,8 @@ Dataflows ingest, transform, integrate, and enrich big data by defining data sou
 **dataset** vs **data source**    
 A **dataset** is a collection of data used to create visualizations and reports.
 
-**dedicated capacity**    
-[Power BI Premium] Data models running on dedicated hardware in Microsoft cloud data centers to help ensure consistent performance at scale. BI solutions are delivered to the entire organization regardless of Power BI license.
-
 **Desktop** or **Power BI Desktop**    
 Free Power BI tool used primarily be report designers, admins, and developers. 
-
 
 **diamond**    
 Power BI Premium. The shape of the icon that signifies a workspace is a Premium capacity workspace.
@@ -178,6 +174,9 @@ In the Power BI developer offering, the process of integrating analytics into ap
 
 [Power BI Desktop, Power BI Mobile, the Power BI service, etc.] Another way to refer to one of the Power BI tools. It's okay to use Power BI environment (tenant) in documentation where it may help business analysts who are familiar with the term tenant to know it's the same thing.
 
+**explicit measures**    
+Power BI uses explicit measures and implicit measures (see definition below). Explicit measures are created by report designers and saved with the dataset. They are displayed in Power BI as fields, and can therefore be used over and over. For example, a report designer creates an explicit measure *TotalInvoice* that sums all invoice amounts. Colleagues who use that dataset, and who have edit access to the report, can select that field and use it to create a visual. When an explicit measure is added or dragged onto a report canvas, Power BI does not apply an aggregation.  Creating explicit measures requires edit access to the dataset. 
+
 ## F
 
 **favorite, unfavorite**
@@ -215,6 +214,9 @@ Visuals with more data points than Power BI can render. Power BI samples the dat
 The default landing age for Power BI service users. Doesn't modify anything. Can be called Power BI Home or simply Home.
 
 ## I
+
+**implicit measures**    
+Power BI uses implicit measures and explicit measures (see definition above). Implicit measures are created dynamically.  For example, when you drag a field onto the report canvas to create a visual. Power BI automatically aggregates the value using one of the built-in standard aggregations (SUM, COUNT, MIN, AVG, etc.). Creating implicit measures requires edit access to the report. 
 
 **insights**    
 See **quick insights**.
@@ -327,7 +329,7 @@ Also referred to as *Desktop*. The free Windows application of Power BI you can 
 A product used by developers to embed Power BI dashboards and reports into their own apps, sites, and tools.
 
 **Power BI Premium**    
-An add-on to the Power BI Pro license that enables organizations to predictably scale BI solutions through the purchasing of dedicated hardware. See *account*.
+An add-on to the Power BI Pro license that enables organizations to predictably scale BI solutions through the purchasing of reserved hardware in the Microsoft cloud. See *account*.
 
 **Power BI Pro**    
 A monthly per-user license that provides the ability to build reports and dashboards, collaborate on shared data, keep data up-to date automatically, audit and govern how data is accessed and used, and the ability to package content to distribute (Power BI apps). See *account*.
@@ -342,7 +344,7 @@ An on-premises report server with a web portal in which you display and manage r
 An online SaaS (Software as a service) service. For more information, see [What is Power BI](../fundamentals/power-bi-overview.md).
 
 **Premium workspace**    
-A workspace running in dedicated capacity, signified to customers by a diamond icon.  
+A workspace running in a capacity, signified to customers by a diamond icon.  
 
 **Pro** license or **Pro** account
 See *account*.

@@ -2,12 +2,12 @@
 title: 'Tutorial: Explore Power BI Report Server in a VM'
 description: In this tutorial, you create a virtual machine with Power BI Report Server already installed, and explore the web portal.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: tutorial
 ms.date: 05/06/2019
-ms.author: maggies
 #intent statement: As a Power BI admin or end user, I want to see how Power BI Report Server is structured, and where I go to manage my files.
 ---
 
@@ -99,7 +99,7 @@ When your VM opens, here are the items you see on the desktop.
 |---------|---------|
 |![Number 1](media/tutorial-explore-report-server-web-portal/number-1.png) | Sample Power BI (.PBIX) reports |
 |![Number 2](media/tutorial-explore-report-server-web-portal/number-2.png) | Links to Power BI Report Server documentation |
-|![Number 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Starts Power BI Desktop optimized for Power BI Report Server (January 2019) |
+|![Number 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Starts Power BI Desktop for Power BI Report Server (January 2021) |
 |![Number 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Opens Power BI Report Server web portal in the browser |
 |![Number 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Starts SQL Server Data Tools, for creating paginated (.RDL) reports |
 
@@ -158,7 +158,7 @@ You can view and interact with Power BI reports in the web portal, and start Pow
 
 1. Select **Allow** to allow this web site to open a program on your computer. 
 
-     The report opens in Power BI Desktop. Note the name in the top bar, "Power BI Desktop (January 2019)". That's the version optimized for Power BI Report Server.
+     The report opens in Power BI Desktop. Note the name in the top bar, "Power BI Desktop (January 2021)". That's the version optimized for Power BI Report Server.
 
     Use the version of Power BI Desktop that's installed on the VM. You can't go across domains to upload a report.
 

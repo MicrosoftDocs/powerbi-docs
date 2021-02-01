@@ -1,6 +1,6 @@
 ---
-title: Multi-Geo support for Power BI Embedded
-description: Learn how you can deploy content to data centers in regions other than the home region of the Power BI Embedded.  
+title: Multi-Geo support for Power BI embedded analytics enabling better embedded BI insights
+description: Learn how you can deploy content to data centers in regions other than the home region of your Power BI embedded analytics solution. Use Multi-Geo support support to enable better embedded BI insights for your customers. 
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: nishalit
@@ -60,11 +60,11 @@ It's important to note that if you decide to delete a capacity without reassigni
 
 To support management of capacities with Multi-Geo through API, we have made some changes to existing APIs:
 
-1. **[Get Capacities](https://docs.microsoft.com/rest/api/power-bi/capacities/getcapacities)** - The API returns a list of capacities with access to the user. The response now includes an additional property called 'region,' that specifies the capacity's location.
+1. **[Get Capacities](/rest/api/power-bi/capacities/getcapacities)** - The API returns a list of capacities with access to the user. The response now includes an additional property called 'region,' that specifies the capacity's location.
 
-2. **[Assign To Capacity](https://docs.microsoft.com/rest/api/power-bi/capacities)** - The API allows assigning a given workspace to a capacity. This operation doesn't allow you to assign workspaces to a capacity outside of your home region or move workspaces between capacities in different regions. To perform this operation, the user or [service principal](embed-service-principal.md) still needs admin permissions on the workspace, and admin or assign permissions on the target capacity.
+2. **[Assign To Capacity](/rest/api/power-bi/capacities)** - The API allows assigning a given workspace to a capacity. This operation doesn't allow you to assign workspaces to a capacity outside of your home region or move workspaces between capacities in different regions. To perform this operation, the user or [service principal](embed-service-principal.md) still needs admin permissions on the workspace, and admin or assign permissions on the target capacity.
 
-3. **[Azure Resource Manager API](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities)** - all of the Azure Resource Manager API operations, including *Create* and *Delete*, supports Multi-Geo.
+3. **[Azure Resource Manager API](/rest/api/power-bi-embedded/capacities)** - all of the Azure Resource Manager API operations, including *Create* and *Delete*, supports Multi-Geo.
 
 ## Limitations and considerations
 

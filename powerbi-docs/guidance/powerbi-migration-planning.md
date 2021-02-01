@@ -2,13 +2,12 @@
 title: Plan deployment to migrate to Power BI
 description: Guidance on planning for deployment when migrating to Power BI.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/20/2020
-ms.author: v-pemyer
 ---
 
 # Plan deployment to migrate to Power BI
@@ -92,7 +91,7 @@ The data required by a report may influence several decisions. Questions to ask 
 - Does an existing shared dataset need to be augmented with new data or measures to meet additional needs?
 - Which [data storage mode](../transform-model/desktop-storage-mode.md) will be most appropriate? Options include Import, DirectQuery, Composite, or Live Connection.
 - Should [aggregations](../transform-model/desktop-aggregations.md) be used to enhance query performance?
-- Will creation of a [dataflow](../transform-model/service-dataflows-overview.md) be useful and can it serve as a source for numerous datasets?
+- Will creation of a [dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md) be useful and can it serve as a source for numerous datasets?
 - Will a new [gateway data source](../connect-data/service-gateway-data-sources.md) need to be registered?
 
 ## Decide where original content will be stored

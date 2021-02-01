@@ -2,17 +2,15 @@
 title: Connect to Snowflake computing warehouse in Power BI Desktop
 description: Easily connect to and use a Snowflake computing warehouse in Power BI Desktop
 author: davidiseminger
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-desktop
-ms.topic: how-to
-ms.date: 05/08/2019
 ms.author: davidi
-
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: pbi-data-sources
+ms.topic: how-to
+ms.date: 01/04/2021
 LocalizationGroup: Connect to data
 ---
-# Connect to a Snowflake computing warehouse in Power BI Desktop
+# Connect to Snowflake in Power BI Desktop
 In Power BI Desktop, you can connect to a **Snowflake** computing warehouse and use the underlying data just like any other data source in Power BI Desktop. 
 
 ## Connect to a Snowflake computing warehouse
@@ -29,7 +27,7 @@ When prompted, put in your username and password.
 ![Screenshot of the Snowflake credential prompt, showing the Username and Password fields.](media/desktop-connect-snowflake/connect-snowflake-4.png)
 
 > [!NOTE]
-> Once you put in your username and password for a particular **Snowflake** server, Power BI Desktop uses those same credentials in subsequent connection attempts. You can modify those credentials by going to **File > Options and settings > Data source settings**.
+> Once you enter your username and password for a particular **Snowflake** server, Power BI Desktop uses those same credentials in subsequent connection attempts. You can modify those credentials by going to **File > Options and settings > Data source settings**.
 > 
 > 
 

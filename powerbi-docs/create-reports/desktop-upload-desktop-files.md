@@ -2,14 +2,12 @@
 title: Publish from Power BI Desktop
 description: Publish from Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 09/22/2020
-ms.author: davidi
-
 LocalizationGroup: Create reports
 ---
 # Publish datasets and reports from Power BI Desktop

@@ -13,6 +13,8 @@
     items: 
     - name: "Power BI Desktop: From Excel to report"
       href: desktop-excel-stunning-report.md
+    - name: "Power BI Desktop: Dimensional model to report"
+      href: desktop-dimensional-model-report.md
     - name: "Power BI service: From Excel to report"
       href: service-from-excel-to-stunning-report.md
     - name: "Online course: Paginated reports"
@@ -63,10 +65,10 @@
         href: power-bi-reports-filters-and-highlighting.md
       - name: "High-density line sampling"
         href: desktop-high-density-sampling.md
-      - name: "About Q&A visuals"
-        href: ../visuals/power-bi-visualization-q-and-a.md
       - name: "About accessibility"
         href: desktop-accessibility-overview.md     
+      - name: "Certificate revocation"
+        href: desktop-certificate-revocation.md     
       - name: Natural language Q&A
         items: 
         - name: "Q&A introduction"
@@ -85,6 +87,10 @@
       items: 
       - name: Report Builder in Power BI
         href: ../paginated-reports/report-builder-power-bi.md
+      - name: Report Builder change log
+        href: ../paginated-reports/paginated-reports-change-log.md
+      - name: Sample Power BI paginated reports
+        href: ../paginated-reports/paginated-reports-samples.md
       - name: Get around Report Design View
         href: ../paginated-reports/paginated-reports-report-design-view.md
       - name: Planning a report
@@ -118,9 +124,14 @@
       - name: "Best practices"
         href: deployment-pipelines-best-practices.md        
   - name: How-to guides
+    expanded: true
     items: 
     - name: Power BI reports
       items: 
+      - name: "Create quick reports in the service"
+        href: service-quick-create-report.md
+      - name: "Create a report from Excel in the service"
+        href: service-report-create-new.md
       - name: "Enable automatic page refresh"
         href: desktop-automatic-page-refresh.md
       - name: "Examine report elements with Performance Analyzer"
@@ -205,8 +216,12 @@
         href: desktop-grouping-visuals.md      
       - name: "Create report templates"
         href: desktop-templates.md      
-      - name: "Create a report from a dataset"
-        href: service-report-create-new.md
+      - name: "Change report settings"
+        href: power-bi-report-settings.md
+      - name: "Feature reports on others' Home pages"
+        href: ../collaborate-share/service-featured-content.md
+      - name: "Let consumers customize visuals (Preview)"
+        href: power-bi-personalize-visuals.md
       - name: "Save a report"
         href: service-report-save.md
       - name: "Interact with a report in Editing view"
@@ -217,7 +232,7 @@
         href: service-aggregates.md
       - name: "Create a QR code for a report"
         href: service-create-qr-code-for-report.md
-      - name: "Let consumers customize visuals (Preview)"
+      - name: "Let users customize visuals"
         href: power-bi-personalize-visuals.md
       - name: "Export a report to Power BI Desktop (Preview)"
         href: service-export-to-pbix.md
@@ -233,7 +248,7 @@
         href: ../visuals/power-bi-report-visualizations.md
       - name: "Change visuals in reports"
         href: ../visuals/power-bi-report-change-visualization-type.md
-      - name: "Customize visual titles, backgrounds, and legends"
+      - name: "Customize visual titles, backgrounds, legends, and more"
         href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
       - name: "Show items with no data"
         href: desktop-show-items-no-data.md
@@ -257,10 +272,10 @@
         href: ../visuals/power-bi-map-tips-and-tricks.md
       - name: "Customize x-axis and y-axis properties"
         href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
+      - name: "Anomaly detection"
+        href: ../visuals/power-bi-visualization-anomaly-detection.md
       - name: "Interact with ArcGIS maps in Power BI visuals"
         href: ../visuals/power-bi-visualizations-arcgis.md
-      - name: "Create ArcGIS maps for Power BI visuals"
-        href: ../visuals/power-bi-visualization-arcgis.md
       - name: "Basic area charts"
         href: ../visuals/power-bi-visualization-basic-area-chart.md
       - name: "Create card visuals (big number tiles)"
@@ -269,8 +284,6 @@
         href: ../visuals/power-bi-visualization-combo-chart.md
       - name: "Decomposition tree visuals"
         href: ../visuals/power-bi-visualization-decomposition-tree.md
-      - name: "Smart narratives"
-        href: ../visuals/power-bi-visualization-smart-narrative.md
       - name: "Doughnut charts"
         href: ../visuals/power-bi-visualization-doughnut-charts.md
       - name: "Filled maps (choropleths)"
@@ -301,6 +314,8 @@
         href: ../visuals/desktop-high-density-scatter-charts.md
       - name: "Shape Map visuals (preview)"
         href: ../visuals/desktop-shape-map.md
+      - name: "Smart narratives"
+        href: ../visuals/power-bi-visualization-smart-narrative.md
       - name: "Tables in reports and dashboards"
         href: ../visuals/power-bi-visualization-tables.md
       - name: "Treemaps"
@@ -309,7 +324,7 @@
         href: ../visuals/power-bi-visualization-waterfall-charts.md
     - name: Natural language Q&A
       items: 
-      - name: "Q&A visual"
+      - name: "Create a Q&A visual"
         href: ../visuals/power-bi-visualization-q-and-a.md
       - name: "Teach Q&A to understand"
         href: ../natural-language/q-and-a-tooling-teach-q-and-a.md

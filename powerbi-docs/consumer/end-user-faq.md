@@ -2,14 +2,13 @@
 title: Frequently asked end-user questions in Power BI
 description: Browse a list of frequently asked questions and answers about the Power BI service and the Power BI mobile apps.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 09/02/2020
-ms.author: mihart
 ms.custom: licensing support
-
 LocalizationGroup: Get started
 ---
 
@@ -33,7 +32,7 @@ The way you interact with Power BI will depend on your job role. As an end user 
 
 Power BI Pro is an individual user license that allows access to all content and capabilities in the Power BI service. You can even share content and collaborate with other Pro users. Only Pro users can publish content to other workspaces, share dashboards, and subscribe to dashboards and reports. 
 
-Power BI Premium provides dedicated capacity to deliver more consistent performance. It also supports larger data volumes in Power BI. For individual users, Premium enables widespread distribution of content by Pro users and it doesn't require per-user Pro licenses for recipients viewing the content. This means that *business users* can collaborate with colleagues and view and interact with dashboards, reports, and apps that have been shared with them. 
+Power BI Premium provides a capacity to deliver more consistent performance. It also supports larger data volumes in Power BI. For individual users, Premium enables widespread distribution of content by Pro users and it doesn't require per-user Pro licenses for recipients viewing the content. This means that *business users* can collaborate with colleagues and view and interact with dashboards, reports, and apps that have been shared with them. 
 
 To learn more, see [What type of license do I have?](end-user-license.md).
 

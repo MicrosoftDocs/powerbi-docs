@@ -2,14 +2,12 @@
 title: Get real-world data with the Power BI mobile apps
 description: Power BI mobile apps can connect the real world directly to related BI information, no search needed.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
-ms.author: painbar
-
 ---
 # Get data from the real world with the Power BI mobile apps
 Power BI mobile apps can connect the real world directly to related BI information, in a number of different ways. 
@@ -23,7 +21,7 @@ More about:
 
 * [Creating a QR code for a tile in Power BI](../../create-reports/service-create-qr-code-for-tile.md)
 * [Scanning a Power BI QR code from your mobile device](mobile-apps-qr-code.md)
-* [Scanning a QR code with the Power BI for Mixed Reality app](mobile-mixed-reality-app.md#scan-a-report-qr-code-in-holographic-view).
+* [Scanning a QR code with the Power BI for Mixed Reality app](./mobile-hololens2-app.md#open-reports-with-qr-codes).
 
 ## QR codes for reports
 Create a QR code for a report.  When your colleagues scan the code with their iPhones (Android phones are coming soon), they see the report you've associated with that QR code. 

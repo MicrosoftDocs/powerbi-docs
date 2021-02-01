@@ -2,15 +2,13 @@
 title: 'Tutorial: Import and analyze data from a webpage'
 description: 'Tutorial: Import and analyze data from a webpage using Power BI Desktop'
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: tutorial
 ms.date: 01/13/2020
-ms.author: davidi
-
 LocalizationGroup: Learn more
 ---
 # Tutorial: Analyze webpage data by using Power BI Desktop

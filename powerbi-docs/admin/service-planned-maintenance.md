@@ -2,16 +2,14 @@
 title: Power BI planned maintenance
 description: Information for admins about how planned maintenance for Power BI affects their organization and next steps they may need to take.
 author: kfollis
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 06/19/2020
 ms.author: kfollis
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: powerbi-admin
+ms.topic: conceptual
+ms.date: 10/30/2020
 ms.custom: MC
 ROBOTS: NOINDEX
-
 LocalizationGroup: Admin
 ---
 # Power BI planned maintenance
@@ -34,8 +32,14 @@ If your organization is affected, we'll provide you with advance notice. Microso
 * Customers who were actively editing or publishing reports that use organizational visuals, whether locally or from OneDrive and SharePoint locations, will need to either reimport the visual via the organization visual store or download an updated PBIX before republishing. For more information about organizational visuals, see  [Organization visuals](organizational-visuals.md).
 * If Excel workbooks that use the Analyze in Excel feature don't refresh, you may need to update the connection string or redownload the ODC connection for that dataset. For more information, see [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md#connect-to-power-bi-data) .
 * Links to Power BI embedded in content might fail to connect when maintenance is done. For example, an embedded link in SharePoint or Teams may result in a user error. To resolve this problem, you have to regenerate the embedded link in Power BI and then update the locations where they're used. For more information about embedded links, see [Embed a report web part in SharePoint Online](../collaborate-share/service-embed-report-spo.md) and [Collaborate in Microsoft Teams with Power BI](../collaborate-share/service-collaborate-microsoft-teams.md).
+* Some of the usage data collected before maintenance isn't available after maintenance completes. This usage data includes:
+
+  * [Power BI activity log](service-admin-auditing.md#use-the-activity-log). Users should download activity logs before maintenance. You can also use the [Office 365 audit log data](service-admin-auditing.md#access-your-audit-logs) to get equivalent activity details.
+  * View count in [lineage view](../collaborate-share/service-data-lineage.md#explore-lineage-view)
+  * [Data protection metrics report](service-security-data-protection-metrics-report.md)
+  * [Usage metrics (Preview)](../collaborate-share/service-modern-usage-metrics.md)
 
 ## Next steps
 
 * [Enable service interruption notifications](service-interruption-notifications.md)
-* [Track upcoming change in Message center](/microsoft-365/admin/manage/message-center?view=o365-worldwide)
+* [Track upcoming change in Message center](/microsoft-365/admin/manage/message-center)

@@ -2,15 +2,13 @@
 title: Filled Maps (Choropleth) in Power BI
 description: Documentation on creating Filled Maps (Choropleth) in Power BI
 author: mihart
-ms.reviewer: ''
+ms.author: mihart
+ms.reviewer: 'mihart'
 featuredvideoid: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 12/05/2019
-ms.author: rien
-
 LocalizationGroup: Visualizations
 ---
 # Create and use filled maps (choropleth maps) in Power BI
@@ -121,7 +119,6 @@ Map data can be ambiguous.  For example, there's a Paris, France, but there's al
 
 If you have permissions to edit the dataset in Power BI Desktop, watch this video for help with addressing map ambiguity.
 
-> [VIDEO https://www.youtube.com/embed/Co2z9b-s_yM]
 
 If you do not have access to latitude and longitude data, but you do have edit access to the dataset, [follow these instructions to update your dataset](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
 
