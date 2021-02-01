@@ -17,7 +17,7 @@ LocalizationGroup: Administration
 
 Self-service refers to the ability for individuals in an organization (work or school) to sign up to use services paid for by their organization's subscription, or use free services, without asking their organization to take action on their behalf. The individual goes to a Microsoft website, finds a cloud service that their organization offers, and uses their organizational email address to sign up for that service. 
 
-In many cases, the organization has paid a fee for a subscription to that service. In other cases, the individual is the first user and becomes the admin for the service. For a trial or free license, no purchase is required. But for Power BI Pro, the organization is reponsible for paying the monthly fee. 
+In many cases, the organization has paid a fee for a subscription to that service. In other cases, the individual is the first user and becomes the admin for the service. For a trial or free license, no purchase is required. But for Power BI Pro, the organization is responsible for paying the monthly fee. 
 
 As a Microsoft 365 admin, you can see who signs up for trials, licenses, and subscriptions.
 
