@@ -2,35 +2,37 @@
 title: Using Microsoft Cloud App Security controls in Power BI
 description: Learn how to use Microsoft Cloud App Security together with Power BI
 author: paulinbar
-ms.author: painbar
 ms.reviewer: ''
+
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 06/15/2020
+ms.author: painbar
+
 LocalizationGroup: Data from files
 ---
 # Using Microsoft Cloud App Security controls in Power BI
 
-Using Cloud App Security with Power BI, you can help protect your Power BI reports, data, and services from unintended leaks or breaches. With Cloud App Security, you create conditional access policies for your organization’s data, using real-time session controls in Azure Active Directory (Azure AD), that help to ensure your Power BI analytics are secure. Once these policies have been set, administrators can monitor user access and activity, perform real-time risk analysis, and set label-specific controls. 
+Using Cloud App Security with Power BI, you can help protect your Power BI reports, data, and services from unintended leaks or breaches. With Cloud App Security, you can create conditional access policies for your organization’s data, using real-time session controls in Azure Active Directory (Azure AD), that help to ensure your Power BI analytics are secure. Once these policies have been set, administrators can monitor user access and activity, perform real-time risk analysis, and set label-specific controls. 
 
 ![Using Cloud App Security controls pane](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-01.png)
 
 You can configure Cloud App Security for all sorts of apps and services, not only Power BI. You’ll need to configure Cloud App Security to work with Power BI to benefit from Cloud App Security protections for your Power BI data and analytics. For more information about Cloud App Security, including an overview of how it works, the dashboard, and app risk scores, see the [Cloud App Security](/cloud-app-security/) documentation.
 
+## Cloud App Security licensing
 
-## Using Cloud App Security with Power BI
-
-To use Cloud App Security with Power BI, you must use and configure relevant Microsoft security services, some of which are set outside Power BI.
-
-### Cloud App Security licensing
-
-In order to have Cloud App Security in your tenant, you must have one of the following [licenses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2NXYO):
+To use Cloud App Security with Power BI, you must use and configure relevant Microsoft security services, some of which are set outside Power BI. In order to have Cloud App Security in your tenant, you must have one of the following [licenses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2NXYO):
 * Microsoft Cloud App Security: Provides Cloud App Security capabilities for all supported apps, part of the EMS E5 and Microsoft 365 E5 suites.
 * Office 365 Cloud App Security: Provides Cloud App Security capabilities only for Office 365, part of the Office 365 E5 suite.
-* Azure Active Directory Premium P1, in order to benefit from the major Cloud App Security capabilities.
 
-The sections below describe the steps for using Cloud App Security in Power BI.
+
+## Configure real-time controls for Power BI with Cloud App Security
+
+> [!NOTE]
+> * An Azure Active Directory Premium P1 license is required in order to benefit from Cloud App Security real-time controls.
+
+The sections below describe the steps for configuring real-time controls for Power BI with Cloud App Security.
 
 ### Set session policies in Azure AD (required)
 The steps necessary to set session controls are completed in the Azure AD and Cloud App Security portals. In the Azure AD portal, you create a conditional access policy for Power BI, and route sessions used in Power BI through the Cloud App Security service. 
@@ -54,6 +56,20 @@ Cloud App Security also has two dedicated, built-in detections for Power BI. [Se
 Sensitivity labels enable you to classify and help protect sensitive content, so that people in your organization can collaborate with partners outside your organization, yet still be careful and aware of sensitive content and data. 
 
 You can read the article on [sensitivity labels in Power BI](service-security-sensitivity-label-overview.md), which goes into detail about the process of using sensitivity labels for Power BI. See below for an [example of a Power BI policy based on sensitivity labels](#example).
+
+## Custom policies to alert on suspicious user activity in Power BI
+
+Cloud App Security activity policy enables administrators to define their own custom rules, to help detect user behavior that deviates from the norm, and even possibly act upon it automatically, if it seems too dangerous. For example:
+
+* **Massive sensitivity label removal.** For example: alert me when sensitivity labels are removed by a single user from 20 different reports in a time window shorter than 5 minutes.
+
+* **Encrypting sensitivity label downgrade.** For example: alert me when a report that had a ‘Highly confidential’ sensitivity label is now classified as ‘Public’.
+
+> [!NOTE]
+> * The unique identifiers (Ids) of Power BI artifacts and sensitivity labels can be found using [Power BI REST APIs](/rest/api/power-bi/). See [Get datasets](/rest/api/power-bi/datasets/getdatasets) or [Get reports](/rest/api/power-bi/reports/getreports).
+
+
+Custom activity policies are configured in the Cloud App Security portal. [Learn more](/cloud-app-security/user-activity-policies). 
 
 ## Built-in Cloud App Security detections for Power BI
 
