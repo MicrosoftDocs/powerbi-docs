@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 01/22/2019
+ms.date: 01/22/2021
 ---
 
 # Row-level security (RLS) in Power BI Report Server
@@ -39,7 +39,7 @@ After you save your report in Power BI Report Server, you manage security and ad
 
  If the report doesn't have the roles it needs, you need to open it in Power BI Desktop, add or modify roles, then save it back to Power BI Report Server. 
 
-1. In Power BI Desktop, save the report to Power BI Report Server. You need to use the version of Power BI Desktop optimized for Power BI Report Server.
+1. In Power BI Desktop, save the report to Power BI Report Server. You need to use the version of Power BI Desktop for Power BI Report Server.
 2. In Power BI Report Service, select the ellipsis (**…**) next to the report. 
 
 3. Select **Manage** > **Row-level security**. 
@@ -90,6 +90,7 @@ If you're using integrated security with DirectQuery, then your users may notice
 
 Report authors don't have access to view the report data in Power BI Report Server until they've assigned themselves roles accordingly after uploading the report. 
 
+Role assignments through group memberships are only supported when the Power BI Report Server is configured to run with NTLM or Kerberos authentication. Servers running with Custom authentication or Windows Basic need users explicitly assigned to roles.
  
 
 ## FAQ 

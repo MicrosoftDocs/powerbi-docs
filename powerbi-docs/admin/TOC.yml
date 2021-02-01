@@ -142,7 +142,7 @@
       href: /powershell/power-bi/
       maintainContext: true
     - name: Service URL reference
-      href: power-bi-whitelist-urls.md
+      href: power-bi-allow-list-urls.md
   - name: Resources
     items: 
     - name: "Power BI governance and deployment approaches"
@@ -161,7 +161,7 @@
       href: service-interruption-notifications.md
     - name: "Forgot your password for Power BI?"
       href: service-admin-forgot-your-password.md
-    - name: "Capturing additional diagnostic information for Power BI"
+    - name: "Capture diagnostic information from the Power BI service"
       href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
     - name: "Alternate email address for Power BI"
       href: service-admin-alternate-email-address-for-power-bi.md

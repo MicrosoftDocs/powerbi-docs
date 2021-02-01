@@ -92,7 +92,7 @@ There are certain limitations to using SSAS MD:
 
 ## Supported features of SSAS MD in Power BI Desktop
 
-Consumption of the following elements is supported in this release of SSAS MD. For more information about these features, see [Understanding power view for multidimensional models](/sql/analysis-services/multidimensional-models/understanding-power-view-for-multidimensional-models?view=sql-server-2014).
+Consumption of the following elements is supported in this release of SSAS MD. For more information about these features, see [Understanding power view for multidimensional models](/sql/analysis-services/multidimensional-models/understanding-power-view-for-multidimensional-models).
 
 * Default members
 * Dimension attributes
