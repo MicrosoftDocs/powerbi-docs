@@ -43,8 +43,8 @@ When the export is complete, the polling API call returns a [Power BI URL](/rest
 
 This section describes the operation of the following supported features:
 
-* [Selecting pages](#selecting-which-pages-to-print)
-* [Exporting a single visual](#exporting-a-single-visual)
+* [Selecting which pages to print](#selecting-which-pages-to-print)
+* [Exporting a page or a single visual](#exporting-a-page-or-a-single-visual)
 * [Bookmarks](#bookmarks)
 * [Filters](#filters)
 * [Authentication](#authentication)
@@ -67,7 +67,7 @@ Depending on the type of export, you need to pass different attributes to the [E
 
 |Attribute   |Page     |Single visual  |Comments|
 |------------|---------|---------|---|
-|`bookmark`  |Optional |![Does not apply to.](../../media/no.png)|Use to export a [bookmark](#bookmark)|
+|`bookmark`  |Optional |![Does not apply to.](../../media/no.png)|Use to export a [bookmark](#bookmarks)|
 |`pageName`  |![Applies to.](../../media/yes.png)|![Applies to.](../../media/yes.png)|   |
 |`visualName`|![Does not apply to.](../../media/no.png)|![Applies to.](../../media/yes.png)|There are two ways to get the name of the visual:<li>Use `getVisuals()`. For more information, see [Get pages and visuals](/javascript/api/overview/powerbi/get-visuals).</li><li>Listen and log the *visualClicked* event, which is triggered when a visual is selected.</li> |
 
