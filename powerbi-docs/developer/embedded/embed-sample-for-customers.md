@@ -3,7 +3,7 @@ title: Embed content in your Power BI embedded analytics application enabling be
 description: Learn how to embed, a report, dashboard, or tile into a Power BI embedded analytics sample. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
-ms.reviewer: rkarlin
+ms.reviewer: ""
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -17,6 +17,7 @@ ms.date: 12/22/2020
 **Embedded analytics** and **Power BI Embedded** (the Azure offer) allow you to embed Power BI content such as reports, dashboards and tiles, into your application.
 
 In this tutorial, you'll learn how to:
+
 >[!div class="checklist"]
 >* Set up your embedded environment.
 >* Configure an *embed for your customers* (also known as *app owns data*) sample application.
@@ -27,7 +28,7 @@ We recommend using the *embed for your customers* method to embed your Power BI 
 
 ## Code sample specifications
 
-This tutorial includes instructions for configuring an *embed for your customers* sample application in one of the following languages:
+This tutorial includes instructions for configuring an *embed for your customers* sample application in one of the following frameworks:
 
 * .NET Framework
 * .NET Core
@@ -37,10 +38,8 @@ This tutorial includes instructions for configuring an *embed for your customers
 
 The code samples support the following browsers:
 
-* Google Chrome
-
 * Microsoft Edge
-
+* Google Chrome
 * Mozilla Firefox
 
 ## Prerequisites
@@ -64,13 +63,6 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
 * **Code dependencies**
 
-    # [.NET Framework](#tab/net-framework)
-    
-    * [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
-    
-    * [Visual Studio](https://visualstudio.microsoft.com/)
-    
-    
     # [.NET Core](#tab/net-core)
     
     * [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (or higher)
@@ -80,6 +72,12 @@ Before you start this tutorial, verify that you have both the Power BI and code 
         * [Visual Studio](https://visualstudio.microsoft.com/)
     
         * [Visual Studio Code](https://code.visualstudio.com/)
+
+    # [.NET Framework](#tab/net-framework)
+    
+    * [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
+    
+    * [Visual Studio](https://visualstudio.microsoft.com/)
 
     # [Java](#tab/java)
     
@@ -157,50 +155,22 @@ Registering your application with Azure AD allows you to:
 >* Let your app access the [Power BI REST APIs](/rest/api/power-bi/)
 >* If you're using a *master user* - Specify your app's [Power BI REST permissions](/azure/active-directory/develop/v2-permissions-and-consent)
 
-To register your application with Azure AD, follow the instructions in [Register your application](register-app.md).
+[!INCLUDE[Register Azure AD app](../../includes/embed-tutorial-register-app.md)]
 
 >[!NOTE]
 >Before registering your application, you'll need to decide which authentication method to use, *service principal* or *master user*.
 
 ## Step 3 - Create a Power BI workspace
 
-Power BI keeps your reports, dashboards, and tiles in a workspace. To embed these items, you'll need to create them and upload them into a workspace.
-
->[!TIP]
->If you already have a workspace, you can skip this step.
-
-To create a workspace, do the following:
-
-1. Sign in to Power BI.
-
-2. Select **Workspaces**.
-
-3. Select **Create a workspace**.
-
-4. Name your workspace and select **Save**.
+[!INCLUDE[Create a Power BI workspace](../../includes/embed-tutorial-create-workspace.md)]
 
 ## Step 4 - Create and publish a Power BI report
 
-Your next step is to create a report and upload it to your workspace. You can [create your own report](../../fundamentals/desktop-getting-started.md#build-reports) using Power BI Desktop, and then [publish](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work) it to your workspace. Or, you can upload a sample report to your workspace.
-
->[!Tip]
->If you already have a workspace with a report, you can skip this step.
-
-To download a sample report and publish it to your workspace, follow these steps:
-
-1. Open the GitHub [Power BI Desktop samples](https://github.com/Microsoft/PowerBI-Desktop-Samples) folder.
-
-2. Select **Code** and then select **Download zip**.
-
-    :::image type="content" source="media/embed-sample-for-customers/download-sample-report.png" alt-text="A screenshot showing the ZIP download option in the Power B I desktop samples GitHub":::
-
-3. Extract the downloaded ZIP and navigate to the **Samples Reports** folder.
-
-4. Select a report to embed, and [publish](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work) it to your workspace.
+[!INCLUDE[Create a Power BI report](../../includes/embed-tutorial-create-report.md)]
 
 ## Step 5 - Get the embedding parameter values
 
-To embed your content, you'll need to obtain certain parameter values. The table blow shows the required values, and indicates if they're applicable to the *service principal* authentication method, the *master user* authentication method, or both.
+To embed your content, you'll need to obtain certain parameter values. The table below shows the required values, and indicates if they're applicable to the *service principal* authentication method, the *master user* authentication method, or both.
 
 Before you embed your content, make sure you have all the values listed below. Some of the values will differ, depending on the authentication method you're using.
 
@@ -219,64 +189,28 @@ Before you embed your content, make sure you have all the values listed below. S
 >[!TIP]
 >**Applies to:** ![Applies to.](../../media/yes.png)Service principal ![Applies to.](../../media/yes.png)Master user
 
-To get the client ID GUID (also know as *application ID*), follow these steps:
-
-1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
-
-2. Search for **App registrations** and select the **App registrations** link.
-
-3. Select the Azure AD app your using for embedding your Power BI content.
-
-4. From the **Overview** section, copy the **Application (client) ID** GUID.
+[!INCLUDE[Get the client ID](../../includes/embed-tutorial-client-id.md)]
 
 ### Workspace ID
 
 >[!TIP]
 >**Applies to:** ![Applies to.](../../media/yes.png)Service principal ![Applies to.](../../media/yes.png)Master user
 
-To get the workspace ID GUID, follow these steps:
-
-1. Sign in to Power BI service.
-
-2. Open the report you want to embed.
-
-3. Copy the GUID from the URL. The GUID is the number between **/groups/** and **/reports/**.
-
-    :::image type="content" source="media/embed-sample-for-customers/workspace-id.png" alt-text="A screenshot showing workspace ID GUID in the Power B I service U R L":::
+[!INCLUDE[Get the workspace ID](../../includes/embed-tutorial-workspace-id.md)]
 
 ### Report ID
 
 >[!TIP]
 >**Applies to:** ![Applies to.](../../media/yes.png)Service principal ![Applies to.](../../media/yes.png)Master user
 
-1. Sign in to Power BI service.
-
-2. Open the report you want to embed.
-
-3. Copy the GUID from the URL. The GUID is the number between **/reports/** and **/ReportSection**.
-
-    :::image type="content" source="media/embed-sample-for-customers/report-id.png" alt-text="A screenshot showing report ID GUID in the Power B I service U R L":::
+[!INCLUDE[Get the report ID](../../includes/embed-tutorial-report-id.md)]
 
 ### Client secret
 
 >[!TIP]
 >**Applies to:** ![Applies to.](../../media/yes.png)Service principal ![Does not apply to.](../../media/no.png)Master user
 
-To get the client secret, follow these steps:
-
-1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
-
-2. Search for **App registrations** and select the **App registrations** link.
-
-3. Select the Azure AD app your using for embedding your Power BI content.
-
-4. Under **Manage**, select **Certificates & secrets**.
-
-5. Under **Client secrets**, select **New client secret**.
-
-6. In the **Add a client secret** pop-up window, provide a description for your application secret, select when the application secret expires, and select **Add**.
-
-7. From the **Client secrets** section, copy the string in the **Value** column of the newly created application secret. The client secret value is your *client ID*.
+[!INCLUDE[Get the client secret](../../includes/embed-tutorial-client-secret.md)]
 
 ### Tenant ID
 
@@ -339,7 +273,7 @@ To enable your Azure AD app access artifacts such as reports, dashboards and dat
     >[!NOTE]
     >If you're using a *service principal*, its name is the name you gave your Azure AD app.
 
-5. Select **Add**.
+4. Select **Add**.
 
 ## Step 8 - Embed your content
 
@@ -347,23 +281,18 @@ The Power BI embedded sample application allows you to create an *embed for your
 
 Follow these steps to modify the *embed for your customers* sample application, to embed your Power BI report.  
 
-1. Open the [Power BI developer samples](https://github.com/microsoft/PowerBI-Developer-Samples) folder.
-
-2. Select **Code** and then select **Download zip**.
-
-    :::image type="content" source="media/embed-sample-for-customers/developer-samples.png" alt-text="A screenshot showing the ZIP download option in the Power B I developer samples GitHub":::
-
-3. Extract the downloaded ZIP and navigate to the **PowerBI-Developer-Samples-master** folder.
+[!INCLUDE[Embedding steps](../../includes/embed-tutorial-embedding-steps.md)]
 
 4. Depending on the language you want your application to use, open one of these folders:
 
-* .NET Core
-* .NET Framework
-* Java
-* Node JS
-* Python
+    * .NET Core
+    * .NET Framework
+    * Java
+    * Node JS
+    * Python
+
     >[!NOTE]
-    >The *embed for your customers* sample applications only support the languages listed above. The *React TS* sample application only supports the *[embed for your organization](embed-sample-for-your-organization.md)* solution.
+    >The *embed for your customers* sample applications only support the frameworks listed above. The *React* sample application only supports the *[embed for your organization](embed-sample-for-your-organization.md)* solution.
 
 5. Open the **Embed for your customers** folder.
 
@@ -373,7 +302,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
     * If you're using [Visual Studio](https://visualstudio.microsoft.com/), open the **AppOwnsData.sln** file.
 
-    * If you're using [Visual Studio Code](https://code.visualstudio.com/), open the **App Owns Data** folder.
+    * If you're using [Visual Studio Code](https://code.visualstudio.com/), open the **AppOwnsData** folder.
 
 7. Open **appsettings.json**.
 
@@ -417,13 +346,6 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
 9. Run the project by selecting **IIS Express** (play).
 
->[!NOTE]
->If you're not seeing the embedded report when running the sample app, refresh the Power BI packages by following these steps:
->1.	Right-click on the project name (AppOwnesData), and select **Manage NuGet packages**.
->2. Search for **Power BI JavaScript** and then reinstall the package.
->
->For more information, see [How to reinstall and update packages](/nuget/consume-packages/reinstalling-and-updating-packages).
-
 # [Java](#tab/java)
 
 6. Open **Eclipse** and follow the instructions described below.
@@ -464,7 +386,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
     a. In the **Package Explorer** pane, right-click **AppOwnsData**, and select **Properties**.
 
-    b. In the **Properties for AppOwnesData** window, select **Targeted Runtimes** and then select **Apache Tomcat**. This selection will include the version of *Apache Tomcat* you're using, for example *Apache Tomact v9.0*.
+    b. In the **Properties for AppOwnesData** window, select **Targeted Runtimes** and then select **Apache Tomcat**. This selection will include the version of *Apache Tomcat* you're using, for example *Apache Tomcat v9.0*.
 
     c. Select  **Apply and Close**.
 
@@ -575,8 +497,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
 After configuring and running the *embed for your customers* sample application, you can start developing your own application.
 
-When you're ready, review the [move to production](move-to-production.md) requirements. You'll also need a [capacity](embedded-capacity.md), and should review the [capacity planning](embedded-capacity-planning.md) article to establish which SKU best suits your needs.
-
+[!INCLUDE[Move to production](../../includes/embed-tutorial-production.md)]
 
 ## Next steps
 
