@@ -67,9 +67,9 @@ Depending on the type of export, you need to pass different attributes to the [E
 
 |Attribute   |Page     |Single visual  |Comments|
 |------------|---------|---------|---|
-|`bookmark`  |Optional |![Does not apply to.](../../media/no.png)|Use to export a [bookmark](#bookmarks)|
-|`pageName`  |![Applies to.](../../media/yes.png)|![Applies to.](../../media/yes.png)|   |
-|`visualName`|![Does not apply to.](../../media/no.png)|![Applies to.](../../media/yes.png)|There are two ways to get the name of the visual:<li>Use `getVisuals()`. For more information, see [Get pages and visuals](/javascript/api/overview/powerbi/get-visuals).</li><li>Listen and log the *visualClicked* event, which is triggered when a visual is selected.</li> |
+|`bookmark`  |Optional |![Does not apply to.](../../media/no.png)|Use to export a page in a specific state|
+|`pageName`  |![Applies to.](../../media/yes.png)|![Applies to.](../../media/yes.png)|Use the [GetPages](/rest/api/power-bi/reports/getpage) REST API or the `getPages` client API. For more information see [Get pages and visuals](/javascript/api/overview/powerbi/get-visuals).   |
+|`visualName`|![Does not apply to.](../../media/no.png)|![Applies to.](../../media/yes.png)|There are two ways to get the name of the visual:<li>Use the `getVisuals` client API. For more information, see [Get pages and visuals](/javascript/api/overview/powerbi/get-visuals).</li><li>Listen and log the *visualClicked* event, which is triggered when a visual is selected. For more information, see [How to handle events](/javascript/api/overview/powerbi/handle-events)</li>. |
 
 ### Bookmarks
 
@@ -151,7 +151,9 @@ A job that exceeds its number of concurrent requests doesn't terminate. For exam
 * For public preview, the number of Power BI exports per hour is limited to 50 per capacity. An export refers to exporting a single visual or a report page with or without bookmarks.
 * Exported reports cannot exceed a file size of 250 MB.
 * When exporting to .png, sensitivity labels are not supported.
-* The number of exports (single visuals or report pages) that can be included in an exported report is 50. If the report includes more exports, the API returns an error and the export job is canceled.
+* The number of exports (single visuals or report pages) that can be included in an exported report is 50. If the request includes more exports, the API returns an error and the export job is canceled.
+    >[!NOTE]
+    >[Exporting paginated reports](export-paginated-report.md) is a different process, which isn't related to `exportToFile`.
 * [Personal bookmarks](../../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
 * The Power BI visuals listed below are not supported. When a report containing these visuals is exported, the parts of the report that contain these visuals will not render, and will display an error symbol.
     * Uncertified Power BI visuals
