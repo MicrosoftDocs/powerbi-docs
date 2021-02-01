@@ -53,11 +53,11 @@ As an administrator, you determine whether to enable or disable self-service sig
 
  You'll use PowerShell commands to change the settings that control self-service sign-up and purchasing. 
 
-- If you want to disable all self-service sign-ups, change a setting in Azure Active Directory named **AllowAdHocSubscriptions** by using Azure AD PowerShell commands. Follow the steps in this article to [enable or disable self-service signup](#enable-or-disable-self-service-signup). This option turns off self-service sign-up for *all* Microsoft cloud-based apps and services.
+- If you want to disable all self-service sign-ups, change a setting in Azure Active Directory named **AllowAdHocSubscriptions** by using Azure AD PowerShell commands. Follow the steps in this article to [enable or disable self-service signup](#enable-or-disable-self-service-sign-up-for-your-organization). This option turns off self-service sign-up for *all* Microsoft cloud-based apps and services.
 
-- If you want to prevent users from purchasing their own Pro license, change the **AllowSelfServicePurchase** setting using MSCommerce PowerShell commands. This setting lets you turn off self-service purchase for specific products. Follow the steps in this article to [enable or disable self-service purchase of Power BI Pro licenses](#enable-or-disable-self-service-purchase).
+- If you want to prevent users from purchasing their own Pro license, change the **AllowSelfServicePurchase** setting using MSCommerce PowerShell commands. This setting lets you turn off self-service purchase for specific products. Follow the steps in this article to [enable or disable self-service purchase of Power BI Pro licenses](#enable-or-disable-self-service-purchase-in-your-organization).
 
-## Enable or disable self-service signup for your organization
+## Enable or disable self-service sign-up for your organization
 
 If self-service sign-up is enabled, the value of **AllowAdHocSubscriptions** is *true*. Let's take a look at what happens when you change this setting to *false*:
 
