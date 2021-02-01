@@ -7,34 +7,65 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 04/08/2020
+ms.date: 01/31/2021
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
 # Enable or disable self-service sign-up and purchasing
 
-In most organizations, self-service sign-up is enabled by default. Individual users in your organization can sign up for Power BI using their work or school account. Users may also be offered the option to directly purchase a Power BI Pro license if they try to use a feature that requires Pro. As an administrator, you determine whether to enable or disable self-service sign-up. You can also control whether users in your organization can make self-service purchases to get their own license.
+## What is self-service?
+
+Self-service refers to the ability for individuals in an organization (work or school) to sign up to use services paid for by their organization's subscription, or use free services, without asking their organization to take action on their behalf. The individual goes to a Microsoft website, finds a cloud service that their organization offers, and uses their organizational email address to sign up for that service. In most cases, the organization has paid a fee for a subscription to that service. 
+
+When individuals use this method to sign up for cloud services like Power BI, an identity is automatically created for them in Azure Active Directory, based on their email domain. Microsoft validates their passwords and they can use Power BI immediately. Their organization pays a monthly fee for Power BI Pro, and there is no charge for a Power BI standard (free) license. 
+
+As a Microsoft 365 admin, you can see who signed up for subscriptions. 
 
 > [!NOTE]
->If you acquired Power BI through a Microsoft Cloud Solution Provider (CSP), the setting might be disabled to block users from signing up individually. Your CSP may also be acting as the global admin for your organization, requiring that you contact them to help you change this setting.
->
+> Self-service sign-up is only applicable to commercial cloud customers, and not to national clouds or government customers.
+
+## When to use self-service sign-up and purchase
+
+### Self-service is a good idea: 
+
+- In larger and decentralized organizations (work or school), where individuals are often given the flexibility to purchase SaaS (Software as a service) licenses for their own use. 
+- For one-person or small organizations that need to purchase only one Power BI Pro license, or only a few licenses.
+- For individuals interested in trying Power BI, getting proficient, before purchasing a subscription for the entire organization.
+- For current users with a Power BI free license, who now need to create and share content and need to upgrade to Power BI Pro. 
+
+### You may want to disable self-service when:
+
+- Your organization has procurement processes in place to meet compliance, regulatory, security, and governance needs. You need to ensure that all Power BI Pro licenses are approved and managed according to defined processes. 
+- Your organization has requirements for new Power BI Pro users, such as mandatory training or user acknowledgement of data protection policies.
+- Your organization prohibits use of the Power BI service due to data privacy or other concerns and needs to control the assignment of Power BI free licenses very closely.
+- to ensure that all Power BI Pro licenses fall under the enterprise agreement in order to take advantage of negotiated/discounted licensing rates.
+- For current users with a Power BI free license, who are being prompted to try or directly purchase a Power BI Pro license. Your organization may not want these users to upgrade because of security, privacy, or expense.
+
+
+
+> [!NOTE]
+>If you acquired Power BI through a Microsoft Cloud Solution Provider (CSP), the setting may be disabled to block users from signing up individually. Your CSP may also be acting as the global admin for your organization, requiring that you contact them to help you change this setting.
 >
 
-You use PowerShell commands to change the settings that control self-service sign-up and purchasing. There are two settings that control whether users in your organization can do self-service sign-up or make self-service purchases.
+## Enable and disable self-service
+
+As an administrator, you determine whether to enable or disable self-service sign-up. You also determine whether users in your organization can make self-service purchases to get their own license.
+
+ You'll use PowerShell commands to change the settings that control self-service sign-up and purchasing. 
 
 - If you want to disable all self-service sign-ups, change a setting in Azure Active Directory named **AllowAdHocSubscriptions** by using Azure AD PowerShell commands. Follow the steps in this article to [enable or disable self-service signup](#enable-or-disable-self-service-signup). This option turns off self-service sign-up for *all* Microsoft cloud-based apps and services.
 
 - If you want to prevent users from purchasing their own Pro license, change the **AllowSelfServicePurchase** setting using MSCommerce PowerShell commands. This setting lets you turn off self-service purchase for specific products. Follow the steps in this article to [enable or disable self-service purchase of Power BI Pro licenses](#enable-or-disable-self-service-purchase).
 
-## Enable or disable self-service signup
+## Enable or disable self-service signup for your organization
 
 If self-service sign-up is enabled, the value of **AllowAdHocSubscriptions** is *true*. Let's take a look at what happens when you change this setting to *false*:
 
-- If you change the setting from true to false, new users in your organization are blocked from signing up individually. Any users that signed up for Power BI before you change the setting keep their licenses.
+- New users in your organization are blocked from signing up individually. Any users who signed up for Power BI before you changed the setting keep their licenses.
 
-- If you change the setting to false, users that already have a Power BI (free) license can still sign up for an individual Power BI Pro trial.
+- Users who already have a Power BI (free) license can still sign up for an individual Power BI Pro trial.
 
-- An admin needs to assign all Power BI licenses to new users who need one.
+- An admin will have to assign all Power BI licenses to new users who need one.
 
 ### Before you begin
 
@@ -72,15 +103,15 @@ Set-MsolCompanySettings -AllowAdHocSubscriptions $false
 
 After running this command, self-service signup is disabled for all users. To turn it back on, run this command again and set the value to $true.
 
-## Enable or disable self-service purchase
+## Enable or disable self-service purchase in your organization
 
 If self-service purchasing is enabled, the value of **AllowSelfServicePurchase** is *true*. Let's take a look at what happens when you change this setting to *false*:
 
-- If you change the setting from true to false,  users in your organization are blocked from buying their own Power BI Pro license. Any users that bought a license before you change the setting keep their licenses.
+- Users in your organization are blocked from buying their own Power BI Pro license. Any users who bought a license before you changed the setting keep their licenses.
 
-- If you change the setting to false, users that have a Power BI (free) license can't get an individual Power BI Pro license. 
+- Users who have a Power BI (free) license can't get an individual Power BI Pro license. 
 
-- An admin needs to assign a Pro license to all users that need one.
+- An admin needs to assign a Pro license to all users who need one.
 
 ### Before you begin
 
