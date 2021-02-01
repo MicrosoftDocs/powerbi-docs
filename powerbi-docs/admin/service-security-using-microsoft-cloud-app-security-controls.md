@@ -30,7 +30,7 @@ To use Cloud App Security with Power BI, you must use and configure relevant Mic
 ## Configure real-time controls for Power BI with Cloud App Security
 
 > [!NOTE]
-> * Azure Active Directory Premium P1 license is required in order to benefit from Cloud App Security real-time controls.
+> * An Azure Active Directory Premium P1 license is required in order to benefit from Cloud App Security real-time controls.
 
 The sections below describe the steps for configuring real-time controls for Power BI with Cloud App Security.
 
@@ -59,11 +59,11 @@ You can read the article on [sensitivity labels in Power BI](service-security-se
 
 ## Custom policies to alert on suspicious user activity in Power BI
 
-Cloud App Security activity policy enable administrators to define their own custom rules, to help detect user behavior that deviates from the norm, and even possibly act upon it automatically, if it seems too dangerous. For example:
+Cloud App Security activity policy enables administrators to define their own custom rules, to help detect user behavior that deviates from the norm, and even possibly act upon it automatically, if it seems too dangerous. For example:
 
 * **Massive sensitivity label removal.** For example: alert me when sensitivity labels are removed by a single user from 20 different reports in a time window shorter than 5 minutes.
 
-* **Encrypting sensitivity label downgrade.** For example: alert me when a report that was with the ‘Highly confidential’ sensitivity label is now classified as ‘Public’.
+* **Encrypting sensitivity label downgrade.** For example: alert me when a report that had a ‘Highly confidential’ sensitivity label is now classified as ‘Public’.
 
 > [!NOTE]
 > * The unique identifiers (Ids) of Power BI artifacts and sensitivity labels can be found using [Power BI REST APIs](/rest/api/power-bi/). See [Get datasets](/rest/api/power-bi/datasets/getdatasets) or [Get reports](/rest/api/power-bi/reports/getreports).
