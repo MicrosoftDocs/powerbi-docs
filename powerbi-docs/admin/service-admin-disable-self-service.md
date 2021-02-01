@@ -36,7 +36,7 @@ As a Microsoft 365 admin, you can see who signed up for subscriptions.
 ### You may want to disable self-service when:
 
 - Your organization has procurement processes in place to meet compliance, regulatory, security, and governance needs. You need to ensure that all Power BI Pro licenses are approved and managed according to defined processes. 
-- Your organization has requirements for new Power BI Pro users, such as mandatory training or user acknowledgement of data protection policies.
+- Your organization has requirements for new Power BI Pro users, such as mandatory training or user acknowledgment of data protection policies.
 - Your organization prohibits use of the Power BI service due to data privacy or other concerns and needs to control the assignment of Power BI free licenses very closely.
 - to ensure that all Power BI Pro licenses fall under the enterprise agreement in order to take advantage of negotiated/discounted licensing rates.
 - For current users with a Power BI free license, who are being prompted to try or directly purchase a Power BI Pro license. Your organization may not want these users to upgrade because of security, privacy, or expense.
