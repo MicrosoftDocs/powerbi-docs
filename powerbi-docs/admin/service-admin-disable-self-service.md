@@ -15,11 +15,11 @@ LocalizationGroup: Administration
 
 ## What is self-service?
 
-Self-service refers to the ability for individuals in an organization (work or school) to sign up to use services paid for by their organization's subscription, or use free services, without asking their organization to take action on their behalf. The individual goes to a Microsoft website, finds a cloud service that their organization offers, and uses their organizational email address to sign up for that service. In most cases, the organization has paid a fee for a subscription to that service. 
+Self-service refers to the ability for individuals in an organization (work or school) to sign up to use services paid for by their organization's subscription, or use free services, without asking their organization to take action on their behalf. The individual goes to a Microsoft website, finds a cloud service that their organization offers, and uses their organizational email address to sign up for that service. 
 
-When individuals use this method to sign up for cloud services like Power BI, an identity is automatically created for them in Azure Active Directory, based on their email domain. Microsoft validates their passwords and they can use Power BI immediately. Their organization pays a monthly fee for Power BI Pro, and there is no charge for a Power BI standard (free) license. 
+In many cases, the organization has paid a fee for a subscription to that service. In other cases, the individual is the first user and becomes the admin for the service. For a trial or free license, no purchase is required. But for Power BI Pro, the organization is reponsible for paying the monthly fee. 
 
-As a Microsoft 365 admin, you can see who signed up for subscriptions. 
+As a Microsoft 365 admin, you can see who signs up for trials, licenses, and subscriptions.
 
 > [!NOTE]
 > Self-service sign-up is only applicable to commercial cloud customers, and not to national clouds or government customers.
@@ -31,7 +31,7 @@ As a Microsoft 365 admin, you can see who signed up for subscriptions.
 - In larger and decentralized organizations (work or school), where individuals are often given the flexibility to purchase SaaS (Software as a service) licenses for their own use. 
 - For one-person or small organizations that need to purchase only one Power BI Pro license, or only a few licenses.
 - For individuals interested in trying Power BI, getting proficient, before purchasing a subscription for the entire organization.
-- For current users with a Power BI free license, who now need to create and share content and need to upgrade to Power BI Pro. 
+- For current users with a Power BI free license, who now want to create and share content and upgrade themselves to a Power BI Pro trial. 
 
 ### You may want to disable self-service when:
 
@@ -42,14 +42,16 @@ As a Microsoft 365 admin, you can see who signed up for subscriptions.
 - For current users with a Power BI free license, who are being prompted to try or directly purchase a Power BI Pro license. Your organization may not want these users to upgrade because of security, privacy, or expense.
 
 
+## Enable and disable self-service
+
+As an administrator, you determine whether to enable or disable self-service sign-up. You also determine whether users in your organization can make self-service purchases to get their own license. 
+
+Turning off self-service sign-up keeps users from exploring Power BI for data visualization and analysis. If you block individual sign-up, you may want to get Power BI (free) licenses for your organization and assign them to all users. 
 
 > [!NOTE]
 >If you acquired Power BI through a Microsoft Cloud Solution Provider (CSP), the setting may be disabled to block users from signing up individually. Your CSP may also be acting as the global admin for your organization, requiring that you contact them to help you change this setting.
 >
 
-## Enable and disable self-service
-
-As an administrator, you determine whether to enable or disable self-service sign-up. You also determine whether users in your organization can make self-service purchases to get their own license.
 
  You'll use PowerShell commands to change the settings that control self-service sign-up and purchasing. 
 
@@ -148,6 +150,30 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ
 ```
 
 After running this command, self-service purchase for Power BI is disabled for all users. To turn it back on, run this command again and set the value to $true.
+
+## What to do if individuals have already used self-service
+
+Self-service sign-up and purchase are both enabled by default. This makes it possible for individuals in your organization to already have Power BI licenses and subscriptions. Whether you take any action or not, you need a clear picture of what already exists.
+
+Users who have joined your tenant via self-service sign-up get assigned a unique license that you can filter on within your active user pane in the admin dashboard. To create this new view, follow these steps.
+
+1. Navigate to the Microsoft 365 admin center.
+
+1. In the nav pane, select **Users** > **Active Users**.
+
+1. On the Views menu, select **Add custom view**.
+
+1. Name your new view, and under Assigned product license, select Power BI (free) or Power BI Pro.
+
+    You can only have one license selected per view. If you have both Power BI (free) and Power BI Pro licenses in your organization, you can create two views.
+
+1. Enter any other conditions you want, then select **Add**.
+
+    After you create the new view, it's available from the Views menu.
+
+
+    > [!NOTE]
+    > If your organization doesn't have a Microsoft 365 environment connected to your email domain, self-service users were added to a new, cloud-only user directory. You may need to find, claim, and [take over tenants that were already created](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/domains-admin-takeover). 
 
 ## Next steps
 
