@@ -19,6 +19,9 @@ The `exportToFile` API enables exporting a Power BI report by using a REST call.
     * Each file in the .zip represents a report page
     * The page names are the same as the return values of the [Get Pages](/rest/api/power-bi/reports/getpages) or [Get Pages in Group](/rest/api/power-bi/reports/getpagesingroup) APIs
 
+>[!NOTE]
+>[Exporting paginated reports](export-paginated-report.md) is a different process, which isn't related to `exportToFile`.
+
 ## Usage examples
 
 You can use the export feature in a variety of ways. Here are a couple of examples:
@@ -152,8 +155,6 @@ A job that exceeds its number of concurrent requests doesn't terminate. For exam
 * Exported reports cannot exceed a file size of 250 MB.
 * When exporting to .png, sensitivity labels are not supported.
 * The number of exports (single visuals or report pages) that can be included in an exported report is 50. If the request includes more exports, the API returns an error and the export job is canceled.
-    >[!NOTE]
-    >[Exporting paginated reports](export-paginated-report.md) is a different process, which isn't related to `exportToFile`.
 * [Personal bookmarks](../../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
 * The Power BI visuals listed below are not supported. When a report containing these visuals is exported, the parts of the report that contain these visuals will not render, and will display an error symbol.
     * Uncertified Power BI visuals
