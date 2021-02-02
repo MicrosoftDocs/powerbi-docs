@@ -99,7 +99,27 @@ The following diagram illustrates the architecture of Power BI Premium infrastru
 
 ![Power BI Premium](media/whitepaper-powerbi-security/powerbi-security-whitepaper_05.png)
 
+The connection to Power BI Premium infrastructure can be done in multiple ways, depending on the user scenario. Power BI Premium clients can be a user's browser, a regular Power BI Backend, direct connections via XMLA clients, ARM APIs, etc.
 
+Power BI Premium infrastructure in an Azure region consists of multiple Power BI Premium clusters (minimum 1). The majority of the Premium resources are incapsulated inside a cluster (for instance, compute), and there are some common regional resources (e.g. Metadata store). Premium infrastructure allows two ways of horizontal scalability in a region: increase resources inside clusters, and/or add more clusters on demand as needed (if cluster resources are approaching their limits).
+
+The backbone of each cluster are compute resources managed by VMSS and Service Fabric. VMSS and Service Fabric allows fast and painless increase of compute nodes as usage growth and orchestrates Power BI Premium services and applications deployment, management and monitoring. 
+
+There are many surrounding resources which ensure secure and reliable infrastructure: load balancers, virtual networks, network security groups, service bus, storage, etc. Any secrets, keys, certificates required for Power BI Premium are managed by Azure Key Vault exclusively. Any authentication is done via integration with Azure Active Directory exclusively.
+
+Any request that comes to Power BI Premium infrastructure goes to Frontend nodes first – they are the only nodes available for external connections, the rest of the resources are hidden behind virtual networks. Frontend nodes authenticate the request, handle it or forward it to the appropriate resources (e.g. backend nodes).
+
+Backend nodes provide most of the Power BI Premium capabilities and features.
+
+### Power BI Mobile   
+
+Power BI Mobile is a collection of apps designed for the three primary mobile platforms: Android, iOS, and Windows (UWP). Security considerations for Power BI Mobile apps fall into two categories:
+* Device communication
+* The application and data on the device
+
+For device communication, all Power BI Mobile applications communicate with the Power BI service, and use the same connection and authentication sequences used by browsers, which are described in detail earlier in this whitepaper. The iOS and Android Power BI mobile applications bring up a browser session within the application itself, and the Windows mobile app brings up a broker to establish the communication channel with Power BI (for the sign in process).
+
+The following table lists support of certificate-based authentication (CBA) for Power BI Mobile based on mobile device platform:
 
 
 
