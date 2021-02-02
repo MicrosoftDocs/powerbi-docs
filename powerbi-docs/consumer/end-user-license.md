@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 Ms.custom: css_fy20Q4
 ms.topic: how-to
-ms.date: 01/25/2021
+ms.date: 02/01/2021
 ms.custom: licensing support
 LocalizationGroup: consumers
 ---
@@ -31,7 +31,7 @@ In this article, we describe the capabilities of each license type and how *wher
 
 ## Licenses
 
-Each user of the Power BI service has either a *free* license, a *Pro* license, of a *Premium per-user** license. If you're a Power BI *business user*, you're probably using a free license that is managed by your Power BI admin.
+Each user of the Power BI service has either a *free* license, a *Pro* license, or a *Premium per-user** license. If you're a Power BI *business user*, you're probably using a free license that is managed by your Power BI admin.
 
 It's possible to have more than one license at the same time.  The service always delivers you the experience equal to the most-permissive license you currently have.
 

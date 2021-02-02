@@ -232,7 +232,7 @@ strong authentication, software and hardware baselines, restricted logical and
 network access.
 
 Understand privileged access
-- [workstations](/azure/active-directory/devices/concept-azure-managed-workstation)
+- [workstations](https://4sysops.com/archives/understand-the-microsoft-privileged-access-workstation-paw-security-model/)
 
 - [Deploy a privileged access workstation](/azure/active-directory/devices/howto-azure-managed-workstation)
 

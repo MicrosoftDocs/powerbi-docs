@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 01/18/2021
+ms.date: 02/01/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
 ---
@@ -71,25 +71,15 @@ The following known limitations currently apply to Premium Gen2:
 
 1.    Premium Gen2 capacity utilization can't be tracked in the metrics app.
 
-2.    Premium Gen2 capacity settings for specific workloads aren't yet visible in the Premium Gen2 capacity settings page in the admin portal. To change settings, transition the capacity to the original version of Premium, change the settings, then set the capacity to using Premium Gen2 once again. Memory allocation settings don't apply to Premium Gen2 capacities.
+2.  If you're using XMLA on Premium Gen2, make sure you're using the most recent versions of the [data modeling and management tools](service-premium-connect-tools.md#data-modeling-and-management-tools). 
 
-3.  If you're using XMLA on Premium Gen2, make sure you're using the most recent versions of the [data modeling and management tools](service-premium-connect-tools.md#data-modeling-and-management-tools). 
-
-4.  Analysis services features in Premium Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are:
+3.  Analysis services features in Premium Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are:
 
     |Tool|Minimum version required|Estimated release date|
     |---|---|---|
     |SQL Server Management Studio (SSMS)|18.8|December 8, 2020|
     |SQL Server Data Tools (SSDT)|2.9.15|General availability November 30, 2020|
     | AS PowerShell| Greater than 21.1.18229|November 26, 2020|
-
-5.  Re-assigning a workspace containing dataflows from one Premium Gen2 Capacity to another Premium capacity in a different region is not supported. Also unsupported is moving a large-storage format models from one Premium capacity to another. If you've already migrated to a capacity in a different region, take one of the following steps to restore functionality:
- 
-    1.	Create a new workspace and copy the dataflows
-    2.	Migrate the workspace back to the capacity in previous region
-    3.	Switch back to Premium Gen 1
-
-This limitation may be removed upon General Availability (GA) of Premium Gen 2.
 
 
 ## Subscriptions and licensing
@@ -122,11 +112,6 @@ With Power BI Premium, you get *reserved capacities*. In contrast to a shared ca
 Workspaces reside within capacities. Each Power BI user has a personal workspace known as **My Workspace**. Additional workspaces known as **workspaces** can be created to enable collaboration. By default, workspaces, including personal workspaces, are created in the shared capacity. When you have Premium capacities, both My Workspaces and workspaces can be assigned to Premium capacities.
 
 Capacity administrators automatically have their my workspaces assigned to Premium capacities.
-
-### Updates for Premium Gen2 (Preview)
-
-Premium Gen 2 nodes no longer use reserved infrastructure. Instead, the service makes sure enough computing power is available to each workload running by allocating enough resources out of a shared pool of very-capable computing nodes.
-
 
 ### Capacity nodes
 
