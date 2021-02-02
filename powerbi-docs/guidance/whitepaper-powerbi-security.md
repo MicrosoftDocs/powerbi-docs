@@ -122,6 +122,35 @@ For device communication, all Power BI Mobile applications communicate with the 
 The following table lists support of certificate-based authentication (CBA) for Power BI Mobile based on mobile device platform:
 
 
+|CBA support  |iOS  |Android  |Windows  |
+|---------|---------|---------|---------|
+|Power BI (sign in to service)    |Supported         |Supported         |Not supported         |
+|SSRS ADFS on-prem (connect to SSRS server)     |Not supported         |Supported         |Not supported         |
+|SSRS App Proxy     |Supported         |Supported         |Not supported         |
+
+Power BI Mobile apps actively communicate with the Power BI service. Telemetry is used to gather mobile app usage statistics and similar data, which is transmitted to services that are used to monitor usage and activity; no customer data is sent with telemetry.
+
+The Power BI application stores data on the device that facilitates use of the app:
+* Azure Active Directory and refresh tokens are stored in a secure mechanism on the device, using industry standard security measures.
+* Data and settings (key-value pairs for user configuration) is cached in storage on the device, and can be encrypted by the OS (in iOS this is automatically done when the user sets passcode, in Android this can be configured in the setting and in Windows by using bit-locker)
+* For the Android and iOS apps the data and settings (key-value pairs for user configuration) are cached in a storage on the device in a sandbox and internal storage which is accessible only to the app. For the Windows app the data is only accessible by the user (and system admin).
+* Geolocation are enabled or disabled explicitly by the user. If enabled, the geolocation data is not saved on the device and it is not shared with Microsoft.
+* Notifications are enabled or disabled explicitly by the user. If enabled, Android and iOS do not support geo-residency for notifications.
+
+Data encryption can be enhanced by applying file-level encryption via Microsoft Intune.
+
+All three platforms for which Power BI Mobile is available support Microsoft Intune, a software service that provides mobile device and application management. With Intune enabled and configured, data on the mobile device is encrypted, and the Power BI application itself cannot be installed on an SD card. You can [learn more about Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
+
+The Windows app also supports WIP - [learn more about it](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).
+
+In order to implement SSO - some secured storage values related to the token-based authentication are available for other Microsoft 1st party apps (like Microsoft Authenticator) and are managed by the ADAL SDK.  
+
+The Power BI Mobile cached data is deleted when the app is removed; the user signs out of Power BI Mobile; or the user fails to sign in (such as a token expiration event, or password change). The data cache includes dashboards and reports previously accessed from the Power BI Mobile app.
+
+Power BI Mobile does not access other applications folders or files on the device.
+
+The Power BI apps for iOS and Android let you protect your data by configuring additional identification - providing Face ID, Touch ID, or a passcode for iOS and biometric data (Fingerprint ID) for Android. [Learn more about it](../consumer/mobile/mobile-native-secure-access.md).
+
 
 
 
