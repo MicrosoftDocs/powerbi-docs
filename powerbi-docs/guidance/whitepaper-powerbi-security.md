@@ -171,17 +171,26 @@ The user authentication sequence for the Power BI service occurs as described in
 
 1. Now when the client's browser requires customer data, it will send requests to the Back-End cluster address with the AAD access token in the Authorization header. The Power BI Back-End cluster will read the AAD access token and validates the signature to ensure that the identity for the request is valid. The [AAD access token has a default lifetime of 1 hour](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#configurable-token-lifetime-properties-after-the-retirement), and the user's browser will make periodic requests to renew the access token before it reaches expiry to maintain the current session.
 
-
-
-
-
-
-
-
-
 ![Authentication sequence](media/whitepaper-powerbi-security/powerbi-security-whitepaper_08.png)
 
+## Data Residency
 
+Unless otherwise indicated in documentation, Power BI stores customer data in an Azure geography that is assigned when an [Azure Active Directory (AAD) tenant](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings) signs-up for Power BI services for the first time. An AAD tenant houses the user and application identities, groups and other relevant information pertaining to an organization and its security. 
+
+The assignment of Azure geography for tenant data storage is done by mapping the country or region that is selected as part of the AAD tenant setup to the best Azure geography where a Power BI deployment exists. Once this determination is made, all Power BI customer data will be stored in this chosen Azure geography (aka home geo), except in cases where organizations utilize multi-geo deployments.
+
+### Multiple Geographies (Multi-geo)
+
+Some organizations have a global presence and may require Power BI services in multiple Azure geographies. For example, a business may have their headquarters in the United States but may also do business in other geographical areas, such as Australia. In such cases the business may additionally require that certain Power BI data remains stored at rest in the remote region to comply with local regulations. This feature of the Power BI service is referred to as multi-geo.
+
+The query execution layer, query caches and artifact data that is assigned to a multi-geo workspace are hosted and remain in the remote capacity Azure geography. However, some artifact metadata like report structure may remain stored at rest in the tenant home geography. Additionally, some data transit and processing may still happen in the tenant home geography even for workspaces that are hosted in a multi-geo Premium capacity.
+Please see Configure Multi-Geo support for Power BI Premium(../admin/service-admin-premium-multi-geo.md) for more information about creating and managing Power BI deployments that span multiple Azure geographies.
+
+### Regions and Datacenters
+
+Power BI services are available in specific Azure geographies as described in the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location). For more information on where your data is stored and how it is used, please refer to the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Commitments about the location of customer data at rest are specified in the Data Processing Terms of the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
+
+Microsoft also provides datacenters for sovereignties. For more information about Power BI service availability for national clouds, see [Power BI national clouds](https://powerbi.microsoft.com/clouds/). 
 
 
 
