@@ -192,9 +192,50 @@ Power BI services are available in specific Azure geographies as described in th
 
 Microsoft also provides datacenters for sovereignties. For more information about Power BI service availability for national clouds, see [Power BI national clouds](https://powerbi.microsoft.com/clouds/). 
 
+## Data Handling
 
+This section outlines Power BI data handling practices when it comes to storing, processing, and transferring customer data.
 
+### Data at Rest
 
+Power BI uses two primary data storage resource types:
+* Azure Storage
+* Azure SQL Databases
+
+In majority of scenarios Azure Storage is utilized to persist the data of Power BI artifacts, while Azure SQL Databases are used to persist artifact metadata. 
+
+All data persisted by Power BI is encrypted by default using Microsoft managed keys. Customer data that is stored in Azure SQL Databases is fully encrypted using [Azure SQL's Transparent Data Encryption](/azure/sql-database/transparent-data-encryption-azure-sql) (TDE) technology. Customer data that is stored in Azure Blob storage is encrypted using [Azure Storage Encryption](/azure/storage/common/storage-service-encryption).
+
+Optionally, organizations can utilize Power BI Premium to use their own keys to encrypt data at rest that is imported into a dataset. This approach is often described as bring your own key (BYOK). Utilizing BYOK helps ensure that even in cases of a service operator error, customer data will not be exposed – something that cannot be easily achieved using transparent service side encryption. Please see [Bring Your Own Encryption Keys for Power BI](../admin/service-encryption-byok.md) for more information.
+
+Power BI datasets allow for a variety of data source connection modes which will determine whether the data source data is persisted in the service or not.
+
+|Dataset Mode (Kind)   |Data Persisted in Power BI |
+|----------------------|---------------------------|
+|**Import**            |Yes |
+|**Direct Query**      |No |
+|**Live Connect**      |No |
+|**Composite**         |If contains an Import data source |
+|**Streaming**         |If configured to persist |
+
+Regardless of the dataset mode utilized, Power BI may temporarily cache any retrieved data to optimize query and report load performance.
+
+### Data in Processing
+
+Data is in processing when it is either actively being used by one or more users as part of an interactive scenario, or when a background process like refresh touches this data. When data is processed in this way, Power BI loads it into the memory space of a service workload dedicated to processing that the associated asset. The processed data in memory is not encrypted to facilitate the functionality required by the workload.
+
+### Data in Transit
+Power BI requires all incoming HTTP traffic to be encrypted using TLS 1.2 or above. Any requests attempting to use the service with TLS 1.1 or lower will be rejected.
+
+## Authentication to Data Sources
+
+When connecting to a data source, a user can choose to import a copy of the data to Power BI or connect directly to the data source. 
+
+In the import case, a user establishes a connection based on the user's login and accesses the data with the credential. After the dataset is published to Power BI service, Power BI always uses this user's credential to import data. Once data is imported, viewing the data in reports and dashboard does not access underly data source. Power BI supports single sign-on authentication for selected data sources. If the connection is configured to use single sign-on, dataset owner's credential is used to connect with the data source.
+
+If a data source is connected directly using pre-configured credential, the pre-configured credential is used to connect to data source when any user views the data. If a data source is connected directly using single sign-on, the current user's credential is used to connect to the data source when a user views the data. When using with single sign-on, Row Level Security (RLS) could be implemented on the data source and that allows users to view data they have privilege to access. When connection is to data sources in the cloud, AAD authentication is used for single sign on; for on prem data sources Kerberos, SAML and AAD are supported.
+
+If the data source is Azure Analysis Services or on-premises Analysis Services and Row Level Security (RLS) is configured, Power BI service will apply that row level security, and users who do not have sufficient credentials to access the underlying data (which could be a query used in a dashboard, report, or other data artifact) will not see data for which the user does not have sufficient privileges.
 
 
 Gen 1
