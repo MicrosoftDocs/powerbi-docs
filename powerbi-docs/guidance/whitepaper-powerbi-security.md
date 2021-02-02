@@ -151,6 +151,31 @@ Power BI Mobile does not access other applications folders or files on the devic
 
 The Power BI apps for iOS and Android let you protect your data by configuring additional identification - providing Face ID, Touch ID, or a passcode for iOS and biometric data (Fingerprint ID) for Android. [Learn more about it](../consumer/mobile/mobile-native-secure-access.md).
 
+## Authentication to the Power BI Service
+
+User authentication to the Power BI service consists of a series of requests, responses, and redirects between the user's browser and the Power BI service or the Azure services used by Power BI. That sequence describes the process of user authentication in Power BI, which follows [Azure Active Directory's auth code grant flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow). For more information about options for an organization's user authentication models (sign-in models), see [Choosing a sign-in model for Microsoft 365](https://blogs.office.com/2014/05/13/choosing-a-sign-in-model-for-office-365/).
+
+### Authentication Sequence
+
+The user authentication sequence for the Power BI service occurs as described in the following steps, which are illustrated in the following image.
+
+1. A user initiates a connection to the Power BI service from a browser, either by typing in the Power BI address in the address bar or by selecting "Sign In" from the Power BI landing page (https://powerbi.microsoft.com). The connection is established using TLS 1.2 and HTTPS, and all subsequent communication between the browser and the Power BI service uses HTTPS.
+
+1. The Azure Traffic Manager checks the user's DNS record to determine the most appropriate (usually nearest) datacenter where Power BI is deployed and responds to the DNS with the IP address of the WFE cluster to which the user should be sent.
+
+1. WFE then redirects the user to Microsoft Online Services login page.
+
+1. Once the user is authenticated, the login page redirects the user to the previously determined nearest Power BI service WFE cluster with an auth code.
+
+1. The WFE cluster checks with the Azure Active Directory (AAD) service to obtain an AAD security token by using the auth code. When AAD returns successful authentication of the user and returns an AAD security token, the WFE cluster consults the Power BI Global Service, which maintains a list of tenants and their Power BI Back-End cluster locations and determines which Power BI Back-End service cluster contains the user's tenant. The WFE cluster then returns an application page to the user's browser with session, access and routing information required for its operation. 
+
+1. Now when the client's browser requires customer data, it will send requests to the Back-End cluster address with the AAD access token in the Authorization header. The Power BI Back-End cluster will read the AAD access token and validates the signature to ensure that the identity for the request is valid. The [AAD access token has a default lifetime of 1 hour](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#configurable-token-lifetime-properties-after-the-retirement), and the user's browser will make periodic requests to renew the access token before it reaches expiry to maintain the current session.
+
+
+
+
+
+
 
 
 
