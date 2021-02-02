@@ -288,6 +288,193 @@ The Premium AI enrichment features can be best viewed as a collection of statele
 
 For training and applying an AutoML model, PowerBI uses Azure AutoML SDK and runs all the training in the customer's PowerBI capacity. During training iterations, PowerBI calls an experimentation AzureML service to select a suitable model and hyper-parameters for the current iteration. In this outbound call, only relevant experiment metadata (e.g. accuracy, ml algorithm, algorithm parameters etc) from the previous iteration is sent. The AutoML training produces an ONNX model and training report data that is then saved in the dataflow. Later PowerBI users can then apply the  trained ML model as a transform to operationalize the ML model on a scheduled basis.For TextAnalytics and Imagetagging APIs, PowerBI does not directly call the CognitiveServices service APIs but instead uses an internal SDK to run the APIs in the PowerBI premium capacity. These APIs are today supported in both PowerBI dataflows and datasets. While authoring a dataset in PowerBI Desktop, users can only access this functionality if they have access to a premium PowerBI workspace. Hence, customers are prompted to specify their AAD credential. 
 
+## Network Isolation
+
+This section outlines advanced security features in Power BI. Some of the features have specific licensing requirements. See the sections below for details.
+
+### Service Tags
+
+A service tag represents a group of IP address prefixes from a given Azure service. It helps to minimize complexity of frequent updates on network security rules. Customers can use service tags to define network access controls on [Network Security Groups](/azure/virtual-network/security-overview#security-rules) or [Azure Firewall](/azure/firewall/service-tags). Customers can use service tags in place of specific IP addresses when creating security rules. By specifying the service tag name (e.g., PowerBI) in the appropriate source or destination (for APIs) field of a rule, customers can allow or deny the traffic for the corresponding service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses change.
+
+### Private links integration
+
+Azure networking provides the Azure Private Links feature that enables Power BI to provide secure access via Azure Networking Private endpoints. With Azure Private Links and Private Endpoints, data traffic is sent privately using Microsoft's backbone network infrastructure, and thus the data doesn't traverse the Internet.
+
+Private links ensure that Power BI users use the Microsoft private network backbone when going to resources in the Power BI service.
+
+Using Private Links with Power BI provides the following benefits:
+* Private Links ensure that traffic will flow over the Azure backbone to a private endpoint for Azure cloud-based resources.
+* Network traffic isolation from non-Azure based infrastructure, such as on-premises access, would require customers to have ExpressRoute or a Virtual Private Network (VPN) configured.
+
+See [Private Links for Power BI](../admin/service-security-private-links.md) for additional information.
+
+### VNet Connectivity (Preview- Coming Soon)
+
+While the private links integration feature provides secure inbound connections to Power BI, this VNet connectivity feature enables secure outbound connectivity from Power BI to data sources within a VNet. 
+
+VNet gateways (Microsoft-managed) will eliminate the overhead of installing and monitoring on-premises data gateways for connecting to data sources associated with a VNet. They would however, still follow the familiar process of managing security and data sources as with an on-premises data gateway. 
+
+An overview of what happens when you interact with a Power BI report that is connected to a data source within a VNet using VNet gateways:
+
+1. Power BI cloud service (or one of the other supported cloud services) kicks off a query and sends the query, data source details and credentials to the Power platform VNet service (PP VNet).
+
+1. The PP VNet service then securely injects a container running a VNet gateway into the subnet. This container can now connect to data services accessible from within this subnet.
+
+1. The PP VNet service then sends the query, data source details and credentials to the VNet gateway. 
+
+1. The VNet gateway gets the query and connects to the data sources with those credentials.
+1. The query is then sent to the data source for execution.
+1. After execution, the results are sent to the VNet gateway and the PP VNet service securely pushes the data from the container to the Power BI cloud service.
+
+This feature will be available in Public preview soon.
+
+### Service Principals
+
+Power BI support the use of Service Principals. Store any Service Principal credentials used for encrypting or accessing Power BI in a Key Vault, assign proper access policies to the vault and regularly review access permissions.
+See [Automate Premium workspace and dataset tasks with service principals](../admin/service-premium-service-principal.md) for additional details.
+
+## Data loss prevention 
+
+### M365 sensitivity labels
+
+Power BI has deep integration with Microsoft Information Protection sensitivity labels, which enable organizations to have a single, integrated DLP policy management, audit and compliance together with the rest of Office. 
+
+When sensitivity labels are enabled in Power BI:
+* Classify and label sensitive data both in Power BI service (GA) and in Power BI desktop (Preview) using the familiar Microsoft Information Protection sensitivity labels used in Office and in Azure Purview. 
+* Enforce governance policies even when Power BI content is exported to Excel, PowerPoint, PDF or PBIX file to help ensure data is protected even when it leaves Power BI.
+* Encrypt PBIX file according to MIP label policy when apply MIP label on the PBIX file in desktop, ensuring only authorized users can edit this file.
+* It's easy to classify and protect .pbix files like it is done with Excel, Word, and PowerPoint files. With just 2 clicks, your file can be tagged according to its level of sensitivity and, even further, be encrypted if it contains business-confidential data.
+* Excel workbooks automatically inherit the security labels when they connect to Power BI (Preview) enabling to maintain E2E classification and apply protection when analyze Power BI dataset in Excel.
+* Sensitivity labels applied on Power BI reports and dashboards are also visible in the Power BI iOS and Android mobile apps.
+* Sensitivity labels persist when a Power BI report is embedded in Teams, SharePoint, or a secure website (Preview) - helping organizations to maintain classification and protection on export when embedding Power BI content.
+* Label inheritance upon creation of new content in Power BI service ensuring the label applied on a dataset in Power BI service will be applied on new content created on top of this dataset. 
+* [Power BI admin scan API](/rest/api/power-bi/admin/workspaceinfo_getscanresult) extract Power BI artifact's sensitivity label, enabling Power BI and InfoSec admins to monitor labeling in Power BI service and produce executive reports. 
+* Power BI make sure that only authorized users can change or remove labels with protection settings in Power BI service. 
+* Coming soon
+    * Power BI admin API to apply MIP labels to enable central teams to programmatically label content in Power BI service.  
+    * Admins will be able to enforce apply label on new or edited content with mandatory label policy in Power BI service (Preview)
+    * Automatic downstream artifact labeling within Power BI service. Upon label apply or change on Power BI dataset the label will be automatically applied on all content connected to this artifact. 
+
+See [MIP sensitivity labels documentation in Power BI](../admin/service-security-sensitivity-label-overview.md) for additional details.
+
+## Microsoft Cloud App Security (MCAS) for Power BI
+
+Microsoft Cloud App Security is one of the world's leading cloud access security brokers, named as leader in Gartner's Magic Quadrant for Cloud Access Security Broker (CASB) market. Cloud app security is used to secure the use of cloud apps. It enables organizations to monitor and control, in real time, risky Power BI sessions such as user access from unmanaged devices. Security administrators can define policies to control user actions, such as downloading reports with sensitive information.
+
+With Cloud App security organization can gain the following DLP capabilities: 
+* Set real-time controls to enforce risky user sessions in Power BI - For example, if a user connects to Power BI from outside of their country, the session can be monitored by Cloud App Security's real-time controls, and risky actions, such as downloading data tagged with a "Highly Confidential" sensitivity label, can be blocked immediately.
+* Investigate Power BI user activity with Cloud App Security activity log - The Cloud App Security activity log includes Power BI activity as captured in the Office 365 audit log, which contains information about all user and admin activities, as well as sensitivity label information for relevant activities such as apply, change, and remove label. Admins can leverage Cloud App Security advanced filters and quick actions for effective issue investigations. 
+* Create custom policies to alert on suspicious user activity in Power BI - The next step is to leverage Cloud App Security's activity policy feature to define your own custom rules, to help you detect user behavior that deviates from the norm, and even possibly act upon it automatically, if it seems too dangerous.
+* Work with Cloud App Security built-in anomaly detections - Cloud App Security's anomaly detection policies provide out-of-the-box user behavioral analytics and machine learning so that you are ready from the outset to run advanced threat detection across your cloud environment. When an anomaly detection policy identifies a suspicious behavior, it triggers a security alert. 
+* Power BI admin role in Cloud App Security portal - Cloud App Security does provide an app-specific admin role that can be used to grant Power BI admins only the permissions they need to access Power BI-relevant data in the portal, such as alerts, users at risk, activity logs, and other Power BI-related information.
+
+See [Using Microsoft Cloud App Security Controls in Power BI](../admin/service-security-using-microsoft-cloud-app-security-controls.md) for additional details.
+
+## Preview Security Features
+
+This topic lists features that are planned to release through March 2021. Because this topic lists features that may not have released yet, **delivery timelines may change and projected functionality may be released later than March 2021, or may not be released at all**. For more information, about Previews, please review the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products).
+
+### Bring Your Own Log Analytics (BYOLA)
+
+Bring Your Own Log Analytics enables integration between Power BI and Azure Log Analytics. This integration includes Azure Log Analytics' advanced analytic engine, interactive query language, and built-in machine learning constructs.
+
+## Power BI Security Questions and Answers
+
+The following questions are common security questions and answers for Power BI. These are organized based on when they were added to this whitepaper, to facilitate your ability to quickly find new questions and answers when this paper is updated. The newest questions are added to the end of this list.
+
+**How do users connect to, and gain access to data sources while using Power BI?**
+
+Power BI manages credential to data sources for each user for cloud credentials or for connectivity through personal gateway.  Data sources managed by an on-premises data gateway can be shared across the enterprise and permissions to these data sources could be managed by the Gateway Admin.  When configuring a dataset user is allowed to select a credential from their personal store or use an on-premises data gateway to use a shared credential.   
+
+In the import case, a user establishes a connection based on the user's login and accesses the data with the credential. After the dataset is published to Power BI service, Power BI always uses this user's credential to import data. Once data is imported, viewing the data in reports and dashboard does not access underly data source. Power BI supports single sign-on authentication for selected data sources. If the connection is configured to use single sign-on, dataset owner’s credential is used to connect with the data source.
+
+For reports that are connected with Direct Query the data source is connected directly using pre-configured credential, the pre-configured credential is used to connect to data source when any user views the data. If a data source is connected directly using single sign-on, the current user's credential is used to connect to the data source when a user views the data. When using with single sign-on, Row Level Security (RLS) could be implemented on the data source and that allows users to view data they have privilege to access. When connection is to data sources in the cloud, AAD authentication is used for single sign on; for on prem data sources Kerberos, SAML and AAD are supported.  
+
+When connecting with Kerberos, users UPN is passed to the gateway and using Kerberos constrained delegation, the user is impersonated and connect to the respective data sources. SAML is also supported on the Gateway for SAP HANA datasource. More information is available in [overview of single sign-on for gateways](../connect-data/service-gateway-sso-overview.md).
+
+If the data source is Azure Analysis Services or on-premises Analysis Services and Row Level Security (RLS) is configured, Power BI service will apply that row level security, and users who do not have sufficient credentials to access the underlying data (which could be a query used in a dashboard, report, or other data artifact) will not see data for which the user does not have sufficient privileges.
+
+[Row Level security with Power BI](../admin/service-admin-rls.md) can be used to restrict data access for given users. Filters restrict data access at the row level, and you can define filters within role.  
+
+**How is data transferred to Power BI?**
+
+* All data requested and transmitted by Power BI is encrypted in transit using HTTPS (except when the data source chosen by the customer does not support HTTPS) to connect from the data source to the Power BI service. A secure connection is established with the data provider, and only once that connection is established will data traverse the network.
+
+**How does Power BI cache report, dashboard, or model data, and is it secure?**
+
+* When a data source is accessed, the Power BI service follows the process outlined in the **Data Storage and Movement [WHERE IN THE CURRENT DOC-DATA IN TRANSIT??]** section earlier in this document.
+
+**Do clients cache web page data locally?**
+
+* When browser clients access Power BI, the Power BI web servers set the *Cache-Control* directive to *no-store*. The *no-store* directive instructs browsers not to cache the web page being viewed by the user, and not to store the web page in the client's cache folder.
+
+**What about role-based security, sharing reports or dashboards, and data connections? How does that work in terms of data access, dashboard viewing, report access or refresh?**
+
+* For **non-Role Level Security (RLS)** enabled data sources, if a dashboard, report, or data model is shared with other users through Power BI, the data is then available for users with whom it is shared to view and interact with. Power BI *does not* re-authenticate users against the original source of the data; once data is uploaded into Power BI, the user who authenticated against the source data is responsible for managing which other users and groups can view the data.
+
+  When data connections are made to an **RLS** -capable data source, such as an Analysis Services data source, only dashboard data is cached in Power BI. Each time a report or dataset is viewed or accessed in Power BI that uses data from the RLS-capable data source, the Power BI service accesses the data source to get data based on the user's credentials, and if sufficient permissions exist, the data is loaded into the report or data model for that user. If authentication fails, the user will see an error.
+
+  For more information, see the **User Authentication to Data Sources [WHICH SECTION IN THE CURRENT DOCUMENT??]** section earlier in this document.
+
+**Our users connect to the same data sources all the time, some of which require credentials that differ from their domain credentials. How can they avoid having to input these credentials each time they make a data connection?**
+
+* Power BI offers the [Power BI Personal Gateway](https://support.powerbi.com/knowledgebase/articles/649846), which is a feature that lets users create credentials for multiple different data sources, then automatically use those credentials when subsequently accessing each of those data sources. For more information, see [Power BI Personal Gateway](https://support.powerbi.com/knowledgebase/articles/649846).
+
+**Which ports are used by on-premises data gateway and personal gateway? Are there any domain names that need to be allowed for connectivity purposes?**
+
+* The detailed answer to this question is available at the following link: [Gateway ports](/data-integration/gateway/service-gateway-communication#ports)**[BROKEN LINK]**
+
+**When working with the on-premises data gateway, how are recovery keys used and where are they stored? What about secure credential management?**
+
+* During gateway installation and configuration, the administrator types in a gateway **Recovery Key**. That **Recovery Key** is used to generate a strong **AES** symmetric key. An **RSA** asymmetric key is also created at the same time.
+
+    Those generated keys (**RSA** and **AES**) are stored in a file located on the local machine. That file is also encrypted. The contents of the file can only be decrypted by that particular Windows machine, and only by that particular gateway service account.
+
+    When a user enters data source credentials in the Power BI service UI, the credentials are encrypted with the public key in the browser. The gateway decrypts the credentials using the RSA private key and re-encrypts them with an AES symmetric key before the data is stored in the Power BI service. With this process, the Power BI service never has access to the unencrypted data.
+
++++++
+
++++++
+
+**Which communication protocols are used by the on-premises data gateway, and how are they secured?**
+
+* The gateway supports the following two communications protocols:
+
+  - **AMQP 1.0 – TCP + TLS**: This protocol requires ports 443, 5671-5672, and 9350-9354 to be open for outgoing communication. This protocol is preferred, since it has lower communication overhead.
+
+  - **HTTPS – WebSockets over HTTPS + TLS**: This protocol uses port 443 only. The WebSocket is initiated by a single HTTP CONNECT message. Once the channel is established, the communication is essentially TCP+TLS. You can force the gateway to use this protocol by modifying a setting described in the [on-premises gateway article](/data-integration/gateway/service-gateway-communication#force-https-communication-with-azure-service-bus).
+
+**What is the role of Azure CDN in Power BI?**
+
+* As mentioned previously, Power BI uses the **Azure Content Delivery Network (CDN)** to efficiently distribute the necessary static content and files to users based on geographical locale. To go into further detail, the Power BI service uses multiple **CDNs** to efficiently distribute necessary static content and files to users through the public Internet. These static files include product downloads (such as **Power BI Desktop**, the **on-premises data gateway**, or Power BI apps from various independent service providers), browser configuration files used to initiate and establish any subsequent connections with the Power BI service, as well as the initial secure Power BI login page.
+
+  Based on information provided during an initial connection to the Power BI service, a user's browser contacts the specified Azure **CDN** (or for some files, the **WFE**) to download the collection of specified common files necessary to enable the browser's interaction with the Power BI service. The browser page then includes the AAD token, session information, the location of the associated **Back-End** cluster, and the collection of files downloaded from the Azure **CDN** and **WFE** cluster, for the duration of the Power BI service browser session.
+
+**For Power BI visuals, does Microsoft perform any security or privacy assessment of the custom visual code prior to publishing items to the Gallery?**
+
+* No. It is the customer's responsibility to review and determine whether custom visual code should be relied upon. All custom visual code is operated in a sandbox environment, so that any errant code in a custom visual does not adversely affect the rest of the Power BI service.
+
+**Are there other Power BI visuals that send information outside the customer network?**
+
+* Yes. Bing Maps and ESRI visuals transmit data out of the Power BI service for visuals that use those services.
+
+**For Template Apps, does Microsoft perform any security or privacy assessment of the Template app prior to publishing items to the Gallery?**
+* No. The app publisher is responsible for the content while the customer's responsibility to review and determine whether to trust the Template app publisher. 
+
+**Are there Template apps that can send information outside the customer network?**
+* Yes. It is the customer's responsibility to review the publisher's privacy policy and determine whether to install the Template app on Tenant. Furthermore, the publisher is responsible to notify of the app's behavior and capabilities.
+
+**What about data sovereignty? Can we provision tenants in data centers located in specific geographies, to ensure data doesn't leave the country borders?**
+
+* Some customers in certain geographies have an option to create a tenant in a national cloud, where data storage and processing is kept separate from all other datacenters. National clouds have a slightly different type of security, since a separate data trustee operates the national cloud Power BI service on behalf of Microsoft.
+
+  Alternatively customers can also set up a tenant in a specific region, however, such tenants do not have a separate data trustee from Microsoft. Pricing for national clouds is different from the generally available commercial Power BI service. For more information about Power BI service availability for national clouds, see [Power BI national clouds](https://powerbi.microsoft.com/clouds/).
+
+**How does Microsoft treat connections for customers who have Power BI Premium subscriptions? Are those connections different than those established for the non-Premium Power BI service?**
+
+* The connections established for customers with Power BI Premium subscriptions implement an [Azure Business-to-Business (B2B)](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) authorization process, using Azure Active Directory (AD) to enable access control and authorization. Power BI handles connections from Power BI Premium subscribers to Power BI Premium resources just as it would any other Azure AD user.
+
+
 
 +++++++
 
