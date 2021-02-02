@@ -237,14 +237,46 @@ If a data source is connected directly using pre-configured credential, the pre-
 
 If the data source is Azure Analysis Services or on-premises Analysis Services and Row Level Security (RLS) is configured, Power BI service will apply that row level security, and users who do not have sufficient credentials to access the underlying data (which could be a query used in a dashboard, report, or other data artifact) will not see data for which the user does not have sufficient privileges.
 
+## Premium Features
 
-Gen 1
+### Dataflows Architecture
+
+Dataflows provide users the capability to configure backend data processing operations that will extract data from polymorphous data sources, execute transformation logic against the data, and then land it in a target model for use across various reporting presentation technologies. Any user who has either the member or admin role in a workspace may create a dataflow. Users in the reader role may view data processed by the dataflow but may not make changes to its composition. Once a dataflow has been authored, any member or admin of the workspace may schedule refreshes as well as view and edit the dataflow by taking ownership of it.
+
+Each configured data source is bound to a client technology for accessing that data source. The structure of credentials required to access them is formed to match required implementation details of the data source. Transformation logic is applied by power query services while the data is in flight. For premium dataflows, power query services execute in backend nodes. Data may be pulled directly from the cloud sources or through a gateway installed on premises. When pulled directly from a cloud source to the service or to the gateway, the transport uses protection methodology specific to the client technology, if applicable. When data is transferred from the gateway to the cloud service, it is encrypted . See the Data in Process section below.
+
+When customer specified data sources require credentials for access, the owner/creator of the dataflow will provide them during authoring. They are the stored using standard product wide credential storage. See the User Authentication to Data Sources section below. There are various approaches users may configure to optimize data persistence and access. By default, the data is placed in a Power BI owned and protected storage account. Store encryption is enabled on the Blob storage containers to protect the data while it is at rest. See the Data Encryption at Rest section below. Users may, however, configure their own storage account associated with their own Azure subscription. When doing so, Power BI service principal is granted access to that store, so that it may write the data there during refresh. In this case, users are in control of whatever store-based encryption methods they choose to use in their ALDS instance.  Data is always transmitted to blob storage using encryption.
+
+Since performance when accessing storage accounts may be suboptimal for some data, users also have the option to use a Power BI hosted compute engine to increase performance. In this case, data is redundantly stored in a SQL database available for direct query through access by the back end Power BI system. Data is always encrypted on the file system. If the user provides a key for encrypting the data stored in the SQL database, then that key will be used to doubly encrypt it. 
+
+When querying using direct query, the encrypted transport protocol https is used to access to the API. All secondary or indirect use of it is controlled by the same access controls previously described. Since dataflows are always bound to a workspace, access to the data is always gated by the users' role in that workspace. A user must have at least read access to be able to query the data via any means.
+
+When Power BI desktop is used to access data in a dataflow, it must first authenticate the user using Active Directory to determine if the user has sufficient rights to view the data. If so, a SaS key is acquired and used to access storage directly using the encrypted transport protocol https.
+
+The processing of data throughout the pipeline will emit Office 365 auditing events. Some of these events will capture security and privacy-related operations. 
+
+### Paginated Reports
+
+Paginated reports are designed to be printed or shared. They're called paginated because they're formatted to fit well on a page. They display all the data in a table, even if the table spans multiple pages. They're also called pixel perfect because you can control their report page layout exactly.
+
+Paginated reports support rich and powerful expressions written in Microsoft Visual Basic .Net, expressions are widely used throughout Power BI Report Builder paginated reports to retrieve, calculate, display, group, sort, filter, parameterize, and format data.
+
+Expressions are created by the author of the report with access to a broad range of features of the .Net framework, in lieu of this flexibility the processing and execution of paginated reports is performed inside a sandbox.
+
+The paginated report definitions (.rdl) are stored in Power BI, and a user needs to authenticate and authorize in the same way as described in the user authentication section.
+
+The AAD token obtained during the authentication is used to communicate directly from the browser to the Power BI Premium cluster.
+For Premium Gen1, a single sandbox exists per each one of the capacities of the tenant, and is shared for by the workspaces assigned to the capacity.
+
 ![Paginated reports Gen 1](media/whitepaper-powerbi-security/powerbi-security-whitepaper-paginated-reports-gen1.png)
 
+For Premium Gen2 (in preview), an individual and exclusive ephemeral sandbox is created for each one of the renders of a report, providing a higher level of isolation among users.
 
-Gen 2
 ![Paginated reports Gen 2](media/whitepaper-powerbi-security/powerbi-security-whitepaper-paginated-reports-gen2.png)
 
+A paginated report can access a wide set of data sources as part of the rendering of the report, the sandbox doesn't communicate directly with any of the data sources but instead it communicates with the trusted process to request data and then the trusted process appends the required credentials to the connection, in this way the sandbox never has access to any credential or secret. 
+
+In order to support features like Bing maps or calls to Azure Functions, the sandbox does have access to the internet.
 
 +++++++
 
