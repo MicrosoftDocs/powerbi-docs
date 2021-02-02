@@ -87,6 +87,41 @@ The Back End functionality is served by micro-services running on different mach
 * Gateway Service
 * Azure API Management
 
+![The Back-End Cluster](media/whitepaper-powerbi-security/powerbi-security-whitepaper_03.png)
+
+### Power BI Premium Infrastructure
+
+Power BI Premium offers a service for subscribers that require premium Power BI features (for instance, Dataflows, Paginated Reports, AI, etc.). When a customer signs up for a Power BI Premium subscription, the Premium capacity is created through the Azure Resource Manager. 
+
+Power BI Premium capacities are hosted in independent (from regular Power BI Backend – see above) backend clusters. This provides better isolation, resource allocation, supportability, security isolation, and scalability of the Premium offering.
+
+The following diagram illustrates the architecture of Power BI Premium infrastructure:
+
+![Power BI Premium](media/whitepaper-powerbi-security/powerbi-security-whitepaper_05.png)
+
+
+
+
+
+
+
+![Authentication sequence](media/whitepaper-powerbi-security/powerbi-security-whitepaper_08.png)
+
+
+
+
+
+
+
+
+Gen 1
+![Paginated reports Gen 1](media/whitepaper-powerbi-security/powerbi-security-whitepaper-paginated-reports-gen1.png)
+
+
+Gen 2
+![Paginated reports Gen 2](media/whitepaper-powerbi-security/powerbi-security-whitepaper-paginated-reports-gen2.png)
+
+
 +++++++
 
 Power BI uses Azure Active Directory (**AAD**) for account authentication and management. Power BI also uses the **Azure Traffic Manager (ATM)** to direct user traffic to the nearest datacenter, determined by the DNS record of the client attempting to connect, for the authentication process and to download static content and files. Power BI uses the geographically closest WFE to efficiently distribute the necessary static content and files to users, with the exception of Power BI visuals which are delivered using the **Azure Content Delivery Network (CDN)**.
