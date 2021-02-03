@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 02/03/2021
 ---
 
