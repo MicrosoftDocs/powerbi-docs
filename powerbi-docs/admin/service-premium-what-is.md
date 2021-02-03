@@ -235,7 +235,7 @@ From the app's dashboard, you can click a metric cell to open an in-depth report
 To learn more about monitoring capacities, see [Monitoring in the Power BI Admin portal](service-admin-premium-monitor-portal.md) and [Monitoring with the Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capacity.md).
 
 #### Updates for Premium Gen2 (Preview)
-**Premium Gen2** capacities don't use the Metrics app, they use the Capacity Utilization App, which will be made available during the preview. Customers wanting to review their utilization can receieve a copy of their utilization report for the past 7 days by requsting one from customer support. The report will be supplied within 72 hours of the request. The Capacity Utilization App will be launched from your capacity management page in the **Admin portal** for each capacity, and will allow anlayis of 30 days of data and more.
+**Premium Gen2** capacities don't use the Metrics app, they use the Capacity Utilization App, which will be made available during the preview. Customers wanting to review their utilization can receive a copy of their utilization report for the past 7 days by requesting one from customer support. The report will be supplied within 72 hours of the request. The Capacity Utilization App will be launched from your capacity management page in the **Admin portal** for each capacity, and will allow anlayis of 30 days of data and more.
 
 ### Optimizing capacities
 
@@ -326,7 +326,7 @@ To learn more, see [Power BI licensing](service-admin-licensing-organization.md)
 
 ## Analysis Services in Power BI Premium
 
-Under the hood, the enterprise proven Microsoft **Analysis Services Vertipaq engine** powers Power BI Premium workspaces and datasets. Analysis Services provides programmability and client application and tool support through client libraries and APIs that support the open-standard XMLA protocol. By default, Power BI Premium capacity dataset workloads support *read-only* operations from Microsoft and third-party client applications and tools through an **XMLA endpoint**. Capacity admins can also choose to disable or allow *read/write* operations through the endpoint.
+Under the hood, the enterprise proven Microsoft **Analysis Services VertiPaq engine** powers Power BI Premium workspaces and datasets. Analysis Services provides programmability and client application and tool support through client libraries and APIs that support the open-standard XMLA protocol. By default, Power BI Premium capacity dataset workloads support *read-only* operations from Microsoft and third-party client applications and tools through an **XMLA endpoint**. Capacity admins can also choose to disable or allow *read/write* operations through the endpoint.
 
 With read-only access, Microsoft tools like SQL Server Management Studio (SSMS) and SQL Server Profiler, and third-party apps such as DAX Studio and data visualization applications, can connect to and query Premium datasets by using XMLA, DAX, MDX, DMVs, and Trace events. With read/write access, enterprise data modeling tools like Visual Studio with Analysis Services projects extension or the open source Tabular Editor can deploy tabular models as a dataset to a Premium workspace. And with tools like SSMS, admins can use Tabular Model Scripting Language (TMSL) to script metadata changes and advanced data refresh scenarios. 
 
