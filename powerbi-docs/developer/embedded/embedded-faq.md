@@ -1,13 +1,13 @@
 ---
-title: Frequently asked questions about Power BI embedded analytics helping you to enable better embedded BI insights
-description: Browse a list of frequently asked questions and answers about Power BI embedded analytics which enhance customers embedded BI insights.
+title: Frequently asked questions about Power BI embedded analytics
+description: Browse a list of frequently asked questions and answers about Power BI embedded analytics
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/11/2020 
+ms.date: 01/14/2021 
 ---
 
 # Frequently asked questions about Power BI Embedded
@@ -36,6 +36,10 @@ Microsoft developed Power BI Embedded for ISVs wanting to embed visuals into the
 Power BI Premium is capacity geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers. Power BI Premium helps your organization make decisions. Power BI Premium is a SaaS product that allows users to consume content through mobile apps, internally developed apps, or at the Power BI portal.
 
 Power BI Embedded is for ISVs who want to embed visuals into their applications. Power BI Embedded helps your customers make decisions because Power BI Embedded is for application developers, customers of that application can consume content stored on Power BI Embedded capacity, including anyone inside or outside the organization. You can't share Power BI Embedded capacity content through one-click publish to Web or one-click publish to SharePoint.
+
+### What is Power BI Embedded Generation 2?
+
+Power BI Embedded recently released a new version, called **Embedded Gen2**. Embedded Gen2 will simplify the management of embedded capacities, and improve the Power BI Embedded experience. For more information, see [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md).
 
 ### What is the Microsoft recommendation for when a customer should buy Power BI Premium vs. Power BI Embedded?
 

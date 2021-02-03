@@ -3836,11 +3836,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/developer/embedded/power-bi-embedded-generation-2.md",
-            "redirect_url": "/power-bi/admin/service-premium-what-is",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "powerbi-docs/developer/embedded/azure-pbie-diag-logs.md",
             "redirect_url": "/power-bi/developer/embedded/monitor-power-bi-embedded",
             "redirect_document_id": false
