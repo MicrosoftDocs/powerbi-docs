@@ -30,9 +30,9 @@ LocalizationGroup: Conceptual
 
 The world is rapidly changing; organizations are going through an accelerated digital transformation, and we are seeing a massive increase in remote working, increased customer demand for online services, and increased use of advanced technologies in operations and business decision-making. And all of this is powered by the cloud.
 
-As the transition to the cloud has changed from a trickle to a flood, and with the new, exposed surface area that comes with it, more and more companies are asking *how secure is my data in the cloud?* and *what end-to protection is available to prevent my sensitive data from leaking?* And for the BI platforms that often handle some of the most strategic information in the enterprise, these questions are doubly important.
+As the transition to the cloud has changed from a trickle to a flood, and with the new, exposed surface area that comes with it, more and more companies are asking *How secure is my data in the cloud?* and *What end-to protection is available to prevent my sensitive data from leaking?* And for the BI platforms that often handle some of the most strategic information in the enterprise, these questions are doubly important.
 
-The decades-old foundation of the BI security model - object-level and row-level security - while still important, are clearly no longer sufficient for providing the kind of security that is needed in the cloud era. Instead, organizations must look for a cloud-native, multi-tiered, defense-in-depth security solution for their business intelligence data.
+The decades-old foundations of the BI security model - object-level and row-level security - while still important, clearly no longer suffice for providing the kind of security needed in the cloud era. Instead, organizations must look for a cloud-native, multi-tiered, defense-in-depth security solution for their business intelligence data.
 
 Power BI was built to provide industry-leading complete and hermetic protection for data. The product has earned the highest security classifications available in the industry, and today many national security agencies, financial institutions, and health care providers entrust it with their most sensitive information.
 
@@ -40,13 +40,13 @@ It all starts with the foundation. After a rough period in the early 2000s, Micr
 
 Power BI builds on this very strong foundation. It uses the same security stack that earned Azure the right to serve and protect the world’s most sensitive data, and it integrates with the most advanced information protection and compliance tools of Microsoft 365. On top of these, it delivers security through multi-layered security measures, resulting in end-to-end protection designed to deal with the unique challenges of the cloud.
 
-+++++++
+To provide an end-to-end solution to protect sensitive assets, the product team needed to address challenging customer concerns on multiple simultaneous fronts:
+* *How do we control who can connect, where they can connect from, and how they can connect? How we can control the connections?*
+* *How is the data stored?* *How is it encrypted?* *What controls do I have on my data?*
+* *How can I control and protect my sensitive data?* *How do I ensure this data cannot leak outside the organization?* 
+* *How do I audit who conducts what operations?* *How do I react quickly if there's suspicious activity on the service?*
 
-To provide an end-to-end solution to protect sensitive assets, the product team needed to address challenges on multiple simultaneous fronts: “How we control who connects? From where they can connect? How they connect and how we can control connections?” it continues to “how is the data stored? How is it encrypted? What controls do I have on my data?” Moreover, “How can I control and protect sensitive data? How do I ensure this data cannot leak outside the organization?” and ends with, “How do I audit who conducts what operations? How do I react quickly in case of suspicious activity within the service?”.
-
-+++++++
-
-This article provides a comprehensive answer to all these questions. It starts with an overview of the service architecture and explains how the main flows in the system work. It then moves on to describe how users authenticate to Power BI, how data connections are established, and how Power BI stores and moves data through the service. The last section discusses the security features that allow you as the service admin to protect your most valuable assets.
+This article provides a comprehensive answer to all these questions. It starts with an overview of the service architecture and explains how the main flows in the system work. It then moves on to describe how users authenticate to Power BI, how data connections are established, and how Power BI stores and moves data through the service. The last section discusses the security features that allow you, as the service admin, to protect your most valuable assets.
 
 The Power BI service is governed by the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) **[link in word doc: https://www.microsoft.com/en-us/licensing/product-licensing/products]**, and the [Microsoft Enterprise Privacy Statement](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). For the location of data processing, refer to the Location of Data Processing terms in the Microsoft Online Services Terms and to the Data Protection Addendum **[where is this??]**. For compliance information, the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview) **[docx has https://www.microsoft.com/trustcenter]** is the primary resource for Power BI. The Power BI team is working hard to bring its customers the latest innovations and productivity. Learn more about compliance in the [Microsoft compliance offerings](/compliance/regulatory/offering-home).
 
@@ -357,7 +357,7 @@ When sensitivity labels are enabled in Power BI:
 
 See [MIP sensitivity labels documentation in Power BI](../admin/service-security-sensitivity-label-overview.md) for additional details.
 
-## Microsoft Cloud App Security (MCAS) for Power BI
+### Microsoft Cloud App Security (MCAS) for Power BI
 
 Microsoft Cloud App Security is one of the world's leading cloud access security brokers, named as leader in Gartner's Magic Quadrant for Cloud Access Security Broker (CASB) market. Cloud app security is used to secure the use of cloud apps. It enables organizations to monitor and control, in real time, risky Power BI sessions such as user access from unmanaged devices. Security administrators can define policies to control user actions, such as downloading reports with sensitive information.
 
