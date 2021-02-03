@@ -82,7 +82,7 @@ Each Back End cluster consists of multiple virtual machines combined into multip
 
 Tenant metadata and data are stored within cluster limits except for data replication to a secondary Back End cluster in a paired Azure region in the same Azure geography. The secondary Back End cluster serves as a failover cluster in case of regional outage, and is passive at any other time.
 
-Back End functionality is served by micro-services running on different machines within the cluster’s virtual network that are not accessible from outside, except for two components that can be accessed from the public internet:
+Back End functionality is served by micro-services running on different machines within the cluster’s virtual network that are not accessible from the outside, except for two components that can be accessed from the public internet:
 * Gateway Service
 * Azure API Management
 
