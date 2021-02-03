@@ -21,6 +21,8 @@ BYOK makes it easier to meet compliance requirements that specify key arrangemen
 
 > [!IMPORTANT]
 > Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Preview Gen2 capacities do **not** support BYOK while in preview.
+>
+>**Embedded Gen2** capacities also do **not** support BYOK while in preview. To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).
 
 ## Data source and storage considerations
 
