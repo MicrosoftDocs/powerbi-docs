@@ -285,6 +285,7 @@ additionalContent:
         - title: Power BI embedded analytics client APIs
           summary: A client-side library for embedding Power BI using JavaScript or TypeScript.
           url: /javascript/api/overview/powerbi/
+  sections:
     - title: Other Microsoft Power Platform products # < 60 chars (optional)
     - items:
         # Card
