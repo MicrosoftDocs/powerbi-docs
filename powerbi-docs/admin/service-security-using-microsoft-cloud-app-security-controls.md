@@ -59,7 +59,7 @@ You can read the article on [sensitivity labels in Power BI](service-security-se
 
 ## Custom policies to alert on suspicious user activity in Power BI
 
-Cloud App Security activity policy enables administrators to define their own custom rules, to help detect user behavior that deviates from the norm, and even possibly act upon it automatically, if it seems too dangerous. For example:
+Cloud App Security activity policies enable administrators to define their own custom rules to help detect user behavior that deviates from the norm, and even possibly act upon it automatically, if it seems too dangerous. For example:
 
 * **Massive sensitivity label removal.** For example: alert me when sensitivity labels are removed by a single user from 20 different reports in a time window shorter than 5 minutes.
 
