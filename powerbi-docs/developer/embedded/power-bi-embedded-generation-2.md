@@ -6,8 +6,8 @@ ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: tutorial
-ms.date: 01/14/2021
+ms.topic: conceptual
+ms.date: 02/03/2021
 ---
 
 # Power BI Embedded Generation 2 (preview)
@@ -47,7 +47,7 @@ Create an Embedded Gen2 capacity resource to take advantage of its updates. To c
 
 ## Known limitations
 
-* Embedded Gen2 capacity utilization can't be tracked in the [metrics app](../../admin/service-admin-premium-monitor-capacity.md). For more information, see [Premium Gen2 monitor updates](../../admin/service-premium-what-is.md#updates-for-premium-gen2-preview-3).
+* Embedded Gen2 capacity utilization can't be tracked in the [metrics app](../../admin/service-admin-premium-monitor-capacity.md). For more information, see [Premium Gen2 monitor updates](../../admin/service-premium-what-is.md#updates-for-premium-gen2-preview-2).
 
 * Memory allocation settings for specific workloads don't apply to Embedded Gen2 capacities. For more information, see [Embedded Gen 2 memory enhancements](embedded-capacity.md#embedded-gen-2-memory-enhancements-preview)
 
