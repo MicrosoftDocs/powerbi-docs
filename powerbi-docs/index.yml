@@ -274,7 +274,7 @@ additionalContent:
   # Supports up to 3 sections
   sections:
     - title: Related tools # < 60 chars (optional)
-    - items:
+      items:
         # Card
         - title: Power BI Report Server
           summary: Explore Power BI Report Server, an on-premises report server with a web portal in which you display and manage Power BI reports, paginated reports, and KPIs.
@@ -286,7 +286,7 @@ additionalContent:
           summary: A client-side library for embedding Power BI using JavaScript or TypeScript.
           url: /javascript/api/overview/powerbi/
     - title: Other Microsoft Power Platform products # < 60 chars (optional)
-    - items:
+      items:
         # Card
         - title: Power Apps
           summary: Quickly build low-code apps that modernize precesses and solve tough business challenges in your organization.
