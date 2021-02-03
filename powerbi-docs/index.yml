@@ -15,7 +15,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 12/16/2020 #Required; mm/dd/yyyy format.
+  ms.date: 02/03/2021 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -31,9 +31,9 @@ highlightedContent:
       itemType: overview
       url: /javascript/api/overview/powerbi/
     # Card
-    - title: Consume Azure Machine Learning models in Power BI
-      itemType: tutorial
-      url: connect-data/service-aml-integrate.md
+    - title: Datasets discovery using the datasets hub (Preview)
+      itemType: concept
+      url: connect-data/service-datasets-hub.md
     # Card
     - title: Power BI on Microsoft Learn 
       itemType: learn
