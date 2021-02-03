@@ -283,14 +283,13 @@ additionalContent:
           summary: The Power BI REST APIs provide service endpoints for embedding, administration, and user resources.
           url: /rest/api/power-bi/
         - title: Power BI embedded analytics client APIs
-          summary: A client side library for embedding Power BI using JavaScript or TypeScript.
+          summary: A client-side library for embedding Power BI using JavaScript or TypeScript.
           url: /javascript/api/overview/powerbi/
-  sections:
     - title: Other Microsoft Power Platform products # < 60 chars (optional)
     - items:
         # Card
         - title: Power Apps
-          summary: Quickly build low-code apps that modernize precesses and solve tough business chanllenges in your organization.
+          summary: Quickly build low-code apps that modernize precesses and solve tough business challenges in your organization.
           url: /powerapps/
         - title: Power Automate
           summary: Create automated workflows between your favorite apps and services to synchronize files, get notifications, and more.
