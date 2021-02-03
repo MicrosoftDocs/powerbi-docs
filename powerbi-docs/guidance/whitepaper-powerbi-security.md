@@ -41,7 +41,7 @@ It all starts with the foundation. After a rough period in the early 2000s, Micr
 Power BI builds on this very strong foundation. It uses the same security stack that earned Azure the right to serve and protect the world’s most sensitive data, and it integrates with the most advanced information protection and compliance tools of Microsoft 365. On top of these, it delivers security through multi-layered security measures, resulting in end-to-end protection designed to deal with the unique challenges of the cloud era.
 
 To provide an end-to-end solution for protecting sensitive assets, the product team needed to address challenging customer concerns on multiple simultaneous fronts:
-* *How do we control who can connect, where they connect from, and how they connect? How we can control the connections?*
+* *How do we control who can connect, where they connect from, and how they connect? How can we control the connections?*
 * *How is the data stored?* *How is it encrypted?* *What controls do I have on my data?*
 * *How do I control and protect my sensitive data?* *How do I ensure this data cannot leak outside the organization?* 
 * *How do I audit who conducts what operations?* *How do I react quickly if there's suspicious activity on the service?*
