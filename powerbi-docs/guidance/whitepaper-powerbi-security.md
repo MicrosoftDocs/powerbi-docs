@@ -386,7 +386,7 @@ The following questions are common security questions and answers for Power BI. 
 
 **How do users connect to, and gain access to data sources while using Power BI?**
 
-* Power BI manages credential to data sources for each user for cloud credentials or for connectivity through personal gateway.  Data sources managed by an on-premises data gateway can be shared across the enterprise and permissions to these data sources could be managed by the Gateway Admin.  When configuring a dataset user is allowed to select a credential from their personal store or use an on-premises data gateway to use a shared credential.
+* Power BI manages credential to data sources for each user for cloud credentials or for connectivity through personal gateway. Data sources managed by an on-premises data gateway can be shared across the enterprise and permissions to these data sources could be managed by the Gateway Admin. When configuring a dataset, the user is allowed to select a credential from their personal store or use an on-premises data gateway to use a shared credential.
 
     In the import case, a user establishes a connection based on the user's login and accesses the data with the credential. After the dataset is published to Power BI service, Power BI always uses this user's credential to import data. Once data is imported, viewing the data in reports and dashboard does not access underly data source. Power BI supports single sign-on authentication for selected data sources. If the connection is configured to use single sign-on, dataset owner’s credential is used to connect with the data source.
 
