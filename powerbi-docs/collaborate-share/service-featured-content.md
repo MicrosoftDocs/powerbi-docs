@@ -7,7 +7,7 @@ ms.reviewer: nikhilga
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 02/03/2021
+ms.date: 02/04/2021
 LocalizationGroup: Share your work
 ---
 # Feature content on colleagues' Power BI Home page
@@ -26,13 +26,13 @@ Your Power BI admin can turn off the ability to feature content on your tenant, 
 
 ## Who sees featured content
 
-You can feature a dashboard or report from a workspace. When you do, the people who have at least a Viewer role in that workspace will see it featured. You can also feature a dashboard or report from an app, or the app itself. In that case, the people you distribute the app to will see it featured.
+When you feature a dashboard or report from a workspace, the people with at least a Viewer role in that workspace will see it featured. You can also feature a dashboard or report from an app, or the app itself. In that case, the people you distribute the app to will see it featured.
 
 ## Feature a dashboard or report
 
 The procedure for featuring either a dashboard or report is similar.
 
-1. In either the **Dashboards** or **Reports** list for a workspace, select the **Settings** icon.
+1. In the **All** or **Content** list for a workspace, select **More options (...)** > **Settings**.
 
     :::image type="content" source="media/service-featured-content/power-bi-settings-icon.png" alt-text="Report Settings icon":::
 
@@ -50,7 +50,13 @@ The procedure for featuring either a dashboard or report is similar.
 
 - To feature an app, open the workspace for the app, select the **Options** menu (**...**) > **Feature this app on Home**.
 
+    :::image type="content" source="media/service-featured-content/power-bi-feature-app-home.png" alt-text="Screenshot of Feature this app on Home.":::
+
 Now everyone who has access to this app will also see it in the **Featured** section on **Home**.
+
+## Considerations
+
+Endorsing an app or a report by promoting it automatically checks the **Feature on Home** checkbox. You can uncheck **Feature on Home** anytime. If you do, changing endorsement doesn't recheck **Feature on Home**. Read more about [promoting your content](service-endorse-content.md#promote-content). 
 
 ## Next steps
 
