@@ -29,8 +29,6 @@ In each of these configurations, row-level security is also supported.
 
 Q&A now supports SQL DirectQuery sources, including SQL Server 2019, Azure SQL Database, and Azure Synapse Analytics. You can use Q&A to ask natural-language questions against these data sources. There's one small change to the behavior of Q&A when it's in DirectQuery mode: After you type your question, you select the **Submit** button. This change prevents overloading the DirectQuery source with unnecessary queries as you type.
 
-Other DirectQuery sources aren't supported for Q&A. We don’t block Q&A altogether if you have other DirectQuery sources in your dataset, but some questions may not be answered correctly or return errors.
-
 ### Data sources not supported
 
 Power BI Q&A currently does not support the following configurations:

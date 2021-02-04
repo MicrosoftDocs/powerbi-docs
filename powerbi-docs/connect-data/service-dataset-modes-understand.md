@@ -75,7 +75,7 @@ There are several advantages associated with DirectQuery models:
 However, there are some limitations associated with DirectQuery models:
 
 - DAX formulas are limited to use only functions that can be transposed to native queries understood by the data source. Calculated tables are not supported.
-- Q&A and Quick Insights features aren't supported
+- Quick Insights features aren't supported
 
 From a Power BI service resource perspective, DirectQuery models require:
 
