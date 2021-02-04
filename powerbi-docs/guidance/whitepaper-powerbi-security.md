@@ -26,7 +26,7 @@ LocalizationGroup: Conceptual
 
 ## Introduction
 
-**Power BI** is an online software service (*SaaS*, or Software as a Service) offering from Microsoft that lets you easily and quickly create self-service Business Intelligence dashboards, reports, datasets, and visualizations. With Power BI, you can connect to many different data sources, combine and shape data from those connections, then create reports and dashboards that can be shared with others.
+Power BI is an online software service (*SaaS*, or Software as a Service) offering from Microsoft that lets you easily and quickly create self-service Business Intelligence dashboards, reports, datasets, and visualizations. With Power BI, you can connect to many different data sources, combine and shape data from those connections, then create reports and dashboards that can be shared with others.
 
 The world is rapidly changing; organizations are going through an accelerated digital transformation, and we are seeing a massive increase in remote working, increased customer demand for online services, and increased use of advanced technologies in operations and business decision-making. And all of this is powered by the cloud.
 
@@ -54,13 +54,13 @@ The Power BI service follows the Security Development Lifecycle (SDL), strict se
 
 ## Power BI Architecture
 
-The **Power BI** service is built on **Azure**, Microsoft's [cloud computing platform](https://azure.microsoft.com/overview/what-is-azure/). Power BI is currently deployed in many datacenters around the world – there are many active deployments made available to customers in the regions served by those datacenters, and an equal number of passive deployments that serve as backups for each active deployment.
+The Power BI service is built on Azure, Microsoft's [cloud computing platform](https://azure.microsoft.com/overview/what-is-azure/). Power BI is currently deployed in many datacenters around the world – there are many active deployments made available to customers in the regions served by those datacenters, and an equal number of passive deployments that serve as backups for each active deployment.
 
 ![The WFE and Back End](media/whitepaper-powerbi-security/powerbi-security-whitepaper_01.png)
 
 ### Web Front End Cluster (WFE)
 
-The **WFE** cluster provides the user's browser with the initial HTML page contents on site load and manages the initial connection and authentication process for Power BI, using Azure Active Directory (Azure AD) to authenticate clients and provide tokens for subsequent client connections to the Power BI Back-End service.
+The WFE cluster provides the user's browser with the initial HTML page contents on site load and manages the initial connection and authentication process for Power BI, using Azure Active Directory (Azure AD) to authenticate clients and provide tokens for subsequent client connections to the Power BI Back-End service.
 
 ![The WEF Cluster](media/whitepaper-powerbi-security/powerbi-security-whitepaper_02.png)
 
@@ -90,35 +90,35 @@ Back End functionality is served by micro-services running on different machines
 
 ### Power BI Premium Infrastructure
 
-Power BI Premium offers a service for subscribers that require premium Power BI features (for instance, Dataflows, Paginated Reports, AI, etc.). When a customer signs up for a Power BI Premium subscription, the Premium capacity is created through the Azure Resource Manager. 
+Power BI Premium offers a service for subscribers who require premium Power BI features, such as Dataflows, Paginated Reports, AI, etc. When a customer signs up for a Power BI Premium subscription, the Premium capacity is created through the Azure Resource Manager. 
 
-Power BI Premium capacities are hosted in independent (from regular Power BI Backend – see above) backend clusters. This provides better isolation, resource allocation, supportability, security isolation, and scalability of the Premium offering.
+Power BI Premium capacities are hosted in back end clusters that are independent of the regular Power BI Back End – see above). This provides better isolation, resource allocation, supportability, security isolation, and scalability of the Premium offering.
 
-The following diagram illustrates the architecture of Power BI Premium infrastructure:
+The following diagram illustrates the architecture of the Power BI Premium infrastructure:
 
 ![Power BI Premium](media/whitepaper-powerbi-security/powerbi-security-whitepaper_05.png)
 
-The connection to Power BI Premium infrastructure can be done in multiple ways, depending on the user scenario. Power BI Premium clients can be a user's browser, a regular Power BI Backend, direct connections via XMLA clients, ARM APIs, etc.
+The connection to the Power BI Premium infrastructure can be done in a number of ways, depending on the user scenario. Power BI Premium clients can be a user's browser, a regular Power BI Back End, direct connections via XMLA clients, ARM APIs, etc.
 
-Power BI Premium infrastructure in an Azure region consists of multiple Power BI Premium clusters (minimum 1). The majority of the Premium resources are incapsulated inside a cluster (for instance, compute), and there are some common regional resources (e.g. Metadata store). Premium infrastructure allows two ways of horizontal scalability in a region: increase resources inside clusters, and/or add more clusters on demand as needed (if cluster resources are approaching their limits).
+The Power BI Premium infrastructure in an Azure region consists of multiple Power BI Premium clusters (the minimum is one). The majority of the Premium resources are encapsulated inside a cluster (for instance, compute), and there are some common regional resources (e.g. metadata store). Premium infrastructure allows two ways of achieving horizontal scalability in a region: increasing resources inside clusters and/or adding more clusters on demand as needed (if cluster resources are approaching their limits).
 
-The backbone of each cluster are compute resources managed by VMSS and Service Fabric. VMSS and Service Fabric allows fast and painless increase of compute nodes as usage growth and orchestrates Power BI Premium services and applications deployment, management and monitoring. 
+The backbone of each cluster are compute resources managed by [Virtual Machine Scale Sets (VMSS)](/azure/virtual-machine-scale-sets/overview) and [Azure Service Fabric](/azure/service-fabric/service-fabric-overview). VMSS and Service Fabric allow fast and painless increase of compute nodes as usage grows and orchestrates the deployment, management, and monitoring of Power BI Premium services and applications. 
 
-There are many surrounding resources which ensure secure and reliable infrastructure: load balancers, virtual networks, network security groups, service bus, storage, etc. Any secrets, keys, certificates required for Power BI Premium are managed by Azure Key Vault exclusively. Any authentication is done via integration with Azure Active Directory exclusively.
+There are many surrounding resources which ensure a secure and reliable infrastructure: load balancers, virtual networks, network security groups, service bus, storage, etc. Any secrets, keys, and certificates required for Power BI Premium are managed by [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/general/basic-concepts) exclusively. Any authentication is done via integration with Azure AD exclusively.
 
-Any request that comes to Power BI Premium infrastructure goes to Frontend nodes first – they are the only nodes available for external connections, the rest of the resources are hidden behind virtual networks. Frontend nodes authenticate the request, handle it or forward it to the appropriate resources (e.g. backend nodes).
+Any request that comes to Power BI Premium infrastructure goes to front end nodes first – they are the only nodes available for external connections. The rest of the resources are hidden behind virtual networks. The front end nodes authenticate the request, handle it, or forward it to the appropriate resources (e.g. back end nodes).
 
-Backend nodes provide most of the Power BI Premium capabilities and features.
+Back end nodes provide most of the Power BI Premium capabilities and features.
 
-### Power BI Mobile   
+### Power BI Mobile
 
-Power BI Mobile is a collection of apps designed for the three primary mobile platforms: Android, iOS, and Windows (UWP). Security considerations for Power BI Mobile apps fall into two categories:
+Power BI Mobile is a collection of apps designed for the three primary mobile platforms: Android, iOS, and Windows (UWP). Security considerations for the Power BI Mobile apps fall into two categories:
 * Device communication
 * The application and data on the device
 
-For device communication, all Power BI Mobile applications communicate with the Power BI service, and use the same connection and authentication sequences used by browsers, which are described in detail earlier in this whitepaper. The iOS and Android Power BI mobile applications bring up a browser session within the application itself, and the Windows mobile app brings up a broker to establish the communication channel with Power BI (for the sign in process).
+For device communication, all Power BI Mobile applications communicate with the Power BI service, and use the same connection and authentication sequences used by browsers, which are described in detail earlier in this whitepaper. The Power BI mobile applications for iOS and Android bring up a browser session within the application itself, while the Windows mobile app brings up a broker to establish the communication channel with Power BI (for the sign-in process).
 
-The following table lists support of certificate-based authentication (CBA) for Power BI Mobile based on mobile device platform:
+The following table shows certificate-based authentication (CBA) support for Power BI Mobile, based on mobile device platform:
 
 
 |CBA support  |iOS  |Android  |Windows  |
@@ -130,25 +130,23 @@ The following table lists support of certificate-based authentication (CBA) for 
 Power BI Mobile apps actively communicate with the Power BI service. Telemetry is used to gather mobile app usage statistics and similar data, which is transmitted to services that are used to monitor usage and activity; no customer data is sent with telemetry.
 
 The Power BI application stores data on the device that facilitates use of the app:
-* Azure Active Directory and refresh tokens are stored in a secure mechanism on the device, using industry standard security measures.
-* Data and settings (key-value pairs for user configuration) is cached in storage on the device, and can be encrypted by the OS (in iOS this is automatically done when the user sets passcode, in Android this can be configured in the setting and in Windows by using bit-locker)
-* For the Android and iOS apps the data and settings (key-value pairs for user configuration) are cached in a storage on the device in a sandbox and internal storage which is accessible only to the app. For the Windows app the data is only accessible by the user (and system admin).
-* Geolocation are enabled or disabled explicitly by the user. If enabled, the geolocation data is not saved on the device and it is not shared with Microsoft.
+* Azure AD and refresh tokens are stored in a secure mechanism on the device, using industry-standard security measures.
+* Data and settings (key-value pairs for user configuration) is cached in storage on the device, and can be encrypted by the OS. In iOS this is automatically done when the user sets a passcode. In Android this can be configured in the settings. In Windows it is accomplished by using bit-locker.
+* For the Android and iOS apps, the data and settings (key-value pairs for user configuration) are cached in storage on the device in a sandbox and internal storage which is accessible only to the app. For the Windows app, the data is only accessible by the user (and system admin).
+* Geolocation is enabled or disabled explicitly by the user. If enabled, geolocation data is not saved on the device and is not shared with Microsoft.
 * Notifications are enabled or disabled explicitly by the user. If enabled, Android and iOS do not support geo-residency for notifications.
 
-Data encryption can be enhanced by applying file-level encryption via Microsoft Intune.
+Data encryption can be enhanced by applying file-level encryption via Microsoft Intune, a software service that provides mobile device and application management. All three platforms for which Power BI Mobile is available support Intune. With Intune enabled and configured, data on the mobile device is encrypted, and the Power BI application itself cannot be installed on an SD card. [Learn more about Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
 
-All three platforms for which Power BI Mobile is available support Microsoft Intune, a software service that provides mobile device and application management. With Intune enabled and configured, data on the mobile device is encrypted, and the Power BI application itself cannot be installed on an SD card. You can [learn more about Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
+The Windows app also supports [Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).
 
-The Windows app also supports WIP - [learn more about it](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).
+In order to implement SSO, some secured storage values related to the token-based authentication are available for other Microsoft 1st party apps (such as Microsoft Authenticator) and are managed by the Azure Active Directory Authentication Library (ADAL) SDK.  
 
-In order to implement SSO - some secured storage values related to the token-based authentication are available for other Microsoft 1st party apps (like Microsoft Authenticator) and are managed by the ADAL SDK.  
-
-The Power BI Mobile cached data is deleted when the app is removed; the user signs out of Power BI Mobile; or the user fails to sign in (such as a token expiration event, or password change). The data cache includes dashboards and reports previously accessed from the Power BI Mobile app.
+Power BI Mobile cached data is deleted when the app is removed, when the user signs out of Power BI Mobile, or when the user fails to sign in (such as after a token expiration event or password change). The data cache includes dashboards and reports previously accessed from the Power BI Mobile app.
 
 Power BI Mobile does not access other applications folders or files on the device.
 
-The Power BI apps for iOS and Android let you protect your data by configuring additional identification - providing Face ID, Touch ID, or a passcode for iOS and biometric data (Fingerprint ID) for Android. [Learn more about it](../consumer/mobile/mobile-native-secure-access.md).
+The Power BI apps for iOS and Android let you protect your data by configuring additional identification, such as providing Face ID, Touch ID, or a passcode for iOS, and biometric data (Fingerprint ID) for Android. [Learn more about additional identification](../consumer/mobile/mobile-native-secure-access.md).
 
 ## Authentication to the Power BI Service
 
