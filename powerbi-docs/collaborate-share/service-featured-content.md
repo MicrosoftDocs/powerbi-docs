@@ -14,19 +14,19 @@ LocalizationGroup: Share your work
 
 [!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)]
 
-You can feature dashboards, reports, and apps so they appear in the Featured section of your colleagues' Power BI Home page. Featuring content is especially useful for onboarding new employees to Power BI. You decide which content they see first. Add descriptions and small thumbnail images to help users find what they need. The content has to be in a new workspace.
+You can feature dashboards, reports, and apps so they appear in the Featured section of your colleagues' Power BI Home page. Featuring content is especially useful for onboarding new employees to Power BI. You decide which content they see first. Add descriptions and small thumbnail images to help them find what they need. The content has to be in a new workspace.
 
 :::image type="content" source="media/service-featured-content/power-bi-featured-home.png" alt-text="Power BI Featured content on Home":::
 
 ## Who can feature content
 
-To feature dashboards and reports, you need the Admin, Member, or Contributor role in a workspace. To feature the app itself, you need to have the Admin or Member role in a workspace. See [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces) for details. You do need to have a Power BI Pro license. 
+To feature dashboards and reports, you need to have the Admin, Member, or Contributor role in a workspace. To feature the app itself, you need to have the Admin or Member role in a workspace. See [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces) for details. You do need to have a Power BI Pro license. 
 
 Your Power BI admin can turn off the ability to feature content on your tenant, and choose who can feature content. See the [admin portal](../admin/service-admin-portal.md#featured-content) article for details.
 
 ## Who sees featured content
 
-When you feature a dashboard or report from a workspace, the people with at least a Viewer role in that workspace will see it featured. You can also feature a dashboard or report from an app, or the app itself. In that case, the people you distribute the app to will see it featured.
+When you feature a dashboard or report from a workspace, people with at least a Viewer role in that workspace will see it featured. You can also feature a dashboard or report from an app, or the app itself. In that case, the people you distribute the app to will see it featured.
 
 ## Feature a dashboard or report
 
@@ -38,7 +38,7 @@ The procedure for featuring either a dashboard or report is similar.
 
 2. In the **Settings** pane, check or change the name. Add a **Description** and upload a **Snapshot**, if you want them. They're useful because they help your users find your content.
 
-3. Select **Featured**.
+3. Select **Feature on Home**.
 
     :::image type="content" source="media/service-featured-content/power-bi-featured-content-settings.png" alt-text="Featured content settings":::
 
