@@ -257,34 +257,35 @@ The processing of data throughout the pipeline emits Office 365 auditing events.
 
 Paginated reports are designed to be printed or shared. They're called paginated because they're formatted to fit well on a page. They display all the data in a table, even if the table spans multiple pages. They're also called pixel perfect because you can control their report page layout exactly.
 
-Paginated reports support rich and powerful expressions written in Microsoft Visual Basic .Net, expressions are widely used throughout Power BI Report Builder paginated reports to retrieve, calculate, display, group, sort, filter, parameterize, and format data.
+Paginated reports support rich and powerful expressions written in Microsoft Visual Basic .Net. Expressions are widely used throughout Power BI Report Builder paginated reports to retrieve, calculate, display, group, sort, filter, parameterize, and format data.
 
-Expressions are created by the author of the report with access to a broad range of features of the .Net framework, in lieu of this flexibility the processing and execution of paginated reports is performed inside a sandbox.
+Expressions are created by the author of the report with access to the broad range of features of the .Net framework, in lieu of this flexibility, the processing and execution of paginated reports is performed inside a sandbox.
 
-The paginated report definitions (.rdl) are stored in Power BI, and a user needs to authenticate and authorize in the same way as described in the user authentication section.
+Paginated report definitions (.rdl) are stored in Power BI, and a user needs to authenticate and authorize in the same way as described in the user authentication section.
 
-The AAD token obtained during the authentication is used to communicate directly from the browser to the Power BI Premium cluster.
-For Premium Gen1, a single sandbox exists per each one of the capacities of the tenant, and is shared for by the workspaces assigned to the capacity.
+The Azure AD token obtained during the authentication is used to communicate directly from the browser to the Power BI Premium cluster.
+
+For Premium Gen1, a single sandbox exists per each one of the capacities of the tenant, and is shared by the workspaces assigned to the capacity.
 
 ![Paginated reports Gen 1](media/whitepaper-powerbi-security/powerbi-security-whitepaper-paginated-reports-gen1.png)
 
-For Premium Gen2 (in preview), an individual and exclusive ephemeral sandbox is created for each one of the renders of a report, providing a higher level of isolation among users.
+For Premium Gen2 (in preview), an individual and exclusive ephemeral sandbox is created for each one of the renders of a report, providing a higher level of isolation between users.
 
 ![Paginated reports Gen 2](media/whitepaper-powerbi-security/powerbi-security-whitepaper-paginated-reports-gen2.png)
 
-A paginated report can access a wide set of data sources as part of the rendering of the report, the sandbox doesn't communicate directly with any of the data sources but instead it communicates with the trusted process to request data and then the trusted process appends the required credentials to the connection, in this way the sandbox never has access to any credential or secret. 
+A paginated report can access a wide set of data sources as part of the rendering of the report. The sandbox doesn't communicate directly with any of the data sources but instead communicates with the trusted process to request data, and then the trusted process appends the required credentials to the connection. In this way the sandbox never has access to any credential or secret. 
 
-In order to support features like Bing maps or calls to Azure Functions, the sandbox does have access to the internet.
+In order to support features such as Bing maps, or calls to Azure Functions, the sandbox does have access to the internet.
 
 ### AI Features
 
-PowerBI currently supports two broad categories of AI features in the product today: AI visuals and AI enrichments. The visual level AI features include capabilities like Key-Influencers, Decomposition-Tree, Smart-Narrative, Anomaly-Detection, R-visual, Python-visual, Clustering, Forecasting, Q&A, Quick-Insights etc. The AI enrichment capabilities include capabilities like AutoML, AzureML, CognitiveServices, R/Python transforms etc. 
+Power BI currently supports two broad categories of AI features in the product today: AI visuals and AI enrichments. The visual-level AI features include capabilities such as Key-Influencers, Decomposition-Tree, Smart-Narrative, Anomaly-Detection, R-visual, Python-visual, Clustering, Forecasting, Q&A, Quick-Insights etc. The AI enrichment capabilities include capabilities such as AutoML, AzureML, CognitiveServices, R/Python transforms etc. 
 
-Most of the above features are supported in both Shared and Premium workspaces today. However, AutoML and CognitiveServices are supported only on premium workspaces due to some IP restrictions. Today, with AutoML integration in PowerBI, a user can build and train a custom ML model (e.g. Prediction, Classification, Regression etc) and apply it to get predictions while loading data into a dataflow defined in a premium workspace. Additionally, PowerBI users can apply several CognitiveServices APIs like TextAnalytics & ImageTagging to transform data before loading into a Dataflow/Dataset defined in a premium workspace. 
+Most of the features mentioned above are supported in both Shared and Premium workspaces today. However, AutoML and CognitiveServices are supported only in Premium workspaces, due to IP restrictions. Today, with the AutoML integration in Power BI, a user can build and train a custom ML model (e.g. Prediction, Classification, Regression, etc.) and apply it to get predictions while loading data into a dataflow defined in a Premium workspace. Additionally, Power BI users can apply several CognitiveServices APIs, such as TextAnalytics and ImageTagging, to transform data before loading it into a dataflow/dataset defined in a Premium workspace. 
 
-The Premium AI enrichment features can be best viewed as a collection of stateless AI functions/transforms that can be used by PowerBI users in their data integration pipelines used by a PowerBI dataset or dataflow. Note that these functions can also be accessed from current dataflow/dataset authoring environments in PowerBI Service and PowerBI Desktop. These AI functions/transforms always run in aa premium workspace/capacity. Hence, these functions are surfaced using in PowerBI as a Datasource that requires an AAD Token for the PowerBI user who is using the AI function. These AI Datasources are special because they do not surface any of their own data and they only supply these functions/transforms. During execution, these features do not make any outbound calls to other services to transmit customer's data. Now let us look at the premium scenarios individually to understand the communication patterns and relevant security related details pertaining to those. 
+The Premium AI enrichment features can be best viewed as a collection of stateless AI functions/transforms that can be used by Power BI users in their data integration pipelines used by a Power BI dataset or dataflow. Note that these functions can also be accessed from current dataflow/dataset authoring environments in the Power BI Service and Power BI Desktop. These AI functions/transforms always run in a Premium workspace/capacity. Hence, these functions are surfaced using in Power BI as a data source that requires an Azure AD token for the Power BI user who is using the AI function. These AI data sources are special because they do not surface any of their own data and they only supply these functions/transforms. During execution, these features do not make any outbound calls to other services to transmit the customer's data. Let us look at the Premium scenarios individually to understand the communication patterns and relevant security related details pertaining to them. 
 
-For training and applying an AutoML model, PowerBI uses Azure AutoML SDK and runs all the training in the customer's PowerBI capacity. During training iterations, PowerBI calls an experimentation AzureML service to select a suitable model and hyper-parameters for the current iteration. In this outbound call, only relevant experiment metadata (e.g. accuracy, ml algorithm, algorithm parameters etc) from the previous iteration is sent. The AutoML training produces an ONNX model and training report data that is then saved in the dataflow. Later PowerBI users can then apply the  trained ML model as a transform to operationalize the ML model on a scheduled basis.For TextAnalytics and Imagetagging APIs, PowerBI does not directly call the CognitiveServices service APIs but instead uses an internal SDK to run the APIs in the PowerBI premium capacity. These APIs are today supported in both PowerBI dataflows and datasets. While authoring a dataset in PowerBI Desktop, users can only access this functionality if they have access to a premium PowerBI workspace. Hence, customers are prompted to specify their AAD credential. 
+For training and applying an AutoML model, Power BI uses the Azure AutoML SDK and runs all the training in the customer's Power BI capacity. During training iterations, Power BI calls an experimentation AzureML service to select a suitable model and hyper-parameters for the current iteration. In this outbound call, only relevant experiment metadata (e.g. accuracy, ml algorithm, algorithm parameters, etc.) from the previous iteration is sent. The AutoML training produces an ONNX model and training report data that is then saved in the dataflow. Later, Power BI users can then apply the trained ML model as a transform to operationalize the ML model on a scheduled basis. For TextAnalytics and ImageTagging APIs, Power BI does not directly call the CognitiveServices service APIs, but rather uses an internal SDK to run the APIs in the Power BI Premium capacity. Today these APIs are supported in both Power BI dataflows and datasets. While authoring a dataset in Power BI Desktop, users can only access this functionality if they have access to a Premium Power BI workspace. Hence customers are prompted to supply their Azure AD credentials. 
 
 ## Network Isolation
 
@@ -292,7 +293,7 @@ This section outlines advanced security features in Power BI. Some of the featur
 
 ### Service Tags
 
-A service tag represents a group of IP address prefixes from a given Azure service. It helps to minimize complexity of frequent updates on network security rules. Customers can use service tags to define network access controls on [Network Security Groups](/azure/virtual-network/security-overview#security-rules) or [Azure Firewall](/azure/firewall/service-tags). Customers can use service tags in place of specific IP addresses when creating security rules. By specifying the service tag name (e.g., PowerBI) in the appropriate source or destination (for APIs) field of a rule, customers can allow or deny the traffic for the corresponding service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses change.
+A service tag represents a group of IP address prefixes from a given Azure service. It helps minimize the complexity of frequent updates to network security rules. Customers can use service tags to define network access controls on [Network Security Groups](/azure/virtual-network/security-overview#security-rules) or [Azure Firewall](/azure/firewall/service-tags). Customers can use service tags in place of specific IP addresses when creating security rules. By specifying the service tag name (e.g., PowerBI) in the appropriate source or destination (for APIs) field of a rule, customers can allow or deny the traffic for the corresponding service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses change.
 
 ### Private links integration
 
@@ -302,69 +303,72 @@ Private links ensure that Power BI users use the Microsoft private network backb
 
 Using Private Links with Power BI provides the following benefits:
 * Private Links ensure that traffic will flow over the Azure backbone to a private endpoint for Azure cloud-based resources.
-* Network traffic isolation from non-Azure based infrastructure, such as on-premises access, would require customers to have ExpressRoute or a Virtual Private Network (VPN) configured.
+* Network traffic isolation from non-Azure-based infrastructure, such as on-premises access, would require customers to have ExpressRoute or a Virtual Private Network (VPN) configured.
 
 See [Private Links for Power BI](../admin/service-security-private-links.md) for additional information.
 
-### VNet Connectivity (Preview- Coming Soon)
+### VNet Connectivity (Preview - Coming Soon)
 
-While the private links integration feature provides secure inbound connections to Power BI, this VNet connectivity feature enables secure outbound connectivity from Power BI to data sources within a VNet. 
+While the private links integration feature provides secure inbound connections to Power BI, the VNet connectivity feature enables secure outbound connectivity from Power BI to data sources within a VNet. 
 
-VNet gateways (Microsoft-managed) will eliminate the overhead of installing and monitoring on-premises data gateways for connecting to data sources associated with a VNet. They would however, still follow the familiar process of managing security and data sources as with an on-premises data gateway. 
+VNet gateways (Microsoft-managed) will eliminate the overhead of installing and monitoring on-premises data gateways for connecting to data sources associated with a VNet. They will however, still follow the familiar process of managing security and data sources, as with an on-premises data gateway. 
 
-An overview of what happens when you interact with a Power BI report that is connected to a data source within a VNet using VNet gateways:
+The following is an overview of what happens when you interact with a Power BI report that is connected to a data source within a VNet using VNet gateways:
 
-1. Power BI cloud service (or one of the other supported cloud services) kicks off a query and sends the query, data source details and credentials to the Power platform VNet service (PP VNet).
+1. The Power BI cloud service (or one of the other supported cloud services) kicks off a query and sends the query, data source details, and credentials to the Power platform VNet service (PP VNet).
 
 1. The PP VNet service then securely injects a container running a VNet gateway into the subnet. This container can now connect to data services accessible from within this subnet.
 
-1. The PP VNet service then sends the query, data source details and credentials to the VNet gateway. 
+1. The PP VNet service then sends the query, data source details, and credentials to the VNet gateway. 
 
 1. The VNet gateway gets the query and connects to the data sources with those credentials.
+
 1. The query is then sent to the data source for execution.
-1. After execution, the results are sent to the VNet gateway and the PP VNet service securely pushes the data from the container to the Power BI cloud service.
+
+1. After execution, the results are sent to the VNet gateway, and the PP VNet service securely pushes the data from the container to the Power BI cloud service.
 
 This feature will be available in Public preview soon.
 
 ### Service Principals
 
-Power BI support the use of Service Principals. Store any Service Principal credentials used for encrypting or accessing Power BI in a Key Vault, assign proper access policies to the vault and regularly review access permissions.
+Power BI supports the use of Service Principals. Store any Service Principal credentials used for encrypting or accessing Power BI in a Key Vault, assign proper access policies to the vault, and regularly review access permissions.
+
 See [Automate Premium workspace and dataset tasks with service principals](../admin/service-premium-service-principal.md) for additional details.
 
-## Data loss prevention 
+## Data loss prevention (DLP)
 
 ### M365 sensitivity labels
 
-Power BI has deep integration with Microsoft Information Protection sensitivity labels, which enable organizations to have a single, integrated DLP policy management, audit and compliance together with the rest of Office. 
+Power BI has a deep integration with Microsoft Information Protection (MIP) sensitivity labels, which enable organizations to have a single, integrated solution for DLP policy management, audit, and compliance across the Office suite. 
 
 When sensitivity labels are enabled in Power BI:
-* Classify and label sensitive data both in Power BI service (GA) and in Power BI desktop (Preview) using the familiar Microsoft Information Protection sensitivity labels used in Office and in Azure Purview. 
-* Enforce governance policies even when Power BI content is exported to Excel, PowerPoint, PDF or PBIX file to help ensure data is protected even when it leaves Power BI.
-* Encrypt PBIX file according to MIP label policy when apply MIP label on the PBIX file in desktop, ensuring only authorized users can edit this file.
-* It's easy to classify and protect .pbix files like it is done with Excel, Word, and PowerPoint files. With just 2 clicks, your file can be tagged according to its level of sensitivity and, even further, be encrypted if it contains business-confidential data.
-* Excel workbooks automatically inherit the security labels when they connect to Power BI (Preview) enabling to maintain E2E classification and apply protection when analyze Power BI dataset in Excel.
-* Sensitivity labels applied on Power BI reports and dashboards are also visible in the Power BI iOS and Android mobile apps.
-* Sensitivity labels persist when a Power BI report is embedded in Teams, SharePoint, or a secure website (Preview) - helping organizations to maintain classification and protection on export when embedding Power BI content.
-* Label inheritance upon creation of new content in Power BI service ensuring the label applied on a dataset in Power BI service will be applied on new content created on top of this dataset. 
-* [Power BI admin scan API](/rest/api/power-bi/admin/workspaceinfo_getscanresult) extract Power BI artifact's sensitivity label, enabling Power BI and InfoSec admins to monitor labeling in Power BI service and produce executive reports. 
-* Power BI make sure that only authorized users can change or remove labels with protection settings in Power BI service. 
+* Sensitive data, both in the Power BI service (GA) and in Power BI Desktop (Preview), can be classified and labeled using the same familiar Microsoft Information Protection sensitivity labels used in Office and in Azure Purview. 
+* Governance policies can be enforced, even when Power BI content is exported to Excel, PowerPoint, PDF or .pbix files, to help ensure data is protected even when it leaves Power BI.
+* .pbix files can be encrypted according to MIP label policies when a MIP label is applied on the .pbix file in Desktop, ensuring that only authorized users can edit this file.
+* It's easy to classify and protect .pbix files just like it is done with Excel, Word, and PowerPoint files. With just two clicks, a file can be tagged according to its level of sensitivity, and, even further, be encrypted if it contains business-confidential data.
+* Excel workbooks automatically inherit the sensitivity labels when they connect to Power BI (Preview), making it possible to maintain E2E classification and apply protection when the Power BI dataset is analyzed in Excel.
+* Sensitivity labels applied on Power BI reports and dashboards will be visible in the Power BI iOS and Android mobile apps.
+* Sensitivity labels will persist when a Power BI report is embedded in Teams, SharePoint, or a secure website (Preview). This helps organizations maintain classification and protection upon export when embedding Power BI content.
+* Label inheritance upon the creation of new content in the Power BI service ensures that the label applied on a dataset in the Power BI service will be applied on new content created on top of the dataset. 
+* [Power BI admin scan APIs](/rest/api/power-bi/admin/workspaceinfo_getscanresult) can extract a Power BI artifact's sensitivity label, enabling Power BI and InfoSec admins to monitor labeling in the Power BI service and produce executive reports. 
+* Power BI makes sure that only authorized users can change or remove labels with protection settings in the Power BI service. 
 * Coming soon
-    * Power BI admin API to apply MIP labels to enable central teams to programmatically label content in Power BI service.  
-    * Admins will be able to enforce apply label on new or edited content with mandatory label policy in Power BI service (Preview)
-    * Automatic downstream artifact labeling within Power BI service. Upon label apply or change on Power BI dataset the label will be automatically applied on all content connected to this artifact. 
+    * Power BI admin APIs to apply MIP labels to enable central teams to programmatically label content in the Power BI service.  
+    * Admins will be able to enforce applying labels on new or edited content with a mandatory label policy in the Power BI service (Preview).
+    * Automatic downstream artifact labeling within the Power BI service. When a label on a dataset is applied or changed, the label will automatically be applied on all content connected to this artifact.
 
-See [MIP sensitivity labels documentation in Power BI](../admin/service-security-sensitivity-label-overview.md) for additional details.
+See the [Microsoft Information Protection sensitivity label documentation in Power BI](../admin/service-security-sensitivity-label-overview.md) for additional details.
 
 ### Microsoft Cloud App Security (MCAS) for Power BI
 
 Microsoft Cloud App Security is one of the world's leading cloud access security brokers, named as leader in Gartner's Magic Quadrant for Cloud Access Security Broker (CASB) market. Cloud app security is used to secure the use of cloud apps. It enables organizations to monitor and control, in real time, risky Power BI sessions such as user access from unmanaged devices. Security administrators can define policies to control user actions, such as downloading reports with sensitive information.
 
-With Cloud App security organization can gain the following DLP capabilities: 
-* Set real-time controls to enforce risky user sessions in Power BI - For example, if a user connects to Power BI from outside of their country, the session can be monitored by Cloud App Security's real-time controls, and risky actions, such as downloading data tagged with a "Highly Confidential" sensitivity label, can be blocked immediately.
-* Investigate Power BI user activity with Cloud App Security activity log - The Cloud App Security activity log includes Power BI activity as captured in the Office 365 audit log, which contains information about all user and admin activities, as well as sensitivity label information for relevant activities such as apply, change, and remove label. Admins can leverage Cloud App Security advanced filters and quick actions for effective issue investigations. 
-* Create custom policies to alert on suspicious user activity in Power BI - The next step is to leverage Cloud App Security's activity policy feature to define your own custom rules, to help you detect user behavior that deviates from the norm, and even possibly act upon it automatically, if it seems too dangerous.
-* Work with Cloud App Security built-in anomaly detections - Cloud App Security's anomaly detection policies provide out-of-the-box user behavioral analytics and machine learning so that you are ready from the outset to run advanced threat detection across your cloud environment. When an anomaly detection policy identifies a suspicious behavior, it triggers a security alert. 
-* Power BI admin role in Cloud App Security portal - Cloud App Security does provide an app-specific admin role that can be used to grant Power BI admins only the permissions they need to access Power BI-relevant data in the portal, such as alerts, users at risk, activity logs, and other Power BI-related information.
+With Cloud App Security, organizations can gain the following DLP capabilities: 
+* Set real-time controls to enforce risky user sessions in Power BI. For example, if a user connects to Power BI from outside of their country, the session can be monitored by Cloud App Security's real-time controls, and risky actions, such as downloading data tagged with a "Highly Confidential" sensitivity label, can be blocked immediately.
+* Investigate Power BI user activity with Cloud App Security's activity log. The Cloud App Security activity log includes Power BI activity as captured in the Office 365 audit log, which contains information about all user and admin activities, as well as sensitivity label information for relevant activities such as apply, change, and remove label. Admins can leverage Cloud App Security'a advanced filters and quick actions for effective issue investigation. 
+* Create custom policies to alert on suspicious user activity in Power BI. Cloud App Security's activity policy feature can be leveraged to define your own custom rules, to help you detect user behavior that deviates from the norm, and even possibly act upon it automatically, if it seems too dangerous.
+* Work with Cloud App Security's built-in anomaly detection. Cloud App Security's anomaly detection policies provide out-of-the-box user behavioral analytics and machine learning so that you are ready from the outset to run advanced threat detection across your cloud environment. When an anomaly detection policy identifies a suspicious behavior, it triggers a security alert. 
+* Power BI admin role in Cloud App Security portal. Cloud App Security provides an app-specific admin role that can be used to grant Power BI admins only the permissions they need to access Power BI-relevant data in the portal, such as alerts, users at risk, activity logs, and other Power BI-related information.
 
 See [Using Microsoft Cloud App Security Controls in Power BI](../admin/service-security-using-microsoft-cloud-app-security-controls.md) for additional details.
 
@@ -382,7 +386,7 @@ The following questions are common security questions and answers for Power BI. 
 
 **How do users connect to, and gain access to data sources while using Power BI?**
 
-* Power BI manages credential to data sources for each user for cloud credentials or for connectivity through personal gateway.  Data sources managed by an on-premises data gateway can be shared across the enterprise and permissions to these data sources could be managed by the Gateway Admin.  When configuring a dataset user is allowed to select a credential from their personal store or use an on-premises data gateway to use a shared credential. **[CHECK BULLETING]**
+* Power BI manages credential to data sources for each user for cloud credentials or for connectivity through personal gateway.  Data sources managed by an on-premises data gateway can be shared across the enterprise and permissions to these data sources could be managed by the Gateway Admin.  When configuring a dataset user is allowed to select a credential from their personal store or use an on-premises data gateway to use a shared credential.
 
     In the import case, a user establishes a connection based on the user's login and accesses the data with the credential. After the dataset is published to Power BI service, Power BI always uses this user's credential to import data. Once data is imported, viewing the data in reports and dashboard does not access underly data source. Power BI supports single sign-on authentication for selected data sources. If the connection is configured to use single sign-on, dataset owner’s credential is used to connect with the data source.
 
