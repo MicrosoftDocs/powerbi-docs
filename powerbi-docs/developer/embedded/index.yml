@@ -34,7 +34,7 @@ landingContent:
             url: embedded-faq.md
       - linkListType: whats-new
         links:
-          - text: "power-bi-embedded-generation-2 (preview)"
+          - text: "Power BI Embedded Generation 2 (preview)"
             url: power-bi-embedded-generation-2.md
       - linkListType: reference
         links:
