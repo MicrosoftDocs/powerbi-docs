@@ -172,16 +172,17 @@ The user authentication sequence for the Power BI service occurs as described in
 
 ## Data Residency
 
-Unless otherwise indicated in documentation, Power BI stores customer data in an Azure geography that is assigned when an [Azure Active Directory (AAD) tenant](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings) signs-up for Power BI services for the first time. An AAD tenant houses the user and application identities, groups and other relevant information pertaining to an organization and its security. 
+Unless otherwise indicated in documentation, Power BI stores customer data in an Azure geography that is assigned when an [Azure Active Directory (Azure AD) tenant](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings) signs up for Power BI services for the first time. An Azure AD tenant houses the user and application identities, groups, and other relevant information that pertain to an organization and its security. 
 
-The assignment of Azure geography for tenant data storage is done by mapping the country or region that is selected as part of the AAD tenant setup to the best Azure geography where a Power BI deployment exists. Once this determination is made, all Power BI customer data will be stored in this chosen Azure geography (aka home geo), except in cases where organizations utilize multi-geo deployments.
+The assignment of an Azure geography for tenant data storage is done by mapping the country or region selected as part of the Azure AD tenant setup to the most suitable Azure geography where a Power BI deployment exists. Once this determination is made, all Power BI customer data will be stored in this selected Azure geography (aka home geo), except in cases where organizations utilize multi-geo deployments.
 
-### Multiple Geographies (Multi-geo)
+### Multiple Geographies (multi-geo)
 
-Some organizations have a global presence and may require Power BI services in multiple Azure geographies. For example, a business may have their headquarters in the United States but may also do business in other geographical areas, such as Australia. In such cases the business may additionally require that certain Power BI data remains stored at rest in the remote region to comply with local regulations. This feature of the Power BI service is referred to as multi-geo.
+Some organizations have a global presence and may require Power BI services in multiple Azure geographies. For example, a business may have their headquarters in the United States but may also do business in other geographical areas, such as Australia. In such cases the business may require that certain Power BI data remain stored at rest in the remote region to comply with local regulations. This feature of the Power BI service is referred to as *multi-geo*.
 
-The query execution layer, query caches and artifact data that is assigned to a multi-geo workspace are hosted and remain in the remote capacity Azure geography. However, some artifact metadata like report structure may remain stored at rest in the tenant home geography. Additionally, some data transit and processing may still happen in the tenant home geography even for workspaces that are hosted in a multi-geo Premium capacity.
-Please see Configure Multi-Geo support for Power BI Premium(../admin/service-admin-premium-multi-geo.md) for more information about creating and managing Power BI deployments that span multiple Azure geographies.
+The query execution layer, query caches, and artifact data assigned to a multi-geo workspace are hosted and remain in the remote capacity Azure geography. However, some artifact metadata, such as report structure, may remain stored at rest in the tenant's home geo. Additionally, some data transit and processing may still happen in the tenant's home geo, even for workspaces that are hosted in a multi-geo Premium capacity.
+
+Please see [Configure Multi-Geo support for Power BI Premium](../admin/service-admin-premium-multi-geo.md) for more information about creating and managing Power BI deployments that span multiple Azure geographies.
 
 ### Regions and Datacenters
 
