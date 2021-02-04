@@ -50,6 +50,8 @@ landingContent:
         links:
           - text: "Power BI embedded analytics Client APIs"
             url: /javascript/api/overview/powerbi/
+          - text: "Power BI Embedded Generation 2 (preview)"
+            url: ../embedded/power-bi-embedded-generation-2.md          
             
   # Card
   - title: Work with data
