@@ -457,7 +457,7 @@ The following questions are common security questions and answers for Power BI. 
 * Yes. Bing Maps and ESRI visuals transmit data out of the Power BI service for visuals that use those services.
 
 **For Template Apps, does Microsoft perform any security or privacy assessment of the Template app prior to publishing items to the Gallery?**
-* No. The app publisher is responsible for the content while t is the customer's responsibility to review and determine whether to trust the Template app publisher. 
+* No. The app publisher is responsible for the content while it is the customer's responsibility to review and determine whether to trust the Template app publisher. 
 
 **Are there Template apps that can send information outside the customer network?**
 * Yes. It is the customer's responsibility to review the publisher's privacy policy and determine whether to install the Template app on Tenant. Furthermore, the publisher is responsible to notify of the app's behavior and capabilities.
