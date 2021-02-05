@@ -47,13 +47,11 @@ If you see this warning and want to verify the necessary query folding is occurr
 
 When configuring incremental refresh, datasets are filtered by using Power Query date/time parameters with the reserved, case-sensitive names **RangeStart** and **RangeEnd**. These parameters, defined in the Manage Parameters dialog in Power Query Editor are used to filter the data imported into Power BI Desktop. When the model is published to the service, the parameters are used to dynamically partition the data into ranges. They are then overridden automatically by the service according to the incremental refresh policy settings. If defining policies for more than one table, the same parameters can be used.
 
-![Manage parameters dialog](media/incremental-refresh-overview/manage-parameters.png)
+![Manage Parameters dialog](media/incremental-refresh-overview/manage-parameters-small.png)
 
 ### Filter data
 
-**Need body**
-
-With RangeStart and RangeEnd parameters defined, you can then apply the filter by selecting the **Custom Filter** menu option for a column.
+With RangeStart and RangeEnd parameters defined, you then apply custom Date filters on your tables date column. The filters you apply select a subset of data that will be imported when 
 
 ![Custom filter](media/incremental-refresh-overview/custom-filter.png)
 
@@ -105,21 +103,7 @@ It's important to keep in mind, refresh operations in the service run under UTC 
 
 **Need body**
 
-## Metadata-only deployment
 
-When publishing a new version of a PBIX file from Power BI Desktop to a workspace, if a dataset with the same name already exists, you're prompted to replace the existing dataset.
-
-![Replace dataset prompt](media/incremental-refresh-overview/replace-dataset-prompt.png)
-
-In some cases you may not want to replace the dataset, especially with incremental refresh. The dataset in Power BI Desktop could be much smaller than the one in the service. If the dataset in the service has an incremental refresh policy applied, it may have several years of historical data that will be lost if the dataset is replaced. Refreshing all the historical data could take hours and result in system downtime for users.
-
-Instead, it's better to perform a metadata-only deployment. This allows deployment of new objects without losing the historical data. For example, if you have added a few measures, you can deploy only the new measures without needing to refresh the data, saving a lot of time.
-
-For Power BI Premium workspaces assigned to a capacity configured for XMLA endpoint read-write, compatible tools enable metadata-only deployment. For example, the ALM Toolkit is a schema diff tool for Power BI datasets and can be used to perform deployment of metadata only.
-
-Download and install the latest version of the ALM Toolkit from the [Analysis Services Git repo](https://github.com/microsoft/Analysis-Services/releases). Documentation links and information on supportability are available on the Help ribbon. To perform a metadata only deployment, perform a comparison and select the running Power BI Desktop instance as the source, and the existing dataset in the service as the target. Consider the differences displayed and skip the update of the table with incremental refresh partitions, or use the Options dialog to retain partitions for table updates. Validate the selection to ensure the integrity of the target model and then update.
-
-![ALM Toolkit](media/incremental-refresh-overview/alm-toolkit.png)
 
 ## Next steps
 

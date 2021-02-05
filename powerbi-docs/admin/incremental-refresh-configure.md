@@ -21,7 +21,7 @@ Examples in this article show configuring incremental refresh for a single fact 
 
 ## Create parameters
 
-In this task, you create RangeStart and RangeEnd parameters with default values. The default values apply only when filtering the data to be imported into the model in Power BI Desktop. The values you enter should encompass only a small portion of the most recent data. When published to the service, these values are overridden by the incremental refresh policy.
+In this task, use Power Query Editor to create RangeStart and RangeEnd parameters with default values. The default values apply only when filtering the data to be imported into the model in Power BI Desktop. The values you enter should encompass only a small portion of the most recent data. When published to the service, these values are overridden by the incremental refresh policy.
 
 1. In Power BI Desktop, click **Transform data** to open Power Query Editor.
 
@@ -31,7 +31,7 @@ In this task, you create RangeStart and RangeEnd parameters with default values.
 
     ![Define Range Start parameter in Manage Parameters dialog](media/incremental-refresh-configure/create-range-start.png)
 
-1. Create a second parameter named **RangeEnd**. In **Type**, select **Date/Time**, and then in **Current Value** enter an end date and time value. In this example, we specify 1/27/2014 12:00:00 AM, which is the last transaction date and time in the data source  table.
+1. Create a second parameter named **RangeEnd**. In **Type**, select **Date/Time**, and then in **Current Value** enter an end date and time value. In this example, we specify 1/28/2014 12:00:00 AM, which is the last transaction date and time in the data source table.
 
     ![Define Range End parameter in Manage Parameters dialog](media/incremental-refresh-configure/create-range-end.png)
 
@@ -39,9 +39,9 @@ Now that you have RangeStart and RangeEnd parameters configured, you then filter
 
 ## Filter data
 
-With RangeStart and RangeEnd parameters defined, you can then apply a filter based on *conditions* in the RangeStart and RangeEnd parameters.
+With RangeStart and RangeEnd parameters defined, apply a filter based on *conditions* in the RangeStart and RangeEnd parameters.
 
-1. In the table, select the column you want to filter on, then click the filter icon > **Date/Time Filters** > **Custom Filter**.
+1. In Power Query Editor, in the table, select the column you want to filter on, then click the filter icon > **Date/Time Filters** > **Custom Filter**.
 
 1. In **Filter Rows**, to specify the first condition, select **is after** or **is after or equal to**, then select **Parameter**, and then select **RangeStart**.
 
@@ -54,6 +54,8 @@ With RangeStart and RangeEnd parameters defined, you can then apply a filter bas
     Click **OK** to close.
 
 1. In Power Query Editor, click **Close & Apply**. Power Query will then import data based on the filters defined in the RangeStart and RangeEnd parameters, and any other filters you defined.
+
+    Power Query will load only data specified between the RangeStart and RangeEnd parameters. Depending on the amount of data in that range, import should go quickly. If it seems slow and process intensive, it's possible the query is not folding.
 
 ## Convert DateTime to integer
 
@@ -69,7 +71,7 @@ The data type of the RangeStart and RangeEnd parameters must be of date/time dat
 
     ![Create DateKey function](media/incremental-refresh-configure/datekey-function.png)
 
-1. To test the formula, in **Enter Parameter**, enter a date value, and then click **Invoke**. If the formula is correct, an integer value for the date is returned. After verifying, delete the invoked function query.
+1. To test the formula, in **Enter Parameter**, enter a date\time value, and then click **Invoke**. If the formula is correct, an integer value for the date is returned. After verifying, delete the invoked function query.
 
 1. In **Queries**, select the table, and then edit the query formula to call the function with the RangeStart and RangeEnd parameters. For example,
 
@@ -107,7 +109,7 @@ When your RangeStart and RangeEnd parameters, filtering, and refresh parameters 
 
 ## Refresh dataset
 
-In the service, refresh the dataset. The first refresh may take longer to import historical data. Subsequent refreshes, either manual or scheduled are typically faster because the incremental refresh policy is applied.
+In the service, refresh the dataset. The first refresh will  import historical data for the entire period specified in the **Store rows where column \<dateColumnName> is in the last:** policy setting. Depending on the amount of data, this can take quite a long time. Subsequent refreshes, either manual or scheduled are typically much faster because the incremental refresh policy is applied and only data for the period specified in **Refresh rows where column \<dateColumnName> is in the last:** policy setting is refreshed.
 
 ## See also
 

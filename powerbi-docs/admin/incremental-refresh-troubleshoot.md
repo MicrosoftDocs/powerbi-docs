@@ -20,6 +20,18 @@ Before troubleshooting incremental refresh, be sure to review the basics covered
 
 ## Query folding
 
+**Problem:** In Power Query Editor, after filtering data and then clicking **Close & Apply**, importing data from the data source takes an excessive amount of time and computer resources.
+
+**Solution:** A common issue is a data type mis-match, where Date/Time is the specified data type in the RangeStart and RangeEnd parameters, but the table date column on which the filters are applied are not Date/Time data type, or vice-versa. Both the parameters data type and the filtered data column must be Date/Time data type and format must be the same. If necessary, use Power Query Diagnostics or SQL Profiler to trace queries passed to the data source.
+
 ## Native queries
 
-## Timeouts
+**Problem:** \<need content>
+
+**Solution:** \<need content>
+
+## Query timeouts
+
+**Problem:** \<need content>
+
+**Solution:** \<need content>
