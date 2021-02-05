@@ -6,6 +6,7 @@ ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
+ms.custom: subject-monitoring
 ms.topic: how-to
 ms.date: 01/14/2021
 ---

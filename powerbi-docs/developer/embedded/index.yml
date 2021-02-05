@@ -32,6 +32,10 @@ landingContent:
             url: azure-pbie-what-is-power-bi-embedded.md
           - text: "Frequently asked questions"
             url: embedded-faq.md
+      - linkListType: whats-new
+        links:
+          - text: "Power BI Embedded Generation 2 (preview)"
+            url: power-bi-embedded-generation-2.md
       - linkListType: reference
         links:
           - text: "Power BI Developer in a Day course"
