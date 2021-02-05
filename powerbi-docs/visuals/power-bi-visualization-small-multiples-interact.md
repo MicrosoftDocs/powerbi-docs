@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 01/28/2021
+ms.date: 02/05/2021
 LocalizationGroup: Visualizations
 ---
 # Interact with small multiples in Power BI (preview)
