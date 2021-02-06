@@ -1,24 +1,24 @@
 ---
-title: Design filters in Power BI reports
-description: You have a lot of control over report filter design and functionality. 
+title: Format filters in Power BI reports
+description: You have a lot of control over report filter format, design, and functionality. 
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/11/2020
+ms.date: 02/05/2021
 LocalizationGroup: Reports
 ---
-# Design filters in Power BI reports
+# Format filters in Power BI reports
 
 [!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
-With the new filter experience, you have a lot of control over report filter design and functionality. You can format the Filters pane to look like the rest of the report. You can lock and even hide filters. When designing your report, you no longer see the old Filters pane at all in the Visualizations pane. You do all your filter editing and formatting in a single Filters pane. 
+You have a lot of control over report filter design and functionality. This article explains how you can format the Filters pane to look like the rest of the report. You can lock and even hide filters.
 
 ![The filter experience](media/power-bi-report-filter/power-bi-filter-new-look.png)
 
-As a report designer, here are some of the tasks you can do in the new Filters pane:
+The first step is to [add filters to your report](power-bi-report-add-filter.md). Then, as a report designer, there are lots of ways you can format the Filters pane:
 
 - Add and remove fields to filter on. 
 - Change the filter state.
@@ -32,50 +32,33 @@ When reading a report, users can hover over any visual to see a read-only list o
 
 ![List of filters for a visual](media/power-bi-report-filter/power-bi-filter-visual.png)
 
-Read about [how report readers use filters](../consumer/end-user-report-filter.md) in your report.
-
-## View filters for a visual in Reading mode
-
-In Reading mode, hover over the filter icon for a visual to see a pop-up filter list with all the filters, slicers, and so on, affecting that visual. The formatting of the pop-up filter list is the same as the Filters pane formatting.
-
-![Filters affecting a visual](media/power-bi-report-filter/power-bi-filter-per-visual.png)
-
-Here are the types of filters this view shows:
-
-- Basic filters
-- Slicers
-- Cross-highlighting 
-- Cross-filtering
-- Advanced filters
-- Top N filters
-- Relative Date filters
-- Sync-slicers
-- Include/Exclude filters
-- Filters passed through a URL
-
-Read more about [interacting with filters in reading mode](../consumer/end-user-report-filter.md).
+Read about [how report readers use filters](../consumer/end-user-report-filter.md) in report Reading mode.
 
 ## Build the Filters pane
 
-After you enable the new Filters pane, you see it to the right of the report page, formatted by default based on your current report settings. In the Filters pane, you configure which filters to include, and update existing filters. The Filters pane will look the same for your report consumers when you publish your report. 
+By default the Filters pane is formatted based on your current report settings. In the Filters pane, you configure which filters to include, and update existing filters. The Filters pane looks the same for your report consumers when you publish your report. 
 
-1. By default, your report consumers can see the Filters pane. If you don't want them to see it, select the eye icon next to **Filters**.
+1. When you add a visual to a report canvas, Power BI automatically adds a filter to the Filters pane for each field in the visual.
 
-    ![Power BI filter eye icon](media/power-bi-report-filter/power-bi-filter-eye-icon.png)
+2. To build your Filters pane, drag other fields of interest into the Filters pane either as visual, page, or report level filters.
 
-2. To start building your Filters pane, drag fields of interest into the Filters pane either as visual, page, or report level filters.
+## Show or hide the Filters pane
 
-When you add a visual to a report canvas, Power BI automatically adds a filter to the Filters pane for each field in the visual. 
+### Hide the Filters pane in Reading mode
 
-## Hide the Filters pane while editing
+If you don't want your report readers to see the Filters pane at all, select the **eye** icon next to **Filters**.
 
-Power BI Desktop has a new ribbon in preview. On the **View** tab, the **Filters** toggle button allows you to show or hide the Filters pane. This feature is useful when you aren't using the Filters pane and need extra space on the screen. This addition aligns the Filters pane with the other panes that you can open and close, such as the Bookmarks and Selection panes. 
+![Eye icon](media/power-bi-report-filter/power-bi-filter-eye.png) 
+
+### Hide the Filters pane while editing
+
+You can hide the Filters pane while you're editing your report, when you aren't using the Filters pane and you need extra space on the screen. 
+
+- On the **View** tab, the **Filters** button allows you to show or hide the Filters pane.
 
 ![Show or hide the Filters pane while editing](media/power-bi-report-filter/power-bi-filter-hide.png)
 
-This setting only hides the Filters pane in Power BI Desktop. If you want to hide the Filters pane for your end users, you instead select the **eye** icon next to **Filters**.
-
-![Eye icon](media/power-bi-report-filter/power-bi-filter-eye.png) 
+This setting only hides the Filters pane in Power BI Desktop. There's no equivalent in Editing mode in the Power BI service.
 
 ## Lock or hide filters
 
@@ -269,7 +252,7 @@ Currently, you can control some of the formatting for the **Apply** text for the
 
 ## Considerations and limitations
 
-Publish-to-web doesn't display the Filters pane. If you're planning to publish a report to the web, consider adding slicers for filtering.
+Publish-to-web doesn't display the Filters pane. If you're planning to publish a report to the web, consider adding slicers for filtering instead.
 
 ## Next steps
 

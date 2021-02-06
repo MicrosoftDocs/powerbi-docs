@@ -100,7 +100,7 @@ landingContent:
             url: desktop-drillthrough.md
           - text: "Add bookmarks to a report"
             url: desktop-bookmarks.md
-          - text: "Add filters to a report"
+          - text: "Format filters in a report"
             url: power-bi-report-filter.md
   # Card (optional)
   - title: Power BI paginated reports

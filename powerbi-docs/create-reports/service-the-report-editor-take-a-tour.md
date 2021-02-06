@@ -73,7 +73,7 @@ The new filter experience offers more flexibility. For example, you can format f
 
 ![New filter experience](media/service-the-report-editor-take-a-tour/power-bi-filters-pane.png)
 
-Read more about the [new filter experience](power-bi-report-filter.md).
+Read more about [formatting the Filters pane in the new filter experience](power-bi-report-filter.md).
 
 ## 4. The Visualizations pane
 
