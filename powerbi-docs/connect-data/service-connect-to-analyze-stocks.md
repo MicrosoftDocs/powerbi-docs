@@ -15,9 +15,13 @@ Meaning: Explain that it’s for tutorial/new user example, track popular stocks
 
 The stock market app shows you multiple KPIs to start your analytics journey in Power BI. Use it to track end-of-day quotes as well as weekly, monthly, or yearly trends for popular stocks and ETFs. See Power BI in action with tracking of stock highs and lows, moving averages, sector-wise distribution, Bollinger bands, and even performance comparisons for popular stocks over time. 
 
-## ETF (Exchange Traded Fund) Dashboard
+## ETF Dashboard
 
-The ETF dashboard includes this….. You get choose to see it for a week, month or a year. The default view - graph view, helps you to understand how drastically the trend has changed over time. You can also switch to candle view by clicking on the toggle switch at top right of the page. In candle view for the desired period. Hover with the pointer to get the exact data point of a specific day.
+The ETF dashboard includes the closing trends for four major indexes. You can choose to see the trend for a week, month or a year. The default view - graph view, helps you to understand how drastically the trend has changed over time. You can also switch to candlestick chart by clicking on the toggle switch at the top right of the page.
+
+Hover the pointer over a chart to get the exact data point of a specific day.
+
+The running banner at the top of the page shows you the current day's close and the price change from the previous days close for the four indexes shown on the page.
 
 ### Nasdaq closing trend
 
