@@ -9,124 +9,94 @@ ms.topic: how-to
 ms.date: 02/06/2021
 LocalizationGroup: Connect to services
 ---
-# Analyze Popular Stocks with Power BI
-This article walks you through pulling your data from your GitHub account with a Power BI template app. The template app generates a workspace with a dashboard, a set of reports, and a dataset to allow you to explore your GitHub data. The GitHub app for Power BI shows you insights into your GitHub repository, also known as repo, with data around contributions, issues, pull requests, and active users.
+# Analyze popular stocks with Power BI
 
-![Analyze template app dell](media/service-connect-to-analyze-stocks/dell.png)
+Meaning: Explain that it’s for tutorial/new user example, track popular stocks for personal use, compare stocks in power bi
 
-Separator
+The stock market app shows you multiple KPIs to start your analytics journey in Power BI. Use it to track end-of-day quotes as well as weekly, monthly, or yearly trends for popular stocks and ETFs. See Power BI in action with tracking of stock highs and lows, moving averages, sector-wise distribution, Bollinger bands, and even performance comparisons for popular stocks over time. 
 
-![Analyze template app laptop](media/service-connect-to-analyze-stocks/laptop.png)
+## ETF Dashboard
+
+The following dashboard includes this….. You get choose to see it for a week, month or a year. The default view - graph view, helps you to understand how drastically the trend has changed over time. You can also switch to candle view by clicking on the toggle switch at top right of the page. In candle view for the desired period. Hover with the pointer to get the exact data point of a specific day.
+
+### Nasdaq closing trend
+
+Nasdaq closing trend visual shows the closing trend of market.
+
+[Screen shot showing Nasdaq closing trend.](media/service-connect-to-analyze-stocks/nasdaq-closing-trend.png)
+
+On the x-axis you can see the time period and on y-axis you can see the closing value. 
+
+### S&P 500
+
+Next visual down the page is S&P 500. It is regarded as the best single gauge of large-cap U.S. equities. In this visual you can see the closing trend for the S&P 500 index. You can choose to see 
+
+[Screen shot showing S&P 500 closing trend.](media/service-connect-to-analyze-stocks/s-and-p-closing-trend.png)
+ 
+
+### Dow Jones
+
+Another top index which is used to see the closing trend is Dow Jones.  You can use Dow Jones to see the market growth of leaders of IT industry like Microsoft.  The closing trend of Dow Jones signifies at which trend have the stocks under this index have closed by the end of day. 
+
+[Screen shot showing Dow Jones closing trend.](media/service-connect-to-analyze-stocks/dow-jones-closing-trend.png)
+
+### Russell 3000
+
+Russell 3000 being the most common benchmark for mutual funds, comes next in our App. You can refer to “Russell 2000 closing trend” visual to invest in more than 2000 low range stocks. Use the three buttons present at top left of the page to switch from week view to month/year.
+
+[Screen shot showing Russell 3000 closing trend.](media/service-connect-to-analyze-stocks/russell-3000-closing-trend.png)
+--
+ 
+## Stock dashboard
+
+Use the arrow at top of the page to navigate to next page Stock dashboard At the top of the page to move to Stock dashboard.
+
+At the top of the page you will see the import KPI’s about selected stock, such as the previous day's close, close, open, high, and low. You will find common important stocks by clicking on the dropdown. You will see that the value changes after clicking on the stock of your choice. 
+ 
+ 
+### Closing trend
+
+You can see the closing trend for the selected stock, and you can choose to switch it to month view or year view by clicking on the buttons at the top left of the page. Having year view will help you see how in which part of the year the stock has grown or fallen.
+
+[Screenshot of closing trends of selected stocks](media/service-connect-to-analyze-stocks/selected-stocks-closing-trend.png)  
+
+### Volume
+
+You can look at the volume of selected stock by scrolling down to the next visual. You can hover at a time interval to see the volume of stock at that part of the year.
+
+[Screenshot of volume of selected stocks](media/service-connect-to-analyze-stocks/selected-stocks-volume.png)
+ 
+### OHLC chart
+
+OHLC Charts are highly useful since they show four major datapoints for a given stock at same time. So, in the next visual down the page you will see OHLC visual which shows you opening, closing, high, and low of the stock selected. You can also look deeper into the data by changing the moving average. 
+
+[Screenshot of OHLC](media/service-connect-to-analyze-stocks/ohlc-chart.png)
+
+### Bollinger band
+
+Bollinger band will ease your decision making and choose the right stock. Bollinger uses complex mathematics to show the trends. You can see number of KPI’s which were in OHLC and along with that you can see other three lines. The middle line shows moving average, the top line is shifted up by certain number of standard deviation and same for the bottom line.
+[Screenshot of bollinger band.](media/service-connect-to-analyze-stocks/bollinger-band.png) 
+
+## Sectorwise distribution
+
+On the sector wise distribution page you can see the various stocks and the market they belong to. If you click on any of the sector, the stocks will get filtered out and the stocks belonging to the selected sector will start appearing. 
+
+[Screenshot of sector-wise distribution](media/service-connect-to-analyze-stocks/sector-wise-distribution.png)
+ 
+
+You can then hover over the stock to see the important KPI’s, such as previous close, close and the difference. The difference will help you understand how much the stock has fallen or grown since yesterday. You can scroll down to see all of the stocks in that category.
+ 
+To see the distribution of market for different sectors we have the “Sector-wise distribution” visual which shows from top to down the sectors having the highest difference in their closing price from last day. You can choose to invest in high- or low-end sector by seeing this visual.
+
+[Screenshot of distribution of market for different sectors](media/service-connect-to-analyze-stocks/market-wise-distribution.png)
 
 
-After you've installed the template app, you can change the dashboard and report. Then you can distribute it as an app to colleagues in your organization.
-
-Connect to the [GitHub template app](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github) or read more about the [GitHub integration](https://powerbi.microsoft.com/integrations/github) with Power BI.
-
-You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). It installs real GitHub data about the public repo for the  Power BI documentation.
-
->[!NOTE]
->This template app requires the GitHub account to have access to the repo. More details on requirements below.
->
->This template app does not support GitHub Enterprise.
-
-## Install the app
-
-1. Click the following link to get to the app: [GitHub template app](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
-
-1. On the AppSource page for the app, select [**GET IT NOW**](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github).
-
-    [![GitHub template app in AppSource](media/service-connect-to-github/service-github-template-app-appsource-get-it-now.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
-
-1. Select **Install**. 
-
-    ![Install the GitHub template app](media/service-connect-to-github/power-bi-github-install-dialog.png)
-
-    Once the app has installed, you see it on your Apps page.
-
-   ![GitHub app on Apps page](media/service-connect-to-github/service-github-app-apps-page-icon.png)
-
-## Connect to data sources
-
-1. Select the icon on your Apps page to open the app.
-
-   The app opens, showing sample data.
-
-1. Select the **Connect your data** link on the banner at the top of the page.
-
-   ![GitHub app connect your data link](media/service-connect-to-github/service-github-app-connect-data.png)
-
-1. This opens the parameters dialog, where you change the data source from the sample data to your own data source (see [known limitations](service-template-apps-overview.md#known-limitations)), followed by the authentication method dialog. You may have to redefine the values in these dialogs.
-
-   ![Screenshot of connect to data dialogs.](media/service-connect-to-github/power-bi-template-app-connect-to-data-dialogs.png)
 
 
-1. Enter your GitHub credentials and follow the GitHub authentication process (this step might be skipped if you're already signed in with your browser).
-
-   ![Power BI GitHub authenticate process](media/service-connect-to-github/power-bi-github-authenticate-process.png)
 
 
-Once you've finished filling out the connection dialogs and signed in to GitHub, the connection process starts. A banner informs you that the data is being refreshed, and that in the meantime you are viewing sample data.
 
-![Power BI GitHub app refresh in progress](media/service-connect-to-github/service-github-app-refresh-monitor.png)
-
-Your report data will automatically refresh once a day, unless you disabled this during the sign-in process. You can also [set up your own refresh schedule](./refresh-scheduled-refresh.md) to keep the report data up to date if you so desire.
-
-## Customize and share
-
-To customize and share your app, select the pencil icon at the top right corner of the page.
-
-![Edit app](media/service-template-apps-install-distribute/power-bi-template-app-edit-app.png)
-
-
-For information about editing artifacts in the workspace, see
-* [Tour the report editor in Power BI](../create-reports/service-the-report-editor-take-a-tour.md)
-* [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
-
-Once you are done making any changes you wish to the artifacts in the workspace, you are ready to publish and share the app. See [Publish your app](../collaborate-share/service-create-distribute-apps.md#publish-your-app) to learn how to do this.
-
-## What's included in the app
-The following data is available from GitHub in Power BI:     
-
-| Table name | Description |
-| --- | --- |
-| Contributions |The contributions table gives the total additions, deletions, and commits authored by the contributor aggregated per week. The top 100 contributors are included. |
-| Issues |List all issues for the selected repo and it contains calculations like total and average time to close an issue, Total open issues,  Total closed issues. This table will be empty when there are no issues in the repo. |
-| Pull requests |This table contains all the Pull Requests for the repo and who pulled the request. It also contains calculations around how many open, closed, and total pull requests, how long it took to pull the requests and how long the average pull request took. This table will be empty when there are no pull requests in the repo. |
-| Users |This table provides a list of GitHub users or contributors who have made contributions, filed issues, or solved Pull requests for the repo selected. |
-| Milestones |It has all the Milestones for the selected repo. |
-| DateTable |This table contains dates from today and for years in the past that allow you to analyze your GitHub data by date. |
-| ContributionPunchCard |This table can be used as a contribution punch card for the selected repo. It shows commits by day of week and hour of day. This table is not connected to other tables in the model. |
-| RepoDetails |This table provides details for the repo selected. |
-
-## System requirements
-* The GitHub account that has access to the repo.  
-* Permission granted to the Power BI for GitHub app during first login. See details below on revoking access.  
-* Sufficient API calls available to pull and refresh the data.
->[!NOTE]
->This template app does not support GitHub Enterprise.
-
-### De-authorize Power BI
-To de-authorize Power BI from being connected to your GitHub repo, you can Revoke access in GitHub. See this [GitHub help](https://help.github.com/articles/keeping-your-ssh-keys-and-application-access-tokens-safe/#reviewing-your-authorized-applications-oauth) topic for details.
-
-<a name="FindingParams"></a>
-## Finding parameters
-You can determine the owner and repository by looking at the repository in GitHub itself:
-
-![Repo name and owner](media/service-connect-to-github/github_ownerrepo.png)
-
-The first part "Azure" is the owner and the second part "azure-sdk-for-php" is the repository itself.  You see these same two items in the URL of the repository:
-
-```console
-<https://github.com/Azure/azure-sdk-for-php> .
-```
-
-## Troubleshooting
-If necessary, you can verify your GitHub credentials.  
-
-1. In another browser window, go to the GitHub web site and sign in to GitHub. You can see you’re logged in, in the upper-right corner of the GitHub site.    
-2. In GitHub, navigate to the URL of the repo you plan to access in Power BI. For example: https://github.com/dotnet/corefx.  
-3. Back in Power BI, try connecting to GitHub. In the Configure GitHub dialog box, use the names of the repo and repo owner for that same repo.  
+ 
 
 ## Next steps
 
