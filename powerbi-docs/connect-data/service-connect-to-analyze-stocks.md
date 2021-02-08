@@ -14,10 +14,10 @@ LocalizationGroup: Connect to services
 The stock market app shows you multiple KPIs to start your analytics journey in Power BI. You can use it to track end-of-day quotes as well as weekly, monthly, or yearly trends for popular stocks and ETFs. The app shows you Power BI in action, with tracking of stock highs and lows, moving averages, sector-wise distribution, Bollinger bands, and even performance comparisons for popular stocks over time.
 
 The app features four dashboards:
-* **ETF Dashboard**: Graph and candlestick charts for four major indexes.
-* **Stocks and ETFs Comparison**: Normalized charts that enable you to easily compare stocks and EFTs.
-* **Stock Performance Analysis**: Detailed analysis of selected stocks with visuals for closing trends, volume, OHLC, and Bollinger bands.
-* **Sector-wise distribution**: Decomposition tree that enables you to break out stock performance by sector.
+* **ETF Dashboard**: Shows you closing trends for four major indexes. 
+* **Stocks and ETFs Comparison**: Provides normalized charts make it easily for you to compare stocks and EFTs.
+* **Stock Performance Analysis**: Enables detailed analysis of selected stocks with visuals for closing trends, volume, OHLC, and Bollinger bands.
+* **Sector-wise distribution**: Allows you to break out stock performance by sector.
 
 You can navigate between the dashboards using the navigation side pane or the forward and back arrows at the top right of the page.
 
