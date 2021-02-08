@@ -58,9 +58,13 @@ After you have selected the stocks you're interested in, use the dropdown arrow 
 
 ![Screenshot of stock performance analysis select.](media/service-connect-to-analyze-stocks/stocks-performance-select.png)
  
+### Closing trend
+
 You can see the closing trend for the selected stock, and you can choose to switch it to month view or year view by clicking on the buttons at the top left of the page. Having a year view will help you see how in which part of the year the stock has grown or fallen.
 
 ![Screenshot of closing trends of selected stocks](media/service-connect-to-analyze-stocks/stocks-performance-closing-trend.png)  
+
+### Volume
 
 You can look at the volume of selected stock by scrolling down to the next visual. You can hover at a time interval to see the volume of stock at that part of the year.
 
@@ -70,26 +74,29 @@ You can look at the volume of selected stock by scrolling down to the next visua
 
 OHLC Charts are highly useful since they show four major datapoints for a given stock at same time. So, in the next visual down the page you will see OHLC visual which shows you opening, closing, high, and low of the stock selected. You can also look deeper into the data by changing the moving average. 
 
-![Screenshot of OHLC](media/service-connect-to-analyze-stocks/ohlc-chart.png)
+![Screenshot of OHLC](media/service-connect-to-analyze-stocks/stocks-performance-ohlc.png)
 
 ### Bollinger band
 
 Bollinger band eases your decision making and helps you choose the right stock. Bollinger bands use complex mathematics to show the trends. You can see a number of KPI’s which were in OHLC, and along with that you can see another three lines. The middle line shows the moving average. The top line is shifted up by certain number of standard deviation and the bottom line is shifted down by a standard deviation.
 
-![Screenshot of bollinger band.](media/service-connect-to-analyze-stocks/bollinger-band.png) 
+![Screenshot of bollinger band.](media/service-connect-to-analyze-stocks/stocks-performance-bollinger.png) 
 
 ## Sectorwise distribution
 
-On the sector wise distribution page, you see the various stocks and the market they belong to. If you click on any of the sectors, the stocks will get filtered out, and the stocks belonging to the selected sector will start appearing. 
+On the sector-wise distribution page, you see the various stocks and the market they belong to. If you click on any of the sectors, the stocks get filtered out, and the stocks belonging to the selected sector will start appearing. 
 
 ![Screenshot of sector-wise distribution](media/service-connect-to-analyze-stocks/sector-wise-distribution.png)
  
+You can then hover over the stock to see the important KPI’s, such as previous close, close and the difference. The difference will help you understand how much the stock has fallen or grown since yesterday.
 
-You can then hover over the stock to see the important KPI’s, such as previous close, close and the difference. The difference will help you understand how much the stock has fallen or grown since yesterday. You can scroll down to see all of the stocks in that category.
+![Screenshot of sector-wise distribution](media/service-connect-to-analyze-stocks/sector-wise-distribution-detail.png)
+
+You can scroll down to see all of the stocks in that category.
  
 To see the distribution of market for different sectors we have the “Sector-wise distribution” visual which shows from top to down the sectors having the highest difference in their closing price from last day. You can choose to invest in high- or low-end sector by seeing this visual.
 
-![Screenshot of distribution of market for different sectors](media/service-connect-to-analyze-stocks/market-wise-distribution.png)
+![Screenshot of distribution of market for different sectors](media/service-connect-to-analyze-stocks/stocks-comparison-based-on-sector.png)
 
 
 ## Next steps
