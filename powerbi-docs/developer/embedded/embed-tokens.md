@@ -54,7 +54,7 @@ The *Embed for your customers* solution uses a non interactive authentication fl
     When using a *service principal*, you need to [enable Power BI APIs access](embed-sample-for-customers.md#step-6---service-principal-api-access) in the Power BI service *admin* settings. This allows your web app to access the Power BI REST APIs.
 
     >[!NOTE]
-    >Service principal supports all non-admin APIs, and some read-only [admin APIs](/rest/api/power-bi/admin). To enable service principal support for read-only admin APIs, you have to enable the Power BI service admin settings in your tenant. For more information, see [Enable service principal authentication for read-only admin APIs](../../admin/read-only-apis-service-principal-authentication.md).
+    >Service principal supports all user APIs, and some read-only [admin APIs](/rest/api/power-bi/admin). To enable service principal support for read-only admin APIs, you have to enable the Power BI service admin settings in your tenant. For more information, see [Enable service principal authentication for read-only admin APIs](../../admin/read-only-apis-service-principal-authentication.md).
 
 * **Master user**
 
@@ -112,9 +112,9 @@ This diagram shows an example of the authentication flow for the *embed for your
 
 3. The web app user authenticates against Azure AD using his Power BI credentials.
 
-4. Azure AD redirects the web app user back to the web app with the Azure AD token.
+4. Azure AD redirects the web app user back to the web app with the Azure AD token (in an implicit grant scenario, the access token is returned to the user's browser).
 
-5. In an implicit grant scenario, the access token is returned to the user's browser.
+5. The web app passes the Azure AD token to the user's web browser.
 
 6. Your Power BI web app uses the Azure AD token to embed Power BI content such as reports and dashboards, which the web app user has rights to access.
 
