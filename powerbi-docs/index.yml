@@ -15,7 +15,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 12/16/2020 #Required; mm/dd/yyyy format.
+  ms.date: 02/03/2021 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -27,13 +27,13 @@ highlightedContent:
       itemType: get-started
       url: fundamentals/desktop-getting-started.md
     # Card
-    - title: DirectQuery for Power BI datasets and Azure Analysis
-      itemType: concept
-      url: connect-data/desktop-directquery-datasets-azure-analysis-services.md
+    - title: Power BI embedded analytics client APIs
+      itemType: overview
+      url: /javascript/api/overview/powerbi/
     # Card
-    - title: Consume Azure Machine Learning models in Power BI
-      itemType: tutorial
-      url: connect-data/service-aml-integrate.md
+    - title: Datasets discovery using the datasets hub (Preview)
+      itemType: concept
+      url: connect-data/service-datasets-hub.md
     # Card
     - title: Power BI on Microsoft Learn 
       itemType: learn
@@ -274,15 +274,26 @@ additionalContent:
   # Supports up to 3 sections
   sections:
     - title: Related tools # < 60 chars (optional)
-    - items:
+      items:
         # Card
         - title: Power BI Report Server
           summary: Explore Power BI Report Server, an on-premises report server with a web portal in which you display and manage Power BI reports, paginated reports, and KPIs.
           url: report-server/index.yml
-        # Card
         - title: Power BI REST APIs
           summary: The Power BI REST APIs provide service endpoints for embedding, administration, and user resources.
           url: /rest/api/power-bi/
-        - title: Power Platform documentation
-          summary: Learn how Power BI, Power Apps, Power Automate, and Power Virtual Agents work together to enhance each other.
-          url: /power-platform/
+        - title: Power BI embedded analytics client APIs
+          summary: A client-side library for embedding Power BI using JavaScript or TypeScript.
+          url: /javascript/api/overview/powerbi/
+    - title: Other Microsoft Power Platform products # < 60 chars (optional)
+      items:
+        # Card
+        - title: Power Apps
+          summary: Quickly build low-code apps that modernize precesses and solve tough business challenges in your organization.
+          url: /powerapps/
+        - title: Power Automate
+          summary: Create automated workflows between your favorite apps and services to synchronize files, get notifications, and more.
+          url: /power-automate/
+        - title: Power Virtual Agents
+          summary: Create powerful bots using a guided, no-code graphical interface with no need for data scientists or developers.
+          url: /power-virtual-agents/

@@ -27,7 +27,6 @@ With DirectQuery, queries are sent back to your Azure SQL Database as you explor
 * Ensure firewall rules for the database are configured to "[Allow access to Azure services](/azure/sql-database/sql-database-networkaccess-overview#allow-azure-services)."
 * Every action such as selecting a column or adding a filter will send a query back to the database.
 * Tiles are refreshed every hour (refresh does not need to be scheduled). You can adjust how often to refresh in the Advanced settings when you connect.
-* Q&A is not available for DirectQuery datasets.
 * Schema changes are not picked up automatically.
 
 These restrictions and notes may change as we continue to improve the experiences. The steps to connect are detailed below.

@@ -15,13 +15,11 @@ LocalizationGroup: Visualizations
 
 # Customize visualization titles, backgrounds, labels, and legends
 
-[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
-
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 In this tutorial, you'll learn a few different ways to customize your visualizations. There are so many options for customizing your visualizations. The best way to learn about them all is by exploring the **Format** pane (select the paint roller icon). To get you started, this article shows you how to customize a visualization title, legend, background, label, layer, and add a theme.
 
 You can't customize all visualizations. See the [complete list](#visualization-types-that-you-can-customize) of visualizations for details.
-
 
 ## Prerequisites
 
@@ -55,14 +53,13 @@ To follow along, sign into Power BI Desktop and open the [Retail Analysis Sample
 
     ![Screenshot of the Format pane with the Title text entered.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-title.png)
 
-1. Change **Font color** to white and **Background color** to blue.    
+1. Change **Font color** to white and **Background color** to blue.
 
     a. Select the drop-down and choose a color from **Theme colors**, **Recent colors**, or **Custom color**.
-    
+
     ![Screenshot of the Font color and Background color options.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-color.png)
 
     b. Select the drop-down to close the color window.
-
 
 1. Increase the text size to **16 pt**.
 
@@ -123,6 +120,7 @@ Save the changes you've made and move to the next section.
 If you ever need to revert all of the changes, select **Revert to default**, at the bottom of the **Legend** customization pane.
 
 ## Customize total labels for stacked visuals
+
 Stacked visuals can display data labels and total labels. On a stacked column chart, data labels identify the value for each portion of a column. Total labels display the total value for the entire aggregated column. 
 
 Watch Rien add total labels to a stacked chart, and then follow the steps below to try it out yourself.
@@ -131,7 +129,7 @@ Watch Rien add total labels to a stacked chart, and then follow the steps below 
 
 1. Open the **Overview** report page and select the **Average selling area size by chain and store type** bar chart.
 
-1. In the **Visualization** tab, select ![icon for the stacked bar chart](media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-bar.png) to convert this bar chart to a stacked bar chart. Notice that the visual retains its data labels. 
+1. In the **Visualization** tab, select ![icon for the stacked bar chart](media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-bar.png) to convert this bar chart to a stacked bar chart. Notice that the visual retains its data labels.
 
     ![Screenshot of the new stacked bar chart.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-chart.png)
 
@@ -145,24 +143,23 @@ Watch Rien add total labels to a stacked chart, and then follow the steps below 
 
     ![Screenshot of the new stacked bar chart with total labels.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-bar-totals.png)
 
-
 ## Customize layer order
+
 Change the layering order of visuals and shapes in your reports. Layer order determines which objects will come to the front when selected. Whenever you select an object on the report canvas, it becomes active and moves to the top layer. For visuals, this makes it easier to interact with the selected visual. But, for shapes and backgrounds, you may want to secure them to the bottom layer, so that you can't accidentally select them and cover or obscure your report visuals. 
 
 Layering controls are available in the Power BI service, Power BI Desktop, mobile, and Report server. This article shows you how to change layer order behavior in the Power BI service.
 
 Watch Rien change layer order behavior, and then follow the steps below to try it out yourself.
 
-
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4IY3L]
 
-1. Add a new report page by selecting the yellow plus sign. 
+1. Add a new report page by selecting the yellow plus sign.
 
-1. Add a shape to the canvas. Here, we've added a blue rectangle. 
+1. Add a shape to the canvas. Here, we've added a blue rectangle.
 
     ![Screenshot of the new report page with a blue rectangle.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-shape.png)
 
-1. Copy-paste a visual from another page in the report. 
+1. Copy-paste a visual from another page in the report.
 
     ![Screenshot of the new report page with a blue rectangle and a pie chart.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-layer.png)
 
@@ -174,14 +171,12 @@ Watch Rien change layer order behavior, and then follow the steps below to try i
 
 1. In Reading view, when you select the blue rectangle, it stays in the back layer.
 
-
 ## Customize colors using a theme
 
 With report themes you can apply design changes to your entire report, such as using corporate colors, changing icon sets, or applying new default visual formatting. When you apply a report theme, all visuals in your report use the colors and formatting from your selected theme.
 
 To apply a theme to your report, select **Switch theme** from the menu bar. Choose a theme.  The report below uses the **Solar** theme.
 
- 
 ![Report using Solar theme of yellows, oranges, and reds](media/power-bi-visualization-customize-title-background-and-legend/power-bi-theme.png)
 
 ## Visualization types that you can customize
@@ -222,5 +217,3 @@ Here is a list of the visualizations and the customization options that are avai
 - [Getting started with color formatting and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-
-

@@ -248,7 +248,7 @@
         href: ../visuals/power-bi-report-visualizations.md
       - name: "Change visuals in reports"
         href: ../visuals/power-bi-report-change-visualization-type.md
-      - name: "Customize visual titles, backgrounds, and legends"
+      - name: "Customize visual titles, backgrounds, legends, and more"
         href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
       - name: "Show items with no data"
         href: desktop-show-items-no-data.md
@@ -312,6 +312,10 @@
         href: ../visuals/power-bi-visualization-scatter.md
       - name: "Use high-density scatter charts"
         href: ../visuals/desktop-high-density-scatter-charts.md
+      - name: "Create small multiples (preview)"
+        href: ../visuals/power-bi-visualization-small-multiples.md
+      - name: "Interact with small multiples (preview)"
+        href: ../visuals/power-bi-visualization-small-multiples-interact.md
       - name: "Shape Map visuals (preview)"
         href: ../visuals/desktop-shape-map.md
       - name: "Smart narratives"

@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 12/01/2020
+ms.date: 02/04/2021
 ms.author: painbar
 ms.custom:
 
@@ -47,19 +47,23 @@ To enable service principal authentication for Power BI read-only APIs, follow t
     >[!IMPORTANT]
     >Once you enable the service principal to be used with Power BI, the application's Azure AD permissions no longer have any effect. The application's permissions are then managed through the Power BI admin portal.
 
+## Supported APIs
+
+Service principal currently supports the following APIs:
+* [GetGroupsAsAdmin](/rest/api/power-bi/admin/groups_getgroupsasadmin) with $expand for dashboards, datasets, reports, and dataflows 
+* [GetDashboardsAsAdmin](/rest/api/power-bi/admin/dashboards_getdashboardsasadmin) with $expand tiles
+* [GetDatasourcesAsAdmin](/rest/api/power-bi/admin/datasets_getdatasourcesasadmin) 
+* [GetDatasetToDataflowsLinksAsAdmin](/rest/api/power-bi/admin/datasets_getdatasettodataflowslinksingroupasadmin)
+* [GetDataflowDatasourcesAsAdmin](/rest/api/power-bi/admin/dataflows_getdataflowdatasourcesasadmin) 
+* [GetDataflowUpstreamDataflowsAsAdmin](/rest/api/power-bi/admin/dataflows_getupstreamdataflowsingroupasadmin) 
+* [GetCapacitiesAsAdmin](/rest/api/power-bi/admin/getcapacitiesasadmin)
+* [GetActivityLog](/rest/api/power-bi/admin/getactivityevents)
+* [GetModifiedWorkspaces](/rest/api/power-bi/admin/workspaceinfo_getmodifiedworkspaces)
+* [WorkspaceGetInfo](/rest/api/power-bi/admin/workspaceinfo_postworkspaceinfo)
+* [WorkspaceScanStatus](/rest/api/power-bi/admin/workspaceinfo_getscanstatus)
+* [WorkspaceScanResult](/rest/api/power-bi/admin/workspaceinfo_getscanresult)
+
 ## Considerations and limitations
+
 * You can't sign into the Power BI portal using service principal.
 * Power BI admin rights are required to enable service principal in the Admin API settings in the Power BI admin portal.
-* Service principal currently supports the following APIs:
-    * [GetGroupsAsAdmin](/rest/api/power-bi/admin/groups_getgroupsasadmin) with $expand for dashboards, datasets, reports, and dataflows 
-    * [GetDashboardsAsAdmin](/rest/api/power-bi/admin/dashboards_getdashboardsasadmin) with $expand tiles
-    * [GetDatasourcesAsAdmin](/rest/api/power-bi/admin/datasets_getdatasourcesasadmin) 
-    * [GetDatasetToDataflowsLinksAsAdmin](/rest/api/power-bi/admin/datasets_getdatasettodataflowslinksingroupasadmin)
-    * [GetDataflowDatasourcesAsAdmin](/rest/api/power-bi/admin/dataflows_getdataflowdatasourcesasadmin) 
-    * [GetDataflowUpstreamDataflowsAsAdmin](/rest/api/power-bi/admin/dataflows_getupstreamdataflowsingroupasadmin) 
-    * [GetCapacitiesAsAdmin](/rest/api/power-bi/admin/getcapacitiesasadmin)
-    * [GetActivityLog](/rest/api/power-bi/admin/getactivityevents)
-    * [GetModifiedWorkspaces](/rest/api/power-bi/admin/workspaceinfo_getmodifiedworkspaces)
-    * [WorkspaceGetInfo](/rest/api/power-bi/admin/workspaceinfo_postworkspaceinfo)
-    * [WorkspaceScanStatus](/rest/api/power-bi/admin/workspaceinfo_getscanstatus)
-    * [WorkspaceScanResult](/rest/api/power-bi/admin/workspaceinfo_getscanresult)
