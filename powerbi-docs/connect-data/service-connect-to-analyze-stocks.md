@@ -17,51 +17,41 @@ The stock market app shows you multiple KPIs to start your analytics journey in 
 
 ## ETF Dashboard
 
-The ETF dashboard includes the closing trends for four major indexes. You can choose to see the trend for a week, month or a year. The default view - graph view, helps you to understand how drastically the trend has changed over time. You can also switch to candlestick chart by clicking on the toggle switch at the top right of the page.
+The ETF dashboard has visuals showing the closing trends for four major indexes. 
+* **Nasdaq**: The NASDAQ Composite Index measures the change in more than 3,000 stocks traded on the NASDAQ exchange.
+* **S&P 500**: S&P 500 is regarded as the best single gauge of large-cap U.S. equities.
+* **Dow Jones**: The Dow Jones shows you the market growth of leaders of the IT industry, such as Microsoft. The closing trend of Dow Jones signifies at which trend have the stocks under this index have closed by the end of day.
+* **Russell 2000**: Russel 2000 is the most common benchmark for mutual funds. The Russell 2000 closing trend visual can be used provide investment guidance about more than 2000 low-range stocks.
 
-Hover the pointer over a chart to get the exact data point of a specific day.
+A running banner at the top of the dashboard shows you the current day's close and the price change from the previous days close for the four indexes shown on the page.
 
-The running banner at the top of the page shows you the current day's close and the price change from the previous days close for the four indexes shown on the page.
+The default view - graph view - helps you to understand how drastically the trend has changed over time. You can use the time scale buttons at the top left of the dashboard to choose to see the trend for a week, month or a year. Hover the pointer over the chart to get the exact data point of a specific day.
 
-### Nasdaq closing trend
+![Screenshot of ETF dashboard graph view.](media/service-connect-to-analyze-stocks/etf-dashboard-graph.png)  
 
-Nasdaq closing trend visual shows the closing trend of the stock market.
+On the x-axis you see the time period and on y-axis you see the closing value.
 
-![Screen shot showing Nasdaq closing trend.](media/service-connect-to-analyze-stocks/nasdaq-closing-trend.png)
+You can also switch to a candlestick chart by clicking on the toggle switch at the top right of the dashboard. In candlestick view you can see the open, high, low, and close prices for each data point. Hover the pointer over the chart to get the exact data point of a specific day.
 
-On the x-axis you can see the time period and on y-axis you can see the closing value. 
+![Screenshot of ETF dashboard candlestick view.](media/service-connect-to-analyze-stocks/etf-dashboard-candlestick.png)
 
-### S&P 500
-
-The S&P 500 visual shows you the closing trend for the S&P 500 index. The S&P 500 index is regarded as the best single gauge of large-cap U.S. equities.
-
-![Screen shot showing S&P 500 closing trend.](media/service-connect-to-analyze-stocks/s-and-p-closing-trend.png)
- 
-### Dow Jones
-
-The Dow Jones index is another top index which is used to see closing trends. You can use Dow Jones to see the market growth of leaders in the IT industry, such as Microsoft. 
-
-![Screen shot showing Dow Jones closing trend.](media/service-connect-to-analyze-stocks/dow-jones-closing-trend.png)
-
-### Russell 3000
-
-Russell 3000 is the most common benchmark for mutual funds. You can refer to “Russell 2000 closing trend” visual to invest in more than 2000 low range stocks. 
-
-![Screen shot showing Russell 3000 closing trend.](media/service-connect-to-analyze-stocks/russell-3000-closing-trend.png)
- 
 ## Stocks and ETFs Comparison
 
-The Stocks and ETFs Comparison page shows you normalized charts that enable you to compare selected stocks and ETFs.
+The Stocks and ETFs Comparison dashboard shows you two normalized charts that make it easy to compare selected stocks and ETFs.
+
+![Screenshot of stock comparison dashboard select button.](media/service-connect-to-analyze-stocks/stocks-comparison-dashboard.png)
 
 To use this page, first select the stocks you wish to compare. 
 1. Click the **Select** button
-1. Click **Clear** to remove any previous selections
+    ![Screenshot of stock comparison dashboard select.](media/service-connect-to-analyze-stocks/stocks-comparison-dashboard-select.png)
+1. On the Select Stocks page that appears, click **Clear** to remove any previous selections
+    ![Screenshot of stock comparison dashboard clear.](media/service-connect-to-analyze-stocks/stocks-comparison-dashboard-select-clear.png)
 1. Select the stocks you wish to compare
-1. Click **Apply** 
+1. Click **Apply**
 
-At the top of the page a banner shows you the current day's close and the difference from the previous day's close for the selected stocks.
+After you have selected the stocks you're interested in, use the dropdown arrow to select the particular stocks you wish to compare.
 
-The normalized comparison charts charts allow you to compare the performance of selected stocks and ETFs.
+![Screenshot of stock comparison dashboard select dropdown.](media/service-connect-to-analyze-stocks/stocks-comparison-dashboard-select-dropdown.png)
 
 ## Stock Performance Analysis
 
