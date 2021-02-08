@@ -7,7 +7,7 @@ ms.reviewer: amshuste
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 12/29/2020
+ms.date: 02/08/2021
 ---
 
 # Embedded analytics application tokens
@@ -51,7 +51,10 @@ The *Embed for your customers* solution uses a non interactive authentication fl
 
     Your web app uses the Azure AD [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) to authenticate against Azure AD and get an *Azure AD token*. This is an *app-only* authentication method, which is recommended by Azure AD.
 
-    When using a *service principal*, you need to [enable Power BI APIs access](embed-sample-for-customers.md#step-6---service-principal-api-access) in the Power BI service *admin* settings. This allows your web app to access all the Power BI REST APIs.
+    When using a *service principal*, you need to [enable Power BI APIs access](embed-sample-for-customers.md#step-6---service-principal-api-access) in the Power BI service *admin* settings. This allows your web app to access the Power BI REST APIs.
+
+    >[!NOTE]
+    >Service principal supports all non-admin APIs, and some read-only [admin APIs](/rest/api/power-bi/admin). To enable service principal support for read-only admin APIs, you have to enable the Power BI service admin settings in your tenant. For more information, see [Enable service principal authentication for read-only admin APIs](../../admin/read-only-apis-service-principal-authentication.md).
 
 * **Master user**
 
@@ -93,7 +96,7 @@ The *Embed for your organization* solution uses an interactive authentication fl
 
 >[!NOTE]
 >* The *embed for your organization* solution doesn't support A SKUs.
->* To [move to production](move-to-production.md) you'll need you'll need one of the following configurations:
+>* To [move to production](move-to-production.md) you'll need one of the following configurations:
 >    * All users with Pro licenses.
 >    * All users with PPU licenses.
 >    * A [capacity](embedded-capacity.md). This configuration allows all users to have free licenses.
