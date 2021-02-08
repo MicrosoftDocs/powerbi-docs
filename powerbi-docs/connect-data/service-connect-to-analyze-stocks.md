@@ -44,8 +44,7 @@ The Stocks and ETFs Comparison dashboard shows you two normalized charts that ma
 To use this page, first select the stocks you wish to compare. 
 1. Click the **Select** button
     ![Screenshot of stock comparison dashboard select.](media/service-connect-to-analyze-stocks/stocks-comparison-dashboard-select.png)
-1. On the Select Stocks page that appears, click **Clear** to remove any previous selections
-    ![Screenshot of stock comparison dashboard clear.](media/service-connect-to-analyze-stocks/stocks-comparison-dashboard-select-clear.png)
+1. On the **Select Stocks** page that appears, click **Clear** to remove any previous selections
 1. Select the stocks you wish to compare
 1. Click **Apply**
 
@@ -55,19 +54,17 @@ After you have selected the stocks you're interested in, use the dropdown arrow 
 
 ## Stock Performance Analysis
 
- Stock Performance Analysis page shows you important KPI’s about selected stock, such as the previous day's close, close, open, high, and low. Select the dropdown choose the stock you want to see from among the stocks you've selected for analysis. You will see that the value changes after clicking on the stock of your choice.
- 
-### Closing trend
+ Stock Performance Analysis dashboard shows you important KPI’s about selected stock, such as the previous day's close, close, open, high, and low. Select the dropdown to choose the stock you want to see from among the stocks you've selected for analysis. You will see that the value changes after clicking on the stock of your choice.
 
+![Screenshot of stock performance analysis select.](media/service-connect-to-analyze-stocks/stocks-performance-select.png)
+ 
 You can see the closing trend for the selected stock, and you can choose to switch it to month view or year view by clicking on the buttons at the top left of the page. Having a year view will help you see how in which part of the year the stock has grown or fallen.
 
-![Screenshot of closing trends of selected stocks](media/service-connect-to-analyze-stocks/selected-stocks-closing-trend.png)  
-
-### Volume
+![Screenshot of closing trends of selected stocks](media/service-connect-to-analyze-stocks/stocks-performance-closing-trend.png)  
 
 You can look at the volume of selected stock by scrolling down to the next visual. You can hover at a time interval to see the volume of stock at that part of the year.
 
-![Screenshot of volume of selected stocks](media/service-connect-to-analyze-stocks/selected-stocks-volume.png)
+![Screenshot of volume of selected stocks](media/service-connect-to-analyze-stocks/stocks-performance-volume.png)
  
 ### OHLC chart
 
