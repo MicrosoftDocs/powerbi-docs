@@ -11,9 +11,17 @@ LocalizationGroup: Connect to services
 ---
 # Analyze popular stocks with Power BI
 
-Meaning: Explain that it’s for tutorial/new user example, track popular stocks for personal use, compare stocks in power bi
+The stock market app shows you multiple KPIs to start your analytics journey in Power BI. You can use it to track end-of-day quotes as well as weekly, monthly, or yearly trends for popular stocks and ETFs. The app shows you Power BI in action, with tracking of stock highs and lows, moving averages, sector-wise distribution, Bollinger bands, and even performance comparisons for popular stocks over time.
 
-The stock market app shows you multiple KPIs to start your analytics journey in Power BI. Use it to track end-of-day quotes as well as weekly, monthly, or yearly trends for popular stocks and ETFs. See Power BI in action with tracking of stock highs and lows, moving averages, sector-wise distribution, Bollinger bands, and even performance comparisons for popular stocks over time. 
+The app features four dashboards:
+* **ETF Dashboard**: Graph and candlestick charts for four major indexes.
+* **Stocks and ETFs Comparison**: Normalized charts that enable you to easily compare stocks and EFTs.
+* **Stock Performance Analysis**: Detailed analysis of selected stocks with visuals for closing trends, volume, OHLC, and Bollinger bands.
+* **Sector-wise distribution**: Decomposition tree that enables you to break out stock performance by sector.
+
+You can navigate between the dashboards using the navigation side pane or the forward and back arrows at the top right of the page.
+
+![Screenshot of stocks app.](media/service-connect-to-analyze-stocks/stocks-app.png)
 
 ## ETF Dashboard
 
@@ -101,8 +109,7 @@ To see the distribution of market for different sectors we have the “Sector-wi
 
 ## Next steps
 
-* [Tutorial: Connect to a GitHub repo with Power BI](service-tutorial-connect-to-github.md)
-* [Create the new workspaces in Power BI](../collaborate-share/service-create-the-new-workspaces.md)
-* [Install and use apps in Power BI](../consumer/end-user-apps.md)
-* [Connect to Power BI apps for external services](service-connect-to-services.md)
+* [What are Power BI template apps](service-template-apps-overview.md)
+* [Create a template app in Power BI](service-template-apps-create.md)
+* [Install and distribute template apps in your organization](service-template-apps-install-distribute.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
