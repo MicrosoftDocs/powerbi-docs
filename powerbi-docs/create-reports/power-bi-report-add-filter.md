@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/05/2021
+ms.date: 02/08/2021
 LocalizationGroup: Reports
 ---
 # Add a filter to a report in Power BI
@@ -32,11 +32,9 @@ Because filters *persist*, when you navigate away from the report Power BI retai
 Keep in mind that as the report creator, whatever filters you save with the report become the default filter state for all your report readers. When they select **Reset to default**, that's what they return to.
 
 ## Levels of filters in the Filters pane
-Whether you're using Desktop or Power BI service, the Filters pane displays along the right side of the report canvas. If you don't see the Filters pane, select the ">" icon from the upper-right corner to expand it.
+Whether you're using Power BI Desktop or Power BI service, the Filters pane displays along the right side of the report canvas. If you don't see the Filters pane, select the ">" icon from the upper-right corner to expand it.
 
 You can set filters at three different levels for the report: visual-level, page-level, and report-level. You can also set drillthrough filters. This article explains the different levels.
-
-![filter pane in Reading view](media/power-bi-report-add-filter/power-bi-add-filter-reading-view.png)
 
 ## Add a filter to a visual
 You can add a visual-level filter to a specific visual in two different ways. 
@@ -56,7 +54,7 @@ By the way, this procedure uses the Retail Analysis sample, if you'd like to dow
    
    ![Visualizations, Filters, and Fields panes](media/power-bi-report-add-filter/power-bi-display-panes.png)
 
-3. Select a visual to make it active. In this case, it's the scatter chart on the Overview page. All the fields in the visual are in the **Fields** pane and also listed in the **Filters** pane, under the **Filters on this visual** heading.
+3. Select a visual to make it active. In this case, it's the scatter chart on the Overview page. All the fields in the visual are in the **Visualizations** pane. They're also listed in the **Filters** pane, under the **Filters on this visual** heading.
    
    ![Select visual-level filters](media/power-bi-report-add-filter/power-bi-default-visual-filter.png).
   
