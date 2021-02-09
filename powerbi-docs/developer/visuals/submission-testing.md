@@ -1,5 +1,5 @@
 ---
-title: Submission testing of a Power BI visual in Power BI embedded analytics
+title: Submission testing of a Power BI visual
 description: This article describes test cases that your visual must pass before publishing to AppSource. There are also option test cases.
 author: KesemSharabi
 ms.author: kesharab
