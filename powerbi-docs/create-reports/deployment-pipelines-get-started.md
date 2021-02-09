@@ -138,6 +138,8 @@ Dataset rules are defined on data sources and parameters, in each dataset. They 
 
 ### Create a dataset rule
 
+Follow these steps to create a dataset rule. After you create all the dataset rules you need, deploy your content to the next stage. Your rules will not apply until you deploy.
+
 1. In the pipeline stage you want to create a dataset rule for, select **Deployment settings**.
 
     ![A screenshot of the deployment settings button, located at the top right of each deployment pipeline stage.](media/deployment-pipelines-get-started/deployment-settings.png)
