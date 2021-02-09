@@ -51,7 +51,7 @@ The Stocks and ETFs Comparison dashboard shows you two normalized charts that ma
 
 To use this page, first select the stocks you wish to compare. 
 1. Click the **Select** button
-    ![Screenshot of stock comparison dashboard select.](media/service-connect-to-analyze-stocks/stocks-comparison-dashboard-select.png)
+    ![Screenshot of stock comparison dashboard clear selections.](media/service-connect-to-analyze-stocks/stocks-comparison-dashboard-select.png)
 1. On the **Select Stocks** page that appears, click **Clear** to remove any previous selections, and then select the stocks you wish to compare
     ![Screenshot of stock comparison dashboard select.](media/service-connect-to-analyze-stocks/stocks-comparison-dashboard-select-clear.png)
 1. Click **Apply**
@@ -94,11 +94,11 @@ Bollinger bands use complex mathematics to show the trends. You can see a number
 
 On the sector-wise distribution page, you see the various stocks and the market they belong to. If you click on any of the sectors, the stocks get filtered out, and the stocks belonging to the selected sector will start appearing. 
 
-![Screenshot of sector-wise distribution](media/service-connect-to-analyze-stocks/sector-wise-distribution.png)
+![Screenshot of sector-wise distribution.](media/service-connect-to-analyze-stocks/sector-wise-distribution.png)
  
 You can then hover over the stock to see the important KPI’s, such as previous close, close and the difference. The difference will help you understand how much the stock has gained or lost since yesterday.
 
-![Screenshot of sector-wise distribution](media/service-connect-to-analyze-stocks/sector-wise-distribution-detail.png)
+![Screenshot of sector-wise distribution detail.](media/service-connect-to-analyze-stocks/sector-wise-distribution-detail.png)
 
 You can scroll down to see all of the stocks in that category.
  
