@@ -12,7 +12,7 @@ LocalizationGroup: Reports
 ---
 # Filters and highlighting in Power BI reports
 
- This article introduces you to filtering and highlighting in the Power BI service. The experience is almost exactly the same in Power BI Desktop. *Filters* remove all but the data you want to focus on. In general, *highlighting* isn't filtering. In most visuals it doesn't remove the unrelated data. Instead it highlights the related data. The rest of the data remains visible but dimmed. See [Ad hoc cross-filtering and cross-highlighting](#ad-hoc-cross-filtering-and-cross-highlighting) later in this article for details.
+ This article introduces you to filtering and highlighting in the Power BI service. The experience is almost exactly the same in Power BI Desktop. *Filters* remove all but the data you want to focus on. In general, *highlighting* isn't filtering. In most visuals it doesn't remove the unrelated data. Instead it highlights the related data. The rest of the data remains visible but dimmed. See [Cross-filtering and cross-highlighting](#cross-filtering-and-cross-highlighting) later in this article for details.
 
 ![New filter experience](media/power-bi-reports-filters-and-highlighting/power-bi-filter-reading.png)
 
@@ -20,7 +20,7 @@ LocalizationGroup: Reports
 There are many different ways you can filter and highlight reports in Power BI. Putting all of that information in one article would be a lot, so we've broken it into these sections:
 
 * Introduction to filters and highlighting, the article you're reading now.
-* How [filters and highlighting work in Reading view](../consumer/end-user-interactions.md) in the Power BI service. What you can do is more limited that Editing view, but you still have a wide range of filtering and highlighting options.  
+* How [filters and highlighting work in Reading view](../consumer/end-user-interactions.md) in the Power BI service. What you can do is more limited than Editing view, but you still have a wide range of filtering and highlighting options.  
 * How to [create filters in Editing view](power-bi-report-add-filter.md) in reports in Power BI Desktop and the Power BI service. When you have editing permissions for a report, you can create, modify, and delete filters in reports.
 * After you add filters, you can [format the filters in your Power BI reports](power-bi-report-filter.md) to act the way you want, and look like the rest of the report.
 * After you've learned how filters and highlighting work by default, learn how to [change the way visualizations on a page filter and highlight each other](service-reports-visual-interactions.md)
@@ -42,7 +42,7 @@ There are four basic types of filters.
 
 By default, report readers can switch from **Basic** to **Advanced** filtering. 
 
-**Basic filters** show a list of all the values in the field. You can search to find the value you need. You can search in page, visual, and report filters, in Reading or Editing view, to find and select the value you want. 
+**Basic filters** show a list of all the values in the field. You can search in page, visual, and report filters, in Reading or Editing view, to find and select the value you want. 
 
 ![Search in a filter](media/power-bi-reports-filters-and-highlighting/power-bi-search-filter.png)
 
@@ -69,7 +69,7 @@ In the Power BI service, if you select a visual in Reading view, the Filters pan
 
 Each visual has filters for all the fields in the visual. When you create a report, you can add more. In this Filters pane, the visual has three filters.
 
-In Reading view, explore the data by modifying the existing filters. When you exit the report, the changes you make are saved with the report, even if you open the report in a mobile app. To undo your filtering and return to the defaults set by the report author, select **Reset to default** from the top menu bar.
+In Reading view, explore the data by modifying the existing filters. You're only filtering your view of the report. When you exit the report, the changes you make are saved with your view of the report, even if you open the report in a mobile app. To undo your filtering and return to the defaults set by the report author, select **Reset to default** from the top menu bar.
 
 :::image type="content" source="../consumer/media/end-user-report-filter/power-bi-reset-icon.png" alt-text="Reset to default icon.":::
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/05/2021
+ms.date: 02/08/2021
 LocalizationGroup: Reports
 ---
 # Format filters in Power BI reports
@@ -182,7 +182,7 @@ Custom sort functionality is available in the Filters pane. When creating your r
 
 ![Rearrange filter sort order](media/power-bi-report-filter/power-bi-filter-sort.gif)
 
-The default sort order is alphabetical for filters. To start custom sort mode, just drag any filter to a new position. You can only sort filters within the level they apply to -- for example, a visual-level, page-level, or report-level filter.
+The default sort order is alphabetical for filters. To start custom sort mode, just drag any filter to a new position. You can only reorder filters within the level they apply to. For example, you can change the order of the visual-level filters within the visual-level section of the Filters pane.
 
 ## Improved Filters pane accessibility
 
