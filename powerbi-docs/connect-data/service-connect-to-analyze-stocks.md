@@ -1,5 +1,5 @@
 ---
-title: Connect to Analyze Popular Stocks with Power BI
+title: Analyze Popular Stocks with Power BI
 description: Analyze Popular Stocks with Power BI
 author: paulinbar
 ms.author: painbar
