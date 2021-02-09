@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 02/09/2021
 ---
 
-# Submission testing of a Power BI visual
+# Testing a Power BI visual before submission
 
 Before you publish your visual to [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), it must pass the tests listed in this article. Test your visual before you submit it. If your visual doesn't pass the required test cases, it will be rejected.
 
