@@ -24,6 +24,13 @@ This article answers many common questions people have about paginated reports i
 
 The paginated reports workload is available on P1 – P3 SKUs.  You may also use it with A4 – A6 SKUs for embed or test/dev scenarios.
 
+> [!NOTE]
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+>
+>To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).
+>
+>Paginated reports workload is available on P1-P3 SKUs and A1-A6 SKUs in **Premium Gen2**
+
 ### What is the maximum memory threshold I can put for paginated reports in my capacity?
 
 You may use up to 100% of the memory for this workload.
@@ -76,6 +83,9 @@ Default memory in each Premium SKU for paginated reports:
 Power BI admins can modify the default maximum memory percentage in the Admin portal. See the **Paginated Reports** workload section under **Power BI Premium** on the **Capacity settings** tab.
 
 :::image type="content" source="media/paginated-reports-faq/paginated-reports-capacity-settings.png" alt-text="Paginated reports Capacity settings tab":::
+
+> [!NOTE]
+> **Premium Gen2**, currently in preview, does not require memory settings to be changed. Memory in Premium Gen2 is automatically managed by the underlying system. Paginated reports workload is available on P1-P3 SKUs and A1-A6 SKUs in **Premium Gen2**
 
 ## General
 
