@@ -10,9 +10,58 @@ ms.date: 02/09/2021
 ---
 # Use the Power BI mobile app in split-screen mode
 
+Applies to:
 
+| ![Android tablet](./media/mobile-apps-split-screen/android-logo-40-px.png) |
+|:--- |
+| Android tablets |
+
+You can use split-screen mode to view and interact with your data in the Power BI app side by side with another app.
 
 ![Screenshot of Power BI in split-screen mode.](media/mobile-apps-split-screen/power-bi-mobile-split-screen.png)
+
+
+To open your apps in split-screen mode, follow the instructions for your device and operating system. 
+
+
+
+
+Android. 
+
+Supported only for tablet.
+
+According to device and os, enter mulit-screen mode  action itself, split screen experience
+
+Can work simultaneious on several 
+
+Although we support multiscreen : not all the things in the app are optimized for multiscreen mode.
+Optimized Reports work well in split screen.
+
+if a tablet doesn't support multiscreen 
+What versions support 
+
+
+
+Applies to Android tablets
+
+If your tablet has multi-window support, you can view and interact with your data side by side with another app using split-screen mode.
+
+The Power BI mobile app supports split-screen mode. In split screen mode you can view and interact with your data in the Power BI mobile app side by side with another app. 
+
+[Image]
+
+To open your apps in split-screen mode, follow the instructions for your device and operating system. Once you've got your
+
+Split-screen mode is available on supported devices and operating systems.  Check your devices and adroid version documentation to see if you can use split screen on your device.
+
+tablets that support multi-window split-screen mode.
+
+
+
+
+
+
+
 
 
 
