@@ -19,6 +19,13 @@ For related "What's New" information, see:
 >[!NOTE]
 >The Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
+## February 2021
+### Support for Power BI in split-screens (tablets only)
+
+If your tablet has multi-window support, you can view and interact with your data side by side with another app using split-screen mode.
+
+![Screenshot of the mobile app being used in split-sreen mode.](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-split-screen-mode.png)
+
 ## January 2021
 ### Workspace support with a Power BI free license
 Users with a Power BI free license can now view and access workspaces where they've been added as viewers directly from the workspaces list. This change is applicable for content that's hosted on a Power BI Premium capacity.
