@@ -52,8 +52,8 @@ The Stocks and ETFs Comparison dashboard shows you two normalized charts that ma
 To use this page, first select the stocks you wish to compare. 
 1. Click the **Select** button
     ![Screenshot of stock comparison dashboard select.](media/service-connect-to-analyze-stocks/stocks-comparison-dashboard-select.png)
-1. On the **Select Stocks** page that appears, click **Clear** to remove any previous selections
-1. Select the stocks you wish to compare
+1. On the **Select Stocks** page that appears, click **Clear** to remove any previous selections, and then select the stocks you wish to compare
+    ![Screenshot of stock comparison dashboard select.](media/service-connect-to-analyze-stocks/stocks-comparison-dashboard-select-clear.png)
 1. Click **Apply**
 
 After you have selected the stocks you're interested in, use the dropdown arrow to select the particular stocks you wish to compare.
