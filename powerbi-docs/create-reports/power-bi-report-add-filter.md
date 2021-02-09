@@ -12,7 +12,7 @@ LocalizationGroup: Reports
 ---
 # Add a filter to a report in Power BI
 
-This article explains how to add a page filter, visualization filter, report filter, or drillthrough filter to a report in Power BI. You need to be able to edit a report to add filters. The examples in this article are in the Power BI service. The steps are almost identical in Power BI Desktop.
+This article explains how to add a visualization filter, page filter, report filter, or drillthrough filter to a report in Power BI. You need to be able to edit a report to add filters. The examples in this article are in the Power BI service, and the steps are almost identical in Power BI Desktop.
 
 After you add filters, you can [format the filters in your Power BI reports](power-bi-report-filter.md) to act the way you want, and look like the rest of the report.
 
@@ -21,13 +21,13 @@ After you add filters, you can [format the filters in your Power BI reports](pow
 Power BI offers a number of different kinds of filters, from the manual and automatic to the drill-through and pass-through. Read about the [different kinds of filters](power-bi-report-filter-types.md).
 
 ## Filters in Editing view or Reading view
-You can interact with reports in two different views: Reading view and Editing view. The filtering capabilities available to you depend on which view you're in. Read all [about filters and highlighting in Power BI reports](power-bi-reports-filters-and-highlighting.md) for details.
+You interact with reports in two different views: Reading view and Editing view. The filtering capabilities depend on which view you're in. Read all [about filters and highlighting in Power BI reports](power-bi-reports-filters-and-highlighting.md) for details.
 
 This article describes how to create filters in report **Editing view**.  For more information on filters in Reading view, see [interacting with filters in report Reading view](../consumer/end-user-report-filter.md).
 
 Because filters *persist*, when you navigate away from the report Power BI retains the filter, slicer, and other data view changes that you've made. So you can pick up where you left off when you return to the report. If you don't want your filter changes to persist, select **Reset to default** from the top menu bar.
 
-![Reset to default button.](media/power-bi-report-add-filter/power-bi-reset-to-default.png)
+:::image type="content" source="../consumer/media/end-user-report-filter/power-bi-reset-icon.png" alt-text="Reset to default icon.":::
 
 Keep in mind that as the report creator, whatever filters you save with the report become the default filter state for all your report readers. When they select **Reset to default**, that's what they return to.
 
@@ -143,7 +143,7 @@ Let's see how the drillthrough filter works.
 ## Considerations and troubleshooting
 
 - If you do not see the Fields pane, make sure you're in report [Editing view](service-interact-with-a-report-in-editing-view.md)    
-- If you've made lots of changes to the filters and want to return to the report author default settings, select **Reset to default** from the top menubar.
+- If you've made lots of changes to the filters and want to return to the report author default settings, select **Reset to default** from the top menu bar.
 
 ## Next steps
 
