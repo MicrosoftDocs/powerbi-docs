@@ -213,9 +213,7 @@ To allow a quick visual insight into the differences between two sequential stag
 * **Orange indicator** - Appears if one of these conditions is met:
     * Some of the content items in each stage, were changed or updated (have different metadata).
     * There is a difference in the number of items between the stages.
-
-    >[!NOTE]
-    >Applying dataset rules requires deployment. If you configured dataset rules and didn't deploy, the orange indicator is shown.
+    * You configured dataset rules and didn't deploy.
 
 When two sequential stages aren't the same, a **compare** link appears underneath the orange comparison icon. Clicking the link opens the content item list in both stages in Compare view. Compare view helps you track changes or differences between items, in each pipeline stage. Changed items get one of the following labels:
 
