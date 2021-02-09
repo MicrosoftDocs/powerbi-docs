@@ -24,7 +24,7 @@ For related "What's New" information, see:
 
 If your tablet has multi-window support, you can view and interact with your data side by side with another app using split-screen mode.
 
-![Screenshot of the mobile app being used in split-sreen mode.](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-split-screen-mode.png)
+![Screenshot of the mobile app being used in split-sreen mode.](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-split-screen.png)
 
 ## January 2021
 ### Workspace support with a Power BI free license
