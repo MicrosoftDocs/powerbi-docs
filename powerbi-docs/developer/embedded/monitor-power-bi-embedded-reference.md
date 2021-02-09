@@ -7,6 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
+ms.custom: subject-monitoring
 ms.date: 01/14/2021
 ---
 
