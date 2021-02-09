@@ -12,7 +12,7 @@ ms.date: 02/09/2021
 
 
 
-
+![Screenshot of Power BI in split-screen mode.](media/mobile-apps-split-screen/power-bi-mobile-split-screen.png)
 
 
 
