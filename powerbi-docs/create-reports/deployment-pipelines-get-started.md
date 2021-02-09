@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 11/11/2020
+ms.date: 02/09/2021
 ---
 
 # Get started with deployment pipelines
@@ -213,6 +213,9 @@ To allow a quick visual insight into the differences between two sequential stag
 * **Orange indicator** - Appears if one of these conditions is met:
     * Some of the content items in each stage, were changed or updated (have different metadata).
     * There is a difference in the number of items between the stages.
+
+    >[!NOTE]
+    >Applying dataset rules requires deployment. If you configured dataset rules and didn't deploy, the orange indicator is shown.
 
 When two sequential stages aren't the same, a **compare** link appears underneath the orange comparison icon. Clicking the link opens the content item list in both stages in Compare view. Compare view helps you track changes or differences between items, in each pipeline stage. Changed items get one of the following labels:
 
