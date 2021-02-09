@@ -1,13 +1,13 @@
 ---
-title: Submission testing of a Power BI visual in Power BI embedded analytics for better embedded BI insights
-description: This article describes test cases that your visual must pass before publishing to AppSource. There are also option test cases. Enable better embedded BI insights using Power BI embedded analytics.
+title: Submission testing of a Power BI visual in Power BI embedded analytics
+description: This article describes test cases that your visual must pass before publishing to AppSource. There are also option test cases.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 04/15/2020
+ms.date: 02/09/2021
 ---
 
 # Submission testing of a Power BI visual
@@ -18,7 +18,13 @@ For more information about the publishing process, see [Publish Power BI visuals
 
 ## Testing a new version of a published visual
 
-If you're testing or debugging a new version of an already published visual, you can override the AppSource version with a local file version, by enabling Developer mode in Power BI Desktop.
+By default, Power BI loads the latest published version of the visual from AppSource, even if you import the visual from a local file.
+
+If you're testing or debugging a new version of an already published visual, you can override the AppSource version with a local file version, by enabling Developer mode in either Power BI Desktop, or Power BI service.
+
+### Enable Developer mode in Power BI Desktop
+
+In Power BI Desktop, Developer mode is only valid for one session. If you open a new Power BI Desktop instance for testing, you'll need to enable Developer mode again.
 
 To enable Developer mode, follow these steps:
 
@@ -32,8 +38,11 @@ To enable Developer mode, follow these steps:
 
 5. In Developer Mode, select the **Turn on developer mode for this session** option.
 
->[!NOTE]
->In Power BI Desktop, Developer mode is only valid for one session. If you open a new Power BI Desktop instance for testing, you'll need to enable Developer mode again.
+### Enable Developer mode in Power BI service
+
+In Power BI service, Developer mode is kept per user account. Every time a user loads the package from the local file, Power BI will ignore the AppSource version of the visual.
+
+To enable Developer mode in Power BI service, follow the instructions in [Set up Power BI service for developing a visual](environment-setup.md#set-up-power-bi-service-for-developing-a-visual).
 
 ## General test cases
 
