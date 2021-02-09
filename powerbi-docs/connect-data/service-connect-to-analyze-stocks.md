@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 02/06/2021
+ms.date: 02/09/2021
 LocalizationGroup: Connect to services
 ---
 # Analyze popular stocks with Power BI
@@ -68,7 +68,7 @@ After you have selected the stocks you're interested in, use the dropdown arrow 
  
 ### Closing trend
 
-You can see the closing trend for the selected stock, and you can choose to switch it to month view or year view by clicking on the buttons at the top left of the page. Having a year view will help you see how in which part of the year the stock has grown or fallen.
+You can see the closing trend for the selected stock, and you can choose to switch it to month view or year view by clicking on the buttons at the top left of the page. Having a year view will help you see in which part of the year the stock gained or lost value.
 
 ![Screenshot of closing trends of selected stocks](media/service-connect-to-analyze-stocks/stocks-performance-closing-trend.png)  
 
@@ -86,7 +86,7 @@ OHLC Charts are highly useful since they show four major datapoints for a given 
 
 ### Bollinger band
 
-Bollinger band eases your decision making and helps you choose the right stock. Bollinger bands use complex mathematics to show the trends. You can see a number of KPI’s which were in OHLC, and along with that you can see another three lines. The middle line shows the moving average. The top line is shifted up by certain number of standard deviation and the bottom line is shifted down by a standard deviation.
+Bollinger bands use complex mathematics to show the trends. You can see a number of KPI’s which were in OHLC, and along with that you can see another three lines. The middle line shows the moving average. The top line is shifted up by certain number of standard deviation and the bottom line is shifted down by a standard deviation.
 
 ![Screenshot of bollinger band.](media/service-connect-to-analyze-stocks/stocks-performance-bollinger.png) 
 
@@ -96,13 +96,13 @@ On the sector-wise distribution page, you see the various stocks and the market 
 
 ![Screenshot of sector-wise distribution](media/service-connect-to-analyze-stocks/sector-wise-distribution.png)
  
-You can then hover over the stock to see the important KPI’s, such as previous close, close and the difference. The difference will help you understand how much the stock has fallen or grown since yesterday.
+You can then hover over the stock to see the important KPI’s, such as previous close, close and the difference. The difference will help you understand how much the stock has gained or lost since yesterday.
 
 ![Screenshot of sector-wise distribution](media/service-connect-to-analyze-stocks/sector-wise-distribution-detail.png)
 
 You can scroll down to see all of the stocks in that category.
  
-To see the distribution of market for different sectors we have the “Sector-wise distribution” visual which shows from top to down the sectors having the highest difference in their closing price from last day. You can choose to invest in high- or low-end sector by seeing this visual.
+To see the distribution of market for different sectors we have the “Sector-wise distribution” visual which shows from top to down the sectors having the highest difference in their closing price from last day.
 
 ![Screenshot of distribution of market for different sectors](media/service-connect-to-analyze-stocks/stocks-comparison-based-on-sector.png)
 
