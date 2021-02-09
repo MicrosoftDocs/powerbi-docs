@@ -1,12 +1,12 @@
 ---
-title: Export Power BI embedded analytics reports API for better embedded BI insights
-description: Learn how to export an embedded Power BI report to enhance your Power BI embedded analytics embedded BI experience. Enable better embedded BI insights using Power BI embedded analytics.
+title: Export Power BI embedded analytics reports API
+description: Learn how to export an embedded Power BI report.
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 02/01/2021
+ms.date: 02/09/2021
 ---
 
 # Export Power BI report to file (preview)
