@@ -2,14 +2,12 @@
 title: Find content from Power BI service Home
 description: Start on the Home canvas and locate and open reports, dashboards, and apps.
 author: mihart
-ms.reviewer: maggies
-
-ms.service: powerbi
-ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 11/13/2020
 ms.author: mihart
-
+ms.reviewer: maggies
+ms.service: powerbi
+ms.subservice: pbi-explore
+ms.topic: conceptual
+ms.date: 12/03/2020
 LocalizationGroup: Get started
 ---
 # Find your dashboards, reports, and apps
@@ -38,13 +36,13 @@ The following topics review each of these options for finding and viewing conten
 ## Home canvas
 On the Home canvas, you can view all the content that you have permission to use. Your Home canvas also updates with recommended content and learning resources. At first, you might not have much content on your Home canvas, but that will change as you start to use Power BI with your colleagues.
 
-![A screenshot of the Welcome screen for a new user of the Power BI service.](media/end-user-home/power-bi-home-new-user.png)
+![A screenshot of the Welcome screen for a new user of the Power BI service.](media/end-user-home/power-bi-home-new-users.png)
 
 
  
 As you work in the Power BI service, you'll receive dashboards, reports, and apps from colleagues, and then Power BI Home will eventually fill in. Over time, it might resemble the following.
 
-![A screenshot of the Welcome screen for the Power BI service.](media/end-user-home/power-bi-experienced-user.png)
+![A screenshot of the Welcome screen for the Power BI service.](media/end-user-home/power-bi-experienced-users.png)
 
  
 The next few topics take a closer look at Home for an experienced user, from top to bottom.

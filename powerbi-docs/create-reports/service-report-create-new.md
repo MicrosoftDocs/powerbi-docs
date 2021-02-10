@@ -2,14 +2,12 @@
 title: 'Create a report from an Excel file in the Power BI service '
 description: Create a Power BI report from an Excel file in the Power BI service.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/14/2020
-ms.author: maggies
-
 LocalizationGroup: Reports
 ---
 # Create a report from an Excel file in the Power BI service
@@ -17,7 +15,7 @@ You've read [Reports in Power BI](../consumer/end-user-reports.md) and now you w
 
 ## Prerequisites
 - [Sign up for the Power BI service](../fundamentals/service-self-service-signup-for-power-bi.md). 
-- [Download the Retail Analysis sample Excel file](https://go.microsoft.com/fwlink/?LinkId=529778) and save it to OneDrive for Business or locally.
+- [Download the Retail Analysis sample Excel file](https://go.microsoft.com/fwlink/?LinkId=529778) and save it to your computer or to OneDrive for Business.
 
 ## Import the Excel file
 This method of creating a report starts with a file and a blank report canvas. You can follow along in the Retail Analysis sample Excel file.

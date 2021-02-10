@@ -2,14 +2,12 @@
 title: Types of Insights supported by Power BI
 description: Quick Insights and View insights with Power BI.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 10/12/2020
-ms.author: mihart
-
 LocalizationGroup: Dashboards
 ---
 # Types of insights supported by Power BI
@@ -20,7 +18,7 @@ You can ask Power BI to look through your data and find interesting trends and p
 
 To learn how to use Insights, see [Power BI Insights](end-user-insights.md)
 
-![a set of Insights](media/end-user-insight-types/power-bi-insight.png)
+![a set of Insights](media/end-user-insight-types/power-bi-insight-line.png)
 
 ## How does Insights work?
 Power BI quickly searches different subsets of your dataset. As it searches, Power BI applies a set of sophisticated algorithms to discover potentially interesting insights. Power BI *business users* can run Insights on dashboard tiles.

@@ -2,13 +2,12 @@
 title: Change how a chart is sorted in a report
 description: Change how a chart is sorted in a Power BI report
 author: mihart
-ms.reviewer: mihart
-
-ms.service: powerbi
-ms.subservice: powerbi-consumer
-ms.topic: how-to
-ms.date: 08/25/2020
 ms.author: mihart
+ms.reviewer: mihart
+ms.service: powerbi
+ms.subservice: pbi-explore
+ms.topic: how-to
+ms.date: 12/03/2020
 #customer intent: As a PBI business user, I want to learn how to sort my report visuals so that they look the way I like and are easier to interpret. 
 LocalizationGroup: Reports
 ---
@@ -79,7 +78,7 @@ want to sort by entire numbers instead of by digit (example, 0, 1, 9, 20 and not
 
 Only the person who designed the report can make these changes for you. Contact information for the *designer* can be found by selecting the report name from the header bar.
 
-![Dropdown showing contact information](media/end-user-change-sort/power-bi-header.png)
+![Dropdown showing contact information](media/end-user-change-sort/power-bi-heading.png)
 
 If you are a *designer* and have edit permissions to the content, read [Sort by column in Power BI Desktop](../create-reports/desktop-sort-by-column.md) to learn how to update the dataset and enable this type of sorting.
 

@@ -6,8 +6,8 @@ ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.subservice: pbi-collaborate-share
+ms.topic: how-to
 LocalizationGroup: Share your work
 ms.date: 09/15/2020
 ---

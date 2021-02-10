@@ -2,12 +2,12 @@
 title: Power BI data sources
 description: This article lists the data sources that Power BI supports, including information about DirectQuery and the on-premises data gateway.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 11/17/2020
-ms.author: davidi
+ms.date: 12/14/2020
 ---
 
 # Power BI data sources
@@ -29,6 +29,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Azure Data Explorer (kusto) | Yes | Yes | Yes | Yes | No | Yes |
 | Azure Data Lake Storage Gen1 | Yes | Yes | No | No | No | No |
 | Azure Data Lake Storage Gen2 | Yes | Yes | No | Yes | No | Yes |
+| Azure Databricks | Yes | Yes | Yes | Yes | No | No |
 | Azure DevOps | Yes | Yes | No | No | No | No |
 | Azure DevOps Server | Yes | Yes | No | Yes | Yes | No |
 | Azure HDInsight (HDFS) | Yes | Yes | No | No | No | No |
@@ -38,7 +39,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Azure Table Storage | Yes | Yes | No | Yes | No | Yes |
 | BI Connector | Yes | Yes | Yes | Yes | Yes | No |
 | BI360 - Budgeting & Financial Reporting | Yes | Yes | No | No | No | No |
-| Common Data Service | Yes | Yes | No | No | No | Yes |
+| Microsoft Dataverse | Yes | Yes | Yes | No | No | Yes |
 | Data.World - Get Dataset | Yes | Yes | No | No | No | No |
 | Denodo | Yes | Yes | Yes | Yes | Yes | No |
 | Dremio | Yes | Yes | Yes | Yes | Yes | No |

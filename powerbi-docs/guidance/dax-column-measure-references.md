@@ -2,13 +2,12 @@
 title: "DAX: Column and measure references"
 description: Guidance on referring to columns in measures in your DAX expressions.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 12/18/2019
-ms.author: v-pemyer
 ---
 
 # DAX: Column and measure references

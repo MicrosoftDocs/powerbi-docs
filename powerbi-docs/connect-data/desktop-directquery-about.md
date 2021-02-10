@@ -2,14 +2,12 @@
 title: Using DirectQuery in Power BI
 description: Understand using DirectQuery with Power BI and best practices for how and when to use DirectQuery or other options
 author: davidiseminger
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-desktop
-ms.topic: conceptual
-ms.date: 11/17/2020
 ms.author: davidi
-
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: pbi-data-sources
+ms.topic: conceptual
+ms.date: 12/14/2020
 LocalizationGroup: Connect to data
 ---
 # About using DirectQuery in Power BI
@@ -77,7 +75,7 @@ When connecting to SQL Server Analysis Services, there's an option to either imp
 The situation described in the previous paragraph applies to connecting to the following sources as well, except that there's no option to import the data:
 
 * Power BI datasets, for example, when connecting to a Power BI dataset that has previously been created and published to the service, to author a new report over it.
-* Common Data Services.
+* Microsoft Dataverse.
 
 The behavior of reports over SQL Server Analysis Services, upon publishing to the Power BI service, is similar to DirectQuery reports in the following ways:
 
@@ -94,9 +92,9 @@ The following table describes scenarios where connecting with DirectQuery could 
 
 | Limitation | Description |
 | --- | --- |
-| Data is changing frequently, and near real-time reporting is needed |Models with imported data can be refreshed at most once per hour (more frequently with Power BI Pro or Power BI Premium subscriptions). Tf the data is continually changing, and it's necessary for reports to show the latest data, using import with scheduled refresh might not meet those needs. You can stream data directly into Power BI, though there are limits on the data volumes supported for this case. <br/> <br/> Using DirectQuery, by contrast, means that opening or refreshing a report or dashboard always shows the latest data in the source. Additionally, the dashboard tiles can be updated more frequently, as often as every 15 minutes. |
+| Data is changing frequently, and near real-time reporting is needed |Models with imported data can be refreshed at most once per hour (more frequently with Power BI Pro or Power BI Premium subscriptions). If the data is continually changing, and it's necessary for reports to show the latest data, using import with scheduled refresh might not meet those needs. You can stream data directly into Power BI, though there are limits on the data volumes supported for this case. <br/> <br/> Using DirectQuery, by contrast, means that opening or refreshing a report or dashboard always shows the latest data in the source. Additionally, the dashboard tiles can be updated more frequently, as often as every 15 minutes. |
 | Data is very large |If the data is very large, it wouldn't be feasible to import it all. DirectQuery, by contrast, requires no large transfer of data, because it's queried in place. <br/> <br/> However, large data might also imply that the performance of the queries against that underlying source is too slow, as discussed in [Implications of using DirectQuery](#implications-of-using-directquery). You don't always have to import the full detailed data. Instead, the data can be pre-aggregated during import. The *Query Editor* makes it easy to pre-aggregate during import. In the extreme, it would be possible to import exactly the aggregate data needed for each visual. While DirectQuery is the simplest approach to large data, importing aggregate data might offer a solution if the underlying source is too slow. |
-| Security rules are defined in the underlying source |When the data is imported, Power BI connects to the data source using the current user's credentials from Power BI Desktop, or the credentials defined as part of configuring scheduled refresh from the Power BI service. In publishing and sharing such a report, be careful to only share with users allowed to see the same data, or to define row-level security as part of the dataset. <br/> <br/> Ideally, because DirectQuery always queries the underlying source, this configuration would allow any security in that underlying source to be applied. However, currently Power BI always connects to the underlying source using the same credentials as would be used for import. <br/> <br/> Until Power BI allows for the identity of the report consumer to pass through to the underlying source, DirectQuery offers no advantages for data source security. |
+| Security rules are defined in the underlying source |When the data is imported, Power BI connects to the data source using the current user's credentials from Power BI Desktop, or the credentials defined as part of configuring scheduled refresh from the Power BI service. In publishing and sharing such a report with data in *import* mode, be careful to only share with users allowed to see the same data, or to define row-level security as part of the dataset. <br/> <br/> DirectQuery allows for a report viewer's credentials to be passed through to the underlying source and security rules to be applied there. Single sign-on is supported to SQL Azure datasources, and through the data gateway to on-premises SQL servers. This is covered in more detail in [Overview of single sign-on (SSO) for gateways in Power BI](service-gateway-sso-overview.md). |
 | Data sovereignty restrictions apply |Some organizations have policies around data sovereignty, meaning that data can't leave the organization premises. A solution based on import would clearly present issues. By contrast, with DirectQuery that data remains in the underlying source. <br/> <br/> However, even with DirectQuery, some caches of data at the visual level are kept in the Power BI service because of scheduled refresh of tiles. |
 | Underlying data source is an OLAP source, containing measures |If the underlying data source contains *measures*, such as SAP HANA or SAP Business Warehouse, then importing the data brings other issues. It means that the data imported is at a particular level of aggregation, as defined by the query. For example, measures **TotalSales** by **Class**, **Year**, and **City**. Then if a visual is built asking for data at a higher-level aggregate, such as **TotalSales** by **Year**, it's further aggregating the aggregate value. This aggregation is fine for additive measures, such as **Sum** and **Min**, but it's an issue for non-additive measures, such as **Average**, **DistinctCount**. <br/> <br/> To make it easy to get the correct aggregate data, as needed for the particular visual, directly from the source, it would be necessary to send queries per visual, as in DirectQuery. <br/> <br/> When connecting to SAP Business Warehouse (BW), choosing DirectQuery allows for this treatment of measures. For information about SAP BW, see [DirectQuery and SAP BW](desktop-directquery-sap-bw.md). <br/> <br/> However, currently DirectQuery over SAP HANA treats it the same as a relational source, and provides similar behavior to import. This approach is covered further in [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md). |
 
@@ -159,7 +157,6 @@ When using DirectQuery, many of these model enrichments can still be made, and c
 Almost all reporting capabilities are supported for DirectQuery models. As such, so long as the underlying source offers a suitable level of performance, the same set of visualizations can be used. There are some important limitations in some of the other capabilities offered in the Power BI service after a report is published:
 
 * **Quick Insights isn't supported:** Power BI Quick Insights searches different subsets of your dataset while applying a set of sophisticated algorithms to discover potentially interesting insights. Given the need for very high performance queries, this capability isn't available on datasets using DirectQuery.
-* **Q&A isn't supported:** Power BI Q&A enables you to explore your data using intuitive, natural language capabilities and receive answers in the form of charts and graphs. However, it's currently not supported on datasets using DirectQuery.
 * **Using Explore in Excel will likely result in poorer performance:** You can explore your data by using the Explore in Excel capability on a dataset. This approach allows Pivot Tables and Pivot Charts to be created in Excel. While this capability is supported on datasets using DirectQuery, the performance is generally slower than creating visuals in Power BI, and therefore if the use of Excel is important for your scenarios, this fact should be accounted for in your decision to use DirectQuery.
 * **Maximum length for text columns:** The maximum length of the data in a text column for datasets using DirectQuery is 32,764 characters. Reporting on longer texts than that will result in an error.
 
@@ -168,6 +165,8 @@ Almost all reporting capabilities are supported for DirectQuery models. As such,
 As discussed earlier in this article, a report in DirectQuery always uses the same fixed credentials to connect to the underlying data source, after it's published to the Power BI service. This behavior applies to DirectQuery, not to live connections to SQL Server Analysis Services, which is different in this respect. Immediately after publish of a DirectQuery report, it's necessary to configure the credentials of the user that will be used. Until you configure the credentials, opening the report on the Power BI service would result in an error.
 
 Once the user credentials are provided, then those credentials will be used *whichever user who opens the report*. In this way, it's exactly like imported data. Every user sees the same data, unless row-level security has been defined as part of the report. The same attention must be paid to sharing the report, if there are any security rules defined in the underlying source.
+
+Additionally, 'alternate credentials' aren't supported when making DirectQuery connections to SQL Server from Power BI Desktop. You can use your current Windows credentials or database credentials.
 
 ### Behavior in the Power BI service
 
@@ -328,6 +327,9 @@ The setting is only enabled when there's at least one DirectQuery source in the 
 Increasing **Maximum connections per data source** ensures more queries, up to the maximum number specified, can be sent to the underlying data source. This approach is useful when many visuals are on a single page, or many users access a report at the same time. Once the maximum number of connections is reached, further queries are queued until a connection becomes available. Increasing this limit does result in more load on the underlying source, so the setting isn't guaranteed to improve overall performance.
 
 Once a report is published, the maximum number of concurrent queries sent to the underlying data source also depend upon fixed limits. The limits depend on the target environment to which the report is published. Different environments, such as Power BI, Power BI Premium, or Power BI Report Server, can impose different limits.
+
+> [!NOTE]
+> The maximum number of DirectQuery connections setting applies to all DirectQuery sources when [enhanced metadata](desktop-enhanced-dataset-metadata.md) is enabled, which is the default setting for all models created in Power BI Desktop beginning in October 2020. 
 
 ### Diagnosing performance issues
 

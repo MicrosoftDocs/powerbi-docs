@@ -1926,9 +1926,9 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/service-create-workspaces.md",
+            "source_path": "powerbi-docs/collaborate-share/service-workspaces-new-look.md",
             "redirect_url": "/power-bi/collaborate-share/service-create-workspaces",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-embed-report-microsoft-teams.md",
@@ -2866,14 +2866,19 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/connect-data/service-tutorial-invoke-machine-learning-model.md",
+            "redirect_url": "/power-bi/connect-data/service-aml-integrate",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/service-tutorial-connect-to-github.md",
             "redirect_url": "/power-bi/connect-data/service-tutorial-connect-to-github",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-tutorial-invoke-machine-learning-model.md",
-            "redirect_url": "/power-bi/connect-data/service-tutorial-invoke-machine-learning-model",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/connect-data/service-aml-integrate",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-tutorial-use-cognitive-services.md",
@@ -3814,6 +3819,30 @@
             "source_path": "powerbi-docs/developer/visuals/custom-visual-develop-tutorial.md",
             "redirect_url": "/power-bi/developer/visuals/develop-circle-card",
             "redirect_document_id": false
-        }                         
-    ]
+        },
+        {
+            "source_path": "powerbi-docs/developer/visuals/embedded-custom-layout.md",
+            "redirect_url": "https://github.com/Microsoft/PowerBI-JavaScript/wiki/Custom-Layout",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-mixed-reality-app.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-hololens2-app",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/embed-from-apps.md",
+            "redirect_url": "/power-bi/developer/embedded/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/azure-pbie-diag-logs.md",
+            "redirect_url": "/power-bi/developer/embedded/monitor-power-bi-embedded",
+            "redirect_document_id": false
+        },                                                         
+        {
+            "source_path": "powerbi-docs/admin/power-bi-whitelist-urls.md",
+            "redirect_url": "/power-bi/admin/power-bi-allow-list-urls",
+            "redirect_document_id": false
+        }      ]
 }

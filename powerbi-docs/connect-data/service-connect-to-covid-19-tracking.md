@@ -2,13 +2,11 @@
 title: Connect to the COVID-19 US tracking report
 description: How to get and install the COVID-19 US Cases template app, and how to connect to data.
 author: paulinbar
-
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 04/05/2020
-ms.author: painbar
-
 LocalizationGroup: Connect to services
 ---
 # Connect to the COVID-19 US tracking report
@@ -24,9 +22,9 @@ After you've installed the template app and connected to the data sources, you c
 
 1. Click the following link to get to the app: [COVID-19 US Tracking Report template app](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms)
 
-1. Once you're on the App's Appsource page, click [**GET IT NOW**](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms).
+1. Once you're on the App's AppSource page, click [**GET IT NOW**](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms).
 
-    [![Covid-19 US Tracking Report in Appsource](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-appsource-icon.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms)
+    [![Covid-19 US Tracking Report in AppSource](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-appsource-icon.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms)
 
 1. When prompted , click **Install**. Once the app has installed, you will see it on your Apps page.
 
@@ -34,11 +32,11 @@ After you've installed the template app and connected to the data sources, you c
 
 ## Connect to data sources
 
-1. Click the icon on your Apps page to open the app.
+1. Click the icon on your Apps page to open the app. The app opens, showing sample data.
 
-1. On the splash screen that appears choose **Connect**.
+1. Select the **Connect your data** link on the banner at the top of the page.
 
-   ![Template app splash screen](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-splash-screen.png)
+   ![GitHub app connect your data link](media/service-connect-to-covid-19-tracking/power-bi-covid-19-connect-data.png)
 
 1. The parameters dialog will appear. There are no required parameters. Click **Next**.
 

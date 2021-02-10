@@ -1,12 +1,12 @@
 ---
-title: Export Power BI reports API
-description: Learn how to export an embedded Power BI report 
+title: Export Power BI embedded analytics reports API
+description: Learn how to export an embedded Power BI report.
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 10/01/2020
+ms.date: 02/09/2021
 ---
 
 # Export Power BI report to file (preview)
@@ -25,7 +25,7 @@ You can use the export feature in a variety of ways. Here are a couple of exampl
 
 * **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a .pdf or a .pptx, and when it's complete, the user can receive the file as a download. Using bookmarks you can export the report in a specific state, including configured filters, slicers, and additional settings. As the API is asynchronous, it may take some time for the file to be available.
 
-* **Email attachment** - Send an automated email at set intervals, with an attached .pdf report. This scenario can be useful if you want to automate sending a weekly report to executives.
+* **Email attachment** - Send an automated email at set intervals, with an attached .pdf report. This scenario can be useful if you want to automate sending a weekly report to executives. For more information see [Export and email a Power BI report with Power Automate](../../collaborate-share/service-automate-power-bi-report-export.md)
 
 ## Using the API
 
@@ -35,15 +35,41 @@ Before using the API, verify that the following [admin tenant settings](../../ad
 
 The API is asynchronous. When the [exportToFile](/rest/api/power-bi/reports/exporttofile) API is called, it triggers an export job. After triggering an export job, use [polling](/rest/api/power-bi/reports/getexporttofilestatus) to track the job, until it's complete.
 
-During polling, the API returns a number that represents the amount of work completed. The work in each export job is calculated based on the number of pages the report has. All pages have the same weight. If for example you're exporting a report with 10 pages, and the polling returns 70, it means that the API has processed seven out of the 10 pages in the export job.
+During polling, the API returns a number that represents the amount of work completed. The work in each export job is calculated based on the total of exports in the job. An export includes exporting a single visual, or a page with or without bookmarks. All exports have the same weight. If for example your export job includes exporting a report with 10 pages, and the polling returns 70, it means that the API has processed seven out of the 10 pages in the export job.
 
 When the export is complete, the polling API call returns a [Power BI URL](/rest/api/power-bi/reports/getfileofexporttofile) for getting the file. The URL will be available for 24 hours.
 
 ## Supported features
 
+This section describes the operation of the following supported features:
+
+* [Selecting which pages to print](#selecting-which-pages-to-print)
+* [Exporting a page or a single visual](#exporting-a-page-or-a-single-visual)
+* [Bookmarks](#bookmarks)
+* [Filters](#filters)
+* [Authentication](#authentication)
+* [Row Level Security (RLS)](#row-level-security-rls)
+* [Data protection](#data-protection)
+* [Localization](#localization)
+
 ### Selecting which pages to print
 
 Specify the pages you want to print according to the [Get Pages](/rest/api/power-bi/reports/getpages) or [Get Pages in Group](/rest/api/power-bi/reports/getpagesingroup) return value. You can also specify the order of the pages you're exporting.
+
+### Exporting a page or a single visual
+
+You can specify a page or single visual to export. Pages can be exported with or without bookmarks.
+
+Depending on the type of export, you need to pass different attributes to the [ExportReportPage](/rest/api/power-bi/reports/exporttofile#exportreportpage) object. The table below specifies which attributes are required for each export job.  
+
+>[!NOTE]
+>Exporting a single visual has the same weight as exporting a page (with or without bookmarks). This means that in terms of system calculations, both operations carry the same value.
+
+|Attribute   |Page     |Single visual  |Comments|
+|------------|---------|---------|---|
+|`bookmark`  |Optional |![Does not apply to.](../../media/no.png)|Use to export a page in a specific state|
+|`pageName`  |![Applies to.](../../media/yes.png)|![Applies to.](../../media/yes.png)|Use the [GetPages](/rest/api/power-bi/reports/getpage) REST API or the `getPages` client API. For more information see [Get pages and visuals](/javascript/api/overview/powerbi/get-visuals).   |
+|`visualName`|![Does not apply to.](../../media/no.png)|![Applies to.](../../media/yes.png)|There are two ways to get the name of the visual:<li>Use the `getVisuals` client API. For more information, see [Get pages and visuals](/javascript/api/overview/powerbi/get-visuals).</li><li>Listen and log the *visualClicked* event, which is triggered when a visual is selected. For more information, see [How to handle events](/javascript/api/overview/powerbi/handle-events)</li>. |
 
 ### Bookmarks
 
@@ -59,6 +85,23 @@ Specify the pages you want to print according to the [Get Pages](/rest/api/power
 
 >[!NOTE]
 >[Personal bookmarks](../../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
+
+### Filters
+
+Using `reportLevelFilters` in [PowerBIReportExportConfiguration](/rest/api/power-bi/reports/exporttofile#powerbireportexportconfiguration), you can export a report in a filtered condition.
+
+To export a filtered report, insert the [URL query string parameters](../../collaborate-share/service-url-filters.md) you want to use as your filter, to [ExportFilter](/rest/api/power-bi/reports/exporttofile#exportfilter). When you enter the string, you must remove the `?filter=` part of the URL query parameter.
+
+The table below includes a few syntax examples of strings you can pass to  `ExportFilter`.
+
+|Filter    |Syntax    |Example    |
+|---|----|----|----|
+|A value in a field    |Table/Field eq 'value'    |Store/Territory eq 'NC'    |
+|Multiple values in a field    |Table/Field in ('value1', 'value2')     |Store/Territory in ('NC', 'TN')    |
+|A distinct value in one field, and a different distinct value in another field    |Table/Field1 eq 'value1' and Table/Field2 eq 'value2'    |Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'    |
+
+>[!NOTE]
+>`ReportLevelFilters` can only contain a single [ExportFilter](/rest/api/power-bi/reports/exporttofile#exportfilter).
 
 ### Authentication
 
@@ -105,10 +148,10 @@ A job that exceeds its number of concurrent requests doesn't terminate. For exam
 
 * The report you're exporting must reside on a Premium or Embedded capacity.
 * The dataset of the report you're exporting must reside on a Premium or Embedded capacity.
-* For public preview, the number of Power BI report pages exported per hour is limited to 50 per capacity.
+* For public preview, the number of Power BI exports per hour is limited to 50 per capacity. An export refers to exporting a single visual or a report page with or without bookmarks, and doesn't include exporting paginated reports.
 * Exported reports cannot exceed a file size of 250 MB.
 * When exporting to .png, sensitivity labels are not supported.
-* The number of pages that can be included in an exported report is 50. If the report includes more pages, the API returns an error and the export job is canceled.
+* The number of exports (single visuals or report pages) that can be included in an exported report is 50 (this doesn't include exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.
 * [Personal bookmarks](../../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
 * The Power BI visuals listed below are not supported. When a report containing these visuals is exported, the parts of the report that contain these visuals will not render, and will display an error symbol.
     * Uncertified Power BI visuals
@@ -137,7 +180,8 @@ private async Task<string> PostExportRequest(
     Guid reportId,
     Guid groupId,
     FileFormat format,
-    IList<string> pageNames = null /* Get the page names from the GetPages REST API */)
+    IList<string> pageNames = null, /* Get the page names from the GetPages REST API */
+    string urlFilter = null)
 {
     var powerBIReportExportConfiguration = new PowerBIReportExportConfiguration
     {
@@ -148,6 +192,9 @@ private async Task<string> PostExportRequest(
         // Note that page names differ from the page display names
         // To get the page names use the GetPages REST API
         Pages = pageNames?.Select(pn => new ExportReportPage(Name = pn)).ToList(),
+        // ReportLevelFilters collection needs to be instantiated explicitly
+        ReportLevelFilters = !string.IsNullOrEmpty(urlFilter) ? new List<ExportFilter>() { new ExportFilter(urlFilter) } : null,
+
     };
 
     var exportRequest = new ExportReportRequest
@@ -258,7 +305,8 @@ private async Task<ExportedFile> ExportPowerBIReport(
 	FileFormat format,
 	int pollingtimeOutInMinutes,
 	CancellationToken token,
-	IList<string> pageNames = null  /* Get the page names from the GetPages REST API */)
+	IList<string> pageNames = null,  /* Get the page names from the GetPages REST API */
+    string urlFilter = null)
 {
 	const int c_maxNumberOfRetries = 3; /* Can be set to any desired number */
 	const int c_secToMillisec = 1000;
@@ -268,7 +316,7 @@ private async Task<ExportedFile> ExportPowerBIReport(
 		int retryAttempt = 1;
 		do
 		{
-			var exportId = await PostExportRequest(reportId, groupId, format, pageNames);
+			var exportId = await PostExportRequest(reportId, groupId, format, pageNames, urlFilter);
 			var httpMessage = await PollExportRequest(reportId, groupId, exportId, pollingtimeOutInMinutes, token);
 			export = httpMessage.Body;
 			if (export == null)
@@ -334,3 +382,6 @@ Review how to embed content for your customers and your organization:
 
 > [!div class="nextstepaction"]
 >[Embed for your organization](embed-sample-for-your-organization.md)
+
+> [!div class="nextstepaction"]
+>[Export and email a Power BI report with Power Automate](../../collaborate-share/service-automate-power-bi-report-export.md)

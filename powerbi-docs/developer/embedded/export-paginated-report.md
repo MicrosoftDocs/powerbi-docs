@@ -1,15 +1,15 @@
 ---
-title: Export Power BI paginated reports API
-description: Learn how to export an embedded Power BI paginated report 
+title: Export Power BI embedded analytics paginated reports API for better embedded BI insights
+description: Learn how to export an embedded Power BI paginated report.
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 04/05/2020
+ms.date: 02/09/2021
 ---
 
-# Export paginated report to file (preview)
+# Export paginated report to file
 
 The `exportToFile` API enables exporting a Power BI paginated report by using a REST call. The following file formats are supported:
 * **.pptx** (PowerPoint)
@@ -117,6 +117,42 @@ Here is an example for supplying an effective user name for RLS.
       }
 }
 ```
+
+### Single Sign-on SQL and Dataverse (SSO)
+
+In Power BI, you have the option to set OAuth with SSO. When you do, the credentials for the user viewing the report are used to retrieve data. The access token in the requrest header is not used to access the data, the token must be passed in with the effective identity in the post body.
+
+What can make access tokens confusing is getting the correct access token for the resource that you want to access.
+
+- For Azure SQL, the resource is `https://database.windows.net`.
+- For Dataverse, the resource is the `https://` address for your environment. For example `https://contoso.crm.dynamics.com`.
+
+Access the token API using the [AuthenticationContext.AcquireTokenAsync](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenasync) method.
+
+Here is an example for supplying an effective user name with an access token.
+
+```json
+{
+       "format":"PDF",
+       "paginatedReportConfiguration":{
+          "formatSettings":{
+             "AccessiblePDF":"true",
+             "PageHeight":"11in",
+             "PageWidth":"8.5in",
+             "MarginBottom":"2in"
+          },
+          "identities":[
+             {
+                "username":"john@contoso.com",
+                "identityBlob": {
+                "value": "eyJ0eX....full access token"
+         }
+        }
+     ]
+   }
+}
+```
+
 ## PPU concurrent requests
 The `exportToFile` API allows one request in a five minute window when using [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md). Multiple (greater than one) requests within a five minute window will result in a *Too Many Requests* (429) error.
 
@@ -284,6 +320,10 @@ private async Task<ExportedFile> ExportPaginatedReport(
     }
 }
 ```
+
+## Limitations
+
+Exporting a paginated report that has a Power BI dataset as its data source, is not supported for service principals.
 
 ## Next steps
 

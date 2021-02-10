@@ -9,7 +9,6 @@ ms.subservice: powerbi-premium
 ms.topic: conceptual
 ms.date: 11/11/2020
 ms.custom: 
-
 LocalizationGroup: Premium
 ---
 
@@ -26,6 +25,8 @@ Finally, testing approaches and Premium capacity sizing conclude this article.
 
 > [!NOTE]
 > Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+>
+>To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).
 
 The recommendations and best practices recommended in this article ensure CPU utilization of each dataset, and other Power BI artifacts, are optimized.
 

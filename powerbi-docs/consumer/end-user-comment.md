@@ -2,22 +2,18 @@
 title: Add comments to dashboards and reports
 description: This document shows how to add comments to a dashboard, report, or visual and how to use comments to have conversations with collaborators.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: 
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/25/2020
-ms.author: mihart
-
+ms.date: 01/08/2021
 LocalizationGroup: Consumer
 ---
 # Add comments to a dashboard or report
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
-
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Add a personal comment or start a conversation about a dashboard or report with your colleagues. The **comment** feature is just one of the ways a *business user* can collaborate with others. 
 
@@ -90,7 +86,7 @@ In addition to adding comments to an entire dashboard or to an entire report pag
 5. Select **Close** to return to the dashboard or report.
 
 ### Get your colleagues attention by using the @ sign
-Whether you're creating a dashboard, report, tile, or visual comment, grab your colleagues' attention by using the "\@" symbol.  When you type the "\@" symbol, Power BI opens a dropdown where you can search for and select individuals from your organization. Any verified name prefaced with the "\@" symbol, appears in blue font. The @mentioned individuals will immediately receive an e-mail in their inbox, and if they are using a Power BI Mobile app, they will receive a push notification on their device. They can open the comment directly from the notification, view the data, and reply accordingly.
+Whether you're creating a dashboard, report, tile, or visual comment, grab your colleagues' attention by using the "\@" symbol.  When you type the "\@" symbol, Power BI opens a dropdown where you can search for and select individuals from your organization. Any verified name prefaced with the "\@" symbol, appears in blue font. The @mentioned individuals will immediately receive an e-mail in their inbox, and if they are using a Power BI Mobile app, they will receive a push notification on their device. They can open the report or dashboard directly from the notification, see the comment, view the data, and reply accordingly.
 
 Here's a conversation I'm having with the visualization *designer*. They are using the @ symbol to ensure I see the comment. I receive a notification and select the link to open this dashboard and the relevant conversation.  
 

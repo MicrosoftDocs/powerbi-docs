@@ -1,14 +1,14 @@
 ---
 title: Waterfall charts in Power BI
 description: 'Waterfall charts in Power BI'
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: 'mihart'
-featuredvideoid: maTzOJSRB3g
+featuredvideoid: removed
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 12/5/2019
-ms.author: rien
 LocalizationGroup: Visualizations
 ---
 

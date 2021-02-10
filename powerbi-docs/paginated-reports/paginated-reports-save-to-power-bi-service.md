@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 05/04/2020
+ms.date: 01/25/2021
 ---
 
 # Publish a paginated report to the Power BI service
@@ -32,13 +32,13 @@ If the workspace doesn't have the diamond icon ![Power BI Premium capacity diamo
 
    You may not be able to change it. If not, then contact your Power BI Premium capacity admin to give you assignment rights to add your workspace to a Premium capacity.
 
-## From Report Builder, publish a paginated report
+## From Report Builder, publish a paginated report to the Power BI Service
 
-1. Create your paginated report in Report Builder and save it to your local computer.
+1. Create a new paginated report or open an existing paginated report from the Power BI Service in Report Builder. If you open an existing paginated report from the service, the **Save** option is disabled because you're updating a report that's live in the Power BI Service.
 
-1. On the Report Builder **File** menu, select **Save as**.
+1. On the Report Builder **File** menu, select **Publish**.
 
-    ![File menu > Save > Save as](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-save-as.png)
+    ![Select the File menu, then Publish.](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-save-as.png)
 
     If you aren't signed in to Power BI yet, you need to sign in or create an account now. In the upper-right corner of Report Builder, select **Sign in** and complete the steps.
 

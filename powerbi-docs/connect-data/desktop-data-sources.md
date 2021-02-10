@@ -2,14 +2,12 @@
 title: Data sources in Power BI Desktop
 description: Data sources in Power BI Desktop
 author: davidiseminger
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-desktop
-ms.topic: how-to
-ms.date: 11/11/2020
 ms.author: davidi
-
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: pbi-data-sources
+ms.topic: how-to
+ms.date: 12/10/2020
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
@@ -113,7 +111,7 @@ The **Power Platform** category provides the following data connections:
 
 * Power BI datasets
 * Power BI dataflows
-* Common Data Service
+* Microsoft Dataverse
 * Power Platform dataflows (Beta)
 
 The following image shows the **Get Data** window for **Power Platform**.
@@ -223,7 +221,7 @@ The **Other** category provides the following data connections:
 * Automation Anywhere (Beta)
 * Solver
 * Cherwell (Beta)
-* Cognite Data Fusion (Beta)
+* Cognite Data Fusion
 * FHIR
 * Information Grid (Beta)
 * Jamf Pro (Beta)

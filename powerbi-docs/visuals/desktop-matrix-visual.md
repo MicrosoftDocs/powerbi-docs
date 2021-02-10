@@ -1,14 +1,13 @@
 ---
 title: Create a matrix visual in Power BI
 description: Learn how the matrix visual enables step layouts and granular highlighting in Power BI.
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: 'mihart'
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: conceptual
 ms.date: 06/18/2020
-ms.author: rien
-
 LocalizationGroup: Visualizations
 ---
 
@@ -61,13 +60,13 @@ The expansion state of the matrix will save with your report. A matrix can be pi
 > If you're building a report on top of an Analysis Services multidimensional model, there are some special considerations for expand/collapse if the model uses the Default Member feature. For more information see [Work with multidimensional models in Power BI](../connect-data/desktop-default-member-multidimensional-models.md)
 
 ## Using drill down with the matrix visual
-With the matrix visual, you can do all sorts of interesting drill down activities that weren't available before. This includes the ability to drill down using rows, columns, and even into individual sections and cells. Let's take a look at how each of these works.
+With the matrix visual, you can do all sorts of interesting drill-down activities that weren't available before. This includes the ability to drill down using rows, columns, and even into individual sections and cells. Let's take a look at how each of these works.
 
 ### Drill down on row headers
 
 In the Visualizations pane, when you add multiple fields to the **Rows** section of the **Fields** well, you enable drill down on the rows of the matrix visual. This is similar to creating a hierarchy, which then allows you to drill down (and then back up) through that hierarchy, and analyze the data at each level.
 
-In the following image, the **Rows** section contains *Sales stage* and *Opportunity size*, creating a grouping (or hierarchy) in the rows that we can drill through.
+In the following image, the **Rows** section contains *Sales stage* and *Opportunity size*, creating a grouping (or hierarchy) in the rows that we can drill to see details.
 
 ![Filters card showing which rows are chosen](media/desktop-matrix-visual/power-bi-rows-matrix.png)
 
@@ -75,7 +74,7 @@ When the visual has grouping created in the **Rows** section, the visual itself 
 
 ![matrix with drill controls outlined](media/desktop-matrix-visual/power-bi-matrix-drilldown.png)
 
-Similar to the drill and expand behavior in other visuals, selecting those buttons lets us drill down (or back up) through the hierarchy. In this case, we can drill down from *Sales stage* to *Opportunity size*, as shown in the following image, where the drill down one level icon (the pitchfork) has been selected.
+Similar to the drill and expand behavior in other visuals, selecting those buttons lets us drill down (or back up) through the hierarchy. In this case, we can drill down from *Sales stage* to *Opportunity size*, as shown in the following image, where the **drill down one level** icon (the pitchfork) has been selected.
 
 ![matrix with pitchfork outlined](media/desktop-matrix-visual/power-bi-matrix-drill3.png)
 
@@ -89,7 +88,7 @@ Selecting **Drill Down** expands the matrix for *that* row level, *excluding* al
 
 ![matrix drilled down one level](media/desktop-matrix-visual/power-bi-drill-down-matrix.png)
 
-Select the **Drill up** icon to get back to the previous top-level view. If you then select **Proposal** > **Show Next Level**, you get an ascending listing of all the next-level items (in this case, the *Opportunity size* field), without the higher-level hierarchy categorization.
+Select the **Drill-up** icon to get back to the previous top-level view. If you then select **Proposal** > **Show Next Level**, you get an ascending listing of all the next-level items (in this case, the *Opportunity size* field), without the higher-level hierarchy categorization.
 
 ![matrix using Show next level](media/desktop-matrix-visual/power-bi-next-level-matrix.png)
 
@@ -117,7 +116,7 @@ When you select **Drill Down**, the next level of the column hierarchy for *Regi
 The rest of the menu items work on columns in the same way they do for rows (see the previous section, **Drill down on row headers**). You can **Show Next Level** and **Expand to next level** with columns just as you can with rows.
 
 > [!NOTE]
-> The drill down and drill up icons in the upper-left of the matrix visual only apply to rows. In order to drill down on columns, you must use the right-click menu.
+> The drill-down and drill-up icons in the upper-left of the matrix visual only apply to rows. In order to drill down on columns, you must use the right-click menu.
 
 ## Stepped layout with matrix visuals
 

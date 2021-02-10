@@ -1,6 +1,6 @@
 ---
-title: The supportsKeyboardFocus feature
-description: This article describes how to use the supportsKeyboardFocus feature in Power BI visuals and its requirements.
+title: The supportsKeyboardFocus feature in Power BI embedded analytics for better embedded BI insights
+description: This article describes how to use the supportsKeyboardFocus feature in Power BI visuals and its requirements. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins

@@ -1,18 +1,16 @@
 ---
-title: 'Integrate data alerts with Power Automate'
+title: 'Integrate Power BI data alerts with Power Automate'
 description: Learn how to create Power Automate flows triggered by Power BI data alerts.
 author: maggiesMSFT
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: how-to
-ms.date: 11/09/2020
 ms.author: maggies
-
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: pbi-collaborate-share
+ms.topic: how-to
+ms.date: 12/08/2020
 LocalizationGroup: Get started
 ---
-# Integrate data alerts with Power Automate
+# Integrate Power BI data alerts with Power Automate
 
 Use [Power Automate](/power-automate/getting-started) to integrate Power BI with your favorite apps and services. With Power Automate, you create automated workflows to get notifications, synchronize files, collect data, and more. In this article, you automate generating an email from a Power BI data alert.
 
@@ -86,6 +84,5 @@ In this task, we create a simple flow from scratch that is triggered by a Power 
 
 ## Next steps
 * [Get started with Power Automate](/power-automate/getting-started/)
-* [Set data alerts in the Power BI service](../create-reports/service-set-data-alerts.md)
-* [Set data alerts on your iPhone](../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
+* [Export and email a Power BI report with Power Automate](service-automate-power-bi-report-export.md)
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)

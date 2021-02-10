@@ -1,16 +1,14 @@
 ---
 title: Power BI licensing for users in your organization 
 description: Overview of the different user license types available in Power BI and how admins purchase and manage licensing for users in their organization.
-author: kfollis
+author: mihart
+ms.author: mihart
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/11/2020
-ms.author: kfollis
 ms.custom: licensing support
-
 LocalizationGroup: Administration
 ---
 
@@ -24,7 +22,7 @@ This article focuses on purchasing services and per-user licensing from an admin
 
 ## Who can purchase and assign licenses?
 
-You must be assigned an admin role to purchase or assign licenses for your organization. Admin roles are assigned by using the Azure Active Directory admin center or the Microsoft 365 admin center. The following table shows which role is required to do tasks related to purchase and licensing. For more information about administrator roles in Azure Active Directory, see [View and assign administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal). To learn more about admin roles in Microsoft 365, including best practices, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+You must be assigned an admin role to purchase or assign licenses for your organization. Admin roles are assigned by using the Azure Active Directory admin center or the Microsoft 365 admin center. The following table shows which role is required to do tasks related to purchase and licensing. For more information about administrator roles in Azure Active Directory, see [View and assign administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal). To learn more about admin roles in Microsoft 365, including best practices, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).
 
 | Who can purchase services and licenses? | Who can manage user licenses? |
 | --------------- | --------------- |
@@ -111,14 +109,14 @@ Power BI Pro has the same license lifecycle as Microsoft 365. For more informati
 ## Next steps
 
 - [Purchase and assign Power BI Pro licenses](service-admin-purchasing-power-bi-pro.md)
-- [Business subscriptions and billing documentation](/microsoft-365/commerce/?view=o365-worldwide)
+- [Business subscriptions and billing documentation](/microsoft-365/commerce/)
 - [Find Power BI users that have signed in](service-admin-access-usage.md)
 - More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
 
 Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
 * Performance
-* Per-user licensing
+* Per-user licensing. See the [Premium Per User FAQ](service-premium-per-user-faq.md) for more information.
 * Greater scale
 * Improved metrics
 * Autoscaling

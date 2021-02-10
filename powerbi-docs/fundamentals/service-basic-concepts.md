@@ -1,17 +1,15 @@
 ---
 title: Basic concepts for designers in the Power BI service
 description: Power BI service capacities, workspaces, dashboards, reports, workbooks, datasets, and dataflows.
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 manager: kfollis
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 11/14/2019
-ms.author: maggies
-
 LocalizationGroup: Get started
 ---
 # Basic concepts for designers in the Power BI service
@@ -214,7 +212,7 @@ Q&A looks for an answer in the dataset(s) connected to the dashboard.  A connect
 As soon as you start to type your question, Q&A takes you to the Q&A page. As you type, Q&A helps you ask the right question and find the best answer with rephrasings, autofill, suggestions, and more. When you have a visualization (answer) you like, pin it to your dashboard. For more information, see [Q&A in Power BI](../consumer/end-user-q-and-a.md).
 
 ### 4. **Icons in the black header bar**
-The icons in the upper right corner are your resource for settings, notifications, downloads, getting help, turning the **New look** on or off, and providing feedback to the Power BI team.  
+The icons in the upper right corner are your resource for settings, notifications, downloads, getting help, and providing feedback to the Power BI team.  
 
 ![Screenshot of Power B I service showing the icon buttons.](media/service-basic-concepts/power-bi-icons.png)
 

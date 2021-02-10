@@ -1,19 +1,18 @@
 ---
 title: Supported browsers for Power BI
 description: See a list of browsers that support Power BI
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/25/2020
-ms.author: maggies
-
+ms.date: 02/01/2021
 LocalizationGroup: Get started
 ---
 # Supported browsers for Power BI
 
-Power BI is designed to work with any of these supported browsers, but performance does differ depending on your choice of browser. If you're using Internet Explorer in particular, you may encounter worse performance. We strongly recommend switching from Internet Explorer to a modern browser, including Microsoft Edge. If you're still encountering unacceptable performance, test other supported modern browsers to see if they provide better results for your Power BI solution.
+Power BI is designed to work with any of the supported browsers mentioned below. However, performance differs depending on your choice of a browser. If you're using Internet Explorer in particular, you may encounter worse performance. We strongly recommend switching from Internet Explorer to a modern browser, including Microsoft Edge. If you still encounter unacceptable performance, test other supported modern browsers to see if they provide better results for your Power BI solution.
 
 Power BI supports these browsers on all platforms where they're available:
 
@@ -28,5 +27,5 @@ Power BI supports these browsers on all platforms where they're available:
 
 ## Next steps
 * [What is Power BI?](power-bi-overview.md)
-* Try asking the [Power BI Community](https://community.powerbi.com/)
+* Ask the [Power BI Community](https://community.powerbi.com/)
 * Still have an issue? Visit the [Power BI support page](https://powerbi.microsoft.com/support/)

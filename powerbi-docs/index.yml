@@ -10,12 +10,12 @@ metadata:
   description: Power BI amplifies your insights and the value of your data. Find expert information and answers here, no matter how you use Power BI.
   services: service
   ms.service: powerbi #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.subservice: subservice
+  ms.subservice: powerbi-service
   ms.topic: hub-page # Required
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/09/2020 #Required; mm/dd/yyyy format.
+  ms.date: 02/03/2021 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -27,13 +27,13 @@ highlightedContent:
       itemType: get-started
       url: fundamentals/desktop-getting-started.md
     # Card
-    - title: Collaborate with Power BI in Microsoft Teams
-      itemType: concept
-      url: collaborate-share/service-collaborate-microsoft-teams.md
+    - title: Power BI embedded analytics client APIs
+      itemType: overview
+      url: /javascript/api/overview/powerbi/
     # Card
-    - title: Embed Power BI content into an application
-      itemType: tutorial
-      url: developer/embedded/embed-sample-for-customers.md
+    - title: Datasets discovery using the datasets hub (Preview)
+      itemType: concept
+      url: connect-data/service-datasets-hub.md
     # Card
     - title: Power BI on Microsoft Learn 
       itemType: learn
@@ -116,9 +116,9 @@ conceptualContent:
         - url: connect-data/service-gateway-onprem.md
           itemType: concept
           text: On-premises data gateways
-        - url: connect-data/refresh-data.md
+        - url: connect-data/service-datasets-hub.md
           itemType: concept
-          text: Data refresh
+          text: Discover data on the datasets hub
       # footerLink (optional)
       footerLink:
         url: connect-data/index.yml
@@ -180,9 +180,9 @@ conceptualContent:
         - url: collaborate-share/service-create-the-new-workspaces.md
           itemType: how-to-guide
           text: Create the new workspaces
-        - url: connect-data/service-datasets-across-workspaces.md
+        - url: collaborate-share/service-collaborate-microsoft-teams.md
           itemType: concept
-          text: Intro to shared datasets
+          text: Collaborate in Microsoft Teams
       # footerLink (optional)
       footerLink:
         url: collaborate-share/index.yml
@@ -196,9 +196,9 @@ conceptualContent:
         - url: collaborate-share/service-analyze-in-excel.md
           itemType: concept
           text: Analyze in Excel
-        - url: collaborate-share/service-embed-report-spo.md
+        - url: collaborate-share/service-automate-power-bi-report-export.md
           itemType: concept
-          text: Embed in SharePoint Online
+          text: Export and email with Power Automate
       # footerLink (optional)
       footerLink:
         url: collaborate-share/index.yml
@@ -274,15 +274,26 @@ additionalContent:
   # Supports up to 3 sections
   sections:
     - title: Related tools # < 60 chars (optional)
-    - items:
+      items:
         # Card
         - title: Power BI Report Server
           summary: Explore Power BI Report Server, an on-premises report server with a web portal in which you display and manage Power BI reports, paginated reports, and KPIs.
           url: report-server/index.yml
-        # Card
         - title: Power BI REST APIs
           summary: The Power BI REST APIs provide service endpoints for embedding, administration, and user resources.
           url: /rest/api/power-bi/
-        - title: Power Platform documentation
-          summary: Learn how Power BI, Power Apps, Power Automate, and Power Virtual Agents work together to enhance each other.
-          url: /power-platform/
+        - title: Power BI embedded analytics client APIs
+          summary: A client-side library for embedding Power BI using JavaScript or TypeScript.
+          url: /javascript/api/overview/powerbi/
+    - title: Other Microsoft Power Platform products # < 60 chars (optional)
+      items:
+        # Card
+        - title: Power Apps
+          summary: Quickly build low-code apps that modernize precesses and solve tough business challenges in your organization.
+          url: /powerapps/
+        - title: Power Automate
+          summary: Create automated workflows between your favorite apps and services to synchronize files, get notifications, and more.
+          url: /power-automate/
+        - title: Power Virtual Agents
+          summary: Create powerful bots using a guided, no-code graphical interface with no need for data scientists or developers.
+          url: /power-virtual-agents/

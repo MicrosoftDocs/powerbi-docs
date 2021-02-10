@@ -1,12 +1,12 @@
 ---
-title: Visuals in Power BI
-description: This article describes custom Power BI visuals
+title: Visuals in Power BI in Power BI embedded analytics for better embedded BI insights
+description: This article describes custom Power BI visuals. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
 ms.reviewer: ""
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi-custom-visuals
 ms.topic: overview
 ms.date: 07/14/2020
 LocalizationGroup: Visualizations

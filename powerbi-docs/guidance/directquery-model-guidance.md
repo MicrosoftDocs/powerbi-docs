@@ -2,13 +2,12 @@
 title: DirectQuery model guidance in Power BI Desktop
 description: Guidance for developing DirectQuery models.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 10/24/2019
-ms.author: v-pemyer
 ---
 
 # DirectQuery model guidance in Power BI Desktop

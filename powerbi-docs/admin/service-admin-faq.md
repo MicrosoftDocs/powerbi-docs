@@ -2,14 +2,12 @@
 title: Administering Power BI - frequently asked questions (FAQ)
 description: Learn the answers to frequently asked questions on Power BI sign up, tenant management, and other administrative tasks.
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: kfollis
-
 LocalizationGroup: Administration
 ---
 
@@ -241,7 +239,7 @@ For info about high availability and failover, see [Power BI high availability, 
 
 ### Does Power BI meet national, regional, and industry-specific compliance requirements?
 
-To learn more about Power BI compliance, see the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/default.aspx).
+To learn more about Power BI compliance, see the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview).
 
 ### How does security work in Power BI?
 

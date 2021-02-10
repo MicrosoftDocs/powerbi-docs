@@ -8,7 +8,6 @@ ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 11/11/2020
-
 LocalizationGroup: Premium
 ---
 
@@ -26,6 +25,8 @@ Power BI is constantly improving in how it protects Premium capacity users again
 
 > [!NOTE]
 > Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Preview Gen2 capacities do not require restarts, so this feature is not available in Premium Gen2.
+>
+> **Embedded Gen2** capacities also don't require restart. To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).
 
 ## Is the restart process safe? Will I lose any data?
 

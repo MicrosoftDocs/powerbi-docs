@@ -2,14 +2,13 @@
 title: How content is organized in workspaces
 description: Learn about workspaces and workspace roles
 author: mihart
+ms.author: mihart
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/09/2020
-ms.author: mihart
+ms.date: 12/14/2020
 ms.custom: licensing support
-
 LocalizationGroup: Consumers
 ---
 
@@ -45,7 +44,7 @@ For a detailed list of what you can do as a *business user* with the Viewer role
 
 ### Workspace permissions and roles
 
-Here are the capabilities of the four roles: Admins, Members, Contributors, and Viewers. All of these capabilities, except viewing and interacting, require a Power BI Pro license.
+Here are the capabilities of the four roles: Admins, Members, Contributors, and Viewers. All of these capabilities, except *view and interact with an item*, require a Power BI Pro license.
 
 [!INCLUDE[power-bi-workspace-roles-table](../includes/power-bi-workspace-roles-table.md)]
 

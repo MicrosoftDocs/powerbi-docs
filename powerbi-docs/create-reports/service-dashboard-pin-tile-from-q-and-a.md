@@ -2,26 +2,25 @@
 title: How to pin a tile to a dashboard from Q&A
 description: Documentation on how to pin a tile to a Power BI dashboard from the Q&A question box
 author: maggiesMSFT
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: how-to
-ms.date: 03/02/2018
 ms.author: maggies
-
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: pbi-reports-dashboards
+ms.topic: how-to
+ms.date: 01/05/2021
 LocalizationGroup: Dashboards
 ---
 # Pin a tile to a dashboard from Q&A
-## How to pin a tile from Q&A
-Q&A is the Power BI ad hoc reporting tool. Need to find a particular insight? Ask a question about your data, and receive an answer in the form of a visualization.
 
-In this How-to, we'll use Power BI service (app.powerbi.com) to open a dashboard, ask a question using natural language to create a visualization, and pin that visualization to a dashboard. Dashboards are not available in Power BI Desktop. For information on using Q&A with other Power BI tools and content, see the [Power BI Q&A overview](../consumer/end-user-q-and-a.md). 
+Q&A is a Power BI tool for exploring your data using natural language. Need to find a particular insight? Ask a question about your data, and receive an answer in the form of a visualization.
+
+In this how-to article, we open a [dashboard](../consumer/end-user-dashboards.md) in the Power BI service (app.powerbi.com), ask a question using natural language to create a visualization, and pin that visualization to the dashboard. Dashboards aren't available in Power BI Desktop. For information on using Q&A with other Power BI tools and content, see the [Power BI Q&A overview](../consumer/end-user-q-and-a.md). 
 
 To follow along, open the [Retail Analysis sample dashboard](sample-retail-analysis.md).
 
+## How to pin a tile from Q&A
 
-1. Open a [dashboard](../consumer/end-user-dashboards.md) that has at least one tile pinned from a report. When you ask a question, Power BI looks for the answer in any dataset that has a tile pinned to that dashboard.  To learn more, see [get data](../connect-data/service-get-data.md).
+1. Open a dashboard that has at least one tile pinned from a report. When you ask a question, Power BI looks for the answer in any dataset that has a tile pinned to that dashboard.
 2. In the question box at the top of your dashboard, start typing what you want to know about your data.  
    ![Q&A question box](media/service-dashboard-pin-tile-from-q-and-a/power-bi-question-box.png)
 3. For example, as you type "last year sales by month and territory"...  
@@ -58,5 +57,5 @@ To follow along, open the [Retail Analysis sample dashboard](sample-retail-analy
 ## Next steps
 [Rename, resize, add a hyperlink, reposition the tile, and more](service-dashboard-edit-tile.md)    
 [Display your dashboard tile in Focus mode](../consumer/end-user-focus.md)     
-[Back to Q&A in Power BI](../consumer/end-user-q-and-a.md)  
+[Overview of Q&A in Power BI](../consumer/end-user-q-and-a.md)  
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

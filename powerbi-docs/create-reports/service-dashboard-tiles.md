@@ -2,14 +2,13 @@
 title: Intro to dashboard tiles for Power BI designers
 description: This article describes dashboard tiles in Power BI, which includes tiles that are created from SQL Server Reporting Services (SSRS) reports.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 04/17/2020
-ms.author: maggies
-
 LocalizationGroup: Dashboards
 ---
 # Intro to dashboard tiles for Power BI designers

@@ -2,16 +2,14 @@
 title: 'Tutorial: Use Cognitive Services in Power BI (Preview)'
 description: In this tutorial you use Cognitive Services and dataflows in Power BI.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: SarinaJoan
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.custom: connect-to-services
 ms.topic: tutorial
 ms.date: 02/20/2020
-ms.author: davidi
 #customer intent: "As a Power BI end user, I want to use Cognitive Services, so I can use create dataflows in Power BI."
-
 LocalizationGroup: Connect to services
 ---
 
@@ -178,6 +176,6 @@ In this tutorial, you applied sentiment scoring and image tagging functions on a
 
 You might also be interested in the following articles.
 
-* [Tutorial: Invoke a Machine Learning Studio (classic) model in Power BI (Preview)](service-tutorial-invoke-machine-learning-model.md)
+* [Tutorial: Consume Azure Machine Learning models in Power BI](service-aml-integrate.md)
 * [Azure Machine Learning integration in Power BI (Preview)](../transform-model/dataflows/dataflows-machine-learning-integration.md)
 * [Cognitive Services in Power BI (Preview)](../transform-model/dataflows/dataflows-machine-learning-integration.md)

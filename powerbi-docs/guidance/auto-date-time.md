@@ -2,14 +2,13 @@
 title: "Auto date/time guidance in Power BI Desktop"
 description: Guidance for using auto date/time functionality in Power BI Desktop.
 author: peter-myers
+ms.author: kfollis
 manager: asaxton
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 10/23/2019
-ms.author: v-pemyer
 ---
 
 # Auto date/time guidance in Power BI Desktop

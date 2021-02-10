@@ -1,14 +1,13 @@
 ---
 title: DirectQuery model troubleshooting in Power BI Desktop
 description: Troubleshoot DirectQuery model issues.
-author: peter-myers
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
 ms.date: 10/24/2019
-ms.author: v-pemyer
 ---
 
 # Troubleshoot developing DirectQuery models in Power BI Desktop
@@ -50,7 +49,7 @@ Navigating to that folder's parent folder displays the folder containing _Analys
 
 Inside that folder is a _\Data_ subfolder that contains the trace file FlightRecorderCurrent.trc for the current Power BI session. The corresponding workspace folder is deleted when the associated Power BI Desktop session ends.
 
-The trace files can be opened by using the SQL Server Profiler tool, which is available as a free download as part of SQL Server Management Studio. You can get that from [this location](/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017).
+The trace files can be opened by using the SQL Server Profiler tool, which is available as a free download as part of SQL Server Management Studio. You can get that from [this location](/sql/ssms/download-sql-server-management-studio-ssms).
 
 Once you download and install SQL Server Management Studio, run SQL Server Profiler.
 

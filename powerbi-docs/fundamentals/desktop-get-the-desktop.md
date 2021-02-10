@@ -2,14 +2,12 @@
 title: Get Power BI Desktop
 description: Download and install Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-fundamentals
 ms.topic: how-to
 ms.date: 10/12/2020
-ms.author: davidi
-
 LocalizationGroup: Get started
 ---
 # Get Power BI Desktop
@@ -99,7 +97,7 @@ The following list provides the minimum requirements to run Power BI Desktop:
 > Power BI Desktop will no longer be supported on Windows 7 after January 31st, 2021. After that date, Power BI Desktop will be supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only. 
 
 * Windows 7 / Windows Server 2008 R2, or later
-* .NET 4.5
+* .NET 4.6.2
 * Internet Explorer 10 or later
 * Memory (RAM): At least 1 GB available, 1.5 GB or more recommended.
 * Display: At least 1440x900 or 1600x900 (16:9) required. Lower resolutions such as 1024x768 or 1280x800 aren't supported, as certain controls (such as closing the startup screen) display beyond those resolutions.

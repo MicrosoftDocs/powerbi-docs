@@ -2,14 +2,12 @@
 title: Creating accessible reports in Power BI
 description: How to create accessible Power BI Desktop reports
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/30/2019
-ms.author: davidi
-
 LocalizationGroup: Create reports
 ---
 # Design Power BI reports for accessibility

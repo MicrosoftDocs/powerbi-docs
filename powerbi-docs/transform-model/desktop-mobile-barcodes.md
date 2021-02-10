@@ -1,31 +1,39 @@
 ---
-title: Tag a barcode field in Power BI Desktop for the mobile apps
-description: When you tag a barcode field in your model in Power BI Desktop, you can filter data for barcodes automatically in the Power BI app on your iPhone.
-author: maggiesMSFT
-ms.author: maggies
+title: Tag barcode fields in Power BI Desktop to enable barcode-scan filtering in the mobile apps
+description: When you tag a barcode field in your model in Power BI Desktop, mobile app users can scan barcodes to get filtered data on their iOS and Android phones and tablets.
+author: paulinbar
+ms.author: painbar
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 01/16/2018
+ms.date: 01/20/2021
 LocalizationGroup: Model your data
 ---
 
-# Tag barcodes in Power BI Desktop for use in the mobile app
+# Tag barcode fields in Power BI Desktop to enable barcode-scan filtering in the mobile apps
 
-In Power BI Desktop, you can [categorize data](desktop-data-categorization.md) in a column, so Power BI Desktop knows how to treat values in visuals in a report. You can also categorize a column as **Barcode**. When you or your colleagues [scan a barcode on a product with the Power BI app](../consumer/mobile/mobile-apps-scan-barcode-iphone.md) on the iPhone, you see any report that includes that barcode. When you open the report in the mobile app, Power BI automatically filters the report to data related to that barcode.
+In Power BI Desktop, you can [categorize data](desktop-data-categorization.md) in a column, so Power BI Desktop knows how to treat values in visuals in a report. You can also categorize a column as **Barcode**. Then, when someone in your company or organization [scans a barcode](../consumer/mobile/mobile-apps-scan-barcode-iphone.md) on a product using the Power BI mobile app on their iOS or Android phone or tablet, they'll see any report that includes that barcode. When they open the report, it will automatically be filtered to the data related to that barcode.
 
-1. In Power BI Desktop, switch to Data View.
-2. Select a column with barcode data. See the list of [supported barcode formats](#supported-barcode-formats) below.
-3. On the **Modeling** tab, select **Data Category** > **Barcode**.
+## Categorize barcode data
+
+Assuming you have a report that includes barcodes: 
+
+1. In Power BI Desktop, switch to Data view.
+2. Select the column that contains the barcode data. See the list of [supported barcode formats](#supported-barcode-formats) below.
+3. On the **Column tools** tab, select **Data Category** > **Barcode**.
    
     ![Data category list](media/desktop-mobile-barcodes/power-bi-desktop-barcode.png)
-4. In Report view, add this field to the visuals you want filtered by the barcode.
+
+    >[!WARNING]
+    >Do not categorize more than one column across all data tables in a report as **Barcode**. The mobile apps support Barcode filtering only for reports that have only one barcode column across all report data tables. If a report has more than one barcode column, no filtering takes place.
+
+4. In Report view, add the barcode field to the visuals you want filtered by the barcode.
 5. Save the report and publish it to the Power BI service.
 
-Now when you open the scanner on the [Power BI app for iPhone](../consumer/mobile/mobile-iphone-app-get-started.md) and scan a barcode, you see this report in the list of reports. When you open the report, its visuals are filtered by the product barcode you scanned.
+Now when you open the scanner on the Power BI apps for iOS and Android phones and tablets and scan a barcode, you'll see this report in the list of reports that have barcodes. When you open the report, its visuals will be filtered by the product barcode you scanned.
 
 ## Supported barcode formats
-These are the barcodes Power BI recognizes if you can tag them in a Power BI report: 
+These are the barcode formats Power BI recognizes if you can tag them in a Power BI report: 
 
 * UPCECode 
 * Code39Code  
@@ -39,7 +47,7 @@ These are the barcodes Power BI recognizes if you can tag them in a Power BI rep
 * ITF14Code 
 
 ## Next steps
-* [Scan a barcode from the Power BI app on your iPhone](../consumer/mobile/mobile-apps-scan-barcode-iphone.md)
-* [Issues with scanning barcodes on an iPhone](../consumer/mobile/mobile-apps-scan-barcode-iphone.md#issues-with-scanning-a-barcode)
+* [Scan a barcode from the Power BI app on your iOS or Android phone or tablet](../consumer/mobile/mobile-apps-scan-barcode-iphone.md)
+* [Issues with scanning barcodes](../consumer/mobile/mobile-apps-scan-barcode-iphone.md#issues-with-scanning-a-barcode)
 * [Data categorization in Power BI Desktop](desktop-data-categorization.md)  
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -2,13 +2,12 @@
 title: Understand star schema and the importance for Power BI
 description: Understand a star schema and its relevance to developing Power BI data models optimized for performance and usability.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: v-pemyer
 ---
 # Understand star schema and the importance for Power BI
 

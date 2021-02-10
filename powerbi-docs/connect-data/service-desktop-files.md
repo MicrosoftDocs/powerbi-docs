@@ -2,14 +2,12 @@
 title: Get data from Power BI Desktop files
 description: Learn how to get data and reports from Power BI Desktop into Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/26/2020
-ms.author: davidi
-
 LocalizationGroup: Data from files
 ---
 # Get data from Power BI Desktop files

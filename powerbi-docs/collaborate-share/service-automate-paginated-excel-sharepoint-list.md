@@ -2,14 +2,12 @@
 title: Export a paginated report for each row in an Excel Online table or SharePoint list
 description: In this article, you use Power Automate to automate exporting a paginated report for each row in an Excel Online table or SharePoint Online list.
 author: maggiesMSFT
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: how-to
-ms.date: 11/17/2020
 ms.author: maggies
-
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: pbi-collaborate-share
+ms.topic: how-to
+ms.date: 12/08/2020
 LocalizationGroup: Get started
 ---
 # Export a paginated report for each row in an Excel Online table or SharePoint list
@@ -26,7 +24,7 @@ Looking for other Power Automate templates for Power BI paginated reports? See [
 
 To follow along, make sure you have:
 
-- At least one workspace in your Power BI tenant backed by a reserved capacity. This capacity can be any of the A4/P1 – A6/P3 SKUs. Read more about [reserved capacities in Power BI Premium](../admin/service-premium-what-is.md).
+- At least one workspace in your Power BI tenant backed by a reserved capacity. This capacity can be any of the A4/P1 – A6/P3 SKUs. Read more about [reserved capacities for paginated reports in Power BI Premium](../admin/service-premium-what-is.md#paginated-reports).
 - Access to the standard connectors in Power Automate, which come with any Office 365 subscription.
 - If you're using an Excel Online table, it needs to be formatted as a table in Excel. See [Create a table](https://support.microsoft.com/office/create-a-table-in-excel-bf0ce08b-d012-42ec-8ecf-a2259c9faf3f) to learn how.
 
@@ -69,9 +67,9 @@ To follow along, make sure you have:
 
 1. In **Apply to Each**, the **Select an output from previous step** box is set to **value** by default. This setting iterates through the actions contained in **Apply to Each** for each row in your Excel Online table or SharePoint Online list.  
 
-1. In the **Workspace** box, select a workspace in a dedicated capacity. In the **Report** box, select the paginated report in the selected workspace you wish to export. If you set **Enter a custom value** from the dropdown, you can set **Workspace** and **Report** to equal a column in your Excel Online table or SharePoint Online list. These columns should contain Workspace IDs and Report IDs, respectively.  
+1. In the **Workspace** box, select a workspace in a reserved capacity. In the **Report** box, select the paginated report in the selected workspace you wish to export. If you set **Enter a custom value** from the dropdown, you can set **Workspace** and **Report** to equal a column in your Excel Online table or SharePoint Online list. These columns should contain Workspace IDs and Report IDs, respectively.  
 
-1. Select an **Export Format** from the dropdown, or set it equal to a column in your Excel Online table containing desired export formats. for example PDF, DOCX, or PPTX. Optionally, you can specify parameters for the paginated report. Find detailed descriptions of the parameters in the [connector reference for the Power BI Rest API](/connectors/powerbi/#export-to-file-for-paginated-reports).
+1. Select an **Export Format** from the dropdown, or set it equal to a column in your Excel Online table containing desired export formats. for example PDF, DOCX, or PPTX. Optionally, you can specify parameters for the paginated report. Find detailed descriptions of the parameters in the [connector reference for the Power BI REST API](/connectors/powerbi/#export-to-file-for-paginated-reports).
 
     :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-export-format-9.png" alt-text="Fill out Export to File for Paginated Reports.":::
 
@@ -101,7 +99,7 @@ To follow along, make sure you have:
 
 1. When you're done, select **Next step** or **Save**. Power Automate creates and evaluates the flow, and lets you know if it finds errors. 
 
-1. If there are errors, select **Edit flow** to fix them. Otherwise, select the **Back** arrow to view the flow details and to run the new flow. 
+1. If there are errors, select **Edit flow** to fix them. Otherwise, select the **Back** arrow to view the flow details and run the new flow. 
 
 
 ## Next steps

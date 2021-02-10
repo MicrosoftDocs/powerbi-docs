@@ -1,13 +1,13 @@
 ---
 title: Change log for Power BI Report Server
 description: This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
-ms.author: jaimeta
 author: jtarquino
+ms.author: jaimeta
 ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/18/2020
+ms.date: 02/01/2021
 ---
 
 # Change log for Power BI Report Server
@@ -16,8 +16,29 @@ This change log is for Power BI Report Server and lists new items along with bug
 
 See [What's new in Power BI Report Server](whats-new.md) for more information about new features. 
 
+
+## January 2021
+- **Power BI Report Server**
+    - *Version: 1.10.7698.12811 (Build 15.0.1105.194), Released: January 21, 2021*
+        - Features
+            - New Icons releate to Power BI and Power BI reports.
+            - Custom Visual API shipped with release  - version 3.5.0
+            - New portal preview experience added behind 'UsePortalV2' feature switch in ReportServer catalog's ConfigurationInfo table.
+        - Bug fixes
+            - Fixed issue with scheduled refresh of Power BI reports with certain models using enhanced model metadata.
+            - Fixed issue editing data driven subscriptions in portal.
+        - Security updates
+
+- **Power BI Desktop (optimized for Power BI Report Server)**
+   - *Version: 2.88.1382.0 (January 2021), Released: January 21, 2021* (new build and new version)
+        - Contains changes required for connection with Power BI Report Server (January 2021)        
+   
 ## October 2020
 - **Power BI Report Server**
+    - *Version: 1.9.7675.15620 (Build 15.0.1104.300), Released: January 8, 2021*
+        - Bug fixes
+            - Fixed issue with refresh of reports with two or more datasources that differ only by the casing of the letters.
+            - Fixed issue with refresh of reports certain combinations of nested joins.
     - *Version: 1.9.7627.11028 (Build 15.0.1104.264), Released: November 18, 2020*
         - Bug fixes
             - Fixed issue preventing users from changing fields in site settings via the portal.
@@ -35,10 +56,16 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             - Fixed issue with exporting reports with periods in their name.
             - Fixed screen reader issues in a tablix.
             - Fixed issue with log files being blank in some circumstances.
-            - Fixed issue with "Connect to Power BI" dialog not closing
-            - Updated MHTML renderer to use newer HTML DOCTYPE
+            - Fixed issue with overwriting Excel file during upload.
+            - Fixed issue with Model.UpdateCacheSnapshot REST API method.
+            - Fixed issue with SAP BW data source connections via XMLA.
+            - Fixed issue with "Connect to Power BI" dialog not closing.
+            - Fixed issue with CustomHeaders advanced feature default value.
+            - Updated MHTML renderer to use newer HTML DOCTYPE.
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
+   - *Version: 2.86.1321.0 (October 2020), Released: November 18, 2020*
+        - Bug fixes
    - *Version: 2.86.961.0 (October 2020), Released: October 27, 2020* (new build and new version)
         - Contains changes required for connection with Power BI Report Server (October 2020)        
    

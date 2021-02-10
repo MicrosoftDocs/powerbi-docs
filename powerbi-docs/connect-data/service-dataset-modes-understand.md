@@ -1,15 +1,14 @@
 ---
 title: Dataset modes in the Power BI service
 description: "Understand Power BI service dataset modes: Import, DirectQuery, and Composite."
-author: peter-myers
+author: davidiseminger
+ms.author: davidi
 manager: asaxton
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 11/09/2019
-ms.author: v-pemyer
+ms.date: 12/01/2020
 ---
 
 # Dataset modes in the Power BI service
@@ -76,7 +75,7 @@ There are several advantages associated with DirectQuery models:
 However, there are some limitations associated with DirectQuery models:
 
 - DAX formulas are limited to use only functions that can be transposed to native queries understood by the data source. Calculated tables are not supported.
-- Q&A and Quick Insights features aren't supported
+- Quick Insights features aren't supported
 
 From a Power BI service resource perspective, DirectQuery models require:
 
@@ -98,8 +97,6 @@ Composite models strive to deliver the best of Import and DirectQuery modes. Whe
 Data modelers who develop Composite models are likely to configure dimension-type tables in Import or Dual storage mode, and fact-type tables in DirectQuery mode. For more information about model table roles, see [Understand star schema and the importance for Power BI](../guidance/star-schema.md).
 
 For example, consider a model with a **Product** dimension-type table in Dual mode, and a **Sales** fact-type table in DirectQuery mode. The **Product** table could be efficiently and quickly queried from in-memory to render a report slicer. The **Sales** table could also be queried in DirectQuery mode with the related **Product** table. The latter query could enable the generation of a single efficient native SQL query that joins **Product** and **Sales** tables, and filters by the slicer values.
-
-In general, for Composite models, the advantages and disadvantages associated with Import and DirectQuery, depending on how each table is configured.
 
 For more information, see [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md).
 

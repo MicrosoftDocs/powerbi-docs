@@ -2,13 +2,12 @@
 title: Microsoft's BI transformation
 description: Learn how Microsoft successfully drives a data culture for business decision making. It describes their strategy and vision for BI.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/19/2020
-ms.author: v-pemyer
 ---
 # Microsoft's BI transformation
 

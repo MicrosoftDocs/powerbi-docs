@@ -2,14 +2,12 @@
 title: Data protection in Power BI
 description: Learn about data protection in Power BI
 author: paulinbar
+ms.author: painbar
 manager: rkarlin
-
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.date: 09/17/2020
-ms.author: painbar
-
 LocalizationGroup: Data from files
 ---
 # Data protection in Power BI
@@ -32,7 +30,7 @@ With Power BI's data protection capabilities you can:
 * **Monitor and protect user activity on sensitive data in real time** with alerts, session monitoring, and risk remediation using Cloud App Security.
 * **Empower security administrators** who use data protection reports and security investigation capabilities with Microsoft Cloud App Security to enhance organizational oversight.
 
-Read more about [Microsoft Information Protection sensitivity labels](/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide) and [Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
+Read more about [Microsoft Information Protection sensitivity labels](/microsoft-365/compliance/sensitivity-labels) and [Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
 
 
 ## Next steps

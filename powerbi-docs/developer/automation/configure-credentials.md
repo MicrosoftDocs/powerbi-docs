@@ -1,6 +1,6 @@
 ---
-title: Configure credentials programmatically for Power BI
-description: How to configure credentials programmatically when automating Power BI
+title: Configure credentials programmatically for Power BI embedded analytics enabling better embedded BI insights
+description: How to configure credentials programmatically when automating Power BI. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -75,7 +75,7 @@ Follow the steps in this article, to configure credentials programmatically for 
 
     # [.NET SDK v3](#tab/sdk3)
 
-    Use the AssymetricKeyEncriptor class with the public key retrieved in **Step 3**.
+    Use the AssymetricKeyEncryptor class with the public key retrieved in **Step 3**.
 
     ```csharp
     var credentialDetails = new CredentialDetails(
