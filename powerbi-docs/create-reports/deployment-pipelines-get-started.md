@@ -138,7 +138,7 @@ Dataset rules are defined on data sources and parameters, in each dataset. They 
 
 ### Create a dataset rule
 
-To create a dataset rule, follow the steps in this section. After you create all the dataset rules you need, deploy the datasets with the newly created rules to the next stage. Your rules will not apply until you deploy the datasets with the configured rules.
+To create a dataset rule, follow the steps in this section. After you create all the dataset rules you need, deploy the datasets with the newly created rules from the source stage to the target stage where the rules were created. Your rules will not apply until you deploy the datasets from the source to the target stage.
 
 1. In the pipeline stage you want to create a dataset rule for, select **Deployment settings**.
 
@@ -222,7 +222,7 @@ When two sequential stages aren't the same, a **compare** link appears underneat
 
 * **Different** – An item that exists both in the source and the target stage, were one of the versions was changed after the last deployment. After deployment, the item in the source stage will overwrite the item in the target stage, regardless of where the change was made.
 
-    Datasets with configured dataset rules that haven't been deployed, are also marked as *different*. This is because dataset rules are not applied until the datasets they're configured on are deployed. 
+    Datasets with configured dataset rules that haven't been deployed, are also marked as *different*. This is because dataset rules are not applied until the datasets are deployed from the source stage to the target stage which includes the configured rules.
 
 * **Missing from** – This label indicates that an item appears in the target stage, but not in the source stage.
 
