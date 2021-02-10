@@ -144,7 +144,7 @@ After creating the pipeline, use the development stage to develop your content, 
 
 ### Why do I need to deploy after configuring dataset rules?
 
-Dataset rules are not applied immediately after they're configured. To apply dataset rules, you have to deploy. After configuring dataset rules, and before you deploy, the *orange indicator* is shown, letting you know that a deployment is needed. Once you deploy, if no other changes were made, the *green indicator* will appear to signify that the rules have been applied successfully.
+Dataset rules are not applied immediately after they're configured. To apply dataset rules, you have to deploy the datasets they're configured on. After configuring dataset rules, and before you deploy, the *different* indicator is shown next to the dataset with the configured rules, letting you know that you need to deploy that dataset. Once you deploy, if no other changes were made, the *different* indicator will disappear signifying that the rules have been applied successfully.
 
 ### Does deployment pipelines support multi-geo?
 

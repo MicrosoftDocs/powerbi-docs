@@ -138,7 +138,7 @@ Dataset rules are defined on data sources and parameters, in each dataset. They 
 
 ### Create a dataset rule
 
-Follow these steps to create a dataset rule. After you create all the dataset rules you need, deploy your content to the next stage. Your rules will not apply until you deploy.
+To create a dataset rule, follow the steps in this section. After you create all the dataset rules you need, deploy the datasets with the newly created rules to the next stage. Your rules will not apply until you deploy the datasets with the configured rules.
 
 1. In the pipeline stage you want to create a dataset rule for, select **Deployment settings**.
 
@@ -215,13 +215,14 @@ To allow a quick visual insight into the differences between two sequential stag
 * **Orange indicator** - Appears if one of these conditions is met:
     * Some of the content items in each stage, were changed or updated (have different metadata).
     * There is a difference in the number of items between the stages.
-    * You configured dataset rules and didn't deploy.
 
 When two sequential stages aren't the same, a **compare** link appears underneath the orange comparison icon. Clicking the link opens the content item list in both stages in Compare view. Compare view helps you track changes or differences between items, in each pipeline stage. Changed items get one of the following labels:
 
 * **New** – A new item in the source stage. This is an item that doesn't exist in the target stage. After deployment, this item will be cloned to the target stage.
 
 * **Different** – An item that exists both in the source and the target stage, were one of the versions was changed after the last deployment. After deployment, the item in the source stage will overwrite the item in the target stage, regardless of where the change was made.
+
+    Datasets with configured dataset rules that haven't been deployed, are also marked as *different*. This is because dataset rules are not applied until the datasets they're configured on are deployed. 
 
 * **Missing from** – This label indicates that an item appears in the target stage, but not in the source stage.
 
