@@ -26,7 +26,7 @@ Check your tablet's documentation to see how to open apps in split-screen mode o
 
 Once your apps are open in split screen mode, you can adjust the size of the screens by dragging the dividing line between the apps to the right or left.
 
-Split-screen mode works best with reports that have been optimized for viewing on mobile devices. If you are a report creator, consider creating a mobile-optimized layout for your report. See [Optimize Power BI reports for the mobile app](../create-reports/desktop-create-phone-report.md) for details.
+Split-screen mode works best with reports that have been optimized for viewing on mobile devices. If you are a report creator, consider creating a mobile-optimized layout for your report. See [Optimize Power BI reports for the mobile app](../../create-reports/desktop-create-phone-report.md) for details.
 
 >[!IMPORTANT]
 >Split screen mode only works on supported Android tablets. See your device's documentation to see if it supports split-screen mode.
