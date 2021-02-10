@@ -81,6 +81,9 @@ The following example covers all 120 months in the historical range for backdate
 }
 ```
 
+> [!TIP]
+> Be sure to check out videos, blogs, and more provided by Power BI's vibrant community of BI experts. [Search for Power BI Incremental Refresh on Bing](https://www.bing.com/search?q=power+bi+incremental+refresh).
+
 ## Metadata-only deployment
 
 When publishing a new version of a PBIX file from Power BI Desktop to a workspace, if a dataset with the same name already exists, you're prompted to replace the existing dataset.
@@ -97,6 +100,11 @@ Download and install the latest version of the ALM Toolkit from the [Analysis Se
 
 ![ALM Toolkit](media/incremental-refresh-overview/alm-toolkit.png)
 
+## Community
+
+Power BI has a vibrant community where BI pros and peers share their expertise in discussions groups, videos, blogs and more. When learning about incremental refresh, be sure to check out these additional resources:
+
+- [Power BI Community](https://community.powerbi.com/)  
+- [Search for Power BI Incremental Refresh on Bing](https://www.bing.com/search?q=power+bi+incremental+refresh)
 
 ## Next steps
-

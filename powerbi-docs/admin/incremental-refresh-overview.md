@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: 
 ms.topic: how-to
-ms.date: 01/28/2021
+ms.date: 02/09/2021
 LocalizationGroup: 
 ---
 # Incremental refresh for datasets
 
-This article provides an overview of incremental refresh for datasets. Incremental refresh is supported for Power BI Premium, Premium per user, and Power BI Pro shared subscriptions and datasets. To learn about incremental refresh for dataflows, see [Premium features for dataflows](/power-bi/transform-model/dataflows/dataflows-premium-features#incremental-refresh).
+This article provides an overview of incremental refresh for datasets. Incremental refresh is supported for Power BI Premium, Premium per user, and Power BI Pro shared subscriptions and datasets. 
 
-Incremental refresh for datasets is not used instead of individual or scheduled refresh operations in the service that update model data from source data. Incremental refresh rather extends refresh operations by providing partition creation and management that significantly reduces the amount of data that has to be loaded from data sources during a refresh operation. Incremental refresh applies to import tables. For most datasets, this is a fact table, or one or more tables that contain transaction data that changes often and can grow quite large. 
+Incremental refresh extends individual or scheduled refresh operations by providing partition creation and management that significantly reduces the amount of data that has to be loaded from data sources. Incremental refresh applies to import tables, and for most datasets, this is a fact table, or one or more tables that contain transaction data that changes often and can grow quite large.
 
 With incremental refresh:
 
 > [!div class="checklist"]
-> * **Refreshes are faster** - Only data that has changed needs to be refreshed. For example, refresh only the last five days of a ten-year dataset.
-> * **Refreshes are more reliable** - Long-running connections to volatile data sources aren't necessary.
-> * **Resource consumption is reduced** - Less data to refresh reduces overall consumption of memory and other resources.
+> * **Refreshes are faster** - Often, only the most recent data that has changed needs to be refreshed.  
+> * **Refreshes are more reliable** - Long-running connections to volatile data sources aren't necessary. Queries to source data run faster, reducing potential for network problems to interfere.
+> * **Resource consumption is reduced** - Less data to refresh reduces overall consumption of memory and other resources on both Power BI resources and source data systems.
 
 Typically for large models, like those in Azure Analysis Services, solution developers have to write complex code to create, manage, and refresh partitions that allow data models to scale as source data grows and changes. Incremental refresh in Power BI simplifies this often complex task by providing easy to use dialogs in Power BI Desktop to configure an incremental refresh *policy*. When published, the Power BI service then creates and manages dataset partitions defined by the incremental refresh policy and optimally refreshes and loads updates from the data source.
 
@@ -39,7 +39,7 @@ Given the various levels of query folding support for different types of data so
 
  ![Query folding warning](media/incremental-refresh-overview/query-folding-warning.png)
 
-If you see this warning and want to verify the necessary query folding is occurring, use the Power Query Diagnostics feature or trace queries received by the data source database by using a tool supported by the data source.
+If you see this warning and want to verify the necessary query folding is occurring, use the Power Query Diagnostics feature or trace queries received by the data source database by using a tool, like SQL Profiler, supported by the data source.
 
 ## Configuring incremental refresh
 
@@ -51,7 +51,7 @@ When configuring incremental refresh, datasets are filtered by using Power Query
 
 ### Filter data
 
-With RangeStart and RangeEnd parameters defined, you then apply custom Date filters on your tables date column. The filters you apply select a subset of data that will be imported when 
+With RangeStart and RangeEnd parameters defined, you then apply custom Date filters on your table's date column. The filters you apply select a subset of data that will be imported when c
 
 ![Custom filter](media/incremental-refresh-overview/custom-filter.png)
 
@@ -65,7 +65,7 @@ To define the policy, there are three required settings and two optional setting
 
 #### 1 - Table
 
-The Table listbox defaults to the table you selected
+The Table listbox defaults to the table you selected. You enable incremental refresh for the table with the slider.
 
 #### 2 - Store rows in the last
 
@@ -94,19 +94,17 @@ In some cases, enabling the Detect data changes option can produce unwanted resu
 
 Let's say your refresh is scheduled to run at 4:00 AM every morning. If data appears in the source system during those four hours between midnight and 4:00 AM, you may not want to account for it. Some business metrics such as barrels per day in the oil and gas industry make no sense with partial days.
 
-Another example is refreshing data from a financial system where data for the previous month is approved on the 12th calendar day of the month. You could set the incremental range to 1 month and schedule the refresh to run on the 12th day of the month. With this option checked, it would for example refresh January data on February 12th.
+Another example is refreshing data from a financial system where data for the previous month is approved on the 12th calendar day of the month. You could set the incremental range to 1 month and schedule the refresh to run on the 12th day of the month. With this option checked it would, for example, refresh January data on February 12th.
 
-It's important to keep in mind, refresh operations in the service run under UTC time. This can determine the effective date and affect complete periods. In a future release, an option to override the effective date for a refresh operation may be added.
-
+It's important to keep in mind, refresh operations in the service run under UTC time. This can determine the effective date and affect complete periods.
 
 ## Handling deletes
 
 **Need body**
 
-
-
 ## Next steps
 
-[Configure incremental refresh](incremental-refreh-configure.md)  
+[Configure incremental refresh for datasets](incremental-refreh-configure.md)  
 [Advanced incremental refresh with the XMLA endpoint](incremental-refresh-xmla.md)  
 [Troubleshoot incremental refresh](incremental-refresh-troubleshoot.md)  
+[Incremental refresh for dataflows](../transform-model/dataflows/dataflows-premium-features.md#incremental-refresh)
