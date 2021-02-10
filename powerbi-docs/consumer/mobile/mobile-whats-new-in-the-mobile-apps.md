@@ -22,7 +22,7 @@ For related "What's New" information, see:
 ## February 2021
 ### Support for Power BI in split-screens (Android tablets only)
 
-If your Android tablet has multi-window support, you can view and interact with your data side by side with another app using split-screen mode.
+If your Android tablet has multi-window support, you can view and interact with your data side by side with another app using split-screen mode. [Learn more!](mobile-apps-split-screen.md)
 
 ![Screenshot of the mobile app being used in split-sreen mode.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-split-screen.png)
 
