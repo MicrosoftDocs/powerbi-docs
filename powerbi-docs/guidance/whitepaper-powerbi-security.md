@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
-ms.date: 01/29/2021
+ms.date: 02/11/2021
 LocalizationGroup: Conceptual
 ---
 
@@ -72,17 +72,17 @@ Static resources such as **.js*, **.css*, and image files are mostly stored on A
 
 ### Power BI Back-End Cluster (BE)
 
-The Back End cluster is the backbone of all the functionality available in Power BI. It consists of several service endpoints consumed by Web Front End and API clients as well as background working services, databases, caches, and a variety of other components.
+The back-end cluster is the backbone of all the functionality available in Power BI. It consists of several service endpoints consumed by Web Front End and API clients as well as background working services, databases, caches, and a variety of other components.
 
-The Back End is available in most Azure regions, and is being deployed in new regions as they become available. A single Azure region hosts one or more Back End clusters that allow unlimited horizontal scaling of the Power BI service once the vertical and horizontal scaling limits of a single cluster are exhausted.
+The back end is available in most Azure regions, and is being deployed in new regions as they become available. A single Azure region hosts one or more back-end clusters that allow unlimited horizontal scaling of the Power BI service once the vertical and horizontal scaling limits of a single cluster are exhausted.
 
-Each Back End cluster is stateful and hosts all the data of all the tenants assigned to that cluster. A cluster that contains the data of a specific tenant is referred to as the tenant’s home cluster. An authenticated user's home cluster information is provided by Global Service and used by the Web Front End to route requests to the tenant’s home cluster.
+Each back-end cluster is stateful and hosts all the data of all the tenants assigned to that cluster. A cluster that contains the data of a specific tenant is referred to as the tenant’s home cluster. An authenticated user's home cluster information is provided by Global Service and used by the Web Front End to route requests to the tenant’s home cluster.
 
-Each Back End cluster consists of multiple virtual machines combined into multiple resizable-scale sets tuned for performing specific tasks, stateful resources such as SQL databases, storage accounts, service buses, caches, and other necessary cloud components.
+Each back-end cluster consists of multiple virtual machines combined into multiple resizable-scale sets tuned for performing specific tasks, stateful resources such as SQL databases, storage accounts, service buses, caches, and other necessary cloud components.
 
-Tenant metadata and data are stored within cluster limits except for data replication to a secondary Back End cluster in a paired Azure region in the same Azure geography. The secondary Back End cluster serves as a failover cluster in case of regional outage, and is passive at any other time.
+Tenant metadata and data are stored within cluster limits except for data replication to a secondary back-end cluster in a paired Azure region in the same Azure geography. The secondary back-end cluster serves as a failover cluster in case of regional outage, and is passive at any other time.
 
-Back End functionality is served by micro-services running on different machines within the cluster’s virtual network that are not accessible from the outside, except for two components that can be accessed from the public internet:
+Back-end functionality is served by micro-services running on different machines within the cluster’s virtual network that are not accessible from the outside, except for two components that can be accessed from the public internet:
 * Gateway Service
 * Azure API Management
 
@@ -92,13 +92,13 @@ Back End functionality is served by micro-services running on different machines
 
 Power BI Premium offers a service for subscribers who require premium Power BI features, such as Dataflows, Paginated Reports, AI, etc. When a customer signs up for a Power BI Premium subscription, the Premium capacity is created through the Azure Resource Manager.
 
-Power BI Premium capacities are hosted in back end clusters that are independent of the regular Power BI Back End – see above). This provides better isolation, resource allocation, supportability, security isolation, and scalability of the Premium offering.
+Power BI Premium capacities are hosted in back-end clusters that are independent of the regular Power BI back end – see above). This provides better isolation, resource allocation, supportability, security isolation, and scalability of the Premium offering.
 
 The following diagram illustrates the architecture of the Power BI Premium infrastructure:
 
 ![Power BI Premium](media/whitepaper-powerbi-security/powerbi-security-whitepaper_05.png)
 
-The connection to the Power BI Premium infrastructure can be done in a number of ways, depending on the user scenario. Power BI Premium clients can be a user's browser, a regular Power BI Back End, direct connections via XMLA clients, ARM APIs, etc.
+The connection to the Power BI Premium infrastructure can be done in a number of ways, depending on the user scenario. Power BI Premium clients can be a user's browser, a regular Power BI back end, direct connections via XMLA clients, ARM APIs, etc.
 
 The Power BI Premium infrastructure in an Azure region consists of multiple Power BI Premium clusters (the minimum is one). The majority of the Premium resources are encapsulated inside a cluster (for instance, compute), and there are some common regional resources (e.g. metadata storage). Premium infrastructure allows two ways of achieving horizontal scalability in a region: increasing resources inside clusters and/or adding more clusters on demand as needed (if cluster resources are approaching their limits).
 
@@ -106,7 +106,7 @@ The backbone of each cluster are compute resources managed by [Virtual Machine S
 
 There are many surrounding resources which ensure a secure and reliable infrastructure: load balancers, virtual networks, network security groups, service bus, storage, etc. Any secrets, keys, and certificates required for Power BI Premium are managed by [Azure Key Vault](/azure/key-vault/general/basic-concepts) exclusively. Any authentication is done via integration with Azure AD exclusively.
 
-Any request that comes to Power BI Premium infrastructure goes to front end nodes first – they are the only nodes available for external connections. The rest of the resources are hidden behind virtual networks. The front end nodes authenticate the request, handle it, or forward it to the appropriate resources (e.g. back end nodes).
+Any request that comes to Power BI Premium infrastructure goes to front end nodes first – they are the only nodes available for external connections. The rest of the resources are hidden behind virtual networks. The front end nodes authenticate the request, handle it, or forward it to the appropriate resources (e.g. back-end nodes).
 
 Back end nodes provide most of the Power BI Premium capabilities and features.
 
