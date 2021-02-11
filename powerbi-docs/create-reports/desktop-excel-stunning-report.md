@@ -203,7 +203,7 @@ Create a bar chart to determine which companies and segments to invest in.
 
 ### Visual 5: Year slicer 
 
-Slicers are a valuable tool for filtering the visuals on a report page to a specific selection. In this case, we can create two different kinds of slicers to narrow in on performance for each month and year. One slicer uses the date field in the original table. The other uses the [date table you may have created for "extra credit"](#extra-credit-write-a-measure-in-dax) earlier in this tutorial.
+Slicers are a valuable tool for filtering the visuals on a report page to a specific selection. In this case, we can create two different slicers to narrow in on performance for each month and year. One slicer uses the date field in the original table. The other uses the [date table you may have created for "extra credit"](#extra-credit-write-a-measure-in-dax) earlier in this tutorial.
 
 
 **Date slicer using the original table**
@@ -229,7 +229,9 @@ Slicers are a valuable tool for filtering the visuals on a report page to a spec
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-hierarchy-date-slicer.png" alt-text="Screenshot of date hierarchy slicer.":::
 
-Now if your manager asks to see just 2013 data, you can use the slicer to switch between years, or specific months of each year. 
+    This is the slicer we'll use in the finished report.
+
+Now if your manager asks to see just 2013 data, you can use either slicer to select years, or specific months of each year.
 
 ### Extra credit: Format the report
 
