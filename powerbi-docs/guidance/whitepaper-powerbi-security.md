@@ -339,7 +339,7 @@ The following is an overview of what happens when you interact with a Power BI r
 
 1. After execution, the results are sent to the VNet gateway, and the PP VNet service securely pushes the data from the container to the Power BI cloud service.
 
-This feature will be available in Public preview soon.
+This feature will be available in public preview soon.
 
 ### Service principals
 
@@ -354,19 +354,19 @@ See [Automate Premium workspace and dataset tasks with service principals](../ad
 Power BI has a deep integration with Microsoft Information Protection (MIP) sensitivity labels, which enable organizations to have a single, integrated solution for DLP policy management, audit, and compliance across the Office suite.
 
 When sensitivity labels are enabled in Power BI:
-* Sensitive data, both in the Power BI service (GA) and in Power BI Desktop (Preview), can be classified and labeled using the same familiar Microsoft Information Protection sensitivity labels used in Office and in Azure Purview. 
+* Sensitive data, both in the Power BI service (GA) and in Power BI Desktop (preview), can be classified and labeled using the same familiar Microsoft Information Protection sensitivity labels used in Office and in Azure Purview. 
 * Governance policies can be enforced, even when Power BI content is exported to Excel, PowerPoint, PDF or *.pbix* files, to help ensure data is protected even when it leaves Power BI.
 * *.pbix* files can be encrypted according to MIP label policies when a MIP label is applied on the *.pbix* file in Desktop, ensuring that only authorized users can edit this file.
 * It's easy to classify and protect *.pbix* files just like it is done with Excel, Word, and PowerPoint files. With just two clicks, a file can be tagged according to its level of sensitivity, and, even further, be encrypted if it contains business-confidential data.
-* Excel workbooks automatically inherit the sensitivity labels when they connect to Power BI (Preview), making it possible to maintain end-to-end classification and apply protection when the Power BI dataset is analyzed in Excel.
+* Excel workbooks automatically inherit the sensitivity labels when they connect to Power BI (preview), making it possible to maintain end-to-end classification and apply protection when the Power BI dataset is analyzed in Excel.
 * Sensitivity labels applied on Power BI reports and dashboards will be visible in the Power BI iOS and Android mobile apps.
-* Sensitivity labels will persist when a Power BI report is embedded in Teams, SharePoint, or a secure website (Preview). This helps organizations maintain classification and protection upon export when embedding Power BI content.
+* Sensitivity labels will persist when a Power BI report is embedded in Teams, SharePoint, or a secure website (preview). This helps organizations maintain classification and protection upon export when embedding Power BI content.
 * Label inheritance upon the creation of new content in the Power BI service ensures that the label applied on a dataset in the Power BI service will be applied on new content created on top of the dataset. 
 * [Power BI admin scan APIs](/rest/api/power-bi/admin/workspaceinfo_getscanresult) can extract a Power BI artifact's sensitivity label, enabling Power BI and InfoSec admins to monitor labeling in the Power BI service and produce executive reports. 
 * Power BI makes sure that only authorized users can change or remove labels with protection settings in the Power BI service. 
 * Coming soon
     * Power BI admin APIs for applying MIP labels to enable central teams to programmatically label content in the Power BI service.  
-    * Admins will be able to enforce applying labels on new or edited content with a mandatory label policy in the Power BI service (Preview).
+    * Admins will be able to enforce applying labels on new or edited content with a mandatory label policy in the Power BI service (preview).
     * Automatic downstream artifact labeling within the Power BI service. When a label on a dataset is applied or changed, the label will automatically be applied on all downstream content connected to this artifact.
 
 See the [Microsoft Information Protection sensitivity label documentation in Power BI](../admin/service-security-sensitivity-label-overview.md) for additional details.
