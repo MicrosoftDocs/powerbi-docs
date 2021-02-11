@@ -60,19 +60,19 @@ The Power BI service is built on Azure, Microsoft's [cloud computing platform](h
 
 ### Web Front End Cluster (WFE)
 
-The WFE cluster provides the user's browser with the initial HTML page contents on site load and manages the initial connection and authentication process for Power BI, using Azure Active Directory (Azure AD) to authenticate clients and provide tokens for subsequent client connections to the Power BI Back-End service.
+The WFE cluster provides the user's browser with the initial HTML page contents on site load and manages the initial connection and authentication process for Power BI, using Azure Active Directory (Azure AD) to authenticate clients and provide tokens for subsequent client connections to the Power BI back-end service.
 
 ![The WEF Cluster](media/whitepaper-powerbi-security/powerbi-security-whitepaper_02.png)
 
 A WFE cluster consists of an ASP.NET website running in the [Azure App Service Environment](/azure/app-service/environment/intro). When users attempt to connect to the Power BI service, the client's DNS service may communicate with the Azure Traffic Manager to find the most appropriate (usually nearest) datacenter with a Power BI deployment. For more information about this process, see [Performance traffic-routing method for Azure Traffic Manager](/azure/traffic-manager/traffic-manager-routing-methods#performance-traffic-routing-method).
 
-The WFE cluster assigned to the user manages the login and authentication sequence (described later in this article) and obtains an Azure AD access token once authentication is successful. The ASP.NET component within the WFE cluster parses the token to determine which organization the user belongs to, and then consults the Power BI Global Service. The WFE specifies to the browser which Back-End cluster houses the organization's tenant. Once a user is authenticated, subsequent client interactions for customer data occur with the Back-End or Premium cluster directly, without the WFE being an intermediator for those requests.
+The WFE cluster assigned to the user manages the login and authentication sequence (described later in this article) and obtains an Azure AD access token once authentication is successful. The ASP.NET component within the WFE cluster parses the token to determine which organization the user belongs to, and then consults the Power BI Global Service. The WFE specifies to the browser which back-end cluster houses the organization's tenant. Once a user is authenticated, subsequent client interactions for customer data occur with the back-end or Premium cluster directly, without the WFE being an intermediator for those requests.
 
 Static resources such as **.js*, **.css*, and image files are mostly stored on Azure Content Delivery Network (CDN) and retrieved directly by the browser. Note that Sovereign Government cluster deployments are an exception to this rule, and for compliance reasons will omit the CDN and instead use a WFE cluster from a compliant region for hosting static content.
 
 ### Power BI Back-End Cluster (BE)
 
-The back-end cluster is the backbone of all the functionality available in Power BI. It consists of several service endpoints consumed by Web Front End and API clients as well as background working services, databases, caches, and a variety of other components.
+The back-end cluster is the backbone of all the functionality available in Power BI. It consists of several service endpoints consumed by Web Front End and API clients as well as background working services, databases, caches, and various other components.
 
 The back end is available in most Azure regions, and is being deployed in new regions as they become available. A single Azure region hosts one or more back-end clusters that allow unlimited horizontal scaling of the Power BI service once the vertical and horizontal scaling limits of a single cluster are exhausted.
 
@@ -86,7 +86,7 @@ Back-end functionality is served by micro-services running on different machines
 * Gateway Service
 * Azure API Management
 
-![The Back-End Cluster](media/whitepaper-powerbi-security/powerbi-security-whitepaper_03.png)
+![The back-end cluster](media/whitepaper-powerbi-security/powerbi-security-whitepaper_03.png)
 
 ### Power BI Premium Infrastructure
 
@@ -100,13 +100,13 @@ The following diagram illustrates the architecture of the Power BI Premium infra
 
 The connection to the Power BI Premium infrastructure can be done in a number of ways, depending on the user scenario. Power BI Premium clients can be a user's browser, a regular Power BI back end, direct connections via XMLA clients, ARM APIs, etc.
 
-The Power BI Premium infrastructure in an Azure region consists of multiple Power BI Premium clusters (the minimum is one). The majority of the Premium resources are encapsulated inside a cluster (for instance, compute), and there are some common regional resources (e.g. metadata storage). Premium infrastructure allows two ways of achieving horizontal scalability in a region: increasing resources inside clusters and/or adding more clusters on demand as needed (if cluster resources are approaching their limits).
+The Power BI Premium infrastructure in an Azure region consists of multiple Power BI Premium clusters (the minimum is one). The majority of the Premium resources are encapsulated inside a cluster (for instance, compute), and there are some common regional resources (for example, metadata storage). Premium infrastructure allows two ways of achieving horizontal scalability in a region: increasing resources inside clusters and/or adding more clusters on demand as needed (if cluster resources are approaching their limits).
 
 The backbone of each cluster are compute resources managed by [Virtual Machine Scale Sets (VMSS)](/azure/virtual-machine-scale-sets/overview) and [Azure Service Fabric](/azure/service-fabric/service-fabric-overview). VMSS and Service Fabric allow fast and painless increase of compute nodes as usage grows and orchestrates the deployment, management, and monitoring of Power BI Premium services and applications.
 
 There are many surrounding resources which ensure a secure and reliable infrastructure: load balancers, virtual networks, network security groups, service bus, storage, etc. Any secrets, keys, and certificates required for Power BI Premium are managed by [Azure Key Vault](/azure/key-vault/general/basic-concepts) exclusively. Any authentication is done via integration with Azure AD exclusively.
 
-Any request that comes to Power BI Premium infrastructure goes to front end nodes first – they are the only nodes available for external connections. The rest of the resources are hidden behind virtual networks. The front end nodes authenticate the request, handle it, or forward it to the appropriate resources (e.g. back-end nodes).
+Any request that comes to Power BI Premium infrastructure goes to front-end nodes first – they are the only nodes available for external connections. The rest of the resources are hidden behind virtual networks. The front-end nodes authenticate the request, handle it, or forward it to the appropriate resources (for example, back-end nodes).
 
 Back-end nodes provide most of the Power BI Premium capabilities and features.
 
@@ -116,7 +116,7 @@ Power BI Mobile is a collection of apps designed for the three primary mobile pl
 * Device communication
 * The application and data on the device
 
-For device communication, all Power BI Mobile applications communicate with the Power BI service, and use the same connection and authentication sequences used by browsers, which are described in detail earlier in this whitepaper. The Power BI mobile applications for iOS and Android bring up a browser session within the application itself, while the Windows mobile app brings up a broker to establish the communication channel with Power BI (for the sign-in process).
+For device communication, all Power BI Mobile applications communicate with the Power BI service, and use the same connection and authentication sequences used by browsers, which are described in detail earlier in this white paper. The Power BI mobile applications for iOS and Android bring up a browser session within the application itself, while the Windows mobile app brings up a broker to establish the communication channel with Power BI (for the sign-in process).
 
 The following table shows certificate-based authentication (CBA) support for Power BI Mobile, based on mobile device platform:
 
@@ -131,7 +131,7 @@ Power BI Mobile apps actively communicate with the Power BI service. Telemetry i
 
 The Power BI application stores data on the device that facilitates use of the app:
 * Azure AD and refresh tokens are stored in a secure mechanism on the device, using industry-standard security measures.
-* Data and settings (key-value pairs for user configuration) is cached in storage on the device, and can be encrypted by the OS. In iOS this is automatically done when the user sets a passcode. In Android this can be configured in the settings. In Windows it is accomplished by using bit-locker.
+* Data and settings (key-value pairs for user configuration) is cached in storage on the device, and can be encrypted by the OS. In iOS this is automatically done when the user sets a passcode. In Android this can be configured in the settings. In Windows it is accomplished by using BitLocker.
 * For the Android and iOS apps, the data and settings (key-value pairs for user configuration) are cached in storage on the device in a sandbox and internal storage which is accessible only to the app. For the Windows app, the data is only accessible by the user (and system admin).
 * Geolocation is enabled or disabled explicitly by the user. If enabled, geolocation data is not saved on the device and is not shared with Microsoft.
 * Notifications are enabled or disabled explicitly by the user. If enabled, Android and iOS do not support geographic data residency requirements for notifications.
@@ -164,9 +164,9 @@ The user authentication sequence for the Power BI service occurs as described in
 
 1. After the user has been authenticated, the login page redirects the user to the previously determined nearest Power BI service WFE cluster with an auth code.
 
-1. The WFE cluster checks with the Azure AD service to obtain an Azure AD security token by using the auth code. When Azure AD returns the successful authentication of the user and returns an Azure AD security token, the WFE cluster consults the Power BI Global Service, which maintains a list of tenants and their Power BI Back-End cluster locations and determines which Power BI Back-End service cluster contains the user's tenant. The WFE cluster then returns an application page to the user's browser with the session, access, and routing information required for its operation.
+1. The WFE cluster checks with the Azure AD service to obtain an Azure AD security token by using the auth code. When Azure AD returns the successful authentication of the user and returns an Azure AD security token, the WFE cluster consults the Power BI Global Service, which maintains a list of tenants and their Power BI back-end cluster locations and determines which Power BI back-end service cluster contains the user's tenant. The WFE cluster then returns an application page to the user's browser with the session, access, and routing information required for its operation.
 
-1. Now, when the client's browser requires customer data, it will send requests to the Back-End cluster address with the Azure AD access token in the Authorization header. The Power BI Back-End cluster reads the Azure AD access token and validates the signature to ensure that the identity for the request is valid. The [Azure AD access token has a default lifetime of 1 hour](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#configurable-token-lifetime-properties-after-the-retirement), and to maintain the current session the user's browser will make periodic requests to renew the access token before it expires.
+1. Now, when the client's browser requires customer data, it will send requests to the back-end cluster address with the Azure AD access token in the Authorization header. The Power BI back-end cluster reads the Azure AD access token and validates the signature to ensure that the identity for the request is valid. The [Azure AD access token has a default lifetime of 1 hour](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#configurable-token-lifetime-properties-after-the-retirement), and to maintain the current session the user's browser will make periodic requests to renew the access token before it expires.
 
 ![Authentication sequence](media/whitepaper-powerbi-security/powerbi-security-whitepaper_08.png)
 
