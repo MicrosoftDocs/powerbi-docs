@@ -1,15 +1,15 @@
 ---
 title: Export Power BI embedded analytics paginated reports API for better embedded BI insights
-description: Learn how to export an embedded Power BI paginated report. Enable better embedded BI insights using Power BI embedded analytics.
+description: Learn how to export an embedded Power BI paginated report.
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 04/05/2020
+ms.date: 02/09/2021
 ---
 
-# Export paginated report to file (preview)
+# Export paginated report to file
 
 The `exportToFile` API enables exporting a Power BI paginated report by using a REST call. The following file formats are supported:
 * **.pptx** (PowerPoint)
