@@ -351,36 +351,36 @@ See [Automate Premium workspace and dataset tasks with service principals](../ad
 
 ### M365 sensitivity labels
 
-Power BI has a deep integration with Microsoft Information Protection (MIP) sensitivity labels, which enable organizations to have a single, integrated solution for DLP policy management, audit, and compliance across the Office suite. 
+Power BI has a deep integration with Microsoft Information Protection (MIP) sensitivity labels, which enable organizations to have a single, integrated solution for DLP policy management, audit, and compliance across the Office suite.
 
 When sensitivity labels are enabled in Power BI:
 * Sensitive data, both in the Power BI service (GA) and in Power BI Desktop (Preview), can be classified and labeled using the same familiar Microsoft Information Protection sensitivity labels used in Office and in Azure Purview. 
-* Governance policies can be enforced, even when Power BI content is exported to Excel, PowerPoint, PDF or .pbix files, to help ensure data is protected even when it leaves Power BI.
-* .pbix files can be encrypted according to MIP label policies when a MIP label is applied on the .pbix file in Desktop, ensuring that only authorized users can edit this file.
-* It's easy to classify and protect .pbix files just like it is done with Excel, Word, and PowerPoint files. With just two clicks, a file can be tagged according to its level of sensitivity, and, even further, be encrypted if it contains business-confidential data.
-* Excel workbooks automatically inherit the sensitivity labels when they connect to Power BI (Preview), making it possible to maintain E2E classification and apply protection when the Power BI dataset is analyzed in Excel.
+* Governance policies can be enforced, even when Power BI content is exported to Excel, PowerPoint, PDF or *.pbix* files, to help ensure data is protected even when it leaves Power BI.
+* *.pbix* files can be encrypted according to MIP label policies when a MIP label is applied on the *.pbix* file in Desktop, ensuring that only authorized users can edit this file.
+* It's easy to classify and protect *.pbix* files just like it is done with Excel, Word, and PowerPoint files. With just two clicks, a file can be tagged according to its level of sensitivity, and, even further, be encrypted if it contains business-confidential data.
+* Excel workbooks automatically inherit the sensitivity labels when they connect to Power BI (Preview), making it possible to maintain end-to-end classification and apply protection when the Power BI dataset is analyzed in Excel.
 * Sensitivity labels applied on Power BI reports and dashboards will be visible in the Power BI iOS and Android mobile apps.
 * Sensitivity labels will persist when a Power BI report is embedded in Teams, SharePoint, or a secure website (Preview). This helps organizations maintain classification and protection upon export when embedding Power BI content.
 * Label inheritance upon the creation of new content in the Power BI service ensures that the label applied on a dataset in the Power BI service will be applied on new content created on top of the dataset. 
 * [Power BI admin scan APIs](/rest/api/power-bi/admin/workspaceinfo_getscanresult) can extract a Power BI artifact's sensitivity label, enabling Power BI and InfoSec admins to monitor labeling in the Power BI service and produce executive reports. 
 * Power BI makes sure that only authorized users can change or remove labels with protection settings in the Power BI service. 
 * Coming soon
-    * Power BI admin APIs to apply MIP labels to enable central teams to programmatically label content in the Power BI service.  
+    * Power BI admin APIs for applying MIP labels to enable central teams to programmatically label content in the Power BI service.  
     * Admins will be able to enforce applying labels on new or edited content with a mandatory label policy in the Power BI service (Preview).
-    * Automatic downstream artifact labeling within the Power BI service. When a label on a dataset is applied or changed, the label will automatically be applied on all content connected to this artifact.
+    * Automatic downstream artifact labeling within the Power BI service. When a label on a dataset is applied or changed, the label will automatically be applied on all downstream content connected to this artifact.
 
 See the [Microsoft Information Protection sensitivity label documentation in Power BI](../admin/service-security-sensitivity-label-overview.md) for additional details.
 
 ### Microsoft Cloud App Security (MCAS) for Power BI
 
-Microsoft Cloud App Security is one of the world's leading cloud access security brokers, named as leader in Gartner's Magic Quadrant for Cloud Access Security Broker (CASB) market. Cloud app security is used to secure the use of cloud apps. It enables organizations to monitor and control, in real time, risky Power BI sessions such as user access from unmanaged devices. Security administrators can define policies to control user actions, such as downloading reports with sensitive information.
+Microsoft Cloud App Security is one of the world's leading cloud access security brokers, named as leader in Gartner's Magic Quadrant for the Cloud Access Security Broker (CASB) market. Cloud app security is used to secure the use of cloud apps. It enables organizations to monitor and control, in real time, risky Power BI sessions such as user access from unmanaged devices. Security administrators can define policies to control user actions, such as downloading reports with sensitive information.
 
 With Cloud App Security, organizations can gain the following DLP capabilities: 
 * Set real-time controls to enforce risky user sessions in Power BI. For example, if a user connects to Power BI from outside of their country, the session can be monitored by Cloud App Security's real-time controls, and risky actions, such as downloading data tagged with a "Highly Confidential" sensitivity label, can be blocked immediately.
-* Investigate Power BI user activity with Cloud App Security's activity log. The Cloud App Security activity log includes Power BI activity as captured in the Office 365 audit log, which contains information about all user and admin activities, as well as sensitivity label information for relevant activities such as apply, change, and remove label. Admins can leverage Cloud App Security'a advanced filters and quick actions for effective issue investigation. 
+* Investigate Power BI user activity with Cloud App Security's activity log. The Cloud App Security activity log includes Power BI activity as captured in the Office 365 audit log, which contains information about all user and admin activities, as well as sensitivity label information for relevant activities such as apply, change, and remove label. Admins can leverage Cloud App Security's advanced filters and quick actions for effective issue investigation. 
 * Create custom policies to alert on suspicious user activity in Power BI. Cloud App Security's activity policy feature can be leveraged to define your own custom rules, to help you detect user behavior that deviates from the norm, and even possibly act upon it automatically, if it seems too dangerous.
 * Work with Cloud App Security's built-in anomaly detection. Cloud App Security's anomaly detection policies provide out-of-the-box user behavioral analytics and machine learning so that you are ready from the outset to run advanced threat detection across your cloud environment. When an anomaly detection policy identifies a suspicious behavior, it triggers a security alert. 
-* Power BI admin role in Cloud App Security portal. Cloud App Security provides an app-specific admin role that can be used to grant Power BI admins only the permissions they need to access Power BI-relevant data in the portal, such as alerts, users at risk, activity logs, and other Power BI-related information.
+* Power BI admin role in the Cloud App Security portal. Cloud App Security provides an app-specific admin role that can be used to grant Power BI admins only the permissions they need to access Power BI-relevant data in the portal, such as alerts, users at risk, activity logs, and other Power BI-related information.
 
 See [Using Microsoft Cloud App Security Controls in Power BI](../admin/service-security-using-microsoft-cloud-app-security-controls.md) for additional details.
 
@@ -398,15 +398,15 @@ The following questions are common security questions and answers for Power BI. 
 
 **How do users connect to, and gain access to data sources while using Power BI?**
 
-* Power BI manages credential to data sources for each user for cloud credentials or for connectivity through personal gateway. Data sources managed by an on-premises data gateway can be shared across the enterprise and permissions to these data sources could be managed by the Gateway Admin. When configuring a dataset, the user is allowed to select a credential from their personal store or use an on-premises data gateway to use a shared credential.
+* Power BI manages credentials to data sources for each user for cloud credentials or for connectivity through a personal gateway. Data sources managed by an on-premises data gateway can be shared across the enterprise and permissions to these data sources can be managed by the Gateway Admin. When configuring a dataset, the user is allowed to select a credential from their personal store or use an on-premises data gateway to use a shared credential.
 
-    In the import case, a user establishes a connection based on the user's login and accesses the data with the credential. After the dataset is published to Power BI service, Power BI always uses this user's credential to import data. Once data is imported, viewing the data in reports and dashboard does not access underly data source. Power BI supports single sign-on authentication for selected data sources. If the connection is configured to use single sign-on, dataset owner’s credential is used to connect with the data source.
+    In the import case, a user establishes a connection based on the user's login and accesses the data with the credential. After the dataset is published to Power BI service, Power BI always uses this user's credential to import data. Once data is imported, viewing the data in reports and dashboard does not access the underlying data source. Power BI supports single sign-on authentication for selected data sources. If the connection is configured to use single sign-on, the dataset owner’s credential is used to connect with the data source.
 
-    For reports that are connected with Direct Query the data source is connected directly using pre-configured credential, the pre-configured credential is used to connect to data source when any user views the data. If a data source is connected directly using single sign-on, the current user's credential is used to connect to the data source when a user views the data. When using with single sign-on, Row Level Security (RLS) could be implemented on the data source and that allows users to view data they have privilege to access. When connection is to data sources in the cloud, AAD authentication is used for single sign on; for on prem data sources Kerberos, SAML and AAD are supported.  
+    For reports that are connected with DirectQuery, the data source is connected directly using a pre-configured credential, the pre-configured credential is used to connect to the data source when any user views the data. If a data source is connected directly using single sign-on, the current user's credential is used to connect to the data source when the user views the data. When using with single sign-on, Row Level Security (RLS) can be implemented on the data source, and this allows users to view data they have privileges to access. When the connection is to data sources in the cloud, Azure AD authentication is used for single sign-on; for on-prem data sources, Kerberos, SAML and Azure AD are supported.  
 
-    When connecting with Kerberos, users UPN is passed to the gateway and using Kerberos constrained delegation, the user is impersonated and connect to the respective data sources. SAML is also supported on the Gateway for SAP HANA datasource. More information is available in [overview of single sign-on for gateways](../connect-data/service-gateway-sso-overview.md).
+    When connecting with Kerberos, the user's UPN is passed to the gateway, and using Kerberos constrained delegation, the user is impersonated and connected to the respective data sources. SAML is also supported on the Gateway for SAP HANA datasource. More information is available in [overview of single sign-on for gateways](../connect-data/service-gateway-sso-overview.md).
 
-    If the data source is Azure Analysis Services or on-premises Analysis Services and Row Level Security (RLS) is configured, Power BI service will apply that row level security, and users who do not have sufficient credentials to access the underlying data (which could be a query used in a dashboard, report, or other data artifact) will not see data for which the user does not have sufficient privileges.
+    If the data source is Azure Analysis Services or on-premises Analysis Services and Row Level Security (RLS) is configured, the Power BI service will apply that row level security, and users who do not have sufficient credentials to access the underlying data (which could be a query used in a dashboard, report, or other data artifact) will not see data for which the user does not have sufficient privileges.
 
     [Row Level security with Power BI](../admin/service-admin-rls.md) can be used to restrict data access for given users. Filters restrict data access at the row level, and you can define filters within role.  
 
@@ -416,7 +416,7 @@ The following questions are common security questions and answers for Power BI. 
 
 **How does Power BI cache report, dashboard, or model data, and is it secure?**
 
-* When a data source is accessed, the Power BI service follows the process outlined in the **Data Storage and Movement [WHERE IN THE CURRENT DOC-DATA IN TRANSIT??]** section earlier in this document.
+* When a data source is accessed, the Power BI service follows the process outlined in the [Authentication to Data Sources](#authentication-to-data-sources) section earlier in this document.
 
 **Do clients cache web page data locally?**
 
@@ -426,9 +426,9 @@ The following questions are common security questions and answers for Power BI. 
 
 * For **non-Role Level Security (RLS)** enabled data sources, if a dashboard, report, or data model is shared with other users through Power BI, the data is then available for users with whom it is shared to view and interact with. Power BI *does not* re-authenticate users against the original source of the data; once data is uploaded into Power BI, the user who authenticated against the source data is responsible for managing which other users and groups can view the data.
 
-  When data connections are made to an **RLS** -capable data source, such as an Analysis Services data source, only dashboard data is cached in Power BI. Each time a report or dataset is viewed or accessed in Power BI that uses data from the RLS-capable data source, the Power BI service accesses the data source to get data based on the user's credentials, and if sufficient permissions exist, the data is loaded into the report or data model for that user. If authentication fails, the user will see an error.
+  When data connections are made to an **RLS**-capable data source, such as an Analysis Services data source, only dashboard data is cached in Power BI. Each time a report or dataset is viewed or accessed in Power BI that uses data from the RLS-capable data source, the Power BI service accesses the data source to get data based on the user's credentials, and if sufficient permissions exist, the data is loaded into the report or data model for that user. If authentication fails, the user will see an error.
 
-  For more information, see the **User Authentication to Data Sources [WHICH SECTION IN THE CURRENT DOCUMENT??]** section earlier in this document.
+  For more information, see the [Authentication to Data Sources](#authentication-to-data-sources) section earlier in this document.
 
 **Our users connect to the same data sources all the time, some of which require credentials that differ from their domain credentials. How can they avoid having to input these credentials each time they make a data connection?**
 
