@@ -295,7 +295,7 @@ Power BI currently supports two broad categories of AI features in the product t
 
 Most of the features mentioned above are supported in both Shared and Premium workspaces today. However, AutoML and CognitiveServices are supported only in Premium workspaces, due to IP restrictions. Today, with the AutoML integration in Power BI, a user can build and train a custom ML model (e.g. Prediction, Classification, Regression, etc.) and apply it to get predictions while loading data into a dataflow defined in a Premium workspace. Additionally, Power BI users can apply several CognitiveServices APIs, such as TextAnalytics and ImageTagging, to transform data before loading it into a dataflow/dataset defined in a Premium workspace. 
 
-The Premium AI enrichment features can be best viewed as a collection of stateless AI functions/transforms that can be used by Power BI users in their data integration pipelines used by a Power BI dataset or dataflow. Note that these functions can also be accessed from current dataflow/dataset authoring environments in the Power BI Service and Power BI Desktop. These AI functions/transforms always run in a Premium workspace/capacity. Hence, these functions are surfaced using in Power BI as a data source that requires an Azure AD token for the Power BI user who is using the AI function. These AI data sources are special because they do not surface any of their own data and they only supply these functions/transforms. During execution, these features do not make any outbound calls to other services to transmit the customer's data. Let us look at the Premium scenarios individually to understand the communication patterns and relevant security related details pertaining to them. 
+The Premium AI enrichment features can be best viewed as a collection of stateless AI functions/transforms that can be used by Power BI users in their data integration pipelines used by a Power BI dataset or dataflow. Note that these functions can also be accessed from current dataflow/dataset authoring environments in the Power BI Service and Power BI Desktop. These AI functions/transforms always run in a Premium workspace/capacity. These functions are surfaced in Power BI as a data source that requires an Azure AD token for the Power BI user who is using the AI function. These AI data sources are special because they do not surface any of their own data and they only supply these functions/transforms. During execution, these features do not make any outbound calls to other services to transmit the customer's data. Let us look at the Premium scenarios individually to understand the communication patterns and relevant security related details pertaining to them. 
 
 For training and applying an AutoML model, Power BI uses the Azure AutoML SDK and runs all the training in the customer's Power BI capacity. During training iterations, Power BI calls an experimentation AzureML service to select a suitable model and hyper-parameters for the current iteration. In this outbound call, only relevant experiment metadata (e.g. accuracy, ml algorithm, algorithm parameters, etc.) from the previous iteration is sent. The AutoML training produces an ONNX model and training report data that is then saved in the dataflow. Later, Power BI users can then apply the trained ML model as a transform to operationalize the ML model on a scheduled basis. For TextAnalytics and ImageTagging APIs, Power BI does not directly call the CognitiveServices service APIs, but rather uses an internal SDK to run the APIs in the Power BI Premium capacity. Today these APIs are supported in both Power BI dataflows and datasets. While authoring a dataset in Power BI Desktop, users can only access this functionality if they have access to a Premium Power BI workspace. Hence customers are prompted to supply their Azure AD credentials. 
 
@@ -303,31 +303,31 @@ For training and applying an AutoML model, Power BI uses the Azure AutoML SDK an
 
 This section outlines advanced security features in Power BI. Some of the features have specific licensing requirements. See the sections below for details.
 
-### Service Tags
+### Service tags
 
 A service tag represents a group of IP address prefixes from a given Azure service. It helps minimize the complexity of frequent updates to network security rules. Customers can use service tags to define network access controls on [Network Security Groups](/azure/virtual-network/security-overview#security-rules) or [Azure Firewall](/azure/firewall/service-tags). Customers can use service tags in place of specific IP addresses when creating security rules. By specifying the service tag name (e.g., PowerBI) in the appropriate source or destination (for APIs) field of a rule, customers can allow or deny the traffic for the corresponding service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses change.
 
-### Private links integration
+### Private Link integration
 
-Azure networking provides the Azure Private Links feature that enables Power BI to provide secure access via Azure Networking Private endpoints. With Azure Private Links and Private Endpoints, data traffic is sent privately using Microsoft's backbone network infrastructure, and thus the data doesn't traverse the Internet.
+Azure networking provides the Azure Private Link feature that enables Power BI to provide secure access via Azure Networking private endpoints. With Azure Private Link and private endpoints, data traffic is sent privately using Microsoft's backbone network infrastructure, and thus the data doesn't traverse the Internet.
 
-Private links ensure that Power BI users use the Microsoft private network backbone when going to resources in the Power BI service.
+Private Link ensures that Power BI users use the Microsoft private network backbone when going to resources in the Power BI service.
 
-Using Private Links with Power BI provides the following benefits:
-* Private Links ensure that traffic will flow over the Azure backbone to a private endpoint for Azure cloud-based resources.
+Using Private Link with Power BI provides the following benefits:
+* Private Link ensures that traffic will flow over the Azure backbone to a private endpoint for Azure cloud-based resources.
 * Network traffic isolation from non-Azure-based infrastructure, such as on-premises access, would require customers to have ExpressRoute or a Virtual Private Network (VPN) configured.
 
-See [Private Links for Power BI](../admin/service-security-private-links.md) for additional information.
+See [Private links for accessing Power BI](../admin/service-security-private-links.md) for additional information.
 
 ### VNet Connectivity (Preview - Coming Soon)
 
-While the private links integration feature provides secure inbound connections to Power BI, the VNet connectivity feature enables secure outbound connectivity from Power BI to data sources within a VNet. 
+While the Private Link integration feature provides secure inbound connections to Power BI, the VNet connectivity feature enables secure outbound connectivity from Power BI to data sources within a VNet. 
 
-VNet gateways (Microsoft-managed) will eliminate the overhead of installing and monitoring on-premises data gateways for connecting to data sources associated with a VNet. They will however, still follow the familiar process of managing security and data sources, as with an on-premises data gateway. 
+VNet gateways (Microsoft-managed) will eliminate the overhead of installing and monitoring on-premises data gateways for connecting to data sources associated with a VNet. They will, however, still follow the familiar process of managing security and data sources, as with an on-premises data gateway.
 
 The following is an overview of what happens when you interact with a Power BI report that is connected to a data source within a VNet using VNet gateways:
 
-1. The Power BI cloud service (or one of the other supported cloud services) kicks off a query and sends the query, data source details, and credentials to the Power platform VNet service (PP VNet).
+1. The Power BI cloud service (or one of the other supported cloud services) kicks off a query and sends the query, data source details, and credentials to the Power Platform VNet service (PP VNet).
 
 1. The PP VNet service then securely injects a container running a VNet gateway into the subnet. This container can now connect to data services accessible from within this subnet.
 
