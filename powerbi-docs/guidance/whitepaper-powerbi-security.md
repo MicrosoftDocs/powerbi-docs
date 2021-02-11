@@ -108,7 +108,7 @@ There are many surrounding resources which ensure a secure and reliable infrastr
 
 Any request that comes to Power BI Premium infrastructure goes to front end nodes first – they are the only nodes available for external connections. The rest of the resources are hidden behind virtual networks. The front end nodes authenticate the request, handle it, or forward it to the appropriate resources (e.g. back-end nodes).
 
-Back end nodes provide most of the Power BI Premium capabilities and features.
+Back-end nodes provide most of the Power BI Premium capabilities and features.
 
 ### Power BI Mobile
 
