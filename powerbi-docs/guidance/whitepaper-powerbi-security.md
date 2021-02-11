@@ -64,11 +64,11 @@ The WFE cluster provides the user's browser with the initial HTML page contents 
 
 ![The WEF Cluster](media/whitepaper-powerbi-security/powerbi-security-whitepaper_02.png)
 
-A WFE cluster consists of an ASP.NET website running in the [Azure App Service Environment](/azure/app-service/environment/intro). When users attempt to connect to the Power BI service, the client's DNS service may communicate with the Azure Traffic Manager to find the most appropriate (usually nearest) datacenter with a Power BI deployment. For more information about this process, see [Performance traffic-routing method for Azure Traffic Manager](/azure/traffic-manager/traffic-manager-routing-methods#performance-traffic-routing-method).
+A WFE cluster consists of an [ASP.NET] website running in the [Azure App Service Environment](/azure/app-service/environment/intro). When users attempt to connect to the Power BI service, the client's DNS service may communicate with the Azure Traffic Manager to find the most appropriate (usually nearest) datacenter with a Power BI deployment. For more information about this process, see [Performance traffic-routing method for Azure Traffic Manager](/azure/traffic-manager/traffic-manager-routing-methods#performance-traffic-routing-method).
 
 The WFE cluster assigned to the user manages the login and authentication sequence (described later in this article) and obtains an Azure AD access token once authentication is successful. The ASP.NET component within the WFE cluster parses the token to determine which organization the user belongs to, and then consults the Power BI Global Service. The WFE specifies to the browser which Back-End cluster houses the organization's tenant. Once a user is authenticated, subsequent client interactions for customer data occur with the Back-End or Premium cluster directly, without the WFE being an intermediator for those requests.
 
-Static resources such as *.js, *.css, and image files are mostly stored on Azure Content Delivery Network (CDN) and retrieved directly by the browser. Note that Sovereign Government cluster deployments are an exception to this rule, and  for compliance reasons will omit the CDN and instead use a WFE cluster from a compliant region for hosting static content.
+Static resources such as **.js*, **.css*, and image files are mostly stored on Azure Content Delivery Network (CDN) and retrieved directly by the browser. Note that Sovereign Government cluster deployments are an exception to this rule, and for compliance reasons will omit the CDN and instead use a WFE cluster from a compliant region for hosting static content.
 
 ### Power BI Back-End Cluster (BE)
 
