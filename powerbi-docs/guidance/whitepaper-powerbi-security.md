@@ -52,13 +52,13 @@ The Power BI service is governed by the [Microsoft Online Services Terms](https:
 
 The Power BI service follows the Security Development Lifecycle (SDL), strict security practices that support security assurance and compliance requirements. The SDL helps developers build more secure software by reducing the number and severity of vulnerabilities in software, while reducing development cost. Learn more at [Microsoft Security Development Lifecycle Practices](https://www.microsoft.com/securityengineering/sdl/practices).
 
-## Power BI Architecture
+## Power BI architecture
 
 The Power BI service is built on Azure, Microsoft's [cloud computing platform](https://azure.microsoft.com/overview/what-is-azure/). Power BI is currently deployed in many datacenters around the world – there are many active deployments made available to customers in the regions served by those datacenters, and an equal number of passive deployments that serve as backups for each active deployment.
 
 ![The WFE and Back End](media/whitepaper-powerbi-security/powerbi-security-whitepaper_01.png)
 
-### Web Front End Cluster (WFE)
+### Web front-end cluster (WFE)
 
 The WFE cluster provides the user's browser with the initial HTML page contents on site load and manages the initial connection and authentication process for Power BI, using Azure Active Directory (Azure AD) to authenticate clients and provide tokens for subsequent client connections to the Power BI back-end service.
 
@@ -70,7 +70,7 @@ The WFE cluster assigned to the user manages the login and authentication sequen
 
 Static resources such as **.js*, **.css*, and image files are mostly stored on Azure Content Delivery Network (CDN) and retrieved directly by the browser. Note that Sovereign Government cluster deployments are an exception to this rule, and for compliance reasons will omit the CDN and instead use a WFE cluster from a compliant region for hosting static content.
 
-### Power BI Back-End Cluster (BE)
+### Power BI back-end cluster (BE)
 
 The back-end cluster is the backbone of all the functionality available in Power BI. It consists of several service endpoints consumed by Web Front End and API clients as well as background working services, databases, caches, and various other components.
 
@@ -88,7 +88,7 @@ Back-end functionality is served by micro-services running on different machines
 
 ![The back-end cluster](media/whitepaper-powerbi-security/powerbi-security-whitepaper_03.png)
 
-### Power BI Premium Infrastructure
+### Power BI Premium infrastructure
 
 Power BI Premium offers a service for subscribers who require premium Power BI features, such as Dataflows, Paginated Reports, AI, etc. When a customer signs up for a Power BI Premium subscription, the Premium capacity is created through the Azure Resource Manager.
 
@@ -148,11 +148,11 @@ Power BI Mobile does not access other application folders or files on the device
 
 The Power BI apps for iOS and Android let you protect your data by configuring additional identification, such as providing Face ID, Touch ID, or a passcode for iOS, and biometric data (Fingerprint ID) for Android. [Learn more about additional identification](../consumer/mobile/mobile-native-secure-access.md).
 
-## Authentication to the Power BI Service
+## Authentication to the Power BI service
 
 User authentication to the Power BI service consists of a series of requests, responses, and redirects between the user's browser and the Power BI service or the Azure services used by Power BI. That sequence describes the process of user authentication in Power BI, which follows the [Azure Active Directory's auth code grant flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow). For more information about options for an organization's user authentication models (sign-in models), see [Choosing a sign-in model for Microsoft 365](https://blogs.office.com/2014/05/13/choosing-a-sign-in-model-for-office-365/).
 
-### Authentication Sequence
+### Authentication sequence
 
 The user authentication sequence for the Power BI service occurs as described in the following steps, which are illustrated in the image that follows them.
 
@@ -170,13 +170,13 @@ The user authentication sequence for the Power BI service occurs as described in
 
 ![Authentication sequence](media/whitepaper-powerbi-security/powerbi-security-whitepaper_08.png)
 
-## Data Residency
+## Data residency
 
 Unless otherwise indicated in documentation, Power BI stores customer data in an Azure geography that is assigned when an [Azure AD tenant](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings) signs up for Power BI services for the first time. An Azure AD tenant houses the user and application identities, groups, and other relevant information that pertain to an organization and its security. 
 
 The assignment of an Azure geography for tenant data storage is done by mapping the country or region selected as part of the Azure AD tenant setup to the most suitable Azure geography where a Power BI deployment exists. Once this determination is made, all Power BI customer data will be stored in this selected Azure geography (also known as the *home geo*), except in cases where organizations utilize multi-geo deployments.
 
-### Multiple Geographies (multi-geo)
+### Multiple geographies (multi-geo)
 
 Some organizations have a global presence and may require Power BI services in multiple Azure geographies. For example, a business may have their headquarters in the United States but may also do business in other geographical areas, such as Australia. In such cases the business may require that certain Power BI data remain stored at rest in the remote region to comply with local regulations. This feature of the Power BI service is referred to as *multi-geo*.
 
@@ -184,17 +184,17 @@ The query execution layer, query caches, and artifact data assigned to a multi-g
 
 Please see [Configure Multi-Geo support for Power BI Premium](../admin/service-admin-premium-multi-geo.md) for more information about creating and managing Power BI deployments that span multiple Azure geographies.
 
-### Regions and Datacenters
+### Regions and datacenters
 
 Power BI services are available in specific Azure geographies as described in the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location). For more information about where your data is stored and how it is used, please refer to the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Commitments concerning the location of customer data at rest are specified in the Data Processing Terms of the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
 Microsoft also provides datacenters for sovereign entities. For more information about Power BI service availability for national clouds, see [Power BI national clouds](https://powerbi.microsoft.com/clouds/). 
 
-## Data Handling
+## Data handling
 
 This section outlines Power BI data handling practices when it comes to storing, processing, and transferring customer data.
 
-### Data at Rest
+### Data at rest
 
 Power BI uses two primary data storage resource types:
 * Azure Storage
@@ -218,14 +218,14 @@ Power BI datasets allow for a variety of data source connection modes which dete
 
 Regardless of the dataset mode utilized, Power BI may temporarily cache any retrieved data to optimize query and report load performance.
 
-### Data in Processing
+### Data in processing
 
 Data is in processing when it is either actively being used by one or more users as part of an interactive scenario, or when a background process, such as refresh, touches this data. Power BI loads actively processed data into the memory space of one or more service workloads. To facilitate the functionality required by the workload, the processed data in memory is not encrypted.
 
-### Data in Transit
+### Data in transit
 Power BI requires all incoming HTTP traffic to be encrypted using TLS 1.2 or above. Any requests attempting to use the service with TLS 1.1 or lower will be rejected.
 
-## Authentication to Data Sources
+## Authentication to data sources
 
 When connecting to a data source, a user can choose to import a copy of the data into Power BI or to connect directly to the data source. 
 
@@ -235,9 +235,9 @@ If a data source is connected directly using pre-configured credentials, the pre
 
 If the data source is Azure Analysis Services or on-premises Analysis Services, and RLS is configured, the Power BI service will apply that row level security, and users who do not have sufficient credentials to access the underlying data (which could be a query used in a dashboard, report, or other data artifact) will not see data they don't have sufficient privileges for.
 
-## Premium Features
+## Premium features
 
-### Dataflows Architecture
+### Dataflows architecture
 
 Dataflows provide users the ability to configure back-end data processing operations that will extract data from polymorphous data sources, execute transformation logic against the data, and then land it in a target model for use across various reporting presentation technologies. Any user who has either a member, contributor, or admin role in a workspace may create a dataflow. Users in the viewer role may view data processed by the dataflow but may not make changes to its composition. Once a dataflow has been authored, any member, contributor, or admin of the workspace may schedule refreshes, as well as view and edit the dataflow by taking ownership of it.
 
@@ -253,7 +253,7 @@ When Power BI Desktop is used to access data in a dataflow, it must first authen
 
 The processing of data throughout the pipeline emits Office 365 auditing events. Some of these events will capture security and privacy-related operations.
 
-### Paginated Reports
+### Paginated reports
 
 Paginated reports are designed to be printed or shared. They're called paginated because they're formatted to fit well on a page. They display all the data in a table, even if the table spans multiple pages. They're also called pixel perfect because you can control their report page layout exactly.
 
@@ -277,7 +277,7 @@ A paginated report can access a wide set of data sources as part of the renderin
 
 In order to support features such as Bing maps, or calls to Azure Functions, the sandbox does have access to the internet.
 
-### PBI Embedded Analytics
+### PBI embedded analytics
 
 Independent Software Vendors (ISVs) and solution providers have two main modes of embedding Power BI artifacts in their web applications and portals: [embed for your organization](../developer/embedded/embed-sample-for-your-organization.md) and [embed for your customers](../developer/embedded/embed-sample-for-customers.md). The artifact is embedded into an iframe in the application or portal. An iframe is not allowed to read or write data from the external web application or portal, and the communication with the iframe is done by using the Power BI Client SDK using POST messages.
 
@@ -289,7 +289,7 @@ To enable embedding and automation, and to generate the embed tokens described a
 
 PBI Embedded analytics and its REST APIs support all PBI network isolation capabilities described in this article: e.g., Service Tags and Private Links.
 
-### AI Features
+### AI features
 
 Power BI currently supports two broad categories of AI features in the product today: AI visuals and AI enrichments. The visual-level AI features include capabilities such as Key-Influencers, Decomposition-Tree, Smart-Narrative, Anomaly-Detection, R-visual, Python-visual, Clustering, Forecasting, Q&A, Quick-Insights etc. The AI enrichment capabilities include capabilities such as AutoML, AzureML, CognitiveServices, R/Python transforms etc. 
 
@@ -299,7 +299,7 @@ The Premium AI enrichment features can be best viewed as a collection of statele
 
 For training and applying an AutoML model, Power BI uses the Azure AutoML SDK and runs all the training in the customer's Power BI capacity. During training iterations, Power BI calls an experimentation AzureML service to select a suitable model and hyper-parameters for the current iteration. In this outbound call, only relevant experiment metadata (e.g. accuracy, ml algorithm, algorithm parameters, etc.) from the previous iteration is sent. The AutoML training produces an ONNX model and training report data that is then saved in the dataflow. Later, Power BI users can then apply the trained ML model as a transform to operationalize the ML model on a scheduled basis. For TextAnalytics and ImageTagging APIs, Power BI does not directly call the CognitiveServices service APIs, but rather uses an internal SDK to run the APIs in the Power BI Premium capacity. Today these APIs are supported in both Power BI dataflows and datasets. While authoring a dataset in Power BI Desktop, users can only access this functionality if they have access to a Premium Power BI workspace. Hence customers are prompted to supply their Azure AD credentials. 
 
-## Network Isolation
+## Network isolation
 
 This section outlines advanced security features in Power BI. Some of the features have specific licensing requirements. See the sections below for details.
 
@@ -319,7 +319,7 @@ Using Private Link with Power BI provides the following benefits:
 
 See [Private links for accessing Power BI](../admin/service-security-private-links.md) for additional information.
 
-### VNet Connectivity (Preview - Coming Soon)
+### VNet connectivity (preview - coming soon)
 
 While the Private Link integration feature provides secure inbound connections to Power BI, the VNet connectivity feature enables secure outbound connectivity from Power BI to data sources within a VNet. 
 
@@ -341,9 +341,9 @@ The following is an overview of what happens when you interact with a Power BI r
 
 This feature will be available in Public preview soon.
 
-### Service Principals
+### Service principals
 
-Power BI supports the use of Service Principals. Store any Service Principal credentials used for encrypting or accessing Power BI in a Key Vault, assign proper access policies to the vault, and regularly review access permissions.
+Power BI supports the use of service principals. Store any service principal credentials used for encrypting or accessing Power BI in a Key Vault, assign proper access policies to the vault, and regularly review access permissions.
 
 See [Automate Premium workspace and dataset tasks with service principals](../admin/service-premium-service-principal.md) for additional details.
 
@@ -384,15 +384,15 @@ With Cloud App Security, organizations can gain the following DLP capabilities:
 
 See [Using Microsoft Cloud App Security Controls in Power BI](../admin/service-security-using-microsoft-cloud-app-security-controls.md) for additional details.
 
-## Preview Security Features
+## Preview security features
 
-This topic lists features that are planned to release through March 2021. Because this topic lists features that may not have released yet, **delivery timelines may change and projected functionality may be released later than March 2021, or may not be released at all**. For more information, about Previews, please review the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products).
+This topic lists features that are planned to release through March 2021. Because this topic lists features that may not have released yet, **delivery timelines may change and projected functionality may be released later than March 2021, or may not be released at all**. For more information, about previews, please review the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products).
 
 ### Bring Your Own Log Analytics (BYOLA)
 
 Bring Your Own Log Analytics enables integration between Power BI and Azure Log Analytics. This integration includes Azure Log Analytics' advanced analytic engine, interactive query language, and built-in machine learning constructs.
 
-## Power BI Security Questions and Answers
+## Power BI security questions and answers
 
 The following questions are common security questions and answers for Power BI. These are organized based on when they were added to this white paper, to facilitate your ability to quickly find new questions and answers when this paper is updated. The newest questions are added to the end of this list.
 
@@ -468,11 +468,11 @@ The following questions are common security questions and answers for Power BI. 
 
 * Yes. Bing Maps and ESRI visuals transmit data out of the Power BI service for visuals that use those services.
 
-**For Template Apps, does Microsoft perform any security or privacy assessment of the Template app prior to publishing items to the Gallery?**
-* No. The app publisher is responsible for the content while it is the customer's responsibility to review and determine whether to trust the Template app publisher. 
+**For template apps, does Microsoft perform any security or privacy assessment of the template app prior to publishing items to the Gallery?**
+* No. The app publisher is responsible for the content while it is the customer's responsibility to review and determine whether to trust the template app publisher. 
 
-**Are there Template apps that can send information outside the customer network?**
-* Yes. It is the customer's responsibility to review the publisher's privacy policy and determine whether to install the Template app on tenant. The publisher is responsible for informing the customer about the app's behavior and capabilities.
+**Are there template apps that can send information outside the customer network?**
+* Yes. It is the customer's responsibility to review the publisher's privacy policy and determine whether to install the template app on tenant. The publisher is responsible for informing the customer about the app's behavior and capabilities.
 
 **What about data sovereignty? Can we provision tenants in data centers located in specific geographies, to ensure data doesn't leave the country borders?**
 
@@ -484,11 +484,11 @@ The following questions are common security questions and answers for Power BI. 
 
 * The connections established for customers with Power BI Premium subscriptions implement an [Azure Business-to-Business (B2B)](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) authorization process, using Azure AD to enable access control and authorization. Power BI handles connections from Power BI Premium subscribers to Power BI Premium resources just as it would any other Azure AD user.
 
-## Feedback and Suggestions
+## Feedback and suggestions
 
 We appreciate your feedback. We're interested in hearing any suggestions you have for improvement, additions, or clarifications to this white paper, or other content related to Power BI. Send your suggestions to pbiss@microsoft.com.
 
-## Additional Resources
+## Additional resources
 
 For more information on Power BI, see the following resources.
 
