@@ -90,7 +90,7 @@ Back End functionality is served by micro-services running on different machines
 
 ### Power BI Premium Infrastructure
 
-Power BI Premium offers a service for subscribers who require premium Power BI features, such as Dataflows, Paginated Reports, AI, etc. When a customer signs up for a Power BI Premium subscription, the Premium capacity is created through the Azure Resource Manager. 
+Power BI Premium offers a service for subscribers who require premium Power BI features, such as Dataflows, Paginated Reports, AI, etc. When a customer signs up for a Power BI Premium subscription, the Premium capacity is created through the Azure Resource Manager.
 
 Power BI Premium capacities are hosted in back end clusters that are independent of the regular Power BI Back End – see above). This provides better isolation, resource allocation, supportability, security isolation, and scalability of the Premium offering.
 
@@ -100,11 +100,11 @@ The following diagram illustrates the architecture of the Power BI Premium infra
 
 The connection to the Power BI Premium infrastructure can be done in a number of ways, depending on the user scenario. Power BI Premium clients can be a user's browser, a regular Power BI Back End, direct connections via XMLA clients, ARM APIs, etc.
 
-The Power BI Premium infrastructure in an Azure region consists of multiple Power BI Premium clusters (the minimum is one). The majority of the Premium resources are encapsulated inside a cluster (for instance, compute), and there are some common regional resources (e.g. metadata store). Premium infrastructure allows two ways of achieving horizontal scalability in a region: increasing resources inside clusters and/or adding more clusters on demand as needed (if cluster resources are approaching their limits).
+The Power BI Premium infrastructure in an Azure region consists of multiple Power BI Premium clusters (the minimum is one). The majority of the Premium resources are encapsulated inside a cluster (for instance, compute), and there are some common regional resources (e.g. metadata storage). Premium infrastructure allows two ways of achieving horizontal scalability in a region: increasing resources inside clusters and/or adding more clusters on demand as needed (if cluster resources are approaching their limits).
 
-The backbone of each cluster are compute resources managed by [Virtual Machine Scale Sets (VMSS)](/azure/virtual-machine-scale-sets/overview) and [Azure Service Fabric](/azure/service-fabric/service-fabric-overview). VMSS and Service Fabric allow fast and painless increase of compute nodes as usage grows and orchestrates the deployment, management, and monitoring of Power BI Premium services and applications. 
+The backbone of each cluster are compute resources managed by [Virtual Machine Scale Sets (VMSS)](/azure/virtual-machine-scale-sets/overview) and [Azure Service Fabric](/azure/service-fabric/service-fabric-overview). VMSS and Service Fabric allow fast and painless increase of compute nodes as usage grows and orchestrates the deployment, management, and monitoring of Power BI Premium services and applications.
 
-There are many surrounding resources which ensure a secure and reliable infrastructure: load balancers, virtual networks, network security groups, service bus, storage, etc. Any secrets, keys, and certificates required for Power BI Premium are managed by [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/general/basic-concepts) exclusively. Any authentication is done via integration with Azure AD exclusively.
+There are many surrounding resources which ensure a secure and reliable infrastructure: load balancers, virtual networks, network security groups, service bus, storage, etc. Any secrets, keys, and certificates required for Power BI Premium are managed by [Azure Key Vault](/azure/key-vault/general/basic-concepts) exclusively. Any authentication is done via integration with Azure AD exclusively.
 
 Any request that comes to Power BI Premium infrastructure goes to front end nodes first – they are the only nodes available for external connections. The rest of the resources are hidden behind virtual networks. The front end nodes authenticate the request, handle it, or forward it to the appropriate resources (e.g. back end nodes).
 
