@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 02/10/2021
+ms.date: 02/11/2021
 ---
 
 # Change log for Power BI Report Server
@@ -19,7 +19,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ## January 2021
 - **Power BI Report Server**
-    - *Version: 1.10.7698.27886 (Build 15.0.1105.194), Released: January 28, 2021*
+    - *Version: 1.10.7698.27886 (Build 15.0.1105.195), Released: January 28, 2021*
         - Features
             - New Icons releate to Power BI and Power BI reports.
             - Custom Visual API shipped with release - version 3.5.0
