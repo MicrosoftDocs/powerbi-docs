@@ -64,7 +64,7 @@ The WFE cluster provides the user's browser with the initial HTML page contents 
 
 ![The WEF Cluster](media/whitepaper-powerbi-security/powerbi-security-whitepaper_02.png)
 
-A WFE cluster consists of an [ASP.NET] website running in the [Azure App Service Environment](/azure/app-service/environment/intro). When users attempt to connect to the Power BI service, the client's DNS service may communicate with the Azure Traffic Manager to find the most appropriate (usually nearest) datacenter with a Power BI deployment. For more information about this process, see [Performance traffic-routing method for Azure Traffic Manager](/azure/traffic-manager/traffic-manager-routing-methods#performance-traffic-routing-method).
+A WFE cluster consists of an ASP.NET website running in the [Azure App Service Environment](/azure/app-service/environment/intro). When users attempt to connect to the Power BI service, the client's DNS service may communicate with the Azure Traffic Manager to find the most appropriate (usually nearest) datacenter with a Power BI deployment. For more information about this process, see [Performance traffic-routing method for Azure Traffic Manager](/azure/traffic-manager/traffic-manager-routing-methods#performance-traffic-routing-method).
 
 The WFE cluster assigned to the user manages the login and authentication sequence (described later in this article) and obtains an Azure AD access token once authentication is successful. The ASP.NET component within the WFE cluster parses the token to determine which organization the user belongs to, and then consults the Power BI Global Service. The WFE specifies to the browser which Back-End cluster houses the organization's tenant. Once a user is authenticated, subsequent client interactions for customer data occur with the Back-End or Premium cluster directly, without the WFE being an intermediator for those requests.
 
@@ -72,15 +72,15 @@ Static resources such as **.js*, **.css*, and image files are mostly stored on A
 
 ### Power BI Back-End Cluster (BE)
 
-The Back-End cluster is the backbone of all the functionality available in Power BI. It consists of several service endpoints consumed by Web Front End and API clients as well as background working services, databases, caches, and various other components.
+The Back End cluster is the backbone of all the functionality available in Power BI. It consists of several service endpoints consumed by Web Front End and API clients as well as background working services, databases, caches, and a variety of other components.
 
-The Back End is available in most Azure regions, and is being deployed in new regions as they become available. A single Azure region hosts one or more Back-End clusters that allow unlimited horizontal scaling of the Power BI service once the vertical and horizontal scaling limits of a single cluster are exhausted.
+The Back End is available in most Azure regions, and is being deployed in new regions as they become available. A single Azure region hosts one or more Back End clusters that allow unlimited horizontal scaling of the Power BI service once the vertical and horizontal scaling limits of a single cluster are exhausted.
 
-Each Back-End cluster is stateful and hosts all the data of all the tenants assigned to that cluster. A cluster that contains the data of a specific tenant is referred to as the tenant’s home cluster. An authenticated user's home cluster information is provided by Global Service and used by the Web Front End to route requests to the tenant’s home cluster. 
+Each Back End cluster is stateful and hosts all the data of all the tenants assigned to that cluster. A cluster that contains the data of a specific tenant is referred to as the tenant’s home cluster. An authenticated user's home cluster information is provided by Global Service and used by the Web Front End to route requests to the tenant’s home cluster.
 
-Each Back-End cluster consists of multiple virtual machines combined into multiple resizable-scale sets tuned for performing specific tasks, stateful resources such as SQL databases, storage accounts, service buses, caches, and other necessary cloud components.
+Each Back End cluster consists of multiple virtual machines combined into multiple resizable-scale sets tuned for performing specific tasks, stateful resources such as SQL databases, storage accounts, service buses, caches, and other necessary cloud components.
 
-Tenant metadata and data are stored within cluster limits except for data replication to a secondary Back-End cluster in a paired Azure region in the same Azure geography. The secondary Back-End cluster serves as a failover cluster in case of regional outage, and is passive at any other time.
+Tenant metadata and data are stored within cluster limits except for data replication to a secondary Back End cluster in a paired Azure region in the same Azure geography. The secondary Back End cluster serves as a failover cluster in case of regional outage, and is passive at any other time.
 
 Back End functionality is served by micro-services running on different machines within the cluster’s virtual network that are not accessible from the outside, except for two components that can be accessed from the public internet:
 * Gateway Service
