@@ -1,6 +1,6 @@
 ---
-title: Power BI security whitepaper
-description: Whitepaper that discusses and describes security architecture and implementation for Power BI
+title: Power BI security white paper
+description: A white paper that discusses and describes security architecture and implementation for Power BI
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -11,7 +11,7 @@ ms.date: 02/11/2021
 LocalizationGroup: Conceptual
 ---
 
-# Power BI security whitepaper
+# Power BI security white paper
 
 **Summary:** Power BI is an online software service (*SaaS*, or Software as a Service) offering from Microsoft that lets you easily and quickly create self-service Business Intelligence dashboards, reports, datasets, and visualizations. With Power BI, you can connect to many different data sources, combine and shape data from those connections, then create reports and dashboards that can be shared with others.
 
@@ -22,7 +22,7 @@ LocalizationGroup: Conceptual
 **Applies to:** Power BI SaaS, Power BI Desktop, Power BI Premium, Power BI Embedded, Power BI Mobile
 
 > [!NOTE]
-> You can save or print this whitepaper by selecting **Print** from your browser, then selecting **Save as PDF**.
+> You can save or print this white paper by selecting **Print** from your browser, then selecting **Save as PDF**.
 
 ## Introduction
 
@@ -394,7 +394,7 @@ Bring Your Own Log Analytics enables integration between Power BI and Azure Log 
 
 ## Power BI Security Questions and Answers
 
-The following questions are common security questions and answers for Power BI. These are organized based on when they were added to this whitepaper, to facilitate your ability to quickly find new questions and answers when this paper is updated. The newest questions are added to the end of this list.
+The following questions are common security questions and answers for Power BI. These are organized based on when they were added to this white paper, to facilitate your ability to quickly find new questions and answers when this paper is updated. The newest questions are added to the end of this list.
 
 **How do users connect to, and gain access to data sources while using Power BI?**
 
