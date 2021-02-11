@@ -486,7 +486,7 @@ The following questions are common security questions and answers for Power BI. 
 
 ## Feedback and suggestions
 
-We appreciate your feedback. We're interested in hearing any suggestions you have for improvement, additions, or clarifications to this white paper, or other content related to Power BI. Send your suggestions to pbiss@microsoft.com.
+We appreciate your feedback. We're interested in hearing any suggestions you have for improvement, additions, or clarifications to this white paper, or other content related to Power BI. Send your suggestions to [pbiss@microsoft.com](mailto:pbiss@microsoft.com).
 
 ## Additional resources
 
