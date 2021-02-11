@@ -257,9 +257,9 @@ The processing of data throughout the pipeline emits Office 365 auditing events.
 
 Paginated reports are designed to be printed or shared. They're called paginated because they're formatted to fit well on a page. They display all the data in a table, even if the table spans multiple pages. They're also called pixel perfect because you can control their report page layout exactly.
 
-Paginated reports support rich and powerful expressions written in Microsoft Visual Basic .Net. Expressions are widely used throughout Power BI Report Builder paginated reports to retrieve, calculate, display, group, sort, filter, parameterize, and format data.
+Paginated reports support rich and powerful expressions written in Microsoft Visual Basic .NET. Expressions are widely used throughout Power BI Report Builder paginated reports to retrieve, calculate, display, group, sort, filter, parameterize, and format data.
 
-Expressions are created by the author of the report with access to the broad range of features of the .Net framework. The processing and execution of paginated reports is performed inside a sandbox.
+Expressions are created by the author of the report with access to the broad range of features of the .NET framework. The processing and execution of paginated reports is performed inside a sandbox.
 
 Paginated report definitions (.rdl) are stored in Power BI, and to publish and/or render a paginated report a user needs to authenticate and authorize in the same way as described in the [Authentication to the Power BI Service](#authentication-to-the-power-bi-service) section above.
 
