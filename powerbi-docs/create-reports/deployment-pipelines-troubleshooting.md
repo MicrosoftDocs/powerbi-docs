@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: pbi-deployment
-ms.date: 11/11/2020
+ms.date: 02/09/2021
 ---
 
 # Deployment pipelines troubleshooting
@@ -141,6 +141,10 @@ After creating the pipeline, use the development stage to develop your content, 
 
 >[!NOTE]
 >Backwards deployment only supports [full deployment](deployment-pipelines-get-started.md#deploying-all-content). It doesn't support [selective deployment](deployment-pipelines-get-started.md#selective-deployment)
+
+### Why do I need to deploy after configuring dataset rules?
+
+Dataset rules are not applied immediately after they're configured. To apply dataset rules, you have to deploy the datasets from the source stage to the target stage which includes the created dataset rules. After configuring dataset rules, and before you deploy, the *different* indicator is shown next to the dataset with the configured rules. This indicates that you need to deploy that dataset from the source stage to the target stage. Once you deploy, if no other changes were made, the *different* indicator will disappear signifying that the rules were applied successfully.
 
 ### Does deployment pipelines support multi-geo?
 
