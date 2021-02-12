@@ -58,6 +58,7 @@ The following basic flow lists what the application does when the customer launc
 * Your own Azure Active Directory (Azure AD) tenant set up. For instructions on how to set one up, see [Create an Azure AD tenant](../embedded/create-an-azure-active-directory-tenant.md).
 * A [service principal (app-only token)](../embedded/embed-service-principal.md) registered in the preceding tenant.
 * A parameterized [template app](../../connect-data/service-template-apps-overview.md) that's ready for installation. The template app must be created in the same tenant in which you register your application in Azure AD. For more information, see [Template app tips](../../connect-data/service-template-apps-tips.md) or [Create a template app in Power BI](../../connect-data/service-template-apps-create.md).
+* To be able to test your automation work flow, add the service principal to the template app workspace as an Admin.
 * A Power BI Pro license. If you're not signed up for Power BI Pro, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
 ## Set up your template apps automation development environment
@@ -73,6 +74,8 @@ Make sure to register the application as a **server-side web application** app. 
 Save the *application ID* (ClientID) and *application secret* (ClientSecret) for later steps.
 
 You can go through the [Embedding setup tool](https://aka.ms/embedsetup/AppOwnsData) to quickly get started creating an app registration. If you're using the [Power BI App Registration Tool](https://app.powerbi.com/embedsetup), select the **Embed for your customers** option.
+
+Add the service principal to the template app workspace as an Admin, so that you will be able to test your automation work flow.
 
 ## Template app preparation
 
