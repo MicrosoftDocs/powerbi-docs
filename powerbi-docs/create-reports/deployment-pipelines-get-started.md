@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 11/11/2020
+ms.date: 02/09/2021
 ---
 
 # Get started with deployment pipelines
@@ -138,6 +138,8 @@ Dataset rules are defined on data sources and parameters, in each dataset. They 
 
 ### Create a dataset rule
 
+To create a dataset rule, follow the steps in this section. After you create all the dataset rules you need, deploy the datasets with the newly created rules from the source stage to the target stage where the rules were created. Your rules will not apply until you deploy the datasets from the source to the target stage.
+
 1. In the pipeline stage you want to create a dataset rule for, select **Deployment settings**.
 
     ![A screenshot of the deployment settings button, located at the top right of each deployment pipeline stage.](media/deployment-pipelines-get-started/deployment-settings.png)
@@ -219,6 +221,8 @@ When two sequential stages aren't the same, a **compare** link appears underneat
 * **New** – A new item in the source stage. This is an item that doesn't exist in the target stage. After deployment, this item will be cloned to the target stage.
 
 * **Different** – An item that exists both in the source and the target stage, were one of the versions was changed after the last deployment. After deployment, the item in the source stage will overwrite the item in the target stage, regardless of where the change was made.
+
+    Datasets with configured dataset rules that haven't been deployed, are also marked as *different*. This is because dataset rules are not applied until the datasets are deployed from the source stage to the target stage which includes the configured rules.
 
 * **Missing from** – This label indicates that an item appears in the target stage, but not in the source stage.
 
