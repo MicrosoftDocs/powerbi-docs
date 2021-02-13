@@ -106,8 +106,8 @@ You can also add a page-level filter to filter an entire page.
 
 ## Considerations and troubleshooting
 
-- If you do not see the Fields pane, make sure you're in report [Editing view](service-interact-with-a-report-in-editing-view.md)    
-- If you've made lots of changes to the filters and want to return to the report author default settings, select **Reset to default** from the top menu bar.
+- If you don't see the Fields pane, make sure you're in report [Editing view](service-interact-with-a-report-in-editing-view.md).
+- If you've made lots of changes to the filters and want to return to the default settings, select **Reset to default** from the top menu bar. Remember: As the report author, whatever filters are in place when you save the report *become* the default filter settings.
 
 ## Next steps
 
