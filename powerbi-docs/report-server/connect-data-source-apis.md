@@ -94,6 +94,13 @@ Starting with the October 2020 release of Power BI Report Server we enabled the 
     $parameters[0].Value = 'myproductionserver'
     $parameters[1].Value = 'myproductiondatabase'
     ```
+    
+    NOTE: If making a one-off change to report parameters, the techniquie above works fine.  However, if integrating these report parameter changes into a deployment pipeline, the technique below is safer, since the order of parameters cannot be guaranteed.
+    
+    ```powershell
+    $parameters.where({$_.Name -eq 'ServerName'}) | foreach {$_.Value = 'myproductionserver'}
+    $parameters.where({$_.Name -eq 'Databasename'}) | foreach {$_.Value = 'myproductiondatabase'}
+    ```
 
 6. With the updated values, we can use the commandlet `Set-RsRestItemDataModelParameters` to update the values in the server:
 
