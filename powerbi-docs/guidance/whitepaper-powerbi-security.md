@@ -15,11 +15,7 @@ LocalizationGroup: Conceptual
 
 **Summary:** Power BI is an online software service (*SaaS*, or Software as a Service) offering from Microsoft that lets you easily and quickly create self-service Business Intelligence dashboards, reports, datasets, and visualizations. With Power BI, you can connect to many different data sources, combine and shape data from those connections, then create reports and dashboards that can be shared with others.
 
-**Writers:** Yitzhak Kesselman, Paddy Osborne, Matt Neely, Tony Bencic, Srinivasan Turuvekere, Cristian Petculescu, Adi Regev, Naveen Sivaraj, Ben Glastein, Evgeny Tshiorny, Arthi Ramasubramanian Iyer, Sid Jayadevan, Ronald Chang, Ori Eduar, Anton Fritz, Idan Sheinberg, Ron Gilad, Sagiv Hadaya, Paul Inbar, Igor Uzhviev, Michael Roth, Jamie Tarquino, Gennady Pats, Orion Lee, Yury Berezansky, Maya Shenhav, Romit Chattopadhyay, Yariv Maimon, Bogdan Crivat
-
-**Technical Reviewers:** Cristian Petculescu, Amir Netz, Sergei Gundorov
-
-**Applies to:** Power BI SaaS, Power BI Desktop, Power BI Premium, Power BI Embedded, Power BI Mobile
+**Applies to:** Power BI SaaS, Power BI Desktop, Power BI Premium, Power BI Embedded Analytics, Power BI Mobile
 
 > [!NOTE]
 > You can save or print this white paper by selecting **Print** from your browser, then selecting **Save as PDF**.
@@ -287,7 +283,7 @@ In an [embed for your customers](../developer/embedded/embed-sample-for-customer
 
 To enable embedding and automation, and to generate the embed tokens described above, Power BI exposes a rich set of [REST APIs](/rest/api/power-bi/embedtoken). These Power BI REST APIs support both user [delegated](/azure/active-directory/develop/v2-permissions-and-consent) and [service principal](../admin/service-premium-service-principal.md) Azure AD methods of authentication and authorization.
 
-Power BI Embedded analytics and its REST APIs support all Power BI network isolation capabilities described in this article: e.g., [Service Tags](#service-tags) and [Private Links](#private-link-integration).
+Power BI embedded analytics and its REST APIs support all Power BI network isolation capabilities described in this article: e.g., [Service Tags](#service-tags) and [Private Links](#private-link-integration).
 
 ### AI features
 
@@ -349,7 +345,7 @@ See [Automate Premium workspace and dataset tasks with service principals](../ad
 
 ## Data loss prevention (DLP)
 
-### M365 sensitivity labels
+### Microsoft 365 sensitivity labels
 
 Power BI has a deep integration with Microsoft Information Protection (MIP) sensitivity labels, which enable organizations to have a single, integrated solution for DLP policy management, audit, and compliance across the Office suite.
 
