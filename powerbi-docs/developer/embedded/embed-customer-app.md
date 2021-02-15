@@ -23,26 +23,74 @@ In this tutorial, you'll learn how to embed:
 
 ## Prerequisites
 
-* A Power BI workspace with a report
+* A [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) or [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) license.
 
-* Integrated development environment (IDE) such as [Visual Studio](https://visualstudio.microsoft.com/downloads/)
+    >[!NOTE]
+    >To [move to production](move-to-production.md) you'll need a [capacity](embedded-capacity.md).
 
-* [.NET Core/Framework](https://dotnet.microsoft.com/download)
+* A Power BI workspace with a report.
+
+* Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md).
+
+* An [Azure AD app](register-app.md).
+
+* [Service principal](embed-service-principal.md) - An Azure Active Directory (Azure AD) [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) that allows Azure AD to authenticate your app.
+
+* A .NET Core 5 model view controller (MVC) app.
+
+* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (or higher).
+
+* An integrated development environment (IDE). We recommend using one of the following:
+
+    * [Visual Studio](https://visualstudio.microsoft.com/).
+
+    * [Visual Studio Code](https://code.visualstudio.com/).
 
 ## Resources
 
 This tutorial is using the following NuGet packages and APIs:
 
+* Power BI REST [Reports API](https://docs.microsoft.com/rest/api/power-bi/reports) - Used to embed the URL and retrieve the embed token.
 
-|Resource  |Usage  |
-|---------|---------|
-|Power BI REST [Reports API](https://docs.microsoft.com/rest/api/power-bi/reports)     |Embed the URL and retrieve the Embed token in an *Embed for your customers* scenario         |
-|[MSAL.NET](https://www.nuget.org/packages/Microsoft.Identity.Client/)     |Azure Active Directory (Azure AD) authentication         |
-|[Power BI JavaScript SDK](https://www.nuget.org/packages/Microsoft.PowerBI.JavaScript)     |Embed the report         |
+* [Microsoft Identity Web authentication library](/active-directory/develop/microsoft-identity-web).
+
+* [Power BI embedded analytics Client APIs](/javascript/api/overview/powerbi/) -Use to embed the report.
+
+## Method
+
+To embed Power BI content in an *embed for your customers* app, follow these steps:
+
+1. [Get the required component values](#step-1---get-component-values).
 
 ## Embed a report in your app
 
+## Step 1 - Get component values
+
+To embed your report, you'll need the values of the following components:
+
+* [Client ID](#client-id)
+* [Client secret](#client-secret)
+* [Workspace ID](#workspace-id)
+* [Report ID](#report-id)
+
+### Client ID
+
+[!INCLUDE[Get the client ID](../../includes/embed-tutorial-client-id.md)]
+
+### Client secret
+
+[!INCLUDE[Get the client secret](../../includes/embed-tutorial-client-secret.md)]
+
+### Workspace ID
+
+[!INCLUDE[Get the workspace ID](../../includes/embed-tutorial-workspace-id.md)]
+
+### Report ID
+
+[!INCLUDE[Get the report ID](../../includes/embed-tutorial-report-id.md)]
+
 ### Step 1 - Get an Azure AD access token
+
 
 # [Embed for your customers](#tab/customers)
 
