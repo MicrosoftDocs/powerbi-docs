@@ -61,7 +61,7 @@ Currently you can only change the Pages pane setting in the Power BI service. Wh
 
 ## Control filters
 
-The report **Settings** pane has three settings for controlling reader interactions with the filters on your report. The following links go to the [Design filters in Power BI reports](power-bi-report-filter.md) article for details on each setting.
+The report **Settings** pane has three settings for controlling reader interactions with the filters on your report. The following links go to the [Format the filters in Power BI reports](power-bi-report-filter.md) article for details on each setting.
 
 - **Persistent filters** allow readers to [save filters on the report](power-bi-report-filter.md#allow-saving-filters).
 - **Filtering experience** has two more settings:

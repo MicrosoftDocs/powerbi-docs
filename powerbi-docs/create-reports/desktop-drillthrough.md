@@ -31,7 +31,7 @@ You can set up drill through in your reports in Power BI Desktop or the Power BI
     ![Drill-through image](media/desktop-drillthrough/drillthrough_03.png)
 
 > [!IMPORTANT]
-> You can configure and perform drillthrough to a page in the same report, however, you cannot drillthrough to a page in a different report.  
+> You can configure and perform drill through to a page in the same report, however, you can't drill through to a page in a different report.  
 
 
 

@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 02/01/2021
+ms.date: 02/11/2021
 ---
 
 # Change log for Power BI Report Server
@@ -19,10 +19,10 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ## January 2021
 - **Power BI Report Server**
-    - *Version: 1.10.7698.12811 (Build 15.0.1105.194), Released: January 21, 2021*
+    - *Version: 1.10.7698.27886 (Build 15.0.1105.195), Released: January 28, 2021*
         - Features
             - New Icons releate to Power BI and Power BI reports.
-            - Custom Visual API shipped with release  - version 3.5.0
+            - Custom Visual API shipped with release - version 3.5.0
             - New portal preview experience added behind 'UsePortalV2' feature switch in ReportServer catalog's ConfigurationInfo table.
         - Bug fixes
             - Fixed issue with scheduled refresh of Power BI reports with certain models using enhanced model metadata.
@@ -30,7 +30,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
         - Security updates
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
-   - *Version: 2.88.1382.0 (January 2021), Released: January 21, 2021* (new build and new version)
+   - *Version: 2.88.1382.0 (January 2021), Released: January 28, 2021* (new build and new version)
         - Contains changes required for connection with Power BI Report Server (January 2021)        
    
 ## October 2020
