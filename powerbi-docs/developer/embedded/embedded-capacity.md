@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/14/2021 
+ms.date: 02/15/2021
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
@@ -143,7 +143,7 @@ The table below describes the resources and limits of each SKU.
 
 #### Embedded Gen 2 memory enhancements (preview)
 
-With [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md) (also known as Embedded Gen 2), the amount of memory available on each node size is set to the memory footprint limit of a single Power BI item (such as a report or a dashboard), and not to the cumulative consumption of memory. For example, in an Embedded Gen2 A4 capacity, only a single dataset size is limited to 25 GB, in comparison to the original Power BI Embedded capacity, where the total memory footprint of the datasets being handled at the same time is limited to 25 GB.
+The amount of memory available on each node size is described in the *RAM (GB)* column in the [SKU memory and computing power](#sku-memory-and-computing-power) table. With [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md) (also known as Embedded Gen 2), this amount of memory is set to the memory footprint limit of a single Power BI item (such as a dataset, report or dashboard), and not to the cumulative consumption of memory. For example, in an Embedded Gen2 A4 capacity, only a single dataset size is limited to 25 GB, in comparison to the original Power BI Embedded capacity, where the total memory footprint of the datasets being handled at the same time is limited to 25 GB.
 
 ## Next steps
 
