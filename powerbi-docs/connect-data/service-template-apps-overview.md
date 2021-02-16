@@ -22,7 +22,7 @@ You submit a template apps to the Partner center. The apps then become publicly 
 
 ## Power BI Apps marketplace
 
-Power BI Template Apps allow Power BI Pro or Power BI Premium users to gain immediate insights through prepackaged dashboards and reports that can be connected to live data sources. Many Power BI Apps are already available in the [Power BI Apps marketplace](https://app.powerbi.com/getdata/services).
+Power BI Template Apps allow Power BI Pro or Power BI Premium users to gain immediate insights through prepackaged dashboards and reports that can be connected to live data sources. Many Power BI Apps are already available in the [Power BI Apps marketplace](https://app.powerbi.com/groups/me/getapps/apps).
 
 :::row:::
     :::column:::
