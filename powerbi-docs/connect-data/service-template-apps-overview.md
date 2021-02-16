@@ -18,7 +18,7 @@ As a Power BI partner, you create a set of out-of-the-box content for your custo
 
 You build template apps that allow your customers to connect and instantiate within their own accounts. As domain experts, they can unlock the data in a way that's easy for their business users to consume.  
 
-You submit a template apps to the Partner center. The apps then become publicly available in the [Power BI Apps marketplace](https://app.powerbi.com/getdata/services) and on [Microsoft AppSource](https://appsource.microsoft.com/?product=power-bi). Here's a high-level look at the public template app creation experience.
+You submit a template apps to the Partner center. The apps then become publicly available in the [Power BI Apps marketplace](https://app.powerbi.com/groups/me/getapps/apps) and on [Microsoft AppSource](https://appsource.microsoft.com/?product=power-bi). Here's a high-level look at the public template app creation experience.
 
 ## Power BI Apps marketplace
 
