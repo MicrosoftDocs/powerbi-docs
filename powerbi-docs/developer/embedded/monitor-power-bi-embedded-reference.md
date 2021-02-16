@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: subject-monitoring
-ms.date: 01/14/2021
+ms.date: 02/16/2021
 ---
 
 # Monitoring Power BI Embedded data reference
@@ -29,8 +29,10 @@ Resource Provider and Type: [Microsoft.PowerBIDedicated/capacities](/azure/azure
 
 | Name | Metric | Unit | Description |
 |:---|:-------|:-----|:------------|
+|CPU (Gen2) |cpu_metric |Percent |CPU Utilization. Supported only for Power BI Embedded Generation 2 resources. |
 |Memory (Gen1) |memory_metric               |Bytes        |Memory. Range 0-3 GB for A1, 0-5 GB for A2, 0-10 GB for A3, 0-25 GB for A4, 0-50 GB for A5 and 0-100 GB for A6. Supported only for Power BI Embedded Generation 1 resources. |
 |Memory Thrashing (Datasets) (Gen1) |memory_thrashing_metric     |Percent      |Average memory thrashing. Supported only for Power BI Embedded Generation 1 resources. |
+|Overload (Gen2) |overload_metric |0/1 |Resource Overload, 1 if recourse is overloaded, otherwise 0. Supported only for Power BI Embedded Generation 2 resources. |
 |QPU High Utilization (Gen1) |qpu_high_utilization_metric |Count        |QPU High Utilization In Last Minute, 1 For High QPU Utilization, Otherwise 0. Supported only for Power BI Embedded Generation 1 resources. |
 |Query Duration (Datasets) (Gen1) |QueryDuration               |Milliseconds |DAX Query duration in last interval. Supported only for Power BI Embedded Generation 1 resources. |
 |Query Pool Job Queue Length (Datasets) (Gen1) |QueryPoolJobQueueLength     |Count        |Number of jobs in the queue of the query thread pool. Supported only for Power BI Embedded Generation 1 resources. |
