@@ -18,7 +18,7 @@ There are two ways to configure which ADLS Gen 2 store to use: you can use a ten
 
 ## Pre-requisites
 
-To bring your own ADLS Gen 2 account, you must have owner permissions at either the storage account, resource group or subscription layer. If you are an administrator, you still must assign yourself owner permission. 
+To bring your own ADLS Gen 2 account, you must have owner permissions at either the storage account, resource group or subscription layer. If you are an administrator, you still must assign yourself owner permission.  **Currently not supporting ADLS Gen2 Storage Accounts behind a firewall**
 
 The storage account must be created with the [Hierarchical Namespace (HNS)](/azure/storage/blobs/create-data-lake-storage-account) enabled. 
 
