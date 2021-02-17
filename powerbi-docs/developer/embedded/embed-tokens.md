@@ -45,7 +45,7 @@ This section describes the authentication flows for the *embed for your customer
 
 ### Embed for your customers
 
-The *Embed for your customers* solution uses a non interactive authentication flow. Users do not need to sign in to Azure AD, to access Power BI. Instead, your web app uses a dedicated Azure AD identity to authenticate against Azure AD, and generate the *embed token*. The dedicated identity can be one of the following:
+The *Embed for your customers* solution uses a non-interactive authentication flow. Users do not need to sign in to Azure AD, to access Power BI. Instead, your web app uses a dedicated Azure AD identity to authenticate against Azure AD, and generate the *embed token*. The dedicated identity can be one of the following:
 
 * **[Service principal](embed-service-principal.md)**
 
@@ -65,7 +65,7 @@ After successful authentication against Azure AD, your web app will generate an 
 >* To embed using the *embed for your customers* solution, you'll need a capacity with an A, EM, or P SKU.
 >* To [move to production](move-to-production.md) you'll need a capacity.
 
-The following diagram show the authentication flow for the *embed for your customers* solution.
+The following diagram shows the authentication flow for the *embed for your customers* solution.
 
 >[!div class="mx-imgBorder"]
 >:::image type="content" source="media\embed-tokens\paas-authentiction.png" alt-text="A diagram of the authentication flow in an embed for your customers Power B I embedded analytics solution.":::
