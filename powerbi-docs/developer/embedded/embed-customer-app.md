@@ -38,7 +38,7 @@ In this tutorial, you'll learn how to embed:
 
 * A .NET Core 5 model view controller (MVC) app.
 
-* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (or higher).
+* [.NET Core 5 SDK](https://dotnet.microsoft.com/download/dotnet-core) (or higher).
 
 * An integrated development environment (IDE). We recommend using one of the following:
 
@@ -230,15 +230,14 @@ Step 2 - Create a JavaScript file
 
 ## Next steps
 
-Review how to embed content for your customers and your organization:
+> [!div class="nextstepaction"]
+>[Embedded analytics application tokens](embed-tokens.md)
 
 > [!div class="nextstepaction"]
->[Export paginated report to file](export-paginated-report.md)
+>[Move your embedded app to production](move-to-production.md)
 
 > [!div class="nextstepaction"]
->[Embed for your customers](embed-sample-for-customers.md)
+>[Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
 
 > [!div class="nextstepaction"]
->[Embed for your organization](embed-sample-for-your-organization.md)
-
-
+>[Capacity planning in Power BI embedded analytics](embedded-capacity-planning.md)
