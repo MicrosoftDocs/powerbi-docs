@@ -17,7 +17,7 @@ This article describes how to configure incremental refresh for **datasets**. To
 
 Configuring incremental refresh includes creating range parameters, applying filters, and defining a policy for a table that is applied when a manual or scheduled refresh operation is performed on the dataset in the service. Before completing these steps, be sure to fully understand the functionality described in [Incremental refresh](incremental-refresh-overview.md).
 
-Examples in this article show configuring incremental refresh for a single fact table, FactInternetSales, importing data from the sample AdventureWorksDW database (Yeah, we know. It's an old, but popular sample dataset:). For models with more than one fact table, incremental refresh policies can be defined for more than one table in the same dataset by using the same RangeStart and RangeEnd parameters.
+Examples in this article show configuring incremental refresh for a single fact table, FactInternetSales, importing filtered data from the sample AdventureWorksDW database (Yeah, we know. It's an old, but popular sample dataset:). For models with more than one fact table, incremental refresh policies can be defined for more than one table in the same dataset by using the same RangeStart and RangeEnd parameters.
 
 ## Create parameters
 
@@ -111,8 +111,12 @@ When your RangeStart and RangeEnd parameters, filtering, and refresh parameters 
 
 In the service, refresh the dataset. The first refresh will  import historical data for the entire period specified in the **Store rows where column \<dateColumnName> is in the last:** policy setting. Depending on the amount of data, this can take quite a long time. Subsequent refreshes, either manual or scheduled are typically much faster because the incremental refresh policy is applied and only data for the period specified in **Refresh rows where column \<dateColumnName> is in the last:** policy setting is refreshed.
 
+## XMLA endpoint
+
+Datasets for Premium and Premium Per User published to a workspace assigned to a capacity with the XMLA endpoint enabled for Read or Read\Write can use Sql Server Management Studio and open-source tools like Tabular Editor to connect to dataset. Partitions created according to the policy can be viewed and managed. To learn more, see [Advanced incremental refresh with the XMLA endpoint](incremental-refresh-xmla.md).
+
 ## See also
 
 [Configure scheduled refresh](../connect-data/refresh-scheduled-refresh.md)  
 [Incremental refresh](incremental-refresh-overview.md)  
-[Troubleshoot incremental refresh](incremental-refresh-troubleshoot.md)  
+[Troubleshoot incremental refresh](incremental-refresh-troubleshoot.md)

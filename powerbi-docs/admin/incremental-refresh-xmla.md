@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: 
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 02/16/2021
 LocalizationGroup: 
 ---
 
 # Advanced incremental refresh with the XMLA endpoint
 
-Datasets in a Premium capacity with the [XMLA endpoint](service-premium-connect-tools.md) enabled for **read-write** operations allow more advanced dataset refresh, partition management,a nd metadata only deployments through tool, scripting, and API support. In addition, refresh operations through the XMLA endpoint are not limited to [48 refreshes per day](../connect-data/refresh-data.md#data-refresh), and the [scheduled refresh timeout](../connect-data/refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout) is not imposed.
+Datasets in a Premium capacity with the [XMLA endpoint](service-premium-connect-tools.md) enabled for **read-write** operations allow more advanced dataset refresh, partition management, and metadata only deployments through tool, scripting, and API support. In addition, refresh operations through the XMLA endpoint are not limited to [48 refreshes per day](../connect-data/refresh-data.md#data-refresh), and the [scheduled refresh timeout](../connect-data/refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout) is not imposed.
 
 ## Partitions
 
@@ -82,7 +82,8 @@ The following example covers all 120 months in the historical range for backdate
 ```
 
 > [!TIP]
-> Be sure to check out videos, blogs, and more provided by Power BI's vibrant community of BI experts. [Search for Power BI Incremental Refresh on Bing](https://www.bing.com/search?q=power+bi+incremental+refresh).
+> Be sure to check out videos, blogs, and more provided by Power BI's vibrant community of BI experts.  
+>- [**Search for Power BI Incremental refresh detect data changes on Bing**](https://www.bing.com/videos/search?q=power+bi+incremental+refresh+detect+data+changes).
 
 ## Metadata-only deployment
 
@@ -92,19 +93,35 @@ When publishing a new version of a PBIX file from Power BI Desktop to a workspac
 
 In some cases you may not want to replace the dataset, especially with incremental refresh. The dataset in Power BI Desktop could be much smaller than the one in the service. If the dataset in the service has an incremental refresh policy applied, it may have several years of historical data that will be lost if the dataset is replaced. Refreshing all the historical data could take hours and result in system downtime for users.
 
-Instead, it's better to perform a metadata-only deployment. This allows deployment of new objects without losing the historical data. For example, if you have added a few measures, you can deploy only the new measures without needing to refresh the data, saving a lot of time.
+Instead, it's better to perform a metadata-only deployment. This allows deployment of new objects without losing the historical data. For example, if you've added a few measures you can deploy only the new measures without needing to refresh the data, saving a lot of time.
 
 For Power BI Premium workspaces assigned to a capacity configured for XMLA endpoint read-write, compatible tools enable metadata-only deployment. For example, the ALM Toolkit is a schema diff tool for Power BI datasets and can be used to perform deployment of metadata only.
 
-Download and install the latest version of the ALM Toolkit from the [Analysis Services Git repo](https://github.com/microsoft/Analysis-Services/releases). Documentation links and information on supportability are available on the Help ribbon. To perform a metadata only deployment, perform a comparison and select the running Power BI Desktop instance as the source, and the existing dataset in the service as the target. Consider the differences displayed and skip the update of the table with incremental refresh partitions or use the Options dialog to retain partitions for table updates. Validate the selection to ensure the integrity of the target model and then update.
+Download and install the latest version of the ALM Toolkit from the [Analysis Services Git repo](https://github.com/microsoft/Analysis-Services/releases). Step-by-step guidance on using ALM Toolkit is not included in Microsoft documentation. ALM Toolkit documentation links and information on supportability are available on the Help ribbon. To perform a metadata only deployment, perform a comparison and select the running Power BI Desktop instance as the source, and the existing dataset in the service as the target. Consider the differences displayed and skip the update of the table with incremental refresh partitions or use the Options dialog to retain partitions for table updates. Validate the selection to ensure the integrity of the target model and then update.
 
 ![ALM Toolkit](media/incremental-refresh-overview/alm-toolkit.png)
 
-## Community
+## Prevent timeouts on initial refresh
 
-Power BI has a vibrant community where BI pros and peers share their expertise in discussions groups, videos, blogs and more. When learning about incremental refresh, be sure to check out these additional resources:
+After publishing to the service, the initial full refresh operation performed on the dataset from the service creates partitions and loads and processes historical data for the entire period defined in the incremental refresh policy. For some datasets that will load and process  large amounts of data, the amount of time the initial refresh operation takes can exceed the refresh timeout imposed by the service or a query timeout imposed by the data source.
 
-- [Power BI Community](https://community.powerbi.com/)  
-- [Search for Power BI Incremental Refresh on Bing](https://www.bing.com/search?q=power+bi+incremental+refresh)
+> [!NOTE]
+> The terms process and refresh are synonymous.
+
+To prevent timeouts, prior to publishing the model to the service, you can bootstrap the initial refresh operation for a table with an incremental refresh policy defined for it. Bootstrapping allows the service to create table and partition objects for the dataset, but not load and process historical data into any of the partitions. When published, an initial refresh operation is performed on the dataset which creates table and partition objects for all tables, but data is only loaded for those tables that have not been bootstrapped. The bootstrap is then removed. Through the XMLA endpoint, SSMS is then used to selectively process partitions. Depending on the amount of data that will be loaded for each partition, you may want to process each partition sequentially or in small batches to reduce the potential for one or more of those partitions to cause a timeout. 
+
+There are couple ways to bootstrap the initial refresh, however, your options will largely depend on the data source type. The most common method we'll briefly describe here because it can work for any data source type. We'll use an example where an incremental refresh policy is defined for the FactInternetSales table.
+
+Prior to publishing the model to the service, in Power Query Editor, we filter out all data from the factInternetSales table by placing an additional filter on the ProductKey column that filters out any value other than 0.
+
+![Filter out product key](media/incremental-refresh-xmla/filter-product-key.png)
+
+After clicking Close & Apply in Power Query Editor and saving the model, we publish to the service. We then run the initial refresh operation on the dataset from the service. Partitions are created according to the policy, but no data is loaded because all data is filtered out. After the initial refresh operation in the service is completed, and partitions have been created in the dataset, back in Power Query Editor, the additional filter on the ProductKey column is removed. After clicking Close & Apply in Power Query Editor and saving the model, the model, however, is **not published again** because it would overwrite the incremental refresh policy settings and force a full refresh on the dataset when a subsequent refresh operation is performed from the service. Instead, we perform a metadata only deployment by using ALM Toolkit which removes the filter on the ProductKey column from the *dataset*. We then use SSMS to selectively process partitions. When all partitions have been fully processed from SSMS, subsequent refresh operations on the dataset from the service refresh only the latest partition.
+
+To learn more about processing (refresh) tables and partitions from SSMS, see [Process database, table, or partitions (Analysis Services)](/analysis-services/tabular-models/process-database-table-or-partition-analysis-services?view=power-bi-premium-current&preserve-view=true). To learn more about processing (refresh) tables and partitions by using TMSL, see [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true).
+
+> [!TIP]
+> Be sure to check out videos, blogs, and more provided by Power BI's vibrant community of BI experts.  
+>- [**Search for prevent timeouts with incremental refresh on Bing**](https://www.bing.com/search?q=prevent+timeouts+with+incremental+refresh).
 
 ## Next steps
