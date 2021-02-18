@@ -144,6 +144,7 @@ To configure your Azure AD app, follow the instructions in [Configure your Azure
 ## Step 4 - Create a client side authentication file
 
 
+
 ## Next steps
 
 > [!div class="nextstepaction"]
