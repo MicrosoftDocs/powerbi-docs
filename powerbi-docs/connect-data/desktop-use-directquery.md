@@ -46,7 +46,7 @@ There are currently a few limitations to using DirectQuery:
 
 - Calculated tables and calculated columns that reference a DirectQuery table from a data source with Single Sign-on (SSO) authentication are not supported in the Power BI Service.
 
-- Limitations are placed on DAX expressions allowed in measures to ensure that queries sent to the underlying data source have acceptable performance.
+- Auto date/time is unavailable in DirectQuery. For example, special treatment of date columns (drill down by using year, quarter, month, or day) isn't supported in DirectQuery mode.
 
 - There's a one-million-row limit for cloud sources, with on-premises sources limited to a defined payload of about 4 MB per row (depending on proprietary compression algorithm) or 16MB data size for the entire visual. Certain limits may be raised when using Premium capacity. The limit doesn't affect aggregations or calculations used to create the dataset returned using DirectQuery. It only affects the rows returned. Premium capacities can set maximum row limits, as described in [this post](https://powerbi.microsoft.com/blog/five-new-power-bi-premium-capacity-settings-is-available-on-the-portal-preloaded-with-default-values-admin-can-review-and-override-the-defaults-with-their-preference-to-better-fence-their-capacity/). 
 
