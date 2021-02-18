@@ -29,7 +29,7 @@ highlightedContent:
     # Card
     - title: What is Power BI Embedded in Azure?
       itemType: overview
-      url: embedded/azure-pbie-what-is-power-bi-embedded.md
+      url: embedded/azure-pbie-what-is-power-bi-embedded.md  
     # Card
     - title: Visuals in Power BI
       itemType: overview
@@ -37,8 +37,12 @@ highlightedContent:
     # Card
     - title: Power BI embedded analytics Client APIs
       itemType: whats-new
-      url: /javascript/api/overview/powerbi/  
-      # Card
+      url: /javascript/api/overview/powerbi/
+    # Card
+    - title: Power BI Embedded Generation 2 (preview)
+      itemType: whats-new
+      url: embedded/power-bi-embedded-generation-2.md    
+    # Card
     - title: Automated  template app configuration
       itemType: concept
       url: template-apps/template-apps-auto-install.md

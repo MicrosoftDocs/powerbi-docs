@@ -165,7 +165,7 @@ This report theme JSON file has the following lines:
 
 - **name**: The report theme name. This field is the only required field.
 - **dataColors**: The list of color hexadecimal codes to use for data in Power BI Desktop visuals. This list can have as many or as few colors as you want.
-- **background**, **firstLevelElements**, and **tableAccent** (etc.): Color classes. Color classes enable you to set many structural colors in your report at once.
+- **background**, **foreground**, and **tableAccent** (etc.): Color classes. Color classes enable you to set many structural colors in your report at once.
 
 You can use this JSON file as a basis to create your own custom report theme file to import. If you want to adjust only the basic colors of your report, change the name and hex codes in the file.
 
