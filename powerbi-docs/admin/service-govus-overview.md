@@ -70,7 +70,7 @@ Authentication, identity, and administration for Power BI depend on connectivity
 |  Purpose | Destination |
 | ---- | ----- |
 | Backend APIs | **GCC**: api.powerbigov.us |
-| | **GCC-High**: api.high.powerbigov.us |
+| | **GCC High**: api.high.powerbigov.us |
 | | **DoD**: api.mil.powerbigov.us |
 | Backend APIs | **GCC**: *analysis.usgovcloudapi.net |
 | | **GCC High**: *.high.analysis.usgovcloudapi.net |
@@ -83,7 +83,7 @@ Authentication, identity, and administration for Power BI depend on connectivity
 | | **GCC High**: [US Government GCC High endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints) |
 | | **DoD**: [US Government DOD endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints) |
 | Portal |**GCC**: *.powerbigov.us |
-| | **GCC-High**: *.high.powerbigov.us |
+| | **GCC High**: *.high.powerbigov.us |
 | | **DoD**: *.mil.powerbigov.us |
 | Service telemetry | **All**: dc.services.visualstudio.us |
 | Informational messages (optional) | **All**: dynmsg.modpim.com |
