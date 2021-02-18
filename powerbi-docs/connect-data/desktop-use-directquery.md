@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/14/2020
+ms.date: 2/18/2021
 LocalizationGroup: Connect to data
 ---
 
@@ -43,8 +43,6 @@ There are a few benefits to using DirectQuery:
 There are currently a few limitations to using DirectQuery:
 
 - If the **Query Editor** query is overly complex, an error occurs. To remedy the error, either delete the problematic step in **Query Editor**, or *import* the data instead of using DirectQuery. For multi-dimensional sources like SAP Business Warehouse, there's no **Query Editor**.
-
-- Time intelligence capabilities are unavailable in DirectQuery. For example, special treatment of date columns (such as year, quarter, month, or day) isn't supported in DirectQuery mode.
 
 - Calculated tables and calculated columns that reference a DirectQuery table from a data source with Single Sign-on (SSO) authentication are not supported in the Power BI Service.
 
