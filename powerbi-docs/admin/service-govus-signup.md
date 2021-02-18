@@ -28,7 +28,7 @@ Microsoft 365 provides different environments for government agencies to meet va
 >[!IMPORTANT]
 >[Microsoft 365 Government Community Cloud High (GCC High)](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) and [Microsoft 365 DoD environment](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) customers should not follow these steps. Customer in GCC High or DoD organizations must use the process in [How do I buy Microsoft 365 Government?](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy#how-do-i-buy-microsoft-365-government) to purchase services. In these environments it's important to work with your reseller to ensure new services are properly associated with your tenant.
 
-After you sign up for Power BI US government, work with your account team to start the [allow list process](#additional-signup-information) described in this article. That step is needed to fully enable your organization in the government community cloud.
+After you sign up for Power BI US government, work with your account team to start the [allow list process](#more-signup-information) described in this article. That step is needed to fully enable your organization in the government community cloud.
 
 ## Sign up for a new Microsoft 365 Government plan
 
