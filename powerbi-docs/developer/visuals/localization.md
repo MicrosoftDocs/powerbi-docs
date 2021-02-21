@@ -173,7 +173,7 @@ let legend: string = this.localization.getDisplayName("Role_Legend");
 The table below contains a list of all the languages supported in Power BI, and the string that the `local` variable returns for each one.
 
 Locale string | Language
---------------|----------------------
+--------------|---------------------
 ar-SA | العربية (Arabic)
 bg-BG | български (Bulgarian)
 ca-ES | català (Catalan)
