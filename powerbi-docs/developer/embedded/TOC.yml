@@ -45,7 +45,7 @@
     - name: "Connect a report using dynamic binding"
       href: embed-dynamic-binding.md
     - name: "Azure diagnostic logging for Power BI Embedded"
-      href: azure-pbie-diag-logs.md
+      href: ./monitor-power-bi-embedded.md
     - name: "Embedding FAQ"
       href: embedded-faq.md
   - name: How to
@@ -101,7 +101,7 @@
       - name: Power BI REST APIs
         href: /rest/api/power-bi/
     - name: "Power BI Developer in a Day course"
-      href: /power-bi/learning-catalog/developer-online-course         
+      href: ../../learning-catalog/developer-online-course.md
     - name: "Monitor Power BI Embedded data reference"
       href: monitor-power-bi-embedded-reference.md        
     - name: "Power BI libraries"
