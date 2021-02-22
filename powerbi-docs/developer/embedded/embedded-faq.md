@@ -69,7 +69,7 @@ Refer to the [Capacity and SKUs in Power BI embedded analytics](embedded-capacit
 
 * Downloading the [metric app](../../admin/service-admin-premium-monitor-capacity.md) in Power BI.
 
-* Using [Azure diagnostic logging](azure-pbie-diag-logs.md).
+* Using [Azure diagnostic logging](./monitor-power-bi-embedded.md).
 
 ### Can my capacity scale automatically to adjust to my app consumption?
 
