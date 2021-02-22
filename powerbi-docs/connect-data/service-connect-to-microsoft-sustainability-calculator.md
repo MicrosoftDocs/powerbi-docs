@@ -113,7 +113,7 @@ You’ll need your Azure enrollment number. If you don’t have it, ask your org
 4. Connect your account:
 
    > [!NOTE]
-   > The Azure portal panes that you use to connect your account might not be in the same order or display the same details as shown in the following screenshots.
+   > The Azure portal panes that you use to connect your account might not be in the same order or display the same details as shown in the following examples.
    
    - In **You are connecting to (1 of 2)**, under **Authentication method**, select **OAuth2**, and under **Privacy level setting for this data source**, select **Organizational**.
 
