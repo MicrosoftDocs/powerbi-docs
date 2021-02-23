@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 02/10/2021
+ms.date: 02/22/2021
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to stunning report in Power BI Desktop
@@ -122,7 +122,9 @@ Writing *measures* in the *DAX* formula language is super powerful for data mode
 
      :::image type="content" source="media/desktop-excel-stunning-report/power-bi-dax-expression.png" alt-text="Screenshot of DAX expression.":::
 
-1. Now select **Model View** on the left. 
+1. Still in Data view, select your new Calendar table, and on the **Table tools** ribbon, select **Mark as date table**.
+2. In the **Date column** box, select the **Date** column. 
+3. Now select **Model View** on the left. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-model-view.png" alt-text="Screenshot of Model View icon.":::
 
