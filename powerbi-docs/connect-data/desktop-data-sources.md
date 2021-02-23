@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/10/2020
+ms.date: 02/23/2021
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
@@ -53,6 +53,7 @@ The **File** category provides the following data connections:
 * JSON
 * Folder
 * PDF
+* Parquet
 * SharePoint folder
 
 The following image shows the **Get Data** window for **File**.
@@ -83,7 +84,9 @@ The **Database** category provides the following data connections:
 * Vertica
 * Snowflake
 * Essbase
+* Actian (Beta)
 * AtScale cubes
+* BI Connector
 * Data Virtuality LDW (Beta)
 * Denodo
 * Dremio
@@ -95,8 +98,7 @@ The **Database** category provides the following data connections:
 * Linkar PICK Style / MultiValue Databases (Beta)
 * MariaDB (Beta)
 * MarkLogic
-* BI Connector
-* Actian (Beta)
+
 
 > [!NOTE]
 > Some database connectors require that you enable them by selecting **File > Options and settings > Options** then selecting **Preview Features** and enabling the connector. If you don't see some of the connectors mentioned above and want to use them, check your **Preview Features** settings. Also note that any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments.
@@ -111,7 +113,8 @@ The **Power Platform** category provides the following data connections:
 
 * Power BI datasets
 * Power BI dataflows
-* Microsoft Dataverse
+* Common Data Service (Legacy)
+* Dataverse
 * Power Platform dataflows (Beta)
 
 The following image shows the **Get Data** window for **Power Platform**.
@@ -179,8 +182,10 @@ The **Online Services** category provides the following data connections:
 * Dynamics 365 Customer Insights (Beta)
 * Emigo Data Source
 * Entersoft Business Suite (Beta)
+* eWay-CRM (Beta)
 * FactSet Analytics
 * Palantir Foundry
+* Hexagon PPM Smart API
 * Industrial App Store
 * Intune Data Warehouse (Beta)
 * Microsoft Graph Security (Beta)
@@ -193,8 +198,6 @@ The **Online Services** category provides the following data connections:
 * Witivio (Beta)
 * Workplace Analytics (Beta)
 * Zoho Creator (Beta)
-* eWay-CRM (Beta)
-* Hexagon PPM Smart API
 
 
 The following image shows the **Get Data** window for **Online Services**.
@@ -218,6 +221,7 @@ The **Other** category provides the following data connections:
 * ODBC
 * OLE DB
 * Acterys : Model Automation & Planning (Beta)
+* Anaplan Connector v1.0 (Beta)
 * Automation Anywhere (Beta)
 * Solver
 * Cherwell (Beta)
@@ -231,14 +235,13 @@ The **Other** category provides the following data connections:
 * Roamler (Beta)
 * Shortcuts Business Insights (Beta)
 * Siteimprove
+* Starburst Enterprise Presto (Beta)
 * SurveyMonkey (Beta)
 * Tenforce (Smart)List
 * TIBCO(R) Data Virtualization (Beta)
 * Vena (Beta)
 * Vessel Insight (Beta)
 * Zucchetti HR Infinity (Beta)
-* Anaplan Connector v1.0 (Beta)
-* Starburst Enterprise Presto (Beta)
 * Blank Query
 
 
