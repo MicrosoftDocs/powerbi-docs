@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/04/2021
+ms.date: 02/23/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to Snowflake in Power BI Desktop
@@ -44,7 +44,7 @@ You can **Load** the selected table, which brings the entire table into **Power 
 
 ## Custom Roles
 
-Currently, support for 'Custom Role' in the Snowflake connector will only work with Basic Authentication. This will be resolved in the near future.
+The Snowflake connector supports *Custom Roles* beginning with the February 2021 release of Power BI Desktop.
 
 ## Next steps
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
