@@ -155,7 +155,9 @@ Let’s build the final report, one visual at a time.
 Now, you create a line chart to see which month and year had the highest profit. 
 
 1. From the Fields pane, drag the **Profit** field to a blank area on the report canvas. By default, Power BI displays a column chart with one column, Profit. 
-1. Drag the **Date** field to the same visual. Power BI updates the column chart to show profit by the two years.
+1. Drag the **Date** field to the same visual. If you created a Calendar table in [Extra credit: Create a table in DAX](#extra-credit-write-a-measure-in-dax) earlier in this article, drag the **Date** field from your Calendar table instead. 
+
+    Power BI updates the column chart to show profit by the two years.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-year.png" alt-text="Screenshot of Profit column chart.":::
 
