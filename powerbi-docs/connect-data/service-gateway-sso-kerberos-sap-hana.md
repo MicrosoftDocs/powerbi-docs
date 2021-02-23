@@ -50,7 +50,7 @@ Now, [Run a Power BI report](service-gateway-sso-kerberos.md#run-a-power-bi-repo
 
 ## Troubleshooting
 
-This section provides extensive steps about how to troubleshoot using Kerberos for single sign-on (SSO) to SAP HANA. Using these troubleshooting steps can help you self-diagnose and correct issues you may be facing.
+This section provides extensive steps about how to troubleshoot using Kerberos for single sign-on (SSO) to SAP HANA in the Power BI service. Using these troubleshooting steps can help you self-diagnose and correct issues you may be facing.
 
 ### Verifying and troubleshooting gateway errors
 
@@ -70,7 +70,7 @@ When trying to create or refresh a report, you may see the following:
 
 When you investigate the Mashup[date]*.log you will see the following error:
 
-```A connection was successfully established with the server, but then an error occurred during the login process and The certificate chain was issued by an authority that is not trusted```
+```A connection was successfully established with the server, but then an error occurred during the login process and The certificate chain was issued by an authority that is not trusted.```
 
 **Resolution:**
 
@@ -80,111 +80,89 @@ To resolve this SSL error, go to the data source connection and set **Validate S
 
 Once selected, the error will no longer appear.
 
-#### Gateway SignXML error
+#### Impersonation
 
-The gateway SignXML error can be the result of incorrect settings with the *SapHanaSAMLCertThumbprint*, or it can be an issue with the HANA server. Entries in the gateway logs help identify where the issue resides, and how to resolve it. 
+Log entries for Impersonation contain entries similar to the following: ```About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Impersonation).``` 
 
-**Error symptoms:**
-
-Log entries for ```SignXML: Found the cert...```: If your GatewayInfo[*date*].log file contains this error, the SignXML cert was found, and your troubleshooting efforts should focus on steps found in the [verifying and troubleshooting the HANA server side](#verifying-and-troubleshooting-the-hana-server-side) section, later in this article.
-
-Log entries for ```Couldn't find saml cert```: If your GatewayInfo[*date*].log file contains this error, then *SapHanaSAMLCertThumbprint* is set incorrectly. The following resolution section describes how to resolve the issue.
+The important element in that log entry is the information after the *ImpersonationLevel:* entry. Any value different from *Impersonation* reveals that impersonation is not occurring properly.
 
 **Resolution:**
 
-To properly set *SapHanaSAMLCertThumbprint*, follow the steps outlined in [Use Security Assertion Markup Language (SAML) for SSO from Power BI to on-premises data sources](service-gateway-sso-saml.md), and specifically, follow the steps outlined toward the bottom of that article that begins with: *Finally, follow these steps to add the certificate thumbprint to the gateway configuration:*
+You can properly set up ImpersonationLevel by following the instructions in [grant the gateway service account local policy rights on the gateway machine](service-gateway-sso-kerberos.md#grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine).
 
 Once the configuration file is changed, restart the gateway service for the change to take effect.
 
 **Validation:**
 
-When *SapHanaSAMLCertThumbprint* is properly set, your gateway logs will have entries that include ```SignXML: Found the cert...```. At this point, you should be able to proceed to [verifying and troubleshooting the HANA server side](#verifying-and-troubleshooting-the-hana-server-side). 
+Refresh or create the report and collect the gateway logs. Open the most recent *GatewayInfo* file and check the following string: ```About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Impersonation)```. Make sure that the *ImpersonationLevel:* setting returns *Impersonation*.
 
-If the gateway is not able to use the certificate to sign the SAML assertion, you may see an error similar to the following in the logs: 
 
-```GatewayPipelineErrorCode=DM_GWPipeline_UnknownError GatewayVersion= InnerType=CryptographicException InnerMessage=<pi>Signing key is not loaded.</pi> InnerToString=<pi>System.Security.Cryptography.CryptographicException: Signing key is not loaded.```
+#### Delegation
+Delegation issues usually appear in the Power BI service as generic errors. To make sure the issue is not a delegation issue, collect Wireshark traces and use *Kerberos* as a filter. To learn more about Wireshark, and for information about Kerberos errors, see the [blog post on Kerberos errors in network captures](https://docs.microsoft.com/archive/blogs/askds/kerberos-errors-in-network-captures).
 
-To resolve that error, follow the steps beginning with **Step 3:** in the following [configure the gateway](service-gateway-sso-saml.md#configure-the-gateway) section of that article.
+The following symptoms and troubleshooting steps help remedy some common issues.
 
-After changing the configuration, restart the gateway service for the change to take effect.
+**Service Principal Name (SPN) Issues:**
+When experiencing SPN issues, when investigating the Mashup[date]*.log you see the following error: ```The import [table] matches no exports. Did you miss a module reference?:```
 
-#### Verifying and troubleshooting the HANA server side
+Investigating further using the WireShark traces reveals the error **KRB4KDC_ERR_S_PRINCIPAL_UNKOWN**, which means that the Service Principal Name (SPN) was not found or does not exists. The following image shows an example:
 
-Use the troubleshooting steps in this section if the gateway is finding the certificate and is able to sign the SAML assertion, but you're still experiencing errors. Following the steps in this section requires collecting HANA authentication traces, described in the following article's [troubleshooting](service-gateway-sso-saml.md#troubleshooting) section. 
-
-**The SAML identity provider**
-
-Seeing the string ```Found SAML provider``` in the HANA authentication traces indicates proper configuration of the SAML Identity Provider. If the string is not present, the configuration is not correct.
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-07.png" alt-text="SPN error":::
 
 **Resolution:**
 
-First determine whether your organization is using **OpenSSL** or **commoncrypto** as the sslcryptoprovider. Take the following steps to determine which is being used:
+To resolve Service Principal Name (SPN) issues such as this, you must add an SPN to a service account. Information about doing so is provided in the SAP documentation found in [this SAP article](https://help.sap.com/viewer/6b94445c94ae495c83a19646e7c3fd56/LATEST/en-US/c786f2cfd976101493dfdf14cf9bcfb1.html).
 
-1. Open HANA Studio
-2. Open the Administration Console for the tenant being used.
-3. Go to the configuration tab and use sslcryptoprovider as a filter, as shown in the following image:
+In addition to following those steps, also follow the resolution steps described in the next section, or you will also endure the symptoms in the **No Credentials Issues** section, described in the following section.
 
-:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-03.png" alt-text="HANA Studio sslcryptoprovider information":::
+**No Credentials Issues:**
+There may not be clear symptoms associated with this issue. When you investigate the Mashup[date]*.log you will see the following error:
 
-Next, verify the cryptographic library is set correctly with the following steps:
+```29T20:21:34.6679184Z","Action":"RemoteDocumentEvaluator/RemoteEvaluation/HandleException","HostProcessId":"1396","identity":"DirectQueryPool","Exception":"Exception:\r\nExceptionType: Microsoft.Mashup.Engine1.Runtime.ValueException, Microsoft.MashupEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\r\nMessage:```
 
-1. Go to Security Console in the HANA Studio in the SAML Identity Providers tab
-2. If the sslcryptoprovider is OpenSSL, choose the **OpenSSL Cryptographic Library** radio button. If the sslcryptoprovider is commonCrypto, choose the **SAP Cryptographic Library** radio button. The following image shows the **SAP Cryptographic Library** selection:
+With further investigation into the same file, the following (unhelpful) error appears: ```No credentials are available in the security package```
 
-    :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-04.png" alt-text="HANA Studio sslcryptoprovider selection":::
+Capturing Wireshark traces reveals the following error: *KRB5KDC_ERR_BADOPTION.*
 
-3. Make sure you deploy any changes by selecting the **Deploy** button in the upper right corner of the window, shown in the following image:
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-08.png" alt-text="No credentials error":::
 
-    :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-05.png" alt-text="Deploy solution changes":::
+Usually, these errors mean that the SPN *hdb/hana2-s4-sso2.westus2.cloudapp.azure.com* could be found but is not in the **Services to which this account can present delegated credentials** at the **Delegation** tab from the Gateway service account.
+
+**Resolution:**
+
+To resolve the *No credentials* issue, follow the steps described in [configure the gateway service account for standard Kerberos constrained delegation](service-gateway-sso-kerberos.md#configure-the-gateway-service-account-for-standard-kerberos-constrained-delegation). When completed properly, the delegation tab at the gateway service account will reflect the hdb/fqdn in the list of **Services to which this account can present delegated credentials**.
+
 
 **Validation:**
+Following the previous steps should resolve the issue. If you still experience Kerberos issues, you may have a misconfiguration in the **Power BI gateway** or in the HANA server itself. 
 
-When properly configured, the traces will report ```Found SAML provider``` and will *not* report ```SAML Provider not found```. You can proceed to [troubleshooting the SAML Assertion signature](#troubleshooting-the-saml-assertion-signature) later in this article. 
+#### Credentials errors
+If you experience credentials errors, errors in the logs or traces will expose errors describing *Credentials are invalid* or similar errors. These errors may manifest differently on the data source side of the connection, such as SAP HANA. The following image shows an example error:
 
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-09.png" alt-text="Invalid credentials error":::
 
-If the cryptographic provider is set but the ```SAML Provider not found``` is still being reported, search for a string in the trace that begins with the following:
+**Symptom 1**:
+In HANA authentication traces, you may see entries similar to the following:
 
-```Search SAML provider for certificate with subject =```
+```[Authentication|manager.cpp:166] Kerberos: Using Service Principal Name johnny@on.microsoft.com@CONTOSO.COM with name type: GSS_KRB5_NT_PRINCIPAL_NAME [Authentication|methodgssinitiator.cpp:367] Got principal name: johnny@on.microsoft.com@CONTOSO.COM```
 
-In that string, check if the subject and issuer are exactly the same as the SAML identity provider tab in the Security Console. Even a single character of difference can cause the problem. If you find a difference, you can change the SAP Cryptographic library so the entries match exactly.
+**Resolution**:
+Take the steps described in [set user-mapping configuration parameters on the gateway machine (if necessary)](service-gateway-sso-kerberos.md#set-user-mapping-configuration-parameters-on-the-gateway-machine-if-necessary), even if you already have the **Azure AD Connect** service configured.
 
-If changing the SAP Cryptographic library doesn't fix the issue, you can manually edit the fields *Issued To* and *Issued By*. Simply double-click to edit the field.
+**Validation**:
+Once properly completed, you'll be able to successfully load the report in the Power BI service.
 
+**Symptom 2**:
+In HANA authentication traces, you may see entries similar to the following:
 
-#### Troubleshooting the SAML Assertion signature
+```Authentication ManagerAcceptor.cpp(00233) : Extending list of expected external names by johnny@CONTOSO.COM (method: GSS) Authentication AuthenticationInfo.cpp(00168) : ENTER getAuthenticationInfo (externalName=johnny@CONTOSO.COM) Authentication AuthenticationInfo.cpp(00237) : Found no user with expected external name!```
 
-You may run into HANA authentication traces that contain entries similar to the following:
+**Resolution**:
+Check the Kerberos external ID in the **HANA User** to determine whether they properly match.
 
-```[48163]{-1}[-1/-1] 2020-09-11 21:15:18.896165 i Authentication SAMLAuthenticator.cpp(00398) : Unable to verify XML signature```
-```[48163]{-1}[-1/-1] 2020-09-11 21:15:18.896168 i Authentication MethodSAML.cpp(00103) : unsuccessful login attempt with SAML ticket!```
+**Validation**:
+Once corrected, you can create or refresh reports in the Power BI service.
 
-Such entries means the signature is not trusted.
-
-**Resolution:**
-If you're using **OpenSSL** as your sslcryptoprovider, check whether the trust.pem and key.pem are in the SSL directory. The following link provides information on how to check them: [SAP article](https://blogs.sap.com/2015/09/28/securing-the-communication-between-sap-hana-studio-and-sap-hana-server-through-ssl/)
-
-If you're using **commoncrypto** as your sslcryptoprovider, check whether there's a collection with your certificate in the tenant.
-
-**Validation:**
-
-When properly configured, the traces will report ```Found valid XML signature``` 
-
-
-#### Troubleshooting the UPN mapping
-
-You may run into HANA  traces that contain entries similar to the following:
-
-```SAMLAuthenticator.cpp(00886) : Assertion Subject NameID: johnny@contoso.com SAMLAuthenticator.cpp(00398) : Database user does not exist```
-
-The error indicates that nameId johnny@contoso.com is found in the SAML assertions, but does not exist or is not mapped correctly in HANA Server.
-
-**Resolution:**
-
-Go to the HANA database user and click on the *Configure* link below the checked SAML box. The following window appears:
-
-    :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-06.png" alt-text="Wrong user name":::
-
-As the error message describes, HANA was trying to find johnny@contoso.com but in the external identity is only johnny. These two values need to match, so to fix it, edit the *External Identity* to be johnny@contoso.com. Note these entries are case sensitive.
 
 ## Next steps
 
