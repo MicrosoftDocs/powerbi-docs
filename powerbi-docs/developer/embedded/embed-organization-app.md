@@ -113,94 +113,94 @@ Enable server side authentication in your app, by creating or modifying the file
 
 Modify the code in **Startup.cs** to properly initialize the authentication service provided by Microsoft.Identity.Web.
 
+Add the code snippet below to your app's **Startup.cs** file.
+
 The code in **ConfigureServices** accomplishes several important things:
 
-1. The call to AddMicrosoftWebAppCallsWebApi configures the Microsoft authentication library to acquire access tokens. Next, the call to AddInMemoryTokenCaches configures a token cache that the Microsoft authentication library will use to cache access tokens and refresh tokens behind the scenes. Finally, the call to services.AddScoped(typeof(PowerBiServiceApi)) configures the PowerBiServiceApi class as a service class that can be added to other classes using dependency injection.
+1. The call to **AddMicrosoftWebAppCallsWebApi** configures the Microsoft authentication library to acquire access tokens (Azure AD tokens).
+2. The call to **AddInMemoryTokenCaches** configures a token cache that the Microsoft authentication library will use to cache access tokens and refresh tokens behind the scenes
+3. The call to **services.AddScoped(typeof(PowerBiServiceApi))** configures the **PowerBiServiceApi** class as a service class that can be added to other classes using dependency injection.
 
-1. Open your app's **Startup.cs** file.
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Identity.Web;
+using Microsoft.Identity.Web.TokenCacheProviders;
+using Microsoft.Identity.Web.TokenCacheProviders.InMemory;
+using Microsoft.Identity.Web.UI;
+using UserOwnsData.Services;
 
-2. Add the following code to **Startup.cs**.
+namespace UserOwnsData {
 
-    ```csharp
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Authentication;
-    using Microsoft.AspNetCore.Authorization;
-    using Microsoft.AspNetCore.Builder;
-    using Microsoft.AspNetCore.Hosting;
-    using Microsoft.AspNetCore.HttpsPolicy;
-    using Microsoft.AspNetCore.Mvc.Authorization;
-    using Microsoft.Extensions.Configuration;
-    using Microsoft.Extensions.DependencyInjection;
-    using Microsoft.Extensions.Hosting;
-    using Microsoft.Identity.Web;
-    using Microsoft.Identity.Web.TokenCacheProviders;
-    using Microsoft.Identity.Web.TokenCacheProviders.InMemory;
-    using Microsoft.Identity.Web.UI;
-    using UserOwnsData.Services;
-    
-    namespace UserOwnsData {
-    
-      public class Startup {
-    
-        public Startup (IConfiguration configuration) {
-          Configuration = configuration;
-        }
-    
-        public IConfiguration Configuration { get; }
-    
-        // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices (IServiceCollection services) {
-    
-          services
-            .AddMicrosoftIdentityWebAppAuthentication(Configuration)
-            .EnableTokenAcquisitionToCallDownstreamApi(PowerBiServiceApi.RequiredScopes)
-            .AddInMemoryTokenCaches();
-    
-          services.AddScoped (typeof (PowerBiServiceApi));
-    
-          var mvcBuilder = services.AddControllersWithViews (options => {
-            var policy = new AuthorizationPolicyBuilder ()
-              .RequireAuthenticatedUser ()
-              .Build ();
-            options.Filters.Add (new AuthorizeFilter (policy));
-          });
-    
-          mvcBuilder.AddMicrosoftIdentityUI ();
-    
-          services.AddRazorPages ();
-    
-        }
-    
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure (IApplicationBuilder app, IWebHostEnvironment env) {
-          if (env.IsDevelopment ()) {
-            app.UseDeveloperExceptionPage ();
-          } else {
-            app.UseExceptionHandler ("/Home/Error");
-            // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-            app.UseHsts ();
-          }
-          app.UseHttpsRedirection ();
-          app.UseStaticFiles ();
-    
-          app.UseRouting ();
-    
-          app.UseAuthentication ();
-          app.UseAuthorization ();
-    
-          app.UseEndpoints (endpoints => {
-            endpoints.MapControllerRoute (
-              name: "default",
-              pattern: "{controller=Home}/{action=Index}/{id?}");
-            endpoints.MapRazorPages ();
-          });
-        }
-      }
+    public class Startup {
+
+    public Startup (IConfiguration configuration) {
+        Configuration = configuration;
     }
-    ```
+
+    public IConfiguration Configuration { get; }
+
+    // This method gets called by the runtime. Use this method to add services to the container.
+    public void ConfigureServices (IServiceCollection services) {
+
+        services
+        .AddMicrosoftIdentityWebAppAuthentication(Configuration)
+        .EnableTokenAcquisitionToCallDownstreamApi(PowerBiServiceApi.RequiredScopes)
+        .AddInMemoryTokenCaches();
+
+        services.AddScoped (typeof (PowerBiServiceApi));
+
+        var mvcBuilder = services.AddControllersWithViews (options => {
+        var policy = new AuthorizationPolicyBuilder ()
+            .RequireAuthenticatedUser ()
+            .Build ();
+        options.Filters.Add (new AuthorizeFilter (policy));
+        });
+
+        mvcBuilder.AddMicrosoftIdentityUI ();
+
+        services.AddRazorPages ();
+
+    }
+
+    // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+    public void Configure (IApplicationBuilder app, IWebHostEnvironment env) {
+        if (env.IsDevelopment ()) {
+        app.UseDeveloperExceptionPage ();
+        } else {
+        app.UseExceptionHandler ("/Home/Error");
+        // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+        app.UseHsts ();
+        }
+        app.UseHttpsRedirection ();
+        app.UseStaticFiles ();
+
+        app.UseRouting ();
+
+        app.UseAuthentication ();
+        app.UseAuthorization ();
+
+        app.UseEndpoints (endpoints => {
+        endpoints.MapControllerRoute (
+            name: "default",
+            pattern: "{controller=Home}/{action=Index}/{id?}");
+        endpoints.MapRazorPages ();
+        });
+    }
+    }
+}
+```
 
 ### Create an appsettings.json server side authentication file
 
