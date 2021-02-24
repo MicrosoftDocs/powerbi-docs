@@ -60,9 +60,10 @@ Premium Gen2 provides the following updates or improved experiences:
 Enable Premium Gen2 to take advantage of its updates. To enable Premium Gen2, take the following steps:
 
 1. In the admin portal, navigate to **Capacity settings**.
-2. Select **Power BI Premium**.
-3. A section appears titled **Premium Generation 2 (preview)**, and in that section is a slider to enable Premium Generation 2 (preview). 
-4. Move the slider to **Enabled**.
+1. Select **Power BI Premium**.
+1. If you have already allocated capacity, select it.
+1. A section appears titled **Premium Generation 2 (preview)**, and in that section is a slider to enable Premium Generation 2 (preview). 
+1. Move the slider to **Enabled**.
 
 The following image shows how to enable Premium Gen2. 
 
@@ -74,9 +75,11 @@ The following known limitations currently apply to Premium Gen2:
 
 1.    Premium Gen2 capacity utilization can't be tracked in the metrics app.
 
-2.  If you're using XMLA on Premium Gen2, make sure you're using the most recent versions of the [data modeling and management tools](service-premium-connect-tools.md#data-modeling-and-management-tools). 
+1. Premium Gen2 does not support customer-managed encryption keys for data at rest (BYOK). [Learn more about using your own keys (BYOK)](service-encryption-byok.md).
 
-3.  Analysis services features in Premium Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are:
+1.  If you're using XMLA on Premium Gen2, make sure you're using the most recent versions of the [data modeling and management tools](service-premium-connect-tools.md#data-modeling-and-management-tools). 
+
+1.  Analysis services features in Premium Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are:
 
     |Tool|Minimum version required|Estimated release date|
     |---|---|---|

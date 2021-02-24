@@ -64,7 +64,7 @@ To connect to data and begin the query building process, select **New Source**. 
 
 ![Screenshot of Power B I Desktop showing New Source button.](media/desktop-query-overview/query-overview-new-source-menu.png)
 
-For more information about available data sources, see **Data Sources**. For information about connecting to data, including examples and steps, see **Connect to Data**.
+For more information about available data sources, see [Data Sources](../connect-data/desktop-data-sources.md). For information about connecting to data, including examples and steps, see [Connect to Data](../connect-data/desktop-connect-to-data.md).
 
 The **Transform** tab provides access to common data transformation tasks, such as:
 
