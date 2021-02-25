@@ -19,7 +19,7 @@ In this tutorial, you'll learn how to embed:
 >* A Power BI report
 >* In a *user owns data* app
 >* Using .NET
->* With the Microsoft.Identity.Web library
+>* With the `Microsoft.Identity.Web` library
 
 ## Prerequisites
 
@@ -105,13 +105,13 @@ Enable server side authentication in your app, by creating or modifying the file
 
 |File                 |Use  |
 |---------------------|-----|
-|Startup.cs           |Initialize the Microsoft.Identity.Web authentication service |
+|Startup.cs           |Initialize the `Microsoft.Identity.Web` authentication service |
 |appsettings.json     |Server side authentication |
-|_LoginPartial.cshtml |Integrate with Microsoft.Identity.Web |
+|_LoginPartial.cshtml |Integrate with `Microsoft.Identity.Web` |
 
-### Configure your startup file to support Microsoft.Identity.Web
+### Configure your startup file to support `Microsoft.Identity.Web`
 
-Modify the code in **Startup.cs** to properly initialize the authentication service provided by Microsoft.Identity.Web.
+Modify the code in **Startup.cs** to properly initialize the authentication service provided by `Microsoft.Identity.Web`.
 
 Add the code snippet below to your app's **Startup.cs** file.
 
@@ -235,19 +235,19 @@ In this tutorial, the server side authentication file contains sensitive informa
     }
     ```
 
-3. Fill in the component values obtained from [Step 2 - Get component values](#step-2---get-component-values):
+3. Fill in the component values obtained from [Step 2 - Get component values](#step-2---get-component-values). If you don't know what's your domain or tenant ID, see [Find the Microsoft Azure AD tenant ID and primary domain name](/partner-center/find-ids-and-domain-names#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name).
 
-    * **Domain** - If you don't know what's your domain, see [Find the Microsoft Azure AD tenant ID and primary domain name](/partner-center/find-ids-and-domain-names#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name)
-    * **TenantId** - If you don't know what's your tenant ID, see [Find the Microsoft Azure AD tenant ID and primary domain name](/partner-center/find-ids-and-domain-names#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name)
-    * **ClientId** - [Client ID](#client-id)
-    * **ClientSecret** - [Client secret](#client-secret)
+    * `Domain`
+    * `TenantId`
+    * `ClientId` - [Client ID](#client-id)
+    * `ClientSecret` - [Client secret](#client-secret)
 
 >[!NOTE]
 >In the code snippet above, the `PowerBi:ServiceRootUrl` parameter is added as a custom configuration value to track the base URL to the Power BI service. When you are programming against the Power BI service in the Microsoft public cloud, the URL is https://api.powerbi.com/. However, the root URL for the Power BI service will be different in other clouds such as the government cloud. Therefore, this value is stored as a project configuration value so it is easy to change whenever required.
 
 ### Modify the _LoginPartial.cshtml authentication method
 
-Modify the partial razor view file **_LoginPartial.cshtml**, to integrate with Microsoft.Identity.Web.
+Modify the partial razor view file **_LoginPartial.cshtml**, to integrate with `Microsoft.Identity.Web`.
 
 1. From the **Views** > **Shared** folder, open the **_LoginPartial.cshtml** file.
 
@@ -286,13 +286,11 @@ Modify the partial razor view file **_LoginPartial.cshtml**, to integrate with M
 |embed.js             |Embed your Power BI report |
 |Embed.cshtml         |Create a container for your embedded report |
 
-* **PowerBiServiceApi.cs** - Get the Azure AD token
-
 ### Get an Azure AD token
 
 In order to embed Power BI content (such as reports and dashboards), you app needs to get an [Azure AD token](embedded/embed-tokens.md#azure-ad-token). To get the token, you'll need a [configuration object](/javascript/api/overview/powerbi/embed-report#embed-an-existing-report).
 
-The code in this section uses the .NET Core dependency injection pattern. When your class needs to use a service, you can simply add a constructor parameter for that service and the .NET Core runtime takes care of passing the service instance at run time. In this case, the constructor is injecting an instance of the .NET Core configuration service using the `IConfiguration` parameter which is used to retrieve the `PowerBi:ServiceRootUrl` configuration value from **appsettings.json**. The `ITokenAcquisition` parameter which is named `tokenAcquisition` holds a reference to the Microsoft authentication service provided by the Microsoft.Identity.Web library and will be used to acquire access tokens from Azure AD.
+The code in this section uses the .NET Core dependency injection pattern. When your class needs to use a service, you can simply add a constructor parameter for that service and the .NET Core runtime takes care of passing the service instance at run time. In this case, the constructor is injecting an instance of the .NET Core configuration service using the `IConfiguration` parameter which is used to retrieve the `PowerBi:ServiceRootUrl` configuration value from **appsettings.json**. The `ITokenAcquisition` parameter which is named `tokenAcquisition` holds a reference to the Microsoft authentication service provided by the `Microsoft.Identity.Web` library and will be used to acquire access tokens from Azure AD.
 
 The `RequiredScopes` field holds a string array containing a set of [delegated permissions](/azure/active-directory/develop/v2-permissions-and-consent) supported by the Power BI service API. When your application calls across the network to acquire an Azure AD token, it will pass this set of delegated permissions so that Azure AD can include them in the access token it returns.
 
