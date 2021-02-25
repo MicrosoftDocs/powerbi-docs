@@ -39,7 +39,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: "Power BI Developer in a Day course"
-            url: /power-bi/learning-catalog/developer-online-course
+            url: ../../learning-catalog/developer-online-course.md
 
   # Card (optional)
   - title: Client APIs

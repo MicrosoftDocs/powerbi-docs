@@ -50,7 +50,7 @@ To configure a data source privacy level, select the data source, then select **
 > 
 
 > [!CAUTION]
-> The **Ignore the Privacy levels and potentially improve performance** does not work in the Power BI service. As such, Power BI Desktop reports with this setting enabled, which are then published to the Power BI service, do *not* reflect this behavior when used in the service.
+> The **Ignore the Privacy levels and potentially improve performance** does not work in the Power BI service. As such, Power BI Desktop reports with this setting enabled, which are then published to the Power BI service, do *not* reflect this behavior when used in the service. However, the privacy levels are available on the personal gateway.
 > 
 
 **Configure Privacy Levels**
