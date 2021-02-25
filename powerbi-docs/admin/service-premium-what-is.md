@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 02/01/2021
+ms.date: 03/02/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
 ---
@@ -50,7 +50,7 @@ Premium Gen2 provides the following updates or improved experiences:
 
 * **Improved metrics** with clear and normalized capacity utilization data, that's dependent only on the complexity of analytics operations the capacity performs, and not on its size, the level of load on the system while performing analytics, or other factors. With the improved metrics, utilization analysis, budget planning, chargebacks, and the need to upgrade are clearly visible with built-in reporting. Improved metrics will be made available later in the preview period. Customers seeking access to utilization metrics for past 7 days can do so by contacting customer support. 
 
-* **Autoscale** allows for *automatically adding* one v-core at a time for 24-hour periods when the load on the capacity exceeds its limits, preventing slowdowns caused by overload. V-cores are automatically removed when idle time is detected. Additional v-cores are charged to your Azure subscription on a pay-as-you-go basis. Autoscale will be made available during the course of the preview period. 
+* **Autoscale** allows for *automatically adding* one v-core at a time for 24-hour periods when the load on the capacity exceeds its limits, preventing slowdowns caused by overload. V-cores are automatically removed when idle time is detected. Additional v-cores are charged to your Azure subscription on a pay-as-you-go basis. See [using Autoscale with Power BI Premium](service-premium-auto-scale.md) for steps on how to configure and use **Autoscale**.
 
 * **Reduced management overhead** with proactive and configurable admin notifications about capacity utilization level and load increasing.
 
@@ -67,6 +67,8 @@ Enable Premium Gen2 to take advantage of its updates. To enable Premium Gen2, ta
 The following image shows how to enable Premium Gen2. 
 
 ![Enabling Premium Generation 2](media/service-premium-what-is/enable-premium-gen2.gif#lightbox) 
+
+You can also [configure and use Autoscale with Power BI Premium](service-premium-auto-scale.md) to ensure capacity and performance for your Premium users.
 
 ### Known limitations in Premium Gen2
 
