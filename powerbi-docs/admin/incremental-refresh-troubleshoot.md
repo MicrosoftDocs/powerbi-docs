@@ -34,9 +34,9 @@ Before troubleshooting incremental refresh, be sure to review the basics covered
 
 ## Query timeouts
 
-**Problem:** \<need content>
+**Problem:** Scheduled refresh operations timeout
 
-**Solution:** \<need content>
+**Solution:** Scheduled refresh for imported datasets timeout after two hours. This timeout is increased to five hours for datasets in Premium workspaces. If you encounter this limit, consider reducing the size or complexity of your dataset, or consider breaking the dataset into smaller pieces.
 
 ## Slow incremental refresh
 

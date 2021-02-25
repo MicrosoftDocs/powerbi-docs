@@ -19,8 +19,15 @@ Datasets in a Premium capacity with the [XMLA endpoint](service-premium-connect-
 
 Partitions divide portions of data you need to refresh frequently from data that can be refreshed less frequently. Partitions work by dividing a table into logical partition objects. Individual partitions, each containing a unique segment of data, can then be refreshed individually, sequentially, or in parallel independent of other partitions, or excluded from refresh operations altogether.
 
-For Power BI Desktop models with an incremental refresh policy configured, when you first publish the model to the service, each table in the dataset has one partition that contains all rows in the table. When you perform the first dataset refresh operation, tables *with no* incremental refresh policy will refresh all rows contained in that table's default single partition. Tables *with an* incremental refresh policy applied are partitioned according to the incremental refresh policy. This process, and any partitions created from it, are not visible in the service. They are, however, visible and can be managed through the XMLA endpoint.
+For Power BI Desktop models with an incremental refresh policy configured, when you first publish the model to the service, each table in the dataset has one partition containing all rows in the table. When you perform the first dataset refresh operation, tables with no incremental refresh policy defined will refresh all rows contained in that table's default single partition. Tables with an incremental refresh policy defined are partitioned according to the incremental refresh policy. This process and any partitions created from it are not visible in the service. They are, however, visible and can be managed through the XMLA endpoint. 
 
+To learn more, see [Partitions in tabular models](/analysis-services/tabular-models/partitions-ssas-tabular?view=power-bi-premium-current&preserve-view=true).
+
+Partitions are automatically created and named according to your policy settings. For example, if we create a policy that 
+
+**Store rows where column "OrderDate" is in the last:** we specify 5 years, and in **Refresh rows where column "OrderDate" is in the last:** 1 day.
+
+The oldest full partion is then deleted. For example, if we chose to keep 5 years of data, the 2016 partition is deleted on January 1, 2022.  Or if we chose to keep 12 months of data, and we just entered January 2021, the 2020Q101 partition is not deleted until Feb. 1 2021.
 ## Refresh management with SQL Server Management Studio (SSMS)
 
 SSMS can be used to view and manage partitions created by the application of incremental refresh policies. This allows, for example, to refresh a specific historical partition not in the incremental range to perform a back-dated update without having to refresh all historical data. SSMS can also be used to load historical data for very large datasets by incrementally adding/refreshing historical partitions in batches.
@@ -29,7 +36,7 @@ SSMS can be used to view and manage partitions created by the application of inc
 
 ### Override incremental refresh behavior
 
-With SSMS, you also have more control over how to invoke incremental refreshes by using [Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current) and the [Tabular Object Model (TOM)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current). For example, in SSMS, in Object Explorer, right-click a table and then select the **Process Table** menu option, and then click the **Script** button to generate a TMSL refresh command.
+With SSMS, you also have more control over how to invoke incremental refreshes by using [Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current&preserve-view=true) and the [Tabular Object Model (TOM)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current&preserve-view=true). For example, in SSMS, in Object Explorer, right-click a table and then select the **Process Table** menu option, and then click the **Script** button to generate a TMSL refresh command.
 
 ![Script button in Process Table dialog](media/incremental-refresh-xmla/ssms-process-table.png)
 
@@ -57,7 +64,7 @@ These parameters can be used with the TMSL refresh command to override the defau
 }
 ```
 
-To learn more about overriding default incremental refresh behavior with TMSL, see [Refresh command](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current).
+To learn more about overriding default incremental refresh behavior with TMSL, see [Refresh command](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true).
 
 ## Custom queries for detect data changes
 
@@ -83,7 +90,7 @@ The following example covers all 120 months in the historical range for backdate
 
 > [!TIP]
 > Be sure to check out videos, blogs, and more provided by Power BI's vibrant community of BI experts.  
->- [**Search for Power BI Incremental refresh detect data changes on Bing**](https://www.bing.com/videos/search?q=power+bi+incremental+refresh+detect+data+changes).
+>- [Search for **"Power BI Incremental refresh detect data changes"** on Bing](https://www.bing.com/videos/search?q=power+bi+incremental+refresh+detect+data+changes).
 
 ## Metadata-only deployment
 
@@ -120,8 +127,10 @@ After clicking Close & Apply in Power Query Editor, and saving the model, we pub
 
 > [!TIP]
 > Be sure to check out videos, blogs, and more provided by Power BI's vibrant community of BI experts.  
->- [**Search for prevent timeouts with incremental refresh on Bing**](https://www.bing.com/search?q=prevent+timeouts+with+incremental+refresh).
+>- [Search for **"Prevent timeouts with incremental refresh"** on Bing](https://www.bing.com/video/search?q=prevent+timeouts+with+incremental+refresh).
 
 To learn more about processing tables and partitions from SSMS, see [Process database, table, or partitions (Analysis Services)](/analysis-services/tabular-models/process-database-table-or-partition-analysis-services?view=power-bi-premium-current&preserve-view=true). To learn more about processing datasets, tables, and partitions by using TMSL, see [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true).
+
+## Deletes with Detect data changes setting enabled
 
 ## Next steps
