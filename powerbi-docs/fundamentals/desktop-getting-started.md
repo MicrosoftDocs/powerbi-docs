@@ -56,9 +56,9 @@ From the **Welcome** screen, you can **Get data**, see **Recent sources**, open 
 
 ![Screenshot of Power B I Desktop showing the Welcome screen.](media/desktop-getting-started/designer_gsg_startsplashscreen.png)
 
-Along the left side of Power BI Desktop are icons for the three Power BI Desktop views: **Report**, **Data**, and **Relationships**, from top to bottom. The current view is indicated by the yellow bar along the left, and you can change views by selecting any of the icons. 
+Along the left side of Power BI Desktop are icons for the three Power BI Desktop views: **Report**, **Data**, and **Model**, from top to bottom. The current view is indicated by the yellow bar along the left, and you can change views by selecting any of the icons. 
 
-![Screenshot of Power B I Desktop showing the icons for Report, Data, and Relationships.](media/desktop-getting-started/designer_gsg_viewtypes.png)
+![Screenshot of Power B I Desktop showing the icons for Report, Data, and Model.](media/desktop-getting-started/designer_gsg_viewtypes.png)
 
 **Report** view is the default view. 
 
