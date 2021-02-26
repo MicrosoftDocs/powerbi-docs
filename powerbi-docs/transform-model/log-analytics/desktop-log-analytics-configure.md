@@ -101,6 +101,17 @@ There are many ways that Azure Log Analytics and Power BI can help solve real-wo
 
 There are also differences in patterns and use for the tenant scope, and the workspace scope. Send us feedback in the Power BI Community for how you're using logging, and how it has helped your organization.
 
+## Error conditions and resolutions
+The following table provides a collection of common errors, the events or configurations that triggered them, and suggested resolutions. 
+
+| **Trigger Condition** | **Type** | **Message** |
+| --- | --- | --- |
+| User doesn't have permission to write to the Log Analytics Workspace | Error - cannot proceed | You need write permissions on this Log Analytics workspace to connect it to Power BI. Contact the person in your organization who manages Azure subscriptions to fix this. |
+| User doesn't have permission to write to the Log Analytics workspace account | Error - cannot proceed | You need write permissions on this Log Analytics workspace to connect it to Power BI. |
+| Does not have access to any Azure subscriptions | Error - cannot proceed | You don't have access to any Azure subscriptions. Ask the person who manages Azure subscriptions in your organization to grant you contributor access or higher. |
+| Does not have access to any Azure Log Analytics workspaces within that subscription | Error - cannot proceed | You don't have access to an Azure Log Analytics workspace. Ask the person who manages Azure subscriptions in your organization to add you to the Log Analytics owner or contributor role. |
+| Workspace-level Log Analytics disabled when trying to connect | Information | Ask your tenant admin to grant workspace admins permission to connect Log Analytics workspaces. |
+| Workspace-level Log Analytics disabled when trying to disconnect | Information | Your tenant admin revoked permission for workspace admins to connect their own Azure Log Analytics workspaces. If you disconnect, you won't be able to connect to another one. |
 
 
 ## Events and schema
@@ -140,7 +151,7 @@ The following table describes the **schema**.
 | **IntegerData** | IntegerData\_s | Contains the integer data associated with the reported event, such as the current count of the number of rows processed for a processing event. |
 | **ObjectId** | ObjectID\_s | Object ID. |
 | **ObjectName** | ObjectName\_s | The name of the object for which the event occurred. |
-| **ObjectPath** | ObjectPath\_s | Object path. A comma-separated list of parents, starting with the object&#39;s parent. |
+| **ObjectPath** | ObjectPath\_s | Object path. A comma-separated list of parents, starting with the object's parent. |
 | **ObjectReference** | ObjectReference\_s | Object reference. Encoded as XML for all parents, using tags to describe the object. |
 | **ObjectType** | ObjectType\_s | Identifies the type of object associated with a particular lock. For example, a lock timeout on a database will indicate the object type 100002, which is the Database object type |
 | **ProgressTotal** | ProgressTotal\_s | An integer representing how many rows have been processed in the current operation at a point in time |
