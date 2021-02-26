@@ -32,7 +32,16 @@ To create subscriptions for others, you must have:
 - Edit permissions for the dashboard or report.
 - A Power BI Pro license.
 
-## Power BI audit logs and subscriptions
+## Power BI admins and subscriptions
+
+## Control subscription activity
+
+Power BI administrators have levers of control over subscriptions. The following links point to the relevant sections of the admin portal:
+
+- [Enable email subscriptions](../admin/service-admin-portal.md#email-subscriptions) for all members of the organization.
+- Enable specific users to send email subscriptions to external users. See [Invite external users to your organization](../admin/service-admin-portal.md#invite-external-users-to-your-organization).
+
+### Audit subscription activity
 
 Power BI administrators can use the Power BI audit logs to view details around subscriptions. These details include:
 
@@ -43,6 +52,8 @@ Power BI administrators can use the Power BI audit logs to view details around s
 - Frequency
 - Modified By
 - Modified Date
+
+See [Operations available in the audit and activity logs](../admin/service-admin-auditing.md#operations-available-in-the-audit-and-activity-logs) in "Track user activities in Power BI" for details.
 
 ## Considerations for subscribing others
 
