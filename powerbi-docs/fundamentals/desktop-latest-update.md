@@ -12,7 +12,7 @@ LocalizationGroup: Get started
 ---
 # What's new in Power BI Desktop?
 
-## February Update (2.90.303.0)
+## February 2021 Update (2.90.303.0)
 
 Our February Power BI Desktop updates are better than a heart-shaped box of chocolates. 
 
