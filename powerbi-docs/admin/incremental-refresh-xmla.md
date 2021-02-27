@@ -15,9 +15,7 @@ LocalizationGroup:
 
 Datasets in a Premium capacity with the [XMLA endpoint](service-premium-connect-tools.md) enabled for **read-write** operations allow more advanced dataset refresh, partition management, and metadata only deployments through tool, scripting, and API support. In addition, refresh operations through the XMLA endpoint are not limited to [48 refreshes per day](../connect-data/refresh-data.md#data-refresh), and the [scheduled refresh timeout](../connect-data/refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout) is not imposed.
 
-## Partitions
-
-Partitions divide portions of data you need to refresh frequently from data that can be refreshed less frequently. Partitions work by dividing a table into logical partition objects. Individual partitions, each containing a unique segment of data, can then be refreshed individually, sequentially, or in parallel independent of other partitions, or excluded from refresh operations altogether.
+## Partitions naming
 
 For Power BI Desktop models with an incremental refresh policy configured, when you first publish the model to the service, each table in the dataset has one partition containing all rows in the table. When you perform the first dataset refresh operation, tables with no incremental refresh policy defined will refresh all rows contained in that table's default single partition. Tables with an incremental refresh policy defined are partitioned according to the incremental refresh policy. This process and any partitions created from it are not visible in the service. They are, however, visible and can be managed through the XMLA endpoint. 
 
