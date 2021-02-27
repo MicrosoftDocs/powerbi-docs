@@ -30,9 +30,9 @@ This document provides an overview of the work with data in the Power Query Edit
 But first, let's see get acquainted with Power Query Editor.
 
 ## Power Query Editor
-To get to Power Query Editor, select **Edit Queries** from the **Home** tab of Power BI Desktop.  
+To get to Power Query Editor, select **Transform data** from the **Home** tab of Power BI Desktop.  
 
-![Screenshot of Power B I Desktop showing Power Query Editor Home tab.](media/desktop-query-overview/queryoverview_queryview.png)
+![Screenshot of Power BI Desktop showing Power Query Editor Home tab.](media/desktop-query-overview/queryoverview-transform.png)
 
 With no data connections, Power Query Editor appears as a blank pane, ready for data.  
 

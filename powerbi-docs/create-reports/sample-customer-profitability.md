@@ -93,17 +93,20 @@ Two tiles on this dashboard, **Target vs Actual** and **Year Over Year Revenue G
 
 ![Excel online](media/sample-customer-profitability/power-bi-excel-online.png)
 
-1. Select either of the tiles that were pinned from Excel. Excel Online opens within the Power BI service.
-2. Notice that the workbook has three tabs worth of data. Open **Revenue**.
-3. Let's look into why Carlos hasn't hit his target yet:  
+1. Select **Target vs Actual**. Excel Online opens within the Power BI service.
+2. Notice that the workbook has three tabs worth of data. Open **COGS**.
 
-    a. From the **Executive** slider, select **Carlos Grilo**.   
+    ![The COGS report tab selected.](media/sample-customer-profitability/power-bi-cogs.png)
 
-    b. The first PivotTable tells us that Carlos' revenue growth for the top product, Primus, is down 152% from last year. The **YoY Revenue Variance** chart shows that for most months, Carlos has been below budget.  
+1. Total revenue is exceeding costs by a healthy margin. The shape of the Total revenue line and height of the costs columns are similar.  Interact with the data by filtering slicing, drilling, and more.  For example, let's look at **Revenue vs COGS** for just one Industry.   
 
-    ![PivotTable](media/sample-customer-profitability/power-bi-pivotchart.png)
+    a. From the **Industry** slicer, select **Retail**.   
+    
+    ![Retail industry selected.](media/sample-customer-profitability/power-bi-retail.png)
 
-    ![Results for Carlos](media/sample-customer-profitability/power-bi-carlos.png)
+    b. We see that only two district managers cover the retail industry: Andrew and Carlos.  
+    
+    c. Total revenue is exceeding costs by a healthy margin until 2014 quarter 3. And looking at the stacked column, we see some strange data that bears further examination. Did we truly have no costs for July? Did we get a refund from a third party? 
 
 4. Continue exploring. If you find something interesting, select **Pin** ![pin icon](media/sample-customer-profitability/power-bi-excel-pin.png) from the upper-right corner to [pin it to a dashboard](service-dashboard-pin-tile-from-excel.md).
 
