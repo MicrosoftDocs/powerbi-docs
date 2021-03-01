@@ -101,13 +101,13 @@ To embed your report, you'll need the following values:
 
 ## Step 3 - Enable server side authentication
 
-Enable server side authentication in your app, by creating or modifying the files in the table below
+Enable server side authentication in your app, by creating or modifying the files in the table below.
 
 |File                 |Use  |
 |---------------------|-----|
 |Startup.cs           |Initialize the `Microsoft.Identity.Web` authentication service |
 |appsettings.json     |Server side authentication |
-|_LoginPartial.cshtml |Integrate with `Microsoft.Identity.Web` |
+|PowerBiServiceApi.cs |Get the Azure AD token and embedding metadata    |
 
 ### Configure your startup file to support `Microsoft.Identity.Web`
 
@@ -122,19 +122,6 @@ Add the code snippet below to your app's **Startup.cs** file.
 >3. The call to `services.AddScoped(typeof(PowerBiServiceApi))` configures the `PowerBiServiceApi` class as a service class that can be added to other classes using dependency injection.
 
 ```csharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc.Authorization;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Microsoft.Identity.Web;
 using Microsoft.Identity.Web.TokenCacheProviders;
 using Microsoft.Identity.Web.TokenCacheProviders.InMemory;
@@ -172,31 +159,6 @@ namespace UserOwnsData {
 
       services.AddRazorPages ();
 
-    }
-
-    // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-    public void Configure (IApplicationBuilder app, IWebHostEnvironment env) {
-      if (env.IsDevelopment ()) {
-        app.UseDeveloperExceptionPage ();
-      } else {
-        app.UseExceptionHandler ("/Home/Error");
-        // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-        app.UseHsts ();
-      }
-      app.UseHttpsRedirection ();
-      app.UseStaticFiles ();
-
-      app.UseRouting ();
-
-      app.UseAuthentication ();
-      app.UseAuthorization ();
-
-      app.UseEndpoints (endpoints => {
-        endpoints.MapControllerRoute (
-          name: "default",
-          pattern: "{controller=Home}/{action=Index}/{id?}");
-        endpoints.MapRazorPages ();
-      });
     }
   }
 }
@@ -245,48 +207,7 @@ In this tutorial, the server side authentication file contains sensitive informa
 >[!NOTE]
 >In the code snippet above, the `PowerBi:ServiceRootUrl` parameter is added as a custom configuration value to track the base URL to the Power BI service. When you are programming against the Power BI service in the Microsoft public cloud, the URL is https://api.powerbi.com/. However, the root URL for the Power BI service will be different in other clouds such as the government cloud. Therefore, this value is stored as a project configuration value so it is easy to change whenever required.
 
-### Modify the _LoginPartial.cshtml authentication method
-
-Modify the partial razor view file **_LoginPartial.cshtml**, to integrate with `Microsoft.Identity.Web`.
-
-1. From the **Views** > **Shared** folder, open the **_LoginPartial.cshtml** file.
-
-2. Modify the file so that the `asp-area` value points to the `MicrosoftIdentity` library.
-
-    ```html
-    @using System.Security.Principal
-
-    <ul class="navbar-nav">
-      @if (User.Identity.IsAuthenticated) {
-        <li class="nav-item">
-          <span class="navbar-text text-dark">Hello @User.FindFirst("name").Value</span>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark" asp-area="MicrosoftIdentity" asp-controller="Account" asp-action="SignOut">
-              Sign out
-          </a>
-        </li>
-      }
-      else {
-        <li class="nav-item">
-          <a class="nav-link text-dark" asp-area="MicrosoftIdentity" asp-controller="Account" asp-action="SignIn">
-              Sign in
-          </a>
-        </li>
-      }
-    </ul>
-    ```
-
-## Step 4 - Create a client side authentication file
-
-|File                 |Use  |
-|---------------------|-----|
-|PowerBiServiceApi.cs |Get the Azure AD token     |
-|HomeController.cs    |     |
-|embed.js             |Embed your Power BI report |
-|Embed.cshtml         |Create a container for your embedded report |
-
-### Get an Azure AD token
+### Get the Azure AD access token and call the Power BI service
 
 In order to embed Power BI content (such as reports and dashboards), you app needs to get an [Azure AD token](embedded/embed-tokens.md#azure-ad-token). To get the token, you'll need a [configuration object](/javascript/api/overview/powerbi/embed-report#embed-an-existing-report).
 
@@ -301,14 +222,6 @@ The `RequiredScopes` field holds a string array containing a set of [delegated p
 3. Add the following code to **PowerBiServiceApi.cs**.
 
     ```csharp
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.IO;
-    using System.Linq;
-    using System.Threading.Tasks;
-    using Microsoft.CodeAnalysis;
-    using Microsoft.Extensions.Configuration;
     using Microsoft.Identity.Web;
     using Microsoft.PowerBI.Api;
     using Microsoft.PowerBI.Api.Models;
@@ -317,7 +230,7 @@ The `RequiredScopes` field holds a string array containing a set of [delegated p
     
     namespace UserOwnsData.Services {
     
-        //A view model class to pass the data needed to embed a single report.
+      //A view model class to pass the data needed to embed a single report.
     	public class EmbeddedReportViewModel {
     		public string Id;
     		public string Name;
@@ -343,7 +256,7 @@ The `RequiredScopes` field holds a string array containing a set of [delegated p
     			"https://analysis.windows.net/powerbi/api/Workspace.ReadWrite.All"
     		};
     
-            //A method to get the Azure AD token (also known as 'access token')
+        //A method to get the Azure AD token (also known as 'access token')
     		public string GetAccessToken() {
     			return this.tokenAcquisition.GetAccessTokenForUserAsync(RequiredScopes).Result;
     		}
@@ -374,6 +287,16 @@ The `RequiredScopes` field holds a string array containing a set of [delegated p
     }
     ```
 
+## Step 4 - Create client side implementation
+
+For client side implementation, you'll need to create or modify the files in the table below
+
+|File                 |Use  |
+|---------------------|-----|
+|HomeController.cs    |Pass embedding data to a model–view–controller (MVC) |
+|embed.js             |Embed your Power BI report |
+|Embed.cshtml         |Create a container for your embedded report |
+
 ### Modify the HomeController.cs file
 
 In this code example, you'll use dependency injection. As you registered the `PowerBiServiceApi` class as a service by calling `services.AddScoped` in the `ConfigureServices` method. You can add a `PowerBiServiceApi` parameter to the constructor, and the .NET Core runtime will take care of creating a `PowerBiServiceApi` instance and passing it to the constructor.
@@ -381,11 +304,6 @@ In this code example, you'll use dependency injection. As you registered the `Po
 From the **Controllers** folder, open the **HomeController.cs** file and add to it the following code snippet:
 
 ```csharp
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -408,8 +326,8 @@ namespace UserOwnsData.Controllers {
         }
 
         public async Task<IActionResult> Embed() {
-            Guid workspaceId = new Guid("c7ea0e44-4b54-41ea-b5db-4d2f02fda179");
-            Guid reportId = new Guid("c6dad726-132e-47e8-9a8f-4ddc054ed6d6");
+            Guid workspaceId = new Guid("11111111-1111-1111-1111-111111111111");
+            Guid reportId = new Guid("22222222-2222-2222-2222-222222222222");
             var viewModel = await powerBiServiceApi.GetReport(workspaceId, reportId);
             return View(viewModel);
         }
@@ -423,7 +341,39 @@ namespace UserOwnsData.Controllers {
 }
 ```
 
-### Create a file for embedding your report
+### Create a container for your embedded report
+
+Create the **Embed.cshtml** file which has a `div` element used as a container for your embedded report, and three scripts.
+
+1. In the **View** > **Home** folder, create a file called **Embed.cshtml**.
+
+2. Add the following code snippet to the **Embed.cshtml** file.
+
+    ```html
+    @model UserOwnsData.Services.EmbeddedReportViewModel;
+
+    <div id="embed-container" style="height:800px;"></div>
+    
+    @section Scripts {
+    
+        <!-- powerbi.min.js is the JavaScript file that loads the client-side Power BI JavaScript API library. -->
+        <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.13.3/dist/powerbi.min.js"></script>
+    
+        <!-- This script creates a JavaScript object named viewModel which is accessible to the JavaScript code in embed.js. -->
+        <script> 
+            var viewModel = {
+                reportId: "@Model.Id",
+                embedUrl: "@Model.EmbedUrl",
+                token: "@Model.Token"
+            }; 
+        </script>
+        
+        <!-- This script specifies the location of the embed.js file -->
+        <script src="~/js/embed.js"></script>
+    }
+    ```
+
+### Add client side JavaScript to embed your report
 
 To embed Power BI content, you need to create a configuration object. To learn more about creating the configuration object, see [Embed a report](/javascript/api/overview/powerbi/embed-report).
 
@@ -478,38 +428,6 @@ The `powerbi.embed` function uses the `models` configuration object to embed you
         });
         
     });
-    ```
-
-### Create a container for your embedded report
-
-Create the **Embed.cshtml** file which has a `div` element used as a container for your embedded report, and three scripts.
-
-1. In the **View** > **Home** folder, create a file called **Embed.cshtml**.
-
-2. Add the following code snippet to the **Embed.cshtml** file.
-
-    ```html
-    @model UserOwnsData.Services.EmbeddedReportViewModel;
-
-    <div id="embed-container" style="height:800px;"></div>
-    
-    @section Scripts {
-    
-        <!-- powerbi.min.js is the JavaScript file that loads the client-side Power BI JavaScript API library. -->
-        <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.13.3/dist/powerbi.min.js"></script>
-    
-        <!-- This script creates a JavaScript object named viewModel which is accessible to the JavaScript code in embed.js. -->
-        <script> 
-            var viewModel = {
-                reportId: "@Model.Id",
-                embedUrl: "@Model.EmbedUrl",
-                token: "@Model.Token"
-            }; 
-        </script>
-        
-        <!-- This script specifies the location of the embed.js file -->
-        <script src="~/js/embed.js"></script>
-    }
     ```
 
 ## Next steps
