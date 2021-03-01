@@ -19,6 +19,10 @@ Enabling SSO makes it easy for Power BI reports and dashboards to refresh data f
 
 Several items must be configured for Kerberos constrained delegation to work properly, including _Service Principal Names (SPN)_ and delegation settings on service accounts.
 
+> [!NOTE]
+> Using DNS aliasing with SSO is not supported.
+
+
 ### Install and configure the Microsoft on-premises data gateway
 
 The on-premises data gateway supports an in-place upgrade, and _settings takeover_ of existing gateways.
