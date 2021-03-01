@@ -92,6 +92,10 @@ landingContent:
   # Card (optional)
   - title: References and resources
     linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Playground
+            url: https://go.microsoft.com/fwlink/?linkid=848279
       - linkListType: reference
         links:
           - text: "Power BI REST APIs"
@@ -102,7 +106,5 @@ landingContent:
             url: https://powerbi.microsoft.com/developers/
           - text: "Power BI libraries"
             url: https://www.nuget.org/profiles/powerbi
-          - text: Playground
-            url: https://microsoft.github.io/PowerBI-JavaScript/demo/v2-demo/index.html
           - text: "Power BI embedded analytics Client APIs"
             url: /javascript/api/overview/powerbi/
