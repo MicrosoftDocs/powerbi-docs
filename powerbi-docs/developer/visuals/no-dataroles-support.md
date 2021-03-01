@@ -11,33 +11,37 @@ ms.topic: how-to
 ms.date: 02/18/2021
 ---
 
-# Render a visual without the need to bind any data *("no dataroles" support)*
+# Render a visual without the need to bind any data
 
-Starting from `powerbi-visuals-api` - *version 3.6.0* you can receive updates from Power BI without the need to bind any data. That means that you can render a visual and use update method to change visual's format settings even if data-value buckets are empty or if your visual doesn't use any dataroles at all.
+Starting from `powerbi-visuals-api` - *version 3.6.0* it supports "no ```dataRoles```" capabilities model, so you can receive updates from Power BI without the need to bind any data. 
+This means that you can render a visual and use the update method to change the visual's format settings even if the data-buckets are empty, or if your visual doesn't use any dataroles at all.
 
-To enable this feature you need to set two parameters in `capabilities.json` to a **true** value: 
+To enable this feature you need to set two parameters in the `capabilities.json` file to *true*. 
 
 ```json
     {
-        ...
         "supportsLandingPage": true,
         "supportsEmptyDataView": true,
-        ...
     }
 ```
 
-Here you can see the difference of how it worked **before** this feature and **after**:
+The following tabs show two examples of a Power BI visual, one that requires binding data, and one that's using the new feature and doesn't require binding data.
 
-# [Before:](#tab/NoDataroles)
+# [Binding data required](#tab/NoDataroles)
    
 
 >[!div class="mx-imgBorder"]
 >![Screenshot of the no-dataroles-support before API-2.6.0](media/no-dataroles-support/nodataroles1.png)
 
 
-# [After:](#tab/NoDatarolesSupport) 
+# [Binding data not required](#tab/NoDatarolesSupport) 
 
 >[!div class="mx-imgBorder"]
 >![Screenshot of the no-dataroles-support after API-2.6.0](media/no-dataroles-support/nodataroles2.png)
 
 ---
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Using capabilities](capabilities.md)
