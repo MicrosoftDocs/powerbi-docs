@@ -51,6 +51,12 @@ To select an Azure subscription to work with Autoscale, take the following steps
  
 Okay, you've selected the **Subscription** in the Azure portal that you'll use for Autoscale, and created a **Resource group** for that subscription. The next step is to enable Autoscale in the Power BI Admin portal, and link it to the resource group you just created.
 
+### Considerations for preview release
+
+When Autoscale is launched in preview, a window to enable customers to become accustomed to the usage levels and CPU core utilization is being provided. During the initial window, charges to the configured Azure subscription used for Autoscale will not be applied. That window is anticipated to be 30 days. The best way to become accustomed to the level of usage your organization is to sign up for utilization alert notifications in the Power BI Admin portal, and to monitor alerts for utilization levels.
+
+Paginated Reports are not included in the process of determining the level of utilization, and whether to Autoscale, during initial window.
+
 ## Enable Autoscale in the Power BI Admin portal
 
 Once you've selected the Azure subscription to use with Autoscale, and created a resource group as described in the previous section, you're ready to enable Autoscale and associate it with the resource group you created. The person configuring **Autoscale** must be at least a *contributor* for the Azure subscription to successfully complete these steps. You can learn more about [assigning a user to a contributor role for an Azure subscription](https://docs.microsoft.com/azure/cost-management-billing/manage/add-change-subscription-administrator). 
@@ -82,6 +88,7 @@ Here's a short video that shows how quickly you can configure Autoscale for Powe
 :::image type="content" source="media/service-premium-auto-scale/configure-autoscale.gif" alt-text="Video of configuring Autoscale for Premium Generation 2."::: 
 
 And that's it - your Power BI Premium Gen2 subscription is now configured to use Autoscale, so users in your organization automatically get the responsiveness they need from their Power BI content and insights, even under periods of heavy use. 
+
 
 ## Next steps
 
