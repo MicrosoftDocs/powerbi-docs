@@ -2,22 +2,20 @@
 title: Print from the Power BI service
 description: Printing a dashboard, tile, or report page from the Power BI service.
 author: mihart
-ms.reviewer: ''
-featuredvideoid: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-consumer
-ms.topic: how-to
-ms.date: 03/12/2020
 ms.author: mihart
-
+ms.reviewer: mihart
+featuredvideoid: ''
+ms.service: powerbi
+ms.subservice: pbi-explore
+ms.topic: how-to
+ms.date: 09/19/2020
 LocalizationGroup: Common tasks
 ---
 # Printing from the Power BI service
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 ## What can be printed
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 
 Print an entire dashboard, a dashboard tile, a report page, or a report visual from the Power BI service. If your report has more than one page, you'll need to print each page separately. 
 
@@ -45,9 +43,9 @@ Experiment with your particular browser's settings until you get the look that y
 
 ## Print a dashboard
 1. Open the dashboard that you'd like to print.
-2. In the upper left corner, select Export and choose **Print this page**.
+2. In the upper left corner, select **File** and choose **Print this page**.
    
-    ![Dashboard print option](./media/end-user-print/power-bi-dashboard-print.png)
+    ![Dashboard print option](./media/end-user-print/power-bi-dashboard-print-options.png)
 
 3. The Print window for your browser opens. Choose the settings. For example, if your dashboard is wider than it is long, you may want to change the layout to **Landscape**. Select **Print**.
    
@@ -58,11 +56,13 @@ Experiment with your particular browser's settings until you get the look that y
 
 3. [Open the tile in Focus mode](end-user-focus.md) by hovering to reveal **More options** (...) and choosing **Open in focus mode** or the focus icon ![Focus icon](./media/end-user-print/power-bi-focus-icon.png).
    
-    ![ellipses menu](./media/end-user-print/power-bi-menu-options.png)
+    ![ellipses menu](./media/end-user-print/power-bi-focus-tile.png)
 
 4. Hover over the tile to reveal the Options menu.
    
-    ![full screen options menu](./media/end-user-print/menu-options-new.png)
+    ![full screen options menu](./media/end-user-print/power-bi-menu-option.png)
+
+    ![full screen mode](./media/end-user-print/power-bi-focus.png)
 
 4. Select the Print icon ![print icon](./media/end-user-print/print-icon.png).     
 
@@ -79,9 +79,9 @@ Experiment with your particular browser's settings until you get the look that y
 ## Print a report page
 Reports can be printed one page at a time.
 
-1. Open the report and select **Export** > **Print** to print the current report page.
+1. Open the report and select **File** > **Print this page** to print the current report page.
    
-    ![Power BI File menu](./media/end-user-print/power-bi-report-print.png)
+    ![Power BI File menu](./media/end-user-print/power-bi-print-report.png)
 2. The Print window for your browser opens.
 
 3. Follow the printing steps from **Print a dashboard**, above.
@@ -91,9 +91,12 @@ Reports can be printed one page at a time.
 ## Print a report visual
 1. [Open the visual in Focus mode](end-user-focus.md) by hovering over the tile and selecting the Focus icon ![Focus icon](./media/end-user-print/power-bi-focus-icon.png) from the top-right corner.
 
-2. From the upper left corner, select **Export** > **Print** to print the visual.
 
-    ![Power BI File menu](./media/end-user-print/power-bi-report-print.png)
+    ![Open visual in Focus mode](./media/end-user-print/power-bi-visual-focus.png)
+
+2. From the upper left corner, select **File** > **Print this page** to print the visual.
+
+    ![Screenshot of the Power BI File menu](./media/end-user-print/power-bi-visual-print.png)
 
 
 3. Follow the printing steps from **Print a dashboard**, above.

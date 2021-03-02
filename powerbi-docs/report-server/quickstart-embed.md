@@ -2,8 +2,8 @@
 title: "Embed a Power BI Report Server report using an iFrame in SharePoint Server"
 description: This article shows how to embed a Power BI Report Server report in an iFrame in SharePoint Server
 author: maggiesMSFT
-ms.author: maggies 
-ms.date: 08/12/2019
+ms.author: maggies
+ms.date: 07/28/2020
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-report-server
@@ -18,8 +18,8 @@ In this article, you learn how to embed a Power BI Report Server report by using
 
 ## Prerequisites
 * [Power BI Report Server](https://powerbi.microsoft.com/report-server/) installed and configured.
-* [Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md) installed.
-* A [SharePoint](https://docs.microsoft.com/sharepoint/install/install) environment installed and configured.
+* [Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md) installed.
+* A [SharePoint 2013, 2016, or 2019 environment](/sharepoint/install/install) installed and configured.
 * Internet Explorer 11 is only supported if the document mode is set to IE11 (Edge) mode or when using SharePoint Online. You may use other supported browsers with SharePoint on-premises and SharePoint Online.
 
 ## Create the Power BI report URL
@@ -28,7 +28,7 @@ In this article, you learn how to embed a Power BI Report Server report by using
 
     ![Download sample PBIX file](media/quickstart-embed/quickstart_embed_14.png)
 
-2. Unzip the file, and open the sample .pbix file in Power BI Desktop optimized for Power BI Report Server.
+2. Unzip the file, and open the sample .pbix file in Power BI Desktop for Power BI Report Server.
 
     ![PBI RS Desktop tool](media/quickstart-embed/quickstart_embed_02.png)
 
@@ -96,4 +96,4 @@ After you have your URL, you can create an iFrame within a SharePoint page to ho
 - [Create a Power BI report for Power BI Report Server](quickstart-create-powerbi-report.md).  
 - [Create a paginated report for Power BI Report Server](quickstart-create-paginated-report.md).  
 
-More questions? [Try the Power BI Community](https://community.powerbi.com/). 
+More questions? [Try the Power BI Community](https://community.powerbi.com/).

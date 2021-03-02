@@ -2,12 +2,12 @@
 title: Incremental refresh in Power BI
 description: Learn how to enable very large datasets in Power BI.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 06/22/2020
-ms.author: davidi
+ms.date: 11/11/2020
 LocalizationGroup: Premium
 ---
 # Incremental refresh in Power BI
@@ -20,12 +20,15 @@ Incremental refresh enables very large datasets in Power BI with the following b
 > * **Resource consumption is reduced** - Less data to refresh reduces overall consumption of memory and other resources.
 
 > [!NOTE]
-> Incremental refresh is now available to Power BI Pro, Premium, and shared subscriptions and datasets. 
+> Incremental refresh is now available for Power BI Pro, Premium, and shared subscriptions and datasets.
+
+> [!NOTE]
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. Premium Gen2 significantly improves scheduled refresh, by enabling autoscaling to avoid refresh conflicts. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+
 
 ## Configure incremental refresh
 
 Incremental refresh policies are defined in Power BI Desktop and applied when published to the Power BI service.
-
 
 ### Filter large datasets in Power BI Desktop
 
@@ -93,11 +96,11 @@ The header text explains the following:
 
 #### Refresh ranges
 
-The following example defines a refresh policy to store data for five full calendar years plus data for the current year up to the current date, and incrementally refresh ten days of data. The first refresh operation loads historical data. Subsequent refreshes are incremental, and (if scheduled to run daily) perform the following operations:
+The following example defines a refresh policy to store data for five full calendar years plus data for the current year up to the current date, and incrementally refresh ten full days of data. The first refresh operation loads historical data. Subsequent refreshes are incremental, and (if scheduled to run daily) perform the following operations:
 
 - Add a new day of data.
 
-- Refresh ten days up to the current date.
+- Refresh ten full days up to the current date.
 
 - Remove calendar years that are older than five years prior to the current date. For example, if the current date is January 1 2019, the year 2013 is removed.
 
@@ -105,10 +108,9 @@ The first refresh in the Power BI service may take longer to import all five ful
 
 ![Refresh ranges](media/service-premium-incremental-refresh/refresh-ranges.png)
 
-
 #### Current date
 
-The *current date* is based on the system date at the time of refresh. If scheduled refresh is enabled for the dataset in the Power BI service, the specified time zone will be taken into account when determining the current date. Both manually invoked and scheduled refreshes through the Power BI service observe the time zone if available. For example, a refresh that occurs at 8 PM Pacific Time (US and Canada) with time zone specified will determine the current date based on Pacific Time, not GMT (which would otherwise be the next day). Refresh operations not invoked through the Power BI service, such as the [TMSL refresh command](https://docs.microsoft.com/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current), will not consider the scheduled refresh time zone
+The *current date* is based on the system date at the time of refresh. If scheduled refresh is enabled for the dataset in the Power BI service, the specified time zone will be taken into account when determining the current date. Both manually invoked and scheduled refreshes through the Power BI service observe the time zone if available. For example, a refresh that occurs at 8 PM Pacific Time (US and Canada) with time zone specified will determine the current date based on Pacific Time, not GMT (which would otherwise be the next day). Refresh operations not invoked through the Power BI service, such as the [TMSL refresh command](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true), will not consider the scheduled refresh time zone
 
 ![Time zone](media/service-premium-incremental-refresh/time-zone2.png)
 
@@ -134,7 +136,7 @@ Incremental refresh of ten days is more efficient than full refresh of five year
 
 #### Only refresh complete periods
 
-Let's say your refresh is scheduled to run at 4:00 AM every morning. If data appears in the source system during those 4 hours, you may not want to account for it. Some business metrics -- such as barrels per day in the oil and gas industry -- make no sense with partial days.
+Let's say your refresh is scheduled to run at 4:00 AM every morning. If data appears in the source system during those 4 hours, you may not want to account for it. Some business metrics such as barrels per day in the oil and gas industry make no sense with partial days.
 
 Another example is refreshing data from a financial system where data for the previous month is approved on the 12th calendar day of the month. You could set the incremental range to 1 month and schedule the refresh to run on the 12th day of the month. With this option checked, it would for example refresh January data on February 12th.
 
@@ -149,7 +151,7 @@ You can now refresh the model. The first refresh may take longer to import the h
 
 ## Query timeouts
 
-The [troubleshooting refresh](../connect-data/refresh-troubleshooting-refresh-scenarios.md) article explains that refresh operations in the Power BI service are subject to timeouts. Queries can also be limited by the default timeout for the data source. Most relational sources allow overriding timeouts in the M expression. For example, the expression below uses the [SQL Server data-access function](https://docs.microsoft.com/powerquery-m/sql-database) to set it to 2 hours. Each period defined by the policy ranges submits a query observing the command timeout setting.
+The [troubleshooting refresh](../connect-data/refresh-troubleshooting-refresh-scenarios.md) article explains that refresh operations in the Power BI service are subject to timeouts. Queries can also be limited by the default timeout for the data source. Most relational sources allow overriding timeouts in the M expression. For example, the expression below uses the [SQL Server data-access function](/powerquery-m/sql-database) to set it to 2 hours. Each period defined by the policy ranges submits a query observing the command timeout setting.
 
 ```powerquery-m
 let
@@ -172,7 +174,7 @@ With XMLA endpoint read-write enabled, SSMS can be used to view and manage parti
 
 #### Override incremental refresh behavior
 
-With SSMS, you also have more control over how to invoke incremental refreshes from using the [Tabular Model Scripting Language (TMSL)](https://docs.microsoft.com/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current) and the [Tabular Object Model (TOM)](https://docs.microsoft.com/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current). For example, in SSMS, in Object Explorer, right-click a table and then select the **Process Table** menu option. Then click the **Script** button to generate a TMSL refresh command.
+With SSMS, you also have more control over how to invoke incremental refreshes from using the [Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current&preserve-view=true) and the [Tabular Object Model (TOM)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current&preserve-view=true). For example, in SSMS, in Object Explorer, right-click a table and then select the **Process Table** menu option. Then click the **Script** button to generate a TMSL refresh command.
 
 ![Script button in Process Table dialog](media/service-premium-incremental-refresh/ssms-process-table.png)
 
@@ -200,7 +202,7 @@ The following parameters can be inserted into the TMSL refresh command to overri
 }
 ```
 
-To learn more about overriding default incremental refresh behavior with TMSL, see [Refresh command](https://docs.microsoft.com/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current).
+To learn more about overriding default incremental refresh behavior with TMSL, see [Refresh command](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true).
 
 ### Custom queries for detect data changes
 
@@ -243,4 +245,15 @@ Download and install the latest version of the ALM Toolkit from the [Analysis Se
 ## See also
 
 [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md)   
-[Troubleshooting refresh scenarios](../connect-data/refresh-troubleshooting-refresh-scenarios.md)   
+[Troubleshooting refresh scenarios](../connect-data/refresh-troubleshooting-refresh-scenarios.md)
+
+
+Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+* Performance
+* Per-user licensing
+* Greater scale
+* Improved metrics
+* Autoscaling
+* Reduced management overhead
+
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

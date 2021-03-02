@@ -2,35 +2,30 @@
 title: What is a dashboard and how do I open it?
 description: Dashboards are a key feature of Power BI service.
 author: mihart
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-consumer
-ms.topic: how-to
-ms.date: 02/18/2020
 ms.author: mihart
-
+ms.reviewer: mihart
+ms.service: powerbi
+ms.subservice: pbi-explore
+ms.topic: conceptual
+ms.date: 12/03/2020
 LocalizationGroup: Dashboards
 ---
-# Dashboards for Power BI service consumers
+# Dashboards for business users of the Power BI service
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
-
 A Power BI ***dashboard*** is a single page, often called a canvas, that uses visualizations to tell a story. Because it is limited to one page, a well-designed dashboard contains only the most-important elements of that story.
 
-![dashboard](media/end-user-dashboards/power-bi-dashboard2.png)
+![screenshot of a dashboard](media/end-user-dashboards/power-bi-dashboard.png)
 
 The visualizations you see on the dashboard are called *tiles* and are *pinned* to the dashboard by report *designers*. In most cases, selecting a tile takes you to the report page where the visualization was created. If you're new to Power BI, you can get a good foundation by reading [Power BI basic concepts](end-user-basic-concepts.md).
 
 > [!NOTE]
 > Dashboards can be [viewed and shared on mobile devices](mobile/mobile-apps-view-dashboard.md).
 >
-> Power BI Pro is required for viewing a dashboard that has been shared with you.
-> 
+> For colleagues to be able to share dashboards with you, your version of Power BI must be "Pro" or "Premium." For more information, see [Power BI license types](end-user-license.md).
 
-The visualizations on a dashboard come from reports and each report is based on one dataset. In fact, one way to think of a dashboard is as an entryway into the underlying reports and datasets. Selecting a visualization takes you to the report (and dataset) that was used to create it.
+The visualizations on a dashboard come from reports and each report is based on one dataset. In fact, one way to think of a dashboard is as an entryway into the underlying reports and datasets. Selecting a visualization takes you to the report that was used to create it.
 
 ![diagram showing relationship between dashboards, reports, datasets](media/end-user-dashboards/power-bi-diagram.png)
 
@@ -39,12 +34,13 @@ Dashboards are a wonderful way to monitor your business, to look for answers, an
 
 A dashboard isn't just a pretty picture; it's interactive and the tiles update as the underlying data changes.
 
-## Dashboards versus reports for Power BI ***consumers***
-Reports are often confused with dashboards since they too are canvases filled with visualizations. But there are some major differences from a Power BI *consumers* point of view.
+## Dashboards versus reports for Power BI ***business users***
+Reports are often confused with dashboards since they too are canvases filled with visualizations. But there are some major differences from a Power BI *business user* point of view.
 
 | **Capability** | **Dashboards** | **Reports** |
 | --- | --- | --- |
 | Pages |One page |One or more pages |
+|**Ask a question about your data** (Power BI Q&A) field at top |almost always | no |
 | Data sources |One or more reports and one or more datasets per dashboard |A single dataset per report |
 | Filtering |Can't filter or slice |Many different ways to filter, highlight, and slice |
 | Set alerts |Can create alerts to email you when certain conditions are met |No |
@@ -52,8 +48,8 @@ Reports are often confused with dashboards since they too are canvases filled wi
 | Can see underlying dataset tables and fields |No. Can export data but can't see tables and fields in the dashboard itself. |Yes. Can see dataset tables and fields and values. |
 
 
-## Dashboard designers and dashboard consumers
-As a Power BI ***consumer***, you receive dashboards from *designers*. Continue learning about dashboards with these topics:
+## Dashboard designers and dashboard business users
+As a Power BI ***business user***, you receive dashboards from *designers*. Continue learning about dashboards with these topics:
 
 * [View a dashboard](end-user-dashboard-open.md)
 * Learn about [dashboard tiles](end-user-tiles.md) and what will happen when you select one.

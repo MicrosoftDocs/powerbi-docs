@@ -2,19 +2,18 @@
 title: Monitor report performance in Power BI
 description: Guidance on how to monitor report performance in Power BI.
 author: peter-myers
+ms.author: kfollis
 manager: asaxton
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
-ms.date: 02/16/2020
-ms.author: v-pemyer
+ms.date: 01/14/2021
 ---
 
 # Monitor report performance in Power BI
 
-Monitor report performance in Power BI Desktop by using the [Power BI Premium Metrics app](../admin/service-premium-metrics-app.md), learn where the bottlenecks are, and learn how you can improve report performance.
+Monitor report performance in Power BI Desktop using the [Performance Analyzer](../create-reports/desktop-performance-analyzer.md), and monitor performance of content deployed into your organization's Power BI Premium capacity with the help of the [Power BI Premium Metrics app](../admin/service-premium-metrics-app.md). Learn where the bottlenecks are, and learn how you can improve report performance.
 
 Monitoring performance is relevant in the following situations:
 
@@ -31,7 +30,7 @@ Use [Query Diagnostics](/power-query/QueryDiagnostics) in Power BI Desktop to de
 > [!NOTE]
 > Query Diagnostics is currently a preview feature, and so you must enable it in _Options and Settings_. Once enabled, its commands are available in the Power Query Editor window, on the **Tools** ribbon tab.
 
-![Image shows the Power Query Editor Tools ribbon tab. The ribbon displays the Diagnose Step command, Start Diagnostics command, and the Stop Diagnostics command.](media/monitor-report-performance/power-query-diagnotics.png)
+![Screenshot of Power Query Editor Tools ribbon tab showing the Diagnose Step command, Start Diagnostics command, and the Stop Diagnostics command.](media/monitor-report-performance/power-query-diagnotics.png)
 
 ## Use Performance Analyzer
 

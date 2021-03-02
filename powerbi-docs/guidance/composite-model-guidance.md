@@ -2,13 +2,12 @@
 title: Composite model guidance in Power BI Desktop
 description: Guidance for developing Composite models.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 12/24/2019
-ms.author: v-pemyer
 ---
 
 # Composite model guidance in Power BI Desktop
@@ -50,8 +49,8 @@ In a Composite model, you can configure the storage mode for each table (except 
 There are several possible scenarios when Power BI queries a Composite model:
 
 - **Queries only Import or Dual table(s)**: All data is retrieved from the model cache. It will deliver the fastest possible performance. This scenario is common for dimension-type tables queried by filters or slicer visuals.
-- **Queries Dual table(s) or DirectQuery table(s) from the same source**: All data is retrieved by sending one or more native queries to the DirectQuery source. It will deliver the fastest possible performance, especially when appropriate indexes exist on the source tables. This scenario is common for queries that relate Dual dimension-type tables and DirectQuery fact-type tables. These queries are _intra-island_, and so all one-to-one or one-to-many relationships are evaluated as [strong relationships](../transform-model/desktop-relationships-understand.md#strong-relationships).
-- **All other queries**: These queries involve cross-island relationships. It's either because an Import table relates to a DirectQuery table, or a Dual table relates to a DirectQuery table from a different source—in which case it behaves as an Import table. All relationships are evaluated as [weak relationships](../transform-model/desktop-relationships-understand.md#weak-relationships). It also means that groupings applied to non-DirectQuery tables must be sent to the DirectQuery source as a virtual table. In this case, the native query can be inefficient, especially for large grouping sets. And, it has the potential to expose sensitive data in the native query.
+- **Queries Dual table(s) or DirectQuery table(s) from the same source**: All data is retrieved by sending one or more native queries to the DirectQuery source. It will deliver the fastest possible performance, especially when appropriate indexes exist on the source tables. This scenario is common for queries that relate Dual dimension-type tables and DirectQuery fact-type tables. These queries are _intra source group_, and so all one-to-one or one-to-many relationships are evaluated as [regular relationships](../transform-model/desktop-relationships-understand.md#regular-relationships).
+- **All other queries**: These queries involve cross source group relationships. It's either because an Import table relates to a DirectQuery table, or a Dual table relates to a DirectQuery table from a different source—in which case it behaves as an Import table. All relationships are evaluated as [limited relationships](../transform-model/desktop-relationships-understand.md#limited-relationships). It also means that groupings applied to non-DirectQuery tables must be sent to the DirectQuery source as a virtual table. In this case, the native query can be inefficient, especially for large grouping sets. And, it has the potential to expose sensitive data in the native query.
 
 In summary, we recommend that you:
 
@@ -59,7 +58,7 @@ In summary, we recommend that you:
 - Set the storage mode to **DirectQuery** when a table is a fact-type table storing large data volumes, or it needs to deliver near real-time results
 - Set the storage mode to **Dual** when a table is a dimension-type table, and it will be queried together with **DirectQuery** fact-type tables based on the same source
 - Configure appropriate refresh frequencies to keep the model cache for Dual tables (and any dependent calculated tables) in sync with the source database(s)
-- Strive to ensure data integrity across data sources (including the model cache)—weak relationships will eliminate rows when related column values don't match
+- Strive to ensure data integrity across data sources (including the model cache)—limited relationships will eliminate rows when related column values don't match
 - Optimize DirectQuery data sources with appropriate indexes for efficient joins, filtering and grouping
 - Don't load sensitive data into Import or Dual tables if there's risk of a native query being intercepted—for more information, see [Use composite models in Power BI Desktop (Security implications)](../transform-model/desktop-composite-models.md#security-implications)
 

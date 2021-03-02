@@ -2,27 +2,26 @@
 title: Export entire reports to PowerPoint
 description: Learn how to export a Power BI report to PowerPoint.
 author: mihart
-ms.reviewer: ''
-ms.custom: contperfq4 
-ms.service: powerbi
-ms.subservice: powerbi-consumer
-ms.topic: how-to
-ms.date: 05/12/2020
 ms.author: mihart
-
+ms.reviewer: mihart
+ms.custom: contperf-fy20q4 
+ms.service: powerbi
+ms.subservice: pbi-explore
+ms.topic: how-to
+ms.date: 01/12/2021
 LocalizationGroup: Share your work
 ---
 # Export reports to PowerPoint
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
 
 With the Power BI service (app.powerbi.com), you can publish your report to Microsoft PowerPoint and easily create a slide deck based on your Power BI report. When you export to PowerPoint, the following occurs:
 
 * Each page in the Power BI report becomes an individual slide in PowerPoint.
 * Each page in the Power BI report is exported as a single high-resolution image in PowerPoint.
-* You can preserve the filters and slicers settings that you added to the report.
-* A link is created in PowerPoint that links to the Power BI report.
+* You can preserve the filters and slicers settings that you've added to the report.
+* A link is created in PowerPoint that links back to the Power BI report.
 
 Getting your **Power BI report** exported into **PowerPoint** is quick. Follow the steps outlined in the next section.
 
@@ -33,17 +32,17 @@ You can also copy one visual at a time from the Power BI service and paste it in
 ## Export your Power BI report to PowerPoint
 In the **Power BI service**, select a report to display it on the canvas. You can also select a report from **Home**, **Apps**, or any other container from the nav pane.
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
-
-When the report you want to export to PowerPoint is displayed on the canvas, select **Export** > **PowerPoint** from the menu bar.
+When the report you want to export to PowerPoint is displayed on the canvas, select **File** > **Export to PowerPoint** from the menu bar.
 
 ![Select Export from the menu bar](media/end-user-powerpoint/power-bi-export.png)
 
-A pop-up appears where you have the option to select **Current values** or **Default values**. **Current values** exports the report in the current state, which includes the active changes you made to slicer and filter values.  Most users select this option. If you've scrolled, **Current values** does not include the scroll state of the visual, but instead exports the top portion of the data. Alternatively, selecting **Default values** exports the report in the original state, as the *designer* shared it, and doesn't reflect any changes you made to the original state.
+A pop-up appears where you have the option to select **Current values** or **Default values**. **Current values** exports the report in the current state, which includes the active changes you made to slicer and filter values.  Most users select this option. If you've scrolled, **Current values** does not include the scroll state of the visual, but instead exports the top portion of the data. Alternatively, selecting **Default values** exports the report in the original state, as the *designer* shared it, and doesn't reflect any changes you've made to the original state.
 
 ![Select what to Export](media/end-user-powerpoint/power-bi-current-values.png)
  
-Additionally, there's a check box to select whether or not to export the hidden tabs of a report. Select this check box if you want to export only report tabs that are visible to you in your browser. If you prefer to get all the hidden tabs as part of your export, leave this check box cleared. If the check box is grayed out, there are no hidden tabs in the report. An example of a hidden tab would be a tooltip tab. [Custom tooltips](../create-reports/desktop-tooltips.md) are created by report *designers* and don't display as report tabs in the Power BI service for *consumers*. 
+Additionally, there's a check box to select whether or not to export the hidden tabs of a report. Select this check box if you want to export only report tabs that are visible to you in your browser. If you prefer to get all the hidden tabs as part of your export, leave this check box cleared. If the check box is grayed out, there are no hidden tabs in the report. An example of a hidden tab would be a tooltip tab. [Custom tooltips](../create-reports/desktop-tooltips.md) are created by report *designers* and don't display as report tabs in the Power BI service for *business users*. 
+
+You may also choose to export only the current page you're viewing in a report by checking the **Only export current page** option.  By default, this is unchecked and all pages will be exported from your report.
 
 After you make your selections, select **Export** to continue. You'll see a notification banner in the upper-right corner of the Power BI service browser window that the report is being exported to PowerPoint. 
 
@@ -69,7 +68,7 @@ When you open the PowerPoint file that Power BI exported, you find a few cool an
 
 
 3. Each report page is a separate slide, as shown in the nav pane. 
-4. Your published report is rendered in the language according to your Power BI settings, or otherwise by the locale setting of your browser. To see or set your language preference, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**. For locale information, see [Supported languages and countries or regions for Power BI](../fundamentals/supported-languages-countries-regions.md).
+4. Your published report is rendered in the language according to your Power BI settings, or otherwise by the locale setting of your browser. To see or set your language preference in your browser, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**. For locale information, see [Supported languages and countries or regions for Power BI](../fundamentals/supported-languages-countries-regions.md).
 
 
 When you view an individual slide, you see that each report page is an independent image. Scrolling in PowerPoint is not available since each slide is a static image.
@@ -82,6 +81,8 @@ What you do with your PowerPoint deck from there, or any of the high-resolution 
 There are a few considerations and limitations to keep in mind when you work with the **Export to PowerPoint** feature.
  
 
+* If you don't see the **Export** option, make sure that you are viewing a report (not a dashboard).
+
 * [URL filters](../collaborate-share/service-url-filters.md) aren't currently respected when you choose **Current Values** for your export.
 
 * When exporting to PowerPoint, if the report uses a custom font, that font will be replaced with a default font.
@@ -93,14 +94,15 @@ There are a few considerations and limitations to keep in mind when you work wit
    - Background images are cropped with the chart's bounding area. We recommend that you remove background images before you export to PowerPoint.
 
 * Some reports cannot be exported. These include:
-    - Reports that are owned by a user outside your Power BI tenant domain, such as a report owned by someone outside your organization and shared with you.
     - If you share a dashboard with someone outside of your organization, and thereby, a user who isn't in your Power BI tenant, that user can't export the shared dashboard's associated reports to PowerPoint. For example, if you're aaron@contoso.com, you can share with david@cohowinery.com. But david@cohowinery.com can't export the associated reports to PowerPoint.
-    - Reports with more than 30 report pages. Only the first 30 pages will be exported.
+    - Reports with more than 50 report pages. Paginated reports don't have this limitation. See [Print a paginated report](end-user-paginated-report.md#interact-with-a-paginated-report) for details.
+    - Reports larger than 500 MB when exported. 
     - Reports being exported to older versions of PowerPoint.
-    - Reports that take longer than an hour to process.
+    - Reports that take longer than an hour to process. 
+    - Report pages that take longer than 6 minutes to load. 
 
-* If the **Export to PowerPoint** menu item isn't available in the Power BI service, it's likely because your tenant administrator disabled the feature. Contact your tenant administrator for details.
-* The Power BI service uses your Power BI language setting as the language for the PowerPoint export. To see or set your language preference, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**.
+* If the **Export to PowerPoint** menu item isn't available in the Power BI service, it's likely because your Power BI admin or report owner disabled the feature. Contact your admin or the owner for details.
+* The Power BI service uses your Power BI language setting as the language for the PowerPoint export. To see or set your language preference, in your browser, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**.
 
 
 

@@ -43,7 +43,7 @@ landingContent:
           - text: Referencing Power Query queries
             url: power-query-referenced-queries.md
           - text: Dataflows best practices
-            url: ../transform-model/service-dataflows-best-practices.md
+            url: ../transform-model/dataflows/dataflows-introduction-self-service.md
  
   # Card (optional)
   - title: Data modeling
@@ -142,7 +142,7 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: Tenant admin settings
+          - text: Tenant settings
             url: admin-tenant-settings.md 
           - text: On-premises data gateway sizing
             url: gateway-onprem-sizing.md 
@@ -150,4 +150,41 @@ landingContent:
             url: monitor-report-performance.md 
           - text: Troubleshoot report performance
             url: report-performance-troubleshoot.md
+          - text: Deployment pipelines best practices
+            url: ../create-reports/deployment-pipelines-best-practices.md
+          - text: Access the Power BI activity log
+            url: admin-activity-log.md
 
+  # Card (optional)
+  - title: Migration to Power BI
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Migration overview
+            url: powerbi-migration-overview.md
+          - text: Prepare to migrate
+            url: powerbi-migration-pre-migration-steps.md
+          - text: Gather requirements
+            url: powerbi-migration-requirements.md
+          - text: Plan deployment
+            url: powerbi-migration-planning.md
+          - text: Conduct proof of concept
+            url: powerbi-migration-proof-of-concept.md
+          - text: Create content
+            url: powerbi-migration-create-validate-content.md
+          - text: Deploy to Power BI
+            url: powerbi-migration-deploy-support-monitor.md
+          - text: Learn from customer Power BI migrations
+            url: powerbi-migration-learn-from-customers.md
+
+  # Card (optional)
+  - title: Center of Excellence (COE)
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Microsoft's BI transformation
+            url: center-of-excellence-microsoft-business-intelligence-transformation.md
+          - text: Establish a COE
+            url: center-of-excellence-establish.md
+          - text: BI solution architecture in the COE
+            url: center-of-excellence-business-intelligence-solution-architecture.md

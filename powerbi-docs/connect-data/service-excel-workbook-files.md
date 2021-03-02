@@ -2,18 +2,16 @@
 title: Get data from Excel workbook files
 description: Learn how to get data from Excel workbook files into Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 09/06/2019
-ms.author: davidi
-
 LocalizationGroup: Data from files
 ---
 # Get data from Excel workbook files
-![](media/service-excel-workbook-files/excel_icon.png)
+![Excel icon](media/service-excel-workbook-files/excel_icon.png)
 
 Microsoft Excel is one of the most widely used business applications around. It’s also one of the most common ways to get your data into Power BI.
 
@@ -57,7 +55,7 @@ Watch this helpful video to learn more about how to make sure your Excel workboo
 ## One Excel workbook – two ways to use it
 If you save your workbook files to **OneDrive**, you'll have a couple of ways you can explore your data in Power BI
 
-![](media/service-excel-workbook-files/excel_import_connect.png)
+![Screenshot of OneDrive for Business, showing the option to Import or Connect to Excel data.](media/service-excel-workbook-files/excel_import_connect.png)
 
 ### Import Excel data into Power BI
 When you choose **Import**, any supported data in tables and/or a data model are imported into a new dataset in Power BI. If you have any Power View sheets, those will be re-created in Power BI as reports.
@@ -80,31 +78,31 @@ In Excel 2016, you can also use Publish > Upload. It's pretty much the same thin
 ## Import or connect to an Excel workbook from Power BI
 1. In Power BI, in the nav pane, click **Get Data**.
    
-   ![](media/service-excel-workbook-files/excel_get_data_button.png)
+   ![Screenshot of Get Data, showing the button in the navigation pane.](media/service-excel-workbook-files/excel_get_data_button.png)
 2. In Files, click **Get**.
    
-   ![](media/service-excel-workbook-files/excel_files_get.png)
+   ![Screenshot of the Files dialog, showing the Get button.](media/service-excel-workbook-files/excel_files_get.png)
 3. Find your file.
    
-   ![](media/service-excel-workbook-files/excel_find_your_file.png)
+   ![Screenshot of four tiles to find your file, showing the Local File, OneDrive Business, OneDrive Personal, and SharePoint tiles.](media/service-excel-workbook-files/excel_find_your_file.png)
 4. If your workbook file is on OneDrive or SharePoint - Team Sites, choose **Import** or **Connect**.
 
 ## Local Excel workbooks
 You can also use a local Excel file and upload it into Power BI. Simply select **Local File** from the previous menu, then navigate to where you have your Excel workbooks saved.
 
-![](media/service-excel-workbook-files/excel_import_6.png)
+![Screenshot of the Local File tile, showing how to navigate to select the Excel workbooks.](media/service-excel-workbook-files/excel_import_6.png)
 
 Once selected, choose to Upload your file into Power BI.
 
-![](media/service-excel-workbook-files/excel_import_7.png)
+![Screenshot of the Local File dialog, showing the Upload your Excel file to Power B I selection.](media/service-excel-workbook-files/excel_import_7.png)
 
 Once your workbook is uploaded, you get a notification that the workbook is ready.
 
-![](media/service-excel-workbook-files/excel_import_8.png)
+![Screenshot of the notification, showing your workbook is ready.](media/service-excel-workbook-files/excel_import_8.png)
 
 Once the workbook is ready, you can find it in the **Reports** section of Power BI.
 
-![](media/service-excel-workbook-files/excel_import_9.png)
+![Screenshot of the Reports section, showing the selected report with the Excel data.](media/service-excel-workbook-files/excel_import_9.png)
 
 ## Publish from Excel 2016 to your Power BI site
 Using the **Publish to Power BI** feature in Excel 2016 is effectively the same as using **Get Data** in Power BI to import or connect to your file. We won't go into the details here, but you can see [Publish to Power BI from Excel 2016](service-publish-from-excel.md) to learn more.

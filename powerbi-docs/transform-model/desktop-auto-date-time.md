@@ -2,13 +2,12 @@
 title: "Auto date/time in Power BI Desktop"
 description: Understand auto date/time functionality in Power BI Desktop.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 10/23/2019
-ms.author: v-pemyer
 ---
 
 # Apply auto date/time in Power BI Desktop
@@ -57,7 +56,7 @@ When an auto date/time table exists for a date column (and that column is visibl
 
 The auto date/time generated hierarchy can be used to configure a visual in exactly the same way that regular hierarchies can be used. Visuals can be configured by using the entire **Date Hierarchy** hierarchy, or specific levels of the hierarchy.
 
-There is, however, one added capability not supported by regular hierarchies. When the auto date/time hierarchy—or a level from the hierarch—is added to a visual well, report authors can toggle between using the hierarchy or the date column. This approach makes sense for some visuals, when all they require is the date column, not the hierarchy and its levels. They start by configuring the visual field (right-click the visual field, or click the down-arrow), and then using the context menu to switch between the date column or the date hierarchy.
+There is, however, one added capability not supported by regular hierarchies. When the auto date/time hierarchy—or a level from the hierarchy—is added to a visual well, report authors can toggle between using the hierarchy or the date column. This approach makes sense for some visuals, when all they require is the date column, not the hierarchy and its levels. They start by configuring the visual field (right-click the visual field, or click the down-arrow), and then using the context menu to switch between the date column or the date hierarchy.
 
 ![Example of a visual field configuration for the OrderDate hierarchy. The open context menu  displays two options allowing the toggling to use the OrderDate column or the Date Hierarchy.](media/desktop-auto-date-time/auto-date-time-configure-visuals-fields.png)
 
@@ -94,6 +93,7 @@ In Power BI Desktop, you select _File > Options and settings > Options_, and the
 For more information related to this article, check out the following resources:
 
 - [Auto date/time guidance in Power BI Desktop](../guidance/auto-date-time.md)
+- [Create date tables in Power BI Desktop](../guidance/model-date-tables.md)
 - [Set and use date tables in Power BI Desktop](desktop-date-tables.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

@@ -2,108 +2,160 @@
 title: Automatic page refresh in Power BI Desktop 
 description: This article shows how to automatically refresh pages for DirectQuery sources in Power BI Desktop.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.custom:
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/10/2020
-ms.author: davidi
+ms.date: 08/13/2020
 LocalizationGroup: Connect to data
 ---
 
-# Automatic page refresh in Power BI Desktop 
+# Automatic page refresh in Power BI
 
-When you monitor critical events, it's important for data to be refreshed as soon as the source data is updated. For example, in the manufacturing industry, it's critical to know when a machine is malfunctioning or is close to malfunctioning.
+When you monitor critical events, it's important for data to be refreshed as soon as the source data is updated. For example, in the manufacturing industry, it's critical to know when a machine is malfunctioning or is close to malfunctioning. If you're monitoring signals like social media sentiment, you want to know about sudden changes as soon as they happen.
 
-The automatic page refresh feature in Power BI enables your active report page to query for new data, at a predefined cadence, for [DirectQuery sources](https://docs.microsoft.com/power-bi/desktop-directquery-about).
+Automatic page refresh in Power BI enables your active report page to query for new data, at a predefined cadence, for [DirectQuery sources](../connect-data/desktop-directquery-about.md).
 
-## Using automatic page refresh
+## Refresh types
 
-Automatic page refresh is available only for DirectQuery data sources.
+When using automatic page refresh, there are two refresh types available: fixed interval and change detection.
 
-To use automatic page refresh, select the report page for which you want to enable refresh. In the **Visualizations** pane, select the **Formatting** button (a paint roller) and find **Page refresh** near the bottom of the pane. 
+### Fixed interval
+
+This refresh type allows you to update all visuals in a report page based on a constant interval such as one second or five minutes. When that specific interval is reached, all visuals in that page send an update query to the data source and update accordingly.
+
+### Change detection
+
+This refresh type allows you to refresh visuals on a page based on detecting changes in the data rather than a specific refresh interval. Specifically, this measure polls for changes to your [DirectQuery source](../connect-data/desktop-directquery-about.md). Besides defining the measure, you also have to select how frequently Power BI Desktop will check for changes. When publishing to the service, this refresh type is only supported in workspaces that are part of a Premium capacity. LiveConnect sources such as Analysis Services and Power BI datasets are not supported.
+
+## Authoring reports with automatic page refresh in Power BI Desktop
+
+Automatic page refresh is available for [DirectQuery sources](../connect-data/desktop-directquery-about.md) and some LiveConnect scenarios, so it will only be available when you are connected to a supported data source. This restriction applies to both automatic page refresh types.
+
+To use automatic page refresh in Power BI Desktop, select the report page for which you want to enable automatic page refresh. In the **Visualizations** pane, select the **Formatting** button (a paint roller) and find the **Page refresh** section near the bottom of the pane.
 
 ![Page refresh location](media/desktop-automatic-page-refresh/automatic-page-refresh-01.png)
 
-The following image shows the **Page refresh** card. The numbered elements are described after the image.
+1. Turns page refresh on or off.
+2. Refresh type
+3. Inputs and information (depending on refresh type)
 
-![Page refresh card](media/desktop-automatic-page-refresh/automatic-page-refresh-02.png)
+The **Page refresh** card will only be available if you are connected to a [DirectQuery source](../connect-data/desktop-directquery-about.md). To enable automatic page refresh the toggle needs to be on the On position. The inputs needed and information provided will depend on the refresh type selected.
 
-1.    Turns page refresh on or off
-2.    Number value for the page refresh interval
-3.    Unit for the page refresh interval
+### Fixed interval setup
 
-On this card, you can turn on page refresh and select the refresh duration. The default value is 30 minutes. (The minimum refresh interval is one second.) Your report will begin refreshing at the interval you set. 
+When selecting **Auto page refresh** as the refresh type, you need to provide the desired refresh interval. The default value is 30 minutes. (The minimum refresh interval is one second.) Your report will begin refreshing at the interval you set.
 
-## Determining the page refresh interval
+When clicking on show details Power BI will provide further information on:
+
+- If the feature is enabled by your admin (only when logged into your Power BI account)
+- The minimum interval allowed by your admin (only when logged into your Power BI account)
+- Actual rate of refresh (usually longer than your selected interval)
+- Last refresh time
+
+![Page refresh show details](media/desktop-automatic-page-refresh/automatic-page-refresh-02.png)
+
+### Change detection setup
+
+When selecting **Change detection** as your refresh type, you are presented with a link to **Add change detection**. You can also access the **change detection** window from the Modeling tab in the ribbon. Then click on the **Change detection** icon on the **Page refresh** section. Finally, you can right-click or select the drop-down arrow next to any value in the Values well, and select **Change detection** from the menu.
+
+![Change detection card](media/desktop-automatic-page-refresh/automatic-page-refresh-03.png)
+
+Once the window is open, you are presented with the **Measure type** option where you can select an existing measure or create a new one from scratch. When selecting an existing, you just have to select the desired measure from the fields list or drag and drop it into the **Choose existing measure** section. When creating a new measure, you can **Choose a calculation** for the measure between count, count distinct, minimum, maximum and sum. For example, you can use count distinct to count customer IDs and only refresh when a new customer is added to the list. Once you have a measure selected, you have to define how often Power BI will **Check for changes**. That's the interval on how often Power BI will calculate the measure and poll changes. Once you click apply, a new measure with the change detection icon will appear in your field list.
+
+![Change detection window](media/desktop-automatic-page-refresh/automatic-page-refresh-04.png)
+
+Then, back on the page refresh section, you will see the information of which measure is being used for change detection and the defined interval for your reference.
+
+![Change detection card with details](media/desktop-automatic-page-refresh/automatic-page-refresh-05.png)
+
+> [!NOTE]
+> Only one change detection measure is allowed per model.
+
+## Determining the refresh interval
 
 When automatic page refresh is enabled, Power BI Desktop is constantly sending queries to your DirectQuery source. After the query is sent, there's a delay before data is returned. So, for short refresh intervals, you should confirm that queries are successfully returning the queried data within the configured interval. If data isn't returned within the interval, visuals will update less frequently than configured.
 
+These considerations apply for both refresh types: fixed interval and change detection. The main difference will be that for change detection there is only one query going back to the source at a fixed interval and the visuals refresh is triggered only when the value of the change detection measure changes.
+
 As a best practice, the refresh interval should at least match your expected new data arrival rate:
 
-* If new data arrives at the source every 20 minutes, your refresh interval can't be less than 20 minutes. 
-
-* If new data arrives every second, set the interval to one second. 
+* If new data arrives at the source every 20 minutes, your refresh interval can't be less than 20 minutes.
+* If new data arrives every second, set the interval to one second.
 
 For low refresh intervals like one second, take factors like the following into consideration:
+
 - The type of the DirectQuery data source
 - The load your queries create on it
-- The distance of your report viewers from the capacity's datacenter 
+- The distance of your report viewers from the capacity's datacenter
 
-You can estimate return times by using Performance Analyzer in Power BI Desktop. Performance Analyzer lets you check if each visual query has enough time to come back with results from the source. It also lets you determine where time is spent. Based on the results from Performance Analyzer, you can adjust the data source, or you can experiment with other visuals and measures in your report.
+You can estimate return times by using the [Performance Analyzer](desktop-performance-analyzer.md) in Power BI Desktop and the show details menu in the page refresh section for fixed interval refresh type. Performance Analyzer lets you check if each visual query has enough time to come back with results from the source. It also lets you determine where time is spent. Based on the results from Performance Analyzer, you can adjust the data source, or you can experiment with other visuals and measures in your report.
 
-This image shows the results of a DirectQuery in Performance Analyzer:
+This image shows the results of a DirectQuery source in Performance Analyzer:
 
-![Performance Analyzer results](media/desktop-automatic-page-refresh/automatic-page-refresh-03.png)
+![Performance Analyzer results](media/desktop-automatic-page-refresh/automatic-page-refresh-06.png)
 
-Let's consider some other characteristics of this data source: 
+Let's consider some other characteristics of this data source:
 
--    Data arrives at a rate of 2 seconds. 
--    Performance Analyzer shows a maximum query + display time of approximately 4.9 seconds (4,688 milliseconds). 
--    The data source is configured to handle approximately 1,000 concurrent queries per second. 
--    You expect approximately 10 users to be viewing the report concurrently.
+- Data arrives at a rate of 2 seconds
+- Performance Analyzer shows a maximum query + display time of approximately 4.9 seconds (4,688 milliseconds)
+- The data source is configured to handle approximately 1,000 concurrent queries per second
+- You expect approximately 10 users to be viewing the report concurrently
 
 So that results in the following equation:
 
-**5 visuals x 10 users = approximately 50 queries**
+- **5 visuals x 10 users = approximately 50 queries**
 
-The result of this calculation shows much more load than the data source can support. The data arrives at a rate of two seconds, so that should be your refresh rate. But because the query takes around five seconds to complete, you should set it to more than five seconds. 
+The result of this calculation shows much more load than the data source can support. The data arrives at a rate of two seconds, so that should be your refresh rate. But because the query takes around five seconds to complete, you should set it to more than five seconds.
 
-Also note that this result might differ as you publish your report to the service. This difference occurs because the report will use the Azure Analysis Services instance that's hosted in the cloud. You might want to adjust your refresh rates accordingly. 
+Also note that this result might differ as you publish your report to the service. This difference occurs because the report will use the Azure Analysis Services instance that's hosted in the cloud. You might want to adjust your refresh rates accordingly.
 
-To account for queries and refresh timing, Power BI will only run the next refresh query when all the remaining refresh queries are complete. So even if your refresh interval is shorter than the time your queries take to process, Power BI will refresh again only after remaining queries complete. 
+To account for queries and refresh timing, Power BI will only run the next refresh query when all the remaining refresh queries are complete. So even if your refresh interval is shorter than the time your queries take to process, Power BI will refresh again only after remaining queries complete.
+
+In the case of change detection refresh type, these considerations still apply. Also, the [Performance Analyzer](desktop-performance-analyzer.md) will show you the results for the change detection measure query even though it does not match to any visual in your report. We have provided this capability for you to be able to troubleshoot this particular type of measure following the same guidance we mentioned previously. The main difference for this refresh type is that only one query is going to the data source instead of all queries from all visuals. This is still the case if multiple users are viewing the report.
+
+![Performance Analyzer results with change detection](media/desktop-automatic-page-refresh/automatic-page-refresh-07.png)
+
+For the same scenario we discussed before:
+
+- **1 change detection measure query for 5 visuals generates only one query for any number of viewers**
+
+- **When the change detection measure triggers an update assuming same scenario as before with 5 visuals x 10 users = approximately 50 queries**
+
+To summarize, when using change detection only one query is sent to the data source until a change is detected. When that happens, the same logic used for fixed interval refresh type applies updating all visuals for all users generating the same number of queries. This approach should be more efficient in the long run.
 
 Now let's look at how you can potentially detect and diagnose performance problems as a capacity administrator. You can also check the [Frequently asked questions](#frequently-asked-questions) section, later in this article, for more questions and answers about performance and troubleshooting.
 
 ## Automatic page refresh in the Power BI service
 
-You can also set automatic page refresh intervals for reports that have been authored in Power BI Desktop and published to the Power BI service. 
+You can also set automatic page refresh for reports that have been published to the Power BI service as long as the data source is [DirectQuery](../connect-data/desktop-directquery-about.md).
 
-To configure automatic page refresh for reports in the Power BI service, you use steps that are similar to the steps you'd use in Power BI Desktop. When configured in the Power BI service, automatic page refresh also supports [embedded Power BI](../developer/embedded/embedding.md) content. This image shows the **Page refresh** configuration for the Power BI service:
+To configure automatic page refresh for reports in the Power BI service, the steps are similar to Power BI Desktop. When configured in the Power BI service, automatic page refresh also supports [embedded Power BI](../developer/embedded/embedding.md) content. This image shows the **Page refresh** configuration for the Power BI service:
 
-![Automatic page refresh in the Power BI service](media/desktop-automatic-page-refresh/automatic-page-refresh-04.png)
+![Page refresh location in the service](media/desktop-automatic-page-refresh/automatic-page-refresh-08.png)
 
-These descriptions correspond to the numbered elements: 
+1. Turns page refresh on or off.
+2. Refresh type
+3. Inputs and information (depending on refresh type)
 
-1.    Turns page refresh on or off.
-2.    Number value for the page refresh interval. Must be a whole number.
-3.    Unit for the page refresh interval.
+> [!NOTE]
+> When you publish your automatic page refresh-enabled report from Power BI Desktop to the service, you'll have to provide the credentials for the DirectQuery data source on the dataset settings menu. You can set up the credentials so report viewers access this data source with their own identities, respecting any security set up at the source. In the case of change detection measure, it will always be evaluated with the author's credentials.
 
 ### Page refresh intervals
 
-The page refresh intervals allowed in the Power BI service are affected by the report's workspace type. This applies to these reports:
+The page refresh types and intervals allowed in the Power BI service are affected by the report's workspace type. This applies to these scenarios:
 
 * Publishing a report into a workspace that has automatic page refresh enabled
 * Editing a page refresh interval that's already in a workspace
 * Creating a report directly in the service
 
-Power BI Desktop has no restrictions for refresh intervals. Its refresh interval can be as frequent as every second. But when reports are published to the Power BI service, certain restrictions apply. These restrictions are described in the following sections.
+Power BI Desktop has no restrictions for refresh intervals and can be as frequent as every second. But when reports are published to the Power BI service, certain restrictions apply which are described in the following sections.
 
 ### Restrictions on refresh intervals
 
-In the Power BI service, restrictions on automatic page refresh apply based on factors like the workspace and whether you're using Premium services.
+In the Power BI service, restrictions on automatic page refresh apply based on the workspace where the report is published, whether you're using Premium services, the Premium capacity admin settings, and the type of data source.
 
 To clarify how these restrictions work, let's start with some background on capacities and workspaces.
 
@@ -115,34 +167,47 @@ Power BI *workspaces* reside within capacities. They represent security, collabo
 
 Here are some details for the two workspace scenarios:
 
-**Shared workspaces**. For regular workspaces (workspaces that aren't part of a Premium capacity), automatic page refresh has a minimum interval of 30 minutes (the lowest interval allowed).
+**Shared workspaces**. For regular workspaces (workspaces that aren't part of a Premium capacity), automatic page refresh has a minimum interval of 30 minutes (the lowest interval allowed). Change detection refresh type is not available in shared capacities.
 
-**Premium workspaces**. The availability of automatic page refresh in Premium workspaces depends on the workload settings your Premium administrator has set up for the Power BI Premium capacity. There are two variables that might affect your ability to set up automatic page refresh:
+**Premium workspaces**. The availability of automatic page refresh in Premium workspaces (both for fixed interval and change detection) depends on the workload settings your Premium administrator has set up for the Power BI Premium capacity. There are two variables that might affect your ability to set up automatic page refresh:
 
- - **Feature on/off**. If your capacity administrator has disabled the feature, you won't be able to set up any type of page refresh in your published report.
+ - **Feature on/off**. If your capacity administrator has disabled the feature, you won't be able to set up any type of page refresh in your published report. Fixed interval and change detection can be turned on and off separately.
 
- - **Minimum refresh interval**. When enabling the feature, your capacity administrator needs to set up a minimum refresh interval. If your interval is lower than the minimum, the Power BI service overrides your interval to respect the minimum interval set by your capacity administrator. That override is referred to as "Capacity admin override" in the following table. 
+ - **Minimum refresh interval**. When enabling automatic page refresh for fixed interval, your capacity administrator needs to set up a minimum refresh interval  (default value is five minutes). If your interval is lower than the minimum, the Power BI service overrides your interval to respect the minimum interval set by your capacity administrator.
+
+ - **Minimum execution interval**. When enabling change detection, your capacity administrator needs to set up a minimum execution interval (default value is five seconds). If your interval is lower than the minimum, the Power BI service overrides your interval to respect the minimum interval set by your capacity administrator.
+
+> [!WARNING]
+> When enabled in your dataset, change detection measure will open a connection to your DirectQuery data source to calculate the measure and poll for changes. This connection is different from the Low Priority refresh connections Power BI already makes.
+
+![Automatic page refresh settings in the capacity admin portal](media/desktop-automatic-page-refresh/automatic-page-refresh-09.png)
 
 This table describes with more detail where this feature is available and the limits for each capacity type and [storage mode](../connect-data/service-dataset-modes-understand.md):
 
-| Storage mode | Dedicated capacity | Shared capacity |
-| --- | --- | --- |
-| DirectQuery | **Supported**: Yes <br>**Minimum refresh interval**: 1 second <br>**Capacity admin override**: Yes | **Supported**: Yes <br>**Minimum refresh interval**: 30 minutes <br>**Capacity admin override**: No |
-| Import | **Supported**: No <br>**Minimum refresh interval**: N/A <br>**Capacity admin override**: N/A | **Supported**: No <br>**Minimum refresh interval**: N/A <br>**Capacity admin override**: N/A |
-| Mixed mode (DirectQuery + other data sources) | **Supported**: Yes <br>**Minimum refresh interval**: 1 second <br>**Capacity admin override**: Yes | **Supported**: Yes <br>**Minimum refresh interval**: 30 minutes <br>**Capacity admin override**: No |
-| Live connect AS | **Supported**: No <br>**Minimum refresh interval**: N/A <br>**Capacity admin override**: N/A | **Supported**: No <br>**Minimum refresh interval**: N/A <br>**Capacity admin override**: N/A |
-| Live connect PBI | **Supported**: No <br>**Minimum refresh interval**: N/A <br>**Capacity admin override**: N/A | **Supported**: No <br>**Minimum refresh interval**: N/A <br>**Capacity admin override**: N/A |
+| Storage mode                                  | Dedicated capacity                                                                                     | Shared capacity                                                                                       |
+|-----------------------------------------------|--------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| DirectQuery                                   | **FI supported**: Yes <br>**CD supported**: Yes <br>**Minimum**: 1 second <br>**Admin override**: Yes  | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No |
+| Import                                        | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A         | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A        |
+| Mixed mode (DirectQuery + other data sources) | **FI supported**: Yes <br>**CD supported**: Yes <br>**Minimum**: 1 second <br>**Admin override**: Yes  | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No |
+| Analysis Services (Azure and On Premises)     | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: Yes | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No |
+| Power BI datasets (with DirectQuery source)   | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 1 second <br>**Admin override**: Yes  | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No |
+| Power BI Push datasets                        | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: Yes | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No        |
 
-> [!NOTE]
-> When you publish your automatic page refresh-enabled report from Power BI Desktop to the service, you'll have to provide the credentials for the DirectQuery data source on the dataset settings menu.
+*Table legend:*
+1. *FI: Fixed interval*
+2. *CD: Change detection*
+
+> [!WARNING]
+> We have a known issue when connected from Power BI Desktop to Analysis Services or Power BI datasets and the refresh interval is 30 minutes or more. Visuals in a report page might show an error after 30 minutes.
 
 ## Considerations and limitations
 
 There are a few things to keep in mind when you use automatic page refresh in Power BI Desktop or in the Power BI service:
 
-* Import, LiveConnect, and Push storage modes aren't supported for automatic page refresh.  
+* Import storage mode is not supported for automatic page refresh.  
 * Composite models that have at least one DirectQuery data source are supported.
-* Power BI Desktop has no restrictions for refresh intervals. The interval can be as frequent as every second. When reports are published to the Power BI service, certain restrictions do apply, as described [earlier](#restrictions-on-refresh-intervals) in this article.
+* You can only have one change detection measure per dataset.
+* There can only be a maximum of 10 models with change detection measure in a Power BI tenant.
 
 ### Performance diagnostics
 
@@ -176,13 +241,14 @@ If you notice that your capacity is overloaded with low-priority queries, there 
 **I'm a report author. I defined my report refresh interval to one second on Power BI Desktop, but, after publishing, my report isn't refreshing in the service.**
 
 * Ensure that automatic page refresh is turned on for the page. Because this setting is per page, you need to ensure it's turned on for each page in the report you want to refresh.
-* Check whether you uploaded to a workspace with an attached Premium capacity. If you haven't, your refresh interval will be locked at 30 minutes.
-* If your report is on a Premium workspace, ask your admin if this feature is enabled for the attached capacity. Also, ensure that the minimum refresh interval for the capacity is lower than or the same as the interval for your report.
+* Check whether you uploaded to a workspace with an attached Premium capacity. If you haven't, your refresh interval will be locked at 30 minutes for fixed interval and it will not be available for change detection.
+* If your report is on a Premium workspace, ask your admin if this feature is enabled for the attached capacity. Also, ensure that the minimum refresh interval for the capacity is equal or lower than the interval for your report. This applies separately for both fixed interval and change detection
 
 **I'm a capacity admin. I changed the settings for my automatic page refresh interval, but the changes aren't reflected. In other words, reports are still refreshing at a rate they shouldn't be, or not refreshing even though I turned on automatic page refresh.**
 
 * It takes up to 5 minutes for automatic page refresh setting changes made in the capacity admin UI to propagate to reports.
 * In addition to turning on automatic page refresh for the capacity, you also need to turn it on for the pages of a report where you want to enable it.
+* Both refresh types are managed separately so make sure that the type of refresh you are enabling is turned on.
 
 **My report is operating in mixed mode. (Mixed mode means the report has a DirectQuery connection and an Import data source.) Some visuals aren't refreshing.**
 
@@ -203,6 +269,17 @@ If you notice that your capacity is overloaded with low-priority queries, there 
 
 * No. All automatic page refresh queries bypass any cached data.
 
+**My change detection measure is not triggering any updates**
+
+* Ensure that change detection is turned on for the page. Because this setting is per page, you need to ensure it's turned on for each page in the report you want to refresh.
+* Check whether you uploaded to a workspace with an attached Premium capacity. If you haven't, change detection will not work.
+* If your report is on a Premium workspace, ask your admin if this feature is enabled for the attached capacity. Also, ensure that the minimum execution interval for the capacity is equal or lower than the interval for your report.
+* I you have checked for all of the items mentioned before, check in Power BI Desktop or in edit mode if the measure is changing at all. To do this, drag it into the canvas and check if the value changes. If it does not, the measure might not be a good choice to poll for data source changes.
+
+**When connected to analysis services I cannot see the APR toggle**
+
+* Make sure your Analysis Services model is in [Direct Query mode](/analysis-services/tabular-models/directquery-mode-ssas-tabular).
+
 
 ## Next steps
 
@@ -215,4 +292,4 @@ For more information, see these articles:
 * [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Shape and combine data in Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
 * [Connect to Excel workbooks in Power BI Desktop](../connect-data/desktop-connect-excel.md)   
-* [Enter data directly into Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)   
+* [Enter data directly into Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)

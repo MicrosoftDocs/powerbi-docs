@@ -2,19 +2,17 @@
 title: Get data from files for Power BI
 description: Learn how to get data from Excel, Power BI Desktop, and CSV files into Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/08/2019
-ms.author: davidi
-
 LocalizationGroup: Data from files
 ---
 # Get data from files for Power BI
-![](media/service-get-data-from-files/file_icons.png)
+![Excel, Power B I Desktop, and C S V icon](media/service-get-data-from-files/file_icons.png)
 
 In Power BI, you can connect to or import data and reports from three types of files.
 
@@ -39,7 +37,7 @@ We can even take it one step further. A fuel tank in a car has to be filled with
 ## Where your file is saved makes a difference
 **Local** - If you save your file to a local drive on your computer or another location in your organization, from Power BI, you can *import* your file into Power BI. Your file will actually remain on your local drive, so the whole file isn’t really imported into Power BI. What really happens is a new dataset is created in your Power BI site and data, and in some cases the data model, are loaded into the dataset. If your file has any reports, those will appear in your Power BI site under Reports.
 
-**OneDrive - Business** – If you have OneDrive for Business and you sign into it with the same account you sign into Power BI with, this is by-far the most effective way to keep your work in Excel Power BI Desktop, or a .CSV file and your dataset, reports, and dashboards in Power BI in-sync. Because both Power BI and OneDrive are in the cloud, Power BI connects to your file on OneDrive about every hour. If any changes are found, your dataset, reports, and dashboards are automatically updated in Power BI.
+**OneDrive - Business** – If you have OneDrive for Business and you sign into it with the same account you sign into Power BI with, this is by-far the most effective way to keep your work in Excel, Power BI Desktop, or a .CSV file and your dataset, reports, and dashboards in Power BI in-sync. Because both Power BI and OneDrive are in the cloud, Power BI connects to your file on OneDrive about every hour. If any changes are found, your dataset, reports, and dashboards are automatically updated in Power BI.
 
 **OneDrive - Personal** – If you save your files to your own OneDrive account, you’ll get many of the same benefits as you would with OneDrive for Business. The biggest difference is when you first connect to your file (using Get Data > Files > OneDrive – Personal) you’ll need to sign in to your OneDrive with your Microsoft account, which is usually different from what you use to sign in to Power BI. When signing in with your OneDrive with your Microsoft account, be sure to select the Keep me signed in option. This way, Power BI will be able to connect to your file about every hour and make sure your dataset in Power BI is in-sync.
 

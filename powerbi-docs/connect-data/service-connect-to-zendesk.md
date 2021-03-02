@@ -2,14 +2,12 @@
 title: Connect to Zendesk with Power BI
 description: Zendesk for Power BI
 author: paulinbar
+ms.author: painbar
 ms.reviewer: sarinas
-
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/04/2020
-ms.author: painbar
-
 LocalizationGroup: Connect to services
 ---
 # Connect to Zendesk with Power BI
@@ -24,6 +22,9 @@ After you've installed the template app, you can change the dashboard and report
 
 >[!NOTE]
 >You need a Zendesk Admin account to connect. More details on [requirements](#system-requirements) below.
+
+>[!WARNING]
+>Before Oct 15, 2019, the Zendesk Support Search API allowed for a total of 200,000 results to be received through pagination of large queries. To align search usage with its intended scope, Zendesk now limits the maximum number of results returned to 1,000 total results, with a maximum of 100 results per page. However, the current Power BI Zendesk connector can still create API calls that exceed these new limits, resulting in possibly misleading results.
 
 ## How to connect
 

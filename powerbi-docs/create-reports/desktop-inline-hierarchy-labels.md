@@ -2,14 +2,12 @@
 title: Use inline hierarchy labels in Power BI Desktop
 description: Use inline hierarchy labels in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/08/2019
-ms.author: davidi
-
 LocalizationGroup: Create reports
 ---
 # Use inline hierarchy labels in Power BI Desktop

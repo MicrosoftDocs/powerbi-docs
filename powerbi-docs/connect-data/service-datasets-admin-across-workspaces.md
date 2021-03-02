@@ -1,14 +1,13 @@
 ---
 title: Control the use of datasets across workspaces - Power BI
 description: Learn how to restrict the flow of information in the Power BI tenant.
-author: maggiesMSFT
+author: paulinbar
+ms.author: painbar
 ms.reviewer: kayu
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 04/30/2020
-ms.author: maggies
-
 LocalizationGroup: Share your work
 ---
 
@@ -28,9 +27,9 @@ If you turn off this setting, here are the effects on report creators:
 
 ## Provide a link for the certification process
 
-As a tenant admin, you can provide a URL for the **Learn more** link on the **Endorsement** setting page.  This link can go to documentation about your certification process. If you don't provide a destination for the **Learn more** link, by default it points to the [dataset certification](service-datasets-certify.md) article.
+As a Power BI admin, you can provide a URL for the **Learn more** link on the **Endorsement** setting page.  See [Enable content certification](../admin/service-admin-setup-certification.md) for detail. This link can go to documentation about your certification process. If you don't provide a destination for the **Learn more** link, by default it points to the [Endorse your content](../collaborate-share/service-endorse-content.md) article.
 
-![Dataset certification Learn more](media/service-datasets-certify-promote/power-bi-dataset-learn-more-certification.png)
+![Dataset certification Learn more](media/service-datasets-admin-across-workspaces/service-admin-certification-setup-dialog.png)
 
 ## Next steps
 

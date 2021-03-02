@@ -2,24 +2,23 @@
 title: Intro to organizational content packs in Power BI
 description: Read about packaging up your dashboards, reports, Excel workbooks, and datasets into organizational content packs you can share with your coworkers.
 author: maggiesMSFT
-ms.reviewer: lukaszp
-
-ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: how-to
-ms.date: 10/23/2019
 ms.author: maggies
-
+ms.reviewer: lukaszp
+ms.service: powerbi
+ms.subservice: pbi-collaborate-share
+ms.topic: how-to
+ms.date: 01/12/2021
 LocalizationGroup: Share your work
 ---
 # Intro to organizational content packs in Power BI
+
 > [!NOTE]
-> You can't create organizational content packs or install them in the new workspace experiences. Now is a good time to upgrade your content packs to apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
+> Organizational content packs are being deprecated. Now is a good time to upgrade your content packs to apps, if you haven't started yet. See the workspace upgrade roadmap section of this blog post [Announcing Power BI admins can upgrade classic workspaces](https://powerbi.microsoft.com/blog/announcing-power-bi-admins-can-upgrade-classic-workspaces-and-roadmap-update/) for the timeline.
 > 
 
 Do you regularly distribute reports by email to your team? Try this instead: Package up your dashboards, reports, Excel workbooks, and datasets and publish them to your team as an *organizational content pack*. Content packs you create are easy for your team to find &#151; they are all in AppSource. Because they're part of Power BI, they leverage all the features of Power BI, including interactive data exploration, new visuals, Q&A, integration with other data sources, data refresh, and more.
 
-![](media/service-organizational-content-pack-introduction/power-bi-org-content-packs.png)
+![Screenshot of a dashboard that shows organizational content packs.](media/service-organizational-content-pack-introduction/power-bi-org-content-packs.png)
 
 Creating content packs is different from sharing dashboards or collaborating on them in a workspace. Read [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md) to decide on the best option for your situation. 
 

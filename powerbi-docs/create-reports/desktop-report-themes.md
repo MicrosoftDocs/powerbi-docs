@@ -2,15 +2,13 @@
 title: Use report themes in Power BI Desktop
 description: Learn how to use a custom color palette, and apply it to an entire report in Power BI Desktop.
 author: davidiseminger
-ms.reviewer: ''
-
-ms.custom: contperfq4
-ms.service: powerbi
-ms.subservice: powerbi-desktop
-ms.topic: how-to
-ms.date: 06/01/2020
 ms.author: davidi
-
+ms.reviewer: ''
+ms.custom: contperf-fy20q4
+ms.service: powerbi
+ms.subservice: pbi-reports-dashboards
+ms.topic: how-to
+ms.date: 12/14/2020
 LocalizationGroup: Create reports
 ---
 # Use report themes in Power BI Desktop
@@ -40,17 +38,20 @@ To apply a report theme to a Power BI Desktop report, you can select from the fo
 
 We'll take a look at each of these options in turn.
 
+> [!NOTE]
+> Themes can only be applied when using Power BI Desktop. You cannot apply themes to existing reports within the Power BI service. 
+
 ### Built-in report themes
 
 To select from the available built-in report themes:
 
 1. Select the **Themes** drop-down arrow button **Switch Theme** from the **View** ribbon.
 
-   ![Select a report theme](media/desktop-report-themes/report-themes-02.png)
+   ![Screenshot shows the View ribbon selected, which provides several themes.](media/desktop-report-themes/report-themes-02.png)
 
 2. Select from among the included themes from the drop-down menu that appears.
 
-   ![Select a report theme](media/desktop-report-themes/report-themes-03.png)
+   ![Screenshot shows Power B I themes expanded for you to select.](media/desktop-report-themes/report-themes-03.png)
 
    Your report theme is now applied to the report.
 
@@ -164,7 +165,7 @@ This report theme JSON file has the following lines:
 
 - **name**: The report theme name. This field is the only required field.
 - **dataColors**: The list of color hexadecimal codes to use for data in Power BI Desktop visuals. This list can have as many or as few colors as you want.
-- **background**, **firstLevelElements**, and **tableAccent** (etc.): Color classes. Color classes enable you to set many structural colors in your report at once.
+- **background**, **foreground**, and **tableAccent** (etc.): Color classes. Color classes enable you to set many structural colors in your report at once.
 
 You can use this JSON file as a basis to create your own custom report theme file to import. If you want to adjust only the basic colors of your report, change the name and hex codes in the file.
 
@@ -194,6 +195,15 @@ To view the available colors in a report theme:
 In our example, after you apply the multitude of green and brown colors from the St. Patrick's Day report theme, view the theme colors. See all that green? That's because those colors were part of the report theme that we imported and applied.
 
 The colors in the color palette are relative to the current theme. For example, suppose you select the third color of the top row for a data point. Later, if you change to a different theme, that data point's color updates automatically to the third color of the top row in the new theme, just as you'd see when changing themes in Microsoft Office.
+
+Setting a report themes changes the default colors used in visuals throughout the report. Power BI maintains a list consisting of hundreds of colors, to ensure visuals have plenty of unique colors to display in a report. When Power BI assigns colors to a visual's series, colors are selected on a first-come, first-served basis as series colors are assigned. When you import a theme, the mapping of colors for data series is reset. 
+
+Power BI tracks the color for a dynamic series, and uses the same color for the value in other visuals. In a *dynamic series*, the number of series presented in visuals may change based on measures, values, or other aspects. For example, if you show *Profit by Region* in a report, the number of sales regions you have might be five, or it might be nine. The number of regions is dynamic, so it's considered a dynamic series. 
+
+Conversely, for *static series*, the number of series is known. For example, *Profit* and *Revenue* revenue are static series. In static series, Power BI assigns colors by index within the theme palettes. You can override the default color assignment by selecting a color from the formatting pane under **Data colors**. You may have to change your slicer selections to see all potential series values, and set their colors as well. If you explicitly set a color explicitly a single visual using the **Properties** pane, the imported theme does not apply to any of those explicitly defined colors. 
+
+To allow the theme to apply to those explicitly selected colors, use **Revert to default** in the **Data Colors** section the visual to which the color has been explicitly set, to undo the explicit color application and allow the theme to apply.
+
 
 ### Situations when report theme colors won't stick to your reports
 
@@ -584,7 +594,9 @@ Booleans are either true or false. Strings must be in double quotes, as in "this
 
 Colors use the following format, where your custom hexadecimal code replaces "FFFFFF" is in the following example:
 
-    { "solid": { "color": "#FFFFFF" } }
+```json
+{ "solid": { "color": "#FFFFFF" } }
+```
 
 An enumeration, most commonly used for drop-down formatting options, means it can be set to any of the options seen in the pane, for example "RightCenter" for legend position or "Data value, percent of total" for pie data label. The enumeration options are shown below the property list.
 

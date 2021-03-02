@@ -2,14 +2,15 @@
 title: Export data from a Power BI visualization
 description: Export data from a report visualization and dashboard visualization and view it in Excel.
 author: mihart
+ms.author: mihart
 manager: kvivek
 ms.reviewer: 'tessa'
 featuredvideoid: jtlLGRKBvXY
+ms.custom: jtlLGRKBvXY
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 05/20/2020
-ms.author: mihart
+ms.date: 12/21/2020
 LocalizationGroup: Visualizations
 ---
 
@@ -100,7 +101,7 @@ Select the option for **Summarized data** if you want to export data for what yo
 
     ![Screenshot of the Export data screenshot with the Summarized data, xlsx, and Export options called out.](media/power-bi-visualization-export-data/power-bi-export-data5.png)
 
-1. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel.
+1. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel. If you're using the Power BI app in Microsoft Teams, you may not receive the same prompts. Your exported file is saved in your local Downloads folder. 
 
     ![Screenshot of the Excel output.](media/power-bi-visualization-export-data/power-bi-export-data9.png)
 
@@ -139,7 +140,7 @@ When you select **Export**, Power BI exports the data to an *.xlsx* file and you
 
     ![Screenshot of the Export data screenshot with the underlying data called out.](media/power-bi-visualization-export-data/power-bi-underlying.png)
 
-1. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel.
+1. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel.  If you're using the Power BI app in Microsoft Teams, you may not receive the same prompts. Your exported file is saved in your local Downloads folder. 
 
     ![Screenshot of the .xlsx file with the exported data displayed.](media/power-bi-visualization-export-data/power-bi-excel.png)
     
@@ -223,7 +224,7 @@ It's important to note that if the Power BI admin portal settings conflict with 
 ## Limitations and considerations
 These limitations and considerations apply to Power BI Desktop and the Power BI service, including Power BI Pro and Premium.
 
-- To export the data from a visual, you need to have [Build permission for the underlying dataset](https://docs.microsoft.com/power-bi/service-datasets-build-permissions).
+- To export the data from a visual, you need to have [Build permission for the underlying dataset](../connect-data/service-datasets-build-permissions.md).
 
 -  The maximum number of rows that **Power BI Desktop** and **Power BI service** can export from an **import mode report** to a *.csv* file is 30,000.
 
@@ -263,7 +264,9 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
   
   1. Go to the local folder where the file is stored and select the *.csv*.
 
-- When exporting to *.csv* certain characters will be escaped with a leading **'**.
+- When exporting to *.csv*, certain characters will be escaped with a leading **'** to prevent script execution when opened in Excel. This happens when:
+  - The column is defined as type "text" in the data model, **_and_**
+  - The first character of the text is one of the following: **=, @, +, -**
 
 - Power BI admins can disable the export of data.
 

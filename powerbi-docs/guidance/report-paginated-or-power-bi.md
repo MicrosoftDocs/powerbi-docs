@@ -2,13 +2,12 @@
 title: When to use paginated reports in Power BI
 description: Guidance for when to use Power BI paginated reports.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: report-builder
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 01/04/2020
-ms.author: v-pemyer
 ---
 
 # When to use paginated reports in Power BI
@@ -16,7 +15,7 @@ ms.author: v-pemyer
 This article targets you as a report author who designs reports for Power BI. It provides suggestions to help you choose when to develop [Power BI paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md).
 
 > [!NOTE]
-> Publishing Power BI paginated reports requires a Power BI Premium subscription. Reports will render only when they're in a workspace on a dedicated capacity that has [the Paginated Reports workload enabled](../admin/service-admin-premium-workloads.md#paginated-reports).
+> Publishing Power BI paginated reports requires a Power BI Premium subscription. Reports will render only when they're in a workspace on a capacity that has [the Paginated Reports workload enabled](../admin/service-admin-premium-workloads.md#paginated-reports).
 
 Power BI paginated reports are optimized for **printing**, or **PDF generation**. They also provide you with the ability to produce highly formatted, pixel-perfect layouts. So, paginated reports are ideal for operational reports, like sales invoices.
 

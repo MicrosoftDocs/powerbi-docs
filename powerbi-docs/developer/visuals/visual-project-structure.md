@@ -1,12 +1,12 @@
 ---
-title: Power BI visual project structure
-description: This article describes the folder and file structure of a Power BI visual project
+title: Power BI visual project structure in Power BI embedded analytics for better embedded BI insights
+description: This article describes the folder and file structure of a Power BI visual project. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
-ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
+ms.topic: conceptual
 ms.date: 01/12/2020
 ---
 
@@ -169,4 +169,4 @@ The comments in the following code caption from the `pbiviz.json` file, describe
 
 * To understand the interactions between a visual, a user, and Power BI, see [Power BI visual concept](./power-bi-visuals-concept.md).
 
-* Start developing your own Power BI visuals from scratch, using the [step by step guide](./custom-visual-develop-tutorial.md).
+* Start developing your own Power BI visuals from scratch, using the [step by step guide](./develop-circle-card.md).

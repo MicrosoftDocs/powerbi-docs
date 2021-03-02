@@ -2,14 +2,12 @@
 title: Using templates in Power BI Desktop
 description: Create and share templates in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 08/16/2019
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Create report templates for Power BI Desktop
@@ -66,7 +64,7 @@ That's it. Creating and using report templates in Power BI Desktop is easy, enab
 
 ## Next steps
 You might also be interested in learning about **Query Parameters**:
-* [Using Query Parameters in Power BI Desktop?](https://docs.microsoft.com/power-query/power-query-query-parameters)
+* [Using Query Parameters in Power BI Desktop?](/power-query/power-query-query-parameters)
 
 In addition, there are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
@@ -74,4 +72,4 @@ In addition, there are all sorts of things you can do with Power BI Desktop. For
 * [Query Overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
 * [Data Types in Power BI Desktop](../connect-data/desktop-data-types.md)
 * [Shape and Combine Data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Common Query Tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)    
+* [Common Query Tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)

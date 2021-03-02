@@ -2,12 +2,12 @@
 title: Treemaps in Power BI
 description: 'Treemaps in Power BI'
 author: mihart
-ms.reviewer: ''
+ms.author: mihart
+ms.reviewer: 'mihart'
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 05/05/2020
-ms.author: rien
 LocalizationGroup: Visualizations
 ---
 

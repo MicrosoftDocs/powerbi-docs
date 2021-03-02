@@ -1,15 +1,13 @@
 ---
 title: Connect to Azure Search with Power BI
 description: Azure Search for Power BI
-author: SarinaJoan
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maggiesMSFT
-
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 08/29/2019
-ms.author: sarinas
-
 LocalizationGroup: Connect to services
 ---
 # Connect to Azure Search with Power BI
@@ -22,22 +20,22 @@ Connect to the [Azure Search content pack](https://app.powerbi.com/getdata/servi
 ## How to connect
 1. Select **Get Data** at the bottom of the nav pane.
    
-   ![](media/service-connect-to-azure-search/pbi_getdata.png) 
+   ![Screenshot of the Get Data in Power B I Desktop, showing the button in the navigator pane.](media/service-connect-to-azure-search/pbi_getdata.png) 
 2. In the **Services** box, select **Get**.
    
-   ![](media/service-connect-to-azure-search/pbi_getservices.png) 
+   ![Screenshot of the Services dialog, showing the Get button.](media/service-connect-to-azure-search/pbi_getservices.png) 
 3. Select **Azure Search** \> **Get**.
    
-   ![](media/service-connect-to-azure-search/azuresearch.png)
+   ![Screenshot of the Azure Services dialog, showing the Get link.](media/service-connect-to-azure-search/azuresearch.png)
 4. Provide the name of the table storage account your Azure Search analysis is stored.
    
-   ![](media/service-connect-to-azure-search/params.png)
+   ![Screenshot of the Connect Azure Search dialog, showing the Azure storage account name field.](media/service-connect-to-azure-search/params.png)
 5. Select **Key** as the Authentication Mechanism and provide your storage account key. Click **Sign In** and to begin the loading process.
    
-   ![](media/service-connect-to-azure-search/creds.png)
+   ![Screenshot of the Connect Azure Search dialog, showing Key is entered in the Authentication method field.](media/service-connect-to-azure-search/creds.png)
 6. Once the loading is complete, a new dashboard, report and model will appear in the nav pane. Select the dashboard to view your imported data.
    
-    ![](media/service-connect-to-azure-search/dashboard2.png)
+    ![Screenshot of the navigation pane, showing the dashboard, report, and model.](media/service-connect-to-azure-search/dashboard2.png)
 
 **What now?**
 

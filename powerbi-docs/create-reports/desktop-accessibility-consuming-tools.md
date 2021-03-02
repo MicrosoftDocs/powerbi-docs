@@ -2,14 +2,12 @@
 title: Consuming reports in Power BI with accessibility tools
 description: Tools that make consuming reports in Power BI accessible
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/28/2019
-ms.author: davidi
-
 LocalizationGroup: Create reports
 ---
 # Consume Power BI reports by using accessibility features
@@ -26,7 +24,7 @@ The following sections describe the accessibility tools available for consuming 
 
 ## Keyboard navigation
 
-When you launch Power BI Desktop or the Power BI service, as soon as you press **Tab**, a tooltip appears in the upper-right hang corner. The link titled **Tips for using Power BI with a screen reader** directs you to this article, providing information on how to consume a report with accessibility tools. Clicking on the **Skip to main content** link takes you to the report canvas.
+When you launch Power BI Desktop or the Power BI service, as soon as you press **Tab**, a tooltip appears in the upper-right hand corner. The link titled **Tips for using Power BI with a screen reader** directs you to this article, providing information on how to consume a report with accessibility tools. Clicking on the **Skip to main content** link takes you to the report canvas.
 
 ![Type Tab to see accessibility tips](media/desktop-accessibility/accessibility-consuming-tools-02.png)
 
@@ -110,5 +108,3 @@ The collection of articles for Power BI accessibility are the following:
 * [Creating Power BI reports with accessibility tools](desktop-accessibility-creating-tools.md)
 * [Accessibility keyboard shortcuts for Power BI reports](desktop-accessibility-keyboard-shortcuts.md)
 * [Report accessibility checklist](desktop-accessibility-creating-reports.md#report-accessibility-checklist)
-
-

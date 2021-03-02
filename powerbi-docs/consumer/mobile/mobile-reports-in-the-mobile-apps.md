@@ -2,14 +2,12 @@
 title: Explore reports in the Power BI mobile apps
 description: 'Learn about viewing and interacting with reports in the Power BI mobile apps on your phone or tablet. You create reports in the Power BI service or Power BI Desktop, and then interact with them in the mobile apps.'
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 05/05/2020
-ms.author: painbar
-
+ms.date: 12/17/2020
 ---
 # Explore reports in the Power BI mobile apps
 Applies to:
@@ -19,7 +17,7 @@ Applies to:
 | iPhones |iPads |Android phones |Android tablets |Windows 10 devices |
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 A Power BI report is an interactive view of your data, with visuals that represent different findings and insights from that data. Viewing reports in the Power BI mobile apps is the third step in a three-step process:
 
@@ -49,6 +47,9 @@ To get to a report from a dashboard, tap **More options** (...) in the upper-rig
   
   Not all tiles can be opened as reports. For example, tiles that are created when you ask a question in the Q&A box don't open reports when you tap them.
   
+## Zoom in on your data   
+Use the pinch gesture to zoom into your reports to examine them in greater detail. Unpinch to zoom back out again. Pinch-to-zoom is supported on Android and iOS phones and tablets.
+
 ## Interact with reports
 After you have a report open in the app, you can start working with it. You can do many things with your report and its data. In the report footer, you'll find actions that you can take on the report. By tapping and long tapping on the data shown in the report, you can also slice and dice the data.
 
@@ -127,13 +128,13 @@ For example:
 
 **Bookmarks** is present only if [bookmarks](mobile-reports-in-the-mobile-apps.md#bookmarks) have been set in the report. Both personal bookmarks that you can define in Power BI service and bookmarks defined by the report creator are shown. If one of the bookmarks has been defined as the default bookmark, the report will open to that view when it loads.
 
-**Annotate and share** might be turned off if there's an [Intune protection policy](https://docs.microsoft.com/intune/app-protection-policies) in your organization that prohibits sharing from a Power BI mobile app.
+**Annotate and share** might be turned off if there's an [Intune protection policy](/intune/app-protection-policies) in your organization that prohibits sharing from a Power BI mobile app.
 
 **Invite** is enabled only if you have permission to share the report with others. You'll have permission only if you're the owner of the report or if the owner has given you reshare permission.
 
-**Filter by current location** is enabled if the report author categorized the report with geographical data. For more information, read about [identifying geographical data in a report](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
+**Filter by current location** is enabled if the report author categorized the report with geographical data. For more information, read about [identifying geographical data in a report](../../transform-model/desktop-mobile-geofiltering.md).
 
-**Scan to filter the report by barcode** is enabled only if the dataset in your report is tagged as **Barcode**. For more information, read about [tagging barcodes in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes).
+**Scan to filter the report by barcode** is enabled only if the dataset in your report is tagged as **Barcode**. For more information, read about [tagging barcodes in Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md).
 
 ### Bookmarks
 
@@ -147,8 +148,50 @@ When a bookmark view of a report is open, the name of the bookmark appears at th
 
 ![bookmark view](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
 
-[Learn more about bookmarks in the Power BI service](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks).
+[Learn more about bookmarks in the Power BI service](../end-user-bookmarks.md).
 
+## Investigate anomalies in time series data
+
+[Anomaly detection](https://powerbi.microsoft.com/blog/anomaly-detection-preview/) is a Power BI feature that automatically detects anomalies (i.e. values that lay outside expected ranges) on line charts with time series data. In addition, it provides possible explanations, ranked according their explanatory strength, for the cause of the anomalous values. Anomaly detection is available if it has been enabled on the chart by the report creator. 
+
+When you view a report that has anomaly detection enabled on a chart with time series data, you’ll see the the anomalies indicated on chart, just like you would in the Power BI service and in Power BI Desktop. 
+
+![Screenshot of line chart that has anomaly indications.](media/mobile-reports-in-the-mobile-apps/mobile-detected-anomalies.png)
+
+To see additional information and the explanations, you need to open the Anomalies panel. There are a number of ways to do this:
+* Tap the anomaly indication on the chart. 
+* Tap **More options (…)** and choose **Show anomalies** from the menu that appears.    
+* Tap the data point to display a tooltip, and choose **Anomalies**.
+
+The image below illustrates the three ways of opening the Anomalies panel.
+
+![Screenshots showing how to open the anomalies panel.](media/mobile-reports-in-the-mobile-apps/mobile-opening-anomalies-panel.png)
+
+In the anomalies panel you’ll see a natural language explanation of the anomaly detected, as well as associated factors sorted by their explanatory strength. Swipe from right to left to view all relevant factors and their strengths.
+
+![Screenshot showing right to left swipe to view anomaly explanations.](media/mobile-reports-in-the-mobile-apps/mobile-swipe-to-see-explanations.png)
+
+While the Anomalies panel is visible, the mobile report is still scrollable under it, so you can continue interacting with your report, slicing and dicing to better understand anomalies in your data. For each interaction, Power BI re-runs anomaly detection to detect anomalies in the data in scope. 
+
+## Refresh your data
+
+If you're not sure you’re viewing the most up-to-date data, you can pull new data down to your report from the Power BI service:
+
+* On iOS devices and Android tablets, pull down slightly from top to bottom on the report page.
+* On Android phones, you can use either the pull-down action or a refresh button, depending on how you've set it up in the [interaction settings](mobile-app-interaction-settings.md).
+* On Windows devices, use the refresh button in the upper right of the display.
+
+    Report pages that have [auto page refresh](../../create-reports/desktop-automatic-page-refresh.md) will automatically refresh as configured (Windows app only).
+
+>[!NOTE]
+>The above refresh methods do not refresh the underlying dataset. Rather, they update the report you're viewing on the mobile app with any new data that might exist in Power BI.
+
+### How do I know when my report was last refreshed?
+
+To find out when your report was last refreshed, tap the report header. The navigation tree to the report will be displayed, including the date and time of the last refresh. 
+
+![Screenshot of report refresh info on mobile-app.](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-refresh-info.png)
+ 
 ## Configure your experience with reports
 The Power BI mobile app has a number of settings that enable you to control your report experience. Currently you can configure
 * **Interaction with report visuals**: You can choose to use either single-tap or double-tap interaction.

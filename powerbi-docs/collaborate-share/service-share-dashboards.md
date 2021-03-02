@@ -2,38 +2,33 @@
 title: Share Power BI dashboards and reports with coworkers and others
 description: How to share Power BI dashboards and reports with colleagues in and out of your organization, and what you need to know about sharing.
 author: maggiesMSFT
-ms.reviewer: lukaszp
-featuredvideoid: 0tUwn8DHo3s
-
-ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: how-to
-ms.date: 11/26/2019
 ms.author: maggies
-
+ms.reviewer: lukaszp
+ms.custom: contperf-fy20q4
+ms.service: powerbi
+ms.subservice: pbi-collaborate-share
+ms.topic: how-to
+ms.date: 01/04/2021
 LocalizationGroup: Share your work
 ---
 # Share Power BI dashboards and reports with coworkers and others
-*Sharing* is a good way to give a few people access to your dashboards and reports. Power BI also offers [several other ways to collaborate and distribute dashboards and reports](service-how-to-collaborate-distribute-dashboards-reports.md).
-
-![Share icon in a list of dashboards](media/service-share-dashboards/power-bi-share-new-look.png)
-
-With sharing, whether you share content inside or outside your organization, you need a [Power BI Pro license](../fundamentals/service-features-license-type.md). Your recipients also need Power BI Pro licenses, unless the content is in a [Premium capacity](../admin/service-premium-what-is.md). 
-
-You can share dashboards and reports from most places in the Power BI service: Favorites, Recent, My Workspace, and Shared with me, if the owner allows it. You can share from other workspaces, too, if you have the [Admin, Member, or Contributor role](service-new-workspaces.md#roles-in-the-new-workspaces) in the workspace. 
+*Sharing* is the easiest way to give people access to your dashboards and reports in the Power BI service. You can share with people inside or outside your organization.
 
 When you share a dashboard or report, the people you share it with can view it and interact with it, but can't edit it. They see the same data that you see in the dashboard and reports and get access to the entire underlying dataset unless row-level security (RLS) is applied to the underlying dataset.  The coworkers you share with can also share with their coworkers, if you allow them to. The people outside your organization can view and interact with the dashboard or report, but can't share it. 
 
+![Share icon for a report](media/service-share-dashboards/power-bi-share-new-look.png)
+
+You can share dashboards and reports from many places in the Power BI service: Favorites, Recent, My Workspace. You can share from other workspaces, too, if you have the [Admin, Member, or Contributor role](service-new-workspaces.md#roles-in-the-new-workspaces) in the workspace. And you can share dashboards and reports in Shared with me, if the owner allows it. 
+
+The Power BI service offers other ways to collaborate and distribute dashboards and reports, too. Read [Ways to collaborate and share in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md) to see which way works best for your circumstances. 
+
+With sharing, whether you share content inside or outside your organization, you need a [Power BI Pro license](../fundamentals/service-features-license-type.md). Your recipients also need Power BI Pro licenses, unless the content is in a [Premium capacity](../admin/service-premium-what-is.md). 
+
 You can't *share* directly from Power BI Desktop. You [publish reports from Power BI Desktop](../create-reports/desktop-upload-desktop-files.md) to the Power BI service. However, you can [share a dashboard from the Power BI mobile apps](../consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md).  
-
-## Video: Share a dashboard
-Watch Amanda share the dashboard with colleagues inside and outside Amanda's company. Then follow the step-by-step instructions below the video to try it out yourself.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0tUwn8DHo3s?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## Share a dashboard or report
 
-1. In a list of dashboards or reports, or in an open dashboard or report, select **Share** ![Share icon](media/service-share-dashboards/power-bi-share-icon.png).
+1. In a list of dashboards or reports, or in an open dashboard or report, select **Share** :::image type="icon" source="../media/power-bi-share-icon.png" border="false":::.
 
 2. In the top box, enter the full email addresses for individuals, distribution groups, or security groups. You can't share with dynamic distribution lists. 
    
@@ -66,7 +61,7 @@ Watch Amanda share the dashboard with colleagues inside and outside Amanda's com
 ## See who has access to a dashboard or report
 Sometimes you need to see the people you've shared with, and see who they've shared it with.
 
-1. In the list of dashboards and reports, or in the dashboard or report itself, select **Share** ![Share icon](media/service-share-dashboards/power-bi-share-icon.png). 
+1. In the list of dashboards and reports, or in the dashboard or report itself, select **Share** :::image type="icon" source="../media/power-bi-share-icon.png" border="false":::. 
 2. In the **Share dashboard** or **Share report** dialog box, select **Access**.
    
     ![Share dashboard dialog box, Access tab](media/service-share-dashboards/power-bi-share-dialog-access.png)
@@ -94,6 +89,14 @@ If you send a link from a Power BI mobile app to people outside your organizatio
 
 Your Power BI admin can allow external guest users to edit and manage content in your organization. If so, your external users won't have that consumption-only experience. They can edit and manage content within your organization. Learn more about [distributing Power BI content to external guest users with Azure AD B2B](../admin/service-admin-azure-ad-b2b.md).
 
+## Share with more than 100 separate users
+
+At most, you can share with 100 users or groups in a single share action. However, you can give more than 500 users access to an item. Here are some suggestions:
+
+- Share multiple times by specifying the users individually.
+- Share with a user group that contains all the users. 
+- Create the report or dashboard in a workspace, then create an app from the workspace. You can share the app with many more people. Read more about [publishing apps in Power BI](service-create-distribute-apps.md).
+
 ## Stop or change sharing
 Only the dashboard or report owner can turn resharing on and off.
 
@@ -101,7 +104,7 @@ Only the dashboard or report owner can turn resharing on and off.
 * Clear the **Allow recipients to share your dashboard (or report)** check box at the bottom of the invitation before you send it.
 
 ### If you've already shared the dashboard or report
-1. In the list of dashboards and reports, or in the dashboard or report itself, select **Share** ![Share icon](media/service-share-dashboards/power-bi-share-icon.png). 
+1. In the list of dashboards and reports, or in the dashboard or report itself, select **Share** :::image type="icon" source="../media/power-bi-share-icon.png" border="false":::. 
 2. In the **Share dashboard** or **Share report** dialog box, select **Access**.
    
     ![Share dashboard dialog box, Access tab](media/service-share-dashboards/power-bi-share-dialog-access.png)
@@ -128,50 +131,10 @@ Things to keep in mind about sharing dashboards and reports:
 * If your coworkers already have access to a specific dashboard or report, you can send a direct link by copying the URL when you're on the dashboard or report. For example: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`.
 * Likewise, if your coworkers already have access to a specific dashboard, you can [send a direct link to the underlying report](service-share-reports.md). 
 
-### Share with more than 100 separate users
-
-At most, you can share with 100 users or groups in a single share action. However, you can give more than 500 users access to an item. Here are some suggestions:
-
-- Share multiple times by specifying the users individually.
-- Share with a user group that contains all the users. 
-- Create the report or dashboard in a workspace, then create an app from the workspace. You can share the app with many more people. Read more about [publishing apps in Power BI](service-create-distribute-apps.md).
-
-## Troubleshoot sharing
-
-### My dashboard recipients see a lock icon in a tile or a "Permission required" message
-
-The people you share with may see a locked tile in a dashboard, or a "Permission required" message when they try to view a report.
-
-![Power BI locked tile](media/service-share-dashboards/power-bi-locked_tile_small.png)
-
-If so, you need to grant them permission to the underlying dataset.
-
-1. Go to the **Datasets** tab in your content list.
-
-1. Select the ellipsis (**...**) next to the dataset, then select **Manage permissions**.
-
-    ![Manage permissions](media/service-share-dashboards/power-bi-sharing-manage-permissions.png)
-
-1. Select **Add user**.
-
-    ![Select Add user](media/service-share-dashboards/power-bi-share-dataset-add-user.png)
-
-1. Enter the full email addresses for individuals, distribution groups, or security groups. You can't share with dynamic distribution lists.
-
-    ![Add email addresses](media/service-share-dashboards/power-bi-add-user-dataset.png)
-
-
-1. Select **Add**.
-
-### I can't share a dashboard or report
-
-To share a dashboard or report, you need permission to reshare the underlying content; that is, any related reports and datasets. If you see a message saying you can't share, ask the report author to give you reshare permission for those reports and datasets.
-
-!["Unable to share" message](media/service-share-dashboards/power-bi-sharing-unable-to-share.png)
-
-
 ## Next steps
 
-* [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md)
-* [Share a filtered Power BI report](service-share-reports.md)
-* Questions? [Try the Power BI Community](https://community.powerbi.com/)
+- [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md)
+- [Troubleshoot sharing dashboards and reports](service-troubleshoot-sharing.md)
+- [Request or grant access to shared dashboards or reports](service-request-access.md)
+- [Share a filtered Power BI report](service-share-reports.md)
+- Questions? [Try the Power BI Community](https://community.powerbi.com/)

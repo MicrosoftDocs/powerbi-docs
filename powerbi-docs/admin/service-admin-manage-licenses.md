@@ -1,13 +1,13 @@
 ---
 title: View and manage Power BI user licenses
 description: How to information for admins to view and manage the Power BI user licenses in their organization.
-author: kfollis
+author: mihart
+ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 04/08/2020
-ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -29,13 +29,13 @@ To see which Power BI subscriptions your organization has, follow these steps.
 
 Your active Power BI subscriptions are listed along with any other subscriptions you have. You may see an unexpected subscription for Power BI (free), as shown here.
 
-  ![Power BI free user-activated subscription](media/service-admin-manage-licenses/power-bi-free-user-activated.png)
+  ![Screenshot of the Power B I subscription, showing a free subscription.](media/service-admin-manage-licenses/power-bi-free-user-activated.png)
 
-This type of subscription is created for you when users take advantage of self-service sign-up. To read more, see [Power BI in your organization](https://docs.microsoft.com/microsoft-365/admin/misc/power-bi-in-your-organization?view=o365-worldwide).
+This type of subscription is created for you when users take advantage of self-service sign-up. To read more, see [Power BI in your organization](/microsoft-365/admin/misc/power-bi-in-your-organization).
 
 ## Manage user licenses in Microsoft 365
 
-To use Microsoft 365 admin center to manage user licenses, see the [Business subscriptions and billing documentation](https://docs.microsoft.com/microsoft-365/commerce/?view=o365-worldwide).
+To use Microsoft 365 admin center to manage user licenses, see the [Business subscriptions and billing documentation](/microsoft-365/commerce/).
 
 ## Manage user licenses in Azure portal
 

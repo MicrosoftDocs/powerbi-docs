@@ -1,12 +1,13 @@
 ---
-title: Get an authentication access token
-description: Walk through to push data - Get an authentication access token
+title: Get an authentication access token  in Power BI embedded analytics for better embedded BI insights
+description: Walk through to push data - Get an authentication access token. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
+ms.custom: has-adal-ref
 ms.date: 05/29/2019
 ---
 
@@ -66,7 +67,7 @@ Add this code to Program {...}.
 
 ```csharp
        #region Get an authentication access token
-       private static string GetToken()
+       private static async Task<string> GetToken()
        {
            // TODO: Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612
            // and add using Microsoft.IdentityModel.Clients.ActiveDirectory
@@ -83,7 +84,7 @@ Add this code to Program {...}.
            string resourceUri = "https://analysis.windows.net/powerbi/api";
 
            //OAuth2 authority Uri
-           string authorityUri = "https://login.microsoftonline.net/common/";
+           string authorityUri = "https://login.microsoftonline.com/common/";
 
            //Get access token:
            // To call a Power BI REST operation, create an instance of AuthenticationContext and call AcquireToken
@@ -94,7 +95,7 @@ Add this code to Program {...}.
            // AcquireToken will acquire an Azure access token
            // Call AcquireToken to get an Azure token from Azure Active Directory token issuance endpoint
            AuthenticationContext authContext = new AuthenticationContext(authorityUri);
-           string token = authContext.AcquireToken(resourceUri, clientID, new Uri(redirectUri)).AccessToken;
+           var token = authContext.AcquireTokenAsync(resourceUri, clientID, new Uri(redirectUri)).Result.AccessToken;
 
            Console.WriteLine(token);
            Console.ReadLine();
@@ -131,7 +132,7 @@ namespace walkthrough_push_data
         }
 
         #region Get an authentication access token
-        private static string GetToken()
+        private static async Task<string> GetToken()
         {
             // TODO: Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612
             // and add using Microsoft.IdentityModel.Clients.ActiveDirectory
@@ -159,7 +160,7 @@ namespace walkthrough_push_data
             // AcquireToken will acquire an Azure access token
             // Call AcquireToken to get an Azure token from Azure Active Directory token issuance endpoint
             AuthenticationContext authContext = new AuthenticationContext(authorityUri);
-            string token = authContext.AcquireToken(resourceUri, clientID, new Uri(redirectUri)).AccessToken;
+            var token = authContext.AcquireTokenAsync(resourceUri, clientID, new Uri(redirectUri)).Result.AccessToken;
 
             Console.WriteLine(token);
             Console.ReadLine();
@@ -179,6 +180,6 @@ namespace walkthrough_push_data
 
 * The next article in this series is [Create a dataset in Power BI](walkthrough-push-data-create-dataset.md)
 * [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
-* [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/)  
+* [Power BI REST APIs](/rest/api/power-bi/)  
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

@@ -2,21 +2,29 @@
 title: Resolve issues when starting Power BI Desktop
 description: Resolve issues when starting Power BI Desktop
 author: davidiseminger
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-desktop
-ms.topic: how-to
-ms.date: 01/14/2020
 ms.author: davidi
-
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: pbi-data-sources
+ms.topic: troubleshooting
+ms.date: 11/14/2020
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshoot opening Power BI Desktop
 
-In Power BI Desktop, users who installed and are running previous versions of the *Power BI On-premises data gateway* can be blocked from opening Power BI Desktop, because of administrative policy restrictions that the Power BI on-premises gateway placed on named pipes on the local machine.
+This article describes and provides a remedy for a number of circumstances where Power BI cannot open. 
+
+## Resolve issues with opening encrypted PBIX files
+
+You cannot open encrypted PBIX files using a Power BI Desktop version that does not support information protection.
+
+If you need to continue using Power BI Desktop, the recommended resolution is to update it to a version that supports information protection. You can download the [latest version of Power BI Desktop](https://www.microsoft.com/download/confirmation.aspx?id=58494) (this link is a direct download link to the installation executable). The latest version of Power BI Desktop supports information protection and can decrypt and open any encrypted PBIX file.
+
+###
 
 ## Resolve issues with the On-premises data gateway and Power BI Desktop
+
+In Power BI Desktop, users who installed and are running previous versions of the *Power BI On-premises data gateway* can be blocked from opening Power BI Desktop, because of administrative policy restrictions that the Power BI on-premises gateway placed on named pipes on the local machine.
 
 You have three options to resolve the issue associated with the On-premises data gateway, and to enable Power BI Desktop to open:
 
@@ -32,7 +40,7 @@ You can uninstall the Power BI On-premises data gateway if you no longer need it
 
 You can instead successfully launch Power BI Desktop as administrator, which also allows Power BI Desktop to successfully open. It's still recommended that you install the latest version of Power BI On-premises data gateway, as described earlier.
 
-Power BI Desktop is engineered as a multiprocess architecture, and several of these processes communicate using Windows named pipes. There may be other processes that interfere with those named pipes. The most common reason for such interference is security, including situations where antivirus software or firewalls may block the pipes or redirect traffic to a specific port. Opening Power BI Desktop with administrator privilege may resolve that issue. If you can't open with administrator privilege, ask your administrator to determine which security rules are preventing named pipes from properly communicating. Then whitelist Power BI Desktop and its respective subprocesses.
+Power BI Desktop is engineered as a multiprocess architecture, and several of these processes communicate using Windows named pipes. There may be other processes that interfere with those named pipes. The most common reason for such interference is security, including situations where antivirus software or firewalls may block the pipes or redirect traffic to a specific port. Opening Power BI Desktop with administrator privilege may resolve that issue. If you can't open with administrator privilege, ask your administrator to determine which security rules are preventing named pipes from properly communicating. Then, add Power BI Desktop and its respective subprocesses to allow lists.
 
 ## Resolve issues when connecting to SQL Server
 
@@ -44,7 +52,7 @@ When you attempt to connect to a SQL Server database, you may come across an err
 
 You can often resolve the issue if you open Power BI Desktop as an administrator before you make the SQL Server connection.
 
-After you open Power BI Desktop as an administrator and establish the connection, the required DLLs are registered properly. After that, opening Power BI Desktop as an administrator isn't necessary.
+After you open Power BI Desktop as an administrator and establish the connection, the required DLLs are registered properly. After that, opening Power BI Desktop as an administrator isn't necessary. In cases where you are connecting to SQL server with alternate windows credentials, you will have to open Power BI Desktop as an administrator every time you connect.
 
 ## Get help with other launch issues
 

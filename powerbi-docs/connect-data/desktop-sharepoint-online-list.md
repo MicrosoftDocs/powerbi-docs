@@ -2,14 +2,12 @@
 title: Create a report on a SharePoint List
 description: This tutorial shows how to transform your SharePoint List data into a Power BI report.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/10/2020
-ms.author: davidi
-
 LocalizationGroup: Visualizations
 ---
 # Create a report on a SharePoint List
@@ -26,7 +24,7 @@ Watch this five-minute tutorial video, or scroll down for step-by-step instructi
 2. Open Power BI Desktop and in the Home tab of the ribbon, select **Get Data** > **More**.
 3. Select **Online Services**, then select **SharePoint Online List**.  
 
-    <img src="media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-getdata.png" alt="get data" width="350"/>
+    <img src="media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-getdata.png" alt="Screenshot shows the Get Data dialog box with Online Services selected." width="350"/>
 
 4. Select **Connect**.
 4. Find the address (also known as a URL) of your SharePoint Online site that contains your list.  From a page in SharePoint Online, you can usually get the site address by selecting **Home** in the navigation pane, or the icon for the site at the top, then copying the address from your web browser's address bar.
@@ -48,7 +46,7 @@ Watch this five-minute tutorial video, or scroll down for step-by-step instructi
 
 9. On the left side of the Navigator, select the checkbox beside the SharePoint list you want to connect to.
 
-    <img src="media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-select-list.png" alt="get data" width="450"/>
+    <img src="media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-select-list.png" alt="Screenshot shows the Navigator page with BudgetRequests selected." width="450"/>
 
 10. Select **Load**.  Power BI loads your list data into a new report.
 

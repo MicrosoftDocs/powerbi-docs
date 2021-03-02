@@ -1,14 +1,14 @@
 ---
-title: Visuals in Power BI
-description: Custom visualizations in Power BI
+title: Visuals in Power BI in Power BI embedded analytics for better embedded BI insights
+description: This article describes custom Power BI visuals. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
 ms.reviewer: ""
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi-custom-visuals
 ms.topic: overview
-ms.date: 01/03/2019
+ms.date: 07/14/2020
 LocalizationGroup: Visualizations
 ---
 
@@ -16,7 +16,7 @@ LocalizationGroup: Visualizations
 
 Power BI comes with many out-of-the box Power BI visuals. These visuals are available in the visualization pane of both [Power BI Desktop](https://powerbi.microsoft.com/desktop/) and [Power BI service](https://app.powerbi.com), and can be used for creating and editing Power BI content.
 
-![visualizations](media/power-bi-custom-visuals/power-bi-visualizations.png)
+:::image type="content" source="media/power-bi-custom-visuals/power-bi-visualizations.png" alt-text="Screenshot of the Power B I visualization pane as it appears in Power B I Desktop and Power B I service.":::
 
 Many more Power BI visuals are available from the Microsoft [AppSource](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fappsource.microsoft.com%2Fen-us%2Fmarketplace%2Fapps%3Fpage%3D1%26product%3Dpower-bi-visuals&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C6d9286afacb3468d4cde08d740b76694%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637049028749147718&sdata=igWm0e1vXdgGcbyvngQBrHQVAkahPnxPC1ZhUPntGI8%3D&reserved=0) or through Power BI. These visuals are created by Microsoft and Microsoft partners, and are tested and validated by the AppSource validation team.
 
@@ -33,6 +33,11 @@ To restore the default Power BI visuals in the visualization pane, click **Impor
 ## AppSource Power BI visuals
 
 Microsoft and community members contribute Power BI visuals for public benefit, and publish them to the [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). You can download these visuals and add them to your Power BI reports. Microsoft has tested and approved these Power BI visuals for functionality and quality.
+
+>[!NOTE]
+>* By using Power BI visuals created with our SDK, you may be importing data from, or sending data to, third party or other services located outside of your Power BI tenant’s geographic area, compliance boundary, or national cloud instance.
+>* Power BI certified visuals are visuals in the AppSource that were additionally tested to check that the visual does not access external services or resources.
+>* Once Power BI visuals from AppSource are imported, visuals may be updated automatically without any additional notice.
 
 ### What is AppSource?
 
@@ -62,17 +67,24 @@ Power BI visuals are packages that include code for rendering the data served to
 
 To import a Power BI visual, in the *Visualization* pane click **Import a custom visual** and select **Import from file**.
 
-If you are you a web developer and are interested in creating your own visual and adding it to AppSource, you can learn how to [develop a Power BI visual](custom-visual-develop-tutorial.md) and [publish a Power BI visual to AppSource](office-store.md).
+If you are you a web developer and are interested in creating your own visual and adding it to AppSource, you can learn how to [develop a Power BI circle card visual](develop-circle-card.md) and [publish a Power BI visual to AppSource](office-store.md).
 
 > [!WARNING]
 > A Power BI visual could contain code with security or privacy risks. Make sure you trust the author and Power BI visual source before importing it to your report.
 
 ## Next steps
 
-* If you're a developer, start with the [developing a Power BI visual](custom-visual-develop-tutorial.md) tutorial.
+>[!div class="nextstepaction"]
+>[Develop a Power BI circle card visual](develop-circle-card.md)
 
-* Learn how a [Power BI visuals project is structured](visual-project-structure.md).
+>[!div class="nextstepaction"]
+>[Power BI visuals project structure](visual-project-structure.md)
 
-* Explore the [guidelines for Power BI visuals](guidelines-powerbi-visuals.md).
+>[!div class="nextstepaction"]
+>[Guidelines for Power BI visuals](guidelines-powerbi-visuals.md)
 
-More questions? Try the [Frequently asked questions about Power BI visuals](power-bi-custom-visuals-faq.md) page, or the [Power BI Community](https://community.powerbi.com/).
+>[!div class="nextstepaction"]
+>[Frequently asked questions](power-bi-custom-visuals-faq.md)
+
+>[!div class="nextstepaction"]
+>[Power BI Community](https://community.powerbi.com/)

@@ -2,12 +2,12 @@
 title: Distribute content to external guest users with Azure AD B2B
 description: Power BI enables sharing content with external guest users through Azure Active Directory Business-to-business (Azure AD B2B).
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 06/02/2020
-ms.author: kfollis
+ms.date: 07/02/2020
 LocalizationGroup: Administration
 ---
 
@@ -57,7 +57,7 @@ Follow these steps to send an invite in the Azure portal.
 
 1. Enter an **email address** and **personal message**.
 
-    ![Screenshot of the Azure AD Portal New Guest User dialog.](media/service-admin-azure-ad-b2b/azure-ad-portal-invite-message.png)
+    ![Screenshot of the New Guest User dialog with the email and message fields called out.](media/service-admin-azure-ad-b2b/azure-ad-portal-invite-message.png)
 
 1. Select **Invite**.
 
@@ -65,17 +65,17 @@ To invite more than one guest user, use PowerShell or create a bulk invite in Az
 
 The guest user must select **Get Started** in the email invitation they receive. The guest user is then added to the organization.
 
-![Screenshot of Guest user email invitation.](media/service-admin-azure-ad-b2b/guest-user-invite-email.png)
+![Screenshot of the Guest user email invitation with Get Started called out.](media/service-admin-azure-ad-b2b/guest-user-invite-email.png)
 
 ### Ad hoc invites
 
 To invite an external user at any time, add them to your dashboard or report through the share feature or to your app through the access page. Here is an example of what to do when inviting an external user to use an app.
 
-![Screenshot of External user added to App access list in Power BI.](media/service-admin-azure-ad-b2b/power-bi-app-access.png)
+![Screenshot of an external user added to the App access list in Power B I.](media/service-admin-azure-ad-b2b/power-bi-app-access.png)
 
 The guest user gets an email indicating that you shared the app with them.
 
-![Screenshot of Email for app shared with guest user](media/service-admin-azure-ad-b2b/guest-user-invite-email-2.png)
+![Screenshot of the email that guest user receives when the app has been shared.](media/service-admin-azure-ad-b2b/guest-user-invite-email-2.png)
 
 The guest user must sign in with their organization email address. They'll receive a prompt to accept the invitation after signing in. After signing in, the app opens for the guest user. To return to the app, they should bookmark the link or save the email.
 
@@ -87,21 +87,21 @@ The guest user must have the proper licensing in place to view the content that 
 
 ### Use Power BI Premium
 
-Assigning the workspace to [Power BI Premium capacity](service-premium-what-is.md) lets the guest user use the app without requiring a Power BI Pro license. Power BI Premium also lets apps take advantage of other capabilities like increased refresh rates, dedicated capacity, and large model sizes.
+Assigning the workspace to [Power BI Premium capacity](service-premium-what-is.md) lets the guest user use the app without requiring a Power BI Pro license. Power BI Premium also lets apps take advantage of other capabilities like increased refresh rates and large model sizes.
 
-![Diagram of guest user experience with Power BI Premium.](media/service-admin-azure-ad-b2b/license-approach-1.png)
+![Diagram of the guest user experience with Power B I Premium.](media/service-admin-azure-ad-b2b/license-approach-1.png)
 
 ### Assign a Power BI Pro license to guest user
 
-Assigning a Power BI Pro license from your organization to a guest user lets that guest user view content shared with them. For more information about assigning licenses, see [Assign licenses to users on the Licenses page](/office365/admin/manage/assign-licenses-to-users#assign-licenses-to-users-on-the-licenses-page). Before assigning Pro licenses to guest users, contact your Microsoft account representative to ensure you're in compliance with the terms of your agreement with Microsoft.
+Assigning a Power BI Pro license from your organization to a guest user lets that guest user view content shared with them. For more information about assigning licenses, see [Assign licenses to users on the Licenses page](/office365/admin/manage/assign-licenses-to-users#assign-licenses-to-users-on-the-licenses-page). Before assigning Pro licenses to guest users, consult the [Product Terms site](https://www.microsoft.com/licensing/terms) to ensure you're in compliance with the terms of your licensing agreement with Microsoft.
 
-![Diagram of guest user experience with Assign Pro license from your tenant.](media/service-admin-azure-ad-b2b/license-approach-2.png)
+![Diagram of the guest user experience with Assign Pro license from your tenant.](media/service-admin-azure-ad-b2b/license-approach-2.png)
 
 ### Guest user brings their own Power BI Pro license
 
 The guest user may already have a Power BI Pro license that was assigned to them through their own organization.
 
-![Diagram of guest user experience when they bring their own license.](media/service-admin-azure-ad-b2b/license-approach-3.png)
+![Diagram of the guest user experience when they bring their own license.](media/service-admin-azure-ad-b2b/license-approach-3.png)
 
 ## Guest users who can edit and manage content
 
@@ -113,7 +113,7 @@ To help allowed guests sign in to Power BI, provide them with the Tenant URL. To
 
 2. Look for the value next to **Tenant URL**. Share the tenant URL with your allowed guest users.
 
-    ![Screenshot of About Power BI dialog with guest user tenant URL called out.](media/service-admin-azure-ad-b2b/power-bi-about-dialog.png)
+    ![Screenshot of the About Power B I dialog with the guest user Tenant U R L called out.](media/service-admin-azure-ad-b2b/power-bi-about-dialog.png)
 
 ## Considerations and Limitations
 
@@ -146,17 +146,17 @@ To help allowed guests sign in to Power BI, provide them with the Tenant URL. To
 
 * There are Azure Active Directory settings that can limit what external guest users can do within your overall organization. Those settings also apply to your Power BI environment. The following documentation discusses the settings:
   * [Manage External Collaboration Settings](/azure/active-directory/b2b/delegate-invitations#configure-b2b-external-collaboration-settings)
-  * [Allow or block invitations to B2B users from specific organizations](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)
+  * [Allow or block invitations to B2B users from specific organizations](/azure/active-directory/b2b/allow-deny-list)
   * [Use Conditional Access to allow or block access](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps)
 
 * You can share content from a government cloud, like GCC, to an external commercial cloud user. However, the guest user can't use their own license. The content has to be in capacity assigned to Premium to enable access. Or, you can assign a Power BI Pro license to the guest account.
 
-* Sharing outside your organization isn't supported for regional clouds, like the Germany or China cloud instances. Instead, create user accounts in your organization that external users can use to access the content.
+* Sharing outside your organization isn't supported for national clouds, like the Germany or China cloud instances. Instead, create user accounts in your organization that external users can use to access the content.
 
 * If you share directly to a guest user, Power BI will send them an email with the link. To avoid sending an email, add the guest user to a security group and share to the security group.  
 
 ## Next steps
 
-For more detailed info, including how row-level security works, check out the whitepaper: [Distribute Power BI content to external guest users using Azure AD B2B](https://aka.ms/powerbi-b2b-whitepaper).
+For more detailed info, including how row-level security works, check out the whitepaper: [Distribute Power BI content to external guest users using Azure AD B2B](../guidance/whitepaper-azure-b2b-power-bi.md).
 
 For information about Azure AD B2B, see [What is Azure AD B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b/).

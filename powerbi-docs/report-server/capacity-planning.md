@@ -2,13 +2,12 @@
 title: Capacity planning guidance for Power BI Report Server
 description: This paper offers guidance on capacity planning for Power BI Report Server by sharing results of load test executions of various workloads.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 04/02/2020
-ms.author: maggies
-
 ---
 # Capacity planning guidance for Power BI Report Server
 Power BI Report Server is a self-service BI and enterprise reporting solution that customers can deploy on their premises, behind their firewall. It combines the interactive report capability of Power BI Desktop with the on-premises server platform of SQL Server Reporting Services. With heavy and growing usage of analytics and reporting within enterprises, budgeting the hardware infrastructure and software licenses required to scale to an enterprise user base can be a challenge. This paper aims to offer guidance on capacity planning for Power BI Report Server by sharing results of numerous load test executions of various workloads against a report server. While organizations' reports, queries, and usage patterns vary widely, the results presented in this paper, along with the actual tests used and a detailed description of how they were executed, serve as a reference point for anyone in the early-stage planning process of deploying Power BI Report Server.
@@ -39,7 +38,7 @@ The Power BI Report Server deployment consisted of the following virtual machine
 * Power BI Report Server
 * Power BI Report Server Database. The report server database is hosted on a different machine than Power BI Report Server so that it does not need to compete with SQL Server Database Engine for memory, CPU, network, and disk resources.
 
-![](media/capacity-planning/report-server-topology.png)
+![Diagram showing relationships between Power B I Report Server, Active Directory, and associated databases.](media/capacity-planning/report-server-topology.png)
 
 See Appendix 1.1 Power BI Report Server Topology and Appendix 1.2 Power BI Report Server Virtual Machine Configuration for a thorough configuration of each virtual machine used in the topology.
 

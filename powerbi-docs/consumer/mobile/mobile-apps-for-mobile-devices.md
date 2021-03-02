@@ -2,16 +2,14 @@
 title: What are the Power BI mobile apps?
 description: The Power BI mobile apps keep you connected to your data on premises or in the cloud. View Power BI dashboards and reports on your mobile device.
 author: paulinbar
-
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: overview
 ms.date: 03/11/2020
-ms.author: painbar
 ms.custom:  
 ms.reviewer:  
 #customer intent: As a Power BI end user, I want an overview of the Power BI mobile apps on the different devices so I can see how they can work in my company's workflow.
-
 ---
 # What are the Power BI mobile apps?
 Power BI offers a set of mobile apps for iOS, Android, and Windows 10 mobile devices. In the mobile apps, you connect to and interact with your cloud and on-premises data. 
@@ -35,7 +33,7 @@ You create reports in Power BI Desktop. You create dashboards, and view dashboar
 | [![Windows devices](./media/mobile-apps-for-mobile-devices/win-10-logo-50-px.png)](../../fundamentals/desktop-getting-started.md) |The Power BI mobile app for Windows 10 runs on any Windows 10 device, including Windows 10 phones. Along with many of the features of the other mobile apps, the Power BI mobile app for Windows 10 offers special functionality. For example, you can [pin a Power BI dashboard to the Windows 10 Start screen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) from the Power BI mobile app. Plus you can [run Power BI in presentation mode on Surface Hub](mobile-windows-10-app-presentation-mode.md) and in the Power BI mobile app for Windows 10. <br/>Get started with the [Power BI mobile app for Windows 10 devices](mobile-windows-10-phone-app-get-started.md). |||
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## Enterprise support for the Power BI mobile apps
 Organizations can use Microsoft Intune to manage devices and applications, including Power BI mobile apps for Android and iOS.

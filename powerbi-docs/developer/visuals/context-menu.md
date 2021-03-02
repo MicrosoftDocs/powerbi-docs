@@ -1,6 +1,6 @@
 ---
-title: Capabilities and properties of Power BI visuals
-description: This article describes the capabilities and properties of Power BI visuals.
+title: Add context menu to Power BI Visual in Power BI embedded analytics for better embedded BI insights
+description: Learn how to add a context menu to a Power BI visual. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin

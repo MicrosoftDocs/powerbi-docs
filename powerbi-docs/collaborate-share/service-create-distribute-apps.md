@@ -2,13 +2,11 @@
 title: Publish an app in Power BI
 description: Learn how to publish the new apps, which are collections of dashboards and reports with built-in navigation.
 author: maggiesMSFT
-
+ms.author: maggies
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 03/23/2020
-ms.author: maggies
-
 LocalizationGroup: Share your work
 ---
 # Publish an app in Power BI
@@ -66,7 +64,7 @@ When the dashboards and reports in your workspace are ready, you choose which da
     
     >[!IMPORTANT]
     >If your app relies on datasets from other workspaces, it is your responsibility to ensure all app users have access to the underlying datasets.
-    >
+    >If the app or report are in the same workspace as the dataset, make sure you add the report associated with the  dataset to the app as well.
 
 6. You can install the app automatically for the recipients, if your Power BI admin has enabled this setting for you in the Power BI Admin Portal. Read more about [automatically installing an app](#automatically-install-apps-for-end-users) in this article.
 
@@ -131,7 +129,7 @@ Here are general things to keep in mind when using the new navigation builder:
 When adding links to your app navigation and selecting the Content area option:
 * Ensure the link can be embedded. Some services block the embedding of their content in third-party sites like Power BI.
 * Embedding Power BI service content like reports or dashboards in other workspaces isn't supported. 
-* Embed Power BI Report Server content through its native embed URL content from an on premises deployment. Use the steps in [creating the Power BI Report Server URL](https://docs.microsoft.com/power-bi/report-server/quickstart-embed#create-the-power-bi-report-url) to get the URL. Be aware that regular authentication rules apply, so viewing the content requires a VPN connection to the on-premises server. 
+* Embed Power BI Report Server content through its native embed URL content from an on premises deployment. Use the steps in [creating the Power BI Report Server URL](../report-server/quickstart-embed.md#create-the-power-bi-report-url) to get the URL. Be aware that regular authentication rules apply, so viewing the content requires a VPN connection to the on-premises server. 
 * A security warning is shown at the top of the embedded content to indicate the content isn't in Power BI.
 
 ## Automatically install apps for end users
@@ -140,12 +138,12 @@ If an admin gives you permissions, you can install apps automatically, *pushing*
 ### How to push an app automatically to end users
 Once the admin has assigned you permissions, you have a new option to **install the app automatically**. When you check the box and select **Publish app** (or **Update app**), the app is pushed to all users or groups defined in the **Permissions** section of the app on the **Access** tab.
 
-![Enable pushing apps](media/service-create-distribute-apps//power-bi-apps-access.png)
+![Screenshot shows Power B I Publish app option with Install app automatically selected.](media/service-create-distribute-apps//power-bi-apps-access.png)
 
 ### How users get the apps that you push to them
 After you push an app, it shows up in their Apps list automatically. In this way, you can curate the apps that specific users or job roles in your organization need to have at their fingertips.
 
-![Enable pushing apps](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
+![Screenshot shows Power B I Apps with your published app included.](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
 
 ### Considerations for automatically installing apps
 Here are things to keep in mind when pushing apps to end users:
@@ -203,7 +201,7 @@ Things to keep in mind about publishing apps:
 * The permissions page doesn't change permission on datasets in other workspaces. You do see a warning reminding you to grant access to those datasets independently. A best practice is to contact the dataset owner before starting to build your app to ensure it is OK to give all your app users access those datasets. 
 * You can have at most 100 users or groups in the access list for the app. However, you can give more than 100 users access to the app. To do so, use one or more user groups that contain all the desired users.
 * For the new workspace experience, if the user added to the app access list already has access to the app through the workspace, they will not be shown in the access list for the app.  
-* When using the new look for the Power BI service, the support site URL is shown in the item information card. Read more about the ['new look' in Power BI](../consumer/service-new-look.md).
+* The support site URL is shown in the item information card.
 * Apps have an option to allow users to share the app and the app's underlying datasets by using the share permission. For new apps, this option is off by default. We recommend turning this option off for your existing apps and updating permission on the underlying datasets. The option was enabled for existing apps because apps were initially designed to replace content packs, which had this behavior.
 * Apps can have a maximum of 200 dashboards. 
 
@@ -211,5 +209,5 @@ Things to keep in mind about publishing apps:
 * [Create a workspace](service-create-workspaces.md)
 * [Install and use apps in Power BI](../consumer/end-user-apps.md)
 * [Power BI apps for external services](../connect-data/service-connect-to-services.md)
-* [Power BI Admin Portal](https://docs.microsoft.com/power-bi/service-admin-portal)
+* [Power BI Admin Portal](../admin/service-admin-portal.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

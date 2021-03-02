@@ -5,9 +5,9 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/27/2020
+ms.date: 01/04/2021
 LocalizationGroup: Share your work
 ---
 
@@ -21,11 +21,11 @@ The **Embed** option supports [URL filters](service-url-filters.md) and URL sett
 
 1. Open a report in the Power BI service.
 
-2. On the **More options (...)** menu, select **Embed** >  **Website or portal**.
+2. On the **Share** menu, select **Embed report** >  **Website or portal**.
 
     ![Website or portal option](media/service-embed-secure/power-bi-more-options-website.png)
 
-2. Select the **Embed** option to open a dialog that provides a link and an iFrame you can use to embed the report securely.
+2. In the **Secure embed code** dialog, select the **link you can use to embed this content**, or the **HTML you can paste into your blog or website** in an iFrame.
 
     ![Embed option dialog box](media/service-embed-secure/secure-embed-code-dialog.png)
 
@@ -55,10 +55,10 @@ To view the embedded report, users need either a Power BI Pro license or the con
 
 You can customize the user experience using the embed URL's input settings. In the provided iFrame, you can update the URL's  **src** settings.
 
-| Property  | Description  |  |  |  |
-|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|---|
-| pageName  | You can use the **pageName** query string parameter to set which report page to open. You can find this value at the report URL's end when viewing a report in the Power BI service, as shown below. |  |  |  |
-| URL Filters  | You can use [URL Filters](service-url-filters.md) in the embed URL you received from the Power BI UI to filter the embed content. This way you can build low-code integrations with only basic HTML and JavaScript experience.  |  |  |  |
+| Property  | Description  |
+|-----------|--------------|
+| pageName  | You can use the **pageName** query string parameter to set which report page to open. You can find this value at the report URL's end when viewing a report in the Power BI service, as shown below. |
+| URL Filters  | You can use [URL Filters](service-url-filters.md) in the embed URL you received from the Power BI UI to filter the embed content. This way you can build low-code integrations with only basic HTML and JavaScript experience.  |
 
 ## Set which page opens for an embedded report 
 
@@ -117,8 +117,6 @@ You can add as many buttons as you'd like to create a low-code custom experience
 ## Considerations and limitations
 
 * Paginated reports are supported with secure embed scenarios, and paginated reports with URL parameters are also supported. Read more about [passing report parameters in a URL for a paginated report](../paginated-reports/report-builder-url-pass-parameters.md).
-
-* Doesn't support external guest users with Azure business to business (B2B).
 
 * Secure embed works for reports published to the Power BI service.
 

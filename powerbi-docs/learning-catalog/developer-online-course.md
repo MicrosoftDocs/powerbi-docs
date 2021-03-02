@@ -2,13 +2,13 @@
 title: "Power BI Developer in a Day course"
 description: This video-based course empowers you as an app developer with the technical knowledge required to embed Power BI content.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: yana.berkovich
 featuredvideoid: dv-ep90wse8
 ms.service: powerbi
-ms.subservice: powerbi-developer
+ms.subservice: powerbi
 ms.topic: tutorial
 ms.date: 06/01/2020
-ms.author: v-pemyer
 ---
 
 # Power BI Developer in a Day course
@@ -80,7 +80,7 @@ To complete the labs, you'll need a Windows PC (Windows 7, or later) and the fol
 
 - The latest version of [Power BI Desktop](../fundamentals/desktop-get-the-desktop.md).
 - Visual Studio 2015, or later. We recommend [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/). You can use **Community** edition, which is free and suited for learning scenarios. It must have the **ASP.NET and web development** workload installed.
-- A web browser [supported by Power BI](../power-bi-browsers.md). We recommend Microsoft Edge.
+- A web browser [supported by Power BI](../fundamentals/power-bi-browsers.md). We recommend Microsoft Edge.
 
 Follow these steps to get set up:
 
@@ -101,7 +101,7 @@ We recommend you watch the online course first. You can refer back to the presen
 When you're ready to commence the first lab, open the **&lt;CourseFolder&gt;\PowerBIDevIAD\Lab01A\PowerBIDevIAD_Lab01A.pdf** file. This document guides you to sign in to the Power BI service and prepare a Power BI report.
 
 > [!NOTE]
-> You're responsible for having your own Power BI account. If you don't already have one, see [Sign up for Power BI as an individual](../service-self-service-signup-for-power-bi.md).
+> You're responsible for having your own Power BI account. If you don't already have one, see [Sign up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md).
 >
 > Your account must have a Power BI Pro license, or you can still accept a Power BI Pro Trial license—an offer that can only be accepted once. Also, your account must not have depleted the reserve of free embed tokens, available with the Power BI Pro license.
 >

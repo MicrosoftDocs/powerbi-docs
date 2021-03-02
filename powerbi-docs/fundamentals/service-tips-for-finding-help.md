@@ -1,15 +1,13 @@
 ---
 title: 10 tips for getting help with your Power BI questions
 description: Here are 10 ways to get help when you have a question about how Power BI works
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 06/28/2018
-ms.author: maggies
-
 LocalizationGroup: Get started
 ---
 # 10 tips for getting help with your Power BI questions
@@ -40,12 +38,12 @@ Do videos fit your learning style better? Power BI has two sets you'll be intere
 ## 6 Attend training
 The training options available to you are nearly endless, from in-person lab training to short videos.
 
-* [Guided learning](../guided-learning/index.yml) on the Power BI site.
-* [Free Power BI  webinars](webinars.md), live and on-demand, on the Power BI site.
+*[Microsoft Learn for Power BI](/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
+* [Free Power BI  webinars](webinars.md), live and on-demand, on the Power BI site
 
 You can find additional options online, such as:
 
-* **edX.org** offers a free course, [Analyzing and Visualizing Data with Power BI](https://www.edx.org/course/analyzing-visualizing-data-power-bi-microsoft-dat207x-4).
+* **edX.org** offers a free course, [Analyzing and Visualizing Data with Power BI](https://www.edx.org/course/data-analysis-in-power-bi).
 * **Lynda.com** offers has courses such as [Power BI Pro Essential Training](https://www.lynda.com/Power-BI-tutorials/Power-BI-Pro-Essential-Training/485820-2.html).
 * Look for in-person "**Dashboard in a Day**" training sessions.
 

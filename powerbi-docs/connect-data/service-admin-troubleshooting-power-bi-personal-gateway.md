@@ -2,14 +2,12 @@
 title: Troubleshooting Power BI gateway (personal mode)
 description: Troubleshooting Power BI gateway (personal mode)
 author: arthiriyer
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: how-to
-ms.date: 5/06/2019
 ms.author: arthii
-
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: powerbi-gateways
+ms.topic: troubleshooting
+ms.date: 5/06/2019
 LocalizationGroup: Troubleshooting
 ---
 
@@ -28,7 +26,7 @@ Many issues can surface when the gateway version is out of date. It's a good gen
 ## Installation
 **Gateway (personal mode) operates on 64-bit versions:** If your machine is a 32-bit version, you can't install the gateway (personal mode). Your operating system has to be a 64-bit version. Install a 64-bit version of Windows or install the gateway (personal mode) on a 64-bit machine.
 
-**Gateway (personal mode) fails to install as a service even though you're a local administrator for the computer:** Installation can fail if the user is in the computer’s local Administrator group, but Group Policy doesn't allow that username to sign in as a service. Ensure that Group Policy lets a user sign in as a service. We’re working on a fix for this issue. For more information, see [Add the Log on as a service right to an account](https://technet.microsoft.com/library/cc739424.aspx).
+**Gateway (personal mode) fails to install as a service even though you're a local administrator for the computer:** Installation can fail if the user is in the computer’s local Administrator group, but Group Policy doesn't allow that username to sign in as a service. Ensure that Group Policy lets a user sign in as a service. We’re working on a fix for this issue. For more information, see [Add the Log on as a service right to an account](/previous-versions/windows/it-pro/windows-server-2003/cc739424(v=ws.10)).
 
 **Operation timed out:** This message is common if the computer (physical machine or VM) on which you’re installing the gateway (personal mode) has a single core processor. Close any applications, turn off any non-essential processes, and try installing again.
 

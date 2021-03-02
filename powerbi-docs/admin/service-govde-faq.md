@@ -2,21 +2,19 @@
 title: Frequently Asked Questions for German government customers
 description: For German government customers, answers to common questions for the Power BI German government service
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/08/2019
-ms.author: davidi
-
+ms.date: 08/20/2020
 LocalizationGroup: Get started
 ---
 # Frequently Asked Questions for Power BI for Germany Cloud customers
 The **Power BI service** has a version available for European Union/European Free Trade Agreement (EU/EFTA) customers, often referred to as Microsoft Cloud Deutschland (MCD). The **Power BI service** version discussed in this article is specific to EU/EFTA customers, and is separate and different from the commercial version of the **Power BI service**, or Power BI services provided to government customers.
 
-![](media/service-govde-faq/govde-faq_01.png)
+![Screenshot of Microsoft Power B I Germany home page.](media/service-govde-faq/govde-faq_01.png)
 
 ## Questions and answers
 
@@ -30,7 +28,7 @@ The following questions and answers provide important information for Power BI P
    You can find lots of information on the [Power BI Germany Cloud home page](https://powerbi.microsoft.com/power-bi-germany/), including pricing information. On that page, you can also find a link to sign up for **Power BI Pro service** 30-Day trial with 25 user licenses. As part of trial sign-up, you have an option to purchase or add additional licenses as needed. We also offer Enterprise Agreement (EA), Government, and non-profit pricing. Contact your Microsoft customer representative for more details.
 3. **I have a Germany Cloud tenant as part of Azure Germany and/or Office 365 Germany subscriptions. Can I use the existing tenant to sign up for Power BI Germany?**
    
-   Yes. As part of the sign up process, you'll have an option to login with an existing Germany Cloud tenant administrator account, and add the Power BI Pro service licenses to your existing tenant in the Germany Cloud. Note that Germany Cloud tenants and user accounts are different from the Power BI service for Germany cloud.
+   Yes. As part of the sign up process, you'll have an option to login with an existing Germany Cloud administrator account, and add the Power BI Pro service licenses to your existing tenant in the Germany Cloud. Note that Germany Cloud tenants and user accounts are different from the Power BI service for Germany cloud.
 4. **Is there a free service in the Power BI service for Germany cloud?**
    
    No. We don't offer free license versions in the Power BI service for Germany cloud. However, we encourage you to sign up for [Power BI free offering in our public cloud](https://powerbi.microsoft.com/get-started/) if your business needs are met with the Power BI free offering.
@@ -49,6 +47,8 @@ The following questions and answers provide important information for Power BI P
    * Publish to Web
    * ArcGIS maps by Esri
    * Power BI Embedded (separate metered ISV licensing, will be offered through [Microsoft Azure Germany](https://azure.microsoft.com/overview/clouds/germany/) in the future)
+   * Activity logging
+
 7. **Where can I find the Power BI service for Germany cloud specific configuration information for use and integration in my applications?**
    
    We updated our [SaaS Embedding developer samples](https://github.com/Microsoft/PowerBI-Developer-Samples) with Germany and other Power BI clouds specific configuration information. Look at the **Cloud Configs** folder in samples for cloud-specific configuration end points. The following table lists  various configuration end points for the Power BI service for Germany cloud (and Public Cloud for cross-reference).
@@ -59,8 +59,8 @@ The following questions and answers provide important information for Power BI P
 | Power BI Service direct sign in |[https://app.powerbi.de/?noSignUpCheck=1](https://app.powerbi.de/?noSignUpCheck=1) |[https://app.powerbi.com/?noSignUpCheck=1](https://app.powerbi.com/?noSignUpCheck=1) |
 | Service API |[https://api.powerbi.de/](https://api.powerbi.de/) |[https://api.powerbi.com/](https://api.powerbi.com/) |
 | Office Portal for user license management, service health status and support requests by administrators |[https://portal.office.de/](https://portal.office.de/) |[https://portal.office.com/](https://portal.office.com/) |
-| AAD Authority Uri |[https://login.microsoftonline.de/common/oauth2/authorize/](https://login.microsoftonline.de/common/oauth2/authorize/) |[https://login.microsoftonline.com/common/oauth2/authorize/](https://login.microsoftonline.com/common/oauth2/authorize/) |
-| Power BI Service Resource Uri |[https://analysis.cloudapi.de/powerbi/api](https://analysis.cloudapi.de/powerbi/api) |[https://analysis.windows.net/powerbi/api](https://analysis.windows.net/powerbi/api) |
+| Azure Active Directory Authority Uri |[https://login.microsoftonline.de/common/oauth2/authorize/](https://login.microsoftonline.de/common/oauth2/authorize/) |[https://login.microsoftonline.com/common/oauth2/authorize/](https://login.microsoftonline.com/common/oauth2/authorize/) |
+| Power BI Service Resource Uri |[https://app.powerbi.com/apps](https://app.powerbi.com/apps) | |
 | Power BI visuals Library |[https://app.powerbi.de/visuals/](https://app.powerbi.de/visuals/) |[https://app.powerbi.com/visuals/](https://app.powerbi.com/visuals/) |
 | Register an Application for Power BI (For Embedded) |[https://app.powerbi.de/apps](https://app.powerbi.de/apps) |[https://app.powerbi.com/apps](https://app.powerbi.com/apps) |
 | Azure portal (For Embedded) |[https://portal.microsoftazure.de/](https://portal.microsoftazure.de/) |[https://portal.azure.com/](https://portal.azure.com/) |
@@ -69,6 +69,6 @@ The following questions and answers provide important information for Power BI P
 ## Next steps
 There are all sorts of things you can do with Power BI. For more information and learning, including an article that shows you how to sign up for the service, check out the following resources:
 
-* [Guided Learning for Power BI](../guided-learning/index.yml)
+* [Microsoft Learn for Power BI](/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
 * [Get started with the Power BI service](../fundamentals/service-get-started.md)
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)

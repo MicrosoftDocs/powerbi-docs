@@ -2,14 +2,12 @@
 title: Data sources for Power BI
 description: Data sources for Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 08/29/2019
-ms.author: davidi
-
 LocalizationGroup: Get started
 ---
 # Data sources for the Power BI service
@@ -19,14 +17,14 @@ In this article, we're going to cover the data source types you can connect to f
 
 You can get data from any of the data sources in Power BI by selecting **Get Data** in the bottom-left corner of the page.
 
-![](media/service-get-data/pbi-getdata-navigation-link.png) 
+![Screenshot of Get Data, showing it in lower left of Power B I service screen.](media/service-get-data/pbi-getdata-navigation-link.png) 
 
 After you select **Get Data**, you can choose the data you want to access
 
-![](media/service-get-data/pbi-getdata-startscreen.png)
+![Screenshot of the Get Data choices, showing the options to choose the data you want to access.](media/service-get-data/pbi-getdata-startscreen.png)
 
 ## Discover content
-![](media/service-get-data/pbi-getdata-discovercontent.png)
+![Screenshot of the Discover content section, showing partner logos.](media/service-get-data/pbi-getdata-discovercontent.png)
 
 The **Discover content** section contains all the data and reports you need already prepared for you. In Power BI, there are two types of content packs: Organizational and Services. 
 
@@ -39,7 +37,7 @@ The **Discover content** section contains all the data and reports you need alre
 The **Create new content** section contains options for creating and importing content yourself. In Power BI, there are two ways to create or import your own content: Files and Databases. 
 
 ### Files
-![](media/service-get-data/pbi_getdata_files.png)
+![Excel, Power B I Desktop, and C S V icon](media/service-get-data/pbi_getdata_files.png)
 
 **Excel** (*.xlsx*, *.xlsm*) - In Excel, a workbook may include different data types. For example, it can include data you've entered into worksheets yourself. It can also include data that you've queried and loaded from external data sources by using Power Query. Power Query is available through **Get & Transform** in Excel 2016 or Power Pivot. You may import data from tables in worksheets, or import data from a data model. To learn more, see [Get data from files for Power BI](service-get-data-from-files.md).
 
@@ -52,7 +50,7 @@ For other file types, like XML Table (*.xml*) or text (*.txt*) files, you can us
 Where you store your files makes a significant difference, too. OneDrive for Business provides the greatest amount of flexibility and integration with Power BI. It's OK to keep your files on your local drive. Though if you need to refresh your data, there are a few extra steps. For more information, see the article links below.
 
 ### Databases
-![](media/service-get-data/pbi_getdata_databases.png)
+![Screenshot of the databases, showing databases in the cloud logos.](media/service-get-data/pbi_getdata_databases.png)
 
 **Databases in the Cloud** - From the Power BI service, you can connect live to:
 

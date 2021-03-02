@@ -2,13 +2,11 @@
 title: Best practices to optimize Q&A
 description: How to optimize Power BI Q&A and make it work better
 author: mohaali
-
+ms.author: mohaali
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/23/2019
-ms.author: mohaali
-
 ---
 # Best practices to optimize Q&A in Power BI
 Using common phrases and natural language to ask questions of your data is powerful. Even more powerful is when your data answers, which is what Q&A in Power BI does.
@@ -112,11 +110,11 @@ If you have multiple columns that act as a single distinct unit within a larger 
 
 **Needs work**
 
-![Use multiple tables for Q&A](media/q-and-a-best-practices/desktop-qna-09.png)
+![Screenshot shows a Suppliers table that includes contact information.](media/q-and-a-best-practices/desktop-qna-09.png)
 
 **Ready for Q&A**
 
-![Use multiple tables for Q&A](media/q-and-a-best-practices/desktop-qna-10.png)
+![Screenshot shows two tables, one for Suppliers and one for Contacts.](media/q-and-a-best-practices/desktop-qna-10.png)
 
 ### Pivot to eliminate property bags
 
@@ -130,7 +128,7 @@ For example, consider a *CustomerDemographics* table with CustomerID, Property, 
 
 **Ready for Q&A**
 
-![Use multiple tables for Q&A](media/q-and-a-best-practices/desktop-qna-12.png)
+![Screenshot shows four columns that have Age, MartialStatus, City, and Gender properties as columns with values for different customers.](media/q-and-a-best-practices/desktop-qna-12.png)
 
 ### Union to eliminate partitioning
 
@@ -144,7 +142,7 @@ Similarly, consider a typical pivoted value column: a *BookTour* table containin
 
 **Ready for Q&A**
 
-![Use multiple tables for Q&A](media/q-and-a-best-practices/desktop-qna-14.png)
+![Screenshot shows two tables, one with book and author information for tours and one with cities associated with the tours.](media/q-and-a-best-practices/desktop-qna-14.png)
 
 ### Split formatted columns
 
@@ -156,7 +154,7 @@ If the source from which you're importing your data contains formatted columns, 
 
 **Ready for Q&A**
 
-![Use multiple tables for Q&A](media/q-and-a-best-practices/desktop-qna-16.png)
+![Screenshot shows a table with customers, a full address line, and three lines that break down the address into street, city, and country.](media/q-and-a-best-practices/desktop-qna-16.png)
 
 Similarly, if you have any full name columns for a person, add **First Name** and **Last Name** columns, just in case someone wants to ask questions using partial names. 
 
@@ -171,7 +169,7 @@ Also a similar situation, if the source from which you're importing your data co
 
 **Ready for Q&A**
 
-![Use multiple tables for Q&A](media/q-and-a-best-practices/desktop-qna-18.png)
+![Screenshot shows two tables, one with name and genre, and one with composer.](media/q-and-a-best-practices/desktop-qna-18.png)
 
 ### Denormalize to eliminate inactive relationships
 

@@ -1,13 +1,13 @@
 ---
 title: Use an alternate email address
 description: Use an alternate email address
-author: kfollis
+author: mihart
+ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/23/2019
-ms.author: kfollis
 LocalizationGroup: Troubleshooting
 ---
 
@@ -18,7 +18,7 @@ When you sign up for Power BI, you provide an email address. By default, Power B
 In some cases, you might want these emails delivered to an alternate email address rather than the one you signed up with. This article explains how to specify an alternate address in Microsoft 365 and in PowerShell. The article also explains how Azure Active Directory (Azure AD) resolves an email address.
 
 > [!NOTE]
-> Specifying an alternate address doesn't affect which email address Power BI uses for service updates, newsletters, and other promotional communications. Those communications are always sent to the email address you used when you signed up for Power BI.
+> Specifying an alternate address doesn't affect which email address Power BI uses for e-mail subscriptions, service updates, newsletters, and other promotional communications. Those communications are always sent to the email address you used when you signed up for Power BI.
 
 ## Use Microsoft 365
 
@@ -32,7 +32,7 @@ To specify an alternate address in Microsoft 365, follow these steps.
 
     If you cannot edit your details, this means your admin manages your email address. Contact your admin to update your email address.
 
-    ![Contact details](media/service-admin-alternate-email-address-for-power-bi/contact-details.png)
+    ![Screenshot of the Contact details dialog, showing how to specify an alternate email.](media/service-admin-alternate-email-address-for-power-bi/contact-details.png)
 
 1. In the **Alternate email** field, enter the email address you'd like Microsoft 365 to use for Power BI updates.
 

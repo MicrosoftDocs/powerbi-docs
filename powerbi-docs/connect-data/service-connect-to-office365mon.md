@@ -2,14 +2,12 @@
 title: Connect to Office365Mon with Power BI
 description: Office365Mon for Power BI
 author: paulinbar
+ms.author: painbar
 ms.reviewer: maggiesMSFT
-
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 11/26/2019
-ms.author: painbar
-
 LocalizationGroup: Connect to services
 ---
 # Connect to Office365Mon with Power BI
@@ -23,23 +21,23 @@ Connect to the [Office365Mon template app](https://msit.powerbi.com/groups/me/ge
 ## How to connect
 1. Select **Get Data** at the bottom of the nav pane.
    
-   ![](media/service-connect-to-office365mon/pbi_getdata.png)
+   ![Screenshot of the Get Data button, showing it in the navigation pane.](media/service-connect-to-office365mon/pbi_getdata.png)
 2. In the **Services** box, select **Get**.
    
-   ![](media/service-connect-to-office365mon/pbi_getservices.png) 
+   ![Screenshot of the Services dialog, showing the Get button.](media/service-connect-to-office365mon/pbi_getservices.png) 
 3. Select **Office365Mon** \> **Get**.
    
-   ![](media/service-connect-to-office365mon/o365mon.png)
+   ![Screenshot of the Office365Mon dialog, showing the Get link.](media/service-connect-to-office365mon/o365mon.png)
 4. For Authentication Method, select **oAuth2** \> **Sign In**.
    
    When prompted, enter your Office365Mon admin credentials and follow the authentication process.
    
-   ![](media/service-connect-to-office365mon/creds.png)
+   ![Screenshot of the Connect to Office365Mon dialog, showing the o Auth2 in the Authentication Method field.](media/service-connect-to-office365mon/creds.png)
    
-   ![](media/service-connect-to-office365mon/creds2.png)
+   ![Screenshot of the Office365Mon sign in, prompting for credentials.](media/service-connect-to-office365mon/creds2.png)
 5. After Power BI imports the data you will see a new dashboard, report, and dataset in the nav pane. New items are marked with a yellow asterisk \*, select the Office365Mon entry.
    
-   ![](media/service-connect-to-office365mon/dashboard4.png)
+   ![Screenshot of the navigation pane in Power B I, showing the dashboard, report, and dataset.](media/service-connect-to-office365mon/dashboard4.png)
 
 **What now?**
 

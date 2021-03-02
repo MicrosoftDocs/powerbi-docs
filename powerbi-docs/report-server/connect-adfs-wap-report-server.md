@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 01/14/2020
+ms.date: 02/03/2021
 ---
 
 # Use Web Application Proxy and Active Directory Federated Services - Power BI Report Server
@@ -35,7 +35,7 @@ We need to make sure that we have a valid Service Principal Name (SPN). The vali
 
 The SPN is a unique identifier for a service that uses Kerberos authentication. Make sure you have a proper HTTP SPN present for your report server.
 
-For information on how to configure the proper Service Principal Name (SPN) for your report server, see [Register a Service Principal Name (SPN) for a Report Server](https://docs.microsoft.com/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server).
+For information on how to configure the proper Service Principal Name (SPN) for your report server, see [Register a Service Principal Name (SPN) for a Report Server](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server).
 
 ### Enabling negotiate authentication
 
@@ -51,11 +51,11 @@ To enable a report server to use Kerberos authentication, you need to configure 
 </AuthenticationTypes>
 ```
 
-For more information, see [Modify a Reporting Services Configuration File](https://docs.microsoft.com/sql/reporting-services/report-server/modify-a-reporting-services-configuration-file-rsreportserver-config) and [Configure Windows Authentication on a Report Server](https://docs.microsoft.com/sql/reporting-services/security/configure-windows-authentication-on-the-report-server).
+For more information, see [Modify a Reporting Services Configuration File](/sql/reporting-services/report-server/modify-a-reporting-services-configuration-file-rsreportserver-config) and [Configure Windows Authentication on a Report Server](/sql/reporting-services/security/configure-windows-authentication-on-the-report-server).
 
 ## 2. Configure Active Directory Federation Services (AD FS)
 
-You need to configure AD FS on a Windows 2016 server within your environment. The configuration can be done through the Server Manager and selecting Add Roles and Features under Manage. For more information, see [Active Directory Federation Services](https://docs.microsoft.com/windows-server/identity/active-directory-federation-services).
+You need to configure AD FS on a Windows 2016 server within your environment. The configuration can be done through the Server Manager and selecting Add Roles and Features under Manage. For more information, see [Active Directory Federation Services](/windows-server/identity/active-directory-federation-services).
 
 On the AD FS server, using AD FS Management App, complete these steps.
 
@@ -88,7 +88,7 @@ On the AD FS server, using AD FS Management App, complete these steps.
 
 ## 3. Configure Web Application Proxy (WAP)
 
-You want to enable the Web Application Proxy (Role) Windows role on a server in your environment. It must be on a Windows 2016 server. For more information, see [Web Application Proxy in Windows Server 2016](https://docs.microsoft.com/windows-server/remote/remote-access/web-application-proxy/web-application-proxy-windows-server) and [Publishing Applications using AD FS Preauthentication](https://docs.microsoft.com/windows-server/remote/remote-access/web-application-proxy/Publishing-Applications-using-AD-FS-Preauthentication).
+You want to enable the Web Application Proxy (Role) Windows role on a server in your environment. It must be on a Windows 2016 server. For more information, see [Web Application Proxy in Windows Server 2016](/windows-server/remote/remote-access/web-application-proxy/web-application-proxy-windows-server) and [Publishing Applications using AD FS Preauthentication](/windows-server/remote/remote-access/web-application-proxy/Publishing-Applications-using-AD-FS-Preauthentication#BKMK_1.2).
 
 ### Configure constrained delegation
 
@@ -152,7 +152,7 @@ To configure constrained delegation, follow these steps.
 8. Run the following PowerShell command to validate the WAP configuration.
 
     ```
-    Get-WebApplicationProxyApplication "PBIRSBrowser" | FL
+    Get-WebApplicationProxyApplication -Name "PBIRSWAP" | FL
     ```
 
     ![PowerShell command](media/connect-adfs-wap-report-server/report-server-powershell-get-webapplication.png)
@@ -169,4 +169,3 @@ You can then access the Public WAP URL, for example, `https://reports.contosolab
 *[What is Power BI Report Server?](get-started.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

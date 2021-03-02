@@ -2,13 +2,13 @@
 title: Format and implement legends in Power BI reports
 description: Six tips to format and implement legends in Power BI report visuals, in Power BI Desktop or the Power BI service.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
 featuredvideoid: r9XnHmuWkZQ
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 02/15/2020
-ms.author: v-pemyer
 ---
 
 # Tips to format and implement legends in Power BI reports

@@ -10,12 +10,12 @@ metadata:
   description: Power BI amplifies your insights and the value of your data. Find expert information and answers here, no matter how you use Power BI.
   services: service
   ms.service: powerbi #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.subservice: subservice
+  ms.subservice: powerbi-service
   ms.topic: hub-page # Required
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 03/31/2020 #Required; mm/dd/yyyy format.
+  ms.date: 02/03/2021 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -23,21 +23,21 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Create a COVID-19 report with US data
-      itemType: sample
-      url: create-reports/sample-covid-19-us.md
-    # Card
     - title: Get started with Power BI Desktop
       itemType: get-started
       url: fundamentals/desktop-getting-started.md
     # Card
-    - title: Sign up for the Power BI service
-      itemType: how-to-guide
-      url: fundamentals/service-self-service-signup-for-power-bi.md
+    - title: Power BI embedded analytics client APIs
+      itemType: overview
+      url: /javascript/api/overview/powerbi/
     # Card
-    - title: Ways to collaborate and share
+    - title: Datasets discovery using the datasets hub (Preview)
       itemType: concept
-      url: collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md
+      url: connect-data/service-datasets-hub.md
+    # Card
+    - title: Power BI on Microsoft Learn 
+      itemType: learn
+      url: /learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -49,12 +49,12 @@ conceptualContent:
         - url: fundamentals/power-bi-overview.md
           itemType: overview
           text: What is Power BI?
-        - url: fundamentals/desktop-what-is-desktop.md
-          itemType: overview
-          text: What is Power BI Desktop?
         - url: fundamentals/power-bi-overview.md
           itemType: overview
           text: What is the Power BI service?
+        - url: fundamentals/service-self-service-signup-for-power-bi.md
+          itemType: overview
+          text: Sign up for the Power BI service
       # footerLink (optional)
       footerLink:
         url: fundamentals/index.yml
@@ -84,9 +84,9 @@ conceptualContent:
         - url: admin/service-admin-licensing-organization.md
           itemType: concept
           text: Licensing in your organization
-        - url: admin/service-admin-portal.md
+        - url: admin/service-premium-what-is.md
           itemType: concept
-          text: The admin portal
+          text: What is Power BI Premium?
       # footerLink (optional)
       footerLink:
         url: admin/index.yml
@@ -116,9 +116,9 @@ conceptualContent:
         - url: connect-data/service-gateway-onprem.md
           itemType: concept
           text: On-premises data gateways
-        - url: connect-data/refresh-data.md
+        - url: connect-data/service-datasets-hub.md
           itemType: concept
-          text: Data refresh
+          text: Discover data on the datasets hub
       # footerLink (optional)
       footerLink:
         url: connect-data/index.yml
@@ -126,9 +126,9 @@ conceptualContent:
     # Card
     - title: Transform and shape data
       links:
-        - url: transform-model/desktop-analytics-pane.md
-          itemType: how-to-guide
-          text: Use the Analytics pane
+        - url: transform-model/desktop-query-overview.md
+          itemType: overview
+          text: Query Editor overview
         - url: transform-model/desktop-common-query-tasks.md
           itemType: concept
           text: Common query tasks
@@ -158,9 +158,9 @@ conceptualContent:
     # Card
     - title: Create reports and dashboards
       links:
-        - url: create-reports/desktop-report-themes.md
-          itemType: concept
-          text: Report themes
+        - url: create-reports/sample-covid-19-us.md
+          itemType: sample
+          text: Create COVID-19 report with US data
         - url: paginated-reports/paginated-reports-report-builder-power-bi.md
           itemType: concept
           text: What are paginated reports?
@@ -180,9 +180,9 @@ conceptualContent:
         - url: collaborate-share/service-create-the-new-workspaces.md
           itemType: how-to-guide
           text: Create the new workspaces
-        - url: connect-data/service-datasets-across-workspaces.md
+        - url: collaborate-share/service-collaborate-microsoft-teams.md
           itemType: concept
-          text: Intro to shared datasets
+          text: Collaborate in Microsoft Teams
       # footerLink (optional)
       footerLink:
         url: collaborate-share/index.yml
@@ -196,9 +196,9 @@ conceptualContent:
         - url: collaborate-share/service-analyze-in-excel.md
           itemType: concept
           text: Analyze in Excel
-        - url: collaborate-share/service-embed-report-spo.md
+        - url: collaborate-share/service-automate-power-bi-report-export.md
           itemType: concept
-          text: Embed in SharePoint Online
+          text: Export and email with Power Automate
       # footerLink (optional)
       footerLink:
         url: collaborate-share/index.yml
@@ -257,7 +257,7 @@ conceptualContent:
         - url: learning-catalog/learning-catalog-bdm.md
           itemType: learn
           text: Business decision makers
-        - url: guided-learning/introductiontodax.yml?tutorial-step=1
+        - url: /learn/paths/dax-power-bi/
           itemType: learn
           text: Get started with DAX
         - url: learning-catalog/learning-catalog-solution-architect.md
@@ -274,15 +274,26 @@ additionalContent:
   # Supports up to 3 sections
   sections:
     - title: Related tools # < 60 chars (optional)
-    - items:
+      items:
         # Card
         - title: Power BI Report Server
           summary: Explore Power BI Report Server, an on-premises report server with a web portal in which you display and manage Power BI reports, paginated reports, and KPIs.
           url: report-server/index.yml
-        # Card
         - title: Power BI REST APIs
           summary: The Power BI REST APIs provide service endpoints for embedding, administration, and user resources.
-          url: https://docs.microsoft.com/rest/api/power-bi/
-        - title: Power Platform documentation
-          summary: Learn how Power BI, Power Apps, Power Automate, and Power Virtual Agents work together to enhance each other.
-          url: https://docs.microsoft.com/power-platform/
+          url: /rest/api/power-bi/
+        - title: Power BI embedded analytics client APIs
+          summary: A client-side library for embedding Power BI using JavaScript or TypeScript.
+          url: /javascript/api/overview/powerbi/
+    - title: Other Microsoft Power Platform products # < 60 chars (optional)
+      items:
+        # Card
+        - title: Power Apps
+          summary: Quickly build low-code apps that modernize precesses and solve tough business challenges in your organization.
+          url: /powerapps/
+        - title: Power Automate
+          summary: Create automated workflows between your favorite apps and services to synchronize files, get notifications, and more.
+          url: /power-automate/
+        - title: Power Virtual Agents
+          summary: Create powerful bots using a guided, no-code graphical interface with no need for data scientists or developers.
+          url: /power-virtual-agents/

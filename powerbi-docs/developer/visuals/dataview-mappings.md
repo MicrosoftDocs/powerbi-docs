@@ -1,13 +1,13 @@
 ---
-title: Understand data view mapping in Power BI visuals
-description: This article describes how Power BI transforms data before passing it into visuals.
+title: Understand data view mapping in Power BI visuals in Power BI embedded analytics for better embedded BI insights
+description: This article describes how Power BI transforms data before passing it into visuals. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 06/18/2019
+ms.date: 01/28/2021
 ---
 
 # Understand data view mapping in Power BI visuals
@@ -332,14 +332,13 @@ Here is the data view mapping:
 
 The categorical data view could be visualized like this:
 
-| Categorical |  |  | | | |
-|-----|-----|------|------|------|------|
-| | Year | 2013 | 2014 | 2015 | 2016 |
-| Country | | |
-| USA | | x | x | 650 | 350 |
-| Canada | | x | 630 | 490 | x |
-| Mexico | | 645 | x | x | x |
-| UK | | x | x | 831 | x |
+| Country | 2013 | 2014 | 2015 | 2016 |
+|---------|------|------|------|------|
+| USA | x | x | 650 | 350 |
+| Canada | x | 630 | 490 | x |
+| Mexico | 645 | x | x | x |
+| UK | x | x | 831 | x |
+
 
 Power BI produces it as the categorical data view. It's the set of categories.
 
@@ -425,7 +424,7 @@ Code sample for processing categorical data view mapping is described below. The
 "use strict";
 import powerbi from "powerbi-visuals-api";
 import DataView = powerbi.DataView;
-import DataViewDataViewCategoricalSingle = powerbi.DataViewCategorical;
+import DataViewCategorical = powerbi.DataViewCategorical;
 import DataViewValueColumnGroup = powerbi.DataViewValueColumnGroup;
 import PrimitiveValue = powerbi.PrimitiveValue;
 // standart imports

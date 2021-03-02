@@ -2,14 +2,12 @@
 title: Scan a Power BI QR code from your mobile device
 description: QR codes in Power BI can connect anything in the real world directly to related BI information in the Power BI mobile app for iPhones and Android devices.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 12/02/2019
-ms.author: painbar
-
 ---
 # Scan a Power BI QR code from your mobile device
 Applies to:
@@ -27,22 +25,22 @@ You can scan the QR code for immediate access to the relevant tile or report, ri
 If your colleague hasn't shared the dashboard or report with you, you can request access directly from the mobile app. 
 
 > [!NOTE]
-> You can also [scan a report QR code with the Power BI for Mixed Reality app](mobile-mixed-reality-app.md#scan-a-report-qr-code-in-holographic-view).
+> You can also [scan a report QR code with the Power BI for Mixed Reality app](./mobile-hololens2-app.md#open-reports-with-qr-codes).
 
 ## Scan a Power BI QR code on your iPhone with the Power BI scanner
 
 1. On the navigation bar, tap **More options** (...) and then tap **Scanner**.
 
-    ![](media/mobile-apps-qr-code/power-bi-scanner.png)
+    ![Screenshot of the More options on the navigation pane, showing the scanner selection.](media/mobile-apps-qr-code/power-bi-scanner.png)
 
 2. If your camera is not enabled, you need to approve the Power BI app to use the camera. This is a one-time approval. 
  
 3. Point the scanner at the Power BI QR code. 
    
-    ![](media/mobile-apps-qr-code/power-bi-align-qr-code.png)
+    ![Screenshot of a news print, showing the scanner pointing to a Power B I Q R code.](media/mobile-apps-qr-code/power-bi-align-qr-code.png)
 4. The tile or report appears to hover over the background in augmented reality.
    
-    ![](media/mobile-apps-qr-code/power-bi-ios-qr-ar-scanner.png)
+    ![Screenshot of a report, showing it hovering over the news print.](media/mobile-apps-qr-code/power-bi-ios-qr-ar-scanner.png)
 
 5. Tap the report or the tile to open it in focus mode, or go back to the scanner.
 
@@ -54,16 +52,16 @@ If your colleague hasn't shared the dashboard or report with you, you can reques
 
 1. On the navigation bar, tap **More options** (...) and then tap **Scanner**.
 
-    ![](media/mobile-apps-qr-code/power-bi-scanner.png)
+    ![Screenshot of the More options on the navigation pane, showing the scanner selection.](media/mobile-apps-qr-code/power-bi-scanner.png)
 
 2. If your camera is not enabled, you need to approve the Power BI app to use the camera. This is a one-time approval. 
 
 3. Point the scanner at the Power BI QR code. 
    
-    ![](media/mobile-apps-qr-code/pbi_iph_qrscan.png)
+    ![Screenshot of the Q R Scanner, showing the scanner pointing to a Power B I Q R code.](media/mobile-apps-qr-code/pbi_iph_qrscan.png)
 4. The tile or report opens automatically in Power BI.
    
-    ![](media/mobile-apps-qr-code/power-bi-android-tile.png)
+    ![Screenshot of the Opportunity Count report, showing a column chart by month and sales stage.](media/mobile-apps-qr-code/power-bi-android-tile.png)
 
 ### Scan a QR code from an external scanner on your Android device
 1. From any scanner installed on your Android device, point the scanner to the relevant Power BI QR code for immediate access to the tile or report. 
@@ -73,5 +71,5 @@ If your colleague hasn't shared the dashboard or report with you, you can reques
 * [Connect to Power BI data from the real world](mobile-apps-data-in-real-world-context.md) with the mobile apps
 * [Create a QR code for a tile in the Power BI service](../../create-reports/service-create-qr-code-for-tile.md)
 * [Create a QR code for a report in the Power BI service](../../create-reports/service-create-qr-code-for-report.md)
-* You can also [scan a QR code with the Power BI for Mixed Reality app](mobile-mixed-reality-app.md)
+* You can also [scan a QR code with the Power BI for Mixed Reality app](./mobile-hololens2-app.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

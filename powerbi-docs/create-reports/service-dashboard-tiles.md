@@ -2,14 +2,13 @@
 title: Intro to dashboard tiles for Power BI designers
 description: This article describes dashboard tiles in Power BI, which includes tiles that are created from SQL Server Reporting Services (SSRS) reports.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 04/17/2020
-ms.author: maggies
-
 LocalizationGroup: Dashboards
 ---
 # Intro to dashboard tiles for Power BI designers
@@ -37,7 +36,7 @@ There are many different ways to add (pin) a tile to a dashboard. You can pin ti
 * [Another dashboard](service-pin-tile-to-another-dashboard.md)
 * [Excel workbook on OneDrive for Business](service-dashboard-pin-tile-from-excel.md)
 * [Quick Insights](service-insights.md)
-* [An on-premises paginated report in Power BI Report Server or SQL Server Reporting Services](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
+* [An on-premises paginated report in Power BI Report Server or SQL Server Reporting Services](/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 
 You create standalone tiles for images, text boxes, videos, streaming data, and web content directly on the dashboard by using the [Add tile](service-dashboard-add-widget.md) control.
 

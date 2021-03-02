@@ -1,6 +1,6 @@
 ---
-title: Authenticate users & get Azure AD access token for your application
-description: Learn how to register an application in Azure Active Directory for use with embedding Power BI content.
+title: Authenticate users and get Azure AD access token for your Power BI embedded analytics application to enhance customers embedded BI experience
+description: Learn how to register an application in Azure Active Directory for use with embedding Power BI content. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -12,9 +12,9 @@ ms.date: 06/04/2019
 
 # Get an Azure AD access token for your Power BI application
 
-This article shows how you can authenticate users in your Power BI application and retrieve an access token to use with the [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/).
+This article shows how you can authenticate users in your Power BI application and retrieve an access token to use with the [Power BI REST API](/rest/api/power-bi/).
 
-Before your app calls the REST API, you need to get an Azure Active Directory (Azure AD) **authentication access token**. Your app uses a token to get access to Power BI dashboards, tiles, and reports. To learn more, see [Authorize access to Azure Active Directory web applications using the OAuth 2.0 code grant flow](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code).
+Before your app calls the REST API, you need to get an Azure Active Directory (Azure AD) **authentication access token**. Your app uses a token to get access to Power BI dashboards, tiles, and reports. To learn more, see [Authorize access to Azure Active Directory web applications using the OAuth 2.0 code grant flow](/azure/active-directory/develop/v1-protocols-oauth-code).
 
 Depending on how you're embedding content, the access token is retrieved differently. This article shows two different approaches.
 
@@ -50,7 +50,7 @@ var @params = new NameValueCollection
 
 After you construct a query string, you redirect to **Azure AD** to get an **authorization code**.  Below is a complete C# method to construct an **authorization code** query string, and redirect to **Azure AD**. You then use the **authorization code** to get an **access token**.
 
-Within redirect.aspx.cs, [AuthenticationContext.AcquireTokenByAuthorizationCode](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenbyauthorizationcodeasync?view=azure-dotnet#Microsoft_IdentityModel_Clients_ActiveDirectory_AuthenticationContext_AcquireTokenByAuthorizationCodeAsync_System_String_System_Uri_Microsoft_IdentityModel_Clients_ActiveDirectory_ClientCredential_System_String_) calls to generate the token.
+Within redirect.aspx.cs, [AuthenticationContext.AcquireTokenByAuthorizationCode](/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenbyauthorizationcodeasync#Microsoft_IdentityModel_Clients_ActiveDirectory_AuthenticationContext_AcquireTokenByAuthorizationCodeAsync_System_String_System_Uri_Microsoft_IdentityModel_Clients_ActiveDirectory_ClientCredential_System_String_) calls to generate the token.
 
 #### Get authorization code
 
@@ -172,6 +172,8 @@ For this approach, you use a [service principal](embed-service-principal.md), th
 #### EmbedService.cs
 
 ```csharp
+var AuthorityURL  = "https://login.microsoftonline.com/<TenantId>/"
+var ResourceURL  = "https://analysis.windows.net/powerbi/api"
 var authenticationContext = new AuthenticationContext(AuthorityUrl);
        AuthenticationResult authenticationResult = null;
        if (AuthenticationType.Equals("MasterUser"))
@@ -199,6 +201,6 @@ Error message: "'AuthenticationContext' doesn't contain a definition for 'Acquir
 
 ## Next steps
 
-Now that you have the access token, you can call the Power BI REST API to embed content. For information, see [How to embed your Power BI content](embed-sample-for-customers.md#embed-content-within-your-application).
+Now that you have the access token, you can call the Power BI REST API to embed content.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

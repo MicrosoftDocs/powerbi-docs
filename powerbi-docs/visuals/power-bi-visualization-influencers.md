@@ -2,13 +2,13 @@
 title: Key influencers visualizations tutorial
 description: 'Tutorial: Create a key influencers visualization in Power BI'
 author: mihart
+ms.author: mihart
 ms.reviewer: juluczni
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
+ms.custom: video-fDb5zZ3xmxU
 ms.topic: how-to
 ms.date: 01/10/2020
-ms.author: rien
-
 LocalizationGroup: Visualizations
 ---
 # Create key influencers visualizations
@@ -54,7 +54,7 @@ Watch this video to learn how to create a key influencers visual with a categori
    > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Your Product Manager wants you to figure out which factors lead customers to leave negative reviews about your cloud service. To follow along, open the [Customer Feedback PBIX file](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.pbix) in Power BI Desktop. You also can download the [Customer Feedback Excel file for Power BI service or Power BI Desktop](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.xlsx). Select either link and then select **Download** from the GitHub page that opens.
+Your Product Manager wants you to figure out which factors lead customers to leave negative reviews about your cloud service. To follow along, open the [Customer Feedback PBIX file](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.pbix) in Power BI Desktop. You also can download the [Customer Feedback Excel file for Power BI service or Power BI Desktop](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.xlsx). Select either link and then select **Download** from the GitHub page that opens.
 
 > [!NOTE]
 > The Customer Feedback data set is based on [Moro et al., 2014] S. Moro, P. Cortez, and P. Rita. "A Data-Driven Approach to Predict the Success of Bank Telemarketing." *Decision Support Systems*, Elsevier, 62:22-31, June 2014. 
@@ -140,7 +140,7 @@ The scatter plot in the right pane plots the average percentage of low ratings f
 
 In some cases you may find that your continuous factors were automatically turned into categorical ones. This is because we realized the relationship between the variables is not linear and so we cannot describe the relationship as simply increasing or decreasing (like we did in the example above).
 
-We run correlation tests to determine how linear the influencer is with regards to the target. If the target is continuous, we run Pearson correlation and if the target is categorical, we run Point Biserial correlation tests. If we detect the relationship is not sufficiently linear we conduct supervised binning and generate a maximum of 5 bins. To figure out which bins make the most sense we use a supervised binning method which looks at the relationship between the explanatory factor and the target being analyzed.
+We run correlation tests to determine how linear the influencer is with regard to the target. If the target is continuous, we run Pearson correlation and if the target is categorical, we run Point Biserial correlation tests. If we detect the relationship is not sufficiently linear we conduct supervised binning and generate a maximum of 5 bins. To figure out which bins make the most sense we use a supervised binning method which looks at the relationship between the explanatory factor and the target being analyzed.
 
 ## Interpret measures and aggregates as key influencers 
  
@@ -161,7 +161,7 @@ Top segments initially show an overview of all the segments that Power BI discov
 
 ![Select Top segments tab](media/power-bi-visualization-influencers/power-bi-top-segments-tab.png)
 
-Selecting a bubble drills into the details of that segment. If you select Segment 1, for example, you find that it's made up of relatively established customers. They've been customers for over 29 months and have more than four support tickets. Finally, they're not publishers, so they're either consumers or administrators. 
+Selecting a bubble displays the details of that segment. If you select Segment 1, for example, you find that it's made up of relatively established customers. They've been customers for over 29 months and have more than four support tickets. Finally, they're not publishers, so they're either consumers or administrators. 
  
 In this group, 74.3% of the customers gave a low rating. The average customer gave a low rating 11.7% of the time, so this segment has a larger proportion of low ratings. It's 63 percentage points higher. Segment 1 also contains approximately 2.2% of the data, so it represents an addressable portion of the population. 
 
@@ -226,35 +226,35 @@ Finally, in the case of measures we are looking at the average year a house was 
 -	The scatterplot in the right pane plots the average house price for each distinct value in the table
 -	The value in the bubble shows by how much the average house price increases (in this case $1.35K) when the average year increases by its standard deviation (in this case 30 years)
 
-![Numeric target measures influencers](media/power-bi-visualization-influencers/power-bi-ki-numeric-measures.png)
+![Screenshot shows Key influencers for house prices with influencers on the left and the scatterplot on the right.](media/power-bi-visualization-influencers/power-bi-ki-numeric-measures.png)
 
 ## Interpret the results: Top Segments
 
 Top segments for numerical targets show groups where the house prices on average are higher than in the overall dataset. For example, below we can see that **Segment 1** is made up of houses where **GarageCars** (number of cars the garage can fit) is greater than 2 and the **RoofStyle** is Hip. Houses with those characteristics have an average price of $355K compared to the overall average in the data which is $180K.
 
-![Numeric target measures influencers](media/power-bi-visualization-influencers/power-bi-ki-numeric-segments.png)
+![Screenshot shows Top segments for house prices.](media/power-bi-visualization-influencers/power-bi-ki-numeric-segments.png)
 
 ## Analyze a metric that is a measure or a summarized column
 
-In the case of a measure or summarized column the analysis defaults to the **Continuous Analysis Type** described [above](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric). This cannot be changed. The biggest difference between analyzing a measure/summarized column and an unsummarized numeric column is the level at which the analysis runs.
+In the case of a measure or summarized column the analysis defaults to the **Continuous Analysis Type** described [above](#analyze-a-metric-that-is-numeric). This cannot be changed. The biggest difference between analyzing a measure/summarized column and an unsummarized numeric column is the level at which the analysis runs.
 
 In the case of unsummarized columns, the analysis always runs at the table level. In the house price example above, we analyzed the **House Price** metric to see what influences a house price to increase/decrease. The analysis automatically runs on the table level. Our table has a unique ID for each house so the analysis runs at a house level.
 
-![Measures table](media/power-bi-visualization-influencers/power-bi-ki-measures-table.png)
+![Screenshot shows the table level analysis for the house price example.](media/power-bi-visualization-influencers/power-bi-ki-measures-table.png)
 
 For measures and summarized columns, we don't immediately know what level to analyze them at. If **House Price** was summarized as an **Average**, we would need to consider what level we would like this average house price calculated. Is it the average house price at a neighborhood level? Or perhaps a regional level?
 
 Measures and summarized columns are automatically analyzed at the level of the **Explain by** fields used. Imagine we have three fields in **Explain By** we are interested in: **Kitchen Quality**, **Building Type** and **Air Conditioning**. **Average House Price** would be calculated for each unique combination of those three fields. It is often helpful to switch to a table view to take a look at what the data being evaluated looks like.
 
-![Measures table](media/power-bi-visualization-influencers/power-bi-ki-measures-table2.png)
+![Screenshot shows the three columns and the average house price.](media/power-bi-visualization-influencers/power-bi-ki-measures-table2.png)
 
 This analysis is very summarized and so it will be hard for the regression model to find any patterns in the data it can learn from. We should run the analysis at a more detailed level to get better results. If we wanted to analyze the house price at the house level we would need to explicitly add the **ID** field to the analysis. Nevertheless, we don't want the house ID to be considered an influencer. It is not helpful to learn that as house ID increases, the price of a house increase. This is where the **Expand By** field well option comes in handy. You can use **Expand By** to add fields you want to use for setting the level of the analysis without looking for new influencers.
 
-Take a look at what the visualization looks like once we add **ID** to **Expand By**. Once you have defined the level at which you want your measure evaluated, interpreting influencers is exactly the same as for [unsummarized numeric columns](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric).
+Take a look at what the visualization looks like once we add **ID** to **Expand By**. Once you have defined the level at which you want your measure evaluated, interpreting influencers is exactly the same as for [unsummarized numeric columns](#analyze-a-metric-that-is-numeric).
 
-![Measures table](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
+![Screenshot shows the house price visualization that depends on the three columns discussed in this section.](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
 
-If you would like to learn more about how you can analyze measures with the key influencers visualization please watch the following tutorial.
+If you would like to learn more about how you can analyze measures with the key influencers visualization please watch the following video. To learn how Power BI uses ML.NET behind the scenes to reason over data and surface insights in a natural way, see [Power BI identifies key influencers using ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet/customers/power-bi).
 
 <iframe width="1167" height="631" src="https://www.youtube.com/embed/2X1cW8oPtc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -270,6 +270,7 @@ The key influencers visual has some limitations:
 - Live Connection to Azure Analysis Services and SQL Server Analysis Services is not supported
 - Publish to web is not supported
 - .NET Framework 4.6 or higher is required
+- SharePoint Online embedding isn't supported
 
 ![Numeric question](media/power-bi-visualization-influencers/power-bi-ki-numeric-question.png)
 
@@ -403,3 +404,4 @@ Sharing your report with a Power BI colleague requires that you both have indivi
 ## Next steps
 - [Combo charts in Power BI](power-bi-visualization-combo-chart.md)
 - [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [How Power BI uses ML.NET to identify key influencers](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet/customers/power-bi)

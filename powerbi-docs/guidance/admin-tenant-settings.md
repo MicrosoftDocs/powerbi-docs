@@ -1,17 +1,16 @@
 ---
-title: Tenant admin settings guidance
+title: Tenant settings guidance
 description: Guidance for Power BI tenant settings.
-author: peter-myers
+author: paulinbar
+ms.author: painbar
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
-ms.date: 01/29/2020
-ms.author: v-pemyer
+ms.date: 08/10/2020
 ---
 
-# Tenant admin settings guidance
+# Tenant settings guidance
 
 This article targets Power BI administrators who are responsible for setting up and configuring the Power BI environment in their organization.
 
@@ -35,9 +34,13 @@ If you do so, we recommend you then enable the **Publish "Get Help" information*
 These URLs will become available as links in the Power BI help menu.
 
 > [!NOTE]
-> Supplying the **Licensing requests** URL will prevent individual users from signing up for the free 60-day Power BI Pro trial. Instead, they'll be directed to your internal site with information on how to acquire a license—Free or Pro.
+> Supplying the **Licensing requests** URL prevents individual users from buying a Power BI Pro license. Instead, they'll be directed to your internal site with information on how to acquire a license. The setting **Allow users to try Power BI Pro** is enabled by default and separates the purchase and trial experiences. To learn more about how these settings work together, see [Allow users to try Power BI Pro](../admin/service-admin-portal.md#allow-users-to-try-power-bi-paid-features).
+>
+>
 
-![The "Publish 'Get Help' information" setting is shown.](media/admin-tenant-settings/publish-get-help-information.png)
+![Screenshot of Power B I Desktop showing Help and Support settings.](media/admin-tenant-settings/publish-get-help-information.png)
+
+For more information, see [Help and support settings](../admin/service-admin-portal.md#help-and-support-settings).
 
 ## Manage risk
 The settings to manage risks can help you establish governance policies in your Power BI tenant. Keep in mind, however, that governance settings are not a security measure. For example, disabling the **Export data** setting removes the feature from the Power BI user interface and helps in this way Power BI users to work in compliance with your organization's governance policies, but it does not prevent determined users from exporting data using other options. From a security viewpoint, a Power BI user with read access to a dataset has the permission to query this dataset and can persist the results regardless of the features available in the Power BI user interface.
@@ -47,7 +50,7 @@ You can be notified by email if your tenant is impacted by a service outage or i
 
 We recommend you enable the **Receive email notification service outages or incidents** setting. It's found in the **Help and support settings** group. Assign one or more _mail-enabled_ security groups.
 
-![The "Receive email notifications for service outages or incidents" setting is shown.](media/admin-tenant-settings/receive-email-notifications-for-service-outages-or-incidents.png)
+![Screenshot of Power B I Desktop showing the "Receive email notifications for service outages or incidents" setting.](media/admin-tenant-settings/receive-email-notifications-for-service-outages-or-incidents.png)
 
 ### Information protection
 
@@ -70,7 +73,7 @@ We recommend you assign one or more security groups. These groups can be granted
 
 Be sure to include instructions in your documentation letting users (who don't have workspace creation rights) know how they can request a new workspace.
 
-![The "Create workspaces" setting is shown.](media/admin-tenant-settings/create-workspaces.png)
+![Screenshot of Power B I Desktop showing the "Create workspaces" setting.](media/admin-tenant-settings/create-workspaces.png)
 
 ### Share content with external users
 
@@ -80,7 +83,7 @@ The **Share content with external users** setting is enabled by default for the 
 
 We recommend you assign one or more security groups. These groups can be granted _or denied_ permission to share content with external users.
 
-![The "Share content with external users" setting is shown.](media/admin-tenant-settings/share-content-with-external-users.png)
+![Screenshot of Power B I Desktop showing the "Share content with external users" setting.](media/admin-tenant-settings/share-content-with-external-users.png)
 
 ### Publish to web
 
@@ -92,7 +95,7 @@ If enabled, we recommend you assign one or more security groups. These groups ca
 
 Further, there's an option to choose how your embed codes work. By default, it's set to **Only allow existing codes**. It means users will be asked to contact a Power BI admin to create an embed code.
 
-![The "Publish to web" setting is shown.](media/admin-tenant-settings/publish-to-web.png)
+![Screenshot of Power B I Desktop showing the "Publish to web" setting.](media/admin-tenant-settings/publish-to-web.png)
 
 We also recommend you review [publish to web embed codes](https://app.powerbi.com/admin-portal/embedCodes) regularly. Remove codes if they result in the publication of private or confidential information.
 
@@ -107,7 +110,7 @@ We recommend you assign one or more security groups. These groups can be granted
 > [!IMPORTANT]
 > Disabling this setting also restricts the use of the [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) and Power BI service [live connection](../connect-data/desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management) features.
 
-![The "Export data" setting is shown.](media/admin-tenant-settings/export-data.png)
+![Screenshot of Power B I Desktop showing the "Export data" setting.](media/admin-tenant-settings/export-data.png)
 
 > [!NOTE]
 > If users allow users to export data, you can add a layer of protection by enforcing [data protection](../admin/service-security-data-protection-overview.md). When configured, unauthorized users will be blocked from exporting content with sensitivity labels.
@@ -120,7 +123,7 @@ The **Allow external guest users to edit and manage content in the organization*
 
 If you need to authorize external users to edit and manage content, we recommend you assign one or more security groups. These groups can be granted _or denied_ permission to publish reports.
 
-![The "Allow external guest users to edit and manage content in the organization" setting is shown.](media/admin-tenant-settings/allow-external-guest-users.png)
+![Screenshot of Power B I Desktop showing the "Allow external guest users to edit and manage content in the organization" setting.](media/admin-tenant-settings/allow-external-guest-users.png)
 
 ### Developer settings
 
@@ -131,7 +134,7 @@ There are two tenant settings related to [embedding Power BI content](../develop
 
 If you have no intention of using the developer APIs to embed content, we recommend you disable them. Or, at least configure specific security groups that would be doing this work.
 
-![The developer settings are shown.](media/admin-tenant-settings/developer-settings.png)
+![Screenshot of Power B I Desktop showing the developer settings.](media/admin-tenant-settings/developer-settings.png)
 
 ## Next steps
 
@@ -141,4 +144,3 @@ For more information related to this article, check out the following resources:
 - [Administering Power BI in the admin portal](../admin/service-admin-portal.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
-

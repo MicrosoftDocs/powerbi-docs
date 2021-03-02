@@ -20,6 +20,7 @@ metadata:
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
+            
   # Card (optional)
   - title: Get started
     linkLists:
@@ -39,7 +40,25 @@ landingContent:
             url: walkthrough-push-data-get-datasets.md
           - text: "Add rows to a Power BI table"
             url: walkthrough-push-data-add-rows.md
+          - text: "Tutorial: Automate template app configuration"
+            url: ../template-apps/template-apps-auto-install-tutorial.md
 
+  # Card (optional)
+  - title: Client APIs
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: "Power BI embedded analytics Client APIs"
+            url: /javascript/api/overview/powerbi/
+
+    # Card (optional)
+  - title: Embedded Gen2
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: "Power BI Embedded Generation 2 (preview)"
+            url: ../embedded/power-bi-embedded-generation-2.md         
+            
   # Card
   - title: Work with data
     linkLists:
@@ -51,6 +70,8 @@ landingContent:
             url: api-rest-api-limitations.md
           - text: "Dataset properties"
             url: api-dataset-properties.md
+          - text: "Automated template app configuration"
+            url: ../template-apps/template-apps-auto-install.md
       - linkListType: how-to-guide
         links:
           - text: "Configure credentials"
@@ -62,9 +83,9 @@ landingContent:
       - linkListType: reference
         links:
           - text: "Power BI REST APIs"
-            url: https://docs.microsoft.com/rest/api/power-bi/
+            url: /rest/api/power-bi/
           - text: "Power BI REST API Reference"
-            url: https://docs.microsoft.com/power-bi/developer/automation/rest-api-reference
+            url: ./rest-api-reference.md
           - text: Developer center
             url: https://powerbi.microsoft.com/developers/
           - text: "Power BI libraries"

@@ -5,11 +5,10 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 04/10/2019
-ms.custom: seodec18
-
+ms.date: 02/01/2021
+ms.custom:
 LocalizationGroup: Premium
 ---
 
@@ -20,6 +19,9 @@ Managing Power BI Premium involves creating, managing, and monitoring Premium ca
 ## Creating and managing capacities
 
 The **Capacity Settings** page of the Power BI Admin portal displays the number of v-cores purchased and Premium capacities available. The page allows Global administrators or Power BI service administrators to create Premium capacities from available v-cores, or to modify existing Premium capacities.
+
+> [!NOTE]
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
 
 When creating a Premium capacity, administrators are required to define:
 
@@ -37,7 +39,7 @@ At least one Capacity Admin must be assigned. Users assigned as Capacity Admins 
 
 Capacity Admins cannot access workspace content unless explicitly assigned in workspace permissions. They also don't have access to all Power BI admin areas (unless explicitly assigned) such as usage metrics, audit logs, or tenant settings. Importantly, Capacity Admins do not have permissions to create new capacities or scale existing capacities. Admins are assigned on a per capacity basis, ensuring that they can only view and manage capacities to which they are assigned.
 
-Capacity size is selected from an available list of SKU options, which is constrained by the number of available v-cores in the pool. It's possible to create multiple capacities from the pool, which could be sourced from one or more purchased SKUs. For example, a P3 SKU (32 v-cores) could be used to create three capacities: one P2 (16 v-cores), and two P1 (2 x 8 v-cores). Improved performance and scale can be achieved by creating smaller sized capacities, as described in the [Optimizing Premium Capacities](service-premium-capacity-optimize.md) article. The following image shows an example setup for the fictitious Contoso organization consisting of five Premium capacities (3 x P1, and 2 x P3) with each containing workspaces, and several workspaces in shared capacity.
+Capacity size is selected from an available list of SKU options, which is constrained by the number of available v-cores in the pool. It's possible to create multiple capacities from the pool, which could be sourced from one or more purchased SKUs. For example, a P3 SKU (32 v-cores) could be used to create three capacities: one P2 (16 v-cores), and two P1 (2 x 8 v-cores). The following image shows an example setup for the fictitious Contoso organization consisting of five Premium capacities (3 x P1, and 2 x P3) with each containing workspaces, and several workspaces in shared capacity.
 
 ![An example setup for the fictitious Contoso organization](media/service-premium-capacity-manage/contoso-organization-example.png)
 
@@ -56,6 +58,8 @@ Assignment permissions are required to assign a workspace to a specific Premium 
 By default, Premium capacities support workloads associated with running Power BI queries. Premium capacities also support additional workloads: **AI (Cognitive Services)**, **Paginated Reports**, and **Dataflows**. Each workload requires configuring the maximum memory (as a percentage of total available memory) that can be used by the workload. It's important to understand that increasing maximum memory allocations can impact the number of active models that can be hosted and the throughput of refreshes. 
 
 Memory is dynamically allocated to dataflows, but is statically allocated to paginated reports. The reason for statically allocating the maximum memory is that paginated reports run within a secured contained space of the capacity. Care should be taken when setting paginated reports memory as it reduces available memory for loading models. To learn more, see the [Default memory settings](service-admin-premium-workloads.md#default-memory-settings).
+
+For Premium Gen2, no memory settings or updates are required. All workloads have all the memory they need, within the limits of your capacity SKU.
 
 Deleting a Premium capacity is possible and won't result in the deletion of its workspaces and content. Instead, it moves any assigned workspaces to shared capacity. When the Premium capacity was created in a different region, the workspace is moved to shared capacity of the home region.
 
@@ -103,7 +107,7 @@ The monitoring capabilities in the Power BI Admin portal are designed to provide
 
 ### Power BI Premium Capacity Metrics app
 
-The [Power BI Premium Capacity Metrics app](https://appsource.microsoft.com/product/power-bi/pbi_pcmm.pbi-premiumcapacitymonitoring?tab=Overview) is a Power BI app available to capacity admins and is installed like any other Power BI app. It contains a dashboard and report.
+The [Power BI Premium Capacity Metrics app](https://appsource.microsoft.com/en-us/product/power-bi/pbi_pcmm.capacity-metrics-dxt?tab=Overview) is a Power BI app available to capacity admins and is installed like any other Power BI app. It contains a dashboard and report.
 
 ![Power BI Premium Capacity Metrics app](media/service-premium-capacity-manage/capacity-metrics-app.png)
 
@@ -144,7 +148,7 @@ In general, slow reports can be an indication of an over-heating capacity. When 
 
 A more detailed explanation of how to use the metrics is covered in the [Optimizing Premium capacities](service-premium-capacity-optimize.md) article.
 
-## Acknowledgements
+## Acknowledgments
 
 This article was written by Peter Myers, Data Platform MVP and independent BI expert with [Bitwise Solutions](https://www.bitwisesolutions.com.au/).
 
@@ -157,3 +161,12 @@ This article was written by Peter Myers, Data Platform MVP and independent BI ex
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
+Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+* Performance
+* Per-user licensing
+* Greater scale
+* Improved metrics
+* Autoscaling
+* Reduced management overhead
+
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

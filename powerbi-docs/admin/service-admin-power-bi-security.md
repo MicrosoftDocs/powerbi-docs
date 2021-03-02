@@ -23,18 +23,18 @@ Each Power BI deployment consists of two clusters – a Web Front End (**WFE**) 
 
 The **WFE** cluster manages the initial connection and authentication process for Power BI, using AAD to authenticate clients and provide tokens for subsequent client connections to the Power BI service. Power BI also uses the **Azure Traffic Manager** (ATM) to direct user traffic to the nearest datacenter, determined by the DNS record of the client attempting to connect, for the authentication process and to download static content and files. Power BI uses the **Azure Content Delivery Network** (CDN) to efficiently distribute the necessary static content and files to users based on geographical locale.
 
-![](media/service-admin-power-bi-security/pbi_security_v2_wfe.png)
+![Diagram showing Power B I Architecture for Web Front End cluster.](media/service-admin-power-bi-security/pbi_security_v2_wfe.png)
 
 The **Back-End** cluster is how authenticated clients interact with the Power BI service. The **Back-End** cluster manages visualizations, user dashboards, datasets, reports, data storage, data connections, data refresh, and other aspects of interacting with the Power BI service. The **Gateway Role** acts as a gateway between user requests and the Power BI service. Users do not interact directly with any roles other than the **Gateway Role**. **Azure API Management** will eventually handle the **Gateway Role**.
 
-![](media/service-admin-power-bi-security/pbi_security_v2_backend_updated.png)
+![Diagram showing Power B I Architecture for Web Back End cluster.](media/service-admin-power-bi-security/pbi_security_v2_backend_updated.png)
 
 > [!IMPORTANT]
 > It is imperative to note that only **Azure API Management** (APIM) and **Gateway** (GW) roles are accessible through the public Internet. They provide authentication, authorization, DDoS protection, Throttling, Load Balancing, Routing, and other capabilities.
 
 ## Data Storage Security
 
-Power BI uses two primary repositories for storing and managing data: data that is uploaded from users is typically sent to **Azure BLOB** storage, and all metadata as well as artifacts for the system itself are stored in **Azure SQL Database**.
+Power BI uses two primary repositories for storing and managing data: data that is uploaded from users is typically sent to **Azure Blob Storage**, and all metadata as well as artifacts for the system itself are stored in **Azure SQL Database**.
 
 The dotted line in the **Back-End** cluster image, above, clarifies the boundary between the only two components that are accessible by users (left of the dotted line), and roles that are only accessible by the system. When an authenticated user connects to the Power BI Service, the connection and any request by the client is accepted and managed by the **Gateway Role** (eventually to be handled by **Azure API Management**), which then interacts on the user’s behalf with the rest of the Power BI Service. For example, when a client attempts to view a dashboard, the **Gateway Role** accepts that request then separately sends a request to the **Presentation Role** to retrieve the data needed by the browser to render the dashboard.
 
@@ -48,7 +48,7 @@ Platform security for Power BI also includes multi-tenant environment security, 
 
 ## Data and Service Security
 
-For more information, please visit the [Microsoft Trust Center](https://www.microsoft.com/trustcenter).
+For more information, please visit the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview).
 
 As described earlier in this article, a user’s Power BI login is used by on-premises Active Directory servers to map to a UPN for credentials. However, it’s **important** to note that users are responsible for the data they share: if a user connects to data sources using their credentials, then shares a report (or dashboard, or dataset) based on that data, users with whom the dashboard is shared are not authenticated against the original data source, and will be granted access to the report.
 
@@ -56,10 +56,10 @@ An exception is connections to **SQL Server Analysis Services** using the **On-p
 
 ## Enforcing TLS version usage
 
-Network and IT administrators can enforce the requirement to use current TLS (Transport Layer Security) for any secured communication on their network. Windows provides support for TLS versions over the Microsoft Schannel Provider, as [described in the TLS Schannel SSP article](https://docs.microsoft.com/windows/desktop/SecAuthN/protocols-in-tls-ssl--schannel-ssp-).
+Network and IT administrators can enforce the requirement to use current TLS (Transport Layer Security) for any secured communication on their network. Windows provides support for TLS versions over the Microsoft Schannel Provider, as [described in the TLS Schannel SSP article](/windows/desktop/SecAuthN/protocols-in-tls-ssl--schannel-ssp-).
 
-This enforcement can be done by administratively setting registry keys. Enforcement is described in the [Managing SSL Protocols in AD FS article](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/manage-ssl-protocols-in-ad-fs). 
+This enforcement can be done by administratively setting registry keys. Enforcement is described in the [Managing SSL Protocols in AD FS article](/windows-server/identity/ad-fs/operations/manage-ssl-protocols-in-ad-fs). 
 
 **Power BI Desktop** respects the registry key settings described in those articles, and only created connections using the version of TLS allowed based on those registry settings, when present.
 
-For more information about setting these registry keys, see the [TLS Registry Settings](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings) article.
+For more information about setting these registry keys, see the [TLS Registry Settings](/windows-server/security/tls/tls-registry-settings) article.

@@ -5,11 +5,11 @@ author: KesemSharabi
 ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
-ms.subservice: powerbi-service
-ms.date: 05/06/2020
+ms.subservice: pbi-deployment
+ms.date: 10/21/2020
 ---
 
-# Deployment pipelines best practices (preview)
+# Deployment pipelines best practices
 
 This article provides guidance for BI creators who are managing their content throughout its lifecycle. It focuses on leveraging deployment pipelines as a BI content lifecycle management tool.
 
@@ -74,7 +74,7 @@ A production database should always be stable and available. It's better not to 
 
 ### Use parameters in your model
 
-As you can't edit datasets data sources in Power BI service, we recommend using [parameters](https://docs.microsoft.com/power-query/power-query-query-parameters) to store connection details such as instance names and database names, instead of using a static connection string. This allows you to manage the connections through the Power BI service web portal, or [using APIs](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup), at a later stage.
+As you can't edit datasets data sources in Power BI service, we recommend using [parameters](/power-query/power-query-query-parameters) to store connection details such as instance names and database names, instead of using a static connection string. This allows you to manage the connections through the Power BI service web portal, or [using APIs](/rest/api/power-bi/datasets/updateparametersingroup), at a later stage.
 
 In deployment pipelines, you can configure parameter rules to set specific values for the development, test, and production stages.
 
@@ -88,26 +88,26 @@ This section provides guidance for working with the deployment pipelines develop
 
 ### Use Power BI Desktop to edit your reports and datasets
 
-Consider Power BI Desktop as your local development environment. Power BI Desktop allows you to try, explore, and review updates to your reports and datasets. Once the work is done, you can upload your new version to the development stage. Due to the following reasons, it's recommended to edit .pbix files in the Desktop (and not in Power BI service):
+Consider Power BI Desktop as your local development environment. Power BI Desktop allows you to try, explore, and review updates to your reports and datasets. Once the work is done, you can upload your new version to the development stage. Due to the following reasons, it's recommended to edit PBIX files in the Desktop (and not in Power BI service):
 
-* It is easier to collaborate with fellow creators on the same .pbix file, if all changes are being done on the same tool.
+* It is easier to collaborate with fellow creators on the same PBIX file, if all changes are being done on the same tool.
 
- * Making online changes, downloading the .pbix file, and then uploading it again, creates reports and datasets duplication.
+ * Making online changes, downloading the PBIX file, and then uploading it again, creates reports and datasets duplication.
 
-* You can use version control to keep your .pbix files up to date.
+* You can use version control to keep your PBIX files up to date.
 
-### Version control for .pbix files
+### Version control for PBIX files
 
-If you want to manage the version history of your reports and datasets, use [Power BI's autosync with OneDrive](../connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business.md). This will keep your files updated with the latest version. It will also enable you to retrieve older versions if needed.
+If you want to manage the version history of your reports and datasets, use [Power BI's autosync with OneDrive](../collaborate-share/service-connect-to-files-in-app-workspace-onedrive-for-business.md). This will keep your files updated with the latest version. It will also enable you to retrieve older versions if needed.
 
 >[!NOTE]
->Use auto-sync with OneDrive (or any other repository) only with the .pbix files in the deployment pipelines development stage. Do not sync .pbix files into the deployment pipelines test and production stages. This will cause problems with deploying content across the pipeline.
+>Use auto-sync with OneDrive (or any other repository) only with the PBIX files in the deployment pipeline's development stage. Do not sync PBIX files into the deployment pipeline's test and production stages. This will cause problems with deploying content across the pipeline.
 
 ### Separate modeling development from report and dashboard development
 
 For enterprise scale deployments, it's recommended to separate dataset development, and the development of reports and dashboards. To promote changes to only a report or a dataset, use the deployment pipelines selective deploy option.  
 
-This approach should start from Power BI Desktop, by creating a separate .pbix file for datasets and reports. For example, you can create a dataset .pbix file and uploaded it to the development stage. Later, your report authors can create a new .pbix only for the report, and [connect it to the published dataset](../connect-data/service-datasets-discover-across-workspaces.md) using a live connection. This technic allows different creators to separately work on modeling and visualizations, and deploy them to production independently.
+This approach should start from Power BI Desktop, by creating a separate PBIX file for datasets and reports. For example, you can create a dataset PBIX file and uploaded it to the development stage. Later, your report authors can create a new PBIX only for the report, and [connect it to the published dataset](../connect-data/service-datasets-discover-across-workspaces.md) using a live connection. This technic allows different creators to separately work on modeling and visualizations, and deploy them to production independently.
 
 With [shared datasets](../connect-data/service-datasets-share.md), you can also use this method across workspaces.
 
@@ -135,7 +135,7 @@ Make sure that these three factors are addressed in your test environment:
 
 When testing, you can use the same capacity as the production stage. However, this can make production unstable during load testing. To avoid unstable production, use another capacity similar in resources to the production capacity, for testing. To avoid extra costs, you can use [Azure A capacities](../developer/embedded/azure-pbie-create-capacity.md) to pay only for the testing time.
 
-![deployment pipelines best practices diagram](media/deployment-pipelines-best-practices/deployment-pipelines-best-practices-diagram.png)
+![A diagram showing a deployment pipeline with a test environment simulating the production environment.](media/deployment-pipelines-best-practices/deployment-pipelines-best-practices-diagram.png)
 
 ### Use dataset rules with a real-life data source
 
@@ -190,7 +190,7 @@ Deployment in a pipeline updates the workspace content, but it doesn't update th
 
 ### Quick fixes to content
 
-In case there are bugs in production that require a quick fix, don't be tempted to either upload a new .pbix version directly to the production stage, or make an online change in Power BI service. Deploying backwards to test and development stages isn't possible when there's already content in those stages. Furthermore, deploying a fix without testing it first is bad practice. Therefore, the correct way to treat this problem, is to implement the fix in the development stage, and push it to the rest of the deployment pipeline stages. This allows checking that the fix works, before deploying it to production. Deploying across the pipeline and takes only a few minutes.
+In case there are bugs in production that require a quick fix, don't be tempted to either upload a new PBIX version directly to the production stage, or make an online change in Power BI service. Deploying backwards to test and development stages isn't possible when there's already content in those stages. Furthermore, deploying a fix without testing it first is bad practice. Therefore, the correct way to treat this problem, is to implement the fix in the development stage, and push it to the rest of the deployment pipeline stages. This allows checking that the fix works, before deploying it to production. Deploying across the pipeline takes only a few minutes.
 
 ## Next steps
 

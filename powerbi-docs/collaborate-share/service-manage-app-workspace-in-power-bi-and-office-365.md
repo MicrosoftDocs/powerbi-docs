@@ -2,12 +2,12 @@
 title: Manage your workspace in Power BI and Microsoft 365
 description: Workspaces in Power BI are a collaborative experience built on Microsoft 365 groups. Manage your workspaces in Power BI and also in Microsoft 365.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukasz
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 03/02/2020
-ms.author: maggies
 LocalizationGroup: Share your work
 ---
 
@@ -37,7 +37,7 @@ You need a [Power BI Pro license](../fundamentals/service-features-license-type.
 
 1. In the Power BI service, select the arrow next to **Workspaces** > select **More options** (...) next to your workspace name > **Edit this workspace**.
 
-   ![Edit workspaces in Power BI](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis.png)
+   ![Screenshot shows Power B I Home with Workspaces selected and Edit this workspace selected from the More options menu.](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis.png)
 
    > [!NOTE]
    > You only see **Edit this workspace** if you’re a workspace admin.
@@ -56,7 +56,7 @@ You can also edit aspects of a workspace directly in Outlook for Microsoft 365.
 
 1. In the Power BI service, select the arrow next to **Workspaces** > select **More options** (...) next to your workspace name > **Members**.
 
-   ![Edit workspaces in Power BI](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis-members.png)
+   ![Screenshot shows Power B I Home with Workspaces selected and Members selected from the More options menu.](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis-members.png)
 
    This opens the Outlook for Microsoft 365 group view of your workspace. You may need to sign in to your corporate account.
 

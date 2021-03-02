@@ -2,19 +2,17 @@
 title: Set data alerts in the Power BI mobile apps
 description: Learn to set alerts in the Power BI mobile apps to notify you when data in a dashboard changes beyond limits you set.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 12/11/2019
-ms.author: painbar
-
 ---
 # Set data alerts in the Power BI mobile apps
 Applies to:
 
-| ![iPhone](./media/mobile-set-data-alerts-in-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](./media/mobile-set-data-alerts-in-the-mobile-apps/ipad-logo-50-px.png) | ![Android phone](./media/mobile-set-data-alerts-in-the-mobile-apps/android-phone-logo-50-px.png) | ![Android tablet](./media/mobile-set-data-alerts-in-the-mobile-apps/android-tablet-logo-50-px.png) | ![Android tablet](./media/mobile-set-data-alerts-in-the-mobile-apps/win-10-logo-50-px.png) |
+| ![iPhone](./media/mobile-set-data-alerts-in-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](./media/mobile-set-data-alerts-in-the-mobile-apps/ipad-logo-50-px.png) | ![Android phone](./media/mobile-set-data-alerts-in-the-mobile-apps/android-phone-logo-50-px.png) | ![Android tablet](./media/mobile-set-data-alerts-in-the-mobile-apps/android-tablet-logo-50-px.png) | ![Windows 10 device.](./media/mobile-set-data-alerts-in-the-mobile-apps/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
 | iPhones |iPads |Android phones |Android tablets |Windows 10 devices |
 
@@ -33,14 +31,14 @@ You can set alerts on tiles if you have a Power BI Pro license, or if the shared
 ### Set an alert on an iPhone or iPad
 1. Tap a number or gauge tile in a dashboard to open it in focus mode.  
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual.png)
-2. Tap the bell icon ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-icon.png) to add an alert.  
+   ![Screenshot of a dashboard, showing the gauge tile in focus mode.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual.png)
+2. Tap the bell icon :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-icon.png" border="false"::: to add an alert.  
 3. Tap **Add alert rule**.
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-add-alert-rule.png)
+   ![Screenshot of the alert rule, showing no alerts set.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-add-alert-rule.png)
 4. Choose to receive alerts above or below a value, then set the value.
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-set-alert-threshold.png)
+   ![Screenshot of the alert settings, showing the alert title and value to set](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-set-alert-threshold.png)
 5. Decide whether to receive hourly or daily alerts, and whether to also receive an email when you get the alert.
    
    > [!NOTE]
@@ -51,32 +49,32 @@ You can set alerts on tiles if you have a Power BI Pro license, or if the shared
 7. Tap **Save**.
 8. A single tile can have alerts for values both above and below thresholds. In **Manage alerts**, tap **Add alert rule**.
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-add-another-alert-rule.png)
+   ![Screenshot of the Manage alert, showing a pointer to add an alert rule.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-add-another-alert-rule.png)
 
 ### Manage alerts on your iPhone or iPad
 You can manage individual alerts on your mobile device or [manage all your alerts in the Power BI service](../../create-reports/service-set-data-alerts.md).
 
 1. In a dashboard, tap a number or gauge tile that has an alert.  
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual_has_alert.png)
+   ![Screenshot of the dashboard on an iPhone or iPad, showing the number tile that has an alert.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual_has_alert.png)
 
-2. Tap the bell icon ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-has-alert-icon.png).  
+2. Tap the bell icon :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-has-alert-icon.png" border="false":::.  
 3. Tap the name of the alert to edit it, tap the slider to turn off email alerts, or tap the garbage can to delete the alert.
    
-    ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-edit-delete-alert.png)
+    ![Screenshot of an alert, pointing to the alert name, garbage can to delete the alert, and slider to turn the alert off.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-edit-delete-alert.png)
 
 ## Data alerts on an Android device
 ### Set an alert on an Android device
 1. In a Power BI dashboard, tap a number or gauge tile to open it.  
-2. Tap the bell icon ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-alert-icon.png) to add an alert.  
+2. Tap the bell icon :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-alert-icon.png" border="false"::: to add an alert.  
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-tap-alert.png)
+   ![Screenshot of the dashboard on an Android device, showing the number tile that has an alert.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-tap-alert.png)
 3. Tap the plus icon (+).
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-plus-alert.png)
+   ![Screenshot of the Manage alerts, showing a pointer to the plus icon.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-plus-alert.png)
 4. Choose to receive alerts above or below a value, and type the value.
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-tablet-set-alert-condition.png)
+   ![Screenshot of the alert setting, showing pointers to Save and Done.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-tablet-set-alert-condition.png)
 5. Tap **Done**.
 6. Decide whether to receive hourly or daily alerts, and whether to also receive an email when you get the alert.
    
@@ -91,29 +89,29 @@ You can manage individual alerts on your mobile device or [manage all your alert
 You can manage individual alerts in the Power BI mobile app or [manage all your alerts in the Power BI service](../../create-reports/service-set-data-alerts.md).
 
 1. In a dashboard, tap a card or gauge tile that has an alert.  
-2. Tap the solid bell icon ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-filled-alert-bell.png).  
+2. Tap the solid bell icon :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-filled-alert-bell.png" border="false":::.  
 3. Tap the alert to change a value or turn it off.
    
-    ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-manage-alerts.png)
+    ![Screenshot of the Manage alert tile, showing the plus icon to add an alert.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-manage-alerts.png)
 4. Tap the plus icon (+) to add another alert to the same tile.
-5. To delete the alert altogether, tap the garbage can icon ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-delete-alert-icon.png).
+5. To delete the alert altogether, tap the garbage can icon ![Garbage can icon](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-delete-alert-icon.png).
 
 ## Data alerts on a Windows device
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ### Set data alerts on a Windows device
 1. Tap a number or gauge tile in a dashboard to open it.  
-2. Tap the bell icon ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-off.png) to add an alert.  
+2. Tap the bell icon :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-off.png" border="false"::: to add an alert.  
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-tap-alert.png)
+   ![Screenshot of the dashboard on a Windows device, showing the number tile that has an alert.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-tap-alert.png)
 3. Tap the plus icon (+).
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-no-alerts-yet.png)
+   ![Screenshot of the Manage alerts, showing no alerts is set.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-no-alerts-yet.png)
 4. Choose to receive alerts above or below a value, and type the value.
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-set-alert.png)
+   ![Screenshot of the alert settings, showing the entries to edit the alert.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-set-alert.png)
 5. Decide whether to receive hourly or daily alerts, and whether to also receive an email when you get the alert.
    
    > [!NOTE]
@@ -124,18 +122,18 @@ You can manage individual alerts in the Power BI mobile app or [manage all your 
 7. Tap the check mark.
 8. A single tile can have alerts for values both above and below thresholds. In **Manage alerts**, tap the plus sign (+).
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-add-another-alert.png)
+   ![Screenshot of the Manage alerts, showing the plus sign to add an alert.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-add-another-alert.png)
 
 ### Manage alerts on a Windows device
 You can manage individual alerts in the Power BI mobile app or [manage all your alerts in the Power BI service](../../create-reports/service-set-data-alerts.md).
 
 1. In a dashboard, tap a card or gauge tile that has an alert.  
-2. Tap the bell icon ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-on.png).  
+2. Tap the bell icon :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-on.png" border="false":::.  
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-has-alerts.png)
+   ![Screenshot of the dashboard, showing the number tile that has an alert.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-has-alerts.png)
 3. Tap the alert to change a value or turn it off.
    
-    ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-add-another-alert.png)
+    ![Screenshot of the Manage alerts, showing the plus sign to add an alert.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-add-another-alert.png)
 4. To delete the alert altogether, right-click or tap and hold > **Delete**.
 
 ## Receiving alerts
@@ -148,11 +146,11 @@ Data sources are often set to refresh daily, although some refresh more often. W
    As long as the data is past the threshold, you'll get an alert every hour or every 24 hours.
 2. If you've set the alert to send you an email, you'll find something like this in your Inbox.
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alerts-email.png)
-3. Power BI adds a message to your [Notification center](mobile-apps-notification-center.md) and adds a yellow dot to bell icon ![bell icon](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png) on the title bar (iOS and Android) or to the global navigation button ![global navigation button](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png)  (Windows 10 devices).
+   ![Screenshot of an email notification, showing the alert.](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alerts-email.png)
+3. Power BI adds a message to your [Notification center](mobile-apps-notification-center.md) and adds a yellow dot to bell icon :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png" border="false"::: on the title bar (iOS and Android) or to the global navigation button ![global navigation button](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png)  (Windows 10 devices).
 
 
-4. Tap the bell icon ![bell icon](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png) or the global navigation button ![global navigation button](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) to [open your **Notification center**](mobile-apps-notification-center.md) and see the alert details.
+4. Tap the bell icon :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png" border="false"::: or the global navigation button ![global navigation button](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) to [open your **Notification center**](mobile-apps-notification-center.md) and see the alert details.
    
      
 

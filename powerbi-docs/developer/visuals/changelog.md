@@ -1,6 +1,6 @@
 ---
-title: Power BI visuals API changelog
-description: This article describes main changes in different versions of Power BI visuals API
+title: Power BI visuals API changelog in Power BI embedded analytics for better embedded BI insights
+description: This article describes main changes in different versions of Power BI visuals API. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -12,6 +12,10 @@ ms.date: 03/13/2019
 
 # Power BI visuals API changelog
 This page contains a quick summary of the API versions. Versions listed here are considered stable and will not change.
+
+
+## API v3.4.0
+  * `fetchMoreData` : new `aggregateSegments` parameter (default true), for supporting no-aggregation fetchMoreData
 
 ## API v3.2.0
   * Supports **[supportsMultiVisualSelection](./supportsmultivisualselection-feature.md)**
@@ -34,6 +38,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 ## API v2.2.0
   * Supports **[restoring JSON Filter from DataView](./filter-api.md#restore-the-json-filter-from-the-data-view)**
   * **[ContextMenu API](./context-menu.md)**
+  * Supports **[Drill through](../../create-reports/desktop-drillthrough.md)** feature
 
 ## API v2.1.0
   * Performance enhancements:
@@ -57,7 +62,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 * The `proto` property no longer stores hidden metadata\data inside the dataView. Visuals that access properties via `proto` may be broken by this update.
 
 ## API v1.13.0
-* Supports **[Sync Slicers](./enable-sync-slicers.md)**, note this only works for single field slicers due to PBI current code state, [read more](/power-bi/desktop-slicers).
+* Supports **[Sync Slicers](./enable-sync-slicers.md)**, note this only works for single field slicers due to PBI current code state, [read more](../../visuals/power-bi-visualization-slicers.md).
 * Accessibility: [High-contrast support](./high-contrast-support.md) 
 * Accessibility: Allow Keyboard Focus flag
 
@@ -86,7 +91,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 
 ## API v1.6.2
 * Supports **[Edit mode](./advanced-edit-mode.md)** for visual to enter in-visual edit mode
-* Supports **[Interactive (html) R Power BI visuals](https://microsoft.github.io/PowerBI-visuals/tutorials/building-r-powered-custom-visual/creating-r-visuals.md)**, based on html
+* Supports **[Interactive (html) R Power BI visuals](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)**, based on html
 
 ## API v1.5.0
 * Supports **[Allow interactions](./visuals-interactions.md)** for visual interactivity
@@ -100,7 +105,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 ## API v1.2.0
 * Adds **colorPalette** to manage the colors used on your visual.
 * Supports **Multiple selection** - selectionManager can accept an array of `SelectionId`.
-* Supports **[R visuals](https://microsoft.github.io/PowerBI-visuals/tutorials/building-r-powered-custom-visual/creating-r-visuals.md)** using R scripts
+* Supports **[R visuals](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)** using R scripts
 
 ## API v1.1.0
 * Supports debug visual in iFrame

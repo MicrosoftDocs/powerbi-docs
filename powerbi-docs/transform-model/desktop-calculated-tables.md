@@ -2,14 +2,12 @@
 title: Using calculated tables in Power BI Desktop
 description: Calculated tables in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 05/06/2020
-ms.author: davidi
-
 LocalizationGroup: Model your data
 ---
 
@@ -28,11 +26,11 @@ For example, imagine you're a personnel manager who has a table of **Northwest E
 
 **Northwest Employees**
 
- ![](media/desktop-calculated-tables/calctables_nwempl.png)
+ ![Screenshot of Power B I Desktop showing tabular data of Northwest Employees.](media/desktop-calculated-tables/calctables_nwempl.png)
 
 **Southwest Employees**
 
- ![](media/desktop-calculated-tables/calctables_swempl.png)
+ ![Screenshot of Power B I Desktop showing tabular data of Southwest Employees.](media/desktop-calculated-tables/calctables_swempl.png)
 
 In Report View or Data View of Power BI Desktop, in the **Calculations** group of the **Modeling** tab, select **New Table**. It's a bit easier to do in Data View, because then you can immediately see your new calculated table.
 

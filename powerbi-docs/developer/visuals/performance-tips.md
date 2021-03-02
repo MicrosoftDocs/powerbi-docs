@@ -1,6 +1,6 @@
 ---
-title: Performance Tips
-description: How to build a high performance Power BI visual
+title: Performance tips in Power BI embedded analytics for better embedded BI insights
+description: How to build a high performance Power BI visual. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -98,7 +98,7 @@ For more information, see [youmightnotneedjquery.com](http://youmightnotneedjque
 ### Use canvas or WebGL 
 For repeated use of animations consider using **Canvas** or **WebGL** instead of SVG. Unlike SVG, with these options performance is determined by size rather than content. 
 
-You can read more about the differences in [SVG vs Canvas: How to Choose](https://msdn.microsoft.com/library/gg193983(v=vs.85).aspx). 
+You can read more about the differences in [SVG vs Canvas: How to Choose](/previous-versions/windows/internet-explorer/ie-developer/samples/gg193983(v=vs.85)). 
 
 ### Use requestAnimationFrame instead of setTimeout 
 If you use [requestAnimationFrame](https://www.w3.org/TR/animation-timing/) to update your on-screen animations, your animation functions are called **before** the browser calls another repaint.
@@ -107,4 +107,4 @@ For more information, see this [sample](https://testdrive-archive.azurewebsites.
 
 ## Next steps
 
-Learn more about optimization techniques in the [Optimization guide for Power BI](/power-bi/guidance/power-bi-optimization).
+Learn more about optimization techniques in the [Optimization guide for Power BI](../../guidance/power-bi-optimization.md).

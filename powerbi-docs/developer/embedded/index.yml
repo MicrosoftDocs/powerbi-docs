@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Power BI embedded analytics documentation
-summary: Learn to use the two embedded analytics solutions, Power BI Embedded, and embedding using Power BI Premium.
+summary: Learn to use the two Power BI embedded analytics solutions, Power BI Embedded, and embedding using Power BI Premium.
 
 metadata:
   title: Power BI embedded analytics documentation
@@ -20,6 +20,7 @@ metadata:
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
+
   # Card (optional)
   - title: Get started
     linkLists:
@@ -31,7 +32,23 @@ landingContent:
             url: azure-pbie-what-is-power-bi-embedded.md
           - text: "Frequently asked questions"
             url: embedded-faq.md
+      - linkListType: whats-new
+        links:
+          - text: "Power BI Embedded Generation 2 (preview)"
+            url: power-bi-embedded-generation-2.md
+      - linkListType: reference
+        links:
+          - text: "Power BI Developer in a Day course"
+            url: ../../learning-catalog/developer-online-course.md
 
+  # Card (optional)
+  - title: Client APIs
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: "Power BI embedded analytics Client APIs"
+            url: /javascript/api/overview/powerbi/
+            
   # Card
   - title: Embed reports or dashboards
     linkLists:
@@ -66,7 +83,7 @@ landingContent:
           - text: "Performance best practices"
             url: embedded-performance-best-practices.md
           - text: "Power BI permissions"
-            url: power-bi-permissions.md
+            url: /azure/active-directory/develop/v2-permissions-and-consent
           - text: "Questions and answers"
             url: qanda.md
           - text: "Troubleshoot your embedded application"
@@ -78,15 +95,14 @@ landingContent:
       - linkListType: reference
         links:
           - text: "Power BI REST APIs"
-            url: https://docs.microsoft.com/rest/api/power-bi/
+            url: /rest/api/power-bi/
           - text: "Power BI REST API Reference"
-            url: https://docs.microsoft.com/power-bi/developer/automation/rest-api-reference
+            url: ../automation/rest-api-reference.md
           - text: Developer center
             url: https://powerbi.microsoft.com/developers/
           - text: "Power BI libraries"
             url: https://www.nuget.org/profiles/powerbi
           - text: Playground
             url: https://microsoft.github.io/PowerBI-JavaScript/demo/v2-demo/index.html
-          - text: "JavaScript wiki"
-            url: https://github.com/Microsoft/powerbi-javascript/wiki
-
+          - text: "Power BI embedded analytics Client APIs"
+            url: /javascript/api/overview/powerbi/

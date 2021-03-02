@@ -2,13 +2,12 @@
 title: Create a matrix visual in Power BI
 description: Learn how the matrix visual enables step layouts and granular highlighting in Power BI.
 author: mihart
-ms.reviewer: ''
+ms.author: mihart
+ms.reviewer: 'mihart'
 ms.service: powerbi
-ms.subservice: powerbi-desktop
-ms.topic: how-to
-ms.date: 02/10/2020
-ms.author: rien
-
+ms.subservice: pbi-visuals
+ms.topic: conceptual
+ms.date: 06/18/2020
 LocalizationGroup: Visualizations
 ---
 
@@ -45,29 +44,29 @@ When you look at totals and subtotals, remember that those values are based on t
 ## Expanding and collapsing row headers
 There are two ways you can expand row headers. The first is through the right-click menu. You’ll see options to expand the specific row header you selected, the entire level, or everything down to the very last level of the hierarchy. You have similar options for collapsing row headers as well.
 
-![](media/desktop-matrix-visual/power-bi-expand1.png)
+![menu showing Expand and Selection](media/desktop-matrix-visual/power-bi-expand1.png)
 
 You can also add +/- buttons to the row headers through the formatting pane under the **Row headers** card. By default, the icons will match the formatting of the row header, but you can customize the icons’ colors and sizes separately if you want.
 
 Once the icons are turned on, they work similar to PivotTable icons in Excel.
 
-![](media/desktop-matrix-visual/power-bi-expand2.png)
+![matrix showing icons turned on](media/desktop-matrix-visual/power-bi-expand2.png)
 
 The expansion state of the matrix will save with your report. A matrix can be pinned to a dashboard expanded or collapsed. When that dashboard tile is selected, and the report opens, the expansion state can still be changed in the report. 
 
-![](media/desktop-matrix-visual/power-bi-expand3.png)
+![matrix showing expansion state](media/desktop-matrix-visual/power-bi-expand3.png)
 
 > [!NOTE]
 > If you're building a report on top of an Analysis Services multidimensional model, there are some special considerations for expand/collapse if the model uses the Default Member feature. For more information see [Work with multidimensional models in Power BI](../connect-data/desktop-default-member-multidimensional-models.md)
 
 ## Using drill down with the matrix visual
-With the matrix visual, you can do all sorts of interesting drill down activities that weren't available before. This includes the ability to drill down using rows, columns, and even into individual sections and cells. Let's take a look at how each of these works.
+With the matrix visual, you can do all sorts of interesting drill-down activities that weren't available before. This includes the ability to drill down using rows, columns, and even into individual sections and cells. Let's take a look at how each of these works.
 
 ### Drill down on row headers
 
 In the Visualizations pane, when you add multiple fields to the **Rows** section of the **Fields** well, you enable drill down on the rows of the matrix visual. This is similar to creating a hierarchy, which then allows you to drill down (and then back up) through that hierarchy, and analyze the data at each level.
 
-In the following image, the **Rows** section contains *Sales stage* and *Opportunity size*, creating a grouping (or hierarchy) in the rows that we can drill through.
+In the following image, the **Rows** section contains *Sales stage* and *Opportunity size*, creating a grouping (or hierarchy) in the rows that we can drill to see details.
 
 ![Filters card showing which rows are chosen](media/desktop-matrix-visual/power-bi-rows-matrix.png)
 
@@ -75,7 +74,7 @@ When the visual has grouping created in the **Rows** section, the visual itself 
 
 ![matrix with drill controls outlined](media/desktop-matrix-visual/power-bi-matrix-drilldown.png)
 
-Similar to the drill and expand behavior in other visuals, selecting those buttons lets us drill down (or back up) through the hierarchy. In this case, we can drill down from *Sales stage* to *Opportunity size*, as shown in the following image, where the drill down one level icon (the pitchfork) has been selected.
+Similar to the drill and expand behavior in other visuals, selecting those buttons lets us drill down (or back up) through the hierarchy. In this case, we can drill down from *Sales stage* to *Opportunity size*, as shown in the following image, where the **drill down one level** icon (the pitchfork) has been selected.
 
 ![matrix with pitchfork outlined](media/desktop-matrix-visual/power-bi-matrix-drill3.png)
 
@@ -89,7 +88,7 @@ Selecting **Drill Down** expands the matrix for *that* row level, *excluding* al
 
 ![matrix drilled down one level](media/desktop-matrix-visual/power-bi-drill-down-matrix.png)
 
-Select the **Drill up** icon to get back to the previous top-level view. If you then select **Proposal** > **Show Next Level**, you get an ascending listing of all the next-level items (in this case, the *Opportunity size* field), without the higher-level hierarchy categorization.
+Select the **Drill-up** icon to get back to the previous top-level view. If you then select **Proposal** > **Show Next Level**, you get an ascending listing of all the next-level items (in this case, the *Opportunity size* field), without the higher-level hierarchy categorization.
 
 ![matrix using Show next level](media/desktop-matrix-visual/power-bi-next-level-matrix.png)
 
@@ -117,7 +116,7 @@ When you select **Drill Down**, the next level of the column hierarchy for *Regi
 The rest of the menu items work on columns in the same way they do for rows (see the previous section, **Drill down on row headers**). You can **Show Next Level** and **Expand to next level** with columns just as you can with rows.
 
 > [!NOTE]
-> The drill down and drill up icons in the upper-left of the matrix visual only apply to rows. In order to drill down on columns, you must use the right-click menu.
+> The drill-down and drill-up icons in the upper-left of the matrix visual only apply to rows. In order to drill down on columns, you must use the right-click menu.
 
 ## Stepped layout with matrix visuals
 
@@ -203,7 +202,7 @@ Your matrix or table may have content that you'd like to use in other applicatio
 
 If you have a column or measure that contains website URLs, you can use conditional formatting to apply those URLs to fields as active links. You’ll find this option under the **Conditional formatting** card in the formatting pane.
 
-![Filters card showing which rows are chosen](media/desktop-matrix-visual/power-bi-web-url.png)
+![Screenshot shows the formatting icon associated with Web U R L.](media/desktop-matrix-visual/power-bi-web-url.png)
 
 Turn **Web URL** On, and select a field to use as the URL for the column. Once applied, the values in that field (column) become active links. Hover to see the link, and select to jump to that page. 
 

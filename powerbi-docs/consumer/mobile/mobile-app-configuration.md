@@ -2,12 +2,11 @@
 title: 'Power BI app configuration settings'
 description: How to customize the behavior of Power BI using MDM tool
 author: paulinbar
-
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 04/05/2020
-ms.author: painbar
+ms.date: 07/14/2020
 ---
 
 # Remotely configure Power BI app using mobile device management (MDM) tool
@@ -18,6 +17,7 @@ The Power BI Mobile app supports the following configuration scenarios:
 
 * Report Server configuration (iOS and Android)
 * Data protection settings (iOS and Android)
+* Disable single sign-on (iOS and Android)
 * Interaction settings (iOS and Android)
 
 ## Report server configuration (iOS and Android)
@@ -41,6 +41,19 @@ The Power BI mobile app for iOS and Android offers administrators the ability to
 
 >[!NOTE]
 >Data protection settings will be applied only on Android devices that support biometric authentication.
+
+## Disable single sign-on (iOS and Android)
+
+By default the Power BI mobile app provides a convenient single sign-on experience for a single user by minimizing the number times the user has to provide a username and password. This single sign-on behavior is based on the assumption that the device is the user's personal device, and that there is only one user who uses the device and the apps on it.
+
+Admins can turn on the **DisableSingleSignOn** setting in the app config file to remotely configure the app to disable single sign-on and explicitly ask for the user's password when they sign in.
+
+This is an admin-only setting that is configured via remote configuration. The end user cannot change this setting.
+
+| Key | Type | Description |
+|---|---|---|
+| com.microsoft.powerbi.mobile.DisableSingleSignOn | Boolean | Default value is False.<br><br>After a user signs out, the app will not reuse existing credentials, but will ask the next user to provide a password in order to authenticate and connect to the Power BI service.
+ |
 
 ## Interaction settings (iOS and Android)
 

@@ -2,14 +2,12 @@
 title: Refresh a dataset created from an Excel workbook - local
 description: Refresh a dataset created from an Excel workbook on a local drive
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: kayu
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 11/28/2018
-ms.author: davidi
-
 LocalizationGroup: Data refresh
 ---
 # Refresh a dataset created from an Excel workbook on a local drive
@@ -43,13 +41,13 @@ When you use Power Query (Get & Transform data in Excel 2016) to connect to a da
 > 
 
 In **Navigator**, click **Load To…**  
-    ![](media/refresh-excel-file-local-drive/refresh_loadtodm_1.png)
+    ![Screenshot of the Load To in Navigator, showing the Load To selection.](media/refresh-excel-file-local-drive/refresh_loadtodm_1.png)
 
 Or, If you click **Edit** in Navigator, you’ll open the Query Editor. There you can click **Close & Load To….**  
-    ![](media/refresh-excel-file-local-drive/refresh_loadtodm_2.png)
+    ![Screenshot of the Home tab in Navigator, showing the Close and Load To selection.](media/refresh-excel-file-local-drive/refresh_loadtodm_2.png)
 
 Then in **Load To**, make sure you select **Add this data to the Data Model**.  
-    ![](media/refresh-excel-file-local-drive/refresh_loadtodm_3.png)
+    ![Screenshot of the Load To dialog, showing the Add this data to the Data Model box is checked.](media/refresh-excel-file-local-drive/refresh_loadtodm_3.png)
 
 ### What if I use Get External Data in Power Pivot?
 No problem. Whenever you use Power Pivot to connect to and query data from an on-premises or online data source, the data is automatically loaded to the data model.

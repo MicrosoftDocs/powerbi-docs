@@ -2,14 +2,12 @@
 title: Understand Power BI Desktop privacy levels
 description: Power BI Desktop privacy levels
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi-admin
 ms.topic: reference
 ms.date: 09/09/2019
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Power BI Desktop privacy levels
@@ -17,7 +15,7 @@ In **Power BI Desktop**, privacy levels specify an isolation level that defines 
 
 The **Privacy Levels** setting, found in **File > Options and settings > Options** and then **Current File > Privacy** determines whether Power BI Desktop uses your Privacy Level settings while combining data. This dialog includes a link to Power BI Desktop documentation about Privacy Levels and Privacy Levels (this article).
 
-![](media/desktop-privacy-levels/desktop_privacylevels1.png)
+![Screenshot of Options dialog.](media/desktop-privacy-levels/desktop_privacylevels1.png)
 
 ## Configure a privacy level
 With privacy level settings, you can specify an isolation level that defines the degree that one data source must be isolated from other data sources.
@@ -33,7 +31,7 @@ The **Privacy** settings dialog for each data source is found in **File > Option
 
 To configure a data source privacy level, select the data source, then select **Edit**. The **Data Source Settings** dialog appears, from which you can select the appropriate privacy level from the drop-down menu at the bottom of the dialog, as shown in the following image.
 
-![](media/desktop-privacy-levels/desktop_privacylevels2.png)
+![Screenshot of Data Source Settings dialog.](media/desktop-privacy-levels/desktop_privacylevels2.png)
 
 > [!CAUTION]
 > You should configure a data source containing highly sensitive or confidential data as **Private**.
@@ -52,7 +50,7 @@ To configure a data source privacy level, select the data source, then select **
 > 
 
 > [!CAUTION]
-> The **Ignore the Privacy levels and potentially improve performance** does not work in the Power BI service. As such, Power BI Desktop reports with this setting enabled, which are then published to the Power BI service, do *not* reflect this behavior when used in the service.
+> The **Ignore the Privacy levels and potentially improve performance** does not work in the Power BI service. As such, Power BI Desktop reports with this setting enabled, which are then published to the Power BI service, do *not* reflect this behavior when used in the service. However, the privacy levels are available on the personal gateway.
 > 
 
 **Configure Privacy Levels**

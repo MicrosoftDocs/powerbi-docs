@@ -1,16 +1,14 @@
 ---
 title: Troubleshooting scheduled refresh for Azure SQL Databases
 description: Troubleshooting scheduled refresh for Azure SQL Databases in Power BI
-author: maggiesMSFT
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: kayu
-
 ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: how-to
+ms.subservice: powerbi-admin
+ms.topic: troubleshooting
 ms.date: 09/04/2019
-ms.author: maggies
 ms.custom: seodec18
-
 LocalizationGroup: Troubleshooting
 ---
 

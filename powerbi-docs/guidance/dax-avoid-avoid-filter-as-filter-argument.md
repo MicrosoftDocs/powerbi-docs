@@ -2,13 +2,12 @@
 title: "DAX: Avoid using FILTER as a filter argument"
 description: Guidance on using the FILTER function as a filter argument.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 12/30/2019
-ms.author: v-pemyer
 ---
 
 # DAX: Avoid using FILTER as a filter argument
@@ -99,4 +98,6 @@ For more information about this article, check out the following resources:
 
 - [Data Analysis Expressions (DAX) Reference](/dax/)
 - [Filter functions (DAX)](/dax/filter-function-dax)
+- Learning path: [Use DAX in Power BI Desktop](/learn/paths/dax-power-bi/)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)

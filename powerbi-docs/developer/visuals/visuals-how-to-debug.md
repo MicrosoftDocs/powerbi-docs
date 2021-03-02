@@ -1,6 +1,6 @@
 ---
-title: How to debug Power BI visuals
-description: This article describes how to debug Power BI visuals.
+title: How to debug Power BI visuals in Power BI embedded analytics for better embedded BI insights
+description: This article describes how to debug Power BI visuals. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -73,7 +73,7 @@ You can also set the browser to break on caught exceptions. This'll stop code ex
 3. Click the **break on exceptions** icon (hexagon with a pause symbol).
 4. Select **Break on all exceptions**.
 
-![Data role fields](media/visuals-how-to-debug/how-to-debug-edge.png)
+![Screenshot shows the Debugger tab with Break on all exceptions selected.](media/visuals-how-to-debug/how-to-debug-edge.png)
 
 ## Chrome
 
@@ -82,7 +82,7 @@ You can also set the browser to break on caught exceptions. This'll stop code ex
 3. Click the **break on exceptions** icon (stop sign with a pause symbol).
 4. Select the **Pause On Caught Exceptions** check box.
 
-![Data role fields](media/visuals-how-to-debug/how-to-debug-chrome.png)
+![Screenshot shows Sources tab with Pause On Caught Exceptions selected.](media/visuals-how-to-debug/how-to-debug-chrome.png)
 
 ## Next steps
 * [Troubleshoot Power BI visuals](power-bi-custom-visuals-troubleshoot.md)

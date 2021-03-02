@@ -2,14 +2,13 @@
 title: "Auto date/time guidance in Power BI Desktop"
 description: Guidance for using auto date/time functionality in Power BI Desktop.
 author: peter-myers
+ms.author: kfollis
 manager: asaxton
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 10/23/2019
-ms.author: v-pemyer
 ---
 
 # Auto date/time guidance in Power BI Desktop
@@ -47,6 +46,7 @@ If the _Auto date/time_ option isn't relevant to your projects, we recommend tha
 
 For more information related to this article, check out the following resources:
 
+- [Create date tables in Power BI Desktop](model-date-tables.md)
 - [Auto date/time in Power BI Desktop](../transform-model/desktop-auto-date-time.md)
 - [Set and use date tables in Power BI Desktop](../transform-model/desktop-date-tables.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

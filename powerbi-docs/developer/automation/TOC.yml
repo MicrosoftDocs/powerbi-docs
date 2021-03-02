@@ -20,6 +20,8 @@
       href: walkthrough-push-data-get-datasets.md
     - name: "Add rows to a table"
       href: walkthrough-push-data-add-rows.md
+    - name: "Automate template app configuration"
+      href: ../template-apps/template-apps-auto-install-tutorial.md
   - name: Concepts
     items:
     - name: "Automatic retention policy for real-time data"
@@ -32,14 +34,18 @@
         href: api-dataset-properties.md
       - name: "Data model versioning"
         href: api-data-model-versioning.md
+    - name: "Automated template app configuration"
+      href: ../template-apps/template-apps-auto-install.md
   - name: How to
     items:
     - name: "Configure credentials"
       href: configure-credentials.md
+    - name: "Automate template app configuration"
+      href: ../template-apps/template-apps-auto-install.md
   - name: Reference
     items:
     - name: "REST APIs"
-      href: https://docs.microsoft.com/rest/api/power-bi
+      href: /rest/api/power-bi
     - name: "Power BI REST API Reference"
       href: rest-api-reference.md
     - name: "Complete code listing"

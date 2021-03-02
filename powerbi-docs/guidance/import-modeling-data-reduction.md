@@ -2,13 +2,12 @@
 title: Data reduction techniques for Import modeling
 description: Understand different techniques to help reduce the data loaded into Import models.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/05/2019
-ms.author: v-pemyer
 ---
 
 # Data reduction techniques for Import modeling
@@ -80,7 +79,7 @@ However, in some instances, model calculated columns may be the better choice. I
 
 Power Query queries that are intended support data integration with other queries should not be loaded to the model. To avoid loading the query to the model, take care to ensure that you disable query load in these instances.
 
-![Disabling the load for a Power Query query](media/import-modeling-data-reduction/power-query-disable-query-load.png)
+![Screenshot of Power Query showing "Enable load" option.](media/import-modeling-data-reduction/power-query-disable-query-load.png)
 
 ## Disable auto date/time
 

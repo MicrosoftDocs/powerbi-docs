@@ -2,14 +2,12 @@
 title: Troubleshoot scheduled refresh in Power BI Report Server
 description: This article discusses resources available to troubleshoot issues with scheduled refresh in Power BI Report Server.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: kayu
-
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: troubleshooting
 ms.date: 11/01/2017
-ms.author: maggies
-
 ---
 # Troubleshoot scheduled refresh in Power BI Report Server
 This article discusses resources available to troubleshoot issues with scheduled refresh in Power BI Report Server.
@@ -31,9 +29,9 @@ Memory pressure can occur when reports require more memory to process and render
 
 If you are encountering memory pressure consistently, it may be worth looking at a scaled out deployment of the report server in order to spread the load of resources. You can also define that a given report server is used for data refresh with the `IsDataModelRefreshService` setting within rsreportserver.config. With this setting, you could define one or more servers to be the front end server to handle on demand reports, and have another set of servers to only be used for scheduled refresh.
 
-For information on how to monitor an Analysis Services instance, see [Monitor an Analysis Services Instance](https://docs.microsoft.com/sql/analysis-services/instances/monitor-an-analysis-services-instance).
+For information on how to monitor an Analysis Services instance, see [Monitor an Analysis Services Instance](/sql/analysis-services/instances/monitor-an-analysis-services-instance).
 
-For information about memory settings within Analysis Services, see [Memory Properties](https://docs.microsoft.com/sql/analysis-services/server-properties/memory-properties).
+For information about memory settings within Analysis Services, see [Memory Properties](/sql/analysis-services/server-properties/memory-properties).
 
 ### Kerberos configuration
 Connecting to a data source with windows credentials may require configuring Kerberos constrained delegation to make a successful connection. For more information about how to configure Kerberos constrained delegation, see [Configure Kerberos to use Power BI reports](configure-kerberos-powerbi-reports.md).
@@ -176,7 +174,7 @@ The following settings are reset when ever the Analysis Services process is laun
 ### Profiling the local Analysis Services process
 A SQL Profiler trace can be run on the local Analysis Services process for diagnostic purposes. To connect to the local Analysis Services instance, do the following.
 
-SQL Server Profiler Trace is included with the [SQL Server Management Studio (SSMS) download](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms).
+SQL Server Profiler Trace is included with the [SQL Server Management Studio (SSMS) download](/sql/ssms/download-sql-server-management-studio-ssms).
 
 1. Start **SQL Server Profiler** as an administrator.
 2. Select the **New Trace** button.
@@ -184,7 +182,6 @@ SQL Server Profiler Trace is included with the [SQL Server Management Studio (SS
 4. In the **Trace properties** dialog, select the events you want to capture and select **Run**.
 
 ## Lock Pages In Memory Windows privilege
-If you find that you are unable to render a Power BI report, assigning the **Lock pages in memory** privilege to the services account running Power BI Report server may help. For more information about how to configure **Lock pages in memory**, see [Windows privileges assigned to the Analysis Services service account](https://docs.microsoft.com/sql/analysis-services/instances/configure-service-accounts-analysis-services#bkmk_winpriv).
+If you find that you are unable to render a Power BI report, assigning the **Lock pages in memory** privilege to the services account running Power BI Report server may help. For more information about how to configure **Lock pages in memory**, see [Windows privileges assigned to the Analysis Services service account](/sql/analysis-services/instances/configure-service-accounts-analysis-services#bkmk_winpriv).
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

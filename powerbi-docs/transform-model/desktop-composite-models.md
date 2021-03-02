@@ -2,14 +2,12 @@
 title: Use composite models in Power BI Desktop
 description: Create data models with multiple data connections and many-to-many relationships in Power BI Desktop
 author: davidiseminger
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-desktop
-ms.topic: conceptual
-ms.date: 01/15/2020
 ms.author: davidi
-
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: pbi-transform-model
+ms.topic: conceptual
+ms.date: 01/19/2021
 LocalizationGroup: Transform and shape data
 ---
 # Use composite models in Power BI Desktop
@@ -18,7 +16,7 @@ Previously in Power BI Desktop, when you used a DirectQuery in a report, no othe
 
 The composite models capability in Power BI Desktop consists of three related features:
 
-* **Composite models**: Allows a report to have multiple data connections, including DirectQuery connections or import, in any combination. This article describes composite models in detail.
+* **Composite models**: Allows a report to have two or more data connections from different source groups, such as one or more DirectQuery connections and an import connection, two or more DirectQuery connections, or any combination thereof. This article describes composite models in detail.
 
 * **Many-to-many relationships**: With composite models, you can establish *many-to-many relationships* between tables. This approach removes requirements for unique values in tables. It also removes previous workarounds, such as introducing new tables only to establish relationships. For more information, see [Apply many-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md).
 
@@ -138,6 +136,8 @@ Consequently, information that's stored in the spreadsheet is now included in a 
 
 To allow confirmation that you've considered any security implications, Power BI Desktop displays a warning message when you create a composite model.  
 
+Additionally, if an author adds *Table1* from *Model A* to a Composite Model (we'll call it *Model C* for reference), then a user viewing a report built on *Model C* could query **any table** in *Model A* that is not protected by RLS.
+
 For similar reasons, be careful when you open a Power BI Desktop file that's sent from an untrusted source. If the file contains composite models, information that someone retrieves from one source by using the credentials of the user who opens the file would be sent to another data source as part of the query. The information could be viewed by the malicious author of the Power BI Desktop file. When you initially open a Power BI Desktop file that contains multiple sources, Power BI Desktop displays a warning. The warning is similar to the one that's displayed when you open a file that contains native SQL queries.  
 
 ## Performance implications  
@@ -174,7 +174,7 @@ The following Live Connect multi-dimensional sources can't be used with composit
 
 When you connect to these multi-dimensional sources by using DirectQuery, you can't connect to another DirectQuery source or combine it with import data.
 
-The existing limitations of DirectQuery still apply when you use composite models. Many of these limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an import table can refer to other tables, but a calculated column on a DirectQuery table can still refer only to columns on the same table. Other limitations apply to the model as a whole, if any of the tables within the model are DirectQuery. For example, the QuickInsights and Q&A features aren't available on a model if any of the tables within it has a storage mode of DirectQuery.
+The existing limitations of DirectQuery still apply when you use composite models. Many of these limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an import table can refer to other tables, but a calculated column on a DirectQuery table can still refer only to columns on the same table. Other limitations apply to the model as a whole, if any of the tables within the model are DirectQuery. For example, the QuickInsights feature isn't available on a model if any of the tables within it has a storage mode of DirectQuery.
 
 ## Next steps
 
@@ -184,3 +184,4 @@ For more information about composite models and DirectQuery, see the following a
 * [Storage mode in Power BI Desktop](desktop-storage-mode.md)
 * [Use DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
 * [Data sources supported by DirectQuery in Power BI](../connect-data/power-bi-data-sources.md)
+* [Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)

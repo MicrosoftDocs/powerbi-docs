@@ -2,14 +2,12 @@
 title: Show the data that was used to create the Power BI visualization
 description: This document explains how to show the data used to create a visual in Power BI and how to export that data to a .csv file.
 author: mihart
-ms.reviewer: ''
-
+ms.author: mihart
+ms.reviewer: 'mihart'
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 12/4/2019
-ms.author: mihart
-
 LocalizationGroup: Visualizations
 ---
 # Display a visualization's underlying data
@@ -48,7 +46,7 @@ You can also export the data that is being used to create the visualization as a
 6. To hide the data, de-select **Explore** > **show data**.
 
 ## Using Show records
-You can also focus on one data record in a visualization, and drill into the data behind it. 
+You can also focus on one data record in a visualization, and drill into the details behind it. 
 
 1. To use **See records**, select a visualization to make it active. 
 

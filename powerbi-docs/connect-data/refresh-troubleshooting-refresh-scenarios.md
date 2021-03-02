@@ -2,14 +2,12 @@
 title: Troubleshooting refresh scenarios
 description: Troubleshooting refresh scenarios
 author: davidiseminger
-ms.reviewer: kayu
-
-ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: how-to
-ms.date: 05/28/2020
 ms.author: davidi
-
+ms.reviewer: kayu
+ms.service: powerbi
+ms.subservice: pbi-data-sources
+ms.topic: troubleshooting
+ms.date: 12/14/2020
 LocalizationGroup: Data refresh
 ---
 

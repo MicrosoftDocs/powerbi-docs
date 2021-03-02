@@ -2,15 +2,13 @@
 title: Use grouping and binning in Power BI Desktop
 description: Learn how to group and bin elements in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/18/2019
-ms.author: davidi
-
+ms.date: 01/13/2021
 LocalizationGroup: Create reports
 ---
 # Use grouping and binning in Power BI Desktop
@@ -43,7 +41,7 @@ You can add an ungrouped value into an existing group: just select the one of th
 > You can create groups for any field in the **Fields** well, without having to select multiple items from an existing visual. Just right-click the field, and select **New Group** from the menu that appears.
 
 ## Using binning
-You can set the bin size for numerical and time fields in **Power BI Desktop.** You can use binning to right-size the data that Power BI Desktop displays.
+You can set the bin size for numerical and time fields in **Power BI Desktop.** You can make bins for calculated columns, but not for measures. Use binning to right-size the data that Power BI Desktop displays.
 
 To apply a bin size, right-click a **Field** and choose **New Group**.
 

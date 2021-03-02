@@ -2,12 +2,12 @@
 title: Tips for authoring template apps in Power BI
 description: Tips about authoring queries, data models, reports, and dashboards for making good template apps
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/04/2020
-ms.author: painbar
 ---
 
 # Tips for authoring template apps in Power BI
@@ -25,7 +25,7 @@ You may be familiar with each piece as existing Power BI features. When building
 <a name="queries"></a>
 
 ## Queries
-For template apps, queries developed in Power BI Desktop are used to connect to your data source and import data. These queries are required to return a consistent schema and are supported for Scheduled Data refresh (DirectQuery isn't supported).
+For template apps, queries developed in Power BI Desktop are used to connect to your data source and import data. These queries are required to return a consistent schema and are supported for Scheduled Data refresh.
 
 ### Connect to your API
 To get started, you need to connect to your API from Power BI Desktop to start building your queries.
@@ -119,15 +119,15 @@ We recommend having quality sample data before creating the app. ensure the app 
 Template apps can be published on AppSource, follow these guidelines before submitting your app to AppSource:
 
 * Make sure you create a template app with engaging sample data that can help the installer understand what the app can do (empty report & dashboard aren't approved).
-Template apps support sample data only apps, make sure to check the static app checkbox. [Learn more](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+Template apps support sample data only apps, make sure to check the static app checkbox. [Learn more](./service-template-apps-create.md#define-the-properties-of-the-template-app)
 * Have instruction for the validation team to follow which includes credentials and parameters that are required to connect to data.
-* Application must include an App icon in Power BI and on your CPP offer. [Learn more](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Landing page configured. [Learn more](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Make sure to follow the documentation on [Partner center -> Power BI App offer](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
+* Application must include an App icon in Power BI and on your CPP offer. [Learn more](./service-template-apps-create.md#define-the-properties-of-the-template-app)
+* Landing page configured. [Learn more](./service-template-apps-create.md#define-the-properties-of-the-template-app)
+* Make sure to follow the documentation on [Partner center -> Power BI App offer](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
 * In case a dashboard is part of your app, make sure it's not empty.
 * Install the app using the app link before submitting it, make sure you can connect the dataset and the app experience is as you planned.
 * Before uploading pbix into the template workspace, make sure to unload any unnecessary connections.
-* Follow Power BI [Best design practices for reports and visuals](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) to achieve maximum impact on your users and getting approved for distribution.
+* Follow Power BI [Best design practices for reports and visuals](../visuals/power-bi-report-visualizations.md) to achieve maximum impact on your users and getting approved for distribution.
 <!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
 
 ## Create a download link for the app
@@ -136,9 +136,13 @@ After publishing the template app on AppSource, consider creating a download lin
 * AppSource download page - can be viewed by publicly, get the link from your AppSource page.
 * Power BI - Can be viewed by a Power BI user.
 
-In order to redirect a user to the app's download link in Power BI see the following code example: [GitHub repo](https://github.com/microsoft/Template-apps-examples/tree/master/src).
+In order to redirect a user to the app's download link in Power BI see the following code example: [GitHub repo](https://github.com/microsoft/Template-apps-examples).
 
 [![App Download link](media/service-template-apps-tips/service-template-apps-tips-download.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
+
+## Automate parameter configuration during installation
+
+If you are an ISV and are distributing your template app via your web service, you can create automation that configures template app parameters automatically when your customers install the app in their Power BI account. This makes things easier for your customers and increases the likelihood of a successful installation because they don't have to supply details that they might not know. See [Automated configuration of a template app installation](../developer/template-apps/template-apps-auto-install.md) for details.
 
 ## Next steps
 

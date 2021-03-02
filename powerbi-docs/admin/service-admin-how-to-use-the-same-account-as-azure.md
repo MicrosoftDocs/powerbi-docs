@@ -2,14 +2,12 @@
 title: Using the same account for Power BI and Azure
 description: How to use the same account login for Power BI and Azure
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: kfollis
-
 LocalizationGroup: Troubleshooting
 ---
 
@@ -29,7 +27,7 @@ You can add your organizational account as a co-administrator in Azure by follow
 
 1. In the nav pane, select **Access control (IAM)**, then select **Add** \> **Add co-administrator**.
 
-    ![Add a co-administrator in the Azure portal](media/service-admin-how-to-use-the-same-account-as-azure/add-co-administrator.png)
+    ![Screenshot of the Access control with the Add a co-administrator called out.](media/service-admin-how-to-use-the-same-account-as-azure/add-co-administrator.png)
 
 1. Enter the email address associated with your organizational account, and select **Add**.
 

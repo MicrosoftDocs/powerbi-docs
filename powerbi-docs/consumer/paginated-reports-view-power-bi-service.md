@@ -3,9 +3,9 @@ title: "View a paginated report in the Power BI service"
 description: In this tutorial, you learn about viewing paginated reports in the Power BI service.  
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: ''
+ms.reviewer: maggies
 ms.service: powerbi
-ms.subservice: report-builder
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 12/03/2019
 ---

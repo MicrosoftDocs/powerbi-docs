@@ -26,8 +26,6 @@
       href: end-user-license.md
     - name: "Learn how to ask questions using natural language"
       href: end-user-q-and-a.md
-    - name: "Navigate the 'new look'"
-      href: service-new-look.md
     - name: "The 'new look': Where'd the actions go?"
       href: service-new-look-where-actions.md
   - name: How to
@@ -68,12 +66,16 @@
         href: end-user-pdf.md
       - name: "Export a report to PowerPoint"
         href: end-user-powerpoint.md
+      - name: "How to identify and use buttons"
+        href: end-user-buttons.md     
       - name: "Add a bookmark to a report"
         href: end-user-bookmarks.md
       - name: "Add a spotlight to a report"
         href: end-user-spotlight.md
       - name: "Personalize a visual"
         href: end-user-personalize-visuals.md
+      - name: "Analyze fluctuations in visuals"
+        href: end-user-analyze-visuals.md  
       - name: Paginated reports in Power BI
         items: 
         - name: "Paginated reports"
@@ -92,10 +94,10 @@
         href: end-user-visual-type.md
       - name: "Show the data that was used to create the visualization"
         href: end-user-show-data.md
+      - name: "Copy a visual and paste it elsewhere"
+        href: end-user-copy-paste.md
       - name: "Drill down in a visualization"
         href: end-user-drill.md
-      - name: "Interact with ArcGIS maps"
-        href: ../visuals/power-bi-visualizations-arcgis.md
     - name: Common tasks
       items: 
       - name: "Export data to Excel"
@@ -131,7 +133,7 @@
       - name: "Install and use apps"
         href: end-user-app-view.md
       - name: "Connect to services"
-        href: end-user-connect-to-services.md
+        href: ../connect-data/service-connect-to-services.md
       - name: "Get a sample app from the app marketplace"
         href: end-user-app-marketing.md
     - name: Ask questions of your data
@@ -147,6 +149,6 @@
     - name: "Frequently asked questions"
       href: end-user-faq.md
     - name: "Supported browsers"
-      href: end-user-browsers.md
+      href: ../fundamentals/power-bi-browsers.md
     - name: "Types of Quick Insights"
       href: end-user-insight-types.md

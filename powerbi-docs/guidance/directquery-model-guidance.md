@@ -2,13 +2,12 @@
 title: DirectQuery model guidance in Power BI Desktop
 description: Guidance for developing DirectQuery models.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 10/24/2019
-ms.author: v-pemyer
 ---
 
 # DirectQuery model guidance in Power BI Desktop
@@ -37,11 +36,11 @@ The relational database source can be optimized in several ways, as described in
 > We understand that not all modelers have the permissions or skills to optimize a relational database. While it is the preferred layer to prepare the data for a DirectQuery model, some optimizations can also be achieved in the model design, without modifying the source database. However, best optimization results are often achieved by applying optimizations to the source database.
 
 - **Ensure data integrity is complete:** It is especially important that dimension-type tables contain a column of unique values (dimension key) that maps to the fact-type table(s). It's also important that fact-type dimension columns contain valid dimension key values. They will allow configuring more efficient model relationships that expect matched values on both sides of relationships. When the source data lacks integrity, it's recommended that an "unknown" dimension record is added to effectively repair the data. For example, you can add a row to the **Product** table to represent an unknown product, and then assign it an out-of-range key, like -1. If rows in the **Sales** table contain a missing product key value, substitute them with -1. It will ensure every **Sales** product key value has a corresponding row in the **Product** table.
-- **Add indexes:** Define appropriate indexes—on tables or views—to support the efficient retrieval of data for the expected report visual filtering and grouping. For SQL Server, Azure SQL Database or Azure SQL Data Warehouse sources, see [SQL Server Index Architecture and Design Guide](/sql/relational-databases/sql-server-index-design-guide?view=sql-server-2017) for helpful information on index design guidance. For SQL Server or Azure SQL Database volatile sources, see [Get started with Columnstore for real-time operational analytics](/sql/relational-databases/indexes/get-started-with-columnstore-for-real-time-operational-analytics?view=sql-server-2017).
+- **Add indexes:** Define appropriate indexes—on tables or views—to support the efficient retrieval of data for the expected report visual filtering and grouping. For SQL Server, Azure SQL Database or Azure SQL Data Warehouse sources, see [SQL Server Index Architecture and Design Guide](/sql/relational-databases/sql-server-index-design-guide) for helpful information on index design guidance. For SQL Server or Azure SQL Database volatile sources, see [Get started with Columnstore for real-time operational analytics](/sql/relational-databases/indexes/get-started-with-columnstore-for-real-time-operational-analytics).
 - **Design distributed tables:** For Azure SQL Data Warehouse sources, which leverage Massively Parallel Processing (MPP) architecture, consider configuring large fact-type tables as hash distributed, and dimension-type tables to replicate across all the compute nodes. For more information, see [Guidance for designing distributed tables in Azure SQL Data Warehouse](/azure/sql-data-warehouse/sql-data-warehouse-tables-distribute#what-is-a-distributed-table).
-- **Ensure required data transformations are materialized:** For SQL Server relational database sources (and other relational database sources), computed columns can be added to tables. These columns are based on an expression, like **Quantity** multiplied by **UnitPrice**. Computed columns can be persisted (materialized) and, like regular columns, sometimes they can be indexed. For more information, see [Indexes on Computed Columns](/sql/relational-databases/indexes/indexes-on-computed-columns?view=sql-server-2017).
+- **Ensure required data transformations are materialized:** For SQL Server relational database sources (and other relational database sources), computed columns can be added to tables. These columns are based on an expression, like **Quantity** multiplied by **UnitPrice**. Computed columns can be persisted (materialized) and, like regular columns, sometimes they can be indexed. For more information, see [Indexes on Computed Columns](/sql/relational-databases/indexes/indexes-on-computed-columns).
 
-    Consider also indexed views that can pre-aggregate fact table data at a higher grain. For example, if the **Sales** table stores data at order line level, you could create a view to summarize this data. The view could be based on a SELECT statement that groups the **Sales** table data by date (at month level), customer, product, and summarizes measure values like sales, quantity, etc. The view can then be indexed. For SQL Server or Azure SQL Database sources, see [Create Indexed Views](/sql/relational-databases/views/create-indexed-views?view=sql-server-2017).
+    Consider also indexed views that can pre-aggregate fact table data at a higher grain. For example, if the **Sales** table stores data at order line level, you could create a view to summarize this data. The view could be based on a SELECT statement that groups the **Sales** table data by date (at month level), customer, product, and summarizes measure values like sales, quantity, etc. The view can then be indexed. For SQL Server or Azure SQL Database sources, see [Create Indexed Views](/sql/relational-databases/views/create-indexed-views).
 - **Materialize a date table:** A common modeling requirement involves adding a date table to support time-based filtering. To support the known time-based filters in your organization, create a table in the source database, and ensure it is loaded with a range of dates encompassing the fact table dates. Also ensure that it includes columns for useful time periods, like year, quarter, month, week, etc.
 
 ## Optimize model design
@@ -50,9 +49,9 @@ A DirectQuery model can be optimized in many ways, as described in the following
 
 - **Avoid complex Power Query queries:** An efficient model design can be achieved by removing the need for the Power Query queries to apply any transformations. It means that each query maps to a single relational database source table or view. You can preview a representation of the actual SQL query statement for a Power Query applied step, by selecting the **View Native Query** option.
 
-    ![The Query Editor applied steps display five steps. A right-click of the last step named "Renamed Columns" has opened the context menu. The "View Native Query" option is enabled and highlighted.](media/directquery-model-guidance/directquery-model-guidance-query-editor-view-native-query.png)
+    ![Screenshot of Power B I Desktop showing the "View Native Query" option under Applied Steps.](media/directquery-model-guidance/directquery-model-guidance-query-editor-view-native-query.png)
     
-    ![The Native Query window displays a T-SQL query that joins to source tables together.](media/directquery-model-guidance/directquery-model-guidance-native-query-window.png)
+    ![Screenshot of Power B I Desktop showing the Native Query window. A query statement joins two source tables.](media/directquery-model-guidance/directquery-model-guidance-native-query-window.png)
 
 - **Examine the use of calculated columns and data type changes:** DirectQuery models support adding calculations and Power Query steps to convert data types. However, better performance is often achieved by materializing transformation results in the relational database source, when possible.
 - **Do not use Power Query relative date filtering:** It's possible to define relative date filtering in a Power Query query. For example, to retrieve to the sales orders that were created in the last year (relative to today's date). This type of filter translates to an inefficient native query, as follows:
@@ -77,13 +76,13 @@ A DirectQuery model can be optimized in many ways, as described in the following
 - **Avoid use of bi-directional relationship filtering:** Use of bi-directional relationship filtering can lead to query statements that don't perform well. Only use this relationship feature when necessary, and it's usually the case when implementing a many-to-many relationship across a bridging table. For more information, see [Relationships with a many-many cardinality in Power BI Desktop](../transform-model/desktop-many-to-many-relationships.md).
 - **Limit parallel queries:** You can set the maximum number of connections DirectQuery opens for each underlying data source. It controls the number of queries concurrently sent to the data source.
 
-    ![The Power BI Desktop window is open, and the Current File DirectQuery page is selected. The Maximum connections per data source property is highlighted.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-directquery.png)
+    ![Screenshot of Power B I Desktop showing the Direct Query Options window.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-directquery.png)
     
     The setting is only enabled when there's at least one DirectQuery source in the model. The value applies to all DirectQuery sources, and to any new DirectQuery sources added to the model.
 
     Increasing the **Maximum Connections per Data Source** value ensures more queries (up to the maximum number specified) can be sent to the underlying data source, which is useful when numerous visuals are on a single page, or many users access a report at the same time. Once the maximum number of connections is reached, further queries are queued until a connection becomes available. Increasing this limit does result in more load on the underlying data source, so the setting isn't guaranteed to improve overall performance.
     
-    When the model is published to Power BI, the maximum number of concurrent queries sent to the underlying data source also depends on the environment. Different environments (such as Power BI, Power BI Premium, or Power BI Report Server) each can impose different throughput constraints. For more information about Power BI Premium capacity resource limitations, see [Deploying and Managing Power BI Premium Capacities](https://docs.microsoft.com/power-bi/whitepaper-powerbi-premium-deployment).
+    When the model is published to Power BI, the maximum number of concurrent queries sent to the underlying data source also depends on the environment. Different environments (such as Power BI, Power BI Premium, or Power BI Report Server) each can impose different throughput constraints. For more information about Power BI Premium capacity resource limitations, see [Deploying and Managing Power BI Premium Capacities](./whitepaper-powerbi-premium-deployment.md).
 
 ## Optimize report designs
 
@@ -91,7 +90,7 @@ Reports based on a DirectQuery dataset can be optimized in many ways, as describ
 
 - **Enable query reduction techniques:** Power BI Desktop _Options and Settings_ includes a Query Reduction page. This page has three helpful options. It's possible to disable cross-highlighting and cross-filtering by default, though it can be overridden by editing interactions. It is also possible to show an Apply button on slicers and filters. The slicer or filter options will not be applied until the report user clicks the button. If you enable these options, we recommend that you do so when first creating the report.
 
-    ![The Power BI Desktop window is open, and the Current File Query Reduction page is selected. Three options are available to reduce the number of queries sent, and     to show an apply button for slicers and filters.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-query-reduction.png)
+    ![Screenshot of Power B I Desktop showing the Query Reduction filter in the Options window.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-query-reduction.png)
     
 - **Apply filters first:** When first designing reports, we recommend that you apply any applicable filters—at report, page, or visual level—before mapping fields to the visual fields. For example, rather than dragging in the **Country** and **Sales** measures, and then filtering by a particular year, apply the filter on the **Year** field first. It's because each step of building a visual will send a query, and whilst it's possible to then make another change before the first query has completed, it still places unnecessary load on the underlying data source. By applying filters early, it generally makes those intermediate queries less costly and faster. Also, failing to apply filters early can result in exceeding the 1 million-row limit, as described above.
 - **Limit the number of visuals on a page:** When a report page is opened (and when page filters are applied) all of the visuals on a page are refreshed. However, there is a limit on the number of queries that can be sent in parallel, imposed by the Power BI environment and the **Maximum Connections per Data Source** model setting, as described above. So, as the number of page visuals increases, there is higher chance that they will be refreshed in a serial manner. It increases the time taken to refresh the entire page, and it also increases the chance that visuals may display inconsistent results (for volatile data sources). For these reasons, it's recommended to limit the number of visuals on any page, and instead have more simpler pages. Replacing multiple card visuals with a single multi-row card visual can achieve a similar page layout.
@@ -101,7 +100,7 @@ In addition to the above list of optimization techniques, each of the following 
 
 - **Measure filters:** Visuals containing measures (or aggregates of columns) can have filters applied to those measures. For example, the visual below shows **Sales** by **Category**, but only for categories with more than $15 million of sales.
 
-    ![A table visual has two columns: Category and Sales. The Filters pane reveals a filter on the Sales measure for values greater than $15M. The table has three rows, and each row has a Sales value greater than $15 million.](media/directquery-model-guidance/directquery-model-guidance-example-measure-filter.png)
+    ![Screenshot of Power B I Desktop showing tabular data with applied filters.](media/directquery-model-guidance/directquery-model-guidance-example-measure-filter.png)
     
     
     It may result in two queries being sent to the underlying source:
@@ -123,7 +122,7 @@ There are many functional and performance enhancements that can be achieved by c
 
 ## Educate users
 
-It is important to educate your users on how to efficiently work with reports based on DirectQuery datasets. Your report authors should be educated on the content described in the [Optimize report designs](#optimize-report-designs section).
+It is important to educate your users on how to efficiently work with reports based on DirectQuery datasets. Your report authors should be educated on the content described in the [Optimize report designs](#optimize-report-designs) section.
 
 We recommend that you educate your report consumers about your reports that are based on DirectQuery datasets. It can be helpful for them to understand the general data architecture, including any relevant limitations described in this article. Let them know to expect that refresh responses and interactive filtering may at times be slow. When report users understand why performance degradation happens, they are less likely to lose trust in the reports and data.
 

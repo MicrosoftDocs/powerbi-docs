@@ -1,15 +1,13 @@
 ---
 title: Edit parameter settings in the Power BI service
 description: Query parameters are created in Power BI Desktop but can be reviewed and updated in Power BI service
-author: maggiesMSFT
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/21/2018
-ms.author: maggies
-
+ms.date: 08/04/2020
 LocalizationGroup: Create reports
 ---
 # Edit parameter settings in the Power BI service
@@ -19,19 +17,19 @@ Report creators add query parameters to reports in Power BI Desktop. Parameters 
 
 ## Review and edit parameters in Power BI service
 
-As a report creator, you define parameters in Desktop. When you [publish that report to Power BI service](../create-reports/desktop-upload-desktop-files.md), the parameter settings and selections travel with it. You can review and edit some parameter settings in the Power BI service -- not parameters that restrict the available data, but parameters that define and describe acceptable values.
+As a report creator, you define parameters in Power BI Desktop. When you [publish that report to Power BI service](../create-reports/desktop-upload-desktop-files.md), the parameter settings and selections travel with it. You can review and edit parameter settings in the Power BI service, but not create them.
 
-1. In Power BI service, select the cog icon ![cog icon](media/service-parameters/power-bi-cog.png) to open **Settings**.
+1. In the Power BI service, select the cog icon ![cog icon](media/service-parameters/power-bi-cog.png) to open **Settings**.
 
 2. Select the tab for **Datasets** and highlight a dataset in the list. 
     
     ![Settings window with Datasets tab selected](media/service-parameters/power-bi-select-dataset2.png)
 
-3. Expand **Parameters**.  If the selected dataset has no parameters, you'll see a message with a link to Learn more about query parameters. But if the dataset does have parameters, expanding the **Parameters** heading will reveal those parameters. 
+3. Expand **Parameters**.  If the selected dataset has no parameters, you see a message with a link to Learn more about query parameters. If the dataset does have parameters, expand the **Parameters** heading to reveal those parameters. 
 
     ![Settings window with Parameters expanded](media/service-parameters/power-bi-settings.png)
 
-    Review the parameter settings and make changes if needed. Greyed out fields aren't editable. 
+    Review the parameter settings and make changes if needed. Grayed-out fields aren't editable. 
 
 
 ## Next steps

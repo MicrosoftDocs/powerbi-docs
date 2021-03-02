@@ -2,15 +2,13 @@
 title: 'Q&A virtual analyst in iOS apps - Power BI'
 description: Ask questions about sample data in your own words with the Q&A virtual analyst in the Power BI mobile app on on your iOS device.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
-ms.author: painbar
 #customer intent: As a Power BI end user, I want to see how the virtual analyst works in the iOS mobile apps so I can use the analyst to explore my own data. 
-
 ---
 # Q&A virtual analyst in iOS apps - Power BI
 
@@ -46,40 +44,40 @@ Once you've completed the prerequisites you are ready to try the Q&A virtual ana
 3. Type **show**, tap **sales** from the suggestion list > **Send** ![Send icon](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![Show sales](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-show-sales.png)
-4. Tap **by** from the keywords, then tap **item** from the suggestion list > **Send** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+4. Tap **by** from the keywords, then tap **item** from the suggestion list > **Send** ![Send icon](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![Sales by item](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-sale-by-item.png)
-5. Tap **as** from the keywords, tap the column chart icon ![](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-column-chart-icon.png), then tap **Send** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+5. Tap **as** from the keywords, tap the column chart icon :::image type="icon" source="./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-column-chart-icon.png" border="false":::, then tap **Send** ![Send icon](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 6. Long-tap the resulting chart, then tap **Expand**.
 
-    ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-tap-expand-feedback.png)
+    ![Screenshot of a column chart, showing a pointer to Expand.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-tap-expand-feedback.png)
 
     The chart opens in focus mode in the app.
 
-    ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-expanded-chart.png)
+    ![Screenshot of a column chart, showing the focus mode of the chart.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-expanded-chart.png)
 7. Tap the arrow in the upper-left corner to go back to the Q&A virtual analyst chat window.
 8. Tap the X at the right of the text box to delete the text and start over.
-9. Try a new question: Tap **top** from the keywords, tap **sale by avg $/unit ly** > **Send** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+9. Try a new question: Tap **top** from the keywords, tap **sale by avg $/unit ly** > **Send** ![Send icon](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
-    ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-2.png)
-10. Choose **by** from the keywords, tap **time** from the suggestion list at the top > **Send** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+    ![Screenshot of a question, showing the top sale by average amount per unit.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-2.png)
+10. Choose **by** from the keywords, tap **time** from the suggestion list at the top > **Send** ![Send icon](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
-     ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-by-time.png)
-11. Type **as**, pick the line chart icon ![](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-line-chart-icon.png) from the suggestion list > **Send** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+     ![Screenshot of a chart, showing the top sale by average amount per unit by time.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-by-time.png)
+11. Type **as**, pick the line chart icon :::image type="icon" source="./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-line-chart-icon.png" border="false"::: from the suggestion list > **Send** ![Send icon](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
-    ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-as-line.png)
+    ![Screenshot of a column and line chart, showing a pointer from the column to line chart](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-as-line.png)
 
 ## Try saying your questions
 You can now ask questions about your data in the Power BI mobile app by speaking instead of typing.
 
 1. Tap the Q&A virtual analyst icon ![Q&A virtual analyst icon](././media/mobile-apps-ios-qna/power-bi-ios-q-n-a-icon.png) from the action menu at the bottom of the page (at the top of the page on an iPad).
-2. Tap the microphone icon ![](media/mobile-apps-ios-qna/power-bi-ios-qna-mic-icon.png).
+2. Tap the microphone icon ![Microphone icon](media/mobile-apps-ios-qna/power-bi-ios-qna-mic-icon.png).
 
-    ![](media/mobile-apps-ios-qna/power-bi-ios-qna-mic-on.png)
+    ![Screenshot of a question, showing the microphone is active.](media/mobile-apps-ios-qna/power-bi-ios-qna-mic-on.png)
 
-1. When the microphone icon is active, start speaking. For example, say "average unit price by time", then tap **Send** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+1. When the microphone icon is active, start speaking. For example, say "average unit price by time", then tap **Send** ![Send icon](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
-    ![](media/mobile-apps-ios-qna/power-bi-ios-qna-speech-complete.png)
+    ![Screenshot of a question, showing the speech is completed.](media/mobile-apps-ios-qna/power-bi-ios-qna-speech-complete.png)
 
 ### Questions about privacy when using speech-to-text?
 See the Speech Recognition section of [What's New in iOS](https://go.microsoft.com/fwlink/?linkid=845624) in the Apple iOS Developer Guides.
@@ -88,7 +86,7 @@ See the Speech Recognition section of [What's New in iOS](https://go.microsoft.c
 * Need help? Just say "Hi" or "Help", and you'll get assistance with starting a new question.
 * Care to provide feedback on the results? Long-tap a chart or other result, then tap the smiley or frowny face.
 
-    ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-tap-feedback.png)
+    ![Screenshot of a column chart, showing a feedback with a pointer to a smiley face.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-tap-feedback.png)
 
     Your feedback is anonymous, and helps us improve our answers to questions.
 

@@ -2,13 +2,13 @@
 title: Waterfall charts in Power BI
 description: 'Waterfall charts in Power BI'
 author: mihart
-ms.reviewer: ''
-featuredvideoid: maTzOJSRB3g
+ms.author: mihart
+ms.reviewer: 'mihart'
+featuredvideoid: removed
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 12/5/2019
-ms.author: rien
 LocalizationGroup: Visualizations
 ---
 
@@ -91,7 +91,7 @@ Dig in a little more to see what's contributing most to the changes month to mon
 
 1.  Select **Store** > **Territory**, which will add **Territory** to the **Breakdown** bucket.
 
-    ![Shows Store in Breakdown bucket](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
+    ![Screenshot shows adding Territory to the Breakdown area.](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
 
     Power BI uses the value in **Breakdown** to add additional data to the visualization. It adds the top five contributors to increases or decreases for each fiscal month. This means that February, for example, now has six data points instead of just one.  
 

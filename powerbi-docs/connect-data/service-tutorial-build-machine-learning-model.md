@@ -2,16 +2,14 @@
 title: 'Tutorial: Build a Machine Learning model in Power BI'
 description: In this tutorial you build a Machine Learning model in Power BI.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 03/29/2019
-ms.author: davidi
+ms.date: 08/03/2020
 #customer intent: "As a Power BI end user, I want to build a Machine Learning model, so I can use machine learning with Power BI."
-
 LocalizationGroup: Connect to services
 ---
 # Tutorial: Build a Machine Learning model in Power BI
@@ -41,9 +39,9 @@ You can download the dataset from the UC Irvine website. We also have this avail
 
 ### Create the entities
 
-To create the entities in your dataflow, sign into the Power BI service and navigate to a workspace on your dedicated capacity that has AI enabled.
+To create the entities in your dataflow, sign into the Power BI service and navigate to a workspace on your capacity that has AI enabled.
 
-If you don't already have a workspace, you can create one by selecting **Workspaces** in the nav pane menu in the Power BI service, and select **Create workspace** at the bottom of the panel that appears. This opens a panel on the right to enter the workspace details. Enter a workspace name and select **Advanced**. Confirm that the workspace uses Dedicated Capacity using the radio button, and that it's assigned to a dedicated capacity instance that has the AI preview turned on. Then select **Save**.
+If you don't already have a workspace, you can create one by selecting **Workspaces** in the nav pane menu in the Power BI service, and select **Create workspace** at the bottom of the panel that appears. This opens a panel on the right to enter the workspace details. Enter a workspace name and select **Advanced**. Confirm that the workspace uses Dedicated Capacity using the radio button, and that it's assigned to a capacity instance that has the AI preview turned on. Then select **Save**.
 
 ![Create a workspace](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-01.png)
 
@@ -152,6 +150,27 @@ Once the dataflow refresh is completed, you can select the **Online Visitors enr
 
 ![View the results](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-21.png)
 
+You can also invoke any AutoML model in the workspace, directly from the Power Query Editor in your dataflow. To access the AutoML models, select the Edit button for the entity that you want to enrich with insights from your AutoML model, as shown in the following image.
+
+![Edit the entity](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-22.png)
+
+Selecting the Edit button opens the Power Query Editor for the entities in your dataflow. 
+Select the AI Insights button in the ribbon.
+
+![AI Insights](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-23.png)
+
+ Select the Power BI Machine Learning Models folder from the nav pane menu. All the AutoML models to which you have access are listed here as Power Query functions. Also, the input parameters for the AutoML model are automatically mapped as parameters of the corresponding Power Query function. Note that automatic mapping of parameters happens only if the name and data type of the parameter is the same.
+ 
+To invoke an AutoML model, you can specify any of the selected entity's columns as an input from the drop-down. You can also specify a constant value to be used as an input by toggling the column icon to the left of the input dialog.
+
+![PQO Function browser](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-24.png)
+
+Select Apply to view the preview of the AutoML model's output as a new columns in the entity table. You will also see the model invocation as an applied step for the query.
+
+![View results](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-25.png)
+
+Once you save your dataflow, the model is automatically invoked when the dataflow is refreshed, for any new or updated rows in the entity table.
+
 ## Using the scored output from the model in a Power BI report
 
 To use the scored output from your machine learning model you can connect to your dataflow from the Power BI desktop, using the Dataflows connector. The **Online Visitors enriched Purchase Intent Prediction** entity can now be used to incorporate the predictions from your model in Power BI reports.
@@ -166,4 +185,4 @@ In this tutorial, you created and applied a binary prediction model in Power BI 
 * Apply the model to a dataflow entity
 * Using the scored output from the model in a Power BI report
 
-For more information about Machine Learning automation in Power BI, see [Automated Machine Learning in Power BI](../transform-model/service-machine-learning-automated.md).
+For more information about Machine Learning automation in Power BI, see [Automated Machine Learning in Power BI](../transform-model/dataflows/dataflows-machine-learning-integration.md).

@@ -2,12 +2,12 @@
 title: Forgot your password for Power BI?
 description: If you've forgotten your password, you can use a link to request a password reset.
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/13/2019
-ms.author: kfollis
 LocalizationGroup: Troubleshooting
 ---
 

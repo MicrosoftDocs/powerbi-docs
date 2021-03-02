@@ -2,14 +2,12 @@
 title: Data sources in Power BI Desktop
 description: Data sources in Power BI Desktop
 author: davidiseminger
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-desktop
-ms.topic: how-to
-ms.date: 05/19/2020
 ms.author: davidi
-
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: pbi-data-sources
+ms.topic: how-to
+ms.date: 02/23/2021
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
@@ -55,6 +53,7 @@ The **File** category provides the following data connections:
 * JSON
 * Folder
 * PDF
+* Parquet
 * SharePoint folder
 
 The following image shows the **Get Data** window for **File**.
@@ -69,7 +68,7 @@ The **Database** category provides the following data connections:
 * Access database
 * SQL Server Analysis Services database
 * Oracle database
-* IBM DB2 database
+* IBM Db2 database
 * IBM Informix database (Beta)
 * IBM Netezza
 * MySQL database
@@ -85,18 +84,21 @@ The **Database** category provides the following data connections:
 * Vertica
 * Snowflake
 * Essbase
+* Actian (Beta)
 * AtScale cubes
-* BI Connector 
+* BI Connector
 * Data Virtuality LDW (Beta)
 * Denodo
 * Dremio
 * Exasol
-* Indexima (Beta)
+* Indexima
 * InterSystems IRIS (Beta)
 * Jethro (Beta)
 * Kyligence
 * Linkar PICK Style / MultiValue Databases (Beta)
+* MariaDB (Beta)
 * MarkLogic
+
 
 > [!NOTE]
 > Some database connectors require that you enable them by selecting **File > Options and settings > Options** then selecting **Preview Features** and enabling the connector. If you don't see some of the connectors mentioned above and want to use them, check your **Preview Features** settings. Also note that any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments.
@@ -111,8 +113,9 @@ The **Power Platform** category provides the following data connections:
 
 * Power BI datasets
 * Power BI dataflows
-* Common Data Service
-* Power Platform dataflows
+* Common Data Service (Legacy)
+* Dataverse
+* Power Platform dataflows (Beta)
 
 The following image shows the **Get Data** window for **Power Platform**.
 
@@ -123,19 +126,20 @@ The following image shows the **Get Data** window for **Power Platform**.
 The **Azure** category provides the following data connections:
 
 * Azure SQL Database
-* Azure SQL Data Warehouse
+* Azure Synapse Analytics (SQL DW)
 * Azure Analysis Services database
 * Azure Database for PostgreSQL
 * Azure Blob Storage
 * Azure Table Storage
 * Azure Cosmos DB
+* Azure Data Explorer (Kusto)
 * Azure Data Lake Storage Gen2
 * Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive Query
-* Azure Data Explorer (Kusto)
 * Azure Cost Management
+* Azure Databricks
 * Azure Time Series Insights (Beta)
 
 
@@ -167,32 +171,34 @@ The **Online Services** category provides the following data connections:
 * Marketo (Beta)
 * Mixpanel (Beta)
 * Planview Enterprise One - PRM (Beta)
-* Planview Projectplace (Beta)
 * QuickBooks Online (Beta)
 * Smartsheet
 * SparkPost (Beta)
 * SweetIQ (Beta)
 * Planview Enterprise One - CTM (Beta)
 * Twilio (Beta)
-* tyGraph (Beta)
-* Webtrends (Beta)
 * Zendesk (Beta)
 * Asana (Beta)
 * Dynamics 365 Customer Insights (Beta)
 * Emigo Data Source
 * Entersoft Business Suite (Beta)
-* FactSet Analytics (Beta)
+* eWay-CRM (Beta)
+* FactSet Analytics
+* Palantir Foundry
+* Hexagon PPM Smart API
 * Industrial App Store
 * Intune Data Warehouse (Beta)
 * Microsoft Graph Security (Beta)
-* Projectplace for Power BI (Beta)
+* Projectplace for Power BI
 * Product Insights (beta)
 * Quick Base
+* Spigit (Beta)
 * TeamDesk (Beta)
 * Webtrends Analytics (Beta)
 * Witivio (Beta)
 * Workplace Analytics (Beta)
 * Zoho Creator (Beta)
+
 
 The following image shows the **Get Data** window for **Online Services**.
 
@@ -209,13 +215,17 @@ The **Other** category provides the following data connections:
 * Microsoft Exchange
 * Hadoop File (HDFS)
 * Spark
-* Hive LLAP (Beta)
+* Hive LLAP
 * R script
 * Python script
 * ODBC
 * OLE DB
+* Acterys : Model Automation & Planning (Beta)
+* Anaplan Connector v1.0 (Beta)
+* Automation Anywhere (Beta)
 * Solver
-* Cognite Data Fusion (Beta)
+* Cherwell (Beta)
+* Cognite Data Fusion
 * FHIR
 * Information Grid (Beta)
 * Jamf Pro (Beta)
@@ -225,20 +235,31 @@ The **Other** category provides the following data connections:
 * Roamler (Beta)
 * Shortcuts Business Insights (Beta)
 * Siteimprove
+* Starburst Enterprise Presto (Beta)
 * SurveyMonkey (Beta)
 * Tenforce (Smart)List
 * TIBCO(R) Data Virtualization (Beta)
 * Vena (Beta)
-* Workforce Dimensions (Beta)
+* Vessel Insight (Beta)
 * Zucchetti HR Infinity (Beta)
 * Blank Query
 
+
+
 The following image shows the **Get Data** window for **Other**.
 
-![Other data sources, Get Data dialog box, Power BI Desktop](media/desktop-data-sources/data-sources-08.png)
+![Other data sources in Power BI Desktop](media/desktop-data-sources/data-sources-08.png)
 
 > [!NOTE]
 > At this time, it's not possible to connect to custom data sources secured using Azure Active Directory.
+
+### Template apps
+
+You can find template apps for your organization by selecting the **Template Apps** link near the bottom of the **Get Data** window. 
+
+![Get Data dialog box for Other data sources in Power BI Desktop](media/desktop-data-sources/data-sources-12.png)
+
+Available Template Apps may vary based on your organization.
 
 ## Connecting to a data source
 
@@ -262,25 +283,43 @@ That’s all there is to connecting to data sources in Power BI Desktop! Try con
 
 PBIDS files are Power BI Desktop files that have a specific structure, and they have a .PBIDS extension to identify it is a Power BI data source file.
 
-You can create a PBIDS file to streamline the **Get Data** experience for report creators in your organization. To make it easier for a new report author to use PBIDS files, we recommend that an administrator create these files for commonly used connections.
+You can create a PBIDS file to streamline the **Get Data** experience for new or beginner report creators in your organization. If you create the PBIDS file from existing reports, it's easier for beginning report authors to build new reports from the same data.
 
-When an author opens a PBIDS file, Power BI Desktop opens and prompts the user for credentials to authenticate and connect to the data source that's specified in the file. The **Navigation** dialog box appears, and the user must select the tables from that data source to load into the model. Users may also need to select the database(s) if none was specified in the PBIDS file.
+When an author opens a PBIDS file, Power BI Desktop opens and prompts the user for credentials to authenticate and connect to the data source that's specified in the file. The **Navigation** dialog box appears, and the user must select the tables from that data source to load into the model. Users may also need to select the database(s) and connection mode if none was specified in the PBIDS file.
 
 From that point forward, the user can begin building visualizations or select **Recent Sources** to load a new set of tables into the model.
 
 Currently, PBIDS files only support a single data source in one file. Specifying more than one data source results in an error.
 
-To create the PBIDS file, an administrator must specify the required inputs for a single connection. They can also specify the connection mode as either DirectQuery or Import. If **mode** is missing/null in the file, the user who opens the file in Power BI Desktop is prompted to select **DirectQuery** or **Import**.
+
+### How to create a PBIDS connection file
+
+If you have an existing Power BI Desktop (.PBIX) file that's already connected to the data you’re interested in, you can simply export these connection files from within Power BI Desktop. This is the recommended method, since the PBIDS file can be auto-generated from Desktop. In addition, you can still edit or manually create the file in a text editor. 
+
+To create the PBIDS file, select **File > Options and settings > Data source settings**:
+
+![The data source settings menu option](media/desktop-data-sources/data-sources-09.png)
+
+In the dialog that appears, select the data source you want to export as a PBIDS, and then select **Export PBIDS**.
+
+![Data source settings dialog](media/desktop-data-sources/data-sources-10.png)
+
+When you select the **Export PBIDS** button, Power BI Desktop generates the PBIDS file, which you can rename and save in your directory, and share with others. You can also open the file in a text editor, and modify the file further, including specifying the mode of connection in the file itself, as shown in the following image. 
+
+![Using a text editor to modify the PBIDS file](media/desktop-data-sources/data-sources-11.png)
+
+If you prefer to manually create your PBIDS files in a text editor, you must specify the required inputs for a single connection and save the file with the PBIDS extension. Optionally, you can also specify the connection mode as either DirectQuery or Import. If **mode** is missing/null in the file, the user who opens the file in Power BI Desktop is prompted to select **DirectQuery** or **Import**.
+
 
 ### PBIDS file examples
 
-This section provides some examples from commonly used data sources. The PBIDS file type only supports data connections that are also supported in Power BI Desktop, with two exceptions: Live Connect and Blank Query.
+This section provides some examples from commonly used data sources. The PBIDS file type only supports data connections that are also supported in Power BI Desktop, with the following exceptions: Wiki URLS, Live Connect and Blank Query.
 
 The PBIDS file *doesn't* include authentication information and table and schema information.  
 
-The following code snippets show several common examples for PBIDS files, but they aren't complete or comprehensive. For other data sources, you can refer to the [Data Source Reference (DSR) format for protocol and address information](https://docs.microsoft.com/azure/data-catalog/data-catalog-dsr#data-source-reference-specification).
+The following code snippets show several common examples for PBIDS files, but they aren't complete or comprehensive. For other data sources, you can refer to the [Data Source Reference (DSR) format for protocol and address information](/azure/data-catalog/data-catalog-dsr#data-source-reference-specification).
 
-These examples are for convenience only, aren't meant to be comprehensive, and don't include all supported connectors in DSR format. An administrator or organization can create their own data sources using these examples as guides, from which they can create and support their own data source files.
+If you're editing or manually creating the connection files, these examples are for convenience only, aren't meant to be comprehensive, and don't include all supported connectors in DSR format.
 
 #### Azure AS
 

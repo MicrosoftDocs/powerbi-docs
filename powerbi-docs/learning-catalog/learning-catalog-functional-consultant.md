@@ -1,11 +1,11 @@
 ---
 title: Functional Application Consultant learning catalog
-description: Find all the training options for Power Apps
+description: Find all the training options for Power Apps for implementation experts for a business domain, from most basic to most advanced.
 author: margoc
+ms.author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
-ms.author: margoc
 ---
 
 # Functional Application Consultant learning catalog
@@ -29,7 +29,8 @@ For functional consultants, our job-task analysis research showed that everyone 
 | [Power BI: Analytics Done Right](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_02OnDemandRegistration-ForminBody.html)  | Calling all Analytics and Excel visionaries: learn how to make beautiful reports people want to use, share appealing insights that are easy to understand, and securely break silos of complex data to make it accessible. We'll share new product innovations and our vision for modern enterprise BI and self-service BI; enabling your organization to build a data-driven culture.   | Webinar       |                   |
 | [Three Ways AI Is Changing BI](https://info.microsoft.com/ww-landing-Three-Ways-AI-Is-Changing-BI-OnDemand.html)  | It’s crucial for analysts to investigate and visualize data to help their stakeholders find insights quickly and effectively. Business demands have evolved from executives asking what and when something happened, to asking why it happened—and what will occur in the future. Register for this webinar to learn about three data insight opportunities that blend AI with business intelligence (BI).   | Webinar       |                   |
 | [Unleash the Power of Power BI – tips and tricks by Philip Seamark](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/6-22-2017-Unleash-the-Power-of-Power-BI-tips-and-tricks-by/td-p/161490) | Join Philip Seamark as he walks through some of the details around the largest deployment of Power BI in the Southern Hemisphere, how it's used, and how it meets their BI needs. This session will cover a variety of tips and tricks to help you enhance your Power BI reports.   | Webinar       | 53 min 47 sec       |
-| [What is Power BI?](https://docs.microsoft.com/power-bi/fundamentals/power-bi-overview)  | Overview of Power BI   | Website       | 3 minutes to read |
+| [What is Power BI?](../fundamentals/power-bi-overview.md)  | Overview of Power BI   | Website       | 3 minutes to read |
+| [Use DAX in Power BI   Desktop](/learn/paths/dax-power-bi/) | This learning path introduces Data Analysis Expressions (DAX) and   provides you with foundational skills required to enhance data models with   calculations.  | Free, self-paced online learning path | 4 hr 30 min |
 ## Best Practices<a name="best-practices"></a>
 | Content   | Description  | Format   | Length   |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|-------------------|

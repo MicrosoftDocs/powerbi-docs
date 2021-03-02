@@ -2,20 +2,21 @@
 title: Organize work in the new workspaces in Power BI
 description: Learn about the new workspaces, which are collections of dashboards and reports built to deliver key metrics for your organization.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 05/26/2020
-ms.author: maggies
-ms.custom: contperfq4
-
+ms.date: 02/17/2021
+ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
 ---
 
 # Organize work in the new workspaces in Power BI
 
-*Workspaces* are places to collaborate with colleagues to create collections of dashboards, reports, datasets, and paginated reports. The new workspace experience helps you better manage access to content. This article describes the new workspaces, and how they differ from the classic workspaces.  As with classic workspaces, you still use them to create and distribute apps. Ready to create a new workspace? Read [Create a new workspace experience](service-create-the-new-workspaces.md).
+*Workspaces* are places to collaborate with colleagues to create collections of dashboards, reports, datasets, and paginated reports. The new workspace experience helps you better manage access to content. This article describes the new workspaces, and how they differ from the classic workspaces.  As with classic workspaces, you still use them to create and distribute apps. 
+
+Ready to create a new workspace? Read [Create a new workspace experience](service-create-the-new-workspaces.md).
 
 :::image type="content" source="media/service-new-workspaces/power-bi-workspace-opportunity.png" alt-text="Power BI new workspace experience":::
 
@@ -31,7 +32,7 @@ With the new workspaces, we've redesigned some features. Here are the main diffe
 - **Contact list**: In the new workspaces, you can specify who receives notification about workspace activity.
 - **Create template apps**: You can only create *template apps* in the new workspaces. Template apps are apps that you can distribute to customers outside of your organization. Those customers can then connect to their own data with your template app. Read more about [template apps](../connect-data/service-template-apps-overview.md).
 - **Share datasets**: To share a dataset outside a specific workspace, you need to save the report that contains the dataset to one of the new workspaces. You can't share datasets from classic workspaces. Read more about [shared datasets](../connect-data/service-datasets-across-workspaces.md).
-- **Organizational content packs**: You create and consume organizational content packs in classic workspaces. You can't create or consume them in the new workspaces. Apps and template apps replace organizational content packs in the new workspaces.
+- **Organizational content packs**: You create and consume organizational content packs in classic workspaces. You can't create or consume them in the new workspaces. Apps and template apps replace organizational content packs in the new workspaces. Organizational content packs are being deprecated. Now is a good time to upgrade your content packs to apps. See the workspace upgrade roadmap section of this blog post [Announcing Power BI admins can upgrade classic workspaces](https://powerbi.microsoft.com/blog/announcing-power-bi-admins-can-upgrade-classic-workspaces-and-roadmap-update/) for the timeline.
 
 This article explains these features in more detail.
 
@@ -82,8 +83,10 @@ If one of the new workspaces is in a shared capacity, everyone you add to it nee
 
 When the new workspace is in a Power BI Premium capacity, users with the Viewer role can access the workspace even if they don't have a Power BI Pro license. However, if you assign these users a higher role like Admin, Member, or Contributor, they're prompted to start a Pro trial when they try to access the workspace. If you want users without Pro licenses to use the Viewer role, make sure they don't also have other workspace roles, either as individuals or as part of a user group.
 
+Publishing reports to the new workspace experience has stricter enforcement of existing licensing rules. If you try to publish from Power BI Desktop or other client tools without a Pro license, you see the error, "Only users with Power BI Pro licenses can publish to this workspace."
+
 > [!NOTE]
-> Publishing reports to the new workspace experience has stricter enforcement of existing licensing rules. If you try to publish from Power BI Desktop or other client tools without a Pro license, you see the error, "Only users with Power BI Pro licenses can publish to this workspace."
+> Power BI US Government isn't available as a Free license. For licensing details, see [Power BI for US government customers](../admin/service-govus-overview.md).
 
 ### Guest users
 
@@ -91,7 +94,9 @@ By default, [Azure AD B2B Guest users](../admin/service-admin-azure-ad-b2b.md) c
 
 ### Administering new workspace experience workspaces
 
-Administration for new workspace experience workspaces is in the Power BI admin portal. Power BI admins decide who in an organization can create workspaces and distribute apps. Admins can see the state of all the workspaces in their organization. They can also manage and recover workspaces. Read more about [administering the new workspaces](../admin/service-admin-portal.md#create-the-new-workspaces) in the Admin portal article.
+Administration for new workspace experience workspaces is in the Power BI admin portal. Power BI admins decide who in an organization can create workspaces and distribute apps. Read about [managing users' ability to create workspaces](../admin/service-admin-portal.md#create-the-new-workspaces) in the "Admin portal" article. 
+
+Admins can also see the state of all the workspaces in their organization. They can manage, recover, and even delete workspaces. Read about [managing the workspaces themselves](../admin/service-admin-portal.md#workspaces) in the "Admin portal" article.
 
 ### Auditing
 

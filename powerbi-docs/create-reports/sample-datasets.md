@@ -2,14 +2,13 @@
 title: Get samples for Power BI
 description: Sample content packs, apps, .pbix files, and Excel datasets for Power BI
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: 
 ms.custom:
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 03/27/2020
-ms.author: maggies
-
 LocalizationGroup: Samples
 ---
 # Get samples for Power BI
@@ -20,7 +19,7 @@ Power BI offers different kinds of samples, for different purposes:
 - A **[sample app](#sample-app-from-appsource)** that you download from AppSource, also right in the Power BI service. Apps include dashboards, reports, and datasets. You can modify them, then distribute them to your colleagues.
 - **[Eight original built-in samples](#eight-original-samples)** in the Power BI service as *content packs*, with dashboards, reports, and datasets. You install them right in the Power BI service. The built-in samples are also available as Power BI reports (.pbix) and Excel workbooks (.xlsx).
 - **[Excel workbook](#download-sample-excel-files)** versions of the built-in samples, containing the data model and Power View sheets. You can explore or edit the data model in Excel, use the Excel workbook as a data source for a Power BI report. You can also upload the workbook as an Excel file and display the Excel visuals and PivotTables in Power BI reports. 
-- Also a **[Financial data sample workbook](sample-financial-download.md)**, a simple flat table in an Excel file available for download. It contains anonymized data with fictitious products, with sales divided by segments and countries. It makes a useful basic data source for a Power BI report.
+- Also a **[Financial data sample workbook](sample-financial-download.md)**, a simple flat table in an Excel file available for download. It contains anonymized data with fictitious products, with sales divided by segments and countries/regions. It makes a useful basic data source for a Power BI report.
 
 Our online documentation uses these same samples in tutorials and examples, so you can follow along.
 
@@ -37,7 +36,7 @@ The scenario for this report is a company that sells Microsoft-themed skateboard
 You can explore it these ways:
 
 - View and interact with it in the Power BI Community [Data Stories Gallery](https://community.powerbi.com/t5/Data-Stories-Gallery/Sales-amp-Returns-Sample-Report/m-p/876607).
-- Download the .pbix file and explore it in depth. Look "behind the curtain" to see how Miguel made it. Selecting this link downloads the file automatically: [Sales & Returns sample report](https://go.microsoft.com/fwlink/?linkid=2113239).
+- Download the .pbix file and explore it in depth. Look "behind the curtain" to see how Miguel made it. Selecting this link downloads the file automatically: [Sales & Returns sample report](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Sales%20%26%20Returns%20Sample%20v201912.pbix).
 - Read about the report in the Power BI blog post, [Take a tour of the new Sales & Returns sample report](https://powerbi.microsoft.com/blog/take_a_tour_of_the_new_sales_returns_sample_report/).
 
 ## Sample app from AppSource

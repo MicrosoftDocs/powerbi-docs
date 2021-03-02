@@ -1,6 +1,6 @@
 ---
-title: Power BI Embedded Migration Tool
-description: This migration tool can be used to copy your reports from the Power BI Embedded Azure service (PaaS) to the Power BI service (SaaS).
+title: Migration Tool from Workspace Collections to the Power BI embedded analytics Power BI Embedded solution for better embedded BI insights
+description: This migration tool can be used to copy your reports from the Power BI Embedded Azure service (PaaS) to the Power BI service (SaaS). Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -146,7 +146,7 @@ You can right click on a group and choose to rename the group within the Upload 
 
 On the **Download** tab, you will see the list of reports and associated metadata. You can see what the export status is along with the previous export status.
 
-![](media/migrate-tool/migrate-tool-download-tab.png)
+![download](media/migrate-tool/migrate-tool-download-tab.png)
 
 You have two options.
 

@@ -1,6 +1,6 @@
 ---
-title: Power BI data model versioning
-description: Data Model exposed by an OData Service
+title: Power BI data model versioning in Power BI embedded analytics for better embedded BI insights
+description: Data Model exposed by an OData Service. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -34,4 +34,4 @@ Services ***SHOULD NOT*** change their data model depending on the authenticated
 For more about OData Data Model standards, see [OData Version 4.0 Part 1: Protocol Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).  
   
 ## See also
-[Overview of Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/)
+[Overview of Power BI REST API](/rest/api/power-bi/)

@@ -1,28 +1,26 @@
 ---
-title: PowerShell cmdlets, REST APIs, and .NET SDK for administrators
+title: PowerShell cmdlets, REST APIs, and .NET Client libraries for administrators
 description: Learn about the ways you can administer Power BI through scripts and programming APIs.
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: kfollis
-
 LocalizationGroup: Administration
 ---
 
-# PowerShell cmdlets, REST APIs, and .NET SDK for Power BI administration
-Power BI enables administrators to script common tasks with PowerShell cmdlets. It also exposes REST APIs and provides a .NET SDK for developing administrative solutions. This topic shows a list of cmdlets and the corresponding SDK method and REST API endpoint. For more information, see:
+# PowerShell cmdlets, REST APIs, and .NET Client library for Power BI administration
+Power BI enables administrators to script common tasks with PowerShell cmdlets. It also exposes REST APIs and provides a .NET client library for developing administrative solutions. This topic shows a list of cmdlets and the corresponding APIs and REST API endpoint. For more information, see:
 
-- PowerShell [download](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt/) and [documentation](https://docs.microsoft.com/powershell/power-bi/overview?view=powerbi-ps)
-- REST API [documentation](https://docs.microsoft.com/rest/api/power-bi/admin)
-- .NET SDK [download](https://www.nuget.org/packages/Microsoft.PowerBI.Api/)
+- PowerShell [download](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt/) and [documentation](/powershell/power-bi/overview?view=powerbi-ps&preserve-view=true)
+- REST API [documentation](/rest/api/power-bi/admin)
+- .NET Client library [download](https://www.nuget.org/packages/Microsoft.PowerBI.Api/)
 
 > Cmdlets below should be called with `-Scope Organization` to operate against the tenant for administration.
 
-| **Cmdlet name** | **Aliases** | **SDK method** | **REST API endpoint** | **Description** |
+| **Cmdlet name** | **Aliases** | **API** | **REST API endpoint** | **Description** |
 | --- | --- | --- | --- | --- |
 | `Get-PowerBIDatasource` | N/A | `Datasets_GetDataSourcesAsAdmin` | /v1.0/myorg/admin/datasets/{datasetkey}/datasources | Gets the data sources for a given dataset. |
 | `Get-PowerBIDataset` | N/A | `Datasets_GetDatasetsAsAdmin` | /v1.0/myorg/admin/datasets | Gets the full list of datasets in a Power BI tenant. |

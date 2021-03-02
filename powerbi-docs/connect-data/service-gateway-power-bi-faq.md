@@ -2,14 +2,12 @@
 title: On-premises data gateway FAQ - Power BI
 description: This article is the on-premises data gateway FAQ for Power BI. This article collects frequently asked questions into one spot for the gateway used in Power BI.
 author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
-ms.author: arthii
-
 LocalizationGroup: Gateways
 ---
 
@@ -45,7 +43,7 @@ LocalizationGroup: Gateways
 
 ## Analysis Services in Power BI
 
-**Question:** Can I use msdmpump.dll to create custom effective username mappings for Analysis Services? 
+**Question:** Can I use msmdpump.dll to create custom effective username mappings for Analysis Services? 
 
 **Answer:** No. This use isn't supported at this time.
 

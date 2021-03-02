@@ -2,19 +2,18 @@
 title: 'Organizational content packs: Manage and update'
 description: Read about managing, updating, and deleting organizational content packs in Power BI.
 author: maggiesMSFT
-ms.reviewer: lukaszp
-
-ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: how-to
-ms.date: 08/02/2018
 ms.author: maggies
-
+ms.reviewer: lukaszp
+ms.service: powerbi
+ms.subservice: pbi-collaborate-share
+ms.topic: how-to
+ms.date: 01/12/2021
 LocalizationGroup: Share your work
 ---
 # Manage, update, and delete organizational content packs
+
 > [!NOTE]
-> You can't create organizational content packs or install them in the new workspace experiences. Now is a good time to upgrade your content packs to apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
+> Organizational content packs are being deprecated. Now is a good time to upgrade your content packs to apps, if you haven't started yet. See the workspace upgrade roadmap section of this blog post [Announcing Power BI admins can upgrade classic workspaces](https://powerbi.microsoft.com/blog/announcing-power-bi-admins-can-upgrade-classic-workspaces-and-roadmap-update/) for the timeline.
 > 
 
 You can package up and share your dashboards, reports, Excel workbooks, and datasets with your colleagues as [organizational content packs](service-organizational-content-pack-introduction.md). Your colleagues can use them as-is, or they can create their own copies.
@@ -36,12 +35,12 @@ When you make and save a change to the dashboard that you included in a content 
 
 1. Select **View Content Packs** in the message.
    
-   ![](media/service-organizational-content-pack-manage-update-delete/pbi_contpkchangesmessage.png)
-2. Or select the cog icon in the upper-right corner ![](media/service-organizational-content-pack-manage-update-delete/cog.png) and select **View Content Pack**.
+   ![Screenshot of a message dialog to select View Content Packs.](media/service-organizational-content-pack-manage-update-delete/pbi_contpkchangesmessage.png)
+2. Or select the cog icon in the upper-right corner ![Screenshot of cog icon.](media/service-organizational-content-pack-manage-update-delete/cog.png) and select **View Content Pack**.
    
-   ![](media/service-organizational-content-pack-manage-update-delete/pbi_contpkview.png)
+   ![Screenshot of cog icon in the upper-right corner.](media/service-organizational-content-pack-manage-update-delete/pbi_contpkview.png)
    
-   Notice the warning icon ![](media/service-organizational-content-pack-manage-update-delete/pbi_contpkwarningicon.png).  This lets you know that you've modified the content pack in some way and it no longer matches what you published.
+   Notice the warning icon ![Screenshot of warning icon.](media/service-organizational-content-pack-manage-update-delete/pbi_contpkwarningicon.png).  This lets you know that you've modified the content pack in some way and it no longer matches what you published.
 3. Select **Edit**.  
 4. Make any necessary changes in the **Update Content Pack** window and select **Update**. A **Success** message appears.
    
@@ -51,7 +50,7 @@ When you make and save a change to the dashboard that you included in a content 
 ## Update the audience: expand or restrict access
 Another modification available to content pack creators is expanding and restricting access to the content pack.  Perhaps you published a content pack to a broad audience and you've decided to restrict access to a smaller group.  
 
-1. Select the cog icon ![](media/service-organizational-content-pack-manage-update-delete/cog.png) and choose **View Content Packs**.
+1. Select the cog icon ![Screenshot of cog icon.](media/service-organizational-content-pack-manage-update-delete/cog.png) and choose **View Content Packs**.
 2. Select **Edit**. 
 3. Make any necessary changes in the **Update Content Pack** window and select **Update**. For example, delete the original distribution group in the **Specific Groups** field and replace it with a different distribution group (that has fewer members).
    
@@ -73,7 +72,7 @@ You can only delete a content pack from AppSource if you created it. If you've c
 > 
 > 
 
-1. To delete a content pack from AppSource, go to the workspace where you created the content pack, select the cog icon ![](media/service-organizational-content-pack-manage-update-delete/cog.png) and choose **View Content Packs**.
+1. To delete a content pack from AppSource, go to the workspace where you created the content pack, select the cog icon ![Screenshot of cog icon.](media/service-organizational-content-pack-manage-update-delete/cog.png) and choose **View Content Packs**.
 2. Select **Delete \> Delete**. 
    
    * For group members who haven't customized the content pack, the dashboard and reports associated with that content pack are automatically removed. They're no longer available, and the content pack doesn't appear in the nav pane.

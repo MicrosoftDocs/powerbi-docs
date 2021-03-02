@@ -2,14 +2,12 @@
 title: Data types in Power BI Desktop
 description: Data types in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: reference
 ms.date: 05/06/2020
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Data types in Power BI Desktop
@@ -24,11 +22,11 @@ In Power BI Desktop, you can determine and specify a column’s data type in the
 
 **Data types in Query Editor**
 
-![](media/desktop-data-types/pbiddatatypesinqueryeditort.png)
+![Screenshot of the Data type ribbon, showing it in the Query Editor.](media/desktop-data-types/pbiddatatypesinqueryeditort.png)
 
 **Data types in Data View or Report View**
 
-![](media/desktop-data-types/pbiddatatypesindatareportview.png)
+![Screenshot of the Data type ribbon, showing it in the Data View.](media/desktop-data-types/pbiddatatypesindatareportview.png)
 
 The Data Type drop down in Query Editor has two data types not currently present in Data or Report View: **Date/Time/Timezone** and **Duration**. When a column with these data types is loaded into the model and viewed in Data or Report view, a column with a Date/Time/Timezone data type will be converted into a Date/Time, and a column with a Duration data type is converted into a Decimal Number.
 

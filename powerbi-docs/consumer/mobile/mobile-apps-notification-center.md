@@ -2,14 +2,12 @@
 title: Get notifications in the Power BI mobile apps
 description: The Notification Center brings information related to your Power BI experience right to you on your mobile device.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
-ms.author: painbar
-
 ---
 # Get notifications in the Power BI mobile apps
 Applies to:
@@ -19,7 +17,7 @@ Applies to:
 | iPhones |iPads |Android phones |Android tablets |Windows 10 devices |
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 Notifications bring information related to your Power BI experience right to you, in the Power BI service or on your mobile device. When you open Notifications, you see a sequential feed of messages about [alerts you've set](mobile-set-data-alerts-in-the-mobile-apps.md), new dashboards that have been shared with you, changes to your group workspace, information about Power BI events and meetings, and more.
 
@@ -57,15 +55,15 @@ You can change how Power BI notifies you.
    
     **On an iPhone**
    
-    ![Choose Notifications](./media/mobile-apps-notification-center/power-bi-notifications-iphone-settings.png)
+    ![Screenshot shows an iPhone screen titled Power B I where you can allow and manage notifications.](./media/mobile-apps-notification-center/power-bi-notifications-iphone-settings.png)
    
     **On an Android phone**
    
-    ![Choose Notifications](./media/mobile-apps-notification-center/power-bi-notifications-android-settings.png)
+    ![Screenshot shows an Android phone screen titled Power B I where you can allow and manage notifications.](./media/mobile-apps-notification-center/power-bi-notifications-android-settings.png)
 
     **On a Windows 10 device**
 
-    ![Choose Notifications](./media/mobile-apps-notification-center/power-bi-notifications-windows10-settings.png)
+    ![Screenshot shows a Windows 10 device screen where you can allow and manage Power B I notifications.](./media/mobile-apps-notification-center/power-bi-notifications-windows10-settings.png)
 
 ## Next steps
 * [Data alerts in Power BI service](../../create-reports/service-set-data-alerts.md)
