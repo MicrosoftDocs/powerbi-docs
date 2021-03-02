@@ -121,7 +121,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | SweetIQ | Yes | Yes | No | No | No | No |
 | Sybase | Yes | Yes | No | Yes | Yes | Yes |
 | TeamDesk | Yes | Yes | No | Yes | No | No |
-| Tenforce | Yes | Yes | No | No | No | No |
+| TenForce | Yes | Yes | No | No | No | No |
 | Teradata | Yes | Yes | Yes | Yes | Yes | Yes |
 | Text/CSV | Yes | Yes | No | Yes | No <sup>4</sup> | Yes |
 | Twilio | Yes | Yes | No | No | No | No |
