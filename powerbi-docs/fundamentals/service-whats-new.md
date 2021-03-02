@@ -2,14 +2,12 @@
 title: What's new in the Power BI service
 description: What's new in the Power BI service
 author: NikhilGaekwad-MSFT
+ms.author: nikhilga
 ms.reviewer: 
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 04/14/2020
-ms.author: nikhilga
-
 LocalizationGroup: Get started
 ---
 # What's new in the Power BI service
@@ -51,13 +49,13 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * New activity log API that enables Power BI service admins to track user and admin activities within their tenant.
 
 ### November 2019
-* Public preview of [large models in Power BI Premium](../admin/service-premium-large-models.md].
+* Public preview of [large models in Power BI Premium](../admin/service-premium-large-models.md).
 * Public preview of using Microsoft cloud app security controls in Power BI.
 
 ### October 2019
 * New Power Automate action to refresh Power BI datasets.
 * [Contact list](https://powerbi.microsoft.com/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) for reports and dashboards in the Power BI service.
-* General availability of [Automated Machine Learning](../transform-model/service-machine-learning-automated
+* General availability of [Automated Machine Learning](../transform-model/dataflows/dataflows-machine-learning-integration.md)
 * Public preview of Power BI data lineage view.
 
 ### September 2019
@@ -93,7 +91,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * [Commenting](https://powerbi.microsoft.com/blog/announcing-report-commenting-for-power-bi-service-and-mobile/) for Power BI reports in the service.
 
 ### April 2019
-* General availability of Power BI [dataflows](../transform-model/service-dataflows-overview.md).
+* General availability of Power BI [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md).
 * General availability of the new workspaces experience.
 * New Power BI regions in France and Korea.
 * Updated Q&A experience for dashboards.
@@ -116,12 +114,12 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * Bulk operations in the Admin Portal.
 * Filtered export for PPT and PDF.
 * [Help and support settings](https://powerbi.microsoft.com/blog/tailoring-help-and-support-for-power-bi-users/) in the Admin Portal.
-* Data lineage experience for [dataflows](../transform-model/service-dataflows-overview.md).
+* Data lineage experience for [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md).
 * Certified Power BI visuals setting in the Admin Portal.
 
 ### January 2019
 * [Embedding secure Power BI reports](../collaborate-share/service-embed-report-spo.md) in internal portals or websites.
-* Updates to [dataflows](../transform-model/service-dataflows-overview.md) editor with new connectors, and support for native SQL queries and Power Query Online transformations.
+* Updates to [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md) editor with new connectors, and support for native SQL queries and Power Query Online transformations.
 * [Personal bookmarks](https://powerbi.microsoft.com/blog/announcing-personal-bookmarks-in-the-power-bi-service/) in the Power BI service.
 * Time-based scheduling with e-mail subscriptions.
 
@@ -129,11 +127,11 @@ Also, check out the YouTube channels for information about "What's new" and feat
 ### December 2018
 * AI-powered [recommended apps](https://powerbi.microsoft.com/blog/announcing-ai-powered-app-recommendations-getting-the-right-insights-to-the-right-people/) in Power BI Home.
 * [Workspace management](https://powerbi.microsoft.com/blog/workspace-management-in-the-admin-portal/) in the Admin Portal.
-* Preview of Power BI Dataflows and Azure Data Lake Storage Gen2 Integration in [dataflows](../transform-model/service-dataflows-overview.md).
+* Preview of Power BI Dataflows and Azure Data Lake Storage Gen2 Integration in [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md).
 * Power BI solution templates became open source.
 
 ### November 2018
-* Power BI data prep available with [dataflows](../transform-model/service-dataflows-overview.md) public preview.
+* Power BI data prep available with [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md) public preview.
 * Public preview of [paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md) in Power BI Premium.
 * Data size and count of datasets in memory in the [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 

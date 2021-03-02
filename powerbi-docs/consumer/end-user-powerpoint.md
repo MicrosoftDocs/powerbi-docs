@@ -2,14 +2,13 @@
 title: Export entire reports to PowerPoint
 description: Learn how to export a Power BI report to PowerPoint.
 author: mihart
-ms.reviewer: mihart
-ms.custom: contperfq4 
-ms.service: powerbi
-ms.subservice: powerbi-consumer
-ms.topic: how-to
-ms.date: 09/17/2020
 ms.author: mihart
-
+ms.reviewer: mihart
+ms.custom: contperf-fy20q4 
+ms.service: powerbi
+ms.subservice: pbi-explore
+ms.topic: how-to
+ms.date: 01/12/2021
 LocalizationGroup: Share your work
 ---
 # Export reports to PowerPoint
@@ -32,8 +31,6 @@ You can also copy one visual at a time from the Power BI service and paste it in
 
 ## Export your Power BI report to PowerPoint
 In the **Power BI service**, select a report to display it on the canvas. You can also select a report from **Home**, **Apps**, or any other container from the nav pane.
-
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 When the report you want to export to PowerPoint is displayed on the canvas, select **File** > **Export to PowerPoint** from the menu bar.
 
@@ -84,9 +81,7 @@ What you do with your PowerPoint deck from there, or any of the high-resolution 
 There are a few considerations and limitations to keep in mind when you work with the **Export to PowerPoint** feature.
  
 
-* If you don't see the **Export** option, make sure that you have turned on "New look" and that you are viewing a report (not a dashboard).
-
-    ![Screenshot of the New look toggle](media/end-user-powerpoint/power-bi-new-look.png)
+* If you don't see the **Export** option, make sure that you are viewing a report (not a dashboard).
 
 * [URL filters](../collaborate-share/service-url-filters.md) aren't currently respected when you choose **Current Values** for your export.
 
@@ -100,7 +95,8 @@ There are a few considerations and limitations to keep in mind when you work wit
 
 * Some reports cannot be exported. These include:
     - If you share a dashboard with someone outside of your organization, and thereby, a user who isn't in your Power BI tenant, that user can't export the shared dashboard's associated reports to PowerPoint. For example, if you're aaron@contoso.com, you can share with david@cohowinery.com. But david@cohowinery.com can't export the associated reports to PowerPoint.
-    - Reports with more than 50 report pages. Only the first 50 pages will be exported.
+    - Reports with more than 50 report pages. Paginated reports don't have this limitation. See [Print a paginated report](end-user-paginated-report.md#interact-with-a-paginated-report) for details.
+    - Reports larger than 500 MB when exported. 
     - Reports being exported to older versions of PowerPoint.
     - Reports that take longer than an hour to process. 
     - Report pages that take longer than 6 minutes to load. 

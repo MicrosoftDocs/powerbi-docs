@@ -20,6 +20,7 @@ metadata:
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
+            
   # Card (optional)
   - title: Get started
     linkLists:
@@ -39,7 +40,25 @@ landingContent:
             url: walkthrough-push-data-get-datasets.md
           - text: "Add rows to a Power BI table"
             url: walkthrough-push-data-add-rows.md
+          - text: "Tutorial: Automate template app configuration"
+            url: ../template-apps/template-apps-auto-install-tutorial.md
 
+  # Card (optional)
+  - title: Client APIs
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: "Power BI embedded analytics Client APIs"
+            url: /javascript/api/overview/powerbi/
+
+    # Card (optional)
+  - title: Embedded Gen2
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: "Power BI Embedded Generation 2 (preview)"
+            url: ../embedded/power-bi-embedded-generation-2.md         
+            
   # Card
   - title: Work with data
     linkLists:
@@ -51,6 +70,8 @@ landingContent:
             url: api-rest-api-limitations.md
           - text: "Dataset properties"
             url: api-dataset-properties.md
+          - text: "Automated template app configuration"
+            url: ../template-apps/template-apps-auto-install.md
       - linkListType: how-to-guide
         links:
           - text: "Configure credentials"

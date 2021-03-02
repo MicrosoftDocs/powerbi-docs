@@ -1,14 +1,14 @@
 ---
-title: Certified Power BI visuals
-description: Requirements and process to submit a custom visual for certification, and a list of certified Power BI visuals.
+title: Certified Power BI visuals in Power BI embedded analytics for better embedded BI insights
+description: Requirements and process to submit a custom visual for certification, and a list of certified Power BI visuals. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 featuredvideoid: ''
 ms.service: powerbi
-ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/08/2020
+ms.topic: how-to
+ms.date: 02/08/2021
 ---
 
 # Get a Power BI visual certified
@@ -87,7 +87,7 @@ Follow the code requirements listed below to make sure that your code is in line
 * Only use public reviewable OSS components such as public JavaScript or TypeScript libraries.
 * The code must support the [Rendering Events API](event-service.md).
 * Ensure DOM is manipulated safely. Use sanitization for user input or user data, before adding it to DOM.
-* Use the [sample report](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) as a test dataset.
+* Use the [sample report](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/gh-pages/assets) as a test dataset.
 
 **Not allowed**
 * Accessing external services or resources. For example, no HTTP/S or WebSocket requests can go out of Power BI to any services.
@@ -146,36 +146,40 @@ Once a Power BI visual is certified, it gets a designated badge that indicates t
 
 ## Publication timeline
 
-Deploying to AppSource is a process that may take some time. 
+Deploying to AppSource is a process that may take some time.
 Your Power BI visual will be available to download from AppSource when this process is complete.
 
 ### When will users be able to download my visual?
 
 * If you submitted a Power BI visual for the first time, users will be able to download it a few hours after you receive an email from AppSource.
 
-* If you submitted an update to an existing Power BI visual, users will be able to download it within a month of your submission.
+* If you submitted an update to an existing Power BI visual, users will be able to download it within two weeks of your submission.
 
     >[!NOTE]
-    > The *version* field in AppSource will be updated with the day your Power BI was approved by AppSource, approximately a week after you submitted your visual. Users will be able to download the updated visual but the updated capabilities will not take effect. Your visual's new capabilities will affect the user's reports after about a month. 
+    > The *version* field in AppSource will be updated with the day your Power BI was approved by AppSource, approximately a week after you submitted your visual. Users will be able to download the updated visual but the updated capabilities will not take effect. Your visual's new capabilities will affect the user's reports after about a two weeks.
 
 ### When will my Power BI visual display a certification badge?
 
 * If you submitted a Power BI visual for the first time, the certification badge will appear within a day of receiving the approval email from AppSource.
 
-* If you're requesting certification for an existing Power BI visual, the certification badge will be visible within a month of your submission.
+* If you're requesting certification for an existing Power BI visual, the certification badge will be visible within two weeks of your submission.
 
 ## Next steps
 
-* If you're a web developer interested in creating your own Power BI visuals and adding them to the [Microsoft AppSource](https://appsource.microsoft.com), start with the [Developing a Power BI visual](custom-visual-develop-tutorial.md) tutorial.
+>[!div class="nextstepaction"]
+>[Developing a Power BI circle card visual](develop-circle-card.md) tutorial.
 
-* For more information about visuals, see [Frequently asked questions about certified visuals](power-bi-custom-visuals-faq.md#certified-power-bi-visuals).
+>[!div class="nextstepaction"]
+>[Frequently asked questions about certified visuals](power-bi-custom-visuals-faq.md#certified-power-bi-visuals).
 
-* [Developing a Power BI visual](custom-visual-develop-tutorial.md)
+>[!div class="nextstepaction"]
+>[Microsoft's Power BI visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)
 
-* [Microsoft's Power BI visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)
+>[!div class="nextstepaction"]
+[Visuals in Power BI](power-bi-custom-visuals.md)
 
-* [Visuals in Power BI](power-bi-custom-visuals.md)
+>[!div class="nextstepaction"]
+>[Publish Power BI visuals to Microsoft AppSource](office-store.md)
 
-* [Publish Power BI visuals to Microsoft AppSource](office-store.md)
-
-* More questions? [Try the Power BI Community](https://community.powerbi.com/)
+>[!div class="nextstepaction"]
+>[Try the Power BI Community](https://community.powerbi.com/)

@@ -2,14 +2,12 @@
 title: Set and use date tables in Power BI Desktop
 description: Learn how to set a table as a date table, and what that means, in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 05/08/2019
-ms.author: davidi
-
 LocalizationGroup: Model your data
 ---
 # Set and use date tables in Power BI Desktop

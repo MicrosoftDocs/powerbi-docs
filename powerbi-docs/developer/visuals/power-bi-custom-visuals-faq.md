@@ -1,12 +1,12 @@
 ---
-title: Frequently asked questions about Power BI visuals
-description: Browse a list of frequently asked questions and answers about Power BI visuals
+title: Frequently asked questions about Power BI visuals in Power BI embedded analytics for better embedded BI insights
+description: Browse a list of frequently asked questions and answers about Power BI visuals. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
-ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
+ms.topic: conceptual
 ms.custom: ''
 ms.date: 09/30/2020
 ---

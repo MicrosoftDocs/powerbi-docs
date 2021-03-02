@@ -1,6 +1,6 @@
 ---
-title: Manage multi-tenancy with Power BI embedded analytics
-description: Design a multi-tenant application with embedded analytics.
+title: Manage multi-tenancy with Power BI embedded analytics enabling better embedded BI insights
+description: Design a multi-tenant application with Power BI embedded analytics to enable better embedded BI insights for your customers.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: nishalit
@@ -158,7 +158,7 @@ Multi-geo involves purchasing capacity in the desired regions and assigning a wo
 
 ### Cost
 
-Application developers using Power BI Embedded need to [purchase Power BI Embedded capacity to go to production](embed-sample-for-customers.md#move-to-production).  It's important to understand the impact of workspace-based isolation model and their effect on capacities.
+Application developers using Power BI Embedded need to [purchase Power BI Embedded capacity to go to production](move-to-production.md).  It's important to understand the impact of workspace-based isolation model and their effect on capacities.
 
 The workspace-based isolation model sits well with capacities for the following reasons:
 
@@ -241,7 +241,7 @@ As end users edit or create reports, they can use the production multi-tenant da
 
 * Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](../../admin/service-premium-what-is.md).
 * For the recommended dataset size for each SKU, reference [Premium large datasets](../../admin/service-premium-what-is.md#large-datasets).
-* The max dataset size in a dedicated capacity is 10 GB.
+* The max dataset size in a capacity is 10 GB.
 * The number of scheduled refreshes for an *import mode* dataset in a day is 48.
 * The time between scheduled refreshes for an *import mode* dataset is 30 minutes.
 * For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](../../admin/service-premium-what-is.md#capacity-nodes).

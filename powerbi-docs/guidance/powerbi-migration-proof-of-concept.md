@@ -2,13 +2,12 @@
 title: Conduct proof of concept to migrate to Power BI
 description: Guidance on conducting a proof of concept when migrating to Power BI.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/20/2020
-ms.author: v-pemyer
 ---
 
 # Conduct proof of concept to migrate to Power BI

@@ -2,14 +2,12 @@
 title: Scan a Power BI QR code from your mobile device
 description: QR codes in Power BI can connect anything in the real world directly to related BI information in the Power BI mobile app for iPhones and Android devices.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 12/02/2019
-ms.author: painbar
-
 ---
 # Scan a Power BI QR code from your mobile device
 Applies to:
@@ -27,7 +25,7 @@ You can scan the QR code for immediate access to the relevant tile or report, ri
 If your colleague hasn't shared the dashboard or report with you, you can request access directly from the mobile app. 
 
 > [!NOTE]
-> You can also [scan a report QR code with the Power BI for Mixed Reality app](mobile-mixed-reality-app.md#scan-a-report-qr-code-in-holographic-view).
+> You can also [scan a report QR code with the Power BI for Mixed Reality app](./mobile-hololens2-app.md#open-reports-with-qr-codes).
 
 ## Scan a Power BI QR code on your iPhone with the Power BI scanner
 
@@ -73,5 +71,5 @@ If your colleague hasn't shared the dashboard or report with you, you can reques
 * [Connect to Power BI data from the real world](mobile-apps-data-in-real-world-context.md) with the mobile apps
 * [Create a QR code for a tile in the Power BI service](../../create-reports/service-create-qr-code-for-tile.md)
 * [Create a QR code for a report in the Power BI service](../../create-reports/service-create-qr-code-for-report.md)
-* You can also [scan a QR code with the Power BI for Mixed Reality app](mobile-mixed-reality-app.md)
+* You can also [scan a QR code with the Power BI for Mixed Reality app](./mobile-hololens2-app.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -2,15 +2,13 @@
 title: Use report themes in Power BI Desktop
 description: Learn how to use a custom color palette, and apply it to an entire report in Power BI Desktop.
 author: davidiseminger
-ms.reviewer: ''
-
-ms.custom: contperfq4
-ms.service: powerbi
-ms.subservice: powerbi-desktop
-ms.topic: how-to
-ms.date: 07/28/2020
 ms.author: davidi
-
+ms.reviewer: ''
+ms.custom: contperf-fy20q4
+ms.service: powerbi
+ms.subservice: pbi-reports-dashboards
+ms.topic: how-to
+ms.date: 12/14/2020
 LocalizationGroup: Create reports
 ---
 # Use report themes in Power BI Desktop
@@ -167,7 +165,7 @@ This report theme JSON file has the following lines:
 
 - **name**: The report theme name. This field is the only required field.
 - **dataColors**: The list of color hexadecimal codes to use for data in Power BI Desktop visuals. This list can have as many or as few colors as you want.
-- **background**, **firstLevelElements**, and **tableAccent** (etc.): Color classes. Color classes enable you to set many structural colors in your report at once.
+- **background**, **foreground**, and **tableAccent** (etc.): Color classes. Color classes enable you to set many structural colors in your report at once.
 
 You can use this JSON file as a basis to create your own custom report theme file to import. If you want to adjust only the basic colors of your report, change the name and hex codes in the file.
 

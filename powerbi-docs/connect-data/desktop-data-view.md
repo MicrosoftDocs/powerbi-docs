@@ -2,14 +2,12 @@
 title: Data view in Power BI Desktop
 description: Data view in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/05/2020
-ms.author: davidi
-
 LocalizationGroup: Model your data
 ---
 # Work with Data view in Power BI Desktop

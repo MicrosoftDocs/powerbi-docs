@@ -2,14 +2,12 @@
 title: Get Power BI Desktop
 description: Download and install Power BI Desktop
 author: davidiseminger
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-desktop
-ms.topic: how-to
-ms.date: 08/12/2020
 ms.author: davidi
-
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: pbi-fundamentals
+ms.topic: how-to
+ms.date: 10/12/2020
 LocalizationGroup: Get started
 ---
 # Get Power BI Desktop
@@ -77,7 +75,7 @@ Beginning with the July 2019 release, Power BI Desktop ships as a single .exe in
 
 After you launch the installation package, Power BI Desktop installs as an application and runs on your desktop.
 
-![Screenshot of Power B I Desktop installation showing the setup wizard.](media/desktop-get-the-desktop/designer_gsg_install.png)
+![Screenshot of Power B I Desktop installation showing the setup wizard.](media/desktop-get-the-desktop/desktop-install-01.png)
 
 > [!NOTE]
 > Installing the downloaded (MSI) version (deprecated), and the Microsoft Store version of Power BI Desktop on the same computer (sometimes referred to as a *side-by-side* installation) is not supported. Manually uninstall Power BI Desktop before you download it from the Microsoft Store.
@@ -86,7 +84,7 @@ After you launch the installation package, Power BI Desktop installs as an appli
 ## Using Power BI Desktop
 When you launch Power BI Desktop, a welcome screen is displayed.
 
-![Screenshot of Power B I Desktop installation showing the welcome screen.](media/desktop-get-the-desktop/getpbid_05.png)
+![Screenshot of Power BI Desktop installation showing the welcome screen.](media/desktop-get-the-desktop/desktop-splash-screen.png)
 
 If you're using Power BI Desktop for the first time (that is, the installation isn't an upgrade), you're prompted to fill out a form or sign in to the Power BI service before you can continue.
 
@@ -96,12 +94,12 @@ From there, you can begin creating data models or reports, then share them with 
 The following list provides the minimum requirements to run Power BI Desktop:
 
 > [!IMPORTANT]
-> Power BI Desktop will no longer be supported on Windows 7 after January 31st, 2021. After that date, Power BI Desktop will be supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only. 
+> Since January 31st 2021, Power BI Desktop is no longer supported on Windows 7. 
 
-* Windows 7 / Windows Server 2008 R2, or later
-* .NET 4.5
-* Internet Explorer 10 or later
-* Memory (RAM): At least 1 GB available, 1.5 GB or more recommended.
+* Windows 8.1 / Windows Server 2012 R2, or later
+* .NET 4.6.2 or later
+* Internet Explorer 11 or later
+* Memory (RAM): At least 2 GB available, 4 GB or more recommended.
 * Display: At least 1440x900 or 1600x900 (16:9) required. Lower resolutions such as 1024x768 or 1280x800 aren't supported, as certain controls (such as closing the startup screen) display beyond those resolutions.
 * Windows display settings: If you set your display settings to change the size of text, apps, and other items to more than 100%, you may not be able to see certain dialogs that you must interact with to continue using Power BI Desktop. If you encounter this issue, check your display settings in Windows by going to **Settings** > **System** > **Display**, and use the slider to return display settings to 100%.
 * CPU: 1 gigahertz (GHz) 64-bit (x64) processor recommended.

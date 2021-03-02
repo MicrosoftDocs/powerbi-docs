@@ -2,22 +2,19 @@
 title: Search and find your content using global search
 description: documentation for searching, finding, and navigating content in Power BI service
 author: mihart
+ms.author: mihart
 ms.reviewer: willt
 ms.custom: 
-
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/01/2020
-ms.author: mihart
-
+ms.date: 12/06/2020
 LocalizationGroup: Get started
 ---
 # Navigation for Power BI business users: global search
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 
 When you're new to the Power BI service, you'll have only a few pieces of content (dashboards, reports, apps). But as colleagues begin sharing content with you and you begin downloading apps, you may end up with long lists of content. That's when you'll find searching and sorting extremely helpful.

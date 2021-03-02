@@ -2,13 +2,12 @@
 title: Model relationships in Power BI Desktop
 description: Introduce theory about model relationships in Power BI Desktop
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 10/15/2019
-ms.author: v-pemyer
 ---
 
 # Model relationships in Power BI Desktop
@@ -28,7 +27,7 @@ Relationship paths are deterministic, meaning that filters are always propagated
 
 Let's see how relationships propagate filters with an animated example.
 
-![Animated example of relationship filter propagation](media/desktop-relationships-understand/animation-filter-propagation.gif)
+:::image type="content" source="media/desktop-relationships-understand/animation-filter-propagation.gif" alt-text="Animated example of relationship filter propagation.":::
 
 In this example, the model consists of four tables: **Category**, **Product**, **Year**, and **Sales**. The **Category** table relates to the **Product** table, and the **Product** table relates to the **Sales** table. The **Year** table also relates to the **Sales** table. All relationships are one-to-many (the details of which are described later in this article).
 
@@ -49,7 +48,7 @@ A model relationship relates one column in a table to one column in a different 
 
 ### Cardinality
 
-Each model relationship must be defined with a cardinality type. There are four cardinality type options, representing the data characteristics of the "from" and "to" related columns. The "one" side means the column contains unique values; the "two" side means the column can contain duplicate values.
+Each model relationship must be defined with a cardinality type. There are four cardinality type options, representing the data characteristics of the "from" and "to" related columns. The "one" side means the column contains unique values; the "many" side means the column can contain duplicate values.
 
 > [!NOTE]
 > If a data refresh operation attempts to load duplicate values into a "one" side column, the entire data refresh will fail.
@@ -142,21 +141,21 @@ First, some modeling theory is required to fully understand relationship evaluat
 
 An Import or DirectQuery model sources all of its data from either the Vertipaq cache or the source database. In both instances, Power BI is able to determine that a "one" side of a relationship exists.
 
-A Composite model, however, can comprise tables using different storage modes (Import, DirectQuery or Dual), or multiple DirectQuery sources. Each source, including the Vertipaq cache of Import data, is considered to be a _data island_. Model relationships can then be classified as _intra-island_ or _cross-island_. An intra-island relationship is one that relates two tables within a data island, while a cross-island relationship relates tables from different data islands. Note that relationships in Import or DirectQuery models are always intra-island.
+A Composite model, however, can comprise tables using different storage modes (Import, DirectQuery or Dual), or multiple DirectQuery sources. Each source, including the Vertipaq cache of Import data, is considered to be a _source group_. Model relationships can then be classified as _intra source group_ or _inter / cross source group_. An intra source group relationship is one that relates two tables within a source group, while a inter / cross source group relationship relates tables from different source group. Note that relationships in Import or DirectQuery models are always intra source group.
 
 Let's see an example of a Composite model.
 
-![Example of a Composite model consisting of two islands](media/desktop-relationships-understand/data-island-example.png)
+:::image type="content" source="media/desktop-relationships-understand/source-group-example.png" alt-text="Example of a Composite model consisting of two source groups.":::
 
-In this example, the Composite model consists of two islands: a Vertipaq data island and a DirectQuery source data island. The Vertipaq data island contains three tables, and the DirectQuery source data island contains two tables. One cross-island relationship exists to relate a table in the Vertipaq data island to a table in the DirectQuery source data island.
+In this example, the Composite model consists of two source groups: a Vertipaq source group and a DirectQuery source group. The Vertipaq source group contains three tables, and the DirectQuery source group contains two tables. One cross source group relationship exists to relate a table in the Vertipaq source group to a table in the DirectQuery source group.
 
 ### Regular relationships
 
-A model relationship is _regular_ when the query engine can determine the "one" side of relationship. It has confirmation that the "one" side column contains unique values. All One-to-many intra-island relationships are regular relationships.
+A model relationship is _regular_ when the query engine can determine the "one" side of relationship. It has confirmation that the "one" side column contains unique values. All One-to-many intra source group relationships are regular relationships.
 
-In the following example, there are two regular relationships, both marked as **S**. Relationships include the One-to-many relationship contained within the Vertipaq island, and the One-to-many relationship contained within the DirectQuery source.
+In the following example, there are two regular relationships, both marked as **R**. Relationships include the One-to-many relationship contained within the Vertipaq source group, and the One-to-many relationship contained within the DirectQuery source.
 
-![Example of a Composite model consisting of two islands with regular relationships marked](media/desktop-relationships-understand/data-island-example-strong.png)
+:::image type="content" source="media/desktop-relationships-understand/source-group-example-regular.png" alt-text="Example of a Composite model consisting of two source groups with regular relationships marked.":::
 
 For Import models, where all data is stored in the Vertipaq cache, a data structure is created for each regular relationship at data refresh time. The data structures consist of indexed mappings of all column-to-column values, and their purpose is to accelerate joining tables at query time.
 
@@ -167,13 +166,13 @@ At query time, regular relationships permit _table expansion_ to take place. Tab
 
 For One-to-many relationships, table expansion takes place from the "many" to the "one" sides by using LEFT OUTER JOIN semantics. When a matching value from the "many" to the "one" side doesn't exist, a blank virtual row is added to the "one" side table.
 
-Table expansion also occurs for One-to-one intra-island relationships, but by using FULL OUTER JOIN semantics. It ensures that blank virtual rows are added on either side, when necessary.
+Table expansion also occurs for One-to-one intra source group relationships, but by using FULL OUTER JOIN semantics. It ensures that blank virtual rows are added on either side, when necessary.
 
 The blank virtual rows are effectively _Unknown Members_. Unknown members represent referential integrity violations where the "many" side value has no corresponding "one" side value. Ideally these blanks should not exist, and they can be eliminated by cleansing or repairing the source data.
 
 Let's see how table expansion works with an animated example.
 
-![Animated example of table expansion](media/desktop-relationships-understand/animation-expanded-table.gif)
+:::image type="content" source="media/desktop-relationships-understand/animation-expanded-table.gif" alt-text="Animated example of table expansion.":::
 
 In this example, the model consists of three tables: **Category**, **Product**, and **Sales**. The **Category** table relates to the **Product** table with a One-to-many relationship, and the **Product** table relates to the **Sales** table with a One-to-many relationship. The **Category** table contains two rows, the **Product** table contains three rows, and the **Sales** tables contains five rows. There are matching values on both sides of all relationships meaning that there are no referential integrity violations. A query-time expanded table is revealed. The table consists of the columns from all three tables. It's effectively a denormalized perspective of the data contained in the three tables. A new row is added to the **Sales** table, and it has a production identifier value (9) that has no matching value in the **Product** table. It's a referential integrity violation. In the expanded table, the new row has (Blank) values for the **Category** and **Product** table columns.
 
@@ -182,11 +181,11 @@ In this example, the model consists of three tables: **Category**, **Product**, 
 A model relationship is _limited_ when there's no guaranteed "one" side. It can be the case for two reasons:
 
 - The relationship uses a Many-to-many cardinality type (even if one or both columns contain unique values)
-- The relationship is cross-island (which can only ever be the case for Composite models)
+- The relationship is cross source group (which can only ever be the case for Composite models)
 
-In the following example, there are two limited relationships, both marked as **W**. The two relationships include the Many-to-many relationship contained within the Vertipaq island, and the One-to-many cross-island relationship.
+In the following example, there are two limited relationships, both marked as **L**. The two relationships include the Many-to-many relationship contained within the Vertipaq source group, and the One-to-many cross source group relationship.
 
-![Example of a Composite model consisting of two islands with limited relationships marked](media/desktop-relationships-understand/data-island-example-weak.png)
+:::image type="content" source="media/desktop-relationships-understand/source-group-example-limited.png" alt-text="Example of a Composite model consisting of two source groups with limited relationships marked.":::
 
 For Import models, data structures are never created for limited relationships. This means table joins must be resolved at query time.
 
@@ -198,7 +197,7 @@ There are additional restrictions related to limited relationships:
 - Enforcing RLS has topology restrictions
 
 > [!NOTE]
-> In Power BI Desktop model view, it's not always possible to determine whether a model relationship is regular or limited. A Many-to-many relationship will always be limited, as is a One-to-many relationship when it's a cross-island relationship. To determine whether it's a cross-island relationship, you'll need to inspect the table storage modes and data sources to arrive at the correct determination.
+> In Power BI Desktop model view, it's not always possible to determine whether a model relationship is regular or limited. A Many-to-many relationship will always be limited, as is a One-to-many relationship when it's a cross source group relationship. To determine whether it's a cross source group relationship, you'll need to inspect the table storage modes and data sources to arrive at the correct determination.
 
 ### Precedence rules
 
@@ -212,10 +211,10 @@ Bi-directional relationships can introduce multiple—and therefore ambiguous—
 
 The following list orders filter propagation performance, from fastest to slowest performance:
 
-1. One-to-many intra-island relationships
+1. One-to-many intra source group relationships
 2. Many-to-many cardinality relationships
 3. Many-to-many model relationships achieved with an intermediary table and that involves at least one bi-directional relationship
-4. Cross-island relationships
+4. Cross source group relationships
 
 ## Next steps
 

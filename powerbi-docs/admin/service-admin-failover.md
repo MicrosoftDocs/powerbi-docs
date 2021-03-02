@@ -2,14 +2,12 @@
 title: Power BI high availability, failover, and disaster recovery FAQ
 description: Understand how the Power BI service delivers high availability and provides business continuity and disaster recovery to its users.
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/18/2020
-ms.author: kfollis
-
 LocalizationGroup: Administration
 ---
 
@@ -21,9 +19,13 @@ This article explains how the Power BI service delivers high availability and pr
 
 Power BI is fully managed software as a service (SaaS).  Microsoft designs and operates it to be resilient to infrastructure failures so that users can always access their reports.  The service is supported by a [99.9% SLA](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
 
+Power BI uses **Azure Availability Zones** to protect Power BI reports, applications and data from datacenter failures, and is automatically applied and used for Power BI. Availability Zones are fault-isolated locations within an Azure region, providing three or more distinct and unique locations within an Azure region that have redundant power, cooling, and networking. Availability Zones allow Power BI customers to run mission-critical applications with higher availability and fault tolerance to datacenter failures. Availability Zones provide customers with the ability to withstand datacenter failures through redundancy and logical isolation of services. 
+
+For more information about **Availability Zones**, consult the following article, which goes into detail about [Regions and Availability Zones in Azure](/azure/availability-zones/az-overview).
+
 ## What is a Power BI failover?
 
-Power BI maintains multiple instances of each component in Azure datacenters (also known as regions) to guarantee business continuity. If there is an outage, or an issue that causes Power BI to be inaccessible or inoperable in a region, Power BI fails all its components in that region to a backup instance. The failover restores availability and operability to the Power BI service instance in a new region (usually within the same geographic location, as noted in the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)).
+Power BI maintains multiple instances of each component in Azure datacenters (also known as regions) to guarantee business continuity. If there is an outage, or an issue that causes Power BI to be inaccessible or inoperable in a region, Power BI fails all its components in that region to a backup instance. The failover restores availability and operability to the Power BI service instance in a new region (usually within the same geographic location, as noted in the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview).
 
 A failed-over Power BI service instance supports only _read operations_, which means the following operations aren't supported during failover: refreshes, report publish operations, dashboard or report modifications, and other operations that require changes to Power BI metadata (for example, inserting a comment in a report).  Read operations, such as displaying dashboards and displaying reports (that are not based on DirectQuery or Live Connect to on-premises data sources) continue to function normally.
 
@@ -33,7 +35,7 @@ All Power BI service components regularly sync their backup instances. We target
 
 ## Where are the failover clusters located?
 
-Backup instances reside within the same geographic location (geo) that you selected when your organization signed up for Power BI, except where noted in the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location). A geo can contain several regions, and Microsoft may replicate data to any of the regions within a given geo for data resiliency. Microsoft will not replicate or move customer data outside the geo. For a mapping of the geos offered by Power BI and the regions within them, see the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location).
+Backup instances reside within the same geographic location (geo) that you selected when your organization signed up for Power BI, except where noted in the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview). A geo can contain several regions, and Microsoft may replicate data to any of the regions within a given geo for data resiliency. Microsoft will not replicate or move customer data outside the geo. For a mapping of the geos offered by Power BI and the regions within them, see the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview).
 
 ## How does Microsoft decide to fail over?
 

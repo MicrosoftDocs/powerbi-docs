@@ -1,18 +1,18 @@
 ---
-title: Capacity and SKUs in Power BI embedded analytics
-description: Understand capacity and SKUs in Power BI embedded analytics.
+title: Capacity and SKUs in Power BI embedded analytics enabling better embedded BI insights
+description: Understand capacity and SKUs in Power BI embedded analytics. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/17/2020 
+ms.date: 02/15/2021
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
 
-When moving to production, Power BI embedded analytics requires a dedicated capacity (*A*, *EM*, or *P* SKU) for publishing embedded Power BI content.
+When moving to production, Power BI embedded analytics requires a capacity (*A*, *EM*, or *P* SKU) for publishing embedded Power BI content.
 
 Capacity is a dedicated set of resources reserved for exclusive use. It enables you to publish dashboards, reports, and datasets to users, without having to purchase per-user licenses. It also offers dependable, consistent performance for your content.
 
@@ -22,14 +22,19 @@ Capacity is a dedicated set of resources reserved for exclusive use. It enables 
 ## What is embedded analytics?
 
 Power BI embedded analytics includes two solutions:
+
 * *Power BI Embedded*  - Azure offering
-* Embedding Power BI as part of *Power BI Premium*  - Office offering
+
+* Embedding Power BI as part of *Power BI Premium*  - Microsoft Office offering
 
 ### Power BI Embedded
 
 Power BI Embedded is for ISVs and developers who want to embed visuals into their applications.
 
 Applications using Power BI Embedded allow users to consume content stored on Power BI Embedded capacity.
+
+>[!NOTE]
+>Power BI Embedded recently released a new version, called **Embedded Gen2**. Embedded Gen2 will simplify the management of embedded capacities, and improve the Power BI Embedded experience. For more information, see [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md).
 
 ### Power BI Premium
 
@@ -136,6 +141,10 @@ The table below describes the resources and limits of each SKU.
 | P5 | 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 
+#### Embedded Gen 2 memory enhancements (preview)
+
+The amount of memory available on each node size is described in the *RAM (GB)* column in the [SKU memory and computing power](#sku-memory-and-computing-power) table. With [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md) (also known as Embedded Gen 2), this amount of memory is set to the memory footprint limit of a single Power BI item (such as a dataset, report or dashboard), and not to the cumulative consumption of memory. For example, in an Embedded Gen2 A4 capacity, only a single dataset size is limited to 25 GB, in comparison to the original Power BI Embedded capacity, where the total memory footprint of the datasets being handled at the same time is limited to 25 GB.
+
 ## Next steps
 
 > [!div class="nextstepaction"]
@@ -145,4 +154,4 @@ The table below describes the resources and limits of each SKU.
 >[Embed for your organization](embed-sample-for-your-organization.md)
 
 > [!div class="nextstepaction"]
-> [Embed from apps](embed-from-apps.md)
+> [Embed from apps](./index.yml)

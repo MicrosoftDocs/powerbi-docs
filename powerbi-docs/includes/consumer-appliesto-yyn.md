@@ -10,4 +10,4 @@
  ms.custom: include file
 ---
 
-<Token>**APPLIES TO:** ![yes](media/yes.png)Power BI service for ***business users*** ![yes](media/yes.png)Power BI service for designers & developers ![no](media/no.png)Power BI Desktop </Token>
+<Token>**APPLIES TO:** :::image type="icon" source="media/yes.png":::Power BI service for ***business users*** :::image type="icon" source="media/yes.png":::Power BI service for designers & developers :::image type="icon" source="media/no.png":::Power BI Desktop </Token>

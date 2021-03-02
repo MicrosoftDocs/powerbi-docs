@@ -4,12 +4,10 @@ description: Learn how to use the Power BI Premium Metrics app to manage and tro
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/11/2020
-
+ms.date: 11/11/2020
 LocalizationGroup: Premium
 ---
 # Power BI Premium Metrics app
@@ -27,6 +25,8 @@ The following sections describe the landing page, and the three metrics report p
 > [!IMPORTANT]
 > If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. See [capacity and reliability notifications](service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
 
+> [!NOTE]
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. In particular, it greatly reduces the metrics administrators must monitor (CPU only) to ensure performance and users’ experience. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
 
 
 ## Premium capacity health center
@@ -298,7 +298,7 @@ You can take the following steps to remedy the problems associated with scenario
 
 In scenario two, there isn't enough available CPU to carry out the refresh. 
 
-For dedicated capacities, Power BI limits the number of refreshes that can happen concurrently. This number is equal to the number of back-end cores x 1.5. For example, a P1 dedicated capacity, which has four back-end cores, can run 6 refreshes concurrently. Once the maximum number of concurrent refreshes has been reached, other refreshes will wait until an executing refresh finishes.
+For capacities, Power BI limits the number of refreshes that can happen concurrently. This number is equal to the number of back-end cores x 1.5. For example, a P1 capacity, which has four back-end cores, can run 6 refreshes concurrently. Once the maximum number of concurrent refreshes has been reached, other refreshes will wait until an executing refresh finishes.
 
 ![Scenario two for refresh](media/service-premium-metrics-app/premium-metrics-app-26.png)
 
@@ -344,3 +344,13 @@ To diagnose scenario two, first determine whether throttling is due to running i
 * [Power BI Embedded FAQ](../developer/embedded/embedded-faq.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
+Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+* Performance
+* Per-user licensing
+* Greater scale
+* Improved metrics
+* Autoscaling
+* Reduced management overhead
+
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

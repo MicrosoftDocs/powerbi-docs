@@ -2,14 +2,12 @@
 title: Distribute Power BI content to external guest users using Azure Active Directory B2B
 description: Whitepaper that describes how to use Azure Active Directory B2B to distribute Power BI to external guest users
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 03/07/2019
-ms.author: davidi
-
 LocalizationGroup: Conceptual
 ---
 
@@ -341,7 +339,7 @@ With this approach, Contoso purchases Power BI Premium capacity and assigns its 
 
 External users are also subject to the consumption only experiences offered to "Free" users in Power BI when consuming content within Power BI Premium.
 
-Contoso can also take advantage of other Power BI premium capabilities for its apps like increased refresh rates, dedicated capacity, and large model sizes.
+Contoso can also take advantage of other Power BI premium capabilities for its apps like increased refresh rates, capacity, and large model sizes.
 
 ![Additional capabilities](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_24.png)
 

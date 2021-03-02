@@ -1,6 +1,6 @@
 ---
-title:  Introduction to use tooltip utils in Power BI visual
-description: This article describes how to use tooltip utils  simplify tooltip customization for Power BI visuals
+title:  Introduction to use tooltip utils in Power BI visual in Power BI embedded analytics for better embedded BI insights
+description: This article describes how to use tooltip utils  simplify tooltip customization for Power BI visuals. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -23,7 +23,7 @@ To use the package, you should have the following things:
 To install the package, you should run the following command in the directory with your current visual:
 
 ```bash
-npm install powerbi-visuals-utils-colorutils --save
+npm install powerbi-visuals-utils-tooltiputils --save
 ```
 This command installs the package and adds a package as a dependency to your ```package.json```
 

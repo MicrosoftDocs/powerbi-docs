@@ -2,14 +2,12 @@
 title: Connect to datasets in the Power BI service from Power BI Desktop
 description: Use a common dataset for multiple Power BI Desktop reports in multiple workspaces, and manage your report lifecycle
 author: davidiseminger
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-desktop
-ms.topic: how-to
-ms.date: 01/13/2020
 ms.author: davidi
-
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: pbi-data-sources
+ms.topic: how-to
+ms.date: 12/16/2020
 LocalizationGroup: Connect to data
 ---
 # Connect to datasets in the Power BI service from Power BI Desktop
@@ -75,7 +73,7 @@ Once complete, Power BI Desktop shows you success, and provides a couple links t
 
 ![Publishing succeeded](media/desktop-report-lifecycle-datasets/report-lifecycle_07.png)
 
-Now that your report with its dataset is in the Power BI service, you can also *promote* it. Promotion means that you attest to its quality and reliability. You can even request that it be *certified* by a central authority in your Power BI tenant. With either of these endorsements, your dataset always appears at the top of the list when people are looking for datasets. For more information, see [Promote your dataset](service-datasets-promote.md).
+Now that your report with its dataset is in the Power BI service, you can also *promote* it. Promotion means that you attest to its quality and reliability. You can even request that it be *certified* by a central authority in your Power BI tenant. With either of these endorsements, your dataset always appears at the top of the list when people are looking for datasets. For more information, see [Endorse your content](../collaborate-share/service-endorse-content.md).
 
 The last step is to set Build permission for the dataset the report is based on. Build permission determines who can see and use your dataset. You can set it in the workspace itself, or when you share an app from the workspace. For more information, see [Build permission for shared datasets](service-datasets-build-permissions.md).
 
@@ -103,7 +101,7 @@ When using the Power BI service live connection, there are a few limitations and
 
 * Only users with Build permission for a dataset can connect to a published dataset using the Power BI service live connection.
 * Free users only see datasets in their **My Workspace** and in Premium-based workspaces.
-* Since this connection is a live connection, left-navigation and modeling are disabled. You can only connect to one dataset in each report. This behavior is similar to the behavior when connected to *SQL Server Analysis Services*.
+* Since this connection is a live connection, left-navigation and modeling are disabled. You can only connect to one dataset in each report. This behavior is similar to the behavior when connected to *SQL Server Analysis Services*. However, the following article describes how a new feature in Power BI now makes this possible: see [using DirectQuery for Power BI datasets and Azure Analysis Services (preview)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)
 * Since this connection is a live connection, row-level security (RLS) and other such connection behaviors are enforced. This is the same as when connected to SQL Server Analysis Services.
 * If the owner modifies the original shared *.pbix* file, the dataset and report that is shared in the Power BI service is overwritten. Reports based on that dataset aren't overwritten, but any changes to the dataset are reflected in the report.
 * Members of a workspace can't replace the originally shared report. Attempts to do so result in a warning that prompts you to rename the file, and publish.
@@ -112,3 +110,18 @@ When using the Power BI service live connection, there are a few limitations and
 * For Content Packs from *My Organization*, once copied, you can't replace the report created on the service or a report created as part of copying a Content Pack with a live connection. Attempts to do so result in a warning that prompts you to rename the file, and publish. In this situation, you can only replace published live connected reports.
 * Deleting a shared dataset in the Power BI service means no one can access that dataset any longer from Power BI Desktop.
 * Reports that share a dataset on the Power BI service don't support automated deployments using the Power BI REST API.
+
+## Next steps
+For more information on DirectQuery and other Power BI data connection features, check out the following resources:
+
+- [Using DirectQuery in Power BI](desktop-directquery-about.md)
+- [Data sources supported by DirectQuery](power-bi-data-sources.md)
+- [Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)
+
+Here are some additional links for more information about Power BI:
+
+* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+* [Query overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
+* [Data types in Power BI Desktop](desktop-data-types.md)
+* [Shape and combine data with Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)

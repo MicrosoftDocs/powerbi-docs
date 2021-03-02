@@ -2,14 +2,13 @@
 title: Track user activities in Power BI
 description: Learn how you can use activity logs and auditing with Power BI to monitor and investigate actions taken.
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 08/20/2020
-ms.author: kfollis
 ms.custom: licensing support
-
 LocalizationGroup: Administration
 ---
 
@@ -118,7 +117,7 @@ You can filter the audit data by date range, user, dashboard, report, dataset, a
 
 You must meet these requirements to access audit logs:
 
-- You must either be a global admin or assigned the Audit Logs or View-Only Audit Logs role in Exchange Online to access the audit log. By default, the Compliance Management and Organization Management role groups come with these roles assigned on the **Permissions** page in the Exchange admin center. For more information about the roles that can view audit logs, see [Requirements to search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#requirements-to-search-the-audit-log).
+- You must either be a global admin or assigned the Audit Logs or View-Only Audit Logs role in Exchange Online to access the audit log. By default, the Compliance Management and Organization Management role groups come with these roles assigned on the **Permissions** page in the Exchange admin center. For more information about the roles that can view audit logs, see [Requirements to search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#requirements-to-search-the-audit-log).
 
     To provide non-admin accounts with access to the audit log, add the user as a member of one of these role groups. If you want to do it another way, you can create a custom role group in the Exchange admin center, assign the Audit Logs or View-Only Audit Logs role to this group, and then add the non-admin account to the new role group. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
 
@@ -207,7 +206,7 @@ To export the Power BI audit log to a CSV file, follow these steps.
 
 ### Use PowerShell to search audit logs
 
-You can also use PowerShell to access the audit logs based on your login. The following example shows how to connect to Exchange Online PowerShell and then use the [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) command to pull Power BI audit log entries. To run the script, an admin must assign you the appropriate permissions, as described in the [Audit log requirements](#audit-log-requirements) section.
+You can also use PowerShell to access the audit logs based on your login. The following example shows how to connect to Exchange Online PowerShell and then use the [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps&preserve-view=true/) command to pull Power BI audit log entries. To run the script, an admin must assign you the appropriate permissions, as described in the [Audit log requirements](#audit-log-requirements) section.
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned
@@ -222,7 +221,7 @@ Search-UnifiedAuditLog -StartDate 9/11/2018 -EndDate 9/15/2018 -RecordType Power
 
 ### Use PowerShell to export audit logs
 
-You can also use PowerShell to export the results of your audit logs search. The following example shows how to send from the [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) command, and export the results using the [Export-Csv](/powershell/module/microsoft.powershell.utility/export-csv) cmdlet. To run the script, an admin must assign you the appropriate permissions, as described in the [Audit log requirements](#audit-log-requirements) section.
+You can also use PowerShell to export the results of your audit logs search. The following example shows how to send from the [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps&preserve-view=true/) command, and export the results using the [Export-Csv](/powershell/module/microsoft.powershell.utility/export-csv) cmdlet. To run the script, an admin must assign you the appropriate permissions, as described in the [Audit log requirements](#audit-log-requirements) section.
 
 ```powershell
 $UserCredential = Get-Credential
@@ -272,6 +271,9 @@ The following operations are available in both the audit and activity logs.
 | Created Power BI gateway                          | CreateGateway                               |                                          |
 | Created Power BI group                            | CreateGroup                                 |                                          |
 | Created Power BI report                           | CreateReport <sup>1</sup>                                |                                          |
+| Create Power BI template app workspace | CreateTemplateApp   |
+| Create Power BI template app install ticket | CreateTemplateAppInstallTicket |
+| Create Power BI template app package | CreateTemplateAppPackage |
 | Custom visual requested Azure AD access token                           | GenerateCustomVisualAADAccessToken                                |                                          |
 | Custom visual requested Office Web Apps access token                           | GenerateCustomVisualWACAccessToken                                |                                          |
 | Dataflow migrated to external storage account     | DataflowMigratedToExternalStorageAccount    | Not currently used                       |
@@ -290,6 +292,8 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI gateway                          | DeleteGateway                               |                                          |
 | Deleted Power BI group                            | DeleteGroup                                 |                                          |
 | Deleted Power BI report                           | DeleteReport                                |                                          |
+| Deleted Power BI template app workspace | DeleteTemplateApp |
+| Deleted Power BI template app package | DeleteTemplateAppPackage |
 | Deployed to a pipeline stage                           | DeployAlmPipeline                                |                                          |
 | Discovered Power BI dataset data sources          | GetDatasources                              |                                          |
 | Downloaded Power BI report                        | DownloadReport                              |                                          |
@@ -302,16 +306,20 @@ The following operations are available in both the audit and activity logs.
 | Exported Power BI dataflow                        | ExportDataflow                              |                                          |
 | Exported Power BI report visual data              | ExportReport                                |                                          |
 | Exported Power BI tile data                       | ExportTile                                  |                                          |
+| Extracted Power BI template app package to workspace | ExtractTemplateAppPackage |
 | Failed to add dataflow permissions                | FailedToAddDataflowPermissions              | Not currently used                       |
 | Failed to remove dataflow permissions             | FailedToRemoveDataflowPermissions           | Not currently used                       |
 | Generated Power BI dataflow SAS token             | GenerateDataflowSasToken                    |                                          |
 | Generated Power BI Embed Token                    | GenerateEmbedToken                          |                                          |
+| Generate screenshot                       | GenerateScreenshot |                     |
 | Imported file to Power BI                         | Import                                      |                                          |
 | Installed Power BI app                            | InstallApp                                  |                                          |
+| Installed Power BI template app | InstallTemplateApp |
 | Migrated workspace to a capacity                  | MigrateWorkspaceIntoCapacity                |                                          |
 | Posted Power BI comment                           | PostComment                                 |                                          |
 | Printed Power BI dashboard                        | PrintDashboard                              |                                          |
 | Printed Power BI report page                      | PrintReport                                 |                                          |
+| Promoted Power BI template app package | PromoteTemplateAppPackage |
 | Published Power BI report to web                  | PublishToWebReport <sup>2</sup>                         |                                          |
 | Published or updated featured tables | UpdateFeaturedTables <sup>3</sup>   | |
 | Received Power BI dataflow secret from Key Vault  | ReceiveDataflowSecretFromKeyVault           |                                          |
@@ -343,6 +351,7 @@ The following operations are available in both the audit and activity logs.
 | Updated capacity display name                     | UpdateCapacityDisplayName                   |                                          |
 | Updated dataflow storage assignment permissions   | UpdatedDataflowStorageAssignmentPermissions |                                          |
 | Updated deployment pipeline access   | UpdateAlmPipelineAccess |                                          |
+| Updated installed Power BI template app parameters | UpdateInstalledTemplateAppParameters |
 | Updated deployment pipeline configuration   | SetConfigurationAlmPipeline |                                          |
 | Updated organization's Power BI settings          | UpdatedAdminFeatureSwitch                   |                                          |
 | Updated Power BI app                              | UpdateApp                                   |                                          |
@@ -353,6 +362,8 @@ The following operations are available in both the audit and activity logs.
 | Updated Power BI folder                           | UpdateFolder                                |                                          |
 | Updated Power BI folder access                    | UpdateFolderAccess                          |                                          |
 | Updated Power BI gateway data source credentials  | UpdateDatasourceCredentials                 |                                          |
+| Updated Power BI template app settings | UpdateTemplateAppSettings |
+| Updated Power BI template app test access permissions | UpdateTemplateAppTestPackagePermissions |
 | Viewed Power BI dashboard                         | ViewDashboard                               |                                          |
 | Viewed Power BI dataflow                          | ViewDataflow                                |                                          |
 | Viewed Power BI report                            | ViewReport                                  |                                          |

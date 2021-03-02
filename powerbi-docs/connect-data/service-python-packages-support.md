@@ -2,15 +2,13 @@
 title: Learn which Python packages are supported
 description: Python packages that are supported and unsupported in Power BI
 author: otarb
+ms.author: otarb
 ms.reviewer: ''
-
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 06/26/2020
-ms.author: otarb
-
 LocalizationGroup: Connect to data
 ---
 # Create visuals by using Python packages in the Power BI service
@@ -42,7 +40,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |pandas|1.0.1|https://pypi.org/project/pandas|
 |scikit-learn|0.23.0|https://pypi.org/project/scikit-learn|
 |scipy|1.4.1|https://pypi.org/project/scipy|
-|s  eaborn|0.10.1|https://pypi.org/project/seaborn|
+|seaborn|0.10.1|https://pypi.org/project/seaborn|
 |statsmodels|0.11.1|https://pypi.org/project/statsmodels|
 |xgboost|1.1.0|https://pypi.org/project/xgboost|
 

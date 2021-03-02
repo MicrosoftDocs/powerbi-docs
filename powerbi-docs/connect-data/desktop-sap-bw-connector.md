@@ -2,14 +2,12 @@
 title: Use the SAP Business Warehouse (BW) Connector in Power BI Desktop
 description: Use the SAP BW Connector in Power BI Desktop
 author: davidiseminger
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-desktop
-ms.topic: how-to
-ms.date: 01/13/2020
 ms.author: davidi
-
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: pbi-data-sources
+ms.topic: how-to
+ms.date: 01/21/2021
 LocalizationGroup: Connect to data
 ---
 # Use the SAP Business Warehouse connector in Power BI Desktop
@@ -41,8 +39,8 @@ You can download the [SAP .NET Connector 3.0](https://support.sap.com/en/product
 
 The connector comes in 32-bit and 64-bit versions. Choose the version that matches your Power BI Desktop installation. Currently, the website lists two versions for .NET 4.0 framework:
 
-* SAP Connector for Microsoft .NET 3.0.22.0 for Windows 32-bit (x86) as zip file (6.896 KB), June 1, 2019
-* SAP Connector for Microsoft .NET 3.0.22.0 for Windows 64-bit (x64) as zip file (7.180 KB), June 1, 2019
+* SAP Connector for Microsoft .NET 3.0.22.0 for Windows 32-bit (x86) or later (.NET Framework 4.0)
+* SAP Connector for Microsoft .NET 3.0.22.0 for Windows 64-bit (x64) or later (.NET Framework 4.0)
 
 When you install, in **Optional setup steps**, make sure you select *Install assemblies to GAC*.
 
@@ -64,6 +62,9 @@ When you connect, specify a **Server**, **System Number**, and **Client ID** to 
 You can also specify two additional **Advanced options**: **Language code**, and a custom **MDX statement** to run against the specified server.
 
 ![additional connection information](media/desktop-sap-bw-connector/sap_bw_4a.png)
+
+> [!NOTE]
+> If you use **Language code** and publish to the service, you need to enable "skip test connection" in the service data source settings when using the gateway.
 
 If you don't specify an MDX statement, the connection setting displays the list of cubes available in the server. You can drill down and select items from the available cubes, including dimensions and measures. Power BI exposes queries and cubes exposed by the [Open Analysis Interfaces](https://help.sap.com/saphelp_nw70/helpdata/en/d9/ed8c3c59021315e10000000a114084/content.htm).
 

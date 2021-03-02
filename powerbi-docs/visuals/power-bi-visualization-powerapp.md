@@ -2,15 +2,13 @@
 title: Embed a new Power App in a Power BI Report
 description: Embed an app that uses the same data source and can be filtered like other report items 
 author: mihart
+ms.author: mihart
 manager: kvivek
 ms.reviewer: 'tapan maniar'
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 06/01/2020
-ms.author: rien
-
 LocalizationGroup: Visualizations
 ---
 
@@ -19,7 +17,7 @@ LocalizationGroup: Visualizations
 
 In this tutorial, you use the Power Apps visual to create a new app that is embedded in a sample Power BI report. This app interacts with other visuals in that report.
 
-If you don't have a Power Apps subscription, [create a free account](https://web.powerapps.com/signup?redirect=marketing&email=) before you begin.
+If you don't have a Power Apps subscription, [create a free account](https://make.powerapps.com/signup?redirect=marketing&email=) before you begin.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]

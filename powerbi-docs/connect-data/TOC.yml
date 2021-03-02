@@ -9,12 +9,15 @@
       href: service-get-data.md
     - name: "What is an on-premises data gateway?"
       href: service-gateway-onprem.md
+    - name: "Datasets discovery in the Power BI service"
+      href: service-datasets-hub.md
   - name: Quickstarts
     expanded: true
     items: 
     - name: "Connect to data in Power BI Desktop"
       href: desktop-quickstart-connect-to-data.md
   - name: Tutorials
+    expanded: true
     items: 
     - name: "Shape and combine multiple data sources"
       href: desktop-shape-and-combine-data.md
@@ -30,24 +33,27 @@
       href: service-tutorial-connect-to-github.md
     - name: "Use Cognitive Services"
       href: service-tutorial-use-cognitive-services.md
-    - name: "Machine Learning integration"
-      href: service-tutorial-invoke-machine-learning-model.md
-    - name: "Build a Machine Learning model"
+    - name: "Build a machine learning model"
       href: service-tutorial-build-machine-learning-model.md
+    - name: "Consume a machine learning model in a report"
+      href: service-aml-integrate.md
     - name: "Refresh data from SQL Server"
       href: service-gateway-sql-tutorial.md                  
   - name: Concepts
+    expanded: true
     items: 
     - name: "Power BI data sources"
       href: power-bi-data-sources.md
     - name: "Power BI data source prerequisites"
       href: desktop-data-source-prerequisites.md
-    - name: "Using enhanced dataset metadata in Power BI Desktop (preview)"
+    - name: "Using enhanced dataset metadata in Power BI Desktop"
       href: desktop-enhanced-dataset-metadata.md      
     - name: "Work with multidimensional models in Power BI"
       href: desktop-default-member-multidimensional-models.md            
     - name: "About using DirectQuery in Power BI"
       href: desktop-directquery-about.md
+    - name: "Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)"
+      href: desktop-directquery-datasets-azure-analysis-services.md      
     - name: Gateways
       items:
       - name: "Guidance for deploying a data gateway"
@@ -55,6 +61,7 @@
       - name: "On-premises data gateway FAQ"
         href: service-gateway-power-bi-faq.md
   - name: How-to guides
+    expanded: true
     items: 
     - name: "Connect to data sources"
       href: desktop-connect-to-data.md
@@ -62,6 +69,8 @@
       items: 
       - name: "Connect to data sources"
         href: desktop-data-sources.md
+      - name: "Use dynamic M query parameters"
+        href: desktop-dynamic-m-query-parameters.md        
       - name: "Create a report on a SharePoint List"
         href: desktop-sharepoint-online-list.md
       - name: "Connect to LinkedIn Sales Navigator"
@@ -182,12 +191,6 @@
         href: service-datasets-copy-reports.md
       - name: "Control the use of datasets"
         href: service-datasets-admin-across-workspaces.md
-    - name: Endorse datasets
-      items: 
-      - name: "Promote datasets"
-        href: service-datasets-promote.md
-      - name: "Certify datasets"
-        href: service-datasets-certify.md
     - name: Get data from databases
       items: 
       - name: "Azure and Power BI"
@@ -254,6 +257,8 @@
       items: 
       - name: "Connect to services with apps"
         href: service-connect-to-services.md
+      - name: "Analyze Popular Stocks with Power BI"
+        href: service-connect-to-analyze-stocks.md
       - name: "COVID-19 US Tracking Report"
         href: service-connect-to-covid-19-tracking.md
       - name: "Crisis Communication Presence Report"
@@ -288,7 +293,7 @@
         href: service-gateway-personal-mode.md
       - name: "Manage gateway data sources"
         items:
-        - name: "Manage data sources"
+        - name: "Add or remove a gateway data source"
           href: service-gateway-data-sources.md
         - name: "Manage your enterprise data source - Analysis Services"
           href: service-gateway-enterprise-manage-ssas.md

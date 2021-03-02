@@ -1,18 +1,18 @@
 ---
-title: Publish Power BI visuals to Partner Center
-description: Learn how you can publish your custom visual to Partner Center for others to discover and use
+title: Publish Power BI visuals to Partner Center in Power BI embedded analytics for better embedded BI insights
+description: Learn how you can publish your custom visual to Partner Center for others to discover and use. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
-ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
+ms.topic: how-to
 ms.date: 07/14/2020
 ---
 
 # Publish Power BI visuals to Partner Center
 
-Once you have created your Power BI visual, you may want to publish it to the AppSource for others to discover and use. For more information about creating a Power BI visual, see [Developing a Power BI visual](custom-visual-develop-tutorial.md).
+Once you have created your Power BI visual, you may want to publish it to the AppSource for others to discover and use. For more information about creating a Power BI visual, see [Developing a Power BI circle card visual](develop-circle-card.md).
 
 ## What is AppSource?
 
@@ -57,6 +57,9 @@ Attach the **pbiviz file** and the **sample report pbix file** to your email. Th
 ## Submitting to AppSource
 
 To submit your Power BI visual to AppSource, you need to get an app package from the Power BI team, and then submit it to Partner Center.
+
+>[!IMPORTANT]
+>If you're resubmitting a visual, you cannot change its GUID.
 
 ### Getting the app package
 
@@ -114,7 +117,7 @@ Once your visual is created, if you want you can get your visual [certified](pow
 
 ## Next steps
 
-* [Developing a Power BI custom visual](custom-visual-develop-tutorial.md)
+* [Developing a Power BI circle card visual](develop-circle-card.md)
 
 * [Visualizations in Power BI](../../visuals/power-bi-report-visualizations.md)  
 

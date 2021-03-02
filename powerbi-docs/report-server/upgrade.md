@@ -17,7 +17,7 @@ Learn how to upgrade Power BI Report Server.
 
  **Download** ![download icon](media/upgrade/download.png "download icon")
 
-To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+To download Power BI Report Server, and Power BI Desktop for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
 ## Before you begin
 
@@ -25,7 +25,7 @@ Before you upgrade a report server, we recommend the following steps to back up 
 
 ### Backing up the encryption keys
 
-Back up the encryption keys when you configure a report server installation for the first time. Also back up the keys anytime you change the identity of the service accounts or rename the computer. For more information, see [Back Up and Restore Reporting Services Encryption Keys](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
+Back up the encryption keys when you configure a report server installation for the first time. Also back up the keys anytime you change the identity of the service accounts or rename the computer. For more information, see [Back Up and Restore Reporting Services Encryption Keys](/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
 
 ### Backing up the report server databases
 
@@ -77,12 +77,12 @@ Power BI Report Server receives security fixes via Microsoft Update. To enable g
 
 ## Upgrade Power BI Desktop
 
-After you upgrade the report server, make sure that any Power BI report authors upgrade to the version of Power BI Desktop optimized for Power BI Report Server that matches the server.
+After you upgrade the report server, make sure that any Power BI report authors upgrade to the version of Power BI Desktop for Power BI Report Server that matches the server.
 
 ## Next steps
 
 * [Administrator overview](admin-handbook-overview.md)  
-* [Install Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md)  
+* [Install Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md)  
 * [Verify a Reporting Services installation](/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
 * [Configure the report server service account](/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
 * [Configure report server URLs](/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  

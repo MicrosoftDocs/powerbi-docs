@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/18/2020
+ms.date: 11/11/2020
 LocalizationGroup: Premium 
 ---
 
@@ -19,6 +19,11 @@ The app is updated regularly with new features and functionality. Make sure you'
 
 > [!IMPORTANT]
 > If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. See [capacity and reliability notifications](service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
+
+> [!NOTE]
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+>
+>To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).
 
 ## Install the app
 
@@ -299,3 +304,15 @@ You can use the Power BI Premium Capacity Metrics app to monitor *A SKU* capacit
 
 > [!div class="nextstepaction"]
 > [Optimizing Power BI Premium capacities](service-premium-capacity-optimize.md)
+
+More questions? [Ask the Power BI Community](https://community.powerbi.com/)
+
+Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
+* Performance
+* Per-user licensing
+* Greater scale
+* Improved metrics
+* Autoscaling
+* Reduced management overhead
+
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

@@ -1,6 +1,6 @@
 ---
-title: Introduction to use Data view utils in Power BI visual
-description: This article describes how to use SVG utils  simplify parsing of the DataView object for Power BI visuals
+title: Introduction to use Data view utils in Power BI visual in Power BI embedded analytics for better embedded BI insights
+description: This article describes how to use SVG utils  simplify parsing of the DataView object for Power BI visuals. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -21,6 +21,22 @@ To install the package, you should run the following command in the directory wi
 
 npm install powerbi-visuals-utils-dataviewutils --save
 This command installs the package and adds a package as a dependency to your package.json
+
+## DataViewWildcard
+
+`DataViewWildcard` provides the `createDataViewWildcardSelector` function to support a property's [conditional formatting](conditional-format.md#define-how-conditional-formatting-behaves).
+
+`createDataViewWildcardSelector` returns a selector required for defining how the conditional formatting entry in the format pane will be applied, based on `dataviewWildcardMatchingOption (InstancesAndTotals (default), InstancesOnly, TotalsOnly)`.
+
+Example:
+
+ ```typescript
+import { dataViewWildcard } from "powerbi-visuals-utils-dataviewutils";
+
+let selector = dataViewWildcard.createDataViewWildcardSelector(dataViewWildcard.DataViewWildcardMatchingOption.InstancesAndTotals);
+// returns {data: [{dataViewWildcard:{matchingOption: 0}}]};
+
+```
 
 ## DataRoleHelper
 

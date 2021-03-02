@@ -1,16 +1,16 @@
 ---
 title: Automate Power BI Premium workspace and dataset tasks with service principals | Microsoft Docs
 description: Learn how service principals can be used for automating Power BI Premium workspace and dataset management tasks.
-author: minewiskan
-ms.author: owend
-ms.reviewer: ''
+author: Minewiskan
+ms.author: davidi
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 09/04/2020
-
+ms.date: 10/20/2020
 LocalizationGroup: Premium
 ---
+
 # Automate Premium workspace and dataset tasks with service principals
 
 Service principals are an Azure Active Directory *app registration* you create within your tenant to perform unattended resource and service level operations. They're a unique type of user identity with an app name, application ID, tenant ID, and *client secret* or certificate for a password.
@@ -27,9 +27,6 @@ In **Power BI Premium**, service principals can also be used with the [XMLA endp
 Only [New workspaces](../collaborate-share/service-new-workspaces.md) support XMLA endpoint connections using service principals. Classic workspaces aren't supported. A service principal has only those permissions necessary to perform tasks for workspaces that it is assigned. Permissions are assigned through workspace Access, much like regular UPN accounts.
 
 To perform write operations, the capacity's **Datasets workload** must have the [XMLA endpoint enabled for read-write](service-premium-connect-tools.md#enable-xmla-read-write). Datasets published from Power BI Desktop should have the [Enhanced metadata format](../connect-data/desktop-enhanced-dataset-metadata.md) feature enabled.
-
-> [!NOTE]
-> The XMLA endpoint feature in Power BI Premium is **Preview**. Features in preview should not be used in a production environment. Certain functionality, support, and documentation is limited.  Refer to the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products?rtc=1) for details.
 
 ## Create a service principal
 

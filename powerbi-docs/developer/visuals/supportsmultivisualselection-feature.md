@@ -1,6 +1,6 @@
 ---
-title: The supportsMultiVisualSelection feature
-description: This article describes how to use the supportsMultiVisualSelection feature in Power BI visuals, and its requirements.
+title: The supportsMultiVisualSelection feature in Power BI embedded analytics for better embedded BI insights
+description: This article describes how to use the supportsMultiVisualSelection feature in Power BI visuals, and its requirements. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -40,4 +40,4 @@ To use the `supportsMultiVisualSelection` feature, add the following code to the
 
 To learn about Power BI concepts, see [Visuals in Power BI](power-bi-visuals-concept.md).
 
-To try out Power BI development, see [Developing a Power BI visual](custom-visual-develop-tutorial.md).
+To try out Power BI development, see [Developing a Power BI circle card](develop-circle-card.md).

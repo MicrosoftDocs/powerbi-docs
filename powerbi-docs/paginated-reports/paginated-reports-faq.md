@@ -7,10 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/08/2020
+ms.date: 02/09/2021
 ---
 
 # Paginated reports in Power BI: FAQ 
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 This article answers frequently asked questions about paginated reports. These reports are highly formatted, pixel-perfect output optimized for printing or PDF generation. They're called "paginated" because they're formatted to fit well on multiple pages. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. 
 
@@ -21,6 +23,13 @@ This article answers many common questions people have about paginated reports i
 ### What size Premium capacity do I need for paginated reports?
 
 The paginated reports workload is available on P1 – P3 SKUs.  You may also use it with A4 – A6 SKUs for embed or test/dev scenarios.
+
+> [!NOTE]
+> Power BI recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. In **Premium Gen2**, the paginated reports workload is available on EM1-EM3 SKUs, P1-P3 SKUs and A1-A6 SKUs.  It also is available on a per user basis with Premium per user, which is built on Premium Gen2 and also in public preview. 
+>
+>Premium Gen2 simplifies the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2 (preview)](../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview).
+>
+>To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).
 
 ### What is the maximum memory threshold I can put for paginated reports in my capacity?
 
@@ -74,6 +83,9 @@ Default memory in each Premium SKU for paginated reports:
 Power BI admins can modify the default maximum memory percentage in the Admin portal. See the **Paginated Reports** workload section under **Power BI Premium** on the **Capacity settings** tab.
 
 :::image type="content" source="media/paginated-reports-faq/paginated-reports-capacity-settings.png" alt-text="Paginated reports Capacity settings tab":::
+
+> [!NOTE]
+> **Premium Gen2**, currently in preview, doesn't require you to change memory settings. The underlying system manages memory in Premium Gen2 automatically. Paginated reports workload is available on P1-P3 SKUs and A1-A6 SKUs in **Premium Gen2**.
 
 ## General
 
@@ -173,6 +185,12 @@ Yes, you can now search for your paginated reports from Home.  You also see them
 Here's something to keep in mind when working with DateTime fields in paginated reports.
 
 - Currently there are some globalization limitations related to DateTime parameters. All DateTime parameters in the Power BI service are fetched in US format (MM/DD/YYYY) regardless of how you design the DataTime in Power BI Report Builder.
+
+When viewing paginated reports in the Power BI service, sessions may time out, presenting the user with the following notification:
+
+:::image type="content" source="media/paginated-reports-faq/expired-session-notification.png" alt-text="Paginated reports session expired notification":::
+
+- The session will time out after 60 minutes of inactivity, or earlier when the device is locked or inactive, or when the report isn't displayed in the active tab of the browser.
 
 ## Next steps
 

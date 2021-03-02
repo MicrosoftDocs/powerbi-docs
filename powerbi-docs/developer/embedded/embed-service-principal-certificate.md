@@ -1,24 +1,17 @@
 ---
-title: Embed Power BI content with service principal and a certificate
-description: Learn how to authenticate for embedded analytics using an Azure Active Directory application service principal and a certificate.
+title: Embed Power BI content in an Power BI embedded analytics application with service principal and a certificate enabling better embedded BI insights
+description: Learn how to authenticate for Power BI embedded analytics using an Azure Active Directory application service principal and a certificate. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
-ms.reviewer: nishalit
+ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ""
-ms.date: 06/01/2020
+ms.date: 11/23/2020
 ---
 
 # Embed Power BI content with service principal and a certificate
-
-[!INCLUDE[service principal overview](../../includes/service-principal-overview.md)]
-
->[!NOTE]
->We recommend that you secure your backend services using certificates, rather than secret keys. [Learn more about getting access tokens from Azure AD using secret keys or certificates](/azure/architecture/multitenant-identity/client-assertion).
-
-## Certificate-based authentication
 
 Certificate-based authentication enables you to be authenticated by Azure Active Directory (Azure AD) with a client certificate on a Windows, Android or iOS device, or kept in an [Azure Key Vault](/azure/key-vault/basic-concepts).
 
@@ -28,19 +21,24 @@ You can learn more about certificates in Azure AD in the [Client credential flow
 
 ## Method
 
-To use service principal and a certificate with embedded analytics, follow these steps:
+1. [Embed your content with service principal](embed-service-principal.md).
 
-1. Create a certificate.
+2. [Create a certificate](embed-service-principal-certificate.md#step-2---create-a-certificate).
 
-2. Create an Azure AD Application.
+3. [Set up certificate authentication](embed-service-principal-certificate.md#step-3---set-up-certificate-authentication).
 
-3. Set up certificate authentication.
+4. [Get the certificate from Azure Key Vault](embed-service-principal-certificate.md#step-4---get-the-certificate-from-azure-key-vault).
 
-4. Get the certificate from Azure Key Vault.
+5. [Authenticate using service principal and a certificate](embed-service-principal-certificate.md#step-5---authenticate-using-service-principal-and-a-certificate).
 
-5. Authenticate using service principal and a certificate.
+## Step 1 - Embed your content with service principal
 
-## Step 1 - Create a certificate
+To embed your content with service principal, follow the instructions in [Embed Power BI content with service principal and an application secret](embed-service-principal.md).
+
+>[!NOTE]
+>If you already have content that's embedded using a service principal, skip this step and advance to [step 2](embed-service-principal-certificate.md#step-2---create-a-certificate).
+
+## Step 2 - Create a certificate
 
 You can procure a certificate from a trusted *Certificate Authority*, or generate a certificate yourself.
 
@@ -50,19 +48,19 @@ This section describes creating a certificate using [Azure Key Vault](/azure/key
 
 2. Search for **Key Vaults** and click the **Key Vaults** link.
 
-    ![key vault](media/embed-service-principal-certificate/key-vault.png)
+    ![A screenshot that shows a link to the key vault in the Azure portal.](media/embed-service-principal-certificate/key-vault.png)
 
 3. Click the key vault you want to add a certificate to.
 
-    ![Select key vault](media/embed-service-principal-certificate/select-key-vault.png)
+    ![A screenshot showing a list of blurred out key vaults in the Azure portal.](media/embed-service-principal-certificate/select-key-vault.png)
 
 4. Click **Certificates**.
 
-    ![Screenshot shows the Key vaults page with Certificates called out.](media/embed-service-principal-certificate/certificates.png)
+    ![A screenshot that shows the Key vaults page with Certificates called out.](media/embed-service-principal-certificate/certificates.png)
 
 5. Click **Generate/Import**.
 
-    ![Screenshot shows the Certificate pane with Generate / Import called out.](media/embed-service-principal-certificate/generate.png)
+    ![A screenshot that shows the Certificate pane with Generate / Import called out.](media/embed-service-principal-certificate/generate.png)
 
 6. Configure the **Create a certificate** fields as follows:
 
@@ -92,19 +90,15 @@ This section describes creating a certificate using [Azure Key Vault](/azure/key
 
 9. Click **Download in CER format**. The downloaded file contains the public key.
 
-    ![download as cer](media/embed-service-principal-certificate/download-cer.png)
-
-## Step 2 - Create an Azure AD Application
-
-[!INCLUDE[service principal create app](../../includes/service-principal-create-app.md)]
+    ![A screenshot that shows the download in cer format button.](media/embed-service-principal-certificate/download-cer.png)
 
 ## Step 3 - Set up certificate authentication
 
 1. In your Azure AD application, click the **Certificates & secrets** tab.
 
-     ![Screenshot shows the Certificates & secrets pane for an app in the Azure portal.](media/embed-service-principal/certificates-and-secrets.png)
+     ![A screenshot that shows the certificates and secrets pane for an app in the Azure portal.](media/embed-service-principal/certificates-and-secrets.png)
 
-2. Click **Upload certificate** and upload the *.cer* file you created and downloaded in the [first step](#step-1---create-a-certificate) of this tutorial. The *.cer* file contains the public key.
+2. Click **Upload certificate** and upload the *.cer* file you created and downloaded in [step 2](#step-2---create-a-certificate) of this tutorial. The *.cer* file contains the public key.
 
 ## Step 4 - Get the certificate from Azure Key Vault
 
@@ -176,22 +170,20 @@ When creating your embedded solution, it may be useful to configure Visual Studi
 
 2. Click **Tools** > **Options**.
 
-     ![Visual Studio options](media/embed-service-principal-certificate/visual-studio-options.png)
+     ![A screenshot showing the options button in the tools menu in Visual Studio.](media/embed-service-principal-certificate/visual-studio-options.png)
 
 3. Search for **Account Selection** and click **Account Selection**.
 
-    ![account selection](media/embed-service-principal-certificate/account-selection.png)
+    ![A screenshot showing the account selection option in the Visual Studio options window.](media/embed-service-principal-certificate/account-selection.png)
 
 4. Add the account that has access to your Azure Key Vault.
-
-[!INCLUDE[service principal limitations](../../includes/service-principal-limitations.md)]
 
 ## Next steps
 
 >[!div class="nextstepaction"]
 >[Register an app](register-app.md)
 
->[!div class="nextstepaction"]
+> [!div class="nextstepaction"]
 >[Power BI Embedded for your customers](embed-sample-for-customers.md)
 
 >[!div class="nextstepaction"]
@@ -199,6 +191,3 @@ When creating your embedded solution, it may be useful to configure Visual Studi
 
 >[!div class="nextstepaction"]
 >[Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
-
->[!div class="nextstepaction"]
->[Embed Power BI content with service principal and an application secret](embed-service-principal.md)

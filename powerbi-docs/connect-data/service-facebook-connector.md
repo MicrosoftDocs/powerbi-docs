@@ -2,14 +2,12 @@
 title: 'Third-party service: Facebook connector for Power BI Desktop'
 description: 'Third-party service: Facebook connector for Power BI Desktop'
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 02/20/2020
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Use the Facebook connector for Power BI Desktop

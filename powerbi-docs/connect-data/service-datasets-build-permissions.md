@@ -1,21 +1,20 @@
 ---
 title: Build permission for shared datasets
 description: Learn how you can control access to the data by using Build permission.
-author: maggiesMSFT
+author: paulinbar
+ms.author: painbar
 ms.reviewer: kayu
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/30/2020
-ms.author: maggies
-
+ms.date: 02/12/2021
 LocalizationGroup: Share your work
 ---
 # Build permission for shared datasets
 
 When you create a report in Power BI Desktop, the data in that report is stored in a *data model*. When you publish your reports to the Power BI service, you're also publishing the data as a *dataset*. You can give others *Build permission* for that report, so they can discover and reuse the dataset you've shared. This article explains how you control access to the data by using the Build permission.
 
-Build permission applies to datasets. When you give users Build permission, they can build new content on your dataset, such as reports, dashboards, pinned tiles from Q&A, and Insights Discovery. 
+Build permission applies to datasets. When you give users Build permission, they can build new content on your dataset, such as reports, dashboards, pinned tiles from Q&A, paginated reports, and Insights Discovery. 
 
 Users also need Build permissions to work with the data *outside* Power BI:
 
@@ -27,7 +26,7 @@ Users also need Build permissions to work with the data *outside* Power BI:
 
 You give Build permission for a dataset in a few different ways:
 
-- Members of a workspace with at least a Contributor role automatically have Build permission for datasets in that workspace, and permission to copy a report.
+- Members of a workspace with at least a Contributor role automatically have Build permission for datasets in that workspace, and permission to copy a report. Read more about [roles in the new workspaces](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces).
  
 - Members of the workspace where the dataset resides can assign the permission to specific users or security groups in the Permission center. If you're a member of the workspace, select **More options** (...) next to a dataset > **Manage Permissions**.
 

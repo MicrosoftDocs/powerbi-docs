@@ -2,13 +2,12 @@
 title: Use cascading parameters in paginated reports
 description: Guidance for designing paginated reports using cascading parameters.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: report-builder
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 01/14/2020
-ms.author: v-pemyer
 ---
 
 # Use cascading parameters in paginated reports
@@ -124,7 +123,7 @@ Here's how you can develop the cascading parameters:
 >
 > Generally, stored procedures are a better design approach. It's because their query plans are cached for quicker execution, and they allow you develop more sophisticated logic, when needed. However, they aren't currently supported for gateway relational data sources, which means SQL Server, Oracle, and Teradata.
 >
-> Lastly, you should always ensure suitable indexes exist to support efficient data retrieval. Otherwise, your report parameters could be slow to populate, and the database could become overburdened. For more information about SQL Server indexing, see [SQL Server Index Architecture and Design Guide](/sql/relational-databases/sql-server-index-design-guide?view=sql-server-2017).
+> Lastly, you should always ensure suitable indexes exist to support efficient data retrieval. Otherwise, your report parameters could be slow to populate, and the database could become overburdened. For more information about SQL Server indexing, see [SQL Server Index Architecture and Design Guide](/sql/relational-databases/sql-server-index-design-guide).
 
 ### Filter by a grouping column
 
@@ -216,7 +215,7 @@ Here's how you can develop the cascading parameters:
 > [!TIP]
 > You can improve upon this design to provide more control for your report users. It lets them define their own pattern matching value. For example, the search value "red%" will filter to resellers with names that _commence_ with the characters "red".
 >
-> For more information, see [LIKE (Transact-SQL)](/sql/t-sql/language-elements/like-transact-sql?view=sql-server-ver15#using-the--wildcard-character).
+> For more information, see [LIKE (Transact-SQL)](/sql/t-sql/language-elements/like-transact-sql#using-the--wildcard-character).
 
 Here's how you can let the report users define their own pattern.
 

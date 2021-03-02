@@ -2,13 +2,13 @@
 title: Tour the report Filters pane
 description: How to add a filter to a report in the Power BI service for business users
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.custom:  
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/29/2020
-ms.author: mihart
 LocalizationGroup: Reports
 ---
 
@@ -16,11 +16,10 @@ LocalizationGroup: Reports
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 This article takes a look at the report **Filters** pane in the Power BI service. Use the filters to discover new insights in your data.
 
-There are many different ways to filter data in Power BI. This article explains how to use the **Filters** pane.  You can also filter by selecting data points on a report visual to filter the other visuals on the page -- this is referred to as **cross-filtering** and **cross-highlighting**. For more information about cross-filtering and cross-highlighting, see [Filters and highlighting in Power BI reports](../create-reports/power-bi-reports-filters-and-highlighting.md).
+There are many different ways to filter data in Power BI. This article explains how to use the **Filters** pane.  You can also filter by selecting data points on a report visual to filter the other visuals on the page -- this is referred to as **cross-filtering** and **cross-highlighting**. For more information about cross-filtering and cross-highlighting, see [How visuals cross-filter each other in a Power BI report](end-user-interactions.md).
 
 ![Screenshot of a report in the browser with an arrow pointing to the Filters option.](media/end-user-report-filter/power-bi-reports.png)
 

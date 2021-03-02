@@ -2,14 +2,12 @@
 title: Decomposition tree
 description: 'Tutorial: Create a decomposition tree visualization in Power BI'
 author: mihart
-manager: kvivek
+ms.author: mihart
 ms.reviewer: juluczni
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 01/10/2020
-ms.author: rien
-
 LocalizationGroup: Visualizations
 ---
 
@@ -29,7 +27,7 @@ This tutorial uses two examples:
 - A sales scenario that breaks down video game sales by numerous factors like game genre and publisher.
 
 You can find the pbix used in the supply chain scenario here: [Supply Chain Sample.pbix](
-https://github.com/microsoft/powerbi-desktop-samples/blob/master/Sample%20Reports/Supply%20Chain%20Sample.pbix).
+https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Supply%20Chain%20Sample.pbix).
 
 > [!NOTE]
 > Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.    

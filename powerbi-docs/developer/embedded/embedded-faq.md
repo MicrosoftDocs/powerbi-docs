@@ -1,13 +1,13 @@
 ---
-title: Frequently asked questions about Power BI Embedded
-description: Browse a list of frequently asked questions and answers about Power BI Embedded.
+title: Frequently asked questions about Power BI embedded analytics
+description: Browse a list of frequently asked questions and answers about Power BI embedded analytics
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/11/2020 
+ms.date: 01/14/2021 
 ---
 
 # Frequently asked questions about Power BI Embedded
@@ -31,12 +31,15 @@ Power BI is a software-as-a-service analytics solution that gives organizations 
 
 Microsoft developed Power BI Embedded for ISVs wanting to embed visuals into their applications to help their customers make analytic decisions. This spares ISVs from having to build their own analytics' solution themselves. [Embedded analytics](embedding.md) enables business users to access business data and execute queries against it to generate insights within the application.
 
-
 ### What is the difference between Power BI Premium and Power BI Embedded?
 
 Power BI Premium is capacity geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers. Power BI Premium helps your organization make decisions. Power BI Premium is a SaaS product that allows users to consume content through mobile apps, internally developed apps, or at the Power BI portal.
 
 Power BI Embedded is for ISVs who want to embed visuals into their applications. Power BI Embedded helps your customers make decisions because Power BI Embedded is for application developers, customers of that application can consume content stored on Power BI Embedded capacity, including anyone inside or outside the organization. You can't share Power BI Embedded capacity content through one-click publish to Web or one-click publish to SharePoint.
+
+### What is Power BI Embedded Generation 2?
+
+Power BI Embedded recently released a new version, called **Embedded Gen2**. Embedded Gen2 will simplify the management of embedded capacities, and improve the Power BI Embedded experience. For more information, see [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md).
 
 ### What is the Microsoft recommendation for when a customer should buy Power BI Premium vs. Power BI Embedded?
 
@@ -66,7 +69,7 @@ Refer to the [Capacity and SKUs in Power BI embedded analytics](embedded-capacit
 
 * Downloading the [metric app](../../admin/service-admin-premium-monitor-capacity.md) in Power BI.
 
-* Using [Azure diagnostic logging](azure-pbie-diag-logs.md).
+* Using [Azure diagnostic logging](./monitor-power-bi-embedded.md).
 
 ### Can my capacity scale automatically to adjust to my app consumption?
 
@@ -107,14 +110,14 @@ Power BI requires you to sign up with an organizational account. Trying to sign 
 
 ### Can I use APIs to create and manage Azure capacities?
 
-Yes, there are Powershell cmdlets and Azure Resource Manager REST APIs you can use to create and manage PBIE resources.
+Yes, there are PowerShell cmdlets and Azure Resource Manager REST APIs you can use to create and manage PBIE resources.
 
 * [Rest APIs](/rest/api/power-bi-embedded/) 
-* [Powershell cmdlets](/powershell/module/azurerm.powerbiembedded/)
+* [PowerShell cmdlets](/powershell/module/azurerm.powerbiembedded/)
 
-### What is the PBI Embedded dedicated capacity role in a PBI Embedded solution?
+### What is the PBI Embedded capacity role in a PBI Embedded solution?
 
-To [promote your solution to production](embed-sample-for-customers.md#move-to-production), you need to assign the Power BI content (workspace) your application uses to a Power BI Embedded (A SKU) capacity.
+To [promote your solution to production](move-to-production.md), you need to assign the Power BI content (workspace) your application uses to a Power BI Embedded (A SKU) capacity.
 
 ### In what Azure regions is PBI Embedded available?
 
@@ -179,7 +182,7 @@ There's often confusion around when to use RLS versus JavaScript filters, becaus
 
 For RLS, the ISV developer controls the data filtering as part of the model creation and embed token generation. The end user sees only what the ISV allows the user to see. In this case, the user can choose to see less than what's being filtered, but won't be able to bypass the RLS configuration and see more than what's allowed.
 
-For client-side filtering (JavaScript), the ISV might decide what the end user sees at the initial view, but they can't control changes the end user might apply to the view itself. Since user Javascript client code can trigger data filtering on the backend, it can't be considered secure.
+For client-side filtering (JavaScript), the ISV might decide what the end user sees at the initial view, but they can't control changes the end user might apply to the view itself. Since user JavaScript client code can trigger data filtering on the backend, it can't be considered secure.
 
 Reference [RLS vs JavaScript filters](embedded-row-level-security.md#using-rls-vs-javascript-filters) for more details.
 
@@ -193,7 +196,7 @@ This situation matters when you add the service principal as an **admin** to the
 
 ### When to use an application ID vs. a service principal object ID?
 
-The **[application ID](embed-sample-for-customers.md#application-id)** is used to create the access token when passing the application ID for authentication.
+The **[application ID](embed-sample-for-customers.md#client-id)**, also known as *client ID*, is used to create the access token when passing the application ID for authentication.
 
 To reference a service principal for operations or to make changes you use the **[service principal object ID](embed-service-principal.md)** — for example, applying a service principal as an admin to a workspace.
 
@@ -273,7 +276,7 @@ There's no special Azure pricing for non-profit and educational entities.
 
 2. Start with the **Power BI Embedded** application POC that uses Power BI content.
 
-3. Once you are ready for production, purchase a **Power BI Embedded** dedicated capacity and assign your Power BI content (workspace) to that capacity.
+3. Once you are ready for production, purchase a **Power BI Embedded** capacity and assign your Power BI content (workspace) to that capacity.
 
     > [!Note]
     > You can continue to use **Power BI Workspace Collection** while building in parallel with a **Power BI Embedded** solution. Once you are ready, you can move your customer to the new **Power BI Embedded** solution and retire the **Power BI Workspace Collection** solution.
@@ -307,12 +310,12 @@ Some of the features are:
 
 ### What is the Embedding setup tool?
 
-The [Embedding setup tool](https://aka.ms/embedsetup) allows you to quickly get started and download a sample application to begin embedding with Power BI.
+The [Embedding setup tool](https://app.powerbi.com/embedsetup) allows you to quickly get started and download a sample application to begin embedding with Power BI.
 
 ### Which solution should I choose?
 
-* [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. Run the [Embed for your customers](https://aka.ms/embedsetup/AppOwnsData) solution.
-* [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service. Run the [Embed for your organization](https://aka.ms/embedsetup/UserOwnsData) solution.
+* [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. In the [Embedding setup tool](https://app.powerbi.com/embedsetup), run the *Embed for your customers* solution.
+* [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service. In the [Embedding setup tool](https://app.powerbi.com/embedsetup), run the *Embed for your organization* solution.
 
 ### I've downloaded the sample app, which solution do I choose?
 

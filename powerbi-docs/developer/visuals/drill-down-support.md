@@ -1,6 +1,6 @@
 ---
-title: Add Drill-Down support
-description: This article describes how to add drill-down support to Power BI Visuals
+title: Add Drill-Down support in Power BI embedded analytics for better embedded BI insights
+description: This article describes how to add drill-down support to Power BI Visuals. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -243,6 +243,11 @@ To create context menu, save `host` object in the properties of the visual and c
 import "core-js/stable";
 import "./../style/visual.less";
 // imports
+
+import powerbiVisualsApi from "powerbi-visuals-api";
+import ISelectionManager = powerbiVisualsApi.extensibility.ISelectionManager;
+import ISelectionId = powerbiVisualsApi.visuals.ISelectionId;
+import ISelectionIdBuilder = powerbiVisualsApi.visuals.ISelectionIdBuilder;
 
 export class Visual implements IVisual {
     // visual properties

@@ -1,19 +1,19 @@
 ---
 title: "Report design tips in Power BI Report Builder"
 description: Use the following tips to help design your paginated reports in Power BI Report Builder. 
+author: maggiesMSFT
+ms.author: maggies
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
-
 ms.topic: conceptual
 ms.assetid: c1490ff0-5b8a-43c1-8d22-e459395db4f6
-author: maggiesMSFT
-ms.author: maggies
 ---
 # Report design tips in Power BI Report Builder
-  Use the following tips to help design your paginated reports in Power BI Report Builder.  
-  
-   
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+
+Use the following tips to help design your paginated reports in Power BI Report Builder.  
   
 ##  <a name="DesigningReports"></a> Designing reports  
   

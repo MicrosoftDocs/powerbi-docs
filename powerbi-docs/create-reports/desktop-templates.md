@@ -2,14 +2,12 @@
 title: Using templates in Power BI Desktop
 description: Create and share templates in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 08/16/2019
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Create report templates for Power BI Desktop

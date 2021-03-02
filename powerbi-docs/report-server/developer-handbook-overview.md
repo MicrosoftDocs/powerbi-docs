@@ -14,7 +14,7 @@ ms.date: 11/01/2017
 
 Welcome to the developer handbook for Power BI Report Server, an on-premises location for storing and managing your Power BI, mobile, and paginated reports.
 
-![Admin Handbook](media/developer-handbook-overview/admin-handbook.png)
+![Power BI Report Server overview.](media/admin-handbook-overview/admin-handbook.png)
 
 This handbook highlights options you have, as a developer, to work with Power BI Report Server.
 
@@ -37,7 +37,13 @@ You have several API options for interacting with Power BI Report Server. This t
 You can also use the open-source [PowerShell utilities](https://github.com/Microsoft/ReportingServicesTools) to manage your report server.
 
 > [!NOTE]
-> The PowerShell utilities don't currently support Power BI Desktop files (.pbix).
+> The PowerShell utilities support Power BI Desktop files (.pbix) via the -RsRest* commands.
+
+Run the following command to find which commands in the ReportingServicesTools PowerShell module support Power BI Desktop files (.pbix).
+
+```powershell
+Get-Command -Module ReportingServicesTools -Noun RsRest*
+```
 
 ## Custom extensions
 

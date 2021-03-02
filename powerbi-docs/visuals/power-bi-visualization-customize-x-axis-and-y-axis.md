@@ -2,13 +2,14 @@
 title: Customize X-axis and Y-axis properties
 description: 'Customize X-axis and Y-axis properties'
 author: mihart
-ms.reviewer: ''
+ms.author: mihart
+ms.reviewer: 'mihart'
 featuredvideoid: 9DeAKM4SNJM
+ms.custom: 9DeAKM4SNJM
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to 
 ms.date: 05/06/2020
-ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 

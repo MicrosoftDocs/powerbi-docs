@@ -2,14 +2,13 @@
 title: Automatic page refresh in Power BI Desktop 
 description: This article shows how to automatically refresh pages for DirectQuery sources in Power BI Desktop.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.custom:
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 08/13/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
 ---
 
@@ -29,11 +28,11 @@ This refresh type allows you to update all visuals in a report page based on a c
 
 ### Change detection
 
-This refresh type allows you to refresh visuals on a page based on detecting changes in the data rather than a specific refresh interval. Specifically, this measure polls for changes to your [DirectQuery source](../connect-data/desktop-directquery-about.md). Besides defining the measure, you also have to select how frequently Power BI Desktop will check for changes. When publishing to the service, this refresh type is only supported in workspaces that are part of a Premium capacity.
+This refresh type allows you to refresh visuals on a page based on detecting changes in the data rather than a specific refresh interval. Specifically, this measure polls for changes to your [DirectQuery source](../connect-data/desktop-directquery-about.md). Besides defining the measure, you also have to select how frequently Power BI Desktop will check for changes. When publishing to the service, this refresh type is only supported in workspaces that are part of a Premium capacity. LiveConnect sources such as Analysis Services and Power BI datasets are not supported.
 
 ## Authoring reports with automatic page refresh in Power BI Desktop
 
-Automatic page refresh is available only for [DirectQuery sources](../connect-data/desktop-directquery-about.md) so it will only be available when you are connected to a DirectQuery data source. This restriction applies to both automatic page refresh types.
+Automatic page refresh is available for [DirectQuery sources](../connect-data/desktop-directquery-about.md) and some LiveConnect scenarios, so it will only be available when you are connected to a supported data source. This restriction applies to both automatic page refresh types.
 
 To use automatic page refresh in Power BI Desktop, select the report page for which you want to enable automatic page refresh. In the **Visualizations** pane, select the **Formatting** button (a paint roller) and find the **Page refresh** section near the bottom of the pane.
 
@@ -156,7 +155,7 @@ Power BI Desktop has no restrictions for refresh intervals and can be as frequen
 
 ### Restrictions on refresh intervals
 
-In the Power BI service, restrictions on automatic page refresh apply based on the workspace where the report is published, whether you're using Premium services, and the Premium capacity admin settings.
+In the Power BI service, restrictions on automatic page refresh apply based on the workspace where the report is published, whether you're using Premium services, the Premium capacity admin settings, and the type of data source.
 
 To clarify how these restrictions work, let's start with some background on capacities and workspaces.
 
@@ -178,29 +177,35 @@ Here are some details for the two workspace scenarios:
 
  - **Minimum execution interval**. When enabling change detection, your capacity administrator needs to set up a minimum execution interval (default value is five seconds). If your interval is lower than the minimum, the Power BI service overrides your interval to respect the minimum interval set by your capacity administrator.
 
+> [!WARNING]
+> When enabled in your dataset, change detection measure will open a connection to your DirectQuery data source to calculate the measure and poll for changes. This connection is different from the Low Priority refresh connections Power BI already makes.
+
 ![Automatic page refresh settings in the capacity admin portal](media/desktop-automatic-page-refresh/automatic-page-refresh-09.png)
 
 This table describes with more detail where this feature is available and the limits for each capacity type and [storage mode](../connect-data/service-dataset-modes-understand.md):
 
-| Storage mode | Dedicated capacity | Shared capacity |
-| --- | --- | --- |
-| DirectQuery | **FI supported**: Yes <br>**CD supported**: Yes <br>**Minimum**: 1 second <br>**Admin override**: Yes | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No |
-| Import | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A |
-| Mixed mode (DirectQuery + other data sources) | **FI supported**: Yes <br>**CD supported**: Yes <br>**Minimum**: 1 second <br>**Admin override**: Yes | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No |
-| Live connect AS | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A |
-| Live connect PBI | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A |
+| Storage mode                                  | Dedicated capacity                                                                                     | Shared capacity                                                                                       |
+|-----------------------------------------------|--------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| DirectQuery                                   | **FI supported**: Yes <br>**CD supported**: Yes <br>**Minimum**: 1 second <br>**Admin override**: Yes  | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No |
+| Import                                        | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A         | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A        |
+| Mixed mode (DirectQuery + other data sources) | **FI supported**: Yes <br>**CD supported**: Yes <br>**Minimum**: 1 second <br>**Admin override**: Yes  | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No |
+| Analysis Services (Azure and On Premises)     | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: Yes | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No |
+| Power BI datasets (with DirectQuery source)   | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 1 second <br>**Admin override**: Yes  | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No |
+| Power BI Push datasets                        | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: Yes | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No        |
 
 *Table legend:*
 1. *FI: Fixed interval*
 2. *CD: Change detection*
 
+> [!WARNING]
+> We have a known issue when connected from Power BI Desktop to Analysis Services or Power BI datasets and the refresh interval is 30 minutes or more. Visuals in a report page might show an error after 30 minutes.
+
 ## Considerations and limitations
 
 There are a few things to keep in mind when you use automatic page refresh in Power BI Desktop or in the Power BI service:
 
-* Import, LiveConnect, and Push storage modes aren't supported for automatic page refresh.  
+* Import storage mode is not supported for automatic page refresh.  
 * Composite models that have at least one DirectQuery data source are supported.
-* Power BI Desktop has no restrictions for refresh intervals. The interval can be as frequent as every second for both fixed interval and change detection refresh types. When reports are published to the Power BI service, certain restrictions do apply, as described [earlier](#restrictions-on-refresh-intervals) in this article.
 * You can only have one change detection measure per dataset.
 * There can only be a maximum of 10 models with change detection measure in a Power BI tenant.
 
@@ -271,6 +276,10 @@ If you notice that your capacity is overloaded with low-priority queries, there 
 * If your report is on a Premium workspace, ask your admin if this feature is enabled for the attached capacity. Also, ensure that the minimum execution interval for the capacity is equal or lower than the interval for your report.
 * I you have checked for all of the items mentioned before, check in Power BI Desktop or in edit mode if the measure is changing at all. To do this, drag it into the canvas and check if the value changes. If it does not, the measure might not be a good choice to poll for data source changes.
 
+**When connected to analysis services I cannot see the APR toggle**
+
+* Make sure your Analysis Services model is in [Direct Query mode](/analysis-services/tabular-models/directquery-mode-ssas-tabular).
+
 
 ## Next steps
 
@@ -283,4 +292,4 @@ For more information, see these articles:
 * [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Shape and combine data in Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
 * [Connect to Excel workbooks in Power BI Desktop](../connect-data/desktop-connect-excel.md)   
-* [Enter data directly into Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)   
+* [Enter data directly into Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)

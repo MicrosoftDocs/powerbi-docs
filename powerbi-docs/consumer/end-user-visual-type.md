@@ -1,16 +1,14 @@
 ---
-title: Visual types in Power BI for consumers
+title: Visual types in Power BI for business users
 description: Visual types in Power BI service
 author: mihart
-ms.reviewer: mihart
-
-ms.service: powerbi
-ms.subservice: powerbi-consumer
-ms.topic: how-to
-ms.date: 06/24/2020
 ms.author: mihart
-ms.custom: contperfq4
-
+ms.reviewer: mihart
+ms.service: powerbi
+ms.subservice: pbi-explore
+ms.topic: how-to
+ms.date: 10/07/2020
+ms.custom: contperf-fy20q4
 LocalizationGroup: Consumer
 ---
 # Visual types in Power BI
@@ -21,18 +19,20 @@ Visuals (also known as *charts* and *visualizations*) are picture representation
 
 The visuals described on this page are the ones that are packaged with Power BI. These are the visual types you'll encounter most often. This page gives you a quick overview of these pre-packaged visuals. For in-depth information about any of these visuals, see the [Power BI report *designer* documentation on visual types](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
-Visuals that are not automatically included with Power BI are referred to as *custom visuals*. Custom visuals can be imported into Power BI from external websites such as Microsoft AppSource or from internal sources such as your organizational store. Importing custom visuals requires edit permissions to the report. To learn about these add-in visuals, visit [Visuals in Power BI](../developer/visuals/power-bi-custom-visuals.md).
+Visuals that are not automatically included with Power BI are referred to as *custom visuals*. Custom visuals can be imported into Power BI from external websites such as Microsoft AppSource or from internal sources such as your organizational store. Importing custom visuals requires edit permissions to the report. To learn about these add-in visuals, visit [Custom visuals in Power BI](../developer/visuals/power-bi-custom-visuals.md).
 
 
 
 ## List of visuals available in Power BI
 All of these visuals can be found in Power BI dashboards and reports, and [specified in Q&A](end-user-q-and-a.md). To learn how to interact with visuals, see [Interact with visuals in reports, dashboards, and apps](end-user-visualizations.md)
 
-### Area charts: Basic (Layered) and Stacked
+## A
+### Area charts: basic (layered) and stacked
 ![area chart](media/end-user-visual-type/basic-area-map-small.png)
 
 The basic area chart is based on the line chart with the area between the axis and line filled in. Area charts emphasize the magnitude of change over time, and can be used to draw attention to the total value across a trend. For example, data that represents profit over time can be plotted in an area chart to emphasize the total profit.
 
+## B
 ### Bar and column charts
 ![column chart](media/end-user-visual-type/pbi-nancy-viz-bar.png)
 
@@ -40,6 +40,7 @@ The basic area chart is based on the line chart with the area between the axis a
 
 Bar charts are the standard for looking at a specific value across different categories.
 
+## C
 ### Cards: Single number
 ![single number card](media/end-user-visual-type/pbi-nancy-viz-card.png)
 
@@ -63,7 +64,7 @@ Combo charts are a great choice:
 - to check whether one measure meets the target which is defined by another measure
 - to conserve canvas space
 
-
+## D    
 ### Decomposition tree
 ![decomposition tree](media/end-user-visual-type/power-bi-decomposition.png)
 
@@ -74,6 +75,7 @@ The decomposition tree visual lets you visualize data across multiple dimensions
 
 Doughnut charts are similar to pie charts.  They show the relationship of parts to a whole. The only difference is that the center is blank and allows space for a label or icon.
 
+## F
 ### Funnel charts
 ![funnel chart](media/end-user-visual-type/pbi-nancy-viz-funnel.png)
 
@@ -82,7 +84,7 @@ Funnels help visualize a process that has stages, and items flow sequentially fr
 For example, a sales funnel that tracks customers through stages: Lead > Qualified Lead > Prospect > Contract > Close. At a glance, the shape of the funnel conveys the health of the process you're tracking.
 Each funnel stage represents a percentage of the total. So, in most cases, a funnel chart is shaped like a funnel -- with the first stage being the largest, and each subsequent stage smaller than its predecessor. A pear-shaped funnel is also useful -- it can identify a problem in the process. But typically, the first stage, the "intake" stage, is the largest.
 
-
+## G
 ### Gauge charts
 ![gauge chart](media/end-user-visual-type/gauge-m.png)
 
@@ -96,6 +98,7 @@ Radial gauges are a great choice to:
 - show the health of a single measure
 - display information that can be quickly scanned and understood
 
+## K
  ### Key influencers chart
 ![key influencer](media/end-user-visual-type/power-bi-influencer.png)
 
@@ -112,11 +115,13 @@ KPIs are a great choice:
 - to measure progress (what am I ahead or behind on?)
 - to measure distance to a goal (how far ahead or behind am I?)
 
+## L
 ### Line charts
 ![line chart](media/end-user-visual-type/pbi-nancy-viz-line.png)
 
 Line charts emphasize the overall shape of an entire series of values, usually over time.
 
+## M
 ### Maps: Basic maps
 ![basic map](media/end-user-visual-type/pbi-nancy-viz-map.png)
 
@@ -142,6 +147,7 @@ Shape maps compare regions on a map using color. A shape map can't show precise 
 
 The matrix visual is a type of table visual (see "Table" below) that supports a stepped layout. Often, report designers include matrixes in reports and dashboards to allow users to select one or more element (rows, columns, cells) in the matrix to cross-highlight other visuals on a report page.  
 
+## P
 ### Pie charts
 ![pie chart](media/end-user-visual-type/pbi-nancy-viz-pie.png)
 
@@ -150,8 +156,9 @@ Pie charts show the relationship of parts to a whole.
 ### Power Apps visual
 ![Power Apps visual](media/end-user-visual-type/power-bi-powerapps-visual.png)
 
-Report designers can create a Power App and embed it into a Power BI report. Consumers can interact with that visual within the Power BI report. 
+Report designers can create a Power App and embed it into a Power BI report. *Business users* can interact with that visual within the Power BI report. 
 
+## Q
 ### Q&A visual
 ![Q&A visuals](media/end-user-visual-type/power-bi-q-and-a.png)
 
@@ -160,13 +167,14 @@ Report designers can create a Power App and embed it into a Power BI report. Con
 
 For more information, see [Q&A visuals in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
+## R
 ### Ribbon chart
 ![ribbon chart](media/end-user-visual-type/power-bi-ribbon.png)
 
 Ribbon charts show which data category has the highest rank (largest value). Ribbon charts are effective at showing rank change, with the highest range (value) always displayed on top for each time period.
 
+## S
 ### Scatter, bubble, and dot plot charts
-
 
 A scatter chart always has two value axes to show one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart displays points at the intersection of an x and y numerical value, combining these values into single data points. These data points may be distributed evenly or unevenly across the horizontal axis, depending on the data.
 
@@ -198,12 +206,18 @@ Slicers are a great choice to:
 - filter by columns that are unneeded and hidden in the data tables
 - create more focused reports by putting slicers next to important visuals
 
+
+### Smart narrative
+![smart narrative](media/end-user-visual-type/power-bi-smart-narrative.png)
+
+The Smart narrative adds text to reports to point out trends, key takeaways, and add explanations and context. The text helps users to understand the data and identify the important findings quickly.
+
 ### Standalone images
 ![standalone image](media/end-user-visual-type/pbi-nancy-viz-image.png)
 
 A standalone image is a graphic that has been added to a report or dashboard. 
 
-
+## T
 ### Tables
 ![table chart](media/end-user-visual-type/table-type.png)
 
@@ -227,6 +241,7 @@ Tree maps are a great choice:
 - to show attributes using size and color coding
 - to spot patterns, outliers, most-important contributors, and exceptions
 
+## W
 ### Waterfall charts
 ![waterfall chart](media/end-user-visual-type/waterfall-small.png)
 

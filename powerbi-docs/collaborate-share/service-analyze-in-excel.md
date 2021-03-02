@@ -1,16 +1,14 @@
 ---
 title: Analyze in Excel for Power BI
 description: Analyze Power BI datasets in Microsoft Excel
-author: davidiseminger
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-
-ms.custom: contperfq4
+ms.custom: contperf-fy20q4
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 09/22/2020
-ms.author: davidi
-
+ms.date: 01/20/2021
 LocalizationGroup: Reports
 ---
 # Analyze in Excel
@@ -30,11 +28,11 @@ Let's jump in, and get the installation process started.
 
 ## Install Analyze in Excel
 
-You must install **Analyze in Excel** from links provided in the Power BI service. Power BI detects the version of Excel you have on your computer, and automatically downloads the appropriate version (32-bit or 64-bit). The Power BI service runs in a browser. You can sign in to the Power BI using the following link:
+You must install **Analyze in Excel** from links provided in the Power BI service. Power BI detects the version of Excel you have on your computer, and automatically downloads the appropriate version (32-bit or 64-bit). You can sign in to the Power BI service using the following link:
 
 * [Sign in to Power BI](https://app.powerbi.com)
 
-Once you've signed in and the Power BI service is running in your browser, select the **More options** item (the ...) in the upper-right corner and then select **Download > Analyze in Excel updates**. This menu item applies to new installations of updates of Analyze in Excel.
+Once you've signed in and the Power BI service is running in your browser, select **More options** (the ...) in the upper-right corner and then select **Download > Analyze in Excel updates**. This menu item applies to new installations of updates of Analyze in Excel.
 
 ![Download Analyze in Excel from Power BI Home](media/service-analyze-in-excel/analyze-excel-02.png)
 
@@ -156,23 +154,24 @@ For more information about getting data into Excel in this way, see [Create a Pi
 You can also access **featured tables** in Excel, in the **Data Types** gallery. To learn more about featured tables, and how to access them, see [Access Power BI featured tables in Excel (preview)](service-excel-featured-tables.md).
 
 ## Requirements
-There are a few requirements for using **Analyze in Excel**:
+Here are some requirements for using **Analyze in Excel**:
 
 * **Analyze in Excel** is supported for Microsoft Excel 2010 SP1 and later.
-
 * Excel PivotTables do not support drag-and-drop aggregation of numeric fields. Your dataset in Power BI *must have pre-defined measures*. Read about [creating measures](../transform-model/desktop-measures.md).
 * Some organizations may have Group Policy rules that prevent installing the required **Analyze in Excel** updates to Excel. If you’re unable to install the updates, check with your administrator.
 * **Analyze in Excel** requires that the dataset be in Power BI Premium or that the user have a Power BI Pro license. To learn more about the differences in functionality between license types, take a look at the _Power BI features comparison_ section of [Power BI pricing](https://powerbi.microsoft.com/pricing/).
-* Users can connect to datasets through Analyze in Excel if they have permission for the underlying dataset.  A user could have this permission in several ways, such as having the Member role in the workspace containing the dataset, having a report or dashboard shared to them that uses the dataset, or having Build permission for the dataset, in either a workspace or an app that contains the dataset. Read more about [Build permission](../connect-data/service-datasets-build-permissions.md) for datasets.
-* Guest users cannot use **Analyze in Excel** for datasets sent from (originating from) another tenant. 
-* **Analyze in Excel** is a Power BI service feature, and is not available in Power BI Report Server or Power BI Embedded. 
+* Users can connect to datasets through Analyze in Excel if they have permission for the underlying dataset.  A user could have this permission in a few ways, such as having the Member role in the workspace containing the dataset, or having Build permission for a dataset in a workspace or in an app that contains the dataset. Read more about [Build permission](../connect-data/service-datasets-build-permissions.md) for datasets.
+* Guest users can't use **Analyze in Excel** for datasets sent from (originating from) another tenant. 
+* **Analyze in Excel** is a Power BI service feature, and isn't available in Power BI Report Server or Power BI Embedded. 
 * **Analyze in Excel** is only supported on computers running Microsoft Windows.
 
 
-For users who need to uninstall the **Analyze in Excel** feature, you can do so using the **Add or remove programs** system setting on your Windows computer.
+If you need to uninstall the **Analyze in Excel** feature, use the **Add or remove programs** system setting on your computer.
 
-## Troubleshooting
-There may be times when using Analyze in Excel that you get an unexpected result, or the feature doesn't work as you expected. [This page provides solutions for common issues when using Analyze in Excel](desktop-troubleshooting-analyze-in-excel.md).
+## Limitations and considerations
+
+- Row-level security (RLS) is supported for Analyze in Excel. RLS is enforced at the data-model level, and is always applied to all users accessing data in the report. Read more about [row-level security](../admin/service-admin-rls.md).
+- There may be times when using Analyze in Excel that you get an unexpected result, or the feature doesn't work as you expected. See [Troubleshoot Analyze in Excel](desktop-troubleshooting-analyze-in-excel.md) for solutions to common issues.
 
 ## Next steps
 

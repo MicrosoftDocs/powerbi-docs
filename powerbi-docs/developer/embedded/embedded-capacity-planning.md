@@ -1,6 +1,6 @@
 ---
-title: Embedded analytics capacity planning
-description: Planning capacity in Power BI embedded analytics.
+title: Power BI embedded analytics capacity planning enabling better embedded BI insights
+description: Learn how to plan your capacity in Power BI embedded analytics. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -22,11 +22,11 @@ Some of the things to take into consideration when planning your capacity are:
 * Data refresh rates
 * Additional usage patterns that are hard to predict.
 
-This article is designed to make capacity planning for Power BI embedded analytics easier, by introducing the [Power BI Dedicated Capacity Load Assessment Tool](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/), created for automating load testing for Power BI embedded analytics capacities (*A*, *EM* or *P* SKUs).
+This article is designed to make capacity planning for Power BI embedded analytics easier, by introducing the [Power BI Capacity Load Assessment Tool](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/), created for automating load testing for Power BI embedded analytics capacities (*A*, *EM* or *P* SKUs).
 
 ## Planning tool
 
- The [Power BI Dedicated Capacity Load Assessment Tool](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/) can help you understand how much user load your capacity can handle. It uses PowerShell to create automated load tests against your capacities, and lets you choose which reports to test, and how many concurrent users to simulate.
+ The [Power BI Capacity Load Assessment Tool](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/) can help you understand how much user load your capacity can handle. It uses PowerShell to create automated load tests against your capacities, and lets you choose which reports to test, and how many concurrent users to simulate.
 
 The tool generates load on a capacity by continuously rendering each report with new filter values (to prevent unrealistically good performance due to report caching), until the token required for authenticating the tool against the service, expires.
 

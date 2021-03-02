@@ -5,9 +5,9 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
+ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/01/2020
+ms.date: 08/11/2020
 ---
 
 # Manage Power BI visuals admin settings
@@ -125,7 +125,7 @@ Use this method to add a new Power BI visual from a .pbiviz file.
 
 3. To initiate the upload request, select **Add** . Once uploaded, the visual will display in the organizational visuals list.
 
-### Add a visual from AppSource (preview)
+### Add a visual from AppSource
 
 Use this method to add a new Power BI visual from AppSource.
 

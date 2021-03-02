@@ -2,14 +2,13 @@
 title: Create the new workspaces - Power BI
 description: "Learn how to create the new workspaces: collections of dashboards, reports, and paginated reports built to deliver key metrics for your organization."
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 09/04/2020
-ms.author: maggies
-ms.custom: contperfq1, contperfq4
-
+ms.date: 01/12/2021
+ms.custom: contperf-fy21q1, contperf-fy20q4
 LocalizationGroup: Share your work
 ---
 # Create the new workspaces in Power BI
@@ -19,7 +18,8 @@ This article explains how to create one of the *new workspaces* instead of a *cl
 Ready to migrate your classic workspace? See [Upgrade classic workspaces to the new workspaces in Power BI](service-upgrade-workspaces.md) for details.
 
 > [!NOTE]
-> To enforce row-level security (RLS) for Power BI Pro users browsing content in a workspace, assign the users the Viewer Role. See [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces) for an explanation of the different roles.
+> Looking for content about creating content packs? They're being deprecated. Now is a good time to upgrade your content packs to apps. See the workspace upgrade roadmap section of this blog post [Announcing Power BI admins can upgrade classic workspaces](https://powerbi.microsoft.com/blog/announcing-power-bi-admins-can-upgrade-classic-workspaces-and-roadmap-update/) for the timeline.
+> 
 
 ## Create one of the new workspaces
 
@@ -54,6 +54,9 @@ Ready to migrate your classic workspace? See [Upgrade classic workspaces to the 
 ## Give access to your workspace
 
 Anyone who has an admin role in a workspace can give others access to the workspace by adding them to the different roles. Workspace creators are automatically admins. See [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces) for an explanation of the roles.
+
+> [!NOTE]
+> To enforce row-level security (RLS) for Power BI Pro users browsing content in a workspace, assign the users the Viewer Role. See [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces) for an explanation of the different roles.
 
 1. Because you're an admin, on the workspace content list page, you see **Access**.
 

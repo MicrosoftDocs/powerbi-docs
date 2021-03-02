@@ -8,12 +8,12 @@ metadata:
   description: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
   services: powerbi
   ms.service: powerbi
-  ms.subservice: powerbi
+  ms.subservice: pbi-collaborate-share
   ms.topic: landing-page # Required
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 03/03/2020
+  ms.date: 12/15/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -27,20 +27,24 @@ landingContent:
         links:
           - text: Ways to share your work
             url: service-how-to-collaborate-distribute-dashboards-reports.md
-
-  # Card (optional)
-  - title: Collaborate with coworkers
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: "Intro to datasets across workspaces"
-            url: ../connect-data/service-datasets-across-workspaces.md
-          - text: "Build permissions for shared datasets"
-            url: ../connect-data/service-datasets-build-permissions.md
       - linkListType: how-to-guide
         links:
           - text: "Organize work in new workspaces"
             url: service-new-workspaces.md
+
+  # Card (optional)
+  - title: Collaborate in Microsoft Teams
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Collaborate in Microsoft Teams
+            url: service-collaborate-microsoft-teams.md
+      - linkListType: how-to-guide
+        links:
+          - text: Add the Power BI app to Microsoft Teams
+            url: service-microsoft-teams-app.md
+          - text: Chat in Microsoft Teams directly 
+            url: service-share-report-teams.md
 
   # Card (optional)
   - title: Share your work
@@ -74,6 +78,18 @@ landingContent:
           - text: "Embed in SharePoint Online"
             url: service-embed-report-spo.md
 
-
+  # Card (optional)
+  - title: Integrate with Power Automate
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Export paginated reports with Power Automate
+            url: service-automate-paginated-integration.md
+      - linkListType: how-to-guide
+        links:
+          - text: Integrate data alerts with Power Automate
+            url: service-flow-integration.md
+          - text: Email Power BI reports with Power Automate
+            url: service-automate-power-bi-report-export.md
 
 

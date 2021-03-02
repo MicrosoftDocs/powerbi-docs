@@ -1,14 +1,14 @@
 ---
 title: Power BI get started with third-party apps
 description: Power BI get started with third-party apps
-ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: how-to
 author: maggiesMSFT
 ms.author: maggies
+ms.service: powerbi
+ms.subservice: pbi-collaborate-share
+ms.topic: how-to
 ms.reviewer: ""
 ms.cunstom: ""
-ms.date: 09/16/2019
+ms.date: 01/12/2021
 LocalizationGroup: Get started
 ---
 
@@ -22,18 +22,18 @@ Here are the types of access an application can request.
 
 * **View all Dashboards**
   
-  * This permission gives an application the ability to view all dashboards you have access to. This includes dashboards that you own, have gotten from content packs, and have been shared to you and are in groups that you belong to. The application cannot make any modifications to the dashboard. Among other things, this permission can be used by an application to embed your dashboard content into its experiences.
+  * This permission gives an application the ability to view all dashboards you have access to. This includes dashboards that you own, have gotten from apps, and have been shared to you and are in groups that you belong to. The application cannot make any modifications to the dashboard. Among other things, this permission can be used by an application to embed your dashboard content into its experiences.
 
 * **View all Reports**
   
-  * This permission gives an application the ability to view all reports you have access to. This includes reports that you own, have gotten from content packs, and are in groups that you belong to. Part of viewing the report, means that the application can also see the data within it. The application cannot make any modifications to the reports themselves. Among other things, this permission can be used by an application to embed your report content into its experiences.
+  * This permission gives an application the ability to view all reports you have access to. This includes reports that you own, have gotten from apps, and are in groups that you belong to. Part of viewing the report, means that the application can also see the data within it. The application cannot make any modifications to the reports themselves. Among other things, this permission can be used by an application to embed your report content into its experiences.
 
 * **View all Datasets**
   
-  * This permission gives an application the ability to list all datasets that you have access to. This includes datasets that you own, have gotten from content packs, and are in groups that you belong to. An application can see the names of all your datasets as well as their structure including table and column names. This permission gives rights to read the data in a dataset. The permission does not give the application rights to add or make changes to a dataset.
+  * This permission gives an application the ability to list all datasets that you have access to. This includes datasets that you own, have gotten from apps, and are in groups that you belong to. An application can see the names of all your datasets as well as their structure including table and column names. This permission gives rights to read the data in a dataset. The permission does not give the application rights to add or make changes to a dataset.
 * **Read and Write all Datasets**
   
-  * This permission gives an application the ability to list all datasets that you have access to. This includes datasets that you own, have gotten from content packs, and are in groups that you belong to. An application can see the names of all your datasets as well as their structure including table and column names. This permission gives rights to read and write the data in a dataset. The application can also create new datasets, or make modifications to existing ones. This is commonly used by an application to send to data directly to Power BI.
+  * This permission gives an application the ability to list all datasets that you have access to. This includes datasets that you own, have gotten from apps, and are in groups that you belong to. An application can see the names of all your datasets as well as their structure including table and column names. This permission gives rights to read and write the data in a dataset. The application can also create new datasets, or make modifications to existing ones. This is commonly used by an application to send to data directly to Power BI.
 
 * **View user's Groups**
   

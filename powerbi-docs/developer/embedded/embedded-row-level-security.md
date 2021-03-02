@@ -1,6 +1,6 @@
 ---
-title: Using row-level security with Power BI embedded content
-description: Learn about the steps you need to take to embed Power BI content within your application
+title: Using row-level security with embedded content in Power BI embedded analytics for better embedded BI insights
+description: Learn about the steps you need to take to embed Power BI content within your application. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: nishalit
@@ -190,7 +190,7 @@ If you're calling the REST API, you can add custom data inside each identity, fo
 
 Here are the steps to begin setting up the CustomData() feature with your Power BI Embedded application.
 
-1. Create your Azure Analysis Services database. Then sign in to your Azure Analysis Services server via [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017).
+1. Create your Azure Analysis Services database. Then sign in to your Azure Analysis Services server via [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms).
 
     ![Create an Azure Analysis Services database](media/embedded-row-level-security/azure-analysis-services-database-create.png)
 
@@ -212,7 +212,7 @@ Here are the steps to begin setting up the CustomData() feature with your Power 
 
     ![Create Role - Set Row Filters](media/embedded-row-level-security/azure-analysis-services-database-create-role-row-filters.png)
 
-6. Build a PBI report and publish it to a workspace with dedicated capacity.
+6. Build a PBI report and publish it to a workspace with capacity.
 
     ![PBI report sample](media/embedded-row-level-security/rls-sample-pbi-report.png)
 
@@ -256,7 +256,7 @@ It can be used to manage each user's view in Azure SQL or to sign in to Azure SQ
 
 Such effective identity issues apply to RLS rules directly on the Azure SQL Server. Power BI Embedded uses the provided access token when querying data from the Azure SQL Server. The UPN of the user (for which the access token was provided) is accessible as a result of the USER_NAME() SQL function.
 
-The token-based identity only works for DirectQuery models on dedicated capacity - connected to an Azure SQL Database, which is configured to allow AAD authentication ([learn more about AAD authentication for Azure SQL Database](/azure/sql-database/sql-database-manage-logins)). The dataset's data source must be configured to use end users' OAuth2 credentials, to use a token-based identity.
+The token-based identity only works for DirectQuery models on a capacity - connected to an Azure SQL Database, which is configured to allow AAD authentication ([learn more about AAD authentication for Azure SQL Database](/azure/sql-database/sql-database-manage-logins)). The dataset's data source must be configured to use end users' OAuth2 credentials, to use a token-based identity.
 
    ![Configure Azure SQL server](media/embedded-row-level-security/token-based-configure-azure-sql-db.png)
 
@@ -315,15 +315,18 @@ The value provided in the identity blob should be a valid access token to Azure 
 
 ## On-premises data gateway with service principal
 
-Customers that configure row-level security (RLS) using an SQL Server Analysis Services (SSAS) on-premises live connection data source can enjoy the new [service principal](embed-service-principal.md) capability to manage users and their access to data in SSAS when integrating with **Power BI Embedded**.
+Customers that are using SQL Server Analysis Services (SSAS) on-premises live connection data source, can enjoy the [service principal](embed-service-principal.md) capability to manage users and their access to data in SSAS when integrating with **Power BI Embedded**.
 
 Using [Power BI REST APIs](/rest/api/power-bi/), allows you to specify the effective identity for SSAS on-premises live connections for an embed token using a [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object).
 
-Until now, to be able to specify the effective identity for SSAS on-premises live connection, the master user generating the embed token had to be a gateway admin. Now, instead of requiring the user to be gateway admin, the gateway admin can give the user dedicated permission to that data source, that allows the user to override the effective identity when generating the embed token. This new ability enables embedding with service principal for a live SSAS connection.
+Until now, to be able to specify the effective identity for SSAS on-premises live connection, the *master user* generating the embed token had to be a gateway admin. Now, instead of requiring the user to be gateway admin, the gateway admin can give the user dedicated permission to that data source, that allows the user to override the effective identity when generating the embed token. This new ability enables embedding with service principal for a live SSAS connection.
 
-To enable this scenario, the gateway admin uses the [Add Datasource User REST API](/rest/api/power-bi/gateways/adddatasourceuser) to give the service principal the *ReadOverrideEffectiveIdentity* permission for Power BI Embedded.
+To enable this scenario, the gateway admin uses the [Add Datasource User REST API](/rest/api/power-bi/gateways/adddatasourceuser) to give the service principal the *ReadOverrideEffectiveIdentity* permission for the SSAS data source.
 
 You can't set this permission using the admin portal. This permission is only set with the API. In the admin portal, you see an indication for users and SPNs with such permissions.
+
+>[!NOTE]
+>If you are connected to an SSAS database without RLS configured on it, you still need to supply an effective identity (the identity of the SSAS server admin) in the embed token generation call.
 
 ## Considerations and limitations
 
@@ -337,7 +340,7 @@ You can't set this permission using the admin portal. This permission is only se
 
 ### Token-based Identity limitations
 
-* You can use RLS only if you have a dedicated capacity.
+* You can use RLS only if you have a capacity.
 * RLS doesn't work with SQL Server on-premises.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -2,17 +2,45 @@
 title: Private links for accessing Power BI
 description: How to configure a private link for using Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: pbi-security
 ms.topic: how-to
-ms.author: davidi
-ms.date: 09/24/2020
+ms.date: 12/14/2020
 ms.custom: 
 LocalizationGroup: Administration
 ---
 
 # Private links for accessing Power BI
+
+Azure networking provides the Azure Private Links feature that enables Power BI to provide secure access via Azure Networking Private endpoints. With Azure Private Links and Private Endpoints, data traffic is sent privately using Microsoft's backbone network infrastructure, and thus the data doesn’t traverse the Internet. 
+
+Private links ensure that Power BI users use the Microsoft private network backbone when going to resources in the Power BI service.
+
+You can learn more about [Azure Private Links](https://azure.microsoft.com/services/private-link/).
+
+## Understanding private links
+
+Private links guarantee that traffic going *into* your organization’s Power BI artifacts (such as reports, or workspaces) always follow your organization's configured private link network path. User traffic to your Power BI artifacts must come from the established private link, and you can configure Power BI to deny all requests that don’t come from the configured network path. 
+
+Private links *do not* guarantee that traffic from Power BI to your external data sources, whether in the cloud or on premises, is secured. Rather, you must configure firewall rules and virtual networks that further secure your data sources. 
+
+### Power BI and private links integration
+
+Azure Private Endpoint for Power BI is a network interface that connects you privately and securely to the Power BI service, powered by Azure Private Link.   
+
+Private Endpoints integration enables Platform as a Service (PaaS) services to be deployed and accessed privately from customer's virtual and on-premises networks, while the service is still running outside of customer’s network. Private Endpoints is a single, directional technology that lets clients initiate connections to a given service, but it does not allow the service to initiate a connection into customer network. This Private Endpoint integration pattern provides management isolation, since the service can operate independently of customer network policy configuration. For multi-tenant services, this Private Endpoint model provides link identifiers to prevent access to other customers' resources hosted within the same service. When using Private Endpoints, only a limited set of other PaaS service resources can be accessed from services using the integration.  
+
+The Power BI service implements Private Endpoints, and not Service Endpoints.  
+
+Using Private Links with Power BI provide the following benefits:
+
+1. Private Links ensure that traffic will flow over the Azure backbone to a private endpoint for Azure cloud-based resources. 
+
+2. Network traffic isolation from non-Azure based infrastructure, such as on-premises access, would require customers to have ExpressRoute or a Virtual Private Network (VPN) configured.  
+
+## Using secure private links to access Power BI
 
 In Power BI, you can configure and use an endpoint that enables your organization to access Power BI privately. To configure private links you must be a Power BI administrator, and have permissions in Azure to create and configure resources such as Virtual Machines (VMs) and Virtual Networks (V-Net). 
 
@@ -85,9 +113,9 @@ The next step is to create a virtual network and subnet. Replace the sample para
 | ```<resource-group-name>```	| myResourceGroup |
 | ```<virtual-network-name>```	| myVirtualNetwork |
 | ```<region-name>```	| Central US  |
-| ```<IPv4-address-space>```	| 10.1.0.0/16 |
+| ```<IPv4-address-space>```	| 10.5.0.0/16 |
 | ```<subnet-name>```	| mySubnet |
-| ```<subnet-address-range>```	| 10.1.0.0/24 |
+| ```<subnet-address-range>```	| 10.5.0.0/24 |
 
 1. On the upper-left side of the screen, select **Create a resource > Networking > Virtual network** or search for **Virtual network** in the search box.
 2. In **Create virtual network** enter or select the following information in the **Basics** tab:
@@ -133,7 +161,6 @@ Once you've completed these steps, you can create a virtual machine (VM), as des
 
 ## Create a virtual machine (VM)
 
-
 The next step is to create virtual network, and the subnet to host the virtual machine (VM).
 
 1. On the upper-left side of the screen in your Azure portal, select **Create a resource > Compute > Virtual Machine**.
@@ -167,8 +194,8 @@ The next step is to create virtual network, and the subnet to host the virtual m
     |Settings |	Value |
     |-------------------|---------|
     |Virtual network|	Leave the default **MyVirtualNetwork**|
-    |Address space|	Leave the default **10.1.0.0/24**|
-    |Subnet	|Leave the default **mySubnet (10.1.0.0/24)**|
+    |Address space|	Leave the default **10.5.0.0/24**|
+    |Subnet	|Leave the default **mySubnet (10.5.0.0/24)**|
     |Public IP|	Leave the default **(new) myVm-ip**|
     |Public inbound ports|	Select **Allow selected **|
     |Select inbound ports|	Select **RDP**|
@@ -256,7 +283,7 @@ The next step is to access Power BI privately, from the virtual machine you crea
     
     Non-authoritative answer:
     Name:    52d40f65ad6d48c3906f1ccf598612d4-api.privatelink.analysis.windows.net
-    Address:  10.1.0.4
+    Address:  10.5.0.4
     ```
 
 4. Open the browser and go to app.powerbi.com to access Power BI privately.
@@ -273,10 +300,10 @@ And that's it - after following these steps, Power BI for your organizations is 
 
 There are a few considerations to keep in mind while working with private links in Power BI:
 
-* Any use of external images or themes are not available when using a private link environment, and may affect custom visuals
-* Export services, such as Export to PDF, exporting to Excel from a report, and other export services do not work when using a private link environment
-* SQL Server Reporting Services reports, commonly known as RDL files (*.rdl format files) do not render in private link environments
-* If Internet access is disabled, and if the dataset or dataflow is connecting to a Power BI dataset or dataflow as a data source, the connection will fail
+* Any use of external images or themes are not available when using a private link environment.
+* If Internet access is disabled, and if the dataset or dataflow is connecting to a Power BI dataset or dataflow as a data source, the connection will fail.
+* Usage metrics do *not* work when Private Links is enabled.
+* Publish to Web is not supported (and grayed out) when you enable **Block Public Internet access** in Power BI.
 
 
 ## Next steps

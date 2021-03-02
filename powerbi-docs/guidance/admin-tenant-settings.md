@@ -1,14 +1,13 @@
 ---
 title: Tenant settings guidance
 description: Guidance for Power BI tenant settings.
-author: peter-myers
+author: paulinbar
+ms.author: painbar
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/10/2020
-ms.author: v-pemyer
 ---
 
 # Tenant settings guidance
@@ -35,7 +34,7 @@ If you do so, we recommend you then enable the **Publish "Get Help" information*
 These URLs will become available as links in the Power BI help menu.
 
 > [!NOTE]
-> Supplying the **Licensing requests** URL prevents individual users from buying a Power BI Pro license. Instead, they'll be directed to your internal site with information on how to acquire a license. The setting **Allow users to try Power BI Pro** is enabled by default and separates the purchase and trial experiences. To learn more about how these settings work together, see [Allow users to try Power BI Pro](../admin/service-admin-portal.md#allow-users-to-try-power-bi-pro).
+> Supplying the **Licensing requests** URL prevents individual users from buying a Power BI Pro license. Instead, they'll be directed to your internal site with information on how to acquire a license. The setting **Allow users to try Power BI Pro** is enabled by default and separates the purchase and trial experiences. To learn more about how these settings work together, see [Allow users to try Power BI Pro](../admin/service-admin-portal.md#allow-users-to-try-power-bi-paid-features).
 >
 >
 

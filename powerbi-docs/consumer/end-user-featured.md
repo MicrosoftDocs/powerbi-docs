@@ -2,19 +2,15 @@
 title: Select which dashboard to display when you open Power BI service
 description: Documentation on how to create a Featured dashboard in the Power BI service
 author: mihart
-ms.reviewer: mihart
-
-ms.service: powerbi
-ms.subservice: powerbi-consumer
-ms.topic: how-to
-ms.date: 09/03/2020
 ms.author: mihart
-
+ms.reviewer: mihart
+ms.service: powerbi
+ms.subservice: pbi-explore
+ms.topic: how-to
+ms.date: 12/03/2020
 LocalizationGroup: Dashboards
 ---
 # Featured dashboards in the Power BI service
-
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Many of us have one dashboard that we visit more than any others. It might be the dashboard we use to run our business. Or, it might be a dashboard that contains an aggregation of tiles from many different dashboards and reports.
 

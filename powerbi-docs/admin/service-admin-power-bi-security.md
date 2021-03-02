@@ -34,7 +34,7 @@ The **Back-End** cluster is how authenticated clients interact with the Power BI
 
 ## Data Storage Security
 
-Power BI uses two primary repositories for storing and managing data: data that is uploaded from users is typically sent to **Azure BLOB** storage, and all metadata as well as artifacts for the system itself are stored in **Azure SQL Database**.
+Power BI uses two primary repositories for storing and managing data: data that is uploaded from users is typically sent to **Azure Blob Storage**, and all metadata as well as artifacts for the system itself are stored in **Azure SQL Database**.
 
 The dotted line in the **Back-End** cluster image, above, clarifies the boundary between the only two components that are accessible by users (left of the dotted line), and roles that are only accessible by the system. When an authenticated user connects to the Power BI Service, the connection and any request by the client is accepted and managed by the **Gateway Role** (eventually to be handled by **Azure API Management**), which then interacts on the user’s behalf with the rest of the Power BI Service. For example, when a client attempts to view a dashboard, the **Gateway Role** accepts that request then separately sends a request to the **Presentation Role** to retrieve the data needed by the browser to render the dashboard.
 
@@ -48,7 +48,7 @@ Platform security for Power BI also includes multi-tenant environment security, 
 
 ## Data and Service Security
 
-For more information, please visit the [Microsoft Trust Center](https://www.microsoft.com/trustcenter).
+For more information, please visit the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview).
 
 As described earlier in this article, a user’s Power BI login is used by on-premises Active Directory servers to map to a UPN for credentials. However, it’s **important** to note that users are responsible for the data they share: if a user connects to data sources using their credentials, then shares a report (or dashboard, or dataset) based on that data, users with whom the dashboard is shared are not authenticated against the original data source, and will be granted access to the report.
 

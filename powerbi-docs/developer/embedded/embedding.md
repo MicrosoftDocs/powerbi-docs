@@ -1,6 +1,6 @@
 ---
-title: Embedded analytics with Power BI
-description: Power BI offers APIs to use embedded analytics for your dashboards and reports into applications. Learn more about embedding with Power BI both in a PaaS environment and a SaaS environment using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
+title: Embedded analytics with Power BI embedded analytics for better embedded BI insights
+description: Power BI offers APIs to embed Power BI embedded analytics dashboards and reports into applications. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -26,8 +26,8 @@ You can go through the [Embedding setup tool](https://aka.ms/embedsetup) to quic
 
 Choose the solution that is right for you:
 
-* [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service. To do this, implement the [Embed for your organization](https://aka.ms/embedsetup/UserOwnsData) solution.
-* [Embedding for your customers](embedding.md#embedding-for-your-customers) allows you to embed dashboards and reports to users who don't have a Power BI account. To do this, implement the [Embed for your customers](https://aka.ms/embedsetup/AppOwnsData) solution.
+* [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service. To do this, in the [Embedding setup tool](https://app.powerbi.com/embedsetup), implement the *Embed for your organization* solution.
+* [Embedding for your customers](embedding.md#embedding-for-your-customers) allows you to embed dashboards and reports to users who don't have a Power BI account. To do this, in the [Embedding setup tool](https://app.powerbi.com/embedsetup), implement the *Embed for your customers* solution.
 
 ![PBIE sample](media/embedding/what-can-you-do-02.png)
 
@@ -54,7 +54,7 @@ To embed for your organization, see [Tutorial: Embed Power BI content into an ap
 
 Self-service capabilities, such as edit, save, and more, are available through the [JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript) when embedding for Power BI users.
 
-You can go through the [Embedding setup tool](https://aka.ms/embedsetup/UserOwnsData) to get started and download a sample application that walks you through integrating a report for your organization.
+You can go through the [Embedding setup tool](https://app.powerbi.com/embedsetup) to get started and download a sample application that walks you through integrating a report for your organization.
 
 ## Embedding for your customers
 
@@ -77,9 +77,9 @@ The Power BI Pro account acts as your application's master account (think of it 
 Developers using Power BI Embedded can spend time focused on building their application's core functionality rather than spending time developing visuals and analytics. They can rapidly meet customer report and dashboard demands and embed easily with fully documented APIs and SDKs. By enabling easy-to-navigate data exploration in apps, ISVs allow customers to make quick, data-driven decisions in context from any device.
 
 > [!IMPORTANT]
-> While embedding requires the Power BI service, your customers do not need to have a Power BI account to view your application's embedded content. 
+> While embedding requires the Power BI service, your customers do not need to have a Power BI account to view your application's embedded content.
 
-When you're ready to move to production, your workspace must be assigned to a dedicated capacity. Power BI Embedded in Microsoft Azure, offers [dedicated capacities](azure-pbie-create-capacity.md) to use with your applications.
+When you're ready to move to production, your workspace must be assigned to a capacity. [Create a Power BI Embedded capacity](azure-pbie-create-capacity.md) in Microsoft Azure, to use with your applications.
 
 For embedding details, see [How to embed Power BI content](embed-sample-for-customers.md).
 
