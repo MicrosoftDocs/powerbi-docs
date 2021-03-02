@@ -51,11 +51,6 @@ To select an Azure subscription to work with Autoscale, take the following steps
  
 Okay, you've selected the **Subscription** in the Azure portal that you'll use for Autoscale, and created a **Resource group** for that subscription. The next step is to enable Autoscale in the Power BI Admin portal, and link it to the resource group you just created.
 
-[Considerations for preview release](#considerations-for-preview-release)
-
-[Considerations for preview release](service-premium-auto-scale.md#considerations-for-preview-release)
-
-
 ### Considerations for preview release
 
 When Autoscale is launched in preview, a window to enable customers to become accustomed to the usage levels and CPU core utilization is being provided. During the initial window, charges to the configured Azure subscription used for Autoscale will not be applied. That window is anticipated to be 30 days. The best way to become accustomed to the level of usage your organization is to sign up for utilization alert notifications in the Power BI Admin portal, and to monitor alerts for utilization levels.
