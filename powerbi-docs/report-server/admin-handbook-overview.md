@@ -40,7 +40,7 @@ Security and protection are important to every organization. You can learn about
 ## Next steps
 [Install Power BI Report Server](install-report-server.md)  
 [Find your report server product key](find-product-key.md)  
-[Install Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md)  
+[Install Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 

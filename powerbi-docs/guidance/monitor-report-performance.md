@@ -2,18 +2,18 @@
 title: Monitor report performance in Power BI
 description: Guidance on how to monitor report performance in Power BI.
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
-ms.date: 02/16/2020
+ms.date: 01/14/2021
 ---
 
 # Monitor report performance in Power BI
 
-Monitor report performance in Power BI Desktop by using the [Power BI Premium Metrics app](../admin/service-premium-metrics-app.md), learn where the bottlenecks are, and learn how you can improve report performance.
+Monitor report performance in Power BI Desktop using the [Performance Analyzer](../create-reports/desktop-performance-analyzer.md), and monitor performance of content deployed into your organization's Power BI Premium capacity with the help of the [Power BI Premium Metrics app](../admin/service-premium-metrics-app.md). Learn where the bottlenecks are, and learn how you can improve report performance.
 
 Monitoring performance is relevant in the following situations:
 

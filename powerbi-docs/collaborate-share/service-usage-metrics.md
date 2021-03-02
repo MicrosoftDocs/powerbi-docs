@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 12/15/2020
+ms.date: 01/26/2021
 LocalizationGroup: Dashboards
 ---
 
@@ -152,12 +152,16 @@ It's important to understand that differences can occur when comparing usage met
 
 * Usage metrics may sometimes undercount activities because of inconsistent network connections, ad blockers, or other issues that can disrupt sending the events from the client.
 * Certain types of views aren't included in usage metrics, as described earlier in this article.
-* Usage metrics may sometimes overcount activities, in situations where the client refreshes without the need for a request being sent back to the Power BI service.
+* Usage metrics may sometimes overcount activities, in situations where the client refreshes without the need for a request being sent back to the Power BI service. For example, switching report pages doesn't issue a request a report load to the server since the page definition is already in the browser.
 * Sharing is disabled for the usage metrics report. To give people read access to the report, you first need to give them access to the workspace.
 
 ### Discrepancies between REST APIs and usage metrics
 
-The Power BI [Reports REST APIs](https://docs.microsoft.com/rest/api/power-bi/reports) and [Admin REST APIs](https://docs.microsoft.com/rest/api/power-bi/admin) also use Power BI service data. For the reasons described in the previous section, report counts (the number of reports) from the APIs can differ from report counts in usage metrics. Report counts derived from the APIs are unaffected by client issues and should be considered accurate.
+The Power BI [Reports REST APIs](/rest/api/power-bi/reports) and [Admin REST APIs](/rest/api/power-bi/admin) also use Power BI service data. For the reasons described in the previous section, report counts (the number of reports) from the APIs can differ from report counts in usage metrics. Report counts derived from the APIs are unaffected by client issues and should be considered accurate. Also note that the admin APIs give you the "current state" of the Power BI deployment and only consider what exists at the time of the request. The classic usage metrics report has 90 days of data, and the "total count" there represents unique reports viewed over 90 days. If reports are deleted after they are viewed, they are not counted by the admin APIs but will be counted in the historical data feeding the usage report.
+
+### Classic Usage Metrics are not supported with Private Links 
+
+If your organization is using [Private Links](../admin/service-security-private-links.md), classic usage metrics reports will contain no data. There is currently a limitation when transferring client information over private links. 
 
 ### Other considerations
 

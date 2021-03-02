@@ -15,7 +15,7 @@ ms.date: 10/26/2020
 You can change data source connection strings of Power BI reports hosted in Power BI Report Server by using PowerShell to interact with the necessary APIs. 
 
 > [!IMPORTANT]
-> If you're using the latest version of Power BI Report Server, October 2020, see [Change data source connection strings in Power BI reports with PowerShell - Power BI Report Server](connect-data-source-apis.md).
+> If you're using the latest version of Power BI Report Server, see [Change data source connection strings in Power BI reports with PowerShell - Power BI Report Server](connect-data-source-apis.md).
 
 > [!NOTE]
 > Currently this functionality only works for DirectQuery. Support for import and data refresh is coming.
@@ -31,7 +31,7 @@ You can change data source connection strings of Power BI reports hosted in Powe
 2. Fetch the existing data source information for the Power BI file via the PowerShell commandlets:
 
     ```powershell
-    Get-RsRestItemDataSource -RsItem '/MyPbixReport'
+    $dataSources = Get-RsRestItemDataSource -RsItem '/MyPbixReport'
     ```
 
     To view information for the first data source contained in the Power BI report: 

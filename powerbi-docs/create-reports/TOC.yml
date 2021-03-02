@@ -59,14 +59,14 @@
         href: desktop-ribbon.md
       - name: "Work with Report view"
         href: desktop-report-view.md
-      - name: "Types of filters in reports"
-        href: power-bi-report-filter-types.md
       - name: "Filters and highlighting in reports"
         href: power-bi-reports-filters-and-highlighting.md
       - name: "High-density line sampling"
         href: desktop-high-density-sampling.md
       - name: "About accessibility"
         href: desktop-accessibility-overview.md     
+      - name: "Certificate revocation"
+        href: desktop-certificate-revocation.md     
       - name: Natural language Q&A
         items: 
         - name: "Q&A introduction"
@@ -85,6 +85,8 @@
       items: 
       - name: Report Builder in Power BI
         href: ../paginated-reports/report-builder-power-bi.md
+      - name: Report Builder change log
+        href: ../paginated-reports/paginated-reports-change-log.md
       - name: Sample Power BI paginated reports
         href: ../paginated-reports/paginated-reports-samples.md
       - name: Get around Report Design View
@@ -138,6 +140,26 @@
         href: desktop-tooltips.md        
       - name: "Export reports to PDF files"
         href: desktop-export-to-pdf.md             
+      - name: Filters and slicers in reports
+        items: 
+        - name: "Add a filter to a report"
+          href: power-bi-report-add-filter.md
+        - name: "Format filters in reports"
+          href: power-bi-report-filter.md
+        - name: "Types of filters in reports"
+          href: power-bi-report-filter-types.md
+        - name: "Slicers"
+          href: ../visuals/power-bi-visualization-slicers.md
+        - name: "Numeric range slicers"
+          href: desktop-slicer-numeric-range.md
+        - name: "Relative date slicers and filters"
+          href: ../visuals/desktop-slicer-filter-date-range.md
+        - name: "Relative time slicers and filters"
+          href: slicer-filter-relative-time.md
+        - name: "Create a slicer you can resize"
+          href: power-bi-slicer-filter-responsive.md
+        - name: "Add multiple fields to a slicer"
+          href: power-bi-slicer-hierarchy-multiple-fields.md
       - name: "Apply insights to explain fluctuations in visuals (preview)"
         href: desktop-insights.md
       - name: "Use insights to discover how distributions vary (preview)"
@@ -154,10 +176,6 @@
         href: desktop-bookmarks.md
       - name: "Work with report themes"
         href: desktop-report-themes.md
-      - name: "Work with filters in reports"
-        href: power-bi-report-filter.md
-      - name: "Add a filter to a report"
-        href: power-bi-report-add-filter.md
       - name: "Apply grouping and binning"
         href: desktop-grouping-and-binning.md
       - name: "Apply gridlines and snap-to-grid"
@@ -170,18 +188,6 @@
         href: desktop-add-custom-column.md
       - name: "Use inline hierarchy labels"
         href: desktop-inline-hierarchy-labels.md
-      - name: "Slicers"
-        href: ../visuals/power-bi-visualization-slicers.md
-      - name: "Numeric range slicers"
-        href: desktop-slicer-numeric-range.md
-      - name: "Relative date slicers and filters"
-        href: ../visuals/desktop-slicer-filter-date-range.md
-      - name: "Relative time slicers and filters"
-        href: slicer-filter-relative-time.md
-      - name: "Create a slicer you can resize"
-        href: power-bi-slicer-filter-responsive.md
-      - name: "Add multiple fields to a slicer"
-        href: power-bi-slicer-hierarchy-multiple-fields.md
       - name: "Restrict data access with row-level security"
         href: desktop-rls.md
       - name: "Customize tooltips"
@@ -244,7 +250,7 @@
         href: ../visuals/power-bi-report-visualizations.md
       - name: "Change visuals in reports"
         href: ../visuals/power-bi-report-change-visualization-type.md
-      - name: "Customize visual titles, backgrounds, and legends"
+      - name: "Customize visual titles, backgrounds, legends, and more"
         href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
       - name: "Show items with no data"
         href: desktop-show-items-no-data.md
@@ -308,6 +314,10 @@
         href: ../visuals/power-bi-visualization-scatter.md
       - name: "Use high-density scatter charts"
         href: ../visuals/desktop-high-density-scatter-charts.md
+      - name: "Create small multiples (preview)"
+        href: ../visuals/power-bi-visualization-small-multiples.md
+      - name: "Interact with small multiples (preview)"
+        href: ../visuals/power-bi-visualization-small-multiples-interact.md
       - name: "Shape Map visuals (preview)"
         href: ../visuals/desktop-shape-map.md
       - name: "Smart narratives"

@@ -7,9 +7,10 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 12/09/2020
+ms.date: 01/25/2021
 # Customer intent: As a Power BI customer or potential customer, I'd like to know what the differences are between the previous look of the Power BI service and the new look
 LocalizationGroup: Get started
+ROBOTS: NOINDEX
 ---
 # The 'new look' of the Power BI service
 
@@ -65,5 +66,4 @@ Dashboards also have a simplified action bar. It's just like reports and apps, f
 ## Next steps
 
 - [Use the updated ribbon in Power BI Desktop](../create-reports/desktop-ribbon.md)
-- [Opt in to the workspace 'new look'](../collaborate-share/service-workspaces-new-look.md)
 - [Power BI for consumers](end-user-consumer.md)

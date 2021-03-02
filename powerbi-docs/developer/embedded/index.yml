@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 
-title: Power BI embedded analytics documentation for enhanced embedded BI insights
+title: Power BI embedded analytics documentation
 summary: Learn to use the two Power BI embedded analytics solutions, Power BI Embedded, and embedding using Power BI Premium.
 
 metadata:
@@ -20,6 +20,7 @@ metadata:
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
+
   # Card (optional)
   - title: Get started
     linkLists:
@@ -31,7 +32,23 @@ landingContent:
             url: azure-pbie-what-is-power-bi-embedded.md
           - text: "Frequently asked questions"
             url: embedded-faq.md
+      - linkListType: whats-new
+        links:
+          - text: "Power BI Embedded Generation 2 (preview)"
+            url: power-bi-embedded-generation-2.md
+      - linkListType: reference
+        links:
+          - text: "Power BI Developer in a Day course"
+            url: ../../learning-catalog/developer-online-course.md
 
+  # Card (optional)
+  - title: Client APIs
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: "Power BI embedded analytics Client APIs"
+            url: /javascript/api/overview/powerbi/
+            
   # Card
   - title: Embed reports or dashboards
     linkLists:
@@ -75,6 +92,10 @@ landingContent:
   # Card (optional)
   - title: References and resources
     linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Playground
+            url: https://go.microsoft.com/fwlink/?linkid=848279
       - linkListType: reference
         links:
           - text: "Power BI REST APIs"
@@ -85,7 +106,5 @@ landingContent:
             url: https://powerbi.microsoft.com/developers/
           - text: "Power BI libraries"
             url: https://www.nuget.org/profiles/powerbi
-          - text: Playground
-            url: https://microsoft.github.io/PowerBI-JavaScript/demo/v2-demo/index.html
-          - text: "JavaScript wiki"
-            url: https://github.com/Microsoft/powerbi-javascript/wiki
+          - text: "Power BI embedded analytics Client APIs"
+            url: /javascript/api/overview/powerbi/

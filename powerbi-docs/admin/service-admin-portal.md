@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 01/05/2020
+ms.date: 02/03/2021
 ms.custom: seodec18
 LocalizationGroup: Administration
 ---
@@ -169,12 +169,6 @@ Many of the settings can have one of three states:
     ![Enable except setting](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
 
 The next few sections provide an overview of the different types of tenant settings.
-
-## Tenant-wide new look settings
-
-When the **New look** option is disabled, users in this organization can toggle on and off the new look of Power BI. When you enable the **New look** option, *all* users in this organization see the modern controls of the new look of Power BI all the time. They can no longer toggle off the new look. The New look option is enabled by default.
-
-:::image type="content" source="media/service-admin-portal/admin-portal-new-look-disable.png" alt-text="Screenshot of the Disable New Look option in the admin portal.":::
 
 ## Help and support settings
 
@@ -413,11 +407,9 @@ Users in the organization can create email subscriptions. Learn more about [subs
 
 ### Featured content
 
-Allow some or all report authors in your organization to feature their content on the Featured section of Power BI Home. New users will see featured content at the top of their Power BI Home page. Featured content moves down the Home page as users add **Favorites**, **frequents**, and **Recents**. 
+By default, anyone with the Admin, Member, or Contributor role in a workspace in your organization can feature content on Power BI Home. New users will see that content in the the Featured section at the top of their Power BI Home page. Featured content moves down the Home page as users add **Favorites & frequents**, and **Recents**. See [Feature content on colleagues' Power BI Home page](../collaborate-share/service-featured-content.md) for more information.
 
-We recommend starting with a small set of promoters first. Allowing the entire organization to feature content on Home may make it difficult to keep track of all the promoted content. 
-
-After you enable featured content, you can also manage it in the Admin portal. See [Manage featured content](#manage-featured-content) in this article to read about controlling featured content in your domain.
+You can turn off the ability to feature content, and manage it in the Admin portal. See [Manage featured content](#manage-featured-content) in this article to read about controlling featured content in your domain.
 
 ### Allow connections to featured tables
 
@@ -637,6 +629,10 @@ The following table gives more details about the status of the upgrade.
 | **In Progress** | The workspace is actively being upgraded. The upgrade can't be canceled. |
 | **Completed** | The workspace was upgraded in the last 30 days by a Power BI admin. A workspace admin can go back to classic option if desired during the 30-day period after the workspace was upgraded. |
 
+> [!NOTE]
+> There are a few limitations to upgrading workspaces, such as those listed here. Learn more about [upgrading workspaces](../collaborate-share/service-upgrade-workspaces.md) before attempting an upgrade.
+> - If the admin for a workspace hasn't accessed Power BI recently (in the last 14 days), the upgrade may fail. Have the workspace admin access Power BI or change to a different admin before trying to upgrade.
+> - If the group associated with the workspace doesn't have a group owner in Azure Active Directory or Microsoft 365, the upgrade may fail. Assign a group owner in Azure Active Directory or Microsoft 365 before upgrading.
 
 ## Custom branding
 

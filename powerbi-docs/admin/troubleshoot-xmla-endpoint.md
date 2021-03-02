@@ -2,12 +2,12 @@
 title: Troubleshoot XMLA endpoint connectivity in Power BI
 description: Describes how to troubleshoot connectivity through the XMLA endpoint in Power BI Premium.
 author: Minewiskan
-ms.author: kfollis
-ms.reviewer: kayu
+ms.author: owend
+ms.reviewer: owend
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 01/14/2021
+ms.date: 02/02/2021
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
 ---
@@ -139,7 +139,7 @@ Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tm
 
 ### Query execution
 
-When connected to a workspace in a [Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2-preview) capacity, SQL Server Management Studio may display the following error:
+When connected to a workspace in a [Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2-preview) or an [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) capacity, SQL Server Management Studio may display the following error:
 
 ```
 Executing the query ...
@@ -150,7 +150,7 @@ This occurs because client libraries installed with SSMS v18.7.1 do not support 
 
 ### Refresh operations
 
-When using SSMS v18.7.1 or lower to perform a long running (>1 min) refresh operation on a dataset in a Premium Gen2 capacity, SSMS may display an error like the following even though the refresh operation succeeds:
+When using SSMS v18.7.1 or lower to perform a long running (>1 min) refresh operation on a dataset in a Premium Gen2 or an [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) capacity, SSMS may display an error like the following even though the refresh operation succeeds:
 
 ```
 Executing the query ...
@@ -216,6 +216,10 @@ Unlike Azure Analysis Services, server name [aliases](/azure/analysis-services/a
 ## Dataset refresh through the XMLA endpoint
 
 Last refresh date and time is shown in a number of places in Power BI such as Refreshed columns in reports and lists, Dataset details, Dataset settings, and Dataset refresh history. Currently, refresh date and times shown in Power BI **do not** include refresh operations performed through the XMLA endpoint by using TMSL/TOM, SSMS, or third-party tools.
+
+## DISCOVER_M_EXPRESSIONS 
+
+The DMV DISCOVER_M_EXPRESSIONS data management view (DMV) is currently not supported in Power BI using the XMLA Endpoint. Applications can use the Tabular object model (TOM) to obtain M expressions used by the data model.
 
 ## See also
 

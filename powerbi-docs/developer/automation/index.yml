@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 
-title: Power BI automation documentation enabling better embedded BI insights in Power BI embedded analytics
+title: Power BI automation documentation
 summary: With Power BI automation you can perform management tasks on Power BI objects such as reports, datasets, and workspaces.
 
 metadata:
@@ -20,6 +20,7 @@ metadata:
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
+            
   # Card (optional)
   - title: Get started
     linkLists:
@@ -42,6 +43,22 @@ landingContent:
           - text: "Tutorial: Automate template app configuration"
             url: ../template-apps/template-apps-auto-install-tutorial.md
 
+  # Card (optional)
+  - title: Client APIs
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: "Power BI embedded analytics Client APIs"
+            url: /javascript/api/overview/powerbi/
+
+    # Card (optional)
+  - title: Embedded Gen2
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: "Power BI Embedded Generation 2 (preview)"
+            url: ../embedded/power-bi-embedded-generation-2.md         
+            
   # Card
   - title: Work with data
     linkLists:

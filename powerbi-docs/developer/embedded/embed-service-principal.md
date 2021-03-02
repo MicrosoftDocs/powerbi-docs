@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ""
-ms.date: 11/23/2020
+ms.date: 02/04/2021
 ---
 
 # Embed Power BI content with service principal and an application secret
@@ -238,7 +238,7 @@ Once your content is embedded, you're ready to [move to production](move-to-prod
 * Power BI admin rights are required to enable service principal in developer settings within the Power BI admin portal.
 * [Embed for your organization](embed-sample-for-your-organization.md) applications can't use service principal.
 * [Dataflows](../../transform-model/dataflows/dataflows-introduction-self-service.md) management is not supported.
-* Service principal currently does not support any admin APIs.
+* Service principal only supports some read-only admin APIs. To enable service principal support for read-only admin APIs, you have to enable the Power BI service admin settings in your tenant. For more information, see [Enable service principal authentication for read-only admin APIs](../../admin/read-only-apis-service-principal-authentication.md).
 * When using service principal with an [Azure Analysis Services](/azure/analysis-services/analysis-services-overview) data source, the service principal itself must have an Azure Analysis Services instance permissions. Using a security group that contains the service principal for this purpose, doesn't work.
 
 ## Next steps

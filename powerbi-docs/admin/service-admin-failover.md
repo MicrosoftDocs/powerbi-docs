@@ -19,6 +19,10 @@ This article explains how the Power BI service delivers high availability and pr
 
 Power BI is fully managed software as a service (SaaS).  Microsoft designs and operates it to be resilient to infrastructure failures so that users can always access their reports.  The service is supported by a [99.9% SLA](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
 
+Power BI uses **Azure Availability Zones** to protect Power BI reports, applications and data from datacenter failures, and is automatically applied and used for Power BI. Availability Zones are fault-isolated locations within an Azure region, providing three or more distinct and unique locations within an Azure region that have redundant power, cooling, and networking. Availability Zones allow Power BI customers to run mission-critical applications with higher availability and fault tolerance to datacenter failures. Availability Zones provide customers with the ability to withstand datacenter failures through redundancy and logical isolation of services. 
+
+For more information about **Availability Zones**, consult the following article, which goes into detail about [Regions and Availability Zones in Azure](/azure/availability-zones/az-overview).
+
 ## What is a Power BI failover?
 
 Power BI maintains multiple instances of each component in Azure datacenters (also known as regions) to guarantee business continuity. If there is an outage, or an issue that causes Power BI to be inaccessible or inoperable in a region, Power BI fails all its components in that region to a backup instance. The failover restores availability and operability to the Power BI service instance in a new region (usually within the same geographic location, as noted in the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview).

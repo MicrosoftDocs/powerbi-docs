@@ -7,6 +7,7 @@ ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
+ms.custom: has-adal-ref
 ms.date: 05/29/2019
 ---
 
@@ -83,7 +84,7 @@ Add this code to Program {...}.
            string resourceUri = "https://analysis.windows.net/powerbi/api";
 
            //OAuth2 authority Uri
-           string authorityUri = "https://login.microsoftonline.net/common/";
+           string authorityUri = "https://login.microsoftonline.com/common/";
 
            //Get access token:
            // To call a Power BI REST operation, create an instance of AuthenticationContext and call AcquireToken

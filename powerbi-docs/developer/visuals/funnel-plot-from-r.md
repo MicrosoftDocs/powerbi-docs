@@ -265,7 +265,7 @@ Since the resulting visual is PNG-based, it isn't responsive to mouse hover, can
 
 * You don't need to develop R-powered Visuals from scratch with code available on [GitHub](https://github.com/Microsoft?utf8=%E2%9C%93&q=PowerBI&type=&language=R). You can select the visual to use as a template and copy the code into a new project.
 
-   For example, try using the [spline custom visual](https://github.com/PowerBi-Projects/PowerBI-visuals-spline).
+   For example, try using the [spline custom visual](https://github.com/microsoft/PowerBI-visuals-spline).
 
 * Each R Visual applies the `unique` operator to its input table. To avoid identical rows being removed, consider adding an extra input field with a unique ID and ignore it in the R code.   
 

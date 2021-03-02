@@ -40,7 +40,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |pandas|1.0.1|https://pypi.org/project/pandas|
 |scikit-learn|0.23.0|https://pypi.org/project/scikit-learn|
 |scipy|1.4.1|https://pypi.org/project/scipy|
-|s  eaborn|0.10.1|https://pypi.org/project/seaborn|
+|seaborn|0.10.1|https://pypi.org/project/seaborn|
 |statsmodels|0.11.1|https://pypi.org/project/statsmodels|
 |xgboost|1.1.0|https://pypi.org/project/xgboost|
 

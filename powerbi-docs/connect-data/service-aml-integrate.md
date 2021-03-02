@@ -9,7 +9,7 @@ ms.topic: tutorial
 ms.author: samkemp
 author: samuel100
 ms.reviewer: sdgilley, maggies
-ms.date: 12/10/2020
+ms.date: 02/17/2021
 ---
 
 # Tutorial: Consume Azure Machine Learning models in Power BI
@@ -53,6 +53,10 @@ https://www4.stat.ncsu.edu/~boos/var.select/diabetes.tab.txt
 
 Select **OK**.
 
+In **Access Web content**, select **Anonymous** > **Connect**.
+
+:::image type="content" source="media/service-aml-integrate/anonymous-access-web-content.png" alt-text="Screenshot showing anonymous access for Web content.":::
+
 Select **Transform data** to open the **Power Query Editor** window.
 
 In the Home ribbon of the Power Query Editor, select the **Azure Machine Learning** button.
@@ -80,7 +84,9 @@ The data that the service returns is a **list**.
 > [!NOTE]
 > If you deployed a designer model, you see a **record**.
 
-To get the predictions, on the **Transform** ribbon select the **Expand column** button > **Expand to New Rows**.
+To get the predictions, select the double-headed arrow in the **AzureML.my-diabetes-model** column header > **Expand to New Rows**.
+
+:::image type="content" source="media/service-aml-integrate/expand-column.png" alt-text="Screenshot showing Expand column icon.":::
 
 After the expansion, you see the predictions in the AzureML.my-diabetes-model column.
 

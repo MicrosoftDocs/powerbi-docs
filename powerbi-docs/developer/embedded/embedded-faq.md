@@ -1,13 +1,13 @@
 ---
-title: Frequently asked questions about Power BI embedded analytics helping you to enable better embedded BI insights
-description: Browse a list of frequently asked questions and answers about Power BI embedded analytics which enhance customers embedded BI insights.
+title: Frequently asked questions about Power BI embedded analytics
+description: Browse a list of frequently asked questions and answers about Power BI embedded analytics
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/11/2020 
+ms.date: 01/14/2021 
 ---
 
 # Frequently asked questions about Power BI Embedded
@@ -37,6 +37,10 @@ Power BI Premium is capacity geared toward enterprises who want a complete BI so
 
 Power BI Embedded is for ISVs who want to embed visuals into their applications. Power BI Embedded helps your customers make decisions because Power BI Embedded is for application developers, customers of that application can consume content stored on Power BI Embedded capacity, including anyone inside or outside the organization. You can't share Power BI Embedded capacity content through one-click publish to Web or one-click publish to SharePoint.
 
+### What is Power BI Embedded Generation 2?
+
+Power BI Embedded recently released a new version, called **Embedded Gen2**. Embedded Gen2 will simplify the management of embedded capacities, and improve the Power BI Embedded experience. For more information, see [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md).
+
 ### What is the Microsoft recommendation for when a customer should buy Power BI Premium vs. Power BI Embedded?
 
 Microsoft recommends that enterprises buy Power BI Premium, an enterprise-grade, self-service cloud BI solution. We recommend ISVs buy Power BI Embedded for its cloud-powered embedded analytics components. However, a customer has no restriction on which product to buy.
@@ -65,7 +69,7 @@ Refer to the [Capacity and SKUs in Power BI embedded analytics](embedded-capacit
 
 * Downloading the [metric app](../../admin/service-admin-premium-monitor-capacity.md) in Power BI.
 
-* Using [Azure diagnostic logging](azure-pbie-diag-logs.md).
+* Using [Azure diagnostic logging](./monitor-power-bi-embedded.md).
 
 ### Can my capacity scale automatically to adjust to my app consumption?
 

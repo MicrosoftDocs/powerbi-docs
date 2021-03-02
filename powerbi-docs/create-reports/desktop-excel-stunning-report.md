@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 10/13/2020
+ms.date: 02/22/2021
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to stunning report in Power BI Desktop
@@ -114,13 +114,17 @@ Writing *measures* in the *DAX* formula language is super powerful for data mode
 
 1. Type this measure to generate a Calendar table of all dates between January 1, 2013, and December 31, 2014.  
 
-    `Calendar = CALENDAR(DATE(2013,01,01),Date(2014,12,31))` 
+    ```dax
+    Calendar = CALENDAR(DATE(2013,01,01),Date(2014,12,31))    
+    ```
 
 2. Select the check mark to commit.
 
      :::image type="content" source="media/desktop-excel-stunning-report/power-bi-dax-expression.png" alt-text="Screenshot of DAX expression.":::
 
-1. Now select **Model View** on the left. 
+1. Still in Data view, select your new Calendar table, and on the **Table tools** ribbon, select **Mark as date table**.
+2. In the **Date column** box, select the **Date** column. 
+3. Now select **Model View** on the left. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-model-view.png" alt-text="Screenshot of Model View icon.":::
 
@@ -151,7 +155,9 @@ Let’s build the final report, one visual at a time.
 Now, you create a line chart to see which month and year had the highest profit. 
 
 1. From the Fields pane, drag the **Profit** field to a blank area on the report canvas. By default, Power BI displays a column chart with one column, Profit. 
-1. Drag the **Date** field to the same visual. Power BI updates the column chart to show profit by the two years.
+1. Drag the **Date** field to the same visual. If you created a Calendar table in [Extra credit: Create a table in DAX](#extra-credit-write-a-measure-in-dax) earlier in this article, drag the **Date** field from your Calendar table instead. 
+
+    Power BI updates the column chart to show profit by the two years.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-year.png" alt-text="Screenshot of Profit column chart.":::
 
@@ -201,9 +207,23 @@ Create a bar chart to determine which companies and segments to invest in.
 
 ### Visual 5: Year slicer 
 
-Slicers are a valuable tool for filtering the visuals on a report page to a specific selection. In this case, we can create a slicer to narrow in on performance for each month and year.  
+Slicers are a valuable tool for filtering the visuals on a report page to a specific selection. In this case, we can create two different slicers to narrow in on performance for each month and year. One slicer uses the date field in the original table. The other uses the [date table you may have created for "extra credit"](#extra-credit-write-a-measure-in-dax) earlier in this tutorial.
 
-1. In the Fields pane, select the **Date** field and drag it to the blank area on the left of the canvas. 
+
+**Date slicer using the original table**
+
+1. In the Fields pane, select the **Date** field in the Financials table. Drag it to the blank area on the left of the canvas. 
+2. In the Visualizations pane, choose **Slicer**. 
+
+    Power BI automatically creates a numeric range slicer. 
+
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-numeric-range.png" alt-text="Screenshot of Date numeric range slicer.":::
+
+1. You can drag the ends to filter, or select the arrow in the upper-right corner and change it to a different type of slicer.
+
+**Date slicer using the DAX table**
+
+1. In the Fields pane, select the **Date** field in the Calendar table. Drag it to the blank area on the left of the canvas. 
 2. In the Visualizations pane, choose **Slicer**. 
 3. In the Fields section of the Visualizations pane, select the drop-down in **Fields**. Remove Quarter and Day so only Year and Month are left. 
 
@@ -213,7 +233,9 @@ Slicers are a valuable tool for filtering the visuals on a report page to a spec
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-hierarchy-date-slicer.png" alt-text="Screenshot of date hierarchy slicer.":::
 
-Now if your manager asks to see just 2013 data, you can use the slicer to switch between years, or specific months of each year. 
+    This is the slicer we'll use in the finished report.
+
+Now if your manager asks to see just 2013 data, you can use either slicer to select years, or specific months of each year.
 
 ### Extra credit: Format the report
 

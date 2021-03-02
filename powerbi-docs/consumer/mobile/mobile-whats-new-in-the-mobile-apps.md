@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/17/2020
+ms.date: 02/10/2021
 ---
 # What's new in the mobile apps for Power BI
 For related "What's New" information, see:
@@ -18,6 +18,17 @@ For related "What's New" information, see:
 
 >[!NOTE]
 >The Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## February 2021
+### Support for Power BI in split-screens (Android tablets)
+
+If your Android tablet has multi-window support, you can view and interact with your data side by side with another app using split-screen mode. [Learn more!](mobile-apps-split-screen.md)
+
+![Screenshot of the mobile app being used in split-sreen mode.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-split-screen.png)
+
+## January 2021
+### Workspace support with a Power BI free license
+Users with a Power BI free license can now view and access workspaces where they've been added as viewers directly from the workspaces list. This change is applicable for content that's hosted on a Power BI Premium capacity.
 
 ## December 2020
 ### We've added anomaly detection to the mobile apps
@@ -437,7 +448,7 @@ Your IT admin can now use an MDM tool to configure Power BI iOS mobile app acces
 
 #### Power BI for Mixed Reality app (Preview)
 
-The Power BI for Mixed Reality app is now in the Microsoft Store. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. See the new [Introducing Power BI on HoloLens](https://www.youtube.com/watch?v=J_X_nOFUBss) video for context, or read the article about the new [Power BI for Mixed Reality app](mobile-mixed-reality-app.md).
+The Power BI for Mixed Reality app is now in the Microsoft Store. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. See the new [Introducing Power BI on HoloLens](https://www.youtube.com/watch?v=J_X_nOFUBss) video for context, or read the article about the new [Power BI for Mixed Reality app](./mobile-hololens2-app.md).
 
 
 ### April 2018
@@ -455,7 +466,7 @@ We recently updated report filters and slicers, so they are automatically saved 
 
 #### Power BI for Mixed Reality app (Preview)
 
-In the latest move to bring data where you are, we've created the Power BI for Mixed Reality app. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. Read more about the new [Power BI for Mixed Reality app](mobile-mixed-reality-app.md).
+In the latest move to bring data where you are, we've created the Power BI for Mixed Reality app. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. Read more about the new [Power BI for Mixed Reality app](./mobile-hololens2-app.md).
 
 #### Share reports and dashboards externally
 
