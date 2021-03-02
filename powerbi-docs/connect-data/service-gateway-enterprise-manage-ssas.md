@@ -22,7 +22,7 @@ To learn more about how to set up a live connection to Analysis Services, [watch
 > If you have an Analysis Services data source, you need to install the gateway on a computer joined to the same forest/domain as your Analysis Services server.
 
 > [!NOTE]
-> The gateway only supports Windows authentification for Analysis Services.
+> The gateway only supports Windows authentication for Analysis Services.
 
 ## Add a data source
 
