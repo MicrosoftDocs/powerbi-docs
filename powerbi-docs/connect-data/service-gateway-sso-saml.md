@@ -369,9 +369,9 @@ When properly configured, the traces will report ```Found valid XML signature```
 
 You may run into HANA  traces that contain entries similar to the following:
 
-```SAMLAuthenticator.cpp(00886) : Assertion Subject NameID: johnny@contoso.com SAMLAuthenticator.cpp(00398) : Database user does not exist```
+```SAMLAuthenticator.cpp(00886) : Assertion Subject NameID: `johnny@contoso.com` SAMLAuthenticator.cpp(00398) : Database user does not exist```
 
-The error indicates that nameId johnny@contoso.com is found in the SAML assertions, but does not exist or is not mapped correctly in HANA Server.
+The error indicates that nameId `johnny@contoso.com` is found in the SAML assertions, but does not exist or is not mapped correctly in HANA Server.
 
 **Resolution:**
 
@@ -379,7 +379,7 @@ Go to the HANA database user and click on the *Configure* link below the checked
 
     :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-06.png" alt-text="Wrong user name":::
 
-As the error message describes, HANA was trying to find johnny@contoso.com but in the external identity is only johnny. These two values need to match, so to fix it, edit the *External Identity* to be johnny@contoso.com. Note these entries are case sensitive.
+As the error message describes, HANA was trying to find `johnny@contoso.com` but in the external identity is only johnny. These two values need to match, so to fix it, edit the *External Identity* to be johnny@contoso.com. Note these entries are case sensitive.
 
 
 ## Next steps

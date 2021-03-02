@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 02/22/2021
+ms.date: 03/02/2021
 LocalizationGroup: Gateways
 ---
 
@@ -144,7 +144,7 @@ If you experience credentials errors, errors in the logs or traces will expose e
 **Symptom 1**:
 In HANA authentication traces, you may see entries similar to the following:
 
-```[Authentication|manager.cpp:166] Kerberos: Using Service Principal Name johnny@on.microsoft.com@CONTOSO.COM with name type: GSS_KRB5_NT_PRINCIPAL_NAME [Authentication|methodgssinitiator.cpp:367] Got principal name: johnny@on.microsoft.com@CONTOSO.COM```
+```[Authentication|manager.cpp:166] Kerberos: Using Service Principal Name johnny@CONTOSO.COM with name type: GSS_KRB5_NT_PRINCIPAL_NAME [Authentication|methodgssinitiator.cpp:367] Got principal name: johnny@CONTOSO.COM```
 
 **Resolution**:
 Take the steps described in [set user-mapping configuration parameters on the gateway machine (if necessary)](service-gateway-sso-kerberos.md#set-user-mapping-configuration-parameters-on-the-gateway-machine-if-necessary), even if you already have the **Azure AD Connect** service configured.
