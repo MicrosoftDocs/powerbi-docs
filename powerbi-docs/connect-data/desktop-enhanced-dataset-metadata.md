@@ -22,6 +22,9 @@ The **enhanced dataset metadata** feature is strategic and foundational. Future 
 - [XMLA read/write](/power-platform-release-plan/2019wave2/business-intelligence/xmla-readwrite) for management of Power BI datasets
 - Migration of Analysis Services workloads to Power BI to benefit from next-generation features.
 
+## Upgrade
+Your reports will be automatically upgraded to the enhanced metadata format when you open them in the latest version of Power BI Desktop. If the report was saved with unapplied query changes, or there was an error during the auto-upgrade, then you will see a warning on the report canvas indicating that you still need to upgrade. Clicking "Upgrade report" will apply any pending changes and upgrade the data model to the new format. 
+
 ## Limitations
 Before enhanced metadata support, for SQL Server, Oracle, Teradata, and legacy HANA connections, Power BI Desktop added a native query to the data model. This query is used by Power BI Service data models. With enhanced metadata support, the Power BI service data model regenerates the native query at runtime. It doesn't use the query that Power BI Desktop created. In most cases, this retrieval resolves itself correctly, but some transformations won't work without reading underlying data. You may see some errors in reports that previously worked. For example, the error will say: 
 

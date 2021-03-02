@@ -34,7 +34,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Azure DevOps Server | Yes | Yes | No | Yes | Yes | No |
 | Azure HDInsight (HDFS) | Yes | Yes | No | No | No | No |
 | Azure HDInsight Spark | Yes | Yes | Yes | No | No | Yes |
-| Azure SQL Database | Yes | Yes | Yes | Yes | No | Yes |
+| Azure SQL Database | Yes | Yes | Yes | Yes | Yes | Yes |
 | Azure SQL Data Warehouse | Yes | Yes | Yes | Yes | No | Yes |
 | Azure Table Storage | Yes | Yes | No | Yes | No | Yes |
 | BI Connector | Yes | Yes | Yes | Yes | Yes | No |
@@ -79,7 +79,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | MarkLogic ODBC | Yes | Yes | Yes | Yes | Yes | No |
 | Microsoft Azure Consumption Insights | Yes | Yes | No | No | No | No |
 | Microsoft Exchange | Yes | Yes | No | Yes | No | No |
-| Microsoft Exchange Online | Yes | Yes | No | No | No | Yes |
+| Microsoft Exchange Online individual accounts| Yes | Yes | No | No | No | Yes |
 | Microsoft Graph Security | Yes | Yes | No | Yes | No | No |
 | Mixpanel | Yes | Yes | No | No | No | No |
 | MySQL | Yes | Yes | No | Yes | Yes | Yes |
@@ -121,7 +121,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | SweetIQ | Yes | Yes | No | No | No | No |
 | Sybase | Yes | Yes | No | Yes | Yes | Yes |
 | TeamDesk | Yes | Yes | No | Yes | No | No |
-| Tenforce | Yes | Yes | No | No | No | No |
+| TenForce | Yes | Yes | No | No | No | No |
 | Teradata | Yes | Yes | Yes | Yes | Yes | Yes |
 | Text/CSV | Yes | Yes | No | Yes | No <sup>4</sup> | Yes |
 | Twilio | Yes | Yes | No | No | No | No |

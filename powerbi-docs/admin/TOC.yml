@@ -38,6 +38,8 @@
       items:
       - name: Managing Premium capacities
         href: service-premium-capacity-manage.md
+      - name: Using Autoscale with Power BI Premium
+        href: service-premium-auto-scale.md        
       - name: Optimizing Premium capacities
         href: service-premium-capacity-optimize.md
       - name: Premium capacity scenarios

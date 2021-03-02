@@ -21,7 +21,7 @@ Power BI is fully managed software as a service (SaaS).  Microsoft designs and o
 
 Power BI uses **Azure Availability Zones** to protect Power BI reports, applications and data from datacenter failures, and is automatically applied and used for Power BI. Availability Zones are fault-isolated locations within an Azure region, providing three or more distinct and unique locations within an Azure region that have redundant power, cooling, and networking. Availability Zones allow Power BI customers to run mission-critical applications with higher availability and fault tolerance to datacenter failures. Availability Zones provide customers with the ability to withstand datacenter failures through redundancy and logical isolation of services. 
 
-For more information about **Availability Zones**, consult the following article, which goes into detail about [Regions and Availability Zones in Azure](https://docs.microsoft.com/azure/availability-zones/az-overview).
+For more information about **Availability Zones**, consult the following article, which goes into detail about [Regions and Availability Zones in Azure](/azure/availability-zones/az-overview).
 
 ## What is a Power BI failover?
 
