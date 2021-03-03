@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 02/23/2021
+ms.date: 02/26/2021
 LocalizationGroup: Get started
 ---
 # What's new in Power BI Desktop?
 
-## December 2020 Update (2.88.321.0)
+## February 2021 Update (2.90.303.0)
 
 Our February Power BI Desktop updates are better than a heart-shaped box of chocolates. 
 
