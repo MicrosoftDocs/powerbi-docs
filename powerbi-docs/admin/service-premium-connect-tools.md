@@ -152,12 +152,15 @@ Other users who have [Build permission](../connect-data/service-datasets-build-p
 
 With the XMLA endpoint, roles can be defined for a dataset, role membership can be defined for Azure Active Directory (AAD) users, and row-level security (RLS) filters can be defined. Model roles in Power BI are used only for RLS. Use the Power BI security model to control permissions beyond RLS.
 
-For tabular model projects being authored in Visual Studio, roles can be defined by using Role Manager in the model designer. For datasets in Power BI, roles can be defined by using SSMS to create role objects and define role properties. In most cases, however, role object definitions can be scripted by using TMSL to create or modify the [Roles object](/analysis-services/tmsl/roles-object-tmsl?view=power-bi-premium-current&preserve-view=true). TMSL scripts can be executed in SSMS or with the [Invoke-ASCmd](/powershell/module/sqlserver/invoke-ascmd?view=sqlserver-ps&preserve-view=true) PowerShell cmdlet.
+For tabular model projects authored in Visual Studio, roles can be defined by using Role Manager in the model designer. For datasets in Power BI, roles can be defined by using SSMS to create role objects and define role properties. In most cases, however, role object definitions can be scripted by using TMSL to create or modify the [Roles object](/analysis-services/tmsl/roles-object-tmsl?view=power-bi-premium-current&preserve-view=true). TMSL scripts can be executed in SSMS or with the [Invoke-ASCmd](/powershell/module/sqlserver/invoke-ascmd?view=sqlserver-ps&preserve-view=true) PowerShell cmdlet.
 
 The following limitations apply when working with dataset roles through the XMLA endpoint:
 
-- The only permission for a *role* that can be set for Power BI datasets is the Read permission. Other permissions are granted using the Power BI security model.
+- The only permission for a *role* that can be set for Power BI datasets is Read permission. Other permissions are granted using the Power BI security model.
+- Service Principals, which require workspace Member or Admin permissions cannot be added to roles.
 - Build permission for a dataset is required for read access through the XMLA endpoint, regardless of the existence of dataset roles.
+- The “Roles=” connection string property can be used to test downgrading role members with Write permissions to Read permissions. The member account must still be a member of the relevant RLS role. This is different than using Impersonation with SQL Server Analysis Services or Azure Analysis Services where if the account is a server admin, the RLS role membership is assumed. For Power BI Premium workspaces, since there is no server admin, the account must belong to a role in order for RLS to be applied.
+- Object-level security (OLS) rules are currently not supported in Power BI.
 
 To learn more, see [Roles in tabular models](/analysis-services/tabular-models/roles-ssas-tabular).
 

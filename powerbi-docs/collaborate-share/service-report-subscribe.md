@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/13/2021
+ms.date: 03/02/2021
 
 LocalizationGroup: Common tasks
 ---
@@ -18,7 +18,8 @@ You can subscribe yourself and your colleagues to the report pages, dashboards, 
 
 - Decide how often you want to receive the emails: daily, weekly, hourly, monthly, or once a day after the initial data refresh.
 - Choose the time you want to receive the email, if you choose daily, weekly, hourly, or monthly.
-- Set up 24 different subscriptions per Power BI report or dashboard.  There is no limit to the number of subscriptions you can set up for paginated reports.
+- Set up to 24 different subscriptions per Power BI report or dashboard.  
+- Set up an unlimited number of subscriptions per paginated report.
 - Have a mail sent with an image of the report and link to the report in the service.  On mobile devices with Power BI apps installed, selecting this link launches the Power BI app, instead of opening the report or dashboard in the Power BI web site.
 - Include an attachment of the full report.
 - Send email to users outside your tenant, if your Power BI content is hosted in a Premium capacity.  Administrators can control access to who can send email subscriptions to external users by leveraging the existing external sharing control settings in the Power BI admin center.
