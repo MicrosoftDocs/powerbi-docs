@@ -63,7 +63,7 @@ You can sort by any column included in the visual; we could have easily selected
 ![Sort by SalesQuantity](media/desktop-sort-by-column/sortbycolumn_6.png)
 
 ## Sort using the Sort by Column button
-There's another way to sort your data, by using the **Sort by Column** button in the **Modeling** ribbon.
+There's another way to sort your data, by using the **Sort by Column** button in the **Column tools** tab.
 
 ![Sort by Column button](media/desktop-sort-by-column/sortbycolumn_8.png)
 
