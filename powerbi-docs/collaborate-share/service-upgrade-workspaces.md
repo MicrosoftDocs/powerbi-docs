@@ -3,11 +3,11 @@ title: Upgrade classic workspaces to the new workspaces
 description: Learn about upgrading a classic workspace to the new workspace experience. You can upgrade any workspace, but you may need to be aware of and plan for some changes.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: lukaszp
+ms.reviewer: duaskins
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 09/30/2020
+ms.date: 02/24/2021
 LocalizationGroup: Share your work
 ---
 
@@ -209,6 +209,8 @@ There are several known issues that you may encounter after upgrading:
 - You may see a "Failure to load model" warning dialog. This message is shown erroneously and can be ignored. 
 - Some workspace names are different than before upgrade. In that case, the workspace name has either reverted to a previous name for the workspace or the workspace name become blank. To resolve this issue, rename the workspace to the desired name.
 - In a workspace that had an installed content pack, you may see additional dashboards that weren't visible before the upgrade. In this case, a content pack may not have been updated recently. You can safely remove these dashboards.
+- If the admin for a workspace hasn't accessed Power BI recently (in the last 14 days), the upgrade may fail. Have the workspace admin access Power BI or change to a different admin before trying to upgrade.
+- If the group associated with the workspace doesn't have a group owner in Azure Active Directory or Microsoft 365, the upgrade may fail. Assign a group owner in Azure Active Directory or Microsoft 365 before upgrading.
 
 ## Next steps
 

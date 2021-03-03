@@ -629,6 +629,10 @@ The following table gives more details about the status of the upgrade.
 | **In Progress** | The workspace is actively being upgraded. The upgrade can't be canceled. |
 | **Completed** | The workspace was upgraded in the last 30 days by a Power BI admin. A workspace admin can go back to classic option if desired during the 30-day period after the workspace was upgraded. |
 
+> [!NOTE]
+> There are a few limitations to upgrading workspaces, such as those listed here. Learn more about [upgrading workspaces](../collaborate-share/service-upgrade-workspaces.md) before attempting an upgrade.
+> - If the admin for a workspace hasn't accessed Power BI recently (in the last 14 days), the upgrade may fail. Have the workspace admin access Power BI or change to a different admin before trying to upgrade.
+> - If the group associated with the workspace doesn't have a group owner in Azure Active Directory or Microsoft 365, the upgrade may fail. Assign a group owner in Azure Active Directory or Microsoft 365 before upgrading.
 
 ## Custom branding
 

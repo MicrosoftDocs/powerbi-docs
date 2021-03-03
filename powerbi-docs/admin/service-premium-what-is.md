@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 02/01/2021
+ms.date: 03/03/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
 ---
@@ -50,7 +50,7 @@ Premium Gen2 provides the following updates or improved experiences:
 
 * **Improved metrics** with clear and normalized capacity utilization data, that's dependent only on the complexity of analytics operations the capacity performs, and not on its size, the level of load on the system while performing analytics, or other factors. With the improved metrics, utilization analysis, budget planning, chargebacks, and the need to upgrade are clearly visible with built-in reporting. Improved metrics will be made available later in the preview period. Customers seeking access to utilization metrics for past 7 days can do so by contacting customer support. 
 
-* **Autoscale** allows for *automatically adding* one v-core at a time for 24-hour periods when the load on the capacity exceeds its limits, preventing slowdowns caused by overload. V-cores are automatically removed when idle time is detected. Additional v-cores are charged to your Azure subscription on a pay-as-you-go basis. Autoscale will be made available during the course of the preview period. 
+* **Autoscale** allows for *automatically adding* one v-core at a time for 24-hour periods when the load on the capacity exceeds its limits, preventing slowdowns caused by overload. V-cores are automatically removed when idle time is detected. Additional v-cores are charged to your Azure subscription on a pay-as-you-go basis. See [using Autoscale with Power BI Premium](service-premium-auto-scale.md) for steps on how to configure and use **Autoscale**.
 
 * **Reduced management overhead** with proactive and configurable admin notifications about capacity utilization level and load increasing.
 
@@ -67,6 +67,8 @@ Enable Premium Gen2 to take advantage of its updates. To enable Premium Gen2, ta
 The following image shows how to enable Premium Gen2. 
 
 ![Enabling Premium Generation 2](media/service-premium-what-is/enable-premium-gen2.gif#lightbox) 
+
+You can also [configure and use Autoscale with Power BI Premium](service-premium-auto-scale.md) to ensure capacity and performance for your Premium users.
 
 ### Known limitations in Premium Gen2
 
@@ -147,7 +149,7 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 >[!NOTE]
 >Using a single larger SKU (e.g. one P2 SKU) can be preferable to combining smaller SKUs (e.g. two P1 SKUs). For example, you can use larger models and achieve better parallelism with the P2.
 
-#### Updates for Premium Gen2 (Preview)
+#### Capacity node updates for Premium Gen2 (Preview)
 
 With **Premium Gen2** and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md), the amount of memory available on each node size is set to the limit of memory footprint of a single artifact, and not to the cumulative consumption of memory. For example, in Premium Gen2 P1 capacity, only a single dataset size is limited to 25 GB, in comparison to the original Premium, where the total memory footprint of the datasets being handled at the same time was limited to 25 GB.
 
@@ -183,7 +185,7 @@ Incremental refresh performs partition refresh instead of a full model refresh, 
 
 Refreshes, like queries, require the model be loaded into memory. If there is insufficient memory, the Power BI service will attempt to evict inactive models, and if this isn't possible (as all models are active), the refresh job is queued. Refreshes are typically CPU-intensive, even more so than queries. For this reason, a limit on the number of concurrent refreshes, calculated as the ceiling of 1.5 x the number of backend v-cores, is imposed. If there are too many concurrent refreshes, the scheduled refresh is queued until a refresh slot is available, resulting in the operation taking longer to complete. On-demand refreshes such as those triggered by a user request or an API call will retry three times \[[1](#endnote-1)\]. If there still aren't enough resources, the refresh will then fail.
 
-#### Updates for Premium Gen2 (Preview)
+#### Refresh updates for Premium Gen2 (Preview)
 
 Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) don't require cumulative memory limits, and therefore concurrent dataset refreshes don't contribute to resource constraints. There is no limit on the number of refreshes running per v-core. However, the refresh of individual datasets continues to be governed by existing capacity memory and CPU limits. You can schedule and run as many refreshes as required at any given time, and the Power BI service will run those refreshes at the time scheduled as a best effort.
 
@@ -235,7 +237,11 @@ From the app's dashboard, you can click a metric cell to open an in-depth report
 To learn more about monitoring capacities, see [Monitoring in the Power BI Admin portal](service-admin-premium-monitor-portal.md) and [Monitoring with the Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capacity.md).
 
 #### Updates for Premium Gen2 (Preview)
-**Premium Gen2** capacities don't use the Metrics app, they use the Capacity Utilization App, which will be made available during the preview. Customers wanting to review their utilization can receive a copy of their utilization report for the past 7 days by requesting one from customer support. The report will be supplied within 72 hours of the request. The Capacity Utilization App will be launched from your capacity management page in the **Admin portal** for each capacity, and will allow anlayis of 30 days of data and more.
+**Premium Gen2** capacities don't use the Metrics app, they use the Capacity Utilization App, which will be made available during the preview. 
+
+You can download and install the metrics app for Premium Gen2 (Preview) using the [following link](https://aka.ms/GenutilizationInstall).
+
+Customers wanting to review their utilization can receive a copy of their utilization report for the past 7 days by requesting one from customer support. The report will be supplied within 72 hours of the request. The Capacity Utilization App will be launched from your capacity management page in the **Admin portal** for each capacity, and will allow anlayis of 30 days of data and more.
 
 ### Optimizing capacities
 
