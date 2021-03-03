@@ -379,7 +379,7 @@ Go to the HANA database user and click on the *Configure* link below the checked
 
     :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-06.png" alt-text="Wrong user name":::
 
-As the error message describes, HANA was trying to find `johnny@contoso.com` but in the external identity is only johnny. These two values need to match, so to fix it, edit the *External Identity* to be johnny@contoso.com. Note these entries are case sensitive.
+As the error message describes, HANA was trying to find `johnny@contoso.com` but in the external identity is only johnny. These two values need to match, so to fix it, edit the *External Identity* to be `johnny@contoso.com`. Note these entries are case sensitive.
 
 
 ## Next steps
