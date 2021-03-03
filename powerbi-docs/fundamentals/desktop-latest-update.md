@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 02/23/2021
+ms.date: 02/26/2021
 LocalizationGroup: Get started
 ---
 # What's new in Power BI Desktop?
