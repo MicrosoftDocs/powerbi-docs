@@ -33,6 +33,8 @@ To create subscriptions for others, you must have:
 - Edit permissions for the dashboard or report.
 - A Power BI Pro license.
 
+If the report or dashboard isn't hosted in a Premium capacity, you can subscribe other people, but they must have Power BI Pro licenses.
+
 ## Power BI admins and subscriptions
 
 ### Admins control subscription activity
@@ -58,14 +60,13 @@ See [Operations available in the audit and activity logs](../admin/service-admin
 
 ## Considerations for subscribing others
 
-See [Considerations and troubleshooting](../consumer/end-user-subscribe.md#considerations-and-troubleshooting) in "Subscribe to a report or dashboard in the Power BI service" for other considerations.
+See [Considerations and troubleshooting](../consumer/end-user-subscribe.md#considerations-and-troubleshooting) in "Subscribe to a report or dashboard in the Power BI service" for general considerations.
 
 ### General
 
-- If the report or dashboard isn't hosted in a Premium capacity, you can subscribe other individuals, but they must have Power BI Pro licenses.
 - When creating a subscription, you can add other email addresses in the same domain to the subscription. If the report or dashboard is hosted in a [Premium or Premium-Per-User capacity](../admin/service-premium-what-is.md), you can subscribe group aliases, whether they're in your domain or not. You don't have to subscribe individual email addresses. The aliases are based on the current active directory.
 - There's a limit to the number of subscribers for one report or dashboard. After you pass 200 subscribers, you may encounter issues with delivery. To reduce the number, use group email aliases instead. Each email alias counts as one subscriber.
-- You can choose whether to include a link back to the content in Power BI and give users access to the content you're subscribing them to. If you choose to include a link, ensure that all users have access to the content. Subscribed users receive report attachments with data based on your permissions.
+- You can choose whether to include a link back to the content in Power BI and give users access to the content you're subscribing them to. If you choose to include a link, ensure that all users have access to the content. Subscribed users receive report attachments, with data based on your permissions.
 - The option to provide access to the report/dashboard always shows as enabled when you edit an existing subscription.  If you clear this option and save the subscription, it saves that state. However, if you edit the report again, the option will be checked again by default.
 - For paginated and Power BI report email subscriptions, if the dataset uses row-level security (RLS), you can create subscriptions for yourself and others. Those subscriptions will run using your security context.
 - In all, you may create up to 24 subscriptions per report or dashboard, and can provide unique recipients, times, and frequencies for each subscription. Subscriptions set to  **After Data Refresh**  for your dashboard or report only send an email after the first scheduled refresh.

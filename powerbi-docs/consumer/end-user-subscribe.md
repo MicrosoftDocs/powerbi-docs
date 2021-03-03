@@ -97,6 +97,7 @@ A subscription will end if the Pro license expires, the dashboard or report is d
 * If you aren't able to use the subscription feature, contact your system administrator or IT help desk. Your organization may have disabled this feature or a maximum subscriber limit may have been reached.  
 * Email subscriptions do not support most [custom visuals](../developer/visuals/power-bi-custom-visuals.md).  The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).    
 * Email subscriptions are sent with the report's default filter and slicer states. Any changes to the defaults that you make after subscribing don't show up in the email. 
+* Paginated reports do allow you to set parameter values per subscription. See [Subscribe to a paginated report in the Power BI service](paginated-reports-subscriptions.md) for details.
 * Email subscriptions do not support R-powered Power BI visuals at this time.  
 * Subscriptions don't currently support bookmarks.
 * Subscriptions may fail on dashboards or reports with extremely large images due to email size limits.    
