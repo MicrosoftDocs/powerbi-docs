@@ -5,7 +5,7 @@ author: mihart
 ms.author: mihart
 ms.reviewer: lukasz 
 ms.service: powerbi
-ms.subservice: pbi-explore
+ms.subservice: pbi-fundamentals
 Ms.custom: css_fy20Q4
 ms.topic: how-to
 ms.date: 02/01/2021
