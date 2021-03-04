@@ -64,10 +64,6 @@ To use sensitivity labels in Power BI Desktop:
 * Sensitivity labels must be enabled for your organization. Contact your Power BI admin if you aren't sure about this.
 * You must belong to a security group that has permissions to apply sensitivity labels, as described in [Enable sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md).
 * All [licensing and other requirements](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements) must have been met.
-* The information protection preview feature switch in Power BI Desktop must be turned on. It is on by default. If you see the sensitivity button on the home tab, the preview feature is on. If you don't see the button, go to **File > Options and settings > Options > Preview features**, and check the box next to **Information protection**.
-
-    If you don't see the Information protection preview option, the information protection preview feature may be blocked for your organization. In this case contact your Power BI administrator.
-
 * You must be signed in.
 
 To apply a sensitivity label on the file you're working on, click the sensitivity button in the home tab and choose the desired label from the menu that appears.
@@ -75,7 +71,9 @@ To apply a sensitivity label on the file you're working on, click the sensitivit
 ![Screenshot of sensitivity label menu in Desktop.](media/service-security-apply-data-sensitivity-labels/sensitivity-label-menu-desktop.png)
 
 >[!NOTE]
-> If you don't see the sensitivity button, it may indicate that you don't have an appropriate license or that you do not belong to security group that has permissions to apply sensitivity labels, as described in [Enable sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md).
+> If the sensitivity button is greyed out, it may indicate that you don't have an appropriate license or that you do not belong to a security group that has permissions to apply sensitivity labels, as described in [Enable sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md).
+>
+>If you do not see the sensitivity button at all, go to **File > Options and settings > Options > Preview features**, and make sure that the ckeckbox next to **Information protection** is selected. If you don't see the Information protection preview option, the information protection preview feature may be blocked for your organization. In this case contact your Power BI administrator.
 
 After you've applied the label, it will be visible in the status bar.
 
