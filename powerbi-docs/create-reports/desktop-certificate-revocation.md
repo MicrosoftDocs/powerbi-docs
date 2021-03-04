@@ -21,36 +21,36 @@ Certificates ensure the security of your connections to online data sources. You
 
 Both methods offer three possible settings:
 
-- **Comprehensive check** Reject certificates that have been revoked and certificates without revocation information.
-- **Basic check** Only reject certificates that have been revoked. Certificates without revocation info are allowed through. This is important for some organizations with corporate proxy services.
-- **None**  Power BI doesn't check revocation information. All valid certificates are allowed through.
+- **Comprehensive check**: Reject certificates that have been revoked, and certificates without revocation information.
+- **Basic check**: Only reject certificates that have been revoked. Certificates without revocation information are allowed through. This is important for some organizations with corporate proxy services.
+- **None**, or **Disabled**:  Power BI doesn't check revocation information. All valid certificates are allowed through.
 
 ## Power BI Desktop
 
-In the user interface in Power BI Desktop, you can enable or disable the feature.
+You can enable or disable the check in the user interface in Power BI Desktop. On the **File** menu > **Options and settings** > **Options**, select **Security**, then select one of the three options:
 
-- On the **File** menu > **Options and settings** > **Options**, select **Security**, then select one of the three options:
+- **Comprehensive check**
+- **Basic check**
+- **None**
 
-    - **Comprehensive check**
-    - **Basic check**
-    - **None**
+**Basic check** is the default selection.
 
 ## Registry settings
 
-You can also control the certificate revocation check by setting the following DWORD registry value: `DisableCertificateRevocationCheck`. Admins can use this method to control the setting for their whole organization.
+You can also control the certificate revocation check by setting the DWORD registry value `DisableCertificateRevocationCheck`. Admins can also use this method to control the setting for their whole organization.
 
 - **Basic**
 - **Disabled** is the same as **None** in Power BI Desktop.
 - **Comprehensive**
 
 
-|Certificate revocation info status | Comprehensive check | Basic check | Disabled |
+|Certificate revocation information status | Comprehensive check | Basic check | Disabled |
 |---------|---------|---------|---------|
 |Revoked     |  ❌  | ❌  | ✔   |
 |Unknown  |  ❌    |  ✔   |    ✔  |
 |Not revoked  | ✔  |    ✔ |    ✔  |
 
-Set the following DWORD registry value, `DisableCertificateRevocationCheck`, in the Power BI Desktop registry key. The key is in one of these formats, depending on your operating system:
+Set the DWORD registry value `DisableCertificateRevocationCheck` in the Power BI Desktop registry key. The key is in one of these formats, depending on your operating system:
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Microsoft Power BI Desktop
@@ -66,6 +66,6 @@ Set the registry value to one of the following values:
 
 |Value  |Mode  |Configuration  |
 |---------|---------|---------|
-|0     | Basic   | Certificates with an unknown revocation status are accepted. Equivalent to enabling the checkbox in Power BI Desktop. |
-|1     | Disabled  | Ignores all revocation checks. Equivalent to disabling the checkbox in Power BI Desktop.  |
-|2     | Comprehensive  |  Requires not revoking certificates. Doesn't accept certificates with unknown revocation status |
+|0     | Basic   | Certificates with an unknown revocation status are accepted. Equivalent to Basic in Power BI Desktop. |
+|1     | Disabled  | Ignores all revocation checks. Equivalent to None in Power BI Desktop.  |
+|2     | Comprehensive  |  Requires not revoking certificates. Doesn't accept certificates with unknown revocation status. Equivalent to Comprehensive in Power BI Desktop. |
