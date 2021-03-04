@@ -4,8 +4,8 @@ description: Learn how you can find, explore, and use the datasets in your organ
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
-ms.subservice: pbi-data-sources
-ms.topic: how-to
+ms.subservice: powerbi-eim
+ms.topic: conceptual
 ms.date: 12/14/2020
 LocalizationGroup: Share your work
 ---

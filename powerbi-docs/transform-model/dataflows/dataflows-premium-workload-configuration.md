@@ -13,7 +13,7 @@ LocalizationGroup: Data from files
 ---
 # Configure Power BI Premium dataflow workloads
 
-You can create dataflow workloads in your Power BI Premium subscription. Power BI uses the concept of *workloads* to describe Premium content. Workloads include Datasets, Paginated Reports, Dataflows, and AI. The *dataflows* workload lets you use dataflows self-service data preparation to ingest, transform, integrate, and enrich data. Power BI Premium dataflows are managed in the **Admin portal**.
+You can create dataflow workloads in your Power BI Premium subscription. Power BI uses the concept of *workloads* to describe Premium content. Workloads include datasets, paginated reports, dataflows, and AI. The *dataflows* workload lets you use dataflows self-service data preparation to ingest, transform, integrate, and enrich data. Power BI Premium dataflows are managed in the **Admin portal**.
 
 ![Admin portal for dataflows in Power BI premium](media/dataflows-premium-workload-configuration/dataflows-premium-workloads-01.png)
 
@@ -25,7 +25,7 @@ The first requirement for using dataflows in your Power BI premium subscription 
 
 ![Admin portal for dataflows in Power BI premium](media/dataflows-premium-workload-configuration/dataflows-premium-workloads-01.png)
 
-After enabling the Dataflows workload, it is configured with default settings. You might want to tweak these settings as you see fit. Next, we'll describe where these settings live, describe each, and help you understand when you might want to change the values to optimize your dataflow performance.
+After enabling the dataflows workload, it is configured with default settings. You might want to tweak these settings as you see fit. Next, we'll describe where these settings live, describe each, and help you understand when you might want to change the values to optimize your dataflow performance.
 
 ## Refining dataflow settings
 
@@ -57,21 +57,21 @@ The following table provides a basic description of the dataflows settings.
 | **Workload** | **Max Memory (%)** | The maximum percentage of available memory that dataflows can use in a capacity. |
 | **Workload** | **Enhanced Dataflows Compute Engine** | Enable this option for up to 20x faster calculation of computed entities when working with large-scale data volumes.  **You must restart the capacity to activate the new engine.**  For more information, see [Enhanced dataflows compute engine](../../admin/service-admin-premium-workloads.md#enhanced-dataflows-compute-engine). |
 | **Workload** | **Container Size** | The maximum size of the container that dataflows use for each entity in the dataflow. The default value is 700 MB. For more information, see [Container size](../../admin/service-admin-premium-workloads.md#container-size). |
-| **Workload** | **Compute engine memory (%)** | The maximum percentage of memory allocated to the compute engine. The default value is 30% |
+| **Workload** | **Compute engine memory (%)** | The maximum percentage of memory allocated to the compute engine. The default value is 30%. |
 
 In the following sections, we go into detail about each of the settings and how they affect your dataflow workload.
 
 ### Understanding dataflow workload options
 
-A simple way to think about dataflow workload options is to use an analogy. The *Capacity size*, or the type of Power BI Premium Instance you have, can be thought of as your *restaurant*. Within your restaurant, you have your *workload memory*, which is your *kitchen*. The *compute engine* is your *oven*. And lastly, the *container* is the sort of quality of your *chef*. To evaluate your dataflow workload options, imagine preparing a meal for a large, or very significant dinner. You have important guests coming over and you must have dinner ready to be served by the time they arrive.
+A simple way to think about dataflow workload options is to use an analogy. The *capacity size*, or the type of Power BI Premium Instance you have, can be thought of as your *restaurant*. Within your restaurant, you have your *workload memory*, which is your *kitchen*. The *compute engine* is your *oven*. And lastly, the *container* is the quality of your *chef*. To evaluate your dataflow workload options, imagine preparing a meal for a large, or very significant dinner. You have important guests coming over and you must have dinner ready to be served by the time they arrive.
 
-We'll use this restaurant analogy as we explain and provide guidance on each of the setting. We'll start at the top level - your Premium Capacity - as this is the first choice you make when using Power BI Premium.
+We'll use this restaurant analogy as we explain and provide guidance on each of the setting. We'll start at the top level - your Premium capacity - as this is the first choice you make when using Power BI Premium.
 
 #### Premium capacity SKUs - scale up the hardware
 
 Power BI Premium workloads use a combination of front-end and backend cores to serve fast queries across the various workload types. The [capacity nodes](../../admin/service-premium-what-is.md#capacity-nodes) article includes a chart that illustrates the current specifications across each of the available workload offerings. Capacities of A3 and greater can take advantage of the compute engine, so when you want to use the enhanced compute engine, start there – [Capacity nodes](../../admin/service-premium-what-is.md#capacity-nodes). 
 
-In our restaurant analogy, choosing a capacity is like choosing a higher-quality restaurant. Though a higher cost, you can expect a higher level of performance due to the increase in front-end cores, backend cores, and more memory. When you go to a bigger restaurant, you get a bigger kitchen, and better chefs, which are akin to upgrading to a higher SKU in Power BI Premium, giving you the benefit of increasing CPU speed, increasing memory per operation and adding more parallelism.
+In our restaurant analogy, choosing a capacity is like choosing a higher-quality restaurant. Though a higher cost, you can expect a higher level of performance due to the increase in front-end cores, backend cores, and more memory. When you go to a bigger restaurant, you get a bigger kitchen, and better chefs, which are akin to upgrading to a higher SKU in Power BI Premium, giving you the benefit of increasing CPU speed, increasing memory per operation, and adding more parallelism.
 
 #### Max memory - dedicating a capacity for dataflows 
 
@@ -140,9 +140,9 @@ You can also use DirectQuery.
 
 Take the following steps when investigating scenarios where the Compute engine is on, but you're seeing slower performance:
 
-1. Limit computed and linked entities that exist cross workspace.
+1. Limit computed and linked entities that exist across workspace.
 
-2. If your initial refresh with the compute engine turned on, then data gets written in the lake and in the cache. This double write means these refreshes will be slower.
+2. If your initial refresh is with the compute engine turned on, then data gets written in the lake and in the cache. This double write means these refreshes will be slower.
 
 3. If you have a dataflow linking to multiple dataflows, make sure you schedule refreshes of the source dataflows so that they do not all refresh at the same time.
 
