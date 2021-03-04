@@ -39,7 +39,7 @@ To add the local Power BI language to your visual, you'll need to do follow thes
 
 6. [Create a new localizationManager instance](#step-6---create-a-new-localizationmanager-instance).
 
-7. [Call the getDisplayName function](#step-7---call-the-getdisplayName-function).
+7. [Call the getDisplayName function](#step-7---call-the-getdisplayname-function).
 
 ### Step 1 - Set up your environment to display a language that isn't English
 
