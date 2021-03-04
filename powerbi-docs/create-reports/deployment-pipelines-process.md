@@ -1,13 +1,13 @@
 ---
-title: Deployment pipelines process 
-description: Understand the Power BI deployment pipelines process
+title: Deployment pipelines, the Power BI Application lifecycle management (ALM) tool, process
+description: Understand how deployment pipelines, the Power BI Application lifecycle management (ALM) tool, works
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 12/28/2020
+ms.date: 03/04/2021
 ---
 
 # Understand the deployment process
