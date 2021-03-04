@@ -73,7 +73,7 @@ To select from the available built-in report themes:
     | Classic | ![Classic](media/desktop-report-themes/report-themes-color-scheme-classic.png)|
     | City park | ![City park](media/desktop-report-themes/report-themes-color-scheme-city-park.png)|
     | Classroom | ![Classroom](media/desktop-report-themes/report-themes-color-scheme-classroom.png)|
-    | Colorblind safe | ![Colorblind safe](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
+    | Color blind safe | ![Color blind safe](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
     | Electric | ![Electric](media/desktop-report-themes/report-themes-color-scheme-electric.png)|
     | High contrast | ![High contrast](media/desktop-report-themes/report-themes-color-scheme-high-contrast.png)|
     | Sunset | ![Sunset](media/desktop-report-themes/report-themes-color-scheme-sunset.png)|
@@ -4515,7 +4515,7 @@ Built-in themes that are affected by this limitation include the following theme
 * Classic
 * City park
 * Classroom
-* Colorblind safe
+* Color blind safe
 * Electric
 * High contrast
 * Sunset
