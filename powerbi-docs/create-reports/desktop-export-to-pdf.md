@@ -30,7 +30,7 @@ There are a few considerations to keep in mind with the **Export to PDF** featur
 
 * Visuals with scrollbars are exported in their default state.  The visual will display all possible rows, starting with the first row. Even if you have the visual scrolled down, when exported, the visual will display unscrolled.
 
-    ![Export to PDF in process](media/desktop-export-to-pdf/export-to-pdf-03.png)
+    ![Export visual with scrollbars.](media/desktop-export-to-pdf/export-to-pdf-03.png)
 
 * The feature does export Power BI visuals, but it does *not* export any wallpaper you may have applied to the report.
 
