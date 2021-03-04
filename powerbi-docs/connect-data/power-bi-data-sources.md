@@ -35,7 +35,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Azure HDInsight (HDFS) | Yes | Yes | No | No | No | No |
 | Azure HDInsight Spark | Yes | Yes | Yes | No | No | Yes |
 | Azure SQL Database | Yes | Yes | Yes | Yes  | Yes | Yes |
-| Azure SQL Data Warehouse | Yes | Yes | Yes | Yes  | No | Yes |
+| Azure Synapse | Yes | Yes | Yes | Yes  | No | Yes |
 | Azure Table Storage | Yes | Yes | No | Yes | No | Yes |
 | BI Connector | Yes | Yes | Yes | Yes | Yes | No |
 | BI360 - Budgeting & Financial Reporting | Yes | Yes | No | No | No | No |
@@ -159,7 +159,7 @@ When the SSO option is enabled and your users access reports built atop the data
 The SSO option takes effect across all datasets that use this data source. It does not affect the authentication method used for import scenarios. The following data sources support SSO for connections through DirectQuery:
 
 - Azure SQL Database
-- Azure SQL Data Warehouse
+- Azure Synapse
 - Impala
 - SAP HANA
 - SAP BW

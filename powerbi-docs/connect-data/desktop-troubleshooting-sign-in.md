@@ -84,7 +84,7 @@ The registry entry can be placed in either of the following locations:
 
 It is not necessary to have the registry entry in both locations.
 
-![Registry key for using default system credentials](media/desktop-troubleshooting-sign-in/desktop-tshoot-sign-in-03.png)
+![Registry key for using default system credentials](media/desktop-troubleshooting-sign-in/desktop-tshoot-sign-in-03b.png)
 
 Once the registry entry is created (a reboot may be necessary) the proxy settings defined in Internet Explorer are used when Power BI Desktop makes web requests. 
 

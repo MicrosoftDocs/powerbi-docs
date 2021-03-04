@@ -263,13 +263,11 @@ You can export the currently applied report theme directly from Power BI Desktop
 
 To export the currently applied theme from Power BI Desktop:
 
-1. Select **File** > **Options and settings** > **Options**.
+1. Select **View** and choose the **Themes** dropdown.
 
-2. In the **Preview features** section, select **Customize current theme**, and then select **OK**.
+   ![Select the Themes dropdown menu.](media/desktop-report-themes/report-themes-14.png)
 
-   You might be prompted to restart Power BI Desktop for the preview feature to be enabled. After you restart, you can begin exporting the currently applied theme.
-
-3. From the **Home** ribbon, select **Switch theme** > **Export current theme**.
+2. Near the bottom of the dropdown menu, select **Save current theme**.
 
 4. From the **Save As** dialog box, browse to a directory in which to save the JSON file, and then select **Save**.
 
