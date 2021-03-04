@@ -82,7 +82,7 @@ After you create a Power BI Desktop file with an explore live connection, there 
 
 To change the server name:
 
-1. Select **Edit Queries** from the **Home** tab.
+1. Select **Transform data > Data source settings** from the **Home** tab.
 
 2. In the **SQL Server Analysis Services database** window, enter the new **Server** name, and then select **OK**.
 
