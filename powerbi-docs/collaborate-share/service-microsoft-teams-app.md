@@ -106,6 +106,7 @@ With the new search experience in Teams, you can find recent reports, dashboards
     - Sending feedback.
     - Settings such as managing personal storage and accessing the admin portal.
 - Power BI doesn't support the same localized languages that Microsoft Teams does. As a result, you might not see proper localization within a report.
+- The Power BI app for Microsoft Teams is available only to Commerical Cloud customers.
 
 ## Next steps
 

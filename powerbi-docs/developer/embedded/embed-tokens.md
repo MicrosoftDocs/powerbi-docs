@@ -23,7 +23,7 @@ If you're using the *embed for your organization* solution, your web app users w
 
 ## Azure AD token
 
-For both *embed for your customers* and *embed for your organization* solutions, you need an [Azure AD token](#azure-ad-token). This token is required for all [REST API](/rest/api/power-bi/) operations, and it expires after an hour.
+For both *embed for your customers* and *embed for your organization* solutions, you need an [Azure AD token](/azure/databricks/dev-tools/api/latest/aad/). This token is required for all [REST API](/rest/api/power-bi/) operations, and it expires after an hour.
 
 * In the *embed for your customers*, the Azure AD token is used to generate the *embed token*.
 
