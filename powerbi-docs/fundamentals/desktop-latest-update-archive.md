@@ -683,7 +683,9 @@ The following video describes each of these updates. You can also watch this vid
 
 ## April 2020 Update (2.80.5803.282)
 
-We were grateful to be able to share our April Power BI Desktop with you, our global community. 
+We were grateful to be able to share our April Power BI upate with you, our global community. 
+
+#[Power BI Desktop](#tab/powerbi-desktop)
 
 Get the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from the [Microsoft Store](https://aka.ms/pbidesktopstore). Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering may differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
 
@@ -702,7 +704,6 @@ You can also watch the entire [Power BI Desktop monthly update video](#power-bi-
 
 The following updates are new to Power BI Desktop this month:
 
-
 ### Reporting
 * Personalize visuals (preview) [[video]](https://youtu.be/q2Hfn_Rhb3E?t=54)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Personalize_visuals) 
 * Change detection for page refresh (preview)   [[video]](https://youtu.be/q2Hfn_Rhb3E?t=447) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Change_detection) 
@@ -712,55 +713,54 @@ The following updates are new to Power BI Desktop this month:
 * Customize theme dialog is now generally available  [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1250)  [[article]](../create-reports/desktop-report-themes.md#customize-report-themes)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Customize_theme_GA) 
 * Improved discoverability for conditional formatting  [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1479)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Improved_discoverability) 
 
-
-
 ### Analytics
 * DirectQuery support for AI visuals [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1498)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Direct_Query_AI) 
 * Decomposition tree now supports tooltips [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1550)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Decomp_tree_tooltips) 
 * Q&A updates [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1606)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_QA_updates) 
 
-
 ### Visuals
 * New visualization icons [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1946)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_New_Visualization_icons) 
 * New Power BI visuals [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1833)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Visualizations)
-
 
 ### Template apps
 * Power Platform Center of Excellence StartKit [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1969)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_CoE_StartKit) 
 * Azure Cognitive Search: analyze logs and metrics  [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1969)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Azure_Cognitive_Search)
 * COVID-19 apps  [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1969)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_COVID)
 
-
 ### Data preparation
 * Enhancements to Query diagnostics  [[video]](https://youtu.be/q2Hfn_Rhb3E?t=2011)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Enhancements_to_Query) 
-
 
 ### Data connectivity
 * CDM Folder view for Azure Data Lake Storage Gen2 [[video]](https://youtu.be/q2Hfn_Rhb3E?t=2124)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_CDM_Folder_view) 
 
-
 ### Other features
 * New instructor-led training [[video]](https://youtu.be/q2Hfn_Rhb3E?t=2147)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_New_instructor-led_training) 
 
-
 For detailed information about each of these new features, see [Power BI Desktop feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/).
-
-Check out [what's new in the Power BI service](service-whats-new.md), and [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
-
 
 ### Power BI Desktop monthly update video
 The following video describes each of these updates. You can also watch this video from the blog post:
 
 > [!VIDEO https://www.youtube.com/embed/q2Hfn_Rhb3E]
 
+#[Power BI service](#tab/powerbi-service)
 
+Here were the updates in the Power BI service.
+
+* Public preview of the 'new look' of workspaces in the Power BI service.
+* General availability of designing custom navigation for [Power BI apps](../collaborate-share/service-create-distribute-apps.md).
+
+---
 
 ## March 2020 Update (2.79.5768.562)
 
-We felt lucky as a four-leaf clover to share our March Power BI Desktop with you. 
+
+We felt lucky as a four-leaf clover to share our March Power BI update with you. 
+
+#[Power BI Desktop](#tab/powerbi-desktop)
 
 Get the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from the [Microsoft Store](https://aka.ms/pbidesktopstore). Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering may differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
 
@@ -834,6 +834,16 @@ The following video describes each of these updates. You can also watch this vid
 
 > [!VIDEO https://www.youtube.com/embed/DMjvJGGB_LQ]
 
+#[Power BI service](#tab/powerbi-service)
+
+Here were the updates in the Power BI service.
+
+* Export reports to PDF, PPTX and PNG files using Power BI REST APIs.
+* New and revamped global search experience in the Power BI service.
+* Performance improvements to [Multi-Geo Premium capacities](../admin/service-admin-premium-multi-geo.md).
+* Public preview of [read/write XMLA endpoints](../admin/service-premium-connect-tools.md) in Power BI Premium.
+
+---
 
 ## February 2020 Update (2.78.5740.642)
 
