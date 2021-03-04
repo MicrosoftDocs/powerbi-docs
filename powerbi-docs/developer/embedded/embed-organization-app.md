@@ -60,19 +60,19 @@ To embed Power BI content in an *embed for your organization* app, follow these 
 
 1. [Configure your Azure AD app](#step-1---configure-your-azure-ad-app)
 
-2. [Get the embedding parameter values](#step-2---get-embedding-parameter-values).
+2. [Get the embedding parameter values](#step-2---get-the-embedding-parameter-values).
 
 3. [Enable server side authentication](#step-3---enable-server-side-authentication).
 
-4. [Create a client side authentication file](#step-4---create-a-client-side-authentication-file)
+4. [Create a client side authentication file](#step-4---create-client-side-implementation)
 
 ## Step 1 - Configure your Azure AD app
 
-Before your web app contacts Power BI, it needs to authenticate against Azure AD to get an [Azure AD token](#azure-ad-token). The *Azure AD token* enables your web app to call Power BI REST APIs.
+Before your web app contacts Power BI, it needs to authenticate against Azure AD to get an [Azure AD token](#embed-tokens.md#azure-ad-token). The *Azure AD token* enables your web app to call Power BI REST APIs.
 
-If you don't have an Azure AD app, create one using the instructions in [Register an Azure AD application to use with Power BI](register.app.md).
+If you don't have an Azure AD app, create one using the instructions in [Register an Azure AD application to use with Power BI](register-app.md).
 
-To configure your Azure AD app, follow the instructions in [Configure your Azure AD app](embed-sample-for-your-organization?tabs=net-core#configure-your-azure-ad-app).
+To configure your Azure AD app, follow the instructions in [Configure your Azure AD app](embed-sample-for-your-organization.md#configure-your-azure-ad-app).
 
 ## Step 2 - Get the embedding parameter values
 
@@ -197,7 +197,7 @@ In this tutorial, the server-side authentication file contains sensitive informa
     }
     ```
 
-3. Fill in the component values obtained from [Step 2 - Get component values](#step-2---get-component-values). If you don't know what's your domain or tenant ID, see [Find the Microsoft Azure AD tenant ID and primary domain name](/partner-center/find-ids-and-domain-names#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name).
+3. Fill in the embedding parameter values obtained from [Step 2 - Get the embedding parameter values](#step-2---get-the-embedding-parameter-values). If you don't know what's your domain or tenant ID, see [Find the Microsoft Azure AD tenant ID and primary domain name](/partner-center/find-ids-and-domain-names#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name).
 
     * `Domain`
     * `TenantId`
@@ -209,7 +209,7 @@ In this tutorial, the server-side authentication file contains sensitive informa
 
 ### Get the Azure AD access token and call the Power BI service
 
-In order to embed Power BI content (such as reports and dashboards), your app needs to get an [Azure AD token](embedded/embed-tokens.md#azure-ad-token). To get the token, you'll need a [configuration object](/javascript/api/overview/powerbi/embed-report#embed-an-existing-report).
+In order to embed Power BI content (such as reports and dashboards), your app needs to get an [Azure AD token](embed-tokens.md#azure-ad-token). To get the token, you'll need a [configuration object](/javascript/api/overview/powerbi/embed-report#embed-an-existing-report).
 
 The code in this section uses the .NET Core dependency injection pattern. When your class needs to use a service, you can add a constructor parameter for that service and the .NET Core runtime takes care of passing the service instance at run time. In this case, the constructor is injecting an instance of the .NET Core configuration service using the `IConfiguration` parameter, which is used to retrieve the `PowerBi:ServiceRootUrl` configuration value from **appsettings.json**. The `ITokenAcquisition` parameter, which is named `tokenAcquisition` holds a reference to the Microsoft authentication service provided by the `Microsoft.Identity.Web` library and will be used to acquire access tokens from Azure AD.
 
