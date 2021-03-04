@@ -63,6 +63,9 @@ You can also specify two additional **Advanced options**: **Language code**, and
 
 ![additional connection information](media/desktop-sap-bw-connector/sap_bw_4a.png)
 
+> [!NOTE]
+> If you use **Language code** and publish to the service, you need to enable "skip test connection" in the service data source settings when using the gateway.
+
 If you don't specify an MDX statement, the connection setting displays the list of cubes available in the server. You can drill down and select items from the available cubes, including dimensions and measures. Power BI exposes queries and cubes exposed by the [Open Analysis Interfaces](https://help.sap.com/saphelp_nw70/helpdata/en/d9/ed8c3c59021315e10000000a114084/content.htm).
 
 When you select one or more items from the server, the Navigator dialog creates a preview of the output table.
