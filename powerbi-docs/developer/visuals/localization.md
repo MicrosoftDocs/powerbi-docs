@@ -27,7 +27,7 @@ Below is an example of a *sample bar chart* visual displaying content in differe
 
 To add the local Power BI language to your visual, you'll need to do follow these steps:
 
-1. [Set up your environment to display a language that isn't English](#step-1---set-up-your-environment-to-display-a-language-that-isn't-English).
+1. [Set up your environment to display a language that isn't English](#step-1---set-up-your-environment-to-display-a-language-that-isnt-english).
 
 2. [Get the local Power BI language](#step-2---get-the-locale-power-bi-language).
 
@@ -37,9 +37,9 @@ To add the local Power BI language to your visual, you'll need to do follow thes
 
 5. [Add a resources file for each language](#step-5---add-a-resources-file-for-each-language).
 
-6. [Create a new localizationManager instance](#step-6---create-a-new-localizationManager-instance).
+6. [Create a new localizationManager instance](#step-6---create-a-new-localizationmanager-instance).
 
-7. [Call the getDisplayName function](#step-7---call-the-getDisplayName-function).
+7. [Call the getDisplayName function](#step-7---call-the-getdisplayName-function).
 
 ### Step 1 - Set up your environment to display a language that isn't English
 
@@ -116,7 +116,7 @@ For each language you want your visual to support, you'll need to add a **resour
 >[!div class="mx-imgBorder"]
 >![A screenshot from V S code showing a visual project folder structure, with the string resources folder, and two resources resjson files, one in the Arabic sub folder, and one in the Hebrew sub folder.](media/localization/new-resjson.png)
 
-Every JSON file defines a single [supported locale language](#supported=languages). Add all the localization strings you are going to use into each **resources.resjson** file.
+Every JSON file defines a single [supported locale language](#supported-languages). Add all the localization strings you are going to use into each **resources.resjson** file.
 
 #### Examples
 

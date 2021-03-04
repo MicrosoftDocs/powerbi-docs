@@ -87,7 +87,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 * Supports **rule** property in capabilities schema for object properties
 
 ## API v1.7.0
-* Supports **[RESJSON](./localization.md#resource-file)**
+* Supports **[RESJSON](./localization.md#step-5---add-a-resources-file-for-each-language)**
 
 ## API v1.6.2
 * Supports **[Edit mode](./advanced-edit-mode.md)** for visual to enter in-visual edit mode
