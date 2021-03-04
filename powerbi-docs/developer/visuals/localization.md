@@ -8,7 +8,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 02/21/2021
+ms.date: 03/04/2021
 ---
 
 # Add the locale Power BI language to your Power BI visual
