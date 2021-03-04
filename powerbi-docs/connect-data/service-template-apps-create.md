@@ -90,17 +90,6 @@ Now that you have content in your workspace, you're ready to package it in a tem
 
     ![Control](media/service-template-apps-create/power-bi-create-control.png)
 
-    The options for controlling what users can do with the data in your report are described below.
-    * **Download the report to file (.pbix/.rdl)**: This enables users to download the report, which contains the source *.pbix* file. Once the report is downloaded, the data it contains is no longer protected. You no longer can control what the user can do with it.
-    * **View or edit a dataset model definition**: This control enables read/write connectivity to the data model via XMLA endpoints.
-        * **Connect to datasets using external model authoring tools**: Allows users to view/read datasets using external modeling tools.
-        * **Edit datasets using external model authoring tools (Premium)**: Allows users to edit datasets using external modeling tools.  [Learn more](../admin/service-premium-connect-tools.md)
-    * **Export or externally connect to data**
-
-        * **Connect to datasets from Power BI Desktop or Excel or other data tools**: Allows users to connect to datasets from Power BI Desktop, Excel, or other data tools. [Learn more](desktop-report-lifecycle-datasets.md)
-        * **Export summarized report data, shown in visuals**: Allows users to export summarized report data that is shown in visuals to a file.
-        * **Export underlying raw data**: Allows users to export underlying raw report data to a file.
-
     >[!NOTE]
     >If you want to protect your data, disable the **Download the report to file** option and then configure the other two options as desired.
     >
