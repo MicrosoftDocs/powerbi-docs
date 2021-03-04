@@ -68,7 +68,7 @@ To embed Power BI content in an *embed for your organization* app, follow these 
 
 ## Step 1 - Configure your Azure AD app
 
-Before your web app contacts Power BI, it needs to authenticate against Azure AD to get an [Azure AD token](#embed-tokens.md#azure-ad-token). The *Azure AD token* enables your web app to call Power BI REST APIs.
+Before your web app contacts Power BI, it needs to authenticate against Azure AD to get an [Azure AD token](embed-tokens.md#azure-ad-token). The *Azure AD token* enables your web app to call Power BI REST APIs.
 
 If you don't have an Azure AD app, create one using the instructions in [Register an Azure AD application to use with Power BI](register-app.md).
 
