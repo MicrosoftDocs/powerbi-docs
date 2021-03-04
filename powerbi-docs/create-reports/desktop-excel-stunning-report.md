@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 02/10/2021
+ms.date: 02/22/2021
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to stunning report in Power BI Desktop
@@ -122,7 +122,9 @@ Writing *measures* in the *DAX* formula language is super powerful for data mode
 
      :::image type="content" source="media/desktop-excel-stunning-report/power-bi-dax-expression.png" alt-text="Screenshot of DAX expression.":::
 
-1. Now select **Model View** on the left. 
+1. Still in Data view, select your new Calendar table, and on the **Table tools** ribbon, select **Mark as date table**.
+2. In the **Date column** box, select the **Date** column. 
+3. Now select **Model View** on the left. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-model-view.png" alt-text="Screenshot of Model View icon.":::
 
@@ -153,7 +155,9 @@ Let’s build the final report, one visual at a time.
 Now, you create a line chart to see which month and year had the highest profit. 
 
 1. From the Fields pane, drag the **Profit** field to a blank area on the report canvas. By default, Power BI displays a column chart with one column, Profit. 
-1. Drag the **Date** field to the same visual. Power BI updates the column chart to show profit by the two years.
+1. Drag the **Date** field to the same visual. If you created a Calendar table in [Extra credit: Create a table in DAX](#extra-credit-write-a-measure-in-dax) earlier in this article, drag the **Date** field from your Calendar table instead. 
+
+    Power BI updates the column chart to show profit by the two years.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-year.png" alt-text="Screenshot of Profit column chart.":::
 

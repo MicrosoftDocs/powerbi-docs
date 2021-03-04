@@ -3,11 +3,11 @@ title: Power BI for US government customers - Overview
 description: US government customers can add a Power BI subscription to their Microsoft 365 government plan. Learn how to sign up, connect, and review feature availability in this service description. 
 author: kfollis
 ms.author: kfollis
-ms.reviewer: ''
+ms.reviewer: dodruker; jonp
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/19/2021
+ms.date: 02/17/2021
 ms.custom: gcc
 LocalizationGroup: Get started
 ---
@@ -16,29 +16,13 @@ LocalizationGroup: Get started
 
 This article is for US government customers who are deploying Power BI as part of a Microsoft 365 Government plan. Government plans are designed for the unique needs of organizations that must meet US compliance and security standards. The Power BI service that's designed for US government customers differs from the commercial version of the Power BI service. These feature differences and capabilities are described in the following sections.
 
-## Add Power BI to your Microsoft 365 Government plan
-
-Before you can get a Power BI US government subscription and assign licenses to users, you have to enroll in a Microsoft 365 Government plan. If your organization already has a Microsoft 365 Government plan, skip ahead to [Buy a Power BI Pro subscription for government customers](#buy-a-power-bi-pro-subscription-for-government-customers).
-
-### Enroll in a Microsoft 365 Government plan
-
-If you're a new customer, you have to validate your organization's eligibility before you can sign up for a Microsoft 365 Government plan.  Get started by completing the [Microsoft 365 for Government eligibility validation form](https://www.microsoft.com/microsoft-365/government/eligibility-validation). To ensure that you're selecting the right plan for your organization, consult the [Microsoft 365 US Government service descriptions](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government).
-
 > [!NOTE]
-> If you've already deployed Power BI to a commercial environment and want to migrate to the US government cloud, you'll need to add a new Power BI Pro subscription to your Microsoft 365 Government plan. Next, replicate the commercial data to the Power BI service for US government, remove commercial license assignments from user accounts, and then assign a Power BI Pro government license to the user accounts.
->
->
-### Buy a Power BI Pro subscription for government customers
-
-After you've deployed Microsoft 365, you can add a Power BI Pro subscription. Follow the step-by-step guidance in [Enroll your US government organization](service-govus-signup.md) to buy the Power BI Pro government service. Buy enough licenses for all the users who need to use Power BI, and then assign the licenses to individual user accounts.
-
-> [!IMPORTANT]
-> Power BI US Government isn't available as a *Free* license. To access the government community cloud, each user must be assigned a *Pro* license. If a user account has been assigned a Free license, the user is authorized to access only the commercial cloud and will encounter authentication and access issues. If you've purchased Power BI Premium, you don't have to assign Pro licenses to enable user access.  Users in the organization can access reports that are shared with them as long as the reports are published to a Premium capacity. To review the differences between license types, see [Power BI service features by license type](../fundamentals/service-features-license-type.md).
+> Before you can get a Power BI US government subscription and assign licenses to users, you have to enroll in a Microsoft 365 Government plan. If your organization already has a Microsoft 365 Government plan, skip ahead to [Buy a Power BI Pro subscription for government customers](#buy-a-power-bi-pro-subscription-for-government-customers).
 >
 
 ## Government cloud instances
 
-Microsoft 365 provides different environments for government agencies to meet varying compliance requirements. For more information about each environment, see:
+If you're a new customer, you have to validate your organization's eligibility before you can sign up for a Microsoft 365 Government plan.  Get started by completing the [Microsoft 365 for Government eligibility validation form](https://www.microsoft.com/microsoft-365/government/eligibility-validation). Microsoft 365 provides different environments for government agencies to meet varying compliance requirements. To ensure that you're selecting the right plan for your organization, consult the Microsoft 365 US Government service descriptions for each environment:
 
 * [Microsoft 365 Government Community Cloud (GCC)](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) is designed for federal, state, and local government.
 
@@ -46,6 +30,18 @@ Microsoft 365 provides different environments for government agencies to meet va
 
 * The [Microsoft 365 DoD environment](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) is designed exclusively for the US Department of Defense.
 
+
+> [!NOTE]
+> If you've already deployed Power BI to a commercial environment and want to migrate to the US government cloud, you'll need to add a new Power BI Pro subscription to your Microsoft 365 Government plan. Next, replicate the commercial data to the Power BI service for US government, remove commercial license assignments from user accounts, and then assign a Power BI Pro government license to the user accounts.
+>
+>
+### Buy a Power BI Pro subscription for government customers
+
+After you've deployed Microsoft 365, you can add a Power BI Pro subscription. Follow the guidance in [Enroll your US government organization](service-govus-signup.md) to buy the Power BI Pro government service. Buy enough licenses for all the users who need to use Power BI, and then assign the licenses to individual user accounts.
+
+> [!IMPORTANT]
+> Power BI US Government isn't available as a *Free* license. To access the government community cloud, each user must be assigned a *Pro* license. If a user account has been assigned a Free license, the user is authorized to access only the commercial cloud and will encounter authentication and access issues. If you've purchased Power BI Premium, you don't have to assign Pro licenses to enable user access.  Users in the organization can access reports that are shared with them as long as the reports are published to a Premium capacity. To review the differences between license types, see [Power BI service features by license type](../fundamentals/service-features-license-type.md).
+>
 
 ## Sign in to Power BI for US government
 
@@ -56,6 +52,10 @@ The URL for connecting to Power BI differs for government users and commercial u
 | [https://app.powerbi.com/](https://app.powerbi.com) |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) | [https://app.mil.powerbigov.us](https://app.mil.powerbigov.us) |
 
 Your account might be set up in more than one cloud. If your account is set up that way, when you sign in to Power BI Desktop, you can choose which cloud to connect to.
+
+>[!TIP]
+>In this video, [Using Power BI Desktop in government clouds](https://www.youtube.com/watch?v=CTMG1OE17uk), Technical Specialist Steve Winward shows how you can apply a registry setting to go directly to the right cloud endpoint for your environment. The [registry key settings](https://github.com/SteveWinward/PowerBI/blob/master/WriteUps/power-bi-desktop-sovereign-config.md) to bypass the global discovery endpoint are shared on GitHub.
+>
 
 ## Allow connections to Power BI
 
@@ -70,7 +70,7 @@ Authentication, identity, and administration for Power BI depend on connectivity
 |  Purpose | Destination |
 | ---- | ----- |
 | Backend APIs | **GCC**: api.powerbigov.us |
-| | **GCC-High**: api.high.powerbigov.us |
+| | **GCC High**: api.high.powerbigov.us |
 | | **DoD**: api.mil.powerbigov.us |
 | Backend APIs | **GCC**: *analysis.usgovcloudapi.net |
 | | **GCC High**: *.high.analysis.usgovcloudapi.net |
@@ -83,7 +83,7 @@ Authentication, identity, and administration for Power BI depend on connectivity
 | | **GCC High**: [US Government GCC High endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints) |
 | | **DoD**: [US Government DOD endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints) |
 | Portal |**GCC**: *.powerbigov.us |
-| | **GCC-High**: *.high.powerbigov.us |
+| | **GCC High**: *.high.powerbigov.us |
 | | **DoD**: *.mil.powerbigov.us |
 | Service telemetry | **All**: dc.services.visualstudio.us |
 | Informational messages (optional) | **All**: dynmsg.modpim.com |
@@ -91,7 +91,7 @@ Authentication, identity, and administration for Power BI depend on connectivity
 
 ## Connect government and global Azure cloud services
 
-Azure is distributed across multiple clouds. By default, you can enable firewall rules to open a connection to a cloud-specific instance, but cross-cloud networking is different.  To communicate between services in the public cloud and services in the Government Community Cloud, you have to configure specific firewall rules. For example, if you want to access public cloud instances of a SQL database from your government cloud deployment of Power BI, you need a firewall rule in the SQL database. Configure specific firewall rules for SQL databases to allow connections to the Azure Government Cloud for the following datacenters:
+Azure is distributed across multiple clouds. By default, you can enable firewall rules to open a connection to a cloud-specific instance, but cross-cloud networking is different. To communicate between services in the public cloud and services in the Government Community Cloud, you have to configure specific firewall rules. For example, if you want to access public cloud instances of a SQL database from your government cloud deployment of Power BI, you need a firewall rule in the SQL database. Configure specific firewall rules for SQL databases to allow connections to the Azure Government Cloud for the following datacenters:
 
 * USGov Iowa
 * USGov Virginia
