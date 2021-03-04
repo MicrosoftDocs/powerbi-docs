@@ -1,13 +1,13 @@
 ---
-title: Get started with deployment pipelines 
-description: Learn how to use deployment pipelines in Power BI
+title: Get started using deployment pipelines, the Power BI Application lifecycle management (ALM) tool
+description: Learn how to use deployment pipelines, the Power BI Application lifecycle management (ALM) tool
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 02/09/2021
+ms.date: 03/04/2021
 ---
 
 # Get started with deployment pipelines
