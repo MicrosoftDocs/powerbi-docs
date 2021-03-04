@@ -86,7 +86,7 @@ Plan for the best possible connectivity between the Power BI service and your ga
 
 ### Clustering
 
-For large-scale deployments, you can create a gateway of cluster installations. Clusters avoid single points of failure, and can load balance traffic across gateways. You can:
+For large-scale deployments, you can create a gateway with multiple cluster members. Clusters avoid single points of failure, and can load balance traffic across gateways. You can:
 
 - Install one or more gateways in a cluster
 - Isolate workloads to standalone gateways, or clusters of gateway servers
