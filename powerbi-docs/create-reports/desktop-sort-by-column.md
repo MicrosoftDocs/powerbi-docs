@@ -74,7 +74,7 @@ Let's look at a common example. You have data from each month of the year, and i
 1. When we select the column by which we want to sort, in the **Fields** pane, the **Column tools** tab becomes active. In this example we see that the visual is being sorted on the **Month** field by **Quarter**.
    
    ![Active Sort by Column button](media/desktop-sort-by-column/power-bi-sort.png)    
-3. Now, with the visual selected, we can select **MonthNo**, and the visual sorts in the order we want: by the month of the year.
+3. Now, with the visual selected, we can select **MonthNo**, and the visual sorts in the order we want: chronologically by the month of the year.
    
    ![Sort by Column menu](media/desktop-sort-by-column/power-bi-new-sort.png)
 
