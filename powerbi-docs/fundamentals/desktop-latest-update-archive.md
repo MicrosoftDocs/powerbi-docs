@@ -34,6 +34,7 @@ You can also watch the **Latest Updates** video from the beginning, right inside
 The following sections describe previous months' updates to **Power BI Desktop**.
 
 
+
 ## December 2020 Update (2.88.321.0)
 
 Our December Power BI Desktop updates dazzled us all like a snowy lane filled with lights and sleigh rides. 
@@ -849,6 +850,8 @@ Here were the updates in the Power BI service.
 
 We loved our February updates, and felt our new features were better than a heart-shaped box of chocolates. 
 
+# [Power BI Desktop](#tab/powerbi-desktop)
+
 > [!IMPORTANT]
 > Beginning with the September 2019 release, Power BI Desktop is released only as a single .exe file, which contains all supported languages. The .msi version is no longer being released.
 
@@ -907,11 +910,24 @@ The following video describes each of these updates. You can also watch this vid
 
 > [!VIDEO https://www.youtube.com/embed/TN61JvbUAxk]
 
+# [Power BI service](#tab/powerbi-service)
 
+Here were the updates in the Power BI service.
+
+* Ability to promote dashboards, reports, and apps on Power BI Home.
+* New [Power BI tab](../collaborate-share/service-collaborate-microsoft-teams.md) to embed reports in Microsoft Teams.
+* General availability of [incremental refresh](../admin/service-premium-incremental-refresh.md) with support for Power BI Pro users.
+* Email subscriptions support for external email addresses.
+* General availability of [Bring Your Own Key (BYOK)](../admin/service-encryption-byok.md) for Power BI Premium.
+* New and improved [usage metrics](../collaborate-share/service-usage-metrics.md) for the Power BI workspaces experience.
+
+---
 
 ## December 2019 Update (2.76.5678.661)
 
 Our December updates were as fun as a bobsled ride down a snow-covered hill. 
+
+# [Power BI Desktop](#tab/powerbi-desktop)
 
 > [!IMPORTANT]
 > Beginning with the September 2019 release, Power BI Desktop is released only as a single .exe file, which contains all supported languages. The .msi version is no longer being released.
@@ -978,10 +994,19 @@ The following video describes each of these updates. You can also watch this vid
 
 > [!VIDEO https://www.youtube.com/embed/eCEwgZsVUOs]
 
+# [Power BI service](#tab/powerbi-service)
+
+Here was the update in the Power BI service.
+
+* New activity log API that enables Power BI service admins to track user and admin activities within their tenant.
+
+---
 
 ## November 2019 Update (2.75.5649.341)
 
 Our our November updates were as welcome as a happy family gathering. 
+
+# [Power BI Desktop](#tab/powerbi-desktop)
 
 > [!IMPORTANT]
 > Beginning with the September 2019 release, Power BI Desktop is released only as a single .exe file, which contains all supported languages. The .msi version is no longer being released.
@@ -1041,11 +1066,20 @@ The following video describes each of these updates. You can also watch this vid
 
 > [!VIDEO https://www.youtube.com/embed/kVli3Vm_kDo]
 
+# [Power BI service](#tab/powerbi-service)
 
+Here were the updates in the Power BI service.
+
+* Public preview of [large models in Power BI Premium](../admin/service-premium-large-models.md).
+* Public preview of using Microsoft cloud app security controls in Power BI.
+
+---
 
 ## October 2019 Update (2.74.5619.621)
 
 Our October updates were as fun as a pumpkin patch run, and more exciting than a midnight tour through a haunted mansion. 
+
+# [Power BI Desktop](#tab/powerbi-desktop)
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop), now delivered as a single .exe file that contains all supported languages. If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same even though the version numbering may differ between the two, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
 
@@ -1116,14 +1150,22 @@ The following video describes and shows each of these updates. You can also see 
 
 > [!VIDEO https://www.youtube.com/embed/A8A9baUQsXQ]
 
-> [!NOTE]
-> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+# [Power BI service](#tab/powerbi-service)
 
+Here were the updates in the Power BI service.
 
+* New Power Automate action to refresh Power BI datasets.
+* [Contact list](https://powerbi.microsoft.com/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) for reports and dashboards in the Power BI service.
+* General availability of [Automated Machine Learning](../transform-model/dataflows/dataflows-machine-learning-integration.md)
+* Public preview of Power BI data lineage view.
+
+---
 
 ## September 2019 Update (2.73.5586.561)
 
 Our September updates were like an exciting return to school - new things to learn, updates to friends we missed over the summer, and opportunities to apply what we know into better future reports. 
+
+# [Power BI Desktop](#tab/powerbi-desktop)
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop), now delivered as a single .exe file that contains all supported languages. If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same even though the version numbering may differ between the two, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
 
@@ -1183,13 +1225,19 @@ The following video describes and shows each of these updates. You can also see 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/neq0THnRJzo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> [!NOTE]
-> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+# [Power BI service](#tab/powerbi-service)
 
+Here was the update in the Power BI service.
+
+* Updates to connection configuration for [template apps](../connect-data/service-template-apps-overview.md).
+
+---
 
 ## August 2019 Update (2.72.5556.801)
 
-Our August updates were hot and shone brightly on the reports you create in Power BI Desktop. 
+Our August updates were hot and shone brightly on the reports you create in Power BI. 
+
+# [Power BI Desktop](#tab/powerbi-desktop)
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop), now delivered as a single .exe file that contains all supported languages. If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same even though the version numbering may differ between the two, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
 
@@ -1240,9 +1288,6 @@ The following video describes and shows each of these updates. You can also see 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sf4n7VXoQHY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> [!NOTE]
-> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
-
 You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
 
 * Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
@@ -1250,9 +1295,23 @@ You can also download previous versions of Power BI Desktop if your organization
 * If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
 * We only archive the English versions of Power BI Desktop.
 
+# [Power BI service](#tab/powerbi-service)
+
+Here were the updates in the Power BI service.
+
+* New capacity settings for Power BI Premium.
+* [Custom branding](https://powerbi.microsoft.com/blog/announcing-custom-branding-for-your-organization/) for your organization.
+* Summarized data export with build permission.
+* Support for URL parameters for [paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md).
+* Support for monthly e-mail subscriptions. 
+
+---
+
 ## July 2019 Update (2.71.5523.641)
 
-Our July updates were skyrocketing with colorful bursts of new features and functionality for your Power BI Desktop. 
+Our July updates were skyrocketing with colorful bursts of new features and functionality for your Power BI. 
+
+# [Power BI Desktop](#tab/powerbi-desktop)
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop). If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same even though the version numbering may differ between the two, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
 
@@ -1304,10 +1363,6 @@ The following video describes and shows each of these updates. You can also see 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/l7OMRUF9UYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> [!NOTE]
-> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
-
-
 You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
 
 * Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
@@ -1315,9 +1370,25 @@ You can also download previous versions of Power BI Desktop if your organization
 * If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
 * We only archive the English versions of Power BI Desktop.
 
+# [Power BI service](#tab/powerbi-service)
+
+Here were the updates in the Power BI service.
+
+* Support for non-premium datasets for [paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md).
+* General availability of Power BI [aggregations](../transform-model/desktop-aggregations.md).
+* Send refresh notifications to others.
+* [Testing tool](https://powerbi.microsoft.com/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/) for Power BI Premium capacities.
+* Public preview of [service availability notifications](https://powerbi.microsoft.com/blog/power-bi-introduces-service-availability-notifications/).
+* Public preview of the [New Look](https://powerbi.microsoft.com/blog/introducing-the-new-look-of-workspaces-in-the-power-bi-service/) for Power BI reports.
+* New Power BI region in South Africa.
+
+---
+
 ## June 2019 Update (2.70.5494.561)
 
-Our June updates spread sunshine and blue skies on your reports, with a refreshing and bright new color scheme for your Power BI Desktop, and a host of other improvements. 
+Our June updates spread sunshine and blue skies on your reports, with a refreshing and bright new color scheme for your Power BI, and a host of other improvements. 
+
+# [Power BI Desktop](#tab/powerbi-desktop)
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop). If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same even though the version numbering may differ between the two, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
 
@@ -1381,14 +1452,24 @@ The following video describes and shows each of these updates. You can also see 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7k-nP38uHyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+# [Power BI service](#tab/powerbi-service)
 
-> [!NOTE]
-> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+Here were the updates in the Power BI service.
 
+* Public preview of [Shared and Certified datasets](../connect-data/service-datasets-across-workspaces.md).
+* AI metrics available in the [Premium Capacity Metrics app](../admin/service-admin-premium-monitor-capacity.md).
+* General availability of Power BI [template apps](../connect-data/service-template-apps-overview.md).
+* General availability of [paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md) in Power BI.
+* Public preview of Bring Your Own Key ([BYOK](../admin/service-encryption-byok.md)) for Power BI Premium.
+* Viewer role for the [new workspaces experience](../collaborate-share/service-new-workspaces.md).
+
+---
 
 ## May 2019 Update (2.69.5467.1251)
 
 Our May updates bloomed in your garden of great reports, with compelling new features and a flower pot full of colorful, beautiful visuals. 
+
+# [Power BI Desktop](#tab/powerbi-desktop)
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop). If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same even though the version numbering may differ between the two, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
 
@@ -1448,12 +1529,21 @@ The following video describes and shows each of these updates. You can also see 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/O8GlHDz8xUQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> [!NOTE]
-> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+# [Power BI service](#tab/powerbi-service)
+
+Here were the updates in the Power BI service.
+
+* [Custom navigation](../collaborate-share/service-create-distribute-apps.md) for Power BI Apps.
+* Additional attachments types (PPTX, XLSX, DOCX, CSV, XML) available for e-mail subscriptions within paginated reports.
+* [Commenting](https://powerbi.microsoft.com/blog/announcing-report-commenting-for-power-bi-service-and-mobile/) for Power BI reports in the service.
+
+---
 
 ## April 2019 Update (2.68.5432.361)
 
 Our April updates were packed full of updates that put spring in your step on rainy days. 
+
+# [Power BI Desktop](#tab/powerbi-desktop)
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop). If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same even though the version numbering may differ between the two, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
 
@@ -1519,13 +1609,28 @@ The following video channel describes and shows each of these updates. You can a
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vih35kSrEHU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> [!NOTE]
-> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+# [Power BI service](#tab/powerbi-service)
 
+Here were the updates in the Power BI service.
+
+* General availability of Power BI [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md).
+* General availability of the new workspaces experience.
+* New Power BI regions in France and Korea.
+* Updated Q&A experience for dashboards.
+* Support for Azure Analysis Services within [paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md).
+* Paginated reports supported in Power BI Apps.
+* [E-mail subscriptions](https://powerbi.microsoft.com/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/) with PDF attachments for paginated reports.
+* Power BI Premium summary and workload metrics supported in Admin Portal
+* [Query caching](../connect-data/power-bi-query-caching.md) available in Power BI Premium.
+* General availability of [Power BI Home](https://powerbi.microsoft.com/blog/announcing-power-bi-home-general-availability-ga-roadmap/).
+
+---
 
 ## March 2019 Update (2.67.5404.581)
 
 Our March updates were packed full of compelling and useful updates, and we hope these improvements make you feel as lucky as finding a four-leaf clover. 
+
+# [Power BI Desktop](#tab/powerbi-desktop)
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop). If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same even though the version numbering may differ between the two, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
 
@@ -1585,15 +1690,21 @@ The following video channel describes and shows each of these updates. You can a
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rBPGH6eYlT0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> [!NOTE]
-> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+# [Power BI service](#tab/powerbi-service)
 
+Here were the updates in the Power BI service.
 
+* General Availability of Multi-Geo for Power BI Premium.
+* Editing and managing Power BI content support for Azure B2B.
+* Public preview of read-only [XMLA endpoint](https://powerbi.microsoft.com/blog/power-bi-open-platform-connectivity-with-xmla-endpoints-public-preview/).
+
+---
 
 ## February 2019 Update (2.66.5376.1681)
 
 Our February updates made customers swoon and love all our new data connectors, features, and analytics enhancements. Just like a box of chocolates, you never know what you get... but with this February update, all changes were sweet and downright delicious. 
 
+# [Power BI Desktop](#tab/powerbi-desktop)
 
 You can [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop). If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same even though the version numbering may differ between the two, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
 
@@ -1650,14 +1761,37 @@ The following video channel describes and shows each of these updates. You can a
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dMD25wfElLg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> [!NOTE]
-> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+# [Power BI service](#tab/powerbi-service)
 
+Here were the updates in the Power BI service.
+
+* Workloads and active dataset size metrics in [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+* Export to PDF for Power BI reports.
+* [On-demand e-mail subscriptions](../collaborate-share/service-publish-to-web.md).
+* Bulk operations in the Admin Portal.
+* Filtered export for PPT and PDF.
+* [Help and support settings](https://powerbi.microsoft.com/blog/tailoring-help-and-support-for-power-bi-users/) in the Admin Portal.
+* Data lineage experience for [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md).
+* Certified Power BI visuals setting in the Admin Portal.
+
+---
 
 ## January 2019 Update
 
+# [Power BI Desktop](#tab/powerbi-desktop)
+
 There was no Power BI Desktop release in January 2019 - we were all busy having a happy holiday, spending time with friends and family. 
 
+# [Power BI service](#tab/powerbi-service)
+
+Here were the updates in the Power BI service.
+
+* [Embedding secure Power BI reports](../collaborate-share/service-embed-report-spo.md) in internal portals or websites.
+* Updates to [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md) editor with new connectors, and support for native SQL queries and Power Query Online transformations.
+* [Personal bookmarks](https://powerbi.microsoft.com/blog/announcing-personal-bookmarks-in-the-power-bi-service/) in the Power BI service.
+* Time-based scheduling with e-mail subscriptions.
+
+---
 
 ## December 2018 Update (2.65.5313.621)
 
@@ -1731,6 +1865,7 @@ The following video channel describes and shows each of these updates. You can a
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
 
 
 ## November 2018 Update (2.64.5285.582)
