@@ -87,18 +87,25 @@ Starting with the October 2020 release of Power BI Report Server we enabled the 
     $parameters = Get-RsRestItemDataModelParameters '/executionlogparameter'
     ```
 
-4. This variable is updated with the values that we need to change.
-5. We save the result of this call in a variable:
+4. Map to a dictionary to access the parameter values.
 
     ```powershell
-    $parameters[0].Value = 'myproductionserver'
-    $parameters[1].Value = 'myproductiondatabase'
+    $parameterdictionary = @{}
+    foreach ($parameter in $parameters) { $parameterdictionary.Add($parameter.Name, $parameter); }
+
+4. This variable is updated with the values that we need to change.
+5. Update the values of the desired parameters:
+
+    ```powershell
+    $parameterdictionary[“ServerName”].Value = 'myproductionserver'
+    $parameterdictionary[“Databasename”].Value = 'myproductiondatabase'
     ```
 
 6. With the updated values, we can use the commandlet `Set-RsRestItemDataModelParameters` to update the values in the server:
 
     ```powershell
     Set-RsRestItemDataModelParameters -RsItem '/executionlogparameter' -DataModelParameters $parameters
+    $parameterdictionary.Values
     ```
 
 7. Once the parameters are updated, the server updates any data sources that were bound to the parameters. Going back to the **Edit data source** dialog box, you should be able to set credentials for the updated server and database.
