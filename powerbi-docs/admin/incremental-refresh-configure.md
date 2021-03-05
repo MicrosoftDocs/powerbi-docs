@@ -65,7 +65,7 @@ The data type of the RangeStart and RangeEnd parameters must be of date/time dat
 
 1. In Power Query Editor, click **Get data** > **Blank Query**.
 
-1. In **Query Settings**, type a name the function, for example, DateKey, and then in the formula editor, enter the following formula:
+1. In **Query Settings**, type a name, for example, DateKey, and then in the formula editor, enter the following formula:
 
     `= (x as datetime) => Date.Year(x)*10000 + Date.Month(x)*100 + Date.Day(x)`
 
