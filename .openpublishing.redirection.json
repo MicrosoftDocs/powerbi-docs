@@ -971,8 +971,13 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/fundamentals/service-whats-new.md",
+            "redirect_url": "/power-bi/fundamentals/desktop-latest-update",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-premium-release-notes.md",
-            "redirect_url": "/power-bi/fundamentals/service-whats-new",
+            "redirect_url": "/power-bi/fundamentals/desktop-latest-update",
             "redirect_document_id": false
         },
         {
@@ -3692,7 +3697,7 @@
         },
         {
             "source_path": "powerbi-docs/service-whats-new.md",
-            "redirect_url": "/power-bi/fundamentals/service-whats-new",
+            "redirect_url": "/power-bi/fundamentals/desktop-latest-update",
             "redirect_document_id": true
         },
         {
