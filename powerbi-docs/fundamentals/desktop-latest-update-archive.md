@@ -685,7 +685,7 @@ The following video describes each of these updates. You can also watch this vid
 
 We were grateful to be able to share our April Power BI upate with you, our global community. 
 
-#[Power BI Desktop](#tab/powerbi-desktop)
+# [Power BI Desktop](#tab/powerbi-desktop)
 
 Get the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from the [Microsoft Store](https://aka.ms/pbidesktopstore). Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering may differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
 
@@ -746,7 +746,7 @@ The following video describes each of these updates. You can also watch this vid
 
 > [!VIDEO https://www.youtube.com/embed/q2Hfn_Rhb3E]
 
-#[Power BI service](#tab/powerbi-service)
+# [Power BI service](#tab/powerbi-service)
 
 Here were the updates in the Power BI service.
 
@@ -760,7 +760,7 @@ Here were the updates in the Power BI service.
 
 We felt lucky as a four-leaf clover to share our March Power BI update with you. 
 
-#[Power BI Desktop](#tab/powerbi-desktop)
+# [Power BI Desktop](#tab/powerbi-desktop)
 
 Get the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from the [Microsoft Store](https://aka.ms/pbidesktopstore). Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering may differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
 
@@ -834,7 +834,7 @@ The following video describes each of these updates. You can also watch this vid
 
 > [!VIDEO https://www.youtube.com/embed/DMjvJGGB_LQ]
 
-#[Power BI service](#tab/powerbi-service)
+# [Power BI service](#tab/powerbi-service)
 
 Here were the updates in the Power BI service.
 
