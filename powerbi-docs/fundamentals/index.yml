@@ -39,10 +39,8 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: What's new in Power BI Desktop?
+          - text: What's new in Power BI?
             url: desktop-latest-update.md
-          - text: What's new in the service?
-            url: service-whats-new.md
 
   # Card (optional)
   - title: Get started with Learn
