@@ -39,13 +39,17 @@ highlightedContent:
       itemType: tutorial
       url: developer/visuals/create-react-visual.md
     # Card
-    - title: Power BI embedded analytics client APIs
-      itemType: overview
-      url: /javascript/api/overview/powerbi/
+    - title: Add the Power BI app to Microsoft Teams
+      itemType: how-to-guide
+      url: collaborate-share/service-microsoft-teams-app.md
     # Card
     - title: Datasets discovery using the datasets hub (Preview)
       itemType: concept
       url: connect-data/service-datasets-hub.md
+    # Card
+    - title: Power BI embedded analytics client APIs
+      itemType: overview
+      url: /javascript/api/overview/powerbi/
     # Card
     - title: Power BI on Microsoft Learn 
       itemType: learn
