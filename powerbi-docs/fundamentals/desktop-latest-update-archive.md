@@ -1,5 +1,5 @@
 ---
-title: Previous monthly updates to Power BI Desktop
+title: Previous monthly updates to Power BI Desktop and the Power BI service
 description: Feature updates from previous releases of Power BI Desktop
 author: davidiseminger
 ms.author: davidi
@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 02/23/2021
+ms.date: 03/04/2021
 LocalizationGroup: Get started
 ---
-# Previous monthly updates to Power BI Desktop
+# Previous monthly updates to Power BI Desktop and the Power BI service
 
-This article describes previous updates to **Power BI Desktop**. For the most current month's release, check out [**Power BI Desktop** latest updates](desktop-latest-update.md).
+This article describes previous updates to **Power BI Desktop** and the **Power BI service**. For the most current month's release, check out [**Power BI** latest updates](desktop-latest-update.md).
 
 Get the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from Microsoft Store on Windows 10. Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering may differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
 
@@ -31,18 +31,15 @@ The links beside each update mean the following:
 
 You can also watch the **Latest Updates** video from the beginning, right inside this article, by clicking on the **play** icon on the video image found below the list of updates.
 
-The following sections describe previous months' updates to **Power BI Desktop**.
-
-
+The following sections describe previous months' updates to **Power BI Desktop** and the **Power BI service**.
 
 ## December 2020 Update (2.88.321.0)
 
 Our December Power BI Desktop updates dazzled us all like a snowy lane filled with lights and sleigh rides. 
 
-The monthly blog and video updates for Power BI Desktop now also includes what's new updates for Power BI mobile and the Power BI service. This article discusses the updates for Power BI Desktop. To learn about updates for mobile and the Power BI service, check out their respective what's new articles:
+The monthly blog and video updates for Power BI Desktop now also includes what's new updates for Power BI mobile and the Power BI service. In this section choose the tab for Power BI Desktop or the Power BI service. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
-* [What's new in the Power BI service](service-whats-new.md)
-* [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+# [Power BI Desktop](#tab/powerbi-desktop)
 
 Get the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from the [Microsoft Store](https://aka.ms/pbidesktopstore). Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering may differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
 
@@ -112,14 +109,24 @@ Select the following links to download this earlier version:
 * [December 2020 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-12_x64.exe)
 
 
+# [Power BI service](#tab/powerbi-service)
+
+- Power BI search in Microsoft Search in Bing and Office now generally available
+- Home List experience
+- Custom publish message
+- New export settings are available in the Power BI admin portal
+- Power BI Premium per user public preview now available
+- Quickly create reports in the Service (coming soon)
+
+---
+
 ## November 2020 Update (2.87.261.0)
 
-Our November Power BI Desktop updates included an entire family gathering of new and improved features; they were a feast of goodness. 
+Our November Power BI updates included an entire family gathering of new and improved features; they were a feast of goodness. 
 
-The monthly blog and video updates for Power BI Desktop now also includes what's new updates for Power BI mobile and the Power BI service. This article discusses the updates for Power BI Desktop. To learn about updates for mobile and the Power BI service, check out their respective what's new articles:
+The monthly blog and video updates for Power BI Desktop now also includes what's new updates for Power BI mobile and the Power BI service. In this section choose the tab for Power BI Desktop or the Power BI service. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
-* [What's new in the Power BI service](service-whats-new.md)
-* [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+# [Power BI Desktop](#tab/powerbi-desktop)
 
 Get the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from the [Microsoft Store](https://aka.ms/pbidesktopstore). Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering may differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
 
@@ -190,10 +197,16 @@ Select the following links to download this earlier version:
 * [November 2020 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-11_x64.exe)
 
 
+# [Power BI service](#tab/powerbi-service)
+
+- Certified and Promoted reports and apps
+- The ‘new look’ of the Power BI service is live
+
+---
 
 ## October 2020 Update (2.86.321.0)
 
-Our October Power BI Desktop updates are a bucket full of spooky-good treats that you can sort and enjoy for weeks to come. 
+Our October Power BI updates are a bucket full of spooky-good treats that you can sort and enjoy for weeks to come. 
 
 The monthly blog and video updates for Power BI Desktop now also includes what's new updates for Power BI mobile and the Power BI service. This article discusses the updates for Power BI Desktop. To learn about updates for mobile and the Power BI service, check out their respective what's new articles:
 
@@ -1004,7 +1017,7 @@ Here was the update in the Power BI service.
 
 ## November 2019 Update (2.75.5649.341)
 
-Our our November updates were as welcome as a happy family gathering. 
+Our November updates were as welcome as a happy family gathering. 
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
