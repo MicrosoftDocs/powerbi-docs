@@ -27,6 +27,18 @@ highlightedContent:
       itemType: get-started
       url: fundamentals/desktop-getting-started.md
     # Card
+    - title: Autoscale with Premium Gen2
+      itemType: concept
+      url: admin/service-premium-auto-scale.md
+    # Card
+    - title: Power BI Embedded Gen2 (preview)
+      itemType: overview
+      url: developer/embedded/power-bi-embedded-generation-2.md
+    # Card
+    - title: Create a Power BI visual using React
+      itemType: tutorial
+      url: developer/visuals/create-react-visual.md
+    # Card
     - title: Power BI embedded analytics client APIs
       itemType: overview
       url: /javascript/api/overview/powerbi/
