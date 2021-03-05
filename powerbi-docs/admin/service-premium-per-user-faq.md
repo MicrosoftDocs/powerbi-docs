@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 1/13/2021
+ms.date: 3/2/2021
 LocalizationGroup: Premium
 ---
 # Power BI Premium Per User FAQ (preview)
@@ -31,11 +31,11 @@ This article groups questions and answers into the following categories:
 
 2.	**When will it be available for purchase?**
 
-    Development is ongoing, and we do not anticipate PPU releasing to GA until 2021. Until general availability, the public preview is available to all organizations and is free of charge.
+    Premium per user will be generally available on April 2, 2021. 
 
 3.	**Do I need a Power BI Pro AND a Premium Per User license?**
 
-    No, you get all the capabilities of Power BI Pro with Premium Per User license.
+    If you purchase the standalone Premium per user license for $20, you don't need a seperate Pro license as it will provide both Pro and PPU capabilities.  If you already have a Pro license, either through a standalone purchase or through Office 365 E5, there is a Premium per user add-on SKU you may purchase for $10 which just adds the Premium per user capabilities to your account.  
 
 4.	**How do I get a trial?**
 
