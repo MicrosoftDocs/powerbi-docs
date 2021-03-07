@@ -11,7 +11,7 @@ ms.date: 03/04/2021
 
 # Tutorial: Embed a Power BI report in an application for your organization
 
-In this tutorial, you'll learn how to embed a Power BI report in an application for your organization. Embedding Power BI content (such as reports, dashboards and tiles) in an app for your organization, is also known as an *app owns data* solution. In this solution, your users need to authenticate against Power BI with their own credentials.
+In this tutorial, you'll learn how to embed a Power BI report in an application for your organization. Embedding Power BI content (such as reports, dashboards and tiles) in an app for your organization, is also known as an *user owns data* solution. In this solution, your users need to authenticate against Power BI with their own credentials.
 
 In this tutorial, you'll learn how to embed:
 
@@ -21,12 +21,15 @@ In this tutorial, you'll learn how to embed:
 >* Using .NET
 >* With the `Microsoft.Identity.Web` library
 
+>[!NOTE]
+>The full solution used in this tutorial, is available from the [NetCore-UserOwnsData-Tutorial](https://github.com/PowerBiDevCamp/NetCore-UserOwnsData-Tutorial) GitHub repository.
+
 ## Prerequisites
 
 * A [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) or [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) license.
 
     >[!NOTE]
-    >To [move to production](move-to-production.md) you'll need a [capacity](embedded-capacity.md).
+    >To [move to production](move-to-production.md) you'll need a [capacity](embedded-capacity.md) with an *EM* or *P* SKU.
 
 * A Power BI workspace with a report.
 
