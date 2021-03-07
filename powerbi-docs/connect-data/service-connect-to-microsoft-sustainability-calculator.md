@@ -111,6 +111,10 @@ You’ll need your Azure enrollment number. If you don’t have it, ask your org
    ![Enter enrollment number](media/service-connect-to-microsoft-sustainability-calculator/enter-enrollment-number.png)
 
 4. Connect your account:
+
+   > [!NOTE]
+   > The Azure portal panes that you use to connect your account might not be in the same order or display the same details as shown in the following examples.
+   
    - In **You are connecting to (1 of 2)**, under **Authentication method**, select **OAuth2**, and under **Privacy level setting for this data source**, select **Organizational**.
 
       ![Screenshot of parameters authentication first dialog.](media/service-connect-to-microsoft-sustainability-calculator/connecting-1-of-2.png)
