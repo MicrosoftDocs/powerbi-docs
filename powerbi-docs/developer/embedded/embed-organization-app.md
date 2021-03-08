@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 03/04/2021
+ms.date: 03/08/2021
 ---
 
 # Tutorial: Embed a Power BI report in an application for your organization
@@ -22,14 +22,14 @@ In this tutorial, you'll learn how to embed:
 >* With the `Microsoft.Identity.Web` library
 
 >[!NOTE]
->The full solution used in this tutorial, is available from the [NetCore-UserOwnsData-Tutorial](https://github.com/PowerBiDevCamp/NetCore-UserOwnsData-Tutorial) GitHub repository.
+>The full solution used in this tutorial, is available from the [DOTNET5-UserOwnsData-Tutorial](https://github.com/PowerBiDevCamp/DOTNET5-UserOwnsData-Tutorial) GitHub repository.
 
 ## Prerequisites
 
 * A [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) or [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) license.
 
     >[!NOTE]
-    >To [move to production](move-to-production.md) you'll need a [capacity](embedded-capacity.md) with an *EM* or *P* SKU.
+    >*User owns data* embedding is not supported on [capacities](embedded-capacity.md) based on *A* SKUs. An *A* SKU can only be used for *app owns data* embedding.
 
 * A Power BI workspace with a report.
 
