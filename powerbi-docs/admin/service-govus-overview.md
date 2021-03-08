@@ -126,7 +126,7 @@ We include the quarter for estimated availability if release is planned for an e
 |[Dataflows - Direct Query](../transform-model/dataflows/dataflows-configure-consume.md) | ![available](../media/yes.png) |![available](../media/yes.png)|Not planned |
 |[Dataflows - SQL Compute engine optimization](../transform-model/dataflows/dataflows-premium-features.md) | ![available](../media/yes.png) |![available](../media/yes.png)|Not planned |
 |[Power BI tab in Teams](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>3</sup>|![available](../media/yes.png)|![not available](../media/no.png)|![not available](../media/no.png)|
-|[Large models](service-premium-large-models.md) | Q1 2021 |Q1 2021| Not planned |
+|[Large models](service-premium-large-models.md) | ![available](../media/yes.png) |![available](../media/yes.png)| Not planned |
 |[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[Bring Your Own Storage (Azure Data Lake Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 
