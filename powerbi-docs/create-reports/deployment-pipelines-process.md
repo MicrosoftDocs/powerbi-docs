@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 03/04/2021
+ms.date: 03/07/2021
 ---
 
 # Understand the deployment process
@@ -80,6 +80,8 @@ When you deploy content from one pipeline stage to another, the copied content c
 
 * Dashboards
 
+* Paginated reports
+
 ### Unsupported items
 
 Deployment pipelines doesn't support the following items:
@@ -89,8 +91,6 @@ Deployment pipelines doesn't support the following items:
 * Reports based on unsupported datasets
 
 * [Template app workspaces](../connect-data/service-template-apps-create.md#create-the-template-workspace)
-
-* Paginated reports
 
 * Dataflows
 

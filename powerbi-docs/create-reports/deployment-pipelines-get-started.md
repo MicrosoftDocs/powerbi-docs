@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 03/04/2021
+ms.date: 03/07/2021
 ---
 
 # Get started with deployment pipelines
@@ -95,6 +95,9 @@ Follow these steps to assign a workspace in a deployment pipeline:
 
 Any [Pro user](../admin/service-admin-purchasing-power-bi-pro.md) that's a member or admin in the source workspace, can deploy content to an empty stage (a stage that doesn't contain content). The workspace must reside on a capacity for the deployment to be completed.
 
+>[!NOTE]
+>To deploy a paginated report, you'll need a [capacity that supports paginated reports](./../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports). 
+
 When deploying content to an empty stage, the relationships between the items are kept. For example, a report that is bound to a dataset in the source stage, will be cloned alongside its dataset, and the clones will be similarly bound in the target workspace.
 
 Once the deployment is complete, refresh the dataset. For more information, see [deploying content to an empty stage](deployment-pipelines-process.md#deploying-content-to-an-empty-stage).
@@ -142,15 +145,30 @@ To create a dataset rule, follow the steps in this section. After you create all
 
 1. In the pipeline stage you want to create a dataset rule for, select **Deployment settings**.
 
-    ![A screenshot of the deployment settings button, located at the top right of each deployment pipeline stage.](media/deployment-pipelines-get-started/deployment-settings.png)
+    >[!div class="mx-imgBorder"]
+    >![A screenshot of the deployment settings button, located in the deployment settings.](media/deployment-pipelines-get-started/deployment-settings.png)
 
-2. From the Deployment settings pane, select the dataset you want to create a rule for.
+2. In the Deployment settings pane, select the type of dataset you want to set a rule for:
 
-    [![A screenshot showing selecting a dataset for creating a dataset rule.](media/deployment-pipelines-get-started/dataset-rules.png)](media/deployment-pipelines-get-started/dataset-rules.png#lightbox)
+    * **Datasets** - Set dataset rules for report datasets
 
-3. Select the type of rule you want to create, expand the list, and then select **Add rule**.
+        >[!div class="mx-imgBorder"]
+        >![A screenshot of the datasets tab, located at the top right of each deployment pipeline stage.](media/deployment-pipelines-get-started/datasets-tab.png)
 
-     [![A screenshot showing selecting a data source rule, and clicking the add rule option.](media/deployment-pipelines-get-started/add-rule.png)](media/deployment-pipelines-get-started/add-rule.png#lightbox)
+    * **Paginated reports** - Set dataset rules for paginated report datasets
+
+        >[!div class="mx-imgBorder"]
+        >![A screenshot of the paginated report tab, located at the top right of each deployment pipeline stage.](media/deployment-pipelines-get-started/paginated-report-tab.png)
+
+3. Select the dataset you want to create a rule for.
+
+    >[!div class="mx-imgBorder"]
+    >[![A screenshot showing selecting a dataset for creating a dataset rule.](media/deployment-pipelines-get-started/dataset-rules.png)](media/deployment-pipelines-get-started/dataset-rules.png)
+
+4. Select the type of rule you want to create, expand the list, and then select **Add rule**.
+
+    >[!div class="mx-imgBorder"]
+    >[![A screenshot showing selecting a data source rule, and clicking the add rule option.](media/deployment-pipelines-get-started/add-rule.png)](media/deployment-pipelines-get-started/add-rule.png)
 
 ### Dataset rule types
 
@@ -166,6 +184,9 @@ There are two types of rules you can create:
 * **Parameter rules**
     Select a parameter from the list of parameters; the current value is shown. Edit the value to the value you want to take effect after each deployment.
 
+    >[!NOTE]
+    >Parameter rules are not supported for paginated reports.
+
 ### Dataset rule limitations
 
 * You must be the dataset owner to create a dataset rule.
@@ -177,6 +198,8 @@ There are two types of rules you can create:
 * If the data source or parameters defined in a rule are changed or removed from the source dataset, the rule will not be valid and the deployment will fail.
 
 * Parameter rules cannot be defined for parameters that are of type *Any* or *Binary*. For more information, see [datasets update parameters restrictions](/rest/api/power-bi/datasets/updateparameters).
+
+* Parameter rules are not supported for paginated reports.
 
 * Data source rules can only be defined for the following data sources:
     * Azure Analysis Services
