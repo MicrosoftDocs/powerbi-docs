@@ -150,12 +150,12 @@ To create a dataset rule, follow the steps in this section. After you create all
 
 2. In the Deployment settings pane, select the type of dataset you want to set a rule for:
 
-    * **Datasets** - Set dataset rules for report datasets
+    * **Datasets** - Set dataset rules for reports
 
         >[!div class="mx-imgBorder"]
         >![A screenshot of the datasets tab, located at the top right of each deployment pipeline stage.](media/deployment-pipelines-get-started/datasets-tab.png)
 
-    * **Paginated reports** - Set dataset rules for paginated report datasets
+    * **Paginated reports** - Set dataset rules for paginated reports
 
         >[!div class="mx-imgBorder"]
         >![A screenshot of the paginated report tab, located at the top right of each deployment pipeline stage.](media/deployment-pipelines-get-started/paginated-report-tab.png)

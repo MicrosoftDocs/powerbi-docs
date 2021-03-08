@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: pbi-deployment
-ms.date: 03/04/2021
+ms.date: 03/08/2021
 ---
 
 # Deployment pipelines troubleshooting
@@ -149,6 +149,20 @@ Dataset rules are not applied immediately after they're configured. To apply dat
 ### Does deployment pipelines support multi-geo?
 
 Multi-geo is supported. It may take longer to deploy content between stages in different geos.
+
+## Paginated reports
+
+### Who's the owner of my paginated report?
+
+When you deploy a paginated report...
+
+### Why does my paginated report display data from the target stage?
+
+When you deploy a paginated report, it continues to point to the dataset it was originally connected to. Use [dataset rules](deployment-pipelines-get-started.md#step-4---create-dataset-rules) to point your paginated report to any dataset you want. You can use dataset rules to point the paginated report to a dataset in the stage where the paginated report resides.
+
+### Where are my paginated report subreports?
+
+In deployment pipelines, paginated report subreports are kept in the same folder that holds your paginated report.
 
 ## Permissions
 
