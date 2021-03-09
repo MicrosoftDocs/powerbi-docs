@@ -138,7 +138,7 @@ There are two types of deployment rules:
 
 * **Dataset rules** - Defined on data sources and parameters, in each dataset. These rules determine the values of the data sources or parameters for a specific dataset. For example, if you want a dataset in a production stage to point to a production database, you can define a rule for this. The rule is defined in the production stage, under the appropriate dataset. Once the rule is defined, content deployed from test to production, will inherit the value as defined in the deployment rule, and will always apply as long as the rule is unchanged and valid.
 
-* **paginated reports** - Defined for paginated report datasets. You can use these rules to determine the dataset of the paginated report. After deployment, paginated reports continue to use the source stage dataset. Use paginated report rules to point the paginated report to a different dataset, for example the target (current) stage dataset.
+* **Paginated reports** - Defined for paginated report datasets. You can use these rules to determine the dataset of the paginated report. After deployment, paginated reports continue to use the source stage dataset. Use paginated report rules to point the paginated report to a different dataset, for example the target (current) stage dataset.
 
 >[!NOTE]
 > Deployment rules work only when the source and target data source are of the same type.
@@ -202,6 +202,8 @@ To create a deployment rule, follow the steps in this section. After you create 
 ---
 
 ### Deployment rules limitations
+
+This section lists the limitations for the deployment rules. The limitations are slightly different for each type of deployment rule.
 
 # [Datasets](#tab/datasets)
 
