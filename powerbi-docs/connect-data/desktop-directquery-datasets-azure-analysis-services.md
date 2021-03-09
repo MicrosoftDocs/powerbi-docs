@@ -90,7 +90,7 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
 
     ![Unexpected date hierarchy behavior](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-07.png)
 
-    For more information on using date columns versus date hierarchies, visit this article.
+    For more information on using date columns versus date hierarchies, visit [this article](../transform-model/desktop-auto-date-time.md).
 
 - You may see unuseful error messages when using AI features with a model that has a DirectQuery connection to Azure Analysis Services. 
 
