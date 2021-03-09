@@ -57,7 +57,7 @@ By the way, this article uses the Retail Analysis sample, if you'd like to insta
    
    ![Select visual-level filters](media/power-bi-report-add-filter/power-bi-default-visual-filter.png)
   
-1. From the Fields pane, select the field you want to add as a new visual-level filter, and drag it into the **Visual level filters area**.  In this example, we drag **Category** to **Add data fields here** under **Filters on this visual**.
+1. From the Fields pane, select the field you want to add as a new visual-level filter, and drag it into the **Filters on this visual** area.  In this example, we drag **Category** to **Add data fields here**.
      
     ![Add a field to the Filters pane](media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png)
 
@@ -83,8 +83,11 @@ You can also add a page-level filter to filter an entire page.
 
 2. Open the Visualizations, Filters, and Fields panes, if they're not already open.
 
-3. From the Fields pane, select the field you want to add as a new page-level filter, and drag it into the **Page level filters** area.  
-4. Select the values you want to filter and set either  **Basic** or **Advanced** filtering controls.
+3. From the Fields pane, select the field you want to add as a new page-level filter, and drag it to the bottom of the **Filters on this page** area.  
+
+   ![Drag field to Add page filter area.](media/power-bi-report-add-filter/power-bi-page-filter.png)
+
+1. Select the values you want to filter and set either  **Basic** or **Advanced** filtering controls.
    
    All the visualizations on the page are redrawn to reflect the change.
    

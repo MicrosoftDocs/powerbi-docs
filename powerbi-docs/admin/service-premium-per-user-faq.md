@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 3/2/2021
+ms.date: 3/9/2021
 LocalizationGroup: Premium
 ---
 # Power BI Premium Per User FAQ (preview)
@@ -127,7 +127,7 @@ This article groups questions and answers into the following categories:
 
 7.	**Will the export API be available for Premium Per User?**
 
-    This is currently available for paginated reports, and is restricted to a single call once every 5 minutes.  Power BI reports are not supported at this time.  
+    This is currently available for paginated reports, and is restricted to a single call once every 5 minutes on a per user basis.  Power BI reports are not supported at this time.  
 
 8.	**How will e-mail subscriptions work in PPU?**
 
@@ -155,7 +155,7 @@ This article groups questions and answers into the following categories:
 
 14.	**Can I have a dataflow run in a Premium per user workspace, be imported into a Power BI dataset in another workspace, and users who consume that content not need a Premium per user license?**
 
-    As long as the Power BI report author has a Premium Per User license, this is possible during the preview period for PPU.
+    No, this action is not supported.
 
 15. **Can I use the Power BI mobile apps with Premium per user?**
 
