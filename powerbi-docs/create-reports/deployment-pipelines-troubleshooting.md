@@ -161,7 +161,11 @@ Multi-geo is supported. It may take longer to deploy content between stages in d
 
 ### Why can't I deploy a paginated report?
 
-To deploy a paginated report, you need to be a workspace member in the workspace you're deploying from (the source stage workspace). If you're not a workspace member in the source stage, you'll not be able to deploy the paginated report.
+To deploy a paginated report, both of these conditions must be met:
+
+* You need to be a workspace member in the workspace you're deploying from (the source stage workspace). If you're not a workspace member in the source stage, you'll not be able to deploy the paginated report.
+
+* In your target stage capacity, you need to [enable paginated reports workload](./../developer/embedded/embed-paginated-reports-organization.md#enable-paginated-reports-workload).
 
 ### Who's the owner of my paginated report?
 
@@ -172,13 +176,13 @@ If you're deploying a paginated report to a stage that already contains a copy o
 >[!NOTE]
 >Before overriding a paginated report, a dialog box asking for consent appears.
 
-### Why does my paginated report display data from the target stage?
+### Why does my target stage paginated report display data from a Power BI dataset in the source stage?
 
-When you deploy a paginated report, it continues to point to the dataset it was originally connected to. Use [deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) to point your paginated report to any dataset you want. You can use deployment rules to point the paginated report to a dataset in the stage where the paginated report resides.
+When you deploy a paginated report that's connected to a Power BI dataset, it continues to point to the dataset it was originally connected to. Use [deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) to point your paginated report to any dataset you want. You can use deployment rules to point the paginated report to a dataset in the stage where the paginated report resides.
 
 ### Where are my paginated report subreports?
 
-In deployment pipelines, paginated report subreports are kept in the same folder that holds your paginated report.
+Paginated report subreports are kept in the same folder that holds your paginated report. To avoid rendering problems, when using [selective copy](deployment-pipelines-get-started.md#selective-deployment) to copy a paginated report with subreports, select both the parent report and the subreports.
 
 ## Permissions
 

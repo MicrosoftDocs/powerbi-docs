@@ -183,6 +183,9 @@ To create a deployment rule, follow the steps in this section. After you create 
     >[!div class="mx-imgBorder"]
     >[![A screenshot showing selecting a data source rule, and clicking the add rule option.](media/deployment-pipelines-get-started/add-paginated-report-rule.png)](media/deployment-pipelines-get-started/add-rule.png)
 
+    >[!NOTE]
+    >**Datasource rules** will be grayed out if you are not the report owner, or if your report does not contain any datasources.
+
 5. Create a **Data source rule**. The data source list is taken from the dataset of the source pipeline stage. From the data source list, select a data source to be replaced. Use one of the following methods to select a value to replace the one from the source stage:
         
     * Select from a list.
