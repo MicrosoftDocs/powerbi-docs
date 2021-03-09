@@ -300,6 +300,10 @@
           href: ../visuals/power-bi-visualizations-arcgis.md
         - name: "Tips and tricks for map visualizations"
           href: ../visuals/power-bi-map-tips-and-tricks.md
+      - name: Azure Maps in Power BI
+        items: 
+        - name: "Get started with Azure Maps Power BI visual"
+          href: /azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/context/context
       - name: "Matrix visuals"
         href: ../visuals/desktop-matrix-visual.md
       - name: "Power Apps visuals"
