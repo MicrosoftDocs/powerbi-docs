@@ -134,38 +134,64 @@ When working in a deployment pipeline, different stages may have different confi
 
 When you deploy content between pipeline stages, configuring deployment rules enables you to allow changes to content, while keeping some settings intact.
 
-Deployment rules are defined on data sources and parameters, in each dataset. They determine the values of the data sources or parameters for a specific dataset. For example, if you want a dataset in a production stage to point to a production database, you can define a rule for this. The rule is defined in the production stage, under the appropriate dataset. Once the rule is defined, content deployed from test to production, will inherit the value as defined in the dataset rule, and will always apply as long as the rule is unchanged and valid.
+Deployment rules are defined on data sources and parameters, in each dataset. They determine the values of the data sources or parameters for a specific dataset. For example, if you want a dataset in a production stage to point to a production database, you can define a rule for this. The rule is defined in the production stage, under the appropriate dataset. Once the rule is defined, content deployed from test to production, will inherit the value as defined in the deployment rule, and will always apply as long as the rule is unchanged and valid.
 
 >[!NOTE]
 > Deployment rules work only when the source and target data source are of the same type.
 
-### Create a dataset rule
+### Create a deployment rule
 
-To create a dataset rule, follow the steps in this section. After you create all the deployment rules you need, deploy the datasets with the newly created rules from the source stage to the target stage where the rules were created. Your rules will not apply until you deploy the datasets from the source to the target stage.
+To create a deployment rule, follow the steps in this section. After you create all the deployment rules you need, deploy the datasets with the newly created rules from the source stage to the target stage where the rules were created. Your rules will not apply until you deploy the datasets from the source to the target stage.
 
-1. In the pipeline stage you want to create a dataset rule for, select **Deployment settings**.
+1. In the pipeline stage you want to create a deployment rule for, select **Deployment settings**.
 
-    >[!div class="mx-imgBorder"]
     >![A screenshot of the deployment settings button, located in the deployment settings.](media/deployment-pipelines-get-started/deployment-settings.png)
 
-2. In the Deployment settings pane, select the type of dataset you want to set a rule for:
+2. In the Deployment settings pane, select the type of dataset you want to set a rule for.
 
-    * **Datasets** - Set deployment rules for reports
-    * **Paginated reports** - Set deployment rules for paginated reports
+# [Reports](#tab/reports)
 
 3. Select the dataset you want to create a rule for.
 
     >[!div class="mx-imgBorder"]
-    >![A screenshot showing selecting a dataset for creating a dataset rule.](media/deployment-pipelines-get-started/dataset-rules.png)](media/deployment-pipelines-get-started/dataset-rules.png)
+    >![A screenshot showing selecting a dataset for creating a deployment rule.](media/deployment-pipelines-get-started/datasets-tab.png)
 
 4. Select the type of rule you want to create, expand the list, and then select **Add rule**.
 
     >[!div class="mx-imgBorder"]
     >[![A screenshot showing selecting a data source rule, and clicking the add rule option.](media/deployment-pipelines-get-started/add-rule.png)](media/deployment-pipelines-get-started/add-rule.png)
 
-### Dataset rule types
+5. There are two types of rules you can create:
+    
+    **Data source rules**
+        The data source list is taken from the dataset of the source pipeline stage. From the data source list, select a data source to be replaced. Use one of the following methods to select a value to replace the one from the source stage:
 
-There are two types of rules you can create:
+        * Select from a list.
+        
+        * Select *Other* and manually add the new data source. You can only change to a data source from the same type.
+
+    **Parameter rules**
+        Select a parameter from the list of parameters; the current value is shown. Edit the value to the value you want to take effect after each deployment.
+
+# [Paginated reports](#tab/paginated-reports)
+
+3. Select the dataset you want to create a rule for.
+
+    >[!div class="mx-imgBorder"]
+    >![A screenshot showing selecting a dataset for creating a deployment rule.](media/deployment-pipelines-get-started/paginated-report-tab.png)
+
+4. Expand the **Data source rules** list, and then select **Add rule**.
+
+    >[!div class="mx-imgBorder"]
+    >[![A screenshot showing selecting a data source rule, and clicking the add rule option.](media/deployment-pipelines-get-started/add-paginated-report-rule.png)](media/deployment-pipelines-get-started/add-rule.png)
+
+5. Create a **Data source rule**. The data source list is taken from the dataset of the source pipeline stage. From the data source list, select a data source to be replaced. Use one of the following methods to select a value to replace the one from the source stage:
+        
+    * Select from a list.
+        
+    * Select *Other* and manually add the new data source. You can only change to a data source from the same type.
+
+    ---
 
 * **Data source rules**
     The data source list is taken from the dataset of the source pipeline stage. From the data source list, select a data source to be replaced. Use one of the following methods to select a value to replace the one from the source stage:
@@ -177,12 +203,9 @@ There are two types of rules you can create:
 * **Parameter rules**
     Select a parameter from the list of parameters; the current value is shown. Edit the value to the value you want to take effect after each deployment.
 
-    >[!NOTE]
-    >Parameter rules are not supported for paginated reports.
+### Limitations for deployment rules
 
-### Dataset rule limitations
-
-* You must be the dataset owner to create a dataset rule.
+* You must be the dataset owner to create a deployment rule.
 
 * Deployment rules cannot be created in the development stage.
 

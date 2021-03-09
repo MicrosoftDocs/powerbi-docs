@@ -148,7 +148,7 @@ Deployment rules are not applied immediately after they're configured. To apply 
 
 ### Why are the deployment rules greyed out?
 
-To create a [dataset rule](deployment-pipelines-get-started.md#step-4---create-deployment-rules), you must be the owner of the Power BI item you're creating a dataset rule for. If you're not the owner of the Power BI item, deployment rules will be greyed out.
+To create a [deployment rule](deployment-pipelines-get-started.md#step-4---create-deployment-rules), you must be the owner of the Power BI item you're creating a dataset rule for. If you're not the owner of the Power BI item, deployment rules will be greyed out.
 
 >[!div class="mx-imgBorder"]
 >![A screenshot showing deployment pipelines deployment rules greyed out.](media/deployment-pipelines-troubleshooting/rules-greyed-out.png)

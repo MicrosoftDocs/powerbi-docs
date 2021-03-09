@@ -322,7 +322,7 @@ This section lists most of the limitations in deployment pipelines.
 
 * After deployment, downloading a dataset (from the stage it's been deployed to) is not supported.
 
-* For a list of dataset rule limitations, see [dataset rule limitations](deployment-pipelines-get-started.md#dataset-rule-limitations).
+* For a list of deployment rule limitations, see [limitations of deployment rules](deployment-pipelines-get-started.md#limitations-of-deployment-rules).
 
 ## Next steps
 
