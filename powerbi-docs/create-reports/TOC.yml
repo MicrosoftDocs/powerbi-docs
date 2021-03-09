@@ -292,8 +292,8 @@
         href: ../visuals/power-bi-visualization-kpi.md
       - name: Maps
         items: 
-      - name: "Shape map visuals (preview)"
-        href: ../visuals/desktop-shape-map.md
+        - name: "Shape map visuals (preview)"
+          href: ../visuals/desktop-shape-map.md
         - name: "Filled maps (choropleths)"
           href: ../visuals/power-bi-visualization-filled-maps-choropleths.md
         - name: "ArcGIS maps"
