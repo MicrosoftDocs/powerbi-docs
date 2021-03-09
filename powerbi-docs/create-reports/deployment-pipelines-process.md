@@ -14,7 +14,7 @@ ms.date: 03/07/2021
 
 The deployment process lets you clone content from one stage in the pipeline to another, typically from development to test, and from test to production.
 
-During deployment, Power BI copies the content from the current stage, into the target one. The connections between the copied items are kept during the copy process. Power BI also applies the configured dataset rules to the updated content in the target stage. Deploying content may take a while, depending on the number of items being deployed. During this time, you can navigate to other pages in the Power BI portal, but you cannot use the content in the target stage.
+During deployment, Power BI copies the content from the current stage, into the target one. The connections between the copied items are kept during the copy process. Power BI also applies the configured deployment rules to the updated content in the target stage. Deploying content may take a while, depending on the number of items being deployed. During this time, you can navigate to other pages in the Power BI portal, but you cannot use the content in the target stage.
 
 ## Deploying content to an empty stage
 
@@ -102,9 +102,9 @@ Deployment pipelines doesn't support the following items:
 
 During deployment, the following item properties are copied and overwrite the item properties at the target stage:
 
-* Data sources ([dataset rules](deployment-pipelines-get-started.md#step-4---create-dataset-rules) are supported)
+* Data sources ([deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) are supported)
 
-* Parameters​ ([dataset rules](deployment-pipelines-get-started.md#step-4---create-dataset-rules) are supported)
+* Parameters​ ([deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) are supported)
 
 * Report visuals​
 

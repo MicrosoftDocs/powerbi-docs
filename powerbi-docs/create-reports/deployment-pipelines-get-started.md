@@ -128,20 +128,20 @@ Deploying to a previous stage works only if the previous stage is empty. When de
 
 [![A screenshot showing the deploy to previous stage button, available from the test or production stage menus.](media/deployment-pipelines-get-started/deploy-back.png)](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
 
-## Step 4 - Create dataset rules
+## Step 4 - Create deployment rules
 
 When working in a deployment pipeline, different stages may have different configurations. For example, each stage can have different databases or different query parameters. The development stage might query sample data from the database, while the test and production stages query the entire database.
 
-When you deploy content between pipeline stages, configuring dataset rules enables you to allow changes to content, while keeping some settings intact.
+When you deploy content between pipeline stages, configuring deployment rules enables you to allow changes to content, while keeping some settings intact.
 
-Dataset rules are defined on data sources and parameters, in each dataset. They determine the values of the data sources or parameters for a specific dataset. For example, if you want a dataset in a production stage to point to a production database, you can define a rule for this. The rule is defined in the production stage, under the appropriate dataset. Once the rule is defined, content deployed from test to production, will inherit the value as defined in the dataset rule, and will always apply as long as the rule is unchanged and valid.
+Deployment rules are defined on data sources and parameters, in each dataset. They determine the values of the data sources or parameters for a specific dataset. For example, if you want a dataset in a production stage to point to a production database, you can define a rule for this. The rule is defined in the production stage, under the appropriate dataset. Once the rule is defined, content deployed from test to production, will inherit the value as defined in the dataset rule, and will always apply as long as the rule is unchanged and valid.
 
 >[!NOTE]
-> Dataset rules work only when the source and target data source are of the same type.
+> Deployment rules work only when the source and target data source are of the same type.
 
 ### Create a dataset rule
 
-To create a dataset rule, follow the steps in this section. After you create all the dataset rules you need, deploy the datasets with the newly created rules from the source stage to the target stage where the rules were created. Your rules will not apply until you deploy the datasets from the source to the target stage.
+To create a dataset rule, follow the steps in this section. After you create all the deployment rules you need, deploy the datasets with the newly created rules from the source stage to the target stage where the rules were created. Your rules will not apply until you deploy the datasets from the source to the target stage.
 
 1. In the pipeline stage you want to create a dataset rule for, select **Deployment settings**.
 
@@ -150,20 +150,13 @@ To create a dataset rule, follow the steps in this section. After you create all
 
 2. In the Deployment settings pane, select the type of dataset you want to set a rule for:
 
-    * **Datasets** - Set dataset rules for reports
-
-        >[!div class="mx-imgBorder"]
-        >![A screenshot of the datasets tab, located at the top right of each deployment pipeline stage.](media/deployment-pipelines-get-started/datasets-tab.png)
-
-    * **Paginated reports** - Set dataset rules for paginated reports
-
-        >[!div class="mx-imgBorder"]
-        >![A screenshot of the paginated report tab, located at the top right of each deployment pipeline stage.](media/deployment-pipelines-get-started/paginated-report-tab.png)
+    * **Datasets** - Set deployment rules for reports
+    * **Paginated reports** - Set deployment rules for paginated reports
 
 3. Select the dataset you want to create a rule for.
 
     >[!div class="mx-imgBorder"]
-    >[![A screenshot showing selecting a dataset for creating a dataset rule.](media/deployment-pipelines-get-started/dataset-rules.png)](media/deployment-pipelines-get-started/dataset-rules.png)
+    >![A screenshot showing selecting a dataset for creating a dataset rule.](media/deployment-pipelines-get-started/dataset-rules.png)](media/deployment-pipelines-get-started/dataset-rules.png)
 
 4. Select the type of rule you want to create, expand the list, and then select **Add rule**.
 
@@ -191,7 +184,7 @@ There are two types of rules you can create:
 
 * You must be the dataset owner to create a dataset rule.
 
-* Dataset rules cannot be created in the development stage.
+* Deployment rules cannot be created in the development stage.
 
 * When an item is removed or deleted, its rules are deleted too. These rules cannot be restored.
 
@@ -245,7 +238,7 @@ When two sequential stages aren't the same, a **compare** link appears underneat
 
 * **Different** – An item that exists both in the source and the target stage, were one of the versions was changed after the last deployment. After deployment, the item in the source stage will overwrite the item in the target stage, regardless of where the change was made.
 
-    Datasets with configured dataset rules that haven't been deployed, are also marked as *different*. This is because dataset rules are not applied until the datasets are deployed from the source stage to the target stage which includes the configured rules.
+    Datasets with configured deployment rules that haven't been deployed, are also marked as *different*. This is because deployment rules are not applied until the datasets are deployed from the source stage to the target stage which includes the configured rules.
 
 * **Missing from** – This label indicates that an item appears in the target stage, but not in the source stage.
 

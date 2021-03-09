@@ -107,7 +107,7 @@ For a comprehensive list of items and artifacts that are not supported in deploy
 
 ### Why did my deployment fail due to broken rules?
 
-If you have problems configuring dataset rules, visit [dataset rules](deployment-pipelines-get-started.md#step-4---create-dataset-rules), and make sure you follow the [dataset rule limitations](deployment-pipelines-get-started.md#dataset-rule-limitations).
+If you have problems configuring deployment rules, visit [deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules), and make sure you follow the [dataset rule limitations](deployment-pipelines-get-started.md#dataset-rule-limitations).
 
 If your deployment was previously successful, and is suddenly failing with broken rules, it may be due to a dataset being republished. The following changes to the source dataset, result in a failed deployment:
 
@@ -119,7 +119,7 @@ If your deployment was previously successful, and is suddenly failing with broke
 
 **Data source rules**
 
-Your dataset rules are missing values. This may have happened if your dataset changed.
+Your deployment rules are missing values. This may have happened if your dataset changed.
 
 ![A screenshot of the invalid rules error displayed when a deployment fails due to broken links.](media/deployment-pipelines-troubleshooting/broken-rule.png)
 
@@ -131,7 +131,7 @@ To deploy successfully, fix or remove the broken rules, and redeploy.
 
 You can’t change the data source connection in Power BI service.
 
-If you want to change the data source in the test or production stages, you can use [dataset rules](deployment-pipelines-get-started.md#step-4---create-dataset-rules) or [APIs](/rest/api/power-bi/datasets/updateparametersingroup). Dataset rules will only come into effect after the next deployment.
+If you want to change the data source in the test or production stages, you can use [deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) or [APIs](/rest/api/power-bi/datasets/updateparametersingroup). Deployment rules will only come into effect after the next deployment.
 
 ### I fixed a bug in production, but now I can't select the 'deploy to previous stage' button. Why is it greyed out?
 
@@ -142,9 +142,16 @@ After creating the pipeline, use the development stage to develop your content, 
 >[!NOTE]
 >Backwards deployment only supports [full deployment](deployment-pipelines-get-started.md#deploying-all-content). It doesn't support [selective deployment](deployment-pipelines-get-started.md#selective-deployment)
 
-### Why do I need to deploy after configuring dataset rules?
+### Why do I need to deploy after configuring deployment rules?
 
-Dataset rules are not applied immediately after they're configured. To apply dataset rules, you have to deploy the datasets from the source stage to the target stage which includes the created dataset rules. After configuring dataset rules, and before you deploy, the *different* indicator is shown next to the dataset with the configured rules. This indicates that you need to deploy that dataset from the source stage to the target stage. Once you deploy, if no other changes were made, the *different* indicator will disappear signifying that the rules were applied successfully.
+Deployment rules are not applied immediately after they're configured. To apply deployment rules, you have to deploy the datasets from the source stage to the target stage which includes the created deployment rules. After configuring deployment rules, and before you deploy, the *different* indicator is shown next to the dataset with the configured rules. This indicates that you need to deploy that dataset from the source stage to the target stage. Once you deploy, if no other changes were made, the *different* indicator will disappear signifying that the rules were applied successfully.
+
+### Why are the deployment rules greyed out?
+
+To create a [dataset rule](deployment-pipelines-get-started.md#step-4---create-deployment-rules), you must be the owner of the Power BI item you're creating a dataset rule for. If you're not the owner of the Power BI item, deployment rules will be greyed out.
+
+>[!div class="mx-imgBorder"]
+>![A screenshot showing deployment pipelines deployment rules greyed out.](media/deployment-pipelines-troubleshooting/rules-greyed-out.png)
 
 ### Does deployment pipelines support multi-geo?
 
@@ -152,13 +159,22 @@ Multi-geo is supported. It may take longer to deploy content between stages in d
 
 ## Paginated reports
 
+### Why can't I deploy a paginated report?
+
+To deploy a paginated report, you need to be a workspace member in the workspace you're deploying from (the source stage workspace). If you're not a workspace member in the source stage, you'll not be able to deploy the paginated report.
+
 ### Who's the owner of my paginated report?
 
-When you deploy a paginated report...
+When you're deploying a paginated report for the first time, you become the owner of the report.
+
+If you're deploying a paginated report to a stage that already contains a copy of that paginated report, you'll override the previous report and become its owner, instead of the previous owner. In such cases, you'll need to have credentials to the underlying data source, so that the data can be used in the paginated report.
+
+>[!NOTE]
+>Before overriding a paginated report, a dialog box asking for consent appears.
 
 ### Why does my paginated report display data from the target stage?
 
-When you deploy a paginated report, it continues to point to the dataset it was originally connected to. Use [dataset rules](deployment-pipelines-get-started.md#step-4---create-dataset-rules) to point your paginated report to any dataset you want. You can use dataset rules to point the paginated report to a dataset in the stage where the paginated report resides.
+When you deploy a paginated report, it continues to point to the dataset it was originally connected to. Use [deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) to point your paginated report to any dataset you want. You can use deployment rules to point the paginated report to a dataset in the stage where the paginated report resides.
 
 ### Where are my paginated report subreports?
 
@@ -180,9 +196,9 @@ Content can be deployed to an empty stage or to a stage that contains content. T
 
 * **Overriding a dataset** - Deployment overrides each dataset that is included in the target stage, even if the dataset wasn't changed. The user must be the owner of all the target stage datasets specified in the deployment.
 
-### Which permissions do I need to configure dataset rules?
+### Which permissions do I need to configure deployment rules?
 
-To configure dataset rules in deployment pipelines, you must be the dataset owner.
+To configure deployment rules in deployment pipelines, you must be the dataset owner.
 
 ### Why can't I see workspaces in the pipeline?
 

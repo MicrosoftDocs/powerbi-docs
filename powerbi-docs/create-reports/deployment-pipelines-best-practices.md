@@ -137,9 +137,9 @@ When testing, you can use the same capacity as the production stage. However, th
 
 ![A diagram showing a deployment pipeline with a test environment simulating the production environment.](media/deployment-pipelines-best-practices/deployment-pipelines-best-practices-diagram.png)
 
-### Use dataset rules with a real-life data source
+### Use deployment rules with a real-life data source
 
-If you're using the test stage to simulate real life data usage, it's recommended to separate the development and test data sources. The development database should be relatively small, and the test database should be as similar as possible to the production database. Use [data source rules](deployment-pipelines-get-started.md#step-4---create-dataset-rules) to switch data sources in the test stage.
+If you're using the test stage to simulate real life data usage, it's recommended to separate the development and test data sources. The development database should be relatively small, and the test database should be as similar as possible to the production database. Use [data source rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) to switch data sources in the test stage.
 
 Controlling the amount of data you import from your data source, is useful if you're using a production data source in the test stage. To do this, add a parameter to your data source query in Power BI Desktop. Use parameter rules to control the amount of imported data, or edit the parameter's value.
 You can also use this approach if you don't want to overload your capacity.
@@ -180,9 +180,9 @@ In addition, you should limit access to the pipeline by only enabling pipeline p
 
 ### Set rules to ensure production stage availability
 
-[Dataset rules](deployment-pipelines-get-started.md#step-4---create-dataset-rules) are a powerful way to ensure the data in production is always connected and available to users. Once dataset rules are applied, deployments can run while you have the assurance that end users will see the relevant info without disturbance.
+[Deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) are a powerful way to ensure the data in production is always connected and available to users. Once deployment rules are applied, deployments can run while you have the assurance that end users will see the relevant info without disturbance.
 
-Make sure that you set production dataset rules for data sources and parameters defined in the dataset.
+Make sure that you set production deployment rules for data sources and parameters defined in the dataset.
 
 ### Update the production app
 
