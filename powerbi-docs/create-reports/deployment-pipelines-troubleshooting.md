@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: pbi-deployment
-ms.date: 03/08/2021
+ms.date: 03/09/2021
 ---
 
 # Deployment pipelines troubleshooting
@@ -148,7 +148,7 @@ Deployment rules are not applied immediately after they're configured. To apply 
 
 ### Why are the deployment rules greyed out?
 
-To create a [deployment rule](deployment-pipelines-get-started.md#step-4---create-deployment-rules), you must be the owner of the Power BI item you're creating a dataset rule for. If you're not the owner of the Power BI item, deployment rules will be greyed out.
+To create a [deployment rule](deployment-pipelines-get-started.md#step-4---create-deployment-rules), you must be the owner of the Power BI item you're creating a deployment rule for. If you're not the owner of the Power BI item, deployment rules will be greyed out.
 
 >[!div class="mx-imgBorder"]
 >![A screenshot showing deployment pipelines deployment rules greyed out.](media/deployment-pipelines-troubleshooting/rules-greyed-out.png)
@@ -167,18 +167,17 @@ To deploy a paginated report, both of these conditions must be met:
 
 * In your target stage capacity, you need to [enable paginated reports workload](./../developer/embedded/embed-paginated-reports-organization.md#enable-paginated-reports-workload).
 
-### Who's the owner of my paginated report?
+### Who's the owner of a deployed paginated report?
 
 When you're deploying a paginated report for the first time, you become the owner of the report.
 
 If you're deploying a paginated report to a stage that already contains a copy of that paginated report, you'll override the previous report and become its owner, instead of the previous owner. In such cases, you'll need to have credentials to the underlying data source, so that the data can be used in the paginated report.
 
->[!NOTE]
->Before overriding a paginated report, a dialog box asking for consent appears.
-
 ### Why does my target stage paginated report display data from a Power BI dataset in the source stage?
 
-When you deploy a paginated report that's connected to a Power BI dataset, it continues to point to the dataset it was originally connected to. Use [deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) to point your paginated report to any dataset you want. You can use deployment rules to point the paginated report to a dataset in the stage where the paginated report resides.
+At present, datasets are treated as an external Analysis Services data source, and connections to datasets aren't switched automatically after deployment.
+
+When you deploy a paginated report that's connected to a Power BI dataset, it continues to point to the dataset it was originally connected to. Use [deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) to point your paginated report to any dataset you want, including for example the target stage dataset.
 
 ### Where are my paginated report subreports?
 
