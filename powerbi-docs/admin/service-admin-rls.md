@@ -53,6 +53,14 @@ You can only create or modify roles within Power BI Desktop.
 
 Add a member to the role by typing in the email address or name of the user or security group. You can't add Groups created in Power BI. You can add members [external to your organization](../guidance/whitepaper-azure-b2b-power-bi.md#data-security-for-external-partners).
 
+You can use the following groups to set up row level security.    
+- Distribution Group
+- Mail-enabled Group
+- Security Group
+
+Note, however, that Office 365 groups are not supported and cannot be added to any roles.
+
+
 ![Add a member](media/service-admin-rls/rls-add-member.png)
 
 You can also see how many members are part of the role by the number in parentheses next to the role name, or next to Members.
