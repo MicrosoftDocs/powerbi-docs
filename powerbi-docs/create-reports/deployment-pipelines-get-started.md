@@ -163,15 +163,13 @@ To create a deployment rule, follow the steps in this section. After you create 
 
 5. There are two types of rules you can create:
     
-    **Data source rules**
-        The data source list is taken from the dataset of the source pipeline stage. From the data source list, select a data source to be replaced. Use one of the following methods to select a value to replace the one from the source stage:
+    * **Data source rules** - The data source list is taken from the dataset of the source pipeline stage. From the data source list, select a data source to be replaced. Use one of the following methods to select a value to replace the one from the source stage:
 
         * Select from a list.
         
         * Select *Other* and manually add the new data source. You can only change to a data source from the same type.
 
-    **Parameter rules**
-        Select a parameter from the list of parameters; the current value is shown. Edit the value to the value you want to take effect after each deployment.
+    * **Parameter rules** - Select a parameter from the list of parameters; the current value is shown. Edit the value to the value you want to take effect after each deployment.
 
 # [Paginated reports](#tab/paginated-reports)
 
@@ -192,16 +190,6 @@ To create a deployment rule, follow the steps in this section. After you create 
     * Select *Other* and manually add the new data source. You can only change to a data source from the same type.
 
 ---
-
-* **Data source rules**
-    The data source list is taken from the dataset of the source pipeline stage. From the data source list, select a data source to be replaced. Use one of the following methods to select a value to replace the one from the source stage:
-
-    1. Select from a list.
-
-    2. Select **Other** and manually add the new data source. You can only change to a data source from the same type.
-
-* **Parameter rules**
-    Select a parameter from the list of parameters; the current value is shown. Edit the value to the value you want to take effect after each deployment.
 
 ### Deployment rules limitations
 
