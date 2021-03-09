@@ -78,7 +78,7 @@ As you can't edit datasets data sources in Power BI service, we recommend using 
 
 In deployment pipelines, you can configure parameter rules to set specific values for the development, test, and production stages.
 
-If you don’t use parameters for your connection string, you can define data source rules to specify a connection string for a given dataset. However, in deployment pipelines, this isn't supported for all data sources. To verify that you can configure rules for your data source, see [limitations of deployment rules](deployment-pipelines-get-started.md#limitations-of-deployment-rules).
+If you don’t use parameters for your connection string, you can define data source rules to specify a connection string for a given dataset. However, in deployment pipelines, this isn't supported for all data sources. To verify that you can configure rules for your data source, see [deployment rules limitations](deployment-pipelines-get-started.md#deployment-rules-limitations).
 
 Parameters have additional uses, such as making changes to queries, filters, and the text displayed in the report.
 

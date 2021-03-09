@@ -191,7 +191,7 @@ To create a deployment rule, follow the steps in this section. After you create 
         
     * Select *Other* and manually add the new data source. You can only change to a data source from the same type.
 
-    ---
+---
 
 * **Data source rules**
     The data source list is taken from the dataset of the source pipeline stage. From the data source list, select a data source to be replaced. Use one of the following methods to select a value to replace the one from the source stage:
@@ -203,7 +203,7 @@ To create a deployment rule, follow the steps in this section. After you create 
 * **Parameter rules**
     Select a parameter from the list of parameters; the current value is shown. Edit the value to the value you want to take effect after each deployment.
 
-### Limitations for deployment rules
+### Deployment rules limitations
 
 * You must be the dataset owner to create a deployment rule.
 
