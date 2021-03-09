@@ -26,8 +26,7 @@ sections:
           Administration
         answer: |
            
-      - question: |
-          What size Premium capacity do I need for paginated reports?
+      - question: What size Premium capacity do I need for paginated reports?
         answer: |
           The paginated reports workload is available on P1 – P3 SKUs.  You may also use it with A4 – A6 SKUs for embed or test/dev scenarios.
           
