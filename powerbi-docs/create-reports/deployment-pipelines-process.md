@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 03/04/2021
+ms.date: 03/09/2021
 ---
 
 # Understand the deployment process
@@ -234,6 +234,23 @@ In the production stage, the main action button on the bottom-right corner opens
 ## Permissions
 
 Pipeline permissions and workspace permissions are granted and managed separately. For example, a user with pipeline access that doesn't have workspace permissions, will be able to view the pipeline and share it with others. However, this user will not be able to view the content of the workspace in the pipeline, or in the workspace page, and will not be able to perform deployments.
+
+### Data security
+
+Tenant admins can enable the **block republish and disable package refresh** setting, located in the *dataset security* [tenant settings](./../guidance/admin-tenant-settings.md). When enabled, 
+
+Follow these steps to enable the **block republish and disable package refresh** setting:
+
+1. In Power BI service, select **Settings** > **Admin portal**.
+
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of accessing the Power B I service admin settings.](media/deployment-pipelines-process/admin-settings.png)
+
+2. In **Tenant settings**, scroll down to **Dataset security** and expand **block republish and disable package refresh**.
+
+3. Enable the **block republish and disable package refresh** setting.
+
+
 
 ### User with pipeline access
 
