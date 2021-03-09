@@ -93,6 +93,6 @@ And that's it - your Power BI Premium Gen2 subscription is now configured to use
 ## Next steps
 
 * [What is Power BI Premium?](service-premium-what-is.md)
-* [Power BI Premium FAQ](service-premium-faq.md)
+* [Power BI Premium FAQ](service-premium-faq.yml)
 * [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.md)
 * [Add or change Azure subscription administrators](https://docs.microsoft.com/azure/cost-management-billing/manage/add-change-subscription-administrator)

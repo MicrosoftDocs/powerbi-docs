@@ -45,7 +45,7 @@
       - name: Premium capacity scenarios
         href: service-premium-capacity-scenarios.md
       - name: Power BI Premium FAQ
-        href: service-premium-faq.md
+        href: service-premium-faq.yml
       - name: Power BI Premium Per User FAQ
         href: service-premium-per-user-faq.md        
   - name: How to

@@ -112,7 +112,7 @@ You can also purchase A SKUs for testing and other scenarios, which provides Pre
 
 [Configure and manage capacities in Power BI Premium](service-admin-premium-manage.md)\
 [Power BI pricing page](https://powerbi.microsoft.com/pricing/)\
-[Power BI Premium FAQ](service-premium-faq.md)\
+[Power BI Premium FAQ](service-premium-faq.yml)\
 [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -31,4 +31,4 @@ For more information about Power BI Premium or Multi-Geo, take a look at the fol
 * [How to purchase Power BI Premium](../admin/service-admin-premium-purchase.md)
 * [Multi-Geo support for Power BI Premium (Preview)](../admin/service-admin-premium-multi-geo.md)
 * [Where is my Power BI tenant located?](../admin/service-admin-where-is-my-tenant-located.md)
-* [Power BI Premium FAQ](../admin/service-premium-faq.md)
+* [Power BI Premium FAQ](../admin/service-premium-faq.yml)
