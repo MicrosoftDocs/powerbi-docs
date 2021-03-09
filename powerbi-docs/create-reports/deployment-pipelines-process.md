@@ -302,7 +302,7 @@ Dataset owners that are either workspace members or admins, can also do the foll
 
 To tighten the security in the organization, tenant admins can enable the *block republish and disable package refresh* setting, located in the *dataset security* [tenant settings](./../admin/service-admin-portal.md#tenant-settings).
 
-The *block republish and disable package refresh* setting is disabled by default. When enabled, it blocks refreshing and republishing datasets from any user in the organization that isn't the dataset owner. In such cases, [workspace members](#workspace-member) and [workspace admins](#workspace-admins) will need to be dataset owners in order to deploy datasets.
+The *block republish and disable package refresh* setting is disabled by default. When enabled, it blocks refreshing and republishing datasets from any user in the organization that isn't the dataset owner. In such cases, [workspace members](#workspace-member) and [workspace admins](#workspace-admin) will need to be dataset owners in order to deploy datasets.
 
 Follow these steps to enable the *block republish and disable package refresh* setting:
 
