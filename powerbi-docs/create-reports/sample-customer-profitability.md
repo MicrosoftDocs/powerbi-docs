@@ -102,7 +102,7 @@ Two tiles on this dashboard, **Target vs Actual** and **Year Over Year Revenue G
 
     a. From the **Industry** slicer, select **Retail**.   
     
-    ![Retail industry selected.](media/sample-customer-profitability/power-bi-retailsgit.png)
+    ![Retail industry selected.](media/sample-customer-profitability/power-bi-retails.png)
 
     b. We see that only two district managers cover the retail industry: Andrew and Carlos.  
     
