@@ -203,7 +203,7 @@ To create a deployment rule, follow the steps in this section. After you create 
 
 ### Deployment rules limitations
 
-This section lists the limitations for the deployment rules. The limitations are slightly different for each type of deployment rule.
+This section lists the limitations for the deployment rules. There are some differences in the limitations for each type of deployment rule.
 
 # [Datasets](#tab/datasets)
 
