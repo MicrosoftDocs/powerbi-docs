@@ -88,13 +88,13 @@ Deployment pipelines doesn't support the following items:
 
 * Datasets that do not originate from a PBIX
 
-* Reports based on unsupported datasets
-
-* [Template app workspaces](../connect-data/service-template-apps-create.md#create-the-template-workspace)
+* PUSH datasets
 
 * Dataflows
 
-* PUSH datasets
+* Reports based on unsupported datasets
+
+* [Template app workspaces](../connect-data/service-template-apps-create.md#create-the-template-workspace)
 
 * Workbooks
 

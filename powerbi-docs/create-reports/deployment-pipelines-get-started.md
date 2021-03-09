@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 03/07/2021
+ms.date: 03/09/2021
 ---
 
 # Get started with deployment pipelines
@@ -61,7 +61,7 @@ You can create a pipeline from an existing workspace, providing you're the admin
 
 ## Step 2 - Assign a workspace to a deployment pipeline
 
-After creating a pipeline, you need to add the content you want to manage to the pipeline. Adding content to the pipeline is done by assigning a workspace to the pipeline stage. You can assign a workspace to any stage. 
+After creating a pipeline, you need to add the content you want to manage to the pipeline. Adding content to the pipeline is done by assigning a workspace to the pipeline stage. You can assign a workspace to any stage.
 
 You can assign one workspace to a deployment pipeline. Deployment pipelines will create clones of the workspace content, to be used in different stages of the pipeline.
 
