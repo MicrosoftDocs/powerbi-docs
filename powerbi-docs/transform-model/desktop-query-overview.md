@@ -36,7 +36,7 @@ To get to Power Query Editor, select **Transform data** from the **Home** tab of
 
 With no data connections, Power Query Editor appears as a blank pane, ready for data.  
 
-![Screenshot of Power B I Desktop showing Power Query Editor with no data connections.](media/desktop-query-overview/query-overview-blank-pane.png)
+![Screenshot of Power B I Desktop showing Power Query Editor with no data connections.](media/desktop-query-overview/query-overview-blank-panes.png)
 
 Once a query is loaded, Power Query Editor view becomes more interesting. If we connect to the following Web data source, Power Query Editor loads information about the data, which you can then begin to shape:
 
