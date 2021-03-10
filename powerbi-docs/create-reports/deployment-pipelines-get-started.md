@@ -138,7 +138,7 @@ There are two types of deployment rules:
 
 * **Dataset rules** - Defined on data sources and parameters, in each dataset. These rules determine the values of the data sources or parameters for a specific dataset. For example, if you want a dataset in a production stage to point to a production database, you can define a rule for this. The rule is defined in the production stage, under the appropriate dataset. Once the rule is defined, content deployed from test to production, will inherit the value as defined in the deployment rule, and will always apply as long as the rule is unchanged and valid.
 
-* **Paginated reports** - Defined for the data sources of each dataset. You can use these rules to determine the data source of the paginated report. After deployment, paginated reports continue to point to the source stage. Use paginated report rules to point the paginated report to a different stage, for example the target (current) stage.
+* **Paginated reports** - Defined for the data sources of each paginated report. You can use these rules to determine the data sources of the paginated report.
 
 >[!NOTE]
 > Deployment rules work only when the source and target data source are of the same type.
@@ -193,11 +193,11 @@ To create a deployment rule, follow the steps in this section. After you create 
     >[!NOTE]
     >**Data source rules** will be grayed out if you are not the paginated report owner, or if your paginated report does not contain any data sources.
 
-5. Create a **Data source rule**. The data source list is taken from the dataset of the source pipeline stage. From the data source list, select a data source to be replaced. Use one of the following methods to select a value to replace the one from the source stage:
+5. Create a **Data source rule**. The data source list is taken from the paginated report in the source pipeline stage. From the data source list, select a data source name to be updated. Use one of the following methods to select a value to update:
         
-    * Select from a list.
+    * Select from the available values.
         
-    * Select *Other* and manually add the new data source. You can only change to a data source from the same type.
+    * Select *Other* and manually update the new data source details. You can only change to a data source of the same type.
 
 ---
 
