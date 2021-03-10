@@ -275,7 +275,7 @@ Workspace members that have *pipeline access*, can also do the following:
 
 * Compare stages
 
-* Deploy reports and dashboards
+* Deploy reports, dashboards and paginated reports
 
 * Remove workspaces
 
