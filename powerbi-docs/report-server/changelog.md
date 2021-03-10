@@ -36,7 +36,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 ## October 2020
 - **Power BI Report Server**
     - *Version: 1.9.7709.41358 (Build 15.0.1104.310), Released: March 9, 2021*
-        - Security Updates
+        - Security Updates 
     - *Version: 1.9.7675.15620 (Build 15.0.1104.300), Released: January 8, 2021*
         - Bug fixes
             - Fixed issue with refresh of reports with two or more datasources that differ only by the casing of the letters.
