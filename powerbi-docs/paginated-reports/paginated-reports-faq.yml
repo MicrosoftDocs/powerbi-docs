@@ -23,7 +23,6 @@ sections:
   - name: Ignored
     questions:
       - question: Administration
-      
       - question: |
           What size Premium capacity do I need for paginated reports?
         answer: |
@@ -101,7 +100,6 @@ sections:
           > **Premium Gen2**, currently in preview, doesn't require you to change memory settings. The underlying system manages memory in Premium Gen2 automatically. Paginated reports workload is available on P1-P3 SKUs and A1-A6 SKUs in **Premium Gen2**.
           
       - question: General
-         
       - question: |
           When should I use a paginated report vs. a Power BI report?
         answer: |
