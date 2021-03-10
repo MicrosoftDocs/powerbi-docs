@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 10/22/2020
+ms.date: 03/10/2021
 LocalizationGroup: Connect to data
 ---
 # Dynamic M query parameters in Power BI Desktop (preview)
@@ -149,7 +149,7 @@ There are some considerations and limitations to consider when using dynamic M q
 * The feature is only supported for M based data sources. The following DirectQuery sources are not supported:
     * T-SQL based data sources: SQL Server, Azure SQL Database, Synapse SQL pools (aka Azure SQL Data Warehouse), and Synapse SQL OnDemand pools
     * Live connect data sources: Azure Analysis Services, SQL Server Analysis Services, Power BI Datasets
-    * Other unsupported data sources: Oracle, Teradata and Relational SAP Hana
+    * Other unsupported data sources: Oracle, Teradata and Relational SAP Hana, PostgreSQL
     * Partially supported through XMLA / TOM endpoint programmability: SAP BW and SAP Hana 
 * [Aggregations](../transform-model/desktop-aggregations.md) are not supported with the feature
 
