@@ -25,8 +25,6 @@
     items: 
     - name: "What's new in the latest Power BI Desktop update?"
       href: desktop-latest-update.md
-    - name: "What's new in the Power BI service"
-      href: service-whats-new.md
     - name: "Understand the Power BI service"
       href: service-basic-concepts.md
     - name: "Ten tips for getting help"
@@ -64,7 +62,9 @@
       href: webinars.md                     
     - name: "Power BI Desktop videos"
       href: desktop-videos.md
-    - name: "Power BI Desktop updates archive"
+    - name: "Power BI updates archive"
       href: desktop-latest-update-archive.md
+    - name: "Power BI Desktop change log"
+      href: desktop-change-log.md
     - name: "Power BI Desktop Send a Smile Privacy Statement"
       href: desktop-send-smile-privacy-statement.md

@@ -7,7 +7,6 @@ ms.reviewer: ""
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.custom: seodec18
 ms.date: 12/22/2020
 
 ---
@@ -223,7 +222,7 @@ To get the tenant ID GUID, follow these steps:
 
 2. Search for **App registrations** and select the **App registrations** link.
 
-3. Select the Azure AD app your using for embedding your Power BI content.
+3. Select the Azure AD app you're using for embedding your Power BI content.
 
 4. From the **Overview** section, copy the **Directory (tenant) ID** GUID.
 
@@ -386,7 +385,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
     a. In the **Package Explorer** pane, right-click **AppOwnsData**, and select **Properties**.
 
-    b. In the **Properties for AppOwnesData** window, select **Targeted Runtimes** and then select **Apache Tomcat**. This selection will include the version of *Apache Tomcat* you're using, for example *Apache Tomcat v9.0*.
+    b. In the **Properties for AppOwnsData** window, select **Targeted Runtimes** and then select **Apache Tomcat**. This selection will include the version of *Apache Tomcat* you're using, for example *Apache Tomcat v9.0*.
 
     c. Select  **Apply and Close**.
 

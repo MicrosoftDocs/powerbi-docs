@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 03/03/2021
+ms.date: 03/05/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
 ---
@@ -60,9 +60,10 @@ Premium Gen2 provides the following updates or improved experiences:
 Enable Premium Gen2 to take advantage of its updates. To enable Premium Gen2, take the following steps:
 
 1. In the admin portal, navigate to **Capacity settings**.
-2. Select **Power BI Premium**.
-3. A section appears titled **Premium Generation 2 (preview)**, and in that section is a slider to enable Premium Generation 2 (preview). 
-4. Move the slider to **Enabled**.
+1. Select **Power BI Premium**.
+1. If you have already allocated capacity, select it.
+1. A section appears titled **Premium Generation 2 (preview)**, and in that section is a slider to enable Premium Generation 2 (preview). 
+1. Move the slider to **Enabled**.
 
 The following image shows how to enable Premium Gen2. 
 
@@ -70,15 +71,17 @@ The following image shows how to enable Premium Gen2.
 
 You can also [configure and use Autoscale with Power BI Premium](service-premium-auto-scale.md) to ensure capacity and performance for your Premium users.
 
-### Known limitations in Premium Gen2
+### Limitations in Premium Gen2
 
 The following known limitations currently apply to Premium Gen2:
 
 1.    Premium Gen2 capacity utilization can't be tracked in the metrics app.
 
-2.  If you're using XMLA on Premium Gen2, make sure you're using the most recent versions of the [data modeling and management tools](service-premium-connect-tools.md#data-modeling-and-management-tools). 
+1. Premium Gen2 does not support customer-managed encryption keys for data at rest (BYOK). [Learn more about using your own keys (BYOK)](service-encryption-byok.md).
 
-3.  Analysis services features in Premium Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are:
+1.  If you're using XMLA on Premium Gen2, make sure you're using the most recent versions of the [data modeling and management tools](service-premium-connect-tools.md#data-modeling-and-management-tools). 
+
+1.  Analysis services features in Premium Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are:
 
     |Tool|Minimum version required|Estimated release date|
     |---|---|---|
@@ -86,6 +89,34 @@ The following known limitations currently apply to Premium Gen2:
     |SQL Server Data Tools (SSDT)|2.9.15|General availability November 30, 2020|
     | AS PowerShell| Greater than 21.1.18229|November 26, 2020|
 
+4.  Memory restrictions are different in Premium Gen2. In the first generation of Premium, memory was restricted to a limited amount of RAM used by all artifacts simultaneously running. 
+In Gen2, there is no memory Limit for the capacity as a whole. Instead, individual artifacts (such as datasets, dataflows, paginated reports) are subject to the following RAM limitations:
+
+    - A single artifact cannot exceed the amount of memory the capacity SKU offers. 
+
+    The limitation includes all the operations (interactive and background) being processed for the artifact while in use (for example, while a report is being viewed, interacted with, or refreshed).
+
+    Dataset operations like queries are also subject to individual memory limits, just as they are in the first version of Premium.
+
+    To illustrate the restriction, consider a dataset with an in-memory footprint of 1 GB, and a user initiating an on-demand refresh while interacting with a report based on the same dataset. Two separate actions determine the amount of memory attributed to the original dataset, which may be larger than two times the dataset size: 
+
+    - The dataset needs to be loaded into memory.
+    - The refresh operation will cause the memory used by the dataset to double, at least, since the original copy of data is still available for active queries, while an additional copy is being processed by the refresh. Once the refresh transaction commits, the memory footprint will reduce.
+    - Report interactions will execute DAX queries. Each DAX query consumes a certain amount of temporary memory required to produce the results. Each query may consume a different amount of memory and will be subject to the query memory limitation as described.
+
+    The following table summarizes all the limitations that are dependent on the capacity size:
+
+    | **Capacity SKU** | **Size in vCores** | **Backend vCores** | **CPU time / minute** | **Memory per artifact\* [Gb]** | **Max memory per query\* [Gb]** | **DirectQuery\LC queries / sec \*** |
+    | --- | --- | --- | --- | --- | --- | --- |
+    | **A1\EM1** | 1 | 0.5 | 30 | 3 | 1 | 3.75 |
+    | **A2\EM2** | 2 | 1 | 60 | 6 | 2 | 7.5 |
+    | **A3\EM3** | 4 | 2 | 120 | 10 | 2 | 15 |
+    | **A4\P1** | 8 | 4 | 240 | 25 | 6 | 30 |
+    | **A5\P2** | 16 | 8 | 480 | 50 | 6 | 60 |
+    | **A6\P3** | 32 | 16 | 960 | 100 | 10 | 120 |
+    
+    \*The Premium Gen2 app doesn't currently expose these metrics.
+    
 
 ## Subscriptions and licensing
 
