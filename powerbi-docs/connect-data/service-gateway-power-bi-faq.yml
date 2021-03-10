@@ -50,7 +50,7 @@ sections:
         answer: |
           R scripts are supported only for personal mode.​
           
-## Analysis Services in Power BI
+### Analysis Services in Power BI
    
       - question: |
          Can I use msmdpump.dll to create custom effective username mappings for Analysis Services? 
@@ -74,7 +74,6 @@ sections:
           
 additionalContent:  |
   ## Next steps
-   * [Troubleshooting the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
-     
-     More questions? Try the [Power BI Community](https://community.powerbi.com/).
+  - [Troubleshooting the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
+  More questions? Try the [Power BI Community](https://community.powerbi.com/).
           
