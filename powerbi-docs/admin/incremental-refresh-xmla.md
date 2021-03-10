@@ -21,29 +21,27 @@ Dataset table partitions are not visible and cannot be managed in the service. F
 
 When you first publish a model to the service, each table in the new dataset has one partition. For tables with no incremental refresh policy, that one partition  contains all rows of data for that table. For tables with an incremental refresh policy, that one partition will contain only those rows of data defined by the date/time range filter based on the RangeStart and RangeEnd parameters applied in Power Query Editor.
 
-When you perform the *first* dataset refresh operation, tables with no incremental refresh policy will refresh all rows contained in that table's default single partition. For tables with an incremental refresh policy, partitions are automatically created and rows are imported into them according to the date/time for each row. 
+When you perform the *first* dataset refresh operation, tables with no incremental refresh policy will refresh all rows contained in that table's default single partition. For tables with an incremental refresh policy, partitions are automatically created and rows are loaded into them according to the date/time for each row.
 
-This first refresh operation can take quite some time depending on the amount of data that needs to be imported from the data source. The complexity of the model can also be a significant factor because refresh operations must perform additional processing and recalculation.
+This first refresh operation can take quite some time depending on the amount of data that needs to be loaded from the data source. The complexity of the model can also be a significant factor because refresh operations must perform additional processing and recalculation. This operation can be bootstrapped. To learn more, see [Prevent timeouts on initial full refresh](#prevent-timeouts-on-initial-full-refresh) later in this article.
 
-Partitions are created for and named by period granularity: Years, quarters, months, and days. The most recent partition contains rows in the refresh period you specify in the policy. Historical partitions contain rows by complete period up to the current refresh period.
+Partitions are created for and named by period granularity: Years, quarters, months, and days. The most recent partition contains rows in the refresh period you specify in the policy. Historical partitions contain rows by complete period up to the current refresh period. Granularity for current and historical partitions is entirely dependent on the refresh and historical (store) periods you choose when defining the policy. 
 
-For example, let's say today's date is February 2nd, 2021 and our FactInternetSales table at the data source contains rows of transactions up through today. If our policy specifies refresh rows in the last 1 day, and keep rows in the last 3 years, then with the first refresh operation, a new partition is created for today's rows, a historical partition is created for yesterday, a whole day period (February 1st, 2021), a historical partition is created for the previous whole month period (January, 2021), a historical partition is created for the previous whole year period (2020), and historical partitions for 2019 and 2018 whole year periods are created. No whole quarter partitions are created because we have not yet completed the first full quarter of 2021.
+For example, let's say today's date is February 2nd, 2021 and our FactInternetSales table at the data source contains rows up through today. If our policy specifies refresh rows in the last 1 day (refresh period) and store rows in the last 3 years (historical period), then with the first refresh operation, a new partition is created for today's rows, a historical partition is created for yesterday, a whole day period (February 1st, 2021), a historical partition is created for the previous whole month period (January, 2021), a historical partition is created for the previous whole year period (2020), and historical partitions for 2019 and 2018 whole year periods are created. No whole quarter partitions are created because we have not yet completed the first full quarter of 2021.
 
-:::image type="content" source="media/incremental-refresh-xmla/partition-naming.png" alt-text="Parition naming granularity":::
+:::image type="content" source="media/incremental-refresh-xmla/partition-naming.png" alt-text="Partition naming granularity":::
 
-With each refresh operation, only the current refresh period partition is refreshed. New rows with a date/time within the refresh period are added to the current partition and existing rows with a date/time within the current partition are refreshed with updates. Rows with a date/time older than the refresh period are moved into the previous historical partition, which is no longer refreshed with each refresh operation. 
+With each refresh operation, only the current refresh period partition is refreshed. New rows with a date/time within the refresh period are added to the current partition and existing rows with a date/time within the current partition are refreshed with updates. Rows with a date/time older than the refresh period are moved into the previous historical partition, which is no longer refreshed with each refresh operation.
 
-As whole periods close, partitions are merged. For example, if a 1 day refresh period is defined, on the first day of the month, all day partitions for the previous month are merged into a month partition. On the first day of a new quarter, all three previous month partitions are merged into a quarter partition. On the first day of a new year, all four previous quarter partitions are merged into a year partition. This is known as a *rolling window pattern*.
+As whole periods close, partitions are merged. For example, if a 1 day refresh period and 3 year store period is specified in the policy, on the first day of the month, all day partitions for the previous month are merged into a month partition. On the first day of a new quarter, all three previous month partitions are merged into a quarter partition. On the first day of a new year, all four previous quarter partitions are merged into a year partition. This is known as a *rolling window pattern*.
 
 A dataset always retains partitions for the entire historical storage period plus whole period partitions up through the current refresh period. Using our example above, a full three years of historical data is retained in partitions for 2018, 2019, 2020, and also partitions for the 2021Q101 month period, the 2021Q10201 day period, and the current day refresh period partition. Because we chose to retain historical data for 3 *years*, the 2018 partition is retained until the first refresh on January 1st, 2022.
 
 With Power BI incremental refresh, the service handles all this partition management for you based on the policy. If you've ever worked in Analysis Services, you know effective partitioning involves creating a programmatic solution with thousands of lines of code. While the service can handle all of this for you, by using tools through the XMLA endpoint you can selectively refresh partitions individually, sequentially, or in parallel.
 
-To learn more, see [Partitions in tabular models](/analysis-services/tabular-models/partitions-ssas-tabular?view=power-bi-premium-current&preserve-view=true).
-
 ## Refresh management with SQL Server Management Studio (SSMS)
 
-SSMS can be used to view and manage partitions created by the application of incremental refresh policies. This allows, for example, to refresh a specific historical partition not in the incremental range to perform a back-dated update without having to refresh all historical data. SSMS can also be used to load historical data for very large datasets by incrementally adding/refreshing historical partitions in batches.
+SSMS can be used to view and manage partitions created by the application of incremental refresh policies. This allows, for example, to refresh a specific historical partition not in the incremental refresh range to perform a back-dated update without having to refresh all historical data. SSMS can also be used to load historical data for very large datasets by incrementally adding/refreshing historical partitions in batches.
 
 ![Partitions in SSMS](media/incremental-refresh-xmla/ssms-partitions.png)
 
@@ -109,7 +107,7 @@ The following example covers all 120 months in the historical range for backdate
 
 When publishing a new version of a PBIX file from Power BI Desktop to a workspace, if a dataset with the same name already exists, you're prompted to replace the existing dataset.
 
-![Replace dataset prompt](media/incremental-refresh-overview/replace-dataset-prompt.png)
+![Replace dataset prompt](media/incremental-refresh-xmla/replace-dataset-prompt.png)
 
 In some cases you may not want to replace the dataset, especially with incremental refresh. The dataset in Power BI Desktop could be much smaller than the one in the service. If the dataset in the service has an incremental refresh policy applied, it may have several years of historical data that will be lost if the dataset is replaced. Refreshing all the historical data could take hours and result in system downtime for users.
 
@@ -119,7 +117,7 @@ For Power BI Premium workspaces assigned to a capacity configured for XMLA endpo
 
 Download and install the latest version of the ALM Toolkit from the [Analysis Services Git repo](https://github.com/microsoft/Analysis-Services/releases). Step-by-step guidance on using ALM Toolkit is not included in Microsoft documentation. ALM Toolkit documentation links and information on supportability are available on the Help ribbon. To perform a metadata only deployment, perform a comparison and select the running Power BI Desktop instance as the source, and the existing dataset in the service as the target. Consider the differences displayed and skip the update of the table with incremental refresh partitions or use the Options dialog to retain partitions for table updates. Validate the selection to ensure the integrity of the target model and then update.
 
-![ALM Toolkit](media/incremental-refresh-overview/alm-toolkit.png)
+![ALM Toolkit](media/incremental-refresh-xmla/alm-toolkit.png)
 
 ## Prevent timeouts on initial full refresh
 
@@ -136,7 +134,7 @@ Prior to publishing the model to the service, in Power Query Editor, we add an a
 
 ![Filter out product key](media/incremental-refresh-xmla/filter-product-key.png)
 
-After clicking Close & Apply in Power Query Editor, and saving the model, we publish to the service. From the service, we then run the initial refresh operation on the dataset. Partitions for the FactInternetSales table are created according to the policy, but no data is loaded and processed because all data is filtered out. After the initial refresh operation is completed, back in Power Query Editor, the additional filter on the ProductKey column is removed. After clicking Close & Apply in Power Query Editor and saving, the model, however, is **not published again** because it would overwrite the incremental refresh policy settings and force a full refresh on the dataset when a subsequent refresh operation is performed from the service. Instead, we perform a metadata only deployment by using ALM Toolkit which removes the filter on the ProductKey column from the *dataset*. We then use SSMS to selectively process partitions. When all partitions have been fully processed (which must include a process recalc on all partitions) from SSMS, subsequent refresh operations on the dataset from the service refresh only the latest partition.
+After clicking Close & Apply in Power Query Editor, and saving the model, we publish to the service. From the service, we then run the initial refresh operation on the dataset. Partitions for the FactInternetSales table are created according to the policy, but no data is loaded and processed because all data is filtered out. After the initial refresh operation is completed, back in Power Query Editor, the additional filter on the ProductKey column is removed. After clicking Close & Apply in Power Query Editor and saving the model, the model **is not published again** because it would overwrite the incremental refresh policy settings and force a full refresh on the dataset when a subsequent refresh operation is performed from the service. Instead, we perform a metadata only deployment by using ALM Toolkit which removes the filter on the ProductKey column from the *dataset*. We then use SSMS to selectively process partitions. When all partitions have been fully processed (which must include a process recalc on all partitions) from SSMS, subsequent refresh operations on the dataset from the service refresh only the latest partition.
 
 > [!TIP]
 > Be sure to check out videos, blogs, and more provided by Power BI's community of BI experts.  
@@ -144,10 +142,9 @@ After clicking Close & Apply in Power Query Editor, and saving the model, we pub
 
 To learn more about processing tables and partitions from SSMS, see [Process database, table, or partitions (Analysis Services)](/analysis-services/tabular-models/process-database-table-or-partition-analysis-services?view=power-bi-premium-current&preserve-view=true). To learn more about processing datasets, tables, and partitions by using TMSL, see [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true).
 
-## Deletes with Detect data changes setting enabled
-
 ## See also
 
+[Partitions in tabular models](/analysis-services/tabular-models/partitions-ssas-tabular?view=power-bi-premium-current&preserve-view=true)  
 [Configure scheduled refresh](../connect-data/refresh-scheduled-refresh.md)  
 [Incremental refresh](incremental-refresh-overview.md)  
 [Troubleshoot incremental refresh](incremental-refresh-troubleshoot.md)

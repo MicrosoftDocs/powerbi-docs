@@ -17,11 +17,11 @@ This article describes how to configure incremental refresh for **datasets**. To
 
 Configuring incremental refresh includes creating range parameters, applying filters, and defining a policy for a table that is applied when a manual or scheduled refresh operation is performed on the dataset in the service. Before completing these steps, be sure to fully understand the functionality described in [Incremental refresh](incremental-refresh-overview.md).
 
-Examples in this article show configuring incremental refresh for a single fact table, FactInternetSales, importing filtered data from the sample AdventureWorksDW database (Yeah, we know. It's an old, but popular sample dataset:). For models with more than one fact table, incremental refresh policies can be defined for more than one table in the same dataset by using the same RangeStart and RangeEnd parameters.
+Examples in this article show configuring incremental refresh for a single fact table, FactInternetSales, loading filtered data from the sample AdventureWorksDW database (Yeah, we know. It's an old but popular sample dataset:). For models with more than one fact table, incremental refresh policies can be defined for more than one table in the same dataset by using the same RangeStart and RangeEnd parameters.
 
 ## Create parameters
 
-In this task, use Power Query Editor to create RangeStart and RangeEnd parameters with default values. The default values apply only when filtering the data to be imported into the model in Power BI Desktop. The values you enter should encompass only a small portion of the most recent data. When published to the service, these values are overridden by the incremental refresh policy.
+In this task, use Power Query Editor to create RangeStart and RangeEnd parameters with default values. The default values apply only when filtering the data to be loaded into the model in Power BI Desktop. The values you enter should encompass only a small portion of the most recent data. When published to the service, these values are overridden by the incremental refresh policy.
 
 1. In Power BI Desktop, click **Transform data** to open Power Query Editor.
 
@@ -35,7 +35,7 @@ In this task, use Power Query Editor to create RangeStart and RangeEnd parameter
 
     ![Define Range End parameter in Manage Parameters dialog](media/incremental-refresh-configure/create-range-end.png)
 
-Now that you have RangeStart and RangeEnd parameters configured, you then filter the data to be imported into the model based on those parameters.
+Now that you have RangeStart and RangeEnd parameters configured, you then filter the data to be loaded into the model based on those parameters.
 
 ## Filter data
 
@@ -53,9 +53,9 @@ With RangeStart and RangeEnd parameters defined, apply a filter based on *condit
 
     Click **OK** to close.
 
-1. In Power Query Editor, click **Close & Apply**. Power Query will then import data based on the filters defined in the RangeStart and RangeEnd parameters, and any other filters you defined.
+1. In Power Query Editor, click **Close & Apply**. Power Query will then load data based on the filters defined in the RangeStart and RangeEnd parameters, and any other filters you defined.
 
-    Power Query will load only data specified between the RangeStart and RangeEnd parameters. Depending on the amount of data in that range, import should go quickly. If it seems slow and process intensive, it's possible the query is not folding.
+    Power Query will load only data specified between the RangeStart and RangeEnd parameters. Depending on the amount of data in that range, load should go quickly. If it seems slow and process intensive, it's likely the query is not folding.
 
 ## Convert DateTime to integer
 
@@ -89,7 +89,7 @@ After you've defined RangeStart and RangeEnd parameters, and filtered data based
 
 1. In **Incremental refresh**, in **Table**, verify or select the table, and then click the **Incremental refresh** slider to **On**. If the slider is disabled, it means the Power Query expression for the table doesn't refer to the parameters with reserved names.
 
-1. In **Store rows where column "columnname" is in the last:**, specify the whole range you want to include in the dataset. All rows with dates in this range will be imported to the dataset in the service (unless other filters apply).
+1. In **Store rows where column "columnname" is in the last:**, specify the whole range you want to include in the dataset. All rows with dates in this range will be loaded into the dataset in the service, unless other filters apply.
 
 1. In **Refresh rows where column "columnname" is in the last:**, specify the range you want to refresh. All rows with dates in this range will be refreshed in the dataset each time a manual or scheduled refresh operation is performed
 
@@ -97,11 +97,11 @@ After you've defined RangeStart and RangeEnd parameters, and filtered data based
 
 1. Select optional advanced settings:
 
-    Select **Detect data changes** to specify a date/time column used to identify and refresh only the days where the data has changed. This assumes such a column exists in the source system, which is typically for auditing purposes. This **should not be the same column** used to partition the data with the RangeStart/RangeEnd parameters. The maximum value of this column is evaluated for each of the periods in the incremental range. If it has not changed since the last refresh, there is no need to refresh the period.
+    Select **Detect data changes** to specify a date/time column used to identify and refresh only the days where the data has changed. A date/time column must exist, usually for auditing purposes, at the data source. This **should not be the same column** used to partition the data with the RangeStart/RangeEnd parameters. The maximum value of this column is evaluated for each of the periods in the incremental range. If it has not changed since the last refresh, the current period is not refreshed.
 
-    Select **Only refresh complete days** to refresh only complete, full days. If the refresh operation detects a day is not complete, rows for that day are not refreshed.
+    Select **Only refresh complete days** to refresh only whole days. If the refresh operation detects a day is not complete, rows for that whole day are not refreshed.
 
-1. Click **Apply all** to complete the refresh policy. Source data is not imported with this step.
+1. Click **Apply all** to complete the refresh policy. Source data is not loaded with this step.
 
 ## Save and publish to the service
 
@@ -109,7 +109,7 @@ When your RangeStart and RangeEnd parameters, filtering, and refresh parameters 
 
 ## Refresh dataset
 
-In the service, refresh the dataset. The first refresh will import historical data for the entire period specified in the **Store rows where column \<dateColumnName> is in the last:** policy setting. Depending on the amount of data, this can take quite a long time. Subsequent refreshes, either manual or scheduled are typically much faster because the incremental refresh policy is applied and only data for the period specified in **Refresh rows where column \<dateColumnName> is in the last:** policy setting is refreshed.
+In the service, refresh the dataset. The first refresh will load historical data for the entire period specified in the **Store rows where column \<dateColumnName> is in the last:** policy setting. Depending on the amount of data, this can take quite a long time. Subsequent refreshes, either manual or scheduled are typically much faster because the incremental refresh policy is applied and only data for the period specified in **Refresh rows where column \<dateColumnName> is in the last:** policy setting is refreshed.
 
 ## XMLA endpoint
 

@@ -12,7 +12,7 @@ LocalizationGroup:
 ---
 # Incremental refresh for datasets
 
-Incremental refresh extends individual and scheduled refresh operations by providing automated partition creation and management for tables that frequently import new and updated data. For most datasets, this is one or more tables that contain transaction data that changes often and can grow exponentially, like a fact table in a relational or star database schema. By partitioning the table and refreshing only the most recent partition significantly reduces the amount of data that has to be refreshed.
+Incremental refresh extends individual and scheduled refresh operations by providing automated partition creation and management for tables that frequently load new and updated data. For most datasets, this is one or more tables that contain transaction data that changes often and can grow exponentially, like a fact table in a relational or star database schema. By partitioning the table and refreshing only the most recent partition significantly reduces the amount of data that has to be refreshed.
 
 With incremental refresh:
 
@@ -20,24 +20,23 @@ With incremental refresh:
 > * **Refreshes are faster** - Only the most recent data that has changed needs to be refreshed.
 > * **Refreshes are more reliable** - Long-running connections to volatile data sources aren't necessary. Queries to source data run faster, reducing potential for network problems to interfere.
 > * **Resource consumption is reduced** - Less data to refresh reduces overall consumption of memory and other resources on both Power BI resources and source data systems.
+> * **Enables very large datasets** - Datasets with potentially billions of rows can grow without the need to fully refresh the entire dataset with each refresh operation.
 
-Partitions divide portions of data you need to refresh frequently from data that can be refreshed less frequently. For Power BI Desktop models with incremental refresh configured, when you first publish the model to the service, each table in the dataset has one partition containing all rows in the table. When you perform the first dataset refresh, tables with no incremental refresh policy defined will refresh all rows contained in that table's default single partition. Tables with an incremental refresh policy are partitioned according to the policy and the date/time for each row in the table.
+ For Power BI Desktop models with incremental refresh configured for one or more tables, when you first publish the model to the service, each table in the dataset has one partition containing all rows in the table. When you perform the first dataset refresh, tables with no incremental refresh policy defined will refresh all rows contained in that table's default single partition. Tables with an incremental refresh policy are partitioned according to the policy and the date/time for each row in the table. The partitions separate data that needs to be refreshed frequently from data that can be refreshed less frequently.
 
-With each refresh operation, the data source query returns rows within the refresh period defined by *RangeStart* and *RangeEnd* parameters. Those rows are loaded into the current partition. Rows with a date/time no longer within the refresh period are moved to the partition for the previous period, which is *not* refreshed. Rows with a date/time no longer within the previous partition's period are moved to the partition before that. With each subsequent refresh, partitions become less granular as historical period partitions are merged together. For example, after a full month is complete, all day partitions are combined into a single month historical partition. After a full three months is complete, those three month partitions are rolled into a single quarter partition, and so on. This is known as a rolling window pattern.
+For those tables with an incremental refresh policy, with each refresh operation the data source query returns rows within the refresh period defined by *RangeStart* and *RangeEnd* parameters. Those rows are loaded into the current incremental refresh partition. Rows with a date/time no longer within the refresh period are moved to the partition for the previous period, which is *not* refreshed. Rows with a date/time no longer within the previous partition's period are moved to the partition before that. With each subsequent refresh, partitions become less granular as historical period partitions are merged together.
 
-The beauty of incremental refresh is the service handles all of this for you based on the incremental refresh policy you define. In fact, this process and any partitions created from it are not even visible in the service. In most cases, a well defined incremental refresh policy is all that is necessary to significantly improve dataset refresh performance. However, for datasets in a Premium capacity, additional advanced partition and refresh operation scenarios are supported through the XMLA endpoint.
+The beauty of incremental refresh is the service handles all of this for you based on the incremental refresh policy you define. In fact, this process and partitions created from it are not even visible in the service. In most cases, a well defined incremental refresh policy is all that is necessary to significantly improve dataset refresh performance. However, for datasets in a Premium capacity, additional advanced partition and refresh operation scenarios are supported through the XMLA endpoint.
 
 ## Requirements
 
 ### Supported plans
 
-Incremental refresh is supported for Power BI Premium, Premium per user, and Power BI Pro shared subscriptions and datasets. To further extend incremental refresh scenarios by using advanced features supported with the XMLA endpoint, Premium per user workspaces or workspaces assigned to a Premium capacity are required.
+Incremental refresh is supported for Power BI Premium, Premium per user, and Power BI Pro shared subscriptions and datasets. To further extend incremental refresh scenarios by using advanced features supported with the XMLA endpoint, datasets in Premium per user workspaces or workspaces assigned to a Premium capacity are required.
 
 ### Supported data sources
 
-Incremental refresh works best for structured data sources, like SQL Database and Azure Synapse. Your data source should support *query folding*. We'll go into more detail about query folding later, but in short, query folding is the ability for a single query statement to both retrieve and transform data from the data source. Most structured data sources support query folding.
-
-By using additional custom query functions and query logic, incremental refresh can be used with other types of data sources that don't support query folding. For example, Excel workbook files stored in a folder, files or lists in SharePoint, or OData or RSS feeds that don't retain historical data, but just keeps updating each day and you want keep existing historical data in the dataset and append new data to it. Keep in mind these are advanced scenarios that will require additional customization and testing beyond what is described here. Be sure to check out the [Community](#community) section later in this article for suggestions on how you can find more info about using incremental refresh for unique scenarios like these.
+Incremental refresh works best for structured, relational data sources, like SQL Database and Azure Synapse. 
 
 **Date column** - Your model table must contain a date column of Date/Time data type. The RangeStart and RangeEnd parameters filter table data based on the date column. If your table contains a date column of integer surrogate keys in the form of yyyymmdd, you can create a function that converts the date/time value in the parameters to match the integer surrogate key of the data source table. To learn more, see [Convert DateTime to integer](incremental-refresh-configure.md#convert-datetime-to-integer).
 
@@ -48,6 +47,10 @@ Given the various levels of query folding support for different types of data so
 :::image type="content" source="media/incremental-refresh-overview/query-folding-warning.png" alt-text="Query folding warning":::
 
 If you see this warning and want to verify the necessary query folding is occurring, use the Power Query Diagnostics feature or trace queries by using a tool supported by the data source, like SQL Profiler.
+
+#### Other data source types
+
+By using additional custom query functions and query logic, incremental refresh can be used with other types of data sources that don't support query folding. For example, Excel workbook files stored in a folder, files or lists in SharePoint, or OData or RSS feeds that don't retain historical data, but just keep updating each day and you want keep existing historical data in the dataset and append new data to it. Keep in mind these are advanced scenarios that will require additional customization and testing beyond what is described here. Be sure to check out the [Community](#community) section later in this article for suggestions on how you can find more info about using incremental refresh for unique scenarios like these.
 
 ## Race against time
 
@@ -69,11 +72,17 @@ in
     #"Filtered Rows"
 ```
 
+### Current date and time
+
+The current date and time is based on the system date at the time of refresh. If scheduled refresh is enabled for the dataset in the service, the specified time zone will be taken into account when determining the current date and time. Both individual and scheduled refreshes through the service observe the time zone if available. For example, a refresh that occurs at 8 PM Pacific Time (US and Canada) with a time zone specified will determine the current date and time based on Pacific Time, not GMT (which would otherwise be the next day). Refresh operations not invoked through the service, such as the [TMSL refresh command](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true), will not consider the scheduled refresh time zone.
+
+:::image type="content" source="media/incremental-refresh-overview/time-zone2.png" alt-text="Time zone":::
+
 ## Configuring incremental refresh
 
 We'll go over the basic concepts of configuring incremental refresh here. When you're ready for more detailed step-by-step instructions, be sure to check out [Configure incremental refresh for datasets](incremental-refresh-configure.md).
 
-Configuring incremental refresh for new data models is done in Power BI Desktop. For most models, only a few tasks are required. But keep in mind, once you publish your model to the service, you can't download it back or publish it again from Power BI Desktop. If you're publishing to a Premium capacity, subsequent dataset metadata schema changes can be made through the XMLA endpoint by using TMSL or with the open-source ALM Toolkit.
+Configuring incremental refresh for new data models is done in Power BI Desktop. For most models, only a few tasks are required. Keep in mind, once you publish your model to the service, you can't download it back or publish it again from Power BI Desktop. If you're publishing to a Premium capacity, subsequent dataset metadata schema changes can be made through the XMLA endpoint by using TMSL or with the open-source ALM Toolkit.
 
 ### Create parameters
 
@@ -85,7 +94,7 @@ For example, our FactInternetSales data source table averages 100k new rows per 
 
 ### Filter data
 
-With RangeStart and RangeEnd parameters defined, you then apply custom Date filters on your table's date column. The filters you apply select a subset of data that will be imported into the model in Power BI Desktop.
+With RangeStart and RangeEnd parameters defined, you then apply custom Date filters on your table's date column. The filters you apply select a subset of data that will be loaded into the model in Power BI Desktop.
 
 :::image type="content" source="media/incremental-refresh-overview/custom-filter.png" alt-text="Custom filter":::
 
@@ -103,15 +112,15 @@ The Table listbox defaults to the table you select. Enable incremental refresh f
 
 #### 2 - Store rows in the last
 
-This **required** setting determines the period in which rows in that period are included in the dataset table, plus rows for the current period up to the current date and time. For example, if you specify 5 years, your table will store the last five whole years of data, plus rows for the current year up to the most recent refresh.
+This **required** setting determines the period in which rows in that period are included in the dataset table, plus rows for the current period up to the current date and time. For example, if you specify 5 years, your table will store the last five whole years of historical data in year partitions, plus rows for the current year up to the most recent refresh.
 
 #### 3 - Refresh rows in the last
 
-This setting is **required**. This setting determines the period in which all rows with a date/time in that period are included in the latest partition and refreshed. For example, if you specify 7 days, all rows with a date/time in the last seven days up to the current refresh operation time are refreshed. Rows older than seven days are moved to the previous partition and excluded from the refresh. The majority of system resources used during a refresh operation are consumed for this period. Be sure to specify a period in which the most important new and updated rows at the data source are within this period. It's important this not be such a long period that system resources are used unnecessarily refreshing rows that have not been updated or added within the period.
+This **required** setting determines the incremental refresh period in which all rows with a date/time in that period are included in the latest partition and refreshed. For example, if you specify 7 days, all rows with a date/time in the last seven days up to the current refresh operation time are refreshed. Rows older than seven days are moved to the previous partition and excluded from the refresh. The majority of system resources used during a refresh operation are consumed for this period. Be sure to specify a period in which the most important new and updated rows at the data source are within this period. It's important this not be such a long period that system resources are used unnecessarily refreshing rows that have not been updated or added within the period.
 
 #### 4 - Detect data changes
 
-This setting is optional. Incremental refresh of ten days is more efficient than a full refresh of five years. However, refreshes can be even more selective. With the Detect data changes option, you can select a date/time column used to identify and refresh only those days where the data has changed. This assumes such a column exists in the data source, which is typically for auditing purposes. This should *not* be the same column used to partition the data with the RangeStart and RangeEnd parameters. The maximum value of this column is evaluated for each of the periods in the incremental range. If it hasn't changed since the last refresh, there's no need to refresh the period. In this example, this could potentially further reduce the days incrementally refreshed from ten to around two.
+This setting is **optional**. Incremental refresh of ten days is more efficient than a full refresh of five years. However, refreshes can be even more selective. With the Detect data changes option, you can select a date/time column used to identify and refresh only those days where the data has changed. This assumes such a column exists in the data source, which is typically for auditing purposes. This should *not* be the same column used to partition the data with the RangeStart and RangeEnd parameters. The maximum value of this column is evaluated for each of the periods in the incremental range. If it hasn't changed since the last refresh, there's no need to refresh the period. In this example, this could potentially further reduce the days incrementally refreshed from ten to around two.
 
 The current design requires that the column to detect data changes is persisted and cached into memory. The following techniques can be used to reduce cardinality and memory consumption:
 
@@ -123,29 +132,31 @@ In some cases, enabling the Detect data changes option can produce unwanted resu
 
 #### 5 - Only refresh complete days
 
-This setting is optional. Let's say your refresh is scheduled to run at 4:00 AM every morning. If new rows of data appear in the data source table during those four hours between midnight and 4:00 AM, you may not want to account for them. Some business metrics like barrels per day in the oil and gas industry make no sense with partial days. Another example is refreshing data from a financial system where data for the previous month is approved on the 12th calendar day of the month. You could set the refresh period to 1 month and schedule the refresh to run on the 12th day of the month. With this option checked, it would for example refresh January data on February 12th.
+This setting is **optional**. Let's say your refresh is scheduled to run at 4:00 AM every morning. If new rows of data appear in the data source table during those four hours between midnight and 4:00 AM, you may not want to account for them. Some business metrics like barrels per day in the oil and gas industry make no sense with partial days. Another example is refreshing data from a financial system where data for the previous month is approved on the 12th calendar day of the month. You could set the refresh period to 1 month and schedule the refresh to run on the 12th day of the month. With this option checked, it would for example refresh January data on February 12th.
 
 Keep in mind, refresh operations in the service run under UTC time. This can determine the effective date and affect complete periods.
 
-### Current date and time
-
-The current date and time is based on the system date at the time of refresh. If scheduled refresh is enabled for the dataset in the service, the specified time zone will be taken into account when determining the current date and time. Both individual and scheduled refreshes through the service observe the time zone if available. For example, a refresh that occurs at 8 PM Pacific Time (US and Canada) with a time zone specified will determine the current date and time based on Pacific Time, not GMT (which would otherwise be the next day). Refresh operations not invoked through the service, such as the [TMSL refresh command](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true), will not consider the scheduled refresh time zone.
-
-:::image type="content" source="media/incremental-refresh-overview/time-zone2.png" alt-text="Time zone":::
-
 ## Publish
 
-After configuring your refresh policy, you publish the model to the service. Once fully published you can perform the initial refresh operation. The initial refresh operation can take quite a while to complete. Partitions must be created, historical data imported, objects such as relationships and hierarchies are built or rebuilt, and calculated objects are recalculated.
+After configuring an incremental refresh policy, you publish the model to the service. When publishing is complete, you can perform the initial refresh operation on the *dataset*.
+
+> [!IMPORTANT]
+> When published to the service from Power BI Desktop, you cannot download the PBIX back. 
+
+## Refresh
+
+After publishing to the service, you perform an initial refresh operation on the dataset. This should be an individual (manual) refresh so you can monitor progress. The initial refresh operation can take quite a while to complete. Partitions must be created, historical data loaded, objects such as relationships and hierarchies are built or rebuilt, and calculated objects are recalculated.
 
 Subsequent refresh operations, either individual or scheduled will be much faster because only the most recent partition is refreshed. Other processing operations must still occur, like moving data in and out of partitions and recalculation, but it will usually only take only a small fraction of time compared to that first refresh.
 
 ## Community
 
-Power BI has a vibrant community where BI pros and peers share their expertise in discussions groups, videos, blogs and more. When learning about incremental refresh, be sure to check out these additional resources:
+Power BI has a vibrant community where BI pros and peers share expertise in discussions groups, videos, blogs and more. When learning about incremental refresh, be sure to check out these additional resources:
 
 - [Power BI Community](https://community.powerbi.com/)  
 - [Search "Power BI incremental refresh" on Bing](https://www.bing.com/search?q=power+bi+incremental+refresh)
-- [Search for "Incremental refresh for files" on Bing](https://www.bing.com/search?q=incremental+refresh+for+files)
+- [Search "Incremental refresh for files" on Bing](https://www.bing.com/search?q=incremental+refresh+for+files)
+- [Search "Keep existing data using incremental refresh" on Bing](https://www.bing.com/search?q=keep+existing+data+using+incremental+refresh)
 
 ## Next steps
 
