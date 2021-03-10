@@ -132,9 +132,13 @@ The following table lists the operations related to Power BI Embedded that may b
 
 Power BI Embedded uses the **Power BI Dedicated** schema.
 
-## Example scrip
+## Example script for scaling a capacity
 
-The xxx script 
+To scale a capacity resource, you can use the [ScaleUp-Automation-RunBook.ps1](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/ScaleUp-Automation-RunBook.ps1) PowerShell runbook script.
+
+The script uses Power BI and ARM REST APIs, and can be called in Azure automation, and triggered by Azure alert.
+
+You can either copy the script, or download it as part of the [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples) repository, by selecting the green *code* button, and downloading the ZIP.
 
 ## Next steps
 
