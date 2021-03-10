@@ -13,7 +13,7 @@ ms.date: 02/18/2021
 
 # Render a visual without the need to bind any data
 
-From `powerbi-visuals-api` version 3.6.0, the no `dataRoles` capabilities model is supported. This feature allows you to receive updates from Power BI without the need to bind any data.
+From `powerbi-visuals-api` version 3.6.0, the no `dataRoles` capabilities model is supported. This feature allows you to receive updates from Power BI without the need to bind any data. 
 This means that you can render a visual and use the update method to change the visual's format settings even if the data-buckets are empty, or if your visual doesn't use any dataroles at all.
 
 To enable this feature you need to set two parameters in the `capabilities.json` file to *true*. 
