@@ -45,4 +45,4 @@ A limited subset of data extensions is considered *certified*. While Microsoft d
 
 In Power BI Desktop, certified third-party connectors appear in the list in the **Get Data** dialog box, along with generic and common connectors. You don't need to adjust security settings to use the certified connectors.
 
-If you would like a custom connector to be certified, ask your vendor to contact dataconnectors@microsoft.com.
+If you would like a custom connector to be certified, see our [certification documentation](https://docs.microsoft.com/power-query/connectorcertification).

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 01/20/2021
+ms.date: 03/05/2021
 LocalizationGroup: Premium 
 ---
 
@@ -15,10 +15,10 @@ LocalizationGroup: Premium
 
 Multi-Geo is a Power BI Premium feature that helps multinational customers address regional, industry-specific, or organizational data residency requirements. As a Power BI Premium customer, you can deploy content to datacenters in regions other than the home region of the Power BI tenant. A geo (geography) can contain more than one region. For example, the United States is a geo, and West Central US and South Central US are regions in the United States. You may choose to deploy content to any of the following geographies (geos) defined in the [Azure geography map](https://azure.microsoft.com/global-infrastructure/geographies/).
 
-Sovereign clouds support multi geo across regions within that cloud.
+Sovereign clouds support Multi-Geo across regions within that cloud.
 
 > [!NOTE]
-> China North currently does not support multi geo for premium gen2 capacities.
+> China North currently does not support Multi-Geo for Premium Gen2 capacities.
 
 Multi-Geo is now also available in Power BI Embedded. Read more at [Multi-Geo support in Power BI Embedded](../developer/embedded/embedded-multi-geo.md).
 
@@ -87,9 +87,9 @@ Large-storage format datasets should not be moved from the region where they wer
 - Confirm that any movement you initiate between regions follows all corporate and government compliance requirements prior to initiating data transfer.
 - A cached query stored in a remote region stays in that region at rest. However, other data in transit may go back and forth between multiple geographies.
 - When moving data from one region to another in a Multi-Geo environment, the source data may remain in the region from which the data was moved for up to 30 days. During that time end users don't have access to it. It's removed from this region and destroyed during the 30-day period.
-- Query text and query result traffic for imported data models does not transit through the home region. The report metadata does still come from the remote region, and certain DNS routing states may take traffic out of the region. 
+- Query text and query result traffic for imported and DirectQuery data models does not transit through the home region. The report metadata does still come from the remote region, and certain DNS routing states may take traffic out of the region. 
 - The [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md) feature is not supported on Multi-GEO at this time.
-- Moving large-storage format datasets from the region where they were created will result in reports failing to load the dataset. Move the large-storage dataset back to its original region to make it available. 
+- It is possible to create and maintain large-storage format datasets in remote regions to meet data residency requirements. However, note that you cannot move storage format datasets to another region. Moving large-storage format datasets from the region where they were created will result in reports failing to load the dataset. Move the large-storage dataset back to its original region to make it available. If you must move such a model, you must deploy it as if it was a new model, and then delete the old model from the undesired region.
 
 ## Next steps
 

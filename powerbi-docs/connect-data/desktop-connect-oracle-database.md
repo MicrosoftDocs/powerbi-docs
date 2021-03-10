@@ -17,8 +17,11 @@ Supported Oracle versions:
 - Oracle Server 9 and later
 - Oracle Data Access Client (ODAC) software 11.2 and later
 
-> [!NOTE]
-> If you're configuring an Oracle database for Power BI Desktop, On Premises Data Gateway or Power BI Report Server, consult the information in the [Oracle Connection Type](/sql/reporting-services/report-data/oracle-connection-type-ssrs) article. 
+Before you can connect to an Oracle database using Power BI, you need to install the Oracle client software v8.1.7 or greater on your computer. To install the 32-bit Oracle client software, go to [32-bit Oracle Data Access Components (ODAC) with Oracle Developer Tools for Visual Studio (12.1.0.2.4)](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html). To install the 64-bit Oracle client, go to [64-bit ODAC 12c Release 4 (12.1.0.2.4) Xcopy for Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html).
+
+
+
+If you're configuring an Oracle database for Power BI Desktop, On Premises Data Gateway, or Power BI Report Server, consult the information in the [Oracle Connection Type](/sql/reporting-services/report-data/oracle-connection-type-ssrs) article. 
 
 
 ## Determining which version of Power BI Desktop is installed
@@ -37,7 +40,18 @@ To determine which version of Power BI Desktop is installed, select **File** > *
 > During the setup of the Oracle client, make sure you enable *Configure ODP.NET and/or Oracle Providers for ASP.NET at machine-wide level* by selecting the corresponding checkbox during the setup wizard. Some versions of the Oracle client wizard selects the checkbox by default, others do not. Make sure that checkbox is selected so that Power BI can connect to your Oracle database.
 
 ## Connect to an Oracle database
-After you install the matching Oracle client driver, you can connect to an Oracle database. To make the connection, take the following steps:
+After you install the matching Oracle client driver, you can connect to an Oracle database. To connect to an Oracle database with the [on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/), the correct Oracle client software must be installed on the computer running the gateway. The Oracle client software you use depends on the Oracle server version, but will always match the 64-bit gateway. For more information, go to [Manage your data source - Oracle](https://docs.microsoft.com/power-bi/connect-data/service-gateway-onprem-manage-oracle).
+
+## Capabilities Supported
+* Import
+* DirectQuery
+* Advanced options
+   * Command timeout in minutes
+   * SQL statement
+   * Include relationship columns
+   * Navigate using full hierarchy
+
+To make the connection, take the following steps:
 
 1. From the **Home** tab, select **Get Data**. 
 
@@ -52,13 +66,16 @@ After you install the matching Oracle client driver, you can connect to an Oracl
    > [!NOTE]
    > If you are using a local database, or autonomous database connections, you may need to place the server name in quotation marks to avoid connection errors. 
       
-4. If you want to import data by using a native database query, put your query in the **SQL statement** box, which appears when you expand the **Advanced options** section of the **Oracle database** dialog.  Power BI Desktop does not support Oracle native queries that execute a stored procedure and Oracle native queries in "begin ... end" block does not return any result set.  
+4. Select either the *Import** or **DirectQuery** data connectivity mode. The rest of these example steps use the Import data connectivity mode. To learn more about DirectQuery, go to [Use DirectQuery in Power BI Desktop](https://docs.microsoft.com/power-bi/connect-data/desktop-use-directquery).
+
+
+5. If you want to import data by using a native database query, put your query in the **SQL statement** box, which appears when you expand the **Advanced options** section of the **Oracle database** dialog.  Power BI Desktop does not support Oracle native queries that execute a stored procedure and Oracle native queries in "begin ... end" block does not return any result set.  
    
    ![Expand Advanced options](media/desktop-connect-oracle-database/connect-oracle-database_4.png)
 
 
-5. After you've entered your Oracle database information in the **Oracle database** dialog (including any optional information such as a SID or a native database query), select **OK** to connect.
-5. If the Oracle database requires database user credentials, input those credentials in the dialog when prompted.
+6. After you've entered your Oracle database information in the **Oracle database** dialog (including any optional information such as a SID or a native database query), select **OK** to connect.  
+7. If the Oracle database requires database user credentials, input those credentials in the dialog when prompted.
 
 
 ## Troubleshooting
