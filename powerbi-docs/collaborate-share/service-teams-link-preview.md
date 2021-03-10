@@ -6,8 +6,8 @@ ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.subservice: pbi-collaborate-share
+ms.topic: how-to
 LocalizationGroup: Share your work
 ms.date: 07/22/2020
 ---
@@ -22,7 +22,7 @@ When you paste a link to your reports, dashboards, and apps into the Microsoft T
 
 The link preview service requires your users to sign in. To sign out, select the **Power BI** icon at the bottom of the message box. Then select **Sign out**.
 
-See [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md) for background on how Power BI and Teams work together, including requirements you need to meet.
+See [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md) for background on how Power BI and Microsoft Teams work together, including requirements you need to meet.
 
 ## Get a link preview
 

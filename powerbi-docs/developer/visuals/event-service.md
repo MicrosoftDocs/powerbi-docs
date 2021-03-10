@@ -1,6 +1,6 @@
 ---
-title: Render events in Power BI visuals
-description: Power BI visuals can notify Power BI that they're ready for export to PowerPoint or PDF.
+title: Render events in Power BI visuals in Power BI embedded analytics for better embedded BI insights
+description: Power BI visuals can notify Power BI that they're ready for export to PowerPoint or PDF. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin

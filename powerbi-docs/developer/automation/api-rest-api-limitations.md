@@ -1,6 +1,6 @@
 ---
-title: Power BI REST API limitations
-description: The Power BI REST API has the following limitations
+title: Power BI REST API limitations in Power BI embedded analytics for better embedded BI insights
+description: The Power BI REST API has the following limitations. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -27,5 +27,5 @@ ms.date: 06/08/2018
   
 ## See also
 
-* [Azure AD service limits and restrictions](https://docs.microsoft.com/azure/active-directory/active-directory-service-limits-restrictions)   
-* [Overview of Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/)
+* [Azure AD service limits and restrictions](/azure/active-directory/active-directory-service-limits-restrictions)   
+* [Overview of Power BI REST API](/rest/api/power-bi/)

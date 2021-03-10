@@ -2,14 +2,12 @@
 title: Creating reports in Power BI using accessibility tools
 description: Learn about the built-in accessibility tools for creating reports in Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/28/2019
-ms.author: davidi
-
 LocalizationGroup: Create reports
 ---
 # Creating reports in Power BI using accessibility tools

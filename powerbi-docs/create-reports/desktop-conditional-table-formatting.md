@@ -2,21 +2,19 @@
 title: Conditional table formatting in Power BI Desktop
 description: Apply customized formatting to tables
 author: davidiseminger
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-desktop
-ms.topic: how-to
-ms.date: 05/06/2020
 ms.author: davidi
-
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: pbi-reports-dashboards
+ms.topic: how-to
+ms.date: 12/14/2020
 LocalizationGroup: Create reports
 ---
 # Use conditional formatting in tables 
 
 With conditional formatting for tables in Power BI Desktop, you can specify customized cell colors, including color gradients, based on field values. You can also represent cell values with data bars or KPI icons, or as active web links. You can apply conditional formatting to any text or data field, as long as you base the formatting on a field that has numeric, color name or hex code, or web URL values. 
 
-To apply conditional formatting, select a **Table** or **Matrix** visualization in Power BI Desktop. In the **Fields** section of the **Visualizations** pane, right-click or select the down-arrow next to the field in the **Values** well that you want to format. Select **Conditional formatting**, and then select the type of formatting to apply.
+To apply conditional formatting, select a **Table** or **Matrix** visualization in Power BI Desktop. In the **Visualizations** pane, right-click or select the down-arrow next to the field in the **Values** well that you want to format. Select **Conditional formatting**, and then select the type of formatting to apply.
 
 ![Conditional formatting menu](media/desktop-conditional-table-formatting/table-formatting-0-popup-menu.png)
 
@@ -175,11 +173,10 @@ You must manually set the thresholds and ranges for conditional formatting rules
 ## Considerations and limitations
 There are a few considerations to keep in mind when working with conditional table formatting:
 
-- Conditional formatting applies only to the values of Table or Matrix visuals, and doesn't apply to any subtotals, grand totals, or the **Total** row. 
 - Any table that doesn't have a grouping is displayed as a single row that doesn't support conditional formatting.
-- You can't apply gradient formatting with automatic maximum/minimum values, or rule-based formatting with percentage rules, if your data contains *NaN* values. NaN means "Not a number," most commonly caused by a divide by zero error. You can use the [DIVIDE() DAX function](https://docs.microsoft.com/dax/divide-function-dax) to avoid these errors.
+- You can't apply gradient formatting with automatic maximum/minimum values, or rule-based formatting with percentage rules, if your data contains *NaN* values. NaN means "Not a number," most commonly caused by a divide by zero error. You can use the [DIVIDE() DAX function](/dax/divide-function-dax) to avoid these errors.
 - Conditional formatting needs an aggregation or measure to be applied to the value. That's why you see 'First' or 'Last' in the **Color by value** example. If you're building your report against an Analysis Service multidimensional cube, you won't be able to use an attribute for conditional formatting unless the cube owner has built a measure that provides the value.
 
 ## Next steps
 
-For more information about color formatting, see [Tips and tricks for color formatting in Power BI](../visuals/service-tips-and-tricks-for-color-formatting.md)  
+For more information about color formatting, see [Tips and tricks for color formatting in Power BI](../visuals/service-tips-and-tricks-for-color-formatting.md)

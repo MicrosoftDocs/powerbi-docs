@@ -1,21 +1,20 @@
 ---
-title: Show the data that was used to create the visual
-description: This document explains how Power BI consumers can "see" the data used to create a visual.
+title: Show the data that was used to create the report visual
+description: This document explains how Power BI business users can "see" the data used to create a report visual.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 04/28/2020
-ms.author: mihart
-
+ms.date: 12/06/2020
 LocalizationGroup: Visualizations
 ---
 # Show data with Power BI reports
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 
 A Power BI visual is constructed using data from underlying datasets. If you're interested in seeing behind-the-scenes, the Power BI service lets you *display* the data that is being used to create a visual in a report. When you select **Show as a table**, Power BI displays the data below (or next to) the visual.
 
@@ -32,7 +31,11 @@ On a dashboard, to see the underlying data, use [Export to Excel](end-user-expor
 
 4. To change the orientation, select vertical layout ![layout icon](media/end-user-show-data/power-bi-vertical-icon-new.png) from the top-right corner of the visualization.
    
-   ![visual and data horizontal display](./media/end-user-show-data/power-bi-horizontal.png)
+   ![visual and data horizontal display](./media/end-user-show-data/power-bi-show-horizontal.png)
+
+To return to the report, select **Back to report** from the upper left corner. 
+
+   ![Screenshot showing the link for Back to report.](./media/end-user-show-data/power-bi-back.png)
 
 ## Next steps
 [Visuals in Power BI reports](../visuals/power-bi-report-visualizations.md)    

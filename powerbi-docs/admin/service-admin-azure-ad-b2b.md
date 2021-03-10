@@ -2,12 +2,12 @@
 title: Distribute content to external guest users with Azure AD B2B
 description: Power BI enables sharing content with external guest users through Azure Active Directory Business-to-business (Azure AD B2B).
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 07/02/2020
-ms.author: kfollis
 LocalizationGroup: Administration
 ---
 
@@ -87,7 +87,7 @@ The guest user must have the proper licensing in place to view the content that 
 
 ### Use Power BI Premium
 
-Assigning the workspace to [Power BI Premium capacity](service-premium-what-is.md) lets the guest user use the app without requiring a Power BI Pro license. Power BI Premium also lets apps take advantage of other capabilities like increased refresh rates, dedicated capacity, and large model sizes.
+Assigning the workspace to [Power BI Premium capacity](service-premium-what-is.md) lets the guest user use the app without requiring a Power BI Pro license. Power BI Premium also lets apps take advantage of other capabilities like increased refresh rates and large model sizes.
 
 ![Diagram of the guest user experience with Power B I Premium.](media/service-admin-azure-ad-b2b/license-approach-1.png)
 
@@ -146,7 +146,7 @@ To help allowed guests sign in to Power BI, provide them with the Tenant URL. To
 
 * There are Azure Active Directory settings that can limit what external guest users can do within your overall organization. Those settings also apply to your Power BI environment. The following documentation discusses the settings:
   * [Manage External Collaboration Settings](/azure/active-directory/b2b/delegate-invitations#configure-b2b-external-collaboration-settings)
-  * [Allow or block invitations to B2B users from specific organizations](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)
+  * [Allow or block invitations to B2B users from specific organizations](/azure/active-directory/b2b/allow-deny-list)
   * [Use Conditional Access to allow or block access](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps)
 
 * You can share content from a government cloud, like GCC, to an external commercial cloud user. However, the guest user can't use their own license. The content has to be in capacity assigned to Premium to enable access. Or, you can assign a Power BI Pro license to the guest account.
@@ -157,6 +157,6 @@ To help allowed guests sign in to Power BI, provide them with the Tenant URL. To
 
 ## Next steps
 
-For more detailed info, including how row-level security works, check out the whitepaper: [Distribute Power BI content to external guest users using Azure AD B2B](https://aka.ms/powerbi-b2b-whitepaper).
+For more detailed info, including how row-level security works, check out the whitepaper: [Distribute Power BI content to external guest users using Azure AD B2B](../guidance/whitepaper-azure-b2b-power-bi.md).
 
 For information about Azure AD B2B, see [What is Azure AD B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b/).

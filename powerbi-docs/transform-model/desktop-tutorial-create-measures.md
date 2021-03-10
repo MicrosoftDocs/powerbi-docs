@@ -2,14 +2,12 @@
 title: 'Tutorial: Create your own measures in Power BI Desktop'
 description: 'Measures in Power BI Desktop help you by performing calculations on your data as you interact with your reports.'
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: tutorial
 ms.date: 11/08/2019
-ms.author: davidi
-
 LocalizationGroup: Learn more
 ---
 # Tutorial: Create your own measures in Power BI Desktop
@@ -241,4 +239,4 @@ Measures give you the power to get the insights you want from your data. You've 
   
 - If you want to take a deeper dive into DAX formulas and create some more advanced measures, see [DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md). This article focuses on fundamental concepts in DAX, such as syntax, functions, and a more thorough understanding of context.
   
-- Be sure to add the [Data Analysis Expressions (DAX) Reference](https://docs.microsoft.com/dax/index) to your favorites. This reference is where you'll find detailed info on DAX syntax, operators, and over 200 DAX functions.
+- Be sure to add the [Data Analysis Expressions (DAX) Reference](/dax/index) to your favorites. This reference is where you'll find detailed info on DAX syntax, operators, and over 200 DAX functions.

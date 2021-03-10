@@ -1,6 +1,6 @@
 ---
-title: Power BI Embedded performance best practices
-description: This article provides guidance for embedded analytics best practices
+title: Power BI embedded analytics performance best practices for better embedded BI insights
+description: This article provides guidance for Power BI embedded analytics best practices. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 12/12/2018
 ---
 
-# Power BI Embedded performance best practices
+# Power BI embedded analytics performance best practices
 
 This article provides recommendations for faster rendering of reports, dashboards, and tiles in your application.
 
@@ -48,7 +48,7 @@ If you embed reports with the same filters, bookmarks, and slicers, to improve y
 When embedding multiple reports to the same iframe, don't generate a new iframe for each report. Instead, use `powerbi.embed(element, config)` with a different config to embed the new report.
 
 > [!NOTE]
-> Switching between reports when embedding for your customers (also known as an 'app owns data' scenario), requires the use of an embed token with permissions to all reports and datasets. For more information, see the [generate token API](https://docs.microsoft.com/rest/api/power-bi/embedtoken/generatetoken).
+> Switching between reports when embedding for your customers (also known as an 'app owns data' scenario), requires the use of an embed token with permissions to all reports and datasets. For more information, see the [generate token API](/rest/api/power-bi/embedtoken/generatetoken).
 
 ## Query caching
 
@@ -60,7 +60,7 @@ Organizations with Power BI Premium capacity or Power BI Embedded capacity can t
 
 Use `powerbi.preload()` to improve the end-user performance. The method `powerbi.preload()` downloads Javascript, css files, and other artifacts, which are used later to embed a report.
 
-Call `powerbi.preload()` if you're not embedding the report immediately. For example, if the Power BI embedded content doesn't appear in the home page, use `powerbi.preload()` to download and cache the artifacts that are used for embedding the content.
+Call `powerbi.preload()` if you're not embedding the report immediately. For example, if the embedded Power BI content doesn't appear in the home page, use `powerbi.preload()` to download and cache the artifacts that are used for embedding the content.
 
 ## Bootstrapping the iframe
 
@@ -102,5 +102,5 @@ The Performance Analyzer will allow you to see and record logs that measure how 
 ## Next steps
 
 * [Power BI optimization guide](../../guidance/power-bi-optimization.md)
-* [How to troubleshoot Power BI Embedded issues](embedded-troubleshoot.md)
-* [Power BI Embedded FAQ](embedded-faq.md)
+* [How to troubleshoot Power BI embedded analytics issues](embedded-troubleshoot.md)
+* [Power BI embedded analytics FAQ](embedded-faq.md)

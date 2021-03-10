@@ -3,10 +3,10 @@ title: Overview of report visualizations in Power BI service and Desktop
 description: Overview of report visualizations (visuals) in Microsoft Power BI.
 author: mihart
 ms.author: mihart
-ms.reviewer: ''
+ms.reviewer: 'mihart'
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 05/05/2020
 LocalizationGroup: Visualizations 
@@ -24,7 +24,7 @@ There are many different visual types available directly from the Power BI Visua
 
 ![pane with icons for each visualization type](media/power-bi-report-visualizations/power-bi-icons.png)
 
-More Power BI visuals are available from the [Microsoft AppSource community site](https://appsource.microsoft.com). In AppSource you can browse and [download](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) [Power BI visuals](../developer/visuals/custom-visual-develop-tutorial.md) provided by Microsoft and the community.
+More Power BI visuals are available from the [Microsoft AppSource community site](https://appsource.microsoft.com). In AppSource you can browse and [download](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) Power BI visuals provided by Microsoft and the community.
 
 If you're new to Power BI, or need a refresher, use the links below to learn the basics of Power BI visualizations.  Alternately, use our Table of Contents (along the left side of this article) to find even more helpful information.
 
@@ -34,7 +34,7 @@ If you're new to Power BI, or need a refresher, use the links below to learn the
 
 ## Upload a visualization from a file or from AppSource
 
-Add a visualization that you created yourself or that you found in the [Microsoft AppSource community site](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Feeling creative? Dig into our source code and use our [developer tools](../developer/visuals/custom-visual-develop-tutorial.md) to create a new visualization type and [share it with the community](../developer/visuals/office-store.md). To learn more about developing a Power BI visual, visit [Developing a Power BI visual](../developer/visuals/custom-visual-develop-tutorial.md).
+Add a visualization that you created yourself or that you found in the [Microsoft AppSource community site](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Feeling creative? Dig into our source code and use our [developing tools](../developer/visuals/environment-setup.md) to create a new visualization type and [share it with the community](../developer/visuals/office-store.md). To learn more about developing a Power BI visual, visit [Developing a Power BI visual](../developer/visuals/develop-circle-card.md).
 
 ## Personalize your visualization pane
 

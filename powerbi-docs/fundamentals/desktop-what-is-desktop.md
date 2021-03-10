@@ -2,14 +2,12 @@
 title: What is Power BI Desktop?
 description: Learn about Power BI Desktop and how to start using it.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-fundamentals
 ms.topic: overview
 ms.date: 07/23/2020
-ms.author: davidi
-
 LocalizationGroup: Get started
 #Customer intent: As a data analyst or report creator, I want to know what Power BI Desktop is, so that I can decide whether it has the features and services I need to create reports.
 ---
@@ -64,11 +62,11 @@ To connect to data:
 
 ## Transform and clean data, create a model
 
-In Power BI Desktop, you can clean and transform data using the built-in [Power Query Editor](https://docs.microsoft.com/power-bi/desktop-query-overview). With Power Query Editor, you make changes to your data, such as changing a data type, removing columns, or combining data from multiple sources. It's like sculpting: you start with a large block of clay (or data), then shave off pieces or add others as needed, until the shape of the data is how you want it. 
+In Power BI Desktop, you can clean and transform data using the built-in [Power Query Editor](../transform-model/desktop-query-overview.md). With Power Query Editor, you make changes to your data, such as changing a data type, removing columns, or combining data from multiple sources. It's like sculpting: you start with a large block of clay (or data), then shave off pieces or add others as needed, until the shape of the data is how you want it. 
 
 To start Power Query Editor:
 
-- Select **Edit Queries** > **Edit Queries** from the **Home** ribbon.
+- On the **Home** ribbon, in the **Queries** section, select **Transform data**.
 
    The **Power Query Editor** window appears.
 
@@ -132,4 +130,3 @@ To get started with Power BI Desktop, the first thing you need is to download an
 
 * [Get Power BI Desktop from the Windows Store](https://aka.ms/pbidesktopstore)
 * [Download Power BI Desktop from the web](https://www.microsoft.com/download/details.aspx?id=58494)
-

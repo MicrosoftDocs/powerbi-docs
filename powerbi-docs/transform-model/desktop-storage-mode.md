@@ -2,14 +2,12 @@
 title: Use storage mode in Power BI Desktop
 description: Use storage mode to control whether data is cached in-memory for reports in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 01/29/2020
-ms.author: davidi
-
 LocalizationGroup: Transform and shape data
 ---
 
@@ -75,7 +73,7 @@ Let’s say all tables in this model are initially set to **DirectQuery**. If yo
 
 ![Storage mode warning window](media/desktop-storage-mode/storage-mode-05.png)
 
-You can set the dimension tables (**Customer**, **Geography**, and **Date**) to **Dual** to reduce the number of weak relationships in the dataset, and improve performance. Weak relationships normally involve at least one DirectQuery table where join logic can't be pushed to the source systems. Because Dual tables can act as either DirectQuery or Import tables, this situation is avoided.
+You can set the dimension tables (**Customer**, **Geography**, and **Date**) to **Dual** to reduce the number of limited relationships in the dataset, and improve performance. Limited relationships normally involve at least one DirectQuery table where join logic can't be pushed to the source systems. Because Dual tables can act as either DirectQuery or Import tables, this situation is avoided.
 
 The propagation logic is designed to help with models that contain many tables. Suppose you have a model with 50 tables and only certain fact (transactional) tables need to be cached. The logic in Power BI Desktop calculates the minimum set of dimension tables that must be set to **Dual**, so you don’t have to.
 
@@ -115,15 +113,15 @@ Queries that refer to Dual tables return data from the cache, if possible; other
 
 Continuing the previous example, the following query refers only to a column from the **Date** table, which is in **Dual** mode. Therefore, the query should hit the cache:
 
-![Script for storage mode diagnostics](media/desktop-storage-mode/storage-mode-06.png)
+![Screenshot shows text of query that refers to the Date table.](media/desktop-storage-mode/storage-mode-06.png)
 
 The following query refers only to a column from the **Sales** table, which is in **DirectQuery** mode. Therefore, it should *not* hit the cache:
 
-![Script for storage mode diagnostics](media/desktop-storage-mode/storage-mode-07.png)
+![Screenshot shows text of query that refers the Sales table.](media/desktop-storage-mode/storage-mode-07.png)
 
 The following query is interesting because it combines both columns. This query doesn't hit the cache. You might initially expect it to retrieve **CalendarYear** values from the cache and **SalesAmount** values from the source and then combine the results, but this approach is less efficient than submitting the SUM/GROUP BY operation to the source system. If the operation is pushed down to the source, the number of rows returned will likely be far less: 
 
-![Script for storage mode diagnostics](media/desktop-storage-mode/storage-mode-08.png)
+![Screenshot shows text of query that refers to both the Date table and the Sales table.](media/desktop-storage-mode/storage-mode-08.png)
 
 > [!NOTE]
 > This behavior is different from [many-to-many relationships](desktop-many-to-many-relationships.md) in Power BI Desktop when cached and non-cached tables are combined.

@@ -5,14 +5,14 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: maggies
 ms.service: powerbi
-ms.subservice: report-builder
+ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/03/2019
+ms.date: 09/28/2020
 ---
 
 # View parameters for paginated reports in the Power BI service
 
-In this article, you learn how to interact with parameters for paginated reports in the Power BI service.  A report parameter provides a way to filter report data. Parameters offer a list of available values, and you can choose one or many values. Sometimes parameters have a default value, and sometimes you have to choose a value before you can see the report.  
+In this article, you learn how to interact with parameters for paginated reports in the Power BI service.  A report parameter provides a way to filter report data. Parameters offer a list of available values. You can choose one or many values, or type in a parameter text box to search for values. Sometimes parameters have a default value, and sometimes you have to choose a value before you see the report.  
 
 When you view a report that has parameters, the report viewer toolbar displays each parameter so you can interactively specify values. The following illustration shows the parameter area for a report with parameters for **Buying Group**, **Location**, a **From Date**, and a **To Date**.  
 
@@ -22,7 +22,7 @@ When you view a report that has parameters, the report viewer toolbar displays e
   
 1.  **Parameters pane** The report viewer toolbar displays a prompt such as "Required" or a default value for each parameter.    
   
-2.  **Invoices From / To Date parameters** The two data parameters have default values. To change the date, type a date in the text box or choose a date in the calendar.  
+2.  **Invoices From / To Date parameters** The two date parameters have default values. To change the date, type a date in the text box or choose a date in the calendar.  
   
 3.  **Location parameter** The Location parameter is set to allow you to select one, many, or all values. 
   

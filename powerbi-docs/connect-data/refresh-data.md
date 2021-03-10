@@ -2,13 +2,12 @@
 title: Data refresh in Power BI
 description: This article describes the data refresh features of Power BI and their dependencies at a conceptual level.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: kayu
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 06/16/2020
-ms.author: davidi
-
+ms.date: 12/14/2020
 LocalizationGroup: Data refresh
 ---
 
@@ -88,7 +87,11 @@ A Power BI refresh operation can consist of multiple refresh types, including da
 
 #### Data refresh
 
-For Power BI users, refreshing data typically means importing data from the original data sources into a dataset, either based on a refresh schedule or on-demand. You can perform multiple dataset refreshes daily, which might be necessary if the underlying source data changes frequently. Power BI limits datasets on shared capacity to eight daily refreshes. If the dataset resides on a Premium capacity, you can schedule up to 48 refreshes per day in the dataset settings. For more information, see [Configure scheduled refresh](#configure-scheduled-refresh) later in this article. Datasets on a Premium capacity with the [XMLA endpoint](../admin/service-premium-connect-tools.md) enabled for read-write support unlimited refresh operations when configured programmatically with TMSL or PowerShell.
+For Power BI users, refreshing data typically means importing data from the original data sources into a dataset, either based on a refresh schedule or on-demand. You can perform multiple dataset refreshes daily, which might be necessary if the underlying source data changes frequently. Power BI limits datasets on shared capacity to eight daily refreshes. The eight time values are stored in the backend database. The scheduler checks which model should be refreshed based on the local time of the user who created the schedule.  The quota of eight refreshes resets daily at 12:01 a.m. 
+
+If the dataset resides on a Premium capacity, you can schedule up to 48 refreshes per day in the dataset settings. For more information, see [Configure scheduled refresh](#configure-scheduled-refresh) later in this article. Datasets on a Premium capacity with the [XMLA endpoint](../admin/service-premium-connect-tools.md) enabled for read-write support unlimited refresh operations when configured programmatically with TMSL or PowerShell.
+
+
 
 It is also important to call out that the shared-capacity limitation for daily refreshes applies to both scheduled refreshes and API refreshes combined. You can also trigger an on-demand refresh by selecting **Refresh Now** in the dataset menu, as the following screenshot depicts. On-demand refreshes are not included in the refresh limitation. Also note that datasets on a Premium capacity don't impose limitations for API refreshes. If you are interested in building your own refresh solution by using the Power BI REST API, see [Datasets - Refresh Dataset](/rest/api/power-bi/datasets/refreshdataset).
 
@@ -280,7 +283,8 @@ In most cases, Power BI datasets that use dynamic data sources cannot be refresh
  
 To determine whether your dynamic data source can be refreshed, open the **Data Source Settings** dialog in **Power Query Editor**, and then select **Data Sources In Current File**. In the window that appears, look for the following warning message, as shown in the following image:
  
-    Some data sources may not be listed because of hand-authored queries.
+> [!NOTE]
+> Some data sources may not be listed because of hand-authored queries.
 
 ![Dynamic data source indicator](media/refresh-data/dynamic-data-source.png)
 

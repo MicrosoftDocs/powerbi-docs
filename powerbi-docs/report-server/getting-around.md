@@ -2,14 +2,12 @@
 title: Manage content in the Power BI Report Server web portal
 description: Read about managing content in the Power BI Report Server web portal.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 05/24/2018
-ms.author: maggies
-
 ---
 # Manage content in the web portal 
 The Power BI Report Server web portal is an on-premises location for viewing, storing and managing your Power BI, mobile, and paginated reports, and KPIs.
@@ -59,10 +57,9 @@ Power BI Report Server offers detailed control of the items you store on the web
     ![Select a property](media/getting-around/report-server-web-portal-manage-properties.png)
 3. Select **Apply**.
 
-Read more about [working with subscriptions in the web portal](https://docs.microsoft.com/sql/reporting-services/working-with-subscriptions-web-portal).
+Read more about [working with subscriptions in the web portal](/sql/reporting-services/working-with-subscriptions-web-portal).
 
 ## Next steps
 [What is Power BI Report Server?](get-started.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

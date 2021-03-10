@@ -2,13 +2,12 @@
 title: DirectQuery model guidance in Power BI Desktop
 description: Guidance for developing DirectQuery models.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 10/24/2019
-ms.author: v-pemyer
 ---
 
 # DirectQuery model guidance in Power BI Desktop
@@ -37,11 +36,11 @@ The relational database source can be optimized in several ways, as described in
 > We understand that not all modelers have the permissions or skills to optimize a relational database. While it is the preferred layer to prepare the data for a DirectQuery model, some optimizations can also be achieved in the model design, without modifying the source database. However, best optimization results are often achieved by applying optimizations to the source database.
 
 - **Ensure data integrity is complete:** It is especially important that dimension-type tables contain a column of unique values (dimension key) that maps to the fact-type table(s). It's also important that fact-type dimension columns contain valid dimension key values. They will allow configuring more efficient model relationships that expect matched values on both sides of relationships. When the source data lacks integrity, it's recommended that an "unknown" dimension record is added to effectively repair the data. For example, you can add a row to the **Product** table to represent an unknown product, and then assign it an out-of-range key, like -1. If rows in the **Sales** table contain a missing product key value, substitute them with -1. It will ensure every **Sales** product key value has a corresponding row in the **Product** table.
-- **Add indexes:** Define appropriate indexes—on tables or views—to support the efficient retrieval of data for the expected report visual filtering and grouping. For SQL Server, Azure SQL Database or Azure SQL Data Warehouse sources, see [SQL Server Index Architecture and Design Guide](/sql/relational-databases/sql-server-index-design-guide?view=sql-server-2017) for helpful information on index design guidance. For SQL Server or Azure SQL Database volatile sources, see [Get started with Columnstore for real-time operational analytics](/sql/relational-databases/indexes/get-started-with-columnstore-for-real-time-operational-analytics?view=sql-server-2017).
+- **Add indexes:** Define appropriate indexes—on tables or views—to support the efficient retrieval of data for the expected report visual filtering and grouping. For SQL Server, Azure SQL Database or Azure SQL Data Warehouse sources, see [SQL Server Index Architecture and Design Guide](/sql/relational-databases/sql-server-index-design-guide) for helpful information on index design guidance. For SQL Server or Azure SQL Database volatile sources, see [Get started with Columnstore for real-time operational analytics](/sql/relational-databases/indexes/get-started-with-columnstore-for-real-time-operational-analytics).
 - **Design distributed tables:** For Azure SQL Data Warehouse sources, which leverage Massively Parallel Processing (MPP) architecture, consider configuring large fact-type tables as hash distributed, and dimension-type tables to replicate across all the compute nodes. For more information, see [Guidance for designing distributed tables in Azure SQL Data Warehouse](/azure/sql-data-warehouse/sql-data-warehouse-tables-distribute#what-is-a-distributed-table).
-- **Ensure required data transformations are materialized:** For SQL Server relational database sources (and other relational database sources), computed columns can be added to tables. These columns are based on an expression, like **Quantity** multiplied by **UnitPrice**. Computed columns can be persisted (materialized) and, like regular columns, sometimes they can be indexed. For more information, see [Indexes on Computed Columns](/sql/relational-databases/indexes/indexes-on-computed-columns?view=sql-server-2017).
+- **Ensure required data transformations are materialized:** For SQL Server relational database sources (and other relational database sources), computed columns can be added to tables. These columns are based on an expression, like **Quantity** multiplied by **UnitPrice**. Computed columns can be persisted (materialized) and, like regular columns, sometimes they can be indexed. For more information, see [Indexes on Computed Columns](/sql/relational-databases/indexes/indexes-on-computed-columns).
 
-    Consider also indexed views that can pre-aggregate fact table data at a higher grain. For example, if the **Sales** table stores data at order line level, you could create a view to summarize this data. The view could be based on a SELECT statement that groups the **Sales** table data by date (at month level), customer, product, and summarizes measure values like sales, quantity, etc. The view can then be indexed. For SQL Server or Azure SQL Database sources, see [Create Indexed Views](/sql/relational-databases/views/create-indexed-views?view=sql-server-2017).
+    Consider also indexed views that can pre-aggregate fact table data at a higher grain. For example, if the **Sales** table stores data at order line level, you could create a view to summarize this data. The view could be based on a SELECT statement that groups the **Sales** table data by date (at month level), customer, product, and summarizes measure values like sales, quantity, etc. The view can then be indexed. For SQL Server or Azure SQL Database sources, see [Create Indexed Views](/sql/relational-databases/views/create-indexed-views).
 - **Materialize a date table:** A common modeling requirement involves adding a date table to support time-based filtering. To support the known time-based filters in your organization, create a table in the source database, and ensure it is loaded with a range of dates encompassing the fact table dates. Also ensure that it includes columns for useful time periods, like year, quarter, month, week, etc.
 
 ## Optimize model design
@@ -83,7 +82,7 @@ A DirectQuery model can be optimized in many ways, as described in the following
 
     Increasing the **Maximum Connections per Data Source** value ensures more queries (up to the maximum number specified) can be sent to the underlying data source, which is useful when numerous visuals are on a single page, or many users access a report at the same time. Once the maximum number of connections is reached, further queries are queued until a connection becomes available. Increasing this limit does result in more load on the underlying data source, so the setting isn't guaranteed to improve overall performance.
     
-    When the model is published to Power BI, the maximum number of concurrent queries sent to the underlying data source also depends on the environment. Different environments (such as Power BI, Power BI Premium, or Power BI Report Server) each can impose different throughput constraints. For more information about Power BI Premium capacity resource limitations, see [Deploying and Managing Power BI Premium Capacities](https://docs.microsoft.com/power-bi/whitepaper-powerbi-premium-deployment).
+    When the model is published to Power BI, the maximum number of concurrent queries sent to the underlying data source also depends on the environment. Different environments (such as Power BI, Power BI Premium, or Power BI Report Server) each can impose different throughput constraints. For more information about Power BI Premium capacity resource limitations, see [Deploying and Managing Power BI Premium Capacities](./whitepaper-powerbi-premium-deployment.md).
 
 ## Optimize report designs
 
@@ -123,7 +122,7 @@ There are many functional and performance enhancements that can be achieved by c
 
 ## Educate users
 
-It is important to educate your users on how to efficiently work with reports based on DirectQuery datasets. Your report authors should be educated on the content described in the [Optimize report designs](#optimize-report-designs section).
+It is important to educate your users on how to efficiently work with reports based on DirectQuery datasets. Your report authors should be educated on the content described in the [Optimize report designs](#optimize-report-designs) section.
 
 We recommend that you educate your report consumers about your reports that are based on DirectQuery datasets. It can be helpful for them to understand the general data architecture, including any relevant limitations described in this article. Let them know to expect that refresh responses and interactive filtering may at times be slow. When report users understand why performance degradation happens, they are less likely to lose trust in the reports and data.
 

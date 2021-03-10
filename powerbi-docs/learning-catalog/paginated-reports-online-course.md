@@ -2,13 +2,13 @@
 title: "Power BI Paginated Reports in a Day course"
 description: This video-based course aims to empower you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: maggies
 featuredvideoid: DN1t5p9aui0
 ms.service: powerbi
-ms.subservice: report-builder
+ms.subservice: powerbi
 ms.topic: tutorial
-ms.date: 03/18/2020
-ms.author: v-pemyer
+ms.date: 12/31/2020
 ---
 
 # Power BI Paginated Reports in a Day course
@@ -38,7 +38,7 @@ Watch the welcome and introduction video to start the course.
 
 ## Course outline
 
-The [course of 24 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT) is organized into eight modules. We recommend you watch the videos in the recorded sequence, starting with video 01 and ending with video 24.
+The [course of 25 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT) is organized into eight modules. We recommend you watch the videos in the recorded sequence, starting with video 01 and ending with video 25.
 
 - **Introduction**
   - Video 01: [Welcome and Course Introduction](https://www.youtube.com/watch?v=DN1t5p9aui0&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
@@ -73,6 +73,7 @@ The [course of 24 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icI
   - Video 22: [Bonus Content: Review](https://www.youtube.com/watch?v=w5zlJ8BodxI&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
   - Video 23: [Bonus Content: Evolution of Paginated Reporting](https://www.youtube.com/watch?v=pevpai65MvY&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
   - Video 24: [Bonus Content: Lowering the Barrier to Entry](https://www.youtube.com/watch?v=vu32LfckCt8&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
+  - Video 25: [Bonus Content: December 2020 Update](https://www.youtube.com/watch?v=-7M4muS_3BI&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
 
 ## Self-study kit
 
@@ -100,7 +101,7 @@ You can download and set up a self-study kit, which consists of the presentation
 >
 > You must sign in to Power BI to publish a Power BI Desktop file to a workspace. The publication results in a dataset that's used as a report data source. You don't need a Power BI Pro license or a Power BI Premium subscription to use a dataset as a report data source.
 >
-> Some lab tasks involve publishing your paginated report to a workspace. You can only open a paginated report when it's been saved to a workspace on [dedicated capacity](../admin/service-premium-what-is.md#dedicated-capacities), which has the paginated reports workload enabled. If you don't have access to a suitable workspace, the lab will provide you with a link to watch a video that demonstrates report publication instead.
+> Some lab tasks involve publishing your paginated report to a workspace. You can only open a paginated report when it's been saved to a workspace on a [capacity](../admin/service-premium-what-is.md#reserved-capacities), which has the paginated reports workload enabled. If you don't have access to a suitable workspace, the lab will provide you with a link to watch a video that demonstrates report publication instead.
 
 ## Instructor kit
 

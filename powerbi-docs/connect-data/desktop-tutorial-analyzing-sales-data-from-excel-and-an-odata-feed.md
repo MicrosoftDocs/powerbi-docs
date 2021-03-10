@@ -2,14 +2,12 @@
 title: 'Tutorial: Combine data from Excel and an OData feed in Power BI Desktop'
 description: 'Tutorial: Combine data from Excel and an OData feed'
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: tutorial
 ms.date: 01/17/2020
-ms.author: davidi
-
 LocalizationGroup: Learn more
 ---
 # Tutorial: Analyze sales data from Excel and an OData feed
@@ -168,7 +166,7 @@ Select each of your queries in the **Queries** list on the left side of Power Qu
 ![Products query Applied Steps](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/products-query-applied-steps.png) &nbsp;&nbsp; ![Orders query Applied Steps](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/orders-query-applied-steps.png)
 
 >[!TIP]
->Underlying the Applied Steps are formulas written in the *Power Query Language*, also known as the [M language](https://docs.microsoft.com/powerquery-m/power-query-m-reference). To see and edit the formulas, select **Advanced Editor** in the **Query** group of the **Home** tab of the ribbon.
+>Underlying the Applied Steps are formulas written in the *Power Query Language*, also known as the [M language](/powerquery-m/power-query-m-reference). To see and edit the formulas, select **Advanced Editor** in the **Query** group of the **Home** tab of the ribbon.
 
 ## Import the transformed queries
 
@@ -268,7 +266,7 @@ Your completed report combines data from the *Products.xlsx* Excel file and the 
 
 ## Next steps
 
-* [Microsoft Learn for Power BI](https://docs.microsoft.com/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
-* [Watch Power BI Desktop videos](/power-bi/fundamentals/desktop-videos)
+* [Microsoft Learn for Power BI](/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
+* [Watch Power BI Desktop videos](../fundamentals/desktop-videos.md)
 * [Visit the Power BI Forum](https://go.microsoft.com/fwlink/?LinkID=519326)
 * [Read the Power BI Blog](https://go.microsoft.com/fwlink/?LinkID=519327)

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 02/20/2020
+ms.date: 12/07/2020
 ---
 
 # Hardware and software requirements for installing Power BI Report Server
@@ -18,12 +18,12 @@ This article lays out the minimum hardware and software requirements to install 
 
 | Component | Requirement |
 | --- | --- |
-| .NET Framework |4.7<br><br>You can manually install the .NET Framework from [Microsoft .NET Framework 4.7 (Web Installer) for Windows](https://support.microsoft.com/en-us/kb/3186500).<br/><br/> For more information, recommendations, and guidance about the .NET Framework 4.7 see [.NET Framework Deployment Guide for Developers](https://docs.microsoft.com/dotnet/framework/deployment/deployment-guide-for-developers).<br/><br/>Windows 8.1, and Windows Server 2012 R2 require [KB2919355](https://support.microsoft.com/kb/2919355) before installing .NET Framework 4.7. |
+| .NET Framework |4.8<br><br>If the server doesn't have internet access, you can manually install the .NET Framework from [Microsoft .NET Framework 4.8 (Offline Installer) for Windows](https://support.microsoft.com/en-us/help/4503548/).<br/><br/> For more information, recommendations, and guidance about the .NET Framework 4.8 see [.NET Framework Deployment Guide for Developers](/dotnet/framework/deployment/deployment-guide-for-developers).<br/><br/>Windows 8.1, and Windows Server 2012 R2 require [KB2919355](https://support.microsoft.com/kb/2919355) before installing .NET Framework 4.8. |
 | Hard Disk |Power BI Report Server requires a minimum of 1 GB of available hard-disk space.<br><br>Addition space will be required on the database server that is hosting the report server database. |
 | Memory |**Minimum:** 1 GB<br/><br/> **Recommended:** At least 4 GB |
 | Processor speed |**Minimum:** x64 Processor: 1.4 GHz<br/><br/> **Recommended:** 2.0 GHz or faster |
 | Processor type |x64 Processor: AMD Opteron, AMD Athlon 64, Intel Xeon with Intel EM64T support, Intel Pentium IV with EM64T support |
-| Operating system |Windows Server 2019 Datacenter<br><br>Windows Server 2019 Standard<br><br>Windows Server 2016 Datacenter<br><br>Windows Server 2016 Standard<br><br>Windows Server 2012 R2 Datacenter<br><br>Windows Server 2012 R2 Standard<br><br>Windows Server 2012 R2 Essentials<br><br>Windows Server 2012 R2 Foundation<br><br>Windows Server 2012 Datacenter<br><br>Windows Server 2012 Standard<br><br>Windows Server 2012 Essentials<br><br>Windows Server 2012 Foundation<br><br>Windows 10 Home<br><br>Windows 10 Professional<br><br>Windows 10 Enterprise<br><br>Windows 8.1<br><br>Windows 8.1 Pro<br><br>Windows 8.1 Enterprise<br><br>Windows 8<br><br>Windows 8 Pro<br><br>Windows 8 Enterprise |
+| Operating system |Windows Server 2019 Datacenter<br><br>Windows Server 2019 Standard<br><br>Windows Server 2016 Datacenter<br><br>Windows Server 2016 Standard<br><br>Windows 10 Home<br><br>Windows 10 Professional<br><br>Windows 10 Enterprise<br> |
 
 > [!NOTE]
 > Installation of Power BI Report Server is supported on x64 processors only.
@@ -40,7 +40,7 @@ SQL Server is used to host the report server databases. The SQL Server Database 
 * SQL Server 2014
 * SQL Server 2012
 
-When you create the report server database on a remote computer, you have to configure the connection to use a domain user account or a service account with network access. If you decide to use a remote SQL Server instance, consider carefully which credentials the report server should use to connect to the SQL Server instance. For more information, see [Configure a Report Server Database Connection](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager).
+When you create the report server database on a remote computer, you have to configure the connection to use a domain user account or a service account with network access. If you decide to use a remote SQL Server instance, consider carefully which credentials the report server should use to connect to the SQL Server instance. For more information, see [Configure a Report Server Database Connection](/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager).
 
 ## Considerations
 
@@ -48,7 +48,7 @@ Power BI Report Server will install default values to configure the core setting
 
 * The supported languages for Power BI Report Server are - English, German, Spanish, Japanese, Italian, French, Russian, Chinese Simplified, Chinese Traditional, Portuguese Brazil, Korean
 * A SQL Server Database Engine must be available after setup and before you configure the database for the report server. The Database Engine instance hosts the report server database that Reporting Services Configuration Manager will create. The Database Engine is not required for the actual setup experience.
-* [Reporting Services Features Supported by the Editions of SQL Server](https://docs.microsoft.com/sql/reporting-services/reporting-services-features-supported-by-the-editions-of-sql-server-2016) outlines differences between the editions of SQL Server.
+* [Reporting Services Features Supported by the Editions of SQL Server](/sql/reporting-services/reporting-services-features-supported-by-the-editions-of-sql-server-2016) outlines differences between the editions of SQL Server.
 * The user account that runs Setup must be a member of the local Administrators group.
 * The user account that runs Reporting Services Configuration Manager must have permission to access and create databases on the Database Engine instance that hosts the report server databases.
 * Setup must be able to use the default values to reserve the URLs that provide access to the report server and the web portal. These values are port 80, a strong wildcard, and the virtual directory names in the format **ReportServer** and **Reports**.
@@ -73,6 +73,6 @@ You can use a live connection against tabular or multidimensional instances. You
 [Administrator overview](admin-handbook-overview.md)  
 [Install Power BI Report Server](install-report-server.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
+[Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

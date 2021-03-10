@@ -2,14 +2,12 @@
 title: Use Modeling view in Power BI Desktop
 description: Use Modeling view to see complex datasets in a visual format in Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 05/08/2019
-ms.author: davidi
-
 LocalizationGroup: Transform and shape data
 ---
 

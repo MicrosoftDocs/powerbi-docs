@@ -2,14 +2,12 @@
 title: 'Tutorial: Analyze Facebook data by using Power BI Desktop'
 description: Learn how to import data from Facebook and use it in Power BI Desktop.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: tutorial
 ms.date: 05/06/2020
-ms.author: davidi
-
 LocalizationGroup: Learn more
 ---
 # Tutorial: Analyze Facebook data by using Power BI Desktop
@@ -110,7 +108,7 @@ After applying the data transformations so far, your **Applied Steps** should ap
    ![Applied Steps](media/desktop-tutorial-facebook-analytics/applied-steps.png)
    
    >[!TIP]
-   >Underlying the **Applied Steps** are formulas written in the [Power Query M formula language](https://docs.microsoft.com/powerquery-m/quick-tour-of-the-power-query-m-formula-language). To see and edit the formulas, select **Advanced Editor** in the **Query** group of the **Home** tab of the ribbon. 
+   >Underlying the **Applied Steps** are formulas written in the [Power Query M formula language](/powerquery-m/quick-tour-of-the-power-query-m-formula-language). To see and edit the formulas, select **Advanced Editor** in the **Query** group of the **Home** tab of the ribbon. 
 
 ### Import the transformed data
 
@@ -124,7 +122,7 @@ When you're satisfied with the data, select **Close & Apply** > **Close & Apply*
    
    Once the data is loaded, it appears in the **Report** view as a new query in the **Fields** pane.
    
-   ![New query](media/desktop-tutorial-facebook-analytics/fb-newquery.png)
+   ![Screenshot shows the available fields for a query called Query1.](media/desktop-tutorial-facebook-analytics/fb-newquery.png)
    
 ## Use the data in report visualizations 
 
@@ -134,7 +132,7 @@ Now that you have imported data from the Facebook page, you can quickly and easi
 
 1. In Power BI Desktop **Report** view, select **message** from the **Fields** pane, or drag it onto the report canvas. A table showing all post messages appears on the canvas. 
    
-   ![New query](media/desktop-tutorial-facebook-analytics/table-viz.png)
+   ![Screenshot shows the Report view with a message list.](media/desktop-tutorial-facebook-analytics/table-viz.png)
    
 2. With that table selected, also select **Number of comments** from the **Fields** pane, or drag it into the table. 
    
@@ -247,7 +245,6 @@ As you can see, it's easy to customize visualizations in your report to present 
 Power BI Desktop provides a seamless end-to-end experience, from getting data from a wide range of data sources and shaping it to meet your analysis needs, to visualizing this data in rich and interactive ways. When your report is ready, you can [upload it to the Power BI service](../create-reports/desktop-upload-desktop-files.md) and create dashboards based on it to share with other Power BI users.
 
 ## Next steps
-* [Read other Power BI Desktop tutorials](https://go.microsoft.com/fwlink/?LinkID=521937)
-* [Watch Power BI Desktop videos](https://go.microsoft.com/fwlink/?LinkID=519322)
+* [Microsoft Learn for Power BI](/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
 * [Visit the Power BI Forum](https://go.microsoft.com/fwlink/?LinkID=519326)
 * [Read the Power BI Blog](https://go.microsoft.com/fwlink/?LinkID=519327)

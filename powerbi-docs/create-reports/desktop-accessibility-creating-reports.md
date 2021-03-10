@@ -2,14 +2,12 @@
 title: Creating accessible reports in Power BI
 description: How to create accessible Power BI Desktop reports
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/30/2019
-ms.author: davidi
-
 LocalizationGroup: Create reports
 ---
 # Design Power BI reports for accessibility
@@ -68,11 +66,11 @@ In general, every object in Power BI that has keyboard navigation is also compat
 
 Power BI has high contrast support for reports. If you're using a high contrast mode in Windows, Power BI Desktop automatically detects which high contrast theme is being used in Windows and applies those settings to your reports. Those high contrast colors follow the report when published to the Power BI service or elsewhere.
 
-![High contrast windows settings](media/desktop-accessibility/accessibility-05b.png)
+![Screenshot shows a report in high contrast windows settings.](media/desktop-accessibility/accessibility-05b.png)
 
 The Power BI service also attempts to detect the high contrast settings selected for Windows, but how effective and accurate that detection is depends on the browser being used for the Power BI service. If you want to set the theme manually in the Power BI service, in the top-right corner you can select **V > High contrast** colors and then select the theme you would like to apply to the report.
 
-![Focus for accessibility navigation](media/desktop-accessibility/accessibility-creating-reports-02.png)
+![Screenshot shows how to select a theme of high contrast colors.](media/desktop-accessibility/accessibility-creating-reports-02.png)
 
 ### Focus mode
 If a report consumer is looking at a visual in a dashboard, they can expand the visual to fill up more of their screen by navigating to the context menu of the visual and selecting **Open in focus mode**.

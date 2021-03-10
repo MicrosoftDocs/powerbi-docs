@@ -1,20 +1,20 @@
 ---
 title: Power BI admin portal
 description: The admin portal lets you configure org-wide settings for Power BI. You can view usage metrics, configure tenant settings, work with capacity, view workspaces, organizational visuals, and featured content.
-author: kfollis
+author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 08/10/2020
-ms.author: kfollis
+ms.date: 02/03/2021
 ms.custom: seodec18
 LocalizationGroup: Administration
 ---
 
 # Administering Power BI in the admin portal
 
-The admin portal enables you to manage the Power BI settings for your organization. The portal includes items such as usage metrics, access to the Microsoft 365 admin center, and tenant settings.
+The admin portal enables you to manage the Power BI settings for your organization. The portal includes items such as usage metrics, access to the Microsoft 365 admin center, and settings that govern Power BI for all your users.
 
 The full admin portal can be accessed by global admins and users who have the Power BI service administrator role. If you're not in one of these roles, you only see **Capacity settings** in the portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
 
@@ -26,14 +26,15 @@ You have to be a global admin or Power BI service admin to access the Power BI a
 
 1. From the page header, select **Settings** > **Admin portal**.
 
-    ![Settings to admin portal](media/service-admin-portal/powerbi-admin-settings.png)
+   :::image type="content" source="media/service-admin-portal/settings-portal.png" alt-text="Settings menu with admin portal selected.":::
 
 There are several sections in the Admin portal. The rest of this article provides information about each of these sections.
 
-![Admin portal navigation](media/service-admin-portal/powerbi-admin-landing-page.png)
+   :::image type="content" source="media/service-admin-portal/portal-menu.png" alt-text="Admin portal menu.":::
 
 * [Usage metrics](#usage-metrics)
 * [Users](#users)
+* [Premium per user (preview)](#premium-per-user-preview)
 * [Audit logs](#audit-logs)
 * [Tenant settings](#tenant-settings)
 * [Capacity settings](#capacity-settings)
@@ -111,7 +112,7 @@ By default, per-user data is enabled for usage metrics, and account information 
 When disabling usage metrics for their entire organization, admins can also choose one or both options to:
 
 - **Delete all existing usage metrics content** to delete all existing reports and dashboard tiles that were built using the usage metrics reports and datasets. This option removes all access to usage metrics data for all users in the organization who may already be using it.
-- **Delete all existing per-user data in current usage metrics content** This option removes all access to per-user data for all users in the organization who may already be using it. 
+- **Delete all existing per-user data in current usage metrics content** to remove all access to per-user data for all users in the organization who may already be using it.
 
 Be careful, because deleting existing usage and per-user metrics content is irreversible.
 
@@ -120,6 +121,14 @@ Be careful, because deleting existing usage and per-user metrics content is irre
 You manage Power BI users, groups, and admins in the Microsoft 365 admin center. The **Users** tab provides a link to the admin center.
 
 ![Go to Microsoft 365 admin center](media/service-admin-portal/powerbi-admin-manage-users.png)
+
+## Premium per user (preview)
+
+Premium per user is a new way to license Premium features on a per user basis. This feature is currently in preview. After at least one user is assigned a Premium per user license, the associated features can be turned on in any workspace. Admins can manage the auto refresh and dataset workload settings that are shown to users and their default values. For example, access to the XMLA Endpoint can be turned off, set to read-only, or set to read-write.
+
+   :::image type="content" source="media/service-admin-portal/premium-per-user-options.png" alt-text="Premium per user settings.":::
+
+Reference [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.md) to learn more about this licensing model.
 
 ## Audit logs
 
@@ -134,14 +143,12 @@ To use audit logs, make sure the [**Create audit logs for internal activity audi
 > [!NOTE]
 > Tenant settings that control the availability of features in the Power BI user interface can help to establish governance policies, but they're not a security measure. For example, the **Export data** setting doesn't restrict the permissions of a Power BI user on a dataset. Power BI users with read access to a dataset have the permission to query this dataset and might be able to persist the results without using the **Export data** feature in the Power BI user interface.
 
-The following image shows several settings on the **Tenant settings** tab.
-
-![Tenant settings](media/service-admin-portal/powerbi-admin-tenant-settings.png)
+The following sections elaborate on the settings on the **Tenant settings** tab.
 
 > [!NOTE]
 > It can take up to 15 minutes for a setting change to take effect for everyone in your organization.
 
-Settings can have one of three states:
+Many of the settings can have one of three states:
 
 * **Disabled for the entire organization**: No one in your organization can use this feature.
 
@@ -151,7 +158,7 @@ Settings can have one of three states:
 
     ![Enabled all setting](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 
-* **Enabled for a subset of the organization**: Instead of enabling the feature fo the entire organization, you can apply the setting to **Specific security groups** in your organization who are allowed to use this feature.
+* **Enabled for a subset of the organization**: Specific security groups in your organization are allowed to use this feature.
 
     You can also enable a feature for your entire organization, **Except specific security groups**.
 
@@ -167,27 +174,29 @@ The next few sections provide an overview of the different types of tenant setti
 
 ### Publish "Get Help" information
 
+![Publish get help information](media/service-admin-portal/powerbi-admin-tenant-settings-gethelp.png)
+
 Admins can specify internal URLs to override the destination of links on the Power BI help menu and for license upgrades. If custom URLs are set, users in the organization go to internal help and support resources instead of the default destinations. The following resource destinations can be customized:
 
-* **Learn**. By default, this help menu link targets a [list of all our Power BI learning paths and modules](https://docs.microsoft.com/learn/browse/?products=power-bi). To direct this link to internal training resources instead, set a custom URL for **Training documentation**.
+* **Learn**. By default, this help menu link targets a [list of all our Power BI learning paths and modules](/learn/browse/?products=power-bi). To direct this link to internal training resources instead, set a custom URL for **Training documentation**.
 
 * **Community**. To take users to an internal forum from the help menu, instead of to the [Power BI Community](https://community.powerbi.com/), set a custom URL for **Discussion forum**.
 
-* **Licensing upgrades**. Users with a Power BI (free) license may be presented with the opportunity to upgrade their account to Power BI Pro while using the service. If you specify an internal URL for **Licensing requests**, you redirect users to an internal request and purchase flow and prevent self-service purchase. If you want to prevent users from buying licenses, but are okay with letting users start a Power BI Pro trial, see [Allow users to try Power BI Pro](#allow-users-to-try-power-bi-pro) to separate the buy and try experiences.
+* **Licensing upgrades**. Users with a Power BI (free) license may be presented with the opportunity to upgrade their account to Power BI Pro while using the service. If you specify an internal URL for **Licensing requests**, you redirect users to an internal request and purchase flow and prevent self-service purchase. If you want to prevent users from buying licenses, but are okay with letting users start a Power BI Pro trial, see [Allow users to try Power BI Pro](#allow-users-to-try-power-bi-paid-features) to separate the buy and try experiences.
 
 * **Get help**. To take users to an internal help desk from the help menu, instead of to [Power BI Support](https://powerbi.microsoft.com/support/), set a custom URL for **Help Desk**.
-
-![Publish get help information](media/service-admin-portal/powerbi-admin-tenant-settings-gethelp.png)
 
 ### Receive email notifications for service outages or incidents
 
 Mail-enabled security groups will receive email notifications if this tenant is impacted by a service outage or incident. Learn more about [Service interruption notifications](service-interruption-notifications.md).
 
-### Allow users to try Power BI Pro
+### Allow users to try Power BI paid features
 
-The setting to **Allow users to try Power BI Pro** is enabled by default, and increases your control over how users acquire Power BI Pro licenses. In scenarios where you have blocked self-service purchase, this setting lets users start a Power BI Pro trial. The end user experience depends on how you combine license settings. The table below shows how the upgrade experience from Power BI (free) to Power BI Pro is affected by different setting combinations:
+![Allow users to try Power BI Pro settings U I](media/service-admin-portal/allow-pro-trial.png)
 
-| Self-service purchase setting | Allow user to try Power BI Pro setting | End user experience |
+The setting to **Allow users to try Power BI paid features** is enabled by default. This setting increases your control over how users acquire Power BI Pro licenses. In scenarios where you have blocked self-service purchase, this setting lets users start a Power BI Pro trial. The end-user experience depends on how you combine license settings. The table below shows how the upgrade experience from Power BI (free) to Power BI Pro is affected by different setting combinations:
+
+| Self-service purchase setting | Allow user to try Power BI Pro setting | End-user experience |
 | ------ | ------ | ----- |
 | Enabled | Disabled | User can buy a Pro license, but can't start a trial |
 | Enabled | Enabled | User can start a free trial of Pro and can upgrade to a paid license |
@@ -195,11 +204,33 @@ The setting to **Allow users to try Power BI Pro** is enabled by default, and in
 | Disabled | Enabled | User can start a Pro trial, but must contact the IT admin to get a paid license |
 
 > [!NOTE]
-> You can add an internal URL for licensing requests in [Help and support settings](#help-and-support-settings). If you set the URL it overrides the default purchase experience. Users who can buy a license in the scenarios described in the table above are redirected to your internal URL.
-
-![Allow users to try Power BI Pro settings U I](media/service-admin-portal/allow-pro-trial.png)
+> You can add an internal URL for licensing requests in [Help and support settings](#help-and-support-settings). If you set the URL, it overrides the default self-service purchase experience. It doesn't redirect signup for a Power BI Pro license trial. Users who can buy a license in the scenarios described in the table above are redirected to your internal URL.
 
 To learn more, see [Enable or disable self-service sign-up and purchasing](service-admin-disable-self-service.md).
+
+### Show a custom message before publishing reports  
+
+Admins can provide a custom message that appears before a user publishes a report from Power BI Desktop. After you enable the setting, you need to provide a **Custom message**. The Custom message can be plain text or follow Markdown syntax, as in the following example message:
+
+```markdown
+#### Important Disclaimer 
+
+Before publishing the report to a workspace, be sure to validate that the appropriate users or groups have access to the destination workspace. If some users or groups should *not* have access to the content and underlying artifacts, remove or modify their access to the workspace, or publish the report to a different workspace. [Learn more](https://docs.microsoft.com/power-bi/collaborate-share/service-create-the-new-workspaces#give-access-to-your-workspace). 
+```
+
+The **Custom message** text area does support scrolling, so you can provide a message up to 5,000 characters.
+
+:::image type="content" source="media/service-admin-portal/admin-show-custom-message.png" alt-text="Screenshot of the custom message box.":::
+
+When your users publish reports to workspaces in Power BI, they see the message you've written.
+
+:::image type="content" source="media/service-admin-portal/admin-user-show-custom-message.png" alt-text="The dialog box your users see when publishing reports to a workspace.":::
+
+As with other tenant settings, you can choose who the **Custom message** applies to:
+
+- **The entire organization**.
+- **Specific security groups**.
+- Or **Except specific security groups**.
 
 ## Workspace settings
 
@@ -211,7 +242,7 @@ In **Tenant settings**, the admin portal has three sections for controlling work
 
 ### Create the new workspaces
 
-Workspaces are places where users can collaborate on dashboards, reports, and other content. Admins use the **Create workspaces (new workspace experience** setting to indicate which users in the organization can create workspaces. Admins can allow everybody or nobody in an organization to create new workspace experience workspaces. They can also limit creation to members of specific security groups. Learn more about [workspaces](../collaborate-share/service-new-workspaces.md).
+Workspaces are places where users collaborate on dashboards, reports, and other content. Admins use the **Create workspaces (new workspace experience** setting to indicate which users in the organization can create workspaces. Admins can allow everybody or nobody in an organization to create new workspace experience workspaces. They can also limit creation to members of specific security groups. Learn more about [workspaces](../collaborate-share/service-new-workspaces.md).
 
 :::image type="content" source="media/service-admin-portal/power-bi-admin-workspace-settings.png" alt-text="Create the new workspace experiences":::
 
@@ -234,7 +265,7 @@ Admins can control which users in the organization can use datasets across works
 
 :::image type="content" source="media/service-admin-portal/power-bi-admin-datasets-workspaces.png" alt-text="Use datasets across workspaces":::
 
-See [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md) for more information.
+For more information, see [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md).
 
 ### Block classic workspace creation
 
@@ -246,22 +277,36 @@ When enabled, newly created Office 365 Groups won't be shown in the Power BI wor
 
 ## Export and sharing settings
 
-### Share content with external users
+### Allow Azure Active Directory guest users to access Power BI
 
-Users in the organization can share dashboards, reports, and apps with users outside the organization. Learn more about [sharing externally](../collaborate-share/service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
+Enabling this setting allows Azure Active Directory Business-to-Business (Azure AD B2B) guest users to access Power BI. If you disable this setting, guest users receive an error when trying to access Power BI. Disabling this setting for the entire organization also prevents users from inviting guests to your organization. Use the specific security groups option to control which guest users can access Power BI.
 
-![External users setting](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
+![Allow Azure Active Directory guest users to access Power BI](media/service-admin-portal/powerbi-admin-allow-aad-b2b-guests.png)
 
-The following image shows the message that appears when you share with an external user.
+### Invite external users to your organization 
 
-![Share with external user](media/service-admin-portal/powerbi-admin-sharing-external.png)  
+The **Invite external users to your organization** setting helps organizations choose whether new external users can be invited to the organization through Power BI sharing, permissions, and subscription experiences. If the setting is disabled, an external user who isn't already a guest user in the organization, can’t be added to the organization through Power BI.
+
+![Invite external users to your organization](media/service-admin-portal/powerbi-admin-allow-invite-aad-b2b-guests.png)
 
 > [!IMPORTANT]
-> This option controls whether users in Power BI can invite external users to become Azure Active Directory B2B (Azure AD B2B) guest users in your organization through Power BI. When enabled, users who have the Guest Inviter role in Azure AD can add external email addresses when sharing reports, dashboards, and Power BI apps. The external recipient is invited to join your organization as an Azure AD B2B guest user. Importantly, when disabling this setting, external users who are already Azure AD B2B guest users in your organization continue to appear in people picker UIs in Power BI and can be given access to items, workspaces, and apps.
+> This setting was previously called “Share content with external users”. The revised name reflects more accurately what the setting does.
+
+To invite external users to your organization, a user also needs the Azure Active Directory Guest Inviter role. This setting only controls the ability to invite through Power BI. 
+
+### Allow external guest users to edit and manage content in the organization
+
+Azure AD B2B guest users can edit and manage content in the organization. [Learn more](service-admin-azure-ad-b2b.md)
+
+The following image shows the option to Allow external guest users to edit and manage content in the organization.
+
+![Allow external guest users to edit and manage content in the organization](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
+
+In the admin portal, you also control which users have permissions to invite external users to the organization. See [Share content with external users](#export-and-sharing-settings) in this article for details.
 
 ### Publish to web
 
-As admin for a Power BI tenant, the **Publish to web** setting gives you options for which users can create embed codes to publish reports to the web. This functionality makes the report and its data available to anyone on the web. Learn more about [publishing to the web](../collaborate-share/service-publish-to-web.md).
+As a Power BI admin, the **Publish to web** setting gives you options that let users create embed codes to publish reports to the web. This functionality makes the report and its data available to anyone on the web. Learn more about [publishing to the web](../collaborate-share/service-publish-to-web.md).
 
 > [!NOTE]
 > Only Power BI admins can allow creating new publish to web embed codes. Organizations may have existing embed codes. See the [Embed codes](service-admin-portal.md#embed-codes) section of the admin portal to review currently published reports.
@@ -274,7 +319,7 @@ The **Publish to web** setting in the admin portal gives options for which users
 
 ![Publish to web setting](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
 
-Admins can set **Publish to web** to **Enabled** and **Choose how embed codes work** to **Allow only existing embed codes**. In that case, users can create embed codes, but they have to contact the Power BI admin to allow them do so.
+Admins can set **Publish to web** to **Enabled** and **Choose how embed codes work** to **Allow only existing embed codes**. In that case, users can create embed codes, but they have to contact the Power BI admin to allow them to do so.
 
 ![Publish to web prompt](../collaborate-share/media/service-publish-to-web/publish_to_web_admin_prompt.png)
 
@@ -284,76 +329,106 @@ Users see different options in the UI based on what the **Publish to web** setti
 |---------|---------|---------|---------|
 |**Publish to web** under report **More options (...)** menu|Enabled for all|Not visible for all|Only visible for authorized users or groups.|
 |**Manage embed codes** under **Settings**|Enabled for all|Enabled for all|Enabled for all<br><br>* **Delete** option only for authorized users or groups.<br>* **Get codes** enabled for all.|
-|**Embed codes** within admin portal|Status reflects one of the following:<br>* Active<br>* Not supported<br>* Blocked|Status displays **Disabled**|Status reflects one of the following:<br>* Active<br>* Not supported<br>* Blocked<br><br>If a user isn't authorized based on the tenant setting, status displays **infringed**.|
+|**Embed codes** within admin portal|Status has one of the following values:<br>* Active<br>* Not supported<br>* Blocked|Status displays **Disabled**|Status has one of the following values:<br>* Active<br>* Not supported<br>* Blocked<br><br>If a user isn't authorized based on the tenant setting, status displays **infringed**.|
 |Existing published reports|All enabled|All disabled|Reports continue to render for all.|
 
-### Export data
+### Copy and paste visuals
 
-Users in the organization can export data from a tile or visualization. This controls Analyze in Excel, export to .csv, dataset downloads (.pbix), and Power BI Service Live Connect features. Learn more about [exporting data from a tile or visual](../visuals/power-bi-visualization-export-data.md).
+Users in the organization can copy visuals from a tile or report visual and paste them as static images into external applications.
 
->[!NOTE]
-> Before the introduction of the Export to Excel setting, this setting also controlled exporting data to Excel files. See the [note under Export to Excel](#export-to-excel) for detail.
-
-![Export data setting](media/service-admin-portal/powerbi-admin-portal-export-data-setting.png)
-
-The following image shows the option to export data from a tile.
-
-![Export data from a tile](media/service-admin-portal/powerbi-admin-export-data.png)
-
-> [!NOTE]
-> Disabling **Export Data** also prevents users from using the [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) feature, as well as using the Power BI service live connection.
+![Screenshot of copy paste visuals enable switch.](media/service-admin-portal/powerbi-admin-portal-copy-paste-visuals-setting.png)
 
 ### Export to Excel
 
 Users in the organization can export the data from a visualization to an Excel file.
 
-![Export to Excel setting](media/service-admin-portal/powerbi-admin-portal-export-to-excel-setting.png)
+![Screenshot of export to Excel setting](media/service-admin-portal/powerbi-admin-portal-export-to-excel-setting.png)
 
->[!IMPORTANT]
-> Before the introduction of the Export to Excel setting, exporting to an Excel file was controlled by the Export data setting. Therefore, on tenants that existed before the introduction of the Export to Excel setting, the first time tenant administrators look at the Export to Excel setting they will see that it has *Unapplied changes*. They must apply these changes in order for the new setting to take effect. Otherwise, exporting to an Excel file will continue to be controlled by the Export data setting.
+### Export to .csv
+
+Users in the organization can export data from a tile, visualization, or paginated report to a .csv file.
+
+![Screenshot of export to .csv setting](media/service-admin-portal/powerbi-admin-portal-export-to-csv-setting.png)
+
+### Download reports
+
+Users in the organization can download .pbix files and paginated reports.
+
+![Screenshot of download reports setting.](media/service-admin-portal/powerbi-admin-portal-download-reports-setting.png)
+
+### Allow live connections
+
+Users in the organization can use Power BI service Live Connect. Allowing live connections also allows users to Analyze in Excel.
+
+![Screenshot of allow live connections setting.](media/service-admin-portal/powerbi-admin-portal-allow-live-connections-setting.png)
 
 ### Export reports as PowerPoint presentations or PDF documents
 
-Users in the organization can export Power BI reports as PowerPoint files or PDF documents. [Learn more](../consumer/end-user-powerpoint.md)
+Users in the organization can export reports as PowerPoint files or PDF documents.
 
-The following image shows the **File** menu for a report when the **Export reports as PowerPoint presentations or PDF documents** setting is enabled.
+![Screenshot of export reports as PowerPoint or PDF documents.](media/service-admin-portal/powerbi-admin-portal-export-pptx-pdf-setting.png)
 
-![Export reports as PowerPoint presentations](media/service-admin-portal/powerbi-admin-powerpoint.png)
+### Export reports as MHTML documents
+
+Users in the organization can export Paginated reports as MHTML documents.
+
+![Screenshot of export to MHTML setting.](media/service-admin-portal/powerbi-admin-portal-export-mhtml-setting.png)
+
+### Export reports as Word documents
+
+Users in the organization can export Paginated reports as Word documents.
+
+![Screenshot of export to Word setting.](media/service-admin-portal/powerbi-admin-portal-export-word-setting.png)
+
+### Export reports as XML documents
+
+Users in the organization can export Paginated reports as XML documents.
+
+![Screenshot of export to XML setting.](media/service-admin-portal/powerbi-admin-portal-export-xml-setting.png)
+
+### Export reports as image files (preview)
+
+Users in the organization can use the export report to file API to export reports as image files.
+
+![Screenshot of export as image setting.](media/service-admin-portal/powerbi-admin-portal-export-as-image-setting.png)
 
 ### Print dashboards and reports
 
-Users in the organization can print dashboards and reports. [Learn more](../consumer/end-user-print.md)
 
-The following image shows the option to print a dashboard.
+![Screenshot of print dashboards and reports setting.](media/service-admin-portal/powerbi-admin-portal-print-dashboards-reports-setting.png)
 
-![Print dashboard](media/service-admin-portal/powerbi-admin-print-dashboard.png)
-
-The following image shows the **File** menu for a report when the **Print dashboards and reports** setting is enabled.
-
-![Print report](media/service-admin-portal/powerbi-admin-print-report.png)
-
-### Allow external guest users to edit and manage content in the organization
-
-Azure AD B2B guest users can edit and manage content in the organization. [Learn more](service-admin-azure-ad-b2b.md)
-
-The following image shows the option to Allow external guest users to edit and manage content in the organization.
-
-![Allow external guest users to edit and manage content in the organization](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
-
-In the admin portal, you also control which users have permissions to invite external users to the organization. See [Share content with external users](#export-and-sharing-settings) in this article for details.
+### Certification
+Allow users in this org to certify datasets, dataflows, reports, and apps. See [Enable content certification](service-admin-setup-certification.md) for details.
 
 ### Email Subscriptions
-Users in the organization can create email subscriptions. Learn more about [subscriptions](../collaborate-share/service-publish-to-web.md).
+Users in the organization can create email subscriptions. Learn more about [subscriptions](../collaborate-share/service-report-subscribe.md).
 
 ![Enable email subscriptions](media/service-admin-portal/power-bi-manage-email-subscriptions.png)
 
 ### Featured content
 
-Allow some or all report authors in your organization to feature their content on the Featured section of Power BI Home. New users will see featured content at the top of their Power BI Home page. Featured content moves down the Home page as users add **Favorites**, **frequents**, and **Recents**. 
+By default, anyone with the Admin, Member, or Contributor role in a workspace in your organization can feature content on Power BI Home. New users will see that content in the the Featured section at the top of their Power BI Home page. Featured content moves down the Home page as users add **Favorites & frequents**, and **Recents**. See [Feature content on colleagues' Power BI Home page](../collaborate-share/service-featured-content.md) for more information.
 
-We recommend starting with a small set of promoters first. Allowing the entire organization to feature content on Home may make it difficult to keep track of all the promoted content. 
+You can turn off the ability to feature content, and manage it in the Admin portal. See [Manage featured content](#manage-featured-content) in this article to read about controlling featured content in your domain.
 
-After you enable featured content, you can also manage it in the Admin portal. See [Manage featured content](#manage-featured-content) in this article to read about controlling featured content in your domain.
+### Allow connections to featured tables
+
+This setting lets Power BI admins control who in the organization can use featured tables in the Excel Data Types Gallery. 
+
+![Screenshot of allow connections to featured tables setting.](media/service-admin-portal/powerbi-admin-portal-allow-connections-featured-tables-setting.png)
+
+>[!NOTE]
+>Connections to featured tables are also disabled if the [Allow live connections](#allow-live-connections) setting is set to Disabled.
+
+Read more about [Power BI featured tables in Excel](../collaborate-share/service-excel-featured-tables.md).
+
+### Share to Teams
+
+This setting allows organizations to hide the **Share to Teams** buttons in the Power BI service. When set to disabled, users don't see **Share to Teams** buttons in the action bar or context menus when they view reports and dashboards in the Power BI service.
+
+![Screenshot of Share to Teams tenant setting in the Power B I admin portal.](media/service-admin-portal/service-teams-share-to-teams-tenant-setting.png)
+
+Read more about [sharing Power BI content to Teams](../collaborate-share/service-share-report-teams.md).
 
 ## Content pack and app settings
 
@@ -375,38 +450,17 @@ Report creators can share apps directly with end users without requiring install
 
 ## Integration settings
 
-### Use Analyze in Excel with on-premises datasets
+### Allow XMLA endpoints and Analyze in Excel with on-premises datasets
 
-Users in the organization can use Excel to view and interact with on-premises Power BI datasets. [Learn more](../collaborate-share/service-analyze-in-excel.md)
-
-> [!NOTE]
-> Disabling **Export Data** also prevents users from using the **Analyze in Excel** feature.
+Users in the organization can use Excel to view and interact with on-premises Power BI datasets. This also allows connections to XMLA endpoints. [Learn more](../collaborate-share/service-analyze-in-excel.md)
 
 ### Use ArcGIS Maps for Power BI
 
-Users in the organization can use the ArcGIS Maps for Power BI visualization provided by Esri. [Learn more](../visuals/power-bi-visualization-arcgis.md)
+Users in the organization can use the ArcGIS Maps for Power BI visualization provided by Esri. [Learn more](../visuals/power-bi-visualizations-arcgis.md)
 
 ### Use global search for Power BI (Preview)
 
 Users in the organization can use external search features that rely on Azure Search.
-
-## Featured tables settings
-
-Under **Tenant settings**, the **Allow connections to featured tables** tenant setting lets Power BI admins control who in the organization can use featured tables in the Excel Data Types Gallery. 
-
-:::image type="content" source="media/service-admin-portal/admin-allow-connections-featured-tables.png" alt-text="All connections to featured tables":::
-
-Connections to featured tables are also disabled if the **Export data** tenant setting is set to **Disabled**.
-
-Read more about [Power BI featured tables in Excel](../collaborate-share/service-excel-featured-tables.md).
-
-## Share to Teams tenant setting
-
-The **Share to Teams** setting is in the **Tenant settings** section of the Power BI admin portal. The setting allows organizations to hide the **Share to Teams** buttons in the Power BI service. When set to disabled, users don't see **Share to Teams** buttons in the action bar or context menus when they view reports and dashboards in the Power BI service.
-
-![Screenshot of Share to Teams tenant setting in the Power B I admin portal.](media/service-admin-portal/service-teams-share-to-teams-tenant-setting.png)
-
-Read more about [sharing Power BI content to Teams](../collaborate-share/service-share-report-teams.md).
 
 ## R visuals settings
 
@@ -423,7 +477,7 @@ Users in the organization can interact with and share visuals created with R scr
 
 Users in the organization can use auditing to monitor actions taken in Power BI by other users in the organization. [Learn more](service-admin-auditing.md)
 
-This setting must be enabled for audit log entries to be recorded. There can be up to a 48 hour delay between enabling auditing and being able to view audit data. If you don't see data immediately, check the audit logs later. There can be a similar delay between getting permission to view audit logs and being able to access the logs.
+This setting must be enabled for audit log entries to be recorded. There can be up to a 48-hour delay between enabling auditing and being able to view audit data. If you don't see data immediately, check the audit logs later. There can be a similar delay between getting permission to view audit logs and being able to access the logs.
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
@@ -447,6 +501,13 @@ Users in the organization can tag dashboards with classifications that indicate 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
 
+### Web content on dashboard tiles
+
+Users in the organization can add and view web content tiles on Power BI dashboards. [Learn more](../create-reports/service-dashboard-add-widget.md)
+
+> [!NOTE]
+> This may expose your org to security risks via malicious web content.
+
 ## Developer settings
 
 ### Embed content in apps
@@ -464,7 +525,7 @@ Web apps registered in Azure Active Directory (Azure AD) will use an assigned se
 
 ### Create and use dataflows
 
-Users in the organization can create and use dataflows. For an overview of dataflows, see [Self-service data prep in Power BI](../transform-model/service-dataflows-overview.md). To enable dataflows in a Premium capacity, see [Configure workloads](service-admin-premium-workloads.md).
+Users in the organization can create and use dataflows. For an overview of dataflows, see [Self-service data prep in Power BI](../transform-model/dataflows/dataflows-introduction-self-service.md). To enable dataflows in a Premium capacity, see [Configure workloads](service-admin-premium-workloads.md).
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
@@ -473,25 +534,25 @@ Users in the organization can create and use dataflows. For an overview of dataf
 
 Three settings control template apps ability to publish or install template apps.
 
-![Power BI admin portal template apps settings](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
+![Power B I admin portal template apps settings](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
 
 ### Publish Template Apps
 
 Users in the organization can create template apps workspaces. Control which users can publish template apps or distribute them to clients outside your organization by way of [AppSource](https://appsource.microsoft.com) or other distribution methods.
 
-![Power BI admin portal, Create template apps setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
+![Publish template apps setting enabled for entire organization](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
 
 ### Install template apps listed on AppSource
 
 Users in the organization can download and install template apps **only** from [AppSource](https://appsource.microsoft.com). Control which specific users or security groups can install template apps from AppSource.
 
-![Power BI admin portal, Install template apps setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-appsource.png)
+![Install template apps setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-appsource.png)
 
 ### Install template apps not listed on AppSource
 
 Control which users in the organization can download and install template apps **not listed on [AppSource](https://appsource.microsoft.com)**.
 
-![Power BI admin portal, Install template apps setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-nonappsource.png)
+![Install template apps not listed in AppSource setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-nonappsource.png)
 
 ## Capacity settings
 
@@ -521,7 +582,7 @@ All the Power BI visuals admin settings, including Power BI visuals tenant setti
 
 ### Tenant-level storage (preview)
 
-By default, data used with Power BI is stored in internal storage provided by Power BI. With the integration of dataflows and Azure Data Lake Storage Gen2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. For more information, see [Dataflows and Azure Data Lake integration (Preview)](../transform-model/service-dataflows-azure-data-lake-integration.md).
+By default, data used with Power BI is stored in internal storage provided by Power BI. With the integration of dataflows and Azure Data Lake Storage Gen2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. For more information, see [Dataflows and Azure Data Lake integration (Preview)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md).
 
 ### Workspace-level storage permissions (preview)
 
@@ -536,10 +597,11 @@ As an administrator, you can view the workspaces that exist in your tenant on th
 - See details about a workspace, including its ID, its users and their roles, and its dashboards, reports, and datasets.
 - Edit the list of people who have access. This means you can delete the workspace. You can add yourself to a workspace as an admin, then open the workspace and delete it.
 - Edit the Name and Description fields.
+- Upgrade classic workspaces to the new workspace experience
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
 
-Admins can also control users' ability to create new workspace experience workspaces, and classic workspaces. See [Workspace settings](#workspace-settings) in this article for details. 
+Admins can also control users' ability to create new workspace experience workspaces, and classic workspaces. See [Workspace settings](#workspace-settings) in this article for details.
 
 The table columns on the **Workspaces** tab correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Organize work in the new workspaces](../collaborate-share/service-new-workspaces.md).
 
@@ -555,6 +617,22 @@ On the **Workspaces** tab, you see the *state* for each workspace. The following
 Admins can also manage and recover workspaces, using either the admin portal or PowerShell cmdlets. 
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
+
+Admins can upgrade classic workspaces to the new workspace experience. Admins can select one or more workspaces with Type **Group** to upgrade. Upgrades are queued and executed asynchronously. It may take several minutes to several days to complete all **Pending** upgrades because the overall rate of admin-initiated upgrades is limited to keep the service running smoothly. The **Workspace upgrade status** column helps admins track the progress of the admin-initiated upgrades. Admins can cancel admin-initiated upgrades when they are **Pending**. To upgrade a workspace immediately, contact the Workspace Admin and have them start the upgrade through the workspace settings pane. [Learn more about workspace upgrade before starting your Power BI admin-initiated workspace upgrade.](../collaborate-share/service-upgrade-workspaces.md).
+
+The following table gives more details about the status of the upgrade.
+
+|Status  |Description  |
+|---------|---------|
+| **(Blank)** | The workspace is not being upgraded by a Power BI admin. |
+| **Pending** | The workspace is queued to be upgraded. The upgrade can be canceled. |
+| **In Progress** | The workspace is actively being upgraded. The upgrade can't be canceled. |
+| **Completed** | The workspace was upgraded in the last 30 days by a Power BI admin. A workspace admin can go back to classic option if desired during the 30-day period after the workspace was upgraded. |
+
+> [!NOTE]
+> There are a few limitations to upgrading workspaces, such as those listed here. Learn more about [upgrading workspaces](../collaborate-share/service-upgrade-workspaces.md) before attempting an upgrade.
+> - If the admin for a workspace hasn't accessed Power BI recently (in the last 14 days), the upgrade may fail. Have the workspace admin access Power BI or change to a different admin before trying to upgrade.
+> - If the group associated with the workspace doesn't have a group owner in Azure Active Directory or Microsoft 365, the upgrade may fail. Assign a group owner in Azure Active Directory or Microsoft 365 before upgrading.
 
 ## Custom branding
 
@@ -577,7 +655,7 @@ After you enable information protection for Power BI, data protection metrics ar
 
 ## Manage featured content
 
-As tenant admin, you can manage all the reports, dashboards, and apps that have been promoted to the Featured section on Power BI Home across your organization.
+As a Power BI admin, you can manage all the reports, dashboards, and apps that have been promoted to the Featured section on Power BI Home across your organization.
 
 - In the Admin portal, select **Featured content**.
 

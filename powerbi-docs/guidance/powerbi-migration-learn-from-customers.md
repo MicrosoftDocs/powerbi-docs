@@ -2,13 +2,12 @@
 title: Learn from customer Power BI migrations
 description: Learn from customers when migrating to Power BI.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/20/2020
-ms.author: v-pemyer
 ---
 
 # Learn from customer Power BI migrations
@@ -154,7 +153,7 @@ Over the past year, the company improved its internal training offerings and enh
 
 There are now six internal Power BI courses in their internal catalog. The [Dashboard in a Day](https://powerbi.microsoft.com/diad/) course remains a popular course for beginners. To help users deepen their skills, they deliver a series of three Power BI courses and two DAX courses.
 
-One of their most important data governance decisions related to management of Premium capacities. The company opted to align their dedicated capacity with key analytics areas in business units and shared services. Therefore, if inefficiencies exist, the impact is felt only within that one area, and the decentralized capacity administrators are empowered to manage the capacity as they see fit.
+One of their most important data governance decisions related to management of Premium capacities. The company opted to align their capacity with key analytics areas in business units and shared services. Therefore, if inefficiencies exist, the impact is felt only within that one area, and the decentralized capacity administrators are empowered to manage the capacity as they see fit.
 
 > [!IMPORTANT]
 > Pay attention to how Premium capacities are used, and how workspaces are assigned to them.

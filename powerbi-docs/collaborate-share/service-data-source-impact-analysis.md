@@ -2,14 +2,12 @@
 title: Data source impact analysis
 description: Understand where your data source is being used.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: 
-
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 07/20/2020
-ms.author: painbar
-
 LocalizationGroup: 
 ---
 # Data source impact analysis
@@ -38,6 +36,17 @@ The impact analysis side panel opens.
  
 * **Impact summary**: Shows you the number of potentially impacted workspaces, dataflows, and datasets. This count includes workspaces you don't have access to.
 * **Usage breakdown**: Shows you, for each workspace, the names of the impacted dataflows and datasets. To further explore the impact on a particular workspace, click the workspace name to open the workspace. Once in the affected workspace, use [dataset impact analysis](service-dataset-impact-analysis.md) to see the usage details about connected reports and dashboards.
+
+## Notify contacts
+
+If you've made a change to a data source or are thinking about making a change, you might want to contact the relevant users to tell them about it. When you notify contacts, an email is sent to the [contact lists](service-create-the-new-workspaces.md#create-a-contact-list) of all the impacted workspaces (in case of classic workspaces, the email is sent to the workspace administrators). Your name appears on the email so the contacts can find you and reply back in a new email thread. 
+
+1. Click **Notify contacts** in the impact analysis side pane. The notify contacts dialog will appear.
+
+   ![Screenshot of data source notify contacts dialog.](media/service-data-source-impact-analysis/notify-contacts-dialog.png)
+
+1. In the text box, provide some detail about the change.
+1. When the message is ready, click **Send**.
 
 ## Privacy
 

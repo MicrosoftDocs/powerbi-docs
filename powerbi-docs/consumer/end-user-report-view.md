@@ -2,12 +2,12 @@
 title: Change the display size and ratio of a report page
 description: 'Change the display settings for a page in a Power BI report'
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 03/11/2020
-ms.author: mihart
+ms.date: 09/27/2020
 LocalizationGroup: Reports
 ---
 
@@ -15,7 +15,6 @@ LocalizationGroup: Reports
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 People view reports on many different devices with varying screen sizes and aspect ratios. Change the way a report page displays to fit your needs.
 
@@ -23,7 +22,7 @@ People view reports on many different devices with varying screen sizes and aspe
 
 ## Explore the View menu
 
-![Screenshot of the View drop-down options.](media/end-user-report-view/power-bi-viewmenu.png)
+![Screenshot of the View drop-down options.](media/end-user-report-view/power-bi-menu-view.png)
 
 
 The options in the **View** menu give you flexibility to display report pages at the size and width you choose:
@@ -54,7 +53,7 @@ When you exit the report, your **View** settings aren't saved, but revert to the
 
 The zoom controls in your browser increase and decrease the available canvas area. Decreasing the zoom causes the available canvas area to expand, and vice versa. 
 
-![short video showing browser zoom controls](media/end-user-report-view/power-bi-zoom.png)
+![browser zoom controls](media/end-user-report-view/power-bi-zoom.png)
 
 Resizing your entire browser is another way to change the display size of your report. 
 

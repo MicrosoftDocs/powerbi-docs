@@ -2,14 +2,12 @@
 title: Using external tools in Power BI (preview)
 description: Extend the use of Power BI Desktop with external tools
 author: davidiseminger
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-desktop
-ms.topic: conceptual
-ms.date: 07/29/2020
 ms.author: davidi
-
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: pbi-reports-dashboards
+ms.topic: conceptual
+ms.date: 12/10/2020
 LocalizationGroup: Create reports
 ---
 
@@ -30,17 +28,20 @@ These featured external tools include the following, with links to their install
 
 The following sections describe the operations supported by external tools, a list of featured tools included in Power BI Desktop, and instructions on how to register additional tools.
 
+> [!NOTE]
+> External tools are not available for use with the Power BI Report Server version of Power BI Desktop.
+
 ## Supported write operations
 
 External tools can connect to the Power BI Desktop dataset (Analysis Services model) to edit the following objects. Editing a Power BI Desktop template (PBIT) file is not supported.
 
-* [Measures](https://docs.microsoft.com/analysis-services/tabular-models/measures-ssas-tabular) for calculations
-* [Calculation groups](https://docs.microsoft.com/analysis-services/tabular-models/calculation-groups) for calculation reusability in complex models
-* [Perspectives](https://docs.microsoft.com/analysis-services/tabular-models/perspectives-ssas-tabular) to define focused, business-domain specific views of dataset metadata
+* [Measures](/analysis-services/tabular-models/measures-ssas-tabular) for calculations
+* [Calculation groups](/analysis-services/tabular-models/calculation-groups) for calculation reusability in complex models
+* [Perspectives](/analysis-services/tabular-models/perspectives-ssas-tabular) to define focused, business-domain specific views of dataset metadata
 
 Managing metadata translations using external tools may be possible, but is not currently supported in this preview version. If the current user’s locale is a translated locale, editing objects in the field list does not work correctly using the current version of Power BI Desktop. 
 
-All [Tabular Object Model](https://docs.microsoft.com/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo) dataset metadata can be accessed for read-only purposes, but objects not covered in the list described in the [Tabular Object Model](https://docs.microsoft.com/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo) article are not yet supported for editing in the Power BI Desktop Analysis Services instance.
+All [Tabular Object Model](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo) dataset metadata can be accessed for read-only purposes, but objects not covered in the list described in the [Tabular Object Model](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo) article are not yet supported for editing in the Power BI Desktop Analysis Services instance.
 
 
 ## Featured external tools
@@ -129,9 +130,9 @@ Files in that specified location with the **.pbitool.json** extension are loaded
 
 External Tools can be disabled using **Group Policies** or by editing the registry, which is similar to the process for disabling **Custom Visuals**.
 
-    Registry key: *Software\Policies\Microsoft\Power BI Desktop\*
+* Registry key: *Software\Policies\Microsoft\Power BI Desktop\\*
 
-    Registry value: *EnableExternalTools*
+* Registry value: *EnableExternalTools*
 
 A value of 1 (decimal) enables the use of external tools in Power BI, which is the default value.
 
@@ -144,5 +145,3 @@ You might also be interested in the following articles:
 
 * [Use cross-report drill through in Power BI reports](desktop-cross-report-drill-through.md)
 * [Using slicers Power BI Desktop](../visuals/power-bi-visualization-slicers.md)
-
-

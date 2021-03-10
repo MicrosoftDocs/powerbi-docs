@@ -2,14 +2,12 @@
 title: Get started with the Power BI mobile app for Windows 10
 description: The Power BI mobile app for Windows 10 brings up-to-date, touch-enabled mobile access to your business information on your tablet or phone.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
-ms.author: painbar
-
 ---
 # Get started with the Power BI mobile app for Windows 10
 The Power BI mobile app for Windows 10 brings Power BI to your tablet or phone. You get up-to-date, touch-enabled mobile access to your business information. View and interact with your company dashboards from anywhere - right on your [Windows Start screen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
@@ -26,7 +24,7 @@ Then interact with your dashboards and reports, explore the data, and share them
   Your device must run Windows 10. The app can run on devices with at least 3-GB RAM and 8-GB internal storage.
 
   >[!NOTE]
-  >Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+  >Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
    
 * Find out'[what's new in the Power BI mobile apps](mobile-whats-new-in-the-mobile-apps.md).
 
@@ -102,7 +100,7 @@ View your favorite Power BI dashboards, together with Reporting Services KPIs an
 
 Read more about [favorites in the Power BI mobile apps](mobile-apps-favorites.md).
 
-## Next steps
+## Other tasks
 Here are some other things you can do in the Power BI app for Windows 10 devices with dashboards and reports in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal.
 
 ### Power BI dashboards and reports

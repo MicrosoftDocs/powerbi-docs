@@ -2,15 +2,12 @@
 title: Tips and tricks for asking questions with Q&A
 description: Tips and tricks for asking questions with Q&A in Power BI
 author: mihart
-ms.reviewer: Mohammad.ali
-
-
-ms.service: powerbi
-ms.subservice: powerbi-consumer
-ms.topic: how-to
-ms.date: 03/11/2020
 ms.author: mihart
-
+ms.reviewer: Mohammad.ali
+ms.service: powerbi
+ms.subservice: pbi-explore
+ms.topic: how-to
+ms.date: 09/23/2020
 LocalizationGroup: Ask questions of your data
 ---
 # Tips for asking questions in Power BI Q&A
@@ -27,7 +24,7 @@ The list below uses present tense, but all tenses are recognized in most cases. 
 >  
 
 
-|Category  |Keywords  |Column3  |
+|Category  |Keywords  |
 |---------|---------|---------|
 |**Aggregates**     | total, sum, amount, number, quantity, count, average, most, least, fewest, largest, smallest, highest, biggest, maximum, max, greatest, lowest, littlest, minimum, min          |
 |     |         |         
@@ -64,7 +61,7 @@ The list below uses present tense, but all tenses are recognized in most cases. 
 |  |  |
 |**Top N**     |     (order, ranking): top, bottom, highest, lowest, first, last, next, earliest, newest, oldest, latest, most recent, next            |
 |        |         |
-|**Visual types**     |  all visual types native to Power BI.  If it's an option in the Visualizations pane, then you can include it in your question.  The exception to this rule is [Power BI visuals](../developer/visuals/power-bi-custom-visuals.md) that you've manually added to the Visualization pane.  |
+|**Visual types**     |  all visual types native to Power BI.  If it's an option in the Visualizations pane, then you can include it in your question.  The exception to this rule is [Power BI custom visuals](../developer/visuals/power-bi-custom-visuals.md) that you've manually added to the Visualization pane.  |
 |  |  Example: show districts by month and sales total as bar chart               |
 |        |         |
 |**Wh (relationship, qualified)**  | when, where, which, who, whom, how many, how much, how many times, how often, how frequently, amount, number, quantity, how long, what                |

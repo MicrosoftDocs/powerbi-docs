@@ -2,13 +2,12 @@
 title: Optimization guide for Power BI
 description: Optimization guide for Power BI.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 02/16/2020
-ms.author: v-pemyer
 ---
 
 # Optimization guide for Power BI
@@ -79,7 +78,7 @@ You can optimize the Power BI environment by configuring capacity settings, sizi
 
 ### Capacity settings
 
-When using dedicated capacities—available with Power BI Premium (P SKUs), or
+When using capacities—available with Power BI Premium (P SKUs), or
 Power BI Embedded (A SKUs, A4-A6)—you can manage capacity settings. For more information, see [Managing Premium capacities](../admin/service-premium-capacity-manage.md). For guidance on how to optimize your capacity, see [Optimizing Premium capacities](../admin/service-premium-capacity-optimize.md).
 
 ### Gateway sizing

@@ -2,15 +2,13 @@
 title: Use SAP HANA in Power BI
 description: Use SAP HANA in Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/15/2020
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Connect to SAP HANA databases in Power BI
@@ -49,7 +47,10 @@ This release has many capabilities for SAP HANA, as shown in the following list:
   
     First, it isn't possible to apply a HANA variable to a shared column of an HDI-container-based Calculation View. To fix this limitation, upgrade to HANA 2 version 37.02 and onwards or to HANA 2 version 42 and onwards. Second, multi-entry default values for variables and parameters currently don't show up in the Power BI UI. An error in SAP HANA causes this limitation, but SAP hasn't announced a fix yet.
 
-## Limitations of SAP HANA
+## Limitations and troubleshooting of SAP HANA
+
+When using SAP HANA with Visual Studio, ensure that you've installed compatible versions.  For example, when working with Visual Studio 32 bit, make sure you have HANA client 32 bit installed as well.
+
 
 There are also a few limitations to using SAP HANA, shown below:
 

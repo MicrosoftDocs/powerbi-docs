@@ -1,11 +1,11 @@
 ---
 title: Developer learning catalog
-description: Find all the training options for Power BI
+description: Find all the training options for Power BI for developers, from most basic to most advanced.
 author: margoc
+ms.author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
-ms.author: margoc
 ---
 
 # Developer learning catalog
@@ -26,7 +26,7 @@ The following catalog is organized from core knowledge to specific domains, and 
 | [Learn about Power BI Embedded in 20 minutes](https://info.microsoft.com/ww-ondemand-power-bi-embedded-in-20-min.html)  | This webinar is being presented to give an introduction to Power BI Embedded. By the end of this webinar, users should be able to understand what Power BI Embedded is, the next steps to get started with the product, and where to go for help/resources. | Webinar       |                |
 | [Developing with Power BI Embedding by Ted Pattison– The April 2018 Update](https://www.youtube.com/watch?v=swnGlrRy588)  | In this developer-oriented webinar, Ted Pattison will discuss recent enhancements to the Power BI embedding platform and how they can be leveraged by ISVs and enterprise developers. | YouTube video | 59 min 49 sec  |
 | [Power BI Embedding Version 2 – The Full Story](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Embedding-Version-2-The-Full-Story/td-p/229527)    | The webinar was presented on Aug 10, 2017 by Power BI MVP Ted Pattison of Critical Path Training. The webinar covers how to develop using the new Power BI embedding features available through Power BI Premium.  | Webinar       | 1 hr 7 min 23 sec |
-| [Tutorial: Embed Power BI content into an application for your customers](https://docs.microsoft.com/power-bi/developer/embed-sample-for-customers#step-1-setup-your-embedded-analytics-development-environment) | With Power BI Embedded in Azure or Power BI embedding in Office, you can embed reports, dashboards, or tiles into an application using app owns data.  | Documentation |                |
+| [Tutorial: Embed Power BI content into an application for your customers](../developer/embedded/embed-sample-for-customers.md) | With Power BI Embedded in Azure or Power BI embedding in Office, you can embed reports, dashboards, or tiles into an application using app owns data.  | Documentation |                |
 | [Learn about Power BI Embedded in 20 minutes](https://info.microsoft.com/ww-ondemand-power-bi-embedded-in-20-min.html)  | This webinar is being presented to give an introduction to Power BI Embedded. By the end of this webinar, users should be able to understand what Power BI Embedded is, the next steps to get started with the product, and where to go for help/resources. | Webinar       |                |
 ## DAX<a name="dax"></a>
 | Content | Description | Format  | Length      |

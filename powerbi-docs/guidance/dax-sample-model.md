@@ -2,13 +2,12 @@
 title: "DAX sample model"
 description: DAX sample model to support reference articles.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 06/25/2020
-ms.author: v-pemyer
 ---
 
 # DAX sample model
@@ -46,6 +45,6 @@ You can download the Power BI Desktop sample model file [here](https://aka.ms/da
 For more information about this article, check out the following resources:
 
 - [Data Analysis Expressions (DAX) Reference](/dax/)
-- Learning path: [Use DAX in Power BI Desktop](https://docs.microsoft.com/learn/paths/dax-power-bi/)
+- Learning path: [Use DAX in Power BI Desktop](/learn/paths/dax-power-bi/)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)

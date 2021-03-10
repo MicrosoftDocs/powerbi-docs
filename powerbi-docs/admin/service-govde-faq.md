@@ -2,15 +2,13 @@
 title: Frequently Asked Questions for German government customers
 description: For German government customers, answers to common questions for the Power BI German government service
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 08/20/2020
-ms.author: davidi
-
 LocalizationGroup: Get started
 ---
 # Frequently Asked Questions for Power BI for Germany Cloud customers
@@ -30,7 +28,7 @@ The following questions and answers provide important information for Power BI P
    You can find lots of information on the [Power BI Germany Cloud home page](https://powerbi.microsoft.com/power-bi-germany/), including pricing information. On that page, you can also find a link to sign up for **Power BI Pro service** 30-Day trial with 25 user licenses. As part of trial sign-up, you have an option to purchase or add additional licenses as needed. We also offer Enterprise Agreement (EA), Government, and non-profit pricing. Contact your Microsoft customer representative for more details.
 3. **I have a Germany Cloud tenant as part of Azure Germany and/or Office 365 Germany subscriptions. Can I use the existing tenant to sign up for Power BI Germany?**
    
-   Yes. As part of the sign up process, you'll have an option to login with an existing Germany Cloud tenant administrator account, and add the Power BI Pro service licenses to your existing tenant in the Germany Cloud. Note that Germany Cloud tenants and user accounts are different from the Power BI service for Germany cloud.
+   Yes. As part of the sign up process, you'll have an option to login with an existing Germany Cloud administrator account, and add the Power BI Pro service licenses to your existing tenant in the Germany Cloud. Note that Germany Cloud tenants and user accounts are different from the Power BI service for Germany cloud.
 4. **Is there a free service in the Power BI service for Germany cloud?**
    
    No. We don't offer free license versions in the Power BI service for Germany cloud. However, we encourage you to sign up for [Power BI free offering in our public cloud](https://powerbi.microsoft.com/get-started/) if your business needs are met with the Power BI free offering.
@@ -71,6 +69,6 @@ The following questions and answers provide important information for Power BI P
 ## Next steps
 There are all sorts of things you can do with Power BI. For more information and learning, including an article that shows you how to sign up for the service, check out the following resources:
 
-* [Guided Learning for Power BI](https://docs.microsoft.com/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
+* [Microsoft Learn for Power BI](/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
 * [Get started with the Power BI service](../fundamentals/service-get-started.md)
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)

@@ -1,15 +1,13 @@
 ---
 title: How to configure Power BI report scheduled refresh
 description: To refresh data in your Power BI report, a scheduled refresh plan must be created.
-author: davidiseminger
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: kayu
-
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 06/10/2020
-ms.author: davidi
-
 ---
 # How to configure Power BI report scheduled refresh
 To refresh data in your Power BI report in Power BI Report Server, you must create a scheduled refresh plan. You create this plan in the *Manage* area of a Power BI report on the report server.
@@ -17,7 +15,7 @@ To refresh data in your Power BI report in Power BI Report Server, you must crea
 ![Successful scheduled refresh of a Power BI Report](media/configure-scheduled-refresh/scheduled-refresh-success.png)
 
 ## Configure data source credentials
-You need the necessary permissions to create a scheduled refresh plan. Permissions are defined in the role definitions for the report server. See [Role definitions - predefined roles](https://docs.microsoft.com/sql/reporting-services/security/role-definitions-predefined-roles) in the SQL Server Reporting Services documentation for details.
+You need the necessary permissions to create a scheduled refresh plan. Permissions are defined in the role definitions for the report server. See [Role definitions - predefined roles](/sql/reporting-services/security/role-definitions-predefined-roles) in the SQL Server Reporting Services documentation for details.
 
 Prior to creating a schedule data refresh plan, you need to set the credentials for **each data source** used in your Power BI report.
 
@@ -82,9 +80,8 @@ View the status of a schedule refresh plan in the web portal.
 The web page must be refreshed to see the current status. The status will not change automatically.
 
 ## Next steps
-To learn more about creating and modifying schedules, see [Create, modify, and delete schedules](https://docs.microsoft.com/sql/reporting-services/subscriptions/create-modify-and-delete-schedules).
+To learn more about creating and modifying schedules, see [Create, modify, and delete schedules](/sql/reporting-services/subscriptions/create-modify-and-delete-schedules).
 
 For information on how to troubleshoot scheduled refresh, see [Troubleshoot scheduled refresh in Power BI Report Server](scheduled-refresh-troubleshoot.md).
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

@@ -2,13 +2,13 @@
 title: Set data alerts in the Power BI service
 description: Learn to set alerts to notify you when data in your dashboards changes beyond limits you set in Microsoft Power BI service.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 04/02/2020
-ms.author: maggies
 LocalizationGroup: Dashboards
 ---
 
@@ -41,7 +41,7 @@ This example uses a card tile from the Retail Analysis sample dashboard. [Get th
 
 1. To start, select **+ Add alert rule**, ensure the **Active** slider is set to **On**, and give your alert a title. Titles help you easily recognize your alerts.
 
-   ![Manage alerts window](media/service-set-data-alerts/powerbi-alert-title.png)
+   ![Screenshot shows the Manage alerts window with Add alert rule, Alert for Total Stores, and Alert title called out.](media/service-set-data-alerts/powerbi-alert-title.png)
 
 1. Scroll down and enter the alert details.  In this example, you'll create an alert that notifies you once a day if the number of total stores goes above 100.
 
@@ -88,7 +88,7 @@ There are many ways to manage your alerts:
 
     Power BI displays the alert(s) that you've set for that tile.
 
-    ![Manage alerts window](media/service-set-data-alerts/powerbi-see-alerts.png)
+    ![Screenshot shows the Manage alerts window.](media/service-set-data-alerts/powerbi-see-alerts.png)
 
 1. To modify an alert, select the arrow to the left of the alert name.
 

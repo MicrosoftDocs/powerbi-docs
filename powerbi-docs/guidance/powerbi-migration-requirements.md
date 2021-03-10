@@ -2,13 +2,12 @@
 title: Gather requirements to migrate to Power BI
 description: Guidance on gathering and prioritizing requirements when migrating to Power BI.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/20/2020
-ms.author: v-pemyer
 ---
 
 # Gather requirements to migrate to Power BI
@@ -63,14 +62,14 @@ Compile detailed information pertaining to data, such as:
 - **Data structure and cleansing needs:** Determine the data structure for each requisite data source, and to what extent [data cleansing](../transform-model/desktop-query-overview.md) activities are necessary.
 - **Data integration:** Assess how data integration will be handled when there are multiple data sources, and how [relationships](../transform-model/desktop-create-and-manage-relationships.md) can be defined between each model table. Identify specific data elements needed to simplify the model and [reduce its size](import-modeling-data-reduction.md).
 - **Acceptable data latency:** Determine the data latency needs for each data source. It will influence decisions about which [data storage mode](../transform-model/desktop-storage-mode.md) to use. Data refresh frequency for Import model tables is important to know too.
-- **Data volume and scalability:** Evaluate data volume expectations, which will factor into decisions about [large model support](/admin/service-premium-large-models.md) and designing DirectQuery or [Composite models](../transform-model/desktop-composite-models.md). Considerations related to historical data needs are essential to know too. For larger datasets, determining the [incremental data refresh](../admin/service-premium-incremental-refresh.md) rules will also be necessary.
+- **Data volume and scalability:** Evaluate data volume expectations, which will factor into decisions about [large model support](../admin/service-premium-large-models.md) and designing DirectQuery or [Composite models](../transform-model/desktop-composite-models.md). Considerations related to historical data needs are essential to know too. For larger datasets, determining the [incremental data refresh](../admin/service-premium-incremental-refresh.md) rules will also be necessary.
 - **Measures, KPIs, and business rules:** Assess needs for measures, KPIs, and business rules. They will impact decisions regarding where to apply the logic: in the dataset or the data integration process.
 - **Master data and data catalog:** Consider whether there are master data issues requiring attention. Determine if integration with an enterprise data catalog is appropriate for enhancing discoverability, accessing definitions, or producing consistent terminology accepted by the organization.
 - **Security and data privacy:** Determine whether there are any specific security or data privacy considerations for datasets, including [row-level security](../admin/service-admin-rls.md) requirements.
 - **Open issues and backlog items:** Add any known issues, known data quality defects, future maintenance, or deferred requests to the backlog at this time.
 
 > [!IMPORTANT]
-> Data reusability can be achieved with [shared datasets](../connect-data/service-datasets-share.md), which can optionally be [certified](../connect-data/service-datasets-certify.md) to indicate trustworthiness and improve discoverability. Data preparation reusability can be achieved with [dataflows](../transform-model/service-dataflows-overview.md) to reduce repetitive logic in multiple datasets. Dataflows can also significantly reduce the load on source systems because the data is retrieved less often—multiple datasets can then import data from the dataflow.
+> Data reusability can be achieved with [shared datasets](../connect-data/service-datasets-share.md), which can optionally be [certified](../collaborate-share/service-endorse-content.md) to indicate trustworthiness and improve discoverability. Data preparation reusability can be achieved with [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md) to reduce repetitive logic in multiple datasets. Dataflows can also significantly reduce the load on source systems because the data is retrieved less often—multiple datasets can then import data from the dataflow.
 
 ## Identify improvement opportunities
 

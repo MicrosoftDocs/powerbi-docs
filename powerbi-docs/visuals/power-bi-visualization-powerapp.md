@@ -2,15 +2,13 @@
 title: Embed a new Power App in a Power BI Report
 description: Embed an app that uses the same data source and can be filtered like other report items 
 author: mihart
+ms.author: mihart
 manager: kvivek
 ms.reviewer: 'tapan maniar'
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 06/01/2020
-ms.author: rien
-
 LocalizationGroup: Visualizations
 ---
 
@@ -19,7 +17,7 @@ LocalizationGroup: Visualizations
 
 In this tutorial, you use the Power Apps visual to create a new app that is embedded in a sample Power BI report. This app interacts with other visuals in that report.
 
-If you don't have a Power Apps subscription, [create a free account](https://web.powerapps.com/signup?redirect=marketing&email=) before you begin.
+If you don't have a Power Apps subscription, [create a free account](https://make.powerapps.com/signup?redirect=marketing&email=) before you begin.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -30,8 +28,8 @@ In this tutorial, you learn how to:
 ## Prerequisites
 
 * [Google Chrome](https://www.google.com/chrome/browser/) or [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) browser
-* A [Power BI subscription](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi), with the [Opportunity Analysis Sample](https://docs.microsoft.com/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample) installed
-* An understanding of how to [create apps in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/data-platform-create-app-scratch) and how to [edit Power BI reports](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour)
+* A [Power BI subscription](../fundamentals/service-self-service-signup-for-power-bi.md), with the [Opportunity Analysis Sample](../create-reports/sample-opportunity-analysis.md#get-the-content-pack-for-this-sample) installed
+* An understanding of how to [create apps in Power Apps](/powerapps/maker/canvas-apps/data-platform-create-app-scratch) and how to [edit Power BI reports](../create-reports/service-the-report-editor-take-a-tour.md)
 
 
 
@@ -103,8 +101,8 @@ Notice that the opportunity count in the app matches the count in the upper left
 If you don't want to use the Opportunity Analysis Sample anymore, you can delete the dashboard, report, and dataset.
 
 ## Limitations and considerations
-For troubleshooting information, see [Power Apps visual for Power BI](https://docs.microsoft.com/powerapps/maker/canvas-apps/powerapps-custom-visual#limitations-of-the-power-apps-visual)
+For troubleshooting information, see [Power Apps visual for Power BI](/powerapps/maker/canvas-apps/powerapps-custom-visual#limitations-of-the-power-apps-visual)
 
 ## Next steps
 [Q&A visual](power-bi-visualization-types-for-reports-and-q-and-a.md)    
-[Tutorial: Embed a Power Apps visual in a Power BI report](https://docs.microsoft.com/powerapps/maker/canvas-apps/powerapps-custom-visual)    
+[Tutorial: Embed a Power Apps visual in a Power BI report](/powerapps/maker/canvas-apps/powerapps-custom-visual)

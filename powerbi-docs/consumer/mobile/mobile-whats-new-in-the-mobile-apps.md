@@ -2,24 +2,69 @@
 title: What's new in the mobile apps for Power BI
 description: What's new in the mobile apps for Power BI
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/12/2020
-ms.author: painbar
-
+ms.date: 02/10/2021
 ---
 # What's new in the mobile apps for Power BI
 For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
-* [What's new in Power BI Desktop](../../fundamentals/desktop-latest-update.md)  
-* [What's new in the Power BI service](../../fundamentals/service-whats-new.md)
+* [What's new in Power BI](../../fundamentals/desktop-latest-update.md)  
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+>The Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## February 2021
+### Support for Power BI in split-screens (Android tablets)
+
+If your Android tablet has multi-window support, you can view and interact with your data side by side with another app using split-screen mode. [Learn more!](mobile-apps-split-screen.md)
+
+![Screenshot of the mobile app being used in split-sreen mode.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-split-screen.png)
+
+## January 2021
+### Workspace support with a Power BI free license
+Users with a Power BI free license can now view and access workspaces where they've been added as viewers directly from the workspaces list. This change is applicable for content that's hosted on a Power BI Premium capacity.
+
+## December 2020
+### We've added anomaly detection to the mobile apps
+If the report creator has set up anomaly detection for a report visual, you can see if there are unexpectedly high peaks or low dips in your data caused by data outliers (i.e., anomalies). [Learn more!](mobile-reports-in-the-mobile-apps.md#investigate-anomalies-in-time-series-data)
+
+![Screenshot of anomaly detection.](media/mobile-whats-new-in-the-mobile-apps/mobile-anomaly-detection.png)
+
+### Easily find your org's endorsed content
+Content that's been [promoted or certified](../../collaborate-share/service-endorsement-overview.md) in the Power BI service is now tagged in the app with a badge. Report creators promote their content to show that it's ready for you to use (promoted) or certify their content to show that it's been approved by your org (certified).
+
+![Screenshot of certified report in report info on mobile.](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-certified-badge.png)
+
+### We've added dark mode to Power BI mobile (Android)
+Try out the new dark mode in the Power BI mobile app for Android devices. In dark mode, you'll see light text on a dark background, reducing the brightness of the screen and making it easier to see your content. You can switch between themes in the app appearance settings. [Learn more](mobile-apps-dark-mode.md)
+
+![Screenshot of dark mode in the Power BI mobile app for Android.](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-dark-mode-android.png)
+
+### Maximize the view with full-screen mode (iPads)
+We've now added a new button to the mobile app for iPads that lets you remove app headers and footers, giving you the maximum space for viewing your content. Simply tap the full-screen toggle button ![Screenshot of full screen mode icon.](media/mobile-whats-new-in-the-mobile-apps/power-bi-full-screen-icon.png) in the top right corner of the screen to switch between modes.
+
+## November 2020
+### Maximize the view with full-screen mode (Android tablets)
+We've added a new button to the mobile app for Android tablets that lets you remove app headers and footers, giving you the maximum space for viewing your content. Simply tap the full-screen toggle button ![Screenshot of full screen mode icon.](media/mobile-whats-new-in-the-mobile-apps/power-bi-full-screen-icon.png) in the top right corner of the screen to switch between modes.
+
+## October 2020
+### Automatic page refresh is now supported (Windows)
+
+Now, report pages configured with [auto page refresh](../../create-reports/desktop-automatic-page-refresh.md) will also automatically refresh in the Power BI app for Windows devices. And this doesn't mean just in regular report view. With auto page refresh, your [presentations and slideshows](mobile-windows-10-app-presentation-mode.md#slideshows) will also update in real-time, ensuring that you're always displaying the latest business data and insights.
+
+### Support for notch displays (iOS)
+We've added support for notch displays on iPhone and iPads, giving you more screen space for your reports and dashboards. 
+
+## September 2020
+### Power BI app (preview) for HoloLens 2 is out in the stores!
+
+The Power BI app for HoloLens 2 brings you an entirely immersive experience. Using HoloLens 2’s hand gesture system, you can get your favorite reports and dashboards out of the tool belt, resize and place them around you in space where you need them, and even browse through the pages of the report. Reports and dashboards update while you’re using the app, so if data changes you’ll see those changes right away. Learn more in our [documentation](mobile-hololens2-app.md) and [blog](https://powerbi.microsoft.com/blog/power-bi-app-for-mixed-reality-now-available-for-hololens-2/)!
+
 
 ## August 2020
 ### We've improved how you navigate to your content (iOS and Android)
@@ -149,19 +194,19 @@ The Power BI mobile app now supports bookmarks created in Power BI. When you ope
 
 ### Android support for remote configuration of Report Server access settings
 
-We added Android support for remote configuration of the Power BI mobile app's Report Server access settings. IT admins can now use their organization's MDM tool to remotely configure those settings on both iOS and Android devices. See [Configure Power BI mobile app access to Report Server remotely](https://docs.microsoft.com/power-bi/report-server/configure-powerbi-mobile-apps-remote) for details.
+We added Android support for remote configuration of the Power BI mobile app's Report Server access settings. IT admins can now use their organization's MDM tool to remotely configure those settings on both iOS and Android devices. See [Configure Power BI mobile app access to Report Server remotely](../../report-server/configure-powerbi-mobile-apps-remote.md) for details.
 
 ### Cross-report drillthrough
 
 This month we've added support for cross-report drillthrough. You can now tap on a data point to drill through to access other reports and report pages. When you drill through to a target page, the content in that page is filtered based on the drillthrough settings.
 
 > [!NOTE]
-> Cross-report drillthrough is only available if it was enabled during report creation. [Learn more about cross-report drillthrough](https://docs.microsoft.com/power-bi/desktop-cross-report-drill-through).
+> Cross-report drillthrough is only available if it was enabled during report creation. [Learn more about cross-report drillthrough](../../create-reports/desktop-cross-report-drill-through.md).
 
 
 ### Data sensitivity labels
 
-You can now see sensitivity labels that content owners have set on reports, dashboards, datasets, and dataflows to classify the sensitivity of their data. Sensitivity labels determine how content can be shared with other users. [Learn more about data sensitivity labels in Power BI](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview).
+You can now see sensitivity labels that content owners have set on reports, dashboards, datasets, and dataflows to classify the sensitivity of their data. Sensitivity labels determine how content can be shared with other users. [Learn more about data sensitivity labels in Power BI](../../admin/service-security-data-protection-overview.md).
 
 ### Support for custom app navigation (Windows)
 
@@ -186,7 +231,7 @@ Read more about [Power BI Mobile new look](https://powerbi.microsoft.com/blog/in
 
 ### Secured access with Azure Active Directory (AD) Application Proxy (iOS and Android)
 
-We partnered with Azure Active Directory team to integrate Power BI mobile applications with Azure Active Directory (Azure AD) Application Proxy. With this configuration you can connect to Report Server hosted inside the enterprise boundaries from Power BI Mobile app, without the need to set up complex on-premises configuration. Read more on [Power BI mobile and Azure AD Application Proxy integration](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Learn [how to configure Azure AD Application Proxy and Power BI](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
+We partnered with Azure Active Directory team to integrate Power BI mobile applications with Azure Active Directory (Azure AD) Application Proxy. With this configuration you can connect to Report Server hosted inside the enterprise boundaries from Power BI Mobile app, without the need to set up complex on-premises configuration. Read more on [Power BI mobile and Azure AD Application Proxy integration](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Learn [how to configure Azure AD Application Proxy and Power BI](/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
 
 ## July 2019
 
@@ -224,11 +269,11 @@ Single tap is now GA, and will become the default touch interaction for new user
 
 ### Enhanced conditional access protection (iOS, Android)
 
-We integrated with Azure AD [new app protection-based conditional access capability](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access) to increase security by limiting access to Power BI before app policy is applied.
+We integrated with Azure AD [new app protection-based conditional access capability](/azure/active-directory/conditional-access/app-protection-based-conditional-access) to increase security by limiting access to Power BI before app policy is applied.
 
 ### Device protection (iOS)
 
-Users can use device built-in protection to secure Power BI, by asking for Face ID, Touch ID or passcode for accessing Power BI. This can be control by the user using the app settings, but also by admins using Intune and any other MDM tool. [Learn more](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-ios-native-secure-access).
+Users can use device built-in protection to secure Power BI, by asking for Face ID, Touch ID or passcode for accessing Power BI. This can be control by the user using the app settings, but also by admins using Intune and any other MDM tool. [Learn more](./mobile-native-secure-access.md).
 
 ### One page report Slideshow (Windows)
 
@@ -270,7 +315,7 @@ We changed report interaction so it will require only one tap on a visual, butto
 ![Single tap interaction](./media/mobile-whats-new-in-the-mobile-apps/single-tap-2.gif)
 
 > [!NOTE]
-> Existing users will need to turn on this behavior in the app setting. For more information, see the [How to configure single tap report interaction](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-app-single-tap) article.
+> Existing users will need to turn on this behavior in the app setting. For more information, see the [How to configure single tap report interaction](./mobile-app-interaction-settings.md) article.
 
 ## January - February 2019
  
@@ -300,11 +345,11 @@ Enhanced presentation mode for Surface Hub and Windows 10 devices.  Enjoy an enh
 
 ### Portrait report layout in tablets (iOS and Android)
 
-We now use phone report layout, when it exists, for displaying reports on tablet in portrait mode orientation. Read more on [how to create phone layout in Power BI Service or Desktop](https://docs.microsoft.com/power-bi/desktop-create-phone-report/).
+We now use phone report layout, when it exists, for displaying reports on tablet in portrait mode orientation. Read more on [how to create phone layout in Power BI Service or Desktop](/power-bi/desktop-create-phone-report/).
 
 ### Supporting report query string 
 
-Opening report link that includes query string will now be opened in the mobile app and be pre-filtered based on the conditions defined in the query string. Learn more on [how to create report url with query string](https://docs.microsoft.com/power-bi/service-url-filters/).  
+Opening report link that includes query string will now be opened in the mobile app and be pre-filtered based on the conditions defined in the query string. Learn more on [how to create report url with query string](/power-bi/service-url-filters/).  
 
 ### Shared credentials (now in Android)
 
@@ -402,7 +447,7 @@ Your IT admin can now use an MDM tool to configure Power BI iOS mobile app acces
 
 #### Power BI for Mixed Reality app (Preview)
 
-The Power BI for Mixed Reality app is now in the Microsoft Store. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. See the new [Introducing Power BI on Hololens](https://www.youtube.com/watch?v=J_X_nOFUBss) video for context, or read the article about the new [Power BI for Mixed Reality app](mobile-mixed-reality-app.md).
+The Power BI for Mixed Reality app is now in the Microsoft Store. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. See the new [Introducing Power BI on HoloLens](https://www.youtube.com/watch?v=J_X_nOFUBss) video for context, or read the article about the new [Power BI for Mixed Reality app](./mobile-hololens2-app.md).
 
 
 ### April 2018
@@ -420,7 +465,7 @@ We recently updated report filters and slicers, so they are automatically saved 
 
 #### Power BI for Mixed Reality app (Preview)
 
-In the latest move to bring data where you are, we've created the Power BI for Mixed Reality app. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. Read more about the new [Power BI for Mixed Reality app](mobile-mixed-reality-app.md).
+In the latest move to bring data where you are, we've created the Power BI for Mixed Reality app. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. Read more about the new [Power BI for Mixed Reality app](./mobile-hololens2-app.md).
 
 #### Share reports and dashboards externally
 
@@ -538,7 +583,7 @@ Read the [mobile apps feature summary for April 2017](https://powerbi.microsoft.
 When you define a background color for a report in Power BI Desktop, the phone report will have the same background color. More about [optimizing report pages for phones](../../create-reports/desktop-create-phone-report.md).
 
 **Develop mobile-friendly Power BI visual**
-Read this [Developer guide](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) for tips on creating Power BI visuals that look good and work well on mobile devices.
+Read this [Developer guide](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) for tips on creating Power BI visuals that look good and work well on mobile devices.
 
 #### iOS devices
 **Talk to your data: ask questions by speaking**

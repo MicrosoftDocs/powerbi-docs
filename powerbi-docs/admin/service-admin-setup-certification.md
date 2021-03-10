@@ -1,26 +1,28 @@
 ---
-title: Set up dataset and dataflow certification (preview)
-description: Learn how to set up the dataset and dataflow certification process in your org.
+title: Enable content certification
+description: Learn how to enable certification for datasets, dataflows, reports, and apps.
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 05/15/2020
-ms.author: painbar
-
+ms.date: 10/26/2020
 LocalizationGroup: Share your work
 ---
-# Set up dataset and dataflow certification (preview)
+# Enable content certification
 
-Your organization can certify datasets and dataflows that are the authoritative sources for critical information.
+Your organization can certify selected content to identify it an as authoritative source for critical information. Currently, the following content types can be certified:
+* Datasets
+* Dataflows (preview)
+* Reports (preview)
+* Apps (preview)
 
-As a Power BI tenant admin, you are responsible for setting up the certification process for your organization. This means:
+As a Power BI admin, you are responsible for enabling and setting up the certification process for your organization. This means:
 * Enabling certification on your tenant.
-* Defining a list of groups and users who are authorized to certify datasets and dataflows.
-* For datasets, providing the URL of the organization's dataset certification policy, if such exists.
+* Defining a list of security groups whose members will be authorized to certify content.
+* Providing a URL that points to the documentation for the organization's content certification process, if such documentation exists.
 
-Dataset and dataflow certification are part of dataset and dataflow *endorsement*. See [dataset endorsement](../connect-data/service-datasets-promote.md) and [dataflow endorsement](../transform-model/service-dataflows-promote-certify.md) for more information.
-
+Certification is part of Power BI's *endorsement* feature. See [Endorsement: Promoting and certifying Power BI content](../collaborate-share/service-endorsement-overview.md) for more information.
 
 ## Set up certification
 
@@ -30,13 +32,13 @@ Dataset and dataflow certification are part of dataset and dataflow *endorsement
    ![Set up dataset and dataflow certification](media/service-admin-setup-certification/service-admin-certification-setup-dialog.png)
 
 1. Set the toggle to **Enabled**.
-1. For dataset certification, if your organization has a published certification policy, you can provide its URL here. This will become the **Learn more** link in the certification section of the [dataflow endorsement settings dialog](../connect-data/service-datasets-promote.md#request-dataset-certification) 
-1. Specify the users or groups who are authorized to certify datasets and dataflows. These authorized certifiers will able to use the Certification button in the certification section of the [dataset](../connect-data/service-datasets-promote.md#request-dataset-certification) or [dataflow](../transform-model/service-dataflows-promote-certify.md#certify-a-dataflow) endorsement settings dialog.
+1. If your organization has a published certification policy, provide its URL here. This will become the **Learn more** link in the certification section of the [endorsement settings dialog](../collaborate-share/service-endorse-content.md#request-content-certification). If you do not supply a link, users who want to request certification of their content will be advised to contact their Power BI administrator.
+1. Specify one or more security groups whose members will be authorized to certify content. These authorized certifiers will able to use the Certification button in the certification section of the [endorsement settings dialog](../collaborate-share/service-endorse-content.md#certify-content). This field accepts security groups only. You cannot enter named users.
+    
+    If a security group contains sub-security groups that you do not want to give certification rights to, you can check the **Except specific security groups** box and enter the name(s) of those group(s) in a text box that will appear.
 1. Click **Apply**.
 
 ## Next steps
-* [Promote datasets](../connect-data/service-datasets-promote.md)
-* [Certify datasets](../connect-data/service-datasets-certify.md)
-* [Promote dataflows](../transform-model/service-dataflows-promote-certify.md#promote-a-dataflow)
-* [Certify dataflows](../transform-model/service-dataflows-promote-certify.md#certify-a-dataflow)
+* [Promote or certify content](../collaborate-share/service-endorse-content.md)
+* [Read about endorsement in Power BI](../collaborate-share/service-endorsement-overview.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

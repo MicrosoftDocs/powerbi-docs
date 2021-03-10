@@ -1,15 +1,16 @@
 ---
-title: Deployment pipelines process 
-description: Understand the Power BI deployment pipelines process
+title: Deployment pipelines, the Power BI Application lifecycle management (ALM) tool, process
+description: Understand how deployment pipelines, the Power BI Application lifecycle management (ALM) tool, works
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
-ms.subservice: powerbi-service
-ms.date: 06/25/2020
+ms.subservice: pbi-deployment
+ms.custom: contperf-fy21q1
+ms.date: 03/04/2021
 ---
 
-# Understand the deployment process (preview)
+# Understand the deployment process
 
 The deployment process lets you clone content from one stage in the pipeline to another, typically from development to test, and from test to production.
 
@@ -32,6 +33,8 @@ During first-time deployment, deployment pipelines checks if you have Premium ca
 If you have capacity permissions, the content of the workspace is copied to the stage you're deploying to, and a new  workspace for that stage is created on the Premium capacity.
 
 If you don't have capacity permissions, the workspace is created but the content isn’t copied. You can ask a capacity admin to add your workspace to a capacity, or ask for assignment permissions for the capacity. Later, when the workspace is assigned to a capacity, you can deploy content to this workspace.
+
+If you're using [Premium Per User (PPU)](../admin/service-premium-per-user-faq.md), your workspace is automatically created in the capacity associated with your PPU. In such cases capacity permissions are not required. However, workspaces created by a PPU user, can only be accessed by other PPU users. In addition, content created in such workspaces can only be consumed by PPU users.
 
 ### Workspace and content ownership
 
@@ -61,7 +64,7 @@ With small changes, such as adding a table or measures, Power BI keeps the origi
 
 As long as the deployed content resides on a [premium capacity](../admin/service-premium-what-is.md), a user that meets the following conditions, can deploy it to a stage with an existing workspace:
 
-* A [Pro user](../admin/service-admin-purchasing-power-bi-pro.md) who's a member of both workspaces in the source and target deployment stages.
+* A user with a [Pro license](../admin/service-admin-purchasing-power-bi-pro.md) or a [PPU user](../admin/service-premium-per-user-faq.md), who's a member of both workspaces in the source and target deployment stages.
 
 * An owner of all the datasets in the target workspace that are about to be deployed.
 
@@ -81,11 +84,11 @@ When you deploy content from one pipeline stage to another, the copied content c
 
 Deployment pipelines doesn't support the following items:
 
-* Datasets that do not originate from a .pbix
+* Datasets that do not originate from a PBIX
 
 * Reports based on unsupported datasets
 
-* The workspace cannot use a template app
+* [Template app workspaces](../connect-data/service-template-apps-create.md#create-the-template-workspace)
 
 * Paginated reports
 
@@ -132,14 +135,86 @@ The following item properties are not copied during deployment:
 The following dataset properties are also not copied during deployment:
 
 * Role assignment
-    
+
 * Refresh schedule
-    
+
 * Data source credentials
-    
+
 * Query caching settings (can be inherited from the capacity)
-    
+
 * Endorsement settings
+
+## Supported dataset features
+
+Deployment pipelines supports many Power BI dataset features. This section lists two Power BI dataset features that can enhance your deployment pipelines experience:
+
+* [Incremental refresh](#incremental-refresh)
+
+* [Composite models](#composite-models)
+
+### Incremental refresh
+
+Deployment pipelines supports [incremental refresh](../admin/service-premium-incremental-refresh.md), a feature that allows large datasets faster and more reliable refreshes, with lower consumption.
+
+With deployment pipelines, you can make updates to a dataset with incremental refresh while retaining both data and partitions. When you deploy the dataset, the policy is copied along.
+
+#### Activating incremental refresh in a pipeline
+
+To enable incremental refresh, [turn it on in Power BI Desktop](../admin/service-premium-incremental-refresh.md#configure-incremental-refresh), and then publish your dataset. After you publish, the incremental refresh policy is similar across the pipeline, and can be authored only in Power BI Desktop.
+
+Once your pipeline is configured with incremental refresh, we recommend that you use the following flow:
+
+1. Make changes to your PBIX file in Power BI Desktop. To avoid long waiting times, you can make changes using a sample of your data.
+
+2. Upload your PBIX file to the *development* stage.
+
+3. Deploy your content to the *test* stage. After deployment, the changes you made will apply to the entire dataset you're using.
+
+4. Review the changes you made in the *test* stage, and after you verify them, deploy to the *production* stage.
+
+#### Usage examples
+
+Below are a few examples of how you may integrate incremental refresh with deployment pipelines.
+
+* [Create a new pipeline](deployment-pipelines-get-started.md#step-1---create-a-deployment-pipeline) and connect to it a workspace with a dataset that has incremental refresh enabled.
+
+* Enable incremental refresh in a dataset that's already in a *development* workspace.  
+
+* Create a pipeline from a production workspace that has a dataset that uses incremental refresh. This is done by assigning the workspace to a new pipeline's *production* stage, and using [backwards deployment](deployment-pipelines-get-started.md#backwards-deployment) to deploy to the *test* stage, and then to the *development* stage.
+
+* Publish a dataset that uses incremental refresh to a workspace that's part of an existing pipeline.
+
+#### Limitations and considerations
+
+For incremental refresh, deployment pipelines only supports datasets that use [enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md). Beginning with the September 2020 release of Power BI Desktop, all datasets created or modified with Power BI Desktop automatically implement enhanced dataset metadata.
+
+When republishing a dataset to an active pipeline with incremental refresh enabled, the following changes will result in deployment failure due to data loss potential:
+
+* Republishing a dataset that doesn't use incremental refresh, to replace a dataset that has incremental refresh enabled.
+
+* Renaming a table that has incremental refresh enabled.
+
+* Renaming non-calculated columns in a table with incremental refresh enabled.
+
+Other changes such as adding a column, removing a column, and renaming a calculated column, are permitted. However, if the changes affect the display, you'll need to refresh before the change is visible.
+
+### Composite models
+
+Using [composite models](../transform-model/desktop-composite-models.md) you can set up a report with multiple data connections.
+
+You can use the composite models functionality to connect a Power BI dataset to an external dataset such as Azure Analysis Services. For more information, see [Using DirectQuery for Power BI datasets and Azure Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md).
+
+In a deployment pipeline, you can use composite models to connect a dataset to another Power BI dataset external to the pipeline.  
+
+#### Limitations
+
+The following composite models connections are not supported:
+
+* Connecting datasets that reside in the same workspace.
+
+* Connecting datasets that reside in distinct pipelines.
+
+* Connecting datasets that reside in the same pipeline. 
 
 ## Deploying Power BI apps
 
@@ -165,9 +240,9 @@ Pipeline permissions and workspace permissions are granted and managed separatel
 Users with pipeline access have the following permissions:
 
 * View the pipeline​
-    
+
 * Share the pipeline with others
-    
+
 * Edit and delete the pipeline
 
 >[!NOTE]
@@ -197,9 +272,9 @@ Workspace contributors that have *pipeline access*, can also do the following:
 Workspace members that have *pipeline access*, can also do the following:
 
 * View workspace content​
-    
+
 * Compare stages
-    
+
 * Deploy reports and dashboards
 
 * Remove workspaces
@@ -217,7 +292,7 @@ Workspace administrators that have *pipeline access*, can perform *workspace mem
 Dataset owners that are either workspace members or admins, can also do the following:
 
 * Update datasets
-    
+
 * Configure rules
 
 >[!NOTE]
@@ -233,19 +308,19 @@ This section lists most of the limitations in deployment pipelines.
 
 * The maximum number of Power BI items that can be deployed in a single deployment is 300.
 
+* Downloading a PBIX file after deployment isn't supported.
+
 * For a list of workspace limitations, see [workspace assignment limitations](deployment-pipelines-get-started.md#workspace-assignment-limitations).
 
 * For a list of unsupported items, see [unsupported items](#unsupported-items).
 
 ### Dataset limitations
 
-* Datasets that are configured with [incremental refresh](../admin/service-premium-incremental-refresh.md), cannot be deployed.
-
 * Datasets that use real-time data connectivity cannot be deployed.
 
 * During deployment, if the target dataset is using a [live connection](../connect-data/desktop-report-lifecycle-datasets.md), the source dataset must use this connection mode too.
 
-* After deployment, downloading a dataset (from the stage its been deployed to) is not supported.
+* After deployment, downloading a dataset (from the stage it's been deployed to) is not supported.
 
 * For a list of dataset rule limitations, see [dataset rule limitations](deployment-pipelines-get-started.md#dataset-rule-limitations).
 

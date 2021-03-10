@@ -2,13 +2,12 @@
 title: "DAX: Column and measure references"
 description: Guidance on referring to columns in measures in your DAX expressions.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 12/18/2019
-ms.author: v-pemyer
 ---
 
 # DAX: Column and measure references
@@ -63,6 +62,6 @@ Here's why:
 For more information about this article, check out the following resources:
 
 - [Data Analysis Expressions (DAX) Reference](/dax/)
-- Learning path: [Use DAX in Power BI Desktop](https://docs.microsoft.com/learn/paths/dax-power-bi/)
+- Learning path: [Use DAX in Power BI Desktop](/learn/paths/dax-power-bi/)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)

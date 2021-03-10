@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 01/22/2019
+ms.date: 01/22/2021
 ---
 
 # Row-level security (RLS) in Power BI Report Server
@@ -26,7 +26,7 @@ By default, row-level security filtering uses single-directional filters, regard
 
     ![Apply security filter](media/row-level-security-report-server/rls-apply-security-filter.png)
 
-Check this box when implementing [dynamic row-level security](https://docs.microsoft.com/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters) based on user name or login ID. 
+Check this box when implementing [dynamic row-level security](/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters) based on user name or login ID. 
 
 To learn more, see [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](../transform-model/desktop-bidirectional-filtering.md) and the [Securing the Tabular BI Semantic Model](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) technical whitepaper.
 
@@ -39,7 +39,7 @@ After you save your report in Power BI Report Server, you manage security and ad
 
  If the report doesn't have the roles it needs, you need to open it in Power BI Desktop, add or modify roles, then save it back to Power BI Report Server. 
 
-1. In Power BI Desktop, save the report to Power BI Report Server. You need to use the version of Power BI Desktop optimized for Power BI Report Server.
+1. In Power BI Desktop, save the report to Power BI Report Server. You need to use the version of Power BI Desktop for Power BI Report Server.
 2. In Power BI Report Service, select the ellipsis (**…**) next to the report. 
 
 3. Select **Manage** > **Row-level security**. 
@@ -90,6 +90,7 @@ If you're using integrated security with DirectQuery, then your users may notice
 
 Report authors don't have access to view the report data in Power BI Report Server until they've assigned themselves roles accordingly after uploading the report. 
 
+Role assignments through group memberships are only supported when the Power BI Report Server is configured to run with NTLM or Kerberos authentication. Servers running with Custom authentication or Windows Basic need users explicitly assigned to roles.
  
 
 ## FAQ 
@@ -117,4 +118,3 @@ Yes, if you already have existing roles defined and members assigned in Power BI
 [Administrator handbook](admin-handbook-overview.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

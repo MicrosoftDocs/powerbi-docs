@@ -39,10 +39,8 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: What's new in Power BI Desktop?
+          - text: What's new in Power BI?
             url: desktop-latest-update.md
-          - text: What's new in the service?
-            url: service-whats-new.md
 
   # Card (optional)
   - title: Get started with Learn
@@ -50,9 +48,9 @@ landingContent:
       - linkListType: learn
         links:
           - text: Create and use analytics reports
-            url: https://docs.microsoft.com/learn/paths/create-use-analytics-reports-power-bi/
+            url: /learn/paths/create-use-analytics-reports-power-bi/
           - text: Get data with Power BI Desktop
-            url: https://docs.microsoft.com/learn/modules/get-data-power-bi/?tutorial-step=1
+            url: /learn/modules/get-data-power-bi/?tutorial-step=1
   # Card (optional)
   - title: Licensing
     linkLists:

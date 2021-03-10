@@ -2,13 +2,12 @@
 title: Create a drill-through button in Power BI 
 description: You can add drill-through buttons in Power BI reports that make your reports behave like apps, and deepen engagement with users.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/26/2020
-ms.author: maggies
-
 LocalizationGroup: Create reports
 ---
 # Create a drill-through button in Power BI

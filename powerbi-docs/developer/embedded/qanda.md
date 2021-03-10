@@ -1,6 +1,6 @@
 ---
-title: Q&A in Power BI Embedded
-description: Power BI Embedded offers you a way to incorporate Q&A into an application and allow your users to ask questions using natural language.
+title: Q&A in Power BI embedded analytics for better embedded BI insights
+description: Power BI embedded analytics offers you a way to incorporate Q&A into an application and allow your users to ask questions using natural language. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -10,9 +10,9 @@ ms.topic: how-to
 ms.date: 11/20/2017 
 ---
 
-# Q&A in Power BI Embedded
+# Q&A in Power BI embedded analytics
 
-Power BI Embedded offers you a way to incorporate Q&A into an application and allow your users to ask questions using natural language and receive immediate answers in the form of visuals like charts or graphs.
+Power BI embedded analytics offers you a way to incorporate Q&A into an application and allow your users to ask questions using natural language and receive immediate answers in the form of visuals like charts or graphs.
 
 ![Q&A Interactive question in an embedded frame](media/qanda/embedded-qanda.gif)
 
@@ -91,7 +91,7 @@ qna.on("visualRendered", function(event) {
 
 ## Embed token
 
-Create an embed token off of a dataset to start a Q&A part. For more information, see [Generate token](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
+Create an embed token off of a dataset to start a Q&A part. For more information, see [Generate token](/rest/api/power-bi/embedtoken).
 
 ## Next steps
 

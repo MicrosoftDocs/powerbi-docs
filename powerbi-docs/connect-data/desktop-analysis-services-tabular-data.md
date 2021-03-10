@@ -2,14 +2,12 @@
 title: Connect to Analysis Services tabular data in Power BI Desktop
 description: With Power BI Desktop, you can connect to and get data from your SQL Server Analysis Services tabular models either by using a live connection or by selecting items to import into Power BI Desktop.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/28/2020
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 # Connect to Analysis Services tabular data in Power BI Desktop
@@ -77,14 +75,14 @@ If you choose to select items and get data, you import tabular model data direct
 **Answer:** Yes. Depending on the features your Tabular model uses, the experience in Power BI Desktop might change. Some examples include:
 * You may see measures in the model grouped together at the top of the **Fields** pane list rather than in tables alongside columns. Don't worry, you can still use them as normal, it's just easier to find them this way.
 
-* If the tabular model has calculation groups defined, you can use them only in conjunction with model measures and not with implicit measures you create by adding numeric fields to a visual. The model might also have had the **DiscourageImplicitMeasures** flag set manually, which has the same effect. To learn more, see [Calculation groups in Analysis Services](https://docs.microsoft.com/analysis-services/tabular-models/calculation-groups#benefits).
+* If the tabular model has calculation groups defined, you can use them only in conjunction with model measures and not with implicit measures you create by adding numeric fields to a visual. The model might also have had the **DiscourageImplicitMeasures** flag set manually, which has the same effect. To learn more, see [Calculation groups in Analysis Services](/analysis-services/tabular-models/calculation-groups#benefits).
 
 ## To change the server name after initial connection
 After you create a Power BI Desktop file with an explore live connection, there might be some cases where you want to switch the connection to a different server. For example, if you created your Power BI Desktop file when connecting to a development server, and before publishing to the Power BI service, you want to switch the connection to production server.
 
 To change the server name:
 
-1. Select **Edit Queries** from the **Home** tab.
+1. Select **Transform data > Data source settings** from the **Home** tab.
 
 2. In the **SQL Server Analysis Services database** window, enter the new **Server** name, and then select **OK**.
 
@@ -93,4 +91,3 @@ To change the server name:
 The following list describes all known issues when connecting to SQL Server Analysis Services (SSAS) or Azure Analysis Services: 
 
 * **Error: Couldn't load model schema**: This error usually occurs when the user connecting to Analysis Services doesn't have access to the database/model.
-

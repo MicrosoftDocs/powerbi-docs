@@ -2,18 +2,18 @@
 title: Close your Power BI account
 description: If you don't want to use Power BI any longer, you can close your Power BI account.
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/09/2019
-ms.author: kfollis
+ms.date: 09/25/2020
 LocalizationGroup: Administration
 ---
 
 # Close your Power BI account
 
-If you don't want to use Power BI any longer, you can close your Power BI account.  After you close your account, you can't sign in to Power BI. Also, as it states in the data retention policy in the Power BI Terms of Service, Power BI deletes any customer data you uploaded or created. It is not retained.
+If you don't want to use Power BI any longer, you can close your Power BI account.  After you close your account, you can't sign in to Power BI. Also, as it states in the data retention policy in the [Power BI Service Agreement](https://azure.microsoft.com/support/legal/subscription-agreement/), Power BI deletes any customer data you uploaded or created.
 
 ## Individual Power BI users
 
@@ -21,7 +21,7 @@ If you signed up for Power BI as an individual, you can close your account from 
 
 1. In Power BI, select the gear in the upper right, then select **Settings**.
 
-    ![Screenshot of the upper-right corner of the UI with the gear icon and the settings option called out.](media/service-admin-closing-your-account/close-account-settings.png)
+    ![Screenshot of the upper-right corner of the U I with the gear icon and the settings option called out.](media/service-admin-closing-your-account/close-account-settings.png)
 
 1. On the **General** tab, select **Close Account**.
 
@@ -39,9 +39,9 @@ If you signed up for Power BI as an individual, you can close your account from 
 
     ![Screenshot of the Your account is closed confirmation dialog.](media/service-admin-closing-your-account/close-account-settings-5.png)
 
-## Managed tenant users
+## Managed users
 
-If your organization signed you up for Power BI, contact your tenant admin. Ask them to unassign the license from your account.
+If your organization signed you up for Power BI, contact your admin. Ask them to unassign the license from your account.
 
 ![Screenshot of the Managed close account.](media/service-admin-closing-your-account/close-account-managed.png)
 

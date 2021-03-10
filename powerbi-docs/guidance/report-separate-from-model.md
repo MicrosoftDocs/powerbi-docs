@@ -2,13 +2,12 @@
 title: Separate reports from models in Power BI Desktop
 description: Guidance for separating reports from models in Power BI Desktop.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 04/11/2020
-ms.author: v-pemyer
 ---
 
 # Separate reports from models in Power BI Desktop
@@ -52,7 +51,7 @@ Adding new tables, columns, hierarchies, hierarchy levels, or measures is safe, 
 
 If you must make breaking changes to your models, we recommend you either:
 
-- [View related content for the dataset](../consumer/end-user-related.md#view-related-content-for-a-dataset) in the Power BI service.
+- [View related content for the dataset](../consumer/end-user-related.md) in the Power BI service.
 - Explore [Data lineage](../collaborate-share/service-data-lineage.md) view in the Power BI service.
 
 Both options allow you to quickly identify any related reports and dashboards. Data lineage view is probably the better choice because it's easy to see the contact person for each related artifact. In fact, it's a hyperlink that opens an email message addressed to the contact.

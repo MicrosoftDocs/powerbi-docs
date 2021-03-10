@@ -2,13 +2,12 @@
 title: Establish a Center of Excellence
 description: Learn how a Center of Excellence helped Microsoft create a standardized analytics and data platform to unlock insights with the right operating model, stakeholder engagement, and shared and dedicated investments.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/19/2020
-ms.author: v-pemyer
 ---
 # Establish a Center of Excellence
 

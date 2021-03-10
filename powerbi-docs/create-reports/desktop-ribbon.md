@@ -1,34 +1,36 @@
 ---
-title: Use the updated ribbon in Power BI Desktop
+title: Use the ribbon in Power BI Desktop
 description: Easily navigate menus and commands with the new ribbon in Power BI Desktop
 author: davidiseminger
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-desktop
-ms.topic: conceptual
-ms.date: 05/21/2020
 ms.author: davidi
-
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: pbi-reports-dashboards
+ms.topic: conceptual
+ms.date: 02/24/2021
 LocalizationGroup: Connect to data
+ms.custom: video-jkqdyv7POq0
 ---
-# Use the updated ribbon in Power BI Desktop
+# Use the ribbon in Power BI Desktop
 
 Power BI Desktop has revised its ribbon to better align its appearance and experience with other Microsoft products, such as Microsoft Office.
 
 ![New ribbon in Power BI Desktop](media/desktop-ribbon/desktop-ribbon-02.png)
 
-## How to enable the updated ribbon
 
-The updated ribbon is generally available beginning with the May 2020 release of Power BI Desktop. Starting with the March 2020 update, the updated ribbon is on by default. 
+## Features of the ribbon
 
-## Features of the updated ribbon
-
-The benefits of updating our ribbon are intended to make the experience across Power BI Desktop, as well as other Microsoft products, easy and familiar. 
-
-![New ribbon in Power BI Desktop](media/desktop-ribbon/desktop-ribbon-03.png)
+The benefits of the ribbon are intended to make the experience across Power BI Desktop, as well as other Microsoft products, easy and familiar. 
 
 These benefits can be grouped into the following categories:
+
+* **Search bar** - Beginning with the February 2021 release, the ribbon now includes a Search experience, similar to the search available in other Microsoft products. When you click the search bar, Power BI suggests actions based on the current state of your report. As you type, search results are updated and buttons provided to get help, or take next steps. 
+
+    ![New search bar](media/desktop-ribbon/desktop-ribbon-03.png)
+
+    Watch this video to see it in action.
+
+    > [!VIDEO <iframe width="560" height="315" src="https://www.youtube.com/embed/jkqdyv7POq0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]
 
 * **Improved look, feel, and organization** - icons and functionality in the updated Power BI Desktop ribbon are aligned to the look, feel, and organization of ribbon items found in Office applications.
 

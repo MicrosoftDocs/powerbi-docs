@@ -2,13 +2,11 @@
 title: Teach Q&A to understand questions and terms in Power BI Q&A
 description: How to use Power BI Q&A to explore your data
 author: maggiesMSFT
-
+ms.author: maggies
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 04/21/2020
-ms.author: maggies
-
 LocalizationGroup: Ask questions of your datadefintion
 ---
 # Teach Q&A to understand questions and terms in Power BI Q&A
@@ -57,7 +55,7 @@ Q&A automatically detects when an unrecognized word is a noun using knowledge fr
 
 You fill in the box with the term from your data.
 
-![Q&A Teach synonym prompt](media/q-and-a-tooling-teach-q-and-a/qna-tooling-synonym-prompt.png)
+![Screenshot shows part of the Q&A box with the word Revenue and the prompt Revenue refers to next to a text box.](media/q-and-a-tooling-teach-q-and-a/qna-tooling-synonym-prompt.png)
 
 If you provide something other than a field from the data model, you may get undesirable results.
 
@@ -69,7 +67,7 @@ Sometimes you may want to define terms that act as a condition on the underlying
 
 You fill in the box with the condition.
 
-![Q&A Teach synonym prompt](media/q-and-a-tooling-teach-q-and-a/qna-tooling-adjectives.png)
+![Screenshot shows part of the Q&A box with the words Awesome publishers and the prompt Publishers that have next to a text box and the words are awesome.](media/q-and-a-tooling-teach-q-and-a/qna-tooling-adjectives.png)
 
 Some example conditions that you can define are:
 

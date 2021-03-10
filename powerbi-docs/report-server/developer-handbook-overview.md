@@ -14,7 +14,7 @@ ms.date: 11/01/2017
 
 Welcome to the developer handbook for Power BI Report Server, an on-premises location for storing and managing your Power BI, mobile, and paginated reports.
 
-![Admin Handbook](media/developer-handbook-overview/admin-handbook.png)
+![Power BI Report Server overview.](media/admin-handbook-overview/admin-handbook.png)
 
 This handbook highlights options you have, as a developer, to work with Power BI Report Server.
 
@@ -24,20 +24,26 @@ For any report within Power BI Report Server, you can embed within an iFrame by 
 
 ### Report Viewer Control
 
-For paginated reports, you can take advantage of the Report Viewer Control. With it, you can place the control within a .NET windows or web application. For more information, see [Get started with the Report Viewer Control](https://docs.microsoft.com/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started).
+For paginated reports, you can take advantage of the Report Viewer Control. With it, you can place the control within a .NET windows or web application. For more information, see [Get started with the Report Viewer Control](/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started).
 
 ## APIs
 
 You have several API options for interacting with Power BI Report Server. This technique includes the following.
 
 * [REST APIs](rest-api.md)
-* [URL Access](https://docs.microsoft.com/sql/reporting-services/url-access-ssrs)
-* [WMI Provider](https://docs.microsoft.com/sql/reporting-services/wmi-provider-library-reference/reporting-services-wmi-provider-library-reference-ssrs)
+* [URL Access](/sql/reporting-services/url-access-ssrs)
+* [WMI Provider](/sql/reporting-services/wmi-provider-library-reference/reporting-services-wmi-provider-library-reference-ssrs)
 
 You can also use the open-source [PowerShell utilities](https://github.com/Microsoft/ReportingServicesTools) to manage your report server.
 
 > [!NOTE]
-> The PowerShell utilities don't currently support Power BI Desktop files (.pbix).
+> The PowerShell utilities support Power BI Desktop files (.pbix) via the -RsRest* commands.
+
+Run the following command to find which commands in the ReportingServicesTools PowerShell module support Power BI Desktop files (.pbix).
+
+```powershell
+Get-Command -Module ReportingServicesTools -Noun RsRest*
+```
 
 ## Custom extensions
 
@@ -50,14 +56,14 @@ There are several types of extensions you can build.
 * Rendering extensions for paginated reports
 * Security extensions
 
-To learn more, see [Extension library](https://docs.microsoft.com/sql/reporting-services/extensions/reporting-services-extension-library).
+To learn more, see [Extension library](/sql/reporting-services/extensions/reporting-services-extension-library).
 
 ## Next steps
 
-[Get started with the Report Viewer Control](https://docs.microsoft.com/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started)  
-[Building Applications Using the Web Service and the .NET Framework](https://docs.microsoft.com/sql/reporting-services/report-server-web-service/net-framework/building-applications-using-the-web-service-and-the-net-framework)  
-[URL Access](https://docs.microsoft.com/sql/reporting-services/url-access-ssrs)  
-[Extension library](https://docs.microsoft.com/sql/reporting-services/extensions/reporting-services-extension-library)  
-[WMI Provider](https://docs.microsoft.com/sql/reporting-services/wmi-provider-library-reference/reporting-services-wmi-provider-library-reference-ssrs)
+[Get started with the Report Viewer Control](/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started)  
+[Building Applications Using the Web Service and the .NET Framework](/sql/reporting-services/report-server-web-service/net-framework/building-applications-using-the-web-service-and-the-net-framework)  
+[URL Access](/sql/reporting-services/url-access-ssrs)  
+[Extension library](/sql/reporting-services/extensions/reporting-services-extension-library)  
+[WMI Provider](/sql/reporting-services/wmi-provider-library-reference/reporting-services-wmi-provider-library-reference-ssrs)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

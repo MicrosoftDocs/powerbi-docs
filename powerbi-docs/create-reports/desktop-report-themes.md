@@ -2,15 +2,13 @@
 title: Use report themes in Power BI Desktop
 description: Learn how to use a custom color palette, and apply it to an entire report in Power BI Desktop.
 author: davidiseminger
-ms.reviewer: ''
-
-ms.custom: contperfq4
-ms.service: powerbi
-ms.subservice: powerbi-desktop
-ms.topic: how-to
-ms.date: 07/28/2020
 ms.author: davidi
-
+ms.reviewer: ''
+ms.custom: contperf-fy20q4
+ms.service: powerbi
+ms.subservice: pbi-reports-dashboards
+ms.topic: how-to
+ms.date: 12/14/2020
 LocalizationGroup: Create reports
 ---
 # Use report themes in Power BI Desktop
@@ -49,11 +47,11 @@ To select from the available built-in report themes:
 
 1. Select the **Themes** drop-down arrow button **Switch Theme** from the **View** ribbon.
 
-   ![Select a report theme](media/desktop-report-themes/report-themes-02.png)
+   ![Screenshot shows the View ribbon selected, which provides several themes.](media/desktop-report-themes/report-themes-02.png)
 
 2. Select from among the included themes from the drop-down menu that appears.
 
-   ![Select a report theme](media/desktop-report-themes/report-themes-03.png)
+   ![Screenshot shows Power B I themes expanded for you to select.](media/desktop-report-themes/report-themes-03.png)
 
    Your report theme is now applied to the report.
 
@@ -75,7 +73,7 @@ To select from the available built-in report themes:
     | Classic | ![Classic](media/desktop-report-themes/report-themes-color-scheme-classic.png)|
     | City park | ![City park](media/desktop-report-themes/report-themes-color-scheme-city-park.png)|
     | Classroom | ![Classroom](media/desktop-report-themes/report-themes-color-scheme-classroom.png)|
-    | Colorblind safe | ![Colorblind safe](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
+    | Color blind safe | ![Color blind safe](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
     | Electric | ![Electric](media/desktop-report-themes/report-themes-color-scheme-electric.png)|
     | High contrast | ![High contrast](media/desktop-report-themes/report-themes-color-scheme-high-contrast.png)|
     | Sunset | ![Sunset](media/desktop-report-themes/report-themes-color-scheme-sunset.png)|
@@ -167,7 +165,7 @@ This report theme JSON file has the following lines:
 
 - **name**: The report theme name. This field is the only required field.
 - **dataColors**: The list of color hexadecimal codes to use for data in Power BI Desktop visuals. This list can have as many or as few colors as you want.
-- **background**, **firstLevelElements**, and **tableAccent** (etc.): Color classes. Color classes enable you to set many structural colors in your report at once.
+- **background**, **foreground**, and **tableAccent** (etc.): Color classes. Color classes enable you to set many structural colors in your report at once.
 
 You can use this JSON file as a basis to create your own custom report theme file to import. If you want to adjust only the basic colors of your report, change the name and hex codes in the file.
 
@@ -265,13 +263,11 @@ You can export the currently applied report theme directly from Power BI Desktop
 
 To export the currently applied theme from Power BI Desktop:
 
-1. Select **File** > **Options and settings** > **Options**.
+1. Select **View** and choose the **Themes** dropdown.
 
-2. In the **Preview features** section, select **Customize current theme**, and then select **OK**.
+   ![Select the Themes dropdown menu.](media/desktop-report-themes/report-themes-14.png)
 
-   You might be prompted to restart Power BI Desktop for the preview feature to be enabled. After you restart, you can begin exporting the currently applied theme.
-
-3. From the **Home** ribbon, select **Switch theme** > **Export current theme**.
+2. Near the bottom of the dropdown menu, select **Save current theme**.
 
 4. From the **Save As** dialog box, browse to a directory in which to save the JSON file, and then select **Save**.
 
@@ -596,7 +592,9 @@ Booleans are either true or false. Strings must be in double quotes, as in "this
 
 Colors use the following format, where your custom hexadecimal code replaces "FFFFFF" is in the following example:
 
-    { "solid": { "color": "#FFFFFF" } }
+```json
+{ "solid": { "color": "#FFFFFF" } }
+```
 
 An enumeration, most commonly used for drop-down formatting options, means it can be set to any of the options seen in the pane, for example "RightCenter" for legend position or "Data value, percent of total" for pie data label. The enumeration options are shown below the property list.
 
@@ -4517,7 +4515,7 @@ Built-in themes that are affected by this limitation include the following theme
 * Classic
 * City park
 * Classroom
-* Colorblind safe
+* Color blind safe
 * Electric
 * High contrast
 * Sunset

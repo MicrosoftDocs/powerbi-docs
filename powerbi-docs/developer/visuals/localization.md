@@ -1,6 +1,6 @@
 ---
-title: Understand data view mapping in Power BI visuals
-description: This article describes how Power BI transforms data before passing it into visuals.
+title: Add the locale in Power BI for Power BI visuals in Power BI embedded analytics for better embedded BI insights
+description: Learn how visuals can retrieve the Power BI locale to localize their content to the relevant language. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin

@@ -2,14 +2,12 @@
 title: Using report tooltip pages in Power BI 
 description: Tooltip pages in Power BI Desktop let you create rich hover-based tooltips for visuals in your reports
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 07/26/2019
-ms.author: davidi
-
 LocalizationGroup: Create reports
 ---
 # Create tooltips based on report pages in Power BI Desktop
@@ -42,7 +40,7 @@ You can also name the report page so its purpose is clear. Just select the **Pag
 
 From there, you can create whatever visuals you would like to show up in your tooltip. In the following image, there are two cards and one clustered bar chart on the tooltip page, along with a background color for the page itself, and backgrounds for each of the visuals, to give it the look we wanted.
 
-![Report tooltips for Power BI Desktop](media/desktop-tooltips/desktop-tooltips_06.png)
+![Screenshot shows a customized report tooltip.](media/desktop-tooltips/desktop-tooltips_06.png)
 
 There are more steps to complete before your tooltip report page is ready to work as a tooltip. You need to configure the tooltip page in a few ways, as described in the next section. 
 

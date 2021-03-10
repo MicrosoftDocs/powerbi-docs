@@ -2,14 +2,12 @@
 title: View your data offline in the Power BI mobile apps
 description: 'Read about an advantage of viewing Power BI in a mobile app rather than in a mobile browser: you can see your data even when you''re not connected to a network.'
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/09/2019
-ms.author: painbar
-
 ---
 
 # View your data offline in the Power BI mobile apps
@@ -20,7 +18,7 @@ Applies to:
 | iPhones |iPads |Android phones |Android tablets |Windows 10 devices |
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 One advantage of viewing Power BI in a mobile app rather than in a mobile browser is that you can see your data even when you're not connected to a network. 
 

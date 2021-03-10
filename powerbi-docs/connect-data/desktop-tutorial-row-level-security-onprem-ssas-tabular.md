@@ -1,21 +1,19 @@
 ---
 title: Dynamic row-level security with Analysis services tabular model
-description: 'Dynamic row-level security with Analysis services tabular model'
+description: 'Dynamic row-level security with on-premises Analysis services tabular model'
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: davidi
 editor: davidi
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: tutorial
 ms.date: 01/17/2020
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
-# Implement row-level security in an Analysis Services tabular model
+# Implement row-level security in an on-premises Analysis Services tabular model
 
-Using a sample dataset to work through the steps below, this tutorial shows you how to implement [**row-level security**](../admin/service-admin-rls.md) in an *Analysis Services Tabular Model* and use it in a Power BI report.
+Using a sample dataset to work through the steps below, this tutorial shows you how to implement [**row-level security**](../admin/service-admin-rls.md) in an on-premises *Analysis Services Tabular Model* and use it in a Power BI report.
 
 * Create a new security table in the [AdventureworksDW2012 database](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)
 * Build the tabular model with necessary fact and dimension tables

@@ -6,7 +6,7 @@ ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 07/16/2020
 LocalizationGroup: Reports
@@ -32,7 +32,7 @@ With parameters, you can filter the report for one or more values, even if those
 
 *URL*?filter=*Table*/*Field* eq '*value*'
 
-![Screenshot of URL with filter.](media/service-url-filters/power-bi-filter-urls7b.png)
+![Screenshot of U R L with filter.](media/service-url-filters/power-bi-filter-urls7b.png)
 
 * **Table** and **Field** names are case-sensitive, **value** isn't.
 * Fields that are hidden from report view can still be filtered.
@@ -59,7 +59,7 @@ And we see in our map visualization above that we have stores in North Carolina.
 ?filter=Store/Territory eq 'NC'
 ```
 
-![Screenshot of URL with filter.](media/service-url-filters/power-bi-filter-urls7.png)
+![Screenshot of U R L with filter for North Carolina.](media/service-url-filters/power-bi-filter-urls7.png)
 
 Our report is now filtered for North Carolina; all the visualizations in the report show data for only North Carolina.
 
@@ -151,11 +151,11 @@ Special characters and spaces in table and column names require some additional 
 |**Column+Plus**     | + is 0x2B        |  Column_x002B_Plus       |
 
 Table_x0020_Name/Column_x002B_Plus eq 3
-![Screenshot of table visual rendering special characters.](media/service-url-filters/power-bi-special-characters1.png)
+![Screenshot of table visual rendering special characters for Unicode.](media/service-url-filters/power-bi-special-characters1.png)
 
 
 Table_x0020_Special/_x005B_Column_x0020_Brackets_x005D_ eq '[C]'
-![Screenshot of table visual rendering special characters.](media/service-url-filters/power-bi-special-characters2.png)
+![Screenshot of table visual rendering special characters for coding for Power B I.](media/service-url-filters/power-bi-special-characters2.png)
 
 ### Special characters in values
 

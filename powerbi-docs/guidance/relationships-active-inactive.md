@@ -2,13 +2,12 @@
 title: "Active vs inactive relationship guidance"
 description: Guidance for using active or inactive model relationships.
 author: peter-myers
+ms.author: kfollis
 ms.reviewer: asaxton
-
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 03/02/2020
-ms.author: v-pemyer
 ---
 
 # Active vs inactive relationship guidance
@@ -110,7 +109,7 @@ This model design supports producing the following report design.
 
 The report page filters by quarter 2019 Q4. The table visual groups by month and displays various sales statistics. The **Orders** and **Orders Shipped** measures produce different results. They each use the same summarization logic (count rows of the **Sales** table), but different **Date** table filter propagation.
 
-Notice that the quarter slicer includes a BLANK item. This slicer item appears as a result of [table expansion](../transform-model/desktop-relationships-understand.md#strong-relationships). While each **Sales** table row has an order date, some rows have a BLANK ship date—these orders are yet to be shipped. Table expansion considers inactive relationships too, and so BLANKs can appear due to BLANKs on the many-side of the relationship, or due to data integrity issues.
+Notice that the quarter slicer includes a BLANK item. This slicer item appears as a result of [table expansion](../transform-model/desktop-relationships-understand.md#regular-relationships). While each **Sales** table row has an order date, some rows have a BLANK ship date—these orders are yet to be shipped. Table expansion considers inactive relationships too, and so BLANKs can appear due to BLANKs on the many-side of the relationship, or due to data integrity issues.
 
 ## Recommendations
 

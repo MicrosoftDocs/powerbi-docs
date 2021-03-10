@@ -2,21 +2,19 @@
 title: View a Power BI dashboard
 description: Dashboards are a key feature of the Power BI service, learn how to open and view a dashboard.
 author: mihart
-ms.reviewer: mihart
-
-ms.service: powerbi
-ms.subservice: powerbi-consumer
-ms.topic: how-to
-ms.date: 08/27/2020
 ms.author: mihart
-
+ms.reviewer: mihart
+ms.service: powerbi
+ms.subservice: pbi-explore
+ms.topic: how-to
+ms.date: 12/03/2020
 LocalizationGroup: Dashboards
+ms.custom:  
 ---
 # View a dashboard
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Power BI *business users* spend a lot of time viewing dashboards. Dashboards are designed to highlight specific information from the underlying reports and datasets. And Power BI business users rely on that information for tracking, monitoring, answering questions, testing, and more -- in order to make data-driven business decisions.
 
@@ -27,14 +25,11 @@ A Power BI Pro or Premium license is required for both sharing a dashboard and v
 
 ## Open a dashboard
 
+Dashboards can be opened from many locations in the Power BI service.
 
+![dashboard icon](media/end-user-dashboard-open/power-bi-dashboard-icon.png)
 
-|              |         |
-|------------|--------------------------------|
-|![dashboard icon](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Dashboards can be opened from many locations in the Power BI service. <br> Just look for this dashboard icon. Once you've identified a <br>dashboard, open it by selecting it and the dashboard will fill your Power BI canvas. |
-|                    |          |
-
-
+Just look for this dashboard icon. Once you've identified a dashboard, open it by selecting it and the dashboard will fill your Power BI canvas.
 
 You may find dashboards in all of the containers in the nav pane. 
 

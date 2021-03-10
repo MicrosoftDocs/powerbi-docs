@@ -2,24 +2,22 @@
 title: Favorites in the Power BI mobile apps
 description: Read about making and viewing your favorite Power BI dashboards, reports, and apps, plus Power BI Report Server and Reporting Services reports and KPIs in the mobile apps.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 12/02/2019
-ms.author: painbar
-
 ---
 # Make and view favorites in the Power BI mobile apps
 Applies to:
 
-| ![iPhone](./media/mobile-apps-favorites/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-favorites/ipad-logo-50-px.png) | ![Android phone](./media/mobile-apps-favorites/android-phone-logo-50-px.png) | ![Android tablet](./media/mobile-apps-favorites/android-tablet-logo-50-px.png) | ![Android tablet](./media/mobile-apps-favorites/win-10-logo-50-px.png) |
+| ![iPhone](./media/mobile-apps-favorites/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-favorites/ipad-logo-50-px.png) | ![Android phone](./media/mobile-apps-favorites/android-phone-logo-50-px.png) | ![Android tablet](./media/mobile-apps-favorites/android-tablet-logo-50-px.png) | ![Windows 10 devices](./media/mobile-apps-favorites/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
 | iPhones |iPads |Android phones |Android tablets |Windows 10 devices |
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 Read about making and viewing your favorite Power BI dashboards, reports, and apps, together with your favorite on-premises Power BI Report Server and Reporting Services KPIs and reports, in the mobile apps.
 
@@ -72,4 +70,3 @@ You can view your favorite Power BI Report Server and Reporting Services reports
 ## Next steps
 * [Favorite dashboards in the Power BI service](../end-user-favorite.md) 
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

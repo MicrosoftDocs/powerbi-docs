@@ -2,15 +2,13 @@
 title: 'Tutorial: Ask questions with Q&A virtual analyst in iOS apps'
 description: In this tutorial, ask questions about sample data in your own words with the Q&A virtual analyst in the Power BI mobile app on your iOS device.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: tutorial
 ms.date: 11/26/2019
-ms.author: painbar
 #customer intent: As a Power BI end user, I want to see how the virtual analyst works in the iOS mobile apps so I can use the analyst to explore my own data. 
-
 ---
 # Tutorial: Ask questions about your data with the Q&A virtual analyst in the Power BI iOS apps
 
@@ -89,13 +87,13 @@ When you've finished the tutorial, you can delete the Opportunity Analysis sampl
 
 3. Click the dashboards tab, and then on the Opportunity Analysis Sample line click the trash can.
 
-    ![Select the Delete icon](./media/tutorial-mobile-apps-ios-qna/power-bi-tutorial-mobile-apps-ios-qna-delete-opportunity-analysis-sample.png)
+    ![Screenshot shows Power B I workspace with a dashboard selected and the delete icon called out.](./media/tutorial-mobile-apps-ios-qna/power-bi-tutorial-mobile-apps-ios-qna-delete-opportunity-analysis-sample.png)
 
     Now select the reports tab and do the same.
 
 4. Now select the datasets tab, click **More options** (...), and then choose **Delete**.
 
-    ![Select the Delete icon](./media/tutorial-mobile-apps-ios-qna/power-bi-tutorial-mobile-apps-ios-qna-delete-opportunity-analysis-sample-datasets.png)
+    ![Screenshot shows Power B I workspace with a dataset selected and Delete selected from the More options menu.](./media/tutorial-mobile-apps-ios-qna/power-bi-tutorial-mobile-apps-ios-qna-delete-opportunity-analysis-sample-datasets.png)
 
 ## Next steps
 

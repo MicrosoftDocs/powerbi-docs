@@ -1,6 +1,6 @@
 ---
-title: Power BI REST API Reference
-description: Power BI REST API Reference
+title: Power BI REST API reference in Power BI embedded analytics for better embedded BI insights
+description: Power BI REST API Reference. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -25,6 +25,6 @@ The Power BI REST API has the following operations:
 * Row operations: Add Rows and Delete Rows.
 * Group operations: Get Groups.
 
-To learn more about the Power BI REST API, see [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/).
+To learn more about the Power BI REST API, see [Power BI REST API](/rest/api/power-bi/).
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

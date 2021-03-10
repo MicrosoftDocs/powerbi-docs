@@ -1,12 +1,12 @@
 ---
-title: Adding formatting options to a Power BI custom visual
-description: A tutorial on how to develop Power BI custom visual format options 
+title: Adding formatting options to a Power BI custom visual in Power BI embedded analytics for better embedded BI insights
+description: A tutorial on how to develop Power BI custom visual format options. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
-ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
+ms.topic: tutorial
 ms.date: 11/21/2018
 ---
 

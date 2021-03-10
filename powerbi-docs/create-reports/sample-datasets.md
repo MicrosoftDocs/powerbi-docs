@@ -2,14 +2,13 @@
 title: Get samples for Power BI
 description: Sample content packs, apps, .pbix files, and Excel datasets for Power BI
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: 
 ms.custom:
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 03/27/2020
-ms.author: maggies
-
 LocalizationGroup: Samples
 ---
 # Get samples for Power BI
@@ -37,7 +36,7 @@ The scenario for this report is a company that sells Microsoft-themed skateboard
 You can explore it these ways:
 
 - View and interact with it in the Power BI Community [Data Stories Gallery](https://community.powerbi.com/t5/Data-Stories-Gallery/Sales-amp-Returns-Sample-Report/m-p/876607).
-- Download the .pbix file and explore it in depth. Look "behind the curtain" to see how Miguel made it. Selecting this link downloads the file automatically: [Sales & Returns sample report](https://go.microsoft.com/fwlink/?linkid=2113239).
+- Download the .pbix file and explore it in depth. Look "behind the curtain" to see how Miguel made it. Selecting this link downloads the file automatically: [Sales & Returns sample report](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Sales%20%26%20Returns%20Sample%20v201912.pbix).
 - Read about the report in the Power BI blog post, [Take a tour of the new Sales & Returns sample report](https://powerbi.microsoft.com/blog/take_a_tour_of_the_new_sales_returns_sample_report/).
 
 ## Sample app from AppSource

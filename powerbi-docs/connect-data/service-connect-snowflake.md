@@ -1,15 +1,13 @@
 ---
 title: Connect to Snowflake with Power BI
 description: Learn how to connect to Snowflake for Power BI by using SSO authentication.
-author: cpopell
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: 
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 06/26/2020
-ms.author: gepopell
-
 LocalizationGroup: Connect to services
 ---
 # Connect to Snowflake in Power BI Service
@@ -34,7 +32,7 @@ To enable SSO, a global admin has to turn on the setting in the Power BI Admin p
 1. Select **Settings** from the page header menu, then select **Admin portal**.
 1. Select **Tenant settings**, then scroll to locate **Integration settings**.
 
-   ![Tenant admin setting for Snowflake SSO](media/service-connect-snowflake/snowflake-sso-tenant.png)
+   ![Tenant setting for Snowflake SSO](media/service-connect-snowflake/snowflake-sso-tenant.png)
 
 4. Expand **Snowflake SSO**, toggle the setting to **Enabled**, then select **Apply**.
 

@@ -2,13 +2,13 @@
 title: Scatter, bubble, and dot plot charts in Power BI
 description: 'Scatter chart, dot plot charts, and bubble charts in Power BI'
 author: mihart
-ms.reviewer: 'amac'
+ms.author: mihart
+ms.reviewer: 'mihart'
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 11/21/2019
-ms.author: rien
 LocalizationGroup: Visualizations
 ---
 # Scatter charts, bubble charts, and dot plot charts in Power BI
@@ -137,7 +137,7 @@ Now let's add a third dimension.
 
         a. Change the **Total sales variance %** field to **Gross margin last year %**
 
-        ![Screenshot of the bubble chart with median line added.](media/power-bi-visualization-scatter/power-bi-format-symmetry.png)
+        ![Screenshot of the Details with Gross Margin Last Year percent selected.](media/power-bi-visualization-scatter/power-bi-format-symmetry.png)
 
         b. From the Analytics pane, add **Symmetry shading**. We can see from the shading that Hosiery (the green bubble in the pink shaded area) is the only category that favors  gross margin rather than its sales per store square footage. 
 
@@ -145,7 +145,7 @@ Now let's add a third dimension.
 
     - Continue exploring the Analytics pane to discover interesting insights in your data. 
 
-        ![Screenshot of the bubble chart with symmetry shading added.](media/power-bi-visualization-scatter/power-bi-analytics-example.png)
+        ![Screenshot of the Analytics pane.](media/power-bi-visualization-scatter/power-bi-analytics-example.png)
 
 ## Create a dot plot chart
 

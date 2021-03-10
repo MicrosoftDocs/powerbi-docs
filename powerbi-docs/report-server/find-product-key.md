@@ -2,14 +2,12 @@
 title: How to find your report server product key
 description: Learn how you can find your Power BI Report Server product key to install your server in a production environment.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 10/24/2018
-ms.author: maggies
-
 ---
 # How to find your report server product key
 Learn how you can find your Power BI Report Server product key to install your server in a production environment.
@@ -41,9 +39,8 @@ If you have a SQL Server Enterprise SA agreement, you can get your product key f
  
 ## Next steps
 [Install Power BI Report Server](install-report-server.md)  
-[Install Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md)  
+[Install Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
+[Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

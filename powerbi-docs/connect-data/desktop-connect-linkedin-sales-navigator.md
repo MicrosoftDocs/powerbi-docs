@@ -2,14 +2,12 @@
 title: Connect to LinkedIn Sales Navigator in Power BI Desktop
 description: Easily connect to and use data from LinkedIn in Power BI Desktop
 author: davidiseminger
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-desktop
-ms.topic: how-to
-ms.date: 11/11/2019
 ms.author: davidi
-
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: pbi-data-sources
+ms.topic: how-to
+ms.date: 01/04/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to LinkedIn Sales Navigator in Power BI Desktop
@@ -82,7 +80,7 @@ The template app provides four tabs to help analyze and share your information:
 
 The **Usage** tab shows your overall LinkedIn Sales Navigator data.
 
-![LinkedIn Sales Navigator Usage tab](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-12.png)
+![LinkedIn Sales Navigator Usage tab shows your overall LinkedIn Sales Navigator data.](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-12.png)
 
 The **Search** tab lets you drill deeper into your search results:
 

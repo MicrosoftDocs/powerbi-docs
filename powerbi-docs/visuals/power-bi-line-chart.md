@@ -2,14 +2,12 @@
 title: Line charts in Power BI
 description: 'Line charts in Power BI'
 author: mihart
-ms.reviewer: 
-
+ms.author: mihart
+ms.reviewer: 'mihart'
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: conceptual
 ms.date: 05/05/2020
-ms.author: rien
-
 LocalizationGroup: Visualizations
 ---
 
@@ -65,11 +63,11 @@ Instead of looking at total units for all regions as a single line on the chart,
 ### Use two Y axes
 What if you want to look at total sales and total units on the same chart? Sales numbers are so much higher than unit numbers, making the line chart unusable. In fact, the red line for total units appears to be zero.
 
-   ![highly diverging values](media/power-bi-line-charts/power-bi-diverging.png)
+   ![Screenshot shows how using a single y axis displays the total units as essentially flat and a useless comparison with the sales figures.](media/power-bi-line-charts/power-bi-diverging.png)
 
 To display highly diverging values on one chart, use a combo chart. You can learn all about combo charts by reading [Combo charts in Power BI](power-bi-visualization-combo-chart.md). In our example below, we can display sales and total units together on one chart by adding a second Y axis. 
 
-   ![highly diverging values](media/power-bi-line-charts/power-bi-dual-axes.png)
+   ![Screenshot shows the sales values as a bar chart with the y axis on the left and the total units as a line with the y axis on the right.](media/power-bi-line-charts/power-bi-dual-axes.png)
 
 ## Highlighting and cross-filtering
 For information about using the Filters pane, see [Add a filter to a report](../create-reports/power-bi-report-add-filter.md).

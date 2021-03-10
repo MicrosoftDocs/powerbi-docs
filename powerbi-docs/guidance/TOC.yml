@@ -21,7 +21,7 @@
       - name: "Disable Power Query background refresh"
         href: power-query-background-refresh.md 
       - name: "Best practices for dataflows"
-        href: ../transform-model/service-dataflows-best-practices.md
+        href: ../transform-model/dataflows/dataflows-introduction-self-service.md
     - name: Data modeling    
       items:
       - name: "What is a star schema?"
@@ -108,7 +108,7 @@
         href: migrate-ssrs-reports-to-power-bi.md
     - name: Admin and deployment
       items:
-      - name: "Tenant admin settings"
+      - name: "Tenant settings"
         href: admin-tenant-settings.md 
       - name: "On-premises data gateway sizing"
         href: gateway-onprem-sizing.md 
@@ -118,6 +118,8 @@
         href: report-performance-troubleshoot.md
       - name: "Deployment pipelines best practices"
         href: ../create-reports/deployment-pipelines-best-practices.md
+      - name: "Access the Power BI activity log"
+        href: admin-activity-log.md
   - name: Migrate to Power BI
     items: 
       - name: "Migration overview"

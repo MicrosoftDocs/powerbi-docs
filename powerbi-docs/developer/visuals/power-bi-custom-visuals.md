@@ -1,12 +1,12 @@
 ---
-title: Visuals in Power BI
-description: This article describes custom Power BI visuals
+title: Visuals in Power BI in Power BI embedded analytics for better embedded BI insights
+description: This article describes custom Power BI visuals. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
 ms.reviewer: ""
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi-custom-visuals
 ms.topic: overview
 ms.date: 07/14/2020
 LocalizationGroup: Visualizations
@@ -16,7 +16,7 @@ LocalizationGroup: Visualizations
 
 Power BI comes with many out-of-the box Power BI visuals. These visuals are available in the visualization pane of both [Power BI Desktop](https://powerbi.microsoft.com/desktop/) and [Power BI service](https://app.powerbi.com), and can be used for creating and editing Power BI content.
 
-![Screenshot of the Power B I visualization pane as it appears in Power B I Desktop and Power B I service.](media/power-bi-custom-visuals/power-bi-visualizations.png)
+:::image type="content" source="media/power-bi-custom-visuals/power-bi-visualizations.png" alt-text="Screenshot of the Power B I visualization pane as it appears in Power B I Desktop and Power B I service.":::
 
 Many more Power BI visuals are available from the Microsoft [AppSource](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fappsource.microsoft.com%2Fen-us%2Fmarketplace%2Fapps%3Fpage%3D1%26product%3Dpower-bi-visuals&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C6d9286afacb3468d4cde08d740b76694%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637049028749147718&sdata=igWm0e1vXdgGcbyvngQBrHQVAkahPnxPC1ZhUPntGI8%3D&reserved=0) or through Power BI. These visuals are created by Microsoft and Microsoft partners, and are tested and validated by the AppSource validation team.
 
@@ -67,7 +67,7 @@ Power BI visuals are packages that include code for rendering the data served to
 
 To import a Power BI visual, in the *Visualization* pane click **Import a custom visual** and select **Import from file**.
 
-If you are you a web developer and are interested in creating your own visual and adding it to AppSource, you can learn how to [develop a Power BI visual](custom-visual-develop-tutorial.md) and [publish a Power BI visual to AppSource](office-store.md).
+If you are you a web developer and are interested in creating your own visual and adding it to AppSource, you can learn how to [develop a Power BI circle card visual](develop-circle-card.md) and [publish a Power BI visual to AppSource](office-store.md).
 
 > [!WARNING]
 > A Power BI visual could contain code with security or privacy risks. Make sure you trust the author and Power BI visual source before importing it to your report.
@@ -75,7 +75,7 @@ If you are you a web developer and are interested in creating your own visual an
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Develop a Power BI visual](custom-visual-develop-tutorial.md)
+>[Develop a Power BI circle card visual](develop-circle-card.md)
 
 >[!div class="nextstepaction"]
 >[Power BI visuals project structure](visual-project-structure.md)

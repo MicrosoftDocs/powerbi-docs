@@ -1,12 +1,12 @@
 ---
-title: Troubleshooting how to develop Power BI visuals
-description: This article discusses some common issues you may encounter when developing or creating a custom Power BI visual.
+title: Troubleshooting how to develop Power BI visuals in Power BI embedded analytics for better embedded BI insights
+description: This article discusses some common issues you may encounter when developing or creating a custom Power BI visual. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
-ms.topic: troubleshooting
 ms.subservice: powerbi-custom-visuals
+ms.topic: troubleshooting
 ms.date: 11/06/2018
 ---
 

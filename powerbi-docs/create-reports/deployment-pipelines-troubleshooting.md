@@ -1,21 +1,21 @@
 ---
-title: Deployment pipelines troubleshooting
-description: Troubleshoot deployment pipelines in Power BI
+title: Troubleshoot deployment pipelines, the Power BI Application lifecycle management (ALM) tool
+description: Find answers to your deployment pipelines, the Power BI Application lifecycle management (ALM) tool, troubleshooting questions
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: troubleshooting
 ms.service: powerbi
-ms.subservice: powerbi-service
-ms.date: 05/06/2020
+ms.subservice: pbi-deployment
+ms.date: 03/04/2021
 ---
 
-# Deployment pipelines troubleshooting (preview)
+# Deployment pipelines troubleshooting
 
 Use this article to troubleshoot issues in deployment pipelines.
 
 ## General
 
-### What's deployment pipelines in Power BI
+### What's deployment pipelines in Power BI?
 
 To understand what's deployment pipelines in Power BI, refer to the [deployment pipelines overview](deployment-pipelines-overview.md).
 
@@ -27,27 +27,43 @@ Get started with deployment pipelines using the [get started instructions](deplo
 
 If the following conditions are not met, you'll not be able to see the deployment pipelines button.
 
-* You're a Power BI [Pro user](../admin/service-admin-purchasing-power-bi-pro.md)
+* You have one of the following Premium licenses:
 
-* You belong to an organization that has Premium capacity
+    * You're a Power BI [Pro user](../admin/service-admin-purchasing-power-bi-pro.md), and you belong to an organization that has Premium capacity.
 
-* A workspace can only be assigned to a single pipeline
+    * [Premium Per User (PPU)](../admin/service-premium-per-user-faq.md).
 
-* You're an admin of a new workspace
+* You're an admin of a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).
+
+### Why can't I see the pipeline stage tag in my workspace?
+
+Deployment pipelines displays a pipeline stage tag in workspaces that are assigned to a pipeline. Tags for the *Development* and *Test* stages are always visible. However, you'll only see the *Production* tag if you have [access to the pipeline](deployment-pipelines-process.md#user-with-pipeline-access) or if you're a [workspace admin](deployment-pipelines-process.md#workspace-admin).
+
+> [!div class="mx-imgBorder"]
+> ![A screenshot of the production tag in a production pipeline workspace.](media/deployment-pipelines-troubleshooting/production-tag.png)
 
 ## Licensing
 
 ### What licenses are needed to work with deployment pipelines?
 
-To use deployment pipelines, you need to be a [Pro user](../admin/service-admin-purchasing-power-bi-pro.md) with [Premium capacity](../admin/service-premium-what-is.md). For more information, see [accessing deployment pipelines](deployment-pipelines-get-started.md#accessing-deployment-pipelines).
+To use deployment pipelines, you need to have one of the following licenses:
+
+* A [Pro user](../admin/service-admin-purchasing-power-bi-pro.md) license, with a workspace that resides on a [Premium capacity](../admin/service-premium-what-is.md).
+
+* [Premium Per User (PPU)](../admin/service-premium-per-user-faq.md).
+
+For more information, see [accessing deployment pipelines](deployment-pipelines-get-started.md#accessing-deployment-pipelines).
 
 ### What type of capacity can I assign to a workspace in a pipeline?
 
-All workspaces in a deployment pipeline must reside within a dedicated capacity for the pipeline to be functional. However, you can use different capacities for different workspaces in a pipeline. You can also use different capacity types for different workspaces in the same pipeline.
+All workspaces in a deployment pipeline must reside within a capacity for the pipeline to be functional. However, you can use different capacities for different workspaces in a pipeline. You can also use different capacity types for different workspaces in the same pipeline.
 
-For development and testing, you can use A or EM capacity alongside a Pro Power BI account for each user.
+For development and testing, you can use A or EM capacity alongside a Pro Power BI account for each user. You can also use a PPU for each user in the development and test stages.
 
-For production workspaces, you need a P capacity. If you're an ISV distributing content through embedded applications, you can also use A or EM capacities for production.
+For production workspaces, you need a P capacity. If you're an ISV distributing content through embedded applications, you can also use A or EM capacities for production. PPUs can also be used for production workspaces.
+
+>[!NOTE]
+>When you create a workspace with a PPU, only other PPU users will be able to access the workspace and consume its content.
 
 ## Technical
 
@@ -67,7 +83,7 @@ Workspaces that don't meet these conditions, are not displayed in the list of wo
 
 ### How can I assign workspaces to all the stages in a pipeline?
 
-You can assign one workspace per pipeline. Once a workspace is assigned to a pipeline, you can deploy it to the next pipeline stages. During first time deployment, a new workspace is created with copies of the items in the source stage. The relationships of the copied items are kept. For more information, see how to [assign a workspace to a deployment pipeline](deployment-pipelines-get-started.md#step-2---assign-a-workspace-to-a-deployment-pipeline).
+You can assign one workspace per pipeline. Once a workspace is assigned to a pipeline, you can deploy it to the next pipeline stages. During first-time deployment, a new workspace is created with copies of the items in the source stage. The relationships of the copied items are kept. For more information, see how to [assign a workspace to a deployment pipeline](deployment-pipelines-get-started.md#step-2---assign-a-workspace-to-a-deployment-pipeline).
 
 ### Why did my first deployment fail?
 
@@ -75,11 +91,11 @@ Your first deployment may have failed due to a number of reasons. Some of these 
 
 |Error  |Action  |
 |---------|---------|
-|You don't have [premium capacity permissions](deployment-pipelines-process.md#creating-a-premium-capacity-workspace).     |To get premium capacity permissions, ask a capacity admin to add your workspace to a capacity, or ask for assignment permissions for the capacity. After the workspace is in a capacity, redeploy.        |
-|You don't have workspace permissions.     |To deploy you need to be a workspace member. Ask your workspace admin to grant you the appropriate permissions.         |
+|You don't have [premium capacity permissions](deployment-pipelines-process.md#creating-a-premium-capacity-workspace).     |If you work in an organization that has a Premium capacity, ask a capacity admin to add your workspace to a capacity, or ask for assignment permissions for the capacity. After the workspace is in a capacity, redeploy.</br></br>If you don't work in an organization with Premium capacity, consider purchasing [Premium Per User (PPU)](../admin/service-premium-per-user-faq.md).        |
+|You don't have workspace permissions.     |To deploy, you need to be a workspace member. Ask your workspace admin to grant you the appropriate permissions.         |
 |Your Power BI admin disabled the creation of workspaces.     |Contact your Power BI admin for support.         |
 |Your workspace isn't a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).     |Create your content in the new workspace experience. If you have content in a classic workspace, you can [upgrade](../collaborate-share/service-upgrade-workspaces.md) it to a new workspace experience.         |
-|Your using [selective deployment](deployment-pipelines-get-started.md#selective-deployment) and are not selecting your content's dataset.     |Do one of the following: </br></br>Unselect the content that is linked to your dataset. Your unselected content (such as reports or dashboards) will not be copied to the next stage. </br></br>Select the dataset that's linked to the selected content. Your dataset will be copied to the next stage.         |
+|You're using [selective deployment](deployment-pipelines-get-started.md#selective-deployment) and are not selecting your content's dataset.     |Do one of the following: </br></br>Unselect the content that is linked to your dataset. Your unselected content (such as reports or dashboards) will not be copied to the next stage. </br></br>Select the dataset that's linked to the selected content. Your dataset will be copied to the next stage.         |
 
 ### I'm getting a warning that I have 'unsupported artifacts' in my workspace when I'm trying to deploy. How can I know which artifacts are not supported?
 
@@ -107,7 +123,7 @@ Your dataset rules are missing values. This may have happened if your dataset ch
 
 ![A screenshot of the invalid rules error displayed when a deployment fails due to broken links.](media/deployment-pipelines-troubleshooting/broken-rule.png)
 
-When a previously successful deployment fails due to broken links, a warning is displayed. You can click **Configure rules** to navigate to the deployment settings pane, where the failed dataset is marked. When you click the dataset, the broken rules are marked.
+When a previously successful deployment fails due to broken links, a warning is displayed. You can select **Configure rules** to navigate to the deployment settings pane, where the failed dataset is marked. When you select the dataset, the broken rules are marked.
 
 To deploy successfully, fix or remove the broken rules, and redeploy.
 
@@ -115,9 +131,9 @@ To deploy successfully, fix or remove the broken rules, and redeploy.
 
 You can’t change the data source connection in Power BI service.
 
-If you want to change the data source in the test or production stages, you can use [dataset rules](deployment-pipelines-get-started.md#step-4---create-dataset-rules) or [APIs](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup). Dataset rules will only come into effect after the next deployment.
+If you want to change the data source in the test or production stages, you can use [dataset rules](deployment-pipelines-get-started.md#step-4---create-dataset-rules) or [APIs](/rest/api/power-bi/datasets/updateparametersingroup). Dataset rules will only come into effect after the next deployment.
 
-### I fixed a bug in production, but now I can't click the 'deploy to previous stage' button. Why is it greyed out?
+### I fixed a bug in production, but now I can't select the 'deploy to previous stage' button. Why is it greyed out?
 
 You can only deploy backwards to an empty stage. If you have content in the test stage, you will not be able to deploy backwards from production.
 
@@ -125,6 +141,10 @@ After creating the pipeline, use the development stage to develop your content, 
 
 >[!NOTE]
 >Backwards deployment only supports [full deployment](deployment-pipelines-get-started.md#deploying-all-content). It doesn't support [selective deployment](deployment-pipelines-get-started.md#selective-deployment)
+
+### Why do I need to deploy after configuring dataset rules?
+
+Dataset rules are not applied immediately after they're configured. To apply dataset rules, you have to deploy the datasets from the source stage to the target stage which includes the created dataset rules. After configuring dataset rules, and before you deploy, the *different* indicator is shown next to the dataset with the configured rules. This indicates that you need to deploy that dataset from the source stage to the target stage. Once you deploy, if no other changes were made, the *different* indicator will disappear signifying that the rules were applied successfully.
 
 ### Does deployment pipelines support multi-geo?
 
@@ -140,9 +160,9 @@ The deployment pipelines permissions model is described the [permissions](deploy
 
 Content can be deployed to an empty stage or to a stage that contains content. The content must reside on a [premium capacity](../admin/service-premium-what-is.md).
 
-* **Deploying to an empty stage** - Any [Pro user](../admin/service-admin-purchasing-power-bi-pro.md) that's a member or admin in the source workspace.
+* **Deploying to an empty stage** - Any [Pro](../admin/service-admin-purchasing-power-bi-pro.md) or [PPU](../admin/service-premium-per-user-faq.md) user, that's a member or admin in the source workspace.
 
-* **Deploying to a stage with content** - Any [Pro user](../admin/service-admin-purchasing-power-bi-pro.md) who's a member or admin of both workspaces in the source and target deployment stages.
+* **Deploying to a stage with content** - Any [Pro](../admin/service-admin-purchasing-power-bi-pro.md) or [PPU](../admin/service-premium-per-user-faq.md) user, who's a member or admin of both workspaces in the source and target deployment stages.
 
 * **Overriding a dataset** - Deployment overrides each dataset that is included in the target stage, even if the dataset wasn't changed. The user must be the owner of all the target stage datasets specified in the deployment.
 

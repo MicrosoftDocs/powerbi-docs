@@ -1,6 +1,6 @@
 ---
-title: Create SSL certificates for Power BI visuals
-description: Learn how to generate SSL certificates by using Power BI Visual Tools in Windows, Mac, or Linux, or manually.
+title: Create SSL certificates for Power BI visuals in Power BI embedded analytics for better embedded BI insights
+description: Learn how to generate SSL certificates by using Power BI Visual Tools in Windows, Mac, or Linux, or manually. Enable better embedded BI insights using Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -14,7 +14,7 @@ ms.date: 05/08/2020
 
 This article describes how to generate and install Secure Sockets Layer (SSL) certificates for Power BI visuals.
 
-For the Windows, macOS X, and Linux procedures, you must have the Power BI Visual Tools **pbiviz** package installed. For more information, see [Set up the developer environment](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial#setting-up-the-developer-environment). 
+For the Windows, macOS X, and Linux procedures, you must have the Power BI Visual Tools **pbiviz** package installed. For more information, see [Set up your environment for developing a Power BI visual](./environment-setup.md). 
 
 ## Create a certificate on Windows
 
@@ -26,7 +26,7 @@ pbiviz --install-cert
 
 For Windows 7, the `pbiviz` tool requires the OpenSSL utility to be available from the command line. To install OpenSSL, go to [OpenSSL](https://www.openssl.org) or [OpenSSL Binaries](https://wiki.openssl.org/index.php/Binaries).
 
-For more information and instructions for installing a certificate, see [Create and install a certificate for Windows](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial#windows).
+For more information and instructions for installing a certificate, see [Create and install a certificate for Windows](./environment-setup.md#create-and-install-a-certificate).
 
 ## Create a certificate on macOS X
 
@@ -53,7 +53,7 @@ After you install the OpenSSL utility, run the following command to generate a n
 pbiviz --install-cert
 ```
 
-For more information and instructions, see [Create and install a certificate for OS X](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial#osx).
+For more information and instructions, see the OSX tab in [Create and install a certificate](./environment-setup.md#create-and-install-a-certificate).
 
 ## Create a certificate on Linux
 
@@ -194,6 +194,6 @@ If your PFX certificate file requires a passphrase:
     ```
 
 ## Next steps
-- [Develop a Power BI visual](custom-visual-develop-tutorial.md)
+- [Develop a Power circle card BI visual](develop-circle-card.md)
 - [Power BI visuals samples](samples.md)
 - [Publish a Power BI visual to AppSource](office-store.md)

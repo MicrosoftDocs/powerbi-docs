@@ -2,14 +2,12 @@
 title: Sort by column in Power BI Desktop
 description: In Power BI, you can change how a visual looks by sorting it by different data fields.
 author: davidiseminger
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.subservice: powerbi-desktop
-ms.topic: how-to
-ms.date: 01/30/2020
 ms.author: davidi
-
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: pbi-reports-dashboards
+ms.topic: how-to
+ms.date: 03/3/2021
 LocalizationGroup: Create reports
 ---
 # Sort by column in Power BI Desktop
@@ -65,24 +63,20 @@ You can sort by any column included in the visual; we could have easily selected
 ![Sort by SalesQuantity](media/desktop-sort-by-column/sortbycolumn_6.png)
 
 ## Sort using the Sort by Column button
-There's another way to sort your data, by using the **Sort by Column** button in the **Modeling** ribbon.
+There's another way to sort your data, by using **Sort by Column** in the **Column tools** tab.
 
-![Sort by Column button](media/desktop-sort-by-column/sortbycolumn_8.png)
+![Sort by Column button](media/desktop-sort-by-column/power-bi-column-tools.png)
 
-This approach to sorting requires that you first select the column (field) to sort from the **Fields** pane, and then select **Modeling** > **Sort by Column** to sort your visual. If you don't select a column, the **Sort by Column** button is inactive.
+This approach to sorting requires that you first select the column (field) to sort from the **Fields** pane, and then select **Column tools** > **Sort by Column** to sort your visual. If you don't select a column from the **Fields** pane first, the **Sort by Column** button is inactive.
 
-Let's look at a common example. You have data from each month of the year, and you want to sort it based on chronological order. The following steps show you how:
+Let's look at a common example. You have data from each month of the year, and it's currently sorted by quarter. You want to sort it based on chronological order. The following steps show you how:
 
-1. Notice that when the visual is selected but no column is selected in the **Fields** pane, the **Sort by Column** button is inactive (grayed out).
+1. When we select the column by which we want to sort, in the **Fields** pane, the **Column tools** tab becomes active. In this example we see that the visual is being sorted on the **Month** field by **Quarter**.
    
-   ![Inactive Sort by Column button](media/desktop-sort-by-column/sortbycolumn_9.png)
-
-2. When we select the column by which we want to sort, in the **Fields** pane, the **Sort by Column** button becomes active.
+   ![Active Sort by Column button](media/desktop-sort-by-column/power-bi-sort.png)    
+3. Now, with the visual selected, we can select **MonthNo**, and the visual sorts in the order we want: chronologically by the month of the year.
    
-   ![Active Sort by Column button](media/desktop-sort-by-column/sortbycolumn_10.png)
-3. Now, with the visual selected, we can select **MonthOfYear**, instead of the default **MonthName**, and the visual sorts in the order we want: by the month of the year.
-   
-   ![Sort by Column menu](media/desktop-sort-by-column/sortbycolumn_11.png)
+   ![Sort by Column menu](media/desktop-sort-by-column/power-bi-new-sort.png)
 
 
 <!---

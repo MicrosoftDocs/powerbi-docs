@@ -2,14 +2,12 @@
 title: Troubleshooting Sign-in issues in Power BI Desktop
 description: Solutions to common issues for signing in to Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
 ms.date: 03/05/2020
-ms.author: davidi
-
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshooting sign-in for Power BI Desktop
@@ -86,7 +84,7 @@ The registry entry can be placed in either of the following locations:
 
 It is not necessary to have the registry entry in both locations.
 
-![Registry key for using default system credentials](media/desktop-troubleshooting-sign-in/desktop-tshoot-sign-in-03.png)
+![Registry key for using default system credentials](media/desktop-troubleshooting-sign-in/desktop-tshoot-sign-in-03b.png)
 
 Once the registry entry is created (a reboot may be necessary) the proxy settings defined in Internet Explorer are used when Power BI Desktop makes web requests. 
 

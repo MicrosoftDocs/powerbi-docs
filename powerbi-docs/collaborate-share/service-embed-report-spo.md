@@ -6,15 +6,15 @@ ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 06/28/2020
+ms.date: 01/04/2021
 ---
 
 # Embed a report web part in SharePoint Online
 
-With Power BI's new report web part for SharePoint Online, you can easily embed interactive Power BI reports in SharePoint Online pages.
+With the new Power BI report web part for SharePoint Online, you can easily embed interactive Power BI reports in SharePoint Online pages.
 
 When using the new **Embed in SharePoint Online** option, the embedded reports respect all item permissions and data security through [row-level security (RLS)](../admin/service-admin-rls.md), so you can easily create secure internal portals.
 
@@ -27,16 +27,16 @@ For **Embed in SharePoint Online** reports to work, the following is required:
 * To consume an embedded report, users must sign in to Power BI service to activate their Power BI license.
 
 > [!Note]
-> For organizations in Power BI National clouds, there is no free license. In this environment, all users who want access to the embedded report in Sharepoint need to have a Power BI Pro license.
+> For organizations in Power BI National clouds, there's no free license. In this environment, all users who want access to the embedded report in Sharepoint need to have a Power BI Pro license.
 
 ## Embed your report
 To embed your report into SharePoint Online, you need to get the report URL and use it with SharePoint Online's Power BI web part.
 
 ### Get a report URL
 
-1. Within Power BI, view the report.
+1. Open a report in the Power BI service.
 
-2. On the **More options (...)** dropdown menu, select **Embed** > **SharePoint Online**.
+2. On the **Share** menu, select **Embed report** > **SharePoint Online**.
 
     ![More options menu, SharePoint Online](media/service-embed-report-spo/power-bi-more-options-sharepoint-online.png)
 
@@ -155,7 +155,7 @@ Users viewing a report in SharePoint need either a **Power BI Pro license** or t
 
 * Power BI does not support the same localized languages that SharePoint Online does. As a result, you may not see proper localization within the embedded report.
 
-* You may encounter issues if using Internet Explorer 10. <!--You can look at the [browsers support for Power BI](../consumer/end-user-browsers.md) and for [Microsoft 365](https://products.office.com/office-system-requirements#Browsers-section). -->
+* You may encounter issues if using Internet Explorer 10. <!--You can look at the [browsers support for Power BI](../fundamentals/power-bi-browsers.md) and for [Microsoft 365](https://products.office.com/office-system-requirements#Browsers-section). -->
 
 * The Power BI web part is not available for [national clouds](https://powerbi.microsoft.com/clouds/).
 

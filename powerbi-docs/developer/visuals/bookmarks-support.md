@@ -1,6 +1,6 @@
 ---
-title: Add bookmark support for Power BI visuals
-description: Power BI visuals can handle bookmarks switching
+title: Add bookmark support for Power BI visuals in Power BI embedded analytics for better embedded BI insights
+description: Power BI visuals can handle. Enable better embedded BI insights using Power BI embedded analytics. bookmarks switching
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -14,7 +14,7 @@ ms.date: 06/18/2019
 
 With Power BI report bookmarks, you can capture a configured view of a report page, the selection state, and the filtering state of the visual. But it requires additional action from the Power BI visuals side to support the bookmark and react correctly to changes.
 
-For more information about bookmarks, see [Use bookmarks to share insights and build stories in Power BI](https://docs.microsoft.com/power-bi/desktop-bookmarks).
+For more information about bookmarks, see [Use bookmarks to share insights and build stories in Power BI](../../create-reports/desktop-bookmarks.md).
 
 ## Report bookmarks support in your visual
 
@@ -42,7 +42,7 @@ The visual should restore the filter values to display the corresponding state o
 
 ### Visuals with Selection
 
-If your visual interacts with other visuals by using [Selection](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/Selection.md), you can add bookmarks in either of two ways:
+If your visual interacts with other visuals by using [Selection](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/Tutorial/Selection.md), you can add bookmarks in either of two ways:
 
 * If the visual hasn't already used [InteractivityService](https://github.com/microsoft/powerbi-visuals-utils-interactivityutils/blob/master/src/interactivityService.ts), you can use the `FilterManager.restoreSelectionIds` method.
 
