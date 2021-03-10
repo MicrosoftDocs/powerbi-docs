@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 03/09/2021
+ms.date: 03/10/2021
 ---
 
 # Get started with deployment pipelines
@@ -96,7 +96,7 @@ Follow these steps to assign a workspace in a deployment pipeline:
 Any [Pro user](../admin/service-admin-purchasing-power-bi-pro.md) that's a member or admin in the source workspace, can deploy content to an empty stage (a stage that doesn't contain content). The workspace must reside on a capacity for the deployment to be completed.
 
 >[!NOTE]
->To deploy a paginated report, you'll need a [capacity that supports paginated reports](./../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports). 
+>To deploy a paginated report, you'll need a [capacity that supports paginated reports](./../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
 
 When deploying content to an empty stage, the relationships between the items are kept. For example, a report that is bound to a dataset in the source stage, will be cloned alongside its dataset, and the clones will be similarly bound in the target workspace.
 
@@ -138,7 +138,7 @@ There are two types of deployment rules:
 
 * **Dataset rules** - Defined on data sources and parameters, in each dataset. These rules determine the values of the data sources or parameters for a specific dataset. For example, if you want a dataset in a production stage to point to a production database, you can define a rule for this. The rule is defined in the production stage, under the appropriate dataset. Once the rule is defined, content deployed from test to production, will inherit the value as defined in the deployment rule, and will always apply as long as the rule is unchanged and valid.
 
-* **Paginated reports** - Defined for paginated report datasets. You can use these rules to determine the dataset of the paginated report. After deployment, paginated reports continue to use the source stage dataset. Use paginated report rules to point the paginated report to a different dataset, for example the target (current) stage dataset.
+* **Paginated reports** - Defined for the data sources of each dataset. You can use these rules to determine the data source of the paginated report. After deployment, paginated reports continue to point to the source stage. Use paginated report rules to point the paginated report to a different stage, for example the target (current) stage.
 
 >[!NOTE]
 > Deployment rules work only when the source and target data source are of the same type.
@@ -149,7 +149,7 @@ To create a deployment rule, follow the steps in this section. After you create 
 
 1. In the pipeline stage you want to create a deployment rule for, select **Deployment settings**.
 
-    >![A screenshot of the deployment settings button, located in the deployment settings.](media/deployment-pipelines-get-started/deployment-settings.png)
+    >![A screenshot of the deployment settings button, located in the deployment settings.](media/deployment-pipelines-get-started/deployment-settings-screenshot.png)
 
 2. You can set rules to **datasets** and **paginated reports**. In the Deployment settings pane, select the type of rule you want to set.
 
@@ -217,8 +217,6 @@ This section lists the limitations for the deployment rules. There are some diff
 
 * Parameter rules cannot be defined for parameters that are of type *Any* or *Binary*. For more information, see [datasets update parameters restrictions](/rest/api/power-bi/datasets/updateparameters).
 
-* Parameter rules are not supported for paginated reports.
-
 * Data source rules can only be defined for the following data sources:
     * Azure Analysis Services
     * Azure Synapse
@@ -242,6 +240,8 @@ This section lists the limitations for the deployment rules. There are some diff
 * When an item is removed or deleted, its rules are deleted too. These rules cannot be restored.
 
 * If the data source or parameters defined in a rule are changed or removed from the source dataset, the rule will not be valid and the deployment will fail.
+
+* Parameter rules are not supported for paginated reports.
 
 ---
 
