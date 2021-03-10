@@ -61,7 +61,7 @@ With RangeStart and RangeEnd parameters defined, apply a filter based on *condit
 
 This task is optional.
 
-The data type of the RangeStart and RangeEnd parameters must be of date/time data type. However, for many data sources, tables do not contain a column of date/time data type, but instead have a date column of integer surrogate keys in the form of *yyyymmdd*. You can create a function that converts the date/time value in the parameters to match the integer surrogate key of the data source table. The function is then called in a filter step. This step is required if the data source table contains *only* a surrogate key as integer data type. 
+The data type of the RangeStart and RangeEnd parameters must be of date/time data type. However, for many data sources, tables do not contain a column of date/time data type but instead have a date column of integer surrogate keys in the form of *yyyymmdd*. You can create a function that converts the date/time value in the parameters to match the integer surrogate key of the data source table. The function is then called in a filter step. This step is required if the data source table contains *only* a surrogate key as integer data type.
 
 1. In Power Query Editor, click **Get data** > **Blank Query**.
 
@@ -109,11 +109,11 @@ When your RangeStart and RangeEnd parameters, filtering, and refresh parameters 
 
 ## Refresh dataset
 
-In the service, refresh the dataset. The first refresh will  import historical data for the entire period specified in the **Store rows where column \<dateColumnName> is in the last:** policy setting. Depending on the amount of data, this can take quite a long time. Subsequent refreshes, either manual or scheduled are typically much faster because the incremental refresh policy is applied and only data for the period specified in **Refresh rows where column \<dateColumnName> is in the last:** policy setting is refreshed.
+In the service, refresh the dataset. The first refresh will import historical data for the entire period specified in the **Store rows where column \<dateColumnName> is in the last:** policy setting. Depending on the amount of data, this can take quite a long time. Subsequent refreshes, either manual or scheduled are typically much faster because the incremental refresh policy is applied and only data for the period specified in **Refresh rows where column \<dateColumnName> is in the last:** policy setting is refreshed.
 
 ## XMLA endpoint
 
-Datasets for Premium and Premium Per User published to a workspace assigned to a capacity with the XMLA endpoint enabled for Read or Read\Write can use Sql Server Management Studio and open-source tools like Tabular Editor to connect to dataset. Partitions created according to the policy can be viewed and managed. To learn more, see [Advanced incremental refresh with the XMLA endpoint](incremental-refresh-xmla.md).
+Datasets for Premium and Premium Per User published to a workspace assigned to a capacity with the XMLA endpoint enabled for Read or Read\Write can use Sql Server Management Studio and open-source tools like Tabular Editor and ALM Toolkit to connect to datasets. Partitions created according to the policy can be viewed and managed. To learn more, see [Advanced incremental refresh with the XMLA endpoint](incremental-refresh-xmla.md).
 
 ## See also
 
