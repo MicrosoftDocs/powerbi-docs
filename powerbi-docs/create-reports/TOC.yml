@@ -270,14 +270,10 @@
         href: ../visuals/power-bi-visualization-move-and-resize.md
       - name: "Change how visuals interact in a report"
         href: service-reports-visual-interactions.md
-      - name: "Tips and tricks for map visualizations"
-        href: ../visuals/power-bi-map-tips-and-tricks.md
       - name: "Customize x-axis and y-axis properties"
         href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
       - name: "Anomaly detection"
         href: ../visuals/power-bi-visualization-anomaly-detection.md
-      - name: "ArcGIS map"
-        href: ../visuals/power-bi-visualizations-arcgis.md
       - name: "Basic area charts"
         href: ../visuals/power-bi-visualization-basic-area-chart.md
       - name: "Create card visuals (big number tiles)"
@@ -288,14 +284,26 @@
         href: ../visuals/power-bi-visualization-decomposition-tree.md
       - name: "Doughnut charts"
         href: ../visuals/power-bi-visualization-doughnut-charts.md
-      - name: "Filled maps (choropleths)"
-        href: ../visuals/power-bi-visualization-filled-maps-choropleths.md
       - name: "Funnel charts"
         href: ../visuals/power-bi-visualization-funnel-charts.md
       - name: "Key influencers visuals"
         href: ../visuals/power-bi-visualization-influencers.md
       - name: "KPI visuals"
         href: ../visuals/power-bi-visualization-kpi.md
+      - name: Maps
+        items: 
+        - name: "Shape map visuals (preview)"
+          href: ../visuals/desktop-shape-map.md
+        - name: "Filled maps (choropleths)"
+          href: ../visuals/power-bi-visualization-filled-maps-choropleths.md
+        - name: "ArcGIS maps"
+          href: ../visuals/power-bi-visualizations-arcgis.md
+        - name: "Tips and tricks for map visualizations"
+          href: ../visuals/power-bi-map-tips-and-tricks.md
+      - name: Azure Maps in Power BI
+        items: 
+        - name: "Get started with Azure Maps Power BI visual"
+          href: /azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/context/context
       - name: "Matrix visuals"
         href: ../visuals/desktop-matrix-visual.md
       - name: "Power Apps visuals"
@@ -314,8 +322,6 @@
         href: ../visuals/power-bi-visualization-scatter.md
       - name: "Use high-density scatter charts"
         href: ../visuals/desktop-high-density-scatter-charts.md
-      - name: "Shape Map visuals (preview)"
-        href: ../visuals/desktop-shape-map.md
       - name: "Create small multiples (preview)"
         href: ../visuals/power-bi-visualization-small-multiples.md
       - name: "Interact with small multiples (preview)"

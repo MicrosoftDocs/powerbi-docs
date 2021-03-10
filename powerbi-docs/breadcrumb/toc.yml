@@ -56,3 +56,10 @@
       - name: Transform, shape, model data
         tocHref: /power-bi/transform-model/
         topicHref: /power-bi/transform-model/index
+    - name: Power BI
+      tocHref: /azure/
+      topicHref: /power-bi/index
+      items:
+      - name: Create reports and dashboards
+        tocHref: /azure-maps/
+        topicHref: /power-bi/create-reports/index

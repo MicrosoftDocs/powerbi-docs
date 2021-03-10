@@ -115,6 +115,7 @@ The following visuals can use a *trend line* if there's time data:
 * Clustered column chart
 * Line chart
 * Line and clustered column chart
+* Scatter chart
 
 Lastly, you can't currently apply any dynamic lines to many visuals, including (but not limited to):
 
