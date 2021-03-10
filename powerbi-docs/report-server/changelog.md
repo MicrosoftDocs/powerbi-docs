@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 02/11/2021
+ms.date: 03/10/2021
 ---
 
 # Change log for Power BI Report Server
@@ -35,6 +35,8 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
    
 ## October 2020
 - **Power BI Report Server**
+    - *Version: 1.9.7709.41358 (Build 15.0.1104.310), Released: March 9, 2021*
+        - Security Updates 
     - *Version: 1.9.7675.15620 (Build 15.0.1104.300), Released: January 8, 2021*
         - Bug fixes
             - Fixed issue with refresh of reports with two or more datasources that differ only by the casing of the letters.
@@ -64,6 +66,8 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             - Updated MHTML renderer to use newer HTML DOCTYPE.
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
+   - *Version: 2.86.2841.0 (October 2020), Released: Feburary 5, 2020*
+        - Bug fixes
    - *Version: 2.86.1321.0 (October 2020), Released: November 18, 2020*
         - Bug fixes
    - *Version: 2.86.961.0 (October 2020), Released: October 27, 2020* (new build and new version)
@@ -71,6 +75,8 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
    
 ## May 2020
 - **Power BI Report Server**
+    - *Version: 1.8.7710.39564 (Build 15.0.1103.241), Released: March 9, 2021*
+        - Security Updates
     - *Version: 1.8.7485.35104 (Build 15.0.1103.234), Released: June 30, 2020*
         - Bug fixes
             - Fixed an issue in scale-out scenarios where reports weren't reflecting edits immediately in the server after upload.

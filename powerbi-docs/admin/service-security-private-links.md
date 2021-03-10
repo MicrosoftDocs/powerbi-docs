@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 12/14/2020
+ms.date: 03/10/2021
 ms.custom: 
 LocalizationGroup: Administration
 ---
@@ -311,5 +311,9 @@ There are a few considerations to keep in mind while working with private links 
 - [Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  
 - [Understanding the Power BI admin role](service-admin-role.md)  
 - [Auditing Power BI in your organization](service-admin-auditing.md)  
+
+The following video shows how to connect a mobile device to Power BI, using private links:
+
+> [!VIDEO https://www.youtube.com/embed/-3yFtlZBpqs]
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
