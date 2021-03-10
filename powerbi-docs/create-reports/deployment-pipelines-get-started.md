@@ -149,7 +149,7 @@ To create a deployment rule, follow the steps in this section. After you create 
 
 1. In the pipeline stage you want to create a deployment rule for, select **Deployment settings**.
 
-    >![A screenshot of the deployment settings button, located in the deployment settings.](media/deployment-pipelines-get-started/deployment-settings-screenshot.png)
+    :::image type="screenshot of the deployment settings button " source="media/deployment-pipelines-get-started/deployment-settings-screenshot.png" alt-text="A screenshot of the deployment settings button, located in the deployment settings." border="false":::
 
 2. You can set rules to **datasets** and **paginated reports**. In the Deployment settings pane, select the type of rule you want to set.
 
