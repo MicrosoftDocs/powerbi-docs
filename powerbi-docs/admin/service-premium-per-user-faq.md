@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 3/9/2021
+ms.date: 3/10/2021
 LocalizationGroup: Premium
 ---
 # Power BI Premium Per User FAQ (preview)
@@ -145,7 +145,7 @@ This article groups questions and answers into the following categories:
 
     No. Since the dataset resides in a Premium Per User workspace, it will not be viewable for users without a license, even though they can access the report in the non-PPU workspace.
 
-12.	**Can I refresh multiple 10 GB data models at the same time?**
+12.	**Can I refresh multiple 100 GB data models at the same time?**
 
     You are subject to the same limitations that are imposed for parallel refreshes in Premium Gen2.
 

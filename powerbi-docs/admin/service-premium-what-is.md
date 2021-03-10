@@ -367,6 +367,9 @@ Under the hood, the enterprise proven Microsoft **Analysis Services VertiPaq eng
 
 With read-only access, Microsoft tools like SQL Server Management Studio (SSMS) and SQL Server Profiler, and third-party apps such as DAX Studio and data visualization applications, can connect to and query Premium datasets by using XMLA, DAX, MDX, DMVs, and Trace events. With read/write access, enterprise data modeling tools like Visual Studio with Analysis Services projects extension or the open source Tabular Editor can deploy tabular models as a dataset to a Premium workspace. And with tools like SSMS, admins can use Tabular Model Scripting Language (TMSL) to script metadata changes and advanced data refresh scenarios. 
 
+> [!CAUTION]
+> Power BI does not honor perspectives when building reports on top of Live connect models or reports. If your Azure Analysis Services model uses perspectives, you should not move or migrate those models to Power BI Premium. 
+
 To learn more, see [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md).
 
 ![SSMS](media/service-premium-what-is/connect-tools-ssms-dax.png)
