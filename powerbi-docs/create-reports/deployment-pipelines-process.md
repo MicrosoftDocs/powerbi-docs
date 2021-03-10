@@ -282,7 +282,7 @@ Workspace members that have *pipeline access*, can also do the following:
 * Update datasets
 
 >[!NOTE]
->For workspace members to update datasets, the *block republish and disable package refresh* setting located in the tenant *dataset security* section, needs to be enabled. If this setting is disabled, only dataset owners will be able to update datasets.
+>If the *block republish and disable package refresh* setting located in the tenant *dataset security* section is enabled, only dataset owners will be able to update datasets.
 
 ### Workspace admin
 
