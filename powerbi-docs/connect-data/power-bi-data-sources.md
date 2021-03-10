@@ -75,6 +75,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | JSON | Yes | Yes | No | Yes** | No <sup>3</sup> | Yes |
 | Kyligence Enterprise | Yes | Yes | Yes | Yes | Yes | No |
 | MailChimp | Yes | Yes | No | No | No | No |
+| MariaDB | Yes | Yes | Yes | No | Yes | No |
 | Marketo | Yes | Yes | No | No | No | No |
 | MarkLogic ODBC | Yes | Yes | Yes | Yes | Yes | No |
 | Microsoft Azure Consumption Insights | Yes | Yes | No | No | No | No |
