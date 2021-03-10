@@ -19,7 +19,7 @@ summary: |
 sections:
   - name: Ignored
     questions:
-      ## Power BI
+          ## Power BI
       - question: |
          Do I need to upgrade the on-premises data gateway (personal mode)?
         answer: |
@@ -50,7 +50,7 @@ sections:
         answer: |
           R scripts are supported only for personal mode.​
           
-### Analysis Services in Power BI
+          ## Analysis Services in Power BI
    
       - question: |
          Can I use msmdpump.dll to create custom effective username mappings for Analysis Services? 
