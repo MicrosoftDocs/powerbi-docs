@@ -403,7 +403,7 @@ The code below selects `textLabel` and `textValue` from `DataView`, and if the d
 
 1. In VS Code, from the **src** folder, open **visual.ts**.
 
-2. Replace the *ReactCircleCard* import, with the following line:
+2. Add the content of the *ReactCircleCard* class, with the following code:
 
     ```typescript
     import { ReactCircleCard, initialState } from "./component";

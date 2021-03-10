@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 10/26/2020
+ms.date: 03/09/2021
 ---
 # Change data source connection strings in Power BI reports with PowerShell - Power BI Report Server
 
