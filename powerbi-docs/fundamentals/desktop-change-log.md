@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/09/2021
+ms.date: 03/10/2021
 ---
 
 # Change log for Power BI Desktop
@@ -27,7 +27,7 @@ See [What's new in Power BI](desktop-latest-update.md) for more information abou
 - Update of PBI Desktop save validation: It doesn't overwrite the customer's previous file with an invalid .pbix file if it's caused by Analysis Services writing to the zip file.
 - Model view fix for large .pbix files. 
 - Model view fix for blurry fields and icon text inside a table card. 
-- Fix for color picker. 
+- Color picker now closes when you press ESC. 
 
 ## Next steps
 
