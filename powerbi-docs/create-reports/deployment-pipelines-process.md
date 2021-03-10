@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 03/09/2021
+ms.date: 03/10/2021
 ---
 
 # Understand the deployment process
@@ -275,9 +275,14 @@ Workspace members that have *pipeline access*, can also do the following:
 
 * Compare stages
 
-* Deploy reports and dashboards
+* Deploy reports, dashboards and paginated reports
 
 * Remove workspaces
+
+* Update datasets
+
+>[!NOTE]
+>For workspace members to update datasets, the *block republish and disable package refresh* setting located in the tenant *dataset security* section, needs to be enabled. If this setting is disabled, only dataset owners will be able to update datasets.
 
 ### Workspace admin
 
@@ -291,32 +296,10 @@ Workspace administrators that have *pipeline access*, can perform *workspace mem
 
 Dataset owners that are either workspace members or admins, can also do the following:
 
-* Update datasets
-
 * Configure rules
 
 >[!NOTE]
 >This section describes user permissions in deployment pipelines. The permissions listed in this section may have different applications in other Power BI features.
-
-### Data security
-
-To tighten the security in the organization, tenant admins can enable the *block republish and disable package refresh* setting, located in the *dataset security* [tenant settings](./../admin/service-admin-portal.md#tenant-settings).
-
-The *block republish and disable package refresh* setting is disabled by default. When enabled, it blocks refreshing and republishing datasets from any user in the organization that isn't the dataset owner. In such cases, [workspace members](#workspace-member) and [workspace admins](#workspace-admin) will need to be dataset owners in order to deploy datasets.
-
-Follow these steps to enable the *block republish and disable package refresh* setting:
-
-1. In Power BI service, select **Settings** > **Admin portal**.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of accessing the Power B I service admin settings.](media/deployment-pipelines-process/admin-settings.png)
-
-2. In **Tenant settings**, scroll down to **Dataset security** and expand **block republish and disable package refresh**.
-
-3. Enable the **block republish and disable package refresh** setting.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of enabling the Power B I service dataset security setting.](media/deployment-pipelines-process/dataset-security.png)
 
 ## Limitations
 
