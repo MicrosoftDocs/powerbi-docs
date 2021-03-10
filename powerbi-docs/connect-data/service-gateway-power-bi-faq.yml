@@ -73,8 +73,8 @@ sections:
           We answer this question in the [troubleshooting article](service-gateway-onprem-tshoot.md).
           
 additionalContent: |
-  ## Next steps
-          * [Troubleshooting the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
-          
-          More questions? Try the [Power BI Community](https://community.powerbi.com/).
+  ## Next steps |
+  * [Troubleshooting the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
+
+More questions? Try the [Power BI Community](https://community.powerbi.com/).
           
