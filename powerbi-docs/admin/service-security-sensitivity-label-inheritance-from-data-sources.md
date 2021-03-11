@@ -19,7 +19,7 @@ Currently supported data sources:
 * Azure Synapse Analytics (formerly SQL Data Warehouse)
 * Azure SQL Database
 
-To be operative, [sensitivity label inheritance from data sources must be enabled on the tenant](service-admin-porta.mdl#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview).
+To be operative, [sensitivity label inheritance from data sources must be enabled on the tenant](service-admin-porta.md#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview).
 
 ## Requirements
 * The data in the data source must be labeled with Microsoft Information Protection labels. This is accomplished using a two-step Purview flow:
@@ -28,7 +28,7 @@ To be operative, [sensitivity label inheritance from data sources must be enable
 
 * The scope of the labels must be **Files and emails** and **Azure Purview assets**. See [Extending sensitivity labels to Azure Purview](/azure/purview/create-sensitivity-label#extending-sensitivity-labels-to-azure-purview) and [Creating new sensitivity labels or modifying existing labels](/azure/purview/create-sensitivity-label#creating-new-sensitivity-labels-or-modifying-existing-labels).
 * [Sensitivity labels must be enabled in Power BI](service-security-enable-data-sensitivity-labels.md).
-* The **[Apply sensitivity labels from data sources to their data in Power BI (preview)](service-admin-porta.mdl#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview)** tenant admin setting must be enabled.
+* The **[Apply sensitivity labels from data sources to their data in Power BI (preview)](service-admin-porta.md#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview)** tenant admin setting must be enabled.
 * All conditions for applying a label must be met.
 
 ## Inheritance behavior
