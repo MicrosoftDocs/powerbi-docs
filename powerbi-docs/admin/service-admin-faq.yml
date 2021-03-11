@@ -18,7 +18,8 @@ summary: |
 
 sections:
   - name: What's in this article
-    questions:
+    questions:     
+      
       - question: |
           Sign up for Power BI section
         answer: |
@@ -51,8 +52,8 @@ sections:
           * [Does Power BI meet national, regional, and industry-specific compliance requirements?](#does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements)
           * [How does security work in Power BI?](#how-does-security-work-in-power-bi)
           
-  - name: Sign up for Power BI
-    questions:
+  - name: |
+     Sign up for Power BI
       - question: |
           Using PowerShell
         answer: |
@@ -159,8 +160,8 @@ sections:
         answer: |
           To allow your existing users to sign up for Power BI, run the command listed for the previous question, but pass `$true` instead of `$false` in the last step.
 
-  - name: Administration of Power BI
-    questions:
+  - name: |
+      Administration of Power BI
       - question: |
           How will this change the way I manage identities for users in my organization today?
         answer: |
@@ -258,8 +259,8 @@ sections:
         answer: |
           For info about high availability and failover, see [Power BI high availability, failover, and disaster recovery FAQ](service-admin-failover.md).
           
-  - name: Security in Power BI
-    questions:
+  - name: |
+      Security in Power BI
       - question: |
           Does Power BI meet national, regional, and industry-specific compliance requirements?
         answer: |
@@ -272,8 +273,7 @@ sections:
           
 additionalContent: |
   ## Next steps
-
-  - Power BI admin portal](service-admin-portal.md)  
+  - [Power BI admin portal](service-admin-portal.md)  
   - [Understanding the Power BI admin role](service-admin-role.md)  
   - [Self-service sign up for Power BI](../fundamentals/service-self-service-signup-for-power-bi.md)  
   - [Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
@@ -283,5 +283,5 @@ additionalContent: |
   - [Manage your group in Power BI and Microsoft 365](../collaborate-share/service-manage-app-workspace-in-power-bi-and-office-365.md)  
   - [Work or school account management](/office365/servicedescriptions/office-365-platform-service-description/user-account-management/)  
   - [Microsoft 365 group management](/office365/admin/email/create-edit-or-delete-a-security-group/)  
-
+          
   More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
