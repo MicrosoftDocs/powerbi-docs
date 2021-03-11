@@ -158,7 +158,7 @@ For the user's convenience, add the license key or token related fields at the t
 
 ## FAQ
 
-For more information about Power BI visuals, see  [Frequently asked questions about Power BI visuals with additional purchases](power-bi-custom-visuals-faq#visuals-with-additional-purchases).
+For more information about Power BI visuals, see  [Frequently asked questions about Power BI visuals with additional purchases](./power-bi-custom-visuals-faq.yml#visuals-with-additional-purchases).
 
 ## Next steps
 
