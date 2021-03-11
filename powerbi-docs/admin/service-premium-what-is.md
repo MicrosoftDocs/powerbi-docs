@@ -353,7 +353,7 @@ To learn more, see [Power BI Report Server](../report-server/get-started.md).
 
 ## Unlimited content sharing
 
-With Premium, anyone, whether they're inside or outside your organization can view your Power BI content including paginated and interactive reports without purchasing individual licenses. 
+With P Premium SKUs, anyone, whether they're inside or outside your organization can view your Power BI content including paginated and interactive reports without purchasing individual licenses. P SKUs allow free Power BI users to consumer Power BI apps and shared content, in the Power BI service. EM Premium SKUs do not support unlimited content sharing, though they do support embedding in applications.
 
 ![Content sharing](media/service-premium-what-is/premium-sharing.png)
 
@@ -366,6 +366,9 @@ To learn more, see [Power BI licensing](service-admin-licensing-organization.md)
 Under the hood, the enterprise proven Microsoft **Analysis Services VertiPaq engine** powers Power BI Premium workspaces and datasets. Analysis Services provides programmability and client application and tool support through client libraries and APIs that support the open-standard XMLA protocol. By default, Power BI Premium capacity dataset workloads support *read-only* operations from Microsoft and third-party client applications and tools through an **XMLA endpoint**. Capacity admins can also choose to disable or allow *read/write* operations through the endpoint.
 
 With read-only access, Microsoft tools like SQL Server Management Studio (SSMS) and SQL Server Profiler, and third-party apps such as DAX Studio and data visualization applications, can connect to and query Premium datasets by using XMLA, DAX, MDX, DMVs, and Trace events. With read/write access, enterprise data modeling tools like Visual Studio with Analysis Services projects extension or the open source Tabular Editor can deploy tabular models as a dataset to a Premium workspace. And with tools like SSMS, admins can use Tabular Model Scripting Language (TMSL) to script metadata changes and advanced data refresh scenarios. 
+
+> [!CAUTION]
+> The [XMLA endpoint and 3rd party tools](troubleshoot-xmla-endpoint.md) enable organizations to create perspectives. Power BI does not honor perspectives when building reports on top of Live connect models or reports. Instead, Power BI points to the main model once published to the Power BI service, showing all elements in the data model. If your Azure Analysis Services model uses perspectives, you should not move or migrate those models to Power BI Premium. 
 
 To learn more, see [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md).
 
