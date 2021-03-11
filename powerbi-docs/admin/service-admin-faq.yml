@@ -52,8 +52,8 @@ sections:
           * [Does Power BI meet national, regional, and industry-specific compliance requirements?](#does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements)
           * [How does security work in Power BI?](#how-does-security-work-in-power-bi)
           
-  - name: |
-     Sign up for Power BI
+  - name: Sign up for Power BI
+    questions:
       - question: |
           Using PowerShell
         answer: |
@@ -160,8 +160,8 @@ sections:
         answer: |
           To allow your existing users to sign up for Power BI, run the command listed for the previous question, but pass `$true` instead of `$false` in the last step.
 
-  - name: |
-      Administration of Power BI
+  - name: Administration of Power BI
+    questions:      
       - question: |
           How will this change the way I manage identities for users in my organization today?
         answer: |
@@ -259,8 +259,8 @@ sections:
         answer: |
           For info about high availability and failover, see [Power BI high availability, failover, and disaster recovery FAQ](service-admin-failover.md).
           
-  - name: |
-      Security in Power BI
+  - name: Security in Power BI
+    questions:
       - question: |
           Does Power BI meet national, regional, and industry-specific compliance requirements?
         answer: |
