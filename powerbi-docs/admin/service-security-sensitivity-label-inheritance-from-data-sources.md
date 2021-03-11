@@ -37,7 +37,7 @@ If [downstream inheritance]() is also enabled on the tenant, the sensitivity lab
 * Dataset refresh will succeed even if for some reason the label from the data source is not applied. 
 
 >[!NOTE]
-> No inheritance takes place if the dataset owner is not authorized to apply sensitivity labels in Power BI, or if the specific label in question has not be published for the dataset owner.
+> No inheritance takes place if the dataset owner is not authorized to apply sensitivity labels in Power BI, or if the specific label in question has not been published for the dataset owner.
 
 ## Limitations
 * Inheritance from data sources is not currently supported in Power BI Desktop. 
