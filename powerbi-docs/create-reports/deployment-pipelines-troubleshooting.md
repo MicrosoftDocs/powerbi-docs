@@ -153,7 +153,7 @@ To create a [deployment rule](deployment-pipelines-get-started.md#step-4---creat
 >[!div class="mx-imgBorder"]
 >![A screenshot showing deployment pipelines deployment rules greyed out.](media/deployment-pipelines-troubleshooting/rules-greyed-out.png)
 
-If one of the rule options is greyed out, it could also be because:
+If one of the rule options is greyed out, it could be because of the reasons listed below:
 
 * **Data source rules** - There are no data sources that a rule can be configured on.
 
