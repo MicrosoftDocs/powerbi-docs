@@ -49,5 +49,5 @@ To be operative, [sensitivity label inheritance from data sources must be enable
 * Inheritance from data sources is not supported in connections via gateways or Azure Virtual Network (VNet).
 
 ### Next steps
-* [Enable sensitivity label inheritance from data sources]()
-* [Downstream inheritance of sensitivity labels]()
+* [Enable sensitivity label inheritance from data sources](service-admin-portal.md#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview)
+* [Sensitivity label overview](service-security-sensitivity-label-overview.md)
