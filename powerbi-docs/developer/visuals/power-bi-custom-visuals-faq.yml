@@ -14,12 +14,13 @@ metadata:
 title: Power BI visuals FAQ
 summary: | 
 
-    ## Organizational Power BI visuals
 
-    The admin portal enables managing Power BI visuals for your organization.
 
 sections:
-  - name: 
+  - name: Organizational Power BI visuals
+  
+     The admin portal enables managing Power BI visuals for your organization.
+ 
     questions:
       - question: |
           How can the admin manage organizational Power BI visuals?
