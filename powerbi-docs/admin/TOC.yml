@@ -51,7 +51,7 @@
     - name: Information protection
       items:
       - name: Sensitivity label inheritance from data sources
-        href: service-security-sensitivity-label-inheritance.md
+        href: service-security-sensitivity-label-inheritance-from-data-sources.md
   - name: How to
     items: 
     - name: "Licensing and sign-up"

@@ -11,11 +11,7 @@ ms.custom:
 ms.date: 03/11/2021
 LocalizationGroup: Data from files
 ---
-# Sensitivity label inheritance
-
-This article describes how Microsoft Information Protection sensitivity labels can be automatically applied to Power BI content through inheritance from data sources and other Power BI artifacts.
-
-## Sensitivity label inheritance from data sources
+# Sensitivity label inheritance from data sources
 
 Power BI datasets that connect to sensitivity-labeled data in Azure Synapse Analytics (formerly SQL Data Warehouse) or Azure SQL Database can inherit those labels, so that the data remains classified and secure when brought into Power BI.
 
@@ -23,7 +19,7 @@ To be operative, [sensitivity label inheritance from data sources must be enable
 
 If [downstream inheritance]() is also enabled on the tenant, the sensitivity label that a dataset inherits from a data source will automatically be propagated to the dataset's downstream content.
 
-### Requirements
+## Requirements
 * The data in the data source must be labeled with Microsoft Information Protection labels. This is accomplished using a two-step Purview flow:
     1. [Automatically apply sensitivity labels to your data](/azure/purview/create-sensitivity-label).
     1. [Classify your Azure SQL data using Azure Purview labels](/azure/sql-database/scripts/sql-database-import-purview-labels).
@@ -33,7 +29,7 @@ If [downstream inheritance]() is also enabled on the tenant, the sensitivity lab
 * The **[Apply sensitivity labels from data sources to their data in Power BI (preview)]()** tenant admin setting must be enabled.
 * All conditions for applying a label must be met.
 
-### Inheritance behavior
+## Inheritance behavior
 * In the Power BI service, when the dataset is connected to the data source, Power BI inherits the label and applies it automatically to the dataset. Subsequently, inheritance occurs upon dataset refresh in the service. 
 * If the data source has sensitivity labels of different degrees, the most restrictive is chosen for inheritance. In order to be applied, that label (the most restrictive) must be published for the dataset owner.
 * Labels from data sources never overwrite manually applied labels on datasets.
@@ -43,7 +39,7 @@ If [downstream inheritance]() is also enabled on the tenant, the sensitivity lab
 >[!NOTE]
 > No inheritance takes place if the dataset owner is not authorized to apply sensitivity labels in Power BI, or if the specific label in question has not be published for the dataset owner.
 
-### Limitations
+## Limitations
 * Inheritance from data sources is not currently supported in Power BI Desktop. 
 * Inheritance from data sources is not supported for datasets located in classic workspaces.
 * Inheritance from data sources is supported only for datasets with enhanced metadata. See [Using enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md) for more information.
