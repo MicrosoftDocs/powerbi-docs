@@ -151,7 +151,7 @@ Capacity administrators automatically have their my workspaces assigned to Premi
 
 ### Capacity nodes
 
-As described in the [Subscriptions and Licensing](#subscriptions-and-licensing) section, there are two Power BI Premium SKU families: **EM** and **P**. All Power BI Premium SKUs are available as capacity *nodes*, each representing a set amount of resources consisting of processor, memory, and storage. In addition to resources, each SKU has operational limits on the number of DirectQuery and Live Connection connections per second, and the number of parallel model refreshes.
+As described in the [Subscriptions and Licensing](#subscriptions-and-licensing) section, there are two Power BI Premium SKU families: **EM** and **P**. All Power BI Premium SKUs are available as capacity *nodes*, each representing a set amount of resources consisting of processor, memory, and storage.  In addition to resources, each SKU has operational limits on the number of DirectQuery and Live Connection connections per second, and the number of parallel model refreshes. While there is a lot of overlap in features for the two SKU families, only the P Premium SKU gives free users the ability to consume content hosted in the Premium capacity.  EM SKUs are used for embedding content.
 
 Processing is achieved by a set number of v-cores, divided equally between backend and frontend.
 
