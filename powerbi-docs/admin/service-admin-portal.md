@@ -279,7 +279,7 @@ When enabled, newly created Office 365 Groups won't be shown in the Power BI wor
 
 ### Apply sensitivity labels from data sources to their data in Power BI (preview)
 
-When enabled, Power BI datasets that connect to sensitivity-labeled data in supported data sources can inherit those labels, so that the data remains classified and secure when brought into Power BI.  For detail about sensitivity label inheritance from data sources, see [Sensitivity label inheritance from data sources](service-security-sensitivity-label-inheritance-from-data-sources.md).
+When this setting is enabled, Power BI datasets that connect to sensitivity-labeled data in supported data sources can inherit those labels, so that the data remains classified and secure when brought into Power BI.  For detail about sensitivity label inheritance from data sources, see [Sensitivity label inheritance from data sources](service-security-sensitivity-label-inheritance-from-data-sources.md).
 
 To enable sensitivity label inheritance from data sources go to the [Power BI tenant settings](service-admin-portal.md#tenant-settings), and enable the toggle under **Information protection > Apply sensitivity labels from data sources to their data in Power BI (preview)**:
 
