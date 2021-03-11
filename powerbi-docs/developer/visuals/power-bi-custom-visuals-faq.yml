@@ -65,8 +65,8 @@ sections:
           
           * Admins can enable/disable visuals for testing from the admin portal.
           
-  - name: Certified Power BI visuals
-    questions:
+          ## Certified Power BI visuals
+
       - question: |
           What are certified Power BI visuals?
         answer: |
@@ -133,8 +133,8 @@ sections:
           
           Some visuals are not certified because they don't comply with one or more of the [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements). For example, connecting to an external service like map visuals, or visuals using commercial libraries.
            
-  - name: Visuals with additional purchases
-    questions:
+          ## Visuals with additional purchases
+
       - question: |
           What is a visual with additional purchases?
         answer: |
@@ -172,8 +172,8 @@ sections:
           
           Certification is an optional process, it's up to you to decide if you want your IAP visual to be certified.
           
-  - name: Additional questions
-    questions:
+          ## Additional questions
+		  
       - question: |
           How to get support?
         answer: Feel free to contact the Power BI visuals support team at pbicvsupport@microsoft.com, with any questions, comments, or issues you have.  
