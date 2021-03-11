@@ -19,7 +19,7 @@ summary: |
     The admin portal enables managing Power BI visuals for your organization.
 
 sections:
-  - name:  General
+  - name: Ignored
     questions:
       - question: |
           How can the admin manage organizational Power BI visuals?
@@ -132,7 +132,7 @@ sections:
           Uncertified Power BI visuals do not necessarily mean unsafe visuals.
           
           Some visuals are not certified because they don't comply with one or more of the [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements). For example, connecting to an external service like map visuals, or visuals using commercial libraries.
-           
+          
           ## Visuals with additional purchases
 
       - question: |
@@ -173,7 +173,7 @@ sections:
           Certification is an optional process, it's up to you to decide if you want your IAP visual to be certified.
           
           ## Additional questions
-		  
+
       - question: |
           How to get support?
         answer: Feel free to contact the Power BI visuals support team at pbicvsupport@microsoft.com, with any questions, comments, or issues you have.  
