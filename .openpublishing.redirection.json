@@ -3849,5 +3849,15 @@
             "source_path": "powerbi-docs/admin/power-bi-whitelist-urls.md",
             "redirect_url": "/power-bi/admin/power-bi-allow-list-urls",
             "redirect_document_id": false
-        }      ]
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-tutorial-facebook-analytics.md",
+            "redirect_url": "/power-bi/connect-data/desktop-data-sources",
+            "redirect_document_id": false
+        },        
+        {
+            "source_path": "powerbi-docs/connect-data/service-facebook-connector.md",
+            "redirect_url": "/power-bi/connect-data/service-get-data",
+            "redirect_document_id": false
+        }      ]           
 }
