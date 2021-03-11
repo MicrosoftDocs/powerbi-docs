@@ -2057,7 +2057,12 @@
         },
         {
             "source_path": "powerbi-docs/service-premium-incremental-refresh.md",
-            "redirect_url": "/power-bi/admin/service-premium-incremental-refresh",
+            "redirect_url": "/power-bi/admin/incremental-refresh-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-premium-incremental-refresh.md",
+            "redirect_url": "/power-bi/admin/incremental-refresh-overview",
             "redirect_document_id": true
         },
         {

@@ -6,8 +6,8 @@ ms.author: owend
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: 
-ms.topic: how-to
-ms.date: 02/24/2021
+ms.topic: conceptual
+ms.date: 03/11/2021
 LocalizationGroup: 
 ---
 # Incremental refresh for datasets
@@ -112,11 +112,11 @@ The Table listbox defaults to the table you select. Enable incremental refresh f
 
 #### 2 - Store rows in the last
 
-This **required** setting determines the period in which rows in that period are included in the dataset table, plus rows for the current period up to the current date and time. For example, if you specify 5 years, your table will store the last five whole years of historical data in year partitions, plus rows for the current year up to the most recent refresh.
+This **required** setting determines the period in which rows in that period are included in the dataset table, plus rows for the current period up to the current date and time. For example, if you specify 5 years, your table will store the last five whole years of historical data in year partitions, plus rows for the current year up to the most recent refresh. For datasets on Premium capacities, backdated historical partitions can be selectively refreshed at a granularity determined by this setting.
 
 #### 3 - Refresh rows in the last
 
-This **required** setting determines the incremental refresh period in which all rows with a date/time in that period are included in the latest partition and refreshed. For example, if you specify 7 days, all rows with a date/time in the last seven days up to the current refresh operation time are refreshed. Rows older than seven days are moved to the previous partition and excluded from the refresh. The majority of system resources used during a refresh operation are consumed for this period. Be sure to specify a period in which the most important new and updated rows at the data source are within this period. It's important this not be such a long period that system resources are used unnecessarily refreshing rows that have not been updated or added within the period.
+This **required** setting determines the incremental refresh period in which all rows with a date/time in that period are included in the latest partition and refreshed. For example, if you specify 7 days, all rows with a date/time in the last seven days up to the current refresh operation time are refreshed. The majority of system resources used during a refresh operation are consumed for this period. Be sure to specify a period in which the most important new and updated rows are within this period.
 
 #### 4 - Detect data changes
 
