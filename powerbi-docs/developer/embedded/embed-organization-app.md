@@ -6,20 +6,20 @@ ms.author: kesharab
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 03/08/2021
+ms.date: 03/11/2021
 ---
 
 # Tutorial: Embed a Power BI report in an application for your organization
 
-In this tutorial, you'll learn how to embed a Power BI report in an application for your organization. Embedding Power BI content (such as reports, dashboards and tiles) in an app for your organization, is also known as an *user owns data* solution. In this solution, your users need to authenticate against Power BI with their own credentials.
+In this tutorial, you'll learn how to embed a Power BI report in a .NET 5.0 application, as part of the *embed for your organization* (also known as an *user owns data*) solution. In an *embed for your organization* solution, your app users need to authenticate against Power BI with their own credentials.
 
 In this tutorial, you'll learn how to embed:
 
 >[!div class="checklist"]
 >* A Power BI report
->* In a *user owns data* app
->* Using .NET
->* With the `Microsoft.Identity.Web` library
+>* In an *embed for your organization* app
+>* Using .NET 5.0
+>* With the `Microsoft.Identity.Web` library (this library is also supported in .NET Core)
 
 >[!NOTE]
 >The full solution used in this tutorial, is available from the [DOTNET5-UserOwnsData-Tutorial](https://github.com/PowerBiDevCamp/DOTNET5-UserOwnsData-Tutorial) GitHub repository.
@@ -29,7 +29,7 @@ In this tutorial, you'll learn how to embed:
 * A [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) or [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) license.
 
     >[!NOTE]
-    >*User owns data* embedding is not supported on [capacities](embedded-capacity.md) based on *A* SKUs. An *A* SKU can only be used for *app owns data* embedding.
+    >The *embed for your organization* solution, is not supported on [capacities](embedded-capacity.md) based on *A* SKUs. An *A* SKU can only be used for the *embed for your customers* solution.
 
 * A Power BI workspace with a report.
 
@@ -49,29 +49,29 @@ In this tutorial, you'll learn how to embed:
 
 ## Resources
 
-This tutorial is using the following NuGet packages and APIs:
+In this tutorial, you'll use:
 
 * Power BI REST [Reports API](https://docs.microsoft.com/rest/api/power-bi/reports) - Used to embed the URL and retrieve the embed token.
 
 * [Microsoft Identity Web authentication library](/active-directory/develop/microsoft-identity-web).
 
-* [Power BI embedded analytics Client APIs](/javascript/api/overview/powerbi/) -Use to embed the report.
+* [Power BI embedded analytics Client APIs](/javascript/api/overview/powerbi/) - Use to embed the report.
 
 ## Method
 
-To embed Power BI content in an *embed for your organization* app, follow these steps:
+To embed Power BI content in an *embed for your organization* solution, follow these steps:
 
-1. [Configure your Azure AD app](#step-1---configure-your-azure-ad-app)
+1. [Configure your Azure AD app](#step-1---configure-your-azure-ad-app).
 
 2. [Get the embedding parameter values](#step-2---get-the-embedding-parameter-values).
 
 3. [Enable server side authentication](#step-3---enable-server-side-authentication).
 
-4. [Create a client side authentication file](#step-4---create-client-side-implementation)
+4. [Build your app's client side](#step-4---build-your-app's-client-side).
 
 ## Step 1 - Configure your Azure AD app
 
-Before your web app contacts Power BI, it needs to authenticate against Azure AD to get an [Azure AD token](embed-tokens.md#azure-ad-token). The *Azure AD token* enables your web app to call Power BI REST APIs.
+When your web app calls Power BI, it needs an [Azure AD token](embed-tokens.md#azure-ad-token). The *Azure AD token* enables your web app to call Power BI REST APIs and embed Power BI items such as reports, dashboards or tiles.
 
 If you don't have an Azure AD app, create one using the instructions in [Register an Azure AD application to use with Power BI](register-app.md).
 
@@ -109,7 +109,7 @@ Enable server-side authentication in your app, by creating or modifying the file
 |File                 |Use  |
 |---------------------|-----|
 |Startup.cs           |Initialize the `Microsoft.Identity.Web` authentication service |
-|appsettings.json     |Server-side authentication |
+|appsettings.json     |Authentication details |
 |PowerBiServiceApi.cs |Get the Azure AD token and embedding metadata    |
 
 ### Configure your startup file to support `Microsoft.Identity.Web`
@@ -187,7 +187,7 @@ In this tutorial, the server-side authentication file contains sensitive informa
             "SignedOutCallbackPath": "/signout-callback-oidc"
         },
         "PowerBI": {
-            "ServiceTootUrl": "https://api.powerbi.com"
+            "ServiceRootUrl": "https://api.powerbi.com"
         },
         "Logging": {
             "LogLevel": {
@@ -233,7 +233,7 @@ The `RequiredScopes` field holds a string array containing a set of [delegated p
     
     namespace UserOwnsData.Services {
     
-      //A view model class to pass the data needed to embed a single report.
+      // A view model class to pass the data needed to embed a single report.
     	public class EmbeddedReportViewModel {
     		public string Id;
     		public string Name;
@@ -259,7 +259,7 @@ The `RequiredScopes` field holds a string array containing a set of [delegated p
     			"https://analysis.windows.net/powerbi/api/Workspace.ReadWrite.All"
     		};
     
-        //A method to get the Azure AD token (also known as 'access token')
+        // A method to get the Azure AD token (also known as 'access token')
     		public string GetAccessToken() {
     			return this.tokenAcquisition.GetAccessTokenForUserAsync(RequiredScopes).Result;
     		}
@@ -273,10 +273,10 @@ The `RequiredScopes` field holds a string array containing a set of [delegated p
     			
     			PowerBIClient pbiClient = GetPowerBiClient();
     			
-    			// call to Power BI Service API to get embedding data
+    			// Call the Power BI Service API to get embedding data
     			var report = await pbiClient.Reports.GetReportInGroupAsync(WorkspaceId, ReportId);
     			
-    			// return report embedding data to caller
+    			// Return report embedding data to caller
     			return new EmbeddedReportViewModel {
     				Id = report.Id.ToString(),
     				EmbedUrl = report.EmbedUrl,
@@ -290,7 +290,7 @@ The `RequiredScopes` field holds a string array containing a set of [delegated p
     }
     ```
 
-## Step 4 - Create client-side implementation
+## Step 4 - Build your app's client side
 
 For client-side implementation, you'll need to create or modify the files in the table below
 
@@ -393,16 +393,16 @@ The `powerbi.embed` function uses the `models` configuration object to embed you
     ```javascript
     $(function(){
         // 1 - Get DOM object for div that is report container
-        var reportContainer = document.getElementById("embed-container");
+        let reportContainer = document.getElementById("embed-container");
     
         // 2 - Get report embedding data from view model
-        var reportId = window.viewModel.reportId;
-        var embedUrl = window.viewModel.embedUrl;
-        var token = window.viewModel.token
+        let reportId = window.viewModel.reportId;
+        let embedUrl = window.viewModel.embedUrl;
+        let token = window.viewModel.token
     
         // 3 - Embed report using the Power BI JavaScript API.
-        var models = window['powerbi-client'].models;
-        var config = {
+        let models = window['powerbi-client'].models;
+        let config = {
             type: 'report',
             id: reportId,
             embedUrl: embedUrl,
@@ -419,11 +419,11 @@ The `powerbi.embed` function uses the `models` configuration object to embed you
         };
     
         // Embed the report and display it within the div container.
-        var report = powerbi.embed(reportContainer, config);
+        let report = powerbi.embed(reportContainer, config);
     
         // 4 - Add logic to resize embed container on window resize event
-        var heightBuffer = 12;
-        var newHeight = $(window).height() - ($("header").height() + heightBuffer);
+        let heightBuffer = 12;
+        let newHeight = $(window).height() - ($("header").height() + heightBuffer);
         $("#embed-container").height(newHeight);
         $(window).resize(function () {
             var newHeight = $(window).height() - ($("header").height() + heightBuffer);
