@@ -48,6 +48,6 @@ To be operative, [sensitivity label inheritance from data sources must be enable
 * Inheritance from data sources is supported only for datasets using the Import data connectivity mode. Live connection and DirectQuery connectivity is not supported.
 * Inheritance from data sources is not supported in connections via gateways or Azure Virtual Network (VNet).
 
-### Next steps
+## Next steps
 * [Enable sensitivity label inheritance from data sources](service-admin-portal.md#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview)
 * [Sensitivity label overview](service-security-sensitivity-label-overview.md)
