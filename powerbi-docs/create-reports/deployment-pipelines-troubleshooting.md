@@ -153,6 +153,10 @@ To create a [deployment rule](deployment-pipelines-get-started.md#step-4---creat
 >[!div class="mx-imgBorder"]
 >![A screenshot showing deployment pipelines deployment rules greyed out.](media/deployment-pipelines-troubleshooting/rules-greyed-out.png)
 
+### Why is data source rules greyed out?
+
+If there are no data sources that a rule can be configured on, the data source rules option is greyed out.
+
 ### Does deployment pipelines support multi-geo?
 
 Multi-geo is supported. It may take longer to deploy content between stages in different geos.
