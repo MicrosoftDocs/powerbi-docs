@@ -27,7 +27,7 @@ It is recommended to install the Power BI Gateway on a separate machine from Pow
 ## Installing and configuring Power BI Report builder for ODBC data source support
 
 The latest Power BI Report Builder already contains the ODBC data extension and query designer, but both are not enabled by default. To configure it for ODBC data source support, follow the steps outlined below:
-1.	Install the latest [Power BI Report Builder](https://www.microsoft.com/en-us/download/details.aspx?id=58158).
+1.	Install the latest [Power BI Report Builder](https://www.microsoft.com/download/details.aspx?id=58158).
 2.	Download the **PBIReportBuilder.config** configuration file that enables support for the ODBC data extension and query designer from the same folder as this document.
 3.	Drop the downloaded configuration file into the Power BI Report Builder installation folder (default is `C:\Program Files (x86)\Power BI Report Builder`).
 4.	Install any ODBC drivers (32-bit) that you plan to use with Power BI Report Builder
@@ -36,13 +36,13 @@ After executing the steps above an `ODBC` data extension option will be availabl
 ## Installing the Power BI Gateway and configuring ODBC data sources
 
 To setup the Power BI Gateway for ODBC data sources:
-1.	Download the latest [Power BI Gateway](https://powerbi.microsoft.com/en-us/gateway).
+1.	Download the latest [Power BI Gateway](https://powerbi.microsoft.com/gateway).
     >[!NOTE]
     >Personal Gateways are not supported for Paginated Reports (as they require DirectQuery support).
-2.	Refer to the [documentation](https://docs.microsoft.com/en-us/power-bi/connect-data/service-gateway-onprem) for setting it up.
+2.	Refer to the [documentation](https://docs.microsoft.com/power-bi/connect-data/service-gateway-onprem) for setting it up.
 3.	Install any ODBC drivers (64-bit) that you plan to use on the Gateway machine.
 
-Please note that File DSNs are not supported. If you would like to use a DSN, you need to create a 64-bit [System DSN](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/odbc/dn170519(v=vs.85)) on the Gateway machine.
+Please note that File DSNs are not supported. If you would like to use a DSN, you need to create a 64-bit [System DSN](https://docs.microsoft.com/previous-versions/windows/desktop/odbc/dn170519(v=vs.85)) on the Gateway machine.
 
 To configure an ODBC data source in the [Manage Gateway] page of the Power BI Service, choose `ADD DATA SOURCE` and then select the `ODBC` Data Source Type:
 
