@@ -46,7 +46,7 @@ If [downstream inheritance]() is also enabled on the tenant, the sensitivity lab
 ### Limitations
 * Inheritance from data sources is not currently supported in Power BI Desktop. 
 * Inheritance from data sources is not supported for datasets located in classic workspaces.
-* Inheritance from data sources is supported only for datasets with enhanced metadata. See [Using enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata) for more information.
+* Inheritance from data sources is supported only for datasets with enhanced metadata. See [Using enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md) for more information.
 * Inheritance from data sources is supported only for datasets using the Import data connectivity mode. Live connection and DirectQuery connectivity is not supported.
 * Inheritance from data sources is not supported in connections via gateways or Azure Virtual Network (VNet).
 
