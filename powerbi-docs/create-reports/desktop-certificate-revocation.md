@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 03/03/2021
+ms.date: 03/10/2021
 LocalizationGroup: Create reports
 ---
 # Certificate revocation check, Power BI Desktop
@@ -34,6 +34,8 @@ You can enable or disable the check in the user interface in Power BI Desktop. O
 - **None**
 
 **Basic check** is the default selection.
+
+:::image type="content" source="media/desktop-certificate-revocation/desktop-check-certificate-revocation.png" alt-text="Check certification revocation dialog box":::
 
 ## Registry settings
 
