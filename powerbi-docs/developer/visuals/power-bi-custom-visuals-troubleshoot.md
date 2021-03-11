@@ -37,4 +37,4 @@ Feel free to contact the Power BI visuals support team (pbicvsupport@microsoft
 
 ## Next steps
 
-For more information, visit [Frequently asked questions about Power BI visuals](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals).
+For more information, visit [Frequently asked questions about Power BI visuals](power-bi-custom-visuals-faq.yml#organizational-power-bi-visuals).
