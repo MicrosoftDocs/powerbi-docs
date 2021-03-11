@@ -19,7 +19,7 @@ summary: |
     The admin portal enables managing Power BI visuals for your organization.
 
 sections:
-  - name:   
+  - name:  General
     questions:
       - question: |
           How can the admin manage organizational Power BI visuals?
