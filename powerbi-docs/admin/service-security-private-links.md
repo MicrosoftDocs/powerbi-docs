@@ -305,6 +305,7 @@ There are a few considerations to keep in mind while working with private links 
 * Usage metrics do *not* work when Private Links is enabled.
 * Publish to Web is not supported (and grayed out) when you enable **Block Public Internet access** in Power BI.
 * [Microsoft Information Protection (MIP)](/microsoft-365/compliance/information-protection?view=o365-worldwide) does not currently support network isolation. This means that in [Power BI Desktop](service-security-sensitivity-label-overview.md#sensitivity-labels-in-power-bi-desktop-preview) running in an isolated network, the Sensitivity button will be grayed out, label information will not appear, and decryption of *.pbix* files will fail.
+* Gateways enabled for Power BI private links will not work properly with non-Power BI scenarios. 
 
 ## Next steps
 
