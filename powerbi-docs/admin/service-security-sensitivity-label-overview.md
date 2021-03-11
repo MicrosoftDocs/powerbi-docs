@@ -101,7 +101,7 @@ The following image shows how a dataset's sensitivity label is automatically app
 
 ## Sensitivity label inheritance from data sources
 
-Power BI datasets that connect to sensitivity-labeled data in Azure Synapse Analytics (formerly SQL Data Warehouse) or Azure SQL Database can inherit those labels so that the data remains classified and secure when brought into Power BI. See [Sensitivity label inheritance from data sources](service-security-sensitivity-label-inheritance-from-data-sources.md) to learn how inheritance from data sources works and how to enable it for your organization.
+Power BI datasets that connect to sensitivity-labeled data in Azure Synapse Analytics (formerly SQL Data Warehouse) or Azure SQL Database can inherit those labels so that the data remains classified and secure when brought into Power BI. See [Sensitivity label inheritance from data sources](service-security-sensitivity-label-inheritance-from-data-sources.md#sensitivity-label-inheritance-from-data-sources) to learn how inheritance from data sources works and how to enable it for your organization.
 
 ## Sensitivity labels and protection on exported data
 
