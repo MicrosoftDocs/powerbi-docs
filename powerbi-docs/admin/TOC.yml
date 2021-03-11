@@ -31,7 +31,7 @@
       - name: "FAQ for Germany Cloud customers"
         href: service-govde-faq.md
     - name: "Frequently asked questions (FAQ)"
-      href: service-admin-faq.md
+      href: service-admin-faq.yml
     - name: "High availability and failover FAQ"
       href: service-admin-failover.md
     - name: Power BI Premium
