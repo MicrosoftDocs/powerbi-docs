@@ -21,7 +21,7 @@ The app features four dashboards:
 
 You can navigate between the dashboards using the navigation side pane or the buttons at the top the page.
 
-![Screenshot of stocks app.](media/service-connect-to-analyze-stocks/stocks-app.png)
+![Screenshot of stocks app.](media/service-connect-to-analyze-stocks/stocks-app1.png)
 
 ## ETF Dashboard
 
