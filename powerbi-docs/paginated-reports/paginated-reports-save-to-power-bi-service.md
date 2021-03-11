@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 01/25/2021
+ms.date: 03/10/2021
 ---
 
 # Publish a paginated report to the Power BI service
@@ -57,7 +57,7 @@ If the workspace doesn't have the diamond icon ![Power BI Premium capacity diamo
 
     ![Select parameters](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-parameters.png)
 
-6. If your report data source is on premises, read about how to [create a gateway](#create-a-gateway) in this article to access the data source.
+6. If your report data source is on premises, read about how to [connect to a gateway](#connect-to-a-gateway) in this article to access the data source.
 
 ## From the Power BI service, upload a paginated report
 
@@ -95,7 +95,7 @@ You can also start from the Power BI service and upload a paginated report.
  
     ![Select parameters](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-parameters.png)
 
-6. If your report data source is on premises, read about how to [create a gateway](#create-a-gateway) in this article to access the data source.
+6. If your report data source is on premises, read about how to [connect to a gateway](#connect-to-a-gateway) in this article to access the data source.
 
 ## Connect to a gateway
 
