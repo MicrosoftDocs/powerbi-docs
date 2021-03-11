@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 10/01/2020
+ms.date: 03/11/2021
 LocalizationGroup: Data from files
 ---
 # Dataflows limitations and considerations
@@ -35,7 +35,7 @@ More about supported Dataflows REST APIs can be found in the [REST API reference
 
 * Exporting and Importing a dataflow gives that dataflow a new ID
 
-* Importing dataflows that contain linked entities will not fix the existing references within the dataflow (these queries should be fixed manually before importing the dataflow)
+* Importing dataflows that contain linked tables will not fix the existing references within the dataflow (these queries should be fixed manually before importing the dataflow)
 
 * Dataflows can be overwritten with the *CreateOrOverwrite* parameter, if they have initially been created using the import API
 
@@ -43,9 +43,9 @@ More about supported Dataflows REST APIs can be found in the [REST API reference
 
 There are  limitations for Dataflows in shared capacities:
 
-* When refreshing Dataflows, timeouts in Shared are 2 hours per entity, and 3 hours per Dataflow
-* Linked entities cannot be created in shared Dataflows, although they can exist within the Dataflow as long as the *Load Enabled* property on the query is disabled
-* Computed entities cannot be created in shared Dataflows
+* When refreshing Dataflows, timeouts in Shared are 2 hours per table, and 3 hours per Dataflow
+* Linked tables cannot be created in shared Dataflows, although they can exist within the Dataflow as long as the *Load Enabled* property on the query is disabled
+* Computed tables cannot be created in shared Dataflows
 * AutoML and Cognitive services are not available in shared Dataflows
 * Incremental refresh does not work in shared Dataflows
 
@@ -55,21 +55,21 @@ Dataflows that exist in Premium have the following limitations and consideration
 
 **Refreshes and data considerations:**
 
-* When refreshing Dataflows, timeouts are 24 hours (no distinction for entities and/or dataflows)
+* When refreshing Dataflows, timeouts are 24 hours (no distinction for tables and/or dataflows)
 
 * Changing a dataflow from an incremental refresh policy to a normal refresh, or vice versa, will drop all data
 
 * Modifying a dataflow's schema will drop all data
 
-**Linked and Computed Entities:**
+**Linked and Computed tables:**
 
-* Linked entities can go down to a depth of 32 references
+* Linked tables can go down to a depth of 32 references
 
-* Cyclic dependencies of linked entities are not allowed
+* Cyclic dependencies of linked tables are not allowed
 
-* A linked entity can't be joined with a regular entity that gets its data from an on-premises data source
+* A linked table can't be joined with a regular table that gets its data from an on-premises data source
 
-* When a query (query *A*, for example) is used in the calculation of another query (query *B*) in dataflows, query *B* becomes a calculated entity. Calculated entities cannot refer to on-premises sources.
+* When a query (query *A*, for example) is used in the calculation of another query (query *B*) in dataflows, query *B* becomes a calculated table. Calculated tables cannot refer to on-premises sources.
 
 
 **Compute Engine:**
@@ -79,7 +79,7 @@ Dataflows that exist in Premium have the following limitations and consideration
   1. This only applied to the first dataflow that is on the compute engine, and reads data from the data source
   2. Subsequent dataflows, that use the source one will not incur the same penalty
 
-* Only certain operations make use of the compute engine, and only when used through a linked entity or as a computed entity. A full list of operations is available in [this blog post](http://petcu40.blogspot.com/2019/06/m-folding-in-enhanced-engine-of-power.html).
+* Only certain operations make use of the compute engine, and only when used through a linked table or as a computed table. A full list of operations is available in [this blog post](http://petcu40.blogspot.com/2019/06/m-folding-in-enhanced-engine-of-power.html).
 
 
 **Capacity Management:**
