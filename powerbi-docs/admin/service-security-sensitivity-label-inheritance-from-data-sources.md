@@ -13,11 +13,13 @@ LocalizationGroup: Data from files
 ---
 # Sensitivity label inheritance from data sources
 
-Power BI datasets that connect to sensitivity-labeled data in Azure Synapse Analytics (formerly SQL Data Warehouse) or Azure SQL Database can inherit those labels, so that the data remains classified and secure when brought into Power BI.
+Power BI datasets that connect to sensitivity-labeled data in supported data sources can inherit those labels, so that the data remains classified and secure when brought into Power BI.
+
+Currently supported data sources:
+* Azure Synapse Analytics (formerly SQL Data Warehouse)
+* Azure SQL Database
 
 To be operative, [sensitivity label inheritance from data sources must be enabled on the tenant]().
-
-If [downstream inheritance]() is also enabled on the tenant, the sensitivity label that a dataset inherits from a data source will automatically be propagated to the dataset's downstream content.
 
 ## Requirements
 * The data in the data source must be labeled with Microsoft Information Protection labels. This is accomplished using a two-step Purview flow:
