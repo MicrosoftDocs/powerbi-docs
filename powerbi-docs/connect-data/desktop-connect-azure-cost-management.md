@@ -50,12 +50,12 @@ To connect to a billing account, you need to retrieve your **Billing account ID*
 2.	Select your Billing profile. 
 3.	Under **Settings** in the menu, select **Properties** in the sidebar.
 4.	Under **Billing profile**, copy the **ID**. 
-    :::image type="content" source="media/desktop-connect-azure-cost-management/azure-cost-management-updates-02.png" alt-text="Screenshot of Cost management billing profile":::
+    :::image type="content" source="media/desktop-connect-azure-cost-management/product-updates-02.png" alt-text="Screenshot of Cost management billing profile":::
 5.	For **Choose Scope**, select **Manually Input Scope** and input the connection string as shown in the example below, replacing *{billingAccountId}* with the data copied from the previous steps. 
     ```/providers/Microsoft.Billing/billingAccounts/{billingAccountId}```
 6.	Enter the number of months and select **OK**.
 
-    :::image type="content" source="media/desktop-connect-azure-cost-management/azure-cost-management-updates-03.png" alt-text="Screenshot of Azure Cost Management with number of months input":::
+    :::image type="content" source="media/desktop-connect-azure-cost-management/product-updates-03.png" alt-text="Screenshot of Azure Cost Management with number of months input":::
 
 7.	When prompted, sign in with your Azure user account and password. You must have access to the Billing account scope to successfully access the billing data.
 
