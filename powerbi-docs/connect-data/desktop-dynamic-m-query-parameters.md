@@ -12,7 +12,7 @@ LocalizationGroup: Connect to data
 ---
 # Dynamic M query parameters in Power BI Desktop (preview)
 
-With **Dynamic M Query Parameters**, model authors can let **report viewers** to use filters or slicers to set the value(s) for an [M Query Parameter](/power-query/power-query-query-parameters), which can be especially useful for query performance optimizations. With Dynamic M Query Parameters, model authors have additional control over how filter selections get incorporated into DirectQuery source queries. 
+With **Dynamic M Query Parameters**, model authors can let **report viewers** to use filters or slicers to set the value(s) for an [M Query Parameter](/power-query/power-query-query-parameters), which can be especially useful for query performance optimizations. With Dynamic M Query Parameters, model authors have more control over how filter selections get incorporated into DirectQuery source queries. 
 
 When model authors understand the intended semantics of their filters, they often know how to write efficient queries against their data source, and can thus ensure filter selections get incorporated into source queries at the right point to achieve their intended results with improved performance.
 
@@ -147,9 +147,9 @@ There are some considerations and limitations to consider when using dynamic M q
 
 * A single parameter cannot be bound to multiple fields nor vice-versa.
 * The feature is only supported for M based data sources. The following DirectQuery sources are not supported:
-    * T-SQL based data sources: SQL Server, Azure SQL Database, Synapse SQL pools (aka Azure SQL Data Warehouse), and Synapse SQL OnDemand pools
+    * T-SQL based data sources: SQL Server, Azure SQL Database, Synapse SQL pools (such as Azure SQL Data Warehouse), and Synapse SQL OnDemand pools
     * Live connect data sources: Azure Analysis Services, SQL Server Analysis Services, Power BI Datasets
-    * Other unsupported data sources: Oracle, Teradata and Relational SAP Hana, PostgreSQL
+    * Other unsupported data sources: Oracle, Teradata, and Relational SAP Hana, PostgreSQL
     * Partially supported through XMLA / TOM endpoint programmability: SAP BW and SAP Hana 
 * [Aggregations](../transform-model/desktop-aggregations.md) are not supported with the feature
 

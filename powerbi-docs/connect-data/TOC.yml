@@ -25,8 +25,6 @@
       href: desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
     - name: "Analyze sales data from Excel and an OData feed"
       href: desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md
-    - name: "Analyze Facebook data"
-      href: desktop-tutorial-facebook-analytics.md
     - name: "Implement row-level security in an Analysis Services tabular model"
       href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
     - name: "Connect to a GitHub sample"
@@ -153,8 +151,6 @@
         href: desktop-sap-bw-connector.md
       - name: "Use OneDrive for Business links"
         href: desktop-use-onedrive-business-links.md
-      - name: "Third-party service: Use the Facebook connector"
-        href: service-facebook-connector.md
       - name: "Third-party service: Use the Google Analytics connector"
         href: service-google-analytics-connector.md
       - name: "Connect to Project Online data through Power BI Desktop"
