@@ -60,9 +60,10 @@ Premium Gen2 provides the following updates or improved experiences:
 Enable Premium Gen2 to take advantage of its updates. To enable Premium Gen2, take the following steps:
 
 1. In the admin portal, navigate to **Capacity settings**.
-2. Select **Power BI Premium**.
-3. A section appears titled **Premium Generation 2 (preview)**, and in that section is a slider to enable Premium Generation 2 (preview). 
-4. Move the slider to **Enabled**.
+1. Select **Power BI Premium**.
+1. If you have already allocated capacity, select it.
+1. A section appears titled **Premium Generation 2 (preview)**, and in that section is a slider to enable Premium Generation 2 (preview). 
+1. Move the slider to **Enabled**.
 
 The following image shows how to enable Premium Gen2. 
 
@@ -76,9 +77,11 @@ The following known limitations currently apply to Premium Gen2:
 
 1.    Premium Gen2 capacity utilization can't be tracked in the metrics app.
 
-2.  If you're using XMLA on Premium Gen2, make sure you're using the most recent versions of the [data modeling and management tools](service-premium-connect-tools.md#data-modeling-and-management-tools). 
+1. Premium Gen2 does not support customer-managed encryption keys for data at rest (BYOK). [Learn more about using your own keys (BYOK)](service-encryption-byok.md).
 
-3.  Analysis services features in Premium Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are:
+1.  If you're using XMLA on Premium Gen2, make sure you're using the most recent versions of the [data modeling and management tools](service-premium-connect-tools.md#data-modeling-and-management-tools). 
+
+1.  Analysis services features in Premium Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are:
 
     |Tool|Minimum version required|Estimated release date|
     |---|---|---|
@@ -103,7 +106,7 @@ In Gen2, there is no memory Limit for the capacity as a whole. Instead, individu
 
     The following table summarizes all the limitations that are dependent on the capacity size:
 
-    | **Capacity SKU** | **Size in vCores** | **Backend vCores** | **CPU time / minute** | **Memory per artifact\* [Gb]** | **Max memory per query\* [Gb]** | **DirectQuery\LC queries / min \*** |
+    | **Capacity SKU** | **Size in vCores** | **Backend vCores** | **CPU time / minute** | **Memory per artifact\* [Gb]** | **Max memory per query\* [Gb]** | **DirectQuery\LC queries / sec \*** |
     | --- | --- | --- | --- | --- | --- | --- |
     | **A1\EM1** | 1 | 0.5 | 30 | 3 | 1 | 3.75 |
     | **A2\EM2** | 2 | 1 | 60 | 6 | 2 | 7.5 |
@@ -350,7 +353,7 @@ To learn more, see [Power BI Report Server](../report-server/get-started.md).
 
 ## Unlimited content sharing
 
-With Premium, anyone, whether they're inside or outside your organization can view your Power BI content including paginated and interactive reports without purchasing individual licenses. 
+With P Premium SKUs, anyone, whether they're inside or outside your organization can view your Power BI content including paginated and interactive reports without purchasing individual licenses. P SKUs allow free Power BI users to consumer Power BI apps and shared content, in the Power BI service. EM Premium SKUs do not support unlimited content sharing, though they do support embedding in applications.
 
 ![Content sharing](media/service-premium-what-is/premium-sharing.png)
 
@@ -363,6 +366,9 @@ To learn more, see [Power BI licensing](service-admin-licensing-organization.md)
 Under the hood, the enterprise proven Microsoft **Analysis Services VertiPaq engine** powers Power BI Premium workspaces and datasets. Analysis Services provides programmability and client application and tool support through client libraries and APIs that support the open-standard XMLA protocol. By default, Power BI Premium capacity dataset workloads support *read-only* operations from Microsoft and third-party client applications and tools through an **XMLA endpoint**. Capacity admins can also choose to disable or allow *read/write* operations through the endpoint.
 
 With read-only access, Microsoft tools like SQL Server Management Studio (SSMS) and SQL Server Profiler, and third-party apps such as DAX Studio and data visualization applications, can connect to and query Premium datasets by using XMLA, DAX, MDX, DMVs, and Trace events. With read/write access, enterprise data modeling tools like Visual Studio with Analysis Services projects extension or the open source Tabular Editor can deploy tabular models as a dataset to a Premium workspace. And with tools like SSMS, admins can use Tabular Model Scripting Language (TMSL) to script metadata changes and advanced data refresh scenarios. 
+
+> [!CAUTION]
+> The [XMLA endpoint and 3rd party tools](troubleshoot-xmla-endpoint.md) enable organizations to create perspectives. Power BI does not honor perspectives when building reports on top of Live connect models or reports. Instead, Power BI points to the main model once published to the Power BI service, showing all elements in the data model. If your Azure Analysis Services model uses perspectives, you should not move or migrate those models to Power BI Premium. 
 
 To learn more, see [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md).
 

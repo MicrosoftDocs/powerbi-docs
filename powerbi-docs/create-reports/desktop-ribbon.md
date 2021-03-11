@@ -9,6 +9,7 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 02/24/2021
 LocalizationGroup: Connect to data
+ms.custom: video-jkqdyv7POq0
 ---
 # Use the ribbon in Power BI Desktop
 
@@ -23,9 +24,13 @@ The benefits of the ribbon are intended to make the experience across Power BI D
 
 These benefits can be grouped into the following categories:
 
-* **Search bar** - Beginning with the February 2021 release, the ribbon now includes a Search experience, similar to the search available in other Microsoft products. When you click the search bar, Power BI suggests actions based on the current state of your report. As you type, search results are updated and buttons provided to get help, or take next steps.
+* **Search bar** - Beginning with the February 2021 release, the ribbon now includes a Search experience, similar to the search available in other Microsoft products. When you click the search bar, Power BI suggests actions based on the current state of your report. As you type, search results are updated and buttons provided to get help, or take next steps. 
 
     ![New search bar](media/desktop-ribbon/desktop-ribbon-03.png)
+
+    Watch this video to see it in action.
+
+    > [!VIDEO <iframe width="560" height="315" src="https://www.youtube.com/embed/jkqdyv7POq0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]
 
 * **Improved look, feel, and organization** - icons and functionality in the updated Power BI Desktop ribbon are aligned to the look, feel, and organization of ribbon items found in Office applications.
 

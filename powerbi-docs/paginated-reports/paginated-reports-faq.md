@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 02/09/2021
+ms.date: 03/10/2021
 ---
 
 # Paginated reports in Power BI: FAQ 
@@ -62,7 +62,7 @@ Also, the audit logs provide the following events for paginated reports:
 
 ### Can I monitor this workload through the Premium Capacity Monitoring App?
 
-Yes, monitoring is available as a new tab with the same relevant details you have for your Power BI datasets.
+Yes, monitoring is available as a new tab with the same relevant details you have for your Power BI datasets. This app is not supported in Power BI Premium Gen2.
 
 ### Do I need a Pro license to create and publish paginated reports?
 
@@ -72,7 +72,7 @@ You can upload paginated reports to your My Workspace without a Pro license, pro
 
 You receive an error message, and you can't view your report until the workload is turned back on. You can still delete the report from the workspace.
 
-### What is the default memory for each of the Premium SKUs that support paginated reports?
+### What is the default memory for each of the Premium SKUs that support paginated reports in Premium Capacity?
 
 Default memory in each Premium SKU for paginated reports:
 
