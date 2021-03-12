@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 12/14/2020
+ms.date: 03/10/2021
 LocalizationGroup: Data refresh
 ---
 
@@ -87,6 +87,13 @@ This error can occur because of expired cached credentials. Clear your internet 
 ## Data refresh failure because of password change or expired credentials
 
 Data refresh can also fail due to expired cached credentials. Clear your internet browser cache by going signing into Power BI and going to `https://app.powerbi.com?alwaysPromptForContentProviderCreds=true`. This forces an update of your credentials.
+
+## Refresh a column of the ANY type containing TRUE/FALSE results in unexpected values
+
+When you create a report in Power BI Desktop that contains an ANY data type column, and that column contains TRUE/FALSE values, the values of that column can differ between the Power BI Desktop and the Power BI service after a refresh. In Power BI Desktop, the underlying engine converts the boolean values to strings, retaining TRUE or FALSE values. In the Power BI service, the underlying engine converts the values to objects, and subsequently converts the values to -1 or 0.
+
+Visuals created in Power BI Desktop using such columns may behave or appear as designed prior to a refresh event, but may change (due to TRUE/FALSE being converted to -1/0) after the refresh event.
+
 
 ## Next steps
 
