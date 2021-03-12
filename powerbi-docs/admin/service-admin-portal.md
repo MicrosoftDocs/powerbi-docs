@@ -174,7 +174,7 @@ The next few sections provide an overview of the different types of tenant setti
 
 ### Publish "Get Help" information
 
-:::image type="content" source="/media/service-admin-portal/publish-get-help.png" alt-text="Screen capture showing interface for Publish get help information.":::
+ :::image type="content" source="/media/service-admin-portal/publish-get-help.png" alt-text="Screen capture showing interface for Publish get help information.":::
 
 Admins can specify internal URLs to override the destination of links on the Power BI help menu and for license upgrades. If custom URLs are set, users in the organization go to internal help and support resources instead of the default destinations. The following resource destinations can be customized:
 
@@ -192,7 +192,7 @@ Mail-enabled security groups will receive email notifications if this tenant is 
 
 ### Allow users to try Power BI paid features
 
-:::image type="content" source="/media/service-admin-portal/allow-paid-features.png" alt-text="Screen capture showing Allow users to try Power BI paid features interface.":::
+ :::image type="content" source="/media/service-admin-portal/allow-paid-features.png" alt-text="Screen capture showing Allow users to try Power BI paid features interface.":::
 
 The setting to **Allow users to try Power BI paid features** is enabled by default. This setting increases your control over how users get license upgrades. In scenarios where you have blocked self-service purchase, this setting lets users use more features free for 60 days. Users who have a Power BI (free) license can start a Power BI Pro trial. Users with a Power BI Pro license can start a Power BI Premium Per User trial. The user's license upgrade experience depends on how you combine license settings. The table below shows how the upgrade experience is affected by different setting combinations:
 
