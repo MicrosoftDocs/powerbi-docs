@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/10/2019
+ms.date: 03/12/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to SAP HANA data sources by using DirectQuery in Power BI
@@ -71,10 +71,12 @@ There are restrictions in visuals when connecting to SAP HANA using DirectQuery 
 
 ## Treat SAP HANA as a relational source 
 
-When choosing to connect to SAP HANA as a relational source, some additional flexibility becomes available. For example, you can create calculated columns, include data from multiple SAP HANA views, and create relationships between the resulting tables. However, when using SAP HANA in this manner, it's important to understand certain aspects of how connections are treated, to ensure the following: 
+When choosing to connect to SAP HANA as a relational source, some additional flexibility becomes available. For example, you can create calculated columns, include data from multiple SAP HANA views, and create relationships between the resulting tables. However, using SAP HANA as a relational source can generate unexpected results due to how Power BI processes data received from SAP HANA, and because of how treats those connections. Power BI processes data from SAP HANA to ensure the following: 
 
-* The results are what you expect, particularly when the SAP HANA view contains non-additive measures (for example, distinct counts, or averages, rather than simple sums).
+* The results are what you expect when the SAP HANA view contains non-additive measures (for example, distinct counts, or averages, rather than simple sums).
 * The resulting queries are efficient
+
+When SAP HANA contains additive measures, however, aggregations occur that can affect resulting Power BI visuals. Let's take a look at how additive measures can be affected by how Power BI handles aggregations for SAP HANA additive measures, when SAP HANA is treated as a relational source.
 
 It's useful to start by clarifying the behavior of a relational source such as SQL Server, when the query defined in **Get Data** or **Query Editor** performs an aggregation. In the example that follows, a query defined in **Query Editor** returns the average price by *ProductID*.  
 
