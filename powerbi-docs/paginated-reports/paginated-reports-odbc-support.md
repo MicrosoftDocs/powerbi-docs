@@ -24,7 +24,7 @@ Data Source Name (DSN) and driver connection strings are both supported.
 
 ## Before you install the Power BI gateway
 
-We recommend installing the Power BI gateway on a separate machine from Power BI Report Builder or Power BI Desktop.  There are some scenarios where using the same machine might cause problems. For instance, DB2 doesn't allow 32-bit and 64-bit drivers to be installed side by side on the same machine.
+You need a Power BI gateway version February 2021 or later. We recommend installing the gateway on a separate machine from Power BI Report Builder or Power BI Desktop.  There are some scenarios where using the same machine might cause problems. For instance, DB2 doesn't allow 32-bit and 64-bit drivers to be installed side by side on the same machine.
 
 ## Install and configure Power BI Report builder for ODBC data source support
 
