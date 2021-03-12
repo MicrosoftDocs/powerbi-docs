@@ -1,6 +1,6 @@
 ---
-title: "Power BI Gateway and Report Builder support for ODBC data sources (Public Preview)"
-description: This article spells out how to configure ODBC data sources in the Power BI Gateway, and how to use ODBC data sources in Power BI Report Builder.
+title: "Power BI gateway and Report Builder support for ODBC data sources (preview)"
+description: This article spells out how to configure ODBC data sources in the Power BI gateway, and how to use ODBC data sources in Power BI Report Builder.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: swgupt
@@ -10,41 +10,49 @@ ms.topic: conceptual
 ms.date: 03/11/2021
 ---
 
-# Power BI Gateway and Report Builder support for ODBC data sources (Public Preview)
+# Power BI gateway and Report Builder support for ODBC data sources (preview)
 
 
 [!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
-This article spells out how to configure ODBC data sources in the Power BI Gateway, and how to use ODBC data sources in Power BI Report Builder.
+This article spells out how to configure ODBC data sources in the Power BI gateway, and how to use ODBC data sources in Power BI Report Builder.
 
-DSN and driver connection strings are both supported. Note that for Power BI Report Builder you need to install the 32-bit version of an ODBC driver, the Power BI Gateway requires the 64-bit version.
+Data Source Name (DSN) and driver connection strings are both supported. 
 
+>[!NOTE]
+>For Power BI Report Builder you need to install the 32-bit version of an ODBC driver. The Power BI Gateway requires the 64-bit version.
 
-## Before installing the Power BI Gateway
+## Before you install the Power BI gateway
 
-It is recommended to install the Power BI Gateway on a separate machine from Power BI Report Builder or Power BI Desktop.  There are some scenarios where using the same machine might cause problems. For instance, DB2 does not allow 32-bit and 64-bit drivers to be installed side-by-side on the same machine.
+We recommend installing the Power BI gateway on a separate machine from Power BI Report Builder or Power BI Desktop.  There are some scenarios where using the same machine might cause problems. For instance, DB2 doesn't allow 32-bit and 64-bit drivers to be installed side by side on the same machine.
 
-## Installing and configuring Power BI Report builder for ODBC data source support
+## Install and configure Power BI Report builder for ODBC data source support
 
-The latest Power BI Report Builder already contains the ODBC data extension and query designer, but both are not enabled by default. To configure it for ODBC data source support, follow the steps outlined below:
-1.	Install the latest [Power BI Report Builder](https://www.microsoft.com/download/details.aspx?id=58158).
-2.	Download the **PBIReportBuilder.config** configuration file that enables support for the ODBC data extension and query designer from the same folder as this document.
-3.	Drop the downloaded configuration file into the Power BI Report Builder installation folder (default is `C:\Program Files (x86)\Power BI Report Builder`).
-4.	Install any ODBC drivers (32-bit) that you plan to use with Power BI Report Builder
-After executing the steps above an `ODBC` data extension option will be available when creating a new data source in Power BI Report Builder.
+The latest version of Power BI Report Builder already contains the ODBC data extension and query designer, but neither are enabled by default. Follow these steps to configure it for ODBC data source support.
 
-## Installing the Power BI Gateway and configuring ODBC data sources
+1.	Install the latest version of [Power BI Report Builder](https://www.microsoft.com/download/details.aspx?id=58158).
+2.	Download the **PBIReportBuilder.config** configuration file, which enables support for the ODBC data extension and query designer.
+3.	Save the downloaded configuration file to the Power BI Report Builder installation folder. By default it's `C:\Program Files (x86)\Power BI Report Builder`).
+4.	Install the 32-bit ODBC driver that you plan to use with Power BI Report Builder.
 
-To setup the Power BI Gateway for ODBC data sources:
-1.	Download the latest [Power BI Gateway](https://powerbi.microsoft.com/gateway).
+    After you complete these steps, an `ODBC` data extension option will be available when you create a new data source in Power BI Report Builder.
+
+## Install the Power BI gateway and configure ODBC data sources
+
+Follow these steps to set up the Power BI gateway for ODBC data sources.
+
+1.	Download the latest [Power BI gateway](https://powerbi.microsoft.com/gateway).
+
     >[!NOTE]
-    >Personal Gateways are not supported for Paginated Reports (as they require DirectQuery support).
-2.	Refer to the [documentation](https://docs.microsoft.com/power-bi/connect-data/service-gateway-onprem) for setting it up.
-3.	Install any ODBC drivers (64-bit) that you plan to use on the Gateway machine.
+    >Personal gateways aren't supported for paginated reports, because they require DirectQuery support.
 
-Please note that File DSNs are not supported. If you would like to use a DSN, you need to create a 64-bit [System DSN](https://docs.microsoft.com/previous-versions/windows/desktop/odbc/dn170519(v=vs.85)) on the Gateway machine.
+2.	Refer to the article [What is an on-premises data gateway?](../connect-data/service-gateway-onprem.md) for information on setting it up.
+3.	Install the 64-bit ODBC driver that you plan to use on the gateway machine.
 
-To configure an ODBC data source in the [Manage Gateway] page of the Power BI Service, choose `ADD DATA SOURCE` and then select the `ODBC` Data Source Type:
+    >[!NOTE]
+    >File DSNs aren't supported. If you'd like to use a DSN, create a 64-bit [System DSN](https://docs.microsoft.com/previous-versions/windows/desktop/odbc/dn170519(v=vs.85)) on the Gateway machine.
+
+To configure an ODBC data source in the **Manage Gateway** page of the Power BI Service, select **Add data source**>  **ODBC Data Source Type:
 
 :::image type="content" source="media/paginated-reports-odbc-support/configure-datasource.png" alt-text="Add data source":::
 
@@ -52,7 +60,7 @@ Next you paste in the connection string (System DSN or driver) and select an aut
 -	Basic
 -	Windows
 
-When you hit the `Add` button the Power BI Service will connect to the ODBC data source using the supplied connection string and credentials to validate that the Gateway is able to connect.
+When you select the **Add** button, the Power BI service connects to the ODBC data source using the supplied connection string and credentials to validate that the Gateway is able to connect.
 
 Please note that for the public preview the Anonymous authentication method is not supported. While you will be able to select it for an ODBC data source, you will receive an error like the one below while rendering the report:
 
