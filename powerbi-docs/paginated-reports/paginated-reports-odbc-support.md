@@ -7,7 +7,7 @@ ms.reviewer: swgupt
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 03/11/2021
+ms.date: 03/12/2021
 ---
 
 # Power BI gateway and Report Builder support for ODBC data sources (preview)
@@ -32,10 +32,10 @@ The latest version of Power BI Report Builder already contains the ODBC data ext
 
 1.	Install the latest version of [Power BI Report Builder](https://www.microsoft.com/download/details.aspx?id=58158).
 2.	Download the **PBIReportBuilder.config** configuration file, which enables support for the ODBC data extension and query designer.
-3.	Save the downloaded configuration file to the Power BI Report Builder installation folder. By default it's `C:\Program Files (x86)\Power BI Report Builder`).
+3.	Save the downloaded configuration file to the Power BI Report Builder installation folder. By default it's `C:\Program Files (x86)\Power BI Report Builder`.
 4.	Install the 32-bit ODBC driver that you plan to use with Power BI Report Builder.
 
-    After you complete these steps, an `ODBC` data extension option will be available when you create a new data source in Power BI Report Builder.
+    After you complete these steps, when you create a new data source in Power BI Report Builder you'll see an **ODBC** data extension option.
 
 ## Install the Power BI gateway and configure ODBC data sources
 
@@ -50,43 +50,51 @@ Follow these steps to set up the Power BI gateway for ODBC data sources.
 3.	Install the 64-bit ODBC driver that you plan to use on the gateway machine.
 
     >[!NOTE]
-    >File DSNs aren't supported. If you'd like to use a DSN, create a 64-bit [System DSN](https://docs.microsoft.com/previous-versions/windows/desktop/odbc/dn170519(v=vs.85)) on the Gateway machine.
+    >File DSNs aren't supported. If you'd like to use a DSN, create a 64-bit [System DSN](https://docs.microsoft.com/previous-versions/windows/desktop/odbc/dn170519(v=vs.85)) on the gateway machine.
 
-To configure an ODBC data source in the **Manage Gateway** page of the Power BI Service, select **Add data source**>  **ODBC Data Source Type:
+1. To configure an ODBC data source in the **Manage Gateway** page of the Power BI Service, select **Add data source** >  **ODBC Data Source Type**:
 
-:::image type="content" source="media/paginated-reports-odbc-support/configure-datasource.png" alt-text="Add data source":::
+    :::image type="content" source="media/paginated-reports-odbc-support/configure-datasource.png" alt-text="Add data source":::
 
-Next you paste in the connection string (System DSN or driver) and select an authentication method. For ODBC data sources the following authentication methods are supported:
--	Basic
--	Windows
+1. Paste in the connection string (System DSN or driver) and select an authentication method. For ODBC data sources the following authentication methods are supported:
 
-When you select the **Add** button, the Power BI service connects to the ODBC data source using the supplied connection string and credentials to validate that the Gateway is able to connect.
+    - Basic
+    - Windows
 
-Please note that for the public preview the Anonymous authentication method is not supported. While you will be able to select it for an ODBC data source, you will receive an error like the one below while rendering the report:
+1. When you select the **Add** button, the Power BI service connects to the ODBC data source using the supplied connection string and credentials to validate that the gateway is able to connect.
 
-:::image type="content" source="media/paginated-reports-odbc-support/anonymouse-error.png" alt-text="Anonymouse authentication is not supported.":::
+    >[!NOTE]
+    >For the public preview, the Anonymous authentication method isn't supported. You can select it for an ODBC data source,  but you receive an "Unexpected error occurred" like the following one when rendering the report:
 
-We are re-evaluating this limitation for the public preview.
+    :::image type="content" source="media/paginated-reports-odbc-support/anonymouse-error.png" alt-text="Anonymouse authentication is not supported.":::
 
-Here are some ODBC Connection String examples for a System DSN as well as a variety of ODBC drivers:
--	"dsn=Northwind"
--	"driver={Microsoft Access Driver (*.mdb, *.accdb)};dbq=c:\Data\Northwind.mdb"
--	"driver={SnowflakeDSIIDriver};warehouse=DEMO_WH;server=<span>org.snowflakecomputing</span>.com"
--	"driver={Amazon Redshift (x64)};server=<span>org.us-west-2.redshift.amazonaws</span>.com;database=dev"
-Please note that certain drivers and configurations might not support all authentication methods.
+    We are re-evaluating this limitation for the public preview.
 
-In addition to creating ODBC data sources in the Gateway up-front you can create ODBC data sources on-demand when you upload a paginated report. If an ODBC data sources doesn’t exist, then the Upload process will prompt you to create one:
+### ODBC connection string examples
+
+Here are some ODBC connection string examples for a System DSN, as well as a variety of ODBC drivers:
+
+- "dsn=Northwind"
+- "driver={Microsoft Access Driver (*.mdb, *.accdb)};dbq=c:\Data\Northwind.mdb"
+- "driver={SnowflakeDSIIDriver};warehouse=DEMO_WH;server=<span>org.snowflakecomputing</span>.com"
+- "driver={Amazon Redshift (x64)};server=<span>org.us-west-2.redshift.amazonaws</span>.com;database=dev"
+
+Certain drivers and configurations might not support all authentication methods.
+
+In addition to creating ODBC data sources in the Gateway up front, you can create ODBC data sources on demand when you upload a paginated report. If an ODBC data source doesn’t exist, the Upload process prompts you to create one:
 
 :::image type="content" source="media/paginated-reports-odbc-support/gateway-binding.png" alt-text="Create data source prompt.":::
 
-## Known Issues
+## Known issues
 
-In general, all the limitations that apply to using the ODBC data extension in Power BI Report Builder apply to using the ODBC data extensions in the Power BI Gateway as well.
+In general, all the limitations that apply to using the ODBC data extension in Power BI Report Builder apply to using the ODBC data extensions in the Power BI gateway as well.
 
-Some of the known limitations are:
--	For most ODBC drivers DateTime parameters require changes to the Command text in the RDL dataset to cast a DateTime parameter value to the appropriate format for a given ODBC data source.  
-Example expression:  
-```"SELECT * FROM DEMO_DB.PUBLIC.DATES WHERE DATE < DATE('" & Format(Parameters!Date.Value, "yyyy-MM-dd") & "')"```
+Here are some of the known limitations:
 
--	Any special data types exposed by a given ODBC driver/ backend that are not simply mapped to an <span>ADO.Net</span> data type are not supported. One example for this is the Snowflake Array data type.
--	Scenarios where ODBC drivers use stored procedures with out parameters are generally not supported. However, the Amazon Redshift driver has in/out parameters that are supported.
+- For most ODBC drivers DateTime parameters require changes to the Command text in the RDL dataset to cast a DateTime parameter value to the appropriate format for a given ODBC data source.  
+
+    Example expression:  
+    ```"SELECT * FROM DEMO_DB.PUBLIC.DATES WHERE DATE < DATE('" & Format(Parameters!Date.Value, "yyyy-MM-dd") & "')"```
+
+- Any special data types exposed by a given ODBC driver or backend that aren't simply mapped to an <span>ADO.Net</span> data type aren't supported. One example is the Snowflake Array data type.
+- Scenarios where ODBC drivers use stored procedures without parameters are generally not supported. However, the Amazon Redshift driver has in/out parameters that are supported.
