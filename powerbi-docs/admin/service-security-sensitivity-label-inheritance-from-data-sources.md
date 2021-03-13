@@ -11,7 +11,7 @@ ms.custom:
 ms.date: 03/11/2021
 LocalizationGroup: Data from files
 ---
-# Sensitivity label inheritance from data sources
+# Sensitivity label inheritance from data sources (preview)
 
 Power BI datasets that connect to sensitivity-labeled data in supported data sources can inherit those labels, so that the data remains classified and secure when brought into Power BI.
 
