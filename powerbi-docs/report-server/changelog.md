@@ -21,7 +21,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 - **Power BI Report Server**
     - *Version: 1.10.7737.32652 (Build 15.0.1105.230), Released: March 12, 2021*
         - Bug fixes
-            - Fixed issue with URL filters causing PBIX repotst to not load.
+            - Fixed issue with URL filters causing PBIX reports to not load.
     - *Version: 1.10.7698.27886 (Build 15.0.1105.195), Released: January 28, 2021*
         - Features
             - New Icons releate to Power BI and Power BI reports.
