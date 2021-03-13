@@ -50,7 +50,7 @@
         href: service-premium-per-user-faq.md
     - name: Information protection
       items:
-      - name: Sensitivity label inheritance from data sources
+      - name: Sensitivity label inheritance from data sources (preview)
         href: service-security-sensitivity-label-inheritance-from-data-sources.md
   - name: How to
     items: 
