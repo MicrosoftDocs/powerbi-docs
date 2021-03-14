@@ -16,7 +16,7 @@ The stock market app shows you multiple KPIs to start your analytics journey in 
 The app features four dashboards:
 * **My Dashboard**: Shows percent of change over time for companies you select. 
 * **Stock Performance Analysis**: Enables detailed analysis of selected stocks with visuals for closing trends, volume, OHLC, and Bollinger bands.
-* **Stocks and ETFs Comparison**: Provides normalized charts make it easily for you to compare stocks and EFTs.
+* **Stocks and ETFs Comparison**: Provides a normalized chart to make it easily for you to compare stocks and EFTs.
 * **Sector-wise distribution**: Allows you to break out stock performance by sector.
 
 You can navigate between the dashboards using the navigation side pane or the buttons at the top the page.
@@ -25,19 +25,17 @@ You can navigate between the dashboards using the navigation side pane or the bu
 
 ## My Dashboard
 
-My dashboard shows you the percent of change over time for companies you select. You can choose as many stocks and ETFs as you want. 
-
-Above the dashboard you can see the XXX of four major indexes.
+My dashboard shows you the percent of change over time for companies you select. You can choose as many stocks and ETFs as you want.
 
 ![Screenshot of My Dashboard.](media/service-connect-to-analyze-stocks/stocks-app-my-dashboard.png)  
 
 ## Stock Performance Analysis
 
-Stock Performance Analysis dashboard shows you important KPI’s about selected stock, such as the previous day's close, close, open, high, and low. At the bottom of each chart is a slider you can use to zoom in for more granularity.
+The Stock Performance Analysis dashboard shows you important KPI’s about selected stock, such as the previous day's close, close, open, high, and low. At the bottom of each chart is a slider you can use to zoom in for more granularity.
 
 ### Closing trend
 
-You can see the closing trend for the selected stock. You can adjust the time period to help you see in which part of the year the stock gained or lost value. Use the slider at the bottom of the chart to zoom in for more granularity.
+You can see the closing trend for the selected stock. You can adjust the time period to help you see in which part of the selected time period the stock gained or lost value. Hover over the chart to see the closing value at that point. Use the slider at the bottom of the chart to zoom in for more granularity.
 
 ![Screenshot of closing trends of selected stocks](media/service-connect-to-analyze-stocks/stocks-performance-closing-trend.png)  
 
@@ -49,7 +47,7 @@ You can look at the volume of selected stock by scrolling down to the next visua
 
 ### OHLC chart
 
-OHLC Charts are highly useful since they show four major datapoints for a given stock at same time. So, in the next visual down the page you will see OHLC visual which shows you opening, closing, high, and low of the stock selected. You can also look deeper into the data by changing the moving average. Use the slider at the bottom of the chart to zoom in for more granularity.
+OHLC Charts are highly useful since they show four major datapoints for a given stock at same time. So, in the next visual down the page you will see OHLC visual which shows you opening, closing, high, and low of the stock selected. You can also look deeper into the data by changing the moving average using the slider above the chart. Use the slider at the bottom of the chart to zoom in for more granularity.
 
 ![Screenshot of OHLC](media/service-connect-to-analyze-stocks/stocks-performance-ohlc.png)
 
@@ -62,6 +60,9 @@ Bollinger bands use complex mathematics to show the trends. You can see a number
 ### Stocks and ETFs Comparison
 
 The Stocks and ETFs Comparison dashboard shows you a chart that makes it easy to compare selected stocks and ETFs. You can choose as many stocks and ETFs to compare as you like. Use the slider at the bottom of the chart to zoom in for more granularity.
+
+![Screenshot of Stocks and ETFs Comparison dashboard.](media/service-connect-to-analyze-stocks/stocks-performance-bollinger.png) 
+
 
 ## Sectorwise distribution
 
