@@ -65,9 +65,13 @@ To embed Power BI content in an *embed for your organization* solution, follow t
 
 2. [Get the embedding parameter values](#step-2---get-the-embedding-parameter-values).
 
-3. [Enable server side authentication](#step-3---enable-server-side-authentication).
+3. [Add the required NuGet packages](#step-3---add-the-required-nuget-packages)
 
-4. [Build your app's client side](#step-4---build-your-app's-client-side).
+4. [Enable server side authentication](#step-4---enable-server-side-authentication).
+
+5. [Build your app's client side](#step-5---build-your-app's-client-side).
+
+6. [Run your application](#step-6---run-your-application)
 
 ## Step 1 - Configure your Azure AD app
 
@@ -81,10 +85,16 @@ To configure your Azure AD app, follow the instructions in [Configure your Azure
 
 To embed your report, you'll need the following values:
 
+* [Domain](#domain-and-tenant-id)
+* [Tenant ID](#domain-and-tenant-id)
 * [Client ID](#client-id)
 * [Client secret](#client-secret)
 * [Workspace ID](#workspace-id)
 * [Report ID](#report-id)
+
+### Domain and tenant ID
+
+If you don't know what's your domain or tenant ID, see [Find the Microsoft Azure AD tenant ID and primary domain name](/partner-center/find-ids-and-domain-names#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name).
 
 ### Client ID
 
@@ -102,7 +112,29 @@ To embed your report, you'll need the following values:
 
 [!INCLUDE[Get the report ID](../../includes/embed-tutorial-report-id.md)]
 
-## Step 3 - Enable server-side authentication
+## Step 3 - Add the required NuGet packages
+
+Before you can start, you'll need to add the `Microsoft.Identity.Web`, and `Microsoft.PowerBi.Api` NuGet packages to your app.
+
+Add the NuGet packages listed below to your app:
+
+* In **VS Code**, open a terminal and type in the code below.
+
+* In **Visual studio**, navigate to *Tools* > *NuGet Package Manager* > *Package Manager Consol* and type in the code below.
+
+```powershell
+dotnet add package Microsoft.Identity.Web -v 0.3.0-preview
+dotnet add package Microsoft.Identity.Web.UI -v 0.3.0-preview
+dotnet add package Microsoft.PowerBi.Api
+```
+
+If your app previously used `Microsoft.AspNetCore` to authenticate, remove this package from your project by typing:
+
+```powershell
+dotnet remove package Microsoft.AspNetCore.Authentication.AzureAD.UI
+```
+
+## Step 4 - Enable server-side authentication
 
 Enable server-side authentication in your app, by creating or modifying the files in the table below.
 
@@ -111,6 +143,7 @@ Enable server-side authentication in your app, by creating or modifying the file
 |Startup.cs           |Initialize the `Microsoft.Identity.Web` authentication service |
 |appsettings.json     |Authentication details |
 |PowerBiServiceApi.cs |Get the Azure AD token and embedding metadata    |
+|HomeController.cs    |Pass embedding data as a model to the view |
 
 ### Configure your startup file to support `Microsoft.Identity.Web`
 
@@ -152,24 +185,24 @@ namespace UserOwnsData {
       services.AddScoped (typeof (PowerBiServiceApi));
 
       var mvcBuilder = services.AddControllersWithViews (options => {
-        var policy = new AuthorizationPolicyBuilder ()
-          .RequireAuthenticatedUser ()
-          .Build ();
+        var policy = new AuthorizationPolicyBuilder()
+          .RequireAuthenticatedUser()
+          .Build();
         options.Filters.Add (new AuthorizeFilter (policy));
       });
 
-      mvcBuilder.AddMicrosoftIdentityUI ();
+      mvcBuilder.AddMicrosoftIdentityUI();
 
-      services.AddRazorPages ();
+      services.AddRazorPages();
 
     }
   }
 }
 ```
 
-### Create an appsettings.json server-side authentication file
+### Create an authentication details file
 
-In this tutorial, the server-side authentication file contains sensitive information such as *client ID* and *client secret*. For security reasons, it's not recommended to keep this information in the settings file. When embedding in your application, consider a more secure method of keeping this information.
+In this tutorial, the `appsettings.json` file contains sensitive information such as *client ID* and *client secret*. For security reasons, it's not recommended to keep this information in the settings file. When embedding in your application, consider a more secure method such as [Azure Key Vault](/azure/key-vault/general/overview) for keeping this information.
 
 1. In your project, create a new file and call it **appsettings.json**.
 
@@ -200,10 +233,10 @@ In this tutorial, the server-side authentication file contains sensitive informa
     }
     ```
 
-3. Fill in the embedding parameter values obtained from [Step 2 - Get the embedding parameter values](#step-2---get-the-embedding-parameter-values). If you don't know what's your domain or tenant ID, see [Find the Microsoft Azure AD tenant ID and primary domain name](/partner-center/find-ids-and-domain-names#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name).
+3. Fill in the embedding parameter values obtained from [Step 2 - Get the embedding parameter values](#step-2---get-the-embedding-parameter-values).
 
-    * `Domain`
-    * `TenantId`
+    * `Domain` - [Domain and tenant ID](#domain-and-tenant-id)
+    * `TenantId` - [Domain and tenant ID](#domain-and-tenant-id)
     * `ClientId` - [Client ID](#client-id)
     * `ClientSecret` - [Client secret](#client-secret)
 
@@ -212,7 +245,7 @@ In this tutorial, the server-side authentication file contains sensitive informa
 
 ### Get the Azure AD access token and call the Power BI service
 
-In order to embed Power BI content (such as reports and dashboards), your app needs to get an [Azure AD token](embed-tokens.md#azure-ad-token). To get the token, you'll need a [configuration object](/javascript/api/overview/powerbi/embed-report#embed-an-existing-report).
+In order to embed Power BI content (such as reports and dashboards), your app needs to get an [Azure AD token](embed-tokens.md#azure-ad-token). To get the token, you'll need a [configuration object](/javascript/api/overview/powerbi/embed-report#embed-a-new-report).
 
 The code in this section uses the .NET Core dependency injection pattern. When your class needs to use a service, you can add a constructor parameter for that service and the .NET Core runtime takes care of passing the service instance at run time. In this case, the constructor is injecting an instance of the .NET Core configuration service using the `IConfiguration` parameter, which is used to retrieve the `PowerBi:ServiceRootUrl` configuration value from **appsettings.json**. The `ITokenAcquisition` parameter, which is named `tokenAcquisition` holds a reference to the Microsoft authentication service provided by the `Microsoft.Identity.Web` library and will be used to acquire access tokens from Azure AD.
 
@@ -252,11 +285,7 @@ The `RequiredScopes` field holds a string array containing a set of [delegated p
     		}
     
     		public static readonly string[] RequiredScopes = new string[] {
-    			"https://analysis.windows.net/powerbi/api/Group.Read.All",
-    			"https://analysis.windows.net/powerbi/api/Report.ReadWrite.All",
-    			"https://analysis.windows.net/powerbi/api/Dataset.ReadWrite.All",
-    			"https://analysis.windows.net/powerbi/api/Content.Create",
-    			"https://analysis.windows.net/powerbi/api/Workspace.ReadWrite.All"
+    			"https://analysis.windows.net/powerbi/api/Report.Read.All"
     		};
     
         // A method to get the Azure AD token (also known as 'access token')
@@ -290,16 +319,6 @@ The `RequiredScopes` field holds a string array containing a set of [delegated p
     }
     ```
 
-## Step 4 - Build your app's client side
-
-For client-side implementation, you'll need to create or modify the files in the table below
-
-|File                 |Use  |
-|---------------------|-----|
-|HomeController.cs    |Pass embedding data to a model–view–controller (MVC) |
-|embed.js             |Embed your Power BI report |
-|Embed.cshtml         |Create a container for your embedded report |
-
 ### Modify the HomeController.cs file
 
 In this code example, you'll use dependency injection. As you registered the `PowerBiServiceApi` class as a service by calling `services.AddScoped` in the `ConfigureServices` method. You can add a `PowerBiServiceApi` parameter to the constructor, and the .NET Core runtime will take care of creating a `PowerBiServiceApi` instance and passing it to the constructor.
@@ -324,8 +343,8 @@ namespace UserOwnsData.Controllers {
         }
 
         [AllowAnonymous]
-        public IActionResult Index () {
-            return View ();
+        public IActionResult Index() {
+            return View();
         }
 
         public async Task<IActionResult> Embed() {
@@ -337,12 +356,21 @@ namespace UserOwnsData.Controllers {
 
         [AllowAnonymous]
         [ResponseCache (Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error () {
+        public IActionResult Error() {
             return View (new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }
 ```
+
+## Step 5 - Build your app's client side
+
+For client-side implementation, you'll need to create or modify the files in the table below
+
+|File                 |Use  |
+|---------------------|-----|
+|embed.js             |Contains the client-side JavaScript code |
+|Embed.cshtml         |Contains your app's document object model (DOM), and a DIV for embedding the report |
 
 ### Create a container for your embedded report
 
@@ -425,13 +453,17 @@ The `powerbi.embed` function uses the `models` configuration object to embed you
         let heightBuffer = 12;
         let newHeight = $(window).height() - ($("header").height() + heightBuffer);
         $("#embed-container").height(newHeight);
-        $(window).resize(function () {
+        $(window).resize(function() {
             var newHeight = $(window).height() - ($("header").height() + heightBuffer);
             $("#embed-container").height(newHeight);
         });
         
     });
     ```
+
+## Step 6 - Run your application
+
+After you've made all the adjustments listed in this tutorial, you're ready to run your application. Execute your application and experiment with the way your Power BI report is embedded.
 
 ## Next steps
 
