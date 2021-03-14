@@ -37,17 +37,27 @@ Stock Performance Analysis dashboard shows you important KPI’s about selected 
 
 ### Closing trend
 
-You can see the closing trend for the selected stock. You can adjust the time period to help you see in which part of the year the stock gained or lost value.
+You can see the closing trend for the selected stock. You can adjust the time period to help you see in which part of the year the stock gained or lost value. Use the slider underneath the chart to zoom for more granularity.
 
 ![Screenshot of closing trends of selected stocks](media/service-connect-to-analyze-stocks/stocks-performance-closing-trend.png)  
 
 ### Volume
 
-You can look at the volume of selected stock by scrolling down to the next visual. You can hover at a time interval to see the volume of stock at that part of the year.
+You can look at the volume of selected stock by scrolling down to the next visual. You can hover at a time interval to see the volume of stock at that point. Use the slider underneath the chart to zoom for more granularity. 
 
 ![Screenshot of volume of selected stocks](media/service-connect-to-analyze-stocks/stocks-performance-volume.png)
 
+### OHLC chart
 
+OHLC Charts are highly useful since they show four major datapoints for a given stock at same time. So, in the next visual down the page you will see OHLC visual which shows you opening, closing, high, and low of the stock selected. You can also look deeper into the data by changing the moving average. 
+
+![Screenshot of OHLC](media/service-connect-to-analyze-stocks/stocks-performance-ohlc.png)
+
+### Bollinger band
+
+Bollinger bands use complex mathematics to show the trends. You can see a number of KPI’s which were in OHLC, and along with that you can see another three lines. The middle line shows the moving average. The top line is shifted up by certain number of standard deviation and the bottom line is shifted down by a standard deviation.
+
+![Screenshot of bollinger band.](media/service-connect-to-analyze-stocks/stocks-performance-bollinger.png) 
 
 
 The Stocks and ETFs Comparison dashboard shows you two normalized charts that make it easy to compare selected stocks and ETFs.
