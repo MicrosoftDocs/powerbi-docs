@@ -29,81 +29,39 @@ My dashboard shows you the percent of change over time for companies you select.
 
 Above the dashboard you can see the XXX of four major indexes.
 
-![Screenshot of ETF dashboard graph view.](media/service-connect-to-analyze-stocks/stocks-app-my-dashboard.png)  
+![Screenshot of My Dashboard.](media/service-connect-to-analyze-stocks/stocks-app-my-dashboard.png)  
 
 ## Stock Performance Analysis
 
-Stock Performance Analysis dashboard shows you important KPI’s about selected stock, such as the previous day's close, close, open, high, and low.
+Stock Performance Analysis dashboard shows you important KPI’s about selected stock, such as the previous day's close, close, open, high, and low. At the bottom of each chart is a slider you can use to zoom in for more granularity.
 
 ### Closing trend
 
-You can see the closing trend for the selected stock. You can adjust the time period to help you see in which part of the year the stock gained or lost value. Use the slider underneath the chart to zoom for more granularity.
+You can see the closing trend for the selected stock. You can adjust the time period to help you see in which part of the year the stock gained or lost value. Use the slider at the bottom of the chart to zoom in for more granularity.
 
 ![Screenshot of closing trends of selected stocks](media/service-connect-to-analyze-stocks/stocks-performance-closing-trend.png)  
 
 ### Volume
 
-You can look at the volume of selected stock by scrolling down to the next visual. You can hover at a time interval to see the volume of stock at that point. Use the slider underneath the chart to zoom for more granularity. 
+You can look at the volume of selected stock by scrolling down to the next visual. You can hover at a time interval to see the volume of stock at that point. Use the slider at the bottom of the chart to zoom in for more granularity. 
 
 ![Screenshot of volume of selected stocks](media/service-connect-to-analyze-stocks/stocks-performance-volume.png)
 
 ### OHLC chart
 
-OHLC Charts are highly useful since they show four major datapoints for a given stock at same time. So, in the next visual down the page you will see OHLC visual which shows you opening, closing, high, and low of the stock selected. You can also look deeper into the data by changing the moving average. 
+OHLC Charts are highly useful since they show four major datapoints for a given stock at same time. So, in the next visual down the page you will see OHLC visual which shows you opening, closing, high, and low of the stock selected. You can also look deeper into the data by changing the moving average. Use the slider at the bottom of the chart to zoom in for more granularity.
 
 ![Screenshot of OHLC](media/service-connect-to-analyze-stocks/stocks-performance-ohlc.png)
 
 ### Bollinger band
 
-Bollinger bands use complex mathematics to show the trends. You can see a number of KPI’s which were in OHLC, and along with that you can see another three lines. The middle line shows the moving average. The top line is shifted up by certain number of standard deviation and the bottom line is shifted down by a standard deviation.
+Bollinger bands use complex mathematics to show the trends. You can see a number of KPI’s which were in OHLC, and along with that you can see another three lines. The middle line shows the moving average. The top line is shifted up by certain number of standard deviation and the bottom line is shifted down by a standard deviation. Use the slider at the bottom of the chart to zoom in for more granularity.
 
 ![Screenshot of bollinger band.](media/service-connect-to-analyze-stocks/stocks-performance-bollinger.png) 
 
+### Stocks and ETFs Comparison
 
-The Stocks and ETFs Comparison dashboard shows you two normalized charts that make it easy to compare selected stocks and ETFs.
-
-![Screenshot of stock comparison dashboard select button.](media/service-connect-to-analyze-stocks/stocks-comparison-dashboard.png)
-
-To use this page, first select the stocks you wish to compare. 
-1. Click the **Select** button
-    ![Screenshot of stock comparison dashboard clear selections.](media/service-connect-to-analyze-stocks/stocks-comparison-dashboard-select.png)
-1. On the **Select Stocks** page that appears, click **Clear** to remove any previous selections, and then select the stocks you wish to compare
-    ![Screenshot of stock comparison dashboard select.](media/service-connect-to-analyze-stocks/stocks-comparison-dashboard-select-clear.png)
-1. Click **Apply**
-
-After you have selected the stocks you're interested in, use the dropdown arrow to select the particular stocks you wish to compare.
-
-![Screenshot of stock comparison dashboard select dropdown.](media/service-connect-to-analyze-stocks/stocks-comparison-dashboard-select-dropdown.png)
-
-## Stock Performance Analysis
-
- Stock Performance Analysis dashboard shows you important KPI’s about selected stock, such as the previous day's close, close, open, high, and low. Select the dropdown to choose the stock you want to see from among the stocks you've selected for analysis. You will see that the value changes after clicking on the stock of your choice.
-
-![Screenshot of stock performance analysis select.](media/service-connect-to-analyze-stocks/stocks-performance-select.png)
- 
-### Closing trend
-
-You can see the closing trend for the selected stock, and you can choose to switch it to month view or year view by clicking on the buttons at the top left of the page. Having a year view will help you see in which part of the year the stock gained or lost value.
-
-![Screenshot of closing trends of selected stocks](media/service-connect-to-analyze-stocks/stocks-performance-closing-trend.png)  
-
-### Volume
-
-You can look at the volume of selected stock by scrolling down to the next visual. You can hover at a time interval to see the volume of stock at that part of the year.
-
-![Screenshot of volume of selected stocks](media/service-connect-to-analyze-stocks/stocks-performance-volume.png)
- 
-### OHLC chart
-
-OHLC Charts are highly useful since they show four major datapoints for a given stock at same time. So, in the next visual down the page you will see OHLC visual which shows you opening, closing, high, and low of the stock selected. You can also look deeper into the data by changing the moving average. 
-
-![Screenshot of OHLC](media/service-connect-to-analyze-stocks/stocks-performance-ohlc.png)
-
-### Bollinger band
-
-Bollinger bands use complex mathematics to show the trends. You can see a number of KPI’s which were in OHLC, and along with that you can see another three lines. The middle line shows the moving average. The top line is shifted up by certain number of standard deviation and the bottom line is shifted down by a standard deviation.
-
-![Screenshot of bollinger band.](media/service-connect-to-analyze-stocks/stocks-performance-bollinger.png) 
+The Stocks and ETFs Comparison dashboard shows you a chart that makes it easy to compare selected stocks and ETFs. You can choose as many stocks and ETFs to compare as you like. Use the slider at the bottom of the chart to zoom in for more granularity.
 
 ## Sectorwise distribution
 
