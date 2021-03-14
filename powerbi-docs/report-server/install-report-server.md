@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 01/16/2020
+ms.date: 03/14/2021
 ---
 
 # Install Power BI Report Server
