@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 02/09/2021
+ms.date: 03/14/2021
 LocalizationGroup: Connect to services
 ---
 # Analyze popular stocks with Power BI
@@ -63,7 +63,7 @@ The Stocks and ETFs Comparison dashboard shows you a chart that makes it easy to
 
 ![Screenshot of Stocks and ETFs Comparison dashboard.](media/service-connect-to-analyze-stocks/stocks-comparison-dashboard.png) 
 
-## Sectorwise distribution
+## Sector-wise distribution
 
 On the sector-wise distribution page, you see the various stocks and the market they belong to. If you click on any of the sectors, the stocks get filtered out, and the stocks belonging to the selected sector will start appearing. 
 
