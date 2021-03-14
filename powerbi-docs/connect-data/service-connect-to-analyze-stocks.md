@@ -23,27 +23,32 @@ You can navigate between the dashboards using the navigation side pane or the bu
 
 ![Screenshot of stocks app.](media/service-connect-to-analyze-stocks/stocks-app1.png)
 
-## ETF Dashboard
+## My Dashboard
 
-The ETF dashboard has visuals showing the closing trends for four major indexes. 
-* **Nasdaq**: The NASDAQ Composite Index measures the change in more than 3,000 stocks traded on the NASDAQ exchange.
-* **S&P 500**: S&P 500 is regarded as the best single gauge of large-cap U.S. equities.
-* **Dow Jones**: The Dow Jones shows you the market growth of leaders of the IT industry, such as Microsoft. The closing trend of Dow Jones signifies at which trend have the stocks under this index have closed by the end of day.
-* **Russell 2000**: Russel 2000 is the most common benchmark for mutual funds. The Russell 2000 closing trend visual can be used provide investment guidance about more than 2000 low-range stocks.
+My dashboard shows you the percent of change over time for companies you select. You can choose as many stocks and ETFs as you want. 
 
-A running banner at the top of the dashboard shows you the current day's close and the price change from the previous days close for the four indexes shown on the page.
+Above the dashboard you can see the XXX of four major indexes.
 
-The default view - graph view - helps you to understand how drastically the trend has changed over time. You can use the time scale buttons at the top left of the dashboard to choose to see the trend for a week, month or a year. Hover the pointer over the chart to get the exact data point of a specific day.
+![Screenshot of ETF dashboard graph view.](media/service-connect-to-analyze-stocks/stocks-app-my-dashboard.png)  
 
-![Screenshot of ETF dashboard graph view.](media/service-connect-to-analyze-stocks/etf-dashboard-graph.png)  
+## Stock Performance Analysis
 
-On the x-axis you see the time period and on y-axis you see the closing value.
+Stock Performance Analysis dashboard shows you important KPI’s about selected stock, such as the previous day's close, close, open, high, and low.
 
-You can also switch to a candlestick chart by clicking on the toggle switch at the top right of the dashboard. In candlestick view you can see the open, high, low, and close prices for each data point. Hover the pointer over the chart to get the exact data point of a specific day.
+### Closing trend
 
-![Screenshot of ETF dashboard candlestick view.](media/service-connect-to-analyze-stocks/etf-dashboard-candlestick.png)
+You can see the closing trend for the selected stock. You can adjust the time period to help you see in which part of the year the stock gained or lost value.
 
-## Stocks and ETFs Comparison
+![Screenshot of closing trends of selected stocks](media/service-connect-to-analyze-stocks/stocks-performance-closing-trend.png)  
+
+### Volume
+
+You can look at the volume of selected stock by scrolling down to the next visual. You can hover at a time interval to see the volume of stock at that part of the year.
+
+![Screenshot of volume of selected stocks](media/service-connect-to-analyze-stocks/stocks-performance-volume.png)
+
+
+
 
 The Stocks and ETFs Comparison dashboard shows you two normalized charts that make it easy to compare selected stocks and ETFs.
 
