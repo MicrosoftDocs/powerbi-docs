@@ -47,13 +47,13 @@ You can look at the volume of selected stock by scrolling down to the next visua
 
 ### OHLC chart
 
-OHLC Charts are highly useful since they show four major datapoints for a given stock at same time. So, in the next visual down the page you will see OHLC visual which shows you opening, closing, high, and low of the stock selected. You can also look deeper into the data by changing the moving average using the slider above the chart. Use the slider at the bottom of the chart to zoom in for more granularity.
+OHLC Charts are highly useful since they show four major datapoints for a given stock at the same time. You can also look deeper into the data by changing the moving average using the slider above the chart. Use the slider at the bottom of the chart to zoom in for more granularity.
 
 ![Screenshot of OHLC](media/service-connect-to-analyze-stocks/stocks-performance-ohlc.png)
 
 ### Bollinger band
 
-Bollinger bands use complex mathematics to show the trends. You can see a number of KPI’s which were in OHLC, and along with that you can see another three lines. The middle line shows the moving average. The top line is shifted up by certain number of standard deviation and the bottom line is shifted down by a standard deviation. Use the slider at the bottom of the chart to zoom in for more granularity.
+Bollinger bands use complex mathematics to show the trends. You can see a number of KPI’s which were in OHLC, and along with that you see another three lines. The middle line shows the moving average. The top line is shifted up by certain number of standard deviation and the bottom line is shifted down by a standard deviation. Use the slider at the bottom of the chart to zoom in for more granularity.
 
 ![Screenshot of bollinger band.](media/service-connect-to-analyze-stocks/stocks-performance-bollinger.png) 
 
@@ -75,10 +75,9 @@ You can then hover over the stock to see the important KPI’s, such as previous
 
 You can scroll down to see all of the stocks in that category.
  
-To see the distribution of market for different sectors we have the “Sector-wise distribution” visual which shows from top to down the sectors having the highest difference in their closing price from last day.
+To see the distribution of market for different sectors we have the “Sector-wise distribution” visual which shows from top to bottom the sectors having the highest difference in their closing price from the previous day.
 
 ![Screenshot of distribution of market for different sectors](media/service-connect-to-analyze-stocks/stocks-comparison-based-on-sector.png)
-
 
 ## Next steps
 
