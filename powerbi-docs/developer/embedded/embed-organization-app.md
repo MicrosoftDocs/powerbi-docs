@@ -114,7 +114,7 @@ If you don't know what's your domain or tenant ID, see [Find the Microsoft Azure
 
 ## Step 3 - Add the required NuGet packages
 
-Before you can start, you'll need to add the `Microsoft.Identity.Web`, and `Microsoft.PowerBi.Api` NuGet packages to your app.
+Before you can start, you'll need to add the `Microsoft.Identity.Web`, and `Microsoft.PowerBI.Api` NuGet packages to your app.
 
 Add the NuGet packages listed below to your app:
 
@@ -125,7 +125,7 @@ Add the NuGet packages listed below to your app:
 ```powershell
 dotnet add package Microsoft.Identity.Web -v 0.3.0-preview
 dotnet add package Microsoft.Identity.Web.UI -v 0.3.0-preview
-dotnet add package Microsoft.PowerBi.Api
+dotnet add package Microsoft.PowerBI.Api
 ```
 
 If your app previously used `Microsoft.AspNetCore` to authenticate, remove this package from your project by typing:
@@ -219,7 +219,7 @@ In this tutorial, the `appsettings.json` file contains sensitive information suc
             "CallbackPath": "/signin-oidc",
             "SignedOutCallbackPath": "/signout-callback-oidc"
         },
-        "PowerBI": {
+        "PowerBi": {
             "ServiceRootUrl": "https://api.powerbi.com"
         },
         "Logging": {
@@ -249,7 +249,7 @@ In order to embed Power BI content (such as reports and dashboards), your app ne
 
 The code in this section uses the .NET Core dependency injection pattern. When your class needs to use a service, you can add a constructor parameter for that service and the .NET Core runtime takes care of passing the service instance at run time. In this case, the constructor is injecting an instance of the .NET Core configuration service using the `IConfiguration` parameter, which is used to retrieve the `PowerBi:ServiceRootUrl` configuration value from **appsettings.json**. The `ITokenAcquisition` parameter, which is named `tokenAcquisition` holds a reference to the Microsoft authentication service provided by the `Microsoft.Identity.Web` library and will be used to acquire access tokens from Azure AD.
 
-The `RequiredScopes` field holds a string array containing a set of [delegated permissions](/azure/active-directory/develop/v2-permissions-and-consent) supported by the Power BI service API. When your application calls across the network to acquire an Azure AD token, it will pass this set of delegated permissions so that Azure AD can include them in the access token it returns.
+The `RequiredScopes` field holds a string array containing a set of [delegated permissions](/azure/active-directory/develop/v2-permissions-and-consent) supported by the Power BI service API. Your app users will need to grant consent for the app to use the [requested permissions](embed-tokens.md#embed-for-your-organization). When your application calls across the network to acquire an Azure AD token, it will pass this set of delegated permissions so that Azure AD can include them in the access token it returns.
 
 1. In your app's project, create a new folder titled **Services**.
 
@@ -463,7 +463,9 @@ The `powerbi.embed` function uses the `models` configuration object to embed you
 
 ## Step 6 - Run your application
 
-After you've made all the adjustments listed in this tutorial, you're ready to run your application. Execute your application and experiment with the way your Power BI report is embedded.
+After you've made all the adjustments listed in this tutorial, you're ready to run your application. Execute your application and experiment with the way your Power BI report is embedded. You can use the [Power BI embedded analytics Client APIs](/javascript/api/overview/powerbi/) to enhance your app using client side APIs.
+
+When your app is ready, you can [move your embedded app to production](move-to-production.md).
 
 ## Next steps
 
