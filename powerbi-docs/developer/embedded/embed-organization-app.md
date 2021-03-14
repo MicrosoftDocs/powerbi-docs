@@ -69,7 +69,7 @@ To embed Power BI content in an *embed for your organization* solution, follow t
 
 4. [Enable server side authentication](#step-4---enable-server-side-authentication).
 
-5. [Build your app's client side](#step-5---build-your-app's-client-side).
+5. [Build your app's client side](#step-5---build-your-apps-client-side).
 
 6. [Run your application](#step-6---run-your-application)
 
