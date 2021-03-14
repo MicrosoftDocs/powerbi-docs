@@ -1,6 +1,6 @@
 ---
-title: Conditional formatting in Power BI embedded analytics for better embedded BI insights
-description: Learn how to apply conditional formatting to your Power BI visual project. Enable better embedded BI insights using Power BI embedded analytics.
+title: Conditional formatting in Power BI embedded analytics
+description: Learn how to apply conditional formatting to your Power BI visual project.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 10/27/2020
+ms.date: 03/14/2021
 ---
 
 # Add conditional formatting
@@ -119,6 +119,15 @@ case 'colorSelector':
 
 ```
 
+## Limitations
+
+Conditional formatting isn't supported for the following visuals:
+
+* Matrix table based visuals
+
+* Visuals with series
+
 ## Next steps
 
-Review the [DataViewUtils](utils-dataview.md) article.
+>[!div class="nextstepaction"]
+>[DataViewUtils](utils-dataview.md)
