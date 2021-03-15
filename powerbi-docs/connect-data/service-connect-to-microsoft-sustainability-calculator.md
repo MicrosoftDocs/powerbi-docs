@@ -124,17 +124,19 @@ You’ll need your Azure enrollment number. If you don’t have it, ask your org
 
    **EA customers**
 
-   1. Under **Parameters**, enter your enrollment number. For more information about obtaining your enrollment number, see [Find your company’s enrollment number](#find-your-companys-enrollment-number).
+   1. Under **EnrollmentIDorBillingAccountID**, enter your enrollment number. For more information about obtaining your enrollment number, see [Find your company’s enrollment number](#find-your-companys-enrollment-number).
 
    2. Under **AgreementType**, select **Enrollment Number**.
-   
+
       ![EA customers connect to Microsoft Sustainability Calculator](media/service-connect-to-microsoft-sustainability-calculator/connect-ea.png)
 
    **MCA/CSP customers**
 
-   1. Under **Parameters**, enter your billing account ID in the following format:
+   1. Under **EnrollmentIDorBillingAccountID**, enter your billing account ID in the following format:
 
       /providers/Microsoft.Billing/billingAccounts/*BillingAccountID*
+
+      For example: /providers/Microsoft.Billing/billingAccounts/\*\*\*\*\*\*\*:\*\*\*\*\*\*\*
 
       For more information about obtaining your billing account ID, see [Find your company's billing account ID](#find-your-companys-billing-account-id).
 
