@@ -28,14 +28,10 @@ You need a Power BI gateway version February 2021 or later. We recommend install
 
 ## Install and configure Power BI Report builder for ODBC data source support
 
-The latest version of Power BI Report Builder already contains the ODBC data extension and query designer, but neither are enabled by default. Follow these steps to configure it for ODBC data source support.
+The latest version of Power BI Report Builder already contains the ODBC data extension and query designer.
 
 1.	Install the latest version of [Power BI Report Builder](https://www.microsoft.com/download/details.aspx?id=58158).
-2.	Download the **PBIReportBuilder.config** configuration file, which enables support for the ODBC data extension and query designer.
-3.	Save the downloaded configuration file to the Power BI Report Builder installation folder. By default it's `C:\Program Files (x86)\Power BI Report Builder`.
-4.	Install the 32-bit ODBC driver that you plan to use with Power BI Report Builder.
-
-    After you complete these steps, when you create a new data source in Power BI Report Builder you'll see an **ODBC** data extension option.
+2.	Install the 32-bit ODBC driver that you plan to use with Power BI Report Builder.
 
 ## Install the Power BI gateway and configure ODBC data sources
 
@@ -64,7 +60,7 @@ Follow these steps to set up the Power BI gateway for ODBC data sources.
 1. When you select the **Add** button, the Power BI service connects to the ODBC data source using the supplied connection string and credentials to validate that the gateway is able to connect.
 
     >[!NOTE]
-    >For the public preview, the Anonymous authentication method isn't supported. You can select it for an ODBC data source,  but you receive an "Unexpected error occurred" like the following one when rendering the report:
+    >For the public preview, the Anonymous authentication method isn't supported. You can select it for an ODBC data source, but you receive an "Unexpected error occurred" like the following one when rendering the report:
 
     :::image type="content" source="media/paginated-reports-odbc-support/anonymouse-error.png" alt-text="Anonymouse authentication is not supported.":::
 
