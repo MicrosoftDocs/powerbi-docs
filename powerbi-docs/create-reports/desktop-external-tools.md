@@ -13,7 +13,7 @@ LocalizationGroup: Create reports
 
 # External tools in Power BI Desktop
 
-Power BI has a vibrant community of BI professionals and developers. A vital part of that community are developers that create free tools that use Power BI and Analysis Services APIs to extend and integrate with Power BI Desktop's data modeling and reporting features. There are several different types of external tools:
+Power BI has a vibrant community of BI professionals and developers. A vital part of that community are contributors that create free tools that use Power BI and Analysis Services APIs to extend and integrate with Power BI Desktop's data modeling and reporting features. There are several different types of external tools:
 
 **Semantic modeling** - Open-source tools such as DAX Studio, ALM Toolkit, Tabular Editor, and Metadata Translator extend Power BI Desktop functionality for specific data modeling scenarios such as DAX query and expression optimization, application lifecycle management (ALM), and metadata translation.
 
@@ -37,15 +37,15 @@ There are many external tools out there. Here are some of the most popular and b
 |---------|---------|
 |PowerBI.tips - Business Ops      |   An easy to use deployment tool for adding external tools extensions to Power BI Desktop. The Business Ops goal is to provide a one stop shop for installing all the latest versions of external tools. To learn more, go to the [PowerBI.tips - Business Ops](https://powerbi.tips/product/business-ops/) website.      |
 |Tabular Editor     |   Model creators can easily build, maintain, and manage tabular models using an intuitive and lightweight editor. A hierarchical view shows all objects in your tabular model organized by display folders, with support for multi-select property editing and DAX syntax highlighting. To learn more, go to [tabulareditor.com](https://tabulareditor.com/).       |
-|DAX Studio      | A feature rich tool for DAX authoring, diagnosis, performance tuning, and analysis. Features include object browsing, integrated tracing, query execution breakdowns with detailed statistics, DAX syntax highlighting and formatting. To get the latest, go to [DAX Studio](https://github.com/DaxStudio/DaxStudio) on GitHub.         |
-|ALM Toolkit     |    A schema compare tool for Power BI models and datasets, used for application lifecycle management (ALM) scenarios. You can perform straightforward deployment across environments and retain incremental refresh historical data. You can diff and merge metadata files, branches, and repos. You can also reuse common definitions between datasets. To get the latest, go to [alm-toolkit.com](http://alm-toolkit.com/).      |
+|DAX Studio      | A feature-rich tool for DAX authoring, diagnosis, performance tuning, and analysis. Features include object browsing, integrated tracing, query execution breakdowns with detailed statistics, DAX syntax highlighting and formatting. To get the latest, go to [DAX Studio](https://github.com/DaxStudio/DaxStudio) on GitHub.         |
+|ALM Toolkit     |   A schema compare tool for Power BI models and datasets, used for application lifecycle management (ALM) scenarios. You can perform straightforward deployment across environments and retain incremental refresh historical data. You can diff and merge metadata files, branches, and repos. You can also reuse common definitions between datasets. To get the latest, go to [alm-toolkit.com](http://alm-toolkit.com/).      |
 |Metadata Translator      |    Streamlines localization of Power BI models and datasets. The tool can automatically translate captions, descriptions, and display folder names of tables, columns, measures, and hierarchies by using the machine translation technology of Azure Cognitive Services. You can also export and import translations via Comma Separated Values (.csv) files for convenient bulk editing in Excel or a localization tool. To get the latest, go to [Metadata Translator](https://github.com/microsoft/Analysis-Services/tree/master/MetadataTranslator) on GitHub.    |
 
 ## External tools ribbon
 
-The **External Tools** ribbon provides easy access to external tools that have been installed locally and registered with Power BI Desktop. When launched from the External Tools ribbon, Power BI Desktop passes the name and port number of its internal data model engine instance to the tool, as well as the current model name. The tool then automatically connects, providing a seamless connection experience.  
+The **External Tools** ribbon provides easy access to external tools that have been installed locally and registered with Power BI Desktop. When launched from the External Tools ribbon, Power BI Desktop passes the name and port number of its internal data model engine instance to the tool, and the current model name. The tool then automatically connects, providing a seamless connection experience.  
 
-:::image type="content" source="media/desktop-external-tools/external-tools-ribbon.png" alt-text="The external tools ribbon in Power BI Desktope":::
+:::image type="content" source="media/desktop-external-tools/external-tools-ribbon.png" alt-text="The external tools ribbon in Power BI Desktop":::
 
 ### EnableExternalTools registry key
 
@@ -66,19 +66,19 @@ When Power BI Desktop launches Analysis Services as its analytical data engine, 
 
 :::image type="content" source="media/desktop-external-tools/external-tool-arch.png" alt-text="Esternal tool architecture":::
 
-With the Analysis Services Server name, port number, and model name, the tool uses Analysis Services client libraries to establish a connection to the model, retrieve metadata, and execute DAX or MDX queries. Whenever an external data modeling tool updates the metadata, Power BI Desktop synchronizes the changes so that the Power BI Desktop user interface reflects the current state of the model accurately. However, there are some limits to the synchronization capabilities which are described later in [Data modeling operations](#data-modeling-operations).
+With the Analysis Services Server name, port number, and model name, the tool uses Analysis Services client libraries to establish a connection to the model, retrieve metadata, and execute DAX or MDX queries. Whenever an external data modeling tool updates the metadata, Power BI Desktop synchronizes the changes so that the Power BI Desktop user interface reflects the current state of the model accurately. There are however some limits to the synchronization capabilities that are described later in [Data modeling operations](#data-modeling-operations).
 
 ## Data modeling operations
 
-External data modeling tools can apply modifications and have Power BI synchronize those changes with the report canvas. This is so those modifications are consistently applied in Power BI visuals. For example, external data modeling tools can override the original format string expression of a measure, and edit any of the measure properties including KPIs and detail rows. External tools can also create new roles for object and row-level security, and add translations.
+External data modeling tools can apply modifications and have Power BI synchronize those changes with the report canvas. This synchronization is so those modifications are consistently applied in Power BI visuals. For example, external data modeling tools can override the original format string expression of a measure, and edit any of the measure properties including KPIs and detail rows. External tools can also create new roles for object and row-level security, and add translations.
 
 ### Supported write operations
 
-- Define and edit [measures](analysis-services/tabular-models/measures-ssas-tabular?view=power-bi-premium-current&preserve-view=true) for calculations, including format string, KPI, and detail rows settings.
-- Add [calculation groups](analysis-services/tabular-models/calculation-groups?view=power-bi-premium-current&preserve-view=true) for calculation reusability in complex models. 
-- Create [perspectives](analysis-services/tabular-models/perspectives-ssas-tabular?view=power-bi-premium-current&preserve-view=true) to define focused, business-domain specific views of dataset metadata.
-- Apply [metadata translations](analysis-services/tabular-models/translations-in-tabular-models-analysis-services?view=power-bi-premium-current&preserve-view=true) to support multi-language versions within a single dataset.
-- Add dataset roles for [row-level security (RLS)](../guidance/rls-guidance.md) and [object-level security (OLS)](analysis-services/tabular-models/object-level-security?view=power-bi-premium-current&preserve-view=true) rules to restrict data access.
+- Define and edit [measures](/analysis-services/tabular-models/measures-ssas-tabular?view=power-bi-premium-current&preserve-view=true) for calculations, including format string, KPI, and detail rows settings.
+- Add [calculation groups](/analysis-services/tabular-models/calculation-groups?view=power-bi-premium-current&preserve-view=true) for calculation reusability in complex models. 
+- Create [perspectives](/analysis-services/tabular-models/perspectives-ssas-tabular?view=power-bi-premium-current&preserve-view=true) to define focused, business-domain specific views of dataset metadata.
+- Apply [metadata translations](/analysis-services/tabular-models/translations-in-tabular-models-analysis-services?view=power-bi-premium-current&preserve-view=true) to support multi-language versions within a single dataset.
+- Add dataset roles for [row-level security (RLS)](../guidance/rls-guidance.md) and [object-level security (OLS)](/analysis-services/tabular-models/object-level-security?view=power-bi-premium-current&preserve-view=true) rules to restrict data access.
 
 ### Data modeling limitations
 
@@ -162,7 +162,7 @@ Read-Host -Prompt 'Press [Enter] to close this window'
 
 ### Icon data URIs
 
-The iconData element takes a data URI without the **data:** prefix. For example, the data URI of a 1-pixel magenta png image is:
+The iconData element takes a data URI without the **data:** prefix. For example, the data URI of a one pixel magenta png image is:
 
 `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsEAAA7BAbiRa+0AAAANSURBVBhXY/jH9+8/AAciAwpql7QkAAAAAElFTkSuQmCC`
 
@@ -194,7 +194,5 @@ if (userClickedOK == true)
 
 ## See also
 
-You might also be interested in the following:
-
-* [Client libraries for connecting to Analysis Services](analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true)  
-* [Tabular Object Model (TOM)](analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current)  
+* [Client libraries for connecting to Analysis Services](/analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true)  
+* [Tabular Object Model (TOM)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current&preserve-view=true)  
