@@ -108,9 +108,15 @@ If you don't know what's your domain or tenant ID, see [Find the Microsoft Azure
 
 [!INCLUDE[Get the workspace ID](../../includes/embed-tutorial-workspace-id.md)]
 
+>[!NOTE]
+>To get the workspace ID programmatically, use the [Get Report In Group](/rest/api/power-bi/reports/getreportingroup) API.
+
 ### Report ID
 
 [!INCLUDE[Get the report ID](../../includes/embed-tutorial-report-id.md)]
+
+>[!NOTE]
+>To get the report ID programmatically, use the [Get Report In Group](/rest/api/power-bi/reports/getreportingroup) API.
 
 ## Step 3 - Add the required NuGet packages
 
