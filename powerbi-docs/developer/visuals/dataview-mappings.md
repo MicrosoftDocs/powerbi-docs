@@ -67,7 +67,7 @@ You can drag multiple fields into each data role. In this example, you limit the
 
 ```json
 "conditions": [
-    { "category": { "max": 1 }, "y": { "max": 2 } },
+    { "category": { "max": 1 }, "y": { "max": 2 } }
 ]
 ```
 
