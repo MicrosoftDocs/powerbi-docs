@@ -38,7 +38,7 @@ To access the Microsoft Sustainability Calculator, you’ll need the following i
 This procedure applies to EA customers only.
 
 1. Sign into the [Azure Enterprise portal](https://ea.azure.com) as an admin.
-2. Select **Active Directory** or **Manage** on the left-hand nav bar. Your company’s enrollment number will display.
+2. Select **Active Directory** or **Manage** on the left-hand navigation bar. Your company’s enrollment number will display.
 
    ![Find enrollment number](media/service-connect-to-microsoft-sustainability-calculator/enrollment-number.png)
 
@@ -48,8 +48,9 @@ This procedure applies to MCA/CSP customers only.
 
 1. In the [Azure portal](https://portal.azure.com), navigate to **Cost Management + Billing**.
 2. Select your billing account.
-3. Under **Settings**, select **Properties**.
-4. Your billing account ID displays under **Billing account**.
+3. Under **Settings**, select **Properties**. Your billing account ID will display under **Billing account**.
+
+   ![Find billing account ID](media/service-connect-to-microsoft-sustainability-calculator/billing-account-id.png)
 
 ## Sustainability Calculator Release January 2020
 
@@ -124,7 +125,10 @@ You’ll need your Azure enrollment number. If you don’t have it, ask your org
    **EA customers**
 
    1. Under **Parameters**, enter your enrollment number. For more information about obtaining your enrollment number, see [Prerequisites](#prerequisites).
+
    2. Under **AgreementType**, select **Enrollment Number**.
+   
+      ![EA customers connect to Microsoft Sustainability Calculator](media/service-connect-to-microsoft-sustainability-calculator/connect-ea.png)
 
    **MCA/CSP customers**
 
@@ -135,6 +139,9 @@ You’ll need your Azure enrollment number. If you don’t have it, ask your org
       For more information about obtaining your billing account ID, see [Prerequisites](#prerequisites).
 
    2. Under **AgreementType**, select **Manually Input Scope**.
+
+      ![MCA/CSP customers connect to Microsoft Sustainability Calculator](media/service-connect-to-microsoft-sustainability-calculator/connect-mca-csp.png)
+
 
 4. Connect your account:
 
