@@ -192,7 +192,7 @@ There are two primary reasons why customer emissions from Microsoft aren’t zer
 
 **How am I supposed to use this data, and where do I report it?**
 
-Your emissions can be reported as part of your company's scope 3 indirect carbon emissions. Scope 3 emissions are often disclosed in sustainability reports, CDP climate change, and other reporting outlets. In addition to the emissions totals, the emissions savings provide a clear example of how your company's decision to use Microsoft Azure services is contributing to global emissions reductions. To contextualize, the app indicates the equivalent vehicle miles avoided corresponding to the reduction in GHG emissions, based on EPA’s equivalency calculator factors as of January 2020.
+Your emissions can be reported as part of your company's Scope 3 indirect carbon emissions. Scope 3 emissions are often disclosed in sustainability reports, CDP climate change, and other reporting outlets. In addition to the emissions totals, the emissions savings provide a clear example of how your company's decision to use Microsoft Azure services is contributing to global emissions reductions. To contextualize, the app indicates the equivalent vehicle miles avoided corresponding to the reduction in GHG emissions, based on EPA’s equivalency calculator factors as of January 2020.
 
 **What can I do to reduce emissions further?**
 
