@@ -25,7 +25,6 @@ To be operative, [sensitivity label inheritance from data sources must be enable
 * The data in the data source must be labeled with Microsoft Information Protection labels. This is accomplished using a two-step Purview flow:
     1. [Automatically apply sensitivity labels to your data](/azure/purview/create-sensitivity-label).
     1. [Classify your Azure SQL data using Azure Purview labels](/azure/sql-database/scripts/sql-database-import-purview-labels).
-
 * The scope of the labels must be **Files and emails** and **Azure Purview assets**. See [Extending sensitivity labels to Azure Purview](/azure/purview/create-sensitivity-label#extending-sensitivity-labels-to-azure-purview) and [Creating new sensitivity labels or modifying existing labels](/azure/purview/create-sensitivity-label#creating-new-sensitivity-labels-or-modifying-existing-labels).
 * [Sensitivity labels must be enabled in Power BI](service-security-enable-data-sensitivity-labels.md).
 * The **[Apply sensitivity labels from data sources to their data in Power BI (preview)](service-admin-portal.md#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview)** tenant admin setting must be enabled.
