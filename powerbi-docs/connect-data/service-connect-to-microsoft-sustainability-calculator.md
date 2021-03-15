@@ -142,7 +142,6 @@ You’ll need your Azure enrollment number. If you don’t have it, ask your org
 
       ![MCA/CSP customers connect to Microsoft Sustainability Calculator](media/service-connect-to-microsoft-sustainability-calculator/connect-mca-csp.png)
 
-
 4. Connect your account:
 
    > [!NOTE]
