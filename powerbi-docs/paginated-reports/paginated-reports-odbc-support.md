@@ -62,7 +62,7 @@ Follow these steps to set up the Power BI gateway for ODBC data sources.
     >[!NOTE]
     >For the public preview, the Anonymous authentication method isn't supported. You can select it for an ODBC data source, but you receive an "Unexpected error occurred" like the following one when rendering the report:
 
-    :::image type="content" source="media/paginated-reports-odbc-support/anonymouse-error.png" alt-text="Anonymouse authentication is not supported.":::
+    :::image type="content" source="media/paginated-reports-odbc-support/anonymouse-error.png" alt-text="Anonymous authentication isn't supported.":::
 
 ### ODBC connection string examples
 
