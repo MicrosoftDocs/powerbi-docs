@@ -13,7 +13,14 @@ LocalizationGroup: Create reports
 
 # External tools in Power BI Desktop
 
-Power BI has a vibrant community of BI professionals and developers. A vital part of that community are contributors that create free tools that use Power BI and Analysis Services APIs to extend and integrate with Power BI Desktop's data modeling and reporting features. There are several different types of external tools:
+Power BI has a vibrant community of BI professionals and developers. A vital part of that community are contributors that create free tools that use Power BI and Analysis Services APIs to extend and integrate with Power BI Desktop's data modeling and reporting features. 
+
+The **External Tools** ribbon provides easy access to external tools that have been installed locally and registered with Power BI Desktop. When launched from the External Tools ribbon, Power BI Desktop passes the name and port number of its internal data model engine instance to the tool, and the current model name. The tool then automatically connects, providing a seamless connection experience.  
+
+:::image type="content" source="media/desktop-external-tools/external-tools-ribbon.png" alt-text="The external tools ribbon in Power BI Desktop":::
+
+
+External tools generally fall into one of the following categories:
 
 **Semantic modeling** - Open-source tools such as DAX Studio, ALM Toolkit, Tabular Editor, and Metadata Translator extend Power BI Desktop functionality for specific data modeling scenarios such as DAX query and expression optimization, application lifecycle management (ALM), and metadata translation.
 
@@ -41,23 +48,6 @@ There are many external tools out there. Here are some of the most popular and b
 |ALM Toolkit     |   A schema compare tool for Power BI models and datasets, used for application lifecycle management (ALM) scenarios. You can perform straightforward deployment across environments and retain incremental refresh historical data. You can diff and merge metadata files, branches, and repos. You can also reuse common definitions between datasets. To get the latest, go to [alm-toolkit.com](http://alm-toolkit.com/).      |
 |Metadata Translator      |    Streamlines localization of Power BI models and datasets. The tool can automatically translate captions, descriptions, and display folder names of tables, columns, measures, and hierarchies by using the machine translation technology of Azure Cognitive Services. You can also export and import translations via Comma Separated Values (.csv) files for convenient bulk editing in Excel or a localization tool. To get the latest, go to [Metadata Translator](https://github.com/microsoft/Analysis-Services/tree/master/MetadataTranslator) on GitHub.    |
 
-## External tools ribbon
-
-The **External Tools** ribbon provides easy access to external tools that have been installed locally and registered with Power BI Desktop. When launched from the External Tools ribbon, Power BI Desktop passes the name and port number of its internal data model engine instance to the tool, and the current model name. The tool then automatically connects, providing a seamless connection experience.  
-
-:::image type="content" source="media/desktop-external-tools/external-tools-ribbon.png" alt-text="The external tools ribbon in Power BI Desktop":::
-
-### EnableExternalTools registry key
-
-The External Tools ribbon is enabled by default, but can be disabled by using Group Policy or editing the registry directly.
-
-- Registry key: Software\Policies\Microsoft\Power BI Desktop\
-- Registry value: EnableExternalTools
-
-A value of 1 (decimal) enables the External Tools ribbon, which is also the default value.
-
-A value of 0 (decimal) disable the External Tools ribbon.
-
 ## External tools integration architecture
 
 Power BI Desktop (pbix) files consist of multiple components including the report canvas, visuals, model metadata, and any data that has already been loaded from data sources. When Power BI Desktop opens a pbix file, it launches an Analysis Services process in the background to load the model so that the data modeling features and the report visuals can access model metadata and query model data.
@@ -66,7 +56,7 @@ When Power BI Desktop launches Analysis Services as its analytical data engine, 
 
 :::image type="content" source="media/desktop-external-tools/external-tool-arch.png" alt-text="Esternal tool architecture":::
 
-With the Analysis Services Server name, port number, and model name, the tool uses Analysis Services client libraries to establish a connection to the model, retrieve metadata, and execute DAX or MDX queries. Whenever an external data modeling tool updates the metadata, Power BI Desktop synchronizes the changes so that the Power BI Desktop user interface reflects the current state of the model accurately. There are however some limits to the synchronization capabilities that are described later in [Data modeling operations](#data-modeling-operations).
+With the Analysis Services Server name, port number, and model name, the tool uses Analysis Services client libraries to establish a connection to the model, retrieve metadata, and execute DAX or MDX queries. Whenever an external data modeling tool updates the metadata, Power BI Desktop synchronizes the changes so that the Power BI Desktop user interface reflects the current state of the model accurately. Keep in mind there are some limitations to the synchronization capabilities as described below.
 
 ## Data modeling operations
 
@@ -190,6 +180,16 @@ if (userClickedOK == true)
 } 
 ```
 
+## Disabling the External Tools ribbon
+
+The External Tools ribbon is enabled by default, but can be disabled by using Group Policy or editing the **EnableExternalTools** registry key directly.
+
+- Registry key: Software\Policies\Microsoft\Power BI Desktop\
+- Registry value: EnableExternalTools
+
+A value of 1 (decimal) enables the External Tools ribbon, which is also the default value.
+
+A value of 0 (decimal) disable the External Tools ribbon.
 
 
 ## See also
