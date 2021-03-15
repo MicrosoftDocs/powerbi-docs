@@ -6,7 +6,7 @@ ms.author: rosode
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 12/22/2020
+ms.date: 03/15/2020
 LocalizationGroup: Connect to services
 ---
 
@@ -23,20 +23,33 @@ To access the Microsoft Sustainability Calculator, you’ll need the following i
 
 - Tenant ID
 - Access key
-- Enrollment number
-- Only Azure Administrator roles can authenticate and connect calculator to company data. (**Only for December 2020 preview version**)
+- Enrollment number for EA customers or billing account ID for MCA/CSP customers
 
-To find your company’s enrollment number:
+> [!NOTE]
+> Only Azure Administrator roles can authenticate and connect the Sustainability Calculator to company data. This note applies to the December 2020 preview release.
+
+### Find your company’s access key
+
+1. Sign into the [Azure Enterprise portal](https://ea.azure.com) as an admin.
+2. Select **Reports**, and then select **API Access Key** to obtain the primary enrollment account key.
+
+### Find your company’s enrollment number
+
+This procedure applies to EA customers only.
 
 1. Sign into the [Azure Enterprise portal](https://ea.azure.com) as an admin.
 2. Select **Active Directory** or **Manage** on the left-hand nav bar. Your company’s enrollment number will display.
 
    ![Find enrollment number](media/service-connect-to-microsoft-sustainability-calculator/enrollment-number.png)
 
-To find your company’s access key:
+### Find your company's billing account ID
 
-1. Sign into the [Azure Enterprise portal](https://ea.azure.com) as an admin.
-2. Select **Reports**, and then select **API Access Key** to obtain the primary enrollment account key.
+This procedure applies to MCA/CSP customers only.
+
+1. In the [Azure portal](https://portal.azure.com), navigate to **Cost Management + Billing**.
+2. Select your billing account.
+3. Under **Settings**, select **Properties**.
+4. Your billing account ID displays under **Billing account**.
 
 ## Sustainability Calculator Release January 2020
 
@@ -44,21 +57,21 @@ To find your company’s access key:
 
 [!INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-get-more-apps.md)]
 
-3. Select **Microsoft Sustainability Calculator**, and then select **Get it now**.
+1. Select **Microsoft Sustainability Calculator**, and then select **Get it now**.
 
-4. In **Install this Power BI App?** select **Install**.
+2. In **Install this Power BI App?** select **Install**.
 
-5. In the **Apps** pane, select the **Microsoft Sustainability Calculator** tile.
+3. In the **Apps** pane, select the **Microsoft Sustainability Calculator** tile.
 
-6. In **Get started with your new app**, select **Connect**.
+4. In **Get started with your new app**, select **Connect**.
 
    ![Get started with your new app](media/service-connect-to-zendesk/power-bi-new-app-connect-get-started.png)
 
-7. Enter the **Company name**, **User enrollment number**, and **Number of months**. For information about obtaining your Enrollment number, see [Prerequisites](#prerequisites). Select **Next**.
+5. Enter the **Company name**, **User enrollment number**, and **Number of months**. For information about obtaining your Enrollment number, see [Prerequisites](#prerequisites). Select **Next**.
 
    ![Company enrollment](media/service-connect-to-microsoft-sustainability-calculator/company-enrollment.png)
 
-8. Enter the following information:
+6. Enter the following information:
 
    | Field | Value |
    | --- | --- |
@@ -68,9 +81,9 @@ To find your company’s access key:
 
    ![Access Key Entry](media/service-connect-to-microsoft-sustainability-calculator/access-key-entry.png)
 
-9. Select **Sign in**.
+7. Select **Sign in**.
 
-10. The import process begins automatically. When complete, a new dashboard, report, and model appear in the **Navigation Pane**. Select the report to view your imported data.
+8. The import process begins automatically. When complete, a new dashboard, report, and model appear in the **Navigation Pane**. Select the report to view your imported data.
 
 ### Using the App
 
@@ -106,27 +119,40 @@ You’ll need your Azure enrollment number. If you don’t have it, ask your org
 
 2. Open the app.
 
-3. Enter your enrollment number. Select **Connect your data**, and then enter your enrollment number. For more information about obtaining your enrollment number, see [Prerequisites](#prerequisites).
+3. Select **Connect your data**. In the **Connect to Microsoft Sustainability Calculator (Preview)** window, do one of the following sets of steps, depending on whether you're an EA or MCA/CSP customer:
 
-   ![Enter enrollment number](media/service-connect-to-microsoft-sustainability-calculator/enter-enrollment-number.png)
+   **EA customers**
+
+   1. Under **Parameters**, enter your enrollment number. For more information about obtaining your enrollment number, see [Prerequisites](#prerequisites).
+   2. Under **AgreementType**, select **Enrollment Number**.
+
+   **MCA/CSP customers**
+
+   1. Under **Parameters**, enter your billing account ID in the following format:
+
+      /providers/Microsoft.Billing/billingAccounts/*BillingAccountID*
+
+      For more information about obtaining your billing account ID, see [Prerequisites](#prerequisites).
+
+   2. Under **AgreementType**, select **Manually Input Scope**.
 
 4. Connect your account:
 
    > [!NOTE]
    > The Azure portal panes that you use to connect your account might not be in the same order or display the same details as shown in the following examples.
-   
+
    - In **You are connecting to (1 of 2)**, under **Authentication method**, select **OAuth2**, and under **Privacy level setting for this data source**, select **Organizational**.
 
       ![Screenshot of parameters authentication first dialog.](media/service-connect-to-microsoft-sustainability-calculator/connecting-1-of-2.png)
- 
+
    - Select the user account.
 
       ![Pick an account](media/service-connect-to-microsoft-sustainability-calculator/pick-account.png)
-       
+
    - In **You are connecting (2 of 2)**, under **Authentication method**, select **Anonymous**, and under **Privacy level setting for this data source**, select **Organizational**.
 
      ![Screenshot of parameters authentication second dialog.](media/service-connect-to-microsoft-sustainability-calculator/connecting-2-of-2.png)
-    
+
 5. Wait for the view to build, which can take up to 24 hours.
 
 ### Additional resources
