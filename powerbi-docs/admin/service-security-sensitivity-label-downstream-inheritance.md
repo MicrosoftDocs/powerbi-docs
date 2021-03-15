@@ -15,6 +15,71 @@ LocalizationGroup: Data from files
 
 This document is under construction but is the placeholder for links to downstream inheritance information.
 
+sadfaafd
+
+asdfasfad
+
+asdfasdfasdf
+
+
+asdfasdfa
+
+
+asdfasdfasdf
+
+
+asdfasdfasdf
+
+
+asdfasdfads
+
+asdfasdfasd
+
+asdfasdfdas
+
+asdfasdfasd
+
+
+asdfasdfasdf
+
+
+asdfasfasdf
+
+## Another section
+
+sadfaafd
+
+asdfasfad
+
+asdfasdfasdf
+
+
+asdfasdfa
+
+
+asdfasdfasdf
+
+
+asdfasdfasdf
+
+
+asdfasdfads
+
+asdfasdfasd
+
+asdfasdfdas
+
+asdfasdfasd
+
+
+asdfasdfasdf
+
+
+asdfasfasdf
+
+
+
+
 ## Workspace admin relaxation
 If no users meet the above mentioned conditions, workspace admins can be granted permissions to overwrite automatically applied labels. To grant this permission, the Power BI admin can enable the **Allow workspace admins to override automatically applied sensitivity labels (preview)** toggle in the [Information Protection tenant settings](service-admin-portal#information-protection.md) to grant workspace admins such privileges, according to Power BI permissions.
 
