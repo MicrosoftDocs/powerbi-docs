@@ -119,13 +119,15 @@ case 'colorSelector':
 
 ```
 
-## Limitations
+## Limitations and considerations
 
 Conditional formatting isn't supported for the following visuals:
 
-* Matrix table based visuals
+* Table visuals
 
-* Visuals with series
+* Matrix visuals
+
+When implementing conditional formatting in a visual with series, each series will get the same color. We recommend that you don't use conditional formatting with visuals that have series. Instead, you should instruct the customer to pick a color for each series.  
 
 ## Next steps
 
