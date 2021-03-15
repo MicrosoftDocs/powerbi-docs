@@ -24,11 +24,11 @@ Data Source Name (DSN) and driver connection strings are both supported.
 
 ## Before you install the Power BI gateway
 
-You need a Power BI gateway version February 2021 or later. We recommend installing the gateway on a separate machine from Power BI Report Builder or Power BI Desktop.  There are some scenarios where using the same machine might cause problems. For instance, DB2 doesn't allow 32-bit and 64-bit drivers to be installed side by side on the same machine.
+You need a Power BI gateway version February 2021 or later. We recommend installing the gateway on a separate machine from Power BI Report Builder or Power BI Desktop.  There are some scenarios where using the same machine might cause problems. Some providers don't support 32-bit and 64-bit drivers to be installed side by side on the same machine, check your provider documentation.
 
 ## Install and configure Power BI Report builder for ODBC data source support
 
-The latest version of Power BI Report Builder already contains the ODBC data extension and query designer.
+The latest version of Power BI Report Builder already contains the ODBC data extension.
 
 1.	Install the latest version of [Power BI Report Builder](https://www.microsoft.com/download/details.aspx?id=58158).
 2.	Install the 32-bit ODBC driver that you plan to use with Power BI Report Builder.
@@ -63,8 +63,6 @@ Follow these steps to set up the Power BI gateway for ODBC data sources.
     >For the public preview, the Anonymous authentication method isn't supported. You can select it for an ODBC data source, but you receive an "Unexpected error occurred" like the following one when rendering the report:
 
     :::image type="content" source="media/paginated-reports-odbc-support/anonymouse-error.png" alt-text="Anonymouse authentication is not supported.":::
-
-    We are re-evaluating this limitation for the public preview.
 
 ### ODBC connection string examples
 
