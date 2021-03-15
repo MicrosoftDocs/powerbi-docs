@@ -19,5 +19,5 @@ This document is under construction but is the placeholder for links to downstre
 If no users meet the above mentioned conditions, workspace admins can be granted permissions to overwrite automatically applied labels. To grant this permission, the Power BI admin can enable the **Allow workspace admins to override automatically applied sensitivity labels (preview)** toggle in the [Information Protection tenant settings](service-admin-portal#information-protection.md) to grant workspace admins such privileges, according to Power BI permissions.
 
 ## Next steps
-* [Allow workspace admins to override automatically applied sensitivity labels (preview)]()
+* Allow workspace admins to override automatically applied sensitivity labels (preview)
 * [Sensitivity label overview](service-security-sensitivity-label-overview.md)
