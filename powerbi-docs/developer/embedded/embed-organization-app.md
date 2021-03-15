@@ -116,7 +116,7 @@ If you don't know what's your domain or tenant ID, see [Find the Microsoft Azure
 [!INCLUDE[Get the report ID](../../includes/embed-tutorial-report-id.md)]
 
 >[!NOTE]
->To get the report ID programmatically, use the [Get Report In Group](/rest/api/power-bi/reports/getreportingroup) API.
+>To get the report ID programmatically, use the [Get Reports In Group](/rest/api/power-bi/reports/getreportsingroup) API.
 
 ## Step 3 - Add the required NuGet packages
 
