@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/14/2021
+ms.date: 03/15/2021
 ---
 
 # Add conditional formatting
@@ -123,11 +123,11 @@ case 'colorSelector':
 
 Conditional formatting isn't supported for the following visuals:
 
-* Table visuals
+* Table based visuals
 
-* Matrix visuals
+* Matrix based visuals
 
-When implementing conditional formatting in a visual with series, each series will get the same color. We recommend that you don't use conditional formatting with visuals that have series. Instead, you should instruct the customer to pick a color for each series.  
+We recommend that you don’t use conditional formatting with series. Instead, you should allow customers to format each series individually, making it easy to visually distinguish between series. Most out-of-the-box visuals with series, share this approach.
 
 ## Next steps
 
