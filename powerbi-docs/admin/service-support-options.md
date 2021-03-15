@@ -39,7 +39,7 @@ Admins can use the **Help + support** experience in the [Power Platform Admin Ce
 
 * Check [Microsoft 365 message center](https://admin.microsoft.com/#/MessageCenter) to make sure there are no planned maintenance activities affecting your experience.
 
-* [Capture diagnostic information from the Power BI service](power-bi/admin/service-admin-capturing-additional-diagnostic-information-for-power-bi) that you can attach to your service request.
+* [Capture diagnostic information from the Power BI service](service-admin-capturing-additional-diagnostic-information-for-power-bi.md) that you can attach to your service request.
 
 ## Connect with Support
 
@@ -86,5 +86,5 @@ Contact your Microsoft Technical Account Manager for details. If you don't alrea
 
 ## Next steps
 
-* [Customize help and support settings](service-admin-portal#help-and-support-settings)
-* [Find the right Power BI training for you](learn/powerplatform/power-bi?WT.mc_id=powerbi_docs-link)
+* [Customize help and support settings](service-admin-portal.md#help-and-support-settings)
+* [Find the right Power BI training for you](/learn/powerplatform/power-bi?WT.mc_id=powerbi_docs-link)
