@@ -68,7 +68,7 @@ This procedure applies to MCA/CSP customers only.
 
    ![Get started with your new app](media/service-connect-to-zendesk/power-bi-new-app-connect-get-started.png)
 
-5. Enter the **Company name**, **User enrollment number**, and **Number of months**. For information about obtaining your Enrollment number, see [Prerequisites](#prerequisites). Select **Next**.
+5. Enter the **Company name**, **User enrollment number**, and **Number of months**. For information about obtaining your Enrollment number, see [Prerequisites](#find-your-companys-enrollment-number). Select **Next**.
 
    ![Company enrollment](media/service-connect-to-microsoft-sustainability-calculator/company-enrollment.png)
 
@@ -124,7 +124,7 @@ You’ll need your Azure enrollment number. If you don’t have it, ask your org
 
    **EA customers**
 
-   1. Under **Parameters**, enter your enrollment number. For more information about obtaining your enrollment number, see [Prerequisites](#prerequisites).
+   1. Under **Parameters**, enter your enrollment number. For more information about obtaining your enrollment number, see [Prerequisites](#find-your-companys-enrollment-number).
 
    2. Under **AgreementType**, select **Enrollment Number**.
    
@@ -136,7 +136,7 @@ You’ll need your Azure enrollment number. If you don’t have it, ask your org
 
       /providers/Microsoft.Billing/billingAccounts/*BillingAccountID*
 
-      For more information about obtaining your billing account ID, see [Prerequisites](#prerequisites).
+      For more information about obtaining your billing account ID, see [Prerequisites](#find-your-companys-billing-account-id).
 
    2. Under **AgreementType**, select **Manually Input Scope**.
 
