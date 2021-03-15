@@ -59,7 +59,7 @@ Bollinger bands use complex mathematics to show the trends. You can see a number
 
 ## Stocks and ETFs Comparison
 
-The Stocks and ETFs Comparison dashboard shows you a chart that makes it easy to compare selected stocks and ETFs. You can choose as many stocks and ETFs to compare as you like. Use the slider at the bottom of the chart to zoom in for more granularity.
+The Stocks and ETFs Comparison dashboard shows you a normalized chart that makes it easy to compare selected stocks and ETFs. You can choose as many stocks and ETFs to compare as you like. Use the slider at the bottom of the chart to zoom in for more granularity.
 
 ![Screenshot of Stocks and ETFs Comparison dashboard.](media/service-connect-to-analyze-stocks/stocks-comparison-dashboard.png) 
 
