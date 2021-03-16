@@ -249,7 +249,7 @@ Server-side authentication traces provide detailed information for troubleshooti
 
 ### Verifying and troubleshooting gateway errors
 
-To follow the steps in this section, you need to [collect gateway logs](https://docs.microsoft.com/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
+To follow the steps in this section, you need to [collect gateway logs](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
 
 #### SSL Error (certificate)
 
