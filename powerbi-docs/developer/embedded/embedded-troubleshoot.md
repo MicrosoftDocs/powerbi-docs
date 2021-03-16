@@ -184,6 +184,10 @@ User consent is disabled for the tenant.
 
 Download [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) if you experience an "'AuthenticationContext' does not contain a definition for 'AcquireToken' and no accessible 'AcquireToken' accepting a first argument of type 'AuthenticationContext' could be found (are you missing a using directive or an assembly reference?)" error.
 
+### Azure AD token for a different tenant
+
+In a business-to-business (B2B) *embed for your organization* scenario, if your app is trying to access Power BI content hosted on a tenant that's different to the signed in user's tenant, you need to specify the tenant ID to get the Azure AD token. In such cases, you'll need to use the **XXX** URL. For more information, see [How to: Sign in any Azure Active Directory user using the multi-tenant application pattern](/active-directory/develop/howto-convert-app-to-be-multi-tenant).
+
 ## Data sources
 
 ### ISV wants to have different credentials for the same data source
