@@ -7,7 +7,7 @@ ms.reviewer: swgupt
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 03/12/2021
+ms.date: 03/15/2021
 ---
 
 # Power BI gateway and Report Builder support for ODBC data sources (preview)
@@ -26,14 +26,14 @@ Data Source Name (DSN) and driver connection strings are both supported.
 
 You need a Power BI gateway version February 2021 or later. We recommend installing the gateway on a separate machine from Power BI Report Builder or Power BI Desktop.  There are some scenarios where using the same machine might cause problems. Some providers don't support 32-bit and 64-bit drivers to be installed side by side on the same machine, check your provider documentation.
 
-## Install and configure Power BI Report builder for ODBC data source support
+## Install, configure Power BI Report Builder for ODBC data source
 
 The latest version of Power BI Report Builder already contains the ODBC data extension.
 
 1.	Install the latest version of [Power BI Report Builder](https://www.microsoft.com/download/details.aspx?id=58158).
 2.	Install the 32-bit ODBC driver that you plan to use with Power BI Report Builder.
 
-## Install the Power BI gateway and configure ODBC data sources
+## Install Power BI gateway, configure ODBC data sources
 
 Follow these steps to set up the Power BI gateway for ODBC data sources.
 
@@ -87,8 +87,11 @@ Here are some of the known limitations:
 
 - For most ODBC drivers DateTime parameters require changes to the Command text in the RDL dataset to cast a DateTime parameter value to the appropriate format for a given ODBC data source.  
 
-    Example expression:  
-    ```"SELECT * FROM DEMO_DB.PUBLIC.DATES WHERE DATE < DATE('" & Format(Parameters!Date.Value, "yyyy-MM-dd") & "')"```
+    Example query:  
+    ```SELECT * FROM DEMO_DB.PUBLIC.DATES WHERE DATE < DATE(?)```
+
+    >[!NOTE]
+    >Some data sources might require specific formatting. You can use an expression to format the parameter in the example above. For example, `=Format(Parameters!Date.Value, "yyyy-MM-dd")`.
 
 - Any special data types exposed by a given ODBC driver or backend that aren't simply mapped to an <span>ADO.Net</span> data type aren't supported. One example is the Snowflake Array data type.
 - Scenarios where ODBC drivers use stored procedures without parameters are generally not supported. However, the Amazon Redshift driver has in/out parameters that are supported.
