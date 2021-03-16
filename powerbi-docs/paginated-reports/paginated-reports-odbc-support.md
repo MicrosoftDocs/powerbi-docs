@@ -87,8 +87,11 @@ Here are some of the known limitations:
 
 - For most ODBC drivers DateTime parameters require changes to the Command text in the RDL dataset to cast a DateTime parameter value to the appropriate format for a given ODBC data source.  
 
-    Example expression:  
-    ```"SELECT * FROM DEMO_DB.PUBLIC.DATES WHERE DATE < DATE('" & Format(Parameters!Date.Value, "yyyy-MM-dd") & "')"```
+    Example query:  
+    ```SELECT * FROM DEMO_DB.PUBLIC.DATES WHERE DATE < DATE(?)```
+
+    >[!NOTE]
+    >Some data sources might require specific formatting. An expression can be used to format the parameter in the example above, e.g. `=Format(Parameters!Date.Value, "yyyy-MM-dd")`.
 
 - Any special data types exposed by a given ODBC driver or backend that aren't simply mapped to an <span>ADO.Net</span> data type aren't supported. One example is the Snowflake Array data type.
 - Scenarios where ODBC drivers use stored procedures without parameters are generally not supported. However, the Amazon Redshift driver has in/out parameters that are supported.
