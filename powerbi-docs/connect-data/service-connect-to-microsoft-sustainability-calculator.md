@@ -140,7 +140,7 @@ You’ll need your Azure enrollment number. If you don’t have it, ask your org
 
       For more information about obtaining your billing account ID, see [Find your company's billing account ID](#find-your-companys-billing-account-id).
 
-   2. Under **AgreementType**, select **Manually Input Scope**.
+   2. Under **AgreementType**, select **Manually Input Scope**. 
 
       ![MCA/CSP customers connect to Microsoft Sustainability Calculator](media/service-connect-to-microsoft-sustainability-calculator/connect-microsoft-customer-agreement.png)
 
