@@ -26,14 +26,14 @@ Data Source Name (DSN) and driver connection strings are both supported.
 
 You need a Power BI gateway version February 2021 or later. We recommend installing the gateway on a separate machine from Power BI Report Builder or Power BI Desktop.  There are some scenarios where using the same machine might cause problems. Some providers don't support 32-bit and 64-bit drivers to be installed side by side on the same machine, check your provider documentation.
 
-## Install and configure Power BI Report builder for ODBC data source support
+## Install, configure Power BI Report Builder for ODBC data source
 
 The latest version of Power BI Report Builder already contains the ODBC data extension.
 
 1.	Install the latest version of [Power BI Report Builder](https://www.microsoft.com/download/details.aspx?id=58158).
 2.	Install the 32-bit ODBC driver that you plan to use with Power BI Report Builder.
 
-## Install the Power BI gateway and configure ODBC data sources
+## Install Power BI gateway, configure ODBC data sources
 
 Follow these steps to set up the Power BI gateway for ODBC data sources.
 
