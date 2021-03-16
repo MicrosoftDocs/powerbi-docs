@@ -755,7 +755,7 @@ The following video describes each of these updates. You can also watch this vid
 
 ## April 2020 Update (2.80.5803.282)
 
-We were grateful to be able to share our April Power BI upate with you, our global community. 
+We were grateful to be able to share our April Power BI update with you, our global community. 
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
