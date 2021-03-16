@@ -6,7 +6,7 @@ ms.author: rosode
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 03/15/2020
+ms.date: 03/15/2021
 LocalizationGroup: Connect to services
 ---
 
