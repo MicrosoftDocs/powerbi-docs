@@ -97,6 +97,8 @@
         href: ../paginated-reports/report-builder-data.md
       - name: Supported data sources
         href: ../paginated-reports/paginated-reports-data-sources.md
+      - name: Support for ODBC data sources
+        href: ../paginated-reports/paginated-reports-odbc-support.md
       - name: Design tips
         href: ../paginated-reports/report-builder-design-tips.md
       - name: Tables, matrixes, lists
