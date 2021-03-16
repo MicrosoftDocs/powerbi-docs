@@ -12,7 +12,7 @@ LocalizationGroup: Connect to services
 
 # Microsoft Sustainability Calculator Support Page
 
-The Microsoft Sustainability Calculator provides new insight into carbon emissions data associated with Azure services. People responsible for reporting on and driving sustainability within their organizations can now quantify the carbon impact of each Azure subscription, and see estimated carbon savings from running those workloads in Azure versus on-premises datacenters. This data may be used for greenhouse gas reporting of Scope 3 emissions.
+The Microsoft Sustainability Calculator provides new insight into carbon emissions data associated with Azure services. People responsible for reporting on and driving sustainability within their organizations can now quantify the carbon impact of each Azure subscription, and see estimated carbon savings from running those workloads in Azure versus on-premises datacenters. This data may be used for greenhouse gas reporting of Scope 3 emissions. 
 
 > [!NOTE]
 > This connector version only supports enrollments from the [Azure Enterprise portal](https://ea.azure.com). China enrollments aren't currently supported.
