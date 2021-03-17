@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 03/07/2021
+ms.date: 03/17/2021
 ---
 
 # Understand the deployment process
@@ -115,6 +115,13 @@ During deployment, the following item properties are copied and overwrite the it
 * Model metadata​
 
 * Item relationships
+
+[Sensitivity labels](../admin/service-security-sensitivity-label-overview.md) are copied *only* when one of the conditions listed below is met. If these conditions are not met, sensitivity labels will not be copied during deployment.
+* A new item is deployed.
+
+* An item is deployed to an empty stage.
+
+* The source item has a label with protection and the target item doesn't. In such cases, a pop-up window asking for consent to override the target sensitivity label appears.
 
 ### Item properties that are not copied
 
@@ -303,8 +310,6 @@ Dataset owners that are either workspace members or admins, can also do the foll
 This section lists most of the limitations in deployment pipelines.
 
 * The workspace must reside on a [premium capacity](../admin/service-premium-what-is.md).
-
-* Power BI items such as reports and dashboards that have Power BI [sensitivity labels](../admin/service-security-sensitivity-label-overview.md), cannot be deployed.
 
 * The maximum number of Power BI items that can be deployed in a single deployment is 300.
 
