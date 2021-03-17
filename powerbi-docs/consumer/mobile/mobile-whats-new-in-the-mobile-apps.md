@@ -22,6 +22,8 @@ For related "What's New" information, see:
 ### Easily find content by type
 Try out the new categories filter at the top of the Recents, Favorites, and Workspace pages, to filter the content in the page by its type.
 
+![Screenshot of the mobile app being used in split-sreen mode.](media/mobile-whats-new-in-the-mobile-apps/animation-test.gif)
+
 ## February 2021
 ### Support for Power BI in split-screens (Android tablets)
 
