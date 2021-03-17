@@ -35,13 +35,13 @@ For a comparison of Power BI Pro and Power BI Premium, see the _Power BI feature
 >[!NOTE]
 >Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
 >* Performance
->* Per-user licensing. See the [Premium Per User FAQ](service-premium-per-user-faq.md) for more information.
+>* Per-user licensing. See the [Premium Per User FAQ](/admin/service-premium-per-user-faq.md) for more information.
 >* Greater scale
 >* Improved metrics
 >* Autoscaling
 >* Reduced management overhead
 >
->For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+>For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2 (preview)](/admin/service-premium-what-is.md#power-bi-premium-generation-2-preview).
 >
 
 To learn more about the capabilities your license provides, see [Feature availability for users with free licenses](../consumer/end-user-features.md) and [Types of licenses for Power BI consumers](../consumer/end-user-license.md).
