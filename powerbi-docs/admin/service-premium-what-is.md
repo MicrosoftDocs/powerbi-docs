@@ -83,11 +83,11 @@ The following known limitations currently apply to Premium Gen2:
 
 1.  Analysis services features in Premium Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are:
 
-    |Tool|Minimum version required|Estimated release date|
-    |---|---|---|
-    |SQL Server Management Studio (SSMS)|18.8|December 8, 2020|
-    |SQL Server Data Tools (SSDT)|2.9.15|General availability November 30, 2020|
-    | AS PowerShell| Greater than 21.1.18229|November 26, 2020|
+    |Tool|Minimum version required|
+    |---|---|
+    |SQL Server Management Studio (SSMS)|18.8|
+    |SQL Server Data Tools (SSDT)|2.9.15|
+    | AS PowerShell| Greater than 21.1.18229|
 
 4.  Memory restrictions are different in Premium Gen2. In the first generation of Premium, memory was restricted to a limited amount of RAM used by all artifacts simultaneously running. 
 In Gen2, there is no memory Limit for the capacity as a whole. Instead, individual artifacts (such as datasets, dataflows, paginated reports) are subject to the following RAM limitations:
