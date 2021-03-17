@@ -207,9 +207,9 @@ Paginated report subreports are kept in the same folder that holds your paginate
 
 When you create a data source rule for a paginated report, you cannot use the data source name as an identifier. The data source name is automatically created, identical in all pipeline stages, and may be subject to edits.
 
-When creating a rule, after selecting the data source to be replaced, you need to select a new data source that the paginated report will use. To point to a new data source, you'll need to specify two parameters:
+When creating a rule for a paginated report with a Power BI dataset, after selecting the data source to be replaced, you need to select a new data source that the paginated report will use. To point to a new data source, you'll need to specify two parameters:
 
-* **Database** - The database format is `sobe_wowvirtualserver-<dataset ID>`, for example `sobe_wowvirtualserver-d51fd26e-9124-467f-919c-0c48a99a1d63`. Replace the `<dataset ID>` with your dataset's ID. You can get the dataset ID from the URL, by selecting the GUID that comes after `datasets/` and before the next forward slash.
+* **Database** - The database format for a paginated report with a Power BI dataset, is `sobe_wowvirtualserver-<dataset ID>`. For example `sobe_wowvirtualserver-d51fd26e-9124-467f-919c-0c48a99a1d63`. Replace the `<dataset ID>` with your dataset's ID. You can get the dataset ID from the URL, by selecting the GUID that comes after `datasets/` and before the next forward slash.
 
     :::image type="content" source="media/deployment-pipelines-troubleshooting/datasets-id.png" alt-text="A screenshot of the dataset I D as it appears in a Power B I U R L.":::
 
