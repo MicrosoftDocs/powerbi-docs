@@ -203,7 +203,7 @@ When you deploy a paginated report that's connected to a Power BI dataset, it co
 
 Paginated report subreports are kept in the same folder that holds your paginated report. To avoid rendering problems, when using [selective copy](deployment-pipelines-get-started.md#selective-deployment) to copy a paginated report with subreports, select both the parent report and the subreports.
 
-### How do I crete a deployment rule for a paginated report with a Power BI dataset?
+### How do I create a deployment rule for a paginated report with a Power BI dataset?
 
 When you create a data source rule for a paginated report, you cannot use the data source name as an identifier. The data source name is automatically created, identical in all pipeline stages, and may be subject to edits.
 
