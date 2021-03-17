@@ -54,7 +54,7 @@ This section provides extensive steps about how to troubleshoot using Kerberos f
 
 ### Verifying and troubleshooting gateway errors
 
-To follow the steps in this section, you need to [collect gateway logs](https://docs.microsoft.com/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
+To follow the steps in this section, you need to [collect gateway logs](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
 
 #### SSL Error (certificate)
 
@@ -98,7 +98,7 @@ Refresh or create the report and collect the gateway logs. Open the most recent 
 
 
 #### Delegation
-Delegation issues usually appear in the Power BI service as generic errors. To make sure the issue is not a delegation issue, collect Wireshark traces and use *Kerberos* as a filter. To learn more about Wireshark, and for information about Kerberos errors, see the [blog post on Kerberos errors in network captures](https://docs.microsoft.com/archive/blogs/askds/kerberos-errors-in-network-captures).
+Delegation issues usually appear in the Power BI service as generic errors. To make sure the issue is not a delegation issue, collect Wireshark traces and use *Kerberos* as a filter. To learn more about Wireshark, and for information about Kerberos errors, see the [blog post on Kerberos errors in network captures](/archive/blogs/askds/kerberos-errors-in-network-captures).
 
 The following symptoms and troubleshooting steps help remedy some common issues.
 

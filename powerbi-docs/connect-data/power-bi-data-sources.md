@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 03/10/2021
+ms.date: 03/11/2021
 ---
 
 # Power BI data sources
@@ -35,9 +35,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Azure HDInsight (HDFS) | Yes | Yes | No | No | No | No |
 | Azure HDInsight Spark | Yes | Yes | Yes | No | No | Yes |
 | Azure SQL Database | Yes | Yes | Yes | Yes  | Yes | Yes |
-| Azure Synapse | Yes | Yes | Yes | Yes  | No | Yes |
 | Azure Synapse Analytics | Yes | Yes | Yes | Yes  | No | Yes |
-| Azure Synapse Link | Yes | Yes | Yes | Yes  | No | Yes |
 | Azure Table Storage | Yes | Yes | No | Yes | No | Yes |
 | BI Connector | Yes | Yes | Yes | Yes | Yes | No |
 | BI360 - Budgeting & Financial Reporting | Yes | Yes | No | No | No | No |

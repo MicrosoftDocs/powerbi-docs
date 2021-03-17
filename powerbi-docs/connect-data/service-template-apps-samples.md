@@ -22,8 +22,6 @@ The samples might require additional user accounts with the relevant service own
 ## Downloadable apps template samples
 
 * [Template example for template app creation](https://templateapps.blob.core.windows.net/sampletemplateapps/TemplateforTemplateApps.zip)
-* [LinkedIn Sales Navigator analytics integration](https://templateapps.blob.core.windows.net/sampletemplateapps/SalesNavigatorTemplate.pbix)
-* [GitHub](https://templateapps.blob.core.windows.net/sampletemplateapps/GitHub.pbix)
 * [Mailchimp](https://templateapps.blob.core.windows.net/sampletemplateapps/MailChimp.pbix)
 * [QuickBooks Online](https://templateapps.blob.core.windows.net/sampletemplateapps/QuickBooksOnline.pbix)
 * [Google Analytics](https://templateapps.blob.core.windows.net/sampletemplateapps/GoogleAnalytics.pbix)
