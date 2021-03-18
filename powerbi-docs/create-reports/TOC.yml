@@ -306,6 +306,8 @@
         items: 
         - name: "Get started with Azure Maps Power BI visual"
           href: /azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/context/context
+        - name: "Layers in the Azure Maps Power BI visual"
+          href: /azure/azure-maps/power-bi-visual-understanding-layers?context=/power-bi/context/context
       - name: "Matrix visuals"
         href: ../visuals/desktop-matrix-visual.md
       - name: "Power Apps visuals"
