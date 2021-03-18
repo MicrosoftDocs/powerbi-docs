@@ -34,7 +34,7 @@ If you have capacity permissions, the content of the workspace is copied to the 
 
 If you don't have capacity permissions, the workspace is created but the content isn’t copied. You can ask a capacity admin to add your workspace to a capacity, or ask for assignment permissions for the capacity. Later, when the workspace is assigned to a capacity, you can deploy content to this workspace.
 
-If you're using [Premium Per User (PPU)](../admin/service-premium-per-user-faq.md), your workspace is automatically created in the capacity associated with your PPU. In such cases capacity permissions are not required. However, workspaces created by a PPU user, can only be accessed by other PPU users. In addition, content created in such workspaces can only be consumed by PPU users.
+If you're using [Premium Per User (PPU)](../admin/service-premium-per-user-faq.md), your workspace is automatically associated with your PPU. In such cases capacity permissions are not required. However, workspaces created by a PPU user, can only be accessed by other PPU users. In addition, content created in such workspaces can only be consumed by PPU users.
 
 ### Workspace and content ownership
 
