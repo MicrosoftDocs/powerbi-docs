@@ -49,7 +49,7 @@
         topicHref: /power-bi/create-reports/index
         items:
         - name: Create reports and dashboards
-          tocHref: /azure-maps/
+          tocHref: /azure/azure-maps/
           topicHref: /power-bi/create-reports/index
       - name: Connect to data
         tocHref: /power-bi/connect-data/
