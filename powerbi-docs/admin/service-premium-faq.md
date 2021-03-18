@@ -90,9 +90,9 @@ Power BI Premium recently released a new version of Power BI Premium, **Premium 
 
 Autoscaling is subject to two limits, each if which is configured by Power BI administrators:
 
-1. **Proactive limit** – a proactive limit sets the rate of expenses that Autoscale can generate, by limiting the number of autoscale v-cores a capacity can use. For example, by setting a maximum autoscale of v-cores to one v-core, you ensure that the maximum charge you can incur is 30 days of autoscaling with one v-core.
+* **Proactive limit** – a proactive limit sets the rate of expenses that Autoscale can generate, by limiting the number of autoscale v-cores a capacity can use. For example, by setting a maximum autoscale of v-cores to one v-core, you ensure that the maximum charge you can incur is 30 days of autoscaling with one v-core.
 
-2. **Reactive limit** – you can also set a reactive limit to the cost for autoscaling, my setting an expenditure limit on the Azure subscription used with autoscale. If the subscription’s budget is exhausted, Power BI is prevented from using the v-core resources for that subscription, and autoscale shuts off. You can set a budget for the Azure subscription that autoscale uses by following the [Azure budget tutorial](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets).
+* **Reactive limit** – you can also set a reactive limit to the cost for autoscaling, my setting an expenditure limit on the Azure subscription used with autoscale. If the subscription’s budget is exhausted, Power BI is prevented from using the v-core resources for that subscription, and autoscale shuts off. You can set a budget for the Azure subscription that autoscale uses by following the [Azure budget tutorial](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets).
 
 
 **How does resource utilization cause Gen2 to autoscale?**

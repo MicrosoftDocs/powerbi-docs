@@ -18,7 +18,7 @@ This article describes important concepts and implications for Power BI Premium 
 
 ![Enabling Premium Generation 2](media/service-premium-what-is/enable-premium-gen2.gif#lightbox) 
 
-## How Premium Gen2 architecture improves performance
+## Premium Gen2 architecture improvements
 
 Architectural changes in Premium Gen2, especially around how CPU resources are allocated and used, enables more versatility in offerings, and more flexibility in licensing models. For example, the new architecture enables offering Premium on a per-user basis, offered (currently in preview) as [Premium Per User](service-premium-per-user-faq.md). The architecture also provides customers with better performance, and better governance and control over their Power BI expenses.
 
@@ -47,7 +47,7 @@ There are several positive results from distributing backend processing of conte
     * Memory consumption required for viewing and refresh operations remains within the memory limits of your purchased capacity.
 6. Because of this new architecture, customer admins do not need to monitor their capacities for signs of approaching the limits of their resources, and instead are provided with clear indication when such limits are met. This significantly reduces the effort and overhead required of capacity administrators to maintain optimal capacity performance.
 
-## How a Premium Gen2 capacity load gets evaluated
+## Premium Gen2 capacity load evaluation
 
 To enforce CPU throughput limitations, Power BI evaluates the throughput from your Premium Gen2 capacity on an ongoing basis. Power BI evaluates throughput every 30 seconds. It allows operations to complete, collects execution time on the shared pool physical node’s CPUs, and then for all operations on your capacity, aggregates them into 30-second intervals and compares the results to what your purchased capacity is able to support. 
 
@@ -60,7 +60,7 @@ The aggregation is complex. It uses specialized algorithms for different workloa
 * **Fast operations** like queries, report loads, and others are considered *interactive operations*. The CPU time required to complete those operations is aggregated, to minimize the number of 30-seconds windows that are impacted following that operation's completion.
 
 
-## Background operation scheduling is different on Premium Gen2
+## Premium Gen2 background operation scheduling
 
 Refreshes are run on Premium Gen2 capacities at the time they are scheduled, or close to it, regardless of how many other background operations were scheduled for the same time. Datasets and dataflows being refreshed are placed on a physical processing node that has enough memory available to load them, and then begin the refresh process. 
 
