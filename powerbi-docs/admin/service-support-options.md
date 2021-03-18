@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/17/2021
+ms.date: 03/18/2021
 ---
 
 # Power BI support options
@@ -30,6 +30,9 @@ If you're an end user, you can contact Support directly if you have a Power BI P
    :::image type="content" source="media/service-support-options/support-menu.png" alt-text="Screen capture showing help menu with Get help selected.":::
 
 ## Get started with support for admins
+
+> [!TIP]
+>Need help getting started with Power BI? Take advantage of the [one-hour workshops offered by our partners and get a free consultation](https://appsource.microsoft.com/marketplace/consulting-services?search=Onehourfreeconsultingoffer).
 
 Admins can use the **Help + support** experience in the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com) to get self-help solutions and to create a new service request. Before you contact Microsoft Support, we recommend you follow these steps:
 

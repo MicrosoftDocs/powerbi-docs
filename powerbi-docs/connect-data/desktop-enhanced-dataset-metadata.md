@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/08/2020
+ms.date: 03/17/2021
 LocalizationGroup: Connect to data
 ---
 # Using enhanced dataset metadata
@@ -43,7 +43,7 @@ You can fix your queries in three different places in Power BI Desktop:
 You can do all sorts of things with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
-* [What's new in Power BI Desktop?](../fundamentals/desktop-latest-update.md)
+* [What's new in Power BI?](../fundamentals/desktop-latest-update.md)
 * [Query overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
 * [Data types in Power BI Desktop](desktop-data-types.md)
 * [Shape and combine data with Power BI Desktop](desktop-shape-and-combine-data.md)
