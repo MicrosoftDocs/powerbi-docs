@@ -305,9 +305,11 @@
       - name: Azure Maps in Power BI
         items: 
         - name: "Get started with Azure Maps Power BI visual"
-          href: /azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/context/context
+          href: /azure/azure-maps/power-bi-visual-getting-started?context=context/context
         - name: "Layers in the Azure Maps Power BI visual"
-          href: /azure/azure-maps/power-bi-visual-understanding-layers?context=/power-bi/context/context
+          href: /azure/azure-maps/power-bi-visual-understanding-layers?context=context/context
+        - name: "Add a bubble layer"
+          href: /azure/azure-maps/power-bi-visual-add-bubble-layer?context=context/context
       - name: "Matrix visuals"
         href: ../visuals/desktop-matrix-visual.md
       - name: "Power Apps visuals"
