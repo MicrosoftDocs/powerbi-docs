@@ -20,9 +20,9 @@ For related "What's New" information, see:
 
 ## March 2021
 ### Easily find content by type
-Try out the new categories filter at the top of the Recents, Favorites, and Workspace pages, to filter the content in the page by its type.
+Try out the new categories filter at the top of the Recents, Favorites, and Workspace pages, to filter the listed content by type.
 
-![Screenshot of the mobile app being used in split-sreen mode.](media/mobile-whats-new-in-the-mobile-apps/animation-test.gif)
+![Screenshot of category filter on lists page.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-filter-by-type.png)
 
 ## February 2021
 ### Support for Power BI in split-screens (Android tablets)
