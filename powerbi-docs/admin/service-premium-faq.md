@@ -137,7 +137,7 @@ Your metrics report dataset retains 30 to 45 days of data. You can use the repor
 
 Utilization data does not currently indicate whether requests were throttled due to capacity being in *interactive request delay* mode. During the preview period, a property will be added to each utilization record to reflect throttled requests. The information will be added to the utilization app so admins can determine whether users experienced delays, and to what extent the delays are due to overload without autoscaling.
 
-**How can I get notified that I\u2019m approaching my max capacity?**
+**How can I get notified that I'm approaching my max capacity?**
 
 The **Capacity management** page in the Power BI admin portal has a utilization notification checkbox. Users can choose the threshold at which an alert will be triggered (default is 80%) and the email address to which utilization alerts should be sent.
 
