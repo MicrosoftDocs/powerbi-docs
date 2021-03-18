@@ -29,6 +29,10 @@ For workspaces in shared capacity:
 For workspaces in Premium capacity:
 - There is a limit of 100 TB per Premium capacity.
 - There is no per-user storage limit.
+- Workspace storage usage will be shown as 0 (as shown in below screenshot) if workspace is assigned to a premium capacity. 
+
+  ![image](https://user-images.githubusercontent.com/23200557/111704140-e39a1880-87fb-11eb-9f5e-4ee2bbd387c2.png)
+
 
 Read about other features of the [Power BI pricing model](https://powerbi.microsoft.com/pricing).
 
