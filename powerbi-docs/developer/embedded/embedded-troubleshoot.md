@@ -60,7 +60,7 @@ Error messages within the Azure portal or the Power BI app registration page men
 
 At least one user must be signed up for Power BI. If you don't see **Power BI Service** listed within the API list, no user is signed up for Power BI.
 
-### What is the difference between object ID and principal object ID?
+### What is the difference between application object ID and principal object ID?
 
 When you register an Azure AD app, there are a two parameters called *object ID*. This section explains the purpose of each parameter, and how to obtain it.
 
