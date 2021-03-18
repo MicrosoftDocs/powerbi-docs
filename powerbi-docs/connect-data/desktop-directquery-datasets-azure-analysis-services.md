@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/17/2020
+ms.date: 02/23/2021
 LocalizationGroup: Connect to data
 ---
 # Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)
@@ -90,7 +90,7 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
 
     ![Unexpected date hierarchy behavior](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-07.png)
 
-    For more information on using date columns versus date hierarchies, visit this article.
+    For more information on using date columns versus date hierarchies, visit [this article](../transform-model/desktop-auto-date-time.md).
 
 - You may see unuseful error messages when using AI features with a model that has a DirectQuery connection to Azure Analysis Services. 
 
@@ -117,15 +117,11 @@ There are also a few **limitations** you need to keep in mind:
 
 - Using DirectQuery on datasets from “My workspace” is not currently supported. 
 
-- Deleting connections to remote sources that use DirectQuery is not currently supported.
-
 - Using Power BI Embedded with datasets that include a DirectQuery connection to a Power BI datasets or Azure Analysis Services model is not currently supported.
 
 - Format strings on columns and measures from a remote source are not imported to the composite model.
 
 - Calculation groups on remote sources are not supported, with undefined query results.
-
-- Some queries may return wrong results when there's a relationship between calculated tables and table(s) in a remote source. Creating calculated tables over a remote dataset isn't supported, although it isn't currently blocked in the interface.
 
 - Sort by column isn't supported at this time.
 

@@ -971,8 +971,13 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/fundamentals/service-whats-new.md",
+            "redirect_url": "/power-bi/fundamentals/desktop-latest-update",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-premium-release-notes.md",
-            "redirect_url": "/power-bi/fundamentals/service-whats-new",
+            "redirect_url": "/power-bi/fundamentals/desktop-latest-update",
             "redirect_document_id": false
         },
         {
@@ -3692,7 +3697,7 @@
         },
         {
             "source_path": "powerbi-docs/service-whats-new.md",
-            "redirect_url": "/power-bi/fundamentals/service-whats-new",
+            "redirect_url": "/power-bi/fundamentals/desktop-latest-update",
             "redirect_document_id": true
         },
         {
@@ -3844,5 +3849,15 @@
             "source_path": "powerbi-docs/admin/power-bi-whitelist-urls.md",
             "redirect_url": "/power-bi/admin/power-bi-allow-list-urls",
             "redirect_document_id": false
-        }      ]
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-tutorial-facebook-analytics.md",
+            "redirect_url": "/power-bi/connect-data/desktop-data-sources",
+            "redirect_document_id": false
+        },        
+        {
+            "source_path": "powerbi-docs/connect-data/service-facebook-connector.md",
+            "redirect_url": "/power-bi/connect-data/service-get-data",
+            "redirect_document_id": false
+        }      ]           
 }

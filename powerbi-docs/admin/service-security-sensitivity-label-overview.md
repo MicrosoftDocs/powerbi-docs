@@ -74,7 +74,6 @@ Sensitivity labels can also be applied in Power BI Desktop. This makes it possib
 
 >[!NOTE]
 >* In this preview release, some limitations may apply. See [Limitations](#limitations).
->* To be able to use sensitivity labels in Power BI Desktop, you must first [enable the information protection preview feature](service-security-apply-data-sensitivity-labels.md#apply-sensitivity-labels-in-power-bi-desktop-preview) and then restart the program. If the program crashes after restart, it may be because your machine lacks the required Visual C++ redistributable runtime library version. If you experience such a crash, visit the [Microsoft Visual C++ 2015 Redistributable Update 3 download page](https://www.microsoft.com/download/details.aspx?id=53587) for instructions about how to download and install the update. After installing the update, try launching Desktop again.
 
 If you apply a sensitivity label in Desktop, when you publish your work to the service, or when you upload a .pbix file of that work to the service, the label travels with the data into the service. In the service, the label will be applied to both the dataset and the report that you get with the file. If the dataset and report already have sensitivity labels, those labels will be overwritten by the label coming from Desktop.
  
@@ -99,6 +98,10 @@ The following image shows how a dataset's sensitivity label is automatically app
 
 >[!NOTE]
 >If for any reason the sensitivity label can't be applied on the new report or dashboard, Power BI **will not** block creation of the new item.
+
+## Sensitivity label inheritance from data sources (preview)
+
+Power BI datasets that connect to sensitivity-labeled data in supported data sources can inherit those labels so that the data remains classified and secure when brought into Power BI. Currently, Azure Synapse Analytics (formerly SQL Data Warehouse) and Azure SQL Database are supported. See [Sensitivity label inheritance from data sources](service-security-sensitivity-label-inheritance-from-data-sources.md) to learn how inheritance from data sources works and how to enable it for your organization.
 
 ## Sensitivity labels and protection on exported data
 

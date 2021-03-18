@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 1/13/2021
+ms.date: 3/10/2021
 LocalizationGroup: Premium
 ---
 # Power BI Premium Per User FAQ (preview)
@@ -31,11 +31,11 @@ This article groups questions and answers into the following categories:
 
 2.	**When will it be available for purchase?**
 
-    Development is ongoing, and we do not anticipate PPU releasing to GA until 2021. Until general availability, the public preview is available to all organizations and is free of charge.
+    Premium per user will be generally available on April 2, 2021. 
 
 3.	**Do I need a Power BI Pro AND a Premium Per User license?**
 
-    No, you get all the capabilities of Power BI Pro with Premium Per User license.
+    If you purchase the standalone Premium per user license for $20, you don't need a separate Pro license as it will provide both Pro and PPU capabilities.  If you already have a Pro license, either through a standalone purchase or through Office 365 E5, there is a Premium per user add-on SKU you may purchase for $10, which just adds the Premium per user capabilities to your account.  
 
 4.	**How do I get a trial?**
 
@@ -43,7 +43,7 @@ This article groups questions and answers into the following categories:
     
 5.	**My initial trial has expired and we're still in the preview period.  How do I extend/renew my trial for Premium per user during the preview period?**
 
-    For customers who are using the in-product trial, you may initiate a new trial any time after your original trial expires by clicking on your profile icon in the upper-right hand corner of the portal.  You'll see an option to opt-in to the trial once again.  Doing so will initiate another 60 day trial.  This will continue to be an option throughout the preview period.  
+    For customers who are using the in-product trial, you may initiate a new trial any time after your original trial expires by clicking on your profile icon in the upper-right hand corner of the portal.  You'll see an option to opt in to the trial once again.  Doing so will initiate another 60-day trial.  This will continue to be an option throughout the preview period.  
     
     For customers who are using the trial offered through Microsoft 365, your tenant administrator may extend your original 30-day trial for another 30 days. This is the maximum length of time that trial can be extended.
 
@@ -88,7 +88,7 @@ This article groups questions and answers into the following categories:
 
 7.	**Are the capacity APIs available for Premium Per User?**
 
-    A limited set of the APIs are available to allow movement of workspaces, but you cannot do things like turn off workloads, and other such activities.  
+    A limited set of the APIs is available to allow movement of workspaces, but you cannot do things like turn off workloads, and other such activities.  
     
 7.	**Are service principals supported with Premium Per User workspaces?**
 
@@ -127,7 +127,7 @@ This article groups questions and answers into the following categories:
 
 7.	**Will the export API be available for Premium Per User?**
 
-    This is currently available for paginated reports, and is restricted to a single call once every 5 minutes.  Power BI reports are not supported at this time.  
+    This is currently available for paginated reports, and is restricted to a single call once every 5 minutes on a per user basis.  Power BI reports are not supported at this time.  
 
 8.	**How will e-mail subscriptions work in PPU?**
 
@@ -145,7 +145,7 @@ This article groups questions and answers into the following categories:
 
     No. Since the dataset resides in a Premium Per User workspace, it will not be viewable for users without a license, even though they can access the report in the non-PPU workspace.
 
-12.	**Can I refresh multiple 10 GB data models at the same time?**
+12.	**Can I refresh multiple 100 GB data models at the same time?**
 
     You are subject to the same limitations that are imposed for parallel refreshes in Premium Gen2.
 
@@ -155,7 +155,7 @@ This article groups questions and answers into the following categories:
 
 14.	**Can I have a dataflow run in a Premium per user workspace, be imported into a Power BI dataset in another workspace, and users who consume that content not need a Premium per user license?**
 
-    As long as the Power BI report author has a Premium Per User license, this is possible during the preview period for PPU.
+    No, this action is not supported.
 
 15. **Can I use the Power BI mobile apps with Premium per user?**
 

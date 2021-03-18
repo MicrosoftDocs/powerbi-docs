@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: subject-monitoring
-ms.date: 01/14/2021
+ms.date: 03/04/2021
 ---
 
 # Monitoring Power BI Embedded data reference
@@ -29,6 +29,8 @@ Resource Provider and Type: [Microsoft.PowerBIDedicated/capacities](/azure/azure
 
 | Name | Metric | Unit | Description |
 |:---|:-------|:-----|:------------|
+|CPU (Gen2) |cpu_metric |Percent |CPU utilization. Supported only for Power BI Embedded Generation 2 resources. |
+|Overload (Gen2) |overload_metric |0/1 |Resource overload, 1 if resource is overloaded, otherwise 0. Supported only for Power BI Embedded Generation 2 resources. |
 |Memory (Gen1) |memory_metric               |Bytes        |Memory. Range 0-3 GB for A1, 0-5 GB for A2, 0-10 GB for A3, 0-25 GB for A4, 0-50 GB for A5 and 0-100 GB for A6. Supported only for Power BI Embedded Generation 1 resources. |
 |Memory Thrashing (Datasets) (Gen1) |memory_thrashing_metric     |Percent      |Average memory thrashing. Supported only for Power BI Embedded Generation 1 resources. |
 |QPU High Utilization (Gen1) |qpu_high_utilization_metric |Count        |QPU High Utilization In Last Minute, 1 For High QPU Utilization, Otherwise 0. Supported only for Power BI Embedded Generation 1 resources. |
@@ -129,6 +131,14 @@ The following table lists the operations related to Power BI Embedded that may b
 ## Schemas
 
 Power BI Embedded uses the **Power BI Dedicated** schema.
+
+## Example script for scaling a capacity
+
+To scale a capacity resource, you can use the [ScaleUp-Automation-RunBook.ps1](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/ScaleUp-Automation-RunBook.ps1) PowerShell runbook script.
+
+The script uses Power BI and ARM REST APIs, and can be called in Azure automation, and triggered by Azure alert.
+
+You can either copy the script, or download it as part of the [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples) repository, by selecting the green *code* button, and downloading the ZIP.
 
 ## Next steps
 

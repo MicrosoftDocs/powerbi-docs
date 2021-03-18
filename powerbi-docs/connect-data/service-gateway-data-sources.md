@@ -45,7 +45,9 @@ If you don't have a gateway installed yet, see [Install an on-premises data gate
    :::image type="content" source="media/service-gateway-data-sources/basic-auth.png" alt-text="Basic authentication settings.":::
 
     > [!NOTE]
-    > If the selected authentication method is OAuth, any query that runs longer than the OAuth token expiration policy may fail.
+    > If the selected authentication method is OAuth:
+    > - Any query that runs longer than the OAuth token expiration policy may fail.
+    > - Cross-tenant AAD accounts are not supported 
 
 6. Under **Advanced settings**, you could configure [Single Sign-On (SSO)](service-gateway-sso-overview.md) for your data source. 
 

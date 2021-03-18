@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 12/14/2020
+ms.date: 03/10/2021
 ms.custom: 
 LocalizationGroup: Administration
 ---
@@ -304,12 +304,17 @@ There are a few considerations to keep in mind while working with private links 
 * If Internet access is disabled, and if the dataset or dataflow is connecting to a Power BI dataset or dataflow as a data source, the connection will fail.
 * Usage metrics do *not* work when Private Links is enabled.
 * Publish to Web is not supported (and grayed out) when you enable **Block Public Internet access** in Power BI.
-
+* [Microsoft Information Protection (MIP)](/microsoft-365/compliance/information-protection?view=o365-worldwide) does not currently support network isolation. This means that in [Power BI Desktop](service-security-sensitivity-label-overview.md#sensitivity-labels-in-power-bi-desktop-preview) running in an isolated network, the Sensitivity button will be grayed out, label information will not appear, and decryption of *.pbix* files will fail.
+* Gateways enabled for Power BI private links will not work properly with non-Power BI scenarios. 
 
 ## Next steps
 
 - [Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  
 - [Understanding the Power BI admin role](service-admin-role.md)  
 - [Auditing Power BI in your organization](service-admin-auditing.md)  
+
+The following video shows how to connect a mobile device to Power BI, using private links:
+
+> [!VIDEO https://www.youtube.com/embed/-3yFtlZBpqs]
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
