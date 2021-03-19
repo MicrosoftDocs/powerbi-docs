@@ -11,6 +11,8 @@
       href: service-admin-where-is-my-tenant-located.md
     - name: What is Power BI Premium?
       href: service-premium-what-is.md
+    - name: Understanding Power BI Premium Gen2 (preview)
+      href: service-premium-concepts.md
   - name: Concepts
     expanded: true
     items:

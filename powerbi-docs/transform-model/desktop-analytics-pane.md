@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 01/10/2020
+ms.date: 03/17/2021
 LocalizationGroup: Create reports
 ---
 # Use the Analytics pane in Power BI Desktop
@@ -131,7 +131,7 @@ The *percentile line* is only available when using imported data in Power BI Des
 
 You can do all sorts of things with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
-* [What's new in Power BI Desktop](../fundamentals/desktop-latest-update.md)
+* [What's new in Power BI?](../fundamentals/desktop-latest-update.md)
 * [Get Power BI Desktop](../fundamentals/desktop-get-the-desktop.md)
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Query overview with Power BI Desktop](desktop-query-overview.md)
