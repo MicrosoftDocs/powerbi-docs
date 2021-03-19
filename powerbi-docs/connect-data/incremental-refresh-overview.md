@@ -2,7 +2,7 @@
 title: Incremental refresh for datasets in Power BI
 description: Describes incremental refresh features in Power BI
 author: minewiskan
-ms.author: minewiskan
+ms.author: owend
 ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources

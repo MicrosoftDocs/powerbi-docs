@@ -2,7 +2,7 @@
 title: Troubleshooting incremental refresh in Power BI
 description: Describes common troubleshooting scenarios for incremental refresh.
 author: minewiskan
-ms.author: minewiskan
+ms.author: owend
 ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
@@ -48,7 +48,7 @@ Troubleshooting incremental refresh issues in the service will differ depending 
 
 **Solution:** For datasets on a Premium capacity, you can bootstrap the initial refresh operation. Bootstrapping allows the service to create table and partition objects for the dataset, but not load and process historical data into any of the partitions. To learn more, see [Prevent timeouts on initial full refresh](incremental-refresh-xmla.md#prevent-timeouts-on-initial-full-refresh).
 
-**Problem:** In some cases, datasets configured for [Large dataset storage format](service-premium-large-models.md) can be slower for refresh operations. For datasets on a Premium Gen2 capacity or a Premium Per User capacity, you may see the following error:
+**Problem:** In some cases, datasets configured for [Large dataset storage format](../admin/service-premium-large-models.md) can be slower for refresh operations. For datasets on a Premium Gen2 capacity or a Premium Per User capacity, you may see the following error:
 
 “Resource Governing: The operation failed because of insufficient memory. If the dataset is hosted on Premium capacity/server, please consider upgrading the capacity to one with more memory or reducing the memory footprint of your operation. Additional information: Requested 10768269KB, Command Memory Limit 10768269KB, Database Size Before Command Execution 15446131KB.”
 

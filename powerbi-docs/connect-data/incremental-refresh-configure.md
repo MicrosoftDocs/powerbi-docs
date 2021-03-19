@@ -2,7 +2,7 @@
 title: Incremental refresh in Power BI
 description: Describes how to configure incremental refresh
 author: minewiskan
-ms.author: minewiskan
+ms.author: owend
 ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
@@ -93,7 +93,7 @@ After you've defined RangeStart and RangeEnd parameters, and filtered data based
 
 1. In **Refresh rows where column "columnname" is in the last:**, specify the *refresh* period. All rows with dates in this period will be refreshed in the dataset each time a manual or scheduled refresh operation is performed.
 
-    ![Table context menu](media/incremental-refresh-configure/incremental-refresh-policy-dialog.png)
+    ![Refresh policy dialog](media/incremental-refresh-configure/incremental-refresh-policy-dialog.png)
 
 1. Select optional advanced settings:
 

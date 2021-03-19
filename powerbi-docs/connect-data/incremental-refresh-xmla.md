@@ -2,7 +2,7 @@
 title: Advanced incremental refresh with the XMLA endpoint in Power BI
 description: Describes advanced incremental refresh features with the XMLA endpoint.
 author: minewiskan
-ms.author: minewiskan
+ms.author: owend
 ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
@@ -13,7 +13,7 @@ LocalizationGroup:
 
 # Advanced incremental refresh with the XMLA endpoint
 
-Datasets in a Premium capacity with the [XMLA endpoint](service-premium-connect-tools.md) enabled for **read-write** operations allow more advanced dataset refresh, partition management, and metadata only deployments through tool, scripting, and API support. In addition, refresh operations through the XMLA endpoint are not limited to [48 refreshes per day](../connect-data/refresh-data.md#data-refresh), and the [scheduled refresh timeout](../connect-data/refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout) is not imposed.
+Datasets in a Premium capacity with the [XMLA endpoint](../admin/service-premium-connect-tools.md) enabled for **read-write** operations allow more advanced dataset refresh, partition management, and metadata only deployments through tool, scripting, and API support. In addition, refresh operations through the XMLA endpoint are not limited to [48 refreshes per day](../connect-data/refresh-data.md#data-refresh), and the [scheduled refresh timeout](../connect-data/refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout) is not imposed.
 
 ## Partitions
 
