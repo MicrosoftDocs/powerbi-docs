@@ -32,7 +32,7 @@ Most problems that occur when configuring incremental refresh have to do with qu
 
 You can also specify a short date/time period in the RangeStart and RangeEnd parameters that will include no more than a few thousand rows. If the load of filtered data from the data source to the model takes a long time and is process intensive, it likely means the query isn't being folded.
 
-If you determine the query isn't being folded, refer to [Query folding guidance in Power BI Desktop](../guidance/power-query-folding.md) and [Power Query query folding](/power-query/power-query-folding) for help identifying what may be preventing query folding and how, or if, the data source can even support query folding.
+If you determine the query isn't being folded, refer to [Query folding guidance in Power BI Desktop](../guidance/power-query-folding.md) and [Power Query query folding](/power-query/power-query-folding) for help with identifying what may be preventing query folding and how, or if, the data source can even support query folding.
 
 ## Dataset refresh in the service
 
@@ -42,7 +42,7 @@ Troubleshooting incremental refresh issues in the service will differ depending 
 
 **Cause:** Scheduled refresh for datasets on a share capacity timeout after two hours. This timeout is increased to five hours for datasets for a Premium capacity. Data source systems may also impose a query return size limit or query timeout.
 
-**Solution:** Verify query folding is occuring. Use a tracing tool at the data source to determine the query being passed is a single query that includes a filter based on the RangeStart and RangeEnd parameters. If not, verify query folding is occuring in the Power BI Desktop model when loading a small filtered amount of data into the model. If not, get it fixed in the model first, perform a metadata only update to the dataset (via XMLA endpoint), or if on a shared capacity, delete the incomplete dataset in the service, re-publish, and try an initial refresh operation again.
+**Solution:** Verify query folding is occurring. Use a tracing tool at the data source to determine the query being passed is a single query that includes a filter based on the RangeStart and RangeEnd parameters. If not, verify query folding is occurring in the Power BI Desktop model when loading a small filtered amount of data into the model. If not, get it fixed in the model first, perform a metadata only update to the dataset (via XMLA endpoint), or if on a shared capacity, delete the incomplete dataset in the service, republish, and try an initial refresh operation again.
 
 **Solution:** In many cases, the timeout is caused by the amount of data that must be queried and loaded into the dataset partitions exceeds the time limits imposed by the capacity. Reduce the size or complexity of your dataset, or consider breaking the dataset into smaller pieces.
 
@@ -61,11 +61,11 @@ Troubleshooting incremental refresh issues in the service will differ depending 
 If a date is changed accidentally, then two issues can occur: Users notice some totals changed in the historical data (that is not supposed to happen), or during a refresh an error is returned indicating a unique value is not unique.
 For the latter, this can happen when the table with incremental refresh configured is used in a 1:N relationship with another table as the 1 side and should have unique values. When the data is changed (for a specific id) that id then appears in another partition and the Analysis Services engine will detect the value is not unique.
 
-**Solution:** In the case there is a business need to change some past data from the dates, one solution is to use the XMLA endpoint to refresh all partitions from the point where was located the data to the current partitions, thus keeping the 1 side of the relationship unique.
+**Solution:** Where there is a business need to change some past data from the dates, one solution is to use the XMLA endpoint to refresh all partitions from the point where was located the data to the current partitions, thus keeping the 1 side of the relationship unique.
 
-**Cause:** Some data sources, like Azure Data Explorer, Log Analytics, and Application Insights have a limit of 64MB (compressed) on data that can be returned for an external query. Azure Data Explorer may return an explicit error, but for others like Log Analytics and Application Insights, the data returned is just truncated.
+**Cause:** Some data sources, like Azure Data Explorer, Log Analytics, and Application Insights have a limit of 64 MB (compressed) on data that can be returned for an external query. Azure Data Explorer may return an explicit error, but for others like Log Analytics and Application Insights, the data returned is truncated.
 
-**Solution:** Specify smaller refresh and store periods in the policy. For example, if you specified a refresh period of 1 year, and a query error is returned or data returned is truncated, try a refresh period of 12 *months*. You'll want to ensure queries for the current refresh partition or any historical partitions based on the Refresh and Store periods do not return more than 64mb of data.
+**Solution:** Specify smaller refresh and store periods in the policy. For example, if you specified a refresh period of one year, and a query error is returned or data returned is truncated, try a refresh period of 12 *months*. You'll want to ensure queries for the current refresh partition or any historical partitions based on the Refresh and Store periods do not return more than 64 MB of data.
 
 ## See also
 

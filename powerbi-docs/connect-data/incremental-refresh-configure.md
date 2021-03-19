@@ -61,7 +61,7 @@ With RangeStart and RangeEnd parameters defined, apply a filter based on *condit
 
 This task is **optional**.
 
-The data type of the RangeStart and RangeEnd parameters must be of date/time data type. However, for many data sources, tables do not contain a column of date/time data type but instead have a date column of integer surrogate keys in the form of *yyyymmdd*. You can create a function that converts the date/time value in the parameters to match the integer surrogate key of the data source table. The function is then called in a filter step. This step is required if the data source table contains *only* a surrogate key as integer data type.
+The data type of the RangeStart and RangeEnd parameters must be of date/time data type. However, for many data sources, tables do not contain a column of date/time data type but instead have a date column of integer surrogate keys in the form of `yyyymmdd`. You can create a function that converts the date/time value in the parameters to match the integer surrogate key of the data source table. The function is then called in a filter step. This step is required if the data source table contains *only* a surrogate key as integer data type.
 
 1. In Power Query Editor, click **Get data** > **Blank Query**.
 
