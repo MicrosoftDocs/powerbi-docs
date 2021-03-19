@@ -116,7 +116,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Spark | Yes | Yes | Yes | Yes | No | Yes |
 | SparkPost | Yes | Yes | No | No | No | No |
 | SQL Server | Yes | Yes | Yes | Yes | Yes | Yes |
-| SQL Server Analysis Services | Yes | Yes | Yes | Yes | Yes | No |
+| SQL Server Analysis Services | Yes | No | Yes | Yes | Yes | No |
 | Stripe | Yes | Yes | No | No | No | No |
 | SurveyMonkey | Yes | Yes | No | Yes | No | No |
 | SweetIQ | Yes | Yes | No | No | No | No |
