@@ -47,10 +47,6 @@
       - name: Create reports and dashboards
         tocHref: /power-bi/create-reports/
         topicHref: /power-bi/create-reports/index
-        items:
-        - name: Create reports and dashboards
-          tocHref: /azure-maps/
-          topicHref: /power-bi/create-reports/index
       - name: Connect to data
         tocHref: /power-bi/connect-data/
         topicHref: /power-bi/connect-data/index
@@ -60,4 +56,3 @@
       - name: Transform, shape, model data
         tocHref: /power-bi/transform-model/
         topicHref: /power-bi/transform-model/index
-

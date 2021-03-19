@@ -197,8 +197,6 @@
         href: service-azure-sql-data-warehouse-with-direct-connect.md
       - name: "Azure SQL Database with DirectQuery"
         href: service-azure-sql-database-with-direct-connect.md
-      - name: "SQL Server Analysis Services live data in Power BI"
-        href: sql-server-analysis-services-tabular-data.md
     - name: Refresh data
       items: 
       - name: "Data refresh in Power BI"
