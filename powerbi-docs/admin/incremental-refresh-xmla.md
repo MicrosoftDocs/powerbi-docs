@@ -2,7 +2,7 @@
 title: Advanced incremental refresh with the XMLA endpoint in Power BI
 description: Describes advanced incremental refresh features with the XMLA endpoint.
 author: minewiskan
-ms.author: owend
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: 

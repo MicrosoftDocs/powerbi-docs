@@ -2,7 +2,7 @@
 title: Incremental refresh in Power BI
 description: Describes how to configure incremental refresh
 author: minewiskan
-ms.author: owend
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: 
