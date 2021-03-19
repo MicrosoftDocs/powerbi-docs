@@ -31,7 +31,7 @@ The beauty of incremental refresh is the service handles all of this for you bas
 
 ### Supported plans
 
-Incremental refresh is supported for Power BI Premium, Premium per user, and Power BI Pro shared subscriptions and datasets. To further extend incremental refresh scenarios by using advanced features supported with the XMLA endpoint, datasets in Premium per user workspaces or workspaces assigned to a Premium capacity are required.
+Incremental refresh is supported for Power BI Premium, Premium per user, and Power BI Pro datasets. To further extend incremental refresh scenarios by using advanced features supported with the XMLA endpoint, datasets in Premium per user workspaces or workspaces assigned to a Premium capacity are required.
 
 ### Supported data sources
 
