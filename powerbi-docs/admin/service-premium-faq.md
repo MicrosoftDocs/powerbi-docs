@@ -92,7 +92,7 @@ Autoscaling is subject to two limits, each if which is configured by Power BI ad
 
 * **Proactive limit** – a proactive limit sets the rate of expenses that Autoscale can generate, by limiting the number of autoscale v-cores a capacity can use. For example, by setting a maximum autoscale of v-cores to one v-core, you ensure that the maximum charge you can incur is 30 days of autoscaling with one v-core.
 
-* **Reactive limit** – you can also set a reactive limit to the cost for autoscaling, my setting an expenditure limit on the Azure subscription used with autoscale. If the subscription’s budget is exhausted, Power BI is prevented from using the v-core resources for that subscription, and autoscale shuts off. You can set a budget for the Azure subscription that autoscale uses by following the [Azure budget tutorial](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets).
+* **Reactive limit** – you can also set a reactive limit to the cost for autoscaling, by setting an expenditure limit on the Azure subscription used with autoscale. If the subscription’s budget is exhausted, Power BI is prevented from using the v-core resources for that subscription, and autoscale shuts off. You can set a budget for the Azure subscription that autoscale uses by following the [Azure budget tutorial](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets).
 
 
 **How does resource utilization cause Gen2 to autoscale?**
@@ -137,7 +137,7 @@ Your metrics report dataset retains 30 to 45 days of data. You can use the repor
 
 Utilization data does not currently indicate whether requests were throttled due to capacity being in *interactive request delay* mode. During the preview period, a property will be added to each utilization record to reflect throttled requests. The information will be added to the utilization app so admins can determine whether users experienced delays, and to what extent the delays are due to overload without autoscaling.
 
-**How can I get notified that I\u2019m approaching my max capacity?**
+**How can I get notified that I'm approaching my max capacity?**
 
 The **Capacity management** page in the Power BI admin portal has a utilization notification checkbox. Users can choose the threshold at which an alert will be triggered (default is 80%) and the email address to which utilization alerts should be sent.
 
