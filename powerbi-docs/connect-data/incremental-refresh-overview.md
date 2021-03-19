@@ -16,11 +16,10 @@ Incremental refresh extends scheduled refresh operations by providing automated 
 
 With incremental refresh:
 
-> [!div class="checklist"]
-> * **Refreshes are faster** - Only the most recent data that has changed needs to be refreshed.
-> * **Refreshes are more reliable** - Long-running connections to volatile data sources aren't necessary. Queries to source data run faster, reducing potential for network problems to interfere.
-> * **Resource consumption is reduced** - Less data to refresh reduces overall consumption of memory and other resources on both Power BI resources and source data systems.
-> * **Enables very large datasets** - Datasets with potentially billions of rows can grow without the need to fully refresh the entire dataset with each refresh operation.
+- **Refreshes are faster** - Only the most recent data that has changed needs to be refreshed.
+- **Refreshes are more reliable** - Long-running connections to volatile data sources aren't necessary. Queries to source data run faster, reducing potential for network problems to interfere.
+- **Resource consumption is reduced** - Less data to refresh reduces overall consumption of memory and other resources on both Power BI resources and source data systems.
+- **Enables very large datasets** - Datasets with potentially billions of rows can grow without the need to fully refresh the entire dataset with each refresh operation.
 
 For Power BI Desktop models with incremental refresh configured for one or more tables, when you first publish the model to the service, each table in the dataset has one partition containing all rows in the table. When you perform the first dataset refresh, tables with no incremental refresh policy defined will refresh all rows contained in that table's default single partition. Tables with an incremental refresh policy are partitioned according to the policy and the date/time for each row in the table. The partitions separate data that needs to be refreshed frequently from data that can be refreshed less frequently.
 
@@ -147,7 +146,7 @@ Keep in mind, refresh operations in the service run under UTC time. This can det
 After configuring an incremental refresh policy, you publish the model to the service. When publishing is complete, you can perform the initial refresh operation on the *dataset*.
 
 > [!IMPORTANT]
-> When published to the service from Power BI Desktop, you cannot download the PBIX back. 
+> When published to the service from Power BI Desktop, you cannot download the PBIX back.
 
 ## Refresh
 
