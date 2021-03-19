@@ -310,6 +310,16 @@
           href: /azure/azure-maps/power-bi-visual-understanding-layers?context=/power-bi/create-reports/context/context
         - name: "Add a bubble layer"
           href: /azure/azure-maps/power-bi-visual-add-bubble-layer?context=/power-bi/create-reports/context/context
+        - name: "Add a bar chart layer"
+          href: /azure/azure-maps/power-bi-visual-add-bar-chart-layer?context=/power-bi/create-reports/context/context
+        - name: "Add a reference layer"
+          href: /azure/azure-maps/power-bi-visual-add-reference-layer?context=/power-bi/create-reports/context/context
+        - name: "Add a tile layer"
+          href: /azure/azure-maps/power-bi-visual-add-tile-layer?context=/power-bi/create-reports/context/context
+        - name: "Show real-time traffic"
+          href: /azure/azure-maps/power-bi-visual-show-real-time-traffic?context=/power-bi/create-reports/context/context
+        - name: "Manage the Azure Maps visual in your organization"
+          href: /azure/azure-maps/power-bi-visual-manage-access?context=/power-bi/create-reports/context/context
       - name: "Matrix visuals"
         href: ../visuals/desktop-matrix-visual.md
       - name: "Power Apps visuals"
