@@ -7,12 +7,29 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 03/11/2021
+ms.date: 03/19/2021
 LocalizationGroup: Data from files
 ---
 # Dataflows limitations and considerations
 
 There are a few dataflow limitations across authoring, refreshes, and capacity management that users should keep in mind, as described in the following sections.
+
+## General limitations
+
+1. Feature parity across government environments can be found in the [Power BI feature availability for government](../../admin/service-govus-overview.md#power-bi-feature-availability) article.
+2. Deleted datasources are not removed from the dataflow datasource page. This is a benign behavior and does not impact the refresh or editing of dataflows. In **Diagram View**, deleted data sources appear as lineage for a dataflow.
+3. Deleted datasources  will still appear in the Setting page in the gateway drop-down.
+4. *Depth* equates to dataflows linked to other dataflows. The current maximum depth is 32.
+5. *Breadth* equates to entities within a dataflow.
+    * There is no guidance or limits for the optimal number of entities is in a dataflow, however, shared dataflows have a refresh limit of two hours per entity, and three per dataflow. So if you have two entities, and each takes two hours, you shouldn't put them in the same dataflow.
+    * For Power BI Premium, guidance and limits are driven by individual use cases rather than specific requirements. The only for Power BI Premium is a 24-hour refresh per dataflow.
+6. A Power BI Premium subscription is required in order to refresh more than ten dataflows cross workspace
+7. PowerQuery limitations are found in the PowerQuery Online usage limits article.
+8. Power BI dataflows do not support use of global variables in a URL argument.
+9. Multi-Geo is currently not supported.
+10. Vnet support is achieved by using a gateway.
+11. When using *Computed entities* with gateway data sources, the data ingestion should be performed in different data sources than the computations. The computed entities should build upon entities that are only used for ingestion, and not ingest data within their own mash-up steps.
+
 
 ## Dataflow Authoring
 
@@ -41,7 +58,7 @@ More about supported Dataflows REST APIs can be found in the [REST API reference
 
 ## Dataflows in Shared
 
-There are  limitations for Dataflows in shared capacities:
+There are limitations for Dataflows in shared capacities:
 
 * When refreshing Dataflows, timeouts in Shared are 2 hours per table, and 3 hours per Dataflow
 * Linked tables cannot be created in shared Dataflows, although they can exist within the Dataflow as long as the *Load Enabled* property on the query is disabled
@@ -49,7 +66,7 @@ There are  limitations for Dataflows in shared capacities:
 * AutoML and Cognitive services are not available in shared Dataflows
 * Incremental refresh does not work in shared Dataflows
 
-## Dataflows in Premium
+## Dataflows in Power BI Premium
 
 Dataflows that exist in Premium have the following limitations and considerations.
 
@@ -77,14 +94,14 @@ Dataflows that exist in Premium have the following limitations and consideration
 * While using the Compute engine, there is an approximate 10% to 20% initial increase in time for data ingestion.
 
   1. This only applied to the first dataflow that is on the compute engine, and reads data from the data source
-  2. Subsequent dataflows, that use the source one will not incur the same penalty
+  2. Subsequent dataflows that use the source dataflow will not incur the same penalty
 
 * Only certain operations make use of the compute engine, and only when used through a linked table or as a computed table. A full list of operations is available in [this blog post](http://petcu40.blogspot.com/2019/06/m-folding-in-enhanced-engine-of-power.html).
 
 
 **Capacity Management:**
 
-* By design, the Premium Power BI Capacities have an internal resource manager which throttles the workloads in different ways when the capacity is running on low memory.
+* By design, the Premium Power BI Capacities have an internal Resource Manager which throttles the workloads in different ways when the capacity is running on low memory.
 
   1. For Dataflows, this throttling pressure reduces the number of available M Containers
   2. The memory for Dataflows can be set to 100%, with an appropriately sized container for your data sizes, and the workload will manage the number of containers appropriately
@@ -95,6 +112,21 @@ Dataflows that exist in Premium have the following limitations and consideration
 
 * When creating a dataset in Power BI Desktop, and then publishing it to the Power BI service, ensure the credentials used in Power BI Desktop for the Dataflows data source are the same credentials used when the dataset is published to the service.
   1. Failing to ensure those credentials are the same results in a *Key not found* error upon dataset refresh
+
+
+## ADLS limitations
+
+1. ADLS is not available in GCC, GCC High or DOD environments. See [Power BI for US government customers](../../admin/service-govus-overview.md) for more information.
+2. You must be assigned as an owner of the resource, due to changes in the ADLS Gen 2 APIs.
+3. Azure subscription migration is not supported, but there are two alternatives to do so:
+    * First approach: after migration, the user can detach workspaces and reattach them. If using the tenant level account, you must detach all workspaces then detach at the tenant level, and reattach. This can be undesirable for customers who don't want to delete all of their dataflows, or have many workspaces. 
+    * Second approach: if the previous approach isn't feasible, submit a support request to change the subscription ID in the database.
+4. ADLS doesn't support most elements in the list in the [Directories and file names](/rest/api/storageservices/naming-and-referencing-shares--directories--files--and-metadata) section of the article for workspace naming and dataflow naming, due to the following limitations:
+    * Power BI either returns an unhelpful error, or allows the process to happen but the refresh will fail. 
+5. Cross tenant ADLS subscriptions are not supported. The ADLS attached to Power BI must be part of the same Azure tenant that Power BI uses for Azure Active Directory (AAD).
+
+## On-premises 
+
 
 ## Next steps
 The following articles provide more information about dataflows and Power BI:
