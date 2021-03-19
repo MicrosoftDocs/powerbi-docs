@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting incremental refresh in Power BI
+title: Troubleshoot incremental refresh in Power BI
 description: Describes common troubleshooting scenarios for incremental refresh.
 author: minewiskan
 ms.author: owend
@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 03/19/2021
 LocalizationGroup: 
 ---
-# Troubleshooting incremental refresh
+# Troubleshoot incremental refresh
 
 Because there are two phases when implementing an incremental refresh solution, the first being configuring parameters, filtering, and a policy in Power BI Desktop, and the second being the initial dataset refresh operation and subsequent refreshes in the service, we will look at troubleshooting separately for each of these phases.
 
