@@ -31,7 +31,7 @@ There are a few dataflow limitations across authoring, refreshes, and capacity m
 11. When using *Computed entities* with gateway data sources, the data ingestion should be performed in different data sources than the computations. The computed entities should build upon entities that are only used for ingestion, and not ingest data within their own mash-up steps.
 
 
-## Dataflow Authoring
+## Dataflow authoring
 
 When authoring dataflows, users should be mindful of the following considerations:
 
@@ -46,7 +46,7 @@ Because dataflows authoring is done in the  Power Query Online (PQO) environment
 
 * Using the Web.Page connector requires a gateway
 
-## API Considerations
+## API considerations
 
 More about supported Dataflows REST APIs can be found in the [REST API reference](/rest/api/power-bi/dataflows). Here are some considerations to keep in mind:
 
@@ -56,7 +56,7 @@ More about supported Dataflows REST APIs can be found in the [REST API reference
 
 * Dataflows can be overwritten with the *CreateOrOverwrite* parameter, if they have initially been created using the import API
 
-## Dataflows in Shared
+## Dataflows in shared
 
 There are limitations for Dataflows in shared capacities:
 
@@ -66,7 +66,7 @@ There are limitations for Dataflows in shared capacities:
 * AutoML and Cognitive services are not available in shared Dataflows
 * Incremental refresh does not work in shared Dataflows
 
-## Dataflows in Power BI Premium
+## Dataflows in Premium
 
 Dataflows that exist in Premium have the following limitations and considerations.
 
@@ -124,9 +124,6 @@ Dataflows that exist in Premium have the following limitations and consideration
 4. ADLS doesn't support most elements in the list in the [Directories and file names](/rest/api/storageservices/naming-and-referencing-shares--directories--files--and-metadata) section of the article for workspace naming and dataflow naming, due to the following limitations:
     * Power BI either returns an unhelpful error, or allows the process to happen but the refresh will fail. 
 5. Cross tenant ADLS subscriptions are not supported. The ADLS attached to Power BI must be part of the same Azure tenant that Power BI uses for Azure Active Directory (AAD).
-
-## On-premises 
-
 
 ## Next steps
 The following articles provide more information about dataflows and Power BI:
