@@ -25,7 +25,7 @@ The list below uses present tense, but all tenses are recognized in most cases. 
 
 
 |Category  |Keywords  |
-|---------|---------|---------|
+|---------|---------|
 |**Aggregates**     | total, sum, amount, number, quantity, count, average, most, least, fewest, largest, smallest, highest, biggest, maximum, max, greatest, lowest, littlest, minimum, min          |
 |     |         |         
 **Articles**     |  a, an, the              |

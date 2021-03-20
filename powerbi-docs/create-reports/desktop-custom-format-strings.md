@@ -68,9 +68,9 @@ A user-defined format expression for numbers can have from one to three sections
 
 Here are examples of different formats for different value strings:
 
-|   | **Format Strings** |   |   |   |
+|Values   | Format String | Format String  | Format String  | Format String  |
 | --- | --- | --- | --- | --- |
-| **Values** | **0.00;-0.0;&quot;Zero&quot;** | **0.00;;** | **0.00;-0.0;** | **0.00;** |
+| **0.00;-0.0;&quot;Zero&quot;** | **0.00;;** | **0.00;-0.0;** | **0.00;** |
 | **-1.234** | -1.2 | &quot;&quot; | -1.2 | &quot;&quot; |
 | **0** | &quot;Zero&quot; | &quot;&quot; | &quot;&quot; | 0.00 |
 | **1.234** | 1.23 | 1.23 | 1.23 | 1.23 |
