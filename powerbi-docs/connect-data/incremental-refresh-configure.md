@@ -15,9 +15,7 @@ LocalizationGroup:
 
 This article describes how to configure incremental refresh for **datasets**. To learn about configuring incremental refresh for dataflows, see [Incremental refresh in Premium features of dataflows](../transform-model/dataflows/dataflows-premium-features.md#incremental-refresh).
 
-Configuring incremental refresh includes creating RangeStart and RangeEnd parameters, applying filters, and defining an incremental refresh policy. After publishing to the service, you perform an initial refresh operation on the dataset. The initial refresh operation, and subsequent refresh operations apply the incremental refresh policy you defined. Before completing these steps, be sure to fully understand the functionality described in [Incremental refresh for datasets](incremental-refresh-overview.md).
-
-Examples in this article show configuring incremental refresh for a single fact table, FactInternetSales, loading filtered data from the sample AdventureWorksDW database. For models with more than one fact table, incremental refresh policies can be defined for multiple tables in the same dataset by using the same RangeStart and RangeEnd parameters.
+Configuring incremental refresh includes creating RangeStart and RangeEnd parameters, applying filters, and defining an incremental refresh policy. After publishing to the service, you perform an initial refresh operation on the dataset. The initial refresh operation, and subsequent refresh operations apply the incremental refresh policy you defined. Before completing these steps, be sure you fully understand the functionality described in [Incremental refresh for datasets](incremental-refresh-overview.md).
 
 ## Create parameters
 
@@ -90,7 +88,7 @@ When your RangeStart and RangeEnd parameters, filtering, and refresh parameters 
 
 ## Refresh dataset
 
-In the service, refresh the dataset. The first refresh will load both new and updated data in the refresh period as well historical data for the entire store period. Depending on the amount of data, this can take quite a long time.  Subsequent refreshes, either manual or scheduled are typically much faster because the incremental refresh policy is applied and only data for the period specified in **Refresh rows where column \<dateColumnName> is in the last:** policy setting is refreshed.
+In the service, refresh the dataset. The first refresh will load both new and updated data in the refresh period as well historical data for the entire store period. Depending on the amount of data, this can take quite a long time.  Subsequent refreshes, either manual or scheduled are typically much faster because the incremental refresh policy is applied and only data for the period specified in the refresh policy setting is refreshed.
 
 ## Convert DateTime to integer
 
@@ -113,7 +111,6 @@ The data type of the RangeStart and RangeEnd parameters must be of date/time dat
     `= Table.SelectRows(#"Sorted Rows", each [OrderDateKey] > DateKey(RangeStart) and [OrderDateKey] <= DateKey(RangeEnd))`
 
     ![Apply DateKey filter](media/incremental-refresh-configure/apply-datekey-filter.png)
-
 
 ## See also
 

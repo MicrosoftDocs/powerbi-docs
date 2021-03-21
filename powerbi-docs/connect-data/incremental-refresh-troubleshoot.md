@@ -67,6 +67,10 @@ For the latter, this can happen when the table with incremental refresh configur
 
 **Solution:** Specify smaller refresh and store periods in the policy. For example, if you specified a refresh period of one year, and a query error is returned or data returned is truncated, try a refresh period of 12 *months*. You'll want to ensure queries for the current refresh partition or any historical partitions based on the Refresh and Store periods do not return more than 64 MB of data.
 
+**Problem**: Refresh fails because of partition-key conflicts.
+
+**Cause**: This can occur when a date in the date column at the data source is updated. The filter on the date column is used to dynamically partition the data into ranges in the Power BI service. Incremental refresh isn't designed to support cases where the filtered date column is updated in the source system. An update is interpreted as an insertion and a deletion, not an actual update. If the deletion occurs in the historical range and not the incremental range, it won't get picked up. This can cause data refresh failures due to partition-key conflicts.
+
 ## See also
 
 [Data refresh in Power BI](../connect-data/refresh-data.md)  
