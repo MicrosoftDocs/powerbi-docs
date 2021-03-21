@@ -7,14 +7,14 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 3/1/2021
+ms.date: 3/19/2021
 ms.custom: seodec18
 LocalizationGroup: Premium
 ---
 
 # Dataset connectivity with the XMLA endpoint
 
-Power BI Premium workspaces and datasets at the 1500 and higher compatibility level support open-platform connectivity from Microsoft and third-party client applications and tools by using an *XMLA endpoint*.
+Power BI Premium, Premium per User and Power BI Embedded workspaces support open-platform connectivity from Microsoft and third-party client applications and tools by using an *XMLA endpoint*.
 
 ## What's an XMLA endpoint?
 

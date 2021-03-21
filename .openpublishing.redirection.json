@@ -3859,5 +3859,16 @@
             "source_path": "powerbi-docs/connect-data/service-facebook-connector.md",
             "redirect_url": "/power-bi/connect-data/service-get-data",
             "redirect_document_id": false
-        }      ]           
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/sql-server-analysis-services-tabular-data.md",
+            "redirect_url": "/power-bi/connect-data/service-get-data",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/desktop-send-smile-privacy-statement.md",
+            "redirect_url": "/power-bi/fundamentals/desktop-send-smile-privacy-statement",
+            "redirect_document_id": false
+        }
+    ]           
 }
