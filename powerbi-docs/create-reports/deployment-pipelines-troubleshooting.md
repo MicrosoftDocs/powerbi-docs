@@ -199,13 +199,15 @@ At present, datasets are treated as an external Analysis Services data source, a
 
 When you deploy a paginated report that's connected to a Power BI dataset, it continues to point to the dataset it was originally connected to. Use [deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) to point your paginated report to any dataset you want, including for example the target stage dataset.
 
+If you're using a paginated report with a Power BI dataset, see [How do I create a deployment rule for a paginated report with a Power BI dataset?](#how-do-i-create-a-deployment-rule-for-a-paginated-report-with-a-power-bi-dataset)
+
 ### Where are my paginated report subreports?
 
 Paginated report subreports are kept in the same folder that holds your paginated report. To avoid rendering problems, when using [selective copy](deployment-pipelines-get-started.md#selective-deployment) to copy a paginated report with subreports, select both the parent report and the subreports.
 
 ### How do I create a deployment rule for a paginated report with a Power BI dataset?
 
-When creating a deployment rule for a paginated report, you need to select a database and a server.
+Paginated report rules are created to [point the paginated report to the dataset in the same stage](#why-does-my-target-stage-paginated-report-display-data-from-a-power-bi-dataset-in-the-source-stage). When creating a deployment rule for a paginated report, you need to select a database and a server.
 
 If you're setting a deployment rule for a paginated report that doesn't have a Power BI dataset, because the target data source is external, you need to specify both the server and the database.
 
