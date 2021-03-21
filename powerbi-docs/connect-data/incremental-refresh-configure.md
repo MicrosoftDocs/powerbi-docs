@@ -23,7 +23,7 @@ In this task, use Power Query Editor to create RangeStart and RangeEnd parameter
 
 1. In Power BI Desktop, click **Transform data** to open Power Query Editor.
 
-1. In Power Query Editor, click **Manage Parameters** > **New Parameter**.
+1. Click **Manage Parameters** > **New Parameter**.
 
 1. In **Manage Parameters** > **Name**, type **RangeStart** (case sensitive), then in **Type**, select **Date/Time**, and then in **Current Value** enter a start date/time value, for example, 1/25/2014 12:00:00 AM.
 
@@ -42,7 +42,7 @@ Now that you have RangeStart and RangeEnd parameters, you then filter the data t
 
 With RangeStart and RangeEnd parameters defined, apply a filter based on *conditions* in the RangeStart and RangeEnd parameters.
 
-1. In Power Query Editor, select the column you want to filter on, then click the filter icon > **Date/Time Filters** > **Custom Filter**.
+1. In Power Query Editor, select the date column you want to filter on, and then click the filter icon > **Date/Time Filters** > **Custom Filter**.
 
 1. In **Filter Rows**, to specify the first condition, select **is after** or **is after or equal to**, then select **Parameter**, and then select **RangeStart**.
 
@@ -74,7 +74,7 @@ After you've defined RangeStart and RangeEnd parameters, and filtered data based
 
     ![Refresh policy dialog](media/incremental-refresh-configure/incremental-refresh-policy-dialog.png)
 
-1. Select optional advanced settings:
+1. Select optional settings:
 
     Select **Detect data changes** to specify a date/time column used to identify and refresh only the days where the data has changed. A date/time column must exist, usually for auditing purposes, at the data source. This **should not be the same column** used to partition the data with the RangeStart and RangeEnd parameters. The maximum value of this column is evaluated for each of the periods in the incremental range. If it has not changed since the last refresh, the current period is not refreshed.
 
