@@ -91,7 +91,7 @@ Your first deployment may have failed due to a number of reasons. Some of these 
 
 |Error  |Action  |
 |---------|---------|
-|You don't have [premium capacity permissions](deployment-pipelines-process.md#creating-a-premium-capacity-workspace).     |If you work in an organization that has a Premium capacity, ask a capacity admin to add your workspace to a capacity, or ask for assignment permissions for the capacity. After the workspace is in a capacity, redeploy.</br></br>If you don't work in an organization with Premium capacity, consider purchasing [Premium Per User (PPU)](../admin/service-premium-per-user-faq.md).        |
+|You don't have [premium capacity permissions](deployment-pipelines-process.md#creating-a-premium-workspace).     |If you work in an organization that has a Premium capacity, ask a capacity admin to add your workspace to a capacity, or ask for assignment permissions for the capacity. After the workspace is in a capacity, redeploy.</br></br>If you don't work in an organization with Premium capacity, consider purchasing [Premium Per User (PPU)](../admin/service-premium-per-user-faq.md).        |
 |You don't have workspace permissions.     |To deploy, you need to be a workspace member. Ask your workspace admin to grant you the appropriate permissions.         |
 |Your Power BI admin disabled the creation of workspaces.     |Contact your Power BI admin for support.         |
 |Your workspace isn't a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).     |Create your content in the new workspace experience. If you have content in a classic workspace, you can [upgrade](../collaborate-share/service-upgrade-workspaces.md) it to a new workspace experience.         |
