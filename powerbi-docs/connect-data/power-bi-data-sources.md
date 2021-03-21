@@ -116,7 +116,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Spark | Yes | Yes | Yes | Yes | No | Yes |
 | SparkPost | Yes | Yes | No | No | No | No |
 | SQL Server | Yes | Yes | Yes | Yes | Yes | Yes |
-| SQL Server Analysis Services | Yes | Yes | Yes | Yes | Yes | No |
+| SQL Server Analysis Services | Yes | No | Yes | Yes | Yes | No |
 | Stripe | Yes | Yes | No | No | No | No |
 | SurveyMonkey | Yes | Yes | No | Yes | No | No |
 | SweetIQ | Yes | Yes | No | No | No | No |
@@ -174,6 +174,5 @@ The SSO option takes effect across all datasets that use this data source. It do
 
 [Connect to data in Power BI Desktop](desktop-quickstart-connect-to-data.md)  
 [Using DirectQuery in Power BI](desktop-directquery-about.md)  
-[SQL Server Analysis Services live data in Power BI](sql-server-analysis-services-tabular-data.md)  
 [What is an on-premises data gateway?](service-gateway-onprem.md)  
 [Power BI report data sources in Power BI Report Server](../report-server/data-sources.md)
