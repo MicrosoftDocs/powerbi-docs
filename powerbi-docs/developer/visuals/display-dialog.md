@@ -30,10 +30,17 @@ When creating a dialog box for your visual, consider the following:
 
 * The dialog box will display the icon of the visual and its name.
 
-* Action buttons can be controlled by developer (0-3; from given buttons).
-In the iFrame (sandbox) rich HTML
+* The dialog box can have up to three action buttons. You can choose which buttons to display from a given selection.
 
+* The dialog box uses a rich HTML `iframe`.
 
+## How to configure the dialog box
+
+To configure the dialog box,
+
+## Limitations
+
+The dialog box must not be triggered spontaneously. It must be used as part of a user event.
 
 ## Next steps
 
