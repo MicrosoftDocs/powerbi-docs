@@ -213,7 +213,7 @@ When creating a rule for a paginated report with a Power BI dataset, after selec
 
     :::image type="content" source="media/deployment-pipelines-troubleshooting/datasets-id.png" alt-text="A screenshot of the dataset I D as it appears in a Power B I U R L.":::
 
-* **Server** - The server that hosts your data source.
+* **Server** - The server that hosts your data source. Keep the existing server as is.
 
 ## Permissions
 
