@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 03/10/2021
+ms.date: 03/21/2021
 ---
 
 # Get started with deployment pipelines
@@ -57,7 +57,7 @@ You can create a pipeline from an existing workspace, providing you're the admin
 2. In the *Create a deployment pipeline* dialog box, enter a name and description for the pipeline, and select **Create**.
 
 >[!NOTE]
->If the workspace isn't assigned to your organization's Premium capacity, or to your PPU workspace, you'll get a notification to [assign it to a capacity](../admin/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity).  
+>If the workspace isn't assigned to your organization's Premium capacity, or to your PPU capacity, you'll get a notification to [assign it to a capacity](../admin/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity).  
 
 ## Step 2 - Assign a workspace to a deployment pipeline
 
