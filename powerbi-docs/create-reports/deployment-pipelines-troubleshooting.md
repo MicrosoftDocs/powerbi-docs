@@ -205,9 +205,11 @@ Paginated report subreports are kept in the same folder that holds your paginate
 
 ### How do I create a deployment rule for a paginated report with a Power BI dataset?
 
-When you mange a paginated report connected to a Power BI dataset in a pipeline, you cannot rely on the data source name to identify the Power BI dataset you're connecting to. The data source name doesn't change when you update it in the target stage, by creating a data source rule or by calling the [update datasource](/rest/api/power-bi/datasets/updatedatasourcesingroup) API.
+When creating a deployment rule for a paginated report, you need to select a database and a server.
 
-When creating a rule for a paginated report with a Power BI dataset, after selecting the data source to be replaced, you need to select a new Power BI dataset that the paginated report will use. To point to a new Power BI dataset, you'll need to specify two parameters:
+If you're setting a deployment rule for a paginated report that doesn't have a Power BI dataset, because the target data source is external, you need to specify both the server and the database.
+
+However, paginated reports that use a Power BI dataset use an internal dataset. In such cases, you cannot rely on the data source name to identify the Power BI dataset you're connecting to. The data source name doesn't change when you update it in the target stage, by creating a data source rule or by calling the [update datasource](/rest/api/power-bi/datasets/updatedatasourcesingroup) API. When you set a deployment rule, you need to keep the database format and replace the dataset object ID in the database field. As the dataset is internal, the server stays the same.
 
 * **Database** - The database format for a paginated report with a Power BI dataset, is `sobe_wowvirtualserver-<dataset ID>`. For example `sobe_wowvirtualserver-d51fd26e-9124-467f-919c-0c48a99a1d63`. Replace the `<dataset ID>` with your dataset's ID. You can get the dataset ID from the URL, by selecting the GUID that comes after `datasets/` and before the next forward slash.
 
