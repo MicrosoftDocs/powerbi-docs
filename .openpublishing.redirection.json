@@ -946,11 +946,6 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/service-new-look-where-actions.md",
-            "redirect_url": "/power-bi/consumer/end-user-reading-view",
-            "redirect_document_id": true
-        },
-        {
             "source_path": "powerbi-docs/service-free-vs-pro.md",
             "redirect_url": "/power-bi/fundamentals/service-features-license-type",
             "redirect_document_id": false
