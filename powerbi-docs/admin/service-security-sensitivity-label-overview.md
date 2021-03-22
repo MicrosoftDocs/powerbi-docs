@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom: contperf-fy21q2
-ms.date: 12/20/2020
+ms.date: 03/22/2021
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
