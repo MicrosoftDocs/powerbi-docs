@@ -28,6 +28,8 @@ Restart Power BI Desktop, and you're ready to try small multiples.
 
 ## Create small multiples
 
+For live connected data models, this feature requires a version of AS which supports the second generation of DAX queries, aka SuperDAX: for tabular models, AS 2016 or newer; and for multidimensional models, AS 2019 or newer.
+
 Currently, you can create small multiples on bar, column, line, and area charts. 
 
 To get started, create one of the above visuals and choose a field along which you'd like to partition its data. Drag that field into the **Small multiples** well in the Fields section of the Visualizations pane. 
