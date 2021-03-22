@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 03/21/2021
+ms.date: 03/22/2021
 ---
 
 # Get started with deployment pipelines

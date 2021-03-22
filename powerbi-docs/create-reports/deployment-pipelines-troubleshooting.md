@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: pbi-deployment
-ms.date: 03/09/2021
+ms.date: 03/22/2021
 ---
 
 # Deployment pipelines troubleshooting
@@ -207,7 +207,7 @@ Paginated report subreports are kept in the same folder that holds your paginate
 
 ### How do I create a deployment rule for a paginated report with a Power BI dataset?
 
-Paginated report rules are created to [point the paginated report to the dataset in the same stage](#why-does-my-target-stage-paginated-report-display-data-from-a-power-bi-dataset-in-the-source-stage). When creating a deployment rule for a paginated report, you need to select a database and a server.
+Paginated report rules can be created if you want to [point the paginated report to the dataset in the same stage](#why-does-my-target-stage-paginated-report-display-data-from-a-power-bi-dataset-in-the-source-stage). When creating a deployment rule for a paginated report, you need to select a database and a server.
 
 If you're setting a deployment rule for a paginated report that doesn't have a Power BI dataset, because the target data source is external, you need to specify both the server and the database.
 
