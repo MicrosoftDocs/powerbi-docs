@@ -61,7 +61,7 @@ Troubleshooting incremental refresh issues in the service will differ depending 
 If a date is changed accidentally, then two issues can occur: Users notice some totals changed in the historical data (that is not supposed to happen), or during a refresh an error is returned indicating a unique value is not in fact unique.
 For the latter, this can happen when the table with incremental refresh configured is used in a 1:N relationship with another table as the 1 side and should have unique values. When the data is changed (for a specific id), that id then appears in another partition and the engine will detect the value is not unique.
 
-**Solution:** Where there is a business need to change some past data from the dates, one solution is to use the XMLA endpoint to refresh all partitions from the point where was the change is located up to the current partitions, thus keeping the 1 side of the relationship unique.
+**Solution:** Where there is a business need to change some past data from the dates, a possible solution is to use SSMS to refresh all partitions from the point where was the change is located up to the current refresh partition, thus keeping the 1 side of the relationship unique.
 
 **Problem:** Data is truncated.
 
@@ -71,7 +71,7 @@ For the latter, this can happen when the table with incremental refresh configur
 
 **Problem**: Refresh fails because of partition-key conflicts.
 
-**Cause**: This can occur when a date in the date column at the data source is updated. The filter on the date column is used to dynamically partition the data into ranges in the Power BI service. Incremental refresh isn't designed to support cases where the filtered date column is updated in the source system. An update is interpreted as an insertion and a deletion, not an actual update. If the deletion occurs in the historical range and not the incremental range, it won't get picked up. This can cause data refresh failures due to partition-key conflicts.
+**Cause**: This can occur when a date in the date column at the data source is updated. The filter on the date column is used to dynamically partition the data into period ranges in the Power BI service. Incremental refresh isn't designed to support cases where the filtered date column is updated in the source system. An update is interpreted as an insertion and a deletion, not an actual update. If the deletion occurs in the historical range and not the incremental range, it won't get picked up, which can cause data refresh failures due to partition-key conflicts.
 
 ## See also
 

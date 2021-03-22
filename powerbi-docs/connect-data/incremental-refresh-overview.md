@@ -99,7 +99,7 @@ Configuring incremental refresh is done in Power BI Desktop. For most models, on
 
 When configuring incremental refresh in Power BI Desktop, you first create two Power Query date/time parameters with the reserved, case-sensitive names **RangeStart** and **RangeEnd**. These parameters, defined in the Manage Parameters dialog in Power Query Editor are initially used to filter the data loaded into the Power BI Desktop model table to include only those rows with a date/time within that period. After the model is published to the service, RangeStart and RangeEnd are overridden automatically by the service to query data defined by the refresh period specified in the incremental refresh policy settings.
 
-For example, our FactInternetSales data source table averages 100k new rows per day. To limit the number of rows initially loaded into the model in Power BI Desktop, we specify a two-day period between RangeStart and RangeEnd.
+For example, our FactInternetSales data source table averages 10k new rows per day. To limit the number of rows initially loaded into the model in Power BI Desktop, we specify a two-day period between RangeStart and RangeEnd.
 
 :::image type="content" source="media/incremental-refresh-overview/manage-parameters-small.png" alt-text="Manage Parameters dialogue":::
 
@@ -109,7 +109,7 @@ With RangeStart and RangeEnd parameters defined, you then apply custom Date filt
 
 :::image type="content" source="media/incremental-refresh-overview/custom-filter.png" alt-text="Custom filter":::
 
-Using our FactInternetSales example, after creating filters based on the parameters and applying steps, two days of data, roughly 200k rows is loaded into our model.
+Using our FactInternetSales example, after creating filters based on the parameters and applying steps, two days of data, roughly 20k rows is loaded into our model.
 
 ### Define policy
 
@@ -125,15 +125,17 @@ The Table listbox defaults to the table you select in Data view. Enable incremen
 
 #### 2 - Store rows in the last
 
-This **required** setting determines the period in which rows in that period are included in the dataset table, plus rows for the incremental refresh period up to the current date and time. For example, if we specify 5 years, our table will store the last five whole years of historical data in year partitions, plus rows for the current year up to the most recent refresh.
+This **required** setting determines the historical period in which rows with a date/time in that period are included in the dataset, plus rows for the current incomplete historical period, plus rows in the refresh period up to the current date and time.
 
-For datasets in Premium capacities, backdated historical partitions can be selectively refreshed at a granularity determined by this setting.
+For example, if we specify 5 *years*, our table will store the last five whole years of historical data in year partitions, plus rows for the current year in quarter, month, or day partitions, up to and including the refresh period.
+
+For datasets in Premium capacities, backdated historical partitions can be selectively refreshed at a granularity determined by this setting. To learn more, see [Advanced incremental refresh - Partitions](incremental-refresh-xmla.md#partitions).
 
 #### 3 - Refresh rows in the last
 
-This **required** setting determines the period in which all rows with a date/time in that period are included in the incremental refresh partition and refreshed with each refresh operation.
+This **required** setting determines the incremental refresh period in which all rows with a date/time in that period are included in the refresh partition and refreshed with each refresh operation.
 
-For example, if we specify a refresh period of ten days. When published to the service, with each refresh operation, the service overrides the RangeStart and RangeEnd parameters to create a query for rows with a date/time within a ten day period, beginning and ending dependent on the current date and time. Rows with a date/time in the last ten days up to the current refresh operation time are refreshed. With this type of policy, we can expect our FactInternetSales dataset table in the service to refresh roughly 1 million rows with each refresh operation.
+For example, if we specify a refresh period of ten days, with each refresh operation the service overrides the RangeStart and RangeEnd parameters to create a query for rows with a date/time within a ten day period, beginning and ending dependent on the current date and time. Rows with a date/time in the last ten days up to the current refresh operation time are refreshed. With this type of policy, we can expect our FactInternetSales dataset table in the service, which averages 10k new rows per day, to refresh roughly 100k rows with each refresh operation.
 
 Most system resources used during a refresh operation are consumed for this period. Be sure to specify a period in which new and updated rows are within this period for accurate reporting. If defining policies for more than one table, the same RangeStart and RangeEnd parameters can be used even if different store and refresh periods are defined for each table.
 
@@ -151,7 +153,7 @@ In some cases, enabling the Detect data changes option can produce unwanted resu
 
 #### 5 - Only refresh complete days
 
-This setting is **optional**. Let's say your refresh is scheduled to run at 4:00 AM every morning. If new rows of data appear in the data source table during those four hours between midnight and 4:00 AM, you may not want to account for them. Some business metrics like barrels per day in the oil and gas industry make no sense with partial days. Another example is refreshing data from a financial system where data for the previous month is approved on the 12th calendar day of the month. You could set the refresh period to 1 month and schedule the refresh to run on the 12th day of the month. With this option checked, it would for example refresh January data on February 12.
+This setting is **optional**. Let's say your refresh is scheduled to run at 4:00 AM every morning. If new rows of data appear in the data source table during those four hours between midnight and 4:00 AM, you may not want to account for them. Some business metrics like barrels per day in the oil and gas industry make no sense with partial days. Another example is refreshing data from a financial system where data for the previous month is approved on the 12th calendar day of the month. You could set the refresh period to 1 month and schedule the refresh to run on the 12th day of the month. With this option selected, it would, for example, refresh January data on February 12.
 
 Keep in mind, refresh operations in the service run under UTC time. This can determine the effective date and effect complete periods.
 
@@ -170,7 +172,7 @@ Subsequent refresh operations, either individual or scheduled are much faster be
 
 ## Advanced incremental refresh
 
-If you're dataset is on a Premium capacity with the XMLA endpoint enabled, incremental refresh can be further extended for advanced scenarios. For example, you can use SQL Server Management Studio to view and manage partitions, bootstrap the initial refresh operation, or refresh backdated historical partitions. To learn more, see [Advanced incremental refresh with the XMLA endpoint](incremental-refresh-xmla.md).
+If your dataset is on a Premium capacity with the XMLA endpoint enabled, incremental refresh can be further extended for advanced scenarios. For example, you can use SQL Server Management Studio to view and manage partitions, bootstrap the initial refresh operation, or refresh backdated historical partitions. To learn more, see [Advanced incremental refresh with the XMLA endpoint](incremental-refresh-xmla.md).
 
 ## Community
 
