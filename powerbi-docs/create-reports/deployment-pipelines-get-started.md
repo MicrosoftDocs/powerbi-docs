@@ -275,7 +275,7 @@ When two sequential stages aren't the same, a **compare** link appears underneat
 
 * **Different** – An item that exists both in the source and the target stage, were one of the versions was changed after the last deployment. After deployment, the item in the source stage will overwrite the item in the target stage, regardless of where the change was made.
 
-    Datasets with configured deployment rules that haven't been deployed, are also marked as *different*. This is because deployment rules are not applied until the datasets are deployed from the source stage to the target stage which includes the configured rules.
+    Datasets with configured deployment rules that haven't been deployed, are also marked as *different*. This is because deployment rules are not applied until the datasets are deployed from the source stage to the target stage, which includes the configured rules.
 
 * **Missing from** – This label indicates that an item appears in the target stage, but not in the source stage.
 

@@ -213,7 +213,7 @@ If you're setting a deployment rule for a paginated report that doesn't have a P
 
 However, paginated reports that use a Power BI dataset use an internal dataset. In such cases, you cannot rely on the data source name to identify the Power BI dataset you're connecting to. The data source name doesn't change when you update it in the target stage, by creating a data source rule or by calling the [update datasource](/rest/api/power-bi/datasets/updatedatasourcesingroup) API. When you set a deployment rule, you need to keep the database format and replace the dataset object ID in the database field. As the dataset is internal, the server stays the same.
 
-* **Database** - The database format for a paginated report with a Power BI dataset, is `sobe_wowvirtualserver-<dataset ID>`. For example `sobe_wowvirtualserver-d51fd26e-9124-467f-919c-0c48a99a1d63`. Replace the `<dataset ID>` with your dataset's ID. You can get the dataset ID from the URL, by selecting the GUID that comes after `datasets/` and before the next forward slash.
+* **Database** - The database format for a paginated report with a Power BI dataset, is `sobe_wowvirtualserver-<dataset ID>`. For example, `sobe_wowvirtualserver-d51fd26e-9124-467f-919c-0c48a99a1d63`. Replace the `<dataset ID>` with your dataset's ID. You can get the dataset ID from the URL, by selecting the GUID that comes after `datasets/` and before the next forward slash.
 
     :::image type="content" source="media/deployment-pipelines-troubleshooting/datasets-id.png" alt-text="A screenshot of the dataset I D as it appears in a Power B I U R L.":::
 
