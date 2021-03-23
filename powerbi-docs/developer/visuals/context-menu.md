@@ -36,3 +36,22 @@ Context-Menu was added to the sample BarChart for reference:
             mouseEvent.preventDefault();
         });
 ```
+
+
+## ContextMenu call cases
+Any right click in the visual viewport should trigger display of the context menu. 
+There are generally 2 scenarios of `contextMenu()` being called in a visual:
+
+1) Context menu called on a specific datapoint
+
+![Context menu called on datapoint](media/context-menu/datapoint-context-menu-in-barchart.png)
+
+    In this case context menu contains "Include" and "Exclude" items which will apply corresponding filter options to the DataPoint.
+
+2) Context menu called on empty space
+
+![Context menu called on datapoint](media/context-menu/context-menu-called-on-empty-space-in-barchart.png)
+
+
+> [!IMPORTANT]
+> All visuals published to AppSource must support both `ContextMenu` modes.
