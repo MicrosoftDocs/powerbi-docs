@@ -69,7 +69,6 @@ The datasets workload is enabled by default and cannot be disabled. Use the foll
 | **Minimum refresh interval** | If automatic page refresh is on, the minimum interval allowed for page refresh interval. The default value is five minutes, and the minimum allowed is one second. |
 | **Change detection measure** | On/Off toggle to allow premium workspaces to have reports with automatic page refresh based on change detection. |
 | **Minimum execution interval** | If change detection measure is on, the minimum execution interval allowed to poll for data changes. The default value is five seconds, and the minimum allowed is one second. |
-|  |  |  |
 
 #### Max Intermediate Row Set Count
 
