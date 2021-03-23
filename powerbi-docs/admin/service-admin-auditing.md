@@ -78,6 +78,9 @@ To learn more about using the Power BI REST API, including examples of how to ge
 
 Download activity events by using the Power BI Management cmdlets for PowerShell. The **Get-PowerBIActivityEvent** cmdlet  automatically handles the continuation token for you. The **Get-PowerBIActivityEvent** cmdlet takes a StartDateTime and an EndDateTime parameter with the same restrictions as the **ActivityEvents** REST API. In other words, the start date and end date must reference the same date value because you can only retrieve the activity data for one day at a time.
 
+> [!NOTE]
+> You can't run Get-PowerBIActivityEvent as the Azure service principal. Even if the service principal is assigned the Power BI service administrator role. 
+
 The following script demonstrates how to download all Power BI activities. The command converts the results from JSON into .NET objects for straightforward access to individual activity properties. These examples show the smallest and largest timestamps possible for a day to ensure no events are missed.
 
 ```powershell
