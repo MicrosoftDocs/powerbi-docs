@@ -29,7 +29,7 @@ Knowing who is taking what action on which item in your Power BI tenant can be c
 ## Use the activity log
 
 > [!NOTE]
-> Activity logging isn't supported for Microsoft Cloud Deutschland. Learn more about service limitations for the Germany cloud in [Frequently Asked Questions for Power BI for Germany Cloud customers](service-govde-faq.md).
+> Activity logging isn't supported for Microsoft Cloud Deutschland. Learn more about service limitations for the Germany cloud in [Frequently Asked Questions for Power BI for Germany Cloud customers](service-govde-faq.yml).
 
 
 As a Power BI service admin, you can analyze usage for all Power BI resources at the tenant level by using custom reports based on the Power BI activity log. You can download the activities by using a REST API or PowerShell cmdlet. You can also filter the activity data by date range, user, and activity type.
