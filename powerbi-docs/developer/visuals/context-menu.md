@@ -46,11 +46,11 @@ There are generally 2 scenarios of `contextMenu()` being called in a visual:
 
 ![Context menu called on datapoint](media/context-menu/datapoint-context-menu-in-barchart.png)
 
-    In this case context menu contains "Include" and "Exclude" items which will apply corresponding filter options to the DataPoint.
+In this case context menu contains "Include" and "Exclude" items which will apply corresponding filter options to the DataPoint.
 
 2) Context menu called on empty space
 
-![Context menu called on datapoint](media/context-menu/context-menu-called-on-empty-space-in-barchart.png)
+![Context menu called on empty space](media/context-menu/context-menu-called-on-empty-space-in-barchart.png)
 
 
 > [!IMPORTANT]
