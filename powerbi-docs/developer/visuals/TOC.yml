@@ -35,7 +35,7 @@
     - name: "Performance tips"
       href: performance-tips.md
     - name: "Visuals FAQ"
-      href: power-bi-custom-visuals-faq.md
+      href: power-bi-custom-visuals-faq.yml
     - name: "Using capabilities"
       href: capabilities.md
     - name: "Data view mappings"

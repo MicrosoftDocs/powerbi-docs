@@ -3682,8 +3682,13 @@
         },
         {
             "source_path": "powerbi-docs/service-new-look-where-actions.md",
-            "redirect_url": "/power-bi/consumer/service-new-look-where-actions",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/consumer/end-user-reading-view",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/service-new-look-where-actions.md",
+            "redirect_url": "/power-bi/consumer/end-user-reading-view",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-self-service-signup-for-power-bi.md",
