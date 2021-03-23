@@ -3,7 +3,7 @@ title: "Power BI Report Builder"
 description: Power BI Report Builder is a tool for authoring paginated reports.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 07/08/2020
+ms.date: 03/23/2021
 ms.service: powerbi
 ms.subservice: report-builder
 featuredvideoid: 78TZeiEhveY
@@ -25,10 +25,23 @@ The following paginated report features a matrix with row and column groups, spa
 ![Paginated report in the Power BI service](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
 
 ##  <a name="JumpStartReptCreation"></a> Jump-start report creation  
- 
--   **Start with the Table, Matrix, or Chart wizard**. Create a data source connection, drag and drop fields to create a dataset query, select a layout and style, and customize your report.  
+
+### Develop reports in the deployment pipeline tool
+
+In the Power BI service, you can use the deployment pipeline tool to develop paginated reports. Deployment pipelines let you develop and test your Power BI paginated reports before you release them to your users. The tool is a pipeline with three stages:
+- Development
+- Test
+- Production
+
+Read about how to [get started with deployment pipelines](../create-reports/deployment-pipelines-get-started.md?tabs=paginated-reports) in the Power BI service.
+
+### Start with the Table, Matrix, or Chart wizard
+
+Create a data source connection, drag and drop fields to create a dataset query, select a layout and style, and customize your report.  
   
--   **Start with the Map wizard** to create reports that display aggregated data against a geographic or geometric background. Map data can be spatial data from a Transact-SQL query or an Environmental Systems Research Institute, Inc. (ESRI) shapefile. You can also add a Microsoft Bing map tile background.  
+### Start with the Map wizard
+
+Create reports that display aggregated data against a geographic or geometric background. Map data can be spatial data from a Transact-SQL query or an Environmental Systems Research Institute, Inc. (ESRI) shapefile. You can also add a Microsoft Bing map tile background.  
 
 ##  <a name="DesignRept"></a> Design your report  
   
