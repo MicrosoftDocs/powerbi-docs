@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 02/10/2021
+ms.date: 03/18/2021
 ---
 # What's new in the mobile apps for Power BI
 For related "What's New" information, see:
@@ -17,6 +17,12 @@ For related "What's New" information, see:
 
 >[!NOTE]
 >The Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## March 2021
+### Easily find content by type
+Try out the new categories filter at the top of the Recents, Favorites, and Workspace pages, to filter the listed content by type.
+
+![Screenshot of category filter on lists page.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-filter-by-type.png)
 
 ## February 2021
 ### Support for Power BI in split-screens (Android tablets)
