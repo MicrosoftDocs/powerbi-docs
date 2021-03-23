@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom: contperf-fy21q2
-ms.date: 12/20/2020
+ms.date: 03/22/2021
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -99,6 +99,10 @@ The following image shows how a dataset's sensitivity label is automatically app
 >[!NOTE]
 >If for any reason the sensitivity label can't be applied on the new report or dashboard, Power BI **will not** block creation of the new item.
 
+## Sensitivity label inheritance from data sources (preview)
+
+Power BI datasets that connect to sensitivity-labeled data in supported data sources can inherit those labels so that the data remains classified and secure when brought into Power BI. Currently, Azure Synapse Analytics (formerly SQL Data Warehouse) and Azure SQL Database are supported. See [Sensitivity label inheritance from data sources](service-security-sensitivity-label-inheritance-from-data-sources.md) to learn how inheritance from data sources works and how to enable it for your organization.
+
 ## Sensitivity labels and protection on exported data
 
 When data is exported from Power BI to Excel, PDF files (service only) or PowerPoint files, Power BI automatically applies a sensitivity label on the exported file and protects it according to the label’s file encryption settings. This way your sensitive data remains protected no matter where it is.
@@ -135,6 +139,10 @@ The following embedding scenarios are supported:
 * [Embed for your organization](../developer/embedded/embed-sample-for-your-organization.md)
 * Microsoft 365 apps (for example, [Teams](../collaborate-share/service-embed-report-microsoft-teams.md) and [SharePoint](../collaborate-share/service-embed-report-spo.md))
 * [Secure URL embedding](../collaborate-share/service-embed-secure.md) (embedding from the Power BI service) 
+
+## Sensitivity labels in deployment pipelines
+Sensitivity labels are supported in deployment pipelines. See the [deployment pipeline documentation](../create-reports/deployment-pipelines-process.md#item-properties-copied-during-deployment) for details about how sensitivity labels are handled as content is deployed from stage to stage.
+
 
 ## Sensitivity labels in the Power BI mobile apps
 
