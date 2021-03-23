@@ -29,7 +29,7 @@ The following sections described each of these features in detail.
 The enhanced compute engine in Power BI enables Power BI Premium subscribers to use their capacity to optimize the use of dataflows. Using the enhanced compute engine provides the following advantages:
 
 * Drastically reduces the refresh time required for long-running ETL steps over computed entities, such as performing *joins*, *distinct*, *filters,* and *group by*
-* Perform DirectQuery queries over entities
+* Performs DirectQuery queries over entities
 
 By default, the enhanced compute engine is **On**. If the enhanced compute engine is not on, enabling the enhanced compute engine is described in the next section, along with answers to common questions.
 
@@ -75,6 +75,8 @@ To make best use of the compute engine, split the ETL stage into two separate da
 * True/False
 * Date
 * Time
+
+**Question:** 
 
 ## Use DirectQuery with dataflows in Power BI (preview)
 

@@ -142,7 +142,7 @@ Take the following steps when investigating scenarios where the Compute engine i
 
 1. Limit computed and linked entities that exist across workspace.
 
-2. If your initial refresh is with the compute engine turned on, then data gets written in the lake and in the cache. This double write means these refreshes will be slower.
+2. When you perform your initial refresh with the compute engine turned on, then data gets written in the lake and in the cache. This double write means these refreshes will be slower.
 
 3. If you have a dataflow linking to multiple dataflows, make sure you schedule refreshes of the source dataflows so that they do not all refresh at the same time.
 
