@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: Frequently Asked Questions for German government customers
+  Title: Frequently Asked Questions for German government customers
   description: For German government customers, answers to common questions for the Power BI German government service
   author: davidiseminger
   ms.author: davidi
@@ -64,7 +64,7 @@ sections:
              
              * Publish to Web
              * ArcGIS maps by Esri
-             * Power BI Embedded (separate metered ISV licensing, will be offered through [Microsoft Azure Germany](https://azure.microsoft.com/overview/clouds/germany/) in the future)
+             * Power BI Embedded
              * Activity logging
           
       - question: |
