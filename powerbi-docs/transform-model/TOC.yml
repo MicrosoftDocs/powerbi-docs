@@ -50,7 +50,9 @@
     - name: "Use Machine Learning and Cognitive Services with dataflows"
       href: dataflows/dataflows-machine-learning-integration.md  
     - name: "Dataflows best practices"
-      href: ./dataflows/dataflows-best-practices.md                  
+      href: ./dataflows/dataflows-best-practices.md  
+    - name: "Understanding and optimizing dataflow refresh"
+      href: ./dataflows/dataflows-understand-optimize-refresh.md  
     - name: "Dataflows limitations and considerations"
       href: dataflows/dataflows-features-limitations.md            
   - name: How-to guides
