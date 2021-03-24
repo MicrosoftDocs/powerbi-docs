@@ -198,6 +198,10 @@ Take the following steps when investigating scenarios where the Compute Engine i
 * If your initial refresh is performed with the Compute Engine turned on, data gets written in the lake *and* in the cache. This double-write results in refreshes being slower.
 * If you have a dataflow linking to multiple dataflows, make sure you schedule refreshes of the source dataflows so that they don't all refresh at the same time.
 
+## Considerations and limitations
+
+When using a Power BI Pro license, dataflows refreshes are limited to 8 refreshes per day.
+
 ## Next steps
 
 * [Using incremental refresh with dataflows](https://docs.microsoft.com/power-query/dataflows/incremental-refresh)
