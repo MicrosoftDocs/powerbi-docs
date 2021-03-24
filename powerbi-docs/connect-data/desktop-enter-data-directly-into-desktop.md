@@ -33,6 +33,10 @@ And that’s it. It's that easy to enter data into Power BI Desktop.
 
 You're now ready to use the data in Power BI Desktop. You can create visuals, reports, or interact with any other data you might want to connect with and import, such as Excel workbooks, databases, or any other data source.
 
+> [!NOTE]
+> To update/add/delete data within items created by **Enter Data**, one needs to make those changes in Power BI Desktop and Publish it.
+> Data updates cannot be made directly from Power BI Service.
+
 ## Next steps
 
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
