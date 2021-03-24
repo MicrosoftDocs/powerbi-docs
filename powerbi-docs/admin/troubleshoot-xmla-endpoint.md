@@ -1,20 +1,20 @@
 ---
 title: Troubleshoot XMLA endpoint connectivity in Power BI
-description: Describes how to troubleshoot connectivity through the XMLA endpoint in Power BI Premium.
+description: Describes how to troubleshoot connectivity through the XMLA endpoint.
 author: Minewiskan
 ms.author: owend
 ms.reviewer: owend
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 02/02/2021
+ms.date: 03/24/2021
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
 ---
 
 # Troubleshoot XMLA endpoint connectivity
 
-XMLA endpoints in Power BI Premium rely on the native Analysis Services communication protocol for access to Power BI datasets. Because of this, XMLA endpoint troubleshooting is much the same as troubleshooting a typical Analysis Services connection. However, some differences around Power BI-specific dependencies apply.
+XMLA endpoints in Power BI rely on the native Analysis Services communication protocol for access to Power BI datasets. Because of this, XMLA endpoint troubleshooting is much the same as troubleshooting a typical Analysis Services connection. However, some differences around Power BI-specific dependencies apply.
 
 ## Before you begin
 
@@ -22,7 +22,7 @@ Before troubleshooting an XMLA endpoint scenario, be sure to review the basics c
 
 ## Enabling the XMLA endpoint
 
-The XMLA endpoint can be enabled on both Power BI Premium and Power BI Embedded capacities. On smaller capacities, such as an A1 capacity with only 2.5 GB of memory, you might encounter an error in Capacity settings when trying to set the XMLA Endpoint to **Read/Write** and then selecting **Apply**. The error states "There was an issue with your workload settings. Try again in a little while.".
+The XMLA endpoint can be enabled on both Power BI Premium, Premium Per User, and Power BI Embedded capacities. On smaller capacities, such as an A1 capacity with only 2.5 GB of memory, you might encounter an error in Capacity settings when trying to set the XMLA Endpoint to **Read/Write** and then selecting **Apply**. The error states "There was an issue with your workload settings. Try again in a little while.".
 
 Here are a couple things to try:
 
@@ -62,7 +62,7 @@ With support for Azure Active Directory (Azure AD) business-to-business (B2B) in
 
 ## Deploying a dataset
 
-You can deploy a tabular model project in Visual Studio (SSDT) to a Power BI Premium workspace much the same as to Azure Analysis Services. However, when deploying to a Power BI Premium workspace, there are some additional considerations. Be sure to review the section [Deploy model projects from Visual Studio (SSDT)](service-premium-connect-tools.md#deploy-model-projects-from-visual-studio-ssdt) in the Dataset connectivity with the XMLA endpoint article.
+You can deploy a tabular model project in Visual Studio (SSDT) to a workspace assigned to a Premium capacity, much the same as to a server resource in Azure Analysis Services. However, when deploying there are some additional considerations. Be sure to review the section [Deploy model projects from Visual Studio (SSDT)](service-premium-connect-tools.md#deploy-model-projects-from-visual-studio-ssdt) in the Dataset connectivity with the XMLA endpoint article.
 
 ### Deploying a new model
 
@@ -78,7 +78,7 @@ To avoid the processing failure, set the **Deployment Options** > **Processing O
 
 ### New project from an existing dataset
 
-Creating a new tabular project in Visual Studio by importing the metadata from an existing dataset on a Power BI Premium workspace is not supported. However, you can connect to the dataset by using SQL Server Management Studio, script out the metadata, and reuse it in other tabular projects.
+Creating a new tabular project in Visual Studio by importing the metadata from an existing dataset is not supported. However, you can connect to the dataset by using SQL Server Management Studio, script out the metadata, and reuse it in other tabular projects.
 
 ## Migrating a dataset to Power BI
 
@@ -106,18 +106,13 @@ The following table provides an example of a .NET Framework Data Provider for SQ
 
 Just as there are multiple data source types, there are also multiple partition source types a tabular model can include to import data into a table. Specifically, a partition can use a query partition source or an M partition source. These partition source types, in turn, can reference provider data sources or structured data sources. While tabular models in Azure Analysis Services support cross-referencing these various data source and partition types, Power BI enforces a more strict relationship. Query partition sources must reference provider data sources, and M partition sources must reference structured data sources. Other combinations are not supported in Power BI. If you want to migrate a cross-referencing dataset, the following table describes supported configurations:  
 
-|Data source   |Partition source   |Comments   |Supported in Power BI Premium with XMLA endpoint   |
+|Data source   |Partition source   |Comments   |Supported  with XMLA endpoint   |
 |---------|---------|---------|---------|
 |Provider data source      |   Query partition source      |   The AS engine uses the cartridge-based connectivity stack to access the data source.       |     Yes     |
 |Provider data source      |   M partition source       |   The AS engine translates the provider data source into a generic structured data source and then uses the Mashup engine to import the data.       |    No     |
 |Structured data source      |     Query partition source     |    The AS engine wraps the native query on the partition source into an M expression and then uses the Mashup engine to import the data.      |    No     |
 |Structured data source      |    M partition source      |     The AS engine uses the Mashup engine to import the data.     |   Yes      |
 
-## Refreshing a dataset
-
-XMLA endpoints enable you to perform refresh operations against tabular models as well as datasets created in Power BI Desktop. To support the latter, make sure you specify the Enhanced storage format setting. This setting is required if you want to perform processing or other read/write operations by using the XMLA endpoint. You can find the setting in Power BI Desktop under Preview features. After setting, publish your PBIX solution again to your Power BI Premium workspace.  
-
-Power BI returns the following error if you perform a refresh via the XMLA endpoint against a model without enhanced metadata: "The operation is only supported on model with property 'DefaultPowerBIDataSourceVersion' set to 'PowerBI_V3' in Power BI Premium."
 
 ### Data sources and impersonation
 
@@ -133,7 +128,7 @@ When triggering a scheduled refresh or on-demand refresh in Power BI, Power BI t
 
 ### Overrides in Refresh TMSL command
 
-Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tmsl) allow users choosing a different partition query definition or data source definition for the refresh operation. Currently, **overrides are not supported** in Power BI Premium. An error,  "Out-of-line binding is not allowed in Power BI Premium. For additional information, see 'XMLA read/write support' in the product documentation." is returned.
+Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tmsl) allow users choosing a different partition query definition or data source definition for the refresh operation. Currently, **overrides are not supported**. An error,  "Out-of-line binding is not allowed in Power BI Premium. For additional information, see 'XMLA read/write support' in the product documentation." is returned.
 
 ## Errors in SSMS - Premium Gen 2
 
@@ -211,7 +206,7 @@ As stated in the error message, to resolve this issue, either delete or rename t
 
 ## Workspace/server alias
 
-Unlike Azure Analysis Services, server name [aliases](/azure/analysis-services/analysis-services-server-alias) **are not supported** for Power BI Premium workspaces. 
+Unlike Azure Analysis Services, server name [aliases](/azure/analysis-services/analysis-services-server-alias) **are not supported** for Premium workspaces.
 
 ## Dataset refresh through the XMLA endpoint
 
