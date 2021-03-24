@@ -3,7 +3,7 @@ title: "Power BI Report Builder"
 description: Power BI Report Builder is a tool for authoring paginated reports.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 03/23/2021
+ms.date: 03/24/2021
 ms.service: powerbi
 ms.subservice: report-builder
 featuredvideoid: 78TZeiEhveY
@@ -24,9 +24,9 @@ The following paginated report features a matrix with row and column groups, spa
 
 ![Paginated report in the Power BI service](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
 
-## Develop reports in the deployment pipeline tool
+## Use deployment pipelines with paginated reports
 
-In the Power BI service, you can use the deployment pipeline tool to develop paginated reports. Deployment pipelines let you develop and test your Power BI paginated reports before you release them to your users. The tool is a pipeline with three stages:
+In the Power BI service, you can use the deployment pipeline tool with paginated reports. Deployment pipelines let you develop and test your Power BI paginated reports before you release them to your users. The tool is a pipeline with three stages:
 - Development
 - Test
 - Production
