@@ -396,8 +396,10 @@ Create the **Embed.cshtml** file, which has a `div` element used as a container 
     
     @section Scripts {
     
-        <!-- powerbi.min.js is the JavaScript file that loads the client-side Power BI JavaScript API library. -->
-        <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.13.3/dist/powerbi.min.js"></script>
+        <!-- powerbi.min.js is the JavaScript file that loads the client-side Power BI JavaScript API library.
+        Make sure that you're working with the latest library version.
+        You can check the latest library available in https://cdnjs.com/libraries/powerbi-client -->
+        <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.18.0/dist/powerbi.min.js"></script>
     
         <!-- This script creates a JavaScript object named viewModel which is accessible to the JavaScript code in embed.js. -->
         <script> 
