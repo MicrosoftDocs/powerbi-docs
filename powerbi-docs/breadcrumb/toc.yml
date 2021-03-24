@@ -50,6 +50,9 @@
       - name: Create reports and dashboards
         tocHref: /power-bi/visuals/
         topicHref: /power-bi/create-reports/index
+      - name: Create reports and dashboards
+        tocHref: /power-bi/paginated-reports/
+        topicHref: /power-bi/create-reports/index
       - name: Connect to data
         tocHref: /power-bi/connect-data/
         topicHref: /power-bi/connect-data/index
