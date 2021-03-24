@@ -12,7 +12,7 @@ ms.date: 03/22/2021
 
 # Get started with deployment pipelines
 
-This article walks you through the basic settings required for using deployment pipelines.
+This article walks you through the basic settings required for using deployment pipelines in Power BI service. It's recommended to read the [deployment pipelines introduction](deployment-pipelines-overview.md), before you proceed.
 
 ## Accessing deployment pipelines
 
@@ -180,7 +180,7 @@ To create a deployment rule, follow the steps in this section. After you create 
 
 # [Paginated reports](#tab/paginated-reports)
 
-3. Select the dataset you want to create a rule for.
+3. Select the paginated report you want to create a rule for.
 
     >[!div class="mx-imgBorder"]
     >![A screenshot showing selecting a dataset for creating a deployment rule.](media/deployment-pipelines-get-started/paginated-report-tab.png)
@@ -239,7 +239,7 @@ This section lists the limitations for the deployment rules. There are some diff
 
 * When an item is removed or deleted, its rules are deleted too. These rules cannot be restored.
 
-* If the data source or parameters defined in a rule are changed or removed from the source dataset, the rule will not be valid and the deployment will fail.
+* If the data source defined in a rule is changed or removed from the source dataset, the rule will not be valid and the deployment will fail.
 
 * Parameter rules are not supported for paginated reports.
 
