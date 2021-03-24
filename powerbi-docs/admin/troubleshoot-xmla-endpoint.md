@@ -72,7 +72,7 @@ If Power BI cannot bind your new dataset to data source credentials, you will re
 
 :::image type="content" source="media/troubleshoot-xmla-endpoint/deploy-refresh-error.png" alt-text="Model deployment error":::
 
-To avoid the processing failure, set the **Deployment Options** > **Processing Options** to **Do not Process**, as shown in the following image. Visual Studio  then deploys only metadata. You can then configure the data source credentials, and click on **Refresh now** for the dataset in the Power BI user interface. For information about troubleshooting processing issues, see the section [Refreshing a dataset](#refreshing-a-dataset) later in this article.
+To avoid the processing failure, set the **Deployment Options** > **Processing Options** to **Do not Process**, as shown in the following image. Visual Studio  then deploys only metadata. You can then configure the data source credentials, and click on **Refresh now** for the dataset in the Power BI user interface.
 
 :::image type="content" source="media/troubleshoot-xmla-endpoint/do-not-process.png" alt-text="Do not process option":::
 
