@@ -22,6 +22,8 @@ To bring your own ADLS Gen 2 account, you must have owner permissions at either 
 
 The storage account must be created with the [Hierarchical Namespace (HNS)](/azure/storage/blobs/create-data-lake-storage-account) enabled. 
 
+The storage account must be created in the same Azure Active Directory tenant as the Power BI tenant. 
+
 TLS (Transport Layer Security) version 1.2 (or higher) is required to secure your endpoints. Web browsers and other client applications that use TLS versions earlier than TLS 1.2 won't be able to connect.
 
 Also, the ADLS Gen 2 account must be deployed in the same region as your Power BI tenant. An error occurs if the locations of the resources are not in the same region.
@@ -49,6 +51,25 @@ To remove a connection at a workspace level, you must first ensure all dataflows
 ## Disabling Azure Data Lake Gen 2
 
 In the **Admin portal**, under **dataflows**, you can disable access for users to either use this feature, and can disallow workspace admins to bring their own Azure Storage.
+
+## Revert to Azure Data Lake Gen 1
+Once the dataflow storage has been configured to use Azure Data Lake Gen 2, there is no way to automatically revert. The process to return to Gen 1 is manual. 
+
+To revert the migration to Gen 2, the user will need to delete their dataflows and recreate them in the same workspace. Then, since we don’t delete data from ADLS, the user should go to the resource itself and clean up data. This would involve the following steps.
+
+1. Export a copy of the dataflow from Power BI. Or, copy the model.json file. The model.json file is stored in ADLS.
+
+2. Edit the model.json file to remove content specific to Gen 2. This would include things like incremental refresh and partitioned data. 
+
+3. Delete the dataflows.
+
+4. Detach ADLS. 
+
+5. Open Gen 1.
+
+6. Recreate the dataflows using import. 
+
+7. Refresh.  
 
 ## Next steps
 The following articles provide more information about dataflows and Power BI:

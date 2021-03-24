@@ -372,6 +372,9 @@ If you suspect data consistency or refresh issues, it might make sense to delete
 
     ![Delete dataset Try it](media/service-modern-usage-metrics/power-bi-delete-dataset-try-it.png)
 
+    > [!NOTE]
+   > This **Try it** button does not apply to GCC customers since their API endpoint is different.
+
 1. Sign in to Power BI, paste the Workspace ID in the **groupId** text box and the dataset ID into the **datasetId** text box, and then select **Run**. 
 
     ![Try the REST API](media/service-modern-usage-metrics/power-bi-rest-api-try-it.png)
