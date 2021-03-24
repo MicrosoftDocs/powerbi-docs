@@ -13,6 +13,8 @@ ms.date: 03/13/2019
 # Power BI visuals API changelog
 This page contains a quick summary of the API versions. Versions listed here are considered stable and will not change.
 
+## API v3.6.0
+  * Visual can receive updates from Power BI without the need to bind any data, by setting in **capabilities.json**: `"supportsLandingPage"` and newly added `"supportsEmptyDataView"` to a **"true"** value.  
 
 ## API v3.4.0
   * `fetchMoreData` : new `aggregateSegments` parameter (default true), for supporting no-aggregation fetchMoreData
@@ -87,7 +89,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 * Supports **rule** property in capabilities schema for object properties
 
 ## API v1.7.0
-* Supports **[RESJSON](./localization.md#resource-file)**
+* Supports **[RESJSON](./localization.md#step-5---add-a-resources-file-for-each-language)**
 
 ## API v1.6.2
 * Supports **[Edit mode](./advanced-edit-mode.md)** for visual to enter in-visual edit mode

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 10/10/2019
+ms.date: 03/10/2021
 LocalizationGroup: Gateways
 ---
 
@@ -25,6 +25,11 @@ Power BI supports the following data sources:
 * Teradata (Kerberos)
 * Spark (Kerberos)
 * Impala (Kerberos)
+* Denodo (Kerberos)
+
+
+> [!NOTE]
+> SQL Server Analysis Services also supports SSO, but does so using [Live connections](service-gateway-enterprise-manage-ssas.md#authentication-to-a-live-analysis-services-data-source), rather than using Kerberos or SAML.
 
 We don't currently support SSO for [M-extensions](https://github.com/microsoft/DataConnectors/blob/master/docs/m-extensions.md).
 

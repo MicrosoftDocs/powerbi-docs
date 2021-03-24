@@ -83,11 +83,11 @@ The following known limitations currently apply to Premium Gen2:
 
 1.  Analysis services features in Premium Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are:
 
-    |Tool|Minimum version required|Estimated release date|
-    |---|---|---|
-    |SQL Server Management Studio (SSMS)|18.8|December 8, 2020|
-    |SQL Server Data Tools (SSDT)|2.9.15|General availability November 30, 2020|
-    | AS PowerShell| Greater than 21.1.18229|November 26, 2020|
+    |Tool|Minimum version required|
+    |---|---|
+    |SQL Server Management Studio (SSMS)|18.8|
+    |SQL Server Data Tools (SSDT)|2.9.15|
+    | AS PowerShell| Greater than 21.1.18229|
 
 4.  Memory restrictions are different in Premium Gen2. In the first generation of Premium, memory was restricted to a limited amount of RAM used by all artifacts simultaneously running. 
 In Gen2, there is no memory Limit for the capacity as a whole. Instead, individual artifacts (such as datasets, dataflows, paginated reports) are subject to the following RAM limitations:
@@ -151,7 +151,7 @@ Capacity administrators automatically have their my workspaces assigned to Premi
 
 ### Capacity nodes
 
-As described in the [Subscriptions and Licensing](#subscriptions-and-licensing) section, there are two Power BI Premium SKU families: **EM** and **P**. All Power BI Premium SKUs are available as capacity *nodes*, each representing a set amount of resources consisting of processor, memory, and storage. In addition to resources, each SKU has operational limits on the number of DirectQuery and Live Connection connections per second, and the number of parallel model refreshes.
+As described in the [Subscriptions and Licensing](#subscriptions-and-licensing) section, there are two Power BI Premium SKU families: **EM** and **P**. All Power BI Premium SKUs are available as capacity *nodes*, each representing a set amount of resources consisting of processor, memory, and storage.  In addition to resources, each SKU has operational limits on the number of DirectQuery and Live Connection connections per second, and the number of parallel model refreshes. While there is a lot of overlap in features for the two SKU families, only the P Premium SKU gives free users the ability to consume content hosted in the Premium capacity.  EM SKUs are used for embedding content.
 
 Processing is achieved by a set number of v-cores, divided equally between backend and frontend.
 
@@ -353,7 +353,7 @@ To learn more, see [Power BI Report Server](../report-server/get-started.md).
 
 ## Unlimited content sharing
 
-With Premium, anyone, whether they're inside or outside your organization can view your Power BI content including paginated and interactive reports without purchasing individual licenses. 
+With P Premium SKUs, anyone, whether they're inside or outside your organization can view your Power BI content including paginated and interactive reports without purchasing individual licenses. P SKUs allow free Power BI users to consumer Power BI apps and shared content, in the Power BI service. EM Premium SKUs do not support unlimited content sharing, though they do support embedding in applications.
 
 ![Content sharing](media/service-premium-what-is/premium-sharing.png)
 
@@ -366,6 +366,9 @@ To learn more, see [Power BI licensing](service-admin-licensing-organization.md)
 Under the hood, the enterprise proven Microsoft **Analysis Services VertiPaq engine** powers Power BI Premium workspaces and datasets. Analysis Services provides programmability and client application and tool support through client libraries and APIs that support the open-standard XMLA protocol. By default, Power BI Premium capacity dataset workloads support *read-only* operations from Microsoft and third-party client applications and tools through an **XMLA endpoint**. Capacity admins can also choose to disable or allow *read/write* operations through the endpoint.
 
 With read-only access, Microsoft tools like SQL Server Management Studio (SSMS) and SQL Server Profiler, and third-party apps such as DAX Studio and data visualization applications, can connect to and query Premium datasets by using XMLA, DAX, MDX, DMVs, and Trace events. With read/write access, enterprise data modeling tools like Visual Studio with Analysis Services projects extension or the open source Tabular Editor can deploy tabular models as a dataset to a Premium workspace. And with tools like SSMS, admins can use Tabular Model Scripting Language (TMSL) to script metadata changes and advanced data refresh scenarios. 
+
+> [!CAUTION]
+> The [XMLA endpoint and 3rd party tools](troubleshoot-xmla-endpoint.md) enable organizations to create perspectives. Power BI does not honor perspectives when building reports on top of Live connect models or reports. Instead, Power BI points to the main model once published to the Power BI service, showing all elements in the data model. If your Azure Analysis Services model uses perspectives, you should not move or migrate those models to Power BI Premium. 
 
 To learn more, see [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md).
 

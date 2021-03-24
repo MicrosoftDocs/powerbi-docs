@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 03/01/2021
+ms.date: 03/11/2021
 ---
 
 # Power BI data sources
@@ -35,7 +35,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Azure HDInsight (HDFS) | Yes | Yes | No | No | No | No |
 | Azure HDInsight Spark | Yes | Yes | Yes | No | No | Yes |
 | Azure SQL Database | Yes | Yes | Yes | Yes  | Yes | Yes |
-| Azure Synapse | Yes | Yes | Yes | Yes  | No | Yes |
+| Azure Synapse Analytics | Yes | Yes | Yes | Yes  | No | Yes |
 | Azure Table Storage | Yes | Yes | No | Yes | No | Yes |
 | BI Connector | Yes | Yes | Yes | Yes | Yes | No |
 | BI360 - Budgeting & Financial Reporting | Yes | Yes | No | No | No | No |
@@ -75,6 +75,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | JSON | Yes | Yes | No | Yes** | No <sup>3</sup> | Yes |
 | Kyligence Enterprise | Yes | Yes | Yes | Yes | Yes | No |
 | MailChimp | Yes | Yes | No | No | No | No |
+| MariaDB | Yes | Yes | Yes | No | Yes | No |
 | Marketo | Yes | Yes | No | No | No | No |
 | MarkLogic ODBC | Yes | Yes | Yes | Yes | Yes | No |
 | Microsoft Azure Consumption Insights | Yes | Yes | No | No | No | No |
@@ -115,7 +116,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Spark | Yes | Yes | Yes | Yes | No | Yes |
 | SparkPost | Yes | Yes | No | No | No | No |
 | SQL Server | Yes | Yes | Yes | Yes | Yes | Yes |
-| SQL Server Analysis Services | Yes | Yes | Yes | Yes | Yes | No |
+| SQL Server Analysis Services | Yes | No | Yes | Yes | Yes | No |
 | Stripe | Yes | Yes | No | No | No | No |
 | SurveyMonkey | Yes | Yes | No | Yes | No | No |
 | SweetIQ | Yes | Yes | No | No | No | No |
@@ -173,6 +174,5 @@ The SSO option takes effect across all datasets that use this data source. It do
 
 [Connect to data in Power BI Desktop](desktop-quickstart-connect-to-data.md)  
 [Using DirectQuery in Power BI](desktop-directquery-about.md)  
-[SQL Server Analysis Services live data in Power BI](sql-server-analysis-services-tabular-data.md)  
 [What is an on-premises data gateway?](service-gateway-onprem.md)  
 [Power BI report data sources in Power BI Report Server](../report-server/data-sources.md)

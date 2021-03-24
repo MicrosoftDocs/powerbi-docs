@@ -35,7 +35,7 @@
     - name: "Performance tips"
       href: performance-tips.md
     - name: "Visuals FAQ"
-      href: power-bi-custom-visuals-faq.md
+      href: power-bi-custom-visuals-faq.yml
     - name: "Using capabilities"
       href: capabilities.md
     - name: "Data view mappings"
@@ -90,6 +90,8 @@
       href: high-contrast-support.md
     - name: "Enable sync slicers"
       href: enable-sync-slicers.md
+    - name: "Render a visual without the need to bind any data"
+      href: no-dataroles-support.md  
     - name: "Debug visuals"
       href: visuals-how-to-debug.md  
     - name: "Mobile development"

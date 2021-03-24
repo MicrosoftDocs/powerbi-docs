@@ -7,7 +7,7 @@ ms.reviewer: 'justyna'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 01/10/2020
+ms.date: 03/18/2021
 LocalizationGroup: Visualizations
 ---
 # Apply data-point limits and strategies by visual type
@@ -110,6 +110,12 @@ Depending on the configuration, a map can have:
 - Legend, Latitude, Longitude: see [High density scatter](../create-reports/desktop-high-density-scatter-charts.md)
 - Legend, Latitude, Longitude, Size: Top 233 legends, Top 15 latitude and longitude  (could use statistics or dynamic limits)
 - Location, Legend, Latitude, and Longitude as aggregates (+/-Size): Top 233 locations, Top 15 legends  (could use statistics or dynamic limits)
+
+### Maps: Azure Maps
+
+- Max points: 30,000
+
+See [High density sampling](../create-reports/desktop-high-density-sampling.md)
 
 ### Matrix
 - Rows: Virtualization by using Window of 500 rows at a time
