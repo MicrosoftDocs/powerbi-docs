@@ -125,6 +125,14 @@ HTTP/1.1 403 Forbidden
 {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
 ```
 
+### How do I send an API request to another tenant?
+
+When you're sending a [Power BI REST API](/rest/api/power-bi/) request to a different tenant, `api.powerbi.com` might resolve it in the tenant it's directed to. This usually happens when the tenant your directing your request to, belongs to a cluster that's closer to the Power BI server.
+
+In such cases, the request needs to be forwarded to the tenant it originated from. The default behavior is for the Power BI service to redirect your request, a process that has a four minute timeout. You can also choose to manually redirect the request using APIs. To manually redirect the request, you need to set the `preferClientRouting` URL parameter to `true`.
+
+When `preferClientRouting` is set to `true`, the Power BI service returns a *307 Temporary Redirect* HTTP response. The HTTP response location header will be set to the tenant the request was originated from, and will resemble this URL: `<request tenant>/imports?displayName=<display name>`.  
+
 ## Authentication
 
 ### Authentication failed with AADSTS90002: Tenant 'authorize' not found
