@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 03/22/2021
+ms.date: 03/24/2021
 ---
 
 # Understand the deployment process
@@ -286,6 +286,11 @@ Workspace members that have *pipeline access*, can also do the following:
 
 * Remove workspaces
 
+* Update datasets
+
+>[!NOTE]
+>If the *block republish and disable package refresh* setting located in the tenant *dataset security* section is enabled, only dataset owners will be able to update datasets.
+
 ### Workspace admin
 
 Workspace administrators that have *pipeline access*, can perform *workspace member* actions, and also do the following:
@@ -297,8 +302,6 @@ Workspace administrators that have *pipeline access*, can perform *workspace mem
 ### Dataset owner
 
 Dataset owners that are either workspace members or admins, can also do the following:
-
-* Update datasets
 
 * Configure rules
 
