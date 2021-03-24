@@ -200,7 +200,7 @@ Take the following steps when investigating scenarios where the Compute Engine i
 
 ## Next steps
 
-* [Using incremental refresh with dataflows](incremental-refresh.md)
+* [Using incremental refresh with dataflows](https://docs.microsoft.com/power-query/dataflows/incremental-refresh)
 * [Incremental refresh in Power BI](../../admin/service-premium-incremental-refresh.md)
 * [Troubleshooting refresh scenarios](../..//connect-data/refresh-troubleshooting-refresh-scenarios.md)
 * [Dataflows best practices](dataflows-best-practices.md)
