@@ -125,9 +125,9 @@ HTTP/1.1 403 Forbidden
 {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
 ```
 
-### How do I send an API request to another tenant?
+### How do I send an API request to a specific cluster to avoid timeouts?
 
-When you're sending a [Power BI REST API](/rest/api/power-bi/) request, `api.powerbi.com` might resolve it in a different cluster that doesn't contain your tenant's data. This usually happens when your tenant belongs to a remote cluster.
+When you're sending a [Power BI REST API](/rest/api/power-bi/) request, it might get resolved in a different cluster that doesn't contain your tenant's data. This usually happens when your tenant belongs to a remote cluster, with a different domain name system (DNS) resolution.
 
 In such cases, the request needs to be forwarded to the cluster that contains your tenant's data. The default behavior is for the Power BI service to redirect your request, a process that has a four minute timeout. To avoid the timeout, you can choose to manually redirect the request using APIs. To manually redirect the request, you need to set the `preferClientRouting` URL parameter to `true`.
 
