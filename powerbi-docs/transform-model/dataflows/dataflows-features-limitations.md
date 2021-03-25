@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 03/19/2021
+ms.date: 03/25/2021
 LocalizationGroup: Data from files
 ---
 # Dataflows limitations and considerations
@@ -123,7 +123,42 @@ Dataflows that exist in Premium have the following limitations and consideration
     * Second approach: if the previous approach isn't feasible, submit a support request to change the subscription ID in the database.
 * ADLS doesn't support most elements in the list in the [Directories and file names](/rest/api/storageservices/naming-and-referencing-shares--directories--files--and-metadata) section of the article for workspace naming and dataflow naming, due to the following limitations:
     * Power BI either returns an unhelpful error, or allows the process to happen but the refresh will fail. 
-* Cross tenant ADLS subscriptions are not supported. The ADLS attached to Power BI must be part of the same Azure tenant that Power BI uses for Azure Active Directory (AAD).
+* Cross tenant ADLS subscriptions are not supported. The ADLS attached to Power BI must be part of the same Azure tenant that Power BI uses for Azure Active Directory (Azure AD).
+
+## Dataflow data types
+
+The data types supported in dataflows are the following:
+
+|Mashup data type	|Dataflow data type |
+|---------|---------|
+|Time|Time|
+|Date|Date|
+|DateTime|DateTime|
+|DateTimeZone|DateTimeOffset|
+|Logical|Boolean|
+|Text|String|
+|Any|String|
+|Currency|Decimal|
+|Int8	|Int64|
+|Int16	|Int64|
+|Int32	|Int64|
+|Int64	|Int64|
+|Double	|Double|
+|Percentage	|Double|
+|Single	|Double|
+|Decimal	|Double|
+|Number	|Double|
+|Duration	|Not Supported|
+|Binary	|Not Supported|
+|Function	|Not Supported|
+|Table	|Not Supported|
+|List	|Not Supported|
+|Record	|Not Supported|
+|Type	|Not Supported|
+|Action	|Not Supported|
+|None	|Not Supported|
+|Null	|Not Supported|
+
 
 ## Next steps
 The following articles provide more information about dataflows and Power BI:
