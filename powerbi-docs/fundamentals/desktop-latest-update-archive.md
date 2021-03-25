@@ -507,11 +507,11 @@ The following updates are new to Power BI Desktop this month:
 * Text/CSF by Example (preview) [[video]](https://youtu.be/TPsV7N4bZZg?t=1335)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_text_csv) 
 
 ### Data connectivity
-* Cherwell connector [[video]](https://youtu.be/TPsV7N4bZZg?t=1392)   [[article]](../create-reports/desktop-external-tools.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Cherwell_connector) 
+* Cherwell connector [[video]](https://youtu.be/TPsV7N4bZZg?t=1392)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Cherwell_connector) 
 
-* Automation Anywhere connector [[video]](https://youtu.be/TPsV7N4bZZg?t=1414)   [[article]](../create-reports/desktop-external-tools.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Auto_connector) 
+* Automation Anywhere connector [[video]](https://youtu.be/TPsV7N4bZZg?t=1414)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Auto_connector) 
 
-* Acterys connector [[video]](https://youtu.be/TPsV7N4bZZg?t=1434)   [[article]](../create-reports/desktop-external-tools.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Acterys_connector) 
+* Acterys connector [[video]](https://youtu.be/TPsV7N4bZZg?t=1434)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Acterys_connector) 
 
 
 For detailed information about each of these new features, see [Power BI Desktop feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/).
@@ -591,7 +591,7 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Other features
-* Launch external tools from Power BI Desktop (preview) [[video]](https://youtu.be/BCNYMJKyjEo?t=1066)   [[article]](../create-reports/desktop-external-tools.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Launch_external_tools) 
+* Launch external tools from Power BI Desktop (preview) [[video]](https://youtu.be/BCNYMJKyjEo?t=1066)   [[article]](../transform-model/desktop-external-tools.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Launch_external_tools) 
 
 
 For detailed information about each of these new features, see [Power BI Desktop feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/).
