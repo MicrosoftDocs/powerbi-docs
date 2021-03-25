@@ -22,11 +22,11 @@ There are two types of refreshes applicable to dataflows:
 
 * **Full**, which performs a complete flush and reload of your data.
 
-* **Incremental (Premium Only)**, which processes a subset of your data based on time-based rules, expressed as a filter, that you configure. The filter on the date column is used to dynamically partition the data into ranges in the Power BI service. After incremental refresh is configured, the dataflow automatically alters your query to include filtering by date. You can edit the automatically generated query by using the **Advanced Editor** in Power Query to fine-tune or customize your refresh. If you bring your own Azure Data Lake Storage, you can see time slices of your data based on the refresh policy you've set.
+* **Incremental (Premium only)**, which processes a subset of your data based on time-based rules, expressed as a filter, that you configure. The filter on the date column is used to dynamically partition the data into ranges in the Power BI service. After incremental refresh is configured, the dataflow automatically alters your query to include filtering by date. You can edit the automatically generated query by using the **Advanced Editor** in Power Query to fine-tune or customize your refresh. If you bring your own Azure Data Lake Storage, you can see time slices of your data based on the refresh policy you've set.
 
-> [!NOTE]
-> You can read more about [incremental refresh](https://docs.microsoft.com/power-query/dataflows/incremental-refresh) and how it works.
-
+    > [!NOTE]
+    > You can read more about [incremental refresh](https://docs.microsoft.com/power-query/dataflows/incremental-refresh) and how it works.
+    
 Incremental refresh enables large dataflows in Power BI with the following benefits:
 
 * Refreshes are faster after the first refresh, due to the following facts:
@@ -45,7 +45,7 @@ In any of these refresh scenarios, if a refresh fails the data is not updated, w
 
 To better understand how a dataflow refresh operation performs, review the **Refresh History** for the dataflow by navigating to **Dataflow > Settings > Refresh History**. You can also select the dataflow in the **Workspace  > context menu (…) > Refresh History**.
 
-:::image type="content" source="media/dataflows-understand-optimize-refresh/dataflows-understand-optimize-refresh-01.png" alt-text="Screenshot of dataflows refresh history":::
+:::image type="content" source="media/dataflows-understand-optimize-refresh/dataflows-understand-optimize-refresh-01.png" alt-text="Screenshot of dataflows refresh history.":::
 
 The **Refresh History** provides an overview of refreshes, including the type – *on demand* or *scheduled*, the duration, and the run status. To see details in the form of a CSV file, select the download icon on the far right of the refresh description's row. The downloaded CSV includes the attributes described in the following table. Premium refreshes provide more information based on the additional compute and dataflows capabilities, versus Pro based dataflows that reside on shared capacity. As such, some of the following metrics are available only in Premium.
 
@@ -59,17 +59,16 @@ The **Refresh History** provides an overview of refreshes, including the type �
 | Entity name | Table name | ✔ | ✔ |
 | Partition name | This is dependent on if the dataflow is premium or not, and if Pro will show as NA because it does not support incremental refreshes. Premium will show either FullRefreshPolicyPartition or IncrementalRefreshPolicyPartition-[DateRange] |  | ✔ |
 | Refresh status | Refresh status of the individual entity or partition, which provides status for that time slice of data being refreshed. | ✔ | ✔ |
-| Start time | In Premium, this is the time the dataflow was queued up to be processed for the entity or partition. This can differ if dataflows have dependencies and need to wait for the result set of an upstream dataflow to begin processing.<br><br>In Pro, this is the same as the request time, but can vary based on Pro dataflows residing in shared capacity. | ✔ | ✔ |
+| Start time | In Premium, this is the time the dataflow was queued up to be processed for the entity or partition. This can differ if dataflows have dependencies and need to wait for the result set of an upstream dataflow to begin processing. | ✔ | ✔ |
 | End time | This is the time the dataflow entity or partition completed, if applicable. | ✔ | ✔ |
 | Duration | Total elapsed time for the dataflow to refresh expressed in HH:MM:SS | ✔ | ✔ |
-| Rows processed | For a given entity or partition, # of rows scanned or written by the dataflows engine. This may not always contain data based on the operation you performed, such as when the Compute Engine is not used, or when using a gateway as the data is processed there.<br><br>When using a gateway on this particular dataflow, this information will not be provided. |  | ✔ |
+| Rows processed | For a given entity or partition, # of rows scanned or written by the dataflows engine. This may not always contain data based on the operation you performed, such as when the Compute Engine is not used, or when using a gateway as the data is processed there. |  | ✔ |
 | Bytes processed | For a given entity or partition, Data written by the dataflows engine, expressed in bytes.<br><br>Note, when using a gateway on this particular dataflow this information will not be provided. |  | ✔ |
 | Max commit (KB) | Max Commit is the peak commit memory useful for diagnosing out-of-memory failures when the M query is not optimized.<br><br>When using a gateway on this particular dataflow, this information will not be provided. |  | ✔ |
 | Processor Time | For a given entity or partition, Time, expressed in HH:MM:SS that the dataflows engine spent performing transformations.<br><br>When using a gateway on this particular dataflow, this information will not be provided. |  | ✔ |
-| Wait time | For a given entity or partition, the time that an entity spent in wait status, based on workload on the Premium capacity.<br><br>When using a gateway on this particular dataflow, this information will not be provided. |  | ✔ |
-| Compute engine | For a given entity or partition, Details on how the Compute Engine was used in the refresh operation. Values are the following:<br>- NA<br>- Folded<br>- Cached<br>- Cached + Folded<br><br>These elements are described in more detail later in this article. When using a gateway, this information will not be provided. |  | ✔ |
+| Wait time | For a given entity or partition, the time that an entity spent in wait status, based on workload on the Premium capacity. |  | ✔ |
+| Compute engine | For a given entity or partition, Details on how the Compute Engine was used in the refresh operation. Values are the following:<br>- NA<br>- Folded<br>- Cached<br>- Cached + Folded<br><br>These elements are described in more detail later in this article. |  | ✔ |
 | Error | If applicable, the detailed error message is described per entity or partition | ✔ | ✔ |
-
 
 ## Dataflow refresh guidance 
 
@@ -166,17 +165,17 @@ Turning on the Enhanced Compute Engine and understanding the various statuses is
 
 If you're experiencing long durations and still get a status of **NA**, make sure that it is [turned on](dataflows-premium-workload-configuration.md) and not accidentally turned off. One recommended pattern is to use [staging dataflows to initially get your data into the Power BI service, then build dataflows on top of this data, once it is in a staging dataflow](https://docs.microsoft.com/power-query/dataflows/best-practices-developing-complex-dataflows#split-data-transformation-dataflows-from-stagingextraction-dataflows). That pattern can reduce load on source systems and, together with the Compute Engine, provide a speed boost for transformations and improve performance.
 
-**CACHED** - If you see **cached** status, the dataflow data was stored in the Compute Engine and available to be referenced as part of another query. This is ideal if you're using it as a Linked Entity, because that data is cached for use downstream and doesn't need to be refreshed multiple times in the same dataflow. This is also potentially ideal if you want to use it for DirectQuery.
+**Cached** - If you see **cached** status, the dataflow data was stored in the Compute Engine and available to be referenced as part of another query. This is ideal if you're using it as a Linked Entity, because that data is cached for use downstream and doesn't need to be refreshed multiple times in the same dataflow. This is also potentially ideal if you want to use it for DirectQuery.
 
 When cached, the performance impact on initial ingestion will pay off later, in the same dataflow or different dataflow in same workspace.
 
 If you have a large duration for the entity, consider turning off the Compute Engine. To cache the entity, Power BI writes it to storage and to SQL. If it's a single-use entity, the performance benefit for users may not be worth the penalty of the double-ingestion.
 
-**FOLDED** - Folded means that the dataflow was able to use SQL Compute to read data. The calculated entity used the table from SQL to read data, and the SQL used is related to the constructs of their query.
+**Folded** - Folded means that the dataflow was able to use SQL Compute to read data. The calculated entity used the table from SQL to read data, and the SQL used is related to the constructs of their query.
 
 Folded status appears if, when you're using on-premises or cloud data sources, you first loaded data into a staging dataflow and referenced that in this dataflow. This status applies only to entities that reference another entity. It means your queries were run on top of the SQL engine, and thus have the potential to be improved with SQL compute. To ensure your transformations are processed by the SQL engine, use transformations that support SQL folding, such as merge (join), group by (aggregation), and append (union) actions in the Query Editor.
 
-**CACHED + FOLDED** - When you see **cached + folded**, it's likely that the data refresh has been optimized, as you have an entity that both references another entity and is referred to by another entity upstream. This will also run on top of the SQL and, as such, also has the potential to be improved with SQL compute. To be sure you're getting the best performance possible, use transformations that support SQL folding, like merge (join), group by (aggregation), and append (union) actions in the Query Editor.
+**Cached + Folded** - When you see **cached + folded**, it's likely that the data refresh has been optimized, as you have an entity that both references another entity and is referred to by another entity upstream. This will also run on top of the SQL and, as such, also has the potential to be improved with SQL compute. To be sure you're getting the best performance possible, use transformations that support SQL folding, like merge (join), group by (aggregation), and append (union) actions in the Query Editor.
 
 ### Guidance for Compute Engine performance optimization
 
