@@ -1,13 +1,13 @@
 ---
-title: External tools in Power BI Desktop
-description: Extend the use of Power BI Desktop with external tools
+title: Register external tools in Power BI Desktop
+description: Learn how to register external tools for Power BI Desktop
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 03/15/2021
+ms.date: 03/25/2021
 LocalizationGroup: Create reports
 ---
 
@@ -118,6 +118,6 @@ if (userClickedOK == true)
 
 ## See also
 
-[External tools in Power BI Desktop](desktop-externaltools.md)  
+[External tools in Power BI Desktop](desktop-external-tools.md)  
 [Client libraries for connecting to Analysis Services](/analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true)  
 [Tabular Object Model (TOM)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current&preserve-view=true)  

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 03/15/2021
+ms.date: 03/25/2021
 LocalizationGroup: Create reports
 ---
 
@@ -98,5 +98,4 @@ A value of 0 (decimal) disable the External Tools ribbon.
 
 ## See also
 
-* [Client libraries for connecting to Analysis Services](/analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true)  
-* [Tabular Object Model (TOM)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current&preserve-view=true)  
+[Register an external tool](desktop-external-tools-register.md)  
