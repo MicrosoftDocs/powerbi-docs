@@ -11,9 +11,9 @@ ms.date: 03/25/2021
 LocalizationGroup: Create reports
 ---
 
-# Register external tools
+# Register an external tool
 
-To register other external tools with Power BI Desktop, create a JSON file with the following content:
+Some tools must be manually registered with Power BI Desktop. To register an external tool, create a JSON file with the following:
 
 ```json
 {

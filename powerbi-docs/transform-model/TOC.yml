@@ -97,7 +97,7 @@
         href: desktop-import-and-display-kpis.md
       - name: "Apply auto date/time"
         href: desktop-auto-date-time.md   
-  - name: Power BI Desktop External tools
+  - name: External tools
     items:
     - name: External tools in Power BI Desktop
       href: desktop-external-tools.md
