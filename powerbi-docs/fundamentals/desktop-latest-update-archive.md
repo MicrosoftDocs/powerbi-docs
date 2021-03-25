@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/17/2021
+ms.date: 03/25/2021
 LocalizationGroup: Get started
 ---
 # Previous monthly updates to Power BI Desktop and the Power BI service
@@ -28,7 +28,7 @@ You can also watch the **Latest Updates** video from the beginning, right inside
 The following sections describe previous months' updates to **Power BI Desktop** and the **Power BI service**.
 
 
-## February 2021 Update (2.90.303.0)
+## February 2021 Update (2.90.702.0)
 
 Our February Power BI updates were better than a heart-shaped box of chocolates. 
 

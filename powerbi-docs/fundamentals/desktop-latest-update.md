@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/17/2021
+ms.date: 03/25/2021
 LocalizationGroup: Get started
 ---
 # What's new in Power BI?
 
-## March 2021 Update (2.91.383.0)
+## March 2021 Update (2.91.701.0)
 
 We feel lucky like a four-leaf clover to be delivering these March Power BI updates to our community. 
 
