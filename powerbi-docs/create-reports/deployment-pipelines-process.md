@@ -262,7 +262,7 @@ Workspace viewers that have *pipeline access*, can also do the following:
 * Consume content
 
 >[!NOTE]
->Workspace viewers cannot access the dataset or edit workspace content.
+>Workspace members assigned the Viewer role without **build** permissions cannot access the dataset or edit workspace content.
 
 ### Workspace contributor
 

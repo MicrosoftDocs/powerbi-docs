@@ -8,7 +8,7 @@ featuredvideoid: jXTiYJKw1Rs
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 03/23/2021
+ms.date: 03/24/2021
 ---
 
 # What are paginated reports in Power BI Premium?
@@ -46,9 +46,9 @@ This video is part of an eight-module video-based course, [Power BI Paginated Re
 
 Paginated reports have their own design tool, Power BI Report Builder. It's a new tool that shares the same foundation as the tools you'd previously used to create paginated reports for Power BI Report Server or SQL Server Reporting Services (SSRS). In fact, paginated reports that you create for SSRS 2016 and 2017 or for Power BI Report Server on-premises, are compatible with the Power BI service. The Power BI service maintains backwards compatibility so you can move your reports forward, and you can upgrade any previous-version paginated reports. Not all report features are available at launch. See [Limitations and considerations](#limitations-and-considerations) in this article for details.
 
-## Develop reports in the deployment pipeline tool
+## Use deployment pipelines with paginated reports
 
-In the Power BI service, you can use the deployment pipeline tool to develop paginated reports. Deployment pipelines let you develop and test your Power BI paginated reports before you release them to your users. The tool is a pipeline with three stages:
+In the Power BI service, you can use the deployment pipeline tool with paginated reports. Deployment pipelines let you develop and test your Power BI paginated reports before you release them to your users. The tool is a pipeline with three stages:
 - Development
 - Test
 - Production
