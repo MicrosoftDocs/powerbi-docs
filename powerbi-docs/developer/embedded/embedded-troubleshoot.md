@@ -127,9 +127,9 @@ HTTP/1.1 403 Forbidden
 
 ### How do I send an API request to another tenant?
 
-When you're sending a [Power BI REST API](/rest/api/power-bi/) request to a different tenant, `api.powerbi.com` might resolve it in the tenant it's directed to. This usually happens when the tenant your directing your request to, belongs to a cluster that's closer to the Power BI server.
+When you're sending a [Power BI REST API](/rest/api/power-bi/) request, `api.powerbi.com` might resolve it in a different cluster that doesn't contain your tenant's data. This usually happens when your tenant belongs to a remote cluster.
 
-In such cases, the request needs to be forwarded to the tenant it originated from. The default behavior is for the Power BI service to redirect your request, a process that has a four minute timeout. You can also choose to manually redirect the request using APIs. To manually redirect the request, you need to set the `preferClientRouting` URL parameter to `true`.
+In such cases, the request needs to be forwarded to the cluster that contains your tenant's data. The default behavior is for the Power BI service to redirect your request, a process that has a four minute timeout. To avoid the timeout, you can choose to manually redirect the request using APIs. To manually redirect the request, you need to set the `preferClientRouting` URL parameter to `true`.
 
 When `preferClientRouting` is set to `true`, the Power BI service returns a *307 Temporary Redirect* HTTP response. The HTTP response location header will be set to the tenant the request was originated from, and will resemble this URL: `<request tenant>/imports?displayName=<display name>`.  
 
