@@ -76,6 +76,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Google Analytics | Yes | Yes | No | No | No | No |
 | Google BigQuery | Yes | Yes | Yes | Yes | No | Yes |
 
+
 ## Data sources H-K
 | Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
 |---|---|---|---|---|---|---|
