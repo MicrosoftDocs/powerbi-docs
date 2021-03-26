@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/14/2021
+ms.date: 03/26/2021
 LocalizationGroup: Share your work
 ---
 
@@ -174,7 +174,7 @@ Established organizations usually already have a Power BI administrator. People 
 - Global administrators
 - Users with the Power BI service admin role in Azure Active Directory
 
-You need to [find one of these people](/office365/admin/admin-overview/admin-overview#who-has-admin-permissions-in-my-business) in your organization and ask them to update the [Publish to web tenant settings](../admin/service-admin-portal.md#publish-to-web) in the admin portal.
+You need to [find one of these people](/microsoft-365/business-video/admin-center-overview#who-has-admin-permissions-in-my-business) in your organization and ask them to update the [Publish to web tenant settings](../admin/service-admin-portal.md#publish-to-web) in the admin portal.
 
 ## Limitations
 

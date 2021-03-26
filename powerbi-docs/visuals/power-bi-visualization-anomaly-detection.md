@@ -3,11 +3,11 @@ title: Anomaly detection tutorial
 description: 'Tutorial: Detect Anomalies in Power BI'
 author: aphilip94
 ms.author: anphil
-ms.reviewer: aphilip94
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/10/2020
+ms.date: 03/25/2021
 LocalizationGroup: Visualizations
 ---
 # Anomaly detection (preview)
@@ -54,3 +54,6 @@ You can also control the fields that are used for analysis. For example, by drag
 - Direct Query over SAP data source, Power BI Report Server, Live Connection to Azure Analysis Services and SQL Server Analysis Services aren't supported.
 - Anomaly Explanations doesn't work with 'Show Value As' options.
 - Drilling down to go to the next level in the hierarchy isn't supported.
+
+## Next steps
+To learn more about the algorithm that runs anomoly detection, see [Tony Xing's post on the SR-CNN algorithm in Azure Anomoly Detector](https://techcommunity.microsoft.com/t5/ai-customer-engineering-team/overview-of-sr-cnn-algorithm-in-azure-anomaly-detector/ba-p/982798)

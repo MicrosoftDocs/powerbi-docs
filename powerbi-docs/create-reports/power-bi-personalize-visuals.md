@@ -136,6 +136,7 @@ Slide **Personalize visual** >  **On** or **Off**.
 Currently the feature has a few limitations to be aware of.
 
 - This feature isn't supported for publish to web.
+- Export to PowerPoint and PDF do not capture personalized visuals.
 - User explorations don't automatically persist. You need to save your view as a personal bookmark to capture your changes.
 - This feature is supported in the Power BI mobile apps for iOS and Android tablets and in the Power BI Windows app; it is not supported in the Power BI mobile apps for phones. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
 
