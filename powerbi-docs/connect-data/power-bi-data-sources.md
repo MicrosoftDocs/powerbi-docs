@@ -72,14 +72,13 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Facebook | Yes | Yes | No | No | No | No |
 | File | Yes | Yes | No | Yes | Yes | Yes |
 | Folder | Yes | Yes | No | Yes | Yes | Yes |
-
-
-## Data sources G-K
-| Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
-|---|---|---|---|---|---|---|
 | GitHub | Yes | Yes | No | No | No | No |
 | Google Analytics | Yes | Yes | No | No | No | No |
 | Google BigQuery | Yes | Yes | Yes | Yes | No | Yes |
+
+## Data sources H-K
+| Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
+|---|---|---|---|---|---|---|
 | Hadoop File (HDFS) | Yes | No | No | No | No | No |
 | Hive LLAP | Yes | Yes | Yes | Yes | No | No |
 | HDInsight Interactive Query | Yes | Yes | Yes | No | No | No || IBM DB2 | Yes | Yes | Yes | Yes | No | Yes |
