@@ -59,15 +59,13 @@ To revert the migration that you made to Gen 2, the user will need to delete the
 
 1. Export a copy of the dataflow from Power BI. Or, copy the model.json file. The model.json file is stored in ADLS.
 
+2. Delete the dataflows.
 
+3. Detach ADLS. 
 
-3. Delete the dataflows.
+4. Recreate the dataflows using import. Note that incremental refresh data (if applicable) will need to be deleted prior to imort. This can be done by deleting those relevant partitions in the model.json file.
 
-4. Detach ADLS. 
-
-6. Recreate the dataflows using import. Note that incremental refresh data (if applicable) will need to be deleted prior to imort. This can be done by deleting those relevant partitions in the model.json file.
-
-7. Configure refresh / recreate incremental refresh policies.  
+5. Configure refresh / recreate incremental refresh policies.  
 
 ## Next steps
 The following articles provide more information about dataflows and Power BI:
