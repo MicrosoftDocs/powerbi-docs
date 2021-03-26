@@ -58,30 +58,31 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Dynamics 365 Business Central (on-premises) | Yes | Yes | No | No | No | No |
 | Dynamics 365 Customer Insights | Yes | Yes | No | No | No | No |
 | Dynamics NAV | Yes | Yes | No | No | No | No |
+
+
+
+## Data sources E-G
+| Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
+|---|---|---|---|---|---|---|
 | Emigo Data Source | Yes | Yes | No | No | No | No |
 | Entersoft Business Suite | Yes | Yes | No | No | No | No |
 | Essbase | Yes | Yes | Yes | Yes | Yes | No |
 | Exasol | Yes | Yes | Yes | Yes | Yes | No |
 | Excel | Yes <sup>2</sup> | Yes <sup>2</sup> | No | Yes <sup>2</sup> | No <sup>3</sup> | Yes |
-
-
-## Data sources E-H
-| Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
-|---|---|---|---|---|---|---|
 | Facebook | Yes | Yes | No | No | No | No |
 | File | Yes | Yes | No | Yes | Yes | Yes |
 | Folder | Yes | Yes | No | Yes | Yes | Yes |
+
+
+## Data sources G-K
+| Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
+|---|---|---|---|---|---|---|
 | GitHub | Yes | Yes | No | No | No | No |
 | Google Analytics | Yes | Yes | No | No | No | No |
 | Google BigQuery | Yes | Yes | Yes | Yes | No | Yes |
 | Hadoop File (HDFS) | Yes | No | No | No | No | No |
 | Hive LLAP | Yes | Yes | Yes | Yes | No | No |
-| HDInsight Interactive Query | Yes | Yes | Yes | No | No | No |
-
-## Data sources I-K
-| Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
-|---|---|---|---|---|---|---|
-| IBM DB2 | Yes | Yes | Yes | Yes | No | Yes |
+| HDInsight Interactive Query | Yes | Yes | Yes | No | No | No || IBM DB2 | Yes | Yes | Yes | Yes | No | Yes |
 | IBM Informix Database | Yes | Yes | No | Yes | No | No |
 | IBM Netezza | Yes | Yes | Yes | Yes | Yes | No |
 | Impala | Yes | Yes | Yes | Yes | Yes | Yes |
