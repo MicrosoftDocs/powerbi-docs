@@ -25,7 +25,7 @@ Get started with these popular on-demand webinars:
 **Webinar Series: Mastering Data Modeling with Power BI  
 Episode 1 - Data Modeling 101: Increasing the Impact of Power BI**  
 by Jeroen ter Heerdt and Marc Lelijveld  
-[Watch now](https://info.microsoft.com/ww-Landing-Mastering-Data-Modeling-with-Power-BI.html?LCID=EN-US)
+[Watch now](https://info.microsoft.com/ww-Landing-Mastering-Data-Modeling-with-Power-BI.html)
 
 **Quickstart Guide to Navigating Power BI**  
 by Miguel Martinez  
