@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/08/2021
+ms.date: 03/24/2021
 ---
 # Power BI webinars
 [//]: # "Tatevik Tatero (tatevik.teroyan@simple-concepts.com) is a vendor who works with Chauncy Freels and helps to maintain this list of webinars"
@@ -30,6 +30,15 @@ by Jeroen ter Heerdt and Marc Lelijveld
 **Quickstart Guide to Navigating Power BI**  
 by Miguel Martinez  
 [Watch now](https://info.microsoft.com/ww-Landing-Quickstart-Guide-to-Navigating-Power-BI.html)
+
+**Quickstart Guide to Navigating Power BI**  
+by Miguel Martinez  
+[Watch now](https://info.microsoft.com/ww-Landing-Quickstart-Guide-to-Navigating-Power-BI.html?LCID=EN-US)
+
+**Webinar Series: Mastering Data Modeling with Power BI**  
+**Episode 1 - Data Modeling 101: Increasing the Impact of Power BI**  
+by Jeroen ter Heerdt and Marc Lelijveld  
+[Watch now](https://info.microsoft.com/ww-Landing-Mastering-Data-Modeling-with-Power-BI.html?LCID=EN-US)
 
 **Data-driven Insights for Real-time Decisions and Stronger Customer Connections**  
 by Shruti Shukla and Chandra Stevens  
