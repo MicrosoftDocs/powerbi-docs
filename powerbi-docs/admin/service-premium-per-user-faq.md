@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 3/10/2021
+ms.date: 3/26/2021
 LocalizationGroup: Premium
 ---
 # Power BI Premium Per User FAQ (preview)
@@ -131,7 +131,7 @@ This article groups questions and answers into the following categories:
 
 8.	**How will e-mail subscriptions work in PPU?**
 
-    Anyone with a PPU license or a Pro license can receive the subscription and any attachment it includes, provided the attachment is the same for all users. Pro users will not be able to view the content in the product portal. If additional subscription capabilities are introduced that allow for different data views for different recipients, a PPU license (or Premium capacity) will be required to use those capabilities.
+    Anyone with a PPU license or a Pro license can receive the subscription and any attachment it includes, provided the attachment is the same for all users. Pro users will not be able to view the content in the product portal. If additional subscription capabilities are introduced that allow for different data views for different recipients, a PPU license (or Premium capacity) will be required to use those capabilities. A PPU license does not allow for e-mail subscriptions to external users. The content must be hosted in a Premium capacity to subscribe external users.  
 
 9.	**Can I exceed the 48 refreshes through the portal through the refresh API?**
 
