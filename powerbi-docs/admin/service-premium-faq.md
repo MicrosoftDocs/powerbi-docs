@@ -160,7 +160,7 @@ The following articles provide more information about Power BI Premium:
 * [What is Power BI Premium?](service-premium-what-is.md)
 * [Using Autoscale with Power BI Premium](service-premium-auto-scale.md)
 * [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
-* [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
+* [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
 * [Extended Pro Trial activation](../fundamentals/service-self-service-signup-for-power-bi.md)
 * [Power BI Embedded FAQ](../developer/embedded/embedded-faq.md)
 
