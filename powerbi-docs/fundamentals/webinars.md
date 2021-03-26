@@ -29,7 +29,7 @@ by Jeroen ter Heerdt and Marc Lelijveld
 
 **Quickstart Guide to Navigating Power BI**  
 by Miguel Martinez  
-[Watch now]( https://info.microsoft.com/ww-Landing-Quickstart-Guide-to-Navigating-Power-BI.html?LCID=EN-US)
+[Watch now](https://info.microsoft.com/ww-Landing-Quickstart-Guide-to-Navigating-Power-BI.html)
 
 **Data-driven Insights for Real-time Decisions and Stronger Customer Connections**  
 by Shruti Shukla and Chandra Stevens  
