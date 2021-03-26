@@ -53,23 +53,21 @@ To remove a connection at a workspace level, you must first ensure all dataflows
 In the **Admin portal**, under **dataflows**, you can disable access for users to either use this feature, and can disallow workspace admins to bring their own Azure Storage.
 
 ## Revert to Azure Data Lake Gen 1
-Once the dataflow storage has been configured to use Azure Data Lake Gen 2, there is no way to automatically revert. The process to return to Gen 1 is manual. 
+Once the dataflow storage has been configured to use Azure Data Lake Gen 2, there is no way to automatically revert. The process to return to Power BI managed storage is manual. 
 
-To revert the migration to Gen 2, the user will need to delete their dataflows and recreate them in the same workspace. Then, since we don’t delete data from ADLS, the user should go to the resource itself and clean up data. This would involve the following steps.
+To revert the migration that you made to Gen 2, the user will need to delete their dataflows and recreate them in the same workspace. Then, since we don’t delete data from ADLS Gen 2, the user should go to the resource itself and clean up data. This would involve the following steps.
 
 1. Export a copy of the dataflow from Power BI. Or, copy the model.json file. The model.json file is stored in ADLS.
 
-2. Edit the model.json file to remove content specific to Gen 2. This would include things like incremental refresh and partitioned data. 
+
 
 3. Delete the dataflows.
 
 4. Detach ADLS. 
 
-5. Open Gen 1.
+6. Recreate the dataflows using import. Note that incremental refresh data (if applicable) will need to be deleted prior to imort. This can be done by deleting those relevant partitions in the model.json file.
 
-6. Recreate the dataflows using import. 
-
-7. Refresh.  
+7. Configure refresh / recreate incremental refresh policies.  
 
 ## Next steps
 The following articles provide more information about dataflows and Power BI:
