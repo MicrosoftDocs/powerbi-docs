@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 02/01/2021
+ms.date: 03/29/2021
 LocalizationGroup: Get started
 ---
 # Supported browsers for Power BI
@@ -16,9 +16,9 @@ Power BI is designed to work with any of the supported browsers mentioned below.
 
 Power BI supports these browsers on all platforms where they're available:
 
-- Microsoft Edge Classic
 - Microsoft Edge Chromium
 - Internet Explorer 11. Some advanced features, such as lineage view, aren't supported in Internet Explorer. See [Data lineage (preview)](../collaborate-share/service-data-lineage.md) for details.
+- - Beginning **August 17, 2021** Microsoft 365 apps and services, including Power BI, will no longer support Internet Explorer 11 (IE 11). Please refer to [this Microsoft 365 blog post](http://aka.ms/AA97tsw) for more information.
 - Chrome desktop latest version
 - Safari Mac latest version
 - Firefox desktop latest version. Firefox may change the fonts used in Power BI 
