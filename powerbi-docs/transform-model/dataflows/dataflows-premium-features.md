@@ -75,7 +75,6 @@ To make best use of the compute engine, split the ETL stage into two separate da
 * True/False
 * Date
 * Time
- 
 
 ## Use DirectQuery with dataflows in Power BI (preview)
 

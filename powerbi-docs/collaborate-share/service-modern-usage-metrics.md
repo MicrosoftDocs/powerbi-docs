@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 01/15/2021
+ms.date: 03/29/2021
 LocalizationGroup: Dashboards
 ---
 
@@ -160,15 +160,15 @@ Usage metrics reports are a feature that the Power BI or global administrator ca
 
 ## Exclude user information from usage metrics reports
 
-By default, per-user data is enabled for usage metrics. Content consumer account information is included in the metrics report. If admins don't want to expose this information for some or all users, they can exclude user information from your usage report. In the Power BI admin portal tenant settings, they can disable per-user data in usage metrics for specified security groups or for the entire organization.
+By default, per-user data is enabled for usage metrics. This means content consumer account information such as user name and email address is included in the usage metrics report. Admins can limit exposure of identifying user information in the Power BI admin portal tenant settings. They can enable per-user data for the entire organization or specified security groups.
 
-1. On the **Tenant settings** tab in the admin portal, under **Audit and usage settings**, expand **Per-user data in metrics for content creators** and select **Disabled**.
+If user information is excluded, the usage report refers to users as 'Unnamed User _[unique_id]_', where _[unique_id]_ is a meaningless unique identifier assigned to support distinct user count measures.
+
+1. On the **Tenant settings** tab in the admin portal, under **Audit and usage settings**, expand **Per-user data in metrics for content creators** and select **Disabled**. This will hide user account information for all users.
 
 2. Decide whether to **Delete all existing per-user data in current usage metrics content**. Select **Apply**.
 
     ![Disable per-user metrics](media/service-modern-usage-metrics/power-bi-admin-disable-per-user-metrics.png)
-
-If user information is excluded, the usage report refers to users as Unnamed.
 
 When disabling usage metrics for their entire organization, admins can use the Delete all existing usage metrics content option to delete all existing reports and dashboard tiles that were built using the usage metrics reports. This option removes all access to usage metrics data for all users in the organization who may already be using it. Deleting existing usage metrics content is irreversible.
 
@@ -348,9 +348,14 @@ The Platform indicates the technology a viewer used to open a report: via PowerB
 **Q:**  There are four reports in the previous version of the usage metrics report, but the improved version only displays three.
 **A:**  The improved usage metrics report only includes reports that have been opened in the past 30 days, while the previous version covers the past 90 days. If a report isn't included in the improved usage metrics report, it likely hasn't been used in more than 30 days.
 
-## Troubleshoot: Delete the dataset
+## Troubleshoot refresh issues
 
-If you suspect data consistency or refresh issues, it might make sense to delete the existing Usage Metrics Report dataset. Then you can run View Usage Metrics again to generate a new dataset with its associated improved usage metrics reports. Follow these steps.
+If you suspect data consistency or refresh issues, it might make sense to delete the existing Usage Metrics Report dataset. Then you can run View Usage Metrics again to generate a new dataset with its associated improved usage metrics reports.
+
+> [!NOTE]
+> Power Automate can perform a refresh that can force the Report Usage model to reload data. This option may not resolve all refresh issues; for example, if an older version is stuck in the workspace.
+
+Follow these steps to delete the dataset and then create a fresh data refresh report. 
 
 ### Delete the dataset
 
