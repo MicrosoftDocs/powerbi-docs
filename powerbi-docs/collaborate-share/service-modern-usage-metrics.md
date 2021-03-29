@@ -348,9 +348,14 @@ The Platform indicates the technology a viewer used to open a report: via PowerB
 **Q:**  There are four reports in the previous version of the usage metrics report, but the improved version only displays three.
 **A:**  The improved usage metrics report only includes reports that have been opened in the past 30 days, while the previous version covers the past 90 days. If a report isn't included in the improved usage metrics report, it likely hasn't been used in more than 30 days.
 
-## Troubleshoot: Delete the dataset
+## Troubleshoot refresh issues
 
-If you suspect data consistency or refresh issues, it might make sense to delete the existing Usage Metrics Report dataset. Then you can run View Usage Metrics again to generate a new dataset with its associated improved usage metrics reports. Follow these steps.
+If you suspect data consistency or refresh issues, it might make sense to delete the existing Usage Metrics Report dataset. Then you can run View Usage Metrics again to generate a new dataset with its associated improved usage metrics reports.
+
+> [!NOTE]
+> Power Automate can perform a refresh that can force the Report Usage model to reload data. This option may not resolve all refresh issues; for example, if an older version is stuck in the workspace.
+
+Follow these steps to delete the dataset and then create a fresh data refresh report. 
 
 ### Delete the dataset
 
