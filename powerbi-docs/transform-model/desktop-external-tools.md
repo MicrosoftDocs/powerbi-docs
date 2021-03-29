@@ -54,7 +54,7 @@ Power BI Desktop (pbix) files consist of multiple components including the repor
 
 When Power BI Desktop launches Analysis Services as its analytical data engine, it dynamically assigns a random port number and loads the model with a randomly generated name in the form of a globally unique identifier (GUID). Because these connection parameters change with every Power BI Desktop session, it's difficult for external tools to discover on their own the correct Analysis Services instance and model to connect to. External tools integration solves this problem by allowing Power BI Desktop to communicate the Analysis Services server name, port number, and model name to the tool as command-line parameters when starting the external tool from the External Tools ribbon, as shown in the following diagram.
 
-:::image type="content" source="media/desktop-external-tools/external-tool-arch.png" border="false" alt-text="Esternal tool architecture":::
+:::image type="content" source="media/desktop-external-tools/external-tool-arch.png" border="false" alt-text="External tool architecture":::
 
 With the Analysis Services Server name, port number, and model name, the tool uses Analysis Services client libraries to establish a connection to the model, retrieve metadata, and execute DAX or MDX queries. Whenever an external data modeling tool updates the metadata, Power BI Desktop synchronizes the changes so that the Power BI Desktop user interface reflects the current state of the model accurately. Keep in mind there are some limitations to the synchronization capabilities as described below.
 
