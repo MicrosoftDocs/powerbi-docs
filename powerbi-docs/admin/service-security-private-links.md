@@ -46,7 +46,7 @@ In Power BI, you can configure and use an endpoint that enables your organizatio
 
 The steps that enable you to securely access Power BI from private endpoints are:
 
-1. [Enable private endpoints for Power BI](#enable-private-links-for-power-bi)
+1. [Enable private endpoints for Power BI](#enable-private-endpoints-for-power-bi)
 2. [Create a Power BI resource in the Azure portal](#create-a-power-bi-resource-in-the-azure-portal)
 3. [Create a virtual network](#create-a-virtual-network)
 4. [Create a virtual machine (VM)](#create-a-virtual-machine-vm)
