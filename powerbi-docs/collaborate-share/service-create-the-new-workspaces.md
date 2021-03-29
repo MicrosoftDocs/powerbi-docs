@@ -47,7 +47,7 @@ Ready to migrate your classic workspace? See [Upgrade classic workspaces to the 
 
 The Workspace OneDrive feature allows you to configure a Microsoft 365 group whose SharePoint Document Library file storage is available to workspace users. You create the group *outside* of Power BI first.
 
-Power BI doesn't synchronize permissions of users or groups with workspace access, and users or groups with Microsoft 365 group membership. The best practice is to give [access to the workspace](give-access-new-workspaces.md) to the same Microsoft 365 group whose file storage you configure in this setting. Then manage workspace access by managing membership of the Microsoft 365 group.
+Power BI doesn't synchronize permissions of users or groups with workspace access, and users or groups with Microsoft 365 group membership. The best practice is to give [access to the workspace](service-give-access-new-workspaces.md) to the same Microsoft 365 group whose file storage you configure in this setting. Then manage workspace access by managing membership of the Microsoft 365 group.
 
 1. Access the **Workspace OneDrive** setting in one of two ways:
 
