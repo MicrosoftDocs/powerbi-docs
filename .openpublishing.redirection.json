@@ -3874,6 +3874,11 @@
             "source_path": "powerbi-docs/desktop-send-smile-privacy-statement.md",
             "redirect_url": "/power-bi/fundamentals/desktop-send-smile-privacy-statement",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/desktop-external-tools.md",
+            "redirect_url": "/power-bi/transform-model/desktop-external-tools",
+            "redirect_document_id": false
         }
     ]           
 }

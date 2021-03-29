@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 03/15/2021
+ms.date: 03/25/2021
 LocalizationGroup: Create reports
 ---
 
@@ -15,9 +15,9 @@ LocalizationGroup: Create reports
 
 Power BI has a vibrant community of BI professionals and developers. A vital part of that community are contributors that create free tools that use Power BI and Analysis Services APIs to extend and integrate with Power BI Desktop's data modeling and reporting features. 
 
-The **External Tools** ribbon provides easy access to external tools that have been installed locally and registered with Power BI Desktop. When launched from the External Tools ribbon, Power BI Desktop passes the name and port number of its internal data model engine instance to the tool, and the current model name. The tool then automatically connects, providing a seamless connection experience.  
+The **External Tools** ribbon provides easy access to external tools that have been installed locally and *registered* with Power BI Desktop. When launched from the External Tools ribbon, Power BI Desktop passes the name and port number of its internal data model engine instance to the tool, and the current model name. The tool then automatically connects, providing a seamless connection experience.  
 
-:::image type="content" source="media/desktop-external-tools/external-tools-ribbon.png" alt-text="The external tools ribbon in Power BI Desktop":::
+:::image type="content" source="media/desktop-external-tools/external-tools-ribbon.png" border="false" alt-text="The external tools ribbon in Power BI Desktop":::
 
 
 External tools generally fall into one of the following categories:
@@ -54,7 +54,7 @@ Power BI Desktop (pbix) files consist of multiple components including the repor
 
 When Power BI Desktop launches Analysis Services as its analytical data engine, it dynamically assigns a random port number and loads the model with a randomly generated name in the form of a globally unique identifier (GUID). Because these connection parameters change with every Power BI Desktop session, it's difficult for external tools to discover on their own the correct Analysis Services instance and model to connect to. External tools integration solves this problem by allowing Power BI Desktop to communicate the Analysis Services server name, port number, and model name to the tool as command-line parameters when starting the external tool from the External Tools ribbon, as shown in the following diagram.
 
-:::image type="content" source="media/desktop-external-tools/external-tool-arch.png" alt-text="Esternal tool architecture":::
+:::image type="content" source="media/desktop-external-tools/external-tool-arch.png" border="false" alt-text="Esternal tool architecture":::
 
 With the Analysis Services Server name, port number, and model name, the tool uses Analysis Services client libraries to establish a connection to the model, retrieve metadata, and execute DAX or MDX queries. Whenever an external data modeling tool updates the metadata, Power BI Desktop synchronizes the changes so that the Power BI Desktop user interface reflects the current state of the model accurately. Keep in mind there are some limitations to the synchronization capabilities as described below.
 
@@ -79,106 +79,11 @@ All Tabular Object Model (TOM) metadata can be accessed for read-only. Write ope
 - Report-level or data-level translations.
 - Renaming tables and columns is not yet supported
 
-## Register an external tool
+## Registering external tools
 
-To register other external tools with Power BI Desktop, create a JSON file with the following content:
+External tools are *registered* with Power BI Desktop when the tool includes a \*.pbitool.json registration file in the `Program Files (x86)\Common Files\Microsoft Shared\Power BI Desktop\External Tools` folder. When a tool is registered, and includes an icon, the tool appears in the External Tools ribbon. Some tools, like ALM Toolkit and DAX Studio create the registration file automatically when you install the tool. However, many tools, like SQL Profiler typically do not because the installer they do have does not include creating a registration file for Power BI Desktop. Tools that don't automatically register with Power BI Desktop can be registered manually by creating a \*.pbitool.json registration file.
 
-```json
-{
-    "name": "<tool name>",
-    "description": "<tool description>",
-    "path": "<tool executable path>",
-    "arguments": "<optional command line arguments>",
-    "iconData": "image/png;base64,<encoded png icon data>"
-}
-```
-
-The pbitool.json file includes the following elements:
- 
-* **name:** Provide a name for the tool, which will appear as a button caption in the External Tools ribbon within Power BI Desktop.
-* **description:** (optional) Provide a description, which will appear as a tooltip on the External Tools ribbon button within Power BI Desktop.
-* **path:** Provide the fully qualified path to the tool executable.
-* **arguments:** (optional) Provide a string of command-line arguments that the tool executable should be launched with. You may use any of the following placeholders:
-    * **%server%:** Replaced with the server name and portnumber of the local instance of Analysis Services Tabular for imported/DirectQuery data models.
-    * **%database%:** Replaced with the database name of the model hosted in the local instance of Analysis Services Tabular for imported/DirectQuery data models.
-* **iconData:** Provide image data, which will be rendered as a button icon in the External Tools ribbon within Power BI Desktop. The string should be formatted according to the syntax for Data URIs without the "data:" prefix.
-
-Name the file `"<tool name>.pbitool.json"` and place it in the following folder:
-
-- `%commonprogramfiles%\Microsoft Shared\Power BI Desktop\External Tools`
-
-For 64-bit environments, place the files in the following folder:
-
-- **Program Files (x86)\Common Files\Microsoft Shared\Power BI Desktop\External Tools**
-
-Files in that specified location with the **.pbitool.json** extension are loaded by Power BI Desktop upon startup.
-
-### Pbitool.json example
-
-The following *.pbitool.json file launches powershell.exe from the External Tools ribbon and runs a script called pbiToolsDemo.ps1, passing the server name and port number in the -Server parameter and the dataset name in the -Database parameter.
-
-```json
-{ 
-    "version": "1.0.0", 
-    "name": "External Tools Demo", 
-    "description": "Launches PowerShell and runs a script that outputs server and database parameters. (Requires elevated PowerShell permissions.)", 
-    "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe", 
-    "arguments": "C:\\pbiToolsDemo.ps1 -Server \"%server%\" -Database \"%database%\"", 
-    "iconData": "image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsEAAA7BAbiRa+0AAAANSURBVBhXY/jH9+8/AAciAwpql7QkAAAAAElFTkSuQmCC" 
-} 
-```
-
-The corresponding pbiToolsDemo.ps1 script outputs the Server and Database parameters to the console.
-
-```powershell
-[CmdletBinding()] 
-param 
-( 
-        [Parameter(Mandatory = $true)]         
-[string] $Server, 
-        [Parameter(Mandatory = $true)]         
-[string] $Database	 
-) 
-Write-Host "" 
-Write-Host "Analysis Services instance: " -NoNewline 
-Write-Host "$Server" -ForegroundColor Yellow 
-Write-Host "Dataset name: " -NoNewline 
-Write-Host "$Database" -ForegroundColor Green 
-Write-Host "" 
-Read-Host -Prompt 'Press [Enter] to close this window'  
-```
-
-:::image type="content" source="media/desktop-external-tools/json-example-output.png" alt-text="PowerShell console output ":::
-
-### Icon data URIs
-
-The iconData element takes a data URI without the **data:** prefix. For example, the data URI of a one pixel magenta png image is:
-
-`data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsEAAA7BAbiRa+0AAAANSURBVBhXY/jH9+8/AAciAwpql7QkAAAAAElFTkSuQmCC`
-
-Be sure to remove the **data:** prefix, as shown in the pbitool.json example above.
-
-To convert a .png or other image file type to a data URI, use an online tool or a custom tool such as the one shown in the following C# code snippet:
-
-```c#
-string ImageDataUri; 
-OpenFileDialog openFileDialog1 = new OpenFileDialog(); 
-openFileDialog1.Filter = "PNG Files (.png)|*.png|All Files (*.*)|*.*"; 
-openFileDialog1.FilterIndex = 1; 
-openFileDialog1.Multiselect = false; 
-openFileDialog1.CheckFileExists = true; 
-bool? userClickedOK = openFileDialog1.ShowDialog(); 
-if (userClickedOK == true) 
-{ 
-    var fileName = openFileDialog1.FileName; 
-    var sb = new StringBuilder(); 
-    sb.Append("image/") 
-        .Append((System.IO.Path.GetExtension(fileName) ?? "png").Replace(".", "")) 
-        .Append(";base64,") 
-        .Append(Convert.ToBase64String(File.ReadAllBytes(fileName))); 
-    ImageDataUri = sb.ToString(); 
-} 
-```
+To learn more, including json examples, see [Register an external tool](desktop-external-tools-register.md).
 
 ## Disabling the External Tools ribbon
 
@@ -191,8 +96,6 @@ A value of 1 (decimal) enables the External Tools ribbon, which is also the defa
 
 A value of 0 (decimal) disable the External Tools ribbon.
 
-
 ## See also
 
-* [Client libraries for connecting to Analysis Services](/analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true)  
-* [Tabular Object Model (TOM)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current&preserve-view=true)  
+[Register an external tool](desktop-external-tools-register.md)  
