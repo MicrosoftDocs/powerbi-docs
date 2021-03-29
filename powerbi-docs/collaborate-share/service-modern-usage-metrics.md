@@ -160,15 +160,15 @@ Usage metrics reports are a feature that the Power BI or global administrator ca
 
 ## Exclude user information from usage metrics reports
 
-By default, per-user data is enabled for usage metrics. Content consumer account information is included in the metrics report. If admins don't want to expose this information for some or all users, they can exclude user information from your usage report. In the Power BI admin portal tenant settings, they can disable per-user data in usage metrics for specified security groups or for the entire organization.
+By default, per-user data is enabled for usage metrics. This means content consumer account information such as user name and email address is included in the usage metrics report. Admins can limit exposure of identifying user information in the Power BI admin portal tenant settings. They can enable per-user data for the entire organization or specified security groups.
 
-1. On the **Tenant settings** tab in the admin portal, under **Audit and usage settings**, expand **Per-user data in metrics for content creators** and select **Disabled**.
+If user information is excluded, the usage report refers to users as 'Unnamed User _[unique_id]_', where _[unique_id]_ is a meaningless unique identifier assigned to support distinct user count measures.
+
+1. On the **Tenant settings** tab in the admin portal, under **Audit and usage settings**, expand **Per-user data in metrics for content creators** and select **Disabled**. This will hide user account information for all users.
 
 2. Decide whether to **Delete all existing per-user data in current usage metrics content**. Select **Apply**.
 
     ![Disable per-user metrics](media/service-modern-usage-metrics/power-bi-admin-disable-per-user-metrics.png)
-
-If user information is excluded, the usage report refers to users as Unnamed.
 
 When disabling usage metrics for their entire organization, admins can use the Delete all existing usage metrics content option to delete all existing reports and dashboard tiles that were built using the usage metrics reports. This option removes all access to usage metrics data for all users in the organization who may already be using it. Deleting existing usage metrics content is irreversible.
 
