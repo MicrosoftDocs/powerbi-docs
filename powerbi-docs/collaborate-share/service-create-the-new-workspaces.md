@@ -33,7 +33,7 @@ Ready to migrate your classic workspace? See [Upgrade classic workspaces to the 
     - [Specify a Workspace OneDrive](#set-a-workspace-onedrive) to use a Microsoft 365 group file storage location.    
     - [Add a Contact list](#create-a-contact-list). By default, the workspace admins are the contacts. 
     - [Allow contributors to update the app](#allow-contributors-to-update-the-app) for the workspace
-    - To assign the workspace to a **Dedicated capacity**, on the **Premium** tab select **Dedicated capacity**.
+    - To [assign the workspace to a Premium capacity](#premium-capacity-settings), on the **Premium** tab select **Premium capacity**.
 
         ![Screenshot of Dedicated capacity.](media/service-create-the-new-workspaces/power-bi-workspace-premium.png)
 
@@ -41,7 +41,27 @@ Ready to migrate your classic workspace? See [Upgrade classic workspaces to the 
 
     Power BI creates the workspace and opens it. You see it in the list of workspaces you’re a member of. 
 
-## Workspace settings
+## Advanced workspace settings
+
+To see these workspace settings, expand **Advanced** in the **Settings** pane.
+
+### Create a contact list
+
+You can specify which users receive notification about issues occurring in the workspace. By default, any user or group specified as a workspace admin is notified, but you can add others to the *contact list*. Users or groups in the contact list are listed in the user interface (UI) to help users get help related to the workspace.
+
+1. Access the **Contact list** setting in one of two ways:
+
+    In the **Create a workspace** pane when you first create it.
+
+    In the nav pane, select the arrow next to **Workspaces**, select **More options** (...) next to the workspace name > **Workspace settings**. The **Settings** pane opens.
+
+    ![Screenshot of Workspace settings.](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
+
+2. Under **Advanced**, **Contact list**, accept the default, **Workspace admins**, or add your own list of **Specific users or groups**. 
+
+    ![Screenshot of Workspace contacts.](media/service-create-the-new-workspaces/power-bi-workspace-contacts.png)
+
+3. Select **Save**.
 
 ### Set a workspace OneDrive
 
@@ -75,24 +95,6 @@ After you've configured the OneDrive location, you get to it in the same way you
 
     ![Screenshot of Workspace files location - get data.](media/service-create-the-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
 
-### Create a contact list
-
-You can specify which users receive notification about issues occurring in the workspace. By default, any user or group specified as a workspace admin is notified, but you can add others to the *contact list*. Users or groups in the contact list are listed in the user interface (UI) to help users get help related to the workspace.
-
-1. Access the **Contact list** setting in one of two ways:
-
-    In the **Create a workspace** pane when you first create it.
-
-    In the nav pane, select the arrow next to **Workspaces**, select **More options** (...) next to the workspace name > **Workspace settings**. The **Settings** pane opens.
-
-    ![Screenshot of Workspace settings.](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
-
-2. Under **Advanced**, **Contact list**, accept the default, **Workspace admins**, or add your own list of **Specific users or groups**. 
-
-    ![Screenshot of Workspace contacts.](media/service-create-the-new-workspaces/power-bi-workspace-contacts.png)
-
-3. Select **Save**.
-
 ### Allow contributors to update the app
 
 You can create and publish *apps* from the new workspace experiences. Each workspace can hold the content for an associated *app*, a collection of dashboards, reports, and datasets which you can distribute to others in your organization. Read more about [publishing apps from the new workspaces](service-create-distribute-apps.md).
@@ -116,6 +118,20 @@ When enabled, contributors can:
 However, contributors can't:
 * Publish the app for the first time
 * Change who has permission to the app
+
+## Premium capacity settings
+
+On the **Premium** tab in the **Settings** pane, you can choose settings related to Premium capacities.
+
+1. Set **Premium capacity** to **On**.
+
+        ![Screenshot of Premium capacity On.](media/service-create-the-new-workspaces/power-bi-workspace-premium.png)
+
+1. Choose either Premium capacity or **Premium Per User**.
+
+    :::image type="content" source="media/service-create-the-new-workspaces/power-bi-workspace-premium-per-user.png" alt-text="Screenshot of Choose Premium or Premium Per User.":::
+
+1. Choose **Default storage limit**. Read more about [enabling large datasets](../admin/service-premium-large-models.md#enable-large-models).
 
 ## Next steps
 * Read about [organizing work in the new workspaces experience in Power BI](service-new-workspaces.md)

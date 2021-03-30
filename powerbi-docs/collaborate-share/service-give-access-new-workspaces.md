@@ -13,7 +13,7 @@ LocalizationGroup: Share your work
 ---
 # Give users access to the new workspaces in Power BI
 
-After you [create one of the *new workspaces*](service-create-the-new-workspaces.md) in Power BI, you'll want to give users access to it. For more background, see the [new workspaces](service-new-workspaces.md) article.
+After you [create one of the new workspaces](service-create-the-new-workspaces.md) in Power BI, you'll want to give users access to it. For more background, see the [new workspaces](service-new-workspaces.md) article.
 
 If you have an admin role in a workspace, you can give others access to the workspace by adding them to the different roles. Workspace creators are automatically admins. See [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces) for an explanation of the roles.
 
@@ -22,7 +22,7 @@ If you have an admin role in a workspace, you can give others access to the work
 
 ## Give access to your workspace
 
-1. Because you're an admin, on the workspace content list page, you see **Access**.
+1. Because you have the Admin role in the workspace, on the workspace content list page, you see **Access**.
 
     ![Screenshot of Workspaces content list.](media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png)
 
