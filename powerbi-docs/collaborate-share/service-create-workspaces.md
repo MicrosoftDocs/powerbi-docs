@@ -7,14 +7,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/12/2021
+ms.date: 03/30/2021
 LocalizationGroup: Share your work
 ---
 # Create classic workspaces in Power BI
 
-In Power BI, you can create *workspaces*, places to collaborate with colleagues to create and refine collections of dashboards, reports, and paginated reports. Power BI has the original, or *classic*, workspaces, and the new workspaces. This article is about creating a classic workspace.
+In Power BI, you can create *workspaces*, places to collaborate with colleagues to create and refine collections of dashboards, reports, and paginated reports.  This article is about creating a classic workspace. Power BI also has the new workspace experience, which is now the default. See [New and classic workspace differences](service-new-workspaces.md#new-and-classic-workspace-differences) to compare the two. 
 
-**Did you know?** Power BI offers a new workspace experience, which is now the default. Read [Organize work in the new workspaces](service-new-workspaces.md) for details about the new workspaces. Ready to migrate your classic workspace? See [Upgrade classic workspaces to the new workspaces in Power BI](service-upgrade-workspaces.md) for details.
+Ready to migrate your classic workspace? See [Upgrade classic workspaces to the new workspaces in Power BI](service-upgrade-workspaces.md) for details.
 
 When you create a classic workspace, you're creating an underlying, associated Microsoft 365 group. All the workspace administration is in Microsoft 365. You can add colleagues to these workspaces as members or admins. In the workspace, you can all collaborate on dashboards, reports, and other articles that you plan to publish to a wider audience. Everyone you add to a workspace needs a Power BI Pro license.
 
@@ -25,7 +25,50 @@ When you create a classic workspace, you're creating an underlying, associated M
 
 When you create a workspace, it’s built on a Microsoft 365 group.
 
-[!INCLUDE [powerbi-service-create-app-workspace](../includes/powerbi-service-create-app-workspace.md)]
+1. Select **Workspaces** > **Create workspace**. 
+   
+     ![Screenshot of Create workspace.](media/service-create-the-new-workspaces/power-bi-workspace-create.png)  
+
+    Here you'll put the content that you and your colleagues collaborate on.
+
+2. In the **You're creating an upgraded workspace** banner, click **Revert to classic**. 
+
+    ![Revert to classic workspace option](media/powerbi-service-create-app-workspace/power-bi-revert-classic-workspace.png)
+
+    > [!NOTE]
+> If you don't see this banner, then your Power BI admin has blocked the ability to create classic workspaces. You can [create one of the new workspaces](service-create-the-new-workspaces.md).
+
+3. Give the workspace a name. If the corresponding **Workspace ID** isn't available, edit it to come up with a unique ID.
+   
+    If you create an app from the workspace, bu default it will have the same name and icon as the workspace. You can change both when you create the app.
+
+    ![Name the workspace](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-name.png)
+
+3. You have a few options to set. If you choose **Public**, anyone in your organization can see what’s in the workspace. **Private** means only members of the workspace can see its contents.
+   
+     ![Set Private or Public](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-private-public.png)
+   
+    You can't change the Public/Private setting after you've created the group.
+
+4. You can also choose if members can **edit** or have **view-only** access.
+   
+     ![Set edit or view-only](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-members-edit.png)
+   
+     Only add people to the workspace so they can edit the content. If they're only going to view the content, don't add them to the workspace. You can include them when you publish the app.
+
+5. Add email addresses of people you want to have access to the workspace, and select **Add**. You can’t add group aliases, just individuals.
+
+6. Decide whether each person is a member or an admin.
+   
+     ![Set Member or Admin](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-admin.png)
+   
+    Admins can edit the workspace itself, including adding other members. Members can edit the content in the workspace, unless they have view-only access. Both admins and members can publish the app.
+
+7. Select **Save**.
+
+Power BI creates the workspace and opens it. It appears in the list of workspaces you’re a member of. Because you’re an admin, you can select **More options** (...) to go back and make changes to it, adding new members or changing their permissions.
+
+![Edit workspace](media/powerbi-service-create-app-workspace/power-bi-workspace-old-settings.png)
 
 When you first create it, you may need to wait an hour or so for the workspace to propagate to Microsoft 365.
 
@@ -67,27 +110,21 @@ In the classic workspaces, you can also connect using organizational content pac
 
 ## Distribute an app
 
-If you want to distribute official content to a large audience within your organization, you can publish an app from your workspace.  When the content is ready, you choose which dashboards and reports you want to publish, and then publish it as an *app*. You can create one app from each workspace.
+If you want to distribute official content to a large audience within your organization, you can publish an app from your workspace.  When the content in the workspace is ready, you choose which dashboards and reports you want to publish, and then publish them as an *app*. You can create one app from each workspace. See [Publish an app from a workspace](service-create-distribute-apps.md) for details.
 
-The Apps list in the nav pane shows all the apps you've installed. Your coworkers can get your app in a few different ways. 
-- They can find and install your app from Microsoft AppSource
-- You can send them a direct link. 
-- You can install it automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission. 
+## Apps or organizational content packs?
 
-Users see updated app content automatically after you publish an update from your workspace. You can control how frequently the data refreshes by setting the refresh schedule in the datasets used by the app content in your workspace. See [Publish an app from the new workspaces in Power BI](service-create-distribute-apps.md) for details.
+Apps are the evolution of organizational content packs, which are being deprecated. Now is a good time to upgrade your content packs to apps, if you haven't started yet. Ready to migrate your classic workspace now? See [Upgrade classic workspaces to the new workspaces in Power BI](service-upgrade-workspaces.md) for details.
 
-## Power BI classic apps FAQ
-
-### How are apps different from organizational content packs?
-Apps are the evolution of organizational content packs, which are being deprecated. Now is a good time to upgrade your content packs to apps, if you haven't started yet. See the workspace upgrade roadmap section of this blog post [Announcing Power BI admins can upgrade classic workspaces](https://powerbi.microsoft.com/blog/announcing-power-bi-admins-can-upgrade-classic-workspaces-and-roadmap-update/) for the timeline. 
+### Comparing apps and organizational content packs
 
 * After business users install a content pack, it loses its grouped identity: it's just a list of dashboards and reports interspersed with other dashboards and reports. Apps, on the other hand, maintain their grouping and identity even after installation. This grouping makes it easy for business users to continue to navigate to them over time.
 * You can create multiple content packs from any workspace, but an app has a 1:1 relationship with its workspace. 
 * You can't consume or create content packs in the new workspaces.
 
-See [New and classic workspace differences](service-new-workspaces.md#new-and-classic-workspace-differences) to compare the two. 
-
 ## Next steps
-* [Install and use apps in Power BI](service-create-distribute-apps.md)
+
+- [Install and use apps in Power BI](service-create-distribute-apps.md)
 - [Create the new workspaces](service-create-the-new-workspaces.md)
-* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- [Upgrade classic workspaces to the new workspaces in Power BI](service-upgrade-workspaces.md)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

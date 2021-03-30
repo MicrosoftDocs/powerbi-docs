@@ -19,19 +19,19 @@ Ready to migrate your classic workspace? See [Upgrade classic workspaces to the 
 
 ## Create one of the new workspaces
 
-1. Start by creating the workspace. Select **Workspaces** > **Create workspace**.
+1. Select **Workspaces** > **Create workspace**.
    
      ![Screenshot of Create workspace.](media/service-create-the-new-workspaces/power-bi-workspace-create.png)
 
-2. Give the workspace a unique name. If the name isn't available, edit it to come up with a unique name.
+2. Give the workspace a unique name. If the name isn't available, edit it to come up with a name that's unique.
    
-     The app you create from the workspace will have the same name and icon as the workspace.
+    If you create an app from the workspace, bu default it will have the same name and icon as the workspace. You can change both when you create the app.
    
 1. Here are some optional settings for your workspace. They're explained in more detail in the [Workspace settings](#workspace-settings) section later in this article:
 
     - Upload a **Workspace image**. Files can be .png or .jpg format. File size has to be less than 45 KB. 
     - [Specify a Workspace OneDrive](#set-a-workspace-onedrive) to use a Microsoft 365 group file storage location.    
-    - [Add a Contact list](#create-a-contact-list). By default, the workspace admins are the contacts. 
+    - [Add a Contact list](#create-a-contact-list), the names of people to contact for information about the workspace. By default, the workspace admins are the contacts.
     - [Allow contributors to update the app](#allow-contributors-to-update-the-app) for the workspace
     - To [assign the workspace to a Premium capacity](#premium-capacity-settings), on the **Premium** tab select **Premium capacity**.
 
@@ -41,7 +41,7 @@ Ready to migrate your classic workspace? See [Upgrade classic workspaces to the 
 
     Power BI creates the workspace and opens it. You see it in the list of workspaces you’re a member of. 
 
-## Advanced workspace settings
+## Workspace settings
 
 To see these workspace settings, expand **Advanced** in the **Settings** pane.
 
@@ -125,13 +125,13 @@ On the **Premium** tab in the **Settings** pane, you can choose settings related
 
 1. Set **Premium capacity** to **On**.
 
-        ![Screenshot of Premium capacity On.](media/service-create-the-new-workspaces/power-bi-workspace-premium.png)
+    ![Screenshot of Premium capacity On.](media/service-create-the-new-workspaces/power-bi-workspace-premium.png)
 
 1. Choose either Premium capacity or **Premium Per User**.
 
     :::image type="content" source="media/service-create-the-new-workspaces/power-bi-workspace-premium-per-user.png" alt-text="Screenshot of Choose Premium or Premium Per User.":::
 
-1. Choose **Default storage limit**. Read more about [enabling large datasets](../admin/service-premium-large-models.md#enable-large-models).
+1. Choose **Default storage limit**. Read more about [enabling large datasets](../admin/service-premium-large-models.md#enable-large-datasets).
 
 ## Next steps
 * Read about [organizing work in the new workspaces experience in Power BI](service-new-workspaces.md)
