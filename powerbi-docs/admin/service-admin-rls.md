@@ -14,7 +14,7 @@ LocalizationGroup: Administration
 
 # Row-level security (RLS) with Power BI
 
-Row-level security (RLS) with Power BI can be used to restrict data access for given users. Filters restrict data access at the row level, and you can define filters within roles. In the Power BI service, members of a workspace have access to datasets in the workspace. RLS doesn't restrict this data access.
+Row-level security (RLS) with Power BI can be used to restrict data access for given users. Filters restrict data access at the row level, and you can define filters within roles. In the Power BI service, members of a workspace have access to datasets in the workspace. RLS doesn't restrict this data access. 
 
 You can configure RLS for data models imported into Power BI with Power BI Desktop. You can also configure RLS on datasets that are using DirectQuery, such as SQL Server. For Analysis Services or Azure Analysis Services lives connections, you configure Row-level security in the model, not in Power BI Desktop. The security option will not show up for live connection datasets.
 
@@ -98,7 +98,7 @@ To return to normal viewing, select **Back to Row-Level Security**.
 
 ## Using RLS with workspaces in Power BI
 
-If you publish your Power BI Desktop report to a workspace in the Power BI service, the roles will be applied to read-only members. You'll need to indicate that members can only view Power BI content in the workspace settings.
+If you publish your Power BI Desktop report to a workspace in the Power BI service, the RLS roles will be applied to read-only members who are assigned **Viewer** access to the workspace. Even if  **Viewers** are given Build permissions to the dataset, RLS will still apply. For example, if Viewers with Build permissions use [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), their view of the data will be protected by RLS. Workspace members assigned **Admin**, **Member**, or **Contributor** will have edit permission for the dataset and, therefore, RLS won't apply to them. You'll need to indicate that members can only view Power BI content in the workspace settings.
 
 > [!WARNING]
 > If you have configured the workspace so that members have edit permissions, the RLS roles won't be applied to them. Users can see all of the data.
