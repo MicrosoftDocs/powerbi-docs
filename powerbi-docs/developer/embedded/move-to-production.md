@@ -64,7 +64,7 @@ To assign a capacity to a workspace using a[service principal](embed-service-pri
 
 ### Assign a workspace to a capacity using a master user
 
-Follow the steps below to assign a capacity to a workspace using a **master user**.
+You can also assign a workspace to a capacity from the settings of that workspace using a **master user**. The master user must have admin permissions to that workspace, and also capacity assignment permissions to that capacity.
 
 1. Open the workspace in **Power BI service**, select the 
 
