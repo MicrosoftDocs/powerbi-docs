@@ -52,7 +52,9 @@ Troubleshooting incremental refresh issues in the service will differ depending 
 
 “Resource Governing: The operation failed because of insufficient memory. If the dataset is hosted on Premium capacity/server, please consider upgrading the capacity to one with more memory or reducing the memory footprint of your operation. Additional information: Requested 10768269KB, Command Memory Limit 10768269KB, Database Size Before Command Execution 15446131KB.”
 
-**Cause:** This can occur when refresh operations require more memory than the capacity allows. If during an incremental refresh, a large amount of data must be added, and if partitions haven't been updated for a few weeks or months, use SSMS via the XMLA endpoint to refresh the new partitions individually instead of all partitions being refresh in parallel as would be done by the Service. If the refresh of one partition still gives the error, it can mean the capacity size must be increased to provide enough memory for refresh operations.
+**Cause:** This can occur when refresh operations require more memory than the capacity allows. 
+
+**Solution:** If during an incremental refresh, a large amount of data must be added, and if partitions haven't been updated for a few weeks or months, use SSMS via the XMLA endpoint to refresh the new partitions individually instead of all partitions being refresh in parallel as would be done by the Service. If the refresh of one partition still gives the error, it can mean the capacity size must be increased to provide enough memory for refresh operations.
 
 **Problem:** Refresh fails because of duplicate values in a table.
 
