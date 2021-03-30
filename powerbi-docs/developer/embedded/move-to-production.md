@@ -56,7 +56,7 @@ If you run out of embed tokens while testing, you need to purchase a Power BI Em
 
 Once you create a capacity, you can assign your workspace to that capacity.
 
-All the workspaces that contain Power BI resources related to the embedded content (including datasets, reports, and dashboards), must be assigned to capacities. For example, if an embedded report and the dataset bound to it reside in different workspaces, both workspaces must be assigned to capacities.
+Each workspace that contains a Power BI artifact related to the embedded content (including datasets, reports, and dashboards) must be assigned to capacities. For example, if an embedded report and the dataset bound to it reside in different workspaces, both workspaces must be assigned to capacities.
 
 ### Assign a workspace to a capacity using a service principal
 
