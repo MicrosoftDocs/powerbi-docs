@@ -33,7 +33,7 @@ When you create a workspace, it’s built on a Microsoft 365 group.
 
 2. In the **You're creating an upgraded workspace** banner, click **Revert to classic**. 
 
-    ![Revert to classic workspace option](media/powerbi-service-create-app-workspace/power-bi-revert-classic-workspace.png)
+    ![Screenshot of Revert to classic workspace option](media/service-create-workspaces/power-bi-revert-classic-workspace.png)
 
     > [!NOTE]
 > If you don't see this banner, then your Power BI admin has blocked the ability to create classic workspaces. You can [create one of the new workspaces](service-create-the-new-workspaces.md).
@@ -42,17 +42,17 @@ When you create a workspace, it’s built on a Microsoft 365 group.
    
     If you create an app from the workspace, bu default it will have the same name and icon as the workspace. You can change both when you create the app.
 
-    ![Name the workspace](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-name.png)
+    ![Screenshot of Name the workspace.](media/service-create-workspaces/power-bi-apps-create-workspace-name.png)
 
 3. You have a few options to set. If you choose **Public**, anyone in your organization can see what’s in the workspace. **Private** means only members of the workspace can see its contents.
    
-     ![Set Private or Public](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-private-public.png)
+     ![Screenshot of Set Private or Public.](media/service-create-workspaces/power-bi-apps-create-workspace-private-public.png)
    
     You can't change the Public/Private setting after you've created the group.
 
 4. You can also choose if members can **edit** or have **view-only** access.
    
-     ![Set edit or view-only](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-members-edit.png)
+     ![Screenshot of Set edit or view-only.](media/service-create-workspaces/power-bi-apps-create-workspace-members-edit.png)
    
      Only add people to the workspace so they can edit the content. If they're only going to view the content, don't add them to the workspace. You can include them when you publish the app.
 
@@ -60,7 +60,7 @@ When you create a workspace, it’s built on a Microsoft 365 group.
 
 6. Decide whether each person is a member or an admin.
    
-     ![Set Member or Admin](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-admin.png)
+     ![Screenshot of Set Member or Admin.](media/service-create-workspaces/power-bi-apps-create-workspace-admin.png)
    
     Admins can edit the workspace itself, including adding other members. Members can edit the content in the workspace, unless they have view-only access. Both admins and members can publish the app.
 
@@ -68,7 +68,7 @@ When you create a workspace, it’s built on a Microsoft 365 group.
 
 Power BI creates the workspace and opens it. It appears in the list of workspaces you’re a member of. Because you’re an admin, you can select **More options** (...) to go back and make changes to it, adding new members or changing their permissions.
 
-![Edit workspace](media/powerbi-service-create-app-workspace/power-bi-workspace-old-settings.png)
+![Screenshot of Edit workspace.](media/service-create-workspaces/power-bi-workspace-old-settings.png)
 
 When you first create it, you may need to wait an hour or so for the workspace to propagate to Microsoft 365.
 
@@ -77,15 +77,15 @@ By default, Power BI creates a little colored circle for your app, with the app'
 
 1. Select **Workspaces**, select **More options** (...) next to the name of the workspace, then **Members**. 
    
-     ![Select Workspace Members](media/service-create-workspaces/power-bi-workspace-old-members.png)
+     ![Screenshot of Select Workspace Members.](media/service-create-workspaces/power-bi-workspace-old-members.png)
    
     The Microsoft 365 Outlook account for the workspace opens in a new browser window.
 2. Select the **Edit** pencil.
    
-     ![Microsoft 365 pencil icon](media/service-create-workspaces/power-bi-workspace-old-edit-group.png)
+     ![Screenshot of Microsoft 365 pencil icon.](media/service-create-workspaces/power-bi-workspace-old-edit-group.png)
 3. Select the camera image, and find the image you want to use.
    
-     ![Select the camera image](media/service-create-workspaces/power-bi-workspace-old-camera.png)
+     ![Screenshot of Select the camera image.](media/service-create-workspaces/power-bi-workspace-old-camera.png)
 
      Images can be .png, .jpg, or .bmp files. Their file size can be large, up to 3 MB. 
 
@@ -93,7 +93,7 @@ By default, Power BI creates a little colored circle for your app, with the app'
    
     The image replaces the colored circle in the Microsoft 365 Outlook window.
    
-     ![Customized image](media/service-create-workspaces/power-bi-workspace-old-new-image.png)
+     ![Screenshot of Customized image.](media/service-create-workspaces/power-bi-workspace-old-new-image.png)
    
     In a few minutes, it will appear in the app in Power BI, too.
 
