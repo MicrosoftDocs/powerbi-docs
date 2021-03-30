@@ -48,6 +48,8 @@ The **Page refresh** card will only be available if you are connected to a [Dire
 
 When selecting **Auto page refresh** as the refresh type, you need to provide the desired refresh interval. The default value is 30 minutes. (The minimum refresh interval is one second.) Your report will begin refreshing at the interval you set.
 
+If you are the administrator and need to make changes to the refresh interval, visit [Configure workloads in a Premium capacity](../admin/service-admin-premium-workloads.md).
+
 When clicking on show details Power BI will provide further information on:
 
 - If the feature is enabled by your admin (only when logged into your Power BI account)
@@ -249,6 +251,7 @@ If you notice that your capacity is overloaded with low-priority queries, there 
 * It takes up to 5 minutes for automatic page refresh setting changes made in the capacity admin UI to propagate to reports.
 * In addition to turning on automatic page refresh for the capacity, you also need to turn it on for the pages of a report where you want to enable it.
 * Both refresh types are managed separately so make sure that the type of refresh you are enabling is turned on.
+* For more information on enabling and configuring workloads in a Premium capacity, visit [Configure workloads in a Premium capacity](../admin/service-admin-premium-workloads.md).
 
 **My report is operating in mixed mode. (Mixed mode means the report has a DirectQuery connection and an Import data source.) Some visuals aren't refreshing.**
 

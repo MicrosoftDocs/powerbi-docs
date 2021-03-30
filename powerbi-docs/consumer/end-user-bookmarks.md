@@ -57,7 +57,7 @@ Select a bookmark to change to that report view.
 
 ### Personal bookmarks
 
-If you can view a report, then you can also add personal bookmarks.  When you create a bookmark, the following elements are saved with the bookmark:
+If you can view a report, then you can also add personal bookmarks. The maximum number of personal bookmarks per report is 20. When you create a bookmark, the following elements are saved with the bookmark:
 
 * The current page
 * Filters
