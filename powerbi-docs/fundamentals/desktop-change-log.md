@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/25/2021
+ms.date: 03/30/2021
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,20 @@ ms.date: 03/25/2021
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## March 2021 QFE 1
+
+*Version: 2.91.884.0, Released: March 29, 2021*
+
+Bug fixes:
+- Fix for Microsoft Information Protection SDK hanging during evaluation shutdown.
+- Amazon Redshift driver update to fix the issue with non-nullable primary key columns being treated as empty strings after merge queries.
+- Fix for slicers to contain unique (non-duplicated) values when using aggregations.
+- Fix for formula bar: prevent UI interactions when empty measures, calculated columns, calculated tables are deleted from the model.
+- Fix for PBI.FormatAnnotationStats telemetry event.
+- Fix for customized fields display folders: now the folders won't disappear after data refresh or **Choose Columns** changes in Power Query.
+- ODBC drivers update to newer versions.
+- Fix for Microsoft Information Protection timeout issues: now when a user opens a file or signs in and faces network issues, MIP exception won't pop up.
 
 ## February 2021 QFE 1
 
