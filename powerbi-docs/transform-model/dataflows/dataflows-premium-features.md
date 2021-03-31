@@ -29,13 +29,16 @@ The following sections described each of these features in detail.
 The enhanced compute engine in Power BI enables Power BI Premium subscribers to use their capacity to optimize the use of dataflows. Using the enhanced compute engine provides the following advantages:
 
 * Drastically reduces the refresh time required for long-running ETL steps over computed entities, such as performing *joins*, *distinct*, *filters,* and *group by*
-* Perform DirectQuery queries over entities
+* Performs DirectQuery queries over entities
+
+> [!NOTE]
+> The validation and refresh processes inform dataflows of the model schema. To set the schema of the tables yourself, use the PowerQuery Editor and set data types. 
 
 By default, the enhanced compute engine is **On**. If the enhanced compute engine is not on, enabling the enhanced compute engine is described in the next section, along with answers to common questions.
 
 ### Using the enhanced compute engine
 
-The enhanced compute engine is enabled from the **Capacity Settings** page in the Power BI service, in the **dataflows** section. By default, the enhanced compute engine is **Off**. To enable the enhanced compute engine, switch the toggle to **On** as shown in the following image, and save your settings. 
+The enhanced compute engine is enabled from the **Capacity Settings** page in the Power BI service, in the **dataflows** section. By default, the enhanced compute engine is **On**. If it is set to **Off**, enable the enhanced compute engine by switching the toggle to **On** as shown in the following image, and save your settings. 
 
 ![Turn on the enhanced compute engine](media/dataflows-premium-features/compute-engine-settings.png)
 

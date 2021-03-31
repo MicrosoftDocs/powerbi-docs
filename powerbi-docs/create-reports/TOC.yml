@@ -53,8 +53,6 @@
     items: 
     - name: Power BI reports
       items: 
-      - name: "Power BI Desktop and external tools"
-        href: desktop-external-tools.md
       - name: "Power BI modern ribbon"
         href: desktop-ribbon.md
       - name: "Work with Report view"

@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 03/04/2021
+ms.date: 03/24/2021
 ---
 
 # Introduction to deployment pipelines
 
 In today’s world, analytics is a vital part of decision making in almost every organization. The growing use of Power BI as an analytics tool, requires it to use more data, look appealing and  be user-friendly. Above all however, Power BI needs to always be available and reliable. To meet these requirements, BI creators must collaborate effectively.
 
-The deployment pipelines tool enables BI creators to manage the lifecycle of organizational content. It's an efficient and reusable tool for creators in an enterprise with Premium capacity. Deployment pipelines enables creators to develop and test Power BI content before the content is consumed by users. The content types include reports, dashboards, and datasets.
+The deployment pipelines tool enables BI creators to manage the lifecycle of organizational content. It's an efficient and reusable tool for creators in an enterprise with Premium capacity. Deployment pipelines enable creators to develop and test Power BI content in the Power BI service, before the content is consumed by users. The content types include reports, paginated reports, dashboards, and datasets.
 
 The tool is designed as a pipeline with three stages:
 
