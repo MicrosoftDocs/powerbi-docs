@@ -25,7 +25,7 @@ Ready to migrate your classic workspace? See [Upgrade classic workspaces to the 
 
 2. Give the workspace a unique name. If the name isn't available, edit it to come up with a name that's unique.
    
-    If you create an app from the workspace, bu default it will have the same name and icon as the workspace. You can change both when you create the app.
+    When you create an app from the workspace, by default it will have the same name and icon as the workspace. You can change both when you create the app.
    
 1. Here are some optional settings for your workspace. They're explained in more detail in the [Workspace settings](#workspace-settings) section later in this article:
 
@@ -33,13 +33,12 @@ Ready to migrate your classic workspace? See [Upgrade classic workspaces to the 
     - [Specify a Workspace OneDrive](#set-a-workspace-onedrive) to use a Microsoft 365 group file storage location.    
     - [Add a Contact list](#create-a-contact-list), the names of people to contact for information about the workspace. By default, the workspace admins are the contacts.
     - [Allow contributors to update the app](#allow-contributors-to-update-the-app) for the workspace
-    - To [assign the workspace to a Premium capacity](#premium-capacity-settings), on the **Premium** tab select **Premium capacity**.
-
-        ![Screenshot of Dedicated capacity.](media/service-create-the-new-workspaces/power-bi-workspace-premium.png)
+    - [Assign the workspace to a Premium capacity](#premium-capacity-settings).
+    - Connect the workspace to an Azure Data Lake Gen2 storage account (in preview). Read about this functionality in the article [Configuring dataflow storage to use Azure Data Lake Gen 2](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connecting-to-an-azure-data-lake-gen-2-at-a-workspace-level).
 
 1. Select **Save**.
 
-    Power BI creates the workspace and opens it. You see it in the list of workspaces you’re a member of. 
+    Power BI creates the workspace and opens it. You see it in the list of workspaces you’re a member of.
 
 ## Workspace settings
 
@@ -65,9 +64,9 @@ You can specify which users receive notification about issues occurring in the w
 
 ### Set a workspace OneDrive
 
-The Workspace OneDrive feature allows you to configure a Microsoft 365 group whose OneDrive shared library is available to workspace users. You create the group *outside* of Power BI first, in OneDrive. Create a [OneDrive shared library](https://support.microsoft.com/office/create-a-new-shared-library-from-onedrive-for-work-or-school-345c8599-05d8-4bf8-9355-2b5cfabe04d0).
+The Workspace OneDrive feature allows you to configure a Microsoft 365 group whose OneDrive shared library is available to workspace users. You create the group *outside* of Power BI first, in OneDrive. Read about creating a [OneDrive shared library](https://support.microsoft.com/office/create-a-new-shared-library-from-onedrive-for-work-or-school-345c8599-05d8-4bf8-9355-2b5cfabe04d0).
 
-Power BI doesn't synchronize permissions of users or groups with workspace access, and users or groups with Microsoft 365 group membership. The best practice is to give [access to the workspace](service-give-access-new-workspaces.md) to the same Microsoft 365 group whose file storage you configured. Then manage workspace access by managing membership of the Microsoft 365 group.
+Power BI doesn't synchronize permissions between users or groups with workspace access, and users or groups with Microsoft 365 group membership. A best practice is to give [access to the workspace](service-give-access-new-workspaces.md) to the same Microsoft 365 group whose file storage you configured. Then manage workspace access by managing membership of the Microsoft 365 group.
 
 1. Access the **Workspace OneDrive** setting in one of two ways:
 
@@ -93,9 +92,9 @@ After you've configured the OneDrive location, you get to it in the same way you
 
 1.  Select **SharePoint - Team Sites**.
 
-    ![Screenshot of SharePoint - Team Sites, get data.](media/service-create-the-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
+    ![Screenshot of SharePoint - Team Sites, get data.](media/service-create-the-new-workspaces/workspace-get-data-sharepoint-team-sites.png)
 
-1. Type the URL of the shared library you created earlier.
+1. Type the URL of the shared library you created earlier, or select **Connect** to see the content available to you.
 
     new image of Enter Site URL to Connect to
 
@@ -119,9 +118,9 @@ By default, only workspace Admins and Members can publish and update the app for
 2. Under **Advanced**, expand **Security settings**. Select **Allow contributors to update the app for this workspace**. 
 
 When enabled, contributors can:
-* Update app metadata like name, icon, description, support site, and color
-* Add or remove items included in the app, like adding reports or datasets
-* Change the app navigation or default item the app opens on
+* Update app metadata like name, icon, description, support site, and color.
+* Add or remove items included in the app, like adding reports or datasets.
+* Change the app navigation or default item the app opens on.
 
 However, contributors can't:
 * Publish the app for the first time
@@ -135,7 +134,7 @@ On the **Premium** tab in the **Settings** pane, you can choose settings related
 
     ![Screenshot of Premium capacity On.](media/service-create-the-new-workspaces/power-bi-workspace-premium.png)
 
-1. Choose either Premium capacity or **Premium Per User**.
+1. Choose either Premium capacity or **Premium Per User**. Read more about [Premium Per User](../admin/service-premium-per-user-faq.md).
 
     :::image type="content" source="media/service-create-the-new-workspaces/power-bi-workspace-premium-per-user.png" alt-text="Screenshot of Choose Premium or Premium Per User.":::
 
