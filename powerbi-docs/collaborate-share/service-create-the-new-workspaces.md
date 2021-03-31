@@ -65,9 +65,9 @@ You can specify which users receive notification about issues occurring in the w
 
 ### Set a workspace OneDrive
 
-The Workspace OneDrive feature allows you to configure a Microsoft 365 group whose SharePoint Document Library file storage is available to workspace users. You create the group *outside* of Power BI first.
+The Workspace OneDrive feature allows you to configure a Microsoft 365 group whose OneDrive shared library is available to workspace users. You create the group *outside* of Power BI first, in OneDrive. Create a [OneDrive shared library](https://support.microsoft.com/office/create-a-new-shared-library-from-onedrive-for-work-or-school-345c8599-05d8-4bf8-9355-2b5cfabe04d0).
 
-Power BI doesn't synchronize permissions of users or groups with workspace access, and users or groups with Microsoft 365 group membership. The best practice is to give [access to the workspace](service-give-access-new-workspaces.md) to the same Microsoft 365 group whose file storage you configure in this setting. Then manage workspace access by managing membership of the Microsoft 365 group.
+Power BI doesn't synchronize permissions of users or groups with workspace access, and users or groups with Microsoft 365 group membership. The best practice is to give [access to the workspace](service-give-access-new-workspaces.md) to the same Microsoft 365 group whose file storage you configured. Then manage workspace access by managing membership of the Microsoft 365 group.
 
 1. Access the **Workspace OneDrive** setting in one of two ways:
 
@@ -91,9 +91,17 @@ After you've configured the OneDrive location, you get to it in the same way you
 
     ![Screenshot of Get data, get files.](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
 
-1.  The **OneDrive – Business** entry is your own personal OneDrive for Business. The second OneDrive is the one you added.
+1.  Select **SharePoint - Team Sites**.
 
-    ![Screenshot of Workspace files location - get data.](media/service-create-the-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
+    ![Screenshot of SharePoint - Team Sites, get data.](media/service-create-the-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
+
+1. Type the URL of the shared library you created earlier.
+
+    new image of Enter Site URL to Connect to
+
+1. Navigate to the folder containing your Power BI files.
+
+    new image of SharePoint - Team Sites
 
 ### Allow contributors to update the app
 
