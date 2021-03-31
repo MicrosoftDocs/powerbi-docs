@@ -148,6 +148,8 @@ After you push an app, it shows up in their Apps list automatically. In this way
 ### Considerations for automatically installing apps
 Here are things to keep in mind when pushing apps to end users:
 
+* It is not possible to automatically install an app for an entire organization. You'll notice that when you select the checkbox for **install app automatically**, that the option for **entire organization** becomes inactive.
+
 * Installing an app automatically to users can take time. Most apps install immediately for users, but pushing apps can take time.  It depends on the number of items in the app and the number of people given access. We recommend pushing apps during off hours with plenty of time before users need them. Verify with several users before sending broad communication about the apps' availability.
 
 * Refresh the browser. Before seeing the pushed app in the Apps list, the user may need to refresh, or close and reopen their browser.
