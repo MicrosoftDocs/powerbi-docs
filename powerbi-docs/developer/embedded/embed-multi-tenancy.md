@@ -7,7 +7,7 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/11/2019
+ms.date: 04/02/2021
 ---
 
 # Manage multi-tenancy with Power BI embedded analytics
@@ -43,13 +43,13 @@ This article describes the different approaches and analyzes them according to s
 
 **[Row-level security (RLS)](embedded-row-level-security.md)** - Gives the ability to control user access to the data for individual rows in a table. You can implement row-level security at the data source level or in the Power BI semantic model.
 
-**Master user** - The identity that represents the SaaS application in Power BI and that the SaaS application uses when calling Power BI APIs. Needs to be an AAD user with a Power BI Pro license.
+**Master user** - The identity that represents the SaaS application in Power BI and that the SaaS application uses when calling Power BI APIs. Needs to be an AAD user with a Power BI Pro or Premium Per User (PPU) license.
 
 **AAD Application user (service principal)** - The identity that represents the SaaS application in Power BI and that the SaaS application uses when calling Power BI APIs. Needs to be an AAD web application. Can replace the use of a *master* user to authenticate with Power BI.
 
 **Capacity** - A set of resources dedicated to running the Power BI service. [Power BI Premium capacities](../../admin/service-premium-what-is.md) Intended for enterprise companies using Power BI internally, while [Power BI Embedded capacities](azure-pbie-create-capacity.md) intend for application developers to develop SaaS applications for third parties.
 
-**[Power BI Pro license](../../admin/service-admin-purchasing-power-bi-pro.md)** - A user-based license, which grants rights to publish content to workspaces, consume apps without Premium capacity, share dashboards, and subscribe to dashboards and reports.
+**[Power BI Pro or Premium Per User (PPU) license](../../admin/service-admin-purchasing-power-bi-pro.md)** - A user-based license, which grants rights to publish content to workspaces, consume apps without Premium capacity, share dashboards, and subscribe to dashboards and reports.
 
 **[Data connectivity modes](../../connect-data/desktop-directquery-about.md)** - Connecting data sources to Power BI that can be done in different modes:
 

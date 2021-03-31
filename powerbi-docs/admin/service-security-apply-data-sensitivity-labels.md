@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 12/09/2020
+ms.date: 04/02/2021
 LocalizationGroup: Data from files
 ---
 # How to apply sensitivity labels in Power BI
@@ -20,7 +20,7 @@ For more information about sensitivity labels in Power BI, see [Sensitivity labe
 In the Power BI service, you can apply sensitivity labels to reports, dashboards, datasets, and dataflows.
 
 To be able to apply sensitivity labels in the Power BI service:
-* You must have a [Power BI Pro license](./service-admin-purchasing-power-bi-pro.md) and edit permissions on the content you wish to label.
+* You must have a [Power BI Pro or Premium Per User (PPU) license](./service-admin-purchasing-power-bi-pro.md) and edit permissions on the content you wish to label.
 * Sensitivity labels must be enabled for your organization. Contact your Power BI admin if you aren’t sure about this.
 * You must belong to a security group that has permissions to apply sensitivity labels, as described in [Enable sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md).
 * All [licensing and other requirements](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements) must have been met.
@@ -60,7 +60,7 @@ On the settings datasets tab, open the sensitivity label section, choose the des
 ## Apply sensitivity labels in Power BI Desktop (preview)
 
 To use sensitivity labels in Power BI Desktop:
-* You must have a [Power BI Pro license](./service-admin-purchasing-power-bi-pro.md).
+* You must have a [Power BI Pro or Premium Per User (PPU) license](./service-admin-purchasing-power-bi-pro.md).
 * Sensitivity labels must be enabled for your organization. Contact your Power BI admin if you aren't sure about this.
 * You must belong to a security group that has permissions to apply sensitivity labels, as described in [Enable sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md).
 * All [licensing and other requirements](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements) must have been met.

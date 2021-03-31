@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/04/2021
+ms.date: 04/02/2021
 LocalizationGroup: Share your work
 ---
 
@@ -33,7 +33,7 @@ The **Embed** option supports [URL filters](service-url-filters.md) and URL sett
 
     ![Sign in to view this report](media/service-embed-secure/secure-embed-sign-in.png)
 
-4. After the user has signed in, the report opens, showing the data and allowing page navigation and filter setting. Only users who have view permission can see the report in Power BI. All [row-level security (RLS)](../admin/service-admin-rls.md) rules are also applied. Lastly, the user needs to be correctly licensed – either they need a Power BI Pro license, or the report must be in a workspace that is in a Power BI Premium capacity. The user needs to sign in each time they open a new browser window. However, once signed in, other reports load automatically.
+4. After the user has signed in, the report opens, showing the data and allowing page navigation and filter setting. Only users who have view permission can see the report in Power BI. All [row-level security (RLS)](../admin/service-admin-rls.md) rules are also applied. Lastly, the user needs to be correctly licensed – either they need a Power BI Pro or Premium Per User (PPU) license, or the report must be in a workspace that is in a Power BI Premium capacity. The user needs to sign in each time they open a new browser window. However, once signed in, other reports load automatically.
 
     ![Embed report](media/service-embed-secure/secure-embed-report.png)
 
@@ -49,7 +49,7 @@ In the Power BI service, you can share embedded reports with users requiring acc
 
 ## Licensing
 
-To view the embedded report, users need either a Power BI Pro license or the content needs to be in a workspace that's in a [Power BI Premium capacity (EM or P SKU)](../admin/service-admin-premium-purchase.md).
+To view the embedded report, users need either a Power BI Pro or Premium Per User (PPU) license or the content needs to be in a workspace that's in a [Power BI Premium capacity (EM or P SKU)](../admin/service-admin-premium-purchase.md).
 
 ## Customize your embed experience using URL settings
 
