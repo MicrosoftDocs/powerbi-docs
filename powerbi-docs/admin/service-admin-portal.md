@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 03/12/2021
+ms.date: 04/01/2021
 ms.custom: seodec18
 LocalizationGroup: Administration
 ---
@@ -441,18 +441,18 @@ This setting allows organizations to hide the **Share to Teams** buttons in the 
 Read more about [sharing Power BI content to Teams](../collaborate-share/service-share-report-teams.md).
 
 ### Allow shareable links to grant access to all People in your organization
-This tenant setting will soon be available for admins looking to disable creating shareable links to **People in your organization**. You'll be able to find this option in the Admin portal by navigating to **Tenant settings** > **Export and sharing settings** > **Allow shareable links to grant access to all People in your organization**.
+This tenant setting is available for admins looking to disable creating shareable links to **People in your organization**. You can find this option in the Admin portal by navigating to **Tenant settings** > **Export and sharing settings** > **Allow shareable links to grant access to all People in your organization**.
 
-![Screenshot of allow shareable links to grant access to all People in your organization setting](https://user-images.githubusercontent.com/47899466/112220073-115bd480-8be3-11eb-8125-16d04c94e2a6.png)
+![Screenshot of allow shareable links to grant access to all People in your organization setting](media/service-admin-portal/admin-allow-shareable-links.png)
 
 As with other tenant settings, you can enable sharing links to **People in your organization** for:
 - **The entire organization**
 - **Specific security groups**
 - Or **Except specific security groups**
 
-If this setting is disabled for a user with share permissions to a report, that user will only be able to share the report via link to **Specific people** or **People with existing access**.
+If this setting is disabled for a user with share permissions to a report, that user can only share the report via link to **Specific people** or **People with existing access**.
 
-![Screenshot showing share option disabled](https://user-images.githubusercontent.com/47899466/112220306-554ed980-8be3-11eb-8b34-f229f8314675.png)
+![Screenshot showing share option disabled](media/service-admin-portal/admin-share-option-disabled.png)
 
 ## Content pack and app settings
 
