@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 07/22/2020
+ms.date: 03/31/2021
 ---
 
 # Get a Power BI link preview in Microsoft Teams
@@ -50,7 +50,6 @@ Follow these steps to get a link preview for content in the Power BI service.
 
 ## Known issues and limitations
 
-- Single sign-on isn't supported for the link preview service.
 - Link previews don't work in meeting chat or private channels.
 - See the [Known issues and limitations](service-collaborate-microsoft-teams.md#known-issues-and-limitations) section of the "Collaborate in Microsoft Teams" article for other issues.
 
