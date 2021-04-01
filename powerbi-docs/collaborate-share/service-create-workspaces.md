@@ -18,9 +18,6 @@ Ready to migrate your classic workspace? See [Upgrade classic workspaces to the 
 
 When you create a classic workspace, you're creating an underlying, associated Microsoft 365 group. All the workspace administration is in Microsoft 365. You can add colleagues to these workspaces as members or admins. In the workspace, you can all collaborate on dashboards, reports, and other articles that you plan to publish to a wider audience. Everyone you add to a workspace needs a Power BI Pro license.
 
-## Video: Apps and workspaces
-<iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
-
 ## Create a classic workspace based on a Microsoft 365 group
 
 When you create a workspace, it’s built on a Microsoft 365 group.
@@ -36,27 +33,27 @@ When you create a workspace, it’s built on a Microsoft 365 group.
     ![Screenshot of Revert to classic workspace option](media/service-create-workspaces/power-bi-revert-classic-workspace.png)
 
     > [!NOTE]
-> If you don't see this banner, then your Power BI admin has blocked the ability to create classic workspaces. You can [create one of the new workspaces](service-create-the-new-workspaces.md).
+    > If you don't see this banner, your Power BI admin has blocked the ability to create classic workspaces. You can [create one of the new workspaces](service-create-the-new-workspaces.md) instead.
 
 3. Give the workspace a name. If the corresponding **Workspace ID** isn't available, edit it to come up with a unique ID.
    
-    If you create an app from the workspace, bu default it will have the same name and icon as the workspace. You can change both when you create the app.
-
     ![Screenshot of Name the workspace.](media/service-create-workspaces/power-bi-apps-create-workspace-name.png)
 
-3. You have a few options to set. If you choose **Public**, anyone in your organization can see what’s in the workspace. **Private** means only members of the workspace can see its contents.
+    When you create an app from the workspace, by default it will have the same name and icon as the workspace. You can change both when you create the app.
+
+3. You have a few more options to set. If you choose **Public**, anyone in your organization can see what’s in the workspace. **Private** means only members of the workspace can see its contents.
    
      ![Screenshot of Set Private or Public.](media/service-create-workspaces/power-bi-apps-create-workspace-private-public.png)
    
     You can't change the Public/Private setting after you've created the group.
 
 4. You can also choose if members can **edit** or have **view-only** access.
-   
+
      ![Screenshot of Set edit or view-only.](media/service-create-workspaces/power-bi-apps-create-workspace-members-edit.png)
-   
-     Only add people to the workspace so they can edit the content. If they're only going to view the content, don't add them to the workspace. You can include them when you publish the app.
 
 5. Add email addresses of people you want to have access to the workspace, and select **Add**. You can’t add group aliases, just individuals.
+
+     Only add people to the workspace that you want to edit the content. If they're only going to view the content, don't add them to the workspace. Include them when you publish the app.
 
 6. Decide whether each person is a member or an admin.
    
@@ -73,7 +70,7 @@ Power BI creates the workspace and opens it. It appears in the list of workspace
 When you first create it, you may need to wait an hour or so for the workspace to propagate to Microsoft 365.
 
 ### Add an image to your Microsoft 365 workspace (optional)
-By default, Power BI creates a little colored circle for your app, with the app's initials. But maybe you want to customize it with an image. To add an image, you need an Exchange Online license.
+By default, Power BI creates a little colored circle for your app, with the app's initials. You may want to customize it with an image. To add an image, you need an Exchange Online license.
 
 1. Select **Workspaces**, select **More options** (...) next to the name of the workspace, then **Members**. 
    
@@ -99,14 +96,9 @@ By default, Power BI creates a little colored circle for your app, with the app'
 
 ## Add content to your workspace
 
-After you've created a workspace, it's time to add content to it. It's just like adding content to your My Workspace, except the other people in the workspace can see and work on it, too. A big difference is that when you get done, you can publish the content as an app. 
+After you've created a workspace, it's time to add content to it. It's just like adding content to your My Workspace, except the other people in the workspace can see and work on it, too. A big difference is that when you get done, you can [publish the content as an app](service-create-distribute-apps.md).
+
 When you view content in the content list of a workspace, the workspace name is listed as the owner.
-
-### Connect to third-party services in workspaces
-
-Apps are provided for all the third-party services Power BI supports, making it easy for you to get data from the services you use, such as Microsoft Dynamics CRM, Salesforce, or Google Analytics. You can publish organizational apps to give your users the data they need.
-
-In the classic workspaces, you can also connect using organizational content packs, and third-party apps such as Microsoft Dynamics CRM, Salesforce, or Google Analytics. Organizational content packs are being deprecated. Now is a good time to upgrade your content packs to apps, if you haven't started yet. See the workspace upgrade roadmap section of this blog post [Announcing Power BI admins can upgrade classic workspaces](https://powerbi.microsoft.com/blog/announcing-power-bi-admins-can-upgrade-classic-workspaces-and-roadmap-update/) for the timeline.
 
 ## Distribute an app
 
