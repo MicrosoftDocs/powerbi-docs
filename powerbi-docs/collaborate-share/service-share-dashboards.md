@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/04/2021
+ms.date: 04/02/2021
 LocalizationGroup: Share your work
 ---
 # Share Power BI dashboards and reports with coworkers and others
@@ -22,7 +22,7 @@ You can share dashboards and reports from many places in the Power BI service: F
 
 The Power BI service offers other ways to collaborate and distribute dashboards and reports, too. Read [Ways to collaborate and share in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md) to see which way works best for your circumstances. 
 
-With sharing, whether you share content inside or outside your organization, you need a [Power BI Pro license](../fundamentals/service-features-license-type.md). Your recipients also need Power BI Pro licenses, unless the content is in a [Premium capacity](../admin/service-premium-what-is.md). 
+With sharing, whether you share content inside or outside your organization, you need a [Power BI Pro or Premium Per User (PPU) license](../fundamentals/service-features-license-type.md). Your recipients also need Power BI Pro or Premium Per User (PPU) licenses, unless the content is in a [Premium capacity](../admin/service-premium-what-is.md). 
 
 You can't *share* directly from Power BI Desktop. You [publish reports from Power BI Desktop](../create-reports/desktop-upload-desktop-files.md) to the Power BI service. However, you can [share a dashboard from the Power BI mobile apps](../consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md).  
 
@@ -71,7 +71,7 @@ Sometimes you need to see the people you've shared with, and see who they've sha
     In this view, you can [stop or change sharing permissions](#stop-or-change-sharing) in this article. 
 
 ## Share a dashboard or report outside your organization
-When you share with people outside your organization, they receive an email with a link to the shared dashboard or report. They must sign in to Power BI to see what you shared. If they don't have a Power BI Pro license, they can sign up for a license when they click the link.
+When you share with people outside your organization, they receive an email with a link to the shared dashboard or report. They must sign in to Power BI to see what you shared. If they don't have a Power BI Pro or Premium Per User (PPU) license, they can sign up for a license when they click the link.
 
 After they sign in, they see the shared dashboard or report in its own browser window, not in the usual Power BI portal. To access this dashboard or report later, they must bookmark the link.
 

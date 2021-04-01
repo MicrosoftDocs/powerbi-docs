@@ -6,7 +6,7 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 03/23/2020
+ms.date: 04/02/2020
 LocalizationGroup: Share your work
 ---
 # Publish an app in Power BI
@@ -27,10 +27,10 @@ Business users get your apps in a few different ways:
 You can create the app with its own built-in navigation, so your users can easily find their way around your content. They can't modify the contents of the app. They can interact with it either in the Power BI service, or one of the mobile apps -– filtering, highlighting, and sorting the data themselves. They get updates automatically and you can control how frequently the data refreshes. You can also give them Build permission to connect to the underlying datasets, and to create copies of the reports in the app. Read more about the [Build permission](../connect-data/service-datasets-build-permissions.md).
 
 ## Licenses for apps
-To create or update an app, you need a Power BI Pro license. For app *consumers*, there are two options.
+To create or update an app, you need a Power BI Pro or Premium Per User (PPU) license. For app *consumers*, there are two options.
 
-* **Option 1** The workspace for this app is *not* in a Power BI Premium capacity: All business users need Power BI Pro licenses to view your app. 
-* **Option 2** The workspace for this app *is* in a Power BI Premium capacity: Business users without Power BI Pro licenses in your organization can view app content. However, they can't copy the reports, or create reports based on the underlying datasets. Read [What is Power BI Premium?](../admin/service-premium-what-is.md) for details.
+* **Option 1** The workspace for this app is *not* in a Power BI Premium capacity: All business users need Power BI Pro or Premium Per User (PPU) licenses to view your app. 
+* **Option 2** The workspace for this app *is* in a Power BI Premium capacity: Business users without Power BI Pro or Premium Per User (PPU) licenses in your organization can view app content. However, they can't copy the reports, or create reports based on the underlying datasets. Read [What is Power BI Premium?](../admin/service-premium-what-is.md) for details.
 
 ## Publish your app
 When the dashboards and reports in your workspace are ready, you choose which dashboards and reports you want to publish, then you publish them as an app. 
@@ -172,7 +172,7 @@ When you clear this option, new users you add to the app don't get Build permiss
 
 ## Allow users to copy reports
 
-When you check the option to **Allow users to make a copy of the reports in this app**, your users can save any of the reports in the app to their My Workspace or another workspace. To make a copy, users need a Pro license, even if the original report is in a workspace in a Premium capacity. They can then customize the reports to their unique needs. You have to select the **Allow all users to connect to the app's underlying datasets using Build permission** option first. By selecting these options, you're enabling the new [copy reports from other workspaces](../connect-data/service-datasets-copy-reports.md) capability.
+When you check the option to **Allow users to make a copy of the reports in this app**, your users can save any of the reports in the app to their My Workspace or another workspace. To make a copy, users need a Pro or Premium Per User (PPU) license, even if the original report is in a workspace in a Premium capacity. They can then customize the reports to their unique needs. You have to select the **Allow all users to connect to the app's underlying datasets using Build permission** option first. By selecting these options, you're enabling the new [copy reports from other workspaces](../connect-data/service-datasets-copy-reports.md) capability.
 
 ## Unpublish an app
 Any member of a workspace can unpublish the app.

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 04/02/2021
 LocalizationGroup: Get started
 ---
 # Data sources for the Power BI service
@@ -28,7 +28,7 @@ After you select **Get Data**, you can choose the data you want to access
 
 The **Discover content** section contains all the data and reports you need already prepared for you. In Power BI, there are two types of content packs: Organizational and Services. 
 
-**Organizational**: If you and other users in your organization have a Power BI Pro account, you can create, share, and use content packs. To learn more, see [Intro to organizational content packs](../collaborate-share/service-organizational-content-pack-introduction.md).
+**Organizational**: If you and other users in your organization have a Power BI Pro or Premium Per User (PPU) account, you can create, share, and use content packs. To learn more, see [Intro to organizational content packs](../collaborate-share/service-organizational-content-pack-introduction.md).
 
 **Services**: There are literally dozens of services with content packs for Power BI, and more are being added all the time. Most services require you to have an account. To learn more, see [Connect to services you use with Power BI](service-connect-to-services.md).
 
