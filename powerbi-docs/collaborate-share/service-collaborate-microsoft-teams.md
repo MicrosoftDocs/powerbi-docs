@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 12/14/2020
+ms.date: 03/31/2021
 ---
 
 # Collaborate in Microsoft Teams with Power BI
@@ -57,7 +57,6 @@ You can integrate a Power BI report in Teams and share it with external users. H
 - [URL filters](service-url-filters.md) aren't supported with the **Power BI** tab for Microsoft Teams.
 - In national clouds, the new **Power BI** tab isn't available. An older version might be available that doesn't support the new workspace experience or reports in Power BI apps.
 - After you save the tab, you can't change the tab name through the tab settings. Use the **Rename** option to change it.
-- Single sign-on isn't supported for the link preview service.
 - Link previews don't work in meeting chat or private channels.
 
 ## Microsoft Power Platform in Microsoft Teams

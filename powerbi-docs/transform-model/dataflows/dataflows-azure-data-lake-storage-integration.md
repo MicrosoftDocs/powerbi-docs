@@ -57,7 +57,7 @@ Once selected, select **Save** and you now have successfully connected the works
 Within the ADLS Gen 2 storage account, all dataflows are stored in the **powerbi** container/filesystem.
  
 The structure looks like this:    
-`<workspace name>/<dataflow name>/model.json
+`<workspace name>/<dataflow name>/model.json     
 <workspace name>/<dataflow name>/model.json.snapshots/<all snapshots>` 
  
 After refresh:    
