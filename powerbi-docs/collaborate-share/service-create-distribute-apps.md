@@ -79,9 +79,9 @@ You can send that direct link to the people you've shared it with, or they can f
 ## Change your published app
 After you publish your app, you may want to change or update it. It's easy to update it if you're an admin or member in the new workspace. 
 
-1. Open the workspace that corresponds to the app. 
+1. Open the workspace that corresponds to the app. If you're a workspace Admin or Member, you can open the workspace right from the app, by selecting the **Edit app** pencil.
    
-    ![Open workspace](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
+    ![Open the workspace from the associated app.](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
 
 2. Make any changes you want to the dashboards or reports.
  
@@ -91,10 +91,12 @@ After you publish your app, you may want to change or update it. It's easy to up
     > If you remove a report and update the app, even if you add the report back to the app, your app consumers lose all customizations such as bookmarks, comments, etc.  
  
 3. Go back to the workspace list of contents and select **Update app** in the upper-right corner.
-   
+
+    :::image type="content" source="media/service-create-distribute-apps/power-bi-select-update-app.png" alt-text="Select Update app.":::
+
 1. Update **Setup**, **Navigation**, and **Permissions**, if you need to, then select **Update app**.
-   
-The people you've published the app to automatically see the updated version of the app. 
+
+    The people you've published the app to automatically see the updated version of the app. 
 
 ## Design the navigation experience
 The **New navigation builder** option allows you to build a custom navigation for your app. The custom navigation makes it easier for your users to find and use content in the app. Existing apps have this option turned off and new apps default to the option being on.
@@ -181,9 +183,9 @@ Any member of a workspace can unpublish the app.
 >When you unpublish an app, app users lose their customizations. They lose any personal bookmarks, comments, or subscriptions associated with content in the app. Only unpublish an app if you need to remove it.
 > 
 
-* In a workspace, select the ellipsis (**...**) in the upper-right corner > **Unpublish app**.
+* In a workspace, select  **More options (...)** > **Unpublish app**.
   
-    ![Unpublish app](media/service-create-distribute-apps/power-bi-app-unpublish.png)
+    ![Select the Unpublish app button.](media/service-create-distribute-apps/power-bi-app-unpublish.png)
 
 This action uninstalls the app for everyone you've published it to, and they no longer have access to it. It doesn't delete the workspace or its contents.
 
