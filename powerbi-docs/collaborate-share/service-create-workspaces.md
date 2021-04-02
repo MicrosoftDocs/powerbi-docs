@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 03/30/2021
+ms.date: 04/01/2021
 LocalizationGroup: Share your work
 ---
 # Create classic workspaces in Power BI
@@ -30,7 +30,7 @@ When you create a workspace, it’s built on a Microsoft 365 group.
 
 2. In the **You're creating an upgraded workspace** banner, click **Revert to classic**. 
 
-    ![Screenshot of Revert to classic workspace option](media/service-create-workspaces/power-bi-revert-classic-workspace.png)
+    ![Screenshot of Revert to classic workspace option.](media/service-create-workspaces/power-bi-revert-classic-workspace.png)
 
     > [!NOTE]
     > If you don't see this banner, your Power BI admin has blocked the ability to create classic workspaces. You can [create one of the new workspaces](service-create-the-new-workspaces.md) instead.
