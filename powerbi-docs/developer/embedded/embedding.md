@@ -15,7 +15,7 @@ helpviewer_keywords:
   - "user owns data"
   - "Power BI APIs"
 ms.custom: seodec18
-ms.date: 05/15/2019 
+ms.date: 04/02/2021
 ---
 
 # Embedded analytics with Power BI
@@ -30,6 +30,9 @@ Choose the solution that is right for you:
 * [Embedding for your customers](embedding.md#embedding-for-your-customers) allows you to embed dashboards and reports to users who don't have a Power BI account. To do this, in the [Embedding setup tool](https://app.powerbi.com/embedsetup), implement the *Embed for your customers* solution.
 
 ![PBIE sample](media/embedding/what-can-you-do-02.png)
+
+> [!NOTE]
+> Embedding with a Premium Per User (PPU) license is only supported with SaaS embedding, and a license is required for each user.
 
 ## Use APIs
 
