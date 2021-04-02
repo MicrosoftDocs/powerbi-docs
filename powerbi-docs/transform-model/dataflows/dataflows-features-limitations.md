@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 03/25/2021
+ms.date: 04/02/2021
 LocalizationGroup: Data from files
 ---
 # Dataflows limitations and considerations
@@ -77,6 +77,10 @@ Dataflows that exist in Premium have the following limitations and consideration
 * Changing a dataflow from an incremental refresh policy to a normal refresh, or vice versa, will drop all data
 
 * Modifying a dataflow's schema will drop all data
+
+* When using a Premium Per User (PPU) license with dataflows, data is cleared when moving data out of a PPU environment
+
+* When a dataflow is refreshed in a Premium Per User (PPU) context, the data is not visible to non-PPU users
 
 **Linked and Computed tables:**
 

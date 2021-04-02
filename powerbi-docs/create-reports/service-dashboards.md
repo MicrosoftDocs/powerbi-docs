@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/24/2021
+ms.date: 04/02/2021
 LocalizationGroup: Dashboards
 ---
 # Introduction to dashboards for Power BI designers
@@ -35,7 +35,7 @@ A dashboard isn't just a pretty picture. It's highly interactive and the tiles u
 The ability to create a dashboard is considered a *creator* feature and requires edit permissions on the report. Edit permissions are available to report creators and to those colleagues the creator grants access. For example, if David creates a report in workspace ABC and adds you as a member of that workspace, you and David both have edit permissions. On the other hand, if a report has been shared with you directly or as part of a [Power BI app](../collaborate-share/service-create-distribute-apps.md), you're *consuming* the report. You may not be able to pin tiles to a dashboard. 
 
 > [!IMPORTANT]
-> You need a [Power BI Pro](../fundamentals/service-features-license-type.md) license to create dashboards in workspaces. You can create dashboards in your own My Workspace without a Power BI Pro license.
+> You need a [Power BI Pro](../fundamentals/service-features-license-type.md) or Premium Per User (PPU) license to create dashboards in workspaces. You can create dashboards in your own My Workspace without a Power BI Pro or Premium Per User (PPU) license.
 
 
 ## Dashboards versus reports

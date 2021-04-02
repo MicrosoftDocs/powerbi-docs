@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 12/09/2020
+ms.date: 04/02/2021
 LocalizationGroup: Data from files
 ---
 # Enable sensitivity labels in Power BI
@@ -30,7 +30,7 @@ Enabling sensitivity labels requires an Azure Information Protection license. Se
     >[!NOTE]
     > If your organization uses Azure Information Protection sensitivity labels, they need to be migrated to the Microsoft Information Protection Unified Labeling platform in order for the them to be used in Power BI. [Learn more about migrating sensitivity labels](/azure/information-protection/configure-policy-migrate-labels).
 
-* To be able to apply labels to Power BI content and files, a user must have a Power BI Pro license in addition to one of the Azure Information Protection licenses mentioned above.
+* To be able to apply labels to Power BI content and files, a user must have a Power BI Pro or Premium Per User (PPU) license in addition to one of the Azure Information Protection licenses mentioned above.
 
 * Office apps have their own [licensing requirements for viewing and applying sensitivity labels]( https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels#subscription-and-licensing-requirements-for-sensitivity-labels ).
 

@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 03/31/2021
+ms.date: 04/02/2021
 ---
 
 # Collaborate in Microsoft Teams with Power BI
@@ -27,7 +27,7 @@ As a distributed workforce becomes the norm, more organizations are relying on M
 
 In general, for Power BI to work in Microsoft Teams, ensure these elements:
 
-- Your users have a Power BI Pro license, or the report is contained in a [Power BI Premium capacity (EM or P SKU)](../admin/service-premium-what-is.md) with a Power BI license.
+- Your users have a Power BI Pro or Premium Per User (PPU) license, or the report is contained in a [Power BI Premium capacity (EM or P SKU)](../admin/service-premium-what-is.md) with a Power BI license.
 - Users have signed in to the Power BI service to activate their Power BI license.
 - Users meet the requirements to use the **Power BI** tab in Microsoft Teams.
 
@@ -46,7 +46,7 @@ You can integrate a Power BI report in Teams and share it with external users. H
 
 1.	You invite the external user to the organization, and they accept your invitation. See [Distribute Power BI content to external guest users using Azure Active Directory B2B](../guidance/whitepaper-azure-b2b-power-bi.md) for details.
 2.	Give the external user permission on the report. Individual permissions assignment works best.
-3.	Make sure the external user has a Power BI license assigned to them. If the content is in a Premium capacity, the user only needs a Free license. If not, the user can [sign up for an individual free trial of Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md#sign-up-for-an-individual-trial-of-power-bi-pro).
+3.	Make sure the external user has a Power BI license assigned to them. If the content is in a Premium capacity, the user only needs a Free license. If not, the user can [sign up for an individual free trial of Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md#sign-up-for-an-individual-trial-of-power-bi-pro) or get a Premium Per User (PPU) license.
 
 ## Known issues and limitations
 
