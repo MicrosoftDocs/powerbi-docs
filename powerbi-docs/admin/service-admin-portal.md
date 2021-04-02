@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 03/12/2021
+ms.date: 04/02/2021
 ms.custom: seodec18
 LocalizationGroup: Administration
 ---
@@ -215,7 +215,7 @@ Admins can provide a custom message that appears before a user publishes a repor
 ```markdown
 #### Important Disclaimer 
 
-Before publishing the report to a workspace, be sure to validate that the appropriate users or groups have access to the destination workspace. If some users or groups should *not* have access to the content and underlying artifacts, remove or modify their access to the workspace, or publish the report to a different workspace. [Learn more](https://docs.microsoft.com/power-bi/collaborate-share/service-create-the-new-workspaces#give-access-to-your-workspace). 
+Before publishing the report to a workspace, be sure to validate that the appropriate users or groups have access to the destination workspace. If some users or groups should *not* have access to the content and underlying artifacts, remove or modify their access to the workspace, or publish the report to a different workspace. Learn about [giving access to the new workspaces](../collaborate-share/give-access-new-workspaces.md). 
 ```
 
 The **Custom message** text area does support scrolling, so you can provide a message up to 5,000 characters.

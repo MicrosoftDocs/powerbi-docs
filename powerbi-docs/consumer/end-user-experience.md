@@ -9,7 +9,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: quickstart
-ms.date: 12/03/2020
+ms.date: 04/02/2021
 #customer intent: As a PBI consumer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently. 
 LocalizationGroup: Get started
 ---
@@ -28,7 +28,7 @@ Now that you know the [basics of Power BI](end-user-basic-concepts.md), let's ta
 - Read [Power BI service basic concepts](end-user-basic-concepts.md)
 
 - Viewing Power BI content (reports, dashboards, apps) created by *designers* requires one of two conditions:
-    - a Power BI Pro license
+    - a Power BI Pro or Premium Per User (PPU) license
     - Your organization to have a Power BI Premium subscription, and the content to be shared with you from Premium capacity.    
     [Learn about licenses and subscriptions](end-user-license.md).     
 

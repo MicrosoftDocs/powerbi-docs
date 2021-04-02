@@ -7,7 +7,7 @@ ms.reviewer: duaskins
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 02/24/2021
+ms.date: 04/02/2021
 LocalizationGroup: Share your work
 ---
 
@@ -100,9 +100,9 @@ Read more about [roles in the new workspaces](service-new-workspaces.md#roles-in
 
 ## Licensing after upgrade
 
-Users in the Admin, Member, or Contributor workspace roles need a Power BI Pro license to access the workspace.
+Users in the Admin, Member, or Contributor workspace roles need a Power BI Pro or Premium Per User (PPU) license to access the workspace.
 
-If the workspace is in the shared capacity, users in the Viewer workspace role also need a Power BI Pro license to access the workspace. However, if the workspace is in a Premium capacity, users in the Viewer role don't need a Pro license to access the workspace.
+If the workspace is in the shared capacity, users in the Viewer workspace role also need a Power BI Pro or Premium Per User (PPU) license to access the workspace. However, if the workspace is in a Premium capacity, users in the Viewer role don't need a Pro or Premium Per User (PPU) license to access the workspace.
 
 ## Other new workspace features
 

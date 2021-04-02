@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 12/10/2020
+ms.date: 04/02/2021
 LocalizationGroup: Data from files
 ---
 # Configuring dataflow storage to use Azure Data Lake Gen 2 
@@ -23,7 +23,7 @@ There are two ways to configure which ADLS Gen 2 store to use: you can use a ten
 
 ## Prerequisites
 
-- To bring your own ADLS Gen 2 account, you must have owner permissions at either the storage account, resource group or subscription layer. If you are an administrator, you still must assign yourself owner permission.  **Currently not supporting ADLS Gen2 Storage Accounts behind a firewall**.
+- To bring your own ADLS Gen 2 account, you must have owner permissions at the storage account layer. Permissions at the resource group or subscription level will *not* work. If you are an administrator, you still must assign yourself owner permission.  **Currently not supporting ADLS Gen2 Storage Accounts behind a firewall**. 
 
 - The storage account must be created with the [Hierarchical Namespace (HNS)](/azure/storage/blobs/create-data-lake-storage-account) enabled. 
 
@@ -34,6 +34,18 @@ There are two ways to configure which ADLS Gen 2 store to use: you can use a ten
 - The ADLS Gen 2 account must be deployed in the same region as your Power BI tenant. An error occurs if the locations of the resources are not in the same region.
 
 - Finally, you can connect to any ADLS Gen 2 from the admin portal, but if you connect directly to a workspace, you must first ensure there are no dataflows in the workspace before connecting.
+
+The following table describes the permissions for ADLS and for Power BI required for ADLS Gen 2 and Power BI:
+
+
+|Action  |ADLS permissions  |Minimum Power BI permissions  |
+|---------|---------|---------|
+|Connect ADLS Gen 2 to Power BI Tenant     | Owner        | Tenant admin        |
+|Connect ADLS Gen 2 to Workspace     | Owner        | Workspace Admin        |
+|Create Power BI dataflows writing back to connected ADLS account     | Not applicable        | Workspace contributor         |
+|Consume Power BI dataflow     | Not applicable        | Workspace viewer        |
+
+
 
 ## Connecting to an Azure Data Lake Gen 2 at a workspace level
 Navigate to a workspace that has no dataflows. Select **Workspace settings**. Select the **Azure Connections** tab and then select the **Storage** section.
