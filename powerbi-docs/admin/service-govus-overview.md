@@ -122,19 +122,25 @@ We include the quarter for estimated availability if release is planned for an e
 |[Azure B2B Collaboration between government and commercial cloud](service-admin-azure-ad-b2b.md)<sup>1</sup>|![available](../media/yes.png)|![available](../media/yes.png)|![available](../media/yes.png)
 |[Template apps](../connect-data/service-template-apps-overview.md)<sup>2</sup>|![available](../media/yes.png) |![available](../media/yes.png)| ![available](../media/yes.png)|
 |[Embed in SharePoint Online using the Power BI web part](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![available](../media/yes.png)|![available](../media/yes.png)|![not available](../media/no.png)|
-|[Data Protection (MIP labels)](service-security-sensitivity-label-overview.md)|![available](../media/yes.png)|![available](../media/yes.png) |Q1 2021|
+|[Data Protection (MIP labels)](service-security-sensitivity-label-overview.md)|![available](../media/yes.png)|![available](../media/yes.png) |![available](../media/yes.png)|
 |[Dataflows - Direct Query](../transform-model/dataflows/dataflows-configure-consume.md) | ![available](../media/yes.png) |![available](../media/yes.png)|Not planned |
 |[Dataflows - SQL Compute engine optimization](../transform-model/dataflows/dataflows-premium-features.md) | ![available](../media/yes.png) |![available](../media/yes.png)|Not planned |
 |[Power BI tab in Teams](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>3</sup>|![available](../media/yes.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[Large models](service-premium-large-models.md) | ![available](../media/yes.png) |![available](../media/yes.png)| Not planned |
 |[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[Bring Your Own Storage (Azure Data Lake Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
+|Tenant metadata scanning<sup>4</sup>|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 
 <sup>1</sup> Although B2B Collaboration is available for GCC, the external user must be issued a license in that environment. Commercial cloud licenses aren't valid in GCC. For more information about known limitations with B2B Collaboration for US government, [Compare Azure Government and global Azure](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2).
 
 <sup>2</sup> Marketplace apps aren't available to US Government cloud instances so template apps are limited to private and organizational apps.
 
 <sup>3</sup> The Power BI experience in Teams for GCC is limited, works only for classic workspaces, and doesn't include the enhanced functionality described in [Embed Power BI Content in Microsoft Teams](../collaborate-share/service-embed-report-microsoft-teams.md).
+
+<sup>4</sup> Tennant metadata scanning flow APIs are not supported in government clouds. They are: https://docs.microsoft.com/en-us/rest/api/power-bi/admin/workspaceinfo_getmodifiedworkspaces
+https://docs.microsoft.com/en-us/rest/api/power-bi/admin/workspaceinfo_getscanresult
+https://docs.microsoft.com/en-us/rest/api/power-bi/admin/workspaceinfo_getscanstatus
+https://docs.microsoft.com/en-us/rest/api/power-bi/admin/workspaceinfo_postworkspaceinfo
 
 ## Next steps
 
