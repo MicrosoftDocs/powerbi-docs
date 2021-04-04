@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 03/11/2021
+ms.date: 04/02/2021
 ms.custom: references_regions
 LocalizationGroup: Data from files
 ---
@@ -87,7 +87,7 @@ To summarize, you want to optimize your container size based on the queries bein
 
 #### Enhanced compute engine - an opportunity to improve performance
 
-In our analogy, the [enhanced compute engine](dataflows-premium-features.md#the-enhanced-compute-engine) is like an oven. Power BI uses a compute engine to process your queries and refresh operations. The enhanced compute engine is an improvement over the standard engine, and works by loading data to a SQL Cache and uses SQL to accelerate table transformation, refresh operations and enables DirectQuery connectivity. If we compare the engines to ovens, as you leverage the enhanced oven, you may be able to cook meals faster and more effectively. When configured to **On** or **Optimized** for computed entities, if your business logic allows for it, Power BI uses SQL speed up the performance. Having the engine **On** also provides for DirectQuery connectivity. As the analogy suggests – certain meals might not need an oven, nor take advantage of the oven. The enhanced compute engine can be thought of in a similar manner – make sure your dataflow usage is leveraging the enhanced compute engine properly.
+In our analogy, the [enhanced compute engine](dataflows-premium-features.md#the-enhanced-compute-engine) is like an oven. Power BI uses a compute engine to process your queries and refresh operations. The enhanced compute engine is an improvement over the standard engine, and works by loading data to a SQL Cache and uses SQL to accelerate table transformation, refresh operations and enables DirectQuery connectivity. If we compare the engines to ovens, as you leverage the enhanced oven, you may be able to cook meals faster and more effectively. When configured to **On** or **Optimized** for computed entities, if your business logic allows for it, Power BI uses SQL speed up the performance. Having the engine **On** also provides for DirectQuery connectivity. As the analogy suggests – certain meals might not need an oven, nor take advantage of the oven. The enhanced compute engine can be thought of in a similar manner – make sure your dataflow usage is leveraging the enhanced compute engine properly. Users can configure the enhanced compute engine to be on, optimized, or off on a per-dataflow basis.
 
 > [!NOTE]
 > The enhanced compute engine is not yet available in all regions.
@@ -142,7 +142,7 @@ Take the following steps when investigating scenarios where the Compute engine i
 
 1. Limit computed and linked entities that exist across workspace.
 
-2. If your initial refresh is with the compute engine turned on, then data gets written in the lake and in the cache. This double write means these refreshes will be slower.
+2. When you perform your initial refresh with the compute engine turned on, then data gets written in the lake and in the cache. This double write means these refreshes will be slower.
 
 3. If you have a dataflow linking to multiple dataflows, make sure you schedule refreshes of the source dataflows so that they do not all refresh at the same time.
 

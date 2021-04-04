@@ -61,7 +61,7 @@ The design surface size might be different from the page size print area you spe
 ## 3 Parameters pane  
  With report parameters, you can control report data, connect related reports together, and vary report presentation. The  Parameters pane provides a flexible layout for the report parameters.  
   
- Read more about Report Parameters   
+[Read more about Report Parameters](paginated-reports-parameters.md)   
   
 ## 4 Properties pane
  Every item in a report, including data regions, images, text boxes, and the report body itself, has properties associated with it. For example, the BorderColor property for a text box shows the color value of the text box's border, and the PageSize property for the report shows the page size of the report.  
@@ -97,7 +97,7 @@ The design surface size might be different from the page size print area you spe
   
  The Grouping pane is displayed by default but you can close it by clearing the Grouping pane check box on the View tab. The Grouping pane is not available for the Chart or Gauge data regions.  
   
- For more information, see Grouping Pane and Understanding Groups.  
+ For more information, see [Grouping Pane and Understanding Groups](../create-reports/desktop-grouping-visuals.md).  
   
 ## 6 Current report status bar
 

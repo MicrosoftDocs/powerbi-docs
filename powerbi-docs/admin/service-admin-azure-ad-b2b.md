@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 07/02/2020
+ms.date: 04/02/2021
 LocalizationGroup: Administration
 ---
 
@@ -81,9 +81,9 @@ The guest user must sign in with their organization email address. They'll recei
 
 ## Licensing
 
-The guest user must have the proper licensing in place to view the content that you shared. There are three ways to make sure the user has a proper license: use Power BI Premium, assign a Power BI Pro license, or use the guest's Power BI Pro license.
+The guest user must have the proper licensing in place to view the content that you shared. There are a few ways to make sure the user has a proper license: use Power BI Premium, assign a Power BI Pro license, get a Premium Per User (PPU) license, or use the guest's Power BI Pro license.
 
-[Guest users who can edit and manage content in the organization](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) need a Power BI Pro license to contribute content to workspaces or share content with others.
+[Guest users who can edit and manage content in the organization](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) need a Power BI Pro or Premium Per User (PPU) license to contribute content to workspaces or share content with others.
 
 ### Use Power BI Premium
 
@@ -99,7 +99,7 @@ Assigning a Power BI Pro license from your organization to a guest user lets tha
 
 ### Guest user brings their own Power BI Pro license
 
-The guest user may already have a Power BI Pro license that was assigned to them through their own organization.
+The guest user may already have a Power BI Pro or Premium Per User (PPU) license that was assigned to them through their own organization.
 
 ![Diagram of the guest user experience when they bring their own license.](media/service-admin-azure-ad-b2b/license-approach-3.png)
 
@@ -117,9 +117,9 @@ To help allowed guests sign in to Power BI, provide them with the Tenant URL. To
 
 ## Considerations and Limitations
 
-* By default, external Azure AD B2B limits guests to consumption of content only. External Azure AD B2B guests can view apps, dashboards, reports, export data and create email subscriptions for dashboards and reports. They can't access workspaces or publish their own content. To remove these restrictions, you can use the [Allow external guest users to edit and manage content in the organization](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) feature.
+* By default, external Azure AD B2B limits guests to consumption of content only. External Azure AD B2B guests can view apps, dashboards, reports, and export data. They can't access workspaces or publish their own content. To remove these restrictions, you can use the [Allow external guest users to edit and manage content in the organization](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) feature.
 
-* To invite guest users, a Power BI Pro license is needed. Pro Trial users can't invite guest users in Power BI.
+* To invite guest users, a Power BI Pro or Premium Per User (PPU) license is needed. Pro Trial users can't invite guest users in Power BI.
 
 * Some experiences are not available to [guest users who can edit and manage content in the organization](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization). To update or publish reports, guest users need to use the Power BI service, including Get Data to upload Power BI Desktop files.  The following experiences aren't supported:
   * Direct publishing from Power BI desktop to the Power BI service

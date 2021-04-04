@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/14/2019
+ms.date: 04/02/2021
 LocalizationGroup: Visualizations
 ---
 # Create and use R visuals in Power BI
@@ -63,7 +63,7 @@ As another example, the following image shows the error message that appears whe
 ![Screenshot showing a runtime error](media/service-r-visuals/r-visuals-service-5.png)
 
 ## Licensing
-R visuals require a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license to render in reports, refresh, filter, and cross-filter. For more information about Power BI Pro licenses, and how they differ from free licenses, see [Power BI Pro content - what is it?](../admin/service-admin-purchasing-power-bi-pro.md)
+R visuals require a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) or Premium Per User (PPU) license to render in reports, refresh, filter, and cross-filter. For more information about Power BI Pro licenses, and how they differ from free licenses, see [Power BI Pro content - what is it?](../admin/service-admin-purchasing-power-bi-pro.md)
 
 Free users of Power BI can only consume tiles shared with them in Premium workspaces. See [purchasing Power BI Pro](../admin/service-admin-purchasing-power-bi-pro.md) for more information.
 
@@ -75,7 +75,7 @@ The following table describes R visuals capabilities based on licensing.
 |**Guest** (Power BI embedded)     |  Supported|  Not supported      | Supported in Premium/Azure capacity only  | Supported in Premium/Azure capacity only |
 |**Unmanaged tenant** (domain not verified) | Supported | Not supported |  Not supported |Supported (B2B scenario) |
 |**Managed tenant** with free license    |  Supported       |  Not supported       |    Supported in Premium capacity only    | Supported |
-**Managed tenant** with Pro license     |   Supported      | Supported      | Supported    |Supported|
+**Managed tenant** with Pro or PPU license     |   Supported      | Supported      | Supported    |Supported|
 
 
 

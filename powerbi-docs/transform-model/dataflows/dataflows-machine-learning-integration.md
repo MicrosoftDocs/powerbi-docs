@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 03/11/2021
+ms.date: 04/02/2021
 LocalizationGroup: Data from files
 ---
 # AI with dataflows
@@ -26,7 +26,7 @@ The services that are supported today are [Sentiment Analysis](/azure/cognitive-
 
 ### **Enabling AI features**
 
-Cognitive services are supported for Premium capacity nodes EM2, A2, or P1 and above. A separate AI workload on the capacity is used to run cognitive services. During public preview (prior to June 2019), this workload was disabled by default. Before using cognitive services in Power BI, the AI workload needs to be enabled in the capacity settings of the admin portal. You can turn on the AI workload in the workloads section, and define the maximum amount of memory you would like this workload to consume. The recommended memory limit is 20%. Exceeding this limit causes the query to slow down.
+Cognitive services are supported for Premium capacity nodes EM2, A2, or P1 and above. Cognitive services are also available with a Premium Per User (PPU) license. A separate AI workload on the capacity is used to run cognitive services. Before using cognitive services in Power BI, the AI workload needs to be enabled in the capacity settings of the admin portal. You can turn on the AI workload in the workloads section, and define the maximum amount of memory you would like this workload to consume. The recommended memory limit is 20%. Exceeding this limit causes the query to slow down.
 
 ![Cognitive services in Power BI](media/service-cognitive-services/cognitive-services-01.png)
 
@@ -90,7 +90,7 @@ The **Tag Images** function returns tags based on more than 2,000 recognizable o
 
 After uploading an image or specifying an image URL, Computer Vision algorithms output tags based on the objects, living beings, and actions identified in the image. Tagging is not limited to the main subject, such as a person in the foreground, but also includes the setting (indoor or outdoor), furniture, tools, plants, animals, accessories, gadgets, and so on.
 
-This function requires an image URL or abase-64 column as input. At this time, image tagging supports English, Spanish, Japanese, Portuguese, and Simplified Chinese. For more information, see [Supported languages](/rest/api/cognitiveservices/computervision/tagimage/tagimage#uri-parameters).
+This function requires an image URL or abase-64 column as input. At this time, image tagging supports English, Spanish, Japanese, Portuguese, and Simplified Chinese. For more information, see [Supported languages](/java/api/com.microsoft.azure.cognitiveservices.vision.computervision.computervision.tagimage#azure-java-stable).
 
 ## Automated Machine Learning in Power BI
 
