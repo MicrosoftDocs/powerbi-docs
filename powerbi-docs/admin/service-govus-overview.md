@@ -129,7 +129,7 @@ We include the quarter for estimated availability if release is planned for an e
 |[Large models](service-premium-large-models.md) | ![available](../media/yes.png) |![available](../media/yes.png)| Not planned |
 |[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[Bring Your Own Storage (Azure Data Lake Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
-|Tenant metadata scanning<sup>4</sup>|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
+|Tenant metadata scanning flow<sup>4</sup>|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 
 <sup>1</sup> Although B2B Collaboration is available for GCC, the external user must be issued a license in that environment. Commercial cloud licenses aren't valid in GCC. For more information about known limitations with B2B Collaboration for US government, [Compare Azure Government and global Azure](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2).
 
@@ -137,11 +137,7 @@ We include the quarter for estimated availability if release is planned for an e
 
 <sup>3</sup> The Power BI experience in Teams for GCC is limited, works only for classic workspaces, and doesn't include the enhanced functionality described in [Embed Power BI Content in Microsoft Teams](../collaborate-share/service-embed-report-microsoft-teams.md).
 
-<sup>4</sup> The Power BI REST APIs for the tenant metadata scanning flow are not supported in government clouds. They are:
-* [workspaceinfo_getmodifiedworkspaces](/rest/api/power-bi/admin/workspaceinfo_getmodifiedworkspaces)
-* [workspaceinfo_getscanresult](/rest/api/power-bi/admin/workspaceinfo_getscanresult)
-* [workspaceinfo_getscanstatus](/rest/api/power-bi/admin/workspaceinfo_getscanstatus)
-* [workspaceinfo_postworkspaceinfo](/rest/api/power-bi/admin/workspaceinfo_postworkspaceinfo)
+<sup>4</sup> The tenant metadata scanning flow is comprised of the following Power BI REST APIs: [getmodifiedworkspaces](/rest/api/power-bi/admin/workspaceinfo_getmodifiedworkspaces), [getscanresult](/rest/api/power-bi/admin/workspaceinfo_getscanresult), [getscanstatus](/rest/api/power-bi/admin/workspaceinfo_getscanstatus), and [postworkspaceinfo](/rest/api/power-bi/admin/workspaceinfo_postworkspaceinfo). These APIs are not supported in sovereign clouds.
 
 ## Next steps
 
