@@ -137,7 +137,7 @@ We include the quarter for estimated availability if release is planned for an e
 
 <sup>3</sup> The Power BI experience in Teams for GCC is limited, works only for classic workspaces, and doesn't include the enhanced functionality described in [Embed Power BI Content in Microsoft Teams](../collaborate-share/service-embed-report-microsoft-teams.md).
 
-<sup>4</sup> Tennant metadata scanning flow APIs are not supported in government clouds. They are: https://docs.microsoft.com/en-us/rest/api/power-bi/admin/workspaceinfo_getmodifiedworkspaces
+<sup>4</sup> Tenant metadata scanning flow APIs are not supported in government clouds. They are: https://docs.microsoft.com/en-us/rest/api/power-bi/admin/workspaceinfo_getmodifiedworkspaces
 https://docs.microsoft.com/en-us/rest/api/power-bi/admin/workspaceinfo_getscanresult
 https://docs.microsoft.com/en-us/rest/api/power-bi/admin/workspaceinfo_getscanstatus
 https://docs.microsoft.com/en-us/rest/api/power-bi/admin/workspaceinfo_postworkspaceinfo
