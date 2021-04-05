@@ -37,7 +37,7 @@ You should do several things *after* you upgrade. It's best to plan them *before
 
 Any workspace admin can upgrade the workspace. For classic workspaces, to be a workspace admin you must be an Owner of the underlying Microsoft 365 group. To upgrade a workspace, follow these steps.
 
-1. In the workspace content list, select **More options** (**...**) > **Edit this workspace**.
+1. In the workspace content list, select **Upgrade now** in the banner. If you don't see the banner, select **More options** (**...**) > **Edit this workspace**.
 
     ![Edit this workspace](media/service-upgrade-workspaces/power-bi-content-list-edit-workspace.png)
 
