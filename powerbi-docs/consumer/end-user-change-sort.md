@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 03/31/2021
 #customer intent: As a PBI business user, I want to learn how to sort my report visuals so that they look the way I like and are easier to interpret. 
 LocalizationGroup: Reports
 ---
@@ -76,11 +76,11 @@ Sometimes, you want to sort your visual using a different field (that isn't incl
 to sort by month in sequential order (and not in alphabetical order) or you might
 want to sort by entire numbers instead of by digit (example, 0, 1, 9, 20 and not 0, 1, 20, 9).  
 
-Only the person who designed the report can make these changes for you. Contact information for the *designer* can be found by selecting the report name from the header bar.
+- To learn how to sort by another field in the dataset, and you have edit permissions to the report, see [Sort by column in Power BI Desktop](../create-reports/desktop-sort-by-column.md).    
+- If you are the report designer, you can create new columns in the dataset to address sorting issues with values such as dates and numbers. Contact information for the *designer* can be found by selecting the report name from the header bar.
 
 ![Dropdown showing contact information](media/end-user-change-sort/power-bi-heading.png)
 
-If you are a *designer* and have edit permissions to the content, read [Sort by column in Power BI Desktop](../create-reports/desktop-sort-by-column.md) to learn how to update the dataset and enable this type of sorting.
 
 ## Next steps
 More about [Visualizations in Power BI reports](end-user-visualizations.md).

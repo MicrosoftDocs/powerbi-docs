@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 03/18/2021
+ms.date: 04/02/2021
 LocalizationGroup: Premium
 ---
 # Power BI Premium FAQ
@@ -34,7 +34,7 @@ Power BI Premium is a capacity-based offering that includes:
 Power BI Premium consists of capacity in the Power BI service exclusively allocated to each organization. The capacity is supported by dedicated hardware fully managed by Microsoft. Organizations can choose to apply their capacity broadly, or allocate it to assigned workspaces based on the number of users, workload needs, or other factors—and scale up or down as requirements change.
 
 **How is Power BI Pro different than Power BI Premium?**  
-Power BI Premium is a capacity-based license, while Power BI Pro is a user-based license. Power BI Pro is for those users publishing reports, sharing dashboards, collaborating with colleagues in workspaces and engaging in other related activities – such as the ability to:
+Power BI Premium is a capacity-based license, while Power BI Pro and Premium Per User (PPU) are user-based licenses. Power BI Pro is for those users publishing reports, sharing dashboards, collaborating with colleagues in workspaces and engaging in other related activities – such as the ability to:
 
 * Edit and save customized views
 * Create personal dashboards (pin to new dashboard)
@@ -43,8 +43,10 @@ Power BI Premium is a capacity-based license, while Power BI Pro is a user-based
 * Share dashboards and collaborate with Microsoft 365 Groups
 * Integrate content with Microsoft Teams
 
+A Premium Per User (PPU) license includes all the functionality of a Pro user, plus additional capabilities. 
+
 **Do I need Power BI Pro to use Power BI Premium?**  
-Yes. Power BI Pro is required to publish reports, share dashboards, collaborate with colleagues in workspaces and engage in other related activities. Power BI Pro isn't required to consume content in Premium capacity.
+Yes. Power BI Pro or Premium Per User (PPU) is required to publish reports, share dashboards, collaborate with colleagues in workspaces and engage in other related activities. Power BI Pro isn't required to consume content in Premium capacity.
 
 **Can you outline a scenario of how Power BI Pro and Power BI Premium work to cover an organization for Modern BI?**  
 The following examples outline how customers can meet their BI needs using a combination of Power BI Pro and Power BI Premium.
@@ -153,6 +155,10 @@ Today, customers don't have visibility through utilization data to the memory fo
 On the left side of the utilization report, a bar chart visual displays utilization information between workspaces for the time span of the report. The bar chart visual can be used for chargebacks, providing each workspace represents a different business unit, cost center, or other entity to which chargebacks can apply.
 
 
+## Premium Per User (PPU)
+
+For information about Premium Per User (PPU), see the [Power BI Premium Per User](service-premium-per-user-faq.md) article.
+
 ## Next steps
 
 The following articles provide more information about Power BI Premium:
@@ -160,7 +166,7 @@ The following articles provide more information about Power BI Premium:
 * [What is Power BI Premium?](service-premium-what-is.md)
 * [Using Autoscale with Power BI Premium](service-premium-auto-scale.md)
 * [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
-* [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
+* [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
 * [Extended Pro Trial activation](../fundamentals/service-self-service-signup-for-power-bi.md)
 * [Power BI Embedded FAQ](../developer/embedded/embedded-faq.md)
 

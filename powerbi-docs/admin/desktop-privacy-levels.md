@@ -29,13 +29,12 @@ With privacy level settings, you can specify an isolation level that defines the
 ## Configure privacy level settings
 The **Privacy** settings dialog for each data source is found in **File > Options and settings > Data source settings**.
 
-To configure a data source privacy level, select the data source, then select **Edit**. The **Data Source Settings** dialog appears, from which you can select the appropriate privacy level from the drop-down menu at the bottom of the dialog, as shown in the following image.
+To configure a data source privacy level, select the data source, then select **Edit Permissions**. The **Edit Permissions** dialog appears, from which you can select the appropriate privacy level from the drop-down menu at the bottom of the dialog, as shown in the following image.
 
-![Screenshot of Data Source Settings dialog.](media/desktop-privacy-levels/desktop_privacylevels2.png)
+![Screenshot of Edit Permissions dialog.](media/desktop-privacy-levels/desktop_privacylevels2.png)
 
 > [!CAUTION]
 > You should configure a data source containing highly sensitive or confidential data as **Private**.
-> 
 
 ## Configure Privacy Levels
 **Privacy Levels** is set to **Combine data according to your Privacy Level settings for each source** by default, which means that **Privacy Levels** are enforced.

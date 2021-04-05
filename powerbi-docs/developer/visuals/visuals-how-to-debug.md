@@ -86,4 +86,4 @@ You can also set the browser to break on caught exceptions. This'll stop code ex
 
 ## Next steps
 * [Troubleshoot Power BI visuals](power-bi-custom-visuals-troubleshoot.md)
-* For more information and answers to questions, visit [Frequently asked questions about Power BI visuals](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals)
+* For more information and answers to questions, visit [Frequently asked questions about Power BI visuals](power-bi-custom-visuals-faq.yml#organizational-power-bi-visuals)

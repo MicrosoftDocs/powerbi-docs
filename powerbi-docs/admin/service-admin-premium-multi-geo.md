@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 03/05/2021
+ms.date: 04/02/2021
 LocalizationGroup: Premium 
 ---
 
@@ -24,6 +24,9 @@ Multi-Geo is now also available in Power BI Embedded. Read more at [Multi-Geo su
 
 > [!NOTE]
 > Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+
+> [!NOTE]
+> Power BI Premium Per User (PPU) is not supported for Multi-Geo.
 
 ## Enable and configure
 
