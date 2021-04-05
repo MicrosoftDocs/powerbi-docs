@@ -440,8 +440,8 @@ This setting allows organizations to hide the **Share to Teams** buttons in the 
 
 Read more about [sharing Power BI content to Teams](../collaborate-share/service-share-report-teams.md).
 
-### Allow shareable links to grant access to all People in your organization
-This tenant setting is available for admins looking to disable creating shareable links to **People in your organization**. You can find this option in the Admin portal by navigating to **Tenant settings** > **Export and sharing settings** > **Allow shareable links to grant access to all People in your organization**.
+### Allow shareable links to grant access to all people in your organization
+This tenant setting is available for admins looking to disable creating shareable links to **People in your organization**. You can find this option in the Admin portal by navigating to **Tenant settings** > **Export and sharing settings** > **Allow shareable links to grant access to all people in your organization**.
 
 ![Screenshot of allow shareable links to grant access to all People in your organization setting](media/service-admin-portal/admin-allow-shareable-links.png)
 
