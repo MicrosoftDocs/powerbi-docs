@@ -151,11 +151,11 @@ Sensitivity labels can be viewed on reports and dashboards in the Power BI mobil
 ![Screen shot of sensitivity label in mobile app](media/service-security-sensitivity-label-overview/mobile-app-sensitivity-label2.png)
 
 ## Supported clouds
-Sensitivity labels are supported for tenants in the following clouds:
-* Global (public) clouds
-* [US Government clouds](service-govus-overview.md#power-bi-feature-availability)
+Sensitivity labels are supported for tenants in global (public) clouds, and the following national clouds:
+* [US Government](service-govus-overview.md#power-bi-feature-availability)
+* China
 
-Sensitivity labels are not supported in other sovereign clouds.
+Sensitivity labels are not currently supported in other national clouds.
 
 ## Licensing and requirements
 
