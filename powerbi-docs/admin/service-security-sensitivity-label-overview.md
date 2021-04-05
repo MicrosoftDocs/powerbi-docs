@@ -152,7 +152,7 @@ Sensitivity labels can be viewed on reports and dashboards in the Power BI mobil
 
 ## Supported clouds
 Sensitivity labels are supported for tenants in global (public) clouds, and the following national clouds:
-* [US Government](service-govus-overview.md#power-bi-feature-availability)
+* [US Government](service-govus-overview.md#power-bi-feature-availability): GCC, GCC High, DoD
 * China
 
 Sensitivity labels are not currently supported in other national clouds.
