@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/17/2021
+ms.date: 04/04/2021
 ---
 
 # Change log for Power BI Report Server
@@ -71,7 +71,9 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             - Updated MHTML renderer to use newer HTML DOCTYPE.
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
-   - *Version: 2.86.2841.0 (October 2020), Released: Feburary 5, 2020*
+   - *Version: 2.86.3481.0 (October 2020), Released: March 31, 2021*
+        - Bug fixes
+   - *Version: 2.86.2841.0 (October 2020), Released: Feburary 5, 2021*
         - Bug fixes
    - *Version: 2.86.1321.0 (October 2020), Released: November 18, 2020*
         - Bug fixes
