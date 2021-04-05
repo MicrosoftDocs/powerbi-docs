@@ -34,8 +34,10 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
    - *Version: 2.88.2361.0 (January 2021), Released: March 12, 2021*
+
         - Bug fixes
    - *Version: 2.88.1382.0 (January 2021), Released: January 28, 2021* (new build and new version)
+
         - Contains changes required for connection with Power BI Report Server (January 2021)        
    
 ## October 2020
