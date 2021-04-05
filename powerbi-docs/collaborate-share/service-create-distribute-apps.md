@@ -6,7 +6,9 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/02/2020
+ms.custom: content-perf-fy21q3
+ms.date: 04/02/2021
+
 LocalizationGroup: Share your work
 ---
 # Publish an app in Power BI
