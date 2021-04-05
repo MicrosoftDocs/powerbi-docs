@@ -49,13 +49,15 @@ Use a planned invite if you know which users to invite. The Azure portal or Powe
 
 Follow these steps to send an invite in the Azure portal.
 
-1. In the [Azure portal](https://portal.azure.com), select **Azure Active Directory**.
+1. In the [Azure portal](https://portal.azure.com), select Menu button then select **Azure Active Directory**.
+
+    ![Screenshot of the Azure portal with the Azure Active Directory option called out.](media/service-admin-azure-ad-b2b/azure-active-directory-option.png)
 
 1. Under **Manage**, select **Users** > **All users** > **New guest user**.
 
     ![Screenshot of the Azure portal with the New guest user option called out.](media/service-admin-azure-ad-b2b/azure-ad-portal-new-guest-user.png)
 
-1. Enter an **email address** and **personal message**.
+1. Scroll down and enter an **email address** and **personal message**.
 
     ![Screenshot of the New Guest User dialog with the email and message fields called out.](media/service-admin-azure-ad-b2b/azure-ad-portal-invite-message.png)
 
