@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 06/10/2020
+ms.date: 04/02/2021
 LocalizationGroup: Connect to data
 ---
 # Use AI Insights in Power BI Desktop
@@ -47,7 +47,7 @@ The transformations are executed on the Power BI service and do not require an A
 
 ### Enabling Text Analytics and Vision on Premium capacities
 
-Cognitive Services are supported for Premium capacity nodes EM2, A2, or P1 and above. A separate AI workload on the capacity is used to run Cognitive Services. During public preview of these features (prior to June 2019), this workload was disabled by default. Before using Cognitive Services in Power BI, the AI workload must be enabled in the **capacity settings** of the admin portal. You can turn on the **AI workload** in the **workloads** section and define the maximum amount of memory you would like this workload to consume. The recommended memory limit is 20%. Exceeding this limit causes the query to slow down.
+Cognitive Services are supported for Premium capacity nodes EM2, A2, or P1 and above. Cognitive services are also available with a Premium Per User (PPU) license. A separate AI workload on the capacity is used to run Cognitive Services. During public preview of these features (prior to June 2019), this workload was disabled by default. Before using Cognitive Services in Power BI, the AI workload must be enabled in the **capacity settings** of the admin portal. You can turn on the **AI workload** in the **workloads** section and define the maximum amount of memory you would like this workload to consume. The recommended memory limit is 20%. Exceeding this limit causes the query to slow down.
 
 ### Available functions
 

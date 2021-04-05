@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 03/11/2021
+ms.date: 04/02/2021
 LocalizationGroup: Data from files
 ---
 # Premium features of dataflows
 
-Dataflows are supported for Power BI Pro and Power BI Premium users. Some features are only available with a Power BI Premium subscription. This article describes and details the Premium-only features and their uses. 
+Dataflows are supported for Power BI Pro, Premium Per User (PPU), and Power BI Premium users. Some features are only available with a Power BI Premium subscription or Premium Per User (PPU) license. This article describes and details the Premium Per User (PPU) and Premium-only features and their uses. 
 
 The following features are available only with Power BI Premium:
 

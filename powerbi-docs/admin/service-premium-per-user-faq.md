@@ -1,5 +1,5 @@
 ---
-title: Power BI Premium Per User FAQ (preview)
+title: Power BI Premium Per User
 description: Browse a list of frequently asked questions and answers about the Power BI Premium Per User offering.
 author: davidiseminger
 ms.author: davidi
@@ -7,162 +7,103 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 3/26/2021
+ms.date: 4/02/2021
 LocalizationGroup: Premium
 ---
-# Power BI Premium Per User FAQ (preview)
+# Power BI Premium Per User
 
 Power BI **Premium Per User** allows organizations to license Premium features on a per-user basis. Premium Per User (PPU) includes all Power BI Pro license capabilities, and also adds features such as paginated reports, AI, and other capabilities that are only available to Premium subscribers. 
 
-This article provides answers to common questions about Premium Per User licensing. All information in this article is subject to change, and refinement, as Premium Per User moves through its preview period and is released for general availability (GA). 
+![Enabling premium per user](media/service-premium-per-user-faq/premium-per-user-faq-01a.png)
+
+The following sections describe using Premium Per User (PPU), administrative considerations, and what end users can expect from a Premium Per User (PPU) license.
+
+> [!NOTE]
+> This article contains all the information that was previously included in the Premium Per User FAQ article.
+
+## Using Premium Per User (PPU)
+
+Premium Per User (PPU) is a new way to license premium features on a per-user basis, and includes all Power BI Pro license capabilities, along with features like paginated reports, AI, and other capabilities that previously were only available with a Premium capacity. With a PPU license, you do not need a separate Power BI Pro license, as all Pro license capabilities are included in PPU. 
+
+You can get a trial version of Premium Per User (PPU) through Microsoft 365, as long as your organization has not restricted PPU licenses. Trials are enabled through the portal, similar to how Power BI Pro licenses are initiated.
+
+The following table describes the Premium Per User (PPU) features against a Premium capacity:
+
+
+|Column1  |Column2  |Column3  |
+|---------|---------|---------|
+|Model size limit     | 100 GB        | Up to 400 GB        |
+|Refresh rate     | 48/day        | 48/day        |
+|Paginated reports     | ✔        | ✔        |
+|AI capabilities (AutoML, Impact Analysis, Cognitive Services)     | ✔        | ✔        |
+|Advanced dataflows features, such as DirectQuery     | ✔        | ✔        |
+|Usage-based aggregate optimization     | ✔        | ✔        |
+|Deployment Pipelines     | ✔        | ✔        |
+|XMLA endpoint connectivity     | ✔        | ✔        |
+|Enhanced automatic page refresh     | ✔        | ✔        |
+|Multi-Geo support     | X        | ✔        |
+|Unlimited distribution     | X        | ✔        |
+|Power BI reports on-premises     | X        | ✔        |
+|Bring Your Own Key (BYOK)     | ✔ *       | ✔        |
+
+> [!NOTE]
+> Premium Per User (PPU) only supports BYOK when it's enabled across the entire tenant.
+
+Some organizations will choose to supplement their Premium capacity with Premium Per User (PPU) licenses. However, PPU is not required to publish content to existing Premium capacities.
+
+
+## Administration of Premium Per User (PPU)
+
+Administrators manage PPU licenses, users, and settings in the **Power BI Admin portal**. Admins can manage which per-user settings are exposed, which users are allowed to create PPU workspaces, which workspaces are marked as Premium or Premium Per User, and other settings. 
+
+Once a Premium Per User (PPU) license is provisioned in a tenant, its features are available in any workspace for which you turn them on.
 
 ![Enabling premium per user](media/service-premium-per-user-faq/premium-per-user-faq-01a.png)
 
-This article groups questions and answers into the following categories:
-* General questions 
-* Administration questions 
-* End-user Experience questions 
+Unlike Premium capacity settings, PPU licenses do not require memory management or CPU management, similar to how Pro licenses do not require such management. Tenant administrators can select feature settings for PPU licenses, but cannot disable specific workloads. 
 
-## General questions
+You can move workspaces between Premium Per User (PPU) and Premium capacities as needed. Any such move will require a full refresh of any datasets or dataflows that reside in the workspace, once you move it back to a Premium capacity. There is a limited set of APIs available to enable movement of workspaces, but they do not include actions such as turning off a workload.
 
-1.	**What is Premium Per User (PPU)?** 
 
-    Premium Per User (PPU) is a new way to license premium features on a per user basis. It includes all Power BI Pro license capabilities, along with features like paginated reports, AI, and other capabilities only available in Premium today.
+## End user experience
 
-2.	**When will it be available for purchase?**
+When a workspace is marked as a Premium Per User (PPU) workspace, it displays a diamond icon, as shown in the following image:
 
-    Premium per user will be generally available on April 2, 2021. 
+![Premium per user icon](media/service-premium-per-user-faq/premium-per-user-faq-03.png)    
 
-3.	**Do I need a Power BI Pro AND a Premium Per User license?**
+Users must have a Premium Per User (PPU) license to access content in a Premium Per User (PPU) workspace or app. This requirement includes scenarios where users are accessing the content through the XMLA endpoint, Analyze in Excel, Composite Models, and so on. You can grant access to users to the workspace who don’t have a PPU license, but they will receive a message stating they cannot access the content. They'll then be prompted to get trial license, if they are eligible. If they aren’t eligible, they must be assigned a license by their Admin to gain access to the resource.
 
-    If you purchase the standalone Premium per user license for $20, you don't need a separate Pro license as it will provide both Pro and PPU capabilities.  If you already have a Pro license, either through a standalone purchase or through Office 365 E5, there is a Premium per user add-on SKU you may purchase for $10, which just adds the Premium per user capabilities to your account.  
+The following table describes who can see which kinds of content with PPU.
 
-4.	**How do I get a trial?**
+![Chart of which users can see content based on license types](media/service-premium-per-user-faq/premium-per-user-faq-04.png)   
 
-    There is an in-product trial experience and a trial experience available through Microsoft 365. Any user, assuming their organization has not restricted PPU, can access the in-product trial experience by turning on Premium Per User for a workspace. Trial experiences through Microsoft 365 can be enabled through the portal just like Power BI Pro trials are initiated today.  
-    
-5.	**My initial trial has expired and we're still in the preview period.  How do I extend/renew my trial for Premium per user during the preview period?**
+Premium Per User (PPU) works with Power BI embedded in the same manner as a Power BI Pro license. You can embed the content, and each user will need a PPU license to view it.
 
-    For customers who are using the in-product trial, you may initiate a new trial any time after your original trial expires by clicking on your profile icon in the upper-right hand corner of the portal.  You'll see an option to opt in to the trial once again.  Doing so will initiate another 60-day trial.  This will continue to be an option throughout the preview period.  
-    
-    For customers who are using the trial offered through Microsoft 365, your tenant administrator may extend your original 30-day trial for another 30 days. This is the maximum length of time that trial can be extended.
+### Email subscriptions and PPU
 
-6.	**What features are available in Premium per user?**
+ Anyone with a Premium Per User (PPU) license or a Pro license can receive the subscription and any attachment it includes, provided the attachment is the same for all users. Pro users will not be able to view the content in the product portal. 
 
-    The feature comparison grid is as follows:    
+If additional subscription capabilities are introduced that allow for different data views for different recipients, a PPU license (or Premium capacity) will be required to use those capabilities. A PPU license does not allow for e-mail subscriptions to external users. The content must be hosted in a Premium capacity to subscribe external users.  
 
-    ![Premium per user feature comparison](media/service-premium-per-user-faq/premium-per-user-faq-02.png)
+Any datasets that reside in a Premium Per User (PPU) workspace are not viewable by users without a license, including reports create using that dataset. For example, you cannot host a Power BI dataset in a PPU workspace, build a report against it, publish it in a non-PPU workspace, then allow users without a PPU license to access the report. Similarly, content in a PPU workspace shared using **Publish to Web** behaves the same way it does with content hosted in a Premium capacity.
 
+Power BI mobile works with any content published to a Premium Per User (PPU) app or workspace.
 
-7.	**My organization already has Power BI Premium. Do I now need a Premium Per User license to publish content to my capacity?**
-    
-    Your organization may choose to supplement their Premium capacity with Premium Per User licenses, but Premium Per User is not required to publish content to existing capacities.  
+## Considerations and limitations
 
-## Administrative questions
+The following considerations should be kept in mind when working with Premium Per User licenses.
 
-1.	**How do I enable Premium Per User (PPU) for my tenant?**
-    
-    Once a license is provisioned for PPU for the tenant, PPU features are available in any workspace for which you turn them on. For the preview, simply enable the Premium Per User features in the capacity dropdown by selecting the Premium per user item, as shown in the following image.
+* Service principals are not currently supported in PPU
+* If your PPU trial expires, you and your users will still have access to the workspace, but content that requires the license will be unavailable. You must then either move the workspace to a Premium capacity, or turn the requirement off
+* Your entire PPU tenant has the same 100 TB storage limit that is applied to a Premium capacity
+* The export API for PPU is available for paginated reports, with a limit of one call every 5 minutes, per user. Power BI reports are not supported.
+* The number of refreshes are not currently restricted
+* The Power BI Premium metrics app is not supported for PPU
+* You cannot have a dataflow run in a PPU workspace, be imported into a Power BI dataset in another workspace, and then allow users without a PPU license to consume the content
 
-    ![Enabling premium per user](media/service-premium-per-user-faq/premium-per-user-faq-01a.png)
 
-2.	**Does this work like a Premium capacity? Can you turn features on/off?**
 
-    No, there is no management of memory or CPU for PPU; it works like Power BI Pro does today in that respect. Your tenant admin can manage select feature settings, but they can’t disable workloads like paginated reports, just like you can’t turn off dashboards today. 
-
-3.	**Where do I manage the Premium per user settings that are exposed?**
-
-    A new menu option in the tenant settings for Premium Per User enables admins to manage those settings.
-
-4.	**Can I limit which users can create PPU workspaces?**
-
-    Yes, in the same way you can currently limit which users can create workspaces.
-
-5.	**Can tenant admins see which workspaces are marked as Premium Per User?**
-
-    Yes, these are called out in the workspaces menu item in the tenant admin screen, where it shows you which workspaces are marked as Premium.
-
-6.	**Can I move workspaces between Premium Per User and Premium capacities?**
-
-    Yes. For General Availability (GA), you will be required to perform a full refresh of any datasets or dataflows that live in the workspace once you move it back to Premium capacity. This requirement prevents abuse by companies looking to work around the CPU charging mechanism of Premium Gen2.
-
-7.	**Are the capacity APIs available for Premium Per User?**
-
-    A limited set of the APIs is available to allow movement of workspaces, but you cannot do things like turn off workloads, and other such activities.  
-    
-7.	**Are service principals supported with Premium Per User workspaces?**
-
-    No, we don't currently support service principals in Premium Per User workspaces.  
-
-
-## End user experience questions
-
-1.	**If I’ve marked a workspace as Premium Per User, how will other users know?**
-    
-    A new icon has been introduced to show which workspaces are Premium Per User, as shown in the following image:
-
-    ![Premium per user icon](media/service-premium-per-user-faq/premium-per-user-faq-03.png)    
-
-2.	**Who can access content in a Premium Per User workspace/app?**
-
-    Any user must have a Premium Per User license to view content in a Premium Per User workspace. This includes scenarios where users are accessing the content through the XMLA endpoint, Analyze in Excel, Composite Models, and so on. You may grant access to users to the workspace who don’t have a PPU license yet, but they will receive a message saying they can’t access the content. They will be prompted for trial license if they are eligible. If they aren’t eligible, they need to be assigned a license by their tenant admin.
-
-3.	**What content can people with which license type see when it is shared with them?**
-
-    The following chart describes who can see which kinds of content with PPU:
-
-    ![Chart of which users can see content based on license types](media/service-premium-per-user-faq/premium-per-user-faq-04.png)   
-
-4.	**Can I use Premium Per User for embedded use cases?**
-
-    Premium Per User will work in the same way embedded use cases work when you use a Pro license. You can embed the content and each user will need a PPU license to view it.
-
-5.	**What happens to my PPU workspace at the end of the preview period if I choose not to purchase Premium per user licenses?**
-
-    You and your users will still have access to the workspace, however, content that requires that license type will be unavailable. You either need to move the workspace to a Premium capacity, or simply the turn the requirement off. 
-
-6.	**How much total storage do I get with Premium Per User?**
-
-    The entire tenant will have the same 100 TB limit that a Premium capacity has, in terms of storage.
-
-7.	**Will the export API be available for Premium Per User?**
-
-    This is currently available for paginated reports, and is restricted to a single call once every 5 minutes on a per user basis.  Power BI reports are not supported at this time.  
-
-8.	**How will e-mail subscriptions work in PPU?**
-
-    Anyone with a PPU license or a Pro license can receive the subscription and any attachment it includes, provided the attachment is the same for all users. Pro users will not be able to view the content in the product portal. If additional subscription capabilities are introduced that allow for different data views for different recipients, a PPU license (or Premium capacity) will be required to use those capabilities. A PPU license does not allow for e-mail subscriptions to external users. The content must be hosted in a Premium capacity to subscribe external users.  
-
-9.	**Can I exceed the 48 refreshes through the portal through the refresh API?**
-
-    Refreshes are not restricted this at this time.  
-
-10.	**Can I use the Power BI Premium Capacity metrics app to monitor Premium Per User usage?**
-
-    The Power BI Premium Capacity Metrics App doesn’t work with Premium Gen2, and therefore wouldn’t allow you to view any PPU items.  
-
-11.	**Can I host a Power BI dataset to a PPU workspace, build a report against it, publish in a non-PPU workspace, and allow users to access this report without needing a PPU license?**
-
-    No. Since the dataset resides in a Premium Per User workspace, it will not be viewable for users without a license, even though they can access the report in the non-PPU workspace.
-
-12.	**Can I refresh multiple 100 GB data models at the same time?**
-
-    You are subject to the same limitations that are imposed for parallel refreshes in Premium Gen2.
-
-13.	**Can I share content hosted in Premium Per User via Publish to Web?**
-
-    Publish to Web behaves in the same way it does with content hosted in Premium capacity today.
-
-14.	**Can I have a dataflow run in a Premium per user workspace, be imported into a Power BI dataset in another workspace, and users who consume that content not need a Premium per user license?**
-
-    No, this action is not supported.
-
-15. **Can I use the Power BI mobile apps with Premium per user?**
-
-    Yes, the Power BI mobile apps have been updated to work with any content published to a Premium per user app or workspace.
-
-
-**Next steps**
+## Next steps
 
 * [What is Power BI Premium?](service-premium-what-is.md)
 * [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
