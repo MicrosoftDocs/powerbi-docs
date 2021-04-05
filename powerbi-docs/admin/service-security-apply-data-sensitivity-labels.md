@@ -35,6 +35,10 @@ When data protection is enabled on your tenant, sensitivity labels appear in the
 1. In the settings side pane choose the appropriate sensitivity label.
 1. Save the settings.
 
+>[!NOTE]
+>If the label is greyed out, you may not have the correct usage rights to change the label. If you need to change a sensitivity label and can’t, either ask the person who applied the label in the first place to modify it, or contact the Microsoft 365/Office security administrator and request **[Full control and/or Export usage rights](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide
+)** for the relevant label.
+
 The following image illustrates these steps on a report
 
 ![Set sensitivity labels](media/service-security-apply-data-sensitivity-labels/apply-data-sensitivity-labels-02.png)
@@ -46,6 +50,10 @@ The following image illustrates these steps on a report
 1. Select the datasets or dataflows tab, whichever is relevant.
 1. Expand the sensitivity labels section and choose the appropriate sensitivity label.
 1. Apply the settings.
+
+>[!NOTE]
+>If the label is greyed out, you may not have the correct usage rights to change the label. If you need to change a sensitivity label and can’t, either ask the person who applied the label in the first place to modify it, or contact the Microsoft 365/Office security administrator and request **[Full control and/or Export usage rights](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide
+)** for the relevant label.
 
 The following two images illustrate these steps on a dataset.
 
