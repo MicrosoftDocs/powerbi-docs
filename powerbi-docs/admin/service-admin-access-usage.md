@@ -44,11 +44,11 @@ You can [download a sign-in report](/azure/active-directory/reports-monitoring/q
 
 1. From the command bar for the **Sign-ins** report, select **Download** and then select one of the following options:
 
-   * **CSV** to download a CSV file for the currently filtered data.
+   * **Download JSON** to download a JSON file for the currently filtered data.
 
-   * **JSON** to download a JSON file for the currently filtered data.
+   * **Download CSV** to download a CSV file for the currently filtered data.
 
-2. Type a file name, then select **Download**.
+2. Decide what type of sign-ins you want to export, then select **Download**.
 
 ![Screenshot of the data export with the Download option highlighted.](media/service-admin-access-usage/download-sign-in-data-csv.png)
 
