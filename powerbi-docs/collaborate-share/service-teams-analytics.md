@@ -47,6 +47,8 @@ The **My activity** page shows a summary of your recent activity in Teams. The d
 
 :::image type="content" source="media/service-teams-analytics/teams-analytics-my-activity.png" alt-text="Screenshot of Teams My activity page.":::
 
+To see definitions of the fields in the user activity report, see the [Microsoft Teams user activity report](/microsoftteams/teams-analytics-and-reports/user-activity-report) article.
+
 ### Team activity page
 
 The **Team activity** page lists all the Teams teams you're a member of, and lists activity in each one, for example, posts and replies, active users, and guests. 
@@ -63,7 +65,13 @@ After you've created your Teams activity analytics report the first time, you ca
 
 :::image type="content" source="media/service-teams-analytics/teams-analytics-view-report.png" alt-text="Screenshot of viewing the report in the Recents section.":::
 
-## Refresh your report
+## Refresh your data
+
+Select the **Refresh** icon in Power BI in Teams to refresh the data.
+
+:::image type="content" source="media/service-teams-analytics/teams-analytics-refresh.png" alt-text="Screenshot of the Refresh icon.":::
+
+You'll see the most currently available data in Teams. It's not a real-time feed. You see a snapshot of the data, which is typically one to two days old.
 
 ## Next steps
 
