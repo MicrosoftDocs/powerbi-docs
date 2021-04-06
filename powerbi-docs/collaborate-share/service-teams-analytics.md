@@ -9,14 +9,16 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 04/05/2021
+ms.date: 04/06/2021
 ---
 
 # Analyze your Teams usage in the Power BI app for Teams
 
-This article describes how you automatically generate a Power BI report to view your Microsoft Teams activity analytics, in Teams. 
+This article describes how you automatically generate a Power BI report to analyze your Microsoft Teams activity, in Teams.
 
-:::image type="content" source="media/service-teams-analytics/teams-analytics-my-activity.png" alt-text="Screenshot of Teams My activity page.":::
+:::image type="content" source="media/service-teams-analytics/teams-analytics-activity-report.png" alt-text="Screenshot of Teams My activity page.":::
+
+Only you can see this report about your Teams activity, unless you choose to share it. Microsoft Teams also offers a [summary report for Teams admins](/microsoftteams/teams-analytics-and-reports/teams-usage-report). It gives admins an overview of the usage activity in Teams, including the number of active users and channels, guests, and messages in each team.
 
 ## Requirements
 
@@ -33,11 +35,11 @@ Select **Analyze your Teams data**.
 
 :::image type="content" source="media/service-teams-analytics/teams-analytics-create.png" alt-text=" Create a Power BI report to Analyze your Teams activity.":::
 
-Power BI automatically creates your report and saves it to your **My workspace**. The report is yours. As with any of your reports, you can edit it, save a copy of it, or download the .pbix file to edit it in Power BI Desktop.
+Power BI automatically creates your report, displays it in your Power BI Teams app, and saves it to your **My workspace**. The report is yours. As with any of your reports, you can view it in Teams or in the Power BI service. You can edit it, save a copy of it, or download the .pbix file to edit it in Power BI Desktop.
 
 ## Pages in the Teams activity analytics report
 
-The Teams activity analytics report has three pages.
+The Teams activity analytics report comprises three pages showing different aspects of your activity in Teams.
 
 ### My activity page
 
