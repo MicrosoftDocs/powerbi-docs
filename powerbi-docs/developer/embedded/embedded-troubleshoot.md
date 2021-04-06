@@ -127,9 +127,7 @@ HTTP/1.1 403 Forbidden
 
 ### How do I send an API request to a specific cluster to avoid timeouts?
 
-When you're sending a [Power BI REST API](/rest/api/power-bi/) request, it might get resolved in a different cluster that doesn't contain your tenant's data. This usually happens when your tenant belongs to a remote cluster, with a different domain name system (DNS) resolution.
-
-In such cases, the request needs to be forwarded to the cluster that contains your tenant's data. The default behavior is for the Power BI service to redirect your request, a process that has a four minute timeout. To avoid the timeout, you can choose to manually redirect the request using APIs. To manually redirect the request, you need to set the `preferClientRouting` URL parameter to `true`.
+When you're sending a [Power BI REST API](/rest/api/power-bi/) request, you may experience latency issues due to a multitude of reasons. It's likely that the cause of the latency is the time it takes your request to access the right cluster. In such cases, you may be able to reduce the timeout and improve performance by setting `preferClientRouting` to `true`.
 
 When `preferClientRouting` is set to `true`, the Power BI service returns a *307 Temporary Redirect* HTTP response. The HTTP response location header will be set to the tenant the request was originated from, and will resemble this URL: `<request tenant>/imports?displayName=<display name>`.  
 
