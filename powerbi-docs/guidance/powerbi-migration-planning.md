@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
-ms.date: 08/20/2020
+ms.date: 04/02/2021
 ---
 
 # Plan deployment to migrate to Power BI
@@ -76,7 +76,7 @@ There are several key decisions to be made related to allowing consumers to crea
 
 Additional capabilities are available when a workspace is stored on a [Premium capacity](../admin/service-premium-what-is.md). Here are several reasons why workspaces on Premium capacity can be advantageous:
 
-- Content can be accessed by consumers who don't have a Power BI Pro license.
+- Content can be accessed by consumers who don't have a Power BI Pro or Premium Per User (PPU) license.
 - Support for large datasets.
 - Support for more frequent data refreshes.
 - Support for using the full feature set of dataflows.

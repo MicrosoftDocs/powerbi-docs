@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/14/2021 
+ms.date: 04/02/2021 
 ---
 
 # Frequently asked questions about Power BI Embedded
@@ -49,7 +49,7 @@ There may be some cases where an ISV (typically large), in addition to app embed
 
 ### How many embed tokens can I create?
 
-Embed tokens with PRO license are intended for development testing, so a Power BI master account or [service principal](embed-service-principal.md) can only generate a limited number of tokens. [Purchase a capacity](#technical) for embedding in a production environment. There's no limit to how many embed tokens you can generate when you purchase a capacity. Go to [Available Features](/rest/api/power-bi/availablefeatures) to check the usage value that indicates the current embedded usage in percentage.
+Embed tokens with Pro or Premium Per User (PPU) license are intended for development testing, so a Power BI master account or [service principal](embed-service-principal.md) can only generate a limited number of tokens. [Purchase a capacity](#technical) for embedding in a production environment. There's no limit to how many embed tokens you can generate when you purchase a capacity. Go to [Available Features](/rest/api/power-bi/availablefeatures) to check the usage value that indicates the current embedded usage in percentage.
 
 ## Technical
 
@@ -137,7 +137,7 @@ Available regions (16 - same regions as Power BI)
 
 ### What is Power BI Embedded's authentication model?
 
-Power BI Embedded continues to use Azure AD for master user (a designated Power BI Pro licensed user) authentication, or with [service principal](embed-service-principal.md) for authenticating the application inside Power BI.  
+Power BI Embedded continues to use Azure AD for master user (a designated Power BI Pro or Premium Per User (PPU) licensed user) authentication, or with [service principal](embed-service-principal.md) for authenticating the application inside Power BI.  
 
  An ISV can implement their own authentication and authorization for their applications.
 
@@ -240,13 +240,13 @@ Customers may change their usage on an hourly basis. There's no monthly or annua
 
 Power BI Embedded bills on a predictable hourly rate based on the type of node(s) deployed. You are billed as long as your resource is active, even if there's no usage. You need to pause your resource to stop billing.
 
-### Who needs a Power BI Pro license for Power BI Embedded and why?
+### Who needs a Power BI Pro or Premium Per User (PPU) license for Power BI Embedded and why?
 
-You need a Power BI Pro license or [service principal](embed-service-principal.md) to use REST APIs. To add reports to a Power BI workspace, an analyst needs either a Power BI Pro license or service principal. To manage  Power BI tenant and capacity, an admin is required have a Power BI Pro license.
+You need a Power BI Pro or Premium Per User (PPU) license or [service principal](embed-service-principal.md) to use REST APIs. To add reports to a Power BI workspace, an analyst needs either a Power BI Pro or Premium Per User (PPU) license or service principal. To manage  Power BI tenant and capacity, an admin is required have a Power BI Pro or Premium Per User (PPU) license.
 
-Because Power BI Embedded allows Power BI portal use for managing and validating embedded content, the Power BI Pro license is required to authenticate the app inside PowerBI.com to get access to the reports in the right repositories.
+Because Power BI Embedded allows Power BI portal use for managing and validating embedded content, the Power BI Pro or Premium Per User (PPU) license is required to authenticate the app inside PowerBI.com to get access to the reports in the right repositories.
 
-However, for [creating/editing embedded reports](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Create-Report-in-Embed-View) inside your application, the end user does not need a Pro license as the user isn't required to be a Power BI user at all.
+However, for [creating/editing embedded reports](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Create-Report-in-Embed-View) inside your application, the end user does not need a Pro or Premium Per User (PPU) license as the user isn't required to be a Power BI user at all.
 
 ### Can I get started for free?
 

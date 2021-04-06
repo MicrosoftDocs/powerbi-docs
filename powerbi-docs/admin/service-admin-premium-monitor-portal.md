@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/11/2020
+ms.date: 04/02/2021
 LocalizationGroup: Premium 
 ---
 
@@ -24,6 +24,10 @@ If you need more comprehensive metrics, use the [Power BI Premium Capacity Metri
 
 > [!NOTE]
 > Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+
+> [!NOTE]
+> The Admin portal cannot be used to monitor Premium Per User (PPU) activities or capacity.
+
 
 ## System Metrics
 

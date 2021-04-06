@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/30/2019
+ms.date: 03/26/2021
 LocalizationGroup: Create reports
 ---
 # Design Power BI reports for accessibility
@@ -103,6 +103,9 @@ Alt text should include information about the insight that you'd like the report
 ![Use descriptive alt text](media/desktop-accessibility/accessibility-creating-reports-06.png)
 
 Keep in mind that calling out an insight or specific data points may not be the best thing to put in static alt text, because data in Power BI is dynamic. If you'd like to use dynamic alt text, see the next section that describes conditional formatting for alt text.
+
+> [!NOTE]
+> When you export a report to PowerPoint, PowerPoint adds alt text for each item on the page. If you don't specify alt text for each item, the default alt text in PowerPoint is "No alt text provided."
 
 ### Conditional formatting for alt text
 
