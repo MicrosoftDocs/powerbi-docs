@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 03/11/2021
+ms.date: 04/02/2021
 LocalizationGroup: Data from files
 ---
 # Premium features of dataflows
 
-Dataflows are supported for Power BI Pro and Power BI Premium users. Some features are only available with a Power BI Premium subscription. This article describes and details the Premium-only features and their uses. 
+Dataflows are supported for Power BI Pro, Premium Per User (PPU), and Power BI Premium users. Some features are only available with a Power BI Premium subscription or Premium Per User (PPU) license. This article describes and details the Premium Per User (PPU) and Premium-only features and their uses. 
 
 The following features are available only with Power BI Premium:
 
@@ -31,11 +31,14 @@ The enhanced compute engine in Power BI enables Power BI Premium subscribers to 
 * Drastically reduces the refresh time required for long-running ETL steps over computed entities, such as performing *joins*, *distinct*, *filters,* and *group by*
 * Performs DirectQuery queries over entities
 
+> [!NOTE]
+> The validation and refresh processes inform dataflows of the model schema. To set the schema of the tables yourself, use the PowerQuery Editor and set data types. 
+
 By default, the enhanced compute engine is **On**. If the enhanced compute engine is not on, enabling the enhanced compute engine is described in the next section, along with answers to common questions.
 
 ### Using the enhanced compute engine
 
-The enhanced compute engine is enabled from the **Capacity Settings** page in the Power BI service, in the **dataflows** section. By default, the enhanced compute engine is **Off**. To enable the enhanced compute engine, switch the toggle to **On** as shown in the following image, and save your settings. 
+The enhanced compute engine is enabled from the **Capacity Settings** page in the Power BI service, in the **dataflows** section. By default, the enhanced compute engine is **On**. If it is set to **Off**, enable the enhanced compute engine by switching the toggle to **On** as shown in the following image, and save your settings. 
 
 ![Turn on the enhanced compute engine](media/dataflows-premium-features/compute-engine-settings.png)
 
