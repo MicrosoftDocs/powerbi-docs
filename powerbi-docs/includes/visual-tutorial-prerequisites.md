@@ -5,13 +5,13 @@ services: powerbi
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: include
-ms.date: 12/30/2020
+ms.date: 04/02/2021
 ms.custom: include file
 ---
 
 Before you start developing your Power BI visual, verify that you have everything listed in this section.
 
-* You need a **Power BI Pro** account. If you don't have one, [sign up for a free trial](https://powerbi.microsoft.com/pricing/).
+* You need a **Power BI Pro** or **Premium Per User (PPU)** account. If you don't have one, [sign up for a free trial](https://powerbi.microsoft.com/pricing/).
 
 * [Visual Studio Code (VS Code)](https://www.visualstudio.com/). VS Code is an ideal Integrated Development Environment (IDE) for developing JavaScript and TypeScript applications.
 

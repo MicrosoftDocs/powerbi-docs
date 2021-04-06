@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 03/29/2021
+ms.date: 04/02/2021
 LocalizationGroup: Dashboards
 ---
 
@@ -25,7 +25,7 @@ If you create reports in modern workspaces, you have access to improved usage me
 
 ## Prerequisites
 
-- You need a Power BI Pro license to run and access the usage metrics data. However, the usage metrics feature captures usage information from all users, regardless of the license they're assigned.
+- You need a Power BI Pro or Premium Per User (PPU) license to run and access the usage metrics data. However, the usage metrics feature captures usage information from all users, regardless of the license they're assigned.
 - To access improved usage metrics for a report, the report must reside in a modern workspace and you must have edit access to that report.
 - Your Power BI admin must have enabled usage metrics for content creators. Your Power BI admin may have also enabled collecting per-user data in usage metrics. Read about how to [enable these options in the admin portal](../admin/service-admin-portal.md#control-usage-metrics).
 

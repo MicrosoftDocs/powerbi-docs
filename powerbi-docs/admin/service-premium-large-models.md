@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 01/21/2021
+ms.date: 04/02/2021
 ms.custom: references_regions
 LocalizationGroup: Premium
 ---
@@ -16,7 +16,7 @@ LocalizationGroup: Premium
 
 Power BI datasets can store data in a highly compressed in-memory cache for optimized query performance, enabling fast user interactivity. With Premium capacities, large datasets beyond the default limit can be enabled with the **Large dataset storage format** setting. When enabled, dataset size is limited by the Premium *capacity* size or the maximum size set by the administrator.
 
-Large datasets can be enabled for all Premium P SKUs and Embedded A SKUs. The large dataset size limit in Premium is comparable to Azure Analysis Services, in terms of data model size limitations.
+Large datasets can be enabled for all Premium P SKUs, Embedded A SKUs, and with Premium Per User (PPU). The large dataset size limit in Premium is comparable to Azure Analysis Services, in terms of data model size limitations.
 
 While required for datasets to grow beyond 10 GB, enabling the Large dataset storage format setting has additional benefits. If you're planning to use XMLA endpoint based tools for dataset write operations, be sure to enable the  setting, even for datasets that you wouldn't necessarily characterize as a *large* dataset. When enabled, the large dataset storage format can improve XMLA write operations performance.
 

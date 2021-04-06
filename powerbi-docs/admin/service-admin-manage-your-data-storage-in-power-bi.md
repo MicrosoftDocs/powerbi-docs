@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 03/22/2021
+ms.date: 04/02/2021
 LocalizationGroup: Administration
 ---
 # Manage data storage in Power BI workspaces
@@ -23,7 +23,7 @@ Workspace storage limits, whether for My Workspace or an app workspace, depend o
 For workspaces in shared capacity: 
 
 - There is a per-workspace storage limit of 10 GB.
-- For app workspaces, the total usage can’t exceed the tenant storage limit of 10 GB multiplied by the number of Pro licenses in the tenant.
+- For app workspaces, the total usage can’t exceed the tenant storage limit of 10 GB multiplied by the number of Pro or Premium Per User (PPU) licenses in the tenant.
 
 ### Premium capacity limits
 For workspaces in Premium capacity:

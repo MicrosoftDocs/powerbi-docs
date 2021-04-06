@@ -8,7 +8,7 @@ featuredvideoid: jXTiYJKw1Rs
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 03/24/2021
+ms.date: 04/02/2021
 ---
 
 # What are paginated reports in Power BI Premium?
@@ -28,7 +28,7 @@ Paginated reports often have many pages. For example, this report has 563 pages.
 
 ![Paginated](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
-You can preview your report in Report Builder, then publish it to the Power BI service, app.powerbi.com. You need a Power BI Pro license to publish a report to the service. You can publish and share paginated reports in your My Workspace or in workspaces, as long as the workspace is in a Power BI Premium capacity. Also, a Power BI admin needs to enable paginated reports in the [Premium capacities section](../admin/service-admin-premium-workloads.md#paginated-reports) of the Power BI admin portal. 
+You can preview your report in Report Builder, then publish it to the Power BI service, app.powerbi.com. You need a Power BI Pro or Premium Per User (PPU) license to publish a report to the service. You can publish and share paginated reports in your My Workspace or in workspaces, as long as the workspace is in a Power BI Premium capacity. Also, a Power BI admin needs to enable paginated reports in the [Premium capacities section](../admin/service-admin-premium-workloads.md#paginated-reports) of the Power BI admin portal. 
 
 ## Compare Power BI reports and paginated reports
 
