@@ -6,7 +6,7 @@ ms.author: mihart
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: overview
-ms.date: 09/23/2020
+ms.date: 03/29/2021
 LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to get an overview of Power BI so I can understand how the different parts fit together, so that I know which part to use to accomplish my tasks/goals.
 ---
@@ -57,6 +57,10 @@ One common workflow in Power BI begins by connecting to data sources in Power BI
 This workflow is common, and shows how the three main Power BI elements complement one another.
 
 Here's a detailed [comparison of Power BI Desktop and the Power BI service](../fundamentals/service-service-vs-desktop.md).
+
+### Use the deployment pipeline tool
+
+In the Power BI service, you can use the [deployment pipeline tool](../create-reports/deployment-pipelines-overview.md) to test your content before you release it to your users. The deployment pipeline tool can help you deploy reports, dashboards, datasets, and paginated reports. Read about how to [get started with deployment pipelines](../create-reports/deployment-pipelines-get-started.md?tabs=paginated-reports) in the Power BI service.
 
 ## Paginated reports in the Power BI service
 
