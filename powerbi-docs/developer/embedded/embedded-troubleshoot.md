@@ -219,11 +219,11 @@ Download [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org
 
 ### Azure AD token for a different tenant (guest user)
 
-When you *embed for your organization*, to allow Azure AD guest users access to your content, you need to specify the tenant ID.
+When you *embed for your organization*, to allow Azure AD guest users access to your content, you need to specify the tenant ID in the `authorityUri` parameter.
 
 * URL for embedding in your organization's tenant:
 
-    `https://login.microsoftonline.com/common/oauth2/authorize`
+    `https://login.microsoftonline.com/common/v2.0`
 
 * URL for embedding for a guest Azure AD user:
 
