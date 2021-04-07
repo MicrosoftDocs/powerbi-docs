@@ -40,7 +40,7 @@ To determine which version of Power BI Desktop is installed, select **File** > *
 > During the setup of the Oracle client, make sure you enable *Configure ODP.NET and/or Oracle Providers for ASP.NET at machine-wide level* by selecting the corresponding checkbox during the setup wizard. Some versions of the Oracle client wizard selects the checkbox by default, others do not. Make sure that checkbox is selected so that Power BI can connect to your Oracle database.
 
 ## Connect to an Oracle database
-After you install the matching Oracle client driver, you can connect to an Oracle database. To connect to an Oracle database with the [on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/), the correct Oracle client software must be installed on the computer running the gateway. The Oracle client software you use depends on the Oracle server version, but will always match the 64-bit gateway. For more information, go to [Manage your data source - Oracle](https://docs.microsoft.com/power-bi/connect-data/service-gateway-onprem-manage-oracle).
+After you install the matching Oracle client driver, you can connect to an Oracle database. To connect to an Oracle database with the [on-premises data gateway](/data-integration/gateway/), the correct Oracle client software must be installed on the computer running the gateway. The Oracle client software you use depends on the Oracle server version, but will always match the 64-bit gateway. For more information, go to [Manage your data source - Oracle](./service-gateway-onprem-manage-oracle.md).
 
 ## Capabilities Supported
 * Import
@@ -66,7 +66,7 @@ To make the connection, take the following steps:
    > [!NOTE]
    > If you are using a local database, or autonomous database connections, you may need to place the server name in quotation marks to avoid connection errors. 
       
-4. Select either the *Import** or **DirectQuery** data connectivity mode. The rest of these example steps use the Import data connectivity mode. To learn more about DirectQuery, go to [Use DirectQuery in Power BI Desktop](https://docs.microsoft.com/power-bi/connect-data/desktop-use-directquery).
+4. Select either the *Import** or **DirectQuery** data connectivity mode. The rest of these example steps use the Import data connectivity mode. To learn more about DirectQuery, go to [Use DirectQuery in Power BI Desktop](./desktop-use-directquery.md).
 
 
 5. If you want to import data by using a native database query, put your query in the **SQL statement** box, which appears when you expand the **Advanced options** section of the **Oracle database** dialog.  Power BI Desktop does not support Oracle native queries that execute a stored procedure and Oracle native queries in "begin ... end" block does not return any result set.  
@@ -92,13 +92,10 @@ These errors might occur if the Oracle client either isn't installed or isn't co
 
 You might also encounter a compatibility issue between the Oracle server version and the Oracle Data Access Client version. Typically, you want these versions to match, as some combinations are incompatible. For instance, ODAC 12.x does not support Oracle Server version 9.
 
-If you downloaded Power BI Desktop from the Microsoft Store, you might be unable to connect to Oracle databases because of an Oracle driver issue. If you encounter this issue, the error message returned is: *Object reference not set*. To address the issue, do one of these steps:
+If you downloaded Power BI Desktop from the Microsoft Store, you might be unable to connect to Oracle databases because of an Oracle driver issue. If you encounter this issue, the error message returned is: *Object reference not set*. This is an issue with how Oracle driver works in Windows UWP Apps. To address the issue, you have to do the following:
 
 * Download Power BI Desktop from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58494) instead of Microsoft Store.
-
-* If you want to use the version from Microsoft Store: on your local computer, copy oraons.dll from _12.X.X\client_X_ to _12.X.X\client_X\bin_, where _X_ represents version and directory numbers.
 
 If you see the error message, *Object reference not set*, in the Power BI Gateway when you connect to an Oracle database, follow the instructions in [Manage your data source - Oracle](service-gateway-onprem-manage-oracle.md).
 
 If you're using Power BI Report Server, consult the guidance in the [Oracle Connection Type](/sql/reporting-services/report-data/oracle-connection-type-ssrs) article.
-

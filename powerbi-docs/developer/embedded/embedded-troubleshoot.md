@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
-ms.date: 02/05/2019
+ms.date: 03/18/2021
 ---
 
 # Troubleshoot your embedded application
@@ -59,6 +59,39 @@ Error messages within the Azure portal or the Power BI app registration page men
 ### Power BI Service doesn't appear in the Azure portal when registering a new App
 
 At least one user must be signed up for Power BI. If you don't see **Power BI Service** listed within the API list, no user is signed up for Power BI.
+
+### What is the difference between application object ID and principal object ID?
+
+When you register an Azure AD app, there are a two parameters called *object ID*. This section explains the purpose of each parameter, and how to obtain it.
+
+:::row:::
+    :::column span="":::
+
+        #### Application object ID
+
+        The [application object](/azure/active-directory/develop/app-objects-and-service-principals#application-object) ID, also know simply as *object ID*, is the unique ID of your Azure AD application object.
+
+        To get the application object ID, navigate to your Azure AD app, and copy it from the *Overview*.
+
+        :::image type="content" source="media/embedded-troubleshoot/object-id.png" alt-text="A screenshot showing the object I D in the overview blade of an Azure A D application":::
+
+    :::column-end:::
+    :::column span="":::
+
+        #### Principal object ID
+
+        The principal object ID, also known simply as *object ID*, is the unique ID of the [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) associated with your Azure AD application.
+
+        To get your principal object ID, navigate to your Azure AD app, and from the *Overview* select the app link in **Managed application in local directory**.
+        
+            :::image type="content" source="media/embedded-troubleshoot/azure-overview-blade.png" alt-text="A screenshot showing the managed application in local directory option in the overview blade of an Azure A D application":::
+        
+        From the *Properties* section, copy the **Object ID**.
+        
+            :::image type="content" source="media/embedded-troubleshoot/principal-object-id.png" alt-text="A screenshot showing the principal object I D in the properties section in the overview blade of an Azure A D application":::
+
+    :::column-end:::
+:::row-end:::
 
 ## REST API
 

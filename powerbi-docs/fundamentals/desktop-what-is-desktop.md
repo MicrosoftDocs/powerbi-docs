@@ -15,7 +15,7 @@ LocalizationGroup: Get started
 
 *Power BI Desktop* is a free application you install on your local computer that lets you connect to, transform, and visualize your data. With Power BI Desktop, you can connect to multiple different sources of data, and combine them (often called *modeling*) into a data model. This data model lets you build visuals, and collections of visuals you can share as reports, with other people inside your organization. Most users who work on business intelligence projects use Power BI Desktop to create reports, and then use the *Power BI service* to share their reports with others.
 
-![Screenshot of Power B I Desktop showing sample data.](media/desktop-what-is-desktop/what-is-desktop_01.png)
+![Screenshot of Power B I Desktop showing sample data.](media/desktop-what-is-desktop/what-is-desktop-01.png)
 
 The most common uses for Power BI Desktop are as follows:
 
@@ -105,7 +105,7 @@ With Power BI Desktop you can create complex and visually rich reports, using da
 
 In the following image, you see the first page of a Power BI Desktop report, named **Overview**, as seen on the tab near the bottom of the image. 
 
-![Screenshot of Power B I Desktop showing the Overview tab.](media/desktop-what-is-desktop/what-is-desktop_01.png)
+![Screenshot of Power B I Desktop showing the Overview tab.](media/desktop-what-is-desktop/what-is-desktop-01.png)
 
 ## Share reports
 

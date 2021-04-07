@@ -435,7 +435,7 @@ An application sample is available within the [Embedding for your organization s
 
 * For more information about JavaScript API, reference [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
-* For more information about for Power BI for Germany cloud, reference [Power BI for Germany cloud FAQ](../../admin/service-govde-faq.md)
+* For more information about for Power BI for Germany cloud, reference [Power BI for Germany cloud FAQ](../../admin/service-govde-faq.yml)
 
 * [How to migrate Power BI Workspace Collection Workspace Collection content to Power BI](migrate-from-powerbi-embedded.md)
 

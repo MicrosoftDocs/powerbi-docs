@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/13/2021
+ms.date: 04/02/2021
 LocalizationGroup: Common tasks
 ---
 
@@ -31,7 +31,7 @@ When you receive the email, it includes a link to "go to report or dashboard". O
 ## Requirements
 **Creating** a subscription for yourself requires a *Power BI Pro* or *Premium per user* [license](end-user-license.md). You can also create a subscription for yourself if the report or dashboard resides in a Premium workspace and you have been given access to that workspace. If you are unable to create a subscription, contact your Power BI administrator or IT help desk. 
 
-**Subscribing others** is only available to the dashboard or report owners who have a *Power BI Pro* license.
+**Subscribing others** is only available to the dashboard or report owners who have a *Power BI Pro* or *Premium Per User (PPU)* license.
 
 **Subscribing to paginated reports** is a little different. See [Subscribe to a paginated report in the Power BI service](paginated-reports-subscriptions.md) for details. 
 
@@ -85,7 +85,7 @@ Only you can manage the subscriptions you create. Select **Subscribe** again and
 
 ![see all subscriptions in My Workspace](./media/end-user-subscribe/power-bi-manage-subscription.png)
 
-A subscription will end if the Pro license expires, the dashboard or report is deleted by the owner, or the user account used to create the subscription is deleted.
+A subscription will end if the Pro or Premium Per User (PPU) license expires, the dashboard or report is deleted by the owner, or the user account used to create the subscription is deleted.
 
 ## Considerations and troubleshooting
 * To avoid subscription emails going to your spam folder, add the Power BI email alias (no-reply-powerbi@microsoft.com) to your contacts. If you're using Microsoft Outlook, right-click the alias and select **Add to Outlook contacts**. 

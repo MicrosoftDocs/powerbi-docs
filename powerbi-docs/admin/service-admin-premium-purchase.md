@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 01/28/2021
+ms.date: 04/02/2021
 LocalizationGroup: Premium
 ---
 
@@ -107,6 +107,10 @@ When you cancel your Premium subscription, or your capacity license expires, you
 ## Purchase A SKUs for testing and other scenarios
 
 You can also purchase A SKUs for testing and other scenarios, which provides Premium capacity on an hourly basis. For more information and steps, see [Purchase Power BI Premium for testing](service-admin-premium-testing.md).
+
+## Purchase Premium Per User (PPU) licenses
+
+You can purchase Power BI Premium for individual users, using the Premium Per User (PPU) license model. For more information about Premium Per User, see [Power BI Premium Per User](service-premium-per-user-faq.md).
 
 ## Next steps
 

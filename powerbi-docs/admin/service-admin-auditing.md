@@ -29,7 +29,7 @@ Knowing who is taking what action on which item in your Power BI tenant can be c
 ## Use the activity log
 
 > [!NOTE]
-> Activity logging isn't supported for Microsoft Cloud Deutschland. Learn more about service limitations for the Germany cloud in [Frequently Asked Questions for Power BI for Germany Cloud customers](service-govde-faq.md).
+> Activity logging isn't supported for Microsoft Cloud Deutschland. Learn more about service limitations for the Germany cloud in [Frequently Asked Questions for Power BI for Germany Cloud customers](service-govde-faq.yml).
 
 
 As a Power BI service admin, you can analyze usage for all Power BI resources at the tenant level by using custom reports based on the Power BI activity log. You can download the activities by using a REST API or PowerShell cmdlet. You can also filter the activity data by date range, user, and activity type.
@@ -77,6 +77,9 @@ To learn more about using the Power BI REST API, including examples of how to ge
 ### Get-PowerBIActivityEvent cmdlet
 
 Download activity events by using the Power BI Management cmdlets for PowerShell. The **Get-PowerBIActivityEvent** cmdlet  automatically handles the continuation token for you. The **Get-PowerBIActivityEvent** cmdlet takes a StartDateTime and an EndDateTime parameter with the same restrictions as the **ActivityEvents** REST API. In other words, the start date and end date must reference the same date value because you can only retrieve the activity data for one day at a time.
+
+> [!NOTE]
+> You can't run Get-PowerBIActivityEvent as the Azure service principal. Even if the service principal is assigned the Power BI service administrator role. 
 
 The following script demonstrates how to download all Power BI activities. The command converts the results from JSON into .NET objects for straightforward access to individual activity properties. These examples show the smallest and largest timestamps possible for a day to ensure no events are missed.
 

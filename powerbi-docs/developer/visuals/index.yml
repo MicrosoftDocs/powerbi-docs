@@ -30,7 +30,7 @@ landingContent:
           - text: "Power BI visual project structure"
             url: visual-project-structure.md
           - text: "Frequently asked questions"
-            url: power-bi-custom-visuals-faq.md
+            url: power-bi-custom-visuals-faq.yml
 
   # Card
   - title: Develop a Power BI visual

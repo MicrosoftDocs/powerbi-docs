@@ -11,6 +11,8 @@
       href: service-admin-where-is-my-tenant-located.md
     - name: What is Power BI Premium?
       href: service-premium-what-is.md
+    - name: Understanding Power BI Premium Gen2 (preview)
+      href: service-premium-concepts.md
   - name: Concepts
     expanded: true
     items:
@@ -29,9 +31,9 @@
       - name: "Migrate to Go Local German regions"
         href: service-admin-migrate-data-germany.md    
       - name: "FAQ for Germany Cloud customers"
-        href: service-govde-faq.md
+        href: service-govde-faq.yml
     - name: "Frequently asked questions (FAQ)"
-      href: service-admin-faq.md
+      href: service-admin-faq.yml
     - name: "High availability and failover FAQ"
       href: service-admin-failover.md
     - name: Power BI Premium
@@ -46,8 +48,10 @@
         href: service-premium-capacity-scenarios.md
       - name: Power BI Premium FAQ
         href: service-premium-faq.md
-      - name: Power BI Premium Per User FAQ
+      - name: Power BI Premium Per User
         href: service-premium-per-user-faq.md
+      - name: Using the Power BI Premium Gen2 metrics app
+        href: service-premium-gen2-metrics-app.md              
     - name: Information protection
       items:
       - name: Sensitivity label inheritance from data sources (preview)
