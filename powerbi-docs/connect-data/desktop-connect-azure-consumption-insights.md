@@ -167,7 +167,7 @@ Many dashboards have additional tables that are used for lookup or filtering, su
     ![Screenshot of Create relationship dialog. Select Manage Relationships.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_12.png)
 
 ### Step 5: Verify your visuals, and adjust field formatting as needed
-At this point, most of your original visuals, tables, and drilldowns should be working as expected. Some minor tweaks may be necessary, however, to precisely format the look and feel. Take a bit of time to look over each of your dashboards and visuals to ensure they look how you want them.
+At this point, most of your original visuals, tables, and drill-down actions should be working as expected. Some minor tweaks may be necessary, however, to precisely format the look and feel. Take a bit of time to look over each of your dashboards and visuals to ensure they look how you want them.
 
 ## Using the Azure Consumption and Insights (ACI) API to get consumption data
 Azure also provides the [**Azure Consumption and Insights (ACI) API**](https://azure.microsoft.com/blog/announcing-general-availability-of-consumption-and-charge-apis-for-enterprise-azure-customers/). You can create your own custom solutions to gathering, reporting, and visualizing Azure consumption information using the ACI API.
