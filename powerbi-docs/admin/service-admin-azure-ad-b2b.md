@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 04/06/2021
 LocalizationGroup: Administration
 ---
 
@@ -49,13 +49,15 @@ Use a planned invite if you know which users to invite. The Azure portal or Powe
 
 Follow these steps to send an invite in the Azure portal.
 
-1. In the [Azure portal](https://portal.azure.com), select **Azure Active Directory**.
+1. In the [Azure portal](https://portal.azure.com), select Menu button then select **Azure Active Directory**.
+
+    ![Screenshot of the Azure portal with the Azure Active Directory option called out.](media/service-admin-azure-ad-b2b/azure-active-directory-option.png)
 
 1. Under **Manage**, select **Users** > **All users** > **New guest user**.
 
     ![Screenshot of the Azure portal with the New guest user option called out.](media/service-admin-azure-ad-b2b/azure-ad-portal-new-guest-user.png)
 
-1. Enter an **email address** and **personal message**.
+1. Scroll down and enter an **email address** and **personal message**.
 
     ![Screenshot of the New Guest User dialog with the email and message fields called out.](media/service-admin-azure-ad-b2b/azure-ad-portal-invite-message.png)
 
@@ -134,7 +136,7 @@ To help allowed guests sign in to Power BI, provide them with the Tenant URL. To
   * Guest users can't use, create, update, or install organizational content packs
   * Guest users can't use Analyze in Excel
   * Guest users can't be @mentioned in commenting
-  * Guest users can't use subscriptions
+  * Guest users can't create subscriptions
   * Guest users who use this capability should have a work or school account
 
 * Guest users using social identities will experience more limitations because of sign-in restrictions.
