@@ -336,7 +336,7 @@ If you get the error - AADSTS50079: The user is required to use multi-factor aut
 
 Need to use an AAD account that doesn't have MFA enabled.
 
-For more information, please see [Power BI Embedded FAQ](embedded-faq.md).
+For more information, please see [Power BI Embedded FAQ](embedded-faq.yml).
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
 
@@ -344,6 +344,6 @@ If you require further assistance, then [contact support](https://powerbi.micros
 
 ## Next steps
 
-For more information, see [FAQs](embedded-faq.md).
+For more information, see [FAQs](embedded-faq.yml).
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
