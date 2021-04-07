@@ -78,7 +78,7 @@ Select the drill-up icon ![Drill-up icon](./media/end-user-drill/power-bi-drill-
 
     ![Screenshot of visual with arrow pointing at drill-down on/off icon turned on.](media/end-user-drill/power-bi-select-drill-icon.png)
 
-    If you don't turn on the drill down option, selecting a visual element (like a bar, bubble, or leaf) won't drill down. Instead, it will cross-filter the other charts on the report page.
+    If you don't turn on the drill-down option, selecting a visual element (like a bar, bubble, or leaf) won't drill down. Instead, it will cross-filter the other charts on the report page.
 
 1. Select the leaf for **TN**. Your treemap now shows all the cities and territories in Tennessee that have a store.
 
