@@ -103,4 +103,4 @@ The Performance Analyzer will allow you to see and record logs that measure how 
 
 * [Power BI optimization guide](../../guidance/power-bi-optimization.md)
 * [How to troubleshoot Power BI embedded analytics issues](embedded-troubleshoot.md)
-* [Power BI embedded analytics FAQ](embedded-faq.md)
+* [Power BI embedded analytics FAQ](embedded-faq.yml)
