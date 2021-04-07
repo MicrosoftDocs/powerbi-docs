@@ -40,7 +40,7 @@ In this example we're using a treemap that has a hierarchy made up of territory,
 
 You have two ways for accessing the drill-down, drill-up, and expand features for visuals that have hierarchies. Try them both, and use the one that you enjoy the most.
 
-- First way: hover over a visual to see and use the icons. Drill down by selecting the downward arrow. The grey background lets you know that the drill-down option is active.   
+- First way: hover over a visual to see and use the icons. Turn on the drill-down feature first by selecting the downward arrow. The grey background lets you know that the drill-down option is active.   
 
     ![Screenshot of the hover example.](./media/end-user-drill/power-bi-drill-hover.png)
 
