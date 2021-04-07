@@ -89,9 +89,9 @@ Let's explore the spending areas in Mexico.
 
       For Mexico, the biggest spending is in the **Maintenance & Repair** subcategory.
 
-      ![Indirect Goods & Services drill down for Mexico](media/sample-procurement/pbi_procsample_drill_mexico.png)
+      ![Indirect Goods & Services drill-down for Mexico](media/sample-procurement/pbi_procsample_drill_mexico.png)
 3. Select the up arrow on the upper-left corner of the chart to drill back up.
-4. Select the drill-down arrow again to turn drill down off.  
+4. Select the drill-down arrow again to turn the drill-down feature off.  
 5. In the top nav pane, select **Procurement Analysis Sample** to return to the dashboard.
 
 ## Evaluate different cities
