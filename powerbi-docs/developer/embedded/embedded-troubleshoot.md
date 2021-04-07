@@ -127,7 +127,7 @@ HTTP/1.1 403 Forbidden
 
 ### How do I avoid timeouts by sending an API request to the right cluster?
 
-When you're sending a [Power BI REST API](/rest/api/power-bi/) request, you may experience latency issues due to a multitude of reasons. It's likely that the cause of the latency is the time it takes your request to access the right cluster. In such cases, the Power BI service returns a *307 Temporary Redirect* HTTP response. You may be able to reduce the timeout and improve performance by setting `preferClientRouting` to `true`.
+When you're sending a [Power BI REST API](/rest/api/power-bi/) request, you may experience latency issues due to a multitude of reasons. It's likely that the cause of the latency is the time it takes your request to access the right cluster. In such cases, the Power BI service returns a *307 Temporary Redirect* HTTP response. You may be able to reduce the timeout and improve performance by setting the `preferClientRouting` parameter to `true`.
 
 When `preferClientRouting` is set to `true`, the HTTP response location header will be set to the tenant that the request was originated from, and will resemble this URL: `<request tenant>/imports?displayName=<display name>`.  
 
