@@ -144,7 +144,7 @@ Dimensions are categorical (text) data. A dimension describes a person, object, 
 
 **drill up, drill down, drillthrough**    
 In Power BI, "drill down" and "drill up" refer to the ability to explore the next level of detail in a report or visual. 
-Use "drill through" to refer to the ability to select a part of a visual and be taken to another page in the report, filtered to the data that relates to the part of the visual you selected on the original page.
+"Drill through" refers to the ability to select a part of a visual and be taken to another page in the report, filtered to the data that relates to the part of the visual you selected on the original page.
 Drill to details commonly means to show the underlying records.
 
 ## E
