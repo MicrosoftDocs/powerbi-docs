@@ -18,7 +18,7 @@ metadata:
   ms.date: 02/03/2021 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
-# Maximum of 8 items
+# Maximum of 8 items 
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
@@ -76,11 +76,11 @@ conceptualContent:
         url: fundamentals/index.yml
         text: See more
     # Card
-    - title: Power BI for consumers
+    - title: Power BI for business users
       links:
         - url: consumer/end-user-consumer.md
           itemType: get-started
-          text: Am I a Power BI consumer?
+          text: Am I a Power BI business user?
         - url: consumer/end-user-experience.md
           itemType: get-started
           text: Get around in the Power BI service
