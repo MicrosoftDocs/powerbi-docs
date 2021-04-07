@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 04/02/2020
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -87,7 +87,7 @@ The two types of subscriptions aren't mutually exclusive. You can have both Powe
 >[!NOTE]
 >Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
 >* Performance
->* Per-user licensing. See the [Premium Per User FAQ](service-premium-per-user-faq.md) for more information.
+>* Per-user licensing. See the [Premium Per User article](service-premium-per-user-faq.md) for more information.
 >* Greater scale
 >* Improved metrics
 >* Autoscaling

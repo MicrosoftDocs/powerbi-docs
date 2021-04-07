@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/15/2021
+ms.date: 04/02/2021
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
@@ -17,7 +17,7 @@ When moving to production, Power BI embedded analytics requires a capacity (*A*,
 Capacity is a dedicated set of resources reserved for exclusive use. It enables you to publish dashboards, reports, and datasets to users, without having to purchase per-user licenses. It also offers dependable, consistent performance for your content.
 
 >[!NOTE]
->For publishing, you'll need one Power BI Pro account.
+>For publishing, you'll need one Power BI Pro or Premium Per User (PPU) account.
 
 ## What is embedded analytics?
 
@@ -77,7 +77,7 @@ In this table, a custom app refers to a web app created using embedded analytics
 |[Secure URL embedding](../../collaborate-share/service-embed-secure.md)</br>(embed from Power BI service)     |✖        |✔        |
 
 >[!NOTE]
->* A [Power BI Pro license](../../admin/service-admin-purchasing-power-bi-pro.md) is needed for publishing content to a Power BI app workspace.
+>* A [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) or Premium Per User (PPU) license is needed for publishing content to a Power BI app workspace.
 >* Only the **P SKU** allows free Power BI users to consume Power BI apps and shared content, in Power BI service.
 
 ### Capacity considerations

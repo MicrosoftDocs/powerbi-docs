@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 03/11/2021
+ms.date: 04/02/2021
 LocalizationGroup: Data from files
 ---
 # Creating a dataflow
@@ -24,6 +24,9 @@ There are a multiple of ways to create or build on top of a new dataflow:
 * [Create a dataflow using import/export](#create-a-dataflow-using-importexport)
 
 The following sections explore each of these ways to create a dataflow in detail.
+
+> [!NOTE]
+> Dataflows can be created by user in a Premium workspace, users with a Pro license, and users with a Premium Per User (PPU) license.
 
 ## Create a dataflow using define new tables
 

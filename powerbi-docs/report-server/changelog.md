@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/12/2021
+ms.date: 04/04/2021
 ---
 
 # Change log for Power BI Report Server
@@ -33,13 +33,15 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
         - Security updates
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
+   - *Version: 2.88.2361.0 (January 2021), Released: March 12, 2021*
+        - Bug fixes
    - *Version: 2.88.1382.0 (January 2021), Released: January 28, 2021* (new build and new version)
         - Contains changes required for connection with Power BI Report Server (January 2021)        
    
 ## October 2020
 - **Power BI Report Server**
     - *Version: 1.9.7709.41358 (Build 15.0.1104.310), Released: March 9, 2021*
-        - Security Updates 
+        - Security Updates [(KB 5001285)](https://support.microsoft.com/topic/description-of-the-security-update-for-power-bi-report-server-october-2020-march-9-2021-kb5001285-d2b664c1-5622-4d07-bb92-9543f95ec4de)
     - *Version: 1.9.7675.15620 (Build 15.0.1104.300), Released: January 8, 2021*
         - Bug fixes
             - Fixed issue with refresh of reports with two or more datasources that differ only by the casing of the letters.
@@ -69,7 +71,9 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             - Updated MHTML renderer to use newer HTML DOCTYPE.
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
-   - *Version: 2.86.2841.0 (October 2020), Released: Feburary 5, 2020*
+   - *Version: 2.86.3481.0 (October 2020), Released: March 31, 2021*
+        - Bug fixes
+   - *Version: 2.86.2841.0 (October 2020), Released: Feburary 5, 2021*
         - Bug fixes
    - *Version: 2.86.1321.0 (October 2020), Released: November 18, 2020*
         - Bug fixes
@@ -79,7 +83,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 ## May 2020
 - **Power BI Report Server**
     - *Version: 1.8.7710.39564 (Build 15.0.1103.241), Released: March 9, 2021*
-        - Security Updates
+        - Security Updates [(KB 5001284)](https://prod.support.services.microsoft.com/topic/description-of-the-security-update-for-power-bi-report-server-may-2020-march-9-2021-kb5001284-578b456e-a4de-4ceb-b4f8-61455a74ca58)
     - *Version: 1.8.7485.35104 (Build 15.0.1103.234), Released: June 30, 2020*
         - Bug fixes
             - Fixed an issue in scale-out scenarios where reports weren't reflecting edits immediately in the server after upload.

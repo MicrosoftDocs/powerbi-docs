@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/14/2019
+ms.date: 04/02/2021
 LocalizationGroup: Visualizations
 ---
 # Create and use R visuals in Power BI
@@ -63,7 +63,7 @@ As another example, the following image shows the error message that appears whe
 ![Screenshot showing a runtime error](media/service-r-visuals/r-visuals-service-5.png)
 
 ## Licensing
-R visuals require a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license to render in reports, refresh, filter, and cross-filter. For more information about Power BI Pro licenses, and how they differ from free licenses, see [Power BI Pro content - what is it?](../admin/service-admin-purchasing-power-bi-pro.md)
+R visuals require a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) or Premium Per User (PPU) license to render in reports, refresh, filter, and cross-filter. For more information about Power BI Pro licenses, and how they differ from free licenses, see [Power BI Pro content - what is it?](../admin/service-admin-purchasing-power-bi-pro.md)
 
 Free users of Power BI can only consume tiles shared with them in Premium workspaces. See [purchasing Power BI Pro](../admin/service-admin-purchasing-power-bi-pro.md) for more information.
 
@@ -75,7 +75,7 @@ The following table describes R visuals capabilities based on licensing.
 |**Guest** (Power BI embedded)     |  Supported|  Not supported      | Supported in Premium/Azure capacity only  | Supported in Premium/Azure capacity only |
 |**Unmanaged tenant** (domain not verified) | Supported | Not supported |  Not supported |Supported (B2B scenario) |
 |**Managed tenant** with free license    |  Supported       |  Not supported       |    Supported in Premium capacity only    | Supported |
-**Managed tenant** with Pro license     |   Supported      | Supported      | Supported    |Supported|
+**Managed tenant** with Pro or PPU license     |   Supported      | Supported      | Supported    |Supported|
 
 
 
@@ -84,6 +84,7 @@ R visuals in the Power BI service have a few limitations:
 
 * R visuals support is limited to the packages identified [in Learn which R packages are supported](../connect-data/service-r-packages-support.md). There currently is no support for custom packages.
 * Data size limitations – data used by the R visual for plotting is limited to 150,000 rows. If more than 150,000 rows are selected, only the top 150,000 rows are used and a message is displayed on the image. Additionally, the input data has a limit of 250 MB.
+* If the input dataset of an R Visual has a column that contains a string value longer than 32766 characters, that value is truncated.
 * Resolution - all R visuals are displayed at 72 DPI.
 * Plotting device - only plotting to the default device is supported. 
 * Calculation time limitation – if an R visual calculation exceeds 60 seconds the script times out, resulting in an error.
@@ -92,8 +93,8 @@ R visuals in the Power BI service have a few limitations:
 * R visuals are currently not supported for the *Time* data type. Please use Date/Time instead.
 * R visuals do not display when using **Publish to web**.
 * R visuals do not support renaming input columns. Columns will be referred to by their original name during script execution.
-* R visuals currently do not print with dashboard and reports printing
-* R visuals are currently not supported in the DirectQuery mode of Analysis Services
+* R visuals currently do not print with dashboard and reports printing.
+* R visuals are currently not supported in the DirectQuery mode of Analysis Services.
 * R visuals have the ability to convert text labels into graphical elements. Doing so in the Power BI service requires the following additional step:
   
   * Add the following line at the beginning of the R script:

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 03/12/2021
+ms.date: 04/05/2021
 ms.custom: seodec18
 LocalizationGroup: Administration
 ---
@@ -215,7 +215,7 @@ Admins can provide a custom message that appears before a user publishes a repor
 ```markdown
 #### Important Disclaimer 
 
-Before publishing the report to a workspace, be sure to validate that the appropriate users or groups have access to the destination workspace. If some users or groups should *not* have access to the content and underlying artifacts, remove or modify their access to the workspace, or publish the report to a different workspace. [Learn more](https://docs.microsoft.com/power-bi/collaborate-share/service-create-the-new-workspaces#give-access-to-your-workspace). 
+Before publishing the report to a workspace, be sure to validate that the appropriate users or groups have access to the destination workspace. If some users or groups should *not* have access to the content and underlying artifacts, remove or modify their access to the workspace, or publish the report to a different workspace. Learn about [giving access to the new workspaces](../collaborate-share/give-access-new-workspaces.md). 
 ```
 
 The **Custom message** text area does support scrolling, so you can provide a message up to 5,000 characters.
@@ -439,6 +439,20 @@ This setting allows organizations to hide the **Share to Teams** buttons in the 
 ![Screenshot of Share to Teams tenant setting in the Power B I admin portal.](media/service-admin-portal/service-teams-share-to-teams-tenant-setting.png)
 
 Read more about [sharing Power BI content to Teams](../collaborate-share/service-share-report-teams.md).
+
+### Allow shareable links to grant access to all people in your organization
+This tenant setting is available for admins looking to disable creating shareable links to **People in your organization**. You can find this option in the Admin portal by navigating to **Tenant settings** > **Export and sharing settings** > **Allow shareable links to grant access to all people in your organization**.
+
+![Screenshot of allow shareable links to grant access to all People in your organization setting](media/service-admin-portal/admin-allow-shareable-links.png)
+
+As with other tenant settings, you can enable sharing links to **People in your organization** for:
+- **The entire organization**
+- **Specific security groups**
+- Or **Except specific security groups**
+
+If this setting is disabled for a user with share permissions to a report, that user can only share the report via link to **Specific people** or **People with existing access**.
+
+![Screenshot showing share option disabled](media/service-admin-portal/admin-share-option-disabled.png)
 
 ## Content pack and app settings
 
