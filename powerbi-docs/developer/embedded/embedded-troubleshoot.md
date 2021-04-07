@@ -217,9 +217,21 @@ User consent is disabled for the tenant.
 
 Download [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) if you experience an "'AuthenticationContext' does not contain a definition for 'AcquireToken' and no accessible 'AcquireToken' accepting a first argument of type 'AuthenticationContext' could be found (are you missing a using directive or an assembly reference?)" error.
 
-### Azure AD token for a different tenant
+### Azure AD token for a different tenant (guest user)
 
-In a business-to-business (B2B) *embed for your organization* scenario, if your app is trying to access Power BI content hosted on a tenant that's different to the signed in user's tenant, you need to specify the tenant ID to get the Azure AD token. In such cases, you'll need to use the **XXX** URL. For more information, see [How to: Sign in any Azure Active Directory user using the multi-tenant application pattern](/active-directory/develop/howto-convert-app-to-be-multi-tenant).
+When you *embed for your organization*, to allow Azure AD guest users access to your content, you need to specify the tenant ID.
+
+* URL for embedding in your organization's tenant:
+
+    `https://login.microsoftonline.com/common/oauth2/authorize`
+
+* URL for embedding for a guest Azure AD user:
+
+    `https://login.microsoftonline.com/<tenant ID>`
+
+To find your tenant ID, you can use the instructions in [Find the Microsoft Azure AD tenant ID and primary domain name](/partner-center/find-ids-and-domain-names#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name).
+
+For more information, see [How to: Sign in any Azure Active Directory user using the multi-tenant application pattern](/active-directory/develop/howto-convert-app-to-be-multi-tenant).
 
 ## Data sources
 
