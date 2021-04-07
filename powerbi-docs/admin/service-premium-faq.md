@@ -168,6 +168,6 @@ The following articles provide more information about Power BI Premium:
 * [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
 * [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
 * [Extended Pro Trial activation](../fundamentals/service-self-service-signup-for-power-bi.md)
-* [Power BI Embedded FAQ](../developer/embedded/embedded-faq.md)
+* [Power BI Embedded FAQ](../developer/embedded/embedded-faq.yml)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
