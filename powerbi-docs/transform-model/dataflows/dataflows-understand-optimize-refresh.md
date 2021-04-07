@@ -102,7 +102,7 @@ For example, if you have a dataflow with three tables, no individual table can t
 
 If you are experiencing timeouts, consider optimizing your dataflow queries, and consider using [query folding](https://docs.microsoft.com/power-query/power-query-folding) on your source systems.
 
-Separately, consider upgrading to Premium Per User (currently in preview), which is not subject to these time-outs and offers increased performance due to many [Power BI Premium Per User features](../../admin/service-premium-per-user-faq.md).
+Separately, consider upgrading to Premium Per User (currently in preview), which is not subject to these time-outs and offers increased performance due to many [Power BI Premium Per User features](../../admin/service-premium-per-user-faq.yml).
 
 ### Long durations
 

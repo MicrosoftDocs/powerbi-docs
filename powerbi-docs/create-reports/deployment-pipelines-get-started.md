@@ -22,7 +22,7 @@ You'll be able to access the deployment pipelines feature, if the following cond
 
     * You're a Power BI [Pro user](../admin/service-admin-purchasing-power-bi-pro.md), and you belong to an organization that has Premium capacity.
 
-    * [Premium Per User (PPU)](../admin/service-premium-per-user-faq.md).
+    * [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml).
 
 * You're an admin of a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).
 

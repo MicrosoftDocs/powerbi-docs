@@ -136,7 +136,7 @@ On the **Premium** tab in the **Settings** pane, you can choose settings related
 
     ![Screenshot of Premium capacity On.](media/service-create-the-new-workspaces/power-bi-workspace-premium.png)
 
-1. Choose either Premium capacity or **Premium Per User**. Read more about [Premium Per User](../admin/service-premium-per-user-faq.md).
+1. Choose either Premium capacity or **Premium Per User**. Read more about [Premium Per User](../admin/service-premium-per-user-faq.yml).
 
     :::image type="content" source="media/service-create-the-new-workspaces/power-bi-workspace-premium-per-user.png" alt-text="Screenshot of Choose Premium or Premium Per User.":::
 
