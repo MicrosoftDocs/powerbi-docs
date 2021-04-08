@@ -134,7 +134,7 @@ To help allowed guests sign in to Power BI, provide them with the Tenant URL. To
   * Guest users can't use, create, update, or install organizational content packs
   * Guest users can't use Analyze in Excel
   * Guest users can't be @mentioned in commenting
-  * Guest users can't create email subscriptions
+  * Guest users can't create subscriptions
   * Guest users who use this capability should have a work or school account
 
 * Guest users using social identities will experience more limitations because of sign-in restrictions.
