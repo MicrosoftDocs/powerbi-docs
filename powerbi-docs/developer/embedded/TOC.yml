@@ -49,7 +49,7 @@
     - name: "Azure diagnostic logging for Power BI Embedded"
       href: ./monitor-power-bi-embedded.md
     - name: "Embedding FAQ"
-      href: embedded-faq.md
+      href: embedded-faq.yml
   - name: How to
     items:        
     - name: "Embed using service principal"

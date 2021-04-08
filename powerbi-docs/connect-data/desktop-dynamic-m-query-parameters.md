@@ -166,7 +166,7 @@ There are some considerations and limitations to consider when using dynamic M q
   * Multi-field include filter
   * Exclude filter / Not filters
   * Cross-highlighting
-  * Drill down filter
+  * Drill-down filter
   * Cross drill filter
   * Top N filter
 * Unsupported operations:
