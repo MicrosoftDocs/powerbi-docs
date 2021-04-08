@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 4/02/2021
+ms.date: 4/08/2021
 LocalizationGroup: Premium
 ---
 # Power BI Premium Per User
@@ -30,7 +30,7 @@ You can get a trial version of Premium Per User (PPU) through Microsoft 365, as 
 The following table describes the Premium Per User (PPU) features against a Premium capacity:
 
 
-|Column1  |Column2  |Column3  |
+|Feature |Per User  |Per Capacity  |
 |---------|---------|---------|
 |Model size limit     | 100 GB        | Up to 400 GB        |
 |Refresh rate     | 48/day        | 48/day        |
