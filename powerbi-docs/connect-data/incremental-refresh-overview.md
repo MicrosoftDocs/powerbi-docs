@@ -26,7 +26,7 @@ When you publish a Power BI Desktop model to the service, each table in the new 
 
 With incremental refresh, the service dynamically partitions and separates data that needs to be refreshed frequently from data that can be refreshed less frequently. Table data is filtered by using Power Query date/time parameters with the reserved, case-sensitive names *RangeStart* and *RangeEnd*. When initially configuring incremental refresh in Power BI Desktop, the parameters are used to filter only a small period of data to be loaded into the model. When published to the service, with the first refresh operation, the service creates incremental refresh and historical partitions based on incremental refresh policy settings, and then overrides the parameter values to filter and query data for each partition based on date/time values for each row.
 
-With each subsequent refresh, the data source query filters and returns only those rows within the period dynamically defined by the parameters. Those rows with a date/time within the refresh period are loaded into the one or more current incremental refresh partitions. Rows in the refresh partition(s) with a date/time no longer within the refresh period are then included in the historical partition for the previous period, which is *not* refreshed. With each subsequent refresh, the current refresh partition's date/time period is rolled forward. New historical partitions are created, and older historical partitions become less granular as they are merged together. This is known as a *rolling window pattern*.
+With each subsequent refresh, the data source query filters and returns only those rows within the period dynamically defined by the parameters. Those rows with a date/time within the refresh period are loaded into one or more current incremental refresh partitions. Rows in the refresh partition(s) with a date/time no longer within the refresh period are then included in the historical partition for the previous period, which is *not* refreshed. With each subsequent refresh, the current refresh partition's date/time period is rolled forward. New historical partitions are created, and older historical partitions become less granular as they are merged together. This is known as a *rolling window pattern*.
 
 The beauty of incremental refresh is the service handles all of this for you based on the incremental refresh policies you define. In fact, the process and partitions created from it are not even visible in the service. In most cases, a well-defined incremental refresh policy is all that is necessary to significantly improve dataset refresh performance. However, for datasets in Premium capacities, more advanced partition and refresh scenarios are supported through the XMLA endpoint.
 
@@ -50,7 +50,7 @@ Because support for query folding is different for different types of data sourc
 
 :::image type="content" source="media/incremental-refresh-overview/query-folding-warning.png" alt-text="Query folding warning":::
 
-If you see this warning and want to verify the necessary query folding is occurring, use the Power Query Diagnostics feature or trace queries by using a tool supported by the data source, like SQL Profiler. If query folding is not occurring, verify the the filter logic is included in the query being passed to the data source. If not, it's likely the query includes a transformation that prevents folding.
+If you see this warning and want to verify the necessary query folding is occurring, use the Power Query Diagnostics feature or trace queries by using a tool supported by the data source, like SQL Profiler. If query folding is not occurring, verify the filter logic is included in the query being passed to the data source. If not, it's likely the query includes a transformation that prevents folding.
 
 Before configuring your incremental refresh solution, be sure to thoroughly read and understand [Query folding guidance in Power BI Desktop](../guidance/power-query-folding.md) and [Power Query query folding](/power-query/power-query-folding). These articles can help you determine if your data source and queries supports query folding.
 
@@ -78,7 +78,7 @@ in
     #"Filtered Rows"
 ```
 
-For *very large* datasets in Premium capacities that will likely contain billions of rows, the initial refresh operation can be bootstrapped. Bootstrapping allows the service to create table and partition objects for the dataset, but not load and process data into any of the partitions. By using SQL Server Management Studio, partitions can then be processed individually, sequentially, or in parallel that can both reduce the amount of data returned in a single query, but also bypass the five hour time limit. To learn more, see [Advanced incremental refresh - Prevent timeouts on initial full refresh](incremental-refresh-xmla.md#prevent-timeouts-on-initial-full-refresh).
+For *very large* datasets in Premium capacities that will likely contain billions of rows, the initial refresh operation can be bootstrapped. Bootstrapping allows the service to create table and partition objects for the dataset, but not load and process data into any of the partitions. By using SQL Server Management Studio, partitions can then be processed individually, sequentially, or in parallel that can both reduce the amount of data returned in a single query, but also bypass the five-hour time limit. To learn more, see [Advanced incremental refresh - Prevent timeouts on initial full refresh](incremental-refresh-xmla.md#prevent-timeouts-on-initial-full-refresh).
 
 
 
@@ -95,7 +95,7 @@ We'll go over important concepts of configuring incremental refresh here. When y
 Configuring incremental refresh is done in Power BI Desktop. For most models, only a few tasks are required. However, keep the following in mind:
 
 - When published to the service, you can't publish the same model again from Power BI Desktop. Republishing would remove any existing partitions and data already in the dataset. If you're publishing to a Premium capacity, subsequent metadata schema changes can be made with the open-source ALM Toolkit or by using Tabular Model Scripting Language (TMSL). To learn more, see [Advanced incremental refresh - Metadata-only deployment](incremental-refresh-xmla.md#metadata-only-deployment).
-- When published to the sevice, you can't download the dataset back as a PBIX to Power BI Desktop. Because datasets in the service can grow so large, it's impractical to download back and open on a typical desktop computer.
+- When published to the service, you can't download the dataset back as a PBIX to Power BI Desktop. Because datasets in the service can grow so large, it's impractical to download back and open on a typical desktop computer.
 
 ### Create parameters
 
@@ -137,13 +137,13 @@ For datasets in Premium capacities, backdated historical partitions can be selec
 
 This **required** setting determines the incremental refresh period in which all rows with a date/time in that period are included in the refresh partition(s) and refreshed with each refresh operation.
 
-For example, if we specify a refresh period of ten days, with each refresh operation the service overrides the RangeStart and RangeEnd parameters to create a query for rows with a date/time within a ten day period, beginning and ending dependent on the current date and time. Rows with a date/time in the last ten days up to the current refresh operation time are refreshed. With this type of policy, we can expect our FactInternetSales dataset table in the service, which averages 10k new rows per day, to refresh roughly 100k rows with each refresh operation.
+For example, if we specify a refresh period of 10 days, with each refresh operation the service overrides the RangeStart and RangeEnd parameters to create a query for rows with a date/time within a ten-day period, beginning and ending dependent on the current date and time. Rows with a date/time in the last 10 days up to the current refresh operation time are refreshed. With this type of policy, we can expect our FactInternetSales dataset table in the service, which averages 10k new rows per day, to refresh roughly 100k rows with each refresh operation.
 
 Be sure to specify a period that includes only the minimum number of rows required to ensure accurate reporting. If defining policies for more than one table, the same RangeStart and RangeEnd parameters must be used even if different store and refresh periods are defined for each table.
 
 #### 4 - Detect data changes
 
-This setting is **optional**. Incremental refresh of 10 days is more efficient than a full refresh of five years. However, refreshes can be even more selective. With the Detect data changes option, you can select a date/time column used to identify and refresh only those days where the data has changed. This assumes such a column exists in the data source, which is typically for auditing purposes. This should *not* be the same column used to partition the data with the RangeStart and RangeEnd parameters. The maximum value of this column is evaluated for each of the periods in the incremental range. If it hasn't changed since the last refresh, there's no need to refresh the period. In this example, this could potentially further reduce the days incrementally refreshed from 10 to around two.
+This setting is **optional**. Incremental refresh of 10 days is more efficient than a full refresh of five years. However, refresh can be even more selective. With the Detect data changes option, you can select a date/time column used to identify and refresh only those days where the data has changed. This assumes such a column exists in the data source, which is typically for auditing purposes. This should *not* be the same column used to partition the data with the RangeStart and RangeEnd parameters. The maximum value of this column is evaluated for each of the periods in the incremental range. If it hasn't changed since the last refresh, there's no need to refresh the period. In this example, this could potentially further reduce the days incrementally refreshed from 10 to around two.
 
 The current design requires that the column to detect data changes is persisted and cached into memory. The following techniques can be used to reduce cardinality and memory consumption:
 
@@ -151,7 +151,7 @@ The current design requires that the column to detect data changes is persisted 
 - Reduce the precision to an acceptable level, given your refresh-frequency requirements.
 - Define a custom query for detecting data changes by using the XMLA endpoint and avoid persisting the column value altogether.
 
-In some cases, enabling the Detect data changes option can be further enhanced. For example, you may want to avoid persisting a last-update column in the in-memory cache, or enable scenarios where a configuration/instruction table is prepared by ETL processes for flagging only those partitions that need to be refreshed. In cases like these, for Premium capacities, use TMSL and/or TOM to override the detect data changes behavior. To learn more, see [Advenced incremental refresh - Custom queries for detect data changes](incremental-refresh-xmla.md#custom-queries-for-detect-data-changes).
+In some cases, enabling the Detect data changes option can be further enhanced. For example, you may want to avoid persisting a last-update column in the in-memory cache, or enable scenarios where a configuration/instruction table is prepared by ETL processes for flagging only those partitions that need to be refreshed. In cases like these, for Premium capacities, use TMSL and/or TOM to override the detect data changes behavior. To learn more, see [Advanced incremental refresh - Custom queries for detect data changes](incremental-refresh-xmla.md#custom-queries-for-detect-data-changes).
 
 #### 5 - Only refresh complete days
 
