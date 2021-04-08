@@ -99,7 +99,7 @@ You can manage individual alerts in the Power BI mobile app or [manage all your 
 ## Data alerts on a Windows device
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones-eol-reached)
+>Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ### Set data alerts on a Windows device
 1. Tap a number or gauge tile in a dashboard to open it.  
