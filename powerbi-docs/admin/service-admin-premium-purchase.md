@@ -96,7 +96,7 @@ You can cancel your subscription from within the Microsoft 365 admin center. To 
 
 1. Select **More actions** > **Cancel subscription**.
 
-1. The **Cancel subscription** page will indicate whether or not you are responsible for an [early termination fee](https://support.office.com/article/early-termination-fees-6487d4de-401a-466f-8bc3-c0beb5cc40d3). This page will also let you know when the data will be deleted for the subscription.
+1. The **Cancel subscription** page will indicate whether or not you are responsible for an [early termination fee](https://support.office.com/article/early-termination-fees-6487d4de-401a-466f-8bc3-c0beb5cc40d3).  
 
 1. Read through the information, and if you want to proceed, select **Cancel subscription**.
 
