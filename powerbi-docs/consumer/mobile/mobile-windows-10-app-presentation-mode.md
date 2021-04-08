@@ -20,7 +20,7 @@ In presentation mode:
 * You can play a slideshow that cycles automatically between pages, bookmarks, or both pages and bookmarks.
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones-eol-reached)
+>Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## Use presentation mode
 In the Power BI mobile app, tap the **Switch to presentation mode** icon.
