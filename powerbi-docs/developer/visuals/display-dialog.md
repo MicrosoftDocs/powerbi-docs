@@ -14,9 +14,9 @@ ms.date: 03/21/2021
 
 When you create a visual, there are times when it's useful to display additional information to the customer. Here are two such examples:
 
-* To show additional information** - For example a text note or a video.
+* **To show additional information** - For example a text note or a video.
 
-* To display an input data dialog box** - For example, a date dialog box.
+* **To display an input data dialog box** - For example, a date dialog box.
 
 ## Dialog box considerations
 
@@ -34,13 +34,12 @@ When creating a dialog box for your visual, consider the following:
 
 * The dialog box uses a rich HTML `iframe`.
 
+>[!IMPORTANT]
+>The dialog box must not be triggered spontaneously. It must be used as part of a user event.
+
 ## How to configure the dialog box
 
-To configure the dialog box,
-
-## Limitations
-
-The dialog box must not be triggered spontaneously. It must be used as part of a user event.
+To configure the dialog box, you need to create a 
 
 ## Next steps
 
