@@ -38,10 +38,9 @@ Your ability to see, edit, delete, and manage comments depends on the tasks incl
 * To see all comments, and post, edit, and delete your own, your role assignment must include the "Comment on reports" task. 
 * To see all comments; post, edit, and delete your own; and delete other people’s, your role assignment must include the "Manage comments" task. 
 
-For more details on permissions related to comments see [Tasks and Permissions - Item-Level Tasks](https://docs.microsoft.com/en-us/sql/reporting-services/security/tasks-and-permissions-item-level-tasks?view=sql-server-ver15).
+For more details on permissions related to comments, see [Tasks and Permissions - Item-Level Tasks](/sql/reporting-services/security/tasks-and-permissions-item-level-tasks) in the SQL Server Reporting Services documentation.
 
 ## Next steps
 * [What is Power BI Report Server?](get-started.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
