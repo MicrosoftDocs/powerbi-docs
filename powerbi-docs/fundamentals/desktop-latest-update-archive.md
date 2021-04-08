@@ -1252,7 +1252,7 @@ The following updates are new to **Power BI Desktop** this month:
 ### Analytics
 * Custom format strings [[video]](https://youtu.be/neq0THnRJzo?t=731)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#customFormatStrings) 
 * Conditional formatting for more visual formatting options [[video]](https://youtu.be/neq0THnRJzo?t=813)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#conditionalFormatting) 
-* Drill-through discoverability improvement [[video]](https://youtu.be/neq0THnRJzo?t=959)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#drillThrough) 
+* Drillthrough discoverability improvement [[video]](https://youtu.be/neq0THnRJzo?t=959)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#drillThrough) 
 * New DAX expressions: REMOVEFILTERS and CONVERT [[video]](https://youtu.be/neq0THnRJzo?t=1048)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#dax) 
 
 
@@ -2255,7 +2255,7 @@ The following updates were new to **Power BI Desktop** in May:
 
 ### Analytics
 
-* Measure drillthrough  [[video]](https://youtu.be/-_GMCE1TLvQ?t=2m9s)  [[article]](../create-reports/desktop-drillthrough.md#pass-all-filters-in-drill-through)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#measureDrillthrough) 
+* Measure drillthrough  [[video]](https://youtu.be/-_GMCE1TLvQ?t=2m9s)  [[article]](../create-reports/desktop-drillthrough.md#pass-all-filters-in-drillthrough)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#measureDrillthrough) 
 
 ### Power BI Premium
 
