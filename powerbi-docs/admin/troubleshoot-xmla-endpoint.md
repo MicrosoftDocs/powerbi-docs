@@ -7,7 +7,7 @@ ms.reviewer: owend
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 03/24/2021
+ms.date: 04/08/2021
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
 ---
@@ -235,11 +235,11 @@ Typically, the effective memory limit for a command is calculated on the memory 
 
 If the command operation attempts to consume more memory than allowed by the limit, the operation can fail, and an error is returned. For example, the following error describes an effective memory limit of 25 GB (P1 capacity) has been exceeded because the dataset already consumed 12 GB (12288 MB) when the command started execution, and an effective limit of 13 GB (13312 MB) was applied for the command operation:
 
-**"Resource governing: This operation was canceled because there wasn’t enough memory to finish running it. Either increase the memory of the Premium capacity where this dataset is hosted or reduce the memory footprint of your dataset by doing things like limiting the amount of imported data. More details: consumed memory 13312 MB, memory limit 13312 MB, database size before command execution 12288 MB. Learn more: https://aka.ms/premium-xmla-troubleshooting."**
+**"Resource governing: This operation was canceled because there wasn’t enough memory to finish running it. Either increase the memory of the Premium capacity where this dataset is hosted or reduce the memory footprint of your dataset by doing things like limiting the amount of imported data. More details: consumed memory 13312 MB, memory limit 13312 MB, database size before command execution 12288 MB. Learn more: https://go.microsoft.com/fwlink/?linkid=2159753."**
 
 In some cases, as shown in the following error, "consumed memory" is 0 but the amount shown for "database size before command execution" is already greater than the effective memory limit. This means the operation failed to begin execution because the amount of memory already used by the dataset is greater than the memory limit for the SKU.
 
-**"Resource governing: This operation was canceled because there wasn’t enough memory to finish running it. Either increase the memory of the Premium capacity where this dataset is hosted or reduce the memory footprint of your dataset by doing things like limiting the amount of imported data. More details: consumed memory 0 MB, memory limit 25600 MB, database size before command execution 26000 MB. Learn more: https://aka.ms/premium-xmla-troubleshooting."**
+**"Resource governing: This operation was canceled because there wasn’t enough memory to finish running it. Either increase the memory of the Premium capacity where this dataset is hosted or reduce the memory footprint of your dataset by doing things like limiting the amount of imported data. More details: consumed memory 0 MB, memory limit 25600 MB, database size before command execution 26000 MB. Learn more: https://go.microsoft.com/fwlink/?linkid=2159753."**
 
 To potentially reduce exceeding the effective memory limit:
 
