@@ -14,7 +14,7 @@ ms.date: 03/21/2021
 
 When you create a visual, there are times when it's useful to display additional information to the customer. Here are two such examples:
 
-* **To show additional information** - For example a text note or a video.
+* **To show additional information** - For example, a text note or a video.
 
 * **To display an input data dialog box** - For example, a date dialog box.
 
