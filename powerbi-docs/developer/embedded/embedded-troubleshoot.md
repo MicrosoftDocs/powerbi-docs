@@ -125,6 +125,10 @@ HTTP/1.1 403 Forbidden
 {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
 ```
 
+### What should I do if I receive a 307 temporary redirect HTTP response?
+
+When you're sending a [Power BI REST API](/rest/api/power-bi/) request, it might take your request time to access the right cluster. In such cases, the Power BI service returns a *307 Temporary Redirect* HTTP response. You may be able to reduce the response time of your request, by setting the `preferClientRouting` parameter to `true`.
+
 ## Authentication
 
 ### Authentication failed with AADSTS90002: Tenant 'authorize' not found
