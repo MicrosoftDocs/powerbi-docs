@@ -217,6 +217,22 @@ User consent is disabled for the tenant.
 
 Download [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) if you experience an "'AuthenticationContext' does not contain a definition for 'AcquireToken' and no accessible 'AcquireToken' accepting a first argument of type 'AuthenticationContext' could be found (are you missing a using directive or an assembly reference?)" error.
 
+### Azure AD token for a different tenant (guest user)
+
+When you *embed for your organization*, to allow Azure AD guest users access to your content, you need to specify the tenant ID in the `authorityUri` parameter.
+
+* URL for embedding in your organization's tenant:
+
+    `https://login.microsoftonline.com/common/v2.0`
+
+* URL for embedding for a guest Azure AD user:
+
+    `https://login.microsoftonline.com/<tenant ID>`
+
+To find your tenant ID, you can use the instructions in [Find the Microsoft Azure AD tenant ID and primary domain name](/partner-center/find-ids-and-domain-names#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name).
+
+For more information, see [How to: Sign in any Azure Active Directory user using the multi-tenant application pattern](/active-directory/develop/howto-convert-app-to-be-multi-tenant).
+
 ## Data sources
 
 ### ISV wants to have different credentials for the same data source
