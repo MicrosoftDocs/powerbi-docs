@@ -7,7 +7,7 @@ ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 03/19/2021
+ms.date: 04/08/2021
 LocalizationGroup: 
 ---
 
@@ -31,7 +31,7 @@ For example, if today's date is February 2, 2021 and our FactInternetSales table
 
 :::image type="content" source="media/incremental-refresh-xmla/partition-naming.png" border="false" alt-text="Partition naming granularity":::
 
-With each refresh operation, only the current refresh period partition(s) is refreshed. New rows with a date/time within the refresh period are added to the current partition and existing rows with a date/time within the current partition are refreshed with updates. Rows with a date/time older than the refresh period are moved into the previous historical partition, which is no longer refreshed with each refresh operation.
+With each refresh operation, only the current refresh period partition(s) is refreshed. A new partition is created for new rows with a new date/time, and existing rows with a date/time already within existing partition(s) in the incremental range are refreshed with updates. Rows with a date/time older than the refresh range are no longer refreshed.
 
 As whole periods close, partitions are merged. For example, if a one day refresh period and three year store period is specified in the policy, on the first day of the month, all day partitions for the previous month are merged into a month partition. On the first day of a new quarter, all three previous month partitions are merged into a quarter partition. On the first day of a new year, all four previous quarter partitions are merged into a year partition.
 

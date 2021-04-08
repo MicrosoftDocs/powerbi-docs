@@ -7,7 +7,7 @@ ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 03/19/2021
+ms.date: 04/08/2021
 LocalizationGroup: 
 ---
 # Incremental refresh for datasets
@@ -67,7 +67,7 @@ Regardless of incremental refresh, Power BI Pro datasets have a refresh time lim
 
 Because incremental refresh optimizes refresh operations at the partition level in the dataset, resource consumption can be significantly reduced. At the same time, even with incremental refresh, unless through the XMLA endpoint, refresh operations are bound by those same two and five-hour limits. An effective incremental refresh policy not only reduces the amount of data processed with a refresh operation, but also reduces the amount of unnecessary historical data stored in your dataset.
 
-Queries can also be limited by a default time limit for the data source. Most relational sources allow overriding time limit in the Power Query M expression. For example, the expression below uses the [SQL Server data-access function](/powerquery-m/sql-database) to set CommandTimeout to 2 hours. Each period defined by the policy ranges submits a query observing the command timeout setting.
+Queries can also be limited by a default time limit for the data source. Most relational data sources allow overriding time limit in the Power Query M expression. For example, the expression below uses the [SQL Server data-access function](/powerquery-m/sql-database) to set CommandTimeout to 2 hours. Each period defined by the policy ranges submits a query observing the command timeout setting.
 
 ```powerquery-m
 let

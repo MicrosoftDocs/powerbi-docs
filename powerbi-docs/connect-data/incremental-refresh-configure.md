@@ -7,7 +7,7 @@ ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 03/19/2021
+ms.date: 04/08/2021
 LocalizationGroup: 
 ---
 
@@ -56,7 +56,7 @@ With RangeStart and RangeEnd parameters defined, apply a filter based on *condit
 
 1. In Power Query Editor, click **Close & Apply**. Power Query will then load data based on the filters defined in the RangeStart and RangeEnd parameters, and any other filters you defined.
 
-    Power Query loads only data specified between the RangeStart and RangeEnd parameters. Depending on the amount of data in that period, load should go quickly. If it seems slow and process intensive, it's likely the query is not folding.
+    Power Query loads only data specified between the RangeStart and RangeEnd parameters. Depending on the amount of data in that period, load should go quickly. If it seems slow and process intensive, it's likely [the query is not folding](incremental-refresh-troubleshoot.md).
 
 ## Define policy
 
@@ -76,7 +76,7 @@ After you've defined RangeStart and RangeEnd parameters, and filtered data based
 
 1. Select optional settings:
 
-    Select **Detect data changes** to specify a date/time column used to identify and refresh only the days where the data has changed. A date/time column must exist, usually for auditing purposes, at the data source. This **should not be the same column** used to partition the data with the RangeStart and RangeEnd parameters. The maximum value of this column is evaluated for each of the periods in the incremental range. If it has not changed since the last refresh, the current period is not refreshed.
+    Select **Detect data changes** to specify a date/time column used to identify and refresh only the days where the data has changed. A date/time column must exist, usually for auditing purposes, at the data source. This **should not be the same column** used to partition the data with the RangeStart and RangeEnd parameters. The maximum value of this column is evaluated for each of the periods in the incremental range. If it has not changed since the last refresh, the current period is not refreshed. For datasets published to Premium capacities, you can also specify a custom query. To learn more, see [Advanced incremental refresh - Custom queries for detect data changes](incremental-refresh-xmla.md#custom-queries-for-detect-data-changes).
 
     Select **Only refresh complete days** to refresh only whole days. If the refresh operation detects a day is not complete, rows for that whole day are not refreshed.
 
@@ -84,7 +84,7 @@ After you've defined RangeStart and RangeEnd parameters, and filtered data based
 
 ## Save and publish to the service
 
-When your RangeStart and RangeEnd parameters, filtering, and refresh parameters are complete, be sure to save your model, and then publish to the service.
+When your RangeStart and RangeEnd parameters, filtering, and refresh parameters are complete, be sure to save your model, and then publish to the service. If your dataset will become large, be sure to enable [Large dataset storage format](../admin/service-premium-large-models.md) *prior* to invoking the first refresh in the service.
 
 ## Refresh dataset
 
