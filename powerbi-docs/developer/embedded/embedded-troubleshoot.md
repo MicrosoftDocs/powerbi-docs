@@ -221,11 +221,11 @@ Download [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org
 
 When you *embed for your organization*, to allow Azure AD guest users access to your content, you need to specify the tenant ID in the `authorityUri` parameter.
 
-* URL for embedding in your organization's tenant:
+* URL for authenticating in your organization's tenant:
 
     `https://login.microsoftonline.com/common/v2.0`
 
-* URL for embedding for a guest Azure AD user:
+* URL for authenticating a guest Azure AD user:
 
     `https://login.microsoftonline.com/<tenant ID>`
 
