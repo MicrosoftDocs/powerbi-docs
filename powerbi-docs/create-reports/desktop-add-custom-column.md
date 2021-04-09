@@ -12,13 +12,13 @@ LocalizationGroup: Create reports
 ---
 # Add a custom column in Power BI Desktop
 
-In Power BI Desktop, you can easily add a new custom column of data to your model by using Query Editor. With Query Editor, you create and rename your custom column to create [PowerQuery M formula queries](/powerquery-m/quick-tour-of-the-power-query-m-formula-language) to define your custom column. PowerQuery M formula queries have a [comprehensive function reference content set](/powerquery-m/power-query-m-function-reference). 
+In Power BI Desktop, you can easily add a new custom column of data to your model by using Power Query Editor. With Power Query Editor, you create and rename your custom column to create [PowerQuery M formula queries](/powerquery-m/quick-tour-of-the-power-query-m-formula-language) to define your custom column. PowerQuery M formula queries have a [comprehensive function reference content set](/powerquery-m/power-query-m-function-reference). 
 
-When you create a custom column in Query Editor, Power BI Desktop adds it as an **Applied Step** in the **Query Settings** of the query. It can be changed, moved, or modified at any time.
+When you create a custom column in Power Query Editor, Power BI Desktop adds it as an **Applied Step** in the **Query Settings** of the query. It can be changed, moved, or modified at any time.
 
 ![Screenshot shows the Add Custom Column dialog box.](media/desktop-add-custom-column/add-custom-column_01.png)
 
-## Use Query Editor to add a custom column
+## Use Power Query Editor to add a custom column
 
 To start creating a custom column, follow these steps:
 
@@ -84,6 +84,6 @@ After you've created your query, you can also use the **Advanced Editor** to mod
    
 ## Next steps
 
-- You can create a custom column in other ways, such as creating a column based on examples you provide to Query Editor. For more information, see [Add a column from an example in Power BI Desktop](desktop-add-column-from-example.md).
+- You can create a custom column in other ways, such as creating a column based on examples you provide to Power Query Editor. For more information, see [Add a column from an example in Power BI Desktop](desktop-add-column-from-example.md).
 
 - For Power Query M reference information, see [Power Query M function reference](/powerquery-m/power-query-m-function-reference).
