@@ -66,10 +66,10 @@ When focus is on the pane pivots, as described in the previous section, pressing
 
 In the **Field well**, focus order moves to:
 
-* each well's title (first)
-* followed by a given field in each well (next)
-* the dropdown button to open the field menu (after that)
-* then the removal button (last)
+1. Each well's title (first)
+2. Followed by a given field in each well (next)
+3. The dropdown button to open the field menu (after that)
+4. Then the removal button (last)
 
 The following image shows this focus progression ordering.
 
