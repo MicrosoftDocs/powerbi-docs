@@ -13,7 +13,7 @@ LocalizationGroup:
 
 # Configure incremental refresh
 
-This article describes how to configure incremental refresh for **datasets**. To learn about configuring incremental refresh for dataflows, see [Incremental refresh in Premium features of dataflows](../transform-model/dataflows/dataflows-premium-features.md#incremental-refresh).
+This article describes how to configure incremental refresh for **datasets**. To learn about configuring incremental refresh for dataflows, see [Premium features of dataflows - Incremental refresh](../transform-model/dataflows/dataflows-premium-features.md#incremental-refresh).
 
 Configuring incremental refresh includes creating RangeStart and RangeEnd parameters, applying filters, and defining an incremental refresh policy. After publishing to the service, you perform an initial refresh operation on the dataset. The initial refresh operation, and subsequent refresh operations apply the incremental refresh policy you defined. Before completing these steps, be sure you fully understand the functionality described in [Incremental refresh for datasets](incremental-refresh-overview.md).
 

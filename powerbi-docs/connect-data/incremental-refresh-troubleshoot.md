@@ -12,13 +12,13 @@ LocalizationGroup:
 ---
 # Troubleshoot incremental refresh
 
-Because there are two phases when implementing an incremental refresh solution, the first being configuring parameters, filtering, and a policy in Power BI Desktop, and the second being the initial dataset refresh operation and subsequent refreshes in the service, we will look at troubleshooting separately for each of these phases.
+Because there are two phases when implementing an incremental refresh solution, the first being configuring parameters, filtering, and defining a policy in Power BI Desktop, and the second being the initial dataset refresh operation and subsequent refreshes in the service, we will look at troubleshooting separately for each of these phases.
 
 Before troubleshooting incremental refresh, be sure to review [Incremental refresh for datasets](incremental-refresh-overview.md) and step-by-step information in [Configure incremental refresh](incremental-refresh-configure.md).
 
 ## Configuring in Power BI Desktop
 
-Most problems that occur when configuring incremental refresh have to do with query folding. As described in [Incremental refresh for datasets overview - Supported data sources](incremental-refresh-overview.md#supported-data-sources), your data source should support query folding.
+Most problems that occur when configuring incremental refresh have to do with query folding. As described in [Incremental refresh for datasets overview - Supported data sources](incremental-refresh-overview.md#supported-data-sources), your data source must support query folding.
 
 ### Problem: Loading data takes too long
 
@@ -54,7 +54,7 @@ Scheduled refresh for Power BI Pro datasets on a shared capacity have a time lim
 
 #### Cause: Data source queries aren't being folded
 
-While problems with query folding can usually be determined in Power BI Desktop before publishing to the service, it's possible dataset refresh queries are not being folded, leading to excessive refresh times and engine resource utilization. This is because a query is created for every partition in the dataset. If the queries are not being folded, and data is not being filtered at the data source, the engine then attempts to filter the data.
+While problems with query folding can usually be determined in Power BI Desktop before publishing to the service, it's possible dataset refresh queries are not being folded, leading to excessive refresh times and query mashup engine resource utilization. This is because a query is created for every partition in the dataset. If the queries are not being folded, and data is not being filtered at the data source, the engine then attempts to filter the data.
 
 #### Solution: Verify query folding
 
@@ -91,11 +91,11 @@ Many data sources allow overriding time limit in the query expression. To learn 
 With a refresh operation, only data that has changed at the data source is refreshed in the dataset. As the data is divided by a date, it’s recommended post (transaction) dates are not changed.
 
 If a date is changed accidentally, then two issues can occur: Users notice some totals changed in the historical data (that is not supposed to happen), or during a refresh an error is returned indicating a unique value is not in fact unique.
-For the latter, this can happen when the table with incremental refresh configured is used in a 1:N relationship with another table as the 1 side and should have unique values. When the data is changed (for a specific id), that id then appears in another partition and the engine will detect the value is not unique.
+For the latter, this can happen when the table with incremental refresh configured is used in a 1:N relationship with another table as the 1 side and should have unique values. When the data is changed (for a specific ID), that ID then appears in another partition and the engine will detect the value is not unique.
 
 #### Solution: Refresh specific partitions
 
-Where there is a business need to change some past data from the dates, a possible solution is to use SSMS to refresh all partitions from the point where was the change is located up to the current refresh partition, thus keeping the 1 side of the relationship unique.
+Where there is a business need to change some past data from the dates, a possible solution is to use SSMS to refresh all partitions from the point where the change is located up to the current refresh partition, thus keeping the 1 side of the relationship unique.
 
 ### Problem: Data is truncated
 

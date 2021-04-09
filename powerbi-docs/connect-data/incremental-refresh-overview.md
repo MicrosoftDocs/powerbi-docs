@@ -52,7 +52,7 @@ Because support for query folding is different for different types of data sourc
 
 If you see this warning and want to verify the necessary query folding is occurring, use the Power Query Diagnostics feature or trace queries by using a tool supported by the data source, like SQL Profiler. If query folding is not occurring, verify the filter logic is included in the query being passed to the data source. If not, it's likely the query includes a transformation that prevents folding.
 
-Before configuring your incremental refresh solution, be sure to thoroughly read and understand [Query folding guidance in Power BI Desktop](../guidance/power-query-folding.md) and [Power Query query folding](/power-query/power-query-folding). These articles can help you determine if your data source and queries supports query folding.
+Before configuring your incremental refresh solution, be sure to thoroughly read and understand [Query folding guidance in Power BI Desktop](../guidance/power-query-folding.md) and [Power Query query folding](/power-query/power-query-folding). These articles can help you determine if your data source and queries support query folding.
 
 #### Other data source types
 
@@ -151,7 +151,7 @@ The current design requires that the column to detect data changes is persisted 
 - Reduce the precision to an acceptable level, given your refresh-frequency requirements.
 - Define a custom query for detecting data changes by using the XMLA endpoint and avoid persisting the column value altogether.
 
-In some cases, enabling the Detect data changes option can be further enhanced. For example, you may want to avoid persisting a last-update column in the in-memory cache, or enable scenarios where a configuration/instruction table is prepared by ETL processes for flagging only those partitions that need to be refreshed. In cases like these, for Premium capacities, use TMSL and/or TOM to override the detect data changes behavior. To learn more, see [Advanced incremental refresh - Custom queries for detect data changes](incremental-refresh-xmla.md#custom-queries-for-detect-data-changes).
+In some cases, enabling the Detect data changes option can be further enhanced. For example, you may want to avoid persisting a last-update column in the in-memory cache, or enable scenarios where a configuration/instruction table is prepared by ETL processes for flagging only those partitions that need to be refreshed. In cases like these, for Premium capacities, use Tabular Model Scripting Language (TMSL) and/or the Tabular Object Model (TOM) to override the detect data changes behavior. To learn more, see [Advanced incremental refresh - Custom queries for detect data changes](incremental-refresh-xmla.md#custom-queries-for-detect-data-changes).
 
 #### 5 - Only refresh complete days
 

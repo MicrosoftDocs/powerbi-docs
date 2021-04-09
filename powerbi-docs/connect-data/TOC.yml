@@ -211,7 +211,7 @@
           href: ../connect-data/incremental-refresh-overview.md
         - name: Configure incremental refresh
           href: ../connect-data/incremental-refresh-configure.md
-        - name: Advanced incremental refresh with the XMLA endpoint
+        - name: Advanced incremental refresh
           href: ../connect-data/incremental-refresh-xmla.md
         - name: Troubleshoot incremental refresh
           href: ../connect-data/incremental-refresh-troubleshoot.md
