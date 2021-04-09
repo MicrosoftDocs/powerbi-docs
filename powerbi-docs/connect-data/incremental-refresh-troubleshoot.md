@@ -91,7 +91,7 @@ Many data sources allow overriding time limit in the query expression. To learn 
 With a refresh operation, only data that has changed at the data source is refreshed in the dataset. As the data is divided by a date, it’s recommended post (transaction) dates are not changed.
 
 If a date is changed accidentally, then two issues can occur: Users notice some totals changed in the historical data (that is not supposed to happen), or during a refresh an error is returned indicating a unique value is not in fact unique.
-For the latter, this can happen when the table with incremental refresh configured is used in a 1:N relationship with another table as the 1 side and should have unique values. When the data is changed (for a specific id), that id then appears in another partition and the engine will detect the value is not unique.
+For the latter, this can happen when the table with incremental refresh configured is used in a 1:N relationship with another table as the 1 side and should have unique values. When the data is changed (for a specific ID), that ID then appears in another partition and the engine will detect the value is not unique.
 
 #### Solution: Refresh specific partitions
 
