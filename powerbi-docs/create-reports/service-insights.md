@@ -4,8 +4,7 @@ description: Learn how to get insights about your datasets and dashboard tiles.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom: video-et_MLSL2sA8
-ms.custom: seodec18
+ms.custom: video-et_MLSL2sA8, seodec18
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
