@@ -56,7 +56,7 @@ With RangeStart and RangeEnd parameters defined, apply a filter based on *condit
 
 1. In Power Query Editor, click **Close & Apply**. Power Query will then load data based on the filters defined in the RangeStart and RangeEnd parameters, and any other filters you defined.
 
-    Power Query loads only data specified between the RangeStart and RangeEnd parameters. Depending on the amount of data in that period, load should go quickly. If it seems slow and process intensive, it's likely [the query is not folding](incremental-refresh-troubleshoot#cause-the-data-source-does-not-support-query-folding.md).
+    Power Query loads only data specified between the RangeStart and RangeEnd parameters. Depending on the amount of data in that period, load should go quickly. If it seems slow and process intensive, it's likely [the query is not folding](incremental-refresh-troubleshoot.md).
 
 ## Define policy
 
