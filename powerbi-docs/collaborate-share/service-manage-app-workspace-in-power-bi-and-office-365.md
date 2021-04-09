@@ -13,7 +13,7 @@ LocalizationGroup: Share your work
 
 # Manage a 'classic' workspace in Power BI and Microsoft 365
 
-As creator or admin of a ['classic' workspace in Power BI](service-create-workspaces.md) in Power BI, you manage some aspects of the workspace in Power BI. Other aspects you manage in Microsoft 365.
+As creator or admin of a ['classic' workspace in Power BI](service-create-workspaces.md), you manage some aspects of the workspace in Power BI. Other aspects you manage in Microsoft 365.
 
 > [!NOTE]
 > The [new workspace experience](service-create-the-new-workspaces.md) changes the relationship between Power BI workspaces and Microsoft 365 groups. You aren't automatically creating a Microsoft 365 group every time you create one of the new workspaces. Ready to migrate a classic workspace? See [Upgrade classic workspaces to the new workspaces](service-upgrade-workspaces.md).
