@@ -5,7 +5,7 @@ author: mihart
 ms.author: mihart
 manager: kvivek
 ms.reviewer: 'tessa'
-featuredvideoid: jtlLGRKBvXY
+ms.custom: video-jtlLGRKBvXY
 ms.custom: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: pbi-visuals
