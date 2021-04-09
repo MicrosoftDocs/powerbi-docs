@@ -31,7 +31,7 @@ Take a look at the list of topics under the **Power BI reports** header in the T
 * Creating refresh schedules.
 * Using Q&A functionality to create visuals in reports.
 * Showing data used to create the visualization. 
-* Setting up drill through.
+* Setting up drillthrough.
 * Duplicating a report page.
 * [Using report settings](power-bi-report-settings.md) to control your readers' interactions with reports.
 

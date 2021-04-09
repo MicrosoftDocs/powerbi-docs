@@ -125,6 +125,10 @@ HTTP/1.1 403 Forbidden
 {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
 ```
 
+### What should I do if I receive a 307 temporary redirect HTTP response?
+
+When you're sending a [Power BI REST API](/rest/api/power-bi/) request, it might take your request time to access the right cluster. In such cases, the Power BI service returns a *307 Temporary Redirect* HTTP response. You may be able to reduce the response time of your request, by setting the `preferClientRouting` parameter to `true`.
+
 ## Authentication
 
 ### Authentication failed with AADSTS90002: Tenant 'authorize' not found
@@ -216,6 +220,22 @@ User consent is disabled for the tenant.
 ### CS1061 error
 
 Download [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) if you experience an "'AuthenticationContext' does not contain a definition for 'AcquireToken' and no accessible 'AcquireToken' accepting a first argument of type 'AuthenticationContext' could be found (are you missing a using directive or an assembly reference?)" error.
+
+### Azure AD token for a different tenant (guest user)
+
+When you *embed for your organization*, to allow Azure AD guest users access to your content, you need to specify the tenant ID in the `authorityUri` parameter.
+
+* URL for authenticating in your organization's tenant:
+
+    `https://login.microsoftonline.com/common/v2.0`
+
+* URL for authenticating a guest Azure AD user:
+
+    `https://login.microsoftonline.com/<tenant ID>`
+
+To find your tenant ID, you can use the instructions in [Find the Microsoft Azure AD tenant ID and primary domain name](/partner-center/find-ids-and-domain-names#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name).
+
+For more information, see [How to: Sign in any Azure Active Directory user using the multi-tenant application pattern](/active-directory/develop/howto-convert-app-to-be-multi-tenant).
 
 ## Data sources
 
@@ -336,7 +356,7 @@ If you get the error - AADSTS50079: The user is required to use multi-factor aut
 
 Need to use an AAD account that doesn't have MFA enabled.
 
-For more information, please see [Power BI Embedded FAQ](embedded-faq.md).
+For more information, please see [Power BI Embedded FAQ](embedded-faq.yml).
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
 
@@ -344,6 +364,6 @@ If you require further assistance, then [contact support](https://powerbi.micros
 
 ## Next steps
 
-For more information, see [FAQs](embedded-faq.md).
+For more information, see [FAQs](embedded-faq.yml).
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

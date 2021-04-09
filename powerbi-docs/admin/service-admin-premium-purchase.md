@@ -20,7 +20,7 @@ This article describes how to purchase Power BI Premium capacity for your organi
 For more information about Power BI Premium, see [What is Power BI Premium?](service-premium-what-is.md). For current pricing and planning information, see the [Power BI pricing page](https://powerbi.microsoft.com/pricing/). Content creators still need a [Power BI Pro license](service-admin-purchasing-power-bi-pro.md), even if your organization uses Power BI Premium. Ensure you purchase at least one Power BI Pro license for your organization. With A SKUs, _all users_ who consume content also require Pro licenses.
 
 > [!NOTE]
-> If a Premium subscription expires, you have 30 days of full access to your capacity. After that, your content reverts to a shared capacity. Models that are greater than 1 GB are not supported in shared capacity.
+> If a Premium subscription expires, you have 30 days of full access to your capacity. After that, your content reverts to a shared capacity where it will continue to be accessible. However, you will not be able to view reports that are based on datasets that are greater than 1 GB or reports that require Premium capacities to render.
 
 > [!NOTE]
 > Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
@@ -96,13 +96,13 @@ You can cancel your subscription from within the Microsoft 365 admin center. To 
 
 1. Select **More actions** > **Cancel subscription**.
 
-1. The **Cancel subscription** page will indicate whether or not you are responsible for an [early termination fee](https://support.office.com/article/early-termination-fees-6487d4de-401a-466f-8bc3-c0beb5cc40d3). This page will also let you know when the data will be deleted for the subscription.
+1. The **Cancel subscription** page will indicate whether or not you are responsible for an [early termination fee](https://support.office.com/article/early-termination-fees-6487d4de-401a-466f-8bc3-c0beb5cc40d3).  
 
 1. Read through the information, and if you want to proceed, select **Cancel subscription**.
 
 #### When canceling or your license expires
 
-When you cancel your Premium subscription, or your capacity license expires, you can continue to access your Premium capacities for a period of 30 days from the date of cancellation or license expiration. After 30 days, you will no longer be able to access your Premium capacities or workspaces in them.
+When you cancel your Premium subscription, or your capacity license expires, you can continue to access your Premium capacities for a period of 30 days from the date of cancellation or license expiration. After 30 days, your workspaces will move to a shared capacity and will still be accessible. However, you will not be able to view reports that are based on datasets that require Premium capacities to render. This includes datasets larger than 1GB and refreshes of those datasets.
 
 ## Purchase A SKUs for testing and other scenarios
 
