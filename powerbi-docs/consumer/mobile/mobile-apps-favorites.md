@@ -17,7 +17,7 @@ Applies to:
 | iPhones |iPads |Android phones |Android tablets |Windows 10 devices |
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones-eol-reached)
+>Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 Read about making and viewing your favorite Power BI dashboards, reports, and apps, together with your favorite on-premises Power BI Report Server and Reporting Services KPIs and reports, in the mobile apps.
 

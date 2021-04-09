@@ -16,7 +16,7 @@ For related "What's New" information, see:
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)  
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones-eol-reached)
+>Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## March 2021
 ### Easily find content by type
@@ -435,13 +435,13 @@ We increased phone report canvas size to have room for more visuals than before.
 
 ### May 2018
 
-#### Mobile drill-through: all mobile apps
+#### Mobile drillthrough: all mobile apps
 
 You can drill through from a selected data point to another report page in the mobile apps, if the report author has defined that action. 
 
 #### Back button: all mobile apps
 
-Now when you navigate through a report by swiping, choosing a report page on the action bar, or using drill-through, the back button takes you back to the previous page you were looking at. 
+Now when you navigate through a report by swiping, choosing a report page on the action bar, or using drillthrough, the back button takes you back to the previous page you were looking at. 
 
 #### Dashboard themes: all mobile apps
 
@@ -458,7 +458,7 @@ The Power BI for Mixed Reality app is now in the Microsoft Store. View your dash
 
 ### April 2018
 
-#### Mobile drill-down and drill-up
+#### Drill-down and drill-up buttons in the mobile app
 
 You can now drill down and drill up to dive into report visuals on your mobile device. To access this new feature, tap and hold to open the tooltip menu on a report visual, and then tap the drill buttons to explore your data in depth. More about [drilling up and down in the mobile apps](https://powerbi.microsoft.com/blog/drill-down-up-in-power-bi-mobile-apps/).
 

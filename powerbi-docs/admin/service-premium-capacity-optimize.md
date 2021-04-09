@@ -159,7 +159,7 @@ Incremental refresh can significantly reduce data refresh duration, especially f
 - **Refreshes are more reliable** - Shorter running connections to volatile datasource systems are less susceptible to disconnection.
 - **Models remain trim** - Incremental refresh policies can be configured to automatically remove history beyond a sliding window of time.
 
-To learn more, see [Incremental refresh in Power BI Premium](service-premium-incremental-refresh.md).
+To learn more, see [Incremental refresh for datasets](../connect-data/incremental-refresh-overview.md).
 
 ### Why are data refreshes not completing?
 

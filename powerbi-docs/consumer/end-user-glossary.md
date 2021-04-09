@@ -143,8 +143,8 @@ Power BI Premium. The shape of the icon that signifies a workspace is a Premium 
 Dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a a dataset, dimensions are a way to group *measures* into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country, or marketing campaign.   
 
 **drill up, drill down, drillthrough**    
-In Power BI, use drill down and drill up to refer to the ability to explore the next level of detail in a report or visual. 
-Use drillthrough to refer to the ability to select a part of a visual and be taken to another page in the report, filtered to the data that relates to the part of the visual you selected on the original page.
+In Power BI, "drill down" and "drill up" refer to the ability to explore the next level of detail in a report or visual. 
+"Drill through" refers to the ability to select a part of a visual and be taken to another page in the report, filtered to the data that relates to the part of the visual you selected on the original page.
 Drill to details commonly means to show the underlying records.
 
 ## E
