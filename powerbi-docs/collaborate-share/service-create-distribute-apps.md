@@ -6,7 +6,9 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/02/2020
+ms.custom: content-perf-fy21q3
+ms.date: 04/02/2021
+
 LocalizationGroup: Share your work
 ---
 # Publish an app in Power BI
@@ -123,7 +125,7 @@ Here are general things to keep in mind when using the new navigation builder:
 * Report pages are shown in the app navigation area as an expandable section. When a report has one visible page, only the report name is shown. Clicking the report name in the navigation opens the first page of the report. 
 
     > [!NOTE]
-    > Your report might have only one visible page because you've set up navigation to the rest of the pages with buttons or drillthrough actions.
+    > Your report might have only one visible page because you've set up navigation to the rest of the pages with buttons or drill-through actions.
 
 * If you turn off the new navigation builder and then publish or update your app, you lose the customizations you've made. For example, sections, ordering, links, and custom names for navigation items are all lost.
 * The option to not use the app builder is available.

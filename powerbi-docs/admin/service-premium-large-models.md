@@ -30,7 +30,7 @@ Large datasets in the service do not affect the Power BI Desktop model upload si
 
 Steps here describe enabling large datasets for a new model published to the service. For existing datasets, only step three is necessary.
 
-1. Create a model in Power BI Desktop. If your dataset will become larger and progressively consume more memory, be sure to configure [Incremental refresh](service-premium-incremental-refresh.md).
+1. Create a model in Power BI Desktop. If your dataset will become larger and progressively consume more memory, be sure to configure [Incremental refresh](../connect-data/incremental-refresh-overview.md).
 
 1. Publish the model as a dataset to the service.
 
@@ -177,7 +177,7 @@ The following links provide information that can be useful for working with larg
 * [Configure Multi-Geo support for Power BI Premium](service-admin-premium-multi-geo.md)
 * [Bring your own encryption keys for Power BI](service-encryption-byok.md)
 * [How capacities function](service-premium-what-is.md#how-capacities-function)
-* [Incremental refresh](service-premium-incremental-refresh.md).
+* [Incremental refresh for datasets](../connect-data/incremental-refresh-overview.md)
 
 Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
 * Performance

@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 
 This article lists visualizations available in Power BI. We'll be adding new visualizations, stay tuned!
 
-And check out the [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) , where you'll find a growing list of [Power BI visuals](../developer/visuals/power-bi-custom-visuals.md) you can download and use in your own dashboards and reports. Feeling creative? [Learn how to create and add your own visuals to this community site](../developer/visuals/office-store.md).  
+And check out the [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), where you'll find a growing list of [Power BI visuals](../developer/visuals/power-bi-custom-visuals.md) you can download and use in your own dashboards and reports. Feeling creative? [Learn how to create and add your own visuals to this community site](../developer/visuals/office-store.md).  
 
 ## Visualizations in Power BI
 All of these visualizations can be added to Power BI reports, specified in Q&A, and pinned to dashboards.

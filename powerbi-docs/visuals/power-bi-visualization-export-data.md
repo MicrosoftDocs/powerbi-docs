@@ -248,7 +248,7 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
 
     - Other factors are at play that increase file size and decrease the number of rows Power BI can export.
 
-- If the visualization uses data from more than one data table, and no relationship exists for those tables in the data model, Power BI only exports data for the first table.
+- If the visualization uses data from more than one data table, and no active relationship exists for those tables in the data model, Power BI only exports data for the first table.
 
 - Power BI custom visuals and R visuals aren't currently supported.
 

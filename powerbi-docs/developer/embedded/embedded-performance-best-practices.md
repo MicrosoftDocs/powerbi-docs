@@ -58,7 +58,7 @@ Organizations with Power BI Premium capacity or Power BI Embedded capacity can t
 
 ## Preload
 
-Use `powerbi.preload()` to improve the end-user performance. The method `powerbi.preload()` downloads Javascript, css files, and other artifacts, which are used later to embed a report.
+Use `powerbi.preload()` to improve the end-user performance. The method `powerbi.preload()` downloads JavaScript, css files, and other artifacts, which are used later to embed a report.
 
 Call `powerbi.preload()` if you're not embedding the report immediately. For example, if the embedded Power BI content doesn't appear in the home page, use `powerbi.preload()` to download and cache the artifacts that are used for embedding the content.
 
@@ -103,4 +103,4 @@ The Performance Analyzer will allow you to see and record logs that measure how 
 
 * [Power BI optimization guide](../../guidance/power-bi-optimization.md)
 * [How to troubleshoot Power BI embedded analytics issues](embedded-troubleshoot.md)
-* [Power BI embedded analytics FAQ](embedded-faq.md)
+* [Power BI embedded analytics FAQ](embedded-faq.yml)

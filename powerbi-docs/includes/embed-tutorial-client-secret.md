@@ -24,3 +24,6 @@ To get the client secret, follow these steps:
 6. In the **Add a client secret** pop-up window, provide a description for your application secret, select when the application secret expires, and select **Add**.
 
 7. From the **Client secrets** section, copy the string in the **Value** column of the newly created application secret. The client secret value is your *client ID*.
+
+>[!NOTE]
+>Make sure you copy the client secret value when it first appears. After navigating away from this page, the client secret will be hidden and you'll not be able to retrieve its value.
