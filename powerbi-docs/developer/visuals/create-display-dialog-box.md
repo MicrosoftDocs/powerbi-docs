@@ -98,7 +98,7 @@ Each dialog box implementation file should include the following components:
 
 * [A result class](#create-a-result-class)
 
-* [A registry list](add-your-dialog-box-to-the-registry-list)
+* [A registry list](#add-your-dialog-box-to-the-registry-list)
 
 #### Create a dialog box class
 
