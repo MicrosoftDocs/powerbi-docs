@@ -55,7 +55,7 @@ As a report consumer navigates around a report, focus shows up to indicate where
 
 ![Focus for accessibility navigation](media/desktop-accessibility/accessibility-creating-reports-01.png)
 
-To access the most frequently used keyboard shortcuts, you can press *?* to display a keyboard shortcut dialog. To learn more, see these articles on accessible consumption experiences and keyboard shortcuts in the [Next steps](#next-steps) section at the end of this article.
+To access the most frequently used keyboard shortcuts, you can press ? to display a keyboard shortcut dialog. To learn more, see these articles on accessible consumption experiences and keyboard shortcuts in the [Next steps](#next-steps) section at the end of this article.
 
 
 ### Screen reader compatibility
@@ -68,12 +68,12 @@ Power BI has high contrast support for reports. If you're using a high contrast 
 
 ![Screenshot shows a report in high contrast windows settings.](media/desktop-accessibility/accessibility-05b.png)
 
-The Power BI service also attempts to detect the high contrast settings selected for Windows, but how effective and accurate that detection is depends on the browser being used for the Power BI service. If you want to set the theme manually in the Power BI service, in the top-right corner you can select **V > High contrast** colors and then select the theme you would like to apply to the report.
+The Power BI service also attempts to detect the high contrast settings selected for Windows, but how effective and accurate that detection is depends on the browser being used for the Power BI service. If you want to set the theme manually in the Power BI service, in the top-right corner you can select **View** > **High contrast colors** and then select the theme you would like to apply to the report.
 
 ![Screenshot shows how to select a theme of high contrast colors.](media/desktop-accessibility/accessibility-creating-reports-02.png)
 
 ### Focus mode
-If a report consumer is looking at a visual in a dashboard, they can expand the visual to fill up more of their screen by navigating to the context menu of the visual and selecting **Open in focus mode**.
+If a report consumer is looking at a visual in a dashboard, they can expand the visual to fill up more of their screen by selecting the **Focus mode** icon in the context menu of the visual.
 
 ![Focus mode](media/desktop-accessibility/accessibility-creating-reports-03.png)
 
@@ -116,9 +116,9 @@ One feature that makes Power BI so compelling is that its data is dynamic. You c
 ### Tab order
 Setting the tab order helps keyboard users navigate your report in an order that matches the way users visually process the report visuals. If you're including decorative shapes and images in your report, you should remove those from the tab order. 
 
-To set the tab order, select the **View** tab in the ribbon and select the **Selection Pane** button to display the Selection pane.
+To set the tab order, select the **View** tab in the ribbon and under **Show panes**, select **Selection** to display the **Selection** pane.
 
-![View menu to show Selection Pane](media/desktop-accessibility/accessibility-creating-reports-08.png)
+![View menu to show Selection pane](media/desktop-accessibility/accessibility-creating-reports-08.png)
 
 In the **Selection pane**, selecting **Tab order** displays the current tab order for your report. You can select an object, then use the up and down arrow buttons to move the object in the hierarchy, or you can select an object with your mouse and drag it into the position you'd like it the list. Clicking on the number next to an object hides the object from the tab order.
 
