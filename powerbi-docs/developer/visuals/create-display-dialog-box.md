@@ -20,17 +20,15 @@ When you create a visual, there are times when it's useful to display additional
 
 For these purposes, you can create a dialog visual pop-up window, referred to as a *dialog window box* in this article.
 
-One of the main befits of creating a dialog box using the method described in this article, is the ability to control its size. 
-
 ## Dialog box considerations
 
 When creating a dialog box for your visual, consider the following:
 
+* During development, you can specify the size of the dialog box.
+
 * When the dialog box is triggered, the report background is greyed.
 
 * The dialog box appears in the middle of the screen.
-
-* During development, you can specify the size of the dialog box.
 
 * The dialog box will display the icon of the visual and its name.
 
@@ -41,15 +39,15 @@ When creating a dialog box for your visual, consider the following:
 >[!IMPORTANT]
 >The dialog box must not be triggered spontaneously. It must be used as part of a user event.
 
-## How to configure the dialog box
+## How to configure a dialog box
 
-To configure the dialog box, you need to add three components to your code:
+To configure a dialog box, you need to add three components to your code:
 
 * [A declaration](#declare-the-dialog-box-function) - Each dialog box function needs to be declared in the `visual.ts` file.
 
-* [Buttons configuration](#configure-the-dialog-box-buttons) - In the `visuals.ts` file, configure the behavior of the dialog box buttons.
+* [Button configuration](#configure-the-dialog-box-buttons) - In the `visuals.ts` file, configure the behavior of the dialog box buttons.
 
-* [An implementation file](#create-the-dialog-box-implementation-file) - It's recommended to create an implementation file for each dialog.
+* [An implementation file](#create-the-dialog-box-implementation-file) - It's recommended to create an implementation file for each dialog box.
 
 ### Declare the dialog box function
 
@@ -144,7 +142,7 @@ export class DatePickerDialogResult {
 
 ### Add your dialog box to the registry list
 
-Every dialog implementation file needs to include a registry reference. Add the two lines in the example below, to your dialog box implementation file. The first line includes should be identical in every dialog box implementation file. The second line lists your dialog box, modify it according to the name of your dialog box class. 
+Every dialog implementation file needs to include a registry reference. Add the two lines in the example below, to your dialog box implementation file. The first line should be identical in every dialog box implementation file. The second line lists your dialog box, modify it according to the name of your dialog box class.
 
 ```javascript
 globalThis.dialogRegistry = globalThis.dialogRegistry || {};
