@@ -150,15 +150,15 @@ Sensitivity labels can be viewed on reports and dashboards in the Power BI mobil
 
 ![Screen shot of sensitivity label in mobile app](media/service-security-sensitivity-label-overview/mobile-app-sensitivity-label2.png)
 
-## Change rights for changing or removing sensitivity labels
+## Label change enforcement
 
 Power BI restricts permission to change or remove Microsoft Information Protection sensitivity labels that have file encryption settings to authorized users only. 
 
 Authorized users are:
 * The user who applied the sensitivity label. 
-* Users who have been assigned [Full control and/or Export usage rights](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide) to the label in the labeling admin center ([Microsoft 365 compliance center](https://compliance.microsoft.com/), [Microsoft 365 security center](https://security.microsoft.com/), or [Security & Compliance Center](https://protection.office.com/)).
+* Users who have been assigned [OWNER or EXPORT or EDIT and EDITRIGHTSDATA usage rights](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide) to the label in the labeling admin center ([Microsoft 365 compliance center](https://compliance.microsoft.com/), [Microsoft 365 security center](https://security.microsoft.com/), or [Security & Compliance Center](https://protection.office.com/)).
 
-User who try to change a label and can’t should ask the person who applied the label to perform the modification, or they can contact Microsoft 365/Office security administrator and ask for [Full control and/or Export usage rights](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide) to the relevant label.
+User who try to change a label and can’t should ask the person who applied the label to perform the modification, or they can contact Microsoft 365/Office security administrator and ask to be granted the necessary usage rights.
 
 ## Supported clouds
 Sensitivity labels are only supported for tenants in global (public) clouds; they are not supported for tenants in clouds such as national clouds.
