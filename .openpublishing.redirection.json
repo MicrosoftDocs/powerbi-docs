@@ -2056,11 +2056,6 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/service-premium-incremental-refresh.md",
-            "redirect_url": "/power-bi/admin/service-premium-incremental-refresh",
-            "redirect_document_id": true
-        },
-        {
             "source_path": "powerbi-docs/service-premium-large-models.md",
             "redirect_url": "/power-bi/admin/service-premium-large-models",
             "redirect_document_id": true
@@ -3873,6 +3868,16 @@
         {
             "source_path": "powerbi-docs/desktop-send-smile-privacy-statement.md",
             "redirect_url": "/power-bi/fundamentals/desktop-send-smile-privacy-statement",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-premium-incremental-refresh.md",
+            "redirect_url": "/power-bi/connect-data/incremental-refresh-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-premium-incremental-refresh.md",
+            "redirect_url": "/power-bi/connect-data/incremental-refresh-overview",
             "redirect_document_id": false
         },
         {
