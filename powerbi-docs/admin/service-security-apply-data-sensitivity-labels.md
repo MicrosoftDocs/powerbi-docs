@@ -5,6 +5,7 @@ author: paulinbar
 ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
+ms.custom: video-68YvRs49VZM
 ms.topic: how-to
 ms.date: 04/02/2021
 LocalizationGroup: Data from files
@@ -73,6 +74,10 @@ To use sensitivity labels in Power BI Desktop:
 * You must belong to a security group that has permissions to apply sensitivity labels, as described in [Enable sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md).
 * All [licensing and other requirements](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements) must have been met.
 * You must be signed in.
+
+Watch a short video on applying sensitivity labels and then try it out yourself.
+
+[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4M5Gj]
 
 To apply a sensitivity label on the file you're working on, click the sensitivity button in the home tab and choose the desired label from the menu that appears.
 

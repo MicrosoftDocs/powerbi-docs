@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 05/19/2020
+ms.date: 04/06/2021
 ---
 # View on-premises reports and KPIs in the Power BI Windows app
 The Power BI app for Windows 10 offers live, touch-enabled mobile access to your important on-premises business information in SQL Server 2016 Reporting Services. 
@@ -22,7 +22,7 @@ Then in the Power BI app for Windows 10, view the KPS, mobile reports, and Power
 > Your device needs to be running Windows 10. The app works best on devices with at least 1 GB RAM and 8 GB internal storage.
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+>Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## Explore samples without a SQL Server 2016 Reporting Services server
 Even if you don't have access to a Reporting Services web portal, you can still explore the features of Reporting Services mobile reports.

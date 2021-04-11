@@ -51,6 +51,13 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Right-click | <ul><li>Windows keyboard: **Windows context key + F10**. The Windows context key is between the Left Alt key and the Left Arrow Key</li><li>Other keyboard: **Shift + F10**</li></ul> |
 | Clear selection | **Ctrl + Shift + C** |
 | Show or hide tooltip | **Ctrl + H** |
+| Move a visual on the canvas (small moves)* | **Arrow keys (up, down, right, left**) |
+| Move a visual on the canvas (bigger moves)* | **Shift + arrow keys** |
+| Resize a visual* | **Arrow keys**  |
+| Maintain aspect ratio*  | **Shift** + drag the resize handles |
+
+
+\* Must be in editing mode
 
 ## Table and matrix navigation
 | To do this action          | Press                |

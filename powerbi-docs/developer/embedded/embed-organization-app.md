@@ -96,6 +96,9 @@ To embed your report, you'll need the following values:
 
 If you don't know what's your domain or tenant ID, see [Find the Microsoft Azure AD tenant ID and primary domain name](/partner-center/find-ids-and-domain-names#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name).
 
+>[!NOTE]
+>To [embed content for a user on a different tenant](embedded-troubleshoot.md#azure-ad-token-for-a-different-tenant-guest-user) (a guest user), you'll need to adjust the `authorityUri` parameter.
+
 ### Client ID
 
 [!INCLUDE[Get the client ID](../../includes/embed-tutorial-client-id.md)]
