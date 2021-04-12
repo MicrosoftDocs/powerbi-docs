@@ -49,7 +49,7 @@ Sensitivity labels and file encryption **are not** applied in non-supported expo
 Applying sensitivity labels and their associated protection to data that leaves the Power BI service is currently supported for the following export paths:
 * Export to Excel, PDF files (Service only), and PowerPoint.
 * Analyze in Excel from the Power BI service, which triggers download of an Excel file with a live connection to a Power BI dataset.
-* PivotTable in Excel with a live connection to a Power BI dataset, for users with M365 E3 and above.
+* PivotTable in Excel with a live connection to a Power BI dataset, for users with Microsoft 365 E3 and above.
 * Download to .pbix (Service)
 
 >[!NOTE]
@@ -155,7 +155,11 @@ Sensitivity labels can be viewed on reports and dashboards in the Power BI mobil
 Power BI restricts permission to change or remove Microsoft Information Protection sensitivity labels that have file encryption settings to authorized users only. See [Sensitivity label change enforcement](service-security-sensitivity-label-change-enforcement.md) for detail.
 
 ## Supported clouds
-Sensitivity labels are only supported for tenants in global (public) clouds; they are not supported for tenants in clouds such as national clouds.
+Sensitivity labels are supported for tenants in global (public) clouds, and the following national clouds:
+* [US Government](service-govus-overview.md#power-bi-feature-availability): GCC, GCC High, DoD
+* China
+
+Sensitivity labels are not currently supported in other national clouds.
 
 ## Licensing and requirements
 
@@ -198,7 +202,7 @@ To access sensitivity labels in either of these centers, navigate to **Classific
 
 * If you've created a large model and the resulting protected .pbix file is very large (over 2GB), it may crash when you try to save or open it. To work around this, consider removing the protection from the .pbix file and re-applying it after the file has been published to the Power BI service.
 
-    In general, when you protect a file with a sensitivity label that applies encryption, it is good practice to use another encryption method as well, such as pagefile encryption, NTFS encryption, bitlockers, antimalware, etc.
+    In general, when you protect a file with a sensitivity label that applies encryption, it is good practice to use another encryption method as well, such as pagefile encryption, NTFS encryption, BitLocker instances, antimalware, etc.
 
 * Temp files are not encrypted.
 
