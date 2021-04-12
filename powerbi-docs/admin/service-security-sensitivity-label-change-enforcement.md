@@ -22,7 +22,7 @@ Authorized users are:
     * EXPORT
     * EDIT and EDITRIGHTSDATA
 
-Users who try to change a label and can’t should ask the person who applied the label to perform the modification, or they can contact Microsoft 365/Office security administrator and ask to be granted the necessary usage rights.
+Users who try to change a label and can’t should ask the person who applied the label to perform the modification, or they can contact their Microsoft 365/Office security administrator and ask to be granted the necessary usage rights.
 
 ## Relaxations to accommodate automatic labeling scenarios
 
