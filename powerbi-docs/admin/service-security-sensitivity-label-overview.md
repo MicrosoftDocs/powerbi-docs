@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom: contperf-fy21q2
-ms.date: 03/22/2021
+ms.date: 04/05/2021
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -149,6 +149,10 @@ Sensitivity labels are supported in deployment pipelines. See the [deployment pi
 Sensitivity labels can be viewed on reports and dashboards in the Power BI mobile apps. An icon near the name of the report or dashboard indicates that it has a sensitivity label, and the type of label and its description can be found in the report or dashboard's info box.
 
 ![Screen shot of sensitivity label in mobile app](media/service-security-sensitivity-label-overview/mobile-app-sensitivity-label2.png)
+
+## Label change enforcement
+
+Power BI restricts permission to change or remove Microsoft Information Protection sensitivity labels that have file encryption settings to authorized users only. See [Sensitivity label change enforcement](service-security-sensitivity-label-change-enforcement.md) for detail.
 
 ## Supported clouds
 Sensitivity labels are supported for tenants in global (public) clouds, and the following national clouds:
