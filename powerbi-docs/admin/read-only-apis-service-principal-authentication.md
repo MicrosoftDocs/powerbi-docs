@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 02/04/2021
+ms.date: 04/13/2021
 ms.author: painbar
 ms.custom:
 
@@ -65,6 +65,20 @@ Service principal currently supports the following APIs:
 * [WorkspaceGetInfo](/rest/api/power-bi/admin/workspaceinfo_postworkspaceinfo)
 * [WorkspaceScanStatus](/rest/api/power-bi/admin/workspaceinfo_getscanstatus)
 * [WorkspaceScanResult](/rest/api/power-bi/admin/workspaceinfo_getscanresult)
+* [GetDashboardsInGroupAsAdmin](/rest/api/power-bi/admin/dashboards_getdashboardsasadmin)
+* [GetTilesAsAdmin](/rest/api/power-bi/admin/dashboards_gettilesasadmin)
+* [ExportDataflowAsAdmin](/rest/api/power-bi/admin/dataflows_exportdataflowasadmin)
+* [GetDataflowsAsAdmin](/rest/api/power-bi/admin/dataflows_getdataflowsasadmin)
+* [GetDataflowsInGroupAsAdmin](/rest/api/power-bi/admin/dataflows_getdataflowsingroupasadmin)
+* [GetDatasetsAsAdmin](/rest/api/power-bi/admin/datasets_getdatasetsasadmin)
+* [GetDatasetsInGroupAsAdmin](/rest/api/power-bi/admin/datasets_getdatasetsingroupasadmin)
+* [Get Power BI Encryption Keys](/rest/api/power-bi/admin/getpowerbiencryptionkeys)
+* [Get Refreshable For Capacity](/rest/api/power-bi/admin/getrefreshableforcapacity)
+* [Get Refreshables](/rest/api/power-bi/admin/getrefreshables)
+* [Get Refreshables For Capacity](/rest/api/power-bi/admin/getrefreshablesforcapacity)
+* [GetImportsAsAdmin](/rest/api/power-bi/admin/imports_getimportsasadmin)
+* [GetReportsAsAdmin](/rest/api/power-bi/admin/reports_getreportsasadmin)
+* [GetReportsInGroupAsAdmin](/rest/api/power-bi/admin/reports_getreportsingroupasadmin)
 
 ## Considerations and limitations
 
