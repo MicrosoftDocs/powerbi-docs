@@ -47,7 +47,7 @@ Watch Will use Power BI Desktop to [add static images to a report](/learn/module
 
 2. From the dropdown, select a shape to add it to your report canvas.  Then in the **Format shape** pane, you can customize the shape to suit your needs. For this example, the arrow has been rotated 45 degrees and formatted to include text and a shadow. 
    
-   ![Screenshot of formatting the arrow by rotating and adding text and shadow.](media/power-bi-reports-add-text-and-shapes/power-bi-arrrow.png)
+   ![Screenshot of formatting the arrow by rotating and adding text and shadow.](media/power-bi-reports-add-text-and-shapes/power-bi-arrow.png)
 
 3. To position the shape, select the grey area at the top and drag. To resize the shape, select and drag any of the outline handles. As with the text box, you can also create an exact size and position for a shape.
 
