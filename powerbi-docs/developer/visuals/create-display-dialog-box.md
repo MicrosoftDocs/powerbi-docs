@@ -12,7 +12,7 @@ ms.date: 03/21/2021
 
 # Create a dialog box for your Power BI visual
 
-When you create a visual, there are times when it's useful to display additional information to the customer. Here are two examples:
+When you create a visual, there are times when it's useful to display additional information to the customer in a separate window. Here are two examples:
 
 * **To show additional information** - Such as a text note or a video.
 
@@ -36,8 +36,11 @@ When creating a dialog box for your visual, consider the following:
 
 * The dialog box uses a rich HTML `iframe`.
 
+* While the dialog box is displayed, no action can be performed in the report until it's dismissed.
+
+
 >[!IMPORTANT]
->The dialog box must not be triggered spontaneously. It must be used as part of a user event.
+>The dialog box must not be triggered spontaneously. It must be an immediate result of a user action.
 
 ## How to configure a dialog box
 
@@ -45,7 +48,7 @@ To configure a dialog box, you need to add three components to your code:
 
 * [A declaration](#declare-the-dialog-box-function) - Each dialog box function needs to be declared in the `visual.ts` file.
 
-* [Button configuration](#configure-the-dialog-box-buttons) - In the `visuals.ts` file, configure the behavior of the dialog box buttons.
+* [Button configuration](#configure-the-dialog-box-buttons) - In the `visual.ts`  file, configure the behavior of the dialog box buttons.
 
 * [An implementation file](#create-the-dialog-box-implementation-file) - It's recommended to create an implementation file for each dialog box.
 
@@ -65,7 +68,7 @@ export enum DialogAction {
 
 ```
 
-Each dialog box you create needs to be declared in the `visauls.ts` file. The declaration needs to include the type of buttons that the dialog box displays.
+Each dialog box you create needs to be declared in the `visual.ts` file. The declaration needs to include the type of buttons that the dialog box displays.
 
 ```javascript
 private dialogActionsButtons = [DialogAction.OK, DialogAction.Cancel];
@@ -73,7 +76,7 @@ private dialogActionsButtons = [DialogAction.OK, DialogAction.Cancel];
 
 ### Configure the dialog box buttons
 
-After the dialog function declaration in `visuals.ts`, configure the behavior of each dialog button.
+After the dialog function declaration in `visual.ts`, configure the behavior of each dialog button.
 
 ```javascript
 button.onclick = () => {
@@ -98,7 +101,7 @@ Each dialog box implementation file should include the following components:
 
 * [A result class](#create-a-result-class)
 
-* [A registry list](#add-your-dialog-box-to-the-registry-list)
+* [Registration of the dialog class](#add-your-dialog-box-to-the-registry-list)
 
 #### Create a dialog box class
 
@@ -132,7 +135,7 @@ export class DatePickerDialog {
 
 Create a class that returns the dialog box result, and add it to the dialog box implementation file.
 
-In the example below the `DatePickerDialogResul` class returns a date string.
+In the example below the `DatePickerDialogResult` class returns a date string.
 
 ```javascript
 export class DatePickerDialogResult {
@@ -149,6 +152,21 @@ globalThis.dialogRegistry = globalThis.dialogRegistry || {};
 globalThis.dialogRegistry[DatePickerDialog.id] = DatePickerDialog;
 
 ```
+
+## Limitations
+
+* The size limitations of the dialog box are described in the table below.
+
+    |Max/min |Width                    |Height                    |
+    |--------|-------------------------|--------------------------|
+    |Maximum |90% of the browser width |90% of the browser height |
+    |Minimum |240px                    |210px                     |
+
+* The following features don't support the Power BI visuals dialog box:
+
+    * Embedded analytics
+
+    * Dashboards
 
 ## Next steps
 
