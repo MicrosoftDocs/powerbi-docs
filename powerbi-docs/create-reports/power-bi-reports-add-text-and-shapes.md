@@ -8,7 +8,7 @@ featuredvideoid: _3q6VEBhGew
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/29/2019
+ms.date: 04/12/2021
 LocalizationGroup: Visualizations
 ---
 # Add text boxes and shapes to Power BI reports
@@ -43,18 +43,17 @@ Watch Will use Power BI Desktop to [add static images to a report](/learn/module
 ## Add a shape to a report
 1. Place your cursor anywhere on the report canvas and select **Shapes**.
    
-   ![Shape selection](https://user-images.githubusercontent.com/47899466/114230471-0668aa00-992e-11eb-8371-47d04e135e69.png)
+   ![Screenshot of selecting a shape.](media/power-bi-reports-add-text-and-shapes/power-bi-shapes.png)
 
 2. From the dropdown, select a shape to add it to your report canvas.  Then in the **Format shape** pane, you can customize the shape to suit your needs. For this example, the arrow has been rotated 45 degrees and formatted to include text and a shadow. 
    
-   ![Shape formatted](https://user-images.githubusercontent.com/47899466/114231923-f6ea6080-992f-11eb-9510-25695ae3753f.PNG)
+   ![Screenshot of formatting the arrow by rotating and adding text and shadow.](media/power-bi-reports-add-text-and-shapes/power-bi-arrrow.png)
 
 3. To position the shape, select the grey area at the top and drag. To resize the shape, select and drag any of the outline handles. As with the text box, you can also create an exact size and position for a shape.
 
    > [!NOTE]
    > Shapes cannot be pinned to a dashboard, except as one of the visuals when you [pin a live page](service-dashboard-pin-live-tile-from-report.md). 
-   > 
-   > 
+   >  
 
 ## Next steps
 
