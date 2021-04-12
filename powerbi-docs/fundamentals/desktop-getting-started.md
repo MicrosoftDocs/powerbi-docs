@@ -52,7 +52,7 @@ On the Microsoft Store page, select **Get**, and follow the prompts to install P
 
 The first time Power BI Desktop starts, it displays the **Welcome** screen.
 
-From the **Welcome** screen, you can **Get data**, see **Recent sources**, open recent reports, **Open other reports**, or select other links. You can also choose whether to always show the **Welcome** screen at startup. Select the close icon to close the **Welcome** screen.
+From the **Welcome** screen, you can **Get data**, see **Recent sources**, open recent reports, **Open other reports**, or select other links. Select the close icon to close the **Welcome** screen.
 
 ![Screenshot of Power B I Desktop showing the Welcome screen.](media/desktop-getting-started/designer_gsg_startsplashscreen.png)
 

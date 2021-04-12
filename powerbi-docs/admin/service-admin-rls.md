@@ -26,8 +26,9 @@ For more information, see [Bidirectional cross-filtering using DirectQuery in Po
 
 ![Apply Security Filter](media/service-admin-rls/rls-apply-security-filter.png)
 
-
 [!INCLUDE [include-short-name](../includes/rls-desktop-view-as-roles.md)]
+
+1. Publish your report to the Power BI service.
 
 ## Manage security on your model
 
