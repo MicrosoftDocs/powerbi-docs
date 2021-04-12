@@ -22,11 +22,11 @@ With incremental refresh:
 - **Enables large datasets** - Datasets with potentially billions of rows can grow without the need to fully refresh the entire dataset with each refresh operation.
 - **Easy setup** - Incremental refresh *policies* are defined in Power BI Desktop with just a few tasks. When published, the service automatically applies those policies with each refresh.  
 
-When you publish a Power BI Desktop model to the service, each table in the new dataset has a single partition. That single partition contains all rows for that table, unless filters are applied. If the table is large, say with tens of millions of rows or even more, a refresh for that table can take a long time and consume an excessive amount of resources.
+When you publish a Power BI Desktop model to the service, each table in the new dataset has a single partition. That single partition contains all rows for that table. If the table is large, say with tens of millions of rows or even more, a refresh for that table can take a long time and consume an excessive amount of resources.
 
 With incremental refresh, the service dynamically partitions and separates data that needs to be refreshed frequently from data that can be refreshed less frequently. Table data is filtered by using Power Query date/time parameters with the reserved, case-sensitive names *RangeStart* and *RangeEnd*. When initially configuring incremental refresh in Power BI Desktop, the parameters are used to filter only a small period of data to be loaded into the model. When published to the service, with the first refresh operation, the service creates incremental refresh and historical partitions based on incremental refresh policy settings, and then overrides the parameter values to filter and query data for each partition based on date/time values for each row.
 
-With each subsequent refresh, the data source query filters and returns only those rows within the period dynamically defined by the parameters. Those rows with a date/time within the refresh period are loaded into one or more current incremental refresh partitions. Rows in the refresh partition(s) with a date/time no longer within the refresh period are then included in the historical partition for the previous period, which is *not* refreshed. With each subsequent refresh, the current refresh partition's date/time period is rolled forward. New historical partitions are created, and older historical partitions become less granular as they are merged together. This is known as a *rolling window pattern*.
+With each subsequent refresh, the query filters and returns only those rows within the refresh period dynamically defined by the parameters. Those rows with a date/time within the refresh period are refreshed. Rows with a date/time no longer within the refresh period then become part of the historical period, which is not refreshed. Both the refresh and historical periods are rolled forward. As new incremental refresh partitions are created, refresh partitions no longer in the refresh period become historical partitions. Over time, historical partitions become less granular as they are merged together. When a historical partition is no longer in the historical period defined by the policy, it is removed from the dataset entirely. This is known as a *rolling window pattern*.
 
 The beauty of incremental refresh is the service handles all of this for you based on the incremental refresh policies you define. In fact, the process and partitions created from it are not even visible in the service. In most cases, a well-defined incremental refresh policy is all that is necessary to significantly improve dataset refresh performance. However, for datasets in Premium capacities, more advanced partition and refresh scenarios are supported through the XMLA endpoint.
 
@@ -79,8 +79,6 @@ in
 ```
 
 For *very large* datasets in Premium capacities that will likely contain billions of rows, the initial refresh operation can be bootstrapped. Bootstrapping allows the service to create table and partition objects for the dataset, but not load and process data into any of the partitions. By using SQL Server Management Studio, partitions can then be processed individually, sequentially, or in parallel that can both reduce the amount of data returned in a single query, but also bypass the five-hour time limit. To learn more, see [Advanced incremental refresh - Prevent timeouts on initial full refresh](incremental-refresh-xmla.md#prevent-timeouts-on-initial-full-refresh).
-
-
 
 ### Current date and time
 
