@@ -43,7 +43,7 @@ When creating a dialog box for your visual, consider the following:
 >[!IMPORTANT]
 >The dialog box must not be triggered spontaneously. It must be an immediate result of a user action.
 
-## How to configure a dialog box
+## How to configure a dialog box?
 
 To configure a dialog box, you need to add three components to your code:
 
@@ -154,7 +154,7 @@ globalThis.dialogRegistry[DatePickerDialog.id] = DatePickerDialog;
 
 ```
 
-## Closing the dialog box
+## How to close the dialog box?
 
 The preferred method for closing the dialog box is by the end-user clicking the [x] button, one of the action buttons or the report background.
 
