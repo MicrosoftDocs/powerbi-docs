@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 03/21/2021
+ms.date: 04/13/2021
 ---
 
 # Create a dialog box for your Power BI visual
@@ -38,6 +38,7 @@ When creating a dialog box for your visual, consider the following:
 
 * While the dialog box is displayed, no action can be performed in the report until it's dismissed.
 
+* The dialog code may use external NPM libraries, just like the visual.
 
 >[!IMPORTANT]
 >The dialog box must not be triggered spontaneously. It must be an immediate result of a user action.
@@ -152,6 +153,12 @@ globalThis.dialogRegistry = globalThis.dialogRegistry || {};
 globalThis.dialogRegistry[DatePickerDialog.id] = DatePickerDialog;
 
 ```
+
+## Closing the dialog box
+
+The preferred method for closing the dialog box is by the end-user clicking the [x] button, one of the action buttons or the report background.
+
+You can also program the dialog box to automatically close, by calling the `IDialogHost` close method. This method will be blocked for five seconds after the dialog is open, so that the earliest you can automatically close the dialog box is five seconds after it was initiated.
 
 ## Limitations
 
