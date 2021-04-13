@@ -102,5 +102,5 @@ When you subscribe to a paginated report, Power BI sends you an email with the r
 
 ## Next steps
 - [Power BI reports](end-user-reports.md)
-- [Paginated reports in Power BI: FAQ](../paginated-reports/paginated-reports-faq.md)
+- [Paginated reports in Power BI: FAQ](../paginated-reports/paginated-reports-faq.yml)
 - More questions? Try the [Power BI Community](https://community.powerbi.com/).
