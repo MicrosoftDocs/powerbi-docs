@@ -100,35 +100,52 @@ In **Navigator**, you have the option to *transform* or *load* the data. The Nav
 
      :::image type="content" source="media/desktop-excel-stunning-report/power-bi-fields-list-sigmas-date.png" alt-text="Screenshot of Fields list with numeric fields and date field.":::
 
-### Extra credit: Write a measure in DAX
+### Extra credit: Write an expression in DAX
 
-Writing *measures* in the *DAX* formula language is super powerful for data modeling. There's lots to learn about DAX in the Power BI documentation. For now, let's write a basic measure and join two tables. 
+Writing *measures* and creating *tables* in the *DAX* formula language is super powerful for data modeling. There's lots to learn about DAX in the Power BI documentation. For now, let's write a basic expression and join two tables. 
 
-1. Select **Data View** on the left. 
+1. On the **Home** ribbon, select **New measure**.
+
+<img alt="Screenshot of New measure icon" src="https://user-images.githubusercontent.com/44716363/114489998-af86fd00-9bd9-11eb-95b4-ded56229577c.png">
+
+1. Type this expression to add all the numbers in the Units Sold column.
+
+    ```dax
+    Total Units Sold = SUM('financials'[Units Sold])    
+    ```
+    
+1. Select the check mark to commit.
+    
+ <img alt="Screenshot of DAX expression." src="https://user-images.githubusercontent.com/44716363/114489997-aeee6680-9bd9-11eb-9529-9670831a4bb9.png">
+ 
+1. Now select the **Data** view on the left.
  
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-data-view.png" alt-text="Screenshot of Data View icon.":::
 
-1. On the **Home** ribbon, select **New Table**. 
+1. On the **Home** ribbon, select **New table**. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-new-table.png" alt-text="Screenshot of New Table icon.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-new-table.png
+    
+    
+" alt-text="Screenshot of New Table icon.":::
 
-1. Type this measure to generate a Calendar table of all dates between January 1, 2013, and December 31, 2014.  
+1. Type this expression to generate a Calendar table of all dates between January 1, 2013, and December 31, 2014.
 
     ```dax
     Calendar = CALENDAR(DATE(2013,01,01),Date(2014,12,31))    
     ```
 
-2. Select the check mark to commit.
+1. Select the check mark to commit.
 
      :::image type="content" source="media/desktop-excel-stunning-report/power-bi-dax-expression.png" alt-text="Screenshot of DAX expression.":::
 
 1. Still in Data view, select your new Calendar table, and on the **Table tools** ribbon, select **Mark as date table**.
-2. In the **Date column** box, select the **Date** column. 
-3. Now select **Model View** on the left. 
+1. In the **Date column** box, select the **Date** column. 
+1. Now select **Model** view on the left. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-model-view.png" alt-text="Screenshot of Model View icon.":::
 
-1. Drag the **Date** field from the Financials table to the **Date** field in the Calendar table to join the tables, and create a *relationship* between them.  
+1. Drag the **Date** field from the financials table to the **Date** field in the Calendar table to join the tables, and create a *relationship* between them.  
 
      :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-relationship.png" alt-text="Screenshot of relationship between Date fields.":::
 
