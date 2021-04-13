@@ -17,12 +17,12 @@ Power BI restricts permission to change or remove Microsoft Information Protecti
 
 Authorized users are:
 * The user who applied the sensitivity label. 
-* Users who have been assigned at least one of the following [usage rights](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide) to the label in the labeling admin center ([Microsoft 365 compliance center](https://compliance.microsoft.com/), [Microsoft 365 security center](https://security.microsoft.com/), or [Security & Compliance Center](https://protection.office.com/)):
+* Users who have been assigned at least one of the following [usage rights](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide&preserve-view=true) to the label in the labeling admin center ([Microsoft 365 compliance center](https://compliance.microsoft.com/), [Microsoft 365 security center](https://security.microsoft.com/), or [Security & Compliance Center](https://protection.office.com/)):
     * OWNER
     * EXPORT
     * EDIT and EDITRIGHTSDATA
 
-Users who try to change a label and can’t should ask the person who applied the label to perform the modification, or they can contact Microsoft 365/Office security administrator and ask to be granted the necessary usage rights.
+Users who try to change a label and can’t should ask the person who applied the label to perform the modification, or they can contact their Microsoft 365/Office security administrator and ask to be granted the necessary usage rights.
 
 ## Relaxations to accommodate automatic labeling scenarios
 
