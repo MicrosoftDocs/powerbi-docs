@@ -23,7 +23,7 @@ This article uses the [Retail Analysis Sales sample](sample-datasets.md). Follow
 
 1. On the dashboard, select the **Ask a question about your data** Q&A question box.   Notice that Q&A is already being helpful by displaying some suggested questions.
 2. To create a featured question, select the gear icon in the top-right corner of Power BI.  
-   ![Power BI gear icon.](media/service-q-and-a-create-featured-questions/gear-icon.jpg)
+   ![Power BI gear icon.](media/service-q-and-a-create-featured-questions/gear-icon.png)
 3. Select **Settings** &gt; **Datasets** &gt; **Retail Analysis sample** &gt; **Featured Q&A questions**.  
 4. Select **Add a question**.
    
