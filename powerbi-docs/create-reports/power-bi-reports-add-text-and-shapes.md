@@ -67,11 +67,11 @@ You can also add a *smart narrative* to your report. The smart narrative visuali
 
 1. In the **Visualizations** pane, select the **Smart narrative** icon. If you don't see it, you may need to turn on the preview.
 
-    ![Screenshot of the Smart narrative icon.](media/power-bi-reports-add-text-and-shapes/power-bi-arrow.png)
+    ![Screenshot of the Smart narrative icon.](media/power-bi-reports-add-text-and-shapes/power-bi-smart-narrrative-icon.png)
 
 2. Power BI creates a text boxwith auto-generated text describing interesting features of the data in your report.
 
-    ![Screenshot of the Smart narrative text box.](media/power-bi-reports-add-text-and-shapes/power-bi-arrow.png)
+    ![Screenshot of the Smart narrative text box.](media/power-bi-reports-add-text-and-shapes/power-bi-smart-narrrative.png)
 
 3. You can format it as you would any other text box. The underlined text are values the smart narrative is finding in the data.
 
