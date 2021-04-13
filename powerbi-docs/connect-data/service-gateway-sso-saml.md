@@ -13,7 +13,7 @@ LocalizationGroup: Gateways
 
 # Use Security Assertion Markup Language for SSO from Power BI to on-premises data sources
 
-By enabling single sign-on (SSO), you can make it easy for Power BI reports and dashboards to refresh data from on-premises sources while respecting user-level permissions configured on those sources. To enable seamless SSO connectivity, you use [Security Assertion Markup Language (SAML)](https://www.onelogin.com/pages/saml). 
+By enabling single sign-on (SSO), you can make it easy for Power BI reports and dashboards to refresh data from on-premises sources while you respect user-level permissions that are configured on those sources. To enable seamless SSO connectivity, you use [Security Assertion Markup Language (SAML)](https://www.onelogin.com/pages/saml). 
 
 ## Supported data sources
 
@@ -21,7 +21,7 @@ Microsoft currently supports SAP HANA with SAML. For more information about sett
 
 We support additional data sources with [Kerberos](service-gateway-sso-kerberos.md) (including SAP HANA).
 
-For SAP HANA, we recommend that you enable encryption before you establish a SAML SSO connection. To enable encryption, configure the HANA server to accept encrypted connections, and configure the gateway to use encryption to communicate with your HANA server. Because the HANA ODBC driver doesn't encrypt SAML assertions by default, the signed SAML assertion is sent from the gateway to the HANA server *in the clear* and is vulnerable to interception and reuse by third parties.
+For SAP HANA, we recommend that you enable encryption before you establish a SAML SSO connection. To enable encryption, configure the HANA server to accept encrypted connections, and then configure the gateway to use encryption to communicate with your HANA server. Because the HANA ODBC driver doesn't encrypt SAML assertions by default, the signed SAML assertion is sent from the gateway to the HANA server *in the clear* and is vulnerable to interception and reuse by third parties.
 
 > [!IMPORTANT]
 > Because [SAP no longer supports OpenSSL](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.05/en-US/de15ffb1bb5710148386ffdfd857482a.html), Microsoft has also discontinued its support. Your existing connections continue to work but, as of February 2021, you can no longer create new connections. Use SAP Cryptographic Library (CommonCryptoLib), or sapcrypto, instead.
@@ -95,7 +95,7 @@ To import and create the signed certificates in HANA, do the following:
     '
     ```
 
-1. If there is no PSE with purpose SAML, create one by running the following query in SAP HANA Studio:
+1. If there's no personal security environment (PSE) with purpose SAML, create one by running the following query in SAP HANA Studio:
     
     ```
     CREATE PSE SAMLCOLLECTION;<br>set pse SAMLCOLLECTION purpose SAML;<br>
@@ -126,7 +126,7 @@ To import and create the signed certificates in HANA, do the following:
 
 To map the user, do the following:
 
-1. In SAP HANA Studio, select the **Security** folder:
+1. In SAP HANA Studio, select the **Security** folder.
 
     ![Screenshot of the Security folder structure on the left pane.](media/service-gateway-sso-saml/service-gateway-sso-saml-03.png)
 
@@ -136,7 +136,7 @@ To map the user, do the following:
 
     ![Screenshot of the "User Parameters" pane for selecting the SAML checkbox and the Configure link.](media/service-gateway-sso-saml/service-gateway-sso-saml-04.png)
 
-1. Select the identity provider you created in the [Create mapping for the SAML identity provider certificate](#create-mapping-for-the-saml-identity-provider-certificate) section. For **External Identity**, enter the Power BI user's UPN (typically, the email address the user uses to sign in to Power BI), and then select **Add**.
+1. Select the identity provider that you created in the [Create mapping for the SAML identity provider certificate](#create-mapping-for-the-saml-identity-provider-certificate) section. For **External Identity**, enter the Power BI user's UPN (ordinarily, the email address the user uses to sign in to Power BI), and then select **Add**.
 
     ![Screenshot of the "Configure External SAML Identities"" window.](media/service-gateway-sso-saml/service-gateway-sso-saml-05.png)
 
@@ -144,7 +144,7 @@ To map the user, do the following:
 
 ### Configure the gateway
 
-Now that you've configured the gateway certificate and identity, convert the certificate to a PFX file format and configure the gateway to use the certificate by doing the following:
+Now that you've configured the gateway certificate and identity, convert the certificate to a PFX file format, and then configure the gateway to use the certificate by doing the following:
 
 1. Convert the certificate to PFX format by running the following command. This command names the resulting file *samlcert.pfx* and sets *root* as its password, as shown here:
 
@@ -201,13 +201,13 @@ Finally, add the certificate thumbprint to the gateway configuration:
 
 1. Go to the gateway directory, which is *C:\Program Files\On-premises data gateway* by default.
 
-1. Open *PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*, and then look for the *SapHanaSAMLCertThumbprint* section. Paste the thumbprint you copied in step 2.
+1. Open *PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*, and then look for the *SapHanaSAMLCertThumbprint* section. Paste the thumbprint you copied in step&nbsp;2.
 
 1. Restart the gateway service.
 
 ## Run a Power BI report
 
-Now you can use the **Manage Gateway** page in Power BI to configure the SAP HANA data source. Under **Advanced Settings**, enable SSO via SAML. Doing so allows you to publish reports and datasets binding to that data source.
+Now you can use the **Manage Gateway** page in Power BI to configure the SAP HANA data source. Under **Advanced Settings**, enable SSO via SAML. By doing so, you can publish reports and datasets binding to that data source.
 
    ![Screenshot of the "Advanced settings" section in Power BI.](media/service-gateway-sso-saml/advanced-settings.png)
 
@@ -258,7 +258,7 @@ This issue has multiple symptoms. When you try to add a new data source, you mig
 
 ```Unable to connect: We encountered an error while trying to connect to . Details: "We could not register this data source for any gateway instances within this cluster. Please find more details below about specific errors for each gateway instance."```
 
-When you try to create or refresh a report, you might see an error message like that shown in the following image:
+When you try to create or refresh a report, you might see an error message like the one in the following image:
 
 :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-01.png" alt-text="Screenshot of a 'Cannot load model' troubleshooting SSL error window.":::
 
@@ -286,9 +286,9 @@ Log entries for ```Couldn't find saml cert```: If your GatewayInfo[*date*].log f
 
 **Resolution**
 
-To properly set *SapHanaSAMLCertThumbprint*, follow the steps outlined in the ["Configure the gateway"](service-gateway-sso-saml.md) section, specifically, the instructions that begin with: *Finally, add the certificate thumbprint to the gateway configuration*.
+To properly set *SapHanaSAMLCertThumbprint*, follow the instructions in the ["Configure the gateway"](service-gateway-sso-saml.md) section. The instructions begin with *Finally, add the certificate thumbprint to the gateway configuration*.
 
-After you've changed the configuration file, restart the gateway service for the change to take effect.
+After you've changed the configuration file, you need to restart the gateway service for the change to take effect.
 
 **Validation**
 
@@ -330,7 +330,7 @@ Next, verify that the cryptographic library is set correctly by doing the follow
 
     :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-04.png" alt-text="Screenshot of SAP HANA Studio with 'SAP Cryptographic Library' selected as the sslcryptoprovider.":::
 
-1. Deploy any changes by selecting the **Deploy** button at the upper right, as shown in the following image:
+1. Deploy your changes by selecting the **Deploy** button at the upper right, as shown in the following image:
 
     :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-05.png" alt-text="Screenshot of the 'Deploy' button for deploying your solution changes.":::
 
@@ -339,11 +339,11 @@ Next, verify that the cryptographic library is set correctly by doing the follow
 When the traces are properly configured, they'll report ```Found SAML provider``` and will *not* report ```SAML Provider not found```. You can proceed to the next section, ["Troubleshoot the SAML assertion signature."](#troubleshoot-the-saml-assertion-signature) 
 
 
-If the cryptographic provider is set but ```SAML Provider not found``` is still being reported, search for a string in the trace that begins with the following words:
+If the cryptographic provider is set but ```SAML Provider not found``` is still being reported, search for a string in the trace that begins with the following text:
 
 ```Search SAML provider for certificate with subject =```
 
-In that string, check to see whether the subject and issuer are exactly the same as the SAML identity provider tab in Security Console. A difference of even a single character can cause the problem. If you find a difference, you can change the SAP Cryptographic Library so the entries match exactly.
+In that string, ensure that the subject and issuer are exactly the same as displayed in the SAML identity provider tab in Security Console. A difference of even a single character can cause the problem. If you find a difference, you can fix the issue in the SAP Cryptographic Library so that the entries match exactly.
 
 If changing the SAP Cryptographic Library doesn't fix the issue, you can manually edit the *Issued To* and *Issued By* fields simply by double-clicking them.
 
