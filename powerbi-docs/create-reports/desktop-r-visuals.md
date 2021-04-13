@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/04/2019
+ms.date: 04/12/2021
 LocalizationGroup: Create reports
 ---
 # Create Power BI visuals using R
@@ -60,7 +60,7 @@ After you've verified your R installation, you’re ready to begin creating R vi
     - As you select fields, the **R script editor** generates supporting R script binding code for those fields in the gray section along the top of the editor pane.
     - If you remove a field, the **R script editor** automatically removes the supporting code for that field.
    
-   In the example shown in the following image, three fields are selected: hp, gear, and drat. As a result of those selections, the R script editor generates binding code, which is summarized as follows:
+   In the example shown in the following image, three fields are selected: Horse Power, gear, and drat. As a result of those selections, the R script editor generates binding code, which is summarized as follows:
    
    * Create a dataframe called **dataset**, which is comprised of the different fields selected by the user.
    * The default aggregation is: *do not summarize*.
@@ -88,7 +88,7 @@ After you've verified your R installation, you’re ready to begin creating R vi
 
      ![Correlation plot code example](media/desktop-r-visuals/r-visuals-6.png)
 
-6. To get a larger view of the visualizations, minimize the **R script editor**. Like other visuals in Power BI Desktop, you can cross filter the correlation plot by selecting a specific section (such as sports cars) in the donut-shaped visual (the round visual on the right).
+6. To get a larger view of the visualizations, deselect the R visual or minimize the **R script editor**. Like other visuals in Power BI Desktop, you can cross filter the correlation plot by selecting a specific value, such as Auto or Manual, in the donut chart visual on the right.
 
     ![Larger visualization view](media/desktop-r-visuals/r-visuals-7.png)
 
