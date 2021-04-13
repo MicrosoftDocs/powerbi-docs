@@ -251,7 +251,7 @@ The options available in the **Fields** and **Format** areas depend on the type 
 
 You want your map visualization to show only the top 10 weather states. To show only the top 10 states, in the **Filters** pane, hover over **State is (All)** and expand the arrow that appears. Under **Filter type**, drop down and select **Top N**. Under **Show items**, select **Bottom**, because you want to show the items with the lowest numerical ranks, and enter *10* in the next field.
 
-Drag the **Weather** field from the **Fields** pane into the **By value** field, and then select **Apply filter**. 
+Drag the **Weather** field from the **Fields** pane into the **By value** field, and then select **Apply filter**.
 
 ![Screenshot of Power B I Desktop showing the Weather filter.](media/desktop-getting-started/gsg_share5.png)
 
@@ -269,9 +269,9 @@ To switch the order of the ranking so that number 1 appears first, select the **
 
 ![Screenshot of Power B I Desktop showing the Sort Ascending option.](media/desktop-getting-started/shapecombine_mergequeries.png)
 
-To limit the table to the top 10 states, apply the same bottom 10 filter as you did for the map visualization. 
+To limit the table to the top 10 states, apply the same bottom 10 filter as you did for the map visualization.
 
-Retitle the visualization the same way as for the map visualization. Also in the **Format** section of the **Visualization** pane, change **Y axis** > **Axis title** from **Weather** to *Weather ranking* to make it more understandable. Then, turn the **Y axis** selector to **Off**, and turn **Data labels** to **On**.
+Retitle the visualization the same way as for the map visualization. Also in the **Format** section of the **Visualization** pane, change **Y axis** > **Axis title** from **Weather** to *Weather ranking* to make it more understandable. Then, turn the **Y axis** selector to **Off**. Turn the **Zoom slider** to **On** and turn **Data labels** to **On**. Finally, adjust the zoom slider along the Y axis until the staked columns fill the chart.
 
 Now, the top 10 weather states appear in ranked order along with their numerical rankings.
 
