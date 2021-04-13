@@ -324,13 +324,18 @@ After the file imports, you can see it listed under **My workspace** > **Reports
 
 When you select the file, the first page of the report appears. You can select different pages from the tabs at the left of the report. 
 
-You can make changes to a report in the **Power BI** service by selecting **More options** > **Edit** from the top of the report canvas. To save your changes, select **Save a copy**.
+You can make changes to a report in the **Power BI** service by selecting **More options** > **Edit** from the top of the report canvas.
 
-![Screenshot of Power B I Desktop showing the Edit and Save options.](media/desktop-getting-started/gsg_share4.png)
+![Screenshot of Power B I Desktop showing the Edit option.](media/desktop-getting-started/gsg_share4.png)
+
+To save your changes, select **File** > **Save a copy**.
+
+![Screenshot of Power B I Desktop showing the Save option.](media/desktop-getting-started/gsg_share_file_save_copy.png)
+
 
 There are all sorts of interesting visuals you can create from your report in the **Power BI** service, which you can pin to a *dashboard*. To learn about dashboards in the **Power BI** service, see [Tips for designing a great dashboard](../create-reports/service-dashboards-design-tips.md). For more information about creating, sharing, and modifying dashboards, see [Share a dashboard](../collaborate-share/service-share-dashboards.md).
 
-To share a report or dashboard, select **Share** at the top of the open report or dashboard page, or select the **Share** icon next to the report or dashboard name in the **My workspace** > **Reports** or **My workspace** > **Dashboards** lists.
+To share a report or dashboard, select **Share** > **Report** at the top of the open report or dashboard page, or select the **Share** icon next to the report or dashboard name in the **My workspace** > **Reports** or **My workspace** > **Dashboards** lists.
 
 Complete the **Share report** or **Share dashboard** screen to send an email or get a link to share your report or dashboard with others. 
 
