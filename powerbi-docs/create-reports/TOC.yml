@@ -112,7 +112,7 @@
       - name: Previewing reports
         href: ../paginated-reports/report-builder-previewing-reports.md
       - name: Paginated reports FAQ
-        href: ../paginated-reports/paginated-reports-faq.md
+        href: ../paginated-reports/paginated-reports-faq.yml
     - name: "Deployment pipelines"  
       items:
       - name: "Introduction to deployment pipelines"
