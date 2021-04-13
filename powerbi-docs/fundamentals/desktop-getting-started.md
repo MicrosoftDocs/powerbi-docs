@@ -86,13 +86,13 @@ In the **From Web** dialog box, paste the address *https:\//www.bankrate.com/ret
 
 If prompted, on the **Access Web Content** screen, select **Connect** to use anonymous access. 
 
-The query functionality of Power BI Desktop goes to work and contacts the web resource. The **Navigator** window returns what it found on the web page, in this case a table called **Ranking of best and worst states for retirement**, and a document. You're interested in the table, so select it to see a preview.
+The query functionality of Power BI Desktop goes to work and contacts the web resource. The **Navigator** window returns what it found on the web page, in this case an HTML table called **Ranking of best and worst states for retirement**, and five other suggested tables. You're interested in the HTML table, so select it to see a preview.
 
 At this point you can select **Load** to load the table, or **Transform data** to make changes in the table before you load it.
 
 ![Screenshot of Power B I Desktop showing a table display of imported data.](media/desktop-getting-started/datasources_fromnavigatordialog.png)
 
-When you select **Transform data**, Power Query Editor launches, with a representative view of the table. The **Query Settings** pane is on the right, or you can always show it by selecting **Query Settings** on the **View** tab of Power Query Editor. 
+When you select **Transform data**, Power Query Editor launches, with a representative view of the table. The **Query Settings** pane is on the right, or you can always show it by selecting **Query Settings** on the **View** tab of Power Query Editor.
 
 ![Screenshot of Power B I Desktop showing the Power Query Editor with Query Settings.](media/desktop-getting-started/designer_gsg_editquery.png)
 
@@ -123,7 +123,7 @@ For example, for sunglasses sales you're most interested in the weather ranking,
 
 ![Screenshot of Power B I Desktop showing Sorted Rows appearing in Applied Steps.](media/desktop-getting-started/shapecombine-changetype-b.png)
 
-You're not very interested in selling sunglasses to the worst weather states, so you decide to remove them from the table. From the **Reduce Rows** group of the **Home** tab, select **Remove Rows** > **Remove Bottom Rows**. In the **Remove Bottom Rows** dialog box, enter *10*, and then select **OK**. 
+You're not very interested in selling sunglasses to the worst weather states, so you decide to remove them from the table. From the the **Home** tab, select **Reduce Rows** > **Remove Rows** > **Remove Bottom Rows**. In the **Remove Bottom Rows** dialog box, enter *10*, and then select **OK**.
 
 ![Screenshot of Power B I Desktop showing the Remove Bottom Rows dialog box.](media/desktop-getting-started/pbi_gsg_getdata3.png)
 
@@ -166,11 +166,9 @@ In the **From Web** dialog box, enter the URL for the state abbreviations site: 
 
 In the **Navigator** window, select the table **Codes and abbreviations for U.S. states, federal district, territories, and other regions**, and then select **OK**. The table opens in Power Query Editor.
 
-Remove all columns except for **Name and status of region**, **Name and status of region2**, and **ANSI**. To keep only these columns, hold down **Ctrl** and select the columns. Then, either right-click one of the column headers and select **Remove Other Columns**, or, from the **Manage Columns** group of the **Home** tab, select **Remove Other Columns**. 
+Remove all columns except for **Name and status of region**, **Name and status of region**, and **ANSI**. To keep only these columns, hold down **Ctrl** and select the columns. Then, either right-click one of the column headers and select **Remove Other Columns**, or, from the **Manage Columns** group of the **Home** tab, select **Remove Other Columns**. 
 
-Drop down the arrow next to the **Name and status of region2** column header, and select **Filters** > **Equals**. In the **Filter Rows** dialog box, drop down the **Enter or select a value** field next to **equals** and select **State**. 
-
-Select **Or**, and next to the second **equals** field, select **State ("Commonwealth")**. Select **OK**. 
+Drop down the arrow next to the **Name and status of region_1** column header, and select **Filters** > **Equals**. In the **Filter Rows** dialog box, drop down the **Enter or select a value** field next to **equals** and select **State**. Select **OK**.
 
 ![Screenshot of Power B I Desktop showing the Power Query Editor's Filter Rows query box.](media/desktop-getting-started/filterrows.png)
 

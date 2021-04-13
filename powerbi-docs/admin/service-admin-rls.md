@@ -28,7 +28,7 @@ For more information, see [Bidirectional cross-filtering using DirectQuery in Po
 
 [!INCLUDE [include-short-name](../includes/rls-desktop-view-as-roles.md)]
 
-1. Publish your report to the Power BI service.
+Now that you're done validating the roles in Power BI Desktop, go ahead and publish your report to the Power BI service.
 
 ## Manage security on your model
 
