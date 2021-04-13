@@ -130,7 +130,7 @@ To map the user, do the following:
 
     ![Screenshot of the Security folder structure on the left pane.](media/service-gateway-sso-saml/service-gateway-sso-saml-03.png)
 
-1. Expand **Users**, and then select the user to whom you want to map your Power BI user.
+1. Expand **Users**, and then select the user that you want to map your Power BI user to.
 
 1. Select the **SAML** checkbox, and then select **Configure**, as shown in the following image:
 
