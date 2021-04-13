@@ -9,6 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 07/17/2019
+ms.custom: video-lJKgWnvl6bQ
 ---
 # Create a Power BI dashboard from a report
 You've read [Introduction to dashboards in Power BI](service-dashboards.md), and now you want to create your own. There are many different ways to create a dashboard. For example, you can create a dashboard from a report, from scratch, from a dataset, or by duplicating an existing dashboard.  

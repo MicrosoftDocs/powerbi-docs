@@ -9,6 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 04/02/2021
+ms.custom: video-B2vd4MQrz4M
 LocalizationGroup: Get started
 ---
 
