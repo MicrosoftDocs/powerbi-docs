@@ -48,11 +48,11 @@ We also recommend following these extra steps, which can yield a small performan
 
 1. [Run a Power BI report](service-gateway-sso-kerberos.md#run-a-power-bi-report).
 
-## Troubleshooting
+## Troubleshoot
 
 This section provides extensive instructions for troubleshooting using Kerberos for single sign-on (SSO) to SAP HANA in the Power BI service. By using these troubleshooting steps, you can self-diagnose and correct any issues you might be facing.
 
-### Verifying and troubleshooting gateway errors
+### Verify and troubleshoot gateway errors
 
 To follow the steps in this section, you need to [collect gateway logs](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
 
@@ -106,7 +106,7 @@ The following symptoms and troubleshooting steps can help remedy some common iss
 
 If you experience SPN issues when you're investigating the Mashup[date]*.log, you see the following error: ```The import [table] matches no exports. Did you miss a module reference?:```
 
-Investigating further by using the WireShark traces reveals the error **KRB4KDC_ERR_S_PRINCIPAL_UNKOWN**, which means that the service principal name (SPN) was not found or does not exist. The following image shows an example:
+When you investigate further by using Wireshark traces, you reveal the error **KRB4KDC_ERR_S_PRINCIPAL_UNKOWN**, which means that the service principal name (SPN) was not found or does not exist. The following image shows an example:
 
 :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-07.png" alt-text="Screenshot showing a service principal name error.":::
 
@@ -117,6 +117,7 @@ To resolve service principal name (SPN) issues such as this, you must add an SPN
 In addition, follow the resolution instructions described in the next section.
 
 **No credentials issues**
+
 There might not be clear symptoms associated with this issue. When you investigate the Mashup[date]*.log, you'll see the following error:
 
 ```29T20:21:34.6679184Z","Action":"RemoteDocumentEvaluator/RemoteEvaluation/HandleException","HostProcessId":"1396","identity":"DirectQueryPool","Exception":"Exception:\r\nExceptionType: Microsoft.Mashup.Engine1.Runtime.ValueException, Microsoft.MashupEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\r\nMessage:```
@@ -135,7 +136,6 @@ To resolve the *No credentials* issue, follow the steps described in the "Config
 
 
 **Validation**
-
 
 Following the preceding steps should resolve the issue. If you still experience Kerberos issues, you might have a misconfiguration in the Power BI gateway or in the HANA server itself. 
 
