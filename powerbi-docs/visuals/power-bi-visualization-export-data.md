@@ -5,12 +5,11 @@ author: mihart
 ms.author: mihart
 manager: kvivek
 ms.reviewer: 'tessa'
-ms.custom: video-jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 12/21/2020
-ms.custom: video-KjheMTGjDXw
+ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY
 LocalizationGroup: Visualizations
 ---
 
