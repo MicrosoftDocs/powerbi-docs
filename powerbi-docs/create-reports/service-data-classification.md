@@ -42,7 +42,7 @@ Once turned on, you will be presented with a form to create the various classifi
 
 ![Screenshot of a form, showing field entries for various classifications in your organization.](media/service-data-classification/blank_classification_form.png)
 
-Each classification has a **name** and a **shorthand** which will appear on the dashboard. For each classification, you can decide if the shorthand tag will appear on the dashboard or not by selecting **Show tag**. If you decide not to show the classification type on the dashboard, the owner will still be able to see the type by checking the dashboard settings. Additionally, you can optionally add a **URL** that contains more information about your organization’s classification guidelines and usage requirements.  
+Each classification has a **name** and a **shorthand** tag. For each classification, you can decide if the shorthand tag will appear or not by selecting **Show tag**. If you decide not to show the shorthand tag, the owner will still be able to see the type by checking the dashboard settings. Additionally, you can optionally add a **URL** that contains more information about your organization’s classification guidelines and usage requirements.  
 
 The last thing you need to decide is which classification type will be the default.  
 
