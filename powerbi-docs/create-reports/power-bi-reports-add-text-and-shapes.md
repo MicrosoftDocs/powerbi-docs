@@ -75,7 +75,7 @@ You can also add a *smart narrative* to your report. The smart narrative visuali
 
 3. You can format it as you would any other text box. The underlined text are values the smart narrative is finding in the data.
 
-Read more about [smart narratives](power-bi-visualization-smart-narrative.md).
+Read more about [smart narratives](../visuals/power-bi-visualization-smart-narrative.md).
 
 ## Next steps
 
