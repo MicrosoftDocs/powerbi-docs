@@ -11,7 +11,8 @@ ms.date: 06/28/2018
 LocalizationGroup: Get started
 ---
 # 10 tips for getting help with your Power BI questions
-Do you ever get frustrated using Power BI, ​​or struggle because you can't get ​​answers to your Power BI questions​ when you need them -- i.e. "just-in-time"? ​
+
+Do you ever get frustrated using Power BI, ​​or struggle because you can't get ​​answers to your Power BI questions​ when you need them&mdash;in other words, "just-in-time"? ​
 
 Here are 10 tips that Power BI experts (including people who work on the product at Microsoft) commonly follow to find answers to their Power BI questions.
 
