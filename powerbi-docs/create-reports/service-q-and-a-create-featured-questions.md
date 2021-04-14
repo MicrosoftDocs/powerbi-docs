@@ -22,9 +22,9 @@ If you have edit permission for a dataset, you can add your own featured questio
 This article uses the [Retail Analysis Sales sample](sample-datasets.md). Follow these step-by-step instructions to try exploring a dataset yourself.
 
 1. On the dashboard, select the **Ask a question about your data** Q&A question box.   Notice that Q&A is already being helpful by displaying some suggested questions.
-2. To create a featured question, select the gear icon in the top-right corner of Power BI.  
+2. To create a featured question, in the top-right corner of Power BI, select the **More options** ellipsis, point to **Settings**, and select **Settings**.  
    ![Power BI gear icon.](media/service-q-and-a-create-featured-questions/gear-icon.png)
-3. Select **Settings** &gt; **Datasets** &gt; **Retail Analysis sample** &gt; **Featured Q&A questions**.  
+3. Select **Datasets** &gt; **Retail Analysis sample** &gt; **Featured Q&A questions**.  
 4. Select **Add a question**.
    
    ![Settings menu with Featured Q&A questions dropdown box.](media/service-q-and-a-create-featured-questions/power-bi-settings.png)
