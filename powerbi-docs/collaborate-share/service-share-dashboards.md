@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 04/13/2021
 LocalizationGroup: Share your work
 ---
 # Share Power BI reports and dashboards with coworkers and others
@@ -33,7 +33,9 @@ In a list of reports, or in an open report, select **Share** :::image type="icon
 Then in the **Send link** dialog, you'll see the option to copy the sharing link or share it via Outlook and Teams to **People in your organization**:
 
    ![Share link dialog box.](media/service-share-dashboards/power-bi-select-copy-link.png)
-   >[!NOTE] Your organization may not allow you to create shareable links to **People in your organization**. Learn more about this [tenant setting](https://docs.microsoft.com/power-bi/admin/service-admin-portal#allow-shareable-links-to-grant-access-to-all-people-in-your-organization) in the admin portal documentation.
+
+   > [!NOTE] 
+   > Your organization may not allow you to create shareable links to **People in your organization**. Learn more about this [tenant setting](../admin/service-admin-portal.md#allow-shareable-links-to-grant-access-to-all-people-in-your-organization) in the admin portal documentation.
    
 Selecting **Copy link** will automatically generate and copy a shareable link to your clipboard:
 
@@ -156,7 +158,7 @@ To remove a user's access to the dashboard, select the ellipsis (**...**) next t
 
 In the **Remove access** dialog, decide if you also want to remove access to related content, such as reports and datasets. It's best to also remove access to related content; otherwise, the related content may not display properly.
 
- ![Screenshot of the Remove access dialog.](media/service-share-dashboards/power-bi-share-remove-access.md)
+ ![Screenshot of the Remove access dialog.](media/service-share-dashboards/power-bi-share-remove-access.png)
 
 
 
