@@ -54,7 +54,7 @@ Once your recipients receive the email, they can click **Open this report** and 
 ### Link settings
 You can choose who your sharing link gives access to and what they can do with the report and associated data:
 
-![Link settings](https://user-images.githubusercontent.com/47899466/114606918-bef55d00-9c50-11eb-83c5-e697ce244796.png)
+![Screenshot of Link settings.](media/service-share-dashboards/power-bi-share-link-settings.png)
 
 
 **People in your organization**
