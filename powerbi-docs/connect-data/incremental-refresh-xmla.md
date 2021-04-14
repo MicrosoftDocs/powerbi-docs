@@ -41,7 +41,7 @@ With Power BI incremental refresh, the service handles the partition management 
 
 ## Refresh management with SQL Server Management Studio (SSMS)
 
-SSMS can be used to view and manage partitions created by the application of incremental refresh policies. This allows, for example, to refresh a specific historical partition not in the incremental refresh range to perform a back-dated update without having to refresh all historical data. SSMS can also be used when bootstrapping to load historical data for large datasets by incrementally adding/refreshing historical partitions in batches.
+SSMS can be used to view and manage partitions created by the application of incremental refresh policies. This allows, for example, to refresh a specific historical partition not in the incremental refresh period to perform a back-dated update without having to refresh all historical data. SSMS can also be used when bootstrapping to load historical data for large datasets by incrementally adding/refreshing historical partitions in batches.
 
 ![Partitions in SSMS](media/incremental-refresh-xmla/ssms-partitions.png)
 
@@ -55,7 +55,7 @@ These parameters can be used with the TMSL refresh command to override the defau
 
 - **applyRefreshPolicy** – If a table has an incremental refresh policy defined, applyRefreshPolicy will determine if the policy is applied or not. If the policy is not applied, a process full operation will leave partition definitions unchanged and all partitions in the table will be fully refreshed. Default value is true.
 
-- **effectiveDate** – If an incremental refresh policy is being applied, it needs to know the current date to determine rolling window ranges for the historical range and the incremental range. The effectiveDate parameter allows you to override the current date. This is useful for testing, demos, and business scenarios where data is incrementally refreshed up to a date in the past or the future (for example, budgets in the future). The default value is the current date.
+- **effectiveDate** – If an incremental refresh policy is being applied, it needs to know the current date to determine rolling window ranges for the incremental refresh and historical periods. The effectiveDate parameter allows you to override the current date. This is useful for testing, demos, and business scenarios where data is incrementally refreshed up to a date in the past or the future (for example, budgets in the future). The default value is the current date.
 
 ```json
 { 
@@ -77,13 +77,36 @@ These parameters can be used with the TMSL refresh command to override the defau
 
 To learn more about overriding default incremental refresh behavior with TMSL, see [Refresh command](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true).
 
+## Prevent timeouts on initial full refresh
+
+After publishing to the service, the initial full refresh operation for the dataset creates partitions and loads and processes historical data for the entire period defined in the incremental refresh policy. For some datasets that will load and process large amounts of data, the amount of time the initial refresh operation takes can exceed the refresh time limit imposed by the service or a query time limit imposed by the data source.
+
+> [!NOTE]
+> The terms process and refresh are synonymous.
+
+To prevent timeouts, prior to publishing the model to the service you can bootstrap the initial refresh operation. Bootstrapping allows the service to create table and partition objects for the dataset, but not load and process historical data into any of the partitions. When published, an initial refresh operation is performed on the dataset that creates table and partition objects for all tables, but data is only loaded for those tables that haven't been bootstrapped. The bootstrap is then removed. Through the XMLA endpoint, SSMS is then used to selectively process partitions. Depending on the amount of data that will be loaded for each partition, you may want to process each partition sequentially or in small batches to reduce the potential for one or more of those partitions to cause a timeout.
+
+There are couple ways to bootstrap the initial refresh, however, your options will largely depend on the data source type. The most common method we'll briefly describe here because it can work for any data source type. We'll use an example where an incremental refresh policy is defined for the FactInternetSales table.
+
+Prior to publishing the model to the service, in Power Query Editor, we add another filter to the ProductKey column that filters out any value other than 0. This effectively filters out *all* data from the FactInternetSales table.
+
+![Filter out product key](media/incremental-refresh-xmla/filter-product-key.png)
+
+After clicking Close & Apply in Power Query Editor, defining the incremental refresh policy, and saving the model, we publish to the service. From the service, we then run the initial refresh operation on the dataset. Partitions for the FactInternetSales table are created according to the policy, but no data is loaded and processed because all data is filtered out. After the initial refresh operation is complete, back in Power Query Editor, the additional filter on the ProductKey column is removed. After clicking Close & Apply in Power Query Editor and saving the model, the model **is not published again** because it would overwrite the incremental refresh policy settings, and force a full refresh on the dataset when a subsequent refresh operation is performed from the service. Instead, we perform a metadata-only deployment by using ALM Toolkit that removes the filter on the ProductKey column from the *dataset*. We then use SSMS to selectively process partitions. When all partitions have been fully processed (which must include a process recalculation on all partitions) from SSMS, subsequent refresh operations on the dataset from the service refresh only the incremental refresh partition(s).
+
+> [!TIP]
+> Be sure to check out videos, blogs, and more provided by Power BI's community of BI experts.  
+>- [Search for **"Prevent timeouts with incremental refresh"** on Bing](https://www.bing.com/video/search?q=prevent+timeouts+with+incremental+refresh).
+
+To learn more about processing tables and partitions from SSMS, see [Process database, table, or partitions (Analysis Services)](/analysis-services/tabular-models/process-database-table-or-partition-analysis-services?view=power-bi-premium-current&preserve-view=true). To learn more about processing datasets, tables, and partitions by using TMSL, see [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true).
+
 ## Custom queries for detect data changes
 
 TMSL and/or TOM can be used to override the detected data changes behavior. Not only can this be used to avoid persisting the last-update column in the in-memory cache, it can enable scenarios where a configuration/instruction table is prepared by ETL processes for flagging only the partitions that need to be refreshed. This can create a more efficient incremental refresh process where only the required periods are refreshed, no matter how long ago data updates took place.
 
 The pollingExpression is intended to be a lightweight M expression or name of another M query. It must return a scalar value and will be executed for each partition. If the value returned is different to what it was the last time an incremental refresh occurred, the partition is flagged for full processing.
 
-The following example covers all 120 months in the historical range for backdated changes. Specifying 120 months instead of 10 years means data compression may not be quite as efficient, but avoids having to refresh a whole historical year, which would be more expensive when a month would be sufficient for a backdated change.
+The following example covers all 120 months in the historical period for backdated changes. Specifying 120 months instead of 10 years means data compression may not be quite as efficient, but avoids having to refresh a whole historical year, which would be more expensive when a month would be sufficient for a backdated change.
 
 ```json
 "refreshPolicy": {
@@ -118,29 +141,6 @@ For workspaces assigned to a Premium capacity configured for XMLA endpoint read-
 Download and install the latest version of the ALM Toolkit from the [Analysis Services Git repo](https://github.com/microsoft/Analysis-Services/releases). Step-by-step guidance on using ALM Toolkit is not included in Microsoft documentation. ALM Toolkit documentation links and information on supportability are available on the Help ribbon. To perform a metadata only deployment, perform a comparison and select the running Power BI Desktop instance as the source, and the existing dataset in the service as the target. Consider the differences displayed and skip the update of the table with incremental refresh partitions or use the Options dialog to retain partitions for table updates. Validate the selection to ensure the integrity of the target model and then update.
 
 ![ALM Toolkit](media/incremental-refresh-xmla/alm-toolkit.png)
-
-## Prevent timeouts on initial full refresh
-
-After publishing to the service, the initial full refresh operation for the dataset creates partitions and loads and processes historical data for the entire period defined in the incremental refresh policy. For some datasets that will load and process large amounts of data, the amount of time the initial refresh operation takes can exceed the refresh time limit imposed by the service or a query time limit imposed by the data source.
-
-> [!NOTE]
-> The terms process and refresh are synonymous.
-
-To prevent timeouts, prior to publishing the model to the service you can bootstrap the initial refresh operation. Bootstrapping allows the service to create table and partition objects for the dataset, but not load and process historical data into any of the partitions. When published, an initial refresh operation is performed on the dataset that creates table and partition objects for all tables, but data is only loaded for those tables that haven't been bootstrapped. The bootstrap is then removed. Through the XMLA endpoint, SSMS is then used to selectively process partitions. Depending on the amount of data that will be loaded for each partition, you may want to process each partition sequentially or in small batches to reduce the potential for one or more of those partitions to cause a timeout.
-
-There are couple ways to bootstrap the initial refresh, however, your options will largely depend on the data source type. The most common method we'll briefly describe here because it can work for any data source type. We'll use an example where an incremental refresh policy is defined for the FactInternetSales table.
-
-Prior to publishing the model to the service, in Power Query Editor, we add another filter to the ProductKey column that filters out any value other than 0. This effectively filters out *all* data from the FactInternetSales table.
-
-![Filter out product key](media/incremental-refresh-xmla/filter-product-key.png)
-
-After clicking Close & Apply in Power Query Editor, defining the incremental refresh policy, and saving the model, we publish to the service. From the service, we then run the initial refresh operation on the dataset. Partitions for the FactInternetSales table are created according to the policy, but no data is loaded and processed because all data is filtered out. After the initial refresh operation is complete, back in Power Query Editor, the additional filter on the ProductKey column is removed. After clicking Close & Apply in Power Query Editor and saving the model, the model **is not published again** because it would overwrite the incremental refresh policy settings, and force a full refresh on the dataset when a subsequent refresh operation is performed from the service. Instead, we perform a metadata-only deployment by using ALM Toolkit that removes the filter on the ProductKey column from the *dataset*. We then use SSMS to selectively process partitions. When all partitions have been fully processed (which must include a process recalculation on all partitions) from SSMS, subsequent refresh operations on the dataset from the service refresh only the incremental refresh partition(s).
-
-> [!TIP]
-> Be sure to check out videos, blogs, and more provided by Power BI's community of BI experts.  
->- [Search for **"Prevent timeouts with incremental refresh"** on Bing](https://www.bing.com/video/search?q=prevent+timeouts+with+incremental+refresh).
-
-To learn more about processing tables and partitions from SSMS, see [Process database, table, or partitions (Analysis Services)](/analysis-services/tabular-models/process-database-table-or-partition-analysis-services?view=power-bi-premium-current&preserve-view=true). To learn more about processing datasets, tables, and partitions by using TMSL, see [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true).
 
 ## See also
 
