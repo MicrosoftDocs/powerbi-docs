@@ -152,7 +152,7 @@ For additional access management capabilities, select the **Advanced** option in
 
 To remove a user's access to the dashboard, select the ellipsis (**...**) next to that user's permissions and select **Remove access**:
       
-   ![Remove access dashboard](https://user-images.githubusercontent.com/47899466/114616907-4a282000-9c5c-11eb-9ffa-0c0b0042934c.PNG)
+![Screenshot of More option, Remove access dashboard.](media/service-share-dashboards/power-bi-more-options-remove-access.png)
 
 In the **Remove access** dialog, decide if you also want to remove access to related content, such as reports and datasets. It's best to also remove access to related content; otherwise, the related content may not display properly.
 
