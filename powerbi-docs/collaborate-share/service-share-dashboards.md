@@ -45,7 +45,7 @@ You can also choose to directly send the link to **Specific people** or groups (
 
 Once you’ve click **Send**, we’ll send the link via email to your recipients.
 
-![Sent link](https://user-images.githubusercontent.com/47899466/114598729-142c7100-9c47-11eb-829c-f286e5eafea0.png)
+![Screenshot of sent link.](media/service-share-dashboards/power-bi-share-link-sent.png)
 
 Once your recipients receive the email, they can click **Open this report** and automatically get access to the report through the shareable link.
 
