@@ -107,7 +107,7 @@ For additional access management capabilities, select the **Advanced** option in
 - View and manage **Related content**
 - Apply **Filters** or **Search** for specific links or people
 
-![Manage permissions page](https://user-images.githubusercontent.com/47899466/114609029-30360f80-9c53-11eb-9f23-0a129f8b4a35.png)
+![Screenshot of Manage permissions page.](media/service-share-dashboards/power-bi-manage-sharing.png)
 
    >[!NOTE] 
    > Each report cannot have more than 1,000 sharing links. In the unlikely case that your report hits this max limit, we recommend removing links that give **Specific people** access and instead grant those users direct access.
