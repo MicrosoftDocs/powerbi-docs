@@ -117,7 +117,7 @@ In a list of dashboards, or in an open dashboard, select **Share** :::image type
 
 Then in the **Share dashboard** dialog, you'll see the option to grant users or groups direct access to the dashboard:
 
-![Share dashboard](https://user-images.githubusercontent.com/47899466/114610532-e0584800-9c54-11eb-9702-947f386cd80c.PNG)
+![Screenshot of Share dashboard dialog](media/service-share-dashboards/power-bi-share-dashboard.png)
 
 Just enter the name or email address of the user or group, optionally type a message, and click **Grant access**.
 
