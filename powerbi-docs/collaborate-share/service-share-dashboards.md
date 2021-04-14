@@ -136,7 +136,7 @@ You can share the dashboard with guest users whose addresses are outside your or
 ## Managing permissions to a dashboard
 To manage permission to the dashboard, select the **More options**  menu (. . .) in the upper right of the **Share dashboard** dialog, and then select **Manage permissions**:
 
-![manage permissions dashboard](https://user-images.githubusercontent.com/47899466/114615542-ac802100-9c5a-11eb-8789-83814c8dd23c.PNG)
+![Screenshot of the Manage permissions dashboard.](media/service-share-dashboards/power-bi-share-dashboard-more-options-manage-permissions.png)
 
 This will launch the **Manage permissions** pane where can see who has direct access and click the plus icon (+) to grant more users direct access to the dashboard. 
 
