@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/13/2021
+ms.date: 04/14/2021
 LocalizationGroup: Share your work
 ---
 # Share Power BI reports and dashboards with coworkers and others
@@ -41,17 +41,17 @@ Selecting **Copy link** will automatically generate and copy a shareable link to
 
 ![Copied link.](media/service-share-dashboards/power-bi-share-link-copied.png)
 
-You can also choose to directly send the link to **Specific people** or groups (distribution groups or security groups). Just enter their name or email address, optionally type a message, and click **Send**.
+You can also choose to directly send the link to **Specific people** or groups (distribution groups or security groups). Just enter their name or email address, optionally type a message, and select **Send**.
 
-![Send link to specific people](https://user-images.githubusercontent.com/47899466/114597323-7b492600-9c45-11eb-83ba-22ba2c8c5002.png)
+![Send link to specific people](media/service-share-dashboards/specific-people-link-sharing.png)
 
-Once you’ve click **Send**, we’ll send the link via email to your recipients.
+After you select **Send**, Power BI sends the link via email to your recipients.
 
 ![Screenshot of sent link.](media/service-share-dashboards/power-bi-share-link-sent.png)
 
-Once your recipients receive the email, they can click **Open this report** and automatically get access to the report through the shareable link.
+When your recipients receive the email, they can select **Open this report** and automatically get access to the report through the shareable link.
 
-![Email with shared link](https://user-images.githubusercontent.com/47899466/114598834-358d5d00-9c47-11eb-9df4-6c82e9ac72c2.png)
+![Email with shared link](media/service-share-dashboards/email-report-link.png)
 
 ### Link settings
 You can choose who your sharing link gives access to and what they can do with the report and associated data:
@@ -89,25 +89,25 @@ Links for **People with existing access** do not have any additional settings be
 - Additionally, if you do not have a Power BI Pro License, you only copy and share links to **People with existing access**.
 - Currently, sharing via links doesn’t support the option to **Include my changes**; however, you can continue using direct access sharing for this scenario.
 
-## Managing permissions to a report
+## Manage permissions to a report
 To manage permission and manage links that give access to the report, select the context menu (. . .) in the upper right of the sharing dialog, and then select **Manage permissions**:
 
 ![Screenshot of Manage permissions.](media/service-share-dashboards/power-bi-share-manage-settings.png)
 
 This will launch the **Manage permissions** pane where you can copy or modify existing links or grant users direct access. To modify a given link, click the context menu (. . .).
 
-![Manage permissions pane](https://user-images.githubusercontent.com/47899466/114608629-bdc52f80-9c52-11eb-8948-7ce358d48b69.png)
+![Screenshot of Manage permissions pane.](media/service-share-dashboards/manage-permissions-pane.png)
 
-To grant users direct access to the report click the plus icon (+), enter their name or email address, optionally type a message, and click **Grant access**.
+To grant users direct access to the report select the plus icon (+), enter their name or email address, optionally type a message, and select **Grant access**.
 
-![Grant access](https://user-images.githubusercontent.com/47899466/114608825-f533dc00-9c52-11eb-8288-fb61e8cf8ab1.png)
+![Screenshot of Grant people access dialog.](media/service-share-dashboards/grant-dashboard-access-dialog.png)
 
-For additional access management capabilities, select the **Advanced** option in the footer of the **Manage permissions** pane. This will navigate you to the management page where you can:
-- View, manage, and create **Links**
-- View and manage who has **Direct access** and grant people direct access
-- View and manage **Pending** access requests and invitations
-- View and manage **Related content**
-- Apply **Filters** or **Search** for specific links or people
+For additional access management capabilities, select the **Advanced** option in the footer of the **Manage permissions** pane. This takes you to the management page, where you can:
+- View, manage, and create **Links**.
+- View and manage who has **Direct access** and grant people direct access.
+- View and manage **Pending** access requests and invitations.
+- View and manage **Related content**.
+- Apply **Filters** or **Search** for specific links or people.
 
 ![Screenshot of Manage permissions page.](media/service-share-dashboards/power-bi-manage-sharing.png)
 
@@ -121,9 +121,9 @@ Then in the **Share dashboard** dialog, you'll see the option to grant users or 
 
 ![Screenshot of Share dashboard dialog](media/service-share-dashboards/power-bi-share-dashboard.png)
 
-Just enter the name or email address of the user or group, optionally type a message, and click **Grant access**.
+Enter the name or email address of the user or group, optionally type a message, and click **Grant access**.
 
-![Share dashboard to person](https://user-images.githubusercontent.com/47899466/114611793-3e395f80-9c56-11eb-97e8-99b131cd02d9.PNG)
+![Grant dashboard access to a person](media/service-share-dashboards/grant-dashboard-access-dialog.png)
 
 Similar to report sharing, you can specify if you want to grant users the following permissions as well:
 
@@ -135,14 +135,14 @@ You can share the dashboard with guest users whose addresses are outside your or
    >[!NOTE] 
    > The input box supports, at most, 100 separate users or groups. See [Share with more than 100 users](#share-with-more-than-100-separate-users) in this article for ways to share with more people.
  
-## Managing permissions to a dashboard
+## Manage permissions to a dashboard
 To manage permission to the dashboard, select the **More options**  menu (. . .) in the upper right of the **Share dashboard** dialog, and then select **Manage permissions**:
 
 ![Screenshot of the Manage permissions dashboard.](media/service-share-dashboards/power-bi-share-dashboard-more-options-manage-permissions.png)
 
 This will launch the **Manage permissions** pane where can see who has direct access and click the plus icon (+) to grant more users direct access to the dashboard. 
 
-![manage permissions pane dashboard](https://user-images.githubusercontent.com/47899466/114615946-20bac480-9c5b-11eb-91f8-13c65227c110.PNG)
+![Screenshot of Manage dashboard permissions pane.](media/service-share-dashboards/manage-dashboard-permissions-pane.png)
 
 For additional access management capabilities, select the **Advanced** option in the footer of the **Manage permissions** pane. This will navigate you to the management page where you can:
 - View and manage who has **Direct access** and grant people direct access
@@ -150,11 +150,11 @@ For additional access management capabilities, select the **Advanced** option in
 - View and manage **Related content**
 - Apply **Filters** or **Search** for specific people
 
-![manage permissions page dashboard](https://user-images.githubusercontent.com/47899466/114616194-71322200-9c5b-11eb-9218-d4d56d2a5a05.PNG)
+![Screenshot of Manage dashboard permissions advanced page.](media/service-share-dashboards/manage-dashboard-permissions-page.png)
 
 To remove a user's access to the dashboard, select the ellipsis (**...**) next to that user's permissions and select **Remove access**:
       
-![Screenshot of More option, Remove access dashboard.](media/service-share-dashboards/power-bi-more-options-remove-access.png)
+![Screenshot of More options, Remove access dashboard.](media/service-share-dashboards/power-bi-more-options-remove-access.png)
 
 In the **Remove access** dialog, decide if you also want to remove access to related content, such as reports and datasets. It's best to also remove access to related content; otherwise, the related content may not display properly.
 
