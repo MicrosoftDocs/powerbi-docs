@@ -3881,6 +3881,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/create-reports/service-data-classification.md",
+            "redirect_url": "/power-bi/admin/service-security-apply-data-sensitivity-labels",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/create-reports/desktop-external-tools.md",
             "redirect_url": "/power-bi/transform-model/desktop-external-tools",
             "redirect_document_id": false
