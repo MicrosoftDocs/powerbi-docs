@@ -16,7 +16,7 @@ LocalizationGroup: Share your work
 
 When you share a report or dashboard, the people you share it with can view it and interact with it but can't edit it. They see the same data that you see in the reports and dashboards and get access to the entire underlying dataset unless row-level security (RLS) is applied to the underlying dataset.  The coworkers you share with can also share with their coworkers if you allow them to.
 
-![Share icon for a report](https://user-images.githubusercontent.com/47899466/114593263-be54ca80-9c40-11eb-9e40-47bfb2859b75.png)
+![Share icon for a report.](media/service-share-dashboards/power-bi-share-new-look.png)
 
 You can share reports and dashboards from many places in the Power BI service: Favorites, Recent, My Workspace. You can share from other workspaces, too, if you have the [Admin, Member, or Contributor role](service-new-workspaces.md#roles-in-the-new-workspaces) in the workspace. And you can share reports and dashboards in Shared with me if the owner allows it. 
 
