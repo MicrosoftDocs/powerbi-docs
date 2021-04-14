@@ -37,7 +37,7 @@ Then in the **Send link** dialog, you'll see the option to copy the sharing link
    
 Selecting **Copy link** will automatically generate and copy a shareable link to your clipboard:
 
-![Copied link](https://user-images.githubusercontent.com/47899466/114596854-f827d000-9c44-11eb-8a35-4841b4525756.png)
+![Copied link.](media/service-share-dashboards/power-bi-share-link-copied.png)
 
 You can also choose to directly send the link to **Specific people** or groups (distribution groups or security groups). Just enter their name or email address, optionally type a message, and click **Send**.
 
