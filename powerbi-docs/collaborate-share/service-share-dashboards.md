@@ -32,7 +32,7 @@ In a list of reports, or in an open report, select **Share** :::image type="icon
 
 Then in the **Send link** dialog, you'll see the option to copy the sharing link or share it via Outlook and Teams to **People in your organization**:
 
-   ![Share link dialog](https://user-images.githubusercontent.com/47899466/114594921-a8e0a000-9c42-11eb-9263-1206a499e668.png)
+   ![Share link dialog box.](media/service-share-dashboards/power-bi-select-copy-link.png)
    >[!NOTE] Your organization may not allow you to create shareable links to **People in your organization**. Learn more about this [tenant setting](https://docs.microsoft.com/power-bi/admin/service-admin-portal#allow-shareable-links-to-grant-access-to-all-people-in-your-organization) in the admin portal documentation.
    
 Selecting **Copy link** will automatically generate and copy a shareable link to your clipboard:
