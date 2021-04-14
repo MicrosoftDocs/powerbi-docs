@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/20/2021
+ms.date: 04/14/2021
 LocalizationGroup: Reports
 ---
 # Analyze in Excel
@@ -106,9 +106,13 @@ The Excel file has an MSOLAP connection string that connects to your dataset in 
 
 With that connection to the data in Power BI now established, you can create PivotTables, charts, and analyze that dataset just as you would work with a local dataset in Excel.
 
-**Analyze in Excel** is especially useful for datasets and reports that connect to the following data sources:
+**Analyze in Excel** is especially useful for Power BI datasets and reports that connect to the following data sources:
 
-* *Analysis Services Tabular* or *Multidimensional* databases
+* SQL Services Analysis Services (SSAS) *tabular* or *multidimensional* data models, including datasets created from live connections to SSAS.
+
+    For on-premises data, you'll need an [on-premises data gateway](../connect-data/service-gateway-onprem-indepth.md).
+
+* Azure Analysis Services *tabular* data models, including datasets created from live connections to Azure Analysis Services. 
 * Power BI Desktop files or Excel workbooks with data models that have model measures created using Data Analysis Expressions (DAX).
 
 > [!IMPORTANT]
