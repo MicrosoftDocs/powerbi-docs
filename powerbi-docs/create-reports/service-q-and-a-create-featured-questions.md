@@ -28,10 +28,12 @@ This article uses the [Retail Analysis Sales sample](sample-datasets.md). Follow
 4. Select **Add a question**.
    
    ![Settings menu with Featured Q&A questions dropdown box.](media/service-q-and-a-create-featured-questions/power-bi-settings.png)
-5. Type your question in the text box. For example, type "show last year sales by territory as filled map" and select **Apply**.   Optionally, add another question by selecting **Add a question** again.  
+5. Type your question in the text box. For example, type "show last year sales by territory as filled map" and select **Apply**.   Optionally, add another question by selecting **Add a question** again.
    ![Featured Q&A questions interface.](media/service-q-and-a-create-featured-questions/power-bi-type-featured-question.png)
+   
 6. Navigate back to the Power BI dashboard for Retail Analysis Sample, and place your cursor in the Q&A question box.
    ![Q&A question box in Power BI dashboard.](media/service-q-and-a-create-featured-questions/ask-question.png)
+   
 7. The Q&A screen appears, with the new featured question, **show last year sales by territory as filled map** showing. Select the featured question.
    ![Q&A question box with featured question.](media/service-q-and-a-create-featured-questions/power-bi-qna-featured-question-to-start.png)
 8. Power BI creates the answer and displays it as a filled map visualization.  
