@@ -90,7 +90,7 @@ Links for **People with existing access** do not have any additional settings be
 ## Managing permissions to a report
 To manage permission and manage links that give access to the report, select the context menu (. . .) in the upper right of the sharing dialog, and then select **Manage permissions**:
 
-![Manage permissions](https://user-images.githubusercontent.com/47899466/114608708-cfa6d280-9c52-11eb-80bd-fa55f75f0b0e.png)
+![Screenshot of Manage permissions.](media/service-share-dashboards/power-bi-share-manage-settings.png)
 
 This will launch the **Manage permissions** pane where you can copy or modify existing links or grant users direct access. To modify a given link, click the context menu (. . .).
 
