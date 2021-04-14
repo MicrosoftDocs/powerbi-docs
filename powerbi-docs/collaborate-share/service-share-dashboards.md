@@ -156,7 +156,7 @@ To remove a user's access to the dashboard, select the ellipsis (**...**) next t
 
 In the **Remove access** dialog, decide if you also want to remove access to related content, such as reports and datasets. It's best to also remove access to related content; otherwise, the related content may not display properly.
 
- ![remove access dialog](https://user-images.githubusercontent.com/47899466/114617320-d63a4780-9c5c-11eb-9ed0-f5c3ddddd41a.PNG)
+ ![Screenshot of the Remove access dialog.](media/service-share-dashboards/power-bi-share-remove-access.md)
 
 
 
