@@ -134,7 +134,7 @@ You can share the dashboard with guest users whose addresses are outside your or
    > The input box supports, at most, 100 separate users or groups. See [Share with more than 100 users](#share-with-more-than-100-separate-users) in this article for ways to share with more people.
  
 ## Managing permissions to a dashboard
-To manage permission to the dashboard, select the context menu (. . .) in the upper right of the **Share dashboard** dialog, and then select **Manage permissions**:
+To manage permission to the dashboard, select the **More options**  menu (. . .) in the upper right of the **Share dashboard** dialog, and then select **Manage permissions**:
 
 ![manage permissions dashboard](https://user-images.githubusercontent.com/47899466/114615542-ac802100-9c5a-11eb-8789-83814c8dd23c.PNG)
 
