@@ -96,9 +96,7 @@ To dig into the report data, or to build your own reports against the underlying
 
 ## Save a copy of the Usage Metrics report
 
-Use **Save as** to convert the usage metrics report to a regular Power BI report that you can customize to meet your specific needs. You can also use Power BI Desktop to build custom usage metrics reports based on the underlying dataset. See [Establish a connection to a published dataset](../connect-data/desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset) for details.
-
-Better yet, the underlying dataset includes the usage details for all dashboards or reports in the workspace. This opens up more possibilities. You could, for example, create a report that compares the dashboards in your workspace, based on usage. Or you could create a usage metrics dashboard for your Power BI app by aggregating usage across all the content distributed within that app.  See how to remove the filter and [see all usage metrics for the workspace](#see-all-workspace-usage-metrics) later in this article.
+Use **Save as** to convert the usage metrics report to a regular Power BI report that you can customize to meet your specific needs. Better yet, the underlying dataset includes the usage details for all dashboards or reports in the workspace. This opens up more possibilities. You could, for example, create a report that compares the dashboards in your workspace, based on usage. Or you could create a usage metrics dashboard for your Power BI app by aggregating usage across all the content distributed within that app.  See how to remove the filter and [see all usage metrics for the workspace](#see-all-workspace-usage-metrics) later in this article.
 
 ### Create a copy of the usage report
 
@@ -113,6 +111,13 @@ When you create a copy of the read-only, pre-built usage report, Power BI create
 3. The new report is saved to the **Reports** tab in the current workspace, and added to the **Recent** content list.
 
     ![Reports tab](media/service-usage-metrics/power-bi-new-report.png)
+    
+### Create a custom report in Power BI Desktop
+
+You can use Power BI Desktop to build custom usage metrics reports based on the underlying dataset. See [Establish a connection to a published dataset](../connect-data/desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset) for details. 
+
+> [!NOTE]
+> Power BI Desktop uses a Live Connection to the Report Usage Metrics Model dataset. This cannot be changed to DirectQuery since the dataset is owned by Power BI. Attempting to do so will result in an error in Power BI Desktop.
 
 ## See *all* workspace usage metrics
 
