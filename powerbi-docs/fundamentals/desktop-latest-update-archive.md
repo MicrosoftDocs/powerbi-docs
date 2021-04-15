@@ -787,7 +787,7 @@ The following updates are new to Power BI Desktop this month:
 * Curate featured tables for Excel (preview) [[video]](https://youtu.be/JtuHIslowxk?t=20)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Excel) 
 * Apply all filters (preview)   [[video]](https://youtu.be/JtuHIslowxk?t=193) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Apply_all) 
 * Enhancements to change detection (preview)  [[video]](https://youtu.be/JtuHIslowxk?t=475)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_CDM) 
-* Drill through button action is now generally available  [[video]](https://youtu.be/JtuHIslowxk?t=626)  [[article]](../create-reports/desktop-drill-through-buttons.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Drill_through) 
+* Drillthrough button action is now generally available  [[video]](https://youtu.be/JtuHIslowxk?t=626)  [[article]](../create-reports/desktop-drill-through-buttons.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Drill_through) 
 * Enhancements to page navigation action   [[video]](https://youtu.be/JtuHIslowxk?t=1143)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_page_nav) 
 * Buttons now support fill images  [[video]](https://youtu.be/JtuHIslowxk?t=1465)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_fill_images) 
 * Drop shadow support for visuals  [[video]](https://youtu.be/JtuHIslowxk?t=1561)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_shadow) 
@@ -1717,7 +1717,7 @@ The following updates were new to **Power BI Desktop** this month:
 
 
 ### Analytics
-* Drillthrough across reports [[video]](https://youtu.be/vih35kSrEHU?t=567)  [[article]](../create-reports/desktop-cross-report-drill-through.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#drillthrough) 
+* Drill through across reports [[video]](https://youtu.be/vih35kSrEHU?t=567)  [[article]](../create-reports/desktop-cross-report-drill-through.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#drillthrough) 
 * Key Influencers visual now supports continuous analysis for numeric targets [[video]](https://youtu.be/vih35kSrEHU?t=753)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#keyInfluencers) 
 * Python support not generally available [[video]](https://youtu.be/vih35kSrEHU?t=889)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#python) 
 * Partial synonym matching for terms in Q&A [[video]](https://youtu.be/vih35kSrEHU?t=912)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#partialMatching) 
@@ -2768,7 +2768,7 @@ The following updates are new to **Power BI Desktop** in September:
 
 ### Report View:
 
--   Drillthrough to another report page [[video]](https://youtu.be/moTQJlnClJw?t=19s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#drillthrough) [[article]](../create-reports/desktop-drillthrough.md)
+-   Drill through to another report page [[video]](https://youtu.be/moTQJlnClJw?t=19s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#drillthrough) [[article]](../create-reports/desktop-drillthrough.md)
 -   Ribbon chart  [[video]](https://youtu.be/moTQJlnClJw?t=8m57s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#ribbon) [[article]](../visuals/desktop-ribbon-charts.md)
 -   Insights about Explain the increase / Explain the decrease  [[video]](https://youtu.be/moTQJlnClJw?t=13m37s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#insights) [[article]](../create-reports/desktop-insights.md)
 -   Theming preview update - chart style controls [[video]](https://youtu.be/moTQJlnClJw?t=19m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#theming) [[article]](../create-reports/desktop-report-themes.md)
@@ -2860,9 +2860,9 @@ The following updates were new to **Power BI Desktop** in July:
 -   Responsive layout for visuals (preview)  [[video]](https://youtu.be/4X96ow7FnSY?t=12m14s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#responsiveVisuals)
 -   New waterfall chart option - breakdown  [[video]](https://youtu.be/4X96ow7FnSY?t=14m29s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#waterfall)
 -   Custom visual updates  [[video]](https://youtu.be/4X96ow7FnSY?t=17m34s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#customVisuals)
-    -   Drill down Choropleth  [[video]](https://youtu.be/4X96ow7FnSY?t=18m11s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownChoropleth)
-    -   Drill down Cartogram  [[video]](https://youtu.be/4X96ow7FnSY?t=19m14s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownCartogram)
-    -   Drill down Player  [[video]](https://youtu.be/4X96ow7FnSY?t=20m17s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownPlayer)
+    -   Drill-down Choropleth  [[video]](https://youtu.be/4X96ow7FnSY?t=18m11s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownChoropleth)
+    -   Drill-down Cartogram  [[video]](https://youtu.be/4X96ow7FnSY?t=19m14s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownCartogram)
+    -   Drill-down Player  [[video]](https://youtu.be/4X96ow7FnSY?t=20m17s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownPlayer)
     -   Certified Power BI visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#certifiedCustomVisuals)
 
 
@@ -3901,7 +3901,7 @@ The following massive collection of 44 features has been added to this update:
 ### Report Authoring
 
 - Report-level filters
-- Drill Up/Down for column and scatter charts
+- Drill up/down for column and scatter charts
 - New Page Size and Page View options
 - Support for inserting Shapes in the Report canvas
 - Fields pane improvements
