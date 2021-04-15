@@ -13,7 +13,7 @@ ms.date: 06/18/2019
 
 # Add drill-down support
 
-Power BI visuals can use Power BI's drill-down feature.
+Power BI visuals can use the Power BI drill-down feature.
 
 Read more about Power BI's drill-down feature [here](./../../consumer/end-user-drill.md)
 
