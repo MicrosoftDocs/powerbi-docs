@@ -59,7 +59,7 @@ The expansion state of the matrix will save with your report. A matrix can be pi
 > [!NOTE]
 > If you're building a report on top of an Analysis Services multidimensional model, there are some special considerations for expand/collapse if the model uses the Default Member feature. For more information see [Work with multidimensional models in Power BI](../connect-data/desktop-default-member-multidimensional-models.md)
 
-## Using drill down actions with the matrix visual
+## Using drill-down actions with the matrix visual
 With the matrix visual, you can do all sorts of interesting drill-down activities that weren't available before. This includes the ability to drill down using rows, columns, and even into individual sections and cells. Let's take a look at how each of these works.
 
 ### Drill down on row headers
@@ -228,5 +228,4 @@ Select *Advanced controls* to display a dialog, which lets you make adjustments.
 [Power Apps visual for Power BI](power-bi-visualization-powerapp.md)
 
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
 
