@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 04/06/2021
+ms.date: 04/15/2021
 ---
 
 # Analyze your Teams usage in the Power BI app for Teams
@@ -24,7 +24,6 @@ Only you can see this report about your Teams activity, unless you choose to sha
 
 To view your Teams activity analytics in Microsoft Teams, ensure these elements:
 
-- You have a Power BI Pro or Premium Per User (PPU) license.
 - Sign in to the Power BI service to activate your Power BI license.
 - [Install the Power BI app for Teams](service-microsoft-teams-app.md).
 
@@ -72,6 +71,8 @@ Select the **Refresh** icon in Power BI in Teams to refresh the data.
 :::image type="content" source="media/service-teams-analytics/teams-analytics-refresh.png" alt-text="Screenshot of the Refresh icon.":::
 
 You'll see the most currently available data in Teams. It's not a real-time feed. You see a snapshot of the data, which is typically one to two days old.
+
+Your recent activity in Microsoft Teams typically takes one to two days to be available in reporting provided by Teams. The report created in Power BI is automatically set up to refresh your activity data from Teams to pull in a snapshot of this data once a day.
 
 ## Next steps
 
