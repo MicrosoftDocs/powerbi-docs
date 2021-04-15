@@ -100,7 +100,7 @@ This will launch the **Manage permissions** pane where you can copy or modify ex
 
 To grant users direct access to the report select the plus icon (+), enter their name or email address, optionally type a message, and select **Grant access**.
 
-![Screenshot of Grant people access dialog.](media/service-share-dashboards/grant-dashboard-access-dialog.png)
+![Screenshot of Grant people report access dialog.](media/service-share-dashboards/grant-report-access.png)
 
 For additional access management capabilities, select the **Advanced** option in the footer of the **Manage permissions** pane. This takes you to the management page, where you can:
 - View, manage, and create **Links**.
