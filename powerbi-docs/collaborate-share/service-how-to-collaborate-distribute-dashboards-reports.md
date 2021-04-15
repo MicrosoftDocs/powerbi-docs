@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 12/14/2020
+ms.date: 04/14/2021
 ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
 ---
@@ -74,23 +74,23 @@ Read more about [collaborating in Microsoft Teams with Power BI](service-collabo
 
 Let's say your report in Power BI Desktop is ready, and you want other people to have access to it. One way to get it to them is to *share* it in the Power BI service. You publish it to your own My Workspace or another workspace. Maybe you create a dashboard to go with it, and you're ready.
 
-![Share report](https://user-images.githubusercontent.com/47899466/114628481-c24a1200-9c6b-11eb-83bc-be0f52fa24fa.png)
+![Screenshot of sharing a report.](media/service-share-dashboards/power-bi-share-new-look.png)
 
 
 You need a Power BI Pro license to share your content. The people you share it with do too, or the content needs to be in a workspace in a [Premium capacity](../admin/service-premium-what-is.md). When you share a dashboard or report, recipients can view it and interact with it. If you give them permission, they can edit it, make a copy of it, and share it with their coworkers. They see the same data that you see in the dashboard or report. They have access to all the data in the underlying dataset, unless [row-level security (RLS)](../admin/service-admin-rls.md) is applied.
 
 You can share reports via links that give access:
 
-![Send link](https://user-images.githubusercontent.com/47899466/114628842-66cc5400-9c6c-11eb-89f0-2b6cc9cd2d8a.png)
+![Screenshot of Send link dialog box.](media/service-share-dashboards/power-bi-copy-link-outlook-teams.png)
 
 
 Additionally, you can share reports by granting users direct access:
 
-![Grant access](https://user-images.githubusercontent.com/47899466/114628871-76e43380-9c6c-11eb-92bf-aa16efd0182c.png)
+![Screenshot of Grant people report access dialog.](media/service-share-dashboards/grant-report-access.png)
 
-Dashboards can also be shared by granting user direct access but not via links that give access:
+You can also share dashboards by granting user direct access but not via links that give access:
 
-![Share dashboard](https://user-images.githubusercontent.com/47899466/114628977-a430e180-9c6c-11eb-9c71-c991fe1a72f1.PNG)
+![Screenshot of Grant access to a dashboard dialog.](media/service-share-dashboards/grant-dashboard-access-dialog.png)
 
 If you share a dashboard with people outside your organization, they can view and interact with the dashboard, but they can't share it with others. 
 
