@@ -38,7 +38,7 @@ To learn more, see [What type of license do I have?](end-user-license.md).
 
 ## What if I have questions about Power BI Premium?
 
-For questions related to Power BI Premium, see [Power BI Premium FAQ](../admin/service-premium-faq.md).
+For questions related to Power BI Premium, see [Power BI Premium FAQ](../admin/service-premium-faq.yml).
 
 ## What is Power BI Desktop?
 

@@ -31,6 +31,8 @@ There are two different types of gateways, each for a different scenario:
 
 * **On-premises data gateway (personal mode)** allows one user to connect to sources, and can’t be shared with others. An on-premises data gateway (personal mode) can be used only with Power BI. This gateway is well-suited to scenarios where you’re the only person who creates reports, and you don't need to share any data sources with others.
 
+* **Virtual network data gateway** allows multiple users to connect to multiple data sources secured by Virtual networks. There is no installation requried since this is a Microsoft managed service. This gateway is well-suited to complex scenarios with multiple people accessing multiple data sources.
+
 ## Use a gateway
 
 There are four main steps for using a gateway.

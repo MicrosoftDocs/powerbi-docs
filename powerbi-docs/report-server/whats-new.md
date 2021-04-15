@@ -215,7 +215,7 @@ Among the highlights of this update are the hierarchical slicer and decompositio
 - New action types for buttons:
 
     - Page navigation
-    - Drill through
+    - Drillthrough
 
 - Buttons now support fill images
 - Multi-column sort for tables
@@ -450,7 +450,7 @@ Here's the complete list of features.
     - Border color
 
 - Conditional formatting warnings
-- Drill-through discoverability improvement
+- Drillthrough discoverability improvement
 - New DAX expressions: REMOVEFILTERS and CONVERT
 - New DAX comparison operator: ==
 

@@ -21,7 +21,7 @@ LocalizationGroup: Visualizations
 
 In this tutorial, you'll learn many different ways to customize the X-axis and Y-axis of your visuals. Not all visuals have axes. Pie charts, for example, don't have axes. And customization options vary from visual to visual. There are too many options to cover in a single article, so we'll take a look at some of the most-used customizations and get comfortable using the visual **Format** pane in the Power BI report canvas.  
 
-Watch Amanda customize her X- and Y-axes. She'll also demonstrate the different ways to control concatenation when using drill down and drill up.
+Watch Amanda customize her X- and Y-axes. She'll also demonstrate the different ways to control concatenation when using drill-down and drill-up options.
 
 > [!NOTE]
 > This video uses an older version of Power BI.
