@@ -47,7 +47,7 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Data alerts | No | Yes | [Data alerts](../create-reports/service-set-data-alerts.md) in the Power BI service
 | Row-level security (RLS) | Yes | Yes | Available in both DirectQuery (data source) & Import mode <br><br>Row-level security in the [Power BI service](../admin/service-admin-rls.md) <br><br>Row-level security in [Power BI Report Server](row-level-security-report-server.md) |
 | Many-to-many relationships | No | Yes | [Apply many-to-many relationships](../transform-model/desktop-many-to-many-relationships.md) in Power BI Desktop |
-| Cross-report drill through | No | Yes | [Use cross-report drill through](../create-reports/desktop-cross-report-drill-through.md) |
+| Cross-report drillthrough | No | Yes | [Use cross-report drillthrough](../create-reports/desktop-cross-report-drill-through.md) |
 | Full-screen mode | No | Yes | [Full-screen mode](../consumer/end-user-focus.md) in the Power BI service |
 | Advanced Microsoft 365 collaboration | No | Yes | [Collaborate in a workspace](../collaborate-share/service-collaborate-power-bi-workspace.md) with Microsoft 365 |
 | R scripts and visuals | No | Yes | [Create R visuals](../create-reports/desktop-r-visuals.md) and run R scripts in Power BI Desktop and publish them to the Power BI service. You can't save Power BI reports with R scripts or visuals to Power BI Report Server.  |
