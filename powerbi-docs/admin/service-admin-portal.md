@@ -95,7 +95,7 @@ See [Monitor usage metrics for Power BI dashboards and reports](../collaborate-s
 
 1. In the Admin portal, select **Tenant settings** > **Audit and usage settings** > **Usage metrics for content creators**.
 
-    ![Admin portal tenant settings usage metrics](media/service-admin-portal/power-bi-admin-usage-metrics.png)
+    :::image type="content" source="media/service-admin-portal/admin-portal-usage-metrics.png" alt-text="Screenshot that shows the Admin portal tenant settings usage metrics.":::
 
 1. Enable (or disable) usage metrics > **Apply**.
 
@@ -122,13 +122,13 @@ You manage Power BI users, groups, and admins in the Microsoft 365 admin center.
 
 ![Go to Microsoft 365 admin center](media/service-admin-portal/powerbi-admin-manage-users.png)
 
-## Premium per user (preview)
+## Premium per user
 
-Premium per user is a new way to license Premium features on a per user basis. This feature is currently in preview. After at least one user is assigned a Premium per user license, the associated features can be turned on in any workspace. Admins can manage the auto refresh and dataset workload settings that are shown to users and their default values. For example, access to the XMLA Endpoint can be turned off, set to read-only, or set to read-write.
+Premium per user is a new way to license Premium features on a per user basis. After at least one user is assigned a Premium per user license, the associated features can be turned on in any workspace. Admins can manage the auto refresh and dataset workload settings that are shown to users and their default values. For example, access to the XMLA Endpoint can be turned off, set to read-only, or set to read-write.
 
    :::image type="content" source="media/service-admin-portal/premium-per-user-options.png" alt-text="Premium per user settings.":::
 
-Reference [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.md) to learn more about this licensing model.
+Reference [Power BI Premium Per User FAQ](service-premium-per-user-faq.md) to learn more about this licensing model.
 
 ## Audit logs
 
@@ -308,9 +308,9 @@ To invite external users to your organization, a user also needs the Azure Activ
 
 Azure AD B2B guest users can edit and manage content in the organization. [Learn more](service-admin-azure-ad-b2b.md)
 
-The following image shows the option to Allow external guest users to edit and manage content in the organization.
+The following image shows the option to Allow Azure Active Directory external guest users to edit and manage content in the organization.
 
-![Allow external guest users to edit and manage content in the organization](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
+:::image type="content" source="media/service-admin-portal/allow-external-guest-users-azure-ad.png" alt-text="Screenshot that shows the Allow Azure A D guest users to edit and manage content in the organization.":::
 
 In the admin portal, you also control which users have permissions to invite external users to the organization. See [Share content with external users](#export-and-sharing-settings) in this article for details.
 
@@ -558,7 +558,7 @@ Users in the organization can create and use dataflows. For an overview of dataf
 
 Three settings control template apps ability to publish or install template apps.
 
-![Power B I admin portal template apps settings](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
+:::image type="content" source="media/service-admin-portal/template-app-settings.png" alt-text="Screenshot that shows the Power B I admin portal template app settings.":::
 
 ### Publish Template Apps
 
@@ -570,7 +570,7 @@ Users in the organization can create template apps workspaces. Control which use
 
 Users in the organization can download and install template apps **only** from [AppSource](https://appsource.microsoft.com). Control which specific users or security groups can install template apps from AppSource.
 
-![Install template apps setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-appsource.png)
+:::image type="content" source="media/service-admin-portal/powerbi-install-template-apps-settings.png" alt-text="Screenshot that shows the Install template apps setting.":::
 
 ### Install template apps not listed on AppSource
 

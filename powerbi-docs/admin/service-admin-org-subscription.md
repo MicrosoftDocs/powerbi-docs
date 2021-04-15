@@ -34,7 +34,7 @@ Follow these steps to purchase Power BI Pro licenses in the Microsoft 365 admin 
 
 2. On the navigation menu, select **Billing** > **Purchase services**.
   
-   ![Microsoft 365 billing menu](media/service-admin-org-subscription/m365-billing-menu.png)
+   :::image type="content" source="media/service-admin-org-subscription/m365-purchase-services-2021.png" alt-text="Screenshot that shows the Microsoft 365 billing menu with Purchase services selected.":::
 
 3. Search or scroll to find the subscription you want to buy. You'll find **Power BI** under **Other categories that might interest you** near the bottom of the page. Select the link to view the Power BI subscriptions available to your organization.
 
@@ -42,13 +42,15 @@ Follow these steps to purchase Power BI Pro licenses in the Microsoft 365 admin 
 
 5. On the **Purchase services** page, select **Buy**. If you haven't previously used it, you can start a Power BI Pro free trial subscription. It includes 25 licenses and expires in one month.
 
-   ![Power BI Pro trial](media/service-admin-org-subscription/m365-org-free-trial-pro.png)
+   :::image type="content" source="media/service-admin-org-subscription/powerbi-pro-purchase.png" alt-text="Screenshot that shows the purchase options for Power B I Pro.":::
 
-6. Choose **Pay monthly** or **Pay for a full year**, according to how you want to pay.
+6. Choose **Pay monthly** or **Pay yearly**, according to how you want to pay.
 
-7. Under **How many users do you want?** enter the number of licenses to buy, then select **Check out now** to complete the transaction.
+7. Under **Select license quantity** enter the number of licenses to buy, and then select **Buy**.
 
-8. To verify your purchase, go to **Billing** > **Products & services** and look for  **Power BI Pro**.
+8. Complete the information on the checkout page, and then select **Place order**.
+
+9. To verify your purchase, go to **Billing** > **Your products** and look for  **Power BI Pro**.
 
 To read more about how your organization can control and acquire the Power BI service, see [Power BI in your organization](/microsoft-365/admin/misc/power-bi-in-your-organization).
 
