@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 03/17/2021
+ms.date: 04/15/2021
 LocalizationGroup: Connect to data
 ---
 # Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)
@@ -126,6 +126,23 @@ There are also a few **limitations** you need to keep in mind:
 - Sort by column isn't supported at this time.
 
 - Automatic page refresh (APR) is only supported for some scenarios, depending on the data source type. See the article [Automatic page refresh in Power BI](../create-reports/desktop-automatic-page-refresh.md) for more information.
+
+### Tenant considerations
+
+Any model with a DirectQuery connection to Azure Analysis Services must be published in the same tenant, which is especially important when accessing an Azure Analysis Services model using B2B guest identities, as depicted in the following diagram. See [Guest users who can edit and manage content](../admin/service-admin-azure-ad-b2b.md#guest-users-who-can-edit-and-manage-content) to find the tenant URL for publishing.  
+
+Consider the following diagram. The numbered steps in the diagram are described in paragraphs that follow.
+
+:::image type="content" source="media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-08.png" alt-text="Diagram of not connecting between tenants":::
+
+In the diagram, Ash works with Contoso and is accessing data provided by Fabrikam. Using Power BI Desktop, Ash creates a DirectQuery connection to an Azure Analysis Services model that is hosted in Fabrikam’s tenant. 
+
+To authenticate, Ash uses a B2B Guest user identity (step 1 in the diagram). 
+
+If the report is published to Contoso’s Power BI service (step 2), the dataset published in the Contoso tenant *cannot* successfully authenticate against Fabrikam’s Azure Analysis Services model (step 3). As a result, the report will not work. 
+
+In this scenario, since the Azure Analysis Services model used is hosted in Fabrikam’s tenant, the report also must be published in Fabrikam's tenant. After successful publication in Fabrikam’s tenant (step 4) the dataset can successfully access the Azure Analysis Services model (step 5) and the report will work properly.
+
 
 ## Next steps
 
