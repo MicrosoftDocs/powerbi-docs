@@ -64,7 +64,7 @@ With the matrix visual, you can do all sorts of interesting drill-down activitie
 
 ### Drill down on row headers
 
-In the Visualizations pane, when you add multiple fields to the **Rows** section of the **Fields** well, you enable drill down actions on the rows of the matrix visual. This is similar to creating a hierarchy, which then allows you to drill down (and then back up) through that hierarchy, and analyze the data at each level.
+In the Visualizations pane, when you add multiple fields to the **Rows** section of the **Fields** well, you enable drill-down actions on the rows of the matrix visual. This is similar to creating a hierarchy, which then allows you to drill down (and then back up) through that hierarchy, and analyze the data at each level.
 
 In the following image, the **Rows** section contains *Sales stage* and *Opportunity size*, creating a grouping (or hierarchy) in the rows that we can drill to see details.
 
@@ -228,4 +228,3 @@ Select *Advanced controls* to display a dialog, which lets you make adjustments.
 [Power Apps visual for Power BI](power-bi-visualization-powerapp.md)
 
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
