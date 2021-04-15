@@ -311,7 +311,7 @@ Apply data to the visual:
 
 In the final step you should get visual with selections and context menu:
 
-![Animation shows selecting **Drill down** and **Drill up** from the visual context menu.](media/drill-down-support/dev-visual-drilldown-demo.gif)
+![Animation shows selecting Drill down and Drill up from the visual context menu.](media/drill-down-support/dev-visual-drilldown-demo.gif)
 
 ## Add drill-down support for matrix data view mapping
 
