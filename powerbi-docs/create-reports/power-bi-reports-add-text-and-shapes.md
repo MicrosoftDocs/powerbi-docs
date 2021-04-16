@@ -69,7 +69,7 @@ You can also add a *smart narrative* to your report. The smart narrative visuali
 
     ![Screenshot of the Smart narrative icon.](media/power-bi-reports-add-text-and-shapes/power-bi-smart-narrrative-icon.png)
 
-2. Power BI creates a text boxwith auto-generated text describing interesting features of the data in your report.
+2. Power BI creates a text box with auto-generated text describing interesting features of the data in your report.
 
     ![Screenshot of the Smart narrative text box.](media/power-bi-reports-add-text-and-shapes/power-bi-smart-narrrative.png)
 
