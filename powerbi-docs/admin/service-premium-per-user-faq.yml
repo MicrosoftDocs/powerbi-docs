@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-premium
   ms.topic: conceptual
-  ms.date: 4/02/2021
+  ms.date: 4/16/2021
   LocalizationGroup: Premium
     
 title: Power BI Premium Per User
@@ -36,7 +36,7 @@ sections:
           The following table describes the Premium Per User (PPU) features against a Premium capacity:
 
 
-          |Column1  |Column2  |Column3  |
+          |Feature description  |Per User  |Per Capacity  |
           |---------|---------|---------|
           |Model size limit     | 100 GB        | Up to 400 GB        |
           |Refresh rate     | 48/day        | 48/day        |
