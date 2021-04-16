@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 03/17/2019
+ms.date: 04/15/2021
 ---
 
 # Samples of Power BI visuals
