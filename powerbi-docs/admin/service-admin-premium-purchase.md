@@ -110,13 +110,13 @@ You can also purchase A SKUs for testing and other scenarios, which provides Pre
 
 ## Purchase Premium Per User (PPU) licenses
 
-You can purchase Power BI Premium for individual users, using the Premium Per User (PPU) license model. For more information about Premium Per User, see [Power BI Premium Per User](service-premium-per-user-faq.md).
+You can purchase Power BI Premium for individual users, using the Premium Per User (PPU) license model. For more information about Premium Per User, see [Power BI Premium Per User](service-premium-per-user-faq.yml).
 
 ## Next steps
 
 [Configure and manage capacities in Power BI Premium](service-admin-premium-manage.md)\
 [Power BI pricing page](https://powerbi.microsoft.com/pricing/)\
-[Power BI Premium FAQ](service-premium-faq.md)\
+[Power BI Premium FAQ](service-premium-faq.yml)\
 [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

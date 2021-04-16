@@ -83,7 +83,8 @@ The following table shows the data sources that Power BI supports for datasets, 
 |---|---|---|---|---|---|---|
 | Hadoop File (HDFS) | Yes | No | No | No | No | No |
 | Hive LLAP | Yes | Yes | Yes | Yes | No | No |
-| HDInsight Interactive Query | Yes | Yes | Yes | No | No | No || IBM DB2 | Yes | Yes | Yes | Yes | No | Yes |
+| HDInsight Interactive Query | Yes | Yes | Yes | No | No | No |
+| IBM DB2 | Yes | Yes | Yes | Yes | No | Yes |
 | IBM Informix Database | Yes | Yes | No | Yes | No | No |
 | IBM Netezza | Yes | Yes | Yes | Yes | Yes | No |
 | Impala | Yes | Yes | Yes | Yes | Yes | Yes |

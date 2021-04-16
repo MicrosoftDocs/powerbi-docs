@@ -20,7 +20,7 @@ This article describes important concepts and implications for Power BI Premium 
 
 ## Premium Gen2 architecture improvements
 
-Architectural changes in Premium Gen2, especially around how CPU resources are allocated and used, enables more versatility in offerings, and more flexibility in licensing models. For example, the new architecture enables offering Premium on a per-user basis, offered (currently in preview) as [Premium Per User](service-premium-per-user-faq.md). The architecture also provides customers with better performance, and better governance and control over their Power BI expenses.
+Architectural changes in Premium Gen2, especially around how CPU resources are allocated and used, enables more versatility in offerings, and more flexibility in licensing models. For example, the new architecture enables offering Premium on a per-user basis, offered (currently in preview) as [Premium Per User](service-premium-per-user-faq.yml). The architecture also provides customers with better performance, and better governance and control over their Power BI expenses.
 
 The most significant update in the architecture of Premium Gen2 is the way capacities' back-end v-cores (CPUs, often referred to as v-cores) are implemented:
 
@@ -100,8 +100,8 @@ The capacity stays in *interactive request delay* mode if the previous evaluatio
 
 * [What is Power BI Premium?](service-premium-what-is.md)
 * [Using Autoscale with Power BI Premium](service-premium-auto-scale.md)
-* [Power BI Premium FAQ](service-premium-faq.md)
-* [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.md)
+* [Power BI Premium FAQ](service-premium-faq.yml)
+* [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.yml)
 * [Add or change Azure subscription administrators](/azure/cost-management-billing/manage/add-change-subscription-administrator)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
