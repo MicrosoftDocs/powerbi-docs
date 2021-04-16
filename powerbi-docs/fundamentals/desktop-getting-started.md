@@ -330,7 +330,7 @@ You can make changes to a report in the **Power BI** service by selecting **More
 
 To save your changes, select **File** > **Save a copy**.
 
-![Screenshot of Power B I Desktop showing the Save option.](media/desktop-getting-started/gsg_share_file_save_copy.png)
+![Screenshot of Power B I Desktop showing the Save option.](media/desktop-getting-started/gsg-share-file-save-copy.png)
 
 
 There are all sorts of interesting visuals you can create from your report in the **Power BI** service, which you can pin to a *dashboard*. To learn about dashboards in the **Power BI** service, see [Tips for designing a great dashboard](../create-reports/service-dashboards-design-tips.md). For more information about creating, sharing, and modifying dashboards, see [Share a dashboard](../collaborate-share/service-share-dashboards.md).
