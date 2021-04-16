@@ -71,6 +71,8 @@ The following list provides suggestions on how you can explore **DirectQuery for
 - Creating new columns for tables from Power BI datasets of Azure Analysis Services
 - Creating visuals that use columns from different data sources
 
+Beginning with the April 2021 version of Power BI Desktop, you can also connect to a perspective when making a DirectQuery connection to an Azure Analysis Services model, if a perspective is available. 
+
 ## Considerations and limitations
 
 There are a few **considerations** to keep in mind when using **DirectQuery for Power BI datasets and Azure Analysis Services (AAS)**:
