@@ -23,13 +23,13 @@ For this article, if you don't have your own reports yet try installing one of t
 When you open the Power BI service in a browser, you start at your Home screen. Here are the elements you may see:
 
 1. Navigation pane
-2. Microsoft 365 app launcher
-3. Power BI home button
-4. Icon buttons, including settings, help, and feedback
-5. Search box
-6. Favorite and frequent dashboards, reports, and workspaces
-7. Recent dashboards, reports, and workspaces
-8. Your workspaces
+1. Microsoft 365 app launcher
+1. Power BI home button
+1. Icon buttons, including settings, help, and feedback
+1. Search box
+1. Favorited dashboards that you use the most
+1. Favorite and frequent dashboards, reports, and workspaces
+1. Reports built by the Power BI Community, picked by the Power BI team
 
 You and the end users for your reports and dashboards have the same start experience in the Power BI service in a browser.
 
