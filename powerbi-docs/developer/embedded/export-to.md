@@ -133,7 +133,7 @@ When using the `exportToFile` API, you can pass your desired local. The localiza
 A job that exceeds its number of concurrent requests doesn't terminate. For example, if you export three pages in an A1 SKU, the first job will run, and the latter two will wait for the next two execution cycles.
 
 >[!NOTE]
->Exporting a Power BI report to file using the `exporToFile` API, is not supported for [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md). 
+>Exporting a Power BI report to file using the `exporToFile` API, is not supported for [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml). 
 
 |Azure SKU  |Office SKU  |Maximum concurrent report pages  |
 |-----------|------------|-----------|

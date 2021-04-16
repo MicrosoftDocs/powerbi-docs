@@ -31,7 +31,7 @@ If the following conditions are not met, you'll not be able to see the deploymen
 
     * You're a Power BI [Pro user](../admin/service-admin-purchasing-power-bi-pro.md), and you belong to an organization that has Premium capacity.
 
-    * [Premium Per User (PPU)](../admin/service-premium-per-user-faq.md).
+    * [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml).
 
 * You're an admin of a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).
 
@@ -50,7 +50,7 @@ To use deployment pipelines, you need to have one of the following licenses:
 
 * A [Pro user](../admin/service-admin-purchasing-power-bi-pro.md) license, with a workspace that resides on a [Premium capacity](../admin/service-premium-what-is.md).
 
-* [Premium Per User (PPU)](../admin/service-premium-per-user-faq.md).
+* [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml).
 
 For more information, see [accessing deployment pipelines](deployment-pipelines-get-started.md#accessing-deployment-pipelines).
 
@@ -91,7 +91,7 @@ Your first deployment may have failed due to a number of reasons. Some of these 
 
 |Error  |Action  |
 |---------|---------|
-|You don't have [premium capacity permissions](deployment-pipelines-process.md#creating-a-premium-workspace).     |If you work in an organization that has a Premium capacity, ask a capacity admin to add your workspace to a capacity, or ask for assignment permissions for the capacity. After the workspace is in a capacity, redeploy.</br></br>If you don't work in an organization with Premium capacity, consider purchasing [Premium Per User (PPU)](../admin/service-premium-per-user-faq.md).        |
+|You don't have [premium capacity permissions](deployment-pipelines-process.md#creating-a-premium-workspace).     |If you work in an organization that has a Premium capacity, ask a capacity admin to add your workspace to a capacity, or ask for assignment permissions for the capacity. After the workspace is in a capacity, redeploy.</br></br>If you don't work in an organization with Premium capacity, consider purchasing [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml).        |
 |You don't have workspace permissions.     |To deploy, you need to be a workspace member. Ask your workspace admin to grant you the appropriate permissions.         |
 |Your Power BI admin disabled the creation of workspaces.     |Contact your Power BI admin for support.         |
 |Your workspace isn't a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).     |Create your content in the new workspace experience. If you have content in a classic workspace, you can [upgrade](../collaborate-share/service-upgrade-workspaces.md) it to a new workspace experience.         |
@@ -229,9 +229,9 @@ The deployment pipelines permissions model is described the [permissions](deploy
 
 Content can be deployed to an empty stage or to a stage that contains content. The content must reside on a [premium capacity](../admin/service-premium-what-is.md).
 
-* **Deploying to an empty stage** - Any [Pro](../admin/service-admin-purchasing-power-bi-pro.md) or [PPU](../admin/service-premium-per-user-faq.md) user, that's a member or admin in the source workspace.
+* **Deploying to an empty stage** - Any [Pro](../admin/service-admin-purchasing-power-bi-pro.md) or [PPU](../admin/service-premium-per-user-faq.yml) user, that's a member or admin in the source workspace.
 
-* **Deploying to a stage with content** - Any [Pro](../admin/service-admin-purchasing-power-bi-pro.md) or [PPU](../admin/service-premium-per-user-faq.md) user, who's a member or admin of both workspaces in the source and target deployment stages.
+* **Deploying to a stage with content** - Any [Pro](../admin/service-admin-purchasing-power-bi-pro.md) or [PPU](../admin/service-premium-per-user-faq.yml) user, who's a member or admin of both workspaces in the source and target deployment stages.
 
 * **Overriding a dataset** - Deployment overrides each dataset that is included in the target stage, even if the dataset wasn't changed. The user must be the owner of all the target stage datasets specified in the deployment.
 
