@@ -9,7 +9,7 @@ ms.custom: 9DeAKM4SNJM
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to 
-ms.date: 05/06/2020
+ms.date: 04/12/2021
 LocalizationGroup: Visualizations
 ---
 
@@ -219,7 +219,14 @@ With a visualization that's complex, it helps to add axes titles.  Titles help y
      ![Screenshot of the combo chart with full titles displaying.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual.png)
 
     For more information, see [Tips and tricks for color formatting in Power BI](service-tips-and-tricks-for-color-formatting.md) and [Customize visualization titles, legends, and backgrounds](power-bi-visualization-customize-title-background-and-legend.md). 
-    
+
+## Invert the y-axis
+
+For line, bar, column, area, and combo charts, you can invert the y-axis, putting positive values going down and negative values going up. 
+
+- Select the visual. In the **Format** pane, expand the **Y axis** section. Slide **Invert axis** to **On**.
+
+    ![Screenshot of the column chart with values on the y axis inverted.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis-invert.png)
 
 ## Next steps
 
