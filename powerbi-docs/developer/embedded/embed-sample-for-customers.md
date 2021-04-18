@@ -55,7 +55,7 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
         * [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) license - This will be your **master user** and your app will use it to authenticate to Power BI.
 
-        * A Power BI [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) license - This will be your **master user** and your app will use it to authenticate to Power BI.
+        * A Power BI [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) license - This will be your **master user** and your app will use it to authenticate to Power BI.
 
     >[!NOTE]
     >To [move to production](move-to-production.md) you'll need a [capacity](embedded-capacity.md).

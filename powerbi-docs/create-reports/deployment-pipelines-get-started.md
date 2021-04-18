@@ -22,7 +22,7 @@ You'll be able to access the deployment pipelines feature, if the following cond
 
     * You're a Power BI [Pro user](../admin/service-admin-purchasing-power-bi-pro.md), and you belong to an organization that has Premium capacity.
 
-    * [Premium Per User (PPU)](../admin/service-premium-per-user-faq.md).
+    * [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml).
 
 * You're an admin of a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).
 
@@ -96,7 +96,7 @@ Follow these steps to assign a workspace in a deployment pipeline:
 Any [Pro user](../admin/service-admin-purchasing-power-bi-pro.md) that's a member or admin in the source workspace, can deploy content to an empty stage (a stage that doesn't contain content). The workspace must reside on a capacity for the deployment to be completed.
 
 >[!NOTE]
->To deploy a paginated report, you'll need a [capacity that supports paginated reports](./../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
+>To deploy a paginated report, you'll need a [capacity that supports paginated reports](./../paginated-reports/paginated-reports-faq.yml#what-size-premium-capacity-do-i-need-for-paginated-reports-).
 
 When deploying content to an empty stage, the relationships between the items are kept. For example, a report that is bound to a dataset in the source stage, will be cloned alongside its dataset, and the clones will be similarly bound in the target workspace.
 
