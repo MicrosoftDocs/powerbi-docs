@@ -30,11 +30,11 @@ You have to be a global admin or Power BI service admin to access the Power BI a
 
 There are several sections in the Admin portal. The rest of this article provides information about each of these sections.
 
-   :::image type="content" source="media/service-admin-portal/portal-menu.png" alt-text="Admin portal menu.":::
+   :::image type="content" source="media/service-admin-portal/powerbi-admin-portal-menu-2021.png" alt-text="Screenshot that shows the Admin portal menu.":::
 
 * [Usage metrics](#usage-metrics)
 * [Users](#users)
-* [Premium per user (preview)](#premium-per-user-preview)
+* [Premium per user](#premium-per-user)
 * [Audit logs](#audit-logs)
 * [Tenant settings](#tenant-settings)
 * [Capacity settings](#capacity-settings)
@@ -596,7 +596,7 @@ For more information about how to manage Power BI Embedded (A SKU) settings, see
 
 As an administrator, you can view the embed codes that are generated for your tenant to share reports publicly. You can also revoke or delete codes. [Learn more](../collaborate-share/service-publish-to-web.md)
 
-![Embed codes within the Power BI admin portal](media/service-admin-portal/embed-codes.png)
+:::image type="content" source="media/service-admin-portal/powerbi-settings-embed-codes.png" alt-text="Screenshot that shows the embed codes within the Power BI admin portal.":::
 
 ## Organizational visuals
 
