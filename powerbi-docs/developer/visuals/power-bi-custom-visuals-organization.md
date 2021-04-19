@@ -1,6 +1,6 @@
 ---
-title: Organization visuals in Power BI in Power BI embedded analytics for better embedded BI insights
-description: Use, manage, and create organizational visuals in Power BI. Enable better embedded BI insights using Power BI embedded analytics.
+title: Organization visuals in Power BI
+description: Use, manage, and create organizational visuals in Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
