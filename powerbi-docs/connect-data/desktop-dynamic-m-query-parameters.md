@@ -6,6 +6,7 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
+ms.custom: video-RE4M2hq
 ms.topic: how-to
 ms.date: 03/10/2021
 LocalizationGroup: Connect to data
@@ -15,6 +16,10 @@ LocalizationGroup: Connect to data
 With **Dynamic M Query Parameters**, model authors can let **report viewers** to use filters or slicers to set the value(s) for an [M Query Parameter](/power-query/power-query-query-parameters), which can be especially useful for query performance optimizations. With Dynamic M Query Parameters, model authors have more control over how filter selections get incorporated into DirectQuery source queries. 
 
 When model authors understand the intended semantics of their filters, they often know how to write efficient queries against their data source, and can thus ensure filter selections get incorporated into source queries at the right point to achieve their intended results with improved performance.
+
+Watch Justyna explain and use Dynamic M Query Parameters, and then try it out yourself. 
+
+> [!VIDEO: https://www.microsoft.com/videoplayer/embed/RE4M2hq]
 
 ## Enabling Dynamic M query parameters
 
@@ -166,7 +171,7 @@ There are some considerations and limitations to consider when using dynamic M q
   * Multi-field include filter
   * Exclude filter / Not filters
   * Cross-highlighting
-  * Drill down filter
+  * Drill-down filter
   * Cross drill filter
   * Top N filter
 * Unsupported operations:

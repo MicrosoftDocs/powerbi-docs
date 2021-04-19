@@ -7,7 +7,7 @@ ms.reviewer: dodruker; jonp
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 04/02/2021
 ms.custom: gcc
 LocalizationGroup: Get started
 ---
@@ -32,7 +32,7 @@ If you're a new customer, you have to validate your organization's eligibility b
 
 
 > [!NOTE]
-> If you've already deployed Power BI to a commercial environment and want to migrate to the US government cloud, you'll need to add a new Power BI Pro subscription to your Microsoft 365 Government plan. Next, replicate the commercial data to the Power BI service for US government, remove commercial license assignments from user accounts, and then assign a Power BI Pro government license to the user accounts.
+> If you've already deployed Power BI to a commercial environment and want to migrate to the US government cloud, you'll need to add a new Power BI Pro or Premium Per User (PPU) subscription to your Microsoft 365 Government plan. Next, replicate the commercial data to the Power BI service for US government, remove commercial license assignments from user accounts, and then assign a Power BI Pro government license to the user accounts.
 >
 >
 ### Buy a Power BI Pro subscription for government customers
@@ -40,7 +40,7 @@ If you're a new customer, you have to validate your organization's eligibility b
 After you've deployed Microsoft 365, you can add a Power BI Pro subscription. Follow the guidance in [Enroll your US government organization](service-govus-signup.md) to buy the Power BI Pro government service. Buy enough licenses for all the users who need to use Power BI, and then assign the licenses to individual user accounts.
 
 > [!IMPORTANT]
-> Power BI US Government isn't available as a *Free* license. To access the government community cloud, each user must be assigned a *Pro* license. If a user account has been assigned a Free license, the user is authorized to access only the commercial cloud and will encounter authentication and access issues. If you've purchased Power BI Premium, you don't have to assign Pro licenses to enable user access.  Users in the organization can access reports that are shared with them as long as the reports are published to a Premium capacity. To review the differences between license types, see [Power BI service features by license type](../fundamentals/service-features-license-type.md).
+> Power BI US Government isn't available as a *Free* license. To access the government community cloud, each user must be assigned a *Pro* or *Premium Per User (PPU)* license. If a user account has been assigned a Free license, the user is authorized to access only the commercial cloud and will encounter authentication and access issues. If you've purchased Power BI Premium, you don't have to assign Pro licenses to enable user access.  Users in the organization can access reports that are shared with them as long as the reports are published to a Premium capacity. To review the differences between license types, see [Power BI service features by license type](../fundamentals/service-features-license-type.md).
 >
 
 ## Sign in to Power BI for US government
@@ -61,7 +61,7 @@ Your account might be set up in more than one cloud. If your account is set up t
 
 To use the Power BI service, you must allow connections to required endpoints on the internet. These destinations have to be reachable to enable communication between your own network, Power BI, and other dependent services.
 
-In the table below, we list the required endpoints to add to your allow list to enable connection to the Power BI service for general site usage. These endpoints are unique to the US government cloud. The Power BI service requires only TCP Port 443 to be opened for the listed endpoints. The endpoints for getting data, dashboard and report integration, Power BI visuals, and other optional services aren’t unique to the US government cloud. To also add these URLs to your allow list, see [Add Power BI URLs to your allow list](power-bi-allow-list-urls.md).
+In the table below, we list the required endpoints to add to your allowlist to enable connection to the Power BI service for general site usage. These endpoints are unique to the US government cloud. The Power BI service requires only TCP Port 443 to be opened for the listed endpoints. The endpoints for getting data, dashboard and report integration, Power BI visuals, and other optional services aren’t unique to the US government cloud. To also add these URLs to your allowlist, see [Add Power BI URLs to your allowlist](power-bi-allow-list-urls.md).
 
 Authentication, identity, and administration for Power BI depend on connectivity to Microsoft 365 services. You also have to connect to Microsoft 365 to view audit logs. To identify the endpoints for these services, see Microsoft 365 integration in the table below.
 
@@ -122,19 +122,22 @@ We include the quarter for estimated availability if release is planned for an e
 |[Azure B2B Collaboration between government and commercial cloud](service-admin-azure-ad-b2b.md)<sup>1</sup>|![available](../media/yes.png)|![available](../media/yes.png)|![available](../media/yes.png)
 |[Template apps](../connect-data/service-template-apps-overview.md)<sup>2</sup>|![available](../media/yes.png) |![available](../media/yes.png)| ![available](../media/yes.png)|
 |[Embed in SharePoint Online using the Power BI web part](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![available](../media/yes.png)|![available](../media/yes.png)|![not available](../media/no.png)|
-|[Data Protection (MIP labels)](service-security-sensitivity-label-overview.md)|![available](../media/yes.png)|![available](../media/yes.png) |Q1 2021|
+|[Data Protection (MIP labels)](service-security-sensitivity-label-overview.md)|![available](../media/yes.png)|![available](../media/yes.png) |![available](../media/yes.png)|
 |[Dataflows - Direct Query](../transform-model/dataflows/dataflows-configure-consume.md) | ![available](../media/yes.png) |![available](../media/yes.png)|Not planned |
 |[Dataflows - SQL Compute engine optimization](../transform-model/dataflows/dataflows-premium-features.md) | ![available](../media/yes.png) |![available](../media/yes.png)|Not planned |
 |[Power BI tab in Teams](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>3</sup>|![available](../media/yes.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[Large models](service-premium-large-models.md) | ![available](../media/yes.png) |![available](../media/yes.png)| Not planned |
 |[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
-|[Bring Your Own Storage (Azure Data Lake Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
+|[Bring Your Own Storage (Azure Data Lake Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![not available](../media/no.png)|![available](../media/yes.png)|![available](../media/yes.png)|
+|Tenant metadata scanning flow<sup>4</sup>|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 
 <sup>1</sup> Although B2B Collaboration is available for GCC, the external user must be issued a license in that environment. Commercial cloud licenses aren't valid in GCC. For more information about known limitations with B2B Collaboration for US government, [Compare Azure Government and global Azure](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2).
 
 <sup>2</sup> Marketplace apps aren't available to US Government cloud instances so template apps are limited to private and organizational apps.
 
 <sup>3</sup> The Power BI experience in Teams for GCC is limited, works only for classic workspaces, and doesn't include the enhanced functionality described in [Embed Power BI Content in Microsoft Teams](../collaborate-share/service-embed-report-microsoft-teams.md).
+
+<sup>4</sup> The tenant metadata scanning flow is composed of the following Power BI REST APIs: [getmodifiedworkspaces](/rest/api/power-bi/admin/workspaceinfo_getmodifiedworkspaces), [getscanresult](/rest/api/power-bi/admin/workspaceinfo_getscanresult), [getscanstatus](/rest/api/power-bi/admin/workspaceinfo_getscanstatus), and [postworkspaceinfo](/rest/api/power-bi/admin/workspaceinfo_postworkspaceinfo). These APIs are not supported in sovereign clouds.
 
 ## Next steps
 

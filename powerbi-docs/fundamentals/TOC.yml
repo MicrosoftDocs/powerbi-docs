@@ -23,7 +23,7 @@
   - name: Concepts
     expanded: true
     items: 
-    - name: "What's new in the latest Power BI Desktop update?"
+    - name: "What's new in the latest Power BI update?"
       href: desktop-latest-update.md
     - name: "Understand the Power BI service"
       href: service-basic-concepts.md
@@ -68,3 +68,5 @@
       href: desktop-change-log.md
     - name: "Power BI Desktop Send a Smile Privacy Statement"
       href: desktop-send-smile-privacy-statement.md
+    - name: "Power BI Desktop diagnostics"
+      href: desktop-diagnostics.md

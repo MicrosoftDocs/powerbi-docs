@@ -40,7 +40,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 ## API v2.2.0
   * Supports **[restoring JSON Filter from DataView](./filter-api.md#restore-the-json-filter-from-the-data-view)**
   * **[ContextMenu API](./context-menu.md)**
-  * Supports **[Drill through](../../create-reports/desktop-drillthrough.md)** feature
+  * Supports **[Drillthrough](../../create-reports/desktop-drillthrough.md)** feature
 
 ## API v2.1.0
   * Performance enhancements:
@@ -89,7 +89,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 * Supports **rule** property in capabilities schema for object properties
 
 ## API v1.7.0
-* Supports **[RESJSON](./localization.md#resource-file)**
+* Supports **[RESJSON](./localization.md#step-5---add-a-resources-file-for-each-language)**
 
 ## API v1.6.2
 * Supports **[Edit mode](./advanced-edit-mode.md)** for visual to enter in-visual edit mode

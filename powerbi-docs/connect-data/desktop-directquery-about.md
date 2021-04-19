@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/14/2020
+ms.date: 04/12/2021
 LocalizationGroup: Connect to data
 ---
 # About using DirectQuery in Power BI

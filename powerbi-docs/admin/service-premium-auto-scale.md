@@ -59,7 +59,7 @@ Paginated Reports are not included in the process of determining the level of ut
 
 ## Enable Autoscale in the Power BI Admin portal
 
-Once you've selected the Azure subscription to use with Autoscale, and created a resource group as described in the previous section, you're ready to enable Autoscale and associate it with the resource group you created. The person configuring **Autoscale** must be at least a *contributor* for the Azure subscription to successfully complete these steps. You can learn more about [assigning a user to a contributor role for an Azure subscription](https://docs.microsoft.com/azure/cost-management-billing/manage/add-change-subscription-administrator). 
+Once you've selected the Azure subscription to use with Autoscale, and created a resource group as described in the previous section, you're ready to enable Autoscale and associate it with the resource group you created. The person configuring **Autoscale** must be at least a *contributor* for the Azure subscription to successfully complete these steps. You can learn more about [assigning a user to a contributor role for an Azure subscription](/azure/cost-management-billing/manage/add-change-subscription-administrator). 
 
 The following steps show you how to enable and associated Autoscale with the resource group.
 
@@ -93,6 +93,6 @@ And that's it - your Power BI Premium Gen2 subscription is now configured to use
 ## Next steps
 
 * [What is Power BI Premium?](service-premium-what-is.md)
-* [Power BI Premium FAQ](service-premium-faq.md)
-* [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.md)
-* [Add or change Azure subscription administrators](https://docs.microsoft.com/azure/cost-management-billing/manage/add-change-subscription-administrator)
+* [Power BI Premium FAQ](service-premium-faq.yml)
+* [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.yml)
+* [Add or change Azure subscription administrators](/azure/cost-management-billing/manage/add-change-subscription-administrator)

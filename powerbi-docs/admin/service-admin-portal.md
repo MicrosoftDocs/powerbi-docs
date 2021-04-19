@@ -7,16 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 02/03/2021
+ms.date: 04/05/2021
 ms.custom: seodec18
 LocalizationGroup: Administration
 ---
 
 # Administering Power BI in the admin portal
 
-The admin portal enables you to manage the Power BI settings for your organization. The portal includes items such as usage metrics, access to the Microsoft 365 admin center, and settings that govern Power BI for all your users.
+The admin portal includes settings that govern Power BI for all users in your organization. For example, in the admin portal you can view usage metrics, access  the Microsoft 365 admin center, and control how users interact with Power BI.
 
-The full admin portal can be accessed by global admins and users who have the Power BI service administrator role. If you're not in one of these roles, you only see **Capacity settings** in the portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
+The full admin portal can be accessed by global admins and users who have the Power BI Administrator role. If you're not in one of these roles, you only see **Capacity settings** in the portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
 
 ## How to get to the admin portal
 
@@ -128,7 +128,7 @@ Premium per user is a new way to license Premium features on a per user basis. T
 
    :::image type="content" source="media/service-admin-portal/premium-per-user-options.png" alt-text="Premium per user settings.":::
 
-Reference [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.md) to learn more about this licensing model.
+Reference [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.yml) to learn more about this licensing model.
 
 ## Audit logs
 
@@ -174,7 +174,7 @@ The next few sections provide an overview of the different types of tenant setti
 
 ### Publish "Get Help" information
 
-![Publish get help information](media/service-admin-portal/powerbi-admin-tenant-settings-gethelp.png)
+  :::image type="content" source="media/service-admin-portal/publish-get-help.png" alt-text="Screen capture showing interface for Publish get help information.":::
 
 Admins can specify internal URLs to override the destination of links on the Power BI help menu and for license upgrades. If custom URLs are set, users in the organization go to internal help and support resources instead of the default destinations. The following resource destinations can be customized:
 
@@ -182,7 +182,7 @@ Admins can specify internal URLs to override the destination of links on the Pow
 
 * **Community**. To take users to an internal forum from the help menu, instead of to the [Power BI Community](https://community.powerbi.com/), set a custom URL for **Discussion forum**.
 
-* **Licensing upgrades**. Users with a Power BI (free) license may be presented with the opportunity to upgrade their account to Power BI Pro while using the service. If you specify an internal URL for **Licensing requests**, you redirect users to an internal request and purchase flow and prevent self-service purchase. If you want to prevent users from buying licenses, but are okay with letting users start a Power BI Pro trial, see [Allow users to try Power BI Pro](#allow-users-to-try-power-bi-paid-features) to separate the buy and try experiences.
+* **Licensing upgrades**. Users with a Power BI (free) license may be presented with the opportunity to upgrade their account to Power BI Pro while using the service. Users who already hold a Power BI Pro license may be prompted to upgrade to a Power BI Premium Per User license. If you specify an internal URL for **Licensing requests**, you redirect users to an internal request and purchase flow and prevent self-service purchase. If you want to prevent users from buying licenses, but are okay with letting users start a Power BI Pro or Power BI Premium Per User trial, see [Allow users to try Power BI paid features](#allow-users-to-try-power-bi-paid-features) to separate the buy and try experiences.
 
 * **Get help**. To take users to an internal help desk from the help menu, instead of to [Power BI Support](https://powerbi.microsoft.com/support/), set a custom URL for **Help Desk**.
 
@@ -192,19 +192,19 @@ Mail-enabled security groups will receive email notifications if this tenant is 
 
 ### Allow users to try Power BI paid features
 
-![Allow users to try Power BI Pro settings U I](media/service-admin-portal/allow-pro-trial.png)
+   :::image type="content" source="media/service-admin-portal/allow-paid-features.png" alt-text="Screen capture showing Allow users to try Power BI paid features interface.":::
 
-The setting to **Allow users to try Power BI paid features** is enabled by default. This setting increases your control over how users acquire Power BI Pro licenses. In scenarios where you have blocked self-service purchase, this setting lets users start a Power BI Pro trial. The end-user experience depends on how you combine license settings. The table below shows how the upgrade experience from Power BI (free) to Power BI Pro is affected by different setting combinations:
+The setting to **Allow users to try Power BI paid features** is enabled by default. This setting increases your control over how users get license upgrades. In scenarios where you have blocked self-service purchase, this setting lets users use more features free for 60 days. Users who have a Power BI (free) license can start a Power BI Pro trial. Users with a Power BI Pro license can start a Power BI Premium Per User trial. The user's license upgrade experience depends on how you combine license settings. The table below shows how the upgrade experience is affected by different setting combinations:
 
-| Self-service purchase setting | Allow user to try Power BI Pro setting | End-user experience |
+| Self-service purchase setting | Allow user to try Power BI paid features | End-user experience |
 | ------ | ------ | ----- |
-| Enabled | Disabled | User can buy a Pro license, but can't start a trial |
-| Enabled | Enabled | User can start a free trial of Pro and can upgrade to a paid license |
+| Enabled | Disabled | User can buy an upgraded license, but can't start a trial |
+| Enabled | Enabled | User can start a free trial and can upgrade to a paid license |
 | Disabled | Disabled | User sees a message to contact the IT admin to request a license |
-| Disabled | Enabled | User can start a Pro trial, but must contact the IT admin to get a paid license |
+| Disabled | Enabled | User can start a trial, but must contact the IT admin to get a paid license |
 
 > [!NOTE]
-> You can add an internal URL for licensing requests in [Help and support settings](#help-and-support-settings). If you set the URL, it overrides the default self-service purchase experience. It doesn't redirect signup for a Power BI Pro license trial. Users who can buy a license in the scenarios described in the table above are redirected to your internal URL.
+> You can add an internal URL for licensing requests in [Help and support settings](#help-and-support-settings). If you set the URL, it overrides the default self-service purchase experience. It doesn't redirect signup for a trial license. Users who can buy a license in the scenarios described in the table above are redirected to your internal URL.
 
 To learn more, see [Enable or disable self-service sign-up and purchasing](service-admin-disable-self-service.md).
 
@@ -215,7 +215,7 @@ Admins can provide a custom message that appears before a user publishes a repor
 ```markdown
 #### Important Disclaimer 
 
-Before publishing the report to a workspace, be sure to validate that the appropriate users or groups have access to the destination workspace. If some users or groups should *not* have access to the content and underlying artifacts, remove or modify their access to the workspace, or publish the report to a different workspace. [Learn more](https://docs.microsoft.com/power-bi/collaborate-share/service-create-the-new-workspaces#give-access-to-your-workspace). 
+Before publishing the report to a workspace, be sure to validate that the appropriate users or groups have access to the destination workspace. If some users or groups should *not* have access to the content and underlying artifacts, remove or modify their access to the workspace, or publish the report to a different workspace. Learn about [giving access to the new workspaces](../collaborate-share/give-access-new-workspaces.md). 
 ```
 
 The **Custom message** text area does support scrolling, so you can provide a message up to 5,000 characters.
@@ -242,7 +242,7 @@ In **Tenant settings**, the admin portal has three sections for controlling work
 
 ### Create the new workspaces
 
-Workspaces are places where users collaborate on dashboards, reports, and other content. Admins use the **Create workspaces (new workspace experience** setting to indicate which users in the organization can create workspaces. Admins can allow everybody or nobody in an organization to create new workspace experience workspaces. They can also limit creation to members of specific security groups. Learn more about [workspaces](../collaborate-share/service-new-workspaces.md).
+Workspaces are places where users collaborate on dashboards, reports, and other content. Admins use the **Create workspaces (new workspace experience** setting to indicate which users in the organization can create workspaces. Admins can let everybody or nobody in an organization create new workspace experience workspaces. Workspace creation can also be limited to members of specific security groups. Learn more about [workspaces](../collaborate-share/service-new-workspaces.md).
 
 :::image type="content" source="media/service-admin-portal/power-bi-admin-workspace-settings.png" alt-text="Create the new workspace experiences":::
 
@@ -279,7 +279,7 @@ When enabled, newly created Office 365 Groups won't be shown in the Power BI wor
 
 ### Apply sensitivity labels from data sources to their data in Power BI (preview)
 
-When this setting is enabled, Power BI datasets that connect to sensitivity-labeled data in supported data sources can inherit those labels, so that the data remains classified and secure when brought into Power BI.  For detail about sensitivity label inheritance from data sources, see [Sensitivity label inheritance from data sources](service-security-sensitivity-label-inheritance-from-data-sources.md).
+When this setting is enabled, Power BI datasets that connect to sensitivity-labeled data in supported data sources can inherit those labels, so that the data remains classified and secure when brought into Power BI.  For detail about sensitivity label inheritance from data sources, see [Sensitivity label inheritance from data sources (preview)](service-security-sensitivity-label-inheritance-from-data-sources.md).
 
 To enable sensitivity label inheritance from data sources go to the [Power BI tenant settings](service-admin-portal.md#tenant-settings), and enable the toggle under **Information protection > Apply sensitivity labels from data sources to their data in Power BI (preview)**:
 
@@ -439,6 +439,20 @@ This setting allows organizations to hide the **Share to Teams** buttons in the 
 ![Screenshot of Share to Teams tenant setting in the Power B I admin portal.](media/service-admin-portal/service-teams-share-to-teams-tenant-setting.png)
 
 Read more about [sharing Power BI content to Teams](../collaborate-share/service-share-report-teams.md).
+
+### Allow shareable links to grant access to all people in your organization
+This tenant setting is available for admins looking to disable creating shareable links to **People in your organization**. You can find this option in the Admin portal by navigating to **Tenant settings** > **Export and sharing settings** > **Allow shareable links to grant access to all people in your organization**.
+
+![Screenshot of allow shareable links to grant access to all People in your organization setting](media/service-admin-portal/admin-allow-shareable-links.png)
+
+As with other tenant settings, you can enable sharing links to **People in your organization** for:
+- **The entire organization**
+- **Specific security groups**
+- Or **Except specific security groups**
+
+If this setting is disabled for a user with share permissions to a report, that user can only share the report via link to **Specific people** or **People with existing access**.
+
+![Screenshot showing share option disabled](media/service-admin-portal/admin-share-option-disabled.png)
 
 ## Content pack and app settings
 
@@ -600,7 +614,7 @@ By default, workspace admins can't connect their own storage account. This previ
 
 ## Workspaces
 
-As an administrator, you can view the workspaces that exist in your tenant on the **Workspaces** tab. On this tab, you can perform these actions:
+As an administrator, you can view the workspaces that exist in your organization on the **Workspaces** tab. On this tab, you can perform these actions:
 
 - Refresh the list of workspaces and their details.
 - Export the data about the workspaces to a .csv file. 
@@ -621,8 +635,8 @@ On the **Workspaces** tab, you see the *state* for each workspace. The following
 |---------|---------|
 | **Active** | A normal workspace. It doesn't indicate anything about usage or what's inside, only that the workspace itself is "normal". |
 | **Orphaned** | A workspace with no admin user. |
-| **Deleted** | A deleted workspace. For up to 90 days, we maintain enough metadata to restore the workspace if desired. |
-| **Removing** | A workspace in the process of being deleted, but not gone yet. Users can delete their own workspaces, putting things into Removing and eventually Deleted. |
+| **Deleted** | A deleted workspace. We maintain enough metadata to restore the workspace for up to 90 days. |
+| **Removing** | A workspace that is being deleted, but not gone yet. Users can delete their own workspaces, putting things into Removing and eventually Deleted. |
 
 Admins can also manage and recover workspaces, using either the admin portal or PowerShell cmdlets. 
 
@@ -637,7 +651,7 @@ The following table gives more details about the status of the upgrade.
 | **(Blank)** | The workspace is not being upgraded by a Power BI admin. |
 | **Pending** | The workspace is queued to be upgraded. The upgrade can be canceled. |
 | **In Progress** | The workspace is actively being upgraded. The upgrade can't be canceled. |
-| **Completed** | The workspace was upgraded in the last 30 days by a Power BI admin. A workspace admin can go back to classic option if desired during the 30-day period after the workspace was upgraded. |
+| **Completed** | The workspace was upgraded in the last 30 days by a Power BI admin. A workspace admin can go back to classic option during the 30-day period after the workspace was upgraded. |
 
 > [!NOTE]
 > There are a few limitations to upgrading workspaces, such as those listed here. Learn more about [upgrading workspaces](../collaborate-share/service-upgrade-workspaces.md) before attempting an upgrade.

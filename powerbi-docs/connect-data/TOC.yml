@@ -57,7 +57,7 @@
       - name: "Guidance for deploying a data gateway"
         href: service-gateway-deployment-guidance.md
       - name: "On-premises data gateway FAQ"
-        href: service-gateway-power-bi-faq.md
+        href: service-gateway-power-bi-faq.yml
   - name: How-to guides
     expanded: true
     items: 
@@ -197,8 +197,6 @@
         href: service-azure-sql-data-warehouse-with-direct-connect.md
       - name: "Azure SQL Database with DirectQuery"
         href: service-azure-sql-database-with-direct-connect.md
-      - name: "SQL Server Analysis Services live data in Power BI"
-        href: sql-server-analysis-services-tabular-data.md
     - name: Refresh data
       items: 
       - name: "Data refresh in Power BI"
@@ -207,8 +205,16 @@
         href: refresh-scheduled-refresh.md
       - name: "Refresh summaries"
         href: refresh-summaries.md        
-      - name: Configure incremental refresh
-        href: ../admin/service-premium-incremental-refresh.md   
+      - name: Incremental refresh
+        items:
+        - name: Incremental refresh for datasets
+          href: ../connect-data/incremental-refresh-overview.md
+        - name: Configure incremental refresh
+          href: ../connect-data/incremental-refresh-configure.md
+        - name: Advanced incremental refresh
+          href: ../connect-data/incremental-refresh-xmla.md
+        - name: Troubleshoot incremental refresh
+          href: ../connect-data/incremental-refresh-troubleshoot.md
       - name: "Refresh a dataset from a local Power BI Desktop file"
         href: refresh-desktop-file-local-drive.md
       - name: "Refresh a dataset from a cloud Power BI Desktop file"

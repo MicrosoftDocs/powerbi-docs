@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 03/05/2021
+ms.date: 04/02/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
 ---
@@ -83,11 +83,11 @@ The following known limitations currently apply to Premium Gen2:
 
 1.  Analysis services features in Premium Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are:
 
-    |Tool|Minimum version required|Estimated release date|
-    |---|---|---|
-    |SQL Server Management Studio (SSMS)|18.8|December 8, 2020|
-    |SQL Server Data Tools (SSDT)|2.9.15|General availability November 30, 2020|
-    | AS PowerShell| Greater than 21.1.18229|November 26, 2020|
+    |Tool|Minimum version required|
+    |---|---|
+    |SQL Server Management Studio (SSMS)|18.8|
+    |SQL Server Data Tools (SSDT)|2.9.15|
+    | AS PowerShell| Greater than 21.1.18229|
 
 4.  Memory restrictions are different in Premium Gen2. In the first generation of Premium, memory was restricted to a limited amount of RAM used by all artifacts simultaneously running. 
 In Gen2, there is no memory Limit for the capacity as a whole. Instead, individual artifacts (such as datasets, dataflows, paginated reports) are subject to the following RAM limitations:
@@ -130,10 +130,10 @@ Power BI Premium is a tenant-level Microsoft 365 subscription available in two S
 
 Power BI Premium subscriptions are purchased by administrators in the Microsoft 365 admin center. Specifically, only Global administrators or Billing Administrators can purchase SKUs. When purchased, the tenant receives a corresponding number of v-cores to assign to capacities, known as *v-core pooling*. For example, purchasing a P3 SKU provides the tenant with 32 v-cores. To learn more, see [How to purchase Power BI Premium](service-admin-premium-purchase.md).
 
-#### Power BI Premium Per User (preview)
+#### Power BI Premium Per User
 
 Power BI **Premium Per User** allows organizations to license Premium features on a per-user basis. Premium Per User (PPU) includes all Power BI Pro license capabilities, and adds features such as paginated reports, AI, and other capabilities that are only available to Premium subscribers. 
-Premium Per User is currently in preview. For more information about Premium per user, including a feature comparison and other information about its preview release, see the [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.md) article. 
+For more information about Premium per user, including a feature comparison and other information, see the [Power BI Premium Per User](service-premium-per-user-faq.yml) article. 
 
 
 ## Reserved capacities
@@ -151,7 +151,7 @@ Capacity administrators automatically have their my workspaces assigned to Premi
 
 ### Capacity nodes
 
-As described in the [Subscriptions and Licensing](#subscriptions-and-licensing) section, there are two Power BI Premium SKU families: **EM** and **P**. All Power BI Premium SKUs are available as capacity *nodes*, each representing a set amount of resources consisting of processor, memory, and storage. In addition to resources, each SKU has operational limits on the number of DirectQuery and Live Connection connections per second, and the number of parallel model refreshes.
+As described in the [Subscriptions and Licensing](#subscriptions-and-licensing) section, there are two Power BI Premium SKU families: **EM** and **P**. All Power BI Premium SKUs are available as capacity *nodes*, each representing a set amount of resources consisting of processor, memory, and storage.  In addition to resources, each SKU has operational limits on the number of DirectQuery and Live Connection connections per second, and the number of parallel model refreshes. While there is a lot of overlap in features for the two SKU families, only the P Premium SKU gives free users the ability to consume content hosted in the Premium capacity.  EM SKUs are used for embedding content.
 
 Processing is achieved by a set number of v-cores, divided equally between backend and frontend.
 
@@ -308,7 +308,7 @@ Power BI datasets can store data in a highly compressed, in-memory cache for opt
 
 Your .pbix files represent data in a *highly compressed state*. The data will likely expand when loaded in memory, and from there it may expand several more times during data refresh.
 
-Scheduled refresh of large datasets can take a long time and be resource-intensive. It's important to not schedule too many overlapping refreshes. It's recommended [incremental refresh](service-premium-incremental-refresh.md) is configured, because it's faster, more reliable, and consumes fewer resources.
+Scheduled refresh of large datasets can take a long time and be resource-intensive. It's important to not schedule too many overlapping refreshes. It's recommended [incremental refresh](../connect-data/incremental-refresh-overview.md) is configured, because it's faster, more reliable, and consumes fewer resources.
 
 The initial report load of large datasets can take a long time if it has been a while since the last time the dataset was used. A loading bar for longer-loading reports displays the load progress.
 
@@ -316,11 +316,7 @@ While the per-query memory and time constraints are much higher in Premium capac
 
 ## Incremental refresh
 
-Incremental refresh provides an integral part of having and maintaining large datasets in Power BI Premium and Power BI Pro. Incremental refresh has many benefits, for example, Refreshes are faster because only data that has changed needs to be refreshed. Refreshes are more reliable because it's unnecessary to maintain long-running connections to volatile data sources. Resource consumption is reduced because less data to refresh reduces overall consumption of memory and other resources. Incremental refresh policies are defined in **Power BI Desktop**, and applied when published to a workspace in a Premium capacity. 
-
-![Refresh details](media/service-premium-incremental-refresh/refresh-details.png)
-
-To learn more, see [Incremental refresh in Power BI Premium](service-premium-incremental-refresh.md).
+Incremental refresh provides an integral part of having and maintaining large datasets in Power BI Premium and Power BI Pro. Incremental refresh has many benefits, for example, refreshes are faster because only data that has changed needs to be refreshed. Refreshes are more reliable because it's unnecessary to maintain long-running connections to volatile data sources. Resource consumption is reduced because less data to refresh reduces overall consumption of memory and other resources. Incremental refresh policies are defined in **Power BI Desktop**, and applied in the service. To learn more, see [Incremental refresh for datasets](../connect-data/incremental-refresh-overview.md).
 
 ## Paginated reports
 
@@ -357,7 +353,7 @@ With P Premium SKUs, anyone, whether they're inside or outside your organization
 
 ![Content sharing](media/service-premium-what-is/premium-sharing.png)
 
-Premium enables widespread distribution of content by Pro users without requiring Pro licenses for recipients who view the content. Pro licenses are required for content creators. Creators connect to data sources, model data, and create reports and dashboards that are packaged as workspace apps. User without a Pro license can still access a workspace that's in Power BI Premium capacity, as long as they have a Viewer role. 
+Premium enables widespread distribution of content by Pro users without requiring Pro or Premium Per User (PPU) licenses for recipients who view the content. Pro or Premium Per User (PPU) licenses are required for content creators. Creators connect to data sources, model data, and create reports and dashboards that are packaged as workspace apps. User without a Pro or Premium Per User (PPU) license can still access a workspace that's in Power BI Premium capacity, as long as they have a Viewer role. 
 
 To learn more, see [Power BI licensing](service-admin-licensing-organization.md).
 

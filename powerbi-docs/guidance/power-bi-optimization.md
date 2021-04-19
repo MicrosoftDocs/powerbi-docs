@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
-ms.date: 02/16/2020
+ms.date: 04/02/2021
 ---
 
 # Optimization guide for Power BI
@@ -78,7 +78,7 @@ You can optimize the Power BI environment by configuring capacity settings, sizi
 
 ### Capacity settings
 
-When using capacities—available with Power BI Premium (P SKUs), or
+When using capacities—available with Power BI Premium (P SKUs), Premum Per User (PPU) licenses, or
 Power BI Embedded (A SKUs, A4-A6)—you can manage capacity settings. For more information, see [Managing Premium capacities](../admin/service-premium-capacity-manage.md). For guidance on how to optimize your capacity, see [Optimizing Premium capacities](../admin/service-premium-capacity-optimize.md).
 
 ### Gateway sizing

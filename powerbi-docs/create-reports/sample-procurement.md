@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 07/02/2019
+ms.date: 04/02/2021
 LocalizationGroup: Samples
 ---
 # Procurement Analysis sample for Power BI: Take a tour
@@ -24,7 +24,7 @@ This sample is part of a series that shows how you can use Power BI with busines
 
 This tutorial explores the Procurement Analysis sample content pack in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
 
-You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro license, you can save the sample to your My Workspace in the Power BI service. 
+You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace in the Power BI service. 
 
 ## Get the sample
 
@@ -34,7 +34,7 @@ Before you can use the sample, you must first download it as a [content pack](#g
 
 1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample. 
 
-    If you don't have a Power BI Pro license, you can save the sample to your My Workspace.
+    If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace.
 
 2. In the bottom-left corner, select **Get Data**.
 
@@ -89,9 +89,9 @@ Let's explore the spending areas in Mexico.
 
       For Mexico, the biggest spending is in the **Maintenance & Repair** subcategory.
 
-      ![Indirect Goods & Services drill down for Mexico](media/sample-procurement/pbi_procsample_drill_mexico.png)
+      ![Indirect Goods & Services drill-down for Mexico](media/sample-procurement/pbi_procsample_drill_mexico.png)
 3. Select the up arrow on the upper-left corner of the chart to drill back up.
-4. Select the drill-down arrow again to turn drill down off.  
+4. Select the drill-down arrow again to turn the drill-down feature off.  
 5. In the top nav pane, select **Procurement Analysis Sample** to return to the dashboard.
 
 ## Evaluate different cities
