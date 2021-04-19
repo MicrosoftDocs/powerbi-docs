@@ -24,5 +24,5 @@ We have retired the Power BI Premium whitepaper in favor of providing up-to-date
 | [Optimizing Premium capacities](../admin/service-premium-capacity-optimize.md) | Best practices for performance optimization, optimizing models, capacity   planning, and testing approaches. |
 | [Premium capacity scenarios](../admin/service-premium-capacity-scenarios.md) | Common issues in real-world scenarios, with a focus on identifying and   resolving those issues. |
 | [Monitor capacities in the Admin portal](../admin/service-admin-premium-monitor-portal.md) | Monitoring with Power BI Premium Capacity Metrics app, and interpreting   the metrics you see in the app. |
-| [Power BI Premium FAQ](../admin/service-premium-faq.md) | Answers to questions around purchase and licensing, features, and common   scenarios. |
+| [Power BI Premium FAQ](../admin/service-premium-faq.yml) | Answers to questions around purchase and licensing, features, and common   scenarios. |
 | | |

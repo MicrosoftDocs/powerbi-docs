@@ -84,7 +84,7 @@ If you are you a web developer and are interested in creating your own visual an
 >[Guidelines for Power BI visuals](guidelines-powerbi-visuals.md)
 
 >[!div class="nextstepaction"]
->[Frequently asked questions](power-bi-custom-visuals-faq.md)
+>[Frequently asked questions](power-bi-custom-visuals-faq.yml)
 
 >[!div class="nextstepaction"]
 >[Power BI Community](https://community.powerbi.com/)

@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 02/04/2021
+ms.date: 04/13/2021
 ms.author: painbar
 ms.custom:
 
@@ -35,7 +35,10 @@ To enable service principal authentication for Power BI read-only APIs, follow t
        * Sign into the **Azure portal** as a Global Administrator, an Application Administrator, or a Cloud Application Administrator. 
         * Select **Azure Active Directory**, then **Enterprise applications**. 
         * Select the application you want to grant access to Power BI. 
-        * Select **Permissions**. Make sure there are no Power BI admin-consent-required permissions set on this application. See [Managing consent to applications and evaluating consent requests](/azure/active-directory/manage-apps/manage-consent-requests) for more information. 
+        * Select **Permissions**. 
+
+        > [!IMPORTANT]
+        > Make sure there are no Power BI admin-consent-required permissions set on this application. See [Managing consent to applications and evaluating consent requests](/azure/active-directory/manage-apps/manage-consent-requests) for more information. 
 4. Enable the Power BI service admin settings. To do this:
     1. Log into the Power BI admin portal. You need to be a Power BI admin to see the tenant settings page.
     1. Under **Admin API settings**, you will see **Allow service principals to use read-only Power BI admin APIs (Preview)**. Set the toggle to Enabled, and then select the **Specific security groups** radio button and add the security group you created in Step 2 in the text field that appears below it, as shown in the figure below.
@@ -62,6 +65,20 @@ Service principal currently supports the following APIs:
 * [WorkspaceGetInfo](/rest/api/power-bi/admin/workspaceinfo_postworkspaceinfo)
 * [WorkspaceScanStatus](/rest/api/power-bi/admin/workspaceinfo_getscanstatus)
 * [WorkspaceScanResult](/rest/api/power-bi/admin/workspaceinfo_getscanresult)
+* [GetDashboardsInGroupAsAdmin](/rest/api/power-bi/admin/dashboards_getdashboardsasadmin)
+* [GetTilesAsAdmin](/rest/api/power-bi/admin/dashboards_gettilesasadmin)
+* [ExportDataflowAsAdmin](/rest/api/power-bi/admin/dataflows_exportdataflowasadmin)
+* [GetDataflowsAsAdmin](/rest/api/power-bi/admin/dataflows_getdataflowsasadmin)
+* [GetDataflowsInGroupAsAdmin](/rest/api/power-bi/admin/dataflows_getdataflowsingroupasadmin)
+* [GetDatasetsAsAdmin](/rest/api/power-bi/admin/datasets_getdatasetsasadmin)
+* [GetDatasetsInGroupAsAdmin](/rest/api/power-bi/admin/datasets_getdatasetsingroupasadmin)
+* [Get Power BI Encryption Keys](/rest/api/power-bi/admin/getpowerbiencryptionkeys)
+* [Get Refreshable For Capacity](/rest/api/power-bi/admin/getrefreshableforcapacity)
+* [Get Refreshables](/rest/api/power-bi/admin/getrefreshables)
+* [Get Refreshables For Capacity](/rest/api/power-bi/admin/getrefreshablesforcapacity)
+* [GetImportsAsAdmin](/rest/api/power-bi/admin/imports_getimportsasadmin)
+* [GetReportsAsAdmin](/rest/api/power-bi/admin/reports_getreportsasadmin)
+* [GetReportsInGroupAsAdmin](/rest/api/power-bi/admin/reports_getreportsingroupasadmin)
 
 ## Considerations and limitations
 

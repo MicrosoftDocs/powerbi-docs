@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 03/04/2021
+ms.date: 03/24/2021
 ---
 
 # Understand the deployment process
 
 The deployment process lets you clone content from one stage in the pipeline to another, typically from development to test, and from test to production.
 
-During deployment, Power BI copies the content from the current stage, into the target one. The connections between the copied items are kept during the copy process. Power BI also applies the configured dataset rules to the updated content in the target stage. Deploying content may take a while, depending on the number of items being deployed. During this time, you can navigate to other pages in the Power BI portal, but you cannot use the content in the target stage.
+During deployment, Power BI copies the content from the current stage, into the target one. The connections between the copied items are kept during the copy process. Power BI also applies the configured deployment rules to the updated content in the target stage. Deploying content may take a while, depending on the number of items being deployed. During this time, you can navigate to other pages in the Power BI portal, but you cannot use the content in the target stage.
 
 ## Deploying content to an empty stage
 
@@ -26,15 +26,15 @@ You can also deploy content backwards, from a later stage in the deployment pipe
 
 After the deployment is complete, refresh the datasets so that you can use the newly copied content. The dataset refresh is required because data isn't copied from one stage to another. To understand which item properties are copied during the deployment process, and which item properties are not copied, review the [item properties copied during deployment](#item-properties-copied-during-deployment) section.
 
-### Creating a Premium capacity workspace
+### Creating a Premium workspace
 
-During first-time deployment, deployment pipelines checks if you have Premium capacity permissions.  
+During first-time deployment, deployment pipelines checks if you have Premium permissions.  
 
-If you have capacity permissions, the content of the workspace is copied to the stage you're deploying to, and a new  workspace for that stage is created on the Premium capacity.
+If you have Premium permissions, the content of the workspace is copied to the stage you're deploying to, and a new  workspace for that stage is created on the Premium capacity.
 
-If you don't have capacity permissions, the workspace is created but the content isn’t copied. You can ask a capacity admin to add your workspace to a capacity, or ask for assignment permissions for the capacity. Later, when the workspace is assigned to a capacity, you can deploy content to this workspace.
+If you don't have Premium permissions, the workspace is created but the content isn’t copied. You can ask a capacity admin to add your workspace to a capacity, or ask for assignment permissions for the capacity. Later, when the workspace is assigned to a capacity, you can deploy content to this workspace.
 
-If you're using [Premium Per User (PPU)](../admin/service-premium-per-user-faq.md), your workspace is automatically created in the capacity associated with your PPU. In such cases capacity permissions are not required. However, workspaces created by a PPU user, can only be accessed by other PPU users. In addition, content created in such workspaces can only be consumed by PPU users.
+If you're using [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml), your workspace is automatically associated with your PPU. In such cases Premium permissions are not required. However, workspaces created by a PPU user, can only be accessed by other PPU users. In addition, content created in such workspaces can only be consumed by PPU users.
 
 ### Workspace and content ownership
 
@@ -64,7 +64,7 @@ With small changes, such as adding a table or measures, Power BI keeps the origi
 
 As long as the deployed content resides on a [premium capacity](../admin/service-premium-what-is.md), a user that meets the following conditions, can deploy it to a stage with an existing workspace:
 
-* A user with a [Pro license](../admin/service-admin-purchasing-power-bi-pro.md) or a [PPU user](../admin/service-premium-per-user-faq.md), who's a member of both workspaces in the source and target deployment stages.
+* A user with a [Pro license](../admin/service-admin-purchasing-power-bi-pro.md) or a [PPU user](../admin/service-premium-per-user-faq.yml), who's a member of both workspaces in the source and target deployment stages.
 
 * An owner of all the datasets in the target workspace that are about to be deployed.
 
@@ -80,21 +80,21 @@ When you deploy content from one pipeline stage to another, the copied content c
 
 * Dashboards
 
+* Paginated reports
+
 ### Unsupported items
 
 Deployment pipelines doesn't support the following items:
 
 * Datasets that do not originate from a PBIX
 
-* Reports based on unsupported datasets
-
-* [Template app workspaces](../connect-data/service-template-apps-create.md#create-the-template-workspace)
-
-* Paginated reports
+* PUSH datasets
 
 * Dataflows
 
-* PUSH datasets
+* Reports based on unsupported datasets
+
+* [Template app workspaces](../connect-data/service-template-apps-create.md#create-the-template-workspace)
 
 * Workbooks
 
@@ -102,9 +102,9 @@ Deployment pipelines doesn't support the following items:
 
 During deployment, the following item properties are copied and overwrite the item properties at the target stage:
 
-* Data sources ([dataset rules](deployment-pipelines-get-started.md#step-4---create-dataset-rules) are supported)
+* Data sources ([deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) are supported)
 
-* Parameters​ ([dataset rules](deployment-pipelines-get-started.md#step-4---create-dataset-rules) are supported)
+* Parameters​ ([deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) are supported)
 
 * Report visuals​
 
@@ -115,6 +115,13 @@ During deployment, the following item properties are copied and overwrite the it
 * Model metadata​
 
 * Item relationships
+
+[Sensitivity labels](../admin/service-security-sensitivity-label-overview.md) are copied *only* when one of the conditions listed below is met. If these conditions are not met, sensitivity labels will not be copied during deployment.
+* A new item is deployed.
+
+* An item is deployed to an empty stage.
+
+* The source item has a label with protection and the target item doesn't. In such cases, a pop-up window asking for consent to override the target sensitivity label appears.
 
 ### Item properties that are not copied
 
@@ -154,13 +161,13 @@ Deployment pipelines supports many Power BI dataset features. This section lists
 
 ### Incremental refresh
 
-Deployment pipelines supports [incremental refresh](../admin/service-premium-incremental-refresh.md), a feature that allows large datasets faster and more reliable refreshes, with lower consumption.
+Deployment pipelines supports [incremental refresh](../connect-data/incremental-refresh-overview.md), a feature that allows large datasets faster and more reliable refreshes, with lower consumption.
 
 With deployment pipelines, you can make updates to a dataset with incremental refresh while retaining both data and partitions. When you deploy the dataset, the policy is copied along.
 
 #### Activating incremental refresh in a pipeline
 
-To enable incremental refresh, [turn it on in Power BI Desktop](../admin/service-premium-incremental-refresh.md#configure-incremental-refresh), and then publish your dataset. After you publish, the incremental refresh policy is similar across the pipeline, and can be authored only in Power BI Desktop.
+To enable incremental refresh, [configure it in Power BI Desktop](../connect-data/incremental-refresh-overview.md), and then publish your dataset. After you publish, the incremental refresh policy is similar across the pipeline, and can be authored only in Power BI Desktop.
 
 Once your pipeline is configured with incremental refresh, we recommend that you use the following flow:
 
@@ -255,7 +262,7 @@ Workspace viewers that have *pipeline access*, can also do the following:
 * Consume content
 
 >[!NOTE]
->Workspace viewers cannot access the dataset or edit workspace content.
+>Workspace members assigned the Viewer role without **build** permissions cannot access the dataset or edit workspace content.
 
 ### Workspace contributor
 
@@ -275,9 +282,14 @@ Workspace members that have *pipeline access*, can also do the following:
 
 * Compare stages
 
-* Deploy reports and dashboards
+* Deploy reports, dashboards and paginated reports
 
 * Remove workspaces
+
+* Update datasets
+
+>[!NOTE]
+>If the *block republish and disable package refresh* setting located in the tenant *dataset security* section is enabled, only dataset owners will be able to update datasets.
 
 ### Workspace admin
 
@@ -291,8 +303,6 @@ Workspace administrators that have *pipeline access*, can perform *workspace mem
 
 Dataset owners that are either workspace members or admins, can also do the following:
 
-* Update datasets
-
 * Configure rules
 
 >[!NOTE]
@@ -303,8 +313,6 @@ Dataset owners that are either workspace members or admins, can also do the foll
 This section lists most of the limitations in deployment pipelines.
 
 * The workspace must reside on a [premium capacity](../admin/service-premium-what-is.md).
-
-* Power BI items such as reports and dashboards that have Power BI [sensitivity labels](../admin/service-security-sensitivity-label-overview.md), cannot be deployed.
 
 * The maximum number of Power BI items that can be deployed in a single deployment is 300.
 
@@ -322,7 +330,7 @@ This section lists most of the limitations in deployment pipelines.
 
 * After deployment, downloading a dataset (from the stage it's been deployed to) is not supported.
 
-* For a list of dataset rule limitations, see [dataset rule limitations](deployment-pipelines-get-started.md#dataset-rule-limitations).
+* For a list of deployment rule limitations, see [deployment rules limitations](deployment-pipelines-get-started.md#deployment-rules-limitations).
 
 ## Next steps
 

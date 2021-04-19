@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 01/13/2021
+ms.date: 04/02/2021
 # Customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
 LocalizationGroup: Get started
 ---
@@ -31,7 +31,7 @@ In this tutorial, you complete the following steps:
 > * Clean up resources by deleting the dataset, report, and dashboard.
 
 ## Sign up for the Power BI service
-You need a Power BI Pro license to create content in Power BI. If you don't have a Power BI account, [sign up for a free Power BI Pro trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
+You need a Power BI Pro or Premium Per User (PPU) license to create content in Power BI. If you don't have a Power BI account, [sign up for a free Power BI Pro trial or Premium Per User](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
 ## Step 1: Get data
 

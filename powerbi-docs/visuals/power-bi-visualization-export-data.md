@@ -248,9 +248,9 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
 
     - Other factors are at play that increase file size and decrease the number of rows Power BI can export.
 
-- If the visualization uses data from more than one data table, and no relationship exists for those tables in the data model, Power BI only exports data for the first table.
+- If the visualization uses data from more than one data table, and no active relationship exists for those tables in the data model, Power BI only exports data for the first table.
 
-- Power BI visuals and R visuals aren't currently supported.
+- Power BI custom visuals and R visuals aren't currently supported.
 
 - In Power BI, you can rename a field (column) by double-clicking the field and typing a new name. Power BI refers to the new name as an *alias*. It's possible that a Power BI report can end up with duplicate field names, but Excel doesn't allow duplicates. So when Power BI exports the data to Excel, the field aliases revert to their original field (column) names.  
 

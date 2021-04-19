@@ -2056,11 +2056,6 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/service-premium-incremental-refresh.md",
-            "redirect_url": "/power-bi/admin/service-premium-incremental-refresh",
-            "redirect_document_id": true
-        },
-        {
             "source_path": "powerbi-docs/service-premium-large-models.md",
             "redirect_url": "/power-bi/admin/service-premium-large-models",
             "redirect_document_id": true
@@ -3682,8 +3677,13 @@
         },
         {
             "source_path": "powerbi-docs/service-new-look-where-actions.md",
-            "redirect_url": "/power-bi/consumer/service-new-look-where-actions",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/consumer/end-user-reading-view",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/service-new-look-where-actions.md",
+            "redirect_url": "/power-bi/consumer/end-user-reading-view",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-self-service-signup-for-power-bi.md",
@@ -3859,5 +3859,31 @@
             "source_path": "powerbi-docs/connect-data/service-facebook-connector.md",
             "redirect_url": "/power-bi/connect-data/service-get-data",
             "redirect_document_id": false
-        }      ]           
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/sql-server-analysis-services-tabular-data.md",
+            "redirect_url": "/power-bi/connect-data/service-get-data",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/desktop-send-smile-privacy-statement.md",
+            "redirect_url": "/power-bi/fundamentals/desktop-send-smile-privacy-statement",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-premium-incremental-refresh.md",
+            "redirect_url": "/power-bi/connect-data/incremental-refresh-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-premium-incremental-refresh.md",
+            "redirect_url": "/power-bi/connect-data/incremental-refresh-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/desktop-external-tools.md",
+            "redirect_url": "/power-bi/transform-model/desktop-external-tools",
+            "redirect_document_id": false
+        }
+    ]           
 }

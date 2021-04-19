@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 12/22/2020
+ms.date: 04/02/2021
 
 ---
 
@@ -55,7 +55,7 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
         * [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) license - This will be your **master user** and your app will use it to authenticate to Power BI.
 
-        * A Power BI [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) license - This will be your **master user** and your app will use it to authenticate to Power BI.
+        * A Power BI [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) license - This will be your **master user** and your app will use it to authenticate to Power BI.
 
     >[!NOTE]
     >To [move to production](move-to-production.md) you'll need a [capacity](embedded-capacity.md).
@@ -144,7 +144,7 @@ The table below describes a few key differences between the [service principal](
 |Security     |*Service principal* is the Azure AD recommended authorization method. If you're using a service principal,* you can authenticate using either an *application secret* or a *certificate*.</br></br>This tutorial only describes using *service principal* with an *application secret*. To embed using a *service principal* and a *certificate*, refer to the [service principal with a certificate](embed-service-principal-certificate.md) article.         |This authentication method is not considered as secure as using a *service principal*. This is because you have to be vigilant with the *master user* credentials (username and password). For example, you must not expose them in your embedding application, and you should change the password frequently.         |
 |Azure AD delegated permissions |Not required. |Your *master user* or an administrator has to grant consent for your app to access Power BI REST API [permissions](/azure/active-directory/develop/v2-permissions-and-consent) (also known as scopes). For example, *Report.ReadWrite.All*. |
 |Power BI service access |You can't access Power BI service with a *service principal*.|You can access Power BI service with your *master user* credentials.|
-|License     |Doesn't require a Pro license. You can use content from any workspace that you're a member or an admin of.         |Requires a [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) license.         |
+|License     |Doesn't require a Pro license. You can use content from any workspace that you're a member or an admin of.         |Requires a [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) or Premium Per User (PPU) license.         |
 
 ## Step 2 - Register an Azure AD application
 

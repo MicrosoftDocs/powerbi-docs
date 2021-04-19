@@ -6,7 +6,7 @@ ms.reviewer: mihart
 featuredvideoid: G26dr2PsEpk
 
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 11/24/2020
 ms.author: mihart

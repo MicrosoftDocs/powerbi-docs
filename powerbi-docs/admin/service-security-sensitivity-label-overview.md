@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom: contperf-fy21q2
-ms.date: 12/20/2020
+ms.date: 04/05/2021
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -49,7 +49,7 @@ Sensitivity labels and file encryption **are not** applied in non-supported expo
 Applying sensitivity labels and their associated protection to data that leaves the Power BI service is currently supported for the following export paths:
 * Export to Excel, PDF files (Service only), and PowerPoint.
 * Analyze in Excel from the Power BI service, which triggers download of an Excel file with a live connection to a Power BI dataset.
-* PivotTable in Excel with a live connection to a Power BI dataset, for users with M365 E3 and above.
+* PivotTable in Excel with a live connection to a Power BI dataset, for users with Microsoft 365 E3 and above.
 * Download to .pbix (Service)
 
 >[!NOTE]
@@ -103,6 +103,10 @@ The following image shows how a dataset's sensitivity label is automatically app
 
 Power BI datasets that connect to sensitivity-labeled data in supported data sources can inherit those labels so that the data remains classified and secure when brought into Power BI. Currently, Azure Synapse Analytics (formerly SQL Data Warehouse) and Azure SQL Database are supported. See [Sensitivity label inheritance from data sources](service-security-sensitivity-label-inheritance-from-data-sources.md) to learn how inheritance from data sources works and how to enable it for your organization.
 
+## Admin APIs for setting and removing labels programmatically
+
+To meet compliance requirements, organizations are often required to classify and label all sensitive data in Power BI. This task can be challenging for tenants that have large volumes of data in Power BI. To make the task easier and more effective, Power BI has admin REST APIs that admins can use to set and remove sensitivity labels on large numbers of Power BI artifacts programatically. See the [Power BI REST API documentation](/rest/api/power-bi/) for details.
+
 ## Sensitivity labels and protection on exported data
 
 When data is exported from Power BI to Excel, PDF files (service only) or PowerPoint files, Power BI automatically applies a sensitivity label on the exported file and protects it according to the label’s file encryption settings. This way your sensitive data remains protected no matter where it is.
@@ -140,14 +144,26 @@ The following embedding scenarios are supported:
 * Microsoft 365 apps (for example, [Teams](../collaborate-share/service-embed-report-microsoft-teams.md) and [SharePoint](../collaborate-share/service-embed-report-spo.md))
 * [Secure URL embedding](../collaborate-share/service-embed-secure.md) (embedding from the Power BI service) 
 
+## Sensitivity labels in deployment pipelines
+Sensitivity labels are supported in deployment pipelines. See the [deployment pipeline documentation](../create-reports/deployment-pipelines-process.md#item-properties-copied-during-deployment) for details about how sensitivity labels are handled as content is deployed from stage to stage.
+
+
 ## Sensitivity labels in the Power BI mobile apps
 
 Sensitivity labels can be viewed on reports and dashboards in the Power BI mobile apps. An icon near the name of the report or dashboard indicates that it has a sensitivity label, and the type of label and its description can be found in the report or dashboard's info box.
 
 ![Screen shot of sensitivity label in mobile app](media/service-security-sensitivity-label-overview/mobile-app-sensitivity-label2.png)
 
+## Label change enforcement
+
+Power BI restricts permission to change or remove Microsoft Information Protection sensitivity labels that have file encryption settings to authorized users only. See [Sensitivity label change enforcement](service-security-sensitivity-label-change-enforcement.md) for detail.
+
 ## Supported clouds
-Sensitivity labels are only supported for tenants in global (public) clouds; they are not supported for tenants in clouds such as national clouds.
+Sensitivity labels are supported for tenants in global (public) clouds, and the following national clouds:
+* [US Government](service-govus-overview.md#power-bi-feature-availability): GCC, GCC High, DoD
+* China
+
+Sensitivity labels are not currently supported in other national clouds.
 
 ## Licensing and requirements
 
@@ -190,7 +206,7 @@ To access sensitivity labels in either of these centers, navigate to **Classific
 
 * If you've created a large model and the resulting protected .pbix file is very large (over 2GB), it may crash when you try to save or open it. To work around this, consider removing the protection from the .pbix file and re-applying it after the file has been published to the Power BI service.
 
-    In general, when you protect a file with a sensitivity label that applies encryption, it is good practice to use another encryption method as well, such as pagefile encryption, NTFS encryption, bitlockers, antimalware, etc.
+    In general, when you protect a file with a sensitivity label that applies encryption, it is good practice to use another encryption method as well, such as pagefile encryption, NTFS encryption, BitLocker instances, antimalware, etc.
 
 * Temp files are not encrypted.
 

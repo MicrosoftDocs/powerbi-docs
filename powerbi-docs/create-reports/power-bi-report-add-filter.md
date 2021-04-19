@@ -16,7 +16,7 @@ This article explains how to add a visualization filter, page filter, or report 
 
 ![New filter experience](media/power-bi-report-add-filter/power-bi-filter-reading.png)
 
-Power BI offers a number of different kinds of filters, from the manual and automatic to the drill-through and pass-through. Read about the [different kinds of filters](power-bi-report-filter-types.md).
+Power BI offers a number of different kinds of filters, from the manual and automatic to the drillthrough and pass-through. Read about the [different kinds of filters](power-bi-report-filter-types.md).
 
 After you add filters, you can [format the filters in your Power BI reports](power-bi-report-filter.md) to look and act the way you want.
 
