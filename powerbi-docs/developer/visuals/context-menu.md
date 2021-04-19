@@ -39,7 +39,7 @@ Context-Menu was added to the sample BarChart for reference:
 
 
 ## Context Menu call cases
-Right clicking the anywhere in a visual's viewport, should trigger a display of the context menu.
+Right-clicking anywhere in a visual's viewport should trigger a display of the context menu.
 There are two scenarios of `contextMenu()` being called in a visual:
 
 * Context menu called on a specific datapoint
