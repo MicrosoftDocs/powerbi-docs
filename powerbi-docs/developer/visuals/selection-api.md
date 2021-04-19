@@ -312,7 +312,7 @@ The visual code iterates the rows of the table and each row calls `withTable` ta
 public update(options: VisualUpdateOptions) {
     const host = this.host;
     const rowLevels: powerbi.DataViewHierarchyLevel[] = dataView.matrix.rows.levels;
-    const columnLevels: powerbi.DataViewHierarchyLevel[] = dataView.matrix.rows.levels;
+    const columnLevels: powerbi.DataViewHierarchyLevel[] = dataView.matrix.columns.levels;
 
     // iterate rows hierarchy
     nodeWalker(dataView.matrix.rows.root, rowLevels);
