@@ -1,6 +1,6 @@
 ---
-title: Add a landing page to your Power BI visuals in Power BI embedded analytics for better embedded BI insights
-description: This article describes how to add landing page to Power BI visuals. Enable better embedded BI insights using Power BI embedded analytics.
+title: Add a landing page to your Power BI visuals
+description: This article describes how to add landing page to Power BI visuals. 
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -12,7 +12,17 @@ ms.date: 06/18/2019
 
 # Add a landing page to your Power BI visuals
 
-With API 2.3.0, you can add a landing page to your Power BI visuals. To do so, add `supportsLandingPage` to the capabilities, and set it to true. This action initializes and updates your visual before you add data to it. Because the visual no longer shows a watermark, you can design your own landing page to be displayed in the visual as long as it has no data.
+With API 2.3.0, you can design your own landing page for your Power BI visuals. The landing page is displayed whenever the visual has no data in it. With a landing page, your visual initializes and updates even before you add data to it.
+
+When the flag `supportsEmptyDataView` is true, the landing page now displays in the view mode whenever the visual has no data.
+
+An example of a landing page is shown in the following image:
+
+![landing page screenshot](media/landing-page/app-landing-page.png)
+
+## Sample
+
+To create a landing page add `supportsLandingPage` to the capabilities file, and set it to true.
 
 ```typescript
 export class BarChart implements IVisual {
@@ -51,6 +61,7 @@ export class BarChart implements IVisual {
     }
 ```
 
-An example landing page is shown in the following image:
+## Next steps
 
-![landing page screenshot](media/landing-page/app-landing-page.png)
+>[!div class="nextstepaction"]
+>[Formatting utils](utils-formatting.md)

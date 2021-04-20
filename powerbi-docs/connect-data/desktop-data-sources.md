@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/23/2021
+ms.date: 04/12/2021
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
@@ -114,8 +114,8 @@ The **Power Platform** category provides the following data connections:
 * Power BI datasets
 * Power BI dataflows
 * Common Data Service (Legacy)
-* Dataverse
 * Power Platform dataflows (Beta)
+* Dataverse
 
 The following image shows the **Get Data** window for **Power Platform**.
 
@@ -138,8 +138,8 @@ The **Azure** category provides the following data connections:
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive Query
-* Azure Cost Management
 * Azure Databricks
+* Azure Cost Management
 * Azure Time Series Insights (Beta)
 
 
@@ -179,7 +179,7 @@ The **Online Services** category provides the following data connections:
 * Twilio (Beta)
 * Zendesk (Beta)
 * Asana (Beta)
-* Dynamics 365 Customer Insights (Beta)
+* Automation Anywhere
 * Emigo Data Source
 * Entersoft Business Suite (Beta)
 * eWay-CRM (Beta)
@@ -198,6 +198,8 @@ The **Online Services** category provides the following data connections:
 * Witivio (Beta)
 * Workplace Analytics (Beta)
 * Zoho Creator (Beta)
+* Dynamics 365 Customer Insights (Beta)
+* SoftOne BI (beta)
 
 
 The following image shows the **Get Data** window for **Online Services**.
@@ -222,14 +224,13 @@ The **Other** category provides the following data connections:
 * OLE DB
 * Acterys : Model Automation & Planning (Beta)
 * Anaplan Connector v1.0 (Beta)
-* Automation Anywhere (Beta)
 * Solver
 * Cherwell (Beta)
 * Cognite Data Fusion
 * FHIR
 * Information Grid (Beta)
 * Jamf Pro (Beta)
-* MicroStrategy for Power BI
+* Kognitwin
 * Paxata
 * QubolePresto (Beta)
 * Roamler (Beta)
@@ -242,6 +243,9 @@ The **Other** category provides the following data connections:
 * Vena (Beta)
 * Vessel Insight (Beta)
 * Zucchetti HR Infinity (Beta)
+* MicroStrategy for Power BI
+* Microsoft Teams Personal Analytics (Beta)
+* Bloomberg Data and Analytics (Beta)
 * Blank Query
 
 

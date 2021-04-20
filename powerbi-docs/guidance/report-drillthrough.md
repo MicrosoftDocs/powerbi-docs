@@ -18,7 +18,7 @@ It's recommended that you design your report to allow report users to achieve th
 
 1. View a report page.
 2. Identify a visual element to analyze more deeply.
-3. Right-click the visual element to drillthrough.
+3. Right-click the visual element to drill through.
 4. Perform complimentary analysis.
 5. Return to the source report page.
 

@@ -298,7 +298,7 @@ The model report includes a chart that includes the breakdown of the correctly a
 
 ![Model report](media/service-machine-learning-automated/automated-machine-learning-power-bi-17.png)
 
-A further class-specific drilldown enables an analysis of how the predictions for a known class are distributed. This shows the other classes in which rows of that known class are likely to be misclassified.
+A further class-specific drill-down action enables an analysis of how the predictions for a known class are distributed. This shows the other classes in which rows of that known class are likely to be misclassified.
 
 The model explanation in the report also includes the top predictors for each class.
 
