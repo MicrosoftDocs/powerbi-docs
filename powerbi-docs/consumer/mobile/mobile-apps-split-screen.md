@@ -1,32 +1,35 @@
 ---
-title: Use the Power BI mobile app in split-screen mode
-description: Learn about using the Power BI mobile app in split-screen mode. 
+title: Use the Power BI mobile app side by side with another app
+description: Learn about using the Power BI mobile app side by side with another app.. 
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 02/09/2021
+ms.date: 04/20/2021
 ---
-# Use the Power BI mobile app in split-screen mode
+# Work side by side with other apps
 
 Applies to:
 
-| ![Android tablet](./media/mobile-apps-split-screen/android-logo-40-px.png) |
-|:--- |
-| Android tablets |
+|![iPads](./media/mobile-apps-split-screen/ios-logo-40-px.png) | ![Android tablet](././media/mobile-apps-split-screen/android-logo-40-px.png) |
+|:--- |:--- |
+|iPads |Android tablets |
 
-If your Android tablet has multi-window support, you can view and interact with your data side by side with another app using split-screen mode.
+If your iPad or Android tablet supports it, you can view and interact with your Power BI data while working side by side with another app.
 
 ![Screenshot of Power BI in split-screen mode.](media/mobile-apps-split-screen/power-bi-mobile-split-screen.png)
 
-### Using split-screen mode
+### Opening two apps side by side
 
-Check your tablet's documentation to see how to open apps in split-screen mode on your device.
+* **Android tablets**: Check your tablet's documentation to see how to open apps in split-screen mode on your Android device.
+* **iPads**: See [support.apple.com](https://support.apple.com/guide/ipad/ipad08c9970c/ipados) for instructions about opening two apps side by side in Split View. Split View is supported for iPads running iPadOS 13 and greater.
 
-Once your apps are open in split screen mode, you can adjust the size of the screens by dragging the dividing line between the apps to the right or left.
+### Working with two apps side by side
 
-Split-screen mode works best with reports that have been optimized for viewing on mobile devices. If you are a report creator, consider creating a mobile-optimized layout for your report. See [Optimize Power BI reports for the mobile app](../../create-reports/desktop-create-phone-report.md) for details.
+Once your apps are open side by side, you can adjust the size of the screens by dragging the dividing line between the apps to the right or left.
+
+Working side by side with another app works best with reports that have been optimized for viewing on mobile devices. If you are a report creator, consider creating a mobile-optimized layout for your report. See [Optimize Power BI reports for the mobile app](../../create-reports/desktop-create-phone-report.md) for details.
 
 >[!IMPORTANT]
->Split screen mode only works on supported Android tablets. See your device's documentation to see if it supports split-screen mode.
+>Working with two apps side by side in only possible on supported iPads and Android tablets. See your device's documentation to check support details.
