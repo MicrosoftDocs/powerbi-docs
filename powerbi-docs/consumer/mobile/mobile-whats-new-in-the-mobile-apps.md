@@ -18,6 +18,12 @@ For related "What's New" information, see:
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
+## April 2021
+### Support for Power BI in Split View (iPads)
+If your iPad supports multitasking, you can view and interact with your data side by side with another app using Split View mode. [Learn more!](mobile-apps-split-screen.md)
+
+![Screenshot of the mobile app being used in Split View mode.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-split-view.png)
+
 ## March 2021
 ### Easily find content by type
 Try out the new categories filter at the top of the Recents, Favorites, and Workspace pages, to filter the listed content by type.
