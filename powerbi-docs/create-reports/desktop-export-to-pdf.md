@@ -21,7 +21,7 @@ The **Export to PDF** process will export all *visible* pages in the report, wit
 
 ![Export to PDF in process](media/desktop-export-to-pdf/export-to-pdf_02.png)
 
-When you select **File > Export to PDF** the export is initiated, and a dialog appears that shows the export process is underway. The dialog remains on the screen until the export process completes. During the export process, all interaction with the report being exported is disabled. The only way to interact with the report is to wait until the export process completes, or to cancel the export. 
+When you select **File** > **Export** > **Export to PDF** the export is initiated, and a dialog appears that shows the export process is underway. The dialog remains on the screen until the export process completes. During the export process, all interaction with the report being exported is disabled. The only way to interact with the report is to wait until the export process completes, or to cancel the export. 
 
 When the export completes, the PDF is loaded into the default PDF viewer on the computer. 
 

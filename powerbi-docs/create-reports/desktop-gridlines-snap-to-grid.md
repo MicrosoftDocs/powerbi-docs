@@ -49,7 +49,7 @@ Modifying certain elements of gridlines can be especially useful in reports wher
    
 1. Scroll to the **Gridlines** setting and set it to **On**.
    
-   ![Screenshot of a visual, showing the Gridlines set to On.](media/desktop-gridlines-snap-to-grid/snap-to-grid_9.png)
+   ![Screenshot of a visual, showing the Gridlines set to On.](media/desktop-gridlines-snap-to-grid/snap-to-grid-gridlines.png)
    
 ## Using snap-to-grid
 When you enable **Snap objects to grid**, all visuals on the **Power BI Desktop** canvas that you move (or resize) are automatically aligned to the nearest grid axis, making it much easier to ensure two or more visuals align to the same horizontal or vertical location or size.
@@ -71,7 +71,7 @@ The **Align** button aligns a selected visual to the edge (or center) of the rep
 
 ![Screenshot of the report canvas, showing how to use the Align button to align a selected visual to the edge (or center) of the canvas.](media/desktop-gridlines-snap-to-grid/snap-to-grid_6.png)
 
-When two or more visuals are selected, they are aligned together and use the existing aligned boundary of the visuals for their alignment. For example, if you select two visuals and choose the **Align Left** option, the visuals then align to the left-most boundary of all selected visuals.
+When two or more visuals are selected, they are aligned together and use the existing aligned boundary of the visuals for their alignment. For example, if you select two visuals and choose the **Align left** option, the visuals then align to the left-most boundary of all selected visuals.
 
 ![Screenshot of the report canvas, showing how to align two visuals using the Align Left option.](media/desktop-gridlines-snap-to-grid/snap-to-grid_7.png)
 
