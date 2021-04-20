@@ -4,7 +4,7 @@ description: Use gridlines, snap-to-grid, z-order, alignment and distribution in
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to

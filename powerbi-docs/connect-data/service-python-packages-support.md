@@ -4,7 +4,7 @@ description: Python packages that are supported and unsupported in Power BI
 author: otarb
 ms.author: otarb
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual

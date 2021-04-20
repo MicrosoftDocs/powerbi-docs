@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.devlang: csharp, javascript
 ms.topic: overview
-ms.custom: seodec18, video-iEHfUuoZseo
+ms.custom: video-iEHfUuoZseo
 ms.date: 12/10/2018 
 ---
 

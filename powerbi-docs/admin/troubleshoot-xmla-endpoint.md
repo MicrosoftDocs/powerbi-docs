@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
 ms.date: 04/08/2021
-ms.custom: seodec18, css_fy20Q4
+ms.custom: css_fy20Q4
 LocalizationGroup: Premium
 ---
 
