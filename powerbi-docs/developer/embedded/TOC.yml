@@ -112,6 +112,8 @@
       href: /cli/azure/ext/powerbidedicated/powerbi
   - name: Resources
     items:
+    - name: "Power BI Dev Camp"
+      href: dev-camp-links.md    
     - name: "Developer center"
       href: https://powerbi.microsoft.com/en-us/developers/
     - name: "Embedding setup tool"
