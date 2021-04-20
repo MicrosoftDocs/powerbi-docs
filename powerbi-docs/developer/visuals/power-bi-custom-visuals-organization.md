@@ -1,6 +1,6 @@
 ---
-title: Organization visuals in Power BI in Power BI embedded analytics for better embedded BI insights
-description: Use, manage, and create organizational visuals in Power BI. Enable better embedded BI insights using Power BI embedded analytics.
+title: Organization visuals in Power BI 
+description: Use, manage, and create organizational visuals in Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
@@ -46,7 +46,11 @@ End user:
 
 * Organizational Power BI visuals are private visuals imported from the organization repository. As any private visual they can't be [exported to PowerPoint](../../consumer/end-user-powerpoint.md) or displayed in emails received when a user [subscribes to report pages](../../consumer/end-user-subscribe.md). Only [certified Power BI visuals](power-bi-custom-visuals-certified.md) imported directly from the marketplace supports these features.
 
-* Visio visual, PowerApps visual, the Map box visual, and the GlobeMap visual from AppSource marketplace don't render if deployed through the organization repository.
+* Certain visuals don't render if deployed through the organization repository. To manage the following visuals use the **Add from AppSource** option in the Admin portal.
+  - Viso
+  - Map box
+  - PowerAutomate
+  - Charticulator
 
 ## Troubleshoot
 
