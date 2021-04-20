@@ -97,7 +97,7 @@ To follow along, make sure you have:
 
     :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-case-email-15.png" alt-text="In the case where you're sending your paginated report as an email via Outlook.":::
 
-1. When you're done, select **Next step** or **Save**. Power Automate creates and evaluates the flow, and lets you know if it finds errors. 
+1. When you're done, select **New step** or **Save**. Power Automate creates and evaluates the flow, and lets you know if it finds errors. 
 
 1. If there are errors, select **Edit flow** to fix them. Otherwise, select the **Back** arrow to view the flow details and run the new flow. 
 
