@@ -79,10 +79,14 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
 
 - If you refresh your data sources, and there are errors with conflicting field or table names, Power BI resolves the errors for you.
 
+- Users need 'Build' permissions on all datasets in the chain to access a report that leverages this feature.
+
 - To build reports in the Power BI service on a composite model that's based on another dataset, all credentials must be set. On the refresh credential settings page, for Azure Analysis Services sources, the following error will appear, even though the credentials have been set:
     
     ![Credentials false warning](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-06.png)
 - As this is confusing and incorrect, this is something we will take care of soon.
+
+- To be able to make a DirectQuery connection to a Power BI dataset your tenant needs to have ['Allow XMLA Endpoints and Analyze in Excel with on-premises datasets'](https://docs.microsoft.com/power-bi/admin/service-admin-portal#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) enabled.
 
 - RLS rules will be applied on the source on which they are defined, but will not be applied to any other datasets in the model. RLS defined in the report will not be applied to remote sources, and RLS set on remote sources will not be applied to other data sources.
 
@@ -109,6 +113,8 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
 
 - Using third party tools, a *discourage chaining* flag can be set on a model to prevent a chain from being created or extended. To set it, look for the *DiscourageCompositeModels* property on a model. 
 
+- As with all DirectQuery connections, the connection to a Power BI dataset will not be shown in Power Query.
+
 There are also a few **limitations** you need to keep in mind:
 
 - Parameters for database and server names are currently disabled. 
@@ -124,6 +130,8 @@ There are also a few **limitations** you need to keep in mind:
 - Format strings on columns and measures from a remote source are not imported to the composite model.
 
 - Calculation groups on remote sources are not supported, with undefined query results.
+
+- Calculated tables are not supported in the Service using this feature.
 
 - Sort by column isn't supported at this time.
 
