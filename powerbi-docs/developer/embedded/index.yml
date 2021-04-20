@@ -108,3 +108,15 @@ landingContent:
             url: https://www.nuget.org/profiles/powerbi
           - text: "Power BI embedded analytics Client APIs"
             url: /javascript/api/overview/powerbi/
+
+  # Card (optional)
+  - title: Learn
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Power BI Dev Camp
+            url: https://www.powerbidevcamp.net/
+      - linkListType: reference
+        links:
+          - text: "Dev Camp links"
+            url: dev-camp-links.md          
