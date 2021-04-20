@@ -75,7 +75,7 @@ Follow these steps to use the connector:
 
    ![OdataFeed example](media/desktop-connect-graph-security/ODataFeed.PNG)
     
-   When you select **Invoke**, the **OData.Feed** function makes a call to the API, which opens Query Editor. You filter and refine the set of data that you want to use. Then, you load that data into Power BI Desktop.
+   When you select **Invoke**, the **OData.Feed** function makes a call to the API, which opens Power Query Editor. You filter and refine the set of data that you want to use. Then, you load that data into Power BI Desktop.
 
 Here's the results window for the Microsoft Graph Security entities that we queried for:
 

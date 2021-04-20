@@ -25,7 +25,7 @@ Power BI Desktop presents the tables on other data elements from the workbook in
 
 ![Screenshot of the Navigator window.](media/desktop-connect-excel/connect_to_excel_3.png)
 
-You can select the Load button to import the data, or if you want to edit the data using **Query Editor** before bringing it into Power BI Desktop, select the **Edit** button.
+You can select the Load button to import the data, or if you want to edit the data using **Power Query Editor** before bringing it into Power BI Desktop, select the **Edit** button.
 
 When you load the data, Power BI Desktop displays the **Load** window and displays the activity associated with loading the data.  
 
