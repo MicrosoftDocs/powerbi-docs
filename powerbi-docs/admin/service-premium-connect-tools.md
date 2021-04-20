@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 04/19/2021
-ms.custom: ''
+ms.custom: seodec18
 LocalizationGroup: Premium
 ---
 

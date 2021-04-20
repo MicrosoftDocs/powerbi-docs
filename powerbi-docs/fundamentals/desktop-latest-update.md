@@ -8,7 +8,6 @@ ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 04/12/2021
-ms.custom: video-r88EE4IzZlE
 LocalizationGroup: Get started
 ---
 # What's new in Power BI?
