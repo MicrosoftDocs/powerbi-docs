@@ -115,8 +115,8 @@ landingContent:
       - linkListType: learn
         links:
           - text: Power BI Dev Camp
-            url: https://www.powerbidevcamp.net/
+            url: dev-camp-links.md
       - linkListType: reference
         links:
-          - text: "Dev Camp links"
-            url: dev-camp-links.md          
+          - text: Dev Camp website
+            url: https://www.powerbidevcamp.net/        
