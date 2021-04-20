@@ -10,11 +10,29 @@ ms.topic: reference
 ms.date: 05/01/2020
 ---
 
-# Build a bar chart
+# Tutorial: Build a bar chart
 
-This article is a step-by-step guide for building a sample Power BI bar chart visual with code. You can get the complete code example at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart).
+[!INCLUDE[Power B I visuals tutorials overview](../../includes/visual-tutorial-overview.md)]
+This article is a step-by-step guide for building a sample Power BI bar chart visual with code. 
+
+In this tutorial, you learn how to:
+> [!div class="checklist"]
+> * Define the bar chart view model.
+> * Add data binding.
+> * Change the colors in the interface.
+> * Add a selection and interact with each data point.
+> * Add objects to the property pane.
+> * Package your visual.
+
+>[!NOTE]
+>For the full source code of this visual, see [PowerBI visuals sample bar chart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart).
+
+## Prerequisites
+
+[!INCLUDE[Power B I tutorials prerequisites](../../includes/visual-tutorial-prerequisites.md)]
 
 ## View model
+
 It's important to define the bar chart view model first, and iterate on what's exposed to your visual as you build it.
 
 ```typescript
