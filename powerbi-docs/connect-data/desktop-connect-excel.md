@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/04/2021
+ms.date: 04/19/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to Excel in Power BI Desktop

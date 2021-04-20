@@ -8,7 +8,7 @@ ms.custom: seojan19
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 01/29/2019
+ms.date: 04/19/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to the Microsoft Graph Security API in Power BI Desktop
