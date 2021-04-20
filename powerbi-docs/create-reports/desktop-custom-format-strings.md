@@ -19,11 +19,11 @@ With custom format strings in **Power BI Desktop**, you can customize how fields
 
 ## How to use custom format strings
 
-To create custom format strings, select the field in the **Modeling** view, and then select **Format** from the **Properties** pane.
+To create custom format strings, select the field in the **Modeling** view, and then select the dropdown arrow under **Format** in the **Properties** pane.
 
 ![Custom from the Format drop down](media/desktop-custom-format-strings/custom-format-strings-02.png)
 
-Once you've selected **Custom** from the **Format** drop down, you can select from a list of commonly used format strings. 
+Once you've selected **Custom** from the **Format** drop down menu, you can select from a list of commonly used format strings. 
 
 ![Screenshot shows details of the custom format.](media/desktop-custom-format-strings/custom-format-strings-03.png)
 
