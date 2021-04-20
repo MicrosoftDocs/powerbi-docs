@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/25/2021
+ms.date: 04/12/2021
 ms.custom: video-r88EE4IzZlE
 LocalizationGroup: Get started
 ---
