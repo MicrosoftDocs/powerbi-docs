@@ -9,7 +9,7 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 02/24/2021
 LocalizationGroup: Connect to data
-ms.custom: video-jkqdyv7POq0
+ms.custom: video-RWyUE
 ---
 # Use the ribbon in Power BI Desktop
 
@@ -30,7 +30,7 @@ These benefits can be grouped into the following categories:
 
     Watch this video to see it in action.
 
-    > [!VIDEO <iframe width="560" height="315" src="https://www.youtube.com/embed/jkqdyv7POq0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]
+    > [!VIDEO <iframe width="560" height="315" src="https://www.microsoft.com/videoplayer/embed/RWyUE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]
 
 * **Improved look, feel, and organization** - icons and functionality in the updated Power BI Desktop ribbon are aligned to the look, feel, and organization of ribbon items found in Office applications.
 

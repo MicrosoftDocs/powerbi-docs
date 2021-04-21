@@ -6,7 +6,7 @@ ms.author: maggies
 ms.date: 03/24/2021
 ms.service: powerbi
 ms.subservice: report-builder
-featuredvideoid: 78TZeiEhveY
+ms.custom: video-78TZeiEhveY
 ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 ---
