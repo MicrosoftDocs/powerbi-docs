@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 04/12/2021
+ms.date: 04/21/2021
 LocalizationGroup: Get started
 ---
 # Previous monthly updates to Power BI Desktop and the Power BI service
@@ -3824,7 +3824,7 @@ Another month, another big collection of new features and improvements for Power
 -   [SSAS Multidimensional support](../connect-data/desktop-ssas-multidimensional.md)
 -   [SAP Hana](../connect-data/desktop-sap-hana.md)
 -   [R Script](../connect-data/desktop-r-scripts.md)
--   DirectQuery for SQL Server, Azure SQL Database and Azure SQL Data Warehouse
+-   DirectQuery for SQL Server, Azure SQL Database and Azure Synapse Analytics (formerly SQL Data Warehouse)
 -   Azure Data Lake
 -   Marketo
 
@@ -3973,7 +3973,7 @@ The following features have been added to this update:
 
 -   HDInsight Spark connector
 
--   Azure SQL Data Warehouse connector
+-   Azure Synapse Analytics (formerly SQL Data Warehouse) connector
 
 -   Support for custom MDX/DAQ queries when importing data from SSAS
 
