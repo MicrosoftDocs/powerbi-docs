@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 11/17/2020
+ms.date: 04/21/2021
 LocalizationGroup: Get started
 ---
 # Save a paginated report to OneDrive for Business or SharePoint Online
