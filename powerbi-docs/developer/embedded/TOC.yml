@@ -109,7 +109,7 @@
     - name: "Power BI libraries"
       href: https://go.microsoft.com/fwlink/?linkid=848274
     - name: Azure CLI
-      href: /cli/azure/ext/powerbidedicated/powerbi
+      href: /cli/azure/powerbi
   - name: Resources
     items:
     - name: "Power BI Dev Camp"
