@@ -1,6 +1,6 @@
 ---
-title: Use gridlines and snap-to-grid in Power BI Desktop reports
-description: Use gridlines, snap-to-grid, z-order, alignment and distribution in Power BI Desktop reports
+title: Use gridlines and snap-to-grid in Power BI reports
+description: Use gridlines, snap-to-grid, z-order, alignment and distribution in Power BI reports
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -8,11 +8,11 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/19/2021
+ms.date: 04/21/2021
 LocalizationGroup: Create reports
 ---
-# Use gridlines and snap-to-grid in Power BI Desktop reports
-The **Power BI Desktop** report canvas provides gridlines that let you neatly align visuals on a report page and use snap-to-grid functionality so the visuals in your report look clean, aligned, and evenly spaced.
+# Use gridlines and snap-to-grid in Power BI reports
+The report canvas in Power BI Desktop and the Power BI service provides gridlines that let you neatly align visuals on a report page and use snap-to-grid functionality so the visuals in your report look clean, aligned, and evenly spaced.
 
 In **Power BI Desktop**, you can also adjust the z-order (bring forward, send backward) of objects on a report and align or evenly distribute selected visuals on the canvas.
 
@@ -59,11 +59,16 @@ When you enable **Snap objects to grid**, all visuals on the **Power BI Desktop*
 And, that's all there is to using **gridlines** and **snap-to-grid** to ensure the visuals in your reports are neatly aligned.
 
 ## Using z-order, align, and distribute
-You can manage the front-to-back order of visuals in a report, often referred to as the *z-order* of elements. This feature lets you overlap visuals in any way you want, then adjust the front-to-back order of each. You set the order of your visuals using the **Bring forward** and **Send backward** buttons, found in the **Format** ribbon. The **Format** ribbon appears as soon as you select one or more visuals on the page.
+In Power BI Desktop, you can manage the front-to-back order of visuals in a report, often referred to as the *z-order* of elements. This feature lets you overlap visuals in any way you want, then adjust the front-to-back order of each. You set the order of your visuals using the **Bring forward** and **Send backward** buttons, found in the **Format** ribbon. The **Format** ribbon appears as soon as you select one or more visuals on the page.
 
 ![Screenshot of the report canvas, showing how to manage the front-to-back order of visuals in a report.](media/desktop-gridlines-snap-to-grid/snap-to-grid_4.png)
 
-The **Format** ribbon lets you align your visuals in many different ways, which ensures your visuals appear on the page in the alignment that looks and works best.
+> [!NOTE]
+> You can also set z-order when you're editing a report in the Power BI service. On the **View** menu, turn the **Selection pane** on. In the **Selection pane**, you change the z-order on the **Layer order** tab.
+
+### Align and distribute visuals
+
+In Power BI Desktop, the **Format** ribbon lets you align your visuals in many different ways, which ensures your visuals appear on the page in the alignment that looks and works best.
 
 ![Screenshot of the report canvas, showing how to align your visuals in many different ways.](media/desktop-gridlines-snap-to-grid/snap-to-grid_5.png)
 
