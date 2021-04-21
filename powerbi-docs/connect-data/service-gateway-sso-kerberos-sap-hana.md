@@ -102,17 +102,17 @@ Delegation issues usually appear in the Power BI service as generic errors. To m
 
 The following symptoms and troubleshooting steps can help remedy some common issues.
 
-**Service principal name (SPN) issues**
+**SPN issues**
 
-If you experience SPN issues when you're investigating the Mashup[date]*.log, you see the following error: ```The import [table] matches no exports. Did you miss a module reference?:```
+If you experience service principal name (SPN) issues when you're investigating the Mashup[date]*.log, you see the following error: ```The import [table] matches no exports. Did you miss a module reference?:```
 
-When you investigate further by using Wireshark traces, you reveal the error **KRB4KDC_ERR_S_PRINCIPAL_UNKOWN**, which means that the service principal name (SPN) was not found or does not exist. The following image shows an example:
+When you investigate further by using Wireshark traces, you reveal the error **KRB4KDC_ERR_S_PRINCIPAL_UNKOWN**, which means that the SPN was not found or does not exist. The following image shows an example:
 
 :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-07.png" alt-text="Screenshot showing a service principal name error.":::
 
 **Resolution**
 
-To resolve service principal name (SPN) issues such as this, you must add an SPN to a service account. For more information, see the SAP documentation in [Configure Kerberos for SAP HANA database hosts](https://help.sap.com/viewer/6b94445c94ae495c83a19646e7c3fd56/LATEST/en-US/c786f2cfd976101493dfdf14cf9bcfb1.html).
+To resolve SPN issues such as this, you must add an SPN to a service account. For more information, see the SAP documentation in [Configure Kerberos for SAP HANA database hosts](https://help.sap.com/viewer/6b94445c94ae495c83a19646e7c3fd56/LATEST/en-US/c786f2cfd976101493dfdf14cf9bcfb1.html).
 
 In addition, follow the resolution instructions described in the next section.
 
