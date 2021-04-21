@@ -3698,7 +3698,7 @@
         {
             "source_path": "powerbi-docs/service-whats-new.md",
             "redirect_url": "/power-bi/fundamentals/desktop-latest-update",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/supported-languages-countries-regions.md",
