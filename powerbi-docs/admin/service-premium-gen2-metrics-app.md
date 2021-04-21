@@ -135,6 +135,6 @@ For additional information about sharing the app, or considerations and limitati
 ## Next steps
 
 * [What is Power BI Premium?](service-premium-what-is.md)
-* [Power BI Premium FAQ](service-premium-faq.md)
-* [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.md)
+* [Power BI Premium FAQ](service-premium-faq.yml)
+* [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.yml)
 

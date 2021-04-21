@@ -139,7 +139,7 @@ For more information, see [Shape Maps in Power BI](desktop-shape-map.md).
 ![screenshot of matrix visual](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)
 
 >[!TIP]
->A table supports two dimensions, but a matrix makes it easier to display data meaningfully across multiple dimensions -- it supports a stepped layout. The matrix automatically aggregates the data and enables drill down. 
+>A table supports two dimensions, but a matrix makes it easier to display data meaningfully across multiple dimensions -- it supports a stepped layout. The matrix automatically aggregates the data and enables drilling down into the data. 
 
 For more information, see [Matrix visuals in Power BI](desktop-matrix-visual.md).
 
