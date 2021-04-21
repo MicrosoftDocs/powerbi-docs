@@ -4,8 +4,7 @@ description: 'Customize X-axis and Y-axis properties'
 author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
-featuredvideoid: 9DeAKM4SNJM
-ms.custom: 9DeAKM4SNJM
+ms.custom: video-9DeAKM4SNJM
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to 

@@ -4,7 +4,7 @@ description: 'Tutorial: Import and analyze data from a webpage using Power BI De
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: tutorial

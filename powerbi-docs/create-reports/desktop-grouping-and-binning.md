@@ -4,7 +4,7 @@ description: Learn how to group and bin elements in Power BI Desktop
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to

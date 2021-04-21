@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "app owns data"
   - "user owns data"
   - "Power BI APIs"
-ms.custom: seodec18
+ms.custom: ''
 ms.date: 04/02/2021
 ---
 

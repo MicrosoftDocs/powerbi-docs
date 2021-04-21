@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
 ms.date: 05/08/2020
-ms.custom: seodec18
+ms.custom: ''
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshooting unsupported data source for refresh
