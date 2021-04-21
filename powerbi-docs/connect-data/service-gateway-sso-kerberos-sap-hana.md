@@ -148,7 +148,7 @@ If you experience credentials errors, errors in the logs or traces will expose e
 
 In HANA authentication traces, you might see entries similar to the following:
 
-```[Authentication|manager.cpp:166] Kerberos: Using Service Principal Name johnny@CONTOSO.COM with name type: GSS_KRB5_NT_PRINCIPAL_NAME [Authentication|methodgssinitiator.cpp:367] Got principal name: johnny@CONTOSO.COM```
+```[Authentication|manager.cpp:166] Kerberos: Using Service Principal Name johnny@on.contoso.com@CONTOSO.COM with name type: GSS_KRB5_NT_PRINCIPAL_NAME [Authentication|methodgssinitiator.cpp:367] Got principal name: johnny@on.contoso.com@CONTOSO.COM```
 
 **Resolution**
 
