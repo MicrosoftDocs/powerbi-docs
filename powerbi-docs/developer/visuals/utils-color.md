@@ -1,6 +1,6 @@
 ---
-title:  Introduction to use color utils in Power BI visual in Power BI embedded analytics for better embedded BI insights
-description: This article describes how to use color utils simplify applying of themes and palettes on visual's data points on Power BI visuals. Enable better embedded BI insights using Power BI embedded analytics.
+title:  Introduction to use color utils in Power BI visual
+description: This article describes how to use color utils simplify applying of themes and palettes on visual's data points on Power BI visuals.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins

@@ -1,6 +1,6 @@
 ---
-title:  Adding external libraries to Power BI visuals in Power BI embedded analytics for better embedded BI insights
-description: This article describes how to use external libraries in Power BI visuals. Enable better embedded BI insights using Power BI embedded analytics.
+title:  Adding external libraries to Power BI visuals
+description: This article describes how to use external libraries in Power BI visuals.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
