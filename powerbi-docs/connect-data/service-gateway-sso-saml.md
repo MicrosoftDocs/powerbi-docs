@@ -304,7 +304,7 @@ After you've changed the configuration, restart the gateway service for the chan
 
 #### Verify and troubleshoot the HANA server side
 
-Use the solutions in this section if the gateway can find the certificate and sign the SAML assertion, but you're still experiencing errors. You'll need to collect HANA authentication traces, <!-- as described in the following article's [troubleshooting](service-gateway-sso-saml.md#troubleshooting) section.--> 
+Use the solutions in this section if the gateway can find the certificate and sign the SAML assertion but you're still experiencing errors. You'll need to collect HANA authentication traces, as described in the following article's [troubleshooting](service-gateway-sso-saml.md#troubleshooting) section. 
 
 **The SAML identity provider**
 
