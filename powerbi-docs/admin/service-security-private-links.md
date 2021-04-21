@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
 ms.date: 04/16/2021
-ms.custom: 
+ms.custom: video--3yFtlZBpqs
 LocalizationGroup: Administration
 ---
 
