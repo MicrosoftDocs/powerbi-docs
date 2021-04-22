@@ -19,13 +19,13 @@ In this article, you learn how to quickly edit a paginated report in Power BI Re
 1. Go to list view in your workspace where your paginated report is saved.
 2. There are two different ways you can open a paginated report in Power BI Report Builder from the Power BI service:
 
-    a. In list view, select **More Options (…)** for a paginated report, then select **Edit in Power BI Report Builder**. 
+    In list view, select **More Options (…)** for a paginated report, then select **Edit in Power BI Report Builder**. 
 
-        :::image type="content" source="media/paginated-reports-edit-service/paginated-edit-list-view.png" alt-text="Open a paginated report from list view in a workspace.":::
+    :::image type="content" source="media/paginated-reports-edit-service/paginated-edit-list-view.png" alt-text="Open a paginated report from list view in a workspace.":::
  
-    b. Open your paginated report, then from the File menu select **Edit in Power BI Report Builder**. 
+    Open your paginated report, then from the File menu select **Edit in Power BI Report Builder**. 
 
-        :::image type="content" source="media/paginated-reports-edit-service/paginated-edit-file-menu.png" alt-text="Open a paginated report from the File menu in Power BI Report Builder.":::
+    :::image type="content" source="media/paginated-reports-edit-service/paginated-edit-file-menu.png" alt-text="Open a paginated report from the File menu in Power BI Report Builder.":::
  
 3. Your paginated report opens in Power BI Report Builder with the data source and dataset automatically configured. From here, you can make your edits.
 
