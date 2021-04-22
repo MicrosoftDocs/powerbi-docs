@@ -20,9 +20,33 @@ You can also develop your own Power BI visual, or get one from a trusted friend 
 
 If you download or receive a Power BI visual, it has to be imported to the visualization pane before it can be used for creating and editing Power BI content.
 
-## Importing a Power BI visual
+## Import a Power BI visual directly from AppSource
 
-To import a Power BI visual, follow these steps:
+To import a Power BI visual directly from AppSource, follow these steps:
+
+1. Open your report in [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or [Power BI service](https://app.powerbi.com)
+2. Select the ellipsis from the visualizations pane
+ :::image type="content" source="media/import-visual/ellipsis.png" alt-text="Screenshot of visualization pane ellipsis":::
+
+3. Select **Get more visuals** from the menu
+
+  :::image type="content" source="media/import-visual/get-visuals.png" alt-text="Screenshot of get more visuals.":::
+
+4. Navigate to the visual you want to import and select **Add**.
+  
+5. When the visual has successfully imported, select **OK**.
+
+   :::image type="content" source="media/import-visual/success.png" alt-text="Screenshot of successful import.":::
+
+6. The visual now appears as a new icon in the visualizations pane of the current report. Select it to create the visual on the report canvas.
+
+   :::image type="content" source="media/import-visual/new-visualization.png" alt-text="Screenshot of new imported visualization.":::
+
+7. If you want the visual to remain on the visualization pane for all reports right-click on it and select **Pin to visualization pane**.
+  
+## Import a visual file into Power BI
+
+To import a Power BI visual (*.pbiviz file) that has been downloaded to your local computer, follow these steps:
 
 1. Open your report in [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or [Power BI service](https://app.powerbi.com)
 2. Select the ellipsis from the visualizations pane
@@ -41,10 +65,12 @@ To import a Power BI visual, follow these steps:
 
    :::image type="content" source="media/import-visual/success.png" alt-text="Screenshot of successful import.":::
 
-7. The visual now appears as a new icon in the visualizations pane. Select it to create the visual on the report canvas.
+7. The visual now appears as a new icon in the visualizations pane of the current report. Select it to create the visual on the report canvas.
 
    :::image type="content" source="media/import-visual/new-visualization.png" alt-text="Screenshot of new imported visualization.":::
-  
+
+8. If you want the visual to remain on the visualization pane for all reports right-click on it and select **Pin to visualization pane**.
+
 ## Next steps
 
 >[!div class="nextstepaction"]
