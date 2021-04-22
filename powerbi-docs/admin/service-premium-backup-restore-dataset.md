@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 04/15/2021
+ms.date: 04/22/2021
 LocalizationGroup: Connect to data
 ---
 # Backup and restore datasets with Power BI Premium (preview)
@@ -56,7 +56,7 @@ Because of the XMLA dependency, **Backup and Restore** currently requires your d
 
 When using the **Backup and Restore** feature with Power BI, keep the following considerations in mind.
 
-* For existing workspaces with ADLS Gen2 configured to CDSA only, you must unlink the ADLS Gen2 account first, then relink it for **Backup and Restore** to work properly.
+* For existing workspaces with ADLS Gen2 configured to dataflows only, you must unlink the ADLS Gen2 account first, then relink it for **Backup and Restore** to work properly.
 * If your ADLS Gen2 is already working with backup and restore, if you later reconfigure it to work with backup and restore, you must first rename or move the backup folder, or the attempt will result in errors and failure. 
 
 
