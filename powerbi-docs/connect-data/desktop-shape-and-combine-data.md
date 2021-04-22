@@ -62,7 +62,7 @@ From [Getting Started with Power BI Desktop](../fundamentals/desktop-getting-sta
 
     In the following image, the **Applied Steps** list reflects the added steps so far: 
      - **Source**: Connecting to the website.
-     - **Navigation**: Selecting the table. 
+     - **Extracted Table from Html**: Selecting the table. 
      - **Changed Type**: Changing text-based number columns from *Text* to *Whole Number*. 
      - **Added Custom**: Adding a custom column.
      - **Changed Type1**: The last applied step.
@@ -103,8 +103,8 @@ Before we can work with this query, we need to make a few changes to adjust its 
    - **Rename**; Rename the step.
    - **Delete**: Delete the step.
    - **Delete** **Until End**: Remove the current step, and all subsequent steps.
-   - **Move Up**: Move the step up in the list.
-   - **Move Down**: Move the step down in the list.
+   - **Move before**: Move the step up in the list.
+   - **Move after**: Move the step down in the list.
 
 1. Move up the last step, **Removed Columns**, to just above the **Added Custom** step.
 
@@ -204,7 +204,7 @@ We’re in luck; there’s another public data source that does just that, but i
 
 To get the data into shape, follow these steps:
 
-1. Remove the top row. Because it's a result of the way that the web page’s table was created, we don’t need it. From the **Home** ribbon, select **Reduce Rows \> Remove Rows \> Remove Top Rows**.
+1. Remove the top row. Because it's a result of the way that the web page’s table was created, we don’t need it. From the **Home** ribbon, select **Remove Rows \> Remove Top Rows**.
 
     ![Select Remove Top Rows](media/desktop-shape-and-combine-data/shapecombine_removetoprows.png)
 
@@ -213,7 +213,7 @@ To get the data into shape, follow these steps:
     > [!NOTE]
     > If Power BI accidentally imports the table headers as a row in your data table, you can select **Use First Row As Headers** from the **Home** tab, or from the **Transform** tab in the ribbon, to fix your table.
 
-1. Remove the bottom 26 rows. These rows are U.S. territories, which we don’t need to include. From the **Home** ribbon, select **Reduce Rows \> Remove Rows \> Remove Bottom Rows**.
+1. Remove the bottom 26 rows. These rows are U.S. territories, which we don’t need to include. From the **Home** ribbon, select **Remove Rows \> Remove Bottom Rows**.
 
     ![Select Remove Bottom Rows](media/desktop-shape-and-combine-data/shapecombine_removebottomrows.png)
 
@@ -221,7 +221,7 @@ To get the data into shape, follow these steps:
 
     ![Clear Federal district check box](media/desktop-shape-and-combine-data/shapecombine_filterdc.png)
 
-1. Remove a few unneeded columns. Because we need only the mapping of each state to its official two-letter abbreviation, we can remove the following columns: **Column1**, **Column3**, **Column4**, and **Column6** through **Column11**. First select **Column1**, then hold down the **CTRL** key and select each of the other columns to be removed. From the **Home** tab on the ribbon, select **Remove Columns \> Remove Columns**.
+1. Remove a few unneeded columns. Because we need only the mapping of each state to its official two-letter abbreviation, we can remove several columns. First select a column, then hold down the **CTRL** key and select each of the other columns to be removed. From the **Home** tab on the ribbon, select **Remove Columns \> Remove Columns**.
 
    ![Remove column](media/desktop-shape-and-combine-data/shapecombine_removecolumns.png)
 
@@ -250,7 +250,7 @@ In this case, we want to merge the queries. To do so, follow these steps:
  
 1. From the left pane of Query Editor, select the query *into which* you want the other query to merge. In this case, it's **RetirementStats**. 
 
-1. Select **Combine \> Merge Queries** from the **Home** tab on the ribbon.
+1. Select **Merge Queries \> Merge Queries** from the **Home** tab on the ribbon.
 
    ![Select Merge Queries](media/desktop-shape-and-combine-data/shapecombine_mergequeries.png)
 
@@ -266,7 +266,7 @@ In this case, we want to merge the queries. To do so, follow these steps:
 
 1. Select **OK**.
 
-   Query Editor creates a **NewColumn** column at the end of the query, which contains the contents of the table (query) that was merged with the existing query. All columns from the merged query are condensed into the **NewColumn** column, but you can **Expand** the table and include whichever columns you want.
+   Query Editor creates a new column at the end of the query, which contains the contents of the table (query) that was merged with the existing query. All columns from the merged query are condensed into the column, but you can **Expand** the table and include whichever columns you want.
 
    ![NewColumn column](media/desktop-shape-and-combine-data/shapecombine_mergenewcolumn.png)
 
