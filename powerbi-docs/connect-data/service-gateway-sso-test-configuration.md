@@ -30,33 +30,32 @@ The **test single sign-on** feature works for both Kerberos and SAML based singl
 
 1. In the **Manage Gateways** page in Power BI, when editing the data source for SSO, you can test the configuration from the **Advanced Settings** area.
 
-    :::image type="content" source="media/service-gateway-sso-test-configuration/gateway-sso-test-configuration-01.png" alt-text="Screenshot of how to test S S O configuration":::
+    :::image type="content" source="media/service-gateway-sso-test-configuration/gateway-sso-test-configuration-01.png" alt-text="Screenshot of how to test S S O configuration.":::
 
 2. Provide a User Principal Name to test. If the gateway cluster is able to impersonate the user and successfully connect to the data source, the test succeeds, as shown in the following image.
 
-    :::image type="content" source="media/service-gateway-sso-test-configuration/gateway-sso-test-configuration-02.png" alt-text="Screenshot of successful test for S S O":::
+    :::image type="content" source="media/service-gateway-sso-test-configuration/gateway-sso-test-configuration-02.png" alt-text="Screenshot of successful test for S S O.":::
 
 ## Troubleshooting Single Sign-On (SSO)
 
 This section describes frequent errors you may see, when testing single sign-on, and actions you can take to fix them:
 
-1. **Error: The on-premises data gateway's service account failed to impersonate the user.**
+* **Error: The on-premises data gateway's service account failed to impersonate the user.**
 
     If the gateway cluster cannot impersonate the user and connect to the data source, the test fails with the corresponding error message.
 
-    :::image type="content" source="media/service-gateway-sso-test-configuration/gateway-sso-test-configuration-03.png" alt-text="Screenshot of error dialog when testing fails to impersonate the user":::
+    :::image type="content" source="media/service-gateway-sso-test-configuration/gateway-sso-test-configuration-03.png" alt-text="Screenshot of error dialog when testing fails to impersonate the user.":::
 
     | Possible cause | Action |
     | --- | --- |
     | User does not exist in AAD | Check if the user is present in AAD |
     | User is not mapped correctly to a local AD account | Check configurations and follow steps outlined in the documentation: [Overview of SSO](service-gateway-sso-overview.md) |
-    | Gateway does not have impersonation rights.
-     | Grant the gateway service account local policy rights on the gateway machine: [Grant local policy rights](service-gateway-sso-kerberos.md#grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine)  |
+    | Gateway does not have impersonation rights. | Grant the gateway service account local policy rights on the gateway machine: [Grant local policy rights](service-gateway-sso-kerberos.md#grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine)  |
 
-2. **Error: Invalid connection credentials.**
+* **Error: Invalid connection credentials.**
 The gateway cannot connect to the data source, because the provided User Principal Name does not have access to the data source.
 
-    :::image type="content" source="media/service-gateway-sso-test-configuration/gateway-sso-test-configuration-04.png" alt-text="Screenshot of error dialog when testing fails because User Principal Name does not have access to data source":::
+    :::image type="content" source="media/service-gateway-sso-test-configuration/gateway-sso-test-configuration-04.png" alt-text="Screenshot of error dialog when testing fails because User Principal Name does not have access to data source.":::
 
 
     | Possible cause | Action |
