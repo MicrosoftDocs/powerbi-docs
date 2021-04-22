@@ -20,9 +20,25 @@ An example of a landing page is shown in the following image:
 
 ![landing page screenshot](media/landing-page/app-landing-page.png)
 
-## Sample
+## Creating a landing page
 
-To create a landing page add `supportsLandingPage` to the capabilities file, and set it to true.
+### Setting capabilities
+
+To create a landing page, certain capabilities have to be set in the `capabilities.json` file.
+
+* For the landing page to work, enable `supportsLandingPage`.
+* For the landing page to be displayed in view mode or for the visual to be interactive even when in [no data-role mode](no-dataroles-support), enable `supportsEmptyDataView`.
+
+```json
+    {
+        "supportsLandingPage": true,
+        "supportsEmptyDataView": true,
+    }
+```
+
+###
+
+The following code shows a sample landing page for a bar chart visual.
 
 ```typescript
 export class BarChart implements IVisual {
