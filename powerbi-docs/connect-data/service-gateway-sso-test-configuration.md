@@ -20,7 +20,7 @@ Setting up Single Sign-On (SSO) is complex, so with the **test single sign-on (S
 * Validates the SSO setup, including checking UPN mapping to a local Active Directory identity for impersonation and data source access.
 * Helps identify any problems if connection failures occur. For example, if an UPN is mapped to a local AD identity but doesn't have access to the data source, the error message indicate that error.
 
-The **test single sign-on** feature works for both Kerberos and SAML based single sign-on for these [documented data sources](service-gateway-sso-overview). For Kerberos constrained delegation, the **test single sign-on** feature helps with testing both SSO using **DirectQuery**, and **DirectQuery And Import**.
+The **test single sign-on** feature works for both Kerberos and SAML based single sign-on for these [documented data sources](service-gateway-sso-overview.md). For Kerberos constrained delegation, the **test single sign-on** feature helps with testing both SSO using **DirectQuery**, and **DirectQuery And Import**.
 
 > [!IMPORTANT]
 > The **test single sign-on** feature requires the March 2021 gateway release or later.
