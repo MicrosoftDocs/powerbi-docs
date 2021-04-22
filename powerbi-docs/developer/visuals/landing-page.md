@@ -34,7 +34,7 @@ This article explains how to design a landing page for your visual. The landing 
 To create a landing page, certain capabilities have to be set in the `capabilities.json` file.
 
 * For the landing page to work, enable `supportsLandingPage`.
-* For the landing page to be displayed in view mode or for the visual to be interactive even when in [no data-role mode](no-dataroles-support?tabs=NoDataroles), enable `supportsEmptyDataView`.
+* For the landing page to be displayed in view mode or for the visual to be interactive even when in [no data-roles mode](no-dataroles-support?tabs=NoDataroles), enable `supportsEmptyDataView`.
 
 ```json
     {
