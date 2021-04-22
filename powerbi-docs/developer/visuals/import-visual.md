@@ -32,25 +32,28 @@ To import a Power BI visual, follow these steps:
 
   :::image type="content" source="media/import-visual/import-from-file.png" alt-text="Screenshot of import from a file.":::
 
-4. If you get a caution about importing custom files select **Import** if you trust the source of the file.
+4. If you get a message cautioning you about importing custom files, select **Import** if you trust the source of the file.
 
   :::image type="content" source="media/import-visual/caution.png" alt-text="Screenshot of caution: import custom visual.":::
   
-5. Navigate to the folder that has the custom visual file (*.pbiviz), then select Open.
-6. Select **OK** when the visual is successfully imported.
+5. Navigate to the folder that has the custom visual file (*.pbiviz) and open it.
+6. When the visual has successfully imported, select **OK**.
 
    :::image type="content" source="media/import-visual/success.png" alt-text="Screenshot of successful import.":::
 
-7. The visual will appear as a new icon in the visualizations pane. Select it to create the visual on the report canvas.
+7. The visual now appears as a new icon in the visualizations pane. Select it to create the visual on the report canvas.
 
    :::image type="content" source="media/import-visual/new-visualization.png" alt-text="Screenshot of new imported visualization.":::
   
 ## Next steps
 
-* [Developing a Power BI circle card visual](develop-circle-card.md)
+>[!div class="nextstepaction"]
+>[Developing a Power BI circle card visual](develop-circle-card.md)
 
-* [Visualizations in Power BI](../../visuals/power-bi-report-visualizations.md)  
+>[!div class="nextstepaction"]
+>[Visualizations in Power BI](../../visuals/power-bi-report-visualizations.md)
 
-* [Visuals in Power BI](power-bi-custom-visuals.md)  
+>[!div class="nextstepaction"]
+>[Visuals in Power BI](power-bi-custom-visuals.md)
 
-* More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
