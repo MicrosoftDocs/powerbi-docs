@@ -14,7 +14,15 @@ LocalizationGroup: Administration
 
 # Track user activities in Power BI
 
-Knowing who is taking what action on which item in your Power BI tenant can be critical in helping your organization fulfill its requirements, like meeting regulatory compliance and records management. With Power BI, you have two options to track user activity: The [Power BI activity log](#use-the-activity-log) and the [unified audit log](#use-the-audit-log). These logs both contain a complete copy of the [Power BI auditing data](#operations-available-in-the-audit-and-activity-logs), but there are several key differences, as summarized in the following table.
+Knowing who is taking what action on which item in your Power BI tenant can be critical in helping your organization fulfill its requirements, like meeting regulatory compliance and records management. With Power BI, you have two options to track user activity: The [Power BI activity log](#use-the-activity-log) and the [unified audit log](#use-the-audit-log). 
+
+## Choosing a log source
+The Power BI Activity Log and unified audit log both contain a complete copy of the [Power BI auditing data](#operations-available-in-the-audit-and-activity-logs). However, we highly recommend using the Power BI Activity Log for the following reasons:
+
+- The Power BI Activity Log contains only the Power BI activities structured list of records (JSON array)
+- You do not need to be assigned the global admin role in Microsoft 365 to access the Power BI Activity Log
+
+The differences between log sources are summarized in the following table.
 
 | **Unified audit log** | **Power BI activity log** |
 | --- | --- |
