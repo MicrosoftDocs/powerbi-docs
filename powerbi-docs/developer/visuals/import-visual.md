@@ -26,25 +26,24 @@ To import a Power BI visual, follow these steps:
 
 1. Open your report in [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or [Power BI service](https://app.powerbi.com)
 2. Select the ellipsis from the visualizations pane
-
-   ![Screenshot of visualization pane ellipsis.](media/import-visual/ellipsis.png)
+ :::image type="content" source="media/import-visual/ellipsis.png" alt-text="Screenshot of visualization pane ellipsis":::
 
 3. Select **Import a  visual from a file** from the menu
 
-  ![Screenshot of import from a file.](media/import-visual/import-from-file.png)
+  :::image type="content" source="media/import-visual/import-from-file.png" alt-text="Screenshot of import from a file.":::
 
 4. If you get a caution about importing custom files select **Import** if you trust the source of the file.
 
-   ![Screenshot of caution: import custom visual.](media/import-visual/caution.png)
-
+  :::image type="content" source="media/import-visual/caution.png" alt-text="Screenshot of caution: import custom visual.":::
+  
 5. Navigate to the folder that has the custom visual file (*.pbiviz), then select Open.
 6. Select **OK** when the visual is successfully imported.
 
- ![Screenshot of successful import.](media/import-visual/success.png)
+   :::image type="content" source="media/import-visual/success.png" alt-text="Screenshot of successful import.":::
 
 7. The visual will appear as a new icon in the visualizations pane. Select it to create the visual on the report canvas.
 
-  ![Screenshot of new imported visualization.](media/import-visual/new-visualization.png)
+   :::image type="content" source="media/import-visual/new-visualization.png" alt-text="Screenshot of new imported visualization.":::
   
 ## Next steps
 
