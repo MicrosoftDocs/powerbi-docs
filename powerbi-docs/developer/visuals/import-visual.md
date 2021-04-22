@@ -44,7 +44,7 @@ To import a Power BI visual directly from AppSource, follow these steps:
 
 7. If you want the visual to remain on the visualization pane for all reports right-click on it and select **Pin to visualization pane**.
   
-## Import a visual file into Power BI
+## Import a visual file from your local computer into Power BI
 
 To import a Power BI visual (*.pbiviz file) that has been downloaded to your local computer, follow these steps:
 
