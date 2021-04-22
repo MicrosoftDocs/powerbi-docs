@@ -55,6 +55,8 @@ There are a few limits and considerations to keep in mind with the Google **BigQ
 
   These permissions typically are provided in the BigQuery.User role. For more information, see [Google BigQuery Predefined roles and permissions](https://cloud.google.com/bigquery/docs/access-control).
   
+  Please note : Starting April release of Power BI, if you are missing these permissions on an account, it will result in you seeing zero rows from any data queries. Please make sure that these specific permissions are set on the account that is being used to refresh a report or get data from any tables.
+  
   If the above steps do not resolve the problem or if you want to disable the support for Storage API, change your query to the following:
   ```
   Source = GoogleBigQuery.Database([UseStorageApi=false])
