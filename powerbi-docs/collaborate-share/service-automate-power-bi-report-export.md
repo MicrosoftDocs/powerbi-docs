@@ -61,7 +61,7 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
     :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-bookmark-url-12.png" alt-text="Select the bookmark name in the U R L.":::
 
 13. Select **New Step**.
-14. In **Choose an action**, search for **Outlook** and select **Send an email (V2)**.
+14. In **Choose an operation**, search for **Outlook** and select **Send an email (V2)**.
 15. In **Send an email (V2)**, complete the **To**, **Subject**, and **Body** fields for your email.
 16. Select **Show advanced options**. In **Attachments Name – 1**, enter a name for your attachment. Add a file extension to the file name (for example, .PDF) that matches your desired **Export Format**.
 17. In **Attachment Content**, select **File Content** to attach your exported Power BI report.  
