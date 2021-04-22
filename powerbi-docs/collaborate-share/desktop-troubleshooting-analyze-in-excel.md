@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: troubleshooting
-ms.date: 05/27/2020
+ms.date: 04/20/2021
 LocalizationGroup: Troubleshooting
 ---
 
@@ -42,7 +42,7 @@ To download the latest Excel libraries, visit Power BI and select the **down arr
 
 ![Screenshot of down arrow menu option in the upper right corner, to select Analyze in Excel updates.](media/desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_1.png)
 
-In the dialog that appears, select **Download (preview)**.
+In the dialog that appears, select **Download**.
 
 ![Screenshot of Analyze in Excel updates dialog to select Download or preview button.](media/desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_2.png)
 
