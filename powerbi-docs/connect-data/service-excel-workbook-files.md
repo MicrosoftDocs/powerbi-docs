@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 09/06/2019
+ms.custom: video-l2wy4XgQIu0
 LocalizationGroup: Data from files
 ---
 # Get data from Excel workbook files

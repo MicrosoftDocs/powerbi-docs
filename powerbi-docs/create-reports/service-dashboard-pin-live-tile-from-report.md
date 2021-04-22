@@ -9,6 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 03/02/2018
+ms.custom: video-EzhfBpPboPA
 LocalizationGroup: Dashboards
 ---
 # Pin an entire report page, as a live tile, to a Power BI dashboard
