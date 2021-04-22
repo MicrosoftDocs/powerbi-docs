@@ -11,7 +11,7 @@ ms.date: 04/20/2021
 
 # Power BI Dev Camp
 
-[Power BI Dev Camp](https://www.powerbidevcamp.net/) is an educational resource for developers that want to learn more about Power BI as a developer platform. It covers topics such as Power BI embedding and the development of Power BI visuals and custom connectors.
+[Power BI Dev Camp](https://www.powerbidevcamp.net/) (third-party site) is an educational resource for developers that want to learn more about Power BI as a developer platform. It covers topics such as Power BI embedding and the development of Power BI visuals and custom connectors.
 
 This article provides links to some of the Power BI Dev Camp resources.
 
