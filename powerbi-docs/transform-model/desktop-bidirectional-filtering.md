@@ -4,7 +4,7 @@ description: Enable cross-filtering using DirectQuery in Power BI Desktop
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual

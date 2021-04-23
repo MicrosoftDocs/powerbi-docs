@@ -9,6 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/29/2019
+ms.custom: video-5tg-OXzxe2g
 LocalizationGroup: Reports
 ---
 # Apply page display settings in a Power BI report

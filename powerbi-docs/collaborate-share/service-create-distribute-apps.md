@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.custom: content-perf-fy21q3
-ms.date: 04/02/2021
+ms.date: 04/21/2021
 
 LocalizationGroup: Share your work
 ---
@@ -61,7 +61,6 @@ When the dashboards and reports in your workspace are ready, you choose which da
     - In [classic workspaces](service-create-workspaces.md): everyone in your organization, specific people, or Azure Active Directory (Azure AD) security groups.
     - You can allow app users to connect to the app's underlying datasets by giving them Build permission. They'll see these datasets when they're searching for shared datasets. Read more about [allowing users to connect to the app's datasets](#allow-users-to-connect-to-datasets), in this article.
     - Users with Build permission can also have permission to copy reports from this app to another workspace. Read more about [allowing users to copy reports in the app](#allow-users-to-copy-reports), in this article.
-    - You can allow app users to share the app and its underlying datasets.
     
     >[!IMPORTANT]
     >If your app relies on datasets from other workspaces, it is your responsibility to ensure all app users have access to the underlying datasets.
@@ -208,7 +207,6 @@ Things to keep in mind about publishing apps:
 * You can have at most 100 users or groups in the access list for the app. However, you can give more than 100 users access to the app. To do so, use one or more user groups that contain all the desired users.
 * For the new workspace experience, if the user added to the app access list already has access to the app through the workspace, they will not be shown in the access list for the app.  
 * The support site URL is shown in the item information card.
-* Apps have an option to allow users to share the app and the app's underlying datasets by using the share permission. For new apps, this option is off by default. We recommend turning this option off for your existing apps and updating permission on the underlying datasets.
 * Apps can have a maximum of 200 dashboards. 
 
 ## Next steps
