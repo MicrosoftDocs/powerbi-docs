@@ -116,7 +116,7 @@ Before we can work with this query, we need to make a few changes to adjust its 
 
    ![Error result in column data](media/desktop-shape-and-combine-data/shapecombine_error2.png)
 
-   There are a few ways to get more information about each error. If you select the cell without clicking on the word *Error*, Power Query Editor displays the error information on the bottom of the window.
+   There are a few ways to get more information about each error. If you select the cell without clicking on the word *Error*, Power Query Editor displays the error information.
 
    ![Error information in Power Query Editor](media/desktop-shape-and-combine-data/shapecombine_errorinfo2.png)
 
