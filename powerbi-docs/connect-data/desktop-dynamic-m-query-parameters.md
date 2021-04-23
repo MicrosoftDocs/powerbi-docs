@@ -19,11 +19,11 @@ When model authors understand the intended semantics of their filters, they ofte
 
 Watch Justyna explain and use Dynamic M Query Parameters, and then try it out yourself. 
 
-> [!VIDEO: https://www.microsoft.com/videoplayer/embed/RE4M2hq]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4M2hq]
 
 ## Enabling Dynamic M query parameters
 
-**Dynamic M Query Parameters** are currently in preview, and must be enabled to be used. Select **File > Options and settings > Options** and then select **Preview features** from the left pane. From there, make sure the **Dynamic M Query Parameters** checkbox is selected. You may need to restart Power BI Desktop for the change to be enabled.
+**Dynamic M Query Parameters** are currently in preview, and must be enabled to be used. On the **File** ribbon, select **Options and settings** > **Options** and then select **Preview features** from the left pane. From there, make sure the **Dynamic M Query Parameters** checkbox is selected. You may need to restart Power BI Desktop for the change to be enabled.
 
 ![Enable the preview feature](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-01.png)
 
@@ -34,7 +34,7 @@ As a prerequisite for this feature, you must have a valid [M Query Parameter](/p
 
 Let's step through an example for passing a **single value** to a parameter dynamically:
 
-1. In Power BI Desktop, launch **Power Query** from the **Data** tab, and select **New Parameters** under the **Manage Parameters** button in the ribbon.
+1. In Power BI Desktop, select **Home** > **Transform data** > **Transform data** to open the Power Query Editor. Select **New Parameters** under the **Manage Parameters** button in the ribbon.
 
     ![Ribbon menu](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-02.png)
 
