@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 04/21/2021
 LocalizationGroup: Premium
 ---
 
@@ -41,19 +41,19 @@ If you have an existing organization (tenant), you must be in the Microsoft 365 
 
 To purchase Premium capacity, follow these steps.
 
-1. From within the Power BI service, select the Microsoft 365 app picker then **Admin**.
+1. From within the Power BI service, select the Microsoft 365 app picker, and then select **Admin**.
 
-    ![Microsoft 365 app picker](media/service-admin-premium-purchase/o365-app-picker.png)
+    :::image type="content" source="media/service-admin-premium-purchase/powerbi-select-admin.png" alt-text="Screenshot that shows the Microsoft 365 app picker.":::
 
     Alternatively, you can browse to the Microsoft 365 admin center.
 
 1. Select **Billing** > **Purchase services**.
 
-1. Under **Other plans**, look for Power BI Premium offerings. This will list as P1 through P3, EM3 and P1 (month to month).
+1. Under **Power BI**, look for Power BI Premium offerings. This will list as P1 through P3, EM3 and P1 (month to month).
 
-1. Hover over the ellipsis (**. . .**) and then select **Buy now**.
+1. Select **Details** under the service you want, select a license quantity, and then select **Buy**.
 
-    ![Buy now](media/service-admin-premium-purchase/premium-purchase.png)
+    :::image type="content" source="media/service-admin-premium-purchase/powerbi-premium-purchase-options.png" alt-text="Screenshot that shows purchase options for Power B I Premium with the Details button selected.":::
 
 1. Follow the steps to complete the purchase.
 
@@ -67,20 +67,18 @@ After you purchase capacity, learn how to [manage capacities](service-admin-prem
 
 Now that you have a capacity, you can add more as your needs grow. You can use any combination of Premium capacity SKUs (P1 through P3) within your organization. The different SKUs provide different resource capabilities.
 
-1. In the Microsoft 365 admin center, select **Billing** > **Purchase services**.
+1. In the Microsoft 365 admin center, select **Billing** > **Your products**.
 
-1. Find the Power BI Premium item you want to purchase more of under **Other plans**.
+1. Select the Power BI Premium service you want to add capacity to.
 
-1. Hover over **More options** (...) and then select **Change license quantity**.
-
-    ![Change license quantity](media/service-admin-premium-purchase/premium-purchase-more.png)
+1. Select **Buy licenses**.
 
 1. Change the number of instances that you want to have for this item. Then select **Submit** when finished.
 
    > [!IMPORTANT]
    > Selecting **Submit** charges the credit card on file.
 
-The **Purchase services** page will then indicate the number of instances you have. Within the Power BI admin portal, under **Capacity settings**, the available v-cores reflects the new capacity purchased.
+The **Your products** page will then indicate the number of instances you have. Within the Power BI admin portal, under **Capacity settings**, the available v-cores reflects the new capacity purchased.
 
 ![Available v-cores for Power BI Premium capacity](media/service-admin-premium-purchase/premium-capacities.png)
 
@@ -90,11 +88,11 @@ You can cancel your subscription from within the Microsoft 365 admin center. To 
 
 1. Browse to the Microsoft 365 admin center.
 
-1. Select **Billing** > **Subscriptions**.
+1. Select **Billing** > **Your products**.
 
-1. Select your Power BI Premium subscription from the list.
+1. Select your Power BI Premium product from the list.
 
-1. Select **More actions** > **Cancel subscription**.
+1. Under **Subscription status**, select **Cancel subscription**.
 
 1. The **Cancel subscription** page will indicate whether or not you are responsible for an [early termination fee](https://support.office.com/article/early-termination-fees-6487d4de-401a-466f-8bc3-c0beb5cc40d3).  
 

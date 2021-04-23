@@ -134,16 +134,22 @@ The combined time for all queries is 75 minutes, but the setting limit isn't rea
 
 Note that Power BI reports override this default with a much smaller timeout for each query to the capacity. The timeout for each query is typically about three minutes.
 
-#### Automatic page refresh (preview)
+#### Automatic page refresh
 
 When enabled, automatic page refresh allows users in your Premium capacity to refresh pages in their report at a defined interval, for DirectQuery sources. As a capacity admin, you can do the following:
 
 - Turn automatic page refresh on and off
 - Define a minimum refresh interval
 
-The following image shows the location of the automatic refresh interval setting:
+To find the automatic page refresh setting:
 
-![admin setting for automatic refresh interval](media/service-admin-premium-workloads/automatic-refresh-interval.png)
+1. In the Power BI Admin portal, select **Capacity settings**.
+
+2. Select your capacity, and then scroll down and expand the **Workloads** menu.
+
+3. Scroll down to the **Datasets** section.
+
+:::image type="content" source="media/service-admin-premium-workloads/powerbi-permium-automatic-page-refresh.png" alt-text="Screenshot that shows the admin setting for automatic refresh interval.":::
 
 Queries created by automatic page refresh go directly to the data source, so it's important to consider reliability and load on those sources when allowing automatic page refresh in your organization. 
 

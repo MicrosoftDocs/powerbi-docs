@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 04/20/2021
 LocalizationGroup: Premium 
 ---
 
@@ -38,15 +38,11 @@ To check the last time your Premium Capacity Metrics app refreshed:
 
 1. Go to the workspace that was installed with the app.
 
-   ![Go to app workspace](media/service-admin-premium-monitor-capacity/settings-refresh-history.png)
+   :::image type="content" source="media/service-admin-premium-monitor-capacity/powerbi-premium-workspace-select.png" alt-text="Screenshot that shows the selection of a workspace with the Premium Capacity Metrics app.":::
 
-1. Click the **Schedule refresh** button on the dataset line.
+1. The last refresh performed is shown in the **Refreshed** column.
 
-   ![Schedule refresh button](media/service-admin-premium-monitor-capacity/schedule-refresh.png)
-
-   The last refresh is shown. Click **Refresh history** to see scheduled and on demand refreshes.
-
-   ![Last refresh](media/service-admin-premium-monitor-capacity/settings-last-refresh.png)
+   :::image type="content" source="media/service-admin-premium-monitor-capacity/powerbi-capacity-metrics-refresh.png" alt-text="Screenshot that shows the refresh time and date for the app in the Refreshed column.":::
 
 ## Monitor capacities with the app
 
