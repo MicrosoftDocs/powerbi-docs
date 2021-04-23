@@ -19,7 +19,7 @@ LocalizationGroup: Dashboards
 
 Set alerts in the Power BI service to notify you when data on a dashboard changes above or below limits you set. Alerts can only be set on tiles pinned from report visuals, and only on gauges, KPIs, and cards. 
 
-![tile, card, KPI](media/end-user-alerts/card-gauge-kpi.png)
+:::image type="content" source="media/end-user-alerts/card-gauge-kpi.png" alt-text="Screenshot showing part of a dashboard that includes a tile, a card, and a KPI.":::
 
 Alerts can be created on dashboards:
 - that you have created and saved in **My workspace**
@@ -51,32 +51,33 @@ This tutorial covers the following.
 
 If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
-1. This example uses a dashboard card tile from the Sales & Marketing sample. Open the Power BI service (app.powerbi.com), sign in, and open your **My Workspace**.    
-    ![Open My Workspace](media//end-user-alerts/power-bi-my-workspace.png)
+1. This example uses a dashboard card tile from the Sales & Marketing sample. Open the Power BI service (app.powerbi.com), sign in, and open your **My Workspace**.
+
+   :::image type="content" source="media/end-user-alerts/power-bi-my-workspace.png" alt-text="Screenshot showing the left panel of Power BI, with My workspace called out.":::
 
 2. In the bottom-left corner, select **Get data**.
 
-    ![Select Get Data](media//end-user-alerts/power-bi-get-data.png)
+   :::image type="content" source="media/end-user-alerts/power-bi-get-data.png" alt-text="Screenshot showing the Get data menu item.":::
 
 3. On the Get data page that appears, select **Samples**.
 
 4. Select the Sales and Marketing Sample, then choose **Connect**.
 
-    ![Download the Sales and Marketing sample](media//end-user-alerts/power-bi-sample.png)
+   :::image type="content" source="media/end-user-alerts/power-bi-sample.png" alt-text="Screenshot showing various samples, including the Sales amd Marketing sample.":::
 
-5. After Power BI has connected to the sample, select **Go to dashboard** from the dialog that appears.     
-    ![Open the Sales and Marketing sample](media//end-user-alerts/power-bi-go-to-dashboard.png)
+5. After Power BI has connected to the sample, select **Go to dashboard** from the dialog that appears.
+
+   :::image type="content" source="media/end-user-alerts/power-bi-go-to-dashboard.png" alt-text="Screenshot showing a message indicating that the dashboard is ready and a button labeled Go to dashboard.":::
 
 ## Add an alert to a dashboard tile
 
 1. From a dashboard gauge, KPI, or card tile, select the ellipsis.
    
-   ![card tile](media/end-user-alerts/power-bi-card.png)
+   :::image type="content" source="media/end-user-alerts/power-bi-card.png" alt-text="Screenshot of a card tile showing market share, with an ellipsis called out in the upper right corner.":::
 
 2. Select the alert icon ![Alert icon](media/end-user-alerts/power-bi-alert-icon.png), or **Manage alerts**, to add one or more alerts for the **Market share** card.
 
-   ![card tile with ellipses selected](media/end-user-alerts/power-bi-manage.png)
-
+   :::image type="content" source="media/end-user-alerts/power-bi-manage.png" alt-text="Screenshot showing the shortcut menu of the ellipsis, with Manage alerts called out.":::
    
 1. On the **Manage alerts** pane, select **+ Add alert rule**.  Ensure the slider is set to **On**, and give your alert a title. Titles help you easily recognize your alerts.
    
