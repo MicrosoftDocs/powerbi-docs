@@ -327,6 +327,8 @@
               href: service-gateway-sso-kerberos-sap-bw-gx64krb.md
         - name: "SAML-based SSO"
           href: service-gateway-sso-saml.md
+        - name: "Test single sign-on (SSO) configuration"
+          href: service-gateway-sso-test-configuration.md
       - name: "Troubleshoot the gateway"
         href: service-gateway-onprem-tshoot.md
       - name: "Troubleshoot the gateway (personal mode)"
