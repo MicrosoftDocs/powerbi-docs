@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/07/2019
+ms.date: 04/19/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to Adobe Analytics in Power BI Desktop 
@@ -16,7 +16,7 @@ In **Power BI Desktop**, you can connect to **Adobe Analytics** and use the unde
 ![Get Data from Adobe Analytics](media/desktop-connect-adobe-analytics/connect-adobe-analytics_01.png)
 
 ## Connect to Adobe Analytics data
-To connect to **Adobe Analytics** data, select **Get Data** from the **Home** ribbon in Power BI Desktop. Select **Online Services** from the categories on the left, and you see **Adobe Analytics connector**.
+To connect to **Adobe Analytics** data, select **Get Data** from the **Home** ribbon in Power BI Desktop. Select **Online Services** from the categories on the left, and you see **Adobe Analytics**.
 
 ![Get Data from Adobe Analytics](media/desktop-connect-adobe-analytics/connect-adobe-analytics_01.png)
 
