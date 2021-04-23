@@ -47,7 +47,7 @@ Follow these steps to use the connector:
 2. Select **Online Services** from the categories list on the left side of the window.
 3. Select **Microsoft Graph Security (Beta)**.
 
-    ![Get Data dialog box](media/desktop-connect-graph-security/get-data.png)
+    ![Get Data dialog box](media/desktop-connect-graph-security/graph-security-get-data.png)
     
 4. In the **Microsoft Graph Security** window, select the Microsoft Graph API version to query: **v1.0** or **beta**.
 
@@ -67,19 +67,19 @@ Follow these steps to use the connector:
     
 8. After you connect, the **Navigator** window displays the alerts, secure scores, and other entities that are available in the [Microsoft Graph Security API](/graph/security-concept-overview) for the version that you selected in step 4. Select one or more entities to import and use in Power BI Desktop. Then, select **Load** to get the result view that's shown after step 9.
 
-    ![Navigator dialog box](media/desktop-connect-graph-security/navigator-table.png )
+    ![Navigator dialog box](media/desktop-connect-graph-security/import-navigator.png )
     
 9. If you want to use an advanced query with the Microsoft Graph Security API, select **Specify custom Microsoft Graph Security URL to filter results**. Use this function to issue an [OData.Feed](./desktop-connect-odata.md) query to the Microsoft Graph Security API with the required permissions.
 
    The following example uses the `https://graph.microsoft.com/v1.0/security/alerts?$filter=Severity eq 'High'` *serviceUri*. To see how to build queries to filter, order, or retrieve the most-recent results, refer to [OData system query options](/graph/query-parameters).
 
-   ![OdataFeed example](media/desktop-connect-graph-security/odata-feed.png)
+   ![OdataFeed example](media/desktop-connect-graph-security/odata-feed-messages.png)
     
    When you select **Invoke**, the **OData.Feed** function makes a call to the API, which opens Power Query Editor. You filter and refine the set of data that you want to use. Then, you load that data into Power BI Desktop.
 
 Here's the results window for the Microsoft Graph Security entities that we queried for:
 
-   ![Results windows example](media/desktop-connect-graph-security/result.png)
+   ![Results windows example](media/desktop-connect-graph-security/result-window.png)
     
 
 Now you’re ready to use the imported data from the Microsoft Graph Security connector in Power BI Desktop. You can create graphics or reports. Or, you can interact with other data that you import from Excel workbooks, databases, or other data sources.
