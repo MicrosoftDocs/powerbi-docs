@@ -64,33 +64,25 @@ Typically, it is easier to build your visual with static data before adding Powe
 
 It's important to define the bar chart view model first, and iterate on what's exposed to your visual as you build it.
 
-In the src directory of your project, create a new file called BarChart.ts and 
+In this tutorial, you learn how to:
+> [!div class="checklist"]
 
-```typescript
-/**
- * Interface for BarCharts viewmodel.
- *
- * @interface
- * @property {BarChartDataPoint[]} dataPoints - Set of data points the visual will render.
- * @property {number} dataMax                 - Maximum data value in the set of data points.
- */
-interface BarChartViewModel {
-    dataPoints: BarChartDataPoint[];
-    dataMax: number;
-};
+> * Define the bar chart view model.
+> * Add data binding.
+> * Change the colors in the interface.
+> * Add a selection and interact with each data point.
+> * Add objects to the property pane.
+> * Package your visual.
 
-/**
- * Interface for BarChart data points.
- *
- * @interface
- * @property {number} value    - Data value for the point.
- * @property {string} category - Corresponding category of the data value.
- */
-interface BarChartDataPoint {
-    value: number;
-    category: string;
-};
-```
+>[!NOTE]
+>For the full source code of this visual, see [PowerBI visuals sample bar chart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart).
+
+## Prerequisites
+
+[!INCLUDE[Power B I tutorials prerequisites](../../includes/visual-tutorial-prerequisites.md)]
+
+## View model
+
 
 ### Use static data
 

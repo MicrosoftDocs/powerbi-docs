@@ -105,7 +105,9 @@ Power BI datasets that connect to sensitivity-labeled data in supported data sou
 
 ## Admin APIs for setting and removing labels programmatically
 
-To meet compliance requirements, organizations are often required to classify and label all sensitive data in Power BI. This task can be challenging for tenants that have large volumes of data in Power BI. To make the task easier and more effective, Power BI has admin REST APIs that admins can use to set and remove sensitivity labels on large numbers of Power BI artifacts programatically. See the [Power BI REST API documentation](/rest/api/power-bi/) for details.
+To meet compliance requirements, organizations are often required to classify and label all sensitive data in Power BI. This task can be challenging for tenants that have large volumes of data in Power BI. To make the task easier and more effective, Power BI has admin REST APIs that admins can use to set and remove sensitivity labels on large numbers of Power BI artifacts programatically. See the following:
+* [Admin - InformationProtection SetLabelsAsAdmin](/rest/api/power-bi/admin/informationprotection_setlabelsasadmin)
+* [Admin - InformationProtection RemoveLabelsAsAdmin](/rest/api/power-bi/admin/informationprotection_removelabelsasadmin)
 
 ## Sensitivity labels and protection on exported data
 
@@ -198,7 +200,9 @@ To access sensitivity labels in either of these centers, navigate to **Classific
 
 ### Power BI Desktop (preview)
 
-* Protected .pbix files can be only opened and/or published by a user who is the RMS owner of the file (the user who applied the label to the file originally) or who has [**Full control** and/or **Export** usage rights](/microsoft-365/compliance/encryption-sensitivity-labels) usage rights for the relevant label. The RMS owner has Full control and can never be locked out. [See more detail](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)
+* Protected .pbix files can be only opened by a user who has [**Full control** and/or **Export** usage rights](/microsoft-365/compliance/encryption-sensitivity-labels) for the relevant label. The user that set the label also has Full control and can never be locked out. [See more detail](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)
+
+* "Publish" or "Get data" of a protected .pbix file requires that the label on the .pbix file be in the user's [label policy](/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide). If the label isn't in the user's label policy, the Publish or Get data action will fail.
 
 * If the label applied to a .pbix file hasn’t been published to the user in either the Microsoft 365 security center or the Microsoft 365 compliance center, the user will not be able to save the file in Desktop.
 
