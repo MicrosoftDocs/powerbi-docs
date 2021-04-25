@@ -1,6 +1,6 @@
 ---
-title: Power BI visuals concepts in Power BI embedded analytics for better embedded BI insights
-description: The article describes how visuals integrate with Power BI and how a user can interact with a visual in Power BI. Enable better embedded BI insights using Power BI embedded analytics.
+title: Power BI visuals concepts
+description: The article describes how visuals integrate with Power BI and how a user can interact with a visual in Power BI.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin

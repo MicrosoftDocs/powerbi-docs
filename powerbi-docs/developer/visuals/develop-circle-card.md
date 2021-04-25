@@ -1,6 +1,6 @@
 ---
-title: Learn how to develop your own Power BI visual using the circle card visual as an example in Power BI embedded analytics for better embedded BI insights
-description: This tutorial explains how you can develop a Power BI visual. Enable better embedded BI insights using Power BI embedded analytics.
+title: Learn how to develop your own Power BI visual using the circle card visual as an example
+description: This tutorial explains how you can develop a Power BI visual.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""

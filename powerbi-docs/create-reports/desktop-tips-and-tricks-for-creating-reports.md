@@ -4,7 +4,7 @@ description: Learn best practices for building reports in the Power BI service a
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: willthom
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
