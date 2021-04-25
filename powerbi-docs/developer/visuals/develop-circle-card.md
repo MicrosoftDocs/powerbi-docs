@@ -391,7 +391,7 @@ Modify the **capabilities.json** file to define the data role and data view mapp
 
 * **Defining the data view mapping**
 
-    Define a filed called *measure* in the *dataViewMappings* array. This field can be passed to the data role.
+    Define a field called *measure* in the *dataViewMappings* array. This field can be passed to the data role.
 
     1. Open the **capabilities.json** file in VS Code.
 
