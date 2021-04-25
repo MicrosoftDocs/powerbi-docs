@@ -4,7 +4,7 @@ description: Learn to set alerts to notify you when data in your dashboards chan
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-featuredvideoid: JbL2-HJ8clE
+ms.custom: video-JbL2-HJ8clE
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to

@@ -4,7 +4,7 @@ description: If someone sends you a link to a dashboard or a report, but doesn't
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: lukaszp
-featuredvideoid: 0tUwn8DHo3s
+ms.custom: video-0tUwn8DHo3s
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to

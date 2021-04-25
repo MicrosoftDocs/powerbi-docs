@@ -4,7 +4,7 @@ description: Pin a tile to a Power BI dashboard from a report.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-featuredvideoid: lJKgWnvl6bQ
+ms.custom: video-lJKgWnvl6bQ
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
