@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 04/08/2021
+ms.date: 04/25/2021
 ---
 
 # Add a display warning icon to your visual
@@ -91,7 +91,7 @@ for (let i = 0, len = Math.max(category.values.length, dataValue.values.length);
 
 ## Considerations
 
-* If an error occurs before the display warning icon condition is met, this error will be displayed instead of the display warning icon error.
+* If an error occurs while loading data, before the visual's code is run and the display warning icon condition is met, it will be displayed instead of the display warning icon error. Errors or warnings that are not caused by the visual, for example the ‘too much data’ error which is derived from the Power BI service, get propagated prior to your visual’s calls and take precedence over errors that originate from your visual's code.
 
 * The display warning is cleared during each rendering of the visual, for example, when new data is dragged into the visual. The visual's `update()` method is invoked after the visual is rendered. Therefore, if the visual's warning is raised based on a condition that's checked in the update method, each time the visual is rendered, if the condition is met the warning will be displayed again.
 
