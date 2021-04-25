@@ -27,11 +27,11 @@ To import a Power BI visual directly from AppSource, follow these steps:
 1. Open your report in [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or [Power BI service](https://app.powerbi.com).
 2. Select the ellipsis from the visualizations pane.
 
- :::image type="content" source="media/import-visual/ellipsis.png" alt-text="Screenshot of visualization pane ellipsis":::
+   :::image type="content" source="media/import-visual/ellipsis.png" alt-text="Screenshot of visualization pane ellipsis.":::
 
 3. Select **Get more visuals** from the menu.
 
-  :::image type="content" source="media/import-visual/get-visuals.png" alt-text="Screenshot of get more visuals.":::
+   :::image type="content" source="media/import-visual/get-visuals.png" alt-text="Screenshot of get more visuals.":::
 
 4. Navigate to the visual you want to import and select **Add**.
   
@@ -52,11 +52,11 @@ To import a Power BI visual (*.pbiviz file) that has been downloaded to your loc
 1. Open your report in [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or [Power BI service](https://app.powerbi.com).
 2. Select the ellipsis from the visualizations pane.
 
- :::image type="content" source="media/import-visual/ellipsis.png" alt-text="Screenshot of visualization pane ellipsis":::
+   :::image type="content" source="media/import-visual/ellipsis.png" alt-text="Screenshot of visualization pane ellipsis.":::
 
 3. Select **Import a  visual from a file** from the menu.
 
-  :::image type="content" source="media/import-visual/import-from-file.png" alt-text="Screenshot of import from a file.":::
+   :::image type="content" source="media/import-visual/import-from-file.png" alt-text="Screenshot of import from a file.":::
 
 4. If you get a message cautioning you about importing custom files, select **Import** if you trust the source of the file.
 
