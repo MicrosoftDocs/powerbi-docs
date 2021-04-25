@@ -41,7 +41,7 @@ When data protection is enabled on your tenant, sensitivity labels appear in the
 
 The following image illustrates these steps on a report
 
-![Set sensitivity labels](media/service-security-apply-data-sensitivity-labels/apply-data-sensitivity-labels-02.png)
+![Set sensitivity labels](media/service-security-apply-data-sensitivity-labels/downstream-inheritance-user-consent-checkbox.png)
 
 **To apply or change a sensitivity label on a dataset or dataflow**
 
