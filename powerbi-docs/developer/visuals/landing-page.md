@@ -10,7 +10,7 @@ ms.topic: reference
 ms.date: 06/18/2019
 ---
 
-# Add a landing page to your Power BI visuals
+# Add a landing page to your Power BI visual
 
 A Power BI visual’s landing page enables you to display information in your Power BI visual card, before it’s loaded with data. Here are a few examples of what a visual’s landing page can display:
 
