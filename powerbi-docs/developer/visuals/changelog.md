@@ -1,6 +1,6 @@
 ---
-title: Power BI visuals API changelog in Power BI embedded analytics for better embedded BI insights
-description: This article describes main changes in different versions of Power BI visuals API. Enable better embedded BI insights using Power BI embedded analytics.
+title: Power BI visuals API changelog 
+description: This article describes main changes in different versions of Power BI visuals API.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins

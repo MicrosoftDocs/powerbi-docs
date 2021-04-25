@@ -1,6 +1,6 @@
 ---
-title: Build a bar chart in Power BI embedded analytics for better embedded BI insights
-description: Use this step-by-step guide to build a simple Power BI bar chart visual with code. Enable better embedded BI insights using Power BI embedded analytics.
+title: Build a bar chart in Power BI 
+description: Use this step-by-step guide to build a simple Power BI bar chart visual with code. 
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -60,7 +60,8 @@ Before you start developing your Power BI visual, verify that you have everythin
 
 ### Set up a view model with static data
 
-Typically, it is easier to build your visual with static data before adding PowerBIs data binding.
+Typically, it is easier to build your visual with static data before adding PowerBIs data binding. See commit for what was added at this step.
+
 It's important to define the bar chart view model first, and iterate on what's exposed to your visual as you build it.
 
 In the src directory of your project, create a new file called BarChart.ts and 

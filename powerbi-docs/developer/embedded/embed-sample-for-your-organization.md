@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
-ms.custom: seodec18
+ms.custom: ''
 ms.date: 12/17/2020
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
