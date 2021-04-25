@@ -7,15 +7,63 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 05/01/2020
+ms.date: 04/25/2021
 ---
 
-# Build a bar chart
+# Tutorial: Build a bar chart
 
-This article is a step-by-step guide for building a sample Power BI bar chart visual with code. You can get the complete code example at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart).
+As a developer you can create your own Power BI visuals. These visuals can be used by you, your organization or by third parties.
 
-## View model
+This article is a step-by-step guide for building a sample Power BI bar chart visual with code.
+
+In this tutorial, you learn how to:
+
+> [!div class="checklist"]
+>
+> * Define the bar chart view model.
+> * Add data binding
+> * Change the colors of the interface.
+> * Add a selection and interact with each data point.
+> * Add objects to the property pane.
+> * Package your visual.
+
+> [!NOTE]
+> For the full source code of this visual, see[PowerBI visuals sample bar chart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart).
+
+## Set up your environment
+
+Before you can start developing your Power BI visual, set up your environment for developing a Power BI visual.
+
+### Prerequisites
+
+Before you start developing your Power BI visual, verify that you have everything listed in this section.
+
+<!---
+[!INCLUDE[Power BI tutorials prerequisites](../../includes/visual-tutorial-prerequisites.md)]
+-->
+
+* A **Power BI Pro** or **Premium Per User (PPU)** account. If you don't have one, [sign up for a free trial](https://powerbi.microsoft.com/pricing/).
+
+* [Visual Studio Code (VS Code)](https://www.visualstudio.com/). VS Code is an ideal Integrated Development Environment (IDE) for developing JavaScript and TypeScript applications.
+
+* [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell) version 4 or later (for Windows). Or [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) (for OSX).
+
+### Power BI developer environment
+
+1. [Set up your environment for developing a Power BI visual](../developer/visuals/environment-setup.md).
+
+2. From the folder that contains your Power BI visual, run `npm install`. This installs all necessary dependencies and  connects the visual to Power BI.
+
+3. Start the dev app by running `pbiviz start` from the Powershell.
+
+## Creating a bar chart visual
+
+### Set up a view model with static data
+
+Typically, it is easier to build your visual with static data before adding PowerBIs data binding.
 It's important to define the bar chart view model first, and iterate on what's exposed to your visual as you build it.
+
+In the src directory of your project, create a new file called BarChart.ts and 
 
 ```typescript
 /**
@@ -45,7 +93,7 @@ interface BarChartDataPoint {
 
 ### Use static data
 
-Using static data is a great way to test your visual without data binding. Your view model won't change, even after you add data binding in a later step.
+Using static data is a great way to test your visual without data binding. Your view model won't change, even after you add data binding later.
 
 ```typescript
 let testData: BarChartDataPoint[] = [
@@ -357,6 +405,14 @@ export function getValue<T>(objects: DataViewObjects, objectName: string, proper
     return defaultValue;
 }
 ```
+
+
+
+    >[!NOTE]
+    >If the visual displays a connection error message, open a new tab in your browser, navigate to `https://localhost:8080/assets/status`, and authorize your browser to use this address.
+    >
+    >![Screenshot of the new visual displaying a connection error.](media/visual-tutorial-view/connection-error.png)
+
 
 See [objectEnumerationUtility.ts](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/objectEnumerationUtility.ts) for source code.
 
