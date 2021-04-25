@@ -1,6 +1,6 @@
 ---
-title: Build a bar chart in Power BI embedded analytics for better embedded BI insights
-description: Use this step-by-step guide to build a simple Power BI bar chart visual with code. Enable better embedded BI insights using Power BI embedded analytics.
+title: Build a bar chart in Power BI 
+description: Use this step-by-step guide to build a simple Power BI bar chart visual with code. 
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -61,35 +61,28 @@ Before you start developing your Power BI visual, verify that you have everythin
 ### Set up a view model with static data
 
 Typically, it is easier to build your visual with static data before adding PowerBIs data binding.
-It's important to define the bar chart view model first, and iterate on what's exposed to your visual as you build it.
+=======
+[!INCLUDE[Power B I visuals tutorials overview](../../includes/visual-tutorial-overview.md)]
+This article is a step-by-step guide for building a sample Power BI bar chart visual with code. 
 
-In the src directory of your project, create a new file called BarChart.ts and 
+In this tutorial, you learn how to:
+> [!div class="checklist"]
+> * Define the bar chart view model.
+> * Add data binding.
+> * Change the colors in the interface.
+> * Add a selection and interact with each data point.
+> * Add objects to the property pane.
+> * Package your visual.
 
-```typescript
-/**
- * Interface for BarCharts viewmodel.
- *
- * @interface
- * @property {BarChartDataPoint[]} dataPoints - Set of data points the visual will render.
- * @property {number} dataMax                 - Maximum data value in the set of data points.
- */
-interface BarChartViewModel {
-    dataPoints: BarChartDataPoint[];
-    dataMax: number;
-};
+>[!NOTE]
+>For the full source code of this visual, see [PowerBI visuals sample bar chart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart).
 
-/**
- * Interface for BarChart data points.
- *
- * @interface
- * @property {number} value    - Data value for the point.
- * @property {string} category - Corresponding category of the data value.
- */
-interface BarChartDataPoint {
-    value: number;
-    category: string;
-};
-```
+## Prerequisites
+
+[!INCLUDE[Power B I tutorials prerequisites](../../includes/visual-tutorial-prerequisites.md)]
+
+## View model
+
 
 ### Use static data
 

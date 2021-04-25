@@ -1,6 +1,6 @@
 ---
-title:  Mobile development in Power BI embedded analytics for better embedded BI insights
-description:  How to create mobile-friendly Power BI visuals. Enable better embedded BI insights using Power BI embedded analytics.
+title:  Mobile development in Power BI
+description:  How to create mobile-friendly Power BI visuals.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins

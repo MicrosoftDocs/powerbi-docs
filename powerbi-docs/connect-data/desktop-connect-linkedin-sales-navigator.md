@@ -5,6 +5,7 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
+ms.custom: video-ZqhmaiORLw0
 ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/04/2021

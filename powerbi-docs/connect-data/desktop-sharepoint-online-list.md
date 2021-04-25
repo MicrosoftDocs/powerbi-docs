@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/10/2020
+ms.custom: video-OZO3x2NF8Ak
 LocalizationGroup: Visualizations
 ---
 # Create a report on a SharePoint List
