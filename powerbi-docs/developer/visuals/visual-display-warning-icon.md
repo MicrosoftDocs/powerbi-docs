@@ -19,7 +19,7 @@ In a Power BI visual, a display warning icon can notify the user of a possible p
 
 * A pie chart visual can display a warning icon when it's displaying negative values that are mixed with positive ones.
 
-* A cartesian chart can display a warning icon when infinity values are dropped.
+* A cartesian chart can display a warning icon when infinity values are calculated. For example, if **Y** is zero, when dividing **X** by **Y** the result is infinity.
 
 When the icon appears, the user can hover over it to see the title of the warning message.
 
