@@ -43,7 +43,7 @@ To create a landing page, certain capabilities have to be set in the `capabiliti
     }
 ```
 
-###
+### Example of a landing page
 
 The following code shows a sample landing page for a bar chart visual.
 
