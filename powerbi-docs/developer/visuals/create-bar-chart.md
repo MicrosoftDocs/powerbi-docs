@@ -46,7 +46,7 @@ Before you start developing your Power BI visual, verify that you have everythin
 
 ### Power BI developer environment
 
-1. [Set up your environment for developing a Power BI visual](../developer/visuals/environment-setup.md).
+1. [Set up your environment for developing a Power BI visual](environment-setup.md).
 
 2. From the folder that contains your Power BI visual, run `npm install`. This installs all necessary dependencies and  connects the visual to Power BI.
 
@@ -412,13 +412,10 @@ export function getValue<T>(objects: DataViewObjects, objectName: string, proper
 }
 ```
 
-
-
-    >[!NOTE]
-    >If the visual displays a connection error message, open a new tab in your browser, navigate to `https://localhost:8080/assets/status`, and authorize your browser to use this address.
-    >
-    >![Screenshot of the new visual displaying a connection error.](media/visual-tutorial-view/connection-error.png)
-
+>[!NOTE]
+>If the visual displays a connection error message, open a new tab in your browser, navigate to `https://localhost:8080/assets/status`, and authorize your browser to use this address.
+>
+>![Screenshot of the new visual displaying a connection error.](media/visual-tutorial-view/connection-error.png)
 
 See [objectEnumerationUtility.ts](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/objectEnumerationUtility.ts) for source code.
 
