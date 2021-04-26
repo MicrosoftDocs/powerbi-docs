@@ -58,6 +58,8 @@
       href: environment-setup.md
     - name: "Import a custom visual"
       href: import-visual.md  
+    - name: "Create a dialog box"
+      href: create-display-dialog-box.md      
     - name: "Create R-powered visuals"
       href: create-r-based-power-bi-desktop.md
     - name: "Test your Power BI visual"  

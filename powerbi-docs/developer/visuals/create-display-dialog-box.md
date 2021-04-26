@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 04/13/2021
+ms.date: 04/26/2021
 ---
 
 # Create a dialog box for your Power BI visual
@@ -106,7 +106,7 @@ Each dialog box implementation file should include the following components:
 
 #### Create a dialog box class
 
-Create a dialog box class for your dialog box.
+Create a dialog box class for your dialog box. The `initialState` parameter in `openModalDialog`, is passed to the dialog contractor upon its creation. Use the `initialState` object to pass parameters to the dialog box, in order to affect its behavior or appearance.
 
 ```javascript
 import DialogConstructorOptions = powerbi.extensibility.visual.DialogConstructorOptions;
@@ -172,6 +172,8 @@ You can also program the dialog box to automatically close, by calling the `IDia
 * The following features don't support the Power BI visuals dialog box:
 
     * Embedded analytics
+
+    * Publish to web
 
     * Dashboards
 
