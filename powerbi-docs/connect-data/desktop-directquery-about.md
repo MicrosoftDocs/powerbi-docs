@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 04/12/2021
+ms.date: 04/21/2021
 LocalizationGroup: Connect to data
 ---
 # About using DirectQuery in Power BI
@@ -223,7 +223,7 @@ All sources are supported from Power BI Desktop. Some sources are also available
 Only two of the DirectQuery enabled-sources are available directly in the service:
 
 * Spark
-* Azure SQL Data Warehouse
+* Azure Synapse Analytics (formerly SQL Data Warehouse)
 
 However, we recommend that any use of DirectQuery over those two sources start within Power BI Desktop. The reason is that when the connection is initially made in the Power BI service, many key limitations will apply. While the start point was easy, starting in the Power BI service, there are limitations on enhancing the resulting report any further. For example, it's not possible then to create any calculations, or use many analytical features, or even refresh the metadata to reflect any changes to the underlying schema.
 
@@ -351,7 +351,7 @@ For some DirectQuery sources, this log includes all queries sent to the underlyi
 
 * SQL Server
 * Azure SQL Database
-* Azure SQL Data warehouse
+* Azure Synapse Analytics (formerly SQL Data Warehouse)
 * Oracle
 * Teradata
 * SAP HANA

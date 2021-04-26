@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 11/03/2020
-ms.custom: seodec18
+ms.custom: ''
 LocalizationGroup: Gateways
 ---
 

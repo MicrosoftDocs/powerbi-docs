@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 3/10/2021
+ms.date: 04/21/2021
 LocalizationGroup: Connect to data
 ---
 
@@ -80,7 +80,7 @@ The following three points should be taken into consideration when using DirectQ
 ## Publish to the Power BI service
 Reports created using DirectQuery can be published to the Power BI service.
 
-If the used data source doesn't need the **On-premises data gateway** (**Azure SQL Database**, **Azure SQL Data Warehouse**, or **Redshift**), you must provide credentials before the Power BI service shows the published report. Follow these instructions to provide the credentials:
+If the used data source doesn't need the **On-premises data gateway** (**Azure SQL Database**, **Azure Synapse Analytics (formerly SQL Data Warehouse)**, or **Redshift**), you must provide credentials before the Power BI service shows the published report. Follow these instructions to provide the credentials:
 
 1. Sign in to [Power BI](https://www.powerbi.com/).
 2. In the Power BI service, select the **Settings** gear icon and choose the **Settings** menu item.
@@ -91,7 +91,7 @@ If the used data source doesn't need the **On-premises data gateway** (**Azure S
 
 4. Add the credentials. Otherwise, an error occurs when you open a published report or explore a dataset that's created with a DirectQuery connection.
 
-To make a data connection for data sources other than **Azure SQL Database**, **Azure SQL Data Warehouse**, **Redshift**, or **Snowflake Data Warehouse** that use DirectQuery, install an **On-premises data gateway** and register the data source. For more information, see [What is an on-premises data gateway?](service-gateway-onprem.md)
+To make a data connection for data sources other than **Azure SQL Database**, **Azure Synapse Analytics (formerly SQL Data Warehouse)**, **Redshift**, or **Snowflake Data Warehouse** that use DirectQuery, install an **On-premises data gateway** and register the data source. For more information, see [What is an on-premises data gateway?](service-gateway-onprem.md)
 
 ## Next steps
 For more information about DirectQuery, check out the following resources:

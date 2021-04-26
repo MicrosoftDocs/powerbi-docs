@@ -1,6 +1,6 @@
 ---
-title: Embed content in your Power BI embedded analytics application enabling better embedded BI insights for your customers
-description: Learn how to embed, a report, dashboard, or tile into a Power BI embedded analytics sample. Enable better embedded BI insights using Power BI embedded analytics.
+title: Embed content in your Power BI embedded analytics application
+description: Learn how to embed, a report, dashboard, or tile into a Power BI embedded analytics sample.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""

@@ -4,7 +4,7 @@ description: 'Third-party service: Google Analytics connector for Power BI Deskt
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to

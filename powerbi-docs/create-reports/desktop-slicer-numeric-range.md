@@ -4,7 +4,7 @@ description: Learn how to use a slicer for constraining to numeric ranges in Pow
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-featuredvideoid: zIZPA0UrJyA
+ms.custom: video-zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to

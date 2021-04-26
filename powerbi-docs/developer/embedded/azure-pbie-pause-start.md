@@ -1,6 +1,6 @@
 ---
-title: Pause and start your Power BI Embedded capacity in the Azure portal for your Power BI embedded analytics embedded BI solution
-description: This article walks through how to pause and start a Power BI Embedded capacity in Microsoft Azure, when using a Power BI embedded analytics embedded BI solution.
+title: Pause and start your Power BI Embedded capacity in the Azure portal
+description: This article walks through how to pause and start a Power BI Embedded capacity in Microsoft Azure.
 author: KesemSharabi
 ms.author: kesharab
 services: power-bi-embedded
