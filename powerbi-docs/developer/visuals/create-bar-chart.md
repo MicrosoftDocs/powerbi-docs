@@ -59,9 +59,9 @@ Creating a bar chart visual involves the following steps:
 * Defining the bar chart view model.
 * Adding data binding.
 * Customizing your visual 
-    * Change the colors in the interface.
-    * Add a selection and interact with each data point.
-    * Add objects to the property pane.
+    - Change the colors in the interface.
+    - Add a selection and interact with each data point.
+    - Add objects to the property pane.
 * Packaging your visual.
 
 >[!NOTE]
@@ -69,7 +69,7 @@ Creating a bar chart visual involves the following steps:
 
 ### Defining a view model with static data
 
-It's important to define the bar chart view model first, and iterate on what's exposed to your visual as you build it.
+It's important to define the bar chart view model first, and iterate on what's exposed to your visual as you build it. Define the chart by creating a file in the src directory with the following.
 
 ```typescript
 /**
@@ -97,7 +97,9 @@ interface BarChartDataPoint {
 };
 ```
 
-Typically, it is easiest to build your visual with static data before adding PowerBIs data binding. Using static data allows you to test your visual without databinding. Your view model will not change even when databinding is added. We will add databinding to your visual later.
+Typically, it is easiest to build your visual with static data before adding Power BI's data binding. Using static data allows you to test your visual without databinding. Your view model will not change even when databinding is added. We will add databinding to your visual later.
+
+Add the following static data to your file:
 
 ```typescript
 let testData: BarChartDataPoint[] = [
@@ -129,7 +131,7 @@ let viewModel: BarChartViewModel = {
 ```
 
 ### Add data binding 
-You add data binding by defining your visual capabilities in *capabilities.json*. The sample code already has a schema for you to use.
+You add data binding by defining your visual capabilities in `capabilities.json`. The sample code already has a schema for you to use.
 
 Data binding acts on a **Field** well in Power BI.
 
