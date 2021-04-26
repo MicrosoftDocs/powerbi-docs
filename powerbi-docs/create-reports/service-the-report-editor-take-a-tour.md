@@ -4,7 +4,7 @@ description: In Power BI Desktop and in the Power BI service, the report editor 
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-featuredvideoid: IkJda4O7oGs
+ms.custom: video-IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual

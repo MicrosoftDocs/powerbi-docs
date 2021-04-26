@@ -1,5 +1,5 @@
 ---
-title: Export Power BI embedded analytics paginated reports API for better embedded BI insights
+title: Export Power BI embedded analytics paginated reports API
 description: Learn how to export an embedded Power BI paginated report.
 author: KesemSharabi
 ms.author: kesharab
@@ -154,7 +154,7 @@ Here is an example for supplying an effective user name with an access token.
 ```
 
 ## PPU concurrent requests
-The `exportToFile` API allows one request in a five minute window when using [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md). Multiple (greater than one) requests within a five minute window will result in a *Too Many Requests* (429) error.
+The `exportToFile` API allows one request in a five minute window when using [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml). Multiple (greater than one) requests within a five minute window will result in a *Too Many Requests* (429) error.
 
 ## Code examples
 

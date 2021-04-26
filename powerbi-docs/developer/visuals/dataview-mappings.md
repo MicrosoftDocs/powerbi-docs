@@ -1,6 +1,6 @@
 ---
-title: Understand data view mapping in Power BI visuals in Power BI embedded analytics for better embedded BI insights
-description: This article describes how Power BI transforms data before passing it into visuals. Enable better embedded BI insights using Power BI embedded analytics.
+title: Understand data view mapping in Power BI visuals
+description: This article describes how Power BI transforms data before passing it into visuals.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -930,4 +930,4 @@ You can apply the data reduction algorithm to the `rows` and `columns` sections 
 
 ## Next steps
 
-Read how to [add Drill-Down support for data view mappings in Power BI visuals](drill-down-support.md).
+Read how to [add drill-down support for data view mappings in Power BI visuals](drill-down-support.md).

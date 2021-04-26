@@ -1,6 +1,6 @@
 ---
-title: Add a landing page to your Power BI visuals in Power BI embedded analytics for better embedded BI insights
-description: This article describes how to add landing page to Power BI visuals. Enable better embedded BI insights using Power BI embedded analytics.
+title: Add a landing page to your Power BI visuals
+description: This article describes how to add landing page to Power BI visuals.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -10,9 +10,42 @@ ms.topic: reference
 ms.date: 06/18/2019
 ---
 
-# Add a landing page to your Power BI visuals
+# Add a landing page to your Power BI visual
 
-With API 2.3.0, you can add a landing page to your Power BI visuals. To do so, add `supportsLandingPage` to the capabilities, and set it to true. This action initializes and updates your visual before you add data to it. Because the visual no longer shows a watermark, you can design your own landing page to be displayed in the visual as long as it has no data.
+A Power BI visual’s landing page enables you to display information in your Power BI visual card, before it’s loaded with data. Here are a few examples of what a visual’s landing page can display:
+
+* Text that explains how to use the visual
+* A link to your website
+* A link to a video
+
+An example of a landing page is shown in the following image:
+
+![landing page screenshot](media/landing-page/app-landing-page.png)
+
+This article explains how to design a landing page for your visual. The landing page is displayed whenever the visual has no data in it.
+
+>[!NOTE]
+>Designing a Power BI visual landing page is supported from API 2.3.0. To find out which version you’re using, Run the `pbiviz -V` command.
+
+## Creating a landing page
+
+### Setting capabilities
+
+To create a landing page, certain capabilities have to be set in the `capabilities.json` file.
+
+* For the landing page to work, enable `supportsLandingPage`.
+* For the landing page to be displayed in view mode or for the visual to be interactive even when in [no data-roles mode](no-dataroles-support.md), enable `supportsEmptyDataView`.
+
+```json
+    {
+        "supportsLandingPage": true,
+        "supportsEmptyDataView": true,
+    }
+```
+
+### Example of a visual with a landing page
+
+The following code shows how a landing page can be added to bar chart visual.
 
 ```typescript
 export class BarChart implements IVisual {
@@ -51,6 +84,7 @@ export class BarChart implements IVisual {
     }
 ```
 
-An example landing page is shown in the following image:
+## Next steps
 
-![landing page screenshot](media/landing-page/app-landing-page.png)
+>[!div class="nextstepaction"]
+>[Formatting utils](utils-formatting.md)

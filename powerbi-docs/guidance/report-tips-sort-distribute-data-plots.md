@@ -4,7 +4,7 @@ description: Nine tips to sort and distribute data plots in Power BI report visu
 author: peter-myers
 ms.author: kfollis
 ms.reviewer: asaxton
-featuredvideoid: BnhA4qa-9Jk
+ms.custom: video-BnhA4qa-9Jk
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual

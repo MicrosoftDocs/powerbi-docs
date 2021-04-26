@@ -1,6 +1,6 @@
 ---
-title: Tooltips in Power BI visuals in Power BI embedded analytics for better embedded BI insights
-description: This article discusses how you can display tooltips in Power BI visuals. Enable better embedded BI insights using Power BI embedded analytics.
+title: Tooltips in Power BI visuals
+description: This article discusses how you can display tooltips in Power BI visuals.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
