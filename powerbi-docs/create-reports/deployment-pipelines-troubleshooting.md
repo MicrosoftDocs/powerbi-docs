@@ -159,7 +159,7 @@ If one of the rule options is greyed out, it could be because of the reasons lis
 
 * **Parameters rules** - There are no parameters a rule can be configured for.
 
-### Why am I getting the continue the deployment message?
+### Why am I getting the *continue the deployment* message?
 
 Source stage schema breaking changes, such as replacing a column type from an integer to a string, cause data loss in the target dataset after deployment.
 
