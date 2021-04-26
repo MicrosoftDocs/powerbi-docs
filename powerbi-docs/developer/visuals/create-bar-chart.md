@@ -77,13 +77,6 @@ In this tutorial, you learn how to:
 >[!NOTE]
 >For the full source code of this visual, see [PowerBI visuals sample bar chart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart).
 
-## Prerequisites
-
-[!INCLUDE[Power B I tutorials prerequisites](../../includes/visual-tutorial-prerequisites.md)]
-
-## View model
-
-
 ### Use static data
 
 Using static data is a great way to test your visual without data binding. Your view model won't change, even after you add data binding later.
