@@ -56,12 +56,13 @@ Before you start developing your Power BI visual, verify that you have everythin
 
 Creating a bar chart visual involves the following steps:
 
-> * Defining the bar chart view model.
-> * Adding data binding.
-> * Change the colors in the interface.
-> * Add a selection and interact with each data point.
-> * Add objects to the property pane.
-> * Package your visual.
+* Defining the bar chart view model.
+* Adding data binding.
+* Customizing your visual 
+    * Change the colors in the interface.
+    * Add a selection and interact with each data point.
+    * Add objects to the property pane.
+* Packaging your visual.
 
 >[!NOTE]
 >For the full source code of this visual, see [PowerBI visuals sample bar chart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart).
@@ -70,8 +71,33 @@ Creating a bar chart visual involves the following steps:
 
 It's important to define the bar chart view model first, and iterate on what's exposed to your visual as you build it.
 
-Typically, it is easier to build your visual with static data before adding Power BI's data binding.
-Using static data is a great way to test your visual without data binding. Your view model won't change, even after you add data binding later.
+```typescript
+/**
+ * Interface for BarCharts viewmodel.
+ *
+ * @interface
+ * @property {BarChartDataPoint[]} dataPoints - Set of data points the visual will render.
+ * @property {number} dataMax                 - Maximum data value in the set of data points.
+ */
+interface BarChartViewModel {
+    dataPoints: BarChartDataPoint[];
+    dataMax: number;
+};
+
+/**
+ * Interface for BarChart data points.
+ *
+ * @interface
+ * @property {number} value    - Data value for point.
+ * @property {string} category - Coresponding category of data value.
+ */
+interface BarChartDataPoint {
+    value: number;
+    category: string;
+};
+```
+
+Typically, it is easiest to build your visual with static data before adding PowerBIs data binding. Using static data allows you to test your visual without databinding. Your view model will not change even when databinding is added. We will add databinding to your visual later.
 
 ```typescript
 let testData: BarChartDataPoint[] = [
@@ -102,7 +128,7 @@ let viewModel: BarChartViewModel = {
 };
 ```
 
-### Add  data binding 
+### Add data binding 
 You add data binding by defining your visual capabilities in *capabilities.json*. The sample code already has a schema for you to use.
 
 Data binding acts on a **Field** well in Power BI.
