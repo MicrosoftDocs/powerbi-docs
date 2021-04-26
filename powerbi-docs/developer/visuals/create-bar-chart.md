@@ -415,7 +415,7 @@ export function getValue<T>(objects: DataViewObjects, objectName: string, proper
 >[!NOTE]
 >If the visual displays a connection error message, open a new tab in your browser, navigate to `https://localhost:8080/assets/status`, and authorize your browser to use this address.
 >
->![Screenshot of the new visual displaying a connection error.](media/visual-tutorial-view/connection-error.png)
+>![Screenshot of the new visual displaying a connection error.](../../includes/media/visual-tutorial-view/connection-error.png)
 
 See [objectEnumerationUtility.ts](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/objectEnumerationUtility.ts) for source code.
 
