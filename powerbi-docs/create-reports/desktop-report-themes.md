@@ -496,7 +496,9 @@ The tables in this section define visual names (**visualName**), card names (**c
 
 | visualName values |
 | --- |
+| actionButton |
 | areaChart |
+| azureMap |
 | barChart |
 | basicShape |
 | card |
@@ -504,13 +506,16 @@ The tables in this section define visual names (**visualName**), card names (**c
 | clusteredColumnChart |
 | columnChart |
 | comboChart |
+| decompositionTreeVisual |
 | donutChart |
+| esriVisual |
 | filledMap |
 | funnel |
 | gauge |
 | hundredPercentStackedBarChart |
 | hundredPercentStackedColumnChart |
 | image |
+| keyDriversVisual |
 | kpi |
 | lineChart |
 | lineClusteredColumnComboChart |
@@ -519,12 +524,15 @@ The tables in this section define visual names (**visualName**), card names (**c
 | multiRowCard |
 | pieChart |
 | pivotTable |
+| qnaVisual |
 | ribbonChart |
 | scatterChart |
+| shape |
 | shapeMap |
 | slicer |
 | stackedAreaChart |
 | tableEx |
+| textbox |
 | treemap |
 | waterfallChart |
 
