@@ -1,6 +1,6 @@
 ---
-title: What can I do with the Power BI API  in Power BI embedded analytics for better embedded BI insights
-description: What can I do with the Power BI API. Enable better embedded BI insights using Power BI embedded analytics.
+title: What can I do with the Power BI API
+description: What can I do with the Power BI API.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
