@@ -38,10 +38,6 @@ Before you can start developing your Power BI visual, set up your environment fo
 
 Before you start developing your Power BI visual, verify that you have everything listed in this section.
 
-<!---
-[!INCLUDE[Power BI tutorials prerequisites](../../includes/visual-tutorial-prerequisites.md)]
--->
-
 * A **Power BI Pro** or **Premium Per User (PPU)** account. If you don't have one, [sign up for a free trial](https://powerbi.microsoft.com/pricing/).
 
 * [Visual Studio Code (VS Code)](https://www.visualstudio.com/). VS Code is an ideal Integrated Development Environment (IDE) for developing JavaScript and TypeScript applications.
@@ -58,17 +54,10 @@ Before you start developing your Power BI visual, verify that you have everythin
 
 ## Creating a bar chart visual
 
-### Set up a view model with static data
+Creating a bar chart visual involves the following steps:
 
-Typically, it is easier to build your visual with static data before adding PowerBIs data binding. See commit for what was added at this step.
-
-It's important to define the bar chart view model first, and iterate on what's exposed to your visual as you build it.
-
-In this tutorial, you learn how to:
-> [!div class="checklist"]
-
-> * Define the bar chart view model.
-> * Add data binding.
+> * Defining the bar chart view model.
+> * Adding data binding.
 > * Change the colors in the interface.
 > * Add a selection and interact with each data point.
 > * Add objects to the property pane.
@@ -77,8 +66,11 @@ In this tutorial, you learn how to:
 >[!NOTE]
 >For the full source code of this visual, see [PowerBI visuals sample bar chart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart).
 
-### Use static data
+### Defining a view model with static data
 
+It's important to define the bar chart view model first, and iterate on what's exposed to your visual as you build it.
+
+Typically, it is easier to build your visual with static data before adding Power BI's data binding.
 Using static data is a great way to test your visual without data binding. Your view model won't change, even after you add data binding later.
 
 ```typescript
@@ -110,7 +102,7 @@ let viewModel: BarChartViewModel = {
 };
 ```
 
-## Data binding 
+### Add  data binding 
 You add data binding by defining your visual capabilities in *capabilities.json*. The sample code already has a schema for you to use.
 
 Data binding acts on a **Field** well in Power BI.
@@ -621,8 +613,9 @@ pbiviz package
 This command creates a *pbiviz* file in the *dist/* directory of your visual project, and overwrites any *pbiviz* file from previous package operations.
 
 ## Next steps
-You can add the following abilities to your visual:
+
+You can add the following features to your visual:
 * [Add a context menu to a visual](./context-menu.md)
-* [Landing page](./landing-page.md)
+* [Add a landing page to a visual](./landing-page.md)
 * [Launch URL](./launch-url.md)
 * [Locale support](./localization.md)
