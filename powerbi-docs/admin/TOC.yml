@@ -60,8 +60,8 @@
         href: service-security-sensitivity-label-downstream-inheritance.md
       - name: Sensitivity label inheritance from data sources (preview)
         href: service-security-sensitivity-label-inheritance-from-data-sources.md
-      - name: Sensitivity label downstream inheritance (preview)
-        href: service-security-sensitivity-label-downstream-inheritance.md
+      - name: Sensitivity label change enforcement
+        href: service-security-sensitivity-label-change-enforcement.md
   - name: How to
     items: 
     - name: "Licensing and sign-up"
