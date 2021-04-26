@@ -165,7 +165,7 @@ Source stage schema breaking changes, such as replacing a column type from an in
 
 During deployment, the metadata in the source dataset is checked against the target metadata. Schema breaking changes will cause the deployment to stop. When this happens, you'll receive the *continue the deployment* message.
 
-:::image type="content" source="media/deployment-pipelines-troubleshooting/deployment-was-stopped-error.png" alt-text="A screenshot of the deployment was stopped error in deployment pipelines":::
+:::image type="content" source="media/deployment-pipelines-troubleshooting/deployment-was-stopped-error.png" alt-text="A screenshot of the continue the deployment message in deployment pipelines":::
 
 If you continue with the deployment, you'll loose the data in the target stage. You can use this option if the changes you made to the dataset were intentional. After the deployment completes, you'll need to refresh the target dataset.
 
