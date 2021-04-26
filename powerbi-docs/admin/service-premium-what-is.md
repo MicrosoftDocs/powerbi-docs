@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 04/02/2021
+ms.date: 04/21/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
 ---
@@ -133,7 +133,7 @@ Power BI Premium subscriptions are purchased by administrators in the Microsoft 
 #### Power BI Premium Per User
 
 Power BI **Premium Per User** allows organizations to license Premium features on a per-user basis. Premium Per User (PPU) includes all Power BI Pro license capabilities, and adds features such as paginated reports, AI, and other capabilities that are only available to Premium subscribers. 
-For more information about Premium per user, including a feature comparison and other information, see the [Power BI Premium Per User](service-premium-per-user-faq.md) article. 
+For more information about Premium per user, including a feature comparison and other information, see the [Power BI Premium Per User](service-premium-per-user-faq.yml) article. 
 
 
 ## Reserved capacities

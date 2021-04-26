@@ -34,7 +34,7 @@ If you have Premium permissions, the content of the workspace is copied to the s
 
 If you don't have Premium permissions, the workspace is created but the content isn’t copied. You can ask a capacity admin to add your workspace to a capacity, or ask for assignment permissions for the capacity. Later, when the workspace is assigned to a capacity, you can deploy content to this workspace.
 
-If you're using [Premium Per User (PPU)](../admin/service-premium-per-user-faq.md), your workspace is automatically associated with your PPU. In such cases Premium permissions are not required. However, workspaces created by a PPU user, can only be accessed by other PPU users. In addition, content created in such workspaces can only be consumed by PPU users.
+If you're using [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml), your workspace is automatically associated with your PPU. In such cases Premium permissions are not required. However, workspaces created by a PPU user, can only be accessed by other PPU users. In addition, content created in such workspaces can only be consumed by PPU users.
 
 ### Workspace and content ownership
 
@@ -64,7 +64,7 @@ With small changes, such as adding a table or measures, Power BI keeps the origi
 
 As long as the deployed content resides on a [premium capacity](../admin/service-premium-what-is.md), a user that meets the following conditions, can deploy it to a stage with an existing workspace:
 
-* A user with a [Pro license](../admin/service-admin-purchasing-power-bi-pro.md) or a [PPU user](../admin/service-premium-per-user-faq.md), who's a member of both workspaces in the source and target deployment stages.
+* A user with a [Pro license](../admin/service-admin-purchasing-power-bi-pro.md) or a [PPU user](../admin/service-premium-per-user-faq.yml), who's a member of both workspaces in the source and target deployment stages.
 
 * An owner of all the datasets in the target workspace that are about to be deployed.
 
