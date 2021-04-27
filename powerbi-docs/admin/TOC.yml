@@ -35,7 +35,7 @@
     - name: "Frequently asked questions (FAQ)"
       href: service-admin-faq.yml
     - name: "High availability and failover FAQ"
-      href: service-admin-failover.md
+      href: service-admin-failover.yml
     - name: Power BI Premium
       items:
       - name: Managing Premium capacities
