@@ -18,11 +18,13 @@ image
 
 This article covers the basics of using Goals in the Power BI service. See the other articles about goals for more detail:
 
-- Set up your first scorecard. 
+- [Create scorecards and goals in Power BI](service-goals-create.md)
+- [Create manual or connected goals in Power BI](service-goals-manual-connected.md)
+- [Stay on top of your goals in Power BI](service-goals-check-in.md)
 
 If you are unfamiliar with any of the terms used in this manual, refer to the glossary section to learn more. 
 
-## Prerequisites 
+## License requirements 
 
 Goals is a Premium feature. Users can access various aspects of the experience depending on their license. 
 
@@ -62,5 +64,9 @@ The next section is a tabbed list.
 The last section contains sample scorecards. As a new user, you can select one the pre-configured scorecards to check out what scorecards are all about. Selecting a sample opens the scorecard.
 
 ## Next steps
+
+- [Create scorecards and goals in Power BI](service-goals-create.md)
+- [Create manual or connected goals in Power BI](service-goals-manual-connected.md)
+- [Stay on top of your goals in Power BI](service-goals-check-in.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).

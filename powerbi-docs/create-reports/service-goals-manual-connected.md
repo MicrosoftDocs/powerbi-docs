@@ -97,4 +97,8 @@ The time series refers to cases where you have a Date/Time field in the axis. In
 
 ## Next steps
 
+- [Get started with goals in Power BI](service-goals-intro.md)
+- [Create scorecards and goals in Power BI](service-goals-create.md)
+- [Stay on top of your goals in Power BI](service-goals-check-in.md)
+
 More questions? [Try the Power BI Community](https://community.powerbi.com/).

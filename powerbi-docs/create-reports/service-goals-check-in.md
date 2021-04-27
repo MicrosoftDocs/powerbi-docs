@@ -84,4 +84,8 @@ Select Save.
 
 ## Next steps
 
+- [Get started with goals in Power BI](service-goals-intro.md)
+- [Create scorecards and goals in Power BI](service-goals-create.md)
+- [Create manual or connected goals in Power BI](service-goals-manual-connected.md)
+
 More questions? [Try the Power BI Community](https://community.powerbi.com/).
