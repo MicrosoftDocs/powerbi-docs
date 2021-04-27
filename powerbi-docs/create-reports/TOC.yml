@@ -420,6 +420,8 @@
       items: 
       - name: Enter data directly in a paginated report
         href: ../paginated-reports/paginated-reports-enter-data.md
+      - name: Edit a paginated report from the Power BI service
+        href: ../paginated-reports/paginated-reports-edit-service.md
       - name: Create an embedded data source
         href: ../paginated-reports/paginated-reports-embedded-data-source.md
       - name: Create an embedded dataset
