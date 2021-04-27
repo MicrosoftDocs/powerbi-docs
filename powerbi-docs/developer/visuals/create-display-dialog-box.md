@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 04/26/2021
+ms.date: 04/27/2021
 ---
 
 # Create a dialog box for your Power BI visual
@@ -43,15 +43,15 @@ When creating a dialog box for your visual, consider the following:
 >[!IMPORTANT]
 >The dialog box must not be triggered spontaneously. It must be an immediate result of a user action.
 
-## How to configure a dialog box?
+## Display a dialog box from your visual
 
 To configure a dialog box, you need to add three components to your code:
 
 * [A declaration](#declare-the-dialog-box-function) - Each dialog box function needs to be declared in the `visual.ts` file.
 
-* [Button configuration](#configure-the-dialog-box-buttons) - In the `visual.ts`  file, configure the behavior of the dialog box buttons.
-
 * [An implementation file](#create-the-dialog-box-implementation-file) - It's recommended to create an implementation file for each dialog box.
+
+* [Button configuration](#configure-the-dialog-box-buttons) - In the `visual.ts`  file, configure the behavior of the dialog box buttons.
 
 ### Declare the dialog box function
 
@@ -75,6 +75,20 @@ Each dialog box you create needs to be declared in the `visual.ts` file. The dec
 private dialogActionsButtons = [DialogAction.OK, DialogAction.Cancel];
 ```
 
+### Create the dialog box implementation file
+
+We recommend creating an implementation file for each dialog box you create. Place your dialog box files in the `src` folder:
+
+:::image type="content" source="media/create-display-dialog-box/file-location.png" alt-text="Screenshot showing the location of a dialog box implementation file called DatePickerDialog.ts in a Power B I visuals project.":::
+
+Each dialog box implementation file should include the following components:
+
+* [A dialog box class](#create-a-dialog-box-class)
+
+* [A result class](#create-a-result-class)
+
+* [Registration of the dialog class](#add-your-dialog-box-to-the-registry-list)
+
 ### Configure the dialog box buttons
 
 After the dialog function declaration in `visual.ts`, configure the behavior of each dialog button.
@@ -90,23 +104,15 @@ button.onclick = () => {
             }
 ```
 
-### Create the dialog box implementation file
-
-We recommend creating an implementation file for each dialog box you create. Place your dialog box files in the `src` folder:
-
-:::image type="content" source="media/create-display-dialog-box/file-location.png" alt-text="Screenshot showing the location of a dialog box implementation file called DatePickerDialog.ts in a Power B I visuals project.":::
-
-Each dialog box implementation file should include the following components:
-
-* [A dialog box class](#create-a-dialog-box-class)
-
-* [A result class](#create-a-result-class)
-
-* [Registration of the dialog class](#add-your-dialog-box-to-the-registry-list)
-
 #### Create a dialog box class
 
 Create a dialog box class for your dialog box. The `initialState` parameter in `openModalDialog`, is passed to the dialog contractor upon its creation. Use the `initialState` object to pass parameters to the dialog box, in order to affect its behavior or appearance.
+
+The dialog code can use these `IDialogHost` methods:
+
+* `IDialogHost.setResult(result:object)` - The dialog code returns a result object that will be passed back to its calling visual
+
+* `IDialogHost.close(actionId: DialogAction, result?:object)` - The dialog code can programmatically close the dialog and provide a result object back to its calling visual
 
 ```javascript
 import DialogConstructorOptions = powerbi.extensibility.visual.DialogConstructorOptions;
@@ -168,6 +174,8 @@ You can also program the dialog box to automatically close, by calling the `IDia
     |--------|-------------------------|--------------------------|
     |Maximum |90% of the browser width |90% of the browser height |
     |Minimum |240px                    |210px                     |
+
+* Certain environments, such as dashboards, block the use of dialog boxes. You can program your visual to detect whether the current environment allows opening a modal dialog, by checking `this.host.hostCapabilities.allowModalDialog`.
 
 * The following features don't support the Power BI visuals dialog box:
 
