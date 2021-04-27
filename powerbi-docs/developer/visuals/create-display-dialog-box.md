@@ -45,15 +45,13 @@ When creating a dialog box for your visual, consider the following:
 
 ## Design a dialog box for your visual
 
-To configure a dialog box, you need to add three components to your code:
+To configure a dialog box, you need to add two components to your code:
 
-* [A declaration](#declare-the-dialog-box-function) - Each dialog box function needs to be declared in the `visual.ts` file.
+* [A dialog box function](#create-a-dialog-box-function) - Each dialog box function needs to be declared in the `visual.ts` file.
 
 * [An implementation file](#create-the-dialog-box-implementation-file) - It's recommended to create an implementation file for each dialog box.
 
-* [Button configuration](#configure-the-dialog-box-buttons) - In the `visual.ts`  file, configure the behavior of the dialog box buttons.
-
-### Declare the dialog box function
+### Create a dialog box function
 
 Before you create a dialog box, you need to decide which buttons it will include. Power BI visuals supports the following six dialog box buttons:
 
@@ -75,6 +73,19 @@ Each dialog box you create needs to be declared in the `visual.ts` file. The dec
 private dialogActionsButtons = [DialogAction.OK, DialogAction.Cancel];
 ```
 
+After the dialog function declaration in `visual.ts`, configure the behavior of each dialog button.
+
+```javascript
+button.onclick = () => {
+                const dialogOptions = {
+                    actionButtons: this.dialogActionsButtons
+                };
+                this.host.openModalDialog(DatePickerDialog.id, dialogOptions).
+                    then(ret => this.handleDialogResult(ret, this.textStartDate)).
+                    catch(error => console.log("error:", error));
+            }
+```
+
 ### Create the dialog box implementation file
 
 We recommend creating an implementation file for each dialog box you create. Place your dialog box files in the `src` folder:
@@ -88,21 +99,6 @@ Each dialog box implementation file should include the following components:
 * [A result class](#create-a-result-class)
 
 * [Registration of the dialog class](#add-your-dialog-box-to-the-registry-list)
-
-### Configure the dialog box buttons
-
-After the dialog function declaration in `visual.ts`, configure the behavior of each dialog button.
-
-```javascript
-button.onclick = () => {
-                const dialogOptions = {
-                    actionButtons: this.dialogActionsButtons
-                };
-                this.host.openModalDialog(DatePickerDialog.id, dialogOptions).
-                    then(ret => this.handleDialogResult(ret, this.textStartDate)).
-                    catch(error => console.log("error:", error));
-            }
-```
 
 #### Create a dialog box class
 
