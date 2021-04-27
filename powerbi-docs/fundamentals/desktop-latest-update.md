@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.custom: video-r88EE4IzZlE
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 04/12/2021
+ms.date: 04/27/2021
 LocalizationGroup: Get started
 ---
 # What's new in Power BI?
 
-## April 2021 Update (2.92.303.0)
+## April 2021 Update (2.92.706.0)
 
 Spring is in the air, and so is a great collection of updates for Power BI. 
 
