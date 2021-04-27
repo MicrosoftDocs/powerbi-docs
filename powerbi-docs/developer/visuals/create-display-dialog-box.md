@@ -43,7 +43,7 @@ When creating a dialog box for your visual, consider the following:
 >[!IMPORTANT]
 >The dialog box must not be triggered spontaneously. It must be an immediate result of a user action.
 
-## Display a dialog box from your visual
+## Design a dialog box for your visual
 
 To configure a dialog box, you need to add three components to your code:
 
