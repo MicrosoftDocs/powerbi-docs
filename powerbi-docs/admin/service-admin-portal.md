@@ -285,6 +285,20 @@ To enable sensitivity label inheritance from data sources go to the [Power BI te
 
 ![Screenshot of Apply sensitivity labels from data sources to their data in Power BI tenant setting.](media/service-admin-portal/inherit-from-data-sources-tenant-setting.png)
 
+### Restrict content with protected labels from being shared via link with everyone in your organization
+When this setting is enabled, users cannot generate sharing link for **People in your organization** for content with protection settings in the sensitivity label.
+
+![Restrict content with protected labels from being shared via link with everyone in your organization](https://user-images.githubusercontent.com/47899466/116316169-63ee5a80-a766-11eb-8738-bb9e6d2f680b.PNG)
+
+> [!NOTE]
+> This setting will be disabled if you have not enabled both the **Allow users to apply sensitivity labels for Power BI content** setting and the **Allow shareable links to grant access to everyone in your organization** setting.
+
+Sensitivity labels with protection settings include encryption or content markings. For example, your organization may have a "Highly Confidential" label that includes encryption and applies a "Highly Confidential" watermark to content with this label. Therefore, when this tenant setting is enabled and a report has a sensitivity label with protection settings, then users will not be able to create sharing links for **People in your organization**: 
+
+![Example of disabled sharing link to People in your organization](https://user-images.githubusercontent.com/47899466/116316094-4d480380-a766-11eb-8582-b129922959b8.PNG)
+
+To learn more about protection settings for sensitivity labels, check out our [documentation](https://docs.microsoft.com/en-us/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide).
+
 ## Export and sharing settings
 
 ### Allow Azure Active Directory guest users to access Power BI
@@ -440,10 +454,10 @@ This setting allows organizations to hide the **Share to Teams** buttons in the 
 
 Read more about [sharing Power BI content to Teams](../collaborate-share/service-share-report-teams.md).
 
-### Allow shareable links to grant access to all people in your organization
-This tenant setting is available for admins looking to disable creating shareable links to **People in your organization**. You can find this option in the Admin portal by navigating to **Tenant settings** > **Export and sharing settings** > **Allow shareable links to grant access to all people in your organization**.
+### Allow shareable links to grant access to everyone in your organization
+This tenant setting is available for admins looking to disable creating shareable links to **People in your organization**. You can find this option in the Admin portal by navigating to **Tenant settings** > **Export and sharing settings** > **Allow shareable links to grant access to everyone in your organization**.
 
-![Screenshot of allow shareable links to grant access to all People in your organization setting](media/service-admin-portal/admin-allow-shareable-links.png)
+![Screenshot of allow shareable links to grant access to everyone in your organization setting](https://user-images.githubusercontent.com/47899466/116311371-0820d300-a760-11eb-881c-1c413ccf82c6.PNG)
 
 As with other tenant settings, you can enable sharing links to **People in your organization** for:
 - **The entire organization**
