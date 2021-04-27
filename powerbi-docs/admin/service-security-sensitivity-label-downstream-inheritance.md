@@ -50,7 +50,7 @@ In fully automated mode, a label applied to either a dataset or report will auto
 
 ## Relaxed label change enforcement
 
-In certain cases, downstream inheritance (like other automated labeling scenarios) can result in a situation where no user has all the required permissions needed to change a label. For such situations, relaxed label change enforcement guarantees continued access to affected items. See [Sensitivity label change enforcement](service-security-sensitivity-label-change-enforcement.md) for detail.
+In certain cases, downstream inheritance (like other automated labeling scenarios) can result in a situation where no user has all the required permissions needed to change a label. For such situations, label change enforcement relaxations are in place to guarantee access to affected items. See [Relaxations to accommodate automatic labeling scenarios](service-security-sensitivity-label-change-enforcement.md#relaxations-to-accommodate-automatic-labeling-scenarios) for detail.
 
 ## Enabling fully automated downstream inheritance
 
