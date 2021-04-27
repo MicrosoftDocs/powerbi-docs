@@ -38,7 +38,7 @@ Creating goals is a Power BI Premium feature, so you need either:
 
     image
 
-Select **Create**. Power BI creates the scorecard and opens it. 
+1. Select **Create**. Power BI creates the scorecard and opens it. 
 
     Power BI creates these items in the Premium workspace: the scorecard itself, and a dataset associated with your scorecard that houses all the goals data. 
 
