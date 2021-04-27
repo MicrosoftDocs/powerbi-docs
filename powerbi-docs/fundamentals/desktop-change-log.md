@@ -21,7 +21,7 @@ See [What's new in Power BI](desktop-latest-update.md) for more information abou
 *Version: 2.92.943.0, Released: April 27, 2021*
 
 Bug fixes/improvements:
-- Improvements in Microsoft Information Protection SDK hang detection and stop throwing up "Unknown hard error" dialog.
+- Improvements in Microsoft Information Protection SDK hang detection and stop throwing "Unknown hard error" dialog.
 - Fix for corrupted credentials: users will not get the alert warning that their credentials can't be decrypted and may consider manually removing credentials folder (user.zip file).
 
 ## March 2021 QFE 1
