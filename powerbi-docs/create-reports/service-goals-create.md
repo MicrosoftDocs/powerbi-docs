@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/22/2021
+ms.date: 04/27/2021
 ---
 # Create scorecards and goals in Power BI
 
@@ -22,8 +22,11 @@ Goals in Power BI let customers curate their metrics and track them against key 
 
 Creating goals is a Power BI Premium feature, so you need either:
 
-- A Power BI Pro license and access to a Power BI Premium capacity
+- A Power BI Pro license and access to a [Power BI Premium](../admin/service-premium-what-is.md) capacity
 - A [Power BI Premium Per User](../admin/service-premium-per-user-faq.yml) license.
+
+You also need:
+
 - Admin, Member, or Contributor role in a workspace. Read more about [roles in the new workspaces](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces).
 - Build permission for a dataset. Read more about [Build permission](../connect-data/service-datasets-build-permissions.md).
 
@@ -34,7 +37,7 @@ Creating goals is a Power BI Premium feature, so you need either:
 1. In the Goals hub, select **New scorecard**. The scorecard creation pane opens. 
 1. Name your scorecard, provide a description, and select a Power BI Premium workspace where you want to store the scorecard. 
 
-    If you don’t have a premium workspace, you can create one using this article, [Create the new workspaces in Power BI](../collaborate-share/service-create-the-new-workspaces.md). 
+    If you don’t have a Premium workspace, you can't create a scorecard. You can create a Premium workspace using this article, [Create the new workspaces in Power BI](../collaborate-share/service-create-the-new-workspaces.md). 
 
     image
 

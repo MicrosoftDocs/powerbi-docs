@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/22/2021
+ms.date: 04/27/2021
 ---
 # Create manual or connected goals in Power BI
 
@@ -22,7 +22,7 @@ The difference between the manual and connected values is straightforward. For m
 
 ## Set values manually 
 
-1. Create a goal or edit an existing goal in a scorecard.
+1. [Create a goal or edit an existing goal](service-goals-create.md) in a scorecard.
 
 1. In the **Current** and/or **Target** fields, enter a value.
 
@@ -38,7 +38,7 @@ The difference between the manual and connected values is straightforward. For m
 
 ## Connect current or target values to data
 
-1. Create a goal or edit an existing goal in a scorecard.
+1. [Create a goal or edit an existing goal](service-goals-create.md) in a scorecard.
 
 1. In the **Current** and/or **Target** fields, select **Connect to data**.
 

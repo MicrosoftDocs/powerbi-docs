@@ -8,13 +8,13 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/22/2021
+ms.date: 04/27/2021
 ---
 # Get started with goals in Power BI
 
 Goals in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. This feature enhances data culture by promoting accountability, alignment, and visibility for teams and initiatives within organizations.
 
-image
+:::image type="content" source="media/service-goals-intro/power-bi-goals-home.png" alt-text="Goals page with goals, scorecards, and samples":::
 
 This article covers the basics of using Goals in the Power BI service. See the other articles about goals for more detail:
 
@@ -36,19 +36,19 @@ Goals is a Premium feature. Users can access various aspects of the experience d
 
 If you don’t meet the minimum requirements for any of these, contact your Power BI administrator before you begin.  
 
-## Explore the Goals tab 
+## Explore the Goals hub page 
 
-After you sign in to the Power BI service, select Goals from the navigation pane. Power BI displays your Goals hub page. The layout and content in the Goals page is different for every user. As a new user, your Goals page will be empty, as shown the following image. 
+After you sign in to the Power BI service, select Goals from the navigation pane. Power BI displays your Goals hub page. The layout and content in the Goals page is different for every user. As a new user, your Goals page will be empty, as shown the following image.
 
-image
+:::image type="content" source="media/service-goals-intro/power-bi-goals-new-home.png" alt-text="The new, empty Goals home page.":::
 
 ### Goals relevant to me 
 
 The top section contains all the goals that matter the most to you. Power BI curates these goals automatically, based on goals that you're assigned to, you've edited, or you've performed a recent check-in. 
 
-image
+power-bi-goals-relevant
 
-Goals must have at least two values to show up in this section. 
+A goal must have at least two values to show up in this section. 
 
 ### Recent, Favorites, Shared with me, and All Scorecards 
 
