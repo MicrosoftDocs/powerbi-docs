@@ -56,6 +56,8 @@
         href: service-premium-backup-restore-dataset.md
     - name: Information protection
       items:
+      - name: Sensitivity label downstream inheritance (preview)
+        href: service-security-sensitivity-label-downstream-inheritance.md
       - name: Sensitivity label inheritance from data sources (preview)
         href: service-security-sensitivity-label-inheritance-from-data-sources.md
       - name: Sensitivity label change enforcement
