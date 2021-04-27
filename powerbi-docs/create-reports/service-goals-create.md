@@ -23,7 +23,7 @@ Goals in Power BI let customers curate their metrics and track them against key 
 Creating goals is a Power BI Premium feature, so you need either:
 
 - A Power BI Pro license and access to a Power BI Premium capacity
-- A Power BI Premium Per User license.
+- A [Power BI Premium Per User](../admin/service-premium-per-user-faq.yml) license.
 - Admin, Member, or Contributor role in a workspace. Read more about [roles in the new workspaces](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces).
 - Build permission for a dataset. Read more about [Build permission](../connect-data/service-datasets-build-permissions.md).
 
@@ -102,7 +102,7 @@ When you share a scorecard, the people you share it with can view and interact w
 
 - To share, select the **Share** button in the scorecard action bar and follow the steps outlined in the experience. It's the same as sharing a dashboard.
 
-    When sharing scorecards, whether inside or outside your organization, you need a Power BI Premium Per User (PPU) license, or a Power BI Pro license, with the content in a Premium capacity. Your recipients also need Power BI PPU licenses, unless the content is in a Premium capacity. See [License requirements](service-goals-intro.md#license-requirements) in the Get started with goals in Power BI article.
+    When sharing scorecards, whether inside or outside your organization, you need a [Power BI Premium Per User](../admin/service-premium-per-user-faq.yml) (PPU) license, or a Power BI Pro license, with the content in a [Power BI Premium](../admin/service-premium-what-is.md) capacity. Your recipients also need Power BI PPU licenses, unless the content is in a Premium capacity. See [License requirements](service-goals-intro.md#license-requirements) in the "Get started with goals in Power BI" article.
 
     image
 

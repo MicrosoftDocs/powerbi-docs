@@ -30,8 +30,8 @@ Goals is a Premium feature. Users can access various aspects of the experience d
 
 |Permission  |Minimum requirements  |
 |---------|---------|
-|Authoring scorecards, goals, and performing check-ins | Power BI Premium capacity + Power BI Pro license <br><br>OR <br><br>Premium Per User license |
-|Viewing scorecards and goals  | Power BI Premium capacity + Free user <br><br>OR <br><br>Premium Per User license |
+|Authoring scorecards, goals, and performing check-ins | [Power BI Premium](../admin/service-premium-what-is.md) capacity + Power BI Pro license <br><br>OR <br><br>[Power BI Premium Per User](../admin/service-premium-per-user-faq.yml) license |
+|Viewing scorecards and goals  | Power BI Premium capacity + Free user <br><br>OR <br><br>Power BI Premium Per User license |
 |Viewing scorecard samples   |  Free user |
 
 If you don’t meet the minimum requirements for any of these, contact your Power BI administrator before you begin.  
