@@ -1,6 +1,6 @@
 ---
-title: Guidelines for Power BI visuals in Power BI embedded analytics for better embedded BI insights
-description: Learn how you can publish your custom visual to Microsoft AppSource for others to discover and use it via a purchase. Enable better embedded BI insights using Power BI embedded analytics.
+title: Guidelines for Power BI visuals
+description: Learn how you can publish your custom visual to Microsoft AppSource for others to discover and use it via a purchase.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""

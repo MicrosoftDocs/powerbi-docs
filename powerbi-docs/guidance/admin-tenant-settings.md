@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
-ms.date: 08/10/2020
+ms.date: 04/20/2021
 ---
 
 # Tenant settings guidance
@@ -123,7 +123,7 @@ The **Allow external guest users to edit and manage content in the organization*
 
 If you need to authorize external users to edit and manage content, we recommend you assign one or more security groups. These groups can be granted _or denied_ permission to publish reports.
 
-![Screenshot of Power B I Desktop showing the "Allow external guest users to edit and manage content in the organization" setting.](media/admin-tenant-settings/allow-external-guest-users.png)
+![Screenshot of Power BI admin portal showing the "Allow external guest users to edit and manage content in the organization" setting.](media/admin-tenant-settings/allow-external-guest-users.png)
 
 ### Developer settings
 
@@ -131,10 +131,13 @@ There are two tenant settings related to [embedding Power BI content](../develop
 
 - Embed content in apps (enabled by default)
 - Allow service principals to user Power BI APIs (disabled by default)
+- Block ResourceKey Authentication (disabled by default)*
 
 If you have no intention of using the developer APIs to embed content, we recommend you disable them. Or, at least configure specific security groups that would be doing this work.
 
-![Screenshot of Power B I Desktop showing the developer settings.](media/admin-tenant-settings/developer-settings.png)
+**This setting applies to streaming and PUSH datasets. If disabled, users will not be allowed send data to streaming and PUSH datasets using the API with a resource key.*
+
+![Screenshot of Power BI admin portal showing the developer settings.](media/admin-tenant-settings/developer-settings.png)
 
 ## Next steps
 

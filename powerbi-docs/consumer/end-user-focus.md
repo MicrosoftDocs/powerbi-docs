@@ -4,13 +4,12 @@ description: Documentation for displaying a Power BI dashboard, dashboard tile, 
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
-featuredvideoid: dtdLul6otYE
+ms.custom: video-dtdLul6otYE
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 12/03/2020
 LocalizationGroup: Common tasks
-ms.custom: video-dtdLul6otYE
 ---
 
 # Display content in more detail: focus mode and full screen mode

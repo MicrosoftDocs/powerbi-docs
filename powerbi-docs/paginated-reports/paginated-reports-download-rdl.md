@@ -3,7 +3,7 @@ title: "Download the .rdl for a paginated report from a dataset"
 description: In this article, you learn how to create the .rdl for a Power BI paginated report by downloading from a shared dataset in the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: swgupt
+ms.reviewer: mibruhje
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to

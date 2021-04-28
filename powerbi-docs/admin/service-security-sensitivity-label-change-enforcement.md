@@ -17,7 +17,7 @@ Power BI restricts permission to change or remove Microsoft Information Protecti
 
 Authorized users are:
 * The user who applied the sensitivity label. 
-* Users who have been assigned at least one of the following [usage rights](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide&preserve-view=true) to the label in the labeling admin center ([Microsoft 365 compliance center](https://compliance.microsoft.com/), [Microsoft 365 security center](https://security.microsoft.com/), or [Security & Compliance Center](https://protection.office.com/)):
+* Users who have been assigned at least one of the following [usage rights](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide&preserve-view=true) to the label in the labeling admin center ([Microsoft 365 compliance center](https://compliance.microsoft.com/)):
     * OWNER
     * EXPORT
     * EDIT and EDITRIGHTSDATA
@@ -26,7 +26,7 @@ Users who try to change a label and can’t should ask the person who applied th
 
 ## Relaxations to accommodate automatic labeling scenarios
 
-Power BI supports several capabilities, such as [label inheritance from data sources](service-security-sensitivity-label-inheritance-from-data-sources.md) and downstream inheritance, which automatically apply sensitivity labels to content. These automated scenarios can result in situations where no user has been set as the RMS label issuer for a label on an item. This means that there is no user who is guaranteed to be able to change or remove the label.
+Power BI supports several capabilities, such as [label inheritance from data sources](service-security-sensitivity-label-inheritance-from-data-sources.md) and [downstream inheritance](service-security-sensitivity-label-downstream-inheritance.md), which automatically apply sensitivity labels to content. These automated scenarios can result in situations where no user has been set as the RMS label issuer for a label on an item. This means that there is no user who is guaranteed to be able to change or remove the label.
 
 In such cases, the usage rights requirements for changing or removing the label are relaxed - a user needs just one of the following usage rights to be able to change or remove the label:
 * OWNER

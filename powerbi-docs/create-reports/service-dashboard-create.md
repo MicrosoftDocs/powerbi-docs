@@ -8,6 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
+ms.custom: video-lJKgWnvl6bQ
 ms.date: 04/12/2021
 ---
 # Create a Power BI dashboard from a report

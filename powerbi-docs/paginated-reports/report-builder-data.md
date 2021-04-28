@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.custom: seodec18
+ms.custom: ''
 ms.date: 08/04/2020
 ---
 

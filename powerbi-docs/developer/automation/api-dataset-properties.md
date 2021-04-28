@@ -1,6 +1,6 @@
 ---
-title: Power BI dataset properties in Power BI embedded analytics for better embedded BI insights
-description: Learn about the properties of Power BI dataset APIs. Enable better embedded BI insights using Power BI embedded analytics.
+title: Power BI dataset properties
+description: Learn about the properties of Power BI dataset APIs.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''

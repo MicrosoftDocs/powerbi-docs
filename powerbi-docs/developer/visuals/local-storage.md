@@ -1,6 +1,6 @@
 ---
-title: Local Storage API in Power BI Visuals in Power BI embedded analytics for better embedded BI insights
-description: The article describes how to use Power BI Visuals API to get access to browser local storage. Enable better embedded BI insights using Power BI embedded analytics.
+title: Local Storage API in Power BI Visuals
+description: The article describes how to use Power BI Visuals API to get access to browser local storage.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
