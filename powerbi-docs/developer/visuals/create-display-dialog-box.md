@@ -49,7 +49,7 @@ To configure a dialog box, you need to add two components to your code:
 
 * [An implementation file](#create-the-dialog-box-implementation-file) - It's recommended to create an implementation file for each dialog box.
 
-* [Code to invoke your dialog box](#create-a-dialog-box-function) - To invoke your dialog box, add code to the `visual.ts` file.
+* [Code to invoke your dialog box](#invoke-the-dialog-box) - To invoke your dialog box, add code to the `visual.ts` file.
 
 ### Create the dialog box implementation file
 
