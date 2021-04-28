@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/08/2019
+ms.date: 04/30/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to webpages from Power BI Desktop
@@ -31,7 +31,7 @@ Power BI Desktop connects to the web page and then presents the page’s availab
 
 ![Screenshot of the Navigator dialog, showing a preview of the selected table's data.](media/desktop-connect-to-web/connect-to-web-04.png)
 
-You can choose the **Transform Data** button, which launches **Query Editor**, where you can shape and transform the data on that Web page before importing it into Power BI Desktop. Or you can select the **Load** button, and import all of the data elements you selected in the left pane.
+You can choose the **Transform Data** button, which launches **Power Query Editor**, where you can shape and transform the data on that Web page before importing it into Power BI Desktop. Or you can select the **Load** button, and import all of the data elements you selected in the left pane.
 
 When we select **Load**, Power BI Desktop imports the selected items, and makes them available in the **Fields** pane, found on the right side of the Reports view in Power BI Desktop.
 
@@ -45,9 +45,9 @@ To see connecting to a Web page in more depth and action, take a look at the [Po
 
 ## Certificate revocation check
 
-Power BI applies security for web connections to protect your data. In some scenarios, such as capturing web requests with Fiddler, web connections may not work properly. To enable such scenarios, you can uncheck the **Enable certificate revocation check** option in Power BI Desktop, then restart Power BI Desktop. 
+Power BI applies security for web connections to protect your data. In some scenarios, such as capturing web requests with Fiddler, web connections may not work properly. To enable such scenarios, you can modify the **Check if your certificates have been revoked** option in Power BI Desktop, then restart Power BI Desktop. 
 
-To change this option, select **File > Options**, then select **Security** in the left pane. The following image shows the checkbox. Unchecking the box will make web connections less secure. 
+To change this option, select **File** > **Options and settings** > **Options**, then select **Security** in the left pane. 
 
 ![Enable or disable certificate revocation check](media/desktop-connect-to-web/connect-to-web-06.png)
 
