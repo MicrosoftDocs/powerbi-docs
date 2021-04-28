@@ -257,7 +257,7 @@ sections:
       - question: |
           How does Power BI handle high availability and failover?
         answer: |
-          For info about high availability and failover, see [Power BI high availability, failover, and disaster recovery FAQ](service-admin-failover.md).
+          For info about high availability and failover, see [Power BI high availability, failover, and disaster recovery FAQ](service-admin-failover.yml).
           
   - name: Security in Power BI
     questions:
