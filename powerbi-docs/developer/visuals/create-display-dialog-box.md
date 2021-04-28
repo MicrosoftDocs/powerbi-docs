@@ -93,7 +93,7 @@ export class DatePickerDialog {
         });
 
         myCalender.handleConfirm( () => {
-            host.close(DialogAction.Apply, {date: pickedDate});
+            host.close(DialogAction.Close, {date: pickedDate});
         })
     }
 }
