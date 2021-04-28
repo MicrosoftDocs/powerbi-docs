@@ -1,5 +1,5 @@
 ---
-title: Use insights to explain increases and decreases in visuals (Preview)
+title: Use insights to explain increases and decreases in visuals
 description: Easily gain insights to increases or decreases in Power BI Desktop
 author: davidiseminger
 ms.author: davidi
@@ -8,10 +8,10 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/21/2019
+ms.date: 04/23/2021
 LocalizationGroup: Create reports
 ---
-# Apply insights in Power BI Desktop to explain fluctuations in visuals (preview)
+# Apply insights in Power BI Desktop to explain fluctuations in visuals
 
 Often in visuals, you see a large increase and then a sharp drop in values, and wonder about  the cause of such fluctuations. With **insights** in **Power BI Desktop** you can learn the cause with just a few clicks.
 
@@ -26,8 +26,7 @@ You can tell **Power BI Desktop** to explain increases or decreases in charts, s
 The insights feature is contextual, and is based on the immediately previous data point - such as the previous bar, or column.
 
 > [!NOTE]
-> This feature is in preview, and is subject to change. The insight feature is enabled and on by default (you don't need to check a Preview box to enable it) beginning with the September 2017 version of **Power BI Desktop**.
-
+> The insight feature is enabled and on by default beginning with the September 2017 version of **Power BI Desktop**.
 
 ## Using insights
 To use insights to explain increases or decreases seen on charts, just right-click on any data point in a bar or line chart, and select **Analyze > Explain the increase** (or *Explain the decrease*, since all insights are based on the change from the previous data point).
@@ -42,7 +41,7 @@ By selecting the small icons at the bottom of the waterfall visual, you can choo
 
 ![trio of insights visuals](media/desktop-insights/insights_04.png)
 
-The *thumbs up* and *thumbs down* icons at the top of the page are provided so you can provide feedback about the visual and the feature. Doing so provides feedback, but it does not currently train the algorithm to influence the results returned next time you use the feature.
+The *thumbs up* and *thumbs down* icons at the top of the page are provided so you can provide  about the visual and the feature. Doing so provides , but it does not currently train the algorithm to influence the results returned next time you use the feature.
 
 And importantly, the **+** button at the top of the visual lets you add the selected visual to your report, just as if you created the visual manually. You can then format or otherwise adjust the added visual just as you would to any other visual on your report. You can only add a selected insight visual when you're editing a report in **Power BI Desktop**.
 
@@ -56,19 +55,19 @@ For example, if *Sales* increased by 55% overall from *Qtr 3* to *Qtr 4*, and th
 
 So the algorithm is not simply returning the values that account for the biggest amount of the change. For example, if the vast majority (98%) of sales came from the USA, then it would commonly be the case that the vast majority of the increase was also in the USA. Yet unless the USA or other countries had a significant change to their relative contribution to the total, *Country* would not be considered interesting in this context.  
 
-Simplistically, the algorithm can be thought of as taking all the other columns in the model, and calculating the breakdown by that column for the *before* and *after* time periods, determining how much change occurred in that breakdown, and then returning those columns with the biggest change. For example, *Category* was selected in the example above, as the contribution made by *TV and Video* fell 7% from 33% to 26%, while the contribution from *Home Appliances* grew from nothing to over 6%. 
+Simplistically, the algorithm can be thought of as taking all the other columns in the model, and calculating the breakdown by that column for the *before* and *after* time periods, determining how much change occurred in that breakdown, and then returning those columns with the biggest change. For example, *Category* was selected in the example above, as the contribution made by *TV and * fell 7% from 33% to 26%, while the contribution from *Home Appliances* grew from nothing to over 6%. 
 
 For each column returned, there are four visuals that can be displayed. Three of those visuals are intended to highlight the change in contribution between the two periods. For example, for the explanation of the increase from *Qtr 2* to *Qtr 3*.
 
 ### The scatter plot
 
-The scatter plot visual shows the value of the measure in the first period (on the x-axis) against the value of the measure in the second period (on the y-axis), for each value of the column (*Category* in this case). Thus as shown in the following image, any data points are in the green region if the value increased, and in the red region if they decreased. 
+The scatter plot visual shows the value of the measure in the first period (on the x-axis) against the value of the measure in the second period (on the y-axis), for each value of the column (*Category* in this case). Thus as shown in the following image, any data points are in the green  if the value increased, and in the red  if they decreased. 
 
 The dotted line shows the best fit, and as such, data points above this line increased by more than the overall trend, and those below it by less.  
 
 ![Scatter plot with dotted line](media/desktop-insights/insights_01b.png)
 
-Note that data items whose value was blank in either period will not appear on the scatter plot (for example, *Home Appliances* in this case)
+ that data items whose value was blank in either period will not appear on the scatter plot (for example, *Home Appliances* in this case)
 
 ### The 100% stacked column chart
 
@@ -78,7 +77,7 @@ The 100% stacked column chart visual shows the value of the measure before and a
 
 ### The ribbon chart
 
-The ribbon chart visual showsalso  the value of the measure before and after. It's particularly useful in showing the changes in contributions when these were such that the *ordering* of contributors changed (for example, if *Computers* were the number one contributor before, but then fell to number three). 
+The ribbon chart visual also shows the value of the measure before and after. It's particularly useful in showing the changes in contributions when these were such that the *ordering* of contributors changed (for example, if *Computers* were the number one contributor before, but then fell to number three). 
 
 ![ribbon chart](media/desktop-insights/insights_01d.png)
 
