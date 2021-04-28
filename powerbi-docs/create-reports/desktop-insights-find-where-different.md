@@ -25,10 +25,6 @@ You can tell **Power BI Desktop** to find where a distribution is different, and
 
 In this example, the automated analysis quickly shows that for *Touring Bikes*, the  proportion of sales in the United States and Canada are lower, while the proportion coming from the other countries is higher.   
 
-> [!NOTE]
-> The insight feature is enabled and on by default beginning with the September 2017 version of **Power BI Desktop**.
-> 
-
 ## Using insights
 To use insights to find where distributions seen on charts are different, just right-click on any data point (or on the visual as a whole), and select **Analyze** > **Find where this distribution is different**.
 
