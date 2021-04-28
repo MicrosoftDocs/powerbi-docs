@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/30/2021
+ms.date: 04/27/2021
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,14 @@ ms.date: 03/30/2021
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## April 2021 QFE 1
+
+*Version: 2.92.943.0, Released: April 27, 2021*
+
+Bug fixes/improvements:
+- Improvements in Microsoft Information Protection SDK hang detection and stop throwing "Unknown hard error" dialog.
+- Fix for corrupted credentials: users will not get the alert warning that their credentials can't be decrypted and that they may consider manually removing credentials folder (user.zip file).
 
 ## March 2021 QFE 1
 
