@@ -10,7 +10,7 @@ ms.custom: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 12/21/2020
+ms.date: 04/28/2021
 LocalizationGroup: Visualizations
 ---
 
