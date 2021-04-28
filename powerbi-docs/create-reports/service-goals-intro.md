@@ -46,7 +46,7 @@ After you sign in to the Power BI service, select Goals from the navigation pane
 
 The top section contains all the goals that matter the most to you. Power BI curates these goals automatically, based on goals that you're assigned to, you've edited, or you've performed a recent check-in. 
 
-power-bi-goals-relevant
+:::image type="content" source="media/service-goals-intro/power-bi-goals-relevant.png" alt-text="Top section contains all the goals that matter the most to you.":::
 
 A goal must have at least two values to show up in this section. 
 
