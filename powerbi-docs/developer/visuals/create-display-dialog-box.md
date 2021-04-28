@@ -47,44 +47,9 @@ When creating a dialog box for your visual, consider the following:
 
 To configure a dialog box, you need to add two components to your code:
 
-* [A dialog box function](#create-a-dialog-box-function) - Each dialog box function needs to be declared in the `visual.ts` file.
-
 * [An implementation file](#create-the-dialog-box-implementation-file) - It's recommended to create an implementation file for each dialog box.
 
-### Create a dialog box function
-
-Before you create a dialog box, you need to decide which buttons it will include. Power BI visuals supports the following six dialog box buttons:
-
-```javascript
-export enum DialogAction {
-        Close = 0,
-        OK = 1,
-        Cancel = 2,
-        Continue = 3,
-        No = 4,
-        Yes = 5
-    }
-
-```
-
-Each dialog box you create needs to be declared in the `visual.ts` file. The declaration needs to include the type of buttons that the dialog box displays.
-
-```javascript
-private dialogActionsButtons = [DialogAction.OK, DialogAction.Cancel];
-```
-
-After the dialog function declaration in `visual.ts`, configure the behavior of each dialog button.
-
-```javascript
-button.onclick = () => {
-                const dialogOptions = {
-                    actionButtons: this.dialogActionsButtons
-                };
-                this.host.openModalDialog(DatePickerDialog.id, dialogOptions).
-                    then(ret => this.handleDialogResult(ret, this.textStartDate)).
-                    catch(error => console.log("error:", error));
-            }
-```
+* [Code to invoke your dialog box](#create-a-dialog-box-function) - To invoke your dialog box, add code to the `visual.ts` file.
 
 ### Create the dialog box implementation file
 
@@ -106,9 +71,9 @@ Create a dialog box class for your dialog box. The `initialState` parameter in `
 
 The dialog code can use these `IDialogHost` methods:
 
-* `IDialogHost.setResult(result:object)` - The dialog code returns a result object that will be passed back to its calling visual
+* `IDialogHost.setResult(result:object)` - The dialog code returns a result object that will be passed back to its calling visual.
 
-* `IDialogHost.close(actionId: DialogAction, result?:object)` - The dialog code can programmatically close the dialog and provide a result object back to its calling visual
+* `IDialogHost.close(actionId: DialogAction, result?:object)` - The dialog code can programmatically close the dialog and provide a result object back to its calling visual.
 
 ```javascript
 import DialogConstructorOptions = powerbi.extensibility.visual.DialogConstructorOptions;
@@ -134,7 +99,7 @@ export class DatePickerDialog {
 }
 ```
 
-### Create a result class
+#### Create a result class
 
 Create a class that returns the dialog box result, and add it to the dialog box implementation file.
 
@@ -146,7 +111,7 @@ export class DatePickerDialogResult {
 }
 ```
 
-### Add your dialog box to the registry list
+#### Add your dialog box to the registry list
 
 Every dialog implementation file needs to include a registry reference. Add the two lines in the example below, to your dialog box implementation file. The first line should be identical in every dialog box implementation file. The second line lists your dialog box, modify it according to the name of your dialog box class.
 
@@ -154,6 +119,41 @@ Every dialog implementation file needs to include a registry reference. Add the 
 globalThis.dialogRegistry = globalThis.dialogRegistry || {};
 globalThis.dialogRegistry[DatePickerDialog.id] = DatePickerDialog;
 
+```
+
+### Invoke the dialog box
+
+Before you create a dialog box, you need to decide which buttons it will include. Power BI visuals supports the following six dialog box buttons:
+
+```javascript
+export enum DialogAction {
+        Close = 0,
+        OK = 1,
+        Cancel = 2,
+        Continue = 3,
+        No = 4,
+        Yes = 5
+    }
+
+```
+
+Each dialog box you create needs to be invoked in the `visual.ts` file. In this example, the dialog box is defined with two action buttons.
+
+```javascript
+private dialogActionsButtons = [DialogAction.OK, DialogAction.Cancel];
+```
+
+In this example, the dialog box is invoked by clicking a visual button. This is defined as part of the visual constructor in the `visual.ts` file.
+
+```javascript
+button.onclick = () => {
+                const dialogOptions = {
+                    actionButtons: this.dialogActionsButtons
+                };
+                this.host.openModalDialog(DatePickerDialog.id, dialogOptions).
+                    then(ret => this.handleDialogResult(ret, this.textStartDate)).
+                    catch(error => console.log("error:", error));
+            }
 ```
 
 ## How to close the dialog box?
@@ -171,7 +171,7 @@ You can also program the dialog box to automatically close, by calling the `IDia
     |Maximum |90% of the browser width |90% of the browser height |
     |Minimum |240px                    |210px                     |
 
-* Certain environments, such as dashboards, block the use of dialog boxes. You can program your visual to detect whether the current environment allows opening a modal dialog, by checking `this.host.hostCapabilities.allowModalDialog`.
+* Certain environments, such as dashboards, block the use of dialog boxes. You can program your visual to detect whether the current environment allows opening a dialog box, by checking the boolean `this.host.hostCapabilities.allowModalDialog`.
 
 * The following features don't support the Power BI visuals dialog box:
 
