@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 04/02/2021
+ms.date: 04/21/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
 ---
@@ -89,7 +89,7 @@ The following known limitations currently apply to Premium Gen2:
     |SQL Server Data Tools (SSDT)|2.9.15|
     | AS PowerShell| Greater than 21.1.18229|
 
-4.  Memory restrictions are different in Premium Gen2. In the first generation of Premium, memory was restricted to a limited amount of RAM used by all artifacts simultaneously running. 
+4.  <a id="memory-restrictions">Memory restrictions</a> are different in Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md). In the first generation of Premium and Embedded, memory was restricted to a limited amount of RAM used by all artifacts simultaneously running. 
 In Gen2, there is no memory Limit for the capacity as a whole. Instead, individual artifacts (such as datasets, dataflows, paginated reports) are subject to the following RAM limitations:
 
     - A single artifact cannot exceed the amount of memory the capacity SKU offers. 
@@ -133,7 +133,7 @@ Power BI Premium subscriptions are purchased by administrators in the Microsoft 
 #### Power BI Premium Per User
 
 Power BI **Premium Per User** allows organizations to license Premium features on a per-user basis. Premium Per User (PPU) includes all Power BI Pro license capabilities, and adds features such as paginated reports, AI, and other capabilities that are only available to Premium subscribers. 
-For more information about Premium per user, including a feature comparison and other information, see the [Power BI Premium Per User](service-premium-per-user-faq.md) article. 
+For more information about Premium per user, including a feature comparison and other information, see the [Power BI Premium Per User](service-premium-per-user-faq.yml) article. 
 
 
 ## Reserved capacities
@@ -171,8 +171,8 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
-| P4 <sup>[1](#limit)</sup>| 64 | 32 | 200 | 32 | 240 | 48 |
-| P5 <sup>[1](#limit)</sup>| 128 | 64 | 400 | 64 | 480 | 96 |
+| P4/A7 <sup>[1](#limit)</sup>| 64 | 32 | 200 | 32 | 240 | 48 |
+| P5/A8 <sup>[1](#limit)</sup>| 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 
 <a name="limit">1</a> - By special request only. For very large models greater than 100 GB.
@@ -254,8 +254,11 @@ Monitoring in the portal provides a quick view with high-level metrics indicatin
 ![Screenshot shows capacity health in the Power B I Admin portal.](media/service-premium-what-is/premium-admin-portal-health.png)
 
 > [!NOTE]
-> **Updates for Premium Gen2 (Preview)** - Premium Gen2 only requires monitoring a single aspect: how much CPU time your capacity requires to serve the load at any moment. If you exceed your CPU time per the SKU size you purchased, your capacity either autoscales to accommodate the need, or throttles your interactive operations, based on your configuration settings.
-
+> **Updates for Premium Gen2 and Embedded Gen2 (Preview)** - Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) only require monitoring a single aspect: how much CPU time your capacity requires to serve the load at any moment.
+>
+>In Premium Gen2, if you exceed your CPU time per the SKU size you purchased, your capacity either autoscales to accommodate the need, or throttles your interactive operations, based on your configuration settings.
+>
+>In [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md), if you exceed your CPU time per the SKU size you purchased, your capacity throttles your interactive operations, based on your configuration settings. To autoscale in Embedded Gen 2, see [Autoscaling in Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md#autoscaling-in-embedded-gen2).
 
 The **Power BI Premium Capacity Metrics** app provides the most in-depth information into how your capacities are performing. The app provides a high-level dashboard and more detailed reports.
 
@@ -268,9 +271,9 @@ From the app's dashboard, you can click a metric cell to open an in-depth report
 To learn more about monitoring capacities, see [Monitoring in the Power BI Admin portal](service-admin-premium-monitor-portal.md) and [Monitoring with the Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capacity.md).
 
 #### Updates for Premium Gen2 (Preview)
-**Premium Gen2** capacities don't use the Metrics app, they use the Capacity Utilization App, which will be made available during the preview. 
+**Premium Gen2** and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) capacities don't use the Metrics app, they use the Capacity Utilization App, which will be made available during the preview. 
 
-You can download and install the metrics app for Premium Gen2 (Preview) using the [following link](https://aka.ms/GenutilizationInstall).
+You can download and install the metrics app for Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) (Preview) using the [following link](https://aka.ms/GenutilizationInstall).
 
 Customers wanting to review their utilization can receive a copy of their utilization report for the past 7 days by requesting one from customer support. The report will be supplied within 72 hours of the request. The Capacity Utilization App will be launched from your capacity management page in the **Admin portal** for each capacity, and will allow anlayis of 30 days of data and more.
 
@@ -308,7 +311,7 @@ Power BI datasets can store data in a highly compressed, in-memory cache for opt
 
 Your .pbix files represent data in a *highly compressed state*. The data will likely expand when loaded in memory, and from there it may expand several more times during data refresh.
 
-Scheduled refresh of large datasets can take a long time and be resource-intensive. It's important to not schedule too many overlapping refreshes. It's recommended [incremental refresh](service-premium-incremental-refresh.md) is configured, because it's faster, more reliable, and consumes fewer resources.
+Scheduled refresh of large datasets can take a long time and be resource-intensive. It's important to not schedule too many overlapping refreshes. It's recommended [incremental refresh](../connect-data/incremental-refresh-overview.md) is configured, because it's faster, more reliable, and consumes fewer resources.
 
 The initial report load of large datasets can take a long time if it has been a while since the last time the dataset was used. A loading bar for longer-loading reports displays the load progress.
 
@@ -316,11 +319,7 @@ While the per-query memory and time constraints are much higher in Premium capac
 
 ## Incremental refresh
 
-Incremental refresh provides an integral part of having and maintaining large datasets in Power BI Premium and Power BI Pro. Incremental refresh has many benefits, for example, Refreshes are faster because only data that has changed needs to be refreshed. Refreshes are more reliable because it's unnecessary to maintain long-running connections to volatile data sources. Resource consumption is reduced because less data to refresh reduces overall consumption of memory and other resources. Incremental refresh policies are defined in **Power BI Desktop**, and applied when published to a workspace in a Premium capacity. 
-
-![Refresh details](media/service-premium-incremental-refresh/refresh-details.png)
-
-To learn more, see [Incremental refresh in Power BI Premium](service-premium-incremental-refresh.md).
+Incremental refresh provides an integral part of having and maintaining large datasets in Power BI Premium and Power BI Pro. Incremental refresh has many benefits, for example, refreshes are faster because only data that has changed needs to be refreshed. Refreshes are more reliable because it's unnecessary to maintain long-running connections to volatile data sources. Resource consumption is reduced because less data to refresh reduces overall consumption of memory and other resources. Incremental refresh policies are defined in **Power BI Desktop**, and applied in the service. To learn more, see [Incremental refresh for datasets](../connect-data/incremental-refresh-overview.md).
 
 ## Paginated reports
 

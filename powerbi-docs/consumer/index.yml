@@ -1,27 +1,27 @@
 ### YamlMime:Landing
 
-title: Power BI documentation for consumers # < 60 chars
-summary: As a consumer, you receive dashboards and reports from colleagues. You work in Power BI to review and interact with this content to make business decisions. 
+title: Power BI documentation for business users # < 60 chars
+summary: As a business user or consumer, you receive dashboards and reports from colleagues. You work in Power BI to review and interact with this content to make business decisions. 
 
 metadata:
-  title: Power BI for consumers 
-  description: Getting started with Power BI? Get to know the features and capabilities of the Power BI service, and see what you can do with them as a Power BI consumer or end user.
+  title: Power BI for business users 
+  description: Getting started with Power BI? Get to know the features and capabilities of the Power BI service, and see what you can do with them as a Power BI business user.
   ms.service: powerbi
   ms.subservice: pbi-explore
   ms.topic: landing-page # Required
   author: mihart
   ms.author: mihart
-  ms.date: 03/22/2020
+  ms.date: 04/06/2021
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: About Power BI for consumers
+  - title: About Power BI for business users
     linkLists:
       - linkListType: overview
         links:
-          - text: What is a Power BI consumer?
+          - text: What is a Power BI business user?
             url: end-user-consumer.md
           - text: Take a tour of the Power BI service
             url: end-user-reading-view.md
@@ -108,7 +108,7 @@ landingContent:
           - text: Glossary
             url: end-user-glossary.md
           - text: FAQ
-            url: end-user-faq.md
+            url: end-user-faq.yml
           - text: Types of Insights
             url: end-user-insight-types.md
           - text: Types of visuals

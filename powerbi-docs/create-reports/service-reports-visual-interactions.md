@@ -4,7 +4,7 @@ description: Documentation for how to set Visual interactions in a Microsoft Pow
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-featuredvideoid: N_xYsCbyHPw
+ms.custom: video-N_xYsCbyHPw
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
@@ -67,12 +67,12 @@ If the selected visualization should:
 [Certain Power BI visualizations can be drilled](../consumer/end-user-drill.md). By default, when you drill a visualization, it has no impact on the other visualizations on the report page. But, that behavior can be changed. 
 
 > [!TIP]
-> Try it yourself using the [Human Resources sample PBIX file](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix). There's a column chart with drill down on the **New hires** tab.
+> Try it yourself using the [Human Resources sample PBIX file](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix). There's a column chart with a drill-down feature on the **New hires** tab.
 >
 
 1. Select the drillable visual to make it active. 
 
-2. Turn on drill down by selecting the drill down icon.
+2. Turn on the drill-down feature by selecting the drill-down icon.
 
     ![turn on drilling](media/service-reports-visual-interactions/power-bi-drill-down.png)
 

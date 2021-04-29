@@ -1,6 +1,6 @@
 ---
-title: Add Drill-Down support in Power BI embedded analytics for better embedded BI insights
-description: This article describes how to add drill-down support to Power BI Visuals. Enable better embedded BI insights using Power BI embedded analytics.
+title: Add drill-down support in Power BI 
+description: This article describes how to add drill-down support to Power BI Visuals.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -11,25 +11,25 @@ ms.topic: how-to
 ms.date: 06/18/2019
 ---
 
-# Add Drill-Down support
+# Add drill-down support
 
-Power BI visuals can use Power BI's drill-down.
+Power BI visuals can use the Power BI drill-down feature.
 
-Read more about Power BI drill-down [here](./../../consumer/end-user-drill.md)
+Read more about the Power BI drill-down feature [here](./../../consumer/end-user-drill.md)
 
 ## Enable drill-down support in the visual
 
-To support drill down in your visual, add a new field to `capabilities.json` named "drill-down", which has one property:
+To support drill-down actions in your visual, add a new field to `capabilities.json` named "drill-down", which has one property:
 
 ```json
-*roles - the name of the dataRole you want to enable drill-down on.
+*roles - the name of the dataRole you want to enable drill-down actions on.
 ```
 
 > [!NOTE]
 > The drill-down dataRole must be of `Grouping` type.
 > `max` property in the dataRole conditions must be set to 1.
 
-Once you add the role to drill-down, users can drag multiple fields into the data role.
+Once you add the role to the drill-down field, users can drag multiple fields into the data role.
 
 example:
 

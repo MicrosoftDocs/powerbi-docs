@@ -55,7 +55,7 @@ We recommend you use the [RDL Migration Tool](https://github.com/microsoft/RdlMi
 
 The tool automates the following tasks:
 
-* Checks for [unsupported data sources](../paginated-reports/paginated-reports-data-sources.md) and [unsupported report features](../paginated-reports/paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi)
+* Checks for [unsupported data sources](../paginated-reports/paginated-reports-data-sources.md) and [unsupported report features](../paginated-reports/paginated-reports-faq.yml#what-paginated-report-features-in-ssrs-aren-t-yet-supported-in-power-bi-)
 * Converts any _shared_ resources to _embedded_ resources:
   * Shared **data sources** become embedded data sources
   * Shared **datasets** become embedded datasets
@@ -97,7 +97,7 @@ The following SSRS item types, however, can't be migrated to Power BI:
 
 <sup>1</sup> The [RDL Migration Tool](https://github.com/microsoft/RdlMigration) automatically converts shared data sources and shared datasets—providing they're using supported data sources.
 
-If your RDL reports rely on features [not yet supported by Power BI paginated reports](../paginated-reports/paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi), you can plan to redevelop them as [Power BI reports](../consumer/end-user-reports.md). Even if your RDL reports can migrate, we recommend you consider modernizing them as Power BI reports, when it makes sense.
+If your RDL reports rely on features [not yet supported by Power BI paginated reports](../paginated-reports/paginated-reports-faq.yml#what-paginated-report-features-in-ssrs-aren-t-yet-supported-in-power-bi-), you can plan to redevelop them as [Power BI reports](../consumer/end-user-reports.md). Even if your RDL reports can migrate, we recommend you consider modernizing them as Power BI reports, when it makes sense.
 
 If your RDL reports need to retrieve data from _on-premises data sources_, they cannot use single sign-on (SSO). Currently, all data retrieval from these sources will be done by using the security context of the _gateway data source user account_. It's not possible for SQL Server Analysis Services (SSAS) to enforce row-level security (RLS) on a per-user basis.
 
@@ -188,9 +188,9 @@ For more information about this article, check out the following resources:
 - [What are paginated reports in Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 - [Data retrieval guidance for paginated reports](report-paginated-data-retrieval.md)
 - [When to use paginated reports in Power BI](report-paginated-or-power-bi.md)
-- [Paginated reports in Power BI: FAQ](../paginated-reports/paginated-reports-faq.md)
+- [Paginated reports in Power BI: FAQ](../paginated-reports/paginated-reports-faq.yml)
 - [Online course: Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md)
-- [Power BI Premium FAQ](../admin/service-premium-faq.md)
+- [Power BI Premium FAQ](../admin/service-premium-faq.yml)
 - [RDL Migration Tool](https://github.com/microsoft/RdlMigration)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)

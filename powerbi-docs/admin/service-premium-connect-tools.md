@@ -2,13 +2,13 @@
 title: Dataset connectivity and management with the XMLA endpoint in Power BI
 description: Describes Power BI Premium and Premium Per User dataset connectivity from client applications and tools by using the XMLA endpoint.
 author: Minewiskan
-ms.author: owend
+ms.author: davidi
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 03/24/2021
-ms.custom: seodec18
+ms.date: 04/19/2021
+ms.custom: ''
 LocalizationGroup: Premium
 ---
 
@@ -84,6 +84,9 @@ Users with UPNs in the same tenant (not B2B) can replace the tenant name with `m
 B2B users must specify their organization UPN in tenant name. For example,  
 `powerbi://api.powerbi.com/v1.0/fabrikam.com/Sales Workspace`.
 
+> [!NOTE]
+> To determine the primary domain name and ID of a Power BI tenant, sign into the Azure portal, select Azure Active Directory from the main menu, and then note the information on the Azure Active Directory Overview page. For more information, see [Find the Microsoft Azure AD tenant ID and primary domain name](https://aka.ms/tenant-id-and-domain-names).
+
 ### To get the workspace connection URL
 
 In workspace **Settings** > **Premium** > **Workspace Connection**, select **Copy**.
@@ -130,11 +133,21 @@ Server name aliases, supported in Azure Analysis Services are not supported for 
 
 ## Security
 
-In addition to the XMLA Endpoint property being enabled read-write by the capacity admin, the tenant-level setting **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** must be enabled in the admin portal. If you need to generate AIXL files that connect to the XMLA Endpoint, the tenant-level setting **Allow live connections** should also be enabled. These settings are both enabled by default.
+In addition to the XMLA Endpoint property being enabled read-write by the capacity admin, the tenant-level setting **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** must be enabled in the admin portal. If you need to generate Analyze in Excel (AIXL) files that connect to the XMLA Endpoint, the tenant-level setting **Allow live connections** should also be enabled. These settings are both enabled by default.
 
 **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** is an integration setting.
 
 :::image type="content" source="media/service-premium-connect-tools/allow-xmla-endpoints.png" alt-text="Integration setting allow XMLA endpoints.":::
+
+The following table describes the implications of the setting **Export data** for XMLA and Analyze in Excel (AIXL):
+
+
+|Setting  |Allow XMLA endpoints and Analyze in Excel with on-premises datasets = **disabled**  |Allow XMLA endpoints and Analyze in Excel with on-premises datasets = **enabled**  |
+|---------|---------|---------|
+|Export data = off     |XMLA *disallowed*, Analyze in Excel *disallowed*, AIXL for on-prem datasets *disallowed*         |XMLA *allowed*, Analyze in Excel *disallowed*, AIXL for on-prem datasets *allowed*         |
+|Export data = on     | XMLA *disallowed*, Analyze in Excel *allowed*, AIXL for on-prem datasets *disallowed*        | XMLA *allowed*, Analyze in Excel *allowed*, AIXL for on-prem datasets *allowed*        |
+
+
 
 **Allow live connections** is an export and sharing setting.
 
@@ -220,7 +233,7 @@ To learn more about using SSMS to script metadata, see [Create Analysis Services
 
 ## Dataset refresh
 
-The XMLA endpoint enables a wide range of scenarios for fine-grain refresh capabilities using SSMS, automation with PowerShell, [Azure Automation](/azure/automation/automation-intro), and [Azure Functions](/azure/azure-functions/functions-overview) using TOM. You can, for example, refresh certain [incremental refresh](service-premium-incremental-refresh.md) historical partitions without having to reload all historical data.
+The XMLA endpoint enables a wide range of scenarios for fine-grain refresh capabilities using SSMS, automation with PowerShell, [Azure Automation](/azure/automation/automation-intro), and [Azure Functions](/azure/azure-functions/functions-overview) using TOM. You can, for example, refresh certain [incremental refresh](../connect-data/incremental-refresh-overview.md) historical partitions without having to reload all historical data.
 
 Unlike configuring refresh in the Power BI service, refresh operations through the XMLA endpoint are not limited to 48 refreshes per day, and the [scheduled refresh timeout](../connect-data/refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout) is not imposed.
 

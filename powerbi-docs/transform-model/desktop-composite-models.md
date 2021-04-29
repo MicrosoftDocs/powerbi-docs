@@ -162,7 +162,7 @@ Additionally, the use of many-to-many relationships means that separate queries 
 
 This release of composite models presents a few limitations:
 
-Currently, [incremental refresh](../admin/service-premium-incremental-refresh.md) is supported for composite models connecting to SQL, Oracle, and Teradata data sources only.
+Currently, [incremental refresh](../connect-data/incremental-refresh-overview.md) is supported for composite models connecting to SQL, Oracle, and Teradata data sources only.
 
 The following Live Connect multi-dimensional sources can't be used with composite models:
 

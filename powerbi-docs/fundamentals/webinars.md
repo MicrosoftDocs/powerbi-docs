@@ -16,11 +16,20 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Upcoming webinars
 
+**Webinar Series: Mastering Data Modeling with Power BI
+Episode 2 - Learn Advanced Data Modeling with Power BI**  
+by Jeroen ter Heerdt and Marc Lelijveld  
+[Register to watch on May 19th, 10AM – 11AM PST, 2021](https://info.microsoft.com/ww-Landing-Mastering-Data-Modeling-with-PowerBI.html?LCID=EN-US)
+
 [Upcoming webinars from the Power BI community](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
 ## Featured webinars
 
 Get started with these popular on-demand webinars:
+
+**Securing your data in motion and at rest with Power BI**  
+by Anton Fritz and Yitzhak Kesselman  
+[Watch now](https://info.microsoft.com/ww-Landing-SecuringyourdatainmotionandatrestwithPowerBI.html?LCID=EN-US)
 
 **Webinar Series: Mastering Data Modeling with Power BI  
 Episode 1 - Data Modeling 101: Increasing the Impact of Power BI**  

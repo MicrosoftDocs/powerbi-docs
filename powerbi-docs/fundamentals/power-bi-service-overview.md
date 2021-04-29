@@ -5,7 +5,7 @@ author: mihart
 ms.author: mihart
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
-featuredvideoid: B2vd4MQrz4M
+ms.custom: video-B2vd4MQrz4M
 ms.topic: overview
 ms.date: 09/05/2019
 LocalizationGroup: Get started
@@ -33,6 +33,7 @@ This workflow is common, but you can also create Power BI reports right in the P
 After you've created reports and dashboards, you can share them so end users in the Power BI service and mobile devices can view and interact with them. Being able to control how you share your work is one of the most important features of the Power BI service. You create workspaces where you and your colleagues can collaborate on reports and dashboards. Then you can bundle and distribute them as apps. You can also share the datasets themselves, so others can use them as a basis for their own reports. Read more about [ways to share your work in Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
 
 ## Next steps
+
 - Quickstart for consumers: [Learn your way around the Power BI service](../consumer/end-user-experience.md)   
 - [Tutorial: Get started with the Power BI service](service-get-started.md)
 - [Quickstart: Connect to data in Power BI Desktop](../connect-data/desktop-quickstart-connect-to-data.md)

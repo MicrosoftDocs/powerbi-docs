@@ -102,7 +102,7 @@ For example, if you have a dataflow with three tables, no individual table can t
 
 If you are experiencing timeouts, consider optimizing your dataflow queries, and consider using [query folding](https://docs.microsoft.com/power-query/power-query-folding) on your source systems.
 
-Separately, consider upgrading to Premium Per User (currently in preview), which is not subject to these time-outs and offers increased performance due to many [Power BI Premium Per User features](../../admin/service-premium-per-user-faq.md).
+Separately, consider upgrading to Premium Per User (currently in preview), which is not subject to these time-outs and offers increased performance due to many [Power BI Premium Per User features](../../admin/service-premium-per-user-faq.yml).
 
 ### Long durations
 
@@ -122,7 +122,7 @@ The first step to improve long refresh durations for dataflows is to build dataf
 
 Next, it can help to evaluate whether you can use incremental refresh.
 
-Using [incremental refresh](../../admin/service-premium-incremental-refresh.md) can improve performance. It's important that the partition filters are pushed to the source system when queries are submitted for refresh operations. To push filtering down means the data source should support query folding, or you can express business logic through a function or other means that can help Power Query eliminate and filter files or folders. Most data sources that support SQL queries support query folding, and some OData feeds can also support filtering. 
+Using [incremental refresh](../../connect-data/incremental-refresh-overview.md) can improve performance. It's important that the partition filters are pushed to the source system when queries are submitted for refresh operations. To push filtering down means the data source should support query folding, or you can express business logic through a function or other means that can help Power Query eliminate and filter files or folders. Most data sources that support SQL queries support query folding, and some OData feeds can also support filtering. 
 
 However, data sources like flat files, blobs, and APIs typically do not support filtering. In cases where the filter is not supported by the data source back-end, it cannot be pushed down. In such cases, the mash-up engine compensates and applies the filter locally, which may require retrieving the full dataset from the data source. This can cause incremental refresh to be very slow, and the process can run out of resources either in the Power BI service or in the on-premises data gateway, if used.
 
@@ -204,7 +204,7 @@ When using a Power BI Pro license, dataflows refreshes are limited to 8 refreshe
 ## Next steps
 
 * [Using incremental refresh with dataflows](https://docs.microsoft.com/power-query/dataflows/incremental-refresh)
-* [Incremental refresh in Power BI](../../admin/service-premium-incremental-refresh.md)
+* [Incremental refresh for datasets](../../connect-data/incremental-refresh-overview.md)
 * [Troubleshooting refresh scenarios](../..//connect-data/refresh-troubleshooting-refresh-scenarios.md)
 * [Dataflows best practices](dataflows-best-practices.md)
 * [Premium features of dataflows](dataflows-premium-features.md)

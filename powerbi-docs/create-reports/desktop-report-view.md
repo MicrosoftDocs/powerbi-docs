@@ -78,6 +78,6 @@ There are a few considerations to keep in mind when hiding a report page:
 
 * You *cannot* see a hidden report page when viewing the report in the Power BI service.
 
-* Hiding a report page is *not* a security measure. The page can still be accessed by users, and its content is still accessible using drill-through, and other methods.
+* Hiding a report page is *not* a security measure. The page can still be accessed by users, and its content is still accessible using drillthrough, and other methods.
 
 * When a page is hidden, when in View mode, no view-mode navigation arrows are shown.

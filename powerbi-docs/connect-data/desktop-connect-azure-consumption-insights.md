@@ -4,7 +4,7 @@ description: Easily connect to Azure and gain insights about consumption and usa
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
@@ -91,7 +91,7 @@ Once the data you selected is loaded, the tables and fields you selected can be 
 ## Using Azure Consumption Insights
 To use the **Azure Consumption Insights** connector, you access to the Azure portal Enterprise features.
 
-Once you successfully load data using the **Azure Consumption Insights** connector, you can create your own custom measures and columns using **Query Editor**. You can also create visuals, reports, and dashboards for sharing in the **Power BI service**.
+Once you successfully load data using the **Azure Consumption Insights** connector, you can create your own custom measures and columns using **Power Query Editor**. You can also create visuals, reports, and dashboards for sharing in the **Power BI service**.
 
 With a blank query, you can retrieve a sample Azure custom queries collection. There are two ways you can do this retrieval: 
 
@@ -100,7 +100,7 @@ In **Power BI Desktop**:
 1. Select the **Home** ribbon 
 2. Select **Get Data** > **Blank Query** 
 
-Or, in **Query Editor**: 
+Or, in **Power Query Editor**: 
 
 1. Right-click in the left **Queries** pane 
 2. Select **New Query > Blank Query** from the menu that appears
@@ -132,7 +132,7 @@ The next steps show how to transition to the **Azure Consumption Insights** conn
 The first step is use the **Azure Consumption Insights** connector described in detail earlier in this article. In this step, select **Get Data > Blank Query** from the **Home** ribbon in **Power BI Desktop**.
 
 ### Step 2: Create a query in Advanced Editor
-In **Query Editor**, select **Advanced Editor** from the **Home** ribbon's **Query** section. In the **Advanced Editor** window that appears, enter this query:
+In **Power Query Editor**, select **Advanced Editor** from the **Home** ribbon's **Query** section. In the **Advanced Editor** window that appears, enter this query:
 
 ```console
 let    
@@ -167,7 +167,7 @@ Many dashboards have additional tables that are used for lookup or filtering, su
     ![Screenshot of Create relationship dialog. Select Manage Relationships.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_12.png)
 
 ### Step 5: Verify your visuals, and adjust field formatting as needed
-At this point, most of your original visuals, tables, and drill-downs should be working as expected. Some minor tweaks may be necessary, however, to precisely format the look and feel. Take a bit of time to look over each of your dashboards and visuals to ensure they look how you want them.
+At this point, most of your original visuals, tables, and drill-down actions should be working as expected. Some minor tweaks may be necessary, however, to precisely format the look and feel. Take a bit of time to look over each of your dashboards and visuals to ensure they look how you want them.
 
 ## Using the Azure Consumption and Insights (ACI) API to get consumption data
 Azure also provides the [**Azure Consumption and Insights (ACI) API**](https://azure.microsoft.com/blog/announcing-general-availability-of-consumption-and-charge-apis-for-enterprise-azure-customers/). You can create your own custom solutions to gathering, reporting, and visualizing Azure consumption information using the ACI API.

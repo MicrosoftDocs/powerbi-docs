@@ -5,6 +5,7 @@ author: paulinbar
 ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
+ms.custom: video-68YvRs49VZM
 ms.topic: how-to
 ms.date: 04/02/2021
 LocalizationGroup: Data from files
@@ -30,19 +31,21 @@ When data protection is enabled on your tenant, sensitivity labels appear in the
 ![Enable sensitivity labels](media/service-security-apply-data-sensitivity-labels/apply-data-sensitivity-labels-01.png)
 
 **To apply or change a sensitivity label on a report or dashboard**
-1. Click **More options (...)**.
-1. Select **Settings**.
-1. In the settings side pane choose the appropriate sensitivity label.
+
+1. Go to **Settings**.
+1. In the settings side pane, go to the Sensitivity label section and choose the appropriate sensitivity label.
 1. Save the settings.
 
 The following image illustrates these steps on a report
 
-![Set sensitivity labels](media/service-security-apply-data-sensitivity-labels/apply-data-sensitivity-labels-02.png)
+![Set sensitivity labels](media/service-security-apply-data-sensitivity-labels/downstream-inheritance-user-consent-checkbox.png)
+
+>[!NOTE]
+>If the label is greyed out, you may not have the correct [usage rights](service-security-sensitivity-label-change-enforcement.md) to change the label. If you need to change a sensitivity label and can’t, either ask the person who applied the label in the first place to modify it, or contact the Microsoft 365/Office security administrator and request the necessary [usage rights](service-security-sensitivity-label-change-enforcement.md) for the label.
 
 **To apply or change a sensitivity label on a dataset or dataflow**
 
-1. Click **More options (...)**.
-1. Select **Settings**.
+1. Go to **Settings**.
 1. Select the datasets or dataflows tab, whichever is relevant.
 1. Expand the sensitivity labels section and choose the appropriate sensitivity label.
 1. Apply the settings.
@@ -57,6 +60,9 @@ On the settings datasets tab, open the sensitivity label section, choose the des
 
 ![Choose sensitivity label](media/service-security-apply-data-sensitivity-labels/apply-data-sensitivity-labels-06.png)
 
+>[!NOTE]
+>If the label is greyed out, you may not have the correct [usage rights](service-security-sensitivity-label-change-enforcement.md) to change the label. If you need to change a sensitivity label and can’t, either ask the person who applied the label in the first place to modify it, or contact the Microsoft 365/Office security administrator and request the necessary [usage rights](service-security-sensitivity-label-change-enforcement.md) for the label.
+
 ## Apply sensitivity labels in Power BI Desktop (preview)
 
 To use sensitivity labels in Power BI Desktop:
@@ -66,6 +72,10 @@ To use sensitivity labels in Power BI Desktop:
 * All [licensing and other requirements](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements) must have been met.
 * You must be signed in.
 
+Watch a short video on applying sensitivity labels and then try it out yourself.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4M5Gj]
+
 To apply a sensitivity label on the file you're working on, click the sensitivity button in the home tab and choose the desired label from the menu that appears.
 
 ![Screenshot of sensitivity label menu in Desktop.](media/service-security-apply-data-sensitivity-labels/sensitivity-label-menu-desktop.png)
@@ -74,6 +84,8 @@ To apply a sensitivity label on the file you're working on, click the sensitivit
 > If the sensitivity button is greyed out, it may indicate that you don't have an appropriate license or that you do not belong to a security group that has permissions to apply sensitivity labels, as described in [Enable sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md).
 >
 >If you do not see the sensitivity button at all, go to **File > Options and settings > Options > Preview features**, and make sure that the ckeckbox next to **Information protection** is selected. If you don't see the Information protection preview option, the information protection preview feature may be blocked for your organization. In this case contact your Power BI administrator.
+>
+>If a particular label you wish to change is greyed out, you may not have the correct [usage rights](service-security-sensitivity-label-change-enforcement.md) to change that label. If you need to change a sensitivity label and can’t, either ask the person who applied the label in the first place to modify it, or contact the Microsoft 365/Office security administrator and request the necessary [usage rights](service-security-sensitivity-label-change-enforcement.md) for the label.
 
 After you've applied the label, it will be visible in the status bar.
 

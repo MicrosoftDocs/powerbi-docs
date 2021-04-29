@@ -7,14 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 08/20/2020
+ms.date: 04/15/2021
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
 
 # Track user activities in Power BI
 
-Knowing who is taking what action on which item in your Power BI tenant can be critical in helping your organization fulfill its requirements, like meeting regulatory compliance and records management. With Power BI, you have two options to track user activity: The [Power BI activity log](#use-the-activity-log) and the [unified audit log](#use-the-audit-log). These logs both contain a complete copy of the [Power BI auditing data](#operations-available-in-the-audit-and-activity-logs), but there are several key differences, as summarized in the following table.
+Knowing who is taking what action on which item in your Power BI tenant can be critical in helping your organization fulfill its requirements, like meeting regulatory compliance and records management. With Power BI, you have two options to track user activity: The [Power BI activity log](#use-the-activity-log) and the [unified audit log](#use-the-audit-log). 
+
+## Choosing a log source
+The Power BI Activity Log and unified audit log both contain a complete copy of the [Power BI auditing data](#operations-available-in-the-audit-and-activity-logs). However, we highly recommend using the Power BI Activity Log for the following reasons:
+
+- The Power BI Activity Log contains only the Power BI activities structured list of records (JSON array)
+- You do not need to be assigned the global admin role in Microsoft 365 to access the Power BI Activity Log
+
+The differences between log sources are summarized in the following table.
 
 | **Unified audit log** | **Power BI activity log** |
 | --- | --- |
@@ -70,16 +78,35 @@ completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 ```
 > [!NOTE]
 > It can take up to 24 hours for all events to show up, though full data is typically available much sooner.
->
->
+
+If the time span between startDateTime and endDateTime exceeds 1 hour, it takes multiple requests to download the data through continuationUri in response.
+
+The following example shows how to download data for 1 hour and 5 minutes:
+```
+GET https://wabi-staging-us-east-redirect.analysis.windows.net/v1.0/myorg/admin/activityevents?startDateTime='2020-08-13T07:55:00Z'&endDateTime='2020-08-13T09:00:00Z'
+{
+  "activityEventEntities": […],
+  "continuationUri": https://wabi-staging-us-east-redirect.analysis.windows.net/v1.0/myorg/admin/activityevents?continuationToken='LDIwMjAtMDgtMTNUMDc6NTU6MDBaLDIwMjAtMDgtMTNUMDk6MDA6MDBaLDEsLA%3D%3D',
+  "continuationToken": "LDIwMjAtMDgtMTNUMDc6NTU6MDBaLDIwMjAtMDgtMTNUMDk6MDA6MDBaLDEsLA%3D%3D",
+  "lastResultSet": false
+}
+
+GET https://wabi-staging-us-east-redirect.analysis.windows.net/v1.0/myorg/admin/activityevents?continuationToken='LDIwMjAtMDgtMTNUMDc6NTU6MDBaLDIwMjAtMDgtMTNUMDk6MDA6MDBaLDEsLA%3D%3D'
+{
+  "activityEventEntities": [],
+  "continuationUri": null,
+  "continuationToken": null,
+  "lastResultSet": false
+}
+```
+
+
+
 To learn more about using the Power BI REST API, including examples of how to get audit activity events, see [Admin - Get Activity Events](/rest/api/power-bi/admin/getactivityevents) in the Power BI REST API reference documentation.
 
 ### Get-PowerBIActivityEvent cmdlet
 
 Download activity events by using the Power BI Management cmdlets for PowerShell. The **Get-PowerBIActivityEvent** cmdlet  automatically handles the continuation token for you. The **Get-PowerBIActivityEvent** cmdlet takes a StartDateTime and an EndDateTime parameter with the same restrictions as the **ActivityEvents** REST API. In other words, the start date and end date must reference the same date value because you can only retrieve the activity data for one day at a time.
-
-> [!NOTE]
-> You can't run Get-PowerBIActivityEvent as the Azure service principal. Even if the service principal is assigned the Power BI service administrator role. 
 
 The following script demonstrates how to download all Power BI activities. The command converts the results from JSON into .NET objects for straightforward access to individual activity properties. These examples show the smallest and largest timestamps possible for a day to ensure no events are missed.
 

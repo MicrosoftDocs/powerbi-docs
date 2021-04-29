@@ -7,8 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 04/05/2021
-ms.custom: seodec18
+ms.date: 04/28/2021
+ms.custom: ''
 LocalizationGroup: Administration
 ---
 
@@ -128,7 +128,7 @@ Premium per user is a new way to license Premium features on a per user basis. T
 
    :::image type="content" source="media/service-admin-portal/premium-per-user-options.png" alt-text="Premium per user settings.":::
 
-Reference [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.md) to learn more about this licensing model.
+Reference [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.yml) to learn more about this licensing model.
 
 ## Audit logs
 
@@ -182,7 +182,7 @@ Admins can specify internal URLs to override the destination of links on the Pow
 
 * **Community**. To take users to an internal forum from the help menu, instead of to the [Power BI Community](https://community.powerbi.com/), set a custom URL for **Discussion forum**.
 
-* **Licensing upgrades**. Users with a Power BI (free) license may be presented with the opportunity to upgrade their account to Power BI Pro while using the service. Users who already hold a Power BI Pro license may be prompted to upgrade to a Power BI Premium Per User license. If you specify an internal URL for **Licensing requests**, you redirect users to an internal request and purchase flow and prevent self-service purchase. If you want to prevent users from buying licenses, but are okay with letting users start a Power BI Pro or Power BI Premium Per User trial, see [Allow users to try Power BI paid features](#allow-users-to-try-power-bi-paid-features) to separate the buy and try experiences.
+* **Licensing upgrades**. Users with a Power BI license may be presented with the opportunity to upgrade their account while using the service. If you specify an internal URL for **Licensing requests**, you redirect users to an internal request and purchase flow and prevent self-service purchase. If you want to prevent users from buying licenses, but are okay with letting users start a Power BI Pro or Power BI Premium Per User trial, see [Allow users to try Power BI paid features](#allow-users-to-try-power-bi-paid-features) to separate the buy and try experiences.
 
 * **Get help**. To take users to an internal help desk from the help menu, instead of to [Power BI Support](https://powerbi.microsoft.com/support/), set a custom URL for **Help Desk**.
 
@@ -297,7 +297,7 @@ Enabling this setting allows Azure Active Directory Business-to-Business (Azure 
 
 The **Invite external users to your organization** setting helps organizations choose whether new external users can be invited to the organization through Power BI sharing, permissions, and subscription experiences. If the setting is disabled, an external user who isn't already a guest user in the organization, can’t be added to the organization through Power BI.
 
-![Invite external users to your organization](media/service-admin-portal/inherit-from-data-sources-tenant-setting.png)
+![Invite external users to your organization](media/service-admin-portal/powerbi-admin-allow-invite-aad-b2b-guests.png)
 
 > [!IMPORTANT]
 > This setting was previously called “Share content with external users”. The revised name reflects more accurately what the setting does.
@@ -313,6 +313,15 @@ The following image shows the option to Allow external guest users to edit and m
 ![Allow external guest users to edit and manage content in the organization](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
 
 In the admin portal, you also control which users have permissions to invite external users to the organization. See [Share content with external users](#export-and-sharing-settings) in this article for details.
+
+### Show Azure Active Directory guests in lists of suggested people
+
+The **Show Azure Active Directory guests in lists of suggested people** setting helps organizations limit visibility of external users in sharing experiences. When disabled, Azure Active Directory (Azure AD) guest users are not shown in people picker suggested users lists. This helps prevent accidental sharing to external users and seeing which external users have been added to your organization through Power BI sharing UIs. 
+
+> [!IMPORTANT]
+> When the setting is set to disabled, you can still give permission to a guest user by providing their full email address in people pickers.  
+
+![Show Azure Active Directory guests in lists of suggested people](media/service-admin-portal/powerbi-admin-tenant-settings-guests-in-lists-suggested-people.png)
 
 ### Publish to web
 

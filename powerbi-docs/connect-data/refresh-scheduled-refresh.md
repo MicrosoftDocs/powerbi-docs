@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 06/06/2019
+ms.date: 04/16/2021
 LocalizationGroup: Data refresh
 ---
 
@@ -20,8 +20,8 @@ This article describes the options available for scheduled refresh for the [On-p
 
 To get to the **Scheduled refresh** screen:
 
-1. In the navigation pane, under **Datasets**, select **More options** (...) next to a dataset listed .
-2. Select **Schedule Refresh**.
+1. In the navigation pane, under **Datasets**, select **More options** (...) next to a dataset listed.
+2. Select **Schedule refresh**.
 
     ![Schedule Refresh](media/refresh-scheduled-refresh/dataset-menu.png)
 
@@ -30,8 +30,6 @@ To get to the **Scheduled refresh** screen:
 You see different options here depending on whether you have a personal, or enterprise, gateway online and available.
 
 If no gateway is available, you see **Gateway connection** disabled. You also see a message indicating how to install the personal gateway.
-
-![Gateway not configured](media/refresh-scheduled-refresh/gateway-not-configured.png)
 
 If you have a personal gateway configured and it's online, it's available to select. It shows offline if it's not available.
 
@@ -89,8 +87,8 @@ Certain datasets are supported against different gateways for scheduled refresh.
 
 **Power BI Desktop**
 
-* All online data sources shown in Power BI Desktop's **Get Data** and Query Editor.
-* All on-premises data sources shown in Power BI Desktop's **Get Data** and Query Editor except for Hadoop file (HDFS) and Microsoft Exchange.
+* All online data sources shown in Power BI Desktop's **Get data** and Power Query Editor.
+* All on-premises data sources shown in Power BI Desktop's **Get data** and Power Query Editor except for Hadoop file (HDFS) and Microsoft Exchange.
 
 **Excel**
 
@@ -100,7 +98,7 @@ Certain datasets are supported against different gateways for scheduled refresh.
 * All on-premises data sources shown in Power Pivot except for Hadoop file (HDFS) and Microsoft Exchange.
 
 > [!NOTE]
-> In Excel 2016 and later, Power Query is listed on the **Data** section of the ribbon, under **Get & Transform Data**.
+> In Excel 2016 and later, **Launch Power Query Editor** is available from **Get Data** in the **Data** ribbon.
 
 ### Power BI Gateway
 

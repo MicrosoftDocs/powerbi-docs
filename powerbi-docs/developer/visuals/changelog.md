@@ -1,6 +1,6 @@
 ---
-title: Power BI visuals API changelog in Power BI embedded analytics for better embedded BI insights
-description: This article describes main changes in different versions of Power BI visuals API. Enable better embedded BI insights using Power BI embedded analytics.
+title: Power BI visuals API changelog 
+description: This article describes main changes in different versions of Power BI visuals API.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -40,7 +40,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 ## API v2.2.0
   * Supports **[restoring JSON Filter from DataView](./filter-api.md#restore-the-json-filter-from-the-data-view)**
   * **[ContextMenu API](./context-menu.md)**
-  * Supports **[Drill through](../../create-reports/desktop-drillthrough.md)** feature
+  * Supports **[Drillthrough](../../create-reports/desktop-drillthrough.md)** feature
 
 ## API v2.1.0
   * Performance enhancements:

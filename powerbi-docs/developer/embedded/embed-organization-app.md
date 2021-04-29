@@ -26,7 +26,7 @@ In this tutorial, you'll learn how to embed:
 
 ## Prerequisites
 
-* A [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) or [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) license.
+* A [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) or [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) license.
 
     >[!NOTE]
     >The *embed for your organization* solution, is not supported on [capacities](embedded-capacity.md) based on *A* SKUs. An *A* SKU can only be used for the *embed for your customers* solution.
@@ -95,6 +95,9 @@ To embed your report, you'll need the following values:
 ### Domain and tenant ID
 
 If you don't know what's your domain or tenant ID, see [Find the Microsoft Azure AD tenant ID and primary domain name](/partner-center/find-ids-and-domain-names#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name).
+
+>[!NOTE]
+>To [embed content for a user on a different tenant](embedded-troubleshoot.md#azure-ad-token-for-a-different-tenant-guest-user) (a guest user), you'll need to adjust the `authorityUri` parameter.
 
 ### Client ID
 

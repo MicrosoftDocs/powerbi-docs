@@ -1,6 +1,6 @@
 ---
-title: Embed Power BI paginated reports in your Power BI embedded analytics application enabling better embedded BI insights to your organization
-description: In this tutorial, learn how to integrate or embed a Power BI paginated report into an application, using the Power BI APIs. Enable better embedded BI insights using Power BI embedded analytics.
+title: Embed Power BI paginated reports in your Power BI embedded analytics application
+description: In this tutorial, learn how to integrate or embed a Power BI paginated report into an application, using the Power BI APIs.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -37,12 +37,12 @@ To get started, you're required to have:
 
 * You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
 
-* At least a P1 capacity. See [What size Premium capacity do I need for paginated reports?](../../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)
+* At least a P1 capacity. See [What size Premium capacity do I need for paginated reports?](../../paginated-reports/paginated-reports-faq.yml#what-size-premium-capacity-do-i-need-for-paginated-reports-)
 
 If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
 >[!NOTE]
->[Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) is supported. However, if you're using PPU, only PPU users in your organization will be able to access your solution.
+>[Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) is supported. However, if you're using PPU, only PPU users in your organization will be able to access your solution.
 
 ## Set up your Power BI environment
 
