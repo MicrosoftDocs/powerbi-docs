@@ -67,7 +67,7 @@ The dotted line shows the best fit, and as such, data points above this line inc
 
 ![Scatter plot with dotted line](media/desktop-insights/insights_01b.png)
 
- that data items whose value was blank in either period will not appear on the scatter plot (for example, *Home Appliances* in this case)
+Note that data items whose value was blank in either period will not appear on the scatter plot (for example, *Home Appliances* in this case).
 
 ### The 100% stacked column chart
 
