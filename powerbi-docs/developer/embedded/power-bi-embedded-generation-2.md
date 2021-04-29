@@ -45,6 +45,20 @@ All of the Power BI Embedded Gen 1 capabilities such as pausing and resuming the
 
 Create an Embedded Gen2 capacity resource to take advantage of its updates. To create an Embedded Gen2 capacity resource, follow the instructions in [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 
+## Understanding Embedded Gen2
+
+Embedded Gen 2 has the same [architecture improvements](#premium-gen2-architecture-improvements), [capacity load evaluation](#premium-gen2-capacity-load-evaluation) and [background operation scheduling](#premium-gen2-background-operation-scheduling) as Premium Gen2.
+
+## Autoscaling in Embedded Gen2
+
+Embedded Gen2 does not provide an out-of-the-box vertical autoscale feature, so autoscaling up or down isn't possible. Instead, customers can configure autoscale using one of these options:
+
+* [Power BI Embedded Azure Resource Manager REST APIs](/rest/api/power-bi-embedded/), for example [Capacities - Update](/rest/api/power-bi-embedded/capacities/update).
+
+* Power BI Embedded Gen2 [capacity metrics](monitor-power-bi-embedded-reference.md#capacities) such as *CPU* and *Overload*.
+
+* [Azure alerts](/azure/azure-monitor/alerts/alerts-overview). You can use the Power BI Embedded [sample script](monitor-power-bi-embedded-reference.md#example-script-for-scaling-a-capacity) as a reference for scaling a capacity.
+
 ## Known limitations
 
 * Embedded Gen2 capacity utilization can't be tracked in the [metrics app](../../admin/service-admin-premium-monitor-capacity.md). For more information, see [Premium Gen2 monitor updates](../../admin/service-premium-what-is.md#updates-for-premium-gen2-preview).
@@ -56,6 +70,8 @@ Create an Embedded Gen2 capacity resource to take advantage of its updates. To c
 * Analysis services features in Embedded Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are listed in [Known limitations in Premium Gen2](../../admin/service-premium-what-is.md#limitations-in-premium-gen2).
 
 * All the current Azure metrics and log diagnostics for Power BI Embedded, support only Gen1 capacities.
+
+* For a list of Embedded Gen2 memory restrictions, see [memory restrictions in Premium Gen2 and Embedded Gen2](../../admin/service-premium-what-is.md#memory-restrictions).
 
 ## Next steps
 
