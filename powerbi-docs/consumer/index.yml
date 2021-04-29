@@ -108,7 +108,7 @@ landingContent:
           - text: Glossary
             url: end-user-glossary.md
           - text: FAQ
-            url: end-user-faq.md
+            url: end-user-faq.yml
           - text: Types of Insights
             url: end-user-insight-types.md
           - text: Types of visuals

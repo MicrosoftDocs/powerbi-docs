@@ -95,7 +95,6 @@ The amount of delay is proportionate to the amount of overload detected, as foll
 
 The capacity stays in *interactive request delay* mode if the previous evaluation is evaluated at greater than 100% resource utilization.
 
-
 ## Next steps
 
 * [What is Power BI Premium?](service-premium-what-is.md)
