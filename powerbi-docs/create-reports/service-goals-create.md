@@ -12,11 +12,14 @@ ms.date: 04/27/2021
 ---
 # Create scorecards and goals in Power BI
 
-Goals in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. In this tutorial, you will complete the following steps: 
+Goals in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. In this article, you complete the following steps: 
 
 - Create your first scorecard.
 - Create both manual and connected goals.
+- Edit a goal.
 - Share the scorecard with others.
+
+:::image type="content" source="media/service-goals-create/power-bi-goals-northwind.png" alt-text="Northwind scorecard with goals and subgoals.":::
 
 ## Prerequisites
 
@@ -85,18 +88,18 @@ You can also define one or more subgoals for your goal. There are two entry poin
 
     Make sure you have the goal selected so you can create subgoals.
 
-Once complete, you might have a scorecard that looks like the following image.
-
-:::image type="content" source="media/service-goals-create/power-bi-goals-northwind.png" alt-text="Northwind scorecard with goals and subgoals.":::
-
 ## Step 4 (Optional): Update the goal tracking cycle 
 
 All new goals created within scorecards have a default daily tracking cycle, which means that the data and progress are calculated on a day-to-day basis. However, many goals and metrics demand to be tracked on a different cadence. In those cases, you can change the default tracking cycle on the goal through goal settings. The tracking cycle doesn't impact data refresh.
 
-1. In Edit mode, select the name of any goal or subgoal. Power BI opens the **Details** pane.  
-2. Select the **Settings** tab. 
-3. Set the **tracking cycle** for your goal. 
-4. Choose a start date and select **Track**. 
+1. Open a scorecard and select **Edit**.
+
+   :::image type="content" source="media/service-goals-create/power-bi-goals-edit-scorecard.png" alt-text="Select the Edit pencil to edit the scorecard.":::
+
+1. Select the name of any goal or subgoal. Power BI opens the **Details** pane.  
+1. Select the **Settings** tab. 
+1. Set the **tracking cycle** for your goal. 
+1. Choose a start date and select **Track**. 
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-set-tracking-cycle.png" alt-text="Set the tracking cycle for your goal.":::
  

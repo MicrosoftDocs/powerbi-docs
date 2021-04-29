@@ -8,79 +8,58 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/22/2021
+ms.date: 04/29/2021
 ---
 # Stay on top of your goals in Power BI
 
 Goals in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. In addition to seeing all your goals in one view, scorecards make it easy for you to dig deeper into the data and make notes on important events. These features are covered in this section. 
 
-Goal details 
+## Check goal details 
 
-The goals details pane provides the entire history for the goal from the start date, including check-ins, status changes, and relevant notes. To access the details pane, simply navigate to a scorecard, and select on the goal name. Power BI should automatically show the details pane as the following image. 
+The goals Details pane provides the entire history for the goal from the start date, including check-ins, status changes, and relevant notes. 
 
-Graphical user interface, application, website
+- To access the details pane, open a scorecard and select the goal name. Power BI automatically shows the details pane.
 
-Description automatically generated 
+    :::image type="content" source="media/service-goals-check-in/power-bi-goals-details-pane.png" alt-text="The Details pane for a goal.":::
 
-Check-ins 
+## Check in
 
-The check-in experience within scorecards allows users to add or update the following: 
+The check-in experience within scorecards allows you to add or update the following: 
 
-Goal value* 
+- **Goal value**: The experience is different, depending on whether the goal is tracked manually or connected to data.
+- **Status** 
+- **Notes** 
 
-Status 
+### Manual values 
 
-Notes 
+1. In a scorecard, select the goal name.
+1. In the Details pane, select **New check-in**. 
+1. Complete the following actions in any order: 
 
-*Experience will vary depending on whether the goal is tracked manually vs. connected to data.  
+    Choose a **date**.
+    Enter a new or updated **value**.
+    Select a **status**.
+    Optionally, include a **note**. 
 
-Manual values 
+    :::image type="content" source="media/service-goals-check-in/power-bi-goals-new-check-in-manual.png" alt-text="Manual check-in, set date, value, status, and note.":::
 
-Hover on top of the goal or subgoal you want to create a check-in for.  
+1. Select **Save**. 
 
-Select on the check-in action. Power BI will open the goals details pane with the check-in experience open. 
+    :::image type="content" source="media/service-goals-check-in/power-bi-goals-check-in-posted.png" alt-text="Check-in is posted to goal.":::
 
-Follow the following actions in any order: 
+### Connected values 
 
-Choose a date 
+1. In a scorecard, select the goal name.
+1. In the Details pane, select **New check-in**. 
+1. Complete the following actions in any order: 
 
-Enter a new or updated value 
+    Choose a **date**. Choosing a date auto-populates the value for that day. You can't override a connected value. 
+    Select a **status**.
+    Optionally, include a **note**. 
 
-Select a status 
+    :::image type="content" source="media/service-goals-check-in/power-bi-goals-new-check-in-connected.png" alt-text="Check-in for a connected goal.":::
 
-Optionally, choose to include a note. 
-
-Graphical user interface, text, application, email
-
-Description automatically generated 
-
-Select Save. 
-
-Graphical user interface, text, application, email
-
-Description automatically generated 
-
-Connected values 
-
-Hover on top of the goal or subgoal you want to create a check-in for.  
-
-Select on the check-in action. Power BI will open the goals details pane with the check-in experience open. 
-
-Follow the following actions in any order: 
-
-Choose a date  
-
-Select a status 
-
-Optionally, choose to include a note. 
-
-Graphical user interface, text, application
-
-Description automatically generated 
-
-Note: Choosing a date will auto-populate the value for that day. You will not be able to override this in the connected data scenario. 
-
-Select Save. 
+1. Select **Save**. 
 
 ## Next steps
 
