@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 03/05/2021
+ms.date: 04/29/2021
 ---
 
 # Power BI Embedded Generation 2 (preview)
@@ -58,6 +58,9 @@ Embedded Gen2 does not provide an out-of-the-box vertical autoscale feature, so 
 * Power BI Embedded Gen2 [capacity metrics](monitor-power-bi-embedded-reference.md#capacities) such as *CPU* and *Overload*.
 
 * [Azure alerts](/azure/azure-monitor/alerts/alerts-overview). You can use the Power BI Embedded [sample script](monitor-power-bi-embedded-reference.md#example-script-for-scaling-a-capacity) as a reference for scaling a capacity.
+
+>[!TIP]
+>To monitor your Embedded Gen 2 capacity, you can use the [Premium Gen2 Monitoring App](../../admin/service-premium-gen2-metrics-app.md).
 
 ## Known limitations
 
