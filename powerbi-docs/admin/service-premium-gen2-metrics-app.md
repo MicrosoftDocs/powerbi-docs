@@ -16,6 +16,9 @@ With the release of **Power BI Premium Gen2 (preview)**, management of Premium c
 
 The **Premium Gen2 Monitoring App** provides straightforward utilization data that reveals what is causing capacity resource utilization, and can help you plan your capacity needs or help inform changes in resource demand.
 
+>[!TIP]
+>The **Premium Gen2 Monitoring App** is also applicable for [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md).
+
 ## Install the Gen2 monitoring app
 
 Capacity administrators can get the **Premium Gen2 Monitoring App** app from its [link location](https://aka.ms/GenutilizationInstall), or by selecting **Apps** section in the Power BI service, selecting the **Get apps** button, and then searching for **Premium Gen 2 Capacity Utilization Metrics**. 
