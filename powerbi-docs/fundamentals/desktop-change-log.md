@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 04/27/2021
+ms.date: 04/29/2021
 ---
 
 # Change log for Power BI Desktop
@@ -22,7 +22,7 @@ See [What's new in Power BI](desktop-latest-update.md) for more information abou
 
 Bug fixes/improvements:
 - Improvements in Microsoft Information Protection SDK hang detection and stop throwing "Unknown hard error" dialog.
-- Fix for corrupted credentials: users will not get the alert warning that their credentials can't be decrypted and that they may consider manually removing credentials folder (user.zip file).
+- Fix for corrupted credentials: users will not get the alert warning that their credentials can't be decrypted, now users may consider manually removing credentials folder (user.zip file) as a workaround.
 
 ## March 2021 QFE 1
 
