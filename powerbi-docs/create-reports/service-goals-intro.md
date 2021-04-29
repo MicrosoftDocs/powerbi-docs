@@ -54,14 +54,21 @@ A goal must have at least two values to show up in this section.
 
 The next section is a tabbed list. 
 
-- **Recent** is the scorecards you've visited most recently. Each item has a timestamp. 
-- **Favorites** are the scorecards you've starred (Star image). 
+:::image type="content" source="media/service-goals-intro/power-bi-goals-recent.png" alt-text="Recent goals on the Goals tab.":::
+
+- **Recent** are the scorecards you've visited most recently. Each item has a timestamp. 
+- **Favorites** are the scorecards you've starred.
+
+    :::image type="content" source="media/service-goals-intro/power-bi-goals-favorites.png" alt-text="Star your favorite scorecards.":::
+
 - **Shared with me** contains scorecards that your colleagues have shared with you. 
 - **All scorecards** lists all the scorecards you have access to. 
 
 ### Sample scorecards 
 
 The last section contains sample scorecards. As a new user, you can select one the pre-configured scorecards to check out what scorecards are all about. Selecting a sample opens the scorecard.
+
+:::image type="content" source="media/service-goals-intro/power-bi-goals-samples.png" alt-text="Sample scorecards with goals.":::
 
 ## Next steps
 
