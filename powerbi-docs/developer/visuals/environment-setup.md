@@ -28,9 +28,11 @@ In this article, you'll learn how to:
 
 *Node.js* is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows developers to run any apps created on JavaScript.
 
-1. To install *node.js*, in a web browser, navigate to [node.js](https://nodejs.org).
+To install *node.js*:
 
-2. Download the latest MSI installer.
+1. In a web browser, navigate to [node.js](https://nodejs.org).
+
+2. Download the latest recommended MSI installer.
 
 3. Run the installer, and then follow the installation steps. Accept the terms of the license agreement and all defaults.
 
@@ -42,11 +44,14 @@ The *pbiviz* tool, which is written using JavaScript, compiles the visual source
 
 The *pbiviz* package is a zipped Power BI visual project, with all the needed scripts and assets.
 
-1. Open Windows PowerShell and enter the following command.
+To install *pbiviz*, open Windows PowerShell and enter the following command.
 
-    ```powershell
-    npm i -g powerbi-visuals-tools
-    ```
+```powershell
+npm i -g powerbi-visuals-tools
+```
+
+>[!NOTE]
+>You might get some warnings when you run this command. They should not prevent *pbiviz* from installing.
 
 ## Create and install a certificate
 
@@ -68,9 +73,13 @@ This process describes running a PowerShell command that launches the **Certific
     This command does two things:
     * It returns a *passphrase*. In this case, the *passphrase* is 9765328806094.
     * It also starts the Certificate Import Wizard.
-    
+
     >[!div class="mx-imgBorder"]
     >![Screenshot of the p b i v i z command executed in Windows PowerShell](media/environment-setup/powershell-pbiviz.png)
+
+>[!NOTE]
+>* If you don't have permission to run pbiviz, start **PowerShell** as an administrator and run the command `Set-ExecutionPolicy RemoteSigned`, then try again.
+>* If the Certificate Import Wizard doesn't open automatically, navigate to the certificate location in **File Explorer**, right-click on it, and select *Install*.
 
 2. In the Certificate Import Wizard, verify that the store location is set to *Current User*, and select **Next**.
 
@@ -201,11 +210,12 @@ npm i powerbi-visuals-api --save-dev
 1. Open VS Code.
 
     >[!TIP]
-    >You can open VS Code from PowerShell by executing the following command:
+    >You can open **VS Code** from PowerShell by executing the following command from within the project folder:
     >
     >```powershell
     >code .
     >```
+
 2. In VS Code, open the **File** menu and select **Open Folder**.
 
     >[!div class="mx-imgBorder"]
@@ -232,4 +242,4 @@ npm i powerbi-visuals-api --save-dev
 > [Create a Power BI circle card visual](develop-circle-card.md)
 
 > [!div class="nextstepaction"]
-> [Create a Power BI bar chart visual](create-bar-chart.md)
+> [Create an R-powered Power BI visual](create-r-based-power-bi-desktop.md)
