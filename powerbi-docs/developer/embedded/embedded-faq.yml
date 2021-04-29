@@ -60,7 +60,7 @@ sections:
       - question: |
           Embedded Gen 2 (Preview)
         answer: |
-          This section addresses questions and answers for Power BI [Embedded Gen2](power-bi-embedded-generation-2), which is currently in preview.
+          This section addresses questions and answers for Power BI [Embedded Gen2](power-bi-embedded-generation-2.md), which is currently in preview.
 
       - question: |
           What is Power BI Embedded Generation 2?
