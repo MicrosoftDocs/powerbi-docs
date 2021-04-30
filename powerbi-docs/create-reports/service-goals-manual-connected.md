@@ -44,7 +44,7 @@ You can connect either the current or the target value, or both, to a value in a
 
 1. In the **Current** or **Target** field, select **Connect to data**.
 
-1. In the dialog, select the report with the data that you want to track.
+1. In the dialog, search for the report with the data that you want to track, select it > **Next**.
 
     :::image type="content" source="media/service-goals-manual-connected/power-bi-goals-select-report.png" alt-text="Select the report that contains the data value you want to connect to.":::
 
