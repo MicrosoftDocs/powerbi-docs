@@ -145,7 +145,7 @@
     - name: "Glossary and terminology"
       href: end-user-glossary.md
     - name: "Frequently asked questions"
-      href: end-user-faq.md
+      href: end-user-faq.yml
     - name: "Supported browsers"
       href: ../fundamentals/power-bi-browsers.md
     - name: "Types of Quick Insights"
