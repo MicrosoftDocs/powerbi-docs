@@ -3,12 +3,12 @@ title: Share Power BI reports and dashboards with coworkers and others
 description: How to share Power BI reports and dashboards with colleagues in and out of your organization, and what you need to know about sharing.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: lukaszp
+ms.reviewer: sunaraya
 ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/14/2021
+ms.date: 04/30/2021
 LocalizationGroup: Share your work
 ---
 # Share Power BI reports and dashboards with coworkers and others
@@ -90,11 +90,11 @@ Links for **People with existing access** do not have any additional settings be
 - Currently, sharing via links doesn’t support the option to **Include my changes**; however, you can continue using direct access sharing for this scenario.
 
 ## Manage permissions to a report
-To manage permission and manage links that give access to the report, select the context menu (. . .) in the upper right of the sharing dialog, and then select **Manage permissions**:
+To manage permission and manage links that give access to the report, select **More options (...)** in the upper right of the sharing dialog, and then select **Manage permissions**:
 
 ![Screenshot of Manage permissions.](media/service-share-dashboards/power-bi-share-manage-settings.png)
 
-This will launch the **Manage permissions** pane where you can copy or modify existing links or grant users direct access. To modify a given link, click the context menu (. . .).
+This will launch the **Manage permissions** pane where you can copy or modify existing links or grant users direct access. To modify a given link, select **More options (...)**.
 
 ![Screenshot of Manage permissions pane.](media/service-share-dashboards/manage-permissions-pane.png)
 
@@ -199,7 +199,7 @@ Things to keep in mind about sharing reports and dashboards:
 * Everyone can manually [refresh the data](../connect-data/refresh-data.md).
 * If you use Microsoft 365 for email, you can share with members of a distribution group by entering the email address associated with the distribution group.
 * Coworkers who share your email domain, and coworkers whose domain is different but registered within the same tenant, can share the dashboard with others. For example, say the domains contoso.com and contoso2.com are registered in the same tenant and your email address is konrads@contoso.com. Both ravali@contoso.com and gustav@contoso2.com can share your dashboard, as long as you give them permission to share.
-* If your coworkers already have access to a specific report or dashboard, you can send a direct link by copying the URL when you're on the dashboard or report. For example: `https://powerbi.com/reports/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`.
+* If your coworkers already have access to a specific report or dashboard, you can send a direct link by copying the URL when you're on the dashboard or report. For example: `https://app.powerbi.com/reports/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`.
 * Currently, sharing reports via links doesn’t support the option to **Include my changes**; however, you can use direct access sharing for this scenario.
 
 ## Next steps
