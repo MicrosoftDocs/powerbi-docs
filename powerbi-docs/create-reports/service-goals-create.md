@@ -1,5 +1,5 @@
 ---
-title: Create scorecards and goals
+title: Create scorecards and goals (preview)
 description: Create scorecards and goals in Power BI.
 author: maggiesMSFT
 ms.author: maggies
@@ -10,7 +10,7 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 04/27/2021
 ---
-# Create scorecards and goals in Power BI
+# Create scorecards and goals in Power BI (preview)
 
 Goals in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. In this article, you complete the following steps: 
 

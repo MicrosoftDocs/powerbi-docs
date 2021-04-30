@@ -1,5 +1,5 @@
 ---
-title: Stay on top of your goals in Power BI
+title: Stay on top of your goals in Power BI (preview)
 description: In addition to seeing all your goals in one view, scorecards make it easy for you to dig deeper into the data and make notes on important events.
 author: maggiesMSFT
 ms.author: maggies
@@ -10,11 +10,11 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 04/29/2021
 ---
-# Stay on top of your goals in Power BI
+# Stay on top of your goals in Power BI (preview)
 
 Goals in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. In addition to seeing all your goals in one view, scorecards make it easy for you to dig deeper into the data and make notes on important events. These features are covered in this section. 
 
-## Check goal details 
+## View goal details 
 
 The goals Details pane provides the entire history for the goal from the start date, including check-ins, status changes, and relevant notes. 
 
@@ -22,15 +22,15 @@ The goals Details pane provides the entire history for the goal from the start d
 
     :::image type="content" source="media/service-goals-check-in/power-bi-goals-details-pane.png" alt-text="The Details pane for a goal.":::
 
-## Check in
+## Check in to add or update goals
 
 The check-in experience within scorecards allows you to add or update the following: 
 
-- **Goal value**: The experience is different, depending on whether the goal is tracked manually or connected to data.
-- **Status** 
-- **Notes** 
+- **Goal value**: The experience is different, depending on whether you're tracking the goal [manually](#manual-values) or [connected to data](#connected-values).
+- **Status**.
+- **Notes**.
 
-### Manual values 
+### Manual values
 
 1. In a scorecard, select the goal name.
 1. In the Details pane, select **New check-in**. 

@@ -1,5 +1,5 @@
 ---
-title: Get started with goals in Power BI
+title: Get started with goals in Power BI (preview)
 description: Get started with an introduction to goals in Power BI
 author: maggiesMSFT
 ms.author: maggies
@@ -10,7 +10,7 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 04/27/2021
 ---
-# Get started with goals in Power BI
+# Get started with goals in Power BI (preview)
 
 Goals in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. This feature enhances data culture by promoting accountability, alignment, and visibility for teams and initiatives within organizations.
 
