@@ -49,7 +49,7 @@
     - name: "Azure diagnostic logging for Power BI Embedded"
       href: ./monitor-power-bi-embedded.md
     - name: "Embedding FAQ"
-      href: embedded-faq.md
+      href: embedded-faq.yml
   - name: How to
     items:        
     - name: "Embed using service principal"
@@ -109,9 +109,11 @@
     - name: "Power BI libraries"
       href: https://go.microsoft.com/fwlink/?linkid=848274
     - name: Azure CLI
-      href: /cli/azure/ext/powerbidedicated/powerbi
+      href: /cli/azure/powerbi
   - name: Resources
     items:
+    - name: "Power BI Dev Camp"
+      href: dev-camp-links.md    
     - name: "Developer center"
       href: https://powerbi.microsoft.com/en-us/developers/
     - name: "Embedding setup tool"

@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 04/30/2021
+
 LocalizationGroup: Connect to data
 ---
 # Connect to a Google BigQuery database in Power BI Desktop

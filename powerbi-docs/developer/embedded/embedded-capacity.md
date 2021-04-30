@@ -1,6 +1,6 @@
 ---
-title: Capacity and SKUs in Power BI embedded analytics enabling better embedded BI insights
-description: Understand capacity and SKUs in Power BI embedded analytics. Enable better embedded BI insights using Power BI embedded analytics.
+title: Capacity and SKUs in Power BI embedded analytics
+description: Understand capacity and SKUs in Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''

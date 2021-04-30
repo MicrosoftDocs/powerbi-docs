@@ -33,7 +33,7 @@ You create reports in Power BI Desktop. You create dashboards, and view dashboar
 | [![Windows devices](./media/mobile-apps-for-mobile-devices/win-10-logo-50-px.png)](../../fundamentals/desktop-getting-started.md) |The Power BI mobile app for Windows 10 runs on any Windows 10 device, including Windows 10 phones. Along with many of the features of the other mobile apps, the Power BI mobile app for Windows 10 offers special functionality. For example, you can [pin a Power BI dashboard to the Windows 10 Start screen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) from the Power BI mobile app. Plus you can [run Power BI in presentation mode on Surface Hub](mobile-windows-10-app-presentation-mode.md) and in the Power BI mobile app for Windows 10. <br/>Get started with the [Power BI mobile app for Windows 10 devices](mobile-windows-10-phone-app-get-started.md). |
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+>Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## Enterprise support for the Power BI mobile apps
 Organizations can use Microsoft Intune to manage devices and applications, including Power BI mobile apps for Android and iOS.

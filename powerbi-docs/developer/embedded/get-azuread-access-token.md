@@ -1,6 +1,6 @@
 ---
-title: Authenticate users and get Azure AD access token for your Power BI embedded analytics application to enhance customers embedded BI experience
-description: Learn how to register an application in Azure Active Directory for use with embedding Power BI content. Enable better embedded BI insights using Power BI embedded analytics.
+title: Authenticate users and get Azure AD access token for your Power BI embedded analytics application
+description: Learn how to register an application in Azure Active Directory for use with embedding Power BI content.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''

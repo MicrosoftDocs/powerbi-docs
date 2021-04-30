@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 04/09/2021
 LocalizationGroup: Data from files
 ---
 # Dataflows limitations and considerations
@@ -22,7 +22,7 @@ There are a few dataflow limitations across authoring, refreshes, and capacity m
 * *Depth* equates to dataflows linked to other dataflows. The current maximum depth is 32.
 * *Breadth* equates to entities within a dataflow.
     * There is no guidance or limits for the optimal number of entities is in a dataflow, however, shared dataflows have a refresh limit of two hours per entity, and three per dataflow. So if you have two entities, and each takes two hours, you shouldn't put them in the same dataflow.
-    * For Power BI Premium, guidance and limits are driven by individual use cases rather than specific requirements. The only for Power BI Premium is a 24-hour refresh per dataflow.
+    * For Power BI Premium, guidance and limits are driven by individual use cases rather than specific requirements. The only limit for Power BI Premium is a 24-hour refresh per dataflow.
 * A Power BI Premium subscription is required in order to refresh more than ten dataflows cross workspace
 * PowerQuery limitations are found in the PowerQuery Online usage limits article.
 * Power BI dataflows do not support use of global variables in a URL argument.

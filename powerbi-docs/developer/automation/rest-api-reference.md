@@ -1,6 +1,6 @@
 ---
-title: Power BI REST API reference in Power BI embedded analytics for better embedded BI insights
-description: Power BI REST API Reference. Enable better embedded BI insights using Power BI embedded analytics.
+title: Power BI REST API reference
+description: Power BI REST API Reference.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''

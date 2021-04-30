@@ -4,7 +4,7 @@ description: Documentation on how to use the Add tile widget to add an image, vi
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-featuredvideoid: e2PD8m1Q0vU
+ms.custom: video-e2PD8m1Q0vU, video-kOuINwgkEkQ, video-Cle_rKBpZ28
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to

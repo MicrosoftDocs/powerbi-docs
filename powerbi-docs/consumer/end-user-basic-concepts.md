@@ -4,7 +4,6 @@ description: The Power BI service apps, workspaces, dashboards, reports, dataset
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
-featuredvideoid: B2vd4MQrz4M
 ms.custom: video-B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: pbi-explore
