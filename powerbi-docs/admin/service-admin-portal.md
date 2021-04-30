@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 04/05/2021
+ms.date: 04/30/2021
 ms.custom: ''
 LocalizationGroup: Administration
 ---
@@ -286,18 +286,18 @@ To enable sensitivity label inheritance from data sources go to the [Power BI te
 ![Screenshot of Apply sensitivity labels from data sources to their data in Power BI tenant setting.](media/service-admin-portal/inherit-from-data-sources-tenant-setting.png)
 
 ### Restrict content with protected labels from being shared via link with everyone in your organization
-When this setting is enabled, users cannot generate sharing link for **People in your organization** for content with protection settings in the sensitivity label.
+When this setting is enabled, users can't generate a sharing link for **People in your organization** for content with protection settings in the sensitivity label.
 
-![Restrict content with protected labels from being shared via link with everyone in your organization](https://user-images.githubusercontent.com/47899466/116316169-63ee5a80-a766-11eb-8738-bb9e6d2f680b.PNG)
+![Restrict content with protected labels from being shared via link with everyone in your organization.](media/service-admin-portal/admin-restrict-content-protected-labels-enabled.png)
 
 > [!NOTE]
-> This setting will be disabled if you have not enabled both the **Allow users to apply sensitivity labels for Power BI content** setting and the **Allow shareable links to grant access to everyone in your organization** setting.
+> This setting is disabled if you haven't enabled both the **Allow users to apply sensitivity labels for Power BI content** setting and the **Allow shareable links to grant access to everyone in your organization** setting.
 
-Sensitivity labels with protection settings include encryption or content markings. For example, your organization may have a "Highly Confidential" label that includes encryption and applies a "Highly Confidential" watermark to content with this label. Therefore, when this tenant setting is enabled and a report has a sensitivity label with protection settings, then users will not be able to create sharing links for **People in your organization**: 
+Sensitivity labels with protection settings include encryption or content markings. For example, your organization may have a "Highly Confidential" label that includes encryption and applies a "Highly Confidential" watermark to content with this label. Therefore, when this tenant setting is enabled and a report has a sensitivity label with protection settings, then users can't create sharing links for **People in your organization**: 
 
-![Example of disabled sharing link to People in your organization](https://user-images.githubusercontent.com/47899466/116316094-4d480380-a766-11eb-8582-b129922959b8.PNG)
+![Example of disabled sharing link to People in your organization.](media/service-admin-porta/admin-organization-doesnt-allow-option.png)
 
-To learn more about protection settings for sensitivity labels, check out our [documentation](https://docs.microsoft.com/en-us/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide).
+To learn more about protection settings for sensitivity labels, check out the Microsoft 365 article [Restrict access to content by using sensitivity labels to apply encryption](microsoft-365/compliance/encryption-sensitivity-labels).
 
 ## Export and sharing settings
 
@@ -457,7 +457,7 @@ Read more about [sharing Power BI content to Teams](../collaborate-share/service
 ### Allow shareable links to grant access to everyone in your organization
 This tenant setting is available for admins looking to disable creating shareable links to **People in your organization**. You can find this option in the Admin portal by navigating to **Tenant settings** > **Export and sharing settings** > **Allow shareable links to grant access to everyone in your organization**.
 
-![Screenshot of allow shareable links to grant access to everyone in your organization setting](https://user-images.githubusercontent.com/47899466/116311371-0820d300-a760-11eb-881c-1c413ccf82c6.PNG)
+![Screenshot of allow shareable links to grant access to everyone in your organization setting.](media/service-admin-portal/allow-shareable-links-grant-access-everyone.png)
 
 As with other tenant settings, you can enable sharing links to **People in your organization** for:
 - **The entire organization**
@@ -466,7 +466,7 @@ As with other tenant settings, you can enable sharing links to **People in your 
 
 If this setting is disabled for a user with share permissions to a report, that user can only share the report via link to **Specific people** or **People with existing access**.
 
-![Screenshot showing share option disabled](media/service-admin-portal/admin-share-option-disabled.png)
+![Screenshot showing share option disabled.](media/service-admin-portal/admin-share-option-disabled.png)
 
 ## Content pack and app settings
 
