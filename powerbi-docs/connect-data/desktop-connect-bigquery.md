@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 09/30/2020
+ms.date: 04/30/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to a Google BigQuery database in Power BI Desktop
@@ -55,7 +55,7 @@ There are a few limits and considerations to keep in mind with the Google **BigQ
 
   These permissions typically are provided in the BigQuery.User role. For more information, see [Google BigQuery Predefined roles and permissions](https://cloud.google.com/bigquery/docs/access-control).
   
-  Please note : Starting April release of Power BI, if you are missing these permissions on an account, it will result in you seeing zero rows from any data queries. Please make sure that these specific permissions are set on the account that is being used to refresh a report or get data from any tables.
+  Beginning with the April 2021 release of Power BI, if you do not have adequate permissions, you will see zero rows returned from queries. Make sure the specific permissions described previously are set properly on the account being used, to enabling refreshing a report or retrieving data from any tables.
   
   If the above steps do not resolve the problem or if you want to disable the support for Storage API, change your query to the following:
   ```
