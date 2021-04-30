@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 04/05/2021
+ms.date: 04/28/2021
 ms.custom: ''
 LocalizationGroup: Administration
 ---
@@ -313,6 +313,15 @@ The following image shows the option to Allow external guest users to edit and m
 ![Allow external guest users to edit and manage content in the organization](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
 
 In the admin portal, you also control which users have permissions to invite external users to the organization. See [Share content with external users](#export-and-sharing-settings) in this article for details.
+
+### Show Azure Active Directory guests in lists of suggested people
+
+The **Show Azure Active Directory guests in lists of suggested people** setting helps organizations limit visibility of external users in sharing experiences. When disabled, Azure Active Directory (Azure AD) guest users are not shown in people picker suggested users lists. This helps prevent accidental sharing to external users and seeing which external users have been added to your organization through Power BI sharing UIs. 
+
+> [!IMPORTANT]
+> When the setting is set to disabled, you can still give permission to a guest user by providing their full email address in people pickers.  
+
+![Show Azure Active Directory guests in lists of suggested people](media/service-admin-portal/powerbi-admin-tenant-settings-guests-in-lists-suggested-people.png)
 
 ### Publish to web
 
