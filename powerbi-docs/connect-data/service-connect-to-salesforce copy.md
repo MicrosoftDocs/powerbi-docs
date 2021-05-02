@@ -25,7 +25,9 @@ In this article we will walk through the app using sample data, to give you an i
 
 1. Once you're on the App's AppSource page, click [**GET IT NOW**](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.salesforceanalytics).
 
-    [![Covid-19 US Tracking Report in AppSource](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-appsource-icon.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.salesforceanalytics)
+    [![Salesforce Analytics for Sales Managers in AppSource](media/service-connect-to-salesforce-copy/service-salesforce-analytics-appsource-icon.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.salesforceanalytics)
+
+![Salesforce Analytics for Sales Managers in AppSource](media/service-connect-to-salesforce-copy/service-salesforce-analytics-appsource-icon.png)
 
 1. When prompted , click **Install**. Once the app has installed, you will see it on your Apps page.
 
