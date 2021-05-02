@@ -1,6 +1,6 @@
 ---
-title: Add bookmark support for Power BI visuals in Power BI embedded analytics for better embedded BI insights
-description: Power BI visuals can handle. Enable better embedded BI insights using Power BI embedded analytics. bookmarks switching
+title: Add bookmark support for Power BI visuals
+description: Power BI visuals can handle bookmarks switching
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins

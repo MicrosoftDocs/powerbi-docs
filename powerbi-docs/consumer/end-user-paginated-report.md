@@ -83,14 +83,14 @@ Some paginated reports have many pages.  Use the page controls to navigate throu
 ### Export the paginated report
 You have a variety of options for exporting paginated reports, including PDF, Word, XML, PowerPoint, Excel, and more. When exporting, as much of the formatting as possible is preserved. Paginated reports exported to Excel, Word, PowerPoint, MHTML, and PDF, for example, keep the "pixel perfect" formatting. 
 
-![Screenshot showing an exported paginated report.](./media/end-user-paginated-report/power-bi-export-choices.png)
+![Screenshot showing the formats for exporting a paginated report.](./media/end-user-paginated-report/power-bi-export-menu.png)
 
 ![four different export types](./media/end-user-paginated-report/power-bi-four.png)
 
 ### Subscribe to the paginated report
 When you subscribe to a paginated report, Power BI sends you an email with the report as an attachment. In setting up your subscription, you choose how often you want to receive the emails: daily, weekly, hourly, or monthly. The subscription contains an attachment of the entire report output, up to 25MB in size. Export the entire report or choose the parameters ahead of time. Choose from many different attachment types, including Excel, PDF, PowerPoint, and more.  
 
-![Formats for subscribing](./media/end-user-paginated-report/power-bi-export-choices.png)
+![Export formats for subscribing.](./media/end-user-paginated-report/power-bi-export-subscription-choices.png)
 
 ## Considerations and troubleshooting
 

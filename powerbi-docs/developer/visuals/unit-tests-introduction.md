@@ -1,6 +1,6 @@
 ---
-title: Introduction to unit tests for Power BI visual projects in Power BI embedded analytics for better embedded BI insights
-description: This article describes how to write unit tests for Power BI visual projects. Enable better embedded BI insights using Power BI embedded analytics.
+title: Introduction to unit tests for Power BI visual projects
+description: This article describes how to write unit tests for Power BI visual projects.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins

@@ -59,8 +59,6 @@
         href: desktop-report-view.md
       - name: "Filters and highlighting in reports"
         href: power-bi-reports-filters-and-highlighting.md
-      - name: "High-density line sampling"
-        href: desktop-high-density-sampling.md
       - name: "About accessibility"
         href: desktop-accessibility-overview.md     
       - name: "Certificate revocation"
@@ -160,9 +158,9 @@
           href: power-bi-slicer-filter-responsive.md
         - name: "Add multiple fields to a slicer"
           href: power-bi-slicer-hierarchy-multiple-fields.md
-      - name: "Apply insights to explain fluctuations in visuals (preview)"
+      - name: "Apply insights to explain fluctuations in visuals"
         href: desktop-insights.md
-      - name: "Use insights to discover how distributions vary (preview)"
+      - name: "Use insights to discover how distributions vary"
         href: desktop-insights-find-where-different.md
       - name: "Create buttons"
         href: desktop-buttons.md
@@ -222,7 +220,7 @@
         href: power-bi-report-settings.md
       - name: "Feature reports on others' Home pages"
         href: ../collaborate-share/service-featured-content.md
-      - name: "Let consumers customize visuals (Preview)"
+      - name: "Let consumers customize visuals"
         href: power-bi-personalize-visuals.md
       - name: "Save a report"
         href: service-report-save.md
@@ -334,8 +332,10 @@
         href: ../visuals/desktop-ribbon-charts.md
       - name: "Scatter, bubble, and dot plot charts"
         href: ../visuals/power-bi-visualization-scatter.md
+      - name: "High-density line sampling"
+        href: desktop-high-density-sampling.md
       - name: "Use high-density scatter charts"
-        href: ../visuals/desktop-high-density-scatter-charts.md
+        href: desktop-high-density-scatter-charts.md
       - name: "Create small multiples (preview)"
         href: ../visuals/power-bi-visualization-small-multiples.md
       - name: "Interact with small multiples (preview)"
@@ -384,6 +384,8 @@
       items: 
       - name: Enter data directly in a paginated report
         href: ../paginated-reports/paginated-reports-enter-data.md
+      - name: Edit a paginated report from the Power BI service
+        href: ../paginated-reports/paginated-reports-edit-service.md
       - name: Create an embedded data source
         href: ../paginated-reports/paginated-reports-embedded-data-source.md
       - name: Create an embedded dataset

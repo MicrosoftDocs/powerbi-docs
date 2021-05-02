@@ -5,12 +5,11 @@ author: mihart
 ms.author: mihart
 manager: kvivek
 ms.reviewer: 'tessa'
-featuredvideoid: jtlLGRKBvXY
-ms.custom: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 12/21/2020
+ms.date: 04/28/2021
+ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY
 LocalizationGroup: Visualizations
 ---
 
@@ -269,5 +268,6 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
   - The first character of the text is one of the following: **=, @, +, -**
 
 - Power BI admins can disable the export of data.
+- If a dynamic format string is applied to a measure, the exported data would not preserve this formatting in Excel.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
