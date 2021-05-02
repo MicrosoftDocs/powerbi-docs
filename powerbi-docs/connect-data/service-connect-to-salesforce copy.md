@@ -30,7 +30,7 @@ In this article we will walk through the app using sample data, to give you an i
 
 1. When prompted , click **Install**. Once the app has installed, you will see it on your Apps page.
 
-   ![COVID-19 US Tracking Report on App page](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-apps-page-icon.png)
+   ![COVID-19 US Tracking Report on App page](media/service-connect-to-salesforce-copy/service-salesforce-analytics-apps-page-icon.png)
 
 ## Connect to data sources
 
@@ -38,7 +38,7 @@ In this article we will walk through the app using sample data, to give you an i
 
 1. Select the **Connect your data** link on the banner at the top of the page.
 
-   ![GitHub app connect your data link](media/service-connect-to-covid-19-tracking/power-bi-covid-19-connect-data.png)
+   ![GitHub app connect your data link](media/service-connect-to-salesforce-copy/power-bi-salesforce-analytics-connect-data.png)
 
 1. The parameters dialog will appear. There are no required parameters. Click **Next**.
 
