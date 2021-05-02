@@ -8,18 +8,33 @@ manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/18/2019
+ms.date: 04/25/2021
 ---
 
-# Add context menu to Power BI Visual
+# Add a context menu to your Power BI Visual
 
-You can use `selectionManager.showContextMenu()` with parameters `selectionId` and a position (as an `{x:, y:}` object) to have Power BI display a context menu for your visual.
+Right-clicking anywhere inside a visual's viewport (or long-press for touch devices) triggers a display of the context menu.
+There are two possible context menus that can be displayed depending on if you click on a datapoint or on empty space inside the visual:
+
+* Calling the context menu on empty space allows you to perform various operations on the visual, such as analyzing, summarizing, or copying it.
+
+    ![Context menu called on empty space](media/context-menu/context-menu-called-on-empty-space-in-barchart.png)
+
+* Calling the Context menu on a specific datapoint gives you additional options that can be applied to that datapoint. In this case the context menu contains *Include* and *Exclude* which will apply the corresponding filter options to that DataPoint.
+
+    ![Context menu called on datapoint](media/context-menu/datapoint-context-menu-in-barchart.png)
 
 > [!IMPORTANT]
-> The `selectionManager.showContextMenu()` was introduced in Visuals API 2.2.0.
+> All visuals published to AppSource must support both `ContextMenu` modes.
 
-Typically it's added as a right-click event (or long-press for touch devices)
-Context-Menu was added to the sample BarChart for reference:
+## How to add a context menu
+
+Use `selectionManager.showContextMenu()` with parameters `selectionId` and a position (as an `{x:, y:}` object) to have Power BI display a context menu for your visual.
+
+> [!NOTE]
+> The `selectionManager.showContextMenu()` is only available from Visuals API 2.2.0 and above.
+
+A context menu was added to the following sample BarChart for reference:
 
 ```typescript
     public update(options: VisualUpdateOptions) {
@@ -37,25 +52,10 @@ Context-Menu was added to the sample BarChart for reference:
         });
 ```
 
-
-## Context Menu call cases
-Right-clicking anywhere in a visual's viewport should trigger a display of the context menu.
-There are two scenarios of `contextMenu()` being called in a visual:
-
-* Context menu called on a specific datapoint
-
-    ![Context menu called on datapoint](media/context-menu/datapoint-context-menu-in-barchart.png)
-
-    In this case context menu contains "Include" and "Exclude" items which will apply corresponding filter options to the DataPoint.
-
-* Context menu called on empty space
-
-    ![Context menu called on empty space](media/context-menu/context-menu-called-on-empty-space-in-barchart.png)
-
-> [!IMPORTANT]
-> All visuals published to AppSource must support both `ContextMenu` modes.
-
 ## Next steps
 
-- [Add interactivity into visual by Power BI visuals selections](selection-api.md)
-- [Tooltips in Power BI visuals](add-tooltips.md)
+>[!div class="nextstepaction"]
+>[Make visual interactive](selection-api.md)
+
+>[!div class="nextstepaction"]
+>[Tooltips in Power BI visuals](add-tooltips.md)
