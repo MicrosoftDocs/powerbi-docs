@@ -27,7 +27,6 @@ In this article we will walk through the app using sample data, to give you an i
 
     [![Salesforce Analytics for Sales Managers in AppSource](media/service-connect-to-salesforce-copy/service-salesforce-analytics-appsource-icon.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.salesforceanalytics)
 
-![Salesforce Analytics for Sales Managers in AppSource](media/service-connect-to-salesforce-copy/service-salesforce-analytics-appsource-icon.png)
 
 1. When prompted , click **Install**. Once the app has installed, you will see it on your Apps page.
 
