@@ -84,11 +84,11 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
     ![Credentials false warning](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-06.png)
 - As this is confusing and incorrect, this is something we will take care of soon.
 
-- To be able to make a DirectQuery connection to a Power BI dataset your tenant needs to have ["Allow XMLA Endpoints and Analyze in Excel with on-premises datasets"](../admin/service-admin-portal.md#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) enabled.
+- To be able to make a DirectQuery connection to a Power BI dataset, your tenant needs to have ["Allow XMLA Endpoints and Analyze in Excel with on-premises datasets"](../admin/service-admin-portal.md#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) enabled.
 
 - For premium capacities, the ["XMLA endpoint" should be set to "Read/Write"](../admin/service-premium-connect-tools.md#to-enable-read-write-for-a-capacity).
 
-- If using a [classic workspace](../collaborate-share/service-create-workspaces.md) in combination with this feature it is not sufficient to set permissions on the dataset itself. For classic workspaces, all users accessing reports that leverage this feature must be members of the workspace. Consider [upgrading classic workspaces to new workspaces](../collaborate-share/service-upgrade-workspaces.md) to avoid this situation.
+- If using a [classic workspace](../collaborate-share/service-create-workspaces.md) in combination with this feature, it is not sufficient to set permissions on the dataset itself. For classic workspaces, all users accessing reports that leverage this feature must be members of the workspace. Consider [upgrading classic workspaces to new workspaces](../collaborate-share/service-upgrade-workspaces.md) to avoid this situation.
 
 - RLS rules will be applied on the source on which they are defined, but will not be applied to any other datasets in the model. RLS defined in the report will not be applied to remote sources, and RLS set on remote sources will not be applied to other data sources.
 
@@ -121,7 +121,7 @@ There are also a few **limitations** you need to keep in mind:
 
 - Defining RLS on tables from a remote source is not supported.
 
-- Using the following sources as a DirectQuery source is not supported:
+- Using any of the following sources as a DirectQuery source is not supported:
   - SQL Server Analysis Services (SSAS)
   - SAP HANA
   - SAP Business Warehouse
