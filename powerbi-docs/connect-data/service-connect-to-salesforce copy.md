@@ -21,16 +21,16 @@ In this article we will walk through the app using sample data, to give you an i
 
 ## Install the app
 
-1. Click the following link to get to the app: [Salesforce Analytics for Sales Managers template app](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.salesforceanalytics)
+1. Click the following link to get to the app: [Salesforce Analytics for Sales Managers template app.](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.salesforceanalytics)
 
 1. Once you're on the App's AppSource page, click [**GET IT NOW**](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.salesforceanalytics).
 
-    [![Salesforce Analytics for Sales Managers in AppSource](media/service-connect-to-salesforce-copy/service-salesforce-analytics-appsource-icon.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.salesforceanalytics)
+    [![Salesforce Analytics for Sales Managers in AppSource.](media/service-connect-to-salesforce-copy/service-salesforce-analytics-appsource-icon.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.salesforceanalytics)
 
 
 1. When prompted , click **Install**. Once the app has installed, you will see it on your Apps page.
 
-   ![COVID-19 US Tracking Report on App page](media/service-connect-to-salesforce-copy/service-salesforce-analytics-apps-page-icon.png)
+   ![Salesforce Analytics for Sales Managers on App page.](media/service-connect-to-salesforce-copy/service-salesforce-analytics-apps-page-icon.png)
 
 ## Connect to data sources
 
@@ -42,21 +42,17 @@ In this article we will walk through the app using sample data, to give you an i
 
 1. The parameters dialog will appear. There are no required parameters. Click **Next**.
 
-   ![Screenshot of the Covid-19 US Tracking Report parameters dialog.](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-parameters-dialog.png)
+   ![Screenshot of the Salesforce Analytics for Sales Managers parameters dialog.](media/service-connect-to-salesforce-copy/service-salesforce-analytics-parameters-dialog.png)
 
-1. The authentication method dialog will appear. Recommended values are prepopulated. Don't change these unless you have specific knowledge of different values.
+1. The authentication method dialog will appear. Recommended values are prepopulated. Don't change these unless you have specific knowledge of different values. Click **Sign in and connect**.
 
-    Click **Next**.
+   ![Screenshot of the Salesforce Analytics for Sales Managers authentication dialog.](media/service-connect-to-salesforce-copy/service-salesforce-analytics-authentication-dialog.png)
 
-   ![Screenshot of the Covid-19 US Tracking Report authentication dialog.](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-authentication-dialog.png)
-
-1. Click **Sign in**.
-
-   ![Screenshot of the Covid-19 US Tracking Report sign-in dialog.](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-signin-dialog.png)
+1. When prompted, sign into Salesforce. 
  
    The report will connect to the data sources and be populated with up-to-date data. During this time you will see sample data and that refresh is in progress.
 
-   ![Covid-19 US Tracking Report refresh in progress](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-refresh-monitor.png) 
+   ![Salesforce Analytics for Sales Managers refresh in progress](media/service-connect-to-salesforce-copy/service-salesforce-analytics-refresh-monitor.png) 
 
 ## What does the Sales manager dashboard tell us?
 
