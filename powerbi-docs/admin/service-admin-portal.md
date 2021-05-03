@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 04/28/2021
+ms.date: 04/30/2021
 ms.custom: ''
 LocalizationGroup: Administration
 ---
@@ -182,7 +182,7 @@ Admins can specify internal URLs to override the destination of links on the Pow
 
 * **Community**. To take users to an internal forum from the help menu, instead of to the [Power BI Community](https://community.powerbi.com/), set a custom URL for **Discussion forum**.
 
-* **Licensing upgrades**. Users with a Power BI license may be presented with the opportunity to upgrade their account while using the service. If you specify an internal URL for **Licensing requests**, you redirect users to an internal request and purchase flow and prevent self-service purchase. If you want to prevent users from buying licenses, but are okay with letting users start a Power BI Pro or Power BI Premium Per User trial, see [Allow users to try Power BI paid features](#allow-users-to-try-power-bi-paid-features) to separate the buy and try experiences.
+* **Licensing upgrades**. Users with a Power BI (free) license may be presented with the opportunity to upgrade their account to Power BI Pro while using the service. Users who already hold a Power BI Pro license may be prompted to upgrade to a Power BI Premium Per User license. If you specify an internal URL for **Licensing requests**, you redirect users to an internal request and purchase flow and prevent self-service purchase. If you want to prevent users from buying licenses, but are okay with letting users start a Power BI Pro or Power BI Premium Per User trial, see [Allow users to try Power BI paid features](#allow-users-to-try-power-bi-paid-features) to separate the buy and try experiences.
 
 * **Get help**. To take users to an internal help desk from the help menu, instead of to [Power BI Support](https://powerbi.microsoft.com/support/), set a custom URL for **Help Desk**.
 
@@ -285,6 +285,20 @@ To enable sensitivity label inheritance from data sources go to the [Power BI te
 
 ![Screenshot of Apply sensitivity labels from data sources to their data in Power BI tenant setting.](media/service-admin-portal/inherit-from-data-sources-tenant-setting.png)
 
+### Restrict content with protected labels from being shared via link with everyone in your organization
+When this setting is enabled, users can't generate a sharing link for **People in your organization** for content with protection settings in the sensitivity label.
+
+![Restrict content with protected labels from being shared via link with everyone in your organization.](media/service-admin-portal/admin-restrict-content-protected-labels-enabled.png)
+
+> [!NOTE]
+> This setting is disabled if you haven't enabled both the **Allow users to apply sensitivity labels for Power BI content** setting and the **Allow shareable links to grant access to everyone in your organization** setting.
+
+Sensitivity labels with protection settings include encryption or content markings. For example, your organization may have a "Highly Confidential" label that includes encryption and applies a "Highly Confidential" watermark to content with this label. Therefore, when this tenant setting is enabled and a report has a sensitivity label with protection settings, then users can't create sharing links for **People in your organization**: 
+
+![Example of disabled sharing link to People in your organization.](media/service-admin-portal/admin-organization-doesnt-allow-option.png)
+
+To learn more about protection settings for sensitivity labels, check out the Microsoft 365 article [Restrict access to content by using sensitivity labels to apply encryption](/microsoft-365/compliance/encryption-sensitivity-labels).
+
 ## Export and sharing settings
 
 ### Allow Azure Active Directory guest users to access Power BI
@@ -313,15 +327,6 @@ The following image shows the option to Allow external guest users to edit and m
 ![Allow external guest users to edit and manage content in the organization](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
 
 In the admin portal, you also control which users have permissions to invite external users to the organization. See [Share content with external users](#export-and-sharing-settings) in this article for details.
-
-### Show Azure Active Directory guests in lists of suggested people
-
-The **Show Azure Active Directory guests in lists of suggested people** setting helps organizations limit visibility of external users in sharing experiences. When disabled, Azure Active Directory (Azure AD) guest users are not shown in people picker suggested users lists. This helps prevent accidental sharing to external users and seeing which external users have been added to your organization through Power BI sharing UIs. 
-
-> [!IMPORTANT]
-> When the setting is set to disabled, you can still give permission to a guest user by providing their full email address in people pickers.  
-
-![Show Azure Active Directory guests in lists of suggested people](media/service-admin-portal/powerbi-admin-tenant-settings-guests-in-lists-suggested-people.png)
 
 ### Publish to web
 
@@ -449,10 +454,10 @@ This setting allows organizations to hide the **Share to Teams** buttons in the 
 
 Read more about [sharing Power BI content to Teams](../collaborate-share/service-share-report-teams.md).
 
-### Allow shareable links to grant access to all people in your organization
-This tenant setting is available for admins looking to disable creating shareable links to **People in your organization**. You can find this option in the Admin portal by navigating to **Tenant settings** > **Export and sharing settings** > **Allow shareable links to grant access to all people in your organization**.
+### Allow shareable links to grant access to everyone in your organization
+This tenant setting is available for admins looking to disable creating shareable links to **People in your organization**. You can find this option in the Admin portal by navigating to **Tenant settings** > **Export and sharing settings** > **Allow shareable links to grant access to everyone in your organization**.
 
-![Screenshot of allow shareable links to grant access to all People in your organization setting](media/service-admin-portal/admin-allow-shareable-links.png)
+![Screenshot of allow shareable links to grant access to everyone in your organization setting.](media/service-admin-portal/allow-shareable-links-grant-access-everyone.png)
 
 As with other tenant settings, you can enable sharing links to **People in your organization** for:
 - **The entire organization**
@@ -461,7 +466,7 @@ As with other tenant settings, you can enable sharing links to **People in your 
 
 If this setting is disabled for a user with share permissions to a report, that user can only share the report via link to **Specific people** or **People with existing access**.
 
-![Screenshot showing share option disabled](media/service-admin-portal/admin-share-option-disabled.png)
+![Screenshot showing share option disabled.](media/service-admin-portal/admin-share-option-disabled.png)
 
 ## Content pack and app settings
 
