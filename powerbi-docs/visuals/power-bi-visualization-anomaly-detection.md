@@ -8,20 +8,16 @@ ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.custom: video-RE4M2hp
 ms.topic: how-to
-ms.date: 03/25/2021
+ms.date: 05/03/2021
 LocalizationGroup: Visualizations
 ---
-# Anomaly detection (preview)
+# Anomaly detection
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 Anomaly detection helps you enhance your line charts by automatically detecting anomalies in your time series data. It also provides explanations for the anomalies to help with root cause analysis.  With just a couple of clicks, you can easily find insights without slicing and dicing the data. You can create and view anomalies in both Power BI Desktop and the Power BI service. The steps and illustrations in this article are from Power BI Desktop.
 
  >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4M2hp]
-
-This feature is in preview, so you first need to turn on the feature switch. Go to **File** > **Options and Settings** > **Options** > **Preview features**, and make sure **Anomaly detection** is turned on:
-
-:::image type="content" source="media/power-bi-visualization-anomaly-detection//preview-feature-switch.png" alt-text="Screenshot showing how to enable Anomaly detection preview feature switch.":::
  
 ## Get started
 This tutorial uses online sales data for various products.To follow along with this tutorial, download the [sample file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix) of an online-sales scenario.
