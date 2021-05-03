@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/08/2019
+ms.date: 05/05/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to data by using Power BI Desktop generic interfaces 
@@ -17,7 +17,7 @@ You can connect to a multitude of different data sources in **Power BI Desktop**
 ![Screenshot of the Get Data dialog, showing the O D B C selection.](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_1.png)
 
 ## Power BI Desktop data interfaces
-**Power BI Desktop** includes an ever-growing collection of data connectors that are built to connect to a specific data source. For example, the **SharePoint List** data connector provides specific fields and supporting information during the connection sequence that are designed for **SharePoint Lists**, which is the case with other data sources found in the window that appears when you select **Get Data > More...** (shown in the previous image).
+**Power BI Desktop** includes an ever-growing collection of data connectors that are built to connect to a specific data source. For example, the **SharePoint List** data connector provides specific fields and supporting information during the connection sequence that are designed for **SharePoint Lists**, which is the case with other data sources found in the window that appears when you select **Get data > More...** from the **Home** ribbon.
 
 In addition, **Power BI Desktop** lets you connect to data sources that aren't identified in the **Get Data** lists, by using one of the following generic data interfaces:
 
@@ -66,7 +66,7 @@ The following list details a few examples of the data sources to which **Power B
 | OLE DB |Sybase OLE DB |[Sybase provider for OLE DB](http://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.dc35888.1550/doc/html/jon1256941734395.html) |
 
 ## Data sources accessible through OData
-The **OData** connector in **Power BI Desktop** lets you import data from any **OData** URL simply by typing in or pasting the **OData** URL. You can add multiple URL parts by typing or pasting those links in the text boxes provided in the **OData Feed** window.
+The **OData** connector in **Power BI Desktop** lets you import data from any **OData** URL simply by typing in or pasting the **OData** URL. You can add multiple URL parts by typing or pasting those links in the text boxes provided in the **OData feed** window.
 
 ![Screenshot of the OData Feed dialog, showing the U R L parts and preview fields.](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_4.png)
 
