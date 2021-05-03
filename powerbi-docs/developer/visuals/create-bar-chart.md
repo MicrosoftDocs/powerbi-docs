@@ -204,49 +204,18 @@ function visualTransform(options: VisualUpdateOptions, host: IVisualHost): BarCh
 
 ```
 
-## Color 
-Color is exposed as one of the services available on `IVisualHost`.
+## Color
 
-### Add color to data points
-Each data point is represented by a different color. You add color to the `BarChartDataPoint` interface.
+Color is one of the services available on `IVisualHost`.
 
-```typescript
-/**
- * Interface for BarChart data points.
- *
- * @interface
- * @property {number} value    - Data value for the point.
- * @property {string} category - Corresponding category of the data value.
- * @property {string} color    - Color corresponding to the data point.
- */
-interface BarChartDataPoint {
-    value: number;
-    category: string;
-    color: string;
-};
-```
-
-### The colorPalette service
-The `colorPalette` service manages the colors used in your visual. Its instance is available on `IVisualHost`.
-
-### Assign color to data points
-You defined `visualTransform` as a construct to convert `dataView` to a view model that a bar chart can use. Because you iterate through the data points in `visualTransform`, it's also the ideal place to assign colors.
-
-```typescript
-let colorPalette: IColorPalette = host.colorPalette; // host: IVisualHost
-for (let i = 0, len = Math.max(category.values.length, dataValue.values.length); i < len; i++) {
-    barChartDataPoints.push({
-        category: category.values[i],
-        value: dataValue.values[i],
-        color: colorPalette.getColor(category.values[i]).value,
-    });
-}
-```
+For instructions on how to add color to your bar chart go to [Add colors to your Power BI visual](add-colors-power-bi-visual.md)
 
 ## Selection and interactions
+
 Selection lets the user interact both with your visual and other visuals. 
 
 ### Add selection to each data point
+
 Since each data point is unique, add selection to each data point. You add the selection property on the `BarChartDataPoint` interface.
 
 ```typescript
@@ -269,6 +238,7 @@ interface BarChartDataPoint {
 ```
 
 ### Assign selection IDs to each data point
+
 Since you iterate through the data points in `visualTransform`, it's also the ideal place to create selection IDs. The host variable is an `IVisualHost`, which contains services that the visual may use, such as color and selection builder. 
 
 Use the `createSelectionIdBuilder` factory method on `IVisualHost` to create a new selection ID. Create a new selection builder for each data point.
@@ -291,6 +261,7 @@ for (let i = 0, len = Math.max(category.values.length, dataValue.values.length);
 For more information, see [Create an instance of the selection builder](./selection-api.md#create-an-instance-of-the-selection-builder).
 
 ### Interact with data points
+
 You can interact with each bar of the bar chart once a selection ID is assigned to the data point. The bar chart listens to `click` events.
 
 Use the `selectionManager` factory method on `IVisualHost` to create a selection manager for cross filtering and clearing selections.
@@ -326,6 +297,7 @@ You can toggle objects on or off in the **Property** pane.
 ![Objects in the Property pane](./media/create-bar-chart/property-pane.png)
 
 ### Define objects in capabilities
+
 Define an `objects` property inside your *capabilities.json* file for objects to display in the **Property** pane.
 - `enableAxis` is the internal name that the `dataView` references. 
 - `displayName` is the name shown on the **Property** pane.
@@ -386,6 +358,7 @@ interface BarChartSettings {
 ```
 
 ### Define and use ObjectEnumerationUtility
+
 Object property values are available as metadata on the `dataView`, but there's no service to help retrieve these properties. `ObjectEnumerationUtility` is a set of static functions you can use to retrieve object values from the `dataView`, and for other visual projects. The `ObjectEnumerationUtility` is optional, but is great for iterating through the `dataView` to retrieve object properties.
 
 ```typescript
@@ -420,6 +393,7 @@ export function getValue<T>(objects: DataViewObjects, objectName: string, proper
 See [objectEnumerationUtility.ts](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/objectEnumerationUtility.ts) for source code.
 
 ### Retrieve property values from dataView
+
 The `visualTransform` is the ideal place to manipulate the visual's view model. To continue this pattern, retrieve the object properties from the `dataView`.
 
 Define the default state of the property, and use `getValue` to retrieve the property from the `dataView`.
@@ -439,6 +413,7 @@ let barChartSettings: BarChartSettings = {
 ```
 
 ### Populate Property pane with enumerateObjectInstances
+
 The `enumerateObjectInstances` optional method on `IVisual` enumerates through all objects and places them within the **Property** pane. Each object is called with `enumerateObjectInstances`. The object's name is available on `EnumerateVisualObjectInstancesOptions`.
 
 For each object, define the property with its current state.
@@ -470,6 +445,7 @@ public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions):
 ```
 
 ### Control property update logic
+
 Once an object is added to the **Property** pane, each toggle triggers an update. Add specific object logic in `if` blocks:
 
 ```typescript
@@ -480,12 +456,15 @@ if(settings.enableAxis.show) {
 ```
 
 ## Databound objects
+
 Databound objects are similar to static objects, but typically deal with data selection. For example, you can change the color associated with the data point.
 
 ![Databound object properties](./media/create-bar-chart/object-databound-property.png)
 
 ### Define object in capabilities
-Similar to static objects, define another object in the *capabilities.json*. 
+
+Similar to static objects, define another object in the *capabilities.json*.
+
 - `colorSelector` is the internal name that the `dataView` references.
 - `displayName` is the name shown on the **Property** pane.
 - `fill` is a structural object value not associated with a primitive type.
@@ -511,6 +490,7 @@ Similar to static objects, define another object in the *capabilities.json*.
 For more information, see [Objects](./objects-properties.md).
 
 ### Use ObjectEnumerationUtility
+
 As with static objects, you need to retrieve object details from the `dataView`. However, instead of the object values being within metadata, the object values are associated with each category.
 
 ```typescript
@@ -546,6 +526,7 @@ export function getCategoricalObjectValue<T>(category: DataViewCategoryColumn, i
 See [objectEnumerationUtility.ts](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/objectEnumerationUtility.ts) for source code.
 
 ### Define default color and retrieve categorical object from dataView
+
 Each color is now associated with each category inside `dataView`. You can set each data point to its corresponding color.
 
 ```typescript
@@ -568,6 +549,7 @@ for (let i = 0, len = Math.max(category.values.length, dataValue.values.length);
 ```
 
 ### Populate Property pane with enumerateObjectInstances
+
 Use `enumerateObjectInstances` to populate the **Property** pane with objects. 
 
 For this instance, add a color picker to render each category on the **Property** pane. To do this, add an additional case to the `switch` statement for `colorSelector`, and iterate through each data point with the associated color. 
@@ -625,8 +607,9 @@ Each item in the array `dataViews[0].categorical.categories[0].objects` correspo
 
 The function `getCategoricalObjectValue` just provides a convenient way of accessing properties by their category index. You must provide an `objectName` and `propertyName` that match the object and property in *capabilities.json*.
 
-## Other features 
-You can add a slider control or tooltips to the bar chart. For the code to add, see the commits at [Add a property pane slider to control opacity](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/e2e0bc5888d9a3ca305a7a7af5046068645c8b30) and [Add support for tooltips](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14). For more information about tooltips, see [Tooltips in Power BI visuals](./add-tooltips.md).
+## Other features
+
+You can add a slider control or [tooltips](add-tooltips.md) to the bar chart. For the code to add, see the commits at [Add a property pane slider to control opacity](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/e2e0bc5888d9a3ca305a7a7af5046068645c8b30) and [Add support for tooltips](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14). For more information about tooltips, see [Tooltips in Power BI visuals](./add-tooltips.md).
 
 ## Packaging
 
@@ -635,7 +618,8 @@ Before you can load your visual into [Power BI Desktop](https://powerbi.microsof
 ```bash
 pbiviz package
 ```
-This command creates a *pbiviz* file in the *dist/* directory of your visual project, and overwrites any *pbiviz* file from previous package operations.
+
+This command creates a *pbiviz* file in the *dist/* directory of your visual project, and overwrites any previous *pbiviz* file that might exist.
 
 ## Next steps
 
