@@ -7,11 +7,11 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/06/2020
+ms.date: 05/03/2021
 ms.custom: video-01UrT-z37sw
 LocalizationGroup: Visualizations
 ---
-# Create smart narrative summaries (preview)
+# Create smart narrative summaries
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
@@ -22,13 +22,6 @@ The smart narrative visualization helps you quickly summarize visuals and report
 ![Screenshot showing a smart narrative summary on the right side of a report.](media/power-bi-visualization-smart-narratives/1.png)
 
 Use smart narrative summaries in your reports to address key takeaways, to point out trends, and to edit the language and format for a specific audience. In PowerPoint, instead of pasting a screenshot of your report's key takeaways, you can add narratives that are updated with every refresh. Your audience can use the summaries to understand the data, get to key points faster, and explain the data to others.
-
->[!NOTE]
-> Because the smart narrative feature is in preview, you must turn it on if you want to use it. In Power BI, go to **File** > **Options and Settings** > **Options** > **Preview features**. Then select **Smart narrative visual**.
->
->![Screenshot showing Power BI Options. The Smart narrative visual option is selected.](media/power-bi-visualization-smart-narratives/2.png)
-
-
 
 ## Get started 
 Watch Justyna show you how to use smart narratives, then try it out yourself using the tutorial, below the video.  To follow along with this tutorial, download the [sample file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix) of an online-sales scenario.
@@ -92,7 +85,7 @@ The smart narrative feature doesn't support the following functionality:
 - Pinning to a dashboard 
 - Using dynamic values and conditional formatting (for example, data bound title)
 - Azure Analysis Services, on-premises AS
-- KPIs, cards, multiple-row cards, maps, tables, matrices, R visuals or Python visuals, custom visuals 
+- tables, matrices, R visuals or Python visuals, custom visuals 
 - Summaries of visuals whose columns are grouped by other columns and for visuals that are built on a data group field 
 - Cross-filtering out of a visual
 - Renaming dynamic values or editing automatically generated dynamic values
