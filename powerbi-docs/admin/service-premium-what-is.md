@@ -89,7 +89,7 @@ The following known limitations currently apply to Premium Gen2:
     |SQL Server Data Tools (SSDT)|2.9.15|
     | AS PowerShell| Greater than 21.1.18229|
 
-4.  Memory restrictions are different in Premium Gen2. In the first generation of Premium, memory was restricted to a limited amount of RAM used by all artifacts simultaneously running. 
+4.  <a id="memory-restrictions">Memory restrictions</a> are different in Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md). In the first generation of Premium and Embedded, memory was restricted to a limited amount of RAM used by all artifacts simultaneously running. 
 In Gen2, there is no memory Limit for the capacity as a whole. Instead, individual artifacts (such as datasets, dataflows, paginated reports) are subject to the following RAM limitations:
 
     - A single artifact cannot exceed the amount of memory the capacity SKU offers. 
@@ -171,8 +171,8 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
-| P4 <sup>[1](#limit)</sup>| 64 | 32 | 200 | 32 | 240 | 48 |
-| P5 <sup>[1](#limit)</sup>| 128 | 64 | 400 | 64 | 480 | 96 |
+| P4/A7 <sup>[1](#limit)</sup>| 64 | 32 | 200 | 32 | 240 | 48 |
+| P5/A8 <sup>[1](#limit)</sup>| 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 
 <a name="limit">1</a> - By special request only. For very large models greater than 100 GB.
@@ -254,8 +254,11 @@ Monitoring in the portal provides a quick view with high-level metrics indicatin
 ![Screenshot shows capacity health in the Power B I Admin portal.](media/service-premium-what-is/premium-admin-portal-health.png)
 
 > [!NOTE]
-> **Updates for Premium Gen2 (Preview)** - Premium Gen2 only requires monitoring a single aspect: how much CPU time your capacity requires to serve the load at any moment. If you exceed your CPU time per the SKU size you purchased, your capacity either autoscales to accommodate the need, or throttles your interactive operations, based on your configuration settings.
-
+> **Updates for Premium Gen2 and Embedded Gen2 (Preview)** - Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) only require monitoring a single aspect: how much CPU time your capacity requires to serve the load at any moment.
+>
+>In Premium Gen2, if you exceed your CPU time per the SKU size you purchased, your capacity either autoscales to accommodate the need, or throttles your interactive operations, based on your configuration settings.
+>
+>In [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md), if you exceed your CPU time per the SKU size you purchased, your capacity throttles your interactive operations, based on your configuration settings. To autoscale in Embedded Gen 2, see [Autoscaling in Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md#autoscaling-in-embedded-gen2).
 
 The **Power BI Premium Capacity Metrics** app provides the most in-depth information into how your capacities are performing. The app provides a high-level dashboard and more detailed reports.
 
@@ -268,9 +271,9 @@ From the app's dashboard, you can click a metric cell to open an in-depth report
 To learn more about monitoring capacities, see [Monitoring in the Power BI Admin portal](service-admin-premium-monitor-portal.md) and [Monitoring with the Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capacity.md).
 
 #### Updates for Premium Gen2 (Preview)
-**Premium Gen2** capacities don't use the Metrics app, they use the Capacity Utilization App, which will be made available during the preview. 
+**Premium Gen2** and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) capacities don't use the Metrics app, they use the Capacity Utilization App, which will be made available during the preview. 
 
-You can download and install the metrics app for Premium Gen2 (Preview) using the [following link](https://aka.ms/GenutilizationInstall).
+You can download and install the metrics app for Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) (Preview) using the [following link](https://aka.ms/GenutilizationInstall).
 
 Customers wanting to review their utilization can receive a copy of their utilization report for the past 7 days by requesting one from customer support. The report will be supplied within 72 hours of the request. The Capacity Utilization App will be launched from your capacity management page in the **Admin portal** for each capacity, and will allow anlayis of 30 days of data and more.
 
@@ -340,6 +343,18 @@ When using Premium Gen2, Paginated reports in Power BI benefit from the architec
 **Enhanced security and code isolation** - With Premium Gen2, code isolation can occur at a per-user level rather than at per-capacity, as was the case in the original Premium offering. 
 
 To learn more, see [Paginated reports in Power BI Premium](../paginated-reports/paginated-reports-report-builder-power-bi.md). To learn more about enabling the Paginated reports workload, see [Configure workloads](service-admin-premium-workloads.md).
+
+## Premium features unique to Dataflows
+
+Dataflows are supported for Power BI Pro, Premium Per User (PPU), and Power BI Premium users. Some features are only available with a Power BI Premium subscription or Premium Per User (PPU) license. This article describes and details the Premium Per User (PPU) and Premium-only features and their uses.
+
+To learn more, see [Premium features unique to Dataflows](../transform-model/dataflows/dataflows-premium-features.md).
+
+## Deployment Pipelines
+
+The deployment pipelines tool enables BI creators to manage the lifecycle of organizational content. It's an efficient and reusable tool for creators in an enterprise with Premium capacity. Deployment pipelines enable creators to develop and test Power BI content in the Power BI service, before the content is consumed by users. The content types include reports, paginated reports, dashboards, and datasets.
+
+To learn more, see [Introduction to Deployment Pipelines](../create-reports/deployment-pipelines-overview.md).
 
 ## Power BI Report Server
  
