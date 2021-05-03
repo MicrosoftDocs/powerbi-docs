@@ -125,6 +125,7 @@ There are also a few **limitations** you need to keep in mind:
   - SQL Server Analysis Services (SSAS)
   - SAP HANA
   - SAP Business Warehouse
+  - [Real-time datasets](service-real-time-streaming.md#types-of-real-time-datasets)
 
 - Using DirectQuery on datasets from “My workspace” is not currently supported. 
 
@@ -134,13 +135,11 @@ There are also a few **limitations** you need to keep in mind:
 
 - Calculation groups on remote sources are not supported, with undefined query results.
 
-- For now, calculated tables are not supported in the Service when using this feature.
+- For now, calculated tables are not supported in the service when using this feature.
 
 - Sort by column isn't supported at this time.
 
 - Automatic page refresh (APR) is only supported for some scenarios, depending on the data source type. See the article [Automatic page refresh in Power BI](../create-reports/desktop-automatic-page-refresh.md) for more information.
-
-- This feature is not supported with [real-time datasets](service-real-time-streaming.md#types-of-real-time-datasets).
 
 ### Tenant considerations
 
