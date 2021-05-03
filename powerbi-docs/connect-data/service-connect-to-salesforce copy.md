@@ -65,6 +65,49 @@ This sample has three main objectives:
 Now let us analyze the elements in the dashboard 
 1.	The top two visual shows us the total number of open opportunities we have and the expected revenue we can generate from it.
 
+![](media/service-connect-to-salesforce-copy/power-bi-salesforce-analytics-connect-data.png)
+
+![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-forecast-category-amount.png)
+
+![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-revenue-by-account.png)
+
+![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-top-three-numbers.png)
+
+![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-account-area-wise.png)
+
+![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-kpi-overall.png)
+
+![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-revenue-won-vs-lost.png)
+
+![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-top-two.png)
+
+![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-account-share-industry-wise.png)
+
+![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-lead-status.png)
+
+![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-sales-lead-customer-type.png)
+
+![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-top-two-updated.png)
+
+![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-appsource-icon.png)
+
+![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-month-wise-performance.png)
+
+![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-sales-manager-dashboard.png)
+
+![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-total-opportunities-gained.png)
+
+![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-apps-page-icon.png)
+
+![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-parameters-dialog.png)
+
+![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-share-of-industry.png)
+
+![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-authentication-dialog.png)
+
+![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-refresh-monitor.png)
+
+![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-top-ten-critical-opportunity.png)
 
 ## Next steps
 [What is Power BI?](../fundamentals/power-bi-overview.md)
