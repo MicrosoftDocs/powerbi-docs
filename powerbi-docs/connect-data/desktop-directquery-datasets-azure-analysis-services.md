@@ -86,7 +86,7 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
 
 - To be able to make a DirectQuery connection to a Power BI dataset, your tenant needs to have ["Allow XMLA Endpoints and Analyze in Excel with on-premises datasets"](../admin/service-admin-portal.md#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) enabled.
 
-- For premium capacities, the ["XMLA endpoint" should be set to "Read/Write"](../admin/service-premium-connect-tools.md#to-enable-read-write-for-a-capacity).
+- For premium capacities, the ["XMLA endpoint" should be set to either "Read Only" or "Read/Write"](../admin/service-premium-connect-tools.md#to-enable-read-write-for-a-capacity).
 
 - If using a [classic workspace](../collaborate-share/service-create-workspaces.md) in combination with this feature, it is not sufficient to set permissions on the dataset itself. For classic workspaces, all users accessing reports that leverage this feature must be members of the workspace. Consider [upgrading classic workspaces to new workspaces](../collaborate-share/service-upgrade-workspaces.md) to avoid this situation.
 
