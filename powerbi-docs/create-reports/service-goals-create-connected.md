@@ -101,7 +101,7 @@ Currently there are limitations on the values you can choose in a visual.
 
 ## Next steps
 
-- [Get started with goals in Power BI](service-goals-intro.md)
+- [Get started with goals in Power BI](service-goals-introduction.md)
 - [Create scorecards and manual goals in Power BI](service-goals-create.md)
 - [Stay on top of your goals in Power BI](service-goals-check-in.md)
 

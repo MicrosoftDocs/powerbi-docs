@@ -118,7 +118,7 @@ When you share a scorecard, the people you share it with can view and interact w
 
 ## Next steps
 
-- [Get started with goals in Power BI](service-goals-intro.md)
+- [Get started with goals in Power BI](service-goals-introduction.md)
 - [Create connected goals in Power BI](service-goals-create-connected.md)
 - [Stay on top of your goals in Power BI](service-goals-check-in.md)
 

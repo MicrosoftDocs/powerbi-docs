@@ -351,7 +351,7 @@
     - name: Goals
       items: 
       - name: "Get started with goals"
-        href: service-goals-intro.md
+        href: service-goals-introduction.md
       - name: "Create scorecards and manual goals"
         href: service-goals-create.md
       - name: "Create connected goals"
