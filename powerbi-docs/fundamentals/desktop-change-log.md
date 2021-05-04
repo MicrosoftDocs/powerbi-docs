@@ -23,7 +23,7 @@ See [What's new in Power BI](desktop-latest-update.md) for more information abou
 Bug fixes/improvements:
 - Fix for Adobe Analytics Connector V1 endpoint token not renewed issue.
 - Fix for a frown error that could occur in the model view while loading older PBIX files: now no frown dialog will be shown. 
-- Fix for a model view bug: now users can't create relationships between DQ tables from the same PBI dataset or AAS instance as this scenario is not supported.
+- Fix for a model view bug: now users can't create relationships between DirectQuery tables from the same Power BI dataset or Azure Analysis Services instance as this scenario isn't supported.
 
 ## April 2021 QFE 1
 
