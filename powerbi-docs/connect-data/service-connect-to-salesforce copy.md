@@ -58,14 +58,20 @@ In this article we will walk through the app using sample data, to give you an i
 
 The Sales Manager sample dashboard and underlying report focus on a typical sales challenge: providing a total sales analysis over a certain period. 
 This sample has three main objectives:
-•	Understand how much we can generate from the total open opportunities that a Sales company has.
-•	Identify which are the area we need to focus on the total sales life cycle.
-•	What are the loopholes where we need to put our focus on?
+* Understand how much we can generate from the total open opportunities that a Sales company has.
+* Identify which are the area we need to focus on the total sales life cycle.
+* What are the loopholes where we need to put our focus on?
 
-Now let us analyze the elements in the dashboard 
-1.	The top two visual shows us the total number of open opportunities we have and the expected revenue we can generate from it.
+Now let us analyze the elements in the dashboard.
 
-![](media/service-connect-to-salesforce-copy/power-bi-salesforce-analytics-connect-data.png)
+The top two visuals show us the total number of open opportunities we have and the expected revenue we can generate from it.
+
+
+![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-top-two.png)
+
+The dashboard shows the opportunity position in the sales pipeline. Select any stage on the sales pipeline stage to see its impact on the whole sales process. Now we can analyze the revenue that corresponds with that stage.
+
+![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-sales-manager-dashboard.png)
 
 ![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-forecast-category-amount.png)
 
@@ -93,7 +99,7 @@ Now let us analyze the elements in the dashboard
 
 ![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-month-wise-performance.png)
 
-![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-sales-manager-dashboard.png)
+
 
 ![](media/service-connect-to-salesforce-copy/service-salesforce-analytics-total-opportunities-gained.png)
 
