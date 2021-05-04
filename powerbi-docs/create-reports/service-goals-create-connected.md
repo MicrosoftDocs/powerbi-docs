@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/033/2021
+ms.date: 05/03/2021
 ---
 # Create connected goals in Power BI (preview)
 

@@ -22,8 +22,6 @@ This article covers the basics of using Goals in the Power BI service. See the o
 - [Create connected goals in Power BI](service-goals-create-connected.md)
 - [Stay on top of your goals in Power BI](service-goals-check-in.md)
 
-If you are unfamiliar with any of the terms used in this manual, refer to the glossary section to learn more. 
-
 ## License requirements 
 
 Goals is a Premium feature. Users can access various aspects of the experience depending on their license. 
