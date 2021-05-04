@@ -75,12 +75,7 @@ Before you begin, make sure you have the following:
 
 ## Limitations
 
-* Limitation A
-
-* Limitation B
-
-* Limitation C
-
+The maximum number of Power BI items that can be deployed in a single deployment is 300.
 
 ## Next steps
 
