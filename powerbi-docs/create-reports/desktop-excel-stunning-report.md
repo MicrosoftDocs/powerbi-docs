@@ -111,7 +111,7 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 1. Type this expression to add all the numbers in the Units Sold column.
 
     ```dax
-    Total Units Sold = SUM('financials'[Units Sold])    
+    Total Units Sold = SUM(financials[Units Sold])    
     ```
     
 1. Select the check mark to commit.
