@@ -13,14 +13,14 @@ ms.date: 04/25/2021
 
 # Add a context menu to your Power BI Visual
 
-Right-clicking anywhere inside a visual's viewport (or long-press for touch devices) triggers a display of the context menu.
-There are two possible context menus that can be displayed depending on if you click on a datapoint or on empty space inside the visual:
+When you right-click anywhere inside a visual's viewport (or long-press for touch devices) the context menu displays.
+Each visual has two modes of its context menu. The mode that displays depends on where you click inside the visual:
 
-* Calling the context menu on empty space allows you to perform various operations on the visual, such as analyzing, summarizing, or copying it.
+* Calling the context menu on *empty space* allows you to perform various operations on the visual, such as analyzing, summarizing, or copying it.
 
     ![Context menu called on empty space](media/context-menu/context-menu-called-on-empty-space-in-barchart.png)
 
-* Calling the Context menu on a specific datapoint gives you additional options that can be applied to that datapoint. In this case the context menu contains *Include* and *Exclude* which will apply the corresponding filter options to that DataPoint.
+* Calling the context menu on a specific *datapoint* gives you added options that can be applied to that datapoint. In this case, the context menu contains *Include* and *Exclude* which will apply the corresponding filter options to that DataPoint.
 
     ![Context menu called on datapoint](media/context-menu/datapoint-context-menu-in-barchart.png)
 
