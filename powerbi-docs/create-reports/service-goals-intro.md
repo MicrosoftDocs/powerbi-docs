@@ -8,18 +8,18 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/27/2021
+ms.date: 05/03/2021
 ---
 # Get started with goals in Power BI (preview)
 
 Goals in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. This feature enhances data culture by promoting accountability, alignment, and visibility for teams and initiatives within organizations.
 
-:::image type="content" source="media/service-goals-intro/power-bi-goals-home.png" alt-text="Goals page with goals, scorecards, and samples":::
+:::image type="content" source="media/service-goals-intro/power-bi-goals-hub.png" alt-text="Goals page with goals, scorecards, and samples":::
 
 This article covers the basics of using Goals in the Power BI service. See the other articles about goals for more detail:
 
-- [Create scorecards and goals in Power BI](service-goals-create.md)
-- [Create manual or connected goals in Power BI](service-goals-manual-connected.md)
+- [Create scorecards and manual goals in Power BI](service-goals-create.md)
+- [Create connected goals in Power BI](service-goals-create-connected.md)
 - [Stay on top of your goals in Power BI](service-goals-check-in.md)
 
 If you are unfamiliar with any of the terms used in this manual, refer to the glossary section to learn more. 
@@ -42,11 +42,11 @@ After you sign in to the Power BI service, select Goals from the navigation pane
 
 :::image type="content" source="media/service-goals-intro/power-bi-goals-new-home.png" alt-text="The new, empty Goals home page.":::
 
-### Goals relevant to me 
+### My goals and activity 
 
 The top section contains all the goals that matter the most to you. Power BI curates these goals automatically, based on goals that you're assigned to, you've edited, or you've performed a recent check-in. 
 
-:::image type="content" source="media/service-goals-intro/power-bi-goals-relevant.png" alt-text="Top section contains all the goals that matter the most to you.":::
+:::image type="content" source="media/service-goals-intro/power-bi-my-goals-activity.png" alt-text="Top section contains all the goals that matter the most to you.":::
 
 A goal must have at least two values to show up in this section. 
 
@@ -72,8 +72,8 @@ The last section contains sample scorecards. As a new user, you can select one t
 
 ## Next steps
 
-- [Create scorecards and goals in Power BI](service-goals-create.md)
-- [Create manual or connected goals in Power BI](service-goals-manual-connected.md)
+- [Create scorecards and manual goals in Power BI](service-goals-create.md)
+- [Create connected goals in Power BI](service-goals-create-connected.md)
 - [Stay on top of your goals in Power BI](service-goals-check-in.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).

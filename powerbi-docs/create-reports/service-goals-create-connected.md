@@ -1,6 +1,6 @@
 ---
-title: Create manual or connected goals in Power BI (preview)
-description: Goals can be either manual or connected.
+title: Create connected goals in Power BI (preview)
+description: Learn how to create connected goals.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -8,9 +8,9 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/27/2021
+ms.date: 05/033/2021
 ---
-# Create manual or connected goals in Power BI (preview)
+# Create connected goals in Power BI (preview)
 
 Goals in Power BI let customers curate their metrics and track them against key business objectives. When choosing values for your goals, you have a choice of: 
 
@@ -18,23 +18,7 @@ Goals in Power BI let customers curate their metrics and track them against key 
 - Connecting either the current or target value to data in an existing Power BI report.
 - Connecting both values to data in an existing Power BI report.
 
-The difference between manual and connected values is straightforward. For manual values, each time the current or target value changes, you have to update it or check in the latest value. Connected values change whenever the underlying data is updated.
-
-## Set values manually 
-
-1. [Create a goal or edit an existing goal](service-goals-create.md) in a scorecard.
-
-1. In the **Current** and/or **Target** fields, enter a value.
-
-    Format the values you entered manually by using the floating toolbox.
-
-    :::image type="content" source="media/service-goals-create/power-bi-goals-new-number-format.png" alt-text="Format the values you entered.":::
-
-1. Select **Save**. Power BI uses this value as the starting point for the goal.
-
-    :::image type="content" source="media/service-goals-manual-connected/power-bi-goals-manual.png" alt-text="Completed manual goal.":::
-
-    Power BI automatically represents values in numeric notation. For example, *2044* is represented as *2 K*. 
+This article is about connecting the values to data in an existing Power BI report. Connected values change whenever the underlying data is updated. To learn about creating manual values, see [Create a manual goal](service-goals-create.md#step-2-create-a-manual-goal) in the article **Create scorecards and manual goals**. 
 
 ## Connect values to data
 
@@ -46,21 +30,24 @@ You can connect either the current or the target value, or both, to a value in a
 
 1. In the dialog, search for the report with the data that you want to track, select it > **Next**.
 
-    :::image type="content" source="media/service-goals-manual-connected/power-bi-goals-select-report.png" alt-text="Select the report that contains the data value you want to connect to.":::
+    :::image type="content" source="media/service-goals-create-connected/power-bi-goals-select-report.png" alt-text="Select the report that contains the data value you want to connect to.":::
 
     This list contains all the reports that you have access to, across all workspaces, in Power BI.  
 
 1. In the report that you selected, navigate to the visual that contains the data you want to track. 
 1. Select the data point or visual. Power BI displays the measure card, summarizing all the filters applied to the selection.
 
-    :::image type="content" source="media/service-goals-manual-connected/power-bi-goals-select-data-point.png" alt-text="Select the data point you want to use as your Current or Target.":::
+    :::image type="content" source="media/service-goals-create-connected/power-bi-goals-select-data-point.png" alt-text="Select the data point you want to use as your Current or Target.":::
 
     Currently there are some limitations on the values you can select. See the [Limitations](#limitations-selecting-values) section in this article for details.
 
 1. Select **Connect**.
+
+    Power BI automatically represents values in numeric notation. For example, *2044* is represented as *2 K*. 
+
 1. Select **Save**.
 
-    :::image type="content" source="media/service-goals-manual-connected/power-bi-goals-update-data-connection.png" alt-text="Select Save for the data-connected goal.":::
+    :::image type="content" source="media/service-goals-create-connected/power-bi-goals-update-data-connection.png" alt-text="Select Save for the data-connected goal.":::
 
 ### Choose measures for connected goals 
 
@@ -80,11 +67,11 @@ To break this down further, there are two main types of cases for connecting to 
 
 Categorical data refers to cases where you are connecting a goal or subgoal to data other than time-series data. For example, connecting to the total sales of the **Outdoor** product category:
 
-:::image type="content" source="media/service-goals-manual-connected/power-bi-goals-connect-categorical-pie-chart.png" alt-text="Select the Outdoor product category.":::
+:::image type="content" source="media/service-goals-create-connected/power-bi-goals-connect-categorical-pie-chart.png" alt-text="Select the Outdoor product category.":::
 
 Or connecting to the total number of results in the **Family** customer segment: 
 
-:::image type="content" source="media/service-goals-manual-connected/power-bi-goals-connect-categorical-column-chart.png" alt-text="Select the Family customer segment.":::
+:::image type="content" source="media/service-goals-create-connected/power-bi-goals-connect-categorical-column-chart.png" alt-text="Select the Family customer segment.":::
 
 In these cases, depending on what you select, Power BI calculates the measures as follows: 
 
@@ -115,7 +102,7 @@ Currently there are limitations on the values you can choose in a visual.
 ## Next steps
 
 - [Get started with goals in Power BI](service-goals-intro.md)
-- [Create scorecards and goals in Power BI](service-goals-create.md)
+- [Create scorecards and manual goals in Power BI](service-goals-create.md)
 - [Stay on top of your goals in Power BI](service-goals-check-in.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).

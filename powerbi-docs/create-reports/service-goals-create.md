@@ -1,6 +1,6 @@
 ---
-title: Create scorecards and goals (preview)
-description: Create scorecards and goals in Power BI.
+title: Create scorecards and manual goals (preview)
+description: Create scorecards and manual goals in Power BI.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -8,18 +8,20 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/27/2021
+ms.date: 05/03/2021
 ---
-# Create scorecards and goals in Power BI (preview)
+# Create scorecards and manual goals in Power BI (preview)
 
 Goals in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. In this article, you complete the following steps: 
 
 - Create your first scorecard.
-- Create both manual and connected goals.
+- Create a manual goal.
 - Edit a goal.
 - Share the scorecard with others.
 
-:::image type="content" source="media/service-goals-create/power-bi-goals-northwind.png" alt-text="Northwind scorecard with goals and subgoals.":::
+You can also connect goals to an existing report visual in Power BI. See [Create connected goals](service-goals-create-connected.md) for details. 
+
+:::image type="content" source="media/service-goals-create/northwind-scorecard.png" alt-text="Northwind scorecard with goals and subgoals.":::
 
 ## Prerequisites
 
@@ -53,24 +55,23 @@ You also need:
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-scorecard-dataset.png" alt-text="The new scorecard and dataset that Power BI created.":::
 
-## Step 2: Create a goal 
+## Step 2: Create a manual goal 
 
 1. In the scorecard, select **New Goal**. 
 2. Decide on a **Goal name** and an **Owner**. 
 
     Owners can be individuals or distribution groups within your organization’s Azure Active Directory.  
 
-1. Set **Current** and **Target** values for your goals. You can either enter the number manually, or connect it to an existing report visual in Power BI. See [Manual or connected goals](service-goals-manual-connected.md) for details. 
+1. Set **Current** and **Target** values for your goals. In this article, you enter the number manually. You can also connect it to an existing report visual in Power BI. See [Create connected goals](service-goals-create-connected.md) for details. 
 1. Set the format for your values, and choose a **Status**, **Start date**, and **End date**. 
 
-    This goal uses values selected manually.
-
     :::image type="content" source="media/service-goals-create/power-bi-goals-new-number-format.png" alt-text="In the New goal, select a number format.":::
+
+    Power BI automatically represents values in numeric notation. For example, *2044* is represented as *2 K*. 
 
 1. Select **Save**. 
 
     **Goal name** is the only required field for your goal. You can leave the remaining fields blank and come back to edit it after defining all your goals.
-
 
 ## Step 3 (Optional): Create subgoals 
 
@@ -118,7 +119,7 @@ When you share a scorecard, the people you share it with can view and interact w
 ## Next steps
 
 - [Get started with goals in Power BI](service-goals-intro.md)
-- [Create manual or connected goals in Power BI](service-goals-manual-connected.md)
+- [Create connected goals in Power BI](service-goals-create-connected.md)
 - [Stay on top of your goals in Power BI](service-goals-check-in.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).
