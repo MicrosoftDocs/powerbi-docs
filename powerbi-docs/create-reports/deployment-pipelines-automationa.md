@@ -17,13 +17,13 @@ To achieve continuous integration and continuous delivery (CI/CD) of content, ma
 
 You can leverage the [deployment pipelines REST APIs](add-link), to integrate Power BI into your organization's automation process. Here are a few examples of what can be done using the APIs:
 
-* Deploy multiple pipelines at same time
+* Deploy multiple pipelines at same time.
 
-* Cascade depending pipeline deployments
+* Cascade depending pipeline deployments - If you have content that’s connected across pipelines, you can make sure some pipelines are deployed before others.
 
-* Schedule pipeline deployments to happen automatically at a given time
+* Schedule pipeline deployments to happen automatically at a given time.
 
-* Integrate Power BI into familiar DevOps tools such as [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops) or [GitHub Actions](https://docs.github.com/en/actions)
+* Integrate Power BI into familiar DevOps tools such as [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops) or [GitHub Actions](https://docs.github.com/en/actions).
 
 ## Deployment pipelines APIs
 
