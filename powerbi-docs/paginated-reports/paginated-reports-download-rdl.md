@@ -1,25 +1,36 @@
 ---
-title: "Download the .rdl for a paginated report from a dataset"
-description: In this article, you learn how to create the .rdl for a Power BI paginated report by downloading from a shared dataset in the Power BI service.
+title: "Create a paginated report from a Power BI report or dataset"
+description: In this article, you learn how to create a paginated report from a Power BI report or a shared dataset in the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: mibruhje
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 10/15/2020
+ms.date: 05/04/2020
 ---
 
-# Download the .rdl for a Power BI paginated report from a dataset
+# Create a paginated report from a Power BI report or dataset
 
 [!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
-In this article, you learn how to create the .rdl for a Power BI paginated report by downloading from a shared dataset in the Power BI service. Paginated reports have the file format *.rdl*. You can create an .rdl file directly from a  dataset in the Power BI service.
+In this article, you learn how to create a paginated report from a Power BI report or a shared dataset in the Power BI service. 
 
 1. Go to list view for any workspace, including My Workspace. 
-1. Select **More options (...)** for a dataset, then select **Download the .rdl**.
+1. There are three different ways you can create a paginated report from the Power BI service:
 
-    :::image type="content" source="media/paginated-reports-download-rdl/power-bi-paginated-download-rdl.png" alt-text="Screenshot of the Download the .rdl option in the Power BI service.":::
+    In list view, select **More options (...)** for a Power BI report, then select **Create paginated report**. 
+
+    :::image type="content" source="media/paginated-reports-download-rdl/power-bi-paginated-download-rdl.png" alt-text="Screenshot of Create a paginated report from a Power BI report in the Power BI service.":::
+
+    Or in list view, select **More options (...)** for a dataset, then select **Create paginated report**.
+
+    :::image type="content" source="media/paginated-reports-download-rdl/power-bi-paginated-dataset.png" alt-text="Screenshot of Create a paginated report from a shared dataset in the Power BI service."::: 
+
+    Or from the navigation pane, select **More options (...)** for a dataset, then select **Create paginated report**.
+
+    :::image type="content" source="media/paginated-reports-download-rdl/power-bi-paginated-dataset-navigation.png" alt-text="Screenshot of Create a paginated report from a shared dataset in the navigation pane in the Power BI service.":::
+
 1. You see a message that you need some Power BI Report Builder updates. Select **Download**. 
 
     :::image type="content" source="media/paginated-reports-download-rdl/power-bi-report-builder-updates.png" alt-text="Screenshot of installing Power BI Report Builder updates.":::
@@ -31,9 +42,9 @@ In this article, you learn how to create the .rdl for a Power BI paginated repor
     1. Select **Download**.  
     2. Select **Open file** and go through the steps in the Power BI Report Builder Setup Wizard.
 
-1. When the Report Builder installation is finished, go back to the Power BI service and select **Download the .rdl**.
+1. When the Report Builder installation is finished, go back to the Power BI service and select **Create paginated report**.
 
-    :::image type="content" source="media/paginated-reports-download-rdl/power-bi-report-builder-finished-installing.png" alt-text="Screenshot of Download the .rdl dialog box.":::
+    :::image type="content" source="media/paginated-reports-download-rdl/power-bi-report-builder-finished-installing.png" alt-text="Screenshot of Create a paginated report dialog box.":::
 
 1. Select **Open file** in the browser window.
 
