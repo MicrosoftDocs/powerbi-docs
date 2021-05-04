@@ -104,7 +104,7 @@ The next step shows you how to [get a dataset to add rows into a Power BI table]
 
 Below is the [complete code listing](#code).
 
-<a name="code"/>
+<a name="code"></a>
 
 ## Complete code listing
 
