@@ -21,8 +21,10 @@ In this article, you learn how to create a paginated report from a Power BI repo
 
     In list view, select **More options (...)** for a Power BI report, then select **Create paginated report**. 
     :::image type="content" source="media/paginated-reports-download-rdl/power-bi-paginated-download-rdl.png" alt-text="Screenshot of Create a paginated report from a Power BI report in the Power BI service.":::
+    
     Or in list view, select **More options (...)** for a dataset, then select **Create paginated report**.
     :::image type="content" source="media/paginated-reports-download-rdl/power-bi-paginated-dataset.png" alt-text="Screenshot of Create a paginated report from a shared dataset in the Power BI service."::: 
+    
     Or from the navigation pane, select **More options (...)** for a dataset, then select **Create paginated report**.
     :::image type="content" source="media/paginated-reports-download-rdl/power-bi-paginated-dataset-navigation.png" alt-text="Screenshot of Create a paginated report from a shared dataset in the navigation pane in the Power BI service.":::
     
