@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 04/29/2021
+ms.date: 05/04/2021
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,15 @@ ms.date: 04/29/2021
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## April 2021 QFE 2
+
+*Version: 2.92.1067.0, Released: May 4th, 2021*
+
+Bug fixes/improvements:
+- Fix for Adobe Analytics Connector V1 endpoint token not renewed issue.
+- Fix for a frown error that could occur in the model view while loading older PBIX files: now no frown dialog will be shown. 
+- Fix for a model view bug: now users can't create relationships between DQ tables from the same PBI dataset or AAS instance as this scenario is not supported.
 
 ## April 2021 QFE 1
 
