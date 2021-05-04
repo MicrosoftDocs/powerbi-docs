@@ -85,11 +85,18 @@ The smart narrative feature doesn't support the following functionality:
 - Pinning to a dashboard 
 - Using dynamic values and conditional formatting (for example, data bound title)
 - Azure Analysis Services, on-premises AS
-- tables, matrices, R visuals or Python visuals, custom visuals 
+- Key influencers visual with
+    - 'Analyze' field from a table that contains more than one primary key 
+    - 'Analyze' field from a table without a primary key, and measures or aggregates as 'Explain by' fields
+- Map visual with non-aggregated latitude or longitude
+- Multi-row card with more than one categorical field and three measures
+- Cards with non-numeric measure
+- Tables, matrices, R visuals or Python visuals, custom visuals 
 - Summaries of visuals whose columns are grouped by other columns and for visuals that are built on a data group field 
 - Cross-filtering out of a visual
 - Renaming dynamic values or editing automatically generated dynamic values
 - Summaries of visuals that contain on-the-fly calculations like QnA arithmetic and percentage of grand total 
 - [Calculation groups](/analysis-services/tabular-models/calculation-groups)
+
    
 
