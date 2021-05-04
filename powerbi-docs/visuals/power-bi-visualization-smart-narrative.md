@@ -85,11 +85,11 @@ The smart narrative feature doesn't support the following functionality:
 - Pinning to a dashboard 
 - Using dynamic values and conditional formatting (for example, data bound title)
 - Azure Analysis Services, on-premises AS
-- Key influencers visual with
-    - 'Analyze' field from a table that contains more than one primary key 
-    - 'Analyze' field from a table without a primary key, and measures or aggregates as 'Explain by' fields
+- Key influencers visual with a categorical metric or unsummarized numerical field as 'Analyze' field from a table
+    - that contains more than one primary key 
+    - without a primary key, and measures or aggregates as 'Explain by' fields
 - Map visual with non-aggregated latitude or longitude
-- Multi-row card with more than one categorical field and three measures
+- Multi-row card with more than three categorical field
 - Cards with non-numeric measure
 - Tables, matrices, R visuals or Python visuals, custom visuals 
 - Summaries of visuals whose columns are grouped by other columns and for visuals that are built on a data group field 
