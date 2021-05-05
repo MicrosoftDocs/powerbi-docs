@@ -51,7 +51,7 @@ Embedded Gen 2 has the same [architecture improvements](../../admin/service-prem
 
 ## Autoscaling in Embedded Gen2
 
-Embedded Gen2 does not provide an out-of-the-box vertical autoscale feature, so autoscaling up or down isn't possible. Instead, customers can configure autoscale using one of these options:
+Embedded Gen2 does not provide an out-of-the-box vertical autoscale feature. Instead, customers can configure autoscale using one of these options:
 
 * [Power BI Embedded Azure Resource Manager REST APIs](/rest/api/power-bi-embedded/), for example [Capacities - Update](/rest/api/power-bi-embedded/capacities/update).
 

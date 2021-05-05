@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 01/02/2020
+ms.date: 04/30/2021
 LocalizationGroup: Connect to data
 ---
 
