@@ -14,7 +14,7 @@ ms.date: 05/04/2021
 # The Analytics pane in Power BI visuals
 
 The **Analytics** pane was introduced for [native visuals](../../transform-model/desktop-analytics-pane.md) in November 2018.
-This article discusses how Power BI visuals with API v2.5.0 can present and manage their properties in the **Analytics** pane.
+This article discusses how Power BI visuals from API v2.5.0 can present and manage their properties in the **Analytics** pane.
 
 ![The Analytics pane](media/analytics-pane/visualization-pane-analytics-tab.png)
 
@@ -27,7 +27,7 @@ For the **Analytics** pane, the differences are as follows:
 * Under the object's definition, you add an **objectCategory** field with a value of 2.
 
     > [!NOTE]
-    > The optional `objectCategory` field was introduced in API 2.5.0. It defines the aspect of the visual that the object controls (1 = Formatting, 2 = Analytics). `Formatting` is used for such elements as look and feel, colors, axes, and labels. `Analytics` is used for such elements as forecasts, trendlines, reference lines, and shapes.
+    > The optional `objectCategory` field was introduced in API 2.5.0. It defines the aspect of the visual that the object controls (1 = Formatting, 2 = Analytics). `Formatting` is used for elements such as look and feel, colors, axes, and labels. `Analytics` is used for elements such as forecasts, trendlines, reference lines, and shapes.
     >
     > If the value isn't specified, `objectCategory` defaults to "Formatting."
 
