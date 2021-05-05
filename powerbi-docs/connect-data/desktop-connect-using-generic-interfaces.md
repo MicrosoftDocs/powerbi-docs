@@ -42,12 +42,12 @@ The following list details a few examples of data sources to which **Power BI De
 
 | Power BI Desktop generic connector | External data source | Link for more information |
 | --- | --- | --- |
-| ODBC |Cassandra |[Cassandra ODBC driver](https://www.simba.com/drivers/cassandra-odbc-jdbc/) |
+| ODBC |Cassandra |[Cassandra ODBC driver](https://www.magnitude.com/drivers/cassandra-odbc-jdbc) |
 | ODBC |Couchbase DB |[Couchbase and Power BI](https://powerbi.microsoft.com/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
 | ODBC |DynamoDB |[DynamoDB ODBC driver](https://www.simba.com/drivers/dynamodb-odbc-jdbc/) |
 | ODBC |Google BigQuery |[BigQuery ODBC driver](https://www.simba.com/drivers/bigquery-odbc-jdbc/) |
 | ODBC |HBase |[HBase ODBC driver](https://www.simba.com/drivers/hbase-odbc-jdbc/) |
-| ODBC |Hive |[Hive ODBC driver](https://www.simba.com/drivers/hive-odbc-jdbc/) |
+| ODBC |Hive |[Hive ODBC driver](https://www.magnitude.com/drivers/hive-odbc-jdbc) |
 | ODBC |IBM Netezza |[IBM Netezza information](https://www.ibm.com/support/knowledgecenter/SSULQD_7.2.1/com.ibm.nz.datacon.doc/c_datacon_plg_overview.html) |
 | ODBC |Presto |[Presto ODBC driver](https://www.simba.com/drivers/presto-odbc-jdbc/) |
 | ODBC |Project Online |[Project Online article](desktop-project-online-connect-to-data.md) |
