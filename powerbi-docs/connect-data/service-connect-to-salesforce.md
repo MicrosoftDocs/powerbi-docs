@@ -61,11 +61,11 @@ The Sales Manager sample dashboard and underlying report focus on a typical sale
 Using the sample dashboard, we're going see how to
 * Understand how much we can generate from the total open opportunities that a Sales company has.
 * Identify which areas we should focus on in the total sales life cycle.
-* Spot loopholes should look into.
+* Spot loopholes we should look into.
 
 Now let's analyze various components of the dashboard.
 
-The top two visuals show us the total number of open opportunities we have and the expected revenue we can expect to generate from them.
+The top two visuals show us the total number of open opportunities we have and the revenue we can expect to generate from them.
 
 ![Screenshot of total open opportunities visual.](media/service-connect-to-salesforce/service-salesforce-analytics-top-two.png)
 
