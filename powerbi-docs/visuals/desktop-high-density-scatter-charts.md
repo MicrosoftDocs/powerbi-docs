@@ -14,7 +14,7 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-Beginning with the September 2017 release of the **Power BI Desktop**, a new sampling algorithm is available that improves how scatter charts represent high-density data.
+A sampling algorithm is available that improves how scatter charts represent high-density data.
 
 For example, you might create a scatter chart from your organization's sales activity, each store having tens of thousands of data points each year. A scatter chart of such information would sample data (select a meaningful representation of that data to illustrate how sales occurred over time) from the available data, and create a scatter chart that represents the underlying data. This is common practice in high-density scatter charts. Power BI has improved its sampling of high-density data, the details of which are described in this article.
 
@@ -82,5 +82,3 @@ The high-density sampling algorithm is an important improvement to Power BI, but
 For more information about high-density sampling in other charts, see the following article.
 
 * [High-density line sampling in Power BI](../create-reports/desktop-high-density-sampling.md)
-
-

@@ -44,7 +44,7 @@ You can **Load** the selected table, which brings the entire table into **Power 
 
 ## Custom Roles
 
-The Snowflake connector supports *Custom Roles* beginning with the February 2021 release of Power BI Desktop.
+The Snowflake connector supports *Custom Roles*.
 
 ## Next steps
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
