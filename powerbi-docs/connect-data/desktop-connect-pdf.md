@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/04/2021
+ms.date: 04/30/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to PDF files in Power BI Desktop
@@ -20,7 +20,7 @@ The following sections describe how to connect to a **PDF file**, select data, a
 We always recommend upgrading to the most recent release of **Power BI Desktop**, which you can get from a link in [get Power BI Desktop](../fundamentals/desktop-get-the-desktop.md). 
 
 ## Connect to a PDF file
-To connect to a **PDF** file select **Get Data** from the **Home** ribbon in Power BI Desktop. Select **File** from the categories on the left, and you see **PDF**.
+To connect to a **PDF** file select **Get data** from the **Home** ribbon in Power BI Desktop. Select **File** from the categories on the left, and you see **PDF**.
 
 ![Select PDF from Get Data](media/desktop-connect-pdf/connect-pdf-01.png)
 
