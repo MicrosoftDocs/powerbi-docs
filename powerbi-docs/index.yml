@@ -47,9 +47,9 @@ highlightedContent:
       itemType: overview
       url: /javascript/api/overview/powerbi/
     # Card
-    - title: Datasets discovery using the datasets hub (Preview)
+    - title: Get started with goals in Power BI (preview)
       itemType: concept
-      url: connect-data/service-datasets-hub.md
+      url: create-reports/service-goals-introduction.md
     # Card
     - title: Power BI on Microsoft Learn 
       itemType: learn
@@ -177,12 +177,12 @@ conceptualContent:
         - url: create-reports/desktop-accessibility-creating-reports.md
           itemType: how-to-guide
           text: Design reports for accessibility
-        - url: paginated-reports/paginated-reports-report-builder-power-bi.md
+        - url: paginated-reports/report-builder-shared-datasets.md
           itemType: concept
-          text: What are paginated reports?
-        - url: create-reports/service-dashboard-create.md
+          text: Create a paginated report based on a shared dataset
+        - url: create-reports/service-goals-create.md
           itemType: how-to-guide
-          text: Create a dashboard
+          text: Create scorecards and goals (preview)
       # footerLink (optional)
       footerLink:
         url: create-reports/index.yml
