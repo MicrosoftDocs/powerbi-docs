@@ -56,7 +56,7 @@ In this article we will walk through the app using sample data, to give you an i
 
 ## What does the KPI dashboard tell us?
 
-The KPI dashboard shows us all the key metrics from all the dashboards. Click the arrows to get to the individual dashboards.
+When you open the app, you'll see the KPI dashboard. The KPI dashboard shows us an overall view of the key metrics from all the dashboards. Click the arrows to get to the individual dashboards.
 
 ![Screenshot of KPI overall visual.](media/service-connect-to-salesforce/service-salesforce-analytics-kpi-overall.png)
 
