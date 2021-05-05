@@ -43,7 +43,7 @@ Now that you've created small multiples, see how you [Interact with small multip
 
 ## Format a small multiples visual
 
-Some new options in the formatting pane let you control the look and feel of the grid.
+Some options in the formatting pane let you control the look and feel of the grid.
 
 ### Change the grid dimensions
 

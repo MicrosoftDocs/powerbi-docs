@@ -75,7 +75,7 @@ There may be many trace files in that folder. Make sure you only send the recent
 
 Web requests issued by Power BI Desktop do not use web proxy credentials. In networks that use a proxy server, Power BI Desktop may not be able to successfully make web requests. 
 
-Starting with the March 2020 Power BI Desktop release, system or network administrators can allow the use of default system credentials for web proxy authentication. Administrators can create a registry entry called **UseDefaultCredentialsForProxy**, and set the value to one (1) to enable the use of default system credentials for web proxy authentication.
+System or network administrators can allow the use of default system credentials for web proxy authentication. Administrators can create a registry entry called **UseDefaultCredentialsForProxy**, and set the value to one (1) to enable the use of default system credentials for web proxy authentication.
 
 The registry entry can be placed in either of the following locations:
 
@@ -102,4 +102,3 @@ The following recommendations should be followed whenever enabling this feature 
 
 
 [Using default system credentials for web proxy](#using-default-system-credentials-for-web-proxy)
-

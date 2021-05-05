@@ -77,7 +77,7 @@ A few interactions are different in the Teams app than they are in the browser
 
 ## Search for Power BI content in Teams
 
-With the new search experience in Teams, you can find recent reports, dashboards, and apps and open them within the Power BI app for Teams. Give the search experience a try.
+With the search experience in Teams, you can find recent reports, dashboards, and apps and open them within the Power BI app for Teams. Give the search experience a try.
 
 1. In the Teams search bar, type *@Power BI*.
 
