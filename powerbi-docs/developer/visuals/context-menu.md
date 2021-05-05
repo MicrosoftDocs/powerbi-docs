@@ -33,7 +33,7 @@ Use `selectionManager.showContextMenu()` with parameters `selectionId` and a pos
 > * The `selectionManager.showContextMenu()` is only available from Visuals API 2.2.0 and above.
 > * All visuals published to AppSource must support both `ContextMenu` modes (empty space and data point).
 
-A context menu was added to the following sample [BarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart) for reference:
+The following example shows how to add a context menu to a sample [BarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart):
 
 ```typescript
     public update(options: VisualUpdateOptions) {
