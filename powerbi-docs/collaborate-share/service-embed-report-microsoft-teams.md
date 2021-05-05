@@ -72,7 +72,7 @@ When you add a Power BI report tab to Microsoft Teams, Microsoft Teams automatic
 - In Microsoft Teams, when you export data from a visual in a Power BI report, it's automatically saved to your Downloads folder. It's an Excel file called "data (*n*).xlsx" where *n* is the number of times you've exported data to the same folder.
 - You can't embed Power BI dashboards in the **Power BI** tab for Microsoft Teams.
 - [URL filters](service-url-filters.md) aren't supported with the **Power BI** tab for Microsoft Teams.
-- In national clouds, the new **Power BI** tab isn't available. An older version might be available that doesn't support the new workspace experience or reports in Power BI apps.
+- In national clouds, the **Power BI** tab isn't available. An older version might be available that doesn't support the new workspace experience or reports in Power BI apps.
 - After you save the tab, you don't change the tab name through the tab settings. Use the **Rename** option to change it.
 - See the [Known issues and limitations](service-collaborate-microsoft-teams.md#known-issues-and-limitations) section of the "Collaborate in Microsoft Teams" article for other issues.
 
