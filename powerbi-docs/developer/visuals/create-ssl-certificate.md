@@ -1,6 +1,6 @@
 ---
-title: Create SSL certificates for Power BI visuals in Power BI embedded analytics for better embedded BI insights
-description: Learn how to generate SSL certificates by using Power BI Visual Tools in Windows, Mac, or Linux, or manually. Enable better embedded BI insights using Power BI embedded analytics.
+title: Create SSL certificates for Power BI visuals
+description: Learn how to generate SSL certificates by using Power BI Visual Tools in Windows, Mac, or Linux, or manually.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins

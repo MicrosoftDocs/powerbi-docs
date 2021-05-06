@@ -1,6 +1,6 @@
 ---
-title: Introduction to use formatting utils in Power BI visual in Power BI embedded analytics for better embedded BI insights
-description: This article describes how to use formatting utils to format values and apply localization to values in Power BI visual. Enable better embedded BI insights using Power BI embedded analytics.
+title: Introduction to use formatting utils in Power BI visual
+description: This article describes how to use formatting utils to format values and apply localization to values in Power BI visual.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin

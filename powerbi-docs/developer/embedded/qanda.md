@@ -1,6 +1,6 @@
 ---
-title: Q&A in Power BI embedded analytics for better embedded BI insights
-description: Power BI embedded analytics offers you a way to incorporate Q&A into an application and allow your users to ask questions using natural language. Enable better embedded BI insights using Power BI embedded analytics.
+title: Q&A in Power BI embedded analytics
+description: Power BI embedded analytics offers you a way to incorporate Q&A into an application and allow your users to ask questions using natural language.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''

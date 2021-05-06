@@ -1,13 +1,13 @@
 ---
 title: Embed content in your Power BI embedded analytics application enabling better embedded BI insights for government and national clouds
-description: Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools for government and national clouds. Enable better embedded BI insights using Power BI embedded analytics.
+description: Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools for government and national clouds.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
-ms.custom: seodec18, devx-track-js
+ms.custom: devx-track-js
 ms.date: 02/05/2019
 ---
 

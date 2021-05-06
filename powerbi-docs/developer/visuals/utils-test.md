@@ -1,6 +1,6 @@
 ---
-title:  Introduction to usage of test utils in Power BI visual in Power BI embedded analytics for better embedded BI insights
-description: This article describes how to use test utils simplify mocks and specific methods usage in unit testing for Power BI visuals. Enable better embedded BI insights using Power BI embedded analytics.
+title:  Introduction to usage of test utils in Power BI visual
+description: This article describes how to use test utils simplify mocks and specific methods usage in unit testing for Power BI visuals.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins

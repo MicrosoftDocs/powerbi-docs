@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/28/2018
+ms.date: 05/05/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to SAP Business Warehouse by using DirectQuery in Power BI
 You can connect to **SAP Business Warehouse (BW)** data sources directly using **DirectQuery**. Given the OLAP/multidimensional nature of SAP BW, there are many important differences between DirectQuery over SAP BW versus relational sources like SQL Server. These differences are summarized as follows:
 
-* In **DirectQuery** over relational sources there are a set of queries (as defined in the **Get Data** or **Query Editor** dialog) that logically define the data that is available in the field list. This is *not* the case when connecting to an OLAP source such as SAP BW. Instead, when connecting to the SAP server using **Get Data**, just the Infocube or BEx Query is selected. Then all the Key Figures and dimensions of the selected Infocube/BEx Query will be available in the field list.   
-* Similarly, there is no **Query Editor** when connecting to SAP BW. The data source settings (for example, server name) can be changed by selecting **Edit Queries > Data source settings**. The settings for any Parameters can be changed by selecting **Edit Queries > Manage Parameters**.
+* In **DirectQuery** over relational sources there are a set of queries (as defined in the **Get Data** or **Power Query Editor** dialog) that logically define the data that is available in the field list. This is *not* the case when connecting to an OLAP source such as SAP BW. Instead, when connecting to the SAP server using **Get Data**, just the Infocube or BEx Query is selected. Then all the Key Figures and dimensions of the selected Infocube/BEx Query will be available in the field list.   
+* Similarly, there is no **Power Query Editor** when connecting to SAP BW. The data source settings (for example, server name) can be changed by selecting **Transform data > Data source settings**. The settings for any Parameters can be changed by selecting **Transform data > Edit parameters**.
 * Given the unique nature of OLAP sources, there are additional restrictions (for both modeling and visualizations) that apply, in addition to the normal restrictions imposed for DirectQuery. These restrictions are described later in this article.
 
 In addition, it is *extremely important* to understand that there are many features of SAP BW that are not supported in Power BI, and that because of the nature of the public interface to SAP BW, there are important cases where the results seen through Power BI will not match those seen when using an SAP tool. These limitations are described later in this article. These limitations and behavior differences should be carefully reviewed, to ensure that the results seen through Power BI, as returned by the SAP public interface, are interpreted correctly.  

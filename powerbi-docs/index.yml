@@ -27,13 +27,13 @@ highlightedContent:
       itemType: get-started
       url: fundamentals/desktop-getting-started.md
     # Card
-    - title: Autoscale with Premium Gen2
+    - title: Incremental refresh for datasets
       itemType: concept
-      url: admin/service-premium-auto-scale.md
+      url: connect-data/incremental-refresh-overview.md
     # Card
-    - title: Power BI Embedded Gen2 (preview)
+    - title: Power BI Desktop diagnostics collection
       itemType: overview
-      url: developer/embedded/power-bi-embedded-generation-2.md
+      url: fundamentals/desktop-diagnostics.md
     # Card
     - title: Create a Power BI visual using React
       itemType: tutorial
@@ -47,9 +47,9 @@ highlightedContent:
       itemType: overview
       url: /javascript/api/overview/powerbi/
     # Card
-    - title: Datasets discovery using the datasets hub (Preview)
+    - title: Get started with goals in Power BI (preview)
       itemType: concept
-      url: connect-data/service-datasets-hub.md
+      url: create-reports/service-goals-introduction.md
     # Card
     - title: Power BI on Microsoft Learn 
       itemType: learn
@@ -68,9 +68,9 @@ conceptualContent:
         - url: fundamentals/power-bi-overview.md
           itemType: overview
           text: What is the Power BI service?
-        - url: fundamentals/service-self-service-signup-for-power-bi.md
+        - url: fundamentals/desktop-latest-update.md
           itemType: overview
-          text: Sign up for the Power BI service
+          text: What's new in Power BI?
       # footerLink (optional)
       footerLink:
         url: fundamentals/index.yml
@@ -174,15 +174,15 @@ conceptualContent:
     # Card
     - title: Create reports and dashboards
       links:
-        - url: create-reports/sample-covid-19-us.md
-          itemType: sample
-          text: Create COVID-19 report with US data
-        - url: paginated-reports/paginated-reports-report-builder-power-bi.md
-          itemType: concept
-          text: What are paginated reports?
-        - url: create-reports/service-dashboard-create.md
+        - url: create-reports/desktop-accessibility-creating-reports.md
           itemType: how-to-guide
-          text: Create a dashboard
+          text: Design reports for accessibility
+        - url: paginated-reports/report-builder-shared-datasets.md
+          itemType: concept
+          text: Create a paginated report based on a shared dataset
+        - url: create-reports/service-goals-create.md
+          itemType: how-to-guide
+          text: Create scorecards and goals (preview)
       # footerLink (optional)
       footerLink:
         url: create-reports/index.yml
