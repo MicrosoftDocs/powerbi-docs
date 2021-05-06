@@ -35,7 +35,7 @@ In general, for Power BI to work in Microsoft Teams, ensure these elements:
 
 ## Install the Power BI app
 
-Select **More added apps (...)** in the left navigation bar, then select **Power BI**. If you don't see it, type **Power BI** in the **Find an app** box.
+Select **More added apps (...)** in the left navigation bar, then search for and select **Power BI**.
 
 :::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-app.png" alt-text="Screenshot of installing the Power BI app in Microsoft Teams.":::
 
@@ -63,15 +63,9 @@ The Power BI app in Microsoft Teams also features a hub for training. Select **L
 
 :::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-learn-tab.png" alt-text="Screenshot of Learning center in Power BI app in Microsoft Teams.":::
 
-### Differences in interactions
+### Open report on the web
 
-A few interactions are different in the Teams app than they are in the browser
-
-- When you're looking at a dashboard or report, you don't see the Power BI navigation pane. Select the **Close** button to go back to Home or the workspace.
-
-    :::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-close-report.png" alt-text="Screenshot of Close button in Power BI app in Microsoft Teams.":::
-
-- You can choose to open the report in the Power BI service instead of viewing it in Microsoft Teams. Select **Open this on the web**.
+You can choose to open the report in the Power BI service instead of viewing it in Microsoft Teams. Select **Open this on the web**.
 
     :::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-open-web.png" alt-text="Screenshot of Open this on the web button in Power BI app in Microsoft Teams.":::
 
