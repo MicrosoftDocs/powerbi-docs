@@ -18,6 +18,7 @@ Before you start development, you'll need to install **node.js** and the **pbivi
 
 In this article, you'll learn how to:
 > [!div class="checklist"]
+>
 > * Install *nodes.js*.
 > * Install *pbiviz*.
 > * Create and install a certificate.
@@ -57,7 +58,7 @@ npm i -g powerbi-visuals-tools
 
 For a client (your computer) and a server (Power BI service) to interact securely, a [Secure Sockets Layer (SSL) Certificate](create-ssl-certificate.md) is required. Without a certificate to ensure secure interactions, they will be blocked by the browser.
 
-# [Windows](#tab/windows)
+### [Windows](#tab/windows)
 
 This process describes running a PowerShell command that launches the **Certificate Import Wizard**. Follow the steps below to configure the certificate in the wizard.
 
@@ -78,6 +79,7 @@ This process describes running a PowerShell command that launches the **Certific
     >![Screenshot of the p b i v i z command executed in Windows PowerShell](media/environment-setup/powershell-pbiviz.png)
 
     >[!NOTE]
+    >
     >* If you don't have permission to run pbiviz, start **PowerShell** as an administrator and run the command `Set-ExecutionPolicy RemoteSigned`, then try again.
     >* If the Certificate Import Wizard doesn't open automatically, navigate to the certificate location in **File Explorer**, right-click on it, and select *Install*.
 
@@ -113,8 +115,7 @@ This process describes running a PowerShell command that launches the **Certific
     >[!NOTE]
     >If you receive a security warning, select **Yes**.
 
-
-# [OSX](#tab/sdk2osx)
+### [OSX](#tab/sdk2osx)
 
 1. If the lock in the upper left is locked, select it to unlock it. Search for *localhost* and double-click the certificate.
 
@@ -166,7 +167,6 @@ To install the libraries listed in this article, open PowerShell and enter the i
 
 >[!NOTE]
 >Once these libraries are installed on your computer, you'll be able to use them for any Power BI visuals project. This is a one time installation procedure, per machine.
-
 
 ### D3 JavaScript library
 
