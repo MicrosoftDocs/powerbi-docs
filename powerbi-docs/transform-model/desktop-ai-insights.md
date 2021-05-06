@@ -18,16 +18,6 @@ In Power BI, you can use AI Insights to gain access to a collection of pre-train
 
 This article describes functions for Text Analytics and Vision functions, both from Azure Cognitive Services. Also in this article is a section that describes the custom functions available in Power BI from Azure Machine Learning.
 
-## How to enable AI Insights
-
-AI insights was made generally available in the June 2020 release of Power BI Desktop. For earlier versions of Power BI Desktop, AI insights in Power BI must be enabled by selecting **File > Options and settings > Options**, then **Preview features** from the left column. In the right pane is an **AI Insights function browser** selection. Check the box beside **AI Insights function browser** to enable the preview feature. You'll need to restart Power BI Desktop for the preview feature change to take effect.
-
-> [!NOTE]
-> AI insights is generally available for all versions of Power BI Desktop, and for does not need to be enabled as a preview feature.
-
-![AI Insights option for Power BI Desktop](media/desktop-ai-insights/ai-insights-01.png)
-
-
 ## Using Text Analytics and Vision
 
 With Text Analytics and Vision in Power BI, you can apply different algorithms from [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) to enrich your data in Power Query.
