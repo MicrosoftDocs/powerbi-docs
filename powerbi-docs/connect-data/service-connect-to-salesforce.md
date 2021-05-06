@@ -7,7 +7,7 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 05/02/2021
+ms.date: 05/06/2021
 LocalizationGroup: Connect to services
 ---
 
@@ -158,10 +158,13 @@ At same time, we can use the Month Wise Performance visual to measure the month-
 
 * If you encounter any errors, review the requirements above.
 * Signing in to a custom or sandbox domain isn't currently supported.
+* [Salesforce connector reference](/power-query/connectors/salesforcereports)
 
 ### "Unable to connect to the remote server" message
 
 If you get an "Unable to connect to the remote server" message when trying to connect to your Salesforce account, see this solution on the following forum: [Salesforce Connector sign in Error Message: Unable to connect to the remote server](https://www.outsystems.com/forums/Forum_TopicView.aspx?TopicId=17674&TopicName=log-in-error-message-unable-to-connect-to-the-remote-server&)
+
+## Next steps
  
 * [What are Power BI template apps](service-template-apps-overview.md)
 * [Create a template app in Power BI](service-template-apps-create.md)
