@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 04/02/2021
+ms.date: 05/06/2021
 ---
 
 # Add the Power BI app to Microsoft Teams
@@ -67,7 +67,7 @@ The Power BI app in Microsoft Teams also features a hub for training. Select **L
 
 You can choose to open the report in the Power BI service instead of viewing it in Microsoft Teams. Select **Open this on the web**.
 
-    :::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-open-web.png" alt-text="Screenshot of Open this on the web button in Power BI app in Microsoft Teams.":::
+:::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-open-web.png" alt-text="Screenshot of Open this on the web button in Power BI app in Microsoft Teams.":::
 
 ## Search for Power BI content in Teams
 
@@ -88,7 +88,7 @@ With the new search experience in Teams, you can find recent reports, dashboards
 
     The first time you use this capability, you need to sign in.
 
-1. If you haven't installed the Power BI app yet, you can select **More apps** in the **Search** box, then search for the Power BI app.
+1. If you haven't installed the Power BI app yet, you'll be given the opportinity to add it.
  
     :::image type="content" source="media/service-microsoft-teams-app/power-bi-search-teams-apps.png" alt-text="Search for the Power BI app in Teams":::
 
