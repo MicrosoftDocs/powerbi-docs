@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 09/02/2020
+ms.date: 05/02/2021
 ---
 
 # Set up your environment for developing a Power BI visual
@@ -77,9 +77,9 @@ This process describes running a PowerShell command that launches the **Certific
     >[!div class="mx-imgBorder"]
     >![Screenshot of the p b i v i z command executed in Windows PowerShell](media/environment-setup/powershell-pbiviz.png)
 
->[!NOTE]
->* If you don't have permission to run pbiviz, start **PowerShell** as an administrator and run the command `Set-ExecutionPolicy RemoteSigned`, then try again.
->* If the Certificate Import Wizard doesn't open automatically, navigate to the certificate location in **File Explorer**, right-click on it, and select *Install*.
+    >[!NOTE]
+    >* If you don't have permission to run pbiviz, start **PowerShell** as an administrator and run the command `Set-ExecutionPolicy RemoteSigned`, then try again.
+    >* If the Certificate Import Wizard doesn't open automatically, navigate to the certificate location in **File Explorer**, right-click on it, and select *Install*.
 
 2. In the Certificate Import Wizard, verify that the store location is set to *Current User*, and select **Next**.
 
