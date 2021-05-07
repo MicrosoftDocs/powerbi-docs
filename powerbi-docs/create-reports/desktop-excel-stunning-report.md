@@ -120,7 +120,7 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
  
 1. Now select the **Data** view on the left.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-data-view.png alt-text="Screenshot of Data View icon.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-data-view.png" alt-text="Screenshot of Data View icon.":::
 
 1. On the **Home** ribbon, select **New table**. 
 
