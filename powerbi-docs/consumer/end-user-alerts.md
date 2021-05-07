@@ -72,25 +72,22 @@ If you're not signed up for Power BI, [sign up for a free trial](https://app.pow
 ## Add an alert to a dashboard tile
 
 1. From a dashboard gauge, KPI, or card tile, select the ellipsis.
-   
+
    :::image type="content" source="media/end-user-alerts/power-bi-card.png" alt-text="Screenshot of a card tile showing market share, with an ellipsis called out in the upper right corner.":::
 
-2. Select the alert icon ![Alert icon](media/end-user-alerts/power-bi-alert-icon.png), or **Manage alerts**, to add one or more alerts for the **Market share** card.
+1. Select the alert icon :::image type="icon" source="media/end-user-alerts/power-bi-alert-icon.png":::, or **Manage alerts**, to add one or more alerts for the **Market share** card.
 
    :::image type="content" source="media/end-user-alerts/power-bi-manage.png" alt-text="Screenshot showing the shortcut menu of the ellipsis, with Manage alerts called out.":::
-   
+
 1. On the **Manage alerts** pane, select **+ Add alert rule**.  Ensure the slider is set to **On**, and give your alert a title. Titles help you easily recognize your alerts.
-   
-   ![Add alert rule window](media/end-user-alerts/power-bi-alert-manage.png)
-4. Scroll down and enter the alert details.  In this example we'll create an alert that notifies us once a day if our market share increases to 40 or higher. Alerts will appear in our [Notification center](end-user-notification-center.md). And we'll have Power BI send us an email as well.
-   
-   ![Manage alerts window, set Threshold](media/end-user-alerts/power-bi-manage-alert-detail.png)
 
-5. Select **Save and close**.
- 
+   :::image type="content" source="media/end-user-alerts/power-bi-alert-manage.png" alt-text="Screenshot showing the Add alert rule window. The Alert title box contains a title, and the Active slider is set to On.":::
 
+1. Scroll down and enter the alert details.  In this example we'll create an alert that notifies us once a day if our market share increases to 40 or higher. Alerts will appear in our [Notification center](end-user-notification-center.md). And we'll have Power BI send us an email as well.
 
-   > 
+   :::image type="content" source="media/end-user-alerts/power-bi-manage-alert-detail.png" alt-text="Screenshot showing the Manage alerts window. The Condition box is set to Above, the Threshold box contains 40, and the email check box is selected.":::
+
+1. Select **Save and close**.
 
 ## Receiving alerts
 When the data being tracked reaches one of the thresholds you've set, several things happen. First, Power BI checks to see if it has been more than an hour, or more than 24 hours (depending on the option you selected), since the last alert was sent. As long as the data is past the threshold, you'll get an alert.
@@ -98,14 +95,14 @@ When the data being tracked reaches one of the thresholds you've set, several th
 Next, Power BI sends an alert to your Notification center and, optionally, in email. Each alert contains a direct link to your data. Select the link to see the relevant tile.  
 
 1. If you've set the alert to send you an email, you'll find something like this in your Inbox. This is an alert we set for the **Sentiment** card.
-   
-   ![Alert email](media/end-user-alerts/power-bi-email.png)
+
+   :::image type="content" source="media/end-user-alerts/power-bi-email.png" alt-text="Screenshot showing an email message for the Alert for Sentiment alert. A link in the message is labeled Go to dashboard.":::
 2. Power BI also adds a message to your **Notification center**.
-   
-   ![Notification icon in Power BI service](media/end-user-alerts/power-bi-task.png)
+
+   :::image type="content" source="media/end-user-alerts/power-bi-task.png" alt-text="Screenshot showing the Search box and a few icon buttons, with the notification icon called out.":::
 3. Open your Notification center to see the alert details.
-   
-    ![read the Alert](media/end-user-alerts/power-bi-notifications.png)
+
+   :::image type="content" source="media/end-user-alerts/power-bi-notifications.png" alt-text="Screenshot showing the Notification center, with the notification icon called out and a few notifications visible.":::
    
   
 
@@ -115,12 +112,12 @@ There are many ways to manage your alerts: from the dashboard tile itself, from 
 
 ### From the tile itself
 
-1. If you need to change or remove an alert for a tile, re-open the **Manage alerts** window by selecting the alert icon ![Alert icon](media/end-user-alerts/power-bi-alert-icon.png). All the alerts that you've set for that tile are displayed.
-   
-    ![Manage alerts window](media/end-user-alerts/power-bi-manage-alert.png).
+1. If you need to change or remove an alert for a tile, re-open the **Manage alerts** window by selecting the alert icon :::image type="icon" source="media/end-user-alerts/power-bi-alert-icon.png":::. All the alerts that you've set for that tile are displayed.
+
+   :::image type="content" source="media/end-user-alerts/power-bi-manage-alert.png" alt-text="Screenshot showing the Manage alerts window, with the Alert for Market Share alert visible.":::
 2. To modify an alert, select the arrow to the left of the alert name.
-   
-    ![arrow next to Alert name](media/end-user-alerts/power-bi-alert-modify.png).
+
+   :::image type="content" source="media/end-user-alerts/power-bi-alert-modify.png" alt-text="Screenshot showing the Manage alerts window. Next to the Alert for Market Share alert, the arrow is called out.":::
 3. To delete an alert, select the trashcan to the right of the alert name.
    
       ![trashcan icon selected](media/end-user-alerts/power-bi-delete.png)
