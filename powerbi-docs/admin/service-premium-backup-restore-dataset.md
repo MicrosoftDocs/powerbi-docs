@@ -52,9 +52,18 @@ Storage account owners have unrestricted access to the backup files, so ensure s
 
 ### How to perform backup and restore
 
-**Backup and Restore** requires using XMLA-based tools, such as [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms). There is no backup or restore facility or option in the Power BI user interface. 
+**Backup and Restore** requires using XMLA-based tools, such as [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms). There is no backup or restore facility or option in the Power BI user interface. Because of the XMLA dependency, **Backup and Restore** currently requires your datasets to reside on a Premium or PPU capacity.
 
-Because of the XMLA dependency, **Backup and Restore** currently requires your datasets to reside on a Premium or PPU capacity.
+The storage account settings for **Backup and Restore** can be applied at either the **tenant** or the **workspace** level.
+
+For **Backup and Restore**, Power BI creates a new container called *power-bi-backup* in your storage account, and creates a backup folder using the same name as your workspace in the *power-bi-backup* container. If you configure a storage account at the **tenant** level, Power BI only creates the *power-bi-backup* container. Power BI creates the backup folder at the time you attach the storage account to a workspace. If you configure a storage account at the **workspace** level, Power BI creates the *power-bi-backup* container and creates the backup folder.
+
+During backup and restore, the following actions apply:
+
+* Backup files are placed into the backup folder in the *power-bi-backup* container
+* For restore, you must place the backup files (.abf files) into the folder before conducting a restore
+
+If you rename a workspace, the backup folder in the *power-bi-backup* container is automatically renamed to match. However, if you have an existing folder with the same name as the renamed workspace, the automatic renaming for the backup folder will fail. 
 
 ## Limitations and considerations
 
