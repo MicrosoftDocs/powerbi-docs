@@ -136,8 +136,6 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 
      :::image type="content" source="media/desktop-excel-stunning-report/power-bi-dax-expression.png" alt-text="Screenshot of DAX expression Calendar.":::
 
-1. Still in Data view, select your new Calendar table, and on the **Table tools** ribbon, select **Mark as date table**.
-1. In the **Date column** box, select the **Date** column. 
 1. Now select **Model** view on the left. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-model-view.png" alt-text="Screenshot of Model View icon.":::
