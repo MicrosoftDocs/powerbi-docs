@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/06/2021
+ms.date: 05/07/2021
 LocalizationGroup: Create reports
 ---
 # Create modern visual tooltips (preview)
@@ -54,7 +54,11 @@ If you select **Market Basket Analysis** in the tooltip, you drill through to th
 
 ## Updated styling 
 
-Once you upgrade to the new tooltips, you may notice an updated styling that is based on the report’s theme.  
+Once you upgrade to the new tooltips, you may notice an updated styling that is based on the report’s [theme colors](desktop-report-themes.md#setting-structural-colors):
+
+- The background of the tooltips default to the **Background elements**.
+- The text and icon color of the tooltips default to the **First-level elements**.
+- The separator line and hover color on the tooltip default to the **Secondary background elements**.
 
 For example, this tooltip has the **Default** theme style:  
 
