@@ -106,7 +106,7 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 
 1. On the **Home** ribbon, select **New measure**.
 
-<img alt="Screenshot of New measure icon" src="https://user-images.githubusercontent.com/44716363/114489998-af86fd00-9bd9-11eb-95b4-ded56229577c.png">
+    :::image type="content" source="media/desktop-excel-stunning-report/desktop-new-measure-icon.png" alt-text="Screenshot of New measure icon on the Home ribbon.":::
 
 1. Type this expression to add all the numbers in the Units Sold column.
 
@@ -116,10 +116,10 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
     
 1. Select the check mark to commit.
     
- <img alt="Screenshot of DAX expression." src="https://user-images.githubusercontent.com/44716363/114489997-aeee6680-9bd9-11eb-9529-9670831a4bb9.png">
+    :::image type="content" source="media/desktop-excel-stunning-report/dax-total-units-sold.png" alt-text="Screenshot of DAX expression Total Units Sold.":::
  
 1. Now select the **Data** view on the left.
- 
+
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-data-view.png alt-text="Screenshot of Data View icon.":::
 
 1. On the **Home** ribbon, select **New table**. 
@@ -134,7 +134,7 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 
 1. Select the check mark to commit.
 
-     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-dax-expression.png" alt-text="Screenshot of DAX expression.":::
+     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-dax-expression.png" alt-text="Screenshot of DAX expression Calendar.":::
 
 1. Still in Data view, select your new Calendar table, and on the **Table tools** ribbon, select **Mark as date table**.
 1. In the **Date column** box, select the **Date** column. 
@@ -169,7 +169,7 @@ Let’s build the final report, one visual at a time.
 Now, you create a line chart to see which month and year had the highest profit. 
 
 1. From the Fields pane, drag the **Profit** field to a blank area on the report canvas. By default, Power BI displays a column chart with one column, Profit. 
-1. Drag the **Date** field to the same visual. If you created a Calendar table in [Extra credit: Create a table in DAX](#extra-credit-write-a-measure-in-dax) earlier in this article, drag the **Date** field from your Calendar table instead. 
+1. Drag the **Date** field to the same visual. If you created a Calendar table in [Extra credit: Create a table in DAX](#extra-credit-write-an-expression-in-dax) earlier in this article, drag the **Date** field from your Calendar table instead. 
 
     Power BI updates the column chart to show profit by the two years.
 
@@ -221,7 +221,7 @@ Create a bar chart to determine which companies and segments to invest in.
 
 ### Visual 5: Year slicer 
 
-Slicers are a valuable tool for filtering the visuals on a report page to a specific selection. In this case, we can create two different slicers to narrow in on performance for each month and year. One slicer uses the date field in the original table. The other uses the [date table you may have created for "extra credit"](#extra-credit-write-a-measure-in-dax) earlier in this tutorial.
+Slicers are a valuable tool for filtering the visuals on a report page to a specific selection. In this case, we can create two different slicers to narrow in on performance for each month and year. One slicer uses the date field in the original table. The other uses the [date table you may have created for "extra credit"](#extra-credit-write-an-expression-in-dax) earlier in this tutorial.
 
 
 **Date slicer using the original table**
