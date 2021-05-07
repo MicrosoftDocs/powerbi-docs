@@ -120,7 +120,7 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
  
 1. Now select the **Data** view on the left.
  
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-data-view.png" alt-text="Screenshot of Data View icon.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-data-view.png alt-text="Screenshot of Data View icon.":::
 
 1. On the **Home** ribbon, select **New table**. 
 
@@ -291,7 +291,7 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 
 **Add a background shape for visuals 2 and 3**
 
-1. On the **Insert** ribbon, select **Shapes** > **Rectangle**, and stretch it the be the width and height of Visuals 2 and 3. 
+1. On the **Insert** ribbon, select **Shapes** > **Rectangle**, and stretch it to be the width and height of Visuals 2 and 3. 
 1. In the **Format shape** pane, in the **Line** section, change **Transparency** to **100%**. 
 1. On the **Format** tab, select **Send backward** > **Send to back**. 
 
