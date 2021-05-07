@@ -23,7 +23,7 @@ When you build reports in Power BI Desktop that use custom data connectors, you 
 
 ## Enable and use this capability
 
-When you install the on-premises data gateway or a later version, you see a **Connectors** tab in the on-premises data gateway app. In the **Load custom data connectors from folder** box, select a folder that can be accessed by the user running the gateway service. The default user is *NT SERVICE\PBIEgwService*. The gateway automatically loads the custom connector files located in that folder. They appear in the list of data connectors.
+When you install the on-premises data gateway, you see a **Connectors** tab in the on-premises data gateway app. In the **Load custom data connectors from folder** box, select a folder that can be accessed by the user running the gateway service. The default user is *NT SERVICE\PBIEgwService*. The gateway automatically loads the custom connector files located in that folder. They appear in the list of data connectors.
 
 ![Custom data connectors](media/service-gateway-custom-connectors/gateway-onprem-customconnector1.png)
 

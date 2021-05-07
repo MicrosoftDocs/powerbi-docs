@@ -12,7 +12,7 @@ LocalizationGroup: Create reports
 ---
 # High-density line sampling in Power BI
 
-A sampling algorithm is available that improves visuals that sample high-density data. For example, you might create a line chart from your retail stores' sales results, each store having more than ten thousand sales receipts each year. A line chart of such sales information would sample data (select a meaningful representation of that data, to illustrate how sales vary over time) from the data for each store, and create a multi-series line chart that thereby represents the underlying data. This is common practice in visualizing high-density data. Power BI Desktop has improved its sampling of high-density data, the details of which are described in this article.
+The sampling algorithm in Power BI improves visuals that sample high-density data. For example, you might create a line chart from your retail stores' sales results, each store having more than ten thousand sales receipts each year. A line chart of such sales information would sample data (select a meaningful representation of that data, to illustrate how sales vary over time) from the data for each store, and create a multi-series line chart that thereby represents the underlying data. This is common practice in visualizing high-density data. The details of high-density data sampling are described in this article.
 
 ![Screenshot of line charts, showing the high-density sampling data.](media/desktop-high-density-sampling/high-density-sampling_01.png)
 
