@@ -124,10 +124,7 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 
 1. On the **Home** ribbon, select **New table**. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-new-table.png
-    
-    
-" alt-text="Screenshot of New Table icon.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-new-table.png alt-text="Screenshot of New Table icon.":::
 
 1. Type this expression to generate a Calendar table of all dates between January 1, 2013, and December 31, 2014.
 
