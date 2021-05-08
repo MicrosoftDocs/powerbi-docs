@@ -82,7 +82,7 @@ If you click on any one of the industries in the Share of Industry visual, it sh
 
 ![Screenshot of Share of Industry visual.](media/service-connect-to-salesforce/service-salesforce-analytics-share-of-industry.png) 
  
-When we click on "Apparel", we see that the account we have in this sector is one of the top ten critical opportunities with respect to revenue. We can conclude from this that this is an opportunity that deserves our focus on a priority basis, since its expected revenue is among the highest as compared to other accounts.
+When we click on "Apparel", we see that the account we have in this sector is one of the top ten critical opportunities with respect to revenue. We can conclude that this is an opportunity that deserves our focus on a priority basis, since its expected revenue is among the highest as compared to other accounts.
 
 ![Screenshot of Top Ten Critical Opportunities visual.](media/service-connect-to-salesforce/service-salesforce-analytics-top-ten-critical-opportunity.png)
  
