@@ -7,7 +7,7 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 05/06/2021
+ms.date: 05/08/2021
 LocalizationGroup: Connect to services
 ---
 
