@@ -17,7 +17,13 @@ The Salesforce Analytics for Sales Managers template app includes visuals and in
 
 The app's out-of-the-box dashboard provides key metrics, such as your sales pipeline, best accounts, and KPI's. You can drill down into the report for more details on each aspect. Fully interactive visuals help you explore your data further.
 
-In this article we will walk through the app using sample data, to give you an idea of how you can use the app to gain key insights into your sales data.
+In this article we will walk through the app using sample data to give you an idea of how you can use the app to gain key insights into your sales data.
+
+## Prerequisites
+
+* Power BI Pro
+* A marketing, developer, or admin Salesforce subscription
+ 
 
 ## Install the app
 
