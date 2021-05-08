@@ -69,58 +69,56 @@ Using the dashboard, we're going see how to
 * Identify which areas we should focus on in the total sales life cycle.
 * Spot loopholes we should look into.
 
-Now let's analyze various components of the dashboard.
+Now let's look at the various components of the dashboard.
 
 The top two visuals show us the total number of open opportunities we have and the revenue we can expect to generate from them.
-
-![Screenshot of total open opportunities visual.](media/service-connect-to-salesforce/service-salesforce-analytics-top-two.png)
 
 The Opportunity Sales Stage visual shows the position of the opportunities in the sales pipeline. Select any stage on the sales pipeline stage to see its impact on the whole sales process. Now we can analyze the revenue that corresponds with that stage.
 
 
 ![Screenshot of Opportunity Sales Stage visual.](media/service-connect-to-salesforce/service-salesforce-analytics-sales-manager-dashboard.png)
 
-If you click on any one of the industries in the Share of Industry visual, it shows the share of the industry your sales team is working on. Let's click on "Communication" for example.
+If you click on any one of the industries in the Share of Industry visual, it shows the share of the industry your sales team is working on. Let's click on "Apparel" for example.
 
 ![Screenshot of Share of Industry visual.](media/service-connect-to-salesforce/service-salesforce-analytics-share-of-industry.png) 
  
-When we click on "Communication", we see that one of the accounts we have in this sector is in the top ten critical opportunities with respect to revenue. We can conclude that we should put our focus on this opportunity on a priority basis, since the expected revenue is the highest as compared to other accounts.
+When we click on "Apparel", we see that the account we have in this sector is one of the top ten critical opportunities with respect to revenue. We can conclude from this that this is an opportunity that deserves our focus on a priority basis, since its expected revenue is among the highest as compared to other accounts.
 
 ![Screenshot of Top Ten Critical Opportunities visual.](media/service-connect-to-salesforce/service-salesforce-analytics-top-ten-critical-opportunity.png)
  
 ## What does the Account dashboard tell us?
 
-The Account dashboard lets you oversee how you are performing in all your accounts. It tells you which are among your most profitable accounts. Let's analyze the accounts for manufacturing.
+The Account dashboard lets you oversee how you are performing in all your accounts. It tells you which are your most profitable accounts. Let's analyze the accounts for apparel.
 
-On the dashboard, select “Manufacturing” in the Account dashboard's Account Share Industry Wise visual.
+On the dashboard, select “Apparel” on the Account dashboard's Account Share Industry Wise visual.
 
 ![Screenshot of Account Share Industry Wise visual.](media/service-connect-to-salesforce/service-salesforce-analytics-account-share-industry-wise.png)
 
- You'll see the tiles get updated. Notice that there is a total of one industry in manufacturing, for which we have 20 accounts. 
+ You'll see the tiles get updated. Notice that there is one industry in apparel, for which we have 1 account. 
  
 ![Screenshot of updated open opportunities visual.](media/service-connect-to-salesforce/service-salesforce-analytics-top-two-updated.png)
 
-If we look at the Account Area Wise map visual, you'll see the areas where we have manufacturing accounts.
+If we look at the Account Area Wise map visual, you'll see the area where we have the apparel account.
 
 ![Screenshot of Account Share Area Wise visual.](media/service-connect-to-salesforce/service-salesforce-analytics-account-area-wise.png)
  
-Let’s look at the revenue for all the accounts under manufacturing. In the Revenue by Account visual you can see that the accounts for manufacturing are highlighted, describing the revenue being generated.
+Let’s look at the revenue for the account under apparel. In the Revenue by Account visual you can see that the account for apparel is highlighted, and shows the revenue being generated.
 
 ![Screenshot of Revenue by Account visual.](media/service-connect-to-salesforce/service-salesforce-analytics-revenue-by-account.png)
 
-We can also see a comparison of revenue won vs lost. If we hover over a bar, we see the exact revenue for out of the total revenue.
+We can also see a comparison of revenue won vs lost. If we hover over a bar, we see the exact revenue won out of the total revenue.
 
 ![Screenshot of Revenue Won vs Lost visual.](media/service-connect-to-salesforce/service-salesforce-analytics-revenue-won-vs-lost.png)
 
 ## What does the Lead dashboard tell us?
 
-The Lead dashboard lets you oversee what the sources of your leads are. It tells you which are among your most profitable sources of lead.
+The Lead dashboard lets you see what the sources of your leads are. It tells you which are your most profitable sources of lead.
 
-Look at the Probability of conversion visual to examine what the probability is that the lead from a source is going to be converted. For example, selecting for Google AdWords shows that the probability of conversion is 51.25%, while its total forecasted amount is 1.92 million dollars.
+Look at the Probability of Conversion visual to examine what the probability is that the lead from a source is going to be converted. For example, selecting "External Referral" in the Leads by Source visual shows that the probability of conversion is 90.00%, while its total forecasted amount is 1.65 million dollars.
 
 ![Screenshot of Forecast Category Amount visual.](media/service-connect-to-salesforce/service-salesforce-analytics-forecast-category-amount.png)
  
-Similarly, you can also see the distribution of customers in the sales lead by looking at the Sales Lead by Customer Type visual. You can see it for a single lead by hovering over it. So, for Google AdWords, you can see that there are three new customers belonging to the “New Business” category.
+Similarly, you can also see the distribution of customers in the sales lead by looking at the Sales Lead by Customer Type visual. You can see it for a single lead by hovering over it. So, for "External Referral", you can see that there is one new customer belonging to the “New Business” category.
 
 ![Screenshot of Sales Lead Customer Type visual.](media/service-connect-to-salesforce/service-salesforce-analytics-sales-lead-customer-type.png)
  
@@ -134,7 +132,7 @@ The Representative dashboard lets you measure the performance of the sales repre
 
 We can see all the industries a sales representative works in, and all the representatives of an industry.
 
-To see the performance of the sales representatives, we selected "Media" as the industry from the Share of Industry visual on the Sales Manager dashboard. Then, in the Total Opportunities Gained visual, we can see the names of the sales representatives and the number of opportunities which belong to the selected industry.
+To see the performance of the sales representatives, we selected "Energy" as the industry from the Share of Industry visual. Then, in the Total Opportunities Gained visual, we can see the name of the sales representative and the number of opportunities which belong to the selected industry.
 
 ![Screenshot of Total Opportunities Gained visual.](media/service-connect-to-salesforce/service-salesforce-analytics-total-opportunities-gained.png)
  
