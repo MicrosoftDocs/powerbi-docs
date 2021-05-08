@@ -64,7 +64,7 @@ When you open the app, you'll see the KPI dashboard. The KPI dashboard shows us 
 
 The Sales Manager dashboard and underlying report focus on a typical sales challenge: providing a total sales analysis over a certain period. 
 
-Using the dashboard, we're going see how to
+Using the dashboard to look at the sample data, we're going see how to
 * Understand how much we can generate from the total open opportunities that a Sales company has.
 * Identify which areas we should focus on in the total sales life cycle.
 * Spot loopholes we should look into.
