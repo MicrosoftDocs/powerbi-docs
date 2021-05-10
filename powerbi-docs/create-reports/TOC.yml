@@ -348,6 +348,16 @@
         href: ../visuals/power-bi-visualization-treemaps.md
       - name: "Waterfall charts"
         href: ../visuals/power-bi-visualization-waterfall-charts.md
+    - name: Goals
+      items: 
+      - name: "Get started with goals"
+        href: service-goals-introduction.md
+      - name: "Create scorecards and manual goals"
+        href: service-goals-create.md
+      - name: "Create connected goals"
+        href: service-goals-create-connected.md
+      - name: "Stay on top of your goals"
+        href: service-goals-check-in.md        
     - name: Natural language Q&A
       items: 
       - name: "Create a Q&A visual"
@@ -370,42 +380,6 @@
         href: service-insights.md
       - name: "Optimize data for Quick Insights"
         href: service-insights-optimize.md
-    - name: Accessibility
-      items:       
-      - name: "Design accessible reports"
-        href: desktop-accessibility-creating-reports.md      
-      - name: "Create reports with accessibility tools"
-        href: desktop-accessibility-creating-tools.md 
-      - name: "Consume reports with accessibility features"
-        href: desktop-accessibility-consuming-tools.md             
-      - name: "Keyboard shortcuts in Power BI Desktop"
-        href: desktop-accessibility-keyboard-shortcuts.md                            
-    - name: Paginated reports
-      items: 
-      - name: Enter data directly in a paginated report
-        href: ../paginated-reports/paginated-reports-enter-data.md
-      - name: Edit a paginated report from the Power BI service
-        href: ../paginated-reports/paginated-reports-edit-service.md
-      - name: Create an embedded data source
-        href: ../paginated-reports/paginated-reports-embedded-data-source.md
-      - name: Create an embedded dataset
-        href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
-      - name: Create a report with a Power BI shared dataset
-        href: ../paginated-reports/report-builder-shared-datasets.md
-      - name: Download the .rdl for a paginated report
-        href: ../paginated-reports/paginated-reports-download-rdl.md
-      - name: Create parameters
-        href: ../paginated-reports/paginated-reports-parameters.md
-      - name: Set report views
-        href: ../paginated-reports/page-view.md
-      - name: Subreports
-        href: ../paginated-reports/subreports.md
-      - name: Troubleshoot subreports
-        href: ../paginated-reports/subreports-troubleshoot.md
-      - name: Pass a report parameter in a URL
-        href: ../paginated-reports/report-builder-url-pass-parameters.md
-      - name: Publish a paginated report
-        href: ../paginated-reports/paginated-reports-save-to-power-bi-service.md
     - name: Dashboards
       items: 
       - name: "Intro to dashboards"
@@ -442,12 +416,48 @@
         href: service-data-classification.md
       - name: "Dashboard themes"
         href: service-dashboard-themes.md
+    - name: Paginated reports
+      items: 
+      - name: Enter data directly in a paginated report
+        href: ../paginated-reports/paginated-reports-enter-data.md
+      - name: Edit a paginated report from the Power BI service
+        href: ../paginated-reports/paginated-reports-edit-service.md
+      - name: Create an embedded data source
+        href: ../paginated-reports/paginated-reports-embedded-data-source.md
+      - name: Create an embedded dataset
+        href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
+      - name: Create a report with a Power BI shared dataset
+        href: ../paginated-reports/report-builder-shared-datasets.md
+      - name: Download the .rdl for a paginated report
+        href: ../paginated-reports/paginated-reports-download-rdl.md
+      - name: Create parameters
+        href: ../paginated-reports/paginated-reports-parameters.md
+      - name: Set report views
+        href: ../paginated-reports/page-view.md
+      - name: Subreports
+        href: ../paginated-reports/subreports.md
+      - name: Troubleshoot subreports
+        href: ../paginated-reports/subreports-troubleshoot.md
+      - name: Pass a report parameter in a URL
+        href: ../paginated-reports/report-builder-url-pass-parameters.md
+      - name: Publish a paginated report
+        href: ../paginated-reports/paginated-reports-save-to-power-bi-service.md
     - name: "Deployment pipelines"  
       items:
       - name: "Get started"
         href: deployment-pipelines-get-started.md
       - name: "Troubleshooting"
         href: deployment-pipelines-troubleshooting.md      
+    - name: Accessibility
+      items:       
+      - name: "Design accessible reports"
+        href: desktop-accessibility-creating-reports.md      
+      - name: "Create reports with accessibility tools"
+        href: desktop-accessibility-creating-tools.md 
+      - name: "Consume reports with accessibility features"
+        href: desktop-accessibility-consuming-tools.md             
+      - name: "Keyboard shortcuts in Power BI Desktop"
+        href: desktop-accessibility-keyboard-shortcuts.md                            
     - name: Other tasks
       items: 
       - name: "Rename content"

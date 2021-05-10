@@ -8,16 +8,16 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/21/2020
+ms.date: 04/30/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to data sources in Power BI Desktop
 
 With Power BI Desktop, you can easily connect to the ever expanding world of data. If you don’t have Power BI Desktop, you can [download](https://go.microsoft.com/fwlink/?LinkID=521662) and install it.
 
-There are *all sorts* of data sources available in Power BI Desktop. The following image shows how to connect to data, by selecting **Get Data** > **Other** > **Web**.
+There are *all sorts* of data sources available in Power BI Desktop. The following image shows how to connect to data, by selecting **Get data** > **Other** > **Web**.
 
-![Get data from the web](media/desktop-connect-to-data/get-data-from-the-web.png)
+![Get data from the web](media/desktop-connect-to-data/get-data-from-web.png)
 
 ## Example of connecting to data
 
@@ -29,7 +29,7 @@ Either way, you find a Web resource that has interesting data about those topics
 
 [https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
-Select **Get Data** > **Other** > **Web**. In **From Web**, enter the address.
+Select **Get data** > **Other** > **Web**. In **From Web**, enter the address.
 
 ![Enter a Web source address](media/desktop-connect-to-data/connecttodata_3.png)
 
@@ -65,7 +65,7 @@ Of course, this model is simple, with a single data connection. Most Power BI De
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
-* [About using Query Editor in Power BI Desktop](../transform-model/desktop-query-overview.md)
+* [Query overview in Power BI Desktop](../transform-model/desktop-query-overview.md)
 * [Data sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and combine data in Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Perform common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)   

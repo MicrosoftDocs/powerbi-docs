@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/14/2020
+ms.date: 05/06/2021
 LocalizationGroup: Data refresh
 ---
 
@@ -65,6 +65,10 @@ Because Power BI does not import the data, you don't need to run a data refresh.
 
 > [!NOTE]
 > The **Scheduled cache refresh** section of the **Datasets** tab is not available for datasets in import mode. These datasets don't require a separate tile refresh because Power BI refreshes the tiles automatically during each scheduled or on-demand data refresh.
+
+> [!NOTE]
+> Power BI does not support cross-border live connections to Azure Analysis Services (AAS) in a sovereign cloud.
+
 
 #### Push datasets
 

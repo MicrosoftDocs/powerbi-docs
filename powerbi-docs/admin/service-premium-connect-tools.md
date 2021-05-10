@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 04/19/2021
+ms.date: 05/05/2021
 ms.custom: ''
 LocalizationGroup: Premium
 ---
@@ -144,8 +144,8 @@ The following table describes the implications of the setting **Export data** fo
 
 |Setting  |Allow XMLA endpoints and Analyze in Excel with on-premises datasets = **disabled**  |Allow XMLA endpoints and Analyze in Excel with on-premises datasets = **enabled**  |
 |---------|---------|---------|
-|Export data = off     |XMLA *disallowed*, Analyze in Excel *disallowed*, AIXL for on-prem datasets *disallowed*         |XMLA *allowed*, Analyze in Excel *disallowed*, AIXL for on-prem datasets *allowed*         |
-|Export data = on     | XMLA *disallowed*, Analyze in Excel *allowed*, AIXL for on-prem datasets *disallowed*        | XMLA *allowed*, Analyze in Excel *allowed*, AIXL for on-prem datasets *allowed*        |
+|Allow Live Connections toggle = disabled     |XMLA *disallowed*, Analyze in Excel *disallowed*, AIXL for on-prem datasets *disallowed*         |XMLA *allowed*, Analyze in Excel *disallowed*, AIXL for on-prem datasets *allowed*         |
+|Allow Live Connections toggle = enabled     | XMLA *disallowed*, Analyze in Excel *allowed*, AIXL for on-prem datasets *disallowed*        | XMLA *allowed*, Analyze in Excel *allowed*, AIXL for on-prem datasets *allowed*        |
 
 
 
