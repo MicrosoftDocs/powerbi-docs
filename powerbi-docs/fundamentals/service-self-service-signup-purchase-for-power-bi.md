@@ -17,7 +17,7 @@ LocalizationGroup: Get started
 Power BI can serve as the analytics, visualization, and decision engine behind group projects, divisions, or entire corporations but it can also be your personal data analysis and visualization tool. This article explains the options you have to sign up for or purchase Power BI as an individual.    
 
 There are two ways for individuals to get a Power BI license. They can sign up for or purchase a license for themselves, or they can rely on an administrator to assign them a license.  This article explains the first option, which is called **self-service**.   
-For an overview of self-service, visit [Self-service for Microsoft 365 products and services](~/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins?view=o365-worldwide.md).
+For an overview of self-service, visit [Self-service for Microsoft 365 products and services](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
 
 ## Self-service sign-up versus self-service purchase
 The **Self-service sign-up** feature is used by individuals who sign themselves up for free and trial licenses. **Self-service purchase** is the feature used by individuals to buy a Pro or Premium Per User license for themselves.     
