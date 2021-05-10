@@ -105,7 +105,7 @@ When a visual is being cross-highlighted in a report, report tooltips always sho
 ## Limitations and considerations
 There are a few limitations and considerations for **tooltips** to keep in mind.
 
-* Beginning with the December 2018 release of **Power BI Desktop**, Button visuals also support tooltips.
+* Button visuals also support tooltips.
 * Report tooltips are not supported for Power BI visuals. 
 * Clusters are not currently supported as fields that can be shown in report tooltips. 
 * When choosing a field to be shown for report tooltips, when using a field versus a category, visuals that contain that field will only show the specified tooltip when summarization with the selected field matches. 

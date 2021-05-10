@@ -44,7 +44,7 @@ There are a few limits and considerations to keep in mind with the Google **BigQ
   Source = GoogleBigQuery.Database([BillingProject="Include-Billing-Project-Id-Here"])
   ```
 
-  Beginning in the September 2020 release, we enabled support for the [Google BigQuery Storage API](https://cloud.google.com/bigquery/docs/reference/storage). This feature is enabled by default and is controlled by the optional boolean argument called "UseStorageApi". Some customers might encounter issues with this feature if they use granular permissions. In this scenario, you might see the following error message:
+  [Google BigQuery Storage API](https://cloud.google.com/bigquery/docs/reference/storage) is enabled by default and is controlled by the optional boolean argument called "UseStorageApi". Some customers might encounter issues with this feature if they use granular permissions. In this scenario, you might see the following error message:
 
   `ERROR [HY000] [Microsoft][BigQuery] (131) Unable to authenticate with Google BigQuery Storage API. Check your account permissions`
 
