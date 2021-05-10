@@ -12,9 +12,9 @@ ms.date: 04/25/2021
 
 # Tutorial: Build a bar chart
 
-As a developer you can create your own Power BI visuals. These visuals can be used by you, your organization or by third parties.
+[!INCLUDE[Power B I visuals tutorials overview](../../includes/visual-tutorial-overview.md)]
 
-This article is a step-by-step guide for building a sample Power BI bar chart visual with code.
+In this tutorial, you'll develop a Power BI  visual displays data in the form of a bar chart. This visual supports customization of color,thickness, background, and more.
 
 In this tutorial, you learn how to:
 
@@ -36,40 +36,52 @@ Before you can start developing your Power BI visual, set up your environment fo
 
 ### Prerequisites
 
-Before you start developing your Power BI visual, verify that you have everything listed in this section.
+[!INCLUDE[Power B I tutorials prerequisites](../../includes/visual-tutorial-prerequisites.md)]
 
-* A **Power BI Pro** or **Premium Per User (PPU)** account. If you don't have one, [sign up for a free trial](https://powerbi.microsoft.com/pricing/).
+### Create a development project
 
-* [Visual Studio Code (VS Code)](https://www.visualstudio.com/). VS Code is an ideal Integrated Development Environment (IDE) for developing JavaScript and TypeScript applications.
+To create a project for the bar chart visual:
 
-* [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell) version 4 or later (for Windows). Or [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) (for OSX).
+1. Open PowerShell and navigate to the folder you want to create your project in.
 
-### Power BI developer environment
+2. Enter the following command:
 
-1. [Set up your environment for developing a Power BI visual](environment-setup.md).
+    ```PowerShell
+    pbiviz new BarChart
+    ```
 
-2. From the folder that contains your Power BI visual, run `npm install`. This installs all necessary dependencies and  connects the visual to Power BI.
+3. Navigate to the project's folder.
 
-3. Start the dev app by running `pbiviz start` from the Powershell.
+    ```powershell
+    cd BarChart
+    ```
 
-## Creating a bar chart visual
+4. Start the dev app by running `pbiviz start` from the Powershell. Your visual is now running while being hosted on your computer.
+
+    >[!IMPORTANT]
+    >Do not close the PowerSell window until the end of the tutorial. To stop the visual from running, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
+
+<!--- 2. From the folder that contains your Power BI visual, run `npm install`. This installs all necessary dependencies and  connects the visual to Power BI. --->
+
+## Create a bar chart visual
 
 Creating a bar chart visual involves the following steps:
 
 * Defining the bar chart view model.
 * Adding data binding.
-* Customizing your visual 
-    - Change the colors in the interface.
-    - Add a selection and interact with each data point.
-    - Add objects to the property pane.
+* Customizing your visual
+  * Change the colors in the interface.
+  * Add a selection and interact with each data point.
+  * Add objects to the property pane.
 * Packaging your visual.
 
 >[!NOTE]
 >For the full source code of this visual, see [PowerBI visuals sample bar chart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart).
 
-### Defining a view model with static data
+### Add bar chart visual element
 
-It's important to define the bar chart view model first, and iterate on what's exposed to your visual as you build it. Define the chart by creating a file in the src directory with the following.
+First, define the bar chart view model, and iterate on what's exposed to your visual as you build it. 
+Define the chart by creating a file in the src directory with the following.
 
 ```typescript
 /**
@@ -97,7 +109,7 @@ interface BarChartDataPoint {
 };
 ```
 
-Typically, it is easiest to build your visual with static data before adding Power BI's data binding. Using static data allows you to test your visual without databinding. Your view model will not change even when databinding is added. We will add databinding to your visual later.
+Typically, it is easiest to build your visual with static data before adding Power BI's data binding. Using static data allows you to test your visual first. Your view model will not change even when data binding is added later.
 
 Add the following static data to your file:
 
@@ -130,7 +142,8 @@ let viewModel: BarChartViewModel = {
 };
 ```
 
-### Add data binding 
+### Add data binding
+
 You add data binding by defining your visual capabilities in `capabilities.json`. The sample code already has a schema for you to use.
 
 Data binding acts on a **Field** well in Power BI.
