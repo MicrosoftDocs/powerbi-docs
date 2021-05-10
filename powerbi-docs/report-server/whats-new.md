@@ -71,7 +71,7 @@ See [Using enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-m
 
 **Browser support deprecation**
 
-If you're using Edge Legacy or Internet Explorer 11, it's time to upgrade your browser. Support for the Microsoft Edge Legacy browser stopped beginning March 9, 2021, and and Microsoft Internet Explorer 11 support for Microsoft Internet Explorer 11 will stop beginning August 17, 2021.
+If you're using Edge Legacy or Internet Explorer 11, it's time to upgrade your browser. Support for the Microsoft Edge Legacy browser stopped beginning March 9, 2021, and Microsoft Internet Explorer 11 support for Microsoft Internet Explorer 11 will stop beginning August 17, 2021.
 
 You'll see a warning in the Power BI Report Server web portal that Internet Explorer 11 is being deprecated. Time to upgrade! See [Browser support for Power BI Report Server](browser-support.md) for details.
 
