@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 04/21/2021
+ms.date: 05/10/2021
 ms.custom: licensing support
 LocalizationGroup: Get started
 ---
@@ -17,7 +17,7 @@ LocalizationGroup: Get started
 Power BI can serve as the analytics, visualization, and decision engine behind group projects, divisions, or entire corporations but it can also be your personal data analysis and visualization tool. This article explains the options you have to sign up for or purchase Power BI as an individual.    
 
 There are two ways for individuals to get a Power BI license. They can sign up for or purchase a license for themselves, or they can rely on an administrator to assign them a license.  This article explains the first option, which is called **self-service**.   
-For an overview of self-service, visit [Self-service for Microsoft 365 products and services](../../microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins?view=o365-worldwide).
+For an overview of self-service, visit [Self-service for Microsoft 365 products and services](~/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins?view=o365-worldwide.md).
 
 ## Self-service sign-up versus self-service purchase
 The **Self-service sign-up** feature is used by individuals who sign themselves up for free and trial licenses. **Self-service purchase** is the feature used by individuals to buy a Pro or Premium Per User license for themselves.     
@@ -71,9 +71,9 @@ If you are unable to use self-service to get your own Power BI license it may be
 
 •	For step by step instructions for using self-service purchase to get your own Power BI Pro or Premium per user (PPU) license, visit [title](service-self-service-signup-purchase-for-power-bi.md)       
 
-•	To learn more about self-service sign up and self-service purchase, visit [What is self-service](add link M365)    
+•	To learn more about self-service sign up and self-service purchase, visit [What is self-service](/microsoft-365/admin/misc/self-service-sign-up.md)    
 
 •	If you're a global administrator or billing administrator, see [Power BI licensing for your organization](../admin/service-admin-licensing-organization.md).    
 
-•	If you are a global administrator or billing administrator and don't want users in your organization to use self-service sign-up, see [Enable or disable self-service](../admin/service-admin-disable-self-service) to learn how to turn it off.    
+•	If you are a global administrator or billing administrator and don't want users in your organization to use self-service sign-up, see [Enable or disable self-service](../admin/service-admin-disable-self-service.md) to learn how to turn it off.    
 
