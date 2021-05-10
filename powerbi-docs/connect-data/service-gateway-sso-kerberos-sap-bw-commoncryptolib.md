@@ -106,7 +106,7 @@ If you're unable to refresh the report in the Power BI service, you can use gate
 
 3. Reproduce the issue and ensure that **CPIC\_TRACE\_DIR** contains trace files.
  
-	CPIC tracing can diagnose higher level issues such as a failure to load the sapcrypto.dll library. For example, here is a snippet from a CPIC trace file where a .dll load error occured:
+	CPIC tracing can diagnose higher level issues such as a failure to load the sapcrypto.dll library. For example, here is a snippet from a CPIC trace file where a .dll load error occurred:
 
 	```
 	[Thr 7228] *** ERROR => DlLoadLib()==DLENOACCESS - LoadLibrary("C:\Users\test\Desktop\sapcrypto.dll")
@@ -187,7 +187,7 @@ This section describes troubleshooting symptoms and resolution steps for imperso
 
 Delegation issues usually appear in the Power BI service as generic errors. To determine whether delegation is the issue, it's useful to collect the Wireshark traces and use *Kerberos* as a filter. For Kerberos errors reference, consult the [blog post](/archive/blogs/askds/kerberos-errors-in-network-captures). The rest of this section describes troubleshooting symptoms and resolution steps for delegation issues.
 
-**Symptom**: In the Power BI service you may encounter an unexpected error, similar to the following screen shot. the *GatewayInfo[date].log* you'll see *[DM.GatewayCore]* ingesting an exception during Ado query execution attempt for *clientPipelineId* and the import *[0D_NW_CHANN]* matches no exports.
+**Symptom**: In the Power BI service you may encounter an unexpected error, similar to the following screenshot. the *GatewayInfo[date].log* you'll see *[DM.GatewayCore]* ingesting an exception during Ado query execution attempt for *clientPipelineId* and the import *[0D_NW_CHANN]* matches no exports.
 
 :::image type="content" source="media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/sso-kerberos-sap-bw-troubleshooting-01.png" alt-text="Screenshot of unhelpful error":::
 
@@ -279,9 +279,9 @@ There are different resolutions, based on the symptoms you see in the data sourc
 
 **Resolution**: Check whether the Kerberos external ID for the User match what the sectraces are showing.
 
-1. Open SAP Logon
-2. Use the SU01 transaction
-3. Edit the user
+1. Open SAP Logon.
+2. Use the SU01 transaction.
+3. Edit the user.
 4. Navigate to the **SNC** tab, verify that the SNC name matches what is shown in your logs.
 
 **Validation**: When properly completed, you'll be able to create and refresh reports in the Power BI service.
