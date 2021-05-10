@@ -23,13 +23,13 @@ When you build reports in Power BI Desktop that use custom data connectors, you 
 
 ## Enable and use this capability
 
-When you install the July 2018 version of the on-premises data gateway or a later version, you see a **Connectors** tab in the on-premises data gateway app. In the **Load custom data connectors from folder** box, select a folder that can be accessed by the user running the gateway service. The default user is *NT SERVICE\PBIEgwService*. The gateway automatically loads the custom connector files located in that folder. They appear in the list of data connectors.
+When you install the on-premises data gateway, you see a **Connectors** tab in the on-premises data gateway app. In the **Load custom data connectors from folder** box, select a folder that can be accessed by the user running the gateway service. The default user is *NT SERVICE\PBIEgwService*. The gateway automatically loads the custom connector files located in that folder. They appear in the list of data connectors.
 
 ![Custom data connectors](media/service-gateway-custom-connectors/gateway-onprem-customconnector1.png)
 
 If you're using the on-premises data gateway (personal mode), you can upload your Power BI report to the Power BI service and use the gateway to refresh it.
 
-For the on-premises data gateway, you need to create a data source for your custom connector. On the gateway settings page in the Power BI service, you should see an option when you select the gateway cluster to allow using custom connectors with this cluster. Make sure all gateways in the cluster have the July 2018 update release or later for this option to be available. Select that option to enable using custom connectors with this cluster.
+For the on-premises data gateway, you need to create a data source for your custom connector. On the gateway settings page in the Power BI service, you should see an option when you select the gateway cluster to allow using custom connectors with this cluster. Select that option to enable using custom connectors with this cluster.
 
 ![Gateway Cluster Settings page](media/service-gateway-custom-connectors/gateway-onprem-customconnector2.png)
 
