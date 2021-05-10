@@ -163,7 +163,7 @@ Your Power BI visual will be available to download from AppSource when this proc
 * If you submitted a Power BI visual for the first time, the certification badge will appear within a day of receiving the approval email from AppSource.
 
 * If you're requesting certification for an existing Power BI visual, the certification badge will be visible within two weeks of your submission.
-git 
+
 ## Next steps
 
 >[!div class="nextstepaction"]
