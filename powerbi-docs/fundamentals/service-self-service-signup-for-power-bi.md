@@ -101,7 +101,7 @@ If you'd like to cancel your trial before the expiration date, select your accou
 
 Individuals can make a self-service purchase online from the Power BI website or from in-product purchase prompts. Individuals are first asked to enter an email address to ensure that their email address is already associated with at least one other Microsoft online service. If they're recognized by Microsoft, they're next directed to sign in. After signing in, the individual is asked to select how many subscriptions they want to buy, and to provide credit card payment. When the purchase is complete, they can start using their subscription. The purchaser has access to a limited view of the Microsoft 365 admin center where they can assign licenses for the product to other people in their organization.
 
-If you have additional questions about self-service purchase, visit the [Self-service purchase FAQ](~/microsoft-365/commerce/subscriptions/self-service-purchase-faq.md).
+If you have additional questions about self-service purchase, visit the [Self-service purchase FAQ](~/..microsoft-365/commerce/subscriptions/self-service-purchase-faq.md).
 
  To purchase a Power BI Pro license, select **Buy now** when prompted, or visit [Power BI pricing](https://powerbi.microsoft.com/pricing). Self-service purchase is also available for Power BI Premium Per User, and the steps are similar.
 
@@ -162,7 +162,7 @@ Sometimes it takes a few tries. If you retry your password several times and you
 
 ## Next steps
 
-[Self-service purchase FAQ](~/../microsoft-365/commerce/subscriptions/self-service-purchase-faq.md)
+[Self-service purchase FAQ](~microsoft-365/commerce/subscriptions/self-service-purchase-faq.md)
 
 [Power BI features by license type](../consumer/end-user-features.md)    
 [Tips for finding help](../fundamentals/service-tips-for-finding-help.md)    
