@@ -1,6 +1,6 @@
 ---
 title: Sign up or purchase the Power BI service as an individual
-description: Learn how to sign up for the Power BI service and begin using it for your data analysis and visualization needs.
+description: Learn how to sign up for or purchase the Power BI service and begin using it for your individual data analysis and visualization needs.
 author: mihart
 ms.author: mihart
 ms.reviewer: ''
@@ -12,11 +12,11 @@ ms.custom: licensing support
 LocalizationGroup: Get started
 ---
  
-# Sign up or purchase the Power BI service as an individual
+# Sign up for or purchase the Power BI service as an individual
 
 Power BI can be your personal data analysis and visualization tool, and can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations. This article explains how individuals can use **self-service sign-up** and **self-service purchase** to get a Power BI license for themselves.  If you're a global administrator or billing administrator, see [Power BI licensing for your organization](../admin/service-admin-licensing-organization.md).
 
-For definitions and an overview of self-service-sign-up and self-service purchase, visit [Self-service for Power BI](service-self-service-signup-purchase-power-bi.md).
+For definitions and an overview of self-service-sign-up and self-service purchase, visit [Self-service for Power BI](service-self-service-signup-purchase-for-power-bi.md).
 
 ## Supported email addresses
 
@@ -101,7 +101,7 @@ If you'd like to cancel your trial before the expiration date, select your accou
 
 Individuals can make a self-service purchase online from the Power BI website or from in-product purchase prompts. Individuals are first asked to enter an email address to ensure that their email address is already associated with at least one other Microsoft online service. If they're recognized by Microsoft, they're next directed to sign in. After signing in, the individual is asked to select how many subscriptions they want to buy, and to provide credit card payment. When the purchase is complete, they can start using their subscription. The purchaser has access to a limited view of the Microsoft 365 admin center where they can assign licenses for the product to other people in their organization.
 
-If you have additional questions about self-service purchase, visit the [Self-service purchase FAQ](../../microsoft-365/commerce/subscriptions/self-service-purchase-faq.md).
+If you have additional questions about self-service purchase, visit the [Self-service purchase FAQ](../../../microsoft-365/commerce/subscriptions/self-service-purchase-faq.md).
 
  To purchase a Power BI Pro license, select **Buy now** when prompted, or visit [Power BI pricing](https://powerbi.microsoft.com/pricing). Self-service purchase is also available for Power BI Premium Per User, and the steps are similar.
 
@@ -162,7 +162,7 @@ Sometimes it takes a few tries. If you retry your password several times and you
 
 ## Next steps
 
-[Self-service purchase FAQ](../../microsoft-365/commerce/subscriptions/self-service-purchase-faq.md)
+[Self-service purchase FAQ](../../../microsoft-365/commerce/subscriptions/self-service-purchase-faq.md)
 
 [Power BI features by license type](../consumer/end-user-features.md)    
 [Tips for finding help](../fundamentals/service-tips-for-finding-help.md)    
