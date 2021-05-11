@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 05/03/2021
+ms.date: 05/11/2021
 ms.custom: video-01UrT-z37sw
 LocalizationGroup: Visualizations
 ---
