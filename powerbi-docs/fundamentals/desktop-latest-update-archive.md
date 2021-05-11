@@ -154,7 +154,7 @@ The links beside each feature in the Power BI Desktop update list are interprete
 You can also watch the entire [Power BI monthly update video](#power-bi-desktop-monthly-update-video).
 
 > [!IMPORTANT]
-> Power BI Desktop will no longer be supported on Windows 7 after January 31st, 2021. After that date, Power BI Desktop will be supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only. 
+> Power BI Desktop is no longer supported on Windows 7. Power BI Desktop will be supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only. 
 
 The following updates are new to Power BI Desktop this month:
 
@@ -325,7 +325,7 @@ The links beside each feature in the Power BI Desktop update list are interprete
 You can also watch the entire [Power BI monthly update video](#power-bi-desktop-monthly-update-video).
 
 > [!IMPORTANT]
-> Power BI Desktop will no longer be supported on Windows 7 after January 31st, 2021. After that date, Power BI Desktop will be supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only. 
+> Power BI Desktop is no longer supported on Windows 7. Power BI Desktop will be supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only.
 
 The following updates are new to Power BI Desktop this month:
 
@@ -407,7 +407,7 @@ The links beside each feature in the Power BI Desktop update list are interprete
 You can also watch the entire [Power BI monthly update video](#power-bi-desktop-monthly-update-video).
 
 > [!IMPORTANT]
-> Power BI Desktop will no longer be supported on Windows 7 after January 31st, 2021. After that date, Power BI Desktop will be supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only. 
+> Power BI Desktop is no longer supported on Windows 7. Power BI Desktop will be supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only.
 
 The following updates are new to Power BI Desktop this month:
 
@@ -453,7 +453,7 @@ The following updates are new to Power BI Desktop this month:
 * Power BI Desktop splash screen dismiss [[video]](https://youtu.be/LveNuQqV5xk?t=1313)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195596)
 
 
-For detailed information about each of these new features, see [Power BI Desktop feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/).
+For detailed information about each of these features, see [Power BI Desktop feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/).
 
 
 > [!NOTE]
@@ -500,7 +500,7 @@ The links beside each feature in the Power BI Desktop update list are interprete
 You can also watch the entire [Power BI monthly update video](#power-bi-desktop-monthly-update-video).
 
 > [!IMPORTANT]
-> Power BI Desktop will no longer be supported on Windows 7 after January 31st, 2021. After that date, Power BI Desktop will be supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only. 
+> Power BI Desktop is no longer supported on Windows 7. Power BI Desktop will be supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only.
 
 The following updates are new to Power BI Desktop this month:
 
@@ -571,7 +571,7 @@ The links beside each feature in the Power BI Desktop update list are interprete
 You can also watch the entire [Power BI Desktop monthly update video](#power-bi-desktop-monthly-update-video).
 
 > [!IMPORTANT]
-> Power BI Desktop will no longer be supported on Windows 7 after January 31st, 2021. After that date, Power BI Desktop will be supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only. 
+> Power BI Desktop is no longer supported on Windows 7. Power BI Desktop will be supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only.
 
 The following updates are new to Power BI Desktop this month:
 
