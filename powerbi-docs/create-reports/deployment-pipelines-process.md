@@ -94,11 +94,11 @@ Deployment pipelines doesn't support the following items:
 
 * Reports based on unsupported datasets
 
-* Goals
-
 * [Template app workspaces](../connect-data/service-template-apps-create.md#create-the-template-workspace)
 
 * Workbooks
+
+* Goals
 
 ## Item properties copied during deployment
 
