@@ -67,7 +67,13 @@ The Power BI app in Microsoft Teams also features a hub for training. Select **L
 
 You can choose to open the report in the Power BI service instead of viewing it in Microsoft Teams. Select **Open this on the web**.
 
-:::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-open-web.png" alt-text="Screenshot of Open this on the web button in Power BI app in Microsoft Teams.":::
+- When you're looking at a dashboard or report, you don't see the Power BI navigation pane. Select the **Close** button to go back to Home or the workspace.
+
+    :::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-close-report.png" alt-text="Screenshot of Close button in Power BI app in Microsoft Teams.":::
+
+- You can choose to open the report in the Power BI service instead of viewing it in Microsoft Teams. Select **Open this on the web**.
+
+    :::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-open-web.png" alt-text="Screenshot of Open this on the web button in Power BI app in Microsoft Teams.":::
 
 ## Search for Power BI content in Teams
 
