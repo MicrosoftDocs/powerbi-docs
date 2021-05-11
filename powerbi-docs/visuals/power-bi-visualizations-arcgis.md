@@ -385,6 +385,7 @@ For Power BI Desktop
 | valueName | EnableArcGISMaps |
 
 For Power BI Desktop (Optimized for Power BI Report Server)
+
 | **Attribute** | **Value** |
 | --- | --- |
 | Key | Software\Policies\Microsoft\Microsoft Power BI Desktop SSRS |
