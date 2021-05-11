@@ -53,7 +53,7 @@ In this tutorial, you'll use:
 
 * Power BI REST [Reports API](/rest/api/power-bi/reports) - Used to embed the URL and retrieve the embed token.
 
-* [Microsoft Identity Web authentication library](/active-directory/develop/microsoft-identity-web).
+* [Microsoft Identity Web authentication library](/azure/active-directory/develop/microsoft-identity-web).
 
 * [Power BI embedded analytics Client APIs](/javascript/api/overview/powerbi/) - Use to embed the report.
 

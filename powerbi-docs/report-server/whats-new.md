@@ -71,7 +71,7 @@ See [Using enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-m
 
 **Browser support deprecation**
 
-If you're using Edge Legacy or Internet Explorer 11, it's time to upgrade your browser. The Edge Legacy browser and Internet Explorer 11 are not supported.
+If you're using Edge Legacy or Internet Explorer 11, it's time to upgrade your browser. Support for the Microsoft Edge Legacy browser stopped beginning March 9, 2021, and Microsoft Internet Explorer 11 support for Microsoft Internet Explorer 11 will stop beginning August 17, 2021.
 
 You'll see a warning in the Power BI Report Server web portal that Internet Explorer 11 is being deprecated. Time to upgrade! See [Browser support for Power BI Report Server](browser-support.md) for details.
 
@@ -578,7 +578,7 @@ Out of the whole long list of new features, these features stand out as especial
 
 #### Report theming
 
-Report theming has been added to the August 2018 release of Power BI Report Server, which allows you to quickly color your entire report to match a theme or corporate branding. When you import a theme, all your charts automatically update to use the theme colors, and you can have access to the theme colors from the color palette. You can upload a theme file using the **Import Theme** option under the **Switch Theme** button.
+Report theming is available in Power BI Report Server, which allows you to quickly color your entire report to match a theme or corporate branding. When you import a theme, all your charts automatically update to use the theme colors, and you can have access to the theme colors from the color palette. You can upload a theme file using the **Import Theme** option under the **Switch Theme** button.
 
 A theme file is a JSON file that includes all the colors you want us to use in your report along with any default formatting you want to apply to visuals.
 Here is a simple sample JSON theme that just updates the default colors of the report:

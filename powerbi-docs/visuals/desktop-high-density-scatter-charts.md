@@ -14,7 +14,7 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-A sampling algorithm is available that improves how scatter charts represent high-density data.
+The Power BI sampling algorithm improves how scatter charts represent high-density data.
 
 For example, you might create a scatter chart from your organization's sales activity, each store having tens of thousands of data points each year. A scatter chart of such information would sample data (select a meaningful representation of that data to illustrate how sales occurred over time) from the available data, and create a scatter chart that represents the underlying data. This is common practice in high-density scatter charts. Power BI has improved its sampling of high-density data, the details of which are described in this article.
 
@@ -32,8 +32,9 @@ By definition, high-density data is sampled to create visualizations reasonably 
 > 
 > 
 
-## How the new scatter chart sampling algorithm works
-The new algorithm for **High-density Sampling** for scatter charts employs methods that capture and represent the underlying data more effectively and eliminates overlapping points. It does this by starting with a small radius for each data point (the visual circle size for a given point on the visualization). It then increases the radius of all data points; when two (or more) data points overlap, a single circle (of the increased radius size) represents those overlapped data points. The algorithm continues to increase the radius of data points, until that radius value results in a reasonable number of data points - 3,500 - being displayed in the scatter chart.
+## How the scatter chart sampling algorithm works
+
+The algorithm for **High-density Sampling** for scatter charts employs methods that capture and represent the underlying data more effectively and eliminates overlapping points. It does this by starting with a small radius for each data point (the visual circle size for a given point on the visualization). It then increases the radius of all data points; when two (or more) data points overlap, a single circle (of the increased radius size) represents those overlapped data points. The algorithm continues to increase the radius of data points, until that radius value results in a reasonable number of data points - 3,500 - being displayed in the scatter chart.
 
 The methods in this algorithm ensure that outliers are represented in the resulting visual. The algorithm respects scale when determining overlap, too, such that exponential scales are visualized with fidelity to the underlying visualized points.
 

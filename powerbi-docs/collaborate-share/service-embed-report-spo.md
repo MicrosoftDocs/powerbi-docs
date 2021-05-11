@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 04/02/2021
+ms.date: 04/29/2021
 ---
 
 # Embed a report web part in SharePoint Online
@@ -50,7 +50,7 @@ To embed your report into SharePoint Online, you need to get the report URL and 
 
     ![SP edits page](media/service-embed-report-spo/powerbi-sharepoint-edit-page.png)
 
-    Or, in Sharepoint Online, select **+ New**  to create a modern site page.
+    Or, in Sharepoint Online, select **Pages** > **+ New** > **Site Page** to create a new modern site page.
 
     ![SP new page](media/service-embed-report-spo/powerbi-sharepoint-new-page.png)
 
@@ -62,7 +62,7 @@ To embed your report into SharePoint Online, you need to get the report URL and 
 
     ![SP new report](media/service-embed-report-spo/powerbi-sharepoint-new-report.png)  
 
-4. Paste the previously-copied report URL into the **Power BI report link** pane. The report loads automatically.
+4. Paste the previously-copied report URL into the **Power BI report link** field. The report loads automatically.
 
     ![SP new web part properties](media/service-embed-report-spo/powerbi-sharepoint-new-web-part-properties.png)
 
