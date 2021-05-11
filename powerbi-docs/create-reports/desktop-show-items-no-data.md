@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/16/2019
+ms.date: 05/11/2021
 LocalizationGroup: Data from files
 ---
 # Show items with no data in Power BI
