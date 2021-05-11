@@ -94,7 +94,7 @@ With the new search experience in Teams, you can find recent reports, dashboards
 
     The first time you use this capability, you need to sign in.
 
-1. If you haven't installed the Power BI app yet, you'll be given the opportinity to add it.
+1. If you haven't installed the Power BI app yet, you'll be given the opportunity to add it.
  
     :::image type="content" source="media/service-microsoft-teams-app/power-bi-search-teams-apps.png" alt-text="Search for the Power BI app in Teams":::
 
