@@ -378,6 +378,7 @@ In the Power BI service, administrators can turn off ArcGIS for Power BI for all
 Power BI Desktop supports using **Group Policy** to disable ArcGIS for Power BI across an organization's deployed computers.
 
 For Power BI Desktop
+
 | **Attribute** | **Value** |
 | --- | --- |
 | Key | Software\Policies\Microsoft\Power BI Desktop |
