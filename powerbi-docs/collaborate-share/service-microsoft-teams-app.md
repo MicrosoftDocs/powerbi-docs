@@ -65,7 +65,7 @@ The Power BI app in Microsoft Teams also features a hub for training. Select **L
 
 ### Differences in interactions
 
-You can choose to open the report in the Power BI service instead of viewing it in Microsoft Teams. Select **Open this on the web**.
+A few interactions are different in the Teams app than they are in the browser
 
 - When you're looking at a dashboard or report, you don't see the Power BI navigation pane. Select the **Close** button to go back to Home or the workspace.
 
