@@ -64,11 +64,7 @@ There are two main approaches for managing tenant's data.
 
 * **A separate database per tenant** - If the *embed for your organization* app storage is keeping separate databases per tenant, then the natural choice is to use single-tenant datasets in Power BI, with the connection string for each dataset pointing to the matching database.
 
-* **A single multi-tenant database** - If the *embed for your organization* app storage is using a multi-tenancy database for all tenants, it's easy to separate tenants by workspaces. You can configure the database connection for the Power BI dataset with a parameterized database query that only retrieves the relevant tenant's data. You can update the connection using one of these methods:
-
-    * [Power BI Desktop](../../transform-model/desktop-query-overview.md)
-
-    * [API](/rest/api/power-bi/datasets/updatedatasourcesingroup) with [parameters](/rest/api/power-bi/datasets/updateparametersingroup)
+* **A single multi-tenant database** - If the *embed for your organization* app storage is using a multi-tenancy database for all tenants, it's easy to separate tenants by workspaces. You can configure the database connection for the Power BI dataset with a parameterized database query that only retrieves the relevant tenant's data. You can update the connection using [Power BI Desktop](../../transform-model/desktop-query-overview.md) or with [APIs](/rest/api/power-bi/datasets/updatedatasourcesingroup) and [parameters](/rest/api/power-bi/datasets/updateparametersingroup).
 
 :::column-end:::
 :::column span="":::
