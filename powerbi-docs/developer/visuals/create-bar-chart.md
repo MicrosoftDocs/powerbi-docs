@@ -153,9 +153,9 @@ Data binding acts on a **Field** well in Power BI.
 ### Add data roles
 The sample code already has data roles, but you can customize them.
 
-- `displayName` is the name shown in the **Field** well.
-- `name` is the internal name used to refer to the data role.
-- `kind` is for the kind of field. *Grouping* fields (0) have discrete values. *Measure* fields (1) have numeric data values.
+* `displayName` is the name shown in the **Field** well.
+* `name` is the internal name used to refer to the data role.
+* `kind` is for the kind of field. *Grouping* fields (0) have discrete values. *Measure* fields (1) have numeric data values.
 
 ```json
 "dataRoles": [
@@ -175,6 +175,7 @@ The sample code already has data roles, but you can customize them.
 For more information, see [Data roles](./capabilities.md#define-the-data-fields-that-your-visual-expects-dataroles).
 
 ### Add conditions to DataViewMapping
+
 Define conditions within your `dataViewMappings` to set how many fields each field well can bind. Use the data role's internal `name` to refer to each field.
 
 ```json
@@ -197,6 +198,7 @@ Define conditions within your `dataViewMappings` to set how many fields each fie
 For more information, see [Data view mapping](./dataview-mappings.md).
 
 ### Define and use visualTransform
+
 The `DataView` is the structure that Power BI provides to your visual, which contains the queried data to be visualized. However, `DataView` can provide data in different forms, such as categorical and tabular. To build a categorical visual like a bar chart, you only need to use the categorical property on the `DataView`. Defining `visualTransform` lets you convert `DataView` into a view model your visual will use.
 
 To assign colors and select them when defining individual data points, you use `IVisualHost`. 
@@ -225,7 +227,7 @@ For instructions on how to add color to your bar chart go to [Add colors to your
 
 ## Selection and interactions
 
-Selection lets the user interact both with your visual and other visuals. 
+Selection lets the user interact both with your visual and other visuals.
 
 ### Add selection to each data point
 
