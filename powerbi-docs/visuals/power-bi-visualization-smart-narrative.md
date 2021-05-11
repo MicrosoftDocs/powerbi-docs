@@ -89,7 +89,7 @@ The smart narrative feature doesn't support the following functionality:
     - that contains more than one primary key 
     - without a primary key, and measures or aggregates as 'Explain by' fields
 - Map visual with non-aggregated latitude or longitude
-- Multi-row card with more than three categorical field
+- Multi-row card with more than three categorical fields
 - Cards with non-numeric measure
 - Tables, matrices, R visuals or Python visuals, custom visuals 
 - Summaries of visuals whose columns are grouped by other columns and for visuals that are built on a data group field 
@@ -99,4 +99,3 @@ The smart narrative feature doesn't support the following functionality:
 - [Calculation groups](/analysis-services/tabular-models/calculation-groups)
 
    
-
