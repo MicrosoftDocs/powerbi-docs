@@ -7,7 +7,7 @@ ms.reviewer: lukasz
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/28/2021
+ms.date: 01/29/2021
 LocalizationGroup: Share your work
 ---
 # Connect to files stored in OneDrive for a classic workspace

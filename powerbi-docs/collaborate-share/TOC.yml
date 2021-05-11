@@ -63,7 +63,7 @@
         href: service-teams-link-preview.md
     - name: Publish and share your work
       items: 
-      - name: "Share dashboards and reports"
+      - name: "Share reports and dashboards"
         href: service-share-dashboards.md
       - name: "Request access to a report or dashboard"
         href: service-request-access.md

@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting your Power BI embedded analytics application to enable better embedded BI insights
-description: This article discusses some common issues you may encounter when embedding content from Power BI. Enable better embedded BI insights using Power BI embedded analytics.
+title: Troubleshooting your Power BI embedded analytics application
+description: This article discusses some common issues you may encounter when embedding content from Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -237,7 +237,7 @@ When you *embed for your organization*, to allow Azure AD guest users access to 
 
 To find your tenant ID, you can use the instructions in [Find the Microsoft Azure AD tenant ID and primary domain name](/partner-center/find-ids-and-domain-names#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name).
 
-For more information, see [How to: Sign in any Azure Active Directory user using the multi-tenant application pattern](/active-directory/develop/howto-convert-app-to-be-multi-tenant).
+For more information, see [How to: Sign in any Azure Active Directory user using the multi-tenant application pattern](/azure/active-directory/develop/howto-convert-app-to-be-multi-tenant).
 
 ## Data sources
 

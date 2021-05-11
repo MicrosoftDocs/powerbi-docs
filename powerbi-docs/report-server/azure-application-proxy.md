@@ -119,7 +119,7 @@ These steps help configure Power BI Report Server to work with Kerberos authenti
 
 ## Configure Azure Application Proxy connector
 
-Refer to the article for [configuration related to Application Proxy connector](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad)
+Refer to the article for [configuration related to Application Proxy connector](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad)
 
 We installed Application Proxy connector on Power BI Report Server, but you can configure it on a separate server and make sure that delegation is set up properly.
 
@@ -144,7 +144,7 @@ To configure KCD, repeat the following steps for each connector machine.
 
 Now you're ready to configure Azure AD Application Proxy.
 
-Publish Power BI Report Server through Application Proxy with the following settings. For step-by-step instructions on how to publish an application through Application Proxy, see [Publishing applications using Azure AD Application Proxy](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad).
+Publish Power BI Report Server through Application Proxy with the following settings. For step-by-step instructions on how to publish an application through Application Proxy, see [Publishing applications using Azure AD Application Proxy](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad).
 
 - **Internal URL** : Enter the URL to the report server that the connector can reach in the corporate network. Make sure this URL is reachable from the server the connector is installed on. A best practice is using a top-level domain such as `https://servername/` to avoid issues with subpaths published through Application Proxy. For example, use `https://servername/` and not `https://servername/reports/` or `https://servername/reportserver/`. We've configured our environment with `https://pbirsazureapp.eastus.cloudapp.azure.com/`.
 

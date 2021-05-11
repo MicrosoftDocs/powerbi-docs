@@ -71,7 +71,7 @@ The following consideration and limitations apply when you install Power BI Desk
 ### Install Power BI Desktop after downloading it
 You're prompted to run the installation file after you've finished downloading it.
 
-Beginning with the July 2019 release, Power BI Desktop ships as a single .exe installation package that contains all supported languages, with a separate .exe file for the 32-bit and 64-bit versions. The .msi packages are discontinued beginning with the September 2019 release, requiring the .exe executable for installation. This approach makes distribution, updates, and installation (especially for administrators) much easier and more convenient. You can also use command-line parameters to customize the installation process, as described in [Using command-line options during installation](#using-command-line-options-during-installation).
+Power BI Desktop ships as a single .exe installation package that contains all supported languages, with a separate .exe file for the 32-bit and 64-bit versions. The .msi packages are discontinued, requiring the .exe executable for installation. This approach makes distribution, updates, and installation (especially for administrators) much easier and more convenient. You can also use command-line parameters to customize the installation process, as described in [Using command-line options during installation](#using-command-line-options-during-installation).
 
 After you launch the installation package, Power BI Desktop installs as an application and runs on your desktop.
 

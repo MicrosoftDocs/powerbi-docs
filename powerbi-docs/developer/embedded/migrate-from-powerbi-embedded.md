@@ -1,6 +1,6 @@
 ---
-title: How to migrate Power BI Workspace Collection content to the Power BI embedded analytics Power BI Embedded solution for better embedded BI insights
-description: Learn how to migrate from Power BI Workspace Collection to the Power BI Embedded and leverage advances for embedding in apps. Enable better embedded BI insights using Power BI embedded analytics.
+title: How to migrate Power BI Workspace Collection content to the Power BI embedded analytics
+description: Learn how to migrate from Power BI Workspace Collection to the Power BI Embedded and leverage advances for embedding in apps.
 author: KesemSharabi
 ms.author: kesharab
 ms.service: powerbi
