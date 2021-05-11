@@ -1,6 +1,6 @@
 ---
-title: Manage multi-tenancy with Power BI embedded analytics 
-description: Design a multi-tenant application with Power BI embedded analytics .
+title: Power BI embedded analytics multi-tenancy solutions
+description: Choose the Power BI embedded application multi-tenant that is best for you
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: nishalit
