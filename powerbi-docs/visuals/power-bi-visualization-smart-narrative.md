@@ -90,7 +90,7 @@ The smart narrative feature doesn't support the following functionality:
     - without a primary key, and measures or aggregates as 'Explain by' fields
 - Map visual with non-aggregated latitude or longitude
 - Multi-row card with more than three categorical fields
-- Cards with non-numeric measure
+- Cards with non-numeric measures
 - Tables, matrices, R visuals or Python visuals, custom visuals 
 - Summaries of visuals whose columns are grouped by other columns and for visuals that are built on a data group field 
 - Cross-filtering out of a visual
