@@ -59,7 +59,11 @@
     - name: "Set up your environment for developing a Power BI visual"
       href: environment-setup.md
     - name: "Import a custom visual"
-      href: import-visual.md  
+      href: import-visual.md
+    - name: "Add a display warning icon to your visual"
+      href: visual-display-warning-icon.md      
+    - name: "Create R-powered visuals"
+      href: create-r-based-power-bi-desktop.md  
     - name: "Test your Power BI visual"  
       href: submission-testing.md
     - name: "Use R-powered Power BI visuals in Power BI"

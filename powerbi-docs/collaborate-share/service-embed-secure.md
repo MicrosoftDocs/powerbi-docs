@@ -13,7 +13,7 @@ LocalizationGroup: Share your work
 
 # Embed a report in a secure portal or website
 
-With the new **Embed** option for Power BI reports, you can easily and securely embed reports in internal web portals. These portals can be **cloud-based** or **hosted on-premises**, such as SharePoint 2019. Embedded reports respect all item permissions and data security through [row-level security (RLS)](../admin/service-admin-rls.md). They provide no-code embedding into any portal that accepts a URL or iFrame. 
+With the **Embed** option for Power BI reports, you can easily and securely embed reports in internal web portals. These portals can be **cloud-based** or **hosted on-premises**, such as SharePoint 2019. Embedded reports respect all item permissions and data security through [row-level security (RLS)](../admin/service-admin-rls.md). They provide no-code embedding into any portal that accepts a URL or iFrame. 
 
 The **Embed** option supports [URL filters](service-url-filters.md) and URL settings. It allows you to integrate with portals using a low-code approach requiring only basic HTML and JavaScript knowledge.
 
