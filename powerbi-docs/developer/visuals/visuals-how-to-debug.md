@@ -87,6 +87,8 @@ You can also set the browser to break on caught exceptions. This stops code exec
 
     ![Screenshot shows Sources tab with Pause On Caught Exceptions selected.](media/visuals-how-to-debug/how-to-debug-chrome.png)
 
+---
+
 ## Next steps
 
 > [!div class="nextstepaction"]
