@@ -12,7 +12,7 @@ LocalizationGroup: Get started
 ---
 # Power BI Desktop diagnostics collection
 
-To provide better supportability and diagnostics, Power BI Desktop can collect and submit diagnostics information. The process of collecting and sending Power BI diagnostics information has been simplified, and is easy to use. You should only save diagnostics details when instructed to do so by Microsoft Support. Power BI Desktop diagnostics can be collected beginning with the March 2021 release of Power BI Desktop.
+To provide better supportability and diagnostics, Power BI Desktop can collect and submit diagnostics information. The process of collecting and sending Power BI diagnostics information has been simplified, and is easy to use. You should only save diagnostics details when instructed to do so by Microsoft Support. Power BI Desktop diagnostics can be collected beginning with the April 2021 release of Power BI Desktop.
 
 ## How to save diagnostics details in Power BI Desktop
 

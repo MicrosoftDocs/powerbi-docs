@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 04/19/2021
+ms.date: 05/06/2021
 LocalizationGroup: Create reports
 ---
 
@@ -78,6 +78,7 @@ All Tabular Object Model (TOM) metadata can be accessed for read-only. Write ope
 - Editing a Power BI Desktop template (PBIT) file.
 - Report-level or data-level translations.
 - Renaming tables and columns is not yet supported
+- Sending processing commands to a dataset loaded in Power BI Desktop
 
 ## Registering external tools
 
