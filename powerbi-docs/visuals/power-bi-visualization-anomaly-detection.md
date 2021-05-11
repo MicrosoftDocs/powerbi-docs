@@ -48,7 +48,7 @@ You can also control the fields that are used for analysis. For example, by drag
 ## Limitations
 - Anomaly detection is only supported for line chart visuals containing time series data in the Axis field.
 - Anomaly detection isn't supported with legends, multiple values or secondary values in line chart visual.
-- Anomaly detection requires at least 4 data points.
+- Anomaly detection requires at least four data points.
 - Forecast/Min/Max/Average/ Median/Percentile lines doesn't work with Anomaly detection.
 - Direct Query over SAP data source, Power BI Report Server, Live Connection to Azure Analysis Services and SQL Server Analysis Services aren't supported.
 - Anomaly Explanations doesn't work with 'Show Value As' options.
