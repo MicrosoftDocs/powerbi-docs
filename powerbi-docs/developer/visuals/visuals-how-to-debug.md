@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 02/14/2020
+ms.date: 05/15/2021
 ---
 
 # Debugging Power BI visuals
