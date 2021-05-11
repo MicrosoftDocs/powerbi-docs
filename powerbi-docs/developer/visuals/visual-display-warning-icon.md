@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 04/25/2021
+ms.date: 05/11/2021
 ---
 
 # Add a display warning icon to your visual
