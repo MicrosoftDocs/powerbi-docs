@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.custom: video-RE4M2hp
 ms.topic: how-to
-ms.date: 05/03/2021
+ms.date: 05/11/2021
 LocalizationGroup: Visualizations
 ---
 # Anomaly detection
