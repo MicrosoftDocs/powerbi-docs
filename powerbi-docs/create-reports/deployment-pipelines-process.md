@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 03/24/2021
+ms.date: 05/11/2021
 ---
 
 # Understand the deployment process
@@ -93,6 +93,8 @@ Deployment pipelines doesn't support the following items:
 * Dataflows
 
 * Reports based on unsupported datasets
+
+* Goals
 
 * [Template app workspaces](../connect-data/service-template-apps-create.md#create-the-template-workspace)
 
