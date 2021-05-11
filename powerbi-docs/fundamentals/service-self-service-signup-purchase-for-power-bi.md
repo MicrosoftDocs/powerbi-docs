@@ -19,10 +19,10 @@ Power BI can serve as the analytics, visualization, and decision engine behind g
 There are two ways for individuals to get a Power BI license. They can sign up for or purchase a license for themselves, or they can rely on an administrator to assign them a license.  This article explains the first option, which is called **self-service**.   
 For an overview of self-service, visit [Self-service for Microsoft 365 products and services](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
 
-To skip ahead to using self-service, visit [How to use self-service sign-up and self-service purchase](service-self-service-signup-for-power-bi.md)
+To skip ahead to using self-service, visit [How to use self-service sign-up and self-service purchase](service-self-service-signup-for-power-bi.md).
 
 ## Self-service sign-up versus self-service purchase
-The **Self-service sign-up** feature is used by individuals who sign themselves up for free and trial licenses. **Self-service purchase** is the feature used by individuals to buy a Pro or Premium Per User license for themselves.     
+The **self-service sign-up** feature is used by individuals who sign themselves up for free and trial licenses. **Self-service purchase** is the feature used by individuals to buy a Pro or Premium Per User license for themselves.     
 
 ### Self-service for the Power BI service
 This article describes the self-service process for the  **Power BI service**. If you are looking for help downloading Power BI Desktop or installing the mobile apps, please refer to these articles instead:
@@ -49,13 +49,13 @@ Before you sign-up or purchase, determine which [license type](../admin/service-
 For more information about licenses and subscriptions, see [Licensing in Power BI](../admin/service-admin-licensing-organization.md).
 
 ### Look up your current license
-You may already have access to Power BI. Perhaps your organization has already added you to a Power BI subscription. Also, some versions of product licenses, such as Office 365 E5, include a Power BI Pro license, so no separate sign-up for Power BI is needed. So it's possible that you can already log in to the Power BI service. 
+You may already have access to Power BI. Perhaps your organization has already added you to a Power BI subscription. Also, some versions of product licenses, such as Office 365 E5, include a Power BI Pro license, so no separate sign-up for Power BI is needed. 
 
-To look up your license type, open the Power BI service with this URL: app.powerbi.com. From the upper right corner, select the **Me** icon.  
+Check to see if you can already sign in. Open the Power BI service with this URL: app.powerbi.com. If Power BI opens, from the upper right corner, select the **Me** icon to see your current license(s). 
  
 ![Screenshot of the Account drop down showing your license type.](media/service-self-service-signup-purchase-for-power-bi/power-bi-licenses.png)
 
-If you are unable to log in to the Power BI service, open your Microsoft account instead.  The URL is: myaccount.microsoft.com. 
+If you are unable to log in to the Power BI service, or you want an alternate way to look up your Power BI licenses, open your Microsoft account instead.  The URL is: myaccount.microsoft.com. 
 
 1. Sign in with the same work or school account you will use with the Power BI service. 
 
@@ -67,7 +67,7 @@ If you are unable to log in to the Power BI service, open your Microsoft account
 
     ![Screenshot of Office 365 E5 list of licenses.](media/service-self-service-signup-purchase-for-power-bi/power-bi-pro.png)
 
-    ![Screenshot of Office 365 E5 list of licenses.](media/service-self-service-signup-purchase-for-power-bi/power-bi-free.png)
+    ![Screenshot of Office Free license.](media/service-self-service-signup-purchase-for-power-bi/power-bi-free.png)
 
 
 ## Information about Power BI trials
