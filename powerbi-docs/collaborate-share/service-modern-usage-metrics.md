@@ -361,7 +361,7 @@ Follow these steps to delete the dataset and then create a fresh data refresh re
 
 1. Open the workspace that contains the report for which you want to reset the Usage Metrics Report dataset.
 
-2. In the gray header bar at the top, select the **Settings** icon, then select **Settings**.
+2. In the black header bar at the top, select the **Settings** icon, then select **Settings**.
 
     ![Select Settings](media/service-modern-usage-metrics/power-bi-settings-settings.png)
 
