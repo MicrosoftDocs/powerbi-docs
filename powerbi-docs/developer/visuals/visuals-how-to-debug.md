@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 02/14/2020
 ---
 
-# How to debug Power BI visuals
+# Debugging Power BI visuals
 
 This article describes some basic debugging procedures you can use when developing your visual. After reading this article you should be able use the following methods to debug your visual:
 
@@ -80,7 +80,7 @@ You can also set the browser to break on caught exceptions. This stops code exec
 
 ### [Chrome](#tab/Chrome)
 
-1. Open developer tools (F12).
+1. Open **developer tools** (F12).
 2. Go to the  **Sources** tab.
 3. Click the **Pause on exceptions** icon (stop sign with a pause symbol).
 4. Select the **Pause On Caught Exceptions** check box.
