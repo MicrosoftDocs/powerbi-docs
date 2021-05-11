@@ -63,7 +63,7 @@ The Power BI app in Microsoft Teams also features a hub for training. Select **L
 
 :::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-learn-tab.png" alt-text="Screenshot of Learning center in Power BI app in Microsoft Teams.":::
 
-### Open report on the web
+### Differences in interactions
 
 You can choose to open the report in the Power BI service instead of viewing it in Microsoft Teams. Select **Open this on the web**.
 
