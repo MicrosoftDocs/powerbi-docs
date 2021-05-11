@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 04/27/2021
+ms.date: 05/11/2021
 ---
 
 # Create a dialog box for your Power BI visual
