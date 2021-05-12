@@ -80,7 +80,7 @@ You can also do more advanced filtering. For example, in the sample file, look a
 ![Screenshot showing how to select a trend line to filter the summary to show only that trend.](media/power-bi-visualization-smart-narratives/12.gif)
 
 
-There is a limit to the number of summaries that can be generated so Smart Narratives picks the most interesting things to summarize about the visual. Smart Narratives generates upto 4 summaries per visual and upto 16 per page. Note that the summaries that are generated for a page depend on a variety of factors such as the location and size of visuals and it avoids generating the same kind of summaries for different visuals. Therefore summarizing just the visual can generate more summaries that are not present while summarizing the whole page.
+There is a limit to the number of summaries that can be generated so Smart Narratives picks the most interesting things to summarize about the visual. Smart Narratives generates upto four summaries per visual and upto sixteen per page. The summaries that are generated for a page depend on the location and size of visuals and it avoids generating the same kind of summaries for different visuals. Therefore summarizing just the visual can generate more summaries that are not present while summarizing the whole page.
    
 ## Limitations
 
@@ -102,7 +102,7 @@ The smart narrative feature doesn't support the following functionality:
 - Summaries of visuals whose columns are grouped by other columns and for visuals that are built on a data group field 
 - Cross-filtering out of a visual
 - Renaming dynamic values or editing automatically generated dynamic values
-- Summaries of visuals that contain on-the-fly calculations like QnA arithmetic, complex measures in the fields such as percentage of grand total and measures from extension schemas.
+- Summaries of visuals that contain on-the-fly calculations like QnA arithmetic, complex measures such as percentage of grand total and measures from extension schemas.
 - [Calculation groups](/analysis-services/tabular-models/calculation-groups)
 
    
