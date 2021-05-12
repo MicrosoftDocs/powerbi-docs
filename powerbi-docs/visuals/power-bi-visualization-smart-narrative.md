@@ -7,11 +7,11 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/06/2020
+ms.date: 05/11/2021
 ms.custom: video-01UrT-z37sw
 LocalizationGroup: Visualizations
 ---
-# Create smart narrative summaries (preview)
+# Create smart narrative summaries
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
@@ -22,13 +22,6 @@ The smart narrative visualization helps you quickly summarize visuals and report
 ![Screenshot showing a smart narrative summary on the right side of a report.](media/power-bi-visualization-smart-narratives/1.png)
 
 Use smart narrative summaries in your reports to address key takeaways, to point out trends, and to edit the language and format for a specific audience. In PowerPoint, instead of pasting a screenshot of your report's key takeaways, you can add narratives that are updated with every refresh. Your audience can use the summaries to understand the data, get to key points faster, and explain the data to others.
-
->[!NOTE]
-> Because the smart narrative feature is in preview, you must turn it on if you want to use it. In Power BI, go to **File** > **Options and Settings** > **Options** > **Preview features**. Then select **Smart narrative visual**.
->
->![Screenshot showing Power BI Options. The Smart narrative visual option is selected.](media/power-bi-visualization-smart-narratives/2.png)
-
-
 
 ## Get started 
 Watch Justyna show you how to use smart narratives, then try it out yourself using the tutorial, below the video.  To follow along with this tutorial, download the [sample file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix) of an online-sales scenario.
@@ -85,18 +78,31 @@ In this case, the visits and revenues have different trends, so the summary text
 You can also do more advanced filtering. For example, in the sample file, look at the visual of trends for multiple products. If you're interested only in a trend for a certain quarter, then select the relevant data points to update the summary for that trend.
    
 ![Screenshot showing how to select a trend line to filter the summary to show only that trend.](media/power-bi-visualization-smart-narratives/12.gif)
+
+
+There is a limit to the number of summaries that can be generated so Smart Narratives picks the most interesting things to summarize about the visual. Smart Narratives generates upto four summaries per visual and upto sixteen per page. The summaries that are generated for a page depend on the location and size of visuals and it avoids generating the same kind of summaries for different visuals. Therefore summarizing just the visual can generate more summaries that are not present while summarizing the whole page.
    
 ## Limitations
 
 The smart narrative feature doesn't support the following functionality:
 - Pinning to a dashboard 
 - Using dynamic values and conditional formatting (for example, data bound title)
-- Azure Analysis Services, on-premises AS
-- KPIs, cards, multiple-row cards, maps, tables, matrices, R visuals or Python visuals, custom visuals 
+- Publish to Web
+- Power BI Report Server
+- On-premises Analysis Services
+- Live Connection to Azure Analysis Services or SQL Server Analysis Services
+- MultiDimensional Analysis Services data sources 
+- Key influencers visual with a categorical metric or unsummarized numerical field as 'Analyze' field from a table:
+    - that contains more than one primary key 
+    - without a primary key, and measures or aggregates as 'Explain by' fields
+- Map visual with non-aggregated latitude or longitude
+- Multi-row card with more than three categorical fields
+- Cards with non-numeric measures
+- Tables, matrices, R visuals or Python visuals, custom visuals 
 - Summaries of visuals whose columns are grouped by other columns and for visuals that are built on a data group field 
 - Cross-filtering out of a visual
 - Renaming dynamic values or editing automatically generated dynamic values
-- Summaries of visuals that contain on-the-fly calculations like QnA arithmetic and percentage of grand total 
+- Summaries of visuals that contain on-the-fly calculations like QnA arithmetic, complex measures such as percentage of grand total and measures from extension schemas.
 - [Calculation groups](/analysis-services/tabular-models/calculation-groups)
-   
 
+   
