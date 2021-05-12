@@ -49,21 +49,23 @@ In this tutorial, you learn how to:
     | 11 | 3170 |
     | 12 | 2762 |
 
-1. To create a visual, open PowerShell or Terminal, and run the following command:
+2. To create a visual, open PowerShell or Terminal, and run the following command:
 
-   ```cmd
-   pbiviz new rVisualSample -t rvisual
-   ```
+       ```cmd
+       pbiviz new rVisualSample -t rvisual
+       ```
+    
+       This command creates a new folder structure based on the `rvisual` template. This template includes a basic, ready-to-run R-powered visual called `script.r` that runs the following R script:
+    
+       ```r
+       plot(Values)
+       ```
+    
+       The `Values` data frame will contain columns in `Values` data role.
 
-   This command creates a new folder structure based on the `rvisual` template. This template includes a basic, ready-to-run R-powered visual that runs the following R script:
-
-   ```r
-   plot(Values)
-   ```
-
-   The `Values` data frame will contain columns in `Values` data role.
-
-1. Assign data to the developer visual by adding **MonthNo** and **Total units** to **Values** for the visual.
+3. Assign data to the developer visual by adding **MonthNo** and **Total units** to **Values** for the visual.
+  >[!NOTE] 
+  >Make sure the aggregation type of the values is set to *Don't summarize*
 
    ![R visual with data](./media/create-r-based-power-bi-desktop/r-data-values.png)
 
@@ -77,15 +79,15 @@ When you use `pbiviz` to create the R-powered visual based on the `rvisual` temp
 
 1. Paste this R code into the **R script editor**:
 
-    ```r
-    x <- dataset[,1] # get the first column from dataset
-    y <- dataset[,2] # get the second column from dataset
+   ```r
+   x <- dataset[,1] # get the first column from dataset
+   y <- dataset[,2] # get the second column from dataset
 
-    columnNames = colnames(dataset) # get column names
+   columnNames = colnames(dataset) # get column names
 
-    plot(x, y, type="n", xlab=columnNames[1], ylab=columnNames[2]) # draw empty plot with axis and labels only
-    lines(x, y, col="green") # draw line plot
-    ```
+   plot(x, y, type="n", xlab=columnNames[1], ylab=columnNames[2]) # draw empty plot with axis and labels only
+   lines(x, y, col="green") # draw line plot
+   ```
 
 1. Select the **Run script** icon to see the result.
 
@@ -161,7 +163,7 @@ This procedure allows your visual to use the `corrplot` package.
 
     The `corrplot` package is a graphical display of a correlation matrix. For more information about `corrplot`, see [An Introduction to corrplot Package](https://cran.r-project.org/web/packages/corrplot/vignettes/corrplot-intro.html).
 
-1. After you make these changes, start using the package in your `script.r` file.
+2. After you make these changes, start using the package in your `script.r` file.
 
     ```r
     library(corrplot)
