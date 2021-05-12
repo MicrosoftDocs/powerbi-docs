@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/07/2020
+ms.date: 04/30/2021
 LocalizationGroup: Share your work
 ---
 # Access Power BI featured tables in Excel organization data types
