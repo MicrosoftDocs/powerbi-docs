@@ -28,7 +28,7 @@ Power BI supports these browsers on all platforms where they're available:
 
 ## Fonts
 
-Power BI uses the **Segoe UI** font for text as its default, and the **Din** font for numbers, and other fonts when creating reports, dashboards, and other artifacts, which may not be available on non-Windows computers such as Macs. Reports viewed on a Windows computer will appear differently on a Mac when the fonts used are not available on the Mac. As a result, the report font, alignment of artifacts, and visuals will look different between a Windows computer and a Mac.
+Power BI uses the **Segoe UI** font for text as its default, and the **Din** font for numbers, and other fonts when creating reports, dashboards, and other artifacts, which may not be available on non-Windows computers such as Macs. As a result the font, alignment of artifacts, and visuals for the same report will look different when viewed on a Windows computer versus a Mac.
 
 The **Calibri** and **Cambria** fonts are only installed on Macs that have Microsoft Office installed, but aren't included in the default set of fonts on Macs.
 
@@ -36,7 +36,7 @@ If you're creating reports viewed on Mac computers, select fonts that will displ
 
 The following links provide information about which fonts are available on Macs. The links are not maintained by Microsoft, and are provided only for reference and further reading.
 
-- [List of typefaces included with MacOS](https://wikipedia.org/wiki/List_of_typefaces_included_with_macOS)
+- [List of typefaces included with macOS](https://wikipedia.org/wiki/List_of_typefaces_included_with_macOS)
 - [Where to find Calibri and Cambria for Macs](https://apple.stackexchange.com/questions/128091/where-can-i-find-default-microsoft-fonts-calibri-cambria)
 - [How to fix missing Calibri, Cambria and Segoe UI fonts on a Mac](https://ben.lobaugh.net/blog/204750/how-to-fix-missing-calibri-and-cambria-fonts-on-mac)
 
