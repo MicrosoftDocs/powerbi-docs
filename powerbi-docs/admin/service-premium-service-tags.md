@@ -130,7 +130,7 @@ $nsg | Set-AzNetworkSecurityGroup
 
 ## Enter the credentials in the Power BI service
 
-The last part of the process is entering the credentials in the Power BI service. Log into Power BI and navigate to the workspace containing the dataset(s) that are using SQL Managed Instance. In the following example, that workspace is called *ASAdataset*. Take the following steps to complete the process:
+The last part of the process is entering the credentials in the Power BI service. Log into Power BI and navigate to the workspace containing the dataset(s) that are using SQL Managed Instance. In the following example, that workspace is called *ASAdataset* and the dataset is called *Contoso SQL MI Demo*. Take the following steps to complete the process:
 
 1. Navigate to **Dataset settings**.
 2. Expand the **Data source credentials** section, as shown in the following image.
