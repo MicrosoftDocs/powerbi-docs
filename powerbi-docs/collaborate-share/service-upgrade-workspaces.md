@@ -146,7 +146,7 @@ As part of the upgrade experience, you have the option to go back to a classic w
 
 To go back, you need to be an Owner of the Microsoft 365 group the workspace was associated with before it was upgraded. Follow these steps.
 
-1. In the workspace content list, select **More options** (**…**)  > **Workspace settings**.
+1. Select **Settings** in the menu bar at the top of the workspace content list to access workspace settings.
 
     ![Screenshot showing selecting More options (…) > Workspace settings.](media/service-upgrade-workspaces/power-bi-workspace-settings-more-options.png)
 
