@@ -31,8 +31,10 @@
       href: service-tips-for-finding-help.md
     - name: Licensing
       items: 
-      - name: "Sign up for Power BI"
+      - name: "What is self-service sign-up and self-service purchase?"
         href: service-self-service-signup-for-power-bi.md 
+      - name: "Sign up or purchase Power BI"
+        href: service-self-service-signup-purchase-for-power-bi.md         
       - name: "Features by license type"
         href: service-features-license-type.md
       - name: "Get help purchasing Power BI Pro"
@@ -42,7 +44,7 @@
     - name: Security
       items: 
       - name: Security baseline
-        href: security-baseline.md 
+        href: /security/benchmark/azure/baselines/power-bi-security-baseline?toc=/power-bi/fundamentals/toc.json
   - name: How-to guides
     expanded: true
     items: 

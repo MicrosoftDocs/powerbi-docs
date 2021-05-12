@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/05/2020
+ms.date: 05/05/2021
 LocalizationGroup: Model your data
 ---
 # Work with Data view in Power BI Desktop
@@ -27,13 +27,11 @@ Let's take a closer look at some of the elements found in Data view.
 
 2. **Data Grid**. This area shows the selected table and all columns and rows in it. Columns hidden from *Report* view are greyed out. You can right-click on a column for options.
 
-3. **Modeling ribbon**. Here you can manage relationships, create calculations, change data type, format, data category for a column.
+3. **Formula bar**. Enter Data Analysis Expression (DAX) formulas for Measures and Calculated columns.
 
-4. **Formula bar**. Enter Data Analysis Expression (DAX) formulas for Measures and Calculated columns.
+4. **Search**. Search for a table or column in your model.
 
-5. **Search**. Search for a table or column in your model.
-
-6. **Fields list**. Select a table or column to view in the data grid.
+5. **Fields list**. Select a table or column to view in the data grid.
 
 ## Filtering in Data view
 

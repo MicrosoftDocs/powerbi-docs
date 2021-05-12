@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 04/21/2021
+ms.date: 05/11/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
 ---
@@ -344,6 +344,18 @@ When using Premium Gen2, Paginated reports in Power BI benefit from the architec
 
 To learn more, see [Paginated reports in Power BI Premium](../paginated-reports/paginated-reports-report-builder-power-bi.md). To learn more about enabling the Paginated reports workload, see [Configure workloads](service-admin-premium-workloads.md).
 
+## Premium features unique to Dataflows
+
+Dataflows are supported for Power BI Pro, Premium Per User (PPU), and Power BI Premium users. Some features are only available with a Power BI Premium subscription or Premium Per User (PPU) license. This article describes and details the Premium Per User (PPU) and Premium-only features and their uses.
+
+To learn more, see [Premium features unique to Dataflows](../transform-model/dataflows/dataflows-premium-features.md).
+
+## Deployment Pipelines
+
+The deployment pipelines tool enables BI creators to manage the lifecycle of organizational content. It's an efficient and reusable tool for creators in an enterprise with Premium capacity. Deployment pipelines enable creators to develop and test Power BI content in the Power BI service, before the content is consumed by users. The content types include reports, paginated reports, dashboards, and datasets.
+
+To learn more, see [Introduction to Deployment Pipelines](../create-reports/deployment-pipelines-overview.md).
+
 ## Power BI Report Server
  
 Included with Power BI Premium, Power BI Report Server is an *on-premises* report server with a web portal. You can build your BI environment on-premises and distribute reports behind your organization's firewall. Report Server gives users access to rich, interactive, and enterprise reporting capabilities of SQL Server Reporting Services. Users can explore visual data and quickly discover patterns to make better, faster decisions. Report Server provides governance on your own terms. If and when the time comes, Power BI Report Server makes it easy to migrate to the cloud, where your organization can take full advantage of all Power BI Premium functionality.
@@ -356,7 +368,7 @@ With P Premium SKUs, anyone, whether they're inside or outside your organization
 
 ![Content sharing](media/service-premium-what-is/premium-sharing.png)
 
-Premium enables widespread distribution of content by Pro users without requiring Pro or Premium Per User (PPU) licenses for recipients who view the content. Pro or Premium Per User (PPU) licenses are required for content creators. Creators connect to data sources, model data, and create reports and dashboards that are packaged as workspace apps. User without a Pro or Premium Per User (PPU) license can still access a workspace that's in Power BI Premium capacity, as long as they have a Viewer role. 
+Premium enables widespread distribution of content by Pro users without requiring Pro or Premium Per User (PPU) licenses for recipients who view the content. Pro or Premium Per User (PPU) licenses are required for content creators. Creators connect to data sources, model data, and create reports and dashboards that are packaged as workspace apps. Users without a Pro or Premium Per User (PPU) license can still access a workspace that's in Power BI Premium capacity, as long as they only have a Viewer role. A Pro or PPU license is required for other roles. 
 
 To learn more, see [Power BI licensing](service-admin-licensing-organization.md).
 
