@@ -36,7 +36,7 @@ If you're creating reports viewed on Mac computers, select fonts that will displ
 
 The following links provide information about which fonts are available on Macs. The links are not maintained by Microsoft, and are provided only for reference and further reading.
 
-- [List of typefaces included with MacOS](https://wikipedia.org/wiki/List_of_typefaces_included_with_macOS)
+- [List of typefaces included with macOS](https://wikipedia.org/wiki/List_of_typefaces_included_with_macOS)
 - [Where to find Calibri and Cambria for Macs](https://apple.stackexchange.com/questions/128091/where-can-i-find-default-microsoft-fonts-calibri-cambria)
 - [How to fix missing Calibri, Cambria and Segoe UI fonts on a Mac](https://ben.lobaugh.net/blog/204750/how-to-fix-missing-calibri-and-cambria-fonts-on-mac)
 
