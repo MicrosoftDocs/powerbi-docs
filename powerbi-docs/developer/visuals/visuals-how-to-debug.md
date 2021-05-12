@@ -14,9 +14,9 @@ ms.date: 05/12/2021
 
 This article describes some basic debugging procedures you can use when developing your visual. After reading this article you should be able use the following methods to debug your visual:
 
-* insert breakpoints
-* catch exceptions
-* log exceptions
+* [Insert breakpoints](#using-breakpoints)
+* [Catch exceptions](#catch-exceptions)
+* [Log exceptions](#log-exceptions-with-a-decorator)
 
 ## Using breakpoints
 
