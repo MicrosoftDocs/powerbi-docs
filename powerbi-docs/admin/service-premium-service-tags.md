@@ -12,7 +12,7 @@ LocalizationGroup: Premium
 ---
 # Using service tags with Power BI
 
-You can use **Azure service tags** with Power BI to enable a SQL Server Machine Instance (MI) to allow incoming connections from the Power BI service. In Azure, a *service tag* is a defined group of IP addresses that you can configure to be automatically managed, as a group, to minimize the complexity of updates or changes to network security rules. By using service tags with Power BI, you can enable a SQL Managed Instance to allow incoming connections from the Power BI service.
+You can use **Azure service tags** with Power BI to enable an [Azure SQL Managed Instance (MI)](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview) to allow incoming connections from the Power BI service. In Azure, a *service tag* is a defined group of IP addresses that you can configure to be automatically managed, as a group, to minimize the complexity of updates or changes to network security rules. By using service tags with Power BI, you can enable a SQL Managed Instance to allow incoming connections from the Power BI service.
 
 The following configurations are necessary to successfully enable the endpoints for use in the Power BI service:
 
@@ -49,31 +49,31 @@ The following **CLI script** is provided as a reference example. See [az network
 az login
  
 #set subscription that contains SQL MI instance
-$subname = \u2018mysubscriptionname\u2019
+$subname = "mysubscriptionname"
 az account set --subscription $subname
  
 #set NSG rule for inbound PowerBI traffic
 
 #update $RG to your resource group name
-$rg = \u2018myresourcegroup\u2019
+$rg = 'myresourcegroup'
 #update $nsg to your Network Security Group name
-$nsg = \u2018nsgresourcename\u2019
+$nsg = 'nsgresourcename'
 # Name the NSG rule
-$rule = \u2018allow_inbound_PowerBI\u2019
+$rule = 'allow_inbound_PowerBI'
 #set the priority \u2013 this must be higher priority (lower number) than the deny_all_inbound rule
 $priority = 400
 #specifiy the service tag to use
-$servicetag = \u2018PowerBI\u2019
+$servicetag = 'PowerBI'
 #specify the public endpoint port defined in step 1
 $port = 3342
 #set the rule to inbound direction
-$direction = \u2018Inbound\u2019
-#set the access type to \u201cAllow\u201d
-$access = \u2018Allow\u2019
+$direction = 'Inbound'
+#set the access type to "Allow"
+$access = 'Allow'
 #Set the protocol as TCP
-$protocol = \u2018tcp\u2019
+$protocol = 'tcp'
 #Provide a description for the rule
-$desc = \u2018Allow PowerBI Access to SQL MI for Direct Query or Data Refresh.\u2019
+$desc = 'Allow PowerBI Access to SQL MI for Direct Query or Data Refresh.'
  
 #create the NSG rule
 az network nsg rule create -g $rg \
