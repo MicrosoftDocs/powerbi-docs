@@ -78,13 +78,20 @@ In this case, the visits and revenues have different trends, so the summary text
 You can also do more advanced filtering. For example, in the sample file, look at the visual of trends for multiple products. If you're interested only in a trend for a certain quarter, then select the relevant data points to update the summary for that trend.
    
 ![Screenshot showing how to select a trend line to filter the summary to show only that trend.](media/power-bi-visualization-smart-narratives/12.gif)
+
+
+There is a limit to the number of summaries that can be generated so Smart Narratives picks the most interesting things to summarize about the visual. Smart Narratives generates upto 4 summaries per visual and upto 16 per page. Note that the summaries that are generated for a page depend on a variety of factors such as the location and size of visuals and it avoids generating the same kind of summaries for different visuals. Therefore summarizing just the visual can generate more summaries that are not present while summarizing the whole page.
    
 ## Limitations
 
 The smart narrative feature doesn't support the following functionality:
 - Pinning to a dashboard 
 - Using dynamic values and conditional formatting (for example, data bound title)
-- Azure Analysis Services, on-premises AS
+- Publish to Web
+- Power BI Report Server
+- On-premises Analysis Services
+- Live Connection to Azure Analysis Services or SQL Server Analysis Services
+- MultiDimensional Analysis Services data sources 
 - Key influencers visual with a categorical metric or unsummarized numerical field as 'Analyze' field from a table:
     - that contains more than one primary key 
     - without a primary key, and measures or aggregates as 'Explain by' fields
@@ -95,7 +102,7 @@ The smart narrative feature doesn't support the following functionality:
 - Summaries of visuals whose columns are grouped by other columns and for visuals that are built on a data group field 
 - Cross-filtering out of a visual
 - Renaming dynamic values or editing automatically generated dynamic values
-- Summaries of visuals that contain on-the-fly calculations like QnA arithmetic and percentage of grand total 
+- Summaries of visuals that contain on-the-fly calculations like QnA arithmetic, complex measures in the fields such as percentage of grand total and measures from extension schemas.
 - [Calculation groups](/analysis-services/tabular-models/calculation-groups)
 
    
