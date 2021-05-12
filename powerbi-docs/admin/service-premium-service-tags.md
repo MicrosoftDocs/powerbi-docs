@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/07/2021
+ms.date: 05/12/2021
 LocalizationGroup: Premium
 ---
 # Using service tags with Power BI
