@@ -76,7 +76,7 @@ You can also set the browser to break on caught exceptions. This stops code exec
 3. Click the **Pause on exceptions** icon (stop sign with a *pause* symbol).
 4. Select **Pause on caught exceptions**.
 
-    ![Screenshot shows the Debugger tab with Break on all exceptions selected.](media/visuals-how-to-debug/how-to-debug-edge2.png)
+    ![Screenshot shows the Debugger tab with Break on all exceptions selected.](media/visuals-how-to-debug/how-to-debug-edge-2.png)
 
 ### [Chrome](#tab/Chrome)
 
