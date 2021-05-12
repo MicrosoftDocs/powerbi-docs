@@ -42,40 +42,40 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 The following updates are new to Power BI Desktop this month:
 
 ### Reporting
-* Modern visual tooltips (preview)  [[video]](https://youtu.be/WosoIBDuU-I?t=63)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-15345-_Toc70941229)  [[article]](/power-bi/create-reports/desktop-visual-tooltips)
-* Small multiples: now on by default, and updated roadmap (preview) [[video]](https://youtu.be/WosoIBDuU-I?t=17)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-15345-_Toc70941226)  [[article]](/power-bi/visuals/power-bi-visualization-small-multiples)  [[article 2]](/power-bi/visuals/power-bi-visualization-anomaly-detection)
-* New field list now generally available  [[video]](https://youtu.be/WosoIBDuU-I?t=46)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-15345-_Toc70941227)  [[article]](/power-bi/transform-model/desktop-field-list)
-* Support for removing the sensitivity label in Power BI Desktop   [[video]](https://youtu.be/WosoIBDuU-I?t=243)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-15345-_Toc70941230)  [[article]](/power-bi/admin/service-security-apply-data-sensitivity-labels)
+* Modern visual tooltips (preview)  [[video]](https://youtu.be/WosoIBDuU-I?t=63)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941229)  [[article]](/power-bi/create-reports/desktop-visual-tooltips)
+* Small multiples: now on by default, and updated roadmap (preview) [[video]](https://youtu.be/WosoIBDuU-I?t=17)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941226)  [[article]](/power-bi/visuals/power-bi-visualization-small-multiples)  [[article 2]](/power-bi/visuals/power-bi-visualization-anomaly-detection)
+* New field list now generally available  [[video]](https://youtu.be/WosoIBDuU-I?t=46)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941227)  [[article]](/power-bi/transform-model/desktop-field-list)
+* Support for removing the sensitivity label in Power BI Desktop   [[video]](https://youtu.be/WosoIBDuU-I?t=243)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941230)  [[article]](/power-bi/admin/service-security-apply-data-sensitivity-labels)
 
 ### Analytics
-* Smart Narratives and anomaly detection (preview)  [[video]](https://youtu.be/WosoIBDuU-I?t=271)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-15345-_Toc70941232)  [[article]](/power-bi/visuals/power-bi-visualization-smart-narrative)
-* Q&A now supports DirectQuery for Power BI datasets and Azure Analysis Services  [[video]](https://youtu.be/WosoIBDuU-I?t=309)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-15345-_Toc70941228) 
+* Smart Narratives and anomaly detection (preview)  [[video]](https://youtu.be/WosoIBDuU-I?t=271)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941232)  [[article]](/power-bi/visuals/power-bi-visualization-smart-narrative)
+* Q&A now supports DirectQuery for Power BI datasets and Azure Analysis Services  [[video]](https://youtu.be/WosoIBDuU-I?t=309)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941228) 
 
 ### Modeling
-* DirectQuery for Power BI datasets and Azure Analysis Services (preview) [[video]](https://youtu.be/WosoIBDuU-I?t=343)   [[article]](../connect-data/desktop-directquery-datasets-azure-analysis-services.md))  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-15345-_Toc70941234)
-* Model view updates  [[video]](https://youtu.be/WosoIBDuU-I?t=428)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-15345-_Toc70941235)  [[article]](/power-bi/transform-model/desktop-relationship-view)
+* DirectQuery for Power BI datasets and Azure Analysis Services (preview) [[video]](https://youtu.be/WosoIBDuU-I?t=343)   [[article]](../connect-data/desktop-directquery-datasets-azure-analysis-services.md))  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941234)
+* Model view updates  [[video]](https://youtu.be/WosoIBDuU-I?t=428)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941235)  [[article]](/power-bi/transform-model/desktop-relationship-view)
 
 
 ### Data connectivity
-* New connector - EQuIS [[video]](https://youtu.be/WosoIBDuU-I?t=479)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-15345-_Toc70941237)
-* Updates to many connectors [[video]](https://youtu.be/WosoIBDuU-I?t=509)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-15345-_Toc70941238) 
-* Connector deprecation - Microsoft Graph Security [[video]](https://youtu.be/WosoIBDuU-I?t=568)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-15345-_Toc70941243) 
+* New connector - EQuIS [[video]](https://youtu.be/WosoIBDuU-I?t=479)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941237)
+* Updates to many connectors [[video]](https://youtu.be/WosoIBDuU-I?t=509)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941238) 
+* Connector deprecation - Microsoft Graph Security [[video]](https://youtu.be/WosoIBDuU-I?t=568)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941243) 
 
 
 
 ### Visuals
-* New visuals from various providers [[video]](https://youtu.be/WosoIBDuU-I?t=994)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-15345-_Toc70941254)
+* New visuals from various providers [[video]](https://youtu.be/WosoIBDuU-I?t=994)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941254)
 
 ### Template apps
-* Dataflows Snapshot Analysis [[video]](https://youtu.be/WosoIBDuU-I?t=1099)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-15345-_Toc70941265)
+* Dataflows Snapshot Analysis [[video]](https://youtu.be/WosoIBDuU-I?t=1099)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941265)
 
 
 ### Developers
-* Dialog boxes support for Power BI custom visuals [[video]](https://youtu.be/WosoIBDuU-I?t=1176)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-15345-_Toc70941267)
-* Displaying a warning icon for a custom visual [[video]](https://youtu.be/WosoIBDuU-I?t=1217)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-15345-_Toc70941268)
+* Dialog boxes support for Power BI custom visuals [[video]](https://youtu.be/WosoIBDuU-I?t=1176)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941267)
+* Displaying a warning icon for a custom visual [[video]](https://youtu.be/WosoIBDuU-I?t=1217)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941268)
 
 ### Other
-* Share and collaborate in Excel for the web connected to Power BI [[video]](https://youtu.be/WosoIBDuU-I?t=1238)  [[article]](desktop-diagnostics.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#excel_share_collaborate)
+* Share and collaborate in Excel for the web connected to Power BI [[video]](https://youtu.be/WosoIBDuU-I?t=1238)  [[article]](desktop-diagnostics.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#excel_share_collaborate)
 
 
 > [!NOTE]
@@ -86,12 +86,12 @@ The following updates are new to Power BI Desktop this month:
 
 The following updates are new to the Power BI service this month:
 
-* Quickly create reports from SharePoint lists (Preview) [[video]](https://youtu.be/WosoIBDuU-I?t=594)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-15345-_Toc70941245)
-* Reports, apps and dataflows endorsement is generally available [[video]](https://youtu.be/WosoIBDuU-I?t=788)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-15345-_Toc70941246)
-* Datasets hub improvements [[video]](https://youtu.be/WosoIBDuU-I?t=842)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-15345-_Toc70941247)
-* Quick edit Paginated Reports from the Power BI service [[video]](https://youtu.be/WosoIBDuU-I?t=883)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-15345-_Toc70941248)
-* Single sign-on enabled for new on-premises data sources for Paginated Reports  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-15345-_Toc70941249)
-* Downstream inheritance for sensitivity labels (Preview) [[video]](https://youtu.be/WosoIBDuU-I?t=917)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-15345-_Toc70941250)
+* Quickly create reports from SharePoint lists (Preview) [[video]](https://youtu.be/WosoIBDuU-I?t=594)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941245)
+* Reports, apps and dataflows endorsement is generally available [[video]](https://youtu.be/WosoIBDuU-I?t=788)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941246)
+* Datasets hub improvements [[video]](https://youtu.be/WosoIBDuU-I?t=842)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941247)
+* Quick edit Paginated Reports from the Power BI service [[video]](https://youtu.be/WosoIBDuU-I?t=883)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941248)
+* Single sign-on enabled for new on-premises data sources for Paginated Reports  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941249)
+* Downstream inheritance for sensitivity labels (Preview) [[video]](https://youtu.be/WosoIBDuU-I?t=917)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941250)
 
 
 ---
