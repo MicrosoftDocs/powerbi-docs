@@ -39,13 +39,13 @@ To change the type of visualization, you can select it on the canvas, then selec
 > [!TIP]
 > Be sure to experiment with different visualization types. It's important your visualization convey information in your data clearly.
 
-A report will have at least one blank page to start. Pages appear in the navigator area at the bottom of the **Report** view. You can add all sorts of visualizations to a page, but it's important not to overdo it. Too many visualizations on a page make it look busy and difficult to find the right information. You can add new pages to your report. Just select **New page** from the **Insert** tab on the ribbon, and then select **Blank page**.
+A report will have at least one blank page to start. Pages appear in the navigation area at the bottom of the **Report** view. You can add all sorts of visualizations to a page, but it's important not to overdo it. Too many visualizations on a page make it look busy and difficult to find the right information. You can add new pages to your report. Just select **New page** from the **Insert** tab on the ribbon, and then select **Blank page**.
 
 ![New page menu item.](media/desktop-report-view/pbidesignerreportviewnewpage.png)
 
-You can also select the **+** icon next to the pages in the navigator area below the canvas to create a new page.
+You can also select the **+** icon next to the pages in the navigation area below the canvas to create a new page.
 
-![New page icon](media/desktop-report-view/pbidesignerreportviewnewpage.png)
+![New page icon.](media/desktop-report-view/new-page-icon.png)
 
 To delete a page, click the **x** on the page's tab at the bottom of the Report view.
 
@@ -76,7 +76,7 @@ Hiding a report page is easy. Simply right-click on the report page tab, and sel
 
 There are a few considerations to keep in mind when hiding a report page:
 
-* You can still see a hidden report view when in Power BI Desktop, even though the page shows a hidden icon. In the following image, the **Overview** page is hidden.
+* You can still see a hidden report view when in Power BI Desktop, even though the page shows a hidden page icon. In the following image, the **Overview** page is hidden.
 
   ![Hidden icon on a page that's hidden.](media/desktop-report-view/report-view_06.png)
 

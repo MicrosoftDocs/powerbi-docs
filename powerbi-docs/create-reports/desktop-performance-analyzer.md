@@ -30,7 +30,7 @@ Once selected, the Performance Analyzer is displayed in its own pane, to the rig
 
 Performance analyzer measures the processing time (including the time to create or update a visual) required to update report elements initiated as a result of any user interaction that results in running a query. For example, adjusting a slicer requires the slicer visual to be modified, a query to be sent to the data model, and affected visuals that must be updated as a result of the new settings. 
 
-To have Performance Analyzer begin recording, simply select **Start recording**
+To have Performance Analyzer begin recording, simply select **Start recording**.
 
 ![Start recording](media/desktop-performance-analyzer/performance-analyzer-03.png)
 
