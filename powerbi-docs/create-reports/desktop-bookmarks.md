@@ -114,7 +114,7 @@ When you're in editing mode, press **Ctrl** and select the link to follow it. Wh
 
 ## Bookmark groups
 
-Beginning with the August 2018 release of Power BI Desktop, you can create and use bookmark groups. A bookmark group is a collection of bookmarks that you specify, which can be shown and organized as a group. 
+You can create and use bookmark groups. A bookmark group is a collection of bookmarks that you specify, which can be shown and organized as a group. 
 
 To create a bookmark group: 
 1. Press **Ctrl** and select the bookmarks you want to include in the group. 
