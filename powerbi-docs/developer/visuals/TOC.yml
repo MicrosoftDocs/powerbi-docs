@@ -98,7 +98,7 @@
       href: visuals-how-to-debug.md  
     - name: "Mobile development"
       href: mobile-development.md
-    - name: "Troubleshoot Power BI visuals"
+    - name: "Troubleshoot  environment setup"
       href: power-bi-custom-visuals-troubleshoot.md
   - name: Reference
     items: 
