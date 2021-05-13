@@ -92,7 +92,7 @@
       href: high-contrast-support.md
     - name: "Enable sync slicers"
       href: enable-sync-slicers.md
-    - name: "Render a visual without the need to bind any data"
+    - name: "Render a visual without requiring data binding"
       href: no-dataroles-support.md  
     - name: "Debug visuals"
       href: visuals-how-to-debug.md  

@@ -6,45 +6,48 @@ ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: troubleshooting
+ms.topic: how-to
 ms.date: 05/06/2021
 ---
 
-# Troubleshooting Power BI visuals
+# Troubleshooting your Power BI environment setup
 
-This article explains how to diagnose and fix issues that might come up when you develop your visual.
+This article explains how to diagnose and fix common problems that can occur when setting up your developer environment.
 
-## Error messages
+## Can't start up pbiviz
 
-**Pbiviz command not found (or similar errors)**
+* **Error message: *pbiviz command not found* (or similar message)**
 
-When you run `pbiviz` in your terminal's command line, you should see the help screen. If you don't, then it is not installed correctly. Make sure you have [NodeJS](environment-setup.md#install-nodejs) version 4.0 or higher installed.
-For help installing [pbiviz](environment-setup.md#install-pbiviz) or [NodeJS](environment-setup.md#install-nodejs) see [Set up your environment for developing a Power BI visual](environment-setup.md).
+    When you run `pbiviz` in your terminal's command line, you should see the help screen. If you don't, then it is not installed correctly. Make sure you installed [NodeJS](environment-setup.md#install-nodejs) version 4.0 or higher.
+    For help installing [pbiviz](environment-setup.md#install-pbiviz) or [NodeJS](environment-setup.md#install-nodejs) see [Set up your environment for developing a Power BI visual](environment-setup.md).
 
-## Debugging from the Power BI server
+## Connecting to the Power BI service
 
-**Can't find the debug visual in the Visualizations tab**
+* **Can't connect to Power BI server**
 
-The debug visual looks like a prompt icon within the **Visualizations** tab.
+    Run the visual server with the command `pbiviz start` in your terminal's command line *from the root of your visual project*.
 
-![Visual selection](media/power-bi-custom-visuals-troubleshoot/powerbi-developer-visual-selection.png)
+    ![pbiviz start command](media/power-bi-custom-visuals-troubleshoot/powerbi-start-visual.png)
 
-If you don't see it, make sure you have [enabled developer mode in the Power BI settings](environment-setup.md#set-up-power-bi-service-for-developing-a-visual) within the Power BI settings.
+    If the server's not running, your SSL certificates were probably not [installed correctly](environment-setup.md#create-and-install-a-certificate). To install your SSL certificates see [Create and install a certificate](environment-setup.md#create-and-install-a-certificate).
 
-> [!NOTE]
-> The debug visual is currently only available in the Power BI service and not in Power BI Desktop or the mobile app. The packaged visual will work in both.
+* **Developer visual doesn't appear in the Visualizations tab**
 
-**Can't contact visual server**
+    The developer visual looks like a prompt icon within the **Visualizations** tab.
 
-Run the visual server with the command `pbiviz start` in your terminal's command line from the root of your visual project.
+    ![Visual selection](media/power-bi-custom-visuals-troubleshoot/powerbi-developer-visual-selection.png)
 
-![pbiviz start command](media/power-bi-custom-visuals-troubleshoot/powerbi-start-visual.png)
+    If you don't see it, make sure you have [enabled developer mode in the Power BI settings](environment-setup.md#set-up-power-bi-service-for-developing-a-visual).
 
-If the server's not running, it's likely that your SSL certificates weren't [installed correctly](environment-setup.md#create-and-install-a-certificate).
+    > [!NOTE]
+    > The developer visual is currently only available in the **Power BI service** and not in Power BI Desktop or the mobile app. The packaged visual will work everywhere.
 
 Feel free to contact the Power BI visuals support team (pbicvsupport@microsoft.com) with any questions, comments, or issues you have.
 
 ## Next steps
+
+>[!div class="nextstepaction"]
+>[Setting up your Power BI environment](environment-setup.md)
 
 >[!div class="nextstepaction"]
 >[Frequently asked questions about Power BI visuals](power-bi-custom-visuals-faq.yml#organizational-power-bi-visuals)
