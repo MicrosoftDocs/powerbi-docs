@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting how to develop Power BI visuals
+title: Troubleshooting Power BI developer environment setup
 description: This article discusses some common issues you might encounter when developing or creating a custom Power BI visual.
 author: KesemSharabi
 ms.author: kesharab
