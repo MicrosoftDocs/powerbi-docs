@@ -13,7 +13,7 @@ ms.date: 05/12/2021
 
 [Salesforce](https://www.salesforce.com/) is a world renowned customer relationship management (CRM) solution. Embedded analytics lets you embed Power BI content such as reports and dashboards in Salesforce.
 
-This article links to two tutorials that show how to develop using Power BI embedded analytics in a in a Salesforce environment. In these tutorials, you'll learn how to:
+This article links to two tutorials that show how to develop using Power BI embedded analytics in a Salesforce environment. In these tutorials, you'll learn how to:
 
 >[!div class="checklist"]
 >* Embed Power BI content in Salesforce, using a single page application (SPA).
