@@ -19,7 +19,7 @@ To use **Python** in Power BI Desktop's **Power Query Editor**, you need to inst
 ## Using Python in Power Query Editor
 To show how to use **Python** in **Power Query Editor**, take this example from a stock market dataset, based on a .CSV file that you can [download from here](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv) and follow along. The steps for this example are the following:
 
-1. First, load your data into **Power BI Desktop**. In this example, load the *EuStockMarkets_NA.csv* file and select **Get Data > Text/CSV** from the **Home** ribbon in **Power BI Desktop**.
+1. First, load your data into **Power BI Desktop**. In this example, load the *EuStockMarkets_NA.csv* file and select **Get data > Text/CSV** from the **Home** ribbon in **Power BI Desktop**.
    
    ![Screenshot of the Get Data ribbon in Power B I Desktop, showing the C S V selection.](media/desktop-python-in-query-editor/python-in-query-editor-1.png)
 2. Select the file and select **Open**, and the CSV is displayed in the **CSV file** dialog.
