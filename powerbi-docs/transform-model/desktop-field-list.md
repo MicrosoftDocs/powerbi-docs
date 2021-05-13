@@ -1,5 +1,5 @@
 ---
-title: Using the Field list in Power BI Desktop (preview)
+title: Using the Field list in Power BI Desktop
 description: Use the Field list to model data and create reports in Power BI Desktop
 author: davidiseminger
 ms.author: davidi
@@ -7,11 +7,11 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 02/25/2021
+ms.date: 05/12/2021
 LocalizationGroup: Transform and shape data
 ---
 
-# Using the Field list in Power BI Desktop (preview)
+# Using the Field list in Power BI Desktop 
 
 The **Field** lists are being unified across Model view, Data view and Report view in Power BI Desktop. Unifying these views will create consistency for functionality and the user interface (UI) across views, and addresses customer feedback.
 
@@ -25,14 +25,6 @@ Changes you’ll notice across views include the following:
 * Accessibility improvements
 
 The intent is to improve Power BI Desktop usability. The changes should have minimal impact on your typical data workflow.
-
-## Enabling the new Field list (preview)
-
-The unified Field list is available with the **Model** view, **Report** view, and **Data** view. To enable the unified Field view, in Power BI Desktop navigate to **File > Options and settings > Options** and then select **Preview features** from the left pane. In the Preview features section, select the checkbox beside **New field list**.
-
-![Enable the new field list](media/desktop-field-list/field-list-01.png)
-
-You'll be prompted to restart Power BI Desktop for the selection to take effect.
 
 ## Field list changes
 

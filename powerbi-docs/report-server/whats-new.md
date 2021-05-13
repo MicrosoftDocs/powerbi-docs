@@ -145,7 +145,7 @@ If you have an older PBIX that can't automatically update, for reasons such as u
 
 **Support for Windows 7 ends**
 
-After 10 years, support for Windows 7 ended on January 14, 2020. In line with this change, we will be stopping support for Power BI Desktop on Windows 7 on January 31, 2021. After that, Power BI Desktop will only be supported on Windows 8 and newer. The January 2021 release of Power BI Desktop optimized for Report Server will be supported according to the Modern Lifecycle Policy. In other words, it's fully supported until the next release (currently scheduled for May 2021). After May 2021, it will only receive security updates until January 2022. All support will stop after January 2022. See the [Power BI Report Server support timeline](support-timeline.md) for details. 
+After 10 years, support for Windows 7 ended on January 14, 2020. In line with this change, we stopped support for Power BI Desktop on Windows 7 on January 31, 2021. Power BI Desktop is only supported on Windows 8 and newer. The January 2021 release of Power BI Desktop optimized for Report Server will be supported according to the Modern Lifecycle Policy. In other words, it's fully supported until the next release (currently scheduled for May 2021). After May 2021, it will only receive security updates until January 2022. All support will stop after January 2022. See the [Power BI Report Server support timeline](support-timeline.md) for details. 
 
 **Complete list of updates**
 

@@ -10,14 +10,18 @@ ms.topic: troubleshooting
 ms.date: 05/06/2021
 ---
 
-# Troubleshoot Power BI visuals
+# Troubleshooting Power BI visuals
 
-## Debug
+This article explains how to diagnose and fix issues that might come up when you develop your visual.
 
-**pbiviz command not found (or similar errors)**
+## Error messages
 
-When you run `pbiviz` in your terminal's command line, you should see the help screen. If not, then it isn't installed correctly. Make sure you have at least the 4.0 version of NodeJS installed.
-To install [pbiviz](environment-setup.md#install-pbiviz) or [NodeJS](environment-setup.md#install-nodejs) see [Set up your environment for developing a Power BI visual](environment-setup.md).
+**Pbiviz command not found (or similar errors)**
+
+When you run `pbiviz` in your terminal's command line, you should see the help screen. If you don't, then it is not installed correctly. Make sure you have [NodeJS](environment-setup.md#install-nodejs) version 4.0 or higher installed.
+For help installing [pbiviz](environment-setup.md#install-pbiviz) or [NodeJS](environment-setup.md#install-nodejs) see [Set up your environment for developing a Power BI visual](environment-setup.md).
+
+## Debugging from the Power BI server
 
 **Can't find the debug visual in the Visualizations tab**
 
@@ -25,16 +29,20 @@ The debug visual looks like a prompt icon within the **Visualizations** tab.
 
 ![Visual selection](media/power-bi-custom-visuals-troubleshoot/powerbi-developer-visual-selection.png)
 
-If you don't see it, make sure you have [enabled it within the Power BI settings](environment-setup.md#set-up-power-bi-service-for-developing-a-visual).
+If you don't see it, make sure you have [enabled developer mode in the Power BI settings](environment-setup.md#set-up-power-bi-service-for-developing-a-visual) within the Power BI settings.
 
 > [!NOTE]
-> The debug visual is currently only available in the Power BI service and not in Power BI Desktop or the mobile app. The packaged visual will still work everywhere.
+> The debug visual is currently only available in the Power BI service and not in Power BI Desktop or the mobile app. The packaged visual will work in both.
 
 **Can't contact visual server**
 
-Run the visual server with the command `pbiviz start` in your terminal's command line from the root of your visual project. If the server isn't running, it's likely that your SSL certificates weren't installed correctly.
+Run the visual server with the command `pbiviz start` in your terminal's command line from the root of your visual project.
 
-Feel free to contact the Power BI visuals support team (pbicvsupport@microsoft.com) with any questions, comments, or issues you have.
+![pbiviz start command](media/power-bi-custom-visuals-troubleshoot/powerbi-start-visual.png)
+
+If the server's not running, it's likely that your SSL certificates weren't [installed correctly](environment-setup.md#create-and-install-a-certificate).
+
+Feel free to contact the Power BI visuals support team (pbicvsupport@microsoft.com) with any questions, comments, or issues you have.
 
 ## Next steps
 
