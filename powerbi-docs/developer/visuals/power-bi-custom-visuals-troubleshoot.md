@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting Power BI developer environment setup
-description: This article discusses some common issues you might encounter when developing or creating a custom Power BI visual.
+description: This article discusses some common issues you might come across when developing or creating a custom Power BI visual.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
@@ -16,7 +16,7 @@ This article explains how to diagnose and fix common problems that can occur whe
 
 ## Can't start up pbiviz
 
-When your environment isn't set up correctly you might receive an error such as: *pbiviz command not found*
+When your environment isn't set up correctly, you might receive an error such as: *pbiviz command not found*
 
 When you run `pbiviz` in your terminal's command line, you should see the help screen. If you don't, make sure you have [NodeJS](environment-setup.md#install-nodejs) version 4.0 or higher installed.
 For help installing [pbiviz](environment-setup.md#install-pbiviz) or [NodeJS](environment-setup.md#install-nodejs) see [Set up your environment for developing a Power BI visual](environment-setup.md).
@@ -27,7 +27,7 @@ Run the visual server with the command `pbiviz start` in your terminal's command
 
 ![pbiviz start command](media/power-bi-custom-visuals-troubleshoot/powerbi-start-visual.png)
 
-If the server's not running, your SSL certificates were probably not [installed correctly](environment-setup.md#create-and-install-a-certificate). To install your SSL certificates see [Create and install a certificate](environment-setup.md#create-and-install-a-certificate).
+If the server's not running, your SSL certificates were probably not [installed correctly](environment-setup.md#create-and-install-a-certificate). To install your SSL certificates, see [Create and install a certificate](environment-setup.md#create-and-install-a-certificate).
 
 ## Can't see the developer icon on the Visualizations tab
 
