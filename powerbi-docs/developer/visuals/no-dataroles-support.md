@@ -17,7 +17,7 @@ When you render a visual, values are defined interactively by adding data fields
 
 :::image type="content" source="media/no-dataroles-support/binding-data.png" alt-text="Adding values to visual.":::
 
-By default, if no values are defined the format settings are disabled and the visual is not updated.
+By default, if no values are defined, the format settings are disabled and the visual isn't updated.
 
 The `dataRoles` capabilities model allows you to receive updates from Power BI without binding data.
 
