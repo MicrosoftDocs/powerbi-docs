@@ -19,7 +19,7 @@ This article describes the two different approaches and analyzes them according 
 >[!TIP]
 >Workspace isolation is the recommended embedded analytics multi tenancy solution.
 
-## Isolation type
+## Isolation method
 
 # [Workspace](#tab/workspace)
 
