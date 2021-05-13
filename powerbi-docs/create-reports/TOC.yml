@@ -136,6 +136,8 @@
         href: desktop-visual-elements-for-reports.md   
       - name: "Add report tooltips to enhance your visuals"
         href: desktop-tooltips.md        
+      - name: "Create modern visual tooltips"
+        href: desktop-visual-tooltips.md        
       - name: "Export reports to PDF files"
         href: desktop-export-to-pdf.md             
       - name: Filters and slicers in reports
