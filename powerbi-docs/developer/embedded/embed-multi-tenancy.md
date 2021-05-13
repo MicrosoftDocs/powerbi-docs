@@ -190,10 +190,6 @@ Considerations and limitations for Power BI [capacities](embedded-capacity.md).
 
 * The average time of scaling a capacity is between one to two minutes. During that time, the capacity isn't available. We recommend using a scale-out approach to [avoid downtime](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script).
 
-### APIs
-
-When accessing the [Power BI REST APIs](/rest/api/power-bi-embedded/) using `api.powerbi.com`, the connection and data flow may be proxied through Power BI services in a region that is different than the tenant home region.
-
 ## Next steps
 
 >[!div class="nextstepaction"]
