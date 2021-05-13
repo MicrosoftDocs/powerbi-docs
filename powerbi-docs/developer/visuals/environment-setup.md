@@ -158,7 +158,6 @@ To install the libraries listed in this article, open PowerShell and enter the i
 >[!NOTE]
 >Once these libraries are installed on your computer, you'll be able to use them for any Power BI visuals project. This is a one time installation procedure, per machine.
 
-
 ### D3 JavaScript library
 
 [D3](https://d3js.org/) is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. It relies on widely implemented Scalable Vector Graphics (SVG), HTML5, and CSS standards.
@@ -206,6 +205,7 @@ npm i powerbi-visuals-api --save-dev
     >```powershell
     >code .
     >```
+
 2. In VS Code, open the **File** menu and select **Open Folder**.
 
     >[!div class="mx-imgBorder"]
