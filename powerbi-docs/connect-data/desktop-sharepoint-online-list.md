@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/10/2020
+ms.date: 05/14/2021
 ms.custom: video-OZO3x2NF8Ak
 LocalizationGroup: Visualizations
 ---
@@ -22,7 +22,7 @@ Watch this five-minute tutorial video, or scroll down for step-by-step instructi
 ## Part 1: Connect to your SharePoint List
 
 1. If you don't have it already, download and install [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
-2. Open Power BI Desktop and in the Home tab of the ribbon, select **Get Data** > **More**.
+2. Open Power BI Desktop and in the Home tab of the ribbon, select **Get data** > **More**.
 3. Select **Online Services**, then select **SharePoint Online List**.  
 
     <img src="media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-getdata.png" alt="Screenshot shows the Get Data dialog box with Online Services selected." width="350"/>
@@ -47,7 +47,7 @@ Watch this five-minute tutorial video, or scroll down for step-by-step instructi
 
 9. On the left side of the Navigator, select the checkbox beside the SharePoint list you want to connect to.
 
-    <img src="media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-select-list.png" alt="Screenshot shows the Navigator page with BudgetRequests selected." width="450"/>
+    <img src="media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-select-list.png" alt="Screenshot shows the Navigator page with BudgetRequests selected." />
 
 10. Select **Load**.  Power BI loads your list data into a new report.
 
