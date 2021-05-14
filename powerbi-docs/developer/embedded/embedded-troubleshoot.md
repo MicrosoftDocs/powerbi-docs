@@ -145,7 +145,7 @@ To resolve this issue you should trim "oauth2/authorize/" from the end of your a
 
 **_(AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password)_**
 
-If you're using Power BI Embedded and using Azure AD Direct authentication, and you're receiving messages logging in such as ***error:unauthorized_client, error_description:AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password***, that is because direct authentication is no longer in use since June 14, 2018 by default.
+If you're using Power BI Embedded and using Azure AD Direct authentication, and you're receiving messages logging in such as ***error:unauthorized_client, error_description:AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password***, that is because direct authentication is no longer in use.
 
 There's a way to turn this back on using an [Azure AD Policy](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that is scoped to the organization or a [service principal](/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 

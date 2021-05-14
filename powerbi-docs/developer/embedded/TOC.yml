@@ -32,6 +32,8 @@
       href: embedded-capacity.md
     - name: "Capacity planning"
       href: embedded-capacity-planning.md
+    - name: "Understanding the different embedding solutions"
+      href: /javascript/api/overview/powerbi/embedding-solutions?toc=/power-bi/developer/embedded/TOC.json?bc=/power-bi/breadcrumb/toc.json       
     - name: "Embedded analytics application tokens"
       href: embed-tokens.md      
     - name: "Considerations for generating an embed token"
