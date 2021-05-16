@@ -69,7 +69,7 @@ Select **Get more visuals** and in the top of the *Power BI visuals* window, sel
 
 Power BI visuals are packages that include code for rendering the data served to them. Anyone can create a custom visual and package it as a single `.pbiviz` file, that can then be imported into a Power BI report.
 
-To import a custom Power BI visual from a file see [Import a visual file from your local computer into Power BI](import-visual#import-a-visual-file-from-your-local-computer-into-power-bi).
+To import a custom Power BI visual from a file see [Import a visual file from your local computer into Power BI](import-visual.md#import-a-visual-file-from-your-local-computer-into-power-bi).
 
 If you are you a web developer and are interested in creating your own visual and adding it to AppSource, you can learn how to [develop a Power BI circle card visual](develop-circle-card.md) and [publish a Power BI visual to AppSource](office-store.md).
 
