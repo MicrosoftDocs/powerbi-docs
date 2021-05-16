@@ -18,16 +18,6 @@ In Power BI, you can use AI Insights to gain access to a collection of pre-train
 
 This article describes functions for Text Analytics and Vision functions, both from Azure Cognitive Services. Also in this article is a section that describes the custom functions available in Power BI from Azure Machine Learning.
 
-## How to enable AI Insights
-
-AI insights was made generally available in the June 2020 release of Power BI Desktop. For earlier versions of Power BI Desktop, AI insights in Power BI must be enabled by selecting **File > Options and settings > Options**, then **Preview features** from the left column. In the right pane is an **AI Insights function browser** selection. Check the box beside **AI Insights function browser** to enable the preview feature. You'll need to restart Power BI Desktop for the preview feature change to take effect.
-
-> [!NOTE]
-> AI insights is generally available for all versions of Power BI Desktop beginning with June 2020 release, and for those versions, does not need to be enabled as a preview feature.
-
-![AI Insights option for Power BI Desktop](media/desktop-ai-insights/ai-insights-01.png)
-
-
 ## Using Text Analytics and Vision
 
 With Text Analytics and Vision in Power BI, you can apply different algorithms from [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) to enrich your data in Power Query.
@@ -47,7 +37,7 @@ The transformations are executed on the Power BI service and do not require an A
 
 ### Enabling Text Analytics and Vision on Premium capacities
 
-Cognitive Services are supported for Premium capacity nodes EM2, A2, or P1 and above. Cognitive services are also available with a Premium Per User (PPU) license. A separate AI workload on the capacity is used to run Cognitive Services. During public preview of these features (prior to June 2019), this workload was disabled by default. Before using Cognitive Services in Power BI, the AI workload must be enabled in the **capacity settings** of the admin portal. You can turn on the **AI workload** in the **workloads** section and define the maximum amount of memory you would like this workload to consume. The recommended memory limit is 20%. Exceeding this limit causes the query to slow down.
+Cognitive Services are supported for Premium capacity nodes EM2, A2, or P1 and above. Cognitive services are also available with a Premium Per User (PPU) license. A separate AI workload on the capacity is used to run Cognitive Services. Before using Cognitive Services in Power BI, the AI workload must be enabled in the **capacity settings** of the admin portal. You can turn on the **AI workload** in the **workloads** section and define the maximum amount of memory you would like this workload to consume. The recommended memory limit is 20%. Exceeding this limit causes the query to slow down.
 
 ### Available functions
 

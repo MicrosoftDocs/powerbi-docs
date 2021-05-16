@@ -38,12 +38,13 @@ For Azure SQL Database data sources, you need to supply more information, as des
 
 In addition to the natively supported data sources above, the following data sources can be accessed via a [Power BI enterprise gateway](../connect-data/service-gateway-onprem.md):
 
-- SQL Server
+- SQL Server (supports SSO)
 - SQL Server Analysis Services
-- Oracle
+- Oracle (supports SSO)
 - Teradata
+- ODBC
 
-For paginated reports, Azure Analysis Services currently can't be accessed via a Power BI enterprise gateway.
+For paginated reports, Azure Analysis Services currently can't be accessed via a Power BI enterprise gateway. When authenticating with SSO service principal is not supported.
 
 ## Azure SQL Database authentication
 
