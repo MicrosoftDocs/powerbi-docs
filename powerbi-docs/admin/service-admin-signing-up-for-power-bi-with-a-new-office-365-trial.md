@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 05/15/2021
+ms.date: 05/18/2021
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -22,7 +22,7 @@ If you're having problems signing up for Power BI with your email address, first
 
 Sign up for a Microsoft 365 trial [on the Microsoft 365 web site](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans). If you don't already have an account, Microsoft will walk you through the steps to create one. Since commercial email accounts (such as Hotmail and Gmail) won't work with Microsoft 365, you'll create a new account that will.  That email account will look something like *zalan\@onmicrosoft.com*.
 
-![Select Try for free](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try-it-free.png)
+![Select Try for free](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try-free.png)
 
 If you select **Office 365 E5**, your trial will include Power BI Pro. The Power BI Pro trial will expire at the same time as your Office 365 E5 trial, which is currently 30 days. If, instead, you select **Office 365 E3**, you'll be able to sign up for Power BI as a *free* user and upgrade to **Premium Per User** for a 60-day trial. For more information about Premium Per User (PPU), see [Power BI Premium Per User](service-premium-per-user-faq.yml).
 

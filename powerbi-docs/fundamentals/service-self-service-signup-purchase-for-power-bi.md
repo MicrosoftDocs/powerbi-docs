@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 05/14/2021
+ms.date: 05/17/2021
 ms.custom: licensing support
 LocalizationGroup: Get started
 ---
