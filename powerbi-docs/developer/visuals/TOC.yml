@@ -60,6 +60,8 @@
       href: environment-setup.md
     - name: "Import a custom visual"
       href: import-visual.md
+    - name: "Create a dialog box"
+      href: create-display-dialog-box.md         
     - name: "Add a display warning icon to your visual"
       href: visual-display-warning-icon.md      
     - name: "Create R-powered visuals"
