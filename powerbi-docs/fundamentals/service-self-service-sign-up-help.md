@@ -1,6 +1,6 @@
 ---
-title: Self-service sign up and purchase help
-description: What to do if self-service sign up or self-service purchase is disabled. Can't sign up for the Power BI service.
+title: Self-service sign-up and purchase help
+description: What to do if self-service sign-up or self-service purchase is disabled. Can't sign up for the Power BI service.
 author: mihart
 ms.author: mihart
 services: powerbi
