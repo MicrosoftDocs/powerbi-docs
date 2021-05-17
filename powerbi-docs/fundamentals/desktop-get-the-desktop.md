@@ -94,7 +94,7 @@ From there, you can begin creating data models or reports, then share them with 
 The following list provides the minimum requirements to run Power BI Desktop:
 
 > [!IMPORTANT]
-> Since January 31st 2021, Power BI Desktop is no longer supported on Windows 7. 
+> Power BI Desktop is no longer supported on Windows 7. 
 
 * Windows 8.1 / Windows Server 2012 R2, or later
 * .NET 4.6.2 or later
