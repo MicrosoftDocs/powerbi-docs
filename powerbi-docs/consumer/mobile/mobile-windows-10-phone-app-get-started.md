@@ -45,6 +45,9 @@ If you haven't signed up yet, go to the [Power BI service](https://powerbi.com/)
    ![Connect dialog box](./media/mobile-windows-10-phone-app-get-started/power-bi-windows-10-connect.png)
 3. Tap **Start exploring**  to view your own dashboards.
 
+>[!Important]
+> The minimum window size for the Power BI app for Windows devices is set and designed for a resolution of 460x500.
+
 ## Try the Power BI and Reporting Services samples
 Even without signing up, you can play with the Power BI and Reporting Services samples. After you download the app, you can view the samples or get started. Go back to the samples whenever you want from the dashboards home page.
 
