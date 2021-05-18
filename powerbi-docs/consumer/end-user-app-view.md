@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 12/04/2020
 ms.custom: licensing support
 LocalizationGroup: Share your work
 ---
@@ -132,7 +132,7 @@ From time to time, app designers may release new versions of their apps. How you
 
         ![Install update](./media/end-user-app-view/power-bi-installs.png) 
 
-    3. Since you already have a version of this app, decide whether to replace the existing version or whether to install the updated app in a new workspace.   
+    3. Since you already have a version of this app, decide whether you want to replace the existing version, update only the workspace content _without_ updating the app,  or install the updated app in a new workspace.
 
         ![Overwrite old app version](./media/end-user-app-view/power-bi-already-installed.png) 
 
