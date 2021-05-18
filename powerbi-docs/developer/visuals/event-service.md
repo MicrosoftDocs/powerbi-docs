@@ -106,3 +106,11 @@ If the visual has animations or asynchronous functions for rendering, the `rende
 
 > [!IMPORTANT]
 > Support of rendering events is a requirement for visuals certification. Without this API your visual won't be approved by Partner Center for publication. For more information, see [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements).
+
+## Next steps
+
+> [!div class="nextstepaction]
+>[Troubleshooting your Power BI environment setup](power-bi-custom-visuals-troubleshoot.md)
+
+> [!div class="nextstepaction"]
+> [Get a Power BI visual certified](power-bi-custom-visuals-certified.md)
