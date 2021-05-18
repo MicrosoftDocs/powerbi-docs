@@ -104,7 +104,7 @@ As you can see, TX&mdash;with **Sales** data but unknown *Population* data&mdash
 
 ## Use a relationship with a many-many cardinality instead of the workaround
 
-With the July 2018 version of Power BI Desktop, you can directly relate tables, such as the ones we described earlier, without having to resort to similar workarounds. It's now possible to set the relationship cardinality to *many-to-many*. This setting indicates that neither table contains unique values. For such relationships, you may still control which table filters the other table. Or you can apply bidirectional filtering, where each table filters the other.
+You can directly relate tables, such as the ones we described earlier, without having to resort to similar workarounds. It's now possible to set the relationship cardinality to *many-to-many*. This setting indicates that neither table contains unique values. For such relationships, you may still control which table filters the other table. Or you can apply bidirectional filtering, where each table filters the other.
 
 In Power BI Desktop, the cardinality defaults to *many-to-many* when it determines neither table contains unique values for the relationship columns. In such cases, a warning message confirms you want to set a relationship, and the change isn't the unintended effect of a data issue.
 

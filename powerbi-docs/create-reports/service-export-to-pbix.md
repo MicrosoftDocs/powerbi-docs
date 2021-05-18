@@ -48,11 +48,14 @@ There are a few important considerations and limitations associated with downloa
 * To download the file, you must have edit access to the report.
 * The report must have been created by using Power BI Desktop and *published* to the Power BI service, or the .pbix file must have been *uploaded* to the Power BI service.
 * Reports must be published or updated after November 23, 2016. Reports published earlier aren't downloadable.
-* This feature won't work with reports and content packs originally created in the Power BI service.
+* This feature won't work with reports and content packs originally created in the Power BI service, unless the report was created through the [quick create experience](./service-quick-create-report.md).
 * Always use the latest version of Power BI Desktop when you open downloaded files. Downloaded .pbix files might not open in non-current versions of Power BI Desktop. For example, you cannot open downloaded .pbix files using a Desktop version that does not support information protection.
 * If your administrator has turned off the ability to download data, this feature won't be visible in the Power BI service.
 * Datasets with incremental refresh can't be downloaded to a .pbix file.
 * Datasets enabled for [large models](../admin/service-premium-large-models.md) can't be downloaded to a .pbix file.
+* Live connect reports can't be downloaded to a .pbix file.
+* Downloading a .pbix file after deployment isn't supported as part of the [deployment pipeline (ALM)](./deployment-pipelines-process.md). 
+* Usage metric reports can't be downloaded to a .pbix file
 * Datasets modified by using the [XMLA endpoint](../admin/service-premium-connect-tools.md) can't be downloaded to a .pbix file.
 * If you create a Power BI report based on a dataset in one workspace and publish to a different workspace, you and your users won't be able to download it. The download feature is currently not supported in this scenario.
 

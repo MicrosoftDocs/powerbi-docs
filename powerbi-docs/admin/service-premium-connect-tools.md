@@ -85,7 +85,7 @@ B2B users must specify their organization UPN in tenant name. For example,
 `powerbi://api.powerbi.com/v1.0/fabrikam.com/Sales Workspace`.
 
 > [!NOTE]
-> To determine the primary domain name and ID of a Power BI tenant, sign into the Azure portal, select Azure Active Directory from the main menu, and then note the information on the Azure Active Directory Overview page. For more information, see [Find the Microsoft Azure AD tenant ID and primary domain name](https://aka.ms/tenant-id-and-domain-names).
+> To determine the primary domain name and ID of a Power BI tenant, sign into the Azure portal, select Azure Active Directory from the main menu, and then note the information on the Azure Active Directory Overview page. For more information, see [Find the Microsoft Azure AD tenant ID and primary domain name](/partner-center/find-ids-and-domain-names).
 
 ### To get the workspace connection URL
 

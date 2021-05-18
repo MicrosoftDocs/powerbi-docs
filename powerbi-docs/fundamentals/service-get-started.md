@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 04/02/2021
+ms.date: 05/18/2021
 Customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
 LocalizationGroup: Get started
 ---
@@ -34,7 +34,9 @@ In this tutorial, you complete the following steps:
 
 ## Sign up for the Power BI service
 
-You need a Power BI Pro or Premium Per User (PPU) license to create content in Power BI. If you don't have a Power BI account, [sign up for a free Power BI Pro trial or Premium Per User](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
+You need a Power BI Pro or Premium Per User (PPU) license to create content in Power BI. If you don't have a Power BI account, and plan on creating content, [sign up for a free Power BI Premium Per User 60 day trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin. Complete the wizard to get a free license, open the Power BI service (app.powerbi.com), select the **Me** icon and choose either **Buy Pro now** or **Try paid features for free**.
+
+ :::image type="content" source="media/service-get-started/power-bi-pro.png" alt-text="Screenshot of choosing Buy or Try.":::
 
 ## Step 1: Get data
 
@@ -44,7 +46,7 @@ In this tutorial, we get data from a simple Microsoft Excel file. Want to follow
 
 1. To begin, open the Power BI service (app.powerbi.com) in your browser. 
 
-    Don’t have an account? No worries, you can [sign up for a free Power BI Pro trial](https://app.powerbi.com/signupredirect?pbi_source=web)
+    Don’t have an account? No worries, you can [sign up for a free Power BI Premium Per User 60 day trial](https://app.powerbi.com/signupredirect?pbi_source=web)
 
 1. Select **My workspace** in the navigation pane.
 

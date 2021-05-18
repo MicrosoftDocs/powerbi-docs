@@ -24,7 +24,7 @@ The benefits of the ribbon are intended to make the experience across Power BI D
 
 These benefits can be grouped into the following categories:
 
-* **Search bar** - Beginning with the February 2021 release, the ribbon now includes a Search experience, similar to the search available in other Microsoft products. When you click the search bar, Power BI suggests actions based on the current state of your report. As you type, search results are updated and buttons provided to get help, or take next steps. 
+* **Search bar** - The ribbon includes a Search experience, similar to the search available in other Microsoft products. When you click the search bar, Power BI suggests actions based on the current state of your report. As you type, search results are updated and buttons provided to get help, or take next steps. 
 
     ![New search bar](media/desktop-ribbon/desktop-ribbon-03.png)
 
