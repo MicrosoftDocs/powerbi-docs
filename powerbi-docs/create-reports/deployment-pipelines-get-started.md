@@ -88,6 +88,8 @@ Follow these steps to assign a workspace in a deployment pipeline:
 
 * You cannot assign a workspace with [Power BI samples](../create-reports/sample-datasets.md) to a pipeline stage.
 
+* You can only assign one workspace to each deployment pipeline stage.
+
 >[!NOTE]
 >Only workspaces that can be used with deployment pipelines, will show in the list of workspaces you can select from.
 
