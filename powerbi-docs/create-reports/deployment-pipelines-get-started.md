@@ -63,7 +63,9 @@ You can create a pipeline from an existing workspace, providing you're the admin
 
 After creating a pipeline, you need to add the content you want to manage to the pipeline. Adding content to the pipeline is done by assigning a workspace to the pipeline stage. You can assign a workspace to any stage.
 
-You can assign one workspace to a deployment pipeline. Deployment pipelines will create clones of the workspace content, to be used in different stages of the pipeline.
+You can only assign one workspace to a deployment pipeline.
+
+Deployment pipelines will create clones of the workspace content, to be used in different stages of the pipeline.
 
 Follow these steps to assign a workspace in a deployment pipeline:
 
@@ -88,7 +90,7 @@ Follow these steps to assign a workspace in a deployment pipeline:
 
 * You cannot assign a workspace with [Power BI samples](../create-reports/sample-datasets.md) to a pipeline stage.
 
-* You can only assign one workspace to each deployment pipeline stage.
+* You can only assign one workspace to each deployment pipeline.
 
 >[!NOTE]
 >Only workspaces that can be used with deployment pipelines, will show in the list of workspaces you can select from.
