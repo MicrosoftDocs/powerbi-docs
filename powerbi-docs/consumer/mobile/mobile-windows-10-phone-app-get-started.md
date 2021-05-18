@@ -23,6 +23,8 @@ Then interact with your dashboards and reports, explore the data, and share them
   
   Your device must run Windows 10. The app can run on devices with at least 3-GB RAM and 8-GB internal storage.
 
+    The app is designed for a minimum resolution of 460x500.
+
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
    
@@ -114,10 +116,6 @@ Here are some other things you can do in the Power BI app for Windows 10 devices
 * [View Reporting Services mobile reports and KPIs](mobile-app-windows-10-ssrs-kpis-mobile-reports.md) in the Power BI app for Windows 10 devices.
 * Create [KPIs on the Reporting Services web portal](/sql/reporting-services/working-with-kpis-in-reporting-services).
 * [Create your own mobile reports with the SQL Server Mobile Report Publisher](/sql/reporting-services/mobile-reports/create-mobile-reports-with-sql-server-mobile-report-publisher), and publish them to the Reporting Services web portal.
-
-## Considerations
-
-* The minimum window size for the Power BI app for Windows devices is set and designed for a resolution of 460x500.
 
 ## Next steps
 * [Download the Power BI app](https://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  

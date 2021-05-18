@@ -20,7 +20,7 @@ For related "What's New" information, see:
 
 ## May 2021
 ### Support for passing URL parameters to paginated reports (iOS)
-We now support passing parameters to paginated reports via the URL. Passing parameters via the report URL automatically sets the report parameters to those values. [Learn more](../../paginated-reports/report-builder-url-parameters.md)
+We now support passing parameters to paginated reports via the URL. Passing parameters via the report URL automatically sets the report parameters to those values. [Learn more](../../paginated-reports/report-builder-url-pass-parameters.md)
 
 ## April 2021
 ### Support for Power BI in Split View (iPads)
