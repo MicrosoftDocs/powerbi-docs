@@ -12,36 +12,41 @@ ms.date: 05/11/2021
 
 # Multi-tenancy solutions with Power BI embedded analytics
 
-When designing a multi-tenant *embed for your customers* application, you must carefully choose the tenancy model that best fits your needs. A tenancy model determines how each tenant's data is mapped and managed within Power BI. Your tenancy model impacts application design and management. Switching to a different model later may become costly and disruptive.
+When designing a multi-tenant application as part of your *embed for your customers* solution, you must carefully choose the tenancy model that best fits your needs. A tenancy model determines how each tenant's data is mapped and managed within Power BI. Your tenancy model impacts application design and management. Switching to a different model later may become costly and disruptive.
+
+In this article we refer to tenants as one group of customers, an organization or a company. A multi-tenant solution, is an embedded application used by a number of companies, where each company is referred to as a Power BI tenant.
 
 This article describes the two different approaches and analyzes them according to several evaluation criteria. The recommended approach is the *workspace isolation* solution, which is described on the left tab throughout the article. The *row-level security isolation* solution, also known as *RLS*, is described on the right tab. You can also view a [summary](#comparison-summary) of this evaluation, at the end of the article.
 
 >[!TIP]
->Workspace isolation is the recommended embedded analytics multi tenancy solution.
+>* **Workspace isolation** is the recommended embedded analytics **multi-tenancy** solution.
+>* **RLS** is the recommended embedded analytics solution for securely filtering data in a **single tenancy** solution.
 
 ## Isolation method
 
 # [Workspace](#tab/workspace)
 
-With Power BI workspace-based isolation, the *embed for your customers* app supports multiple tenants from a single Power BI tenant. Workspace-based isolation contains all the Power BI content that different tenants use. The separation of tenants is done at the Power BI workspace level, by creating multiple workspaces. Each workspace contains the relevant datasets, reports, and dashboards for that tenant. Also, each workspace is connected only to that tenant's data. If you need additional isolation, you can create a *master user* or a *service principal* for each workspace and its content.
+With Power BI workspace-based isolation, your multi-tenant app supports multiple tenants from a single Power BI tenant. Workspace-based isolation contains all the Power BI content that different tenants use. The separation of tenants is done at the Power BI workspace level, by creating multiple workspaces. Each workspace contains the relevant datasets, reports, and dashboards for that tenant. Also, each workspace is connected only to that tenant's data. If you need additional isolation, you can create a *service principal* or a *master user* for each workspace and its content.
 
 ![A diagram describing the workspace isolation method](media/embed-multi-tenancy/multi-tenant-saas-workspace.png)
 
 # [RLS](#tab/rls)
 
-With row-level security-based isolation, the *embed for your customers* app uses a single workspace to host multiple tenants. Each Power BI item (such as reports, dashboards and datasets) is created once and is used by all tenants. Data separation between tenants is accomplished using [row-level security](embedded-row-level-security.md) on the multi-tenant dataset. When end users log into the app and open content, an embed token is generated for that user's session, with the roles and filters that ensure that users only see the data they're permitted to see. If users from the same tenant are not permitted to view the same data, the application developer needs to implement hierarchical roles both between tenants and within the same tenant.
+With row-level security-based isolation, your multi-tenant app uses a single workspace to host multiple tenants. Each Power BI item (such as reports, dashboards and datasets) is created once and is used by all tenants. Data separation between tenants is accomplished using [row-level security](embedded-row-level-security.md) on the multi-tenant dataset. When end users log into the app and open content, an embed token is generated for that user's session, with the roles and filters that ensure that users only see the data they're permitted to see. If users from the same tenant are not permitted to view the same data, the application developer needs to implement hierarchical roles both between tenants and within the same tenant.
 
 ![A diagram describing the row level security isolation method](media/embed-multi-tenancy/multi-tenant-saas-rls.png)
 
 ---
 
+## Data architecture
+
 # [Workspace](#tab/workspace)
 
 There are two main approaches for managing tenant's data.
 
-* **A separate database per tenant** - If the *embed for your customers* app storage is keeping separate databases per tenant, then the natural choice is to use single-tenant datasets in Power BI, with the connection string for each dataset pointing to the matching database.
+* **A separate database per tenant** - If your multi-tenant app storage is keeping separate databases per tenant, then the natural choice is to use single-tenant datasets in Power BI, with the connection string for each dataset pointing to the matching database.
 
-* **A single multi-tenant database** - If the *embed for your customers* app storage is using a multi-tenancy database for all tenants, it's easy to separate tenants by workspaces. You can configure the database connection for the Power BI dataset with a parameterized database query that only retrieves the relevant tenant's data. You can update the connection using [Power BI Desktop](../../transform-model/desktop-query-overview.md) or with [APIs](/rest/api/power-bi/datasets/updatedatasourcesingroup) and [parameters](/rest/api/power-bi/datasets/updateparametersingroup).
+* **A single multi-tenant database** - If your multi-tenant app storage is using a multi-tenancy database for all tenants, it's easy to separate tenants by workspaces. You can configure the database connection for the Power BI dataset with a parameterized database query that only retrieves the relevant tenant's data. You can update the connection using [Power BI Desktop](../../transform-model/desktop-query-overview.md), the Power BI service or with [APIs](/rest/api/power-bi/datasets/updatedatasourcesingroup) and [parameters](/rest/api/power-bi/datasets/updateparametersingroup).
 
 # [RLS](#tab/rls)
 
@@ -53,9 +58,9 @@ Implementing row-level security isolation is most comfortable when all tenants' 
 
 # [Workspace](#tab/workspace)
 
-Data in this tenancy model is separated at the workspace level. A simple mapping between a workspace and a tenant prevents users from one tenant seeing content from another tenant. Using a single *master user* allows you to have access to all the different workspaces. The configuration of which data to show an end user is defined during the [generation of the embed token](/rest/api/power-bi/embedtoken), a backend-only process which end users can't see, or change.
+Data in this tenancy model is separated at the workspace level. A simple mapping between a workspace and a tenant prevents users from one tenant seeing content from another tenant. Using a single *service principal* or *master user* allows you to have access to all the different workspaces. The configuration of which data to show an end user is defined during the [generation of the embed token](/rest/api/power-bi/embedtoken), a backend-only process which end users can't see, or change.
 
-To add additional isolation, an application developer can define a *master user* or an application per workspace, rather than a single *master user* or application with access to multiple workspaces.
+To add additional isolation, an application developer can define a *service principal*, *master user* or an application per workspace, rather than a single *service principal*, *master user* or application with access to multiple workspaces.
 
 # [RLS](#tab/rls)
 
@@ -69,7 +74,7 @@ With row-level security-based isolation, data separation is accomplished using [
 
 One advantage of the *workspace isolation* model is that separating the data into multiple datasets for each tenant overcomes the [size limits of a single dataset](../../admin/service-premium-what-is.md). When the capacity is overloaded, it can evict unused datasets to free memory for active datasets. This task isn't possible with a single large dataset. Using multiple datasets, it is also possible to separate tenants into multiple Power BI capacities if needed.
 
-Despite these advantages, consider the scale that your *embed for your customers* app can reach in the future. For example, you might reach [limitations](#power-bi-items) around the number of Power BI items you can manage. The capacity SKU used introduces a limit on the size of memory that datasets need to fit in, how many refreshes can run at the same time and the maximum frequency of data refreshes. We recommended that you test your app when managing hundreds or thousands of datasets. It is also recommended to consider the average and peak volume of usage, as well as any specific tenants with large datasets, or different usage patterns, that are managed differently than other tenants.
+Despite these advantages, consider the scale that your multi-tenant app can reach in the future. For example, you might reach [limitations](#power-bi-items) around the number of Power BI items you can manage. The capacity SKU used introduces a limit on the size of memory that datasets need to fit in. When using a *Gen 1* capacity, you also have to consider how many refreshes can run at the same time and the maximum frequency of data refreshes. We recommended that you test your app when managing hundreds or thousands of datasets. It is also recommended to consider the average and peak volume of usage, as well as any specific tenants with large datasets, or different usage patterns, that are managed differently than other tenants.
 
 # [RLS](#tab/rls)
 
@@ -113,11 +118,11 @@ If only a limited number of tenants need different geographies, consider keeping
 
 ### Cost
 
-# [Workspace](#tab/workspace)
-
-Both [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) and **Power BI Premium** have a resource-based purchase model. You purchase one or more capacities with fixed computing power and memory. There's no limit on the number of users using the capacity. The only limit is the performance of the capacity. A [Power BI Pro license](../../admin/service-admin-licensing-organization.md) is required for each *master user*, or specific users that need to access the Power BI portal.
+Both [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) and **Power BI Premium** have a resource-based purchase model. You purchase one or more capacities with fixed computing power and memory. There's no limit on the number of users using the capacity. The only limit is the performance of the capacity. A [Power BI Pro license](../../admin/service-admin-licensing-organization.md) is required for each *service principal*, *master user* or specific users that need to access the Power BI portal.
 
 We recommend testing and measuring the expected load on your capacity by simulating live environment and usage. You can measure the load and performance with the various metrics available in the Azure capacity or [Premium capacity metrics app](../../admin/service-admin-premium-monitor-capacity.md).
+
+# [Workspace](#tab/workspace)
 
 The workspace-based isolation model sits well with capacities for the following reasons:
 
@@ -138,11 +143,11 @@ The primary cost driver with row-level security-based isolation is the memory fo
 
 # [Workspace](#tab/workspace)
 
-For the primary use cases of content creation, the application developer needs to carefully consider which tenants can have editing capabilities, and how many users in each tenant can edit. Permitting multiple users to edit in each tenant, can result in a lot of content being generated. Generating a lot of content, may cause reaching a dataset limitation such as the number of reports per dataset, or the number of datasets in a workspace. If you give users editing capabilities, we recommend monitoring the content generation closely and scaling up as needed. For the same reasons, we don't recommend using the editing capability for content personalization, where each user can make small changes to a report and save it. If the *embed for your customers* app allows content personalization, consider introducing and communicating workspace retention policies for user-specific content, to facilitate the flow of content deletion when end users move to a new position, leave the company, or stop using the platform.
+For the primary use cases of content creation, the application developer needs to carefully consider which tenants can have editing capabilities, and how many users in each tenant can edit. Permitting multiple users to edit in each tenant, can result in a lot of content being generated. Generating a lot of content, may cause reaching a dataset limitation such as the number of reports per dataset, or the number of datasets in a workspace. If you give users editing capabilities, we recommend monitoring the content generation closely and scaling up as needed. For the same reasons, we don't recommend using the editing capability for content personalization, where each user can make small changes to a report and save it. If your multi-tenant app allows content personalization, consider introducing and communicating workspace retention policies for user-specific content, to facilitate the flow of content deletion when end users move to a new position, leave the company, or stop using the platform.
 
 # [RLS](#tab/rls)
 
-As end users edit or create reports, they can use the production multi-tenant dataset. We advise only using the embedded iFrame option to edit or [create reports](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Create-Report-in-Embed-View), as it relies on the same dataset, with row-level security applied. Having users uploading PBIX files with additional datasets can be costly and difficult to manage with row-level security isolation. Also, you need to build a robust mechanism to distinguish which content is connected to which tenant, so that when users generate new content that is in the same workspace, you can make sure the production workspace doesn't hit its limits.
+As end users edit or create reports, they can use the production multi-tenant dataset. We advise only using the embedded iFrame option to [edit or create reports](/javascript/api/overview/powerbi/create-edit-report-embed-view), as it relies on the same dataset, with row-level security applied. Having users uploading PBIX files with additional datasets can be costly and difficult to manage with row-level security isolation. Also, you need to build a robust mechanism to distinguish which content is connected to which tenant, so that when users generate new content that is in the same workspace, you can make sure the production workspace doesn't hit its limits.
 
 ---
 
@@ -150,8 +155,9 @@ As end users edit or create reports, they can use the production multi-tenant da
 
 The table below provides a summary of the detailed comparison between the two isolation methods.
 
-|| Workspace (recommended)   | RLS  |
+|| Workspace    | RLS  |
 |---------------------|-------------------|---------------------------|
+| **Best fit** | Recommended for multi-tenancy | Recommended for single-tenancy |
 | **Data architecture** | Easiest when there's a separate database per tenant.  | Easiest when all the data for all tenants is in a single data warehouse.   |
 | **Data isolation** | ![an icon that symbolizes good](../../includes/media/yes.png) Good.<br>Each tenant has a dedicated dataset.  | ![an icon that symbolizes moderate](../../includes/media/maybe.png) Moderate.<br> All data is in the same shared dataset which is managed through access-control.  |
 | **Scalability** | ![an icon that symbolizes moderate](../../includes/media/maybe.png) Moderate.<br> Breaking data into multiple datasets enables optimization.  | ![an icon that symbolizes low](../../includes/media/no.png) Lowest.<br>Constrained by dataset limits.  |
