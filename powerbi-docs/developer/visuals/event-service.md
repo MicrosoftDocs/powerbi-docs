@@ -12,8 +12,8 @@ ms.date: 05/18/2021
 
 # Render events in Power BI visuals
 
-In order to get a [visual certified](power-bi-custom-visuals-certified.md), it must support the **rendering events API**.
-This API lets listeners (primarily, *export to PDF* and *export to PowerPoint*) know when the visual is being rendered and when it is ready for export.
+In order to get a [visual certified](power-bi-custom-visuals-certified.md), it must include **rendering events**.
+These events let listeners (primarily, *export to PDF* and *export to PowerPoint*) know when the visual is being rendered and when it is ready for export.
 
 The **rendering events API** consists of three methods that should be called during rendering:
 
@@ -22,6 +22,9 @@ The **rendering events API** consists of three methods that should be called dur
 * `renderingFinished`: When rendering is completed successfully, the Power BI visual code calls the `renderingFinished` method to notify the listeners that the visual's image is ready for export. This method should be the last line of code **executed** when the visual updates. It's usually, but not always, the last line of the update method.
 
 * `renderingFailed`: If a problem occurs during the rendering process, the Power BI visual doesn't render successfully. To notify the listeners that the rendering process hasn't been completed, the Power BI visual code should call the `renderingFailed` method. This method also provides an optional string to provide a reason for the failure.
+
+> [!NOTE]
+> *Rendering events* are a requirement for visuals certification. Without them your visual won't be approved by the Partner Center for publication. For more information, see [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements).
 
 ## How to use the rendering events API
 
@@ -104,8 +107,7 @@ If the visual has animations or asynchronous functions for rendering, the `rende
 
 ## Rendering events for visual certification
 
-> [!IMPORTANT]
-> Support of rendering events is a requirement for visuals certification. Without this API your visual won't be approved by Partner Center for publication. For more information, see [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements).
+
 
 ## Next steps
 
