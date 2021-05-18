@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/03/2020
+ms.date: 05/14/2021
 LocalizationGroup: Create reports
 ---
 # Create Power BI visuals by using Python
