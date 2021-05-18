@@ -7,7 +7,7 @@ ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/08/2021
+ms.date: 05/14/2021
 LocalizationGroup: 
 ---
 
@@ -76,6 +76,16 @@ These parameters can be used with the TMSL refresh command to override the defau
 ```
 
 To learn more about overriding default incremental refresh behavior with TMSL, see [Refresh command](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true).
+
+## Ensuring optimal performance
+
+With each refresh operation, the Power BI service may send initialization queries to the data source for each incremental refresh partition. You may be able to improve incremental refresh performance by reducing the number of initialization queries by ensuring the following: 
+
+- The table you configure incremental refresh for should get data from a single data source. If the table gets data from more than one data source, the number of queries sent by the service for each refresh operation is multiplied by the number of datasources, potentially reducing refresh performance. Ensure the query for the incremental refresh table is for a single data source.
+- If your security requirements allow, set the Data source privacy level setting to Organizational or Public. By default, the privacy level is Private, however this level can prevent data from being exchanged with other cloud sources. Set privacy level in **Dataset Settings** > **Data source credentials** > **Edit credentials** > **Privacy level setting for this datasource**. If Privacy level is set in the Power BI Desktop model before publishing to the service, it is not transferred to the service when you publish. You must still set it in dataset settings in the service. To learn more, see [Privacy levels](../admin/desktop-privacy-levels.md).
+- If using an On-premises Data Gateway, be sure you’re using version 3000.77.3 or higher.
+
+
 
 ## Prevent timeouts on initial full refresh
 
