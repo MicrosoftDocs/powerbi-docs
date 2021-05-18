@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 04/06/2021
+ms.date: 05/18/2021
 ---
 # Get started with the Power BI mobile app for Windows 10
 The Power BI mobile app for Windows 10 brings Power BI to your tablet or phone. You get up-to-date, touch-enabled mobile access to your business information. View and interact with your company dashboards from anywhere - right on your [Windows Start screen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
@@ -44,9 +44,6 @@ If you haven't signed up yet, go to the [Power BI service](https://powerbi.com/)
    
    ![Connect dialog box](./media/mobile-windows-10-phone-app-get-started/power-bi-windows-10-connect.png)
 3. Tap **Start exploring**  to view your own dashboards.
-
->[!Important]
-> The minimum window size for the Power BI app for Windows devices is set and designed for a resolution of 460x500.
 
 ## Try the Power BI and Reporting Services samples
 Even without signing up, you can play with the Power BI and Reporting Services samples. After you download the app, you can view the samples or get started. Go back to the samples whenever you want from the dashboards home page.
@@ -117,6 +114,10 @@ Here are some other things you can do in the Power BI app for Windows 10 devices
 * [View Reporting Services mobile reports and KPIs](mobile-app-windows-10-ssrs-kpis-mobile-reports.md) in the Power BI app for Windows 10 devices.
 * Create [KPIs on the Reporting Services web portal](/sql/reporting-services/working-with-kpis-in-reporting-services).
 * [Create your own mobile reports with the SQL Server Mobile Report Publisher](/sql/reporting-services/mobile-reports/create-mobile-reports-with-sql-server-mobile-report-publisher), and publish them to the Reporting Services web portal.
+
+## Considerations
+
+* The minimum window size for the Power BI app for Windows devices is set and designed for a resolution of 460x500.
 
 ## Next steps
 * [Download the Power BI app](https://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
