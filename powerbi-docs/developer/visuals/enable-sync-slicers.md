@@ -10,9 +10,9 @@ ms.topic: how-to
 ms.date: 05/13/2021
 ---
 
-# Synchronizing slicers across pages in Power BI reports
+# Sync slicers across pages in Power BI reports
 
-[Slicers](../../visuals/power-bi-visualization-slicers.md) are a useful way to filter information and focus on a specific portion of the dataset.
+[Slicers](../../visuals/power-bi-visualization-slicers.md) are a useful way to filter information and focus on a specific portion of the dataset. They allow you to select which values you want to show in your visual.
 
 Sometimes you may want to use a slicer on only one specific page of the report. Other times you might want to apply the slicer to several pages. With the *sync slicers* feature, a slicer selection on any page will affect visualizations on all selected pages.
 
