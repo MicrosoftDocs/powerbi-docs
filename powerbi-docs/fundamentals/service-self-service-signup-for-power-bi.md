@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 05/10/2021
+ms.date: 05/14/2021
 ms.custom: licensing support
 LocalizationGroup: Get started
 ---
@@ -28,7 +28,7 @@ Before you start the self-service process, it's important to learn which types o
 
 ## Use self-service sign-up to get an individual Power BI license
 
-Follow these steps to sign up for a Power BI account. Once you complete this process you will have a Power BI (free) license which you can use to try the Power BI service on your own using My Workspace, consume content from a Power BI workspace assigned to a Power BI Premium capacity, or initiate an individual Power BI Pro trial. For more information, see [Power BI features by license type](service-features-license-type.md). 
+Follow these steps to sign up for a Power BI service account. Once you complete this process you will have a Power BI (free) license which you can use to try the Power BI service on your own using My Workspace, consume content from a Power BI workspace assigned to a Power BI Premium capacity, or initiate an individual Power BI trial. For more information, see [Power BI features by license type](service-features-license-type.md). 
 
 The exact steps for sign up can vary depending on your organization and what you click to start the process. For this reason, you may not be presented with all of the screens shown below. There are many different ways to sign up for the Power BI service as an individual, and the steps in this article apply to the two most common.
 - you select a **Try free** or **Start free** button<sup>1</sup>.     
@@ -78,17 +78,17 @@ The exact steps for sign up can vary depending on your organization and what you
 
 ## Use self-service sign-up to start an individual trial of Power BI Pro
 
-Congratulations on signing into your Power BI account for the first time! You now have a free license<sup>2</sup>. As you start to explore the Power BI service, you'll see pop-ups asking if you want to upgrade to an individual trial of Power BI Pro. [Some features of the Power BI service require a Pro license](../consumer/end-user-license.md). If you'd like to start a free 60 day individual trial of Power BI Pro, select **Start trial**.  
+Congratulations on signing into your Power BI account for the first time! You now have a free license<sup>2</sup>. As you start to explore the Power BI service, you may see pop-ups asking if you want to upgrade to an individual trial of the paid version of Power BI. If you do, select **Try now**. In some organizations, if you try to use a feature that requires a Pro or Premium Per User license, Power BI will automatically initiate a 60 day trial of the paid version of Power BI. [Some features of the Power BI service require a Pro or PPU license](../consumer/end-user-license.md). If you'd like to start a free 60 day individual trial, select **Start trial**.  
 
-![Screenshot of Power B I service showing Power BI trial dialog.](media/service-self-service-signup-for-power-bi/power-bi-start-trial.png)
+![Screenshot of Power B I service showing Power BI trial dialog.](media/service-self-service-signup-for-power-bi/power-bi-full-trial.png)
 
 <sup>2</sup> In some organizations, your default Power BI account may be a Power BI **Pro** license. For example, some versions of Microsoft 365 include a Power BI Pro license. To learn how to look up your user license, see [what license do I have?](../consumer/end-user-license.md)
 
-If a Power BI (free) license is sufficient, you don't have to do anything else. To take advantage of Power BI Pro features, you can upgrade your license using self-service purchase.
+If a Power BI (free) license is sufficient, you don't have to do anything else. To take advantage of Power BI Pro or Premium Per User features, you can upgrade your license using self-service purchase.
 
 ### Trial expiration
 
-When your free individual trial of Power BI Pro expires, or you cancel your trial, your license changes back to a Power BI (free) license. The trial cannot be extended. You will no longer have access to features that require a Power BI Pro license. For more information, see [Features by license type](service-features-license-type.md). 
+When your free individual trial of Power BI expires, or you cancel your trial, your license changes back to its previous version of Power BI, either free or Pro. The trial cannot be extended. You will no longer have access to features that require a Premium Per User license. For more information, see [Features by license type](service-features-license-type.md). 
 
 If you'd like to cancel your trial before the expiration date, select your account icon and choose **Cancel trial**. 
 
@@ -159,6 +159,13 @@ If you still can't sign up or purchase and are willing to complete a more advanc
 
 **Solution**
 Sometimes it takes a few tries. If you retry your password several times and you still can't log in, try running your browser in Incognito (Chrome) or InPrivate (Edge) mode.
+
+**You don't receive in-product prompts**
+You don't see prompts to upgrade (Buy now) or start a trial (Try now), and the UI doesn't display Try now or Buy now buttons.
+
+**Solution**
+The type of upgrade and trial options that you are offered will depend on how your administrator has set up your domain. Your administrators have the ability to disable all trials, disable self-service purchase, and more. 
+ 
 
 ## Next steps
 

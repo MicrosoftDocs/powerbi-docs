@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 04/12/2021
+ms.date: 05/12/2021
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -27,7 +27,7 @@ Turning off self-service sign-up keeps users from exploring Power BI for data vi
 - In larger and decentralized organizations (work or school), where individuals are often given the flexibility to purchase SaaS (Software as a service) licenses for their own use. 
 - For one-person or small organizations that need to purchase only one Power BI Pro license, or only a few licenses.
 - For individuals interested in trying Power BI, getting proficient, before purchasing a subscription for the entire organization.
-- For current users with a Power BI free license, who now want to create and share content and upgrade themselves to a Power BI Pro trial. Users who already have a Power BI Pro license can also use self-service to upgrade to a Power BI Premium Per User license.
+- For current users with a Power BI free or Pro license, who now want to create and share content and upgrade themselves to a Power BI Premium Per User 60 day trial. 
 
 ### You may want to disable self-service when:
 
