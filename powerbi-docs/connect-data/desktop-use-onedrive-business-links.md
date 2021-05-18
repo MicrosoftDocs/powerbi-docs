@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/27/2020
+ms.date: 05/20/2021
 LocalizationGroup: Connect to data
 ---
 # Use OneDrive for Business links in Power BI Desktop
@@ -30,7 +30,7 @@ Getting an online link from OneDrive for Business requires a few specific steps.
 ## Use the link in Power BI Desktop
 In Power BI Desktop, you can use the link you just copied to the clipboard. Take the following steps:
 
-1. In Power BI Desktop, select **Get Data** > **Web**.
+1. In Power BI Desktop, select **Get data** > **Web**.
    
    ![Screenshot of the Get Data ribbon in Power B I Desktop, showing the Web selection.](media/desktop-use-onedrive-business-links/power-bi-web-link-onedrive.png)
 2. With the **Basic** option selected, paste the link into the **From Web** dialog box.
