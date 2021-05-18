@@ -12,14 +12,14 @@ ms.date: 05/18/2021
 
 # Render events in Power BI visuals
 
-In order to get a [visual certified](power-bi-custom-visuals-certified.md) it must support the **rendering events API**.
-This API notifies listeners (primarily, *export to PDF* and *export to PowerPoint*) when the visual is being rendered and when it is ready for export.
+In order to get a [visual certified](power-bi-custom-visuals-certified.md), it must support the **rendering events API**.
+This API lets listeners (primarily, *export to PDF* and *export to PowerPoint*) know when the visual is being rendered and when it is ready for export.
 
 The **rendering events API** consists of three methods that should be called during rendering:
 
 * `renderingStarted`: The Power BI visual code calls the `renderingStarted` method to indicate that the rendering process has started. **This method should always be the first line of the *update* method since that is where the rendering process begins**.
 
-* `renderingFinished`: When rendering is completed successfully, the Power BI visual code calls the `renderingFinished` method to notify the listeners that the visual's image is ready for export. This should be the last line of code **executed** when the visual updates. It is usually, but not always, the last line of the update method.
+* `renderingFinished`: When rendering is completed successfully, the Power BI visual code calls the `renderingFinished` method to notify the listeners that the visual's image is ready for export. This method should be the last line of code **executed** when the visual updates. It's usually, but not always, the last line of the update method.
 
 * `renderingFailed`: If a problem occurs during the rendering process, the Power BI visual doesn't render successfully. To notify the listeners that the rendering process hasn't been completed, the Power BI visual code should call the `renderingFailed` method. This method also provides an optional string to provide a reason for the failure.
 
@@ -27,7 +27,7 @@ The **rendering events API** consists of three methods that should be called dur
 
 To call the rendering methods, you have to first import them from the *IVisualEventService*.
 
-1. In your `visual.ts` file include the line:
+1. In your `visual.ts` file, include the line:
 
     ```typescript
     import IVisualEventService = powerbi.extensibility.IVisualEventService;
@@ -52,7 +52,7 @@ You can now call the methods
 
 ## Example 1: Visual without animations
 
-Here is an example of a simple visual that uses the *render events* API.
+Here's an example of a simple visual that uses the *render events* API.
 
 ```typescript
     export class Visual implements IVisual {
@@ -75,7 +75,7 @@ Here is an example of a simple visual that uses the *render events* API.
 
 ## Example 2: Visual with animations
 
-If the visual has animations or asynchronous functions for rendering, the `renderingFinished` method should be called after the animation or inside async function even if that is not the last line of the *update* method.
+If the visual has animations or asynchronous functions for rendering, the `renderingFinished` method should be called after the animation or inside async function, even if it's not the last line of the *update* method.
 
 ```typescript
     export class Visual implements IVisual {
