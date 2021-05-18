@@ -88,7 +88,9 @@ sections:
           
   - name: General
     questions:
-          
+      - question: |
+          When should I use a paginated report vs. a Power BI report?
+        answer: |
           Power BI reports are optimized for exploration and interactivity.  A sales report where different salespeople want to slice the data in the same report for their specific region/industry/customer and see how the numbers change would be best served by a Power BI report.
           
           For more information, see [When to use paginated reports in Power BI](../guidance/report-paginated-or-power-bi.md).
