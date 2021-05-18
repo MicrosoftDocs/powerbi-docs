@@ -41,7 +41,7 @@ From the **Sync slicers** pane, you can select which report pages the slicer vis
 For more information on how to sync slicers see [Sync and use slicers on other pages](../../visuals/power-bi-visualization-slicers.md#sync-and-use-slicers-on-other-pages)
 
 >[!NOTE]
->A report using the sync slicer feature must use API version 1.13.0 or later.
+>A report using the *sync slicer* feature must use API version 1.13.0 or later.
 
 ## Limitations
 
