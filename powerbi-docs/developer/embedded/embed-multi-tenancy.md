@@ -7,7 +7,7 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/11/2021
+ms.date: 05/18/2021
 ---
 
 # Multi-tenancy solutions with Power BI embedded analytics
@@ -20,7 +20,7 @@ This article describes the two different approaches and analyzes them according 
 
 >[!TIP]
 >* **Workspace isolation** is the recommended embedded analytics **multi-tenancy** solution.
->* **RLS** is the recommended embedded analytics solution for securely filtering data in a **single tenancy** solution.
+>* Within each tenant, **RLS** is the recommended embedded analytics solution for securely filtering data.
 
 ## Isolation method
 
@@ -118,7 +118,7 @@ If only a limited number of tenants need different geographies, consider keeping
 
 ### Cost
 
-Both [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) and **Power BI Premium** have a resource-based purchase model. You purchase one or more capacities with fixed computing power and memory. There's no limit on the number of users using the capacity. The only limit is the performance of the capacity. A [Power BI Pro license](../../admin/service-admin-licensing-organization.md) is required for each *service principal*, *master user* or specific users that need to access the Power BI portal.
+Both [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) and **Power BI Premium** have a resource-based purchase model. You purchase one or more capacities with fixed computing power and memory. There's no limit on the number of users using the capacity. The only limit is the performance of the capacity. If you're using a *master user* instead of a *service principal*, a [Power BI Pro license](../../admin/service-admin-licensing-organization.md) is required.
 
 We recommend testing and measuring the expected load on your capacity by simulating live environment and usage. You can measure the load and performance with the various metrics available in the Azure capacity or [Premium capacity metrics app](../../admin/service-admin-premium-monitor-capacity.md).
 
@@ -143,7 +143,7 @@ The primary cost driver with row-level security-based isolation is the memory fo
 
 # [Workspace](#tab/workspace)
 
-For the primary use cases of content creation, the application developer needs to carefully consider which tenants can have editing capabilities, and how many users in each tenant can edit. Permitting multiple users to edit in each tenant, can result in a lot of content being generated. Generating a lot of content, may cause reaching a dataset limitation such as the number of reports per dataset, or the number of datasets in a workspace. If you give users editing capabilities, we recommend monitoring the content generation closely and scaling up as needed. For the same reasons, we don't recommend using the editing capability for content personalization, where each user can make small changes to a report and save it. If your multi-tenant app allows content personalization, consider introducing and communicating workspace retention policies for user-specific content, to facilitate the flow of content deletion when end users move to a new position, leave the company, or stop using the platform.
+For the primary use cases of content creation, the application developer needs to carefully consider which tenants can have editing capabilities, and how many users in each tenant can edit. Permitting multiple users to edit in each tenant, can result in a lot of content being generated. Generating a lot of content, may cause reaching a dataset limitation such as the number of reports per dataset, or the number of Power BI items in a workspace. If you give users editing capabilities, we recommend monitoring the content generation closely and scaling up as needed. For the same reasons and to allow report updates, we don't recommend using the editing capability for content personalization, where each user can make small changes to a report and save it. If your multi-tenant app allows content personalization, consider introducing and communicating workspace retention policies for user-specific content, to facilitate the flow of content deletion when end users move to a new position, leave the company, or stop using the platform. If you allow users to edit content, you'll also need to remap the newly created content so that the new version is available for your customers in your app.
 
 # [RLS](#tab/rls)
 
@@ -155,13 +155,12 @@ As end users edit or create reports, they can use the production multi-tenant da
 
 The table below provides a summary of the detailed comparison between the two isolation methods.
 
-|| Workspace    | RLS  |
+|| Workspace (recommended)   | RLS  |
 |---------------------|-------------------|---------------------------|
-| **Best fit** | Recommended for multi-tenancy | Recommended for single-tenancy |
 | **Data architecture** | Easiest when there's a separate database per tenant.  | Easiest when all the data for all tenants is in a single data warehouse.   |
 | **Data isolation** | ![an icon that symbolizes good](../../includes/media/yes.png) Good.<br>Each tenant has a dedicated dataset.  | ![an icon that symbolizes moderate](../../includes/media/maybe.png) Moderate.<br> All data is in the same shared dataset which is managed through access-control.  |
 | **Scalability** | ![an icon that symbolizes moderate](../../includes/media/maybe.png) Moderate.<br> Breaking data into multiple datasets enables optimization.  | ![an icon that symbolizes low](../../includes/media/no.png) Lowest.<br>Constrained by dataset limits.  |
-| **Multi-Geo needs** | ![an icon that symbolizes good](../../includes/media/yes.png) Good.<br> Works best when most tenants are only in one region.  | ![an icon that symbolizes low](../../includes/media/no.png) Not recommended.<br> You'll have to keep the entire dataset stored in multiple regions.  |
+| **Multi-Geo needs** | ![an icon that symbolizes good](../../includes/media/yes.png) Good.<br> Data and capacity should be in the same geo.  | ![an icon that symbolizes low](../../includes/media/no.png) Not recommended.<br> You'll have to keep the entire dataset stored in multiple regions.  |
 | **Automation and operational complexity** | Good automation for the individual tenant.<br> Complex to manage many artifacts at scale.  | Easy to manage Power BI items.<br> Complex to manage RLS at scale.  |
 | **Cost** | Low-medium.<br> You can optimize utilization to reduce cost-per-tenant. Cost might increase when frequent refreshes are needed.  | Medium-high if using Import mode.<br> Low- medium if using Direct Query mode.  |
 | **Content customization and authoring** | ![an icon that symbolizes good](../../includes/media/yes.png) Good.<br> Might hit limitations at large scale.  | ![an icon that symbolizes moderate](../../includes/media/maybe.png) Moderate.<br> Use content generation in embedded iFrame only.  |
@@ -174,9 +173,9 @@ Before selecting the isolation model that best suits your needs, review the foll
 
 Power BI items include reports, dashboards and datasets.
 
-* The number of workspaces V1 (groups) that a single user or application can be a member or admin of is 250.
+* The number of classic workspaces that a single user or application can be a member or admin of is 250.
 
-* The number of workspaces V2 (folders) that a single user or application can be a member or admin of is 1000.
+* The number of the [new workspaces](../../collaborate-share/service-new-workspaces#new-and-classic-workspace-differences) that a single user or application can be a member or admin of is 1000.
 
 * The number of datasets in a single workspace is 1000.
 
