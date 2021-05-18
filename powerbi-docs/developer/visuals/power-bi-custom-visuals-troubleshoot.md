@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 05/06/2021
 ---
 
-# Troubleshooting your Power BI environment setup
+# Troubleshoot your Power BI environment setup
 
 This article explains how to diagnose and fix the following common problems that can occur when setting up your developer environment.
 
