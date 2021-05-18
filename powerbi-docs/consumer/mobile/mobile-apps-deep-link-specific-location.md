@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 11/16/2020
+ms.date: 05/18/2021
 ---
 # Create a link to a specific location in the Power BI mobile apps
 You can use links to directly access specific Power BI content, such as a specific report, report page, dashboard, tile, etc.
@@ -20,6 +20,8 @@ There are mainly two scenarios for using links to access content in the Power BI
 This article covers the following cases:
 * Using links to open specific Power BI content from outside the mobile app. Two link formats are described. One uses a redirect method and can be used no matter where Power BI will open. The other opens directly in the Power BI mobile app and will work only on mobile devices that have the mobile app installed.
 * Using links inside Power BI to navigate to specific Power BI content.
+
+The mobile apps also support passing parameters to paginated reports via URLs. See [Pass a report parameter in a URL for a paginated report](../../paginated-reports/report-builder-url-pass-parameters.md) for details.
 
 ## Use links from outside the mobile app
 When you want to link to a specific item in Power BI from outside the mobile app, there are two options, depending on where the link is going to be opened:
