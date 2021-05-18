@@ -21,7 +21,7 @@ The **rendering events API** consists of three methods that should be called dur
 
 * `renderingFinished`: When rendering is completed successfully, the Power BI visual code calls the `renderingFinished` method to notify the listeners that the visual's image is ready for export. This should be the last line of code **executed** when the visual updates. It is usually, but not always, the last line of the update method.
 
-* `renderingFailed`: If a problem occurs during the rendering process, the Power BI visual is doesn't render successfully. To notify the listeners that the rendering process hasn't been completed, the Power BI visual code should call the `renderingFailed` method. This method also provides an optional string to provide a reason for the failure.
+* `renderingFailed`: If a problem occurs during the rendering process, the Power BI visual doesn't render successfully. To notify the listeners that the rendering process hasn't been completed, the Power BI visual code should call the `renderingFailed` method. This method also provides an optional string to provide a reason for the failure.
 
 ## How to use the rendering events API
 
