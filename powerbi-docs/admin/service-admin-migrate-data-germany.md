@@ -29,4 +29,4 @@ We'll keep on updating this article in the coming months to add detailed informa
 
 ## Microsoft Cloud Deutschland transition
 
-In August 2018, we announced plans to deliver two new cloud datacenter regions in Germany, offering in-country customer data residency and full connectivity to Microsoft’s global cloud network. These new regions are now live with the general availability of Azure, Microsoft 365, Dynamics 365, and Power Platform. As a result, we're closing the current Microsoft Cloud Deutschland. For more information, see [Microsoft Cloud Deutschland transition](https://www.microsoft.com/cloud-platform/germany-cloud-regions).
+We provide two cloud datacenter regions in Germany, offering in-country customer data residency and full connectivity to Microsoft’s global cloud network. These regions are now live with the general availability of Azure, Microsoft 365, Dynamics 365, and Power Platform. As a result, we closed the Microsoft Cloud Deutschland. For more information, see [Microsoft Cloud Deutschland transition](https://www.microsoft.com/cloud-platform/germany-cloud-regions).

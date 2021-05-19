@@ -25,7 +25,7 @@ There are two types of refreshes applicable to dataflows:
 * **Incremental (Premium only)**, which processes a subset of your data based on time-based rules, expressed as a filter, that you configure. The filter on the date column is used to dynamically partition the data into ranges in the Power BI service. After incremental refresh is configured, the dataflow automatically alters your query to include filtering by date. You can edit the automatically generated query by using the **Advanced Editor** in Power Query to fine-tune or customize your refresh. If you bring your own Azure Data Lake Storage, you can see time slices of your data based on the refresh policy you've set.
 
     > [!NOTE]
-    > You can read more about [incremental refresh](https://docs.microsoft.com/power-query/dataflows/incremental-refresh) and how it works.
+    > You can read more about [incremental refresh](/power-query/dataflows/incremental-refresh) and how it works.
     
 Incremental refresh enables large dataflows in Power BI with the following benefits:
 
@@ -78,17 +78,17 @@ The refresh statistics provide valuable information you can use to optimize and 
 
 Using dataflows in the same workspace allows straightforward orchestration. If you have dataflows A, B and C in a single workspace, and chaining like A > B > C, then if you refresh the source (A), the downstream entities also get refreshed. However, if you refresh C, then you'll have to refresh others independently.
 
-For scenarios where you want to chain items together that don't fit the managed orchestration Power BI performs, or if you want to mix and match, you can use the APIs and/or use PowerAutomate. You can refer to the [API documentation](https://docs.microsoft.com/rest/api/power-bi/dataflows/getdataflowtransactions) and the [PowerShell script](https://github.com/microsoft/powerbi-powershell/tree/master/examples/dataflows) for programmatic refresh. There is a Power Automate connector that enables doing this without writing any code. You can see [detailed samples](https://docs.microsoft.com/power-query/dataflows/dataflow-power-automate-connector-templates), with specific walk-throughs for [sequential refreshes](https://docs.microsoft.com/power-query/dataflows/trigger-dataflows-and-power-bi-dataset-sequentially).
+For scenarios where you want to chain items together that don't fit the managed orchestration Power BI performs, or if you want to mix and match, you can use the APIs and/or use PowerAutomate. You can refer to the [API documentation](/rest/api/power-bi/dataflows/getdataflowtransactions) and the [PowerShell script](https://github.com/microsoft/powerbi-powershell/tree/master/examples/dataflows) for programmatic refresh. There is a Power Automate connector that enables doing this without writing any code. You can see [detailed samples](/power-query/dataflows/dataflow-power-automate-connector-templates), with specific walk-throughs for [sequential refreshes](/power-query/dataflows/trigger-dataflows-and-power-bi-dataset-sequentially).
 
 ### Monitoring
 
-Using the enhanced refresh statistics described earlier in this article, you can get detailed per-dataflow refresh information. But if you would like to see dataflows with tenant-wide or workspace-wide overview of refreshes, perhaps to build a monitoring dashboard, you can use [the APIs](https://docs.microsoft.com/rest/api/power-bi/dataflows) or [PowerAutomate templates](https://docs.microsoft.com/power-query/dataflows/dataflow-power-automate-connector-templates). Similarly, for use cases such as [sending simple or complex notifications](https://docs.microsoft.com/power-query/dataflows/send-notification-when-dataflow-refresh-completes), you can use the PowerAutomate connector or build your own custom application using our APIs.
+Using the enhanced refresh statistics described earlier in this article, you can get detailed per-dataflow refresh information. But if you would like to see dataflows with tenant-wide or workspace-wide overview of refreshes, perhaps to build a monitoring dashboard, you can use [the APIs](/rest/api/power-bi/dataflows) or [PowerAutomate templates](/power-query/dataflows/dataflow-power-automate-connector-templates). Similarly, for use cases such as [sending simple or complex notifications](/power-query/dataflows/send-notification-when-dataflow-refresh-completes), you can use the PowerAutomate connector or build your own custom application using our APIs.
 
 ### Timeout Errors
 
 Optimizing the time it takes to perform extract, transform, and load scenarios is ideal. In Power BI, the following cases apply:
 
-* Some connectors have explicit timeout settings you can configure. Check out the [Power Query Connector Reference](https://docs.microsoft.com/power-query/connectors/) for more information
+* Some connectors have explicit timeout settings you can configure. Check out the [Power Query Connector Reference](/power-query/connectors/) for more information
 * Power BI dataflows, using Power BI Pro, can also experience timeouts for long running queries within an entity or dataflows themselves. That limitation does not exist in Power BI Premium workspaces.
 
 #### Timeout guidance
@@ -100,7 +100,7 @@ Timeout thresholds for Power BI Pro dataflows are the following:
 
 For example, if you have a dataflow with three tables, no individual table can take more than two hours and the entire dataflow will time out if the duration exceeds three hours.
 
-If you are experiencing timeouts, consider optimizing your dataflow queries, and consider using [query folding](https://docs.microsoft.com/power-query/power-query-folding) on your source systems.
+If you are experiencing timeouts, consider optimizing your dataflow queries, and consider using [query folding](/power-query/power-query-folding) on your source systems.
 
 Separately, consider upgrading to Premium Per User (currently in preview), which is not subject to these time-outs and offers increased performance due to many [Power BI Premium Per User features](../../admin/service-premium-per-user-faq.yml).
 
@@ -114,11 +114,11 @@ Complex or large dataflows can take more time to refresh, as can poorly optimize
 
 The first step to improve long refresh durations for dataflows is to build dataflows according to our [best practices](dataflows-best-practices.md). Notable patterns include the following:
 
-* Use [linked entities](https://docs.microsoft.com/power-query/dataflows/linked-entities) for data that can be used later in other transformations
-* [Use computed entities](https://docs.microsoft.com/power-query/dataflows/computed-entities-scenarios) to cache data, reducing data loading and data ingestion burden on source systems
-* Split data into [staging dataflows](https://docs.microsoft.com/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows#staging-dataflows) and [transformation dataflows](https://docs.microsoft.com/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows#transformation-dataflows), separating the ETL (extract, transform, load) into different dataflows
-* [Optimize expanding table operations](https://docs.microsoft.com/power-query/optimize-expanding-table-columns)
-* Follow [guidance for complex dataflows](https://docs.microsoft.com/power-query/dataflows/best-practices-developing-complex-dataflows)
+* Use [linked entities](/power-query/dataflows/linked-entities) for data that can be used later in other transformations
+* [Use computed entities](/power-query/dataflows/computed-entities-scenarios) to cache data, reducing data loading and data ingestion burden on source systems
+* Split data into [staging dataflows](/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows#staging-dataflows) and [transformation dataflows](/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows#transformation-dataflows), separating the ETL (extract, transform, load) into different dataflows
+* [Optimize expanding table operations](/power-query/optimize-expanding-table-columns)
+* Follow [guidance for complex dataflows](/power-query/dataflows/best-practices-developing-complex-dataflows)
 
 Next, it can help to evaluate whether you can use incremental refresh.
 
@@ -149,7 +149,7 @@ There are two options for optimizing high processor time.
 
 First, use query folding within the data source itself, which should reduce the load on the dataflow Compute Engine directly. Query folding within the data source allows the source system to do most of the work, allowing the dataflow to pass through queries in the native language of the source, rather than having to perform all the computations in memory after the initial query.
 
-Not all data sources can perform query folding, and even when query folding is possible there may be dataflows that perform certain transformations that cannot fold to the source. In such cases, the [enhanced Compute Engine](https://docs.microsoft.com/power-bi/transform-model/dataflows/dataflows-premium-workload-configuration#guidance-for-common-scenarios) is a capability introduced by Power BI to potentially improve performance by up to 25 times, for transformations specifically.
+Not all data sources can perform query folding, and even when query folding is possible there may be dataflows that perform certain transformations that cannot fold to the source. In such cases, the [enhanced Compute Engine](./dataflows-premium-workload-configuration.md#guidance-for-common-scenarios) is a capability introduced by Power BI to potentially improve performance by up to 25 times, for transformations specifically.
 
 ### Using the Compute Engine to maximize performance
 
@@ -163,7 +163,7 @@ Turning on the Enhanced Compute Engine and understanding the various statuses is
 
 **NA** - This status means that the Compute Engine was not used, either because: you are using Power BI Pro dataflows; you have it explicitly turned off; you are using query folding on the data source; or you are performing complex transformations that cannot make use of the SQL engine used to speed up queries.
 
-If you're experiencing long durations and still get a status of **NA**, make sure that it is [turned on](dataflows-premium-workload-configuration.md) and not accidentally turned off. One recommended pattern is to use [staging dataflows to initially get your data into the Power BI service, then build dataflows on top of this data, once it is in a staging dataflow](https://docs.microsoft.com/power-query/dataflows/best-practices-developing-complex-dataflows#split-data-transformation-dataflows-from-stagingextraction-dataflows). That pattern can reduce load on source systems and, together with the Compute Engine, provide a speed boost for transformations and improve performance.
+If you're experiencing long durations and still get a status of **NA**, make sure that it is [turned on](dataflows-premium-workload-configuration.md) and not accidentally turned off. One recommended pattern is to use [staging dataflows to initially get your data into the Power BI service, then build dataflows on top of this data, once it is in a staging dataflow](/power-query/dataflows/best-practices-developing-complex-dataflows#split-data-transformation-dataflows-from-stagingextraction-dataflows). That pattern can reduce load on source systems and, together with the Compute Engine, provide a speed boost for transformations and improve performance.
 
 **Cached** - If you see **cached** status, the dataflow data was stored in the Compute Engine and available to be referenced as part of another query. This is ideal if you're using it as a Linked Entity, because that data is cached for use downstream and doesn't need to be refreshed multiple times in the same dataflow. This is also potentially ideal if you want to use it for DirectQuery.
 
@@ -185,7 +185,7 @@ The following steps will enable workloads to trigger the Compute Engine, and the
 
 For *ingestion*, focus on getting the data into the storage as fast as possible, using filters only if they reduce the overall dataset size. Keep your transformation logic separate from this step. Next, separate your transformation and business logic into a separate dataflow in the same workspace, using linked or computed entities; doing so allows for the engine to activate and accelerate your computations. For a simple analogy, it's like food preparation in a kitchen: food preparation is typically a separate and distinct step from gathering your raw ingredients, and a pre-requisite for putting the food in the oven. Similarly, your logic needs to be prepared separately before it can take advantage of the Compute Engine.
 
-Ensure you perform the operations that fold, such as merges, joins, conversion, and [others](https://docs.microsoft.com/power-query/power-query-folding#transformations-that-can-achieve-folding).
+Ensure you perform the operations that fold, such as merges, joins, conversion, and [others](/power-query/power-query-folding#transformations-that-can-achieve-folding).
 
 Also, build dataflows [within published guidelines and limitations](dataflows-features-limitations.md#dataflows-in-premium).
 
@@ -203,7 +203,7 @@ When using a Power BI Pro license, dataflows refreshes are limited to 8 refreshe
 
 ## Next steps
 
-* [Using incremental refresh with dataflows](https://docs.microsoft.com/power-query/dataflows/incremental-refresh)
+* [Using incremental refresh with dataflows](/power-query/dataflows/incremental-refresh)
 * [Incremental refresh for datasets](../../connect-data/incremental-refresh-overview.md)
 * [Troubleshooting refresh scenarios](../..//connect-data/refresh-troubleshooting-refresh-scenarios.md)
 * [Dataflows best practices](dataflows-best-practices.md)

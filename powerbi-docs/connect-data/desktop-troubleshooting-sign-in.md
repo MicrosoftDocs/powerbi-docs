@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 03/05/2020
+ms.date: 05/14/2021
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshooting sign-in for Power BI Desktop
@@ -31,13 +31,13 @@ The following exceptions in *Power BI Desktop* trace files are associated with t
 
 When this error occurs, the most likely reason is that a proxy authentication server on your network is blocking the web requests issued by **Power BI Desktop**. 
 
-If your network uses a proxy authentication server, your administrator can fix this issue by adding the following domains to the allow list on the proxy authentication server:
+If your network uses a proxy authentication server, your administrator can fix this issue by adding the following domains to the allowlist on the proxy authentication server:
 
 * app.powerbi.com
 * api.powerbi.com
 * domains in the *.analysis.windows.net namespace
 
-For customers who are part of a government cloud, fixing this issue can be done by adding the following domains to the allow list on the proxy authentication server:
+For customers who are part of a government cloud, fixing this issue can be done by adding the following domains to the allowlist on the proxy authentication server:
 
 * app.powerbigov.us
 * api.powerbigov.us
@@ -75,7 +75,7 @@ There may be many trace files in that folder. Make sure you only send the recent
 
 Web requests issued by Power BI Desktop do not use web proxy credentials. In networks that use a proxy server, Power BI Desktop may not be able to successfully make web requests. 
 
-Starting with the March 2020 Power BI Desktop release, system or network administrators can allow the use of default system credentials for web proxy authentication. Administrators can create a registry entry called **UseDefaultCredentialsForProxy**, and set the value to one (1) to enable the use of default system credentials for web proxy authentication.
+System or network administrators can allow the use of default system credentials for web proxy authentication. Administrators can create a registry entry called **UseDefaultCredentialsForProxy**, and set the value to one (1) to enable the use of default system credentials for web proxy authentication.
 
 The registry entry can be placed in either of the following locations:
 
@@ -102,4 +102,3 @@ The following recommendations should be followed whenever enabling this feature 
 
 
 [Using default system credentials for web proxy](#using-default-system-credentials-for-web-proxy)
-
