@@ -695,7 +695,7 @@ As an administrator, you can customize the look of Power BI for your whole organ
 * **Select Theme color**: You are able to select your theme based on a hex #, RGB, value, or from the provided palette.
 
 
-For more information, see [Custom branding for your organization](https://aka.ms/orgBranding).
+For more information, see [Add custom branding to the Power BI service](service-admin-custom-branding.md).
 
 ## Protection metrics
 
