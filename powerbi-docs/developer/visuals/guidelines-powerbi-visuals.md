@@ -1,6 +1,6 @@
 ---
 title: Guidelines for Power BI visuals
-description: Learn how you can publish your custom visual to Microsoft AppSource for others to discover and use it via a purchase.
+description: Guidelines for publishing your custom visual to Microsoft AppSource so others can discover and purchase it.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
@@ -12,11 +12,11 @@ ms.date: 05/12/2021
 
 # Guidelines for publishing Power BI visuals
 
-Before you [publish](office-store.md) your Power BI visual to Microsoft AppSource for others to discover and use, make sure that you follow these guidelines to create a great experience for your users.
+Before you [publish](office-store.md) your Power BI visual to Microsoft AppSource for others to discover and use, make sure you follow these guidelines to create a great experience for your users.
 
 ## Power BI visuals with additional purchases
 
-You can submit Power BI visuals that are free to the Marketplace (Microsoft AppSource). You can also submit to Microsoft AppSource Power BI visuals that have an "additional purchase may be required" price tag. "Additional purchase may be required" Power BI visuals, are similar to in-app purchase (IAP) add-ins in the Office Store.
+You can submit Power BI visuals that are free to the marketplace (Microsoft AppSource). You can also submit to Microsoft AppSource Power BI visuals that have an "additional purchase may be required" price tag. Visuals with the "Additional purchase may be required" designation are similar to in-app purchase (IAP) add-ins in the Office Store.
 
 Like a free Power BI visual, an IAP Power BI visual can also be certified. Before submitting your IAP Power BI visual for certification, make sure it complies with the [certification requirements](power-bi-custom-visuals-certified.md).
 
