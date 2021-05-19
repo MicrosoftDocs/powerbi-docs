@@ -12,22 +12,22 @@ ms.date: 05/12/2021
 
 # Guidelines for publishing Power BI visuals
 
-Before you [publish](office-store.md) your Power BI visual to Microsoft AppSource for others to discover and use, make sure you follow these guidelines to create a great experience for your users.
+Before you [publish](office-store.md) your Power BI visual to Microsoft AppSource for others to discover and use, follow these guidelines for creating a great experience for your users.
 
 ## *Free* and *for purchase* Power BI visuals
 
-You can submit Power BI visuals to be available to the marketplace (Microsoft AppSource) for free. You can also submit   Power BI visuals that will have an *other purchase may be required* tag. Visuals with the *additional purchase may be required* designation are similar to in-app purchase (IAP) add-ins in the Office Store.
+You can submit Power BI visuals to be available to the marketplace (Microsoft AppSource) for free. You can also submit   Power BI visuals that will have an *additional purchase may be required* tag. Visuals with the *additional purchase may be required* designation are similar to in-app purchase (IAP) add-ins in the [Office Store](office-store.md).
 
-Like free Power BI visuals, an IAP Power BI visual can also be certified. Before submitting your IAP Power BI visual for certification, make sure it complies with the [certification requirements](power-bi-custom-visuals-certified.md).
+Like the free Power BI visuals, an IAP Power BI visual can also be certified. Before submitting your IAP Power BI visual for certification, make sure it complies with the [certification requirements](power-bi-custom-visuals-certified.md).
 
 ### Power BI visuals with IAP features
 
-An IAP Power BI visual is a *free* visual that offers *free features*. It also has some advanced features that are available for a  fee. In the Power BI visual's description, developers must notify users about the features that require other purchases to operate. Currently, Microsoft doesn't provide native APIs to support the purchase of apps and add-ins.
+An IAP Power BI visual is a *free* visual that offers *free features*. It also has some advanced features that are available for a  fee. In the Power BI visual's description, developers must notify users about the features that require additional purchases to operate. Currently, Microsoft doesn't provide native APIs to support the purchase of apps and add-ins.
 
 Developers may use any third-party payment system for these purchases. For more information, see [our store policy](/legal/marketplace/certification-policies#11002-displaying-ads).
 
 >[!IMPORTANT]  
-> If you update your Power BI visual from free to *additional purchase may be required*, users must receive the same level of free functionality as before the update. You may add optional advanced paid features in addition to the existing free features.
+> If you update your Power BI visual from *free* to *additional purchase may be required*, users must receive the same level of free functionality as before the update. You may add optional advanced paid features in addition to the existing free features.
 
 ### Watermarks
 
@@ -35,7 +35,7 @@ You can use watermarks to allow customers to continue using the IAP advanced fea
 
 Watermarks can be used to showcase the full functionality of the Power BI visual, before a purchase is made.
 
-* Watermarks may only be used on **paid** features that are used without a valid license. Watermarks are not allowed on free features of IAP visuals.
+Watermarks may only be used on **paid** features that are used without a valid license. Watermarks are not allowed on free features of IAP visuals.
 
 ### Pop-up window
 
@@ -66,7 +66,7 @@ This section describes the specifications for adding commercial logos in Power B
 > * The Microsoft commercial logo is used in this article only as an example. Use your own commercial logo with your Power BI visual.
 
 > [!IMPORTANT]
-> Commercial logos are allowed in *edit mode only*. Commercial logos *can't* be displayed in view mode.
+> Commercial logos are allowed in *edit* mode only. Commercial logos can't be displayed in view mode.
 
 ### Commercial logo type
 
@@ -131,9 +131,9 @@ Commercial logos are only allowed in edit mode. When clicked, a commercial logo 
     * A marketing area that can include the commercial logo, a visual, and market ratings.
     * An information area that can include information and links.
 
-### Things to avoid
+### Limitations regarding logos
 
-* Commercial logos cannot be displayed in view mode.
+* Commercial logos can't be displayed in view mode.
 
 * An animated commercial logo can display animation for up to five seconds.
 
@@ -149,7 +149,7 @@ Commercial logos are only allowed in edit mode. When clicked, a commercial logo 
 
 ## Best practices
 
-When publishing a Power BI visual, consider the following recommendations to give users a great experience.
+When publishing a Power BI visual, consider the following recommendations to give users the best possible experience.
 
 * Create a [landing page](landing-page.md) that provides information about your Power BI visual. Include details like how to use the visual and where to purchase the license. A meaningful landing page helps report creators use the visual correctly and easily.
 * Don't include videos that are automatically triggered.
@@ -157,8 +157,8 @@ When publishing a Power BI visual, consider the following recommendations to giv
 * For the user's convenience, add the license key or token related fields at the top of the format pane.
 * Submit a short screen recording video that shows how to use the visual.
 * Submit a detailed description of the visual's functionality. Include information about supported features such as high contrast, report page tooltip, and drill down.
-* Check the quality of your code – we’ll be checking the standard of code including unhandled exceptions.
-* Update your visual using the latest API.
+* Check the quality of your code. Make sure up to standard - including unhandled exceptions.
+* Update your visual using the [latest API](visual-api.md).
 
 ## FAQ
 
