@@ -7,17 +7,17 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 08/12/2020
+ms.date: 05/12/2021
 ---
 
 # Guidelines for Power BI visuals
-Before you [publish](office-store.md) your Power BI visual to Microsoft AppSource for others to discover and use, make sure that you follow the guidelines to create a great experience for your users.
+Before you [publish](office-store.md) your Power BI visual to Microsoft AppSource for others to discover and use, make sure that you follow these guidelines to create a great experience for your users.
 
 ## Power BI visuals with additional purchases
 
-You can submit Power BI visuals that are free to the Marketplace (Microsoft AppSource). You can also submit to Microsoft AppSource Power BI visuals that have an "additional purchase may be required" price tag. "Additional purchase may be required" Power BI visuals, are similar to in-app purchase (IAP) add-ins in the Office Store. 
+You can submit Power BI visuals that are free to the Marketplace (Microsoft AppSource). You can also submit to Microsoft AppSource Power BI visuals that have an "additional purchase may be required" price tag. "Additional purchase may be required" Power BI visuals, are similar to in-app purchase (IAP) add-ins in the Office Store.
 
-Similarly to a free Power BI visual, an IAP Power BI visual can also be certified. Before submitting your IAP Power BI visual for certification, make sure it complies with the [certification requirements](power-bi-custom-visuals-certified.md).
+Like a free Power BI visual, an IAP Power BI visual can also be certified. Before submitting your IAP Power BI visual for certification, make sure it complies with the [certification requirements](power-bi-custom-visuals-certified.md).
 
 ### What is a Power BI visual with IAP features?
 
@@ -25,19 +25,18 @@ An IAP Power BI visual is a *free* visual that offers *free features*. It also h
 
 Developers may use any third-party payment system for these purchases. For more information, see [our store policy](/legal/marketplace/certification-policies#11002-displaying-ads).
 
-
 >[!IMPORTANT]  
-> If you update your Power BI visual from free to "Additional purchase may be required", users must receive the same level of free functionality  as before the update. You may add optional advanced paid features in addition to the existing free features.
+> If you update your Power BI visual from free to "Additional purchase may be required", users must receive the same level of free functionality as before the update. You may add optional advanced paid features in addition to the existing free features.
 
 ### Watermarks
 
-You can use watermarks so that customers continue using the IAP advanced features without paying. 
+You can use watermarks so that customers continue using the IAP advanced features without paying.
 
-Watermarks can be used to showcase the full functionality of the Power BI visual, before a purchase is made. 
+Watermarks can be used to showcase the full functionality of the Power BI visual, before a purchase is made.
 
 * Watermarks may only be used on paid features that are used without a valid license.
 * Watermarks are not allowed in Power BI visuals with a *free* price tag.
-* Watermarks are not allowed in IAP visuals, when the user uses free features. 
+* Watermarks are not allowed in IAP visuals, when the user uses free features.
 
 ### Pop-up window
 
@@ -52,15 +51,17 @@ After the Power BI visual is validated and approved, the Microsoft AppSource lis
 ## Context menu
 Context menu is the right-click menu that is displayed when the user is hovering over a visual.
 All Power BI visuals should enable the context menu to bring a unified experience.
-Please check [this article](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/gh-pages/tutorials/building-bar-chart) to learn how to add a context menu.
+Please check [this article](context-menu.md) to learn how to add a context menu.
 
 >[!div class="mx-imgBorder"]
 >![A screenshot of a Power BI visual context menu.](media/guidelines-powerbi-visuals/context-menu.png)
 
 ## Commercial logo
+
 This section describes the specifications for adding commercial logos in Power BI visuals. Commercial logos are not mandatory. If added they must follow these guidelines.
 
 > [!NOTE]
+>
 > * In this article, 'commercial logo' refers to any commercial company icon as described in the pictures below.
 > * The Microsoft commercial logo is used in this article only as an example. Use your own commercial logo with your Power BI visual.
 
@@ -70,6 +71,7 @@ This section describes the specifications for adding commercial logos in Power B
 ### Commercial logo type
 
 There are three types of commercial logos:
+
 * **Logo** - A logo is comprised of two elements locked together, an icon and a name.
 
     ![A screenshot of the Microsoft logo.](media/guidelines-powerbi-visuals/microsoft-logo.png)
@@ -99,6 +101,7 @@ When using a commercial logo, the color of the logo must be grey (hex color #C8C
     ![A screenshot of the Microsoft logo without an icon, in the color grey.](media/guidelines-powerbi-visuals/grey-microsoft-logotype.png)
 
 > [!TIP]
+>
 > * If your Power BI visual contains a graphic, consider adding a white background with 10 px margins to your logo.
 > * Consider adding dropshadow to your logo (30% opacity black).
 
@@ -124,9 +127,9 @@ Commercial logos are only allowed in edit mode. When clicked, a commercial logo 
 * Clicking the commercial logo redirects to your website.
 
 * Clicking the commercial logo opens a popup window with additional information. The popup window should be divided into two sections:
-    * A marketing area which can include the the commercial logo, a visual and market ratings.
-    * An information area which can include information and links.    
 
+    * A marketing area which can include the the commercial logo, a visual and market ratings.
+    * An information area which can include information and links.
 
 ### Things to avoid
 
@@ -150,7 +153,9 @@ When publishing a Power BI visual, consider the following recommendations in ord
 
 ### Visual landing page
 
-Use the landing page to clarify to users how they can use your Power BI visual and where to purchase the license. Don't include videos that are automatically triggered. Add only material that helps improve the user's experience, such as information or links to license purchasing details and how to use IAP features.
+* Use the [landing page](landing-page.md) to clarify to users how they can use your Power BI visual and where to purchase the license.
+* Don't include videos that are automatically triggered.
+* Add only material that helps improve the user's experience, such as information or links to license purchasing details and how to use IAP features.
 
 ### License key and token
 
@@ -166,3 +171,6 @@ Learn how you can publish your Power BI visual to Microsoft AppSource for others
 
 >[!div class="nextstepaction"]
 >[Publish Power BI visuals](office-store.md)
+
+>[!div class="nextstepaction"]
+>[Get a Power BI visual certified](power-bi-custom-visuals-certified.md)
