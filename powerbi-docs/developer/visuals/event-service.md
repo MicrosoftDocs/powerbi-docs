@@ -105,14 +105,10 @@ If the visual has animations or asynchronous functions for rendering, the `rende
         }
 ```
 
-## Rendering events for visual certification
-
-
-
 ## Next steps
 
-> [!div class="nextstepaction]
->[Troubleshooting your Power BI environment setup](power-bi-custom-visuals-troubleshoot.md)
+> [!div class="nextstepaction"]
+> [Visual API](visual-api.md)
 
 > [!div class="nextstepaction"]
 > [Get a Power BI visual certified](power-bi-custom-visuals-certified.md)
