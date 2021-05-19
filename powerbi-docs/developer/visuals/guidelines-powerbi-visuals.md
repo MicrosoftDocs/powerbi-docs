@@ -157,7 +157,7 @@ When publishing a Power BI visual, consider the following recommendations to giv
 * For the user's convenience, add the license key or token related fields at the top of the format pane.
 * Submit a short screen recording video that shows how to use the visual.
 * Submit a detailed description of the visual's functionality. Include information about supported features such as high contrast, report page tooltip, and drill down.
-* Check the quality of your code. Make sure up to standard - including unhandled exceptions.
+* Check the quality of your code. Make sure it's up to standard - including unhandled exceptions.
 * Update your visual using the [latest API](visual-api.md).
 
 ## FAQ
