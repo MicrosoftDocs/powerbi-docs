@@ -10,7 +10,8 @@ ms.topic: conceptual
 ms.date: 05/12/2021
 ---
 
-# Guidelines for Power BI visuals
+# Guidelines for publishing Power BI visuals
+
 Before you [publish](office-store.md) your Power BI visual to Microsoft AppSource for others to discover and use, make sure that you follow these guidelines to create a great experience for your users.
 
 ## Power BI visuals with additional purchases
