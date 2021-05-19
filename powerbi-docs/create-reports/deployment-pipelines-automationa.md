@@ -27,7 +27,7 @@ You can leverage the [deployment pipelines REST APIs](add-link), to integrate Po
 
 ## Deployment pipelines APIs
 
-Using the deployment pipelines REST APIs, you cab get information about the pipeline, and deploy Power BI content from one stage to another.
+Using the deployment pipelines REST APIs, you can get information about the pipeline, and deploy Power BI content from one stage to another.
 
 * **Get pipeline information** - Retrieve information about your pipelines and their content. Getting the pipeline information will enable you to dynamically build the deployment API calls. You can also check the status of a deployment, or the deployment history.
 
@@ -45,37 +45,143 @@ Here's a list of the different deployment types the APIs support:
 
 * **Update App** - As part of the deployment API call, you can also update the content of the app that’s related to that stage. Using this capability, new or updated Power BI items will automatically be available to the end users, once a deployment has been completed.
 
-
 ## Integrate your pipeline with Azure DevOps
 
-You can use PowerShell to connect your pipeline to DevOps…
-
-[Additional text from Mahir]
+You can use PowerShell to connect your Power BI deployment pipeline to DevOps. The script signs in to Power BI using a *user* or a *service principal*, and allows you to automate Power BI deployment processes.
 
 ### Prerequisites
 
 Before you begin, make sure you have the following:
 
+* One of the following Premium licenses:
+
+    * You're a Power BI [Pro user](../admin/service-admin-purchasing-power-bi-pro.md), and you belong to an organization that has Premium capacity.
+
+    * [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml).
+
 * A working pipeline. To create a new pipeline, [Get started using deployment pipelines](deployment-pipelines-get-started.md).
 
-* An [Azure AD application](/azure/active-directory/develop/active-directory-how-applications-are-added)
+* An [Azure AD application](/azure/active-directory/develop/active-directory-how-applications-are-added). To create a new Azure AD app, you can follow the instructions in [Register an Azure AD app](../developer/embedded/register-app.md?tabs=manual%2CAzure#register-an-azure-ad-app&&preserve-tab=true) (manual registration tab).
 
-[Check prerequisites with Mahir]
+    >[!NOTE]
+    >* For a *service principal* you'll need a *Web* Azure AD app (created by default)
+    >* For a *user* you'll need a *native* Azure AD app, also known as *Public client/native (mobile & desktop)
+
+* The *user* or *service principal* you're using for automation, needs to:
+
+    * Have access to the deployment pipeline you want to automate
+
+    * The Azure AD app used for automation.
+
+    * Have [workspace permissions](deployment-pipelines-process.md#permissions) that are relevant to the operations you want to do.
 
 ### Connect your pipeline to DevOps with PowerShell
 
-...how can I leverage (high level) the PS sample into ADO
+This section describes an example PowerShell script that performs the following operations:
 
+1. Connects a Power BI deployment pipeline to DevOps.
 
-...include specific PS samples or reference to them
+2. Deploys all the Power BI items in the pipeline's development stage.
+
+3. Checks whether the deployment was successful.
+
+#### PowerShell sample breakdown
+
+To write a PowerShell script that connects your Power BI deployment pipeline to DevOps and performs a deployment, you'll need the following components:
+
+1. **Sign in** - Your first step is to decide whether you want to sign in to Power BI using a [service principal](#using-a-service-principal) (which is the recommended method) or a *user*. The table below describes which parameters you need to specify for each method.
+
+    |Parameter   |Service principal   |Master user  |
+    |-------------------|---|---|
+    |[Client ID](../developer/embedded/embed-sample-for-customers.md#client-id) |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |
+    |[Workspace ID](../developer/embedded/embed-sample-for-customers.md#workspace-id)     |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |
+    |Pipeline ID     |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |
+    |[Report ID](../developer/embedded/embed-sample-for-customers.md#report-id)           |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |
+    |[Client secret](../developer/embedded/embed-sample-for-customers.md#client-secret) |![Applies to.](../media/yes.png) |![Does not apply to.](../media/no.png)  |
+    |[Tenant ID](../developer/embedded/embed-sample-for-customers.md#tenant-id)                 |![Applies to.](../media/yes.png) |![Does not apply to.](../media/no.png) |
+    |[Power BI username](../developer/embedded/embed-sample-for-customers.md#power-bi-username-and-password)   |![Does not apply to.](../media/no.png) |![Applies to.](../media/yes.png) |
+    |[Power BI password](../developer/embedded/embed-sample-for-customers.md#power-bi-username-and-password)   |![Does not apply to.](../media/no.png) |![Applies to.](../media/yes.png) |
+
+    >[!TIP]
+    >When using a *service principal*, you can use a [certificate](../developer/embedded/embed-service-principal-certificate) instead of a *client secret*. Using certificates is an Azure AD best practice.
+
+    In this PowerShell example, a *service principal* is used to sign in to Power BI.
+
+    ```powershell
+    # Some code describing signing in to Power BI using a service principal.
+    ```
+
+2. **Build your request** - In this part of the script you specify which Power BI items (such as reports and dashboards) you're deploying. You can also deploy all the Power BI items in the source stage to the target stage:
+
+    ```powershell
+    # The sample script deploys all the Power BI items from the development stage to the test stage.
+    ```
+
+3. **Deploy** - Here you perform the deployment.
+
+    ```powershell
+    # Some code describing the deployment.
+    ```
+
+4. (Optional) **Successful deployment notification** - As the deployment API is asynchronous, you can program the script to notify you when the deployment is successful.
+
+    ```powershell
+    # Sme code showing a wait for successful deployment.
+    ```
+
+#### Download the PowerShell sample
+
+To download the PowerShell sample, follow these steps:
+
+1. Navigate to the [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples) GitHub folder
+
+2. Select the green **Code** button.
+
+3. Select **Download ZIP**.
+
+4. Unpack the downloaded ZIP and open the **PowerShell Scripts** folder.
+
+5. The sample PowerShell script is titled **xxxYYYzzz**.
+
+#### View or copy the PowerShell sample
+
+To view or copy the text in the PowerShell example, use the [xxxYYYzzz] link.
 
 ### Using a service principal
 
-...how to work with SP, what’s not supported
+Service principal is an authentication method that can be used to let an Azure AD application access Power BI service content and APIs.
 
-## Limitations
+When you create an Azure Active Directory (Azure AD) app, a [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is created. The service principal object, also known simply as *service principal*, allows Azure AD to authenticate your app. Once authenticated, the app can access Azure AD tenant resources.
 
-The maximum number of Power BI items that can be deployed in a single deployment is 300.
+To authenticate, the service principal uses the Azure AD app's *Application ID*, and one of the following:
+
+* Certificate
+
+* Application secret
+
+#### Service principal requirements
+
+When using a *service principal*, you'll need to take into account the following requirements:
+
+* Before using a *service principal*, you have to enable the [Power BI service admin settings](../developer/embedded/embed-service-principal.md#step-3---enable-the-power-bi-service-admin-settings).
+
+* You'll need to [add the *service principal* to the workspace you want to deploy from](../developer/embedded/embed-service-principal.md#step-4---add-the-service-principal-to-your-workspace).
+
+* It's recommended to add the *service principal* to a *security group*.
+
+## Limitations and considerations
+
+* The maximum number of Power BI items that can be deployed in a single deployment is 300.
+
+* A *service principal* or a *user* cannot configure *OAuth* credentials.
+
+* Deployment using APIs is subject to the same [limitations](deployment-pipelines-process.md#limitations-1) as the Power BI deployment pipelines user interface.
+
+* After a successful deployment, the signed in *service principal* or *user*, will become the owner of the following Power BI items, if they are newly deployed or were previously owned by the *service principal* or *user*.
+
+    * Any deployed paginated reports.
+
+    * Any deployed datasets.
 
 ## Next steps
 
