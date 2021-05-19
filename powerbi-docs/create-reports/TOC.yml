@@ -338,7 +338,7 @@
         href: ../visuals/power-bi-visualization-scatter.md
       - name: "High-density line sampling"
         href: desktop-high-density-sampling.md
-      - name: "Use high-density scatter charts"
+      - name: "High-density sampling in scatter charts"
         href: desktop-high-density-scatter-charts.md
       - name: "Create small multiples (preview)"
         href: ../visuals/power-bi-visualization-small-multiples.md
