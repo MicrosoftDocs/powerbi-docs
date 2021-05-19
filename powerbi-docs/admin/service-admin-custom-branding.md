@@ -31,7 +31,7 @@ The image below indicates where each of these elements appears in the Power BI s
 1. Cover image
 1. Theme color
 
-## How to apply branding to the Power BI Service
+## Add custom branding
 
 Follow these steps to customize the look of Power BI for your whole organization.
 
@@ -51,7 +51,7 @@ Follow these steps to customize the look of Power BI for your whole organization
 
     :::image type="content" source="media/service-admin-custom-branding/custom-brand-publish.png" alt-text="Screen capture showing all custom brand elements ready to publish.":::
 
-## How to remove custom branding
+## Remove custom branding
 
 Follow these steps to return the look of Power BI to the default settings.
 
