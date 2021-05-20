@@ -22,7 +22,7 @@ If you use Power BI Desktop, you can also [create a report on a SharePoint List 
 
 ## Visualize in Power BI 
 
-In SharePoint, select **Integrate** > **Visualize in Power BI**.
+In SharePoint, select **Integrate** > **Power BI** > **Visualize the list**.
 
 :::image type="content" source="media/service-quick-create-sharepoint-list/sharepoint-quick-visualize-list.png" alt-text="Select Power BI, Visualize in Power BI.":::
 
