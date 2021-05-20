@@ -24,7 +24,7 @@ If you use Power BI Desktop, you can also [create a report on a SharePoint List 
 
 In SharePoint, select **Integrate** > **Visualize in Power BI**.
 
-:::image type="content" source="media/service-quick-create-sharepoint-list/sharepoint-quick-view-report.png" alt-text="Select Power BI, Visualize in Power BI.":::
+:::image type="content" source="media/service-quick-create-sharepoint-list/sharepoint-quick-visualize-list.png" alt-text="Select Power BI, Visualize in Power BI.":::
 
 A new tab opens with an automatically generated report. Currently you can see a maximum of three measures, shown as rows in the report, and four categories, shown as columns in the report. 
 
