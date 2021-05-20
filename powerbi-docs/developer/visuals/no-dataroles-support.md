@@ -8,12 +8,12 @@ manager: mgolan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 02/18/2021
+ms.date: 05/18/2021
 ---
 
 # Visuals that don't require data binding
 
-When you render a visual, values are defined interactively by adding data fields to the visual.
+When you create a visual in a report, the values are defined interactively by adding data fields to the **Values** well on the visualization pane.
 
 :::image type="content" source="media/no-dataroles-support/binding-data.png" alt-text="Adding values to visual.":::
 
