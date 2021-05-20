@@ -114,7 +114,9 @@ To set up firewalls for SQL databases, see [Create and manage IP firewall rules]
 
 ## Power BI feature availability
 
-To accommodate the requirements of government cloud customers, there are some differences between government plans and commercial plans. Our goal is to make all features available in government clouds within 30 days of general availability. In some cases, underlying dependencies prevent us from making a feature available. The following table lists features that aren't yet available in a particular government environment or that are available with limited functionality. The list uses the following keys:
+To accommodate the requirements of government cloud customers, government plans differ from commercial plans in some respects. Our goal is to make all features available in government clouds within 30 days of general availability. In a few cases, underlying dependencies prevent us from making a feature available. 
+
+The following table lists features that aren't yet available in a particular government environment or that are available with limited functionality. The table uses the following keys:
 
 | Key | Description |
 |-----|------|
