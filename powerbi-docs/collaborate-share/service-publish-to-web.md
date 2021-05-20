@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 03/26/2021
+ms.date: 05/18/2021
 LocalizationGroup: Share your work
 ---
 
@@ -27,7 +27,7 @@ With the Power BI **Publish to web** option, you can easily embed interactive Po
 
 The following steps describe how to use **Publish to web**.
 
-1. Open a report in a workspace that you can edit, and select **More options (...)**  > **Embed** > **Publish to web (public)**.
+1. Open a report in a workspace that you can edit, and select **File**  > **Embed report** > **Publish to web (public)**.
 
    ![Publish to web on More options](media/service-publish-to-web/power-bi-more-options-publish-web.png)
    
@@ -94,11 +94,11 @@ To achieve a more perfect fit, you can try adding 56 pixels to the height of the
 
 Once you create a **Publish to web** embed code, you can manage your codes from the **Settings** menu in Power BI. Managing embed codes includes the ability to remove the destination visual or report for a code (rendering the embed code unusable), or getting the embed code.
 
-1. To manage your **Publish to web** embed codes, open the **Settings** gear and select **Manage embed codes**.
+1. To manage your **Publish to web** embed codes, open the workspace the report resides in, select the **Settings** gear, and select **Manage embed codes**.
 
    ![Manage embed codes](media/service-publish-to-web/publish_to_web8.png)
 
-2. Your embed codes appear.
+2. The embed codes for the reports in that workspace appear.
 
    ![PtW9](media/service-publish-to-web/publish_to_web9.png)
 
@@ -146,7 +146,7 @@ The **Manage embed codes** page includes a status column. By default, embed code
 
 ## Report a concern with Publish to web content
 
-To report a concern related to **Publish to web** content embedded in a website or blog, select the **Flag** icon in the bottom bar of the **Publish to web** report.
+To report a concern related to **Publish to web** content embedded in a website or blog, select the **Share** icon in the bottom bar of the **Publish to web** report, then select the **Flag** icon in the **Share** dialog box.
 
 ![PtW12](media/service-publish-to-web/publish_to_web12_ga.png)
 
