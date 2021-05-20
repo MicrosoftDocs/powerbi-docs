@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/21/2021
+ms.date: 05/19/2021
 ms.custom: ''
 LocalizationGroup: Troubleshooting
 ---
@@ -18,7 +18,7 @@ Before you contact Microsoft Support for help with a problem you're having with 
 
 Power BI admins can use the **Help + support** experience in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) to get self-help solutions and to contact Support. The diagnostic files that you collect using the steps below can be attached to your support request to help with troubleshooting. For more support options, see [Power BI support options](service-support-options.md).
 
-To collect a browser trace and other session information, follow the steps below for the browser you use.
+To collect a browser trace and other session information, follow the steps below for the browser you use. If you need to collect diagnostic information from Power BI Desktop, follow the instructions in [How to collect a trace in Power BI Desktop](../connect-data/desktop-troubleshooting-sign-in.md).
 
 ## Collect a browser trace
 
