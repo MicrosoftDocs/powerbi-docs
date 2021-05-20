@@ -57,7 +57,7 @@ Before you start using the deployment pipelines APIs, make sure you have the fol
 
 * A working pipeline. To create a new pipeline, [Get started using deployment pipelines](deployment-pipelines-get-started.md).
 
-* An [Azure AD application](/azure/active-directory/develop/active-directory-how-applications-are-added). To create a new Azure AD app, you can follow the instructions in the manual registration tab of the [Register an Azure AD app](../developer/embedded/register-app.md?tabs=manual%2CAzure#register-an-azure-ad-app&&preserve-tab=true) article.
+* An [Azure AD application](/azure/active-directory/develop/active-directory-how-applications-are-added). To create a new Azure AD app, you can follow the instructions in the manual registration tab of the [Register an Azure AD app](../developer/embedded/register-app.md?tabs=manual%2CAzure#register-an-azure-ad-app) article.
 
     >[!NOTE]
     >* For a *service principal*, you'll need a *Web* Azure AD app (created by default).
@@ -90,7 +90,7 @@ The table below describes which parameters you need to specify for each method.
 |[Power BI password](../developer/embedded/embed-sample-for-customers.md#power-bi-username-and-password)   |![Does not apply to.](../media/no.png) |![Applies to.](../media/yes.png) |
 
 >[!TIP]
->When using a *service principal*, you can use a [certificate](../developer/embedded/embed-service-principal-certificate) instead of a *client secret*. Using certificates is an Azure AD best practice.
+>When using a *service principal*, you can use a [certificate](../developer/embedded/embed-service-principal-certificate.md) instead of a *client secret*. Using certificates is an Azure AD best practice.
 
 ## Using a service principal
 
