@@ -26,9 +26,9 @@ In SharePoint, select **Integrate** > **Visualize in Power BI**.
 
 :::image type="content" source="media/service-quick-create-sharepoint-list/sharepoint-quick-visualize-list.png" alt-text="Select Power BI, Visualize in Power BI.":::
 
-A new tab opens with an automatically generated report. Currently you can see a maximum of three measures, shown as rows in the report, and four categories, shown as columns in the report. 
+A new tab opens with an automatically generated report with two measures, shown as rows in the report, and four categories, shown as columns in the report. Currently you can add a maximum of three measures and four categories. 
 
-Changing the data you see in the report is easy, too. Use the **Summarize** pane to add or remove fields from the report. Select and unselect fields to update what you want to measure and analyze. Power BI automatically adds or removes charts to show the new combinations.  
+Changing the data you see in the report is easy. In the **Summarize** pane, add or remove fields from the report. Select and unselect fields to update what you want to measure and analyze. Power BI automatically adds or removes charts to show the new combinations.  
 
 :::image type="content" source="media/service-quick-create-sharepoint-list/sharepoint-quick-add-charts.png" alt-text="Add more charts and make other changes.":::
 
@@ -56,7 +56,7 @@ The reports you share in this way aren't visible in the Power BI service. Instea
 
 :::image type="content" source="media/service-quick-create-sharepoint-list/sharepoint-quick-view-report.png" alt-text="Report on the Integrate Power BI menu.":::
 
-If you make changes to the report, use **Publish to the list** to save your changes. Use the **Delete** button to remove the report from the list for everyone.
+If you make changes to the report, use **Publish to the list** again to save your changes. Use the **Delete** button to remove the report from the list for everyone.
 
 ## Refresh visuals
 
