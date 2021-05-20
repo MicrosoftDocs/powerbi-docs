@@ -155,7 +155,7 @@ When publishing a Power BI visual, consider the following recommendations to giv
 * Don't include videos that are automatically triggered.
 * Add only material that improves the user's experience, such as information or links to license purchasing details and how to use IAP features.
 * For the user's convenience, add the license key or token related fields at the top of the format pane.
-* Submit a short screen recording video that shows how to use the visual.
+* Submit a short screen-recording video that shows how to use the visual.
 * Submit a detailed description of the visual's functionality. Include information about supported features such as [high contrast](high-contrast-support.md), [report page tooltip](add-tooltips.md), and [drill down](drill-down-support.md).
 * Check the quality of your code. Make sure it's up to standard - including unhandled exceptions.
 * Update your visual using the [latest API](https://www.npmjs.com/package/powerbi-visuals-api).
