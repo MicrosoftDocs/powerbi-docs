@@ -32,6 +32,10 @@ There are several roles that work together to administer Power BI for your organ
 | License admin | Microsoft 365 | Assign or remove licenses for users |
 | User admin | Microsoft 365 | Create and manage users and groups |
 | | | Reset user passwords |
+| Power Platform admin | Power Platform | Full access to Power BI management tasks|
+| | | Enable and disable Power BI features |
+| | | Report on usage and performance |
+| | | Review and manage auditing |
 | Power BI admin | Power BI service | Full access to Power BI management tasks|
 | | | Enable and disable Power BI features |
 | | | Report on usage and performance |
