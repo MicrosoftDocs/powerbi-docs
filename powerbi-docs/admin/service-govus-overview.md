@@ -41,7 +41,7 @@ Microsoft 365 provides different environments for government agencies to meet va
 >
 ### Buy a Power BI Pro subscription for government customers
 
-After you've deployed Microsoft 365, you can add a Power BI Pro subscription. Follow the guidance in [Enroll your US government organization](service-govus-signup.md) to buy the Power BI Pro government service. Buy enough licenses for all the users who need to use Power BI, and then assign the licenses to individual user accounts.
+After you've deployed Microsoft 365, you can add a Power BI Pro subscription. To buy the Power BI Pro government service, follow the guidance in [Enroll your US government organization](service-govus-signup.md). Buy enough licenses for all the users who need to use Power BI, and then assign the licenses to individual user accounts.
 
 > [!IMPORTANT]
 > Power BI US Government isn't available as a *Free* license. To access the government community cloud, each user must be assigned a *Pro* or *Premium Per User (PPU)* license. If a user account has been assigned a Free license, the user is authorized to access only the commercial cloud and will encounter authentication and access issues. 
@@ -124,7 +124,7 @@ The following table lists features that aren't yet available in a particular gov
 |![Image of a "Not available" button, an "x" sign indicating that the listed item is not available.](../media/no.png)| The feature isn't available in the environment, and we don't have an estimated time frame for delivery.|
 | | |
 
-We include the quarter for estimated availability if release is planned for an environment.
+If a release is planned for an environment, we include the quarter for estimated availability.
 
 |Feature |GCC |GCC High |DoD|
 |------|------|------|------|
