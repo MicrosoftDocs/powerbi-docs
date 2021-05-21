@@ -13,23 +13,23 @@ ms.date: 05/20/2021
 
 The Power BI [deployment pipelines](deployment-pipelines-overview.md) tool enables BI teams to build an efficient and reusable release process for their Power BI content.
 
-To achieve continuous integration and continuous delivery (CI/CD) of content, many organizations use a variety of automation tools, including [DevOps](/azure/devops/user-guide/what-is-azure-devops).
+To achieve continuous integration and continuous delivery (CI/CD) of content, many organizations use a variety of automation tools, including [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops).
 
 You can leverage the [deployment pipelines Power BI REST APIs](/rest/api/power-bi/pipelines), to integrate Power BI into your organization's automation process. Here are a few examples of what can be done using the APIs:
+
+* Integrate Power BI into familiar DevOps tools such as [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops) or [GitHub Actions](https://docs.github.com/en/actions).
+
+* Schedule pipeline deployments to happen automatically at a given time.
 
 * Deploy multiple pipelines at same time.
 
 * Cascade depending pipeline deployments - If you have content that’s connected across pipelines, you can make sure some pipelines are deployed before others.
 
-* Schedule pipeline deployments to happen automatically at a given time.
-
-* Integrate Power BI into familiar DevOps tools such as [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops) or [GitHub Actions](https://docs.github.com/en/actions).
-
 ## Deployment pipelines API functions
 
 Using the [deployment pipelines Power BI REST APIs](/rest/api/power-bi/pipelines), you can get information about the pipeline, and deploy Power BI content from one stage to another.
 
-* **Get pipeline information** - Retrieve information about your pipelines and their content. Getting the pipeline information will enable you to dynamically build the deployment API calls. You can also check the status of a deployment, or the deployment history.
+* **Get pipeline information** - Retrieve information about your pipelines and their content. Getting the pipeline information will enable you to dynamically build the deployment API calls. You can also check the [status of a deployment](/rest/api/power-bi/pipelines/getpipelineoperation), or the [deployment history](/rest/api/power-bi/pipelines/getpipelineoperations).
 
 * **Deploy** - The REST calls enables developers to use any type of deployment available in the Power BI service.
 
@@ -45,7 +45,7 @@ Here's a list of the different deployment types the APIs support:
 
 * **Update App** - As part of the deployment API call, you can update the content of the app that’s related to that stage. Using this capability, new or updated Power BI items will automatically be available to your end users, once a deployment has been completed. For this operation use either the [Deploy all](/rest/api/power-bi/pipelines/deployall) or the [Selective deploy](/rest/api/power-bi/pipelines/selectivedeploy) APIs, with [PipelineUpdateAppSettings](/rest/api/power-bi/pipelines/selectivedeploy#pipelineupdateappsettings).
 
-## Prerequisites
+## Before you begin
 
 Before you start using the deployment pipelines APIs, make sure you have the following:
 
@@ -94,15 +94,7 @@ The table below describes which parameters you need to specify for each method.
 
 ## Using a service principal
 
-Service principal is an authentication method that can be used to let an Azure AD application access Power BI service content and APIs.
-
-When you create an Azure Active Directory (Azure AD) app, a [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is created. The service principal object, also known simply as *service principal*, allows Azure AD to authenticate your app. Once authenticated, the app can access Azure AD tenant resources.
-
-To authenticate, the service principal uses the Azure AD app's *Application ID*, and one of the following:
-
-* Certificate
-
-* Application secret
+[Service principal](..//developer/embedded/embed-service-principal.md) is an authentication method that can be used to let an Azure AD application access Power BI service content and APIs.
 
 ### Service principal requirements
 
@@ -116,7 +108,7 @@ When using a *service principal*, you'll need to take into account the following
 
 ## Integrate your pipeline with Azure DevOps
 
-You can use PowerShell to connect your Power BI deployment pipeline to DevOps. The script signs in to Power BI using a *service principal* or a *user*, and allows you to automate Power BI deployment processes.
+You can use PowerShell to integrate a Power BI deployment pipeline into Azure DevOps. The script signs into Power BI using a *service principal* or a *user*, and allows you to automate Power BI deployment processes from within your release pipeline in Azure DevOps.
 
 This section describes an example PowerShell script that performs the following operations:
 
@@ -126,7 +118,7 @@ This section describes an example PowerShell script that performs the following 
 
 3. Checks whether the deployment was successful.
 
-To write a PowerShell script that connects your Power BI deployment pipeline to DevOps and performs a deployment, you'll need the following components:
+You can use any of these parts to add as tasks in your Azure Pipeline stages. To run a PowerShell script that performs a deployment, you'll need the following components:
 
 1. **Sign in** - Before you can deploy your content, you need to sign in to Power BI using a *service principal* or a *user*. In this PowerShell example, a *service principal* is used to sign in to Power BI.
 
@@ -197,3 +189,6 @@ To view or copy the text in the PowerShell example, use the [xxxYYYzzz](link) li
 
 >[!div class="nextstepaction"]
 >[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.md)
+
+>[!div class="nextstepaction"]
+>[Deployment pipelines best practices](deployment-pipelines-best-practices.md)
