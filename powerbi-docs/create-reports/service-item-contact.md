@@ -35,7 +35,7 @@ To see the report or dashboard contact information, select the item name in the 
 
  ![Service report contact information](media/service-item-contact/service-report-contact.png)
 
-When you select the list of contacts, Power BI creates an email so you can ask questions or get help. 
+When you select the contact, Power BI creates an email so you can ask questions or get help. 
 
  ![Service contact sending email.](media/service-item-contact/service-contact-email.png)
 
@@ -53,7 +53,7 @@ When you select the list of contacts, Power BI creates an email so you can ask q
 
 * You can set any user or group in the contact list, but they're not automatically granted permission to the item. Use sharing or give users who need it access to the workspace through a role. 
 * The item level contact list doesn’t get pushed into apps when they are published. By default, the contact name for dashboards and reports in an app is the workspace name, which is not a mailto link. The new app navigation experience provides a support URL you configure to help manage feedback from app users.
-* Why do we recommend listing only one contact? If a dashboard or report has multiple contacts, when someone opens the report header and selects the link to email the contacts, some email clients will separate the names with commas instead of semicolons. The resulting email address won't work.
+* Why do we recommend listing only one contact? If a dashboard or report has multiple contacts, when someone opens the report header and selects the link to email the contacts, some email clients separate the names with commas instead of semicolons. The resulting email address won't work.
 
 ## Next steps
 
