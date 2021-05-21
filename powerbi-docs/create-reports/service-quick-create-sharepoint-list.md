@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/20/2021
+ms.date: 05/21/2021
 LocalizationGroup: Reports
 ---
 # Create a report quickly from a SharePoint list in the Power BI service
@@ -26,7 +26,7 @@ In SharePoint, select **Integrate** > **Power BI** > **Visualize the list**.
 
 :::image type="content" source="media/service-quick-create-sharepoint-list/sharepoint-quick-visualize-list.png" alt-text="Select Power BI, Visualize in Power BI.":::
 
-A new tab opens with an automatically generated report with two measures, shown as rows in the report, and four categories, shown as columns in the report. Currently you can add a maximum of three measures and four categories. 
+A new tab opens with an automatically generated report with two measures, shown as rows in the report, and three categories, shown as columns in the report. Currently you can add a maximum of three measures and four categories. 
 
 Changing the data you see in the report is easy. In the **Summarize** pane, add or remove fields from the report. Select and unselect fields to update what you want to measure and analyze. Power BI automatically adds or removes charts to show the new combinations.  
 
