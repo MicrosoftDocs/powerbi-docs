@@ -12,7 +12,7 @@ LocalizationGroup: Common tasks
 ---
 # Set contact information for reports and dashboards in the Power BI service
 
-This article shows how to set contact information for a dashboard or report in the Power BI service. You can set contact information for items in a classic or new workspace, but not for items in your My Workspace. The information is in the card you see when you select the header of a report or dashboard.
+This article shows how to set contact information for a dashboard or report in the Power BI service. You can set contact information for items in a classic or new workspace, but not for items in your My Workspace. The contact information is in the card you see when you select the name of a report or dashboard in the black header bar.
 
 You can add multiple users or groups to the contact for an item. They can be:
 * A person
@@ -21,8 +21,6 @@ You can add multiple users or groups to the contact for an item. They can be:
 * A distribution list
 
 However, we recommend adding just one person or group. See the [Limitations and considerations](#limitations-and-considerations) section in the article for details. 
-
-By default the person who creates a report or dashboard is the contact for it. If you set a value, it overrides that default. You can of course remove all the people or groups from the contact list. When you do this, for classic workspaces, the Microsoft 365 group for the workspace will be shown. For new workspaces, the [workspace contact list](../collaborate-share/service-create-the-new-workspaces.md#create-a-contact-list) is shown. If the workspace contact list isn't set, then workspace admins are shown.
 
 The contact list information is also used in other places. For example, it is shown in some error scenarios in the error dialog box. Automated email messages related to the item, like access requests, are sent to the contact list. 
 
@@ -40,6 +38,9 @@ When you select the contact, Power BI creates an email so you can ask questions 
  ![Service contact sending email.](media/service-item-contact/service-contact-email.png)
 
 ## Set contact information for a report or dashboard
+
+By default the person who creates a report or dashboard is the contact for it. If you set a value, it overrides that default. You can of course remove all the people or groups from the contact list. When you do this, for classic workspaces, the Microsoft 365 group for the workspace will be shown. For new workspaces, the [workspace contact list](../collaborate-share/service-create-the-new-workspaces.md#create-a-contact-list) is shown. If the workspace contact list isn't set, then workspace admins are shown.
+
 1. In a workspace, select the **All** tab.
 2. Locate the desired item, select **More options (...)** > **Settings**.
 
