@@ -7,7 +7,7 @@ ms.reviewer: dodruker; jonp
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/02/2021
+ms.date: 05/21/2021
 ms.custom: gcc
 LocalizationGroup: Get started
 ---
@@ -83,7 +83,7 @@ Authentication, identity, and administration for Power BI depend on connectivity
 |  Purpose | Destination |
 | ---- | ----- |
 | Back-end APIs | **GCC**: api.powerbigov.us<br>**GCC High**: api.high.powerbigov.us<br>**DoD**: api.mil.powerbigov.us |
-| Back-end APIs | **GCC**: *analysis.usgovcloudapi.net<br>**GCC High**: *.high.analysis.usgovcloudapi.net<br>**DoD**: *.mil.analysis.usgovcloudapi.net |
+| Back-end APIs | **GCC**: *.analysis.usgovcloudapi.net<br>**GCC High**: *.high.analysis.usgovcloudapi.net<br>**DoD**: *.mil.analysis.usgovcloudapi.net |
 | Back-end APIs | **All**: *.pbidedicated.usgovcloudapi.net |
 | Content Delivery Network (CDN) | **GCC**: gov.content.powerapps.us<br>**GCC High**: high.content.powerapps.us<br>**DoD**: mil.content.powerapps.us |
 | Microsoft 365 integration | **GCC**: [Worldwide endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges)<br>**GCC High**: [US Government GCC High endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints)<br>**DoD**: [US Government DOD endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints) |
@@ -124,7 +124,7 @@ The following table lists features that aren't yet available in a particular gov
 |![Image of a "Not available" button, an "x" sign indicating that the listed item is not available.](../media/no.png)| The feature isn't available in the environment, and we don't have an estimated time frame for delivery.|
 | | |
 
-If a release is planned for an environment, we include the quarter for estimated availability.
+If a release is planned for an environment, we include the quarter of estimated availability.
 
 |Feature |GCC |GCC High |DoD|
 |------|------|------|------|
