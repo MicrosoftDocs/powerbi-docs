@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/19/2021
+ms.date: 05/20/2021
 LocalizationGroup: Reports
 ---
 # Create a report quickly from a SharePoint list in the Power BI service
 
-There's a new way to create reports quickly in the Power BI service from data in SharePoint lists. Power BI automatically generates the visuals for you. SharePoint list and Microsoft List users can explore their list data with just a few clicks. If you’re part of the [Microsoft 365 Targeted release](/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide#targeted-release) experience, you can try it out now. It will be rolling it out in the Standard release in the future.  
+There's a new way to create reports quickly in the Power BI service from data in SharePoint lists. Power BI automatically generates the visuals for you. SharePoint list and Microsoft List users can explore their list data with just a few clicks. If you’re part of the [Microsoft 365 Targeted release](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release) experience, you can try it out now. It will be rolling it out in the Standard release in the future.  
 
 :::image type="content" source="media/service-quick-create-sharepoint-list/sharepoint-quick-report.png" alt-text="Create a quick report from a SharePoint list.":::
 
@@ -73,6 +73,13 @@ Anyone can use the **Visualize the list** feature to explore their list data, bu
 - The first time you visualize a list, creating the dataset and report can take some time. We’re working to improve the end-to-end performance of this experience. 
 - Currently, complex column types in SharePoint will show up as [Record]s or [List]s within the report. We’re working on updating the experience so these column values match what you see in the list.  
 - Data refresh is limited to once every 3 hours. 
+
+## Troubleshooting
+
+If you don't see **Power BI** on the **Integrate** menu in a SharePoint or Microsoft list, it may be for one of these reasons:
+
+- You may not be part of the [Microsoft 365 Targeted release](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release) experience. If not, it'll be coming to the Standard release in the future.
+- Your Power BI admin may have disabled it for specific groups or your entire organization. See the [Integration with SharePoint and Microsoft Lists](../admin/service-admin-portal.md#integration-with-sharepoint-and-microsoft-lists) section of the "Power BI admin portal" article for details.
 
 ## Next steps
 
