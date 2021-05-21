@@ -22,20 +22,22 @@ You can add multiple users or groups to the contact for an item. They can be:
 
 However, we recommend adding just one person or group. See the [Limitations and considerations](#limitations-and-considerations) section in the article for details. 
 
-By default the workspace is the contact for a report or dashboard is the contact for it. If you set a value, it overrides the default. You can of course remove all the people or groups from the contact list. When you do this, for classic workspaces, the Microsoft 365 group for the workspace will be shown. For new workspace experience workspaces, the [workspace contact list](../collaborate-share/service-create-the-new-workspaces.md#create-a-contact-list) is used. If the workspace contact list is not set, then workspace admins are shown.
+By default the person who creates a report or dashboard is the contact for it. If you set a value, it overrides that default. You can of course remove all the people or groups from the contact list. When you do this, for classic workspaces, the Microsoft 365 group for the workspace will be shown. For new workspaces, the [workspace contact list](../collaborate-share/service-create-the-new-workspaces.md#create-a-contact-list) is shown. If the workspace contact list isn't set, then workspace admins are shown.
 
-The contact information is shown to people viewing the item. 
-
- ![Service report contact information](media/service-item-contact/service-report-contact.png)
-
-When you select the list of contacts, an email is created so you can ask questions or get help. 
-
- ![Service contact sending email.](media/service-item-contact/service-contact-email.png)
- 
 The contact list information is also used in other places. For example, it is shown in some error scenarios in the error dialog box. Automated email messages related to the item, like access requests, are sent to the contact list. 
 
 > [!NOTE]
-> When publishing an app, the contact information set on individual items is set to the person who published or updated the app. You can set the app support URL so app users get the help they need.
+> When you [publish an app](../collaborate-share/service-create-distribute-apps.md) in Power BI, the contact information for individual items is set to the person who published or updated the app. You can set the app support URL so app users get the help they need.
+
+## Send email to the contact for a report or dashboard
+
+To see the report or dashboard contact information, select the item name in the black header bar at the top. 
+
+ ![Service report contact information](media/service-item-contact/service-report-contact.png)
+
+When you select the list of contacts, Power BI creates an email so you can ask questions or get help. 
+
+ ![Service contact sending email.](media/service-item-contact/service-contact-email.png)
 
 ## Set contact information for a report or dashboard
 1. In a workspace, select the **All** tab.
@@ -49,10 +51,9 @@ The contact list information is also used in other places. For example, it is sh
 
 ## Limitations and considerations
 
-* The contact is set automatically for new items created in the Power BI service. Existing items show the workspace by default. 
 * You can set any user or group in the contact list, but they're not automatically granted permission to the item. Use sharing or give users who need it access to the workspace through a role. 
 * The item level contact list doesn’t get pushed into apps when they are published. By default, the contact name for dashboards and reports in an app is the workspace name, which is not a mailto link. The new app navigation experience provides a support URL you configure to help manage feedback from app users.
-* Why only list one contact? If a dashboard or report has multiple contacts, when someone opens the report header and selects the link to email the contacts, some email clients will separate the names with commas instead of semicolons. The resulting email address won't work.
+* Why do we recommend listing only one contact? If a dashboard or report has multiple contacts, when someone opens the report header and selects the link to email the contacts, some email clients will separate the names with commas instead of semicolons. The resulting email address won't work.
 
 ## Next steps
 
