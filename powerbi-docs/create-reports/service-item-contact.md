@@ -24,9 +24,6 @@ However, we recommend adding just one person or group. See the [Limitations and 
 
 The contact list information is also used in other places. For example, it is shown in some error scenarios in the error dialog box. Automated email messages related to the item, like access requests, are sent to the contact list. 
 
-> [!NOTE]
-> When you [publish an app](../collaborate-share/service-create-distribute-apps.md) in Power BI, the contact information for individual items is set to the person who published or updated the app. You can set the app support URL so app users get the help they need.
-
 ## Send email to the contact for a report or dashboard
 
 To see the report or dashboard contact information, select the item name in the black header bar at the top. 
@@ -53,7 +50,7 @@ By default the person who creates a report or dashboard is the contact for it. I
 ## Limitations and considerations
 
 * You can set any user or group in the contact list, but they're not automatically granted permission to the item. Use sharing or give users who need it access to the workspace through a role. 
-* The item level contact list doesn’t get pushed into apps when they are published. By default, the contact name for dashboards and reports in an app is the workspace name, which is not a mailto link. The new app navigation experience provides a support URL you configure to help manage feedback from app users.
+* The report or dashboard contact information doesn’t get pushed into apps when you [publish an app](../collaborate-share/service-create-distribute-apps.md). By default, the contact name for dashboards and reports in an app is the workspace name, which is not a mailto link. The new app navigation experience provides a support URL you configure to help manage feedback from app users.
 * Why do we recommend listing only one contact? If a dashboard or report has multiple contacts, when someone opens the report header and selects the link to email the contacts, some email clients separate the names with commas instead of semicolons. The resulting email address won't work.
 
 ## Next steps
