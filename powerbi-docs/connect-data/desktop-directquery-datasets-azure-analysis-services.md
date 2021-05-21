@@ -145,7 +145,7 @@ There are also a few **limitations** you need to keep in mind:
 
 - Automatic page refresh (APR) is only supported for some scenarios, depending on the data source type. See the article [Automatic page refresh in Power BI](../create-reports/desktop-automatic-page-refresh.md) for more information.
 
-- Takeover of a dataset (using the direct query to other datasets feature) isn't supported at this time.
+- Take over of a dataset which is using the **DirectQuery to other datasets** feature isn't currently supported.
 
 ### Tenant considerations
 
