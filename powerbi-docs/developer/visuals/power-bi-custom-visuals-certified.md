@@ -24,7 +24,7 @@ The certification process is optional. Power BI visuals that are not certified, 
 
 ## Certification requirements
 
-To get your Power BI visual [certified](#get-a-power-bi-visual-certified), your Power BI visual must comply with the requirements listed in this section. 
+To get your Power BI visual [certified](#get-a-power-bi-visual-certified), your Power BI visual must comply with the requirements listed in this section.
 
 ### General requirements
 
@@ -39,6 +39,7 @@ When submitting the Power BI visual, make sure that the compiled package exactly
 Although you don't have to publicly share your code in GitHub, the code repository has to be available for a review by the Power BI team. The best way to do this, is by providing the source code (JavaScript or TypeScript) in GitHub.
 
 The repository must contain the following:
+
 * Code for only one Power BI visual. It can't contain code for multiple Power BI visuals, or unrelated code.
 * A branch named **certification** (lowercase required). The source code in this branch has to match the submitted package. This code can only be updated during the next submission process, if you're resubmitting your Power BI visual.
 
@@ -51,9 +52,10 @@ To understand how a Power BI visual repository looks, review the GitHub reposito
 Use the latest version of the API to write the Power BI visual.
 
 The repository must include the following files:
+
 * **.gitignore** - Add `node_modules`, `.tmp` and  `dist` to this file. The code cannot include the *node_modules*, *.tmp* or *dist* folders.
 * **capabilities.json** - If you are submitting newer version of your Power BI visual with changes to the properties in this file, verify that they do not break reports for existing users.
-* **pbiviz.json** 
+* **pbiviz.json**
 * **package.json**. The visual must have the following package installed:
    * ["tslint"](https://www.npmjs.com/package/tslint) - Version 5.18.0 or higher
    * ["typescript"](https://www.npmjs.com/package/typescript) - Version 3.0.0 or higher
@@ -83,13 +85,15 @@ Verify that you follow the [Power BI visuals additional certification](/legal/ma
 
 Follow the code requirements listed below to make sure that your code is in line with the Power BI certification policies.  
 
-**Required**
+The following are **Required**:
+
 * Only use public reviewable OSS components such as public JavaScript or TypeScript libraries.
 * The code must support the [Rendering Events API](event-service.md).
 * Ensure DOM is manipulated safely. Use sanitization for user input or user data, before adding it to DOM.
 * Use the [sample report](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/gh-pages/assets) as a test dataset.
 
-**Not allowed**
+The following are **Not allowed**:
+
 * Accessing external services or resources. For example, no HTTP/S or WebSocket requests can go out of Power BI to any services.
 * Using `innerHTML`, or `D3.html(user data or user input)`.
 * JavaScript errors or exceptions in the browser console, for any input data.
@@ -113,6 +117,7 @@ To request Power BI certification:
 ### Private repository submission process
 
 If you're using a private repository such as GitHub to submit your Power BI visual for certification, follow the instructions in this section.
+
 1. Create a new account for the validation team.
 2. Configure [two-factor authentication](https://help.github.com/github/authenticating-to-github/securing-your-account-with-two-factor-authentication-2fa) for your account.
 3. [Generate a new set of recovery codes](https://help.github.com/github/authenticating-to-github/configuring-two-factor-authentication-recovery-methods#generating-a-new-set-of-recovery-codes).
@@ -167,16 +172,13 @@ Your Power BI visual will be available to download from AppSource when this proc
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Developing a Power BI circle card visual](develop-circle-card.md) tutorial.
-
->[!div class="nextstepaction"]
 >[Frequently asked questions about certified visuals](power-bi-custom-visuals-faq.yml#certified-power-bi-visuals).
 
 >[!div class="nextstepaction"]
 >[Microsoft's Power BI visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)
 
 >[!div class="nextstepaction"]
-[Visuals in Power BI](power-bi-custom-visuals.md)
+>[Visuals in Power BI](power-bi-custom-visuals.md)
 
 >[!div class="nextstepaction"]
 >[Publish Power BI visuals to Microsoft AppSource](office-store.md)
