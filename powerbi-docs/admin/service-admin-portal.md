@@ -700,10 +700,10 @@ As an administrator, you can customize the look of Power BI for your whole organ
 
 * **Upload Cover image**: For best results, upload a cover image that's saved as a .jpg or .png, 1 MB or smaller, and at least 1920 x 160 pixels.
 
-* **Select Theme color**: You are able to select your theme based on a hex #, RGB, value, or from the provided palette.
+* **Select Theme color**: You can select your theme based on a hex #, RGB, value, or from the provided palette.
 
 
-For more information, see [Custom branding for your organization](https://aka.ms/orgBranding).
+For more information, see [Add custom branding to the Power BI service](service-admin-custom-branding.md).
 
 ## Protection metrics
 
