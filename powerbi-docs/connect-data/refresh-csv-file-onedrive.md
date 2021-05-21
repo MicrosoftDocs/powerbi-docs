@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/20/2021
+ms.date: 05/21/2021
 LocalizationGroup: Data refresh
 ---
 # Refresh a dataset created from a .CSV file on OneDrive or SharePoint Online
