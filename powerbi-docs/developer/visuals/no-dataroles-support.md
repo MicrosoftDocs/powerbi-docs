@@ -25,6 +25,8 @@ This means that you can render a visual and use the *update* method to change th
 
 The following tabs show two examples of a Power BI visual. One visual requires binding data, and the other uses the *no data roles* feature and doesn't require binding data.
 
+## {.tabset .tabset-fade}
+
 ### [Binding data required](#tab/NoDataroles)
 
 >[!div class="mx-imgBorder"]
