@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 09/17/2020
+ms.date: 05/23/2021
 ---
 
 # Install and distribute template apps in your organization
@@ -108,13 +108,17 @@ If you originally downloaded the app from AppSource, when a new version of the t
 
   To install the update, either click **Get it** on the notification banner or in the notification center, or find the app again in AppSource and choose **Get it now**. If you got a direct link for the update from the Template app creator, simply click the link.
   
-  You will be asked whether you wish to overwrite the current version, or to install the new version in a new workspace. By default, "overwrite" is selected.
+  You will be how asked you want the update to affect your currently installed app. you wish to overwrite the current version.
 
   ![Update template app](media/service-template-apps-install-distribute/power-bi-update-app-overwrite.png)
 
-- **Overwrite an existing version:** Overwrites the existing workspace with the updated version of the template app. [See details about overwriting](#overwrite-behavior).
+you want the update to affect your currently installed app. you wish to overwrite the current version, or to install the new version in a new workspace. By default, "Update the workspace and the app" is selected.
 
-- **Install to a new workspace:** Installs a fresh version of the workspace and app that you need to reconfigure (that is, connect to data, define navigation and permissions).
+- **Update the workspace and the app:** Overwrites the existing workspace with the updated version of the template app. [See details about overwriting](#overwrite-behavior).
+
+- **Update only workspace content without updating the app:** Installs a fresh version of the workspace and app that you need to reconfigure (that is, connect to data, define navigation and permissions).
+- 
+- **Install another copy of the app into a new workspace:** Installs a fresh version of the workspace and app that you need to reconfigure (that is, connect to data, define navigation and permissions).
 
 ### Overwrite behavior
 
