@@ -49,27 +49,9 @@ Here's a list of the different deployment types the APIs support:
 
 Before you start using the deployment pipelines APIs, make sure you have the following:
 
-* One of the following Premium licenses:
-
-    * You're a Power BI [Pro user](../admin/service-admin-purchasing-power-bi-pro.md), and you belong to an organization that has Premium capacity.
-
-    * [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml).
-
 * A working pipeline. To create a new pipeline, [Get started using deployment pipelines](deployment-pipelines-get-started.md).
 
-* An [Azure AD application](/azure/active-directory/develop/active-directory-how-applications-are-added). To create a new Azure AD app, you can follow the instructions in the manual registration tab of the [Register an Azure AD app](../developer/embedded/register-app.md?tabs=manual%2CAzure#register-an-azure-ad-app) article.
-
-    >[!NOTE]
-    >* For a *service principal*, you'll need a *Web* Azure AD app (created by default).
-    >* For a *user*, you'll need a *native* Azure AD app, also known as *Public client/native (mobile & desktop)*.
-
-* The *service principal* or *user* you're using for automation, needs to:
-
-    * Have access to the deployment pipeline you want to automate.
-
-    * Have access to the Azure AD app used for automation.
-
-    * Have [workspace permissions](deployment-pipelines-process.md#permissions) that are relevant to the operations you want to do.
+* The *service principal* or *user* you're using for automation, needs [workspace permissions](deployment-pipelines-process.md#permissions) and access to an [Azure AD application](/azure/active-directory/develop/active-directory-how-applications-are-added)
 
 ## Using a service principal
 
@@ -97,7 +79,7 @@ This section describes an example PowerShell script that performs the following 
 
 3. Checks whether the deployment was successful.
 
-You can use any of these parts to add as tasks in your Azure Pipeline stages. To run a PowerShell script that performs a deployment, you'll need the following components:
+You can use any of these parts to add as tasks in your Azure pipeline stages. To run a PowerShell script that performs a deployment, you'll need the following components:
 
 1. **Sign in** - Before you can deploy your content, you need to sign in to Power BI using a *service principal* or a *user*. In this PowerShell example, a *service principal* is used to sign in to Power BI.
 
@@ -123,11 +105,11 @@ You can use any of these parts to add as tasks in your Azure Pipeline stages. To
     # Some code showing a wait for successful deployment.
     ```
 
-### Download the PowerShell sample
+### Download a PowerShell sample
 
-To download the PowerShell sample, follow these steps:
+To download a PowerShell sample, follow these steps:
 
-1. Navigate to the [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples) GitHub folder
+1. Navigate to the [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples) GitHub folder.
 
 2. Select the green **Code** button.
 
@@ -135,11 +117,17 @@ To download the PowerShell sample, follow these steps:
 
 4. Unpack the downloaded ZIP and open the **PowerShell Scripts** folder.
 
-5. The sample PowerShell script is titled **xxxYYYzzz**.
+5. The sample PowerShell scripts are titled **1111**, **2222** and **3333**.
 
 ### View or copy the PowerShell sample
 
-To view or copy the text in the PowerShell example, use the [xxxYYYzzz](link) link.
+To view or copy the text in a PowerShell example, use these links:
+
+* [1111](link)
+
+* [2222](link)
+
+* [3333](link)
 
 ## Limitations and considerations
 
