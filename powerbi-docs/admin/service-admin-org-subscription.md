@@ -36,7 +36,7 @@ Follow these steps to purchase Power BI Pro licenses in the Microsoft 365 admin 
   
    :::image type="content" source="media/service-admin-org-subscription/m365-purchase-services-2021.png" alt-text="Screenshot that shows the Microsoft 365 billing menu with Purchase services selected.":::
 
-3. Search or scroll to find the subscription you want to buy. You'll find **Power BI** under **Other categories that might interest you** near the bottom of the page. Select the link to view the Power BI subscriptions available to your organization.
+3. Search for **Power BI** or select the **Power BI** button from the **View by category** section near the top of the page.
 
 4. Select an offer, like Power BI Pro.
 

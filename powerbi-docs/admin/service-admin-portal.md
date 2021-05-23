@@ -24,11 +24,11 @@ You have to be a global admin or Power BI service admin to access the Power BI a
 
 1. Sign in to [Power BI](https://app.powerbi.com) using your admin account credentials.
 
-1. From the page header, select **Settings** > **Admin portal**.
+1. From the page header, select **...** > **Settings** > **Admin portal**.
 
-   :::image type="content" source="media/service-admin-portal/settings-portal.png" alt-text="Settings menu with admin portal selected.":::
+   :::image type="content" source="media/service-admin-portal/powerbi-settings-menu.png" alt-text="Settings menu with admin portal selected.":::
 
-There are several sections in the Admin portal. The rest of this article provides information about each of these sections.
+There are many sections in the Admin portal. The rest of this article provides information about each of these sections.
 
    :::image type="content" source="media/service-admin-portal/powerbi-admin-portal-menu-2021.png" alt-text="Screenshot that shows the Admin portal menu.":::
 
@@ -40,7 +40,7 @@ There are several sections in the Admin portal. The rest of this article provide
 * [Capacity settings](#capacity-settings)
 * [Embed codes](#embed-codes)
 * [Organizational visuals](organizational-visuals.md#organizational-visuals)
-* [Azure connections (preview)](#azure-connections-preview)
+* [Azure connections](#azure-connections)
 * [Workspaces](#workspaces)
 * [Custom branding](#custom-branding)
 * [Protection metrics](#protection-metrics)
@@ -302,7 +302,7 @@ The **Invite external users to your organization** setting helps organizations c
 > [!IMPORTANT]
 > This setting was previously called “Share content with external users”. The revised name reflects more accurately what the setting does.
 
-To invite external users to your organization, a user also needs the Azure Active Directory Guest Inviter role. This setting only controls the ability to invite through Power BI. 
+To invite external users to your organization, a user also needs the Azure Active Directory Guest Inviter role. This setting only controls the ability to invite through Power BI.
 
 ### Allow external guest users to edit and manage content in the organization
 
@@ -602,7 +602,7 @@ As an administrator, you can view the embed codes that are generated for your te
 
 All the Power BI visuals admin settings, including Power BI visuals tenant settings, are described in [Manage Power BI visuals admin settings](organizational-visuals.md).
 
-## Azure connections (preview)
+## Azure connections
 
 ### Tenant-level storage (preview)
 
@@ -669,7 +669,6 @@ As an administrator, you can customize the look of Power BI for your whole organ
 * **Upload Cover image**: For best results, upload a cover image that's saved as a .jpg or .png, 1 MB or smaller, and at least 1920 x 160 pixels.
 
 * **Select Theme color**: You are able to select your theme based on a hex #, RGB, value, or from the provided palette.
-
 
 For more information, see [Custom branding for your organization](https://aka.ms/orgBranding).
 
