@@ -25,12 +25,12 @@ This means that you can render a visual and use the *update* method to change th
 
 The following tabs show two examples of a Power BI visual. One visual requires binding data, and the other uses the *no data roles* feature and doesn't require binding data.
 
-## [Binding data required](#tab/NoDataroles)
+### [Binding data required](#tab/NoDataroles)
 
 >[!div class="mx-imgBorder"]
 >![Screenshot of the no-dataroles-support before API-2.6.0](media/no-dataroles-support/no-dataroles-1.png)
 
-## [Binding data not required](#tab/NoDatarolesSupport)
+### [Binding data not required](#tab/NoDatarolesSupport)
 
 >[!div class="mx-imgBorder"]
 >![Screenshot of the no-dataroles-support after API-2.6.0](media/no-dataroles-support/no-dataroles-2.png)
