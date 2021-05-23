@@ -33,7 +33,7 @@ Using the [deployment pipelines Power BI REST APIs](/rest/api/power-bi/pipelines
 
 * **Deploy** - The REST calls enables developers to use any type of deployment available in the Power BI service.
 
-## Which deployments are supported by the APIs?
+### Which deployments are supported by the APIs?
 
 Here's a list of the different deployment types the APIs support:
 
@@ -49,37 +49,15 @@ Here's a list of the different deployment types the APIs support:
 
 Before you start using the deployment pipelines APIs, make sure you have the following:
 
-* A working pipeline. To create a new pipeline, [Get started using deployment pipelines](deployment-pipelines-get-started.md).
+* A pipeline with Power BI content. To create a new pipeline, follow the steps in [Get started using deployment pipelines](deployment-pipelines-get-started.md).
 
-* The *service principal* or *user* you're using for automation, needs [workspace permissions](deployment-pipelines-process.md#permissions) and access to an [Azure AD application](/azure/active-directory/develop/active-directory-how-applications-are-added)
-
-## Using a service principal
-
-[Service principal](..//developer/embedded/embed-service-principal.md) is an authentication method that can be used to let an Azure AD application access Power BI service content and APIs.
-
-### Service principal requirements
-
-When using a *service principal*, you'll need to take into account the following requirements:
-
-* Before using a *service principal*, you have to enable the [Power BI service admin settings](../developer/embedded/embed-service-principal.md#step-3---enable-the-power-bi-service-admin-settings).
-
-* You'll need to [add the *service principal* to the workspace you want to deploy from](../developer/embedded/embed-service-principal.md#step-4---add-the-service-principal-to-your-workspace).
-
-* It's recommended to add the *service principal* to a *security group*.
+* The [*service principal*]() or *user* you're using to call the APIs, needs [pipeline and workspace permissions](deployment-pipelines-process.md#permissions), and access to an [Azure AD application](/azure/active-directory/develop/active-directory-how-applications-are-added).
 
 ## Integrate your pipeline with Azure DevOps
 
-You can use PowerShell to integrate a Power BI deployment pipeline into Azure DevOps. The script signs into Power BI using a *service principal* or a *user*, and allows you to automate Power BI deployment processes from within your release pipeline in Azure DevOps.
+You can use PowerShell to integrate a Power BI deployment pipeline into Azure DevOps. The script signs into Power BI using a *service principal* or a *user*, and allows you to automate Power BI deployment processes from within your [release pipeline in Azure DevOps](/azure/devops/pipelines). You can also use other [Power BI REST API](/rest/api/power-bi/) calls, to complete related operations such as importing a PBIX into the pipeline, updating datasources and updating parameters.
 
-This section describes an example PowerShell script that performs the following operations:
-
-1. Connects a Power BI deployment pipeline to Azure DevOps.
-
-2. Deploys all the Power BI items in the pipeline's development stage.
-
-3. Checks whether the deployment was successful.
-
-You can use any of these parts to add as tasks in your Azure pipeline stages. To run a PowerShell script that performs a deployment, you'll need the following components:
+This section describes an example PowerShell script that deploys all the Power BI items in the pipeline's development stage, and checks whether the deployment was successful. To run a PowerShell script that performs a deployment, you'll need the components listed below. You can use any of these parts to add into [tasks](/azure/devops/pipelines/tasks/utility/powershell) in your Azure pipeline stages.
 
 1. **Sign in** - Before you can deploy your content, you need to sign in to Power BI using a *service principal* or a *user*. In this PowerShell example, a *service principal* is used to sign in to Power BI.
 
@@ -105,21 +83,7 @@ You can use any of these parts to add as tasks in your Azure pipeline stages. To
     # Some code showing a wait for successful deployment.
     ```
 
-### Download a PowerShell sample
-
-To download a PowerShell sample, follow these steps:
-
-1. Navigate to the [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples) GitHub folder.
-
-2. Select the green **Code** button.
-
-3. Select **Download ZIP**.
-
-4. Unpack the downloaded ZIP and open the **PowerShell Scripts** folder.
-
-5. The sample PowerShell scripts are titled **1111**, **2222** and **3333**.
-
-### View or copy the PowerShell sample
+### Access the PowerShell samples
 
 To view or copy the text in a PowerShell example, use these links:
 
@@ -129,19 +93,15 @@ To view or copy the text in a PowerShell example, use these links:
 
 * [3333](link)
 
-## Limitations and considerations
+You can also download the entire [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples) GitHub folder.
 
-* The maximum number of Power BI items that can be deployed in a single deployment is 300.
+## Limitations and considerations
 
 * Deployment using APIs is subject to the same [limitations](deployment-pipelines-process.md#limitations-1) as the Power BI deployment pipelines user interface.
 
-* A *service principal* or a *user* cannot configure *OAuth* credentials.
+* A *service principal* cannot configure *OAuth* credentials. After deploying new items, the signed in *service principal* becomes the owner of any deployed paginated reports and datasets. In such cases, a refresh cannot be completed.
 
-* After a successful deployment, if the following items are newly deployed, the signed in *service principal* or *user* becomes their owner:
-
-    * Any deployed paginated reports.
-
-    * Any deployed datasets.
+* The maximum number of Power BI items that can be deployed in a single deployment is 300.
 
 ## Next steps
 
