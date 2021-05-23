@@ -1,6 +1,6 @@
 ---
 title: Automate your deployment pipeline, the Power BI Application lifecycle management (ALM) tool 
-description: Learn how to automate your deployment pipeline, the Power BI Application lifecycle management (ALM) tool, using APIs and DevOps
+description: Learn how to automate your deployment pipeline, the Power BI Application lifecycle management (ALM) tool, using APIs and Azure DevOps
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: conceptual
@@ -9,7 +9,7 @@ ms.subservice: pbi-deployment
 ms.date: 05/20/2021
 ---
 
-# Automate your deployment pipeline using APIs and DevOps
+# Automate your deployment pipeline using APIs and Azure DevOps
 
 The Power BI [deployment pipelines](deployment-pipelines-overview.md) tool enables BI teams to build an efficient and reusable release process for their Power BI content.
 
@@ -71,27 +71,6 @@ Before you start using the deployment pipelines APIs, make sure you have the fol
 
     * Have [workspace permissions](deployment-pipelines-process.md#permissions) that are relevant to the operations you want to do.
 
-## Required parameters
-
-To use the [deployment pipelines Power BI REST APIs](/rest/api/power-bi/pipelines), you'll need to sign in to Power BI. Your first step is to decide whether you want to sign in using a [*service principal*](#using-a-service-principal) (which is the recommended method) or a *user*.
-
-You'll also need additional parameters to specify the Power BI workspace and pipeline you're deploying from. If you're using selective deploy, you'll need to specify the Power BI items you want to deploy. For example, for a Power BI report, you'll need a [Report ID](../developer/embedded/embed-sample-for-customers.md#report-id).
-
-The table below describes which parameters you need to specify for each method.
-
-|Parameter   |Service principal   |User  |
-|-------------------|---|---|
-|[Client ID](../developer/embedded/embed-sample-for-customers.md#client-id) |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |
-|[Workspace ID](../developer/embedded/embed-sample-for-customers.md#workspace-id)     |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |
-|Pipeline ID     |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |
-|[Client secret](../developer/embedded/embed-sample-for-customers.md#client-secret) |![Applies to.](../media/yes.png) |![Does not apply to.](../media/no.png)  |
-|[Tenant ID](../developer/embedded/embed-sample-for-customers.md#tenant-id)                 |![Applies to.](../media/yes.png) |![Does not apply to.](../media/no.png) |
-|[Power BI username](../developer/embedded/embed-sample-for-customers.md#power-bi-username-and-password)   |![Does not apply to.](../media/no.png) |![Applies to.](../media/yes.png) |
-|[Power BI password](../developer/embedded/embed-sample-for-customers.md#power-bi-username-and-password)   |![Does not apply to.](../media/no.png) |![Applies to.](../media/yes.png) |
-
->[!TIP]
->When using a *service principal*, you can use a [certificate](../developer/embedded/embed-service-principal-certificate.md) instead of a *client secret*. Using certificates is an Azure AD best practice.
-
 ## Using a service principal
 
 [Service principal](..//developer/embedded/embed-service-principal.md) is an authentication method that can be used to let an Azure AD application access Power BI service content and APIs.
@@ -112,7 +91,7 @@ You can use PowerShell to integrate a Power BI deployment pipeline into Azure De
 
 This section describes an example PowerShell script that performs the following operations:
 
-1. Connects a Power BI deployment pipeline to DevOps.
+1. Connects a Power BI deployment pipeline to Azure DevOps.
 
 2. Deploys all the Power BI items in the pipeline's development stage.
 
