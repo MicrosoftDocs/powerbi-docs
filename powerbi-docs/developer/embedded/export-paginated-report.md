@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 03/18/2021
+ms.date: 05/24/2021
 ---
 
 # Export paginated report to file
 
 The `exportToFile` API enables exporting a Power BI paginated report by using a REST call. The following file formats are supported:
 * **.pptx** (PowerPoint)
-* **.pdf**
+* **.pdf** (and [AccessiblePDF, or PDF/UA](../../report-server/rendering-extension-support.md))
 * **.xlsx** (Excel)
 * **.docx** (Word)
 * **.csv**
