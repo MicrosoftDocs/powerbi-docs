@@ -26,9 +26,11 @@ To display a visual in high-contrast mode you have to:
 The *colorPalette* member of `options.host` has several properties for high-contrast mode. Use these properties to determine whether high-contrast mode is active and, if it is, what colors to use.
 
 * Detect that Power BI is in high-contrast mode
+
     If `host.colorPalette.isHighContrast` is `true`, high-contrast mode is active and the visual should draw itself accordingly.
 
 * Get high-contrast colors
+
     When displaying in high-contrast mode, your visual should limit itself to the following settings:
 
     * **Foreground** color is used to draw any lines, icons, text, and outline or fill of shapes.
