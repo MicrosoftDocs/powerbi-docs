@@ -93,19 +93,19 @@ Say you've distributed an app from a workspace to a group of people. Later, you 
 
 Certain actions, such as creating a report on top of a dataset or accessing the details page of a dataset in the datasets hub, require [Build permission](https://docs.microsoft.com/en-us/power-bi/connect-data/service-datasets-build-permissions) on the dataset. By default, when a user who doesn't have this permission tries to do such an action, they get a dialog that enables them to send a request for Build permission by email to the dataset owner. The email will include the user's details, the name of the dataset they’re requesting access to, and any other information they optionally provide.
 
-![Screenshot of default Build permission request dialog.](media/build-permission-default-request-dialog.png)
+![Screenshot of default Build permission request dialog.](media/service-datasets-build-permissions/build-permission-default-request-dialog.png)
  
 ### Configuring how to handle access requests
 
 If you have an [Admin, Member, or Contributor role](https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-new-workspaces#roles-in-the-new-workspaces) on the workspace where the dataset is located, you can change the default access request behavior using the Request access options that are available in the dataset settings.
 
-![Screenshot of the Request access configuration dialog in the dataset settings.](media/build-permission-specific-instructions-dialog.png)
+![Screenshot of the Request access configuration dialog in the dataset settings.](media/service-datasets-build-permissions/build-permission-specific-instructions-dialog.png)
  
 The first option is the default option described at the beginning of this article. Requests for Build permission on the dataset will come to you via email. When you get the request, you are responsible for acting on the request and notifying the requestor.
 
 The second option allows you to provide instructions about how to get Build permission, rather than receiving requests via email. You might choose this option, for example, if your organization uses an automated system for handling access requests. When users try to perform an action that they need Build permission for, if they don’t have that permission, they will see a message containing the instructions you provide. The image below is an example of such a message.
 
-![Screenshot of specific instructions for requesting Build permission.](media/build-permission-specific-instructions-example.png)
+![Screenshot of specific instructions for requesting Build permission.](media/service-datasets-build-permissions/build-permission-specific-instructions-example.png)
  
 Type only plain text in the text box in the Request access settings. HTML code snippets and any other type of code formatting will render as plain text rather than the intended format.
 
