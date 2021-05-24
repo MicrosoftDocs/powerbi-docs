@@ -100,7 +100,7 @@ In the following sample bar chart, for example, all bars are drawn with two pixe
 
 The following code shows one place in the `visualTransform` function that was changed to support high-contrast. It's called as part of rendering during the update.
 
-### [Before](#tab/NoHighContrast)
+### [No high-contrast support](#tab/NoHighContrast)
 
 ```typescript
 for (let i = 0, len = Math.max(category.values.length, dataValue.values.length); i < len; i++) {
@@ -121,7 +121,7 @@ for (let i = 0, len = Math.max(category.values.length, dataValue.values.length);
 }
 ```
 
-### [After](#tab/HighContrast)
+### [High-contrast support](#tab/HighContrast)
 
 ```typescript
 for (let i = 0, len = Math.max(category.values.length, dataValue.values.length); i < len; i++) {
