@@ -35,14 +35,14 @@ The following tabs show two examples of a Power BI visual. One visual requires b
 >[!div class="mx-imgBorder"]
 >![Screenshot of the no-dataroles-support after API-2.6.0](media/no-dataroles-support/no-dataroles-2.png)
 
-</div>
+---
+
+## How to create a visual that doesn't require data binding
 
 > [!NOTE]
 > This feature is available from Version 3.6.0 of `powerbi-visuals-api` and above.
 
-## How to create a visual that doesn't require data binding
-
-To enable this feature, set the following two parameters in the `capabilities.json` file to *true*.
+To enable the no data-binding feature, set the following two parameters in the `capabilities.json` file to *true*.
 
 * [Landing page](landing-page.md) allows you to display information on the Power BI card before it's loaded with data
 
