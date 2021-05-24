@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
-ms.date: 05/20/2021
+ms.date: 05/24/2021
 ---
 
 # Automate your deployment pipeline using APIs and Azure DevOps
 
 The Power BI [deployment pipelines](deployment-pipelines-overview.md) tool enables BI teams to build an efficient and reusable release process for their Power BI content.
 
-To achieve continuous integration and continuous delivery (CI/CD) of content, many organizations use a variety of automation tools, including [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops).
+To achieve continuous integration and continuous delivery (CI/CD) of content, many organizations use various automation tools, including [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops).
 
 You can leverage the [deployment pipelines Power BI REST APIs](/rest/api/power-bi/pipelines), to integrate Power BI into your organization's automation process. Here are a few examples of what can be done using the APIs:
 
@@ -39,7 +39,7 @@ Here's a list of the different deployment types the APIs support:
 
 * **Deploy all** - A single API call that deploys all the content in the workspace to the next stage in the pipeline. For this operation, use the [Deploy all](/rest/api/power-bi/pipelines/deployall) API.
 
-* **Selective deploy** - Deploy only specific Power BI items (such as reports or dashboards) in the pipeline. For this operation use the [Selective deploy](/rest/api/power-bi/pipelines/selectivedeploy) API.
+* **Selective deploy** - Deploy only specific Power BI items (such as reports or dashboards) in the pipeline. For this operation, use the [Selective deploy](/rest/api/power-bi/pipelines/selectivedeploy) API.
 
 * **Backward deploy** - Use to deploy new Power BI items to the previous stage. Backward deployment only works if the Power BI items that are deployed, don’t already exist in the target stage. For this operation use either the [Deploy all](/rest/api/power-bi/pipelines/deployall) or the [Selective deploy](/rest/api/power-bi/pipelines/selectivedeploy) APIs, with `isBackwardDeployment` set to `True`.
 
@@ -53,45 +53,70 @@ Before you start using the deployment pipelines APIs, make sure you have the fol
 
 * The [*service principal*]() or *user* you're using to call the APIs, needs [pipeline and workspace permissions](deployment-pipelines-process.md#permissions), and access to an [Azure AD application](/azure/active-directory/develop/active-directory-how-applications-are-added).
 
+* If you're going to use PowerShell scripts, install the Power BI PowerShell cmdlets [Install-Module MicrosoftPowerBIMgmt](/powershell/power-bi/overview?view=powerbi-ps).
+
 ## Integrate your pipeline with Azure DevOps
 
 You can use PowerShell to integrate a Power BI deployment pipeline into Azure DevOps. The script signs into Power BI using a *service principal* or a *user*, and allows you to automate Power BI deployment processes from within your [release pipeline in Azure DevOps](/azure/devops/pipelines). You can also use other [Power BI REST API](/rest/api/power-bi/) calls, to complete related operations such as importing a PBIX into the pipeline, updating datasources and updating parameters.
 
-This section describes an example PowerShell script that deploys all the Power BI items in the pipeline's development stage, and checks whether the deployment was successful. To run a PowerShell script that performs a deployment, you'll need the components listed below. You can use any of these parts to add into [tasks](/azure/devops/pipelines/tasks/utility/powershell) in your Azure pipeline stages.
+This section describes an example PowerShell script that deploys a dataset, report and dashboard, from the development stage to the test stage. The script then checks whether the deployment was successful. To run a PowerShell script that performs a deployment, you'll need the components listed below. You can add any of these parts into [tasks](/azure/devops/pipelines/tasks/utility/powershell) in your Azure pipeline stages.
 
-1. **Sign in** - Before you can deploy your content, you need to sign in to Power BI using a *service principal* or a *user*. In this PowerShell example, a *service principal* is used to sign in to Power BI.
+1. **Sign in** - Before you can deploy your content, you need to sign in to Power BI using a *service principal* or a *user*. Use the [Connect-PowerBIServiceAccount](/powershell/module/microsoftpowerbimgmt.profile/connect-powerbiserviceaccount) command to sign in.
 
-    ```powershell
-    # Some code describing signing in to Power BI using a service principal.
-    ```
-
-2. **Build your request** - In this part of the script you specify which Power BI items (such as reports and dashboards) you're deploying. You can also deploy all the Power BI items in the source stage, to the target stage:
+2. **Build your request body** - In this part of the script you specify which Power BI items (such as reports and dashboards) you're deploying.
 
     ```powershell
-    # The sample script deploys all the Power BI items from the development stage to the test stage.
+    $body = @{ 
+        sourceStageOrder = 0 # The order of the source stage. Development (0), Test (1).   
+        datasets = @(
+            @{sourceId = "Insert your dataset ID here" }
+        )      
+        reports = @(
+            @{sourceId = "Insert your report ID here" }
+        )            
+        dashboards = @(
+            @{sourceId = "Insert your dashboard ID here" }
+        )
+
+        options = @{
+            # Allows creating new artifact if needed on the Test stage workspace
+            allowCreateArtifact = $TRUE
+
+            # Allows overwriting existing artifact if needed on the Test stage workspace
+            allowOverwriteArtifact = $TRUE
+        }
+    } | ConvertTo-Json
     ```
 
 3. **Deploy** - Here you perform the deployment.
 
     ```powershell
-    # Some code describing the deployment.
+    $url = "pipelines/{0}/Deploy" -f "Insert you pipeline ID here"
+    $deployResult = Invoke-PowerBIRestMethod -Url $url  -Method Post -Body $body | ConvertFrom-Json
     ```
 
-4. (Optional) **Successful deployment notification** - As the deployment API is asynchronous, you can program the script to notify you when the deployment is successful.
+4. (Optional) **Deployment completion notification** - As the deployment API is asynchronous, you can program the script to notify you when the deployment is complete.
 
     ```powershell
-    # Some code showing a wait for successful deployment.
+    $url =  "pipelines/{0}/Operations/{1}" -f "Insert you pipeline ID here",$deployResult.id
+    $operation = Invoke-PowerBIRestMethod -Url $url -Method Get | ConvertFrom-Json    
+    while($operation.Status -eq "NotStarted" -or $operation.Status -eq "Executing")
+    {
+        # Sleep for 5 seconds
+        Start-Sleep -s 5
+        $operation = Invoke-PowerBIRestMethod -Url $url -Method Get | ConvertFrom-Json
+    }
     ```
 
 ### Access the PowerShell samples
 
 To view or copy the text in a PowerShell example, use these links:
 
-* [1111](link)
+* [Deploy all](https://github.com/microsoft/PowerBI-Developer-Samples/DeploymentPipelines-DeployAll.ps)
 
-* [2222](link)
+* [Selective deployment](https://github.com/microsoft/PowerBI-Developer-Samples/DeploymentPipelines-SelectiveDeploy.ps1)
 
-* [3333](link)
+* [Wait for deployment](https://github.com/microsoft/PowerBI-Developer-Samples/DeploymentPipelines-WaitForDeployment.ps1)
 
 You can also download the entire [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples) GitHub folder.
 
