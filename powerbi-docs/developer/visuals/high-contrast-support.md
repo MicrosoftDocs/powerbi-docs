@@ -167,4 +167,4 @@ function getColumnColorByIndex(
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Publish Power BI visuals](office-store.md)
+>[Design Power BI reports for accessibility](../../create-reports/desktop-accessibility-creating-reports.md)
