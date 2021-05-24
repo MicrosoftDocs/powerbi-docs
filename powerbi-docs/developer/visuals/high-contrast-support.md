@@ -25,21 +25,19 @@ To display a visual in high-contrast mode you have to:
 
 The *colorPalette* member of `options.host` has several properties for high-contrast mode. Use these properties to determine whether high-contrast mode is active and, if it is, what colors to use.
 
-### Detect that Power BI is in high-contrast mode
+* Detect that Power BI is in high-contrast mode
+    If `host.colorPalette.isHighContrast` is `true`, high-contrast mode is active and the visual should draw itself accordingly.
 
-If `host.colorPalette.isHighContrast` is `true`, high-contrast mode is active and the visual should draw itself accordingly.
+* Get high-contrast colors
+    When displaying in high-contrast mode, your visual should limit itself to the following settings:
 
-### Get high-contrast colors
+    * **Foreground** color is used to draw any lines, icons, text, and outline or fill of shapes.
+    * **Background** color is used for background, and as the fill color of outlined shapes.
+    * **Foreground - selected** color is used to indicate a selected or active element.
+    * **Hyperlink** color is used only for hyperlink text.
 
-When displaying in high-contrast mode, your visual should limit itself to the following settings:
-
-* **Foreground** color is used to draw any lines, icons, text, and outline or fill of shapes.
-* **Background** color is used for background, and as the fill color of outlined shapes.
-* **Foreground - selected** color is used to indicate a selected or active element.
-* **Hyperlink** color is used only for hyperlink text.
-
-> [!NOTE]
-> If a secondary color is needed, foreground color may be used with some opacity (Power BI native visuals use 40% opacity). Use this sparingly to keep the visual details easy to see.
+    > [!NOTE]
+    > If a secondary color is needed, foreground color may be used with some opacity (Power BI native visuals use 40% opacity). Use this sparingly to keep the visual details easy to see.
 
 During initialization, you can store the following values:
 
@@ -78,7 +76,7 @@ Power BI native visuals follow these guidelines:
 * Thick shapes are drawn as outlines, with thick strokes (at least two pixels) and background color fill.
 * When data points are relevant, they're distinguished by different marker shapes, and data lines are distinguished by different dashing.
 * When a data element is highlighted, all other elements change their opacity to 40%.
-* For slicers, active filter elements use foreground-selected color.
+* For slicers and active filter elements use foreground-selected color.
 
 In the following sample bar chart, for example, all bars are drawn with two pixels of thick foreground outline and background fill. Compare the way it looks with default colors and with a couple of high-contrast themes:
 
