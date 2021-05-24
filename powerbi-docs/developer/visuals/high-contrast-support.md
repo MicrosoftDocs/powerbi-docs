@@ -16,7 +16,7 @@ The Windows *high contrast* setting makes text and apps easier to see by display
 
 To view an implementation of high-contrast support, go to the [PowerBI-visuals-sampleBarChart visual repository](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6).
 
-How to display visuals in high-contrast mode
+## How to display visuals in high-contrast mode
 
 ### On initialization
 
