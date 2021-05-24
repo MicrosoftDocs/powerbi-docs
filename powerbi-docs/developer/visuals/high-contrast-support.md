@@ -69,7 +69,7 @@ constructor(options: VisualConstructorOptions) {
 
 Or you can store the `host` object during initialization and access the relevant `colorPalette` properties during update.
 
-### Drawing the visual
+### Implementation
 
 The specific implementations of high-contrast support vary from visual to visual and depend on the details of the graphic design. To keep important details easy to distinguish with the limited colors, high-contrast mode ordinarily requires a design that's slightly different from the default mode.
 
