@@ -72,8 +72,7 @@ Content is organized within the context of a workspace. Every business user has 
 
 **My workspace** stores all the content that you own and create. Think of it as your personal sandbox or work area for your own content. For many Power BI *business user*, **My workspace** remains empty because your job doesn't involve creating new content.  *Business users*, by definition, consume data created by others and use that data to make business decisions. If you find that you are creating content, consider reading the [Power BI articles for *report creators*](../index.yml) instead.
 
-A workspace is much more than a simple listing of content. On this page, you can learn a lot about the workspace's dashboards and reports. In this section of the Quickstart, we'll put the *Opportun
-ity analysis* sample aside, and look at a workspace that has both a dashboard and a report. 
+A workspace is much more than a simple listing of content. On this page, you can learn a lot about the workspace's dashboards and reports. In this section of the Quickstart, we'll put the *Opportunity analysis* sample aside, and look at a workspace that has both a dashboard and a report. 
 
 To display a list of actions for the dashboard or report, select **More actions (...)**.  
 
