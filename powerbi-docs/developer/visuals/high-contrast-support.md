@@ -16,22 +16,20 @@ The Windows *high-contrast* setting makes text and apps easier to see by display
 
 To view an implementation of high-contrast support, go to the [PowerBI-visuals-sampleBarChart visual repository](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6).
 
-## How to display visuals in high-contrast mode
-
 To display a visual in high-contrast mode you have to:
 
 * Detect high-contrast mode and colors upon [initialization](#initialization).
 * Draw the visual correctly on [implementation](#implementation).
 
-### Initialization
+## Initialization
 
 The *colorPalette* member of `options.host` has several properties for high-contrast mode. Use these properties to determine whether high-contrast mode is active and, if it is, what colors to use.
 
-#### Detect that Power BI is in high-contrast mode
+### Detect that Power BI is in high-contrast mode
 
 If `host.colorPalette.isHighContrast` is `true`, high-contrast mode is active and the visual should draw itself accordingly.
 
-#### Get high-contrast colors
+### Get high-contrast colors
 
 When displaying in high-contrast mode, your visual should limit itself to the following settings:
 
@@ -69,7 +67,7 @@ constructor(options: VisualConstructorOptions) {
 
 Or you can store the `host` object during initialization and access the relevant `colorPalette` properties during update.
 
-### Implementation
+## Implementation
 
 The specific implementations of high-contrast support vary from visual to visual and depend on the details of the graphic design. To keep important details easy to distinguish with limited colors, high-contrast mode ordinarily requires a design that's slightly different from the default mode.
 
@@ -84,15 +82,15 @@ Power BI native visuals follow these guidelines:
 
 In the following sample bar chart, for example, all bars are drawn with two pixels of thick foreground outline and background fill. Compare the way it looks with default colors and with a couple of high-contrast themes:
 
-#### [Standard colors](#tab/Standard)
+### [Standard colors](#tab/Standard)
 
 ![Sample Bar Chart using standard colors](media/high-contrast-support/hc-samplebarchart-standard.png)
 
-#### [High contrast-dark color theme](#tab/Dark)
+### [High contrast-dark color theme](#tab/Dark)
 
 ![Sample Bar Chart using *Dark #2* color theme](media/high-contrast-support/hc-samplebarchart-dark2.png)
 
-#### [High contrast-white color theme](#tab/White)
+### [High contrast-white color theme](#tab/White)
 
 ![Sample Bar Chart using *White* color theme](media/high-contrast-support/hc-samplebarchart-white.png)
 
