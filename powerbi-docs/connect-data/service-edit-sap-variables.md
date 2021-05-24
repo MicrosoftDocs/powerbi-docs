@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 02/05/2021
+ms.date: 02/06/2021
 LocalizationGroup: Data from databases
 ---
 
@@ -41,7 +41,7 @@ To enable the **SAP edit variables** feature, in Power BI Desktop connect to an 
 
 ## Use SAP edit variables in Power BI Desktop
 
-When using SAP edit variables in Power BI Desktop, you can edit the variables by selecting the Edit variables link from **Edit Queries** menu in the ribbon. From there, the following dialog appears. This feature has been available in Power BI Desktop for a while. Report creators can select variables for the report using the following dialog.
+When using SAP edit variables in Power BI Desktop, you can edit the variables by selecting the Edit variables link from **Transform data** menu in the ribbon. From there, the following dialog appears. This feature has been available in Power BI Desktop for a while. Report creators can select variables for the report using the following dialog.
 
 ![Add items](media/service-edit-sap-variables/sap-variables-add-items.png)
 

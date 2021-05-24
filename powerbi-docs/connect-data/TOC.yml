@@ -58,6 +58,12 @@
         href: service-gateway-deployment-guidance.md
       - name: "On-premises data gateway FAQ"
         href: service-gateway-power-bi-faq.yml
+    - name: "Datasets in the Power BI service"
+      href: service-datasets-understand.md
+    - name: "Dataset modes"
+      href: service-dataset-modes-understand.md
+    - name: "Edit SAP variables"
+      href: service-edit-sap-variables.md
   - name: How-to guides
     expanded: true
     items: 

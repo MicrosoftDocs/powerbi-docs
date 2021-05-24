@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 04/03/2021
 LocalizationGroup: Share your work
 ---
 # Copy reports from other workspaces

@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 05/27/2021
 LocalizationGroup: Share your work
 ---
 # Intro to datasets across workspaces
