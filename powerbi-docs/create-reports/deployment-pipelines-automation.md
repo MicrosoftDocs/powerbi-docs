@@ -118,7 +118,7 @@ To view or copy the text in a PowerShell example, use these links:
 
 * [Selective deployment](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/DeploymentPipelines-SelectiveDeploy.ps1)
 
-* [Wait for deployment](https://github.com/microsoft/PowerBI-Developer-Samples/DeploymentPipelines-WaitForDeployment.ps1)
+* [Wait for deployment](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/DeploymentPipelines-WaitForDeployment.ps1)
 
 You can also download the entire [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/DeploymentPipelines-WaitForDeployment.ps1) GitHub folder.
 
