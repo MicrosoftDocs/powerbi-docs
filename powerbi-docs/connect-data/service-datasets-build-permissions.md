@@ -91,13 +91,13 @@ Say you've distributed an app from a workspace to a group of people. Later, you 
 
 ## Configure how users request Build permissions
 
-Certain actions, such as creating a report on top of a dataset or accessing the details page of a dataset in the datasets hub, require [Build permission](https://docs.microsoft.com/en-us/power-bi/connect-data/service-datasets-build-permissions) on the dataset. By default, when a user who doesn't have this permission tries to do such an action, they get a dialog that enables them to send a request for Build permission by email to the dataset owner. The email will include the user's details, the name of the dataset they’re requesting access to, and any other information they optionally provide.
+Certain actions, such as creating a report on top of a dataset or accessing the details page of a dataset in the datasets hub, require [Build permission](service-datasets-build-permissions.md) on the dataset. By default, when a user who doesn't have this permission tries to do such an action, they get a dialog that enables them to send a request for Build permission by email to the dataset owner. The email will include the user's details, the name of the dataset they’re requesting access to, and any other information they optionally provide.
 
 ![Screenshot of default Build permission request dialog.](media/service-datasets-build-permissions/build-permission-default-request-dialog.png)
  
 ### Changing the access request behavior
 
-If you have an [Admin, Member, or Contributor role](https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-new-workspaces#roles-in-the-new-workspaces) on the workspace where the dataset is located, you can change the default access request behavior using the Request access options that are available in the dataset settings.
+If you have an [Admin, Member, or Contributor role](collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) on the workspace where the dataset is located, you can change the default access request behavior using the Request access options that are available in the dataset settings.
 
 ![Screenshot of the Request access configuration dialog in the dataset settings.](media/service-datasets-build-permissions/build-permission-specific-instructions-dialog.png)
  
@@ -125,6 +125,6 @@ You can remove Build permission. If you do, the people whose permissions you hav
 ## Next steps
 
 * [Use datasets across workspaces](service-datasets-across-workspaces.md)
-* [Share a dataset](https://docs.microsoft.com/en-us/power-bi/connect-data/service-datasets-share)
-* [Roles in the new workspaces](https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-new-workspaces#roles-in-the-new-workspaces)
+* [Share a dataset](service-datasets-share.md)
+* [Roles in the new workspaces](collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
