@@ -12,15 +12,20 @@ ms.date: 06/18/2019
 
 # High-contrast mode support in Power BI visuals
 
-The Windows *high contrast* setting makes text and apps easier to see by displaying more distinct colors. This article discusses how to add high-contrast mode support to Power BI visuals. For more information, see [high-contrast support in Power BI](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#highContrast).
+The Windows *high-contrast* setting makes text and apps easier to see by displaying more distinct colors. This article discusses how to add high-contrast mode support to Power BI visuals. For more information, see [high-contrast support in Power BI](../../create-reports/desktop-accessibility-creating-reports#high-contrast-color-view).
 
 To view an implementation of high-contrast support, go to the [PowerBI-visuals-sampleBarChart visual repository](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6).
 
 ## How to display visuals in high-contrast mode
 
-### On initialization
+To display a visual in high-contrast mode you have to:
 
-The colorPalette member of `options.host` has several properties for high-contrast mode. Use these properties to determine whether high-contrast mode is active and, if it is, what colors to use.
+* Detect high-contrast mode and colors upon [initialization](#initialization).
+* Draw the visual correctly on [implementation](#implementation).
+
+### Initialization
+
+The *colorPalette* member of `options.host` has several properties for high-contrast mode. Use these properties to determine whether high-contrast mode is active and, if it is, what colors to use.
 
 #### Detect that Power BI is in high-contrast mode
 
@@ -28,7 +33,7 @@ If `host.colorPalette.isHighContrast` is `true`, high-contrast mode is active an
 
 #### Get high-contrast colors
 
-In high-contrast mode, your visual should limit itself to the following settings:
+When displaying in high-contrast mode, your visual should limit itself to the following settings:
 
 * **Foreground** color is used to draw any lines, icons, text, and outline or fill of shapes.
 * **Background** color is used for background, and as the fill color of outlined shapes.
@@ -64,7 +69,7 @@ constructor(options: VisualConstructorOptions) {
 
 Or you can store the `host` object during initialization and access the relevant `colorPalette` properties during update.
 
-### On update
+### Drawing the visual
 
 The specific implementations of high-contrast support vary from visual to visual and depend on the details of the graphic design. To keep important details easy to distinguish with the limited colors, high-contrast mode ordinarily requires a design that's slightly different from the default mode.
 
@@ -93,7 +98,9 @@ In the following sample bar chart, for example, all bars are drawn with two pixe
 
 ---
 
-The next section shows one place in the `visualTransform` function that was changed to support high contrast. It's called as part of rendering during the update.
+## Example
+
+The following code shows one place in the `visualTransform` function that was changed to support high-contrast. It's called as part of rendering during the update.
 
 ### [Before](#tab/NoHighContrast)
 
