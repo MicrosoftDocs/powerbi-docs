@@ -95,7 +95,7 @@ Certain actions, such as creating a report on top of a dataset or accessing the 
 
 ![Screenshot of default Build permission request dialog.](media/service-datasets-build-permissions/build-permission-default-request-dialog.png)
  
-### Configuring how to handle access requests
+### Changing the access request behavior
 
 If you have an [Admin, Member, or Contributor role](https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-new-workspaces#roles-in-the-new-workspaces) on the workspace where the dataset is located, you can change the default access request behavior using the Request access options that are available in the dataset settings.
 
@@ -110,7 +110,7 @@ The second option allows you to provide instructions about how to get Build perm
 Type only plain text in the text box in the Request access settings. HTML code snippets and any other type of code formatting will render as plain text rather than the intended format.
 
 >[!NOTE]
-> When you to provide specific instructions, your email address is also visible to users requesting access.
+> When you to provide specific instructions, your email address is also visible to users requesting access as shown in the illustration above.
 
 ## More granular permissions
 
