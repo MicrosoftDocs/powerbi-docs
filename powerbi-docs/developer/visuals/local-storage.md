@@ -65,4 +65,5 @@ export class Visual implements IVisual {
 
 ## Next steps
 
-[Power BI custom visual API](visual-api.md)
+>[!div class="nextstepaction"]
+>[Power BI custom visual API](visual-api.md)
