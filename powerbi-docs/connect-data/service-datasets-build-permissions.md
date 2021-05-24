@@ -89,7 +89,7 @@ Say you've distributed an app from a workspace to a group of people. Later, you 
 
     They can still see the report built on the shared dataset, but they can no longer edit it.
 
-## Configure how users request Build permissions
+## Configure how users request Build permission
 
 Certain actions, such as creating a report on top of a dataset or accessing the details page of a dataset in the datasets hub, require [Build permission](service-datasets-build-permissions.md) on the dataset. By default, when a user who doesn't have this permission tries to do such an action, they get a dialog that enables them to send a request for Build permission by email to the dataset owner. The email will include the user's details, the name of the dataset they’re requesting access to, and any other information they optionally provide.
 
