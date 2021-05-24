@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 10/12/2020
+ms.date: 05/11/2021
 LocalizationGroup: Create reports
 ---
 # Work with Report view in Power BI Desktop
@@ -24,28 +24,32 @@ When you first load data in Power BI Desktop, you'll see the Report view with a 
 
 ![Power BI Desktop](media/desktop-report-view/report-view-blank-canvas.png)
 
-You can switch between **Report**, **Data**, and **Relationship** views by selecting the icons in the left-hand navigation pane:
+You can switch between **Report**, **Data**, and **Model** views by selecting the icons in the left-hand navigation pane:
 
 ![Report view icon](media/desktop-report-view/pbi_reportviewinpbidesigner_changeview.png)
 
 Once you've added some data, you can add fields to a new visualization in the canvas.
 
-![Add a visual by dragging from the Fields pane](media/desktop-report-view/pbid_reportview_addvis.gif)
+![Add a visual by dragging from the Fields pane](media/desktop-report-view/add-visual.png)
 
 To change the type of visualization, you can select it on the canvas, then select a new type in **Visualizations**.
 
-![Change a visual by selecting a new one](media/desktop-report-view/pbid_reportview_changevis.gif)
+![Change a visual by selecting a new one](media/desktop-report-view/change-visual.png)
 
 > [!TIP]
 > Be sure to experiment with different visualization types. It's important your visualization convey information in your data clearly.
 
-A report will have at least one blank page to start. Pages appear in the navigator pane just to the left of the canvas. You can add all sorts of visualizations to a page, but it's important not to overdo it. Too many visualizations on a page make it look busy and difficult to find the right information. You can add new pages to your report. Just click **New Page** on the ribbon.
+A report will have at least one blank page to start. Pages appear in the navigation area at the bottom of the **Report** view. You can add all sorts of visualizations to a page, but it's important not to overdo it. Too many visualizations on a page make it look busy and difficult to find the right information. You can add new pages to your report. Just select **New page** from the **Insert** tab on the ribbon, and then select **Blank page**.
 
-![New page icon](media/desktop-report-view/pbidesignerreportviewnewpage.png)
+![New page menu item.](media/desktop-report-view/pbidesignerreportviewnewpage.png)
 
-To delete a page, click the **X** on the page's tab at the bottom of the Report view.
+You can also select the **+** icon next to the pages in the navigation area below the canvas to create a new page.
 
-![Add a page to a report](media/desktop-report-view/pbi_reportviewinpbidesigner_deletepage.png)
+![New page icon.](media/desktop-report-view/new-page-icon.png)
+
+To delete a page, click the **x** on the page's tab at the bottom of the Report view.
+
+![Delete a page from a report](media/desktop-report-view/pbi_reportviewinpbidesigner_deletepage.png)
 
 > [!NOTE]
 > Reports and visualizations can't be pinned to a dashboard from Power BI Desktop. To do that, you'll need to publish to your Power BI site. For more information, see [Publish datasets and reports from Power BI Desktop](desktop-upload-desktop-files.md).
@@ -72,9 +76,9 @@ Hiding a report page is easy. Simply right-click on the report page tab, and sel
 
 There are a few considerations to keep in mind when hiding a report page:
 
-* You can still see a hidden report view when in Power BI Desktop, even though the page's title is grayed out. In the following image, Page 4 is hidden.
+* You can still see a hidden report view when in Power BI Desktop, even though the page shows a hidden page icon. In the following image, the **Overview** page is hidden.
 
-    ![grayed out page that's hidden](media/desktop-report-view/report-view_06.png)
+  ![Hidden icon on a page that's hidden.](media/desktop-report-view/report-view_06.png)
 
 * You *cannot* see a hidden report page when viewing the report in the Power BI service.
 
