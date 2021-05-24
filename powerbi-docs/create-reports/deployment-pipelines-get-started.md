@@ -303,6 +303,9 @@ You can learn more about [which items are copied to the next stage](deployment-p
 >[Understand the deployment pipelines process](deployment-pipelines-process.md)
 
 >[!div class="nextstepaction"]
+>[Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md)
+
+>[!div class="nextstepaction"]
 >[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.md)
 
 >[!div class="nextstepaction"]
