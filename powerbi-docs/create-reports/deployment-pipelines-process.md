@@ -340,10 +340,13 @@ This section lists most of the limitations in deployment pipelines.
 >[Introduction to deployment pipelines](deployment-pipelines-overview.md)
 
 >[!div class="nextstepaction"]
->[Deployment pipelines best practices](deployment-pipelines-best-practices.md)
-
->[!div class="nextstepaction"]
 >[Get started with deployment pipelines](deployment-pipelines-get-started.md)
 
 >[!div class="nextstepaction"]
+>[Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md)
+
+>[!div class="nextstepaction"]
 >[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.md)
+
+>[!div class="nextstepaction"]
+>[Deployment pipelines best practices](deployment-pipelines-best-practices.md)
