@@ -54,5 +54,10 @@ export class Visual implements IVisual {
 
 ## Known limitations and issues
 
-Local Storage API isn't activated for Power BI visuals by default. If you want to activate it for your Power BI visual, send a request to Power BI visuals Support `pbicvsupport@microsoft.com`.  
+The LocalStorage limit is 1mb per GUID.
+
+While using LocalStorage API you can share data just between visuals with same GUID inside one instance of PowerBI Desktop. LocalStorage API does not allow to share the datа between two instances of PowerBI Desktop. It also can not share data between two visuals with different GUID.
+
+Local Storage API isn't activated for Power BI visuals by default. If you want to activate it for your Power BI visual, send a request to Power BI visuals Support `pbicvsupport@microsoft.com`.
+
 **Please note that your visual should be available in [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals) and be [certified](https://powerbi.microsoft.com/en-us/documentation/powerbi-custom-visuals-certified/).**
