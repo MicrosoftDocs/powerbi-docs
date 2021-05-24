@@ -101,13 +101,13 @@ If you have an [Admin, Member, or Contributor role](../collaborate-share/service
 
 ![Screenshot of the Request access configuration dialog in the dataset settings.](media/service-datasets-build-permissions/build-permission-specific-instructions-dialog.png)
  
-The first option is the default option described at the beginning of this article. Requests for Build permission on the dataset will come to you via email. When you get the request, you are responsible for acting on the request and notifying the requestor.
+The first option (here shown unchecked) is the default option described at the beginning of this section. Requests for Build permission on the dataset will come to you via email. When you get the request, you are responsible for acting on the request and notifying the requestor.
 
-The second option allows you to provide instructions about how to get Build permission, rather than receiving requests via email. You might choose this option, for example, if your organization uses an automated system for handling access requests. When users try to perform an action that they need Build permission for, if they don’t have that permission, they will see a message containing the instructions you provide. The image below is an example of such a message.
+The second option allows you to provide instructions about how to get Build permission, rather than receiving requests via email. You might choose this option, for example, if your organization uses an automated system for handling access requests. When users try to perform an action that they need Build permission for, if they don’t have that permission, they will see a message containing the instructions you provide.
+
+In the image of the the Request access setting shown above, the Instructions text area contains sample instructions. The instructions must be written in plain text only. HTML code snippets and any other type of code formatting will render as plain text rather than the intended format. The image below shows the instructions as users see them when they try to perform an action that they need Build permission for.
 
 ![Screenshot of specific instructions for requesting Build permission.](media/service-datasets-build-permissions/build-permission-specific-instructions-example.png)
- 
-Type only plain text in the text box in the Request access settings. HTML code snippets and any other type of code formatting will render as plain text rather than the intended format.
 
 >[!NOTE]
 > When you to provide specific instructions, your email address is also visible to users requesting access as shown in the illustration above.
