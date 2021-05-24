@@ -71,12 +71,12 @@ Or you can store the `host` object during initialization and access the relevant
 
 ### Implementation
 
-The specific implementations of high-contrast support vary from visual to visual and depend on the details of the graphic design. To keep important details easy to distinguish with the limited colors, high-contrast mode ordinarily requires a design that's slightly different from the default mode.
+The specific implementations of high-contrast support vary from visual to visual and depend on the details of the graphic design. To keep important details easy to distinguish with limited colors, high-contrast mode ordinarily requires a design that's slightly different from the default mode.
 
 Power BI native visuals follow these guidelines:
 
 * All data points use the same color (foreground).
-* All text, axes, arrows, lines, and so on use the foreground color.
+* All text, axes, arrows, lines, and so on, use the foreground color.
 * Thick shapes are drawn as outlines, with thick strokes (at least two pixels) and background color fill.
 * When data points are relevant, they're distinguished by different marker shapes, and data lines are distinguished by different dashing.
 * When a data element is highlighted, all other elements change their opacity to 40%.
