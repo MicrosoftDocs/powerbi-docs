@@ -120,7 +120,9 @@
       - name: "Understand the deployment process"
         href: deployment-pipelines-process.md
       - name: "Best practices"
-        href: deployment-pipelines-best-practices.md        
+        href: deployment-pipelines-best-practices.md
+      - name: "Automate deployment pipelines"
+        href: deployment-pipelines-automation.md     
   - name: How-to guides
     expanded: true
     items: 
