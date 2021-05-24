@@ -16,15 +16,17 @@ The Windows *high contrast* setting makes text and apps easier to see by display
 
 To view an implementation of high-contrast support, go to the [PowerBI-visuals-sampleBarChart visual repository](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6).
 
-## On initialization
+How to display visuals in high-contrast mode
+
+### On initialization
 
 The colorPalette member of `options.host` has several properties for high-contrast mode. Use these properties to determine whether high-contrast mode is active and, if it is, what colors to use.
 
-### Detect that Power BI is in high-contrast mode
+#### Detect that Power BI is in high-contrast mode
 
 If `host.colorPalette.isHighContrast` is `true`, high-contrast mode is active and the visual should draw itself accordingly.
 
-### Get high-contrast colors
+#### Get high-contrast colors
 
 In high-contrast mode, your visual should limit itself to the following settings:
 
@@ -62,7 +64,7 @@ constructor(options: VisualConstructorOptions) {
 
 Or you can store the `host` object during initialization and access the relevant `colorPalette` properties during update.
 
-## On update
+### On update
 
 The specific implementations of high-contrast support vary from visual to visual and depend on the details of the graphic design. To keep important details easy to distinguish with the limited colors, high-contrast mode ordinarily requires a design that's slightly different from the default mode.
 
@@ -83,7 +85,7 @@ In the following sample bar chart, for example, all bars are drawn with two pixe
 
 The next section shows one place in the `visualTransform` function that was changed to support high contrast. It's called as part of rendering during the update.
 
-### Before
+### [Before](#tab/NoHighContrast)
 
 ```typescript
 for (let i = 0, len = Math.max(category.values.length, dataValue.values.length); i < len; i++) {
@@ -104,7 +106,7 @@ for (let i = 0, len = Math.max(category.values.length, dataValue.values.length);
 }
 ```
 
-### After
+### [After](#tab/HighContrast)
 
 ```typescript
 for (let i = 0, len = Math.max(category.values.length, dataValue.values.length); i < len; i++) {
@@ -144,3 +146,10 @@ function getColumnColorByIndex(
     return getCategoricalObjectValue<Fill>(category, index, 'colorSelector', 'fill', defaultColor).solid.color;
 }
 ```
+
+---
+
+## Next steps
+
+>[!div class="nextstepaction"]
+>[Publish Power BI visuals](office-store.md)
