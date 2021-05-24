@@ -97,7 +97,7 @@ Certain actions, such as creating a report on top of a dataset or accessing the 
  
 ### Changing the access request behavior
 
-If you have an [Admin, Member, or Contributor role](collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) on the workspace where the dataset is located, you can change the default access request behavior using the Request access options that are available in the dataset settings.
+If you have an [Admin, Member, or Contributor role](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) on the workspace where the dataset is located, you can change the default access request behavior using the Request access options that are available in the dataset settings.
 
 ![Screenshot of the Request access configuration dialog in the dataset settings.](media/service-datasets-build-permissions/build-permission-specific-instructions-dialog.png)
  
@@ -126,5 +126,5 @@ You can remove Build permission. If you do, the people whose permissions you hav
 
 * [Use datasets across workspaces](service-datasets-across-workspaces.md)
 * [Share a dataset](service-datasets-share.md)
-* [Roles in the new workspaces](collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces)
+* [Roles in the new workspaces](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
