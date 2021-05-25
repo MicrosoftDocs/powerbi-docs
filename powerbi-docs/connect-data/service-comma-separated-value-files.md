@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/08/2019
+ms.date: 05/21/2021
 LocalizationGroup: Data from files
 ---
 # Get data from Comma Separated Value (.CSV) files
@@ -33,7 +33,7 @@ If you have a .CSV, it’s time to get it into your Power BI site as a dataset w
 >[!IMPORTANT]
 >The maximum file size you can import into Power BI is 1 gigabyte.
 
-1. In Power BI, in the navigator pane, click **Get Data**.
+1. In Power BI, in the navigator pane, click **Get data**.
    
    ![Screenshot of the Get Data in Power B I Desktop, showing the button in the navigator pane.](media/service-comma-separated-value-files/csv_get_data_button.png)
 2. In **Files**, click **Get**.
