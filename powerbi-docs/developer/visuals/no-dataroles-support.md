@@ -40,7 +40,7 @@ The following tabs show two examples of a Power BI visual. One visual requires b
 ## How to create a visual that doesn't require data binding
 
 > [!NOTE]
-> This feature is available from Version 3.6.0 of `powerbi-visuals-api` and above.
+> This feature is available from version 3.6.0 of `powerbi-visuals-api`.
 
 To enable the no data-binding feature, set the following two parameters in the `capabilities.json` file to *true*.
 
