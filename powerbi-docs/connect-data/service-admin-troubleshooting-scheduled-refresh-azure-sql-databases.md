@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 09/04/2019
+ms.date: 05/24/2021
 ms.custom: ''
 LocalizationGroup: Troubleshooting
 ---
@@ -24,7 +24,7 @@ While setting up scheduled refresh for Azure SQL database, if you get an error w
 
 1. At the top of the **Overview** blade, select **Set server firewall**.
 
-1. On the **Firewall settings** blade, make sure that **Allow access to Azure services** is set to **ON**.
+1. On the **Firewall settings** blade, make sure that **Allow Azure services and resources to access this server** is set to **Yes**.
 
     ![Azure allowed services](media/service-admin-troubleshooting-scheduled-refresh-azure-sql-databases/azurerefresh.png)  
 
