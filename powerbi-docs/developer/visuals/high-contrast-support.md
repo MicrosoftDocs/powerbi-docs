@@ -98,7 +98,7 @@ In the following sample bar chart, for example, all bars are drawn with two pixe
 
 ## Example
 
-The following code shows one place in the `visualTransform` function that was changed to support high-contrast. It's called as part of rendering during the update.
+The following code shows one place in the `visualTransform` function that was changed to support high-contrast. It's called as part of rendering during the update. For the full implementation of this code see the `barChart.ts` file in the [PowerBI-visuals-sampleBarChart visual repository](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6).
 
 ### [No high-contrast support](#tab/NoHighContrast)
 
