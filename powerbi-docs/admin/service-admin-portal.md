@@ -99,7 +99,7 @@ See [Monitor usage metrics for Power BI dashboards and reports](../collaborate-s
 
 1. Enable (or disable) usage metrics > **Apply**.
 
-    ![Usage metrics enabled](../collaborate-share/media/service-usage-metrics/power-bi-tenant-settings-updated.png)
+    :::image type="content" source="media/service-admin-portal/powerbi-usage-metrics-content-creators.png" alt-text="Screenshot that shows the Usage metrics for content creators setting enabled.":::
 
 ### Per-user data in usage metrics for content creators
 
@@ -192,7 +192,7 @@ Mail-enabled security groups will receive email notifications if this tenant is 
 
 ### Allow users to try Power BI paid features
 
-   :::image type="content" source="media/service-admin-portal/allow-paid-features.png" alt-text="Screen capture showing Allow users to try Power BI paid features interface.":::
+   :::image type="content" source="media/service-admin-portal/powerbi-settings-paid-features.png" alt-text="Screen capture showing Allow users to try Power BI paid features interface.":::
 
 The setting to **Allow users to try Power BI paid features** is enabled by default. This setting increases your control over how users get license upgrades. In scenarios where you have blocked self-service purchase, this setting lets users use more features free for 60 days. Users who have a Power BI (free) license can start a Power BI Pro trial. Users with a Power BI Pro license can start a Power BI Premium Per User trial. The user's license upgrade experience depends on how you combine license settings. The table below shows how the upgrade experience is affected by different setting combinations:
 
@@ -283,7 +283,7 @@ When this setting is enabled, Power BI datasets that connect to sensitivity-labe
 
 To enable sensitivity label inheritance from data sources go to the [Power BI tenant settings](service-admin-portal.md#tenant-settings), and enable the toggle under **Information protection > Apply sensitivity labels from data sources to their data in Power BI (preview)**:
 
-![Screenshot of Apply sensitivity labels from data sources to their data in Power BI tenant setting.](media/service-admin-portal/inherit-from-data-sources-tenant-setting.png)
+:::image type="content" source="media/service-admin-portal/inherit-from-data-sources-tenant-setting.png" alt-text="Screenshot of Apply sensitivity labels from data sources to their data in Power BI tenant setting.":::
 
 ## Export and sharing settings
 
@@ -293,11 +293,11 @@ Enabling this setting allows Azure Active Directory Business-to-Business (Azure 
 
 ![Allow Azure Active Directory guest users to access Power BI](media/service-admin-portal/powerbi-admin-allow-aad-b2b-guests.png)
 
-### Invite external users to your organization 
+### Invite external users to your organization
 
 The **Invite external users to your organization** setting helps organizations choose whether new external users can be invited to the organization through Power BI sharing, permissions, and subscription experiences. If the setting is disabled, an external user who isn't already a guest user in the organization, can’t be added to the organization through Power BI.
 
-![Invite external users to your organization](media/service-admin-portal/inherit-from-data-sources-tenant-setting.png)
+:::image type="content" source="media/service-admin-portal/powerbi-invite-external-users.png" alt-text="Screenshot that shows the Invite external users to your organization setting.":::
 
 > [!IMPORTANT]
 > This setting was previously called “Share content with external users”. The revised name reflects more accurately what the setting does.
@@ -321,9 +321,9 @@ As a Power BI admin, the **Publish to web** setting gives you options that let u
 > [!NOTE]
 > Only Power BI admins can allow creating new publish to web embed codes. Organizations may have existing embed codes. See the [Embed codes](service-admin-portal.md#embed-codes) section of the admin portal to review currently published reports.
 
-The following image shows the **More options (...)** menu for a report when the **Publish to web** setting is enabled.
+You can find **Publish to web** under **File** > **Embed report** when the **Publish to web** setting is enabled.
 
-![Publish to web on More options menu](media/service-admin-portal/power-bi-more-options-publish-web.png)
+:::image type="content" source="media/service-admin-portal/powerbi-embed-options.png" alt-text="Screenshot that shows the Publish to web option.":::
 
 The **Publish to web** setting in the admin portal gives options for which users can create embed codes.
 
@@ -432,11 +432,11 @@ This setting lets Power BI admins control who in the organization can use featur
 
 Read more about [Power BI featured tables in Excel](../collaborate-share/service-excel-featured-tables.md).
 
-### Share to Teams
+### Microsoft Teams integration in the Power BI service
 
-This setting allows organizations to hide the **Share to Teams** buttons in the Power BI service. When set to disabled, users don't see **Share to Teams** buttons in the action bar or context menus when they view reports and dashboards in the Power BI service.
+This setting allows organizations to access features that work with Microsoft Teams and the Power BI service. These features include launching Teams experiences from Power BI like chats, the Power BI app for Teams, and getting Power BI notifications from Teams. To completely enable or disable Teams integration, work with your Teams admin.
 
-![Screenshot of Share to Teams tenant setting in the Power B I admin portal.](media/service-admin-portal/service-teams-share-to-teams-tenant-setting.png)
+:::image type="content" source="media/service-admin-portal/powerbi-enable-teams-integration.png" alt-text="Screenshot that shows the Microsoft Teams integration tenant setting in the Power B I admin portal.":::
 
 Read more about [sharing Power BI content to Teams](../collaborate-share/service-share-report-teams.md).
 
@@ -623,7 +623,7 @@ As an administrator, you can view the workspaces that exist in your organization
 - Edit the Name and Description fields.
 - Upgrade classic workspaces to the new workspace experience
 
-![Workspaces list](media/service-admin-portal/workspaces-list.png)
+:::image type="content" source="media/service-admin-portal/powerbi-workspaces-admin-portal.png" alt-text="Screenshot that shows the Power B I workspaces list in the admin portal.":::
 
 Admins can also control users' ability to create new workspace experience workspaces, and classic workspaces. See [Workspace settings](#workspace-settings) in this article for details.
 
@@ -640,7 +640,7 @@ On the **Workspaces** tab, you see the *state* for each workspace. The following
 
 Admins can also manage and recover workspaces, using either the admin portal or PowerShell cmdlets. 
 
-![Workspaces list](media/service-admin-portal/workspaces-list.png)
+:::image type="content" source="media/service-admin-portal/powerbi-workspaces-admin-portal.png" alt-text="Screenshot that shows the Power B I workspaces list in the admin portal.":::
 
 Admins can upgrade classic workspaces to the new workspace experience. Admins can select one or more workspaces with Type **Group** to upgrade. Upgrades are queued and executed asynchronously. It may take several minutes to several days to complete all **Pending** upgrades because the overall rate of admin-initiated upgrades is limited to keep the service running smoothly. The **Workspace upgrade status** column helps admins track the progress of the admin-initiated upgrades. Admins can cancel admin-initiated upgrades when they are **Pending**. To upgrade a workspace immediately, contact the Workspace Admin and have them start the upgrade through the workspace settings pane. [Learn more about workspace upgrade before starting your Power BI admin-initiated workspace upgrade.](../collaborate-share/service-upgrade-workspaces.md).
 
