@@ -22,8 +22,7 @@ To get started creating visuals, see [Developing a a Power BI circle card visual
 
 ## Add color to data points
 
-A different color represents each data point.
-Add the color to the `BarChartDataPoint` interface, as in the following example:
+Each data point is represented by a different color. Add the color to the `BarChartDataPoint` interface, as in the following example:
 
 ```typescript
 /**
@@ -123,6 +122,8 @@ this.barSelection
 
 ## Next steps
 
-To learn more about Power BI visuals, see [Capabilities and properties of Power BI visuals](capabilities.md).
+> [!div class="nextstepaction"]
+> [Capabilities and properties of Power BI visuals](capabilities.md).
 
-To learn more about developing Power BI visuals, see [How to debug Power BI visuals](visuals-how-to-debug.md) and [Troubleshoot Power BI visuals](power-bi-custom-visuals-troubleshoot.md).
+> [!div class="nextstepaction"]
+> [How to debug Power BI visuals](visuals-how-to-debug.md)
