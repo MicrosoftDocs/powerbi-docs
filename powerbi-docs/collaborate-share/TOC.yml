@@ -61,6 +61,8 @@
         href: service-share-report-teams.md
       - name: "Get a link preview in Teams"
         href: service-teams-link-preview.md
+      - name: "View all your Power BI tabs in Teams"
+        href: service-teams-pivot.md
       - name: "Analyze Teams usage in Teams"
         href: service-teams-analytics.md
     - name: Publish and share your work
