@@ -8,7 +8,7 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/31/2021
+ms.date: 02/01/2021
 LocalizationGroup: Consumers
 ---
 # Export data from a visual
