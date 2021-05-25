@@ -41,7 +41,7 @@ The *colorPalette* member of `options.host` has several properties for high-cont
     > [!NOTE]
     > If a secondary color is needed, foreground color may be used with some opacity (Power BI native visuals use 40% opacity). Use this sparingly to keep the visual details easy to see.
 
-During initialization, you can store the following values:
+During initialization, you can store the following values in your `constructor` method:
 
 ```typescript
 private isHighContrast: boolean;
