@@ -1,13 +1,13 @@
 ---
 title: Embed content in your Power BI embedded analytics application enabling better embedded BI insights for your organization
-description: Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools. Enable better embedded BI insights using Power BI embedded analytics.
+description: Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
-ms.custom: seodec18
+ms.custom: ''
 ms.date: 12/17/2020
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---

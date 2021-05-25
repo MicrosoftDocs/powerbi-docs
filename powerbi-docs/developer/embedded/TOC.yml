@@ -4,7 +4,9 @@
   items:
   - name: Overview
     expanded: true
-    items: 
+    items:
+    - name: "What is Power BI embedded analytics?"
+      href: /javascript/api/overview/powerbi/power-bi-embedded-analytics?toc=/power-bi/developer/embedded/TOC.json?bc=/power-bi/breadcrumb/toc.json
     - name: "What is embedding with Power BI"
       href: embedding.md
     - name: "What is Power BI Embedded in Azure"
@@ -109,9 +111,11 @@
     - name: "Power BI libraries"
       href: https://go.microsoft.com/fwlink/?linkid=848274
     - name: Azure CLI
-      href: /cli/azure/ext/powerbidedicated/powerbi
+      href: /cli/azure/powerbi
   - name: Resources
     items:
+    - name: "Power BI Dev Camp"
+      href: dev-camp-links.md    
     - name: "Developer center"
       href: https://powerbi.microsoft.com/en-us/developers/
     - name: "Embedding setup tool"

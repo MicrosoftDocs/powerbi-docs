@@ -7,14 +7,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 12/14/2020
+ms.date: 04/15/2021
 ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
 ---
 
 # Ways to collaborate and share in Power BI
 
-You've created dashboards and reports. Maybe you want to collaborate on them with your coworkers. Or maybe you're ready to distribute them more widely. What's the best way to collaborate and share them? In this article, we compare your options.
+You've created reports or dashboards. Maybe you want to collaborate on them with your coworkers. Or maybe you're ready to distribute them more widely. What's the best way to collaborate and share them? In this article, we compare your options.
 
 ![Apps in the Power BI service](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-new-look.png)
 
@@ -27,9 +27,9 @@ You've created dashboards and reports. Maybe you want to collaborate on them wit
 
 **Distribute or share dashboards and reports**
 
-- [*Share dashboards or reports*](#share-dashboards-and-reports) from your My Workspace or another workspace.
+- [*Share reports or dashboards*](#share-reports-or-dashboards) from your My Workspace or another workspace.
 - Annotate and [share from the Power BI *mobile apps*](#annotate-and-share-from-the-power-bi-mobile-apps).
-- Bundle dashboards and reports in workspaces into *apps* and [distribute your apps](#distribute-insights-in-an-app) to a larger group or your whole organization.
+- Bundle reports and dashboards in workspaces into *apps* and [distribute your apps](#distribute-insights-in-an-app) to a larger group or your whole organization.
 - [Embed reports](#embed-reports-in-secure-portals-or-public-web-sites) in *secure portals* or *public web sites*.
 - [Print reports](#print-or-save-as-pdf-or-other-static-file).
 - [Create a *template app*](#create-and-deploy-template-apps) that you can distribute to external Power BI users, via Microsoft AppSource.
@@ -51,12 +51,12 @@ Workspaces provide roles that determine what permissions your coworkers have. Us
 
 Workspaces are better for collaboration than My Workspace, because they allow co-ownership of content. You and your entire team can easily make updates or give others access. My Workspace is best used by individuals for one-off or personal content.
 
-Now, imagine you have a finished dashboard you need to share with your colleagues. What's the best way to give them access to the dashboard? The answer depends on a number of factors. 
+Now, imagine you have a finished report you need to share with your colleagues. What's the best way to give them access to the report? The answer depends on a number of factors. 
 
-- If colleagues need to keep the dashboard up to date, or need access to all the content in the workspace, add them to the workspace as Members or Contributors. 
+- If colleagues need to keep the report up to date, or need access to all the content in the workspace, add them to the workspace as Members or Contributors. 
 - If colleagues just need to view the content in the workspace, add them as Viewers.
-- If colleagues just need to see that dashboard and not all the content in the workspace, you can share the dashboard with them directly.
-- If the dashboard is part of a set of dashboards and reports that you need to distribute to many colleagues, then publishing an *app* is likely the best choice.
+- If colleagues just need to see that report and not all the content in the workspace, you can share the report via link or grant them direct access.
+- If the report is better consumed with related reports or dashboards that you need to distribute to many colleagues, then publishing an *app* is likely the best choice.
 
 Read about how to [create the new workspaces](service-create-the-new-workspaces.md). 
 
@@ -70,17 +70,31 @@ When you add a Power BI report tab to Microsoft Teams, Teams automatically creat
 
 Read more about [collaborating in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md).
 
-## Share dashboards and reports
+## Share reports or dashboards
 
 Let's say your report in Power BI Desktop is ready, and you want other people to have access to it. One way to get it to them is to *share* it in the Power BI service. You publish it to your own My Workspace or another workspace. Maybe you create a dashboard to go with it, and you're ready.
 
-![Share a report](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-report.png)
+![Screenshot of sharing a report.](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-new-look.png)
+
 
 You need a Power BI Pro license to share your content. The people you share it with do too, or the content needs to be in a workspace in a [Premium capacity](../admin/service-premium-what-is.md). When you share a dashboard or report, recipients can view it and interact with it. If you give them permission, they can edit it, make a copy of it, and share it with their coworkers. They see the same data that you see in the dashboard or report. They have access to all the data in the underlying dataset, unless [row-level security (RLS)](../admin/service-admin-rls.md) is applied.
 
-You can share with people outside your organization, too. They can view and interact with the dashboard or report too, but can't share it. 
+You can share reports via links that give access:
 
-Read about how to [share dashboards and reports](service-share-dashboards.md) from the Power BI service. Or read about adding a filter to a link and [share a filtered view of your report](service-share-reports.md).
+![Screenshot of Send link dialog box.](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-copy-link-outlook-teams.png)
+
+
+Additionally, you can share reports by granting users direct access:
+
+![Screenshot of Grant people report access dialog.](media/service-how-to-collaborate-distribute-dashboards-reports/grant-report-access.png)
+
+You can also share dashboards by granting user direct access but not via links that give access:
+
+![Screenshot of Grant access to a dashboard dialog.](media/service-how-to-collaborate-distribute-dashboards-reports/grant-dashboard-access-dialog.png)
+
+If you share a dashboard with people outside your organization, they can view and interact with the dashboard, but they can't share it with others. 
+
+Read about how to [share reports and dashboards](service-share-dashboards.md) from the Power BI service. Or read about adding a filter to a link and [share a filtered view of your report](service-share-reports.md).
 
 ## Annotate and share from the Power BI mobile apps
 

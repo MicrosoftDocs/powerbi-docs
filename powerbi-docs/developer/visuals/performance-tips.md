@@ -1,6 +1,6 @@
 ---
-title: Performance tips in Power BI embedded analytics for better embedded BI insights
-description: How to build a high performance Power BI visual. Enable better embedded BI insights using Power BI embedded analytics.
+title: Performance tips in Power BI
+description: How to build a high performance Power BI visual.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins

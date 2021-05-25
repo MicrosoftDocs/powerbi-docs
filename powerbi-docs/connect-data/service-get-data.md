@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 04/02/2021
+ms.date: 04/21/2021
 LocalizationGroup: Get started
 ---
 # Data sources for the Power BI service
@@ -55,7 +55,7 @@ Where you store your files makes a significant difference, too. OneDrive for Bus
 **Databases in the Cloud** - From the Power BI service, you can connect live to:
 
 * Azure SQL Database
-* Azure SQL Data Warehouse
+* Azure Synapse Analytics (formerly SQL Data Warehouse)
 * Spark on Azure HDInsight
 
 Connections from Power BI to these databases are live. Let's say you connect to an Azure SQL Database. You then begin exploring its data by creating reports in Power BI. Whenever you slice your data or add another field to a visualization, Power BI makes a query right to the database. To learn more, see [Azure and Power BI](service-azure-and-power-bi.md).
@@ -93,7 +93,7 @@ If you save your files on OneDrive for Business or SharePoint - Team Sites, you 
 
 Content packs from services are automatically updated. In most cases, they're updated once a day. You can manually refresh, but if you see any updated data will depend on the service provider. Updates to content packs from people in your organization will depend on the data sources used. They'll also depend on how the person who created the content pack configured the refresh.
 
-Azure SQL Database, Azure SQL Data Warehouse, and Spark on Azure HDInsight are data sources in the Cloud. The Power BI service is also in the cloud so Power BI can connect to those data sources live, using **DirectQuery**. What you see in Power BI is always in sync and there's no need to set up a scheduled refresh.
+Azure SQL Database, Azure Synapse Analytics (formerly SQL Data Warehouse), and Spark on Azure HDInsight are data sources in the Cloud. The Power BI service is also in the cloud so Power BI can connect to those data sources live, using **DirectQuery**. What you see in Power BI is always in sync and there's no need to set up a scheduled refresh.
 
 When you connect to SQL Server Analysis Services from Power BI, it's a live connection just like an Azure database in the cloud. The difference is the database itself is on a server in your organization. This type of connection requires a Power BI gateway, which an IT department configures.
 

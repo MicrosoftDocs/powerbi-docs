@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 03/24/2021
+ms.date: 05/11/2021
 ---
 
 # Understand the deployment process
@@ -97,6 +97,8 @@ Deployment pipelines doesn't support the following items:
 * [Template app workspaces](../connect-data/service-template-apps-create.md#create-the-template-workspace)
 
 * Workbooks
+
+* Goals
 
 ## Item properties copied during deployment
 
@@ -193,7 +195,7 @@ Below are a few examples of how you may integrate incremental refresh with deplo
 
 #### Limitations and considerations
 
-For incremental refresh, deployment pipelines only supports datasets that use [enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md). Beginning with the September 2020 release of Power BI Desktop, all datasets created or modified with Power BI Desktop automatically implement enhanced dataset metadata.
+For incremental refresh, deployment pipelines only supports datasets that use [enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md). All datasets created or modified with Power BI Desktop automatically implement enhanced dataset metadata.
 
 When republishing a dataset to an active pipeline with incremental refresh enabled, the following changes will result in deployment failure due to data loss potential:
 
@@ -338,10 +340,13 @@ This section lists most of the limitations in deployment pipelines.
 >[Introduction to deployment pipelines](deployment-pipelines-overview.md)
 
 >[!div class="nextstepaction"]
->[Deployment pipelines best practices](deployment-pipelines-best-practices.md)
-
->[!div class="nextstepaction"]
 >[Get started with deployment pipelines](deployment-pipelines-get-started.md)
 
 >[!div class="nextstepaction"]
+>[Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md)
+
+>[!div class="nextstepaction"]
 >[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.md)
+
+>[!div class="nextstepaction"]
+>[Deployment pipelines best practices](deployment-pipelines-best-practices.md)

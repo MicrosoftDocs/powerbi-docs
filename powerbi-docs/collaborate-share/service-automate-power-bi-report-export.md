@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/10/2020
+ms.date: 04/21/2021
 LocalizationGroup: Get started
 ---
 # Export and email a Power BI report with Power Automate
@@ -28,7 +28,7 @@ To follow along, make sure you have:
 In this task, you create a simple flow from scratch. The flow exports a Power BI report as a PDF, and attaches it to an email to be sent on a weekly basis.  
 
 1. Sign in to Power Automate (flow.microsoft.com).
-2. Select **Create** > **Scheduled flow**. 
+2. Select **Create** > **Scheduled cloud flow**. 
 
     :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-scheduled-flow-2.png" alt-text="Create a scheduled flow in Power Automate.":::
 
@@ -38,14 +38,14 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
 
     :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-build-flow-5.png" alt-text="Power Automate, schedule the flow.":::
 
-6. In **Recurrence**, select **Show advanced options** and enter a value in **At these hours** and **At these minutes** to set a specific time for your flow to run.
+6. In **Recurrence**, select **Edit** > **Show advanced options** and enter a value in **At these hours** and **At these minutes** to set a specific time for your flow to run.
  
     :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-recurrence-6.png" alt-text="Set recurrence in Power Automate.":::
 
 7. Select **New Step**.
-8. In **Choose an action**, search for **Power BI** and select **Export to File for Power BI Reports**.
+8. In **Choose an operation**, search for **Power BI** and select **Export to File for Power BI Reports**.
  
-    :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-choose-action-8.png" alt-text="Choose an action in Power Automate.":::
+    :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-choose-action-8.png" alt-text="Choose an operation in Power Automate.":::
 
 9. In **Export to File for Power BI Reports**, select a **Workspace** and **Report** from the dropdowns.
 10. Select the desired **Export Format** for your Power BI report.
@@ -61,7 +61,7 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
     :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-bookmark-url-12.png" alt-text="Select the bookmark name in the U R L.":::
 
 13. Select **New Step**.
-14. In **Choose an action**, search for **Outlook** and select **Send an email (V2)**.
+14. In **Choose an operation**, search for **Outlook** and select **Send an email (V2)**.
 15. In **Send an email (V2)**, complete the **To**, **Subject**, and **Body** fields for your email.
 16. Select **Show advanced options**. In **Attachments Name – 1**, enter a name for your attachment. Add a file extension to the file name (for example, .PDF) that matches your desired **Export Format**.
 17. In **Attachment Content**, select **File Content** to attach your exported Power BI report.  

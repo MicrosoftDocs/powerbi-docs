@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 09/06/2019
+ms.date: 05/20/2021
+ms.custom: video-l2wy4XgQIu0
 LocalizationGroup: Data from files
 ---
 # Get data from Excel workbook files
@@ -60,7 +61,18 @@ If you save your workbook files to **OneDrive**, you'll have a couple of ways yo
 ### Import Excel data into Power BI
 When you choose **Import**, any supported data in tables and/or a data model are imported into a new dataset in Power BI. If you have any Power View sheets, those will be re-created in Power BI as reports.
 
-You can continue editing your workbook. When your changes are saved, they’ll be synchronized with the dataset in Power BI, usually within about an hour. If you need more immediate gratification, you can just click Publish again, and your changes are exported right then and there. Any visualizations you have in reports and dashboards will be updated, too.
+You can continue editing your workbook. When your changes are saved, they’ll be synchronized with the dataset in Power BI, usually within about an hour. If you need more immediate gratification, you can just click Publish again, and your changes are exported. Any visualizations you have in reports and dashboards will be updated, too, based on the following table.
+
+Refresh triggers:
+
+|Report tiles  |Dashboard tiles  |
+|---------|---------|
+|Open report (after the cache has expired)     |Open the dashboard (after the cache is refreshed)         |
+|Select **Refresh** in the report     |Select **Refresh** in the dashboard         |
+|     |Automatically for pinned tiles (when the cache is refreshed) if the dashboard is already open         |
+
+> [!NOTE]
+> Pinned *pages* do not have the automatic refresh feature.
 
 Choose this option if you’ve used Get & Transform data or Power Pivot to load data into a data model, or if your workbook has Power View sheets with visualizations you want to see in Power BI.
 

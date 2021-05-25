@@ -1,6 +1,6 @@
 ---
-title: Migration Tool from Workspace Collections to the Power BI embedded analytics Power BI Embedded solution for better embedded BI insights
-description: This migration tool can be used to copy your reports from the Power BI Embedded Azure service (PaaS) to the Power BI service (SaaS). Enable better embedded BI insights using Power BI embedded analytics.
+title: Migration Tool from Workspace Collections to the Power BI embedded analytics
+description: This migration tool can be used to copy your reports from the Power BI Embedded Azure service (PaaS) to the Power BI service (SaaS).
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''

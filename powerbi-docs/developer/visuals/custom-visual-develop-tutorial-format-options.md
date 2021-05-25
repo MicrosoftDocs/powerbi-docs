@@ -1,6 +1,6 @@
 ---
-title: Adding formatting options to a Power BI custom visual in Power BI embedded analytics for better embedded BI insights
-description: A tutorial on how to develop Power BI custom visual format options. Enable better embedded BI insights using Power BI embedded analytics.
+title: Adding formatting options to a Power BI custom visual
+description: A tutorial on how to develop Power BI custom visual format options.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
@@ -278,7 +278,7 @@ Now you can open the Power BI Desktop report, and import the Circle Card custom 
 
 ## Debugging
 
-For tips about debugging your custom visual, see the [debugging guide](./visuals-how-to-debug.md#how-to-debug-power-bi-visuals).
+For tips about debugging your custom visual, see the [debugging guide](./visuals-how-to-debug.md).
 
 ## Next steps
 

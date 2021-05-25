@@ -7,6 +7,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/13/2019
+ms.custom: video-qMf7OLJfCz8
 LocalizationGroup: Ask questions of your data
 ---
 # Use Power BI Q&A to explore your data and create visuals

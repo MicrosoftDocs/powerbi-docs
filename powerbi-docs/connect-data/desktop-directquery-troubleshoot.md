@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 10/24/2019
+ms.date: 05/14/2021
 ---
 
 # Troubleshoot developing DirectQuery models in Power BI Desktop
@@ -32,7 +32,7 @@ For some DirectQuery sources, this log includes all queries sent to the underlyi
 
 - SQL Server
 - Azure SQL Database
-- Azure SQL Data warehouse
+- Azure Synapse Analytics (formerly SQL Data Warehouse)
 - Oracle
 - Teradata
 - SAP HANA

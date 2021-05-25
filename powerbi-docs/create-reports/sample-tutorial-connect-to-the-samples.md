@@ -4,7 +4,7 @@ description: Learn to install and explore the Retail Analysis sample in the Powe
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: amac
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual

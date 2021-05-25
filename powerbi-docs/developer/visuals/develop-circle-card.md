@@ -1,6 +1,6 @@
 ---
-title: Learn how to develop your own Power BI visual using the circle card visual as an example in Power BI embedded analytics for better embedded BI insights
-description: This tutorial explains how you can develop a Power BI visual. Enable better embedded BI insights using Power BI embedded analytics.
+title: Learn how to develop your own Power BI visual using the circle card visual as an example
+description: This tutorial explains how you can develop a Power BI visual.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
@@ -55,7 +55,7 @@ In this section you'll create a project for the circle card visual.
     pbiviz start
     ```
     >[!IMPORTANT]
-    >Do not close the PowerSell window until the end of the tutorial. To stop the visual from running, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
+    >Do not close the PowerShell window until the end of the tutorial. To stop the visual from running, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
 
 ## View the circle card in Power BI service
 
@@ -111,7 +111,7 @@ Set up the **visual.ts** file by deleting and adding a few lines of code.
         import * as d3 from "d3";
         type Selection<T extends d3.BaseType> = d3.Selection<T, any,any, any>;
         ```
-    
+
         >[!NOTE]
         >If you didn't install this library as part of your setup, [install the D3 JavaScript library](environment-setup.md#d3-javascript-library).
 
@@ -391,7 +391,7 @@ Modify the **capabilities.json** file to define the data role and data view mapp
 
 * **Defining the data view mapping**
 
-    Define a filed called *measure* in the *dataViewMappings* array. This field can be passed to the data role.
+    Define a field called *measure* in the *dataViewMappings* array. This field can be passed to the data role.
 
     1. Open the **capabilities.json** file in VS Code.
 
@@ -449,7 +449,7 @@ Make changes to the **visual.ts** file, so that the circle card visual will be a
 
 1. Open the **visual.ts** file in VS Code.
 
-2. Add the following line to import the `DataView` interface from the `powerbi` module.
+2. Make sure the following line appears in the file to import the `DataView` interface from the `powerbi` module. If it is not in the file, then add it.
 
     ```typescript
     import DataView = powerbi.DataView;

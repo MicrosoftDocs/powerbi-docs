@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 04/16/2021
 
 
 LocalizationGroup: Common tasks
@@ -90,7 +90,7 @@ If you aren't receiving subscription emails, check these factors:
 - Make sure that your User Principal Name (UPN) can receive emails.
 - Though you have a Power BI Pro or Premium Per User (PPU) license, you may not have a Microsoft Exchange license. If not, your Azure Active Directory account may not have an email or alternate email address specified. In this case, though the subscription appears to go out, you never receive a copy.  If your Power BI admin assigns an email address, Power BI will synchronize the update the next time you sign in, and use that e-mail address for the subscription.
 - If you have an alternate email address but no primary, Power BI uses that to deliver the subscription.
-
+- Email subscriptions are not supported when Block Public Internet Access is enabled in the Power BI admin portal. 
 
 ## Next steps
 

@@ -57,7 +57,7 @@ Select a legend category to cross-highlight other visuals and cross-highlight ot
 
 ## Sort
 
-With the new sort functionality, you can sort multiple aspects of a visual at once. Sort by the category, and also by the axis in each multiple. 
+With the sort functionality, you can sort multiple aspects of a visual at once. Sort by the category, and also by the axis in each multiple. 
 
 :::image type="content" source="media/power-bi-visualization-small-multiples/small-multiple-sort.png" alt-text="Sort the small multiples.":::
 

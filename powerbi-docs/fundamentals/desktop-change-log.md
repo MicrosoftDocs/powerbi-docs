@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/30/2021
+ms.date: 05/04/2021
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,23 @@ ms.date: 03/30/2021
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## April 2021 QFE 2
+
+*Version: 2.92.1067.0, Released: May 4th, 2021*
+
+Bug fixes/improvements:
+- Fix for Adobe Analytics Connector V1 endpoint token not renewed issue.
+- Fix for a frown error that could occur in the model view while loading older PBIX files: now no frown dialog will be shown. 
+- Fix for a model view bug: now users can't create relationships between DirectQuery tables from the same Power BI dataset or Azure Analysis Services instance as this scenario isn't supported.
+
+## April 2021 QFE 1
+
+*Version: 2.92.943.0, Released: April 27, 2021*
+
+Bug fixes/improvements:
+- Improvements in Microsoft Information Protection SDK hang detection and stop throwing "Unknown hard error" dialog.
+- Fix for corrupted credentials: users will not get the alert warning that their credentials can't be decrypted, now users may consider manually removing credentials folder (user.zip file) as a workaround.
 
 ## March 2021 QFE 1
 

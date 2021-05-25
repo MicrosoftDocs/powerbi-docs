@@ -1,13 +1,13 @@
 ---
-title: Move your Power BI embedded analytics application to production for better embedded BI insights
-description: Learn what are the needed steps to move your Power BI application to production. Enable better embedded BI insights using Power BI embedded analytics.
+title: Move your Power BI embedded analytics application to production
+description: Learn what are the needed steps to move your Power BI application to production.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.custom: seodec18
+ms.custom: ''
 ms.date: 06/02/2020
 #Customer intent: As an ISV developer, I want to embed a report, dashboard or tile into an application so that my customers can share data.
 ---
@@ -56,19 +56,17 @@ If you run out of embed tokens while testing, you need to purchase a Power BI Em
 
 Once you create a capacity, you can assign your workspace to that capacity.
 
-All the workspaces that contain Power BI resources related to the embedded content (including datasets, reports, and dashboards), must be assigned to capacities. For example, if an embedded report and the dataset bound to it reside in different workspaces, both workspaces must be assigned to capacities.
+Each workspace that contains a Power BI item related to the embedded content (including datasets, reports, and dashboards), must be assigned to capacities. For example, if an embedded report and the dataset bound to it reside in different workspaces, both workspaces must be assigned to capacities.
 
 ### Assign a workspace to a capacity using a service principal
 
-To assign a capacity to a workspace using a[service principal](embed-service-principal.md), use the [Power BI REST API](/rest/api/power-bi/capacities/groups_assigntocapacity). When you're using the Power BI REST APIs, make sure to use the [service principal object ID](embed-service-principal.md).
+To assign a workspace to a capacity using a [service principal](embed-service-principal.md), use the [Power BI REST API](/rest/api/power-bi/capacities/groups_assigntocapacity). When you're using the Power BI REST APIs, make sure to use the [service principal object ID](embed-service-principal.md).
 
 ### Assign a workspace to a capacity using a master user
 
-Follow the steps below to assign a capacity to a workspace using a **master user**.
+You can also assign a workspace to a capacity from the settings of that workspace using a **master user**. The master user must have admin permissions to that workspace, and also capacity assignment permissions to that capacity.
 
-1. Open the workspace in **Power BI service**, select the 
-
-1. Within the **Power BI service**, expand workspaces and select the ellipsis for the workspace you're using for embedding your content. Then select **Edit workspaces**.
+1. Within the **Power BI service**, expand workspaces and select the ellipsis for the workspace you're using for embedding your content. Then select **Workspace settings**.
 
     >[!div class="mx-imgBorder"]
     >:::image type="content" source="media/move-to-production/workspace-settings.png" alt-text="A screenshot showing the workspace settings menu in Power B I service portal.":::

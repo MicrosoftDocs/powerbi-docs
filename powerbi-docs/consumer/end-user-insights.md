@@ -4,7 +4,7 @@ description: As a Power BI end user, learn how to get insights about your dashbo
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
-featuredvideoid: et_MLSL2sA8
+ms.custom: video-et_MLSL2sA8
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual

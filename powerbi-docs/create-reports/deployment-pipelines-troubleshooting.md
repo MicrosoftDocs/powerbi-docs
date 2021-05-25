@@ -159,19 +159,19 @@ If one of the rule options is greyed out, it could be because of the reasons lis
 
 * **Parameters rules** - There are no parameters a rule can be configured for.
 
-### Why am I getting the deployment was stopped error?
+### Why am I getting the message *continue the deployment?*
 
 Source stage schema breaking changes, such as replacing a column type from an integer to a string, cause data loss in the target dataset after deployment.
 
-During deployment, the metadata in the source dataset is checked against the target metadata. Schema breaking changes will cause the deployment to stop. When this happens, you'll receive the *deployment was stopped* error.
+During deployment, the metadata in the source dataset is checked against the target metadata. Schema breaking changes will cause the deployment to stop. When this happens, you'll receive the *continue the deployment* message.
 
-:::image type="content" source="media/deployment-pipelines-troubleshooting/deployment-was-stopped-error.png" alt-text="A screenshot of the deployment was stopped error in deployment pipelines":::
+:::image type="content" source="media/deployment-pipelines-troubleshooting/deployment-was-stopped-error.png" alt-text="A screenshot of the continue the deployment message in deployment pipelines":::
 
 If you continue with the deployment, you'll loose the data in the target stage. You can use this option if the changes you made to the dataset were intentional. After the deployment completes, you'll need to refresh the target dataset.
 
-If the changes were not intentional, close the error window, upload a fixed PBIX file to the source workspace and redeploy.
+If the changes were not intentional, close the message window, upload a fixed PBIX file to the source workspace and redeploy.
 
-After a deployment fails due to schema changes, the target stage displays the *Deployment failed* message, followed by the *Show details* link. The link opens the same *deployment was stopped* error window that was displayed during the failed deployment.
+After a deployment fails due to schema changes, the target stage displays the *Deployment failed* message, followed by the *Show details* link. The link opens the same *continue the deployment* message that was displayed during the failed deployment.
 
 ### Does deployment pipelines support multi-geo?
 

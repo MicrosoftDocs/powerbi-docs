@@ -1,6 +1,6 @@
 ---
-title: Get a dataset to add rows in Power BI embedded analytics for better embedded BI insights
-description: Walkthrough to push data - Get a dataset to add rows into a Power BI table. Enable better embedded BI insights using Power BI embedded analytics.
+title: Get a dataset to add rows
+description: Walkthrough to push data - Get a dataset to add rows into a Power BI table.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: madia

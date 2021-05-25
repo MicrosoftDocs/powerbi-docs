@@ -1,6 +1,6 @@
 ---
-title: Embedded analytics with Power BI embedded analytics for better embedded BI insights
-description: Power BI offers APIs to embed Power BI embedded analytics dashboards and reports into applications. Enable better embedded BI insights using Power BI embedded analytics.
+title: Embedded analytics with Power BI
+description: Power BI offers APIs to embed Power BI embedded analytics dashboards and reports into applications.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "app owns data"
   - "user owns data"
   - "Power BI APIs"
-ms.custom: seodec18
+ms.custom: ''
 ms.date: 04/02/2021
 ---
 

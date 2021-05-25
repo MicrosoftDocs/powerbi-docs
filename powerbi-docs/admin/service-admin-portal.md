@@ -7,8 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 04/05/2021
-ms.custom: seodec18
+ms.date: 05/20/2021
+ms.custom: ''
 LocalizationGroup: Administration
 ---
 
@@ -285,6 +285,20 @@ To enable sensitivity label inheritance from data sources go to the [Power BI te
 
 :::image type="content" source="media/service-admin-portal/inherit-from-data-sources-tenant-setting.png" alt-text="Screenshot of Apply sensitivity labels from data sources to their data in Power BI tenant setting.":::
 
+### Restrict content with protected labels from being shared via link with everyone in your organization
+When this setting is enabled, users can't generate a sharing link for **People in your organization** for content with protection settings in the sensitivity label.
+
+![Restrict content with protected labels from being shared via link with everyone in your organization.](media/service-admin-portal/admin-restrict-content-protected-labels-enabled.png)
+
+> [!NOTE]
+> This setting is disabled if you haven't enabled both the **Allow users to apply sensitivity labels for Power BI content** setting and the **Allow shareable links to grant access to everyone in your organization** setting.
+
+Sensitivity labels with protection settings include encryption or content markings. For example, your organization may have a "Highly Confidential" label that includes encryption and applies a "Highly Confidential" watermark to content with this label. Therefore, when this tenant setting is enabled and a report has a sensitivity label with protection settings, then users can't create sharing links for **People in your organization**: 
+
+![Example of disabled sharing link to People in your organization.](media/service-admin-portal/admin-organization-doesnt-allow-option.png)
+
+To learn more about protection settings for sensitivity labels, check out the Microsoft 365 article [Restrict access to content by using sensitivity labels to apply encryption](/microsoft-365/compliance/encryption-sensitivity-labels).
+
 ## Export and sharing settings
 
 ### Allow Azure Active Directory guest users to access Power BI
@@ -313,6 +327,16 @@ The following image shows the option to Allow Azure Active Directory external gu
 :::image type="content" source="media/service-admin-portal/allow-external-guest-users-azure-ad.png" alt-text="Screenshot that shows the Allow Azure A D guest users to edit and manage content in the organization.":::
 
 In the admin portal, you also control which users have permissions to invite external users to the organization. See [Share content with external users](#export-and-sharing-settings) in this article for details.
+
+### Show Azure Active Directory guests in lists of suggested people
+
+The **Show Azure Active Directory guests in lists of suggested people** setting helps organizations limit visibility of external users in sharing experiences. When disabled, Azure Active Directory (Azure AD) guest users are not shown in people picker suggested users lists. This helps prevent accidental sharing to external users and seeing which external users have been added to your organization through Power BI sharing UIs. 
+
+> [!IMPORTANT]
+> When the setting is set to disabled, you can still give permission to a guest user by providing their full email address in people pickers.
+  
+![Show Azure Active Directory guests in lists of suggested people](media/service-admin-portal/powerbi-admin-tenant-settings-guests-in-lists-suggested-people.png)
+
 
 ### Publish to web
 
@@ -440,10 +464,10 @@ This setting allows organizations to access features that work with Microsoft Te
 
 Read more about [sharing Power BI content to Teams](../collaborate-share/service-share-report-teams.md).
 
-### Allow shareable links to grant access to all people in your organization
-This tenant setting is available for admins looking to disable creating shareable links to **People in your organization**. You can find this option in the Admin portal by navigating to **Tenant settings** > **Export and sharing settings** > **Allow shareable links to grant access to all people in your organization**.
+### Allow shareable links to grant access to everyone in your organization
+This tenant setting is available for admins looking to disable creating shareable links to **People in your organization**. You can find this option in the Admin portal by navigating to **Tenant settings** > **Export and sharing settings** > **Allow shareable links to grant access to everyone in your organization**.
 
-![Screenshot of allow shareable links to grant access to all People in your organization setting](media/service-admin-portal/admin-allow-shareable-links.png)
+![Screenshot of allow shareable links to grant access to everyone in your organization setting.](media/service-admin-portal/allow-shareable-links-grant-access-everyone.png)
 
 As with other tenant settings, you can enable sharing links to **People in your organization** for:
 - **The entire organization**
@@ -452,7 +476,7 @@ As with other tenant settings, you can enable sharing links to **People in your 
 
 If this setting is disabled for a user with share permissions to a report, that user can only share the report via link to **Specific people** or **People with existing access**.
 
-![Screenshot showing share option disabled](media/service-admin-portal/admin-share-option-disabled.png)
+![Screenshot showing share option disabled.](media/service-admin-portal/admin-share-option-disabled.png)
 
 ## Content pack and app settings
 
@@ -476,21 +500,31 @@ Report creators can share apps directly with end users without requiring install
 
 ### Allow XMLA endpoints and Analyze in Excel with on-premises datasets
 
-Users in the organization can use Excel to view and interact with on-premises Power BI datasets. This also allows connections to XMLA endpoints. [Learn more](../collaborate-share/service-analyze-in-excel.md)
+Users in the organization can use Excel to view and interact with on-premises Power BI datasets. This also allows connections to XMLA endpoints. Learn more about [analyzing in Excel](../collaborate-share/service-analyze-in-excel.md).
 
 ### Use ArcGIS Maps for Power BI
 
-Users in the organization can use the ArcGIS Maps for Power BI visualization provided by Esri. [Learn more](../visuals/power-bi-visualizations-arcgis.md)
+Users in the organization can use the ArcGIS Maps for Power BI visualization provided by Esri. Learn more about [ArcGIS maps](../visuals/power-bi-visualizations-arcgis.md).
 
 ### Use global search for Power BI (Preview)
 
 Users in the organization can use external search features that rely on Azure Search.
 
-## R visuals settings
+### Integration with SharePoint and Microsoft Lists
 
-### Interact with and share R visuals
+Users in the organization can create Power BI reports directly from SharePoint and Microsoft Lists. Then they can build Power BI reports on the data in those lists and publish them back to the lists, to be visible to others who can access the list. This setting is in **Tenant settings** > **Integration settings**.
 
-Users in the organization can interact with and share visuals created with R scripts. [Learn more](../visuals/service-r-visuals.md)
+:::image type="content" source="media/service-admin-portal/admin-integration-sharepoint-lists.png" alt-text="Allow integration with SharePoint and Microsoft Lists.":::
+
+This feature is on by default. Even if the feature is disabled, in SharePoint and Microsoft Lists users will still see **Power BI** > **Visualize the list**, and any existing Power BI reports, on the **Integrate** menu. If they select **Visualize the list**, they go to an error page explaining that their admin has disabled the feature.
+
+Learn more about [creating reports from SharePoint and Microsoft Lists](../create-reports/service-quick-create-sharepoint-list.md).
+
+## R and Python visuals settings
+
+### Interact with and share R and Python visuals
+
+Users in the organization can interact with and share visuals created with R or Python scripts. Learn more about [R visuals](../visuals/service-r-visuals.md).
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
@@ -668,9 +702,10 @@ As an administrator, you can customize the look of Power BI for your whole organ
 
 * **Upload Cover image**: For best results, upload a cover image that's saved as a .jpg or .png, 1 MB or smaller, and at least 1920 x 160 pixels.
 
-* **Select Theme color**: You are able to select your theme based on a hex #, RGB, value, or from the provided palette.
+* **Select Theme color**: You can select your theme based on a hex #, RGB, value, or from the provided palette.
 
-For more information, see [Custom branding for your organization](https://aka.ms/orgBranding).
+
+For more information, see [Add custom branding to the Power BI service](service-admin-custom-branding.md).
 
 ## Protection metrics
 

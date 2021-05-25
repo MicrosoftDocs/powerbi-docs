@@ -4,7 +4,7 @@ description: This topic teaches how to add hyperlinks (URLs) to a table. You use
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to

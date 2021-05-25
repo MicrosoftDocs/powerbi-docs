@@ -4,13 +4,12 @@ description: Navigation made easier, see related content in dashboards, reports,
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
-featuredvideoid: B2vd4MQrz4M
+ms.custom: video-B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/25/2020
 LocalizationGroup: Get started
-ms.custom: video-B2vd4MQrz4M#t
 ---
 # See related content in the Power BI service
 

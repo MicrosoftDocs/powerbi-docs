@@ -4,7 +4,7 @@ description: Learn how to manage data storage in your individual or workspace to
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to

@@ -7,6 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
+ms.custom: video-6CQnf-NGtpU
 ms.date: 10/24/2018
 ---
 # How to find your report server product key

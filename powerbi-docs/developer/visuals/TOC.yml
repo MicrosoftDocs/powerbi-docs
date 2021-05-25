@@ -14,6 +14,8 @@
       href: develop-circle-card.md  
     - name: "Tutorial: Create a Power BI visual using React"
       href: create-react-visual.md
+    - name: "Tutorial: Create an R-powered visual"
+      href: create-r-based-power-bi-desktop.md
     - name: "Build a bar chart"
       href: create-bar-chart.md
     - name: "Add formatting options"
@@ -56,12 +58,18 @@
       href: office-store.md
     - name: "Set up your environment for developing a Power BI visual"
       href: environment-setup.md
+    - name: "Import a custom visual"
+      href: import-visual.md
+    - name: "Create a dialog box"
+      href: create-display-dialog-box.md         
+    - name: "Add a display warning icon to your visual"
+      href: visual-display-warning-icon.md      
     - name: "Create R-powered visuals"
-      href: create-r-based-power-bi-desktop.md
+      href: create-r-based-power-bi-desktop.md  
     - name: "Test your Power BI visual"  
       href: submission-testing.md
     - name: "Use R-powered Power BI visuals in Power BI"
-      href: ../../create-reports/desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
+      href: ../../create-reports/desktop-r-powered-custom-visuals.md?toc=/power-bi/developer/visuals/TOC.json&bc=/power-bi/breadcrumb/toc.json
     - name: "Visual interactions"
       href: visuals-interactions.md
     - name: "Add selections"
@@ -90,13 +98,13 @@
       href: high-contrast-support.md
     - name: "Enable sync slicers"
       href: enable-sync-slicers.md
-    - name: "Render a visual without the need to bind any data"
+    - name: "Render a visual without requiring data binding"
       href: no-dataroles-support.md  
     - name: "Debug visuals"
       href: visuals-how-to-debug.md  
     - name: "Mobile development"
       href: mobile-development.md
-    - name: "Troubleshoot Power BI visuals"
+    - name: "Troubleshoot  environment setup"
       href: power-bi-custom-visuals-troubleshoot.md
   - name: Reference
     items: 

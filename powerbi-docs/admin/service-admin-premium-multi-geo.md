@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 05/12/2021
 LocalizationGroup: Premium 
 ---
 
@@ -60,6 +60,7 @@ These items remain in the home region for the tenant:
 - Service buses for gateway queries or scheduled refresh jobs
 - Permissions
 - Dataset credentials
+- Power BI Embedded Analytics Playground saved state
 
 
 
@@ -88,9 +89,10 @@ Large-storage format datasets should not be moved from the region where they wer
 ## Limitations and considerations
 
 - Confirm that any movement you initiate between regions follows all corporate and government compliance requirements prior to initiating data transfer.
-- A cached query stored in a remote region stays in that region at rest. However, other data in transit may go back and forth between multiple geographies.
+- Cached data and queries stored in a remote region stays in that region at rest. Additionally the data at rest will be replicated to another region in the same Azure geography for disaster recovery if the Azure geography contains more than one region. Data in transit may go back and forth between multiple geographies.
 - When moving data from one region to another in a Multi-Geo environment, the source data may remain in the region from which the data was moved for up to 30 days. During that time end users don't have access to it. It's removed from this region and destroyed during the 30-day period.
-- Query text and query result traffic for imported and DirectQuery data models does not transit through the home region. The report metadata does still come from the remote region, and certain DNS routing states may take traffic out of the region. 
+- Query text and query result traffic for imported and DirectQuery data models does not transit through the home region. The report metadata does still come from the home region, and certain DNS routing states may take such traffic out of the region. 
+- Certain features such as screenshots, data alerts and others will still process data in the home region.
 - The [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md) feature is not supported on Multi-GEO at this time.
 - It is possible to create and maintain large-storage format datasets in remote regions to meet data residency requirements. However, note that you cannot move storage format datasets to another region. Moving large-storage format datasets from the region where they were created will result in reports failing to load the dataset. Move the large-storage dataset back to its original region to make it available. If you must move such a model, you must deploy it as if it was a new model, and then delete the old model from the undesired region.
 

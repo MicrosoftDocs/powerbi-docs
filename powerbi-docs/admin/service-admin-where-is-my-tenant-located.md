@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
+ms.custom: video-0fOxaHJPvdM
 LocalizationGroup: Administration
 ---
 

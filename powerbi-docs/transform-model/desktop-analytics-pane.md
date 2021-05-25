@@ -21,7 +21,7 @@ With the **Analytics** pane in Power BI Desktop, you can add dynamic *reference 
 
 ## Search within the Analytics pane
 
-Beginning with the February 2018 release of Power BI Desktop (version 2.55.5010.201 or later), you can search within the **Analytics** pane, which is a subsection of the **Visualizations** pane. The search box appears when you select the **Analytics** icon.
+You can search within the **Analytics** pane, which is a subsection of the **Visualizations** pane. The search box appears when you select the **Analytics** icon.
 
 ![Search box, Analytics pane, Visualizations, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_1b.png)
 

@@ -105,7 +105,7 @@ We only write to this storage account and do not currently delete data. This mea
 
 If you are connecting ADLS Gen 2 to Power BI, you can do this at the workspace or tenant level. Make sure you have the right access level. Learn more in [Prerequisites](dataflows-azure-data-lake-storage-integration.md#prerequisites).
  
-The storage structure adheres to the Common Data Model format. Learn more about the storage structure and CDM by visiting [What is the storage structure for analytical dataflows](https://docs.microsoft.com/power-query/dataflows/what-is-the-cdm-storage-structure-for-analytical-dataflows) and [Common Data Model and Azure Data Lake Storage Gen2](/common-data-model/data-lake).
+The storage structure adheres to the Common Data Model format. Learn more about the storage structure and CDM by visiting [What is the storage structure for analytical dataflows](/power-query/dataflows/what-is-the-cdm-storage-structure-for-analytical-dataflows) and [Common Data Model and Azure Data Lake Storage Gen2](/common-data-model/data-lake).
  
 Once properly configured, the data and metadata is in your control. A number of applications are aware of the CDM and the data can be extended using Azure, PowerApps, and PowerAutomate, as well as third party ecosystems either by conforming to the format or by reading the raw data.
 
@@ -134,7 +134,7 @@ To revert the migration that you made to Gen 2, you will need to delete your dat
 
 ## Connecting to the data using the ADLS Gen 2 connector  
  
-The scope of this document describes ADLS Gen 2 dataflows connections and not the Power BI ADLS Gen 2 connector. Working with the ADLS Gen 2 connector is a separate, possibly additive, scenario. The ADLS connector simply uses ADLS as a datasource. This means that using PQO to query against that data doesn’t have to be in CDM format, it can be whatever data format the customer wants. Learn more about this scenario by visiting [Analyze data in Azure Data Lake Storage Gen2 by using Power BI](https://docs.microsoft.com/power-query/connectors/datalakestorage).
+The scope of this document describes ADLS Gen 2 dataflows connections and not the Power BI ADLS Gen 2 connector. Working with the ADLS Gen 2 connector is a separate, possibly additive, scenario. The ADLS connector simply uses ADLS as a datasource. This means that using PQO to query against that data doesn’t have to be in CDM format, it can be whatever data format the customer wants. Learn more about this scenario by visiting [Analyze data in Azure Data Lake Storage Gen2 by using Power BI](/power-query/connectors/datalakestorage).
 
 
 ## Next steps

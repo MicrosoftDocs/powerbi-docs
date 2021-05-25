@@ -1,6 +1,6 @@
 ---
-title: Visual interactions in Power BI visuals in Power BI embedded analytics for better embedded BI insights
-description: This article discusses how to check whether Power BI visuals should allow visual interactions. Enable better embedded BI insights using Power BI embedded analytics.
+title: Visual interactions in Power BI visuals
+description: This article discusses how to check whether Power BI visuals should allow visual interactions.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins

@@ -3243,6 +3243,11 @@
         {
             "source_path": "powerbi-docs/desktop-high-density-scatter-charts.md",
             "redirect_url": "/power-bi/create-reports/desktop-high-density-scatter-charts",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/visuals/desktop-high-density-scatter-charts.md",
+            "redirect_url": "/power-bi/create-reports/desktop-high-density-scatter-charts",
             "redirect_document_id": true
         },
         {
@@ -3698,7 +3703,7 @@
         {
             "source_path": "powerbi-docs/service-whats-new.md",
             "redirect_url": "/power-bi/fundamentals/desktop-latest-update",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/supported-languages-countries-regions.md",
@@ -3884,6 +3889,11 @@
             "source_path": "powerbi-docs/create-reports/desktop-external-tools.md",
             "redirect_url": "/power-bi/transform-model/desktop-external-tools",
             "redirect_document_id": false
-        }
+        },
+		{
+		    "source_path": "powerbi-docs/fundamentals/security-baselines.md",
+		    "redirect_url": "/security/benchmark/azure/baselines/power-bi-security-baseline",
+		    "redirect_document_id": false
+		}
     ]           
 }

@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
 ms.date: 04/30/2019
-ms.custom: seodec18
+ms.custom: ''
 LocalizationGroup: Troubleshooting
 ---
 # Error: We couldn't find any data in your Excel workbook

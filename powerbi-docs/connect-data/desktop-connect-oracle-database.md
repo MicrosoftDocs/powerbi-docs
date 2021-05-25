@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/04/2021
+ms.date: 04/16/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to an Oracle database with Power BI Desktop
@@ -25,7 +25,7 @@ If you're configuring an Oracle database for Power BI Desktop, On Premises Data 
 
 
 ## Determining which version of Power BI Desktop is installed
-To determine which version of Power BI Desktop is installed, select **File** > **Help** > **About**, then check the **Version** line. In the following image, a 64-bit version of Power BI Desktop is installed:
+To determine which version of Power BI Desktop is installed, on the **Help** ribbon, select **About**, then check the **Version** line. In the following image, a 64-bit version of Power BI Desktop is installed:
 
 ![Power BI Desktop version](media/desktop-connect-oracle-database/connect-oracle-database_1.png)
 
@@ -53,7 +53,7 @@ After you install the matching Oracle client driver, you can connect to an Oracl
 
 To make the connection, take the following steps:
 
-1. From the **Home** tab, select **Get Data**. 
+1. On the **Home** ribbon, select **Get Data**. 
 
 2. From the **Get Data** window that appears, select **More** (if necessary), select **Database** > **Oracle database**, and then select **Connect**.
    
@@ -66,7 +66,7 @@ To make the connection, take the following steps:
    > [!NOTE]
    > If you are using a local database, or autonomous database connections, you may need to place the server name in quotation marks to avoid connection errors. 
       
-4. Select either the *Import** or **DirectQuery** data connectivity mode. The rest of these example steps use the Import data connectivity mode. To learn more about DirectQuery, go to [Use DirectQuery in Power BI Desktop](./desktop-use-directquery.md).
+4. Select either the **Import** or **DirectQuery** data connectivity mode. The rest of these example steps use the Import data connectivity mode. To learn more about DirectQuery, go to [Use DirectQuery in Power BI Desktop](./desktop-use-directquery.md).
 
 
 5. If you want to import data by using a native database query, put your query in the **SQL statement** box, which appears when you expand the **Advanced options** section of the **Oracle database** dialog.  Power BI Desktop does not support Oracle native queries that execute a stored procedure and Oracle native queries in "begin ... end" block does not return any result set.  

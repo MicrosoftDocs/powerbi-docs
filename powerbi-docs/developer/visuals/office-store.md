@@ -1,6 +1,6 @@
 ---
-title: Publish Power BI visuals to Partner Center in Power BI embedded analytics for better embedded BI insights
-description: Learn how you can publish your custom visual to Partner Center for others to discover and use. Enable better embedded BI insights using Power BI embedded analytics.
+title: Publish Power BI visuals to Partner Center
+description: Learn how you can publish your custom visual to Partner Center for others to discover and use.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""

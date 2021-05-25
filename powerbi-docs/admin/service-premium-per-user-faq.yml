@@ -8,14 +8,14 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-premium
   ms.topic: conceptual
-  ms.date: 4/16/2021
+  ms.date: 4/30/2021
   LocalizationGroup: Premium
     
 title: Power BI Premium Per User
 summary: |
   Power BI **Premium Per User** allows organizations to license Premium features on a per-user basis. Premium Per User (PPU) includes all Power BI Pro license capabilities, and also adds features such as paginated reports, AI, and other capabilities that are only available to Premium subscribers. 
   
-  ![Enabling premium per user](media/service-premium-per-user-faq/premium-per-user-faq-01a.png)
+  ![Enabling premium per user](media/service-premium-per-user-faq/premium-per-user-faq-01b.png)
   
   The following sections describe using Premium Per User (PPU), administrative considerations, and what end users can expect from a Premium Per User (PPU) license.
   
@@ -108,6 +108,9 @@ sections:
           * The number of refreshes are not currently restricted
           * The Power BI Premium metrics app is not supported for PPU
           * You cannot have a dataflow run in a PPU workspace, be imported into a Power BI dataset in another workspace, and then allow users without a PPU license to consume the content
+          
+          Any workspace migrated from a PPU environment to a non-PPU environment (such as Premium, Premium Gen2, or shared environments) must have its datasets refreshed again before use. Reports opened after such migrations without the dataset being refreshed will fail with an error similar to the following:
+          * *This operation is not allowed, as the database '<DbName>' is in a blocked state.*
 
 additionalContent: |
  

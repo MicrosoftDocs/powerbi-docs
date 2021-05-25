@@ -1,6 +1,6 @@
 ---
-title: Render events in Power BI visuals in Power BI embedded analytics for better embedded BI insights
-description: Power BI visuals can notify Power BI that they're ready for export to PowerPoint or PDF. Enable better embedded BI insights using Power BI embedded analytics.
+title: Render events in Power BI visuals
+description: Power BI visuals can notify Power BI that they're ready for export to PowerPoint or PDF.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -12,7 +12,7 @@ ms.date: 06/18/2019
 
 # Render events in Power BI visuals
 
-The new API consists of three methods (`started`, `finished`, or `failed`) that should be called during rendering.
+The API consists of three methods (`started`, `finished`, or `failed`) that should be called during rendering.
 
 When rendering starts, the Power BI visual code calls the `renderingStarted` method to indicate that the rendering process has started.
 

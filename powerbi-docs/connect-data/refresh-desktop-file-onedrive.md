@@ -4,7 +4,7 @@ description: Refresh a dataset created from a Power BI Desktop file on OneDrive,
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: kayu
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to

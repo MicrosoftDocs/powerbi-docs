@@ -1,6 +1,6 @@
 ---
-title: What is the embedded BI Power BI Azure Power BI Embedded in Power BI embedded analytics 
-description: Power BI Embedded is intended as an embedded analytics tool to simplify how ISVs and developers use embedded BI Power BI capabilities, helping them quickly add stunning visuals, reports and dashboards into their apps. Learn about using embedded analytics software, embedded analytics tools, or embedded business intelligence tools using Power BI Embedded.
+title: What is the embedded Power BI Azure Power BI Embedded
+description: Power BI Embedded is intended as an embedded analytics tool to simplify how ISVs and developers use embedded BI Power BI capabilities, helping them quickly add stunning visuals, reports and dashboards into their apps.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: nishalit
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.devlang: csharp, javascript
 ms.topic: overview
-ms.custom: seodec18
+ms.custom: video-iEHfUuoZseo
 ms.date: 12/10/2018 
 ---
 
@@ -18,7 +18,7 @@ Power BI Embedded is intended to simplify how ISVs and developers use Power BI c
 
 > [!VIDEO https://www.youtube.com/embed/iEHfUuoZseo]
 
-In May 2017, we announced the convergence of the Power BI and Power BI Embedded services. The convergence delivered one API surface, a consistent set of capabilities and access to the latest features across both services. Additionally, we introduced a capacity-based pricing model, simplifying how Power BI is consumed.
+The convergence of the Power BI and Power BI Embedded services delivers one API surface, a consistent set of capabilities and access to the latest features across both services. Additionally, they use a capacity-based pricing model, simplifying how Power BI is consumed.
 
 With Power BI Embedded, ISVs and developers have added flexibility in how they embed intelligence in their apps using the Power BI APIs. ISVs and developers can take advantage of minimized development efforts to achieve faster time to market and differentiate themselves by infusing Microsoft’s world-class analytics engine in their app. Equally, developers can spend time focusing on their solution to meet customer demands, instead of developing visual analytics features. Additionally, Power BI Embedded enables you to work within the familiar development environments – Visual Studio and Azure – you already use.
 

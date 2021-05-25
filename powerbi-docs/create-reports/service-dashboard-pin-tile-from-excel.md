@@ -4,7 +4,7 @@ description: Pin a tile to a Power BI dashboard from Excel on OneDrive for Busin
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-featuredvideoid: l8JoB7w0zJA
+ms.custom: video-l8JoB7w0zJA
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to

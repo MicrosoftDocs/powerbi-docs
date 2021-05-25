@@ -23,9 +23,9 @@ Power BI provides two ways you can endorse your valuable, high-quality content t
 
 Currently it is possible to endorse
 * Datasets
-* Dataflows (preview)
-* Reports (preview)
-* Apps (preview)
+* Dataflows
+* Reports
+* Apps
 
 This article describes how to [promote content](#promote-content), how to [certify content](#certify-content) if you're an authorized reviewer, and how to [request certification](#request-content-certification) if you're not.
 
@@ -86,12 +86,12 @@ If you would like to certify your content but are not authorized to do so, follo
 The Endorsement dialog is accessed through the settings of the content you want to endorse. Follow the instructions below to get to the settings for each content type.
 
 * **Datasets**: In list view, hover over the dataset you want to endorse, click **More options (...)**, and then choose **Settings** from the menu that appears.
-* **Dataflows** (preview): In list view, hover over the dataflow you want to endorse, click **More options (...)**, and then choose **Settings** from the menu that appears.
+* **Dataflows**: In list view, hover over the dataflow you want to endorse, click **More options (...)**, and then choose **Settings** from the menu that appears.
 
 
-* **Reports** (preview): In list view, hover over the report you want to endorse, click **More options (...)**, and then choose **Settings** from the menu that appears. Alternatively, if the report is open, choose **File > Settings**.
+* **Reports**: In list view, hover over the report you want to endorse, click **More options (...)**, and then choose **Settings** from the menu that appears. Alternatively, if the report is open, choose **File > Settings**.
 
-* **Apps** (preview): Go to the app workspace, click **More options (...)** on the menu bar, and choose **Endorse this app**.
+* **Apps**: Go to the app workspace, click **More options (...)** on the menu bar, and choose **Endorse this app**.
 
     ![Screenshot of link to app settings.](media/service-endorse-content/power-bi-app-settings.png)
 

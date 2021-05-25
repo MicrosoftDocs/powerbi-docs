@@ -6,6 +6,7 @@ ms.author: maggies
 ms.date: 04/02/2021
 ms.service: powerbi
 ms.subservice: report-builder
+ms.custom: video-NfoOK4QRkhI
 ms.topic: how-to
 ---
 # Create a paginated report based on a Power BI shared dataset

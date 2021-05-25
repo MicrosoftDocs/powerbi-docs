@@ -4,7 +4,7 @@ description: Add and create text boxes and shapes in a report in Power BI Deskto
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-featuredvideoid: _3q6VEBhGew
+ms.custom: video-_3q6VEBhGew
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to

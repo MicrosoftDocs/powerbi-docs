@@ -71,7 +71,7 @@ See [Using enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-m
 
 **Browser support deprecation**
 
-If you're using Edge Legacy or Internet Explorer 11, it's time to upgrade your browser. Support for the Edge Legacy browser ends beginning March 9, 2021. Support for Internet Explorer 11 ends beginning August 17, 2021. 
+If you're using Edge Legacy or Internet Explorer 11, it's time to upgrade your browser. Support for the Microsoft Edge Legacy browser stopped beginning March 9, 2021, and Microsoft Internet Explorer 11 support for Microsoft Internet Explorer 11 will stop beginning August 17, 2021.
 
 You'll see a warning in the Power BI Report Server web portal that Internet Explorer 11 is being deprecated. Time to upgrade! See [Browser support for Power BI Report Server](browser-support.md) for details.
 
@@ -145,7 +145,7 @@ If you have an older PBIX that can't automatically update, for reasons such as u
 
 **Support for Windows 7 ends**
 
-After 10 years, support for Windows 7 ended on January 14, 2020. In line with this change, we will be stopping support for Power BI Desktop on Windows 7 on January 31, 2021. After that, Power BI Desktop will only be supported on Windows 8 and newer. The January 2021 release of Power BI Desktop optimized for Report Server will be supported according to the Modern Lifecycle Policy. In other words, it's fully supported until the next release (currently scheduled for May 2021). After May 2021, it will only receive security updates until January 2022. All support will stop after January 2022. See the [Power BI Report Server support timeline](support-timeline.md) for details. 
+After 10 years, support for Windows 7 ended on January 14, 2020. In line with this change, we stopped support for Power BI Desktop on Windows 7 on January 31, 2021. Power BI Desktop is only supported on Windows 8 and newer. The January 2021 release of Power BI Desktop optimized for Report Server will be supported according to the Modern Lifecycle Policy. In other words, it's fully supported until the next release (currently scheduled for May 2021). After May 2021, it will only receive security updates until January 2022. All support will stop after January 2022. See the [Power BI Report Server support timeline](support-timeline.md) for details. 
 
 **Complete list of updates**
 
@@ -578,7 +578,7 @@ Out of the whole long list of new features, these features stand out as especial
 
 #### Report theming
 
-Report theming has been added to the August 2018 release of Power BI Report Server, which allows you to quickly color your entire report to match a theme or corporate branding. When you import a theme, all your charts automatically update to use the theme colors, and you can have access to the theme colors from the color palette. You can upload a theme file using the **Import Theme** option under the **Switch Theme** button.
+Report theming is available in Power BI Report Server, which allows you to quickly color your entire report to match a theme or corporate branding. When you import a theme, all your charts automatically update to use the theme colors, and you can have access to the theme colors from the color palette. You can upload a theme file using the **Import Theme** option under the **Switch Theme** button.
 
 A theme file is a JSON file that includes all the colors you want us to use in your report along with any default formatting you want to apply to visuals.
 Here is a simple sample JSON theme that just updates the default colors of the report:
@@ -838,7 +838,7 @@ We’ve published a [walkthrough of how to add Office Online Server (OOS) to you
 
 ### Support for new table and matrix visuals
 
-Power BI Report Server now supports the new Power BI table and matrix visuals. To create reports with these visuals, you will need an updated Power BI Desktop release for the October 2017 release. It can't be installed side by side with the Power BI Desktop (June 2017) release. For the latest version of Power BI Desktop, on the [Power BI Report Server download page](https://powerbi.microsoft.com/report-server/), select **Advanced download options**.
+Power BI Report Server now supports the new Power BI table and matrix visuals. For the latest version of Power BI Desktop, on the [Power BI Report Server download page](https://powerbi.microsoft.com/report-server/), select **Advanced download options**.
 
 ## June 2017
 

@@ -102,6 +102,23 @@ landingContent:
             url: desktop-bookmarks.md
           - text: "Format filters in a report"
             url: power-bi-report-filter.md
+
+  # Card (optional)
+  - title: Goals and scorecards (preview)
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Get started with goals"
+            url: service-goals-introduction.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Create scorecards and manual goals"
+            url: service-goals-create.md
+          - text: "Create connected goals"
+            url: service-goals-create-connected.md
+          - text: "Stay on top of your goals"
+            url: service-goals-check-in.md
+
   # Card (optional)
   - title: Power BI paginated reports
     linkLists:

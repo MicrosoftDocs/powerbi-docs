@@ -1,13 +1,13 @@
 ---
 title: Embed content in your Power BI embedded analytics application enabling better embedded BI insights for government and national clouds
-description: Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools for government and national clouds. Enable better embedded BI insights using Power BI embedded analytics.
+description: Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools for government and national clouds.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
-ms.custom: seodec18, devx-track-js
+ms.custom: devx-track-js
 ms.date: 02/05/2019
 ---
 
@@ -236,7 +236,7 @@ Tile tile = tiles.Value.FirstOrDefault();
 Using the JavaScript API, you can generate an embed token. The embed token is specific to the item you're embedding. Anytime you embed a piece of Power BI content, you need to create a new embed token for it. For more information, including which **accessLevel** to use, see [Embed Token](/rest/api/power-bi/embedtoken).
 
 > [!IMPORTANT]
-> Because embed tokens are intended for developer testing only, the number of embed tokens a Power BI master account can generate is limited. A [capacity must be purchased](/embedded-faq.yml#technical) for production embedding scenarios. There is no limit to embed token generation when a capacity is purchased.
+> Because embed tokens are intended for developer testing only, the number of embed tokens a Power BI master account can generate is limited. A [capacity must be purchased](/power-bi/developer/embedded/embedded-faq#technical) for production embedding scenarios. There is no limit to embed token generation when a capacity is purchased.
 
 A sample is available within **Controllers\HomeController.cs** of the [Embedding for your organization sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData).
 

@@ -4,7 +4,7 @@ description: Power BI Desktop is a complete data analysis and report creation to
 author: mihart
 ms.author: mihart
 ms.reviewer: ''
-featuredvideoid: IkJda4O7oGs
+ms.custom: video-IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual

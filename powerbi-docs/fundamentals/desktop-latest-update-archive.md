@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 04/12/2021
+ms.date: 05/11/2021
 LocalizationGroup: Get started
 ---
 # Previous monthly updates to Power BI Desktop and the Power BI service
@@ -26,6 +26,110 @@ The links beside each update mean the following:
 You can also watch the **Latest Updates** video from the beginning, right inside this article, by clicking on the **play** icon on the video image found below the list of updates.
 
 The following sections describe previous months' updates to **Power BI Desktop** and the **Power BI service**.
+
+## April 2021 Update (2.92.706.0)
+
+Spring was in the air, and so was a great collection of updates for Power BI. 
+
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+The links beside each feature in the list are follows:
+
+* \[blog\]: Most features are explained in a section in the monthly update blog post.
+* \[video\]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
+* \[article\]: Some features have an article that provides more detail.
+* The remaining features are self-explanatory and don't need an article or video.
+
+You can also watch the entire [Power BI monthly update video](#power-bi-monthly-update-video).
+
+# [Power BI Desktop](#tab/powerbi-desktop)
+
+Get the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from the [Microsoft Store](https://aka.ms/pbidesktopstore). Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering may differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
+
+> [!IMPORTANT]
+> Power BI Desktop is updated and released on a monthly basis, incorporating customer feedback and new features. Only the most recent version of Power BI Desktop is supported; customers who contact support for Power BI Desktop will be asked to upgrade to the most recent version. 
+> You can get the most recent version of Power BI Desktop from the [Windows Store](https://aka.ms/pbidesktopstore), or as a single executable containing all supported languages that you [download](https://www.microsoft.com/download/details.aspx?id=58494) and install on your computer.
+
+> [!IMPORTANT]
+> Power BI Desktop is no longer be supported on Windows 7. Power BI Desktop is supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only.
+
+The following updates are new to Power BI Desktop this month:
+
+### Reporting
+* Power Automate for Power BI (preview)  [[video]](https://youtu.be/G4QzWDv4s6M?t=17)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-14480-_Toc68689095) 
+* Small multiples: padding controls and combo chart support (preview) [[video]](https://youtu.be/G4QzWDv4s6M?t=327)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-14480-_Toc68689096)  
+* New and improved shapes   [[video]](https://youtu.be/G4QzWDv4s6M?t=372)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-14480-_Toc68689097) 
+* Invert axis and continuous axis sorting   [[video]](https://youtu.be/G4QzWDv4s6M?t=732)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-14480-_Toc68689098) 
+
+
+### Modeling
+* DirectQuery for Power BI datasets and Azure Analysis Services (preview) [[video]](https://youtu.be/G4QzWDv4s6M?t=772)   [[article]](../connect-data/desktop-directquery-datasets-azure-analysis-services.md))  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-14480-_Toc68689100)
+* CROSSFILTER supports many-to-many relationships  [[video]](https://youtu.be/G4QzWDv4s6M?t=795)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-14480-_Toc68689101)
+* Performance improvements to IF and SWITCH functions [[video]](https://youtu.be/G4QzWDv4s6M?t=830)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-14480-_Toc68689102)
+
+
+
+### Data connectivity
+* New connector - Bloomberg Data and Analytics [[video]](https://youtu.be/G4QzWDv4s6M?t=862)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-14480-_Toc68689104)
+* New connector - SoftOne BI [[video]](https://youtu.be/G4QzWDv4s6M?t=892)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-14480-_Toc68689105) 
+* Text/CSV by example now generally available [[video]](https://youtu.be/G4QzWDv4s6M?t=910)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-14480-_Toc68689106) 
+* Automatic table detection from Excel files now generally available [[video]](https://youtu.be/G4QzWDv4s6M?t=946)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-14480-_Toc68689107) 
+* Automatic table detection from JSON files now generally available [[video]](https://youtu.be/G4QzWDv4s6M?t=977)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-14480-_Toc68689108) 
+
+
+### Visuals
+* New visuals from various providers [[video]](https://youtu.be/G4QzWDv4s6M?t=1422)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-14480-_Toc68689114)
+
+### Developers
+* API v3.6.0 now available [[video]](https://youtu.be/G4QzWDv4s6M?t=1472)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-14480-_Toc68689120)
+
+
+### Other
+* Simplifying collection of diagnostic information [[video]](https://youtu.be/G4QzWDv4s6M?t=1496)  [[article]](desktop-diagnostics.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-14480-_Toc68689122)
+
+
+> [!NOTE]
+> See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
+
+
+# [Power BI service](#tab/powerbi-service)
+
+The following updates are new to the Power BI service this month:
+
+* Easy report sharing using links [[video]](https://youtu.be/G4QzWDv4s6M?t=1016)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-14480-_Toc68689110)
+* Improving the **Create on top of published dataset** experience [[video]](https://youtu.be/G4QzWDv4s6M?t=1326)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-14480-_Toc68689111)
+* New capabilities in Deployment Pipelines [[video]](https://youtu.be/G4QzWDv4s6M?t=1348)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-14480-_Toc68689112)
+* Enhancements to Sensitivity Labels:
+    * Sensitivity labels in Power BI embedded now generally available [[video]](https://youtu.be/G4QzWDv4s6M?t=2246)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-14480-_sens_pbi)
+    * Securing the full data journey from Azure to Office (preview) [[video]](https://youtu.be/G4QzWDv4s6M?t=2246)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-14480-_securing_full)
+    * Admin API to set and remove labels in Power BI [[video]](https://youtu.be/G4QzWDv4s6M?t=2246)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2021-feature-summary/#post-14480-_admin_api_labels)
+
+
+---
+
+
+For detailed information about each of new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-april-2021-feature-summary/).
+
+
+### Power BI monthly update video
+The following video describes each of these updates. You can also watch this video from the blog post:
+
+> [!VIDEO https://www.youtube.com/embed/G4QzWDv4s6M]
+
+
+You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
+
+* Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
+* It may not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
+* If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
+* We only archive the English versions of Power BI Desktop.
+
+Select the following links to download this earlier version: 
+
+* [April 2021 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2021-04.exe)
+* [April 2021 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2021-04_x64.exe)
+
+
 
 
 ## March 2021 Update (2.91.701.0)
@@ -154,7 +258,7 @@ The links beside each feature in the Power BI Desktop update list are interprete
 You can also watch the entire [Power BI monthly update video](#power-bi-desktop-monthly-update-video).
 
 > [!IMPORTANT]
-> Power BI Desktop will no longer be supported on Windows 7 after January 31st, 2021. After that date, Power BI Desktop will be supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only. 
+> Power BI Desktop is no longer supported on Windows 7. Power BI Desktop will be supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only. 
 
 The following updates are new to Power BI Desktop this month:
 
@@ -218,12 +322,6 @@ Select the following links to download this earlier version:
 
 * [February 2021 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2021-02.exe)
 * [February 2021 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2021-02_x64.exe)
-
-
-
-
-
-
 
 
 
@@ -325,7 +423,7 @@ The links beside each feature in the Power BI Desktop update list are interprete
 You can also watch the entire [Power BI monthly update video](#power-bi-desktop-monthly-update-video).
 
 > [!IMPORTANT]
-> Power BI Desktop will no longer be supported on Windows 7 after January 31st, 2021. After that date, Power BI Desktop will be supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only. 
+> Power BI Desktop is no longer supported on Windows 7. Power BI Desktop will be supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only.
 
 The following updates are new to Power BI Desktop this month:
 
@@ -407,7 +505,7 @@ The links beside each feature in the Power BI Desktop update list are interprete
 You can also watch the entire [Power BI monthly update video](#power-bi-desktop-monthly-update-video).
 
 > [!IMPORTANT]
-> Power BI Desktop will no longer be supported on Windows 7 after January 31st, 2021. After that date, Power BI Desktop will be supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only. 
+> Power BI Desktop is no longer supported on Windows 7. Power BI Desktop will be supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only.
 
 The following updates are new to Power BI Desktop this month:
 
@@ -453,7 +551,7 @@ The following updates are new to Power BI Desktop this month:
 * Power BI Desktop splash screen dismiss [[video]](https://youtu.be/LveNuQqV5xk?t=1313)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195596)
 
 
-For detailed information about each of these new features, see [Power BI Desktop feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/).
+For detailed information about each of these features, see [Power BI Desktop feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/).
 
 
 > [!NOTE]
@@ -464,18 +562,6 @@ For detailed information about each of these new features, see [Power BI Desktop
 The following video describes each of these updates. You can also watch this video from the blog post:
 
 > [!VIDEO https://www.youtube.com/embed/LveNuQqV5xk]
-
-You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
-
-* Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
-* It may not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
-* If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
-* We only archive the English versions of Power BI Desktop.
-
-Select the following links to download this earlier version: 
-
-* [October 2020 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-10.exe)
-* [October 2020 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-10_x64.exe)
 
 
 ## September 2020 Update (2.85.284.0)
@@ -500,7 +586,7 @@ The links beside each feature in the Power BI Desktop update list are interprete
 You can also watch the entire [Power BI monthly update video](#power-bi-desktop-monthly-update-video).
 
 > [!IMPORTANT]
-> Power BI Desktop will no longer be supported on Windows 7 after January 31st, 2021. After that date, Power BI Desktop will be supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only. 
+> Power BI Desktop is no longer supported on Windows 7. Power BI Desktop will be supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only.
 
 The following updates are new to Power BI Desktop this month:
 
@@ -571,7 +657,7 @@ The links beside each feature in the Power BI Desktop update list are interprete
 You can also watch the entire [Power BI Desktop monthly update video](#power-bi-desktop-monthly-update-video).
 
 > [!IMPORTANT]
-> Power BI Desktop will no longer be supported on Windows 7 after January 31st, 2021. After that date, Power BI Desktop will be supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only. 
+> Power BI Desktop is no longer supported on Windows 7. Power BI Desktop will be supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only.
 
 The following updates are new to Power BI Desktop this month:
 
@@ -697,7 +783,7 @@ Our June Power BI Desktop felt like a fresh new beginning filled with new capabi
 Get the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from the [Microsoft Store](https://aka.ms/pbidesktopstore). Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering may differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
 
 > [!IMPORTANT]
-> Beginning with the September 2019 release, Power BI Desktop is released only as a single .exe file, which contains all supported languages. The .msi version is no longer being released.
+> Power BI Desktop is released only as a single .exe file, which contains all supported languages. The .msi version is no longer being released.
 
 
 The links beside each feature in the Power BI Desktop update list are interpreted as follows:
@@ -768,7 +854,7 @@ We hope our May Power BI Desktop brought you new insights, new capabilities, and
 Get the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from the [Microsoft Store](https://aka.ms/pbidesktopstore). Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering may differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
 
 > [!IMPORTANT]
-> Beginning with the September 2019 release, Power BI Desktop is released only as a single .exe file, which contains all supported languages. The .msi version is no longer being released.
+> Power BI Desktop is released only as a single .exe file, which contains all supported languages. The .msi version is no longer being released.
 
 
 The links beside each feature in the Power BI Desktop update list are interpreted as follows:
@@ -843,7 +929,7 @@ We were grateful to be able to share our April Power BI update with you, our glo
 Get the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from the [Microsoft Store](https://aka.ms/pbidesktopstore). Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering may differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
 
 > [!IMPORTANT]
-> Beginning with the September 2019 release, Power BI Desktop is released only as a single .exe file, which contains all supported languages. The .msi version is no longer being released.
+> Power BI Desktop is released only as a single .exe file, which contains all supported languages. The .msi version is no longer being released.
 
 
 The links beside each feature in the Power BI Desktop update list are interpreted as follows:
@@ -918,7 +1004,7 @@ We felt lucky as a four-leaf clover to share our March Power BI update with you.
 Get the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from the [Microsoft Store](https://aka.ms/pbidesktopstore). Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering may differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
 
 > [!IMPORTANT]
-> Beginning with the September 2019 release, Power BI Desktop is released only as a single .exe file, which contains all supported languages. The .msi version is no longer being released.
+> Power BI Desktop is released only as a single .exe file, which contains all supported languages. The .msi version is no longer being released.
 
 
 The links beside each feature in the Power BI Desktop update list are interpreted as follows:
@@ -1005,7 +1091,7 @@ We loved our February updates, and felt our new features were better than a hear
 # [Power BI Desktop](#tab/powerbi-desktop)
 
 > [!IMPORTANT]
-> Beginning with the September 2019 release, Power BI Desktop is released only as a single .exe file, which contains all supported languages. The .msi version is no longer being released.
+> Power BI Desktop is released only as a single .exe file, which contains all supported languages. The .msi version is no longer being released.
 
 The links beside each feature in the Power BI Desktop update list are interpreted as follows:
 
@@ -1082,7 +1168,7 @@ Our December updates were as fun as a bobsled ride down a snow-covered hill.
 # [Power BI Desktop](#tab/powerbi-desktop)
 
 > [!IMPORTANT]
-> Beginning with the September 2019 release, Power BI Desktop is released only as a single .exe file, which contains all supported languages. The .msi version is no longer being released.
+> Power BI Desktop is released only as a single .exe file, which contains all supported languages. The .msi version is no longer being released.
 
 The links beside each feature in the Power BI Desktop update list are interpreted as follows:
 
@@ -1161,7 +1247,7 @@ Our November updates were as welcome as a happy family gathering.
 # [Power BI Desktop](#tab/powerbi-desktop)
 
 > [!IMPORTANT]
-> Beginning with the September 2019 release, Power BI Desktop is released only as a single .exe file, which contains all supported languages. The .msi version is no longer being released.
+> Power BI Desktop is released only as a single .exe file, which contains all supported languages. The .msi version is no longer being released.
 
 The links beside each feature in the Power BI Desktop update list are interpreted as follows:
 
@@ -1236,7 +1322,7 @@ Our October updates were as fun as a pumpkin patch run, and more exciting than a
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop), now delivered as a single .exe file that contains all supported languages. If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same even though the version numbering may differ between the two, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
 
 > [!IMPORTANT]
-> Beginning with the September 2019 release, Power BI Desktop is only released as a single .exe file that contains all supported languages. The .msi version is no longer being released.
+> Power BI Desktop is only released as a single .exe file that contains all supported languages. The .msi version is no longer being released.
 
 
 The links beside each update mean the following:
@@ -1322,7 +1408,7 @@ Our September updates were like an exciting return to school - new things to lea
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop), now delivered as a single .exe file that contains all supported languages. If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same even though the version numbering may differ between the two, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
 
 > [!IMPORTANT]
-> Beginning with the September 2019 release, Power BI Desktop is only released as a single .exe file that contains all supported languages. The .msi version is no longer being released.
+> Power BI Desktop is only released as a single .exe file that contains all supported languages. The .msi version is no longer being released.
 
 
 The links beside each update mean the following:
@@ -3824,7 +3910,7 @@ Another month, another big collection of new features and improvements for Power
 -   [SSAS Multidimensional support](../connect-data/desktop-ssas-multidimensional.md)
 -   [SAP Hana](../connect-data/desktop-sap-hana.md)
 -   [R Script](../connect-data/desktop-r-scripts.md)
--   DirectQuery for SQL Server, Azure SQL Database and Azure SQL Data Warehouse
+-   DirectQuery for SQL Server, Azure SQL Database and Azure Synapse Analytics (formerly SQL Data Warehouse)
 -   Azure Data Lake
 -   Marketo
 
@@ -3973,7 +4059,7 @@ The following features have been added to this update:
 
 -   HDInsight Spark connector
 
--   Azure SQL Data Warehouse connector
+-   Azure Synapse Analytics (formerly SQL Data Warehouse) connector
 
 -   Support for custom MDX/DAQ queries when importing data from SSAS
 

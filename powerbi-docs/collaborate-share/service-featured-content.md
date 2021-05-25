@@ -7,7 +7,7 @@ ms.reviewer: nikhilga
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 02/10/2021
+ms.date: 04/30/2021
 LocalizationGroup: Share your work
 ---
 # Feature content on colleagues' Power BI Home page

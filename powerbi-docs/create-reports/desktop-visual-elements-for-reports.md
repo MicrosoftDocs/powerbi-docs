@@ -16,7 +16,7 @@ With **Power BI Desktop** you can use visual elements, such as wallpaper and imp
 
 ![Add wallpaper and small visual headers to enhance reports](media/desktop-visual-elements-for-reports/visual-elements-for-reports_01.png)
 
-Beginning with the July 2018 release of **Power BI Desktop**, you can put enhancements to use in your reports and make your analytics and reports even more appealing than before. The enhancements discussed in this article include the following: 
+You can put enhancements to use in your reports and make your analytics and reports even more appealing than before. The enhancements discussed in this article include the following: 
 
 * Apply **wallpaper** to your reports so your background can enhance or highlight elements of the story you want to tell with your data
 * Use improved **visual headers** for individual visualizations to create perfectly aligned visuals on your report canvas. 
@@ -59,7 +59,7 @@ It's important to note that the dotted boundary *only* shows up when editing you
 
 ## Using improved visual headers in Power BI reports
 
-Beginning with the July 2018 release of **Power BI Desktop**, the headers for visuals in reports have been significantly improved. The primary improvements are that the header has been detached from the visual so its position can be adjusted based on your preference of layout and positioning, and the header now appears within the visual itself instead of floating above it. 
+The headers for visuals in reports have been significantly improved. The primary improvements are that the header has been detached from the visual so its position can be adjusted based on your preference of layout and positioning, and the header now appears within the visual itself instead of floating above it. 
 
 By default, the header appears inside the visual aligned with the title. In the following image, you can see the header (the pin icon, the expand icon, and the ellipses icon) within the visual and aligned to the right, along the same horizontal position as the visual's title.
 

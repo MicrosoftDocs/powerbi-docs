@@ -193,7 +193,7 @@
         href: service-azure-and-power-bi.md
       - name: "Power BI and Azure egress"
         href: service-azure-egress-power-bi.md           
-      - name: "Azure SQL Data Warehouse with DirectQuery"
+      - name: "Azure Synapse Analytics (formerly SQL Data Warehouse) with DirectQuery"
         href: service-azure-sql-data-warehouse-with-direct-connect.md
       - name: "Azure SQL Database with DirectQuery"
         href: service-azure-sql-database-with-direct-connect.md
@@ -279,7 +279,7 @@
         href: service-connect-to-project-online.md
       - name: "Regional Emergency Response Dashboard"
         href: service-connect-to-regional-emergency-response.md
-      - name: "Salesforce"
+      - name: "Salesforce Analytics"
         href: service-connect-to-salesforce.md
       - name: "Smartsheet"
         href: service-connect-to-smartsheet.md
@@ -327,6 +327,8 @@
               href: service-gateway-sso-kerberos-sap-bw-gx64krb.md
         - name: "SAML-based SSO"
           href: service-gateway-sso-saml.md
+        - name: "Test single sign-on (SSO) configuration"
+          href: service-gateway-sso-test-configuration.md
       - name: "Troubleshoot the gateway"
         href: service-gateway-onprem-tshoot.md
       - name: "Troubleshoot the gateway (personal mode)"

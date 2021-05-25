@@ -4,7 +4,7 @@ description: Documentation for how to set Visual interactions in a Microsoft Pow
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-featuredvideoid: N_xYsCbyHPw
+ms.custom: video-N_xYsCbyHPw
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to

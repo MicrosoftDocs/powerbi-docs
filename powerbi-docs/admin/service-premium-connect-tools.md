@@ -7,8 +7,8 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 03/24/2021
-ms.custom: seodec18
+ms.date: 05/05/2021
+ms.custom: ''
 LocalizationGroup: Premium
 ---
 
@@ -84,6 +84,9 @@ Users with UPNs in the same tenant (not B2B) can replace the tenant name with `m
 B2B users must specify their organization UPN in tenant name. For example,  
 `powerbi://api.powerbi.com/v1.0/fabrikam.com/Sales Workspace`.
 
+> [!NOTE]
+> To determine the primary domain name and ID of a Power BI tenant, sign into the Azure portal, select Azure Active Directory from the main menu, and then note the information on the Azure Active Directory Overview page. For more information, see [Find the Microsoft Azure AD tenant ID and primary domain name](/partner-center/find-ids-and-domain-names).
+
 ### To get the workspace connection URL
 
 In workspace **Settings** > **Premium** > **Workspace Connection**, select **Copy**.
@@ -130,11 +133,21 @@ Server name aliases, supported in Azure Analysis Services are not supported for 
 
 ## Security
 
-In addition to the XMLA Endpoint property being enabled read-write by the capacity admin, the tenant-level setting **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** must be enabled in the admin portal. If you need to generate AIXL files that connect to the XMLA Endpoint, the tenant-level setting **Allow live connections** should also be enabled. These settings are both enabled by default.
+In addition to the XMLA Endpoint property being enabled read-write by the capacity admin, the tenant-level setting **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** must be enabled in the admin portal. If you need to generate Analyze in Excel (AIXL) files that connect to the XMLA Endpoint, the tenant-level setting **Allow live connections** should also be enabled. These settings are both enabled by default.
 
 **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** is an integration setting.
 
 :::image type="content" source="media/service-premium-connect-tools/allow-xmla-endpoints.png" alt-text="Integration setting allow XMLA endpoints.":::
+
+The following table describes the implications of the setting **Export data** for XMLA and Analyze in Excel (AIXL):
+
+
+|Setting  |Allow XMLA endpoints and Analyze in Excel with on-premises datasets = **disabled**  |Allow XMLA endpoints and Analyze in Excel with on-premises datasets = **enabled**  |
+|---------|---------|---------|
+|Allow Live Connections toggle = disabled     |XMLA *disallowed*, Analyze in Excel *disallowed*, AIXL for on-prem datasets *disallowed*         |XMLA *allowed*, Analyze in Excel *disallowed*, AIXL for on-prem datasets *allowed*         |
+|Allow Live Connections toggle = enabled     | XMLA *disallowed*, Analyze in Excel *allowed*, AIXL for on-prem datasets *disallowed*        | XMLA *allowed*, Analyze in Excel *allowed*, AIXL for on-prem datasets *allowed*        |
+
+
 
 **Allow live connections** is an export and sharing setting.
 

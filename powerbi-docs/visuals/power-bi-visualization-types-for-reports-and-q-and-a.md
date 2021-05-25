@@ -241,5 +241,5 @@ If your dashboard doesn't have a Q&A field, it may have been disabled by your Po
 
 ## Next steps
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)    
-[The right visual reference from sqlbi.com](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
+[Power BI Visuals Reference from sqlbi.com](https://www.sqlbi.com/ref/power-bi-visuals-reference/), guidance for picking the right visual for your data
 

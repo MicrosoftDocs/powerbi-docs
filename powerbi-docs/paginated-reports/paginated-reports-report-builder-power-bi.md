@@ -4,7 +4,7 @@ description: Paginated reports are now available in the Power BI service. They h
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-featuredvideoid: jXTiYJKw1Rs
+ms.custom: video-jXTiYJKw1Rs
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
