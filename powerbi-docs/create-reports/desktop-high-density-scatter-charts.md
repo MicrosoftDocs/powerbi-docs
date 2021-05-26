@@ -1,6 +1,6 @@
 ---
-title: High-Density Scatter Charts in Power BI
-description: High-Density Scatter Charts in Power BI
+title: High-density scatter charts in Power BI
+description: High-density sampling in Power BI scatter charts
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 04/20/2021
 LocalizationGroup: Create reports
 ---
-# High density sampling in Power BI scatter charts
+# High-density sampling in Power BI scatter charts
 
 The Power BI sampling algorithm improves how scatter charts represent high-density data.
 

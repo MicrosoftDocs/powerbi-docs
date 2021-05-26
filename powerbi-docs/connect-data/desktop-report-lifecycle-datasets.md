@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/16/2020
+ms.date: 05/17/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to datasets in the Power BI service from Power BI Desktop
@@ -81,11 +81,11 @@ Next, let's see how other teammates who have access to the workspace where the r
 
 ### Establish a Power BI service live connection to the published dataset
 
-To establish a connection to the published report, and create your own report based on the published dataset, select **Get Data** from the **Home** ribbon in Power BI Desktop, select **Power Platform** in the left pane, and then select **Power BI datasets**.
+To establish a connection to the published report, and create your own report based on the published dataset, select **Get data** from the **Home** ribbon in Power BI Desktop, select **Power Platform** in the left pane, and then select **Power BI datasets**.
 
 If you're not signed in, Power BI prompts you to sign in. Once signed in, Power BI shows which workspaces you're a member of. You can select which workspace contains the dataset to which you want to establish a Power BI service live connection.
 
-The datasets in the list are all the shared datasets you have Build permission for, in any workspace. You can search for a specific dataset and see its name, owner, the workspace where it resides, and when it was last refreshed. You also see **ENDORSEMENT** for datasets, either certified or promoted, at the top of the list.
+The datasets in the list are all the shared datasets you have Build permission for, in any workspace. You can search for a specific dataset and see its name, owner, the workspace where it resides, and when it was last refreshed. You also see **Endorsement** for datasets, either certified or promoted, at the top of the list.
 
 ![List of available datasets](media/desktop-report-lifecycle-datasets/desktop-select-shared-dataset.png)
 

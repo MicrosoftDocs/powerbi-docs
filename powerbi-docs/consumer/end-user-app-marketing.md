@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/22/2020
+ms.date: 05/13/2021
 LocalizationGroup: Share your work
 ---
 # Install and use the sample Sales and Marketing app in the Power BI service
