@@ -306,7 +306,7 @@ You can learn more about [which items are copied to the next stage](deployment-p
 >[Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md)
 
 >[!div class="nextstepaction"]
->[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.md)
+>[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.yml)
 
 >[!div class="nextstepaction"]
 >[Deployment pipelines best practices](deployment-pipelines-best-practices.md)

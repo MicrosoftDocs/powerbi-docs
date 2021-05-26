@@ -455,7 +455,7 @@
       - name: "Get started"
         href: deployment-pipelines-get-started.md
       - name: "Troubleshooting"
-        href: deployment-pipelines-troubleshooting.md      
+        href: deployment-pipelines-troubleshooting.yml      
     - name: Accessibility
       items:       
       - name: "Design accessible reports"
