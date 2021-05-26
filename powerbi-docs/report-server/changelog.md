@@ -32,9 +32,9 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
         - Security updates
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
-   - *Version: xxxxxxxxxxxxxxx (May 2021), Released: May 26, 2021*
+   - *Version: 2.93.941.0 (May 2021), Released: May 26, 2021*
         - Contains changes required for connection with Power BI Report Server (May 2021).
-        - "Models with enhanced metadata" is now the only option for modeling in Power BI Desktop.
+        - "Models with enhanced metadata" is now the only option for modeling in Power BI Desktop for RS.
         - Bug fixes
 
 ## January 2021
