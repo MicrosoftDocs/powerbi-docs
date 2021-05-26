@@ -69,8 +69,17 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
     :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-send-email-17.png" alt-text="Select your exported report to email.":::
 
 18. When you're done, select **Next step** or **Save**. Power Automate creates and evaluates the flow, and lets you know if it finds errors.
-1. If there are errors, select **Edit flow** to fix them. Otherwise, select the **Back** arrow to view the flow details and run the new flow.
+19. If there are errors, select **Edit flow** to fix them. Otherwise, select the **Back** arrow to view the flow details and run the new flow.
     When you run the flow, Power Automate exports a Power BI report in the specified format and sends it as an email attachment as scheduled.  
+
+## Row Level Security (RLS) in Power Automate 
+Optionally, if you want to send the report based on RLS, then you need to add the following details as shown in the picture
+![image](https://user-images.githubusercontent.com/75480633/119626750-26462580-be29-11eb-9222-de9ad97a5a3d.png)
+
+1. **Identities Username - 1** = The effective username reflected by a token for applying RLS rules (For OnPrem model, username can be composed of alpha-numerical characters or any of the following characters '.', '-', '_', '!', '#', '^', '~', '\', '@', also username cannot contain spaces. For Cloud model, username can be composed of all ASCII characters. username must be up to 256 characters)
+2. **Identities Dataset - 1** = It is dataset ID not dataset Name, you can get this by going on to the settings of the dataset and from address bar as shown in the below image
+ ![image](https://user-images.githubusercontent.com/75480633/119627411-cac86780-be29-11eb-8f35-ad1b8644271f.png)
+3. **Identities Roles Item - 1** = RLS name defined in the report
 
 ## Next steps
 
