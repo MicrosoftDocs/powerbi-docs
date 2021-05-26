@@ -672,7 +672,7 @@ On the **Workspaces** tab, you see the *state* for each workspace. The following
 | **Deleted** | A deleted workspace. We maintain enough metadata to restore the workspace for up to 90 days. |
 | **Removing** | A workspace that is being deleted, but not gone yet. Users can delete their own workspaces, putting things into Removing and eventually Deleted. |
 
-Admins can also manage and recover workspaces, using either the admin portal or PowerShell cmdlets. 
+Admins can also manage and recover workspaces, using either the admin portal or PowerShell cmdlets.
 
 :::image type="content" source="media/service-admin-portal/powerbi-workspaces-admin-portal.png" alt-text="Screenshot that shows the Power B I workspaces list in the admin portal.":::
 
