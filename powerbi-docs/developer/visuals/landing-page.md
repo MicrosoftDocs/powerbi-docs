@@ -25,11 +25,9 @@ An example of a landing page is shown in the following image:
 This article explains how to design a landing page for your visual. The landing page is displayed whenever the visual has no data in it.
 
 >[!NOTE]
->Designing a Power BI visual landing page is supported from API 2.3.0. To find out which version you’re using, Run the `pbiviz -V` command.
+>Designing a Power BI visual landing page is supported from API version 2.3.0. To find out which version you’re using, Run the `pbiviz -V` command.
 
 ## Creating a landing page
-
-### Setting capabilities
 
 To create a landing page, certain capabilities have to be set in the `capabilities.json` file.
 
@@ -43,7 +41,7 @@ To create a landing page, certain capabilities have to be set in the `capabiliti
     }
 ```
 
-### Example of a visual with a landing page
+## Example of a visual with a landing page
 
 The following code shows how a landing page can be added to bar chart visual.
 
