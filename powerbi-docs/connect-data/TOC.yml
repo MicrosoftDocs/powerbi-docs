@@ -251,6 +251,8 @@
       items: 
       - name: "Troubleshoot refresh scenarios"
         href: refresh-troubleshooting-refresh-scenarios.md
+      - name: "Troubleshoot tile errors"
+        href: refresh-troubleshooting-tile-errors.md
       - name: "Troubleshoot an unsupported data source for refresh"
         href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
       - name: "Troubleshoot scheduled refresh for Azure SQL Databases"

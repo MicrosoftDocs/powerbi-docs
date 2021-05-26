@@ -132,6 +132,8 @@
         href: service-quick-create-report.md
       - name: "Create a report from Excel in the service"
         href: service-report-create-new.md
+      - name: "Create a report quickly from a SharePoint list"
+        href: service-quick-create-sharepoint-list.md
       - name: "Enable automatic page refresh"
         href: desktop-automatic-page-refresh.md
       - name: "Examine report elements with Performance Analyzer"

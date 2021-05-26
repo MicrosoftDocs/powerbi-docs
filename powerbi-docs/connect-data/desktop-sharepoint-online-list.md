@@ -1,5 +1,5 @@
 ---
-title: Create a report on a SharePoint List
+title: Create a report on a SharePoint List in Power BI Desktop
 description: This tutorial shows how to transform your SharePoint List data into a Power BI report.
 author: davidiseminger
 ms.author: davidi
@@ -11,13 +11,15 @@ ms.date: 05/14/2021
 ms.custom: video-OZO3x2NF8Ak
 LocalizationGroup: Visualizations
 ---
-# Create a report on a SharePoint List
+# Create a report on a SharePoint List in Power BI Desktop
 
 Many teams and organizations use Lists in SharePoint Online to store data because it's easy to set up and easy for users to update.  Sometimes a chart is a much easier way for users to quickly understand the data rather than looking at the list itself. In this tutorial, we show how to transform your SharePoint List data into a Power BI report.
 
 Watch this five-minute tutorial video, or scroll down for step-by-step instructions.
 
 <iframe width="400" height="450" src="https://www.youtube.com/embed/OZO3x2NF8Ak" frameborder="0" allowfullscreen></iframe>
+
+In the Power BI service, you can also [create a report quickly from data in a SharePoint list](../create-reports/service-quick-create-sharepoint-list.md).
 
 ## Part 1: Connect to your SharePoint List
 
@@ -69,3 +71,7 @@ Watch this five-minute tutorial video, or scroll down for step-by-step instructi
 5. Change the visual type if you need to.
 6. You can create multiple visualizations in the same report by unselecting the existing visual then selecting checkboxes for other columns in the **Fields** pane.
 7. Select **Save** to save your report.
+
+## Next steps
+
+- [Create a report quickly from a SharePoint list](../create-reports/service-quick-create-sharepoint-list.md)
