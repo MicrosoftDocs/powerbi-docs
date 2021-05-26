@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 04/04/2021
+ms.date: 05/26/2021
 ---
 
 # Change log for Power BI Report Server
@@ -16,6 +16,26 @@ This change log is for Power BI Report Server and lists new items along with bug
 
 See [What's new in Power BI Report Server](whats-new.md) for more information about new features. 
 
+
+## May 2021
+- **Power BI Report Server**
+    - *Version: 1.11.7815.32699 (Build 15.0.1106.170), Released: May 26, 2021*
+        - Features
+            - Added support and enhancements for PBIX reports containing "models with enhanced metadata".
+            - Custom Visual API shipped with release - version 3.5.0
+        - Bug fixes
+            - Fixed issue with caching of linked reports.
+            - Fixed issue where "Changed by" section would show incorrect date on some PBIX reports.
+            - Fixed issue causing "Datasource is not found" for SAP HANA data sources.
+            - Fixed permission issue for live connect of SSAS tabular PBIX reports.
+            - Fixed various issues with new portal preview which.
+        - Security updates
+
+- **Power BI Desktop (optimized for Power BI Report Server)**
+   - *Version: xxxxxxxxxxxxxxx (May 2021), Released: May 26, 2021*
+        - Contains changes required for connection with Power BI Report Server (May 2021).
+        - "Models with enhanced metadata" is now the only option for modeling in Power BI Desktop.
+        - Bug fixes
 
 ## January 2021
 - **Power BI Report Server**
