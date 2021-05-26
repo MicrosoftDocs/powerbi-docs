@@ -70,10 +70,13 @@ If space is tight on your report, you may want to reduce the amount you indent t
 1. Expand **Items**, then drag **Stepped layout indentation** smaller or larger. You can also just type a number in the box.
 
     :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-indentation.png" alt-text="Screenshot of Set the hierarchy slicer indentation.":::
+
     
 ## Limitations and considerations
 
-- For tabular models, this feature requires SQL Server Analysis Services 2017 or newer.
+- When using live connection to SSAS Tabular and the property **hide members** in the hierarchy is set to **Hide blank members**, Power BI does not hide blank members.  This creates a ragged hierarchy.    
+- A ragged hierarchy is also created when there are blank values for a category at any hierarchy level. For example, if employeeA has three levels of management (manager > vice-president > CEO) but does not have a "director", the data table row for employeeA will have three values (names) and one blank. While you can use the Filters pane to deselect blank values for "director", doing so also prevents the other three values from being included in the slicer for employeeA. As a result, employeeA will be removed from the hierarchy slicer.    
+- For tabular models, this feature requires SQL Server Analysis Services 2017 or newer.    
 - For multi-dimensional models, this feature requires SQL Server Analysis Services 2019 CU5 or newer with SuperDAXMD enabled. Read more about [SuperDAXMD](/analysis-services/multidimensional-models/dax-for-multidimensional-models#superdaxmd).
 
 ## Next steps
