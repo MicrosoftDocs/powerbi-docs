@@ -271,7 +271,7 @@ For instructions on how to import the `circleCard.pbiviz` file from the **dist**
 
 ## Debugging
 
-For tips about debugging your custom visual, see the [debugging guide](./visuals-how-to-debug.md#how-to-debug-power-bi-visuals).
+For tips about debugging your custom visual, see the [debugging guide](./visuals-how-to-debug.md).
 
 ## Next steps
 
