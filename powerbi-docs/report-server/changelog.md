@@ -19,9 +19,9 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ## May 2021
 - **Power BI Report Server**
-    - *Version: 1.11.7815.32699 (Build 15.0.1106.170), Released: May 26, 2021*
+    - *Version: 1.11.7815.32463 (Build 15.0.1106.170), Released: May 26, 2021*
         - Features
-            - Added support and enhancements for PBIX reports containing "models with enhanced metadata".
+            - Added enhancements for PBIX reports containing "models with enhanced metadata".
             - Custom Visual API shipped with release - version 3.5.0
         - Bug fixes
             - Fixed issue with caching of linked reports.
