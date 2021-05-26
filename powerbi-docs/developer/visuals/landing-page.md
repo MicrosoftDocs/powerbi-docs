@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 06/18/2019
+ms.date: 05/18/2021
 ---
 
 # Add a landing page to your Power BI visual
