@@ -29,7 +29,7 @@ In the *embed for your customers* solution, also known as *app owns data*, you c
 
 ### Apex class
 
-The Salesforce *embed for your customers* solution uses a [service principal](#embed-service-principal.md), and is built on top of an Apex class named `PowerBiEmbedManager`.
+The Salesforce *embed for your customers* solution uses a [service principal](embed-service-principal.md), and is built on top of an Apex class named `PowerBiEmbedManager`.
 
 Here are some advantages of the `PowerBiEmbedManager` Apex class:
 
