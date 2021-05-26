@@ -25,7 +25,7 @@ For more information on how the gateway works, see [On-premises data gateway arc
 
 ## Types of gateways
 
-There are two different types of gateways, each for a different scenario:
+There are three different types of gateways, each for a different scenario:
 
 * **On-premises data gateway** allows multiple users to connect to multiple on-premises data sources. You can use an on-premises data gateway with all supported services, with a single gateway installation. This gateway is well-suited to complex scenarios with multiple people accessing multiple data sources.
 
