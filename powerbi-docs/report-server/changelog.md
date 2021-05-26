@@ -28,7 +28,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             - Fixed issue where "Changed by" section would show incorrect date on some PBIX reports.
             - Fixed issue causing "Datasource is not found" for SAP HANA data sources.
             - Fixed permission issue for live connect of SSAS tabular PBIX reports.
-            - Fixed various issues with new portal preview which.
+            - Fixed various issues in new portal preview.
         - Security updates
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
