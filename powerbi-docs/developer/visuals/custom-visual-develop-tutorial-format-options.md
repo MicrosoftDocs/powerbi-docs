@@ -7,30 +7,42 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 11/21/2018
+ms.date: 4/28/2021
 ---
 
 # Tutorial: Adding formatting options to a Power BI visual
 
-In this tutorial, we go through how to add common properties to the visual.
+This tutorial is a continuation of the [Develop a Power BI circle card visual](develop-circle-card.md) tutorial.
+In this tutorial, we go through how to add common properties to your visual.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > * Add visual properties.
 > * Package the visual.
-> * Import the custom visual to a Power BI Desktop report.
+> * Import the custom visual to a **Power BI** report.
+
+## Prerequisite
+
+This tutorial uses the CircleCard project that you created in the [Develop a Power BI circle card visual](develop-circle-card.md) tutorial. If you don't have the circle card project folder that you created in that tutorial, please redo the tutorial before continuing.
 
 ## Adding formatting options
 
-1. In **Power BI**, select the **Format page**.
+1. In **PowerShell**, Navigate to your circle card project folder and start the circle card visual. Your visual is now running while being hosted on your computer.
+
+    ```powershell
+    pbiviz start
+    ```
+
+2. In **Power BI**, [view the circle card](develop-circle-card.md#view-the-circle-card-in-power-bi-service) and select the **Format page**.
 
     You should see a message that reads - *Formatting options are unavailable for this visual.*
 
-    ![Formatting paintbrush](media/custom-visual-develop-tutorial-format-options/format-paintbrush.png)
+    :::image type="content" source="media/custom-visual-develop-tutorial-format-options/format-paintbrush.png" alt-text="Formatting paintbrush.":::
 
-2. In **Visual Studio Code**, open the *capabilities.json* file.
+3. In **Visual Studio Code**, open the `capabilities.json` file.
 
-3. Before the **dataViewMappings** array, add **objects** (after line 8).
+4. Before the **dataViewMappings** array, add **objects** (after line 8).
 
     ```json
     "objects": {},
@@ -38,18 +50,18 @@ In this tutorial, you learn how to:
 
     ![Add objects](media/custom-visual-develop-tutorial-format-options/add-objects.png)
 
-4. Save the **capabilities.json** file.
+5. Save the `capabilities.json` file.
 
-5. In **Power BI**, review the formatting options again.
+6. In **Power BI**, review the formatting options again.
 
     > [!Note]
     > If you do not see the formatting options change then select **Reload Custom Visual**.
 
-    ![View formatting options](media/custom-visual-develop-tutorial-format-options/view-formatting-options.png)
+    :::image type="content" source="media/custom-visual-develop-tutorial-format-options/view-formatting-options.png" alt-text="View formatting options.":::
 
-6. Set the **Title** option to *Off*. Notice that the visual no longer displays the measure name at the top-left corner.
+7. Set the **Title** option to *Off*. Notice that the visual no longer displays the measure name at the top-left corner.
 
-    ![Tile option is off](media/custom-visual-develop-tutorial-format-options/tile-option-off.png)
+    :::image type="content" source="media/custom-visual-develop-tutorial-format-options/tile-option-off.png" alt-text="Tile option is off.":::
 
     ![No name tile](media/custom-visual-develop-tutorial-format-options/no-name-tile.png)
 
@@ -57,9 +69,9 @@ In this tutorial, you learn how to:
 
 You can add custom properties to enable configuring the color of the circle, and also the border width.
 
-1. In PowerShell, stop the custom visual.
+1. In **PowerShell**, enter *Ctrl+C* to stop the custom visual.
 
-2. In Visual Studio Code, in the **capabilities.json** file, insert the following JSON fragment into the object labeled **objects**.
+2. In **Visual Studio Code**, in the `capabilities.json` file, insert the following JSON fragment into the object labeled **objects**.
 
     ```json
         {
@@ -89,15 +101,15 @@ You can add custom properties to enable configuring the color of the circle, and
         }
     ```
 
-    The JSON fragment describes a group named circle, which consists of two options named circleColor and circleThickness.
+    This JSON fragment describes a group named circle, which consists of two options named circleColor and circleThickness.
 
    ![Circle thickness code](media/custom-visual-develop-tutorial-format-options/circle-thickness-code.png)
 
-3. Save the **capabilities.json** file.
+3. Save the `capabilities.json` file.
 
-4. In the **Explorer pane**, from inside the **src** folder, and then select **settings.ts**. *This file represents the settings for the starter visual*.
+4. In the **Explorer pane**, from inside the **src** folder, select `settings.ts`. *This file represents the settings for the starter visual*.
 
-5. In the **settings.ts** file, replace the two classes with the following code.
+5. In the `settings.ts` file, replace the two classes with the following code.
 
     ```typescript
     export class CircleSettings {
@@ -111,20 +123,17 @@ You can add custom properties to enable configuring the color of the circle, and
 
     ![Module classes](media/custom-visual-develop-tutorial-format-options/module-classes.png)
 
-    This module defines the two classes. The **CircleSettings** class defines two properties with names that match the objects defined in the **capabilities.json** file (**circleColor** and **circleThickness**) and also sets default values. The **VisualSettings** class inherits the **DataViewObjectParser** class and adds a property named **circle**, which matches the object defined in the *capabilities.json* file, and returns an instance of **CircleSettings**.
+    This module defines the two classes. The **CircleSettings** class defines two properties with names that match the objects defined in the `capabilities.json` file (**circleColor** and **circleThickness**) and also sets default values. The **VisualSettings** class inherits the **DataViewObjectParser** class and adds a property named **circle**, which matches the object defined in the *capabilities.json* file, and returns an instance of **CircleSettings**.
 
-6. Save the **settings.ts** file.
+6. Save the `settings.ts` file.
 
-7. Open the **visual.ts** file.
+7. Open the `visual.ts` file.
 
-8. In the **visual.ts** file,
-
-    import `VisualSettings`, `VisualObjectInstanceEnumeration` and `EnumerateVisualObjectInstancesOptions`:
+8. In the `visual.ts` file, import `VisualSettings` and `VisualObjectInstanceEnumeration`:
 
     ```typescript
     import { VisualSettings } from "./settings";
-    import VisualObjectInstanceEnumeration = powerbi.VisualObjectInstanceEnumeration;
-    import EnumerateVisualObjectInstancesOptions = powerbi.EnumerateVisualObjectInstancesOptions;
+    import VisualObjectInstanceEnumeration = powerbi.VisualObjectInstanceEnumeration;    
     ```
 
     and in the **Visual** class add the following property:
@@ -179,7 +188,7 @@ You can add custom properties to enable configuring the color of the circle, and
 
     ![Circle Stroke-width](media/custom-visual-develop-tutorial-format-options/circle-stroke-width.png)
 
-13. Save the visual.ts file.
+13. Save the `visual.ts` file.
 
 14. In PowerShell, start the visual.
 
@@ -189,13 +198,15 @@ You can add custom properties to enable configuring the color of the circle, and
 
 15. In **Power BI**, in the toolbar floating above the visual, select **Toggle Auto Reload**.
 
+    :::image type="content" source="media/custom-visual-develop-tutorial-format-options/toggle-auto-reload.png" alt-text="Toggle auto reload.":::
+
 16. In the **visual format** options, expand **Circle**.
 
-    ![Circle format](media/custom-visual-develop-tutorial-format-options/circle-format.png)
+    :::image type="content" source="media/custom-visual-develop-tutorial-format-options/circle-format.png" alt-text="Circle format.":::
 
     Modify the **color** and **thickness** option.
 
-    Modify the **thickness** option to a value less than zero, and a value higher than 10. Then notice the visual updates the value to a tolerable minimum or maximum.
+    Modify the **thickness** option to a value less than zero, and a value higher than 10. Notice that the visual updates the value to a tolerable minimum or maximum.
 
 ## Packaging the custom visual
 
@@ -203,7 +214,7 @@ Enter property values for the custom visual project, update the icon file, and t
 
 1. In **PowerShell**, stop the custom visual.
 
-2. Open the **pbiviz.json** file in **Visual Studio Code**.
+2. Open the `pbiviz.json` file in **Visual Studio Code**.
 
 3. In the **visual** object, modify the **displayName** property to *Circle Card*.
 
@@ -215,71 +226,63 @@ Enter property values for the custom visual project, update the icon file, and t
 
     *Displays a formatted measure value inside a circle*
 
-5. Fill **supportUrl** and **gitHubUrl** for the visual.
+5. Fill in **supportUrl** and **gitHubUrl** for the visual.
 
     Example:
 
     ```json
-    {
         "supportUrl": "https://community.powerbi.com",
         "gitHubUrl": "https://github.com/microsoft/PowerBI-visuals-circlecard"
-    }
     ```
 
 6. Enter your details in the **author** object.
 
-7. Save the **pbiviz.json** file.
+7. Save the `pbiviz.json` file.
 
 8. In the **assets** object, notice that the document defines a path to an icon. The icon is the image that appears in the **_Visualizations_** pane. It must be a **PNG** file, *20 pixels by 20 pixels*.
 
-9. In Windows Explorer, copy the icon.png file, and then paste it to replace the default file located at assets folder.
+9. In Windows Explorer, copy the `icon.png` file, and  paste it to replace the default file located in the **assets** folder.
 
-10. In Visual Studio Code, in the Explorer pane, expand the assets folder, and then select the icon.png file.
+10. In **Visual Studio Code**, in the Explorer pane, expand the **assets** folder, and select the icon.png file.
 
 11. Review the icon.
 
     ![Viz pane image](media/custom-visual-develop-tutorial-format-options/viz-pane-image.png)
 
-12. In Visual Studio Code, ensure that all files are saved.
+12. In **Visual Studio Code**, ensure that all files are saved.
 
-13. To package the custom visual, in PowerShell, enter the following command.
+13. To package the custom visual, in **PowerShell**, enter the following command.
 
     ```powershell
     pbiviz package
     ```
 
-    ![Dist folder](media/custom-visual-develop-tutorial-format-options/dist-folder.png)
+The package is output to the **dist** folder of the project.
 
-Now the package is output to the **dist** folder of the project. The package contains everything required to import the custom visual into either the Power BI service or a Power BI Desktop report. You have now packaged the custom visual, and it is now ready for use.
+![Dist folder](media/custom-visual-develop-tutorial-format-options/dist-folder.png)
+
+The package contains everything required to import the custom visual into either the **Power BI service** or a **Power BI Desktop** report. You have now packaged the custom visual, and it's now ready for use.
 
 ## Importing the custom visual
 
-Now you can open the Power BI Desktop report, and import the Circle Card custom visual.
+Now you can open the **Power BI** report, and import the Circle Card custom visual.
 
-1. Open **Power BI Desktop**, create a new report with any *sample dataset*
-
-2. In the **_Visualizations_** pane, select the **ellipsis**, and then select **Import** from File.
-
-    ![Add custom viz to desktop](media/custom-visual-develop-tutorial-format-options/add-custom-viz-to-desktop.png)
-
-3. In the **import window**, select **Import**.
-
-4. In the Open window, navigate to the **dist** folder in your project directory.
-
-5. Select the **circleCard.pbiviz** file, and then select **Open**.
-
-6. When the visual has successfully imported, select **OK**.
-
-7. Verify that the visual has been added to the **_Visualizations_** pane.
-
-    ![View in PBI Desktop viz pane](media/custom-visual-develop-tutorial-format-options/view-in-desktop-viz-pane.png)
-
-8. Hover over the **Circle Card** icon, and notice the tooltip that appears.
+For instructions on how to import the `circleCard.pbiviz` file from the **dist** folder into your **Power BI** report see [Import a custom visual from your local computer](import-visual.md#import-a-visual-file-from-your-local-computer-into-power-bi).
 
 ## Debugging
 
-For tips about debugging your custom visual, see the [debugging guide](./visuals-how-to-debug.md).
+For tips about debugging your custom visual, see the [debugging guide](./visuals-how-to-debug.md#how-to-debug-power-bi-visuals).
 
 ## Next steps
 
-You can list your newly developed visual for others to use by submitting it to the **AppSource**. For more information on this process reference [Publish Power BI visuals to AppSource](office-store.md).
+> [!div class="nextstepaction"]
+> [Publish Power BI visuals to AppSource](office-store.md)
+
+> [!div class="nextstepaction"]
+> [Create a Power BI bar chart visual](create-bar-chart.md)
+
+> [!div class="nextstepaction"]
+> [Learn how to debug a Power BI visual you created](visuals-how-to-debug.md)
+
+> [!div class="nextstepaction"]
+> [Power BI visuals project structure](visual-project-structure.md)
