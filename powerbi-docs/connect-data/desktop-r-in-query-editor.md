@@ -45,7 +45,7 @@ To demonstrate using R in Power Query Editor, we'll use an example stock market 
 
 1. [Download the EuStockMarkets_NA.csv file](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Remember where you save it.
 
-1. Load the file into Power BI Desktop. From the **Home** tab, select **Get Data** > **Text/CSV**.
+1. Load the file into Power BI Desktop. From the **Home** tab, select **Get data** > **Text/CSV**.
 
    ![Select Text/CSV](media/desktop-r-in-query-editor/r-in-query-editor_1.png)
 
@@ -57,9 +57,9 @@ To demonstrate using R in Power Query Editor, we'll use an example stock market 
 
    ![Data in Fields pane](media/desktop-r-in-query-editor/r-in-query-editor_3.png)
 
-1. To open Power Query Editor, from the **Home** ribbon select **Edit Queries**.
+1. To open Power Query Editor, from the **Home** ribbon select **Transform data**.
 
-   ![Select Edit Queries](media/desktop-r-in-query-editor/r-in-query-editor_4.png)
+   ![Select Transform data](media/desktop-r-in-query-editor/r-in-query-editor_4.png)
 
 1. From the **Transform** tab, select **Run R script**. The **Run R script** editor appears. Rows 15 and 20 have missing data, as do other rows you can't see in the image. The following steps show how R completes those rows for you.
 

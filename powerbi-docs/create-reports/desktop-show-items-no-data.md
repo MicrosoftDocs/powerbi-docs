@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/16/2019
+ms.date: 05/11/2021
 LocalizationGroup: Data from files
 ---
 # Show items with no data in Power BI
@@ -69,7 +69,7 @@ The previous section described how Power BI determines which data is relevant to
 
 The **Show items with no data** feature enables you to do exactly that - include data rows and columns that don't contain measure data (blank measure values).
 
-To enable the **Show items with no data** feature select a visual, then in the **Fields** well, right-click the field and select **Show items with no data** from the menu that appears, as shown in the following image:
+To enable the **Show items with no data** feature select a visual, then in the **Values** fields well, right-click the field and select **Show items with no data** from the menu that appears, as shown in the following image:
 
 ![How to enable the Show items with no data feature](media/desktop-show-items-no-data/show-items-no-data_02.png)
 

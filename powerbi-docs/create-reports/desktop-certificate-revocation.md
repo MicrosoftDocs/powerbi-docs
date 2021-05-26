@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 03/10/2021
+ms.date: 05/18/2021
 LocalizationGroup: Create reports
 ---
 # Certificate revocation check, Power BI Desktop
@@ -51,7 +51,7 @@ You can also control the certificate revocation check by setting the DWORD regis
 - **Disabled** is the same as **None** in Power BI Desktop.
 - **Comprehensive**
 
-Set the DWORD registry value `DisableCertificateRevocationCheck` in the Power BI Desktop registry key. The key is in one of these formats, depending on your operating system:
+Set the DWORD registry value `DisableCertificateRevocationCheck` in the Power BI Desktop registry key. The key is in one of these folders, depending on your operating system:
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Microsoft Power BI Desktop

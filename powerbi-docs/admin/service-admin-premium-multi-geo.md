@@ -60,6 +60,7 @@ These items remain in the home region for the tenant:
 - Service buses for gateway queries or scheduled refresh jobs
 - Permissions
 - Dataset credentials
+- Power BI Embedded Analytics Playground saved state
 
 
 

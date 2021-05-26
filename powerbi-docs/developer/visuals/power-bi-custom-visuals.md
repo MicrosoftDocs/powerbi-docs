@@ -40,9 +40,9 @@ Microsoft and community members contribute Power BI visuals for public benefit, 
 
 >[!NOTE]
 >
->* By using Power BI visuals created with our SDK, you may be importing data from, or sending data to, third party or other services located outside of your Power BI tenant’s geographic area, compliance boundary, or national cloud instance.
->* Power BI certified visuals are visuals in the AppSource that were additionally tested to check that the visual does not access external services or resources.
->* Once Power BI visuals from AppSource are imported, visuals may be updated automatically without any additional notice.
+> * By using Power BI visuals created with our SDK, you may be importing data from, or sending data to, third party or other services located outside of your Power BI tenant’s geographic area, compliance boundary, or national cloud instance.
+> * Power BI certified visuals are visuals in the AppSource that were additionally tested to check that the visual does not access external services or resources.
+> * Once Power BI visuals from AppSource are imported, visuals may be updated automatically without any additional notice.
 
 ### What is AppSource?
 

@@ -210,6 +210,8 @@ To access sensitivity labels in either of these centers, navigate to **Classific
 
 ### Power BI Desktop (preview)
 
+* Power BI Desktop for Power BI Report Server does not support preview features, thus the Information protection preview feature is not available there. If you try to open a protected .pbix file, the file will not open and you will receive an error message, just as you would in regular Power BI Desktop with the Information protection preview feature turned off. Sensitivity-labeled .pbix files that are not encrypted can be opened as normal.
+
 * Protected .pbix files can be only opened by a user who has [**Full control** and/or **Export** usage rights](/microsoft-365/compliance/encryption-sensitivity-labels) for the relevant label. The user that set the label also has Full control and can never be locked out. [See more detail](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)
 
 * "Publish" or "Get data" of a protected .pbix file requires that the label on the .pbix file be in the user's [label policy](/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide). If the label isn't in the user's label policy, the Publish or Get data action will fail.
