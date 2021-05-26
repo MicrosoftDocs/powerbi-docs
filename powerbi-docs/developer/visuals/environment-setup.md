@@ -238,7 +238,7 @@ npm i powerbi-visuals-api --save-dev
 
 ## Next steps
 
-> [!div class="nextstepaction]
+> [!div class="nextstepaction"]
 > [Troubleshooting your Power BI environment setup](power-bi-custom-visuals-troubleshoot.md)
 
 > [!div class="nextstepaction"]
