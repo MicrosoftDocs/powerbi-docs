@@ -22,11 +22,13 @@ Each visual has two modes of its context menu. The mode that displays depends on
 
 ## [Context menu on empty space](#tab/EmptySpace)
 
-    ![Context menu called on empty space](media/context-menu/context-menu-called-on-empty-space-in-barchart.png)
+>[!div class="mx-imgBorder"]
+>![Context menu called on empty space](media/context-menu/context-menu-called-on-empty-space-in-barchart.png)
 
-## [Context menu on data point ](#tab/DataPoint)
+## [Context menu on data point](#tab/DataPoint)
 
-    ![Context menu called on datapoint](media/context-menu/datapoint-context-menu-in-barchart.png)
+>[!div class="mx-imgBorder"]
+>![Context menu called on datapoint](media/context-menu/datapoint-context-menu-in-barchart.png)
 
 ---
 
