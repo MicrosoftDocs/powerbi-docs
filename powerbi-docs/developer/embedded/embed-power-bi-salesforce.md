@@ -1,19 +1,19 @@
 ---
 title: Use embedded analytics to embed Power BI content in Salesforce
-description: Learn how to embed Power BI content in Salesforce using embedded analytics
+description: Learn how to embed Power BI content in Salesforce using embedded analytics developer samples
 author: KesemSharabi
 ms.author: kesharab
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 05/12/2021
+ms.date: 05/26/2021
 ---
 
 # Embed Power BI content in Salesforce
 
 [Salesforce](https://www.salesforce.com/) is a world renowned customer relationship management (CRM) solution. Embedded analytics lets you embed Power BI content such as reports and dashboards in Salesforce.
 
-This article links to two tutorials that show how to develop using Power BI embedded analytics in a Salesforce environment.
+This article links to two samples that show how to develop using Power BI embedded analytics in a Salesforce environment.
 
 ## Prerequisites
 
@@ -41,7 +41,7 @@ Here are some advantages of the `PowerBiEmbedManager` Apex class:
 
 The Salesforce *embed for your customers* solution contains a Lighting Aura component named `powerBiReportAura`. When you add an instance of the `powerBiReportAura` component to a Lightning application page, you must configure it with a specific Power BI *Workspace ID* and *Report ID*. This design makes it possible to add multiple instances of the `powerBiReportAura` component, and configure each instance to embed a different Power BI report.
 
-### Access the *embed for your customers* Salesforce tutorial
+### Access the *embed for your customers* Salesforce developer sample
 
 To embed Power BI content using the *embed for your customers* Salesforce solution, follow the instructions in the [SalesforceAppOwnsDataEmbedding](https://github.com/PowerBiDevCamp/SalesforceAppOwnsDataEmbedding) GitHub repository.
 
@@ -61,7 +61,7 @@ The Salesforce *embed for your organization* Salesforce solution uses a simple s
 
 In the Salesforce *embed for your organization* Salesforce solution, `powerbi.js` is used to access the [Power BI embedded analytics Client APIs](/javascript/api/overview/powerbi/).
 
-### Access the *embed for your organization* Salesforce tutorial
+### Access the *embed for your organization* Salesforce developer sample
 
 To embed Power BI content using the *embed for your organization* solution, follow the instructions in the [SalesforceUserOwnsDataEmbedding](https://github.com/PowerBiDevCamp/SalesforceUserOwnsDataEmbedding) GitHub repository.
 

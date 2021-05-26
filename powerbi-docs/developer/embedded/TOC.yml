@@ -65,7 +65,7 @@
     - name: "Export paginated report to file"
       href: export-paginated-report.md  
     - name: "Embed in Salesforce"
-      href: embed-power-power-bi-salesforce.md        
+      href: embed-power-bi-salesforce.md        
     - name: "Auto-install apps"
       href: embed-auto-install-app.md
     - name: "Create an Azure Active Directory tenant"
