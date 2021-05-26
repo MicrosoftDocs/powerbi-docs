@@ -21,7 +21,7 @@ You can also export paginated reports to a number of formats:
 - Microsoft Excel
 - Microsoft Word
 - Microsoft PowerPoint
-- PDF (and [Accessible PDF, or PDF/UA](../../report-server/rendering-extension-support.md))
+- PDF (and [Accessible PDF, or PDF/UA](../report-server/rendering-extension-support.md))
 - Comma-separated values
 - XML
 - Web archive (.mhtml)
