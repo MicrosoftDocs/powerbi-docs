@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 12/11/2018
+ms.date: 05/11/2021
 LocalizationGroup: Visualizations
 ---
 
