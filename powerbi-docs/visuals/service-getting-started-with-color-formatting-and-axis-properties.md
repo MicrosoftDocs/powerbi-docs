@@ -7,7 +7,8 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 05/24/2021
+ms.custom: pbibetadocbug
+ms.date: 05/27/2021
 LocalizationGroup: Visualizations
 ---
 # Getting started with the formatting pane
