@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 05/11/2021
+ms.date: 05/26/2021
 ---
 
 # Understand the deployment process
@@ -15,6 +15,8 @@ ms.date: 05/11/2021
 The deployment process lets you clone content from one stage in the pipeline to another, typically from development to test, and from test to production.
 
 During deployment, Power BI copies the content from the current stage, into the target one. The connections between the copied items are kept during the copy process. Power BI also applies the configured deployment rules to the updated content in the target stage. Deploying content may take a while, depending on the number of items being deployed. During this time, you can navigate to other pages in the Power BI portal, but you cannot use the content in the target stage.
+
+You can also deploy content programmatically, using the [deployment pipelines REST APIs](/rest/api/power-bi/pipelines). You can learn more about this process in the [Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md) article.
 
 ## Deploying content to an empty stage
 
