@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 05/26/2021
 LocalizationGroup: Dashboards
 ---
 # Featured dashboards in the Power BI service

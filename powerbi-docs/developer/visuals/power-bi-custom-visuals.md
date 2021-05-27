@@ -14,9 +14,9 @@ LocalizationGroup: Visualizations
 
 # Visuals in Power BI
 
-There are three main sources of Power BI visuals:
+Power BI visuals can be obtained from three main sources:
 
-* [Default](#default-power-bi-visuals) visuals available on the visualization pane.
+* [Default](#default-power-bi-visuals) visuals are readily available on the visualization pane.
 * Visuals [imported](#appsource-power-bi-visuals) from Microsoft [AppSource](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fappsource.microsoft.com%2Fen-us%2Fmarketplace%2Fapps%3Fpage%3D1%26product%3Dpower-bi-visuals&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C6d9286afacb3468d4cde08d740b76694%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637049028749147718&sdata=igWm0e1vXdgGcbyvngQBrHQVAkahPnxPC1ZhUPntGI8%3D&reserved=0) or Power BI.
 * [Custom visuals](#custom-visual-files).
 
