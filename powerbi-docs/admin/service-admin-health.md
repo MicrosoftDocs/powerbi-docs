@@ -29,7 +29,7 @@ For more info about roles, see [Administrator roles related to Power BI](service
 
 1. Select **Advisories** or **Incidents**, and then review the results.
 
-    :::image type="content" source="media/service-admin-health/servicehealth-advisories-2021.png" alt-text="Screenshot of the Service health page with the three advisories for Power BI and Show details option called out.":::
+    :::image type="content" source="media/service-admin-health/service-health-advisories-2021.png" alt-text="Screenshot of the Service health page with the three advisories for Power BI and Show details option called out.":::
 
 1. To see more information, select an item.
 

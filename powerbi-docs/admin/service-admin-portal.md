@@ -26,11 +26,11 @@ You have to be a global admin or Power BI service admin to access the Power BI a
 
 1. From the page header, select **...** > **Settings** > **Admin portal**.
 
-   :::image type="content" source="media/service-admin-portal/powerbi-settings-menu.png" alt-text="Settings menu with admin portal selected.":::
+   :::image type="content" source="media/service-admin-portal/power-bi-settings-menu.png" alt-text="Settings menu with admin portal selected.":::
 
 There are many sections in the Admin portal. The rest of this article provides information about each of these sections.
 
-   :::image type="content" source="media/service-admin-portal/powerbi-admin-portal-menu-2021.png" alt-text="Screenshot that shows the Admin portal menu.":::
+   :::image type="content" source="media/service-admin-portal/power-bi-admin-portal-menu-2021.png" alt-text="Screenshot that shows the Admin portal menu.":::
 
 * [Usage metrics](#usage-metrics)
 * [Users](#users)
@@ -99,7 +99,7 @@ See [Monitor usage metrics for Power BI dashboards and reports](../collaborate-s
 
 1. Enable (or disable) usage metrics > **Apply**.
 
-    :::image type="content" source="media/service-admin-portal/powerbi-usage-metrics-content-creators.png" alt-text="Screenshot that shows the Usage metrics for content creators setting enabled.":::
+    :::image type="content" source="media/service-admin-portal/power-bi-usage-metrics-content-creators.png" alt-text="Screenshot that shows the Usage metrics for content creators setting enabled.":::
 
 ### Per-user data in usage metrics for content creators
 
@@ -192,7 +192,7 @@ Mail-enabled security groups will receive email notifications if this tenant is 
 
 ### Allow users to try Power BI paid features
 
-   :::image type="content" source="media/service-admin-portal/powerbi-settings-paid-features.png" alt-text="Screen capture showing Allow users to try Power BI paid features interface.":::
+   :::image type="content" source="media/service-admin-portal/power-bi-settings-paid-features.png" alt-text="Screen capture showing Allow users to try Power BI paid features interface.":::
 
 The setting to **Allow users to try Power BI paid features** is enabled by default. This setting increases your control over how users get license upgrades. In scenarios where you have blocked self-service purchase, this setting lets users use more features free for 60 days. Users who have a Power BI (free) license can start a Power BI Pro trial. Users with a Power BI Pro license can start a Power BI Premium Per User trial. The user's license upgrade experience depends on how you combine license settings. The table below shows how the upgrade experience is affected by different setting combinations:
 
@@ -305,13 +305,13 @@ To learn more about protection settings for sensitivity labels, check out the Mi
 
 Enabling this setting allows Azure Active Directory Business-to-Business (Azure AD B2B) guest users to access Power BI. If you disable this setting, guest users receive an error when trying to access Power BI. Disabling this setting for the entire organization also prevents users from inviting guests to your organization. Use the specific security groups option to control which guest users can access Power BI.
 
-![Allow Azure Active Directory guest users to access Power BI](media/service-admin-portal/powerbi-admin-allow-aad-b2b-guests.png)
+![Allow Azure Active Directory guest users to access Power BI](media/service-admin-portal/power-bi-admin-allow-azure-ad-b2b-guests.png)
 
 ### Invite external users to your organization
 
 The **Invite external users to your organization** setting helps organizations choose whether new external users can be invited to the organization through Power BI sharing, permissions, and subscription experiences. If the setting is disabled, an external user who isn't already a guest user in the organization, can’t be added to the organization through Power BI.
 
-:::image type="content" source="media/service-admin-portal/powerbi-invite-external-users.png" alt-text="Screenshot that shows the Invite external users to your organization setting.":::
+:::image type="content" source="media/service-admin-portal/power-bi-invite-external-users.png" alt-text="Screenshot that shows the Invite external users to your organization setting.":::
 
 > [!IMPORTANT]
 > This setting was previously called “Share content with external users”. The revised name reflects more accurately what the setting does.
@@ -347,11 +347,11 @@ As a Power BI admin, the **Publish to web** setting gives you options that let u
 
 You can find **Publish to web** under **File** > **Embed report** when the **Publish to web** setting is enabled.
 
-:::image type="content" source="media/service-admin-portal/powerbi-embed-options.png" alt-text="Screenshot that shows the Publish to web option.":::
+:::image type="content" source="media/service-admin-portal/power-bi-embed-options.png" alt-text="Screenshot that shows the Publish to web option.":::
 
 The **Publish to web** setting in the admin portal gives options for which users can create embed codes.
 
-![Publish to web setting](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
+![Publish to web setting](media/service-admin-portal/power-bi-admin-publish-to-web-setting.png)
 
 Admins can set **Publish to web** to **Enabled** and **Choose how embed codes work** to **Allow only existing embed codes**. In that case, users can create embed codes, but they have to contact the Power BI admin to allow them to do so.
 
@@ -460,7 +460,7 @@ Read more about [Power BI featured tables in Excel](../collaborate-share/service
 
 This setting allows organizations to access features that work with Microsoft Teams and the Power BI service. These features include launching Teams experiences from Power BI like chats, the Power BI app for Teams, and getting Power BI notifications from Teams. To completely enable or disable Teams integration, work with your Teams admin.
 
-:::image type="content" source="media/service-admin-portal/powerbi-enable-teams-integration.png" alt-text="Screenshot that shows the Microsoft Teams integration tenant setting in the Power B I admin portal.":::
+:::image type="content" source="media/service-admin-portal/power-bi-enable-teams-integration.png" alt-text="Screenshot that shows the Microsoft Teams integration tenant setting in the Power B I admin portal.":::
 
 Read more about [sharing Power BI content to Teams](../collaborate-share/service-share-report-teams.md).
 
@@ -486,7 +486,7 @@ Admins use this setting to decide which users can publish content packs and apps
 
 The following image shows the **My entire organization** option when creating a content pack.
 
-![Publish content pack to organization](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
+![Publish content pack to organization](media/service-admin-portal/power-bi-admin-publish-entire-org.png)
 
 ### Create template apps and organizational content packs
 
@@ -604,13 +604,13 @@ Users in the organization can create template apps workspaces. Control which use
 
 Users in the organization can download and install template apps **only** from [AppSource](https://appsource.microsoft.com). Control which specific users or security groups can install template apps from AppSource.
 
-:::image type="content" source="media/service-admin-portal/powerbi-install-template-apps-settings.png" alt-text="Screenshot that shows the Install template apps setting.":::
+:::image type="content" source="media/service-admin-portal/power-bi-install-template-apps-settings.png" alt-text="Screenshot that shows the Install template apps setting.":::
 
 ### Install template apps not listed on AppSource
 
 Control which users in the organization can download and install template apps **not listed on [AppSource](https://appsource.microsoft.com)**.
 
-![Install template apps not listed in AppSource setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-nonappsource.png)
+![Install template apps not listed in AppSource setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-non-app-source.png)
 
 ## Capacity settings
 
@@ -630,7 +630,7 @@ For more information about how to manage Power BI Embedded (A SKU) settings, see
 
 As an administrator, you can view the embed codes that are generated for your tenant to share reports publicly. You can also revoke or delete codes. [Learn more](../collaborate-share/service-publish-to-web.md)
 
-:::image type="content" source="media/service-admin-portal/powerbi-settings-embed-codes.png" alt-text="Screenshot that shows the embed codes within the Power BI admin portal.":::
+:::image type="content" source="media/service-admin-portal/power-bi-settings-embed-codes.png" alt-text="Screenshot that shows the embed codes within the Power BI admin portal.":::
 
 ## Organizational visuals
 
@@ -657,7 +657,7 @@ As an administrator, you can view the workspaces that exist in your organization
 - Edit the Name and Description fields.
 - Upgrade classic workspaces to the new workspace experience
 
-:::image type="content" source="media/service-admin-portal/powerbi-workspaces-admin-portal.png" alt-text="Screenshot that shows the Power B I workspaces list in the admin portal.":::
+:::image type="content" source="media/service-admin-portal/power-bi-workspaces-admin-portal.png" alt-text="Screenshot that shows the Power B I workspaces list in the admin portal.":::
 
 Admins can also control users' ability to create new workspace experience workspaces, and classic workspaces. See [Workspace settings](#workspace-settings) in this article for details.
 
