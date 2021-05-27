@@ -80,7 +80,7 @@ Let’s walk through the steps necessary to customize colors on a visualization.
 
     ![Chart with Formatting pane open and Data colors expanded](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-data-colors.png)
 
-4. Change **Show all** to On, and select different colors for columns.
+4. Change **Show all** to On, and select different colors for columns, rows, lines -- depending on the visual type.
 
     ![Chart with new colors applied to some columns](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-change-colors.png)
 
