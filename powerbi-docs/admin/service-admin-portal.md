@@ -644,7 +644,12 @@ By default, data used with Power BI is stored in internal storage provided by Po
 
 ### Workspace-level storage permissions (preview)
 
-By default, workspace admins can't connect their own storage account. This preview feature lets you turn on a setting that allows workspace admins to connect their own storage account.
+By default, workspace admins can't connect their own storage account. This preview feature lets Power BI administrators turn on a setting that allows workspace admins to connect their own storage account.
+
+To activate this feature, go to the **Admin portal > Azure connections > Connect to Azure resources (preview)**, open the **Workspace-level storage permissions (preview)** section, and check the **Allow workspace admins to connect their own Log Analytics workspace** checkbox.
+
+![Screenshot of the Allow workspace admins to connect their own Log Analytics workspace checkbox. ](media/service-admin-portal/connect-own-storage-account-switch.png)
+
 
 ## Workspaces
 
