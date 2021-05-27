@@ -3243,6 +3243,11 @@
         {
             "source_path": "powerbi-docs/desktop-high-density-scatter-charts.md",
             "redirect_url": "/power-bi/create-reports/desktop-high-density-scatter-charts",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/visuals/desktop-high-density-scatter-charts.md",
+            "redirect_url": "/power-bi/create-reports/desktop-high-density-scatter-charts",
             "redirect_document_id": true
         },
         {

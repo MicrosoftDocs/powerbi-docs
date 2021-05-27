@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/11/2021
+ms.date: 05/20/2021
 ms.custom: video-l2wy4XgQIu0
 LocalizationGroup: Data from files
 ---
@@ -69,8 +69,10 @@ Refresh triggers:
 |---------|---------|
 |Open report (after the cache has expired)     |Open the dashboard (after the cache is refreshed)         |
 |Select **Refresh** in the report     |Select **Refresh** in the dashboard         |
-|     |Automatically (when the cache is refreshed) if the dashboard is already open         |
+|     |Automatically for pinned tiles (when the cache is refreshed) if the dashboard is already open         |
 
+> [!NOTE]
+> Pinned *pages* do not have the automatic refresh feature.
 
 Choose this option if you’ve used Get & Transform data or Power Pivot to load data into a data model, or if your workbook has Power View sheets with visualizations you want to see in Power BI.
 

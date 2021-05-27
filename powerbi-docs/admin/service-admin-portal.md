@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 04/30/2021
+ms.date: 05/27/2021
 ms.custom: ''
 LocalizationGroup: Administration
 ---
@@ -500,21 +500,31 @@ Report creators can share apps directly with end users without requiring install
 
 ### Allow XMLA endpoints and Analyze in Excel with on-premises datasets
 
-Users in the organization can use Excel to view and interact with on-premises Power BI datasets. This also allows connections to XMLA endpoints. [Learn more](../collaborate-share/service-analyze-in-excel.md)
+Users in the organization can use Excel to view and interact with on-premises Power BI datasets. This also allows connections to XMLA endpoints. Learn more about [analyzing in Excel](../collaborate-share/service-analyze-in-excel.md).
 
 ### Use ArcGIS Maps for Power BI
 
-Users in the organization can use the ArcGIS Maps for Power BI visualization provided by Esri. [Learn more](../visuals/power-bi-visualizations-arcgis.md)
+Users in the organization can use the ArcGIS Maps for Power BI visualization provided by Esri. Learn more about [ArcGIS maps](../visuals/power-bi-visualizations-arcgis.md).
 
 ### Use global search for Power BI (Preview)
 
 Users in the organization can use external search features that rely on Azure Search.
 
-## R visuals settings
+### Integration with SharePoint and Microsoft Lists
 
-### Interact with and share R visuals
+Users in the organization can create Power BI reports directly from SharePoint and Microsoft Lists. Then they can build Power BI reports on the data in those lists and publish them back to the lists, to be visible to others who can access the list. This setting is in **Tenant settings** > **Integration settings**.
 
-Users in the organization can interact with and share visuals created with R scripts. [Learn more](../visuals/service-r-visuals.md)
+:::image type="content" source="media/service-admin-portal/admin-integration-sharepoint-lists.png" alt-text="Allow integration with SharePoint and Microsoft Lists.":::
+
+This feature is on by default. Even if the feature is disabled, in SharePoint and Microsoft Lists users will still see **Power BI** > **Visualize the list**, and any existing Power BI reports, on the **Integrate** menu. If they select **Visualize the list**, they go to an error page explaining that their admin has disabled the feature.
+
+Learn more about [creating reports from SharePoint and Microsoft Lists](../create-reports/service-quick-create-sharepoint-list.md).
+
+## R and Python visuals settings
+
+### Interact with and share R and Python visuals
+
+Users in the organization can interact with and share visuals created with R or Python scripts. Learn more about [R visuals](../visuals/service-r-visuals.md).
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
@@ -634,7 +644,12 @@ By default, data used with Power BI is stored in internal storage provided by Po
 
 ### Workspace-level storage permissions (preview)
 
-By default, workspace admins can't connect their own storage account. This preview feature lets you turn on a setting that allows workspace admins to connect their own storage account.
+By default, workspace admins can't connect their own storage account. This preview feature lets Power BI administrators turn on a setting that allows workspace admins to connect their own storage account.
+
+To activate this feature, go to **Admin portal > Azure connections > Connect to Azure resources (preview) > Workspace-level storage permissions (preview)**, and check the **Allow workspace admins to connect their own Log Analytics workspace** checkbox.
+
+![Screenshot of the Allow workspace admins to connect their own Log Analytics workspace checkbox. ](media/service-admin-portal/connect-own-storage-account-switch.png)
+
 
 ## Workspaces
 
@@ -692,10 +707,10 @@ As an administrator, you can customize the look of Power BI for your whole organ
 
 * **Upload Cover image**: For best results, upload a cover image that's saved as a .jpg or .png, 1 MB or smaller, and at least 1920 x 160 pixels.
 
-* **Select Theme color**: You are able to select your theme based on a hex #, RGB, value, or from the provided palette.
+* **Select Theme color**: You can select your theme based on a hex #, RGB, value, or from the provided palette.
 
 
-For more information, see [Custom branding for your organization](https://aka.ms/orgBranding).
+For more information, see [Add custom branding to the Power BI service](service-admin-custom-branding.md).
 
 ## Protection metrics
 

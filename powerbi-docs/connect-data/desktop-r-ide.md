@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/08/2019
+ms.date: 05/13/2021
 LocalizationGroup: Connect to data
 ---
 # Use an external R IDE with Power BI
@@ -35,7 +35,7 @@ If you have multiple R IDEs installed, you can specify which will be launched by
 
 By default, **Power BI Desktop** will launch **R Studio** as the external R IDE if it's installed on your local computer; if **R Studio** is not installed and you have **Visual Studio 2015** with **R Tools for Visual Studio**, that will be launched instead. If neither of those R IDEs is installed, the application associated with **.R** files is launched.
 
-And if no **.R** file association exists, it's possible to specify a path to a custom IDE in the *Browse to your preferred R IDE* section of the **Options** dialog. You can also launch a different R IDE by selecting the **Settings** gear icon beside the **Launch R IDE** arrow icon, in **Power BI Desktop**.
+And if no **.R** file association exists, it's possible to specify a path to a custom IDE in the *Browse to your preferred R IDE* section of the **Options** dialog. You can also launch a different R IDE by selecting the **Settings** gear icon beside the **Edit script in external IDE** arrow icon, in **Power BI Desktop**.
 
 ## Launch an R IDE from Power BI Desktop
 To launch an R IDE from **Power BI Desktop**, take the following steps:
@@ -55,7 +55,7 @@ To launch an R IDE from **Power BI Desktop**, take the following steps:
    > The default aggregation type for R visuals is *do not summarize*.
    > 
    > 
-5. You can now launch your R IDE directly from **Power BI Desktop**. Select the **Launch R IDE** button, found on the right side of the **R script editor** title bar, as shown below.
+5. You can now launch your R IDE directly from **Power BI Desktop**. Select the **Edit script in external IDE** button, found on the right side of the **R script editor** title bar, as shown below.
    
    ![Screenshot of the R I D E pane, showing how to launch it from the R I D E button.](media/desktop-r-ide/r-ide_6.png)
 6. Your specified R IDE is launched by Power BI Desktop, as shown in the following image (in this image, **RStudio** is the default R IDE).

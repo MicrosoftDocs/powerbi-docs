@@ -92,4 +92,5 @@ If you use the **Edit** option to switch into full editing mode and save the rep
 ## Next steps
 
 * [Reports in Power BI](../consumer/end-user-reports.md)
+* [Create a report quickly from a SharePoint list in the Power BI service](service-quick-create-sharepoint-list.md)
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)

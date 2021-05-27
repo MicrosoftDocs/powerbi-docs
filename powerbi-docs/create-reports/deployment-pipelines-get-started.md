@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 03/22/2021
+ms.date: 05/26/2021
 ---
 
 # Get started with deployment pipelines
@@ -63,7 +63,7 @@ You can create a pipeline from an existing workspace, providing you're the admin
 
 After creating a pipeline, you need to add the content you want to manage to the pipeline. Adding content to the pipeline is done by assigning a workspace to the pipeline stage. You can assign a workspace to any stage.
 
-You can assign one workspace to a deployment pipeline. Deployment pipelines will create clones of the workspace content, to be used in different stages of the pipeline.
+You can only assign *one workspace* to a deployment pipeline. Deployment pipelines will create clones of the workspace content, to be used in different stages of the pipeline.
 
 Follow these steps to assign a workspace in a deployment pipeline:
 
@@ -88,12 +88,16 @@ Follow these steps to assign a workspace in a deployment pipeline:
 
 * You cannot assign a workspace with [Power BI samples](../create-reports/sample-datasets.md) to a pipeline stage.
 
+* You can only assign one workspace to each deployment pipeline.
+
 >[!NOTE]
 >Only workspaces that can be used with deployment pipelines, will show in the list of workspaces you can select from.
 
 ## Step 3 - Deploy to an empty stage
 
 Any [Pro user](../admin/service-admin-purchasing-power-bi-pro.md) that's a member or admin in the source workspace, can deploy content to an empty stage (a stage that doesn't contain content). The workspace must reside on a capacity for the deployment to be completed.
+
+You can also use the [deployment pipelines REST APIs](/rest/api/power-bi/pipelines) to programmatically perform deployments. For more information, see [Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md).
 
 >[!NOTE]
 >To deploy a paginated report, you'll need a [capacity that supports paginated reports](./../paginated-reports/paginated-reports-faq.yml#what-size-premium-capacity-do-i-need-for-paginated-reports-).
@@ -299,6 +303,9 @@ You can learn more about [which items are copied to the next stage](deployment-p
 
 >[!div class="nextstepaction"]
 >[Understand the deployment pipelines process](deployment-pipelines-process.md)
+
+>[!div class="nextstepaction"]
+>[Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md)
 
 >[!div class="nextstepaction"]
 >[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.md)

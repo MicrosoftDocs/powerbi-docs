@@ -63,6 +63,8 @@
         href: desktop-accessibility-overview.md     
       - name: "Certificate revocation"
         href: desktop-certificate-revocation.md     
+      - name: "Evaluation configuration settings"
+        href: desktop-evaluation-configuration.md     
       - name: Natural language Q&A
         items: 
         - name: "Q&A introduction"
@@ -118,7 +120,9 @@
       - name: "Understand the deployment process"
         href: deployment-pipelines-process.md
       - name: "Best practices"
-        href: deployment-pipelines-best-practices.md        
+        href: deployment-pipelines-best-practices.md
+      - name: "Automate deployment pipelines"
+        href: deployment-pipelines-automation.md     
   - name: How-to guides
     expanded: true
     items: 
@@ -128,6 +132,8 @@
         href: service-quick-create-report.md
       - name: "Create a report from Excel in the service"
         href: service-report-create-new.md
+      - name: "Create a report quickly from a SharePoint list"
+        href: service-quick-create-sharepoint-list.md
       - name: "Enable automatic page refresh"
         href: desktop-automatic-page-refresh.md
       - name: "Examine report elements with Performance Analyzer"
@@ -210,7 +216,7 @@
         href: desktop-sort-by-column.md
       - name: "Optimize reports for the mobile apps"
         href: desktop-create-phone-report.md
-      - name: "Apply the See Data and See Records options"
+      - name: "Use Visual table and Data point table"
         href: desktop-see-data-see-records.md
       - name: "Tips and tricks for creating reports"
         href: desktop-tips-and-tricks-for-creating-reports.md
@@ -336,7 +342,7 @@
         href: ../visuals/power-bi-visualization-scatter.md
       - name: "High-density line sampling"
         href: desktop-high-density-sampling.md
-      - name: "Use high-density scatter charts"
+      - name: "High-density sampling in scatter charts"
         href: desktop-high-density-scatter-charts.md
       - name: "Create small multiples (preview)"
         href: ../visuals/power-bi-visualization-small-multiples.md
