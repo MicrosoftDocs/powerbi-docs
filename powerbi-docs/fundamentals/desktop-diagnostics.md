@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 04/12/2021
+ms.date: 05/27/2021
 LocalizationGroup: Get started
 ---
 # Power BI Desktop diagnostics collection
@@ -49,6 +49,11 @@ The diagnostics ZIP file may contain the following files and directories, based 
 :::image type="content" source="media/desktop-diagnostics/desktop-diagnostics-03.png" alt-text="Screenshot of example zip file contents created by diagnostics":::
 
 If requested by Microsoft support, send the compressed folder (the zip file) containing the diagnostic details to Microsoft.
+
+The following video shows the diagnostics collection process:
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWDX8S]
+
 
 ## Diagnostic information collected
 
