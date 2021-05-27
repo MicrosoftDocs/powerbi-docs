@@ -102,6 +102,72 @@ Let's step through an example for passing a **single value** to a parameter dyna
 
 If the mapped column is set to **No** for Multi-select, you must use either a single select mode in the slicer, or require single select in the filter card.
 
+There are additional steps if you want end-users to be able to use the **Select all** option in the slicer or filter card. 
+Let’s use the following scenario as an example. Within the **Model** tab of Power BI Desktop, you can see we have a field called **Country** (list of countries) that is bound to an M parameter called **countryNameMParameter**:
+
+![image](https://user-images.githubusercontent.com/47899466/119888750-5f4eca80-befb-11eb-9293-ee4405d330b4.png)
+
+You’ll also notice that this parameter is enabled for **Multi-select** but not enabled for **Select all**. 
+When we enable the **Select all** toggle, we’ll see an enabled input called **Select all value**:
+
+![image](https://user-images.githubusercontent.com/47899466/119888997-ab9a0a80-befb-11eb-90f1-63e460b338c3.png)
+
+The **Select all value** is used to refer to the Select all option in the M Query. This value is passed to parameter as a list that contains the value you defined for select all. Therefore, when you are defining this value or using the default value, you will need to make sure that this value is unique and does not exist in the field bound to the parameter. 
+Once you have set the value or used the default value for Select all, you will then need to update the M Query to account for this Select all value. 
+
+![image](https://user-images.githubusercontent.com/47899466/119889275-f87de100-befb-11eb-955b-39230e2fe799.png)
+
+To edit the M Query, you will need first launch the **Power Query Editor** and then select **Advanced Editor** in the Query section:
+
+![image](https://user-images.githubusercontent.com/47899466/119889349-10edfb80-befc-11eb-9fba-595c0c5c6f0b.png)
+
+In the **Advanced Editor**, we need to add a Boolean expression that will evaluate to true if the parameter is enabled for **Multi-select** and contains the **Select all value** (else return false). For our example that would look like this: 
+
+![image](https://user-images.githubusercontent.com/47899466/119889477-3418ab00-befc-11eb-8f78-9d92e33d6280.png)
+
+Next, we will need to incorporate the result of this Select all Boolean expression into the source query. For our example, we have a Boolean query parameter in the source query called includeAllCountries that is set to the result of the Boolean expression from the previous step. We then use this parameter in a filter clause in the query, such that false for the Boolean will filter to the selected country name(s) and a true would effectively apply no filter:
+
+![image](https://user-images.githubusercontent.com/47899466/119889516-45fa4e00-befc-11eb-89d1-ccbd3b3543e3.png)
+
+For reference here is the full query we used: 
+
+```
+let
+    selectedcountryNames = if Type.Is(Value.Type(countryNameMParameter), List.Type) then 
+      Text.Combine({"'", Text.Combine(countryNameMParameter, "','") , "'"})
+    else
+      Text.Combine({"'" , countryNameMParameter , "'"}),
+
+    selectAllCountries = if Type.Is(Value.Type(countryNameMParameter), List.Type) then 
+      List.Contains(countryNameMParameter, "__SelectAll__")
+    else
+      false,
+
+    KustoParametersDeclareQuery = Text.Combine({"declare query_parameters(", 
+                                 "startTimep:datetime = datetime(", DateTime.ToText(StartTimeMParameter, "yyyy-MM-dd hh:mm"), "), " , 
+                                 "endTimep:datetime = datetime(", DateTime.ToText(EndTimeMParameter, "yyyy-MM-dd hh:mm:ss"), "), ",   
+                                 "includeAllCountries: bool = ", Logical.ToText(selectAllCountries) ,",",
+                                 "countryNames: dynamic = dynamic([", selectedcountryNames, "]));" }),
+
+   ActualQueryWithKustoParameters = 
+                                "Covid19
+                                | where includeAllCountries or Country in(countryNames)
+                                | where Timestamp > startTimep and Timestamp < endTimep
+                                | summarize sum(Confirmed) by Country, bin(Timestamp, 30d)",
+
+    finalQuery = Text.Combine({KustoParametersDeclareQuery, ActualQueryWithKustoParameters}),
+
+    Source = AzureDataExplorer.Contents("help", "samples", finalQuery, [MaxRows=null, MaxSize=null, NoTruncate=null, AdditionalSetStatements=null]),
+    #"Renamed Columns" = Table.RenameColumns(Source,{{"Timestamp", "Date"}, {"sum_Confirmed", "Confirmed Cases"}})
+in
+    #"Renamed Columns"
+```
+
+Once you have updated your M Query to account for this new **Select all value**, you can now use the **Select all** function in slicers or filters: 
+
+![image](https://user-images.githubusercontent.com/47899466/119900120-ae036100-bf09-11eb-88f2-b5185c0683c7.png)
+
+
 ## Potential security risk
 
 When you allow report readers to dynamically set the values for the M Query parameters, they may be able to access additional data or trigger modifications to the source system using **injection attacks**, depending how the parameters are referenced in the M Query and what values are passed to that parameter.
@@ -183,7 +249,6 @@ There are some considerations and limitations to consider when using dynamic M q
   * Does not start with
   * Is not
   * Does not contains
-  * Select all
   * Is blank
   * Is not blank
 
