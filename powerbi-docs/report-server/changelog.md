@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/26/2021
+ms.date: 05/27/2021
 ---
 
 # Change log for Power BI Report Server
@@ -26,7 +26,8 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
         - Bug fixes
             - Fixed issue with caching of linked reports.
             - Fixed issue where "Changed by" section would show incorrect date on some PBIX reports.
-            - Fixed issue causing "Datasource is not found" for SAP HANA data sources.
+            - Fixed issue causing "Datasource is not found" for PBIX report data sources.
+            - Fixed issue causing "No credentials were found for the datasource" for PBIX report data sources.
             - Fixed permission issue for live connect of SSAS tabular PBIX reports.
             - Fixed various issues in new portal preview.
         - Security updates
