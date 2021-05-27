@@ -120,7 +120,7 @@ Here is an example for supplying an effective user name for RLS.
 
 ### Single Sign-on SQL and Dataverse (SSO)
 
-In Power BI, you have the option to set OAuth with SSO. When you do, the credentials for the user viewing the report are used to retrieve data. The access token in the requrest header is not used to access the data, the token must be passed in with the effective identity in the post body.
+In Power BI, you have the option to set OAuth with SSO. When you do, the credentials for the user viewing the report are used to retrieve data. The access token in the request header is not used to access the data, the token must be passed in with the effective identity in the post body.
 
 What can make access tokens confusing is getting the correct access token for the resource that you want to access.
 
