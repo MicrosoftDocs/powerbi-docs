@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: reference
 ms.date: 05/26/2021
-ms.custom: licensing support
+ms.custom: licensing support, pbibetadocbug
 LocalizationGroup: consumers
 ---
 
