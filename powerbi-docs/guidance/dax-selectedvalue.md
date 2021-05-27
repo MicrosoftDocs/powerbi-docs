@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
-ms.date: 11/20/2019
+ms.date: 05/27/2021
 ---
 
 # DAX: Use SELECTEDVALUE instead of VALUES
