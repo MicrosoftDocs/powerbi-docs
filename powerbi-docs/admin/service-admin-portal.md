@@ -428,7 +428,6 @@ Users in the organization can use the export report to file API to export report
 
 ### Print dashboards and reports
 
-
 ![Screenshot of print dashboards and reports setting.](media/service-admin-portal/powerbi-admin-portal-print-dashboards-reports-setting.png)
 
 ### Certification
@@ -477,6 +476,15 @@ As with other tenant settings, you can enable sharing links to **People in your 
 If this setting is disabled for a user with share permissions to a report, that user can only share the report via link to **Specific people** or **People with existing access**.
 
 ![Screenshot showing share option disabled.](media/service-admin-portal/admin-share-option-disabled.png)
+
+## Discovery settings
+
+### Make promoted content discoverable
+
+### Make certified content discoverable
+
+### Discover content
+
 
 ## Content pack and app settings
 
