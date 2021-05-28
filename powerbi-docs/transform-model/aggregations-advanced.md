@@ -1,6 +1,6 @@
 ---
-title: Use and manage aggregations in Power BI Desktop
-description: Use aggregations to perform interactive analysis over big data.
+title: Advanced aggregations
+description: Describes using manually configured aggregations to speed up data analysis over large datasets.
 author: minewiskan
 ms.author: owend
 ms.reviewer: ''
@@ -12,50 +12,45 @@ LocalizationGroup: Transform and shape data
 ---
 # Advanced aggregations
 
-*Aggregations* in Power BI let you reduce table sizes so you can focus on important data and improve query performance. Aggregations enable interactive analysis over big data in ways that aren't possible otherwise, and can dramatically reduce the cost of unlocking large datasets for decision making.
+Aggregations in Power BI can improve query performance over very large DirectQuery datasets. By using aggregations, you cache data at the aggregated level in memory. Dataset admins can also configure automated aggregations, where machine learning algorithms determine common query patterns. Those query patterns are then cached in-memory.
 
-Some advantages of using aggregations include:
+Aggregations in Power BI can be manually configured, as described in this article, or for Premium subscriptions, automatically by enabling the Automatic aggregations feature in dataset Settings. To learn more, see [Automated aggregations](aggregations-automatic.md).
 
-- **Better query performance over big data**. Every interaction with Power BI visuals submits DAX queries to the dataset. Cached aggregated data uses a fraction of the resources required for detail data, so you can unlock big data that would otherwise be inaccessible.
-- **Optimized data refresh**. Smaller cache sizes reduce refresh times, so data gets to users faster.
-- **Balanced architectures**. The Power BI in-memory cache can handle aggregated queries, limiting queries sent in DirectQuery mode and helping you meet concurrency limits. The remaining detail-level queries tend to be filtered, transactional-level queries, which data warehouses and big-data systems normally handle well.
+An aggregation table is in effect a GROUP-BY version of a fact, or *detail* table at the data source. Depending on the data source type, an agg table can be created at the data source, as a view, as a native query, and perhaps the most effective, as an import table in Power Query. Let's look at the pros and cons of each.
 
-![Aggregations in Microsoft Power BI Desktop](media/desktop-aggregations/aggregations_07.jpg)
+Dimensional data sources, like data warehouses and data marts, can use [relationship-based aggregations](#aggregation-based-on-relationships). Hadoop-based big-data sources often [base aggregations on GroupBy columns](#aggregation-based-on-groupby-columns). This article describes typical Power BI data modeling differences for each type of data source.
 
-Dimensional data sources, like data warehouses and data marts, can use [relationship-based aggregations](#aggregation-based-on-relationships). Hadoop-based big-data sources often [base aggregations on GroupBy columns](#aggregation-based-on-groupby-columns). This article describes typical Power BI modeling differences for each type of data source.
+> [!TIP]
+> Be sure to check out videos, blogs, and more provided by Power BI's community of BI experts.  
+>- [Search for **"Power BI aggregations"** on Bing](https://www.bing.com/video/search?q=power+bi+aggregations).
 
-## Create an aggregated table
+## Creating aggregation tables
 
-To create an aggregated table:
-1. Set up a new table with the fields you want, depending on your data source and model. 
-1. Define the aggregations by using the **Manage aggregations** dialog.
-1. If applicable, change the [storage mode](#storage-modes) for the aggregated table. 
+Aggregation tables can be created at the data source, either as a table or view, depending on the data source type, the agg table can be DirectQuery or import into memory. As a DirectQuery table in the data source, in this case, incremental data load to refreshes. The agg table is mapped to the detail table
+
+As an import table, the Power BI in-memory cache handles aggregated queries, which it does effectively. Limit queries sent to the data source in DirectQuery mode, helping stay within concurrency limits. Queries that do get through tend to be filtered, transactional-level queries, which data warehouses and big-data systems normally handle well.
+
+At the data source as an additional table or a view.
+
+As a native query.
+
+In Power Query as an import table that will be loaded in memory into the dataset. This is by far the most effective method for create
 
 ### Manage aggregations
 
-After you create the new table that has the fields you want, in the **Fields** pane of any Power BI Desktop view, right-click the table, and select **Manage aggregations**.
+In the **Fields** pane of any Power BI Desktop view, right-click the aggregations table, and then select **Manage aggregations**.
 
 ![Select Manage aggregations](media/desktop-aggregations/aggregations-06.png)
 
 The **Manage aggregations** dialog shows a row for each column in the table, where you can specify the aggregation behavior. In the following example, queries to the **Sales** detail table are internally redirected to the **Sales Agg** aggregation table. 
 
-The **Summarization** drop-down in the **Manage aggregations** dialog offers the following values:
-- Count
-- GroupBy
-- Max
-- Min
-- Sum
-- Count table rows
-
 ![Screenshot shows the Manage aggregations dialog box.](media/desktop-aggregations/aggregations_07.jpg)
 
-In this relationship-based aggregation example, the GroupBy entries are optional. Except for DISTINCTCOUNT, they don't affect aggregation behavior, and are primarily for readability. Without the GroupBy entries, the aggregations would still get hit, based on the relationships. This is different from the [big data example](#aggregation-based-on-groupby-columns) later in this article, where the GroupBy entries are required.
-
-After defining the aggregations you want, select **Apply All**. 
+In this relationship-based aggregation example, the GroupBy entries are optional. Except for DISTINCTCOUNT, they don't affect aggregation behavior and are primarily for readability. Without the GroupBy entries, the aggregations would still get hit, based on the relationships. This is different from the [big data example](#aggregation-based-on-groupby-columns) later in this article, where the GroupBy entries are required.
 
 ### Validations
 
-The **Manage aggregations** dialog enforces the following notable validations:
+The **Manage aggregations** dialog enforces validations:
 
 - The **Detail Column** must have the same datatype as the **Aggregation Column**, except for the Count and Count table rows **Summarization** functions. Count and Count table rows are only available for integer aggregation columns, and don't require a matching datatype.
 - Chained aggregations covering three or more tables aren't allowed. For example, aggregations on **Table A** can't refer to a **Table B** that has aggregations referring to a **Table C**.
@@ -63,7 +58,7 @@ The **Manage aggregations** dialog enforces the following notable validations:
 - The **Detail Table** must use DirectQuery storage mode, not Import.
 - Grouping by a foreign key column used by an inactive relationship, and relying on the USERELATIONSHIP function for aggregation hits, isn't supported.
 
-Most of the validations are enforced by disabling dropdown values and showing explanatory text in the tooltip, as shown in the following image.
+Most validations are enforced by disabling dropdown values and showing explanatory text in the tooltip.
 
 ![Validations shown by tooltip](media/desktop-aggregations/aggregations_08.jpg)
 
@@ -74,17 +69,18 @@ Users with read-only access to the dataset can't query aggregation tables. This 
 For this reason, aggregation tables are hidden from **Report** view. If the table isn't already hidden, the **Manage aggregations** dialog will set it to hidden when you select **Apply all**.
 
 ### Storage modes
+
 The aggregation feature interacts with table-level storage modes. Power BI tables can use *DirectQuery*, *Import*, or *Dual* storage modes. DirectQuery queries the backend directly, while Import caches data in memory and sends queries to the cached data. All Power BI Import and non-multidimensional DirectQuery data sources can work with aggregations. 
 
 To set the storage mode of an aggregated table to Import to speed up queries, select the aggregated table in Power BI Desktop **Model** view. In the **Properties** pane, expand **Advanced**, drop down the selection under **Storage mode**, and select **Import**. Note that this action is irreversible. 
 
 ![Set the storage mode](media/desktop-aggregations/aggregations-04.png)
 
-For more information about table storage modes, see [Manage storage mode in Power BI Desktop](desktop-storage-mode.md).
+To learn more about table storage modes, see [Manage storage mode in Power BI Desktop](desktop-storage-mode.md).
 
 ### RLS for aggregations
 
-To work correctly for aggregations, RLS expressions should filter both the aggregation table and the detail table. 
+To work correctly for aggregations, RLS expressions should filter both the aggregation table and the detail table.
 
 In the following example, the RLS expression on the **Geography** table works for aggregations, because Geography is on the filtering side of relationships to both the **Sales** table and the **Sales Agg** table. Queries that hit the aggregation table and those that don't will both have RLS successfully applied.
 
@@ -102,7 +98,7 @@ For [aggregations based on GroupBy columns](#aggregation-based-on-groupby-column
 
 Dimensional models typically use *aggregations based on relationships*. Power BI datasets from data warehouses and data marts resemble star/snowflake schemas, with relationships between dimension tables and fact tables.
 
-In the following model from a single data source, the tables are using DirectQuery storage mode. The **Sales** fact table contains billions of rows. Setting the storage mode of **Sales** to Import for caching would consume considerable memory and management overhead.
+In the following example, the model gets data from a single data source. Tables are using DirectQuery storage mode. The **Sales** fact table contains billions of rows. Setting the storage mode of **Sales** to Import for caching would consume considerable memory and resources overhead.
 
 ![Detail tables in a model](media/desktop-aggregations/aggregations_02.jpg)
 
@@ -289,15 +285,15 @@ The following JSON snippet shows an example of the output of the event when an a
 
 Aggregations that combine DirectQuery, Import, and/or Dual storage modes may return different data unless the in-memory cache is kept in sync with the source data. For example, query execution won't attempt to mask data issues by filtering DirectQuery results to match cached values. There are established techniques to handle such issues at the source, if necessary. Performance optimizations should be used only in ways that don't compromise your ability to meet business requirements. It's your responsibility to know your data flows and design accordingly. 
 
-## Next steps
+## Community
 
-For more information about composite models, see:
+Power BI has a vibrant community where MVPs, BI pros, and peers share expertise in discussion groups, videos, blogs and more. When learning about aggregations, be sure to check out these additional resources:
 
-- [Use composite models in Power BI Desktop](desktop-composite-models.md)
-- [Apply many-to-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md)
-- [Manage storage mode in Power BI Desktop](desktop-storage-mode.md)
+- [Power BI Community](https://community.powerbi.com/)  
+- [Search "Power BI aggregations" on Bing](https://www.bing.com/search?q=power+bi+aggregations)
+- [Search "Incremental refresh for files" on Bing](https://www.bing.com/search?q=incremental+refresh+for+files)
+- [Search "Keep existing data using incremental refresh" on Bing](https://www.bing.com/search?q=keep+existing+data+using+incremental+refresh)
 
-For more information about DirectQuery, see:
+## See also
 
-- [About using DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
-- [Power BI data sources](../connect-data/power-bi-data-sources.md)
+
