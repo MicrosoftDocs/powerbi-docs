@@ -327,6 +327,8 @@
               href: service-gateway-sso-kerberos-sap-bw-commoncryptolib.md
             - name: "SAP BW - gx64krb5.dll"
               href: service-gateway-sso-kerberos-sap-bw-gx64krb.md
+            - name: "Teradata and SSO"
+              href: service-gateway-sso-kerberos-teradata.md              
         - name: "SAML-based SSO"
           href: service-gateway-sso-saml.md
         - name: "Test single sign-on (SSO) configuration"
