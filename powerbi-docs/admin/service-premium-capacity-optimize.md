@@ -145,7 +145,7 @@ When the refresh is in fact slow, it can be due to several reasons:
 - Non-capacity reasons, including datasource system responsiveness, network latency, invalid permissions or gateway throughput.
 - Data volume - a good reason to configure incremental refresh, as discussed below.
 
-Capacity Admins (and Power BI service administrators) can monitor the **Average Refresh Duration (minutes)** metric to determine a benchmark for comparison over time, and the **Average Refresh Wait Time (minutes)** metrics to determine average lag between average lag between the scheduled time and the start of the operation.
+Capacity Admins (and Power BI service administrators) can monitor the **Average Refresh Duration (minutes)** metric to determine a benchmark for comparison over time, and the **Average Refresh Wait Time (minutes)** metrics to determine average lag between the scheduled time and the start of the operation.
 
 Incremental refresh can significantly reduce data refresh duration, especially for large model tables. There are four benefits associated with incremental refresh:
 
