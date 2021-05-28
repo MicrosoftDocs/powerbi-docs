@@ -21,7 +21,7 @@ See [What's new in Power BI](desktop-latest-update.md) for more information abou
 *Version: 2.93.981.0, Released: May 27th, 2021*
 
 Bug fixes/improvements:
-- Registry settings improvement: now registry settings applied according to https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-evaluation-configuration impact evaluations done in the Analysis Services process (msmdsrv.exe) as well as the Power BI Desktop process (PBIDesktop.exe).
+- Registry settings improvement: now registry settings are applied according to the [Desktop evaluation configuration](../create-reports/desktop-evaluation-configuration.md) article and impact evaluations are done in the Analysis Services process (msmdsrv.exe) as well as the Power BI Desktop process (PBIDesktop.exe).
 
 ## April 2021 QFE 2
 
