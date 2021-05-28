@@ -16,6 +16,7 @@ LocalizationGroup: Data refresh
 With Power BI, you can connect to [many different types of data sources and shape the data to meet your needs](desktop-shape-and-combine-data.md).
 The connections and transformations are stored in queries, which are by default refreshed either by manual or automatic refresh of the report.
 
+## Excluding queries from refresh
 For queries for which the source data is not updated often or at all, it makes sense to not have the queries included in the refresh of the report. In this scenario, you can exclude queries from being refreshed when the report is refreshed by un-checking 'Include in report refresh' in the context menu of the query in Desktop or in the Properties screen:
 
 ![Screenshot of the query context menu, highlighting the 'Include in report refresh' option.](media/refresh-include-in-report-refresh/include-in-report-refresh-context-menu.png)
