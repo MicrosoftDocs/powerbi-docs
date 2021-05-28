@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 12/03/2020
+ms.date: 12/04/2020
 LocalizationGroup: Get started
 ---
 # Find your dashboards, reports, and apps
@@ -83,7 +83,7 @@ Each time you [download an app](end-user-app-marketing.md), or an [app is shared
 
 ![Screenshot of Workspaces section of Home](./media/end-user-home/power-bi-workspaces-more.png)
 
-The app opens on your canvas and you can see the name of the workspace listed on your nav pane. Within workspaces, the Power BI service separates your content by type: dashboards and reports. In some cases, you'll also have workbooks and datasets. You'll see this organization when you select a workspace. In this example, the **Gardening chain** workspace contains four dashboards and two reports.
+The app opens on your canvas and you can see the name of the workspace listed on your nav pane. Within workspaces, the Power BI service separates your content by type: dashboards and reports. In some cases, you'll also have workbooks and datasets. You'll see this organization when you select a workspace. In this example, the **Supplier Quality Analysis** workspace contains one report, one dashboard, and one dataset.
 
 ![Gardening workspace selected](./media/end-user-home/power-bi-search-workspace.png)
 
