@@ -19,7 +19,9 @@ If user accounts in Teradata are identified using *sAMAccountName*, you must set
 
 If user accounts in Teradata are identified by their **UPN**, keep *FullDomainResolutionEnabled* on the gateway set to **false**.
 
-The following steps describe how to change the *FullDomainResolutionEnabled* configuration on the gateway:
+## Enabling SSO for Teradata
+
+The following steps describe how to change the *FullDomainResolutionEnabled* configuration on the gateway to enable SSO for Teradata:
 
 1.	In the gateway installation directory, open the configuration file **Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config**.
 2.	In the file, find the *FullDomainResolutionEnabled* property and change its value to **True**.
