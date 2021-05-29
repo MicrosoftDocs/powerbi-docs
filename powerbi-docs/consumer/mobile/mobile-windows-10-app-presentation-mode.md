@@ -72,7 +72,7 @@ By default, a slideshow cycles through pages only, at a rate of one every 30 sec
 
 1. Select the settings icon.
 
-1. Open the options tab.
+1. Open the options page.
 
 1. If desired, change the default settings for what the slideshow will cycle over (pages, bookmarks, or both) and how frequently the slides will transition.
 
