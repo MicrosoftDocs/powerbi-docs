@@ -27,21 +27,25 @@ Then in the Power BI app for Windows 10, view the KPS, mobile reports, and Power
 ## Explore samples without a SQL Server 2016 Reporting Services server
 Even if you don't have access to a Reporting Services web portal, you can still explore the features of Reporting Services mobile reports.
 
-1. In your Windows 10 device, open the Power BI app.
-2. Tap the global navigation button ![Global navigation button](media/mobile-app-windows-10-ssrs-kpis-mobile-reports/powerbi_windows10_options_icon.png) in the upper-left corner.
-3. Tap **Settings** icon ![Settings icon](media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png), right-click or tap and hold **Connect to server**, then tap **View samples**.
-   
-   ![View SSRS samples](media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-win10-connect-ssrs-samples.png)
-4. Open the Retail Reports or Sales Reports folder to explore their KPIs and mobile reports.
-   
-   ![Sample KPIs and mobile reports](media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-win10-ssrs-sample-kpis.png)
+To see the samples, tap the global navigation button in the upper-left corner and then select **Samples**.
+
+![Global navigation button](././media/mobile-windows-10-phone-app-get-started/power-bi-win10-view-samples.png)
+
+Six sample dashboards are available for Power BI, and two folders containing KPIs and mobile reports are available for Reporting Services.
+
+![Global navigation button](././media/mobile-windows-10-phone-app-get-started/power-bi-win10-available-samples.png)
+
+Open the Retail Reports or Sales Reports folder to explore their KPIs and mobile reports.
+
+![Sample KPIs and mobile reports](media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-win10-ssrs-sample-kpis.png)
 
 Browse the samples to interact with KPIs and mobile reports.
 
 ## Connect to a Reporting Services report server
-1. At the bottom of the nav pane, tap **Settings** ![Settings icon](media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png)
-2. Tap **Connect to server**.
-3. Fill in the server address and your user name and password. Use this format for the server address:
+1. Tap **Settings** at the bottom of the navigation pane and then tap **Connect to server**.
+
+    ![Screenshot of connect to server.](media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png)
+1. Fill in the server address and your user name and password. Use this format for the server address:
    
      `https://<servername>/reports`
      OR
@@ -53,6 +57,9 @@ Browse the samples to interact with KPIs and mobile reports.
    > 
    
     Tap **Advanced option** to give the server a name, if you'd like.
+
+    ![Screenshot of connect to server-dialog.](media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-connect-to-server-dialog.png)
+
 4. Tap the check mark to connect. 
    
    Now you see the server in the nav pane.
