@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/16/2019
+ms.date: 05/28/2021
 LocalizationGroup: Connect to data
 ---
 # Create report templates for Power BI Desktop
@@ -50,7 +50,7 @@ To use a Power BI report template, simply open it in Power BI Desktop and begin 
 
 ![Import a template](media/desktop-templates/desktop-templates-04.png)
 
-When you open a report template, a dialog appears values for any parameters that are defined in the report on which the template is based. For example, if a report analyzes customers based on country or region and has a *Country* parameter to specify the customer base, a prompt appears for you to select a *Country* value from the list of values that were specified when defining the parameter. 
+When you open a report template, a dialog appears that asks for values for any parameters defined in the report the template is based on. For example, if a report analyzes customers based on country or region and has a *Country* parameter to specify the customer base, a prompt appears for you to select a *Country* value from the list of values that were specified when defining the parameter. 
 
 ![Specify parameters for a template](media/desktop-templates/desktop-templates-05a.png)
 
