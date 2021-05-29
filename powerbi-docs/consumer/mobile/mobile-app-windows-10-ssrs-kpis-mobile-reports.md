@@ -86,24 +86,20 @@ Reporting Services KPIs, mobile reports, and Power BI reports (preview) are disp
     ![Reporting Services mobile report](media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report.png)
 
 ## View your favorite KPIs and reports
-You can mark KPIs, mobile reports, and Power BI reports as favorites on your Reporting Services web portal, and then view them in one convenient folder on your Windows 10 device, along with your Power BI favorite dashboards and reports.
+You can mark KPIs, mobile reports, and Power BI reports as favorites on your Reporting Services web portal, and then view them on your Windows 10 device. Just click the Favorites icon in the nav pane to display the Favorites page, and then tap the tab that has your report server name.
 
-* Tap **Favorites**.
-  
-   ![Favorites icon](media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-favorite-menu.png)
-  
-   Your favorites from the web portal are all on this page.
-  
+![Favorites icon](media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-favorite-menu.png)
+
+Tap the other tabs to filter your favorites in other ways.
+
 Read more about [favorites in the Power BI mobile apps](mobile-apps-favorites.md).
 
 ## Remove a connection to a report server
 You can only be connected to one report server at a time from your Power BI mobile app. If you want to connect to a different server, you need to disconnect from the current one.
 
-1. At the bottom of the nav pane, tap **Settings** ![Settings icon](media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png).
-2. Tap and hold the server name you don't want to be connected to.
-3. Tap **Remove server**.
-   
-    ![Remove server](media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-windows-10-ssrs-remove-server-menu.png)
+At the bottom of the nav pane, tap **Settings**, tap the server you want to disconnect from, and choose **Remove server**.
+
+![Remove server](media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-windows-10-ssrs-remove-server-menu.png)
 
 ## Create Reporting Services mobile reports and KPIs
 You don't create Reporting Services KPIs and mobile reports in the Power BI mobile app. You create them in SQL Server Mobile Report Publisher and a SQL Server 2016 Reporting Services web portal.
