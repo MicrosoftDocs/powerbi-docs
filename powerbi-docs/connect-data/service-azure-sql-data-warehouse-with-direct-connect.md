@@ -8,7 +8,7 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.reviewer: ""
 ms.custom: ""
-ms.date: 04/21/2021
+ms.date: 04/22/2021
 LocalizationGroup: Data from databases
 ---
 
@@ -43,9 +43,9 @@ The easiest way to move between your Synapse Analytics and Power BI is to create
 
 ## Connecting through Power BI Desktop
 
-You can connect to an Azure Synapse Analytics using the **Get Data** button in Power BI Desktop. 
+You can connect to an Azure Synapse Analytics using the **Get data** button in Power BI Desktop. 
 
-1. Select the **Get Data** button from the **Home** menu.  
+1. Select the **Get data** button from the **Home** menu.  
 
     ![Get data button](media/service-azure-sql-data-warehouse-with-direct-connect/create-reports-02.png)
 

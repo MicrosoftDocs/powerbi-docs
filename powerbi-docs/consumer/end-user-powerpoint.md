@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 03/26/2021
+ms.date: 05/26/2021
 LocalizationGroup: Share your work
 ---
 # Export reports to PowerPoint
@@ -64,7 +64,7 @@ When you open the PowerPoint file that Power BI exported, you find a few cool an
 ![PowerPoint opens](media/end-user-powerpoint/power-bi-powerpoint-numbered.png)
 
 1. The first page of the slide deck includes the name of your report and a link so that you can **View in Power BI** the report on which the slide deck is based.
-2. You get some useful information about the report, too. **Last data refresh** shows the date and time on which the exported report is based. **Downloaded at** shows the date and time when the Power BI report was exported into a PowerPoint file. The **Downloaded at** time is set to your computer's time zone at the time of the export.
+2. You get some useful information about the report, too. **Last data refresh** shows the date and time on which the exported report is based. **Downloaded at** shows the date and time when the Power BI report was exported into a PowerPoint file. The **Downloaded at** time is the time of the export in UTC (Universal Coordinated Time).
 
 
 3. Each report page is a separate slide, as shown in the nav pane. 

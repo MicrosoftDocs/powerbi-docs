@@ -8,7 +8,7 @@ editor: davidi
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: tutorial
-ms.date: 01/17/2020
+ms.date: 01/18/2020
 LocalizationGroup: Connect to data
 ---
 # Implement row-level security in an on-premises Analysis Services tabular model
@@ -111,7 +111,7 @@ With this procedure complete, the gateway is configured and ready to interact wi
 
 ## Task 4: Create report based on analysis services tabular model using Power BI desktop
 
-1. Start Power BI Desktop and select **Get Data** > **Database**.
+1. Start Power BI Desktop and select **Get data** > **Database**.
 
 1. From the data sources list, select the **SQL Server Analysis Services Database** and select **Connect**.
 
