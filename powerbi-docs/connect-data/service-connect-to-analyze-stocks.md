@@ -19,6 +19,8 @@ The app features four dashboards:
 * **Stocks and ETFs Comparison**: Provides a normalized chart to make it easily for you to compare stocks and EFTs.
 * **Sector-wise distribution**: Allows you to break out stock performance by sector.
 
+The app includes a wide range of stocks and ETFs for tracking. If you don't find the tickers you're interested in, you can add them to the app yourself. See [Add your own tickers](#add-your-own-tickers) later on in this article.
+
 You can navigate between the dashboards using the navigation side pane or the buttons at the top the page.
 
 ![Screenshot of stocks app.](media/service-connect-to-analyze-stocks/stocks-app1.png)
