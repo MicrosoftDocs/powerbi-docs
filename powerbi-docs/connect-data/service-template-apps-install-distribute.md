@@ -112,13 +112,11 @@ If you originally downloaded the app from AppSource, when a new version of the t
 
   ![Update template app](media/service-template-apps-install-distribute/power-bi-update-app-overwrite.png)
 
-you want the update to affect your currently installed app. you wish to overwrite the current version, or to install the new version in a new workspace. By default, "Update the workspace and the app" is selected.
+* **Update the workspace and the app:** Updates both the workspace and the app, and republishes the app to your organization. Choose this option If you haven’t made any changes to the app or its content, or if you don’t care about saving any such changes. The updated app will include any updated app branding, such as app name, logo, and navigation, as well as the latest publisher improvements to content.
 
-- **Update the workspace and the app:** Overwrites the existing workspace with the updated version of the template app. [See details about overwriting](#overwrite-behavior).
+* **Update only workspace content without updating the app:** Updates the reports, dashboards, and dataset inside the workspace. After updating the workspace, you need to update the app to republish it to your organization with the changes.
 
-- **Update only workspace content without updating the app:** Installs a fresh version of the workspace and app that you need to reconfigure (that is, connect to data, define navigation and permissions).
-- 
-- **Install another copy of the app into a new workspace:** Installs a fresh version of the workspace and app that you need to reconfigure (that is, connect to data, define navigation and permissions).
+* **Install another copy of the app into a new workspace:** Installs a fresh version of the workspace and app. Choose this option if you don’t want to change your current app at all.
 
 ### Overwrite behavior
 
