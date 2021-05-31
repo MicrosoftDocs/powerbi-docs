@@ -79,6 +79,36 @@ To see the distribution of market for different sectors we have the “Sector-wi
 
 ![Screenshot of distribution of market for different sectors](media/service-connect-to-analyze-stocks/stocks-comparison-based-on-sector.png)
 
+## Add your own tickers
+You can add your own tickers to the app if the stock or EFT you're interested in isn't already avialable to choose for tracking. All you have to do is add the ticker to the app's dataset parameters and refresh the dataset.
+
+To add your ticket to the app:
+
+1. From the apps page, or from the app itself, press the pencil icon.
+    ![Images of pencil edit app icon.](media/service-connect-to-analyze-stocks/edit-app-pencils.png)
+
+1. When prompted, choose go to the workspace
+
+    ![Screeshot of go to workspace dialog.](media/service-connect-to-analyze-stocks/edit-workspace-dialog.png)
+
+1. In the workspace, find the dataset, click **More options(...)** and choose **Settings**.
+
+    ![Screenshot of getting to dataset settings.](media/service-connect-to-analyze-stocks/getting-to-dataset-settings.png)
+
+1. Expand the parameters section and enter the name of the ticker you want to add. Separate tickers with a comma.
+
+    ![Screenshot of entering tickers in the custom parameters field.](media/service-connect-to-analyze-stocks/new-tickers-in-dataset-parameters-field.png)
+
+1. When done, press **Apply**.
+
+1. Return to the app workspace and refresh the data of the dataset.
+
+    ![Screenshot of refreshing data.](media/service-connect-to-analyze-stocks/refreshing-data.png)
+
+    Your new ticker will appear in the Custom tickers section of stocks and ETF lists.
+
+    ![Screenshot of custom tickers in the app.](media/service-connect-to-analyze-stocks/custom-tickers-in-app.png)
+
 ## Next steps
 
 * [What are Power BI template apps](service-template-apps-overview.md)
