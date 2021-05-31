@@ -290,6 +290,9 @@ When two sequential stages aren't the same, a **compare** link appears underneat
 
 ## Overriding content
 
+    >[!NOTE]
+    >If you are using 3rd party visuals like Acterys, you need to define seperate APIs inside the visual formatting, so in deployment pipeline when you compare 2 environment it will show as 2 separate reports, you have to publish manually using regular method.
+    
 When you deploy after making changes to content in the source stage, the content you changed in the target stage is overwritten. After clicking *deploy*, you'll get a warning listing the number of items that will be overwritten.
 
 ![A screenshot of the replaced content warning which is displayed when a deployment is about to cause changes to items in the stage you're deploying to.](media/deployment-pipelines-get-started/replaced-content.png)
