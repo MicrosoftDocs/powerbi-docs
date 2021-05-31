@@ -88,7 +88,7 @@ You can add your own tickers to the app if the stock or EFT you're interested in
 
 To add your ticker to the app:
 
-1. Press the pencil icon from the apps page or from the app itself.
+1. Press the pencil icon on the apps page or from in the app itself.
     
     ![Images of pencil edit app icon.](media/service-connect-to-analyze-stocks/edit-app-pencils.png)
 
