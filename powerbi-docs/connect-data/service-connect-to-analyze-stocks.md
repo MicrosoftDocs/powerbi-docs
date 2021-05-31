@@ -105,7 +105,7 @@ To add your ticker to the app:
     ![Screenshot of entering tickers in the custom parameters field.](media/service-connect-to-analyze-stocks/new-tickers-in-dataset-parameters-field.png)
 
     >[!NOTE]
-    > Be sure to enter the tickers without mistakes. Invalid tickers interfere with data refresh. 
+    > Be sure to enter the tickers correctly. Invalid tickers interfere with data refresh. 
 
 1. When done, press **Apply**.
 
