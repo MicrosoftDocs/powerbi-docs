@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 03/14/2021
+ms.date: 05/31/2021
 LocalizationGroup: Connect to services
 ---
 # Analyze popular stocks with Power BI
@@ -22,6 +22,8 @@ The app features four dashboards:
 You can navigate between the dashboards using the navigation side pane or the buttons at the top the page.
 
 ![Screenshot of stocks app.](media/service-connect-to-analyze-stocks/stocks-app1.png)
+
+The includes a wide range of stocks and ETFs for tracking. You can add tickers to stocks and ETFs of interest if you don't find them already listed in the app. See [Add your own tickers](#add-your-own-tickers) below.
 
 ## My Dashboard
 
@@ -80,14 +82,15 @@ To see the distribution of market for different sectors we have the “Sector-wi
 ![Screenshot of distribution of market for different sectors](media/service-connect-to-analyze-stocks/stocks-comparison-based-on-sector.png)
 
 ## Add your own tickers
-You can add your own tickers to the app if the stock or EFT you're interested in isn't already avialable to choose for tracking. All you have to do is add the ticker to the app's dataset parameters and refresh the dataset.
+You can add your own tickers to the app if the stock or EFT you're interested in isn't already available to choose for tracking. All you have to do is add the ticker to the app's dataset parameters and refresh the dataset.
 
-To add your ticket to the app:
+To add your ticker to the app:
 
-1. From the apps page, or from the app itself, press the pencil icon.
+1. Press the pencil icon from the apps page or from the app itself.
+    
     ![Images of pencil edit app icon.](media/service-connect-to-analyze-stocks/edit-app-pencils.png)
 
-1. When prompted, choose go to the workspace
+1. When prompted, choose to go to the workspace
 
     ![Screeshot of go to workspace dialog.](media/service-connect-to-analyze-stocks/edit-workspace-dialog.png)
 
@@ -99,15 +102,21 @@ To add your ticket to the app:
 
     ![Screenshot of entering tickers in the custom parameters field.](media/service-connect-to-analyze-stocks/new-tickers-in-dataset-parameters-field.png)
 
+    >[!NOTE]
+    > Be sure to enter the tickers without mistakes. Invalid tickers interfere with data refresh. 
+
 1. When done, press **Apply**.
 
 1. Return to the app workspace and refresh the data of the dataset.
 
     ![Screenshot of refreshing data.](media/service-connect-to-analyze-stocks/refreshing-data.png)
 
-    Your new ticker will appear in the Custom tickers section of stocks and ETF lists.
+    Your new ticker will appear in the custom tickers section of the stocks and ETF lists.
 
     ![Screenshot of custom tickers in the app.](media/service-connect-to-analyze-stocks/custom-tickers-in-app.png)
+
+    >[!NOTE]
+    > If you added a ticker that already appears in the app, the ticker you added will not show up in the custom section. Tickers are not duplicated.
 
 ## Next steps
 
