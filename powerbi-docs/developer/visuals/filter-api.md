@@ -293,7 +293,7 @@ Some sample JSON filter code is shown in the following image:
 
 ### Clear the JSON filter
 
-The Filter API accepts the `null` value of the filter as *reset* or *clear*.
+To reset or clear the filter, pass a `null` value to the filter API.
 
 ```typescript
 // invoke the filter
