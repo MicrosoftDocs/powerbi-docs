@@ -149,7 +149,7 @@ To see the samples, tap the global navigation button in the upper-left corner an
 
 Six sample dashboards are available for Power BI, and two folders containing KPIs and mobile reports are available for Reporting Services.
 
-![Global navigation button](././media/mobile-windows-10-phone-app-get-started/power-bi-win10-available-samples.png)
+![Screenshot of samples and folders on samples page.](././media/mobile-windows-10-phone-app-get-started/power-bi-win10-available-samples.png)
 
 ### Power BI samples
 Pick a role to start exploring one of the sample dashboards Power BI. You can view and interact with the Power BI dashboard samples, but you can't open the reports behind the dashboards, share the samples with others, or make them your favorites.
