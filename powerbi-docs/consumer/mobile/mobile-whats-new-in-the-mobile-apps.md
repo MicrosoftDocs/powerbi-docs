@@ -20,7 +20,7 @@ For related "What's New" information, see:
 
 ## June 2021
 ### Updated look and new home page (preview) (Windows)
-We've introduced a new design and home page to simplify the way you find and open content. Turn on the **New look** toggle at the top of your screen and [check it out](mobile-windows-10-phone-app-get-started.md&tabs=new-look)!
+We've introduced a new design and home page to simplify the way you find and open content. Turn on the **New look** toggle at the top of your screen and [check it out](mobile-windows-10-phone-app-get-started.md?tabs=new-look)!
 
 ![Screenshot of new look for the Windows app home page](media/mobile-whats-new-in-the-mobile-apps/windows-10-new-look-home-page.png)
 
