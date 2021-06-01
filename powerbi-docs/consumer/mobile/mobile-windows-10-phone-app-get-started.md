@@ -10,10 +10,19 @@ ms.topic: how-to
 ms.date: 05/18/2021
 ---
 # Get started with the Power BI app for Windows 10
-The Power BI app for Windows 10 brings Power BI to your Windows device. You get up-to-date, touch-enabled access to your business information. You can interact with all the Power BI reports, dashboards, and apps that are available to you in the Power BI service - both those that you've [created](../../fundamentals/service-get-started.md) yourself as well as those that have been created by others and shared with you. All this from the Power BI app for Windows 10.
+
+# [Classic look](#tab/classic-look)
+
+The Power BI app for Windows 10 brings Power BI to your windows device. You get up-to-date, touch-enabled access to your business information. View and interact with your company dashboards from anywhere - right on your [Windows Start screen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
+
+![Windows live tile](./media/mobile-windows-10-phone-app-get-started/pbi_win10_livetile.gif)
+
+You [create dashboards and reports in the Power BI service](../../fundamentals/service-get-started.md) with your data. 
+
+Then interact with your dashboards and reports, explore the data, and share them, all from the Power BI app for Windows 10.
 
 ## First things first
-* [**Get the Power BI mobile app for Windows 10**](https://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store.
+* [**Get the Power BI app for Windows 10**](https://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store.
   
   Your device must run Windows 10. The app can run on devices with at least 3-GB RAM and 8-GB internal storage.
 
@@ -29,8 +38,6 @@ If you haven't signed up yet, go to the [Power BI service](https://powerbi.com/)
 
 1. In the Power BI service, tap [Sign up](https://go.microsoft.com/fwlink/?LinkID=513879) to create a Power BI account.
 2. Start [creating your own dashboards and reports](../../fundamentals/service-get-started.md).
-
-# [Classic look](#tab/classic-look)
 
 ## Get started with the Power BI app
 1. On the Start screen of your Windows 10 device, open the Power BI app.
@@ -99,6 +106,28 @@ View your favorite Power BI dashboards, together with Reporting Services KPIs an
 Read more about [favorites in the Power BI mobile apps](mobile-apps-favorites.md).
 
 # [New look](#tab/new-look)
+
+The Power BI app for Windows 10 brings Power BI to your Windows device. You get up-to-date, touch-enabled access to your business information. You can interact with all the Power BI reports, dashboards, and apps that are available to you in the Power BI service - both those that you've [created](../../fundamentals/service-get-started.md) yourself as well as those that have been created by others and shared with you. All this from the Power BI app for Windows 10.
+
+![Screenshot of new look for Power BI windows app.](./media/mobile-windows-10-phone-app-get-started/windows-10-new-look-home-page.png)
+
+## First things first
+* [**Get the Power BI app for Windows 10**](https://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store.
+  
+  Your device must run Windows 10. The app can run on devices with at least 3-GB RAM and 8-GB internal storage.
+
+    The app is designed for a minimum resolution of 460x500.
+
+>[!NOTE]
+>Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+   
+* Find out'[what's new in the Power BI mobile apps](mobile-whats-new-in-the-mobile-apps.md).
+
+## Sign up for the Power BI service on the web
+If you haven't signed up yet, go to the [Power BI service](https://powerbi.com/). Sign up for your own account to create and store dashboards and reports, and bring your data together. Then, sign in to Power BI from your Windows 10 device to see your own dashboards from anywhere.
+
+1. In the Power BI service, tap [Sign up](https://go.microsoft.com/fwlink/?LinkID=513879) to create a Power BI account.
+2. Start [creating your own dashboards and reports](../../fundamentals/service-get-started.md).
 
 ## Get started with the Power BI app
 1. On the Start screen of your Windows 10 device, open the Power BI app.
