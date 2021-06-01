@@ -7,7 +7,7 @@ ms.reviewer: 'justyna'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 03/18/2021
+ms.date: 05/25/2021
 LocalizationGroup: Visualizations
 ---
 # Apply data-point limits and strategies by visual type
@@ -44,11 +44,11 @@ Dynamic limits provide a better selection of points for sparse data than static 
 
 Dynamic limits are automatically applied when the server is capable as detailed below:
 
-* In Power BI Desktop with On-premises SSAS version 2016 or higher [leveraging the SuperDax capabilities of the server](/archive/blogs/analysisservices/whats-new-in-microsoft-sql-server-analysis-services-tabular-models-in-sql-server-2016-ctp-2-3)
+* In Power BI Desktop with On-premises SSAS version 2016 or higher [leveraging the SuperDax capabilities of the server](/archive/blogs/analysisservices/whats-new-in-microsoft-sql-server-analysis-services-tabular-models-in-sql-server-2016-ctp-2-3).
 
 * In Desktop and Power BI service when using an imported model, Direct Query, live connect to the service, or live connect to AS PaaS. 
 
-* In Power BI Service, when connecting through an on-premises gateway to on-premises SSAS, we cannot use dynamic limits. The on-premises gateway does not fully support the dynamic limits strategy that returns a different structure of result sets from the on-premises SSAS.  
+* In the Power BI service, when connecting through an on-premises gateway to on-premises SSAS version 2016 or higher [leveraging the SuperDax capabilities of the server](/archive/blogs/analysisservices/whats-new-in-microsoft-sql-server-analysis-services-tabular-models-in-sql-server-2016-ctp-2-3). 
 
 ## Strategies and data point limits by visual type
 

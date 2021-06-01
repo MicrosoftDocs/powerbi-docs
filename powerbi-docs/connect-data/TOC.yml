@@ -201,6 +201,8 @@
       items: 
       - name: "Data refresh in Power BI"
         href: refresh-data.md
+      - name: "Managing query refresh"
+        href: refresh-include-in-report-refresh.md
       - name: "Configure scheduled refresh"
         href: refresh-scheduled-refresh.md
       - name: "Refresh summaries"
@@ -327,6 +329,8 @@
               href: service-gateway-sso-kerberos-sap-bw-commoncryptolib.md
             - name: "SAP BW - gx64krb5.dll"
               href: service-gateway-sso-kerberos-sap-bw-gx64krb.md
+            - name: "Teradata and SSO"
+              href: service-gateway-sso-kerberos-teradata.md              
         - name: "SAML-based SSO"
           href: service-gateway-sso-saml.md
         - name: "Test single sign-on (SSO) configuration"
