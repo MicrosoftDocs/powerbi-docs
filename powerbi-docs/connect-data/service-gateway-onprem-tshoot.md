@@ -254,15 +254,15 @@ Gateway logs are required for troubleshooting and creating a support ticket. Use
 
     Next, the gateway admin, who is also the administrator of the gateway system, should do the following steps:
 
-    a. Sign in to the gateway machine, and then launch the [on-premises data gateway app](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-app) to sign in to the gateway.
+    a. Sign in to the gateway machine, and then launch the [on-premises data gateway app](/data-integration/gateway/service-gateway-app) to sign in to the gateway.
     
-    b. Enable [additional logging](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-performance#slow-performing-queries).
+    b. Enable [additional logging](/data-integration/gateway/service-gateway-performance#slow-performing-queries).
     
-    c. Optionally, you can [enable the performance monitoring features](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-performance#enable-performance-logging) and include performance logs to provide additional details for troubleshooting.
+    c. Optionally, you can [enable the performance monitoring features](/data-integration/gateway/service-gateway-performance#enable-performance-logging) and include performance logs to provide additional details for troubleshooting.
     
     d. Run the scenario for which you're trying to capture gateway logs.
     
-    e. [Export the gateway logs](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
+    e. [Export the gateway logs](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
 
 
 ## Refresh history
