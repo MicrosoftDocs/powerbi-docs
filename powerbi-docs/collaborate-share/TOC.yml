@@ -18,6 +18,8 @@
         href: service-modern-usage-metrics.md
       - name: "Content endorsement"
         href: service-endorsement-overview.md
+      - name: "Discovery"
+        href: service-discovery.md
   - name: How-to guides
     expanded: true
     items:
