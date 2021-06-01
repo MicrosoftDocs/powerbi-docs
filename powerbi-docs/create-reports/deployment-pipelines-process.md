@@ -56,6 +56,14 @@ Content from the current stage is copied over to the target stage. Power BI iden
 
 In the target stage, [item properties that are not copied](deployment-pipelines-process.md#item-properties-that-are-not-copied), remain as they were before deployment. New content and new items are copied from the current stage to the target stage.
 
+### Auto-binding
+
+When you use [selective deploy](deployment-pipelines-get-started.md?#selective-deployment) to deploy Power BI items, deployment pipelines checks for dependencies. If the deployed item is linked to another item which it depend on, the connection to this item is determined according to its location.
+
+* *Linked item exists in the target stage* - Deployment pipelines will automatically bind the deployed item, to the item it relies on in the deployed stage. For example, if you deploy a paginated report from development to test, and it's connected to a Power BI dataset that was perviously deployed to the test stage, it will be automatically connected to that database.
+
+* *Linked item doesn't exist in the target stage* - Deployment pipelines will keep the connection to the item in the source stage. For example, if you deploy a report from development to test, and the test stage doesn't contain its Power BI dataset, the deployed report will remain connected to the dataset in the development stage.
+
 ### Refreshing the dataset
 
 Data in the target dataset is kept when possible. If there are no changes to a dataset, the data is kept as it was before the deployment.
@@ -86,7 +94,7 @@ Deployment pipelines doesn't support the following items:
 
 * PUSH datasets
 
-* Dataflows
+* Streaming dataflows
 
 * Reports based on unsupported datasets
 
@@ -239,6 +247,14 @@ In the production stage, the main action button on the bottom-right corner opens
 ## Permissions
 
 Pipeline permissions and workspace permissions are granted and managed separately. For example, a user with pipeline access that doesn't have workspace permissions, will be able to view the pipeline and share it with others. However, this user will not be able to view the content of the workspace in the pipeline, or in the workspace page, and will not be able to perform deployments.
+
+When deploying Power BI items, the ownership of the deployed item may change. Review the table below to understand who can deploy each item and how the deployment affects the item's ownership.
+
+|Power BI Item    |Required permission to deploy |Permission after deployment |
+|-----------------|---------|---------|
+|Dataset          |Workspace member |Workspace member       |
+|Paginated report |Workspace member |Paginated report owner |
+|Dataflow         |Dataflow owner   |Dataflow owner         |
 
 ### User with pipeline access
 
