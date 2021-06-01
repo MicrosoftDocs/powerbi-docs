@@ -21,7 +21,7 @@ To overcome this problem, users who have an [Admin or Member role](service-new-w
 
 To see how to mark endorsed datasets as discoverable, refer to [Endorse your content](collaborate-share/service-endorse-content.md).
 
-Power BI administrators: To see how to set up discoverability on your tenant, refer to [Discovery settings](asdf).
+Power BI administrators: To see how to set up discoverability on your tenant, refer to [Discovery settings](../admin/service-admin-portal.md#discovery-settings).
 
 ## Next steps
 * [Datasets hub](../connect-data/service-datasets-hub.md)
