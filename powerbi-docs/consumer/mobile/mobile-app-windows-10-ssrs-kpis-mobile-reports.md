@@ -124,7 +124,7 @@ To see the samples, tap the global navigation button in the upper-left corner an
 
 Six sample dashboards are available for Power BI, and two folders containing KPIs and mobile reports are available for Reporting Services.
 
-![Global navigation button](././media/mobile-windows-10-phone-app-get-started/power-bi-win10-available-samples.png)
+![Screenshot of samples and folders on the samples page.](././media/mobile-windows-10-phone-app-get-started/power-bi-win10-available-samples.png)
 
 Open the Retail Reports or Sales Reports folder to explore their KPIs and mobile reports.
 
@@ -158,7 +158,7 @@ Browse the samples to interact with KPIs and mobile reports.
    ![Server in nav pane](media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-server.png)
    
    >[!TIP]
-   >Tap the global navigation button ![Global navigation button](media/mobile-app-windows-10-ssrs-kpis-mobile-reports/powerbi_windows10_options_icon.png) anytime to go between your Reporting Services mobile reports and your dashboards in the Power BI service. 
+   >Tap the global navigation button ![Screenshot of global navigation button.](media/mobile-app-windows-10-ssrs-kpis-mobile-reports/powerbi_windows10_options_icon.png) anytime to go between your Reporting Services mobile reports and your dashboards in the Power BI service. 
    > 
 
    >[!NOTE]
