@@ -119,8 +119,8 @@ Since dashboards, reports and datasets are related and have dependencies, you ca
 [![A screenshot showing the selective deploy option in deployment pipelines, available after selecting the show more option.](media/deployment-pipelines-get-started/selective-deploy.png)](media/deployment-pipelines-get-started/selective-deploy.png#lightbox)
 
 >[!NOTE]
-> * You can't deploy a report or dashboard to next stage if the items it's dependent on do not exist in the stage you are deploying to.
-> * You might get unexpected results if you choose to deploy a report or dashboard without its dataset. This can happen when the dataset in the target stage, has changed and is no longer identical to the one in the stage you're deploying from.
+> * You can't deploy a Power BI item to the next stage, if the items it's dependent on doesn't exist in the stage you are deploying to. For example, deploying a report without a dataset will fail, unless the dataset already exists in the target stage.
+> * You might get unexpected results if you choose to deploy a Power BI item without the item it's dependent on. This can happen when the dataset in the target stage, has changed and is no longer identical to the one in the stage you're deploying from.
 
 ### Backwards deployment
 
@@ -136,7 +136,7 @@ When working in a deployment pipeline, different stages may have different confi
 
 When you deploy content between pipeline stages, configuring deployment rules enables you to allow changes to content, while keeping some settings intact.
 
-There are two types of deployment rules:
+There are three types of deployment rules:
 
 * **Dataset rules** - Defined on data sources and parameters, in each dataset. These rules determine the values of the data sources or parameters for a specific dataset. For example, if you want a dataset in a production stage to point to a production database, you can define a rule for this. The rule is defined in the production stage, under the appropriate dataset. Once the rule is defined, content deployed from test to production, will inherit the value as defined in the deployment rule, and will always apply as long as the rule is unchanged and valid.
 
