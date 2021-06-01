@@ -25,7 +25,7 @@ You can navigate between the dashboards using the navigation side pane or the bu
 
 ![Screenshot of stocks app.](media/service-connect-to-analyze-stocks/stocks-app1.png)
 
-The includes a wide range of stocks and ETFs for tracking. You can add tickers to stocks and ETFs of interest if you don't find them already listed in the app. See [Add your own tickers](#add-your-own-tickers) below.
+You can add tickers to stocks and ETFs of interest if you don't find them already listed in the app. See [Add your own tickers](#add-your-own-tickers) below.
 
 ## My Dashboard
 
