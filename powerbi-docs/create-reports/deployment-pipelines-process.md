@@ -64,13 +64,7 @@ With small changes, such as adding a table or measures, Power BI keeps the origi
 
 ### Requirements for deploying to a stage with an existing workspace
 
-As long as the deployed content resides on a [premium capacity](../admin/service-premium-what-is.md), a user that meets the following conditions, can deploy it to a stage with an existing workspace:
-
-* A user with a [Pro license](../admin/service-admin-purchasing-power-bi-pro.md) or a [PPU user](../admin/service-premium-per-user-faq.yml), who's a member of both workspaces in the source and target deployment stages.
-
-* An owner of all the datasets in the target workspace that are about to be deployed.
-
-For more information, review the [permissions](#permissions) section.
+A user with a [Pro license](../admin/service-admin-purchasing-power-bi-pro.md) or a [PPU user](../admin/service-premium-per-user-faq.yml) who's a member of both the target and source deployment workspaces, can deploy content that resides on a [premium capacity](../admin/service-premium-what-is.md) to a stage with an existing workspace. For more information, review the [permissions](#permissions) section.
 
 ## Deployed items
 

@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/26/2021
+ms.date: 05/27/2021
+ms.custom: pbibetadocbug
 LocalizationGroup: Create reports
 ---
 # Add multiple fields to a hierarchy slicer

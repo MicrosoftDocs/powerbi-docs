@@ -52,7 +52,7 @@ See how much data storage you’re using in your Power BI account, and manage yo
 
 1. To manage your own storage, go to **My Workspace** on the navigation pane.
    
-    ![Screenshot of the navigation pane with My Workspace called out.](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
+    ![Screenshot of the navigation pane with My Workspace called out.](media/service-admin-manage-your-data-storage-in-power-bi/power-bi-myworkspace.png)
 
 2. Select the gear icon ![Gear icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) in the upper-right corner **Manage personal storage**.
    
@@ -72,7 +72,7 @@ Keep in mind that you or someone else may have reports and dashboards based on a
 ## Manage your workspace
 1. Select the arrow next to **Workspaces** select the name of the workspace.
    
-    ![Screenshot of the Workspace selection, showing the Sales Group workspace.](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
+    ![Screenshot of the Workspace selection, showing the Sales Group workspace.](media/service-admin-manage-your-data-storage-in-power-bi/power-bi-group-workspaces.png)
 2. Select the gear icon ![Gear icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) in the upper-right corner **Manage group storage**.
    
     The top bar shows how much of the group’s storage limit is used.
