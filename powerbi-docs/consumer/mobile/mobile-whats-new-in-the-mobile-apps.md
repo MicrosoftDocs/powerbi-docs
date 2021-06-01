@@ -27,7 +27,7 @@ Turn on the **New look** toggle at the top of your screen and check it out!
 
 ### Support for passing URL parameters to paginated reports (Android)
 
-Support for passing parameters to paginated reports via the URL now comes to Android!. Passing parameters via the report URL automatically sets the report parameters to those values. [Learn more](../../paginated-reports/report-builder-url-pass-parameters.md)
+Support for passing parameters to paginated reports via the URL now comes to Android! Passing parameters via the report URL automatically sets the report parameters to those values. [Learn more](../../paginated-reports/report-builder-url-pass-parameters.md)
 
 ## May 2021
 ### Support for passing URL parameters to paginated reports (iOS)
