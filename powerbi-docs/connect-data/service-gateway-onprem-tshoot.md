@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
-ms.date: 12/10/2020
+ms.date: 12/11/2020
 LocalizationGroup: Gateways 
 ---
 
@@ -204,11 +204,11 @@ You get the 1033 error when your external ID that's configured in SAP HANA doesn
 
 * SAP HANA requires the impersonated user to use the sAMAccountName attribute in Active Directory (user alias). If this attribute isn't correct, you see the 1033 error.
 
-    ![Attribute editor](media/service-gateway-onprem-tshoot/sAMAccount.png)
+    ![Attribute editor](media/service-gateway-onprem-tshoot/samaccountname-attribute.png)
 
 * In the logs, you see the sAMAccountName (alias) and not the UPN, which is the alias followed by the domain (alias@doimain.com).
 
-    ![Account info in logs](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
+    ![Account info in logs](media/service-gateway-onprem-tshoot/samaccount-attribute.png)
 
 ```xml
       <setting name="ADUserNameReplacementProperty" serializeAs="String">
@@ -232,7 +232,7 @@ You get the "-10709 Connection failed" error message if your delegation isn't co
 
 * Make sure that you have the SAP Hana server on the delegation tab in Active Directory for the gateway service account.
 
-   ![Delegation tab](media/service-gateway-onprem-tshoot/delegation-in-AD.png)
+   ![Delegation tab](media/service-gateway-onprem-tshoot/delegation-ad.png)
 
 ## Export logs for a support ticket
 
@@ -273,7 +273,7 @@ When you use the gateway for a scheduled refresh, **Refresh history** can help y
 
     ![How to select schedule refresh](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
 
-2. In **Settings for...** &gt; **Schedule refresh**, select **Refresh history**.
+2. In **Settings for...**, select **Refresh history**.
 
     ![Select refresh history](media/service-gateway-onprem-tshoot/scheduled-refresh-2.png)
 
