@@ -89,7 +89,7 @@ If you are unable to use self-service to get your own Power BI license it may be
 •	For step by step instructions for using self-service sign up and self-service purchase to get your own Power BI free or trial license, visit [Power BI self-service for individuals](service-self-service-signup-for-power-bi.md) 
    
 
-•	To learn more about the concepts of self-service sign up and self-service purchase, visit [What is self-service](/microsoft-365/admin/misc/self-service-sign-up.md)    
+•	To learn more about the concepts of self-service sign up and self-service purchase, visit [What is self-service](/microsoft-365/admin/misc/self-service-sign-up)    
 
 •	If you're a global administrator or billing administrator, see [Power BI licensing for your organization](../admin/service-admin-licensing-organization.md).    
 
