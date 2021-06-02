@@ -16,17 +16,14 @@ LocalizationGroup: Gateways
 This article describes how to configure your SAP BW data source to enable SSO from the Power BI service by using gx64krb5.
 
 > [!IMPORTANT]
-> SAP no longer supports the gx64krb5 for on-premises data gateways in Power BI. As a result, Microsoft also has discontinued its support for use of gx64krb5 in this scenario. Existing connections will continue to work, but you won't be able to create new connections for this scenario. Use CommonCryptoLib instead. 
+> Microsoft will allow you to create connections using SNC libraries (like gx64krb5) but will not provide support for these configurations. Additionally SAP no longer supports the gx64krb5 for on-premises data gateways in Power BI and the steps required to configure it for the gateway are significantly more complex compared to CommonCryptoLib. As a result, Microsoft recommends using CommonCryptoLib instead.  For more information, see [SAP Note 352295](https://launchpad.support.sap.com/#/notes/352295). Note that gx64krb5 doesn't allow for SSO connections from the data gateway to SAP BW Message Servers; only connections to SAP BW Application Servers are possible. This restriction doesn't exist if you use [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md) as your SNC library. 
+> For information about how to configure SSO by using CommonCryptoLib, see [Configure SAP BW for SSO using CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md). Use CommonCryptoLib *or* gx64krb5 as your SNC library, but not both. Do not complete the configuration steps for both libraries.
 
-> [!NOTE]
-> You can complete the steps in this article in addition to the steps in [Configure Kerberos SSO](service-gateway-sso-kerberos.md) to enable SSO-based refresh for SAP BW Application Server-based reports in Power BI service. However, Microsoft recommends the use of CommonCryptoLib, not gx64krb5 as your SNC library. SAP no longer supports gx64krb5 and the steps required to configure it for the gateway are significantly more complex compared to CommonCryptoLib. For information about how to configure SSO by using CommonCryptoLib, see [Configure SAP BW for SSO using CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md). Use CommonCryptoLib *or* gx64krb5 as your SNC library, but not both. Do not complete the configuration steps for both libraries.
+You can complete the steps in this article in addition to the steps in [Configure Kerberos SSO](service-gateway-sso-kerberos.md) to enable SSO-based refresh for SAP BW Application Server-based reports in Power BI service. 
 
 This guide is comprehensive; if you've already completed some of the described steps, you can skip them. For example, you might have already configured your SAP BW server for SSO using gx64krb5.
 
 ## Set up gx64krb5 on the gateway machine and the SAP BW server
-
-> [!NOTE]
-> The gx64krb5 library is no longer supported by SAP. For more information, see [SAP Note 352295](https://launchpad.support.sap.com/#/notes/352295). Note that gx64krb5 doesn't allow for SSO connections from the data gateway to SAP BW Message Servers; only connections to SAP BW Application Servers are possible. This restriction doesn't exist if you use [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md) as your SNC library. Although other SNC libraries might also work for BW SSO, they aren't officially supported by Microsoft.
 
 The gx64krb5 library must be used by both the client and server to complete an SSO connection through the gateway. That is, both the client and server must be using the same SNC library.
 
@@ -154,7 +151,7 @@ Add required registry entries to the registry of the machine that the gateway is
 
 1. In the **SNC Partner Name** field, enter *p:&lt;SPN you mapped to your SAP BW service user&gt;*. For example, if the SPN is SAP/BWServiceUser\@MYDOMAIN.COM, enter *p:SAP/BWServiceUser\@MYDOMAIN.COM* in the **SNC Partner Name** field.
 
-1. For the SNC Library, select **SNC\_LIB** or **SNC\_LIB\_64**. Make sure that **SNC\_LIB\_64** on the gateway machine points to gx64krb5.dll. Alternatively, you can select the **Custom** option and provide the absolute path for gx64krb5.dll on the gateway machine.
+1. For the SNC Library, select the **Custom** option and provide the absolute path for GX64KRB5.DLL or GSSKRB5.DLL on the gateway machine.
 
 1. Select **Use SSO via Kerberos for DirectQuery queries**, and then select **Apply**. If the test connection is not successful, verify that the previous setup and configuration steps were completed correctly.
 
