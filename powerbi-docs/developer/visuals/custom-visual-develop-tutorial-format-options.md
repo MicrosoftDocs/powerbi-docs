@@ -183,7 +183,7 @@ Now let's add new group called *color* for configuring the color and width of th
     ![Radius variable](media/custom-visual-develop-tutorial-format-options/radius.png)
 
 11. In the **circle element**:
-    * Modify the values passed to the **fill style** and **stroke-width style** as follows.
+    * Modify the values passed to the **fill style** and **stroke-width style** as follows:
 
         ```typescript
         this.visualSettings.circle.circleColor
