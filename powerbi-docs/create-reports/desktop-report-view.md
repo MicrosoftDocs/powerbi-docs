@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 05/11/2021
+ms.date: 06/02/2021
 LocalizationGroup: Create reports
 ---
 # Work with Report view in Power BI Desktop
@@ -80,7 +80,7 @@ There are a few considerations to keep in mind when hiding a report page:
 
   ![Hidden icon on a page that's hidden.](media/desktop-report-view/report-view_06.png)
 
-* You *cannot* see a hidden report page when viewing the report in the Power BI service.
+* You *cannot* see a hidden report page when viewing the report in the Power BI service. **However**, if you're looking at the hidden page when you save the report and publish it to the Power BI service, that page will be the first one your report readers will see.
 
 * Hiding a report page is *not* a security measure. The page can still be accessed by users, and its content is still accessible using drillthrough, and other methods.
 
