@@ -136,9 +136,7 @@ Now let's add new group called *color* for configuring the color and width of th
 
 7. Open the `visual.ts` file.
 
-8. In the `visual.ts` file,
-
-    import `VisualSettings`, `VisualObjectInstanceEnumeration` and `EnumerateVisualObjectInstancesOptions`:
+8. In the `visual.ts` file, import `VisualSettings`, `VisualObjectInstanceEnumeration` and `EnumerateVisualObjectInstancesOptions`:
 
     ```typescript
     import { VisualSettings } from "./settings";
