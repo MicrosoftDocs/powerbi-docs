@@ -185,19 +185,19 @@ Now let's add new group called *color* for configuring the color and width of th
 11. In the **circle element**:
     * Modify the value passed to the **fill style** to the following expression.
 
-    ```typescript
-    this.visualSettings.circle.circleColor
-    ```
+        ```typescript
+        this.visualSettings.circle.circleColor
+        ```
 
-    ![Fills the circle element](media/custom-visual-develop-tutorial-format-options/circle-element-fill.png)
+        ![Fills the circle element](media/custom-visual-develop-tutorial-format-options/circle-element-fill.png)
 
     * Modify the value passed to the **stroke-width style** to the following expression.
 
-    ```typescript
-    this.visualSettings.circle.circleThickness
-    ```
+        ```typescript
+        this.visualSettings.circle.circleThickness
+        ```
 
-    ![Circle Stroke-width](media/custom-visual-develop-tutorial-format-options/circle-stroke-width.png)
+        ![Circle Stroke-width](media/custom-visual-develop-tutorial-format-options/circle-stroke-width.png)
 
 12. Save the `visual.ts` file.
 
