@@ -12,8 +12,18 @@ LocalizationGroup: Transform and shape data
 ---
 # Aggregations
 
+When using DirectQuery, latency can often reduce query response times. Each time a user interacts with a report visualization, a query is passed to the data source. The data source must then calculate and return a result. That round trip can be both time and process intensive, often causing slow query response times in report visualizations. 
 
 *Aggregations* in Power BI let you reduce table sizes so you can focus on important data and improve query performance. Aggregations enable interactive analysis over big data in ways that aren't possible otherwise, and can dramatically reduce the cost of unlocking large datasets for decision making.
+
+Some advantages of using aggregations include:
+
+- **Better query performance over big data**. Every interaction with Power BI visuals submits DAX queries to the dataset. Cached aggregated data uses a fraction of the resources required for detail data, so you can unlock big data that would otherwise be inaccessible.
+- **Optimized data refresh**. Smaller cache sizes reduce refresh times, so data gets to users faster.
+- **Balanced architectures**. The Power BI in-memory cache can handle aggregated queries, limiting queries sent in DirectQuery mode and helping you meet concurrency limits. The remaining detail-level queries tend to be filtered, transactional-level queries, which data warehouses and big-data systems normally handle well.
+
+
+## Automatic aggregations
 
 Automatic aggregations is supported for Power BI Premium and Premium per user DirectQuery datasets.
 
@@ -23,24 +33,13 @@ Automatic aggregations uses a machine learning model to analyze the query patter
 
 Learn more by watching the on-demand Microsoft Build session, Power BI for BI Pros and Data Engineers.
 
+## User defined aggregations
 
 
-Some advantages of using aggregations include:
-
-- **Better query performance over big data**. Every interaction with Power BI visuals submits DAX queries to the dataset. Cached aggregated data uses a fraction of the resources required for detail data, so you can unlock big data that would otherwise be inaccessible.
-- **Optimized data refresh**. Smaller cache sizes reduce refresh times, so data gets to users faster.
-- **Balanced architectures**. The Power BI in-memory cache can handle aggregated queries, limiting queries sent in DirectQuery mode and helping you meet concurrency limits. The remaining detail-level queries tend to be filtered, transactional-level queries, which data warehouses and big-data systems normally handle well.
 
 
 
 
 [Performance analyzer](../create-reports/desktop-performance-analyzer.md) in Power BI Desktop
 
-
-
-
-
-
-
-## Advanced aggregations
 

@@ -12,29 +12,54 @@ LocalizationGroup: Transform and shape data
 ---
 # Automatic aggregations
 
-Automatic aggregations use machine learning to determine client reporting query patterns against DirectQuery data sources. A percentage of those query patterns are then cached in-memory. Most common reporting queries are then returned by the cache rather than being sent to and returned by the data source. The machine learning model runs in the background, continuously tuning the aggregations as use patterns change. 
+Automatic aggregations uses state-of-the-art machine learning (ML) to self train and continuously optimize an in-memory cache with pre-aggregated query results, providing blazing fast report visualization response times for even the largest DirectQuery datasets.
 
-Azure SQL Database, Azure Synapse Dedicated pool, Azure Data Lake Storage
+With automatic aggregations:
 
-:::image type="content" source="media/aggregations-automatic/auto-aggregations.png" border="false" alt-text="Automatic aggregations diagram":::
-
-When using DirectQuery, latency can often reduce query response times. Each time a user interacts with a report visualization, a query is passed to the data source. The data source must then calculate and return a result. That round trip can be both time and process intensive, often causing slow responses in reporting visualizations. 
+- Big data is not so big anymore - By using MLs predictive modeling, automatic aggregations analyses both your backend data source and report query patterns to determine the optimal pre-defined aggregations to store in the Power BI dataset's in-memory cache.
+- Report visualizations are faster - An optimal percentage of reporting queries are returned by the in-memory cache instead of backend data source systems. Outlier queries that cannot be returned by the in-memory cache are passed directly to the data source.
+- Optimized dataset refresh - The in-memory cache stores only aggregated results. The number of rows stored is only a tiny fraction of a traditional in-memory tables. With such a small amount of data kept in-memory, dataset refresh times are significantly reduced.
+- Balanced architectures - Because most query results are calculated and returned by the Power BI analytics engine and in-memory cache, query processing load on data source systems at peak reporting times is significantly reduced.
 
 ## Requirements
 
 ### Supported plans
 
-Automatic aggregations are supported for Power BI Premium and Premium per user datasets.
-
-### Supported modes
-
-Automatic aggregations are supported for DirectQuery mode datasets only. [Composite models](../transform-model/desktop-composite-models.md) are supported, however automatic aggregations are supported for the DirectQuery connection only.
+Automatic aggregations is supported for **Power BI Premium** and **Premium per user** datasets.
 
 ### Permissions
 
-To configure automatic aggregations, you must have Admin permissions for the dataset. Data source credentials must be configured and signed in in dataset settings before automatic aggregations can be enabled.
+To enable and configure automatic aggregations, you must have **Admin permissions** for the dataset. Data source credentials must be configured and signed in (in dataset settings) before automatic aggregations can be enabled.
 
-## Configuring
+### Supported data sources
+
+During preview, automatic aggregations is supported for the following data sources:
+
+- Azure Synapse Dedicated SQL pool
+- Google Cloud BigQuery
+- Snowflake
+
+### Supported modes
+
+Automatic aggregations are supported for DirectQuery mode datasets. Composite models are supported, however automatic aggregations are supported for the DirectQuery connection only.
+
+## Under the hood
+
+When using DirectQuery, latency, especially over very large datasets can often reduce query response times. Each time a dataset user opens a report or interacts with a visualization, queries are passed to the data source. The data source must then calculate and return aggregated results for each query. That round trip can be both time and process intensive, often causing slower query response times in report visualizations.
+
+:::image type="content" source="media/aggregations-automatic/auto-aggregations.png" border="false" alt-text="Automatic aggregations diagram":::
+
+When enabled for a dataset, automatic aggregations use machine learning predictive analytics algorithms to determine client reporting query patterns against DirectQuery data sources. Because almost all dataset reporting queries calculate an aggregated result, an optimal percentage of those aggregations are then cached in-memory. Aggregated results are then returned by the cache rather than being sent to and returned by the data source.
+
+Unlike a traditional DirectQuery only dataset, a dataset with automatic aggregations enabled in-effect becomes a *composite model* dataset. 
+
+Automatic aggregations predictive modeling continuously runs in the background. As users interact with reports, query patterns are identified. Those query patterns are then used to make predictions about aggregations that will answer those queries. A percentage of those aggregations are then cached in-memory. Your dataset is both self training and self optimizing. As client report query patterns change, automatic aggregations adjusts, prioritizing and caching those aggregations used most often. Those queries that are not cached are passed to the backend data source, just like a typical DirectQuery query.
+
+Machine learning uses algorithms to identify patterns within data, and those patterns are then used to create a data model that can make predictions. With increased data and experience, the results of machine learning are more accurate
+
+
+
+## Starting the engine
 
 ### Training
 
@@ -90,7 +115,7 @@ The Query Performance Impact lift chart provides an estimation of the percentile
 
 #### Set threshold
 
-Threshold appears as a marker line on Use this setting defines to define a target query response time shown on the lift chart.  marker line used to show the user’s SLA. This helps users compare the performance of the algorithm for different query cache levels by showing the percentile of queries that are within a given SLA. 
+Threshold appears as a marker line on the lift chart. Use the threshold setting to define a target query response time for reports. For example, by setting threshold to 10 seconds, you can then fine-tune the percentage of cached queries to determine a New cache query percentage that meets the 10 second threshold.
 
 
 ### Scenarios

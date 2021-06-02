@@ -1,5 +1,5 @@
 ---
-title: Advanced aggregations
+title: User defined aggregations
 description: Describes using manually configured aggregations to speed up data analysis over large datasets.
 author: minewiskan
 ms.author: owend
@@ -10,11 +10,9 @@ ms.topic: conceptual
 ms.date: 04/30/2021
 LocalizationGroup: Transform and shape data
 ---
-# Advanced aggregations
+# User defined aggregations
 
-Aggregations in Power BI can improve query performance over very large DirectQuery datasets. By using aggregations, you cache data at the aggregated level in memory. Dataset admins can also configure automated aggregations, where machine learning algorithms determine common query patterns. Those query patterns are then cached in-memory.
-
-Aggregations in Power BI can be manually configured, as described in this article, or for Premium subscriptions, automatically by enabling the Automatic aggregations feature in dataset Settings. To learn more, see [Automated aggregations](aggregations-automatic.md).
+Aggregations in Power BI can improve query performance over very large DirectQuery datasets. By using aggregations, you cache data at the aggregated level in memory. Aggregations in Power BI can be manually configured in the data model, as described in this article, or for Premium subscriptions, automatically by enabling the Automatic aggregations feature in dataset Settings. To learn more, see [Automated aggregations](aggregations-automatic.md).
 
 An aggregation table is in effect a GROUP-BY version of a fact, or *detail* table at the data source. Depending on the data source type, an agg table can be created at the data source, as a view, as a native query, and perhaps the most effective, as an import table in Power Query. Let's look at the pros and cons of each.
 
