@@ -8,7 +8,7 @@ ms.custom: video-et_MLSL2sA8
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 09/09/2020
+ms.date: 06/02/2021
 # As a Power BI end user, I want to learn how to get insights about my dashboard tiles.
 LocalizationGroup: Dashboards
 ---
