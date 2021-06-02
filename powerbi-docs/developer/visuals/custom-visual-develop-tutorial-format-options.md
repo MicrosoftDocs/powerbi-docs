@@ -273,7 +273,7 @@ The package contains everything required to import the custom visual into either
 ## Importing the custom visual
 
 Now you are ready to import the Circle Card custom visual.
-Follow the directions in [Import a visual file from your local computer into Power-BI](import-visual.md#import-a-visual-file-from-your-local-computer-into-power-bi) to import the `circleCard.pbiviz` file from the **dist** folder into your **Power BI** report.
+Follow the directions in [import a visual file from your local computer into Power-BI](import-visual.md#import-a-visual-file-from-your-local-computer-into-power-bi) to import the `circleCard.pbiviz` file from the **dist** folder into your **Power BI** report.
 
 ## Debugging
 
