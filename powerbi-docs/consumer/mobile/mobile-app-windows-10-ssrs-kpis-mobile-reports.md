@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 04/06/2021
+ms.date: 06/02/2021
 ---
 # View on-premises reports and KPIs in the Power BI Windows app
 
@@ -30,11 +30,11 @@ Even if you don't have access to a Reporting Services web portal, you can still 
 
 To see the samples, tap the global navigation button in the upper-left corner and then select **Samples**.
 
-![Global navigation button](././media/mobile-windows-10-phone-app-get-started/power-bi-win10-view-samples.png)
+![Global navigation button](././media//mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-win10-view-samples.png)
 
 Six sample dashboards are available for Power BI, and two folders containing KPIs and mobile reports are available for Reporting Services.
 
-![Screenshot of samples and folders on the samples page.](././media/mobile-windows-10-phone-app-get-started/power-bi-win10-available-samples.png)
+![Screenshot of samples and folders on the samples page.](././media//mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-win10-available-samples.png)
 
 Open the Retail Reports or Sales Reports folder to explore their KPIs and mobile reports.
 
