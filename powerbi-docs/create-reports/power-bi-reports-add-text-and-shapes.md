@@ -50,7 +50,7 @@ This procedure uses the Retail Analysis sample available in the Power BI service
 
 You can add all sorts of shapes to Power BI reports, with a variety of formatting options and styling. You can also upgrade old shapes in your reports.
 
-First, here's a video demostrating the flexibility you have when creating shapes.
+First, here's a video demonstrating the flexibility you have when creating shapes.
 
 >
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWDX9z]
