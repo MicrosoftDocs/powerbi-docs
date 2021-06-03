@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 06/02/20210
 LocalizationGroup: Get started
 ---
 # Opt in for Power BI service preview features
