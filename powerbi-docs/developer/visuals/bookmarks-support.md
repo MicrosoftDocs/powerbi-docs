@@ -18,7 +18,7 @@ For more information about bookmarks, see [Use bookmarks to share insights and b
 
 ## Bookmarks support in your visual
 
-To create a Power BI visual that supports bookmarks you have to configure it to react correctly when changes are made to it.
+To create a Power BI visual that supports bookmarks, you have to configure it to react correctly when changes are made to it.
 If your visual interacts with other visuals, selects data points, or filters other visuals, you need to save the bookmarked state in *properties*.
 
 > [!NOTE]
@@ -53,13 +53,13 @@ If your visual interacts with other visuals by using [Selection](https://github.
 
 ### Use **InteractivityService** to restore bookmark selections
 
-If your visual uses `InteractivityService`, you don't need any additional actions to support the bookmarks in your visual.
+If your visual uses `InteractivityService`, you don't need any other actions to support the bookmarks in your visual.
 
 When you select a bookmark, the utility automatically handles the visual's selection state.
 
 ### Use **SelectionManager** to restore bookmark selections
 
-If you are not using `InteractivityService` you can still save and recall bookmark selections as follows:
+If you're not using `InteractivityService` you can still save and recall bookmark selections as follows:
 
 When you select a bookmark, Power BI calls the `callback` method of the visual with the corresponding selections.
 
@@ -189,7 +189,7 @@ In addition to saving the conditions of the filter for the bookmark, you can als
 
 For example, the [timeline Slicer](https://github.com/microsoft/powerbi-visuals-timeline/commit/8b7d82dd23cd2bd71817f1bc5d1e1732347a185e) stores the `Granularity` property values as a filter state. It allows the granularity (days, months, years, etc.) to change as you change bookmarks.
 
-The `filterState` property saves an aspect of the filter as a property. The visual can store a variety of `filterState` values in bookmarks.
+The `filterState` property saves an aspect of the filter as a property. The visual can store various `filterState` values in bookmarks.
 
 To save a property value as a filter state, set the object property as `"filterState": true` in the *capabilities.json* file.
 
