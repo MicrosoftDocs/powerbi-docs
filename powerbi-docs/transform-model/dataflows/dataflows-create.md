@@ -16,7 +16,7 @@ A **dataflow** is a collection of tables that are created and managed in workspa
 To create a dataflow, launch the Power BI service in a browser then select a **workspace** (dataflows are not available in *my-workspace* in the Power BI service) from the nav pane on the left, as shown in the following screen. You can also create a new workspace in which to create your new dataflow.
 ![start a dataflow](media/dataflows-create/create-options.png)
 
-There are a multiple of ways to create or build on top of a new dataflow:
+There are multiple ways to create or build on top of a new dataflow:
 
 * [Create a dataflow using define new tables](#create-a-dataflow-using-define-new-tables)
 * [Create a dataflow using linked tables](#create-a-dataflow-using-linked-tables)
