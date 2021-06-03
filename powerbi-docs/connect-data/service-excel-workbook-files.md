@@ -108,7 +108,7 @@ Once selected, choose to Upload your file into Power BI.
 
 ![Screenshot of the Local File dialog, showing the Upload your Excel file to Power B I selection.](media/service-excel-workbook-files/excel_import_7.png)
 
-Once your workbook is uploaded, you get a notification that the dashboard is ready.
+Once your workbook is uploaded, you get a notification that the workbook is now in your list of workbooks.
 
 ![Screenshot of the notification, showing your workbook is ready.](media/service-excel-workbook-files/excel_import_8.png)
 
