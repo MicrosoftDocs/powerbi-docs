@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/18/2019
+ms.date: 06/1/2021
 ---
 
 # Add bookmark support for Power BI visuals
@@ -16,15 +16,15 @@ With Power BI report bookmarks, you can capture a configured view of a report pa
 
 For more information about bookmarks, see [Use bookmarks to share insights and build stories in Power BI](../../create-reports/desktop-bookmarks.md).
 
-## Report bookmarks support in your visual
+## Bookmark support in a visual
 
-If your visual interacts with other visuals, selects data points, or filters other visuals, you need to restore the state from properties.
+If your visual interacts with other visuals, selects data points, or filters other visuals, you need to restore the visual to the correct state in *properties*.
 
-## Add report bookmarks support
+## Prerequisites for bookmark support
 
-1. Install (or update) the required utility, [powerbi-visuals-utils-interactivityutils](https://github.com/Microsoft/PowerBI-visuals-utils-interactivityutils/) version 3.0.0 or later. It contains additional classes to manipulate with the state selection or filter. It's required for filter visuals and any visual that uses `InteractivityService`.
+* [Powerbi-visuals-utils-interactivityutils](https://github.com/Microsoft/PowerBI-visuals-utils-interactivityutils/) version 3.0.0 or later. This version contains additional classes so you can manipulate the selection or filter. It's required for filter visuals and any visual that uses `InteractivityService`.
 
-2. Update the visual API to version 1.11.0 to use `registerOnSelectCallback` in an instance of `SelectionManager`. It's required for non-filter visuals that use the plain `SelectionManager` rather than `InteractivityService`.
+* Visual API version 1.11.0 or later. This version uses `registerOnSelectCallback` in an instance of `SelectionManager`. It's required for non-filter visuals that use the plain `SelectionManager` rather than `InteractivityService`.
 
 ### How Power BI visuals interact with Power BI in report bookmarks
 
