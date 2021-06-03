@@ -108,10 +108,7 @@ Once selected, choose to Upload your file into Power BI.
 
 ![Screenshot of the Local File dialog, showing the Upload your Excel file to Power B I selection.](media/service-excel-workbook-files/excel_import_7.png)
 
-Once your workbook is uploaded, you get a notification that the workbook is now in your list of workbooks.
-
-
-Once the workbook is ready, you can find it in the nav pane in the **Workbooks** section of the workspace, and in the content list for the workspace.
+Once your workbook is uploaded, you get a notification that the workbook is now in your list of workbooks. You can find it in the nav pane in the **Workbooks** section of the workspace, and in the content list for the workspace.
 
 ![Screenshot of the Workbooks section, showing the Excel workbook.](media/service-excel-workbook-files/excel_import_9.png)
 
