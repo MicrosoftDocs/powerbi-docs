@@ -45,7 +45,7 @@ Once you select the data for use in the table, you can use dataflow editor to sh
 
 Creating a dataflow using linked tables enables you to reference an existing table, defined in another dataflow, in a read-only fashion. The following list describes some of the reasons you may choose this approach:
 
-* If you want to reuse an table across multiple dataflows, such as a date table or a static lookup table, you should create an table once and then reference it across the other dataflows.
+* If you want to reuse a table across multiple dataflows, such as a date table or a static lookup table, you should create a table once and then reference it across the other dataflows.
 
 * If you want to avoid creating multiple refreshes to a data source, it's better to use linked tables to store the data and act as a cache. Doing so allows every subsequent consumer to leverage that table, reducing the load to the underlying data source.
 
