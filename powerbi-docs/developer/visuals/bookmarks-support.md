@@ -43,7 +43,7 @@ The new selection state is communicated to the visual through the `update` metho
 
 If the visual uses filters, restore the filter values to the corresponding values of the selected bookmark. Or, if the visual only uses selections, you can use the callback function, `registerOnSelectCallback`, in `ISelectionManager`.
 
-## Add bookmark support to visuals that have a selection
+## Visuals with selection
 
 If your visual interacts with other visuals by using [Selection](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/Tutorial/Selection.md), you can add bookmarks in one of two ways:
 
@@ -106,7 +106,7 @@ this.selectionManager.registerOnSelectCallback(
 
 After you update the data points, they'll reflect the current selection state that's stored in the `filter` object. Then, when the data points are rendered, the custom visual's selection state will match the state of the bookmark.
 
-## Add bookmark support to visuals that have a filter
+## Visuals with a filter
 
 To support bookmarks in visuals that have a filter, you need to use `InteractivityService`.
 
@@ -196,4 +196,4 @@ To save a property value as a filter state, set the object property as `"filterS
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Bookmark buttons](../../consumer/end-user-buttons#bookmark-buttons.md)
+> [Bookmark buttons](../../consumer/end-user-buttons.md#bookmark-buttons)
