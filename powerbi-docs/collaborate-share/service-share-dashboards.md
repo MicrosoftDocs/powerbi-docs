@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/30/2021
+ms.date: 06/02/2021
 LocalizationGroup: Share your work
 ---
 # Share Power BI reports and dashboards with coworkers and others
@@ -83,11 +83,12 @@ Links for **People with existing access** do not have any additional settings be
 
 **Additional considerations**
 
+- If a user tries to access a report using a link that they don't have access to, they can only access the report if there is another link granting them access or they have direct access to the report.    
 - If your tenant admin has disabled shareable links to **People in your organization**, you can only copy and share links to **Specific people** or **People with existing access**.
 - If you have reshare permissions to the report but, you do not have reshare permissions to the report’s underlying data, your shareable links will not give access to the underlying data.
 - If you do not have reshare permissions to the report, you can only copy and share links to **People with existing access**.
 - Additionally, if you do not have a Power BI Pro License, you only copy and share links to **People with existing access**.
-- Currently, sharing via links doesn’t support the option to **Include my changes**; however, you can continue using direct access sharing for this scenario.
+- Currently, sharing via links doesn’t support the option to **Include my changes**; however, you can continue using direct access sharing for this scenario. 
 
 ## Manage permissions to a report
 To manage permission and manage links that give access to the report, select **More options (...)** in the upper right of the sharing dialog, and then select **Manage permissions**:
