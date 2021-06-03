@@ -16,7 +16,7 @@ A **dataflow** is a collection of tables that are created and managed in workspa
 To create a dataflow, launch the Power BI service in a browser then select a **workspace** (dataflows are not available in *my-workspace* in the Power BI service) from the nav pane on the left, as shown in the following screen. You can also create a new workspace in which to create your new dataflow.
 ![start a dataflow](media/dataflows-create/create-options.png)
 
-There are a multiple of ways to create or build on top of a new dataflow:
+There are multiple ways to create or build on top of a new dataflow:
 
 * [Create a dataflow using define new tables](#create-a-dataflow-using-define-new-tables)
 * [Create a dataflow using linked tables](#create-a-dataflow-using-linked-tables)
@@ -45,7 +45,7 @@ Once you select the data for use in the table, you can use dataflow editor to sh
 
 Creating a dataflow using linked tables enables you to reference an existing table, defined in another dataflow, in a read-only fashion. The following list describes some of the reasons you may choose this approach:
 
-* If you want to reuse an table across multiple dataflows, such as a date table or a static lookup table, you should create an table once and then reference it across the other dataflows.
+* If you want to reuse a table across multiple dataflows, such as a date table or a static lookup table, you should create a table once and then reference it across the other dataflows.
 
 * If you want to avoid creating multiple refreshes to a data source, it's better to use linked tables to store the data and act as a cache. Doing so allows every subsequent consumer to leverage that table, reducing the load to the underlying data source.
 
