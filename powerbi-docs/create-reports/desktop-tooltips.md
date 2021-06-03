@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/07/2021
+ms.date: 05/28/2021
 LocalizationGroup: Create reports
 ---
 # Create tooltips based on report pages in Power BI Desktop
@@ -55,7 +55,7 @@ To begin with, you need to turn the **Tooltip** slider to **On**, in the **Page 
 
 ![Turn on the tooltip slider to indicate the page is a tooltip](media/desktop-tooltips/desktop-tooltips_07.png)
 
-Once that slider is set to on, you specify the fields for which you want the report tooltip to appear. For visuals in the report that include the field you specify, the tooltip will appear. You specify which field or fields apply by dragging them into the **Tooltip fields** bucket, found in the **Fields** section of the **Visualizations** pane. In the following image, the *SalesAmount* field has been dragged into the **Tooltips fields** bucket.
+Once that slider is set to on, you specify the fields for which you want the report tooltip to appear. For visuals in the report that include the field you specify, the tooltip will appear. You specify which field or fields apply by dragging them into the **Tooltip fields** bucket, found in the **Fields** section of the **Visualizations** pane. In the following image, the *Sales $* field has been dragged into the **Tooltips fields** bucket.
 
 ![Add fields to determine where the tooltip will appear](media/desktop-tooltips/desktop-tooltips_08.png)
  
