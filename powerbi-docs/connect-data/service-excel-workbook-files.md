@@ -112,7 +112,7 @@ Once your workbook is uploaded, you get a notification that the workbook is now 
 
 ![Screenshot of the notification, showing your workbook is ready.](media/service-excel-workbook-files/excel_import_8.png)
 
-Once the workbook is ready, you can find it in the **Dashboards** section of Power BI.
+Once the workbook is ready, you can find it in the nav pane in the **Workbooks** section of the workspace, and in the content list for the workspace.
 
 ![Screenshot of the Dashboards section, showing the selected report with the Excel data.](media/service-excel-workbook-files/excel_import_9.png)
 
