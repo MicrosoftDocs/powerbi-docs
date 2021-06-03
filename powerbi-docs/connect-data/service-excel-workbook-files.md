@@ -110,7 +110,6 @@ Once selected, choose to Upload your file into Power BI.
 
 Once your workbook is uploaded, you get a notification that the workbook is now in your list of workbooks.
 
-![Screenshot of the notification, showing your workbook is ready.](media/service-excel-workbook-files/excel_import_8.png)
 
 Once the workbook is ready, you can find it in the nav pane in the **Workbooks** section of the workspace, and in the content list for the workspace.
 
