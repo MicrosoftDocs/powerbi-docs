@@ -10,12 +10,14 @@ ms.topic: conceptual
 ms.date: 05/18/2021
 LocalizationGroup: Transform and shape data
 ---
-# Configure automatic aggregations
+# Configure automatic aggregations 
 
-This article describes how to enable and configure automatic aggregations for DirectQuery datasets. Configuring automatic aggregations is done in the service, in dataset Settings. Tasks include enabling the feature for a dataset, and scheduling at least one or more refreshes. After the first refresh has completed, you can then further optimize performance by the changing the percentage of aggregations that are cached.
+This article describes how to enable and configure automatic aggregations for DirectQuery datasets. Configuring automatic aggregations is done in the service, in dataset Settings. Tasks include enabling the feature and scheduling at least one or more refreshes. After the first refresh has completed, you can then further fine-tune performance by the changing the percentage of aggregations that are cached.
 
 > [!IMPORTANT]
 > Automatic aggregations is in Preview. When in preview, feature functionality, user experience, and documentation are likely to change.
+
+Before configuring automatic aggregations, be sure to establish a query performance baseline. Use [Performance analyser](/create-reports/desktop-performance-analyzer) in Power BI Desktop to record how report visualization queries are performing. After enabling automatic aggregations, and at least one full refresh has completed, run Performance analyzer on the same report again. Compare the results with the baseline to evaluate report visual query performance. Keep in mind, results for some queries may not be returned by the in-memory aggregations cache.
 
 ## Configure
 

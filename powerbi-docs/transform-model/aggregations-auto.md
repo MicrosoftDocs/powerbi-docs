@@ -12,24 +12,20 @@ LocalizationGroup: Transform and shape data
 ---
 # Automatic aggregations
 
-Automatic aggregations uses state-of-the-art machine learning (ML) to self train and continuously optimize an in-memory cache with pre-aggregated query results, providing blazing fast report visualization response times for even the largest DirectQuery datasets.
+Automatic aggregations for DirectQuery datasets uses state-of-the-art machine learning (ML) to self train and continuously optimize an in-memory cache with pre-aggregated query results, providing blazing fast report visualization response times for even the largest data sources.
 
 With automatic aggregations:
 
-- Big data is not so big anymore - By using MLs predictive modeling, automatic aggregations analyses both your backend data source and report query patterns to determine the optimal pre-defined aggregations to store in the Power BI dataset's in-memory cache.
+- Big data is not so big anymore - By using MLs predictive modeling, automatic aggregations analyses both your backend data source and report query patterns to determine the optimal pre-defined aggregations to store in the dataset in-memory cache.
 - Report visualizations are faster - An optimal percentage of reporting queries are returned by the in-memory cache instead of backend data source systems. Outlier queries that cannot be returned by the in-memory cache are passed directly to the data source.
-- Optimized dataset refresh - The in-memory cache stores only aggregated results. The number of rows stored is only a tiny fraction of a traditional in-memory tables. With such a small amount of data kept in-memory, dataset refresh times are significantly reduced.
-- Balanced architectures - Because most query results are calculated and returned by the Power BI analytics engine and in-memory cache, query processing load on data source systems at peak reporting times is significantly reduced.
+- Optimized dataset refresh - The in-memory cache stores only aggregated results. The number of rows stored is only a tiny fraction of import mode in-memory tables. With such a small amount of data kept in-memory, dataset refresh times are significantly reduced.
+- Balanced architectures - Because most query results are returned by the Power BI query engine and in-memory cache, query processing load on data source systems at peak reporting times is significantly reduced.
 
 ## Requirements
 
 ### Supported plans
 
 Automatic aggregations is supported for **Power BI Premium** and **Premium per user** datasets.
-
-### Permissions
-
-To enable and configure automatic aggregations, you must have **Admin permissions** for the dataset. Data source credentials must be configured and signed in (in dataset settings) before automatic aggregations can be enabled.
 
 ### Supported data sources
 
@@ -41,29 +37,31 @@ During preview, automatic aggregations is supported for the following data sourc
 
 ### Supported modes
 
-Automatic aggregations are supported for DirectQuery mode datasets. Composite models are supported, however automatic aggregations are supported for the DirectQuery connection only.
+Automatic aggregations are supported for DirectQuery mode datasets. Composite models with both import tables and DirectQuery connections are supported, however automatic aggregations are supported for the DirectQuery connection only.
+
+### Permissions
+
+To enable and configure automatic aggregations, you must have **Owner** permissions for the dataset. Data source credentials must be configured and signed in (in dataset settings) before automatic aggregations can be enabled.
 
 ## Under the hood
 
 When using DirectQuery, latency, especially over very large datasets can often reduce query response times. Each time a dataset user opens a report or interacts with a visualization, queries are passed to the data source. The data source must then calculate and return aggregated results for each query. That round trip can be both time and process intensive, often causing slower query response times in report visualizations.
 
-:::image type="content" source="media/aggregations-automatic/auto-aggregations.png" border="false" alt-text="Automatic aggregations diagram":::
-
 When enabled for a dataset, automatic aggregations use machine learning predictive analytics algorithms to determine client reporting query patterns against DirectQuery data sources. Because almost all dataset reporting queries calculate an aggregated result, an optimal percentage of those aggregations are then cached in-memory. Aggregated results are then returned by the cache rather than being sent to and returned by the data source.
 
-Unlike a traditional DirectQuery only dataset, a dataset with automatic aggregations enabled in-effect becomes a *composite model* dataset. 
+:::image type="content" source="media/aggregations-automatic/auto-aggregations.png" border="false" alt-text="Automatic aggregations diagram":::
+
+Unlike a traditional DirectQuery only dataset, a dataset with automatic aggregations enabled in effect becomes a *composite model* dataset, with  tables containing import data stored in-memory, and a DirectQuery connection to the data source. The Power BI query engine processes those queries from the in-memory tables it can, and passes on those queries that can only be calculated and returned from the data source.
 
 Automatic aggregations predictive modeling continuously runs in the background. As users interact with reports, query patterns are identified. Those query patterns are then used to make predictions about aggregations that will answer those queries. A percentage of those aggregations are then cached in-memory. Your dataset is both self training and self optimizing. As client report query patterns change, automatic aggregations adjusts, prioritizing and caching those aggregations used most often. Those queries that are not cached are passed to the backend data source, just like a typical DirectQuery query.
 
 Machine learning uses algorithms to identify patterns within data, and those patterns are then used to create a data model that can make predictions. With increased data and experience, the results of machine learning are more accurate
 
-
-
 ## Starting the engine
 
 ### Training
 
-In order to create the aggregations cache, the service must first create a framework. This process is referred to as *training*. During training, machine learning algorithms query the data source to determine cardinality. 
+In order to create the aggregations cache, the service must first create a framework. This process is referred to as *training*. During training, cardinality estimation queries are sent to the data source.  
 
 Query patterns are ranked by frequency. 
 
@@ -126,5 +124,7 @@ Threshold appears as a marker line on the lift chart. Use the threshold setting 
 
 #### Scenario 3
 
+## See also
 
+[DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
 
