@@ -479,21 +479,15 @@ If this setting is disabled for a user with share permissions to a report, that 
 
 ## Discovery settings
 
-[Discoverability](../collaborate-share/service-discovery.md) is a feature that content owners can use to make their endorsed content discoverable by users who don't yet have access to it.
+[Discoverability](../collaborate-share/service-discovery.md) is a feature that content owners can use to make their endorsed content discoverable by users who don't yet have access to it. See
 
 Discoverability on your tenant is controlled by three independent settings located in the discovery settings section of the tenant settings. To get to these settings, go to **Admin portal > Tenant settings > Discovery settings**.
 
-### Make promoted content discoverable
+* **Make promoted content discoverable**: When you enable this setting, users who can promote content will be able to mark their content as discoverable when they are promoting it. You can specify users and/or groups who will be able to mark their content as discoverable if they have the permissions to promote their content. You can also specify users and/or groups to exclude from the specified groups. 
 
-When you enable this setting, users who can promote content will be able to mark their content as discoverable when they are promoting it. You can specify users and/or groups who will be able to mark their content as discoverable if they have the permissions to promote their content. You can also specify users and/or groups to exclude from the specified groups. 
+* **Make certified content discoverable**: When you enable this setting, users who are authorized to certify content will be able to mark that content as discoverable when they are certifying it. You can specify users and/or groups who will be able to mark content as discoverable if they have the permissions to certify it. You can also specify users and/or groups to exclude from the specified groups.
 
-### Make certified content discoverable
-
-When you enable this setting, users who are authorized to certify content will be able to mark that content as discoverable when they are certifying it. You can specify users and/or groups who will be able to mark content as discoverable if they have the permissions to certify it. You can also specify users and/or groups to exclude from the specified groups. 
-
-### Discover content
-
-When you enable this setting, users will be able to find endorsed content that they don't yet have access to. You can specify users and/or groups who will be able to find discoverable content. You can also specify users and/or groups to exclude from the specified groups.
+* **Discover content**: When you enable this setting, users will be able to find endorsed content that they don't yet have access to. You can specify users and/or groups who will be able to find discoverable content. You can also specify users and/or groups to exclude from the specified groups.
 
 ## Content pack and app settings
 
