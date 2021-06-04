@@ -12,34 +12,24 @@ LocalizationGroup: Transform and shape data
 ---
 # Aggregations
 
-When using DirectQuery, latency can often reduce query response times. Each time a user interacts with a report visualization, a query is passed to the data source. The data source must then calculate and return a result. That round trip can be both time and process intensive, often causing slow query response times in report visualizations. 
 
-*Aggregations* in Power BI let you reduce table sizes so you can focus on important data and improve query performance. Aggregations enable interactive analysis over big data in ways that aren't possible otherwise, and can dramatically reduce the cost of unlocking large datasets for decision making.
+## Making big datasets seem small
 
-Some advantages of using aggregations include:
+DirectQuery enables reporting over big data that may not otherwise be possible with import datasets. However, DirectQuery has an inherent effect, that is for each user interaction with a report, queries must be passed all the way to the data source. The data source must then calculate and return a result. That round trip can be slow.  Data stored in Power BI's powerful in-memory cache, however, provides blazing fast query response performance - enter composite models *and* aggregations.
 
-- **Better query performance over big data**. Every interaction with Power BI visuals submits DAX queries to the dataset. Cached aggregated data uses a fraction of the resources required for detail data, so you can unlock big data that would otherwise be inaccessible.
-- **Optimized data refresh**. Smaller cache sizes reduce refresh times, so data gets to users faster.
-- **Balanced architectures**. The Power BI in-memory cache can handle aggregated queries, limiting queries sent in DirectQuery mode and helping you meet concurrency limits. The remaining detail-level queries tend to be filtered, transactional-level queries, which data warehouses and big-data systems normally handle well.
-
+In 2018, Power BI introduced the composite model. With composite models, a dataset can have both import data and DirectQuery connections. Also introduced with composite models are *aggregations*. With aggregations, data modelers can create tables containing pre-aggregated data that are stored in-memory, just like import tables. Because almost all queries are for an aggregated result of transaction data, those results can instead be returned from aggregations stored in-memory. Aggregations enable interactive analysis over big data in ways that aren't possible otherwise because most report queries require an aggregated result in return.
 
 ## Automatic aggregations
 
-Automatic aggregations is supported for Power BI Premium and Premium per user DirectQuery datasets.
+Now in Preview, automatic aggregations is supported for Power BI Premium and Premium per user DirectQuery datasets. Automatic aggregations uses a machine learning model to analyze the query patterns from Power BI reporting clients to the big data store and automatically design and build the aggregations in Power BI that deliver optimal performance. The machine learning model runs in the background, continuously tuning the aggregations as usage grows and usage patterns change. Automatic aggregations in Power BI will enable all Power BI Premium customers to benefit from the performance acceleration that Power BI provides, without having to invest in expensive and time-consuming data engineering resources.
 
-Building aggregations in Power BI require a data engineer to analyze telemetry and design an optimized set of tables that enable the most common queries to be handled by Power BI’s blazingly fast in-memory Vertipaq engine and have the less frequent, detailed queries delegated to the big data store.
-
-Automatic aggregations uses a machine learning model to analyze the query patterns from Power BI to the big data store and automatically design and build the aggregations in Power BI that deliver optimal performance. The machine learning model runs in the background, continuously tuning the aggregations as usage grows and usage patterns change. Automatic aggregations in Power BI will enable all Power BI Premium customers to benefit from the performance acceleration that Power BI provides, without having to invest in expensive and time-consuming data engineering resources.
-
-Learn more by watching the on-demand Microsoft Build session, Power BI for BI Pros and Data Engineers.
+To learn more, see [Automatic aggregations](aggregations-auto.md).
 
 ## User defined aggregations
 
+Building aggregations in Power BI require a data engineer to analyze telemetry and design an optimized set of tables that enable the most common queries to be handled by Power BI’s blazingly fast in-memory Vertipaq engine and have the less frequent, detailed queries delegated to the big data store.
+
+User defined aggregations you can optimize certain calculations.
 
 
-
-
-
-[Performance analyzer](../create-reports/desktop-performance-analyzer.md) in Power BI Desktop
-
-
+To learn more, see [User defined aggregations](aggregations-advanced.md).

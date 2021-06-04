@@ -7,19 +7,29 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 05/18/2021
+ms.date: 06/04/2021
 LocalizationGroup: Transform and shape data
 ---
 # Automatic aggregations
 
-Automatic aggregations for DirectQuery datasets uses state-of-the-art machine learning (ML) to self train and continuously optimize an in-memory cache with pre-aggregated query results, providing blazing fast report visualization response times for even the largest data sources.
+Automatic aggregations for DirectQuery datasets uses state-of-the-art machine learning (ML) to self train and continuously optimize an in-memory cache with pre-aggregated query results, providing faster report visualization response times for even the largest datasets.
 
 With automatic aggregations:
 
-- Big data is not so big anymore - By using MLs predictive modeling, automatic aggregations analyses both your backend data source and report query patterns to determine the optimal pre-defined aggregations to store in the dataset in-memory cache.
+- Big data is not so big - By using MLs predictive modeling, automatic aggregations analyses backend data sources and user reporting query patterns to determine pre-defined aggregations to store in the dataset in-memory cache. The amount of pre-aggregated data stored in-memory is small, but can answer the vast majority of report queries.
 - Report visualizations are faster - An optimal percentage of reporting queries are returned by the in-memory cache instead of backend data source systems. Outlier queries that cannot be returned by the in-memory cache are passed directly to the data source.
-- Optimized dataset refresh - The in-memory cache stores only aggregated results. The number of rows stored is only a tiny fraction of import mode in-memory tables. With such a small amount of data kept in-memory, dataset refresh times are significantly reduced.
-- Balanced architectures - Because most query results are returned by the Power BI query engine and in-memory cache, query processing load on data source systems at peak reporting times is significantly reduced.
+- Optimized dataset refresh - The in-memory cache stores only aggregated results. The number of rows stored is only a tiny fraction of import mode in-memory tables. With such a small amount of data kept in-memory, dataset refresh takes only a short amount of time.
+- Balanced architectures - Because most query results are returned by the Power BI query engine and in-memory aggregations cache, query processing load on data source systems at peak reporting times is significantly reduced.
+
+## Optimized query response
+
+When using DirectQuery, latency, especially over very large datasets can often significantly reduce query response times. Each time a dataset user opens a report or interacts with visualization, DAX queries are passed to the query engine and then on to the backend data source. The data source must then calculate and return aggregated results for each query. That round trip can be both time and process intensive, often causing slow query response times in report visualizations.
+
+When enabled for a dataset, automatic aggregations use machine learning (ML) predictive modeling  algorithms to determine client reporting query patterns passed to the DirectQuery data source. Because almost all dataset reporting queries calculate an aggregated result, an optimal percentage of those aggregations are then cached in-memory. Aggregated query results are then returned by the cache rather than being sent to and returned by the data source.
+
+:::image type="content" source="media/aggregations-automatic/auto-aggregations.png" border="false" alt-text="Automatic aggregations diagram":::
+
+Automatic aggregations predictive modeling continuously runs in the background. As users interact with reports, query patterns are identified. Those query patterns are then used to make predictions about aggregations that will answer those queries. A percentage of those aggregations are then cached in-memory. Your dataset is both self training and self optimizing. As client report query patterns change, automatic aggregations adjusts, prioritizing and caching those aggregations used most often. Those queries that are not cached are passed to the backend data source, just like a typical DirectQuery query.
 
 ## Requirements
 
@@ -45,51 +55,34 @@ To enable and configure automatic aggregations, you must have **Owner** permissi
 
 ## Under the hood
 
-When using DirectQuery, latency, especially over very large datasets can often reduce query response times. Each time a dataset user opens a report or interacts with a visualization, queries are passed to the data source. The data source must then calculate and return aggregated results for each query. That round trip can be both time and process intensive, often causing slower query response times in report visualizations.
-
-When enabled for a dataset, automatic aggregations use machine learning predictive analytics algorithms to determine client reporting query patterns against DirectQuery data sources. Because almost all dataset reporting queries calculate an aggregated result, an optimal percentage of those aggregations are then cached in-memory. Aggregated results are then returned by the cache rather than being sent to and returned by the data source.
-
-:::image type="content" source="media/aggregations-automatic/auto-aggregations.png" border="false" alt-text="Automatic aggregations diagram":::
-
-Unlike a traditional DirectQuery only dataset, a dataset with automatic aggregations enabled in effect becomes a *composite model* dataset, with  tables containing import data stored in-memory, and a DirectQuery connection to the data source. The Power BI query engine processes those queries from the in-memory tables it can, and passes on those queries that can only be calculated and returned from the data source.
-
-Automatic aggregations predictive modeling continuously runs in the background. As users interact with reports, query patterns are identified. Those query patterns are then used to make predictions about aggregations that will answer those queries. A percentage of those aggregations are then cached in-memory. Your dataset is both self training and self optimizing. As client report query patterns change, automatic aggregations adjusts, prioritizing and caching those aggregations used most often. Those queries that are not cached are passed to the backend data source, just like a typical DirectQuery query.
-
-Machine learning uses algorithms to identify patterns within data, and those patterns are then used to create a data model that can make predictions. With increased data and experience, the results of machine learning are more accurate
-
-## Starting the engine
+Unlike a traditional DirectQuery only dataset, a dataset with automatic aggregations enabled in effect becomes a *composite model* dataset with one or more tables containing import data stored in-memory, and a DirectQuery connection to the data source. The query engine processes those queries it can from the in-memory tables, and passes on those queries that can only be calculated and returned from the data source (DirectQuery).
 
 ### Training
 
-In order to create the aggregations cache, the service must first create a framework. This process is referred to as *training*. During training, cardinality estimation queries are sent to the data source.  
+In order to create an aggregations cache for the dataset, the service creates a framework by sending cardinality estimation queries to the data source. These queries analyze the tables, columns, rows, and relationships at the data source to create in-memory tables. which is then used to determine probable aggregations to be stored in the in-memory cache. 
 
-Query patterns are ranked by frequency. 
-
-Training refers to the process of creating the aggregation framework and hydrating them with the appropriate data from the data sources. Training differs from the refresh process, in that refresh process does not create new aggregations, but updates the existing ones. Due to the nature of these processes, training can be more resource intensive than refresh processes. 
-
-How often should I train?
-Training can be scheduled to occur on a daily, weekly or monthly basis. Training can be triggered in two ways. When scheduled using the UI, training would occur during the first refresh slot created by the user. For example, if I have three refresh slots created, (8:00 AM, 9:00 AM, and 10:00 AM), then training would occur at 8:00 AM (along with the refresh). During the other two slots, only refresh would occur.
-You can also manually trigger training at any time using the TOM command <Insert command>
-
-How often should I train?
-The suitable training frequency depends on your workload. The intent of training is to revisit the existing aggregations and determine if they suitably address the current query workloads. Determining this frequency and scheduling your training appropriately will help using your computational resources optimally.
-
-What should I do if the training fails?
-Given that the cardinality estimation queries are correlated to the percentage of queries cached (based on the user input), reducing the percentage of queries cached can alleviate the issue. 
-
-#### Percentage of queries cached
-
-The automatic aggregations feature is based on the queries against the dataset generated by Power BI reports. The self-learning model analyzes these queries to determine the optimal set of aggregations. This setting also determines the number of aggregations created and thus the storage consumed by them. Finding the optimal setting for your workload can take a few iterations. The default setting is 75% (based on prior experience)
-
-The optimal percentage of queries cached setting is a function of the use-case and workload and will vary on a case-by-case basis. However, you can use the lift chart tool in the automatic aggregations settings page to get an estimation of the level that you should be at. Please note that the lift chart tool provides estimations and is only to be used as a guidance tool. 
-
-The default query cache percentage in 75%. This value 
-
-For example, a setting of 95% will cache nearly all queries detected. More queries will hit the cache rather than the data source, possibly resulting in faster results. but learning and refresh processes could take an excessive amount of time, possibly exceeding time limits causing the learning process to fail. 
+As user reporting queries are sent to the query engine, the ML algorithm analyzes the queries to determine the optimal aggregations to be calculated and included in the caches tables. 
 
 ### Refresh
 
-Because the aggregations are stored in memory, just like with any other import table it's necessary to refresh the agg table to keep it in sync with the data source. You specify either a daily or weekly refresh, and you can specify up to 48 refreshed per day. The first refresh includes the training process. All subsequent refreshes that day or week update data only. 
+### User defined aggregations
+
+Automatic aggregations can work side-by-side with [user defined aggregations](aggregations-advanced.md). Automatic aggregations are identified as *System* aggregations. The automatic aggregations algorithm drops and creates only those *system* aggregations as reporting queries are analyzed and adjustments are made to maintain the optimal aggregations for the dataset. 
+
+
+#### Percentage of queries cached
+
+The automatic aggregations feature is based on the queries against the dataset generated by Power BI reports. The self-learning model analyzes these queries to determine the optimal set of aggregations. This setting also determines the number of aggregations created and thus the storage consumed by them. Finding the optimal setting for your workload can take a few iterations. The default setting is 75%.
+
+The cache percentage setting determines the query coverage. Having a greater percentage means greater coverage and thus more aggregations created. While having more coverage is optimal for query performance, they also would mean longer training times. Having lesser coverage would help in this aspect, but would degrade performance as certain queries would have to hit the tables in the DirectQuery source. Finding the optimal setting requires an iterative process.
+
+The optimal percentage of queries cached setting is a function of the use-case and workload and will vary on a case-by-case basis. However, you can use the lift chart tool in the automatic aggregations settings page to get an estimation of the level that you should be at. Please note that the lift chart tool provides estimations and is only to be used as a guidance tool. 
+
+For example, a setting of 95% will cache nearly all queries detected. More queries will hit the cache rather than the data source, possibly resulting in faster results. However, if the percentage of aggregations cached setting is too high, the balance tips, and learning and refresh processes could take an excessive amount of time, possibly exceeding time limits causing the learning process to fail.
+
+### Refresh
+
+Because the aggregations are stored in memory, just like with any other import table, it's necessary to refresh aggregations tables to keep them in sync with the data source. You specify either a daily or weekly refresh, and you can specify up to 48 refreshed per day. The first refresh includes the training process. All subsequent refreshes that day or week update data only. 
 
 :::image type="content" source="media/aggregations-automatic/auto-aggs-refresh.png" alt-text="Configure refresh for automatic aggregations":::
 
@@ -100,9 +93,9 @@ If a refresh fails, it typically will be the first refresh, that includes the tr
 
 ## Fine-tuning
 
-After you've run at least one refresh using the recommended default 75% of cached queries, you can change the percentage to better suit your particular dataset. When you expand **Visualize how changing the percent cached affects this workload**, a lift chart and bar charts can giv you a visual representation of how changing the percentage can affect query response times.
+After you've run at least one refresh using the recommended default 75% of cached queries, you can change the percentage to better suit your particular dataset. When you expand **Visualize how changing the percent cached affects this workload**, lift chart and bar charts provide visual representation of how changing the percentage can affect query response times. 
 
-The cache percentage setting determines the query coverage. Having a greater percentage means greater coverage and thus more aggregations created. While having more coverage is optimal for query performance, they also would mean longer training times. Having lesser coverage would help in this aspect, but would degrade performance as certain queries would have to hit the tables in the DirectQuery source. Finding the optimal setting requires an iterative process.
+
 
 ### Query performance impact
 
