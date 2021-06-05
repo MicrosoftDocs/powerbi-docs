@@ -132,6 +132,8 @@
         href: service-quick-create-report.md
       - name: "Create a report from Excel in the service"
         href: service-report-create-new.md
+      - name: "Create a report quickly from a SharePoint list"
+        href: service-quick-create-sharepoint-list.md
       - name: "Enable automatic page refresh"
         href: desktop-automatic-page-refresh.md
       - name: "Examine report elements with Performance Analyzer"
@@ -196,7 +198,7 @@
         href: desktop-rls.md
       - name: "Customize tooltips"
         href: desktop-custom-tooltips.md
-      - name: "Add text boxes and shapes to reports"
+      - name: "Add text boxes, shapes, and smart narratives"
         href: power-bi-reports-add-text-and-shapes.md
       - name: "Add a hyperlink to a text box"
         href: service-add-hyperlink-to-text-box.md
