@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 10/26/2020
+ms.date: 06/06/2021
 LocalizationGroup: Share your work
 ---
 # Endorse your content
@@ -27,9 +27,13 @@ Currently it is possible to endorse
 * Reports
 * Apps
 
-This article describes how to [promote content](#promote-content), how to [certify content](#certify-content) if you're an authorized reviewer, and how to [request certification](#request-content-certification) if you're not.
+Endorsed content can be made discoverable. When endorsed content is discoverable, users who don't have access to it will be able to find it and request access. Content can be marked as discoverable while you're endorsing it. Currently only datasets can be marked as discoverable. See [Discovery](service-discovery.md) for more detail.
+
+This article describes how to [promote content](#promote-content), how to [certify content](#certify-content) if you're an authorized reviewer, and how to [request certification](#request-content-certification) if you're not. It also describes how to mark datasets as discoverable.
 
 See [Endorsement: Promoting and certifying Power BI content](service-endorsement-overview.md) to learn more about endorsement.
+
+See [Discovery](service-discovery) to learn more about discoverability.
 
 ## Promote content
 
@@ -40,7 +44,13 @@ To promote content, you must have write permissions the workspace where the cont
 
 1. Go to the [settings](#how-to-get-to-content-settings) of the content you want to promote.
 
-1. Expand the endorsement section and select **Promoted**. If you're promoting a dataset, provide a brief description of the dataset.
+1. Expand the endorsement section and select **Promoted**.
+
+1. Select the **Make discoverable** checkbox to make it possible for users to find your content even if they don't have access to it yet. See [Discoverability](service-discovery.md) for more information.
+
+    >[!NOTE] The **Make discoverable** checkbox is only available if Discovery has been set up in your organization and has been enabled for you. Discoverability is currently supported for datasets only.
+
+1. If you're promoting a dataset, provide a brief, informative description of the dataset. The description is important - users who don't yet have access to your dataset will be able to see this description in the dataset's info tooltip in the datasets hub. 
 
     ![Select Promoted and Apply](media/service-endorse-content/power-bi-promote-content.png)
 
@@ -51,7 +61,7 @@ To promote content, you must have write permissions the workspace where the cont
 Content certification is a big responsibility, and only authorized users can certify content. Other users can [request content certification](#request-content-certification). This section describes how to certify content.
 
 >[!NOTE]
->For the purposes of illustration, the endorsement dialog for datasets is shown below. The dialogs for the other content types are almost identical, with the same radio button options. 
+>For the purposes of illustration, the endorsement dialog for datasets is shown below. The dialogs for the other content types are almost identical, with the same radio button options.
 
 1. Get write permissions on the workspace where the content you want to certify is located. You can request these permissions from the content owner or from anyone with admin permissions on the workspace.
 
@@ -59,7 +69,13 @@ Content certification is a big responsibility, and only authorized users can cer
 
 1. If you decide to certify the content, go to the workspace where it resides, and then open the [settings](#how-to-get-to-content-settings) of the content you want to certify.
 
-1. Expand the endorsement section and select **Certified**. 
+1. Expand the endorsement section and select **Certified**.
+
+1. Select the **Make discoverable** checkbox to make it possible for users to find the content you're certifying even if they don't have access to it yet. See [Discoverability](service-discovery.md) for more information.
+
+    >[!NOTE] The **Make discoverable** checkbox is only available if Discovery has been set up in your organization and has been enabled for you. Discoverability is currently supported for datasets only.
+
+1. If you're certifying a dataset, make sure the dataset has an informatiive description. The description is important - users who don't have access to the dataset yet will be able to see this description in the dataset's info tooltip in the datasets hub. 
 
     ![Screen shot of certify content button.](media/service-endorse-content/power-bi-certify-content.png)
 
