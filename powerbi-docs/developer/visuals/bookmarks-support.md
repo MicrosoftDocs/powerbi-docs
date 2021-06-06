@@ -148,7 +148,7 @@ this.host.applyJsonFilter(
 
 Each time you select a bookmark, the custom visual gets an `update` call.
 
-The custom visual should check the filter in the object:
+The custom visual then checks the filter in the object:
 
 ```typescript
 const filter: IAdvancedFilter = FilterManager.restoreFilter(
@@ -157,7 +157,7 @@ const filter: IAdvancedFilter = FilterManager.restoreFilter(
 ) as IAdvancedFilter;
 ```
 
-If the `filter` object isn't null, the visual should restore the filter conditions from the object:
+If the `filter` object isn't null, the visual restores the filter conditions from the object:
 
 ```typescript
 const jsonFilters: AdvancedFilter = this.options.jsonFilters as AdvancedFilter[];
@@ -177,7 +177,7 @@ if (jsonFilters
 }
 ```
 
-After that, the visual should change its internal state to reflect the current conditions. The internal state includes the data points and visualization objects (lines, rectangles, and so on).
+After that, the visual changes its internal state to reflect the current conditions. The internal state includes the data points and visualization objects (lines, rectangles, and so on).
 
 > [!IMPORTANT]
 > In the above report bookmarks scenario, the visual shouldn't call `applyJsonFilter` to filter the other visuals. They will already be filtered by Power BI.
