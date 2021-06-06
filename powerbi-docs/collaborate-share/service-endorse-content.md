@@ -44,7 +44,7 @@ To promote content, you must have write permissions the workspace where the cont
 
 1. Expand the endorsement section and select **Promoted**.
 
-    If you are promoting a dataset and see a **Make discoverable** checkbox, it means you can make it possible for users who don't have access to the dataset to find it. See [dataset discovery](service-discovery) for more detail.
+    If you are promoting a dataset and see a **Make discoverable** checkbox, it means you can make it possible for users who don't have access to the dataset to find it. See [dataset discovery](service-discovery.md) for more detail.
 
     If you're promoting a dataset, provide a brief, informative description of the dataset. The description is important - this is what users will see they click the dataset's info icon in the datasets hub. 
 
@@ -67,7 +67,7 @@ Content certification is a big responsibility, and only authorized users can cer
 
 1. Expand the endorsement section and select **Certified**.
 
-    If you are certifying a dataset and see a **Make discoverable** checkbox, it means you can make it possible for users who don't have access to the dataset to find it. See [dataset discovery](service-discovery) for more detail.
+    If you are certifying a dataset and see a **Make discoverable** checkbox, it means you can make it possible for users who don't have access to the dataset to find it. See [dataset discovery](service-discovery.md) for more detail.
 
     If you're certifying a dataset, make sure the dataset has an informative description. The description is important - users who don't have access to the dataset will be able to see this description when they click the dataset's info icon in the datasets hub.
 
