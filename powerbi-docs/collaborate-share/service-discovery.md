@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.date: 06/07/2021
 LocalizationGroup: Share your work
 ---
-# Discoverability
+# Dataset discoverability
 
 Discoverability is a feature that makes it possible for users to find endorsed datasets that they don't have access to. Without discoverability, the full value of [endorsement](service-endorsement-overview.md), that is, directing users to quality data, is not fully realized.
 
