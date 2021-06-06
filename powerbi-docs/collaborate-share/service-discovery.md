@@ -25,7 +25,7 @@ If you have an [Admin or Member role](service-new-workspaces.md#roles-in-the-new
 
 1. Go to dataset settings and open the **Endorsement and discovery** section.
 
-1. In the dialog, select the **Make discoverable** checkbox.
+1. In the dialog, select the **Make discoverable** checkbox. Make sure that the dataset has a useful description. This description is what users see in the datasets hub when they select the dataset's info tooltip, even if they don't yet have access to the dataset itself.   
 
 ![Screenshot of the Make discoverable checkbox in the dataset endorsement and discovery settings.](media/service-discovery/dataset-make-discoverable-checkbox.png)
 
