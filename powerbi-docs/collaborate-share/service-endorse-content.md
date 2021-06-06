@@ -46,7 +46,7 @@ To promote content, you must have write permissions the workspace where the cont
 
     If you are promoting a dataset and see a **Make discoverable** checkbox, it means you can make it possible for users who don't have access to the dataset to find it. See [dataset discovery](service-discovery) for more detail.
 
-1. If you're promoting a dataset, provide a brief, informative description of the dataset. The description is important - this is what users will see they click the dataset's info icon in the datasets hub. 
+    If you're promoting a dataset, provide a brief, informative description of the dataset. The description is important - this is what users will see they click the dataset's info icon in the datasets hub. 
 
     ![Select Promoted and Apply](media/service-endorse-content/power-bi-promote-content.png)
 
@@ -69,7 +69,7 @@ Content certification is a big responsibility, and only authorized users can cer
 
     If you are certifying a dataset and see a **Make discoverable** checkbox, it means you can make it possible for users who don't have access to the dataset to find it. See [dataset discovery](service-discovery) for more detail.
 
-1. If you're certifying a dataset, make sure the dataset has an informative description. The description is important - users who don't have access to the dataset will be able to see this description when they click the dataset's info icon in the datasets hub.
+    If you're certifying a dataset, make sure the dataset has an informative description. The description is important - users who don't have access to the dataset will be able to see this description when they click the dataset's info icon in the datasets hub.
 
     ![Screen shot of certify content button.](media/service-endorse-content/power-bi-certify-content.png)
 
@@ -109,4 +109,5 @@ The Endorsement dialog is accessed through the settings of the content you want 
 
 * [Read more about content endorsement](service-endorsement-overview.md)
 * [Enable content certification](../admin/service-admin-setup-certification.md) (Power BI admins)
+* [Read more about dataset discoverability](service-discovery.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
