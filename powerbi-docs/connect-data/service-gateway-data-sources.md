@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 11/03/2020
+ms.date: 06/04/2021
 ms.custom: ''
 LocalizationGroup: Gateways
 ---
@@ -100,7 +100,7 @@ If you're listed in the **Users** tab of the data source configured in the gatew
 
 ### Limitations
 
-OAuth is a supported authentication scheme only for custom connectors with the on-premises data gateway. You can't add other data sources that require OAuth. If your dataset has a data source that requires OAuth and this data source isn't a custom connector, you can't use the gateway for scheduled refresh.
+OAuth is a supported authentication scheme only for custom connectors with the on-premises data gateway.
 
 ## Manage users
 

@@ -112,7 +112,7 @@ If you don't know what's your domain or tenant ID, see [Find the Microsoft Azure
 [!INCLUDE[Get the workspace ID](../../includes/embed-tutorial-workspace-id.md)]
 
 >[!NOTE]
->To get the workspace ID programmatically, use the [Get Groups](/api/power-bi/groups/getgroups) API.
+>To get the workspace ID programmatically, use the [Get Groups](/rest/api/power-bi/groups/getgroups) API.
 
 ### Report ID
 

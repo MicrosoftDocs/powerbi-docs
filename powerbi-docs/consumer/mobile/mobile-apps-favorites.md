@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 12/02/2019
+ms.date: 06/01/2021
 ---
 # Make and view favorites in the Power BI mobile apps
 Applies to:
