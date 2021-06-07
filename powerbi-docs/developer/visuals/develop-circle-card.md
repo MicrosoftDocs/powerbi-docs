@@ -482,7 +482,8 @@ Make changes to the **visual.ts** file, so that the circle card visual will be a
 
 5. Review the visual in Power BI service.
 
-The visual now displays the value and the display name.
+The visual now displays the name and value of the selected data field.
+
 You have now created a working Power BI visual. You can [add formatting options](custom-visual-develop-tutorial-format-options.md) to it, or you can [package](custom-visual-develop-tutorial-format-options.md#packaging-the-custom-visual) it as is for immediate use.
 
 ## Next steps
