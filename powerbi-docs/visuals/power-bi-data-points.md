@@ -132,7 +132,7 @@ No reduction strategy
 - Values: Virtualization by using Window of 200 rows at a time
 
 ### Scatter chart (high density)
-See [High density scatter](./desktop-high-density-scatter-charts.md)
+See [High density scatter](../create-reports/desktop-high-density-scatter-charts.md)
 
 ### Pie
 - Max points: 3,500
