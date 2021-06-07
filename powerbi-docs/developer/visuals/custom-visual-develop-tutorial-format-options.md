@@ -76,7 +76,7 @@ This tutorial explains how to add common formatting properties to a visual. We'l
 
 Now let's add new group called *color* for configuring the color and width of the circle.
 
-1. In PowerShell, enter *Ctrl+C* to stop the custom visual.
+1. In **PowerShell**, enter *Ctrl+C* to stop the custom visual.
 
 2. In **Visual Studio Code**, in the `capabilities.json` file, insert the following JSON fragment into the object labeled **objects**.
 
@@ -220,11 +220,11 @@ In this section you will learn how to
 
 * [Enter property values](#edit-the-property-values-of-the-visual) for the custom visual project in the `pbiviz.json` file.
 * [Update the icon](#update-the-icon) (`icon.png`) file.
-* Finally, [package](#create-the-visual-package) the custom visual.
+* Finally, [package](#package-the-visual) the custom visual.
 
 ### Edit the property values of the visual
 
-1. In **PowerShell**, stop the custom visual.
+1. In **PowerShell**, enter *Ctrl+C* to stop the custom visual.
 
 2. Open the `pbiviz.json` file in **Visual Studio Code**.
 
@@ -265,11 +265,11 @@ In this section you will learn how to
 
     ![Viz pane image](media/custom-visual-develop-tutorial-format-options/viz-pane-image.png)
 
-### Create the visual package
+### Package the visual
 
 1. In **Visual Studio Code**, ensure that all files are saved.
 
-2. To package the custom visual, in PowerShell, enter the following command.
+2. To package the custom visual, in **PowerShell**, enter the following command.
 
     ```powershell
     pbiviz package
