@@ -214,7 +214,15 @@ Now let's add new group called *color* for configuring the color and width of th
 
 ## Packaging the custom visual
 
-Enter property values for the custom visual project, update the icon file, and then package the custom visual.
+Now that the visual is completed and ready to be used, it's time to package it. A packaged visual can be imported to Power BI reports or service to be used and enjoyed by others.
+
+In this section you will learn how to
+
+* [Enter property values](#edit-the-property-values-of-the-visual) for the custom visual project in the `pbiviz.json` file.
+* [Update the icon](#update-the-icon) (`icon.png`) file.
+* Finally, [package](#create-the-visual package) the custom visual.
+
+### Edit the property values of the visual
 
 1. In **PowerShell**, stop the custom visual.
 
@@ -245,19 +253,23 @@ Enter property values for the custom visual project, update the icon file, and t
 
 7. Save the `pbiviz.json` file.
 
-8. In the **assets** object, notice that the document defines a path to an icon. The icon is the image that appears in the **_Visualizations_** pane. It must be a **PNG** file, *20 pixels by 20 pixels*.
+### Update the icon
 
-9. In Windows Explorer, copy the `icon.png` file, and then paste it to replace the default file located in the **assets** folder.
+1. In the **assets** object of the `pbiviz.json` file, notice that the document defines a path to an icon. The icon is the image that appears in the **_Visualizations_** pane. It must be a **PNG** file, *20 pixels by 20 pixels*.
 
-10. In **Visual Studio Code**, in the Explorer pane, expand the **assets** folder, and then select the **icon.png** file.
+2. In Windows Explorer, copy the `icon.png` file, and then paste it to replace the default file located in the **assets** folder.
 
-11. Review the icon.
+3. In **Visual Studio Code**, in the Explorer pane, expand the **assets** folder, and then select the **icon.png** file.
+
+4. Review the icon.
 
     ![Viz pane image](media/custom-visual-develop-tutorial-format-options/viz-pane-image.png)
 
-12. In **Visual Studio Code**, ensure that all files are saved.
+### Create the visual package
 
-13. To package the custom visual, in PowerShell, enter the following command.
+1. In **Visual Studio Code**, ensure that all files are saved.
+
+2. To package the custom visual, in PowerShell, enter the following command.
 
     ```powershell
     pbiviz package
