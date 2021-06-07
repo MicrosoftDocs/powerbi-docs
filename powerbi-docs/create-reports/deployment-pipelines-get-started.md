@@ -116,13 +116,13 @@ Select the stage to deploy from and then select the deployment button. The deplo
 
 To deploy only specific items, select the **Show more** link, and then select the items you wish to deploy. When clicking the deploy button, only the selected items are deployed to the next stage.
 
-Since dashboards, reports and datasets are related and have dependencies, you can use the select related button to check all items that those items are dependent on. For example, if you want to deploy a report to the next stage, clicking the select related button will mark the dataset that the report is connected to, so that both will be deployed at once and the report will not break.
+Since dashboards, reports, datasets and dataflows are related and have dependencies, you can use the select related button to check all items that those items are dependent on. For example, if you want to deploy a report to the next stage, clicking the select related button will mark the dataset that the report is connected to, so that both will be deployed at once and the report will not break.
 
 [![A screenshot showing the selective deploy option in deployment pipelines, available after selecting the show more option.](media/deployment-pipelines-get-started/selective-deploy.png)](media/deployment-pipelines-get-started/selective-deploy.png#lightbox)
 
 >[!NOTE]
 > * You can't deploy a Power BI item to the next stage, if the items it's dependent on doesn't exist in the stage you are deploying to. For example, deploying a report without a dataset will fail, unless the dataset already exists in the target stage.
-> * You might get unexpected results if you choose to deploy a Power BI item without the item it's dependent on. This can happen when the dataset in the target stage, has changed and is no longer identical to the one in the stage you're deploying from.
+> * You might get unexpected results if you choose to deploy a Power BI item without the item it's dependent on. This can happen when a dataset or a dataflow in the target stage, has changed and is no longer identical to the one in the stage you're deploying from.
 
 ### Backwards deployment
 
@@ -142,12 +142,12 @@ You can configure rules fo data source rules and parameter rules. The following 
 
 ||Data source rule  |Parameter rule  |Details  |
 |---------|---------|---------|---------|
-|**Dataflow**         |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |Use to determine the values of the data sources or parameters for a specific dataset. |
-|**Dataset**          |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |Use to determine the values of the data sources or parameters for a specific dataflow.         |
+|**Dataflow**         |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |Use to determine the values of the data sources or parameters for a specific dataflow. |
+|**Dataset**          |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |Use to determine the values of the data sources or parameters for a specific dataset.         |
 |**Paginated report** |![Applies to.](../media/yes.png) |![Does not apply to.](../media/no.png) |Defined for the data sources of each paginated report. You can use these rules to determine the data sources of the paginated report. |
 
 >[!NOTE]
-> Deployment rules work only when the source and target data source are of the same type.
+> Deployment rules work only when data sources in the source and target stages, are of the same type.
 
 ### Create a deployment rule
 
@@ -159,9 +159,15 @@ To create a deployment rule, follow the steps in this section. After you create 
 
 2. You can set rules to **dataflows**, **datasets** and **paginated reports**. In the Deployment settings pane, select the type of rule you want to set.
 
+    :::image type="content" source="media/deployment-pipelines-get-started/deployment-rules.png" alt-text="A screenshot of the deployment rules pane, showing that you can set rules for dataflows, datasets and paginated reports.":::
+
 3. Select the dataflow, dataset or paginated report you want to create a rule for.
 
+    :::image type="content" source="media/deployment-pipelines-get-started/deployment-rules-selection.png" alt-text="A screenshot of the deployment rules pane, showing two datasets in the datasets tab. To configure a rule select an item from one of the tabs.":::
+
 4. Select the type of rule you want to create, expand the list, and then select **Add rule**. There are two types of rules you can create:
+
+    :::image type="content" source="media/deployment-pipelines-get-started/deployment-rule-types.png" alt-text="A screenshot of the deployment rules pane, showing a selected dataset and the two rule types, data source and parameter, you can configure for it.":::
 
     * **Data source rules**
 
@@ -173,24 +179,52 @@ To create a deployment rule, follow the steps in this section. After you create 
 
         >[!NOTE]
         >* *Data source rules* will be grayed out if you are not the report owner, or if your report does not contain any data sources.
-        >* For *dataflows** and *datasets* the data source list is taken from the dataset of the source pipeline stage.
-        >* For *paginated reports* the data source list is taken from the paginated report in the source pipeline stage.
+        >* For *dataflows*, *datasets* and *paginated reports*, the data source list is taken from the dataset of the source pipeline stage.
 
     * **Parameter rules** - Select a parameter from the list of parameters; the current value is shown. Edit the value to the value you want to take effect after each deployment.
 
-### Deployment rules limitations
+### Deployment rule limitations
 
-This section lists the limitations for the deployment rules. There are some differences in the limitations for each type of deployment rule.
+This section lists the limitations for the deployment rules.
 
-|Limitation  |Dataflows  |Datasets  |Paginated reports  |
-|---------|---------|---------|---------|
-|You must be the dataset owner to create a deployment rule. |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |
-|Deployment rules cannot be created in the development stage. |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |
-|When an item is removed or deleted, its rules are deleted too. These rules cannot be restored. |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |
-|If the data source defined in a rule is changed or removed from the source dataset, the rule will not be valid and the deployment will fail. |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |
-|If the parameter defined in a rule is changed or removed from the source dataset, the rule will not be valid and the deployment will fail. |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |![Does not apply to.](../media/no.png) |
-|Data source rules can only be defined for the following data sources:<ul><li>Azure Analysis Services</li><li>Azure Synapse</li><li>SQL Server Analysis Services (SSAS)</li><li>Azure SQL Server</li><li>SQL server</li><li>Odata Feed</li><li>Oracle</li><li>SapHana (only supported for import mode; not direct query mode)</li><li>SharePoint</li><li>Teradata</li></ul>For other data sources, we recommend [using parameters to configure your data source](deployment-pipelines-best-practices.md#use-parameters-in-your-model).|![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |![Does not apply to.](../media/no.png) |
-|Parameter rules are not supported. |![Does not apply to.](../media/no.png) |![Does not apply to.](../media/no.png) |![Applies to.](../media/yes.png) |
+* To create a deployment rule, you must be the owner of the dataflow, dataset or paginated report you're creating a rule for.
+
+* Deployment rules cannot be created in the development stage.
+
+* When an item is removed or deleted, its rules are deleted too. These rules cannot be restored.
+
+* If the data source defined in a rule is changed or removed from the source dataset, the rule will not be valid and the deployment will fail.
+
+* If the parameter defined in a rule is changed or removed from the source dataset, the rule will not be valid and the deployment will fail.
+
+>[!NOTE]
+>Parameter rules are not supported for paginated reports.
+
+### Supported data sources for dataflow and dataset rules
+
+Data source rules can only be defined for the following data sources:
+
+* Azure Analysis Services
+
+* Azure Synapse
+
+* SQL Server Analysis Services (SSAS)
+
+* Azure SQL Server
+
+* SQL server
+
+* Odata Feed
+
+* Oracle
+
+* SapHana (only supported for import mode; not direct query mode)
+
+* SharePoint
+
+* Teradata
+
+For other data sources, we recommend [using parameters to configure your data source](deployment-pipelines-best-practices.md#use-parameters-in-your-model).
 
 ## Step 5 - Deploy content from one stage to another
 

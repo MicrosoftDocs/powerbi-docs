@@ -58,17 +58,21 @@ In the target stage, [item properties that are not copied](deployment-pipelines-
 
 ### Auto-binding
 
-When you use [selective deploy](deployment-pipelines-get-started.md?#selective-deployment) to deploy Power BI items, deployment pipelines checks for dependencies. The deployment will either succeed or fail, depending on the location of the item that provides the underlining data for the deployed item.
+When you use [selective deploy](deployment-pipelines-get-started.md?#selective-deployment) to deploy Power BI items, deployment pipelines checks for dependencies. The deployment will either succeed or fail, depending on the location of the item that provides the data that the deployed item relies on.
 
 * **Linked item exists in the target stage** - Deployment pipelines will automatically bind the deployed item, to the item it relies on in the deployed stage. For example, if you deploy a paginated report from development to test, and it's connected to a Power BI dataset that was perviously deployed to the test stage, it will be automatically connected to that database.
 
-* **Linked item doesn't exist in the target stage** - Deployment pipelines will fail a deployment if an item has a dependency on another item, and the item providing the underlining data isn't deployed and doesn't reside in the target stage. For example, if you deploy a report from development to test, and the test stage doesn't contain its Power BI dataset, the deployment will fail. To avoid failed deployments due to dependent items not being deployed, use the *Select related* button. *Select related* automatically selects all the related items that provide dependencies to the items you're about to deploy.
+* **Linked item doesn't exist in the target stage** - Deployment pipelines will fail a deployment if an item has a dependency on another item, and the item providing the data isn't deployed and doesn't reside in the target stage. For example, if you deploy a report from development to test, and the test stage doesn't contain its Power BI dataset, the deployment will fail. To avoid failed deployments due to dependent items not being deployed, use the *Select related* button. *Select related* automatically selects all the related items that provide dependencies to the items you're about to deploy.
 
-### Refreshing the dataset
+Auto-binding works only with Power BI items that are supported by deployment pipelines and reside within Power BI. To view the dependencies of a Power BI item, from the item's *More options* menu, select *View lineage*.
 
-Data in the target dataset is kept when possible. If there are no changes to a dataset, the data is kept as it was before the deployment.
+:::image type="content" source="media/deployment-pipelines-process/view-lineage.png" alt-text="A screenshot of the view lineage option, in an item's more options menu.":::
 
-With small changes, such as adding a table or measures, Power BI keeps the original data, and the refresh is optimized to refresh only what's needed. For breaking schema changes, or changes in the data source connection, a full refresh is required.
+### Refreshing datasets and dataflows
+
+Data in the target dataset is kept when possible. If there are no changes to a dataset or a dataflow, the data is kept as it was before the deployment.
+
+With small changes, such as adding a table or a measure, Power BI keeps the original data, and the refresh is optimized to refresh only what's needed. For breaking schema changes, or changes in the data source connection, a full refresh is required.
 
 ### Requirements for deploying to a stage with an existing workspace
 
@@ -81,6 +85,8 @@ When you deploy content from one pipeline stage to another, the copied content c
 * Datasets
 
 * Reports
+
+* Dataflows
 
 * Dashboards
 
@@ -250,11 +256,11 @@ Pipeline permissions and workspace permissions are granted and managed separatel
 
 When deploying Power BI items, the ownership of the deployed item may change. Review the table below to understand who can deploy each item and how the deployment affects the item's ownership.
 
-|Power BI Item    |Required permission to deploy |Permission after deployment |
+|Power BI Item    |Required permission to deploy an existing item |Item ownership after deployment |
 |-----------------|---------|---------|
-|Dataset          |Workspace member |Workspace member       |
-|Paginated report |Workspace member |Paginated report owner |
-|Dataflow         |Dataflow owner   |Dataflow owner         |
+|Dataset          |Workspace member |Unchanged       |
+|Dataflow         |Dataflow owner   |Unchanged         |
+|Paginated report |Workspace member |The user who made the deployment becomes the owner |
 
 ### User with pipeline access
 
