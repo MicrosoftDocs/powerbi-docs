@@ -446,7 +446,7 @@ Verify that the circle card visual displays the *measure* field, and review the 
 
 6. To toggle back to the visual, in the toolbar floating above the visual, select **Show Dataview**.
 
-### Configure the visual to consume data
+## Configure the visual to consume data
 
 Make changes to the **visual.ts** file, so that the circle card visual will be able to consume data.
 
