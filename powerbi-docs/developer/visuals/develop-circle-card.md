@@ -18,6 +18,7 @@ In this tutorial, you'll develop a Power BI visual named circle card that displa
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > * Create a development project for your visual.
 > * Develop your visual with D3 visual elements.
 > * Configure your visual to process data.
@@ -35,7 +36,7 @@ In this tutorial, you learn how to:
 
 In this section you'll create a project for the circle card visual.
 
-1. Open PowerShell and navigate to the folder you want to create your project in.
+1. Open **PowerShell** and navigate to the folder you want to create your project in.
 
 2. Enter the following command:
 
@@ -54,8 +55,9 @@ In this section you'll create a project for the circle card visual.
     ```powershell
     pbiviz start
     ```
+
     >[!IMPORTANT]
-    >Do not close the PowerShell window until the end of the tutorial. To stop the visual from running, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
+    >Do not close the **PowerShell** window until the end of the tutorial. To stop the visual from running, enter *Ctrl+C* and if prompted to terminate the batch job, enter *Y*, and press *Enter*.
 
 ## View the circle card in Power BI service
 
@@ -85,6 +87,7 @@ Set up the **visual.ts** file by deleting and adding a few lines of code.
 3. Remove the following code lines from the *visual.ts* file.
 
     * The *VisualSettings* import:
+
         ```typescript
         import { VisualSettings } from "./settings";
         ```
@@ -322,9 +325,9 @@ Delete unneeded lines of code from the capabilities file.
 
 Stop the visual from running and restart it.
 
-1. In the PowerShell window running the visual, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
+1. In the **PowerShell** window running the visual, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
 
-2. In PowerShell, start the visual.
+2. In **PowerShell**, start the visual.
 
     ```powershell
     pbiviz start
@@ -426,7 +429,7 @@ Verify that the circle card visual displays the *measure* field, and review the 
     > [!Note]
     > The visual project does not yet include data binding logic.
 
-3. In the floating toolbar, select **Show Dataview**. 
+3. In the floating toolbar, select **Show Dataview**.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the show dataview button, located in the circle card floating toolbar.](media/develop-circle-card/show-dataview.png)
@@ -477,7 +480,10 @@ Make changes to the **visual.ts** file, so that the circle card visual will be a
 
 4. Save the **visual.ts** file.
 
-5. Review the visual in Power BI service. The visual now displays the value and the display name.
+5. Review the visual in Power BI service.
+
+The visual now displays the value and the display name.
+You have now created a working Power BI visual. You can [add formatting options](custom-visual-develop-tutorial-format-options.md) to it, or you can [package](custom-visual-develop-tutorial-format-options.md#packaging-the-custom-visual) it as is for immediate use.
 
 ## Next steps
 
