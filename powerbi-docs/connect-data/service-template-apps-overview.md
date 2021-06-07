@@ -116,6 +116,9 @@ See [Tips for authoring template apps in Power BI](service-template-apps-tips.md
 | Incremental refresh | Template apps do not support incremental refresh |
 | Power BI visuals | Only publicly available Power BI visuals are supported. [Organizational Power BI visuals](../developer/visuals/power-bi-custom-visuals-organization.md) not supported |
 | Sovereign clouds | Template apps are not available in sovereign clouds |
+| Composite models | Composite models should not be used in the app builder workspace. App installers can use composite models after installing the app  |
+| Large dataset storage format | Large dataset storage format is not supported for template apps   |
+
 
 ## Support
 For support during development, use [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). We actively monitor and manage this site. Customer incidents quickly find their way to the appropriate team.
