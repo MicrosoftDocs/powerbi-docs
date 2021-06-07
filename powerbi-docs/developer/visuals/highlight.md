@@ -213,7 +213,7 @@ categoryValues.forEach((category: PrimitiveValue, index: number) => {
     div.classList.add("horizontal");
     this.div.appendChild(div);
 
-    // div element to vizualize value of measure
+    // div element to visualize value of measure
     let barValue = document.createElement("div");
     barValue.style.width = +measureValue * 10 + "px";
     barValue.style.display = "flex";
@@ -223,7 +223,7 @@ categoryValues.forEach((category: PrimitiveValue, index: number) => {
     let bp = document.createElement("p");
     bp.innerText = category.toString();
 
-    // div element to vizualize highlight of measure
+    // div element to visualize highlight of measure
     let barHighlight = document.createElement("div");
     barHighlight.classList.add("highlight")
     barHighlight.style.backgroundColor = "blue";
@@ -241,7 +241,7 @@ categoryValues.forEach((category: PrimitiveValue, index: number) => {
 });
 ```
 
-Apply required styles for elements to use `flex box` and define colors for div elements:
+Apply required styles for elements to use `flexbox` and define colors for div elements:
 
 ```css
 div.vertical {
@@ -642,6 +642,8 @@ As the result you'll get the visual with buttons and values `highlighted value/d
 
 ## Next steps
 
-* [Read about matrix data view mappings](dataview-mappings.md#matrix-data-mapping)
+>[!div class="nextstepaction"]
+>[Matrix data view mappings](dataview-mappings.md#matrix-data-mapping)
 
-* [Read about capabilities of the visual](capabilities.md)
+>[!div class="nextstepaction"]
+>[Capabilities of the visual](capabilities.md)
