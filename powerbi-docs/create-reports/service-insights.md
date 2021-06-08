@@ -8,7 +8,7 @@ ms.custom: video-et_MLSL2sA8
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/28/2020
+ms.date: 06/08/2021
 LocalizationGroup: Dashboards
 ---
 # Generate data insights on your dataset automatically with Power BI
