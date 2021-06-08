@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: tutorial
-ms.date: 07/16/2019
+ms.date: 06/09/2021
 LocalizationGroup: Gateways
 ---
 
