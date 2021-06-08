@@ -8,7 +8,7 @@ ms.custom: video-dtdLul6otYE
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 05/26/2021
 LocalizationGroup: Common tasks
 ---
 
@@ -77,7 +77,7 @@ Your selected content fills the entire screen. Once you're in full screen mode, 
   * Select the **Back**, **Go back**, or **Back to report** button  to navigate to the previous page in your browser. If the previous page was a Power BI page, it too will display in full screen mode.  Full screen mode will persist until you exit out.
 
   * ![Fit to screen icon](media/end-user-focus/power-bi-fit-to-screen-icon.png)    
-    Use the **Fit to screen** button to display your dashboard at the largest size possible without resorting to scrollbars.  
+    Use the **Fit to page** button to display your dashboard at the largest size possible without resorting to scrollbars.  
 
     ![Screenshot showing hos fit to screen appears](media/end-user-focus/power-bi-fit-screen.png)
 
@@ -99,7 +99,7 @@ Focus mode is available for dashboards tiles and report visuals.
 
 - To open a dashboard tile in focus mode, hover over a dashboard tile or report visual, select **More options** (...) and choose **Open in focus mode**.
 
-    ![ellipsis menu for tile](media/end-user-focus/power-bi-focus-dashboard.png).. 
+    ![ellipsis menu for tile](media/end-user-focus/power-bi-focus-dashboard.png)
 
 - To open a report visual in focus mode, hover over the visual and select the **focus mode** icon ![focus mode icon](media/end-user-focus/pbi_popout.jpg).  
 
@@ -116,7 +116,7 @@ The visual opens and fills the entire canvas. Notice that you still have a **Fil
 
 Explore further by [modifying the filters](end-user-report-filter.md) and looking for interesting discoveries in your data. As a *business user*, you can't add new filters, change the fields being used in the visuals, or create new visuals.  However, you can interact with the existing filters. 
 
-For a dashboard tile, your changes can't be saved. For a report visual, any modifications you make to the existing filters are saved when you exit Power BI. If  you don't want Power BI to remember your modifications, select **Reset to default**. ![reset to default button](media/end-user-focus/power-bi-resets.png)  
+For a dashboard tile, your changes can't be saved. For a report visual, any modifications you make to the existing filters are saved when you exit Power BI. If  you don't want Power BI to remember your modifications, select the **Reset to default** button. ![reset to default button](media/end-user-focus/power-bi-resets.png)  
 
 Leave focus mode and return to the dashboard or report by selecting either **Exit focus mode**,  or **Back to report** (in the upper left corner of the visual).
 

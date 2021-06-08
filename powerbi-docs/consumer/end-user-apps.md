@@ -7,7 +7,7 @@ ms.reviewer: miguem
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 04/21/2021
+ms.date: 05/13/2021
 ms.custom: licensing support, css_fy20Q4
 LocalizationGroup: Share your work
 ---

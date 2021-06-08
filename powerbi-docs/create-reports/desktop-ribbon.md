@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/24/2021
+ms.date: 05/11/2021
 LocalizationGroup: Connect to data
 ms.custom: video-RWyUE
 ---
@@ -28,10 +28,10 @@ These benefits can be grouped into the following categories:
 
     ![New search bar](media/desktop-ribbon/desktop-ribbon-03.png)
 
-    Watch this video to see it in action.
+<!--    Watch this video to see it in action.
 
     > [!VIDEO <iframe width="560" height="315" src="https://www.microsoft.com/videoplayer/embed/RWyUE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]
-
+-->
 * **Improved look, feel, and organization** - icons and functionality in the updated Power BI Desktop ribbon are aligned to the look, feel, and organization of ribbon items found in Office applications.
 
     ![Improved look and feel](media/desktop-ribbon/desktop-ribbon-04.png)
@@ -50,7 +50,7 @@ These benefits can be grouped into the following categories:
 
     ![Keytips](media/desktop-ribbon/desktop-ribbon-07.png)
 
-* **Custom format strings** - in addition to setting custom format strings in the *Properties* pane, you can also set them in the ribbon. Select the measure or column you want to customize and a **Measure tools** or **Column tools** contextual tab appears, depending on your selection. In that tab's formatting section, you can type your custom format string directly into the dropdown box.
+* **Custom format strings** - in addition to setting custom format strings in the *Properties* pane, you can also set them in the ribbon. Select the measure or column you want to customize and a **Measure tools** or **Column tools** contextual tab appears, depending on your selection. In that tab, you can type your custom format string directly into the dropdown box.
 
     ![Custom format strings](media/desktop-ribbon/desktop-ribbon-08.png)
 

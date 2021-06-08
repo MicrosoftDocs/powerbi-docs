@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: tutorial
-ms.date: 01/13/2020
+ms.date: 05/20/2021
 LocalizationGroup: Learn more
 ---
 # Tutorial: Analyze webpage data by using Power BI Desktop
@@ -134,8 +134,8 @@ The query loads into the Power BI Desktop *Report* view, where you can see it in
 
 >[!TIP]
 >You can always get back to the Power Query Editor to edit and refine your query by:
->- Selecting the **More options** ellipsis (**...**) next to **Euro Cup Winners** in the **Fields** pane, and selecting **Edit Query**, or
->- Selecting **Edit Queries** > **Edit Queries** in the **External data** group of the **Home** ribbon tab in Report view. 
+>- Selecting the **More options** ellipsis (**...**) next to **Euro Cup Winners** in the **Fields** pane, and selecting **Edit query**, or
+>- Selecting **Transform data** in the **Queries** group of the **Home** ribbon tab in Report view. 
 
 ## Create a visualization
 

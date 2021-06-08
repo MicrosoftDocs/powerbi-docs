@@ -112,7 +112,7 @@ You can create a single **Gen2 monitoring app** to monitor all of your Power BI 
 
     :::image type="content" source="media/service-premium-gen2-metrics-app/premium-gen2-metrics-app-14.png" alt-text="Screenshot of saving a copy of the report":::
 
-5. Next, publish the workspace you created in **Step 1** as an app. In this example, we are publishing two Premium Gen2 capacity reports to our unified workspace and app. You’ll need to provide a description for the app. First, select **Create app** from the upper-left corner.
+5. Next, publish the workspace you created in **Step 1** as an app. In this example, we are publishing two Premium Gen2 capacity reports to our unified workspace and app. You’ll need to provide a description for the app. First, select **Create app** from the upper-right corner.
 
     :::image type="content" source="media/service-premium-gen2-metrics-app/premium-gen2-metrics-app-15.png" alt-text="Screenshot of creating a new app":::
 

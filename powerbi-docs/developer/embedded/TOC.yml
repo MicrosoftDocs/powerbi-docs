@@ -4,7 +4,9 @@
   items:
   - name: Overview
     expanded: true
-    items: 
+    items:
+    - name: "What is Power BI embedded analytics?"
+      href: /javascript/api/overview/powerbi/power-bi-embedded-analytics?toc=/power-bi/developer/embedded/TOC.json?bc=/power-bi/breadcrumb/toc.json
     - name: "What is embedding with Power BI"
       href: embedding.md
     - name: "What is Power BI Embedded in Azure"
@@ -32,8 +34,6 @@
       href: embedded-capacity.md
     - name: "Capacity planning"
       href: embedded-capacity-planning.md
-    - name: "Understanding the different embedding solutions"
-      href: /javascript/api/overview/powerbi/embedding-solutions?toc=/power-bi/developer/embedded/TOC.json?bc=/power-bi/breadcrumb/toc.json       
     - name: "Embedded analytics application tokens"
       href: embed-tokens.md      
     - name: "Considerations for generating an embed token"
@@ -64,6 +64,8 @@
       href: export-to.md
     - name: "Export paginated report to file"
       href: export-paginated-report.md  
+    - name: "Embed in Salesforce"
+      href: embed-power-bi-salesforce.md        
     - name: "Auto-install apps"
       href: embed-auto-install-app.md
     - name: "Create an Azure Active Directory tenant"
