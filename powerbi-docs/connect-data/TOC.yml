@@ -52,12 +52,6 @@
       href: desktop-directquery-about.md
     - name: "Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)"
       href: desktop-directquery-datasets-azure-analysis-services.md      
-    - name: Gateways
-      items:
-      - name: "Guidance for deploying a data gateway"
-        href: service-gateway-deployment-guidance.md
-      - name: "On-premises data gateway FAQ"
-        href: service-gateway-power-bi-faq.yml
   - name: How-to guides
     expanded: true
     items: 
@@ -293,10 +287,14 @@
         href: service-connect-to-zendesk.md
     - name: Gateways
       items:
+      - name: "Guidance for deploying a data gateway"
+        href: service-gateway-deployment-guidance.md
       - name: "On-premises data gateway - in-depth"
         href: service-gateway-onprem-indepth.md
       - name: "On-premises data gateway (personal mode)"
         href: service-gateway-personal-mode.md
+      - name: "On-premises data gateway FAQ"
+        href: service-gateway-power-bi-faq.yml              
       - name: "Manage gateway data sources"
         items:
         - name: "Add or remove a gateway data source"
