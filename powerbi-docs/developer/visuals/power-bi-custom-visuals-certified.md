@@ -170,13 +170,10 @@ Your Power BI visual will be available to download from AppSource when this proc
 >[Developing a Power BI circle card visual](develop-circle-card.md) tutorial.
 
 >[!div class="nextstepaction"]
+>[Guidelines for publishing Power BI visuals](guidelines-powerbi-visuals.md)
+
+>[!div class="nextstepaction"]
 >[Frequently asked questions about certified visuals](power-bi-custom-visuals-faq.yml#certified-power-bi-visuals).
-
->[!div class="nextstepaction"]
->[Microsoft's Power BI visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)
-
->[!div class="nextstepaction"]
-[Visuals in Power BI](power-bi-custom-visuals.md)
 
 >[!div class="nextstepaction"]
 >[Publish Power BI visuals to Microsoft AppSource](office-store.md)
