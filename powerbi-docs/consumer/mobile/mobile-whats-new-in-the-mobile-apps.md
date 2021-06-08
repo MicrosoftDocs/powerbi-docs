@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/13/2021
+ms.date: 06/01/2021
 ---
 # What's new in the mobile apps for Power BI
 For related "What's New" information, see:
@@ -17,6 +17,16 @@ For related "What's New" information, see:
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## June 2021
+### Updated look and new home page (preview) (Windows)
+We've introduced a new design and home page to simplify the way you find and open content. Turn on the **New look** toggle at the top of your screen and [check it out](mobile-windows-10-phone-app-get-started.md?tabs=new-look)!
+
+![Screenshot of new look for the Windows app home page](media/mobile-whats-new-in-the-mobile-apps/windows-10-new-look-home-page.png)
+
+### Support for passing URL parameters to paginated reports (Android)
+
+Support for passing parameters to paginated reports via the URL now comes to Android! Passing parameters via the report URL automatically sets the report parameters to those values. [Learn more](../../paginated-reports/report-builder-url-pass-parameters.md)
 
 ## May 2021
 ### Support for passing URL parameters to paginated reports (iOS)

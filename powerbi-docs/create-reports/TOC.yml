@@ -198,7 +198,7 @@
         href: desktop-rls.md
       - name: "Customize tooltips"
         href: desktop-custom-tooltips.md
-      - name: "Add text boxes and shapes to reports"
+      - name: "Add text boxes, shapes, and smart narratives"
         href: power-bi-reports-add-text-and-shapes.md
       - name: "Add a hyperlink to a text box"
         href: service-add-hyperlink-to-text-box.md
