@@ -12,23 +12,13 @@ LocalizationGroup: Transform and shape data
 ---
 # User defined aggregations
 
-Aggregations in Power BI can improve query performance over very large DirectQuery datasets. By using aggregations, you cache data at the aggregated level in memory. Aggregations in Power BI can be manually configured in the data model, as described in this article, or for Premium subscriptions, automatically by enabling the Automatic aggregations feature in dataset Settings. To learn more, see [Automatic aggregations](aggregations-auto.md).
-
-An aggregation table is in effect a GROUP-BY version of a fact, or *detail* table at the data source. Depending on the data source type, an agg table can be created at the data source, as a view, as a native query, and perhaps the most effective, as an import table created in Power Query.
-
-Dimensional data sources, like data warehouses and data marts, can use [relationship-based aggregations](#aggregation-based-on-relationships). Hadoop-based big-data sources often [base aggregations on GroupBy columns](#aggregation-based-on-groupby-columns). This article describes typical Power BI data modeling differences for each type of data source.
-
-> [!TIP]
-> Be sure to check out videos, blogs, and more provided by Power BI's community of BI experts.  
->- [Search for **"Power BI aggregations"** on Bing](https://www.bing.com/video/search?q=power+bi+aggregations).
+Aggregations in Power BI can improve query performance over very large DirectQuery datasets. By using aggregations, you cache data at the aggregated level in-memory. Aggregations in Power BI can be manually configured in the data model, as described in this article, or for Premium subscriptions, automatically by enabling the [Automatic aggregations](aggregations-auto.md) feature in dataset Settings.
 
 ## Creating aggregation tables
 
-Depending on the data source type. Aggregation tables can be created at the data source either as a table or view, as a native query., the agg table can be DirectQuery or import into memory. As a DirectQuery table in the data source, in this case, incremental data load to refreshes. The agg table is mapped to the detail table
+An aggregation table is in effect a GROUP-BY version of a fact, or *detail* table at the data source. Depending on the data source type, an agg table can be created at the data source as a table or view, as a native query, or for the greatest performance, as an import table created in Power Query. You then use the Manage aggregations dialog in Power BI Desktop to define aggregations for aggregation columns with summarization, detail table, and detail column properties.
 
-As an import table, the Power BI in-memory cache handles aggregated queries, which it does effectively. Limit queries sent to the data source in DirectQuery mode, helping stay within concurrency limits. Queries that do get through tend to be filtered, transactional-level queries, which data warehouses and big-data systems normally handle well.
-
-
+Dimensional data sources, like data warehouses and data marts, can use [relationship-based aggregations](#aggregation-based-on-relationships). Hadoop-based big-data sources often [base aggregations on GroupBy columns](#aggregation-based-on-groupby-columns). This article describes typical Power BI data modeling differences for each type of data source.
 
 ### Manage aggregations
 
