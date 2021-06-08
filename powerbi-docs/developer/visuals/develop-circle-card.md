@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 06/02/2021
+ms.date: 06/03/2021
 ---
 
 # Tutorial: Develop a Power BI circle card visual
