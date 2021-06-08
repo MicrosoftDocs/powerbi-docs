@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
-Small multiples, or trellising, splits a visual into multiple versions of itself. This article explains how to get the most out of interacting with them.
+Small multiples, or trellising, split a visual into multiple versions of itself. This article explains how to get the most out of interacting with them.
 
 :::image type="content" source="media/power-bi-visualization-small-multiples/small-mulitple-sales-category-region.png" alt-text="Screenshot of small multiples for category and region.":::
 

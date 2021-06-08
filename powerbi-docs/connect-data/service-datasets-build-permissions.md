@@ -110,7 +110,7 @@ In the image of the the Request access setting shown above, the Instructions tex
 ![Screenshot of specific instructions for requesting Build permission.](media/service-datasets-build-permissions/build-permission-specific-instructions-example.png)
 
 >[!NOTE]
-> When you to provide specific instructions, your email address is also visible to users requesting access as shown in the illustration above.
+> When you provide specific instructions, your email address is also visible to users requesting access as shown in the illustration above.
 
 ## More granular permissions
 

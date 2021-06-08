@@ -84,7 +84,7 @@ To consume a dataflow, run Power BI Desktop and select the **Power BI dataflows 
 
 ![dataflow connector](media/dataflows-configure-consume/dataflow-connector.png)
 
-Select which dataflow and which tables to which you want to connect. 
+Select the dataflow and tables to which you want to connect. 
 
 > [!NOTE]
 > You can connect to any dataflow or table regardless of which workspace it resides in, and whether or not it was defined in a Premium or non-Premium workspace.
@@ -95,7 +95,7 @@ If DirectQuery is available, you're prompted to choose whether you want to conne
 
 In DirectQuery mode, you can quickly interrogate large-scale datasets locally. However, you cannot perform any additional transformations. 
 
-Using Import bring the data into Power BI, and requires the dataset to be refreshed independently of the dataflow.
+Using Import brings the data into Power BI, and requires the dataset to be refreshed independently of the dataflow.
 
 ## Next steps
 The following articles provide more information about dataflows and Power BI:

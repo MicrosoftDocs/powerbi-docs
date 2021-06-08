@@ -60,7 +60,7 @@ $rg = 'myresourcegroup'
 $nsg = 'nsgresourcename'
 # Name the NSG rule
 $rule = 'allow_inbound_PowerBI'
-#set the priority \u2013 this must be higher priority (lower number) than the deny_all_inbound rule
+#set the priority - this must be higher priority (lower number) than the deny_all_inbound rule
 $priority = 400
 #specifiy the service tag to use
 $servicetag = 'PowerBI'
@@ -113,7 +113,7 @@ $direction ="Inbound"
 #set the priority of the rule. Priority must be higher (ie. lower number) than the deny_all_inbound (4096)
 $priority=400
 #set the service tags for the source to \u201cPowerBI\u201d
-$serviceTag = \u201dPowerBI\u201d
+$serviceTag = "PowerBI"
 
 # Get the NSG resource
 $nsg = Get-AzNetworkSecurityGroup -Name $nsgname -ResourceGroupName $RGname

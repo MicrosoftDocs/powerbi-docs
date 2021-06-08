@@ -9,7 +9,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: quickstart
-ms.date: 05/21/2021
+ms.date: 05/22/2021
 #customer intent: As a PBI consumer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently. 
 LocalizationGroup: Get started
 ---
@@ -90,7 +90,7 @@ A workspace is also one of the paths into your data. From a workspace you can op
 
 2. The actions you can take on a dashboard are displayed in the top menu bar. Select **More actions (...)** to see the complete list.   
 
-    ![Sceenshot of the top portion of the Power BI service.](./media/end-user-experience/power-bi-top-menu.png)
+    ![Screenshot of the top portion of the Power BI service.](./media/end-user-experience/power-bi-top-menu.png)
 
 3. Hover over a dashboard tile and select **More options (...)** to see the options you have for interacting with that tile.
 

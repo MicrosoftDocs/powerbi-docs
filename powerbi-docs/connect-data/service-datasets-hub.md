@@ -24,7 +24,7 @@ This article explains what you see on the datasets hub and describes how to use 
 
 **What datasets do I see in the datasets hub?**
 * For a dataset to show up in the datasets hub, it must be located in a [new workspace experience](../collaborate-share/service-new-workspaces.md).
-* The datasets you can see in the datasets hub are those that you have at least [build permissions](service-datasets-build-permissions.md) for.
+* The datasets you can see in the datasets hub are those that you have at least [build permissions](service-datasets-build-permissions.md) for. If [dataset discoverability](../collaborate-share/service-discovery.md) has been enabled for you, you also see datasets that you don't have access to, but they appear greyed out, and you can't create reports from them or see their details. You can request access to them, though. 
 * If you're a free user, you only see datasets in your *My workspace*, or datasets that you have [build permissions](service-datasets-build-permissions.md) for and that are located in Premium-capacity workspaces.
 
 ## Find the dataset you need
@@ -37,7 +37,14 @@ The image below shows the datasets hub in the Power BI service.
 
 ![Screenshot of datasets hub page](media/service-datasets-hub/datasets-hub-main-page.png)
 
-The datasets hub presents you with a selection of recommended datasets and a list of all the datasets in the organization that you have permissions to access.
+The datasets hub presents you with a selection of recommended datasets and a list of all the datasets in the organization that you have permissions to access. If [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you, you also see datasets you don't have access to.
+
+1. Click to view details page and to explore related reports.
+1. Click to view options.
+1. Click to view a summary of details.
+1. A greyed-out dataset indicates that you don't have permissions to access it (visible only if [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you).
+1. Click to request access.
+1. Click to see dataset description.
 
 The sections below describe these sections and the actions you can perform.
 
@@ -47,8 +54,10 @@ Recommended datasets are endorsed datasets (promoted or certified) that are pres
 
 ### Dataset list
 
-The dataset list shows you datasets in the organization that you have at least [build permissions](service-datasets-build-permissions.md) to. The list has three tabs to filter the list of datasets.
-* **All datasets**: Shows all the datasets in your organization that you have at least [build permissions](service-datasets-build-permissions.md) to.
+The dataset list shows you datasets in the organization that you have at least [build permissions](service-datasets-build-permissions.md) to. If [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you, you also see datasets you don't have access to. They appear greyed out.
+
+The list has three tabs to filter the list of datasets.
+* **All datasets**: Shows all the datasets in your organization that you have permission to find. 
 * **Recent**: Shows datasets whose related reports you’ve recently accessed. When you access a report, there may be a delay of several minutes until the related dataset shows up in the Recent column.
 * **My datasets**: Shows the datasets you own. 
 
@@ -109,7 +118,12 @@ In the Analyze in Excel section, select **Analyze** to pull the dataset into Exc
 There are a number of ways you can enhance the discoverability of your datasets:
 * **Endorse your dataset**: You can promote or certify your dataset to make it easier for users to find and to let them know that it is a trustworthy source of data. Endorsed datasets are labeled with badges and are readily identifiable in Power BI. In the datasets hub, only endorsed datasets show up in the recommended datasets section, and the datasets list by default lists endorsed datasets first.
 
-    [Learn how to endorse your datasets](../collaborate-share/service-endorse-content.md). 
+    [Learn how to endorse your datasets](../collaborate-share/service-endorse-content.md).
+
+* **Make your dataset discoverable**: If dataset discoverability is enabled for you, you can mark your dataset as discoverable. When a dataset is marked as discoverable, users who don't have access to it will still be able to find it in the datasets hub.
+
+    [Learn more about dataset discoverability](../collaborate-share/service-discovery.md)
+
 * **Provide a meaningful description of the dataset**: You can help users discover the right dataset for them by providing useful, meaningful descriptions of your datasets. [You provide the description as part of the process of endorsing the dataset](../collaborate-share/service-endorse-content.md#promote-content). 
 * **Give your dataset a memorable image**: You can make it easier for users to find and remember your dataset by giving it memorable image. This makes your dataset stand out on the datasets hub page and anywhere else that supports displaying dataset images. To give your dataset an image, open your dataset's settings, and expand the dataset image section.
 * **Create a report template built on the dataset**: You can create a report template that users can use to get started building their own reports based on your dataset. This template is simply a regular report that you design keeping in mind that it to be used as a template. When you save it, you must add the suffix "(template)" to the report name, e.g. *Monthly Sales (template)*.

@@ -6,8 +6,9 @@ ms.author: mihart
 services: powerbi
 ms.topic:  conceptual
 ms.service: powerbi
+ms.custom: pbibetadocbug
 ms.subservice: pbi-fundamentals
-ms.date: 05/15/2021
+ms.date: 05/27/2021
 ---
 # What to do if sign up is disabled
 
