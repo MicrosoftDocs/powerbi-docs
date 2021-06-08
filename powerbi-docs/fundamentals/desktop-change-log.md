@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 05/04/2021
+ms.date: 05/27/2021
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,13 @@ ms.date: 05/04/2021
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## May 2021 QFE 1
+
+*Version: 2.93.981.0, Released: May 27th, 2021*
+
+Bug fixes/improvements:
+- Registry settings improvement: now registry settings are applied according to the [Desktop evaluation configuration](../create-reports/desktop-evaluation-configuration.md) article and impact evaluations are done in the Analysis Services process (msmdsrv.exe) as well as the Power BI Desktop process (PBIDesktop.exe).
 
 ## April 2021 QFE 2
 
