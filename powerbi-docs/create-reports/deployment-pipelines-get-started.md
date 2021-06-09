@@ -178,7 +178,7 @@ To create a deployment rule, follow the steps in this section. After you create 
         * Select *Other* and manually add the new data source. You can only change to a data source from the same type.
 
         >[!NOTE]
-        >* *Data source rules* will be grayed out if you are not the owner, or if your report does not contain any data sources.
+        >* *Data source rules* will be grayed out if you're not the owner of the Power BI item you're creating a rule for, or if your Power BI item doesn't contain any data sources.
         >* For *dataflows*, *datasets* and *paginated reports*, the data source list is taken from the source pipeline stage.
 
     * **Parameter rules** - Select a parameter from the list of parameters; the current value is shown. Edit the value to the value you want to take effect after each deployment.
