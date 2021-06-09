@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 05/11/2021
+ms.date: 06/09/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
 ---
@@ -274,8 +274,6 @@ To learn more about monitoring capacities, see [Monitoring in the Power BI Admin
 **Premium Gen2** and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) capacities don't use the Metrics app, they use the Capacity Utilization App, which will be made available during the preview. 
 
 You can download and install the metrics app for Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) (Preview) using the [following link](https://aka.ms/GenutilizationInstall).
-
-Customers wanting to review their utilization can receive a copy of their utilization report for the past 7 days by requesting one from customer support. The report will be supplied within 72 hours of the request. The Capacity Utilization App will be launched from your capacity management page in the **Admin portal** for each capacity, and will allow anlayis of 30 days of data and more.
 
 ### Optimizing capacities
 
