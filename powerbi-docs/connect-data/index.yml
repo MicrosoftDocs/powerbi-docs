@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Connect to data in Power BI - documentation
-summary: Power BI documentation provides expert information connecting to data, from Excel files to databases, and using gateways, template apps, and data refresh.
+summary: Power BI documentation provides expert information connecting to data with tools such as gateways, template apps, and data refresh.
 
 metadata:
   title: Connect to data in Power BI - documentation
-  description: Power BI documentation provides expert information connecting to data, from Excel files to databases, and using gateways, template apps, and data refresh..
+  description: Power BI documentation provides expert information connecting to data with tools such as gateways, template apps, and data refresh.
   services: powerbi
   ms.service: powerbi
   ms.subservice: powerbi
