@@ -104,11 +104,11 @@ Prior to publishing the model to the service, in Power Query Editor, we add anot
 
 After clicking Close & Apply in Power Query Editor, defining the incremental refresh policy, and saving the model, we publish to the service. From the service, we then run the initial refresh operation on the dataset. Partitions for the FactInternetSales table are created according to the policy, but no data is loaded and processed because all data is filtered out. 
 
-After the initial refresh operation is complete, back in Power Query Editor, the additional filter on the ProductKey column is removed. After clicking Close & Apply in Power Query Editor and saving the model, the model **is not published again**. If we were to publish again, it would overwrite the incremental refresh policy settings and force a full refresh on the dataset when a subsequent refresh operation is performed from the service. Instead, we perform a [metadata only deployment](#metadata-only-deployment) by using ALM Toolkit that removes the filter on the ProductKey column from the *dataset*. We then use SSMS to selectively process partitions. When all partitions have been fully processed (which must include a process recalculation on all partitions) from SSMS, subsequent refresh operations on the dataset from the service refresh only the incremental refresh partition(s).
+After the initial refresh operation is complete, back in Power Query Editor, the additional filter on the ProductKey column is removed. After clicking Close & Apply in Power Query Editor and saving the model, the model **is not published again**. If we publish again, it would overwrite the incremental refresh policy settings and force a full refresh on the dataset when a subsequent refresh operation is performed from the service. Instead, we perform a [metadata only deployment](#metadata-only-deployment) by using ALM Toolkit that removes the filter on the ProductKey column from the *dataset*. We then use SSMS to selectively process partitions. When all partitions have been fully processed (which must include a process recalculation on all partitions) from SSMS, subsequent refresh operations on the dataset from the service refresh only the incremental refresh partition(s).
 
 ### Apply Refresh Policy only
  
-The [Tabular Editor 2](https://github.com/otykier/TabularEditor/releases/) open source tool provides an easy way to implement incremental refresh on datasets in the service. For datasets with an incremental refresh policy defined but not yet had an initial refresh operation performed, you can use **Apply Refresh Policy** to create partitions without loading any data into them. After the partitions are created, you then use SSMS to refresh the partitions sequentially or in batches. To learn more, see [Incremental refresh in Tabular Editor docs](https://docs.tabulareditor.com/incremental-refresh.html). 
+The [Tabular Editor 2](https://github.com/otykier/TabularEditor/releases/) open-source tool provides an easy way to implement incremental refresh on datasets in the service. For datasets with an incremental refresh policy defined but not yet had an initial refresh operation performed, you can use **Apply Refresh Policy** to create partitions without loading any data into them. After the partitions are created, you then use SSMS to refresh the partitions sequentially or in batches. To learn more, see [Incremental refresh in Tabular Editor docs](https://docs.tabulareditor.com/incremental-refresh.html).
 
 > [!TIP]
 > Be sure to check out videos, blogs, and more provided by Power BI's community of BI experts.  
@@ -118,7 +118,7 @@ To learn more about processing tables and partitions from SSMS, see [Process dat
 
 ## Custom queries for detect data changes
 
-TMSL and/or TOM can be used to override the detected data changes behavior. Not only can this be used to avoid persisting the last-update column in the in-memory cache, it can enable scenarios where a configuration/instruction table is prepared by ETL processes for flagging only the partitions that need to be refreshed. This can create a more efficient incremental refresh process where only the required periods are refreshed, no matter how long ago data updates took place.
+TMSL and/or TOM can be used to override the detected data changes behavior. Not only can this method be used to avoid persisting the last-update column in the in-memory cache, it can enable scenarios where a configuration/instruction table is prepared by ETL processes for flagging only the partitions that need to be refreshed. This method can create a more efficient incremental refresh process where only the required periods are refreshed, no matter how long ago data updates took place.
 
 The pollingExpression is intended to be a lightweight M expression or name of another M query. It must return a scalar value and will be executed for each partition. If the value returned is different to what it was the last time an incremental refresh occurred, the partition is flagged for full processing.
 
@@ -161,6 +161,6 @@ Download and install the latest version of the ALM Toolkit from the [Analysis Se
 ## See also
 
 [Partitions in tabular models](/analysis-services/tabular-models/partitions-ssas-tabular?view=power-bi-premium-current&preserve-view=true)  
+[External tools for Power BI](../transform-model/desktop-external-tools.md)  
 [Configure scheduled refresh](../connect-data/refresh-scheduled-refresh.md)  
-[Incremental refresh](incremental-refresh-overview.md)  
 [Troubleshoot incremental refresh](incremental-refresh-troubleshoot.md)
