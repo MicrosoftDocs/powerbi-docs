@@ -223,3 +223,8 @@ An example of sending the selectionId to tooltip display calls is shown in the f
         (tooltipEvent: TooltipEventArgs<number>) => BarChart.getTooltipData(tooltipEvent.data),
         (tooltipEvent: TooltipEventArgs<number>) => tooltipEvent.data.selectionID);
 ```
+
+## Next steps
+
+>[!div class="nextstepaction"]
+>[Tooltip utils](utils-tooltip.md)
