@@ -51,20 +51,21 @@ In this tutorial, you learn how to:
 
 2. To create a visual, open PowerShell or Terminal, and run the following command:
 
-       ```cmd
-       pbiviz new rVisualSample -t rvisual
-       ```
-    
-       This command creates a new folder structure based on the `rvisual` template. This template includes a basic, ready-to-run R-powered visual called `script.r` that runs the following R script:
-    
-       ```r
-       plot(Values)
-       ```
-    
-       The `Values` data frame will contain columns in `Values` data role.
+      ```cmd
+      pbiviz new rVisualSample -t rvisual
+      ```
+
+      This command creates a new folder structure based on the `rvisual` template. This template includes a basic, ready-to-run R-powered visual called `script.r` that runs the following R script:
+
+      ```r
+      plot(Values)
+      ```
+
+    The `Values` data frame will contain columns in `Values` data role.
 
 3. Assign data to the developer visual by adding **MonthNo** and **Total units** to **Values** for the visual.
-  >[!NOTE] 
+
+  >[!NOTE]
   >Make sure the aggregation type of the values is set to *Don't summarize*
 
    ![R visual with data](./media/create-r-based-power-bi-desktop/r-data-values.png)
