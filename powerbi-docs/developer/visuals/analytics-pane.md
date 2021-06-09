@@ -27,6 +27,7 @@ Managing properties in the [**Analytics** pane](../../transform-model/desktop-an
 For the **Analytics** pane, the object is defined as follows:
 
 * Under the object's definition, add the `displayName` and an `objectCategory` field with a value of `2`.
+
     >[!NOTE]
     >The `objectCategory` field defines the aspect of the visual that the object controls (1=Formatting, 2=Analytics). Use `Formatting` for elements such as look and feel, colors, axes, and labels. Use `Analytics` for elements such as forecasts, trendlines, reference lines, and shapes.
     >
