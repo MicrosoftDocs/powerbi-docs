@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 06/04/2021
 LocalizationGroup: Transform and shape data
 ---
-# Automatic aggregations
+# Automatic aggregations (preview)
 
 Automatic aggregations for DirectQuery datasets uses state-of-the-art machine learning (ML) to self train and continuously optimize an in-memory cache with pre-aggregated query results, providing faster report visualization response times for even the largest datasets.
 
@@ -57,9 +57,19 @@ To enable and configure automatic aggregations, you must have **Owner** permissi
 
 ## Under the hood
 
-### Query evaluation
+### Query analysis
 
-When automatic aggregations is enabled for a dataset, all DAX queries passed from client to the query engine are analyzed. Query patterns over tables, columns, and relationships define telemetry about those queries which is then stored securely in Azure Data Explorer. 
+When automatic aggregations is enabled for a dataset, all DAX queries passed from clients to the query engine are analyzed. Query patterns over tables, columns, and relationships define telemetry about those queries which is then stored securely in Azure Data Explorer. 
+
+When configuring automatic aggregations, you specify one or more refresh operations by frequency: Day, Week, or Month. The first scheduled refresh operation for the frequency you choose first instantiates a *training* operation, and then a refresh operation. Subsequent refreshes are refresh only operations. For example, if we choose a Day frequency and schedule refreshes at 4:00AM, 9:00AM, 2:00PM, and 7:00PM, the 4:00AM refresh each day will include both a training operation and a refresh operation. The 9:00AM, 2:00PM, and 7:00PM scheduled refreshes will be refresh operations only. The training operation has a time limit of 60 minutes.
+
+The training operation analyzes uses Kusto to analyze the query telemetry to determine the tables and columns used to calculate results for those queries. Cardinality estimation queries are then sent to the data source to determine the row count for the tables. In-memory tables are created, dropped, or retained. Query patterns in the workload are ranked based on frequency. To determine the optimal set of aggregations, the automatic aggregations algorithm sends cardinality estimation queries to the data sources to determine the row count for the associated tables.
+
+During the training operation, the service creates a framework by analyzing the query workload.
+sending cardinality estimation queries to the data source. These queries analyze the tables, columns, rows, and relationships at the data source to create one or more aggregation tables in-memory. Aggregations are created during the training process but are not populated with data. The refresh operation then populates the aggregations with data.
+
+Tables created contain rows of aggregated data at a higher level of granularity than the data source tables they're derived from. For example, a backend data source with a traditional star schema data warehouse has a Sales fact or *detail* table with tens of millions of rows of sales transaction data. The Sales table has relationships with Date, Product Subcategory, and Customer tables, and those tables have relationships with other tables such as Product, Product Category, and Geography. During training, aggregations tables are automatically created and contain only those rows summarized by an aggregation such as GroupBy, Sum, Count. Queries can transit many-to-one and one-to-many relationships to define the aggregations to be included in the aggregations table. Automatic aggregations, however, cannot transit many-to-many relationships. For those queries that cannot be aggregated from the in-memory aggregations tables are passed to the data source using DirectQuery.
+
 
 ### Building a framework
 
@@ -78,29 +88,14 @@ Percentage of cached queries defines the amount in of total queries for which ag
 For example, if the percentage of cached queries is set to 85%, and query analysis determines 100 report queries are passed to the query engine, then 85 of those queries, based on rank are pre-aggregated and included in the in-memory aggregations cache. Rank is determine by a number of factors including how many times over the training frequency period the query is being passed to the query engine, cardinality, and so on. Queries excluded from the in-memory aggregations cache tend to be ad-hoc queries, or queries that cannot be pre-aggregated such as those that transit many-to-many relationships. 
 
 
-
 ### Training
-
-When configuring automatic aggregations, you specify one or more refresh operations by frequency: Day, Week, or Month. The first scheduled refresh operation for the frequency you choose first instantiates a *training* operation, and then a refresh operation. Subsequent refreshes are refresh only operations. For example, if we choose a Day frequency and schedule refreshes at 4:00AM, 9:00AM, 2:00PM, and 7:00PM, the 4:00AM refresh each day will include both a training operation and a refresh operation. The 9:00AM, 2:00PM, and 7:00PM scheduled refreshes will be refresh operations only. The training operation has a time limit of 60 minutes.
-
-When automatic aggregations is enabled for a dataset, DAX queries for the workload are evaluated. Telemetry for those queries is then stored in Kusto. The training operation analyzes the Kusto telemetry to determine the tables and columns used to calculate results for those queries. Cardinality estimation queries are then sent to the data source to determine the row count for the tables. In-memory tables are created, dropped, or retained. Query patterns in the workload are ranked based on frequency. 
-
-queries to the data source are evaluated. Query metrics are stored in Kusto. Query patterns for the workload are evaluated by the ML predictive analytics model. In-memory tables and columns are created. Cardinality estimations refer to process of determining the number of rows in the associated/pertinent tables. To determine the optimal set of aggregations, the automatic aggregations algorithm sends cardinality estimation queries to the data sources to determine the row count for the associated tables.
-
-During the training operation, the service creates a framework by analyzing the query workload.
-sending cardinality estimation queries to the data source. These queries analyze the tables, columns, rows, and relationships at the data source to create one or more aggregation tables in-memory. Aggregations are created during the training process but are not populated with data. The refresh operation then populates the aggregations with data.
-
-Tables created contain rows of aggregated data at a higher level of granularity than the data source tables they're derived from. For example, a backend data source with a traditional star schema data warehouse has a Sales fact or *detail* table with tens of millions of rows of sales transaction data. The Sales table has relationships with Date, Product Subcategory, and Customer tables, and those tables have relationships with other tables such as Product, Product Category, and Geography. During training, aggregations tables are automatically created and contain only those rows summarized by an aggregation such as GroupBy, Sum, Count. Queries can transit many-to-one and one-to-many relationships to define the aggregations to be included in the aggregations table. Automatic aggregations, however, cannot transit many-to-many relationships. For those queries that cannot be aggregated from the in-memory aggregations tables are passed to the data source using DirectQuery.
-
 
 
 ### Refresh
 
-Because aggregations are stored in memory, it's necessary to refresh the dataset to keep the aggregations in sync with the data source. When you first enable automatic aggregations, you must configure at least one refresh operation either daily, weekly, or monthly. 
+Because aggregations are stored in memory, it's necessary to refresh the dataset to keep the aggregations in sync with the data source. When you first enable automatic aggregations, you must configure at least one refresh operation either daily, weekly, or monthly. When scheduling refresh in dataset settings, you can configure up to 48 refreshes each day, week, or month. Dataset refreshes through the XMLA endpoint are unlimited.
 
 :::image type="content" source="media/aggregations-automatic/auto-aggs-refresh.png" alt-text="Configure refresh for automatic aggregations":::
-
-When scheduling refresh in dataset settings, you can specify configure up to 48 refreshes each day, week, or month. Dataset refreshes through the XMLA endpoint are unlimited.
 
 The first refresh for the frequency you choose (Day, Week, Month) includes the training process. All subsequent refreshes that day, week, or month update the aggregations only. For that first refresh, the training process allows up to 60 minutes for query evaluations to complete, in-memory tables to be created or dropped, columns and rows to be added. Aggregations data, however, is not loaded into the tables during training - it's loaded during the subsequent refresh operation.
 
