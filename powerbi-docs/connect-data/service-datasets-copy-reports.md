@@ -39,13 +39,13 @@ When you find a report you like in a workspace or an app, you can make a copy of
   
 4. Select **Save**.
 
-    Power BI automatically creates a copy of the report, and an entry in the list of datasets if the report is based on a dataset outside of the workspace. The icon for this dataset is different from the icon for datasets in the workspace: ![Shared dataset icon](media/service-datasets-discover-across-workspaces/power-bi-shared-dataset-icon.png)
-    
-    That way, members of the workspace can tell which reports and dashboards use datasets that are outside the workspace.
+    Power BI automatically creates a copy of the report, and an entry in the list of datasets if the report is based on a dataset outside of the workspace.
 
-    The entry shows information about the dataset, and a few select actions.
+    To see the shared dataset, select **More options** > **View lineage**. This item shows the lineage:
 
-    ![Dataset actions](media/service-datasets-across-workspaces/power-bi-dataset-actions.png)
+    ![Dataset actions](media/service-datasets-copy-reports/power-bi-dataset-actions.png)
+
+    The icon for this dataset is different from the icon for datasets in the workspace. That way, members of the workspace can tell which reports and dashboards use datasets that are outside the workspace.
 
     See [Your copy of the report](#your-copy-of-the-report) in this article for more about the report and related dataset.
 
