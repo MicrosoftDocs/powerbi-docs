@@ -147,7 +147,7 @@ You can configure rules fo data source rules and parameter rules. The following 
 |**Paginated report** |![Applies to.](../media/yes.png) |![Does not apply to.](../media/no.png) |Defined for the data sources of each paginated report. You can use these rules to determine the data sources of the paginated report. |
 
 >[!NOTE]
-> Deployment rules work only when data sources in the source and target stages, are of the same type.
+> Data source rules only work when you change data sources from the same type.
 
 ### Create a deployment rule
 
@@ -178,8 +178,8 @@ To create a deployment rule, follow the steps in this section. After you create 
         * Select *Other* and manually add the new data source. You can only change to a data source from the same type.
 
         >[!NOTE]
-        >* *Data source rules* will be grayed out if you are not the report owner, or if your report does not contain any data sources.
-        >* For *dataflows*, *datasets* and *paginated reports*, the data source list is taken from the dataset of the source pipeline stage.
+        >* *Data source rules* will be grayed out if you are not the owner, or if your report does not contain any data sources.
+        >* For *dataflows*, *datasets* and *paginated reports*, the data source list is taken from the source pipeline stage.
 
     * **Parameter rules** - Select a parameter from the list of parameters; the current value is shown. Edit the value to the value you want to take effect after each deployment.
 
@@ -193,9 +193,17 @@ This section lists the limitations for the deployment rules.
 
 * When an item is removed or deleted, its rules are deleted too. These rules cannot be restored.
 
-* If the data source defined in a rule is changed or removed from the source dataset, the rule will not be valid and the deployment will fail.
+* Rules for dataflows that have sources that are not dataflows, are not supported.
 
-* If the parameter defined in a rule is changed or removed from the source dataset, the rule will not be valid and the deployment will fail.
+* Rules for dataflows that use a common data module (CDM) folder, are not supported.
+
+* Rules for datasets that use dataflows as their source, are not supported.
+
+* After changing a dataflow's data source using a rule, the dataflow's lineage view displays a connection between the dataflow's source data source, and the data source configured in the rule.
+
+* If the data source defined in a rule is changed or removed from the item it points to in the source stage, the rule will not be valid and the deployment will fail.
+
+* If the parameter defined in a rule is changed or removed from the item it points to in the source stage, the rule will not be valid and the deployment will fail.
 
 >[!NOTE]
 >Parameter rules are not supported for paginated reports.
@@ -269,7 +277,7 @@ When two sequential stages aren't the same, a **compare** link appears underneat
 
 When you deploy after making changes to content in the source stage, the content you changed in the target stage is overwritten. After clicking *deploy*, you'll get a warning listing the number of items that will be overwritten.
 
-![A screenshot of the replaced content warning which is displayed when a deployment is about to cause changes to items in the stage you're deploying to.](media/deployment-pipelines-get-started/replaced-content.png)
+:::image type="content" source="media/deployment-pipelines-get-started/replaced-content.png" alt-text="A screenshot of the replaced content warning which is displayed when a deployment is about to cause changes to items in the stage you're deploying to.":::
 
 You can learn more about [which items are copied to the next stage](deployment-pipelines-process.md#deployed-items), and [which items are not copied](deployment-pipelines-process.md#unsupported-items), in [Understand the deployment process](deployment-pipelines-process.md).
 

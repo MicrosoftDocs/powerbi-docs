@@ -219,6 +219,26 @@ However, paginated reports that use a Power BI dataset use an internal dataset. 
 
 * **Server** - The server that hosts your database. Keep the existing server as is.
 
+## Dataflows
+
+### Does dataflows support incremental refresh?
+
+When you have a dataflow that's configured with [incremental refresh](../connect-data/incremental-refresh-overview.md), the refresh policy is not copied or overwritten during deployment. After deploying a dataflow with incremental refresh to a stage that doesn't include this dataflow, if you have a refresh policy you'll need to reconfigure it in the target stage. If you're deploying a dataflow with incremental refresh to a stage were it already resides, the incremental refresh policy isn't copied. In such cases, if you wish to update the refresh policy in the target stage, you'll need to do it manually.
+
+### Why is my visual broken after deploying a dataflow?
+
+When you deploy a dataflow, only the metadata is copied. The dataflow's data isn't copied. A visual in a report points to the data in the same pipeline stage. When you deploy a report that relies on data that originates from a dataflow, even if the dataflow is deployed, the visual cannot access the data it relies on. To solve this problem, refresh the dataflow in the target stage.
+
+### Dataflow limitations
+
+This section lists dataflow limitations in deployment pipelines. You may also want to refer to the general limitations for dataflows, which are documented in [dataflows limitations and considerations](../transform-model/dataflows/dataflows-features-limitations.md). For deployment pipeline rule limitations that effect dataflows, see [Deployment rules limitations](deployment-pipelines-get-started.md#deployment-rules-limitations).
+
+* When deploying a dataflow, linked entities that reside on the same workspace are not deployed.
+
+* When deploying a dataflow to an empty stage, deployment pipelines creates a new workspace and sets the dataflow storage to a Power BI blob storage. Blob storage is used even if the source workspace is configured to use Azure data lake storage Gen2 (ADLS Gen2).
+
+* Service principal isn't supported.
+
 ## Permissions
 
 ### What is the deployment pipelines permissions model?
