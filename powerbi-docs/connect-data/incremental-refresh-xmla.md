@@ -98,7 +98,7 @@ There are a couple ways to prevent data from being loaded with the initial refre
 
 Bootstrapping the initial refresh operation allows the service to create partition objects for the dataset, but not load and process historical data into any of the partitions. When published, an initial refresh operation is performed on the dataset that creates table and partition objects for all tables, but data is only loaded for those tables that haven't been bootstrapped. The bootstrap is then removed. SSMS is then used to selectively process partitions. Depending on the amount of data that will be loaded for each partition, you may want to process each partition sequentially or in small batches to reduce the potential for one or more of those partitions to cause a timeout. Let's look at an example where an incremental refresh policy is defined for the FactInternetSales table.
 
-Prior to publishing the model to the service, in Power Query Editor, we add another filter to the ProductKey column that filters out any value other than 0. This effectively filters out *all* data from the FactInternetSales table.
+Prior to publishing the model to the service, in Power Query Editor, we add another filter to the ProductKey column that filters out any value other than 0, effectively filtering out *all* data from the FactInternetSales table.
 
 ![Filter out product key](media/incremental-refresh-xmla/filter-product-key.png)
 
@@ -107,8 +107,8 @@ After clicking Close & Apply in Power Query Editor, defining the incremental ref
 After the initial refresh operation is complete, back in Power Query Editor, the additional filter on the ProductKey column is removed. After clicking Close & Apply in Power Query Editor and saving the model, the model **is not published again**. If we publish again, it would overwrite the incremental refresh policy settings and force a full refresh on the dataset when a subsequent refresh operation is performed from the service. Instead, we perform a [metadata only deployment](#metadata-only-deployment) by using ALM Toolkit that removes the filter on the ProductKey column from the *dataset*. We then use SSMS to selectively process partitions. When all partitions have been fully processed (which must include a process recalculation on all partitions) from SSMS, subsequent refresh operations on the dataset from the service refresh only the incremental refresh partition(s).
 
 ### Apply Refresh Policy only
- 
-The [Tabular Editor 2](https://github.com/otykier/TabularEditor/releases/) open-source tool provides an easy way to implement incremental refresh on datasets in the service. For datasets with an incremental refresh policy defined but not yet had an initial refresh operation performed, you can use **Apply Refresh Policy** to create partitions without loading any data into them. After the partitions are created, you then use SSMS to refresh the partitions sequentially or in batches. To learn more, see [Incremental refresh in Tabular Editor docs](https://docs.tabulareditor.com/incremental-refresh.html).
+
+The [Tabular Editor 2](https://github.com/otykier/TabularEditor/releases/) open-source tool provides an easy way to implement incremental refresh on datasets in the service. For datasets with an incremental refresh policy defined but have not yet had an initial refresh operation performed, you can use **Apply Refresh Policy** to apply the policy only. With the policy applied, partitions are created, but data is not loaded into them. You then use SSMS to refresh the partitions sequentially or in batches to load and process the data. To learn more, see [Incremental refresh in Tabular Editor docs](https://docs.tabulareditor.com/incremental-refresh.html).
 
 > [!TIP]
 > Be sure to check out videos, blogs, and more provided by Power BI's community of BI experts.  
