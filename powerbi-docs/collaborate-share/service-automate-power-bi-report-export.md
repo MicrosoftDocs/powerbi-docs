@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/21/2021
+ms.date: 06/08/2021
 LocalizationGroup: Get started
 ---
 # Export and email a Power BI report with Power Automate
@@ -71,6 +71,19 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
 18. When you're done, select **Next step** or **Save**. Power Automate creates and evaluates the flow, and lets you know if it finds errors.
 1. If there are errors, select **Edit flow** to fix them. Otherwise, select the **Back** arrow to view the flow details and run the new flow.
     When you run the flow, Power Automate exports a Power BI report in the specified format and sends it as an email attachment as scheduled.  
+
+## Row-level security in Power Automate 
+Optionally, if you want to send the report based on row-level security (RLS), you need to add the following details:
+
+:::image type="content" source="media/service-automate-power-bi-report-export/automate-report-send-email-17.png" alt-text="Screenshot of updating Identities Username fields.":::
+
+1. **Identities Username - 1** = The effective username reflected by a token for applying RLS rules. For an on-premises model, username can be composed of alpha-numerical characters, or any of the following characters: `'.', '-', '_', '!', '#', '^', '~', '\', and '@'`. For cloud models, username can be composed of all ASCII characters. Also, username can be up to 256 characters, and can't contain spaces.
+2. **Identities Dataset - 1** = It is dataset ID not dataset Name. You can get this value by going to the settings of the dataset, or from the address bar, as shown in this example and in the following image:
+    Example: `https://app.powerbi.com/groups/me/settings/datasets/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
+
+    :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-send-email-17.png" alt-text="Screenshot of example dataset ID.":::
+
+3. **Identities Roles Item - 1** = RLS name defined in the report
 
 ## Next steps
 
