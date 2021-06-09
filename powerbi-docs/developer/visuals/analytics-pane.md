@@ -18,7 +18,7 @@ The [**Analytics** pane](../../transform-model/desktop-analytics-pane.md) allows
 ![The Analytics pane](media/analytics-pane/visualization-pane-analytics-tab.png)
 
 > [!NOTE]
-> The **Analytics** pane is available from API version 2.5.0. To find out which version you’re using, Run the `pbiviz -V` command.
+> The **Analytics** pane is available from API version 2.5.0. To find out which version you’re using, run the `pbiviz -V` command.
 
 ## Manage the Analytics pane
 
