@@ -20,8 +20,6 @@
       href: create-r-based-power-bi-desktop.md
     - name: "Build a bar chart"
       href: create-bar-chart.md
-    - name: "Tutorial: Adding formatting options"
-      href: custom-visual-develop-tutorial-format-options.md
     - name: "Add unit tests for visual project"
       href: unit-tests-introduction.md
     - name: "Build a funnel plot from R script to R visual"

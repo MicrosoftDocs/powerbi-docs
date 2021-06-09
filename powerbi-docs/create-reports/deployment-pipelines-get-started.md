@@ -121,7 +121,7 @@ Since dashboards, reports and datasets are related and have dependencies, you ca
 [![A screenshot showing the selective deploy option in deployment pipelines, available after selecting the show more option.](media/deployment-pipelines-get-started/selective-deploy.png)](media/deployment-pipelines-get-started/selective-deploy.png#lightbox)
 
 >[!NOTE]
-> * You can't deploy a report or dashboard to next stage if the items it's dependent on do not exist in the stage you are deploying to.
+> * You can't deploy a report or a dashboard to the next stage, if the items it's dependent on do not exist in the stage you are deploying to.
 > * You might get unexpected results if you choose to deploy a report or dashboard without its dataset. This can happen when the dataset in the target stage, has changed and is no longer identical to the one in the stage you're deploying from.
 
 ### Backwards deployment
