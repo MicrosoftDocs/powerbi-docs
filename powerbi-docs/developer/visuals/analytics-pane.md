@@ -31,7 +31,7 @@ For the **Analytics** pane, the object is defined as follows:
     >[!NOTE]
     >The `objectCategory` field defines the aspect of the visual that the object controls (1=Formatting, 2=Analytics). Use `Formatting` for elements such as look and feel, colors, axes, and labels. Use `Analytics` for elements such as forecasts, trendlines, reference lines, and shapes.
     >
-    > If the `objectCategory` value isn't specified, it defaults to "Formatting."
+    > If the `objectCategory` value isn't specified, it defaults to `Formatting`.
 
 * Add the following two properties to the object:
   * `show` of type `bool`, with a default value of `true`.
