@@ -37,11 +37,11 @@ As whole periods close, partitions are merged. For example, if a one day refresh
 
 A dataset always retains partitions for the entire historical store period plus whole period partitions up through the current refresh period. Using our example above, a full three years of historical data is retained in partitions for 2018, 2019, 2020, and also partitions for the 2021Q101 month period, the 2021Q10201 day period, and the current day refresh period partition. Because we chose to retain historical data for three *years*, the 2018 partition is retained until the first refresh on January 1, 2022.
 
-With Power BI incremental refresh, the service handles the partition management for you based on the policy. If you've ever worked in Analysis Services, you know effective partitioning involves creating a programmatic solution often with thousands of lines of code. While the service can handle all of this for you, by using tools through the XMLA endpoint you can selectively refresh partitions individually, sequentially, or in parallel.
+With Power BI incremental refresh, the service handles the partition management for you based on the policy. If you've ever worked in Analysis Services, you know effective partitioning involves creating a programmatic solution often with thousands of lines of code. While the service can handle all of partition management for you, by using tools through the XMLA endpoint you can selectively refresh partitions individually, sequentially, or in parallel.
 
 ## Refresh management with SQL Server Management Studio (SSMS)
 
-SSMS can be used to view and manage partitions created by the application of incremental refresh policies. This allows, for example, to refresh a specific historical partition not in the incremental refresh period to perform a back-dated update without having to refresh all historical data. SSMS can also be used when bootstrapping to load historical data for large datasets by incrementally adding/refreshing historical partitions in batches.
+SSMS can be used to view and manage partitions created by the application of incremental refresh policies. By using SSMS you can, for example, refresh a specific historical partition not in the incremental refresh period to perform a back-dated update without having to refresh all historical data. SSMS can also be used when bootstrapping to load historical data for large datasets by incrementally adding/refreshing historical partitions in batches.
 
 ![Partitions in SSMS](media/incremental-refresh-xmla/ssms-partitions.png)
 
@@ -55,7 +55,7 @@ These parameters can be used with the TMSL refresh command to override the defau
 
 - **applyRefreshPolicy** – If a table has an incremental refresh policy defined, applyRefreshPolicy will determine if the policy is applied or not. If the policy is not applied, a process full operation will leave partition definitions unchanged and all partitions in the table will be fully refreshed. Default value is true.
 
-- **effectiveDate** – If an incremental refresh policy is being applied, it needs to know the current date to determine rolling window ranges for the incremental refresh and historical periods. The effectiveDate parameter allows you to override the current date. This is useful for testing, demos, and business scenarios where data is incrementally refreshed up to a date in the past or the future (for example, budgets in the future). The default value is the current date.
+- **effectiveDate** – If an incremental refresh policy is being applied, it needs to know the current date to determine rolling window ranges for the incremental refresh and historical periods. The effectiveDate parameter allows you to override the current date. This parameter is useful for testing, demos, and business scenarios where data is incrementally refreshed up to a date in the past or the future (for example, budgets in the future). The default value is the current date.
 
 ```json
 { 
@@ -150,7 +150,7 @@ When publishing a new version of a PBIX file from Power BI Desktop to a workspac
 
 In some cases, you may not want to replace the dataset, especially with incremental refresh. The dataset in Power BI Desktop could be much smaller than the one in the service. If the dataset in the service has an incremental refresh policy applied, it may have several years of historical data that will be lost if the dataset is replaced. Refreshing all the historical data could take hours and result in system downtime for users.
 
-Instead, it's better to perform a metadata only deployment. This allows deployment of new objects without losing the historical data. For example, if you've added a few measures you can deploy only the new measures without needing to refresh the data, saving a lot of time.
+Instead, it's better to perform a metadata only deployment, which allows deployment of new objects without losing the historical data. For example, if you've added a few measures you can deploy only the new measures without needing to refresh the data, saving a lot of time.
 
 For workspaces assigned to a Premium capacity configured for XMLA endpoint read-write, compatible tools enable metadata only deployment. For example, the ALM Toolkit is a schema diff tool for Power BI datasets and can be used to perform deployment of metadata only.
 
