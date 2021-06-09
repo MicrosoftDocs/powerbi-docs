@@ -22,7 +22,7 @@ The [**Analytics** pane](../../transform-model/desktop-analytics-pane.md) allows
 
 ## Manage the Analytics pane
 
-Managing properties in the [**Analytics** pane](../../transform-model/desktop-analytics-pane.md) is very similar to the managing properties in the [**Format** pane](./custom-visual-develop-tutorial-format-options.md). You define an object in the visual's *capabilities.json* file.
+Managing properties in the [**Analytics** pane](../../transform-model/desktop-analytics-pane.md) is very similar to the managing properties in the [**Format** pane](./custom-visual-develop-tutorial-format-options.md). You define an [object](objects-properties.md) in the visual's [*capabilities.json*](capabilities.md) file.
 
 For the **Analytics** pane, the object is defined as follows:
 
