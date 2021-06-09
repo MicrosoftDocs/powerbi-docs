@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/23/2020
+ms.date: 05/10/2021
 LocalizationGroup: Create reports
 ---
 # Use Performance Analyzer to examine report element performance
@@ -20,7 +20,7 @@ Performance Analyzer inspects and displays the duration necessary for updating o
 
 ## Displaying the Performance Analyzer pane
 
-In **Power BI Desktop** select the **View** ribbon. In the **Show** area of the **View** ribbon you can select the checkbox next to **Performance Analyzer** to display the Performance Analyzer pane.
+In **Power BI Desktop** select the **View** ribbon, and then select **Performance Analyzer** to display the Performance Analyzer pane.
 
 ![Select Performance analyzer in the View ribbon](media/desktop-performance-analyzer/performance-analyzer-02.png)
 
@@ -30,7 +30,7 @@ Once selected, the Performance Analyzer is displayed in its own pane, to the rig
 
 Performance analyzer measures the processing time (including the time to create or update a visual) required to update report elements initiated as a result of any user interaction that results in running a query. For example, adjusting a slicer requires the slicer visual to be modified, a query to be sent to the data model, and affected visuals that must be updated as a result of the new settings. 
 
-To have Performance Analyzer begin recording, simply select **Start recording**
+To have Performance Analyzer begin recording, simply select **Start recording**.
 
 ![Start recording](media/desktop-performance-analyzer/performance-analyzer-03.png)
 
@@ -65,7 +65,7 @@ To clear out the information in the Performance Analyzer pane, select **Clear**.
 
 You can select **Refresh visuals** in the Performance Analyzer pane to refresh all visuals on the current page of the report, and thereby have Performance Analyzer gather information about all such visuals.
 
-You can also refresh individual visuals. When Performance Analyzer is recording, you can select **Refresh this visual** found in the top-right corner of each visual, to refresh that visual, and capture its performance information.
+You can also refresh individual visuals. When Performance Analyzer is recording, you can select **Analyze this visual** found in the top-right corner of each visual, to refresh that visual, and capture its performance information.
 
 ![refresh an individual visual](media/desktop-performance-analyzer/performance-analyzer-07.png)
 

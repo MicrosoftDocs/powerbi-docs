@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 04/21/2021
+ms.date: 05/14/2021
 ---
 
 # Troubleshoot developing DirectQuery models in Power BI Desktop

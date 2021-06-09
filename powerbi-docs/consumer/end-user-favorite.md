@@ -8,7 +8,7 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/02/2020
+ms.date: 05/24/2021
 LocalizationGroup: Common tasks
 ---
 # Favorite dashboards, reports, and apps in the Power BI service

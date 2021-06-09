@@ -3,13 +3,13 @@ title: Add the Power BI app to Microsoft Teams
 description: You can easily add the Power BI app to Microsoft Teams. The Power BI app brings the entire basic Power BI service experience into Microsoft Teams.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: ''
+ms.reviewer: lukaszp
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 05/06/2021
+ms.date: 05/21/2021
 ---
 
 # Add the Power BI app to Microsoft Teams
@@ -18,11 +18,13 @@ This article describes how you can install, pin, and interact with Power BI righ
 
 :::image type="content" source="media/service-microsoft-teams-app/power-bi-app-teams.png" alt-text="Screenshot of Power BI app in Microsoft Teams.":::
 
-The Power BI app in Microsoft Teams is your personal experience of Power BI. It's as if the Power BI service lives inside Microsoft Teams.  After you install it, you can do almost everything in Microsoft Teams that you can do in the Power BI service:
+The Power BI app in Microsoft Teams is one of the ways that you can [collaborate with Power BI in Teams](service-collaborate-microsoft-teams.md). The app is your personal experience of Power BI. It's as if the Power BI service lives inside Microsoft Teams.  After you install it, you can do almost everything in Microsoft Teams that you can do in the Power BI service:
 
 - Create, view, and edit dashboards, reports, and apps.
 - Create and participate in workspaces.
 - Share content, either through email or through Microsoft Teams.
+
+And there's a feature in the Power BI app in Teams that you don't see when you view the Power BI service (app.powerbi.com) in a web browser. On the Power BI home page in Teams, you can [see all the Power BI tabs you've viewed](service-teams-pivot.md), everywhere in Teams.
 
 There are a few features that you can only access in the Power BI service in a browser. See the [Known issues and limitations](#known-issues-and-limitations) section of this article for details.
 
@@ -97,6 +99,14 @@ With the search experience in Teams, you can find recent reports, dashboards, an
 1. If you haven't installed the Power BI app yet, you'll be given the opportunity to add it.
  
     :::image type="content" source="media/service-microsoft-teams-app/power-bi-search-teams-apps.png" alt-text="Search for the Power BI app in Teams":::
+
+## Encourage Power BI app adoption in Teams
+
+Your organization can make it easier for everyone to find and use data by installing and pinning (optional but recommended) the Power BI app for Teams for users. 
+
+- Are you a leader in your organization? You can encourage individuals and teams to start using the Power BI app in Teams by installing it for themselves. 
+- Are you a Power BI admin or a Teams admin? You can encourage broader usage by installing and even pinning the app proactively. Read the [Guide to enabling your organization to use Power BI in Microsoft Teams](https://powerbi.microsoft.com/blog/guide-to-enabling-your-organization-to-use-power-bi-in-microsoft-teams/) to learn the options for broad and targeted roll-out and decide what’s right for your organization.
+
 
 ## Known issues and limitations
 

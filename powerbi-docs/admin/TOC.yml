@@ -82,6 +82,8 @@
         href: service-admin-syndication-partner.md
     - name: "Using the admin portal"
       href: service-admin-portal.md
+    - name: "Add custom branding"
+      href: service-admin-custom-branding.md
     - name: "Use private links for Power BI"
       href: service-security-private-links.md      
     - name: "Manage Power BI visuals admin settings"

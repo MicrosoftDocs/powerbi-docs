@@ -7,13 +7,13 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/12/2021
+ms.date: 05/18/2021
 LocalizationGroup: Share your work
 ---
 # Manage, update, and delete organizational content packs
 
 > [!NOTE]
-> Organizational content packs are being deprecated. Now is a good time to upgrade your content packs to apps, if you haven't started yet. See the workspace upgrade roadmap section of this blog post [Announcing Power BI admins can upgrade classic workspaces](https://powerbi.microsoft.com/blog/announcing-power-bi-admins-can-upgrade-classic-workspaces-and-roadmap-update/) for the timeline.
+> Organizational content packs are being deprecated. Now is a good time to upgrade your content packs to apps, if you haven't started yet. See [Upgrade classic workspaces to the new workspaces in Power BI](service-upgrade-workspaces.md) for details.
 > 
 
 You can package up and share your dashboards, reports, Excel workbooks, and datasets with your colleagues as [organizational content packs](service-organizational-content-pack-introduction.md). Your colleagues can use them as-is, or they can create their own copies.
