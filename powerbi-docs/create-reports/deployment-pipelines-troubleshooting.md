@@ -229,6 +229,10 @@ When you have a dataflow that's configured with [incremental refresh](../connect
 
 When you deploy a dataflow, only the metadata is copied. The dataflow's data isn't copied. A visual in a report points to the data in the same pipeline stage. When you deploy a report that relies on data that originates from a dataflow, even if the dataflow is deployed, the visual cannot access the data it relies on. To solve this problem, refresh the dataflow in the target stage.
 
+### I deleted a data source that belonged to a dataflow, why can I still see it in the lineage view?
+
+In dataflows, old data sources are not removed from the dataflow data source page. To support the dataflows lineage view, connected items are not deleted. This behavior doesn't affect deployment pipelines. You can still refresh, edit and deploy dataflows in a pipeline.
+
 ### Dataflow limitations
 
 This section lists dataflow limitations in deployment pipelines. You may also want to refer to the general limitations for dataflows, which are documented in [dataflows limitations and considerations](../transform-model/dataflows/dataflows-features-limitations.md). For deployment pipeline rule limitations that effect dataflows, see [Deployment rules limitations](deployment-pipelines-get-started.md#deployment-rules-limitations).
