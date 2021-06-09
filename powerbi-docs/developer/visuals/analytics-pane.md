@@ -71,7 +71,7 @@ You can define other properties in the same way that you do for **Format** objec
 
 ## Known limitations and issues of the Analytics pane
 
-* The **Analytics** pane has no multi-instance support yet. Objects can't have a [selector](objects-properties.md#objects-selector) other than static (that is, "selector": null), and Power BI visuals can't have user-defined multiple instances of a card.
+* The **Analytics** pane has no multi-instance support yet. The only [selector](objects-properties.md#objects-selector) an object can have is *static* (that is, `selector: null`), and Power BI visuals can't have user-defined multiple instances of a card.
 * Properties of type `integer` aren't displayed correctly. As a workaround, use type `numeric` instead.
 
 ## Next Steps
