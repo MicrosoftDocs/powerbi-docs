@@ -8,7 +8,7 @@ metadata:
   description: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
   services: powerbi
   ms.service: powerbi
-  ms.subservice: powerbi
+  ms.subservice: pbi-reports-dashboards
   ms.topic: landing-page # Required
   ms.collection: collection
   author: maggiesMSFT
