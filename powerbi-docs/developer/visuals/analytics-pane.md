@@ -22,19 +22,19 @@ The [**Analytics** pane](../../transform-model/desktop-analytics-pane.md) allows
 
 ## Manage the Analytics pane
 
-Managing the properties in the [**Analytics** pane](../../transform-model/desktop-analytics-pane.md) is very similar to the managing them in the[**Format** pane](./custom-visual-develop-tutorial-format-options.md). You define an object in the visual's *capabilities.json* file.
+Managing properties in the [**Analytics** pane](../../transform-model/desktop-analytics-pane.md) is very similar to the managing properties in the [**Format** pane](./custom-visual-develop-tutorial-format-options.md). You define an object in the visual's *capabilities.json* file.
 
 For the **Analytics** pane, the object is defined as follows:
 
-* Add an `objectCategory` field with a value of 2.
+* Under the object's definition, add the `displayName` and an `objectCategory` field with a value of `2`.
     >[!NOTE]
-    >The `objectCategory` field defines the aspect of the visual that the object controls (1 = Formatting, 2 = Analytics). Use `Formatting` for elements such as look and feel, colors, axes, and labels. Use `Analytics` for elements such as forecasts, trendlines, reference lines, and shapes.
+    >The `objectCategory` field defines the aspect of the visual that the object controls (1=Formatting, 2=Analytics). Use `Formatting` for elements such as look and feel, colors, axes, and labels. Use `Analytics` for elements such as forecasts, trendlines, reference lines, and shapes.
     >
-    > If the value isn't specified, `objectCategory` defaults to "Formatting."
+    > If the `objectCategory` value isn't specified, it defaults to "Formatting."
 
 * Add the following two properties to the object:
-  * `show` of type `bool`, with a default value of `false`.
-  * `displayName` of type `text` with the initial display name of the object.
+  * `show` of type `bool`, with a default value of `true`.
+  * `displayName` of type `text` with a default value of `true`.
 
 ```json
 {
