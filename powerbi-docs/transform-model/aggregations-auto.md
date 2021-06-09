@@ -59,16 +59,24 @@ To enable and configure automatic aggregations, you must have **Owner** permissi
 
 ### Query analysis
 
-When automatic aggregations is enabled for a dataset, all DAX queries passed from clients to the query engine are analyzed. Query patterns over tables, columns, and relationships define telemetry about those queries which is then stored securely in Azure Data Explorer. 
+When automatic aggregations is enabled for a dataset, the query workload for that dataset, which includes all DAX queries passed from clients to the query engine are analyzed. Query patterns for the workload define telemetry which is then stored securely in Azure Data Explorer.
 
-When configuring automatic aggregations, you specify one or more refresh operations by frequency: Day, Week, or Month. The first scheduled refresh operation for the frequency you choose first instantiates a *training* operation, and then a refresh operation. Subsequent refreshes are refresh only operations. For example, if we choose a Day frequency and schedule refreshes at 4:00AM, 9:00AM, 2:00PM, and 7:00PM, the 4:00AM refresh each day will include both a training operation and a refresh operation. The 9:00AM, 2:00PM, and 7:00PM scheduled refreshes will be refresh operations only. The training operation has a time limit of 60 minutes.
+### Training
 
-The training operation analyzes uses Kusto to analyze the query telemetry to determine the tables and columns used to calculate results for those queries. Cardinality estimation queries are then sent to the data source to determine the row count for the tables. In-memory tables are created, dropped, or retained. Query patterns in the workload are ranked based on frequency. To determine the optimal set of aggregations, the automatic aggregations algorithm sends cardinality estimation queries to the data sources to determine the row count for the associated tables.
+When configuring automatic aggregations, you specify one or more refresh operations by frequency: Day, Week, or Month. The first scheduled refresh operation for the frequency you choose first instantiates a *training* operation. The training operation uses machine learning predictive analytics to analyze the query telemetry to determine the tables and columns necessary to create aggregations for those queries. Cardinality estimation queries are then sent to the data source to determine the row count for those tables. In-memory tables are then created, dropped, or retained. Query patterns for the workload are then ranked based on frequency. Aggregations are created during the training process but are not populated with data. The refresh operation then populates the aggregations with data.
 
 During the training operation, the service creates a framework by analyzing the query workload.
-sending cardinality estimation queries to the data source. These queries analyze the tables, columns, rows, and relationships at the data source to create one or more aggregation tables in-memory. Aggregations are created during the training process but are not populated with data. The refresh operation then populates the aggregations with data.
+sending cardinality estimation queries to the data source. These queries analyze the tables, columns, rows, and relationships at the data source to create one or more aggregation tables in-memory. 
+
+The training operation has a time limit of 60 minutes. Subsequent refreshes are refresh only operations. For example, if we choose a Day frequency and schedule refreshes at 4:00AM, 9:00AM, 2:00PM, and 7:00PM, the 4:00AM refresh each day will include both a training operation and a refresh operation. The 9:00AM, 2:00PM, and 7:00PM scheduled refreshes will be refresh operations only. 
+
+Percentage of cached queries defines the amount in of total queries for which aggregations will be calculated and stored in-memory.
+
+For example, if the percentage of cached queries is set to 85%, and query analysis determines 100 report queries are passed to the query engine, then 85 of those queries, based on rank are pre-aggregated and included in the in-memory aggregations cache. Rank is determine by a number of factors including how many times over the training frequency period the query is being passed to the query engine, cardinality, and so on. Queries excluded from the in-memory aggregations cache tend to be ad-hoc queries, or queries that cannot be pre-aggregated such as those that transit many-to-many relationships. 
 
 Tables created contain rows of aggregated data at a higher level of granularity than the data source tables they're derived from. For example, a backend data source with a traditional star schema data warehouse has a Sales fact or *detail* table with tens of millions of rows of sales transaction data. The Sales table has relationships with Date, Product Subcategory, and Customer tables, and those tables have relationships with other tables such as Product, Product Category, and Geography. During training, aggregations tables are automatically created and contain only those rows summarized by an aggregation such as GroupBy, Sum, Count. Queries can transit many-to-one and one-to-many relationships to define the aggregations to be included in the aggregations table. Automatic aggregations, however, cannot transit many-to-many relationships. For those queries that cannot be aggregated from the in-memory aggregations tables are passed to the data source using DirectQuery.
+
+
 
 
 ### Building a framework
@@ -81,13 +89,6 @@ The query engine processes those queries it can from the in-memory aggregations 
 
 Under the hood, automatic aggregations are identified as *System* aggregations. The automatic aggregations algorithm creates and removes only those System aggregations as reporting queries are analyzed and adjustments are made to maintain the optimal aggregations for the dataset. 
 
-### Cached queries
-
-Percentage of cached queries defines the amount in of total queries for which aggregations will be calculated and stored in-memory.
-
-For example, if the percentage of cached queries is set to 85%, and query analysis determines 100 report queries are passed to the query engine, then 85 of those queries, based on rank are pre-aggregated and included in the in-memory aggregations cache. Rank is determine by a number of factors including how many times over the training frequency period the query is being passed to the query engine, cardinality, and so on. Queries excluded from the in-memory aggregations cache tend to be ad-hoc queries, or queries that cannot be pre-aggregated such as those that transit many-to-many relationships. 
-
-
 ### Training
 
 
@@ -97,7 +98,7 @@ Because aggregations are stored in memory, it's necessary to refresh the dataset
 
 :::image type="content" source="media/aggregations-automatic/auto-aggs-refresh.png" alt-text="Configure refresh for automatic aggregations":::
 
-The first refresh for the frequency you choose (Day, Week, Month) includes the training process. All subsequent refreshes that day, week, or month update the aggregations only. For that first refresh, the training process allows up to 60 minutes for query evaluations to complete, in-memory tables to be created or dropped, columns and rows to be added. Aggregations data, however, is not loaded into the tables during training - it's loaded during the subsequent refresh operation.
+The first refresh for the frequency you choose (Day, Week, Month) includes the training process. All subsequent refreshes that day, week, or month update the aggregations only. For that first refresh, the training process allows up to 60 minutes to complete, in-memory tables to be created or dropped, columns and rows to be added. Aggregations data, however, is not loaded into the tables during training - it's loaded during the subsequent refresh operation.
 
 The time you choose for your first scheduled refresh should be when the data source system is least active, and prior to users actively working with reports. For most organizations, this will be overnight or early in the morning, after any ETL or maintenance processes at the data source have completed. This will give the training process in the first refresh plenty of system resources to complete and ensure the refresh operations gets the most recent data source data. Be sure to schedule refreshes often enough so aggregations data stored in-memory most closely reflects that of real-time data at the data source. At the same time, you don't want to schedule so many refreshes that system resources are used unnecessarily.
 
