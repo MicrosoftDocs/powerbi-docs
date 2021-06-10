@@ -51,7 +51,7 @@ The basic idea behind this class is to hold the instance of the `TooltipService`
 
 The class holds and manages any relevant state and logic for these events, which are mostly geared at interfacing with the underlying D3 code. The D3 interfacing and conversion is out of scope for this article.
 
-The example code in this article is based on the [SampleBarChart visual]((https://github.com/Microsoft/PowerBI-visuals-sampleBarChart). You can examine the source code in [barChart.ts.](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/src/barChart.ts)
+The example code in this article is based on the [SampleBarChart visual](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart). You can examine the source code in [barChart.ts.](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/src/barChart.ts)
 
 ### Create TooltipServiceWrapper
 
