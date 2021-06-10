@@ -78,7 +78,7 @@ When you use `pbiviz` to create the R-powered visual based on the `rvisual` temp
 
    ![Screenshot shows the R script visual control in the Power B I Desktop.](./media/create-r-based-power-bi-desktop/r-script-icon.png)
 
-1. Paste this R code into the **R script editor**:
+2. Paste this R code into the **R script editor**:
 
    ```r
    x <- dataset[,1] # get the first column from dataset
@@ -90,13 +90,13 @@ When you use `pbiviz` to create the R-powered visual based on the `rvisual` temp
    lines(x, y, col="green") # draw line plot
    ```
 
-1. Select the **Run script** icon to see the result.
+3. Select the **Run script** icon to see the result.
 
     ![Screenshot shows the result of running the script, which is a line plot.](./media/create-r-based-power-bi-desktop/run-r-script.png)
 
-1. When your R script is ready, copy it to the `script.r` file in your visual project created at one of the previous steps.
+4. When your R script is ready, copy it to the `script.r` file in your visual project created at one of the previous steps.
 
-1. Change the `name` of `dataRoles` in *capabilities.json* to `dataRoles`. Power BI passes data as the `dataset` data frame object for the R script visual, but the R visual gets the data frame name according to `dataRoles` names.
+5. Change the `name` of `dataRoles` in *capabilities.json* to *dataRoles* and the `dataViewMappings` input to *dataset*. Power BI passes data as the `dataset` data frame object for the R script visual, but the R visual gets the data frame name according to `dataRoles` names.
 
     ```json
     {
@@ -133,7 +133,7 @@ When you use `pbiviz` to create the R-powered visual based on the `rvisual` temp
     }
     ```
 
-1. Add the following code to support resizing the image in the *src/visual.ts* file.
+6. Add the following code to support resizing the image in the *src/visual.ts* file.
 
     ```typescript
       public onResizing(finalViewport: IViewport): void {
