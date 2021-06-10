@@ -193,13 +193,11 @@ This section lists the limitations for the deployment rules.
 
 * When an item is removed or deleted, its rules are deleted too. These rules cannot be restored.
 
-* Rules for dataflows that have sources that are not dataflows, are not supported.
+* Rules for dataflows that have other dataflows as sources, are not supported.
 
-* Rules for dataflows that use a common data module (CDM) folder, are not supported.
+* Data source rules for common data model (CDM) folders in a dataflow, are not supported.
 
 * Rules for datasets that use dataflows as their source, are not supported.
-
-* After changing a dataflow's data source using a rule, the dataflow's lineage view displays a connection between the dataflow's source data source, and the data source configured in the rule.
 
 * If the data source defined in a rule is changed or removed from the item it points to in the source stage, the rule will not be valid and the deployment will fail.
 
