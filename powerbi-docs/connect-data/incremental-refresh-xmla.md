@@ -93,7 +93,7 @@ Bootstrapping the initial refresh operation allows the service to create partiti
 
 #### Apply Refresh Policy
 
-The open-source [Tabular Editor 2](https://github.com/otykier/TabularEditor/releases/) tool provides an easy way to bootstrap an initial refresh operation. After deploying from Power BI Desktop to the service, connect to the dataset in Live mode by using the XMLA endpoint in Read/Write mode. Run **Apply Refresh Policy** on the incremental refresh table. With only the policy applied, partitions are created but no data is  loaded into them. You then use SSMS to refresh the partitions sequentially or in batches to load and process the data. To learn more, see [Incremental refresh in Tabular Editor docs](https://docs.tabulareditor.com/incremental-refresh.html).
+The open-source [Tabular Editor 2](https://github.com/otykier/TabularEditor/releases/) tool provides an easy way to bootstrap an initial refresh operation. After publishing a model with an incremental refresh policy defined for it from Power BI Desktop to the service, connect to the dataset in Live mode by using the XMLA endpoint in Read/Write mode. Run **Apply Refresh Policy** on the incremental refresh table. With only the policy applied, partitions are created but no data is  loaded into them. Then connect with SSMS to refresh the partitions sequentially or in batches to load and process the data. To learn more, see [Incremental refresh in Tabular Editor docs](https://docs.tabulareditor.com/incremental-refresh.html).
 
 :::image type="content" source="media/incremental-refresh-xmla/tabular-editor.png" alt-text="Tabular Editor":::
 
