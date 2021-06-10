@@ -7,7 +7,7 @@ ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/14/2021
+ms.date: 06/09/2021
 LocalizationGroup: 
 ---
 
@@ -93,11 +93,11 @@ Bootstrapping the initial refresh operation allows the service to create partiti
 
 ### Apply Refresh Policy
 
-The [Tabular Editor 2](https://github.com/otykier/TabularEditor/releases/) open-source tool provides an easy way to implement incremental refresh on datasets in the service. For datasets with an incremental refresh policy defined but not yet had an initial refresh operation performed, you can use **Apply Refresh Policy** to apply the policy only. With the policy applied, partitions are created, but data is not loaded into them. You then use SSMS to refresh the partitions sequentially or in batches to load and process the data. To learn more, see [Incremental refresh in Tabular Editor docs](https://docs.tabulareditor.com/incremental-refresh.html).
+The [Tabular Editor 2](https://github.com/otykier/TabularEditor/releases/) open-source tool provides an easy way to implement incremental refresh on datasets in the service. For datasets with an incremental refresh policy defined but not yet had an initial refresh operation performed, you can use **Apply Refresh Policy** to effectively bootstrap the initial refresh by applying the policy only. With only the policy applied, partitions are created, but data is not loaded into them. You then use SSMS to refresh the partitions sequentially or in batches to load and process the data. To learn more, see [Incremental refresh in Tabular Editor docs](https://docs.tabulareditor.com/incremental-refresh.html).
 
 ### Power Query filter for empty partitions
 
-Prior to publishing the model to the service, in Power Query Editor, you add another filter to the ProductKey column that filters out any value other than 0, effectively filtering out *all* data from the FactInternetSales table.
+Prior to publishing the model to the service, in Power Query Editor, you add another filter to the ProductKey column that filters out any value other than 0, effectively  or filtering out *all* data from the FactInternetSales table. 
 
 ![Filter out product key](media/incremental-refresh-xmla/filter-product-key.png)
 
