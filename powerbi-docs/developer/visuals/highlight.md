@@ -12,7 +12,7 @@ ms.date: 10/31/2019
 
 # Highlight data points in Power BI Visuals
 
-By default whenever an element is selected the `values` array in the `dataView` object will be filtered to just the selected values. It will cause all other visuals on the page to display just the selected data.
+By default, whenever an element is selected, the `values` array in the `dataView` [object](objects-properties.md) is filtered to just the selected values. This filtering causes all other visuals on the page to display just the selected data.
 
 ![highlight `dataview` default behavior](media/highlight/highlight-dataview.png)
 
