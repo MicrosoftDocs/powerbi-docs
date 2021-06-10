@@ -175,7 +175,7 @@ After a deployment fails due to schema changes, the target stage displays the *D
 
 ### Why is my visual broken after deploying a dataset or a dataflow?
 
-When you deploy a dataflow, only the metadata is copied. The dataflow's data isn't copied. When you deploy a report that relies on data that's defined in a dataflow, even if the dataflow is deployed, the visual cannot access the data it needs. Visuals that get their data from a storage location that's defined in a dataflow, cannot access it as there's no data in the dataflow that resides in the same pipeline stage. To solve this problem, refresh the dataflow in the target stage.
+When you deploy a dataset or a dataflow, only the metadata is copied. The data isn't copied. When you deploy a report that relies on data that's defined in a dataset or a dataflow, even if the dataset or the dataflow is deployed, the visual cannot access the data it needs. Visuals that get their data from a storage location that's defined in a dataset or a dataflow, cannot access it as there's no data in the dataset or the dataflow that resides in the same pipeline stage. To solve this problem, refresh the dataset or the dataflow in the target stage.
 
 ### Does deployment pipelines support multi-geo?
 
