@@ -12,7 +12,7 @@ ms.date: 06/01/2021
 
 # Add bookmark support to visuals in Power BI reports
 
-With Power BI report bookmarks, you can capture and save a configured view of a report page. The bookmark saves the entire configuration, including selections and filters.
+With Power BI report bookmarks, you can capture and save a configured view of a report page. You can then go back to this view quickly and easily whenever you want. The bookmark saves the entire configuration, including selections and filters.
 
 For more information about bookmarks, see [Use bookmarks to share insights and build stories in Power BI](../../create-reports/desktop-bookmarks.md).
 
@@ -46,11 +46,11 @@ The new selection state (or filter) is communicated through the `options.jsonFil
 
 ## Visuals with selection
 
-If your visual interacts with other visuals by using [Selection](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/Tutorial/Selection.md), you can add bookmark support in one of two ways:
+If your visual interacts with other visuals using [Selection](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/Tutorial/Selection.md), you can add bookmark support in one of two ways:
 
 * Through [InteractivityService](#use-interactivityservice-to-restore-bookmark-selections) to manage selections, use the `applySelectionFromFilter`. This is the easier and preferred method.
 
-* If your visual doesn't use **InteractivityService**, use the [SelectionManager](#use-selectionmanager-to-restore-bookmark-selections) to reset the selection.
+* Through [SelectionManager](#use-selectionmanager-to-restore-bookmark-selections), if your visual doesn't use **InteractivityService**.
 
 ### Use **InteractivityService** to restore bookmark selections
 
@@ -72,9 +72,9 @@ this.selectionManager.registerOnSelectCallback(
 );
 ```
 
-Let's assume that you have a data point in your visual that was created in the [visualTransform](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts#L74) method.
+Let's assume you created a data point in the [visualTransform](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts#L74) method of your visual.
 
-And `datapoints` looks like:
+The `datapoints` looks like this:
 
 ```typescript
 visualDataPoints.push({
