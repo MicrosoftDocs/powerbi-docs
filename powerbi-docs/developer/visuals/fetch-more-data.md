@@ -12,7 +12,7 @@ ms.date: 06/10/2021
 
 # Fetch more data from Power BI
 
-The **fetchMoreData API** enables Power BI visuals to bypass the hard limit of a 30K row data view. The `fetchMoreData` API supports loading data chunks. In addition to the original approach of aggregating all the chunks requested, the API now also supports loading only the incremental data chunks.
+The **fetchMoreData API** supports loading data chunks as a way of enabling Power BI visuals to bypass the hard limit of a 30K row data view. In addition to the original approach of aggregating all the chunks requested, the API now also supports loading only the incremental data chunks.
 
 This approach allows more flexibility in the way additional data chunks are loaded to the visual. To improve performance, you can configure the chunk size to accommodate your use case.
 
