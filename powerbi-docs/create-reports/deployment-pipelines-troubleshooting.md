@@ -185,11 +185,9 @@ When a pipeline is left without an owner, a Power BI administrator can use the [
 
 You can also review our PowerShell script, [AddUserToWorkspacePipeline](link), which shows how to add a user to a pipeline and allows you to do the following:
 
-* Add yourself to a pipeline that doesn't have an owner.
+* *Manage pipeline access* - Add any user to a workspace in a pipeline.
 
-* Unblock a workspace that is stuck in a pipeline that doesn't have an owner.
-
-* Add a user to a pipeline programmatically.
+* *Reclaim ownership of a workspace in a pipeline that doesn't have an owner* - Add any user to a workspace in a pipeline that doesn't have an owner, in order to unblock it.
 
 To use this scrip, you'll need to provide a *workspace name* and and a *user principal name (UPN)*. The script will find the pipeline that the workspace is assigned to, and add admin permissions to the user you specified.
 
