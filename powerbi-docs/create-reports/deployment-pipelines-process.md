@@ -70,7 +70,7 @@ Auto-binding works only with Power BI items that are supported by deployment pip
 
 ### Refreshing data
 
-Data in the target dataset is kept when possible. If there are no changes to a Power BI item that holds data, such as a dataset or dataflow, the data is kept as it was before the deployment.
+Data in the target Power BI item, such as a dataset or dataflow, is kept when possible. If there are no changes to a Power BI item that holds the data, the data is kept as it was before the deployment.
 
 With small changes, such as adding a table or a measure, Power BI keeps the original data. For breaking schema changes, or changes in the data source connection, a full refresh is required.
 
@@ -176,6 +176,8 @@ Deployment pipelines supports many Power BI dataset features. This section lists
 Deployment pipelines supports [incremental refresh](../connect-data/incremental-refresh-overview.md), a feature that allows large datasets faster and more reliable refreshes, with lower consumption.
 
 With deployment pipelines, you can make updates to a dataset with incremental refresh while retaining both data and partitions. When you deploy the dataset, the policy is copied along.
+
+To understand how incremental refresh behaves with dataflows, see [what happens to the incremental refresh configuration after deploying dataflows?](deployment-pipelines-troubleshooting.md#what-happens-to-the-incremental-refresh-configuration-after-deploying-dataflows).
 
 #### Activating incremental refresh in a pipeline
 
@@ -351,6 +353,16 @@ This section lists most of the limitations in deployment pipelines.
 * After deployment, downloading a dataset (from the stage it's been deployed to) is not supported.
 
 * For a list of deployment rule limitations, see [deployment rules limitations](deployment-pipelines-get-started.md#deployment-rules-limitations).
+
+### Dataflow limitations
+
+* When deploying a dataflow with linked entities that reside on the same workspace, the deployment will fail.
+
+* When deploying a dataflow to an empty stage, deployment pipelines creates a new workspace and sets the dataflow storage to a Power BI blob storage. Blob storage is used even if the source workspace is configured to use Azure data lake storage Gen2 (ADLS Gen2).
+
+* In deployment pipelines, service principal isn't supported for dataflows.
+
+* For deployment pipeline rule limitations that effect dataflows, see [Deployment rules limitations](deployment-pipelines-get-started.md#deployment-rules-limitations).
 
 ## Next steps
 

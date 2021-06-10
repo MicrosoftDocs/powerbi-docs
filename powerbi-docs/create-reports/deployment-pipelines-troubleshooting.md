@@ -173,6 +173,10 @@ If the changes were not intentional, close the message window, upload a fixed PB
 
 After a deployment fails due to schema changes, the target stage displays the *Deployment failed* message, followed by the *Show details* link. The link opens the same *continue the deployment* message that was displayed during the failed deployment.
 
+### Why is my visual broken after deploying a dataset or a dataflow?
+
+When you deploy a dataflow, only the metadata is copied. The dataflow's data isn't copied. When you deploy a report that relies on data that's defined in a dataflow, even if the dataflow is deployed, the visual cannot access the data it needs. Visuals that get their data from a storage location that's defined in a dataflow, cannot access it as there's no data in the dataflow that resides in the same pipeline stage. To solve this problem, refresh the dataflow in the target stage.
+
 ### Does deployment pipelines support multi-geo?
 
 Multi-geo is supported. It may take longer to deploy content between stages in different geos.
@@ -221,27 +225,17 @@ However, paginated reports that use a Power BI dataset use an internal dataset. 
 
 ## Dataflows
 
-### Does dataflows support incremental refresh?
+### What happens to the incremental refresh configuration after deploying dataflows?
 
-When you have a dataflow that's configured with [incremental refresh](../connect-data/incremental-refresh-overview.md), the refresh policy is not copied or overwritten during deployment. After deploying a dataflow with incremental refresh to a stage that doesn't include this dataflow, if you have a refresh policy you'll need to reconfigure it in the target stage. If you're deploying a dataflow with incremental refresh to a stage were it already resides, the incremental refresh policy isn't copied. In such cases, if you wish to update the refresh policy in the target stage, you'll need to do it manually.
-
-### Why is my visual broken after deploying a dataflow?
-
-When you deploy a dataflow, only the metadata is copied. The dataflow's data isn't copied. A visual in a report points to the data in the same pipeline stage. When you deploy a report that relies on data that originates from a dataflow, even if the dataflow is deployed, the visual cannot access the data it relies on. To solve this problem, refresh the dataflow in the target stage.
+When you have a dataflow that contains datasets that are configured with [incremental refresh](../connect-data/incremental-refresh-overview.md), the refresh policy is not copied or overwritten during deployment. After deploying a dataflow that includes a dataset with incremental refresh to a stage that doesn't include this dataflow, if you have a refresh policy you'll need to reconfigure it in the target stage. If you're deploying a dataflow with incremental refresh to a stage were it already resides, the incremental refresh policy isn't copied. In such cases, if you wish to update the refresh policy in the target stage, you'll need to do it manually.
 
 ### I deleted a data source that belonged to a dataflow, why can I still see it in the lineage view?
 
 In dataflows, old data sources are not removed from the dataflow data source page. To support the dataflows lineage view, connected items are not deleted. This behavior doesn't affect deployment pipelines. You can still refresh, edit and deploy dataflows in a pipeline.
 
-### Dataflow limitations
+### What happens when I configure a rule for a dataflow's data source?
 
-This section lists dataflow limitations in deployment pipelines. You may also want to refer to the general limitations for dataflows, which are documented in [dataflows limitations and considerations](../transform-model/dataflows/dataflows-features-limitations.md). For deployment pipeline rule limitations that effect dataflows, see [Deployment rules limitations](deployment-pipelines-get-started.md#deployment-rules-limitations).
-
-* When deploying a dataflow, linked entities that reside on the same workspace are not deployed.
-
-* When deploying a dataflow to an empty stage, deployment pipelines creates a new workspace and sets the dataflow storage to a Power BI blob storage. Blob storage is used even if the source workspace is configured to use Azure data lake storage Gen2 (ADLS Gen2).
-
-* Service principal isn't supported.
+After changing a dataflow's data source using a rule, the dataflow's lineage view displays a connection between the dataflow's source data source, and the data source configured in the rule.
 
 ## Permissions
 
