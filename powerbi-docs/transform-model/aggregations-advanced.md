@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 04/30/2021
+ms.date: 06/10/2021
 LocalizationGroup: Transform and shape data
 ---
 # User defined aggregations
@@ -24,11 +24,11 @@ Dimensional data sources, like data warehouses and data marts, can use [relation
 
 In the **Fields** pane of any Power BI Desktop view, right-click the aggregations table, and then select **Manage aggregations**.
 
-![Select Manage aggregations](media/desktop-aggregations/aggregations-06.png)
+![Select Manage aggregations](media/aggregations-advanced/aggregations-06.png)
 
 The **Manage aggregations** dialog shows a row for each column in the table, where you can specify the aggregation behavior. In the following example, queries to the **Sales** detail table are internally redirected to the **Sales Agg** aggregation table. 
 
-![Screenshot shows the Manage aggregations dialog box.](media/desktop-aggregations/aggregations_07.jpg)
+![Screenshot shows the Manage aggregations dialog box.](media/aggregations-advanced/aggregations_07.png)
 
 In this relationship-based aggregation example, the GroupBy entries are optional. Except for DISTINCTCOUNT, they don't affect aggregation behavior and are primarily for readability. Without the GroupBy entries, the aggregations would still get hit, based on the relationships. This is different from the [big data example](#aggregation-based-on-groupby-columns) later in this article, where the GroupBy entries are required.
 
@@ -44,7 +44,7 @@ The **Manage aggregations** dialog enforces validations:
 
 Most validations are enforced by disabling dropdown values and showing explanatory text in the tooltip.
 
-![Validations shown by tooltip](media/desktop-aggregations/aggregations_08.jpg)
+![Validations shown by tooltip](media/aggregations-advanced/aggregations_08.png)
 
 ### Aggregation tables are hidden
 
@@ -58,7 +58,7 @@ The aggregation feature interacts with table-level storage modes. Power BI table
 
 To set the storage mode of an aggregated table to Import to speed up queries, select the aggregated table in Power BI Desktop **Model** view. In the **Properties** pane, expand **Advanced**, drop down the selection under **Storage mode**, and select **Import**. Note that this action is irreversible. 
 
-![Set the storage mode](media/desktop-aggregations/aggregations-04.png)
+![Set the storage mode](media/aggregations-advanced/aggregations-04.png)
 
 To learn more about table storage modes, see [Manage storage mode in Power BI Desktop](desktop-storage-mode.md).
 
@@ -68,13 +68,13 @@ To work correctly for aggregations, RLS expressions should filter both the aggre
 
 In the following example, the RLS expression on the **Geography** table works for aggregations, because Geography is on the filtering side of relationships to both the **Sales** table and the **Sales Agg** table. Queries that hit the aggregation table and those that don't will both have RLS successfully applied.
 
-![Successful RLS for aggregations](media/desktop-aggregations/manage-roles.png)
+![Successful RLS for aggregations](media/aggregations-advanced/manage-roles.png)
 
 An RLS expression on the **Product** table filters only the detail **Sales** table, not the aggregated **Sales Agg** table. Since the aggregation table is another representation of the data in the detail table, it would be insecure to answer queries from the aggregation table if the RLS filter can't be applied. Filtering only the detail table isn't recommended, because user queries from this role won't benefit from aggregation hits. 
 
 An RLS expression that filters only the **Sales Agg** aggregation table and not the **Sales** detail table isn't allowed.
 
-![RLS on aggregation table only is not allowed](media/desktop-aggregations/filter-agg-error.jpg)
+![RLS on aggregation table only is not allowed](media/aggregations-advanced/filter-agg-error.png)
 
 For [aggregations based on GroupBy columns](#aggregation-based-on-groupby-columns), an RLS expression applied to the detail table can be used to filter the aggregation table, because all the GroupBy columns in the aggregation table are covered by the detail table. On the other hand, an RLS filter on the aggregation table can't be applied to the detail table, so is disallowed.
 
@@ -84,7 +84,7 @@ Dimensional models typically use *aggregations based on relationships*. Power BI
 
 In the following example, the model gets data from a single data source. Tables are using DirectQuery storage mode. The **Sales** fact table contains billions of rows. Setting the storage mode of **Sales** to Import for caching would consume considerable memory and resources overhead.
 
-![Detail tables in a model](media/desktop-aggregations/aggregations_02.jpg)
+![Detail tables in a model](media/aggregations-advanced/aggregations_02.png)
 
 Instead, create the **Sales Agg** aggregation table. In the **Sales Agg** table, the number of rows equals the sum of **SalesAmount** grouped by **CustomerKey**, **DateKey**, and **ProductSubcategoryKey**. The **Sales Agg** table is at a higher granularity than **Sales**, so instead of billions, it might contain millions of rows, which are much easier to manage.
 
@@ -98,18 +98,18 @@ If the following dimension tables are the most commonly used for the queries wit
 
 The following image shows this model.
 
-![Aggregation table in a model](media/desktop-aggregations/aggregations_03.jpg)
+![Aggregation table in a model](media/aggregations-advanced/aggregations_03.png)
 
 The following table shows the aggregations for the **Sales Agg** table.
 
-![Aggregations for the Sales Agg table](media/desktop-aggregations/aggregations-table_01.jpg)
+![Aggregations for the Sales Agg table](media/aggregations-advanced/aggregations-table_01.png)
 
 > [!NOTE]
 > The **Sales Agg** table, like any table, has the flexibility of being loaded in a variety of ways. The aggregation can be performed in the source database using ETL/ELT processes, or by the [M expression](/powerquery-m/power-query-m-function-reference) for the table. The aggregated table can use Import storage mode, with or without [Incremental refresh for datasets](../connect-data/incremental-refresh-overview.md), or it can use DirectQuery and be optimized for fast queries using [columnstore indexes](/sql/relational-databases/indexes/columnstore-indexes-overview). This flexibility enables balanced architectures that can spread query load to avoid bottlenecks.
 
 Changing the storage mode of the aggregated **Sales Agg** table to **Import** opens a dialog box saying that the related dimension tables can be set to storage mode *Dual*. 
 
-![Storage mode dialog](media/desktop-aggregations/aggregations_05.jpg)
+![Storage mode dialog](media/aggregations-advanced/aggregations_05.png)
 
 Setting the related dimension tables to Dual lets them act as either Import or DirectQuery, depending on the subquery. In the example:
 
@@ -138,31 +138,31 @@ For *cross-source* aggregation hits that don't depend on relationships, see [Agg
 
 The following query hits the aggregation, because columns in the **Date** table are at the granularity that can hit the aggregation. The **SalesAmount** column uses the **Sum** aggregation.
 
-![Successful relationship-based aggregation query](media/desktop-aggregations/aggregations-code_02.jpg)
+![Successful relationship-based aggregation query](media/aggregations-advanced/aggregations-code_02.png)
 
 The following query doesn't hit the aggregation. Despite requesting the sum of **SalesAmount**, the query is performing a GroupBy operation on a column in the **Product** table, which isn't at the granularity that can hit the aggregation. If you observe the relationships in the model, a product subcategory can have multiple **Product** rows. The query wouldn't be able to determine which product to aggregate to. In this case, the query reverts to DirectQuery and submits a SQL query to the data source.
 
-![Query that can't use the aggregation](media/desktop-aggregations/aggregations-code_03.jpg)
+![Query that can't use the aggregation](media/aggregations-advanced/aggregations-code_03.png)
 
 Aggregations aren't just for simple calculations that perform a straightforward sum. Complex calculations can also benefit. Conceptually, a complex calculation is broken down into subqueries for each SUM, MIN, MAX, and COUNT, and each subquery is evaluated to determine if it can hit the aggregation. This logic doesn't hold true in all cases due to query-plan optimization, but in general it should apply. The following example hits the aggregation:
 
-![Complex aggregation query](media/desktop-aggregations/aggregations-code_04.jpg)
+![Complex aggregation query](media/aggregations-advanced/aggregations-code_04.png)
 
 The COUNTROWS function can benefit from aggregations. The following query hits the aggregation because there is a **Count table rows** aggregation defined for the **Sales** table.
 
-![COUNTROWS aggregation query](media/desktop-aggregations/aggregations-code_05.jpg)
+![COUNTROWS aggregation query](media/aggregations-advanced/aggregations-code_05.png)
 
 The AVERAGE function can benefit from aggregations. The following query hits the aggregation because AVERAGE internally gets folded to a SUM divided by a COUNT. Since the **UnitPrice** column has aggregations defined for both SUM and COUNT, the aggregation is hit.
 
-![AVERAGE aggregation query](media/desktop-aggregations/aggregations-code_06.jpg)
+![AVERAGE aggregation query](media/aggregations-advanced/aggregations-code_06.png)
 
 In some cases, the DISTINCTCOUNT function can benefit from aggregations. The following query hits the aggregation because there is a GroupBy entry for **CustomerKey**, which maintains the distinctness of **CustomerKey** in the aggregation table. This technique might still hit the performance threshold where more than two to five million distinct values can affect query performance. However, it can be useful in scenarios where there are billions of rows in the detail table, but two to five million distinct values in the column. In this case, the DISTINCTCOUNT can perform faster than scanning the table with billions of rows, even if it were cached into memory.
 
-![DISTINCTCOUNT aggregation query](media/desktop-aggregations/aggregations-code_07.jpg)
+![DISTINCTCOUNT aggregation query](media/aggregations-advanced/aggregations-code_07.png)
 
 DAX time-intelligence functions are aggregation aware. The following query hits the aggregation because the DATESYTD function generates a table of **CalendarDay** values, and the aggregation table is at a granularity that is covered for group-by columns in the **Date** table. This is an example of a table-valued filter to the CALCULATE function, which can work with aggregations.
 
-![SUMMARIZECOLUMNS aggregation query](media/desktop-aggregations/aggregations-code-07b.jpg)
+![SUMMARIZECOLUMNS aggregation query](media/aggregations-advanced/aggregations-code-07b.png)
 
 ## Aggregation based on GroupBy columns 
 
@@ -170,21 +170,21 @@ Hadoop-based big data models have different characteristics than dimensional mod
 
 The following table contains the **Movement** numeric column to be aggregated. All the other columns are attributes to group by. The table contains IoT data and a massive number of rows. The storage mode is DirectQuery. Queries on the data source that aggregate across the whole dataset are slow because of the sheer volume. 
 
-![An IoT table](media/desktop-aggregations/aggregations_09.jpg)
+![An IoT table](media/aggregations-advanced/aggregations_09.png)
 
 To enable interactive analysis on this dataset, you can add an aggregation table that groups by most of the attributes, but excludes the high-cardinality attributes like longitude and latitude. This dramatically reduces the number of rows, and is small enough to comfortably fit into an in-memory cache. 
 
-![Driver Activity Agg table](media/desktop-aggregations/aggregations_10.jpg)
+![Driver Activity Agg table](media/aggregations-advanced/aggregations_10.png)
 
 You define the aggregation mappings for the **Driver Activity Agg** table in the **Manage aggregations** dialog. 
 
-![Manage aggregations dialog for the Driver Activity Agg table](media/desktop-aggregations/aggregations_11.jpg)
+![Manage aggregations dialog for the Driver Activity Agg table](media/aggregations-advanced/aggregations_11.png)
 
 In aggregations based on GroupBy columns, the **GroupBy** entries aren't optional. Without them, the aggregations won't get hit. This is different from using aggregations based on relationships, where the GroupBy entries are optional.
 
 The following table shows the aggregations for the **Driver Activity Agg** table.
 
-![Driver Activity Agg aggregations table](media/desktop-aggregations/aggregations-table_02.jpg)
+![Driver Activity Agg aggregations table](media/aggregations-advanced/aggregations-table_02.png)
 
 You can set the storage mode of the aggregated **Driver Activity Agg** table to Import.
 
@@ -192,11 +192,11 @@ You can set the storage mode of the aggregated **Driver Activity Agg** table to 
 
 The following query hits the aggregation, because the **Activity Date** column is covered by the aggregation table. The COUNTROWS function uses the **Count table rows** aggregation.
 
-![Successful GroupBy aggregation query](media/desktop-aggregations/aggregations-code_08.jpg)
+![Successful GroupBy aggregation query](media/aggregations-advanced/aggregations-code_08.png)
 
 Especially for models that contain filter attributes in fact tables, it's a good idea to use **Count table rows** aggregations. Power BI may submit queries to the dataset using COUNTROWS in cases where it is not explicitly requested by the user. For example, the filter dialog shows the count of rows for each value.
 
-![Filter dialog](media/desktop-aggregations/aggregations-12.png)
+![Filter dialog](media/aggregations-advanced/aggregations-12.png)
 
 ## Combined aggregation techniques
 
@@ -204,25 +204,25 @@ You can combine the relationships and GroupBy columns techniques for aggregation
 
 For example, the following model replicates **Month**, **Quarter**, **Semester**, and **Year** in the **Sales Agg** table. There is no relationship between **Sales Agg** and the **Date** table, but there are relationships to **Customer** and **Product Subcategory**. The storage mode of **Sales Agg** is Import.
 
-![Combined aggregation techniques](media/desktop-aggregations/aggregations_15.jpg)
+![Combined aggregation techniques](media/aggregations-advanced/aggregations_15.png)
 
 The following table shows the entries set in the **Manage aggregations** dialog for the **Sales Agg** table. The GroupBy entries where **Date** is the detail table are mandatory, to hit aggregations for queries that group by the **Date** attributes. As in the previous example, the **GroupBy** entries for **CustomerKey** and **ProductSubcategoryKey** don't affect aggregation hits, except for DISTINCTCOUNT, because of the presence of relationships.
 
-![Entries for the Sales Agg aggregations table](media/desktop-aggregations/aggregations-table_04.jpg)
+![Entries for the Sales Agg aggregations table](media/aggregations-advanced/aggregations-table_04.png)
 
 ### Combined aggregation query examples
 
 The following query hits the aggregation, because the aggregation table covers **CalendarMonth**, and **CategoryName** is accessible via one-to-many relationships. **SalesAmount** uses the **SUM** aggregation.
 
-![Query example that hits the aggregation](media/desktop-aggregations/aggregations-code_09.jpg)
+![Query example that hits the aggregation](media/aggregations-advanced/aggregations-code_09.png)
 
 The following query doesn't hit the aggregation, because the aggregation table doesn't cover **CalendarDay**.
 
-![Screenshot shows text of a query that includes CalendarDay.](media/desktop-aggregations/aggregations-code_10.jpg)
+![Screenshot shows text of a query that includes CalendarDay.](media/aggregations-advanced/aggregations-code_10.png)
 
 The following time-intelligence query doesn't hit the aggregation, because the DATESYTD function generates a table of **CalendarDay** values, and the aggregation table doesn't cover **CalendarDay**.
 
-![Screenshot shows text of a query that includes the DATESYTD function.](media/desktop-aggregations/aggregations-code_11.jpg)
+![Screenshot shows text of a query that includes the DATESYTD function.](media/aggregations-advanced/aggregations-code_11.png)
 
 ## Aggregation precedence
 
@@ -239,17 +239,17 @@ The following example is a [composite model](desktop-composite-models.md) contai
 
 The memory footprint of this model is relatively small, but it unlocks a huge dataset. It represents a balanced architecture because it spreads the query load across components of the architecture, utilizing them based on their strengths.
 
-![Tables for a small-footprint model that unlocks a huge dataset](media/desktop-aggregations/aggregations_13.jpg)
+![Tables for a small-footprint model that unlocks a huge dataset](media/aggregations-advanced/aggregations_13.png)
 
 The **Manage aggregations** dialog for **Driver Activity Agg2** sets the **Precedence** field to *10*, which is higher than for **Driver Activity Agg**. The higher precedence setting means queries that use aggregations will consider **Driver Activity Agg2** first. Subqueries that aren't at the granularity that can be answered by **Driver Activity Agg2** will consider **Driver Activity Agg** instead. Detail queries that cannot be answered by either aggregation table will be directed to **Driver Activity**.
 
 The table specified in the **Detail Table** column is **Driver Activity**, not **Driver Activity Agg**, because chained aggregations are not allowed.
 
-![Screenshot shows the Manage aggregations dialog box with Precedence called out.](media/desktop-aggregations/aggregations_14.jpg)
+![Screenshot shows the Manage aggregations dialog box with Precedence called out.](media/aggregations-advanced/aggregations_14.png)
 
 The following table shows the aggregations for the **Driver Activity Agg2** table.
 
-![Driver Activity Agg2 aggregations table](media/desktop-aggregations/aggregations-table_03.jpg)
+![Driver Activity Agg2 aggregations table](media/aggregations-advanced/aggregations-table_03.png)
 
 ## Detect whether queries hit or miss aggregations
 
@@ -263,7 +263,7 @@ The following JSON snippet shows an example of the output of the event when an a
 - **dataRequest** shows the GroupBy column(s) and aggregated column(s) the subquery used.
 - **mapping** shows the columns in the aggregation table that were mapped to.
 
-![Output of an event when aggregation is used](media/desktop-aggregations/aggregations-code_01.jpg)
+![Output of an event when aggregation is used](media/aggregations-advanced/aggregations-code_01.png)
 
 ## Keep caches in sync
 
