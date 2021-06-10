@@ -14,7 +14,7 @@ ms.date: 06/10/2021
 
 Sometimes you want to allow the user to interact with the visual by selecting, zooming, or clicking on it. Other times you want the visual to remain static without the ability to interact with it.
 
-Visuals can query the value of the `allowInteractions` flag, which indicates whether the visual should allow visual interactions. For example, visuals can be interactive during report viewing or editing, but not interactive when they're viewed in a dashboard. These interactions are *click*, *pan*, *zoom*, *selection*, and others.
+Visuals can query the value of the `allowInteractions` flag, which indicates whether the visual should allow visual interactions. For example, visuals can be interactive during [report](../../create-reports/desktop-report-view.md) viewing or editing, but not interactive when they're viewed in a [dashboard](../../create-reports/service-dashboards.md). These interactions include *click*, *pan*, *zoom*, *selection*, and others.
 
 > [!NOTE]
 > You should [enable tooltips](add-tooltips.md#manage-tooltips) in all scenarios, regardless of which flag is indicated.
