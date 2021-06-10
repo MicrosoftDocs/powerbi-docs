@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 04/09/2020
+ms.date: 06/09/2021
 ---
 
 # Tooltips in Power BI visuals
