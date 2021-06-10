@@ -20,7 +20,7 @@ If you set the `supportsHighlight` property in your `capabilities.json` to `true
 
 ![`dataview` supports highlight](media/highlight/highlight-dataview-supports.png)
 
-In the example, you'll notice that 1 bar is selected. And it's the only value in the highlights array. It's also important to note that there could be multiple selections and partial highlights. The highlighted values will be presented in the data view.
+In the example, you'll notice that one bar is selected, and that is the only value in the highlights array. There can also be multiple selections and partial highlights. The highlighted values will be presented in the data view.
 
 > [!NOTE]
 > Table data view mapping doesn't support the highlights feature.
