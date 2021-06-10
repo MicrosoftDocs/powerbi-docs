@@ -181,7 +181,7 @@ Multi-geo is supported. It may take longer to deploy content between stages in d
 
 When working with deployment pipelines, you might end up with a pipeline that doesn't have an owner. For example, a pipeline can be left without an owner when a user that owned it leaves the company without transferring ownership. When a pipeline doesn't have an owner, other users will not be able to access it. As a workspace can only be assigned to one pipeline, if it's assigned to a pipeline without an owner, nobody will be able to unassign it, and you'll not be able to use the workspace in another pipeline.
 
-When a pipeline is left without an owner, you can use the [admin Power BI REST APIs](/rest/api/power-bi/admin) to add an owner to the pipeline, or delete it. To add an owner to the pipeline, use the [Admin - Pipelines UpdateUserAsAdmin](/rest/api/power-bi/admin/pipelines-update-user-as-admin) API. To delete a pipeline, use the [Admin - Pipelines DeleteUserAsAdmin](/rest/api/power-bi/admin/pipelines-delete-user-as-admin) API.
+When a pipeline is left without an owner, a Power BI administrator can use the [admin Power BI REST APIs](/rest/api/power-bi/admin) to add an owner to the pipeline, or delete it. To add an owner to the pipeline, use the [Admin - Pipelines UpdateUserAsAdmin](/rest/api/power-bi/admin/pipelines-update-user-as-admin) API. To delete a pipeline, use the [Admin - Pipelines DeleteUserAsAdmin](/rest/api/power-bi/admin/pipelines-delete-user-as-admin) API.
 
 You can also review our PowerShell script, [AddUserToWorkspacePipeline](link), which shows how to add a user to a pipeline.
 
