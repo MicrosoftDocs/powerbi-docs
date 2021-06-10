@@ -89,17 +89,17 @@ With each refresh operation, the Power BI service may send initialization querie
 
 After publishing to the service, the initial full refresh operation for the dataset creates partitions for the incremental refresh table, loads, and processes historical data for the entire period defined in the incremental refresh policy. For some datasets that will load and process large amounts of data, the amount of time the initial refresh operation takes can exceed the refresh time limit imposed by the service or a query time limit imposed by the data source.
 
-Bootstrapping the initial refresh operation allows the service to create partition objects for the incremental refresh table, but not load and process historical data into any of the partitions. SSMS is then used to selectively process partitions. Depending on the amount of data to be loaded for each partition, you can process each partition sequentially or in small batches to reduce the potential for one or more of those partitions to cause a timeout.
+Bootstrapping the initial refresh operation allows the service to create partition objects for the incremental refresh table, but not load and process historical data into any of the partitions. SSMS is then used to selectively process partitions. Depending on the amount of data to be loaded for each partition, you can process each partition sequentially or in small batches to reduce the potential for one or more of those partitions to cause a timeout. The following methods work for any data source.
 
 #### Apply Refresh Policy
 
-The open-source [Tabular Editor 2](https://github.com/otykier/TabularEditor/releases/) tool provides an easy way to bootstrap an initial refresh operation. After publishing a model with an incremental refresh policy defined for it from Power BI Desktop to the service, connect to the dataset in Live mode by using the XMLA endpoint in Read/Write mode. Run **Apply Refresh Policy** on the incremental refresh table. With only the policy applied, partitions are created but no data is  loaded into them. Then connect with SSMS to refresh the partitions sequentially or in batches to load and process the data. To learn more, see [Incremental refresh in Tabular Editor docs](https://docs.tabulareditor.com/incremental-refresh.html).
+The open-source [Tabular Editor 2](https://github.com/otykier/TabularEditor/releases/) tool provides an easy way to bootstrap an initial refresh operation. After publishing a model with an incremental refresh policy defined for it from Power BI Desktop to the service, connect to the dataset by using the XMLA endpoint in Read/Write mode. Run **Apply Refresh Policy** on the incremental refresh table. With only the policy applied, partitions are created but no data is loaded into them. Then connect with SSMS to refresh the partitions sequentially or in batches to load and process the data. To learn more, see [Incremental refresh in Tabular Editor docs](https://docs.tabulareditor.com/incremental-refresh.html).
 
 :::image type="content" source="media/incremental-refresh-xmla/tabular-editor.png" alt-text="Tabular Editor":::
 
 #### Power Query filter for empty partitions
 
-Prior to publishing the model to the service, in Power Query Editor, you add another filter to the ProductKey column that filters out any value other than 0, effectively  or filtering out *all* data from the FactInternetSales table. 
+Prior to publishing the model to the service, in Power Query Editor, add another filter to the ProductKey column that filters out any value other than 0, effectively or filtering out *all* data from the FactInternetSales table.
 
 ![Filter out product key](media/incremental-refresh-xmla/filter-product-key.png)
 
