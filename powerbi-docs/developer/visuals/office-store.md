@@ -117,12 +117,13 @@ Once your visual is created, if you want you can get your visual [certified](pow
 
 ## Next steps
 
-* [Developing a Power BI circle card visual](develop-circle-card.md)
+>[!div class="nextstepaction"]
+>[Developing a Power BI circle card visual](develop-circle-card.md)
 
-* [Visualizations in Power BI](../../visuals/power-bi-report-visualizations.md)  
+>[!div class="nextstepaction"]
+>[Test you Power BI visual](submission-testing.md)  
 
-* [Visuals in Power BI](power-bi-custom-visuals.md)  
-
-* [Getting a Power BI visual certified](power-bi-custom-visuals-certified.md)
+>[!div class="nextstepaction"]
+>[Getting a Power BI visual certified](power-bi-custom-visuals-certified.md)
 
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
