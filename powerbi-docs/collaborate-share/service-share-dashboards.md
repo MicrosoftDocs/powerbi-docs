@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 06/02/2021
+ms.date: 06/10/2021
 LocalizationGroup: Share your work
 ---
 # Share Power BI reports and dashboards with coworkers and others
@@ -198,7 +198,8 @@ Things to keep in mind about sharing reports and dashboards:
 * Everyone you successfully share your dashboard with can see it and interact with the related reports in [Reading view](../consumer/end-user-reading-view.md#reading-view). In general, they can't create reports or save changes to existing reports. However, if you select **Allow recipients to build content with the data associated with this dashboard**, they can create their own reports in other workspaces based on the dataset for this dashboard.
 * Although no one can see or download the dataset, they can access the dataset directly by using the Analyze in Excel feature. An admin can restrict the ability to use Analyze in Excel for everyone in a group. However, the restriction is for everyone in that group and for every workspace the group belongs to.
 * Everyone can manually [refresh the data](../connect-data/refresh-data.md).
-* If you use Microsoft 365 for email, you can share with members of a distribution group by entering the email address associated with the distribution group.
+* If you use Microsoft 365 Exchange Online for email, you can share with members of a distribution group by entering the email address associated with the distribution group.
+* You can’t use Microsoft 365 Unified groups for direct sharing. If you don’t want to specify individuals, you can use a security group to share with multiple users.
 * Coworkers who share your email domain, and coworkers whose domain is different but registered within the same tenant, can share the dashboard with others. For example, say the domains contoso.com and contoso2.com are registered in the same tenant and your email address is konrads@contoso.com. Both ravali@contoso.com and gustav@contoso2.com can share your dashboard, as long as you give them permission to share.
 * If your coworkers already have access to a specific report or dashboard, you can send a direct link by copying the URL when you're on the dashboard or report. For example: `https://app.powerbi.com/reports/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`.
 * Currently, sharing reports via links doesn’t support the option to **Include my changes**; however, you can use direct access sharing for this scenario.
