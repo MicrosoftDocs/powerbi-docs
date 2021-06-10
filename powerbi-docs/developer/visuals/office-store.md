@@ -126,4 +126,4 @@ Once your visual is created, if you want you can get your visual [certified](pow
 >[!div class="nextstepaction"]
 >[Getting a Power BI visual certified](power-bi-custom-visuals-certified.md)
 
-* More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+**More questions?** [Try asking the Power BI Community](https://community.powerbi.com/)
