@@ -72,7 +72,7 @@ Auto-binding works only with Power BI items that are supported by deployment pip
 
 Data in the target Power BI item, such as a dataset or dataflow, is kept when possible. If there are no changes to a Power BI item that holds the data, the data is kept as it was before the deployment.
 
-With small changes, such as adding a table or a measure, Power BI keeps the original data. For breaking schema changes, or changes in the data source connection, a full refresh is required.
+In many cases, when you have small changes, such as adding a table or a measure, Power BI keeps the original data. For breaking schema changes, or changes in the data source connection, a full refresh is required.
 
 ### Requirements for deploying to a stage with an existing workspace
 

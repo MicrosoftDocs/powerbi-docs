@@ -175,7 +175,7 @@ After a deployment fails due to schema changes, the target stage displays the *D
 
 ### Why is my visual broken after deploying a dataset or a dataflow?
 
-Datasets and dataflows are data related Power BI items, that contain both data and metadata. During deployment, only the metadata is copied while the data isn't. When you deploy a report that relies on data related Power BI item's data, even if the item is deployed, the report's visual can't access the item's data as it's not there. To solve this problem, refresh the dataset and the dataflow in the target stage.
+Datasets and dataflows are data related Power BI items, that contain both data and metadata. During deployment, only the metadata is copied while the data isn't. When you deploy a report that relies on data related Power BI item's data, even if the item is deployed, the report's visual can't access the item's data as it's not there. To solve this problem, refresh the dataflow and then refresh the dataset in the target stage.
 
 ### Does deployment pipelines support multi-geo?
 
