@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 02/24/2021
+ms.date: 02/25/2021
 LocalizationGroup: Gateways
 ---
 
@@ -321,7 +321,7 @@ First, determine whether your organization is using OpenSSL or commoncrypto as t
 1. Open the Administration Console for the tenant that you're using.
 1. Select the **Configuration** tab, and use **sslcryptoprovider** as a filter, as shown in the following image:
 
-   :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-03.png" alt-text="Screenshot of the sslcryptoprovider information in SAP HANA Studio.":::
+   :::image type="content" source="media/service-gateway-sso-saml/sap-hana-kerberos-troubleshooting-03.png" alt-text="Screenshot of the sslcryptoprovider information in SAP HANA Studio.":::
 
 Next, verify that the cryptographic library is set correctly by doing the following:
 
@@ -331,11 +331,11 @@ Next, verify that the cryptographic library is set correctly by doing the follow
 
     In the following image, **SAP Cryptographic Library** is selected:
 
-    :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-04.png" alt-text="Screenshot of SAP HANA Studio with 'SAP Cryptographic Library' selected as the sslcryptoprovider.":::
+    :::image type="content" source="media/service-gateway-sso-saml/sap-hana-kerberos-troubleshooting-04.png" alt-text="Screenshot of SAP HANA Studio with 'SAP Cryptographic Library' selected as the sslcryptoprovider.":::
 
 1. Deploy your changes by selecting the **Deploy** button at the upper right, as shown in the following image:
 
-    :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-05.png" alt-text="Screenshot of the 'Deploy' button for deploying your solution changes.":::
+    :::image type="content" source="media/service-gateway-sso-saml/sap-hana-kerberos-troubleshooting-05.png" alt-text="Screenshot of the 'Deploy' button for deploying your solution changes.":::
 
 **Validation**
 
@@ -383,7 +383,7 @@ The error indicates that nameId `johnny@contoso.com` is found in the SAML assert
 
 Go to the HANA database user and, under the selected SAML checkbox, select the **Configure** link. The following window appears:
 
-:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-06.png" alt-text="Screenshot showing that the incorrect user name is displayed.":::
+:::image type="content" source="media/service-gateway-sso-saml/sap-hana-kerberos-troubleshooting-06.png" alt-text="Screenshot showing that the incorrect user name is displayed.":::
 
 As the error message describes, HANA was trying to find *johnny@contoso.com*, but the external identity is displayed only as *johnny*. These two values must match. To resolve the issue, under **External Identity**, change the value to *johnny@contoso.com*. Note that this value is case sensitive.
 
