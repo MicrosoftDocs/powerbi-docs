@@ -69,7 +69,5 @@ Read about how to [get started with deployment pipelines](../create-reports/depl
 
 - [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
 - [Video-based course: Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md)
-- [Keyboard shortcuts for accessibility in Report Builder](/sql/reporting-services/report-builder/keyboard-shortcuts-report-builder)
-- [Keyboard shortcuts for accessibility in Report Builder - with context](/sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context)
-- [Keyboard shortcuts for accessibility in Report Builder - with context](/sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?toc=/power-bi/create-reports/toc.json&breadcrumb=/power-bi/create-reports/breadcrumb/toc.json)
+- [Keyboard shortcuts for accessibility in Report Builder](/sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context)
 - [Sample Power BI paginated reports](paginated-reports-samples.md)
