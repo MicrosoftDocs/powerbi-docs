@@ -352,7 +352,7 @@ This section lists most of the limitations in deployment pipelines.
 
 * After deployment, downloading a dataset (from the stage it's been deployed to) is not supported.
 
-* For a list of deployment rule limitations, see [deployment rules limitations](deployment-pipelines-get-started.md#deployment-rules-limitations).
+* For a list of deployment rule limitations, see [deployment rules limitations](deployment-pipelines-get-started.md#deployment-rule-limitations).
 
 ### Dataflow limitations
 
@@ -362,7 +362,7 @@ This section lists most of the limitations in deployment pipelines.
 
 * In deployment pipelines, service principal isn't supported for dataflows.
 
-* For deployment pipeline rule limitations that effect dataflows, see [Deployment rules limitations](deployment-pipelines-get-started.md#deployment-rules-limitations).
+* For deployment pipeline rule limitations that effect dataflows, see [Deployment rules limitations](deployment-pipelines-get-started.md#deployment-rule-limitations).
 
 ## Next steps
 

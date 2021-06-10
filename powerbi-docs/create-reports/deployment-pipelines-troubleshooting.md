@@ -107,7 +107,7 @@ For a comprehensive list of items and artifacts that are not supported in deploy
 
 ### Why did my deployment fail due to broken rules?
 
-If you have problems configuring deployment rules, visit [deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules), and make sure you follow the [deployment rules limitations](deployment-pipelines-get-started.md#deployment-rules-limitations).
+If you have problems configuring deployment rules, visit [deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules), and make sure you follow the [deployment rules limitations](deployment-pipelines-get-started.md#deployment-rule-limitations).
 
 If your deployment was previously successful, and is suddenly failing with broken rules, it may be due to a dataset being republished. The following changes to the source dataset, result in a failed deployment:
 
