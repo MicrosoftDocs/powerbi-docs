@@ -450,6 +450,10 @@
         href: ../paginated-reports/report-builder-url-pass-parameters.md
       - name: Publish a paginated report
         href: ../paginated-reports/paginated-reports-save-to-power-bi-service.md
+      - name: Keyboard shortcuts in Power BI Report Builder
+        href: https://docs.microsoft.com/sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context
+      - name: Keyboard shortcuts in Power BI Report Builder
+        href: https://docs.microsoft.com/sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?toc=/power-bi/create-reports/toc.json&breadcrumb=/power-bi/create-reports/breadcrumb/toc.json
     - name: "Deployment pipelines"  
       items:
       - name: "Get started"
