@@ -115,7 +115,7 @@ There are a few requirements for creating dataflows from CDM folders, as the fol
 
 Creating a dataflow using import/export lets you import a dataflow from a file. This is useful if you want to save a dataflow copy offline, or move a dataflow from one workspace to another. 
 
-To export a dataflow, select the dataflow you created and select the **More** menu item (the ellipsis) to expand the options, and then select **export .json**. You are prompted to begin the download of the dataflow represented in CDM format.
+To export a dataflow, select the dataflow you created and select the **More** menu item (the ellipsis) to expand the options, and then select **Export .json**. You are prompted to begin the download of the dataflow represented in CDM format.
 
 ![create computed table step 7](media/dataflows-create/export-dataflow.png)
 
