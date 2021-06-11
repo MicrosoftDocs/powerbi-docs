@@ -7,7 +7,7 @@ ms.reviewer: 'mibruhje'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 06/10/2021
+ms.date: 06/11/2021
 ---
 
 # Create and use the paginated report visual
@@ -65,7 +65,8 @@ This visual brings the power of paginated reports to your Power BI reports. You 
 
 1. If making edits in the Power BI service, select **Save** to save your changes. If making edits in Power BI Desktop, select **Publish**, then choose a workspace in a Premium capacity to publish your Power BI report to the Power BI service.  
 
-    We recommend saving the Power BI report with the paginated report visual to the same workspace as the paginated report. This ensures that readers with access to the Power BI report also have access to the paginated report, which is required for the paginated report visual to render. 
+    > [!NOTE]
+    > We recommend saving the Power BI report with the paginated report visual to the same workspace as the paginated report. This ensures that readers with access to the Power BI report also have access to the paginated report, which is required for the paginated report visual to render. 
 
     :::image type="content" source="media/paginated-report-visual/paginated-report-visual-step-7.png" alt-text="Screenshot of publishing the report to the Power BI service.":::
 
@@ -101,7 +102,7 @@ When mapping an aggregate field in Power BI (for example, Sum, Average, Minimum,
 
 When you use a Power BI dataset as the data source for your paginated report and set up a date parameter in your query that then automatically generates the parameter table and parameter, using that parameter in a paginated report parameter will fail. The paginated report visually treats the parameter as a text field and fails to match the Power BI date field. There are three options to work around this: 
 
-- From the Power BI data source, create a dataset of just the date values and use this dataset as your parameter, setting the data type as Date/Time.  
+- From the same Power BI data source, create a new dataset with only the date values. Use this dataset as the available values for your parameter, setting the data type of the parameter as Date/Time.
 - Manually change the DAX query text in the auto-generated dataset to remove the part that sets the parameter to be a text value.  
 - Change the Power BI dataset using Power Query to add a column that formats the date field as a text field.
 
