@@ -40,7 +40,7 @@ Power BI *designers* can share an individual report directly with you via a link
    
    ![shared with me section of Home page](./media/end-user-report-open/power-bi-shared-new.png)
 
-4. Simply select the report *card* to open the report.
+4. Simply select the report name to open the report.
 
    ![report page](./media/end-user-report-open/power-bi-open.png)
 
