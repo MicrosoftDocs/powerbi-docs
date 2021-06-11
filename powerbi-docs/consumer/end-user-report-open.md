@@ -36,7 +36,7 @@ Power BI *designers* can share an individual report directly with you via a link
 
    ![Home canvas](./media/end-user-report-open/power-bi-open-home.png)
    
-3. Scroll down until you see **Shared with me**. Look for the report icon ![report icon](./media/end-user-report-open/power-bi-report-icon.png). In this screenshot we have one dashboard and one report. The report is named *Sales and marketing sample*. 
+3. Scroll down until you see **Shared with me**. Look for the report icon ![report icon](./media/end-user-report-open/power-bi-report-icon.png). In this screenshot we have one dashboard and one report. The report is named *Sales and Marketing Sample*.
    
    ![shared with me section of Home page](./media/end-user-report-open/power-bi-shared-new.png)
 
