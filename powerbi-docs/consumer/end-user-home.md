@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 12/04/2020
+ms.date: 06/11/2021
 LocalizationGroup: Get started
 ---
 # Find your dashboards, reports, and apps
