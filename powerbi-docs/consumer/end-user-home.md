@@ -71,9 +71,9 @@ The next section is a tabbed list.
 ![Home list view with Recent tab selected](./media/end-user-home/power-bi-recents.png)
 
 ### Workspaces
-Every Power BI service user has one **My workspace**. **My workspace** will only contain content if you've downloaded Microsoft samples or created your own dashboards, reports, or apps. For many *business users*, **My workspace** will be empty and will remain empty. If you're a brand new user, you will only have one workspace, **My workspace** 
+Every Power BI service user has one **My workspace**. **My workspace** will only contain content if you've downloaded Microsoft samples or created your own dashboards, reports, or apps. For many *business users*, **My workspace** will be empty and will remain empty. If you're a brand new user, you will only have one workspace, **My workspace**.
 
-![Only one workspace, My workspace](./media/end-user-home/power-bi-one-workspace.png)
+![Only one workspace, My workspace.](./media/end-user-home/power-bi-one-workspace.png)
 
 And if you select that one workspace, you'll find it empty.
 
