@@ -42,11 +42,11 @@ The Power BI team ships weekly feature updates to the service and on-demand targ
 
 Live site incidents can be divided into several different categories:
 
-1.	Dependent-service issues (such as Azure AD, Azure SQL, Storage, VMSS, Service Fabric)
-2.	Infrastructure outage (such as a hardware failure, data center failure)
-3.	Power BI environmental configuration issues (such as insufficient capacity)
-4.	Power BI service code regressions
-5.	Customer misconfiguration (such as insufficient resources, bad queries/reports)
+* Dependent-service issues (such as Azure AD, Azure SQL, Storage, virtual machine scale set, Service Fabric)
+* Infrastructure outage (such as a hardware failure, data center failure)
+* Power BI environmental configuration issues (such as insufficient capacity)
+* Power BI service code regressions
+* Customer misconfiguration (such as insufficient resources, bad queries/reports)
 
 Reducing incident volume is one way to decrease live site burden and to improve customer satisfaction. However, doing so isn't always possible given that some of the incident categories are outside the team's direct control. Furthermore, as the service footprint expands to support rapid growth in usage, the probability of an incident occurring due to external factors increases. High incident counts can occur even in cases where the Power BI service has minimal service code regressions, and has met or exceeded its Service Level Objective (SLO) for overall reliability of 99.95%, which has led the Power BI team to devote significant resources to reducing incident costs to a level that is sustainable, by both financial and engineering measures.
 
@@ -92,7 +92,7 @@ When an automated live site incident is created for the Power BI service, one of
 
 * **TTN0 (Time To Notify “0”)** is a fully automated incident notification service that uses our internal alerting infrastructure to identify specific scenarios and customers that are impacted by a newly created incident. It is also integrated with external monitoring agents outside of Azure to detect connectivity issues that might otherwise go unnoticed. TTN0 allows customers to receive an email when TTN0 detects a service disruption or degradation. With TTN0, the Power BI team can send reliable, targeted notifications within 10 minutes of impact start time (which is 33% faster than the Azure target). Since the solution is fully automated, there is minimal risk from human error or delays. As of May 2021, more than 8,000 companies (including 16% of Microsoft strategic 500 accounts) have registered for TTN0 alerts.
 
-As mentioned in the previous section, Power BI’s live site philosophy emphasizes automated resolution of incidents to improve overall scalability and sustainability of the SRE team. The emphasis on automation enables mitigation at scale and can potentially avoid costly rollbacks or risky expedited fixes to production systems. When manual investigation is required, Power BI adopts a tiered approach with initial investigation done by a dedicated SRE team. SRE team members are experienced in managing live site incidents, facilitating cross-team communication, and driving mitigation. In cases where the acting SRE team member requires more context on an impacted scenario/component, they may engage the Subject Matter Expert (SME) of that area for guidance. Finally, the SME team conducts simulations of system component failures to understand and to mitigate issues in advance of an active live site incident. 
+    As mentioned in the previous section, Power BI’s live site philosophy emphasizes automated resolution of incidents to improve overall scalability and sustainability of the SRE team. The emphasis on automation enables mitigation at scale and can potentially avoid costly rollbacks or risky expedited fixes to production systems. When manual investigation is required, Power BI adopts a tiered approach with initial investigation done by a dedicated SRE team. SRE team members are experienced in managing live site incidents, facilitating cross-team communication, and driving mitigation. In cases where the acting SRE team member requires more context on an impacted scenario/component, they may engage the Subject Matter Expert (SME) of that area for guidance. Finally, the SME team conducts simulations of system component failures to understand and to mitigate issues in advance of an active live site incident. 
 
 Once the affected component/scenario of the service is determined, the Power BI team has multiple techniques for quickly mitigating impact. Some of them are the following:
 
@@ -100,7 +100,7 @@ Once the affected component/scenario of the service is determined, the Power BI 
 * **Execute Business Continuity/Disaster Recovery (BCDR) process:** Allows the team to fail over primary workloads to this alternate environment in three minutes if a serious issue is found in a new service version. BCDR can also be used when environmental factors or dependent services prevent the primary cluster/region from operating normally.
 * **Leverage resiliency of dependent services:** Power BI proactively evaluates and invests in resiliency and redundancy efforts for all dependent services (such as SQL, Redis Cache, Key Vault). Resiliency includes sufficient component monitoring to detect upstream/downstream regressions as well as local, zonal, and regional redundancy (where applicable). Investing in these capabilities ensures that tooling exists for automatic or manual triggering of recovery operations to mitigate impact from an affected dependency.
 
-:::image type="content" source="media/service-admin-site-reliability-engineering-model/service-admin-site-reliability-engineering-model-06.png" alt-text="Table describing dependencies and responses.":::
+:::image type="content" source="media/service-admin-site-reliability-engineering-model/service-admin-site-reliability-engineering-model-06.png" alt-text="Table describing dependencies and responses." lightbox="media/service-admin-site-reliability-engineering-model/service-admin-site-reliability-engineering-model-06.png":::
 
 ## Best practices for continuous improvement
 The Power BI team reviews all customer-impacting incidents during a Weekly Service Review with representation from all engineering groups that contribute to the Power BI service. The review disseminates key learnings from the incident to leaders across the organization and provides an opportunity to adapt our processes to close gaps and address inefficiencies.
@@ -124,10 +124,13 @@ The time required for the Power BI team to react to incidents as measured by TTN
 The above OKRs are actively tracked by the Power BI live site team, and the Senior Leadership Team, to ensure that the team continues to meet or exceed the baseline required to support substantial service growth, to maintain a sustainable live site workload, and to ensure high customer satisfaction.
 
 ## What's next
-The focus in the near future is to meet or to exceed remaining OKRs for Automation, which is a key aspect of supporting anticipated growth and significant complexity of the Power BI service. 
-
-Another high priority item on the SRE team roadmap is the reduction of system *noise* from false positive alerts or ignorable alerts. In addition, the team plans to inventory *transient* alerts, drive RCAs, and determine if there are underlying systemic issues that need to be addressed.
+Another high priority item on the SRE team roadmap is the reduction of system *noise* from false positive alerts or ignorable alerts. In addition, the team will inventory *transient* alerts, drive RCAs, and determine if there are underlying systemic issues that need to be addressed.
 
 Finally, a foundational element of Power BI service resiliency is ensuring that the service is compartmentalized such that incidents only impact a subset of the users. Doing so enables mitigation by redirecting impacted traffic to a healthy cluster. Supporting this holistically requires significant architectural work and design changes but should yield even higher SLOs than are attainable today.
 
+## Next steps
 
+For more information and resources on the Power BI service, take a look at the following articles.
+
+* [Governance and deployment approaches](service-admin-governance.md)
+* [White papers for Power BI](../guidance/whitepapers.md)
