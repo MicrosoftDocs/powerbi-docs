@@ -1,5 +1,5 @@
 ---
-title: How to be sure that your content is up to date
+title: How to be sure that content is up to date
 description: Learn how Power BI ensures you are working with the latest version of the data, report, dashboard, and app.
 author: mihart
 ms.author: mihart
@@ -13,7 +13,7 @@ LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to be sure that I'm using the most-recent data and learn how to determine this.
 ---
 
-# How to be sure that your content is up to date
+# How to be sure that content is up to date
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
