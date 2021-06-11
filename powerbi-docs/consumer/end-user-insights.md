@@ -18,7 +18,7 @@ LocalizationGroup: Dashboards
 
 Each visual [tile](end-user-tiles.md) on your dashboard is a doorway into data exploration. When you select a tile, it opens a report or [opens Q&A](end-user-q-and-a.md) where you can filter and sort and dig into the dataset behind the report. And when you run insights, Power BI does the data exploration for you.
 
-[ ![ellipsis menu mode showing View insights as an option](./media/end-user-insights/power-bi-insight.png) ](./media/end-user-insights/power-bi-insight.png#lightbox)
+[![Screenshot of the insights of a dashboard tile.](./media/end-user-insights/power-bi-insight.png)](./media/end-user-insights/power-bi-insight.png#lightbox)
 
 Run insights to generate interesting interactive visuals based on your data. Insights can be run on a specific dashboard tile and you can even run insights on an insight!
 
@@ -35,7 +35,7 @@ When you run insights on a dashboard tile, Power BI searches just the data used 
 
 3. The tile opens in [Focus mode](end-user-focus.md) with the insights cards displayed along the right.    
    
-    [ ![Focus mode](./media/end-user-insights/power-bi-insights-tiles.png) ](./media/end-user-insights/power-bi-insights-tiles-expanded.png#lightbox)
+    [![Screenshot of insights cards.](./media/end-user-insights/power-bi-insights-tiles.png)](./media/end-user-insights/power-bi-insights-tiles-expanded.png#lightbox)
 4. Does one insight pique your interest? Select that insight card to dig further. The selected insight appears on the left and new insight cards, based solely on the data in that single insight, display along the right.    
 
  ## Interact with the insight cards
@@ -43,11 +43,11 @@ Once you have an insight open, continue exploring.
 
    * Filter the visual on the canvas.  To display the filters, in the upper right corner, select the arrow to expand the Filters pane.
 
-      [ ![insight with Filters menu expanded](./media/end-user-insights/power-bi-filter.png) ](./media/end-user-insights/power-bi-filter-expanded.png#lightbox)
+      [![Insight with Filters menu expanded.](./media/end-user-insights/power-bi-filter.png)](./media/end-user-insights/power-bi-filter-expanded.png#lightbox)
    
    * Run insights on the insight card itself. This is often referred to as **related insights**. Select an insight card to make it active. It will move to the left side of the report canvas, and new cards, based solely on the data in that single insight,will  display along the right.
    
-      [ ![Related insight and Filters menu expanded](./media/end-user-insights/power-bi-insights-card.png) ](./media/end-user-insights/power-bi-insights-card-expanded.png#lightbox)
+      [![Related insight and Filters menu expanded.](./media/end-user-insights/power-bi-insights-card.png)](./media/end-user-insights/power-bi-insights-card-expanded.png#lightbox)
    
      
 To return to your report, from the upper left corner, select **Exit Focus mode**.
