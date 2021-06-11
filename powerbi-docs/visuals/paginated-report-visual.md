@@ -17,7 +17,7 @@ ms.date: 06/10/2021
 
 In this article, you learn how to use the paginated report visual for Power BI reports. This native Power BI visual allows you to render any paginated report you’ve uploaded to the service in a Power BI report.  
 
-This visual brings the power of paginated reports to your Power BI reports. You can map fields from your Power BI dataset to be used as parameter values for your paginated report visual. This provides a fully-interactive experience like any other visual.  
+This visual brings the power of paginated reports to your Power BI reports. You can map fields from your Power BI dataset to be used as parameter values for your paginated report visual. This provides a fully interactive experience like any other visual.  
 
  
 
@@ -48,10 +48,10 @@ This visual brings the power of paginated reports to your Power BI reports. You 
 
 1. You have two options for mapping paginated report parameters:  
 
-    You can bind the paginated report parameter to Power BI fields. Do this by: 
+    You can bind the paginated report parameter to Power BI fields: 
 
-    - Dragging your Power BI field into the Parameters field in the Visualizations pane.  
-    - Selecting this field from the dropdown menu. Select **See report**. 
+    a. Drag your Power BI field into the Parameters field in the Visualizations pane.  
+    b. Select this field from the dropdown menu. Select **See report**. 
 
     :::image type="content" source="media/paginated-report-visual/paginated-report-visual-step-5-set-parameters.png" alt-text="Screenshot of binding a field in Power BI to a parameter in the paginated report visual.":::
 
@@ -63,9 +63,9 @@ This visual brings the power of paginated reports to your Power BI reports. You 
 
     :::image type="content" source="media/paginated-report-visual/paginated-report-visual-step-6.png" alt-text="Screenshot of paginated report rendering in a Power BI report.":::
 
-1. If making edits in the Power BI service, select **Save** to save you changes. If making edits in Power BI Desktop, select **Publish**, then choose a workspace in a Premium capacity to publish your Power BI report to the Power BI service.  
+1. If making edits in the Power BI service, select **Save** to save your changes. If making edits in Power BI Desktop, select **Publish**, then choose a workspace in a Premium capacity to publish your Power BI report to the Power BI service.  
 
-    We recommend saving your Power BI report with a paginated report visual to the same workspace as your paginated report. This ensures that readers with access to the Power BI report also have access to the paginated report, which is required for the paginated report visual to render. 
+    We recommend saving the Power BI report with the paginated report visual to the same workspace as the paginated report. This ensures that readers with access to the Power BI report also have access to the paginated report, which is required for the paginated report visual to render. 
 
     :::image type="content" source="media/paginated-report-visual/paginated-report-visual-step-7.png" alt-text="Screenshot of publishing the report to the Power BI service.":::
 
@@ -89,13 +89,13 @@ You can also show parameters in the toolbar. In the **Format** pane, turn **Para
 
 ## Auto-apply filters 
 
-You can decide whether report filters are applied to the paginated report visual automatically or not. By default, the auto-apply filters option is turned on. This means if you apply filters or have other visuals that affect the field you’ve selected for the parameter value, the paginated report automatically updates. Turn off Auto-apply filters if you want your paginated report visual to remain unchanged as you adjust filters in your Power BI report.  
+You can decide whether report filters are automatically applied to the paginated report visual, or not. By default, the **Auto-apply filters** option is turned on. This means if you apply filters or have other visuals that affect the field you’ve selected for the parameter value, the paginated report automatically updates. Turn off Auto-apply filters if you want your paginated report visual to remain unchanged as you adjust filters in your Power BI report.  
 
 - Select your paginated report visual. From the **Format** pane, turn **Auto-apply filters** off. 
 
 ## Considerations  
 
-When mapping an aggregate field in Power BI (for example, Sum, Average, Minimum, or Maximum) to a paginated report parameter, consider whether your paginated report parameter is a single-value or multi-value parameter. If mapping to a single-value parameter, the aggregate value is used, but if mapping to a multi-value parameter, the per-row aggregate values are mapped to the parameter. 
+When mapping an aggregate field in Power BI (for example, Sum, Average, Minimum, or Maximum) to a paginated report parameter, consider whether your paginated report parameter is a single-value or multi-value parameter. If mapping to a single-value parameter, the aggregate value is used, but if mapping to a multi-value parameter, the per-row aggregate values are mapped to the parameter.
 
 ### Using a Power BI dataset with a date parameter
 
