@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/09/2020
+ms.date: 06/11/2021
 #This article teaches business users how to find and open a report whether it has been shared directly or shared via an app, so that the consumer can view and interact with the report to make business decisions.
 ---
 # View a report in the Power BI service for *business users*
@@ -71,15 +71,15 @@ If you've received apps from colleagues or from AppSource, those apps are availa
 Opening an app requires a Power BI Pro license, or for the app workspace to be stored in Power BI Premium capacity. [Learn about licenses and subscriptions](end-user-license.md)    
     
 To follow along, download the Sales and Marketing app.
+
 1. In your browser, navigate to appsource.microsoft.com.
-1. Select the checkbox for **Power Platform**.
 1. Search for "Sales & Marketing" and select **Microsoft sample - Sales & Marketing**. Scroll down to see the search results.
 1. Select **Get it now** > **Continue** > **Install** to install the app in your Apps container. 
 
 You can now open the app from your **Apps** container or from **Home**.
 1. Go back to Home by selecting **Home** from the nav pane.
 
-7. Scroll down until you see **My Apps**.
+7. Scroll down and select **My Apps**.
 
    ![Screenshot shows the My apps section of Power BI Home.](./media/end-user-report-open/power-bi-apps-new.png)
 
@@ -89,7 +89,7 @@ You can now open the app from your **Apps** container or from **Home**.
 ## Open a report from a dashboard
 Reports can be opened from a dashboard. Most dashboard [tiles](end-user-tiles.md) are *pinned* from reports. Selecting a tile opens the report that was used to create the tile. 
 
-1. From the dashboard, select a tile. In this example we've selected the *Total Units YTD...* column chart tile.
+1. From the dashboard, select a tile. In this example we've selected the *Total Units YTD Var %* column chart tile.
 
     ![dashboard with tile selected](./media/end-user-report-open/power-bi-dashboards.png)
 
