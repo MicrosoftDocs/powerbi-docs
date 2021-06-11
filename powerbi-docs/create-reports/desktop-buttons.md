@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/21/2020
+ms.date: 06/11/2021
 LocalizationGroup: Create reports
 ---
 # Use buttons in Power BI
@@ -21,13 +21,13 @@ Using **buttons** in Power BI lets you create reports that behave similar to app
 
 To create a button in **Power BI Desktop**, on the **Insert** ribbon, select **Buttons** and a drop-down menu appears, where you can select the button you want from a collection of options, as shown in the following image. 
 
-![Add a button control in Power BI Desktop](media/desktop-buttons/power-bi-button-dropdown.png)
+![Add a button control in Power BI Desktop.](media/desktop-buttons/power-bi-button-dropdown.png)
 
 ### Create a button in the Power BI service
 
 To create a button in the **Power BI service**, open the report in Editing view. Select **Buttons** in the top menu bar and a drop-down menu appears, where you can select the button you want from a collection of options, as shown in the following image. 
 
-![Add a button control in the Power BI service](media/desktop-buttons/power-bi-button-service-dropdown.png)
+![Add a button control in the Power BI service.](media/desktop-buttons/power-bi-button-service-dropdown.png)
 
 ## Customize a button
 
@@ -78,7 +78,7 @@ To set up a page navigation button, create a button with **Page navigation** as 
 
 You can build a custom navigation pane, and add the navigation buttons to it. You avoid having to edit and manage bookmarks if you want to change which pages to show in your navigation pane.
 
-![Create a navigation page](media/desktop-buttons/power-bi-build-navigation-pane.png)
+![Create a navigation page.](media/desktop-buttons/power-bi-build-navigation-pane.png)
 
 Additionally, you can conditionally format the tooltip as you can do with other button types.
 
