@@ -45,7 +45,7 @@ After you validate your models, enable the source report to use cross-report dri
 You can also enable cross-report drillthrough from the Power BI service.
 1. In Power BI service, select the workspace that contains your target and source reports.
 1. Next to the source report name in the workspace list, select the **More options** symbol, and then select **Settings**. 
-1. Near the bottom of the **Settings** pane, under **Cross-report drillthrough**, select **Allow visuals in this report to use drillthrough targets from other reports**, and then select **Save**.
+1. Near the bottom of the **Settings** pane, under **Cross-report drillthrough**, select **Allow visuals in this report to use drill-through targets from other reports**, and then select **Save**.
    
    ![Enable cross-report drillthrough in the Power B I service](media/desktop-cross-report-drill-through/cross-report-drill-through-02a.png)
 
