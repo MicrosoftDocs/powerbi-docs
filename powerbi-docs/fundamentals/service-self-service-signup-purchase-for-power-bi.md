@@ -82,14 +82,14 @@ To cancel a trial, select **Cancel trial** from the **Me** icon.
 If you are unable to use self-service to get your own Power BI license it may be that your administrator has disabled this option. The admins who manage the domain can disable self-service sign-ups,  self-service purchases, upgrades, and free trials. For help when you can't use self-service, see [Self-service purchase help](service-self-service-purchase-help.md).
 
 ## Considerations and troubleshooting
-•	If you are part of an organization and have used self-service to purchase Power BI,  the global or billing admin for your organization can  [**takeover** ownership](/azure/active-directory/enterprise-users/domains-admin-takeover.md) of your subscription, and then assign or unassign licenses.   
+•	If you are part of an organization and have used self-service to purchase Power BI,  the global or billing admin for your organization can  [**takeover** ownership](/azure/active-directory/enterprise-users/domains-admin-takeover) of your subscription, and then assign or unassign licenses.   
 •	If you don’t purchase Premium Per User at the end of the trial period, you still have either a Pro or free license. Also, you will still have access to the workspace, but content that requires the Premium Per User license will be unavailable.  
 
 ## Next steps
 •	For step by step instructions for using self-service sign up and self-service purchase to get your own Power BI free or trial license, visit [Power BI self-service for individuals](service-self-service-signup-for-power-bi.md) 
    
 
-•	To learn more about the concepts of self-service sign up and self-service purchase, visit [What is self-service](/microsoft-365/admin/misc/self-service-sign-up.md)    
+•	To learn more about the concepts of self-service sign up and self-service purchase, visit [What is self-service](/microsoft-365/admin/misc/self-service-sign-up)    
 
 •	If you're a global administrator or billing administrator, see [Power BI licensing for your organization](../admin/service-admin-licensing-organization.md).    
 

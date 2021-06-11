@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 10/26/2020
+ms.date: 06/06/2021
 LocalizationGroup: Share your work
 ---
 # Endorse your content
@@ -27,6 +27,8 @@ Currently it is possible to endorse
 * Reports
 * Apps
 
+If [dataset discoverability](service-discovery.md) has been enabled in your organization, endorsed datasets can be made discoverable. When a dataset is discoverable, users who don't have access to it will be able to find it and request access. See [Dataset discoverability](service-discovery.md) for more detail.
+
 This article describes how to [promote content](#promote-content), how to [certify content](#certify-content) if you're an authorized reviewer, and how to [request certification](#request-content-certification) if you're not.
 
 See [Endorsement: Promoting and certifying Power BI content](service-endorsement-overview.md) to learn more about endorsement.
@@ -40,7 +42,11 @@ To promote content, you must have write permissions the workspace where the cont
 
 1. Go to the [settings](#how-to-get-to-content-settings) of the content you want to promote.
 
-1. Expand the endorsement section and select **Promoted**. If you're promoting a dataset, provide a brief description of the dataset.
+1. Expand the endorsement section and select **Promoted**.
+
+    If you are promoting a dataset and see a **Make discoverable** checkbox, it means you can make it possible for users who don't have access to the dataset to find it. See [dataset discovery](service-discovery.md) for more detail.
+
+    If you're promoting a dataset, provide a brief, informative description of the dataset. The description is important - this is what users will see they click the dataset's info icon in the datasets hub. 
 
     ![Select Promoted and Apply](media/service-endorse-content/power-bi-promote-content.png)
 
@@ -51,7 +57,7 @@ To promote content, you must have write permissions the workspace where the cont
 Content certification is a big responsibility, and only authorized users can certify content. Other users can [request content certification](#request-content-certification). This section describes how to certify content.
 
 >[!NOTE]
->For the purposes of illustration, the endorsement dialog for datasets is shown below. The dialogs for the other content types are almost identical, with the same radio button options. 
+>For the purposes of illustration, the endorsement dialog for datasets is shown below. The dialogs for the other content types are almost identical, with the same radio button options.
 
 1. Get write permissions on the workspace where the content you want to certify is located. You can request these permissions from the content owner or from anyone with admin permissions on the workspace.
 
@@ -59,7 +65,11 @@ Content certification is a big responsibility, and only authorized users can cer
 
 1. If you decide to certify the content, go to the workspace where it resides, and then open the [settings](#how-to-get-to-content-settings) of the content you want to certify.
 
-1. Expand the endorsement section and select **Certified**. 
+1. Expand the endorsement section and select **Certified**.
+
+    If you are certifying a dataset and see a **Make discoverable** checkbox, it means you can make it possible for users who don't have access to the dataset to find it. See [dataset discovery](service-discovery.md) for more detail.
+
+    If you're certifying a dataset, make sure the dataset has an informative description. The description is important - users who don't have access to the dataset will be able to see this description when they click the dataset's info icon in the datasets hub.
 
     ![Screen shot of certify content button.](media/service-endorse-content/power-bi-certify-content.png)
 
@@ -99,4 +109,5 @@ The Endorsement dialog is accessed through the settings of the content you want 
 
 * [Read more about content endorsement](service-endorsement-overview.md)
 * [Enable content certification](../admin/service-admin-setup-certification.md) (Power BI admins)
+* [Read more about dataset discoverability](service-discovery.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
