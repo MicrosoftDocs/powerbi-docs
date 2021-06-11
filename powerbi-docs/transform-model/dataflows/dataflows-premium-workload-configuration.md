@@ -110,7 +110,7 @@ Slow refresh times are usually a parallelism issue. You should review the follow
 
 5. Do both of the previous steps, allowing for an even higher degree of parallelism, because you get more cooks and a bigger kitchen.
     
-6. If the steps in this section don't provide the desired degree of parallelism, consider upgrading your capacity to a higher SKU. <!--It is not clear what the following sentence means.-->Then follow steps the previous steps in this section again.
+6. If the steps in this section don't provide the desired degree of parallelism, consider upgrading your capacity to a higher SKU. Then follow the previous steps in this sequence again.
 
 ### Out of memory exceptions
 
