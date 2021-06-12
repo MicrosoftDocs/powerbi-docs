@@ -1,6 +1,6 @@
 ---
-title: Sensitivity label downstream inheritance in Power BI
-description: Learn how sensitivity labels can be propagated to downstream content
+title: Mandatory label policy
+description: Learn how organizations can require users to apply sensitivity labels with a mandatory label policy
 author: paulinbar
 ms.author: painbar
 manager: kfolis
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 04/27/2021
+ms.date: 06/12/2021
 LocalizationGroup: Data from files
 ---
 # Mandatory label policy
