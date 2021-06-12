@@ -43,13 +43,13 @@ Where:
  
 * You need the EXO V2 module to run this command. For more information, see [About the Exchange Online PowerShell V2 module](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module)
 
-* A connection to the Microsoft 365 compliance center is also required. For more information, see [Connect to Security & Compliance Center PowerShell using the EXO V2 module](/powershell/exchange/connect-to-scc-powershell?view=exchange-ps)
+* A connection to the Microsoft 365 compliance center is also required. For more information, see [Connect to Security & Compliance Center PowerShell using the EXO V2 module](/powershell/exchange/connect-to-scc-powershell?view=exchange-ps&preserve-view=true)
 
 ### Documentation
 
 * [Admin Guide: Custom configurations for the Azure Information Protection unified labeling client](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels)
 * [Create and configure sensitivity labels and their policies](/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide#use-powershell-for-sensitivity-labels-and-their-policies)
-* [Set-LabelPolicy documentation](/powershell/module/exchange/set-labelpolicy?view=exchange-ps)
+* [Set-LabelPolicy documentation](/powershell/module/exchange/set-labelpolicy?view=exchange-ps&preserve-view=true)
 
 >[!NOTE]
 > Mandatory labeling is not supported for service principals.
