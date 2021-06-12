@@ -113,7 +113,7 @@ Downstream inheritance is a critical link in Power BI’s end-to-end information
 
 ## Mandatory label policy
 
-To help ensure comprehensive protection and governance of sensitive data, organizations can require users to apply labels to their sensitive Power BI content. Such a policy is called a mandatory label policy. See [Mandatory lable policy](service-security-sensitivity-label-mandatory-label-policy.md) for more information.
+To help ensure comprehensive protection and governance of sensitive data, organizations can require users to apply labels to their sensitive Power BI content. Such a policy is called a mandatory label policy. See [Mandatory label policy](service-security-sensitivity-label-mandatory-label-policy.md) for more information.
 
 ## Admin APIs for setting and removing labels programmatically
 
