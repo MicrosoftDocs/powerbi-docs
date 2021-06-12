@@ -515,12 +515,9 @@ This setting must be enabled for audit log entries to be recorded. There can be 
 When enabled, users in the organization can see usage metrics for dashboards, reports, and datasets that they have appropriate permissions for. [Learn more](../collaborate-share/service-usage-metrics.md)
 
 1. In the Admin portal, select **Tenant settings** > **Audit and usage settings** > **Usage metrics for content creators**.
-
-    :::image type="content" source="media/service-admin-portal/admin-portal-usage-metrics.png" alt-text="Screenshot that shows the Admin portal tenant settings usage metrics.":::
-
 1. Enable (or disable) usage metrics > **Apply**.
 
-    :::image type="content" source="media/service-admin-portal/power-bi-usage-metrics-content-creators.png" alt-text="Screenshot that shows the Usage metrics for content creators setting enabled.":::
+    :::image type="content" source="media/service-admin-portal/admin-portal-usage-metrics.png" alt-text="Screenshot that shows the Admin portal tenant settings usage metrics.":::
 
 ### Per-user data in usage metrics for content creators
 
