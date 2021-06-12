@@ -21,7 +21,7 @@ When a mandatory label policy is in effect,
 * If users try to import data from an unlabeled PBIX file, a dialog prompts them to apply a label before allowing import to continue.
 * Users can't publish an unlabeled PBIX file from Desktop to the service. They must first apply a label to the file in Desktop.
 
-The images below show the dialogs that prompt users to choose and apply a label when they try to save or import unlabeled content.
+The images below show the dialogs that prompt users to choose and apply a label when they try to save or import unlabeled content. The save button only becomes active when the user selects a label.
 
 ![Screenshot of mandatory label dialog.](media/service-security-sensitivity-label-mandatory-label-policy/mandatory-labels-dialog.png)
 
