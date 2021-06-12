@@ -27,7 +27,7 @@ The images below show the dialogs that prompt users to choose and apply a label 
 
 ## Enabling a mandatory label policy
 
-A Microsoft 365 security administrator enables a mandatory label policy for Power BI in the [Microsoft 365 compliance center](https://compliance.microsoft.com/informationprotection) using the following [PowerShell command](/powershell/module/exchange/set-labelpolicy?view=exchange-ps). The mandatory label settings for Power BI are independent of the mandatory label settings that affect Office files and email.
+A Microsoft 365 security administrator enables a mandatory label policy for Power BI in the [Microsoft 365 compliance center](https://compliance.microsoft.com/informationprotection) using the following [PowerShell command](/powershell/module/exchange/set-labelpolicy). The mandatory label settings for Power BI are independent of the mandatory label settings that affect Office files and email.
 
 ```powershell
 Set-LabelPolicy -Identity "<policy name>" -AdvancedSettings @{powerbimandatory="true"}
@@ -36,20 +36,18 @@ Set-LabelPolicy -Identity "<policy name>" -AdvancedSettings @{powerbimandatory="
 Where:
 
 * policy name = the name you want to give to the policy
-* labels list = the sensitivity labels which are subject to the mandatory label policy
-* users list = the list of users, security groups, and service principal apps that will be required to apply labels under this policy
 
 ### Requirements
  
-* You need the EXO V2 module to run this command. For more information, see [About the Exchange Online PowerShell V2 module](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module)
+* You need the EXO V2 module to run this command. For more information, see [About the Exchange Online PowerShell V2 module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)
 
-* A connection to the Microsoft 365 compliance center is also required. For more information, see [Connect to Security & Compliance Center PowerShell using the EXO V2 module](/powershell/exchange/connect-to-scc-powershell?view=exchange-ps&preserve-view=true)
+* A connection to the Microsoft 365 compliance center is also required. For more information, see [Connect to Security & Compliance Center PowerShell using the EXO V2 module](/powershell/exchange/connect-to-scc-powershell)
 
 ### Documentation
 
 * [Admin Guide: Custom configurations for the Azure Information Protection unified labeling client](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels)
 * [Create and configure sensitivity labels and their policies](/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide#use-powershell-for-sensitivity-labels-and-their-policies)
-* [Set-LabelPolicy documentation](/powershell/module/exchange/set-labelpolicy?view=exchange-ps&preserve-view=true)
+* [Set-LabelPolicy documentation](/powershell/module/exchange/set-labelpolicy)
 
 >[!NOTE]
 > Mandatory labeling is not supported for service principals.
