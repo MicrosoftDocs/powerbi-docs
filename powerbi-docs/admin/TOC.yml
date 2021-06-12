@@ -58,6 +58,8 @@
         href: service-premium-service-tags.md
     - name: Information protection
       items:
+      - name: Mandatory label policy
+        href: service-security-sensitivity-label-mandatory-label-policy.md
       - name: Sensitivity label downstream inheritance (preview)
         href: service-security-sensitivity-label-downstream-inheritance.md
       - name: Sensitivity label inheritance from data sources (preview)
