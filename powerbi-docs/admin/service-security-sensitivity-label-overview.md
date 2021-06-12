@@ -192,6 +192,14 @@ To access sensitivity labels in either of these centers, navigate to **Classific
 >[!Important]
 > If your organization uses Azure Information Protection sensitivity labels, you need to [migrate](/azure/information-protection/configure-policy-migrate-labels) them to one of the previously listed services in order for the labels to be used in Power BI.
 
+## Custom help link
+
+To help your users understand what your sensitivity labels mean or how they should be used, you can provide a *Learn more* URL that appears at the bottom of the sensitivity label menu that you see when you're applying a sensitivity label.
+
+![Screenshot of custom help link for sensitivity labels](media/service-security-sensitivity-label-overview/sensitivity-label-custom-help-link.png)
+
+See [Custom help link for sensitivity labels](service-security-sensitivity-label-custom-help-link.md) for detail.
+
 ## Limitations
 
 ### General
