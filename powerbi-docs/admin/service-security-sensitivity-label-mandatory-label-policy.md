@@ -13,7 +13,7 @@ LocalizationGroup: Data from files
 ---
 # Mandatory label policy
 
-To help ensure comprehensive protection and governance of sensitive data, organizations can enable a policy that requires users to apply labels to their sensitive Power BI content. Such a policy is called a mandatory label policy.
+To help ensure comprehensive protection and governance of sensitive data, organizations can require users to apply labels to their sensitive Power BI content. They do this by marking their sensitivity label policies as mandatory. Such policies are called mandatory label policies. This article explains how to mark an existing policy as mandatory.
 
 When a mandatory label policy is in effect, 
 * Users must apply a sensitivity label before saving new reports, dashboards, or datasets in the service. If they try to save a new item without applying a label, a dialog prompts them to choose a label before allowing them to save.
@@ -35,7 +35,7 @@ Set-LabelPolicy -Identity "<policy name>" -AdvancedSettings @{powerbimandatory="
 
 Where:
 
-* policy name = the name you want to give to the policy
+* policy name = the name of the policy you want to set as mandatory
 
 ### Requirements
  
