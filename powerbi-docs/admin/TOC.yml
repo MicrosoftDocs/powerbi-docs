@@ -64,6 +64,8 @@
         href: service-security-sensitivity-label-inheritance-from-data-sources.md
       - name: Sensitivity label change enforcement
         href: service-security-sensitivity-label-change-enforcement.md
+      - name: Custom help link for sensitivity labels
+        href: service-security-sensitivity-label-custom-help-link.md
   - name: How to
     items: 
     - name: "Licensing and sign-up"
