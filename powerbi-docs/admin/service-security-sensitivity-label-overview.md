@@ -194,7 +194,7 @@ To help your users understand what your sensitivity labels mean or how they shou
 
 ![Screenshot of custom help link for sensitivity labels](media/service-security-sensitivity-label-overview/sensitivity-label-custom-help-link.png)
 
-See [Custom help link for sensivity labels](service-security-sensitivity-label-custom-help-link.md) for detail.
+See [Custom help link for sensitivity labels](service-security-sensitivity-label-custom-help-link.md) for detail.
 
 ## Limitations
 
