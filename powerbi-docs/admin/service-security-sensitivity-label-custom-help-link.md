@@ -27,7 +27,7 @@ You can define a custom help link for sensitivity labels in two ways:
     Set-LabelPolicy -Identity "<policy name>" -AdvancedSettings @{powerbicustomurl=https://yourLink}
 ```
 
-* In the [Microsoft 365 compliance center](). See [What label policies can do](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do).
+* In the [Microsoft 365 compliance center](https://compliance.microsoft.com/informationprotection). See [What label policies can do](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do).
 
 ![Screenshot of custom help link field in the compliance center user interface.](media/service-security-sensitivity-label-custom-help-link/sensitivity-label-custom-help-link-compliance-ui.png)
 
