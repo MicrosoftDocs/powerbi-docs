@@ -162,10 +162,18 @@ For more information, see [Highlight data points in Power BI visuals](highlight.
 
 ## advancedEditModeSupport: how to handle advanced edit mode
 
-By default, a visual doesn't support advanced edit mode (`"advancedEditModeSupport": 0`). Setting the advanced edit mode support enables certain advanced UI controls. The `advancedEditModeSupport` object can be set to one of the following values:
+By default, a visual doesn't support advanced edit mode:
+
+```json
+"advancedEditModeSupport": 0
+```
+
+ Changing the advanced edit mode support can enable certain advanced UI controls. The `advancedEditModeSupport` object can be set to one of the following values:
 
 0 - NotSupported
+
 1 - SupportedNoAction
+
 2 - SupportedInFocus
 
 For more information, see [Advanced edit mode in Power BI visuals](advanced-edit-mode.md).
