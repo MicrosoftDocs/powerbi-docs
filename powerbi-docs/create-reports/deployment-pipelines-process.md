@@ -60,7 +60,7 @@ In the target stage, [item properties that are not copied](deployment-pipelines-
 
 When you use [selective deploy](deployment-pipelines-get-started.md?#selective-deployment) to deploy Power BI items, deployment pipelines checks for dependencies. The deployment will either succeed or fail, depending on the location of the item that provides the data that the deployed item relies on.
 
-* **Linked item exists in the target stage** - Deployment pipelines will automatically bind the deployed item, to the item it relies on in the deployed stage. For example, if you deploy a paginated report from development to test, and it's connected to a Power BI dataset that was perviously deployed to the test stage, it will be automatically connected to that database.
+* **Linked item exists in the target stage** - Deployment pipelines will automatically bind the deployed item, to the item it relies on in the deployed stage. For example, if you deploy a paginated report from development to test, and it's connected to a Power BI dataset that was previously deployed to the test stage, it will be automatically connected to that database.
 
 * **Linked item doesn't exist in the target stage** - Deployment pipelines will fail a deployment if an item has a dependency on another item, and the item providing the data isn't deployed and doesn't reside in the target stage. For example, if you deploy a report from development to test, and the test stage doesn't contain its Power BI dataset, the deployment will fail. To avoid failed deployments due to dependent items not being deployed, use the *Select related* button. *Select related* automatically selects all the related items that provide dependencies to the items you're about to deploy.
 
