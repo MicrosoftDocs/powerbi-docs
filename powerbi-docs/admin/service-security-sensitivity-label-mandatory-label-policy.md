@@ -11,7 +11,7 @@ ms.custom:
 ms.date: 06/13/2021
 LocalizationGroup: Data from files
 ---
-# Mandatory label policy for Power BI
+# Mandatory label policy for Power BI (preview)
 
 To help ensure comprehensive protection and governance of sensitive data, you can require your organization's Power BI users to apply sensitivity labels to content they create or edit in Power BI. You do this by enabling, in their sensitivity label policies, a special setting for mandatory labeling in Power BI. This article covers the user actions that are affected by the mandatory label policy, and explains how to enable the mandatory label setting for Power BI in an existing policy.
 
@@ -53,6 +53,9 @@ Where:
 * [Admin Guide: Custom configurations for the Azure Information Protection unified labeling client](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels)
 * [Create and configure sensitivity labels and their policies](/microsoft-365/compliance/create-sensitivity-labels#use-powershell-for-sensitivity-labels-and-their-policies)
 * [Set-LabelPolicy documentation](/powershell/module/exchange/set-labelpolicy)
+
+## Considerations and limitations
+* Mandatory labeling for Power BI is in preview, so there may be flows that allow the user to create or edit unlabeled content.
 
 ## Next steps
 
