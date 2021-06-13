@@ -26,13 +26,13 @@ In this tutorial, you learn how to:
 ## Prerequisites
 
 * A **Power BI Pro** account. [Sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
-* The R engine. You can download it free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). For more information, see [Create Power BI visuals using R](../../create-reports/desktop-r-visuals.md).
+* An R engine. You can download one free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). For more information, see [Create Power BI visuals using R](../../create-reports/desktop-r-visuals.md).
 * [Power BI Desktop](../../fundamentals/desktop-get-the-desktop.md).
 * [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell) version 4 or later for Windows users OR the [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) for OSX users.
 
 ## Getting started
 
-1. Prepare sample data for the visual. You can save these values to an Excel database or *.csv* file and import it into Power BI Desktop.
+1. Prepare some sample data for the visual. You can save these values to an Excel database or *.csv* file and import it into Power BI Desktop.
 
     | MonthNo | Total Units |
     |-----|-----|
@@ -61,12 +61,16 @@ In this tutorial, you learn how to:
       plot(Values)
       ```
 
-    The `Values` data frame will contain columns in `Values` data role.
+3. Assign data to the developer visual by dragging **MonthNo** and **Total units** to **Values** for the visual.
 
-3. Assign data to the developer visual by adding **MonthNo** and **Total units** to **Values** for the visual.
+4. Set the aggregation type of **Total units** is set to *Don't summarize*
 
-  >[!NOTE]
-  >Make sure the aggregation type of the values is set to *Don't summarize*
+   ![Don't summarize data](./media/create-r-based-power-bi-desktop/dont-summarize.png)
+
+5. Run the following R-script:
+
+  ```r
+  plot(dataset)
 
    ![R visual with data](./media/create-r-based-power-bi-desktop/r-data-values.png)
 
@@ -78,7 +82,7 @@ When you use `pbiviz` to create the R-powered visual based on the `rvisual` temp
 
    ![Screenshot shows the R script visual control in the Power B I Desktop.](./media/create-r-based-power-bi-desktop/r-script-icon.png)
 
-2. Paste this R code into the **R script editor**:
+2. Paste the following R code into the **R script editor**:
 
    ```r
    x <- dataset[,1] # get the first column from dataset
@@ -96,7 +100,7 @@ When you use `pbiviz` to create the R-powered visual based on the `rvisual` temp
 
 4. When your R script is ready, copy it to the `script.r` file in your visual project created at one of the previous steps.
 
-5. Change the `name` of `dataRoles` in *capabilities.json* to *dataRoles* and the `dataViewMappings` input to *dataset*. Power BI passes data as the `dataset` data frame object for the R script visual, but the R visual gets the data frame name according to `dataRoles` names.
+5. In the *capabilities.json* file, change the `name` of `dataRoles` *dataRoles*, and set the `dataViewMappings` input to *dataset*. Power BI passes data as the `dataset` data frame object for the R script visual, but the R visual gets the data frame from the `dataRoles` names.
 
     ```json
     {
@@ -146,9 +150,9 @@ When you use `pbiviz` to create the R-powered visual based on the `rvisual` temp
 
 ## Add libraries to visual package
 
-This procedure allows your visual to use the `corrplot` package.
+The `corrplot` package creates a graphical display of a correlation matrix. For more information about `corrplot`, see [An Introduction to corrplot Package](https://cran.r-project.org/web/packages/corrplot/vignettes/corrplot-intro.html).
 
-1. Add the library dependency for your visual to `dependencies.json`. Here is an example of the file content:
+1. Add the `corrplot` library dependency to `dependencies.json`. Here is an example of the file content:
 
     ```json
     {
@@ -164,7 +168,7 @@ This procedure allows your visual to use the `corrplot` package.
 
     The `corrplot` package is a graphical display of a correlation matrix. For more information about `corrplot`, see [An Introduction to corrplot Package](https://cran.r-project.org/web/packages/corrplot/vignettes/corrplot-intro.html).
 
-2. After you make these changes, start using the package in your `script.r` file.
+2. After you make these changes, you can start using the package in your `script.r` file.
 
     ```r
     library(corrplot)
@@ -178,7 +182,7 @@ The result of using `corrplot` package looks like this example:
 
 ## Adding a static property to the property pane
 
-Enable users to change UI settings. To do this, add properties to the property pane that change the user-input based behavior of the R script.
+To enable users to change UI settings, add properties to the property pane that change the user-input based behavior of the R script.
 
 You can configure `corrplot` by using the `method` argument for the `corrplot` function. The default script uses a circle. Modify your visual to let the user choose between several options.
 
@@ -257,7 +261,7 @@ You can configure `corrplot` by using the `method` argument for the `corrplot` f
 
    ![R visual settings](./media/create-r-based-power-bi-desktop/r-data-look-settings.png)
 
-    Finally, the R script must start with a property. If the user doesn't change the property, the visual doesn't get any value for this property.
+    Finally, the R script must have a default property. If the user doesn't change the property, the visual uses this value.
 
     For R runtime variables for the properties, the naming convention is `<objectname>_<propertyname>`, in this case, `settings_method`.
 
