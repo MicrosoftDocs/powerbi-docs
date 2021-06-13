@@ -12,17 +12,19 @@ ms.date: 05/04/2020
 
 # Update, delete, and extract template app
 
-Now that your app is in production, you can start over in the test phase, without disrupting the app in production.
+Now that your app is in production, when you want to make changes to the app, you can start over in the test phase, without interfering with the app in production.
+
 ## Update your app
 
-If you made the changes in Power BI Desktop, start at step (1). If you did not make the changes in Power BI Desktop, start at step (4).
+If you made your changes in Power BI Desktop, start at Step 1. If you did not make any changes in Power BI Desktop, start at Step 4.
 
-1. Upload the updated dataset and overwrite the existing dataset. **Make sure to use the exact same dataset name**. Using a different name will create a new dataset for users that are updating the app.
-![Screenshot shows the Power B I Updating a template app with Dataset selected.](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset.png)
-1. Import the pbix file from your computer.
-![Screenshot shows the Get Data page with Get called out under Files.](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset2.png)
-1. Confirm the overwrite.
-![Screenshot shows a confirmation message that A dataset with the same name exists and the option to replace it.](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset3.png)
+1. Upload the updated dataset. Before uploading, **make sure the .pbix file you're uploading has the exactly the same name as the dataset used in the app**. Always **overwrite** the existing dataset. If the .pbix file you're uploading has a different name, it will be impossible for users to update their apps.
+
+    The following animation shows how to upload a local .pbix file. Start by choosing **New > Dataset**
+    
+    ![Amimated gif shows upload of .pbix file.](media/service-template-apps-update-extract-delete/template-app-update-overwrite-dataset.gif)
+
+
 
 1. In the **Release management** pane, select **Create app**.
 1. Go back through the app creation process.
