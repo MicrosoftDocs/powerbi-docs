@@ -170,11 +170,9 @@ By default, a visual doesn't support advanced edit mode:
 
  Changing the advanced edit mode support can enable certain advanced UI controls. The `advancedEditModeSupport` object can be set to one of the following values:
 
-0 - NotSupported
-
-1 - SupportedNoAction
-
-2 - SupportedInFocus
+* 0 - NotSupported
+* 1 - SupportedNoAction
+* 2 - SupportedInFocus
 
 For more information, see [Advanced edit mode in Power BI visuals](advanced-edit-mode.md).
 
