@@ -192,3 +192,6 @@ For more information, see [Sorting options for Power BI visuals](sort-options.md
 
 > [!div class="nextstepaction"]
 > [Advanced edit mode in Power BI visuals](advanced-edit-mode.md)
+
+> [!div class="nextstepaction"]
+> [Sorting options for Power BI visuals](sort-options.md)
