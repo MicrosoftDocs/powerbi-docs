@@ -29,7 +29,7 @@ The images below show the dialogs that prompt users to choose and apply a label 
 ![Screenshot of mandatory label dialog.](media/service-security-sensitivity-label-mandatory-label-policy/mandatory-labels-dialog.png)
 
 >[!NOTE]
-> Mandatory labeling in Power BI is not supported for service principals and APIs. They are not affected by mandatory label policies.
+> Mandatory labeling in Power BI is not supported for service principals and APIs. Service principals and APIs are not affected by mandatory label policies.
 
 ## Enabling a mandatory label policy for Power BI
 
