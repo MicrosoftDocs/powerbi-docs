@@ -128,6 +128,6 @@ Your visual should perform at an acceptable level. Use developer tools to valida
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Publish Power BI visuals to Partner Center](./office-store.md).
+>[Publish Power BI visuals to Partner Center](./office-store.md)
 
 **More questions?** [Ask the Power BI Community](https://community.powerbi.com/).
