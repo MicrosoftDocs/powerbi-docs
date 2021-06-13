@@ -20,7 +20,7 @@ The root objects of a visual's capabilities file are:
 * [dataViewMappings](#dataviewmappings-how-you-want-the-data-mapped)
 * [objects](#objects-define-property-pane-options)
 * [supportsHighlight](#supportshighlight-how-to-handle-partial-highlighting)
-* [advancedEditModeSupport](#advancededitmodesupport-how-to-handle advanced-edit-mode)
+* [advancedEditModeSupport](#advancededitmodesupport-how-to-handle-advanced-edit-mode)
 * [sorting](#sorting-data-sorting-options-for-your-visual)
 
 The `capabilities.json` file looks like this:
