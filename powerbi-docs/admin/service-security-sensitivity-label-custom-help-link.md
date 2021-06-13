@@ -13,7 +13,7 @@ LocalizationGroup: Data from files
 ---
 # Custom help link for sensitivity labels
 
-To help your users understand what your sensitivity labels mean or how they should be used, you can provide a *Learn more* URL that appears at the bottom of the sensitivity label menu that you see when you're applying a sensitivity label.
+To help your users understand what your sensitivity labels mean or how they should be used, you can provide a *Learn more* URL that appears at the bottom of the menu that you see when you're applying a sensitivity label.
 
 ![Screenshot of custom help link for sensitivity labels](media/service-security-sensitivity-label-custom-help-link/sensitivity-label-custom-help-link.png)
 
@@ -31,7 +31,7 @@ You can define a custom help link for sensitivity labels in two ways:
 
 ![Screenshot of custom help link field in the compliance center user interface.](media/service-security-sensitivity-label-custom-help-link/sensitivity-label-custom-help-link-compliance-ui.png)
 
-If a URL has been defined both in Powershell and in the compliance center, the dedicated URL defined in Powershell will be used.
+If a URL has been defined both in PowerShell and in the compliance center, the dedicated URL defined in PowerShell will be used.
 
 A custom URL is always taken from the policy with the highest priority, so be sure to configure the custom URL on that policy.
 
