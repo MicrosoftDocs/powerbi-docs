@@ -13,7 +13,7 @@ LocalizationGroup: Data from files
 ---
 # Custom help link for sensitivity labels
 
-To help your organization's Power BI users understand what your sensitivity labels mean or how they should be used, you can provide a *Learn more* URL that appears at the bottom of the menu you see when you're applying a sensitivity label.
+To help your organization's Power BI users understand what your sensitivity labels mean or how they should be used, you can provide a *Learn more* link pointing to your organization’s custom web page at the bottom of the menu users see when they're applying sensitivity labels.
 
 ![Screenshot of custom help link for sensitivity labels](media/service-security-sensitivity-label-custom-help-link/sensitivity-label-custom-help-link.png)
 
@@ -27,13 +27,11 @@ You can define a custom help link for sensitivity labels in two ways:
     Set-LabelPolicy -Identity "<policy name>" -AdvancedSettings @{powerbicustomurl=https://<your link>}
     ```
 
-* In the [Microsoft 365 compliance center](https://compliance.microsoft.com/informationprotection). This creates a help link that is used for all Office 365 apps. See [What label policies can do](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do).
+* If a dedicated custom help link for Power BI isn't set, Power BI uses the custom help link defined for Office 365 apps. This link is defined in the [Microsoft 365 compliance center](https://compliance.microsoft.com/informationprotection). See [What label policies can do](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do).
 
     ![Screenshot of custom help link field in the compliance center user interface.](media/service-security-sensitivity-label-custom-help-link/sensitivity-label-custom-help-link-compliance-ui.png)
 
-If a URL has been defined both in PowerShell and in the compliance center, the dedicated Power BI URL defined in PowerShell will be used as the help link for sensitivity labels in Power BI.
-
-A custom URL is always taken from the policy with the highest priority, so be sure to configure the custom URL on that policy.
+If a user has more than one label policy, the custom URL is always taken from the policy with the highest priority, so be sure to configure the custom URL on that policy.
 
 ## Next steps
 * [Sensitivity label overview](service-security-sensitivity-label-overview.md)
