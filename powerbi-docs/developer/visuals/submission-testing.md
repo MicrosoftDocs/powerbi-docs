@@ -127,6 +127,7 @@ Your visual should perform at an acceptable level. Use developer tools to valida
 
 ## Next steps
 
-For more information about the publishing process, see [Publish Power BI visuals to Partner Center](./office-store.md).
+>[!div class="nextstepaction"]
+>[Publish Power BI visuals to Partner Center](./office-store.md).
 
-More questions? [Ask the Power BI Community](https://community.powerbi.com/).
+**More questions?** [Ask the Power BI Community](https://community.powerbi.com/).
