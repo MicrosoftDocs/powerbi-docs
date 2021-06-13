@@ -177,7 +177,7 @@ After a deployment fails due to schema changes, the target stage displays the *D
 
 Multi-geo is supported. It may take longer to deploy content between stages in different geos.
 
-### How can I delete a pipelines that doesn't have an owner?
+### How can I delete a pipeline that doesn't have an owner?
 
 When working with deployment pipelines, you might end up with a pipeline that doesn't have an owner. For example, a pipeline can be left without an owner when a user that owned it leaves the company without transferring ownership. When a pipeline doesn't have an owner, other users will not be able to access it. As a workspace can only be assigned to one pipeline, if it's assigned to a pipeline without an owner, nobody will be able to unassign it, and you'll not be able to use the workspace in another pipeline.
 
