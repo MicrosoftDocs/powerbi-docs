@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 05/26/2021
+ms.date: 06/02/2021
 LocalizationGroup: Share your work
 ---
 # Export reports to PowerPoint
@@ -32,7 +32,7 @@ You can also copy one visual at a time from the Power BI service and paste it in
 ## Export your Power BI report to PowerPoint
 In the **Power BI service**, select a report to display it on the canvas. You can also select a report from **Home**, **Apps**, or any other container from the nav pane.
 
-When the report you want to export to PowerPoint is displayed on the canvas, select **File** > **Export to PowerPoint** from the menu bar.
+When the report you want to export to PowerPoint is displayed on the canvas, select **Export** > **PowerPoint** from the menu bar.
 
 ![Select Export from the menu bar](media/end-user-powerpoint/power-bi-export.png)
 
