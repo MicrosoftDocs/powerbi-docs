@@ -13,7 +13,7 @@ LocalizationGroup: Data from files
 ---
 # Custom help link for sensitivity labels
 
-To help your organization's Power BI users understand what your sensitivity labels mean or how they should be used, you can provide a *Learn more* link pointing to your organization’s custom web page at the bottom of the menu users see when they're applying sensitivity labels.
+To help your organization's Power BI users understand what your sensitivity labels mean or how they should be used, you can provide a *Learn more* link pointing to your organization’s custom web page that users will see when they're applying or being prompted to apply sensitivity labels. The image below is an example that shows how the *Learn more* link appears when applying a sensitivity label in Power BI Desktop.
 
 ![Screenshot of custom help link for sensitivity labels](media/service-security-sensitivity-label-custom-help-link/sensitivity-label-custom-help-link.png)
 
