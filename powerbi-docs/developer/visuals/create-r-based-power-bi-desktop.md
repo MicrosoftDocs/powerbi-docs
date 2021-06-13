@@ -59,9 +59,9 @@ In this tutorial, you learn how to:
 
 3. From the newly created rVisualSample directory run
 
- ```cmd
- pbiviz start
- ```
+   ```cmd
+   pbiviz start
+   ```
 
 4. In Power BI Desktop, select **R script visual**:
 
@@ -69,11 +69,13 @@ In this tutorial, you learn how to:
 
 5. Assign data to the developer visual by dragging **MonthNo** and **Total units** to **Values** for the visual.
 
+    ![Add data to values](./media/create-r-based-power-bi-desktop/add-values.png)
+
 6. Set the aggregation type of **Total units** to *Don't summarize*.
 
     ![Don't summarize data](./media/create-r-based-power-bi-desktop/dont-summarize.png)
 
-6. Run the following R-script:
+7. Run the following R-script:
 
       ```r
       plot(dataset)
@@ -101,9 +103,9 @@ The R-script that was created in the root folder of your visual can be edited to
 
     ![Screenshot shows the result of running the script, which is a line plot.](./media/create-r-based-power-bi-desktop/run-r-script.png)
 
-3. When your R script is ready, copy it to the `script.r` file in your visual project created at one of the previous steps.
+3. When your R script is ready, copy it to the `script.r` file located in the root directory of your visual project.
 
-4. In the *capabilities.json* file, change the `name` of `dataRoles` *dataRoles*, and set the `dataViewMappings` input to *dataset*. Power BI passes data as the `dataset` data frame object for the R script visual, but the R visual gets the data frame from the `dataRoles` names.
+4. In the *capabilities.json* file, change the `dataRoles`: `name` to *dataRoles*, and set the `dataViewMappings` input to *dataset*. Power BI passes data as the `dataset` data frame object for the R script visual, but the R visual gets the data frame from the `dataRoles` names.
 
     ```json
     {
@@ -237,7 +239,7 @@ You can configure `corrplot` by using the `method` argument for the `corrplot` f
     }
     ```
 
-1. Open the *src/settings.ts* file. Create a `CorrPlotSettings` class with the public property `method`. The type is `string` and the default value is `circle`. Add the `settings` property to the `VisualSettings` class with the default value:
+2. Open the *src/settings.ts* file. Create a `CorrPlotSettings` class with the public property `method`. The type is `string` and the default value is `circle`. Add the `settings` property to the `VisualSettings` class with the default value:
 
     ```typescript
     "use strict";
@@ -264,11 +266,11 @@ You can configure `corrplot` by using the `method` argument for the `corrplot` f
 
    ![R visual settings](./media/create-r-based-power-bi-desktop/r-data-look-settings.png)
 
-    Finally, the R script must have a default property. If the user doesn't change the property, the visual uses this value.
+    Finally, the R script must have a default property. If the user doesn't change the property value (in this case, the shape setting), the visual uses this value.
 
     For R runtime variables for the properties, the naming convention is `<objectname>_<propertyname>`, in this case, `settings_method`.
 
-1. Change the R script in your visual to match the following code:
+3. Change the R script in your visual to match the following code:
 
     ```r
     library(corrplot)
