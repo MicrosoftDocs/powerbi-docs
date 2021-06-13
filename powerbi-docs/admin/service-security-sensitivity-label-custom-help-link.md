@@ -22,14 +22,14 @@ To help your users understand what your sensitivity labels mean or how they shou
 You can define a custom help link for sensitivity labels in two ways:
 
 * Using the Security & Compliance Center PowerShell [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) command:
-
-```powershell
+    
+    ```powershell
     Set-LabelPolicy -Identity "<policy name>" -AdvancedSettings @{powerbicustomurl=https://yourLink}
-```
+    ```
 
 * In the [Microsoft 365 compliance center](https://compliance.microsoft.com/informationprotection). See [What label policies can do](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do).
 
-![Screenshot of custom help link field in the compliance center user interface.](media/service-security-sensitivity-label-custom-help-link/sensitivity-label-custom-help-link-compliance-ui.png)
+    ![Screenshot of custom help link field in the compliance center user interface.](media/service-security-sensitivity-label-custom-help-link/sensitivity-label-custom-help-link-compliance-ui.png)
 
 If a URL has been defined both in PowerShell and in the compliance center, the dedicated URL defined in PowerShell will be used.
 
