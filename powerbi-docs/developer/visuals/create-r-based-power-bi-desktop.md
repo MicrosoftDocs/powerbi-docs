@@ -49,25 +49,31 @@ In this tutorial, you learn how to:
     | 11 | 3170 |
     | 12 | 2762 |
 
-2. To create a visual, open PowerShell or Terminal, and run the following command:
+2. To create a visual, open **PowerShell** or **Terminal**, and run the following command:
 
       ```cmd
       pbiviz new rVisualSample -t rvisual
       ```
 
-      This command creates a new folder structure based on the `rvisual` template. This template includes a basic, ready-to-run R-powered visual called `script.r` that runs the following R script:
+      This command creates a new folder structure based on the `rvisual` template. It creates a file called *script.r* in the root folder of the visual. This file holds the R script that is run to generate the image for a user. You can create your R script in Power BI Desktop.
 
-      ```r
-      plot(Values)
-      ```
+3. From the newly created rVisualSample directory run
 
-3. Assign data to the developer visual by dragging **MonthNo** and **Total units** to **Values** for the visual.
+ ```cmd
+ pbiviz start
+ ```
 
-4. Set the aggregation type of **Total units** to *Don't summarize*.
+4. In Power BI Desktop, select **R script visual**:
+
+   ![Screenshot shows the R script visual control in the Power B I Desktop.](./media/create-r-based-power-bi-desktop/r-script-icon.png)
+
+5. Assign data to the developer visual by dragging **MonthNo** and **Total units** to **Values** for the visual.
+
+6. Set the aggregation type of **Total units** to *Don't summarize*.
 
     ![Don't summarize data](./media/create-r-based-power-bi-desktop/dont-summarize.png)
 
-5. Run the following R-script:
+6. Run the following R-script:
 
       ```r
       plot(dataset)
@@ -77,13 +83,9 @@ In this tutorial, you learn how to:
 
 ## Editing the R Script
 
-When you use `pbiviz` to create the R-powered visual based on the `rvisual` template, it creates a file called *script.r* in the root folder of the visual. This file holds the R script that runs to generate the image for a user. You can create your R script in Power BI Desktop.
+The R-script that was created in the root folder of your visual can be edited to customize your visual. You can create and edit your R script in Power BI Desktop. Let's start by creating a line chart.
 
-1. In Power BI Desktop, select **R script visual**:
-
-   ![Screenshot shows the R script visual control in the Power B I Desktop.](./media/create-r-based-power-bi-desktop/r-script-icon.png)
-
-2. Paste the following R code into the **R script editor**:
+1. Paste the following R code into the **R script editor**:
 
    ```r
    x <- dataset[,1] # get the first column from dataset
@@ -95,13 +97,13 @@ When you use `pbiviz` to create the R-powered visual based on the `rvisual` temp
    lines(x, y, col="green") # draw line plot
    ```
 
-3. Select the **Run script** icon to see the result.
+2. Select the **Run script** icon to see the result.
 
     ![Screenshot shows the result of running the script, which is a line plot.](./media/create-r-based-power-bi-desktop/run-r-script.png)
 
-4. When your R script is ready, copy it to the `script.r` file in your visual project created at one of the previous steps.
+3. When your R script is ready, copy it to the `script.r` file in your visual project created at one of the previous steps.
 
-5. In the *capabilities.json* file, change the `name` of `dataRoles` *dataRoles*, and set the `dataViewMappings` input to *dataset*. Power BI passes data as the `dataset` data frame object for the R script visual, but the R visual gets the data frame from the `dataRoles` names.
+4. In the *capabilities.json* file, change the `name` of `dataRoles` *dataRoles*, and set the `dataViewMappings` input to *dataset*. Power BI passes data as the `dataset` data frame object for the R script visual, but the R visual gets the data frame from the `dataRoles` names.
 
     ```json
     {
@@ -138,7 +140,7 @@ When you use `pbiviz` to create the R-powered visual based on the `rvisual` temp
     }
     ```
 
-6. Add the following code to support resizing the image in the *src/visual.ts* file.
+5. Add the following code to support resizing the image in the *src/visual.ts* file.
 
     ```typescript
       public onResizing(finalViewport: IViewport): void {
