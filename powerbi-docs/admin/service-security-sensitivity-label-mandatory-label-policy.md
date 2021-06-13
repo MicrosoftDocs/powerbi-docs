@@ -55,7 +55,8 @@ Where:
 * [Set-LabelPolicy documentation](/powershell/module/exchange/set-labelpolicy)
 
 ## Considerations and limitations
-* Mandatory labeling for Power BI is in preview, so there may be flows that allow the user to create or edit unlabeled content.
+* Mandatory labeling in Power BI is in preview, so there may be flows that allow the user to create or edit unlabeled content.
+* Mandatory labeling in Power BI is not supported for service principals and APIs. Service principals and APIs are not affected by mandatory label policies.
 
 ## Next steps
 
