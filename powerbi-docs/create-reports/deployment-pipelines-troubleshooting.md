@@ -175,7 +175,7 @@ After a deployment fails due to schema changes, the target stage displays the *D
 
 ### Why is my visual broken after deploying a dataset or a dataflow?
 
-Datasets and dataflows are data related Power BI items, that contain both data and metadata. During deployment, only the metadata is copied while the data isn't. When you deploy a report that relies on data related Power BI item's data, even if the item is deployed, the report's visual can't access the item's data as it's not there. To solve this problem, refresh the dataflow and then refresh the dataset in the target stage.
+Datasets and dataflows are Power BI items that store data and contain both data and metadata. During deployment, only the metadata is copied while the data isn't. As a result, after deployment the dataset or dataflow might not have any data and a report visual that's relying on this data, will appear broken. To solve this problem, refresh the dataflow and then refresh the dataset in the target stage.
 
 ### Does deployment pipelines support multi-geo?
 
@@ -233,7 +233,7 @@ When you have a dataflow that contains datasets that are configured with [increm
 
 In dataflows, old data sources are not removed from the dataflow data source page. To support the dataflows lineage view, connected items are not deleted. This behavior doesn't affect deployment pipelines. You can still refresh, edit and deploy dataflows in a pipeline.
 
-### What happens when I configure a rule for a dataflow's data source?
+### Why do I see two data sources connected to my dataflow after using dataflow rules?
 
 After changing a dataflow's data source using a rule, the dataflow's lineage view displays a connection between the dataflow's source data source, and the data source configured in the rule.
 
