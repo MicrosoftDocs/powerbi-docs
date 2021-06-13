@@ -65,14 +65,15 @@ In this tutorial, you learn how to:
 
 4. Set the aggregation type of **Total units** is set to *Don't summarize*
 
-   ![Don't summarize data](./media/create-r-based-power-bi-desktop/dont-summarize.png)
+       ![Don't summarize data](./media/create-r-based-power-bi-desktop/dont-summarize.png)
 
 5. Run the following R-script:
 
-  ```r
-  plot(dataset)
+      ```r
+      plot(dataset)
+      ```
 
-   ![R visual with data](./media/create-r-based-power-bi-desktop/r-data-values.png)
+      ![R visual with data](./media/create-r-based-power-bi-desktop/r-data-values.png)
 
 ## Editing the R Script
 
