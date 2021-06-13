@@ -63,9 +63,9 @@ In this tutorial, you learn how to:
 
 3. Assign data to the developer visual by dragging **MonthNo** and **Total units** to **Values** for the visual.
 
-4. Set the aggregation type of **Total units** is set to *Don't summarize*
+4. Set the aggregation type of **Total units** to *Don't summarize*.
 
-       ![Don't summarize data](./media/create-r-based-power-bi-desktop/dont-summarize.png)
+    ![Don't summarize data](./media/create-r-based-power-bi-desktop/dont-summarize.png)
 
 5. Run the following R-script:
 
