@@ -16,11 +16,11 @@ Every visual has a `capabilities.json` file where you provide information to the
 
 The root objects of a visual's capabilities file are:  
 
-* [dataRoles](#dataroles-the-data-fields-that your-visual-expects)
-* [dataViewMappings](#dataviewMappings-how-you want-the-data-mapped)
+* [dataRoles](#dataroles-the-data-fields-that-your-visual-expects)
+* [dataViewMappings](#dataviewmappings-how-you-want-the-data-mapped)
 * [objects](#objects-define-property-pane-options)
 * [supportsHighlight](#supportshighlight-how-to-handle-partial-highlighting)
-* [advancedEditModeSupport](#advancedEditModeSupport-how-to-handle advanced-edit-mode)
+* [advancedEditModeSupport](#advancededitmodesupport-how-to-handle advanced-edit-mode)
 * [sorting](#sorting-data-sorting-options-for-your-visual)
 
 The `capabilities.json` file looks like this:
