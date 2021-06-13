@@ -31,7 +31,7 @@ You can define a custom help link for sensitivity labels in two ways:
 
     ![Screenshot of custom help link field in the compliance center user interface.](media/service-security-sensitivity-label-custom-help-link/sensitivity-label-custom-help-link-compliance-ui.png)
 
-If a URL has been defined both in PowerShell and in the compliance center, the dedicated Power BI URL defined in PowerShell will be used.
+If a URL has been defined both in PowerShell and in the compliance center, the dedicated Power BI URL defined in PowerShell will be used as the help link for sensitivity labels in Power BI.
 
 A custom URL is always taken from the policy with the highest priority, so be sure to configure the custom URL on that policy.
 
