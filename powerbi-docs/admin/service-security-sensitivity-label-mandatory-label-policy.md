@@ -28,6 +28,9 @@ The images below show the dialogs that prompt users to choose and apply a label 
 
 ![Screenshot of mandatory label dialog.](media/service-security-sensitivity-label-mandatory-label-policy/mandatory-labels-dialog.png)
 
+>[!NOTE]
+> Mandatory labeling in Power BI is not supported for service principals and APIs. They are not affected by mandatory label policies.
+
 ## Enabling a mandatory label policy for Power BI
 
 A Microsoft 365 administrator can enable a mandatory label policy for Power BI using [Security & Compliance Center PowerShell](/powershell/module/exchange/set-labelpolicy). The mandatory label settings for Power BI are independent of the mandatory label settings that affect Office files and email.
@@ -50,9 +53,6 @@ Where:
 * [Admin Guide: Custom configurations for the Azure Information Protection unified labeling client](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels)
 * [Create and configure sensitivity labels and their policies](/microsoft-365/compliance/create-sensitivity-labels#use-powershell-for-sensitivity-labels-and-their-policies)
 * [Set-LabelPolicy documentation](/powershell/module/exchange/set-labelpolicy)
-
->[!NOTE]
-> Mandatory labeling is not supported for service principals.
 
 ## Next steps
 
