@@ -32,7 +32,8 @@ For queries for which the source data is not updated often or at all, it makes s
 
 ![Screenshot of the Query Properties dialog, highlighting the 'Include in report refresh' option.](media/refresh-include-in-report-refresh/include-in-report-refresh-properties-menu.png)
 
-Note that any queries excluded from refresh are also excluded in automatic refresh in the Service.
+>[!NOTE]
+>Any queries excluded from refresh are also excluded in automatic refresh in the Power BI service.
 
 ## Next steps
 
