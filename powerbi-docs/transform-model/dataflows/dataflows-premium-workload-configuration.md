@@ -15,8 +15,6 @@ LocalizationGroup: Data from files
 
 You can create dataflow workloads in your Power BI Premium subscription. Power BI uses the concept of *workloads* to describe Premium content. Workloads include datasets, paginated reports, dataflows, and AI. The *dataflows* workload lets you use dataflows self-service data preparation to ingest, transform, integrate, and enrich data. Power BI Premium dataflows are managed in the **Admin portal**.
 
-![Admin portal for dataflows in Power BI premium](media/dataflows-premium-workload-configuration/dataflows-premium-workloads-01.png)
-
 The following sections describe how to enable dataflows in your organization, how to refine their settings in your Premium capacity, and guidance for common usage.
 
 ## Enabling dataflows in Power BI premium

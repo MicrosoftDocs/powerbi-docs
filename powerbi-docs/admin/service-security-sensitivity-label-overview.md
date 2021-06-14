@@ -111,6 +111,10 @@ Downstream inheritance is a critical link in Power BI’s end-to-end information
 
 [Read more about downstream inheritance](service-security-sensitivity-label-downstream-inheritance.md)
 
+## Mandatory label policy (preview)
+
+To help ensure comprehensive protection and governance of sensitive data, organizations can require users to apply labels to their sensitive Power BI content. Such a policy is called a mandatory label policy. See [Mandatory label policy](service-security-sensitivity-label-mandatory-label-policy.md) for more information.
+
 ## Admin APIs for setting and removing labels programmatically
 
 To meet compliance requirements, organizations are often required to classify and label all sensitive data in Power BI. This task can be challenging for tenants that have large volumes of data in Power BI. To make the task easier and more effective, Power BI has admin REST APIs that admins can use to set and remove sensitivity labels on large numbers of Power BI artifacts programatically. See the following:
@@ -188,6 +192,14 @@ To access sensitivity labels in either of these centers, navigate to **Classific
 >[!Important]
 > If your organization uses Azure Information Protection sensitivity labels, you need to [migrate](/azure/information-protection/configure-policy-migrate-labels) them to one of the previously listed services in order for the labels to be used in Power BI.
 
+## Custom help link
+
+To help your users understand what your sensitivity labels mean or how they should be used, you can provide a *Learn more* URL that appears at the bottom of the sensitivity label menu that you see when you're applying a sensitivity label.
+
+![Screenshot of custom help link for sensitivity labels](media/service-security-sensitivity-label-overview/sensitivity-label-custom-help-link.png)
+
+See [Custom help link for sensitivity labels](service-security-sensitivity-label-custom-help-link.md) for detail.
+
 ## Limitations
 
 ### General
@@ -214,7 +226,7 @@ To access sensitivity labels in either of these centers, navigate to **Classific
 
 * Protected .pbix files can be only opened by a user who has [**Full control** and/or **Export** usage rights](/microsoft-365/compliance/encryption-sensitivity-labels) for the relevant label. The user that set the label also has Full control and can never be locked out. [See more detail](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)
 
-* "Publish" or "Get data" of a protected .pbix file requires that the label on the .pbix file be in the user's [label policy](/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide). If the label isn't in the user's label policy, the Publish or Get data action will fail.
+* "Publish" or "Get data" of a protected .pbix file requires that the label on the .pbix file be in the user's [label policy](/microsoft-365/compliance/create-sensitivity-labels). If the label isn't in the user's label policy, the Publish or Get data action will fail.
 
 * If the label applied to a .pbix file hasn’t been published to the user in the Microsoft 365 compliance center, the user will not be able to save the file in Desktop.
 
