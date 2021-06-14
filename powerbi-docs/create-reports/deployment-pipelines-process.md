@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 05/26/2021
+ms.date: 06/14/2021
 ---
 
 # Understand the deployment process
@@ -72,7 +72,7 @@ Auto-binding works only with Power BI items that are supported by deployment pip
 
 Data in the target Power BI item, such as a dataset or dataflow, is kept when possible. If there are no changes to a Power BI item that holds the data, the data is kept as it was before the deployment.
 
-In many cases, when you have small changes, such as adding a table or a measure, Power BI keeps the original data. For breaking schema changes, or changes in the data source connection, a full refresh is required.
+In many cases, when you have a small change such as adding or removing a table, Power BI keeps the original data. For breaking schema changes, or changes in the data source connection, a full refresh is required.
 
 ### Requirements for deploying to a stage with an existing workspace
 

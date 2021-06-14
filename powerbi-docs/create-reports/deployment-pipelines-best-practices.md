@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
-ms.date: 03/04/2021
+ms.date: 06/14/2021
 ---
 
 # Deployment pipelines best practices
