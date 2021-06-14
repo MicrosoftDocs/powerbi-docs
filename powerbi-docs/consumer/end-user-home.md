@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 12/03/2020
+ms.date: 06/11/2021
 LocalizationGroup: Get started
 ---
 # Find your dashboards, reports, and apps
@@ -66,24 +66,24 @@ The **Featured** section contains content that your administrator has *promoted*
 The next section is a tabbed list. 
 - **Recent** is the content you've visited most recently. Notice the timestamp for each item. 
 - Colleagues share apps with you, but they can also share individual dashboards and reports. In the **Shared with me** section, you'll find dashboards and  reports that your colleagues have shared with you. 
-- The **My apps** section lists apps that have been shared with you or that you've [downloaded from AppSource](end-user-apps.md); the most recent apps are listed here. 
+- The **My apps** section lists [apps that have been shared with you](end-user-apps.md) or that you've [downloaded from AppSource](end-user-apps.md); the most recent apps are listed here. 
 
 ![Home list view with Recent tab selected](./media/end-user-home/power-bi-recents.png)
 
 ### Workspaces
-Every Power BI service user has one **My workspace**. **My workspace** will only contain content if you've downloaded Microsoft samples or created your own dashboards, reports, or apps. For many *business users*, **My workspace** will be empty and will remain empty. If you're a brand new user, you will only have one workspace, **My workspace** 
+Every Power BI service user has one **My workspace**. **My workspace** will only contain content if you've downloaded Microsoft samples or created your own dashboards, reports, or apps. For many *business users*, **My workspace** will be empty and will remain empty. If you're a brand new user, you will only have one workspace, **My workspace**.
 
-![Only one workspace, My workspace](./media/end-user-home/power-bi-one-workspace.png)
+![Only one workspace, My workspace.](./media/end-user-home/power-bi-one-workspace.png)
 
 And if you select that one workspace, you'll find it empty.
 
 ![empty My workspace](./media/end-user-home/power-bi-empty-workspace.png)
 
-Each time you [download an app](end-user-app-marketing.md), or an [app is shared with you](end-user-apps.md), a new workspace is created. Over time, you'll have more than one workspace. To open an *app workspace*, select it on your Home canvas. 
+If someone in your organization adds you to a workspace, you see it in your list of workspaces. Over time, you'll have more than one workspace. To open a workspace, select it in the nav pane. 
 
-![Screenshot of Workspaces section of Home](./media/end-user-home/power-bi-workspaces-more.png)
+![Screenshot of Workspaces in navigation pane.](./media/end-user-home/power-bi-workspaces-more.png)
 
-The app opens on your canvas and you can see the name of the workspace listed on your nav pane. Within workspaces, the Power BI service separates your content by type: dashboards and reports. In some cases, you'll also have workbooks and datasets. You'll see this organization when you select a workspace. In this example, the **Gardening chain** workspace contains four dashboards and two reports.
+The app opens on your canvas and you can see the name of the workspace listed on your nav pane. Within workspaces, the Power BI service separates your content by type: dashboards and reports. In some cases, you'll also have workbooks and datasets. You'll see this organization when you select a workspace. In this example, the **Supplier Quality Analysis** workspace contains one report, one dashboard, and one dataset.
 
 ![Gardening workspace selected](./media/end-user-home/power-bi-search-workspace.png)
 
