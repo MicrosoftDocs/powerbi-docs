@@ -243,11 +243,11 @@ The following composite models connections are not supported:
 
 Create an app for each deployment pipeline stage, so that you can test each app update from an end user's point of view. A deployment pipeline allows you to manage this process easily. Use the publish or view button in the workspace card, to publish or view the app in a specific pipeline stage.
 
-[![A screenshot highlighting the publish app button, at the bottom right of the production stage.](media/deployment-pipelines-process/publish.png)](media/deployment-pipelines-process/publish.png#lightbox)
+:::image type="content" source="media/deployment-pipelines-process/publish.png" alt-text="A screenshot highlighting the publish app button, at the bottom right of the production stage." lightbox="media/deployment-pipelines-process/publish.png":::
 
 In the production stage, the main action button on the bottom-right corner opens the update app page in Power BI, so that any content updates become available to app users.
 
-[![A screenshot highlighting the update app button, at the bottom right of the production stage.](media/deployment-pipelines-process/update-app.png)](media/deployment-pipelines-process/update-app.png#lightbox)
+:::image type="content" source="media/deployment-pipelines-process/update-app.png" alt-text="A screenshot highlighting the update app button, at the bottom right of the production stage." lightbox="media/deployment-pipelines-process/update-app.png":::
 
 >[!IMPORTANT]
 >The deployment process does not include updating the app content or settings. To apply changes to content or settings, you need to manually update the app in the required pipeline stage.
