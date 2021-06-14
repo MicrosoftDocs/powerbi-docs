@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: pbi-deployment
-ms.date: 03/22/2021
+ms.date: 06/14/2021
 ---
 
 # Deployment pipelines troubleshooting
@@ -107,7 +107,7 @@ For a comprehensive list of items and artifacts that are not supported in deploy
 
 ### Why did my deployment fail due to broken rules?
 
-If you have problems configuring deployment rules, visit [deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules), and make sure you follow the [deployment rules limitations](deployment-pipelines-get-started.md#deployment-rules-limitations).
+If you have problems configuring deployment rules, visit [deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules), and make sure you follow the [deployment rules limitations](deployment-pipelines-get-started.md#deployment-rule-limitations).
 
 If your deployment was previously successful, and is suddenly failing with broken rules, it may be due to a dataset being republished. The following changes to the source dataset, result in a failed deployment:
 
@@ -173,6 +173,10 @@ If the changes were not intentional, close the message window, upload a fixed PB
 
 After a deployment fails due to schema changes, the target stage displays the *Deployment failed* message, followed by the *Show details* link. The link opens the same *continue the deployment* message that was displayed during the failed deployment.
 
+### Why is my visual broken after deploying a dataset or a dataflow?
+
+Datasets and dataflows are Power BI items that store data and contain both data and metadata. During deployment, only the metadata is copied while the data isn't. As a result, after deployment the dataset or dataflow might not have any data and a report visual that's relying on this data, will appear broken. To solve this problem, refresh the dataflow and then refresh the dataset in the target stage.
+
 ### Does deployment pipelines support multi-geo?
 
 Multi-geo is supported. It may take longer to deploy content between stages in different geos.
@@ -233,6 +237,20 @@ However, paginated reports that use a Power BI dataset use an internal dataset. 
 
 * **Server** - The server that hosts your database. Keep the existing server as is.
 
+## Dataflows
+
+### What happens to the incremental refresh configuration after deploying dataflows?
+
+When you have a dataflow that contains datasets that are configured with [incremental refresh](../connect-data/incremental-refresh-overview.md), the refresh policy is not copied or overwritten during deployment. After deploying a dataflow that includes a dataset with incremental refresh to a stage that doesn't include this dataflow, if you have a refresh policy you'll need to reconfigure it in the target stage. If you're deploying a dataflow with incremental refresh to a stage were it already resides, the incremental refresh policy isn't copied. In such cases, if you wish to update the refresh policy in the target stage, you'll need to do it manually.
+
+### I deleted a data source that belonged to a dataflow, why can I still see it in the lineage view?
+
+In dataflows, old data sources are not removed from the dataflow data source page. To support the dataflows lineage view, connected items are not deleted. This behavior doesn't affect deployment pipelines. You can still refresh, edit and deploy dataflows in a pipeline.
+
+### Why do I see two data sources connected to my dataflow after using dataflow rules?
+
+After changing a dataflow's data source using a rule, the dataflow's lineage view displays a connection between the dataflow's source data source, and the data source configured in the rule.
+
 ## Permissions
 
 ### What is the deployment pipelines permissions model?
@@ -267,6 +285,9 @@ Pipeline and workspace permissions are managed separately. You may have pipeline
 
 >[!div class="nextstepaction"]
 >[Understand the deployment pipelines process](deployment-pipelines-process.md)
+
+>[!div class="nextstepaction"]
+>[Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md)
 
 >[!div class="nextstepaction"]
 >[Deployment pipelines best practices](deployment-pipelines-best-practices.md)
