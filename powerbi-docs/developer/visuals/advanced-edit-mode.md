@@ -7,22 +7,22 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 06/18/2019
+ms.date: 06/14/2021
 ---
 
 # Advanced edit mode in Power BI visuals
 
-If you require advanced UI controls in your Power BI visual, you can take advantage of advanced edit mode. When you're in report editing mode, you select an **Edit** button to set the edit mode to **Advanced**. The visual can use the `EditMode` flag to determine whether it should display this UI control.
+Advanced edit mode enables you to use advanced UI controls in your Power BI visual. For example.... When you're in report editing mode, you select an **Edit** button to set the edit mode to **Advanced**. The visual can use the `EditMode` flag to determine whether it should display this UI control.
 
-By default, the visual doesn't support advanced edit mode. If a different behavior is required, you can explicitly state this in the visual's *capabilities.json* file by setting the `advancedEditModeSupport` property.
+By default, the visual doesn't support advanced edit mode (`"advancedEditModeSupport: 0"`). To enable advanced edit mode, add a line to the visual's *capabilities.json* file. by setting the `advancedEditModeSupport` property.
 
 The possible values are:
 
-- `0` - NotSupported
+* `0` - NotSupported
 
-- `1` - SupportedNoAction
+* `1` - SupportedNoAction
 
-- `2` - SupportedInFocus
+* `2` - SupportedInFocus
 
 ## Enter advanced edit mode
 
@@ -46,3 +46,8 @@ When you select **Edit**, the visual gets an update() call with EditMode set to 
 The **Back to report** button is displayed if:
 
 * The `advancedEditModeSupport` property is set in the *capabilities.json* file to `SupportedInFocus`.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Add conditional formatting](conditional-format.md)
