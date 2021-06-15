@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/14/2021
+ms.date: 06/15/2021
 LocalizationGroup: Create reports
 ---
 # Use conditional formatting in tables 
@@ -65,19 +65,24 @@ Under **Rules**, enter one or more value ranges, and set a color for each one. E
 
 ![Screenshot of Color by rules.](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-if-value.png)
 
-An example table with rules-based background color formatting on the **Affordability** column looks like this:
+When you select **Percent** in this dropdown, you’re setting the rule boundaries as a percent of the overall range of values from minimum to maximum. So, for example, if the lowest data point was 100 and the highest was 400, the above rules would color any point less than 200 as green, anything from 200 to 300 as yellow, and anything above 400 as red. 
+
+An example table with rules-based background color formatting based on **Percent** in the **Affordability** column looks like this:
 
 ![Screenshot of Example table with color by rules.](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-table.png)
 
 ### Color by rules for percentages
 
-If the column you want to color contains percentages, write the numbers in the rules as decimals, and select **Number** instead of **Percent** for the number format. For example, "If vaule is greater than or equal to 0 Number and is less than .25" Number" returns values in the bottom 25%.
+If the field the formatting is based on contains percentages, write the numbers in the rules as decimals, which are the actual values; for example, ".25" instead of "25". Also, select **Number** instead of **Percent** for the number format. For example, "If value is greater than or equal to 0 Number and is less than .25 Number" returns values less than 25%. 
 
 ![Screenshot of Color by rules for percentages.](media/desktop-conditional-table-formatting/power-bi-percent-conditional-rules.png)
 
 An example table with rules-based background color on the **% revenue region** column looks like this:
 
 ![Screenshot of Example table with color by rules for percentages.](media/desktop-conditional-table-formatting/power-bi-percent-conditional-table.png)
+
+> [!NOTE]
+> If you use **Percent** instead of **Number** for fields containing percentages, you may get unexpected results. For example, in a range of percent values from 23% to 98%, 50% of that range is 60.5%. So use **Number** instead.
 
 ## Color by color values
 
