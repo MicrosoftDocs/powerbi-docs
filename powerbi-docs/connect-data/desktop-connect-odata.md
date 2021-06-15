@@ -8,13 +8,13 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/04/2021
+ms.date: 04/30/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to OData feeds in Power BI Desktop
 In Power BI Desktop, you can connect to an **OData feed** and use the underlying data just like any other data source in Power BI Desktop.
 
-To connect to an OData feed, select **Get Data > OData Feed** from the **Home** ribbon in Power BI Desktop.
+To connect to an OData feed, select **Get data > OData feed** from the **Home** ribbon in Power BI Desktop.
 
 ![Screenshot of the Get Data ribbon in Power B I Desktop, showing the OData Feed selection.](media/desktop-connect-odata/connect-to-odata_1.png)
 
@@ -26,7 +26,7 @@ Power BI Desktop connects to the OData feed, and displays the available tables a
 
 ![Screenshot of the Navigator dialog, showing a preview of the selected table's data.](media/desktop-connect-odata/connect-to-odata_3.png)
 
-You can choose the **Edit** button, which launches **Query Editor**, where you can shape and transform the data from the OData feed before importing it into Power BI Desktop. Or you can select the **Load** button, and import all of the data elements you selected in the left pane.
+You can choose the **Transform Data** button, which launches **Power Query Editor**, where you can shape and transform the data from the OData feed before importing it into Power BI Desktop. Or you can select the **Load** button, and import all of the data elements you selected in the left pane.
 
 When we select **Load**, Power BI Desktop imports the selected items, and displays a **Load** window of the import progress.
 

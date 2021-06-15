@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 03/24/2021
+ms.date: 06/14/2021
 ---
 
 # Understand the deployment process
@@ -15,6 +15,8 @@ ms.date: 03/24/2021
 The deployment process lets you clone content from one stage in the pipeline to another, typically from development to test, and from test to production.
 
 During deployment, Power BI copies the content from the current stage, into the target one. The connections between the copied items are kept during the copy process. Power BI also applies the configured deployment rules to the updated content in the target stage. Deploying content may take a while, depending on the number of items being deployed. During this time, you can navigate to other pages in the Power BI portal, but you cannot use the content in the target stage.
+
+You can also deploy content programmatically, using the [deployment pipelines REST APIs](/rest/api/power-bi/pipelines). You can learn more about this process in the [Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md) article.
 
 ## Deploying content to an empty stage
 
@@ -54,21 +56,27 @@ Content from the current stage is copied over to the target stage. Power BI iden
 
 In the target stage, [item properties that are not copied](deployment-pipelines-process.md#item-properties-that-are-not-copied), remain as they were before deployment. New content and new items are copied from the current stage to the target stage.
 
-### Refreshing the dataset
+### Auto-binding
 
-Data in the target dataset is kept when possible. If there are no changes to a dataset, the data is kept as it was before the deployment.
+When you use [selective deploy](deployment-pipelines-get-started.md?#selective-deployment) to deploy Power BI items, deployment pipelines checks for dependencies. The deployment will either succeed or fail, depending on the location of the item that provides the data that the deployed item relies on.
 
-With small changes, such as adding a table or measures, Power BI keeps the original data, and the refresh is optimized to refresh only what's needed. For breaking schema changes, or changes in the data source connection, a full refresh is required.
+* **Linked item exists in the target stage** - Deployment pipelines will automatically bind the deployed item, to the item it relies on in the deployed stage. For example, if you deploy a paginated report from development to test, and it's connected to a Power BI dataset that was previously deployed to the test stage, it will be automatically connected to that database.
+
+* **Linked item doesn't exist in the target stage** - Deployment pipelines will fail a deployment if an item has a dependency on another item, and the item providing the data isn't deployed and doesn't reside in the target stage. For example, if you deploy a report from development to test, and the test stage doesn't contain its Power BI dataset, the deployment will fail. To avoid failed deployments due to dependent items not being deployed, use the *Select related* button. *Select related* automatically selects all the related items that provide dependencies to the items you're about to deploy.
+
+Auto-binding works only with Power BI items that are supported by deployment pipelines and reside within Power BI. To view the dependencies of a Power BI item, from the item's *More options* menu, select *View lineage*.
+
+:::image type="content" source="media/deployment-pipelines-process/view-lineage.png" alt-text="A screenshot of the view lineage option, in an item's more options menu.":::
+
+### Refreshing data
+
+Data in the target Power BI item, such as a dataset or dataflow, is kept when possible. If there are no changes to a Power BI item that holds the data, the data is kept as it was before the deployment.
+
+In many cases, when you have a small change such as adding or removing a table, Power BI keeps the original data. For breaking schema changes, or changes in the data source connection, a full refresh is required.
 
 ### Requirements for deploying to a stage with an existing workspace
 
-As long as the deployed content resides on a [premium capacity](../admin/service-premium-what-is.md), a user that meets the following conditions, can deploy it to a stage with an existing workspace:
-
-* A user with a [Pro license](../admin/service-admin-purchasing-power-bi-pro.md) or a [PPU user](../admin/service-premium-per-user-faq.yml), who's a member of both workspaces in the source and target deployment stages.
-
-* An owner of all the datasets in the target workspace that are about to be deployed.
-
-For more information, review the [permissions](#permissions) section.
+A user with a [Pro license](../admin/service-admin-purchasing-power-bi-pro.md) or a [PPU user](../admin/service-premium-per-user-faq.yml) who's a member of both the target and source deployment workspaces, can deploy content that resides on a [premium capacity](../admin/service-premium-what-is.md) to a stage with an existing workspace. For more information, review the [permissions](#permissions) section.
 
 ## Deployed items
 
@@ -77,6 +85,8 @@ When you deploy content from one pipeline stage to another, the copied content c
 * Datasets
 
 * Reports
+
+* Dataflows
 
 * Dashboards
 
@@ -90,13 +100,15 @@ Deployment pipelines doesn't support the following items:
 
 * PUSH datasets
 
-* Dataflows
+* Streaming dataflows
 
 * Reports based on unsupported datasets
 
 * [Template app workspaces](../connect-data/service-template-apps-create.md#create-the-template-workspace)
 
 * Workbooks
+
+* Goals
 
 ## Item properties copied during deployment
 
@@ -165,6 +177,8 @@ Deployment pipelines supports [incremental refresh](../connect-data/incremental-
 
 With deployment pipelines, you can make updates to a dataset with incremental refresh while retaining both data and partitions. When you deploy the dataset, the policy is copied along.
 
+To understand how incremental refresh behaves with dataflows, see [why do I see two data sources connected to my dataflow after using dataflow rules?](deployment-pipelines-troubleshooting.md#why-do-i-see-two-data-sources-connected-to-my-dataflow-after-using-dataflow-rules)
+
 #### Activating incremental refresh in a pipeline
 
 To enable incremental refresh, [configure it in Power BI Desktop](../connect-data/incremental-refresh-overview.md), and then publish your dataset. After you publish, the incremental refresh policy is similar across the pipeline, and can be authored only in Power BI Desktop.
@@ -193,7 +207,7 @@ Below are a few examples of how you may integrate incremental refresh with deplo
 
 #### Limitations and considerations
 
-For incremental refresh, deployment pipelines only supports datasets that use [enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md). Beginning with the September 2020 release of Power BI Desktop, all datasets created or modified with Power BI Desktop automatically implement enhanced dataset metadata.
+For incremental refresh, deployment pipelines only supports datasets that use [enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md). All datasets created or modified with Power BI Desktop automatically implement enhanced dataset metadata.
 
 When republishing a dataset to an active pipeline with incremental refresh enabled, the following changes will result in deployment failure due to data loss potential:
 
@@ -229,11 +243,11 @@ The following composite models connections are not supported:
 
 Create an app for each deployment pipeline stage, so that you can test each app update from an end user's point of view. A deployment pipeline allows you to manage this process easily. Use the publish or view button in the workspace card, to publish or view the app in a specific pipeline stage.
 
-[![A screenshot highlighting the publish app button, at the bottom right of the production stage.](media/deployment-pipelines-process/publish.png)](media/deployment-pipelines-process/publish.png#lightbox)
+:::image type="content" source="media/deployment-pipelines-process/publish.png" alt-text="A screenshot highlighting the publish app button, at the bottom right of the production stage." lightbox="media/deployment-pipelines-process/publish.png":::
 
 In the production stage, the main action button on the bottom-right corner opens the update app page in Power BI, so that any content updates become available to app users.
 
-[![A screenshot highlighting the update app button, at the bottom right of the production stage.](media/deployment-pipelines-process/update-app.png)](media/deployment-pipelines-process/update-app.png#lightbox)
+:::image type="content" source="media/deployment-pipelines-process/update-app.png" alt-text="A screenshot highlighting the update app button, at the bottom right of the production stage." lightbox="media/deployment-pipelines-process/update-app.png":::
 
 >[!IMPORTANT]
 >The deployment process does not include updating the app content or settings. To apply changes to content or settings, you need to manually update the app in the required pipeline stage.
@@ -241,6 +255,14 @@ In the production stage, the main action button on the bottom-right corner opens
 ## Permissions
 
 Pipeline permissions and workspace permissions are granted and managed separately. For example, a user with pipeline access that doesn't have workspace permissions, will be able to view the pipeline and share it with others. However, this user will not be able to view the content of the workspace in the pipeline, or in the workspace page, and will not be able to perform deployments.
+
+When deploying Power BI items, the ownership of the deployed item may change. Review the table below to understand who can deploy each item and how the deployment affects the item's ownership.
+
+|Power BI Item    |Required permission to deploy an existing item |Item ownership after deployment |
+|-----------------|---------|---------|
+|Dataset          |Workspace member |Unchanged       |
+|Dataflow         |Dataflow owner   |Unchanged         |
+|Paginated report |Workspace member |The user who made the deployment becomes the owner |
 
 ### User with pipeline access
 
@@ -330,7 +352,17 @@ This section lists most of the limitations in deployment pipelines.
 
 * After deployment, downloading a dataset (from the stage it's been deployed to) is not supported.
 
-* For a list of deployment rule limitations, see [deployment rules limitations](deployment-pipelines-get-started.md#deployment-rules-limitations).
+* For a list of deployment rule limitations, see [deployment rules limitations](deployment-pipelines-get-started.md#deployment-rule-limitations).
+
+### Dataflow limitations
+
+* When deploying a dataflow with linked entities that reside on the same workspace, the deployment will fail.
+
+* When deploying a dataflow to an empty stage, deployment pipelines creates a new workspace and sets the dataflow storage to a Power BI blob storage. Blob storage is used even if the source workspace is configured to use Azure data lake storage Gen2 (ADLS Gen2).
+
+* In deployment pipelines, service principal isn't supported for dataflows.
+
+* For deployment pipeline rule limitations that effect dataflows, see [Deployment rules limitations](deployment-pipelines-get-started.md#deployment-rule-limitations).
 
 ## Next steps
 
@@ -338,10 +370,13 @@ This section lists most of the limitations in deployment pipelines.
 >[Introduction to deployment pipelines](deployment-pipelines-overview.md)
 
 >[!div class="nextstepaction"]
->[Deployment pipelines best practices](deployment-pipelines-best-practices.md)
-
->[!div class="nextstepaction"]
 >[Get started with deployment pipelines](deployment-pipelines-get-started.md)
 
 >[!div class="nextstepaction"]
+>[Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md)
+
+>[!div class="nextstepaction"]
 >[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.md)
+
+>[!div class="nextstepaction"]
+>[Deployment pipelines best practices](deployment-pipelines-best-practices.md)

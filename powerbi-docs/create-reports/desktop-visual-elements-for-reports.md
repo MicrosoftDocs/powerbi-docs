@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/08/2019
+ms.date: 05/28/2021
 LocalizationGroup: Create reports
 ---
 # Use visual elements to enhance Power BI reports
@@ -16,7 +16,7 @@ With **Power BI Desktop** you can use visual elements, such as wallpaper and imp
 
 ![Add wallpaper and small visual headers to enhance reports](media/desktop-visual-elements-for-reports/visual-elements-for-reports_01.png)
 
-Beginning with the July 2018 release of **Power BI Desktop**, you can put enhancements to use in your reports and make your analytics and reports even more appealing than before. The enhancements discussed in this article include the following: 
+You can put enhancements to use in your reports and make your analytics and reports even more appealing than before. The enhancements discussed in this article include the following: 
 
 * Apply **wallpaper** to your reports so your background can enhance or highlight elements of the story you want to tell with your data
 * Use improved **visual headers** for individual visualizations to create perfectly aligned visuals on your report canvas. 
@@ -25,7 +25,7 @@ The following sections describe how to use these enhancements, and how to apply 
 
 ## Using wallpaper in Power BI reports
 
-You can format the gray area outside your report page using **wallpaper**. The following image has an arrow that clarifies where the wallpaper area applies. 
+You can format the gray area outside your report page using **wallpaper**. The following image has a red box that clarifies where the wallpaper area applies. 
 
 ![Wallpaper covers the gray area around a report](media/desktop-visual-elements-for-reports/visual-elements-for-reports_02.png)
 
@@ -59,7 +59,7 @@ It's important to note that the dotted boundary *only* shows up when editing you
 
 ## Using improved visual headers in Power BI reports
 
-Beginning with the July 2018 release of **Power BI Desktop**, the headers for visuals in reports have been significantly improved. The primary improvements are that the header has been detached from the visual so its position can be adjusted based on your preference of layout and positioning, and the header now appears within the visual itself instead of floating above it. 
+The headers for visuals in reports have been significantly improved. The primary improvements are that the header has been detached from the visual so its position can be adjusted based on your preference of layout and positioning, and the header now appears within the visual itself instead of floating above it. 
 
 By default, the header appears inside the visual aligned with the title. In the following image, you can see the header (the pin icon, the expand icon, and the ellipses icon) within the visual and aligned to the right, along the same horizontal position as the visual's title.
 
@@ -80,7 +80,7 @@ Each visual also has a card in the **Formatting** section of the **Visualization
 > [!NOTE]
 > The visibility of toggles do not affect your report when you are authoring or editing the report. You must publish the report and view it in reading mode to see the effect. This behavior ensures that the many options provided in visual headers are important during editing, especially warning icons that alert you to issues while editing.
 
-For reports that only appear in the **Power BI service**, you can adjust the use of visual headers by going to **My Workspace > Reports** and then selecting the **Settings** icon. There you see settings for the report for which you selected **Settings** and you can adjust the settings from there, as shown in the following image.
+For reports that only appear in the **Power BI service**, you can adjust the use of visual headers by going to **My Workspace > Reports**, selecting a report, and then selecting the **Settings** icon. There you see settings for the report for which you selected **Settings** and you can adjust the settings from there, as shown in the following image.
 
 ![Settings in the Power BI service to use improved visual headers](media/desktop-visual-elements-for-reports/visual-elements-for-reports_10.png)
 

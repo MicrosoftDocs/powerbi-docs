@@ -7,7 +7,7 @@ ms.reviewer: miguem
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 04/21/2021
+ms.date: 05/13/2021
 ms.custom: licensing support, css_fy20Q4
 LocalizationGroup: Share your work
 ---
@@ -58,10 +58,9 @@ Your apps are organized in the **Apps** content list. Just select **Apps** to di
 ## Limitations
 **Update apps with reports that rebind to different datasets is currently not supported** 
 
-In case your app report needs to be rebind to a different dataset, you will need to exclude the report from the app update and then include it again in the app update after the rebind. [Learn more about report dataset rebind](https://docs.microsoft.com/rest/api/power-bi/reports/rebindreport).
+In case your app report needs to be rebind to a different dataset, you will need to exclude the report from the app update and then include it again in the app update after the rebind. [Learn more about report dataset rebind](/rest/api/power-bi/reports/rebindreport).
 
 
 ## Next steps
 * [Open and interact with an app](end-user-app-view.md)
 * [Other ways to share content](end-user-shared-with-me.md)
-

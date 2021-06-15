@@ -124,7 +124,6 @@ When a bookmark is added, the visible status of each object is also saved based 
 
 It's important to note that **slicers** continue to filter a report page, regardless of whether they are visible. As such, you can create many different bookmarks, with different slicer settings, and make a single report page appear very different (and highlight different insights) in various bookmarks.
 
-
 ## Bookmarks for shapes and images
 You can also link shapes and images to bookmarks. With this feature, when you click on an object, it will show the bookmark associated with that object. This can be especially useful when working with buttons; you can learn more by reading the article about [using buttons in Power BI](../create-reports/desktop-buttons.md). 
 
@@ -138,10 +137,9 @@ There are all sorts of interesting things you can do with object-linked bookmark
 
 When you are in editing mode you can use ctrl+click to follow the link, and when not in edit mode, simply click the object to follow the link. 
 
-
 ## Bookmark groups
 
-Beginning with the August 2018 release of **Power BI Desktop**, you can create and use bookmark groups. A bookmark group is a collection of bookmarks that you specify, which can be shown and organized as a group. 
+You can create and use bookmark groups. A bookmark group is a collection of bookmarks that you specify, which can be shown and organized as a group. 
 
 To create a bookmark group, hold down the CTRL key and select the bookmarks you want to include in the group, then click the ellipses beside any of the selected bookmarks, and select **Group** from the menu that appears.
 
@@ -166,14 +164,11 @@ To ungroup bookmarks, just select any bookmark in a group, click the ellipses, a
 Note that selecting **Ungroup** for any bookmark from a group takes all bookmarks out of the group (it deletes the group, but not the bookmarks themselves). So to remove a single bookmark from a group, you need to **Ungroup** any member from that group, which deletes the grouping, then select the members you want in the new group (using CTRL and clicking each bookmark), and select **Group** again. 
 -->
 
-
 ### Reset all your changes to a report
 
 From the upper-right corner of your report canvas, select **Reset to default**. This removes all your changes in the report and sets it back to the author's last saved view of the report.
 
 :::image type="content" source="media/end-user-bookmarks/power-bi-personalize-reset-all.png" alt-text="Reset all changes":::
-
-
 
 ## Limitations and considerations
 In this release of **bookmarks**, there are a few limitations and considerations to keep in mind.

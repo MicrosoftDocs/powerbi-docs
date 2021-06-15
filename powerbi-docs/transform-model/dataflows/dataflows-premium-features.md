@@ -92,7 +92,7 @@ Using DirectQuery with dataflows enables the following enhancements to your Powe
 
 ### Using DirectQuery for dataflows
 
-Using DirectQuery with dataflows is a preview feature available beginning with the May 2020 version of Power BI Desktop. 
+Using DirectQuery with dataflows is a preview feature available in Power BI Desktop. 
 
 There are also prerequisites for using DirectQuery with dataflows:
 

@@ -63,7 +63,7 @@ When you create your own measure, it's called a *model* measure, and it's added 
 
 ### Quick measures
 
-Starting with the February 2018 release of Power BI Desktop, many common calculations are available as *quick measures*, which write the DAX formulas for you based on your inputs in a window. These quick, powerful calculations are also great for learning DAX or seeding your own customized measures. 
+Many common calculations are available as *quick measures*, which write the DAX formulas for you based on your inputs in a window. These quick, powerful calculations are also great for learning DAX or seeding your own customized measures. 
 
 Create a quick measure using one of these methods: 
  - From a table in the **Fields** pane, right-click or select **More options** (**...**), and then select **New quick measure** from the list.

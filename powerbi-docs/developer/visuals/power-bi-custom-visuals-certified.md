@@ -24,7 +24,7 @@ The certification process is optional. Power BI visuals that are not certified, 
 
 ## Certification requirements
 
-To get your Power BI visual [certified](#get-a-power-bi-visual-certified), your Power BI visual must comply with the requirements listed in this section. 
+To get your Power BI visual [certified](#get-a-power-bi-visual-certified), your Power BI visual must comply with the requirements listed in this section.
 
 ### General requirements
 
@@ -85,14 +85,14 @@ Verify that you follow the [Power BI visuals additional certification](/legal/ma
 
 Follow the code requirements listed below to make sure that your code is in line with the Power BI certification policies.  
 
-#### Required
+The following are **Required**:
 
 * Only use public reviewable OSS components such as public JavaScript or TypeScript libraries.
 * The code must support the [Rendering Events API](event-service.md).
 * Ensure DOM is manipulated safely. Use sanitization for user input or user data, before adding it to DOM.
 * Use the [sample report](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/gh-pages/assets) as a test dataset.
 
-#### Not allowed
+The following are **Not allowed**:
 
 * Accessing external services or resources. For example, no HTTP/S or WebSocket requests can go out of Power BI to any services.
 * Using `innerHTML`, or `D3.html(user data or user input)`.
@@ -172,16 +172,16 @@ Your Power BI visual will be available to download from AppSource when this proc
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Developing a Power BI circle card visual](develop-circle-card.md) tutorial.
+>[Developing a Power BI circle card visual](develop-circle-card.md)
+
+>[!div class="nextstepaction"]
+>[Guidelines for publishing Power BI visuals](guidelines-powerbi-visuals.md)
 
 >[!div class="nextstepaction"]
 >[Frequently asked questions about certified visuals](power-bi-custom-visuals-faq.yml#certified-power-bi-visuals).
 
 >[!div class="nextstepaction"]
->[Microsoft's Power BI visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)
-
->[!div class="nextstepaction"]
-[Visuals in Power BI](power-bi-custom-visuals.md)
+>[Visuals in Power BI](power-bi-custom-visuals.md)
 
 >[!div class="nextstepaction"]
 >[Publish Power BI visuals to Microsoft AppSource](office-store.md)

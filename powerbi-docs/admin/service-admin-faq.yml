@@ -88,7 +88,7 @@ sections:
         answer: |
           There are steps you can take, as a global admin, to prevent users from joining your existing Microsoft 365 tenant. If you block access, users’ attempts to sign up fail, and a message appears that directs them to contact their organization’s admin. You don't need to repeat this process if you have already disabled automatic license distribution (for example, through Office 365 for Education for Students, Faculty, and Staff).
           
-          Use the following PowerShell script to prevent new users from joining a managed tenant. ([Learn more about PowerShell](https://docs.microsoft.com/powershell/scripting/overview).)
+          Use the following PowerShell script to prevent new users from joining a managed tenant. ([Learn more about PowerShell](/powershell/scripting/overview).)
           
           ```powershell
           $msolcred = get-credential
@@ -103,7 +103,7 @@ sections:
       - question: |
           How can I allow users to join my existing Microsoft 365 tenant?
         answer: |
-          Use the following PowerShell script to let new users join a managed tenant. ([Learn more about PowerShell](https://docs.microsoft.com/powershell/scripting/overview).)
+          Use the following PowerShell script to let new users join a managed tenant. ([Learn more about PowerShell](/powershell/scripting/overview).)
           
           ```powershell
           $msolcred = get-credential
@@ -115,7 +115,7 @@ sections:
       - question: |
           How do I check if I have the block on in the tenant?
         answer: |
-          Use the following PowerShell script to check settings. *AllowEmailVerifiedUsers* should be false. ([Learn more about PowerShell](https://docs.microsoft.com/powershell/scripting/overview).)
+          Use the following PowerShell script to check settings. *AllowEmailVerifiedUsers* should be false. ([Learn more about PowerShell](/powershell/scripting/overview).)
           
           ```powershell
           $msolcred = get-credential
@@ -129,7 +129,7 @@ sections:
         answer: |
           The Azure AD setting that controls this is **AllowAdHocSubscriptions**. Most tenants have this set to *true*, which means it's enabled. If you acquired Power BI through a partner, this may be set to *false*, which means it's disabled.
           
-          Use the following PowerShell script to disable ad hoc subscriptions.([Learn more about PowerShell](https://docs.microsoft.com/powershell/scripting/overview).)
+          Use the following PowerShell script to disable ad hoc subscriptions.([Learn more about PowerShell](/powershell/scripting/overview).)
           
           1. Sign into Azure Active Directory using your Microsoft 365 credentials. The first line of the following PowerShell script prompts you for your credentials. The second line connects to Azure Active Directory.
           
@@ -257,7 +257,7 @@ sections:
       - question: |
           How does Power BI handle high availability and failover?
         answer: |
-          For info about high availability and failover, see [Power BI high availability, failover, and disaster recovery FAQ](service-admin-failover.md).
+          For info about high availability and failover, see [Power BI high availability, failover, and disaster recovery FAQ](service-admin-failover.yml).
           
   - name: Security in Power BI
     questions:

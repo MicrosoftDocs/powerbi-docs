@@ -52,12 +52,6 @@
       href: desktop-directquery-about.md
     - name: "Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)"
       href: desktop-directquery-datasets-azure-analysis-services.md      
-    - name: Gateways
-      items:
-      - name: "Guidance for deploying a data gateway"
-        href: service-gateway-deployment-guidance.md
-      - name: "On-premises data gateway FAQ"
-        href: service-gateway-power-bi-faq.yml
   - name: How-to guides
     expanded: true
     items: 
@@ -201,6 +195,8 @@
       items: 
       - name: "Data refresh in Power BI"
         href: refresh-data.md
+      - name: "Managing query refresh"
+        href: refresh-include-in-report-refresh.md
       - name: "Configure scheduled refresh"
         href: refresh-scheduled-refresh.md
       - name: "Refresh summaries"
@@ -245,6 +241,8 @@
       items: 
       - name: "Troubleshoot refresh scenarios"
         href: refresh-troubleshooting-refresh-scenarios.md
+      - name: "Troubleshoot tile errors"
+        href: refresh-troubleshooting-tile-errors.md
       - name: "Troubleshoot an unsupported data source for refresh"
         href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
       - name: "Troubleshoot scheduled refresh for Azure SQL Databases"
@@ -279,7 +277,7 @@
         href: service-connect-to-project-online.md
       - name: "Regional Emergency Response Dashboard"
         href: service-connect-to-regional-emergency-response.md
-      - name: "Salesforce"
+      - name: "Salesforce Analytics"
         href: service-connect-to-salesforce.md
       - name: "Smartsheet"
         href: service-connect-to-smartsheet.md
@@ -289,10 +287,14 @@
         href: service-connect-to-zendesk.md
     - name: Gateways
       items:
+      - name: "Guidance for deploying a data gateway"
+        href: service-gateway-deployment-guidance.md
       - name: "On-premises data gateway - in-depth"
         href: service-gateway-onprem-indepth.md
       - name: "On-premises data gateway (personal mode)"
         href: service-gateway-personal-mode.md
+      - name: "On-premises data gateway FAQ"
+        href: service-gateway-power-bi-faq.yml              
       - name: "Manage gateway data sources"
         items:
         - name: "Add or remove a gateway data source"
@@ -325,6 +327,8 @@
               href: service-gateway-sso-kerberos-sap-bw-commoncryptolib.md
             - name: "SAP BW - gx64krb5.dll"
               href: service-gateway-sso-kerberos-sap-bw-gx64krb.md
+            - name: "Teradata and SSO"
+              href: service-gateway-sso-kerberos-teradata.md              
         - name: "SAML-based SSO"
           href: service-gateway-sso-saml.md
         - name: "Test single sign-on (SSO) configuration"

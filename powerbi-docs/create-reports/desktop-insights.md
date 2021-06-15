@@ -1,5 +1,5 @@
 ---
-title: Use insights to explain increases and decreases in visuals (Preview)
+title: Use insights to explain increases and decreases in visuals
 description: Easily gain insights to increases or decreases in Power BI Desktop
 author: davidiseminger
 ms.author: davidi
@@ -8,10 +8,10 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/21/2019
+ms.date: 04/23/2021
 LocalizationGroup: Create reports
 ---
-# Apply insights in Power BI Desktop to explain fluctuations in visuals (preview)
+# Apply insights in Power BI Desktop to explain fluctuations in visuals
 
 Often in visuals, you see a large increase and then a sharp drop in values, and wonder about  the cause of such fluctuations. With **insights** in **Power BI Desktop** you can learn the cause with just a few clicks.
 
@@ -26,10 +26,10 @@ You can tell **Power BI Desktop** to explain increases or decreases in charts, s
 The insights feature is contextual, and is based on the immediately previous data point - such as the previous bar, or column.
 
 > [!NOTE]
-> This feature is in preview, and is subject to change. The insight feature is enabled and on by default (you don't need to check a Preview box to enable it) beginning with the September 2017 version of **Power BI Desktop**.
-
+> The insight feature is enabled and on by default in **Power BI Desktop**.
 
 ## Using insights
+
 To use insights to explain increases or decreases seen on charts, just right-click on any data point in a bar or line chart, and select **Analyze > Explain the increase** (or *Explain the decrease*, since all insights are based on the change from the previous data point).
 
 ![Show insights menu](media/desktop-insights/insights_02.png)
@@ -68,7 +68,7 @@ The dotted line shows the best fit, and as such, data points above this line inc
 
 ![Scatter plot with dotted line](media/desktop-insights/insights_01b.png)
 
-Note that data items whose value was blank in either period will not appear on the scatter plot (for example, *Home Appliances* in this case)
+Note that data items whose value was blank in either period will not appear on the scatter plot (for example, *Home Appliances* in this case).
 
 ### The 100% stacked column chart
 
@@ -78,7 +78,7 @@ The 100% stacked column chart visual shows the value of the measure before and a
 
 ### The ribbon chart
 
-The ribbon chart visual showsalso  the value of the measure before and after. It's particularly useful in showing the changes in contributions when these were such that the *ordering* of contributors changed (for example, if *Computers* were the number one contributor before, but then fell to number three). 
+The ribbon chart visual also shows the value of the measure before and after. It's particularly useful in showing the changes in contributions when these were such that the *ordering* of contributors changed (for example, if *Computers* were the number one contributor before, but then fell to number three). 
 
 ![ribbon chart](media/desktop-insights/insights_01d.png)
 

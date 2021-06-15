@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/08/2020
+ms.date: 04/30/2021
 LocalizationGroup: Get started
 ---
 # Integrate Power BI data alerts with Power Automate

@@ -44,7 +44,7 @@ Admins can use the **Help + support** experience in the [Power Platform Admin Ce
 
 * [Capture diagnostic information from the Power BI service](service-admin-capturing-additional-diagnostic-information-for-power-bi.md) that you can attach to your service request.
 
-[Learn more about how admins can contact support for help with Microsoft 365 business products](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
+[Learn more about how admins can contact support for help with Microsoft 365 business products](/microsoft-365/admin/contact-support-for-business-products).
 
 ## Connect with Support
 

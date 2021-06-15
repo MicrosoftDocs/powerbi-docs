@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/3/2021
+ms.date: 05/28/2021
 LocalizationGroup: Create reports
 ---
 # Sort by column in Power BI Desktop
@@ -80,7 +80,7 @@ Let's look at a common example. You have data from each month of the year, and i
 
 
 <!---
-This functionality is no longer active. Jan 2020
+This functionality is no longer active.
 
 ## Getting back to default column for sorting
 You can sort by any column you'd like, but there may be times when you want the visual to return to its default sorting column. No problem. For a visual that has a sort column selected, open the **More options** menu and select that column again, and the visualization returns to its default sort column.

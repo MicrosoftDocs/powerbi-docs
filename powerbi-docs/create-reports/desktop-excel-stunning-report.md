@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 02/22/2021
+ms.date: 06/07/2021
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to stunning report in Power BI Desktop
@@ -68,15 +68,13 @@ In **Navigator**, you have the option to *transform* or *load* the data. The Nav
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-financial-navigator.png" alt-text="Screenshot of Power BI Navigator with Financial sample data."::: 
 
-1. Select the **Units Sold** column. On the **Home** tab, select **Data Type**, then select **Whole Number**. Choose **Replace current** to change the column type. 
+1. Select the **Units Sold** column. On the **Transform** tab, select **Data Type**, then select **Whole Number**. Choose **Replace current** to change the column type. 
 
     The top data cleaning step users do most often is changing data types. In this case, the units sold are in decimal form. It doesn’t make sense to have 0.2 or 0.5 of a unit sold, does it? So let’s change that to whole number. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-query-whole-number.png" alt-text="Screenshot of changing a decimal number to a whole number."::: 
 
-1. Select the **Segment** column. On the **Transform** tab, select **Format**, then select **UPPERCASE**.
-
-    We also want to make the segments easier to see in the chart later. Let’s format the Segment column. 
+1. Select the **Segment** column. We want to make the segments easier to see in the chart later, so let’s format the Segment column. On the **Transform** tab, select **Format**, then select **UPPERCASE**.
 
      :::image type="content" source="media/desktop-excel-stunning-report/power-query-upper-case.png" alt-text="screenshot of changing lowercase to uppercase headings.":::
 
@@ -100,35 +98,47 @@ In **Navigator**, you have the option to *transform* or *load* the data. The Nav
 
      :::image type="content" source="media/desktop-excel-stunning-report/power-bi-fields-list-sigmas-date.png" alt-text="Screenshot of Fields list with numeric fields and date field.":::
 
-### Extra credit: Write a measure in DAX
+### Extra credit: Write an expression in DAX
 
-Writing *measures* in the *DAX* formula language is super powerful for data modeling. There's lots to learn about DAX in the Power BI documentation. For now, let's write a basic measure and join two tables. 
+Writing *measures* and creating *tables* in the *DAX* formula language is super powerful for data modeling. There's lots to learn about DAX in the Power BI documentation. For now, let's write a basic expression and join two tables. 
 
-1. Select **Data View** on the left. 
+1. On the **Home** ribbon, select **New measure**.
+
+    :::image type="content" source="media/desktop-excel-stunning-report/desktop-new-measure-icon.png" alt-text="Screenshot of New measure icon on the Home ribbon.":::
+
+1. Type this expression to add all the numbers in the Units Sold column.
+
+    ```dax
+    Total Units Sold = SUM(financials[Units Sold])    
+    ```
+    
+1. Select the check mark to commit.
+    
+    :::image type="content" source="media/desktop-excel-stunning-report/dax-total-units-sold.png" alt-text="Screenshot of DAX expression Total Units Sold.":::
  
+1. Now select the **Data** view on the left.
+
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-data-view.png" alt-text="Screenshot of Data View icon.":::
 
-1. On the **Home** ribbon, select **New Table**. 
+1. On the **Home** ribbon, select **New table**. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-new-table.png" alt-text="Screenshot of New Table icon.":::
 
-1. Type this measure to generate a Calendar table of all dates between January 1, 2013, and December 31, 2014.  
+1. Type this expression to generate a Calendar table of all dates between January 1, 2013, and December 31, 2014.
 
     ```dax
     Calendar = CALENDAR(DATE(2013,01,01),Date(2014,12,31))    
     ```
 
-2. Select the check mark to commit.
+1. Select the check mark to commit.
 
-     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-dax-expression.png" alt-text="Screenshot of DAX expression.":::
+     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-dax-expression.png" alt-text="Screenshot of DAX expression Calendar.":::
 
-1. Still in Data view, select your new Calendar table, and on the **Table tools** ribbon, select **Mark as date table**.
-2. In the **Date column** box, select the **Date** column. 
-3. Now select **Model View** on the left. 
+1. Now select **Model** view on the left. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-model-view.png" alt-text="Screenshot of Model View icon.":::
 
-1. Drag the **Date** field from the Financials table to the **Date** field in the Calendar table to join the tables, and create a *relationship* between them.  
+1. Drag the **Date** field from the financials table to the **Date** field in the Calendar table to join the tables, and create a *relationship* between them.  
 
      :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-relationship.png" alt-text="Screenshot of relationship between Date fields.":::
 
@@ -147,7 +157,6 @@ Let’s build the final report, one visual at a time.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-title-executive-summary.png" alt-text="Screenshot of formatting title.":::
 
-1. In the Visualizations pane, toggle the **Background** to **Off**. 
 1. Resize the box to fit on one line. 
 
 ### Visual 2: Profit by Date 
@@ -155,7 +164,7 @@ Let’s build the final report, one visual at a time.
 Now, you create a line chart to see which month and year had the highest profit. 
 
 1. From the Fields pane, drag the **Profit** field to a blank area on the report canvas. By default, Power BI displays a column chart with one column, Profit. 
-1. Drag the **Date** field to the same visual. If you created a Calendar table in [Extra credit: Create a table in DAX](#extra-credit-write-a-measure-in-dax) earlier in this article, drag the **Date** field from your Calendar table instead. 
+1. Drag the **Date** field to the same visual. If you created a Calendar table in [Extra credit: Create a table in DAX](#extra-credit-write-an-expression-in-dax) earlier in this article, drag the **Date** field from your Calendar table instead. 
 
     Power BI updates the column chart to show profit by the two years.
 
@@ -207,7 +216,7 @@ Create a bar chart to determine which companies and segments to invest in.
 
 ### Visual 5: Year slicer 
 
-Slicers are a valuable tool for filtering the visuals on a report page to a specific selection. In this case, we can create two different slicers to narrow in on performance for each month and year. One slicer uses the date field in the original table. The other uses the [date table you may have created for "extra credit"](#extra-credit-write-a-measure-in-dax) earlier in this tutorial.
+Slicers are a valuable tool for filtering the visuals on a report page to a specific selection. In this case, we can create two different slicers to narrow in on performance for each month and year. One slicer uses the date field in the original table. The other uses the [date table you may have created for "extra credit"](#extra-credit-write-an-expression-in-dax) earlier in this tutorial.
 
 
 **Date slicer using the original table**
@@ -264,7 +273,7 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 **Add a background shape for the title**
 
 1. On the **Insert** ribbon, select **Shapes** > **Rectangle**. Place it at the top of the page, and stretch it to be the width of the page and height of the title. 
-1. In the **Format shape** pane, in the **Line** section, change **Transparency** to **100%**. 
+1. In the **Format shape** pane, in the **Outline** section, change **Transparency** to **100%**. 
 1. In the **Fill** section, change **Fill color** to **Theme color 5 #6B91C9** (blue). 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-theme-color-5.png" alt-text="Screenshot of Theme color 5.":::
@@ -274,9 +283,10 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 
 **Add a background shape for visuals 2 and 3**
 
-1. On the **Insert** ribbon, select **Shapes** > **Rectangle**, and stretch it the be the width and height of Visuals 2 and 3. 
-1. In the **Format shape** pane, in the **Line** section, change **Transparency** to **100%**. 
-1. On the **Format** tab, select **Send backward** > **Send to back**. 
+1. On the **Insert** ribbon, select **Shapes** > **Rectangle**, and stretch it to be the width and height of Visuals 2 and 3. 
+1. In the **Format shape** pane, in the **Outline** section, change **Transparency** to **100%**. 
+2. In the **Fill** section, set the coloer to **White, 10% darker**.
+3. On the **Format** tab, select **Send backward** > **Send to back**. 
 
 ### Finished report
 

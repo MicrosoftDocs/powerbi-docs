@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 06/06/2019
+ms.date: 06/07/2019
 LocalizationGroup: Data refresh
 ---
 # Refresh a dataset created from an Excel workbook on OneDrive, or SharePoint Online
@@ -24,12 +24,12 @@ You can refresh the dataset in the Power BI service. When you manually refresh, 
 
 ## What’s supported?
 
-In Power BI, **Refresh Now** and **Schedule Refresh** are supported for datasets created from Power BI Desktop files imported from a local drive where Get Data/Query Editor is used to connect to and load data from any of the following data sources:  
+In Power BI, **Refresh Now** and **Schedule Refresh** are supported for datasets created from Power BI Desktop files imported from a local drive where Get data/Power Query Editor is used to connect to and load data from any of the following data sources:  
 
 ### Power BI Gateway - Personal
 
-* All online data sources shown in Power BI Desktop’s Get Data and Query Editor.
-* All on-premises data sources shown in Power BI Desktop’s Get Data and Query Editor except for Hadoop file (HDFS) and Microsoft Exchange.
+* All online data sources shown in Power BI Desktop’s Get data and Power Query Editor.
+* All on-premises data sources shown in Power BI Desktop’s Get data and Power Query Editor except for Hadoop file (HDFS) and Microsoft Exchange.
 
 <!-- Refresh Data sources-->
 [!INCLUDE [refresh-datasources](../includes/refresh-datasources.md)]

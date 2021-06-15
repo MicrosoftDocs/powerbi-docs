@@ -11,14 +11,14 @@ ms.date: 03/09/2021
 ---
 # Change data source connection strings in Power BI reports with PowerShell - Power BI Report Server
 
-
-Starting with the October 2020 release of Power BI Report Server we enabled the ability to update connections for Power BI reports for DirectQuery and refresh.
+We enable the ability to update connections for Power BI reports for DirectQuery and refresh.
 
 > [!IMPORTANT]
 > This is also a breaking change on how you could set this up in previous releases. If you're using a pre-October 2020 version of Power BI Report Server, see [Change data source connection strings in Power BI reports with PowerShell - Power BI Report Server pre-October 2020](connect-data-source-apis-pre-oct-2020.md)
 
-## Prerequisites:
-- Download the October 2020 or later release of [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+## Prerequisites
+
+- Download the latest release of [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 - A report saved with the October 2020 or later release of Power BI Desktop optimized for Report Server, with **Enhanced DataSet Metadata** enabled.
 - A report that uses parameterized connections. Only reports with parameterized connections and databases can be updated after publishing.
 - This example uses the Reporting Services PowerShell tools. You can achieve the same  by using the new REST APIs.

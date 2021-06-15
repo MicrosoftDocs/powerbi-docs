@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.custom: video-ZqhmaiORLw0
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/04/2021
+ms.date: 04/30/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to LinkedIn Sales Navigator in Power BI Desktop

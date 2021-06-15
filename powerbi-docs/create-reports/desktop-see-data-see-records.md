@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/21/2020
+ms.date: 05/11/2021
 LocalizationGroup: Learn more
 ---
 # Use Visual table and Data point table in Power BI Desktop
@@ -30,11 +30,11 @@ You can use **Visual table** to view the data in a visual as a table, or use **D
 
 ## Use Visual table in Power BI Desktop
 
-**Visual table** shows you the data underlying a visualization. **Visual table** appears in the **Data/Drill** tab in the **Show** section of the ribbon when a visual is selected.
+**Visual table** shows you the data underlying a visualization. **Visual table** appears in the **Data/Drill** tab in the ribbon when a visual is selected.
 
 ![Visual table in ribbon](media/desktop-see-data-see-records/visual-table-01.png)
 
-You can also see the data by right-clicking on a visualization, and then selecting **Show Data** from the menu that appears; or by selecting **More options** (...) in the upper-right corner of a visualization, and then selecting **Show as a table**.
+You can also see the data by right-clicking on a visualization, and then selecting **Show as a table** from the menu that appears; or by selecting **More options** (...) in the upper-right corner of a visualization, and then selecting **Show as a table**.
 
 ![Show Data right-click](media/desktop-see-data-see-records/visual-table-02.png)&nbsp;&nbsp;![Show Data More Options](media/desktop-see-data-see-records/visual-table-03.png)
 
@@ -55,14 +55,14 @@ To get back to the report, select **< Back to Report** in the upper-left corner 
 
 ## Use Data point table in Power BI Desktop
 
-You can also focus on one data record in a visualization, and drill into the data behind it. To use **Data point table**, select a visualization, then select **Data point table** in the **Data/Drill** tab in the **Visual Tools** section of the ribbon, and then select a data point or row on the visualization. 
+You can also focus on one data record in a visualization, and drill into the data behind it. To use **Data point table**, select a visualization, then select **Data point table** in the **Data/Drill** tab of the ribbon, and then select a data point or row on the visualization. 
 
 ![Data point table in ribbon](media/desktop-see-data-see-records/visual-table-07.png)
 
 > [!NOTE]
 > If the **Data point table** button in the ribbon is disabled and grayed-out, it means the selected visualization does not support **Data point table**.
 
-You can also right-click a data element and select **Data point table** from the menu that appears.
+You can also right-click a data element and select **Show data point as a table** from the menu that appears.
 
 ![Data point table by right-click](media/desktop-see-data-see-records/visual-table-08.png)
 

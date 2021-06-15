@@ -8,10 +8,13 @@ ms.custom: seojan19
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 04/19/2021
+ms.date: 05/26/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to the Microsoft Graph Security API in Power BI Desktop
+
+>[!NOTE]
+> The Microsoft Graph Security connector is deprecated as of May 2021 and has been removed from the "Get Data" experience in Power BI Desktop. It is recommended to replace existing connections that use this connector, and to refrain from using this connector for new connections. See the [Microsoft Graph Security documentation](/power-query/connectors/microsoftgraphsecurity) for further information.
 
 Use the Microsoft Graph Security connector of Power BI Desktop to connect to the [Microsoft Graph Security API](/graph/security-concept-overview). You can then build dashboards and reports to gain insights into your security-related [alerts](/graph/api/resources/alert) and [secure scores](/graph/api/resources/securescores).
 

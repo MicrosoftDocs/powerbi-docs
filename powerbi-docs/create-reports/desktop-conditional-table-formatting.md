@@ -161,7 +161,7 @@ With **Web URL** formatting applied to the **State** field, each state name is a
 
 ## Totals and subtotals
 
-Beginning with the April 2020 release, you can apply conditional formatting rules to totals and subtotals, for both table and matrix visuals. 
+You can apply conditional formatting rules to totals and subtotals, for both table and matrix visuals. 
 
 You apply the conditional formatting rules by using the **Apply to** drop-down in conditional formatting, as shown in the following image.
 

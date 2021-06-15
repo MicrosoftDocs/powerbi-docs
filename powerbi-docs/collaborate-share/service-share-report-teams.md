@@ -18,7 +18,7 @@ You can chat about Power BI dashboards, reports, and visuals directly to Microso
 
 ## Requirements
 
-To use the **Chat in Teams** functionality in Power BI, make sure your Power BI administrator hasn't disabled the **Share to Teams** tenant setting in the Power BI admin portal. This setting allows organizations to hide the **Chat in Teams** buttons. See the [Power BI admin portal](../admin/service-admin-portal.md#share-to-teams) article for details.
+To use the **Chat in Teams** functionality in Power BI, make sure your Power BI administrator hasn't disabled the **Share to Teams** tenant setting in the Power BI admin portal. This setting allows organizations to hide the **Chat in Teams** buttons. See the [Power BI admin portal](../admin/service-admin-portal.md#microsoft-teams-integration-in-the-power-bi-service) article for details.
 
 See [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md) for background on how Power BI and Microsoft Teams work together, including other requirements.
 
