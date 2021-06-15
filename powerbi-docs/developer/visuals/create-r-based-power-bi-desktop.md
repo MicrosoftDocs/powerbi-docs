@@ -300,7 +300,7 @@ Now you can package the visual and import it to any Power BI report.
 
     For more information on packaging your visual see [Packaging the custom visual](custom-visual-develop-tutorial-format-options.md#packaging-the-custom-visual)
 
-4. Import the visual's pbiviz file to any Power BI report. See [Import a visual file from your local computer into Power BI](import-visual#import-a-visual-file-from-your-local-computer-into-power-bi) for instructions on how to do this.
+4. Import the visual's pbiviz file to any Power BI report. See [Import a visual file from your local computer into Power BI](import-visual.md#import-a-visual-file-from-your-local-computer-into-power-bi) for instructions on how to do this.
 
 5. Your final visual looks like the following example:
 
