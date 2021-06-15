@@ -32,7 +32,7 @@ In this tutorial, you learn how to:
 
 ## Getting started
 
-1. Prepare some sample data for the visual. You can save these values to an Excel database or a *.csv* file and import it into Power BI Desktop.
+1. Prepare some sample data for the visual. You can save these values to an Excel database or a *.csv* file and import it into **Power BI Desktop**.
 
     | MonthNo | Total Units |
     |-----|-----|
@@ -65,7 +65,7 @@ In this tutorial, you learn how to:
 
 4. In **Power BI Desktop**, select **R script visual**:
 
-   ![Screenshot shows the R script visual control in the Power B I Desktop.](./media/create-r-based-power-bi-desktop/r-script-icon.png)
+   ![Screenshot shows the R script visual control in the Power BI Desktop.](./media/create-r-based-power-bi-desktop/r-script-icon.png)
 
 5. Assign data to the developer visual by dragging **MonthNo** and **Total units** to **Values** for the visual.
 
@@ -75,17 +75,21 @@ In this tutorial, you learn how to:
 
     ![Don't summarize data](./media/create-r-based-power-bi-desktop/dont-summarize.png)
 
-7. Run the following R-script:
+7. From the R-script editor in your **Power BI Desktop**, type the following:
 
       ```r
       plot(dataset)
       ```
 
+      This command creates a scatter chart using the values in the dataset as input.
+
+8. Select the **Run script** icon to see the result.
+
       ![R visual with data](./media/create-r-based-power-bi-desktop/r-data-values.png)
 
 ## Editing the R Script
 
-The R-script that was created in the root folder of your visual can be edited to customize your visual. You can create and edit your R script in Power BI Desktop. Let's start by creating a line chart.
+The R-script can be modified to create other types of visuals. Let's create a line chart next.
 
 1. Paste the following R code into the **R script editor**:
 
@@ -103,9 +107,9 @@ The R-script that was created in the root folder of your visual can be edited to
 
     ![Screenshot shows the result of running the script, which is a line plot.](./media/create-r-based-power-bi-desktop/run-r-script.png)
 
-3. When your R script is ready, copy it to the `script.r` file located in the root directory of your visual project.
+3. When your R-script is ready, copy it to the `script.r` file located in the root directory of your visual project.
 
-4. In the *capabilities.json* file, change the `dataRoles`: `name` to *dataRoles*, and set the `dataViewMappings` input to *dataset*. Power BI passes data as the `dataset` data frame object for the R script visual, but the R visual gets the data frame from the `dataRoles` names.
+4. In the *capabilities.json* file, change the `dataRoles`: `name` to *dataset*, and set the `dataViewMappings` input to *dataset*.
 
     ```json
     {
@@ -113,7 +117,7 @@ The R-script that was created in the root folder of your visual can be edited to
         {
           "displayName": "Values",
           "kind": "GroupingOrMeasure",
-          "name": "dataRoles"
+          "name": "dataset"
         }
       ],
       "dataViewMappings": [
@@ -157,7 +161,7 @@ The R-script that was created in the root folder of your visual can be edited to
 
 The `corrplot` package creates a graphical display of a correlation matrix. For more information about `corrplot`, see [An Introduction to corrplot Package](https://cran.r-project.org/web/packages/corrplot/vignettes/corrplot-intro.html).
 
-1. Add the `corrplot` library dependency to `dependencies.json`. Here is an example of the file content:
+1. Add the `corrplot` library dependency to the `dependencies.json` file. Here is an example of the file content:
 
     ```json
     {
@@ -171,9 +175,7 @@ The `corrplot` package creates a graphical display of a correlation matrix. For 
     }
     ```
 
-    The `corrplot` package is a graphical display of a correlation matrix. For more information about `corrplot`, see [An Introduction to corrplot Package](https://cran.r-project.org/web/packages/corrplot/vignettes/corrplot-intro.html).
-
-2. After you make these changes, you can start using the package in your `script.r` file.
+2. After you add this dependency, you can start using the package in your `script.r` file.
 
     ```r
     library(corrplot)
@@ -191,7 +193,7 @@ To enable users to change UI settings, add properties to the property pane that 
 
 You can configure `corrplot` by using the `method` argument for the `corrplot` function. The default script uses a circle. Modify your visual to let the user choose between several options.
 
-1. Define the object and property in the *capabilities.json* file. Then use this object name in the enumeration method to get those values from the property pane.
+1. Define an `object` called *settings* in the *capabilities.json* file and give it the properties shown below. Then use this object name in the enumeration method to get the values from the property pane.
 
     ```json
     {
@@ -266,11 +268,11 @@ You can configure `corrplot` by using the `method` argument for the `corrplot` f
 
    ![R visual settings](./media/create-r-based-power-bi-desktop/r-data-look-settings.png)
 
-    Finally, the R script must have a default property. If the user doesn't change the property value (in this case, the shape setting), the visual uses this value.
+    Finally, the R-script must have a default property. If the user doesn't change the property value (in this case, the shape setting), the visual uses this value.
 
     For R runtime variables for the properties, the naming convention is `<objectname>_<propertyname>`, in this case, `settings_method`.
 
-3. Change the R script in your visual to match the following code:
+3. Run the following R-script:
 
     ```r
     library(corrplot)
@@ -284,7 +286,23 @@ You can configure `corrplot` by using the `method` argument for the `corrplot` f
     corrplot(corr, method=settings_method, order = "hclust")
     ```
 
-Your final visual looks like the following example:
+## Packaging your visual
+
+Now you can package the visual and import it to any Power BI report.
+
+1. Fill in the `displayName`, `supportUrl`, `description`, author's `name` and `email`, and any other important information in the `pbivis.json` file.
+2. If you want to change the visual's icon on the visualization pane, replace the **icon.png** file in the **assets** folder.
+3. From the root directory of your visual run:
+
+    ```powershell
+    pbiviz package
+    ```
+
+    For more information on packaging your visual see [Packaging the custom visual](custom-visual-develop-tutorial-format-options.md#packaging-the-custom-visual)
+
+4. Import the visual's pbiviz file to any Power BI report. See [Import a visual file from your local computer into Power BI](import-visual#import-a-visual-file-from-your-local-computer-into-power-bi) for instructions on how to do this.
+
+5. Your final visual looks like the following example:
 
 ![R visual settings with changed value](./media/create-r-based-power-bi-desktop/r-final-settings-value.png)
 
