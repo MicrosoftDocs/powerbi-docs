@@ -73,11 +73,11 @@ An example table with rules-based background color formatting on the **Affordabi
 
 If the column you want to color contains percentages, write the numbers in the rules as decimals, and select **Number** instead of **Percent** for the number format. For example, "If vaule is greater than or equal to 0 Number and is less than .25" Number" returns values in the bottom 25%.
 
-![Screenshot of Color by rules for percentages.](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-if-value.png)
+![Screenshot of Color by rules for percentages.](media/desktop-conditional-table-formatting/power-bi-percent-conditional-rules.png)
 
 An example table with rules-based background color on the **% revenue region** column looks like this:
 
-![Screenshot of Example table with color by rules for percentages.](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-table.png)
+![Screenshot of Example table with color by rules for percentages.](media/desktop-conditional-table-formatting/power-bi-percent-conditional-table.png)
 
 ## Color by color values
 
