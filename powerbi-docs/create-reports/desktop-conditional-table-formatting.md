@@ -77,12 +77,12 @@ If the field the formatting is based on contains percentages, write the numbers 
 
 ![Screenshot of Color by rules for percentages.](media/desktop-conditional-table-formatting/power-bi-percent-conditional-rules.png)
 
-An example table with rules-based background color on the **% revenue region** column looks like this:
+In this example table with rules-based background color on the **% revenue region** column, 0 to 25% is red, 26% to 41% is yellow, and 42% and more is blue:
 
 ![Screenshot of Example table with color by rules for percentages.](media/desktop-conditional-table-formatting/power-bi-percent-conditional-table.png)
 
 > [!NOTE]
-> If you use **Percent** instead of **Number** for fields containing percentages, you may get unexpected results. For example, in a range of percent values from 23% to 98%, 50% of that range is 60.5%. So use **Number** instead.
+> If you use **Percent** instead of **Number** for fields containing percentages, you may get unexpected results. So in the above example, in a range of percent values from 21.73% to 44.36%, 50% of that range is 33%. So use **Number** instead.
 
 ## Color by color values
 
