@@ -65,7 +65,7 @@ Under **Rules**, enter one or more value ranges, and set a color for each one. E
 
 ![Screenshot of Color by rules.](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-if-value.png)
 
-When you select **Percent** in this dropdown, you’re setting the rule boundaries as a percent of the overall range of values from minimum to maximum. So, for example, if the lowest data point was 100 and the highest was 400, the above rules would color any point less than 200 as green, anything from 200 to 300 as yellow, and anything above 400 as red. 
+When you select **Percent** in this dropdown, you’re setting the rule boundaries as a percent of the overall range of values from minimum to maximum. So, for example, if the lowest data point was 100 and the highest was 400, the above rules would color any point less than 200 as green, anything from 200 to 300 as yellow, and anything above 300 as red. 
 
 An example table with rules-based background color formatting based on **Percent** in the **Affordability** column looks like this:
 
@@ -184,6 +184,19 @@ You apply the conditional formatting rules by using the **Apply to** drop-down i
 
 You must manually set the thresholds and ranges for conditional formatting rules. For matrices, **Values** will refer to the lowest visible level of the matrix hierarchy.
 
+## Color-code based on text
+
+Unlike in Excel, you can't color-code text values to display as a particular color, such as "Accepted"=blue, "Declined"=red, "None"=grey. You create measures related to these values and apply formatting based on those instead.
+
+For example, StatusColor = SWITCH('Table'[Status], "Accepted", "blue", "Declined", "red", "None", "grey")
+
+Then in the **Background color** dialog box, you format the **Status** field based on the values in the **StatusColor** field. 
+
+![Set Status field color based on values in the StatusColor field.](media/desktop-conditional-table-formatting/power-bi-conditional-based-on-field.png)
+
+In the resulting table, the formatting is based on the value in the **StatusColor** field, which in turn is based on the text in the **Status** field.
+
+![In the table, the Status field color is based on values in the StatusColor field.](media/desktop-conditional-table-formatting/power-bi-conditional-based-on-field-table.png)
 
 ## Considerations and limitations
 There are a few considerations to keep in mind when working with conditional table formatting:
