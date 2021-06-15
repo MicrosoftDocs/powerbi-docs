@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/12/2021
+ms.date: 06/14/2021
 LocalizationGroup: Create reports
 ---
 # Use conditional formatting in tables 
@@ -63,11 +63,21 @@ To format cell background or font color by rules, in the **Format by** field of 
 
 Under **Rules**, enter one or more value ranges, and set a color for each one. Each value range has an *If value* condition, an *and* value condition, and a color. Cell backgrounds or fonts in each value range are colored with the given color. The following example has three rules:
 
-![Color by rules](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-if-value.png)
+![Screenshot of Color by rules.](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-if-value.png)
 
 An example table with rules-based background color formatting on the **Affordability** column looks like this:
 
-![Example table with color by rules](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-table.png)
+![Screenshot of Example table with color by rules.](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-table.png)
+
+### Color by rules for percentages
+
+If the column you want to color contains percentages, write the numbers in the rules as decimals, and select **Number** instead of **Percent** for the number format. For example, "If vaule is greater than or equal to 0 Number and is less than .25" Number" returns values in the bottom 25%.
+
+![Screenshot of Color by rules for percentages.](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-if-value.png)
+
+An example table with rules-based background color on the **% revenue region** column looks like this:
+
+![Screenshot of Example table with color by rules for percentages.](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-table.png)
 
 ## Color by color values
 
