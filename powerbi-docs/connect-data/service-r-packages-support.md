@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/15/2021
+ms.date: 06/17/2021
 LocalizationGroup: Connect to data
 ---
 # Create visuals by using R packages in the Power BI service
@@ -983,4 +983,4 @@ For more information about R in Power BI, take a look at the following articles:
 * [Creating R visuals in the Power BI service](../visuals/service-r-visuals.md)
 * [Create Power BI visuals using R](../create-reports/desktop-r-visuals.md)
 * [Running R scripts in Power BI Desktop](desktop-r-scripts.md)
-* [Using R in Query Editor](desktop-r-in-query-editor.md)
+* [Using R in Power Query Editor](desktop-r-in-query-editor.md)

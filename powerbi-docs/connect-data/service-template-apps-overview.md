@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 12/14/2020
+ms.date: 12/15/2020
 ---
 
 # What are Power BI template apps?

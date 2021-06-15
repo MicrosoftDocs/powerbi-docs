@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 09/17/2020
+ms.date: 09/18/2020
 ---
 
 # Install and distribute template apps in your organization

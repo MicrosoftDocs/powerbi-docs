@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/05/2020
+ms.date: 05/06/2020
 LocalizationGroup: Data from files
 ---
 # Publish to Power BI from Microsoft Excel

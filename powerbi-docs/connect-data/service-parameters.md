@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 03/10/2021
+ms.date: 06/17/2021
 LocalizationGroup: Create reports
 ---
 # Edit parameter settings in the Power BI service
@@ -19,7 +19,9 @@ Report creators add query parameters to reports in Power BI Desktop. Parameters 
 
 As a report creator, you define parameters in Power BI Desktop. When you [publish that report to the Power BI service](../create-reports/desktop-upload-desktop-files.md), the parameter settings and selections travel with it. You can review and edit parameter settings in the Power BI service, but not create them.
 
-1. In the Power BI service, select the cog icon ![cog icon](media/service-parameters/power-bi-cog.png) to open **Settings**.
+1. In the Power BI service, select the cog icon to open **Settings**.
+
+   ![cog icon](media/service-parameters/power-bi-cog.png)
 
 2. Select the tab for **Datasets** and highlight a dataset in the list. 
     

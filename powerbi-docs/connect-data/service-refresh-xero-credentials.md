@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/10/2017
+ms.date: 08/11/2017
 LocalizationGroup: Troubleshooting
 ---
 # How to refresh your Xero content pack credentials if refresh failed

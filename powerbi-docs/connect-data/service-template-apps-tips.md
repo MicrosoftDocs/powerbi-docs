@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 05/04/2020
+ms.date: 06/17/2021
 ---
 
 # Tips for authoring template apps in Power BI
@@ -30,7 +30,7 @@ For template apps, queries developed in Power BI Desktop are used to connect to 
 ### Connect to your API
 To get started, you need to connect to your API from Power BI Desktop to start building your queries.
 
-You can use the Data Connectors that are available in Power BI Desktop to connect to your API. You can use the Web Data Connector (Get Data -> Web) to connect to your Rest API or the OData connector (Get Data -> OData feed) to connect to your OData feed.
+You can use the Data Connectors that are available in Power BI Desktop to connect to your API. You can use the Web Data Connector (**Get data** > **Web**) to connect to your Rest API or the OData connector (**Get data** -> **OData feed**) to connect to your OData feed.
 
 > [!NOTE]
 > Currently template apps do not support custom connectors, it is recommended to explore using Odatafeed Auth 2.0 as a mitigation for some of the connection use-cases or to submit your connector for certification. For details on how to develop a connector and certify it check the [Data Connectors documentation](https://aka.ms/DataConnectors).
@@ -96,7 +96,7 @@ The report pages offer additional insight into the data included in your templat
 ## Dashboards
 The dashboard is the main point of interaction with your template app for your customers. It should include an overview of the content included, especially the important metrics for your business scenario.
 
-To create a dashboard for your template app, just upload your PBIX through Get Data > Files or publish directly from Power BI Desktop.
+To create a dashboard for your template app, just upload your PBIX through **Get data** > **Files** or publish directly from Power BI Desktop.
 
 
 ### Additional dashboard tips

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 05/04/2020
+ms.date: 05/05/2020
 ---
 
 # Update, delete, and extract template app

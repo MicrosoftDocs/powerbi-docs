@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 07/16/2020
+ms.date: 07/17/2020
 LocalizationGroup: Data from files
 ---
 # Real-time streaming in Power BI
