@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 05/11/2020
+ms.date: 06/11/2021
 ---
 
 # Tutorial: Create an R-powered Power BI visual
@@ -19,8 +19,8 @@ In this tutorial, you learn how to:
 > [!div class="checklist"]
 >
 > * Create an R-powered visual
-> * Edit the R script in Power BI Desktop
-> * Add libraries to the visual
+> * Edit the R-script in Power BI Desktop
+> * Add libraries to the dependencies file of the visual
 > * Add a static property
 
 ## Prerequisites
@@ -32,7 +32,7 @@ In this tutorial, you learn how to:
 
 ## Getting started
 
-1. Prepare some sample data for the visual. You can save these values to an Excel database or *.csv* file and import it into Power BI Desktop.
+1. Prepare some sample data for the visual. You can save these values to an Excel database or a *.csv* file and import it into Power BI Desktop.
 
     | MonthNo | Total Units |
     |-----|-----|
@@ -55,15 +55,15 @@ In this tutorial, you learn how to:
       pbiviz new rVisualSample -t rvisual
       ```
 
-      This command creates a new folder structure based on the `rvisual` template. It creates a file called *script.r* in the root folder of the visual. This file holds the R script that is run to generate the image for a user. You can create your R script in Power BI Desktop.
+      This command creates a new folder for the *rVisualSample* visual. The structure is based on the `rvisual` template. It creates a file called *script.r* in the root folder of the visual. This file holds the R-script that is run to generate the image when the visual is rendered. You can create your R-script in **Power BI Desktop**.
 
-3. From the newly created rVisualSample directory run
+3. From the newly created `rVisualSample` directory run
 
    ```cmd
    pbiviz start
    ```
 
-4. In Power BI Desktop, select **R script visual**:
+4. In **Power BI Desktop**, select **R script visual**:
 
    ![Screenshot shows the R script visual control in the Power B I Desktop.](./media/create-r-based-power-bi-desktop/r-script-icon.png)
 
