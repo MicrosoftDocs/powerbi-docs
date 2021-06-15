@@ -11,8 +11,6 @@
       href: service-admin-where-is-my-tenant-located.md
     - name: What is Power BI Premium?
       href: service-premium-what-is.md
-    - name: Understanding Power BI Premium Gen2 (preview)
-      href: service-premium-concepts.md
   - name: Concepts
     expanded: true
     items:
@@ -40,22 +38,30 @@
       items:
       - name: Managing Premium capacities
         href: service-premium-capacity-manage.md
-      - name: Using Autoscale with Power BI Premium
-        href: service-premium-auto-scale.md        
       - name: Optimizing Premium capacities
         href: service-premium-capacity-optimize.md
       - name: Premium capacity scenarios
         href: service-premium-capacity-scenarios.md
       - name: Power BI Premium FAQ
         href: service-premium-faq.yml
-      - name: Power BI Premium Per User
-        href: service-premium-per-user-faq.yml
-      - name: Using the Power BI Premium Gen2 metrics app
-        href: service-premium-gen2-metrics-app.md
       - name: Backup and restore Power BI Premium datasets (preview)
         href: service-premium-backup-restore-dataset.md
       - name: Using service tags with Power BI
         href: service-premium-service-tags.md
+    - name: Power BI Premium Gen2 (preview)
+      items:
+      - name: What is Power BI Premium Gen2? (preview)
+        href: service-premium-gen2-what-is-manage.md
+      - name: Understanding Premium Gen2 (preview)
+        href: service-premium-concepts.md   
+      - name: Using Autoscale with Premium Gen2 (preview)
+        href: service-premium-auto-scale.md        
+      - name: Using the Premium Gen2 metrics app (preview)
+        href: service-premium-gen2-metrics-app.md
+      - name: Power BI Premium Gen2 FAQ (preview)
+        href: service-premium-gen2-faq.yml
+      - name: Power BI Premium Per User (preview)
+        href: service-premium-per-user-faq.yml
     - name: Information protection
       items:
       - name: Sensitivity label downstream inheritance (preview)
