@@ -7,7 +7,7 @@ ms.reviewer: mohammad.ali
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/23/2020
+ms.date: 06/03/2021
 LocalizationGroup: Ask questions of your data
 ---
 # Q&A for Power BI business users
@@ -88,7 +88,7 @@ To use Q&A on a dashboard or to use the Q&A visual in a report, select one of th
 
 ### Create a visual by using a suggested question
 
-Here, we've selected **top geo states by total units**. Power BI does its best to select which visual type to use. In this case, it's a basic map.
+Here, we've selected **top states by total business units**. Power BI does its best to select which visual type to use. In this case, it's a basic map.
 
 ![Q&A visual map](media/end-user-q-and-a/power-bi-q-and-a-suggest.png)
 
@@ -108,13 +108,13 @@ If you're unsure what type of questions to ask or terminology to use, expand **S
 
     **Autocomplete** - as you type your question, Power BI Q&A shows relevant and contextual suggestions to help you quickly become productive with natural language. As you type, you get immediate feedback and results. The experience is similar to typing in a search engine.
 
-    In this example, the suggestion we want is the last one. 
+    In this example, the suggestion we want is the first one. 
 
     ![Q&A with a blue underlined word](media/end-user-q-and-a/power-bi-autocomplete.png)
 
     **Solid and dotted underlines**- Power BI Q&A shows words with underlines to help you see which words Power BI did or did not recognize. 
 
-    A solid blue underline indicates that Power BI recognized the word. The example below shows that Q&A recognized the terms **sales fact sentiment** and **region**.
+    A solid blue underline indicates that Power BI recognized the word. The example below shows that Q&A recognized the terms **sales** and **territory**.
 
     ![Q&A question with a word double underlined in red](media/end-user-q-and-a/power-bi-qna-blue.png)
 
@@ -152,10 +152,10 @@ If you're unsure what type of questions to ask or terminology to use, expand **S
 ## Considerations and troubleshooting
 
 **Question**: I don't see Q&A on this dashboard.    
-**Answer 1**: If you don't see a question box, first check your settings. To do this, select the cog icon in the upper right corner of your Power BI toolbar, or from the **More options (...) dropdown menu.   
+**Answer 1**: If you don't see a question box, first check your settings. To do this, select the cog icon in the upper right corner of your Power BI toolbar, or from the **More options** (...) dropdown menu.   
 ![cog icon](media/end-user-q-and-a/power-bi-cog.png)
 
-Then choose **Settings** > **Dashboards**. Make sure there is a checkmark next to **Show the Q&A search box on this dashboard**.    
+Then choose **Settings** > **Dashboards**. Make sure there is a check mark next to **Show the Q&A search box on this dashboard**.    
 ![Q&A settings for dashboard](media/end-user-q-and-a/power-bi-om.png)  
 
 

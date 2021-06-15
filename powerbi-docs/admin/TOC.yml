@@ -64,12 +64,16 @@
         href: service-premium-per-user-faq.yml
     - name: Information protection
       items:
+      - name: Mandatory label policy (preview)
+        href: service-security-sensitivity-label-mandatory-label-policy.md
       - name: Sensitivity label downstream inheritance (preview)
         href: service-security-sensitivity-label-downstream-inheritance.md
       - name: Sensitivity label inheritance from data sources (preview)
         href: service-security-sensitivity-label-inheritance-from-data-sources.md
       - name: Sensitivity label change enforcement
         href: service-security-sensitivity-label-change-enforcement.md
+      - name: Custom help link for sensitivity labels
+        href: service-security-sensitivity-label-custom-help-link.md
   - name: How to
     items: 
     - name: "Licensing and sign-up"
@@ -88,6 +92,8 @@
         href: service-admin-syndication-partner.md
     - name: "Using the admin portal"
       href: service-admin-portal.md
+    - name: "Add custom branding"
+      href: service-admin-custom-branding.md
     - name: "Use private links for Power BI"
       href: service-security-private-links.md      
     - name: "Manage Power BI visuals admin settings"

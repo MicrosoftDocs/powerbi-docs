@@ -7,7 +7,8 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 11/09/2020
+ms.custom: pbibetadocbug
+ms.date: 05/27/2021
 LocalizationGroup: Visualizations
 ---
 # Getting started with the formatting pane
@@ -80,7 +81,7 @@ Let’s walk through the steps necessary to customize colors on a visualization.
 
     ![Chart with Formatting pane open and Data colors expanded](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-data-colors.png)
 
-4. Change **Show all** to On, and select different colors for columns.
+4. Change **Show all** to On, and select different colors for columns, rows, lines -- depending on the visual type.
 
     ![Chart with new colors applied to some columns](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-change-colors.png)
 
@@ -149,6 +150,8 @@ And, here is the *after* picture.
 ![area chart formatted](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-data-labels.png)
 
 We selected the visualization to make it active and opened the Formatting tab.  We selected **Data labels** and turned them On. Then we increased font to 12, changed font family to Arial Black, turned **Show background** to On and background color to white with a transparency of 5%.
+
+Depending on the visual and its size, data labels may not display.  If your data labels don't display, try making the visual larger or viewing it in full screen mode. 
 
 These are just a few of the formatting tasks that are possible. Open a report in Editing mode and have fun exploring the Formatting pane to create beautiful and informative visualizations.
 

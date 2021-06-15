@@ -211,6 +211,9 @@ Now you can use the **Manage Gateway** page in Power BI to configure the SAP HAN
 
    ![Screenshot of the "Advanced settings" section in Power BI.](media/service-gateway-sso-saml/advanced-settings.png)
 
+> [!NOTE]
+> SSO uses Windows Authentication so make sure the windows account can access the gateway machine. If not sure, make sure to add NT-AUTHORITY\Authenticated Users (S-1-5-11) to the local machine “Users” group.
+
 ## Troubleshoot using SAML for single sign-on to SAP HANA
 
 This section provides extensive steps to troubleshoot using SAML for single sign-on to SAP HANA. Using these steps can help you self-diagnose and correct any issues you might face.

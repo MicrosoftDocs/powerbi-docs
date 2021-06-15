@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/24/2021
+ms.date: 05/19/2021
 ---
 # Power BI webinars
 [//]: # "Tatevik Tatero (tatevik.teroyan@simple-concepts.com) is a vendor who works with Chauncy Freels and helps to maintain this list of webinars"
@@ -16,12 +16,7 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Upcoming webinars
 
-**Webinar Series: Mastering Data Modeling with Power BI
-Episode 2 - Learn Advanced Data Modeling with Power BI**  
-by Jeroen ter Heerdt and Marc Lelijveld  
-[Register to watch on May 19th, 10AM – 11AM PST, 2021](https://info.microsoft.com/ww-Landing-Mastering-Data-Modeling-with-PowerBI.html?LCID=EN-US)
-
-[Upcoming webinars from the Power BI community](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
+[Upcoming webinars from the Power BI community](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks)
 
 ## Featured webinars
 
@@ -35,6 +30,11 @@ by Anton Fritz and Yitzhak Kesselman
 Episode 1 - Data Modeling 101: Increasing the Impact of Power BI**  
 by Jeroen ter Heerdt and Marc Lelijveld  
 [Watch now](https://info.microsoft.com/ww-Landing-Mastering-Data-Modeling-with-Power-BI.html)
+
+**Webinar Series: Mastering Data Modeling with Power BI
+Episode 2 - Learn Advanced Data Modeling with Power BI**  
+by Jeroen ter Heerdt and Marc Lelijveld  
+[Watch now](https://info.microsoft.com/ww-Landing-Mastering-Data-Modeling-with-PowerBI.html?LCID=EN-US)
 
 **Quickstart Guide to Navigating Power BI**  
 by Miguel Martinez  
