@@ -38,6 +38,9 @@ Your **capacity ID** can be found in the URL of the Power BI Admin portal. It's 
 
 When choosing how many **days of utilization** to see in your report, select a value that reflects the analysis you want to perform. For example, if you are analyzing monthly usage for charging users of your capacity, you can choose to load 30 or 45 days of data.
 
+>[!TIP]
+> Support for 30 days is still being developed and refreshing the app to show more than 7 days may fail. please refresh for 7 days only during the gen2 preview phase.
+
 Once you submit those parameters, the **Premium Gen2 Monitoring App** loads the data and refreshes the view. The refresh can take a few minutes to complete.
 
 Once refreshed, open the report. On the right are two charts:
