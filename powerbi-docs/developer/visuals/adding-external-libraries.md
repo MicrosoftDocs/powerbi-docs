@@ -9,6 +9,7 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 02/24/2020
 ---
+
 # Adding external libraries
 
 This article describes how to use external libraries in Power BI visuals. It includes information about installing, importing, and calling external libraries from the Power BI visual's code.
@@ -62,3 +63,8 @@ For a full example, see the [Power BI visualizations](https://github.com/Microso
     ```less
     @import (less) "node_modules/bootstrap/dist/css/bootstrap.css";
     ```
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Set up your environment for developing a Power BI visual](environment-setup.md)
