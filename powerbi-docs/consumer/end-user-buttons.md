@@ -24,7 +24,7 @@ A back button may have an arrow icon and when you select it, Power BI takes you 
 
 1. The user has selected **Word** in the bar chart and is drilling through to  **Market basket analysis**.
 
-    ![Screenshot of Drill through button.](media/end-user-buttons/power-bi-drillthrough.png)
+    ![Screenshot of Drillthrough button.](media/end-user-buttons/power-bi-drillthrough.png)
 
 2. By choosing **Market basket analysis**, Power BI opens the *Market basket analysis* report page and uses the selections made on the source page to filter what is shown on the destination page.
 
@@ -45,9 +45,9 @@ By choosing the bookmark button, Power BI takes you to the location and settings
 
 
 ## Drillthrough buttons
-There are two ways to drill through in the Power BI service. Drillthrough takes you to a different report page and the data on that destination page is presented according to the filters and selections you've made on the source page.
+There are two ways to drill through in the Power BI service. Drilling through takes you to a different report page and the data on that destination page is presented according to the filters and selections you've made on the source page.
 
-One way to use drillthrough in a report is to right-click a data point in a visual, select **Drill through**, and choose the destination. This method is described above in the section titled **Back button**. But sometimes the report designers use a drillthrough *button* instead, to make the action more obvious and to call attention to important insights.  
+One way to drill through in a report is to right-click a data point in a visual, select **Drill through**, and choose the destination. This method is described above in the section titled **Back button**. But sometimes the report designers use a drillthrough *button* instead, to make the action more obvious and to call attention to important insights.  
 
 Drillthrough buttons can have more than one prerequisite. Unless you fulfill all the prerequisites, the button will not work. Let's look at an example.
 
@@ -57,13 +57,13 @@ Here is a drillthrough button that will take us to the *Store details* page. Hov
 
 Now that we've selected one product (**Word**), and one store (**Leo**), the button changes color to let us know that it is now active.
 
-![Screenshot of drillthrough to Store details button.](media/end-user-buttons/power-bi-select-both.png)
+![Screenshot of Drill through to Store details button.](media/end-user-buttons/power-bi-select-both.png)
 
 Selecting the drillthrough button takes us to the *Store* report page. The *Store* page is filtered for our selections of **Word** and **Leo**.
 
 ![Screenshot of the Store reports page.](media/end-user-buttons/power-bi-store.png)
 
-Drillthrough buttons can also have dropdown menus that offer you a choice of destinations. Once you've made your selections on the source report page, select the destination report page for the drillthrough. In the example below, we're changing our selection to drillthrough to the *Market details* report page. 
+Drillthrough buttons can also have dropdown menus that offer you a choice of destinations. Once you've made your selections on the source report page, select the destination report page for the drillthrough. In the example below, we're changing our selection to drill through to the *Market details* report page. 
 
 ![screenshot of drillthrough dropdown with multiple destinations](media/end-user-buttons/power-bi-destination.png)
 

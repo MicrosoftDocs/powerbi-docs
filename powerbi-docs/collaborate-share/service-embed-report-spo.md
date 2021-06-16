@@ -1,6 +1,6 @@
 ---
 title: Embed a report web part in SharePoint Online
-description: With Power BI's new report web part for SharePoint Online, you can easily embed interactive Power BI reports in SharePoint Online pages.
+description: With Power BI's report web part for SharePoint Online, you can easily embed interactive Power BI reports in SharePoint Online pages.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -9,25 +9,25 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 01/04/2021
+ms.date: 04/29/2021
 ---
 
 # Embed a report web part in SharePoint Online
 
-With the new Power BI report web part for SharePoint Online, you can easily embed interactive Power BI reports in SharePoint Online pages.
+With the Power BI report web part for SharePoint Online, you can easily embed interactive Power BI reports in SharePoint Online pages.
 
-When using the new **Embed in SharePoint Online** option, the embedded reports respect all item permissions and data security through [row-level security (RLS)](../admin/service-admin-rls.md), so you can easily create secure internal portals.
+When using the **Embed in SharePoint Online** option, the embedded reports respect all item permissions and data security through [row-level security (RLS)](../admin/service-admin-rls.md), so you can easily create secure internal portals.
 
 ## Requirements
 
 For **Embed in SharePoint Online** reports to work, the following is required:
 
-* A Power BI Pro license or a [Power BI Premium capacity (EM or P SKU)](../admin/service-premium-what-is.md) with a Power BI license.
+* A Power BI Pro or Premium Per User (PPU) license or a [Power BI Premium capacity (EM or P SKU)](../admin/service-premium-what-is.md) with a Power BI license.
 * The Power BI web part for SharePoint Online requires [Modern Pages](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
 * To consume an embedded report, users must sign in to Power BI service to activate their Power BI license.
 
 > [!Note]
-> For organizations in Power BI National clouds, there's no free license. In this environment, all users who want access to the embedded report in Sharepoint need to have a Power BI Pro license.
+> For organizations in Power BI National clouds, there's no free license. In this environment, all users who want access to the embedded report in Sharepoint need to have a Power BI Pro or Premium Per User (PPU) license.
 
 ## Embed your report
 To embed your report into SharePoint Online, you need to get the report URL and use it with SharePoint Online's Power BI web part.
@@ -50,7 +50,7 @@ To embed your report into SharePoint Online, you need to get the report URL and 
 
     ![SP edits page](media/service-embed-report-spo/powerbi-sharepoint-edit-page.png)
 
-    Or, in Sharepoint Online, select **+ New**  to create a new modern site page.
+    Or, in Sharepoint Online, select **Pages** > **+ New** > **Site Page** to create a new modern site page.
 
     ![SP new page](media/service-embed-report-spo/powerbi-sharepoint-new-page.png)
 
@@ -62,7 +62,7 @@ To embed your report into SharePoint Online, you need to get the report URL and 
 
     ![SP new report](media/service-embed-report-spo/powerbi-sharepoint-new-report.png)  
 
-4. Paste the previously-copied report URL into the **Power BI report link** pane. The report loads automatically.
+4. Paste the previously-copied report URL into the **Power BI report link** field. The report loads automatically.
 
     ![SP new web part properties](media/service-embed-report-spo/powerbi-sharepoint-new-web-part-properties.png)
 
@@ -139,7 +139,7 @@ Contact the SharePoint Online page owner to help resolve the issue.
 
 ## Licensing
 
-Users viewing a report in SharePoint need either a **Power BI Pro license** or the content needs to be in a workspace that's in a **[Power BI Premium capacity (EM or P SKU)](../admin/service-admin-premium-purchase.md)**.
+Users viewing a report in SharePoint need either a **Power BI Pro or Premium Per User (PPU) license** or the content needs to be in a workspace that's in a **[Power BI Premium capacity (EM or P SKU)](../admin/service-admin-premium-purchase.md)**.
 
 ## Known issues and limitations
 

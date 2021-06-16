@@ -4,7 +4,9 @@
   items:
   - name: Overview
     expanded: true
-    items: 
+    items:
+    - name: "What is Power BI embedded analytics?"
+      href: /javascript/api/overview/powerbi/power-bi-embedded-analytics?toc=/power-bi/developer/embedded/TOC.json?bc=/power-bi/breadcrumb/toc.json
     - name: "What is embedding with Power BI"
       href: embedding.md
     - name: "What is Power BI Embedded in Azure"
@@ -24,6 +26,8 @@
       href: embed-paginated-reports-organization.md      
     - name: "Embed content for national clouds"
       href: embed-sample-for-customers-national-clouds.md
+    - name: "Embed a report in an app for your organization"
+      href: embed-organization-app.md      
   - name: Concepts
     items:
     - name: "Capacity and SKUs in Power BI embedded analytics"
@@ -47,7 +51,7 @@
     - name: "Azure diagnostic logging for Power BI Embedded"
       href: ./monitor-power-bi-embedded.md
     - name: "Embedding FAQ"
-      href: embedded-faq.md
+      href: embedded-faq.yml
   - name: How to
     items:        
     - name: "Embed using service principal"
@@ -60,6 +64,8 @@
       href: export-to.md
     - name: "Export paginated report to file"
       href: export-paginated-report.md  
+    - name: "Embed in Salesforce"
+      href: embed-power-bi-salesforce.md        
     - name: "Auto-install apps"
       href: embed-auto-install-app.md
     - name: "Create an Azure Active Directory tenant"
@@ -107,9 +113,11 @@
     - name: "Power BI libraries"
       href: https://go.microsoft.com/fwlink/?linkid=848274
     - name: Azure CLI
-      href: /cli/azure/ext/powerbidedicated/powerbi
+      href: /cli/azure/powerbi
   - name: Resources
     items:
+    - name: "Power BI Dev Camp"
+      href: dev-camp-links.md    
     - name: "Developer center"
       href: https://powerbi.microsoft.com/en-us/developers/
     - name: "Embedding setup tool"

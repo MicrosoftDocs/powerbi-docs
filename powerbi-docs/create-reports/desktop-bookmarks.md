@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/06/2020
+ms.date: 02/25/2021
 LocalizationGroup: Create reports
 ---
 # Create bookmarks in Power BI Desktop to share insights and build stories
@@ -114,7 +114,7 @@ When you're in editing mode, press **Ctrl** and select the link to follow it. Wh
 
 ## Bookmark groups
 
-Beginning with the August 2018 release of Power BI Desktop, you can create and use bookmark groups. A bookmark group is a collection of bookmarks that you specify, which can be shown and organized as a group. 
+You can create and use bookmark groups. A bookmark group is a collection of bookmarks that you specify, which can be shown and organized as a group. 
 
 To create a bookmark group: 
 1. Press **Ctrl** and select the bookmarks you want to include in the group. 
@@ -179,19 +179,6 @@ When you publish a report to the Power BI service with at least one bookmark, yo
 In the Power BI service, the **Bookmarks** pane operates just as it does in Power BI Desktop, including the ability to select **View** to show your bookmarks in order, like a slide show.
 
 Use the gray bookmark title bar, instead of the black arrows, to navigate through the bookmarks. (The black arrows move you through report pages, not bookmarks.)
-
-## Enable the bookmarks preview (versions prior to March 2018)
-Beginning with the March 2018 version of Power BI Desktop, bookmarks are generally available. 
-
-We always suggest you upgrade to the most recent release. But, if your version of Power BI Desktop is earlier than that release, you can try the bookmarks feature beginning with the October 2017 release of Power BI Desktop, and for bookmark-enabled reports, in the Power BI service as well. 
-
-To enable the preview bookmarks feature: 
-
-1. Select **File** > **Options and Settings** > **Options** > **Preview Features**, then select **Bookmarks**. 
-
-   ![Enable bookmarks in Options window](media/desktop-bookmarks/bookmarks_02.png)
-
-2. Restart Power BI Desktop to enable the preview version of bookmarks.
 
 ## Limitations and considerations
 In this release of the bookmarks features, there are a few limitations and considerations to keep in mind.

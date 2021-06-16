@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 03/05/2021
+ms.date: 06/17/2021
 LocalizationGroup: Transform and shape data
 ---
 # Configuring Azure Log Analytics for Power BI (Preview)
@@ -69,7 +69,7 @@ A Power BI administrator must complete the following step to enable Azure Log An
 
 3. Select the Azure subscription, Resource group, and then the Log Analytics workspace configured in the previous section, then select **Save**. When successfully completed, the expanded **Tenant-level Log Analytics (Preview)** section will look similar to the following image.
 
-    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-17.png" alt-text="Screenshot of completed configuration for connecting to Azure.":::
+    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-17.png" alt-text="Screenshot of settings configuration for log analytics when connecting to Azure.":::
 
 
 ## Disconnect Azure Log Analytics
@@ -110,7 +110,9 @@ The following table provides a collection of common errors, the events or config
 
 ## Events and schema
 
-Once enabled, Azure Log Analytics will log the following **event categories**. For more information on these events, see [Analysis Service trace events](https://docs.microsoft.com/analysis-services/trace-events/analysis-services-trace-events?view=asallproducts-allversions).
+
+Once enabled, Azure Log Analytics will log the following **event categories**. For more information on these events, see [Analysis Services trace events](/analysis-services/trace-events/analysis-services-trace-events?view=asallproducts-allversions).
+
 
 * AggregateTableRewriteQuery
 * Command
@@ -211,3 +213,4 @@ The following articles can help you learn more about Power BI, and about its int
 * [Azure Log Analytics in Power BI FAQ](desktop-log-analytics-faq.md)
 * [What is Power BI Premium?](../../admin/service-premium-what-is.md)
 * [Organize work in the new workspaces in Power BI](../../collaborate-share/service-new-workspaces.md)
+

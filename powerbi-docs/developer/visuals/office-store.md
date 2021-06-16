@@ -1,6 +1,6 @@
 ---
-title: Publish Power BI visuals to Partner Center in Power BI embedded analytics for better embedded BI insights
-description: Learn how you can publish your custom visual to Partner Center for others to discover and use. Enable better embedded BI insights using Power BI embedded analytics.
+title: Publish Power BI visuals to Partner Center
+description: Learn how you can publish your custom visual to Partner Center for others to discover and use.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
@@ -117,12 +117,13 @@ Once your visual is created, if you want you can get your visual [certified](pow
 
 ## Next steps
 
-* [Developing a Power BI circle card visual](develop-circle-card.md)
+>[!div class="nextstepaction"]
+>[Developing a Power BI circle card visual](develop-circle-card.md)
 
-* [Visualizations in Power BI](../../visuals/power-bi-report-visualizations.md)  
+>[!div class="nextstepaction"]
+>[Test you Power BI visual](submission-testing.md)  
 
-* [Visuals in Power BI](power-bi-custom-visuals.md)  
+>[!div class="nextstepaction"]
+>[Getting a Power BI visual certified](power-bi-custom-visuals-certified.md)
 
-* [Getting a Power BI visual certified](power-bi-custom-visuals-certified.md)
-
-* More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+**More questions?** [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -6,19 +6,24 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
+ms.custom: video-RE4M2hq
 ms.topic: how-to
-ms.date: 10/22/2020
+ms.date: 04/21/2021
 LocalizationGroup: Connect to data
 ---
 # Dynamic M query parameters in Power BI Desktop (preview)
 
-With **Dynamic M Query Parameters**, model authors can let **report viewers** to use filters or slicers to set the value(s) for an [M Query Parameter](/power-query/power-query-query-parameters), which can be especially useful for query performance optimizations. With Dynamic M Query Parameters, model authors have additional control over how filter selections get incorporated into DirectQuery source queries. 
+With **Dynamic M Query Parameters**, model authors can let **report viewers** to use filters or slicers to set the value(s) for an [M Query Parameter](/power-query/power-query-query-parameters), which can be especially useful for query performance optimizations. With Dynamic M Query Parameters, model authors have more control over how filter selections get incorporated into DirectQuery source queries. 
 
 When model authors understand the intended semantics of their filters, they often know how to write efficient queries against their data source, and can thus ensure filter selections get incorporated into source queries at the right point to achieve their intended results with improved performance.
 
+Watch Justyna explain and use Dynamic M Query Parameters, and then try it out yourself. 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4M2hq]
+
 ## Enabling Dynamic M query parameters
 
-**Dynamic M Query Parameters** are currently in preview, and must be enabled to be used. Select **File > Options and settings > Options** and then select **Preview features** from the left pane. From there, make sure the **Dynamic M Query Parameters** checkbox is selected. You may need to restart Power BI Desktop for the change to be enabled.
+**Dynamic M Query Parameters** are currently in preview, and must be enabled to be used. On the **File** ribbon, select **Options and settings** > **Options** and then select **Preview features** from the left pane. From there, make sure the **Dynamic M Query Parameters** checkbox is selected. You may need to restart Power BI Desktop for the change to be enabled.
 
 ![Enable the preview feature](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-01.png)
 
@@ -29,7 +34,7 @@ As a prerequisite for this feature, you must have a valid [M Query Parameter](/p
 
 Let's step through an example for passing a **single value** to a parameter dynamically:
 
-1. In Power BI Desktop, launch **Power Query** from the **Data** tab, and select **New Parameters** under the **Manage Parameters** button in the ribbon.
+1. In Power BI Desktop, select **Home** > **Transform data** > **Transform data** to open the Power Query Editor. Select **New Parameters** under the **Manage Parameters** button in the ribbon.
 
     ![Ribbon menu](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-02.png)
 
@@ -147,11 +152,11 @@ There are some considerations and limitations to consider when using dynamic M q
 
 * A single parameter cannot be bound to multiple fields nor vice-versa.
 * The feature is only supported for M based data sources. The following DirectQuery sources are not supported:
-    * T-SQL based data sources: SQL Server, Azure SQL Database, Synapse SQL pools (aka Azure SQL Data Warehouse), and Synapse SQL OnDemand pools
+    * T-SQL based data sources: SQL Server, Azure SQL Database, Synapse SQL pools (such as Azure Synapse Analytics (formerly SQL Data Warehouse)), and Synapse SQL OnDemand pools
     * Live connect data sources: Azure Analysis Services, SQL Server Analysis Services, Power BI Datasets
-    * Other unsupported data sources: Oracle, Teradata and Relational SAP Hana
+    * Other unsupported data sources: Oracle, Teradata, and Relational SAP Hana, PostgreSQL
     * Partially supported through XMLA / TOM endpoint programmability: SAP BW and SAP Hana 
-
+* [Aggregations](../transform-model/desktop-aggregations.md) are not supported with the feature
 
 * Unsupported out-of-box parameter types are the following:
   * Any
@@ -166,7 +171,7 @@ There are some considerations and limitations to consider when using dynamic M q
   * Multi-field include filter
   * Exclude filter / Not filters
   * Cross-highlighting
-  * Drill down filter
+  * Drill-down filter
   * Cross drill filter
   * Top N filter
 * Unsupported operations:

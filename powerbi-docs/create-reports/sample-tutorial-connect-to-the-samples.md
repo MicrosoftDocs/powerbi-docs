@@ -4,11 +4,11 @@ description: Learn to install and explore the Retail Analysis sample in the Powe
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: amac
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 03/27/2020
+ms.date: 04/02/2021
 LocalizationGroup: Samples
 ---
 # Explore the Retail Analysis sample
@@ -30,7 +30,7 @@ To familiarize yourself with this particular content pack and its scenario, see
 
 1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample. 
 
-    If you don't have a Power BI Pro license, you can save the sample to your My Workspace.
+    If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace.
 
 2. Select **Get Data** at the bottom of the nav pane. 
 

@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
-Small multiples, or trellising, splits a visual into multiple versions of itself. This article explains how to get the most out of interacting with them.
+Small multiples, or trellising, split a visual into multiple versions of itself. This article explains how to get the most out of interacting with them.
 
 :::image type="content" source="media/power-bi-visualization-small-multiples/small-mulitple-sales-category-region.png" alt-text="Screenshot of small multiples for category and region.":::
 
@@ -57,7 +57,7 @@ Select a legend category to cross-highlight other visuals and cross-highlight ot
 
 ## Sort
 
-With the new sort functionality, you can sort multiple aspects of a visual at once. Sort by the category, and also by the axis in each multiple. 
+With the sort functionality, you can sort multiple aspects of a visual at once. Sort by the category, and also by the axis in each multiple. 
 
 :::image type="content" source="media/power-bi-visualization-small-multiples/small-multiple-sort.png" alt-text="Sort the small multiples.":::
 

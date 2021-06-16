@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 02/23/2021
+ms.date: 04/15/2021
 LocalizationGroup: Connect to data
 ---
 # Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)
@@ -71,16 +71,26 @@ The following list provides suggestions on how you can explore **DirectQuery for
 - Creating new columns for tables from Power BI datasets of Azure Analysis Services
 - Creating visuals that use columns from different data sources
 
+Beginning with the April 2021 version of Power BI Desktop, you can also connect to a perspective when making a DirectQuery connection to an Azure Analysis Services model, if a perspective is available. 
+
 ## Considerations and limitations
 
 There are a few **considerations** to keep in mind when using **DirectQuery for Power BI datasets and Azure Analysis Services (AAS)**:
 
 - If you refresh your data sources, and there are errors with conflicting field or table names, Power BI resolves the errors for you.
 
+- Users need 'Build' permissions on all datasets in the chain to access a report that leverages this feature.
+
 - To build reports in the Power BI service on a composite model that's based on another dataset, all credentials must be set. On the refresh credential settings page, for Azure Analysis Services sources, the following error will appear, even though the credentials have been set:
     
     ![Credentials false warning](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-06.png)
 - As this is confusing and incorrect, this is something we will take care of soon.
+
+- To be able to make a DirectQuery connection to a Power BI dataset, your tenant needs to have ["Allow XMLA Endpoints and Analyze in Excel with on-premises datasets"](../admin/service-admin-portal.md#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) enabled.
+
+- For premium capacities, the ["XMLA endpoint" should be set to either "Read Only" or "Read/Write"](../admin/service-premium-connect-tools.md#to-enable-read-write-for-a-capacity).
+
+- If using a [classic workspace](../collaborate-share/service-create-workspaces.md) in combination with this feature, it is not sufficient to set permissions on the dataset itself. For classic workspaces, all users accessing reports that leverage this feature must be members of the workspace. Consider [upgrading classic workspaces to new workspaces](../collaborate-share/service-upgrade-workspaces.md) to avoid this situation.
 
 - RLS rules will be applied on the source on which they are defined, but will not be applied to any other datasets in the model. RLS defined in the report will not be applied to remote sources, and RLS set on remote sources will not be applied to other data sources.
 
@@ -90,7 +100,7 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
 
     ![Unexpected date hierarchy behavior](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-07.png)
 
-    For more information on using date columns versus date hierarchies, visit this article.
+    For more information on using date columns versus date hierarchies, visit [this article](../transform-model/desktop-auto-date-time.md).
 
 - You may see unuseful error messages when using AI features with a model that has a DirectQuery connection to Azure Analysis Services. 
 
@@ -107,25 +117,50 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
 
 - Using third party tools, a *discourage chaining* flag can be set on a model to prevent a chain from being created or extended. To set it, look for the *DiscourageCompositeModels* property on a model. 
 
+- As with all DirectQuery connections, the connection to a Power BI dataset will not be shown in Power Query.
+
 There are also a few **limitations** you need to keep in mind:
 
 - Parameters for database and server names are currently disabled. 
 
 - Defining RLS on tables from a remote source is not supported.
 
-- Using SQL Server Analysis Services (SSAS) as a DirectQuery source is not currently supported. 
+- Using any of the following sources as a DirectQuery source is not supported:
+  - SQL Server Analysis Services (SSAS)
+  - SAP HANA
+  - SAP Business Warehouse
+  - [Real-time datasets](service-real-time-streaming.md#types-of-real-time-datasets)
 
 - Using DirectQuery on datasets from “My workspace” is not currently supported. 
 
 - Using Power BI Embedded with datasets that include a DirectQuery connection to a Power BI datasets or Azure Analysis Services model is not currently supported.
 
-- Format strings on columns and measures from a remote source are not imported to the composite model.
-
 - Calculation groups on remote sources are not supported, with undefined query results.
+
+- Calculated tables are not supported in the Service using this feature.
 
 - Sort by column isn't supported at this time.
 
 - Automatic page refresh (APR) is only supported for some scenarios, depending on the data source type. See the article [Automatic page refresh in Power BI](../create-reports/desktop-automatic-page-refresh.md) for more information.
+
+- Take over of a dataset which is using the **DirectQuery to other datasets** feature isn't currently supported.
+
+### Tenant considerations
+
+Any model with a DirectQuery connection to a Power BI dataset or to Azure Analysis Services must be published in the same tenant, which is especially important when accessing a Power BI dataset or an Azure Analysis Services model using B2B guest identities, as depicted in the following diagram. See [Guest users who can edit and manage content](../admin/service-admin-azure-ad-b2b.md#guest-users-who-can-edit-and-manage-content) to find the tenant URL for publishing.  
+
+Consider the following diagram. The numbered steps in the diagram are described in paragraphs that follow.
+
+:::image type="content" source="media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-08.png" alt-text="Diagram of not connecting between tenants":::
+
+In the diagram, Ash works with Contoso and is accessing data provided by Fabrikam. Using Power BI Desktop, Ash creates a DirectQuery connection to an Azure Analysis Services model that is hosted in Fabrikam’s tenant. 
+
+To authenticate, Ash uses a B2B Guest user identity (step 1 in the diagram). 
+
+If the report is published to Contoso’s Power BI service (step 2), the dataset published in the Contoso tenant *cannot* successfully authenticate against Fabrikam’s Azure Analysis Services model (step 3). As a result, the report will not work. 
+
+In this scenario, since the Azure Analysis Services model used is hosted in Fabrikam’s tenant, the report also must be published in Fabrikam's tenant. After successful publication in Fabrikam’s tenant (step 4) the dataset can successfully access the Azure Analysis Services model (step 5) and the report will work properly.
+
 
 ## Next steps
 

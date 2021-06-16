@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 12/10/2019
+ms.date: 05/10/2021
 LocalizationGroup: Gateways
 ---
 
@@ -106,7 +106,7 @@ If you're unable to refresh the report in the Power BI service, you can use gate
 
 3. Reproduce the issue and ensure that **CPIC\_TRACE\_DIR** contains trace files.
  
-	CPIC tracing can diagnose higher level issues such as a failure to load the sapcrypto.dll library. For example, here is a snippet from a CPIC trace file where a .dll load error occured:
+	CPIC tracing can diagnose higher level issues such as a failure to load the sapcrypto.dll library. For example, here is a snippet from a CPIC trace file where a .dll load error occurred:
 
 	```
 	[Thr 7228] *** ERROR => DlLoadLib()==DLENOACCESS - LoadLibrary("C:\Users\test\Desktop\sapcrypto.dll")
@@ -171,6 +171,121 @@ If you're unable to refresh the report in the Power BI service, you can use gate
 5. When you're finished, turn off CPIC and CCL tracing.
 
     For more information on CommonCryptoLib tracing, see [SAP Note 2491573](https://launchpad.support.sap.com/#/notes/2491573) (SAP s-user required).
+
+
+### Impersonation 
+
+This section describes troubleshooting symptoms and resolution steps for impersonation issues.
+
+**Symptom**: When looking at the *GatewayInfo[date].log* you find an entry similar to the following: **About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Impersonation)**. If the value for **ImpersonationLevel** is different from **Impersonation**, impersonation is not happening properly.
+
+**Resolution**: Follow the steps found in [grant the gateway service account local policy rights on the gateway machine](./service-gateway-sso-kerberos.md) article. Restart the gateway service after changing the configuration.
+
+**Validation**: Refresh or create the report and collect the *GatewayInfo[date].log*. Open the latest GatewayInfo log file and check again the following string: **About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Impersonation)** to ensure that the value for **ImpersonationLevel** matches **Impersonation**.
+
+### Delegation 
+
+Delegation issues usually appear in the Power BI service as generic errors. To determine whether delegation is the issue, it's useful to collect the Wireshark traces and use *Kerberos* as a filter. For Kerberos errors reference, consult the [blog post](/archive/blogs/askds/kerberos-errors-in-network-captures). The rest of this section describes troubleshooting symptoms and resolution steps for delegation issues.
+
+**Symptom**: In the Power BI service you may encounter an unexpected error, similar to the following screenshot. the *GatewayInfo[date].log* you'll see *[DM.GatewayCore]* ingesting an exception during Ado query execution attempt for *clientPipelineId* and the import *[0D_NW_CHANN]* matches no exports.
+
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/sso-kerberos-sap-bw-troubleshooting-01.png" alt-text="Screenshot of unhelpful error":::
+
+In the *Mashup[date].log* you see the generic error **GSS-API(maj): No credentials were supplied**.
+
+Looking into the CPIC traces (sec-Microsoft.Mashup*.trc) you will see something similar to the following: 
+
+```
+[Thr 4896] *** ERROR => SncPEstablishContext() failed for target='p:CN=BW5' [sncxxall.c 3638]
+[Thr 4896] *** ERROR => SncPEstablishContext()==SNCERR_GSSAPI [sncxxall.c 3604]
+[Thr 4896] GSS-API(maj): No credentials were supplied
+[Thr 4896] Unable to establish the security context
+[Thr 4896] target="p:CN=BW5"
+[Thr 4896] <<- SncProcessOutput()==SNCERR_GSSAPI
+[Thr 4896]
+[Thr 4896] LOCATION CPIC (TCP/IP) on local host HNCL2 with Unicode
+[Thr 4896] ERROR GSS-API(maj): No credentials were supplied
+[Thr 4896] Unable to establish the security context
+[Thr 4896] target="p:CN=BW5"
+[Thr 4896] TIME Thu Oct 15 20:49:31 2020
+[Thr 4896] RELEASE 721
+[Thr 4896] COMPONENT SNC (Secure Network Communication)
+[Thr 4896] VERSION 6
+[Thr 4896] RC -4
+[Thr 4896] MODULE sncxxall.c
+[Thr 4896] LINE 3604
+[Thr 4896] DETAIL SncPEstablishContext
+[Thr 4896] SYSTEM CALL gss_init_sec_context
+[Thr 4896] COUNTER 3
+[Thr 4896]
+[Thr 4896] *** ERROR => STISEND:STISncOut failed 20 [r3cpic.c 9834]
+[Thr 4896] STISearchConv: found conv without search
+```
+
+The error becomes clearer in the sectraces from the Gateway machine *sec-Microsoft.Mashup.Con-[].trc*:
+
+```
+[2020.10.15 20:31:38.396000][4][Microsoft.Mashup.Con][Kerberos ][ 3616] AcquireCredentialsHandleA called successfully.
+[2020.10.15 20:31:38.396000][2][Microsoft.Mashup.Con][Kerberos ][ 3616] InitializeSecurityContextA returned -2146893053 (0x80090303). Preparation for kerberos failed!
+[2020.10.15 20:31:38.396000][2][Microsoft.Mashup.Con][Kerberos ][ 3616] Getting kerberos ticket for 'SAP/BW5' failed (user name is affonso_v@HANABQ.COM)
+[2020.10.15 20:31:38.396000][2][Microsoft.Mashup.Con][Kerberos ][ 3616] Error for requested algorithm 18: 0/C000018B The security database on the server does not have a computer account for this workstation trust relationship.
+[2020.10.15 20:31:38.396000][2][Microsoft.Mashup.Con][Kerberos ][ 3616] Error for requested algorithm 17: 0/C000018B The security database on the server does not have a computer account for this workstation trust relationship.
+[2020.10.15 20:31:38.396000][2][Microsoft.Mashup.Con][Kerberos ][ 3616] Error for requested algorithm 23: 0/C000018B The security database on the server does not have a computer account for this workstation trust relationship.
+[2020.10.15 20:31:38.396000][2][Microsoft.Mashup.Con][Kerberos ][ 3616] Error for requested algorithm 3: 0/C000018B The security database on the server does not have a computer account for this workstation trust relationship.
+```
+
+When looking at WireShark traces, the issue can also be seen.
+
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/sso-kerberos-sap-bw-troubleshooting-02.png" alt-text="Screenshot of tracing program showing an error":::
+
+> [!NOTE]
+> The other errors **KRB5KDC_ERR_PREAUTH_REQUIRED** can be safely ignored.
+
+**Resolution**: You must add an SPN SAP/BW5 to a service account. Detailed information and steps are available in the [SAP documentation](https://wiki.scn.sap.com/wiki/display/Security/Single+Sign-On+with+Kerberos%3A+Recommendations+and+Troubleshooting).
+
+
+You may run into a similar, but not identical error that manifests in WireShark traces as the following error **KRB5KDC_ERR_BADOPTION**:
+
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/sso-kerberos-sap-bw-troubleshooting-03.png" alt-text="Screenshot of WireShark program showing a different error":::
+
+This error indicates the **spn SAP/BW5** could be found, but it's not in the *Services to which this account can present delegated credentials* at the Delegation tab from the Gateway service account. To fix this issue, follow the steps to [configure the gateway service account for standard kerberos constrained delegation](./service-gateway-sso-kerberos.md). 
+
+**Validation**: Proper configuration will prevent generic or unexpected errors to be presented by the gateway. If you still see errors, check the configuration of the gateway itself, or the configuration of the BW server.
+
+
+### Credentials errors
+
+This section describes troubleshooting symptoms and resolution steps for credentials error issues. You may also see generic errors from the Power BI service, as described in the earlier section on [delegation](#delegation).
+
+There are different resolutions, based on the symptoms you see in the data source (SAP BW), so we'll review both.
+
+**Symptom 1**: In the *sectraces sec-disp+work[].trc* from the BW Server, you see traces similar to the following:
+
+```
+[2020.05.26 14:21:28.668325][4][disp+work ][SAPCRYPTOLIB][435584] { gss_display_name [2020.05.26 14:21:28.668338][4][disp+work ][GSS ][435584] gss_display_name output buffer (41 bytes) [2020.05.26 14:21:28.668338][4][disp+work ][GSS ][435584] CN=DAVID@XS.CONTOSO.COM@CONTOSO.COM
+```
+
+**Resolution**: Complete the configuration steps to [set user mapping configuration parameters on the gateway machine if necessary](./service-gateway-sso-kerberos.md). You'll need to complete those steps even if you already have the Azure AD Connect configured.
+
+**Validation**: You'll be able to successfully load the report in the Power BI service. If not successful, see the steps in symptom 2.
+
+**Symptom 2**: In the *sectraces sec-disp+work[].trc* from the BW Server, you see traces similar to the following:
+
+```
+[2020.10.19 23:10:15.469000][4][disp+work.EXE ][SAPCRYPTOLIB][ 4460] { gss_display_name
+[2020.10.19 23:10:15.469000][4][disp+work.EXE ][GSS ][ 4460] gss_display_name output buffer (23 bytes)
+[2020.10.19 23:10:15.469000][4][disp+work.EXE ][GSS ][ 4460] CN=DAVID@CONTOSO.COM
+```
+
+**Resolution**: Check whether the Kerberos external ID for the User match what the sectraces are showing.
+
+1. Open SAP Logon.
+2. Use the SU01 transaction.
+3. Edit the user.
+4. Navigate to the **SNC** tab, verify that the SNC name matches what is shown in your logs.
+
+**Validation**: When properly completed, you'll be able to create and refresh reports in the Power BI service.
+
 
 ## Next steps
 

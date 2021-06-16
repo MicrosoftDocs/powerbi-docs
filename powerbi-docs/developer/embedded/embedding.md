@@ -1,6 +1,6 @@
 ---
-title: Embedded analytics with Power BI embedded analytics for better embedded BI insights
-description: Power BI offers APIs to embed Power BI embedded analytics dashboards and reports into applications. Enable better embedded BI insights using Power BI embedded analytics.
+title: Embedded analytics with Power BI
+description: Power BI offers APIs to embed Power BI embedded analytics dashboards and reports into applications.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "app owns data"
   - "user owns data"
   - "Power BI APIs"
-ms.custom: seodec18
-ms.date: 05/15/2019 
+ms.custom: ''
+ms.date: 04/02/2021
 ---
 
 # Embedded analytics with Power BI
@@ -30,6 +30,9 @@ Choose the solution that is right for you:
 * [Embedding for your customers](embedding.md#embedding-for-your-customers) allows you to embed dashboards and reports to users who don't have a Power BI account. To do this, in the [Embedding setup tool](https://app.powerbi.com/embedsetup), implement the *Embed for your customers* solution.
 
 ![PBIE sample](media/embedding/what-can-you-do-02.png)
+
+> [!NOTE]
+> Embedding with a Premium Per User (PPU) license is only supported with SaaS embedding, and a license is required for each user.
 
 ## Use APIs
 

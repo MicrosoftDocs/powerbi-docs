@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/20/2021
+ms.date: 05/28/2021
 LocalizationGroup: Reports
 ---
 # Analyze in Excel
@@ -106,10 +106,15 @@ The Excel file has an MSOLAP connection string that connects to your dataset in 
 
 With that connection to the data in Power BI now established, you can create PivotTables, charts, and analyze that dataset just as you would work with a local dataset in Excel.
 
-**Analyze in Excel** is especially useful for datasets and reports that connect to the following data sources:
+**Analyze in Excel** is especially useful for Power BI datasets and reports that connect to the following data sources:
 
-* *Analysis Services Tabular* or *Multidimensional* databases
+* Azure Analysis Services *tabular* data models and SQL Server Analysis Services (SSAS) *tabular* or *multidimensional* data models
+
+    Connection to datasets from live connection to Analysis Services (Azure and SQL Server) are not currently supported
+
 * Power BI Desktop files or Excel workbooks with data models that have model measures created using Data Analysis Expressions (DAX).
+
+With **Excel for the web**, you can now explore and refresh Excel workbooks connected to Power BI datasets. If you have downloaded an Analyze in Excel workbook from Power BI or connected directly to a Power BI dataset from Excel desktop, you can share and refresh these workbooks through OneDrive and SharePoint. You can copy the link to the OneDrive or SharePoint location by clicking the **Share** button in Excel desktop and pasting the link directly in a browser. Now you start working with PivotTables connected to Power BI datasets in Excel for the web just like you would in Excel desktop.
 
 > [!IMPORTANT]
 > Using **Analyze in Excel** exposes all detail-level data to any users with permission to the dataset.
@@ -172,6 +177,7 @@ If you need to uninstall the **Analyze in Excel** feature, use the **Add or remo
 
 - Row-level security (RLS) is supported for Analyze in Excel. RLS is enforced at the data-model level, and is always applied to all users accessing data in the report. Read more about [row-level security](../admin/service-admin-rls.md).
 - There may be times when using Analyze in Excel that you get an unexpected result, or the feature doesn't work as you expected. See [Troubleshoot Analyze in Excel](desktop-troubleshooting-analyze-in-excel.md) for solutions to common issues.
+- Only Power BI datasets that use Import mode will preserve hierarchies in **Analyze in Excel** workbooks. Power BI datasets built on DirectQuery or composite models will not have their hierarchies retained when using **Analyze in Excel**.
 
 ## Next steps
 

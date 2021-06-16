@@ -1,5 +1,5 @@
 ---
-title: Private links for accessing Power BI
+title: Private endpoints for accessing Power BI
 description: How to configure a private link for using Power BI
 author: davidiseminger
 ms.author: davidi
@@ -7,26 +7,26 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 12/14/2020
-ms.custom: 
+ms.date: 04/16/2021
+ms.custom: video--3yFtlZBpqs
 LocalizationGroup: Administration
 ---
 
-# Private links for accessing Power BI
+# Private endpoints for accessing Power BI
 
-Azure networking provides the Azure Private Links feature that enables Power BI to provide secure access via Azure Networking Private endpoints. With Azure Private Links and Private Endpoints, data traffic is sent privately using Microsoft's backbone network infrastructure, and thus the data doesn’t traverse the Internet. 
+Azure networking provides the Azure Private Link feature that enables Power BI to provide secure access via Azure Networking private endpoints. With Azure Private Link and private endpoints, data traffic is sent privately using Microsoft's backbone network infrastructure, and thus the data doesn’t traverse the Internet. 
 
-Private links ensure that Power BI users use the Microsoft private network backbone when going to resources in the Power BI service.
+Private endpoints ensure that Power BI users use the Microsoft private network backbone when going to resources in the Power BI service.
 
-You can learn more about [Azure Private Links](https://azure.microsoft.com/services/private-link/).
+You can learn more about [Azure Private Link](https://azure.microsoft.com/services/private-link/).
 
-## Understanding private links
+## Understanding private endpoints
 
-Private links guarantee that traffic going *into* your organization’s Power BI artifacts (such as reports, or workspaces) always follow your organization's configured private link network path. User traffic to your Power BI artifacts must come from the established private link, and you can configure Power BI to deny all requests that don’t come from the configured network path. 
+Private endpoints guarantee that traffic going *into* your organization’s Power BI artifacts (such as reports, or workspaces) always follow your organization's configured private link network path. User traffic to your Power BI artifacts must come from the established private link, and you can configure Power BI to deny all requests that don’t come from the configured network path. 
 
-Private links *do not* guarantee that traffic from Power BI to your external data sources, whether in the cloud or on premises, is secured. Rather, you must configure firewall rules and virtual networks that further secure your data sources. 
+Private endpoints *do not* guarantee that traffic from Power BI to your external data sources, whether in the cloud or on premises, is secured. Rather, you must configure firewall rules and virtual networks that further secure your data sources. 
 
-### Power BI and private links integration
+### Power BI and private endpoint integration
 
 Azure Private Endpoint for Power BI is a network interface that connects you privately and securely to the Power BI service, powered by Azure Private Link.   
 
@@ -34,19 +34,19 @@ Private Endpoints integration enables Platform as a Service (PaaS) services to b
 
 The Power BI service implements Private Endpoints, and not Service Endpoints.  
 
-Using Private Links with Power BI provide the following benefits:
+Using private endpoints with Power BI provide the following benefits:
 
-1. Private Links ensure that traffic will flow over the Azure backbone to a private endpoint for Azure cloud-based resources. 
+1. Private endpoints ensure that traffic will flow over the Azure backbone to a private endpoint for Azure cloud-based resources. 
 
 2. Network traffic isolation from non-Azure based infrastructure, such as on-premises access, would require customers to have ExpressRoute or a Virtual Private Network (VPN) configured.  
 
-## Using secure private links to access Power BI
+## Using secure private endpoints to access Power BI
 
-In Power BI, you can configure and use an endpoint that enables your organization to access Power BI privately. To configure private links you must be a Power BI administrator, and have permissions in Azure to create and configure resources such as Virtual Machines (VMs) and Virtual Networks (V-Net). 
+In Power BI, you can configure and use an endpoint that enables your organization to access Power BI privately. To configure private endpoints you must be a Power BI administrator, and have permissions in Azure to create and configure resources such as Virtual Machines (VMs) and Virtual Networks (V-Net). 
 
-The steps that enable you to securely access Power BI from private links are:
+The steps that enable you to securely access Power BI from private endpoints are:
 
-1. [Enable private links for Power BI](#enable-private-links-for-power-bi)
+1. [Enable private endpoints for Power BI](#enable-private-endpoints-for-power-bi)
 2. [Create a Power BI resource in the Azure portal](#create-a-power-bi-resource-in-the-azure-portal)
 3. [Create a virtual network](#create-a-virtual-network)
 4. [Create a virtual machine (VM)](#create-a-virtual-machine-vm)
@@ -54,10 +54,9 @@ The steps that enable you to securely access Power BI from private links are:
 6. [Connect to a VM using Remote Desktop (RDP)](#connect-to-a-vm-using-remote-desktop-rdp)
 7. [Access Power BI privately from the virtual machine](#access-power-bi-privately-from-the-vm)
 8. [Disable public access for Power BI](#disable-public-access-for-power-bi)
-
 The following sections provide additional information for each step.
 
-## Enable private links for Power BI
+## Enable private endpoints for Power BI
 
 To get started, log in into Power BI at app.powerbi.com as an administrator, and navigate to the Admin portal. Select **Tenant settings** and scroll to the **Advanced Networking**, then toggle the radio button to turn on **Azure Private Link**, as shown in the following image. 
 
@@ -294,22 +293,30 @@ Lastly, you need to disable public access for Power BI.
 
 Log in into the app.powerbi.com as an administrator, and navigate to the **Admin portal**. Select **Tenant settings** and scroll to the **Advanced networking** section. Enable the toggle button in the **Block Public Internet Access** section, as shown in the following image. It takes approximately 15 minutes for the system to disable your organization's access to Power BI from the public Internet.
 
-And that's it - after following these steps, Power BI for your organizations is only accessible from private links, and not accessible from the public Internet. 
+And that's it - after following these steps, Power BI for your organizations is only accessible from private endpoints, and not accessible from the public Internet. 
 
 ## Considerations and limitations
 
-There are a few considerations to keep in mind while working with private links in Power BI:
+There are a few considerations to keep in mind while working with private endpoints in Power BI:
 
 * Any use of external images or themes are not available when using a private link environment.
 * If Internet access is disabled, and if the dataset or dataflow is connecting to a Power BI dataset or dataflow as a data source, the connection will fail.
-* Usage metrics do *not* work when Private Links is enabled.
-* Publish to Web is not supported (and grayed out) when you enable **Block Public Internet access** in Power BI.
+* Usage metrics do *not* work when private endpoints are enabled.
+* Publish to Web is not supported (and grayed out) when you enable **Block Public Internet Access** in Power BI.
+* Email subscriptions are not supported when you enable **Block Public Internet Access** in Power BI. 
+* [Microsoft Information Protection (MIP)](/microsoft-365/compliance/information-protection?view=o365-worldwide) does not currently support Private Links. This means that in [Power BI Desktop](service-security-sensitivity-label-overview.md#sensitivity-labels-in-power-bi-desktop-preview) running in an isolated network, the Sensitivity button will be grayed out, label information will not appear, and decryption of *.pbix* files will fail.
 
+   To enable these capabilities in Power BI Desktop, admins can configure [Service Tags](/azure/virtual-network/service-tags-overview) for the underlying services that support MIP, [EOP](/azure/virtual-network/service-tags-overview#eopexternalpublishedips) and AIP. Please make sure you understand the implications of using Service Tags in a Private Links isolated network.
+* Gateways enabled for Power BI private endpoints will not work properly with non-Power BI scenarios. 
 
 ## Next steps
 
 - [Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  
 - [Understanding the Power BI admin role](service-admin-role.md)  
 - [Auditing Power BI in your organization](service-admin-auditing.md)  
+
+The following video shows how to connect a mobile device to Power BI, using private endpoints:
+
+> [!VIDEO https://www.youtube.com/embed/-3yFtlZBpqs]
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

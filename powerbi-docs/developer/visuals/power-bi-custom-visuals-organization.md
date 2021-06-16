@@ -1,13 +1,13 @@
 ---
-title: Organization visuals in Power BI in Power BI embedded analytics for better embedded BI insights
-description: Use, manage, and create organizational visuals in Power BI. Enable better embedded BI insights using Power BI embedded analytics.
+title: Organization visuals in Power BI
+description: Use, manage, and create organizational visuals in Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 12/11/2018
+ms.date: 05/11/2021
 LocalizationGroup: Visualizations
 ---
 
@@ -38,7 +38,7 @@ There are several considerations and limitations that you need to be aware of.
 
 Admin:
 
-* If a Power BI visual from ApSource or a file is deleted from the repository, any existing reports that use the deleted visual will stop rendering. Deleting from the repository isn't reversible. To temporarily disable a Power BI visual from ApSource or a file, use the "Disable" feature.
+* If a Power BI visual from AppSource or a file is deleted from the repository, any existing reports that use the deleted visual will stop rendering. Deleting from the repository isn't reversible. To temporarily disable a Power BI visual from AppSource or a file, use the "Disable" feature.
 
 * Organizational Power BI visuals are not supported in Power BI report server.
 
@@ -46,7 +46,11 @@ End user:
 
 * Organizational Power BI visuals are private visuals imported from the organization repository. As any private visual they can't be [exported to PowerPoint](../../consumer/end-user-powerpoint.md) or displayed in emails received when a user [subscribes to report pages](../../consumer/end-user-subscribe.md). Only [certified Power BI visuals](power-bi-custom-visuals-certified.md) imported directly from the marketplace supports these features.
 
-* Visio visual, PowerApps visual, the Map box visual, and the GlobeMap visual from AppSource marketplace don't render if deployed through the organization repository.
+* Certain visuals don't render if deployed through the organization repository. Use the **Add from AppSource** option in the Admin portal to manage the following visuals:
+  - Viso
+  - Map box
+  - PowerAutomate
+  - Charticulator
 
 ## Troubleshoot
 
@@ -54,6 +58,6 @@ For information about troubleshooting, visit [Troubleshooting your Power BI visu
 
 ## FAQ
 
-For more information and answers to questions, visit [Frequently asked questions about Power BI visuals](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals).
+For more information and answers to questions, visit [Frequently asked questions about Power BI visuals](power-bi-custom-visuals-faq.yml#organizational-power-bi-visuals).
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).

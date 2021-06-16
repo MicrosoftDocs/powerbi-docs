@@ -47,5 +47,5 @@ The following bulleted-list provides specific guidance.
 For more information about this article, check out the following resources:
 
 - Power Query [Query folding](/power-query/power-query-folding) concept article
-- [Incremental refresh in Power BI Premium](../admin/service-premium-incremental-refresh.md)
+- [Incremental refresh for datasets](../connect-data/incremental-refresh-overview.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

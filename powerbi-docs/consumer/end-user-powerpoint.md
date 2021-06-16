@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/12/2021
+ms.date: 06/02/2021
 LocalizationGroup: Share your work
 ---
 # Export reports to PowerPoint
@@ -32,7 +32,7 @@ You can also copy one visual at a time from the Power BI service and paste it in
 ## Export your Power BI report to PowerPoint
 In the **Power BI service**, select a report to display it on the canvas. You can also select a report from **Home**, **Apps**, or any other container from the nav pane.
 
-When the report you want to export to PowerPoint is displayed on the canvas, select **File** > **Export to PowerPoint** from the menu bar.
+When the report you want to export to PowerPoint is displayed on the canvas, select **Export** > **PowerPoint** from the menu bar.
 
 ![Select Export from the menu bar](media/end-user-powerpoint/power-bi-export.png)
 
@@ -64,11 +64,15 @@ When you open the PowerPoint file that Power BI exported, you find a few cool an
 ![PowerPoint opens](media/end-user-powerpoint/power-bi-powerpoint-numbered.png)
 
 1. The first page of the slide deck includes the name of your report and a link so that you can **View in Power BI** the report on which the slide deck is based.
-2. You get some useful information about the report, too. **Last data refresh** shows the date and time on which the exported report is based. **Downloaded at** shows the date and time when the Power BI report was exported into a PowerPoint file. The **Downloaded at** time is set to your computer's time zone at the time of the export.
+2. You get some useful information about the report, too. **Last data refresh** shows the date and time on which the exported report is based. **Downloaded at** shows the date and time when the Power BI report was exported into a PowerPoint file. The **Downloaded at** time is the time of the export in UTC (Universal Coordinated Time).
 
 
 3. Each report page is a separate slide, as shown in the nav pane. 
-4. Your published report is rendered in the language according to your Power BI settings, or otherwise by the locale setting of your browser. To see or set your language preference in your browser, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**. For locale information, see [Supported languages and countries or regions for Power BI](../fundamentals/supported-languages-countries-regions.md).
+
+    > [!NOTE]
+    > PowerPoint adds alt text for each item on the page. The report creator can include alt text when designing the report. Otherwise, the default is "No alt text provided."
+
+5. Your published report is rendered in the language according to your Power BI settings, or otherwise by the locale setting of your browser. To see or set your language preference in your browser, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**. For locale information, see [Supported languages and countries or regions for Power BI](../fundamentals/supported-languages-countries-regions.md).
 
 
 When you view an individual slide, you see that each report page is an independent image. Scrolling in PowerPoint is not available since each slide is a static image.

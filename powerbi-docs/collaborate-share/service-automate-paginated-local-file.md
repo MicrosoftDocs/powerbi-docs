@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/08/2020
+ms.date: 04/21/2021
 LocalizationGroup: Get started
 ---
 # Save a Power BI paginated report to a local folder  with Power Automate

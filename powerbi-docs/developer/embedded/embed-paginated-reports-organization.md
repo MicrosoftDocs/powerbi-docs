@@ -1,6 +1,6 @@
 ---
-title: Embed Power BI paginated reports in your Power BI embedded analytics application enabling better embedded BI insights to your organization
-description: In this tutorial, learn how to integrate or embed a Power BI paginated report into an application, using the Power BI APIs. Enable better embedded BI insights using Power BI embedded analytics.
+title: Embed Power BI paginated reports in your Power BI embedded analytics application
+description: In this tutorial, learn how to integrate or embed a Power BI paginated report into an application, using the Power BI APIs.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -8,7 +8,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
-ms.date: 06/25/2020
+ms.date: 04/02/2021
 #Customer intent: As a developer, I want to embed Power BI paginated reports into an application, so users of an organization can share data.
 ---
 
@@ -33,16 +33,16 @@ In this tutorial, you learn the following tasks:
 ## Prerequisites
 To get started, you're required to have:
 
-* A [Power BI Pro account](../../admin/service-admin-purchasing-power-bi-pro.md).
+* A [Power BI Pro license](../../admin/service-admin-purchasing-power-bi-pro.md) or Premium Per User (PPU) license.
 
 * You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
 
-* At least a P1 capacity. See [What size Premium capacity do I need for paginated reports?](../../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)
+* At least a P1 capacity. See [What size Premium capacity do I need for paginated reports?](../../paginated-reports/paginated-reports-faq.yml#what-size-premium-capacity-do-i-need-for-paginated-reports-)
 
 If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
 >[!NOTE]
->[Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) is supported. However, if you're using PPU, only PPU users in your organization will be able to access your solution.
+>[Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) is supported. However, if you're using PPU, only PPU users in your organization will be able to access your solution.
 
 ## Set up your Power BI environment
 
@@ -108,7 +108,7 @@ After you create a capacity, you can assign your app workspace to that capacity.
 
 ### Create and publish your Power BI paginated reports
 
-You can create your paginated reports by using the [Power BI Report Builder](../../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Then you can [upload the report](../../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) to an app workspace assigned to at least a P1 capacity, and turn on the [paginated reports workload](#enable-paginated-reports-workload). The end user uploading the report must have a Power BI Pro license to publish to an app workspace.
+You can create your paginated reports by using the [Power BI Report Builder](../../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Then you can [upload the report](../../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) to an app workspace assigned to at least a P1 capacity, and turn on the [paginated reports workload](#enable-paginated-reports-workload). The end user uploading the report must have a Power BI Pro or Premium Per User (PPU) license to publish to an app workspace.
    
 ## Embed your content by using the sample application
 

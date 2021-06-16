@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/11/2020
+ms.date: 04/20/2021
 LocalizationGroup: Premium
 ---
 
@@ -17,12 +17,16 @@ Managing Power BI Premium involves creating, managing, and monitoring Premium ca
 
 Learn how to manage Power BI Premium and Power BI Embedded capacities, which provide dedicated resources for your content.
 
-![Power BI capacity settings screen](media/service-admin-premium-manage/premium-capacity-management.png)
+:::image type="content" source="media/service-admin-premium-manage/powerbi-premium-capacity-settings.png" alt-text="Screenshot that shows the Power B I Premium capacity settings screen.":::
 
 *Capacity* is at the heart of the Power BI Premium and [Power BI Embedded](../developer/embedded/azure-pbie-what-is-power-bi-embedded.md) offerings. It is a set of resources reserved for exclusive use by your organization. Having a capacity enables you to publish dashboards, reports, and datasets to users throughout your organization without having to purchase per-user licenses for them. It also offers dependable, consistent performance for the content hosted in capacity. For more information, see [What is Power BI Premium?](service-premium-what-is.md).
 
 > [!NOTE]
 > Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+
+
+> [!NOTE]
+> You can also get Premium Per User (PPU) licenses for individuals, which provides many of the features and capabilities of a Premium capacity, and also incorporates all functionality included with a Power BI Pro license. For more information, see [Power BI Premium Per User](service-premium-per-user-faq.yml).
 
 ## Manage capacity
 
@@ -81,11 +85,13 @@ Capacity admins, as well as Power BI admins and global administrators, then see 
 
 Power BI admins and global administrators can change Power BI Premium capacity. Capacity admins who are not a Power BI admin or global administrator don't have this option.
 
-1. Select **Change capacity size**.
+1. Select the capacity name you want to change the size of.
 
-    ![Change Power BI Premium capacity size](media/service-admin-premium-manage/change-capacity-size.png)
+1. Select **Change size**.
 
-1. On the **Change capacity size** screen upgrade or downgrade your capacity as appropriate.
+    :::image type="content" source="media/service-admin-premium-manage/powerbi-settings-change-capacity-size.png" alt-text="Screenshot that shows the Power BI Change Size button for capacity.":::
+
+1. On the **Change size** screen, upgrade or downgrade your capacity as appropriate.
 
     ![Change Power BI Premium capacity size drop down](media/service-admin-premium-manage/change-capacity-size2.png)
 
@@ -101,14 +107,14 @@ Power BI admins and global administrators can change Power BI Premium capacity. 
 
 ### Manage user permissions
 
-You can assign additional capacity admins, and assign users that have *capacity assignment* permissions. Users that have assignment permissions can assign a workspace to a capacity if they are an admin of that workspace. They can also assign their personal *My Workspace* to the capacity. Users with assignment permissions do not have access to the admin portal.
+You can assign additional capacity admins, and assign users that have *contributor* permissions. Users that have contributor permissions can assign a workspace to a capacity if they are an admin of that workspace. They can also assign their personal *My Workspace* to the capacity. Users with contributor permissions do not have access to the admin portal.
 
 > [!NOTE]
 > For Power BI Embedded, capacity admins are defined in the Microsoft Azure portal.
 
-Under **User permissions**, expand **Users with assignment permissions**, then add users or groups as appropriate.
+Expand **Contributor permissions**, then add users or groups as appropriate.
 
-![Capacity user permissions](media/service-admin-premium-manage/capacity-user-permissions2.png)
+:::image type="content" source="media/service-admin-premium-manage/powerbi-contributor-permissions.png" alt-text="Screenshot that shows the Contributor Permissions menu":::
 
 ## Assign a workspace to a capacity
 
@@ -116,11 +122,11 @@ There are two ways to assign a workspace to a capacity: in the admin portal; and
 
 ### Assign from the admin portal
 
-Capacity admins, along with Power BI admins and global administrators, can bulk assign workspaces in the premium capacity management section of the admin portal. When you manage a capacity, you see a **Workspaces** section that allows you to assign workspaces.
+Capacity admins, along with Power BI admins and global administrators, can bulk assign workspaces in the premium capacity management section of the admin portal. When you manage a capacity, you see a **Workspaces assigned to this capacity** section that allows you to assign workspaces.
 
-![Workspace assignment area of capacity management](media/service-admin-premium-manage/capacity-manage-workspaces.png)
+:::image type="content" source="media/service-admin-premium-manage/workspaces-assigned-capacity.png" alt-text="Screenshot that shows the Workspace assignment area of capacity management.":::
 
-1. Select **Assign workspaces**. This option is available in multiple places.
+1. Select **Assign workspaces**.
 
 1. Select an option for **Apply to**.
 
@@ -139,11 +145,11 @@ Capacity admins, along with Power BI admins and global administrators, can bulk 
 
 You can also assign a workspace to a Premium capacity from the settings of that workspace. To move a workspace into a capacity, you must have admin permissions to that workspace, and also capacity assignment permissions to that capacity. Note that workspace admins can always remove a workspace from Premium capacity.
 
-1. Edit a workspace by selecting the ellipsis **(. . .)** then selecting **Edit workspace**.
+1. Edit a workspace by selecting the ellipsis **(. . .)** then selecting **Edit this workspace**.
 
-    ![Edit workspace from ellipsis context menu](media/service-admin-premium-manage/edit-app-workspace.png)
+    :::image type="content" source="media/service-admin-premium-manage/edit-app-workspace.png" alt-text="Screenshot of the Edit this workspace context menu.":::
 
-1. Under **Edit workspace**, expand **Advanced**.
+1. Under **Edit this workspace**, expand **Advanced**.
 
 1. Select the capacity that you want to assign this workspace to.
 

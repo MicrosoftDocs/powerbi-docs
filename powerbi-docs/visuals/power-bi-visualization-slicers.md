@@ -39,7 +39,7 @@ Slicers are a great choice when you want to:
 Power BI slicers don't support:
 
 - Input fields
-- Drilldown
+- Drill-down options
 
 ## Create a slicer
 

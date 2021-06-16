@@ -8,7 +8,7 @@ ms.custom: contperf-fy21q1
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 12/14/2020
+ms.date: 04/13/2021
 LocalizationGroup: Get started
 ---
 # Get started with Power BI Desktop
@@ -52,13 +52,16 @@ On the Microsoft Store page, select **Get**, and follow the prompts to install P
 
 The first time Power BI Desktop starts, it displays the **Welcome** screen.
 
-From the **Welcome** screen, you can **Get data**, see **Recent sources**, open recent reports, **Open other reports**, or select other links. You can also choose whether to always show the **Welcome** screen at startup. Select the close icon to close the **Welcome** screen.
+From the **Welcome** screen, you can **Get data**, see **Recent sources**, open recent reports, **Open other reports**, or select other links. Select the close icon to close the **Welcome** screen.
 
 ![Screenshot of Power B I Desktop showing the Welcome screen.](media/desktop-getting-started/designer_gsg_startsplashscreen.png)
 
-Along the left side of Power BI Desktop are icons for the three Power BI Desktop views: **Report**, **Data**, and **Relationships**, from top to bottom. The current view is indicated by the yellow bar along the left, and you can change views by selecting any of the icons. 
+Along the left side of Power BI Desktop are icons for the three Power BI Desktop views: **Report**, **Data**, and **Model**, from top to bottom. The current view is indicated by the yellow bar along the left, and you can change views by selecting any of the icons. 
 
-![Screenshot of Power B I Desktop showing the icons for Report, Data, and Relationships.](media/desktop-getting-started/designer_gsg_viewtypes.png)
+If you are using keyboard navigation, press Ctrl + F6 to move focus to that section of buttons in the window.  To learn more about accessibility and Power BI, visit our [accessibility articles](../create-reports/desktop-accessibility-creating-tools.md).
+
+![Screenshot of Power B I Desktop showing the icons for Report, Data, and Model.](media/desktop-getting-started/designer_gsg_viewtypes.png)
+
 
 **Report** view is the default view. 
 
@@ -83,13 +86,13 @@ In the **From Web** dialog box, paste the address *https:\//www.bankrate.com/ret
 
 If prompted, on the **Access Web Content** screen, select **Connect** to use anonymous access. 
 
-The query functionality of Power BI Desktop goes to work and contacts the web resource. The **Navigator** window returns what it found on the web page, in this case a table called **Ranking of best and worst states for retirement**, and a document. You're interested in the table, so select it to see a preview.
+The query functionality of Power BI Desktop goes to work and contacts the web resource. The **Navigator** window returns what it found on the web page, in this case an HTML table called **Ranking of best and worst states for retirement**, and five other suggested tables. You're interested in the HTML table, so select it to see a preview.
 
 At this point you can select **Load** to load the table, or **Transform data** to make changes in the table before you load it.
 
 ![Screenshot of Power B I Desktop showing a table display of imported data.](media/desktop-getting-started/datasources_fromnavigatordialog.png)
 
-When you select **Transform data**, Power Query Editor launches, with a representative view of the table. The **Query Settings** pane is on the right, or you can always show it by selecting **Query Settings** on the **View** tab of Power Query Editor. 
+When you select **Transform data**, Power Query Editor launches, with a representative view of the table. The **Query Settings** pane is on the right, or you can always show it by selecting **Query Settings** on the **View** tab of Power Query Editor.
 
 ![Screenshot of Power B I Desktop showing the Power Query Editor with Query Settings.](media/desktop-getting-started/designer_gsg_editquery.png)
 
@@ -120,7 +123,7 @@ For example, for sunglasses sales you're most interested in the weather ranking,
 
 ![Screenshot of Power B I Desktop showing Sorted Rows appearing in Applied Steps.](media/desktop-getting-started/shapecombine-changetype-b.png)
 
-You're not very interested in selling sunglasses to the worst weather states, so you decide to remove them from the table. From the **Reduce Rows** group of the **Home** tab, select **Remove Rows** > **Remove Bottom Rows**. In the **Remove Bottom Rows** dialog box, enter *10*, and then select **OK**. 
+You're not very interested in selling sunglasses to the worst weather states, so you decide to remove them from the table. From the the **Home** tab, select **Reduce Rows** > **Remove Rows** > **Remove Bottom Rows**. In the **Remove Bottom Rows** dialog box, enter *10*, and then select **OK**.
 
 ![Screenshot of Power B I Desktop showing the Remove Bottom Rows dialog box.](media/desktop-getting-started/pbi_gsg_getdata3.png)
 
@@ -163,11 +166,9 @@ In the **From Web** dialog box, enter the URL for the state abbreviations site: 
 
 In the **Navigator** window, select the table **Codes and abbreviations for U.S. states, federal district, territories, and other regions**, and then select **OK**. The table opens in Power Query Editor.
 
-Remove all columns except for **Name and status of region**, **Name and status of region2**, and **ANSI**. To keep only these columns, hold down **Ctrl** and select the columns. Then, either right-click one of the column headers and select **Remove Other Columns**, or, from the **Manage Columns** group of the **Home** tab, select **Remove Other Columns**. 
+Remove all columns except for **Name and status of region**, **Name and status of region**, and **ANSI**. To keep only these columns, hold down **Ctrl** and select the columns. Then, either right-click one of the column headers and select **Remove Other Columns**, or, from the **Manage Columns** group of the **Home** tab, select **Remove Other Columns**. 
 
-Drop down the arrow next to the **Name and status of region2** column header, and select **Filters** > **Equals**. In the **Filter Rows** dialog box, drop down the **Enter or select a value** field next to **equals** and select **State**. 
-
-Select **Or**, and next to the second **equals** field, select **State ("Commonwealth")**. Select **OK**. 
+Drop down the arrow next to the **Name and status of region_1** column header, and select **Filters** > **Equals**. In the **Filter Rows** dialog box, drop down the **Enter or select a value** field next to **equals** and select **State**. Select **OK**.
 
 ![Screenshot of Power B I Desktop showing the Power Query Editor's Filter Rows query box.](media/desktop-getting-started/filterrows.png)
 
@@ -250,7 +251,7 @@ The options available in the **Fields** and **Format** areas depend on the type 
 
 You want your map visualization to show only the top 10 weather states. To show only the top 10 states, in the **Filters** pane, hover over **State is (All)** and expand the arrow that appears. Under **Filter type**, drop down and select **Top N**. Under **Show items**, select **Bottom**, because you want to show the items with the lowest numerical ranks, and enter *10* in the next field.
 
-Drag the **Weather** field from the **Fields** pane into the **By value** field, and then select **Apply filter**. 
+Drag the **Weather** field from the **Fields** pane into the **By value** field, and then select **Apply filter**.
 
 ![Screenshot of Power B I Desktop showing the Weather filter.](media/desktop-getting-started/gsg_share5.png)
 
@@ -268,9 +269,9 @@ To switch the order of the ranking so that number 1 appears first, select the **
 
 ![Screenshot of Power B I Desktop showing the Sort Ascending option.](media/desktop-getting-started/shapecombine_mergequeries.png)
 
-To limit the table to the top 10 states, apply the same bottom 10 filter as you did for the map visualization. 
+To limit the table to the top 10 states, apply the same bottom 10 filter as you did for the map visualization.
 
-Retitle the visualization the same way as for the map visualization. Also in the **Format** section of the **Visualization** pane, change **Y axis** > **Axis title** from **Weather** to *Weather ranking* to make it more understandable. Then, turn the **Y axis** selector to **Off**, and turn **Data labels** to **On**.
+Retitle the visualization the same way as for the map visualization. Also in the **Format** section of the **Visualization** pane, change **Y axis** > **Axis title** from **Weather** to *Weather ranking* to make it more understandable. Then, turn the **Y axis** selector to **Off**. Turn the **Zoom slider** to **On** and turn **Data labels** to **On**. Finally, adjust the zoom slider along the Y axis until the stacked columns fill the chart.
 
 Now, the top 10 weather states appear in ranked order along with their numerical rankings.
 
@@ -323,13 +324,18 @@ After the file imports, you can see it listed under **My workspace** > **Reports
 
 When you select the file, the first page of the report appears. You can select different pages from the tabs at the left of the report. 
 
-You can make changes to a report in the **Power BI** service by selecting **More options** > **Edit** from the top of the report canvas. To save your changes, select **Save a copy**.
+You can make changes to a report in the **Power BI** service by selecting **More options** > **Edit** from the top of the report canvas.
 
-![Screenshot of Power B I Desktop showing the Edit and Save options.](media/desktop-getting-started/gsg_share4.png)
+![Screenshot of Power B I Desktop showing the Edit option.](media/desktop-getting-started/gsg_share4.png)
+
+To save your changes, select **File** > **Save a copy**.
+
+![Screenshot of Power B I Desktop showing the Save option.](media/desktop-getting-started/gsg-share-file-save-copy.png)
+
 
 There are all sorts of interesting visuals you can create from your report in the **Power BI** service, which you can pin to a *dashboard*. To learn about dashboards in the **Power BI** service, see [Tips for designing a great dashboard](../create-reports/service-dashboards-design-tips.md). For more information about creating, sharing, and modifying dashboards, see [Share a dashboard](../collaborate-share/service-share-dashboards.md).
 
-To share a report or dashboard, select **Share** at the top of the open report or dashboard page, or select the **Share** icon next to the report or dashboard name in the **My workspace** > **Reports** or **My workspace** > **Dashboards** lists.
+To share a report or dashboard, select **Share** > **Report** at the top of the open report or dashboard page, or select the **Share** icon next to the report or dashboard name in the **My workspace** > **Reports** or **My workspace** > **Dashboards** lists.
 
 Complete the **Share report** or **Share dashboard** screen to send an email or get a link to share your report or dashboard with others. 
 
@@ -346,4 +352,4 @@ For more information on the many capabilities of Power BI Desktop, check out the
 * [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Connect to data in Power BI Desktop](../connect-data/desktop-connect-to-data.md)
 * [Tutorial: Shape and combine data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)   
+* [Common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)

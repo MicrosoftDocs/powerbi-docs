@@ -86,7 +86,7 @@ Plan for the best possible connectivity between the Power BI service and your ga
 
 ### Clustering
 
-For large-scale deployments, you can create a gateway of cluster installations. Clusters avoid single points of failure, and can load balance traffic across gateways. You can:
+For large-scale deployments, you can create a gateway with multiple cluster members. Clusters avoid single points of failure, and can load balance traffic across gateways. You can:
 
 - Install one or more gateways in a cluster
 - Isolate workloads to standalone gateways, or clusters of gateway servers
@@ -100,7 +100,7 @@ Dataset design, and their settings, can impact on gateway workloads. To reduce g
 For Import datasets:
 
 - Configure less frequent data refresh
-- Configure [incremental refresh](../admin/service-premium-incremental-refresh.md) to minimize the amount of data to transfer
+- Configure [incremental refresh](../connect-data/incremental-refresh-overview.md) to minimize the amount of data to transfer
 - Whenever possible, ensure [query folding](power-query-folding.md) takes place
 - Especially for large data volumes or a need for low-latency results, convert the design to a DirectQuery or [Composite](../connect-data/service-dataset-modes-understand.md#composite-mode) model
 

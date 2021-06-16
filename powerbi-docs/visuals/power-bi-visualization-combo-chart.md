@@ -1,15 +1,14 @@
 ---
 title: Combo chart in Power BI
-description: This tutorial about Combo charts explains when to use them and how to build them in Power BI service and Desktop.
+description: This tutorial about combo charts explains when to use them and how to build them in the Power BI service and Desktop.
 author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
-featuredvideoid: lnv66cTZ5ho
-ms.custom: lnv66cTZ5ho
+ms.custom: video-lnv66cTZ5hom pbibetadocbug
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 06/18/2020
+ms.date: 05/24/2021
 LocalizationGroup: Visualizations
 ---
 # Create and use combo charts in Power BI
@@ -123,6 +122,9 @@ From here you might want to:
 ## Cross-highlighting and cross-filtering
 
 Highlighting a column or line in a combo chart cross-highlights and cross-filters the other visualizations on the report page... and vice versa. Use [visual interactions](../create-reports/service-reports-visual-interactions.md) to change this default behavior.
+
+## Considerations and limitations
+Depending on the size of your combo chart, the data labels may or may not display.  If you don't see data labels, resize the combo chart. 
 
 ## Next steps
 

@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/15/2020
+ms.date: 04/21/2021
 LocalizationGroup: Create reports
 ---
-# Customize tooltips in Power BI Desktop
+# Customize tooltips in Power BI
 
-Tooltips are an elegant way of providing more contextual information and detail to data points on a visual. The following image shows a tooltip applied to a chart in Power BI Desktop.
+Tooltips are an elegant way of providing more contextual information and detail to data points on a visual. The following image shows a tooltip applied to a chart in Power BI Desktop. You can customize tooltips in Power BI Desktop and in the Power BI service.
 
 ![Default tooltip](media/desktop-custom-tooltips/custom-tooltips-1.png)
 

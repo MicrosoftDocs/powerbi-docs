@@ -68,7 +68,7 @@ Use the following procedure to create a basic Power BI report using the Adventur
 
     ![Fields pane](./media/service-gateway-sql-tutorial/fields-pane.png)
 
-5. Drag the **EndDate** onto **Report level filters**, and under **Basic filtering** select only the checkbox for **(Blank)**.
+5. Drag the **EndDate** onto **Filters on this page**, and under **Basic filtering** select only the checkbox for **(Blank)**.
 
     ![Report level filters](./media/service-gateway-sql-tutorial/report-level-filters.png)
 

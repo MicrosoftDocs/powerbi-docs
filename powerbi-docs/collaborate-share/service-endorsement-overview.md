@@ -38,9 +38,9 @@ The image below illustrates how endorsed content (promoted and certified) is cle
 ## Content types that can be endorsed
 Power BI currently supports endorsement for:
 * Datasets
-* Dataflows (preview)
-* Reports (preview)
-* Apps (preview)
+* Dataflows
+* Reports
+* Apps
 
 ## Identifying endorsed content
 

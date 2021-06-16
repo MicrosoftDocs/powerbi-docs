@@ -6,9 +6,9 @@ ms.author: mihart
 ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: pbi-visuals
-ms.custom: video-fDb5zZ3xmxU
+ms.custom: video-fDb5zZ3xmxU, video-2X1cW8oPtc8
 ms.topic: how-to
-ms.date: 01/10/2020
+ms.date: 02/22/2021
 LocalizationGroup: Visualizations
 ---
 # Create key influencers visualizations
@@ -17,12 +17,14 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-The key influencers visual helps you understand the factors that drive a metric you're interested in. It analyzes your data, ranks the factors that matter, and displays them as key influencers. For example, suppose you want to figure out what influences employee turnover, which is also known as churn. One factor might be employment contract length, and another factor might be employee age. 
+The key influencers visual helps you understand the factors that drive a metric you're interested in. It analyzes your data, ranks the factors that matter, and displays them as key influencers. For example, suppose you want to figure out what influences employee turnover, which is also known as churn. One factor might be employment contract length, and another factor might be commute time. 
  
-## When to use key influencers 
-The key influencers visual is a great choice if you want to: 
+## When to use key influencers
+
+The key influencers visual is a great choice if you want to:
+
 - See which factors affect the metric being analyzed.
-- Contrast the relative importance of these factors. For example, do short-term contracts have more impact on churn than long-term contracts? 
+- Contrast the relative importance of these factors. For example, do short-term contracts affect churn more than long-term contracts?
 
 ## Features of the key influencers visual
 
@@ -42,7 +44,7 @@ The key influencers visual is a great choice if you want to:
 
 7. **Average line**: The average is calculated for all possible values for **Theme** except **usability** (which is the selected influencer). So the calculation applies to all the values in black. It tells you what percentage of the other **Themes** had a low rating. In this case 11.35% had a low rating (shown by the dotted line).
 
-8. **Check box**: Filters out the visual in the right pane to only show values that are influencers for that field. In this example, this would filter the visual to usability, security and navigation.
+8. **Check box**: Filters out the visual in the right pane to only show values that are influencers for that field. In this example, this would filter the visual to usability, security, and navigation.
 
 ## Analyze a metric that is categorical
  
@@ -66,13 +68,13 @@ Your Product Manager wants you to figure out which factors lead customers to lea
 2. Move the metric you want to investigate into the **Analyze** field. To see what drives a customer rating of the service to be low, select **Customer Table** > **Rating**.
 
 3. Move fields that you think might influence **Rating** into the **Explain by** field. You can move as many fields as you want. In this case, start with:
-    - Country-Region 
-    - Role in Org 
-    - Subscription Type 
-    - Company Size 
+    - Country-Region
+    - Role in Org
+    - Subscription Type
+    - Company Size
     - Theme
-    
-4. Leave the **Expand by** field empty. This field is only used when analyzing a measure or summarized field. 
+
+4. Leave the **Expand by** field empty. This field is only used when analyzing a measure or summarized field.
 
 5. To focus on the negative ratings, select **Low** in the **What influences Rating to be** drop-down box.  
 
@@ -80,13 +82,14 @@ Your Product Manager wants you to figure out which factors lead customers to lea
 
 The analysis runs on the table level of the field that's being analyzed. In this case, it's the **Rating** metric. This metric is defined at a customer level. Each customer has given either a high score or a low score. All the explanatory factors must be defined at the customer level for the visual to make use of them. 
 
-In the previous example, all of the explanatory factors have either a one-to-one or a many-to-one relationship with the metric. In this case, each customer assigned a single theme to their rating. Similarly, customers come from one country, have one membership type, and perform one role in their organization. The explanatory factors are already attributes of a customer, and no transformations are needed. The visual can make immediate use of them. 
+In the previous example, all of the explanatory factors have either a one-to-one or a many-to-one relationship with the metric. In this case, each customer assigned a single theme to their rating. Similarly, customers come from one country, have one membership type, and hold one role in their organization. The explanatory factors are already attributes of a customer, and no transformations are needed. The visual can make immediate use of them. 
 
 Later in the tutorial, you look at more complex examples that have one-to-many relationships. In those cases, the columns have to first be aggregated down to the customer level before you can run the analysis. 
 
 Measures and aggregates used as explanatory factors are also evaluated at the table level of the **Analyze** metric. Some examples are shown later in this article. 
 
-## Interpret categorical key influencers 
+## Interpret categorical key influencers
+
 Let's take a look at the key influencers for low ratings. 
 
 ### Top single factor that influences the likelihood of a low rating
@@ -95,8 +98,7 @@ The customer in this example can have three roles: consumer, administrator, and 
 
 ![Select Role in Org is consumer](media/power-bi-visualization-influencers/power-bi-role-consumer.png)
 
-
-More precisely, your consumers are 2.57 times more likely to give your service a negative score. The key influencers chart lists **Role in Org is consumer** first in the list on the left. By selecting **Role in Org is consumer**, Power BI shows additional details in the right pane. The comparative effect of each role on the likelihood of a low rating is shown.
+More precisely, your consumers are 2.57 times more likely to give your service a negative score. The key influencers chart lists **Role in Org is consumer** first in the list on the left. By selecting **Role in Org is consumer**, Power BI shows more details in the right pane. The comparative effect of each role on the likelihood of a low rating is shown.
   
 - 14.93% of consumers give a low score. 
 - On average, all other roles give a low score 5.78% of the time.
@@ -112,7 +114,7 @@ The second most important factor is related to the theme of the customer’s rev
 
 Between the visuals, the average, which is shown by the red dotted line, changed from 5.78% to 11.34%. The average is dynamic because it's based on the average of all other values. For the first influencer, the average excluded the customer role. For the second influencer, it excluded the usability theme. 
  
-Select the **Only show values that are influencers** check box to filter by using only the influential values. In this case, they're the roles that drive a low score. Twelve themes are reduced to the four that Power BI identified as the themes that drive low ratings. 
+Select the **Only show values that are influencers** check box to filter by using only the influential values. In this case, they're the roles that drive a low score. 12 themes are reduced to the four that Power BI identified as the themes that drive low ratings. 
 
 ![Select check box](media/power-bi-visualization-influencers/power-bi-only-show.png)
 
@@ -140,7 +142,7 @@ The scatter plot in the right pane plots the average percentage of low ratings f
 
 In some cases you may find that your continuous factors were automatically turned into categorical ones. This is because we realized the relationship between the variables is not linear and so we cannot describe the relationship as simply increasing or decreasing (like we did in the example above).
 
-We run correlation tests to determine how linear the influencer is with regard to the target. If the target is continuous, we run Pearson correlation and if the target is categorical, we run Point Biserial correlation tests. If we detect the relationship is not sufficiently linear we conduct supervised binning and generate a maximum of 5 bins. To figure out which bins make the most sense we use a supervised binning method which looks at the relationship between the explanatory factor and the target being analyzed.
+We run correlation tests to determine how linear the influencer is with regard to the target. If the target is continuous, we run Pearson correlation and if the target is categorical, we run Point Biserial correlation tests. If we detect the relationship is not sufficiently linear, we conduct supervised binning and generate a maximum of five bins. To figure out which bins make the most sense, we use a supervised binning method that looks at the relationship between the explanatory factor and the target being analyzed.
 
 ## Interpret measures and aggregates as key influencers 
  
@@ -169,13 +171,13 @@ In this group, 74.3% of the customers gave a low rating. The average customer ga
 
 ## Adding counts
 
-Sometimes an influencer can have a big impact but represent very little of the data. For example, **Theme** is **usability** is the second biggest influencer for low ratings. However there might have only been a handful of customers who complained about usability. Counts can help you prioritize which influencers you want to focus on.
+Sometimes an influencer can have a significant effect but represent little of the data. For example, **Theme** is **usability** is the second biggest influencer for low ratings. However, there might have only been a handful of customers who complained about usability. Counts can help you prioritize which influencers you want to focus on.
 
-You can turn counts on through the **Analysis card** of the formatting pane.
+You can turn on counts through the **Analysis card** of the formatting pane.
 
 ![Add counts](media/power-bi-visualization-influencers/power-bi-ki-counts-toggle.png)
 
-Once counts are turned on, you’ll see a ring around each influencer’s bubble, which represents the approximate percentage of data that influencer contains. The more of the bubble the ring circles, the more data it contains. We can see that **Theme** is **usability** contains a very small proportion of data.
+After counts are turned on, you’ll see a ring around each influencer’s bubble, which represents the approximate percentage of data that influencer contains. The more of the bubble the ring circles, the more data it contains. We can see that **Theme** is **usability** contains a small proportion of data.
 
 ![Show counts](media/power-bi-visualization-influencers/power-bi-ki-counts-ring.png)
 
@@ -203,7 +205,11 @@ Instead we may want to ask, ‘What influences House Price to increase’? which
 
 ![Numeric question](media/power-bi-visualization-influencers/power-bi-ki-numeric-question.png)
 
-## Interpret the results: Key influencers 
+## Interpret the results: Key influencers
+
+>[!NOTE]
+>The examples in this section use public domain House Prices data. You can [download the sample dataset](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data) if you want to follow along.
+>
 
 In this scenario we look at ‘What influences House Price to increase’. We are looking at a number of explanatory factors that could impact a house price like **Year Built** (year the house was built), **KitchenQual** (kitchen quality) and **YearRemodAdd** (year the house was remodeled). 
 
@@ -375,9 +381,9 @@ The logistic regression also considers how many data points are present. For exa
 
 Behind the scenes, the AI visualization uses [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) to run a linear regression to calculate the key influencers. A linear regression is a statistical model that looks at how the outcome of the field you are analyzing changes based on your explanatory factors.
 
-For example, if we are analyzing house prices, a linear regression will look at the impact having an excellent kitchen will have on the house price. Do houses with excellent kitchens generally have lower or higher house prices compared to houses without excellent kitchens?
+For example, if we are analyzing house prices, a linear regression will look at the effect that having an excellent kitchen will have on the house price. Do houses with excellent kitchens generally have lower or higher house prices compared to houses without excellent kitchens?
 
-The linear regression also considers the number of data points. For example, if houses with tennis courts have higher prices but we  have very few houses that have a tennis court, this factor is not considered influential. This determination is made because there aren't enough data points available to infer a pattern. A statistical test, known as a Wald test, is used to determine whether a factor is considered an influencer. The visual uses a p-value of 0.05 to determine the threshold. 
+The linear regression also considers the number of data points. For example, if houses with tennis courts have higher prices but we have few houses with a tennis court, this factor is not considered influential. This determination is made because there aren't enough data points available to infer a pattern. A statistical test, known as a Wald test, is used to determine whether a factor is considered an influencer. The visual uses a p-value of 0.05 to determine the threshold. 
 
 **How do you calculate segments?**
 

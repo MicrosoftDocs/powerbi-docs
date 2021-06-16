@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 01/02/2020
+ms.date: 04/30/2021
 LocalizationGroup: Connect to data
 ---
 
@@ -45,4 +45,4 @@ A limited subset of data extensions is considered *certified*. While Microsoft d
 
 In Power BI Desktop, certified third-party connectors appear in the list in the **Get Data** dialog box, along with generic and common connectors. You don't need to adjust security settings to use the certified connectors.
 
-If you would like a custom connector to be certified, ask your vendor to contact dataconnectors@microsoft.com.
+If you would like a custom connector to be certified, see our [certification documentation](/power-query/connectorcertification).

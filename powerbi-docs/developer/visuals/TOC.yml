@@ -12,12 +12,14 @@
     items:
     - name: "Tutorial: Developing a Power BI circle card visual"
       href: develop-circle-card.md  
+    - name: "Tutorial: Adding formatting options"
+      href: custom-visual-develop-tutorial-format-options.md
     - name: "Tutorial: Create a Power BI visual using React"
       href: create-react-visual.md
+    - name: "Tutorial: Create an R-powered visual"
+      href: create-r-based-power-bi-desktop.md
     - name: "Build a bar chart"
       href: create-bar-chart.md
-    - name: "Add formatting options"
-      href: custom-visual-develop-tutorial-format-options.md
     - name: "Add unit tests for visual project"
       href: unit-tests-introduction.md
     - name: "Build a funnel plot from R script to R visual"
@@ -35,7 +37,7 @@
     - name: "Performance tips"
       href: performance-tips.md
     - name: "Visuals FAQ"
-      href: power-bi-custom-visuals-faq.md
+      href: power-bi-custom-visuals-faq.yml
     - name: "Using capabilities"
       href: capabilities.md
     - name: "Data view mappings"
@@ -56,12 +58,16 @@
       href: office-store.md
     - name: "Set up your environment for developing a Power BI visual"
       href: environment-setup.md
+    - name: "Import a custom visual"
+      href: import-visual.md
+    - name: "Create a dialog box"
+      href: create-display-dialog-box.md         
+    - name: "Add a display warning icon to your visual"
+      href: visual-display-warning-icon.md      
     - name: "Create R-powered visuals"
-      href: create-r-based-power-bi-desktop.md
+      href: create-r-based-power-bi-desktop.md  
     - name: "Test your Power BI visual"  
       href: submission-testing.md
-    - name: "Use R-powered Power BI visuals in Power BI"
-      href: ../../create-reports/desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
     - name: "Visual interactions"
       href: visuals-interactions.md
     - name: "Add selections"
@@ -90,11 +96,13 @@
       href: high-contrast-support.md
     - name: "Enable sync slicers"
       href: enable-sync-slicers.md
+    - name: "Render a visual without requiring data binding"
+      href: no-dataroles-support.md  
     - name: "Debug visuals"
       href: visuals-how-to-debug.md  
     - name: "Mobile development"
       href: mobile-development.md
-    - name: "Troubleshoot Power BI visuals"
+    - name: "Troubleshoot  environment setup"
       href: power-bi-custom-visuals-troubleshoot.md
   - name: Reference
     items: 

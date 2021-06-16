@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 03/05/2021
+ms.date: 06/16/2021
 LocalizationGroup: Transform and shape data
 ---
 # Using Azure Log Analytics in Power BI (Preview)
@@ -16,7 +16,7 @@ Power BI is integrating with Azure Log Analytics (LA) to enable administrators a
 
 Azure Log Analytics (LA) is a service within [Azure Monitor](https://azure.microsoft.com/services/monitor/), which uses the Azure Analysis Services engine to create logs. The Azure Monitor suite lets you collect, analyze, and act on telemetry data from your Azure and on-premises environments. It offers long-term storage, an ad-hoc query interface and API access to allow data export and integration with other systems. 
 
-The Power BI integration with Log Analytics exposes events from the Analysis Services engine. The events are derived from existing [diagnostic logs available for Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-logging). 
+The Power BI integration with Log Analytics exposes events from the Analysis Services engine. The events are derived from existing [diagnostic logs available for Azure Analysis Services](/azure/analysis-services/analysis-services-logging). 
 
 Once connected to Power BI, data is sent continuously and is available in Log Analytics in approximately 5 minutes. The following diagram shows how Azure Monitor operates, with the path taken by Power BI highlighted.
 
@@ -100,5 +100,5 @@ The following articles provide more information about Power BI and its many feat
 * [Configuring Azure Log Analytics for Power BI (Preview)](desktop-log-analytics-configure.md)
 * [What is Power BI Premium?](../../admin/service-premium-what-is.md)
 * [Organize work in the new workspaces in Power BI](../../collaborate-share/service-new-workspaces.md)
-* [Creating a dataflow](dataflows-create.md)
-* [Dataflows best practices](dataflows-best-practices.md)
+* [Creating a dataflow](../dataflows/dataflows-create.md)
+* [Dataflows best practices](../dataflows/dataflows-best-practices.md)

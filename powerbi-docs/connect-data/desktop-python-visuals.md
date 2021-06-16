@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/03/2020
+ms.date: 05/14/2021
 LocalizationGroup: Create reports
 ---
 # Create Power BI visuals by using Python
@@ -165,6 +165,7 @@ This tutorial is designed to help you get started creating visuals with Python i
 Python visuals in Power BI Desktop have a few limitations:
 
 - Data size limitations. Data used by the Python visual for plotting is limited to 150,000 rows. If more than 150,000 rows are selected, only the top 150,000 rows are used and a message is displayed on the image. Additionally, the input data has a limit of 250 MB. 
+- If the input dataset of a Python Visual has a column that contains a string value longer than 32766 characters, that value is truncated.
 - Resolution. All Python visuals are displayed at 72 DPI.
 - Calculation time limitation. If a Python visual calculation exceeds five minutes the execution times out which results in an error.
 - Relationships. As with other Power BI Desktop visuals, if data fields from different tables with no defined relationship between them are selected, an error occurs.

@@ -22,8 +22,6 @@ Here's an overview of what’s changed in the new look. See the numbered section
 
 ![Screenshot of New look overview of changes.](media/service-new-look/power-bi-new-look-changes-callouts.png)
 
-Looking for a specific action? See [The 'new look': Where did the actions go?](service-new-look-where-actions.md)
-
 ## 1. Vertical list of pages 
 In Reading view, report page names are in a list in a vertical pane. They're prominent, hard to miss, and similar to navigation in Word and PowerPoint. You can increase or decrease the rest of the report area: Resize the vertical pane, or select the double arrows to close it altogether.
 
@@ -39,7 +37,7 @@ The updated action bar across the top features the most relevant commands, front
 
 ## 3. Where are the report commands?
 
-We didn't remove any of the functionality from the old look. Select **More options (...)** for other, more advanced commands. See [The 'new look': Where did the actions go?](service-new-look-where-actions.md) for details.
+We didn't remove any of the functionality from the old look. Select **More options (...)** for other, more advanced commands.
 
 ## 4. New filter experience
 

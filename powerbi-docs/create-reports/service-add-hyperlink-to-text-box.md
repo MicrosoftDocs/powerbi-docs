@@ -9,6 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 07/25/2019
+ms.custom: video-_3q6VEBhGew
 LocalizationGroup: Visualizations
 ---
 # Add a hyperlink to a text box in a report

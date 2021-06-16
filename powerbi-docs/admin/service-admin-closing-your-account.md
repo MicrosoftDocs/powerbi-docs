@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/25/2020
+ms.date: 04/15/2021
 LocalizationGroup: Administration
 ---
 
@@ -33,7 +33,7 @@ If you signed up for Power BI as an individual, you can close your account from 
 
 1. Confirm that you want to close your account.
 
-    ![Screenshot of the Close account confirmation dialog with the Yes option called out.](media/service-admin-closing-your-account/close-account-settings-4.png)
+    ![Screenshot of the Close account confirmation dialog with the Yes option called out.](media/service-admin-closing-your-account/power-bi-close.png)
 
     You should see a confirmation that Power BI closed your account. You can reopen your account from here if necessary.
 

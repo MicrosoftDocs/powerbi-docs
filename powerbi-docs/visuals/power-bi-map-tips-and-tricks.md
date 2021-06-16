@@ -4,7 +4,6 @@ description: 'Tips and Tricks for Power BI Map visualizations, visuals, location
 author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
-featuredvideoid: ajTPGNpthcg
 ms.custom: video-ajTPGNpthcg
 ms.service: powerbi
 ms.subservice: pbi-visuals
@@ -82,9 +81,9 @@ When your dataset already has different levels of location data, you and your co
 
 When drilling with geo-hierarchies, it is important to know how each drill button works and what gets sent to Bing Maps. 
 
-* The drill button on the far right, called Drill Mode ![Drill mode icon](media/power-bi-map-tips-and-tricks/power-bi-drill-down.png) , allows you to select a map Location and drill down into that specific location one level at a time. For example, if you turn Drill down on and click North America, you move down in the hierarchy to the next level -- states in North America. For geo-coding, Power BI sends Bing Maps country and state data for North America only.  
-* On the left there are 2 other drill options. The first option, ![first drill icon](media/power-bi-map-tips-and-tricks/power-bi-drill-down2.png) , drills to the next level of the hierarchy for all locations at once. For example, if you are currently looking at countries and then use this option to move to the next level, states, Power BI displays state data for all countries. For geo-coding, Power BI sends Bing Maps state data (no country data) for all locations. This option is useful if each level of your hierarchy is unrelated to the level above it. 
-* The second option, ![drill down with maps](./media/power-bi-map-tips-and-tricks/power-bi-drill-down3.png) , is similar to drill down, except that you don't need to click on the map.  It expands down to the next level of the hierarchy remembering the current level's context. For example, if you are currently looking at countries and select this icon, you move down in the hierarchy to the next level -- states. For geo-coding, Power BI sends data for each state and its corresponding country to help Bing Maps geocode more accurately. In most maps, you will use either this option or the drill down option on the far right, so you can send Bing as much information as possible to get accurate location information. 
+* The drill button on the far right, called Drill Mode ![Drill mode icon](media/power-bi-map-tips-and-tricks/power-bi-drill-down.png) , allows you to select a map Location and drill down into that specific location one level at a time. For example, if you turn the drill-down option on and click North America, you move down in the hierarchy to the next level -- states in North America. For geo-coding, Power BI sends Bing Maps country and state data for North America only.  
+* On the left there are 2 other drill options. The first option, ![first drill icon](media/power-bi-map-tips-and-tricks/power-bi-drill-down2.png), drills to the next level of the hierarchy for all locations at once. For example, if you are currently looking at countries and then use this option to move to the next level, states, Power BI displays state data for all countries. For geo-coding, Power BI sends Bing Maps state data (no country data) for all locations. This option is useful if each level of your hierarchy is unrelated to the level above it. 
+* The second option, ![drill down with maps](./media/power-bi-map-tips-and-tricks/power-bi-drill-down3.png) , is similar to the drill-down option, except that you don't need to click on the map.  It expands down to the next level of the hierarchy remembering the current level's context. For example, if you are currently looking at countries and select this icon, you move down in the hierarchy to the next level -- states. For geo-coding, Power BI sends data for each state and its corresponding country to help Bing Maps geocode more accurately. In most maps, you will use either this option or the drill down option on the far right, so you can send Bing as much information as possible to get accurate location information. 
 
 ## Next steps
 [Drill down in a Power BI visualization](../consumer/end-user-drill.md)

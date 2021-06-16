@@ -4,7 +4,6 @@ description: 'Funnel charts in Power BI'
 author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
-featuredvideoid: qKRZPBnaUXM
 ms.custom: video-qKRZPBnaUXM
 ms.service: powerbi
 ms.subservice: pbi-visuals

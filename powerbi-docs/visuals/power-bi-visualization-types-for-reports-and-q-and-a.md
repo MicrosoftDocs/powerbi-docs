@@ -7,16 +7,16 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 01/14/2020
+ms.date: 03/18/2021
 LocalizationGroup: Visualizations
 ---
 # Visualization types in Power BI
-## Power BI visualizations
-We'll be adding new visualizations, stay tuned!
 
-And check out the [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) , where you'll find a growing list of [Power BI visuals](../developer/visuals/power-bi-custom-visuals.md) you can download and use in your own dashboards and reports. Feeling creative? [Learn how to create and add your own visuals to this community site](../developer/visuals/office-store.md).  
+This article lists visualizations available in Power BI. We'll be adding new visualizations, stay tuned!
 
-## List of visualizations available in Power BI
+And check out the [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), where you'll find a growing list of [Power BI visuals](../developer/visuals/power-bi-custom-visuals.md) you can download and use in your own dashboards and reports. Feeling creative? [Learn how to create and add your own visuals to this community site](../developer/visuals/office-store.md).  
+
+## Visualizations in Power BI
 All of these visualizations can be added to Power BI reports, specified in Q&A, and pinned to dashboards.
 
 ### Area charts: Basic (Layered) and Stacked
@@ -109,6 +109,15 @@ For more information, see [Tips and tricks for map visuals](power-bi-map-tips-an
 
 For more information, see [ArcGIS maps in Power BI](power-bi-visualizations-arcgis.md).
 
+### Maps: Azure maps
+
+:::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/azure-maps-visual-hero.png" alt-text="Screenshot of Azure Maps visual for Power BI.":::
+
+>[!TIP]
+>Used to associate both categorical and quantitative information with spatial locations.
+
+For more information, see [Azure Maps visual for Power BI](/azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/create-reports/context/context).
+
 ### Maps: Filled maps (Choropleth)
 ![filled map](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)
 
@@ -130,7 +139,7 @@ For more information, see [Shape Maps in Power BI](desktop-shape-map.md).
 ![screenshot of matrix visual](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)
 
 >[!TIP]
->A table supports two dimensions, but a matrix makes it easier to display data meaningfully across multiple dimensions -- it supports a stepped layout. The matrix automatically aggregates the data and enables drill down. 
+>A table supports two dimensions, but a matrix makes it easier to display data meaningfully across multiple dimensions -- it supports a stepped layout. The matrix automatically aggregates the data and enables drilling down into the data. 
 
 For more information, see [Matrix visuals in Power BI](desktop-matrix-visual.md).
 
@@ -232,5 +241,5 @@ If your dashboard doesn't have a Q&A field, it may have been disabled by your Po
 
 ## Next steps
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)    
-[The right visual reference from sqlbi.com](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
+[Power BI Visuals Reference from sqlbi.com](https://www.sqlbi.com/ref/power-bi-visuals-reference/), guidance for picking the right visual for your data
 

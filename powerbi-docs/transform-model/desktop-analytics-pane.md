@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 01/10/2020
+ms.date: 03/17/2021
 LocalizationGroup: Create reports
 ---
 # Use the Analytics pane in Power BI Desktop
@@ -21,7 +21,7 @@ With the **Analytics** pane in Power BI Desktop, you can add dynamic *reference 
 
 ## Search within the Analytics pane
 
-Beginning with the February 2018 release of Power BI Desktop (version 2.55.5010.201 or later), you can search within the **Analytics** pane, which is a subsection of the **Visualizations** pane. The search box appears when you select the **Analytics** icon.
+You can search within the **Analytics** pane, which is a subsection of the **Visualizations** pane. The search box appears when you select the **Analytics** icon.
 
 ![Search box, Analytics pane, Visualizations, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_1b.png)
 
@@ -115,6 +115,7 @@ The following visuals can use a *trend line* if there's time data:
 * Clustered column chart
 * Line chart
 * Line and clustered column chart
+* Scatter chart
 
 Lastly, you can't currently apply any dynamic lines to many visuals, including (but not limited to):
 
@@ -130,7 +131,7 @@ The *percentile line* is only available when using imported data in Power BI Des
 
 You can do all sorts of things with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
-* [What's new in Power BI Desktop](../fundamentals/desktop-latest-update.md)
+* [What's new in Power BI?](../fundamentals/desktop-latest-update.md)
 * [Get Power BI Desktop](../fundamentals/desktop-get-the-desktop.md)
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Query overview with Power BI Desktop](desktop-query-overview.md)

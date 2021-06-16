@@ -6,7 +6,6 @@ ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.custom: contperf-fy21q2
 ms.topic: how-to
 ms.date: 04/18/2019
 LocalizationGroup: Dashboards

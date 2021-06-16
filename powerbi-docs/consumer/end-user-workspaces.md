@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/14/2020
+ms.date: 04/02/2021
 ms.custom: licensing support
 LocalizationGroup: Consumers
 ---
@@ -44,12 +44,12 @@ For a detailed list of what you can do as a *business user* with the Viewer role
 
 ### Workspace permissions and roles
 
-Here are the capabilities of the four roles: Admins, Members, Contributors, and Viewers. All of these capabilities, except *view and interact with an item*, require a Power BI Pro license.
+Here are the capabilities of the four roles: Admins, Members, Contributors, and Viewers. All of these capabilities, except *view and interact with an item*, require a Power BI Pro or Premium Per User (PPU) license.
 
 [!INCLUDE[power-bi-workspace-roles-table](../includes/power-bi-workspace-roles-table.md)]
 
 ## Licensing, workspaces, and capacity
-Licensing also plays a part in determining what you can and can't do in a workspace. Many features require the user to have a Power BI *Pro* license or for the workspace to be stored in Premium capacity. 
+Licensing also plays a part in determining what you can and can't do in a workspace. Many features require the user to have a Power BI *Pro* or *Premium Per User (PPU)* license or for the workspace to be stored in Premium capacity. 
 
 Often, *business users* work with a free license. [Learn more about licensing](end-user-license.md). If the content isn't stored in Premium capacity, the business user won't have access.
 

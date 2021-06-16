@@ -4,7 +4,7 @@ description: How to resolve issues for sharing Power BI dashboards and reports w
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: lukaszp
-featuredvideoid: 0tUwn8DHo3s
+ms.custom: video-0tUwn8DHo3s
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: troubleshooting

@@ -29,7 +29,7 @@ Our online documentation uses these same samples in tutorials and examples, so y
 
 *The Sales & Returns sample report*
 
-Power BI report designers Miguel Myers and Chris Hamill created the Sales & Returns .pbix file to demonstrate many new features in Power BI, including buttons, drill through, conditional formatting, what-if, and customized tooltips. 
+Power BI report designers Miguel Myers and Chris Hamill created the Sales & Returns .pbix file to demonstrate many new features in Power BI, including buttons, drillthrough, conditional formatting, what-if, and customized tooltips. 
 
 The scenario for this report is a company that sells Microsoft-themed skateboards. They want to see the state of their sales and returns, and analyze how they should modify their operations. 
 

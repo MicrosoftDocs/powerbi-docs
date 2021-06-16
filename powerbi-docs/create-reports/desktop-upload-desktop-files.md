@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/22/2020
+ms.date: 05/28/2021
 LocalizationGroup: Create reports
 ---
 # Publish datasets and reports from Power BI Desktop
@@ -25,7 +25,7 @@ Publishing from Power BI Desktop has the same effect as using **Get Data** in Po
 
 
 2. Sign in to Power BI, if you aren't already signed in.
-3. Select the destination. Beginning with the September 2020 release, you can search your list of available workspaces to find the workspace into which you want to publish. The search box lets you filter your workspaces. Select the workspace, and then click the **Select** button to publish.
+3. Select the destination. You can search your list of available workspaces to find the workspace into which you want to publish. The search box lets you filter your workspaces. Select the workspace, and then click the **Select** button to publish.
 
    ![Select publish destination](media/desktop-upload-desktop-files/pbid_publish_select_destination.png)
 

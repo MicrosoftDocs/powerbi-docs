@@ -58,9 +58,9 @@ You can select which action is taken when a user selects a button in Power BI. Y
 
 Here are the options for button actions:
 
-- **Back** returns the user to the previous page of the report. This is useful for drill-through pages.
+- **Back** returns the user to the previous page of the report. This is useful for drillthrough pages.
 - **Bookmark** presents the report page that's associated with a bookmark that is defined for the current report. Learn more about [bookmarks in Power BI](desktop-bookmarks.md). 
-- **Drill through** navigates the user to a drill-through page filtered to their selection, without using bookmarks. Learn more about [drill-through buttons in reports](desktop-drill-through-buttons.md).
+- **Drillthrough** navigates the user to a drillthrough page filtered to their selection, without using bookmarks. Learn more about [drillthrough buttons in reports](desktop-drill-through-buttons.md).
 - **Page navigation** navigates the user to a different page within the report, also without using bookmarks. See [Create page navigation](#create-page-navigation) in this article for details.
 - **Q&A** opens a **Q&A Explorer** window. 
 
@@ -92,7 +92,7 @@ To create the example shown above, start by creating a single-column table with 
 
 :::image type="content" source="media/desktop-buttons/button-create-table.png" alt-text="Create a table":::
 
-Power BI uses exact string match to set the drill-through destination, so double-check that the entered values exactly align with your drill-through page names.
+Power BI uses exact string match to set the drillthrough destination, so double-check that the entered values exactly align with your drillthrough page names.
 
 After you've created the table, add it to the page as a single-select slicer:
 
@@ -122,7 +122,7 @@ Here’s an example using an image:
  
 ## Buttons support fill images
 
-Buttons support fill images. You can customize the look and feel of your button with fill images combined with the built-in button states: default, on hover, on press, and disabled (for drill through).
+Buttons support fill images. You can customize the look and feel of your button with fill images combined with the built-in button states: default, on hover, on press, and disabled (for drillthrough).
 
 :::image type="content" source="media/desktop-drill-through-buttons/drill-through-fill-images.png" alt-text="Drill-through button fill images":::
 
@@ -134,7 +134,7 @@ Set **Fill** to **On**, then create images for the different states.
 ## Next steps
 For more information about features that are similar or interact with buttons, take a look at the following articles:
 
-* [Use drill through in Power BI reports](desktop-drillthrough.md)
+* [Use drillthrough in Power BI reports](desktop-drillthrough.md)
 * [Use bookmarks to share insights and build stories in Power BI](desktop-bookmarks.md)
-* [Create a drill-through button](desktop-drill-through-buttons.md)
+* [Create a drillthrough button](desktop-drill-through-buttons.md)
 

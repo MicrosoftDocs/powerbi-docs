@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/10/2019
+ms.date: 05/05/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to SAP HANA data sources by using DirectQuery in Power BI
@@ -49,7 +49,7 @@ The **Field** list will include all measures, attributes, and hierarchies from t
 
 * In SAP HANA, an attribute can be defined to use another attribute as its label. For example, **Product** (with values 1,2,3, and so on) could use **ProductName** (with values Bike, Shirt, Gloves, and so on) as its label. In this case, a single field **Product** will be shown in the field list, whose values will be the labels Bike, Shirt, Gloves, and so on, but which will be sorted by, and with uniqueness determined by, the key values 1,2,3. A hidden column **Product.Key** is also created, allowing access to the underlying key values if required. 
 
-Any variables defined in the underlying SAP HANA view will be displayed at the time of connecting, and the necessary values can be entered. Those values can subsequently be changed by selecting **Edit Queries** from the ribbon, and then **Manage Parameters** from the drop-down menu displayed. 
+Any variables defined in the underlying SAP HANA view will be displayed at the time of connecting, and the necessary values can be entered. Those values can subsequently be changed by selecting **Transform data** from the ribbon, and then **Edit parameters** from the drop-down menu displayed. 
 
 The modeling operations allowed are more restrictive than in the general case when using DirectQuery, given the need to ensure that correct aggregate data can always be obtained from SAP HANA. However, it's still possible to make many additions and changes, including defining measures, renaming and hiding fields, and defining display formats. All such changes will be preserved on refresh, and any non-conflicting changes made to the SAP HANA view will be applied. 
 
@@ -71,18 +71,15 @@ There are restrictions in visuals when connecting to SAP HANA using DirectQuery 
 
 ## Treat SAP HANA as a relational source 
 
-When choosing to connect to SAP HANA as a relational source, some additional flexibility becomes available. For example, you can create calculated columns, include data from multiple SAP HANA views, and create relationships between the resulting tables. However, when using SAP HANA in this manner, it's important to understand certain aspects of how connections are treated, to ensure the following: 
+When choosing to connect to SAP HANA as a relational source, some additional flexibility becomes available. For example, you can create calculated columns, include data from multiple SAP HANA views, and create relationships between the resulting tables. However, there are differences from the behavior when treating SAP HANA as a multidimensional source, particularly when the SAP HANA view contains non-additive measures (for example, distinct counts, or averages, rather than simple sums) and related to the efficiency of the queries that are run against SAP HANA.
 
-* The results are as expected, when the SAP HANA view contains non-additive measures (for example, distinct counts, or averages, rather than simple sums).
-* The resulting queries are efficient
+It's useful to start by clarifying the behavior of a relational source such as SQL Server, when the query defined in **Get Data** or **Power Query Editor** performs an aggregation. In the example that follows, a query defined in **Power Query Editor** returns the average price by *ProductID*.  
 
-It's useful to start by clarifying the behavior of a relational source such as SQL Server, when the query defined in **Get Data** or **Query Editor** performs an aggregation. In the example that follows, a query defined in **Query Editor** returns the average price by *ProductID*.  
-
-![Diagram showing a query defined in Query Editor that returns the average price by Product I D.](media/desktop-directquery-sap-hana/directquery-sap-hana_01.png)
+![Diagram showing a query defined in Power Query Editor that returns the average price by Product I D.](media/desktop-directquery-sap-hana/directquery-sap-hana_01.png)
 
 If the data is being imported into Power BI (versus using DirectQuery), the following would result:
 
-* The data is imported at the level of aggregation defined by the query created in **Query Editor**. For example, average price by product. This results in a table with the two columns *ProductID* and *AveragePrice* that can be used in visuals.
+* The data is imported at the level of aggregation defined by the query created in **Power Query Editor**. For example, average price by product. This results in a table with the two columns *ProductID* and *AveragePrice* that can be used in visuals.
 * In a visual, any subsequent aggregation (such as *Sum*, *Average*, *Min*, others) is performed over that imported data. For example, including *AveragePrice* on a visual will use the *Sum* aggregate by default, and would return the sum over the *AveragePrice* for each *ProductID* – which in this example case would be 13.67. The same applies to any alternative aggregate function (such as *Min*, *Average*, so on) used on the visual. For example, *Average* of *AveragePrice* returns the average of 6.66, 4 and 3, which equates to 4.56, and not the average of *Price* on the six records in the underlying table, which is 5.17.
   
 If **DirectQuery** (over that same relational source) is being used instead of Import, the same semantics apply and the results would be exactly the same:  
@@ -91,25 +88,25 @@ If **DirectQuery** (over that same relational source) is being used instead of I
 
 * In a visual, any subsequent aggregation (*Sum*, *Average*, *Min*, others) is again performed over that logical table from the query. And again, a visual containing *Average* of *AveragePrice* returns the same 4.56.
   
-Now let's consider SAP HANA, when the connection is treated as a relational source. Power BI can work with both *Analytic Views* and *Calculation Views* in SAP HANA, both of which can contain measures. Yet today the approach for SAP HANA follows the same principles as described previously in this section: the query defined in **Get Data** or **Query Editor** will determine the data available, and then any subsequent aggregation in a visual is over that data, and the same applies for both Import and DirectQuery.  
-However, given the nature of SAP HANA, the query defined in the initial **Get Data** dialog or **Query Editor** is always an aggregate query, and generally will include measures where the actual aggregation that will be used is defined by the SAP HANA view.
+Now let's consider SAP HANA, when the connection is treated as a relational source. Power BI can work with both *Analytic Views* and *Calculation Views* in SAP HANA, both of which can contain measures. Yet today the approach for SAP HANA follows the same principles as described previously in this section: the query defined in **Get Data** or **Power Query Editor** will determine the data available, and then any subsequent aggregation in a visual is over that data, and the same applies for both Import and DirectQuery.  
+However, given the nature of SAP HANA, the query defined in the initial **Get Data** dialog or **Power Query Editor** is always an aggregate query, and generally will include measures where the actual aggregation that will be used is defined by the SAP HANA view.
 
 The equivalent of the SQL Server example above is that there is a SAP HANA view containing *ID*, *ProductID*, *DepotID*, and measures including *AveragePrice*, defined in the view as *Average of Price*.  
     
-If in the **Get Data** experience, the selections made were for **ProductID** and the **AveragePrice** measure, then that is defining a query over the view, requesting that aggregate data (in the earlier example, for simplicity pseudo-SQL is used that doesn’t match the exact syntax of SAP HANA SQL). Then any further aggregations defined in a visual are further aggregating the results of such a query. Again, as described above for SQL Server, this applies both for the Import and DirectQuery case. In the DirectQuery case, the query from **Get Data** or **Query Editor** will be used in a subselect within a single query sent to SAP HANA, and thus it is not actually the case that all the data would be read in, prior to aggregating further.  
+If in the **Get Data** experience, the selections made were for **ProductID** and the **AveragePrice** measure, then that is defining a query over the view, requesting that aggregate data (in the earlier example, for simplicity pseudo-SQL is used that doesn’t match the exact syntax of SAP HANA SQL). Then any further aggregations defined in a visual are further aggregating the results of such a query. Again, as described above for SQL Server, this applies both for the Import and DirectQuery case. In the DirectQuery case, the query from **Get Data** or **Power Query Editor** will be used in a subselect within a single query sent to SAP HANA, and thus it is not actually the case that all the data would be read in, prior to aggregating further.  
 
 All of these considerations and behaviors necessitate the following important considerations when using DirectQuery over SAP HANA:  
 
 * Attention must be paid to any further aggregation performed in visuals, whenever the measure in SAP HANA is non-additive (for example, not a simple *Sum*, *Min*, or *Max*).
 
-* In **Get Data** or **Query Editor**, only the required columns should be included to retrieve the necessary data, reflecting the fact that the result will be a query, that must be a reasonable query that can be sent to SAP HANA. For example, if dozens of columns were selected, with the thought that they might be needed on subsequent visuals, then even for DirectQuery a simple visual will mean the aggregate query used in the subselect will contain those dozens of columns, which will generally perform poorly.
+* In **Get Data** or **Power Query Editor**, only the required columns should be included to retrieve the necessary data, reflecting the fact that the result will be a query, that must be a reasonable query that can be sent to SAP HANA. For example, if dozens of columns were selected, with the thought that they might be needed on subsequent visuals, then even for DirectQuery a simple visual will mean the aggregate query used in the subselect will contain those dozens of columns, which will generally perform poorly.
   
-Let's look at an example. In the following example, selecting five columns (**CalendarQuarter**, **Color**, **LastName**, **ProductLine**, **SalesOrderNumber**) in the **Get Data** dialog, along with the measure *OrderQuantity*, will mean that later creating a simple visual containing the Min OrderQuantity will result in the following SQL query to SAP HANA. The shaded is the subselect, containing the query from **Get Data** / **Query Editor**. If this subselect gives a high cardinality result, then the resulting SAP HANA performance will likely be poor.  
+Let's look at an example. In the following example, selecting five columns (**CalendarQuarter**, **Color**, **LastName**, **ProductLine**, **SalesOrderNumber**) in the **Get Data** dialog, along with the measure *OrderQuantity*, will mean that later creating a simple visual containing the Min OrderQuantity will result in the following SQL query to SAP HANA. The shaded is the subselect, containing the query from **Get Data** / **Power Query Editor**. If this subselect gives a high cardinality result, then the resulting SAP HANA performance will likely be poor.  
 
 ![Screenshot of a query example, showing the S Q L query to S A P HANA.](media/desktop-directquery-sap-hana/directquery-sap-hana_03.png)
 
    
-Because of this behavior, we recommend the items selected in **Get Data** or **Query Editor** be limited to those items that are needed, while still resulting in a reasonable query for SAP HANA.  
+Because of this behavior, we recommend the items selected in **Get Data** or **Power Query Editor** be limited to those items that are needed, while still resulting in a reasonable query for SAP HANA.  
 
 ## Best practices 
 

@@ -1,6 +1,6 @@
 ---
-title: Create a launch URL in Power BI embedded analytics for better embedded BI insights
-description: This article describes how can open URL on new tab by using Power BI Visuals. Enable better embedded BI insights using Power BI embedded analytics.
+title: Create a launch URL in Power BI
+description: This article describes how can open URL on new tab by using Power BI Visuals.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins

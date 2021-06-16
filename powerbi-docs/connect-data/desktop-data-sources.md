@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/23/2021
+ms.date: 05/12/2021
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
 
 With Power BI Desktop, you can connect to data from many different sources. For a full list of available data sources, see [Power BI data sources](power-bi-data-sources.md).
 
-You connect to data by using the **Home** ribbon. To show the **Most Common** data types menu, select the **Get Data** button label or the down arrow.
+You connect to data by using the **Home** ribbon. To show the **Most Common** data types menu, select the **Get data** button label or the down arrow.
 
 ![Most Common data types menu, Get Data in Power BI Desktop](media/desktop-data-sources/data-sources-01.png)
 
@@ -117,6 +117,7 @@ The **Power Platform** category provides the following data connections:
 * Dataverse
 * Power Platform dataflows (Beta)
 
+
 The following image shows the **Get Data** window for **Power Platform**.
 
 ![Power Platform data sources, Get Data dialog box, Power BI Desktop](media/desktop-data-sources/data-sources-05.png)
@@ -179,7 +180,7 @@ The **Online Services** category provides the following data connections:
 * Twilio (Beta)
 * Zendesk (Beta)
 * Asana (Beta)
-* Dynamics 365 Customer Insights (Beta)
+* Automation Anywhere
 * Emigo Data Source
 * Entersoft Business Suite (Beta)
 * eWay-CRM (Beta)
@@ -188,16 +189,17 @@ The **Online Services** category provides the following data connections:
 * Hexagon PPM Smart API
 * Industrial App Store
 * Intune Data Warehouse (Beta)
-* Microsoft Graph Security (Beta)
 * Projectplace for Power BI
 * Product Insights (beta)
 * Quick Base
+* SoftOne BI (beta)
 * Spigit (Beta)
 * TeamDesk (Beta)
 * Webtrends Analytics (Beta)
 * Witivio (Beta)
 * Workplace Analytics (Beta)
 * Zoho Creator (Beta)
+
 
 
 The following image shows the **Get Data** window for **Online Services**.
@@ -222,14 +224,15 @@ The **Other** category provides the following data connections:
 * OLE DB
 * Acterys : Model Automation & Planning (Beta)
 * Anaplan Connector v1.0 (Beta)
-* Automation Anywhere (Beta)
 * Solver
+* Bloomberg Data and Analytics (Beta)
 * Cherwell (Beta)
 * Cognite Data Fusion
+* EQuIS (Beta)
 * FHIR
 * Information Grid (Beta)
 * Jamf Pro (Beta)
-* MicroStrategy for Power BI
+* Kognitwin
 * Paxata
 * QubolePresto (Beta)
 * Roamler (Beta)

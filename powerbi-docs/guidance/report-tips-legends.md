@@ -4,7 +4,7 @@ description: Six tips to format and implement legends in Power BI report visuals
 author: peter-myers
 ms.author: kfollis
 ms.reviewer: asaxton
-featuredvideoid: r9XnHmuWkZQ
+ms.custom: video-r9XnHmuWkZQ
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual

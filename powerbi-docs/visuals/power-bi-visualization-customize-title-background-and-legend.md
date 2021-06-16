@@ -5,11 +5,11 @@ author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
 featuredvideoid: removed
-ms.custom: video-OgjX-pFGgfM, video-RE4IY3L
+ms.custom: video-RE4HrRQ, video-RE4IY3L, pbibetadocbug
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 1/13/2021
+ms.date: 05/24/2021
 LocalizationGroup: Visualizations
 ---
 
@@ -123,9 +123,11 @@ If you ever need to revert all of the changes, select **Revert to default**, at 
 
 Stacked visuals can display data labels and total labels. On a stacked column chart, data labels identify the value for each portion of a column. Total labels display the total value for the entire aggregated column. 
 
+Depending on the visual and its size, data labels may not display.  If your data labels don't display, try making the visual larger or viewing it in full screen mode. 
+
 Watch Rien add total labels to a stacked chart, and then follow the steps below to try it out yourself.
 
-> [!VIDEO https://www.youtube.com/embed/OgjX-pFGgfM]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HrRQ]
 
 1. Open the **Overview** report page and select the **Average selling area size by chain and store type** bar chart.
 
@@ -199,6 +201,7 @@ Here is a list of the visualizations and the customization options that are avai
 | KPI | yes | yes | n/a |n/a |
 | Line | yes | yes | yes |n/a |
 | Map | yes | yes | yes |n/a |
+| Map: [Azure Map](/azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/create-reports/context/context) | yes | yes | yes |n/a |
 | Matrix | yes | yes | n/a |yes |
 | Pie | yes | yes | yes |n/a |
 | Q&A | yes | yes | n/a |n/a |
