@@ -12,7 +12,9 @@ ms.date: 06/11/2021
 
 # Tutorial: Create an R-powered Power BI visual
 
-This tutorial describes how to create an R-powered visual for Power BI.
+[!INCLUDE[Power B I visuals tutorials overview](../../includes/visual-tutorial-overview.md)]
+
+This article is a step by step guide for creating an R-powered visual for Power BI.
 
 In this tutorial, you learn how to:
 
