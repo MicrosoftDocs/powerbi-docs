@@ -22,7 +22,7 @@ There are two elements to getting Azure Log Analytics working for Power BI: conf
 
 Before you can configure Log Analytics integration from Power BI, you need to [create a Log Analytics Workspace](https://docs.microsoft.com/azure/azure-monitor/logs/quick-create-workspace) in the Azure portal. You must also give permission in Azure for the Power BI service to write logs. The exact requirements are:
 
-* Register the 'microsoft.insinghts'resource provider in the Azure subscription where you will collect Power BI log data
+* Register the 'microsoft.insights' resource provider in the Azure subscription where you will collect Power BI log data
 * The user who will set up Log Analytics integration in Power BI must be in the Owner role for the Log Analytics Workspace. See FAQ for workarounds if Owner cannot be given.
 * The service principal 'Power BI Service' must be in the Owner role for the Log Analytics Workspace.
 
@@ -51,7 +51,7 @@ Once you've completed those steps, the Azure Log Analytics configuration portion
 
 ## Allow Workspace-level Logging from the Admin Portal
 
-A Power BI administrator must complete the following step to enable Azure Log Analytics for Power BI Premium workspaces. This will allow Power BI Premium workspace aministrators to send their workspace logs to Azure Log Analytics when the pre-requisites have been met. 
+A Power BI administrator must complete the following step to enable Azure Log Analytics for Power BI Premium workspaces. This will allow Power BI Premium workspace administrators to send their workspace logs to Azure Log Analytics when the pre-requisites have been met. 
 
 1. In the **Power BI Admin portal** navigate to **Tenant Settings > Azure connections** and expand the **Workspace-level Log Analytics permissions (preview)**. To allow workspace admins to enable Log Analytics, select the checkbox as shown in the following image.
 
@@ -127,33 +127,33 @@ Once enabled, Azure Log Analytics will log the following **event categories**. F
 
 >!Note The following events are currently not available in the Preview:
 >
->* ProgressReportBegin
->* ProgressReportCurrent
->* ProgressReportError
->* VertipaqSEQueryBegin
->* VertipaqSEQueryEnd
+> - ProgressReportBegin
+> - ProgressReportCurrent
+> - ProgressReportError
+> - VertipaqSEQueryBegin
+> - VertipaqSEQueryEnd
 
 
 The following table describes the **schema**.
 
 | Property | Existing Azure Analysis Services property | Description |
 | --- | --- | --- |
-| **ApplicationContext** | ApplicationContext_s | Property bag of unique identifiers providing details about the application executing the request. E.g. report ID. |
+| **ApplicationContext** | ApplicationContext_s | Property bag of unique identifiers providing details about the application executing the request. for example, report ID. |
 | **ApplicationName** | ApplicationName_s | Contains the name of the client application that created the connection to the server. This column is populated with the values passed by the application rather than the displayed name of the program. |
 | **ArtifactId** | | Unique identifier of the resource logging the data. |
-| **ArtifactKind** | | Type of artifact logging the operation e.g. Dataset |
+| **ArtifactKind** | | Type of artifact logging the operation, for example,  Dataset |
 | **ArtifactName** | DatabaseName_s | The name of the Power BI artifact logging this operation. |
-| **LogAnalyticsCategory** | | Unique | category of the events like like Audit/Security/Request. |
+| **LogAnalyticsCategory**  | Unique | Category of the events, like Audit/Security/Request. |
 | **CorrelationId** | | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
 | **CpuTimeMs** | CPUTime_s | Amount of CPU time (in milliseconds) used by the event. |
 | **CustomerTenantId** | | Customer's Power BI tenant identifier. |
-| **DatasetMode** | | The mode of the dataset. Import, DirectQuery or Composite. |
+| **DatasetMode** | | The mode of the dataset. Import, DirectQuery, or Composite. |
 | **DurationMs** | Duration_s | Amount of time (in milliseconds) taken by the operation. |
-| **EventText** | TextData_s | Contains verbose information associated with the operation e.g. DAX Query |
+| **EventText** | TextData_s | Contains verbose information associated with the operation, for example, DAX Query |
 | **ExecutingUser** | EffectiveUsername_s | The user executing the operation. |
 | **Identity** | | Information about user and claims. |
 | **Level** | Severity_s | Contains the severity level of the operation being logged. Success, Informational, Warning, or Error. |
-| **OperationDetailName** | EventSubclass_s | Additional details about the operation. |
+| **OperationDetailName** | EventSubclass_s | More details about the operation. |
 | **OperationName** | EventClass_s | The operation associated with the log record. |
 | **PremiumCapacityId** | | Unique identifier of the Premium capacity hosting the artifact being operated on. |
 | **ProgressCounter** | ProgressTotal_s | Progress counter. |
@@ -161,7 +161,7 @@ The following table describes the **schema**.
 | **StatusCode** | Error_s | Status code of the operation. It covers success and failure. |
 | **TenantId** | | Unique identifier of Microsoft's Power BI tenant. This does not refer to the customer tenant. |
 | **TimeGenerated** | | The timestamp (UTC) of when the log was generated. |
-| **User** | User_s | The user on whose behalf the operation is running. Used when an end user identity must be impersonated on the server. |
+| **User** | User_s | The user on whose behalf the operation is running. Used when an end-user identity must be impersonated on the server. |
 | **WorkspaceId** | | Unique identifier of the workspace containing the artifact being operated on. |
 | **WorkspaceName** | ServerName_s | Name of the workspace containing the artifact. |
 | **XmlaObjectPath** | ObjectPath_s | Object path. A comma-separated list of parents, starting with the object's parent. |
@@ -170,7 +170,7 @@ The following table describes the **schema**.
 | **XmlaSessionId** | SPID_s | Analysis Services session identifier. |
 
 ## Sample Log Analytics KQL queries
-The following collection of sample queries may be helpful when using Azure Log Analytics with Power BI. They can be executed directly in the Azure Portal or through APIs to query the latest data, typically about 5-10 minutes old.
+The following collection of sample queries may be helpful when using Azure Log Analytics with Power BI. They can be executed directly in the Azure portal or through APIs to query the latest data, typically about 5-10 minutes old.
 
 
 ```sql

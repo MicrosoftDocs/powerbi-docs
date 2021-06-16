@@ -27,7 +27,7 @@ The following sections describe the integration of Azure Log Analytics with Powe
 
 ## Available scopes for logging
 
-An Azure Log Analytics connection is currently supported for Premiumn workspaces in Power BI. Additional scopes are planned. The following table provides more information about the Workspace-level Log Analytics configuration.
+An Azure Log Analytics connection is currently supported for Premium workspaces in Power BI. The following table provides more information about the Workspace-level Log Analytics configuration.
 
 
 |**Configuration level**  |**Role / permission**  |**Destination Table in Log Analytics**  |**Details**  |
@@ -64,8 +64,8 @@ Keep the following considerations and limitations in mind when working with Azur
 * Only Workspace v2 support Log Analytics connections.
 * You cannot connect multiple Power BI workspaces to the same Log Analytics workspace yet. This restriction will be removed during the Preview. 
 * Datasets created on the web by uploading a CSV file do not generate logs.
-* If you have Multi-Factor Auth (MFA) in place for Azure buty not Power BI, the configuration screens will give general Azure errors. A workaround is to first login to the [Azure portal](https://portal.azure.com), complete the MFA challenge and then log into Power BI in the same browser session.
-* The following events are intentionally excluded temporarily. This will affect the Query Detail page in the template report (i.e. no storage engine subqueries will be visible for now)
+* If you have Multi-Factor Auth (MFA) in place for Azure but not Power BI, the configuration screens will give general Azure errors. A workaround is to first log in to the [Azure portal](https://portal.azure.com), complete the MFA challenge and then log into Power BI in the same browser session.
+* The following events are intentionally excluded temporarily. This will affect the Query Detail page in the template report (that is, no storage engine subqueries will be visible for now)
   * ProgressReportCurrent
   * ProgressReportBegin
   * ProgressReportError
