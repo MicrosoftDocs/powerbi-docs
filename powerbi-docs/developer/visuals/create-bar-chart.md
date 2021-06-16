@@ -20,15 +20,13 @@ In this tutorial, you learn how to:
 
 > [!div class="checklist"]
 >
-> * Define the bar chart view model.
-> * Add data binding
-> * Change the colors of the interface.
-> * Add a selection and interact with each data point.
+> * Define the [capabilities](capabilities.md) of your visual
+> * Bind data to the visual
 > * Add objects to the property pane.
 > * Package your visual.
 
 > [!NOTE]
-> For the full source code of this visual, see[PowerBI visuals sample bar chart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart).
+> For the full source code of this visual, see[PowerBI visuals sample bar chart](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/tree/barChartTutorial).
 
 ## Set up your environment
 
