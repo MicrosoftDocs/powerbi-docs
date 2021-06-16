@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/06/2020
+ms.date: 06/156/2021
 LocalizationGroup: Consumer
 ---
 # Add spotlights to Power BI reports

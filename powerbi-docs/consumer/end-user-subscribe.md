@@ -38,7 +38,7 @@ When you receive the email, it includes a link to "go to report or dashboard". O
 ## Subscribe to a dashboard or a report page
 Whether you're subscribing to a dashboard or to a report, the process is similar. The same button allows you to subscribe to the Power BI service dashboards and reports.
  
-![select the Subscribe icon](./media/end-user-subscribe/power-bi-subscribes.png).
+![select the Subscribe icon](./media/end-user-subscribe/power-bi-subscribes.png)
 
 1. Open the dashboard or report.
 2. From the top menu bar, select **Subscribe** or select the envelope icon ![Subscribe icon](./media/end-user-subscribe/power-bi-icon-envelope.png).    
