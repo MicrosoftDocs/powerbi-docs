@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/16/2021
+ms.date: 05/26/2021
 
 
 LocalizationGroup: Common tasks
@@ -19,7 +19,7 @@ The basic process for subscribing your colleagues and others to report pages, da
 
 ![Screenshot of email snapshot of dashboard.](media/service-report-subscribe/power-bi-subscriptions-email.png)
 
-Power BI e-mail subscriptions allow you to:
+Power BI email subscriptions allow you to:
 
 - Send email with an image of the report and link to the report in the service.
 - Send email to users outside your tenant, if your Power BI content is hosted in a Premium capacity.  Administrators control who can send email subscriptions to external users. See [Invite external users to your organization](../admin/service-admin-portal.md#invite-external-users-to-your-organization) in the "Administering Power BI in the admin portal" article.
@@ -71,11 +71,12 @@ See [Considerations and troubleshooting](../consumer/end-user-subscribe.md#consi
 - For paginated and Power BI report email subscriptions, if the dataset uses row-level security (RLS), you can create subscriptions for yourself and others. Those subscriptions will run using your security context.
 - You can set up to 24 subscriptions per report or dashboard, and can provide unique recipients, times, and frequencies for each subscription. Subscriptions set to  **After Data Refresh**  for your dashboard or report only send an email after the first scheduled refresh.
 - You can set up an unlimited number of subscriptions per paginated report.
-- To test a subscription, or run it on demand at any time, select  **Run Now** for the subscription. Everyone for that subscription receives the e-mail. This action doesn't count against your limit of 24 scheduled subscription runs per day per report or dashboard. It does NOT trigger a data refresh of the underlying dataset.
+- To test a subscription, or run it on demand at any time, select  **Run Now** for the subscription. Everyone for that subscription receives the email. This action doesn't count against your limit of 24 scheduled subscription runs per day per report or dashboard. It does NOT trigger a data refresh of the underlying dataset.
 - Currently, email subscriptions for reports and dashboards using live connection datasets aren't supported when subscribing users other than yourself, except for paginated reports. Read more about [subscribing to paginated reports](../consumer/paginated-reports-subscriptions.md).
-- On rare occasions, e-mail subscriptions may take longer than fifteen minutes to be delivered to their recipients. If this happens, we recommend running your data refresh and e-mail subscription at different times to ensure timely delivery. If the issue persists, contact Power BI support.
+- On rare occasions, email subscriptions may take longer than fifteen minutes to be delivered to their recipients. If this happens, we recommend running your data refresh and email subscription at different times to ensure timely delivery. If the issue persists, contact Power BI support.
 - Your organization may configure certain settings in Azure Active Directory that limit the ability to use email subscriptions in Power BI. These limitations include, but aren't limited to, having multi-factor authentication or IP range restrictions when accessing resources.
 - Say you have a report with a live connection to Analysis Services, and you have the subscription set to run after data refresh. It will run the first time the Power BI service detects a change in your on-premises model when it polls the Analysis Services instance.  Power BI checks every hour for a change in the Analysis Services data model, to determine when to send the subscription.
+- For Power BI apps, you can only create subscriptions for others if you are the owner of the app.
 
 ### External users
 
@@ -88,7 +89,7 @@ See [Considerations and troubleshooting](../consumer/end-user-subscribe.md#consi
 If you aren't receiving subscription emails, check these factors:
 
 - Make sure that your User Principal Name (UPN) can receive emails.
-- Though you have a Power BI Pro or Premium Per User (PPU) license, you may not have a Microsoft Exchange license. If not, your Azure Active Directory account may not have an email or alternate email address specified. In this case, though the subscription appears to go out, you never receive a copy.  If your Power BI admin assigns an email address, Power BI will synchronize the update the next time you sign in, and use that e-mail address for the subscription.
+- Though you have a Power BI Pro or Premium Per User (PPU) license, you may not have a Microsoft Exchange license. If not, your Azure Active Directory account may not have an email or alternate email address specified. In this case, though the subscription appears to go out, you never receive a copy.  If your Power BI admin assigns an email address, Power BI will synchronize the update the next time you sign in, and use that email address for the subscription.
 - If you have an alternate email address but no primary, Power BI uses that to deliver the subscription.
 - Email subscriptions are not supported when Block Public Internet Access is enabled in the Power BI admin portal. 
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/3/2021
+ms.date: 05/28/2021
 LocalizationGroup: Create reports
 ---
 # Sort by column in Power BI Desktop

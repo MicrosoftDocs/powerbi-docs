@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
-ms.date: 05/24/2021
+ms.date: 06/14/2021
 ---
 
 # Automate your deployment pipeline using APIs and Azure DevOps

@@ -1,14 +1,14 @@
 ### YamlMime:Landing
 
 title: Create reports and dashboards in Power BI - documentation
-summary: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+summary: Power BI documentation provides expert information for creating reports, dashboards, goals, and paginated reports.
 
 metadata:
   title: Create reports and dashboards in Power BI - documentation
-  description: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+  description: Power BI documentation provides expert information for creating reports, dashboards, goals, and paginated reports.
   services: powerbi
   ms.service: powerbi
-  ms.subservice: powerbi
+  ms.subservice: pbi-reports-dashboards
   ms.topic: landing-page # Required
   ms.collection: collection
   author: maggiesMSFT

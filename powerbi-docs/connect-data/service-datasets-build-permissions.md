@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/24/2021
+ms.date: 05/25/2021
 LocalizationGroup: Share your work
 ---
 # Build permission for shared datasets
@@ -48,7 +48,7 @@ You can remove a person's Build permission for a dataset. If you do, they can st
 
 At some point, you may need to remove Build permission for some users of a shared dataset. 
 
-1. In a workspace, go to the **Datasets** list page. 
+1. In a workspace, go to the **Datasets + dataflows** list page. 
 1. Select **More options** (...) next to the dataset > **Manage permission**.
 
     ![Manage permissions](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
@@ -78,7 +78,7 @@ Say you've distributed an app from a workspace to a group of people. Later, you 
 
 1. Select **Update**.
 
-1. In the workspace, go to the **Datasets** list page. 
+1. In the workspace, go to the **Datasets + dataflows** list page. 
 1. Select **More options** (...) next to the dataset > **Manage permission**.
 
     ![Manage permissions](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
@@ -110,7 +110,7 @@ In the image of the the Request access setting shown above, the Instructions tex
 ![Screenshot of specific instructions for requesting Build permission.](media/service-datasets-build-permissions/build-permission-specific-instructions-example.png)
 
 >[!NOTE]
-> When you to provide specific instructions, your email address is also visible to users requesting access as shown in the illustration above.
+> When you provide specific instructions, your email address is also visible to users requesting access as shown in the illustration above.
 
 ## More granular permissions
 

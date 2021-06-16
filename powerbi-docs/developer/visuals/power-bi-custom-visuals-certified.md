@@ -1,5 +1,5 @@
 ---
-title: Certified Power BI visuals
+title: Getting Power BI visuals certified
 description: Requirements and process to submit a custom visual for certification, and a list of certified Power BI visuals.
 author: KesemSharabi
 ms.author: kesharab
@@ -13,7 +13,7 @@ ms.date: 02/08/2021
 
 # Get a Power BI visual certified
 
-Certified Power BI visuals are Power BI visuals in [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?page=1&product=power-bi-visuals) that meet the Microsoft Power BI team [code requirements](#certification-requirements). These visuals are tested to verify that they don't access external services or resources, and that they follow secure coding patterns and guidelines.
+Certified Power BI visuals are Power BI visuals in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) that meet the Microsoft Power BI team [code requirements](#certification-requirements). These visuals are tested to verify that they don't access external services or resources, and that they follow secure coding patterns and guidelines.
 
 Once a Power BI visual is certified, it offers more features. For example, you can [export to PowerPoint](../../consumer/end-user-powerpoint.md), or display the visual in received emails, when a user [subscribes to report pages](../../consumer/end-user-subscribe.md).
 
@@ -121,7 +121,7 @@ If you're using a private repository such as GitHub to submit your Power BI visu
 1. Create a new account for the validation team.
 2. Configure [two-factor authentication](https://help.github.com/github/authenticating-to-github/securing-your-account-with-two-factor-authentication-2fa) for your account.
 3. [Generate a new set of recovery codes](https://help.github.com/github/authenticating-to-github/configuring-two-factor-authentication-recovery-methods#generating-a-new-set-of-recovery-codes).
-4. When submitting your Power BI visual, provide the following:
+4. When submitting your Power BI visual, make sure you provide the following:
     * A link to the repository
     * Login credentials (including a password)
     * Recovery codes
@@ -172,10 +172,13 @@ Your Power BI visual will be available to download from AppSource when this proc
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Frequently asked questions about certified visuals](power-bi-custom-visuals-faq.yml#certified-power-bi-visuals).
+>[Developing a Power BI circle card visual](develop-circle-card.md)
 
 >[!div class="nextstepaction"]
->[Microsoft's Power BI visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)
+>[Guidelines for publishing Power BI visuals](guidelines-powerbi-visuals.md)
+
+>[!div class="nextstepaction"]
+>[Frequently asked questions about certified visuals](power-bi-custom-visuals-faq.yml#certified-power-bi-visuals).
 
 >[!div class="nextstepaction"]
 >[Visuals in Power BI](power-bi-custom-visuals.md)

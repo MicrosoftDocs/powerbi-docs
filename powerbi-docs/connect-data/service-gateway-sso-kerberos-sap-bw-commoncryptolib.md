@@ -179,7 +179,7 @@ This section describes troubleshooting symptoms and resolution steps for imperso
 
 **Symptom**: When looking at the *GatewayInfo[date].log* you find an entry similar to the following: **About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Impersonation)**. If the value for **ImpersonationLevel** is different from **Impersonation**, impersonation is not happening properly.
 
-**Resolution**: Follow the steps found in [grant the gateway service account local policy rights on the gateway machine](/power-bi/connect-data/service-gateway-sso-kerberos) article. Restart the gateway service after changing the configuration.
+**Resolution**: Follow the steps found in [grant the gateway service account local policy rights on the gateway machine](./service-gateway-sso-kerberos.md) article. Restart the gateway service after changing the configuration.
 
 **Validation**: Refresh or create the report and collect the *GatewayInfo[date].log*. Open the latest GatewayInfo log file and check again the following string: **About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Impersonation)** to ensure that the value for **ImpersonationLevel** matches **Impersonation**.
 
@@ -248,7 +248,7 @@ You may run into a similar, but not identical error that manifests in WireShark 
 
 :::image type="content" source="media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/sso-kerberos-sap-bw-troubleshooting-03.png" alt-text="Screenshot of WireShark program showing a different error":::
 
-This error indicates the **spn SAP/BW5** could be found, but it's not in the *Services to which this account can present delegated credentials* at the Delegation tab from the Gateway service account. To fix this issue, follow the steps to [configure the gateway service account for standard kerberos constrained delegation](/power-bi/connect-data/service-gateway-sso-kerberos). 
+This error indicates the **spn SAP/BW5** could be found, but it's not in the *Services to which this account can present delegated credentials* at the Delegation tab from the Gateway service account. To fix this issue, follow the steps to [configure the gateway service account for standard kerberos constrained delegation](./service-gateway-sso-kerberos.md). 
 
 **Validation**: Proper configuration will prevent generic or unexpected errors to be presented by the gateway. If you still see errors, check the configuration of the gateway itself, or the configuration of the BW server.
 
@@ -265,7 +265,7 @@ There are different resolutions, based on the symptoms you see in the data sourc
 [2020.05.26 14:21:28.668325][4][disp+work ][SAPCRYPTOLIB][435584] { gss_display_name [2020.05.26 14:21:28.668338][4][disp+work ][GSS ][435584] gss_display_name output buffer (41 bytes) [2020.05.26 14:21:28.668338][4][disp+work ][GSS ][435584] CN=DAVID@XS.CONTOSO.COM@CONTOSO.COM
 ```
 
-**Resolution**: Complete the configuration steps to [set user mapping configuration parameters on the gateway machine if necessary](/power-bi/connect-data/service-gateway-sso-kerberos). You'll need to complete those steps even if you already have the Azure AD Connect configured.
+**Resolution**: Complete the configuration steps to [set user mapping configuration parameters on the gateway machine if necessary](./service-gateway-sso-kerberos.md). You'll need to complete those steps even if you already have the Azure AD Connect configured.
 
 **Validation**: You'll be able to successfully load the report in the Power BI service. If not successful, see the steps in symptom 2.
 
