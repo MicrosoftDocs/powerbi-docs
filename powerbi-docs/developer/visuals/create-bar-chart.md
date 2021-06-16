@@ -78,8 +78,13 @@ Creating a bar chart visual involves the following steps:
 
 ### Add bar chart visual element
 
-First, define the bar chart view model, and iterate on what's exposed to your visual as you build it. 
+First, define the bar chart view model, and iterate on what's exposed to your visual as you build it.
 Define the chart by creating a file in the src directory with the following.
+
+>[!NOTE]
+>
+> This tutorial uses version 5 of the [d3 JavaScript library](https://d3js.org/) to produce dynamic, interactive data visualizations.
+>If you didn't install this library as part of your setup, [install the D3 JavaScript library](environment-setup.md#d3-javascript-library) now.
 
 ```typescript
 /**
