@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 02/24/2020
+ms.date: 05/24/2021
 ---
 
 # Adding external libraries
