@@ -1,6 +1,6 @@
 ---
-title: Register an app to embed Power BI content in a Power BI embedded analytics application for better embedded BI insights
-description: Learn how to register an application within Azure Active Directory for use with embedding Power BI content. Enable better embedded BI insights using Power BI embedded analytics.
+title: Register an app to embed Power BI content in a Power BI embedded analytics application
+description: Learn how to register an application within Azure Active Directory for use with embedding Power BI content.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: nishalit
@@ -146,7 +146,9 @@ For more information about how to register applications in Azure Active Director
 After you register your application, you can make changes to its permissions. Permission changes can be made programmatically, or in the Azure portal.
 
 >[!NOTE]
->Azure AD app permissions are only applicable for the *embed for your customers* solution with the *master user* authentication method.
+>Azure AD app permissions are only applicable for these scenarios:
+>* *Embed for your organization*
+>* *Embed for your customers* with the *master user* authentication method
 
 # [Azure](#tab/Azure)
 

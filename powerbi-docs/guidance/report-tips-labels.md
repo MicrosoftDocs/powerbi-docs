@@ -4,7 +4,7 @@ description: Four tips to optimize the use of labels in Power BI report visuals,
 author: peter-myers
 ms.author: kfollis
 ms.reviewer: asaxton
-featuredvideoid: ywx5xUN5VQM
+ms.custom: video-ywx5xUN5VQM
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual

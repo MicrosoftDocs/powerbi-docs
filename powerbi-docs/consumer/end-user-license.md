@@ -5,10 +5,10 @@ author: mihart
 ms.author: mihart
 ms.reviewer: lukasz 
 ms.service: powerbi
-ms.subservice: pbi-explore
+ms.subservice: pbi-fundamentals
 Ms.custom: css_fy20Q4
 ms.topic: how-to
-ms.date: 02/01/2021
+ms.date: 05/15/2021
 ms.custom: licensing support
 LocalizationGroup: consumers
 ---
@@ -31,7 +31,7 @@ In this article, we describe the capabilities of each license type and how *wher
 
 ## Licenses
 
-Each user of the Power BI service has either a *free* license, a *Pro* license, or a *Premium per-user** license. If you're a Power BI *business user*, you're probably using a free license that is managed by your Power BI admin.
+Each user of the Power BI service has either a *free* license, a *Pro* license, or a *Premium per-user* license. If you're a Power BI *business user*, you're probably using a free license that is managed by your Power BI admin.
 
 It's possible to have more than one license at the same time.  The service always delivers you the experience equal to the most-permissive license you currently have.
 
@@ -123,13 +123,13 @@ The Power BI Pro *designer* can share and collaborate with other Pro users in ei
 
 - It's possible to have more than one Power BI license. The Power BI service will always deliver the experience equal to the best license that you currently have. For example, if you have both a Pro and a free license, the Power BI service will use the Pro license.
 
-- If you want to create and share content (dashboards, reports, apps), or open content that someone else shared with you, then you need to have a Pro user license or a Premium per user license. You can sign up for a free 60-day individual trial of Power BI Pro. Select the upgrade dialog that appears in the Power BI service whenever you try to use a Pro feature.
+- If you want to create and share content (dashboards, reports, apps), or open content that someone else shared with you, then you need to have a Pro user license or a Premium per user license. You may be able to sign up for a free 60-day individual trial of the paid version of Power BI Premium Per User. If your organization has enabled self-service trials, select the upgrade dialog that appears in the Power BI service whenever you try to use a Pro feature.
 
-    ![dialog with Pro trial link](media/end-user-license/power-bi-trial.png)
+    ![dialog with Pro trial link](media/end-user-license/power-bi-ppu-trial.png)
 
-  When the 60-day trial expires, your license changes back to a Power BI free license. After your license reverts, you no longer have access to features that require a Power BI Pro license. If you want to continue with a Pro license, contact your administrator or IT Help Desk about purchasing a Power BI Pro license. If you don't have an admin or IT Help Desk, visit [the Power BI pricing page](https://powerbi.microsoft.com/pricing/).
+  When the 60-day trial expires, your license reverts back to the previous version, either free or Pro. After your trial license reverts, you no longer have access to features that require a Power BI Premium Per User license. If you want to continue with a Premium Per User or a Pro license, contact your administrator or IT Help Desk about purchasing an upgrade. If you don't have an admin or IT Help Desk, visit [the Power BI pricing page](https://powerbi.microsoft.com/pricing/).
 
-- If you signed up for a free license on your own by selecting a *Try it free* type of button, it never expires. So if you upgrade to a Pro trial or your organization provides you with a Pro license, and then your trial ends or your organization removes your Pro license, you still have the free license to fall back on - unless you cancel the license.
+- If you signed up for a free license on your own by selecting a *Try it free* type of button, it never expires. So if you upgrade to a trial or your organization provides you with a Pro or Premium Per User license, and then your trial ends or your organization removes your Pro license, you still have the free license to fall back on - unless you cancel the license.
 
 - <sup>1</sup> A free user license for the Power BI service is perfect for someone exploring or using it for personal data analysis and visualizations using **My workspace**. A free standalone user isn't using Power BI to collaborate with colleagues. Standalone users with free  licenses can't view content shared by others or share their own content with other Power BI users.
 

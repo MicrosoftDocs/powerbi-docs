@@ -4,7 +4,7 @@ description: Four tips to improve analysis with shapes, images, and icons in Pow
 author: peter-myers
 ms.author: kfollis
 ms.reviewer: asaxton
-featuredvideoid: -gLwXonWNsI
+ms.custom: video--gLwXonWNsI
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual

@@ -6,7 +6,7 @@ ms.author: mohaali
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 07/01/2020
+ms.date: 04/14/2021
 ---
 # Intro to Power BI Q&A
 
@@ -79,9 +79,6 @@ To add the Q&A visual to a report, select the new **Q&A** icon the select the ne
 ![Q&A visual icon](media/qna-visual-icon.png)
 
 To add a button, on the **Home** ribbon, select **Buttons** > **Q&A** You can completely customize the Q&A button image.
-
-> [!NOTE]
-> When you start Q&A from the button, it still uses the old Q&A. Subsequent releases of Power BI will change that.
 
 ## Use Q&A for dashboards
 

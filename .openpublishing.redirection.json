@@ -971,8 +971,13 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/fundamentals/service-whats-new.md",
+            "redirect_url": "/power-bi/fundamentals/desktop-latest-update",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-premium-release-notes.md",
-            "redirect_url": "/power-bi/fundamentals/service-whats-new",
+            "redirect_url": "/power-bi/fundamentals/desktop-latest-update",
             "redirect_document_id": false
         },
         {
@@ -2048,11 +2053,6 @@
         {
             "source_path": "powerbi-docs/service-premium-faq.md",
             "redirect_url": "/power-bi/admin/service-premium-faq",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "powerbi-docs/service-premium-incremental-refresh.md",
-            "redirect_url": "/power-bi/admin/service-premium-incremental-refresh",
             "redirect_document_id": true
         },
         {
@@ -3243,6 +3243,11 @@
         {
             "source_path": "powerbi-docs/desktop-high-density-scatter-charts.md",
             "redirect_url": "/power-bi/create-reports/desktop-high-density-scatter-charts",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/visuals/desktop-high-density-scatter-charts.md",
+            "redirect_url": "/power-bi/create-reports/desktop-high-density-scatter-charts",
             "redirect_document_id": true
         },
         {
@@ -3677,8 +3682,13 @@
         },
         {
             "source_path": "powerbi-docs/service-new-look-where-actions.md",
-            "redirect_url": "/power-bi/consumer/service-new-look-where-actions",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/consumer/end-user-reading-view",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/service-new-look-where-actions.md",
+            "redirect_url": "/power-bi/consumer/end-user-reading-view",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-self-service-signup-for-power-bi.md",
@@ -3692,8 +3702,8 @@
         },
         {
             "source_path": "powerbi-docs/service-whats-new.md",
-            "redirect_url": "/power-bi/fundamentals/service-whats-new",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/fundamentals/desktop-latest-update",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/supported-languages-countries-regions.md",
@@ -3844,5 +3854,46 @@
             "source_path": "powerbi-docs/admin/power-bi-whitelist-urls.md",
             "redirect_url": "/power-bi/admin/power-bi-allow-list-urls",
             "redirect_document_id": false
-        }      ]
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-tutorial-facebook-analytics.md",
+            "redirect_url": "/power-bi/connect-data/desktop-data-sources",
+            "redirect_document_id": false
+        },        
+        {
+            "source_path": "powerbi-docs/connect-data/service-facebook-connector.md",
+            "redirect_url": "/power-bi/connect-data/service-get-data",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/sql-server-analysis-services-tabular-data.md",
+            "redirect_url": "/power-bi/connect-data/service-get-data",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/desktop-send-smile-privacy-statement.md",
+            "redirect_url": "/power-bi/fundamentals/desktop-send-smile-privacy-statement",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-premium-incremental-refresh.md",
+            "redirect_url": "/power-bi/connect-data/incremental-refresh-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-premium-incremental-refresh.md",
+            "redirect_url": "/power-bi/connect-data/incremental-refresh-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/desktop-external-tools.md",
+            "redirect_url": "/power-bi/transform-model/desktop-external-tools",
+            "redirect_document_id": false
+        },
+		{
+		    "source_path": "powerbi-docs/fundamentals/security-baselines.md",
+		    "redirect_url": "/security/benchmark/azure/baselines/power-bi-security-baseline",
+		    "redirect_document_id": false
+		}
+    ]           
 }

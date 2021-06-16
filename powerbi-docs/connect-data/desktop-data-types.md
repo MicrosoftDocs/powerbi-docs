@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: reference
-ms.date: 05/06/2020
+ms.date: 05/05/2021
 LocalizationGroup: Connect to data
 ---
 # Data types in Power BI Desktop
@@ -18,9 +18,9 @@ When you load data into Power BI Desktop, it will attempt to convert the data ty
 This concept is important because some DAX functions have special data type requirements. While in many cases DAX will implicitly convert a data type for you, there are some cases where it will not.  For instance, if a DAX function requires a Date data type and the data type for your column is Text, the DAX function will not work correctly.  So, it’s both important and useful to get the correct data type for a column. Implicit conversions are described later in this article.
 
 ## Determine and specify a column’s data type
-In Power BI Desktop, you can determine and specify a column’s data type in the Query Editor, or in Data View or Report View:
+In Power BI Desktop, you can determine and specify a column’s data type in the Power Query Editor, or in Data View or Report View:
 
-**Data types in Query Editor**
+**Data types in Power Query Editor**
 
 ![Screenshot of the Data type ribbon, showing it in the Query Editor.](media/desktop-data-types/pbiddatatypesinqueryeditort.png)
 
@@ -28,9 +28,9 @@ In Power BI Desktop, you can determine and specify a column’s data type in the
 
 ![Screenshot of the Data type ribbon, showing it in the Data View.](media/desktop-data-types/pbiddatatypesindatareportview.png)
 
-The Data Type drop down in Query Editor has two data types not currently present in Data or Report View: **Date/Time/Timezone** and **Duration**. When a column with these data types is loaded into the model and viewed in Data or Report view, a column with a Date/Time/Timezone data type will be converted into a Date/Time, and a column with a Duration data type is converted into a Decimal Number.
+The Data Type drop down in Power Query Editor has two data types not currently present in Data or Report View: **Date/Time/Timezone** and **Duration**. When a column with these data types is loaded into the model and viewed in Data or Report view, a column with a Date/Time/Timezone data type will be converted into a Date/Time, and a column with a Duration data type is converted into a Decimal Number.
 
-The **Binary** data type is not currently supported outside of the Query Editor. Inside the Query Editor you can use it when loading binary files if you convert it to other data types before loading it to the Power BI model. It exists in the Data View and Report View menus for legacy reasons but if you try to load binary columns to the Power BI model you may run into errors.  
+The **Binary** data type is not currently supported outside of the Power Query Editor. Inside the Power Query Editor you can use it when loading binary files if you convert it to other data types before loading it to the Power BI model. It exists in the Data View and Report View menus for legacy reasons but if you try to load binary columns to the Power BI model you may run into errors.  
 
 ### Number types
 Power BI Desktop supports three number types:
@@ -70,7 +70,7 @@ Power BI Desktop supports five Date/Time data types in Query View.  Both Date/Ti
 
 ### Binary data type
 
-The Binary data type can be used to represent any other data with a binary format. Inside the Query Editor, you can use it when loading binary files if you convert it to other data types before loading it to the Power BI model. Binary columns aren't supported in the Power BI data model. It exists in the Data View and Report View menus for legacy reasons but if you try to load binary columns to the Power BI model you may run into errors.
+The Binary data type can be used to represent any other data with a binary format. Inside the Power Query Editor, you can use it when loading binary files if you convert it to other data types before loading it to the Power BI model. Binary columns aren't supported in the Power BI data model. It exists in the Data View and Report View menus for legacy reasons but if you try to load binary columns to the Power BI model you may run into errors.
 
 
 

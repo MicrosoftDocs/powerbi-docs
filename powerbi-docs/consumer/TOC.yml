@@ -26,8 +26,6 @@
       href: end-user-license.md
     - name: "Learn how to ask questions using natural language"
       href: end-user-q-and-a.md
-    - name: "The 'new look': Where'd the actions go?"
-      href: service-new-look-where-actions.md
   - name: How to
     items: 
     - name: Dashboards
@@ -147,7 +145,7 @@
     - name: "Glossary and terminology"
       href: end-user-glossary.md
     - name: "Frequently asked questions"
-      href: end-user-faq.md
+      href: end-user-faq.yml
     - name: "Supported browsers"
       href: ../fundamentals/power-bi-browsers.md
     - name: "Types of Quick Insights"

@@ -143,7 +143,7 @@ You can pick visuals from the organizational visuals page to automatically show 
 
 1. In the row of the visual you want to add , click **settings**.
 
-    ![Screenshot shows the Admin portal with Organization visuals selected and a settings icon called out.](media/organizational-visuals/organizational-pane.png)organizational-pane
+    ![Screenshot shows the Admin portal with Organization visuals selected and a settings icon called out.](media/organizational-visuals/organizational-pane.png)
 
 2. Enable the visualization pane setting and click **Update**.
 

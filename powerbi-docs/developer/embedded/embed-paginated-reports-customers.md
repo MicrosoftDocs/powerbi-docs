@@ -7,7 +7,7 @@ ms.reviewer: rkarlin
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.custom: seodec18
+ms.custom: ''
 ms.date: 01/14/2021
 #Customer intent: As an ISV developer, I want to embed a Power BI paginated report into an application so that my customers can share data.
 ---
@@ -36,7 +36,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 > [!IMPORTANT]
 > * You must use a **service principal**. Master user is not supported.
->* [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md) is not supported. You can use PPU to experiment with the solution, but you'll not be able to [move to production](move-to-production.md).
+>* [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) is not supported. You can use PPU to experiment with the solution, but you'll not be able to [move to production](move-to-production.md).
 > * Datasources that require single sign-on (SSO), are not supported. For a list of supported datasets and their authentication methods, see [Supported data sources for Power BI paginated reports](../../paginated-reports/paginated-reports-data-sources.md). 
 > * Power BI dataset is not supported as a [datasource](../../connect-data/service-get-data.md).
 
@@ -57,7 +57,7 @@ Before you import or upload a paginated report to embed, the workspace containin
     >[!NOTE]
     >Power BI Embedded recently released a new version, called **Embedded Gen2**. Embedded Gen2 will simplify the management of embedded capacities, and improve the Power BI Embedded experience. For more information, see [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md).
 
-The table below describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](./embedded-faq.md#which-solution-should-i-choose) table.
+The table below describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](./embedded-faq.yml#which-solution-should-i-choose-) table.
 
 | Capacity Nodes | Total v-cores | Backend v-cores | RAM (GB) | Frontend v-cores | 
 | --- | --- | --- | --- | --- |

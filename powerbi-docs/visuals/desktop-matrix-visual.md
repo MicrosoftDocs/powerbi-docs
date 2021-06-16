@@ -7,7 +7,8 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 06/18/2020
+ms.date: 05/27/2021
+ms.custom: pbibetadocbug
 LocalizationGroup: Visualizations
 ---
 
@@ -17,7 +18,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-The matrix visual is similar to a table.  A table supports two dimensions and the data is flat, meaning duplicate values are displayed and not aggregated. A matrix makes it easier to display data meaningfully across multiple dimensions -- it supports a stepped layout. The matrix automatically aggregates the data and enables drill down. 
+The matrix visual is similar to a table.  A table supports two dimensions and the data is flat, meaning duplicate values are displayed and not aggregated. A matrix makes it easier to display data meaningfully across multiple dimensions -- it supports a stepped layout. The matrix automatically aggregates the data and enables you to drill down. 
 
 You can create matrix visuals in **Power BI Desktop** reports and cross-highlight elements within the matrix with other visuals on that report page. For example, you can select rows, columns, and even individual cells and cross-highlight. Also, individual cells and multiple cell selections can be copied and pasted into other applications. 
 
@@ -59,12 +60,12 @@ The expansion state of the matrix will save with your report. A matrix can be pi
 > [!NOTE]
 > If you're building a report on top of an Analysis Services multidimensional model, there are some special considerations for expand/collapse if the model uses the Default Member feature. For more information see [Work with multidimensional models in Power BI](../connect-data/desktop-default-member-multidimensional-models.md)
 
-## Using drill down with the matrix visual
+## Using drill-down actions with the matrix visual
 With the matrix visual, you can do all sorts of interesting drill-down activities that weren't available before. This includes the ability to drill down using rows, columns, and even into individual sections and cells. Let's take a look at how each of these works.
 
 ### Drill down on row headers
 
-In the Visualizations pane, when you add multiple fields to the **Rows** section of the **Fields** well, you enable drill down on the rows of the matrix visual. This is similar to creating a hierarchy, which then allows you to drill down (and then back up) through that hierarchy, and analyze the data at each level.
+In the Visualizations pane, when you add multiple fields to the **Rows** section of the **Fields** well, you enable drill-down actions on the rows of the matrix visual. This is similar to creating a hierarchy, which then allows you to drill down (and then back up) through that hierarchy, and analyze the data at each level.
 
 In the following image, the **Rows** section contains *Sales stage* and *Opportunity size*, creating a grouping (or hierarchy) in the rows that we can drill to see details.
 
@@ -88,7 +89,7 @@ Selecting **Drill Down** expands the matrix for *that* row level, *excluding* al
 
 ![matrix drilled down one level](media/desktop-matrix-visual/power-bi-drill-down-matrix.png)
 
-Select the **Drill-up** icon to get back to the previous top-level view. If you then select **Proposal** > **Show Next Level**, you get an ascending listing of all the next-level items (in this case, the *Opportunity size* field), without the higher-level hierarchy categorization.
+Select the **Drill up** icon to get back to the previous top-level view. If you then select **Proposal** > **Show Next Level**, you get an ascending listing of all the next-level items (in this case, the *Opportunity size* field), without the higher-level hierarchy categorization.
 
 ![matrix using Show next level](media/desktop-matrix-visual/power-bi-next-level-matrix.png)
 
@@ -107,11 +108,11 @@ Similar to the ability to drill down on rows, you can also drill down on columns
 
 To drill down on columns, select **Columns** from the *Drill on* menu that can be found in the upper left corner of the matrix. Select the *East* region and choose **Drill Down**.
 
-![menu for drill down for columns](media/desktop-matrix-visual/power-bi-matrix-column.png)
+![menu for drilling down into columns](media/desktop-matrix-visual/power-bi-matrix-column.png)
 
 When you select **Drill Down**, the next level of the column hierarchy for *Region > East* displays, which in this case is *Opportunity count*. The other region is hidden.
 
-![matrix with column drill down one level](media/desktop-matrix-visual/power-bi-matrix-column-drill.png)
+![matrix with column to drill down one level](media/desktop-matrix-visual/power-bi-matrix-column-drill.png)
 
 The rest of the menu items work on columns in the same way they do for rows (see the previous section, **Drill down on row headers**). You can **Show Next Level** and **Expand to next level** with columns just as you can with rows.
 
@@ -219,14 +220,29 @@ Select *Advanced controls* to display a dialog, which lets you make adjustments.
 
 ![Data bars pane](media/desktop-matrix-visual/power-bi-data-bars.png)
 
+## Ragged hierarchy
+A ragged hierarchy has levels with no data.  A good example is a company employee matrix. A company has many levels, from CEO on down.  The CEO is the highest level in the hierarchy and reports to no other employees.  Any other company employee, on the other hand, may report to a chain of managers who report to a vice-president who reports to the CEO. Depending on their level in the hierarchy and the way their department is organized, employees may have data for one, two, five, or ten levels in the hierarchy. And, for any given employee, there may be no data for particular hierarchy levels.  
+
+![Matrix visual with ragged hierarchy](media/desktop-matrix-visual/power-bi-ragged-hr.png)
+
+There is currently no way to hide blank rows or identical parent and child values. And you can’t control which levels of the hierarchy can and can’t be expanded. However, there are a few steps you can take to make the visual look more appealing.    
+
+* Turn off stepped layout.  In the Format pane, select **Row headers** > **Turn off stepped layout**.  All the blank values for a hierarchy level will now display in the same row. 
+
+
+    ![Format pane with Row headers expanded.](media/desktop-matrix-visual/power-bi-stepped-layout.png)
+
+* Turn off subtotals for the matrix rows and columns.  In the Format pane, select **Format** > **Subtotals**.
+
+    ![Format pane with Subtotals expanded.](media/desktop-matrix-visual/power-bi-subtotal.png)
+
 ## Considerations and troubleshooting
 
 * If the text data in your matrix's cells or headers contain new line characters, those characters will be ignored unless you toggle on the 'Word Wrap' option in the element's associated formatting pane card. 
+
 
 ## Next steps
 
 [Power Apps visual for Power BI](power-bi-visualization-powerapp.md)
 
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
-

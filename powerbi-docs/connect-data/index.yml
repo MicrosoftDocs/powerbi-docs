@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Connect to data in Power BI - documentation
-summary: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+summary: Power BI documentation provides expert information for connecting to data with tools such as gateways, template apps, and data refresh.
 
 metadata:
   title: Connect to data in Power BI - documentation
-  description: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+  description: Power BI documentation provides expert information for connecting to data with tools such as gateways, template apps, and data refresh.
   services: powerbi
   ms.service: powerbi
   ms.subservice: powerbi
@@ -71,8 +71,8 @@ landingContent:
         links:
           - text: "Data refresh"
             url: refresh-data.md
-          - text: "Incremental refresh in Power BI Premium"
-            url: ../admin/service-premium-incremental-refresh.md
+          - text: "Incremental refresh for datasets"
+            url: ../connect-data/incremental-refresh-overview.md
       - linkListType: how-to-guide
         links:
           - text: "Configure scheduled refresh"

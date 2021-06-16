@@ -1,14 +1,14 @@
 ### YamlMime:Landing
 
 title: Power BI get started documentation
-summary: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+summary: Power BI documentation provides expert information and answers to get you started using Power BI.
 
 metadata:
   title: Power BI get started documentation
-  description: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+  description: Power BI documentation provides expert information and answers to get you started using Power BI.
   services: powerbi
   ms.service: powerbi
-  ms.subservice: powerbi
+  ms.subservice: pbi-fundamentals
   ms.topic: landing-page # Required
   ms.collection: collection
   author: maggiesMSFT
@@ -39,10 +39,8 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: What's new in Power BI Desktop?
+          - text: What's new in Power BI?
             url: desktop-latest-update.md
-          - text: What's new in the service?
-            url: service-whats-new.md
 
   # Card (optional)
   - title: Get started with Learn

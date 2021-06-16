@@ -1,13 +1,13 @@
 ---
-title: Capacity and SKUs in Power BI embedded analytics enabling better embedded BI insights
-description: Understand capacity and SKUs in Power BI embedded analytics. Enable better embedded BI insights using Power BI embedded analytics.
+title: Capacity and SKUs in Power BI embedded analytics
+description: Understand capacity and SKUs in Power BI embedded analytics.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/15/2021
+ms.date: 06/09/2021
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
@@ -17,7 +17,7 @@ When moving to production, Power BI embedded analytics requires a capacity (*A*,
 Capacity is a dedicated set of resources reserved for exclusive use. It enables you to publish dashboards, reports, and datasets to users, without having to purchase per-user licenses. It also offers dependable, consistent performance for your content.
 
 >[!NOTE]
->For publishing, you'll need one Power BI Pro account.
+>For publishing, you'll need one Power BI Pro or Premium Per User (PPU) account.
 
 ## What is embedded analytics?
 
@@ -46,7 +46,7 @@ Power BI Premium is a SaaS product that allows users to consume content through 
 
 Each capacity offers a selection of SKUs, and each SKU provides different resource tiers for memory and computing power. The type of SKU you require, depends on the type of solution you wish to deploy.
 
-To understand which workloads are supported for each tier, refer to the [Configure workloads in a Premium capacity](../../admin/service-admin-premium-workloads.md) article
+To understand which workloads are supported for each tier, refer to the [Configure workloads in a Premium capacity](../../admin/service-admin-premium-workloads.md) article.
 
 To plan and test your capacity, use these links:
 * [Capacity planning](embedded-capacity-planning.md)
@@ -77,7 +77,7 @@ In this table, a custom app refers to a web app created using embedded analytics
 |[Secure URL embedding](../../collaborate-share/service-embed-secure.md)</br>(embed from Power BI service)     |✖        |✔        |
 
 >[!NOTE]
->* A [Power BI Pro license](../../admin/service-admin-purchasing-power-bi-pro.md) is needed for publishing content to a Power BI app workspace.
+>* A [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) or Premium Per User (PPU) license is needed for publishing content to a Power BI app workspace.
 >* Only the **P SKU** allows free Power BI users to consume Power BI apps and shared content, in Power BI service.
 
 ### Capacity considerations

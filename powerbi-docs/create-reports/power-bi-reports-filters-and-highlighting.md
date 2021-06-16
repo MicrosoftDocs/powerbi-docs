@@ -37,11 +37,11 @@ There are four standard types of filters that you create in the Filters pane.
 - **Visual filter** applies to a single visual on a report page. You see visual level filters when you select a visual on the report canvas. Even if you can't edit a report, you can select a visual and filter it.
 - **Page filter** applies to all the visuals on the report page.
 - **Report filter** applies to all pages in the report.
-- **Drill-through filter** With drill through in the Power BI service and Power BI Desktop, you create a *destination* report page that focuses on a specific entity, such as a supplier. From the other report pages, users can right-click a data point for that entity and drill through to the focused page.
+- **Drillthrough filter** With drillthrough in the Power BI service and Power BI Desktop, you create a *destination* report page that focuses on a specific entity, such as a supplier. From the other report pages, users can right-click a data point for that entity and drill through to the focused page.
 
 To create the first three, the visual, page, and report filters, see [Add a filter to a report in Power BI](power-bi-report-add-filter.md). 
 
-To create drill-through filters, see [Set up drill through in Power BI reports](desktop-drillthrough.md).
+To create drillthrough filters, see [Set up drillthrough in Power BI reports](desktop-drillthrough.md).
 
 ### Basic and advanced filtering
 

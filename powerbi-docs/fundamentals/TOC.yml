@@ -23,18 +23,18 @@
   - name: Concepts
     expanded: true
     items: 
-    - name: "What's new in the latest Power BI Desktop update?"
+    - name: "What's new in the latest Power BI update?"
       href: desktop-latest-update.md
-    - name: "What's new in the Power BI service"
-      href: service-whats-new.md
     - name: "Understand the Power BI service"
       href: service-basic-concepts.md
     - name: "Ten tips for getting help"
       href: service-tips-for-finding-help.md
     - name: Licensing
       items: 
-      - name: "Sign up for Power BI"
+      - name: "What is self-service sign-up and self-service purchase?"
         href: service-self-service-signup-for-power-bi.md 
+      - name: "Sign up or purchase Power BI"
+        href: service-self-service-signup-purchase-for-power-bi.md         
       - name: "Features by license type"
         href: service-features-license-type.md
       - name: "Get help purchasing Power BI Pro"
@@ -44,7 +44,7 @@
     - name: Security
       items: 
       - name: Security baseline
-        href: security-baseline.md 
+        href: /security/benchmark/azure/baselines/power-bi-security-baseline?toc=/power-bi/fundamentals/toc.json
   - name: How-to guides
     expanded: true
     items: 
@@ -64,7 +64,11 @@
       href: webinars.md                     
     - name: "Power BI Desktop videos"
       href: desktop-videos.md
-    - name: "Power BI Desktop updates archive"
+    - name: "Power BI updates archive"
       href: desktop-latest-update-archive.md
+    - name: "Power BI Desktop change log"
+      href: desktop-change-log.md
     - name: "Power BI Desktop Send a Smile Privacy Statement"
       href: desktop-send-smile-privacy-statement.md
+    - name: "Power BI Desktop diagnostics"
+      href: desktop-diagnostics.md

@@ -27,7 +27,7 @@ The following table provides a collection of links to articles that describe bes
 |**Topic**  |**Guidance area**  |**Link to article or content**  |
 |---------|---------|---------|
 |Power Query     | Tips and tricks to get the most of your data wrangling experience        |[Power Query best practices](/power-query/best-practices)        |
-|Leveraging Computed Entities     |There are performance benefits for using computed entities in a dataflow         |[Computed Entities Scenarios](/power-query/dataflows/computed-entities-scenarios)         |
+|Leveraging Computed Tables     |There are performance benefits for using computed tables in a dataflow         |[Computed Tables Scenarios](/power-query/dataflows/computed-entities-scenarios)         |
 |Developing complex dataflows     |Patterns for developing large-scale, performant dataflows         |[Complex dataflows](/power-query/dataflows/best-practices-developing-complex-dataflows)         |
 |Reusing dataflows     |Patterns, guidance, and use cases         |[Reusing dataflows](/power-query/dataflows/best-practices-reusing-dataflows)         |
 |Large-scale implementations     |Large-scale use and guidance to complement enterprise architecture         |[Data warehousing using dataflows](/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows)         |
@@ -38,7 +38,7 @@ The following table provides a collection of links to articles that describe bes
 |Using data profiling     |Understand column quality, distribution, and profile         |[Data profiling tools](/power-query/data-profiling-tools)         |
 |Implementing error handling     |Developing robust dataflows resilient to refresh errors, with suggestions         |[Patterns for common errors](/power-query/dealing-with-errors)  </br> [Complex error handling](/power-query/error-handling)      |
 |Use Schema view      |Improve the authoring experience when working with a wide table and performing schema level operations         |[Schema view](/power-query/schema-view)         |
-|Linked entities      |Reusing and referencing transformations         |[Linked Entities](/power-query/dataflows/linked-entities)         |
+|Linked tables      |Reusing and referencing transformations         |[Linked Tables](./dataflows-create.md#create-a-dataflow-using-linked-tables)         |
 |Incremental refresh      |Load the latest or changed data versus a full reload         |[Incremental refresh](/power-query/dataflows/incremental-refresh)         |
 |||
 

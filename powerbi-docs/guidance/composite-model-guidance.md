@@ -32,7 +32,7 @@ Further, you can consider developing a Composite model in the following situatio
 - You want to combine two or more DirectQuery data sources into a single model.
 
 > [!NOTE]
-> Composite models cannot combine Live Connection sources or DirectQuery analytic database sources. Live Connection sources include [external-hosted models](../connect-data/service-datasets-understand.md#external-hosted-models), and Power BI datasets. DirectQuery analytic database sources include SAP Business Warehouse, and SAP HANA.
+> Composite models cannot combine connections to external analytic databases. These include live connections to [external-hosted models](../connect-data/service-datasets-understand.md#external-hosted-models), Power BI datasets, SAP Business Warehouse, and SAP HANA when [treating SAP HANA as a multidimensional source](../connect-data/desktop-directquery-sap-hana.md).
 
 ## Optimize model design
 

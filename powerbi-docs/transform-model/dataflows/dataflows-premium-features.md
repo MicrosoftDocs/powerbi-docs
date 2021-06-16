@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 11/13/2020
+ms.date: 04/02/2021
 LocalizationGroup: Data from files
 ---
 # Premium features of dataflows
 
-Dataflows are supported for Power BI Pro and Power BI Premium users. Some features are only available with a Power BI Premium subscription. This article describes and details the Premium-only features and their uses. 
+Dataflows are supported for Power BI Pro, Premium Per User (PPU), and Power BI Premium users. Some features are only available with a Power BI Premium subscription or Premium Per User (PPU) license. This article describes and details the Premium Per User (PPU) and Premium-only features and their uses. 
 
 The following features are available only with Power BI Premium:
 
@@ -29,20 +29,23 @@ The following sections described each of these features in detail.
 The enhanced compute engine in Power BI enables Power BI Premium subscribers to use their capacity to optimize the use of dataflows. Using the enhanced compute engine provides the following advantages:
 
 * Drastically reduces the refresh time required for long-running ETL steps over computed entities, such as performing *joins*, *distinct*, *filters,* and *group by*
-* Perform DirectQuery queries over entities
+* Performs DirectQuery queries over entities
+
+> [!NOTE]
+> The validation and refresh processes inform dataflows of the model schema. To set the schema of the tables yourself, use the PowerQuery Editor and set data types. 
 
 By default, the enhanced compute engine is **On**. If the enhanced compute engine is not on, enabling the enhanced compute engine is described in the next section, along with answers to common questions.
 
 ### Using the enhanced compute engine
 
-The enhanced compute engine is enabled from the **Capacity Settings** page in the Power BI service, in the **dataflows** section. By default, the enhanced compute engine is **Off**. To enable the enhanced compute engine, switch the toggle to **On** as shown in the following image, and save your settings. 
+The enhanced compute engine is enabled from the **Capacity Settings** page in the Power BI service, in the **dataflows** section. By default, the enhanced compute engine is **On**. If it is set to **Off**, enable the enhanced compute engine by switching the toggle to **On** as shown in the following image, and save your settings. 
 
 ![Turn on the enhanced compute engine](media/dataflows-premium-features/compute-engine-settings.png)
 
 > [!IMPORTANT]
 > The enhanced compute engine works only for Power BI capacities of A3 and larger.
 
-Once the enhanced compute engine is on, return to **dataflows** and you should see a performance improvement in any computed entity that performs complex operations, such as *joins* or *group by* operations for dataflows created from existing linked entities on the same capacity. 
+Once the enhanced compute engine is on, return to **dataflows** and you should see a performance improvement in any computed table that performs complex operations, such as *joins* or *group by* operations for dataflows created from existing linked entities on the same capacity. 
 
 To make best use of the compute engine, split the ETL stage into two separate dataflows, in the following way:
 
@@ -89,7 +92,7 @@ Using DirectQuery with dataflows enables the following enhancements to your Powe
 
 ### Using DirectQuery for dataflows
 
-Using DirectQuery with dataflows is a preview feature available beginning with the May 2020 version of Power BI Desktop. 
+Using DirectQuery with dataflows is a preview feature available in Power BI Desktop. 
 
 There are also prerequisites for using DirectQuery with dataflows:
 
@@ -120,7 +123,7 @@ There are a few known limitations with DirectQuery and dataflows:
 
 You can perform **in-storage computations** when using **dataflows** with a Power BI Premium subscription. This lets you perform calculations on your existing dataflows, and return results that enable you to focus on report creation and analytics.
 
-![Computed entity](media/dataflows-premium-features/computed-entity.png)
+![Computed table](media/dataflows-premium-features/computed-entity.png)
 
 To perform in-storage computations, you first must create the dataflow and bring data into that Power BI dataflow storage. Once you have a dataflow that contains data, you can create computed entities, which are entities that perform in-storage computations.
 
@@ -146,7 +149,7 @@ Setting incremental refresh adds parameters to the dataflow to specify the date 
 
 Do not set a dataflow to incremental refresh in the following situations:
 
-* Linked entities should not use incremental refresh if they reference a dataflow. Dataflows does not support query folding (even if the entity is DirectQuery enabled). 
+* Linked entities should not use incremental refresh if they reference a dataflow. Dataflows does not support query folding (even if the table is DirectQuery enabled). 
 * Datasets referencing dataflows should not use incremental refresh. Refreshes to dataflows should generally perform well. If the refreshes take longer than expected, consider using the compute engine and or DirectQuery mode.
 
 ## Next steps

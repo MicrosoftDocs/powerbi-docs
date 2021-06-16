@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/13/2021
+ms.date: 04/02/2021
 LocalizationGroup: Common tasks
 ---
 
@@ -31,7 +31,7 @@ When you receive the email, it includes a link to "go to report or dashboard". O
 ## Requirements
 **Creating** a subscription for yourself requires a *Power BI Pro* or *Premium per user* [license](end-user-license.md). You can also create a subscription for yourself if the report or dashboard resides in a Premium workspace and you have been given access to that workspace. If you are unable to create a subscription, contact your Power BI administrator or IT help desk. 
 
-**Subscribing others** is only available to the dashboard or report owners who have a *Power BI Pro* license.
+**Subscribing others** is only available to the dashboard or report owners who have a *Power BI Pro* or *Premium Per User (PPU)* license.
 
 **Subscribing to paginated reports** is a little different. See [Subscribe to a paginated report in the Power BI service](paginated-reports-subscriptions.md) for details. 
 
@@ -85,7 +85,7 @@ Only you can manage the subscriptions you create. Select **Subscribe** again and
 
 ![see all subscriptions in My Workspace](./media/end-user-subscribe/power-bi-manage-subscription.png)
 
-A subscription will end if the Pro license expires, the dashboard or report is deleted by the owner, or the user account used to create the subscription is deleted.
+A subscription will end if the Pro or Premium Per User (PPU) license expires, the dashboard or report is deleted by the owner, or the user account used to create the subscription is deleted.
 
 ## Considerations and troubleshooting
 * To avoid subscription emails going to your spam folder, add the Power BI email alias (no-reply-powerbi@microsoft.com) to your contacts. If you're using Microsoft Outlook, right-click the alias and select **Add to Outlook contacts**. 
@@ -96,15 +96,18 @@ A subscription will end if the Pro license expires, the dashboard or report is d
 * Report page subscriptions are tied to the name of the report page. If you subscribe to a report page, and it gets renamed, you will have to re-create your subscription.
 * If you aren't able to use the subscription feature, contact your system administrator or IT help desk. Your organization may have disabled this feature or a maximum subscriber limit may have been reached.  
 * Email subscriptions do not support most [custom visuals](../developer/visuals/power-bi-custom-visuals.md).  The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).    
-* Email subscriptions are sent with the report's default filter and slicer states. Any changes to the defaults that you make after subscribing don't show up in the email. Paginated Reports do support this capability and allow you to set the specific parameter values per subscription.  
+* Email subscriptions are sent with the report's default filter and slicer states. Any changes to the defaults that you make after subscribing don't show up in the email. 
+* Paginated reports do allow you to set parameter values per subscription. See [Subscribe to a paginated report in the Power BI service](paginated-reports-subscriptions.md) for details.
 * Email subscriptions do not support R-powered Power BI visuals at this time.  
+* Subscriptions don't currently support bookmarks.
 * Subscriptions may fail on dashboards or reports with extremely large images due to email size limits.    
 * Power BI automatically pauses refresh on datasets associated with dashboards and reports that haven't been visited in more than two months.  However, if you add a subscription to a dashboard or report, it won't pause even if it goes unvisited.
 * Keep in mind that like other BI products, the time you set your subscription for is when the subscription begins processing.  Once the report processing is complete, then the subscription is queued and sent to the e-mail recipients.  While we strive to process and deliver all subscriptions as quickly as possible, there are times at peak demand when you may see a longer delay due to the number of subscriptions that can be sent at once.  For the majority of customers, they shouldn’t see a delay of more than 15 minutes to process and send their reports, though it may take up to 30 minutes for certain times and tenants that have significant usage.  We never expect any delay in delivery to be more than 60 minutes from the time the subscription is scheduled.  If any customer experiences a delay of that length, they should first ensure that the address no-reply-powerbi@microsoft.com is on your safe sender list and isn't blocked by your e-mail provider.  If the email isn't being blocked, they should contact their Power BI administrator or IT help desk for assistance.
 * The full report attachment feature is available for reports that meet the following three conditions. Any existing subscriptions with full reports as attachments that do not meet these conditions are disabled and you will receive an email explaining the error.
     - They're in an upgraded workspace with [Power BI Premium or Premium Per User](../admin/service-premium-what-is.md). 
-    - The attachment file is under 25 MB in size.
     - The report has fewer than 20 pages.
+    - The attachment file is under 25 MB in size.
+
 
 ## Next steps
 

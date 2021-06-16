@@ -1,6 +1,6 @@
 ---
-title: Power BI embedded analytics APIs using automatic retention policy for real-time data enabling better embedded BI insights
-description: Learn about the automatic retention policy in the Power BI service. Enable better embedded BI insights using Power BI embedded analytics.
+title: Power BI embedded analytics APIs using automatic retention policy for real-time data
+description: Learn about the automatic retention policy in the Power BI service. 
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''

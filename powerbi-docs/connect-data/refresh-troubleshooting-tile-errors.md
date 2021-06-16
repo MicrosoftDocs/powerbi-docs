@@ -4,7 +4,7 @@ description: Common errors that may be encountered when a tile tries to refresh 
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: kayu
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting

@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
+ms.custom: video-0fOxaHJPvdM
 LocalizationGroup: Administration
 ---
 
@@ -29,7 +30,7 @@ To find the region your tenant is in, follow these steps.
 
 ## How the data region is selected
 
-The data region is based on the country/region you select when you create the tenant. The selection applies to sign up for both Microsoft 365 and to Power BI, because this information is shared. If this is a new tenant, select the appropriate country/region from the list when you sign up.
+The data region is based on the country/region you selected when you created the tenant during AAD tenant sign-up. The tenant location does not need to match the user location. The selection applies to sign up for both Microsoft 365 and Power BI, because this information is shared. If this is a new tenant, select the appropriate country/region from the list when you sign up.
 
 ![Country selection](media/service-admin-where-is-my-tenant-located/sign-up-country-selection.png)
 

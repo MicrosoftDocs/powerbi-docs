@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/14/2020
+ms.date: 05/10/2021
 LocalizationGroup: Create reports
 ---
 # Use report themes in Power BI Desktop
@@ -73,7 +73,7 @@ To select from the available built-in report themes:
     | Classic | ![Classic](media/desktop-report-themes/report-themes-color-scheme-classic.png)|
     | City park | ![City park](media/desktop-report-themes/report-themes-color-scheme-city-park.png)|
     | Classroom | ![Classroom](media/desktop-report-themes/report-themes-color-scheme-classroom.png)|
-    | Colorblind safe | ![Colorblind safe](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
+    | Color blind safe | ![Color blind safe](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
     | Electric | ![Electric](media/desktop-report-themes/report-themes-color-scheme-electric.png)|
     | High contrast | ![High contrast](media/desktop-report-themes/report-themes-color-scheme-high-contrast.png)|
     | Sunset | ![Sunset](media/desktop-report-themes/report-themes-color-scheme-sunset.png)|
@@ -263,13 +263,11 @@ You can export the currently applied report theme directly from Power BI Desktop
 
 To export the currently applied theme from Power BI Desktop:
 
-1. Select **File** > **Options and settings** > **Options**.
+1. Select **View** and choose the **Themes** dropdown.
 
-2. In the **Preview features** section, select **Customize current theme**, and then select **OK**.
+   ![Select the Themes dropdown menu.](media/desktop-report-themes/report-themes-14.png)
 
-   You might be prompted to restart Power BI Desktop for the preview feature to be enabled. After you restart, you can begin exporting the currently applied theme.
-
-3. From the **Home** ribbon, select **Switch theme** > **Export current theme**.
+2. Near the bottom of the dropdown menu, select **Save current theme**.
 
 4. From the **Save As** dialog box, browse to a directory in which to save the JSON file, and then select **Save**.
 
@@ -328,12 +326,12 @@ The following table shows the six color classes you can format.  The **Color cla
 
 |Color class  |What it formats  |
 |---------|---------|
-| **firstLevelElements** <br> **foreground**    (deprecated) | Labels background color (when outside data points) <br> Trend line color <br>  Textbox default color <br> Table and matrix values and totals font colors Data bars axis color <br> Card data labels <br> Gauge callout value color <br> KPI goal color <br>  KPI text color <br> Slicer item color (when in focus mode)  <br> Slicer dropdown item font color <br> Slicer numeric input font color <br> Slicer header font color <br> Scatter chart ratio line color <br> Line chart forecast line color <br> Map leader line color <br> Filter pane and card text color|
+| **firstLevelElements** <br> **foreground**    (deprecated) | Labels background color (when outside data points) <br> Trend line color <br>  Textbox default color <br> Table and matrix values and totals font colors Data bars axis color <br> Card data labels <br> Gauge callout value color <br> KPI goal color <br>  KPI text color <br> Slicer item color (when in focus mode)  <br> Slicer dropdown item font color <br> Slicer numeric input font color <br> Slicer header font color <br> Scatter chart ratio line color <br> Line chart forecast line color <br> Map leader line color <br> Filter pane and card text color <br> Modern visual tooltips text and icon color (Preview)|
 | **secondLevelElements** <br> **foregroundNeutralSecondary** (deprecated) | "light" [secondary text classes](#setting-formatted-text-defaults) <br> Label colors  <br> Legend label color <br> Axis label color <br> Table and matrix header font color <br> Gauge target and target leader line color <br>  KPI trend axis color <br> Slicer slider color <br> Slicer item font color <br> Slicer outline color <br> Line chart hover color <br> Multi-row card title color <br> Ribbon chart stroke color <br> Shape map border color <br> Button text font color <br> Button icon line color <br> Button outline color |
 | **thirdLevelElements** <br >**backgroundLight** (deprecated) | Axis gridline color <br> Table and matrix grid color <br> Slicer header background color (when in focus mode)  <br> Multi-row card outline color  <br> Shape fill color <br> Gauge arc background color <br> Applied filter card background color <br> When background = FFFFFF: <br> Disabled button fill color <br> Disabled button outline color <br> |
 | **fourthLevelElements** <br> **foregroundNeutralTertiary** (deprecated) | legend dimmed color <br> Card category label color <br> Multi-row card category labels color <br> Mulit-row card bar color <br> Funnel chart conversion rate stroke color <br> Disabled button text font color <br> Disabled button icon line color <br> |
-| **background** | Labels background color (when inside data points) <br> Slicer dropdown items background color  <br> Donut chart stroke color <br> Treemap stroke color <br> Combo chart background color <br> Button fill color <br> Filter pane and available  filter card background color |
-| **secondaryBackground** <br> **backgroundNeutral** (deprecated) | Table and matrix grid outline color <br> Shape map default color <br> Ribbon chart ribbon fill color (when match series option is turned off) <br> When background != FFFFFF: <br> Disabled button fill color <br> Disabled button outline color <br> |
+| **background** | Labels background color (when inside data points) <br> Slicer dropdown items background color  <br> Donut chart stroke color <br> Treemap stroke color <br> Combo chart background color <br> Button fill color <br> Filter pane and available  filter card background color <br> Modern visual tooltips background color (Preview)|
+| **secondaryBackground** <br> **backgroundNeutral** (deprecated) | Table and matrix grid outline color <br> Shape map default color <br> Ribbon chart ribbon fill color (when match series option is turned off) <br> When background != FFFFFF: <br> Disabled button fill color <br> Disabled button outline color <br> Modern visual tooltips separator line and hover color (Preview)|
 | **tableAccent** | Overrides table and matrix grid outline color when present |
 
 Here's a sample theme that sets the color classes:
@@ -4517,7 +4515,7 @@ Built-in themes that are affected by this limitation include the following theme
 * Classic
 * City park
 * Classroom
-* Colorblind safe
+* Color blind safe
 * Electric
 * High contrast
 * Sunset

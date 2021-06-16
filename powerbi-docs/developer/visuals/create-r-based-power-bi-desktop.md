@@ -1,6 +1,6 @@
 ---
-title: Create an R-powered Power BI visual in Power BI embedded analytics for better embedded BI insights
-description: This tutorial describes how to create an R-based visual for Power BI by using the R script editor in Power BI Desktop. Enable better embedded BI insights using Power BI embedded analytics.
+title: Create an R-powered Power BI visual 
+description: This tutorial describes how to create an R-based visual for Power BI by using the R script editor in Power BI Desktop.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -26,13 +26,13 @@ In this tutorial, you learn how to:
 ## Prerequisites
 
 * A **Power BI Pro** account. [Sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
-* The R engine. You can download it free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). For more information, see [Create Power BI visuals using R](../../create-reports/desktop-r-visuals.md).
+* An R engine. You can download one free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). For more information, see [Create Power BI visuals using R](../../create-reports/desktop-r-visuals.md).
 * [Power BI Desktop](../../fundamentals/desktop-get-the-desktop.md).
 * [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell) version 4 or later for Windows users OR the [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) for OSX users.
 
 ## Getting started
 
-1. Prepare sample data for the visual. You can save these values to an Excel database or *.csv* file and import it into Power BI Desktop.
+1. Prepare some sample data for the visual. You can save these values to an Excel database or *.csv* file and import it into Power BI Desktop.
 
     | MonthNo | Total Units |
     |-----|-----|
@@ -49,51 +49,63 @@ In this tutorial, you learn how to:
     | 11 | 3170 |
     | 12 | 2762 |
 
-1. To create a visual, open PowerShell or Terminal, and run the following command:
+2. To create a visual, open **PowerShell** or **Terminal**, and run the following command:
+
+      ```cmd
+      pbiviz new rVisualSample -t rvisual
+      ```
+
+      This command creates a new folder structure based on the `rvisual` template. It creates a file called *script.r* in the root folder of the visual. This file holds the R script that is run to generate the image for a user. You can create your R script in Power BI Desktop.
+
+3. From the newly created rVisualSample directory run
 
    ```cmd
-   pbiviz new rVisualSample -t rvisual
+   pbiviz start
    ```
 
-   This command creates a new folder structure based on the `rvisual` template. This template includes a basic, ready-to-run R-powered visual that runs the following R script:
-
-   ```r
-   plot(Values)
-   ```
-
-   The `Values` data frame will contain columns in `Values` data role.
-
-1. Assign data to the developer visual by adding **MonthNo** and **Total units** to **Values** for the visual.
-
-   ![R visual with data](./media/create-r-based-power-bi-desktop/r-data-values.png)
-
-## Editing the R Script
-
-When you use `pbiviz` to create the R-powered visual based on the `rvisual` template, it creates a file called *script.r* in the root folder of the visual. This file holds the R script that runs to generate the image for a user. You can create your R script in Power BI Desktop.
-
-1. In Power BI Desktop, select **R script visual**:
+4. In Power BI Desktop, select **R script visual**:
 
    ![Screenshot shows the R script visual control in the Power B I Desktop.](./media/create-r-based-power-bi-desktop/r-script-icon.png)
 
-1. Paste this R code into the **R script editor**:
+5. Assign data to the developer visual by dragging **MonthNo** and **Total units** to **Values** for the visual.
 
-    ```r
-    x <- dataset[,1] # get the first column from dataset
-    y <- dataset[,2] # get the second column from dataset
+    ![Add data to values](./media/create-r-based-power-bi-desktop/add-values.png)
 
-    columnNames = colnames(dataset) # get column names
+6. Set the aggregation type of **Total units** to *Don't summarize*.
 
-    plot(x, y, type="n", xlab=columnNames[1], ylab=columnNames[2]) # draw empty plot with axis and labels only
-    lines(x, y, col="green") # draw line plot
-    ```
+    ![Don't summarize data](./media/create-r-based-power-bi-desktop/dont-summarize.png)
 
-1. Select the **Run script** icon to see the result.
+7. Run the following R-script:
+
+      ```r
+      plot(dataset)
+      ```
+
+      ![R visual with data](./media/create-r-based-power-bi-desktop/r-data-values.png)
+
+## Editing the R Script
+
+The R-script that was created in the root folder of your visual can be edited to customize your visual. You can create and edit your R script in Power BI Desktop. Let's start by creating a line chart.
+
+1. Paste the following R code into the **R script editor**:
+
+   ```r
+   x <- dataset[,1] # get the first column from dataset
+   y <- dataset[,2] # get the second column from dataset
+
+   columnNames = colnames(dataset) # get column names
+
+   plot(x, y, type="n", xlab=columnNames[1], ylab=columnNames[2]) # draw empty plot with axis and labels only
+   lines(x, y, col="green") # draw line plot
+   ```
+
+2. Select the **Run script** icon to see the result.
 
     ![Screenshot shows the result of running the script, which is a line plot.](./media/create-r-based-power-bi-desktop/run-r-script.png)
 
-1. When your R script is ready, copy it to the `script.r` file in your visual project created at one of the previous steps.
+3. When your R script is ready, copy it to the `script.r` file located in the root directory of your visual project.
 
-1. Change the `name` of `dataRoles` in *capabilities.json* to `dataRoles`. Power BI passes data as the `dataset` data frame object for the R script visual, but the R visual gets the data frame name according to `dataRoles` names.
+4. In the *capabilities.json* file, change the `dataRoles`: `name` to *dataRoles*, and set the `dataViewMappings` input to *dataset*. Power BI passes data as the `dataset` data frame object for the R script visual, but the R visual gets the data frame from the `dataRoles` names.
 
     ```json
     {
@@ -130,7 +142,7 @@ When you use `pbiviz` to create the R-powered visual based on the `rvisual` temp
     }
     ```
 
-1. Add the following code to support resizing the image in the *src/visual.ts* file.
+5. Add the following code to support resizing the image in the *src/visual.ts* file.
 
     ```typescript
       public onResizing(finalViewport: IViewport): void {
@@ -143,9 +155,9 @@ When you use `pbiviz` to create the R-powered visual based on the `rvisual` temp
 
 ## Add libraries to visual package
 
-This procedure allows your visual to use the `corrplot` package.
+The `corrplot` package creates a graphical display of a correlation matrix. For more information about `corrplot`, see [An Introduction to corrplot Package](https://cran.r-project.org/web/packages/corrplot/vignettes/corrplot-intro.html).
 
-1. Add the library dependency for your visual to `dependencies.json`. Here is an example of the file content:
+1. Add the `corrplot` library dependency to `dependencies.json`. Here is an example of the file content:
 
     ```json
     {
@@ -161,7 +173,7 @@ This procedure allows your visual to use the `corrplot` package.
 
     The `corrplot` package is a graphical display of a correlation matrix. For more information about `corrplot`, see [An Introduction to corrplot Package](https://cran.r-project.org/web/packages/corrplot/vignettes/corrplot-intro.html).
 
-1. After you make these changes, start using the package in your `script.r` file.
+2. After you make these changes, you can start using the package in your `script.r` file.
 
     ```r
     library(corrplot)
@@ -175,7 +187,7 @@ The result of using `corrplot` package looks like this example:
 
 ## Adding a static property to the property pane
 
-Enable users to change UI settings. To do this, add properties to the property pane that change the user-input based behavior of the R script.
+To enable users to change UI settings, add properties to the property pane that change the user-input based behavior of the R script.
 
 You can configure `corrplot` by using the `method` argument for the `corrplot` function. The default script uses a circle. Modify your visual to let the user choose between several options.
 
@@ -227,7 +239,7 @@ You can configure `corrplot` by using the `method` argument for the `corrplot` f
     }
     ```
 
-1. Open the *src/settings.ts* file. Create a `CorrPlotSettings` class with the public property `method`. The type is `string` and the default value is `circle`. Add the `settings` property to the `VisualSettings` class with the default value:
+2. Open the *src/settings.ts* file. Create a `CorrPlotSettings` class with the public property `method`. The type is `string` and the default value is `circle`. Add the `settings` property to the `VisualSettings` class with the default value:
 
     ```typescript
     "use strict";
@@ -254,11 +266,11 @@ You can configure `corrplot` by using the `method` argument for the `corrplot` f
 
    ![R visual settings](./media/create-r-based-power-bi-desktop/r-data-look-settings.png)
 
-    Finally, the R script must start with a property. If the user doesn't change the property, the visual doesn't get any value for this property.
+    Finally, the R script must have a default property. If the user doesn't change the property value (in this case, the shape setting), the visual uses this value.
 
     For R runtime variables for the properties, the naming convention is `<objectname>_<propertyname>`, in this case, `settings_method`.
 
-1. Change the R script in your visual to match the following code:
+3. Change the R script in your visual to match the following code:
 
     ```r
     library(corrplot)

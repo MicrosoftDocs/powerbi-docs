@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 06/04/2021
 LocalizationGroup: Gateways
 ---
 
@@ -61,6 +61,6 @@ If you intend to use the Power BI gateway with Azure Analysis Services, be sure 
 
 * [Configuring proxy settings](/data-integration/gateway/service-gateway-proxy)  
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md)  
-* [On-premises data gateway FAQ - Power BI](service-gateway-power-bi-faq.md)  
+* [On-premises data gateway FAQ - Power BI](service-gateway-power-bi-faq.yml)  
 
 More questions? Try the [Power BI Community](https://community.powerbi.com/).

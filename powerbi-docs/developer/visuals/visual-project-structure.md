@@ -1,6 +1,6 @@
 ---
-title: Power BI visual project structure in Power BI embedded analytics for better embedded BI insights
-description: This article describes the folder and file structure of a Power BI visual project. Enable better embedded BI insights using Power BI embedded analytics.
+title: Power BI visual project structure
+description: This article describes the folder and file structure of a Power BI visual project.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""

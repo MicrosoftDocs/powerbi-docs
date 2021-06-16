@@ -3,11 +3,11 @@ title: What is a Power BI app?
 description: In Power BI, apps bring related dashboards and reports together, all in one place.
 author: mihart
 ms.author: mihart
-ms.reviewer: lukaszp
+ms.reviewer: miguem
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 05/13/2021
 ms.custom: licensing support, css_fy20Q4
 LocalizationGroup: Share your work
 ---
@@ -24,7 +24,7 @@ An *app* is a Power BI content type that combines related dashboards and reports
 ## App *designers* and app *users*
 Depending on your role, you may be someone who creates apps (*designer*) for your own use or to share with colleagues. Or, you may be someone who receives and downloads apps (*business user*) created by others. This article is for *business users*.
 
-Seeing and opening an app require certain permissions. The recipient must either have a Power BI Pro license or the app must be shared with the recipient in a special type of cloud storage called **Premium capacity**. To learn more about licenses and Premium capacity, see [Licensing for the Power BI service](end-user-license.md).
+Seeing and opening an app require certain permissions. The recipient must either have a Power BI Pro or Premium Per User (PPU) license or the app must be shared with the recipient in a special type of cloud storage called **Premium capacity**. To learn more about licenses and Premium capacity, see [Licensing for the Power BI service](end-user-license.md).
 
 ## Advantages of apps
 Apps are an easy way for *designers* to share different types of content at one time. App *designers* create the dashboards and reports and bundle them together into an app. The *designers* then share or publish the app to a location where you, the *business user*, can access it. Because related dashboards and reports are bundled together, it's easier for you to find and install in both the Power BI service ([https://powerbi.com](https://powerbi.com)) and on your mobile device. After you install an app, you don't have to remember the names of a lot of different dashboards or reports because they're all together in one app, in your browser or on your mobile device.
@@ -55,8 +55,12 @@ Your apps are organized in the **Apps** content list. Just select **Apps** to di
 
 ![Apps in Power BI](./media/end-user-apps/power-bi-apps.png)
 
+## Limitations
+**Update apps with reports that rebind to different datasets is currently not supported** 
+
+In case your app report needs to be rebind to a different dataset, you will need to exclude the report from the app update and then include it again in the app update after the rebind. [Learn more about report dataset rebind](/rest/api/power-bi/reports/rebindreport).
+
 
 ## Next steps
 * [Open and interact with an app](end-user-app-view.md)
 * [Other ways to share content](end-user-shared-with-me.md)
-

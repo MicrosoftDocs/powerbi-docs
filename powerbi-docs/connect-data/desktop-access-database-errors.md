@@ -4,11 +4,11 @@ description: Resolve issues importing Access databases and .XLS spreadsheets in 
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/09/2020
+ms.date: 04/19/2021
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshoot importing Access and Excel .xls files in Power BI Desktop
@@ -26,7 +26,7 @@ If you're working with dataflows and using a gateway to connect to the data, you
 
 ## Situation 2: The Access Database Engine bit-version (32-bit or 64-bit) is different from your Power BI Desktop bit-version
 
-This situation often occurs when the installed version of Microsoft Office is 32-bit, and the version of Power BI Desktop installed is 64-bit. The opposite can occur as well and the bit-version mismatch will occur in either case. If you're using a Microsoft 365 subscription, see [Situation 3](#situation-3-trouble-using-access-or-xls-files-with-a-microsoft-365-subscription) for a different issue and resolution. Any of the following solutions can remedy this bit-version mismatch error:
+This situation often occurs when the installed version of Microsoft Office is 32-bit, and the version of Power BI Desktop installed is 64-bit. The opposite can occur as well and the bit-version mismatch will occur in either case. You can also apply these solutions to other mismatches, for example other 32-bit COM applications such as Visual Studio SSDT. If you're using a Microsoft 365 subscription, see [Situation 3](#situation-3-trouble-using-access-or-xls-files-with-a-microsoft-365-subscription) for a different issue and resolution. Any of the following solutions can remedy this bit-version mismatch error:
 
 ### Solution 1
 

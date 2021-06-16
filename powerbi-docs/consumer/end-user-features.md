@@ -7,8 +7,8 @@ ms.reviewer:  mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: reference
-ms.date: 11/16/2020
-ms.custom: licensing support
+ms.date: 05/26/2021
+ms.custom: licensing support, pbibetadocbug
 LocalizationGroup: consumers
 ---
 
@@ -16,7 +16,7 @@ LocalizationGroup: consumers
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
-As a *business user*, you use the Power BI service to explore reports and dashboards in order to make business decisions. Those reports and dashboards are created by *designers* who have Power BI *Pro* licenses. Pro users have the ability to share content with their colleagues and to control what their colleagues can and can't do with that content. Sometimes, designers share content by sending you links, and sometimes the content automatically installs and appears in Power BI under **Apps** or **Shared with me**.
+As a *business user*, you use the Power BI service to explore reports and dashboards in order to make business decisions. Those reports and dashboards are created by *designers* who have Power BI *Pro* or Premium Per User (PPU) licenses. Pro and PPU users have the ability to share content with their colleagues and to control what their colleagues can and can't do with that content. Sometimes, designers share content by sending you links, and sometimes the content automatically installs and appears in Power BI under **Apps** or **Shared with me**.
 
 There are many different ways designers can share content. But this article is for Power BI *business users*, and therefore only describes how *business users* receive and interact with content. For more information on other ways to share content, see [Ways to share your work in Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
 
@@ -32,26 +32,20 @@ This article lists which features in the Power BI service are available to *busi
 Let's review some Power BI concepts before we get to the list. This will be a quick review and if you need more details, visit [Licenses for consumers](end-user-license.md) or [Power BI basic concepts](end-user-basic-concepts.md).
 
 ### Workspaces and roles
-There are two types of workspaces: **My workspace** and app workspaces. Only you have access to your own **My workspace**. Collaborating and sharing requires the content *designers*, who have Pro licenses, to use an app workspace. 
+There are two types of workspaces: **My workspace** and app workspaces. Only you have access to your own **My workspace**. Collaborating and sharing requires the content *designers*, who have Pro or Premium Per User (PPU) licenses, to use an app workspace. 
 
 Within app workspaces, *roles* are assigned by the designers to manage who can do what in that workspace. *Business users* are often assigned the **Viewer** role. 
 
 ### Premium capacity
-When an organization has a Premium capacity subscription, admins and Pro users can assign workspaces to a *capacity*. A workspace in a capacity is a space where Pro users can share and collaborate with free users -- without requiring the free users to have Pro licenses. Within those workspaces, free users have elevated permissions (see list, below). 
+When an organization has a Premium capacity subscription, admins and Pro users can assign workspaces to a *capacity*. A workspace in a capacity is a space where Pro users can share and collaborate with free users -- without requiring the free users to have Pro or Premium Per User (PPU) licenses. Within those workspaces, free users have elevated permissions (see list, below). 
 
 ### Licenses 
-Each Power BI service user has either a free license or a Pro license. *Business users* have free licenses.
 
-- **Free license** - typically assigned to *business users* within an organization (see first image, below). Also assigned to anyone who signs up for the Power BI service as an individual and wants to try out the [Power BI service in standalone mode](../fundamentals/service-self-service-signup-for-power-bi.md) (see second image, below). 
+Each Power BI service user has a free license, a Power BI Pro license, or a Premium Per user license. *Business users* in an organization are typically assigned free licenses. Anyone who signs up for the Power BI service as an individual and wants to try out the [Power BI service in standalone mode](../fundamentals/service-self-service-signup-for-power-bi.md) will start with a free license. For free users, being a member of an organization that has Premium capacity is what gives you super powers. As long as your colleagues use Premium capacity workspaces to share content, free users can view and collaborate with that content.  In this way, the free user gains the ability to consume content created by others. 
 
-    ![screen showing Premium user](media/end-user-features/power-bi-free-organization.png)
+To find out what type of license is assigned to your account, select your profile picture from the page header in [Power BI service](https://app.powerbi.com). If **Pro account** or **Premium Per User account** is displayed, you can share content with other users. When **Free** is shown, you can only create content in My Workspace and consume content that is shared to a Premium workspace. Select **View account** to see more details about your account.
 
-    For free users, being a member of an organization that has Premium capacity is what gives you super powers. As long as your Pro colleagues use Premium capacity workspaces to share content, free users can view and collaborate with those Pro colleagues.  In this way, the free user gains the ability to consume content created by others. Together with their colleagues, including Pro users, the free user receives, shares, and collaborates on the same dashboards and reports and apps to make business decisions. 
- 
-    ![screen showing Free user](media/end-user-features/power-bi-free-user.png)
-
-
-   
+   :::image type="content" source="media/end-user-features/license-type.png" alt-text="Screen capture showing license type displayed with account profile.":::
 
 ## Power BI feature list for *business users* and free users
 The following chart identifies which tasks can be performed by a *business user* interacting with content in Premium capacity.    

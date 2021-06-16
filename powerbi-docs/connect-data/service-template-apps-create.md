@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 12/14/2020
+ms.date: 02/21/2021
 ---
 
 # Create a template app in Power BI
@@ -91,7 +91,13 @@ Now that you have content in your workspace, you're ready to package it in a tem
     ![Control](media/service-template-apps-create/power-bi-create-control.png)
 
     >[!NOTE]
-    >Exporting to .pbix format is always blocked for users installing the app.
+    >If you want to protect your data, disable the **Download the report to file** option and then configure the other two options as desired.
+    >
+    >Why:
+    >
+    > The view, edit, and export controls on this tab apply only to the Power BI service. Once you download the .pbix file, it is no longer in the service. It puts a copy of your data, unprotected, in a location chosen by the user. You then no longer have any control over what the user can do with it.
+    >
+    > If you want to limit access to your queries and measures while still allowing your users to add their own data sources, consider checking only the **Export or externally connect to data** options. This enables users to add their own data sources without being able to edit your dataset. [Learn more](../transform-model/desktop-composite-models.md)
 
     **Parameters**
 

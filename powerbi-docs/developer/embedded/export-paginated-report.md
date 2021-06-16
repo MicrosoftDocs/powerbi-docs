@@ -1,21 +1,21 @@
 ---
-title: Export Power BI embedded analytics paginated reports API for better embedded BI insights
+title: Export Power BI embedded analytics paginated reports API
 description: Learn how to export an embedded Power BI paginated report.
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 02/09/2021
+ms.date: 05/24/2021
 ---
 
 # Export paginated report to file
 
 The `exportToFile` API enables exporting a Power BI paginated report by using a REST call. The following file formats are supported:
 * **.pptx** (PowerPoint)
-* **.pdf**
+* **.pdf** (and [Accessible PDF, or PDF/UA](../../report-server/rendering-extension-support.md))
 * **.xlsx** (Excel)
-* **.dox** (Word)
+* **.docx** (Word)
 * **.csv**
 * **.xml**
 * **.mhtml**
@@ -120,7 +120,7 @@ Here is an example for supplying an effective user name for RLS.
 
 ### Single Sign-on SQL and Dataverse (SSO)
 
-In Power BI, you have the option to set OAuth with SSO. When you do, the credentials for the user viewing the report are used to retrieve data. The access token in the requrest header is not used to access the data, the token must be passed in with the effective identity in the post body.
+In Power BI, you have the option to set OAuth with SSO. When you do, the credentials for the user viewing the report are used to retrieve data. The access token in the request header is not used to access the data, the token must be passed in with the effective identity in the post body.
 
 What can make access tokens confusing is getting the correct access token for the resource that you want to access.
 
@@ -154,7 +154,7 @@ Here is an example for supplying an effective user name with an access token.
 ```
 
 ## PPU concurrent requests
-The `exportToFile` API allows one request in a five minute window when using [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md). Multiple (greater than one) requests within a five minute window will result in a *Too Many Requests* (429) error.
+The `exportToFile` API allows one request in a five minute window when using [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml). Multiple (greater than one) requests within a five minute window will result in a *Too Many Requests* (429) error.
 
 ## Code examples
 

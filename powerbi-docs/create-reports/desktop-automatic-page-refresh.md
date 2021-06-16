@@ -1,6 +1,6 @@
 ---
 title: Automatic page refresh in Power BI Desktop 
-description: This article shows how to automatically refresh pages for DirectQuery sources in Power BI Desktop.
+description: This article shows how to automatically refresh pages for DirectQuery and LiveConnect sources in Power BI Desktop.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/13/2020
+ms.date: 04/20/2021
 LocalizationGroup: Connect to data
 ---
 
@@ -47,6 +47,8 @@ The **Page refresh** card will only be available if you are connected to a [Dire
 ### Fixed interval setup
 
 When selecting **Auto page refresh** as the refresh type, you need to provide the desired refresh interval. The default value is 30 minutes. (The minimum refresh interval is one second.) Your report will begin refreshing at the interval you set.
+
+If you are the administrator and need to make changes to the refresh interval, visit [Configure workloads in a Premium capacity](../admin/service-admin-premium-workloads.md).
 
 When clicking on show details Power BI will provide further information on:
 
@@ -190,8 +192,10 @@ This table describes with more detail where this feature is available and the li
 | Import                                        | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A         | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A        |
 | Mixed mode (DirectQuery + other data sources) | **FI supported**: Yes <br>**CD supported**: Yes <br>**Minimum**: 1 second <br>**Admin override**: Yes  | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No |
 | Analysis Services (Azure and On Premises)     | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: Yes | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No |
-| Power BI datasets (with DirectQuery source)   | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 1 second <br>**Admin override**: Yes  | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No |
+| Power BI datasets (connected live)   | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 1 second <br>**Admin override**: Yes  | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No |
+| Power BI datasets (DirectQuery connection)   | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A  | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A |
 | Power BI Push datasets                        | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: Yes | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No        |
+| Power BI streaming datasets                        | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A        |
 
 *Table legend:*
 1. *FI: Fixed interval*
@@ -249,6 +253,7 @@ If you notice that your capacity is overloaded with low-priority queries, there 
 * It takes up to 5 minutes for automatic page refresh setting changes made in the capacity admin UI to propagate to reports.
 * In addition to turning on automatic page refresh for the capacity, you also need to turn it on for the pages of a report where you want to enable it.
 * Both refresh types are managed separately so make sure that the type of refresh you are enabling is turned on.
+* For more information on enabling and configuring workloads in a Premium capacity, visit [Configure workloads in a Premium capacity](../admin/service-admin-premium-workloads.md).
 
 **My report is operating in mixed mode. (Mixed mode means the report has a DirectQuery connection and an Import data source.) Some visuals aren't refreshing.**
 

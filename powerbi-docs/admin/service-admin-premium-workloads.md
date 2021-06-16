@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/11/2020
+ms.date: 04/02/2021
 LocalizationGroup: Premium
 ---
 
@@ -19,6 +19,9 @@ This article describes enabling and configuring workloads for Power BI Premium c
 > Power BI Premium recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
 >
 >To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).
+
+> [!NOTE]
+> You can also get Premium Per User (PPU) licenses for individuals, which provides many of the features and capabilities of a Premium capacity, and also incorporates all functionality included with a Power BI Pro license. For more information, see [Power BI Premium Per User](service-premium-per-user-faq.yml).
 
 ## Default memory settings
 
@@ -69,7 +72,6 @@ The datasets workload is enabled by default and cannot be disabled. Use the foll
 | **Minimum refresh interval** | If automatic page refresh is on, the minimum interval allowed for page refresh interval. The default value is five minutes, and the minimum allowed is one second. |
 | **Change detection measure** | On/Off toggle to allow premium workspaces to have reports with automatic page refresh based on change detection. |
 | **Minimum execution interval** | If change detection measure is on, the minimum execution interval allowed to poll for data changes. The default value is five seconds, and the minimum allowed is one second. |
-|  |  |  |
 
 #### Max Intermediate Row Set Count
 
@@ -132,16 +134,22 @@ The combined time for all queries is 75 minutes, but the setting limit isn't rea
 
 Note that Power BI reports override this default with a much smaller timeout for each query to the capacity. The timeout for each query is typically about three minutes.
 
-#### Automatic page refresh (preview)
+#### Automatic page refresh
 
 When enabled, automatic page refresh allows users in your Premium capacity to refresh pages in their report at a defined interval, for DirectQuery sources. As a capacity admin, you can do the following:
 
 - Turn automatic page refresh on and off
 - Define a minimum refresh interval
 
-The following image shows the location of the automatic refresh interval setting:
+To find the automatic page refresh setting:
 
-![admin setting for automatic refresh interval](media/service-admin-premium-workloads/automatic-refresh-interval.png)
+1. In the Power BI Admin portal, select **Capacity settings**.
+
+2. Select your capacity, and then scroll down and expand the **Workloads** menu.
+
+3. Scroll down to the **Datasets** section.
+
+:::image type="content" source="media/service-admin-premium-workloads/powerbi-permium-automatic-page-refresh.png" alt-text="Screenshot that shows the admin setting for automatic refresh interval.":::
 
 Queries created by automatic page refresh go directly to the data source, so it's important to consider reliability and load on those sources when allowing automatic page refresh in your organization. 
 

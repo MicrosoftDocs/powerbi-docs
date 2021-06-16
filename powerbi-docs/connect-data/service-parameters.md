@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/04/2020
+ms.date: 03/10/2021
 LocalizationGroup: Create reports
 ---
 # Edit parameter settings in the Power BI service
@@ -17,7 +17,7 @@ Report creators add query parameters to reports in Power BI Desktop. Parameters 
 
 ## Review and edit parameters in Power BI service
 
-As a report creator, you define parameters in Power BI Desktop. When you [publish that report to Power BI service](../create-reports/desktop-upload-desktop-files.md), the parameter settings and selections travel with it. You can review and edit parameter settings in the Power BI service, but not create them.
+As a report creator, you define parameters in Power BI Desktop. When you [publish that report to the Power BI service](../create-reports/desktop-upload-desktop-files.md), the parameter settings and selections travel with it. You can review and edit parameter settings in the Power BI service, but not create them.
 
 1. In the Power BI service, select the cog icon ![cog icon](media/service-parameters/power-bi-cog.png) to open **Settings**.
 
@@ -29,8 +29,11 @@ As a report creator, you define parameters in Power BI Desktop. When you [publis
 
     ![Settings window with Parameters expanded](media/service-parameters/power-bi-settings.png)
 
-    Review the parameter settings and make changes if needed. Grayed-out fields aren't editable. 
+    Review the parameter settings and make changes if needed.
 
+## Considerations and limitations
+
+Grayed-out fields aren't editable. "Any" or "Binary" type parameters work in Power BI Desktop, but we currently don't support them in the service, for security reasons.
 
 ## Next steps
 An ad-hoc way to add simple parameters is by [modifying the URL](../collaborate-share/service-url-filters.md).

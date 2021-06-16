@@ -7,7 +7,7 @@ ms.reviewer: lukasz
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/28/2021
+ms.date: 01/29/2021
 LocalizationGroup: Share your work
 ---
 # Connect to files stored in OneDrive for a classic workspace
@@ -73,6 +73,6 @@ Now that your files are in the OneDrive for Business for your workspace, you hav
 ## Next steps
 * [Create apps and workspaces in Power BI](../collaborate-share/service-create-distribute-apps.md)
 * [Import data from Excel workbooks](../connect-data/service-get-data-from-files.md)
-* [Connect to whole Excel workbooks](../connect-data/service-excel-workbook-files.md
+* [Connect to whole Excel workbooks](../connect-data/service-excel-workbook-files.md)
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)
 * Feedback? Visit [Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi)

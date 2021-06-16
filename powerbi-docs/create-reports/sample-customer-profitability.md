@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 07/05/2019
+ms.date: 04/02/2021
 LocalizationGroup: Samples
 ---
 # Customer Profitability sample for Power BI: Take a tour
@@ -20,7 +20,7 @@ This sample is part of a series that shows how you can use Power BI with busines
 
 This tutorial explores the Customer Profitability sample content pack in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
 
-You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro license, you can save the sample to your My Workspace in the Power BI service. 
+You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace in the Power BI service. 
 
 ## Get the Sample
 
@@ -30,7 +30,7 @@ Before you can use the sample, you must first download it as a [content pack](#g
 
 1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample.
 
-   If you don't have a Power BI Pro license, you can save the sample to your My Workspace.
+   If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace.
 
 2. In the bottom-left corner, select **Get Data**.
 
@@ -93,17 +93,20 @@ Two tiles on this dashboard, **Target vs Actual** and **Year Over Year Revenue G
 
 ![Excel online](media/sample-customer-profitability/power-bi-excel-online.png)
 
-1. Select either of the tiles that were pinned from Excel. Excel Online opens within the Power BI service.
-2. Notice that the workbook has three tabs worth of data. Open **Revenue**.
-3. Let's look into why Carlos hasn't hit his target yet:  
+1. Select **Target vs Actual**. Excel Online opens within the Power BI service.
+2. Notice that the workbook has three tabs worth of data. Open **COGS**.
 
-    a. From the **Executive** slider, select **Carlos Grilo**.   
+    ![The COGS report tab selected.](media/sample-customer-profitability/power-bi-cogs.png)
 
-    b. The first PivotTable tells us that Carlos' revenue growth for the top product, Primus, is down 152% from last year. The **YoY Revenue Variance** chart shows that for most months, Carlos has been below budget.  
+1. Total revenue is exceeding costs by a healthy margin. The shape of the Total revenue line and height of the costs columns are similar.  Interact with the data by filtering slicing, drilling, and more.  For example, let's look at **Revenue vs COGS** for just one Industry.   
 
-    ![PivotTable](media/sample-customer-profitability/power-bi-pivotchart.png)
+    a. From the **Industry** slicer, select **Retail**.   
+    
+    ![Retail industry selected.](media/sample-customer-profitability/power-bi-retails.png)
 
-    ![Results for Carlos](media/sample-customer-profitability/power-bi-carlos.png)
+    b. We see that only two district managers cover the retail industry: Andrew and Carlos.  
+    
+    c. Total revenue is exceeding costs by a healthy margin until 2014 quarter 3. And looking at the stacked column, we see some strange data that bears further examination. Did we truly have no costs for July? Did we get a refund from a third party? 
 
 4. Continue exploring. If you find something interesting, select **Pin** ![pin icon](media/sample-customer-profitability/power-bi-excel-pin.png) from the upper-right corner to [pin it to a dashboard](service-dashboard-pin-tile-from-excel.md).
 

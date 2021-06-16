@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 05/18/2021
 ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
 ---
@@ -32,7 +32,7 @@ With the new workspaces, we've redesigned some features. Here are the main diffe
 - **Contact list**: In the new workspaces, you can specify who receives notification about workspace activity.
 - **Create template apps**: You can only create *template apps* in the new workspaces. Template apps are apps that you can distribute to customers outside of your organization. Those customers can then connect to their own data with your template app. Read more about [template apps](../connect-data/service-template-apps-overview.md).
 - **Share datasets**: To share a dataset outside a specific workspace, you need to save the report that contains the dataset to one of the new workspaces. You can't share datasets from classic workspaces. Read more about [shared datasets](../connect-data/service-datasets-across-workspaces.md).
-- **Organizational content packs**: You create and consume organizational content packs in classic workspaces. You can't create or consume them in the new workspaces. Apps and template apps replace organizational content packs in the new workspaces. Organizational content packs are being deprecated. Now is a good time to upgrade your content packs to apps. See the workspace upgrade roadmap section of this blog post [Announcing Power BI admins can upgrade classic workspaces](https://powerbi.microsoft.com/blog/announcing-power-bi-admins-can-upgrade-classic-workspaces-and-roadmap-update/) for the timeline.
+- **Organizational content packs**: You create and consume organizational content packs in classic workspaces. You can't create or consume them in the new workspaces. Apps and template apps replace organizational content packs in the new workspaces. Organizational content packs are being deprecated. Now is a good time to upgrade your content packs to apps. See [Upgrade classic workspaces to the new workspaces in Power BI](service-upgrade-workspaces.md) for details.
 
 This article explains these features in more detail.
 
@@ -43,10 +43,10 @@ This article explains these features in more detail.
 
 In the new workspaces, some features work differently. These differences are intentional, based on feedback we've received from customers. They enable a more flexible approach to collaboration in workspaces.
 
-- **Licensing enforcement**: Publishing reports to a new workspace experience enforces existing licensing rules. Users collaborating in new workspaces or sharing content to others in the Power BI service need a Power BI Pro license. Users without a Pro license see the error "Only users with Power BI Pro licenses can publish to this workspace."
+- **Licensing enforcement**: Publishing reports to a new workspace experience enforces existing licensing rules. Users collaborating in new workspaces or sharing content to others in the Power BI service need a Power BI Pro or Premium Per User (PPU) license. Users without a Pro or PPU license see the error "Only users with Power BI Pro licenses can publish to this workspace."
 - **'Members can reshare' setting**: The Contributor role in the new workspaces replaces the 'Members can reshare' setting in the classic workspaces.
 - **Read-only workspaces**: The Viewer role in the new workspaces replaces granting users read-only access to a classic workspace. The Viewer role allows similar read-only access to the content in the new workspaces.
-- **Users without a Pro license** can access a new workspace if the workspace is in a Power BI Premium capacity, but only if they have the Viewer role.
+- **Users without a Pro or Premium Per User (PPU) license** can access a new workspace if the workspace is in a Power BI Premium capacity, but only if they have the Viewer role.
 - **Allow users to export data**: Even users with the Viewer role in the new workspace can export data if they have Build permission on the datasets in that workspace. Read more about [Build permission for datasets](../connect-data/service-datasets-build-permissions.md).
 - No **Leave workspace** button in the new workspaces.
 
@@ -68,22 +68,22 @@ Read about [how to set the workspace OneDrive](service-create-the-new-workspaces
 
 Roles let you manage who can do what in the new workspaces, so teams can collaborate. New workspaces allow you to assign roles to individuals, and to user groups: security groups, Microsoft 365 groups, and distribution lists. 
 
-To grant access to a new workspace, assign those user groups or individuals to one of the workspace roles: Admin, Member, Contributor, or Viewer. Everyone in a user group gets the role you've assigned. If someone is in several user groups, they get the highest level of permission provided by the roles they're assigned. If you nest user groups, all the contained users have permission. All of these capabilities, except viewing and interacting, require a Power BI Pro license. Read more about [licensing](#licenses) in this article.
+To grant access to a new workspace, assign those user groups or individuals to one of the workspace roles: Admin, Member, Contributor, or Viewer. Everyone in a user group gets the role you've assigned. If someone is in several user groups, they get the highest level of permission provided by the roles they're assigned. If you nest user groups, all the contained users have permission. All of these capabilities, except viewing and interacting, require a Power BI Pro or Premium Per User (PPU) license. Read more about [licensing](#licenses) in this article.
 
 [!INCLUDE [power-bi-workspace-roles-table](../includes/power-bi-workspace-roles-table.md)]
 
 > [!NOTE]
-> - You can assign users to roles, either alone or in a group, even if they can't use the role. In other words, you can assign users who don't have Power BI Pro licenses to a role that requires a license. See [Licenses](#licenses) in this article for details.
+> - You can assign users to roles, either alone or in a group, even if they can't use the role. In other words, you can assign users who don't have Power BI Pro or PPU licenses to a role that requires a license. See [Licenses](#licenses) in this article for details.
 > - To enforce [row-level security (RLS)](../admin/service-admin-rls.md) for users browsing content in a workspace, use the Viewer role. You can also enforce RLS without giving access to the new workspace. [Publish an app](service-create-distribute-apps.md) and distribute it to those users, or use [sharing to distribute content](service-share-dashboards.md) to them.
 
 ## Licensing and administering
 
 ### Licenses
-If one of the new workspaces is in a shared capacity, everyone you add to it needs a Power BI Pro license. These users can all collaborate on the dashboards and reports in the new workspace. If you want to distribute content to others inside your organization, either assign Power BI Pro licenses to those users or place the workspace in a Power BI Premium capacity.
+If one of the new workspaces is in a shared capacity, everyone you add to it needs a Power BI Pro or Premium Per User (PPU) license. These users can all collaborate on the dashboards and reports in the new workspace. If you want to distribute content to others inside your organization, either assign Power BI Pro licenses to those users or place the workspace in a Power BI Premium capacity.
 
-When the new workspace is in a Power BI Premium capacity, users with the Viewer role can access the workspace even if they don't have a Power BI Pro license. However, if you assign these users a higher role like Admin, Member, or Contributor, they're prompted to start a Pro trial when they try to access the workspace. If you want users without Pro licenses to use the Viewer role, make sure they don't also have other workspace roles, either as individuals or as part of a user group.
+When the new workspace is in a Power BI Premium capacity, users with the Viewer role can access the workspace even if they don't have a Power BI Pro or Premium Per User (PPU) license. However, if you assign these users a higher role like Admin, Member, or Contributor, they're prompted to start a Pro trial when they try to access the workspace. If you want users without Pro or Premium Per User (PPU) licenses to use the Viewer role, make sure they don't also have other workspace roles, either as individuals or as part of a user group, and ensure that they are not using a classic workspace.  Classic workspaces do not support roles.
 
-Publishing reports to the new workspace experience has stricter enforcement of existing licensing rules. If you try to publish from Power BI Desktop or other client tools without a Pro license, you see the error, "Only users with Power BI Pro licenses can publish to this workspace."
+Publishing reports to the new workspace experience has stricter enforcement of existing licensing rules. If you try to publish from Power BI Desktop or other client tools without a Pro or Premium Per User (PPU) license, you see the error, "Only users with Power BI Pro licenses can publish to this workspace."
 
 > [!NOTE]
 > Power BI US Government isn't available as a Free license. For licensing details, see [Power BI for US government customers](../admin/service-govus-overview.md).

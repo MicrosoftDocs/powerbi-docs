@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/08/2019
+ms.date: 04/30/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to an Amazon Redshift database in Power BI Desktop
 In **Power BI Desktop**, you can connect to an **Amazon Redshift** database and use the underlying data just like any other data source in Power BI Desktop.
 
 ## Connect to an Amazon Redshift database
-To connect to an **Amazon Redshift** database, select **Get Data** from the **Home** ribbon in Power BI Desktop. Select **Database** from the categories on the left, and you see **Amazon Redshift**.
+To connect to an **Amazon Redshift** database, select **Get data** from the **Home** ribbon in Power BI Desktop. Select **Database** from the categories on the left, and you see **Amazon Redshift**.
 
 ![Screenshot of the Get Data dialog, showing the Amazon Redshift database selection.](media/desktop-connect-redshift/connect_redshift_3.png)
 
@@ -30,10 +30,10 @@ Once you successfully connect, a **Navigator** window appears and displays the d
 
 ![Screenshot of the Navigator dialog, showing the available data on the server.](media/desktop-connect-redshift/connect_redshift_6.png)
 
-Once you make selections from the **Navigator** window, you can either **Load** or **Edit** the data.
+Once you make selections from the **Navigator** window, you can either **Load** or transform the data.
 
 * If you choose to **Load** data, you'll be prompted to use either *Import* or *DirectQuery* mode to load the data. For more information, check out this [article that explains DirectQuery](desktop-use-directquery.md).
-* If you select to **Edit** the data, **Query Editor** appears where you can apply all sorts of transformations and filters to the data, many of which are applied to the underlying **Amazon Redshift** database itself (if supported).
+* If you select to **Transform Data** the data, **Power Query Editor** appears where you can apply all sorts of transformations and filters to the data, many of which are applied to the underlying **Amazon Redshift** database itself (if supported).
 
 ## Next steps
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:

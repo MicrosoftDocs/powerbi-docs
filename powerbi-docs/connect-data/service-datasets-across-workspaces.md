@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/30/2020
+ms.date: 05/27/2021
 LocalizationGroup: Share your work
 ---
 # Intro to datasets across workspaces
@@ -48,10 +48,10 @@ If you create datasets, when you create one that others can benefit from, you ca
 The specific features and experiences built on shared dataset capabilities are licensed according to their existing scenarios. For example:
 
 - In general, discovering and connecting to shared datasets is available to anyone – it is not a feature restricted to Premium.
-- Users without a Pro license can only use datasets across workspaces for report authoring if those datasets reside in the users' personal My Workspace or in a Premium-backed workspace. The same licensing restriction applies whether they author reports in Power BI Desktop or in the Power BI service.
-- Copying reports between workspaces requires a Pro license.
-- Copying reports from an app requires a Pro license, as was required for organizational content packs.
-- Promoting and certifying datasets requires a Pro license.
+- Users without a Pro or Premium Per User (PPU) license can only use datasets across workspaces for report authoring if those datasets reside in the users' personal My Workspace or in a Premium-backed workspace. The same licensing restriction applies whether they author reports in Power BI Desktop or in the Power BI service.
+- Copying reports between workspaces requires a Pro or Premium Per User (PPU) license.
+- Copying reports from an app requires a Pro or Premium Per User (PPU) license, as was required for organizational content packs.
+- Promoting and certifying datasets requires a Pro or Premium Per User (PPU) license.
 
 ## Considerations and limitations
 

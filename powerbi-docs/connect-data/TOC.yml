@@ -25,8 +25,6 @@
       href: desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
     - name: "Analyze sales data from Excel and an OData feed"
       href: desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md
-    - name: "Analyze Facebook data"
-      href: desktop-tutorial-facebook-analytics.md
     - name: "Implement row-level security in an Analysis Services tabular model"
       href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
     - name: "Connect to a GitHub sample"
@@ -54,12 +52,6 @@
       href: desktop-directquery-about.md
     - name: "Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)"
       href: desktop-directquery-datasets-azure-analysis-services.md      
-    - name: Gateways
-      items:
-      - name: "Guidance for deploying a data gateway"
-        href: service-gateway-deployment-guidance.md
-      - name: "On-premises data gateway FAQ"
-        href: service-gateway-power-bi-faq.md
   - name: How-to guides
     expanded: true
     items: 
@@ -153,8 +145,6 @@
         href: desktop-sap-bw-connector.md
       - name: "Use OneDrive for Business links"
         href: desktop-use-onedrive-business-links.md
-      - name: "Third-party service: Use the Facebook connector"
-        href: service-facebook-connector.md
       - name: "Third-party service: Use the Google Analytics connector"
         href: service-google-analytics-connector.md
       - name: "Connect to Project Online data through Power BI Desktop"
@@ -197,22 +187,30 @@
         href: service-azure-and-power-bi.md
       - name: "Power BI and Azure egress"
         href: service-azure-egress-power-bi.md           
-      - name: "Azure SQL Data Warehouse with DirectQuery"
+      - name: "Azure Synapse Analytics (formerly SQL Data Warehouse) with DirectQuery"
         href: service-azure-sql-data-warehouse-with-direct-connect.md
       - name: "Azure SQL Database with DirectQuery"
         href: service-azure-sql-database-with-direct-connect.md
-      - name: "SQL Server Analysis Services live data in Power BI"
-        href: sql-server-analysis-services-tabular-data.md
     - name: Refresh data
       items: 
       - name: "Data refresh in Power BI"
         href: refresh-data.md
+      - name: "Managing query refresh"
+        href: refresh-include-in-report-refresh.md
       - name: "Configure scheduled refresh"
         href: refresh-scheduled-refresh.md
       - name: "Refresh summaries"
         href: refresh-summaries.md        
-      - name: Configure incremental refresh
-        href: ../admin/service-premium-incremental-refresh.md   
+      - name: Incremental refresh
+        items:
+        - name: Incremental refresh for datasets
+          href: ../connect-data/incremental-refresh-overview.md
+        - name: Configure incremental refresh
+          href: ../connect-data/incremental-refresh-configure.md
+        - name: Advanced incremental refresh
+          href: ../connect-data/incremental-refresh-xmla.md
+        - name: Troubleshoot incremental refresh
+          href: ../connect-data/incremental-refresh-troubleshoot.md
       - name: "Refresh a dataset from a local Power BI Desktop file"
         href: refresh-desktop-file-local-drive.md
       - name: "Refresh a dataset from a cloud Power BI Desktop file"
@@ -243,6 +241,8 @@
       items: 
       - name: "Troubleshoot refresh scenarios"
         href: refresh-troubleshooting-refresh-scenarios.md
+      - name: "Troubleshoot tile errors"
+        href: refresh-troubleshooting-tile-errors.md
       - name: "Troubleshoot an unsupported data source for refresh"
         href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
       - name: "Troubleshoot scheduled refresh for Azure SQL Databases"
@@ -277,7 +277,7 @@
         href: service-connect-to-project-online.md
       - name: "Regional Emergency Response Dashboard"
         href: service-connect-to-regional-emergency-response.md
-      - name: "Salesforce"
+      - name: "Salesforce Analytics"
         href: service-connect-to-salesforce.md
       - name: "Smartsheet"
         href: service-connect-to-smartsheet.md
@@ -287,10 +287,14 @@
         href: service-connect-to-zendesk.md
     - name: Gateways
       items:
+      - name: "Guidance for deploying a data gateway"
+        href: service-gateway-deployment-guidance.md
       - name: "On-premises data gateway - in-depth"
         href: service-gateway-onprem-indepth.md
       - name: "On-premises data gateway (personal mode)"
         href: service-gateway-personal-mode.md
+      - name: "On-premises data gateway FAQ"
+        href: service-gateway-power-bi-faq.yml              
       - name: "Manage gateway data sources"
         items:
         - name: "Add or remove a gateway data source"
@@ -323,8 +327,12 @@
               href: service-gateway-sso-kerberos-sap-bw-commoncryptolib.md
             - name: "SAP BW - gx64krb5.dll"
               href: service-gateway-sso-kerberos-sap-bw-gx64krb.md
+            - name: "Teradata and SSO"
+              href: service-gateway-sso-kerberos-teradata.md              
         - name: "SAML-based SSO"
           href: service-gateway-sso-saml.md
+        - name: "Test single sign-on (SSO) configuration"
+          href: service-gateway-sso-test-configuration.md
       - name: "Troubleshoot the gateway"
         href: service-gateway-onprem-tshoot.md
       - name: "Troubleshoot the gateway (personal mode)"

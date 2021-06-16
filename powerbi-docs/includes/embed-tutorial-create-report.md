@@ -5,7 +5,7 @@ services: powerbi
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: include
-ms.date: 12/09/2020
+ms.date: 03/07/2021
 ms.custom: include file
 ---
 
@@ -16,7 +16,7 @@ Your next step is to create a report and upload it to your workspace. You can [c
 
 To download a sample report and publish it to your workspace, follow these steps:
 
-1. Open the GitHub [Power BI Desktop samples](https://github.com/microsoft/PowerBI-Developer-Samples) folder.
+1. Open the GitHub [Power BI Desktop samples](https://github.com/microsoft/PowerBI-Desktop-Samples) folder.
 
 2. Select **Code** and then select **Download zip**.
 

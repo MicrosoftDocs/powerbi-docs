@@ -1,13 +1,13 @@
 ---
-title: Manage multi-tenancy with Power BI embedded analytics enabling better embedded BI insights
-description: Design a multi-tenant application with Power BI embedded analytics to enable better embedded BI insights for your customers.
+title: Manage multi-tenancy with Power BI embedded analytics 
+description: Design a multi-tenant application with Power BI embedded analytics .
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/11/2019
+ms.date: 04/02/2021
 ---
 
 # Manage multi-tenancy with Power BI embedded analytics
@@ -43,13 +43,13 @@ This article describes the different approaches and analyzes them according to s
 
 **[Row-level security (RLS)](embedded-row-level-security.md)** - Gives the ability to control user access to the data for individual rows in a table. You can implement row-level security at the data source level or in the Power BI semantic model.
 
-**Master user** - The identity that represents the SaaS application in Power BI and that the SaaS application uses when calling Power BI APIs. Needs to be an AAD user with a Power BI Pro license.
+**Master user** - The identity that represents the SaaS application in Power BI and that the SaaS application uses when calling Power BI APIs. Needs to be an AAD user with a Power BI Pro or Premium Per User (PPU) license.
 
 **AAD Application user (service principal)** - The identity that represents the SaaS application in Power BI and that the SaaS application uses when calling Power BI APIs. Needs to be an AAD web application. Can replace the use of a *master* user to authenticate with Power BI.
 
 **Capacity** - A set of resources dedicated to running the Power BI service. [Power BI Premium capacities](../../admin/service-premium-what-is.md) Intended for enterprise companies using Power BI internally, while [Power BI Embedded capacities](azure-pbie-create-capacity.md) intend for application developers to develop SaaS applications for third parties.
 
-**[Power BI Pro license](../../admin/service-admin-purchasing-power-bi-pro.md)** - A user-based license, which grants rights to publish content to workspaces, consume apps without Premium capacity, share dashboards, and subscribe to dashboards and reports.
+**[Power BI Pro or Premium Per User (PPU) license](../../admin/service-admin-purchasing-power-bi-pro.md)** - A user-based license, which grants rights to publish content to workspaces, consume apps without Premium capacity, share dashboards, and subscribe to dashboards and reports.
 
 **[Data connectivity modes](../../connect-data/desktop-directquery-about.md)** - Connecting data sources to Power BI that can be done in different modes:
 
@@ -188,7 +188,7 @@ With row-level security-based isolation, data separation is accomplished using [
 
 ### Scalability
 
-With row-level security-based isolation, the data needs to fit within the dataset size limit, which is currently 10 GB. With the introduction of [incremental refresh](../../admin/service-premium-incremental-refresh.md) and the upcoming release of an XMLA endpoint for Power BI datasets, the dataset size limit is expected to increase significantly. However, the data still needs to fit into the capacity's memory, with enough remaining memory for data refreshes to run. Large-scale deployments need a large capacity to avoid users experiencing issues due to memory exceeding the limits of the current capacity. Alternative ways to handle scale include using [aggregations](../../transform-model/desktop-aggregations.md) or connecting to the data source directly using DirectQuery or Live connection, rather than caching all the data in the Power BI capacity.
+With row-level security-based isolation, the data needs to fit within the dataset size limit, which is currently 10 GB. With the introduction of [incremental refresh](../../connect-data/incremental-refresh-overview.md) and the release of an XMLA endpoint for Power BI datasets, the dataset size limit is expected to increase significantly. However, the data still needs to fit into the capacity's memory, with enough remaining memory for data refreshes to run. Large-scale deployments need a large capacity to avoid users experiencing issues due to memory exceeding the limits of the current capacity. Alternative ways to handle scale include using [aggregations](../../transform-model/desktop-aggregations.md) or connecting to the data source directly using DirectQuery or Live connection, rather than caching all the data in the Power BI capacity.
 
 ### Automation & operational complexity
 

@@ -11,6 +11,8 @@
       href: service-admin-where-is-my-tenant-located.md
     - name: What is Power BI Premium?
       href: service-premium-what-is.md
+    - name: Understanding Power BI Premium Gen2 (preview)
+      href: service-premium-concepts.md
   - name: Concepts
     expanded: true
     items:
@@ -29,23 +31,43 @@
       - name: "Migrate to Go Local German regions"
         href: service-admin-migrate-data-germany.md    
       - name: "FAQ for Germany Cloud customers"
-        href: service-govde-faq.md
+        href: service-govde-faq.yml
     - name: "Frequently asked questions (FAQ)"
-      href: service-admin-faq.md
+      href: service-admin-faq.yml
     - name: "High availability and failover FAQ"
-      href: service-admin-failover.md
+      href: service-admin-failover.yml
     - name: Power BI Premium
       items:
       - name: Managing Premium capacities
         href: service-premium-capacity-manage.md
+      - name: Using Autoscale with Power BI Premium
+        href: service-premium-auto-scale.md        
       - name: Optimizing Premium capacities
         href: service-premium-capacity-optimize.md
       - name: Premium capacity scenarios
         href: service-premium-capacity-scenarios.md
       - name: Power BI Premium FAQ
-        href: service-premium-faq.md
-      - name: Power BI Premium Per User FAQ
-        href: service-premium-per-user-faq.md        
+        href: service-premium-faq.yml
+      - name: Power BI Premium Per User
+        href: service-premium-per-user-faq.yml
+      - name: Using the Power BI Premium Gen2 metrics app
+        href: service-premium-gen2-metrics-app.md
+      - name: Backup and restore Power BI Premium datasets (preview)
+        href: service-premium-backup-restore-dataset.md
+      - name: Using service tags with Power BI
+        href: service-premium-service-tags.md
+    - name: Information protection
+      items:
+      - name: Mandatory label policy (preview)
+        href: service-security-sensitivity-label-mandatory-label-policy.md
+      - name: Sensitivity label downstream inheritance (preview)
+        href: service-security-sensitivity-label-downstream-inheritance.md
+      - name: Sensitivity label inheritance from data sources (preview)
+        href: service-security-sensitivity-label-inheritance-from-data-sources.md
+      - name: Sensitivity label change enforcement
+        href: service-security-sensitivity-label-change-enforcement.md
+      - name: Custom help link for sensitivity labels
+        href: service-security-sensitivity-label-custom-help-link.md
   - name: How to
     items: 
     - name: "Licensing and sign-up"
@@ -64,6 +86,8 @@
         href: service-admin-syndication-partner.md
     - name: "Using the admin portal"
       href: service-admin-portal.md
+    - name: "Add custom branding"
+      href: service-admin-custom-branding.md
     - name: "Use private links for Power BI"
       href: service-security-private-links.md      
     - name: "Manage Power BI visuals admin settings"

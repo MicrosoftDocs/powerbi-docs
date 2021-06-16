@@ -7,33 +7,11 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/10/2017
+ms.date: 04/13/2021
 LocalizationGroup: Dashboards
 ---
 # Dashboard data classification
 Every dashboard is different, and depending on the data source you are connecting to, you will likely find that you and the colleagues you share with will need to take different precautions depending on the sensitivity of the data. Some dashboards should never be shared with those outside your company or printed out, while others can be shared freely. By using dashboard data classification, you will be able to raise awareness with those viewing your dashboards about what level of security should be used. You can tag your dashboards with classifications defined by your company’s IT department, so everyone viewing the content will have the same level of understanding around the sensitivity of the data.
-
-![Screenshot of a dashboard, showing data classification from a sample.](media/service-data-classification/dashboard_tagged_as_hbi.png)
-
-## Data classification tags
-Data classification tags show up next to the dashboard name, letting anyone viewing it know the level of security that should be applied to the dashboard and the data it contains.
-
-![Screenshot of a dashboard, showing a data classification tag next to the dashboard name.](media/service-data-classification/tag_next_to_title.png)
-
-It will also show up next to the dashboard tile in your Favorites list.
-
-![Screenshot of Favorites list, showing a data classification tag next to the dashboard tile in your Favorites list.](media/service-data-classification/tag_on_dashboard_tile.png)
-
-When you hover over the tag, you will see the full name of the classification.
-
-![Screenshot of the H B I tag, showing the full name of the classification when you hover over the tag. ](media/service-data-classification/tag_tooltip.png)
-
-Admins can also set an URL for a tag to provide additional information.
-
-> [!NOTE]
-> Depending the classification settings set by your admin, some classification types may not show as a tag on the dashboard. If you are a dashboard owner, you can always check your dashboard classification type under the dashboard settings.
-> 
-> 
 
 ## Setting a dashboard’s classification
 If data classification is turned on for your company, all dashboards start out with a default classification type, but as a dashboard owner, you can change the classification to match your dashboards security level.
@@ -53,10 +31,10 @@ After you apply the change, anyone you shared with will see the update the next 
 ## Working with data classification tags as an admin
 Data classification is set up by the global admin for your organization. To turn data classification on, do the following:
 
-1. Select the Settings gear and select **Admin Portal**.
+1. Select the **Settings** gear and select **Admin portal**.
    
-    ![Screenshot of the Settings gear, showing the Admin Portal selection.](media/service-data-classification/admin_portal_in_settings.png)
-2. Switch **Data classification for dashboards and reports** to *on* within the **Tenant settings** tab.
+    ![Screenshot of the Settings gear, showing the Admin portal selection.](media/service-data-classification/admin_portal_in_settings.png)
+2. Under **Tenant settings** > **Dashboard settings**, switch **Data classification for dashboards** to **Enabled**.
    
     ![Screenshot of the Admin Portal, showing the Tenant settings and the Data classification for dashboards and reports selection.](media/service-data-classification/data_classification_switch_location.png)
 
@@ -64,7 +42,7 @@ Once turned on, you will be presented with a form to create the various classifi
 
 ![Screenshot of a form, showing field entries for various classifications in your organization.](media/service-data-classification/blank_classification_form.png)
 
-Each classification has a **name** and a **shorthand** which will appear on the dashboard. For each classification, you can decide if the shorthand tag will appear on the dashboard or not by selecting **Show tag**. If you decide not to show the classification type on the dashboard, the owner will still be able to see the type by checking the dashboard settings. Additionally, you can optionally add a **URL** that contains more information about your organization’s classification guidelines and usage requirements.  
+Each classification has a **name** and a **shorthand** tag. You can optionally add a **URL** that contains more information about your organization’s classification guidelines and usage requirements. The owner will be able to see the type by checking the dashboard settings.  
 
 The last thing you need to decide is which classification type will be the default.  
 

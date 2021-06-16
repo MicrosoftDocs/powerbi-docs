@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 08/12/2020
+ms.date: 05/13/2021
 LocalizationGroup: Create reports
 ---
 # Use the Analyze feature to explain fluctuations in report visuals

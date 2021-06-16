@@ -1,6 +1,6 @@
 ---
-title: Code snippets for migrating content from Workspace Collection to the Power BI embedded analytics Power BI Embedded solution for better embedded BI insights
-description: Here are some code snippets of basic operations needed for content migration. Enable better embedded BI insights using Power BI embedded analytics.
+title: Code snippets for migrating content from Workspace Collection to the Power BI embedded analytics
+description: Here are some code snippets of basic operations needed for content migration.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
