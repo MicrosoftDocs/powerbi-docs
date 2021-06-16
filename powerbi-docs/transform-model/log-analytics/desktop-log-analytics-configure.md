@@ -16,7 +16,7 @@ Power BI is integrating with Azure Log Analytics (LA) to enable administrators a
 
 There are two elements to getting Azure Log Analytics working for Power BI: configuring your Azure subscription in the Azure portal, and enabling Log analytics for Power BI in the Power BI Admin portal. The following sections take you through the steps in each, in turn.
 
-:::image type="content" source="media/desktop-log-analytics-overview/log-analytics-17.png" alt-text="Screenshot of connecting Log Analytics to Power BI.":::
+:::image type="content" source="media/desktop-log-analytics-overview/log-analytics-17.png" alt-text="Screenshot of connecting Log Analytics to Power B I.":::
 
 ## Pre-requisites
 

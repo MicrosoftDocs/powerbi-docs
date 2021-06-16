@@ -22,7 +22,7 @@ This article is a collection of Frequently Asked Questions (FAQ) for reference d
 
 *Answer:* Currently dataset activity logs (i.e. Analysis Services Engine traces) are available in the Preview. More areas of Power BI are planned for Azure Log Analytics integration in future.  
 
-**Question:** When should i use Log Analytics for the Analysis Services Engine?  
+**Question:** When should I use Log Analytics for the Analysis Services Engine?  
 
 *Answer:* Engine logs are very detailed and can be high volume and large, avergaging 3-4KB each for complex datasets. Therefore we recommend carefully considering when to use logging for the Analysis Service engine. **Typical use cases for logging are performance investigations, scale/load testing or pre-release validation.**  
 
