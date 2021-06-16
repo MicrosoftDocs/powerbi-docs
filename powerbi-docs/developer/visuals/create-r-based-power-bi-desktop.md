@@ -30,7 +30,7 @@ In this tutorial, you learn how to:
 * [Power BI Desktop](../../fundamentals/desktop-get-the-desktop.md).
 * [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell) version 4 or later for Windows users OR the [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) for OSX users.
 
-## Getting started
+## Get started
 
 1. Prepare some sample data for the visual. You can save these values to an Excel database or a *.csv* file and import it into **Power BI Desktop**.
 
@@ -87,7 +87,7 @@ In this tutorial, you learn how to:
 
       ![R visual with data](./media/create-r-based-power-bi-desktop/r-data-values.png)
 
-## Editing the R Script
+## Edit the R Script
 
 The R-script can be modified to create other types of visuals. Let's create a line chart next.
 
@@ -175,7 +175,7 @@ The `corrplot` package creates a graphical display of a correlation matrix. For 
     }
     ```
 
-2. After you add this dependency, you can start using the package in your `script.r` file.
+2. Now you can start using the corrplot package in your `script.r` file.
 
     ```r
     library(corrplot)
@@ -183,15 +183,15 @@ The `corrplot` package creates a graphical display of a correlation matrix. For 
     corrplot(corr, method="circle", order = "hclust")
     ```
 
-The result of using `corrplot` package looks like this example:
+    The result of using `corrplot` package looks like this example:
 
-![Screenshot shows the visualization pane with four ovals created by corrplot.](./media/create-r-based-power-bi-desktop/r-corrplot-result.png)
+    ![Screenshot shows the visualization pane with four ovals created by corrplot.](./media/create-r-based-power-bi-desktop/r-corrplot-result.png)
 
-## Adding a static property to the property pane
+## Add a static property to the property pane
 
-To enable users to change UI settings, add properties to the property pane that change the user-input based behavior of the R script.
+Now that we have a basic `corrplot` visual, let's add properties to the property pane that allow the user to change the look and feel to the visual.
 
-You can configure `corrplot` by using the `method` argument for the `corrplot` function. The default script uses a circle. Modify your visual to let the user choose between several options.
+We'll use the `method` argument to configure the shape of the data points. The default script uses a circle. Modify your visual to let the user choose between several options.
 
 1. Define an `object` called *settings* in the *capabilities.json* file and give it the properties shown below. Then use this object name in the enumeration method to get the values from the property pane.
 
@@ -286,7 +286,7 @@ You can configure `corrplot` by using the `method` argument for the `corrplot` f
     corrplot(corr, method=settings_method, order = "hclust")
     ```
 
-## Packaging your visual
+## Package and import your visual
 
 Now you can package the visual and import it to any Power BI report.
 
@@ -308,6 +308,8 @@ Now you can package the visual and import it to any Power BI report.
 
 ## Next steps
 
-To learn more about R-powered visuals, see [Use R-powered Power BI visuals in Power BI](../../create-reports/desktop-r-powered-custom-visuals.md).
+>[!div class="nextstepaction"]
+>[Use R-powered Power BI visuals in Power BI](../../create-reports/desktop-r-powered-custom-visuals.md).
 
-For more information about R-powered visuals in Power BI Desktop, see [Create Power BI visuals using R](../../create-reports/desktop-r-visuals.md).
+>[!div class="nextstepaction"]
+>[Build a bar chart](create-bar-chart.md)
