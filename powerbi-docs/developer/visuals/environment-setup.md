@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 05/02/2021
+ms.date: 06/02/2021
 ---
 
 # Set up your environment for developing a Power BI visual
