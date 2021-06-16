@@ -20,11 +20,11 @@ This article is a collection of Frequently Asked Questions (FAQ) for reference d
 
 **Question:** What areas of Power BI are available for Log Analytics integration?  
 
-*Answer:* Currently dataset activity logs (i.e. Analysis Services Engine traces) are available in the Preview. More areas of Power BI are planned for Azure Log Analytics integration in future.  
+*Answer:* Dataset activity logs (such as Analysis Services Engine traces) are currently available in the Preview.  
 
 **Question:** When should I use Log Analytics for the Analysis Services Engine?  
 
-*Answer:* Engine logs are very detailed and can be high volume and large, avergaging 3-4KB each for complex datasets. Therefore we recommend carefully considering when to use logging for the Analysis Service engine. **Typical use cases for logging are performance investigations, scale/load testing or pre-release validation.**  
+*Answer:* Engine logs are detailed and can be high volume and large, averaging 3-4 KB each for complex datasets. Therefore we recommend carefully considering when to use logging for the Analysis Service engine. **Typical use cases for logging are performance investigations, scale/load testing or pre-release validation.**  
 
 **Question:**  Which Analysis Services events are supported? What will the logs look like?  
 
@@ -36,11 +36,11 @@ This article is a collection of Frequently Asked Questions (FAQ) for reference d
 OPTION 1:  
 An Azure admin can grant you Owner rights in Log Analytics only to perform the initial configuration in Power BI. After this, they can reduce your access to Contributor or lower as required.  
 OPTION 2:  
-For workspace level configuration, you can add an Azure admin as a Power BI Workspace admin and ask them to configure logging for your workspace. Once logging is configured you can remove their access to your workspace.
+For workspace level configuration, you can add an Azure admin as a Power BI Workspace admin and ask them to configure logging for your workspace. Once logging is configured, you can remove their access to your workspace.
 
 **Question:**  I cannot get Workspace Admin permissions for Power BI in my organization, is there a workaround?  
 
-*Answer:*  Yes. Please refer to option 2 in the previous question.  
+*Answer:*  Yes. Refer to option 2 in the previous question.  
 
 **Question:**  The schema only contains some GUID identifiers, can you include the item names?  
 
@@ -48,7 +48,7 @@ For workspace level configuration, you can add an Azure admin as a Power BI Work
 
 **Question:**  What happens if I send logs from many Power BI workspaces to the same Log Analytics Workspace? How do I differentiate?  
 
-*Answer:*  This configuration is currently not supported. In future this will allow many workspace's logs to end up in the same Log analytics table. You can differentiate by filtering on the workspace ID.  
+*Answer:*  This configuration is currently not supported. 
 
 **Question:**  Can we configure Log Analytics for non-Premium workspaces?  
 
@@ -82,13 +82,13 @@ For workspace level configuration, you can add an Azure admin as a Power BI Work
 
 *Answer:*  There is no ability to configure Log Analytics for individual v1 workspaces.  
 
-**Question:**  There are a lot of events logged from the AS Engine. Can I choose which ones I want?  
+**Question:**  There are numerous events logged from the AS Engine. Can I choose which ones I want?  
 
-*Answer:*  Currently you cannot choose which events to log, though this feature is planned.  
+*Answer:*  Currently you cannot choose which events to log.  
 
 **Question:**  How much will Log Analytics cost?  
 
-*Answer:*  Azure Log Analytics bills storage, ingestion, and analytical queries independently. Cost also depends on the geographic region and will vary depending on how much activity is generated, how long you choose to store the data and how often you query it. An average Premium capacity generates about 35GB of logs monthly, but this can be higher for heavily utilized capacities. Refer to the cost calculator for more information.  
+*Answer:*  Azure Log Analytics bills storage, ingestion, and analytical queries independently. Cost also depends on the geographic region and will vary depending on how much activity is generated, how long you choose to store the data and how often you query it. An average Premium capacity generates about 35 GB of logs monthly, but this can be higher for heavily utilized capacities. Refer to the cost calculator for more information.  
 
 
 ## Next steps
