@@ -87,7 +87,7 @@ The **Database** category provides the following data connections:
 * Actian (Beta)
 * AtScale cubes
 * BI Connector
-* Data Virtuality LDW (Beta)
+* Data Virtuality LDW
 * Denodo
 * Dremio
 * Exasol
