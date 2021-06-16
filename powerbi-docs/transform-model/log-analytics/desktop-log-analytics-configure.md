@@ -14,15 +14,25 @@ LocalizationGroup: Transform and shape data
 
 Power BI is integrating with Azure Log Analytics (LA) to enable administrators and Premium workspace owners to configure a Log Analytics connection to their Power BI subscription. This article describes how the integration between Log Analytics and Power BI works, and how to configure it for your environment. 
 
-There are two elements to getting Azure Log Analytics working for Power BI: configuring your Azure subscription in the Azure portal, and configuring Power BI in the Power BI Admin portal. The following sections take you through the steps in each, in turn.
+There are two elements to getting Azure Log Analytics working for Power BI: configuring your Azure subscription in the Azure portal, and enabling Log analytics for Power BI in the Power BI Admin portal. The following sections take you through the steps in each, in turn.
 
-:::image type="content" source="media/desktop-log-analytics-overview/log-analytics-17.png" alt-text="Screenshot of connecting Log Analytics to Power B I.":::
+:::image type="content" source="media/desktop-log-analytics-overview/log-analytics-17.png" alt-text="Screenshot of connecting Log Analytics to Power BI.":::
 
-## Configure Azure Log Analytics
+## Pre-requisites
 
-Using Azure Log Analytics with Power BI requires some configuration of your Azure subscription. Make sure the user configuring the Log Analytics integration is also an **Owner** of the Log Analytics workspace. The following steps take you through the process.
+Before you can configure Log Analytics integration from Power BI, you need to [create a Log Analytics Workspace](https://docs.microsoft.com/azure/azure-monitor/logs/quick-create-workspace) in the Azure portal. You must also give permission in Azure for the Power BI service to write logs. The exact requirements are:
 
-1. Log into the Azure portal, select the subscription you want to use with Log Analytics and that contains your Log Analytics workspaces. Tn the **Settings** section, select **Resource providers** as shown in the following image.
+* Register the 'microsoft.insinghts'resource provider in the Azure subscription where you will collect Power BI log data
+* The user who will set up Log Analytics integration in Power BI must be in the Owner role for the Log Analytics Workspace. See FAQ for workarounds if Owner cannot be given.
+* The service principal 'Power BI Service' must be in the Owner role for the Log Analytics Workspace.
+
+The following section shows you how to meet these three requirements.
+
+### Enable the 'microsoft.insights' Resource Provider
+
+Log Analytics requires the 'microsoft.insights' resource provider enabled at the Azure subscription level. The following steps take you through the process.
+
+1. Log into the Azure portal, select the subscription you want to use with Log Analytics and that contains your Log Analytics workspaces. In the **Settings** section, select **Resource providers** as shown in the following image.
 
     :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-08.png" alt-text="Screenshot of selecting Resource providers in the Azure portal.":::
 
@@ -30,44 +40,24 @@ Using Azure Log Analytics with Power BI requires some configuration of your Azur
 
     :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-09.png" alt-text="Screenshot of selecting registering microsoft.insights in the Azure portal.":::
 
-3. Make sure the user configuring Log Analytics integration is also an **Owner** of the Log Analytics workspace. When you select **Access control (IAM)** for the subscription in the Azure portal, and then select **Role assignments** from the top selections in the panel, the current user must see at least two entries: **Admin** or **Owner** for the Log Analytics workspace (1, in the following image), and **Owner** or **Contributor** for the Power BI service (2, in the following image).
+### Set Permissions
+
+1. Make sure the user configuring Log Analytics integration and the Power BI Service principal are in the **Owner** role of the Log Analytics workspace. When you select **Access control (IAM)** for the subscription in the Azure portal, and then select **Role assignments** from the top selections in the panel, the current user must see at least two entries: **Owner** for the user who will configure Log Analytics (1, in the following image), and **Owner** for the Power BI service (2, in the following image).
 
     :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-10.png" alt-text="Screenshot of ensuring proper credentials in the Azure portal.":::
 
-
 Once you've completed those steps, the Azure Log Analytics configuration portion is complete. The next section shows you how to continue and complete the configuration in the Power BI Admin portal.
 
-## Configure the Power BI Admin portal
 
-There are two scopes for integrating Log Analytics for Power BI: tenant and workspace. The following sections describe each in turn.
+## Allow Workspace-level Logging from the Admin Portal
 
-### Tenant-level configuration
+A Power BI administrator must complete the following step to enable Azure Log Analytics for Power BI Premium workspaces. This will allow Power BI Premium workspace aministrators to send their workspace logs to Azure Log Analytics when the pre-requisites have been met. 
 
-Complete the following steps to enable Azure Log Analytics for your Power BI tenant. Remember that you can configure either or *both* scopes for Azure Log Analytics; if you're doing both, you need to complete the steps for each scope independently.
-
-1. In the **Power BI Admin portal** navigate to **Tenant Settings > Azure connections (Preview)** as shown in the following image.
-
-    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-11.png" alt-text="Screenshot of selecting Azure connections in the Power B I Admin portal.":::
-
-2. Expand the **Tenant-level Log Analytics (Preview)** section, then select **Connect to Azure** as shown in the following image.
-
-    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-13.png" alt-text="Screenshot of selecting Connect to Azure.":::
-
-3. Select the Azure subscription, Resource group, and then the Log Analytics workspace configured in the previous section, then select **Save**. When successfully completed, the expanded **Tenant-level Log Analytics (Preview)** section will look similar to the following image.
-
-    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-14.png" alt-text="Screenshot of completed configuration for connecting to Azure.":::
-
-
-When completed, tenant-level logging is enabled and ready for further configuration.
-
-### Workspace-level configuration
-
-Complete the following steps to enable Azure Log Analytics for a Power BI Premium workspace. 
-
-1. In the **Power BI Admin portal** navigate to **Tenant Settings > Azure connections (Preview)** and expand the **Workspace-level Log Analytics permissions (preview)**. To allow workspace admins to enable Log Analytics, select the checkbox as shown in the following image.
+1. In the **Power BI Admin portal** navigate to **Tenant Settings > Azure connections** and expand the **Workspace-level Log Analytics permissions (preview)**. To allow workspace admins to enable Log Analytics, select the checkbox as shown in the following image.
 
     :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-12.png" alt-text="Screenshot of allowing Log Analytics for Premium workspaces.":::
 
+## Configure Logging in a Premium Workspace
 
 1. In the **Premium** workspace, workspace admins can enable Log Analytics. To do so, navigate to **Settings** as shown in the following image.
 
@@ -84,22 +74,26 @@ Complete the following steps to enable Azure Log Analytics for a Power BI Premiu
 
 ## Disconnect Azure Log Analytics
 
-You can disconnect from Azure Log Analytics using the Power BI Admin portal, for either the tenant scope or the workspace scope. To disconnect, In the **Power BI Admin portal**, navigate to the **Log Analytics** settingsThe following image shows the warning displayed when the **Disconnect from Azure** button is selected.
+You can disconnect from Azure Log Analytics to stop sending logs to Azure. To disconnect, in the **Power BI Workspace Settings**, navigate to the **Log Analytics** settings. The following image shows the warning displayed when the **Disconnect from Azure** button is selected.
 
 :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-18.png" alt-text="Screenshot of disconnect warning.":::
 
  Select **Save** to disconnect. 
+ 
+> [!NOTE]
+> When you disconnect a Power BI workspace from Azure Log Analytics, logs are not deleted. Your data remains in the Azure and follows the storage and retention policies you set there. 
 
 
 ## Usage scenarios
 
 There are many ways that Azure Log Analytics and Power BI can help solve real-world challenges for your organization. Here are a few to consider:
 
-* Identifying periods of high or unusual activity
-* Analyzing dataset refresh 
+* Identifying periods of high or unusual Analysis Services engine activity by capacity, workspace, report or user
+* Analyzing query performance and trends, including external DirectQuery operations
+* Analyzing dataset refresh duration, overlaps and processing steps
 * Analyzing custom operations sent using the Premium XMLA endpoint
 
-There are also differences in patterns and use for the tenant scope, and the workspace scope. Send us feedback in the Power BI Community for how you're using logging, and how it has helped your organization.
+Send us feedback in the Power BI Community for how you're using logging, and how it has helped your organization.
 
 ## Error conditions and resolutions
 The following table provides a collection of common errors, the events or configurations that triggered them, and suggested resolutions. 
@@ -116,7 +110,9 @@ The following table provides a collection of common errors, the events or config
 
 ## Events and schema
 
-Once enabled, Azure Log Analytics will log the following **events**. For more information on these events, see [Analysis Services trace events](/analysis-services/trace-events/analysis-services-trace-events?view=asallproducts-allversions).
+
+Once enabled, Azure Log Analytics will log the following **event categories**. For more information on these events, see [Analysis Services trace events](/analysis-services/trace-events/analysis-services-trace-events?view=asallproducts-allversions).
+
 
 * AggregateTableRewriteQuery
 * Command
@@ -129,75 +125,83 @@ Once enabled, Azure Log Analytics will log the following **events**. For more in
 * Session Initialize
 * VertiPaqSEQuery
 
+>!Note The following events are currently not available in the Preview:
+>
+>* ProgressReportBegin
+>* ProgressReportCurrent
+>* ProgressReportError
+>* VertipaqSEQueryBegin
+>* VertipaqSEQueryEnd
+
+
 The following table describes the **schema**.
 
 | Property | Existing Azure Analysis Services property | Description |
 | --- | --- | --- |
-| **CustomerTenantId** |   | Unique identifier of the Power BI tenant. |
-| **WorkspaceId** |   | Unique identifier of the workspace being operated on. |
-| **PremiumCapacityId** |   | Unique identifier of the Premium capacity being operated on. |
-| **ApplicationContext** | ApplicationContext\_s | Property bag of unique identifiers providing details about the application executing the request. For example, report ID. |
-| **ApplicationName** | ApplicationName\_s | Contains the name of the client application that created the connection to the server. This column is populated with the values passed by the application rather than the displayed name of the program. |
-| **ClientHostName** | ClientHostName\_s | The name of the computer on which the client application is running. This column is populated with the values passed by the client application. |
-| **ClientProcessId** | ClientProcessID\_s | Contains the process ID of the client application. |
-| **ConnectionId** | ConnectionID\_s | Unique identifier of the connection. |
-| **CPUTime** | CPUTime\_s | Amount of CPU time (in milliseconds) used by the event. |
-| **DatabaseName** | DatabaseName\_s | Contains the name of the database in which the query is running. |
-| **Duration** | Duration\_s | Amount of time (in milliseconds) taken by the event. |
-| **EffectiveUsername** | EffectiveUsername\_s | The user on whose behalf the operation is running. Used when an end-user identity must be impersonated on the server. |
-| **Error** | Error\_s | Contains the error number of any error associated with the event. |
-| **EventClass** | EventClass\_s | Event Class is used to categorize events. |
-| **EventSubclass** | EventSubclass\_s | Event Subclass provides additional information about each event class. |
-| **IntegerData** | IntegerData\_s | Contains the integer data associated with the reported event, such as the current count of the number of rows processed for a processing event. |
-| **ObjectId** | ObjectID\_s | Object ID. |
-| **ObjectName** | ObjectName\_s | The name of the object for which the event occurred. |
-| **ObjectPath** | ObjectPath\_s | Object path. A comma-separated list of parents, starting with the object's parent. |
-| **ObjectReference** | ObjectReference\_s | Object reference. Encoded as XML for all parents, using tags to describe the object. |
-| **ObjectType** | ObjectType\_s | Identifies the type of object associated with a particular lock. For example, a lock timeout on a database will indicate the object type 100002, which is the Database object type |
-| **ProgressTotal** | ProgressTotal\_s | An integer representing how many rows have been processed in the current operation at a point in time |
-| **RequestParameters** | RequestParameters\_s | Contains the parameters for parameterized queries and commands associated with the event. |
-| **RequestProperties** | RequestProperties\_s | Contains the properties of the XMLA request. |
-| **SessionId** | SessionID\_g | Unique identifier of a session which represents multiple transactions occurring within the same scope, e.g.,  Sharing calculated members |
-| **Severity** | Severity\_s | Contains the server process ID (SPID) that uniquely identifies the user session associated with the query event. The SPID directly corresponds to the session GUID used by XMLA. |
-| **SpId** | SPID\_s | Server process ID. This uniquely identifies a user session. This directly corresponds to the session GUID used by XML/A. |
-| **StartTime** | StartTime\_t | Contains the time at which the event started, when available. |
-| **Success** | Success\_s | Indicates if the operation was successful. 1 = success. 0 = failure. |
-| **TextData** | TextData\_s | Contains verbose information associated with the event |
-| **RootActivityId** | RootActivityId\_g | Unique Identifier of request |
+| **ApplicationContext** | ApplicationContext_s | Property bag of unique identifiers providing details about the application executing the request. E.g. report ID. |
+| **ApplicationName** | ApplicationName_s | Contains the name of the client application that created the connection to the server. This column is populated with the values passed by the application rather than the displayed name of the program. |
+| **ArtifactId** | | Unique identifier of the resource logging the data. |
+| **ArtifactKind** | | Type of artifact logging the operation e.g. Dataset |
+| **ArtifactName** | DatabaseName_s | The name of the Power BI artifact logging this operation. |
+| **LogAnalyticsCategory** | | Unique | category of the events like like Audit/Security/Request. |
+| **CorrelationId** | | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
+| **CpuTimeMs** | CPUTime_s | Amount of CPU time (in milliseconds) used by the event. |
+| **CustomerTenantId** | | Customer's Power BI tenant identifier. |
+| **DatasetMode** | | The mode of the dataset. Import, DirectQuery or Composite. |
+| **DurationMs** | Duration_s | Amount of time (in milliseconds) taken by the operation. |
+| **EventText** | TextData_s | Contains verbose information associated with the operation e.g. DAX Query |
+| **ExecutingUser** | EffectiveUsername_s | The user executing the operation. |
+| **Identity** | | Information about user and claims. |
+| **Level** | Severity_s | Contains the severity level of the operation being logged. Success, Informational, Warning, or Error. |
+| **OperationDetailName** | EventSubclass_s | Additional details about the operation. |
+| **OperationName** | EventClass_s | The operation associated with the log record. |
+| **PremiumCapacityId** | | Unique identifier of the Premium capacity hosting the artifact being operated on. |
+| **ProgressCounter** | ProgressTotal_s | Progress counter. |
+| **Status** | | Status of the operation.  |
+| **StatusCode** | Error_s | Status code of the operation. It covers success and failure. |
+| **TenantId** | | Unique identifier of Microsoft's Power BI tenant. This does not refer to the customer tenant. |
+| **TimeGenerated** | | The timestamp (UTC) of when the log was generated. |
+| **User** | User_s | The user on whose behalf the operation is running. Used when an end user identity must be impersonated on the server. |
+| **WorkspaceId** | | Unique identifier of the workspace containing the artifact being operated on. |
+| **WorkspaceName** | ServerName_s | Name of the workspace containing the artifact. |
+| **XmlaObjectPath** | ObjectPath_s | Object path. A comma-separated list of parents, starting with the object's parent. |
+| **XmlaProperties** | RequestProperties_s | Properties of the XMLA request. |
+| **XmlaRequestId** | RootActivityId_g | Unique Identifier of request. |
+| **XmlaSessionId** | SPID_s | Analysis Services session identifier. |
 
-
-## Sample queries
-The following collection of sample queries may be helpful when using Azure Log Analytics with Power BI.
+## Sample Log Analytics KQL queries
+The following collection of sample queries may be helpful when using Azure Log Analytics with Power BI. They can be executed directly in the Azure Portal or through APIs to query the latest data, typically about 5-10 minutes old.
 
 
 ```sql
 // log count per day for last 30d
-PowerBIDatasetsTenantPreview
+PowerBIDatasetsWorkspace
 | where TimeGenerated > ago(30d)
 | summarize count() by format_datetime(TimeGenerated, 'yyyy-MM-dd')
 
+
 // average query duration by day for last 30d
-PowerBIDatasetsTenantPreview
+PowerBIDatasetsWorkspace
 | where TimeGenerated > ago(30d)
 | where OperationName == 'QueryEnd'
-| summarize avg(Duration) by format_datetime(TimeGenerated, 'yyyy-MM-dd')
+| summarize avg(DurationMs) by format_datetime(TimeGenerated, 'yyyy-MM-dd')
 
 
 //query duration percentiles for a single day in 1 hour bins
-PowerBIDatasetsTenantPreview
-| where TimeGenerated >= todatetime('2020-10-28') and TimeGenerated <= todatetime('2020-10-29')
+PowerBIDatasetsWorkspace
+| where TimeGenerated >= todatetime('2021-04-28') and TimeGenerated <= todatetime('2021-04-29')
 | where OperationName == 'QueryEnd'
-| summarize percentiles(Duration, 0.5, 0.9) by bin(TimeGenerated, 1h)
+| summarize percentiles(DurationMs, 0.5, 0.9) by bin(TimeGenerated, 1h)
 
 
 // refresh durations by workspace and dataset for last 7d
-PowerBIDatasetsTenantPreview
+PowerBIDatasetsWorkspace
 | where TimeGenerated > ago(30d)
 | where OperationName == 'CommandEnd'
-| where EffectiveUsername contains 'system'
-| where TextData contains 'refresh'
-| extend DatasetId = extract('^.*<DatabaseID>(.*)</DatabaseID>.*$', 1 , TextData)
-| project TimeGenerated, WorkspaceId, DatasetId, DurationSeconds = Duration/1000
+| where ExecutingUser contains 'system'
+| where EventText contains 'refresh'
+| project WorkspaceName, DatasetName = ArtifactName, DurationMs
+
 ```
 
 
@@ -206,8 +210,7 @@ PowerBIDatasetsTenantPreview
 The following articles can help you learn more about Power BI, and about its integration with Azure Log Analytics.
 
 * [Using Azure Log Analytics in Power BI (Preview)](desktop-log-analytics-overview.md)
-* [Troubleshoot XMLA endpoint connectivity](../../admin/troubleshoot-xmla-endpoint.md)
+* [Azure Log Analytics in Power BI FAQ](desktop-log-analytics-faq.md)
 * [What is Power BI Premium?](../../admin/service-premium-what-is.md)
 * [Organize work in the new workspaces in Power BI](../../collaborate-share/service-new-workspaces.md)
-* [Creating a dataflow](../dataflows/dataflows-create.md)
-* [Dataflows best practices](../dataflows/dataflows-best-practices.md)
+
