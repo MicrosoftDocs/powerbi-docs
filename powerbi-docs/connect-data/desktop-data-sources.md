@@ -318,6 +318,10 @@ When you select the **Export PBIDS** button, Power BI Desktop generates the PBID
 
 If you prefer to manually create your PBIDS files in a text editor, you must specify the required inputs for a single connection and save the file with the PBIDS extension. Optionally, you can also specify the connection mode as either DirectQuery or Import. If **mode** is missing/null in the file, the user who opens the file in Power BI Desktop is prompted to select **DirectQuery** or **Import**.
 
+> [!IMPORTANT]
+> Some data sources will generate an error if columns are encrypted in the data source. For example, if two or more columns in a Azure SQL Database are encrypted during an Import action, an error will be returned. For more information, see [SQL Database](/power-query/connectors/azuresqldatabase).
+
+
 
 ### PBIDS file examples
 
