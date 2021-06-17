@@ -53,6 +53,8 @@
       href: ./dataflows/dataflows-best-practices.md  
     - name: "Understanding and optimizing dataflow refresh"
       href: ./dataflows/dataflows-understand-optimize-refresh.md  
+     - name: "Using DirectQuery with dataflows"
+      href: ./dataflows/dataflows-directquery.md       
     - name: "Dataflows limitations and considerations"
       href: dataflows/dataflows-features-limitations.md            
   - name: How-to guides
