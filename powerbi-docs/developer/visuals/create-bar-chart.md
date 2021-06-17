@@ -89,6 +89,8 @@ Creating a bar chart visual involves the following steps:
   * Add objects to the property pane.
 * Packaging your visual.
 
+### Add 
+
 First, define the bar chart view model, and iterate on what's exposed to your visual as you build it.
 Define the chart by creating a file in the src directory with the following.
 
@@ -115,39 +117,6 @@ interface BarChartViewModel {
 interface BarChartDataPoint {
     value: number;
     category: string;
-};
-```
-
-Typically, it is easiest to build your visual with static data before adding Power BI's data binding. Using static data allows you to test your visual first. Your view model will not change even when data binding is added later.
-
-Add the following static data to your file:
-
-```typescript
-let testData: BarChartDataPoint[] = [
-    {
-        value: 10,
-        category: 'a'
-    },
-    {
-        value: 20,
-        category: 'b'
-    },
-    {
-        value: 1,
-        category: 'c'
-    },
-    {
-        value: 100,
-        category: 'd'
-    },
-    {
-        value: 500,
-        category: 'e'
-    }];
-
-let viewModel: BarChartViewModel = {
-    dataPoints: testData,
-    dataMax: d3.max(testData.map((dataPoint) => dataPoint.value))
 };
 ```
 
