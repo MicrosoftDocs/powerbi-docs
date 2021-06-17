@@ -41,7 +41,7 @@ You can add a visual-level filter to a visual in two different ways.
 * The fields that are in a visual are automatically filters for that visual. 
 * As the report designer, you can identify a field that isn't already the visual, and add that field directly to the **Visual level filters** bucket.
  
-By the way, this article uses the Retail Analysis sample, if you'd like to install it and follow along. Install the [Retail Analysis sample](sample-retail-analysis.md#get-the-downloadable-sample).
+By the way, this article uses the Retail Analysis sample, if you'd like to install it and follow along. Install the [Retail Analysis sample](sample-retail-analysis.md#get-the-built-in-sample).
 
 ### Filter with a field that's not in the visual
 

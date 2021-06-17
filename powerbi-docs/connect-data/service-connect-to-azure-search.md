@@ -11,11 +11,11 @@ ms.date: 08/29/2019
 LocalizationGroup: Connect to services
 ---
 # Connect to Azure Search with Power BI
-Azure Search Traffic Analytics allows you to monitor and understand the traffic to your Azure Search service. The Azure Search app for Power BI provides detailed insights on your Search data, including Search, Indexing, Service Stats and Latency from the last 30 days. More details can be found in the [Azure blog post](https://azure.microsoft.com/blog/analyzing-your-azure-search-traffic/).
+Azure Search Traffic Analytics allows you to monitor and understand the traffic to your Azure Search service. The Azure Search content pack for Power BI provides detailed insights on your Search data, including Search, Indexing, Service Stats and Latency from the last 30 days. More details can be found in the [Azure blog post](https://azure.microsoft.com/blog/analyzing-your-azure-search-traffic/).
 
 [!INCLUDE [include-short-name](../includes/service-deprecate-content-packs.md)]
 
-Connect to the [Azure Search app](https://app.powerbi.com/getdata/services/azure-search) for Power BI.
+Connect to the [Azure Search content pack](https://app.powerbi.com/getdata/services/azure-search) for Power BI.
 
 ## How to connect
 1. Select **Get Data** at the bottom of the nav pane.
@@ -45,7 +45,7 @@ Connect to the [Azure Search app](https://app.powerbi.com/getdata/services/azure
 * While your dataset will be scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## System requirements
-The Azure Search app requires Azure Search Traffic Analytics to be enabled on the account.
+The Azure Search content pack requires Azure Search Traffic Analytics to be enabled on the account.
 
 ## Troubleshooting
 Ensure the storage account name is correctly provided along with the full access key. The storage account name should correspond to the account configured with Azure Search Traffic Analytics.

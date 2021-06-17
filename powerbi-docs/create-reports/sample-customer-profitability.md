@@ -18,15 +18,15 @@ The Customer Profitability sample contains a dashboard, report, and dataset for 
 
 This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](http://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: a built-in sample in the service, a .pbix Power BI Desktop file, or an Excel workbook. See [Samples for Power BI](sample-datasets.md). 
 
-This tutorial explores the downloadable Customer Profitability sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
+This tutorial explores the built-in Customer Profitability sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
 
 You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace in the Power BI service. 
 
-## Get the Sample
+## Get the sample
 
-Before you can use the sample, you must first [download it in the Power BI service](#download-this-sample), or get the [.pbix file](#get-the-pbix-file-for-this-sample) or [Excel workbook](#get-the-excel-workbook-for-this-sample).
+Before you can use the sample, you must first [download it in the Power BI service](#download-the-built-in-sample), or get the [.pbix file](#get-the-pbix-file-for-this-sample) or [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
-### Download this sample
+### Download the built-in sample
 
 1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample.
 

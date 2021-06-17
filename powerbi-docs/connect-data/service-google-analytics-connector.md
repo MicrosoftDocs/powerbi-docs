@@ -13,7 +13,7 @@ LocalizationGroup: Connect to data
 ---
 # Use the Google Analytics connector for Power BI Desktop
 > [!NOTE]
-> The Google Analytics template app and the connector in Power BI Desktop rely on the Google Analytics Core Reporting API. As such, features and availability may vary over time.
+> The Google Analytics connector in Power BI Desktop relies6 on the Google Analytics Core Reporting API. As such, features and availability may vary over time.
 
 You can connect to Google Analytics data using the **Google Analytics** connector. To connect, follow these steps:
 

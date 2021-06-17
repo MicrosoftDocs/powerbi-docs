@@ -26,7 +26,7 @@ After you select **Get Data**, you can choose the data you want to access
 ## Discover content
 ![Screenshot of the Discover content section, showing partner logos.](media/service-get-data/pbi-getdata-discovercontent.png)
 
-The **Discover content** section contains data and reports you need already prepared for you. In Power BI, there are many services with *template apps* for Power BI, and more are being added all the time. Most services require you to have an account. To learn more, see [Connect to services you use with Power BI](service-connect-to-services.md).
+The **Discover content** section contains data and reports you need, already prepared for you. In Power BI, there are many services with *template apps* for Power BI, and more are being added all the time. Most services require you to have an account. To learn more, see [Connect to services you use with Power BI](service-connect-to-services.md).
 
 ## Create new content
 
