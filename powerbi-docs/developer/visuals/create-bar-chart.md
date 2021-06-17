@@ -36,6 +36,13 @@ Before you can start developing your Power BI visual, set up your environment fo
 
 [!INCLUDE[Power B I tutorials prerequisites](../../includes/visual-tutorial-prerequisites.md)]
 
+>[!NOTE]
+>
+>For the source code of a simple bar code that we will create in this tutorial, see [Simple bar code](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/tree/barChartTutorial).
+>For the full source code of a bar code with more advanced features, including tool-tips, selection, and a context menu, see [PowerBI visuals sample bar chart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart)
+>
+>To download and use these example, download the code as a zip file and open it in a new directory.
+
 ### Create a development project
 
 >[!NOTE]
@@ -70,9 +77,6 @@ To create a project for the bar chart visual:
     >[!IMPORTANT]
     >Do not close the PowerShell window until the end of the tutorial. To stop the visual from running, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
 
-<!--- 2. From the folder that contains your Power BI visual, run `npm install`. This installs all necessary dependencies and  connects the visual to Power BI. --->
-
-
 ## Create a bar chart visual
 
 Creating a bar chart visual involves the following steps:
@@ -85,21 +89,8 @@ Creating a bar chart visual involves the following steps:
   * Add objects to the property pane.
 * Packaging your visual.
 
->[!NOTE]
->
->For the source code of a simple bar code that we will create in this tutorial, see [Simple bar code](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/tree/barChartTutorial).
->For the full source code of a bar code with more advanced features, including tool-tips, selection, and a context menu, see [PowerBI visuals sample bar chart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart)
->
->To download and use these example, download the code as a zip file and open it in a new directory.
-
-
 First, define the bar chart view model, and iterate on what's exposed to your visual as you build it.
 Define the chart by creating a file in the src directory with the following.
-
->[!NOTE]
->
-> This tutorial uses version 5 of the [d3 JavaScript library](https://d3js.org/) to produce dynamic, interactive data visualizations.
->If you didn't install this library as part of your setup, [install the D3 JavaScript library](environment-setup.md#d3-javascript-library) now.
 
 ```typescript
 /**
