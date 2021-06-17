@@ -344,8 +344,8 @@ The following table shows which packages **are supported** in the Power BI servi
 |ggpmisc|0.2.16|https://cran.r-project.org/web/packages/ggpmisc/index.html|
 |ggpubr|0.1.6|https://cran.r-project.org/web/packages/ggpubr/index.html|
 |ggQC|0.0.31|https://cran.r-project.org/web/packages/ggQC/index.html|
-|ggraph|1.0.1|https://cran.r-project.org/web/packages/ggraph/index.html|
 |ggRandomForests|2.0.1|https://cran.r-project.org/web/packages/ggRandomForests/index.html|
+|ggraph|1.0.1|https://cran.r-project.org/web/packages/ggraph/index.html|
 |ggrepel|0.7.0|https://cran.r-project.org/web/packages/ggrepel/index.html|
 |ggridges|0.4.1|https://cran.r-project.org/web/packages/ggridges/index.html|
 |ggsci|2.8|https://cran.r-project.org/web/packages/ggsci/index.html|
