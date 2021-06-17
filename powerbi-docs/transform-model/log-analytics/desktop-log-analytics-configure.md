@@ -125,7 +125,8 @@ Once enabled, Azure Log Analytics will log the following **event categories**. F
 * Session Initialize
 * VertiPaqSEQuery
 
->!Note The following events are currently not available in the Preview:
+> [!Note]
+> The following events are currently not available in the Preview:
 >
 > - ProgressReportBegin
 > - ProgressReportCurrent
@@ -213,4 +214,3 @@ The following articles can help you learn more about Power BI, and about its int
 * [Azure Log Analytics in Power BI FAQ](desktop-log-analytics-faq.md)
 * [What is Power BI Premium?](../../admin/service-premium-what-is.md)
 * [Organize work in the new workspaces in Power BI](../../collaborate-share/service-new-workspaces.md)
-
