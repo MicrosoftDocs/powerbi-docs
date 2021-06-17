@@ -29,7 +29,7 @@ If you're using the original version of Power BI Premium (rather than using Prem
 * The **enhanced compute engine** must be enabled for the Premium capacity *and* the specific dataflow.
 * You must be running the latest version of Power BI Desktop.
 * You must specifically connect to the data source using the **Power BI dataflows** connector.
-* You must also take the following steps to connect using Power BI Desktop:
+* You must also take the following steps to connect using **Power BI Desktop**:
     1. Sign out of Power BI Desktop
     2. Clear the dataflows connection, which requires you sign in
         * Select **File > Options and settings > Data source settings > Delete Power BI dataflows**
