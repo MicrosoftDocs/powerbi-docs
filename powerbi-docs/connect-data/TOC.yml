@@ -251,7 +251,7 @@
         href: ../collaborate-share/desktop-troubleshooting-analyze-in-excel.md
       - name: "Error: We couldn't find any data in your Excel workbook"
         href: service-admin-troubleshoot-excel-workbook-data.md
-      - name: "How to refresh your Xero content pack credentials if refresh failed"
+      - name: "How to refresh your Xero template app credentials if refresh failed"
         href: service-refresh-xero-credentials.md
     - name: Connect to services
       items: 

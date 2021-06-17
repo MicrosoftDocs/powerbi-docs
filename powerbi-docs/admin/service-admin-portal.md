@@ -62,11 +62,11 @@ Here's a breakdown of what you can see in each tile:
     ![Distinct count of dashboards, reports, datasets](media/service-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
 
 
-* Most consumed dashboard by number of users who can access it. For example: You have a dashboard that you shared with three users. You also added the dashboard to a content pack that two different users connected to. The dashboard's count would be 6 (1 + 3 + 2).
+* Most consumed dashboard by number of users who can access it. For example: You have a dashboard that you shared with three users. You also added the dashboard to an app that two different users connected to. The dashboard's count would be 6 (1 + 3 + 2).
   
     ![Most consumed dashboards](media/service-admin-portal/powerbi-admin-usage-metrics-top-dashboards.png)
 
-* The most popular content users connected to. The content would be anything the users could reach through the Get Data process, such as SaaS content packs, Organizational content packs, files, or databases.
+* The most popular content users connected to. The content would be anything the users could reach through the Get Data process, such as SaaS template apps, files, or databases.
 
   
     ![Most consumed packages](media/service-admin-portal/powerbi-admin-usage-metrics-top-connections.png)

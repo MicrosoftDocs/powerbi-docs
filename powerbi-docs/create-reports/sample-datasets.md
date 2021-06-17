@@ -1,6 +1,6 @@
 ---
 title: Get samples for Power BI
-description: Sample content packs, apps, .pbix files, and Excel datasets for Power BI
+description: Samples, apps, .pbix files, and Excel datasets for Power BI
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: 
@@ -17,7 +17,7 @@ Say you're new to Power BI and want to try it out but don't have any data.  Or m
 Power BI offers different kinds of samples, for different purposes: 
 - A **[Power BI report](#sales--returns-sample-pbix-file) (.pbix file)** that you can view in the Data Stories Gallery, open and explore in Power BI Desktop, or upload to the Power BI service.
 - A **[sample app](#sample-app-from-appsource)** that you download from AppSource, also right in the Power BI service. Apps include dashboards, reports, and datasets. You can modify them, then distribute them to your colleagues.
-- **[Eight original built-in samples](#eight-original-samples)** in the Power BI service as *content packs*, with dashboards, reports, and datasets. You install them right in the Power BI service. The built-in samples are also available as Power BI reports (.pbix) and Excel workbooks (.xlsx).
+- **[Eight original built-in downloadable samples](#eight-original-samples)** in the Power BI service, with dashboards, reports, and datasets. You install them right in the Power BI service. The built-in samples are also available as Power BI reports (.pbix) and Excel workbooks (.xlsx).
 - **[Excel workbook](#download-sample-excel-files)** versions of the built-in samples, containing the data model and Power View sheets. You can explore or edit the data model in Excel, use the Excel workbook as a data source for a Power BI report. You can also upload the workbook as an Excel file and display the Excel visuals and PivotTables in Power BI reports. 
 - Also a **[Financial data sample workbook](sample-financial-download.md)**, a simple flat table in an Excel file available for download. It contains anonymized data with fictitious products, with sales divided by segments and countries/regions. It makes a useful basic data source for a Power BI report.
 
@@ -83,7 +83,7 @@ Read more about [publishing apps in Power BI](../collaborate-share/service-creat
 ## Eight original samples
 Eight original samples are available for you to use. Each sample represents a different industry. You can engage with each in different formats:
 
-- Install the [built-in content packs](#install-built-in-content-packs) in the Power BI service.
+- Install the [built-in samples](#install-built-in-content-packs) in the Power BI service.
 - Download the [Power BI report files](#download-original-sample-power-bi-files) (.pbix).
 - Download the [Excel workbook files](#download-sample-excel-files) (.xlsx), then upload them to the Power BI service.
 - Explore the [Excel files in Excel](#explore-excel-samples-inside-excel) itself.
@@ -92,7 +92,7 @@ The company obviEnce ([www.obvience.com](http://www.obvience.com/)) and Microsof
 
 ![Available samples](media/sample-datasets/power-bi-samples.png)
 
-Each of these samples is available in several formats: as a content pack, as an Excel workbook, and as a Power BI .pbix file. If you don't know what these things are, or how to get your hands on them -- don't worry. This article explains it all. For each of these samples, we've created a *tour*. Tours are articles that tell the story behind the sample and walk you through different scenarios. One scenario might be answering questions for your manager, another might be looking for competitive insights, or creating reports and dashboards to share, or explaining a business shift.
+Each of these samples is available in several formats: as a downloadable sample, as an Excel workbook, and as a Power BI .pbix file. If you don't know what these things are, or how to get your hands on them -- don't worry. This article explains it all. For each of these samples, we've created a *tour*. Tours are articles that tell the story behind the sample and walk you through different scenarios. One scenario might be answering questions for your manager, another might be looking for competitive insights, or creating reports and dashboards to share, or explaining a business shift.
 
 Before we get started, here are the legal guidelines for using these samples. After that, we introduce the samples and show how to use them.
 
@@ -152,9 +152,9 @@ This industry sample analyzes a manufacturing company, VanArsdel Ltd. It allows 
 
 This industry sample focuses on one of the typical supply chain challenges — supplier quality analysis. Two primary metrics are at play in this analysis: total number of defects and the total downtime that these defects caused. This sample has two main objectives: understand who the best and worst suppliers are, with respect to quality, and identify which plants do a better job finding and rejecting defects, to minimize downtime.
 
-### Install built-in content packs
+### Install built-in samples
 
-Let's start with the *content packs*. The built-in samples are available in the Power BI service; you don't have to leave Power BI to find them. A content pack is a bundle of one or more dashboards, datasets, and reports that someone creates and that can be used with the Power BI service. Each Power BI sample content pack contains a dataset, report, and dashboard.  Content packs are still available, but are being deprecated. They aren't available for Power BI Desktop.
+Let's start with the *downloadable samples*. The built-in samples are available in the Power BI service; you don't have to leave Power BI to find them. These samples are each a bundle of one or more dashboards, datasets, and reports that someone creates and that can be used with the Power BI service. Each Power BI downloadable sample contains a dataset, report, and dashboard. These downloadable samples are still available, but are being deprecated. They aren't available for Power BI Desktop.
 
 1. Open the Power BI service (app.powerbi.com) and sign in.
 2. Navigate to your My Workspace, or another workspace where you want to install the sample. 
@@ -167,14 +167,14 @@ Let's start with the *content packs*. The built-in samples are available in the 
 4. Select one of the samples to open a description of that sample, and choose **Connect**.  
 
    ![Select a sample > select Connect](media/sample-datasets/power-bi-connect.png)
-5. Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace. Use the samples to take Power BI for a test run.  
+5. Power BI imports the downloadable sample and adds a new dashboard, report, and dataset to your current workspace. Use the samples to take Power BI for a test run.  
 
    ![New content in workspace](media/sample-datasets/power-bi-sample-workspace.png)
 
-Now that you have data, you're on your way.  Try out some of our tutorials using the sample content packs or just open the Power BI service and explore.
+Now that you have data, you're on your way.  Try out some of our tutorials using the samples or just open the Power BI service and explore.
 
 ### Download original sample Power BI files
-Each of the sample content packs is also available as Power BI .pbix file. The .pbix files are designed to be used with Power BI Desktop.  
+Each of the downloadable samples is also available as Power BI .pbix file. The .pbix files are designed to be used with Power BI Desktop.  
 
 1. Download the files individually using the links below. Selecting these links saves the file automatically to your Downloads folder. 
 
@@ -191,7 +191,7 @@ Each of the sample content packs is also available as Power BI .pbix file. The .
 
 
 ### Download sample Excel files
-Each of the sample content packs is also available as an Excel workbook. The Excel workbooks are designed to be used with the Power BI service.  
+Each of the downloadable samples is also available as an Excel workbook. The Excel workbooks are designed to be used with the Power BI service.  
 
 1. Download the files individually using the links below, or [download a zip file of all the sample files](https://go.microsoft.com/fwlink/?LinkId=535020). If you're an advanced user, you might want to download the Excel workbooks to explore or edit the data models.
 

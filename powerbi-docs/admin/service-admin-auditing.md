@@ -290,7 +290,6 @@ The following operations are available in both the audit and activity logs.
 | Changed Power BI gateway admins                   | ChangeGatewayAdministrators                 |                                          |
 | Changed Power BI gateway data source users        | ChangeGatewayDatasourceUsers                |                                          |
 | Created an organizational custom visual                          | InsertOrganizationalGalleryItem                                |                                          |
-| Created organizational Power BI content pack      | CreateOrgApp                                |                                          |
 | Created deployment pipeline      | CreateAlmPipeline                                |                                          |
 | Created Power BI app                              | CreateApp                                   |                                          |
 | Created Power BI dashboard                        | CreateDashboard                             |                                          |

@@ -14,7 +14,8 @@ LocalizationGroup: Samples
 # Explore the Retail Analysis sample
 
 This tutorial shows you how to: 
-- Import the Retail Analysis sample content pack, add it to the Power BI service, and open the contents. A *content pack* is a type of sample where the dataset is bundled with a dashboard and report. 
+
+- Import the Retail Analysis sample, add it to the Power BI service, and open the contents. A *downloadable sample* is one in which the dataset is bundled with a dashboard and report. 
 - Open the Retail Analysis sample .pbix file in Power BI Desktop.
 
 If you'd like more background information, see [Sample datasets for Power BI](sample-datasets.md). In that article you'll learn all about the samples: how to get them, where to save them, how to use them, and some of the stories each sample can tell. 
@@ -22,8 +23,8 @@ If you'd like more background information, see [Sample datasets for Power BI](sa
 ## Prerequisites
 The samples are available for the Power BI service and Power BI Desktop. We're using the Retail analysis sample, if you want to follow along.
 
-The *Retail Analysis* sample content pack used in this tutorial consists of a dashboard, report, and dataset.
-To familiarize yourself with this particular content pack and its scenario, see
+The *Retail Analysis* downloadable sample used in this tutorial consists of a dashboard, report, and dataset.
+To familiarize yourself with this particular downloadable sample and its scenario, see
  [Retail Analysis sample for Power BI: Take a tour](sample-retail-analysis.md) before you begin.
 
 ## Import the sample in the Power BI service
@@ -45,7 +46,7 @@ To familiarize yourself with this particular content pack and its scenario, see
    ![Connect button](media/sample-tutorial-connect-to-the-samples/pbi_retailanalysissampleconnect.png)
 
 ## What was imported?
-With the sample content packs, when you select **Connect**, Power BI gets a copy of that content pack and stores it for you in the cloud. Because the person who created the content pack included a dataset, a report, and a dashboard, that's what you get when you select **Connect**. 
+With the downloadable samples, when you select **Connect**, Power BI gets a copy of that downloadable sample and stores it for you in the cloud. Because the person who created the downloadable sample included a dataset, a report, and a dashboard, that's what you get when you select **Connect**. 
 
 1. When you select **Connect**, Power BI creates the new dashboard and lists it on your **Dashboards** tab. 
    
@@ -77,7 +78,7 @@ Now explore the dashboard, dataset, and report on your own. There are many diffe
    > If the tile was created by using [Power BI Q&A](power-bi-tutorial-q-and-a.md), the Q&A page will open instead. If the tile was [pinned from Excel](service-dashboard-pin-tile-from-excel.md), Excel Online will open inside of Power BI.
    > 
    > 
-1. When someone shares a content pack with colleagues, they typically want to share only the insights, rather than provide direct access to the data. On the **Datasets** tab, you have several options for exploring your dataset. However, you can't view the rows and columns of your data, as you can in Power BI Desktop or Excel. 
+1. When someone shares a downloadable sample with colleagues, they typically want to share only the insights, rather than provide direct access to the data. On the **Datasets** tab, you have several options for exploring your dataset. However, you can't view the rows and columns of your data, as you can in Power BI Desktop or Excel. 
    
    ![Retail Analysis Sample dataset entry](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
    

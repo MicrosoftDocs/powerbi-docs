@@ -2002,12 +2002,22 @@
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-copy-refresh-access.md",
-            "redirect_url": "/power-bi/collaborate-share/service-organizational-content-pack-copy-refresh-access",
+            "redirect_url": "/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-organizational-content-pack-copy-refresh-access.md",
+            "redirect_url": "/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-create-and-publish.md",
             "redirect_url": "/power-bi/collaborate-share/service-organizational-content-pack-create-and-publish",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-organizational-content-pack-create-and-publish.md",
+            "redirect_url": "/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports",
             "redirect_document_id": true
         },
         {
@@ -2017,7 +2027,12 @@
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-introduction.md",
-            "redirect_url": "/power-bi/collaborate-share/service-organizational-content-pack-introduction",
+            "redirect_url": "/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-organizational-content-pack-introduction.md",
+            "redirect_url": "/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports",
             "redirect_document_id": true
         },
         {

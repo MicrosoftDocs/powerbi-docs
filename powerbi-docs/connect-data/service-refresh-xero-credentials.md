@@ -1,6 +1,6 @@
 ---
-title: How to refresh your Xero content pack credentials
-description: If you use the Xero Power BI content pack, you may have experienced a problem with the content pack’s daily refresh due to a recent Power BI service incident.
+title: How to refresh your Xero template app credentials
+description: If you use the Xero Power BI template app, you may have experienced a problem with the template app’s daily refresh due to a recent Power BI service incident.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: kayu
@@ -10,16 +10,16 @@ ms.topic: how-to
 ms.date: 08/10/2017
 LocalizationGroup: Troubleshooting
 ---
-# How to refresh your Xero content pack credentials if refresh failed
-If you use the Xero Power BI content pack, you may have experienced some problems with the content pack’s daily refresh due to a recent Power BI service incident.
+# How to refresh your Xero template app credentials if refresh failed
+If you use the Xero Power BI template app, you may have experienced some problems with the template app’s daily refresh due to a recent Power BI service incident.
 
-You can see if your content pack refreshed successfully by checking the last refresh status for your Xero dataset as shown in the screenshot below.
+You can see if your template app refreshed successfully by checking the last refresh status for your Xero dataset as shown in the screenshot below.
 
 ![Screenshot of the Xero dialog, showing the refresh status for your Xero dataset.](media/service-refresh-xero-credentials/powerbi-xero-refresh-failed.png)
 
-If you do see that refresh failed as shown above, please follow these steps to renew your content pack credentials.
+If you do see that refresh failed as shown above, please follow these steps to renew your template app credentials.
 
-1. Click **More options** (...) next to your Xero dataset, then click **Schedule refresh**. This opens the settings page for the Xero content pack.
+1. Click **More options** (...) next to your Xero dataset, then click **Schedule refresh**. This opens the settings page for the Xero template app.
    
     ![Screenshot of the Xero dialog, showing the Schedule Refresh selection.](media/service-refresh-xero-credentials/powerbi-xero-schedule-refresh.png)
 2. In the **Settings for Xero** page, select **Data source credentials** > **Edit credentials**.
@@ -40,7 +40,7 @@ If you do see that refresh failed as shown above, please follow these steps to r
 
 If you are still having refresh issues, please don’t hesitate to reach out to us at [https://support.powerbi.com](https://support.powerbi.com) 
 
-To learn more about the Xero content pack for Power BI, please visit the [Xero content pack help page](service-connect-to-xero.md).
+To learn more about the Xero template app for Power BI, please visit the [Xero template app help page](service-connect-to-xero.md).
 
 ### Next steps
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)
