@@ -411,7 +411,6 @@ The following table shows which packages **are supported** in the Power BI servi
 |htmlwidgets|1.3|https://cran.r-project.org/web/packages/htmlwidgets/index.html|
 |hts|5.1.5|https://cran.r-project.org/web/packages/hts/index.html|
 |httpuv|1.3.6.2|https://cran.r-project.org/web/packages/httpuv/index.html|
-|httr|1.3.1|https://cran.r-project.org/web/packages/httr/index.html|
 |huge|1.2.7|https://cran.r-project.org/web/packages/huge/index.html|
 |hunspell|2.9|https://cran.r-project.org/web/packages/hunspell/index.html|
 |IBrokers|0.9-12|https://cran.r-project.org/web/packages/IBrokers/index.html|
