@@ -15,7 +15,7 @@ LocalizationGroup: Get started
 
 ## June 2021 Update (2.94.242.0)
 
-We have an entire bouquet of blooming updates for Power BI this month. 
+With this month's release, warm and sunny updates are in the forecast for your reports. 
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
