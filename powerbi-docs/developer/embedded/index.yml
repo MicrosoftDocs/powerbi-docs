@@ -26,10 +26,8 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
-          - text: "What is embedding with Power BI?"
-            url: embedding.md
-          - text: "What is Power BI Embedded in Azure?"
-            url: azure-pbie-what-is-power-bi-embedded.md
+          - text: "What is Power BI embedded analytics?"
+            url: embedded-analytics-power-bi.md
           - text: "Frequently asked questions"
             url: embedded-faq.yml
       - linkListType: whats-new

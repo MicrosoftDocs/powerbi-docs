@@ -225,7 +225,7 @@ In this snippet, we assume that the pushable dataset is already in a workspace w
 ## Next steps
 
 [Power BI Embedded migration tool](migrate-tool.md)  
-[Embedding with Power BI](embedding.md)  
+[Embedding with Power BI](embedded-analytics-power-bi.md)  
 [How to migrate Power BI Embedded workspace collection content to Power BI](migrate-from-powerbi-embedded.md)  
 [How to embed your Power BI dashboards, reports and tiles](embed-sample-for-your-organization.md)  
 [Power BI Premium - what is it?](../../admin/service-premium-what-is.md)  
