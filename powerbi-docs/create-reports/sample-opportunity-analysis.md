@@ -12,7 +12,7 @@ LocalizationGroup: Samples
 ---
 # Opportunity Analysis sample for Power BI: Take a tour
 
-The Opportunity Analysis downloadable sample contains a dashboard, report, and dataset for a software company that has two sales channels: *direct* and *partner*. The sales manager created this dashboard to track opportunities and revenue by region, deal size, and channel.
+The Opportunity Analysis built-in sample contains a dashboard, report, and dataset for a software company that has two sales channels: *direct* and *partner*. The sales manager created this dashboard to track opportunities and revenue by region, deal size, and channel.
 
 This sample relies on two measures of revenue:
 
@@ -26,9 +26,9 @@ This sample relies on two measures of revenue:
 
 ![Dashboard for the Opportunity Analysis sample](media/sample-opportunity-analysis/opportunity1.png)
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](http://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: downloadable sample, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](http://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: built-in sample, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
 
-This tutorial explores the Opportunity Analysis downloadable sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
+This tutorial explores the Opportunity Analysis built-in sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
 
 You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace in the Power BI service. 
 
@@ -36,7 +36,7 @@ You don't need a Power BI license to explore the samples in Power BI Desktop. If
 
 Before you can use the sample, you must first [download it in the service](#get-the-content-pack-for-this-sample), or get the [.pbix file](#get-the-pbix-file-for-this-sample) or [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
-### Get the downloadable sample
+### Get the built-in sample
 
 1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample. 
 
@@ -50,7 +50,7 @@ Before you can use the sample, you must first [download it in the service](#get-
 4. Select **Opportunity Analysis Sample**, and then choose **Connect**.  
 
    ![Connect to sample](media/sample-opportunity-analysis/opportunity-connect.png)
-5. Power BI imports the downloadable sample, adding a new dashboard, report, and dataset to your current workspace.
+5. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to your current workspace.
 
    ![Opportunity Analysis Sample entry](media/sample-opportunity-analysis/opportunity-entry.png)
 

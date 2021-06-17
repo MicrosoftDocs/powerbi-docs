@@ -2003,7 +2003,7 @@
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-copy-refresh-access.md",
             "redirect_url": "/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/collaborate-share/service-organizational-content-pack-copy-refresh-access.md",
@@ -2013,7 +2013,7 @@
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-create-and-publish.md",
             "redirect_url": "/power-bi/collaborate-share/service-organizational-content-pack-create-and-publish",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/collaborate-share/service-organizational-content-pack-create-and-publish.md",
@@ -2028,7 +2028,7 @@
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-introduction.md",
             "redirect_url": "/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/collaborate-share/service-organizational-content-pack-introduction.md",

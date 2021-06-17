@@ -12,21 +12,21 @@ LocalizationGroup: Samples
 ---
 # Retail Analysis sample for Power BI: Take a tour
 
-The Retail Analysis downloadable sample contains a dashboard, report, and dataset that analyzes retail sales data of items sold across multiple stores and districts. The metrics compare this year's performance to last year's for sales, units, gross margin, and variance, as well as new-store analysis. 
+The Retail Analysis built-in sample contains a dashboard, report, and dataset that analyzes retail sales data of items sold across multiple stores and districts. The metrics compare this year's performance to last year's for sales, units, gross margin, and variance, as well as new-store analysis. 
 
 ![Dashboard for the Retail Analysis sample](media/sample-retail-analysis/retail1.png)
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](http://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: downloadable sample in the Power BI service, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](http://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: built-in sample in the Power BI service, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
 
-This tutorial explores the Retail Analysis downloadable sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
+This tutorial explores the Retail Analysis built-in sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
 
 You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace in the Power BI service. 
 
 ## Get the sample
 
- Before you can use the sample, you must first ,download it in the Power BI service](#get-the-content-pack-for-this-sample), or get the [.pbix file](#get-the-pbix-file-for-this-sample) or [Excel workbook](#get-the-excel-workbook-for-this-sample).
+ Before you can use the sample, you must first [download it in the Power BI service](#get-the-downloadable-sample), or get the [.pbix file](#get-the-pbix-file-for-this-sample) or [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
-### Get the downloadable sample
+### Get the built-in sample
 
 1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample. 
 
@@ -41,7 +41,7 @@ You don't need a Power BI license to explore the samples in Power BI Desktop. If
   
    ![Connect to sample](media/sample-retail-analysis/retail16.png)
    
-5. Power BI imports the downloadable sample, and then adds a new dashboard, report, and dataset to your current workspace.
+5. Power BI imports the built-in sample, and then adds a new dashboard, report, and dataset to your current workspace.
    
    ![Retail Analysis Sample entry](media/sample-retail-analysis/retail-entry.png)
   
