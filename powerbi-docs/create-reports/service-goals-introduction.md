@@ -75,3 +75,8 @@ The last section contains sample scorecards. As a new user, you can select one t
 - [Stay on top of your goals in Power BI](service-goals-check-in.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).
+
+
+## Test for me
+
+- hello!
