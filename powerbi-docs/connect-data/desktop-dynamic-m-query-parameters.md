@@ -102,6 +102,8 @@ Let's step through an example for passing a **single value** to a parameter dyna
 
 If the mapped column is set to **No** for Multi-select, you must use either a single select mode in the slicer, or require single select in the filter card.
 
+## Enable Select all
+
 There are additional steps if you want end-users to be able to use the **Select all** option in the slicer or filter card. 
 Let’s use the following scenario as an example. Within the **Model** tab of Power BI Desktop, you can see we have a field called **Country** (list of countries) that is bound to an M parameter called **countryNameMParameter**:
 
