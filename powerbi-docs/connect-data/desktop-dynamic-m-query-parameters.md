@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.custom: video-RE4M2hq
 ms.topic: how-to
-ms.date: 04/21/2021
+ms.date: 06/18/2021
 LocalizationGroup: Connect to data
 ---
 # Dynamic M query parameters in Power BI Desktop (preview)
@@ -105,29 +105,29 @@ If the mapped column is set to **No** for Multi-select, you must use either a si
 There are additional steps if you want end-users to be able to use the **Select all** option in the slicer or filter card. 
 Let’s use the following scenario as an example. Within the **Model** tab of Power BI Desktop, you can see we have a field called **Country** (list of countries) that is bound to an M parameter called **countryNameMParameter**:
 
-![Example of multi-select M Parameter](https://user-images.githubusercontent.com/47899466/119888750-5f4eca80-befb-11eb-9293-ee4405d330b4.png)
+![Example of multi-select M Parameter](media/desktop-dynamic-m-query-parameters/example-multi-select-m-parameter.png)
 
 You’ll also notice that this parameter is enabled for **Multi-select** but not enabled for **Select all**. 
 When we enable the **Select all** toggle, we’ll see an enabled input called **Select all value**:
 
-![Select all settings for M parameter](https://user-images.githubusercontent.com/47899466/119888997-ab9a0a80-befb-11eb-90f1-63e460b338c3.png)
+![Select all settings for M parameter](media/desktop-dynamic-m-query-parameters/select-all-settings-parameter.png)
 
 The **Select all value** is used to refer to the Select all option in the M Query. This value is passed to parameter as a list that contains the value you defined for select all. Therefore, when you are defining this value or using the default value, you will need to make sure that this value is unique and does not exist in the field bound to the parameter. 
 Once you have set the value or used the default value for Select all, you will then need to update the M Query to account for this Select all value. 
 
-![M query screenshot](https://user-images.githubusercontent.com/47899466/119889275-f87de100-befb-11eb-955b-39230e2fe799.png)
+![M query screenshot](media/desktop-dynamic-m-query-parameters/m-query-screenshot.png)
 
 To edit the M Query, you will need first launch the **Power Query Editor** and then select **Advanced Editor** in the Query section:
 
-![Advanced editor entry point in ribbon](https://user-images.githubusercontent.com/47899466/119889349-10edfb80-befc-11eb-9fba-595c0c5c6f0b.png)
+![Advanced editor entry point in ribbon](media/desktop-dynamic-m-query-parameters/launch-advanced-editor-from-power-query-editor.png)
 
 In the **Advanced Editor**, we need to add a Boolean expression that will evaluate to true if the parameter is enabled for **Multi-select** and contains the **Select all value** (else return false). For our example that would look like this: 
 
-![Example Boolean expression for Select all](https://user-images.githubusercontent.com/47899466/119889477-3418ab00-befc-11eb-8f78-9d92e33d6280.png)
+![Example Boolean expression for Select all](media/desktop-dynamic-m-query-parameters/select-all-boolean-used-source-query.png)
 
 Next, we will need to incorporate the result of this Select all Boolean expression into the source query. For our example, we have a Boolean query parameter in the source query called includeAllCountries that is set to the result of the Boolean expression from the previous step. We then use this parameter in a filter clause in the query, such that false for the Boolean will filter to the selected country name(s) and a true would effectively apply no filter:
 
-![Select all Boolean used in Source query](https://user-images.githubusercontent.com/47899466/119889516-45fa4e00-befc-11eb-89d1-ccbd3b3543e3.png)
+![Select all Boolean used in Source query](media/desktop-dynamic-m-query-parameters/m-query-boolean-expression-select-all.png)
 
 For reference here is the full query we used: 
 
@@ -165,7 +165,7 @@ in
 
 Once you have updated your M Query to account for this new **Select all value**, you can now use the **Select all** function in slicers or filters: 
 
-![Select all in slicer](https://user-images.githubusercontent.com/47899466/119900120-ae036100-bf09-11eb-88f2-b5185c0683c7.png)
+![Select all in slicer](media/desktop-dynamic-m-query-parameters/select-all-slicer.png)
 
 
 ## Potential security risk
