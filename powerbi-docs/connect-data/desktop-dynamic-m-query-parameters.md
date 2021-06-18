@@ -250,7 +250,7 @@ There are some considerations and limitations to consider when using dynamic M q
   * Starts with
   * Does not start with
   * Is not
-  * Does not contains
+  * Does not contain
   * Is blank
   * Is not blank
 
