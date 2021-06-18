@@ -112,7 +112,7 @@ Once your workbook is uploaded, you get a notification that the workbook is now 
 
 ![Screenshot of the Workbooks section, showing the Excel workbook.](media/service-excel-workbook-files/excel_import_9.png)
 
-Local Excel workbooks open in Excel Online *within* Power BI. Unlike Excel workbooks stored OneDrive or SharePoint - Team Sites, but you can't edit local Excel files within Power BI.
+Local Excel workbooks open in Excel Online *within* Power BI. Unlike Excel workbooks stored OneDrive or SharePoint - Team Sites, you can't edit local Excel files within Power BI.
 
 ## Publish from Excel 2016 to your Power BI site
 Using the **Publish to Power BI** feature in Excel 2016 is effectively the same as using **Get Data** in Power BI to import or connect to your file. We won't go into the details here, but you can see [Publish to Power BI from Excel 2016](service-publish-from-excel.md) to learn more.
