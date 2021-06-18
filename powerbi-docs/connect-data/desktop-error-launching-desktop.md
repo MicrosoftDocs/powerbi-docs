@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 11/14/2020
+ms.date: 06/18/2021
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshoot opening Power BI Desktop
@@ -53,6 +53,12 @@ When you attempt to connect to a SQL Server database, you may come across an err
 You can often resolve the issue if you open Power BI Desktop as an administrator before you make the SQL Server connection.
 
 After you open Power BI Desktop as an administrator and establish the connection, the required DLLs are registered properly. After that, opening Power BI Desktop as an administrator isn't necessary. In cases where you are connecting to SQL server with alternate windows credentials, you will have to open Power BI Desktop as an administrator every time you connect.
+
+## "Unable to sign in" issue
+
+**Issue** You see the message, "**Unable to sign in** Sorry, we encountered an error while trying to sign you in. Details: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel."
+
+**Solution** You need to uncheck the **Enable certification revocation check**. See [Certificate revocation check, Power BI Desktop](../create-reports/desktop-certificate-revocation.md) for details. 
 
 ## Get help with other launch issues
 
