@@ -20,8 +20,6 @@ You cannot open encrypted PBIX files using a Power BI Desktop version that does 
 
 If you need to continue using Power BI Desktop, the recommended resolution is to update it to a version that supports information protection. You can download the [latest version of Power BI Desktop](https://www.microsoft.com/download/confirmation.aspx?id=58494) (this link is a direct download link to the installation executable). The latest version of Power BI Desktop supports information protection and can decrypt and open any encrypted PBIX file.
 
-###
-
 ## Resolve issues with the On-premises data gateway and Power BI Desktop
 
 In Power BI Desktop, users who installed and are running previous versions of the *Power BI On-premises data gateway* can be blocked from opening Power BI Desktop, because of administrative policy restrictions that the Power BI on-premises gateway placed on named pipes on the local machine.
@@ -56,9 +54,11 @@ After you open Power BI Desktop as an administrator and establish the connection
 
 ## "Unable to sign in" issue
 
-**Issue** You see the message, "**Unable to sign in** Sorry, we encountered an error while trying to sign you in. Details: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel."
+You may see a message similar to this:
 
-**Solution** You need to uncheck the **Enable certification revocation check**. See [Certificate revocation check, Power BI Desktop](../create-reports/desktop-certificate-revocation.md) for details. 
+"Unable to sign in. Sorry, we encountered an error while trying to sign you in. Details: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel."
+
+**Solution**: You need to uncheck the **Enable certification revocation check**. See [Certificate revocation check, Power BI Desktop](../create-reports/desktop-certificate-revocation.md) for details. 
 
 ## Get help with other launch issues
 
