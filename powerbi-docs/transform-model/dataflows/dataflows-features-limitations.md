@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 04/09/2021
+ms.date: 06/18/2021
 LocalizationGroup: Data from files
 ---
 # Dataflows limitations and considerations
@@ -56,7 +56,7 @@ More about supported Dataflows REST APIs can be found in the [REST API reference
 
 * Dataflows can be overwritten with the *CreateOrOverwrite* parameter, if they have initially been created using the import API
 
-## Dataflows in shared
+## Dataflows in shared capacities
 
 There are limitations for Dataflows in shared capacities:
 
