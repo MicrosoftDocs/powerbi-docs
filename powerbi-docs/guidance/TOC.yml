@@ -136,6 +136,34 @@
         href: powerbi-migration-deploy-support-monitor.md
       - name: "Learn from customer Power BI migrations"
         href: powerbi-migration-learn-from-customers.md
+  - name: Adoption framework
+    items: 
+      - name: "Framework overview"
+        href: powerbi-adoption-framework-overview.md
+      - name: "Framework maturity levels"
+        href: powerbi-adoption-framework-maturity-levels.md
+      - name: "Data culture"
+        href: powerbi-adoption-framework-data-culture.md
+      - name: "Executive sponsorship"
+        href: powerbi-adoption-framework-executive-sponsorship.md
+      - name: "Content ownership"
+        href: powerbi-adoption-framework-content-ownership-and-management.md
+      - name: "Content delivery scope"
+        href: powerbi-adoption-framework-content-delivery-scope.md
+      - name: "Center of Excellence"
+        href: powerbi-adoption-framework-center-of-excellence.md
+      - name: "Governance"
+        href: powerbi-adoption-framework-governance.md
+      - name: "Mentoring and user enablement"
+        href: powerbi-adoption-framework-mentoring-and-user-enablement.md
+      - name: "Community of practice"
+        href: powerbi-adoption-framework-community-of-practice.md
+      - name: "User support"
+        href: powerbi-adoption-framework-user-support.md
+      - name: "System oversight"
+        href: powerbi-adoption-framework-system-oversight.md
+      - name: "Framework conclusion"
+        href: powerbi-adoption-framework-conclusion.md
   - name: Center of Excellence (COE)
     items: 
       - name: "Microsoft's BI transformation"
