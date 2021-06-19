@@ -81,7 +81,7 @@ Data discovery contributes to adoption efforts and the implementation of governa
 - Helping people understand who owns and manages data artifacts
 - Establishing connections between consumers, creators, and owners
 
-In Power BI, the [datasets hub](../connect-data/service-datasets-hub.md) and [use of endorsements](../collaborate-share/service-endorse-content.md) promote data discovery of existing [shared datasets](../connect-data/service-datasets-across-workspaces.md) (which can be [reused and augmented](../connect-data/desktop-directquery-datasets-azure-analysis-services.md) by self-service creators). Data catalog solutions, such as [Azure Purview](https://docs.microsoft.com/azure/purview/overview) (which can scan an entire Power BI tenant), are also extremely valuable for data discovery purposes and can help with additional metadata descriptions for cataloging context and meaning.
+In Power BI, the [datasets hub](../connect-data/service-datasets-hub.md) and [use of endorsements](../collaborate-share/service-endorse-content.md) promote data discovery of existing [shared datasets](../connect-data/service-datasets-across-workspaces.md) (which can be [reused and augmented](../connect-data/desktop-directquery-datasets-azure-analysis-services.md) by self-service creators). Data catalog solutions, such as [Azure Purview](/azure/purview/overview) (which can scan an entire Power BI tenant), are also extremely valuable for data discovery purposes and can help with additional metadata descriptions for cataloging context and meaning.
 
 ## Data democratization
 

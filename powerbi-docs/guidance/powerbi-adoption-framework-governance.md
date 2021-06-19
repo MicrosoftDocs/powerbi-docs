@@ -301,7 +301,7 @@ The following list includes items that you may choose to prioritize when introdu
 - Who is allowed to be a [Power BI administrator](powerbi-adoption-framework-system-oversight.md)
 - [Security](../admin/service-admin-power-bi-security.md), privacy, and data protection requirements, and allowed actions for data artifacts assigned to each [sensitivity label](../admin/service-security-apply-data-sensitivity-labels.md).
 - Allowed or encouraged use of [personal gateways](../connect-data/service-gateway-personal-mode.md).
-- Allowed or encouraged use of [self-service purchasing](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide&preserve-view=true) of user licenses.
+- Allowed or encouraged use of [self-service purchasing](/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide&preserve-view=true) of user licenses.
 - Requirements for who may [certify](../collaborate-share/service-endorse-content.md) (endorse) data artifacts, as well as requirements which must be met.
 - Application lifecycle management for managing content through its entire lifecycle including [dev/test/prod stages](../create-reports/deployment-pipelines-overview.md).
 - Additional requirements applicable to critical content such as data quality verifications and documentation.

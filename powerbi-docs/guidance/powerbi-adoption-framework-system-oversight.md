@@ -25,9 +25,9 @@ Administration is a broad and deep topic. The goal for this article is to introd
 
 ## Power BI administrators
 
-The Power BI administrator role is a specific role in Microsoft 365 which delegates a [subset of Power BI-specific](https://docs.microsoft.com/power-platform/admin/use-service-admin-role-manage-tenant#service-administrator-permission-matrix) management activities. Global Microsoft 365 administrators are also an implicit Power BI administrator.
+The Power BI administrator role is a specific role in Microsoft 365 which delegates a [subset of Power BI-specific](/power-platform/admin/use-service-admin-role-manage-tenant#service-administrator-permission-matrix) management activities. Global Microsoft 365 administrators are also an implicit Power BI administrator.
 
-A key governance decision is who to permit to be a Power BI administrator. This is a centralized role which affects your entire Power BI tenant. Ideally, there are [2-4 people in the organization](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true#security-guidelines-for-assigning-roles) who have been trained on how to manage the Power BI service, and who are in close coordination with the [Center of Excellence](powerbi-adoption-framework-center-of-excellence.md) (COE).
+A key governance decision is who to permit to be a Power BI administrator. This is a centralized role which affects your entire Power BI tenant. Ideally, there are [2-4 people in the organization](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true#security-guidelines-for-assigning-roles) who have been trained on how to manage the Power BI service, and who are in close coordination with the [Center of Excellence](powerbi-adoption-framework-center-of-excellence.md) (COE).
 
 ### High privilege role
 
@@ -144,7 +144,7 @@ The following [software installations](https://powerbi.microsoft.com/downloads/)
 
 It's very important for all content creators who collaborate with each other to be on the same version of the software (particularly Power BI Desktop which is updated monthly). Ideally, software updates are available from the Microsoft Store or installed by an automated IT process so that users don't have to take any specific action to obtain updates.
 
-Preferably, software updates are released promptly so that users can take advantage of new capabilities that are continually released and that their experience matches public documentation. It's also important to be aware of the [update channel](https://docs.microsoft.com/deployoffice/overview-update-channels) being used for Microsoft 365 applications since it has a big impact on Excel integrations with Power BI.
+Preferably, software updates are released promptly so that users can take advantage of new capabilities that are continually released and that their experience matches public documentation. It's also important to be aware of the [update channel](/deployoffice/overview-update-channels) being used for Microsoft 365 applications since it has a big impact on Excel integrations with Power BI.
 
 Other common items that may need to be installed on user machines include:
 
@@ -155,7 +155,7 @@ Other common items that may need to be installed on user machines include:
 
 In addition to software installations, user machines may be managed for:
 
-- Group policy settings (one example: allowed use of [custom visuals](https://docs.microsoft.com/admin/organizational-visuals#certified-power-bi-visuals) so that the Power BI Desktop experience aligns with that of the Power BI service to ensure a consistent user experience).
+- Group policy settings (one example: allowed use of [custom visuals](/admin/organizational-visuals#certified-power-bi-visuals) so that the Power BI Desktop experience aligns with that of the Power BI service to ensure a consistent user experience).
 - Registry settings (examples: disable the Power BI Desktop [sign-in form](../admin/desktop-admin-sign-in-form.md) or [tune Query Editor performance](../create-reports/desktop-evaluation-configuration.md)).
 
 > [!TIP]
@@ -247,7 +247,7 @@ There are three types of gateways:
 3. **Virtual network data gateway.** A Microsoft managed service which supports connectivity for many users. Supports connectivity for datasets and dataflows stored in workspaces assigned to Premium capacity or Premium Per User.
 
 > [!TIP]
-> The decision of [who is permitted to install gateway software](https://docs.microsoft.com/power-platform/admin/onpremises-data-gateway-management#manage-gateway-installers) is a governance decision. For most organizations, use of options 1 or 3 above should be strongly encouraged over option 2 because they are more scalable and manageable.
+> The decision of [who is permitted to install gateway software](/power-platform/admin/onpremises-data-gateway-management#manage-gateway-installers) is a governance decision. For most organizations, use of options 1 or 3 above should be strongly encouraged over option 2 because they are more scalable and manageable.
 
 #### Decentralized gateway management
 
@@ -287,7 +287,7 @@ Every user of the Power BI service needs a commercial license which is integrate
 There are two approaches to procuring subscriptions:
 
 1. Centralized: Microsoft 365 billing administrator purchases a subscription for [Power BI Pro or Premium Per User](https://powerbi.microsoft.com/pricing/). This is the most common way of managing subscriptions and license assignments for most larger organizations.
-2. Decentralized: Individual departments purchase a subscription via [self-service purchasing](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide&preserve-view=true).
+2. Decentralized: Individual departments purchase a subscription via [self-service purchasing](/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide&preserve-view=true).
 
 ### Self-service purchasing
 
@@ -303,7 +303,7 @@ Consider disabling self-service purchasing when:
 - You have centralized procurement processes in place to meet regulatory, security, and governance requirements.
 - Discounted pricing is obtained through an Enterprise Agreement (EA).
 - Existing processes are in place to handle intercompany chargebacks.
-- Existing processes are in place to handle [group-based](https://docs.microsoft.com/azure/active-directory/enterprise-users/licensing-groups-assign) licensing assignments.
+- Existing processes are in place to handle [group-based](/azure/active-directory/enterprise-users/licensing-groups-assign) licensing assignments.
 - Prerequisites are required for obtaining a license (such as approval, justification, training, or a governance policy requirement).
 - There's a valid need, such as a regulatory requirement, to control access to the Power BI service very closely.
 
@@ -338,11 +338,11 @@ The [Power BI security whitepaper](whitepaper-powerbi-security.md) is an excelle
 
 ### User responsibilities
 
-Some organizations ask Power BI users to accept a self-service user acknowledgement. This is a document that explains the user's responsibilities and expectations for safeguarding organizational data. One way to automate the implementation is with an [Azure Active Directory terms of use policy](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use). The user is required to agree to the policy before they are permitted to visit the Power BI service for the first time (or on a recurring basis, like an annual renewal).
+Some organizations ask Power BI users to accept a self-service user acknowledgement. This is a document that explains the user's responsibilities and expectations for safeguarding organizational data. One way to automate the implementation is with an [Azure Active Directory terms of use policy](/azure/active-directory/conditional-access/terms-of-use). The user is required to agree to the policy before they are permitted to visit the Power BI service for the first time (or on a recurring basis, like an annual renewal).
 
 ### Data security
 
-In a [cloud shared responsibility model](https://docs.microsoft.com/azure/security/fundamentals/shared-responsibility), securing the data itself is always the responsibility of the customer. With a self-service BI platform, self-service content creators have a lot of responsibility for properly securing the content that's shared with colleagues. The COE should provide [documentation and training](powerbi-adoption-framework-mentoring-and-user-enablement.md) where relevant to assist content creators with best practices (particularly situations for dealing with ultra-sensitive data).
+In a [cloud shared responsibility model](/azure/security/fundamentals/shared-responsibility), securing the data itself is always the responsibility of the customer. With a self-service BI platform, self-service content creators have a lot of responsibility for properly securing the content that's shared with colleagues. The COE should provide [documentation and training](powerbi-adoption-framework-mentoring-and-user-enablement.md) where relevant to assist content creators with best practices (particularly situations for dealing with ultra-sensitive data).
 
 Administrators can be helpful as well by following best practices themselves, and by raising concerns when they see issues which could be discovered when [managing workspaces](../admin/service-admin-portal.md#workspaces), [auditing user activities](../admin/service-admin-auditing.md), or managing [gateway credentials and users](../connect-data/service-gateway-data-sources.md#add-a-data-source). There are also a few [tenant settings](../admin/service-admin-portal.md#tenant-settings) that are usually highly limited to few users (for instance, the ability to [publish to web](../admin/service-admin-portal.md#publish-to-web) or the ability to [publish apps to the entire organization](../admin/service-admin-portal.md#publish-content-packs-and-apps-to-the-entire-organization)).
 
@@ -356,9 +356,9 @@ External user access is controlled by [tenant settings](../admin/service-admin-p
 
 Power BI supports capabilities for information protection and data loss prevention through its integration with:
 
-- [Microsoft Integration Protection](https://docs.microsoft.com/microsoft-365/compliance/information-protection) (MIP). MIP is a collection of features and capabilities with an objective to discover, classify, and protect sensitive information. Its philosophy is to "know your data, protect your data, prevent data loss, and govern your data."
+- [Microsoft Integration Protection](/microsoft-365/compliance/information-protection) (MIP). MIP is a collection of features and capabilities with an objective to discover, classify, and protect sensitive information. Its philosophy is to "know your data, protect your data, prevent data loss, and govern your data."
 
-- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) (MCAS). MCAS is a cloud access security broker (CASB) with an objective to audit, monitor, and alert based on activities. See the monitoring discussion later in this article for examples of how MCAS can be used for overseeing the Power BI service.
+- [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) (MCAS). MCAS is a cloud access security broker (CASB) with an objective to audit, monitor, and alert based on activities. See the monitoring discussion later in this article for examples of how MCAS can be used for overseeing the Power BI service.
 
 Power BI's information protection capabilities are built upon [sensitivity labels](whitepaper-powerbi-security.md#data-loss-prevention-dlp) as its foundation. Sensitivity labels are an important building block for data protection, data retention, data loss prevention, compliance, and insider risk management for Microsoft 365 services (including Power BI, as well as other Microsoft services in use by the organization).
 
@@ -379,13 +379,13 @@ For organizations with requirements to store data within a geographic region, Pr
 
 ### Encryption keys
 
-Microsoft handles encryption of data-at-rest in Microsoft data centers with transparent server-side encryption and auto-rotation of certificates. For customers with regulatory requirements to [manage the Premium encryption key themselves](../admin/service-encryption-byok.md), Premium capacity can be configured to use [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/basic-concepts). Using customer-managed keys (also known as 'bring-your-own-key' or BYOK), is a precaution to ensure that, in the event of a human error by a service operator, customer data cannot be exposed.
+Microsoft handles encryption of data-at-rest in Microsoft data centers with transparent server-side encryption and auto-rotation of certificates. For customers with regulatory requirements to [manage the Premium encryption key themselves](../admin/service-encryption-byok.md), Premium capacity can be configured to use [Azure Key Vault](/azure/key-vault/general/basic-concepts). Using customer-managed keys (also known as 'bring-your-own-key' or BYOK), is a precaution to ensure that, in the event of a human error by a service operator, customer data cannot be exposed.
 
 Note that [Premium Per User](../admin/service-premium-per-user-faq.yml#using-premium-per-user--ppu-) (PPU) only supports BYOK when it's enabled for the entire Power BI tenant.
 
 ## Auditing and monitoring
 
-A wealth of metadata is available for understanding what's happening within your Power BI tenant. The primary source of information is from the Power BI [activity log](../admin/service-admin-auditing.md) which captures information about many different types of activities that users perform. There are also a variety of [REST APIs](https://docs.microsoft.com/rest/api/power-bi/) that provide additional information about workspaces, apps, datasets, and more. Of particular interest to administrators are the [admin APIs](https://docs.microsoft.com/rest/api/power-bi/admin) which provide a way to extract metadata for the entire tenant. The [Power BI Management Module](https://docs.microsoft.com/powershell/power-bi/overview?view=powerbi-ps&preserve-view=true) is a set of PowerShell commands which make it easier to obtain metadata than dealing directly with the APIs (however, substantially more information is available directly from the APIs).
+A wealth of metadata is available for understanding what's happening within your Power BI tenant. The primary source of information is from the Power BI [activity log](../admin/service-admin-auditing.md) which captures information about many different types of activities that users perform. There are also a variety of [REST APIs](/rest/api/power-bi/) that provide additional information about workspaces, apps, datasets, and more. Of particular interest to administrators are the [admin APIs](/rest/api/power-bi/admin) which provide a way to extract metadata for the entire tenant. The [Power BI Management Module](/powershell/power-bi/overview?view=powerbi-ps&preserve-view=true) is a set of PowerShell commands which make it easier to obtain metadata than dealing directly with the APIs (however, substantially more information is available directly from the APIs).
 
 ### Auditing
 
@@ -408,7 +408,7 @@ When considering needs for creating auditing reports, consider the following:
 - What do you want people to stop doing?
 
 > [!TIP]
-> The raw data files which contain the auditing data should be stored in a very secure location, preferably one which is immutable (allowing no modifications or deletions). Immutable storage allows your auditors to rely on this data if required. A service like [Azure Data Lake Storage Gen 2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) is a flexible and low-cost alternative for this purpose.
+> The raw data files which contain the auditing data should be stored in a very secure location, preferably one which is immutable (allowing no modifications or deletions). Immutable storage allows your auditors to rely on this data if required. A service like [Azure Data Lake Storage Gen 2](/azure/storage/blobs/data-lake-storage-introduction) is a flexible and low-cost alternative for this purpose.
 
 ### Monitoring
 
@@ -417,7 +417,7 @@ When considering needs for creating auditing reports, consider the following:
 - Audit, monitor, and alert based on activities
 - Create data loss prevention policies
 - Detect unusual behaviors and risky sessions
-- Limit activities performed by applications (in conjunction with [Azure Active Directory conditional access app control](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad))
+- Limit activities performed by applications (in conjunction with [Azure Active Directory conditional access app control](/cloud-app-security/proxy-intro-aad))
 
 Some very powerful [Power BI monitoring and protection](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/protect-your-power-bi-instance-using-microsoft-cloud-app/ba-p/2166872) capabilities are available with MCAS. For instance, you could:
 
@@ -429,7 +429,7 @@ Some very powerful [Power BI monitoring and protection](https://techcommunity.mi
 - Find when someone outside a predefined security group views specific content in the Power BI service.
 
 > [!CAUTION]
-> Licensing, cost, and administrative permissions for MCAS are all handled separately from Power BI. You can create an [application-specific admin](https://docs.microsoft.com/cloud-app-security/manage-admins#built-in-cloud-app-security-admin-roles) with permissions scoped to monitoring just the Power BI service.
+> Licensing, cost, and administrative permissions for MCAS are all handled separately from Power BI. You can create an [application-specific admin](/cloud-app-security/manage-admins#built-in-cloud-app-security-admin-roles) with permissions scoped to monitoring just the Power BI service.
 
 ## Planning for change
 
@@ -447,7 +447,7 @@ The [Power BI release plan](https://powerbi.microsoft.com/roadmap/) is where cus
 Considerations and key actions you can take to improve system oversight:
 
 - Verify who is permitted to be a Power BI administrator. If possible, reduce the number of people granted this role if it's more than a few people.
-- If you have people who occasionally need the Power BI administrator role, consider implementing [Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) (PIM) in Azure Active Directory for just-in-time access to the role which will expire after a few hours.
+- If you have people who occasionally need the Power BI administrator role, consider implementing [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) (PIM) in Azure Active Directory for just-in-time access to the role which will expire after a few hours.
 - Check the status of cross-training and documentation in place for handling Power BI administration responsibilities.
 
 Considerations and key actions you can take to improve management of the Power BI service:
@@ -492,7 +492,7 @@ Considerations and key actions you can take to improve security and data protect
 
 Considerations and key actions you can take to begin or improve auditing and monitoring:
 
-- Begin retrieving data from the Power BI activity log if you are not currently compiling the raw data. The easiest way to get started is to use the [Get-PowerBIActivityEvent](https://docs.microsoft.com/powershell/module/microsoftpowerbimgmt.admin/get-powerbiactivityevent?view=powerbi-ps&preserve-view=true) PowerShell cmdlet included with the Power BI Management Module. Retrieve and store the raw data without filtering or formatting, to ensure that all data elements are available for future analysis. A file system or data lake is an ideal location.
+- Begin retrieving data from the Power BI activity log if you are not currently compiling the raw data. The easiest way to get started is to use the [Get-PowerBIActivityEvent](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiactivityevent?view=powerbi-ps&preserve-view=true) PowerShell cmdlet included with the Power BI Management Module. Retrieve and store the raw data without filtering or formatting, to ensure that all data elements are available for future analysis. A file system or data lake is an ideal location.
 - Over time, determine what additional auditing data would be helpful to complement the activity log data.
 
 ## Maturity levels
@@ -511,8 +511,8 @@ The following maturity levels will help you assess the current state of your Pow
 
 Other helpful resources include:
 
-- [Microsoft Learn – Administer Power BI Part 1](https://docs.microsoft.com/learn/paths/administer-power-bi-part-1/)
-- [Microsoft Learn – Administer Power BI Part 2](https://docs.microsoft.com/learn/paths/administer-power-bi-part-2/)
+- [Microsoft Learn – Administer Power BI Part 1](/learn/paths/administer-power-bi-part-1/)
+- [Microsoft Learn – Administer Power BI Part 2](/learn/paths/administer-power-bi-part-2/)
 - [Administrator In A Day Training – Day 1](https://aka.ms/AdmPBI1)
 - [Administrator In A Day Training – Day 2](https://aka.ms/AdmPBI2)
 - [Power BI security whitepaper](whitepaper-powerbi-security.md)

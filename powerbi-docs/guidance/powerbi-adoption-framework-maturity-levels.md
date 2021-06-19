@@ -37,7 +37,7 @@ The remainder of this article introduces the three types of Power BI adoption in
 
 Organizational adoption measures the state of Power BI governance and data management practices. The goals for organizational adoption are to effectively support the community, enable and empower users, and oversee information delivery via enterprise BI and self-service BI with continuous improvement cycles.
 
-We can best think about organizational adoption from the perspective of a maturity model. For consistency with the [Power CAT adoption maturity model](https://powerapps.microsoft.com/blog/power-cat-adoption-maturity-model-repeatable-patterns-for-successful-power-platform-adoption/) and the [maturity model for Microsoft 365](https://docs.microsoft.com/microsoft-365/community/microsoft365-maturity-model--intro), we are using the five levels from the [Capability Maturity Model](https://en.wikipedia.org/wiki/Capability_Maturity_Model) which were later enhanced by the [Data Management Maturity (DMM) model from ISACA](https://cmmiinstitute.com/data-management-maturity) (note the DMM is a paid resource).
+We can best think about organizational adoption from the perspective of a maturity model. For consistency with the [Power CAT adoption maturity model](https://powerapps.microsoft.com/blog/power-cat-adoption-maturity-model-repeatable-patterns-for-successful-power-platform-adoption/) and the [maturity model for Microsoft 365](/microsoft-365/community/microsoft365-maturity-model--intro), we are using the five levels from the [Capability Maturity Model](https://en.wikipedia.org/wiki/Capability_Maturity_Model) which were later enhanced by the [Data Management Maturity (DMM) model from ISACA](https://cmmiinstitute.com/data-management-maturity) (note the DMM is a paid resource).
 
 Every organization has limited time, funding, and people which requires them to be selective about where they prioritize their efforts. To get the most from your investment with Power BI, seek to attain level at least maturity level 300 or 400 discussed below. It's unavoidable that individual business units in the organization will evolve and mature at different rates, so you'll want to be cognizant of the organizational state as well as progress for key business units.
 
@@ -190,7 +190,7 @@ Common characteristics of phase 2 solutions include:
 - The solution is functional and meets the basic set of user requirements, likely with plans to iterate on improvements and enhancements.
 - The solution has been deployed to the Power BI service.
 - All necessary supporting components are in place, such as scheduled refresh or use of a gateway.
-- Users are aware of the solution and are showing interest in using it. Potentially this may be a limited release and may not yet be promoted to a production [workspace](https://docs.microsoft.com/power-bi/collaborate-share/service-create-the-new-workspaces).
+- Users are aware of the solution and are showing interest in using it. Potentially this may be a limited release and may not yet be promoted to a production [workspace](../collaborate-share/service-create-the-new-workspaces.md).
 
 ### Solution phase 3 – Valuable
 
