@@ -12,7 +12,7 @@ ms.date: 06/13/2021
 
 # Capabilities and properties of Power BI visuals 
 
-Every visual has a `capabilities.json` file where you provide information to the host about your visual. All properties in the `capabilities.json` file are *optional*.
+Every visual has a `capabilities.json` file that describes the visual's capabilities to the host. The `capabilities.json` file tells the host what kind of data the visual accepts, what customizable attributes to put on the properties pane, and other information needed to create the visual. All properties in the `capabilities.json` file are *optional*.
 
 The root objects of a visual's capabilities file are:  
 
