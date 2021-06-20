@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 04/25/2021
+ms.date: 05/25/2021
 ---
 
 # Tutorial: Build a bar chart
@@ -91,6 +91,124 @@ Creating a bar chart visual involves the following steps:
 * Packaging your visual -`pbiviz.json`
 
 ## Add capabilities
+
+The capabilities.json file is where we describe the visual to the host. We tell it what kind of information to expect and what features the visual should have.
+
+### Defining data roles
+
+We want our bar chart to accept two types of variables:
+
+* Categorical data represented by the different bars
+* Numerical, or measured data which is represented by the height of each bar
+
+Make sure the `"dataRoles"` in your `capabilities.file` consists of the following lines:
+
+```json
+    "dataRoles": [
+        {
+            "displayName": "Category Data",
+            "name": "category",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Measure Data",
+            "name": "measure",
+            "kind": "Measure"
+        }
+    ],
+```
+
+Next we add data mapping to tell the host what to do with these variables.
+
+Replace the content of the `"dataViewMappings"` section with the following:
+
+```json
+"dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "category": {
+                        "max": 1
+                    },
+                    "measure": {
+                        "max": 1
+                    }
+                }
+            ],
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "category"
+                    }
+                },
+                "values": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "measure"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+```
+
+Finally, let's add some other optional features to the capabilities file. We won't use them now, but we might want to add tooltips, a landing page, or drill down capabilities in the future.
+
+```json
+    "tooltips": {
+        "supportedTypes": {
+            "default": true,
+            "canvas": true
+        },
+        "roles": [
+            "Tooltips"
+        ]
+    },
+    "supportsLandingPage": false,
+    "drilldown": {
+        "roles": [
+            "category"
+        ]
+    }
+```
+
+Your final capabilities file should look like [the one in this example](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/capabilities.json).
+
+### Define objects
+
+The [objects](objects-properties.md) section of the *capabilities* file is where we define the customizable features that should appear on the properties pane.
+
+Let's add an optional X-axis and the ability to define the color of each bar.
+
+Replace the content of the objects section of the capabilities file with the following:
+
+```json
+     "objects": {
+        "enableAxis": {
+            "displayName": "Enable Axis",
+            "properties": {
+                "show": {
+                    "displayName": "Enable Axis",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fill": {
+                    "displayName": "Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+```
 
 First, define the bar chart view model, and iterate on what's exposed to your visual as you build it.
 Define the chart by creating a file in the src directory with the following.
