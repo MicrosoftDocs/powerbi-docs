@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 11/14/2020
+ms.date: 06/18/2021
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshoot opening Power BI Desktop
@@ -19,8 +19,6 @@ This article describes and provides a remedy for a number of circumstances where
 You cannot open encrypted PBIX files using a Power BI Desktop version that does not support information protection.
 
 If you need to continue using Power BI Desktop, the recommended resolution is to update it to a version that supports information protection. You can download the [latest version of Power BI Desktop](https://www.microsoft.com/download/confirmation.aspx?id=58494) (this link is a direct download link to the installation executable). The latest version of Power BI Desktop supports information protection and can decrypt and open any encrypted PBIX file.
-
-###
 
 ## Resolve issues with the On-premises data gateway and Power BI Desktop
 
@@ -53,6 +51,14 @@ When you attempt to connect to a SQL Server database, you may come across an err
 You can often resolve the issue if you open Power BI Desktop as an administrator before you make the SQL Server connection.
 
 After you open Power BI Desktop as an administrator and establish the connection, the required DLLs are registered properly. After that, opening Power BI Desktop as an administrator isn't necessary. In cases where you are connecting to SQL server with alternate windows credentials, you will have to open Power BI Desktop as an administrator every time you connect.
+
+## "Unable to sign in" issue
+
+You may see a message similar to this:
+
+"Unable to sign in. Sorry, we encountered an error while trying to sign you in. Details: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel."
+
+**Solution**: You need to uncheck the **Enable certification revocation check**. See [Certificate revocation check, Power BI Desktop](../create-reports/desktop-certificate-revocation.md) for details. 
 
 ## Get help with other launch issues
 
