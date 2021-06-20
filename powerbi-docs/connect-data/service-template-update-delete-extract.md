@@ -16,11 +16,15 @@ Now that your app is in production, when you want to make changes to the app, yo
 
 ## Update your app
 
-If you made your changes in Power BI Desktop, start at Step 1. If you did not make any changes in Power BI Desktop, start at Step 4.
+Go to the template app workspace. Then, if you made your changes in Power BI Desktop, start at Step 1. If you did not make any changes in Power BI Desktop, start at Step 2.
 
-1. Upload the updated dataset. Before uploading, **make sure the .pbix file you're uploading has the exactly the same name as the dataset used in the app**. Always **overwrite** the existing dataset. If the .pbix file you're uploading has a different name, it will be impossible for users to update their apps.
+1. Upload your updated dataset and **make sure to overwrite the existing dataset**.
+    * If the *.pbix* file you're uploading has the same name as the dataset and report used in the app, uploading will overwrite the existing dataset.
+    * If you've changed the name of the *.pbix* file you want to upload, and it is now different than the name of the dataset used in the app, **first rename the dataset used in the app so that it exactly matches the name of your updated *.pbix* file**, and only then upload the updated file.
+    
+    In either case, when you upload, you must get to a dialog that asks for your permission to overwrite the dataset used in the app. If you do not overwrite the existing dataset, users will not be able to install your updated app.
 
-    The following animation shows how to upload a local .pbix file. Start by choosing **New > Dataset**
+    The following animation shows how to upload a local *.pbix* file to the service, overwriting the currently used dataset. Start by choosing **New > Dataset**
     
     ![Amimated gif shows upload of .pbix file.](media/service-template-apps-update-extract-delete/template-app-update-overwrite-dataset.gif)
 
