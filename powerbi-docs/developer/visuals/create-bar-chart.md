@@ -38,21 +38,19 @@ Before you can start developing your Power BI visual, set up your environment fo
 
 >[!NOTE]
 >
->For the source code of a simple bar code that we will create in this tutorial, see [Simple bar code](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/tree/barChartTutorial).
->For the full source code of a bar code with more advanced features, including tool-tips, selection, and a context menu, see [PowerBI visuals sample bar chart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart)
->
->To download and use these example, download the code as a zip file and open it in a new directory.
+> This tutorial uses version 5 of the [d3 JavaScript library](https://d3js.org/) to produce dynamic, interactive data visualizations.
+>If you didn't install this library as part of your setup, [install the D3 JavaScript library](environment-setup.md#d3-javascript-library) now.
 
 ### Create a development project
 
 >[!NOTE]
 >
-> This tutorial uses version 5 of the [d3 JavaScript library](https://d3js.org/) to produce dynamic, interactive data visualizations.
->If you didn't install this library as part of your setup, [install the D3 JavaScript library](environment-setup.md#d3-javascript-library) now.
+>For the source code of the simple bar chart that we create in this tutorial, see [Simple bar code](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/tree/barChartTutorial).
+>For the full source code of a bar chart with more advanced features, including tool-tips, selection, and a context menu, see [PowerBI visuals sample bar chart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart)
 
-To create a project for the bar chart visual:
+To create a new project for the bar chart visual:
 
-1. Open PowerShell and navigate to the folder you want to create your project in.
+1. Open **PowerShell** and navigate to the folder you want to create your project in.
 
 2. Enter the following command:
 
@@ -66,13 +64,15 @@ To create a project for the bar chart visual:
 
     For a detailed explanation of the function of each of these files see [Power BI visual project structure](visual-project-structure.md).
 
+    The two files we will focus on in this tutorial are the `capabilities.json` file which describes the visual to the host,  and the `src/barchart.ts` file which replaces the `src/visual.ts` file as the one containing the actual source code.
+
 3. Navigate to the project's folder.
 
     ```powershell
     cd BarChart
     ```
 
-4. Start the dev app by running `pbiviz start` from the Powershell. Your visual is now running while being hosted on your computer.
+4. Start the development app by running `pbiviz start` from the Powershell. Your visual is now running while being hosted on your computer.
 
     >[!IMPORTANT]
     >Do not close the PowerShell window until the end of the tutorial. To stop the visual from running, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
@@ -81,15 +81,16 @@ To create a project for the bar chart visual:
 
 Creating a bar chart visual involves the following steps:
 
-* Defining the bar chart view model.
-* Adding data binding.
-* Customizing your visual
+* Modifying the capabilities file -`capabilities.json`
+* Adding dependencies -`package.json`
+* Creating the source code
+* Customizing the visual
   * Change the colors in the interface.
   * Add a selection and interact with each data point.
   * Add objects to the property pane.
-* Packaging your visual.
+* Packaging your visual -`pbiviz.json`
 
-### Add 
+## Add capabilities
 
 First, define the bar chart view model, and iterate on what's exposed to your visual as you build it.
 Define the chart by creating a file in the src directory with the following.
