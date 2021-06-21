@@ -1,5 +1,5 @@
 ---
-title: Install and distribute template apps in your organization - Power BI
+title: Install, update, and distribute template apps in your organization - Power BI
 description: Learn about installing, customizing, and distributing template apps in your organization in Power BI.
 author: paulinbar
 ms.author: painbar
@@ -7,10 +7,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 05/23/2021
+ms.date: 06/21/2021
 ---
 
-# Install and distribute template apps in your organization
+# Install, update, and distribute template apps in your organization
 
 Are you a Power BI analyst? If so, this article explains how you can  install [template apps](service-template-apps-overview.md) to connect to many of the services you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. You can then modify the template app's pre-built dashboard and reports to suit the needs of your organization, and distribute them to your colleagues as [apps](../consumer/end-user-apps.md). 
 
@@ -112,7 +112,7 @@ If you originally downloaded the app from AppSource, when a new version of the t
 
   ![Update template app](media/service-template-apps-install-distribute/power-bi-update-app-overwrite.png)
 
-* **Update the workspace and the app:** Updates both the workspace and the app, and republishes the app to your organization. Choose this option If you haven’t made any changes to the app or its content, or if you don’t care about saving any such changes. The updated app will include any updated app branding, such as app name, logo, and navigation, as well as the latest publisher improvements to content.
+* **Update the workspace and the app:** Updates both the workspace and the app, and republishes the app to your organization. Choose this option If you haven’t made any changes to the app or its content and want to overwrite the old app. Your connections will be reestablished, and the new version of the app will include any updated app branding, such as app name, logo, and navigation, as well as the latest publisher improvements to content.
 
 * **Update only workspace content without updating the app:** Updates the reports, dashboards, and dataset in the workspace. After updating the workspace, you can choose what you want to include in the app, and then you need to update the app to republish it to your organization with the changes.
 
