@@ -111,7 +111,7 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
 
     ![Pull requests by month column chart](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-column-chart.png)
 
-2. Select a user name in the **Total pull requests by user** chart. In this example, we see most of their hours were in February.
+2. Select a user name in the **Total pull requests by user** chart. In this example, we see most of their hours were in January.
 
     ![Power BI GitHub report highlighting](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-cross-filter-total-prs.png)
 
