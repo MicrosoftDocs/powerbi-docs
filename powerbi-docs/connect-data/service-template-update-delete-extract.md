@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 05/04/2020
+ms.date: 06/21/2021
 ---
 
 # Update, delete, and extract template app
@@ -20,7 +20,9 @@ Go to the template app workspace. Then, if you made your changes in Power BI Des
 
 1. Upload your updated dataset and **make sure to overwrite the existing dataset**.
     * If the *.pbix* file you're uploading has the same name as the dataset and report used in the app, uploading will overwrite the existing dataset.
-    * If you've changed the name of the *.pbix* file you want to upload, and it is now different than the name of the dataset used in the app, **first rename the dataset used in the app so that it exactly matches the name of your updated *.pbix* file**, and only then upload the updated file.
+    * If you're changing the name of the dataset and report used in the app, and the *.pbix* file you want to upload has a different name than the dataset and report used in the app, do the following:
+        * Rename the dataset and report used in the app so that their names exactly match the name of your updated *.pbix* file.
+        * Upload the your *.pbix* file and overwrite the existing dataset and report that you just renamed.
     
     In either case, when you upload, you must get to a dialog that asks for your permission to overwrite the dataset used in the app. If you do not overwrite the existing dataset, users will not be able to install your updated app.
 
@@ -31,7 +33,7 @@ Go to the template app workspace. Then, if you made your changes in Power BI Des
 
 
 1. In the **Release management** pane, select **Create app**.
-1. Go back through the app creation process.
+1. Go back through the app creation process. If you changed the changed the name of the dataset and report used in the app, you may want to rename the app as well.
 1. After you've set **Branding**, **Content**, **Control**, and **Access**, select **Create app** again.
 1. Select **Close** and go back to **Release management**.
 
@@ -47,7 +49,7 @@ Go to the template app workspace. Then, if you made your changes in Power BI Des
 
    Your link is now live. **Note that the Promote app button at the pre-production stage is greyed out**. This is to prevent accidentally overwriting the live production link to the current app version before the Cloud Partner Portal has validated and approved the new app version.
 
-1. Submit your link again to the Cloud Partner Portal (CPP) by following the steps at [Power BI App offer update](/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer). In the Cloud Partner Portal, you must **publish** your offer again and have it validated and approved.
+1. Submit your link again to the Cloud Partner Portal (CPP) by following the steps at [Power BI App offer update](/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer). In the Cloud Partner Portal, you must **publish** your offer again and have it validated and approved. If you've changed the name of the app, be sure to change the name in the Cloud Partner Portal as well.
 
    When your offer is approved, the Promote app button will become active again. 
 1. Promote your app to the production stage.
