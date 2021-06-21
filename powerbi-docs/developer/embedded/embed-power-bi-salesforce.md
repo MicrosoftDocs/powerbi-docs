@@ -37,9 +37,9 @@ Here are some advantages of the `PowerBiEmbedManager` Apex class:
 
 * It implements [Client Credentials Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) when it interacts with Azure AD to acquire an app-only access token. App-only access tokens are important because they make it possible to call the Power BI REST APIs under the identity of a service principal, instead of calling under the identity of a user.
 
-### Lighting Aura
+### Lightning Aura
 
-The Salesforce *embed for your customers* solution contains a Lighting Aura component named `powerBiReportAura`. When you add an instance of the `powerBiReportAura` component to a Lightning application page, you must configure it with a specific Power BI *Workspace ID* and *Report ID*. This design makes it possible to add multiple instances of the `powerBiReportAura` component, and configure each instance to embed a different Power BI report.
+The Salesforce *embed for your customers* solution contains a Lightning Aura component named `powerBiReportAura`. When you add an instance of the `powerBiReportAura` component to a Lightning application page, you must configure it with a specific Power BI *Workspace ID* and *Report ID*. This design makes it possible to add multiple instances of the `powerBiReportAura` component, and configure each instance to embed a different Power BI report.
 
 ### Access the *embed for your customers* Salesforce developer sample
 
