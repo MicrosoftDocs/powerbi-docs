@@ -4,12 +4,12 @@ description: Learn how you can find, explore, and use the datasets and their rel
 author: mihart
 ms.author: mihart
 ms.service: powerbi
-ms.subservice: powerbi-explore
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 6/21/2021
 LocalizationGroup: Get started
 ---
-# Datasets discovery using the datasets hub (preview)
+# Discover datasets using the datasets hub (preview)
 
 The datasets hub helps you find, explore, and use the datasets and reports in your organization. It provides information about the datasets as well as reports built using those datasets. In this way, report consumers can find reports based on trustworthy datasets.
 
