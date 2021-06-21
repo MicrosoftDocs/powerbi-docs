@@ -177,13 +177,13 @@ In addition, using Ctrl+Click also works for cross-highlighting. For example, in
 Your matrix or table may have content that you'd like to use in other applications: Dynamics CRM, Excel, and other Power BI reports. With the Power BI right-click, you can copy a single cell or a selection of cells onto your clipboard. Then, paste them into the other application.
 
 
-* To copy the value of a single cell, select the cell,  right-click, and choose **Copy value**. With the unformatted cell value on your clipboard, you can now paste it into another application.
+* To copy the value of a single cell, select the cell,  right-click, and choose **Copy value**. With the _unformatted_ cell value on your clipboard, you can now paste it into another application.
 
     ![Screenshot of the Matrix visual with an arrow pointing to a value and the right-click menu expanded with the Copy value and Copy selection options called out.](media/desktop-matrix-visual/power-bi-cell-copy.png)
 
 
 
-* To copy more than a single cell, select a range of cells or use CTRL to select one or more cells. 
+* To copy more than a single cell, select a range of cells or use CTRL to select one or more cells.  **Copy selection** will ensure that measures are formatted according to the column's formatting rules, unlike the unformatted **Copy value** command.
 
     ![Screenshot of the Matrix visual with an arrow pointing from three called out values to the right-click menu expanded with the Copy value and Copy selection options called out.](media/desktop-matrix-visual/power-bi-copy.png)
 
