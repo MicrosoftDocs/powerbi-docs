@@ -1,5 +1,5 @@
 ---
-title: Update, delete, and extract a Power BI template app
+title: Manage your published Power BI template app
 description: How to update, delete and extract template app.
 author: paulinbar
 ms.author: painbar
@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 06/21/2021
 ---
 
-# Update, delete, and extract template app
+# Manage your published template app
 
 Now that your app is in production, when you want to make changes to the app, you can start over in the test phase, without interfering with the app in production.
 
