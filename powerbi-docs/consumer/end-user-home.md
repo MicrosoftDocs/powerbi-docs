@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 06/19/2021
+ms.date: 06/21/2021
 LocalizationGroup: Get started
 ---
 # Find your dashboards, reports, and apps
@@ -92,7 +92,28 @@ The exact resources that appear depend on your activity, settings, and Power BI 
 
 
  
-## Workspaces
+
+
+## Explore the nav pane
+
+The nav pane classifies your content in ways that help you find what you need, quickly.  
+
+![A screenshot of the nav pane for the Power BI service.](media/end-user-home/power-bi-nav-pane.png)
+
+
+Use the nav pane to locate and move between dashboards, reports, and apps. Occasionally, using the nav pane will be the quickest way to get to content. The nav pane is there when you open your Home landing page, and remains there as you open other areas of the Power BI service. It can be collapsed by selecting the Hide icon ![Icon for hiding the nav pane](media/end-user-home/power-bi-hide.png) .
+  
+The nav pane organizes your content into containers that are similar to what you've already seen on the Home canvas: Favorites, Recent, Apps, Datasets, Shared with me, and workspaces. Some containers have flyouts that offer you the option of viewing just the most-recent content in a container. Otherwise, select a container to see all content.
+ 
+- To open one of these content sections and display a list of all items, select the heading.
+- To see the most recent in either the **Favorites** or **Recent** container, select the flyout (**>**).
+
+    ![A video of using the nav pane for Recent](media/end-user-home/recents2.gif)
+
+ 
+The nav pane is another way for you to find the content you want, quickly. Content is organized in a manner similar to the Home canvas, but shown in lists instead of cards. 
+
+### Workspaces
 Every Power BI service user has one **My workspace**. **My workspace** will only contain content if you've downloaded Microsoft samples or created your own dashboards, reports, or apps. For many *business users*, **My workspace** will be empty and will remain empty. If you're a brand new user, you will only have one workspace, **My workspace**.
 
 ![Only one workspace, My workspace.](./media/end-user-home/power-bi-one-workspace.png)
@@ -108,25 +129,6 @@ If someone in your organization adds you to a workspace, you'll see it in your l
 The workspace app opens on your canvas and you can see the name of the workspace listed on your nav pane. Within workspaces, the Power BI service separates your content by type: dashboards and reports. In some cases, you'll also have workbooks and datasets. You'll see this organization when you select a workspace. In this example, the **Supplier Quality Analysis** workspace contains one report, one dashboard, and one dataset.
 
 ![Gardening workspace selected](./media/end-user-home/power-bi-search-workspace.png)
-
-## Explore the nav pane
-
-The nav pane classifies your content in ways that help you find what you need, quickly.  
-
-![A screenshot of the nav pane for the Power BI service.](media/end-user-home/power-bi-nav-pane.png)
-
-
-Use the nav pane to locate and move between dashboards, reports, and apps. Occasionally, using the nav pane will be the quickest way to get to content. The nav pane is there when you open your Home landing page, and remains there as you open other areas of the Power BI service. It can be collapsed by selecting the Hide icon ![Icon for hiding the nav pane](media/end-user-home/power-bi-hide.png) .
-  
-The nav pane organizes your content into containers that are similar to what you've already seen on the Home canvas: Favorites, Recent, Apps, Shared with me, and workspaces. Using the flyouts, you can view just the most-recent content in each of these containers, or you can navigate to content lists to see all content for each container category.
- 
-- To open one of these content sections and display a list of all items, select the heading.
-- To see the most recent in either the **Favorites** or **Recent** container, select the flyout (**>**).
-
-    ![A video of using the nav pane for Recent](media/end-user-home/recents2.gif)
-
- 
-The nav pane is another way for you to find the content you want, quickly. Content is organized in a manner similar to the Home canvas, but shown in lists instead of cards. 
 
 ## Search all of your content
 Sometimes, the fastest way to find your content is to search for it. For example, perhaps you've discovered that a dashboard you haven't used in a while isn't showing up on your Home canvas. Or, perhaps you remember that your colleague, Aaron, shared something with you, but you don't remember what he called it or what type of content he shared, whether it was a dashboard or a report. Or you may have so much content that it's easier to search than it is to scroll or sort. 

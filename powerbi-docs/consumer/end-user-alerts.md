@@ -8,7 +8,7 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 06/20/2021
 #Customer intent: As a Power BI service consumer, I want to learn how to create and update a data alert so that I get notified when important data changes above/below my set threshold.
 LocalizationGroup: Dashboards
 ---
@@ -24,7 +24,7 @@ Set alerts in the Power BI service to notify you when data on a dashboard change
 Alerts can be created on dashboards:
 - that you have created and saved in **My workspace**
 - that have been shared with you in a [Premium capacity](end-user-license.md). 
-- in any workspace you can access, if you have a Power BI Pro license.    
+- in any workspace you can access, if you have a Power BI Pro or Premium Per User (PPU) license.    
 
 Alerts only work on data that is refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data has reached an alert threshold, an alert is triggered. 
 
@@ -32,7 +32,7 @@ This feature is still evolving, so refer to the [Tips and troubleshooting sectio
 
 
 
-Only you can see the alerts you set, even if you share your dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile apps](mobile/mobile-set-data-alerts-in-the-mobile-apps.md) and in the Power BI service. 
+Only you can see the alerts you set, even if you share your dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile apps](mobile/mobile-set-data-alerts-in-the-mobile-apps.md), in Power BI for Teams, and in the Power BI service. 
 
 > [!WARNING]
 > These alerts provide information about your data. If you view your Power BI data on a mobile device and that device gets stolen, we recommend using the Power BI service to turn off all alerts.
@@ -110,7 +110,7 @@ Next, Power BI sends an alert to your Notification center and, optionally, in em
 
 ## Managing alerts
 
-There are many ways to manage your alerts: from the dashboard tile itself, from the Power BI Settings menu, on an individual tile in the [Power BI mobile app on the iPhone](mobile/mobile-set-data-alerts-in-the-mobile-apps.md), or in the [Power BI mobile app for Windows 10](mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
+There are many ways to manage your alerts: from the dashboard tile itself, from the Power BI Settings menu, on an individual tile in the [Power BI mobile app on the iPhone](mobile/mobile-set-data-alerts-in-the-mobile-apps.md) or in the [Power BI mobile app for Windows 10](mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
 ### From the tile itself
 
@@ -138,7 +138,7 @@ There are many ways to manage your alerts: from the dashboard tile itself, from 
 
 * If you are unable to set an alert for a gauge, KPI, or card, contact your Power BI admin or IT help desk for help. Sometimes alerts are turned off or unavailable for your dashboard or for specific types of dashboard tiles.
 * Alerts only work on data that is refreshed. They do not work on static data. Most of the samples supplied by Microsoft are static. 
-* The ability to receive and view shared content requires a Power BI Pro or Premium license. For more information, read [Which license do I have?](end-user-license.md).
+* The ability to receive and view shared content requires a Power BI Pro license, a Premium Per User license, or for the report to be saved in Premium capacity. For more information, read [Which license do I have?](end-user-license.md).
 * Alerts can be set on visuals created from streaming datasets that are pinned from a report to a dashboard. Alerts can't be set on streaming tiles created directly on the dashboard using **Add tile** > **Custom streaming data**.
 
 
