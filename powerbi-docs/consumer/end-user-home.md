@@ -49,7 +49,7 @@ The next few topics take a closer look at Home for an experienced user, from top
 
 ## Most important content at your fingertips
 
-### Favorited dashboards
+### Favorite dashboards
 This top section will display tiles from your favorite dashboard. The Power BI service selects from dashboards that you use the most and have marked as [a favorite](end-user-favorite.md).
 
 ![Favorite dashboard section](./media/end-user-home/power-bi-dashboards.png)
