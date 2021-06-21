@@ -31,7 +31,7 @@ Power BI embedded analytics offers two solutions:
 
 ### Embed for your customers
 
-The *embed for your customers* solution allows you to build a an app that uses non-interactive authentication against Power BI. Your customers are likely to be external users, and they don't need to sign in using Power BI credentials to view the embedded content. Typically, this solution is used by independent software vendors (ISVs) who are developing applications for third parties. For a tutorial, see [Embed Power BI content using a sample embed for your customers application](/power-bi/developer/embedded/embed-sample-for-customers).
+The *embed for your customers* solution allows you to build an app that uses non-interactive authentication against Power BI. Your customers are likely to be external users, and they don't need to sign in using Power BI credentials to view the embedded content. Typically, this solution is used by independent software vendors (ISVs) who are developing applications for third parties. For a tutorial, see [Embed Power BI content using a sample embed for your customers application](/power-bi/developer/embedded/embed-sample-for-customers).
 
 ### Embed for your organization
 
