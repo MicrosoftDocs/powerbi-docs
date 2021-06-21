@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 06/18/2021
+ms.date: 06/21/2021
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
