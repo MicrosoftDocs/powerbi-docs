@@ -8,7 +8,7 @@ Ms.custom: css_fy20Q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 05/14/2021
+ms.date: 05/15/2021
 LocalizationGroup: Get started
 ---
 
@@ -34,7 +34,7 @@ The Power BI service runs in a browser.
 
 
 ### Step 2: type your email address
-The first time you sign in, Microsoft checks to see if you already have a Microsoft 365 account. In the example below, Pradtanna already has a license for other Microsoft services. 
+The first time you sign in, Microsoft asks if you already have a Microsoft 365 account. Select **SIGN IN**.
 
 ![Screenshot shows a sign-in message.](media/end-user-sign-in/power-bi-already.png)
 
