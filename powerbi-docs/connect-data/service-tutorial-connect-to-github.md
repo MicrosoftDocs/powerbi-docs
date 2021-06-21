@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 10/30/2020
+ms.date: 06/19/2021
 #customer intent: "As a Power BI end user, I want to connect to GitHub as an example, so I understand how to connect to my data on other services."
 LocalizationGroup: Connect to services
 ---
@@ -45,13 +45,13 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
    
    ![Power BI Get apps](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial.png) 
 
-3. Select **Apps**, type **GitHub** in the search box > **Get it now**.
+3. Select **Apps**, type **GitHub** in the search box. Select the app.
    
-   ![Power BI Get GitHub](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-app-source.png) 
+   ![Power BI Get GitHub](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-app-source.png)
 
-4. In **Install this Power BI App?** select **Install**.
-5. In **Your new app is ready**, select **Go to app**.
-6. In **Get started with your new app**, select **Connect**.
+4. Select **Get it now** and follow any additional instructions.
+5. In **Your new app is ready!**, select **Go to app**.
+6. In the app landing page, select **Connect your data**.
 
     ![Get started with your new app](media/service-tutorial-connect-to-github/power-bi-new-app-connect-get-started.png)
 
