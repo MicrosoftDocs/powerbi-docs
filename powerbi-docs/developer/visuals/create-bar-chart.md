@@ -41,7 +41,7 @@ Before you can start developing your Power BI visual, set up your environment fo
 > This tutorial uses version 5 of the [d3 JavaScript library](https://d3js.org/) to produce dynamic, interactive data visualizations.
 >If you didn't install this library as part of your setup, [install the D3 JavaScript library](environment-setup.md#d3-javascript-library) now.
 
-### Create a development project
+### Create a new project
 
 >[!NOTE]
 >
@@ -77,11 +77,11 @@ To create a new project for the bar chart visual:
     >[!IMPORTANT]
     >Do not close the PowerShell window until the end of the tutorial. To stop the visual from running, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
 
-## Create a bar chart visual
+## Design a bar chart visual
 
 Creating a bar chart visual involves the following steps:
 
-* Modifying the capabilities file -`capabilities.json`
+* [Defining the capabilities](#define-capabilities) file -`capabilities.json`
 * Adding dependencies -`package.json`
 * Creating the source code
 * Customizing the visual
@@ -90,15 +90,15 @@ Creating a bar chart visual involves the following steps:
   * Add objects to the property pane.
 * Packaging your visual -`pbiviz.json`
 
-## Add capabilities
+## Define capabilities
 
-The capabilities.json file is where we describe the visual to the host. We tell it what kind of information to expect and what features the visual should have.
+The [`capabilities.json`](capabilities.md) file is where we describe the visual to the host. We tell it what kind of information to expect and what features the visual should have.
 
-### Defining data roles
+### Define data roles
 
 We want our bar chart to accept two types of variables:
 
-* Categorical data represented by the different bars
+* Categorical data that will be represented by the different bars on the chart
 * Numerical, or measured data which is represented by the height of each bar
 
 Make sure the `"dataRoles"` in your `capabilities.file` consists of the following lines:
@@ -118,7 +118,9 @@ Make sure the `"dataRoles"` in your `capabilities.file` consists of the followin
     ],
 ```
 
-Next we add data mapping to tell the host what to do with these variables.
+### Map the data
+
+Next, add [data mapping](dataview-mappings.md) to tell the host what to do with these variables.
 
 Replace the content of the `"dataViewMappings"` section with the following:
 
@@ -155,28 +157,6 @@ Replace the content of the `"dataViewMappings"` section with the following:
     ],
 ```
 
-Finally, let's add some other optional features to the capabilities file. We won't use them now, but we might want to add tooltips, a landing page, or drill down capabilities in the future.
-
-```json
-    "tooltips": {
-        "supportedTypes": {
-            "default": true,
-            "canvas": true
-        },
-        "roles": [
-            "Tooltips"
-        ]
-    },
-    "supportsLandingPage": false,
-    "drilldown": {
-        "roles": [
-            "category"
-        ]
-    }
-```
-
-Your final capabilities file should look like [the one in this example](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/capabilities.json).
-
 ### Define objects
 
 The [objects](objects-properties.md) section of the *capabilities* file is where we define the customizable features that should appear on the properties pane.
@@ -209,6 +189,31 @@ Replace the content of the objects section of the capabilities file with the fol
             }
         },
 ```
+
+### Other capabilities
+
+Finally, let's add some other optional features to the capabilities file. We won't use them now, but we might want to add tooltips, a landing page, or drill down capabilities in the future.
+
+```json
+    "tooltips": {
+        "supportedTypes": {
+            "default": true,
+            "canvas": true
+        },
+        "roles": [
+            "Tooltips"
+        ]
+    },
+    "supportsLandingPage": false,
+    "drilldown": {
+        "roles": [
+            "category"
+        ]
+    }
+```
+
+Your final capabilities file should look like [the one in this example](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/capabilities.json).
+
 
 First, define the bar chart view model, and iterate on what's exposed to your visual as you build it.
 Define the chart by creating a file in the src directory with the following.
