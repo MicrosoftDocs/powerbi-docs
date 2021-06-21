@@ -83,7 +83,7 @@ Creating a bar chart visual involves the following steps:
 
 * [Defining the capabilities](#define-capabilities) file -`capabilities.json`
 * Adding dependencies -`package.json`
-* Creating the source code
+* Creating the source code of the [visual API](#visual-api)
 * Customizing the visual
   * Change the colors in the interface.
   * Add a selection and interact with each data point.
@@ -105,7 +105,9 @@ Variables are defined and bound in the [`dataRoles`](capabilities.md#define-the-
 * Categorical data that will be represented by the different bars on the chart
 * Numerical, or measured data which is represented by the height of each bar
 
-Make sure the `"dataRoles"` in your `capabilities.file` consists of the following lines:
+1. In PowerShell, stop the custom visual.
+
+2. In Visual Studio Code, in the **capabilities.json** file, make sure the following JSON fragment appears in the object labeled **dataRoles**.
 
 ```json
     "dataRoles": [
@@ -124,9 +126,9 @@ Make sure the `"dataRoles"` in your `capabilities.file` consists of the followin
 
 ### Map the data
 
-Next, add [data mapping](dataview-mappings.md) to tell the host what to do with these variables.
+ Next, add [data mapping](dataview-mappings.md) to tell the host what to do with these variables.
 
-Replace the content of the `"dataViewMappings"` section with the following:
+1. Replace the content of the **dataViewMappings** object with the following:
 
 ```json
 "dataViewMappings": [
@@ -172,7 +174,7 @@ The [objects](objects-properties.md) section of the *capabilities* file is where
 
 Let's add an optional X-axis and the ability to define the color of each bar.
 
-Replace the content of the objects section of the capabilities file with the following:
+1. Replace the content of the **objects** section of the capabilities file with the following:
 
 ```json
      "objects": {
@@ -203,29 +205,43 @@ Replace the content of the objects section of the capabilities file with the fol
 
 Finally, let's add some other optional features to the *capabilities* file. We won't use them now, but we might want to add tooltips, a landing page, or drill down capabilities in the future.
 
-```json
-    "tooltips": {
-        "supportedTypes": {
+1. In Visual Studio Code, in the **capabilities.json** file, add the following code.
+
+    ```json
+        "tooltips": {
+            "supportedTypes": {
             "default": true,
             "canvas": true
         },
         "roles": [
             "Tooltips"
         ]
-    },
-    "supportsLandingPage": false,
-    "drilldown": {
-        "roles": [
-            "category"
-        ]
-    }
-```
+        },
+        "supportsLandingPage": false,
+        "drilldown": {
+            "roles": [
+                "category"
+            ]
+        }
+    ```
+
+2. Save the **capabilities.json** file.
 
 Your final capabilities file should look like [the one in this example](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/capabilities.json).
 
-## 
-First, define the bar chart view model, and iterate on what's exposed to your visual as you build it.
-Define the chart by creating a file in the src directory with the following.
+## Visual API
+
+All visuals start with a class that implements the `IVisual` interface. The `src/visual.ts` file is the default file that contains this class. 
+
+### Imports
+
+### Interfaces
+
+* BarChartDataPoint - stores data
+* BarChartViewModel - stores information used for displaying visual. In this case the set of data points and the maximum value that will be used to render the visual.
+* BarChartSettings
+
+#### BarChartViewModel
 
 ```typescript
 /**
@@ -238,76 +254,65 @@ Define the chart by creating a file in the src directory with the following.
 interface BarChartViewModel {
     dataPoints: BarChartDataPoint[];
     dataMax: number;
-};
+    settings: BarChartSettings;
+}
 
 /**
  * Interface for BarChart data points.
  *
  * @interface
- * @property {number} value    - Data value for point.
- * @property {string} category - Coresponding category of data value.
+ * @property {number} value             - Data value for point.
+ * @property {string} category          - Corresponding category of data value.
+ * @property {string} color             - Color corresponding to data point.
+ * @property {ISelectionId} selectionId - Id assigned to data point for cross filtering
+ *                                        and visual interaction.
  */
 interface BarChartDataPoint {
-    value: number;
+    value: PrimitiveValue;
     category: string;
+    color: string;
+    strokeColor: string;
+    strokeWidth: number;
+    selectionId: ISelectionId;
+}
+
+/**
+ * Interface for BarChart settings.
+ *
+ * @interface
+ * @property {{show:boolean}} enableAxis - Object property that allows axis to be enabled.
+*/
+interface BarChartSettings {
+    enableAxis: {
+        show: boolean;
+        fill: string;
+    };
+}
+
+let defaultSettings: BarChartSettings = {
+    enableAxis: {
+        show: false,
+        fill: "#000000",
+    }
 };
 ```
 
-### Add data binding
+### Visual transform
 
-You add data binding by defining your visual capabilities in `capabilities.json`. The sample code already has a schema for you to use.
+### Rendering
 
-Data binding acts on a **Field** well in Power BI.
+### Update
 
-![Data binding in a Field well](./media/create-bar-chart/data-binding.png)
+### Scaling
 
-### Add data roles - capabilities file
+Your final barChart.ts file should look like [this](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts).
 
-The sample code already has data roles, but you can customize them.
+5. Change location of main thing in tsconfig and pbiviz
 
-* `displayName` is the name shown in the **Field** well.
-* `name` is the internal name used to refer to the data role.
-* `kind` is for the kind of field. *Grouping* fields (0) have discrete values. *Measure* fields (1) have numeric data values.
+First, define the bar chart view model, and iterate on what's exposed to your visual as you build it.
+Define the chart by creating a file in the src directory with the following.
 
-```json
-"dataRoles": [
-    {
-        "displayName": "Category Data",
-        "name": "category",
-        "kind": 0
-    },
-    {
-        "displayName": "Measure Data",
-        "name": "measure",
-        "kind": 1
-    }
-],
-```
 
-For more information, see [Data roles](./capabilities.md#define-the-data-fields-that-your-visual-expects-dataroles).
-
-### Add conditions to DataViewMapping
-
-Define conditions within your `dataViewMappings` to set how many fields each field well can bind. Use the data role's internal `name` to refer to each field.
-
-```json
-    "dataViewMappings": [
-        {
-            "conditions": [
-                {
-                    "category": {
-                        "max": 1
-                    },
-                    "measure": {
-                        "max": 1
-                    }
-                }
-            ],
-        }
-    ]
-```
-
-For more information, see [Data view mapping](./dataview-mappings.md).
 
 ### Define and use visualTransform
 
