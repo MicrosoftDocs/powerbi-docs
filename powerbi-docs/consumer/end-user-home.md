@@ -54,7 +54,7 @@ This top section will display tiles from your favorite dashboard. The Power BI s
 
 ![Favorite dashboard section.](./media/end-user-home/power-bi-dashboards.png)
 
-Alternately, you can decide yourself which dashboard to display here. Open a dashboard and tag it as [featured](end-user-featured.md). Pick the one dashboard that you expect to view most often, and set it as your *featured* content. Each time you open the Power BI service, your featured dashboard will display first. 
+Alternately, decide for yourself which dashboard to display here. Open a dashboard and tag it as [featured](end-user-featured.md). Pick the one dashboard that you expect to view most often, and set it as your *featured* content. Each time you open the Power BI service, your featured dashboard will display first. 
 
 ### Favorites and frequents
 This next section contains links to the content that you visit most often or that you've tagged as [a favorite](end-user-favorite.md). Notice that several cards have black stars; they've been tagged as favorites. 
@@ -128,7 +128,7 @@ If someone in your organization adds you to a workspace, you'll see it in your l
 
 ![Screenshot of Workspaces in navigation pane.](./media/end-user-home/power-bi-workspace-list.png)
 
-The workspace opens on your canvas and you can see the name of the workspace listed on your nav pane. Within workspaces, you see your dashboards and reports. In some cases, you'll also have workbooks and datasets. You'll see this organization when you select a workspace. In this example, the **Supplier Quality Analysis** workspace contains one report, one dashboard, and one dataset.
+The workspace opens on your canvas and you see the name of the workspace listed on your nav pane. Within workspaces, you see your dashboards and reports. In some cases, you'll also have workbooks and datasets. You'll see this organization when you select a workspace. In this example, the **Supplier Quality Analysis** workspace contains one report, one dashboard, and one dataset.
 
 ![Screenshot of Supplier Quality workspace selected.](./media/end-user-home/power-bi-search-workspace.png)
 
