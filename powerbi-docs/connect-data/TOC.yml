@@ -237,24 +237,6 @@
         href: service-template-update-delete-extract.md
       - name: "Template apps samples"
         href: service-template-apps-samples.md        
-    - name: Troubleshoot
-      items: 
-      - name: "Troubleshoot refresh scenarios"
-        href: refresh-troubleshooting-refresh-scenarios.md
-      - name: "Troubleshoot tile errors"
-        href: refresh-troubleshooting-tile-errors.md
-      - name: "Troubleshoot an unsupported data source for refresh"
-        href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
-      - name: "Troubleshoot scheduled refresh for Azure SQL Databases"
-        href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
-      - name: "Troubleshoot analyze in Excel"
-        href: ../collaborate-share/desktop-troubleshooting-analyze-in-excel.md
-      - name: "Error: We couldn't find any data in your Excel workbook"
-        href: service-admin-troubleshoot-excel-workbook-data.md
-      - name: "How to refresh your Xero content pack credentials if refresh failed"
-        href: service-refresh-xero-credentials.md
-      - name: "Troubleshooting Nested Values returned as Text in Power BI Service"
-        href: service-troubleshooting-nested-values.md
     - name: Connect to services
       items: 
       - name: "Connect to services with apps"
@@ -343,10 +325,24 @@
         href: service-gateway-custom-connectors.md
     - name: Troubleshoot
       items: 
-      - name: "Troubleshoot importing Access and Excel .xls files"
-        href: desktop-access-database-errors.md
       - name: "Troubleshoot opening Power BI Desktop"
         href: desktop-error-launching-desktop.md
+      - name: "Troubleshoot refresh scenarios"
+        href: refresh-troubleshooting-refresh-scenarios.md
+      - name: "Troubleshoot tile errors"
+        href: refresh-troubleshooting-tile-errors.md
+      - name: "Troubleshoot an unsupported data source for refresh"
+        href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
+      - name: "Troubleshoot scheduled refresh for Azure SQL Databases"
+        href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
+      - name: "Troubleshoot analyze in Excel"
+        href: ../collaborate-share/desktop-troubleshooting-analyze-in-excel.md
+      - name: "Error: We couldn't find any data in your Excel workbook"
+        href: service-admin-troubleshoot-excel-workbook-data.md
+      - name: "How to refresh your Xero content pack credentials if refresh failed"
+        href: service-refresh-xero-credentials.md
+      - name: "Troubleshoot importing Access and Excel .xls files"
+        href: desktop-access-database-errors.md
       - name: "Troubleshoot developing DirectQuery models"
         href: desktop-directquery-troubleshoot.md
   - name: Reference
