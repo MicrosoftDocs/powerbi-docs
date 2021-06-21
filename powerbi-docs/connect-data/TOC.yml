@@ -345,6 +345,8 @@
         href: desktop-access-database-errors.md
       - name: "Troubleshoot developing DirectQuery models"
         href: desktop-directquery-troubleshoot.md
+      - name: "Troubleshooting Nested Values"
+        href: service-troubleshooting-nested-values.md
   - name: Reference
     items: 
     - name: "Data types in Power BI Desktop"
