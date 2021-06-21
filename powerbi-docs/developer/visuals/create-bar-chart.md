@@ -14,7 +14,7 @@ ms.date: 05/25/2021
 
 [!INCLUDE[Power B I visuals tutorials overview](../../includes/visual-tutorial-overview.md)]
 
-In this tutorial, you'll develop a Power BI  visual displays data in the form of a bar chart. This visual supports customization of color,thickness, background, and more.
+In this tutorial, you'll develop a Power BI  visual displays data in the form of a simple bar chart. This visual supports a minimum amount of customization. Adding a context menu, tool-tips, and other customizations are explained in other places.
 
 In this tutorial, you learn how to:
 
@@ -201,6 +201,8 @@ Let's add an optional X-axis and the ability to define the color of each bar.
         },
 ```
 
+For more information on objects and how they work, see [Objects](objects-properties.md).
+
 ### Other capabilities
 
 Finally, let's add some other optional features to the *capabilities* file. We won't use them now, but we might want to add tooltips, a landing page, or drill down capabilities in the future.
@@ -231,7 +233,7 @@ Your final capabilities file should look like [the one in this example](https://
 
 ## Visual API
 
-All visuals start with a class that implements the `IVisual` interface. The `src/visual.ts` file is the default file that contains this class. 
+All visuals start with a class that implements the `IVisual` interface. The `src/visual.ts` file is the default file that contains this class.
 
 ### Imports
 
@@ -299,13 +301,29 @@ let defaultSettings: BarChartSettings = {
 
 ### Visual transform
 
+20 minutes into meeting
+can use own structures
+describes look or chart width of bars colors, etc.
+
 ### Rendering
+
+constructor function - 27 minutes
 
 ### Update
 
+32 minutes
+first part similar to prev tut (circlecard?)
+
 ### Scaling
 
+part of update. show imports for scales
+more at 35
+Uses dataMax
+Category names
+
 Your final barChart.ts file should look like [this](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts).
+
+Rendering x axis - 40 min
 
 5. Change location of main thing in tsconfig and pbiviz
 
@@ -427,32 +445,6 @@ You can add objects to the **Property** pane to further customize the visual. Th
 You can toggle objects on or off in the **Property** pane.
 
 ![Objects in the Property pane](./media/create-bar-chart/property-pane.png)
-
-### Define objects in capabilities
-
-Define an `objects` property inside your *capabilities.json* file for objects to display in the **Property** pane.
-- `enableAxis` is the internal name that the `dataView` references. 
-- `displayName` is the name shown on the **Property** pane.
-- `bool` is a primitive value that is typically used with static objects, such as text boxes or switches.
-- `show` is a special property on `properties` that enables the `show` switch on the object. Since `show` is a switch, it is typed as a `bool`.
-
-![Object show switch](./media/create-bar-chart/object-show-property.png)
-
-```typescript
-"objects": {
-    "enableAxis": {
-        "displayName": "Enable Axis",
-        "properties": {
-            "show": {
-                "displayName": "Enable Axis",
-                "type": { "bool": true }
-            }
-        }
-    }
-}
-```
-
-For more information, see [Objects](./objects-properties.md).
 
 ### Define property settings
 
