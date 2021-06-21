@@ -94,9 +94,13 @@ Creating a bar chart visual involves the following steps:
 
 The [`capabilities.json`](capabilities.md) file is where we describe the visual to the host. We tell it what kind of information to expect and what features the visual should have.
 
+This data binding acts on a **Field** well in Power BI.
+
+![Data binding in a Field well](./media/create-bar-chart/data-binding.png)
+
 ### Define data roles
 
-We want our bar chart to accept two types of variables:
+Variables are defined and bound in the [`dataRoles`](capabilities.md#define-the-data-fields-that-your-visual-expects-dataroles) section of the capabilities file. We want our bar chart to accept two types of variables:
 
 * Categorical data that will be represented by the different bars on the chart
 * Numerical, or measured data which is represented by the height of each bar
@@ -157,9 +161,14 @@ Replace the content of the `"dataViewMappings"` section with the following:
     ],
 ```
 
+The above code defines *"conditions"*  so that each field well can bind to only one field at a time. Notice that we use the data role's internal `name` to refer to each field.
+
+It also sets the [categorical data mapping](dataview-mappings.md#categorical-data-mapping)
+so that each field is mapped to the correct variable.
+
 ### Define objects
 
-The [objects](objects-properties.md) section of the *capabilities* file is where we define the customizable features that should appear on the properties pane.
+The [objects](objects-properties.md) section of the *capabilities* file is where we define the customizable features that should appear on the properties pane. These features don't affect the content of the chart but they can change its look and feel.
 
 Let's add an optional X-axis and the ability to define the color of each bar.
 
@@ -192,7 +201,7 @@ Replace the content of the objects section of the capabilities file with the fol
 
 ### Other capabilities
 
-Finally, let's add some other optional features to the capabilities file. We won't use them now, but we might want to add tooltips, a landing page, or drill down capabilities in the future.
+Finally, let's add some other optional features to the *capabilities* file. We won't use them now, but we might want to add tooltips, a landing page, or drill down capabilities in the future.
 
 ```json
     "tooltips": {
@@ -214,7 +223,7 @@ Finally, let's add some other optional features to the capabilities file. We won
 
 Your final capabilities file should look like [the one in this example](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/capabilities.json).
 
-
+## 
 First, define the bar chart view model, and iterate on what's exposed to your visual as you build it.
 Define the chart by creating a file in the src directory with the following.
 
