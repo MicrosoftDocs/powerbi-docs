@@ -114,14 +114,14 @@ If you originally downloaded the app from AppSource, when a new version of the t
 
 * **Update the workspace and the app:** Updates both the workspace and the app, and republishes the app to your organization. Choose this option If you haven’t made any changes to the app or its content, or if you don’t care about saving any such changes. The updated app will include any updated app branding, such as app name, logo, and navigation, as well as the latest publisher improvements to content.
 
-* **Update only workspace content without updating the app:** Updates the reports, dashboards, and dataset inside the workspace. After updating the workspace, you need to update the app to republish it to your organization with the changes.
+* **Update only workspace content without updating the app:** Updates the reports, dashboards, and dataset in the workspace. After updating the workspace, you can choose what you want to include in the app, and then you need to update the app to republish it to your organization with the changes.
 
 * **Install another copy of the app into a new workspace:** Installs a fresh version of the workspace and app. Choose this option if you don’t want to change your current app at all.
 
 ### Overwrite behavior
 
-* Overwriting updates the reports, dashboards, and dataset inside the workspace, not the app. Overwriting doesn't change app navigation, setup, and permissions.
-* After you update the workspace, **you need to update the app to apply changes from the workspace to the app**.
+* Overwriting updates the reports, dashboards, and dataset in the workspace, not the app. Overwriting doesn't change app navigation, setup, and permissions.
+* If you chose the second option above, after you've updated the workspace **you need to update the app to apply changes from the workspace to the app**.
 * Overwriting keeps configured parameters and authentication. After update, an automatic dataset refresh starts. **During this refresh, the app, reports, and dashboards present sample data**.
 
   ![Sample data](media/service-template-apps-install-distribute/power-bi-sample-data.png)
