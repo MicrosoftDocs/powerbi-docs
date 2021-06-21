@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 05/18/2021
+ms.date: 06/21/2021
 Customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
 LocalizationGroup: Get started
 ---
@@ -54,7 +54,7 @@ In this tutorial, we get data from a simple Microsoft Excel file. Want to follow
 
     The **Get Data** page opens.   
 
-3. Under the **Create new content** section, make sure **Files** is selected, then select the location where you saved the Excel file.
+3. Under the **Create new content** section, select **Files** > **Local File**, then select the location where you saved the Excel file.
    
     :::image type="content" source="media/service-get-started/power-bi-service-get-data-local-file.png" alt-text="Screenshot of Create new content > Files.":::
 
@@ -152,11 +152,6 @@ For a quick exploration of your data, try asking a question in the Q&A question 
 
     :::image type="content" source="media/service-get-started/power-bi-service-new-qanda.png" alt-text="Screenshot of Q&A canvas.":::
 
-    > [!NOTE]
-    > If you don't see the suggestions, turn on **New Q&A experience**.
-
-    :::image type="content" source="media/service-get-started/power-bi-new-qna-experience.png" alt-text="Screenshot of turning on new Q&A experience.":::
-
 4. Some suggestions return a single value. For example, select **what is the average cog**.
 
     Q&A searches for an answer and presents it in the form of a *card* visualization.
@@ -183,9 +178,9 @@ For a quick exploration of your data, try asking a question in the Q&A question 
 
 12. Select **Exit Q&A** to return to your dashboard, where you see the new tiles you created. 
 
-   :::image type="content" source="media/service-get-started/power-bi-service-dashboard-qna.png" alt-text="Screenshot of dashboard with Q&A visuals pinned.":::
+    :::image type="content" source="media/service-get-started/power-bi-service-dashboard-qna.png" alt-text="Screenshot of dashboard with Q&A visuals pinned.":::
 
-   You see that even though you changed the map to a bar chart in Q&A, that tile remained a map because it was a map when you pinned it. 
+    You see that even though you changed the map to a bar chart in Q&A, that tile remained a map because it was a map when you pinned it. 
 
 ## Step 4: Reposition tiles
 
