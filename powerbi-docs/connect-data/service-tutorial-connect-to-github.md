@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 06/19/2021
+ms.date: 06/22/2021
 #customer intent: "As a Power BI end user, I want to connect to GitHub as an example, so I understand how to connect to my data on other services."
 LocalizationGroup: Connect to services
 ---
