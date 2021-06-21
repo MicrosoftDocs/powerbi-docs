@@ -26,6 +26,9 @@ Go to the template app workspace. Then, if you made your changes in Power BI Des
     
     In either case, when you upload, you must get to a dialog that asks for your permission to overwrite the dataset used in the app. If you do not overwrite the existing dataset, users will not be able to install your updated app.
 
+    >[!WARNING]
+    > Never delete the dataset used in the app. Doing so will make it impossible for users to update their apps.
+
     The following animation shows how to upload a local *.pbix* file to the service, overwriting the currently used dataset. Start by choosing **New > Dataset**
     
     ![Amimated gif shows upload of .pbix file.](media/service-template-apps-update-extract-delete/template-app-update-overwrite-dataset.gif)
