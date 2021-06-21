@@ -93,7 +93,8 @@ To publish a template app to the Power BI service and AppSource, you must meet t
 
 ## Tips 
 
-- Make sure your app includes sample data to get everyone started in a click. 
+- Make sure your app includes sample data to get everyone started in a click.
+- Limit dataset size (rule of thumb: PBIX < 10MBs). This typically means keeping the size of sample data as small as possible. 
 - Carefully examine your application by installing it in your tenant and in a secondary tenant. Make sure customers only see what you want them to see. 
 - Use AppSource as your online store to host your application. This way everyone using Power BI can find your app. 
 - Consider offering more than one template app for separate unique scenarios. 
