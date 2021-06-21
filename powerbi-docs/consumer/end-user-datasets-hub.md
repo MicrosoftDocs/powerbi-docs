@@ -13,8 +13,6 @@ LocalizationGroup: Get started
 
 The datasets hub helps you find, explore, and use the datasets and reports in your organization. It provides information about the datasets as well as reports built using those datasets. In this way, report consumers can find reports based on trustworthy datasets.
 
-entry points for creating reports on top of those datasets or for using those datasets with Analyze in Excel. Datasets in the datasets hub 
-
 This article explains what you see on the datasets hub and describes how to use it. For more details and advanced features available from the datasets hub, see [Dataset discovery using the datasets hub](../connect-data/service-datasets-understand.md).  
 
 
@@ -33,5 +31,5 @@ The datasets hub presents you with a selection of recommended datasets and a lis
 [Continue learning about the datasets hub](../connect-data/service-datasets-hub.md) and explore additional information, including how to select a dataset, how to explore reports built using a dataset, and how to create a new report yourself. 
   
 ## Next steps
-[Continue learning about the datasets hub](../connect-data/service-datasets-hub.md)
+[Continue learning about the datasets hub](../connect-data/service-datasets-hub.md)    
 [Power BI Home](end-user-home.md)

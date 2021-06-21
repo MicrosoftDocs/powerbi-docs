@@ -23,7 +23,7 @@ Set alerts in the Power BI service to notify you when data on a dashboard change
 
 Alerts can be created on dashboards:
 - that you have created and saved in **My workspace**
-- that have been shared with you in a [Premium capacity](end-user-license.md). 
+- that have been shared with you in a [Premium reserved capacity](end-user-license.md). 
 - in any workspace you can access, if you have a Power BI Pro or Premium Per User (PPU) license.    
 
 Alerts only work on data that is refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data has reached an alert threshold, an alert is triggered. 
@@ -138,7 +138,7 @@ There are many ways to manage your alerts: from the dashboard tile itself, from 
 
 * If you are unable to set an alert for a gauge, KPI, or card, contact your Power BI admin or IT help desk for help. Sometimes alerts are turned off or unavailable for your dashboard or for specific types of dashboard tiles.
 * Alerts only work on data that is refreshed. They do not work on static data. Most of the samples supplied by Microsoft are static. 
-* The ability to receive and view shared content requires a Power BI Pro license, a Premium Per User license, or for the report to be saved in Premium capacity. For more information, read [Which license do I have?](end-user-license.md).
+* The ability to receive and view shared content requires a Power BI Pro license, a Premium Per User license, or for the report to be saved in Premium reserved capacity. For more information, read [Which license do I have?](end-user-license.md).
 * Alerts can be set on visuals created from streaming datasets that are pinned from a report to a dashboard. Alerts can't be set on streaming tiles created directly on the dashboard using **Add tile** > **Custom streaming data**.
 
 
