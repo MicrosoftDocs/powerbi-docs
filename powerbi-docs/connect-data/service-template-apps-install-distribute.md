@@ -1,6 +1,6 @@
 ---
-title: Install, update, and distribute template apps in your organization - Power BI
-description: Learn about installing, customizing, and distributing template apps in your organization in Power BI.
+title: Install, share, and update template apps in your organization - Power BI
+description: Learn about installing, customizing, and sharing template apps in your organization in Power BI.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 06/21/2021
 ---
 
-# Install, update, and distribute template apps in your organization
+# Install, share, and update template apps in your organization
 
 Are you a Power BI analyst? If so, this article explains how you can  install [template apps](service-template-apps-overview.md) to connect to many of the services you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. You can then modify the template app's pre-built dashboard and reports to suit the needs of your organization, and distribute them to your colleagues as [apps](../consumer/end-user-apps.md). 
 
