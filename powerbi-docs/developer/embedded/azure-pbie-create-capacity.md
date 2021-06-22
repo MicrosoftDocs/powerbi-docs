@@ -14,7 +14,7 @@ ms.date: 01/14/2021
 
 # Create Power BI Embedded capacity in the Azure portal
 
-This article walks through how to create a [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) capacity in Microsoft Azure. Power BI Embedded simplifies Power BI capabilities by helping you quickly add stunning visuals, reports, and dashboards to your apps.
+This article walks through how to create a [Power BI Embedded](embedded-analytics-power-bi.md#power-bi-embedded) capacity in Microsoft Azure. Power BI Embedded simplifies Power BI capabilities by helping you quickly add stunning visuals, reports, and dashboards to your apps.
 
 ## Before you begin
 

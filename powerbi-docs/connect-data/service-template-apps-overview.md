@@ -93,7 +93,8 @@ To publish a template app to the Power BI service and AppSource, you must meet t
 
 ## Tips 
 
-- Make sure your app includes sample data to get everyone started in a click. 
+- Make sure your app includes sample data to get everyone started in a click.
+- Limit dataset size (rule of thumb: PBIX < 10MBs). This typically means keeping the size of sample data as small as possible. 
 - Carefully examine your application by installing it in your tenant and in a secondary tenant. Make sure customers only see what you want them to see. 
 - Use AppSource as your online store to host your application. This way everyone using Power BI can find your app. 
 - Consider offering more than one template app for separate unique scenarios. 
@@ -116,6 +117,9 @@ See [Tips for authoring template apps in Power BI](service-template-apps-tips.md
 | Incremental refresh | Template apps do not support incremental refresh |
 | Power BI visuals | Only publicly available Power BI visuals are supported. [Organizational Power BI visuals](../developer/visuals/power-bi-custom-visuals-organization.md) not supported |
 | Sovereign clouds | Template apps are not available in sovereign clouds |
+| Composite models | Composite models should not be used in the app builder workspace. App installers can use composite models after installing the app  |
+| Large dataset storage format | Large dataset storage format is not supported for template apps   |
+
 
 ## Support
 For support during development, use [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). We actively monitor and manage this site. Customer incidents quickly find their way to the appropriate team.

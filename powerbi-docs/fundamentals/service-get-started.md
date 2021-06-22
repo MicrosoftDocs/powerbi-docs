@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 05/18/2021
+ms.date: 06/21/2021
 Customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
 LocalizationGroup: Get started
 ---
@@ -69,7 +69,7 @@ In this tutorial, we get data from a simple Microsoft Excel file. Want to follow
 
     The report canvas is blank. We see the **Filters**, **Visualizations**, and **Fields** panes on the right.
 
-    :::image type="content" source="media/service-get-started/power-bi-service-blank-report.png" alt-text="Screenshot of blank report canvas.":::
+    :::image type="content" source="media/service-get-started/power-bi-service-blank-reports.png" alt-text="Screenshot of blank report canvas.":::
 
     > [!TIP]
     > Select the global navigation button in the upper-left corner to collapse the navigation pane. That way your canvas has more room.
@@ -183,7 +183,7 @@ For a quick exploration of your data, try asking a question in the Q&A question 
 
 12. Select **Exit Q&A** to return to your dashboard, where you see the new tiles you created. 
 
-   :::image type="content" source="media/service-get-started/power-bi-service-dashboard-qna.png" alt-text="Screenshot of dashboard with Q&A visuals pinned.":::
+    :::image type="content" source="media/service-get-started/power-bi-service-dashboard-qna.png" alt-text="Screenshot of dashboard with Q&A visuals pinned.":::
 
    You see that even though you changed the map to a bar chart in Q&A, that tile remained a map because it was a map when you pinned it. 
 
@@ -226,7 +226,7 @@ Now that you've finished the tutorial, you can delete the dataset, report, and d
 
 ## Next steps
 
-[Quickly create a report by pasting data into the Power BI service](https://powerbi.microsoft.com/en-us/blog/quickly-create-reports-power-bi-service/)
+[Quickly create a report by pasting data into the Power BI service](../create-reports/service-quick-create-report.md)
 
 Explore these collections of Microsoft Learn content for Power BI:
 
