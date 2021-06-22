@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 05/26/2021
+ms.date: 06/14/2021
 ---
 
 # Get started with deployment pipelines
@@ -29,7 +29,7 @@ You'll be able to access the deployment pipelines feature, if the following cond
 >[!NOTE]
 > You'll also be able to see the deployment pipelines button, if you previously created a pipeline, or if a pipeline was shared with you.
 
-![A screenshot of the deployment pipelines landing page.](media/deployment-pipelines-get-started/creating-pipeline.png)
+:::image type="content" source="media/deployment-pipelines-get-started/creating-pipeline.png" alt-text="A screenshot of the deployment pipelines landing page.":::
 
 ## Step 1 - Create a deployment pipeline
 
@@ -110,19 +110,19 @@ Once the deployment is complete, refresh the dataset. For more information, see 
 
 Select the stage to deploy from and then select the deployment button. The deployment process creates a duplicate workspace in the target stage. This workspace includes all the content existing in the current stage.
 
-[![A screenshot showing the deploy button for the development and test stages in a deployment pipeline.](media/deployment-pipelines-get-started/deploy.png)](media/deployment-pipelines-get-started/deploy.png#lightbox)
+:::image type="content" source="media/deployment-pipelines-get-started/deploy.png" alt-text="A screenshot showing the deploy button for the development and test stages in a deployment pipeline." lightbox="media/deployment-pipelines-get-started/deploy.png":::
 
 ### Selective deployment
 
 To deploy only specific items, select the **Show more** link, and then select the items you wish to deploy. When clicking the deploy button, only the selected items are deployed to the next stage.
 
-Since dashboards, reports and datasets are related and have dependencies, you can use the select related button to check all items that those items are dependent on. For example, if you want to deploy a report to the next stage, clicking the select related button will mark the dataset that the report is connected to, so that both will be deployed at once and the report will not break.
+Since dashboards, reports, datasets and dataflows are related and have dependencies, you can use the select related button to check all items that those items are dependent on. For example, if you want to deploy a report to the next stage, clicking the select related button will mark the dataset that the report is connected to, so that both will be deployed at once and the report will not break.
 
-[![A screenshot showing the selective deploy option in deployment pipelines, available after selecting the show more option.](media/deployment-pipelines-get-started/selective-deploy.png)](media/deployment-pipelines-get-started/selective-deploy.png#lightbox)
+:::image type="content" source="media/deployment-pipelines-get-started/selective-deploy.png" alt-text="A screenshot showing the selective deploy option in deployment pipelines, available after selecting the show more option." lightbox="media/deployment-pipelines-get-started/selective-deploy.png":::
 
 >[!NOTE]
-> * You can't deploy a report or a dashboard to the next stage, if the items it's dependent on do not exist in the stage you are deploying to.
-> * You might get unexpected results if you choose to deploy a report or dashboard without its dataset. This can happen when the dataset in the target stage, has changed and is no longer identical to the one in the stage you're deploying from.
+> * You can't deploy a Power BI item to the next stage, if the items it's dependent on doesn't exist in the stage you are deploying to. For example, deploying a report without a dataset will fail, unless the dataset already exists in the target stage.
+> * You might get unexpected results if you choose to deploy a Power BI item without the item it's dependent on. This can happen when a dataset or a dataflow in the target stage, has changed and is no longer identical to the one in the stage you're deploying from.
 
 ### Backwards deployment
 
@@ -130,22 +130,24 @@ You can choose to deploy to a previous stage, for example in a scenario where yo
 
 Deploying to a previous stage works only if the previous stage is empty. When deploying to a previous stage, you can't select specific items. All content in the stage will be deployed.
 
-[![A screenshot showing the deploy to previous stage button, available from the test or production stage menus.](media/deployment-pipelines-get-started/deploy-back.png)](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
+:::image type="content" source="media/deployment-pipelines-get-started/deploy-back.png" alt-text="A screenshot showing the deploy to previous stage button, available from the test or production stage menus." lightbox="media/deployment-pipelines-get-started/deploy-back.png":::
 
 ## Step 4 - Create deployment rules
 
 When working in a deployment pipeline, different stages may have different configurations. For example, each stage can have different databases or different query parameters. The development stage might query sample data from the database, while the test and production stages query the entire database.
 
-When you deploy content between pipeline stages, configuring deployment rules enables you to allow changes to content, while keeping some settings intact.
+When you deploy content between pipeline stages, configuring deployment rules enables you to allow changes to content, while keeping some settings intact. For example, if you want a dataset in a production stage to point to a production database, you can define a rule for this. The rule is defined in the production stage, under the appropriate dataset. Once the rule is defined, content deployed from test to production, will inherit the value as defined in the deployment rule, and will always apply as long as the rule is unchanged and valid.
 
-There are two types of deployment rules:
+You can configure rules fo data source rules and parameter rules. The following table lists the type of Power BI items you can configure rules for, and the type of rule you can configure for each one.
 
-* **Dataset rules** - Defined on data sources and parameters, in each dataset. These rules determine the values of the data sources or parameters for a specific dataset. For example, if you want a dataset in a production stage to point to a production database, you can define a rule for this. The rule is defined in the production stage, under the appropriate dataset. Once the rule is defined, content deployed from test to production, will inherit the value as defined in the deployment rule, and will always apply as long as the rule is unchanged and valid.
-
-* **Paginated reports** - Defined for the data sources of each paginated report. You can use these rules to determine the data sources of the paginated report.
+||Data source rule  |Parameter rule  |Details  |
+|---------|---------|---------|---------|
+|**Dataflow**         |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |Use to determine the values of the data sources or parameters for a specific dataflow. |
+|**Dataset**          |![Applies to.](../media/yes.png) |![Applies to.](../media/yes.png) |Use to determine the values of the data sources or parameters for a specific dataset.         |
+|**Paginated report** |![Applies to.](../media/yes.png) |![Does not apply to.](../media/no.png) |Defined for the data sources of each paginated report. You can use these rules to determine the data sources of the paginated report. |
 
 >[!NOTE]
-> Deployment rules work only when the source and target data source are of the same type.
+> Data source rules only work when you change data sources from the same type.
 
 ### Create a deployment rule
 
@@ -153,101 +155,82 @@ To create a deployment rule, follow the steps in this section. After you create 
 
 1. In the pipeline stage you want to create a deployment rule for, select **Deployment settings**.
 
-    :::image type="content" source="media/deployment-pipelines-get-started/deployment-settings-screenshot.png" alt-text="A screenshot of the deployment settings button, located in the deployment settings." border="false":::
+    :::image type="content" source="media/deployment-pipelines-get-started/deployment-settings-screenshot.png" alt-text="A screenshot of the deployment settings button, located in the deployment settings.":::
 
-2. You can set rules to **datasets** and **paginated reports**. In the Deployment settings pane, select the type of rule you want to set.
+2. You can set rules to **dataflows**, **datasets** and **paginated reports**. In the Deployment settings pane, select the type of rule you want to set.
 
-# [Datasets](#tab/datasets)
+    :::image type="content" source="media/deployment-pipelines-get-started/deployment-rules.png" alt-text="A screenshot of the deployment rules pane, showing that you can set rules for dataflows, datasets and paginated reports.":::
 
-3. Select the dataset you want to create a rule for.
+3. Select the dataflow, dataset or paginated report you want to create a rule for.
 
-    >[!div class="mx-imgBorder"]
-    >![A screenshot showing selecting a dataset for creating a deployment rule.](media/deployment-pipelines-get-started/datasets-tab.png)
+    :::image type="content" source="media/deployment-pipelines-get-started/deployment-rules-selection.png" alt-text="A screenshot of the deployment rules pane, showing two datasets in the datasets tab. To configure a rule select an item from one of the tabs.":::
 
-4. Select the type of rule you want to create, expand the list, and then select **Add rule**.
+4. Select the type of rule you want to create, expand the list, and then select **Add rule**. There are two types of rules you can create:
 
-    >[!div class="mx-imgBorder"]
-    >[![A screenshot showing selecting a data source rule, and clicking the add rule option.](media/deployment-pipelines-get-started/add-rule.png)](media/deployment-pipelines-get-started/add-rule.png)
+    :::image type="content" source="media/deployment-pipelines-get-started/deployment-rule-types.png" alt-text="A screenshot of the deployment rules pane, showing a selected dataset and the two rule types, data source and parameter, you can configure for it.":::
 
-5. There are two types of rules you can create:
+    * **Data source rules**
 
-    * **Data source rules** - The data source list is taken from the dataset of the source pipeline stage. From the data source list, select a data source to be replaced. Use one of the following methods to select a value to replace the one from the source stage:
+        From the data source list, select a data source name to be updated. Use one of the following methods to select a value to replace the one from the source stage:
 
         * Select from a list.
 
         * Select *Other* and manually add the new data source. You can only change to a data source from the same type.
 
         >[!NOTE]
-        >**Data source rules** will be grayed out if you are not the report owner, or if your report does not contain any data sources.
+        >* *Data source rules* will be grayed out if you're not the owner of the Power BI item you're creating a rule for, or if your Power BI item doesn't contain any data sources.
+        >* For *dataflows*, *datasets* and *paginated reports*, the data source list is taken from the source pipeline stage.
 
     * **Parameter rules** - Select a parameter from the list of parameters; the current value is shown. Edit the value to the value you want to take effect after each deployment.
 
-# [Paginated reports](#tab/paginated-reports)
+### Deployment rule limitations
 
-3. Select the paginated report you want to create a rule for.
+This section lists the limitations for the deployment rules.
 
-    >[!div class="mx-imgBorder"]
-    >![A screenshot showing selecting a dataset for creating a deployment rule.](media/deployment-pipelines-get-started/paginated-report-tab.png)
-
-4. Expand the **Data source rules** list, and then select **Add rule**.
-
-    >[!div class="mx-imgBorder"]
-    >[![A screenshot showing selecting a data source rule, and clicking the add rule option.](media/deployment-pipelines-get-started/add-paginated-report-rule.png)](media/deployment-pipelines-get-started/add-rule.png)
-
-    >[!NOTE]
-    >**Data source rules** will be grayed out if you are not the paginated report owner, or if your paginated report does not contain any data sources.
-
-5. Create a **Data source rule**. The data source list is taken from the paginated report in the source pipeline stage. From the data source list, select a data source name to be updated. Use one of the following methods to select a value to update:
-        
-    * Select from the available values.
-        
-    * Select *Other* and manually update the new data source details. You can only change to a data source of the same type.
-
----
-
-### Deployment rules limitations
-
-This section lists the limitations for the deployment rules. There are some differences in the limitations for each type of deployment rule.
-
-# [Datasets](#tab/datasets)
-
-* You must be the dataset owner to create a deployment rule.
+* To create a deployment rule, you must be the owner of the dataflow, dataset or paginated report you're creating a rule for.
 
 * Deployment rules cannot be created in the development stage.
 
 * When an item is removed or deleted, its rules are deleted too. These rules cannot be restored.
 
-* If the data source or parameters defined in a rule are changed or removed from the source dataset, the rule will not be valid and the deployment will fail.
+* Rules for dataflows that have other dataflows as sources, are not supported.
 
-* Parameter rules cannot be defined for parameters that are of type *Any* or *Binary*. For more information, see [datasets update parameters restrictions](/rest/api/power-bi/datasets/updateparameters).
+* Data source rules for common data model (CDM) folders in a dataflow, are not supported.
 
-* Data source rules can only be defined for the following data sources:
-    * Azure Analysis Services
-    * Azure Synapse
-    * SQL Server Analysis Services (SSAS)
-    * Azure SQL Server
-    * SQL server
-    * Odata Feed
-    * Oracle
-    * SapHana (only supported for import mode; not direct query mode)
-    * SharePoint
-    * Teradata
+* Rules for datasets that use dataflows as their source, are not supported.
 
-    For other data sources, we recommend [using parameters to configure your data source](deployment-pipelines-best-practices.md#use-parameters-in-your-model).
+* If the data source defined in a rule is changed or removed from the item it points to in the source stage, the rule will not be valid and the deployment will fail.
 
-# [Paginated reports](#tab/paginated-reports)
+* If the parameter defined in a rule is changed or removed from the item it points to in the source stage, the rule will not be valid and the deployment will fail.
 
-* You must be the dataset owner to create a deployment rule.
+>[!NOTE]
+>Parameter rules are not supported for paginated reports.
 
-* Deployment rules cannot be created in the development stage.
+### Supported data sources for dataflow and dataset rules
 
-* When an item is removed or deleted, its rules are deleted too. These rules cannot be restored.
+Data source rules can only be defined for the following data sources:
 
-* If the data source defined in a rule is changed or removed from the source dataset, the rule will not be valid and the deployment will fail.
+* Azure Analysis Services
 
-* Parameter rules are not supported for paginated reports.
+* Azure Synapse
 
----
+* SQL Server Analysis Services (SSAS)
+
+* Azure SQL Server
+
+* SQL server
+
+* Odata Feed
+
+* Oracle
+
+* SapHana (only supported for import mode; not direct query mode)
+
+* SharePoint
+
+* Teradata
+
+For other data sources, we recommend [using parameters to configure your data source](deployment-pipelines-best-practices.md#use-parameters-in-your-model).
 
 ## Step 5 - Deploy content from one stage to another
 
@@ -263,7 +246,7 @@ Deployment time is useful for establishing when a stage was last updated. It can
 
 When two sequential stages have content, the content is compared based on the content items metadata. This comparison doesn't include comparing data or refresh time between stages.
 
- [![A screenshot showing a deployment pipeline with its comparison indicators.](media/deployment-pipelines-get-started/deployment-flow.png)](media/deployment-pipelines-get-started/deployment-flow.png#lightbox)
+:::image type="content" source="media/deployment-pipelines-get-started/deployment-flow.png" alt-text="A screenshot showing a deployment pipeline with its comparison indicators." lightbox="media/deployment-pipelines-get-started/deployment-flow.png":::
 
 To allow a quick visual insight into the differences between two sequential stages, a comparison icon indicator appears between them. The comparison indicator has two states:
 
@@ -286,13 +269,13 @@ When two sequential stages aren't the same, a **compare** link appears underneat
     >[!NOTE]
     >Deployment will not impact *missing from* items.
 
- [![A screenshot showing the compare option which expands the compare view and allows comparing items between deployment pipeline stages.](media/deployment-pipelines-get-started/compare.png)](media/deployment-pipelines-get-started/compare.png#lightbox)
+:::image type="content" source="media/deployment-pipelines-get-started/compare.png" alt-text="A screenshot showing the compare option which expands the compare view and allows comparing items between deployment pipeline stages." lightbox="media/deployment-pipelines-get-started/compare.png":::
 
 ## Overriding content
 
 When you deploy after making changes to content in the source stage, the content you changed in the target stage is overwritten. After clicking *deploy*, you'll get a warning listing the number of items that will be overwritten.
 
-![A screenshot of the replaced content warning which is displayed when a deployment is about to cause changes to items in the stage you're deploying to.](media/deployment-pipelines-get-started/replaced-content.png)
+:::image type="content" source="media/deployment-pipelines-get-started/replaced-content.png" alt-text="A screenshot of the replaced content warning which is displayed when a deployment is about to cause changes to items in the stage you're deploying to.":::
 
 You can learn more about [which items are copied to the next stage](deployment-pipelines-process.md#deployed-items), and [which items are not copied](deployment-pipelines-process.md#unsupported-items), in [Understand the deployment process](deployment-pipelines-process.md).
 
