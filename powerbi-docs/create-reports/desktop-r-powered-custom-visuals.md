@@ -76,7 +76,7 @@ Following are the steps to browse and select visuals from the online **AppSource
 
 1. You can also get Power BI visuals from within **Power BI Desktop**. In **Power BI Desktop** click the ellipsis (the ...) in the **Visualizations** pane, and select **Get more visuals**.
 
-   ![Screenshot showing Get more visuals in More options in the Power BI Desktop Visualizations pane.](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_4b.png)
+   ![Screenshot showing Get more visuals in More options in the Power BI Desktop Visualizations pane.](media/desktop-r-powered-custom-visuals/get-more-visuals.png)
 
 2. When you do so, the **Power BI Visuals** dialog appears, where you can scroll through the available Power BI visuals and select what you would like. You can search by name, select a category, or just scroll through the available visuals. When you're ready, just select **Add** to add the custom visual to Power BI Desktop.
 

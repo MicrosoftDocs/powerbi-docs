@@ -176,7 +176,7 @@ When you publish a report to the Power BI service with at least one bookmark, yo
 
 In Reading view, to see the bookmarks that are available in a report, select **Bookmarks** and then select **Show more bookmarks**.
 
-![Screenshot showing the bookmark pane in Reading view in the Power BI service](media/desktop-bookmarks/bookmarks-service.png)
+![Screenshot showing the bookmark pane in Reading view in the Power BI service.](media/desktop-bookmarks/bookmarks-service.png)
 
 In Editing view, you can display the **Bookmark** and **Selection** panes by selecting **View** in the top menu bar, and then turning **Selection pane** and **Bookmark pane** to **On**. The panes then display in both Editing view and Reading view.
 
