@@ -43,6 +43,11 @@ To create a template app you can distribute to other Power BI tenants, you need 
 
     ![Develop a template app](media/service-template-apps-create/power-bi-template-app-develop.png)
 
+    >[!Important]
+    > App builder workspace settings do not affect the workspaces where app installers install the app, which means that an app developed in a premium capacity workspace will not be automatically be installed on a premium capacity workspace. It is therefore **not** recommended to use premium capacity for the builder workspace, as installer workspaces may not be premium capacity, and functionality that relies on premium capacity will not work unless the installer manually moves the installed workspace to premium capacity.
+    >
+    > Do not select Large dataset storage format. This format is not supported for template apps.
+
 5. Select **Save**.
 >[!NOTE]
 >You need permissions from your Power BI admin to promote template apps.

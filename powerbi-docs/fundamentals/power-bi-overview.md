@@ -46,8 +46,7 @@ Explore documents that pertain to your role:
 - Power BI Report Builder for [*enterprise report creators*](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 - Power BI for [*administrators*](../admin/service-admin-administering-power-bi-in-your-organization.md)
 - Power BI for *developers*
-    * [Embedded analytics with Power BI](../developer/embedded/embedding.md)
-    * [What is Power BI Embedded in Azure?](../developer/embedded/azure-pbie-what-is-power-bi-embedded.md)
+    * [What is Power BI embedded analytics?](../developer/embedded/embedded-analytics-power-bi.md)
     * [Visuals in Power BI](../developer/visuals/power-bi-custom-visuals.md)
     * [What can developers do with the Power BI API?](../developer/automation/overview-of-power-bi-rest-api.md)
 
