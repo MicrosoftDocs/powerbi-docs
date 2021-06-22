@@ -492,7 +492,7 @@ Learn more about [creating reports from SharePoint and Microsoft Lists](../creat
 
 ### Snowflake (SSO)
 
-This setting approves sending Azure AD credentials to Snowflake for authentication for the entire organization. See [Connect to Snowflake in Power BI Service](../connect-data/service-connect-snowflake.md) for more detail.
+For dataset owners to be able to enable single sign-on for DirectQuery connections to Snowflake in dataset settings, a Power BI admin must enable the **Snowflake SSO** setting. This setting approves sending Azure AD credentials to Snowflake for authentication for the entire organization. See [Connect to Snowflake in Power BI Service](../connect-data/service-connect-snowflake.md) for more detail.
 
 ![Screenshot of Snowflake (SSO)tenant switch.](media/service-admin-portal/powerbi-admin-portal-snowflake-sso-setting.png)
 
