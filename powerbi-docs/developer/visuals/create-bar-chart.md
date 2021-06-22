@@ -33,8 +33,6 @@ In this tutorial, you learn how to:
 
 Before you can start developing your Power BI visual, set up your environment for developing a Power BI visual.
 
-### Prerequisites
-
 [!INCLUDE[Power B I tutorials prerequisites](../../includes/visual-tutorial-prerequisites.md)]
 
 >[!NOTE]
@@ -42,7 +40,7 @@ Before you can start developing your Power BI visual, set up your environment fo
 > This tutorial uses version 5 of the [d3 JavaScript library](https://d3js.org/) to produce dynamic, interactive data visualizations.
 >If you didn't install this library as part of your setup, [install the D3 JavaScript library](environment-setup.md#d3-javascript-library) now.
 
-### Create a new project
+## Create a new project
 
 >[!NOTE]
 >
@@ -63,23 +61,15 @@ To create a new project for the bar chart visual:
 
     ![Structure of visuals](./media/create-bar-chart/visual-structure.png)
 
-    For a detailed explanation of the function of each of these files see [Power BI visual project structure](visual-project-structure.md).
+For a detailed explanation of the function of each of these files see [Power BI visual project structure](visual-project-structure.md).
 
-    The two files we will focus on in this tutorial are the `capabilities.json` file which describes the visual to the host,  and the `src/barchart.ts` file which replaces the `src/visual.ts` file as the one containing the visual's API.
-
-
-
-## Design a bar chart visual
+The two files we will focus on in this tutorial are the `capabilities.json` file which describes the visual to the host,  and the `src/barchart.ts` file which replaces the `src/visual.ts` file as the one containing the visual's API.
 
 Creating a bar chart visual involves the following steps:
 
 * [Defining the capabilities](#define-capabilities) file -`capabilities.json`
 * Adding dependencies -`package.json`
 * Creating the source code of the [visual API](#visual-api)
-* Customizing the visual
-  * Change the colors in the interface.
-  * Add a selection and interact with each data point.
-  * Add objects to the property pane.
 * Packaging your visual -`pbiviz.json`
 
 ## Define capabilities
@@ -160,7 +150,7 @@ The above code defines *"conditions"*  so that each field well can bind to only 
 It also sets the [categorical data mapping](dataview-mappings.md#categorical-data-mapping)
 so that each field is mapped to the correct variable.
 
-### Define objects
+### Define objects for properties pane
 
 The [objects](objects-properties.md) section of the *capabilities* file is where we define the customizable features that should appear on the properties pane. These features don't affect the content of the chart but they can change its look and feel.
 
@@ -221,21 +211,25 @@ Finally, let's add some other optional features to the *capabilities* file. We w
 
 2. Save the **capabilities.json** file.
 
-Your final capabilities file should look like [the one in this example](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/capabilities.json).
+Your final *capabilities* file should look like [the one in this example](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/capabilities.json).
 
 ## Visual API
 
 All visuals start with a class that implements the `IVisual` interface. The `src/visual.ts` file is the default file that contains this class.
 
+In this tutorial we will call our API file `barChart.ts`. [Download the file](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts) if you haven't already downloaded it. In the following section we will go through this file in detail and describe the various sections.
+
 ### Imports
+
+The first thing we have to do is import the modules that we will be using for this visual. Notice that in addition to the Power BI visual modules, we also import the [d3 library](https://d3js.org/).
 
 ### Interfaces
 
-* BarChartDataPoint - stores data
-* BarChartViewModel - stores information used for displaying visual. In this case the set of data points and the maximum value that will be used to render the visual.
-* BarChartSettings
+Next, we define the view model interfaces. There are three interfaces in our example.
 
-#### BarChartViewModel
+* BarChartDataPoint
+* BarChartViewModel
+* BarChartSettings
 
 ```typescript
 /**
@@ -292,6 +286,8 @@ let defaultSettings: BarChartSettings = {
 ```
 
 ### Visual transform
+
+The `visualTransform` function receives data from the `BarChartViewModel` and transforms it to its own data structure.
 
 20 minutes into meeting
 can use own structures
