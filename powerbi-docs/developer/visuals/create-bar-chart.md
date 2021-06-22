@@ -23,6 +23,7 @@ In this tutorial, you learn how to:
 > * Define the [capabilities](capabilities.md) of your visual
 > * Bind data to the visual
 > * Add objects to the property pane.
+> * Understand the source code used to build a visual
 > * Package your visual.
 
 > [!NOTE]
@@ -64,18 +65,9 @@ To create a new project for the bar chart visual:
 
     For a detailed explanation of the function of each of these files see [Power BI visual project structure](visual-project-structure.md).
 
-    The two files we will focus on in this tutorial are the `capabilities.json` file which describes the visual to the host,  and the `src/barchart.ts` file which replaces the `src/visual.ts` file as the one containing the actual source code.
+    The two files we will focus on in this tutorial are the `capabilities.json` file which describes the visual to the host,  and the `src/barchart.ts` file which replaces the `src/visual.ts` file as the one containing the visual's API.
 
-3. Navigate to the project's folder.
 
-    ```powershell
-    cd BarChart
-    ```
-
-4. Start the development app by running `pbiviz start` from the Powershell. Your visual is now running while being hosted on your computer.
-
-    >[!IMPORTANT]
-    >Do not close the PowerShell window until the end of the tutorial. To stop the visual from running, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
 
 ## Design a bar chart visual
 
@@ -744,6 +736,19 @@ pbiviz package
 ```
 
 This command creates a *pbiviz* file in the *dist/* directory of your visual project, and overwrites any previous *pbiviz* file that might exist.
+
+
+3. Navigate to the project's folder.
+
+    ```powershell
+    cd BarChart
+    ```
+
+4. Start the development app by running `pbiviz start` from the Powershell. Your visual is now running while being hosted on your computer.
+
+    >[!IMPORTANT]
+    >Do not close the PowerShell window until the end of the tutorial. To stop the visual from running, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
+
 
 ## Next steps
 
