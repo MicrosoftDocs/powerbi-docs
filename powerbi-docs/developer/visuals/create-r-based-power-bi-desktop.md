@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: how-to
+ms.topic: tutorial
 ms.date: 06/11/2021
 ---
 
