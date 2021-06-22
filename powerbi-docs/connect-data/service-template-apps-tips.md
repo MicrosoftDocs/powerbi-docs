@@ -113,7 +113,7 @@ Template apps, as part of the app creation stage, wraps the cache data in the wo
 * Allows the installer to understand the functionality and purpose of the app before connecting data.
 * Creates an experience that drives the installer to further explore app capabilities, which leads to connecting the app dataset.
 
-We recommend having quality sample data before creating the app. ensure the app report and dashboards are populated with data.
+We recommend having quality sample data before creating the app to ensure that the app's report and dashboards are populated with data. Try to keep sample data size as small as possible.
 
 ## Publishing on AppSource
 Template apps can be published on AppSource, follow these guidelines before submitting your app to AppSource:
