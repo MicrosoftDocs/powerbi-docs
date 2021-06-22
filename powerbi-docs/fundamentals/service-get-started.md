@@ -69,7 +69,7 @@ In this tutorial, we get data from a simple Microsoft Excel file. Want to follow
 
     The report canvas is blank. We see the **Filters**, **Visualizations**, and **Fields** panes on the right.
 
-    :::image type="content" source="media/service-get-started/power-bi-service-blank-report.png" alt-text="Screenshot of blank report canvas.":::
+    :::image type="content" source="media/service-get-started/power-bi-service-blank-reports.png" alt-text="Screenshot of blank report canvas.":::
 
     > [!TIP]
     > Select the global navigation button in the upper-left corner to collapse the navigation pane. That way your canvas has more room.
@@ -221,7 +221,7 @@ Now that you've finished the tutorial, you can delete the dataset, report, and d
 
 ## Next steps
 
-[Quickly create a report by pasting data into the Power BI service](https://powerbi.microsoft.com/en-us/blog/quickly-create-reports-power-bi-service/)
+[Quickly create a report by pasting data into the Power BI service](../create-reports/service-quick-create-report.md)
 
 Explore these collections of Microsoft Learn content for Power BI:
 

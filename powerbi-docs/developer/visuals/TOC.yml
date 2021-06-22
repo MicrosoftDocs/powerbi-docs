@@ -64,8 +64,6 @@
       href: create-display-dialog-box.md         
     - name: "Add a display warning icon to your visual"
       href: visual-display-warning-icon.md      
-    - name: "Create R-powered visuals"
-      href: create-r-based-power-bi-desktop.md  
     - name: "Test your Power BI visual"  
       href: submission-testing.md
     - name: "Visual interactions"
