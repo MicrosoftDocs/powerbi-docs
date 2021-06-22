@@ -198,7 +198,7 @@
         href: desktop-rls.md
       - name: "Customize tooltips"
         href: desktop-custom-tooltips.md
-      - name: "Add text boxes and shapes to reports"
+      - name: "Add text boxes, shapes, and smart narratives"
         href: power-bi-reports-add-text-and-shapes.md
       - name: "Add a hyperlink to a text box"
         href: service-add-hyperlink-to-text-box.md
@@ -450,6 +450,8 @@
         href: ../paginated-reports/report-builder-url-pass-parameters.md
       - name: Publish a paginated report
         href: ../paginated-reports/paginated-reports-save-to-power-bi-service.md
+      - name: Keyboard shortcuts in Power BI Report Builder
+        href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context
     - name: "Deployment pipelines"  
       items:
       - name: "Get started"

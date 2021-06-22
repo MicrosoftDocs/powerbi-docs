@@ -110,9 +110,8 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                     <div class="cardText"> 
                                           <h3>Embedding Power BI in your own applications</h3> 
                                           <p></p>
-                                                <a href="../developer/embedded/embedding.md">Power BI Embedding overview</a><br/>
-                                                <a href="../developer/embedded/azure-pbie-what-is-power-bi-embedded.md">What is Power BI Embedded?</a><br/> 
-                                                <a href="../developer/embedded/embed-sample-for-customers.md">Tutorial: Power BI Embedded </a> 
+                                                <a href="../developer/embedded/embedded-analytics-power-bi.md">Power BI embedded analytics</a><br/>
+                                                <a href="../developer/embedded/embed-sample-for-customers.md">Tutorial: Embed Power BI content using a sample embed for your customers application</a> 
                                     </div> 
                               </div> 
                         </div> 

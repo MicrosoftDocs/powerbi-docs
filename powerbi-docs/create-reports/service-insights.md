@@ -8,7 +8,7 @@ ms.custom: video-et_MLSL2sA8
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/28/2020
+ms.date: 06/08/2021
 LocalizationGroup: Dashboards
 ---
 # Generate data insights on your dataset automatically with Power BI
@@ -19,6 +19,8 @@ Run quick insights to generate interesting visualizations based on your data. Th
 > [!NOTE]
 > Insights doesn't work with DirectQuery, streaming, and PUSH datasets; it only works with data uploaded to Power BI.
 > 
+> Row-level security (RLS) isn't supported by quick insights, even in import mode.
+>
 
 We built the insights feature on a growing [set of advanced analytical algorithms](../consumer/end-user-insight-types.md) that we developed with Microsoft Research. We continue to use these algorithms to help more people to find insights in their data in new and intuitive ways. You might also be interested in learning how to [optimize your data for quick insights](service-insights-optimize.md).
 

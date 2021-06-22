@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/20/2021
+ms.date: 06/18/2021
 ms.custom: video-l2wy4XgQIu0
 LocalizationGroup: Data from files
 ---
@@ -108,13 +108,11 @@ Once selected, choose to Upload your file into Power BI.
 
 ![Screenshot of the Local File dialog, showing the Upload your Excel file to Power B I selection.](media/service-excel-workbook-files/excel_import_7.png)
 
-Once your workbook is uploaded, you get a notification that the workbook is ready.
+Once your workbook is uploaded, you get a notification that the workbook is now in your list of workbooks. You can find it in the nav pane in the **Workbooks** section of the workspace, and in the content list for the workspace.
 
-![Screenshot of the notification, showing your workbook is ready.](media/service-excel-workbook-files/excel_import_8.png)
+![Screenshot of the Workbooks section, showing the Excel workbook.](media/service-excel-workbook-files/excel_import_9.png)
 
-Once the workbook is ready, you can find it in the **Reports** section of Power BI.
-
-![Screenshot of the Reports section, showing the selected report with the Excel data.](media/service-excel-workbook-files/excel_import_9.png)
+Local Excel workbooks open in Excel Online *within* Power BI. Unlike Excel workbooks stored on OneDrive or SharePoint - Team sites, you can't edit local Excel files within Power BI.
 
 ## Publish from Excel 2016 to your Power BI site
 Using the **Publish to Power BI** feature in Excel 2016 is effectively the same as using **Get Data** in Power BI to import or connect to your file. We won't go into the details here, but you can see [Publish to Power BI from Excel 2016](service-publish-from-excel.md) to learn more.

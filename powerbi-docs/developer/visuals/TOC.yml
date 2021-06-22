@@ -20,8 +20,6 @@
       href: create-r-based-power-bi-desktop.md
     - name: "Build a bar chart"
       href: create-bar-chart.md
-    - name: "Tutorial: Adding formatting options"
-      href: custom-visual-develop-tutorial-format-options.md
     - name: "Add unit tests for visual project"
       href: unit-tests-introduction.md
     - name: "Build a funnel plot from R script to R visual"
@@ -66,12 +64,8 @@
       href: create-display-dialog-box.md         
     - name: "Add a display warning icon to your visual"
       href: visual-display-warning-icon.md      
-    - name: "Create R-powered visuals"
-      href: create-r-based-power-bi-desktop.md  
     - name: "Test your Power BI visual"  
       href: submission-testing.md
-    - name: "Use R-powered Power BI visuals in Power BI"
-      href: ../../create-reports/desktop-r-powered-custom-visuals.md?toc=/power-bi/developer/visuals/TOC.json&bc=/power-bi/breadcrumb/toc.json
     - name: "Visual interactions"
       href: visuals-interactions.md
     - name: "Add selections"

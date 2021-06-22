@@ -43,6 +43,11 @@ We can even take it one step further. A fuel tank in a car has to be filled with
 
 **SharePoint Team-Sites** – Saving your Power BI Desktop files to SharePoint – Team Sites is much the same as saving to OneDrive for Business. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
 
+> [!NOTE]
+> Datasets imported from OneDrive for Business or OneDrive Personal cannot be updated from local files. You must replace the file in OneDrive for Business or OneDrive Personal for Power BI to update the dataset. Alternatively, delete the dataset and its related artifacts and then import from a local file.
+> 
+> 
+
 ## Ready to get started?
 See the following articles to learn more about getting your file into Power BI.
 

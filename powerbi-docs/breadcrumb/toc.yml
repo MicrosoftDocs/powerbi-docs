@@ -23,15 +23,9 @@
         - name: Embedded analytics
           tocHref: /power-bi/developer/embedded/
           topicHref: /power-bi/developer/embedded/index
-        - name: Embedded analytics
-          tocHref: /javascript/api/overview/powerbi/
-          topicHref: /power-bi/developer/embedded/index          
         - name: Power BI visuals
           tocHref: /power-bi/developer/visuals/
           topicHref: /power-bi/developer/visuals/index
-        - name: Power BI visuals
-          tocHref: /power-bi/create-reports/
-          topicHref: /power-bi/developer/visuals/index          
         - name: Automation
           tocHref: /power-bi/developer/automation/
           topicHref: /power-bi/developer/automation/index
