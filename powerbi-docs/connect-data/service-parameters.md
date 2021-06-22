@@ -25,7 +25,7 @@ As a report creator, you define parameters in Power BI Desktop. When you [publis
 
 2. Select the tab for **Datasets** and highlight a dataset in the list. 
     
-    ![Settings window with Datasets tab selected](media/service-parameters/power-bi-select-dataset2.png)
+    ![Settings window with Datasets tab selected](media/service-parameters/power-bi-select-dataset-2.png)
 
 3. Expand **Parameters**.  If the selected dataset has no parameters, you see a message with a link to Learn more about query parameters. If the dataset does have parameters, expand the **Parameters** heading to reveal those parameters. 
 

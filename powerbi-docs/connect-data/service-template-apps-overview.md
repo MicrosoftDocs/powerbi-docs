@@ -29,7 +29,7 @@ Power BI Template Apps allow Power BI Pro or Power BI Premium users to gain imme
         [![Microsoft Project web app](./media/service-template-apps-overview/project-web.png)](https://app.powerbi.com/groups/me/getapps/services/pbi_msprojectonline.pbi-microsoftprojectwebapp)
     :::column-end:::
     :::column:::
-        [![Microsoft 365 Usage Analytics web app](./media/service-template-apps-overview/microsoft365-usage-analytics.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
+        [![Microsoft 365 Usage Analytics web app](./media/service-template-apps-overview/microsoft-365-usage-analytics.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
     :::column-end:::
     :::column:::
         [![Dynamic 365 Business Central - Sales web app](./media/service-template-apps-overview/dynamics-sales.png)](https://app.powerbi.com/groups/me/getapps/services/microsoftdynsmb.businesscentral_sales)
