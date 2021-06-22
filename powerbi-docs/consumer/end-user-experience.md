@@ -5,13 +5,13 @@ author: mihart
 ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: removed
-ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: quickstart
 ms.date: 05/22/2021
-#customer intent: As a PBI consumer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently. 
+ms.custom: mode-portal
 LocalizationGroup: Get started
+#customer intent: As a PBI consumer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently. 
 ---
 # Quickstart - Getting around in Power BI service
 

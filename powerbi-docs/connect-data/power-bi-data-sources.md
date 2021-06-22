@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 04/12/2021
+ms.date: 06/18/2021
 ---
 
 # Power BI data sources
@@ -49,6 +49,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 ## Data sources C-D
 | Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
 |---|---|---|---|---|---|---|
+| Data Virtuality LDW | Yes | Yes | Yes | Yes | Yes | No |
 | Data.World - Get Dataset | Yes | Yes | No | No | No | No |
 | Microsoft Dataverse | Yes | Yes | Yes | No | No | Yes |
 | Denodo | Yes | Yes | Yes | Yes | Yes | No |
@@ -106,7 +107,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | MarkLogic ODBC | Yes | Yes | Yes | Yes | Yes | No |
 | Microsoft Azure Consumption Insights | Yes | Yes | No | No | No | No |
 | Microsoft Exchange | Yes | Yes | No | Yes | No | No |
-| Microsoft Exchange Online individual accounts | Yes | Yes | No | No | No | Yes |
+| Microsoft Exchange Online individual accounts  <sup>8</sup> | Yes | Yes | No | No | No | Yes |
 | Microsoft Graph Security | Yes | Yes | No | Yes | No | No |
 | Mixpanel | Yes | Yes | No | No | No | No |
 | MySQL | Yes | Yes | No | Yes | Yes | Yes |
@@ -188,11 +189,13 @@ The following table shows the data sources that Power BI supports for datasets, 
 
 <sup>7</sup> Paxata is supported in the version of Power BI Desktop optimized for Power BI Report Server. It isn't supported in Power BI reports published to Power BI Report Server. See [Power BI report data sources in Power BI Report Server](../report-server/data-sources.md) for the list of supported data sources.
 
+<sup>8</sup> Recurring meetings cannot be displayed when imported using the Exchange Online connector.
 
 ## Considerations and limitations
 
 - Many data connectors for Power BI Desktop require Internet Explorer 10 (or newer) for authentication. 
 - Some data sources are available in Power BI Desktop optimized for Power BI Report Server, but aren't supported when published to Power BI Report Server. See [Power BI report data sources in Power BI Report Server](../report-server/data-sources.md) for the list of supported data sources.
+- Power BI Desktop and the Power BI service may send multiple queries for any given query, to get schema information or the data itself, based in part on whether data is cached. This behavior is by design. 
 
 ## Single sign-on (SSO) for DirectQuery sources
 
