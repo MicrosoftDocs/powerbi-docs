@@ -490,6 +490,16 @@ This feature is on by default. Even if the feature is disabled, in SharePoint an
 
 Learn more about [creating reports from SharePoint and Microsoft Lists](../create-reports/service-quick-create-sharepoint-list.md).
 
+### Azure AD Single Sign-On (SSO) for Gateway
+
+This setting enables Azure Active Directory (Azure AD) single sign-on (SSO) through the data gateway to cloud data sources that rely on Azure AD-based authentication. It gives seamless Azure AD SSO connectivity to Azure-based data sources, such as Azure Synapse Analytics (SQL DW), Azure Data Explorer, Snowflake on Azure, and Azure Databricks through an on-premises data gateway.
+
+This feature is important for users who work with reports that require SSO connectivity in DirectQuery mode to data sources deployed in an Azure virtual network (Azure VNet). When you configure SSO for an applicable data source, queries execute under the Azure AD identity of the user that interacts with the Power BI report. 
+
+An important security-related consideration regarding on-prem data gateways is that gateway owners have full control over their on-prem data gateways. This means that it is theoretically possible for a malicious gateway owner to intercept Azure AD SSO tokens as they flow through an on-prem data gateway (this is not a concern for VNet data gateways because they are maintained by Microsoft). Because of this possible threat, the Azure AD Single Sign-On feature is disabled by default for on-prem data gateways. As a Power BI admin, you must enable the Azure AD Single Sign-On (SSO) for Gateway tenant setting (shown below) in the Power BI admin portal before data sources can be enabled for Azure AD SSO on an on-prem data gateway. Before enabling the feature, make sure you restrict the ability to deploy on-prem data gateways in your organization to appropriate administrators.  
+
+![Screenshot of Azure AD Single Sign-On (SSO) for Gateway tenant switch.](media/service-admin-portal/powerbi-admin-portal-azure-ad-sso-for-gateway-setting.png)
+
 ## R and Python visuals settings
 
 ### Interact with and share R and Python visuals
