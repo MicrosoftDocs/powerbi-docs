@@ -263,7 +263,7 @@ Enter property values for the custom visual project, update the icon file, and t
     pbiviz package
     ```
 
-The package is output to the **dist** folder of the project.
+This command creates a *pbiviz* file in the **dist/** directory of your visual project, and overwrites any previous *pbiviz* file that might exist.
 
 ![Dist folder](media/custom-visual-develop-tutorial-format-options/dist-folder.png)
 
