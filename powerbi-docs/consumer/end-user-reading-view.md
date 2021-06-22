@@ -14,6 +14,7 @@ ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/30/2020
+ms.custom: mode-portal
 #As a Power BI consumer, I want to get a quick lesson on what I can do with Power BI service so that I can get up and running quickly.
 ---
 # Quickstart: learn about the Power BI capabilities for *business users*
