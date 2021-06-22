@@ -233,9 +233,8 @@
         href: service-template-apps-tips.md
       - name: "Manage your published template app"
         href: service-template-update-delete-extract.md
-      - name: "Install, update and distribute template apps"
+      - name: "Install, share, and update a template app"
         href: service-template-apps-install-distribute.md
-    
       - name: "Template apps samples"
         href: service-template-apps-samples.md        
     - name: Connect to services
