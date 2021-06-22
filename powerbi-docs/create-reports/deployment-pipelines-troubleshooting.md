@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: pbi-deployment
-ms.date: 06/14/2021
+ms.date: 06/22/2021
 ---
 
 # Deployment pipelines troubleshooting
