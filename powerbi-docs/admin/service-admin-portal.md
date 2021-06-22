@@ -490,6 +490,12 @@ This feature is on by default. Even if the feature is disabled, in SharePoint an
 
 Learn more about [creating reports from SharePoint and Microsoft Lists](../create-reports/service-quick-create-sharepoint-list.md).
 
+### Snowflake (SSO)
+
+This setting approves sending Azure AD credentials to Snowflake for authentication for the entire organization. See [Connect to Snowflake in Power BI Service](../connect-data/service-connect-snowflake.md) for more detail.
+
+![Screenshot of Snowflake (SSO)tenant switch.](media/service-admin-portal/powerbi-admin-portal-snowflake-sso-setting.png)
+
 ### Azure AD Single Sign-On (SSO) for Gateway
 
 This setting enables Azure Active Directory (Azure AD) single sign-on (SSO) through on-prem data gateways to cloud data sources that rely on Azure AD-based authentication. It gives seamless Azure AD SSO connectivity to Azure-based data sources, such as Azure Synapse Analytics (SQL DW), Azure Data Explorer, Snowflake on Azure, and Azure Databricks through an on-premises data gateway.
