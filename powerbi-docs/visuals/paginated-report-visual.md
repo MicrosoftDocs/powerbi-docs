@@ -90,7 +90,7 @@ You can also show parameters in the toolbar. In the **Format** pane, turn **Para
 
 ## Auto-apply filters 
 
-You can decide whether report filters are automatically applied to the paginated report visual, or not. By default, the Auto-apply filters option is turned off. This means your paginated report visual will remain unchanged as you adjust filters in your Power BI report. By turning on Auto-apply filters, your paginated report visual will automatically update as you apply filters or update other visuals that affect the field you’ve selected for the parameter value.  
+You can decide whether report filters are automatically applied to the paginated report visual, or not. By default, the Auto-apply filters option is turned off. This means your paginated report visual remains unchanged as you adjust filters in your Power BI report. If you turn on Auto-apply filters, your paginated report visual automatically updates as you apply filters or update other visuals that affect the field you’ve selected for the parameter value.  
 
 - Select your paginated report visual. From the **Format** pane, turn **Auto-apply filters** on. 
 
