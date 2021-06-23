@@ -101,4 +101,7 @@ Enhanced metadata scanning requires no special license. It works for all of your
 
 ## Next steps
 
+* [Power BI REST Admin APIs](/rest/api/power-bi/admin.md)
+* [Enable service principal authentication for read-only admin APIs (preview)](read-only-apis-service-principal-authentication.md)
+
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
