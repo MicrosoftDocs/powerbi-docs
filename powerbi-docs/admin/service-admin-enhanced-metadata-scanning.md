@@ -39,7 +39,7 @@ The following short walkthrough shows how to
 
 Before you start, decide which authentication method you’re going to use with the APIs. You can use either the Power BI service Admin delegated token, or the [Service Principal support for read-only Admin APIs](read-only-apis-service-principal-authentication.md).
 
-### Step 2: Perform a full scan.
+### Step 2: Perform a full scan
 
 Call **workspaces/modified** without **modifiedSince** to get the complete list of workspace IDs in the tenant. This retrieves all the workspaces in the tenant, including classic workspaces, personal workspaces, and new workspaces.
 
@@ -60,7 +60,7 @@ Use the URI from the location header you received from calling workspaces/getInf
 
 Use the URI from the location header your received from calling workspaces/scanStatus/{scan-id} and read the data using **workspaces/scanResult/{scan_id}**. The data contains the list of workspaces, artifact info, and other metadata based on the parameters passed in the workspaces/getInfo call.
 
-### Perform an incremental scan.
+### Perform an incremental scan
 
 Now that you have all the workspaces and the metadata and lineage of their assets, it’s recommended that you perform only incremental scans that reference the previous scan that you did.
 
