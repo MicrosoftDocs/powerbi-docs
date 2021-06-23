@@ -22,7 +22,7 @@ Here are some examples of what enhanced metadata scanning makes possible:
 
 Enhanced metadata scanning facilitates governance over your organization's data in Power BI. It makes it possible to quickly catalog and report on all the metadata from your organization’s datasets.
 
-Enhanced metadata scanning uses a caching mechanism in order to lessen its impact on capacity resources. See [Impact on capacity resources](#impact-on-capacity-resources) for detail.
+Enhanced metadata scanning uses a caching mechanism to ensure that capacity resources are not impacted. See [Model caching](#model-caching) for detail.
 
 To be available for use, enhanced metadata scanning must be enabled for the organization by a Power BI admin. See [Enabling enhanced metadata scanning](#enabling-enhanced-metadata-scanning)
 
@@ -30,10 +30,10 @@ To be available for use, enhanced metadata scanning must be enabled for the orga
 
 The following short walkthrough shows how to 
 
-* [GetModifiedWorkspaces](/rest/api/power-bi/admin/workspaceinfo_getmodifiedworkspaces.md)
-* [WorkspaceGetInfo](/rest/api/power-bi/admin/workspaceinfo_postworkspaceinfo.md)
-* [WorkspaceScanStatus](/rest/api/power-bi/admin/workspaceinfo_getscanstatus.md)
-* [WorkspaceScanResult](/rest/api/power-bi/admin/workspaceinfo_getscanresult.md)
+* [GetModifiedWorkspaces](/rest/api/power-bi/admin/workspace-info-get-modified-workspaces.md)
+* [WorkspaceGetInfo](/rest/api/power-bi/admin/workspace-info-post-workspace-info.md)
+* [WorkspaceScanStatus](/rest/api/power-bi/admin/workspace-info-get-scan-status.md)
+* [WorkspaceScanResult](/rest/api/power-bi/admin/workspace-info-get-scan-result.md)
 
 ### Step 1: Determine authentication method
 
@@ -70,7 +70,7 @@ Divide this list into chunks of up to 100 workspaces, and get the data for these
 
 ## Enabling enhanced metadata scanning
 
-To provide some control over security, two Admin API tenant settings enable and control what kind of detailed low-level metadata will be included scanner API responses.
+To provide some control over privacy, two Admin API tenant settings enable and control what kind of detailed low-level metadata will be included scanner API responses.
 * **Enhance admin APIs responses with detailed metadata**: This setting turns on the caching flow and enhances API responses with low-level metadata (e.g. name, description) for tables, columns, and measures.
 * **Enhance admin APIs responses with DAX and mashup expressions**: This setting allows the API response to include DAX expressions and Mashup queries. This setting can only be enabled if the first setting is also enabled.
 
@@ -78,7 +78,7 @@ To enable these settings, go to **Admin portal > Tenant settings > Admin API set
 
 ![Screen shot of enhanced metadata scanning tenant settings.](media/service-admin-enhanced-metadata-scanning/enhanced-metadata-scanning-enable.png)
 
-## Impact on capacity resources
+## Model caching
 
 Enhanced metadata scanning uses a caching mechanism to ensure that **capacity resources are not impacted**.
  
@@ -93,8 +93,8 @@ If the detailed low-level metadata requested is not in the cache, it is simply n
 ## ConsiderationsSpecial notes and unsupported models
 
 * Datasets that have not been refreshed or re-published will be returned in API responses but without their detailed low-level information and expressions. For example, you will see dataset name and lineage in the response, but not the dataset’s table and column names.
-* The caching flow is based on refresh and re-publish events. Because of this, datasets that are not being re-published and that have only DirectQuery-based tables that don’t use the regular refresh flow in the Power BI service, will not trigger a caching flow, and the enhanced metadata about these datasets will not be returned.
-* Real time datasets, datasets with Object Level Security, datasets with a live connection to AS-Azure and AS on-prem, and Excel full fidelity datasets are not supported for detailed metadata. For unsupported datasets, the response returns the reason for not getting the detailed metadata about the dataset. It is found in a field named *schemaRetrievalError*, for example, *schemaRetrievalError: Unsupported request for RealTime model*.
+* •	Datasets containing only DirectQuery tables will return low-level details only if they have been republished since enhanced metadata scanning has been enabled. This is because DirectQuery datasets don't use the regular Power BI dataset refresh flow that triggers caching. If, however, a dataset also contains tables that use import mode, caching takes place upon dataset refresh as described above, and it is not necessary for the dataset to be republished in order to for low-level details to be returned.
+* [Real time datasets](/connect-data/service-real-time-streaming.md), datasets with [Object Level Security](https://powerbi.microsoft.com/en-us/blog/object-level-security-ols-is-now-generally-available-in-power-bi-premium-and-pro/), [datasets with a live connection to AS-Azure and AS on-prem](/connect-data/desktop-analysis-services-tabular-data.md), and [Excel full fidelity datasets](/connect-data/service-excel-workbook-files#import-excel-data-into-power-bi.md) are not supported for detailed metadata. For unsupported datasets, the response returns the reason for not getting the detailed metadata about the dataset. It is found in a field named *schemaRetrievalError*, for example, *schemaRetrievalError: Unsupported request for RealTime model*.
 
 ## Licensing
 Enhanced metadata scanning requires no special license. It works for all of your tenant metadata including that of artifacts located in non-Premium workspaces.
