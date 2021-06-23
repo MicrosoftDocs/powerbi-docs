@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/13/2018
+ms.date: 06/22/2021
 LocalizationGroup: Reports
 ---
 # Create a QR code for a report in Power BI to use in the mobile apps
@@ -19,12 +19,12 @@ Colleagues you've shared the report with can scan the QR code for access to the 
 
 ## Create a QR code for a report
 1. Open a report in the Power BI service.
-2. Select **More options** (...) in the top-right corner and select **Generate QR code**. 
+1. Select the dropdown caret next to **File**, and select **Generate a QR code** from the menu.
    
-    ![Screenshot of a report, showing a pointer from the ellipsis to Generate Q R code.](media/service-create-qr-code-for-report/power-bi-create-qr-code-report.png)
+   ![Screenshot of a report, showing the File menu with the Generate a Q R code command.](media/service-create-qr-code-for-report/power-bi-create-qr-code-report.png)
 3. A dialog box with the QR code appears. 
    
-    ![Screenshot of a dialog, showing the Q R code is ready to download or save.](media/service-create-qr-code-for-report/powerbi_report_qrcode.png)
+   ![Screenshot of a dialog, showing the Q R code is ready to download or save.](media/service-create-qr-code-for-report/powerbi_report_qrcode.png)
 4. From here you can scan the QR code or download and save it so you can: 
    
    * Add it to an email or other document, or 

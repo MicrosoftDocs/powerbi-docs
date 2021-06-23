@@ -8,7 +8,7 @@ ms.custom: video-JbL2-HJ8clE
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/02/2020
+ms.date: 06/23/2021
 LocalizationGroup: Dashboards
 ---
 
@@ -37,7 +37,8 @@ This example uses a card tile from the Retail Analysis sample dashboard. [Get th
 
    ![Total Stores tile](media/service-set-data-alerts/powerbi-card.png)
 
-1. Select the bell icon ![Alert icon](media/service-set-data-alerts/power-bi-bell-icon.png) to add one or more alerts for **Total Stores**.
+1. Select **Manage alerts** to add one or more alerts for **Total Stores**.
+   ![Screenshot of the More options menu with Manage alerts highlighted.](media/service-set-data-alerts/manage-alerts.png) 
 
 1. To start, select **+ Add alert rule**, ensure the **Active** slider is set to **On**, and give your alert a title. Titles help you easily recognize your alerts.
 
@@ -84,7 +85,9 @@ There are many ways to manage your alerts:
 
 ### From the dashboard tile
 
-1. If you need to change or remove an alert for a tile, reopen the **Manage alerts** window by selecting the bell icon ![Alert icon](media/service-set-data-alerts/power-bi-bell-icon.png).
+1. If you need to change or remove an alert for a tile, reopen the **Manage alerts** window by selecting **Manage alerts**.
+
+   ![Screenshot of Manage alerts on the More options menu.](media/service-set-data-alerts/manage-alerts.png) 
 
     Power BI displays the alert(s) that you've set for that tile.
 
