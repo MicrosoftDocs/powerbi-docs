@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 01/25/2021
+ms.date: 06/23/2021
 LocalizationGroup: Get started
 ---
 # Supported languages and countries/regions for Power BI
