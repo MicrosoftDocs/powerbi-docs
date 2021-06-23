@@ -82,7 +82,7 @@ To enable these settings, go to **Admin portal > Tenant settings > Admin API set
 
 Enhanced metadata scanning uses a caching mechanism to ensure that **capacity resources are not impacted**.
  
-Getting low-level metadata requires that the model be available in memory. To make sure Power BI shared or Premium capacity resources are not adversely impacted by having to load the model for every API call, the enhanced metadata scanning feature leverages successful dataset refreshes and republishing by creating a cache of the model that is loaded into memory on those occasions. Then, when enhanced metadata scanning takes place, API calls are made against the cached model. This limits the load on your capacity resources.
+Getting low-level metadata requires that the model be available in memory. To make sure Power BI shared or Premium capacity resources are not impacted by having to load the model for every API call, the enhanced metadata scanning feature leverages successful dataset refreshes and republishing by creating a cache of the model that is loaded into memory on those occasions. Then, when enhanced metadata scanning takes place, API calls are made against the cached model. No load is placed on your capacity resources due to enhanced metadata scanning.
 
 Caching happens every successful dataset refresh and republish only if the following conditions are met:
 * The **Enhance Admin APIs responses with detailed metadata** admin tenant setting is enabled (see [Enabling enhanced metadata scanning](#enabling-enhanced-metadata-scanning)).
