@@ -38,6 +38,7 @@ This example uses a card tile from the Retail Analysis sample dashboard. [Get th
    ![Total Stores tile](media/service-set-data-alerts/powerbi-card.png)
 
 1. Select **Manage alerts** to add one or more alerts for **Total Stores**.
+
    ![Screenshot of the More options menu with Manage alerts highlighted.](media/service-set-data-alerts/manage-alerts.png) 
 
 1. To start, select **+ Add alert rule**, ensure the **Active** slider is set to **On**, and give your alert a title. Titles help you easily recognize your alerts.
