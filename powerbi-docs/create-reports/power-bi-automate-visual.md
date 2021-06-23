@@ -7,7 +7,7 @@ ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/17/2021
+ms.date: 06/22/2021
 LocalizationGroup: Create reports
 ---
 # Create a Power Automate visual for Power BI (preview)
