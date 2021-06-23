@@ -52,6 +52,7 @@ The following list details a few examples of data sources to which **Power BI De
 | ODBC |Presto |[Presto ODBC driver](https://www.simba.com/drivers/presto-odbc-jdbc/) |
 | ODBC |Project Online |[Project Online article](desktop-project-online-connect-to-data.md) |
 | ODBC |Progress OpenEdge |[Progress OpenEdge ODBC driver blog post](https://www.progress.com/blogs/connect-microsoft-power-bi-to-openedge-via-odbc-driver) |
+| ODBC |Salesforce |[Devart ODBC Driver for Salesforce](https://www.devart.com/odbc/salesforce/) |
 
 ## Data sources accessible through OLE DB
 The **OLE DB** connector in **Power BI Desktop** lets you import data from any third-party OLE DB driver simply by specifying a *connection string*. As an option, you can also specify a SQL statement to execute against the OLE DB driver.
