@@ -90,7 +90,7 @@ Caching happens every successful dataset refresh and republish only if the follo
 
 If the detailed low-level metadata requested is not in the cache, it is simply not returned. High-level metadata, such as dataset name, is always returned, even if the low-level detail is not available.
 
-## ConsiderationsSpecial notes and unsupported models
+## Considerations and limitations
 
 * Datasets that have not been refreshed or republished will be returned in API responses but without their detailed low-level information and expressions. For example, you will see dataset name and lineage in the response, but not the dataset’s table and column names.
 * •	Datasets containing only DirectQuery tables will return low-level details only if they have been republished since enhanced metadata scanning has been enabled. This is because DirectQuery datasets don't use the regular Power BI dataset refresh flow that triggers caching. If, however, a dataset also contains tables that use import mode, caching takes place upon dataset refresh as described above, and it is not necessary for the dataset to be republished in order to for low-level details to be returned.
