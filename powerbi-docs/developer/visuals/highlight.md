@@ -7,7 +7,7 @@ ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/31/2019
+ms.date: 06/21/2021
 ---
 
 # Highlight data points in Power BI Visuals
