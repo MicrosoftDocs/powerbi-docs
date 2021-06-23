@@ -60,7 +60,7 @@ Use the URI from the location header you received from calling workspaces/getInf
 
 Use the URI from the location header your received from calling workspaces/scanStatus/{scan-id} and read the data using **workspaces/scanResult/{scan_id}**. The data contains the list of workspaces, artifact info, and other metadata based on the parameters passed in the workspaces/getInfo call.
 
-### Perform an incremental scan
+### Step 3: Perform an incremental scan
 
 Now that you have all the workspaces and the metadata and lineage of their assets, it’s recommended that you perform only incremental scans that reference the previous scan that you did.
 
