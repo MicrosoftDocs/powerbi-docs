@@ -323,7 +323,7 @@ Define the chart by creating a file in the src directory with the following.
 
 ## Color
 
-To assign colors and select them when defining individual data points, you use `IVisualHost`. 
+To assign colors and select them when defining individual data points, you use `IVisualHost`.
 
 ```typescript
 /**
@@ -341,7 +341,7 @@ function visualTransform(options: VisualUpdateOptions, host: IVisualHost): BarCh
 
 ```
 
-## Color
+## Colors
 
 Color is one of the services available on `IVisualHost`.
 
