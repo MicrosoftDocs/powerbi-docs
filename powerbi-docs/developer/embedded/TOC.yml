@@ -22,6 +22,8 @@
       href: embed-paginated-reports-organization.md      
     - name: "Embed content for national clouds"
       href: embed-sample-for-customers-national-clouds.md
+    - name: "Embed a report in an app for your customers"
+      href: embed-customers-app.md       
     - name: "Embed a report in an app for your organization"
       href: embed-organization-app.md      
   - name: Concepts
