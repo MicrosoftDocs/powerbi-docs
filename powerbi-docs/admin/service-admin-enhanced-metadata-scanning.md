@@ -28,7 +28,7 @@ To be available for use, enhanced metadata scanning must be enabled for the orga
 
 ## Using enhanced metadata scanning
 
-The following short walkthrough shows how to 
+The following short walkthrough shows how to use the scanner APIs to retrieve metadata from your organization’s artifacts. The walkthrough includes the parameters that retrieve detailed, low-level dataset metadata. 
 
 * [GetModifiedWorkspaces](/rest/api/power-bi/admin/workspace-info-get-modified-workspaces.md)
 * [WorkspaceGetInfo](/rest/api/power-bi/admin/workspace-info-post-workspace-info.md)
