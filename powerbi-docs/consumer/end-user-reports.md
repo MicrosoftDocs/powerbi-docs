@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/09/2020
+ms.date: 06/12/2020
 LocalizationGroup: Reports
 ---
 
@@ -22,7 +22,7 @@ A Power BI report is a multi-perspective view into a dataset, with visuals that 
 
 ![Screenshot of a report page.](./media/end-user-reports/power-bi-report.png)
 
-A. This report has six pages (or tabs) and you're currently viewing the **Sentiment** page.    
+A. This report has four pages (or tabs) and you're currently viewing the **Sentiment** page.    
 B. On this page are five different visuals and a page title.    
 C. The *Filters* pane shows us one filter applied to all report pages. To collapse the Filters pane, select the arrow (**>**).    
 D. The Power BI banner displays the name of the report and the last updated date. Select the arrow to open a menu that also show the name of the report owner.    
@@ -43,7 +43,7 @@ As you explore and interact with your content: filtering, slicing, subscribing, 
 
 ### Save your changes or revert to the default settings
 
-That doesn't mean you can't save your changes. You can, but those changes only affect your view of the content. To revert to the original default view of the report, select **Reset to default**.
+That doesn't mean you can't save your changes. You can, but those changes only affect your view of the content. To revert to the original default view of the report, select the **Reset** icon.
 
 ![Screenshot of the Revert to default icon.](./media/end-user-reports/power-bi-reset.png)
 

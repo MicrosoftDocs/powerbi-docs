@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 05/10/2021
+ms.date: 06/23/2021
 ---
 
 # Power BI Embedded Generation 2 (preview)
@@ -39,7 +39,7 @@ All of the Power BI Embedded Gen 1 capabilities such as pausing and resuming the
     * The need to upgrade your capacity
 
     >[!NOTE]
-    >Improved metrics will be made available later in the preview period. Customers seeking access to utilization metrics for the past seven days, can do so by contacting customer support.
+    >Improved metrics will be made available later in the preview period. You can get usage metrics for Embedded Gen2 capacities by using the [Premium Gen 2 Capacity Utilization Metrics app](https://aka.ms/GenutilizationInstall).
 
 ## Using Embedded Gen2
 
