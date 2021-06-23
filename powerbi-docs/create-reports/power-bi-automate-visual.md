@@ -7,7 +7,7 @@ ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/22/2021
+ms.date: 06/23/2021
 LocalizationGroup: Create reports
 ---
 # Create a Power Automate visual for Power BI (preview)
@@ -97,8 +97,6 @@ Optionally, you can change the button text, font color, font size, or fill color
 
 :::image type="content" source="media/power-bi-automate-visual/power-bi-flow-format.png" alt-text="Format the flow."::: 
 
-
-
 ## Test the flow
 
 After you have applied a flow to the button, we recommend testing it before you share the flow with others. These Power BI flows can only run in the context of a Power BI report. You can't run these flows in a Power Automate web app or elsewhere.
@@ -111,7 +109,7 @@ If your flow is data contextual, you'll want to test how the filter selections i
 
     The button text indicates that the flow has been triggered.
 
-1. To check if the flow has run successfully, select the **More commands (...)** menu **Details** in the flow that has been triggered:
+1. To check if the flow has run successfully, select the **More commands (...)** menu > **Details** in the flow that has been triggered:
 
     :::image type="content" source="media/power-bi-automate-visual/entry-point-flow-details-page.png" alt-text="Select Details on the More options menu.":::
 
@@ -121,7 +119,7 @@ If your flow is data contextual, you'll want to test how the filter selections i
 
 ## Share the flow
 
-If the flow is running successfully, you can share the flow with your report readers. 
+When the flow is running successfully, you can share it with your report readers. 
 
 1. Select **Edit** in the **Run only users** section:
 
@@ -133,7 +131,7 @@ If the flow is running successfully, you can share the flow with your report rea
 
 ### Give users edit access
 
-Alternatively, you can give any users edit access to the flow (not just run permissions).
+Alternatively, you can give any users edit access to the flow, not just run permissions.
 
 1. Select **Share**, and specify the users or groups that you want to add as an owner:
 
@@ -141,9 +139,9 @@ Alternatively, you can give any users edit access to the flow (not just run perm
 
 ## Limitations and considerations
 
-- Additional manual inputs to the button are not supported at this time. We plan to add support for this by our General Availability release.
-- Currently, we only have a few built-in templates; however, we will be adding more based on user feedback.
-- The visual is not supported for PaaS embedded scenarios nor in Sovereign Cloud scenarios. 
+- Additional manual inputs to the button aren't supported at this time. We plan to add support for this by the general availability release.
+- Currently, we only have a few built-in templates; we plan to add more based on user feedback.
+- The visual isn't supported for PaaS embedded scenarios, nor in Sovereign Cloud scenarios. 
 
 ## Next steps
 
