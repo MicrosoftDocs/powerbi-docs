@@ -53,12 +53,12 @@ Call **workspaces/getInfo** to trigger a scan call for these 100 workspaces. You
 |---------|---------|
 |lineage=true               |Receive the lineage info for all artifacts returned.|
 |datasourceDetails=true     |Receive data source details for datasets and dataflows.|
-|datasetSchema=true         |Receive the dataset’s tables, columns and measures.|
+|datasetSchema=true         |Receive the dataset’s tables, columns, and measures.|
 |datasetExpressions=true    |Receive the measures, calculated column expressions, and mashup query associated with each table. You can get dataset expressions only if both datasetSchema and datasetExpressions are set to true.|
 
 Use the URI from the location header you received from calling workspaces/getInfo and poll on **workspaces/scanStatus/{scan_id}** until the status returned is “Succeeded”. This means the scan result is ready. It is recommended to use a polling interval of 30-60 seconds. In the location header, you’ll also receive the URI to call in the next step. Use it only once the status is “Succeeded”.
 
-Use the URI from the location header your received from calling workspaces/scanStatus/{scan-id} and read the data using **workspaces/scanResult/{scan_id}**. The data contains the list of workspaces, artifact info, and additional metadata based on the parameters passed in the workspaces/getInfo call.
+Use the URI from the location header your received from calling workspaces/scanStatus/{scan-id} and read the data using **workspaces/scanResult/{scan_id}**. The data contains the list of workspaces, artifact info, and other metadata based on the parameters passed in the workspaces/getInfo call.
 
 ### Perform an incremental scan.
 
@@ -71,7 +71,7 @@ Divide this list into chunks of up to 100 workspaces, and get the data for these
 ## Enabling enhanced metadata scanning
 
 To provide some control over privacy, two Admin API tenant settings enable and control what kind of detailed low-level metadata will be included scanner API responses.
-* **Enhance admin APIs responses with detailed metadata**: This setting turns on the caching flow and enhances API responses with low-level metadata (e.g. name, description) for tables, columns, and measures.
+* **Enhance admin APIs responses with detailed metadata**: This setting turns on the caching flow and enhances API responses with low-level metadata (for example, name and description) for tables, columns, and measures.
 * **Enhance admin APIs responses with DAX and mashup expressions**: This setting allows the API response to include DAX expressions and Mashup queries. This setting can only be enabled if the first setting is also enabled.
 
 To enable these settings, go to **Admin portal > Tenant settings > Admin API settings**. 
@@ -84,7 +84,7 @@ Enhanced metadata scanning uses a caching mechanism to ensure that **capacity re
  
 Getting low-level metadata requires that the model be available in memory. To make sure Power BI shared or Premium capacity resources are not adversely impacted by having to load the model for every API call, the enhanced metadata scanning feature leverages successful dataset refreshes and republishing by creating a cache of the model that is loaded into memory on those occasions. Then, when enhanced metadata scanning takes place, API calls are made against the cached model. This limits the load on your capacity resources.
 
-Caching happens every successful dataset refresh and re-publish only if the following conditions are met:
+Caching happens every successful dataset refresh and republish only if the following conditions are met:
 * The **Enhance Admin APIs responses with detailed metadata** admin tenant setting is enabled (see [Enabling enhanced metadata scanning](#enabling-enhanced-metadata-scanning)).
 * There has been a call to the scanner APIs within the last 90 days.
 
@@ -92,7 +92,7 @@ If the detailed low-level metadata requested is not in the cache, it is simply n
 
 ## ConsiderationsSpecial notes and unsupported models
 
-* Datasets that have not been refreshed or re-published will be returned in API responses but without their detailed low-level information and expressions. For example, you will see dataset name and lineage in the response, but not the dataset’s table and column names.
+* Datasets that have not been refreshed or republished will be returned in API responses but without their detailed low-level information and expressions. For example, you will see dataset name and lineage in the response, but not the dataset’s table and column names.
 * •	Datasets containing only DirectQuery tables will return low-level details only if they have been republished since enhanced metadata scanning has been enabled. This is because DirectQuery datasets don't use the regular Power BI dataset refresh flow that triggers caching. If, however, a dataset also contains tables that use import mode, caching takes place upon dataset refresh as described above, and it is not necessary for the dataset to be republished in order to for low-level details to be returned.
 * [Real time datasets](/connect-data/service-real-time-streaming.md), datasets with [Object Level Security](https://powerbi.microsoft.com/en-us/blog/object-level-security-ols-is-now-generally-available-in-power-bi-premium-and-pro/), [datasets with a live connection to AS-Azure and AS on-prem](/connect-data/desktop-analysis-services-tabular-data.md), and [Excel full fidelity datasets](/connect-data/service-excel-workbook-files#import-excel-data-into-power-bi.md) are not supported for detailed metadata. For unsupported datasets, the response returns the reason for not getting the detailed metadata about the dataset. It is found in a field named *schemaRetrievalError*, for example, *schemaRetrievalError: Unsupported request for RealTime model*.
 
