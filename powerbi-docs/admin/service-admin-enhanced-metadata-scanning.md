@@ -47,7 +47,7 @@ Divide the list into chunks of 100 workspaces at most.
 
 For each chunk of 100 workspaces:
 
-Call **workspaces/getInfo** to trigger a scan call for these 100 workspaces. You will receive the scanId in the response to use in the next steps. In the location header you’ll also receive the URI to call for the next step. The URI supports the following additional parameters, which can be added in the query string (the default for the four parameters is false):
+Call **workspaces/getInfo** to trigger a scan call for these 100 workspaces. You will receive the scanId in the response to use in the next steps. In the location header, you’ll also receive the URI to call for the next step. The URI supports the following additional parameters, which can be added in the query string (the default for all four parameters is false). The parameters **datasetSchema** and **datasetExpressions** are the parameters that return the detailed, low-level dataset metadata.
 
 |Parameter  |Description  |
 |---------|---------|
@@ -56,9 +56,9 @@ Call **workspaces/getInfo** to trigger a scan call for these 100 workspaces. You
 |datasetSchema=true         |Receive the dataset’s tables, columns and measures.|
 |datasetExpressions=true    |Receive the measures, calculated column expressions, and mashup query associated with each table. You can get dataset expressions only if both datasetSchema and datasetExpressions are set to true.|
 
-Use the URI from the location header you received in step 1 and poll on **workspaces/scanStatus/{scan_id}** until the status returned is “Succeeded”. This means the scan result is ready. It is recommended to use a polling interval of 30-60 seconds. In the location header you’ll also receive the URI to call in the next step. Use it only once the status is “Succeeded”.
+Use the URI from the location header you received from calling workspaces/getInfo and poll on **workspaces/scanStatus/{scan_id}** until the status returned is “Succeeded”. This means the scan result is ready. It is recommended to use a polling interval of 30-60 seconds. In the location header, you’ll also receive the URI to call in the next step. Use it only once the status is “Succeeded”.
 
-Use the URI from the location header your received in Step 2, and read the data using **workspaces/scanResult/{scan_id}**. The data contains the list of workspaces, artifact info, and additional metadata based on the parameters passed in Step 1.
+Use the URI from the location header your received from calling workspaces/scanStatus/{scan-id} and read the data using **workspaces/scanResult/{scan_id}**. The data contains the list of workspaces, artifact info, and additional metadata based on the parameters passed in the workspaces/getInfo call.
 
 ### Perform an incremental scan.
 
@@ -66,7 +66,7 @@ Now that you have all the workspaces and the metadata and lineage of their asset
 
 Call **workspaces/modified** with **modifiedSince** set to the start time of the last scan in order to get the workspaces that have changed and which therefore require another scan. The modifiedSince parameter should be set for a date within the last 30 days.
 
-Divide this list into chunks of up to 100 workspaces, and get the data for these changed workspaces using the three API calls as described in Step 2.
+Divide this list into chunks of up to 100 workspaces, and get the data for these changed workspaces using the three API calls, **workspaces/getInfo**, **workspaces/scanStatus/{scan_id}**, and **workspaces/scanResult/{scan_id}**, as described in Step 2 above.
 
 ## Enabling enhanced metadata scanning
 
