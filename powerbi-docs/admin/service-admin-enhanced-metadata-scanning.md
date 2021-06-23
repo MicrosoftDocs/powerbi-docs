@@ -13,7 +13,7 @@ LocalizationGroup: Administration
 
 # Enhanced metadata scanning
 
-Scanner APIs are a set of Admin REST APIs used for extracting high-level metadata about the artifacts in your organization. This high-level metadata includes such things as artifact name, sensitivity, endorsement status, etc. Enhanced metadata scanning is a feature that enables you to get more detailed, granular, lower-level information, such as the names of dataset tables and columns, measures, DAX expressions, and mashup queries.
+Scanner APIs are a set of Admin REST APIs used for extracting high-level metadata about the artifacts in your organization. This high-level metadata includes such things as artifact name, sensitivity, endorsement status, etc. *Enhanced metadata scanning* is a feature that enables you to get more detailed, granular, lower-level information, such as the names of dataset tables and columns, measures, DAX expressions, and mashup queries.
 
 Here are some examples of what enhanced metadata scanning makes possible:
 * High granularity search: For instance, you can find a dataset by searching for a measure.
