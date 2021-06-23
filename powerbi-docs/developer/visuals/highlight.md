@@ -14,11 +14,11 @@ ms.date: 10/31/2019
 
 By default, whenever an element is selected, the `values` array in the `dataView` [object](objects-properties.md) is filtered to just the selected values. This filtering causes all other visuals on the page to display just the selected data.
 
-![highlight `dataview` default behavior](media/highlight/highlight-dataview.png)
+![highlight `dataview` default behavior](media/highlight/dataview-support.png)
 
 If you set the `supportsHighlight` property in your `capabilities.json` to `true`, you'll receive the full unfiltered `values` array along with a `highlights` array. The `highlights` array will be the same length as the values array and any non-selected values will be set to `null`. With this property enabled it's the visual's responsibility to highlight the appropriate data by comparing the `values` array to the `highlights` array.
 
-![`dataview` supports highlight](media/highlight/highlight-dataview-supports.png)
+![`dataview` supports highlight](media/highlight/highlight-support.png)
 
 In the example, you'll notice that one bar is selected, and that is the only value in the highlights array. There can also be multiple selections and partial highlights. The highlighted values will be presented in the data view.
 
