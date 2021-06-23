@@ -14,13 +14,24 @@ ms.date: 06/21/2021
 
 By default, whenever an element is selected, the `values` array in the `dataView` [object](objects-properties.md) is filtered to just the selected values. This filtering causes all other visuals on the page to display just the selected data.
 
+If you set the `supportsHighlight` property in your `capabilities.json` to `true`, you'll receive the full unfiltered `values` array along with a `highlights` array. The `highlights` array will be the same length as the values array and any non-selected values will be set to `null`. With this property enabled the visual will highlight the appropriate data by comparing the `values` array to the `highlights` array.
+
+### [No highlight support](#tab/Standard)
+
 ![highlight `dataview` default behavior](media/highlight/dataview-support.png)
 
-If you set the `supportsHighlight` property in your `capabilities.json` to `true`, you'll receive the full unfiltered `values` array along with a `highlights` array. The `highlights` array will be the same length as the values array and any non-selected values will be set to `null`. With this property enabled it's the visual's responsibility to highlight the appropriate data by comparing the `values` array to the `highlights` array.
+### [Highlight support](#tab/Highlight)
 
 ![`dataview` supports highlight](media/highlight/highlight-support.png)
 
-In the example, you'll notice that one bar is selected, and that is the only value in the highlights array. There can also be multiple selections and partial highlights. The highlighted values will be presented in the data view.
+---
+
+In the example, you'll notice:
+
+* **Without** highlight support: Selection is the only value in the `values` array, and the only bar presented in the data view.
+* **With** highlight support:  All values are in the `values` array, but only the selected value is in the `highlights` array. All bars appear in the data view with highlighted bar a different color.
+
+There can also be multiple selections and partial highlights. The highlighted values will be presented in the data view.
 
 > [!NOTE]
 > Table data view mapping doesn't support the highlights feature.
