@@ -10,16 +10,16 @@ ms.topic: reference
 ms.date: 05/18/2021
 ---
 
-# Render events in Power BI visuals
+# "Rendering" events in Power BI visuals
 
 In order to get a [visual certified](power-bi-custom-visuals-certified.md), it must include **rendering events**.
 These events let listeners (primarily, *export to PDF* and *export to PowerPoint*) know when the visual is being rendered and when it is ready for export.
 
 The **rendering events API** consists of three methods that should be called during rendering:
 
-* `renderingStarted`: The Power BI visual code calls the `renderingStarted` method to indicate that the rendering process has started. **This method should always be the first line of the *update* method since that is where the rendering process begins**.
+* `renderingStarted`: The Power BI visual code calls the `renderingStarted` method to indicate that the rendering process has started. **This method should always be the first line of the *update* method** since that is where the rendering process begins.
 
-* `renderingFinished`: When rendering is completed successfully, the Power BI visual code calls the `renderingFinished` method to notify the listeners that the visual's image is ready for export. This method should be the last line of code **executed** when the visual updates. It's usually, but not always, the last line of the update method.
+* `renderingFinished`: When rendering is completed successfully, the Power BI visual code calls the `renderingFinished` method to notify the listeners that the visual's image is ready for export. This method should be the **last line of code executed** when the visual updates. It's usually, but not always, the last line of the update method.
 
 * `renderingFailed`: If a problem occurs during the rendering process, the Power BI visual doesn't render successfully. To notify the listeners that the rendering process hasn't been completed, the Power BI visual code should call the `renderingFailed` method. This method also provides an optional string to provide a reason for the failure.
 
