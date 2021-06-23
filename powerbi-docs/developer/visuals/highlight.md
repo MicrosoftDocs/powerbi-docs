@@ -29,7 +29,7 @@ If you set the `supportsHighlight` property in your `capabilities.json` to `true
 In the example, you'll notice:
 
 * **Without** highlight support: Selection is the only value in the `values` array, and the only bar presented in the data view.
-* **With** highlight support:  All values are in the `values` array, but only the selected value is in the `highlights` array. All bars appear in the data view with highlighted bar a different color.
+* **With** highlight support:  All values are in the `values` array. The `highlights` array contains a `null` value for non-highlighted elements. All bars appear in the data view with highlighted bar a different color.
 
 There can also be multiple selections and partial highlights. The highlighted values will be presented in the data view.
 
