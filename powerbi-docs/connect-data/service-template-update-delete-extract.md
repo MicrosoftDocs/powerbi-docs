@@ -63,7 +63,7 @@ Go to the template app workspace. Then, if you made your changes in Power BI Des
 1. See installer [overwrite behavior](service-template-apps-install-distribute.md#overwrite-behavior) to learn how changes in the dataset affect the installed template app.
 1. When updating (overwriting) a template app, it first reverts back to sample data and will automatically reconnect with user's configuration (parameters & authentication). Until refresh is complete, the reports, dashboards, and org app will present the sample data banner.
 1. If you added a new query parameter to the updated dataset that requires users input - you must check the *required* check box. This will prompt the installer with the connection string after updating the app.
- ![required parameters](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset4.png)
+ ![required parameters](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset-4.png)
 
 ## Extract workspace
 Rolling back to the previous version of a template app is now easier than ever with the extract capability. The following steps will extract a specific app version from various release stages into a new workspace:
