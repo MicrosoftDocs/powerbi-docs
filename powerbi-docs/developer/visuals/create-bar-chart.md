@@ -287,7 +287,13 @@ let defaultSettings: BarChartSettings = {
 
 ### Visual transform
 
-The `visualTransform` function receives data from the `BarChartViewModel` and transforms it to its own data structure.
+The `visualTransform` function receives data from the data view and transforms it to a data structure which is described by the above interfaces.
+
+The `DataView` contains the queried data to be visualized. This data can be in different forms, such as categorical and tabular. To build a categorical visual like a bar chart, you only need to use the categorical property on the `DataView`. Defining `visualTransform` lets you convert `DataView` into a view model your visual will use.
+
+The `visualTransform` function returns a `BarChartViewModel` interface (contains view points and settings)
+
+This function is called whenever the visual is updated.
 
 20 minutes into meeting
 can use own structures
@@ -323,6 +329,8 @@ Define the chart by creating a file in the src directory with the following.
 ### Define and use visualTransform
 
 The `DataView` is the structure that Power BI provides to your visual, which contains the queried data to be visualized. However, `DataView` can provide data in different forms, such as categorical and tabular. To build a categorical visual like a bar chart, you only need to use the categorical property on the `DataView`. Defining `visualTransform` lets you convert `DataView` into a view model your visual will use.
+
+## Color
 
 To assign colors and select them when defining individual data points, you use `IVisualHost`. 
 
