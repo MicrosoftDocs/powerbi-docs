@@ -30,10 +30,10 @@ To be available for use, enhanced metadata scanning must be enabled for the orga
 
 The following short walkthrough shows how to use the scanner APIs to retrieve metadata from your organization’s artifacts. The walkthrough includes the parameters that retrieve detailed, low-level dataset metadata. 
 
-* [GetModifiedWorkspaces](/rest/api/power-bi/admin/workspace-info-get-modified-workspaces.md)
-* [WorkspaceGetInfo](/rest/api/power-bi/admin/workspace-info-post-workspace-info.md)
-* [WorkspaceScanStatus](/rest/api/power-bi/admin/workspace-info-get-scan-status.md)
-* [WorkspaceScanResult](/rest/api/power-bi/admin/workspace-info-get-scan-result.md)
+* [GetModifiedWorkspaces](/rest/api/power-bi/admin/workspace-info-get-modified-workspaces)
+* [WorkspaceGetInfo](/rest/api/power-bi/admin/workspace-info-post-workspace-info)
+* [WorkspaceScanStatus](/rest/api/power-bi/admin/workspace-info-get-scan-status)
+* [WorkspaceScanResult](/rest/api/power-bi/admin/workspace-info-get-scan-result)
 
 ### Step 1: Determine authentication method
 
@@ -93,15 +93,15 @@ If the detailed low-level metadata requested is not in the cache, it is simply n
 ## Considerations and limitations
 
 * Datasets that have not been refreshed or republished will be returned in API responses but without their detailed low-level information and expressions. For example, you will see dataset name and lineage in the response, but not the dataset’s table and column names.
-* •	Datasets containing only DirectQuery tables will return low-level details only if they have been republished since enhanced metadata scanning has been enabled. This is because DirectQuery datasets don't use the regular Power BI dataset refresh flow that triggers caching. If, however, a dataset also contains tables that use import mode, caching takes place upon dataset refresh as described above, and it is not necessary for the dataset to be republished in order to for low-level details to be returned.
-* [Real time datasets](/connect-data/service-real-time-streaming.md), datasets with [Object Level Security](https://powerbi.microsoft.com/en-us/blog/object-level-security-ols-is-now-generally-available-in-power-bi-premium-and-pro/), [datasets with a live connection to AS-Azure and AS on-prem](/connect-data/desktop-analysis-services-tabular-data.md), and [Excel full fidelity datasets](/connect-data/service-excel-workbook-files#import-excel-data-into-power-bi.md) are not supported for detailed metadata. For unsupported datasets, the response returns the reason for not getting the detailed metadata about the dataset. It is found in a field named *schemaRetrievalError*, for example, *schemaRetrievalError: Unsupported request for RealTime model*.
+* Datasets containing only DirectQuery tables will return low-level details only if they have been republished since enhanced metadata scanning has been enabled. This is because DirectQuery datasets don't use the regular Power BI dataset refresh flow that triggers caching. If, however, a dataset also contains tables that use import mode, caching takes place upon dataset refresh as described above, and it is not necessary for the dataset to be republished in order to for low-level details to be returned.
+* [Real time datasets](../connect-data/service-real-time-streaming.md), datasets with [Object Level Security](https://powerbi.microsoft.com/blog/object-level-security-ols-is-now-generally-available-in-power-bi-premium-and-pro/), [datasets with a live connection to AS-Azure and AS on-prem](../connect-data/desktop-analysis-services-tabular-data.md), and [Excel full fidelity datasets](../connect-data/service-excel-workbook-files.md#import-excel-data-into-power-bi) are not supported for detailed metadata. For unsupported datasets, the response returns the reason for not getting the detailed metadata about the dataset. It is found in a field named *schemaRetrievalError*, for example, *schemaRetrievalError: Unsupported request for RealTime model*.
 
 ## Licensing
 Enhanced metadata scanning requires no special license. It works for all of your tenant metadata including that of artifacts located in non-Premium workspaces.
 
 ## Next steps
 
-* [Power BI REST Admin APIs](/rest/api/power-bi/admin.md)
+* [Power BI REST Admin APIs](/rest/api/power-bi/admin)
 * [Enable service principal authentication for read-only admin APIs (preview)](read-only-apis-service-principal-authentication.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
