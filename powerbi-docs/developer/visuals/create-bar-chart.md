@@ -183,7 +183,7 @@ Let's add an optional X-axis and the ability to define the color of each bar.
         },
 ```
 
-For more information on objects and how they work, see [Objects](objects-properties.md).
+For more information on objects and how they work, see [Objects](objects-properties.md). For another example of adding formatting to a visual see the [Circle card tutorial](custom-visual-develop-tutorial-format-options.md#adding-formatting-options).
 
 ### Other capabilities
 
@@ -225,9 +225,9 @@ The first thing we have to do is import the modules that we will be using for th
 
 ### Interfaces
 
-Next, we define the view model interfaces. There are three interfaces in our example.
+Next, we define the view model interfaces. Our sample bar chart is described by the following three interfaces:
 
-* BarChartDataPoint
+* BarChartDataPoint - stores the data for each bar
 * BarChartViewModel
 * BarChartSettings
 
@@ -287,21 +287,17 @@ let defaultSettings: BarChartSettings = {
 
 ### Visual transform
 
-The `visualTransform` function receives data from the data view and transforms it to a data structure which is described by the above interfaces.
+Now that we defined our data structures, we map data onto them using the `visualTransform` function. This function receives data from the data view and transforms it to a format your visual can use. In this case it returns the `BarChartViewModel` interface described above.
 
 The `DataView` contains the queried data to be visualized. This data can be in different forms, such as categorical and tabular. To build a categorical visual like a bar chart, you only need to use the categorical property on the `DataView`. Defining `visualTransform` lets you convert `DataView` into a view model your visual will use.
 
-The `visualTransform` function returns a `BarChartViewModel` interface (contains view points and settings)
-
 This function is called whenever the visual is updated.
 
-20 minutes into meeting
-can use own structures
-describes look or chart width of bars colors, etc.
+## Rendering
 
-### Rendering
+Once the data is defined, it is time to render it. This is done from the IVisual function. This function is described in the [Visual API](visual-api.md) page. It contains a `constructor` class that creates the visual and an `update` class that is called each time the visual reloads.
 
-constructor function - 27 minutes
+### constructor function - 27 minutes
 
 ### Update
 
@@ -324,11 +320,6 @@ Rendering x axis - 40 min
 First, define the bar chart view model, and iterate on what's exposed to your visual as you build it.
 Define the chart by creating a file in the src directory with the following.
 
-
-
-### Define and use visualTransform
-
-The `DataView` is the structure that Power BI provides to your visual, which contains the queried data to be visualized. However, `DataView` can provide data in different forms, such as categorical and tabular. To build a categorical visual like a bar chart, you only need to use the categorical property on the `DataView`. Defining `visualTransform` lets you convert `DataView` into a view model your visual will use.
 
 ## Color
 
@@ -668,7 +659,7 @@ for (let i = 0, len = Math.max(category.values.length, dataValue.values.length);
 }
 ```
 
-### Populate Property pane with enumerateObjectInstances
+### Populate Properties pane with enumerateObjectInstances
 
 Use `enumerateObjectInstances` to populate the **Property** pane with objects. 
 
