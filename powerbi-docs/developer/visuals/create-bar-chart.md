@@ -26,18 +26,13 @@ In this tutorial, you learn how to:
 > * Understand the source code used to build a visual
 > * Package your visual.
 
-Important :exclamation:
-The purpose of this tutorial is to help you understand how a visual is structured and written. We recommend that you clone the source code from here and use it to follow along this tutorial. You can also create your own new visual and replace the source code where necessary to create your own bar chart visual from the beginning.
-
->[!IMPORTANT]
+>[!NOTE]
 >
->The purpose of this tutorial is to help you understand how a visual is structured and written. For the source code of the simple bar chart that we create in this tutorial, see [Simple bar code](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/tree/barChartTutorial).
->For the full source code of a bar chart with more advanced features, including tool-tips, selection, and a context menu, see [PowerBI visuals sample bar chart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart)
->We recommend that you clone the above code and use it to follow along this tutorial. Alternatively, you can also create your own new visual and replace or edit the code where necessary to create your own bar chart visual from the beginning.
+>The purpose of this tutorial is to help you understand how a visual is structured and written. For the source code of the simplified bar chart that we create in this tutorial, see [Simple bar code](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/tree/barChartTutorial).
+>For the full source code of a bar chart with more features, including [tool-tips](add-tooltips.md) and a [context menu](context-menu.md), see [PowerBI visuals sample bar chart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart)
+>We recommend that you clone the above code and use it to follow along in this tutorial. Alternatively, you can create a new visual and replace or edit the code where necessary to create your own bar chart visual from the beginning.
 
 ## Set up your environment
-
-Before you can start developing your Power BI visual, set up your environment for developing a Power BI visual.
 
 [!INCLUDE[Power B I tutorials prerequisites](../../includes/visual-tutorial-prerequisites.md)]
 
@@ -48,7 +43,7 @@ Before you can start developing your Power BI visual, set up your environment fo
 
 ## Create a new project
 
-If you are building the visual from scratch, first create it and give it a name:
+If you are building the visual from scratch, first create it and give it a name. If you downloaded the [source code](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/tree/barChartTutorial), you can skip these steps.
 
 1. Open **PowerShell** and navigate to the folder you want to create your project in.
 
@@ -58,9 +53,9 @@ If you are building the visual from scratch, first create it and give it a name:
     pbiviz new BarChart
     ```
 
-    This step creates a new visual that has the following files and folders:
+You should now have a new folder for your visual with the following files and folders:
 
-    ![Structure of visuals](./media/create-bar-chart/visual-structure.png)
+![Structure of visuals](./media/create-bar-chart/visual-structure.png)
 
 For a detailed explanation of the function of each of these files see [Power BI visual project structure](visual-project-structure.md).
 
@@ -70,7 +65,7 @@ Creating a bar chart visual involves the following steps:
 
 * [Defining the capabilities](#define-capabilities) file -`capabilities.json`
 * Adding dependencies -`package.json`
-* Creating the source code of the [visual API](#visual-api)
+* Creating the [visual API](#visual-api)
 * Packaging your visual -`pbiviz.json`
 
 ## Define capabilities
@@ -294,25 +289,31 @@ The `DataView` contains the queried data to be visualized. This data can be in d
 
 This function is called whenever the visual is updated.
 
+>[!NOTE]
+>The next few functions in the barChart.ts file deal with color and creating the X axis. Those are optional and are discussed elsewhere. This tutorial will continue from the `IVisual` function.
+
 ## Rendering
 
 Once the data is defined, we can render it. The visual is rendered from the `IVisual` function. The `IVisual` function is described on the [Visual API](visual-api.md) page. It contains a `constructor` class that creates the visual and an `update` class that is called each time the visual reloads.
 
 ### Constructor
 
-- 27 minutes :smiley: 
+The [constructor function](visual-api.md#constructor) is called only once-when the visual is called for the first time. It tells the host to create an svg image of an empty bar chart.
+It creates svg-containers for the bar chart and the X-axis.
+Notice that it uses the d3 library to render the svg.
 
 ### Update
 
-32 minutes
-first part similar to prev tut (circlecard?)
+The [update method](visual-api.md#update) is called every time the size of the visual or one of its values changes.
 
 ### Scaling
 
+The first thing the update method does is recalculate the scale  according the the new updated parameters. This is similar to the [update method in the Circle card tutorial](develop-circle-card.md#set-the-width-and-height).
+The BarChartViewModel has a value datamax which is the largest 
 part of update. show imports for scales
 more at 35
 Uses dataMax
-Category names
+Category names for x axis
 
 Your final barChart.ts file should look like [this](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts).
 
