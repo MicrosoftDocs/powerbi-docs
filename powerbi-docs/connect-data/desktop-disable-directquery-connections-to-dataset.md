@@ -14,7 +14,7 @@ LocalizationGroup: Connect to data
 
 By default, when a dataset is published to the Power BI service, a DirectQuery connection can be made to it, assuming proper permissions. This connection can be used to create new composite models on top of the dataset.
 
-In some situations, however, you need to stop these connections from happening. This is especially important in the composite models scenario, where you might want to prohibit cretaion of new composite models on top of the dataset (so-called *chaining*). By disabling DirectQuery connections to a dataset, you are effectively ending the chain or stopping it from forming in the first place.
+In some situations, however, you need to stop these connections from happening. This is especially important in the composite models scenario, where you might want to prohibit creation of new composite models on top of the dataset (so-called *chaining*). By disabling DirectQuery connections to a dataset, you are effectively ending the chain or stopping it from forming in the first place.
 
 > [!NOTE]
 > Power BI will honor this setting and disable making DirectQuery connections to a dataset, but third-party tools might not and still allow users to make DirectQuery connections to a dataset even if you disabled it.
