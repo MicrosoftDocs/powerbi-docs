@@ -32,7 +32,7 @@ An Azure Log Analytics connection is currently supported for Premium workspaces 
 
 |**Configuration level**  |**Role / permission**  |**Destination Table in Log Analytics**  |**Details**  |
 |---------|---------|---------|---------|
-|Workspace     |Power BI workspace owner, or Log Analytics workspace owner     |PowerBIDatasetsWorkspacePreview  |- Must be allowed by the tenant administrator<br>- Logs activity from the workspace only<br>- Premium workspaces only<br>- Workspace v2 only |
+|Workspace     |Power BI workspace owner, or Log Analytics workspace owner     |PowerBIDatasetsWorkspace  |- Must be allowed by the tenant administrator<br>- Logs activity from the workspace only<br>- Premium workspaces only<br>- Workspace v2 only |
 
 The following section provides examples of how you might put logging to use in Power BI.
 
