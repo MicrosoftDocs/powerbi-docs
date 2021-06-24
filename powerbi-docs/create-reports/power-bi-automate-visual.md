@@ -7,7 +7,7 @@ ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/23/2021
+ms.date: 06/24/2021
 LocalizationGroup: Create reports
 ---
 # Create a Power Automate visual for Power BI (preview)
@@ -145,9 +145,9 @@ Alternatively, you can give any users edit access to the flow, not just run perm
 
 ## Next steps
 
-For more information about features that are similar or interact with buttons, take a look at the following articles:
+For more information about Power Automate, take a look at the following articles:
 
-* [Use drillthrough in Power BI reports](desktop-drillthrough.md)
-* [Use bookmarks to share insights and build stories in Power BI](desktop-bookmarks.md)
-* [Create a drillthrough button](desktop-drill-through-buttons.md)
-
+- [Integrate Power BI data alerts with Power Automate](service-flow-integration.md)
+- [Export and email a Power BI report with Power Automate](service-automate-power-bi-report-export.md)
+- [Get started with Power Automate](/power-automate/getting-started/)
+- More questions? [Try the Power BI Community](https://community.powerbi.com/)
