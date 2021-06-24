@@ -10,7 +10,7 @@ ms.topic: reference
 ms.date: 06/30/2021
 ---
 
-# Power BI adoption framework: Center of Excellence
+# Power BI adoption roadmap: Center of Excellence
 
 A Power BI Center of Excellence (COE) is an internal team of technical and business experts who actively assist others within the organization who are working with data. The COE forms the nucleus of the broader community that advances adoption goals which align with the data culture vision.
 
@@ -40,12 +40,12 @@ The scope of COE responsibilities can vary significantly between organizations. 
 
 Common responsibilities for a COE include:
 
-- Mentoring the internal Power BI community (see the [community of practice](powerbi-adoption-framework-community-of-practice.md) article)
-- Producing, curating, and promoting training materials (see the [mentoring and user enablement](powerbi-adoption-framework-mentoring-and-user-enablement.md) article)
-- Creating documentation and resources to encourage standards and best practices (see the [mentoring and user enablement](powerbi-adoption-framework-mentoring-and-user-enablement.md) article)
-- Applying, communicating, and assisting with governance guidelines (see the [governance](powerbi-adoption-framework-governance.md) article)
-- Handling and assisting with system oversight and administration (see the [system oversight](powerbi-adoption-framework-system-oversight.md) article)
-- Handling user support issues escalated from the help desk (see the [user support](powerbi-adoption-framework-user-support.md) article)
+- Mentoring the internal Power BI community (see the [community of practice](powerbi-adoption-roadmap-community-of-practice.md) article)
+- Producing, curating, and promoting training materials (see the [mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article)
+- Creating documentation and resources to encourage standards and best practices (see the [mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article)
+- Applying, communicating, and assisting with governance guidelines (see the [governance](powerbi-adoption-roadmap-governance.md) article)
+- Handling and assisting with system oversight and administration (see the [system oversight](powerbi-adoption-roadmap-system-oversight.md) article)
+- Handling user support issues escalated from the help desk (see the [user support](powerbi-adoption-roadmap-user-support.md) article)
 - Developing solutions and/or proofs of concept
 - Establishing and maintaining the BI platform and data architecture
 
@@ -67,7 +67,7 @@ People who are a good fit for staffing the COE tend to be those who:
 - Communicate well with both technical and business colleagues
 
 > [!TIP]
-> If you have Power BI creators in the organization constantly pushing the boundaries of what can be done, they might be a great candidate to be a champion (discussed in the [community of practice](powerbi-adoption-framework-community-of-practice.md) article) or perhaps even part of the COE.
+> If you have Power BI creators in the organization constantly pushing the boundaries of what can be done, they might be a great candidate to be a champion (discussed in the [community of practice](powerbi-adoption-roadmap-community-of-practice.md) article) or perhaps even part of the COE.
 
 When staffing the COE, it's important to have a mix of complementary analytical skills, technical skills, and business skills.
 
@@ -77,7 +77,7 @@ Very generalized roles within a COE are shown below. It's common for multiple pe
 
 | **Role** | **Description** |
 | --- | --- |
-| COE leader | Manage the day-to-day operations of the COE. Interact with executive sponsor and other organizational teams (such as the data governance board) as necessary. See the [governance](powerbi-adoption-framework-governance.md) article for additional roles and responsibilities. |
+| COE leader | Manage the day-to-day operations of the COE. Interact with executive sponsor and other organizational teams (such as the data governance board) as necessary. See the [governance](powerbi-adoption-roadmap-governance.md) article for additional roles and responsibilities. |
 | Coach | Coach and educate others on BI skills via office hours, best practices reviews, and co-development projects. Oversee and participate in the discussion channel in the internal community. Interact with and support champions network. |
 | Trainer | Develop, curate, and deliver internal training materials, documentation, and resources. |
 | Data analyst | Domain-specific subject matter expert. Liaison between the COE and the business unit. Content creator for the business unit. Assist with certification of content. Work on co-development projects and proof of concepts. |
@@ -177,7 +177,7 @@ When the COE operates as a profit center (for at least part of its budget), it c
 Funding is important because it impacts the way that the COE communicates and engages with the internal community. As the COE experiences more and more successes, they may receive more requests from business units for help as awareness grows throughout the organization.
 
 > [!TIP]
-> The COE can more actively grow its influence and ability to help depending on its funding model. The funding model can also have a big impact on where authority resides and how decision-making works. It also impacts the type of services a COE can offer, such as co-development projects and/or best practices reviews which are discussed in the [mentoring and user enablement](powerbi-adoption-framework-mentoring-and-user-enablement.md) article.
+> The COE can more actively grow its influence and ability to help depending on its funding model. The funding model can also have a big impact on where authority resides and how decision-making works. It also impacts the type of services a COE can offer, such as co-development projects and/or best practices reviews which are discussed in the [mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article.
 
 Some organizations cover the COE operating costs with chargebacks to business units based on the usage metrics of Power BI. For shared capacity, this could be based on something like number of active users. For Premium capacity, chargebacks could be allocated based on which business units are using the capacity. Ideally, chargebacks can be directly correlated to the business value gained.
 
@@ -191,7 +191,7 @@ Considerations and key actions you can take to establish or improve your Power B
 - Identify the internal customers, and any external customers, to be served by the COE and how the COE will generally engage with those customers (push model, pull model, or both).
 - If starting out with a centralized or decentralized COE, consider how to scale the COE over time with the unified or federated approach, and if there are any actions to take now to facilitate that in the future.
 - Verify the funding plan for the COE. Decide if the COE is purely a cost center with an operating budget, if it will operate partially as a profit center, and/or if chargebacks to other business units will be required.
-- Create a [communications strategy](powerbi-adoption-framework-governance.md#governance-planning) for educating the Power BI community about what services the COE offers, and how to engage with the COE.
+- Create a [communications strategy](powerbi-adoption-roadmap-governance.md#governance-planning) for educating the Power BI community about what services the COE offers, and how to engage with the COE.
 
 ## Maturity levels
 
@@ -207,6 +207,6 @@ The following maturity levels will help you assess the current state of your Cen
 
 ## Next steps
 
-In the [next article in this series](powerbi-adoption-framework-governance.md), learn about implementing governance guidelines, policies, and processes.
+In the [next article in this series](powerbi-adoption-roadmap-governance.md), learn about implementing governance guidelines, policies, and processes.
 
 We suggest reviewing the articles about [Microsoft's journey and experience with driving a data culture](center-of-excellence-microsoft-business-intelligence-transformation.md). The articles discuss the importance of discipline at the core and flexibility at the edge, and they also cover how Microsoft views the importance of a Center of Excellence (COE).

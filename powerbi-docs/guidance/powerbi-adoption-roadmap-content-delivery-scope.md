@@ -10,20 +10,20 @@ ms.topic: reference
 ms.date: 06/30/2021
 ---
 
-# Power BI adoption framework: Content delivery scope
+# Power BI adoption roadmap: Content delivery scope
 
-The four delivery scopes discussed in this article include personal BI, team BI, departmental BI, and enterprise BI. Focusing on the scope of a delivered BI solution does refer to the number of people who may view the solution, though the impact is much more than that. The scope strongly influences best practices for content distribution, sharing, security, and information protection. The scope has a direct correlation on the level of [governance](powerbi-adoption-framework-governance.md) (such as requirements for change management, support, or documentation), the extent of [mentoring and user enablement](powerbi-adoption-framework-mentoring-and-user-enablement.md), and needs for [user support](powerbi-adoption-framework-user-support.md). It also has a big effect on [user licensing](../admin/service-admin-licensing-organization.md) decisions.
+The four delivery scopes discussed in this article include personal BI, team BI, departmental BI, and enterprise BI. Focusing on the scope of a delivered BI solution does refer to the number of people who may view the solution, though the impact is much more than that. The scope strongly influences best practices for content distribution, sharing, security, and information protection. The scope has a direct correlation on the level of [governance](powerbi-adoption-roadmap-governance.md) (such as requirements for change management, support, or documentation), the extent of [mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md), and needs for [user support](powerbi-adoption-roadmap-user-support.md). It also has a big effect on [user licensing](../admin/service-admin-licensing-organization.md) decisions.
 
-The related [content ownership and management](powerbi-adoption-framework-content-ownership-and-management.md) article makes similar points. Whereas the focus of that article was on the content creator, this article is focused on the target usage of the content. Both inter-related aspects need to be considered to arrive at governance decisions and the Center of Excellence operating model.
+The related [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) article makes similar points. Whereas the focus of that article was on the content creator, this article is focused on the target usage of the content. Both inter-related aspects need to be considered to arrive at governance decisions and the Center of Excellence operating model.
 
 > [!IMPORTANT]
-> All data and all solutions are not equal. Be prepared to apply different levels of data management and governance to different teams and various types of content. Standardized rules are easier to maintain, but flexibility or customization is often necessary to apply the appropriate level of oversight based on circumstances. Your [executive sponsor](powerbi-adoption-framework-executive-sponsorship.md) can be invaluable in decision-making and reaching consensus across stakeholder groups when tricky situations come up.
+> All data and all solutions are not equal. Be prepared to apply different levels of data management and governance to different teams and various types of content. Standardized rules are easier to maintain, but flexibility or customization is often necessary to apply the appropriate level of oversight based on circumstances. Your [executive sponsor](powerbi-adoption-roadmap-executive-sponsorship.md) can be invaluable in decision-making and reaching consensus across stakeholder groups when tricky situations come up.
 
 ## Scope of content delivery
 
 The following visual focuses on the number of target users who will consume the content:
 
-:::image type="content" source="media/powerbi-adoption-framework-content-delivery-scope/powerbi-adoption-framework-target-consumers.png" alt-text="Image shows the four scopes of target consumers, which are described next.":::
+:::image type="content" source="media/powerbi-adoption-roadmap-content-delivery-scope/powerbi-adoption-roadmap-target-consumers.png" alt-text="Image shows the four scopes of target consumers, which are described next.":::
 
 The four scopes of content delivery shown in the above visual include:
 
@@ -34,7 +34,7 @@ The four scopes of content delivery shown in the above visual include:
 
 Contrast the above with the following visual which has an inverse relationship with respect to the number of content creators:
 
-:::image type="content" source="media/powerbi-adoption-framework-content-delivery-scope/powerbi-adoption-framework-content-creators.png" alt-text="Image shows the four scopes of content creators, which are described next.":::
+:::image type="content" source="media/powerbi-adoption-roadmap-content-delivery-scope/powerbi-adoption-roadmap-content-creators.png" alt-text="Image shows the four scopes of content creators, which are described next.":::
 
 The four scopes of content creators shown in the above visual include:
 
@@ -43,13 +43,13 @@ The four scopes of content creators shown in the above visual include:
 - **Departmental BI:** Departmental BI content creators are a smaller population of creators, and they are more likely to be considered power users who are using more sophisticated tools to create more sophisticated solutions. Managed self-service BI practices are very common and highly encouraged.
 - **Enterprise BI:** Enterprise BI involves the smallest number of content creators because this typically includes only professional BI developers who work on the BI team, the Center of Excellence, or in IT.
 
-The [content ownership and management](powerbi-adoption-framework-content-ownership-and-management.md) article introduced the concepts of business-led self-service BI, managed self-service BI, and enterprise BI. The most common alignment between ownership and delivery scope is:
+The [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) article introduced the concepts of business-led self-service BI, managed self-service BI, and enterprise BI. The most common alignment between ownership and delivery scope is:
 
 - **Business-led self-service BI ownership** : commonly deployed as personal and team BI solutions
 - **Managed self-service BI ownership** : can be deployed as personal, team, or departmental BI solutions
 - **Enterprise BI ownership:** deployed as enterprise BI-scoped solutions
 
-Some organizations also equate self-service content with community-based support (i.e., self-service content creators and owners are responsible for supporting the content they publish). The [user support](powerbi-adoption-framework-user-support.md) article discusses multiple informal and formal levels for support.
+Some organizations also equate self-service content with community-based support (i.e., self-service content creators and owners are responsible for supporting the content they publish). The [user support](powerbi-adoption-roadmap-user-support.md) article discusses multiple informal and formal levels for support.
 
 > [!WARNING]
 > The term "sharing" can be interpreted two ways. It's often used in a general way related to sharing content with colleagues (which could be implemented multiple ways). It can also reference a [specific feature in Power BI](../collaborate-share/service-share-dashboards.md) (which is a specific implementation in which a user or group is granted view-only access to a single report or dashboard). In this article we primarily use the term in a general way to discuss sharing content with colleagues. When the specific sharing feature is intended, this article will make a clear reference to that feature.
@@ -69,11 +69,11 @@ Characteristics of personal BI:
 Guidelines for being successful with personal BI:
 
 - Consider personal BI solutions akin to an "analytical sandbox" which has little formal governance and oversight from the governance team or COE. However, it's still appropriate to educate content creators that some general governance guidelines may still apply to personal content. Examples: Is a personal report allowed to be exported and emailed to others? May a personal report reside on a non-organizational laptop or device? What limitations or requirements exist for content which contains sensitive data?
-- See the techniques discussed for business-led self-service BI and managed self-service BI in the [content ownership and management](powerbi-adoption-framework-content-ownership-and-management.md) article which are highly relevant to help content creators be efficient and effective with their personal BI solutions.
+- See the techniques discussed for business-led self-service BI and managed self-service BI in the [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) article which are highly relevant to help content creators be efficient and effective with their personal BI solutions.
 - Analyze data from the [activity log](../admin/service-admin-auditing.md) to reveal situations where personal BI solutions appear to have expanded beyond the original intended usage. This is usually discovered by detecting significant usage of the sharing feature for content in a personal workspace.
 
 > [!TIP]
-> See the [adoption maturity levels](powerbi-adoption-framework-maturity-levels.md) article for a discussion about how users progress through the stages of user adoption. See the [system oversight](powerbi-adoption-framework-system-oversight.md) article for discussion about usage tracking via the activity log.
+> See the [adoption maturity levels](powerbi-adoption-roadmap-maturity-levels.md) article for a discussion about how users progress through the stages of user adoption. See the [system oversight](powerbi-adoption-roadmap-system-oversight.md) article for discussion about usage tracking via the activity log.
 
 ## Team BI
 
@@ -92,7 +92,7 @@ Guidelines for being successful with team BI:
 
 - Ensure the COE is prepared to support the efforts of self-service creators publishing content for their team.
 - Make purposeful decisions about how [workspace](../collaborate-share/service-create-the-new-workspaces.md) management will be handled. The workspace is a place to organize related content, a permissions boundary, and the scope for an app. It's tempting to start with one workspace per team, but that may not be flexible enough to satisfy all needs.
-- See the techniques discussed for business-led self-service BI and managed self-service BI in the [content ownership and management](powerbi-adoption-framework-content-ownership-and-management.md) article, which are highly relevant to help content creators be efficient and effective when creating team BI solutions.
+- See the techniques discussed for business-led self-service BI and managed self-service BI in the [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) article, which are highly relevant to help content creators be efficient and effective when creating team BI solutions.
 
 ## Departmental BI
 
@@ -120,8 +120,8 @@ Guidelines for being successful with departmental BI delivery:
 - Ensure that an owner is identified for all departmental content. Clarity on ownership is helpful for: who to contact with questions, feedback, enhancement requests, or support requests. In the Power BI service, the [contact list property](../create-reports/service-item-contact.md) can be set on most types of artifacts. The contact is also used in security workflows (for instance, when a user was sent a URL, doesn't have access, and clicks the request access button).
 - Consider using [deployment pipelines](../create-reports/deployment-pipelines-overview.md) in conjunction with separate [workspaces](../collaborate-share/service-create-the-new-workspaces.md) for development, test, and production to provide more stability for consumers.
 - Consider requiring use of [sensitivity labels](../admin/service-security-data-protection-overview.md) to implement information protection on all content.
-- Include consistent branding on reports to align with departmental colors and styling and to indicate who the content was produced by (see the [content ownership and management](powerbi-adoption-framework-content-ownership-and-management.md) article for a discuss about ownership). A small icon or label in the report footer is valuable when the report is exported out of the Power BI service. A standard template (discussed in the [mentoring and user enablement](powerbi-adoption-framework-mentoring-and-user-enablement.md) article) can encourage and simplify the consistent use of branding.
-- See the techniques discussed for business-led self-service BI and managed self-service BI in the [content ownership and management](powerbi-adoption-framework-content-ownership-and-management.md) article which are highly relevant to help content creators be efficient and effective when creating departmental BI solutions.
+- Include consistent branding on reports to align with departmental colors and styling and to indicate who the content was produced by (see the [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) article for a discuss about ownership). A small icon or label in the report footer is valuable when the report is exported out of the Power BI service. A standard template (discussed in the [mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article) can encourage and simplify the consistent use of branding.
+- See the techniques discussed for business-led self-service BI and managed self-service BI in the [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) article which are highly relevant to help content creators be efficient and effective when creating departmental BI solutions.
 
 ## Enterprise BI
 
@@ -141,23 +141,23 @@ Characteristics of enterprise BI delivery:
 
 Guidelines for being successful with enterprise BI delivery:
 
-- Governance and oversight techniques discussed in the [governance](powerbi-adoption-framework-governance.md) article are relevant for managing enterprise BI solution. This particularly includes change management and application lifecycle management. Plan for how to effectively use [Premium Per User](../admin/service-premium-per-user-faq.yml) or [Premium capacity](../admin/service-premium-faq.yml) licensing per workspace. Align your workspace management strategy (i.e., how [workspaces](../collaborate-share/service-create-the-new-workspaces.md) are organized and secured) to this [licensing](../admin/service-admin-licensing-organization.md) strategy.
+- Governance and oversight techniques discussed in the [governance](powerbi-adoption-roadmap-governance.md) article are relevant for managing enterprise BI solution. This particularly includes change management and application lifecycle management. Plan for how to effectively use [Premium Per User](../admin/service-premium-per-user-faq.yml) or [Premium capacity](../admin/service-premium-faq.yml) licensing per workspace. Align your workspace management strategy (i.e., how [workspaces](../collaborate-share/service-create-the-new-workspaces.md) are organized and secured) to this [licensing](../admin/service-admin-licensing-organization.md) strategy.
 - Plan for how Power BI apps will be used for enterprise BI content delivery. An app can provide a significantly better experience for delivering content. Align the app distribution strategy with your workspace management strategy.
 - Consider requiring use of [sensitivity labels](../admin/service-security-data-protection-overview.md) to implement information protection on all content.
 - Implement a rigorous process for use of the certified [endorsement](../collaborate-share/service-endorse-content.md) for enterprise BI reports and apps (plus datasets and dataflows, when the expectation is that self-service creators will use them as a source). Not all enterprise BI content needs to be certified, but much of it probably will be.
-- Make it a common practice to announce when changes will occur. See the [community of practice](powerbi-adoption-framework-community-of-practice.md) article for a discussion of the types of communication.
-- Include consistent branding on reports to align with enterprise colors and styling requirements, and to indicate who the content was produced by (see the [content ownership and management](powerbi-adoption-framework-content-ownership-and-management.md) article for a discuss about ownership). A small icon or label in the report footer is valuable when the report is exported out of the Power BI service. A standard template (discussed in the [mentoring and user enablement](powerbi-adoption-framework-mentoring-and-user-enablement.md) article) can encourage the consistent use of branding.
+- Make it a common practice to announce when changes will occur. See the [community of practice](powerbi-adoption-roadmap-community-of-practice.md) article for a discussion of the types of communication.
+- Include consistent branding on reports to align with enterprise colors and styling requirements, and to indicate who the content was produced by (see the [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) article for a discuss about ownership). A small icon or label in the report footer is valuable when the report is exported out of the Power BI service. A standard template (discussed in the [mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article) can encourage the consistent use of branding.
 - Leverage the [lineage view](../collaborate-share/service-data-lineage.md) to manage dependencies, perform impact analysis, and communicate to downstream content owners when changes will occur.
-- See the techniques discussed for enterprise BI in the [content ownership and management](powerbi-adoption-framework-content-ownership-and-management.md) article which are highly relevant for managing enterprise BI solutions.
-- See the techniques discussed in the [system oversight](powerbi-adoption-framework-system-oversight.md) article for auditing, governing, and overseeing enterprise BI content.
+- See the techniques discussed for enterprise BI in the [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) article which are highly relevant for managing enterprise BI solutions.
+- See the techniques discussed in the [system oversight](powerbi-adoption-roadmap-system-oversight.md) article for auditing, governing, and overseeing enterprise BI content.
 
 ## Considerations and key actions
 
 Considerations and key actions you can take to strengthen your approach to content delivery:
 
 - Ensure that guidelines, documentation, and other resources align with the strategic goals defined for Power BI adoption.
-- Clarify the scopes for content delivery in your organization, who they apply to, and how they align with governance decisions. Ensure this is consistent with how [content ownership and management](powerbi-adoption-framework-content-ownership-and-management.md) is handled.
-- Consider how to handle situations when a smaller team wants to publish content for an enterprise-wide audience. Will this require the content to be owned and managed by a centralized team (considerations are discussed in the [content ownership and management](powerbi-adoption-framework-content-ownership-and-management.md) article, which is an inter-related concept with content delivery scope)? Will there be an approval process? Governance becomes more complicated when the scope of content delivery is broader than the owner of the content (for example, an app is distributed to the entire organization from a divisional sales team).
+- Clarify the scopes for content delivery in your organization, who they apply to, and how they align with governance decisions. Ensure this is consistent with how [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) is handled.
+- Consider how to handle situations when a smaller team wants to publish content for an enterprise-wide audience. Will this require the content to be owned and managed by a centralized team (considerations are discussed in the [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) article, which is an inter-related concept with content delivery scope)? Will there be an approval process? Governance becomes more complicated when the scope of content delivery is broader than the owner of the content (for example, an app is distributed to the entire organization from a divisional sales team).
 - Create helpful documentation for your community of content creators to understand when it's most appropriate to use [workspaces](../collaborate-share/service-create-the-new-workspaces.md), [apps](../collaborate-share/service-create-distribute-apps.md), or [sharing (direct access or link sharing)](https://powerbi.microsoft.com/blog/announcing-the-new-sharing-experience/).
 - Ensure you have a specific strategy in place to handle user licensing considerations for [Power BI Pro](../admin/service-admin-purchasing-power-bi-pro.md), [Premium Per User](../admin/service-premium-per-user-faq.yml), and [Premium capacity](../admin/service-premium-faq.yml). Create a process for how workspaces may be assigned each license type, and what prerequisites are for what type of content may be assigned to Premium.
 
@@ -175,4 +175,4 @@ The following maturity levels will help you assess the current state of your con
 
 ## Next steps
 
-In the [next article in this series](powerbi-adoption-framework-center-of-excellence.md), learn more about the Center of Excellence.
+In the [next article in this series](powerbi-adoption-roadmap-center-of-excellence.md), learn more about the Center of Excellence.

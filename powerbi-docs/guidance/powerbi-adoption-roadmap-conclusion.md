@@ -1,6 +1,6 @@
 ---
 title: Power BI adoption framework conclusion
-description: A conclusion and additional resources of the Power BI adoption framework series of articles.
+description: A conclusion and additional resources of the Power BI adoption roadmap series of articles.
 author: peter-myers
 ms.author: maroche
 ms.reviewer: asaxton
@@ -10,24 +10,24 @@ ms.topic: reference
 ms.date: 06/30/2021
 ---
 
-# Power BI adoption framework conclusion
+# Power BI adoption roadmap conclusion
 
 This article concludes the series on Power BI adoption. We hope that the strategic and tactical considerations and action items will assist you in your Power BI adoption efforts and with creating a productive data culture in your organization.
 
 This series covered the following aspects of adoption:
 
-- [Adoption overview](powerbi-adoption-framework-overview.md)
-- [Adoption maturity levels](powerbi-adoption-framework-maturity-levels.md)
-- [Data culture](powerbi-adoption-framework-data-culture.md)
-- [Executive sponsorship](powerbi-adoption-framework-executive-sponsorship.md)
-- [Content ownership and management](powerbi-adoption-framework-content-ownership-and-management.md)
-- [Content delivery scope](powerbi-adoption-framework-content-delivery-scope.md)
-- [Center of Excellence](powerbi-adoption-framework-center-of-excellence.md)
-- [Governance](powerbi-adoption-framework-governance.md)
-- [Mentoring and enablement](powerbi-adoption-framework-mentoring-and-user-enablement.md)
-- [Community of practice](powerbi-adoption-framework-community-of-practice.md)
-- [User support](powerbi-adoption-framework-user-support.md)
-- [System oversight](powerbi-adoption-framework-system-oversight.md)
+- [Adoption overview](powerbi-adoption-roadmap-overview.md)
+- [Adoption maturity levels](powerbi-adoption-roadmap-maturity-levels.md)
+- [Data culture](powerbi-adoption-roadmap-data-culture.md)
+- [Executive sponsorship](powerbi-adoption-roadmap-executive-sponsorship.md)
+- [Content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md)
+- [Content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md)
+- [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md)
+- [Governance](powerbi-adoption-roadmap-governance.md)
+- [Mentoring and enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md)
+- [Community of practice](powerbi-adoption-roadmap-community-of-practice.md)
+- [User support](powerbi-adoption-roadmap-user-support.md)
+- [System oversight](powerbi-adoption-roadmap-system-oversight.md)
 
 The remainder of this article includes additional adoption-related resources that you might find valuable.
 

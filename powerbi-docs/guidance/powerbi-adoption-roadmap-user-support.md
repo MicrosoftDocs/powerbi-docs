@@ -10,11 +10,11 @@ ms.topic: reference
 ms.date: 06/30/2021
 ---
 
-# Power BI adoption framework: User support
+# Power BI adoption roadmap: User support
 
 This article addresses user support and is focused primarily on the resolution of issues.
 
-See the [mentoring and user enablement](powerbi-adoption-framework-mentoring-and-user-enablement.md) article for a discussion about related topics including skills mentoring, training, documentation, and co-development assistance provided to the internal Power BI user community. The effectiveness of those activities can significantly reduce the volume of formal user support requests and increase user experience overall.
+See the [mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article for a discussion about related topics including skills mentoring, training, documentation, and co-development assistance provided to the internal Power BI user community. The effectiveness of those activities can significantly reduce the volume of formal user support requests and increase user experience overall.
 
 The first sections of this article focus on user support aspects you have control over internally within your organization. The final topics focus on external resources that are available.
 
@@ -22,7 +22,7 @@ The first sections of this article focus on user support aspects you have contro
 
 If a user has an issue, do they know what their options are to resolve it? Following are some common types of user support that organizations employ successfully:
 
-:::image type="content" source="media/powerbi-adoption-framework-user-support/powerbi-adoption-framework-user-support.png" alt-text="Image shows the four types of internal Power B I user support, and the two types of external support, which are described in the table below.":::
+:::image type="content" source="media/powerbi-adoption-roadmap-user-support/powerbi-adoption-roadmap-user-support.png" alt-text="Image shows the four types of internal Power B I user support, and the two types of external support, which are described in the table below.":::
 
 The six types of user support shown in the above graphic include:
 
@@ -41,7 +41,7 @@ Each of the four types of internal user support shown above are discussed in fur
 
 ## Intra-team support
 
-Intra-team support refers to when team members learn from and help each other during their daily work. The people who emerge as your [Power BI champions](powerbi-adoption-framework-community-of-practice.md#champions-network) tend to take on this type of informal support role voluntarily because they have an intrinsic desire to help.
+Intra-team support refers to when team members learn from and help each other during their daily work. The people who emerge as your [Power BI champions](powerbi-adoption-roadmap-community-of-practice.md#champions-network) tend to take on this type of informal support role voluntarily because they have an intrinsic desire to help.
 
 Although this is an informal support mode, it should not be undervalued. Some estimates indicate that a large percentage of learning at work is peer learning, which is particularly helpful for analysts who are creating a domain-specific Power BI solution.
 
@@ -60,12 +60,12 @@ Assistance from your fellow community members often takes the form of messages i
 
 An internal community discussion channel is commonly set up as a Teams channel or a Yammer group. The technology chosen should reflect where users already work commonly, so that the activities occur within their natural workflow.
 
-One benefit of an internal discussion channel is that responses can come from people that the original requester has never even met before. In larger organizations where everyone doesn't know each other, a [community of practice](powerbi-adoption-framework-community-of-practice.md) that brings people together based on a common interest (Power BI in this case) can offer diverse perspectives for getting help and learning in general.
+One benefit of an internal discussion channel is that responses can come from people that the original requester has never even met before. In larger organizations where everyone doesn't know each other, a [community of practice](powerbi-adoption-roadmap-community-of-practice.md) that brings people together based on a common interest (Power BI in this case) can offer diverse perspectives for getting help and learning in general.
 
 Use of an internal community discussion channel allows the Center of Excellence (COE) to monitor what kind of questions people are posting. This is one way the COE can understand what kind of issues users are experiencing (commonly related to content creation but could also be related to consuming content). Monitoring the discussion channel can also reveal additional Power BI experts and potential champions who were previously unknown to the COE.
 
 > [!IMPORTANT]
-> It's a best practice to continually identify emerging Power BI champions, and engage with them to make sure they're equipped to support their colleagues. As discussed in the [community of practice](powerbi-adoption-framework-community-of-practice.md) article, the COE should actively monitor the discussion channel to see who is being helpful, deliberately encourage and support them, and as appropriate invite them into the champions network to make the recognition more formal.
+> It's a best practice to continually identify emerging Power BI champions, and engage with them to make sure they're equipped to support their colleagues. As discussed in the [community of practice](powerbi-adoption-roadmap-community-of-practice.md) article, the COE should actively monitor the discussion channel to see who is being helpful, deliberately encourage and support them, and as appropriate invite them into the champions network to make the recognition more formal.
 
 Another key benefit of a discussion channel is that it's searchable, which allows the information to reach additional people at another time. It is, however, a habit change for people to ask questions in an open forum rather than private messages or email. Be aware that some individuals will not be comfortable asking questions in such a "public" way because it openly acknowledges what they don't know which is embarrassing. This reluctance can be reduced over time by having a friendly, encouraging, and helpful discussion channel. However, it will always be present to a certain extent.
 
@@ -116,7 +116,7 @@ Checking the [Power BI documentation](../index.yml) is an authoritative resource
 Users with a Power BI Pro or Premium Per User license are eligible to [log a support ticket with Microsoft](https://powerbi.microsoft.com/support/pro/).
 
 > [!TIP]
-> Make it clear to your internal user community if you prefer for technical issues to be reported to the internal help desk. If your help desk is equipped to handle the workload, having a centralized internal area to collect user issues can provide a superior user experience versus every user trying to get issues resolved on their own. Having visibility into a consolidated view of issues is also helpful for the [Center of Excellence](powerbi-adoption-framework-center-of-excellence.md).
+> Make it clear to your internal user community if you prefer for technical issues to be reported to the internal help desk. If your help desk is equipped to handle the workload, having a centralized internal area to collect user issues can provide a superior user experience versus every user trying to get issues resolved on their own. Having visibility into a consolidated view of issues is also helpful for the [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md).
 
 ### Administrator support
 
@@ -148,7 +148,7 @@ The Power BI global community is vibrant. There are a great many blog posts, art
 
 Considerations and key actions you can take to improve your intra-team support:
 
-- Provide recognition and encouragement to your Power BI champions, as well as incentives, as discussed in the [community of practice](powerbi-adoption-framework-community-of-practice.md) article.
+- Provide recognition and encouragement to your Power BI champions, as well as incentives, as discussed in the [community of practice](powerbi-adoption-roadmap-community-of-practice.md) article.
 - Reward and praise meaningful grassroots efforts that you see happening.
 - If informal intra-team efforts aren't adequate, consider formalizing the roles you want to enact in this area, and the expected contributions and responsibilities.
 
@@ -192,4 +192,4 @@ The following maturity levels will help you assess the current state of your Pow
 
 ## Next steps
 
-In the [next article in this series](powerbi-adoption-framework-system-oversight.md), learn about system oversight and administration activities.
+In the [next article in this series](powerbi-adoption-roadmap-system-oversight.md), learn about system oversight and administration activities.

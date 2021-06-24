@@ -10,13 +10,13 @@ ms.topic: reference
 ms.date: 06/30/2021
 ---
 
-# Power BI adoption framework: Data culture
+# Power BI adoption roadmap: Data culture
 
 Building a data culture is closely related to adopting Power BI and is often a key aspect of an organization's digital transformation. The term "data culture" can be defined in different ways by different organizations. In this series of articles, data culture refers to a set of behaviors and norms in the organization which encourages a data-driven culture that regularly employs informed data decision-making:
 
 - By more stakeholders throughout more areas of the organization
 - Based on analytics, not opinion
-- In an effective, efficient way based on best practices from the [Center of Excellence](powerbi-adoption-framework-center-of-excellence.md)
+- In an effective, efficient way based on best practices from the [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md)
 - Based on trusted data
 - Which reduces reliance on undocumented tribal knowledge
 - Which reduces reliance on hunches and gut decisions
@@ -28,7 +28,7 @@ Within an organization, certain business units or teams will have their own beha
 
 The following diagram is intended to convey the inter-related aspects which influence your data culture:
 
-:::image type="content" source="media/powerbi-adoption-framework-data-culture/powerbi-adoption-framework-data-culture.png" alt-text="Image shows various relationships and influences in a data culture, which are described next.":::
+:::image type="content" source="media/powerbi-adoption-roadmap-data-culture/powerbi-adoption-roadmap-data-culture.png" alt-text="Image shows various relationships and influences in a data culture, which are described next.":::
 
 The above circular diagram represents the somewhat ambiguous relationships among the following:
 
@@ -106,7 +106,7 @@ Your organization's position on data democratization will have a wide-reaching i
 
 Data literacy refers to the ability to interpret, create, and communicate with data accurately and effectively.
 
-Training efforts (discussed in the [mentoring and user enablement article](powerbi-adoption-framework-mentoring-and-user-enablement.md) often focus on how to use the technology itself. Technology skills are important to produce high-quality solutions, but it's also important to consider how to purposely advance data literacy throughout the organization. Put another way, successful adoption takes a lot more than merely providing Power BI software and licenses to users.
+Training efforts (discussed in the [mentoring and user enablement article](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) often focus on how to use the technology itself. Technology skills are important to produce high-quality solutions, but it's also important to consider how to purposely advance data literacy throughout the organization. Put another way, successful adoption takes a lot more than merely providing Power BI software and licenses to users.
 
 How you go about improving data literacy in your organization depends on many things such as current staff skillsets, complexity level of the data, and the types of analytics that are being performed. A few things you might choose to focus on related to data literacy include:
 
@@ -126,9 +126,9 @@ Considerations and key actions you can take to strengthen your data culture:
 
 - Give serious consideration as to the type of data culture you wish to cultivate. Ideally, it's from a position of user empowerment more so than a position of command and control.
 - Talk to stakeholders in different business units to understand what analytics practices are currently working well vs. not working well to enable data-driven decision making. A series of workshops can work well for understanding current state and formulating the desired future state.
-- Talk to stakeholders in IT, BI, and/or the [COE](powerbi-adoption-framework-center-of-excellence.md) to understand what [governance](powerbi-adoption-framework-governance.md) constraints need to be considered. This often also includes educating teams like security and infrastructure on what Power BI really is (and that it's significantly more powerful than a query tool).
-- Verify the level of [executive sponsorship](powerbi-adoption-framework-executive-sponsorship.md) and support you have in place to advance data culture goals.
-- Make purposeful decisions about your BI strategy. This includes deciding what the ideal balance of business-led self-service BI, managed self-service BI, and enterprise BI should be for the major business units in the organization (discussed in the [content ownership and management](powerbi-adoption-framework-content-ownership-and-management.md) article). Also consider how this relates to the extent that content is published for personal BI, team BI, departmental BI, and enterprise BI (discussed in the [content delivery scope](powerbi-adoption-framework-content-delivery-scope.md) article). Determine how these decisions affect your action plan.
+- Talk to stakeholders in IT, BI, and/or the [COE](powerbi-adoption-roadmap-center-of-excellence.md) to understand what [governance](powerbi-adoption-roadmap-governance.md) constraints need to be considered. This often also includes educating teams like security and infrastructure on what Power BI really is (and that it's significantly more powerful than a query tool).
+- Verify the level of [executive sponsorship](powerbi-adoption-roadmap-executive-sponsorship.md) and support you have in place to advance data culture goals.
+- Make purposeful decisions about your BI strategy. This includes deciding what the ideal balance of business-led self-service BI, managed self-service BI, and enterprise BI should be for the major business units in the organization (discussed in the [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) article). Also consider how this relates to the extent that content is published for personal BI, team BI, departmental BI, and enterprise BI (discussed in the [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md) article). Determine how these decisions affect your action plan.
 - Begin creating an action plan for immediate, short-term, and long-term action items. Identify business groups and problems that can represent a "quick win" and can make a visible difference.
 
 ## Maturity levels
@@ -145,4 +145,4 @@ The following maturity levels will help you assess the current state of your dat
 
 ## Next steps
 
-In the [next article in this series](powerbi-adoption-framework-executive-sponsorship.md), learn more about the importance of an executive sponsor.
+In the [next article in this series](powerbi-adoption-roadmap-executive-sponsorship.md), learn more about the importance of an executive sponsor.

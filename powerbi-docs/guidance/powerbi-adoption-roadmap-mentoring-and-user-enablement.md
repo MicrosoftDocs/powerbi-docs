@@ -10,9 +10,9 @@ ms.topic: reference
 ms.date: 06/30/2021
 ---
 
-# Power BI adoption framework: Mentoring and user enablement
+# Power BI adoption roadmap: Mentoring and user enablement
 
-A critical objective for adoption efforts is to enable users to accomplish as much as they can within the requisite guardrails established by governance guidelines and policies. For this reason, the act of mentoring users is one of the most important responsibilities of the [Center of Excellence](powerbi-adoption-framework-center-of-excellence.md) (COE), and has a direct influence on how user adoption occurs. See the [Power BI adoption maturity levels article](powerbi-adoption-framework-maturity-levels.md#user-adoption-stages) for more information about user adoption.
+A critical objective for adoption efforts is to enable users to accomplish as much as they can within the requisite guardrails established by governance guidelines and policies. For this reason, the act of mentoring users is one of the most important responsibilities of the [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md) (COE), and has a direct influence on how user adoption occurs. See the [Power BI adoption maturity levels article](powerbi-adoption-roadmap-maturity-levels.md#user-adoption-stages) for more information about user adoption.
 
 ## Skills mentoring
 
@@ -59,7 +59,7 @@ A co-development project forms a partnership between the business unit and the C
 
 Time involvement from the COE reduces over time until the business unit gains expertise and becomes self-reliant:
 
-:::image type="content" source="media/powerbi-adoption-framework-mentoring-and-user-enablement/powerbi-adoption-framework-center-of-excellence-mentoring.png" alt-text="Image shows expertise growing in the business unit as C O E involvement decreases over time, and is further described next.":::
+:::image type="content" source="media/powerbi-adoption-roadmap-mentoring-and-user-enablement/powerbi-adoption-roadmap-center-of-excellence-mentoring.png" alt-text="Image shows expertise growing in the business unit as C O E involvement decreases over time, and is further described next.":::
 
 The active involvement shown in the above visual changes over time as follows:
 
@@ -105,7 +105,7 @@ Once the content has been deployed to the Power BI service, the best practices r
 - The target [workspace](../collaborate-share/service-create-the-new-workspaces.md) is suitable for the content.
 - [Workspace security roles](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) are appropriate for the content.
 - Other permissions ([app permissions](../collaborate-share/service-create-distribute-apps.md#publish-your-app), [build permission](../connect-data/service-datasets-build-permissions.md), use of the [individual item sharing feature](../collaborate-share/service-share-dashboards.md)) are correctly used
-- [Contacts](../create-reports/service-item-contact.md) are identified, and correctly correlate to the [owners of the content](powerbi-adoption-framework-content-ownership-and-management.md).
+- [Contacts](../create-reports/service-item-contact.md) are identified, and correctly correlate to the [owners of the content](powerbi-adoption-roadmap-content-ownership-and-management.md).
 - [Sensitivity label](../admin/service-security-apply-data-sensitivity-labels.md) is correctly assigned.
 - [Endorsement](../collaborate-share/service-endorse-content.md) (certified or promoted) is suitable.
 - [Data refresh](../connect-data/refresh-data.md) is configured correctly, failure notifications include the proper personnel, and uses the appropriate [data gateway](/connect-data/service-gateway-onprem.md) in standard mode (if applicable).
@@ -113,7 +113,7 @@ Once the content has been deployed to the Power BI service, the best practices r
 
 ### Extended support
 
-The COE may get involved from time to time with complex issues escalated from the help desk. This is discussed in the Power BI [user support](powerbi-adoption-framework-user-support.md) article.
+The COE may get involved from time to time with complex issues escalated from the help desk. This is discussed in the Power BI [user support](powerbi-adoption-roadmap-user-support.md) article.
 
 > [!NOTE]
 > Offering these types of skills mentoring services might be a culture change for your organization. Your reaction might be that users don't usually ask for help with a tool like Excel, so why would they with Power BI? The answer lies in the fact that Power BI is an extraordinarily powerful tool with capabilities for data preparation and data modeling in addition to reporting and visualizations. This inherently means that there's a learning curve to ensure solutions produce accurate information, perform well, are secured properly, and can scale over time. Having the ability to aid and enable users increase their skills can significantly increase the quality of solutions produced and reduce risks as well.
@@ -144,7 +144,7 @@ In larger organizations, it may be difficult to implement one single centralized
 > [IMPORTANT]
 > Although saving time finding information is important, our goal for a centralized portal is more than that. It's about making information readily available to help your user community do the right thing (i.e., desirable behaviors set forth by your governance plan) during their normal course of work, with as little friction as possible. Until it's easier to complete a task within the guardrails established by the COE and data governance team, some users will continue to complete their tasks by circumventing the policies that are put in place. The recommended path must become the path of least resistance. Having a centralized portal can help achieve this goal.
 
-It takes time for community users to think of the centralized portal as their natural first stop for finding information. It takes consistent redirection to the portal to change habits. Sending someone a link to an original document location in the portal builds better habits than, for instance, including the answer in an email response. This is the same challenge that was discussed in the [user support](powerbi-adoption-framework-user-support.md) article (when discussing the internal community Q&amp;A forum).
+It takes time for community users to think of the centralized portal as their natural first stop for finding information. It takes consistent redirection to the portal to change habits. Sending someone a link to an original document location in the portal builds better habits than, for instance, including the answer in an email response. This is the same challenge that was discussed in the [user support](powerbi-adoption-roadmap-user-support.md) article (when discussing the internal community Q&amp;A forum).
 
 ## Training
 
@@ -170,7 +170,7 @@ There are a lot of training approaches because people learn in different ways. I
 - One-hour, one-week, or one-month challenges
 - Hackathon-style events
 
-Advantages of encouraging knowledge sharing by colleagues is discussed further in the Power BI [community of practice]s(powerbi-adoption-framework-community-of-practice.md) article.
+Advantages of encouraging knowledge sharing by colleagues is discussed further in the Power BI [community of practice]s(powerbi-adoption-roadmap-community-of-practice.md) article.
 
 > [!TIP]
 > Whenever practical, learning should be correlated with building something meaningful and realistic. However, simple demo data does have value during a training course which focuses on how to use the technology. Consider following it up with a "bring your own data" type of session which encourages the learner to apply the technical skills they just learned to an actual business problem. Try to have multiple facilitators from the COE available during this type of follow-up session so questions can be answered quickly.
@@ -187,9 +187,9 @@ The types of users you may target for training include:
 > [!IMPORTANT]
 > Each type of user will have different training needs, and the COE will need to identify how best to meet the needs of each audience. For instance, one audience might find a standard introductory Power BI Desktop class overwhelming, whereas another will want more challenging information with depth and detail. If you have a diverse population of Power BI content creators, consider creating personas and tailoring the experience to the extent that it's practical.
 
-The completion of relevant training can be a leading indicator for success with [user adoption](powerbi-adoption-framework-maturity-levels.md#user-adoption-stages). Some organizations grant badges like blue belt or black belt as people progress through the stages of training.
+The completion of relevant training can be a leading indicator for success with [user adoption](powerbi-adoption-roadmap-maturity-levels.md#user-adoption-stages). Some organizations grant badges like blue belt or black belt as people progress through the stages of training.
 
-Give some consideration to how you want to handle users in various stages of [user adoption](powerbi-adoption-framework-maturity-levels.md#user-adoption-stages). Training needs for onboarding brand new users (sometimes thought of as "training day zero" concerns) and for less experienced users are very different than for more experienced users.
+Give some consideration to how you want to handle users in various stages of [user adoption](powerbi-adoption-roadmap-maturity-levels.md#user-adoption-stages). Training needs for onboarding brand new users (sometimes thought of as "training day zero" concerns) and for less experienced users are very different than for more experienced users.
 
 How the COE invests its time in creating and curating training materials will change over time as adoption and maturity grows. You may also find over time that some community champions want to run their own tailored set of training classes within their functional business unit.
 
@@ -213,7 +213,7 @@ When you do make the investment to create custom in-house training, create short
 
 ## Documentation
 
-Concise, well-written documentation can be a significant help for users trying to get things done. Your needs for documentation, and how it's delivered, will depend on how Power BI is managed in your organization. See the [content ownership and management](powerbi-adoption-framework-content-ownership-and-management.md) article for further discussion.
+Concise, well-written documentation can be a significant help for users trying to get things done. Your needs for documentation, and how it's delivered, will depend on how Power BI is managed in your organization. See the [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) article for further discussion.
 
 Certain aspects of Power BI tend to be managed by a centralized team such as the COE. The following types of documentation are helpful in these situations:
 
@@ -237,7 +237,7 @@ Other aspects of Power BI can be managed by self-service users, decentralized te
 > [!TIP]
 > When planning for a centralized portal, as discussed earlier in this article, plan for how to handle situations when guidance or governance policies need to be customized for one or more business units.
 
-There are also going to be some [governance](powerbi-adoption-framework-governance.md) decisions which have been made and should be documented, such as:
+There are also going to be some [governance](powerbi-adoption-roadmap-governance.md) decisions which have been made and should be documented, such as:
 
 - How to request content to be certified
 - What are the approved file storage locations
@@ -251,7 +251,7 @@ Documentation should be located in your centralized portal - a searchable locati
 
 Over time, you may choose to allow some documentation to be maintained by the community if you have willing volunteers. In that case, you may want to introduce an approval process for changes.
 
-When you see questions repeatedly come up in the Q&amp;A forum (discussed in the [user support](powerbi-adoption-framework-user-support.md) article, during office hours, or during lunch and learns, that's a great indicator that documentation may be appropriate. When the documentation exists, that allows colleagues to reference it when needed. This contributes to user enablement and a self-sustaining community.
+When you see questions repeatedly come up in the Q&amp;A forum (discussed in the [user support](powerbi-adoption-roadmap-user-support.md) article, during office hours, or during lunch and learns, that's a great indicator that documentation may be appropriate. When the documentation exists, that allows colleagues to reference it when needed. This contributes to user enablement and a self-sustaining community.
 
 > [!TIP]
 > When creating custom documentation or training materials, reference existing Microsoft sites when possible. Since Power BI is in a continual state of evolution, this will reduce the level of documentation maintenance needed over time.
@@ -306,4 +306,4 @@ The following maturity levels will help you assess the current state of your men
 
 ## Next steps
 
-In the [next article in this series](powerbi-adoption-framework-community-of-practice.md), learn more about the community of practice.
+In the [next article in this series](powerbi-adoption-roadmap-community-of-practice.md), learn more about the community of practice.

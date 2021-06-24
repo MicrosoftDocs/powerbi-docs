@@ -10,7 +10,7 @@ ms.topic: reference
 ms.date: 06/30/2021
 ---
 
-# Power BI adoption framework: Executive sponsorship
+# Power BI adoption roadmap: Executive sponsorship
 
 When planning to advance the data culture and the state of organizational adoption for Power BI, it's crucial to have executive support. An executive sponsor is imperative because adopting Power BI is far more than just a technology project.
 
@@ -23,7 +23,7 @@ Although some successes can be certainly achieved by a few determined individual
 - Communication and announcements that are of critical importance
 - Decision-making, particularly strategic-level governance decisions
 - Dispute resolution (for escalated issues that cannot be resolved by operational or tactical personnel)
-- Support for organizational changes (for example, creating or expanding the [Center of Excellence](powerbi-adoption-framework-center-of-excellence.md))
+- Support for organizational changes (for example, creating or expanding the [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md))
 
 > [!IMPORTANT]
 > The ideal executive sponsor has sufficient credibility, influence, and authority throughout the organization.
@@ -79,4 +79,4 @@ The following maturity levels will help you assess your current state of executi
 
 ## Next steps
 
-In the [next article in this series](powerbi-adoption-framework-content-ownership-and-management.md), learn more about content ownership and management, and its effect on business-led self-service BI, managed self-service BI, and enterprise BI.
+In the [next article in this series](powerbi-adoption-roadmap-content-ownership-and-management.md), learn more about content ownership and management, and its effect on business-led self-service BI, managed self-service BI, and enterprise BI.

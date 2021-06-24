@@ -1,6 +1,6 @@
 ---
 title: Power BI adoption framework maturity levels
-description: A description of the maturity levels used in the Power BI adoption framework series of articles.
+description: A description of the maturity levels used in the Power BI adoption roadmap series of articles.
 author: peter-myers
 ms.author: maroche
 ms.reviewer: asaxton
@@ -10,11 +10,11 @@ ms.topic: reference
 ms.date: 06/30/2021
 ---
 
-# Power BI adoption framework maturity levels
+# Power BI adoption roadmap maturity levels
 
 There are three inter-related perspectives for which to consider adoption of a technology such as Power BI.
 
-:::image type="content" source="media/powerbi-adoption-framework-maturity-levels/powerbi-adoption-framework-adoption-types.png" alt-text="Image shows the three inter-related types of Power B I adoption, which are described in the table below.":::
+:::image type="content" source="media/powerbi-adoption-roadmap-maturity-levels/powerbi-adoption-roadmap-adoption-types.png" alt-text="Image shows the three inter-related types of Power B I adoption, which are described in the table below.":::
 
 The three types of adoption shown in the above graphic include:
 
@@ -164,7 +164,7 @@ Common characteristics of stage 4 include:
 It's easy to underestimate the effort it takes to get from stage 2 (understanding) to stage 4 (proficiency). Typically, the biggest time gap is between stage 3 (momentum) and stage 4 (proficiency).
 
 > [!IMPORTANT]
-> By the time a person reaches the momentum and proficiency stages, the organization needs to be prepared to support the individual in their efforts. There may also be some proactive efforts to assist users progressing through stages. See the [community of practice article](powerbi-adoption-framework-community-of-practice.md), and the [user support article](powerbi-adoption-framework-user-support.md) for additional discussion.
+> By the time a person reaches the momentum and proficiency stages, the organization needs to be prepared to support the individual in their efforts. There may also be some proactive efforts to assist users progressing through stages. See the [community of practice article](powerbi-adoption-roadmap-community-of-practice.md), and the [user support article](powerbi-adoption-roadmap-user-support.md) for additional discussion.
 
 ## Solution adoption phases
 
@@ -173,7 +173,7 @@ Solution adoption is concerned with measuring the impact of individual Power BI 
 As a solution progresses to phases 3 or 4, expectations for operationalizing the solution are higher.
 
 > [!TIP]
-> In the [content delivery scope article](powerbi-adoption-framework-content-delivery-scope.md), we discuss the importance of scope on expectations for governance. That concept is closely related to this but approaches it from a different angle. For instance, perhaps you have a new solution which has been operationalized and is distributed to many users. This doesn't immediately equate to phase 4 solution adoption, as the concept of solution adoption is focused on how much value the content brings.
+> In the [content delivery scope article](powerbi-adoption-roadmap-content-delivery-scope.md), we discuss the importance of scope on expectations for governance. That concept is closely related to this but approaches it from a different angle. For instance, perhaps you have a new solution which has been operationalized and is distributed to many users. This doesn't immediately equate to phase 4 solution adoption, as the concept of solution adoption is focused on how much value the content brings.
 
 ### Solution phase 1 – Exploration
 
@@ -221,4 +221,4 @@ Common characteristics of phase 4 solutions include:
 
 ## Next steps
 
-In the [next article in this series](powerbi-adoption-framework-data-culture.md), learn more about the organizational data culture and its impact on adoption efforts.
+In the [next article in this series](powerbi-adoption-roadmap-data-culture.md), learn more about the organizational data culture and its impact on adoption efforts.

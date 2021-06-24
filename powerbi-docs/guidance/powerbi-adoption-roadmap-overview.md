@@ -1,6 +1,6 @@
 ---
 title: Power BI adoption framework overview
-description: An overview of the Power BI adoption framework series of articles.
+description: An overview of the Power BI adoption roadmap series of articles.
 author: peter-myers
 ms.author: maroche
 ms.reviewer: asaxton
@@ -10,7 +10,7 @@ ms.topic: reference
 ms.date: 06/30/2021
 ---
 
-# Power BI adoption framework overview
+# Power BI adoption roadmap
 
 The goal for this series of articles is to provide a technical roadmap: a series of strategic and tactical considerations and action items which will directly lead to successful Power BI adoption, and help build a data culture in your organization.
 
@@ -18,7 +18,7 @@ Advancing adoption and cultivating a data culture is about more than implementin
 
 This series of articles correlates with the following Power BI adoption roadmap diagram:
 
-:::image type="content" source="media/powerbi-adoption-framework-overview/powerbi-adoption-framework-overview-roadmap.png" alt-text="Image shows a diagram depicting the 10 high-level areas of Power B I adoption, which are described in the table below.":::
+:::image type="content" source="media/powerbi-adoption-roadmap-overview/powerbi-adoption-roadmap-overview-roadmap.png" alt-text="Image shows a diagram depicting the 10 high-level areas of Power B I adoption, which are described in the table below.":::
 
 The areas in the above diagram include:
 
@@ -39,14 +39,14 @@ The relationships in the diagram shown above can be summarized as follows:
 
 Your organizational **data culture** vision will strongly influence the strategies that you follow for self-service and enterprise **content ownership and management** and **content delivery scope**. These strategies will, in turn, have a big impact on the operating model for your **Center of Excellence** and governance decisions. The established **governance** guidelines, policies, and processes affect the implementation methods used for **mentoring and enablement** , the **community of practice** , and **user support**. Governance decisions will dictate the day-to-day **system oversight** (administration) activities. All data culture and adoption-related decisions and actions are accomplished more easily with guidance and leadership from an **executive sponsor**.
 
-Each individual article discusses key topics associated with an area of the diagram. Considerations and potential action items are provided. Each article concludes with a set of [maturity levels](powerbi-adoption-framework-maturity-levels.md) to help you assess your current state so you can decide what action to take.
+Each individual article discusses key topics associated with an area of the diagram. Considerations and potential action items are provided. Each article concludes with a set of [maturity levels](powerbi-adoption-roadmap-maturity-levels.md) to help you assess your current state so you can decide what action to take.
 
 ## Power BI adoption
 
 Power BI adoption references the organization's state of having effective processes, support, tools, and data available and integrated into regular ongoing patterns of usage for content creators, consumers, and stakeholders in the organization.
 
 > [!IMPORTANT]
-> This series of adoption articles is focused on _**organizational**_ adoption. See the [Power BI adoption maturity levels article](powerbi-adoption-framework-maturity-levels.md) for an introduction to the three types of adoption: organizational, user, and solution.
+> This series of adoption articles is focused on _**organizational**_ adoption. See the [Power BI adoption maturity levels article](powerbi-adoption-roadmap-maturity-levels.md) for an introduction to the three types of adoption: organizational, user, and solution.
 
 A common misconception is that adoption relates primarily to usage or number of users. There's no question that usage statistics are an important factor. However, usage is not the only factor. Adoption is not just about _using_ the technology on a regular basis; it's about using it _effectively_. Effectiveness is much harder to define and measure.
 
@@ -57,18 +57,18 @@ Whenever possible, adoption efforts should be aligned across analytics platforms
 
 The remaining articles in this Power BI adoption series will discuss the following aspects of adoption:
 
-- [Adoption maturity levels](powerbi-adoption-framework-maturity-levels.md)
-- [Data culture](powerbi-adoption-framework-data-culture.md)
-- [Executive sponsorship](powerbi-adoption-framework-executive-sponsorship.md)
-- [Content ownership and management](powerbi-adoption-framework-content-ownership-and-management.md)
-- [Content delivery scope](powerbi-adoption-framework-content-delivery-scope.md)
-- [Center of Excellence](powerbi-adoption-framework-center-of-excellence.md)
-- [Governance](powerbi-adoption-framework-governance.md)
-- [Mentoring and enablement](powerbi-adoption-framework-mentoring-and-user-enablement.md)
-- [Community of practice](powerbi-adoption-framework-community-of-practice.md)
-- [User support](powerbi-adoption-framework-user-support.md)
-- [System oversight](powerbi-adoption-framework-system-oversight.md)
-- [Conclusion and additional resources](powerbi-adoption-framework-conclusion.md)
+- [Adoption maturity levels](powerbi-adoption-roadmap-maturity-levels.md)
+- [Data culture](powerbi-adoption-roadmap-data-culture.md)
+- [Executive sponsorship](powerbi-adoption-roadmap-executive-sponsorship.md)
+- [Content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md)
+- [Content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md)
+- [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md)
+- [Governance](powerbi-adoption-roadmap-governance.md)
+- [Mentoring and enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md)
+- [Community of practice](powerbi-adoption-roadmap-community-of-practice.md)
+- [User support](powerbi-adoption-roadmap-user-support.md)
+- [System oversight](powerbi-adoption-roadmap-system-oversight.md)
+- [Conclusion and additional resources](powerbi-adoption-roadmap-conclusion.md)
 
 > [!IMPORTANT]
 > You may be wondering how this Power BI adoption roadmap is different from the [Power BI adoption framework](https://github.com/pbiaf/powerbiadoption). The adoption framework was created primarily to support Microsoft partners with a lightweight set of resources for use when helping their customers deploy and adopt Power BI. This Power BI adoption series that you're reading now is more current and is intended to be used directly by any person or organization using or considering using Power BI. If you're seeking to improve your existing Power BI implementation, or planning a new Power BI implementation, this adoption roadmap is the place to start. You will also find a lot of valuable information in the [Power BI adoption framework](https://github.com/pbiaf/powerbiadoption), so we encourage you to review it as well.
@@ -105,7 +105,7 @@ To get the most from this information, the reader should be aware of the [fundam
 
 ## Next steps
 
-In the [next article in this series](powerbi-adoption-framework-maturity-levels.md), learn about the Power BI adoption maturity levels, which will be referenced throughout this entire series of articles. See the [conclusion article](powerbi-adoption-framework-conclusion.md) for additional adoption-related resources.
+In the [next article in this series](powerbi-adoption-roadmap-maturity-levels.md), learn about the Power BI adoption maturity levels, which will be referenced throughout this entire series of articles. See the [conclusion article](powerbi-adoption-roadmap-conclusion.md) for additional adoption-related resources.
 
 Other helpful resources include:
 
@@ -115,6 +115,6 @@ Other helpful resources include:
 
 Experienced Power BI partners are available to help your organization succeed with adoption of Power BI. To engage a Power BI partner, visit the [Power BI partner portal](https://powerbi.microsoft.com/partners/).
 
-## Acknowledgements
+## Acknowledgments
 
 This series of articles was written by Melissa Coates, Data Platform MVP, and owner of [Coates Data Strategies](https://www.coatesdatastrategies.com/), with significant contributions from Matthew Roche. Reviewers include Cory Moore, James Ward, Timothy Bindas, Greg Moir, Chuy Varela, Daniel Rubiolo, Sanjay Raut, and Peter Myers.

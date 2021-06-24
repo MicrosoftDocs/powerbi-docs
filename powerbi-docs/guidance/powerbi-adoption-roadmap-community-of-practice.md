@@ -10,13 +10,13 @@ ms.topic: reference
 ms.date: 06/30/2021
 ---
 
-# Power BI adoption framework: Community of practice
+# Power BI adoption roadmap: Community of practice
 
 A community of practice includes a group of people with a common interest, who interact with and help each other on a voluntary basis. Using Power BI to produce effective analytics is a common interest that can bring people together across an organization.
 
 The following visual provides an overview of an internal community:
 
-:::image type="content" source="media/powerbi-adoption-framework-community-of-practice/powerbi-adoption-framework-community-of-practice.png" alt-text="Image shows the community relationships between the C O E, creators, champions, and consumers, which are described next.":::
+:::image type="content" source="media/powerbi-adoption-roadmap-community-of-practice/powerbi-adoption-roadmap-community-of-practice.png" alt-text="Image shows the community relationships between the C O E, creators, champions, and consumers, which are described next.":::
 
 The above diagram depicts the following:
 
@@ -30,7 +30,7 @@ The above diagram depicts the following:
 > [!TIP]
 > All references to the Power BI community in this adoption series refers to users internal to the organization (unless explicitly stated otherwise). There is an active and vibrant worldwide community of bloggers and presenters that produce a wealth of knowledge about Power BI. However, internal users are the focus of this article.
 
-See the [mentoring and user enablement](powerbi-adoption-framework-mentoring-and-user-enablement.md) article about related topics including resources, documentation, and training provided for the Power BI community.
+See the [mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article about related topics including resources, documentation, and training provided for the Power BI community.
 
 ## Champions network
 
@@ -63,7 +63,7 @@ There are a lot of ways knowledge sharing occurs. It could be during the normal 
 
 | **Activity** | **Description** |
 | --- | --- |
-| Discussion channel | A Q&amp;A forum where anyone in the community can post and view messages. Used most often for help and announcements. See the internal community support section of the [user support](powerbi-adoption-framework-user-support.md) article for further discussion. |
+| Discussion channel | A Q&amp;A forum where anyone in the community can post and view messages. Used most often for help and announcements. See the internal community support section of the [user support](powerbi-adoption-roadmap-user-support.md) article for further discussion. |
 | Lunch and learn sessions | Regularly scheduled sessions where someone presents a short session about something they've learned or a solution they've created. The goal is to get a variety of presenters involved, because it's a powerful message to hear what colleagues have been able to achieve firsthand. |
 | Office hours with the COE | Regularly scheduled times when COE staff are available so members of the community can engage with experts from the COE and receive assistance with minimal process overhead. See the mentoring and user enablement article for further discussion. |
 | Internal blog posts or wiki posts | Short blog posts, usually covering technical how-to topics. |
@@ -122,15 +122,15 @@ There are generally four types of communication to plan for:
 
 1. **New employee communications**. This type of communication is directed to new employees (and contractors). For new employees who are expected to work with data, this is an excellent opportunity to provide onboarding materials they need to get started with Power BI. This includes items such as how to get Power BI Desktop installed, how to request a license, and where to find introductory training materials. This can also include general data governance guidelines all users should be aware of.
 2. **Onboarding communications**. This type of communication is directed to employees who are just acquiring a Power BI license or getting involved with the Power BI community. This presents an excellent opportunity to provide the same type of materials as mentioned above for new employee communications.
-3. **Ongoing communications**. This type of communication includes regular announcements and updates directed to all Power BI users, or subsets of users. This includes announcing changes happening to key organizational content. For example, changes are being published for a critical shared dataset that is used heavily throughout the organization. This also includes announcing new features from the [blog](https://powerbi.microsoft.com/blog/) and [release plan](https://powerbi.microsoft.com/roadmap/) updates (see the [system oversight](powerbi-adoption-framework-system-oversight.md) article for further discussion about planning for change). Feature announcements are more likely to get attention from the reader if the message includes additional meaningful context about why it's important. (Although an RSS feed is a helpful technique, with the frequent pace of change it can become noisy and mostly ignored.)
-4. **Situational communications**. This type of communication is directed to specific users or groups based on a specific occurrence discovered while [monitoring the platform](powerbi-adoption-framework-system-oversight.md#auditing-and-monitoring). For instance, perhaps you're seeing a significant amount of sharing out of "my workspace" for a particular user, so you choose to send them some information about the benefits of workspaces and apps.
+3. **Ongoing communications**. This type of communication includes regular announcements and updates directed to all Power BI users, or subsets of users. This includes announcing changes happening to key organizational content. For example, changes are being published for a critical shared dataset that is used heavily throughout the organization. This also includes announcing new features from the [blog](https://powerbi.microsoft.com/blog/) and [release plan](https://powerbi.microsoft.com/roadmap/) updates (see the [system oversight](powerbi-adoption-roadmap-system-oversight.md) article for further discussion about planning for change). Feature announcements are more likely to get attention from the reader if the message includes additional meaningful context about why it's important. (Although an RSS feed is a helpful technique, with the frequent pace of change it can become noisy and mostly ignored.)
+4. **Situational communications**. This type of communication is directed to specific users or groups based on a specific occurrence discovered while [monitoring the platform](powerbi-adoption-roadmap-system-oversight.md#auditing-and-monitoring). For instance, perhaps you're seeing a significant amount of sharing out of "my workspace" for a particular user, so you choose to send them some information about the benefits of workspaces and apps.
 
 > [!TIP]
 > One-way communication to the user community is important. Don't forget to also include bidirectional communication options to ensure the user community has an opportunity to provide feedback when appropriate.
 
 ## Community resources
 
-Resources for the internal community, such as documentation, templates, and training, are critical for adoption success. Resources are discussed in the [mentoring and user enablement](powerbi-adoption-framework-mentoring-and-user-enablement.md) article.
+Resources for the internal community, such as documentation, templates, and training, are critical for adoption success. Resources are discussed in the [mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article.
 
 ## Considerations and key actions
 
@@ -140,7 +140,7 @@ Considerations and key actions you can take to initiate, grow, and sustain your 
 - Create a plan for supporting the champions network. Although some aspects of a champions network will always be informally led, determine to what extent the COE will purposefully cultivate and support the efforts of champions throughout the individual business units.
 - Decide what level of commitment and expected time investment will be required of Power BI champions (note that the time investment can vary wildly from person to person, and team to team). Plan to clearly communicate this to people who are interested in getting involved. Arrange to obtain manager approval when appropriate.
 - Determine how you will respond to requests to become a champion, and how the COE will seek out champions. Decide if you will openly encourage interested employees to self-identify as a champion and ask to learn more (less common), or if the COE will more subtly observe efforts and extend the invitation privately (more common).
-- Consider how many champions is ideal per functional business area. Usually, 1-2 champions per area works well but this can vary based on the size of the team, the needs of the self-service community, and how the [COE is structured](powerbi-adoption-framework-center-of-excellence.md#structuring-a-coe).
+- Consider how many champions is ideal per functional business area. Usually, 1-2 champions per area works well but this can vary based on the size of the team, the needs of the self-service community, and how the [COE is structured](powerbi-adoption-roadmap-center-of-excellence.md#structuring-a-coe).
 - Determine how members of the champions network will be managed. This could be implemented through membership in a security group. Consider:
   - How you will communicate with the champions network (for instance, in a Teams channel, a Yammer group, and/or email group)
   - How the champions network will communicate and collaborate with each other directly (across organizational boundaries)
@@ -149,7 +149,7 @@ Considerations and key actions you can take to initiate, grow, and sustain your 
   - Direct access to COE personnel
   - Influence on data policies being implemented (for example, what the requirements are for a dataset certification policy)
   - Influence on best practices and guidance being shared with the broader community (for example, what the recommendations are for accessing a specific source system)
-- Actively involve certain champions as satellite members of the COE. See the [Center of Excellence article](powerbi-adoption-framework-center-of-excellence.md#structuring-a-coe) for further discussion about federating the COE.
+- Actively involve certain champions as satellite members of the COE. See the [Center of Excellence article](powerbi-adoption-roadmap-center-of-excellence.md#structuring-a-coe) for further discussion about federating the COE.
 - Create a feedback loop for champions to easily provide information or suggestions to the COE.
 - Routinely provide recognition and incentives for people in your champions network. Not only is praise an effective motivator, but the act of sharing examples of successful efforts can be used as a how-to for others in the organization which extends learnings across organizational boundaries.
 
@@ -183,4 +183,4 @@ The following maturity levels will help you assess the current state of your com
 
 ## Next steps
 
-In the [next article in this series](powerbi-adoption-framework-user-support.md), learn about user support.
+In the [next article in this series](powerbi-adoption-roadmap-user-support.md), learn about user support.

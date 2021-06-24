@@ -10,7 +10,7 @@ ms.topic: reference
 ms.date: 06/30/2021
 ---
 
-# Power BI adoption framework: System oversight
+# Power BI adoption roadmap: System oversight
 
 System oversight—also known as Power BI administration—is the ongoing, day-to-day, administrative activities that:
 
@@ -19,15 +19,15 @@ System oversight—also known as Power BI administration—is the ongoing, day-t
 - Allow for broader organizational adoption of Power BI with effective governance and data management practices
 
 > [!IMPORTANT]
-> Your organizational [data culture](powerbi-adoption-framework-data-culture.md) objectives provide direction for your [governance](powerbi-adoption-framework-governance.md) decisions which, in turn, dictate how [Power BI administration](../admin/service-admin-administering-power-bi-in-your-organization.md) activities take place and by whom.
+> Your organizational [data culture](powerbi-adoption-roadmap-data-culture.md) objectives provide direction for your [governance](powerbi-adoption-roadmap-governance.md) decisions which, in turn, dictate how [Power BI administration](../admin/service-admin-administering-power-bi-in-your-organization.md) activities take place and by whom.
 
-Administration is a broad and deep topic. The goal for this article is to introduce some of the most important considerations and actions to help you be successful with your [organizational adoption](powerbi-adoption-framework-maturity-levels.md) objectives.
+Administration is a broad and deep topic. The goal for this article is to introduce some of the most important considerations and actions to help you be successful with your [organizational adoption](powerbi-adoption-roadmap-maturity-levels.md) objectives.
 
 ## Power BI administrators
 
 The Power BI administrator role is a specific role in Microsoft 365 which delegates a [subset of Power BI-specific](/power-platform/admin/use-service-admin-role-manage-tenant#service-administrator-permission-matrix) management activities. Global Microsoft 365 administrators are also an implicit Power BI administrator.
 
-A key governance decision is who to permit to be a Power BI administrator. This is a centralized role which affects your entire Power BI tenant. Ideally, there are [2-4 people in the organization](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true#security-guidelines-for-assigning-roles) who have been trained on how to manage the Power BI service, and who are in close coordination with the [Center of Excellence](powerbi-adoption-framework-center-of-excellence.md) (COE).
+A key governance decision is who to permit to be a Power BI administrator. This is a centralized role which affects your entire Power BI tenant. Ideally, there are [2-4 people in the organization](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true#security-guidelines-for-assigning-roles) who have been trained on how to manage the Power BI service, and who are in close coordination with the [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md) (COE).
 
 ### High privilege role
 
@@ -42,7 +42,7 @@ The Power BI administrator role is considered a high privilege role because:
 
 ### Roles and responsibilities
 
-The types of activities that an administrator will do on a day-to-day basis will differ between organizations. What's important and given priority in your [data culture](#tenant-settings) will heavily influence what an administrator does to support business-led self-service BI, managed self-service BI, and enterprise BI (see the [content ownership and management](powerbi-adoption-framework-content-ownership-and-management.md) article for details).
+The types of activities that an administrator will do on a day-to-day basis will differ between organizations. What's important and given priority in your [data culture](#tenant-settings) will heavily influence what an administrator does to support business-led self-service BI, managed self-service BI, and enterprise BI (see the [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) article for details).
 
 > [!TIP]
 > The best type of person to serve in a Power BI administrator role is one who has enough knowledge about Power BI to understand what self-service users are trying to accomplish.
@@ -71,7 +71,7 @@ The Power BI ecosystem is very broad and deep. There are quite a few different w
 - Networking team
 - Security and compliance team
 
-The remainder of this article discusses the most common activities that a Power BI administrator is likely to be involved with, and which are important to carry out effectively when taking a strategic approach to [Power BI organizational adoption](powerbi-adoption-framework-overview.md).
+The remainder of this article discusses the most common activities that a Power BI administrator is likely to be involved with, and which are important to carry out effectively when taking a strategic approach to [Power BI organizational adoption](powerbi-adoption-roadmap-overview.md).
 
 ## Service management
 
@@ -86,7 +86,7 @@ It's essential for tenant settings to align with governance guidelines and polic
 > [!IMPORTANT]
 > Changing the settings should go through a change control process with an approval mechanism that includes a history of approved changes by whom, when, and why.
 
-Since content creators and consumers can easily read online about available features in Power BI, it can be very frustrating when things don't work as expected. This can lead to dissatisfied users and less effective [organizational adoption, user adoption, and solution adoption](powerbi-adoption-framework-maturity-levels.md). Common examples of user confusion and frustration:
+Since content creators and consumers can easily read online about available features in Power BI, it can be very frustrating when things don't work as expected. This can lead to dissatisfied users and less effective [organizational adoption, user adoption, and solution adoption](powerbi-adoption-roadmap-maturity-levels.md). Common examples of user confusion and frustration:
 
 - Why can't I create a workspace?
 - Why can't I export data?
@@ -96,7 +96,7 @@ Since content creators and consumers can easily read online about available feat
 > [!CAUTION]
 > If you're seeing a situation that isn't ideal (such as too many exports in the activity log), resist the urge to disable the feature entirely. Prohibiting features leads to user frustration and workarounds. Before disabling a setting, find out why users are relying on certain techniques. Perhaps a solution needs to be redesigned, or additional user education and training will mitigate the concerns. The bottom line: knowledge sharing is an effective form of governance.
 
-Since there's no reader role to view tenant settings, this can be a challenge in larger organizations. One of the most helpful things you can do is publish a document with the tenant settings to the centralized portal (discussed in the [mentoring and user enablement](powerbi-adoption-framework-mentoring-and-user-enablement.md) article).
+Since there's no reader role to view tenant settings, this can be a challenge in larger organizations. One of the most helpful things you can do is publish a document with the tenant settings to the centralized portal (discussed in the [mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article).
 
 The following activities apply when reviewing and validating each tenant setting:
 
@@ -111,7 +111,7 @@ The following activities apply when reviewing and validating each tenant setting
 
 ### Admin portal
 
-As discussed in the Power BI adoption [maturity levels](powerbi-adoption-framework-maturity-levels.md) article, organizational adoption refers to the effectiveness of Power BI governance and data management practices to support and enable enterprise BI and self-service BI. Actively managing all areas of the Power BI service (in addition to the tenant settings previously discussed) in accordance with adoption goals has a direct influence on ensuring that all users have a good experience with Power BI.
+As discussed in the Power BI adoption [maturity levels](powerbi-adoption-roadmap-maturity-levels.md) article, organizational adoption refers to the effectiveness of Power BI governance and data management practices to support and enable enterprise BI and self-service BI. Actively managing all areas of the Power BI service (in addition to the tenant settings previously discussed) in accordance with adoption goals has a direct influence on ensuring that all users have a good experience with Power BI.
 
 These additional responsibilities for managing the Power BI service include:
 
@@ -159,7 +159,7 @@ In addition to software installations, user machines may be managed for:
 - Registry settings (examples: disable the Power BI Desktop [sign-in form](../admin/desktop-admin-sign-in-form.md) or [tune Query Editor performance](../create-reports/desktop-evaluation-configuration.md)).
 
 > [!TIP]
-> Effective management of software, drivers, and settings can make a big difference in user experience which translates to advances in [user adoption](powerbi-adoption-framework-maturity-levels.md#user-adoption-stages) and reduced [user support](powerbi-adoption-framework-user-support.md) costs.
+> Effective management of software, drivers, and settings can make a big difference in user experience which translates to advances in [user adoption](powerbi-adoption-roadmap-maturity-levels.md#user-adoption-stages) and reduced [user support](powerbi-adoption-roadmap-user-support.md) costs.
 
 ## Architecture
 
@@ -177,7 +177,7 @@ A few data architecture considerations that affect adoption of Power BI include:
 - Where does Power BI fit in the organization's entire data architecture? Are there other existing components such as an enterprise data warehouse or a data lake which will be important to plan for?
 - Is Power BI being used end-to-end for data preparation, data modeling, and data presentation? Or is Power BI being used for a subset of those capabilities?
 - Where will users consume the content? Generally, the three main ways to deliver content include the Power BI service, Power BI Report Server, and embedding in custom applications. The [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP) includes a section on Power BI architectural choices which includes when to consider each of these three main choices. Additionally, [Microsoft Teams](https://powerbi.microsoft.com/blog/guide-to-enabling-your-organization-to-use-power-bi-in-microsoft-teams/) is a convenient alternative to the Power BI service for users who spend a lot of time in Teams.
-- Who is responsible for managing and maintaining the data architecture? Is it a centralized team, or a decentralized team? How is the [Center of Excellence](powerbi-adoption-framework-center-of-excellence.md) represented in this team? Are certain skillsets required?
+- Who is responsible for managing and maintaining the data architecture? Is it a centralized team, or a decentralized team? How is the [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md) represented in this team? Are certain skillsets required?
 - What [data sources](../connect-data/desktop-data-sources.md) are most important, and what types of data will we be acquiring?
 - What [connectivity mode](../connect-data/service-dataset-modes-understand.md) and [storage mode](../transform-model/desktop-storage-mode.md) choices (for example, import, live connection, DirectQuery, or composite model frameworks) are best to suit the use cases?
 - To what extent is data reusability encouraged with [shared datasets](../connect-data/desktop-report-lifecycle-datasets.md)?
@@ -186,7 +186,7 @@ A few data architecture considerations that affect adoption of Power BI include:
 When just getting acquainted with Power BI, a lot of system administrators assume it's a query tool much like SQL Server Reporting Services. The breadth of capabilities for Power BI are vast, so it's important for administrators to be aware of its capabilities to make sound architecture decisions.
 
 > [!TIP]
-> Get in the habit of completing a technical proof of concept (POC) to test out assumptions and ideas. The goal is to address unknowns and reduce risk as early as possible. A POC doesn't have to be throwaway work, but it should be narrow in scope. Best practices reviews, as discussed in the [mentoring and user enablement](powerbi-adoption-framework-mentoring-and-user-enablement.md) article, are also a very useful way to help content creators with the important architecture decisions.
+> Get in the habit of completing a technical proof of concept (POC) to test out assumptions and ideas. The goal is to address unknowns and reduce risk as early as possible. A POC doesn't have to be throwaway work, but it should be narrow in scope. Best practices reviews, as discussed in the [mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article, are also a very useful way to help content creators with the important architecture decisions.
 
 ### Premium capacity management
 
@@ -213,7 +213,7 @@ Overseeing the health of Power BI Premium capacity is an essential ongoing activ
 
 Suggestions for managing Premium capacity:
 
-- Create a specific set of criteria for content that will be published to Premium capacity. This is particularly relevant when a single capacity is used by multiple business units (because the potential exists to disrupt other users if the capacity is not well-managed). See the best practices review section in the [mentoring and user enablement](powerbi-adoption-framework-mentoring-and-user-enablement.md) article for a list of items that may be included in the best practices review (such as reasonable dataset size and efficient calculations).
+- Create a specific set of criteria for content that will be published to Premium capacity. This is particularly relevant when a single capacity is used by multiple business units (because the potential exists to disrupt other users if the capacity is not well-managed). See the best practices review section in the [mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article for a list of items that may be included in the best practices review (such as reasonable dataset size and efficient calculations).
 - Regularly use the [Premium monitoring app](../admin/service-premium-gen2-metrics-app.md) to understand resource utilization and patterns for the capacity. Most importantly, look for consistent patterns of overutilization which will cause user disruptions. An analysis of usage patterns will also make you aware if the capacity is being underutilized and more value could be gained from the investment.
 - Configure the [tenant setting](../admin/service-interruption-notifications.md#enable-notifications) to be notified if the [Premium capacity is overloaded](https://powerbi.microsoft.com/blog/announcing-timely-premium-capacity-overload-alerts/), or an outage or incident is occurring.
 
@@ -332,17 +332,17 @@ Managing and optimizing the cost of cloud services like Power BI is an important
 
 ## Security and data protection
 
-Security and data protection are joint responsibilities among all content creators, consumers, as well as administrators. That's no small task because there's sensitive information everywhere: customer data, personally identifiable information (PII), protected health information (PHI), intellectual property, proprietary organizational information, just to name a few. Governmental, industry, and contractual regulations may have a big impact on the [governance](powerbi-adoption-framework-governance.md) guidelines and policies that you create related to security.
+Security and data protection are joint responsibilities among all content creators, consumers, as well as administrators. That's no small task because there's sensitive information everywhere: customer data, personally identifiable information (PII), protected health information (PHI), intellectual property, proprietary organizational information, just to name a few. Governmental, industry, and contractual regulations may have a big impact on the [governance](powerbi-adoption-roadmap-governance.md) guidelines and policies that you create related to security.
 
 The [Power BI security whitepaper](whitepaper-powerbi-security.md) is an excellent resource for understanding the breadth of considerations, including aspects that Microsoft manages. In this section we'll introduce a few items that customers are responsible for managing.
 
 ### User responsibilities
 
-Some organizations ask Power BI users to accept a self-service user acknowledgement. This is a document that explains the user's responsibilities and expectations for safeguarding organizational data. One way to automate the implementation is with an [Azure Active Directory terms of use policy](/azure/active-directory/conditional-access/terms-of-use). The user is required to agree to the policy before they are permitted to visit the Power BI service for the first time (or on a recurring basis, like an annual renewal).
+Some organizations ask Power BI users to accept a self-service user acknowledgment. This is a document that explains the user's responsibilities and expectations for safeguarding organizational data. One way to automate the implementation is with an [Azure Active Directory terms of use policy](/azure/active-directory/conditional-access/terms-of-use). The user is required to agree to the policy before they are permitted to visit the Power BI service for the first time (or on a recurring basis, like an annual renewal).
 
 ### Data security
 
-In a [cloud shared responsibility model](/azure/security/fundamentals/shared-responsibility), securing the data itself is always the responsibility of the customer. With a self-service BI platform, self-service content creators have a lot of responsibility for properly securing the content that's shared with colleagues. The COE should provide [documentation and training](powerbi-adoption-framework-mentoring-and-user-enablement.md) where relevant to assist content creators with best practices (particularly situations for dealing with ultra-sensitive data).
+In a [cloud shared responsibility model](/azure/security/fundamentals/shared-responsibility), securing the data itself is always the responsibility of the customer. With a self-service BI platform, self-service content creators have a lot of responsibility for properly securing the content that's shared with colleagues. The COE should provide [documentation and training](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) where relevant to assist content creators with best practices (particularly situations for dealing with ultra-sensitive data).
 
 Administrators can be helpful as well by following best practices themselves, and by raising concerns when they see issues which could be discovered when [managing workspaces](../admin/service-admin-portal.md#workspaces), [auditing user activities](../admin/service-admin-auditing.md), or managing [gateway credentials and users](../connect-data/service-gateway-data-sources.md#add-a-data-source). There are also a few [tenant settings](../admin/service-admin-portal.md#tenant-settings) that are usually highly limited to few users (for instance, the ability to [publish to web](../admin/service-admin-portal.md#publish-to-web) or the ability to [publish apps to the entire organization](../admin/service-admin-portal.md#publish-content-packs-and-apps-to-the-entire-organization)).
 
@@ -369,7 +369,7 @@ The power of sensitivity labels is:
 
 - Automated data loss prevention within the Power BI service (for instance, when [Cloud App Security](../admin/service-security-using-microsoft-cloud-app-security-controls.md) can invoke a policy to prohibit a file download based on a sensitivity label).
 - Automated data loss prevention across system boundaries (such as when the [label follows the content](../admin/service-security-sensitivity-label-overview.md#introduction) when it's exported from the Power BI service to Excel or PowerPoint).
-- User education so they know what they can and cannot do with the data. This is not automated. Rather, this should be handled with a data governance policy and user education. See the "data classification and protection policy" in the [governance](powerbi-adoption-framework-governance.md) article.
+- User education so they know what they can and cannot do with the data. This is not automated. Rather, this should be handled with a data governance policy and user education. See the "data classification and protection policy" in the [governance](powerbi-adoption-roadmap-governance.md) article.
 
 There are several [tenant settings](../admin/service-admin-portal.md#information-protection) which relate to information protection. See additional discussion about ways to use sensitivity labels in the auditing and monitoring section below.
 
@@ -452,9 +452,9 @@ Considerations and key actions you can take to improve system oversight:
 
 Considerations and key actions you can take to improve management of the Power BI service:
 
-- Conduct a review of all tenant settings to ensure they are in alignment with [data culture](powerbi-adoption-framework-data-culture.md) objectives and [governance](powerbi-adoption-framework-governance.md) guidelines and policies. Verify which groups are assigned for each setting.
+- Conduct a review of all tenant settings to ensure they are in alignment with [data culture](powerbi-adoption-roadmap-data-culture.md) objectives and [governance](powerbi-adoption-roadmap-governance.md) guidelines and policies. Verify which groups are assigned for each setting.
 - Document the tenant settings for the internal Power BI community and post it in the centralized portal. Include which groups a user would need to request to be able to use a feature.
-- When user resources have been established (discussed in the [mentoring and user enablement](powerbi-adoption-framework-mentoring-and-user-enablement.md) article), update the [tenant setting](../admin/service-admin-portal.md#help-and-support-settings) to customize the links under the "get help" menu for directing users to your documentation, community, and help.
+- When user resources have been established (discussed in the [mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article), update the [tenant setting](../admin/service-admin-portal.md#help-and-support-settings) to customize the links under the "get help" menu for directing users to your documentation, community, and help.
 
 Considerations and key actions you can take to improve management of user machines and devices:
 
