@@ -114,7 +114,7 @@
       href: visual-api.md
     - name: "Local storage API" 
       href: local-storage.md
-    - name: "Rendering events" 
+    - name: "'Rendering' events API" 
       href: event-service.md
     - name: "Sorting"
       href: sort-options.md
