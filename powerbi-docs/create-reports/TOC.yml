@@ -296,6 +296,8 @@
         href: ../visuals/power-bi-visualization-influencers.md
       - name: "KPI visuals"
         href: ../visuals/power-bi-visualization-kpi.md
+      - name: "Power Automate button visual"
+        href: power-bi-automate-visual.md
       - name: Maps
         items: 
         - name: "Shape map visuals (preview)"
