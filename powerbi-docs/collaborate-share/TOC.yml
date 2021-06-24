@@ -120,7 +120,7 @@
       - name: Save a paginated report to a local folder
         href: service-automate-paginated-local-file.md
       - name: "Power Automate button visual"
-        href: power-bi-automate-visual.md
+        href: ../create-reports/power-bi-automate-visual.md
     - name: "Use third-party apps"
       href: service-power-bi-get-started-third-party-apps.md
     - name: Organizational content packs

@@ -147,7 +147,7 @@ Alternatively, you can give any users edit access to the flow, not just run perm
 
 For more information about Power Automate, take a look at the following articles:
 
-- [Integrate Power BI data alerts with Power Automate](service-flow-integration.md)
-- [Export and email a Power BI report with Power Automate](service-automate-power-bi-report-export.md)
+- [Integrate Power BI data alerts with Power Automate](../collaborate-share/service-flow-integration.md)
+- [Export and email a Power BI report with Power Automate](../collaborate-share/service-automate-power-bi-report-export.md)
 - [Get started with Power Automate](/power-automate/getting-started/)
 - More questions? [Try the Power BI Community](https://community.powerbi.com/)
