@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 05/02/2021
+ms.date: 05/15/2021
 ---
 
 # Set up your environment for developing a Power BI visual
@@ -19,11 +19,11 @@ Before you start development, you'll need to install **node.js** and the **pbivi
 In this article, you'll learn how to:
 > [!div class="checklist"]
 >
-> * Install *nodes.js*.
-> * Install *pbiviz*.
-> * Create and install a certificate.
-> * Set up Power BI service for developing a visual.
-> * Install additional libraries (required for developing a visual).
+> * [Install *nodes.js*](#install-nodejs).
+> * [Install *pbiviz*](#install-pbiviz).
+> * [Create and install a certificate](#create-and-install-a-certificate).
+> * [Set up Power BI service for developing a visual](#set-up-power-bi-service-for-developing-a-visual).
+> * [Install additional libraries](#install-development-libraries) (required for developing a visual).
 
 ## Install node.js
 
@@ -238,8 +238,8 @@ npm i powerbi-visuals-api --save-dev
 
 ## Next steps
 
-> [!div class="nextstepaction]
->[Troubleshooting your Power BI environment setup](power-bi-custom-visuals-troubleshoot.md)
+> [!div class="nextstepaction"]
+> [Troubleshooting your Power BI environment setup](power-bi-custom-visuals-troubleshoot.md)
 
 > [!div class="nextstepaction"]
 > [Create a Power BI circle card visual](develop-circle-card.md)

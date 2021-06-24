@@ -135,8 +135,6 @@ There are also a few **limitations** you need to keep in mind:
 
 - Using Power BI Embedded with datasets that include a DirectQuery connection to a Power BI datasets or Azure Analysis Services model is not currently supported.
 
-- Format strings on columns and measures from a remote source are not imported to the composite model.
-
 - Calculation groups on remote sources are not supported, with undefined query results.
 
 - Calculated tables are not supported in the Service using this feature.
@@ -144,6 +142,8 @@ There are also a few **limitations** you need to keep in mind:
 - Sort by column isn't supported at this time.
 
 - Automatic page refresh (APR) is only supported for some scenarios, depending on the data source type. See the article [Automatic page refresh in Power BI](../create-reports/desktop-automatic-page-refresh.md) for more information.
+
+- Take over of a dataset which is using the **DirectQuery to other datasets** feature isn't currently supported.
 
 ### Tenant considerations
 

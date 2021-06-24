@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 03/25/2021
+ms.date: 06/15/2021
 LocalizationGroup: Premium
 ---
 # Power BI Premium Gen2 metrics app (preview)
@@ -18,6 +18,9 @@ The **Premium Gen2 Monitoring App** provides straightforward utilization data th
 
 >[!TIP]
 >The **Premium Gen2 Monitoring App** is also applicable for [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md).
+
+> [!NOTE]
+> During the preview period, the Premium Gen2 Metrics app will undergo updates and revisions to respond to customer feedback. 
 
 ## Install the Gen2 monitoring app
 
@@ -36,7 +39,7 @@ Your **capacity ID** can be found in the URL of the Power BI Admin portal. It's 
 
 :::image type="content" source="media/service-premium-gen2-metrics-app/premium-gen2-metrics-app-02.png" alt-text="Screenshot of capacity ID in URL":::
 
-When choosing how many **days of utilization** to see in your report, select a value that reflects the analysis you want to perform. For example, if you are analyzing monthly usage for charging users of your capacity, you can choose to load 30 or 45 days of data.
+When choosing how many **days of utilization** to see in your report, select a value that reflects the analysis you want to perform. For example, if you are analyzing monthly usage for charging users of your capacity, you could choose to load 30 or 45 days of data once the metric app is out of preview. During the preview period, however, refreshing the Gen2 Metrics app to show more than 7 days may fail.
 
 Once you submit those parameters, the **Premium Gen2 Monitoring App** loads the data and refreshes the view. The refresh can take a few minutes to complete.
 
@@ -112,7 +115,7 @@ You can create a single **Gen2 monitoring app** to monitor all of your Power BI 
 
     :::image type="content" source="media/service-premium-gen2-metrics-app/premium-gen2-metrics-app-14.png" alt-text="Screenshot of saving a copy of the report":::
 
-5. Next, publish the workspace you created in **Step 1** as an app. In this example, we are publishing two Premium Gen2 capacity reports to our unified workspace and app. You’ll need to provide a description for the app. First, select **Create app** from the upper-left corner.
+5. Next, publish the workspace you created in **Step 1** as an app. In this example, we are publishing two Premium Gen2 capacity reports to our unified workspace and app. You’ll need to provide a description for the app. First, select **Create app** from the upper-right corner.
 
     :::image type="content" source="media/service-premium-gen2-metrics-app/premium-gen2-metrics-app-15.png" alt-text="Screenshot of creating a new app":::
 

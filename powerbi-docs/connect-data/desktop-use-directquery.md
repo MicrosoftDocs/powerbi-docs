@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/21/2021
+ms.date: 05/20/2021
 LocalizationGroup: Connect to data
 ---
 
@@ -18,7 +18,7 @@ With *Power BI Desktop*, when you connect to your data source, it's always possi
 For a full listing of data sources that support DirectQuery, see [Data sources supported by DirectQuery](power-bi-data-sources.md).
 
 ## How to connect using DirectQuery
-When you use **Get Data** to connect to a data source supported by DirectQuery, the connection dialog box lets you select how you want to connect. For example, in Power BI Desktop, under the **Home** ribbon, select **Get Data** > **SQL Server**. In the **SQL Server Database** dialog box, the **Data Connectivity mode** shows options of **Import** and **DirectQuery**:
+When you use **Get data** to connect to a data source supported by DirectQuery, the connection dialog box lets you select how you want to connect. For example, in Power BI Desktop, under the **Home** ribbon, select **Get data** > **SQL Server**. In the **SQL Server Database** dialog box, the **Data Connectivity mode** shows options of **Import** and **DirectQuery**:
 
 ![Import and DirectQuery options, SQL Server Database dialog, Power BI Desktop](media/desktop-use-directquery/directquery_sqlserverdb.png)
 
@@ -42,7 +42,7 @@ There are a few benefits to using DirectQuery:
 ## Limitations of DirectQuery
 There are currently a few limitations to using DirectQuery:
 
-- If the **Query Editor** query is overly complex, an error occurs. To remedy the error, either delete the problematic step in **Query Editor**, or *import* the data instead of using DirectQuery. For multi-dimensional sources like SAP Business Warehouse, there's no **Query Editor**.
+- If the **Power Query Editor** query is overly complex, an error occurs. To remedy the error, either delete the problematic step in **Power Query Editor**, or *import* the data instead of using DirectQuery. For multi-dimensional sources like SAP Business Warehouse, there's no **Power Query Editor**.
 
 - Calculated tables and calculated columns that reference a DirectQuery table from a data source with Single Sign-on (SSO) authentication are not supported in the Power BI Service.
 
@@ -52,6 +52,7 @@ There are currently a few limitations to using DirectQuery:
 
     For example, you can aggregate 10 million rows with your query that runs on the data source. The query accurately returns the results of that aggregation to Power BI using DirectQuery if the returned Power BI data is less than 1 million rows. If over 1 million rows are returned from DirectQuery, Power BI returns an error (unless in Premium capacity, and the row count is under the admin-set limit).
 
+- There's a 125 column limit in a table or matrix for results that have more than 500 rows for DirectQuery sources. When displaying a result that contains more than 500 rows in a table or matrix, you will see a scrollbar that enables you to fetch more data. In that situation, the maximum number of columns in the table or matrix is 125. If you must include more than 125 columns in a single table or matrix, consider creating measures using MIN, MAX, FIRST or LAST as they do not count against this maximum.
 
 ## Important considerations when using DirectQuery
 The following three points should be taken into consideration when using DirectQuery:

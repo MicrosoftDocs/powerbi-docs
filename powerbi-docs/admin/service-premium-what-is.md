@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 05/11/2021
+ms.date: 06/18/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
 ---
@@ -48,7 +48,7 @@ Premium Gen2 provides the following updates or improved experiences:
     * Fewer memory restrictions
     * Complete separation between report interaction and scheduled refreshes
 
-* **Improved metrics** with clear and normalized capacity utilization data, that's dependent only on the complexity of analytics operations the capacity performs, and not on its size, the level of load on the system while performing analytics, or other factors. With the improved metrics, utilization analysis, budget planning, chargebacks, and the need to upgrade are clearly visible with built-in reporting. Improved metrics will be made available later in the preview period. Customers seeking access to utilization metrics for past 7 days can do so by contacting customer support. 
+* **Improved metrics** with clear and normalized capacity utilization data, that's dependent only on the complexity of analytics operations the capacity performs, and not on its size, the level of load on the system while performing analytics, or other factors. With the improved metrics, utilization analysis, budget planning, chargebacks, and the need to upgrade are clearly visible with built-in reporting. 
 
 * **Autoscale** allows for *automatically adding* one v-core at a time for 24-hour periods when the load on the capacity exceeds its limits, preventing slowdowns caused by overload. V-cores are automatically removed when idle time is detected. Additional v-cores are charged to your Azure subscription on a pay-as-you-go basis. See [using Autoscale with Power BI Premium](service-premium-auto-scale.md) for steps on how to configure and use **Autoscale**.
 
@@ -274,8 +274,6 @@ To learn more about monitoring capacities, see [Monitoring in the Power BI Admin
 **Premium Gen2** and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) capacities don't use the Metrics app, they use the Capacity Utilization App, which will be made available during the preview. 
 
 You can download and install the metrics app for Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) (Preview) using the [following link](https://aka.ms/GenutilizationInstall).
-
-Customers wanting to review their utilization can receive a copy of their utilization report for the past 7 days by requesting one from customer support. The report will be supplied within 72 hours of the request. The Capacity Utilization App will be launched from your capacity management page in the **Admin portal** for each capacity, and will allow anlayis of 30 days of data and more.
 
 ### Optimizing capacities
 

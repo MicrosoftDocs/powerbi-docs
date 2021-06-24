@@ -7,7 +7,7 @@ ms.reviewer: maggie.tsang
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 08/25/2020
+ms.date: 05/24/2021
 LocalizationGroup: Visualizations
 ---
 # Copy a visual as an image to your clipboard

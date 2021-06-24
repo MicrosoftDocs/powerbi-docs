@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 12/03/2020
+ms.date: 05/24/2021
 LocalizationGroup: Dashboards
 ---
 # Dashboards for business users of the Power BI service

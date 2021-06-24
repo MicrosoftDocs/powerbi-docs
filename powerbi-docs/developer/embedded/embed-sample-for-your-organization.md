@@ -61,7 +61,7 @@ Before you start this tutorial, verify that you have both the Power BI and code 
     >To [move to production](move-to-production.md) you'll need one of the following configurations:
     >* All users with Pro licenses.
     >* All users with PPU licenses.
-    >* A [capacity](embedded-capacity.md). This configuration allows all users to have free licenses.
+    >* A *P* or *EM* [capacity](embedded-capacity.md). This configuration allows all users to have free licenses.
 
 * **Code dependencies**
 

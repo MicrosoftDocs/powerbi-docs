@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/08/2019
+ms.date: 05/24/2021
 LocalizationGroup: Data from databases
 ---
 
@@ -53,7 +53,7 @@ Embed stunning, interactive data visualizations in applications, websites, porta
 
 There's lots of information about Power BI APIs in the [Power BI Developer Portal](https://dev.powerbi.com).
 
-For more information, see [What is Power BI Embedded in Azure?](../developer/embedded/azure-pbie-what-is-power-bi-embedded.md).
+For more information, see [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md#power-bi-embedded).
 
 ## Embed your Power BI data within your app
 

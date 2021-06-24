@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
-ms.date: 12/10/2020
+ms.date: 06/18/2021
 LocalizationGroup: Gateways 
 ---
 
@@ -24,6 +24,9 @@ This article discusses some common issues when you use the on-premises data gate
 At the end of configuration, the Power BI service is called again to validate the gateway. The Power BI service doesn't report the gateway as live. Restarting the Windows service might allow the communication to be successful. To get more information, you can collect and review the logs as described in [Collect logs from the on-premises data gateway app](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
 
 ## Data sources
+
+> [!NOTE]
+> Not all data sources have dedicated articles detailing their connection settings or configuration. For many data sources and non-Microsoft connectors, connection options may vary between Power BI Desktop, and **Manage gateways > Data source settings** configurations in the Power BI service. In such cases, the default settings provided are the currently supported scenarios for Power BI. 
 
 ### Error: Unable to Connect. Details: "Invalid connection credentials"
 
@@ -204,11 +207,11 @@ You get the 1033 error when your external ID that's configured in SAP HANA doesn
 
 * SAP HANA requires the impersonated user to use the sAMAccountName attribute in Active Directory (user alias). If this attribute isn't correct, you see the 1033 error.
 
-    ![Attribute editor](media/service-gateway-onprem-tshoot/sAMAccount.png)
+    ![Attribute editor](media/service-gateway-onprem-tshoot/samaccountname-attribute.png)
 
 * In the logs, you see the sAMAccountName (alias) and not the UPN, which is the alias followed by the domain (alias@doimain.com).
 
-    ![Account info in logs](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
+    ![Account info in logs](media/service-gateway-onprem-tshoot/samaccount-attribute.png)
 
 ```xml
       <setting name="ADUserNameReplacementProperty" serializeAs="String">
@@ -232,7 +235,7 @@ You get the "-10709 Connection failed" error message if your delegation isn't co
 
 * Make sure that you have the SAP Hana server on the delegation tab in Active Directory for the gateway service account.
 
-   ![Delegation tab](media/service-gateway-onprem-tshoot/delegation-in-AD.png)
+   ![Delegation tab](media/service-gateway-onprem-tshoot/delegation-ad.png)
 
 ## Export logs for a support ticket
 
@@ -254,15 +257,15 @@ Gateway logs are required for troubleshooting and creating a support ticket. Use
 
     Next, the gateway admin, who is also the administrator of the gateway system, should do the following steps:
 
-    a. Sign in to the gateway machine, and then launch the [on-premises data gateway app](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-app) to sign in to the gateway.
+    a. Sign in to the gateway machine, and then launch the [on-premises data gateway app](/data-integration/gateway/service-gateway-app) to sign in to the gateway.
     
-    b. Enable [additional logging](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-performance#slow-performing-queries).
+    b. Enable [additional logging](/data-integration/gateway/service-gateway-performance#slow-performing-queries).
     
-    c. Optionally, you can [enable the performance monitoring features](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-performance#enable-performance-logging) and include performance logs to provide additional details for troubleshooting.
+    c. Optionally, you can [enable the performance monitoring features](/data-integration/gateway/service-gateway-performance#enable-performance-logging) and include performance logs to provide additional details for troubleshooting.
     
     d. Run the scenario for which you're trying to capture gateway logs.
     
-    e. [Export the gateway logs](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
+    e. [Export the gateway logs](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
 
 
 ## Refresh history
@@ -273,7 +276,7 @@ When you use the gateway for a scheduled refresh, **Refresh history** can help y
 
     ![How to select schedule refresh](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
 
-2. In **Settings for...** &gt; **Schedule refresh**, select **Refresh history**.
+2. In **Settings for...**, select **Refresh history**.
 
     ![Select refresh history](media/service-gateway-onprem-tshoot/scheduled-refresh-2.png)
 

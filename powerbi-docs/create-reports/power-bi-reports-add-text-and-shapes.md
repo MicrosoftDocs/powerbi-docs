@@ -1,21 +1,21 @@
 ---
-title: Text boxes and shapes in Power BI reports
-description: Add and create text boxes and shapes in a report in Power BI Desktop or the Microsoft Power BI service.
+title: Add text boxes, shapes, and smart narrative visuals to Power BI reports
+description: Add and create text boxes, shapes, and smart narrative visuals to reports in Power BI Desktop or the Microsoft Power BI service.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom: video-_3q6VEBhGew
+ms.custom: video-_3q6VEBhGew, video-RWDX9z
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/12/2021
+ms.date: 06/02/2021
 LocalizationGroup: Visualizations
 ---
-# Add text boxes and shapes to Power BI reports
+# Add text boxes, shapes, and smart narrative visuals to Power BI reports
 
-You can add text boxes and shapes to reports by using the Power BI service and Power BI Desktop. In both cases, you must have editing permissions for the report. If a report has been shared with you in the Power BI service, you won't have editing permissions. 
+You can add text boxes, shapes, and *smart narrative visuals* to reports in Power BI Desktop or the Microsoft Power BI service. The [smart narrative visual](#add-a-smart-narrative) uses artificial intelligence to provide a text summary of your visuals and reports. In either Power BI Desktop or the Microsoft Power BI service, you must have editing permissions for the report. If a report has been shared with you in the Power BI service, you won't have editing permissions. 
 
-Watch Will use Power BI Desktop to add static images to a report, and then follow the steps below to try it out yourself in the Power BI service instead.
+Watch Will use Power BI Desktop to add static images to a report, and then follow the steps below to try it out yourself in the Power BI service.
 > 
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/_3q6VEBhGew" frameborder="0" allowfullscreen></iframe>
 > 
@@ -47,6 +47,17 @@ This procedure uses the Retail Analysis sample available in the Power BI service
      ![Pin the text box to a dashboard](media/power-bi-reports-add-text-and-shapes/power-bi-pin-text-box.png)
 
 ## Add a shape to a report
+
+You can add all sorts of shapes to Power BI reports, with a variety of formatting options and styling. You can also upgrade old shapes in your reports.
+
+First, here's a video demonstrating the flexibility you have when creating shapes.
+
+>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWDX9z]
+>
+
+Now you're ready to create your own shapes.
+
 1. Place your cursor anywhere on the report canvas and select **Shapes**.
    
    ![Screenshot of selecting a shape.](media/power-bi-reports-add-text-and-shapes/power-bi-shapes.png)

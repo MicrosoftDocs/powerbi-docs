@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 02/20/2020
+ms.date: 02/21/2020
 LocalizationGroup: Gateways
 ---
 
@@ -159,15 +159,15 @@ Complete the following configuration steps:
 
 1. Use the **Active Directory Users and Computers** MMC snap-in on the domain controller for the **ContosoFrontEnd** domain and verify no delegation settings are applied for the gateway service account.
 
-    ![Gateway connector properties](media/service-gateway-sso-kerberos-resource/gateway-connector-properties.png)
+    ![Gateway connector properties](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
 
 2. Use **Active Directory Users and Computers** on the domain controller for the **ContosoBackEnd** domain and verify no delegation settings are applied for the back-end service account.
 
-    ![SQL service properties](media/service-gateway-sso-kerberos-resource/sql-service-properties.png)
+    ![SQL service properties](media/service-gateway-sso-kerberos/sql-service-properties.png)
 
 3. In the **Attribute Editor** tab of the account properties, verify that the **msDS-AllowedToActOnBehalfOfOtherIdentity** attribute isn't set.
 
-    ![SQL service attributes](media/service-gateway-sso-kerberos-resource/sql-service-attributes.png)
+    ![SQL service attributes](media/service-gateway-sso-kerberos/sql-service-attributes.png)
 
 4. In **Active Directory Users and Computers**, create a group on the domain controller for the **ContosoBackEnd** domain. Add the **GatewaySvc** gateway service account to the **ResourceDelGroup** group. 
 
@@ -239,6 +239,8 @@ If you don't have Azure AD Connect configured, follow these steps to map a Power
 ## Complete data source-specific configuration steps
 
 SAP HANA and SAP BW have additional data-source specific configuration requirements and prerequisites that you need to meet before you can establish an SSO connection through the gateway to these data sources. For more information, see [SAP HANA configuration](service-gateway-sso-kerberos-sap-hana.md) and [the SAP BW - CommonCryptoLib (sapcrypto.dll) configuration page](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md). Although it's possible to [configure SAP BW for use with the gx64krb5 SNC library](service-gateway-sso-kerberos-sap-bw-gx64krb.md), this library isn't recommended because it's no longer supported by SAP. You should use CommonCryptoLib _or_ gx64krb5 as your SNC library. Don't complete the configuration steps for both libraries.
+
+Similarly, Teradata also has additional data-source specific configuration requirements and prerequisites. For more information, see [Use Kerberos for SSO to Teradata](service-gateway-sso-kerberos-teradata.md). 
 
 > [!NOTE]
 > Although other SNC libraries might also work for BW SSO, they aren't officially supported by Microsoft.

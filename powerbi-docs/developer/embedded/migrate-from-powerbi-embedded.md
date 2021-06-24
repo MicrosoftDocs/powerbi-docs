@@ -27,9 +27,9 @@ The current Power BI Workspace Collection will continue to be available for a li
 Before you get started migrating to the new Power BI Embedded, you can quickly go through a walkthrough that helps you set up your new Power BI Embedded environment using the [Embedding setup tool](https://aka.ms/embedsetup).
 
 Choose the solution that is right for you:
-* **Embed for your customers** - when you are interested in an *app owns data* solution. [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. 
+* **Embed for your customers** - when you are interested in an *app owns data* solution. [Embedding for your customers](embedded-analytics-power-bi.md#embed-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. 
 
-* **Embed for your organization** - when you are interested in a *user owns data* solution. [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service.
+* **Embed for your organization** - when you are interested in a *user owns data* solution. [Embedding for your organization](embedded-analytics-power-bi.md#embed-for-your-organization) allows you to extend the Power BI service.
 
 ## Prepare for the migration
 
@@ -191,7 +191,7 @@ You should do some cleanup within Azure.
 
 ## Next steps
 
-[Embedding with Power BI](embedding.md)  
+[Embedding with Power BI](embedded-analytics-power-bi.md)  
 [Power BI Workspace Collection migration tool](migrate-tool.md)  
 [Code snippets for migrating content from Power BI Workspace Collection](migrate-code-snippets.md)  
 [How to embed your Power BI dashboards, reports and tiles](embed-sample-for-your-organization.md)  

@@ -82,7 +82,7 @@ To support management of capacities with Multi-Geo through API, we have made som
 
 Learn more about Power BI Embedded capacities and Multi-Geo options for all capacities by referencing the links below.
 
-* [What is Power BI Embedded?](azure-pbie-what-is-power-bi-embedded.md)
+* [What is Power BI Embedded?](embedded-analytics-power-bi.md)
 
 * [Create a Power BI Embedded capacity](azure-pbie-create-capacity.md)
 

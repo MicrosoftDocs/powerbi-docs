@@ -86,7 +86,6 @@ When using the **Backup and Restore** feature with Power BI, keep the following 
 * [Power BI Premium FAQ](service-premium-faq.yml)
 * [Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.yml)
 * [Add or change Azure subscription administrators](/azure/cost-management-billing/manage/add-change-subscription-administrator)
-* [Configuring tenant and workspace storage](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration)
+* [Configuring tenant and workspace storage](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
