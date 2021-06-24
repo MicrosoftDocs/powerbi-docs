@@ -48,7 +48,7 @@ Before you can start developing your Power BI visual, set up your environment fo
 
 ## Create a new project
 
-To create a new project for the bar chart visual:
+If you are building the visual from scratch, first create it and give it a name:
 
 1. Open **PowerShell** and navigate to the folder you want to create your project in.
 
@@ -64,7 +64,7 @@ To create a new project for the bar chart visual:
 
 For a detailed explanation of the function of each of these files see [Power BI visual project structure](visual-project-structure.md).
 
-The two files we will focus on in this tutorial are the `capabilities.json` file which describes the visual to the host,  and the `src/barchart.ts` file which replaces the `src/visual.ts` file as the one containing the visual's API.
+The two files we'll focus on in this tutorial are the `capabilities.json` file, which describes the visual to the host,  and the `src/barchart.ts` file, which replaces the `src/visual.ts` file as the one containing the visual's API.
 
 Creating a bar chart visual involves the following steps:
 
@@ -86,7 +86,7 @@ This data binding acts on a **Field** well in Power BI.
 Variables are defined and bound in the [`dataRoles`](capabilities.md#define-the-data-fields-that-your-visual-expects-dataroles) section of the capabilities file. We want our bar chart to accept two types of variables:
 
 * Categorical data that will be represented by the different bars on the chart
-* Numerical, or measured data which is represented by the height of each bar
+* Numerical, or measured data, which is represented by the height of each bar
 
 1. In PowerShell, stop the custom visual.
 
@@ -184,11 +184,11 @@ Let's add an optional X-axis and the ability to define the color of each bar.
         },
 ```
 
-For more information on objects and how they work, see [Objects](objects-properties.md). For another example of adding formatting to a visual see the [Circle card tutorial](custom-visual-develop-tutorial-format-options.md#adding-formatting-options).
+For more information on objects and how they work, see [Objects](objects-properties.md). For another example of adding formatting to a visual, see the [Circle card tutorial](custom-visual-develop-tutorial-format-options.md#adding-formatting-options).
 
 ### Other capabilities
 
-Finally, let's add some other optional features to the *capabilities* file. We won't use them now, but we might want to add tooltips, a landing page, or drill down capabilities in the future.
+Finally, let's add some other optional features to the *capabilities* file. We won't use them now, but we might want to add [tool tips](add-tooltips.md), a [landing page](landing-page.md), or drill down capabilities in the future.
 
 1. In Visual Studio Code, in the **capabilities.json** file, add the following code.
 
@@ -218,11 +218,11 @@ Your final *capabilities* file should look like [the one in this example](https:
 
 All visuals start with a class that implements the `IVisual` interface. The `src/visual.ts` file is the default file that contains this class.
 
-In this tutorial we will call our API file `barChart.ts`. [Download the file](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts) if you haven't already downloaded it. In the following section we will go through this file in detail and describe the various sections.
+In this tutorial, we'll call our API file `barChart.ts`. [Download the file](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts) if you haven't already downloaded it. In the following section, we'll go through this file in detail and describe the various sections.
 
 ### Imports
 
-The first thing we have to do is import the modules that we will be using for this visual. Notice that in addition to the Power BI visual modules, we also import the [d3 library](https://d3js.org/).
+The first thing we have to do is import the modules that we'll be using for this visual. Notice that in addition to the Power BI visual modules, we also import the [d3 library](https://d3js.org/).
 
 ### Interfaces
 
@@ -288,7 +288,7 @@ let defaultSettings: BarChartSettings = {
 
 ### Visual transform
 
-Now that we defined our data structures, we map data onto them using the `visualTransform` function. This function receives data from the data view and transforms it to a format your visual can use. In this case it returns the `BarChartViewModel` interface described above.
+Now that we defined our data structures, we map data onto them using the `visualTransform` function. This function receives data from the data view and transforms it to a format your visual can use. In this case, it returns the `BarChartViewModel` interface described above.
 
 The `DataView` contains the queried data to be visualized. This data can be in different forms, such as categorical and tabular. To build a categorical visual like a bar chart, you only need to use the categorical property on the `DataView`. Defining `visualTransform` lets you convert `DataView` into a view model your visual will use.
 
