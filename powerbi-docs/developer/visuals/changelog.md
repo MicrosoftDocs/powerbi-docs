@@ -35,7 +35,7 @@ This page contains a quick summary of the API versions. Versions listed here are
   * **[Landing Page API](./landing-page.md)**
   * **[Local Storage API](./local-storage.md)**
   * **[Tuple filter API (multi-column filter)](./filter-api.md#the-tuple-filter-api-multi-column-filter)**
-  * **[Rendering Events API](./event-service.md#render-events-in-power-bi-visuals)**
+  * **[Rendering Events API](./event-service.md)**
 
 ## API v2.2.0
   * Supports **[restoring JSON Filter from DataView](./filter-api.md#restore-the-json-filter-from-the-data-view)**
