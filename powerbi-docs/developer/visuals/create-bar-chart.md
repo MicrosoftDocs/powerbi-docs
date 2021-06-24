@@ -14,7 +14,7 @@ ms.date: 05/25/2021
 
 [!INCLUDE[Power B I visuals tutorials overview](../../includes/visual-tutorial-overview.md)]
 
-In this tutorial, you'll develop a Power BI  visual displays data in the form of a simple bar chart. This visual supports a minimum amount of customization. Adding a context menu, tool-tips, and other customizations are explained in other places.
+In this tutorial, you'll learn how to develop a Power BI visual that displays data in the form of a simple bar chart. This visual supports a minimum amount of customization. Adding a [context menu](context-menu.md), [tool-tips](add-tooltips.md), and other customizations are explained in other places in this documentation.
 
 In this tutorial, you learn how to:
 
@@ -26,8 +26,14 @@ In this tutorial, you learn how to:
 > * Understand the source code used to build a visual
 > * Package your visual.
 
-> [!NOTE]
-> For the full source code of this visual, see[PowerBI visuals sample bar chart](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/tree/barChartTutorial).
+Important :exclamation:
+The purpose of this tutorial is to help you understand how a visual is structured and written. We recommend that you clone the source code from here and use it to follow along this tutorial. You can also create your own new visual and replace the source code where necessary to create your own bar chart visual from the beginning.
+
+>[!IMPORTANT]
+>
+>The purpose of this tutorial is to help you understand how a visual is structured and written. For the source code of the simple bar chart that we create in this tutorial, see [Simple bar code](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/tree/barChartTutorial).
+>For the full source code of a bar chart with more advanced features, including tool-tips, selection, and a context menu, see [PowerBI visuals sample bar chart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart)
+>We recommend that you clone the above code and use it to follow along this tutorial. Alternatively, you can also create your own new visual and replace or edit the code where necessary to create your own bar chart visual from the beginning.
 
 ## Set up your environment
 
@@ -41,11 +47,6 @@ Before you can start developing your Power BI visual, set up your environment fo
 >If you didn't install this library as part of your setup, [install the D3 JavaScript library](environment-setup.md#d3-javascript-library) now.
 
 ## Create a new project
-
->[!NOTE]
->
->For the source code of the simple bar chart that we create in this tutorial, see [Simple bar code](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/tree/barChartTutorial).
->For the full source code of a bar chart with more advanced features, including tool-tips, selection, and a context menu, see [PowerBI visuals sample bar chart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart)
 
 To create a new project for the bar chart visual:
 
@@ -295,9 +296,11 @@ This function is called whenever the visual is updated.
 
 ## Rendering
 
-Once the data is defined, it is time to render it. This is done from the IVisual function. This function is described in the [Visual API](visual-api.md) page. It contains a `constructor` class that creates the visual and an `update` class that is called each time the visual reloads.
+Once the data is defined, we can render it. The visual is rendered from the `IVisual` function. The `IVisual` function is described on the [Visual API](visual-api.md) page. It contains a `constructor` class that creates the visual and an `update` class that is called each time the visual reloads.
 
-### constructor function - 27 minutes
+### Constructor
+
+- 27 minutes :smiley: 
 
 ### Update
 
