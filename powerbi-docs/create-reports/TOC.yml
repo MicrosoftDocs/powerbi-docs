@@ -298,6 +298,8 @@
         href: ../visuals/power-bi-visualization-influencers.md
       - name: "KPI visuals"
         href: ../visuals/power-bi-visualization-kpi.md
+      - name: "Paginated report visuals"
+        href: ../visuals/paginated-report-visual.md
       - name: Maps
         items: 
         - name: "Shape map visuals (preview)"
