@@ -22,6 +22,18 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 Get started with these popular on-demand webinars:
 
+**Harness Power BI for Self Service Data Prep with Dataflows**  
+by Charles Webb  
+[Watch now](https://info.microsoft.com/ww-Landing-harness-PowerBI-SelfService-Prep-Dataflows.html?LCID=EN-US)  
+
+**Understanding Power BI Premium Gen 2**  
+by David Magar  
+[Watch now]( https://info.microsoft.com/ww-Landing-Understanding-Power-BI-Premium-Gen-2.html?LCID=EN-US)  
+
+**Demystifying Power BI datasets**  
+by Peter Myers and Chris Webb  
+[Watch now](https://info.microsoft.com/ww-landing-demystifying-PowerBI-datasets.html?LCID=EN-US)  
+
 **Securing your data in motion and at rest with Power BI**  
 by Anton Fritz and Yitzhak Kesselman  
 [Watch now](https://info.microsoft.com/ww-Landing-SecuringyourdatainmotionandatrestwithPowerBI.html?LCID=EN-US)
