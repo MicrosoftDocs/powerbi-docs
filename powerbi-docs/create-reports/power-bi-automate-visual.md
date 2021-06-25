@@ -7,7 +7,7 @@ ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/24/2021
+ms.date: 06/25/2021
 LocalizationGroup: Create reports
 ---
 # Create a Power Automate visual for Power BI (preview)
@@ -133,7 +133,7 @@ When the flow is running successfully, you can share it with your report readers
 
 Alternatively, you can give any users edit access to the flow, not just run permissions.
 
-1. Select **Share**, and specify the users or groups that you want to add as an owner:
+1. Select **Share** :::image type="icon" source="media/power-bi-automate-visual/share-icon.png" border="false":::, and specify the users or groups that you want to add as an owner:
 
     :::image type="content" source="media/power-bi-automate-visual/share-flow-ownership.png" alt-text="Share flow ownership with others.":::
 
