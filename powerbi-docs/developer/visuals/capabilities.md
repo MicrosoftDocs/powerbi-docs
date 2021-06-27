@@ -30,7 +30,7 @@ The `capabilities.json` file looks like this:
 
 The root objects of a visual's capabilities file are:  
 
-* [dataRoles](#dataroles-the-data-fields-that-your-visual-expects)
+* [dataRoles](#define-the-data-fields-that-your-visual-expects-dataroles)
 * [dataViewMappings](#dataviewmappings-how-you-want-the-data-mapped)
 * [objects](#objects-define-property-pane-options)
 * [supportsHighlight](#supportshighlight-how-to-handle-partial-highlighting)
