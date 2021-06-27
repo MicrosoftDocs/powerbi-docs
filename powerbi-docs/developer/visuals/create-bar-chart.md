@@ -78,7 +78,7 @@ This data binding acts on a **Field** well in Power BI.
 
 ### Define data roles
 
-Variables are defined and bound in the [`dataRoles`](capabilities.md#define-the-data-fields-that-your-visual-expects-dataroles) section of the capabilities file. We want our bar chart to accept two types of variables:
+Variables are defined and bound in the [`dataRoles`](capabilities.md) section of the capabilities file. We want our bar chart to accept two types of variables:
 
 * Categorical data that will be represented by the different bars on the chart
 * Numerical, or measured data, which is represented by the height of each bar
