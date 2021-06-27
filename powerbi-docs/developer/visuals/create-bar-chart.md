@@ -290,7 +290,7 @@ The `DataView` contains the queried data to be visualized. This data can be in d
 This function is called whenever the visual is updated.
 
 >[!NOTE]
->The next few functions in the barChart.ts file deal with color and creating the X axis. Those are optional and are discussed elsewhere. This tutorial will continue from the `IVisual` function.
+>The next few functions in the barChart.ts file deal with color and creating the X axis. Those are optional and are discussed further down in this tutorial. This tutorial will continue from the `IVisual` function.
 
 ## Rendering
 
@@ -312,7 +312,7 @@ When the size of the visual or the values of the data points change, the visual 
 
 To calculate the scale, we use the `scaleLinear` and `scaleBand` methods that were imported earlier from the `d3-scale` library.
 
-The `BarChartViewModel` has a value `datamax` which is the largest value of all current data points. This value is used to determine the height of the y axis. The scaling for the width of the x axis is determined by the number of categories.
+The `BarChartViewModel` has a value `datamax` which is the largest value of all current data points. This value is used to determine the height of the y axis. The scaling for the width of the x axis is determined by the number of categories bound to the visual in the `barchartdatapoint` interface.
 
 ```typescript
         let yScale = scaleLinear()
@@ -329,17 +329,21 @@ Your final barChart.ts file should look like [this](https://github.com/blacklead
 
 ## (Optional) Rendering the X axis
 
+Now that the visual can display data and rescale to the correct size, we can add an X-axis display to show the names of the categories.
+
 ## (Optional) Color
 
 Rendering x axis - 40 min
 
-5. Change location of main thing in tsconfig and pbiviz
+5. Change location of main source code in tsconfig and pbiviz
 
 First, define the bar chart view model, and iterate on what's exposed to your visual as you build it.
 Define the chart by creating a file in the src directory with the following.
 
 
 ## Color
+
+We already defined the `colorSelector` object in the *capabilities* file. 
 
 To assign colors and select them when defining individual data points, you use `IVisualHost`.
 
@@ -358,6 +362,8 @@ function visualTransform(options: VisualUpdateOptions, host: IVisualHost): BarCh
 }
 
 ```
+
+![Data bound object properties](./media/create-bar-chart/object-databound-property.png)
 
 ## Colors
 
@@ -451,41 +457,6 @@ You can toggle objects on or off in the **Property** pane.
 
 ![Objects in the Property pane](./media/create-bar-chart/property-pane.png)
 
-### Define property settings
-
-The following sections describe the basic principles of defining property settings. You can also use the utility classes defined in the `powerbi-visuals-utils-dataviewutils` package for defining property settings. For more information, see the documentation and samples for the [DataViewObjectsParser](https://github.com/Microsoft/powerbi-visuals-utils-dataviewutils/blob/master/docs/api/data-view-objects-parser.md) class.
-
-
-Although optional, it's best to localize most settings onto a single object for easy reference.
-
-```typescript
-/**
- * Interface for BarCharts viewmodel.
- *
- * @interface
- * @property {BarChartDataPoint[]} dataPoints - Set of data points the visual will render.
- * @property {number} dataMax                 - Maximum data value in the set of data points.
- * @property {BarChartSettings} settings      - Object property settings
- */
-interface BarChartViewModel {
-    dataPoints: BarChartDataPoint[];
-    dataMax: number;
-    settings: BarChartSettings;
-};
-
-/**
- * Interface for BarChart settings.
- *
- * @interface
- * @property "show" enableAxis - Object property that allows axis to be enabled.
- */
-interface BarChartSettings {
-    enableAxis: {
-        show: boolean;
-    };
-}
-```
-
 ### Define and use ObjectEnumerationUtility
 
 Object property values are available as metadata on the `dataView`, but there's no service to help retrieve these properties. `ObjectEnumerationUtility` is a set of static functions you can use to retrieve object values from the `dataView`, and for other visual projects. The `ObjectEnumerationUtility` is optional, but is great for iterating through the `dataView` to retrieve object properties.
@@ -513,11 +484,6 @@ export function getValue<T>(objects: DataViewObjects, objectName: string, proper
     return defaultValue;
 }
 ```
-
->[!NOTE]
->If the visual displays a connection error message, open a new tab in your browser, navigate to `https://localhost:8080/assets/status`, and authorize your browser to use this address.
->
->![Screenshot of the new visual displaying a connection error.](../../includes/media/visual-tutorial-view/connection-error.png)
 
 See [objectEnumerationUtility.ts](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/objectEnumerationUtility.ts) for source code.
 
@@ -590,34 +556,6 @@ Databound objects are similar to static objects, but typically deal with data se
 
 ![Databound object properties](./media/create-bar-chart/object-databound-property.png)
 
-### Define object in capabilities
-
-Similar to static objects, define another object in the *capabilities.json*.
-
-- `colorSelector` is the internal name that the `dataView` references.
-- `displayName` is the name shown on the **Property** pane.
-- `fill` is a structural object value not associated with a primitive type.
-
-```typescript
-"colorSelector": {
-    "displayName": "Data Colors",
-    "properties": {
-        "fill": {
-            "displayName": "Color",
-            "type": {
-                "fill": {
-                    "solid": {
-                        "color": true
-                    }
-                }
-            }
-        }
-    }
-}
-```
-
-For more information, see [Objects](./objects-properties.md).
-
 ### Use ObjectEnumerationUtility
 
 As with static objects, you need to retrieve object details from the `dataView`. However, instead of the object values being within metadata, the object values are associated with each category.
@@ -679,7 +617,7 @@ for (let i = 0, len = Math.max(category.values.length, dataValue.values.length);
 
 ### Populate Properties pane with enumerateObjectInstances
 
-Use `enumerateObjectInstances` to populate the **Property** pane with objects. 
+Use `enumerateObjectInstances` to populate the **Property** pane with objects.
 
 For this instance, add a color picker to render each category on the **Property** pane. To do this, add an additional case to the `switch` statement for `colorSelector`, and iterate through each data point with the associated color. 
 
@@ -738,7 +676,8 @@ The function `getCategoricalObjectValue` just provides a convenient way of acces
 
 ## Other features
 
-You can add a slider control or [tooltips](add-tooltips.md) to the bar chart. For the code to add, see the commits at [Add a property pane slider to control opacity](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/e2e0bc5888d9a3ca305a7a7af5046068645c8b30) and [Add support for tooltips](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14). For more information about tooltips, see [Tooltips in Power BI visuals](./add-tooltips.md).
+* [Add a property pane slider to control opacity](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/e2e0bc5888d9a3ca305a7a7af5046068645c8b30)
+* [Add support for tooltips](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14).
 
 ## Packaging
 
@@ -762,10 +701,10 @@ This command creates a *pbiviz* file in the *dist/* directory of your visual pro
     >[!IMPORTANT]
     >Do not close the PowerShell window until the end of the tutorial. To stop the visual from running, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
 
-
 ## Next steps
 
 You can add the following features to your visual:
+
 * [Add a context menu to a visual](./context-menu.md)
 * [Add a landing page to a visual](./landing-page.md)
 * [Launch URL](./launch-url.md)
