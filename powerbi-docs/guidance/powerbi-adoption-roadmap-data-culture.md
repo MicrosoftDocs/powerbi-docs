@@ -1,5 +1,5 @@
 ---
-title: "Power BI adoption framework: Data culture"
+title: "Power BI adoption roadmap: Data culture"
 description: Encourage a data culture to drive strong and successful adoption of Power BI.
 author: peter-myers
 ms.author: maroche

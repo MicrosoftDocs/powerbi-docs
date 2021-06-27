@@ -1,5 +1,5 @@
 ---
-title: "Power BI adoption framework: User support"
+title: "Power BI adoption roadmap: User support"
 description: Support users to drive strong and successful adoption of Power BI.
 author: peter-myers
 ms.author: maroche

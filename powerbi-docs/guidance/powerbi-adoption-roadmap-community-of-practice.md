@@ -1,5 +1,5 @@
 ---
-title: "Power BI adoption framework: Community of practice"
+title: "Power BI adoption roadmap: Community of practice"
 description: Establish a community of practice to help users drive strong and successful adoption of Power BI.
 author: peter-myers
 ms.author: maroche

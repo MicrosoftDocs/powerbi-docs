@@ -1,5 +1,5 @@
 ---
-title: "Power BI adoption framework: System oversight"
+title: "Power BI adoption roadmap: System oversight"
 description: Apply system oversight consisting of administrative activities to drive strong and successful adoption of Power BI.
 author: peter-myers
 ms.author: maroche

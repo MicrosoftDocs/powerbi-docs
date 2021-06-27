@@ -1,5 +1,5 @@
 ---
-title: "Power BI adoption framework: Content delivery scope"
+title: "Power BI adoption roadmap: Content delivery scope"
 description: Develop scopes for how BI content is owned and managed to drive strong and successful adoption of Power BI.
 author: peter-myers
 ms.author: maroche

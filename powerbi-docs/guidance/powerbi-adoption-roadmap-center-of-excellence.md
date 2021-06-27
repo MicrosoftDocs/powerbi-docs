@@ -1,5 +1,5 @@
 ---
-title: "Power BI adoption framework: Center of Excellence"
+title: "Power BI adoption roadmap: Center of Excellence"
 description: Establish a Center of Excellence (COE) to drive strong and successful adoption of Power BI.
 author: peter-myers
 ms.author: maroche

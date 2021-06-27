@@ -1,5 +1,5 @@
 ---
-title: "Power BI adoption framework: Content ownership and management"
+title: "Power BI adoption roadmap: Content ownership and management"
 description: Develop strategies about how BI content is owned and managed to drive strong and successful adoption of Power BI.
 author: peter-myers
 ms.author: maroche

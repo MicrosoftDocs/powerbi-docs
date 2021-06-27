@@ -1,5 +1,5 @@
 ---
-title: Power BI adoption framework conclusion
+title: Power BI adoption roadmap conclusion
 description: A conclusion and additional resources of the Power BI adoption roadmap series of articles.
 author: peter-myers
 ms.author: maroche

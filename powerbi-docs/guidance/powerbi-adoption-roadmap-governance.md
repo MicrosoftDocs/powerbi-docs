@@ -1,5 +1,5 @@
 ---
-title: "Power BI adoption framework: Governance"
+title: "Power BI adoption roadmap: Governance"
 description: Effectively enforce governance to drive strong and successful adoption of Power BI.
 author: peter-myers
 ms.author: maroche

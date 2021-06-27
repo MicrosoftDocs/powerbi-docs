@@ -1,5 +1,5 @@
 ---
-title: Power BI adoption framework maturity levels
+title: Power BI adoption roadmap maturity levels
 description: A description of the maturity levels used in the Power BI adoption roadmap series of articles.
 author: peter-myers
 ms.author: maroche

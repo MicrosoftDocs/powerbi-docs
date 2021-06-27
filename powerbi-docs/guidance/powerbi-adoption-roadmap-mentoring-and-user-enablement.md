@@ -1,5 +1,5 @@
 ---
-title: "Power BI adoption framework: Mentoring and user enablement"
+title: "Power BI adoption roadmap: Mentoring and user enablement"
 description: Mentor users to drive strong and successful adoption of Power BI.
 author: peter-myers
 ms.author: maroche
