@@ -308,11 +308,11 @@ The [update method](visual-api.md#update) is called every time the size of the v
 
 ### Scaling
 
-When the size of the visual or the values of the data points change, the visual needs to be updated so that the current values fit into the existing width and height of the visual. This is similar to the [update method in the Circle card tutorial](develop-circle-card.md#set-the-width-and-height).
+We need to scale the visual so that the current values fit into the defined width and height limits of the visual. This is similar to the [update method in the Circle card tutorial](develop-circle-card.md#set-the-width-and-height).
 
 To calculate the scale, we use the `scaleLinear` and `scaleBand` methods that were imported earlier from the `d3-scale` library.
 
-The `BarChartViewModel` has a value `datamax` which is the largest value of all current data points. This value is used to determine the height of the y axis. The scaling for the width of the x axis is determined by the number of categories bound to the visual in the `barchartdatapoint` interface.
+The `viewModel.datamax` value holds the largest value of all current data points. This value is used to determine the height of the y axis. The scaling for the width of the x axis is determined by the number of categories bound to the visual in the `barchartdatapoint` interface.
 
 ```typescript
         let yScale = scaleLinear()
