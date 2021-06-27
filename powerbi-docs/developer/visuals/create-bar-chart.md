@@ -292,7 +292,7 @@ This function is called whenever the visual is updated.
 >[!NOTE]
 >The next few functions in the barChart.ts file deal with color and creating the X axis. Those are optional and are discussed further down in this tutorial. This tutorial will continue from the `IVisual` function.
 
-## Rendering
+### Rendering
 
 Once the data is defined, we can render it. The visual is rendered from the `IVisual` function. The `IVisual` function is described on the [Visual API](visual-api.md) page. It contains a `constructor` class that creates the visual and an `update` class that is called each time the visual reloads.
 
@@ -341,7 +341,7 @@ First, define the bar chart view model, and iterate on what's exposed to your vi
 Define the chart by creating a file in the src directory with the following.
 
 
-## Color
+ 
 
 We already defined the `colorSelector` object in the *capabilities* file. 
 
