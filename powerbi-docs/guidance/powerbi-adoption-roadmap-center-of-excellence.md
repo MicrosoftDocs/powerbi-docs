@@ -78,7 +78,7 @@ Very generalized roles within a COE are listed below. It's common for multiple p
 | **Role** | **Description** |
 | --- | --- |
 | COE leader | Manages the day-to-day operations of the COE. Interacts with the executive sponsor and other organizational teams, such as the data governance board, as necessary. For details of additional roles and responsibilities, see the [Governance](powerbi-adoption-roadmap-governance.md#roles-and-responsibilities) article. |
-| Coach | Coaches and educates others on BI skills via office hours (study groups), best practices reviews, or co-development projects. Oversees and participates in the discussion channel of the internal community. Interacts with, and supports, the champions network. |
+| Coach | Coaches and educates others on BI skills via office hours (community engagement), best practices reviews, or co-development projects. Oversees and participates in the discussion channel of the internal community. Interacts with, and supports, the champions network. |
 | Trainer | Develops, curates, and delivers internal training materials, documentation, and resources. |
 | Data analyst | Domain-specific subject matter expert. Acts as a liaison between the COE and the business unit. Content creator for the business unit. Assists with content certification. Works on co-development projects and proofs of concept. |
 | Data modeler | Creates and manages shared datasets and dataflows to support self-service content creators. |
