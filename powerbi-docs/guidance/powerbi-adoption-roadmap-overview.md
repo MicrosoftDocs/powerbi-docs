@@ -38,7 +38,7 @@ The items in the above diagram include:
 The relationships in the diagram shown above can be summarized in the following bullet list:
 
 - Your organizational **data culture** vision will strongly influence the strategies that you follow for self-service and enterprise **content ownership and management** and **content delivery scope**.
--  These strategies will, in turn, have a big impact on the operating model for your **Center of Excellence** and governance decisions.
+- These strategies will, in turn, have a big impact on the operating model for your **Center of Excellence** and governance decisions.
 - The established **governance** guidelines, policies, and processes affect the implementation methods used for **mentoring and enablement**, the **community of practice**, and **user support**.
 - Governance decisions will dictate the day-to-day **system oversight** (administration) activities.
 - All data culture and adoption-related decisions and actions are accomplished more easily with guidance and leadership from an **executive sponsor**.
