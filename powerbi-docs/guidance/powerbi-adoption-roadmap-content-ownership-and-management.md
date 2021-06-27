@@ -77,7 +77,7 @@ Assigning ownership for a data domain tends to be more straightforward when mana
 >
 > In the Power BI service, content owners can set the [contact list property](../create-reports/service-item-contact.md) of many artifacts types. The contact list is also used in security workflows. For example, when a user is sent a URL to open an app but they don't have permission, they will be presented with an option to make a request for access.
 
-Here is a list of guidelines to help successfully support ownership:
+Guidelines for being successful with ownership:
 
 - Define how ownership and stewardship terminology is used in your organization, including expectations for these roles.
 - Set [contacts for each workspace](../collaborate-share/service-create-the-new-workspaces.md#create-a-contact-list) and for individual artifacts to communicate ownership and/or support responsibilities.
@@ -102,7 +102,7 @@ Business-led self-service BI is most suitable when:
 - The business unit has skilled people capable of—and fully committed to—supporting solutions through the entire lifecycle. It covers all types of Power BI artifacts, including the data (dataflows and datasets), the visuals (reports and dashboards), and apps.
 - The flexibility to respond to changing business conditions and react quickly outweighs the need for stricter governance and oversight.
 
-Here is a list of guidelines to help successfully support business-led self-service BI:
+Guidelines for being successful with business-led self-service BI:
 
 - Teach your creators to use the same techniques that IT would use, like [shared datasets](../connect-data/service-datasets-across-workspaces.md) and [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md). Having fewer duplicated datasets reduces maintenance, improves consistency, and reduces risk.
 - Focus on providing mentoring, training, resources, and documentation (described in the [mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article). The importance of these efforts can't be overstated. Be prepared for skill levels of self-service content creators to vary significantly. It's also common for a solution to deliver excellent business value yet be built in such a way that it won't scale or perform well over time (as historic data volumes increase). Having the [COE](powerbi-adoption-roadmap-center-of-excellence.md) available to help when these situations arise is very valuable.
@@ -123,7 +123,7 @@ Managed self-service BI is most suitable when:
 - Self-service report creators need to produce content at a pace faster than the centralized team can accommodate.
 - Different people are responsible for handling data preparation, data modeling, and report creation.
 
-Here is a list of guidelines to help successfully support managed self-service BI:
+Guidelines for being successful with self-service BI:
 
 - Teach users to [separate model and report development](report-separate-from-model.md#separate-report-files). They can use [live connections](../connect-data/desktop-report-lifecycle-datasets.md) to create reports based on existing datasets. When the dataset is stored in separately Power BI Desktop file from the report, it promotes data reuse by many reports and many authors.
 - Use [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md) to centralize data preparation logic and to share commonly used data entities—like date, customer, product, or sales—with many dataset creators. Refine the dataflow as much as possible, using friendly column names and correct data types to reduce the downstream effort required by dataset authors, who consume the dataflow as a source. Dataflows are an effective way to reduce the time involved with data preparation and improve data consistency across datasets. The use of dataflows also reduces the number of data refreshes on source systems and allows fewer users requiring direct access to source systems.
@@ -145,7 +145,7 @@ Enterprise BI is most suitable when:
 - Content ownership and direct access to data needs to be limited to a small number of people.
 - The data is highly sensitive or subject to regulatory requirements.
 
-Here is a list of guidelines to help successfully support enterprise BI:
+Guidelines for being successful with enterprise BI:
 
 - Implement a rigorous process for use of the [certified endorsement](../collaborate-share/service-endorse-content.md#certify-content) for datasets, reports, and apps. Not all enterprise BI content needs to be certified, but much of it probably should be. Certified content should indicate that data quality has been validated. Certified content should also follow change management rules, have formal support, and be fully documented. Because certified content has passed rigorous standards, the expectations for trustworthiness are higher.
 - Include consistent branding on enterprise BI reports to indicate who produced the content, and who to contact for help. A small image or text label in the report footer is valuable when the report is exported from the Power BI service.
