@@ -39,7 +39,9 @@ The root objects of a visual's capabilities file are:
 
 ## dataRoles: the data fields that your visual expects
 
-The `dataRoles` objects appear on the **Properties pane**. The user drags data fields into them to bind data the data fields to the objects.
+To define fields that can be bound to data, you use `dataRoles`. `dataRoles` is an array of `DataViewRole` objects, which defines all the required properties. The `dataRoles` objects are those that appear on the **Properties pane**.
+
+The user drags data fields into them to bind data the data fields to the objects.
 
 ### DataRole properties
 
