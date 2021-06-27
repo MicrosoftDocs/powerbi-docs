@@ -37,7 +37,7 @@ The root objects of a visual's capabilities file are:
 * [advancedEditModeSupport](#advancededitmodesupport-how-to-handle-advanced-edit-mode)
 * [sorting](#sorting-data-sorting-options-for-your-visual)
 
-## dataRoles: the data fields that your visual expects
+## Define the data fields that your visual expects: dataroles
 
 To define fields that can be bound to data, you use `dataRoles`. `dataRoles` is an array of `DataViewRole` objects, which defines all the required properties. The `dataRoles` objects are those that appear on the **Properties pane**.
 
