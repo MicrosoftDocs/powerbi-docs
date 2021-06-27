@@ -333,7 +333,7 @@ Now that the visual can display data and rescale to the correct size, we can add
 
 ## (Optional) Color
 
-Rendering x axis - 40 min
+ 
 
 5. Change location of main source code in tsconfig and pbiviz
 
