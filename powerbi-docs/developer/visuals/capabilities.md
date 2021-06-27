@@ -14,15 +14,6 @@ ms.date: 06/23/2021
 
 Every visual has a `capabilities.json` file that describes the visual to the host. The `capabilities.json` file tells the host what kind of data the visual accepts, what customizable attributes to put on the properties pane, and other information needed to create the visual. All properties in the `capabilities.json` file are *optional*.
 
-The root objects of a visual's capabilities file are:  
-
-* [dataRoles](#dataroles-the-data-fields-that-your-visual-expects)
-* [dataViewMappings](#dataviewmappings-how-you-want-the-data-mapped)
-* [objects](#objects-define-property-pane-options)
-* [supportsHighlight](#supportshighlight-how-to-handle-partial-highlighting)
-* [advancedEditModeSupport](#advancededitmodesupport-how-to-handle-advanced-edit-mode)
-* [sorting](#sorting-data-sorting-options-for-your-visual)
-
 The `capabilities.json` file looks like this:
 
 ```json
@@ -36,6 +27,15 @@ The `capabilities.json` file looks like this:
 }
 
 ```
+
+The root objects of a visual's capabilities file are:  
+
+* [dataRoles](#dataroles-the-data-fields-that-your-visual-expects)
+* [dataViewMappings](#dataviewmappings-how-you-want-the-data-mapped)
+* [objects](#objects-define-property-pane-options)
+* [supportsHighlight](#supportshighlight-how-to-handle-partial-highlighting)
+* [advancedEditModeSupport](#advancededitmodesupport-how-to-handle-advanced-edit-mode)
+* [sorting](#sorting-data-sorting-options-for-your-visual)
 
 ## dataRoles: the data fields that your visual expects
 
