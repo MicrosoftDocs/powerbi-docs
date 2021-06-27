@@ -64,8 +64,8 @@ The two files we'll focus on in this tutorial are the `capabilities.json` file, 
 Creating a bar chart visual involves the following steps:
 
 * [Defining the capabilities](#define-capabilities) file -`capabilities.json`
-* Adding dependencies -`package.json`
 * Creating the [visual API](#visual-api)
+* Adding dependencies -`package.json`
 * Packaging your visual -`pbiviz.json`
 
 ## Define capabilities
@@ -298,7 +298,7 @@ Once the data is defined, we can render it. The visual is rendered from the `IVi
 
 ### Constructor
 
-The [constructor function](visual-api.md#constructor) is called only once-when the visual is called for the first time. It tells the host to create an svg image of an empty bar chart.
+The [constructor function](visual-api.md#constructor) is called only once-when the visual is called for the first time. It tells the host to create an empty svg chart.
 It creates svg-containers for the bar chart and the X-axis.
 Notice that it uses the d3 library to render the svg.
 
@@ -308,14 +308,28 @@ The [update method](visual-api.md#update) is called every time the size of the v
 
 ### Scaling
 
-The first thing the update method does is recalculate the scale  according the the new updated parameters. This is similar to the [update method in the Circle card tutorial](develop-circle-card.md#set-the-width-and-height).
-The BarChartViewModel has a value datamax which is the largest 
-part of update. show imports for scales
-more at 35
-Uses dataMax
-Category names for x axis
+When the size of the visual or the values of the data points change, the visual needs to be updated so that the current values fit into the existing width and height of the visual. This is similar to the [update method in the Circle card tutorial](develop-circle-card.md#set-the-width-and-height).
+
+To calculate the scale, we use the `scaleLinear` and `scaleBand` methods that were imported earlier from the `d3-scale` library.
+
+The `BarChartViewModel` has a value `datamax` which is the largest value of all current data points. This value is used to determine the height of the y axis. The scaling for the width of the x axis is determined by the number of categories.
+
+```typescript
+        let yScale = scaleLinear()
+            .domain([0, viewModel.dataMax])
+            .range([height, 0]);
+
+        let xScale = scaleBand()
+            .domain(viewModel.dataPoints.map(d => d.category))
+            .rangeRound([0, width])
+            .padding(0.2);
+```
 
 Your final barChart.ts file should look like [this](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts).
+
+## (Optional) Rendering the X axis
+
+## (Optional) Color
 
 Rendering x axis - 40 min
 
