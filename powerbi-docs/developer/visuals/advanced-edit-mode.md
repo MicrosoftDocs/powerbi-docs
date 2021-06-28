@@ -44,9 +44,7 @@ When you select **Edit**, the visual gets an update() call with EditMode set to 
 
 ## Exit advanced edit mode
 
-The **Back to report** button is displayed if:
-
-* The `advancedEditModeSupport` property is set in the *capabilities.json* file to `SupportedInFocus`.
+The **Back to report** button is displayed if the `advancedEditModeSupport` property is set in the *capabilities.json* file to `SupportedInFocus`.
 
 ## Next steps
 
