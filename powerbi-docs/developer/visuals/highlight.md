@@ -38,7 +38,7 @@ There can also be multiple selections and partial highlights. The highlighted va
 
 ## Highlight data points with categorical data view mapping
 
-The visuals with categorical data view mapping have `capabilities.json` with `"supportsHighlight": true` parameter. For example:
+For visuals with categorical data view mapping, add  `"supportsHighlight": true` to the `capabilities.json` file. For example:
 
 ```json
 {
@@ -281,7 +281,7 @@ In the result, you should have the following view of the visual.
 
 ## Highlight data points with matrix data view mapping
 
-The visuals with matrix data view mapping have `capabilities.json` with `"supportsHighlight": true` parameter. For example:
+TFor visuals with matrix data view mapping, add  `"supportsHighlight": true` to the `capabilities.json` file. For example:
 
 ```json
 {
@@ -434,7 +434,7 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-Clear content of `div` elements before render new data:
+Clear content of `div` elements before rendering new data:
 
 ```typescript
 public update(options: VisualUpdateOptions) {
@@ -552,7 +552,7 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-The main step of using highlighting is to process additional array of values.
+The main step of using highlighting is to process an additional array of values.
 
 If you inspect the object of terminal node, you can see that the values array has two properties - value and highlight:
 
@@ -586,11 +586,11 @@ JSON.stringify(options.dataViews[0].matrix.rows.root.children[0].children[0].chi
 }
 ```
 
-Where `value` property represents value of node without applying a selection from other visual, and highlight property indicates which part of data was highlighted.
+Where `value` represents the value of the node without applying a selection from other visual, and `highlight` indicates which part of the data was highlighted.
 
 > [!NOTE]
-> Value of `highlight` property can be less that value of `value` property.
-> In means that value was higlighted partially.
+> If the value of `highlight` is less than the value of `value`,
+> It means that `value` was highlighted partially.
 
 Add the code to process the `values` array of node if it is presented:
 
