@@ -12,17 +12,20 @@ ms.date: 06/14/2021
 
 # Advanced edit mode in Power BI visuals
 
-Advanced edit mode enables you to use advanced UI controls in your Power BI visual. For example.... When you're in report editing mode, you select an **Edit** button to set the edit mode to **Advanced**. The visual can use the `EditMode` flag to determine whether it should display this UI control.
+Advanced edit mode enables you to use advanced UI controls in your Power BI visual. From report editing mode, select the **Edit** button on a visual and set the edit mode to **Advanced**. The visual uses the `EditMode` flag to determine if it should display this UI control.
+
+![Enter edit mode](media/advanced-edit-mode/edit-mode.png)
 
 By default, the visual doesn't support advanced edit mode (`"advancedEditModeSupport: 0"`). To enable advanced edit mode, add a line to the visual's *capabilities.json* file. by setting the `advancedEditModeSupport` property.
 
 The possible values are:
 
-* `0` - NotSupported
+* `0` - **NotSupported**. The visual doesn't support *Advanced Edit* mode. The 'Edit' button is not displayed on this visual.
 
-* `1` - SupportedNoAction
+* `1` - **SupportedNoAction**. The visual supports *Advanced Edit* mode but doesn't require any further changes aside from setting `EditMode=Advanced`.
+PowerBI doesn't switch the visual to *Focus* Mode. Developers can use this setting as an external button to run some processes in the same viewport.
 
-* `2` - SupportedInFocus
+* `2` - **SupportedInFocus**. The visual supports *Advanced Edit* mode and requires the host to enter *Focus* mode when entering *Advanced Edit* mode.
 
 ## Enter advanced edit mode
 
@@ -33,8 +36,6 @@ An **Edit** button is displayed if:
 * The visual is viewed in report editing mode.
 
 If `advancedEditModeSupport` property is missing from the *capabilities.json* file or set to `NotSupported`, the **Edit** button is not displayed.
-
-![Enter edit mode](media/advanced-edit-mode/edit-mode.png)
 
 When you select **Edit**, the visual gets an update() call with EditMode set to `Advanced`. Depending on the value that's set in the *capabilities.json* file, the following actions occur:
 
