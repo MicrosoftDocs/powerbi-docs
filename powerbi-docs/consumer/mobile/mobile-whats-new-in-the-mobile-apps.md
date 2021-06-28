@@ -18,6 +18,11 @@ For related "What's New" information, see:
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
+## July 2021
+### Paginated Report visuals (preview) now supported
+Paginated Report visuals (preview) enable you to render any paginated report uploaded to the service inside a Power BI report.
+Just like any other Power BI visual, Paginated Report visuals are fully-interactive, and are also supported in the Power BI Mobile apps.
+
 ## June 2021
 ### Updated look and new home page (preview) (Windows)
 We've introduced a new design and home page to simplify the way you find and open content. Turn on the **New look** toggle at the top of your screen and [check it out](mobile-windows-10-phone-app-get-started.md?tabs=new-look)!
