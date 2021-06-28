@@ -57,8 +57,18 @@
       href: ./dataflows/dataflows-best-practices.md  
     - name: "Understanding and optimizing dataflow refresh"
       href: ./dataflows/dataflows-understand-optimize-refresh.md  
+    - name: "Using DirectQuery with dataflows"
+      href: ./dataflows/dataflows-directquery.md       
     - name: "Dataflows limitations and considerations"
-      href: dataflows/dataflows-features-limitations.md            
+      href: dataflows/dataflows-features-limitations.md        
+  - name: Log analytics
+    items: 
+    - name: "Using Azure Log Analytics in Power BI (Preview)"
+      href: log-analytics/desktop-log-analytics-overview.md
+    - name: "Configuring Azure Log Analytics in Power BI (Preview)"
+      href: log-analytics/desktop-log-analytics-configure.md
+    - name: "Azure Log Analytics in Power BI - FAQ (Preview)"
+      href: log-analytics/desktop-log-analytics-faq.md             
   - name: How-to guides
     items: 
     - name: "Perform common query tasks"

@@ -6,11 +6,7 @@
     expanded: true
     items:
     - name: "What is Power BI embedded analytics?"
-      href: /javascript/api/overview/powerbi/power-bi-embedded-analytics?toc=/power-bi/developer/embedded/TOC.json?bc=/power-bi/breadcrumb/toc.json
-    - name: "What is embedding with Power BI"
-      href: embedding.md
-    - name: "What is Power BI Embedded in Azure"
-      href: azure-pbie-what-is-power-bi-embedded.md
+      href: embedded-analytics-power-bi.md
     - name: "What is Power BI Embedded Generation 2"
       href: "power-bi-embedded-generation-2.md"      
   - name: Tutorials

@@ -144,6 +144,8 @@
         href: desktop-tooltips.md        
       - name: "Create modern visual tooltips"
         href: desktop-visual-tooltips.md        
+      - name: "Power Automate button visual"
+        href: power-bi-automate-visual.md
       - name: "Export reports to PDF files"
         href: desktop-export-to-pdf.md             
       - name: Filters and slicers in reports
@@ -296,6 +298,8 @@
         href: ../visuals/power-bi-visualization-influencers.md
       - name: "KPI visuals"
         href: ../visuals/power-bi-visualization-kpi.md
+      - name: "Paginated report visuals"
+        href: ../visuals/paginated-report-visual.md
       - name: Maps
         items: 
         - name: "Shape map visuals (preview)"
@@ -452,6 +456,8 @@
         href: ../paginated-reports/paginated-reports-save-to-power-bi-service.md
       - name: Keyboard shortcuts in Power BI Report Builder
         href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context
+      - name: PDF Rendering Extension conformance to ISO 14289-1
+        href: ../report-server/rendering-extension-support.md
     - name: "Deployment pipelines"  
       items:
       - name: "Get started"

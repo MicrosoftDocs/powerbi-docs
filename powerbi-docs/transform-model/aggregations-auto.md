@@ -77,7 +77,7 @@ Tables created contain rows of aggregated data at a higher level of granularity 
 
 Automatic aggregations is built on top of existing [user defined aggregations](aggregations-advanced.md) functionality first introduced with composite models for Power BI. Automatic aggregations can work side-by-side with user defined aggregations. Automatic aggregations are identified as *System* aggregations. The automatic aggregations algorithm creates and removes only those System aggregations as reporting queries are analyzed and adjustments are made to maintain the optimal aggregations for the dataset.
 
-The query engine processes those queries it can from the in-memory aggregations tables, and passes on those queries that can only be calculated and returned from the data source (DirectQuery).
+Both aggregations created by using automatic aggregations and user defined aggregations are refreshed with dataset refresh. Only aggregations created by automatic aggregations and marked as *System* are included in the training process, which can be removed from cached aggregations.
 
 
 

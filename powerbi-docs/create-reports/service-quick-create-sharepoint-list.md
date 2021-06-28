@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/24/2021
+ms.date: 06/25/2021
 LocalizationGroup: Reports
 ---
 # Create a report quickly from a SharePoint list in the Power BI service
@@ -72,7 +72,8 @@ Anyone can use the **Visualize the list** feature to explore their list data, bu
 
 - The first time you visualize a list, creating the dataset and report can take some time. We’re working to improve the end-to-end performance of this experience. 
 - Currently, complex column types in SharePoint will show up as [Record]s or [List]s within the report. We’re working on updating the experience so these column values match what you see in the list.  
-- Data refresh is limited to once every 3 hours. 
+- Data refresh is limited to once every 3 hours.
+- This feature isn't supported for guest users in a tenant.
 
 ## Troubleshooting
 

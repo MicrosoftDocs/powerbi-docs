@@ -1542,7 +1542,7 @@
         },
         {
             "source_path": "powerbi-docs/developer/azure-pbie-what-is-power-bi-embedded.md",
-            "redirect_url": "/power-bi/developer/embedded/azure-pbie-what-is-power-bi-embedded",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
             "redirect_document_id": false
         },
         {
@@ -3900,5 +3900,14 @@
 		    "redirect_url": "/power-bi/transform-model/aggregations-auto",
 		    "redirect_document_id": false
 		}
+            "source_path": "powerbi-docs/developer/embedded/azure-pbie-what-is-power-bi-embedded.md",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/embedding.md",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
+            "redirect_document_id": false
+        }
     ]           
 }

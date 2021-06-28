@@ -39,7 +39,7 @@ This article describes the different approaches and analyzes them according to s
 
 **Power BI artifacts** – There are several Power BI artifacts in Power BI workspaces such as dashboards, reports, datasets, and dataflows.
 
-**[Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)** - A set of public APIs that allow developers to build applications that manage Power BI content and embed Power BI elements.
+**[Power BI Embedded](embedded-analytics-power-bi.md#power-bi-embedded)** - A set of public APIs that allow developers to build applications that manage Power BI content and embed Power BI elements.
 
 **[Row-level security (RLS)](embedded-row-level-security.md)** - Gives the ability to control user access to the data for individual rows in a table. You can implement row-level security at the data source level or in the Power BI semantic model.
 
@@ -99,7 +99,7 @@ Power BI Embedded supports multi-geo deployment (preview feature). [Multi-Geo](e
 
 ### Cost
 
-[Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) has a resource-based purchase model, like **Power BI Premium**. You purchase one or more capacities with fixed computing power and memory. This capacity is the main cost item when working with **Power BI Embedded**. There's no limit on the number of users using the capacity. The only limit is the performance of the capacity. A [Power BI Pro license](../../admin/service-admin-licensing-organization.md) is required for each *master* user, or specific users that need to access the Power BI portal.
+[Power BI Embedded](embedded-analytics-power-bi.md#power-bi-embedded) has a resource-based purchase model, like **Power BI Premium**. You purchase one or more capacities with fixed computing power and memory. This capacity is the main cost item when working with **Power BI Embedded**. There's no limit on the number of users using the capacity. The only limit is the performance of the capacity. A [Power BI Pro license](../../admin/service-admin-licensing-organization.md) is required for each *master* user, or specific users that need to access the Power BI portal.
 
 We recommend testing and measuring the expected load on your capacity by simulating live environment and usage and run load testing on the capacity. You can measure the load and performance with the various Metrics available in the Azure capacity or [Premium capacity metrics app](../../admin/service-admin-premium-monitor-capacity.md).
 
@@ -249,7 +249,6 @@ As end users edit or create reports, they can use the production multi-tenant da
 
 ## Next steps
 
-* [Embedded analytics with Power BI](embedding.md)
-* [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)
+* [What is Power BI embedded analytics?](embedded-analytics-power-bi.md)
 * [Power BI Premium](../../admin/service-premium-what-is.md)
 * [Row-level security](embedded-row-level-security.md)
