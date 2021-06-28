@@ -214,6 +214,8 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * Getting data from encrypted Excel (.xlsx) files is not supported. This includes “Get data” and refresh scenarios.
 
+* Information protection in Power BI doesn’t support **B2B** and **multi-tenant scenarios**.
+
 ### Power BI service
 
 * Sensitivity labels can be applied only on dashboards, reports, datasets, and dataflows. They are not currently available for [paginated reports](../paginated-reports/report-builder-power-bi.md) and workbooks.
@@ -243,8 +245,6 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 * **Get data** can upload protected files only if they are local. Protected files from online services such as SharePoint Online or OneDrive for Business cannot be uploaded. For a protected file, you can either upload it from your local device, or first remove the file's label in Power BI Desktop and then upload it via one of the online services.
 
 * **Export to PDF** does not support sensitivity labels. If you export a file that has a sensitivity label to PDF, the PDF will not receive the label and no protection will be applied.
-
-* Information protection in Power BI Desktop doesn’t support **B2B** and **multi-tenant scenarios**.
 
 * If you overwrite a labeled dataset or report in the service with an unlabeled .pbix file, the labels in the service will be retained.
 
