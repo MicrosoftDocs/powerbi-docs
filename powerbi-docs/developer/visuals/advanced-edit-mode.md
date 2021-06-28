@@ -22,7 +22,7 @@ The possible values are:
 
 * `0` - **NotSupported**. The visual doesn't support *Advanced Edit* mode. The `Edit` button is not displayed on this visual.
 
-* `1` - **SupportedNoAction**. The visual supports *Advanced Edit* mode but doesn't require any further changes aside from setting `EditMode=Advanced`.
+* `1` - **SupportedNoAction**. The visual supports *Advanced Edit* mode but doesn't require any further changes.
 PowerBI doesn't switch the visual to *Focus* Mode. Developers can use this setting as an external button to run some processes in the same viewport.
 
 * `2` - **SupportedInFocus**. The visual supports *Advanced Edit* mode and requires the host to enter *Focus* mode when entering *Advanced Edit* mode.
