@@ -16,7 +16,7 @@ With Power BI report bookmarks, you can capture and save a configured view of a 
 
 For more information about bookmarks, see [Use bookmarks to share insights and build stories in Power BI](../../create-reports/desktop-bookmarks.md).
 
-## Bookmarks support in your visual
+## Visuals that support bookmarks
 
 A Power BI visual that supports bookmarks has to be able to save and provide the correct information when needed.
 If your visual interacts with other visuals, selects data points, or filters other visuals, you need to save the bookmarked state in the visual's *filterState* properties.
