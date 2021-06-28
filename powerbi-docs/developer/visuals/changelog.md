@@ -71,7 +71,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 ## API v1.12.0
 * Supports Themes
 * Supports **[fetchMoreData](./fetch-more-data.md)**, note the **Fetch More Data API** overcomes the hard limit of 30K data points
-* **[Canvas Tooltips API](./add-tooltips.md#add-report-page-tooltips)**
+* **[Canvas Tooltips API](./add-tooltips.md#add-tooltips-support-to-the-report-page)**
 
 ## API v1.11.0
 * **[FilterManager API](./filter-api.md)**
