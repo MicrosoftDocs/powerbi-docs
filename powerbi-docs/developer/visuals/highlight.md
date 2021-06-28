@@ -38,7 +38,7 @@ There can also be multiple selections and partial highlights. The highlighted va
 
 ## Highlight data points with categorical data view mapping
 
-For visuals with categorical data view mapping, add  `"supportsHighlight": true` to the `capabilities.json` file. For example:
+For visuals with [categorical data view mapping](dataview-mappings.md#categorical-data-mapping), add  `"supportsHighlight": true` to the `capabilities.json` file. For example:
 
 ```json
 {
@@ -281,7 +281,7 @@ In the result, you should have the following view of the visual.
 
 ## Highlight data points with matrix data view mapping
 
-For visuals with matrix data view mapping, add  `"supportsHighlight": true` to the `capabilities.json` file. For example:
+For visuals with [matrix data view mapping](dataview-mappings.md#matrix-data-mapping), add  `"supportsHighlight": true` to the `capabilities.json` file. For example:
 
 ```json
 {
@@ -658,3 +658,7 @@ As the result you'll get the visual with buttons and values `highlighted value/d
 
 >[!div class="nextstepaction"]
 >[Capabilities of the visual](capabilities.md)
+
+>[!div class="nextstepaction"]
+>[Add interactivity to visual using selections]
+(selection-api.md)
