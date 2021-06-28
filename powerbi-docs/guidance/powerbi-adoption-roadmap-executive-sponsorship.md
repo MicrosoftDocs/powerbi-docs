@@ -12,6 +12,8 @@ ms.date: 06/30/2021
 
 # Power BI adoption roadmap: Executive sponsorship
 
+[!INCLUDE [powerbi-adoption-roadmap-context](includes/powerbi-adoption-roadmap-context.md)]
+
 When planning to advance the data culture and the state of organizational adoption for Power BI, it's crucial to have executive support. An executive sponsor is imperative because adopting Power BI is far more than just a technology project.
 
 Although some successes can be achieved by a few determined individual contributors, the organization is in a significantly better position when a senior leader is engaged, supportive, informed, and available to assist with activities such as:

@@ -12,6 +12,8 @@ ms.date: 06/30/2021
 
 # Power BI adoption roadmap: Mentoring and user enablement
 
+[!INCLUDE [powerbi-adoption-roadmap-context](includes/powerbi-adoption-roadmap-context.md)]
+
 A critical objective for adoption efforts is to enable users to accomplish as much as they can within the requisite guardrails established by governance guidelines and policies. For this reason, the act of mentoring users is one of the most important responsibilities of the [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md) (COE), and it has a direct influence on how user adoption occurs. For more information about user adoption, see the [Power BI adoption maturity levels](powerbi-adoption-roadmap-maturity-levels.md#user-adoption-stages) article.
 
 ## Skills mentoring

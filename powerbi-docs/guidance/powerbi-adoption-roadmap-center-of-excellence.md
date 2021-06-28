@@ -12,6 +12,8 @@ ms.date: 06/30/2021
 
 # Power BI adoption roadmap: Center of Excellence
 
+[!INCLUDE [powerbi-adoption-roadmap-context](includes/powerbi-adoption-roadmap-context.md)]
+
 A Power BI Center of Excellence (COE) is an internal team of technical and business experts. The team actively assists others within the organization who are working with data. The COE forms the nucleus of the broader community to advance adoption goals, which align with the data culture vision.
 
 A COE might also be known as _business intelligence (BI) competency center_, _capability center_, or a _center of expertise_. Some organizations use the term _squad_. Many organizations perform the COE responsibilities within their BI team or analytics team.

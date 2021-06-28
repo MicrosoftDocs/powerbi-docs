@@ -12,6 +12,8 @@ ms.date: 06/30/2021
 
 # Power BI adoption roadmap conclusion
 
+[!INCLUDE [powerbi-adoption-roadmap-context](includes/powerbi-adoption-roadmap-context.md)]
+
 This article concludes the series on Power BI adoption. It's hoped that the strategic and tactical considerations and action items will assist you in your Power BI adoption efforts and with creating a productive data culture in your organization.
 
 This series covered the following aspects of adoption:

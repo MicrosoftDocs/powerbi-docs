@@ -12,6 +12,8 @@ ms.date: 06/30/2021
 
 # Power BI adoption roadmap maturity levels
 
+[!INCLUDE [powerbi-adoption-roadmap-context](includes/powerbi-adoption-roadmap-context.md)]
+
 There are three inter-related perspectives to consider when adopting a technology like Power BI.
 
 :::image type="content" source="media/powerbi-adoption-roadmap-maturity-levels/powerbi-adoption-roadmap-adoption-types.png" alt-text="Image shows the three inter-related types of Power B I adoption, which are described in the table below.":::

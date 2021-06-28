@@ -12,6 +12,8 @@ ms.date: 06/30/2021
 
 # Power BI adoption roadmap: System oversight
 
+[!INCLUDE [powerbi-adoption-roadmap-context](includes/powerbi-adoption-roadmap-context.md)]
+
 System oversight—also known as Power BI administration—is the ongoing, day-to-day, administrative activities that:
 
 - Enact governance guidelines and policies to support self-service BI and enterprise BI.

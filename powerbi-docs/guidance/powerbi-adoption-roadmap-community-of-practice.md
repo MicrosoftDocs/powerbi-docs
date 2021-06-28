@@ -12,6 +12,8 @@ ms.date: 06/30/2021
 
 # Power BI adoption roadmap: Community of practice
 
+[!INCLUDE [powerbi-adoption-roadmap-context](includes/powerbi-adoption-roadmap-context.md)]
+
 A _community of practice_ is a group of people with a common interest that interacts with, and helps, each other on a voluntary basis. Using Power BI to produce effective analytics is a common interest that can bring people together across an organization.
 
 The following image provides an overview of an internal community.

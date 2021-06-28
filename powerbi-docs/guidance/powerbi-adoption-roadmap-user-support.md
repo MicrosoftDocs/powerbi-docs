@@ -12,6 +12,8 @@ ms.date: 06/30/2021
 
 # Power BI adoption roadmap: User support
 
+[!INCLUDE [powerbi-adoption-roadmap-context](includes/powerbi-adoption-roadmap-context.md)]
+
 This article addresses user support. It focuses primarily on the resolution of issues.
 
 The first sections of this article focus on user support aspects you have control over internally within your organization. The final topics focus on external resources that are available.

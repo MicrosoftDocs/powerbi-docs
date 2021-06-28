@@ -12,6 +12,8 @@ ms.date: 06/30/2021
 
 # Power BI adoption roadmap: Content ownership and management
 
+[!INCLUDE [powerbi-adoption-roadmap-context](includes/powerbi-adoption-roadmap-context.md)]
+
 There are three primary strategies for how business intelligence (BI) content is owned and managed: business-led self-service BI, managed self-service BI, and enterprise BI. For the purposes of this series of articles, the term _content_ refers to any type of data artifact. It's synonymous with _solution_.
 
 The organization's data culture is the driver for why, how, and by whom each of these three content ownership strategies are implemented.

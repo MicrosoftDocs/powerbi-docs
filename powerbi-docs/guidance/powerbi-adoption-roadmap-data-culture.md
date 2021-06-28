@@ -12,6 +12,8 @@ ms.date: 06/30/2021
 
 # Power BI adoption roadmap: Data culture
 
+[!INCLUDE [powerbi-adoption-roadmap-context](includes/powerbi-adoption-roadmap-context.md)]
+
 Building a data culture is closely related to adopting Power BI, and it's often a key aspect of an organization's digital transformation. The term _data culture_ can be defined in different ways by different organizations. In this series of articles, data culture means a set of behaviors and norms in the organization. It encourages a culture that regularly employs informed data decision-making:
 
 - By more stakeholders throughout more areas of the organization.
