@@ -28,8 +28,8 @@ If you set the `supportsHighlight` property in your `capabilities.json` to `true
 
 In the example, you'll notice:
 
-* **Without** highlight support: Selection is the only value in the `values` array, and the only bar presented in the data view.
-* **With** highlight support:  All values are in the `values` array. The `highlights` array contains a `null` value for non-highlighted elements. All bars appear in the data view with highlighted bar a different color.
+* **Without** highlight support, the selection is the only value in the `values` array, and the only bar presented in the data view.
+* **With** highlight support, all values are in the `values` array. The `highlights` array contains a `null` value for non-highlighted elements. All bars appear in the data view with highlighted bar a different color.
 
 There can also be multiple selections and partial highlights. The highlighted values will be presented in the data view.
 
@@ -281,7 +281,7 @@ In the result, you should have the following view of the visual.
 
 ## Highlight data points with matrix data view mapping
 
-TFor visuals with matrix data view mapping, add  `"supportsHighlight": true` to the `capabilities.json` file. For example:
+For visuals with matrix data view mapping, add  `"supportsHighlight": true` to the `capabilities.json` file. For example:
 
 ```json
 {
@@ -552,7 +552,7 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-The main step of using highlighting is to process an additional array of values.
+The main step of using highlighting is to create an additional array of values.
 
 If you inspect the object of terminal node, you can see that the values array has two properties - value and highlight:
 
@@ -592,7 +592,7 @@ Where `value` represents the value of the node without applying a selection from
 > If the value of `highlight` is less than the value of `value`,
 > It means that `value` was highlighted partially.
 
-Add the code to process the `values` array of node if it is presented:
+Add code to process the `values` array of the node if it's presented:
 
 ```typescript
 public update(options: VisualUpdateOptions) {
