@@ -660,5 +660,4 @@ As the result you'll get the visual with buttons and values `highlighted value/d
 >[Capabilities of the visual](capabilities.md)
 
 >[!div class="nextstepaction"]
->[Add interactivity to visual using selections]
-(selection-api.md)
+>[Add interactivity to visual using selections](selection-api.md)
