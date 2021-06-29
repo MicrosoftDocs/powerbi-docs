@@ -353,3 +353,5 @@
       href: desktop-connector-extensibility.md
     - name: "Trusted third-party connectors"
       href: desktop-trusted-third-party-connectors.md
+    - name: "Manage DirectQuery connections to a published dataset"
+      href: desktop-disable-directquery-connections-to-dataset.md
