@@ -531,4 +531,4 @@ For more information about system oversight and Power BI administration, see the
 - [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
 - [Power BI adoption framework](https://github.com/pbiaf/powerbiadoption)
 
-In the [next article](powerbi-adoption-roadmap-conclusion.md) in the Power BI adoption roadmap series, learn about adoption-related resources that you might find valuable.
+In the [next article](powerbi-adoption-roadmap-conclusion.md) in the Power BI adoption roadmap series, in conclusion, learn about adoption-related resources that you might find valuable.

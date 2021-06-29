@@ -1,6 +1,6 @@
 ---
 title: Power BI adoption roadmap conclusion
-description: A conclusion and additional resources of the Power BI adoption roadmap series of articles.
+description: A conclusion and extra resources of the Power BI adoption roadmap series of articles.
 author: peter-myers
 ms.author: maroche
 ms.reviewer: asaxton
@@ -14,7 +14,7 @@ ms.date: 06/30/2021
 
 [!INCLUDE [powerbi-adoption-roadmap-context](includes/powerbi-adoption-roadmap-context.md)]
 
-This article concludes the series on Power BI adoption. It's hoped that the strategic and tactical considerations and action items presented in this series will assist you in your Power BI adoption efforts and with creating a productive data culture in your organization.
+This article concludes the series on Power BI adoption. It's hoped that the strategic and tactical considerations and action items presented in this series will assist you in your Power BI adoption efforts, and with creating a productive data culture in your organization.
 
 This series covered the following aspects of adoption:
 
@@ -31,7 +31,7 @@ This series covered the following aspects of adoption:
 - [User support](powerbi-adoption-roadmap-user-support.md)
 - [System oversight](powerbi-adoption-roadmap-system-oversight.md)
 
-The remainder of this article includes additional adoption-related resources that you might find valuable.
+The rest of this article includes extra adoption-related resources that you might find valuable.
 
 ## Power BI adoption framework
 
@@ -39,33 +39,33 @@ The [Power BI adoption framework](https://github.com/pbiaf/powerbiadoption) desc
 
 ## Enterprise deployment whitepaper
 
-The [Planning a Power BI enterprise deployment](https://aka.ms/PBIEnterpriseDeploymentWP) whitepaper provides a comprehensive overview for Power BI implementers. Its primary goal is awareness of options, key considerations, decisions, and best practices. Due to the breadth of content, different sections of the whitepaper will appeal to managers, IT professionals, and self-service authors. The whitepaper is usually updated every 12-24 months.
+The [Planning a Power BI enterprise deployment](https://aka.ms/PBIEnterpriseDeploymentWP) whitepaper provides a comprehensive overview for Power BI implementers. Its primary goal is awareness of options, key considerations, decisions, and best practices. Because of the breadth of content, different sections of the whitepaper will appeal to managers, IT professionals, and self-service authors. The whitepaper is updated every 12-24 months.
 
-The whitepaper goes deeper into the _what_ and _how_ of adopting Power BI, with a strong focus on technology. When you've finished reading the series of Power BI adoption articles, the whitepaper will fill you in with additional information to help put your plan into action.
+The whitepaper goes deeper into the _what_ and _how_ of adopting Power BI, with a strong focus on technology. When you've finished reading the series of Power BI adoption articles, the whitepaper will fill you in with extra information to help put your plans into action.
 
 ## Microsoft's BI transformation
 
-Consider reading about [Microsoft's journey and experience with driving a data culture](center-of-excellence-microsoft-business-intelligence-transformation.md). This articles describes the importance of _discipline at the core_ and _flexibility at the edge_. It also shares Microsoft's views and experience about the importance of establishing a COE.
+Consider reading about [Microsoft's journey and experience with driving a data culture](center-of-excellence-microsoft-business-intelligence-transformation.md). This article describes the importance of two terms: _discipline at the core_ and _flexibility at the edge_. It also shares Microsoft's views and experience about the importance of establishing a COE.
 
 ## Power Platform adoption
 
-The Power Platform team has an excellent set of adoption-related content. It has a primary focus on Power Apps, Power Automate, and Power Virtual Agents. Many of these ideas presented in this content can also be applied to Power BI.
+The Power Platform team has an excellent set of adoption-related content. It's primary focus is on Power Apps, Power Automate, and Power Virtual Agents. Many of these ideas presented in this content can be applied to Power BI also.
 
-The [Power CAT Adoption Maturity Model](https://powerapps.microsoft.com/blog/power-cat-adoption-maturity-model-repeatable-patterns-for-successful-power-platform-adoption/), published by the Power CAT team, includes repeatable patterns for successful Power Platform adoption.
+The [Power CAT Adoption Maturity Model](https://powerapps.microsoft.com/blog/power-cat-adoption-maturity-model-repeatable-patterns-for-successful-power-platform-adoption/), published by the Power CAT team, describes repeatable patterns for successful Power Platform adoption.
 
 The [Power Platform Center of Excellence Starter Kit](/power-platform/guidance/coe/starter-kit) is a collection of components and tools to help you develop a strategy for adopting and supporting Microsoft Power Platform.
 
-The [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology) includes a helpful set of documentation and best practices to align business and technical strategies.
+The [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology) includes a helpful set of documentation and best practices to help you align business and technical strategies.
 
-The [Power Platform adoption framework](https://github.com/PowerPlatformAF/PowerPlatformAF/wiki) is community-driven project with excellent resources on adoption of Power Platform services at scale.
+The [Power Platform adoption framework](https://github.com/PowerPlatformAF/PowerPlatformAF/wiki) is a community-driven project with excellent resources on adoption of Power Platform services at scale.
 
 ## Microsoft 365 and Azure adoption
 
 You may also find useful adoption-related guidance published by other Microsoft technology teams.
 
-The [Maturity Model for Microsoft 365](/microsoft-365/community/microsoft365-maturity-model--intro) provides information and resources to use capabilities more fully and efficiently. Microsoft Learn has a series of modules to [use the Microsoft service adoption framework to drive adoption in your enterprise](/learn/paths/m365-service-adoption/).
-
-The [Microsoft Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/) is a collection of documentation, implementation guidance, best practices, and tools to accelerate your cloud adoption journey.
+- The [Maturity Model for Microsoft 365](/microsoft-365/community/microsoft365-maturity-model--intro) provides information and resources to use capabilities more fully and efficiently.
+- Microsoft Learn has a series of modules to [use the Microsoft service adoption framework to drive adoption in your enterprise](/learn/paths/m365-service-adoption/).
+- The [Microsoft Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/) is a collection of documentation, implementation guidance, best practices, and tools to accelerate your cloud adoption journey.
 
 A wide variety of other adoption guides for individual technologies can be found online. A few examples include:
 
@@ -75,11 +75,11 @@ A wide variety of other adoption guides for individual technologies can be found
 
 ## Industry guidance
 
-The [Data Management Maturity (DMM) model](https://cmmiinstitute.com/data-management-maturity) is a paid resource from ISACA. It's a comprehensive framework of data management practices in six key categories. It is designed to helps organizations benchmark their capabilities, identify strengths and gaps, and leverage their data assets to improve business performance.
+The [Data Management Maturity (DMM) model](https://cmmiinstitute.com/data-management-maturity) is a paid resource from ISACA. It's a comprehensive framework of data management practices in six key categories. It's designed to helps organizations benchmark their capabilities, identify strengths and gaps, and leverage their data assets to improve business performance.
 
 The [Data Management Book of Knowledge](https://www.dama.org/cpages/body-of-knowledge) (DMBOK2) is a book available for purchase from DAMA International. It contains a wealth of information about maturing your data management practices.
 
-These resources are not required to take advantage of the guidance provided in this Power BI adoption series. They are reputable resources should you wish you continue your journey.
+These resources aren't required to take advantage of the guidance provided in this Power BI adoption series. They're reputable resources should you wish to continue your journey.
 
 ## Partner community
 
