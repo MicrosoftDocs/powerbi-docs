@@ -39,7 +39,7 @@ You can manage the tooltips in your visual through the `ITooltipService` interfa
     }
 ```
 
-Your visual should listen for mouse events within your visual and call the `show()`, `move()`, and `hide()` delegates, as needed, with the appropriate content populated in the `Tooltip****Options` objects.
+Your visual should listen for mouse events within your visual and call the `show()`, `move()`, and `hide()` delegates, as needed, with the appropriate content populated in the Tooltip `options` objects.
 `TooltipShowOptions` and `TooltipHideOptions` would in turn define what to display and how to behave in these events.
 
 Because calling these methods involves user events such as mouse moves and touch events, it's a good idea to create listeners for these events, which would in turn invoke the `TooltipService` members.
@@ -182,7 +182,7 @@ The final step is to call the `addTooltip` method when the actual data might cha
             (tooltipEvent: TooltipEventArgs<number>) => null);
 ```
 
-## Add report page tooltips
+## Add tooltips support to the report page
 
 To add report page tooltips support (the ability to modify tooltips in the format pane of the report page), add a `tooltips` [object](objects-properties.md) in the *capabilities.json* file.
 
@@ -202,15 +202,15 @@ A sample schema is
 }
 ```
 
-You can define report page tooltips in the **Format** pane.
-
-![Report page tooltip](media/add-tooltips/report-page-tooltips.png)
+You can then define the tooltips from the [**Formatting pane**](../../create-reports/desktop-accessibility-creating-tools.md#formatting-pane) of the report page.
 
 * `supportedTypes`: The tooltip configuration supported by the visual and reflected in the fields well.
    * `default`: Specifies whether the "automatic" tooltips binding via the data field is supported.
    * `canvas`: Specifies whether the report page tooltips are supported.
 
 * `roles`: (Optional) After it's defined, it instructs what data roles are bound to the selected tooltip option in the fields well.
+
+![Report page tooltip](media/add-tooltips/report-page-tooltips.png)
 
 For more information, see [Report page tooltips usage guidelines](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips).
 
