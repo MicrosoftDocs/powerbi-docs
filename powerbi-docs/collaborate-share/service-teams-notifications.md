@@ -64,7 +64,7 @@ You can customize how to receive these notifications through the **Actions and u
 ## Customizing how you receive Power BI notifications
 In Microsoft Teams settings, you can customize how you receive notifications sent by Power BI.
 
-Select **Settings and more ...** icon to the left of your profile picture at the top of the app, then select **Settings > Notifications** and go to the **Power BI* section.
+Select **Settings and more ...** icon to the left of your profile picture at the top of the app, then select **Settings > Notifications** and go to the **Power BI** section.
 
 > [!NOTE]
 > The Power BI section is available after you receive your first notification from Power BI.
