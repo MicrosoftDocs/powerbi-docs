@@ -67,6 +67,8 @@
         href: service-teams-pivot.md
       - name: "Analyze Teams usage in Teams"
         href: service-teams-analytics.md
+      - name: "Get notifications in Teams"
+        href: service-teams-notifications.md
     - name: Publish and share your work
       items: 
       - name: "Share reports and dashboards"
