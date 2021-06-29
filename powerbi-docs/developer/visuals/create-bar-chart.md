@@ -28,9 +28,8 @@ In this tutorial, you learn how to:
 
 >[!NOTE]
 >
->The purpose of this tutorial is to help you understand how a visual is structured and written. For the source code of the simplified bar chart that we create in this tutorial, see [Simple bar code](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/tree/barChartTutorial).
->For the full source code of a bar chart with more features, including [tool-tips](add-tooltips.md) and a [context menu](context-menu.md), see [PowerBI visuals sample bar chart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart)
->We recommend that you clone the above code and use it to follow along in this tutorial. Alternatively, you can create a new visual and replace or edit the code where necessary to create your own bar chart visual from the beginning.
+>The purpose of this tutorial is to help you understand how a visual is structured and written. For the source code of the basic bar chart that we create in this tutorial, see [Simple bar chart](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/tree/barChartTutorial).
+>This tutorial shows you how to create a new bar chart visual from scratch. Alternatively, You can clone the above code and use it to follow along in this tutorial.
 
 ## Set up your environment
 
@@ -296,17 +295,17 @@ This function is called whenever the visual is updated.
 
 Once the data is defined, we can render it. The visual is rendered from the `IVisual` function. The `IVisual` function is described on the [Visual API](visual-api.md) page. It contains a `constructor` class that creates the visual and an `update` class that is called each time the visual reloads.
 
-### Constructor
+### Construct the visual
 
 The [constructor function](visual-api.md#constructor) is called only once-when the visual is called for the first time. It tells the host to create an empty svg chart.
 It creates svg-containers for the bar chart and the X-axis.
 Notice that it uses the d3 library to render the svg.
 
-### Update
+### Update the visual
 
 The [update method](visual-api.md#update) is called every time the size of the visual or one of its values changes.
 
-### Scaling
+#### Scaling
 
 We need to scale the visual so that the current values fit into the defined width and height limits of the visual. This is similar to the [update method in the Circle card tutorial](develop-circle-card.md#set-the-width-and-height).
 
@@ -323,6 +322,66 @@ The `viewModel.datamax` value holds the largest value of all current data points
             .domain(viewModel.dataPoints.map(d => d.category))
             .rangeRound([0, width])
             .padding(0.2);
+```
+
+### Populate Properties pane with enumerateObjectInstances
+
+The final method in the `IVisual` function is [`enumerateObjectInstances`](visual-api.md#enumerateobjectinstances-optional). This method goes through all the *objects* in the *capabilities.json* file (in our case, `enableAxis` and `colorSelector`) and places them inside the [**Format** pane](conditional-format.md). Each object is called with `enumerateObjectInstances`. The object's name is available from `EnumerateVisualObjectInstancesOptions`.
+
+For each object, define the property with its current state.
+
+```typescript
+    /**
+     * Enumerates through the objects defined in the capabilities and adds the properties to the format pane
+     *
+     * @function
+     * @param {EnumerateVisualObjectInstancesOptions} options - Map of defined objects
+     */
+    public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions): VisualObjectInstanceEnumeration {
+        let objectName = options.objectName;
+        let objectEnumeration: VisualObjectInstance[] = [];
+
+        if (!this.barChartSettings ||
+            !this.barChartSettings.enableAxis ||
+            !this.barDataPoints) {
+            return objectEnumeration;
+        }
+
+        switch (objectName) {
+            case 'enableAxis':
+                objectEnumeration.push({
+                    objectName: objectName,
+                    properties: {
+                        show: this.barChartSettings.enableAxis.show,
+                        fill: this.barChartSettings.enableAxis.fill,
+                    },
+                    selector: null
+                });
+                break;
+            case 'colorSelector':
+                for (let barDataPoint of this.barDataPoints) {
+                    objectEnumeration.push({
+                        objectName: objectName,
+                        displayName: barDataPoint.category,
+                        properties: {
+                            fill: {
+                                solid: {
+                                    color: barDataPoint.color
+                                }
+                            }
+                        },
+                        propertyInstanceKind: {
+                            fill: VisualEnumerationInstanceKinds.ConstantOrRule
+                        },
+                        altConstantValueSelector: barDataPoint.selectionId.getSelector(),
+                        selector: dataViewWildcard.createDataViewWildcardSelector(dataViewWildcard.DataViewWildcardMatchingOption.InstancesAndTotals)
+                    });
+                }
+                break;
+        };
+
+        return objectEnumeration;
+    }
 ```
 
 Your final barChart.ts file should look like [this](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts).
@@ -507,37 +566,6 @@ let barChartSettings: BarChartSettings = {
 }
 ```
 
-### Populate Property pane with enumerateObjectInstances
-
-The `enumerateObjectInstances` optional method on `IVisual` enumerates through all objects and places them within the **Property** pane. Each object is called with `enumerateObjectInstances`. The object's name is available on `EnumerateVisualObjectInstancesOptions`.
-
-For each object, define the property with its current state.
-
-```typescript
-/**
- * Enumerates through the objects defined in the capabilities and adds the properties to the format pane
- *
- * @function
- * @param {EnumerateVisualObjectInstancesOptions} options - Map of defined objects
- */
-public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions): VisualObjectInstanceEnumeration {
-    let objectName = options.objectName;
-    let objectEnumeration: VisualObjectInstance[] = [];
-
-    switch(objectName) {
-        case 'enableAxis':
-            objectEnumeration.push({
-                objectName: objectName,
-                properties: {
-                    show: this.barChartSettings.enableAxis.show,
-                },
-                selector: null
-            });
-    };
-
-    return objectEnumeration;
-}
-```
 
 ### Control property update logic
 
@@ -689,6 +717,8 @@ pbiviz package
 
 This command creates a *pbiviz* file in the *dist/* directory of your visual project, and overwrites any previous *pbiviz* file that might exist.
 
+For more detailed instructions on packaging a visual, see the [packaging the visual](custom-visual-develop-tutorial-format-options.md#packaging-the-custom-visual) in theCircle card tutorial.
+
 
 3. Navigate to the project's folder.
 
@@ -700,6 +730,10 @@ This command creates a *pbiviz* file in the *dist/* directory of your visual pro
 
     >[!IMPORTANT]
     >Do not close the PowerShell window until the end of the tutorial. To stop the visual from running, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
+
+>[!NOTE]
+>
+>For the full source code of a bar chart with more features, including [tool-tips](add-tooltips.md) and a [context menu](context-menu.md), see [PowerBI visuals sample bar chart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart)
 
 ## Next steps
 
