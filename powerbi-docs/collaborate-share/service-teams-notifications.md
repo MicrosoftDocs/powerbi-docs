@@ -1,5 +1,5 @@
 ---
-title: Get notifications about important activity from Power BI in Microsoft Teams
+title: Get notifications in Microsoft Teams about activity from Power BI
 description: When important activities happen in Power BI, they're shown in the Microsoft Teams activity feed.
 author: LukaszPawlowski-MS
 ms.author: lukaszp
@@ -12,9 +12,9 @@ LocalizationGroup: Share your work
 ms.date: 06/28/2021
 ---
 
-# Get notifications about important activity from Power BI in Microsoft Teams
+# Get notifications in Microsoft Teams about activity from Power BI
 
-This article describes how you can receive notifications about important activity from Power BI in Microsoft Teams. The **Teams activity feed** collects all these notifications so they're easy to find. By using Power BI notifications in Microsoft Teams, you can collaborate faster because important activity arrives right where you already work.
+This article describes how you can receive notifications about activity from Power BI in Microsoft Teams. The **Teams activity feed** collects all these notifications so they're easy to find. By using Power BI notifications in Microsoft Teams, you can collaborate faster because important activity arrives right where you already work.
 
 :::image type="content" source="media/service-teams-notifications/teams-notifications-share-report.png" alt-text="Get Power BI notifications in Microsoft Teams activity feed.":::
 
@@ -24,7 +24,7 @@ To receive notifications in Teams, you’ll need to install the [Power BI app fo
 
 ## Using Power BI notifications in the Teams activity feed
 
-Here are a few things to know about the **notifications in the Teams activity feed** :
+Here are a few things to know about the **notifications in the Teams activity feed**:
 
 - To receive notifications in Teams, you need to install the [Power BI app for Teams](service-microsoft-teams-app.md).
 - When you open a notification, it opens directly in Microsoft Teams.
