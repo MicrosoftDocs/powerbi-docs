@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/18/2021
+ms.date: 06/29/2021
 ---
 
 # Power BI support options
