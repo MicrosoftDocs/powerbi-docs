@@ -54,11 +54,7 @@ When creating an embed token, different workspaces have different considerations
 
 ## Securing your data
 
-When creating your solution, consider these two approaches for securing your data:
-
-* [Workspace-based isolation](embed-multi-tenancy.md#workspace-isolation)
-
-* [Row-level security-based isolation](embed-multi-tenancy.md#row-level-security-isolation)
+When creating your solution, consider these two approaches for securing your data: *Workspace-based isolation* and *Row-level security-based isolation*. You can find a detailed comparison between them in [Multi-tenancy solutions with Power BI embedded analytics](embed-multi-tenancy.md).
 
 If you're going to use the RLS approach, review the [RLS considerations and limitations](generate-embed-token.md#row-level-security) at the end of this article.
 

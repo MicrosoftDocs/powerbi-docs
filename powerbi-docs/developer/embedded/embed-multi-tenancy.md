@@ -185,7 +185,7 @@ Power BI items include reports, dashboards and datasets.
 
 * The number of classic workspaces that a single user or application can be a member or admin of is 250.
 
-* The number of the [new workspaces](../../collaborate-share/service-new-workspaces#new-and-classic-workspace-differences) that a single user or application can be a member or admin of is 1000.
+* The number of the [new workspaces](../../collaborate-share/service-new-workspaces.md#new-and-classic-workspace-differences) that a single user or application can be a member or admin of is 1000.
 
 * The number of datasets in a single workspace is 1000.
 
