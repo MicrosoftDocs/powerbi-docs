@@ -23,22 +23,22 @@ The related [content ownership and management](powerbi-adoption-roadmap-content-
 
 ## Scope of content delivery
 
-The following image focuses on the number of target users who will consume the content.
+The following diagram focuses on the number of target users who will consume the content.
 
 :::image type="content" source="media/powerbi-adoption-roadmap-content-delivery-scope/powerbi-adoption-roadmap-target-consumers.png" alt-text="Image shows the four scopes of target consumers, which are described next.":::
 
-The four scopes of content delivery shown in the above image include:
+The four scopes of content delivery shown in the above diagram include:
 
 - **Personal BI:** Personal BI solutions are, as the name implies, intended for use by the creator. So, sharing content with others isn't an objective. Therefore, personal BI has the fewest number of target consumers.
 - **Team BI:** Collaborates and shares content with a relatively small number of colleagues who work closely together.
 - **Departmental BI:** Delivers content to a large number of consumers, who can belong to a department or business unit.
 - **Enterprise BI:** Delivers content broadly across organizational boundaries to the largest number of target consumers. Enterprise content is most often managed by a centralized team and is subject to additional governance requirements.
 
-Contrast the above four scopes of content delivery with the following image, which has an inverse relationship with respect to the number of _content creators_.
+Contrast the above four scopes of content delivery with the following diagram, which has an inverse relationship with respect to the number of _content creators_.
 
 :::image type="content" source="media/powerbi-adoption-roadmap-content-delivery-scope/powerbi-adoption-roadmap-content-creators.png" alt-text="Image shows the four scopes of content creators, which are described next.":::
 
-The four scopes of content creators shown in the above image include:
+The four scopes of content creators shown in the above diagram include:
 
 - **Personal BI:** Represents the largest number of creators because any user can work with data using business-led self-service BI methods. Although managed self-service BI methods can be used, it's less common with personal BI.
 - **Team BI:** Colleagues within a team collaborate and share with each other using business-led self-service BI patterns. It has the next largest number of creators in the organization. Managed self-service BI patterns may also begin to emerge as skill levels advance.
@@ -79,7 +79,7 @@ Guidelines for being successful with personal BI:
 
 ## Team BI
 
-Team BI is focused on a team of people who work closely together, and who are tasked with solving closely related problems using the same data. Primary objectives are workspace collaboration and content sharing with each other. To support these objectives, each team members must have either a [Power BI Pro](../admin/service-admin-purchasing-power-bi-pro.md) or [Power BI Premium Per User](../admin/service-premium-per-user-faq.yml) license.
+Team BI is focused on a team of people who work closely together, and who are tasked with solving closely related problems using the same data. Collaborating and sharing content with each other in a workspace is usually the primary objective. Due to this work style, team members will typically each have a [Power BI Pro](../admin/service-admin-purchasing-power-bi-pro.md) or [Power BI Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml) license.
 
 Content is often shared among the team informally than is the case for departmental or enterprise BI. For instance, the workspace is often a suitable place to consume content within a small team. It doesn't require for formality of publishing the workspace to distribute it as an app. Also, there isn't a specific number of users when team-based delivery is considered too informal; each team can find the right number that works for them.
 
@@ -100,7 +100,7 @@ Guidelines for being successful with team BI:
 
 Content is delivered to members of a department or business unit. Content distribution to a larger number of consumers is a priority for departmental BI.
 
-Usually there's a much larger number of consumers who are content viewers (versus a much smaller number of content creators). Therefore, a combination of [Power BI Pro](../admin/service-admin-purchasing-power-bi-pro.md) licenses, [Premium Per User](../admin/service-premium-per-user-faq.yml) licenses, and/or [Power BI Premium](../admin/service-premium-what-is.md#subscriptions-and-licensing) subscriptions may be used.
+Usually there's a much larger number of consumers who are content viewers (versus a much smaller number of content creators). Therefore, a combination of [Power BI Pro](../admin/service-admin-purchasing-power-bi-pro.md) licenses, [Premium Per User](../admin/service-premium-per-user-faq.yml) licenses, and/or [Premium capacity](../admin/service-premium-what-is.md#subscriptions-and-licensing) licenses may be used.
 
 Characteristics of departmental BI delivery:
 
@@ -127,7 +127,7 @@ Guidelines for being successful with departmental BI delivery:
 
 Enterprise BI content is typically managed by a centralized team and is subject to additional governance requirements. Content is delivered broadly across organizational boundaries.
 
-Enterprise BI usually has a significantly larger number of consumers versus content creators. Therefore, a combination of [Power BI Pro](../admin/service-admin-purchasing-power-bi-pro.md) and [Power BI Premium Per User](../admin/service-premium-per-user-faq.yml) licenses, and/or [Power BI Premium](../admin/service-premium-what-is.md#subscriptions-and-licensing) subscriptions may be used.
+Enterprise BI usually has a significantly larger number of consumers versus content creators. Therefore, a combination of [Power BI Pro](../admin/service-admin-purchasing-power-bi-pro.md) licenses, [Premium Per User](../admin/service-premium-per-user-faq.yml) licenses, and/or [Premium capacity](../admin/service-premium-what-is.md#subscriptions-and-licensing) licenses may be used.
 
 Characteristics of enterprise BI delivery:
 
@@ -135,13 +135,13 @@ Characteristics of enterprise BI delivery:
 - Formal delivery of reports and apps is a high priority to ensure consumers have the best experience.
 - The content is highly sensitive, subject to regulatory requirements, or is considered extremely critical.
 - Published enterprise-level datasets and dataflows may be used as a source for self-service creators, thus creating a chain of dependencies to the source data.
-- Stability and a consistent experience for consumers are highly important. Application lifecycle management, such as [deployment pipelines](../create-reports/deployment-pipelines-overview.md) and [DevOps techniques](https://powerbi.microsoft.com/blog/automate-deployments-with-deployment-pipelines-api-preview/)), is commonly used. Change management processes to review and approve changes before they're deployed are commonly used for enterprise BI content, possibly by a change review board or similar group.
+- Stability and a consistent experience for consumers are highly important. Application lifecycle management, such as [deployment pipelines](../create-reports/deployment-pipelines-overview.md) and [DevOps techniques](https://powerbi.microsoft.com/blog/automate-deployments-with-deployment-pipelines-api-preview/)), is commonly used. Change management processes to review and approve changes before they're deployed are commonly used for enterprise BI content, for example, by a change review board or similar group.
 - Processes exist to gather requirements, prioritize efforts, and plan for new projects or enhancements to existing content.
 - Integration with other enterprise-level data architecture and management services may exist, possibly with other Azure services and Power Platform products.
 
 Guidelines for being successful with enterprise BI delivery:
 
-- Governance and oversight techniques described in the [governance](powerbi-adoption-roadmap-governance.md) article are relevant for managing an enterprise BI solution. In particular, it encompasses change management and application lifecycle management. Plan for how to effectively use [Power BI Premium Per User](../admin/service-premium-per-user-faq.yml) licenses or [Power BI Premium](../admin/service-premium-what-is.md#subscriptions-and-licensing) subscriptions per workspace. Align your workspace management strategy, like how [workspaces](../collaborate-share/service-create-the-new-workspaces.md) will be organized and secured, to the planned [licensing](../admin/service-admin-licensing-organization.md) strategy.
+- Governance and oversight techniques described in the [governance](powerbi-adoption-roadmap-governance.md) article are relevant for managing an enterprise BI solution. In particular, it encompasses change management and application lifecycle management. Plan for how to effectively use [Premium Per User](../admin/service-premium-per-user-faq.yml) or [Premium capacity](../admin/service-premium-what-is.md#subscriptions-and-licensing) licensing per workspace. Align your workspace management strategy, like how [workspaces](../collaborate-share/service-create-the-new-workspaces.md) will be organized and secured, to the planned [licensing](../admin/service-admin-licensing-organization.md) strategy.
 - Plan how Power BI apps will distribute enterprise BI content. An app can provide a significantly better experience for delivering content. Align the app distribution strategy with your workspace management strategy.
 - Consider enforcing the use of [sensitivity labels](../admin/service-security-data-protection-overview.md) to implement information protection on all content.
 - Implement a rigorous process for use of the [certified endorsement](../collaborate-share/service-endorse-content.md#certify-content) for enterprise BI reports and apps. Datasets and dataflows can be certified, too, when there's the expectation that self-service creators will build solutions based on them. Not all enterprise BI content needs to be certified, but much of it probably will be.
@@ -161,7 +161,7 @@ Considerations and key actions you can take to strengthen your approach to conte
   - Will it require the content be owned and managed by a centralized team? For more information, see the [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) article, which describes an inter-related concept with content delivery scope.
   - Will there be an approval process? Governance can become more complicated when the content delivery scope is broader than the owner of the content. For example, an app owned by a divisional sales team is distributed to the entire organization.
 - Create helpful documentation for your community so content creators understand when it's appropriate to use [workspaces](../collaborate-share/service-create-the-new-workspaces.md), [apps](../collaborate-share/service-create-distribute-apps.md), or [sharing (direct access or link sharing)](https://powerbi.microsoft.com/blog/announcing-the-new-sharing-experience/).
-- Ensure you have a specific strategy in place to handle user licensing and subscription considerations for [Power BI Pro](../admin/service-admin-purchasing-power-bi-pro.md), [Power BI Premium Per User](../admin/service-premium-per-user-faq.yml), and [Power BI Premium](../admin/service-premium-what-is.md#subscriptions-and-licensing). Create a process to describe how workspaces can be setup to meet [licensing requirements](../collaborate-share/service-new-workspaces.md#licensing-and-administering).
+- Ensure you have a specific strategy in place to handle user licensing considerations for [Power BI Pro](../admin/service-admin-purchasing-power-bi-pro.md), [Premium Per User](../admin/service-premium-per-user-faq.yml), and [Premium capacity](../admin/service-premium-what-is.md#subscriptions-and-licensing). Create a process for how workspaces may be assigned each license type, and the prerequisites required for the type of content that may be assigned to Premium.
 
 ## Maturity levels
 
@@ -177,4 +177,4 @@ The following maturity levels will help you assess the current state of your con
 
 ## Next steps
 
-In the [next article in this series](powerbi-adoption-roadmap-center-of-excellence.md), learn more about the Center of Excellence.
+In the [next article](powerbi-adoption-roadmap-center-of-excellence.md) in the Power BI adoption roadmap series, learn more about the Center of Excellence.

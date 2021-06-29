@@ -14,7 +14,7 @@ ms.date: 06/30/2021
 
 [!INCLUDE [powerbi-adoption-roadmap-context](includes/powerbi-adoption-roadmap-context.md)]
 
-This article concludes the series on Power BI adoption. It's hoped that the strategic and tactical considerations and action items will assist you in your Power BI adoption efforts and with creating a productive data culture in your organization.
+This article concludes the series on Power BI adoption. It's hoped that the strategic and tactical considerations and action items presented in this series will assist you in your Power BI adoption efforts and with creating a productive data culture in your organization.
 
 This series covered the following aspects of adoption:
 
@@ -41,7 +41,7 @@ The [Power BI adoption framework](https://github.com/pbiaf/powerbiadoption) desc
 
 The [Planning a Power BI enterprise deployment](https://aka.ms/PBIEnterpriseDeploymentWP) whitepaper provides a comprehensive overview for Power BI implementers. Its primary goal is awareness of options, key considerations, decisions, and best practices. Due to the breadth of content, different sections of the whitepaper will appeal to managers, IT professionals, and self-service authors. The whitepaper is usually updated every 12-24 months.
 
-The whitepaper goes deeper into the _what_ and _how_ of adopting Power BI, with a strong focus on technology. When you've finished reading the series of Power BI adoption articles, the whitepaper will fill you inw tih additional information to help put your plan into action.
+The whitepaper goes deeper into the _what_ and _how_ of adopting Power BI, with a strong focus on technology. When you've finished reading the series of Power BI adoption articles, the whitepaper will fill you in with additional information to help put your plan into action.
 
 ## Microsoft's BI transformation
 

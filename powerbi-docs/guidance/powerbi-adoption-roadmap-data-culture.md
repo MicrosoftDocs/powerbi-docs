@@ -44,7 +44,7 @@ All items in the above diagram are discussed throughout the remainder of this se
 
 ## Data culture vision
 
-The concept of data culture is imprecise, so it can make it difficult to define and measure. Even though it's challenging to articulate in a way that is meaningful, actionable, and measurable, it's important that you have a well understood definition of what a healthy data culture means to your organization. This vision of a healthy data culture should:
+The concept of data culture is imprecise, so it can make it difficult to define and measure. Even though it's challenging to articulate in a way that is meaningful, actionable, and measurable, it's important that you have a well-understood definition of what a healthy data culture means to your organization. This vision of a healthy data culture should:
 
 - Originate from the executive level.
 - Align with organizational objectives.
@@ -95,7 +95,7 @@ Data democratization refers to putting data into the hands of more users who are
 Your organization's position on data democratization will have a wide-reaching impact on adoption and governance-related efforts. Here are some examples of Power BI governance decisions that can impact on data democratization:
 
 - Who is permitted to have Power BI Desktop installed?
-- Who is permitted to have Power BI Pro or Power BI Premium Per User licenses?
+- Who is permitted to have Power BI Pro or Power BI Premium Per User (PPU) licenses?
 - What is the desired level of self-service BI user enablement? How does this vary based on business unit or job role?
 - What is the desired balance between enterprise BI and self-service BI?
 - Are there data sources that are strongly preferred? What is the allowed use of unsanctioned data sources?
@@ -148,4 +148,4 @@ The following maturity levels will help you assess the current state of your dat
 
 ## Next steps
 
-In the [next article in this series](powerbi-adoption-roadmap-executive-sponsorship.md), learn more about the importance of an executive sponsor.
+In the [next article](powerbi-adoption-roadmap-executive-sponsorship.md) in the Power BI adoption roadmap series, learn more about the importance of an executive sponsor.

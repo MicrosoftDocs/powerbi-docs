@@ -16,11 +16,11 @@ ms.date: 06/30/2021
 
 A _community of practice_ is a group of people with a common interest that interacts with, and helps, each other on a voluntary basis. Using Power BI to produce effective analytics is a common interest that can bring people together across an organization.
 
-The following image provides an overview of an internal community.
+The following diagram provides an overview of an internal community.
 
 :::image type="content" source="media/powerbi-adoption-roadmap-community-of-practice/powerbi-adoption-roadmap-community-of-practice.png" alt-text="Image shows the community relationships between the C O E, creators, champions, and consumers, which are described next.":::
 
-The above image shows the following:
+The above diagram shows the following:
 
 - The **community of practice** includes everyone with an interest in Power BI.
 - The **Center of Excellence (COE)** forms the nucleus of the community. It oversees the entire community and interacts most closely with its champions.
@@ -87,13 +87,13 @@ Incentives that the entire community (including champions) find particularly rew
 - **Leadership communication:** Reach out to a manager when someone goes above and beyond so that their leader, who may not be active in the Power BI community, sees the value that their staff member provides.
 
 > [!TIP]
-> Different types of incentives will appeal to different types of people. Some community members will be highly motivated by praise and feedback. Others will be inspired by gamification and a bit of fun. Whereas others will highly value the opportunity to improve their level of knowledge.
+> Different types of incentives will appeal to different types of people. Some community members will be highly motivated by praise and feedback. Some will be inspired by gamification and a bit of fun. Others will highly value the opportunity to improve their level of knowledge.
 
 ### Rewarding champions
 
 Incentives that champions find particularly rewarding can include:
 
-- **More direct access to the COE:** The ability to have _connections_ in the COE is valuable. It's depicted in the image shown earlier in this article.
+- **More direct access to the COE:** The ability to have _connections_ in the COE is valuable. It's depicted in the diagram shown earlier in this article.
 - **Champion of the month:** Publicly thank one of your champions for something outstanding they did during the previous month. It could be a fun tradition at the beginning of a monthly lunch and learn.
 - **A private experts discussion area:** A private area for the champions to share ideas and learn from each other is usually highly valued.
 - **Specialized or deep dive information and training:** Access to additional information to help champions grow their skillsets (as well as help their colleagues) will be appreciated. It could include attending advanced training classes or conferences.
@@ -184,4 +184,4 @@ The following maturity levels will help you assess the current state of your com
 
 ## Next steps
 
-In the [next article in this series](powerbi-adoption-roadmap-user-support.md), learn about user support.
+In the [next article](powerbi-adoption-roadmap-user-support.md) in the Power BI adoption roadmap series, learn about user support.

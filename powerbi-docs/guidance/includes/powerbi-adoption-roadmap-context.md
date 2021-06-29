@@ -1,2 +1,2 @@
 > [!NOTE]
-> This article forms part a series of Power BI adoption roadmap articles. For an overview of the series of articles, see [Power BI adoption roadmap](../powerbi-adoption-roadmap-overview.md).
+> This article forms part of the Power BI adoption roadmap series of articles. For an overview of the series, see [Power BI adoption roadmap](../powerbi-adoption-roadmap-overview.md).

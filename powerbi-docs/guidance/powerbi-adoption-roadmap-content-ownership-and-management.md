@@ -22,11 +22,11 @@ The organization's data culture is the driver for why, how, and by whom each of 
 
 The areas in the above diagram include:
 
-| **Item** | **Description** |
+| **Area** | **Description** |
 | --- | --- |
-| ![Item 1.](media/common/icon-01-red-30x30.png) | **Business-led self-service BI:** All content is owned and managed by the creators and subject matter experts within a business unit. This ownership strategy is also known as a _decentralized_ or _bottom-up BI_. |
-| ![Item 2.](media/common/icon-02-red-30x30.png) | **Managed self-service BI:** The data is owned and managed by a centralized team, whereas business users take responsibility for reports and dashboards. This ownership strategy is also known as _discipline at the core and flexibility at the edge_. |
-| ![Item 3.](media/common/icon-03-red-30x30.png) | **Enterprise BI:** All content is owned and managed by a centralized team such as IT, enterprise BI, or the Center of Excellence (COE). |
+| ![Area 1.](media/common/icon-01-red-30x30.png) | **Business-led self-service BI:** All content is owned and managed by the creators and subject matter experts within a business unit. This ownership strategy is also known as a _decentralized_ or _bottom-up BI_. |
+| ![Area 2.](media/common/icon-02-red-30x30.png) | **Managed self-service BI:** The data is owned and managed by a centralized team, whereas business users take responsibility for reports and dashboards. This ownership strategy is also known as _discipline at the core and flexibility at the edge_. |
+| ![Area 3.](media/common/icon-03-red-30x30.png) | **Enterprise BI:** All content is owned and managed by a centralized team such as IT, enterprise BI, or the Center of Excellence (COE). |
 
 It's unlikely that an organization operates exclusively with one content ownership and management strategy. Depending on the data culture, one strategy might be far more dominant than the others. The choice of strategy could differ from solution to solution, or from team to team. In fact, a single team can operate multiple strategies if it's both a consumer of enterprise BI content and a producer of its own self-service content. The strategy to pursue depends on factors such as:
 
@@ -58,7 +58,7 @@ As stated in the [adoption maturity levels](powerbi-adoption-roadmap-maturity-le
 
 ## Ownership and stewardship
 
-There are many roles related to data and data artifacts. Definitions can differ, This series of articles uses the following roles and definitions:
+There are many roles related to data and data artifacts. Role definitions can differ, so this series of articles uses the following roles and definitions:
 
 | **Role** | **Description** |
 | --- | --- |
@@ -83,7 +83,7 @@ Guidelines for being successful with ownership:
 
 - Define how ownership and stewardship terminology is used in your organization, including expectations for these roles.
 - Set [contacts for each workspace](../collaborate-share/service-create-the-new-workspaces.md#create-a-contact-list) and for individual artifacts to communicate ownership and/or support responsibilities.
-- Specify 2-4 [workspace administrators](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) and conduct an [audit](/rest/api/power-bi/admin/groups_getgroupusersasadmin) of workspace admins on a regular basis (at least twice a year). Workspace admins might be directly responsible for managing workspace content, or may be those tasks are assigned to colleagues who do the hands-on work. In all cases, workspace admins should be able to easilycontact owners of specific content.
+- Specify 2-4 [workspace administrators](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) and conduct an [audit](/rest/api/power-bi/admin/groups_getgroupusersasadmin) of workspace admins on a regular basis (perhaps twice a year). Workspace admins might be directly responsible for managing workspace content, or it may be that those tasks are assigned to colleagues who do the hands-on work. In all cases, workspace admins should be able to easily contact owners of specific content.
 - Include consistent branding on reports to indicate who produced the content and who to contact for help. A small image or text label located in the report footer is valuable, especially when the report is exported from the Power BI service. A standard template, as described in the [mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article, can encourage and simplify the consistent use of branding.
 - Make use of best practices reviews with the COE, which are discussed in the [COE](powerbi-adoption-roadmap-center-of-excellence.md) article.
 
@@ -151,7 +151,7 @@ Guidelines for being successful with enterprise BI:
 
 - Implement a rigorous process for use of the [certified endorsement](../collaborate-share/service-endorse-content.md#certify-content) for datasets, reports, and apps. Not all enterprise BI content needs to be certified, but much of it probably should be. Certified content should indicate that data quality has been validated. Certified content should also follow change management rules, have formal support, and be fully documented. Because certified content has passed rigorous standards, the expectations for trustworthiness are higher.
 - Include consistent branding on enterprise BI reports to indicate who produced the content, and who to contact for help. A small image or text label in the report footer is valuable when the report is exported from the Power BI service.
-- If you use specific report branding to indicate enterprise BI content, be careful with the _save a copy_ functionality that would allow a user to download a copy of a report and personalize it. Although this functionality is an excellent way to bridge enterprise BI with managed self-service BI, it dilutes the value of the branding. Consider a more seamless solution that provides a separate [Power BI Desktop template file](../create-reports/desktop-templates.md#using-report-templates) for self-service authors. The template defines a starting point for report creation live connection to an existing dataset, and it doesn't include branding. The template file can be shared as a link within a Power BI app, or from the community site.
+- If you use specific report branding to indicate enterprise BI content, be careful with the _save a copy_ functionality that would allow a user to download a copy of a report and personalize it. Although this functionality is an excellent way to bridge enterprise BI with managed self-service BI, it dilutes the value of the branding. Consider a more seamless solution that provides a separate [Power BI Desktop template file](../create-reports/desktop-templates.md#using-report-templates) for self-service authors. The template defines a starting point for report creation with a live connection to an existing dataset, and it doesn't include branding. The template file can be shared as a link within a Power BI app, or from the community site.
 
 ## Ownership transfers
 
@@ -163,10 +163,10 @@ Occasionally, the ownership of a particular solution may need to be transferred 
 - The size or complexity of a solution has grown to a point where a different data architecture redesign is required.
 - A proof of concept was created which is now ready to operationalize.
 
-The [COE](powerbi-adoption-roadmap-center-of-excellence.md) should have well documented procedures for identifying when a solution is a candidate for ownership transfer. It's very helpful if help desk personnel know what to look for as well. Having a customary pattern for self-service creators to build and grow a solution, and hand it off in certain circumstances, is an indicator of a productive and healthy data culture. A simple ownership transfer may be addressed during COE office hours; a more complex transfer may warrant a small project managed by the COE.
+The [COE](powerbi-adoption-roadmap-center-of-excellence.md) should have well-documented procedures for identifying when a solution is a candidate for ownership transfer. It's very helpful if help desk personnel know what to look for as well. Having a customary pattern for self-service creators to build and grow a solution, and hand it off in certain circumstances, is an indicator of a productive and healthy data culture. A simple ownership transfer may be addressed during COE office hours; a more complex transfer may warrant a small project managed by the COE.
 
 > [!NOTE]
-> There's potential that the new owner will need to do some refactoring before they're willing to take full ownership. Refactoring is most likely to occur with the less visible aspects of data preparation, data modeling, and calculations. If there are any manual steps or flat file sources, it's an ideal time to apply those enhancements. The branding of reports and dashboards may also need to change. For example, if there's a footer indicating report contact or a text label indicating that the content is certified.
+> There's potential that the new owner will need to do some refactoring before they're willing to take full ownership. Refactoring is most likely to occur with the less visible aspects of data preparation, data modeling, and calculations. If there are any manual steps or flat file sources, it's an ideal time to apply those enhancements. The branding of reports and dashboards may also need to change, for example, if there's a footer indicating report contact or a text label indicating that the content is certified.
 
 It's also possible for a centralized team to transfer ownership to a business unit. It could happen when:
 
@@ -197,10 +197,10 @@ The following maturity levels will help you assess the current state of your con
 | --- | --- |
 | 100: Initial | Content is owned and managed by self-service creators throughout the organization in an uncontrolled way, without a specific strategy.</br></br>A high ratio of datasets to reports exists, indicating an opportunity to improve data reusability and reduce the number of duplicate datasets.</br></br>Discrepancies between different reports is common, causing distrust of content produced by others. |
 | 200: Repeatable | A plan is in place for which content ownership and management strategy to use and in which circumstances.</br></br>Initial steps are taken to improve the consistency and trustworthiness levels for self-service BI efforts.</br></br>Guidance for the user community is available that includes expectations for self-service versus enterprise content. |
-| 300: Defined | Managed self-service BI is a priority and an area of investment to further advance the data culture. The priority is to allow report creators the flexibility they need while using well managed, secure, and trustworthy data sources.</br></br>Report branding is consistently used to indicate who produced the content.</br></br>A [mentoring program](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) exists to educate self-service content creators on how to apply best practices and make good decisions. |
-| 400: Capable | Criteria is defined to align governance requirements for self-service versus enterprise content.</br></br>There is a plan in place for how to request and handle ownership transfers.</br></br>Managed self-service BI—and techniques for the reuse of data—are commonly used and well understood. |
-| 500: Efficient | Proactive measures are in place to communicate with a user when any concering user activities are detected in the activity log.</br></br>External tools are used by highly proficient content creators to improve productivity and efficiency. |
+| 300: Defined | Managed self-service BI is a priority and an area of investment to further advance the data culture. The priority is to allow report creators the flexibility they need while using well-managed, secure, and trustworthy data sources.</br></br>Report branding is consistently used to indicate who produced the content.</br></br>A [mentoring program](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) exists to educate self-service content creators on how to apply best practices and make good decisions. |
+| 400: Capable | Criteria is defined to align governance requirements for self-service versus enterprise content.</br></br>There is a plan in place for how to request and handle ownership transfers.</br></br>Managed self-service BI—and techniques for the reuse of data—are commonly used and well-understood. |
+| 500: Efficient | Proactive measures are in place to communicate with a user when any concerning user activities are detected in the activity log.</br></br>External tools are used by highly proficient content creators to improve productivity and efficiency. |
 
 ## Next steps
 
-In the [next article in this series](powerbi-adoption-roadmap-content-delivery-scope.md), learn more about the scope of content delivery.
+In the [next article](powerbi-adoption-roadmap-content-delivery-scope.md) in the Power BI adoption roadmap series, learn more about the scope of content delivery.

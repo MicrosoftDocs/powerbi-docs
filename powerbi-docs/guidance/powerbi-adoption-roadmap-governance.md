@@ -18,7 +18,7 @@ Data governance is a broad and complex topic. This article introduces key concep
 
 As defined by the [Data Governance Institute](https://datagovernance.com/the-data-governance-basics/definitions-of-data-governance/), data governance is "a system of decision rights and accountabilities for information-related processes, executed according to agreed-upon models which describe who can take what actions, with what information, and when, under what circumstances, using what methods."
 
-Although it is called _data governance_ it's really a misnomer. The primary focus for governance isn't on the data itself, but on governing _what people do with the data_. Put another way: the true focus is on governing people's behavior to ensure organizational data is well managed.
+Although it is called _data governance_ it's really a misnomer. The primary focus for governance isn't on the data itself, but on governing _what people do with the data_. Put another way: the true focus is on governing people's behavior to ensure organizational data is well-managed.
 
 When focused on self-service business intelligence, the goal of governance is to empower the internal user community to the extent possible. Further, it should be done while adhering to the organization's industry, governmental, and contractual regulations, and internal requirements. The optimal balance between control and empowerment will differ between organizations. It's also likely to differ among different business units within an organization. With a platform like Power BI, you'll be most successful when you put as much emphasis on user empowerment as on clarifying its practical usage within established guardrails.
 
@@ -44,7 +44,7 @@ Governance decisions are implemented with documented guidance, policies, and pro
 
 ## Governance success factors
 
-Governance is not well received when it's enacted with top-down mandates that are focused more on control than empowerment. Governing Power BI is most successful when:
+Governance is not well-received when it's enacted with top-down mandates that are focused more on control than empowerment. Governing Power BI is most successful when:
 
 - The most lightweight governance model that accomplishes required objectives is used.
 - Governance is approached on an iterative basis and doesn't significantly impede productivity.
@@ -61,7 +61,7 @@ Governance is not well received when it's enacted with top-down mandates that ar
 
 There are three primary timing methods organizations take when introducing Power BI governance to an organization.
 
-:::image type="content" source="media/powerbi-adoption-roadmap-governance/powerbi-adoption-roadmap-governance-accountability.png" alt-text="Image shows the three main ways governance is introduced, which are described in the table below.":::
+:::image type="content" source="media/powerbi-adoption-roadmap-governance/powerbi-adoption-roadmap-governance-timing.png" alt-text="Image shows the three main ways governance is introduced, which are described in the table below.":::
 
 The methods in the above diagram include:
 
@@ -124,7 +124,7 @@ Method 3 seeks a balance between agility and governance. It's an ideal scenario 
 
 - Requires a high level of communication to be successful with agile governance practices.
 - This level of agility requires additional discipline to keep documentation and training current.
-- Introducing new governance guidelines and policies can too often cause a certain level of user disruption.
+- Introducing new governance guidelines and policies too often causes a certain level of user disruption.
 
 For more information about up-front planning, see the [Preparing to migrate to Power BI](powerbi-migration-pre-migration-steps.md) article.
 
@@ -385,19 +385,19 @@ The organizational structure for data governance varies significantly between or
 
 Governance accountability is about checks and balances.
 
-:::image type="content" source="media/powerbi-adoption-roadmap-governance/powerbi-adoption-roadmap-governance-timing.png" alt-text="Image shows the four types of operational, tactical, and strategic involvement, which are described in the table below.":::
+:::image type="content" source="media/powerbi-adoption-roadmap-governance/powerbi-adoption-roadmap-governance-accountability.png" alt-text="Image shows the four types of operational, tactical, and strategic involvement, which are described in the table below.":::
 
 The levels in the above diagram include:
 
 | **Level** | **Description** |
 | --- | --- |
-| ![Level 1.](media/common/icon-01-red-30x30.png) | **Operational - Business units:** Level 1 is the foundation of a well governed system, which includes people within the business units performing their work. Self-service BI creators have a lot of responsibility related to authoring, publishing, sharing, security, and data quality. Self-service BI consumers also have responsibilities for the proper use of data. |
+| ![Level 1.](media/common/icon-01-red-30x30.png) | **Operational - Business units:** Level 1 is the foundation of a well-governed system, which includes people within the business units performing their work. Self-service BI creators have a lot of responsibility related to authoring, publishing, sharing, security, and data quality. Self-service BI consumers also have responsibilities for the proper use of data. |
 | ![Level 2.](media/common/icon-02-red-30x30.png) | **Tactical - Supporting teams:** Level 2 includes several groups that support the efforts of the users in the business units. Supporting teams include the COE, enterprise BI, the data governance office, as well as other ancillary teams. Ancillary teams can include IT, security, HR, and legal. Groups, like a change control board, are included here as well. |
 | ![Level 3.](media/common/icon-03-red-30x30.png) | **Tactical - Audit and compliance:** Level 3 includes internal audit, risk management, and compliance teams, which provide guidance to levels 1 and 2. They also provide enforcement when necessary. |
 | ![Level 4.](media/common/icon-04-red-30x30.png) | **Strategic -Executive sponsor and steering committee:** The top level includes the executive-level oversight of strategy and priorities. This level handles any escalated issues that couldn't be solved at lower levels. So, it's important to have people with sufficient authority to be able to make decisions when necessary. |
 
 > [!IMPORTANT]
-> Everyone has a responsibility to adhere to policies for ensuring that organizational data is secure, protected, and well managed as an organizational asset. Sometimes this is cited as _everyone is a data steward_. To make this a reality, start with the people in the business units (level 1 described above) as the foundation.
+> Everyone has a responsibility to adhere to policies for ensuring that organizational data is secure, protected, and well-managed as an organizational asset. Sometimes this is cited as _everyone is a data steward_. To make this a reality, start with the people in the business units (level 1 described above) as the foundation.
 
 ## Roles and responsibilities
 
@@ -421,10 +421,10 @@ Governance team structure, roles (including terminology), and responsibilities v
 | Risk management | Reviews and assesses data sharing and security risks. Defines ethical data policies and standards. Communicates regulatory and legal requirements. |
 | Internal audit | Auditing of compliance with regulatory and internal requirements. |
 | Data steward | Collaborates with governance committee and/or COE to ensure that organizational data has acceptable data quality levels. |
-| All BI creators and consumers | Adhere to policies for ensuring that data is secure, protected, and well managed as an organizational asset. |
+| All BI creators and consumers | Adhere to policies for ensuring that data is secure, protected, and well-managed as an organizational asset. |
 
 > [!TIP]
-> Name a backup for each person in key roles (excluding members of the data governance board). In their absence, the backup person can attend meetings and make time-sensitive decisions when necessary.
+> Name a backup for each person in key roles, for example, members of the data governance board. In their absence, the backup person can attend meetings and make time-sensitive decisions when necessary.
 
 ## Considerations and key actions
 
@@ -432,7 +432,7 @@ Considerations and key actions you can take to establish or strengthen your gove
 
 - Confirm that the high-level goals and guiding principles of the data culture goals are clearly documented and communicated, to ensure that alignment exists for any new governance guidelines or policies.
 - Ensure that you have a deep understanding of how Power BI is currently used for self-service BI and enterprise BI. Document opportunities for improvement. Also, document strengths and good practices that would be helpful to formalize.
-- For prioritizing which new guidelines or policies to create, select an important pain point, high priority need, or known risk for a data domain. It shouldhave significant benefit and can be achieved with a feasible level of effort. When implementing the first governance guidelines, choose something users are likely to support because the change is low impact, or because they are sufficiently motivated to make a change.
+- For prioritizing which new guidelines or policies to create, select an important pain point, high priority need, or known risk for a data domain. It should have significant benefit and can be achieved with a feasible level of effort. When implementing the first governance guidelines, choose something users are likely to support because the change is low impact, or because they are sufficiently motivated to make a change.
 - Determine if there is an inventory of all critical data assets, or create one if necessary. You cannot govern what you don't know about.
 - Confirm that you have support and sufficient attention from your [executive sponsor](powerbi-adoption-roadmap-executive-sponsorship.md), as well as from business unit leaders.
 - Evaluate the existing processes and policies you can immediately adopt for Power BI for consistency. They could include guidance from an existing data governance board or an existing change management board.
@@ -450,7 +450,7 @@ The following maturity levels will help you assess the current state of your gov
 
 | **Level** | **State of Power BI governance** |
 | --- | --- |
-| 100: Initial | The good data management and informal governance practices that are occurring are overly reliant on judgment and the experience level of individuals. It's because no governance plan is in place.</br></br>There is a significant reliance on undocumented tribal knowledge. |
+| 100: Initial | The good data management and informal governance practices that are occurring are overly reliant on judgment and experience level of individuals. It occurs because no governance plan is in place.</br></br>There's a significant reliance on undocumented tribal knowledge. |
 | 200: Repeatable | Certain areas of the organization have made a purposeful effort to standardize, improve, and document their data management and governance practices. |
 | 300: Defined | An approved plan with governance focus, objectives, and priorities is in place and broadly communicated.</br></br>Roles and responsibilities are documented and understood.</br></br>Governance guidelines and policies are implemented for the top few priorities (pain points or opportunities) and are actively followed by the COE and the community of users. |
 | 400: Capable | Learnings from existing practices are in place organizationally.</br></br>It's clear where Power BI fits in to the overall BI strategy for the organization. |
@@ -458,4 +458,4 @@ The following maturity levels will help you assess the current state of your gov
 
 ## Next steps
 
-In the [next article in this series](powerbi-adoption-roadmap-mentoring-and-user-enablement.md), learn more about mentoring and user enablement.
+In the [next article](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) in the Power BI adoption roadmap series, learn more about mentoring and user enablement.

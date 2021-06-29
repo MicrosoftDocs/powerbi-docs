@@ -54,7 +54,7 @@ There are several [types of Power BI administrators](../admin/service-admin-admi
 | **Role** | **Scope** | **Description** |
 | --- | --- | --- |
 | Power BI administrator | Power BI tenant | Manages tenant settings and other aspects of the Power BI service. All general references to _administrator_ in this article refer to this type of administrator. |
-| Power BI Premium capacity administrator | One capacity | Manages workspaces, workloads, and monitors the health of Premium capacity. |
+| Power BI Premium capacity administrator | One capacity | Manages workspaces, workloads, and monitors the health of a Premium capacity. |
 | Power BI gateway administrator | One gateway | Manages gateway data source configuration, credentials, and users assignments. May also handle gateway software updates (or collaborate with infrastructure team on updates). |
 | Power BI workspace administrator | One workspace | Manages workspace settings and access. |
 
@@ -142,7 +142,7 @@ The following [software installations](https://powerbi.microsoft.com/downloads/)
 | On-Premises Data Gateway (Personal Mode) | Content creators who publish datasets to the Power BI service and manage scheduled data refresh (see additional description in the [Gateway architecture and management](#gateway-architecture-and-management) section of this article). |
 
 > [!IMPORTANT]
-> Not all the list software will be necessary for all content creators. Power BI Desktop, however, is the most common requirement and so it starting point when in doubt.
+> Not all the listed software will be necessary for all content creators. Power BI Desktop, however, is the most common requirement and so is the starting point when in doubt.
 
 It's very important that all content creators who collaborate with others use the same version of the software—especially Power BI Desktop, which is updated monthly. Ideally, software updates are available from the Microsoft Store or installed by an automated IT process. This way, users don't have to take any specific action to obtain updates.
 
@@ -150,9 +150,9 @@ Because new capabilities are continually released, software updates should be re
 
 Other common items that may need to be installed on user machines include:
 
-- Drivers to support data connectivity, such as Oracle, HANA, or the Microsoft Access Database Engine.
+- Drivers to support data connectivity, for example, Oracle, HANA, or the Microsoft Access Database Engine.
 - The [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) provider.
-- [External tools](../transform-model/desktop-external-tools.md), like Tabular Editor, DAX Studio, or ALM Toolkit.
+- [External tools](../transform-model/desktop-external-tools.md), for example, Tabular Editor, DAX Studio, or ALM Toolkit.
 - [Custom data source connectors](../connect-data/desktop-connector-extensibility.md).
 
 In addition to software installations, user machines may be managed for:
@@ -192,11 +192,11 @@ When becoming acquainted with Power BI, many system administrators assume it's a
 
 ### Premium capacity management
 
-The [Power BI Premium](https://powerbi.microsoft.com/power-bi-premium/) subscription includes additional features and capabilities to deliver BI solutions at scale. Premium subscriptions are licensed [by capacity](https://powerbi.microsoft.com/pricing/). The following section primarily focuses on Premium capacity, which requires additional oversight.
+[Power BI Premium](https://powerbi.microsoft.com/power-bi-premium/) includes additional features and capabilities to deliver BI solutions at scale. Premium subscriptions may be purchased [by capacity or per user](https://powerbi.microsoft.com/pricing/) with Premium Per User (PPU). This section primarily focuses on Premium capacity, which requires additional oversight.
 
-Power BI Premium can play a significant role in your BI strategy. Some top reasons to invest in Power BI Premium include:
+Power BI Premium can play a significant role in your BI strategy. Some top reasons to invest in Premium include:
 
-- [Unlimited content distribution](../admin/service-premium-what-is.md#unlimited-content-sharing) to large numbers of read-only users who do not require a Power BI Pro or Power BI Premium Per User license.
+- [Unlimited content distribution](../admin/service-premium-what-is.md#unlimited-content-sharing) to large numbers of read-only (content consumption with a free Power BI license is available in Premium capacity only, not PPU).
 - [Deployment pipelines](../create-reports/deployment-pipelines-overview.md) to manage the publication of content to development, test, and production workspaces. They are highly recommended for critical content to improve release stability.
 - [Paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md) to deliver highly-formatted, pixel-perfect reports. This report type allows content creators to meet additional types of information delivery requirements.
 - [XMLA endpoint](../admin/service-premium-connect-tools.md), which is an industry standard protocol for managing and publishing a dataset, or querying the dataset from any XMLA-compliant tool.
@@ -208,20 +208,20 @@ This list is not all-inclusive. For a complete list of Premium features, see [Po
 
 #### Managing Premium capacity
 
-Overseeing the health of Premium capacity is an essential ongoing activity for administrators because, by definition, Premium capacities include a fixed level of system resources. It equates to [memory and CPU limits](../admin/service-premium-what-is.md#limitations-in-premium-gen2) that must be managed to achieve optimal performance.
+Overseeing the health of Power BI Premium capacity is an essential ongoing activity for administrators because, by definition, Premium capacity includes a fixed level of system resources. It equates to [memory and CPU limits](../admin/service-premium-what-is.md#limitations-in-premium-gen2) that must be managed to achieve optimal performance.
 
 > [!CAUTION]
 > Lack of management and exceeding the limits of Premium capacity can often result in performance challenges and user experience challenges. Both challenges, if not managed correctly, can contribute to negative impact on adoption efforts.
 
 Suggestions for managing Premium capacity:
 
-- Create a specific set of criteria for content that will be published to Premium capacity. It's particularly relevant when a single capacity is used by multiple business units because the potential exists to disrupt other users if the capacity is not well managed. For a list of items that may be included in the best practices review (such as reasonable dataset size and efficient calculations), see the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#best-practices-reviews) article.
+- Create a specific set of criteria for content that will be published to Premium capacity. It's particularly relevant when a single capacity is used by multiple business units because the potential exists to disrupt other users if the capacity is not well-managed. For a list of items that may be included in the best practices review (such as reasonable dataset size and efficient calculations), see the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#best-practices-reviews) article.
 - Regularly use the [Premium monitoring app](../admin/service-premium-gen2-metrics-app.md) to understand resource utilization and patterns for the Premium capacity. Most importantly, look for consistent patterns of overutilization, which will contribute to user disruptions. An analysis of usage patterns should also make you aware if the capacity is underutilized, indicating more value could be gained from the investment.
 - Configure the [tenant setting](../admin/service-interruption-notifications.md#enable-notifications) so Power BI notifies you if the [Premium capacity becomes overloaded](https://powerbi.microsoft.com/blog/announcing-timely-premium-capacity-overload-alerts/), or an outage or incident occurs.
 
 #### Autoscale
 
-[Autoscale](../admin/service-premium-auto-scale.md) is a capability of [Power BI Premium Gen2](../admin/service-premium-concepts.md) that's intended to handle occasional or unexpected bursts in Premium usage levels. It can respond to these bursts by automatically increasing CPU resources to support the increased workload. Automated scaling up reduces the risk of performance and user experience challenges in exchange for a financial impact. If the Premium capacity is not well managed, autoscale may trigger more often than expected. In this case, the [Premium monitoring app](../admin/service-premium-gen2-metrics-app.md) can help you to determine underlying issues.
+[Autoscale](../admin/service-premium-auto-scale.md) is a capability of [Power BI Premium Gen 2](../admin/service-premium-concepts.md) that's intended to handle occasional or unexpected bursts in Premium usage levels. It can respond to these bursts by automatically increasing CPU resources to support the increased workload. Automated scaling up reduces the risk of performance and user experience challenges in exchange for a financial impact. If the Premium capacity is not well-managed, autoscale may trigger more often than expected. In this case, the [Premium monitoring app](../admin/service-premium-gen2-metrics-app.md) can help you to determine underlying issues.
 
 #### Decentralized Premium capacity management
 
@@ -237,7 +237,7 @@ It's possible that multiple capacities are set up to facilitate decentralized ma
 This example has several advantages:
 
 - Separate [capacity administrators](../admin/service-admin-premium-manage.md#manage-user-permissions) may be configured for each capacity, and so it facilitates decentralized management situations.
-- If a capacity is not well managed, the effect of confined to that capacity only. The other capacities are not impacted.
+- If a capacity is not well-managed, the effect of confined to that capacity only. The other capacities are not impacted.
 
 However, the example has disadvantages, too:
 
@@ -256,7 +256,7 @@ There are three types of gateways:
 
 1. **On-premises data gateway (standard mode)** is a gateway service that supports connections to registered data sources for many users to use. The gateway software installations and updates are installed on a machine that's managed by the customer.
 2. **On-premises data gateway (personal mode)** is a gateway service that supports data refresh only. This gateway mode is typically installed on the PC of the user. It supports use by one user only. It does not support live connection or DirectQuery connections.
-3. **Virtual network data gateway** is a Microsoft managed service that supports connectivity for many users. Specifically, it supports connectivity for datasets and dataflows stored in workspaces assigned to Premium capacity or Premium Per User workspaces.
+3. **Virtual network data gateway** is a Microsoft managed service that supports connectivity for many users. Specifically, it supports connectivity for datasets and dataflows stored in workspaces assigned to Premium capacity or Premium Per User.
 
 > [!TIP]
 > The decision of [who can install gateway software](/power-platform/admin/onpremises-data-gateway-management#manage-gateway-installers) is a governance decision. For most organizations, use of options 1 or 3 should be strongly encouraged over option 2 because they are more scalable and manageable.
@@ -294,7 +294,7 @@ Managed by IT:
 
 ## User licenses
 
-Every user of the Power BI service needs a commercial license which is integrated with an Azure Active Directory identity. The user license may be Power BI (Free), Power BI Pro, or Power BI Premium Per User (PPU). A user license is obtained via a subscription which authorizes a certain number of licenses with a start and end date.
+Every user of the Power BI service needs a commercial license which is integrated with an Azure Active Directory identity. The user license may be Free, Power BI Pro, or Power BI Premium Per User. A user license is obtained via a subscription which authorizes a certain number of licenses with a start and end date.
 
 There are two approaches to procuring subscriptions:
 
@@ -321,7 +321,7 @@ Consider disabling self-service purchasing when:
 
 ### Trials
 
-Another important governance decision is whether user trials are allowed. By default, trials are enabled. That means when content is shared with a colleague, if the recipient does not have a Power BI Pro or Power BI PPU license, they will be prompted to start a trial to view the content (unless the content resides in Premium capacity). The trial experience is a great convenience and allows people to continue with their normal workflow.
+Another important governance decision is whether user trials are allowed. By default, trials are enabled. That means when content is shared with a colleague, if the recipient does not have a Power BI Pro or Premium Per User license, they will be prompted to start a trial to view the content (if the content doesn’t reside within Premium capacity). The trial experience is a great convenience and allows people to continue with their normal workflow.
 
 Generally, disabling trials is not recommended. It can encourage users to apply workarounds, perhaps by exporting data or working outside of supported tools and processes. Consider disabling trials only when:
 
@@ -330,14 +330,14 @@ Generally, disabling trials is not recommended. It can encourage users to apply 
 - There's a valid need, such as a regulatory requirement, to control access to the Power BI service very closely.
 
 > [!TIP]
-> Don't introduce too many barriers to obtaining a Power BI license. People who need to get work done will find a way, and that way may involve workarounds that aren't ideal. For instance, without a license to use the Power BI service, people may rely heavily on sharing files on a file system or via email when significantly efficient and secure approaches are available.
+> Don't introduce too many barriers to obtaining a Power BI license. People who need to get work done will find a way, and that way may involve workarounds that aren't ideal. For instance, without a license to use the Power BI service, people may rely far too much on sharing files on a file system or via email when significantly better approaches are available.
 
 ## Cost management
 
 Managing and optimizing the cost of cloud services, like Power BI, is an important activity. Here are several activities you may want to consider:
 
 - Analyze who is using—and, more to the point, not using—their allocated Power BI licenses and make necessary adjustments. Power BI usage is analyzed using the [activity log](../admin/service-admin-auditing.md).
-- Analyze the cost effectiveness of [Premium capacity](../admin/service-premium-what-is.md) or [Power BI Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml#using-premium-per-user--ppu-). In addition to the [additional features](../admin/service-premium-per-user-faq.yml#using-premium-per-user--ppu-), perform a cost/benefit analysis to determine whether Premium licensing is more cost-effective when there are a large number of consumers (unlimited content distribution is only available with Premium capacity, not PPU licensing).
+- Analyze the cost effectiveness of [Premium capacity](../admin/service-premium-what-is.md) or [Premium Per User](../admin/service-premium-per-user-faq.yml#using-premium-per-user--ppu-). In addition to the [additional features](../admin/service-premium-per-user-faq.yml#using-premium-per-user--ppu-), perform a cost/benefit analysis to determine whether Premium licensing is more cost-effective when there are a large number of consumers (unlimited content distribution is only available with Premium capacity, not PPU licensing).
 - Carefully [monitor and manage Premium capacity](../admin/service-premium-gen2-metrics-app.md). Understanding usage patterns over time will allow you to predict when to purchase [additional capacity](../admin/service-premium-what-is.md#capacity-nodes). For example, you may choose to scale up a single capacity from a P1 to P2, or scale out from one P1 capacity to two P1 capacities.
 - If there are occasional spikes in the level of usage, use of [autoscale](../admin/service-premium-auto-scale.md) with [Power BI Premium Gen 2](../admin/service-premium-concepts.md) is recommended. It will scale up capacity resources for 24 hours, then scale them back down to normal levels (providing sustained activity isn't present). Manage autoscale cost by constraining the maximum number of v-cores, and/or with spending limits set in Azure (because autoscale is supported by the Azure Power BI Embedded service). Due to the pricing model, autoscale is best suited to handle occasional unplanned increases in usage.
 - For Azure data sources, co-locate them in the same region as your Power BI tenant whenever possible. It will avoid incurring [Azure egress charges](https://azure.microsoft.com/pricing/details/bandwidth/), which are minimal, but at scale can be considerable.
@@ -390,9 +390,9 @@ For organizations with requirements to store data within a geographic region, Pr
 
 ### Encryption keys
 
-Microsoft handles encryption of _data at rest_ in Microsoft data centers with transparent server-side encryption and auto-rotation of certificates. For customers with regulatory requirements, they can [manage the Premium encryption key themselves](../admin/service-encryption-byok.md). Also, they can configure Premium capacity to use [Azure Key Vault](/azure/key-vault/general/basic-concepts). Using customer-managed keys—also known as _bring-your-own-key_ or _BYOK_—is a precaution to ensure that, in the event of a human error by a service operator, customer data cannot be exposed.
+Microsoft handles encryption of _data at rest_ in Microsoft data centers with transparent server-side encryption and auto-rotation of certificates. For customers with regulatory requirements to [manage the Premium encryption key themselves](../admin/service-encryption-byok.md), Premium capacity can be configured to use [Azure Key Vault](/azure/key-vault/general/basic-concepts). Using customer-managed keys—also known as _bring-your-own-key_ or _BYOK_—is a precaution to ensure that, in the event of a human error by a service operator, customer data cannot be exposed.
 
-Note that [Power BI Premium Per User](../admin/service-premium-per-user-faq.yml#using-premium-per-user--ppu-) only supports BYOK when it's enabled for the entire Power BI tenant.
+Note that [Premium Per User](../admin/service-premium-per-user-faq.yml#using-premium-per-user--ppu-) only supports BYOK when it's enabled for the entire Power BI tenant.
 
 ## Auditing and monitoring
 
@@ -469,7 +469,7 @@ Considerations and key actions you can take to improve management of the Power B
 
 Considerations and key actions you can take to improve management of user machines and devices:
 
-- Review your process for how onboarding of new content creators is handled. Determine if new requests for software, such as Power BI Desktop, and user licenses can be handled together. It can simplify onboarding since new content creators won't always know what to ask for.
+- Review your process for how onboarding of new content creators is handled. Determine if new requests for software, such as Power BI Desktop, and user licenses (Power BI Pro or Premium Per User) can be handled together. It can simplify onboarding since new content creators won't always know what to ask for.
 - Ensure an automated process is in place to install and update software, drivers, and settings to ensure all users have the same version.
 
 Considerations and key actions you can take for data architecture planning:
@@ -486,7 +486,7 @@ Considerations and key actions you can take to improve management of user licens
 
 - Review what the process to request a user license, including any prerequisites.
 - Clarify whether self-service licensing purchasing is enabled.
-- Confirm whether Power BI Pro and Power BI Premium Per User trials are enabled or disabled.
+- Confirm whether Power BI Pro and Premium Per User trials are enabled or disabled.
 
 Considerations and key actions you can take to improve cost management:
 
@@ -520,7 +520,7 @@ The following maturity levels will help you assess the current state of your Pow
 
 ## Next steps
 
-Other helpful resources include:
+For more information about system oversight and Power BI administration, see the following resources:
 
 - [Microsoft Learn – Administer Power BI – Part 1](/learn/paths/administer-power-bi-part-1/)
 - [Microsoft Learn – Administer Power BI – Part 2](/learn/paths/administer-power-bi-part-2/)
@@ -530,3 +530,5 @@ Other helpful resources include:
 - [External guest users whitepaper](whitepaper-azure-b2b-power-bi.md)
 - [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
 - [Power BI adoption framework](https://github.com/pbiaf/powerbiadoption)
+
+In the [next article](powerbi-adoption-roadmap-conclusion.md) in the Power BI adoption roadmap series, learn about adoption-related resources that you might find valuable.

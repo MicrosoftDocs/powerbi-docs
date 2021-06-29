@@ -36,7 +36,7 @@ There are multiple ways to identify an executive sponsor.
 
 ### Top-down pattern
 
-An executive sponsor may be selected by a more senior executive. For example, the Chief Executive Officer (CEO) may hire a Chief Data Officer (CDO) or Chief Analytics Officer (CAO) to advance the organization's data culture objectives. The CDO then becomes the ideal candidate to become the executive sponsor for Power BI (or analytics in general).
+An executive sponsor may be selected by a more senior executive. For example, the Chief Executive Officer (CEO) may hire a Chief Data Officer (CDO) or Chief Analytics Officer (CAO) to advance the organization's data culture objectives. The CDO or CAO then become the ideal candidate to become the executive sponsor for Power BI (or analytics in general).
 
 Another example: The CEO may empower an existing executive, such as the Chief Financial Officer (CFO), because they have a good track record leading data and analytics in their organization. As the new executive sponsor, the CFO could then lead efforts to replicate the finance team's success to other areas of the organization.
 
@@ -77,4 +77,4 @@ The following maturity levels will help you assess your current state of executi
 
 ## Next steps
 
-In the [next article in this series](powerbi-adoption-roadmap-content-ownership-and-management.md), learn more about content ownership and management, and its effect on business-led self-service BI, managed self-service BI, and enterprise BI.
+In the [next article](powerbi-adoption-roadmap-content-ownership-and-management.md) in the Power BI adoption roadmap series, learn more about content ownership and management, and its effect on business-led self-service BI, managed self-service BI, and enterprise BI.

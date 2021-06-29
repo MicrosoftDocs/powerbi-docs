@@ -182,7 +182,7 @@ Funding is important because it impacts on the way the COE communicates and enga
 > [!TIP]
 > The choice of funding model can determine how the COE actively grows its influence and ability to help. The funding model can also have a big impact on where authority resides and how decision-making works. Further, it impacts the type of services a COE can offer, such as co-development projects and/or best practices reviews. For more information, see the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article.
 
-Some organizations cover the COE operating costs with chargebacks to business units based on the usage metrics of Power BI. For a Power BI shared capacity, this could be based on number of active users. For a Power BI Premium capacity, chargebacks could be allocated based on which business units are using the capacity. Ideally, chargebacks are directly correlated to the business value gained.
+Some organizations cover the COE operating costs with chargebacks to business units based on the usage metrics of Power BI. For a Power BI shared capacity, this could be based on number of active users. For Premium capacity, chargebacks could be allocated based on which business units are using the capacity. Ideally, chargebacks are directly correlated to the business value gained.
 
 ## Considerations and key actions
 
@@ -205,11 +205,11 @@ The following maturity levels will help you assess the current state of your COE
 | 100: Initial | One or more COEs exist, or the activities are performed within the BI team or IT. There's no clarity on the specific goals nor expectations for responsibilities.</br></br>Requests for assistance from the COE are handled in an unplanned manner. |
 | 200: Repeatable | The COE is in place with a specific charter to mentor, guide, and educate self-service users. The COE seeks to maximize benefits of self-service BI while reducing the risks.</br></br>Goals, scope, staffing, structure, and funding are established for the COE. |
 | 300: Defined | The COE operates with active involvement from all business units in a unified or federated mode. |
-| 400: Capable | The goals of the COE align with organizational goals, and they are reassessed regularly.</br></br>The COE is well known throughout the organization, and consistently proves its value to the internal user community. |
+| 400: Capable | The goals of the COE align with organizational goals, and they are reassessed regularly.</br></br>The COE is well-known throughout the organization, and consistently proves its value to the internal user community. |
 | 500: Efficient | Regular reviews of key performance indicators evaluate COE effectiveness.</br></br>Agility and implementing continual improvements from lessons learned are top priorities for the COE. |
 
 ## Next steps
 
-In the [next article in this series](powerbi-adoption-roadmap-governance.md), learn about implementing governance guidelines, policies, and processes.
+In the [next article](powerbi-adoption-roadmap-governance.md) in the Power BI adoption roadmap series, learn about implementing governance guidelines, policies, and processes.
 
 Also, consider reading about [Microsoft's journey and experience with driving a data culture](center-of-excellence-microsoft-business-intelligence-transformation.md). This articles describes the importance of _discipline at the core_ and _flexibility at the edge_. It also shares Microsoft's views and experience about the importance of establishing a COE.

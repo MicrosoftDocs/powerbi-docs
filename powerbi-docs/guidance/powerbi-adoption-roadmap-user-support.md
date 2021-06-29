@@ -22,11 +22,11 @@ For a description of related topics, including skills mentoring, training, docum
 
 ## Types of user support
 
-If a user has an issue, do they know what their options are to resolve it? The following image shows some common types of user support that organizations employ successfully:
+If a user has an issue, do they know what their options are to resolve it? The following diagram shows some common types of user support that organizations employ successfully:
 
 :::image type="content" source="media/powerbi-adoption-roadmap-user-support/powerbi-adoption-roadmap-user-support.png" alt-text="Image shows the four types of internal Power B I user support, and the two types of external support, which are described in the table below.":::
 
-The six types of user support shown in the above image include:
+The six types of user support shown in the above diagram include:
 
 | **Type** | **Description** |
 | --- | --- |
@@ -35,7 +35,7 @@ The six types of user support shown in the above image include:
 | ![Type 3.](media/common/icon-03-red-30x30.png) | **Help desk support (internal)** handles formal support issues and requests. |
 | ![Type 4.](media/common/icon-04-red-30x30.png) | **Extended support (internal)** involves handling complex issues escalated by the help desk. |
 | ![Type 5.](media/common/icon-05-red-30x30.png) | **Microsoft support (external)** includes [comprehensive Power BI documentation](../index.yml). Support is also available to licensed users and administrators. |
-| ![Type 6.](media/common/icon-06-red-30x30.png) | **Community support (external)** includes the worldwide community of Power BI experts, [Microsoft Most Valued Professional (MVPs)](https://mvp.microsoft.com/), and enthusiasts who participate in forums and publish content. |
+| ![Type 6.](media/common/icon-06-red-30x30.png) | **Community support (external)** includes the worldwide community of Power BI experts, [Microsoft Most Valued Professionals (MVPs)](https://mvp.microsoft.com/), and enthusiasts who participate in forums and publish content. |
 
 In some organizations, intra-team and internal community support are most relevant for self-service BI (content is owned and managed by creators and owners in decentralized business units). Conversely, the help desk and extended support are reserved for technical issues and enterprise BI (content is owned and managed by a centralized business intelligence team or Center of Excellence). In some organizations, all four types of support could be relevant for any type of content.
 
@@ -83,7 +83,7 @@ The help desk is usually operated as a shared service, operated by the IT depart
 
 There are also certain technical issues which cannot be fully resolved without IT involvement, like software installation and upgrade requests when machines are IT-managed.
 
-Busy help desk personnel are usually dedicated to supporting multiple technologies. For this reason, the easiest types of issues to support are those which have a clear resolution and can be documented in a knowledgebase, like software installation prerequisites. Some organizations task the help desk to handle only very simple break-fix issues, whereas other organizations have the help desk get involved with anything that is repeatable, like new [workspace](../collaborate-share/service-create-the-new-workspaces.md) requests, managing [gateway data sources](/power-platform/admin/onpremises-data-gateway-source-management#add-new-data-source), or requesting new [Premium capacities](../admin/service-premium-what-is.md)).
+Busy help desk personnel are usually dedicated to supporting multiple technologies. For this reason, the easiest types of issues to support are those which have a clear resolution and can be documented in a knowledgebase, like software installation prerequisites. Some organizations task the help desk to handle only very simple break-fix issues, whereas other organizations have the help desk get involved with anything that is repeatable, like new [workspace](../collaborate-share/service-create-the-new-workspaces.md) requests, managing [gateway data sources](/power-platform/admin/onpremises-data-gateway-source-management#add-new-data-source), or requesting new [Premium capacities](../admin/service-premium-what-is.md).
 
 > [!IMPORTANT]
 > Your Power BI governance decisions will directly impact the volume of help desk requests. For example, if you choose to limit [workspace creation permissions in the tenant settings](admin-tenant-settings.md#create-workspaces), it will result in users submitting help desk tickets. While it's a legitimate decision to make, you must be prepared to satisfy the request very quickly, usually within 1-4 hours if possible. Consider that automation with Power Apps and Power Automate can help make the process efficient. If you delay too long, users will use what they already have, and that may not be the ideal scenario. Promptness is critical for certain help desk requests.
@@ -91,13 +91,13 @@ Busy help desk personnel are usually dedicated to supporting multiple technologi
 Over time, troubleshooting and problem resolution skills become more effective as help desk personnel expand their knowledgebase and experience with Power BI. The best help desk personnel are those who have a good grasp of what users need to accomplish with Power BI.
 
 > [!TIP]
-> Purely technical issues, like [data refresh](../connect-data/refresh-data.md) failure or the need to [add a new user to a gateway data source](/power-platform/admin/onpremises-data-gateway-source-management#manage-users)), usually involve straightforward responses associated with a service level agreement. For instance, there may be an agreement to respond to blocking issues within one hour and resolve them within eight hours. It's generally more difficult to define service level agreements (SLAs) for troubleshooting issues, like data quality issues.
+> Purely technical issues, for example [data refresh](../connect-data/refresh-data.md) failure or the need to [add a new user to a gateway data source](/power-platform/admin/onpremises-data-gateway-source-management#manage-users)), usually involve straightforward responses associated with a service level agreement. For instance, there may be an agreement to respond to blocking issues within one hour and resolve them within eight hours. It's generally more difficult to define service level agreements (SLAs) for troubleshooting issues, like data discrepancies.
 
 ## Extended support
 
 Since the COE has deep insight into how Power BI is used throughout the organization, they're a great option for extended support should a complex issue arise. Involving the COE in the support process should be by an escalation path.
 
-Managing requests as purely an escalation path from the help desk gets difficult to enforce since COE members are often well known to business users. So, encourage the habit of going through the proper channels; COE members should redirect users to submit a help desk ticket. It will also improve the data quality for analyzing help desk requests.
+Managing requests as purely an escalation path from the help desk gets difficult to enforce since COE members are often well-known to business users. So, encourage the habit of going through the proper channels; COE members should redirect users to submit a help desk ticket. It will also improve the data quality for analyzing help desk requests.
 
 ## Microsoft support
 
@@ -113,7 +113,7 @@ Refer to the comprehensive [Power BI documentation](../index.yml). It's an autho
 
 ### Power BI Pro and Premium Per User end-user support
 
-Users with a Power BI Pro or Power BI Premium Per User license are eligible to [log a support ticket with Microsoft](https://powerbi.microsoft.com/support/pro/).
+Users with a Power BI Pro or Premium Per User license are eligible to [log a support ticket with Microsoft](https://powerbi.microsoft.com/support/pro/).
 
 > [!TIP]
 > Make it clear to your internal user community whether you prefer technical issues be reported to the internal help desk. If your help desk is equipped to handle the workload, having a centralized internal area collect user issues can provide a superior user experience versus every user trying to resolve issues on their own. Having visibility and analyzing support issues is also helpful for the [COE](powerbi-adoption-roadmap-center-of-excellence.md).
@@ -155,9 +155,9 @@ Considerations and key actions you can take to improve your intra-team support:
 Considerations and key actions you can take to improve your internal community support:
 
 - Encourage people to ask questions in the designated community discussion channel. As the habit builds over time, it will become normalized to use that as the first option. Over time, it will evolve to become more self-supporting.
-- Ensure that the appropriate CEO members actively monitor this discussion channel. They can step in if a question remains unanswered, improve upon answers, or make corrections when appropriate. They can also post links to additional information to raise awareness of existing resources. Although the goal of the community to become self-supporting, it still requires dedicated resources to monitor and nurture it, even if it's to ensure questions don't remain unanswered.
+- Ensure that the appropriate COE members actively monitor this discussion channel. They can step in if a question remains unanswered, improve upon answers, or make corrections when appropriate. They can also post links to additional information to raise awareness of existing resources. Although the goal of the community to become self-supporting, it still requires dedicated resources to monitor and nurture it, even if it's to ensure questions don't remain unanswered.
 - Make sure your user population knows the internal community support area exists. It could include the prominent display of links, or including a link in regular communications. You can also [customize the help menu links](admin-tenant-settings.md#publish-get-help-information) in the Power BI service to direct users to your internal resources.
-- Set up automation to ensure that all your Power BI Free, Power BI Pro, and Power BI Premium Per User licensed users automatically have access to the community discussion channel. It's possible to automate license setup using [group-based licensing](/azure/active-directory/enterprise-users/licensing-groups-assign).
+- Set up automation to ensure that all your Free, Power BI Pro, and Premium Per User licensed users automatically have access to the community discussion channel. It's possible to automate license setup using [group-based licensing](/azure/active-directory/enterprise-users/licensing-groups-assign).
 
 Considerations and key actions you can take to improve your internal help desk support:
 
@@ -175,7 +175,7 @@ Considerations and key actions you can take to improve your internal COE extende
 
 - Clearly define where help desk responsibilities end, and where COE extended support responsibilities begin.
 - Ensure that COE members have a direct escalation path to reach global administrators for Microsoft 365 and Azure. It's critical when a widespread issue arises that's beyond the scope of Power BI.
-- Create a feedback loop from the COE back to the help desk so that the knowledgebase can be updated. It allows the primary help desk personnel to become bettter equipped to handle more issues in the future.
+- Create a feedback loop from the COE back to the help desk so that the knowledgebase can be updated. It allows the primary help desk personnel to become better equipped to handle more issues in the future.
 - Create a feedback loop from the help desk to the COE. When support personnel observe redundancies or inefficiencies, they can communicate that information to the COE, who might choose to improve the knowledgebase or get involved (particularly if it relates to governance or security).
 
 ## Maturity levels
@@ -188,8 +188,8 @@ The following maturity levels will help you assess the current state of your Pow
 | 200: Repeatable | The importance of intra-team support is encouraged and actively supported by the COE, including direct support of the champions network.</br></br>The internal discussion channel gains traction as the default place for Power BI Q&A.</br></br>The help desk handles a small number of the most common Power BI technical support issues. |
 | 300: Defined | The internal discussion channel is now popular and largely self-sustaining. COE members actively monitor and manage the discussion channel to ensure questions are answered quickly and correctly.</br></br>The help desk is fully prepared to handle all known and expected Power BI technical support issues, and the COE provides appropriate extended support when required. |
 | 400: Capable | A recognition program is established and it generates enthusiasm and encourages sharing best practices.</br></br>SLAs are in place to define help desk support expectations, including extended support, and they are clear to everyone involved. |
-| 500: Efficient | Bidirectional feedback loops exist between the help desk and the COE.</br></br>Key performance indicators measure community engagement and satisfaction.</br></br>Automation is in place when it adds direct value to the user experience (like, automatic access to the community), or for specific help desk activities (like, use of APIs and scripts that increase speed and reduce error). |
+| 500: Efficient | Bidirectional feedback loops exist between the help desk and the COE.</br></br>Key performance indicators measure community engagement and satisfaction.</br></br>Automation is in place when it adds direct value to the user experience (for example, automatic access to the community), or for specific help desk activities (for example, use of APIs and scripts that increase speed and reduce error). |
 
 ## Next steps
 
-In the [next article in this series](powerbi-adoption-roadmap-system-oversight.md), learn about system oversight and administration activities.
+In the [next article](powerbi-adoption-roadmap-system-oversight.md) in the Power BI adoption roadmap series, learn about system oversight and administration activities.

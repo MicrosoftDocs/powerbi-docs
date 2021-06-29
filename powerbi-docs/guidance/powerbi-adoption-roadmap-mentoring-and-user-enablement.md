@@ -18,7 +18,7 @@ A critical objective for adoption efforts is to enable users to accomplish as mu
 
 ## Skills mentoring
 
-Mentoring and helping users in the Power BI community be more effective can take on various forms, such as:
+Mentoring and helping users in the Power BI community become more effective can take on various forms, such as:
 
 - Office hours.
 - Co-development projects.
@@ -63,7 +63,7 @@ Time involvement from the COE reduces over time until the business unit gains ex
 
 :::image type="content" source="media/powerbi-adoption-roadmap-mentoring-and-user-enablement/powerbi-adoption-roadmap-center-of-excellence-mentoring.png" alt-text="Image shows expertise growing in the business unit as C O E involvement decreases over time, and is further described next.":::
 
-The active involvement shown in the above image changes over time, as follows:
+The active involvement shown in the above diagram changes over time, as follows:
 
 - **Business unit:** 50% initially, up to 75%, finally at 98%-100%.
 - **COE:** 50% initially, down to 25%, finally at 0%-2%.
@@ -82,7 +82,7 @@ The COE may also offer _best practices reviews_. A best practices review can be 
 During a review, an expert from the COE evaluates self-service Power BI content developed by a member of the community and identifies areas of risk or opportunities for improvement. The following bullet list presents some examples of when a best practices review could be beneficial:
 
 - The sales team has an [app](../consumer/end-user-apps.md) that they intend to distribute to thousands of users throughout the organization. Since the app represents high priority content distributed to a large audience, they'd like to have it [certified](../collaborate-share/service-endorsement-overview.md). The standard process to certify content includes a best practices review.
-- The finance team would like to [assign a workspace to a Premium capacity](../admin/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity). A review of the workspace content is required to ensure sound development practices were followed. This type of review is common when the capacity is shared among multiple business units. (A review may not be required when the capacity is assigned to only one business unit.)
+- The finance team would like to [assign a workspace to Premium capacity](../admin/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity). A review of the workspace content is required to ensure sound development practices were followed. This type of review is common when the capacity is shared among multiple business units. (A review may not be required when the capacity is assigned to only one business unit.)
 - The operations team is creating a new solution they expect to be widely used. They would like to request a best practices review before it goes into user acceptance testing (UAT), or before a request is submitted to the change management board.
 
 A best practices review is most often focused on the dataset design, though the review can encompass all types of artifacts (dataflows, datasets, reports, or apps).
@@ -92,7 +92,7 @@ Before content is deployed to the Power BI service, a best practices review may 
 - [Data sources](../connect-data/desktop-data-sources.md) used are appropriate and [query folding](power-query-folding.md) is invoked whenever possible.
 - [Connectivity mode](../connect-data/service-dataset-modes-understand.md) and [storage mode](../transform-model/desktop-storage-mode.md) choices (for example, import, live connection, DirectQuery composite model frameworks) are appropriate.
 - Location for data sources, like flat files, and original Power BI Desktop files are suitable (preferably stored in a backed-up location with versioning and appropriate security, such as [Teams files or a SharePoint shared library](/microsoft-365/community/should-i-store-my-files-in-teams-or-sharepoint-an-understanding-of-behind-the-scenes)).
-- [Data preparation](../transform-model/desktop-query-overview.md) steps are clean, orderly, and [efficient]power-query-folding.md).
+- [Data preparation](../transform-model/desktop-query-overview.md) steps are clean, orderly, and [efficient](power-query-folding.md).
 - [Datasets](../connect-data/desktop-data-view.md) are well-designed, clean, and understandable (a [star schema](star-schema.md) design is highly recommended).
 - [Relationships](../transform-model/desktop-relationships-understand.md) are configured correctly.
 - [DAX calculations](../transform-model/desktop-quickstart-learn-dax-basics.md) use efficient coding practices (particularly if the data model is large).
@@ -143,7 +143,7 @@ The goal is to consistently direct users in the community to the centralized por
 
 In larger organizations, it may be difficult to implement one single centralized portal. When it's not practical to consolidate into a single portal, a centralized hub can serve as an aggregator, which contain links to the other locations.
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > Although saving time finding information is important, the goal of a centralized portal is more than that. It's about making information readily available to help your user community do the right thing. They should be able to find information during their normal course of work, with as little friction as possible. Until it's easier to complete a task within the guardrails established by the COE and data governance team, some users will continue to complete their tasks by circumventing policies that are put in place. The recommended path must become the path of least resistance. Having a centralized portal can help achieve this goal.
 
 It takes time for community users to think of the centralized portal as their natural first stop for finding information. It takes consistent redirection to the portal to change habits. Sending someone a link to an original document location in the portal builds better habits than, for instance, including the answer in an email response. It's the same challenge described in the [User support](powerbi-adoption-roadmap-user-support.md#community-documentation) article (community documentation).
@@ -308,4 +308,4 @@ The following maturity levels will help you assess the current state of your men
 
 ## Next steps
 
-In the [next article in this series](powerbi-adoption-roadmap-community-of-practice.md), learn more about the community of practice.
+In the [next article](powerbi-adoption-roadmap-community-of-practice.md) in the Power BI adoption roadmap series, learn more about the community of practice.

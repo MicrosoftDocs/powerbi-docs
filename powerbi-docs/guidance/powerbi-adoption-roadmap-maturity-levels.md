@@ -18,7 +18,7 @@ There are three inter-related perspectives to consider when adopting a technolog
 
 :::image type="content" source="media/powerbi-adoption-roadmap-maturity-levels/powerbi-adoption-roadmap-adoption-types.png" alt-text="Image shows the three inter-related types of Power B I adoption, which are described in the table below.":::
 
-The three types of adoption shown in the above graphic include:
+The three types of adoption shown in the above diagram include:
 
 | **Type** | **Description** |
 | --- | --- |
@@ -71,7 +71,7 @@ Level 200 is referred to as _repeatable_ or _managed_. At this point on the matu
 Common characteristics of the level 200 maturity level include:
 
 - Certain Power BI content is now critical in importance and/or it is broadly used by the organization.
-- There are attempts to document and define discipline and repeatable practices, however efforts are siloed, reactive, and deliver varying levels of success.
+- There are attempts to document and define repeatable practices, however efforts are siloed, reactive, and deliver varying levels of success.
 - There is an over-reliance on individuals having good judgment and adopting healthy habits that they learned on their own.
 - Power BI adoptions continues to grow organically and produces value, however it takes place in an uncontrolled way.
 - Resources for an internal community are established, such as a Teams channel or Yammer group.
@@ -157,7 +157,7 @@ Common characteristics of stage 2 user adoption include:
 
 Common characteristics of stage 3 user adoption include:
 
-- An individual actively learns Power BI, with by attending formal training, self-directed learning, or experimentation.
+- An individual actively learns Power BI, by attending formal training, self-directed learning, or experimentation.
 - An individual gains basic competency with the aspects of Power BI relevant to their role.
 
 ### User adoption stage 4 – Proficiency
@@ -220,7 +220,7 @@ Common characteristics of stage 3 solution adoption include:
 Common characteristics of stage 4 solution adoption include:
 
 - Target users actively and routinely use the solution, and it's considered essential for decision-making purposes.
-- The solution resides in a [production workspace](../create-reports/deployment-pipelines-overview.md) well separated from development and test content. Change management and release management is carefully controlled due to the impact of changes.
+- The solution resides in a [production workspace](../create-reports/deployment-pipelines-overview.md) well-separated from development and test content. Change management and release management is carefully controlled due to the impact of changes.
 - A subset of users regularly provide feedback to ensure the solution continues to meet requirements.
 - Expectations for the success of the solution are clear and are measured.
 - Expectations for support of the solution are clear, especially if there are service level agreements.
@@ -230,4 +230,4 @@ Common characteristics of stage 4 solution adoption include:
 
 ## Next steps
 
-In the [next article in this series](powerbi-adoption-roadmap-data-culture.md), learn more about the organizational data culture and its impact on adoption efforts.
+In the [next article](powerbi-adoption-roadmap-data-culture.md) in the Power BI adoption roadmap series, learn more about the organizational data culture and its impact on adoption efforts.
