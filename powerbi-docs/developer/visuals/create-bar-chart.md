@@ -204,13 +204,14 @@ In Visual Studio Code, in the **capabilities.json** file, add the following code
             "category"
          ]
     }
-    ```
+```
 
 Save the **capabilities.json** file.
 
 Your final *capabilities* file should look like [the one in this example](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/capabilities.json).
 
 ## Visual API
+
 All visuals start with a class that implements the `IVisual` interface. The `src/visual.ts` file is the default file that contains this class.
 
 In this tutorial, we'll call our API file `barChart.ts`. [Download the file](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts) if you haven't done so already. In the following section, we'll go through this file in detail and describe the various sections.
