@@ -14,7 +14,7 @@ ms.date: 06/24/2021
 
 When designing a multi-tenant application as part of your *embed for your customers* solution, you must carefully choose the tenancy model that best fits your needs. A tenancy model determines how each tenant's data is mapped and managed within Power BI. Your tenancy model impacts application design and management. Switching to a different model later may become costly and disruptive.
 
-In this article we refer to tenants as one group of customers, an organization or a company. A multi-tenant solution, is an embedded application used by a number of companies, where each company is referred to as a Power BI tenant.
+In this article we refer to tenants as an organization or a company. A multi-tenant solution, is an embedded application used by a number of companies, where each company is referred to as a Power BI tenant.
 
 This article describes the two different approaches and analyzes them according to several evaluation criteria. The recommended approach is the *workspace separation* solution, which is described on the left tab throughout the article. The *row-level security separation* solution, also known as *RLS*, is described on the right tab. You can also view a [summary](#comparison-summary) of this evaluation, at the end of the article.
 
@@ -26,7 +26,7 @@ This article describes the two different approaches and analyzes them according 
 
 # [Workspace](#tab/workspace)
 
-With Power BI workspace-based separation, your multi-tenant app supports multiple tenants from a single Power BI tenant. The separation of tenants is done at the Power BI workspace level, by creating multiple workspaces. Each workspace contains the relevant datasets, reports, and dashboards for that tenant. Also, each workspace is connected only to that tenant's data.
+With Power BI workspace-based separation, your app supports multiple tenants from a single Power BI tenant. The separation of tenants is done at the Power BI workspace level, by creating multiple workspaces. Each workspace contains the relevant datasets, reports, and dashboards for that tenant. Also, each workspace is connected only to that tenant's data.
 
 >[!TIP]
 >If you require additional separation, create a *service principal* or a *master user* for each workspace and its content.
@@ -80,7 +80,9 @@ With row-level security-based separation, data separation is accomplished using 
 
 One advantage of the *workspace-based separation* model is that separating the data into multiple datasets for each tenant overcomes the [size limits of a single dataset](../../admin/service-premium-what-is.md#large-datasets). When the capacity is overloaded, it can evict unused datasets to free memory for active datasets. This task isn't possible with a single large dataset. Using multiple datasets, it is also possible to separate tenants into multiple Power BI capacities if needed.
 
-Despite these advantages, consider the scale that your multi-tenant app can reach in the future. For example, you might reach [limitations](#power-bi-items) around the number of Power BI items you can manage. The capacity SKU used introduces a limit on the size of memory that datasets need to fit in. When using a *Gen 1* capacity, you also have to consider how many refreshes can run at the same time and the maximum frequency of data refreshes. We recommended that you test your app when managing hundreds or thousands of datasets. It is also recommended to consider the average and peak volume of usage, as well as any specific tenants with large datasets, or different usage patterns, that are managed differently than other tenants.
+A *service principal* or a *master user* is limited to 1,000 workspaces. By creating a new service principal or master user per each tenant, you’re not only getting additional separation between tenants, you’re also making sure that you won’t reach the 1,000 workspaces limitation, when onboarding new tenants.
+
+Despite these advantages, consider the scale that your multi-tenant app can reach in the future. The capacity SKU used introduces a limit on the size of memory that datasets need to fit in. When using a *Gen 1* capacity, you also have to consider how many refreshes can run at the same time and the maximum frequency of data refreshes. We recommend that you test your app when managing hundreds or thousands of datasets. It is also recommended to consider the average and peak volume of usage, as well as any specific tenants with large datasets, or different usage patterns, that are managed differently than other tenants.
 
 # [RLS](#tab/rls)
 
@@ -92,13 +94,15 @@ With row-level security-based separation, the data needs to fit within the datas
 
 # [Workspace](#tab/workspace)
 
-With Power BI workspace separation, an application developer might need to manage hundreds or thousands of Power BI items. It's essential to define the processes that frequently happen in your application lifecycle management, and ensure you have the right set of tools to perform these operations at scale in this tenancy model. Some example operations include:
+With Power BI workspace-based separation, an application developer might need to manage hundreds or thousands of Power BI items. It's essential to define the processes that frequently happen in your application lifecycle management, and ensure you have the right set of tools to perform these operations at scale in this tenancy model. Some example operations include:
 
    * Adding a new tenant (customer)
    * Updating a report or dashboard for some or all the tenants
    * Updating the dataset schema for some or all the tenants
    * Unplanned customizations for specific tenants
    * Frequency of dataset refreshes
+
+When using the same report for multiple tenants, you can simplify your workspace-base separation deployment using [dynamic binding](embed-dynamic-binding.md). Dynamic binding lets you bind a report to multiple datasets, allowing you to use one report for all tenants, instead of a copy of the same report in each tenant.
 
 # [RLS](#tab/rls)
 
@@ -112,13 +116,13 @@ Adding or changing roles can only be done manually in the Power BI Desktop. Appl
 
 # [Workspace](#tab/workspace)
 
-Multi-geo involves purchasing capacity in the desired regions and assigning a workspace to that capacity. If you need to support different tenants in different regions, you need to assign the tenant's workspace to a capacity in the desired region. This task is a simple operation and one where the cost is not more than having all workspaces in the same capacity. However, if you have tenants that need data resident in multiple regions, all Power BI items in the workspace need to be duplicated in each regional capacity, increasing both cost and management complexity.
+Multi-geo involves purchasing capacity in the desired regions and assigning a workspace to that capacity. If you need to support different tenants in different regions, you need to assign the tenant's workspace to a capacity in the desired region. This task is a simple operation and one where the cost is not more than having all workspaces in the same capacity. However, if you have tenants that need data to reside in multiple regions, all Power BI items in the workspace need to be duplicated in each regional capacity, increasing both cost and management complexity.
 
 # [RLS](#tab/rls)
 
 Since all the data is stored in a single dataset, it is challenging to meet data residency requirements that require certain data to be bound to specific locations. It can also significantly increase the cost of using multiple regions as all the data is replicated and stored in each region.
 
-If only a limited number of tenants need different geographies, consider keeping only those tenants' data in a different region, using the *workspace separation* model.
+If only a limited number of tenants need different geographies, consider keeping only those tenants' data in a different region, using the *workspace-based separation* model.
 
 ---
 
@@ -167,7 +171,7 @@ The table below provides a summary of the detailed comparison between the two se
 | **Data separation** | ![an icon that symbolizes good](../../includes/media/yes.png) Good.<br>Each tenant has a dedicated dataset.  | ![an icon that symbolizes moderate](../../includes/media/maybe.png) Moderate.<br> All data is in the same shared dataset which is managed through access-control.  |
 | **Scalability** | ![an icon that symbolizes moderate](../../includes/media/maybe.png) Moderate.<br> Breaking data into multiple datasets enables optimization.  | ![an icon that symbolizes low](../../includes/media/no.png) Lowest.<br>Constrained by dataset limits.  |
 | **Multi-Geo needs** | ![an icon that symbolizes good](../../includes/media/yes.png) Good.<br> Data and capacity should be in the same geo.  | ![an icon that symbolizes low](../../includes/media/no.png) Not recommended.<br> You'll have to keep the entire dataset stored in multiple regions.  |
-| **Automation and operational complexity** | Good automation for the individual tenant.<br> Complex to manage many artifacts at scale.  | Easy to manage Power BI items.<br> Complex to manage RLS at scale.  |
+| **Automation and operational complexity** | Good automation for the individual tenant.<br> Complex to manage many artifacts at scale.<br>When using the same report for all tenets, use [dynamic binding](embed-dynamic-binding.md) to simplify deployments.<br>  | Easy to manage Power BI items.<br> Complex to manage RLS at scale.  |
 | **Cost** | Low-medium.<br> You can optimize utilization to reduce cost-per-tenant. Cost might increase when frequent refreshes are needed.  | Medium-high if using Import mode.<br> Low- medium if using Direct Query mode.  |
 | **Content customization and authoring** | ![an icon that symbolizes good](../../includes/media/yes.png) Good.<br> Might hit limitations at large scale.  | ![an icon that symbolizes moderate](../../includes/media/maybe.png) Moderate.<br> Use content generation in embedded iFrame only.  |
 
@@ -193,7 +197,7 @@ Power BI items include reports, dashboards and datasets.
 
 Considerations and limitations for Power BI [capacities](embedded-capacity.md).
 
-* Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](../../admin/service-premium-what-is.md).
+* Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](embedded-capacity.md#which-sku-should-i-use).
 
 * To establish the recommended dataset size for each SKU, reference [Premium large datasets](../../admin/service-premium-what-is.md#large-datasets).
 
