@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 05/21/2021
+ms.date: 06/28/2021
 ---
 
 # Collaborate in Microsoft Teams with Power BI
@@ -22,7 +22,7 @@ As a distributed workforce becomes the norm, more organizations are relying on M
 - Use the [Power BI app in Microsoft Teams](service-microsoft-teams-app.md) to bring your entire basic Power BI service experience into Microsoft Teams.
 - Use the In Teams tab on the Power BI app home page to [view all the Power BI tabs you use](service-teams-pivot.md) in Microsoft Teams.
 - In the Power BI app in Teams, [create a Teams usage report](service-teams-analytics.md) automatically to analyze your activity in Teams.
-- Get notified when important things happen in Power BI directly in the Teams activity feed.
+- [Get notified](service-teams-notifications.md) when important things happen in Power BI directly in the Teams activity feed.
  
 :::image type="content" source="media/service-collaborate-microsoft-teams/power-bi-embed-teams-report.png" alt-text="Screenshot of a Power B I report embedded in a Microsoft Teams channel.":::
 
