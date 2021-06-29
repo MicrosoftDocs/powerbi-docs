@@ -14,7 +14,7 @@ ms.date: 05/21/2021
 
 # Collaborate in Microsoft Teams with Power BI
 
-As a distributed workforce becomes the norm, more organizations are relying on Microsoft Teams to enable remote work and keep employees in sync. This articles outlines options for sharing and collaborating on interactive Power BI content in Microsoft Teams channels and chats.
+As a distributed workforce becomes the norm, more organizations are relying on Microsoft Teams to enable remote work and keep employees in sync. This article outlines options for sharing and collaborating on interactive Power BI content in Microsoft Teams channels and chats.
 
 - With the **Power BI tab** for Microsoft Teams, you can [embed interactive reports in Microsoft Teams](service-embed-report-microsoft-teams.md) channels and chats. The Power BI tab helps your colleagues find your team's data and discuss the data within your team channels. 
 - Create a [link preview](service-teams-link-preview.md) when you paste a link to your reports, dashboards, and apps into the Microsoft Teams message box. The link preview shows information about the link. 
