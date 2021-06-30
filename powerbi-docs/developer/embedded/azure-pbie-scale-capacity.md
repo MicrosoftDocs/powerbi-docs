@@ -32,7 +32,7 @@ For information about autoscaling in Embedded Gen 2, see [Autoscaling in Embedde
     > [!div class="mx-imgBorder"]
     > ![All services within Azure portal](media/azure-pbie-scale-capacity/azure-portal-more-services.png)
 
-3. Select the capacity you want to scale. Notice that the current scale is listed under **SKU** for each capacity.
+3. Select the capacity you want to scale. Notice that the current scale for each capacity is listed under **SKU**.
 
     > [!div class="mx-imgBorder"]
     > ![Power BI Embedded capacity list within Azure portal](media/azure-pbie-scale-capacity/azure-portal-capacity-list.png)
