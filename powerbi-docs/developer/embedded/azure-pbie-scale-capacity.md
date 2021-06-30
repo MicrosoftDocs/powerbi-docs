@@ -37,7 +37,7 @@ For information about autoscaling in Embedded Gen 2, see [Autoscaling in Embedde
     > [!div class="mx-imgBorder"]
     > ![Power BI Embedded capacity list within Azure portal](media/azure-pbie-scale-capacity/azure-portal-capacity-list.png)
 
-    When you make your selection, information about the capacity is displayed on the right. This information again includes the current scaling under **SKU**.
+    When you make your selection, information about that capacity is displayed next to it. This information again includes the current scaling under **SKU**.
 
     > [!div class="mx-imgBorder"]
     > ![Essential information](media/azure-pbie-scale-capacity/azure-portal-capacity-info.png)
