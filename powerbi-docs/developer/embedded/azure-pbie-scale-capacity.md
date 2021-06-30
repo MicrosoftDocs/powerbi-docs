@@ -9,7 +9,7 @@ tags: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 01/31/2019
+ms.date: 06/30/2021
 ---
 
 # Scale your Power BI Embedded capacity in the Azure portal
@@ -17,6 +17,8 @@ ms.date: 01/31/2019
 This article walks through how to scale a Power BI Embedded capacity in Microsoft Azure. Scaling allows you to increase or decrease the size of your capacity.
 
 This assumes you have created a Power BI Embedded capacity. If you have not, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md) to get started.
+
+For information about autoscaling in Embedded Gen 2 see [Autoscaling in Embedded Gen 2](power-bi-embedded-generation-2#autoscaling-in-embedded-gen2).
 
 > [!NOTE]
 > A scaling operation can take about a minute. During this time, the capacity will not be available. Embedded content may fail to load.
@@ -29,21 +31,21 @@ This assumes you have created a Power BI Embedded capacity. If you have not, see
 
     ![All services within Azure portal](media/azure-pbie-scale-capacity/azure-portal-more-services.png)
 
-3. Select the capacity you want to scale.
+3. Select the capacity you want to scale. Notice that the current scale is listed under **SKU** for each capacity.
 
     ![Power BI Embedded capacity list within Azure portal](media/azure-pbie-scale-capacity/azure-portal-capacity-list.png)
 
-4. Select **Pricing tier** under **Scale** within your capacity.
+    When you make your selection, information about the capacity is displayed on the right. This information again includes the current scaling under **SKU**.
 
-    ![Pricing tier option under scale](media/azure-pbie-scale-capacity/azure-portal-scale-pricing-tier.png)
+    ![Essential information](media/azure-pbie-scale-capacity/azure-portal-capacity-info.png)
 
-    Your current pricing tier is outlined in blue.
+4. Select **Change size** under **Scale** within your capacity.
 
-    ![Current pricing tier outlined in blue](media/azure-pbie-scale-capacity/azure-portal-current-tier.png)
+    ![Change size option under scale](media/azure-pbie-scale-capacity/azure-portal-scale-pricing-tier.png)
 
-5. To scale up or down, select the new tier to move to. Selecting a new tier places a dashed blue outline around the selection. Select **Select** to scale to the new tier.
+5. Select a scale and click **Resize**.
 
-    ![Select new tier](media/azure-pbie-scale-capacity/azure-portal-select-new-tier.png)
+    ![New scale selection](media/azure-pbie-scale-capacity/azure-portal-scale-pricing-info.png
 
     Scaling your capacity may take a minute or two to complete.
 
