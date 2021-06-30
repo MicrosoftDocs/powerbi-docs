@@ -214,7 +214,7 @@
         href: desktop-conditional-table-formatting.md
       - name: "Create dynamic, expression-based titles"
         href: desktop-conditional-format-visual-titles.md        
-      - name: "Sort by column"
+      - name: "Sort one column by another"
         href: desktop-sort-by-column.md
       - name: "Optimize reports for the mobile apps"
         href: desktop-create-phone-report.md
