@@ -18,7 +18,7 @@ This article walks through how to scale a Power BI Embedded capacity in Microsof
 
 This assumes you have created a Power BI Embedded capacity. If you have not, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md) to get started.
 
-For information about autoscaling in Embedded Gen 2 see [Autoscaling in Embedded Gen 2](power-bi-embedded-generation-2#autoscaling-in-embedded-gen2).
+For information about autoscaling in Embedded Gen 2, see [Autoscaling in Embedded Gen 2](power-bi-embedded-generation-2#autoscaling-in-embedded-gen2).
 
 > [!NOTE]
 > A scaling operation can take about a minute. During this time, the capacity will not be available. Embedded content may fail to load.
