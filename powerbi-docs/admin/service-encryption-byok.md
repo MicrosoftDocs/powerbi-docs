@@ -62,14 +62,14 @@ The instructions in this section assume basic knowledge of Azure Key Vault. For 
 
 1. Under **Key permissions**, select **Unwrap Key** and **Wrap Key**.
 
-    ![P B I X file select service principal and cryptographic operations](media/service-encryption-byok/key-permissions.png)
+    ![P B I X file select cryptographic operations.](media/service-encryption-byok/key-permissions.png)
 
 1. Under **Select principal**, search for and select Microsoft.Azure.AnalysisServices.
 
     > [!NOTE]
     > If you can't find "Microsoft.Azure.AnalysisServices", it's likely that the Azure subscription associated with your Azure Key Vault never had a Power BI resource associated with it. Try searching for the following string instead: 00000009-0000-0000-c000-000000000000.
 
-    ![P B I X file select service principal and cryptographic operations](media/service-encryption-byok/service-principal.png)
+    ![P B I X file select service principal.](media/service-encryption-byok/service-principal.png)
 
 1. Select **Add**, then **Save**.
 
