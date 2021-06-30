@@ -285,7 +285,7 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 
 1. On the **Insert** ribbon, select **Shapes** > **Rectangle**, and stretch it to be the width and height of Visuals 2 and 3. 
 1. In the **Format shape** pane, in the **Outline** section, change **Transparency** to **100%**. 
-2. In the **Fill** section, set the coloer to **White, 10% darker**.
+2. In the **Fill** section, set the color to **White, 10% darker**.
 3. On the **Format** tab, select **Send backward** > **Send to back**. 
 
 ### Finished report
