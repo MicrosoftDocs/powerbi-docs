@@ -45,7 +45,7 @@ For information about autoscaling in Embedded Gen 2, see [Autoscaling in Embedde
 4. Select **Change size** under **Scale** within your capacity.
 
     > [!div class="mx-imgBorder"]
-    > ![Change size option under scale](media/azure-pbie-scale-capacity/azure-portal-scale-pricing-tier.png)
+    > ![Change size option under scale](media/azure-pbie-scale-capacity/azure-portal-change-size.png)
 
 5. Select a scale and click **Resize**.
 
