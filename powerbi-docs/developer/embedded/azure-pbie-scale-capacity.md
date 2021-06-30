@@ -29,29 +29,35 @@ For information about autoscaling in Embedded Gen 2, see [Autoscaling in Embedde
 
 2. Select **All services** > **Power BI Embedded** to see your capacities.
 
-    ![All services within Azure portal](media/azure-pbie-scale-capacity/azure-portal-more-services.png)
+    > [!div class="mx-imgBorder"]
+    > ![All services within Azure portal](media/azure-pbie-scale-capacity/azure-portal-more-services.png)
 
 3. Select the capacity you want to scale. Notice that the current scale is listed under **SKU** for each capacity.
 
-    ![Power BI Embedded capacity list within Azure portal](media/azure-pbie-scale-capacity/azure-portal-capacity-list.png)
+    > [!div class="mx-imgBorder"]
+    > ![Power BI Embedded capacity list within Azure portal](media/azure-pbie-scale-capacity/azure-portal-capacity-list.png)
 
     When you make your selection, information about the capacity is displayed on the right. This information again includes the current scaling under **SKU**.
 
-    ![Essential information](media/azure-pbie-scale-capacity/azure-portal-capacity-info.png)
+    > [!div class="mx-imgBorder"]
+    > ![Essential information](media/azure-pbie-scale-capacity/azure-portal-capacity-info.png)
 
 4. Select **Change size** under **Scale** within your capacity.
 
-    ![Change size option under scale](media/azure-pbie-scale-capacity/azure-portal-scale-pricing-tier.png)
+    > [!div class="mx-imgBorder"]
+    > ![Change size option under scale](media/azure-pbie-scale-capacity/azure-portal-scale-pricing-tier.png)
 
 5. Select a scale and click **Resize**.
 
-    ![New scale selection](media/azure-pbie-scale-capacity/azure-portal-scale-pricing-info.png)
+    > [!div class="mx-imgBorder"]
+    > ![New scale selection](media/azure-pbie-scale-capacity/azure-portal-scale-pricing-info.png)
 
     Scaling your capacity may take a minute or two to complete.
 
 6. Confirm your tier by viewing the overview tab. The current pricing tier is listed.
 
-    ![Confirm current tier](media/azure-pbie-scale-capacity/azure-portal-confirm-tier.png)
+    > [!div class="mx-imgBorder"]
+    > ![Confirm current tier](media/azure-pbie-scale-capacity/azure-portal-confirm-tier.png)
 
 ## Next steps
 
