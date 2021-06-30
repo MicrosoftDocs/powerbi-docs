@@ -45,7 +45,7 @@ For information about autoscaling in Embedded Gen 2, see [Autoscaling in Embedde
 
 5. Select a scale and click **Resize**.
 
-    ![New scale selection](media/azure-pbie-scale-capacity/azure-portal-scale-pricing-info.png
+    ![New scale selection](media/azure-pbie-scale-capacity/azure-portal-scale-pricing-info.png)
 
     Scaling your capacity may take a minute or two to complete.
 
@@ -55,8 +55,10 @@ For information about autoscaling in Embedded Gen 2, see [Autoscaling in Embedde
 
 ## Next steps
 
-To pause or start your capacity, see [Pause and start your Power BI Embedded capacity in the Azure portal](azure-pbie-pause-start.md).
+> [!div class="nextstepaction"]
+> [Pause and start your Power BI Embedded capacity in the Azure portal](azure-pbie-pause-start.md)
 
-To begin embedding Power BI content within your application, see [How to embed your Power BI dashboards, reports, and tiles](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/).
+> [!div class="nextstepaction"]
+> [How to embed your Power BI dashboards, reports, and tiles](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/).
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
