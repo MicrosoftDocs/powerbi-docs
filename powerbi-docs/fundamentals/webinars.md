@@ -16,6 +16,12 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Upcoming webinars
 
+**Leverage M365 sensitivity labels to improve your Power BI deployment compliance and protect sensitive business data**  
+by Anton Fritz (Principal Program Manager, Power BI R&D) and Igor Bekerman (Microsoft 365 CxE)  Power BI is an industry leading business intelligence platform adopted by the world's largest enterprises (2021 Gartner Magic Quadrant I Microsoft Power BI). Power BI is the only BI product with built in data protection through Microsoft Information Protection.  
+by Anton Fritz (Principal Program Manager, Power BI R&D) and Igor Bekerman (Microsoft 365 CxE)   
+July 7th 8AM – 9AM PST, 2021   
+Sign-up link: [Microsoft corporate (eventbuilder.com)](https://mipc.eventbuilder.com/event/47133)
+
 [Upcoming webinars from the Power BI community](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks)
 
 ## Featured webinars
