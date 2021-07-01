@@ -17,7 +17,7 @@ When you find a report you like in a workspace or an app, you can make a copy of
 ## Prerequisites
 
 - To copy a report, you need a Pro or Premium Per User (PPU) license, even if the original report is in a workspace in a Premium capacity.
-- To copy a report to another workspace, or to create a report in one workspace based on a dataset in another workspace, you need Build permission for the dataset. For datasets in the original workspace, if you have at least the Contributor role you automatically have Build permission through your workspace role. You also need at least the Contributor role in the destination workspace. See [Roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md) for details.
+- To copy a report to another workspace, or to create a report in one workspace based on a dataset in another workspace, you need [Build permission for the dataset](service-datasets-build-permissions.md). For datasets in the original workspace, if you have at least the Contributor role you automatically have Build permission through your workspace role. You also need at least the Contributor role in the destination workspace. See [Roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md) for details.
 
 ## Save a copy of a report in a workspace
 
