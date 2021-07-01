@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/14/2020
+ms.date: 06/23/2021
 LocalizationGroup: Reports
 ---
 # Create a report from an Excel file in the Power BI service
