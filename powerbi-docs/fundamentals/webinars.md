@@ -20,15 +20,6 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 by Anton Fritz (Principal Program Manager, Power BI R&D) and Igor Bekerman (Microsoft 365 CxE)
 [Register to watch on June 7th, 8:00 AM – 9:00 AM (PST) 2021](https://mipc.eventbuilder.com/event/47133)
 
-
-
-
-
-
-
-July 7th 8AM – 9AM PST, 2021   
-Sign-up link: [Microsoft corporate (eventbuilder.com)](https://mipc.eventbuilder.com/event/47133)
-
 [Upcoming webinars from the Power BI community](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks)
 
 ## Featured webinars
