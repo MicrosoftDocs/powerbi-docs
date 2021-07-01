@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
-ms.date: 04/13/2021
+ms.date: 07/01/2021
 ---
 
 # Troubleshoot your embedded application
@@ -281,21 +281,23 @@ After acquiring the IError object, you should look at the appropriate common err
 
 ## Content rendering
 
-### Performance
+When you render Power BI content there are many variables that may impact your performance. To enhance your performance, we recommend that you follow the suggestions in this section.
 
-[Power BI Embedded performance](embedded-performance-best-practices.md)
+### Verify that the Power BI item loads in Power BI service
 
-### Rendering, or consumption, of embedded content, fails or times out
+To rule out issues with your application or the embedding APIs, verify that the item can be viewed in the Power BI service (powerbi.com).
 
-Make sure the embed token did not expire. Make sure you're checking the embed token expiration and refreshing it. For more information, see [Refresh token using JavaScript SDK](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Refresh-token-using-JavaScript-SDK-example).
+### Verify that your access token didn't expire
 
-### Report or dashboard doesn't load
+For security purposes, access tokens (An Azure AD token or an embed token) have a limited lifetime. You should constantly monitor your access token and refresh it if needed. For more information see [Refresh the access token](/javascript/api/overview/powerbi/refresh-token).
 
-If the user is unable to see the report or dashboard, make sure the report or dashboard loads correctly within powerbi.com. The report or dashboard doesn't work within your application if it doesn't load within powerbi.com.
+### Optimize your report's performance
 
-### Report or dashboard is performing slowly
+When a report isn't performing as expected, it's often to do with underlining issues in the report's design. Use the [performance analyzer](../../create-reports/desktop-performance-analyzer.md) to test and improve your report's performance.
 
-Open the file from Power BI Desktop, or within powerbi.com, and verify that performance is acceptable to rule out issues with your application or the embedding APIs.
+### Follow our best practices
+
+To get the best performing embedded content, we recommend that you follow the [Power BI embedded analytics best practices](embedded-performance-best-practices.md).
 
 ## Embed setup tool
 
