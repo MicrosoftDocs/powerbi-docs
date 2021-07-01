@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 05/19/2021
+ms.date: 07/01/2021
 ---
 # Power BI webinars
 [//]: # "Tatevik Tatero (tatevik.teroyan@simple-concepts.com) is a vendor who works with Chauncy Freels and helps to maintain this list of webinars"
