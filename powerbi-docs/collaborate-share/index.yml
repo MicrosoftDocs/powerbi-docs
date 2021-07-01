@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 12/15/2020
+  ms.date: 07/01/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -43,8 +43,8 @@ landingContent:
         links:
           - text: Add the Power BI app to Microsoft Teams
             url: service-microsoft-teams-app.md
-          - text: Chat in Microsoft Teams directly 
-            url: service-share-report-teams.md
+          - text: Get notifications in Teams about Power BI activity
+            url: service-teams-notifications.md
 
   # Card (optional)
   - title: Share your work
