@@ -39,7 +39,7 @@ Pausing your capacity prevents you from being billed. Pausing your capacity is g
 
     :::image type="content" source="media/azure-pbie-pause-start/azure-portal-pause-capacity.png" alt-text="Pause your capacity":::
 
-5. Select **Yes**, which confirms you want to pause the capacity.
+5. Select **Yes** to confirm you want to pause the capacity.
 
     :::image type="content" source="media/azure-pbie-pause-start/azure-portal-confirm-pause.png" alt-text="Confirm pause":::
 
@@ -61,7 +61,7 @@ Resume usage by starting your capacity. Starting your capacity also resumes bill
 
     :::image type="content" source="media/azure-pbie-pause-start/azure-portal-start-capacity.png" alt-text="Start your capacity":::
 
-5. Select **Yes**, which confirms you want to start the capacity.
+5. Select **Yes** to confirm you want to start the capacity.
 
     :::image type="content" source="media/azure-pbie-pause-start/azure-portal-confirm-start.png" alt-text="Confirm start":::
 
