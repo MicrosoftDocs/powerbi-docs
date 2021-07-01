@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 06/30/2021
+ms.date: 07/01/2021
 ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
 ---
