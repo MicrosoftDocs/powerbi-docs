@@ -418,7 +418,7 @@ function visualTransform(options: VisualUpdateOptions, host: IVisualHost): BarCh
 ```
 
 >[!NOTE]
->The next few functions in the barChart.ts file deal with color and creating the X axis. Those are optional and are discussed further down in this tutorial. This tutorial will continue from the `IVisual` function.
+>The next few functions in the `barChart.ts` file deal with color and creating the X axis. Those are optional and are discussed further down in this tutorial. This tutorial will continue from the `IVisual` function.
 
 ### Rendering
 
@@ -472,7 +472,7 @@ For cases where the X axis is rendered, this visual also handles word breaks in 
 
 #### Other update features
 
-In addition to scaling, this update method also handles selections and colors. These features are optional:
+In addition to scaling, this update method also handles selections and colors. These features are optional and will be discussed later:
 
 ```typescript
    /**
@@ -632,12 +632,46 @@ Your final barChart.ts file should look like [this](https://github.com/blacklead
 
 ## (Optional) Rendering the X axis
 
-Now that the visual can display data and rescale to the correct size, we can add an X-axis display to show the names of the categories.
+Now that the visual can display data and scale to the correct size, we can add optional features to customize it. First we'll add an X-axis display that shows the names of the categories.
+We already added an `enableAxis` property to the *capabilities* file and the barChartSettings interface.
+Add the following code to the `barChart.ts` file *before* the iVisual class to draw the X-axis:
 
+```typescript
+function getAxisTextFillColor(
+    objects: DataViewObjects,
+    colorPalette: ISandboxExtendedColorPalette,
+    defaultColor: string
+): string {
+    if (colorPalette.isHighContrast) {
+        return colorPalette.foreground.value;
+    }
+
+    return getValue<Fill>(
+        objects,
+        "enableAxis",
+        "fill",
+        {
+            solid: {
+                color: defaultColor,
+            }
+        },
+    ).solid.color;
+}
+```
 
 ## (Optional) Color
 
- 
+We already defined the `colorSelector` object in the *capabilities* file.
+
+We selected and assigned colors when defining individual data points, with [`IVisualHost`](#visual-transform). The `colorPalette` service manages these colors.
+
+Each data point is represented by a different color. We already incorporated color to the [BarChartDataPoint interface](#interfaces).
+
+We defined `visualTransform` as a construct that converts `dataView` to a view model that a bar chart can use. Since `visualTransform` iterates through the data points, it's an ideal place to assign colors.
+
+For more detailed instructions on how to add color to your bar chart go to [Add colors to your Power BI visual](add-colors-power-bi-visual.md)
+
+--------
 
 5. Change location of main source code in tsconfig and pbiviz
 
@@ -645,34 +679,17 @@ First, define the bar chart view model, and iterate on what's exposed to your vi
 Define the chart by creating a file in the src directory with the following.
 
 
- 
 
-We already defined the `colorSelector` object in the *capabilities* file. 
 
-To assign colors and select them when defining individual data points, you use `IVisualHost`.
 
-```typescript
-/**
- * Function that converts queried data into a view model that will be used by the visual
- *
- * @function
- * @param {VisualUpdateOptions} options - Contains references to the size of the container
- *                                        and the dataView which contains all the data
- *                                        the visual had queried.
- * @param {IVisualHost} host            - Contains references to the host which contains services
- */
-function visualTransform(options: VisualUpdateOptions, host: IVisualHost): BarChartViewModel {
-    /*Convert dataView to your viewModel*/
-}
 
-```
 
 ![Data bound object properties](./media/create-bar-chart/object-databound-property.png)
 
 ## Define and use ObjectEnumerationUtility
 
-Object property values are available as metadata on the `dataView`, but there's no service to help retrieve these properties. `ObjectEnumerationUtility` is a set of static functions you can use to retrieve object values from the `dataView`, and for other visual projects. The `ObjectEnumerationUtility` is optional, but is great for iterating through the `dataView` to retrieve object properties.
-Create a file called called *objectEnumerationUtility.ts* in the `src` folder. Copy the folowing code into it:
+Object property values are available as metadata on the `dataView`, but there's no service to help retrieve these properties. `ObjectEnumerationUtility` is a set of static functions used retrieve object values from the `dataView`, and for other visual projects. The `ObjectEnumerationUtility` is optional, but is great for iterating through the `dataView` to retrieve object properties.
+Create a file called called *objectEnumerationUtility.ts* in the `src` folder and copy the following code into it:
 
 ```typescript
 /**
@@ -702,11 +719,6 @@ See [objectEnumerationUtility.ts](https://github.com/Microsoft/PowerBI-visuals-s
 
 
 
-## Colors
-
-Color is one of the services available on `IVisualHost`.
-
-For instructions on how to add color to your bar chart go to [Add colors to your Power BI visual](add-colors-power-bi-visual.md)
 
 ## Selection and interactions
 
@@ -814,7 +826,6 @@ let barChartSettings: BarChartSettings = {
     }
 }
 ```
-
 
 ### Control property update logic
 
@@ -945,7 +956,7 @@ public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions):
 
 After providing a selector for each property, you get the following `dataView` object array:
 
-![Databound properties in source](./media/create-bar-chart/object-databound-property-source.png)
+![Data bound properties in source](./media/create-bar-chart/object-databound-property-source.png)
 
 Each item in the array `dataViews[0].categorical.categories[0].objects` corresponds to the concrete category of the dataset.
 
@@ -954,7 +965,7 @@ The function `getCategoricalObjectValue` just provides a convenient way of acces
 ## Other features
 
 * [Add a property pane slider to control opacity](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/e2e0bc5888d9a3ca305a7a7af5046068645c8b30)
-* [Add support for tooltips](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14).
+* [Add support for tooltips](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14)
 
 ## Packaging
 
@@ -986,9 +997,14 @@ For more detailed instructions on packaging a visual, see the [packaging the vis
 
 ## Next steps
 
-You can add the following features to your visual:
+> [!div class="nextstepaction"]
+> [Add a context menu to a visual](context-menu.md)
 
-* [Add a context menu to a visual](./context-menu.md)
-* [Add a landing page to a visual](./landing-page.md)
-* [Launch URL](./launch-url.md)
-* [Locale support](./localization.md)
+> [!div class="nextstepaction"]
+> [Add a landing page to a visual](landing-page.md)
+
+> [!div class="nextstepaction"]
+> [Launch URL](launch-url.md)
+
+> [!div class="nextstepaction"]
+> [Locale support](localization.md)
