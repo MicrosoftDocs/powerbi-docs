@@ -213,4 +213,4 @@ The following articles can help you learn more about Power BI, and about its int
 * [Using Azure Log Analytics in Power BI (Preview)](desktop-log-analytics-overview.md)
 * [Azure Log Analytics in Power BI FAQ](desktop-log-analytics-faq.md)
 * [What is Power BI Premium?](../../admin/service-premium-what-is.md)
-* [Organize work in the new workspaces in Power BI](../../collaborate-share/service-new-workspaces.md)
+* [The new workspace experience in Power BI](../../collaborate-share/service-new-workspaces.md)

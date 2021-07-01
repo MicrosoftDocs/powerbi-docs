@@ -29,7 +29,7 @@ landingContent:
             url: service-how-to-collaborate-distribute-dashboards-reports.md
       - linkListType: how-to-guide
         links:
-          - text: "Organize work in new workspaces"
+          - text: "The new workspaces"
             url: service-new-workspaces.md
 
   # Card (optional)
