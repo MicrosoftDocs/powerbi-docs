@@ -50,7 +50,7 @@ Any workspace admin can upgrade the workspace. For classic workspaces, to be a w
 
 2. During upgrade, you see the **Upgrading** message. It usually takes less than a minute to upgrade your workspace.
 
-1. After upgrade finishes, you see the **Success** dialog box. You see your new workspace experience, with the same name and contents. We recommend reading [Organize work in the new workspaces in Power BI](service-new-workspaces.md) so you're familiar with how new workspaces differ from classic workspaces.
+1. After upgrade finishes, you see the **Success** dialog box. You see your new workspace experience, with the same name and contents. We recommend reading about [the new workspaces in Power BI](service-new-workspaces.md) so you're familiar with how new workspaces differ from classic workspaces.
 
 ### Impact on other workspace users
 
@@ -95,7 +95,7 @@ We recommend evaluating whether to use the new Contributor role. After upgrade, 
 
 After upgrade, you may consider creating a security or Microsoft 365 group or distribution list for workspace admins, instead of managing access through role assignments to individual users.
 
-Read more about [roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces).
+Read more about [roles in the new workspaces](service-roles-new-workspaces.md).
 
 ## Licensing after upgrade
 
