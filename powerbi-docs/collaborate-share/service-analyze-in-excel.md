@@ -178,7 +178,7 @@ If you need to uninstall the **Analyze in Excel** feature, use the **Add or remo
 - Row-level security (RLS) is supported for Analyze in Excel. RLS is enforced at the data-model level, and is always applied to all users accessing data in the report. Read more about [row-level security](../admin/service-admin-rls.md).
 - There may be times when using Analyze in Excel that you get an unexpected result, or the feature doesn't work as you expected. See [Troubleshoot Analyze in Excel](desktop-troubleshooting-analyze-in-excel.md) for solutions to common issues.
 - Only Power BI datasets that use Import mode will preserve hierarchies in **Analyze in Excel** workbooks. Power BI datasets built on DirectQuery or composite models will not have their hierarchies retained when using **Analyze in Excel**.
-- **Analyze in Excel** does not support specifiying a locale by modifying the connection string after a workbook has been generated.
+- **Analyze in Excel** doesn't support specifying a locale by modifying the connection string _after_ a workbook has been generated.
 
 ## Next steps
 
