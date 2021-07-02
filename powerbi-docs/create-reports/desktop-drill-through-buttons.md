@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/26/2020
+ms.date: 07/02/2021
 LocalizationGroup: Create reports
 ---
 # Create a drillthrough button in Power BI
