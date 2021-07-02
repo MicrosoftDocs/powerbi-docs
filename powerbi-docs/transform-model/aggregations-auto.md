@@ -18,15 +18,14 @@ With automatic aggregations:
 
 - Big data isn't so big - By using MLs predictive modeling, report query patterns are analyzed to determine pre-defined aggregations to store in the dataset in-memory aggregations cache. The amount of pre-aggregated data stored in-memory is typically small, but can answer the majority of report queries.
 - Report visualizations are faster - An optimal percentage of report queries are returned by the in-memory aggregations cache instead of backend data source systems. Outlier queries that cannot be returned by the in-memory cache are passed directly to the data source using DirectQuery.
-- Fast dataset refresh - The in-memory cache stores only aggregated results. The number of rows stored is only a tiny fraction of import mode in-memory tables. With such a small amount of data kept in-memory, dataset refresh takes only a short amount of time.
-- Balanced architectures - Because most query results are returned by the Power BI query engine and in-memory aggregations cache, query processing load on data source systems at peak reporting times is significantly reduced.
+- Balanced architecture - Because most query results are returned by the Power BI query engine and in-memory aggregations cache, query processing load on data source systems at peak reporting times is significantly reduced.
 - Easy setup - Enable automatic aggregations and schedule one or more refreshes for the dataset - that's all it takes. With the first refresh, automatic aggregations takes over and begins creating the aggregations framework and optimal aggregations. The system automatically tunes itself over time, though with a single slide bar control you can easily fine-tune for your environment.
 
 ## Optimized query response
 
-With DirectQuery, each time a dataset user opens a report or interacts with a visualization, DAX queries are passed to the query engine and then on to the backend data source as SQL queries. The data source must then calculate and return aggregated results for each query. Compared to in-memory datasets, that round trip can be both time and process intensive, often causing slow query response times in report visualizations. Often, the size of data source tables make import dataset mode unfeasible.
+With DirectQuery, each time a dataset user opens a report or interacts with a visualization, DAX queries are passed to the query engine and then on to the backend data source as SQL queries. The data source must then calculate and return aggregated results for each query. Compared to import mode datasets that are stored in-memory, that round trip can be both time and process intensive, often causing slow query response times in report visualizations. 
 
-When enabled for a DirectQuery dataset, automatic aggregations use machine learning (ML) predictive modeling algorithms to determine client reporting query patterns. Because almost all report queries calculate an aggregated result, a percentage of those aggregations are then cached in-memory. Aggregated query results are then returned by the in-memory cache rather than being sent to and returned by the data source. Report and ad-hoc queries that require aggregations that are not included in the in-memory cache are passed to the backend data source, just like with typical DirectQuery.
+When enabled for a DirectQuery dataset, automatic aggregations use machine learning (ML) predictive modeling algorithms to determine client reporting query patterns. Because almost all report queries calculate an aggregated result, a percentage of those aggregations are then cached in-memory. Aggregated query results are then returned by the in-memory cache rather than being sent to and returned by the data source. Report and ad-hoc queries that require aggregations not included in the in-memory cache are passed to the backend data source, just like with typical DirectQuery.
 
 :::image type="content" source="media/aggregations-automatic/auto-aggregations.png" border="false" alt-text="Automatic aggregations diagram":::
 
@@ -62,7 +61,7 @@ To enable and configure automatic aggregations, you must have **Admin** permissi
     
     :::image type="content" source="media/aggregations-automatic/auto-aggs-enable.png" alt-text="Enable automatic aggregations":::
 
-1. In **Refresh schedule**, specify a refresh frequency and your time zone.
+1. In **Refresh schedule**, specify a refresh frequency and time zone.
 1. Click **Add another time**, and then specify one or more refreshes.
 
     :::image type="content" source="media/aggregations-automatic/auto-aggs-refresh.png" alt-text="Configure aggregations refresh dialog":::
@@ -77,7 +76,7 @@ By default, when you first enable automatic aggregations, the percentage of quer
 
 ### Adjusting the percentage
 
-Before adjusting the percentage of queries that will use the aggregations cache, be sure to allow several iterations of the learning/refresh operation to be completed. This gives the training algorithm time to analyze report queries over a broader time period and self-adjust accordingly. For example, if you've scheduled refreshes for daily frequency, you might want to wait a full week. User reporting patterns on some days of the week may be different than others.
+Before adjusting the percentage of queries that will use the aggregations cache, allow several iterations of the training/refresh operation to be completed. This gives the training algorithm time to analyze report queries over a broader time period and self-adjust accordingly. For example, if you've scheduled refreshes for daily frequency, you might want to wait a full week. User reporting patterns on some days of the week may be different than others.
 
 Increasing the percentage means a greater number of report queries are ranked higher and therefore aggregations for them are included in the in-memory aggregations cache. While increasing the percentage can mean more queries are answered from the in-memory cache, it can also mean longer training and refresh times. Training and refresh operations are process and resource intensive for both Power BI system and data source system resources. Increasing the percentage means more aggregations must be queried and calculated from data sources during training and refresh operations, increasing the probability of excessive use of system resources and potentially causing timeouts.
 
@@ -87,7 +86,7 @@ An optimal percentage strikes a balance between providing pre-aggregated results
 
 #### Query performance impact
 
-The **Query performance impact** lift chart provides an estimation of query run times as a function of the percentage of queries that will use cached aggregations. By default, the chart will show 0.0 for all metrics until at least one training/refresh operation is performed. After an initial training/refresh operation, the chart can help you determine if adjusting the percentage of queries that use the in-memory aggregations cache can potentially further improve query response.
+The **Query performance impact** lift chart provides an estimated report query run times as a function of the percentage of queries that will use cached aggregations. By default, the chart will show 0.0 for all metrics until at least one training/refresh operation is performed. After an initial training/refresh operation, the chart can help you determine if adjusting the percentage of queries that use the in-memory aggregations cache can potentially further improve query response.
 
 :::image type="content" source="media/aggregations-automatic/lift-chart.png" alt-text="Lift chart":::
 
@@ -97,7 +96,7 @@ Metrics:
 
 **Current query percentage** - An estimated duration in seconds for report queries answered from the in-memory aggregations cache, based on the percentage setting for the most recent training/refresh operation.
 
-**New query percentage** - An estimated duration in seconds for report queries answered from the in-memory aggregations cache for a newly selected percentage.
+**New query percentage** - An estimated duration in seconds for report queries answered from the in-memory aggregations cache for a newly selected percentage. As the percentage slider is changed, this metric reflects the potential change.
 
 ##### Set target to seconds
 
@@ -105,7 +104,7 @@ Threshold appears as a marker line on the lift chart. Use the threshold setting 
 
 #### Aggregation tables bar chart
 
-During training, automatic aggregations creates, alters, and deletes tables in the in-memory cache depending on the aggregations to be included in the cache. These tables contain only rows of aggregations and are not visible to report users.
+During training, automatic aggregations creates and deletes tables in the in-memory cache. The tables contain rows of aggregations and are not visible to report users.
 
 :::image type="content" source="media/aggregations-automatic/tables-chart.png" alt-text="Aggregation tables bar chart":::
 
@@ -115,19 +114,23 @@ During training, automatic aggregations creates, alters, and deletes tables in t
 
 ## Refresh
 
-Because aggregations are stored in-memory, it's necessary to refresh the dataset to keep aggregations stored in the in-memory cache in sync with new and updated data at the data source. When you first enable automatic aggregations, you must configure at least one refresh operation for either day or week frequency. In dataset settings, you can configure up to 48 refreshes each day. Dataset refreshes through the XMLA endpoint, however, are unlimited.
+Because aggregations are stored in the in-memory dataset aggregations cache, it's necessary to refresh the dataset to keep those aggregations in sync with new and updated data at the data source. When you first enable automatic aggregations, you must configure at least one refresh operation for either day or week frequency. The first refresh for the frequency you choose (Day or Week) includes the training process. During training, in-memory tables are created, updated, or dropped, and queries are sent to the data source to determine aggregations to be added. Aggregations data, however, is not loaded into the tables during training - it's loaded during the subsequent refresh operation. The training operation has a time limit of 60 minutes. Subsequent refreshes are refresh only operations. For example, if you choose a **Day** frequency and schedule refreshes at 4:00AM, 9:00AM, 2:00PM, and 7:00PM, the 4:00AM refresh each day will include both a training operation *and* a refresh operation. The 9:00AM, 2:00PM, and 7:00PM scheduled refreshes will be refresh operations only.
+
+If your data source is continuously being updated with near real time data, you may want to schedule more refreshes to ensure aggregations stored in the cached are more closely in sync with the data source. At the same time, refresh operations for both the Power BI service and data source systems can be resource intensive.  Refresh operations must be given enough time to complete before the next scheduled refresh begins.
+
+In dataset settings, you can configure up to 48 refreshes each day. Dataset refreshes through the XMLA endpoint, however, are unlimited.
 
 :::image type="content" source="media/aggregations-automatic/auto-aggs-refresh.png" alt-text="Configure refresh for automatic aggregations":::
 
-Data latency is the time between an update at the data source and when that update is reflected in a report. With DirectQuery, report queries are passed directly to the data source eliminating any delta between data at the data source and data stored in the dataset in-memory cache. 
+Data latency is the time between an update at the data source and when that update is reflected in a report. With DirectQuery, report queries are passed directly to and returned from the data source *almost* eliminating latency. We say *almost* because the time between data source system calculating and returning a result to the client report is in effect latency. between data at the data source and data stored in the dataset in-memory cache.
 
-The first refresh for the frequency you choose (Day or Week) includes the training process that builds, updates, or drops tables and rows from the in-memory cache. All subsequent refreshes that day or week update the in-memory cache aggregations only and will typically run much faster. For that first refresh, the training process allows up to 60 minutes to complete. During training, in-memory tables are created, updated, or dropped. Cardinality estimation queries are sent to the data source to determine rows to be added. Aggregations data, however, is not loaded into the tables during training - it's loaded during the subsequent refresh operation. The training operation has a time limit of 60 minutes. Subsequent refreshes are refresh only operations. For example, if you choose a **Day** frequency and schedule refreshes at 4:00AM, 9:00AM, 2:00PM, and 7:00PM, the 4:00AM refresh each day will include both a training operation *and* a refresh operation. The 9:00AM, 2:00PM, and 7:00PM scheduled refreshes will be refresh operations only.
 
-The time you choose for your first scheduled refresh should be when the data source system is least active and prior to users actively working with reports. For most organizations, this will be overnight or early in the morning, after any ETL or maintenance processes at the data source have completed. This will give the training process in the first refresh plenty of system resources to complete and ensure refresh operations get calculate aggregations from most recent source data. Be sure to schedule refreshes often enough so aggregations data stored in-memory most closely reflects that of data at the data source. At the same time, ensure you don't schedule so many refreshes that system resources are used unnecessarily.
+
+The time you choose for your first scheduled refresh should be when the data source system is least active and prior to users actively working with reports. For most organizations, this will be overnight or early in the morning, after any ETL or maintenance processes at the data source have completed. This will give the training process in the first refresh plenty of system resources to complete and ensure refresh operations query and calculate aggregations from most recent source data. Be sure to schedule refreshes often enough so aggregations data stored in-memory most closely reflects that of data at the data source. At the same time, ensure you don't schedule so many refreshes that system resources are used unnecessarily.
 
 A single refresh operation has a total time allowed limit of 5 hours. However, because aggregations tables are typically quite small compared to normal import tables, it's unlikely a refresh operation will exceed the time limit. The exception could be composite model datasets. If your dataset is already a composite model, and large tables are stored in-memory, refresh on those tables could take longer.
 
-If a refresh fails, it typically will be the first refresh that includes the training process, and it will likely be the training operation exceeds the 60 minute time limit. If a training or refresh operation fails, reduce the percentage of queries that use the in-memory aggregations cache.
+If a refresh fails, it typically will be the first refresh that includes the training process, and it will likely be the training operation exceeds the 60 minute time limit. 
 
 #### Cache refresh history
 
@@ -135,7 +138,7 @@ Each refresh operation is recorded in the dataset cache refresh history.
 
 :::image type="content" source="media/aggregations-automatic/cache-refresh-history.png" alt-text="":::
 
-Refresh history provides information about how scheduled training and refresh operations are going. Because the first scheduled refresh of the day or week includes the training operation, additional details about how much memory aggregations are using in the in-memory cache are provided. If you want to drill down a little further, click **Show** details.
+Refresh history provides information about how scheduled training and refresh operations are going. Because the first scheduled refresh of the day or week includes the training operation, additional details about how much memory aggregations are using in the in-memory cache are provided. If you want to drill down a little further, click **Show** details. Ensure your scheduled refresh operations are completing within and acceptable period. If a training or refresh operation fails, reduce the percentage of queries that use the in-memory aggregations cache. This will reduce the number of aggregations created, but allow more time for refresh operations to complete.
 
 ## User defined aggregations
 
