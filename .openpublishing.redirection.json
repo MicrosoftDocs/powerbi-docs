@@ -3617,8 +3617,13 @@
         },
         {
             "source_path": "powerbi-docs/service-report-save.md",
-            "redirect_url": "/power-bi/create-reports/service-report-save",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/create-reports/desktop-upload-desktop-files",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/service-report-save.md",
+            "redirect_url": "/power-bi/create-reports/desktop-upload-desktop-files",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-reports-visual-interactions.md",
