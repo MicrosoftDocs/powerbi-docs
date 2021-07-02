@@ -132,7 +132,7 @@ enumerateObjectInstances(options:EnumerateVisualObjectInstancesOptions):VisualOb
 
 * `objectName: string`, name of the object
 
-## destroy `optional`
+## destroy *(optional)*
 
 The destroy function is called when your visual is unloaded and can be used for clean up tasks such as removing event listeners.
 

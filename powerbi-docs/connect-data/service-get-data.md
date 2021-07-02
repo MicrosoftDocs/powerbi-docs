@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 06/16/2021
+ms.date: 06/10/2021
 LocalizationGroup: Get started
 ---
 # Data sources for the Power BI service
@@ -19,7 +19,7 @@ You can get data from any of the data sources in Power BI by selecting **Get Dat
 
 ![Screenshot of Get Data, showing it in lower left of Power B I service screen.](media/service-get-data/pbi-getdata-navigation-link.png) 
 
-After you select **Get Data**, you can choose the data you want to access
+After you select **Get data**, you can choose the data you want to access.
 
 ![Screenshot of the Get Data choices, showing the options to choose the data you want to access.](media/service-get-data/pbi-getdata-startscreen.png)
 

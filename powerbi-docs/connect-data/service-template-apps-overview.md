@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 12/14/2020
+ms.date: 12/15/2020
 ---
 
 # What are Power BI template apps?
@@ -29,7 +29,7 @@ Power BI Template Apps allow Power BI Pro or Power BI Premium users to gain imme
         [![Microsoft Project web app](./media/service-template-apps-overview/project-web.png)](https://app.powerbi.com/groups/me/getapps/services/pbi_msprojectonline.pbi-microsoftprojectwebapp)
     :::column-end:::
     :::column:::
-        [![Microsoft 365 Usage Analytics web app](./media/service-template-apps-overview/microsoft365-usage-analytics.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
+        [![Microsoft 365 Usage Analytics web app](./media/service-template-apps-overview/microsoft-365-usage-analytics.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
     :::column-end:::
     :::column:::
         [![Dynamic 365 Business Central - Sales web app](./media/service-template-apps-overview/dynamics-sales.png)](https://app.powerbi.com/groups/me/getapps/services/microsoftdynsmb.businesscentral_sales)
@@ -93,7 +93,8 @@ To publish a template app to the Power BI service and AppSource, you must meet t
 
 ## Tips 
 
-- Make sure your app includes sample data to get everyone started in a click. 
+- Make sure your app includes sample data to get everyone started in a click.
+- Limit dataset size (rule of thumb: PBIX < 10MBs). This typically means keeping the size of sample data as small as possible. 
 - Carefully examine your application by installing it in your tenant and in a secondary tenant. Make sure customers only see what you want them to see. 
 - Use AppSource as your online store to host your application. This way everyone using Power BI can find your app. 
 - Consider offering more than one template app for separate unique scenarios. 
@@ -116,6 +117,9 @@ See [Tips for authoring template apps in Power BI](service-template-apps-tips.md
 | Incremental refresh | Template apps do not support incremental refresh |
 | Power BI visuals | Only publicly available Power BI visuals are supported. [Organizational Power BI visuals](../developer/visuals/power-bi-custom-visuals-organization.md) not supported |
 | Sovereign clouds | Template apps are not available in sovereign clouds |
+| Composite models | Composite models should not be used in the app builder workspace. App installers can use composite models after installing the app  |
+| Large dataset storage format | Large dataset storage format is not supported for template apps   |
+
 
 ## Support
 For support during development, use [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). We actively monitor and manage this site. Customer incidents quickly find their way to the appropriate team.

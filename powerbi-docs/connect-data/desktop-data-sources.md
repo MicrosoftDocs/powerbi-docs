@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 06/17/2021
+ms.date: 06/21/2021
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
@@ -87,7 +87,7 @@ The **Database** category provides the following data connections:
 * Actian (Beta)
 * AtScale cubes
 * BI Connector
-* Data Virtuality LDW (Beta)
+* Data Virtuality LDW
 * Denodo
 * Dremio
 * Exasol
@@ -180,6 +180,7 @@ The **Online Services** category provides the following data connections:
 * Twilio (Beta)
 * Zendesk (Beta)
 * Asana (Beta)
+* Assemble Views (Beta)
 * Automation Anywhere
 * Emigo Data Source
 * Entersoft Business Suite (Beta)
@@ -225,6 +226,7 @@ The **Other** category provides the following data connections:
 * Acterys : Model Automation & Planning (Beta)
 * Anaplan Connector v1.0 (Beta)
 * Solver
+* BQE Core (Beta)
 * Bloomberg Data and Analytics (Beta)
 * Cherwell (Beta)
 * Cognite Data Fusion
@@ -233,13 +235,16 @@ The **Other** category provides the following data connections:
 * Information Grid (Beta)
 * Jamf Pro (Beta)
 * Kognitwin
+* MicroStrategy for Power BI
 * Paxata
 * QubolePresto (Beta)
 * Roamler (Beta)
 * Shortcuts Business Insights (Beta)
 * Siteimprove
-* Starburst Enterprise Presto (Beta)
+* Starburst Enterprise
+* SumTotal (Beta)
 * SurveyMonkey (Beta)
+* Microsoft Teams Personal Analytics (Beta)
 * Tenforce (Smart)List
 * TIBCO(R) Data Virtualization (Beta)
 * Vena (Beta)
@@ -314,7 +319,7 @@ When you select the **Export PBIDS** button, Power BI Desktop generates the PBID
 If you prefer to manually create your PBIDS files in a text editor, you must specify the required inputs for a single connection and save the file with the PBIDS extension. Optionally, you can also specify the connection mode as either DirectQuery or Import. If **mode** is missing/null in the file, the user who opens the file in Power BI Desktop is prompted to select **DirectQuery** or **Import**.
 
 > [!IMPORTANT]
-> Some data sources will generate an error if columns are encrypted in the data source. For example, if two or more columns in a Azure SQL Database are encrypted during an Import action, an error will be returned. For more information, see [SQL Database](/power-query/connectors/azuresqldatabase).
+> Some data sources will generate an error if columns are encrypted in the data source. For example, if two or more columns in an Azure SQL Database are encrypted during an Import action, an error will be returned. For more information, see [SQL Database](/power-query/connectors/azuresqldatabase).
 
 
 

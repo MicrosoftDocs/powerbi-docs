@@ -7,11 +7,11 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/07/2018
+ms.date: 06/22/2021
 LocalizationGroup: Dashboards
 ---
 # Create a QR code for a tile in Power BI to use in the mobile apps
-QR codes in Power BI can connect anything in the real world directly to related BI information &#151; no navigation or search needed.
+QR codes in Power BI can connect anything in the real world directly to related BI information - no navigation or search needed.
 
 You can create a QR code in the Power BI service for tiles in any dashboard, even in dashboards you can't edit. Then place the QR code in a key location. For example, you could paste it in an email, or print it out and paste it in a specific location. 
 
@@ -20,14 +20,13 @@ Colleagues you've shared the dashboard with can [scan the QR code for access to 
 
 ## Create a QR code for a tile
 1. Open a dashboard in the Power BI service.
-2. Select **More options** (...) in the top-right corner of the tile and select **Focus mode** ![Fullscreen icon](media/service-create-qr-code-for-tile/fullscreen-icon.jpg).
-3. Select **More options** (...) in the top-right corner and select **Generate QR code**. 
+1. Select the dropdown caret next to **File**, and select **Generate a QR code** from the menu.
    
-    ![Screenshot of a tile, showing a pointer from the ellipsis to Generate Q R code.](media/service-create-qr-code-for-tile/power-bi-create-qr-code-tile.png)
-4. A dialog box with the QR code appears. 
+   ![Screenshot showing a dashboard File menu with the Generate a Q R code command.](media/service-create-qr-code-for-tile/power-bi-create-qr-code-tile.png)
+1. A dialog box with the QR code appears. 
    
     ![Screenshot of a dialog, showing the Q R code is ready to download or save.](media/service-create-qr-code-for-tile/pbi_qrcode_opportunity_count.png)
-5. From here you can scan the QR code or download and save it so you can: 
+1. From here you can scan the QR code or download and save it so you can: 
    
    * Add it to an email or other document, or 
    * Print it and place it in a specific location. 

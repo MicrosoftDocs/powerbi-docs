@@ -32,7 +32,7 @@ Creating goals is a Power BI Premium feature, so you need either:
 
 You also need:
 
-- Admin, Member, or Contributor role in a workspace. Read more about [roles in the new workspaces](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces).
+- Admin, Member, or Contributor role in a workspace. Read more about [roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md).
 - [Build permission](../connect-data/service-datasets-build-permissions.md) for a dataset.
 
 ## Step 1: Create a scorecard 
@@ -108,7 +108,7 @@ All new goals created within scorecards have a default daily tracking cycle, whi
 
 Sharing is the easiest way to give people access to your scorecard in the Power BI service. You can share with people inside or outside your organization.  
 
-When you share a scorecard, the people you share it with can view and interact with it. They can also edit it if they have an [Admin, Member, or Contributor role in the workspace](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces). Users that have access to the scorecard see the same data you see in the scorecard. The coworkers you share with can also share with their coworkers, if you allow them to. The people outside your organization can view and interact with the scorecard, but can't share it.
+When you share a scorecard, the people you share it with can view and interact with it. They can also edit it if they have an [Admin, Member, or Contributor role in the workspace](../collaborate-share/service-roles-new-workspaces.md). Users that have access to the scorecard see the same data you see in the scorecard. The coworkers you share with can also share with their coworkers, if you allow them to. The people outside your organization can view and interact with the scorecard, but can't share it.
 
 - To share, select the **Share** button in the scorecard action bar and follow the steps outlined in the experience. It's the same as sharing a dashboard.
 

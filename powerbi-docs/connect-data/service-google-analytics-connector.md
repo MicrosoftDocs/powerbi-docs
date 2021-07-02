@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/08/2019
+ms.date: 06/10/2021
 LocalizationGroup: Connect to data
 ---
 # Use the Google Analytics connector for Power BI Desktop
@@ -17,7 +17,7 @@ LocalizationGroup: Connect to data
 
 You can connect to Google Analytics data using the **Google Analytics** connector. To connect, follow these steps:
 
-1. In **Power BI Desktop**, select **Get Data** from the **Home** ribbon tab.
+1. In **Power BI Desktop**, select **Get data** from the **Home** ribbon tab.
 2. In the **Get Data** window, select **Online Services** from the categories in the left pane.
 3. Select **Google Analytics** from the selections in the right pane.
 4. At the bottom of the window, select **Connect**.  

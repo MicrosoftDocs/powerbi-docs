@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/14/2020
+ms.date: 06/22/2021
 ms.custom: video-ymWqU5jiUl0
 LocalizationGroup: Reports
 ---
@@ -58,6 +58,7 @@ There are a few important considerations and limitations associated with downloa
 * Usage metric reports can't be downloaded to a .pbix file
 * Datasets modified by using the [XMLA endpoint](../admin/service-premium-connect-tools.md) can't be downloaded to a .pbix file.
 * If you create a Power BI report based on a dataset in one workspace and publish to a different workspace, you and your users won't be able to download it. The download feature is currently not supported in this scenario.
+* You can only download the original report. You can't download a copy of a report.
 
 ## Next steps
 
