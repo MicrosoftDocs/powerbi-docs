@@ -74,6 +74,7 @@ If however, the **Reset to default** button is greyed out, that means the report
 
 Another way to save your changes is with bookmarks. If the report *designer* enabled the **Personalize visual** feature for this report, you'll be able to change the sort order for a visual (and a lot more) and save it as a bookmark. If you see this icon  ![Screenshot of the personalize visual icon.](media/end-user-change-sort/power-bi-personalize-visual-icon.png) in the visual's header, then personalize visuals is enabled. 
 
+To learn more, see [Personalize visuals in a report](end-user-personalize-visuals.md)
 
 ## Considerations and troubleshooting
 
