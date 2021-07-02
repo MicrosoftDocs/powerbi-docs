@@ -87,7 +87,7 @@ The **Database** category provides the following data connections:
 * Actian (Beta)
 * AtScale cubes
 * BI Connector
-* Data Virtuality LDW (Beta)
+* Data Virtuality LDW
 * Denodo
 * Dremio
 * Exasol
@@ -180,6 +180,7 @@ The **Online Services** category provides the following data connections:
 * Twilio (Beta)
 * Zendesk (Beta)
 * Asana (Beta)
+* Assemble Views (Beta)
 * Automation Anywhere
 * Emigo Data Source
 * Entersoft Business Suite (Beta)
@@ -225,6 +226,7 @@ The **Other** category provides the following data connections:
 * Acterys : Model Automation & Planning (Beta)
 * Anaplan Connector v1.0 (Beta)
 * Solver
+* BQE Core (Beta)
 * Bloomberg Data and Analytics (Beta)
 * Cherwell (Beta)
 * Cognite Data Fusion
@@ -233,13 +235,16 @@ The **Other** category provides the following data connections:
 * Information Grid (Beta)
 * Jamf Pro (Beta)
 * Kognitwin
+* MicroStrategy for Power BI
 * Paxata
 * QubolePresto (Beta)
 * Roamler (Beta)
 * Shortcuts Business Insights (Beta)
 * Siteimprove
-* Starburst Enterprise Presto (Beta)
+* Starburst Enterprise
+* SumTotal (Beta)
 * SurveyMonkey (Beta)
+* Microsoft Teams Personal Analytics (Beta)
 * Tenforce (Smart)List
 * TIBCO(R) Data Virtualization (Beta)
 * Vena (Beta)

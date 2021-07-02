@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: pbi-deployment
-ms.date: 06/14/2021
+ms.date: 06/22/2021
 ---
 
 # Deployment pipelines troubleshooting
@@ -181,7 +181,25 @@ Datasets and dataflows are Power BI items that store data and contain both data 
 
 Multi-geo is supported. It may take longer to deploy content between stages in different geos.
 
+### How can I delete a pipeline that doesn't have an owner?
+
+When working with deployment pipelines, you might end up with a pipeline that doesn't have an owner. For example, a pipeline can be left without an owner when a user that owned it leaves the company without transferring ownership. When a pipeline doesn't have an owner, other users will not be able to access it. As a workspace can only be assigned to one pipeline, if it's assigned to a pipeline without an owner, nobody will be able to unassign it, and you'll not be able to use the workspace in another pipeline.
+
+When a pipeline is left without an owner, a Power BI administrator can use the [admin Power BI REST APIs](/rest/api/power-bi/admin) to add an owner to the pipeline, or delete it. To add an owner to the pipeline, use the [Admin - Pipelines UpdateUserAsAdmin](/rest/api/power-bi/admin/pipelines-update-user-as-admin) API.
+
+You can also review our PowerShell script, [AddUserToWorkspacePipeline](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/Admin-DeploymentPipelines-AddUserToWorkspacePipeline) (available form the [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples) GtHub repository), which lets you do the following:
+
+* *Manage pipeline access* - Add any user to a workspace in a pipeline.
+
+* *Reclaim workspace ownership* - Add any user to a workspace in a pipeline that doesn't have an owner, allowing you to unblock it.
+
+To use this scrip, you'll need to provide a *workspace name* and and a *user principal name (UPN)*. The script will find the pipeline that the workspace is assigned to, and add admin permissions to the user you specified.
+
 ## Paginated reports
+
+### Why can't I see a paginated report?
+
+To view a paginated report in the pipeline, you need to have a [paginated reports workload](./../developer/embedded/embed-paginated-reports-organization.md#enable-paginated-reports-workload) enabled on your capacity.
 
 ### Why can't I deploy a paginated report?
 

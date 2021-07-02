@@ -1,5 +1,5 @@
 ---
-title: Update, delete, and extract a Power BI template app
+title: Manage your published Power BI template app
 description: How to update, delete and extract template app.
 author: paulinbar
 ms.author: painbar
@@ -7,25 +7,36 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 05/04/2020
+ms.date: 06/21/2021
 ---
 
-# Update, delete, and extract template app
+# Manage your published template app
 
-Now that your app is in production, you can start over in the test phase, without disrupting the app in production.
+Now that your app is in production, when you want to make changes to the app, you can start over in the test phase, without interfering with the app in production.
+
 ## Update your app
 
-If you made the changes in Power BI Desktop, start at step (1). If you did not make the changes in Power BI Desktop, start at step (4).
+Go to the template app workspace. Then, if you made your changes in Power BI Desktop, start at Step 1. If you did not make any changes in Power BI Desktop, start at Step 2.
 
-1. Upload the updated dataset and overwrite the existing dataset. **Make sure to use the exact same dataset name**. Using a different name will create a new dataset for users that are updating the app.
-![Screenshot shows the Power B I Updating a template app with Dataset selected.](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset.png)
-1. Import the pbix file from your computer.
-![Screenshot shows the Get Data page with Get called out under Files.](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset2.png)
-1. Confirm the overwrite.
-![Screenshot shows a confirmation message that A dataset with the same name exists and the option to replace it.](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset3.png)
+1. Upload your updated dataset and **make sure to overwrite the existing dataset**.
+    * If the *.pbix* file you're uploading has the same name as the dataset and report used in the app, uploading will overwrite the existing dataset.
+    * If you're changing the name of the dataset and report used in the app, and the *.pbix* file you want to upload has a different name than the dataset and report used in the app, do the following:
+        * Rename the dataset and report used in the app so that their names exactly match the name of your updated *.pbix* file.
+        * Upload the your *.pbix* file and overwrite the existing dataset and report that you just renamed.
+    
+    In either case, when you upload, you must get to a dialog that asks for your permission to overwrite the dataset used in the app. If you do not overwrite the existing dataset, users will not be able to install your updated app.
+
+    >[!WARNING]
+    > Never delete the dataset used in the app. Doing so will make it impossible for users to update their apps.
+
+    The following animation shows how to upload a local *.pbix* file to the service, overwriting the currently used dataset. Start by choosing **New > Dataset**
+    
+    ![Amimated gif shows upload of .pbix file.](media/service-template-apps-update-extract-delete/template-app-update-overwrite-dataset.gif)
+
+
 
 1. In the **Release management** pane, select **Create app**.
-1. Go back through the app creation process.
+1. Go back through the app creation process. If you changed the changed the name of the dataset and report used in the app, you may want to rename the app as well.
 1. After you've set **Branding**, **Content**, **Control**, and **Access**, select **Create app** again.
 1. Select **Close** and go back to **Release management**.
 
@@ -41,7 +52,7 @@ If you made the changes in Power BI Desktop, start at step (1). If you did not m
 
    Your link is now live. **Note that the Promote app button at the pre-production stage is greyed out**. This is to prevent accidentally overwriting the live production link to the current app version before the Cloud Partner Portal has validated and approved the new app version.
 
-1. Submit your link again to the Cloud Partner Portal (CPP) by following the steps at [Power BI App offer update](/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer). In the Cloud Partner Portal, you must **publish** your offer again and have it validated and approved.
+1. Submit your link again to the Cloud Partner Portal (CPP) by following the steps at [Power BI App offer update](/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer). In the Cloud Partner Portal, you must **publish** your offer again and have it validated and approved. If you've changed the name of the app, be sure to change the name in the Cloud Partner Portal as well.
 
    When your offer is approved, the Promote app button will become active again. 
 1. Promote your app to the production stage.
@@ -52,7 +63,7 @@ If you made the changes in Power BI Desktop, start at step (1). If you did not m
 1. See installer [overwrite behavior](service-template-apps-install-distribute.md#overwrite-behavior) to learn how changes in the dataset affect the installed template app.
 1. When updating (overwriting) a template app, it first reverts back to sample data and will automatically reconnect with user's configuration (parameters & authentication). Until refresh is complete, the reports, dashboards, and org app will present the sample data banner.
 1. If you added a new query parameter to the updated dataset that requires users input - you must check the *required* check box. This will prompt the installer with the connection string after updating the app.
- ![required parameters](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset4.png)
+ ![required parameters](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset-4.png)
 
 ## Extract workspace
 Rolling back to the previous version of a template app is now easier than ever with the extract capability. The following steps will extract a specific app version from various release stages into a new workspace:
