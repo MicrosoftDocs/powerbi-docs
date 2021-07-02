@@ -13,7 +13,7 @@ LocalizationGroup: Share your work
 ---
 # Give users access to the new workspaces in Power BI
 
-After you [create one of the new workspaces](service-create-the-new-workspaces.md) in Power BI, or if you have an admin role in a workspace, you can give others access to it by adding them to the different roles. you'll want to give users access to it. Workspace creators are automatically admins. See [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces) for an explanation of the different roles.
+After you [create one of the new workspaces](service-create-the-new-workspaces.md) in Power BI, or if you have an admin role in a workspace, you can give others access to it by adding them to the different roles. you'll want to give users access to it. Workspace creators are automatically admins. See [Roles in the new workspaces](service-roles-new-workspaces.md) for an explanation of the different roles.
 
 > [!NOTE]
 > To enforce row-level security (RLS) for Power BI Pro users browsing content in a workspace, assign users the Viewer Role.
@@ -31,7 +31,7 @@ After you [create one of the new workspaces](service-create-the-new-workspaces.m
 9. Select **Add** > **Close**.
 
 ## Next steps
-* Read about [organizing work in the new workspaces experience in Power BI](service-new-workspaces.md)
+* Read about [the new workspaces experience in Power BI](service-new-workspaces.md)
 * [Create the new workspaces](service-create-the-new-workspaces.md)
 * [Publish an app from the new workspaces in Power BI](service-create-distribute-apps.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

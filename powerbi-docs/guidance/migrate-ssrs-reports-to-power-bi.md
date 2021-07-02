@@ -109,7 +109,7 @@ The goal of the _Prepare_ phase involves getting everything ready. It covers set
 
 1. Ensure the [Paginated Reports workload](../admin/service-admin-premium-workloads.md#paginated-reports) is enabled for your Power BI Premium capacity, and that it has sufficient memory.
 1. Verify support for your report [data sources](../paginated-reports/paginated-reports-data-sources.md), and set up a [Power BI Gateway](../connect-data/service-gateway-onprem.md) to allow connectivity with any on-premises data sources.
-1. Become familiar with Power BI security, and plan [how you'll reproduce your SSRS folders and permissions](/sql/reporting-services/security/secure-folders) with [Power BI workspaces and workspace roles](../collaborate-share/service-new-workspaces.md).
+1. Become familiar with Power BI security, and plan [how you'll reproduce your SSRS folders and permissions](/sql/reporting-services/security/secure-folders) with [Power BI new workspaces](../collaborate-share/service-new-workspaces.md).
 1. Become familiar with Power BI sharing, and plan how you'll distribute content by publishing [Power BI apps](../collaborate-share/service-create-distribute-apps.md).
 1. Consider using [shared Power BI datasets](../connect-data/service-datasets-build-permissions.md) in place of your SSRS shared data sources.
 1. Use [Power BI Desktop](../fundamentals/desktop-what-is-desktop.md) to develop mobile-optimized reports, possibly using the [Power KPI custom visual](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?tab=Overview) in place of your SSRS mobile reports and KPIs.
