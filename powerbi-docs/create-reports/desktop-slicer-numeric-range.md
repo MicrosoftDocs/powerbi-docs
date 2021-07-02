@@ -8,7 +8,7 @@ ms.custom: video-zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/06/2020
+ms.date: 07/02/2021
 LocalizationGroup: Create reports
 ---
 # Use the numeric range slicer in Power BI
