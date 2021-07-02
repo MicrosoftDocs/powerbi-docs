@@ -119,8 +119,8 @@ There are many ways to manage your alerts: from the dashboard tile itself, from 
 
    :::image type="content" source="media/end-user-alerts/power-bi-alert-modify.png" alt-text="Screenshot showing the Manage alerts window. Next to the Alert for Market Share alert, the arrow is called out.":::
 3. To delete an alert, select the trashcan to the right of the alert name.
-   
-      ![trashcan icon selected](media/end-user-alerts/power-bi-delete.png)
+
+   :::image type="content" source="media/end-user-alerts/power-bi-delete.png" alt-text="Screenshot showing the Manage alerts window. Next to the Alert for Market Share alert, the trashcan icon is called out.":::
 
 ### From the Power BI settings menu
 
