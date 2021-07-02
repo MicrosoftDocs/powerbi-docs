@@ -7,7 +7,7 @@ ms.reviewer: mibruhje
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 05/04/2020
+ms.date: 05/05/2020
 ---
 
 # Create a paginated report from a Power BI report or dataset
@@ -46,7 +46,7 @@ In this article, you learn how to create a paginated report from a Power BI repo
 
     :::image type="content" source="media/paginated-reports-download-rdl/power-bi-report-builder-finished-installing.png" alt-text="Screenshot of Create a paginated report dialog box.":::
 
-1. Select **Open file** in the browser window.
+1. Select **Open** in the browser window.
 
     :::image type="content" source="media/paginated-reports-download-rdl/power-bi-paginated-open-file.png" alt-text="Screenshot of selecting Open File in a browser.":::
 
