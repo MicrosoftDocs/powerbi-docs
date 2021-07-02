@@ -88,7 +88,7 @@ Now create your own funnel chart that shows the number of opportunities we have 
      
      ![details for Proposal bar](media/power-bi-visualization-funnel-charts/funnelhover-new.png)
 
-6. [Save the report](../create-reports/service-report-save.md).
+6. Save the report.
 
 ## Highlighting and cross-filtering
 For information about using the Filters pane, see [Add a filter to a report](../create-reports/power-bi-report-add-filter.md).
