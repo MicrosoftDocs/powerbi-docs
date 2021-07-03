@@ -126,7 +126,7 @@ Common characteristics of maturity level 500 include:
 
 Individuals—and the organization itself—continually learn, change, and improve. So, that means there's no formal end to adoption-related efforts. However, it is common that effort is reduced as higher maturity levels are reached.
 
-The remainder of this article introduces the second and third types of adoption: [user adoption](#user-adoption-stages) and [solution adoption](#solution-adoption-stages).
+The remainder of this article introduces the second and third types of adoption: [user adoption](#user-adoption-stages) and [solution adoption](#solution-adoption-phases).
 
 > [!NOTE]
 > The remaining articles in this series focus primarily on organizational adoption.
