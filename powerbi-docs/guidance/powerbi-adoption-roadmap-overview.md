@@ -12,7 +12,7 @@ ms.date: 06/30/2021
 
 # Power BI adoption roadmap
 
-The goal of this series of articles is to provide a technical roadmap. The roadmap presents a series of strategic and tactical considerations and action items that directly lead to successful Power BI adoption, and help build a data culture in your organization.
+The goal of this series of articles is to provide a roadmap. The roadmap presents a series of strategic and tactical considerations and action items that directly lead to successful Power BI adoption, and help build a data culture in your organization.
 
 Advancing adoption and cultivating a data culture is about more than implementing technology features. Technology can assist an organization in making the greatest impact, but a healthy data culture involves a lot of considerations across the spectrum of people, processes, and technology.
 
@@ -27,8 +27,8 @@ The areas in the above diagram include:
 | ![Area 1.](media/common/icon-01-red-30x30.png) | **Data culture:** Data culture refers to a set of behaviors and norms in the organization that encourages a data-driven culture. Building a data culture is closely related to adopting Power BI, and it is often a key aspect of an organization's digital transformation. |
 | ![Area 2.](media/common/icon-02-red-30x30.png) | **Executive sponsor:** An executive sponsor is someone with credibility, influence, and authority throughout the organization. They advocate for building a data culture and adopting Power BI. |
 | ![Area 3.](media/common/icon-03-red-30x30.png) | **Content ownership and management:** There are three primary strategies for how business intelligence (BI) content is owned and managed: business-led self-service BI, managed self-service BI, and enterprise BI. These strategies have a significant influence on adoption, governance, and the Center of Excellence (COE) operating model. |
-| ![Area 4.](media/common/icon-04-red-30x30.png) | **Content delivery scope:** There are four primary strategies for content delivery including personal BI, team BI, departmental BI, and enterprise BI. These strategies have a significant influence on adoption, governance, and the Center of Excellence (COE) operating model. |
-| ![Area 5.](media/common/icon-05-red-30x30.png) | **Center of Excellence:** A Power BI Center of Excellence (COE) is an internal team of technical and business experts. These experts actively assist others who are working with data within the organization. The COE forms the nucleus of the broader community to advance adoption goals that are aligned with the data culture vision. |
+| ![Area 4.](media/common/icon-04-red-30x30.png) | **Content delivery scope:** There are four primary strategies for content delivery including personal BI, team BI, departmental BI, and enterprise BI. These strategies have a significant influence on adoption, governance, and the COE operating model. |
+| ![Area 5.](media/common/icon-05-red-30x30.png) | **Center of Excellence:** A Power BI COE is an internal team of technical and business experts. These experts actively assist others who are working with data within the organization. The COE forms the nucleus of the broader community to advance adoption goals that are aligned with the data culture vision. |
 | ![Area 6.](media/common/icon-06-red-30x30.png) | **Governance:** Data governance is a set of policies and procedures that define the ways in which an organization wants data to be used. When adopting Power BI, the goal of governance is to empower the internal user community to the greatest extent possible, while adhering to industry, governmental, and contractual requirements and regulations. |
 | ![Area 7.](media/common/icon-07-red-30x30.png) | **Mentoring and user enablement:** A critical objective for adoption efforts is to enable users to accomplish as much as they can within the guardrails established by governance guidelines and policies. The act of mentoring users is one of the most important responsibilities of the COE. It has a direct influence on adoption efforts. |
 | ![Area 8.](media/common/icon-08-red-30x30.png) | **Community of practice:** A community of practice comprises a group of people with a common interest, who interact with and help each other on a voluntary basis. An active community is an indicator of a healthy data culture. It can significantly advance adoption efforts. |
@@ -47,7 +47,7 @@ Each individual article in this series discusses key topics associated with the 
 
 ## Power BI adoption
 
-Power BI adoption references the organization's state. It considers having effective processes, support, tools, and data available and integrated into regular ongoing patterns of usage for content creators, consumers, and stakeholders in the organization.
+Successful Power BI adoption involves making effective processes, support, tools, and data available and integrated into regular ongoing patterns of usage for content creators, consumers, and stakeholders in the organization.
 
 > [!IMPORTANT]
 > This series of adoption articles is focused on _organizational_ adoption. See the [Power BI adoption maturity levels article](powerbi-adoption-roadmap-maturity-levels.md) for an introduction to the three types of adoption: organizational, user, and solution.
@@ -77,7 +77,7 @@ The remaining articles in this Power BI adoption series discuss the following as
 > [!IMPORTANT]
 > You may be wondering how this Power BI adoption roadmap is different from the [Power BI adoption framework](https://github.com/pbiaf/powerbiadoption). The adoption framework was created primarily to support Microsoft partners. It is a lightweight set of resources to help partners deploy Power BI solutions for their customers.
 >
-> This Power BI adoption series is more current. It is intended to guide any person or organization that is using—or considering using—Power BI. If you're seeking to improve your existing Power BI implementation, or planning a new Power BI implementation, this adoption roadmap is a great place to start. You will will find a lot of valuable information in the [Power BI adoption framework](https://github.com/pbiaf/powerbiadoption), so we encourage you to review it, too.
+> This Power BI adoption series is more current. It is intended to guide any person or organization that is using—or considering using—Power BI. If you're seeking to improve your existing Power BI implementation, or planning a new Power BI implementation, this adoption roadmap is a great place to start. You will find a lot of valuable information in the [Power BI adoption framework](https://github.com/pbiaf/powerbiadoption), so we encourage you to review it.
 
 ## Target audience
 

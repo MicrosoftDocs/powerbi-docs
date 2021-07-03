@@ -44,7 +44,7 @@ All items in the above diagram are discussed throughout the remainder of this se
 
 ## Data culture vision
 
-The concept of data culture is imprecise, so it can make it difficult to define and measure. Even though it's challenging to articulate in a way that is meaningful, actionable, and measurable, it's important that you have a well-understood definition of what a healthy data culture means to your organization. This vision of a healthy data culture should:
+The concept of data culture is imprecise and can be difficult to define and measure. Even though it's challenging to articulate in a way that is meaningful, actionable, and measurable, it's important that you have a well-understood definition of what a healthy data culture means to your organization. This vision of a healthy data culture should:
 
 - Originate from the executive level.
 - Align with organizational objectives.
@@ -59,7 +59,7 @@ Data culture outcomes are not specifically mandated. Rather, the state of the da
 The initial motivation for establishing a data culture often comes from a specific strategic business problem or initiative. It may be:
 
 - A reactive change, such as responding to new agile competition.
-- A proactive change, such as initiating a new line of business, or expanding into new markets to seize a "green field" opportunity. It can be relatively easy to be data-driven from the beginning when there are fewer constraints and complications, compared with an established solution.
+- A proactive change, such as initiating a new line of business, or expanding into new markets to seize a "green field" opportunity. It can be relatively easy to be data-driven from the beginning when there are fewer constraints and complications, compared with an established organization.
 - Driven by external changes, such as pressure to eliminate inefficiencies and redundancies during an economic downturn.
 
 In any of these situations, there is often a specific area where the data culture takes root. The specific area could be a scope of effort that is smaller than the entire organization, even if it is still significant. Once necessary changes are made at this smaller scope, they can be incrementally replicated and adapted for the rest of the organization.
@@ -70,10 +70,10 @@ Although technology can help advance the goals of a data culture, implementing s
 
 A successful data culture depends on users working with the right data in their day-to-day activities. To achieve this goal, users need to find and access data sources, reports, and other artifacts.
 
-Data discovery is the ability to effectively search for, and locate, relevant data sources and artifacts across the organization. Primarily, data discovery is concerned with improving awareness that data exists, particularly when data is siloed in departmental systems. Once aware of its existence, users can formally request access to the data. Today, technology helps a lot with data discovery, advancing well past asking colleagues where to find data artifacts.
+Data discovery is the ability to effectively search for, and locate, relevant data sources and artifacts across the organization. Primarily, data discovery is concerned with improving awareness that data exists, particularly when data is siloed in departmental systems. Once aware of its existence, a user can go through the standard process to request access to the information. Today, technology helps a lot with data discovery, advancing well past asking colleagues where to find data artifacts.
 
 > [!TIP]
-> It's important to have a clear and simple process so users can request access to data. Knowing that a data artifact exists—but unable to access it within the guidelines and processes established by the domain owner—can be a source of frustration for users. It can force them to make inefficient workarounds.
+> It's important to have a clear and simple process so users can request access to data. Knowing that a data artifact exists—but unable to access it within the guidelines and processes established by the domain owner—can be a source of frustration for users. It can force them to use inefficient workarounds rather than pursue requesting access through the proper channels.
 
 Data discovery contributes to adoption efforts and the implementation of governance practices by:
 
@@ -103,7 +103,7 @@ Your organization's position on data democratization will have a wide-reaching i
 - Who can consume content? Is this decision different for external partners, customers, and suppliers?
 
 > [!WARNING]
-> If access to data and/or the ability to perform analytics is limited to a select number of individuals in the organization, it's typically a warning sign since the ability to work with data is a key characteristic of a data culture. It's difficult to scale data-driven decision-making when data democratization isn't a priority.
+> If access to data and/or the ability to perform analytics is limited to a select number of individuals in the organization, that’s typically a warning sign since the ability to work with data is a key characteristic of a data culture.
 
 ## Data literacy
 
@@ -128,7 +128,7 @@ How you go about improving data literacy in your organization depends on many fa
 Here are some considerations and key actions you can take to strengthen your data culture:
 
 - Give serious consideration to the type of data culture you want to cultivate. Ideally, it's from a position of user empowerment than a position of command and control.
-- Talk to stakeholders in different business units to understand what analytics practices are currently working well and what is not working well. It will lead to data-driven decision making. Conduct a series of workshops to understand current state and formulate the desired future state.
+- Talk to stakeholders in different business units to understand what analytics practices are currently working well and what isn't working well for data-driven decision-making. Conduct a series of workshops to understand current state and formulate the desired future state.
 - Talk to stakeholders in IT, BI, and/or the [COE](powerbi-adoption-roadmap-center-of-excellence.md) to understand what [governance](powerbi-adoption-roadmap-governance.md) constraints need consideration. These talks can present an opportunity to educate teams on topics like security and infrastructure, and what Power BI actually is (and that it's significantly more powerful than a query tool).
 - Verify the level of [executive sponsorship](powerbi-adoption-roadmap-executive-sponsorship.md) and support you have in place to advance data culture goals.
 - Make purposeful decisions about your BI strategy. It includes deciding what the ideal balance of business-led self-service BI, managed self-service BI, and enterprise BI should be for the key business units in the organization (discussed in the [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) article). Also consider how it relates to the extent of published content for personal BI, team BI, departmental BI, and enterprise BI (discussed in the [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md) article). Determine how these decisions affect your action plan.
@@ -140,11 +140,11 @@ The following maturity levels will help you assess the current state of your dat
 
 | **Level** | **State of data culture** |
 | --- | --- |
-| 100: Initial | There are business intelligence (BI) initiatives taking place—with some successes—in various areas of the organization. These activities are occurring in a somewhat chaotic manner, with few formal processes, and without a strategic plan.</br></br>A significant backlog of requests may exist for the enterprise BI team.</br></br>There is a lack of oversight and visibility into self-service BI operations. The successes or failures of BI solutions is not well-understood. |
+| 100: Initial | There are business intelligence (BI) initiatives taking place—with some successes—in various areas of the organization. These activities are occurring in a somewhat chaotic manner, with few formal processes, and without a strategic plan.</br></br>A significant backlog of requests may exist for the enterprise BI team.</br></br>There is a lack of oversight and visibility into self-service BI operations. The successes or failures of BI solutions are not well-understood. |
 | 200: Repeatable | Multiple teams have had measurable successes with self-service BI solutions.</br></br>Investments are made to identify the ideal balance of enterprise BI and self-service BI. |
 | 300: Defined | Specific goals are established for advancing the data culture, and these goals are implemented incrementally.</br></br>Effective self-service BI practices are incrementally—and purposely—replicated throughout more areas of the organization. |
 | 400: Capable | The data culture goals to employ informed decision-making are aligned with organizational objectives, actively supported by the executive sponsor, and directly impact on the adoption strategies put into place.</br></br>A healthy and productive partnership exists between the COE, business units, and IT.</br></br>It's common that individuals who take initiative in building valuable BI solutions are recognized and rewarded. |
-| 500: Efficient | Regular review of key performance indicators validate that data culture results are aligned with intentions.</br></br>It's common that the business value of BI solutions are regularly evaluated and measured, with feedback loops in place to encourage ongoing improvements.</br></br>Continual improvement of organizational adoption, user adoption, and solution adoption are top priorities. Learnings are incrementally adapted throughout the organization on an ongoing basis. |
+| 500: Efficient | Regular review of key performance indicators validate that data culture results are aligned with intentions.</br></br>The business value of BI solutions is regularly evaluated and measured; feedback loops encourage ongoing improvements.</br></br>Continual improvement of organizational adoption, user adoption, and solution adoption are top priorities. Learnings are incrementally adapted throughout the organization on an ongoing basis. |
 
 ## Next steps
 

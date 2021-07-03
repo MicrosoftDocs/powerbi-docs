@@ -27,38 +27,38 @@ Goals for a COE include:
 
 - Evangelizing a data-driven culture.
 - Promoting the adoption of Power BI.
-- Nurturing, mentoring, guiding, and educating internal users to increase their skill level and level of self-reliance.
+- Nurturing, mentoring, guiding, and educating internal users to increase their skills and level of self-reliance.
 - Coordinating efforts and disseminating knowledge across organizational boundaries.
 - Creating consistency and transparency for the user community, which reduces friction and pain points related to finding relevant data and analytics content.
 - Maximizing the benefits of self-service BI, while reducing the risks.
 - Reducing technical debt by helping make good decisions that increase consistency and result in fewer inefficiencies.
 
 > [!IMPORTANT]
-> One of the most powerful aspects of a COE is the cross-departmental insight into how Power BI is being used by the organization. It can reveal which practices work well and which don't. It can also facilitate a bottom-up approach to governance. Overriding goals of the COE are to learn which practices work well, share that knowledge more broadly, and replicate best practices across the organization.
+> One of the most powerful aspects of a COE is the cross-departmental insight into how Power BI is used by the organization. This insight can reveal which practices work well and which don't, that can facilitate a bottom-up approach to governance. A primary goal of the COE is to learn which practices work well, share that knowledge more broadly, and replicate best practices across the organization.
 
 ## Scope of COE responsibilities
 
-The scope of COE responsibilities can vary significantly between organizations. In a way, a COE can be thought of as a consultancy service because its members routinely provide expert advice to others. To varying degrees, most COEs take on hands-on work, too.
+The scope of COE responsibilities can vary significantly between organizations. In a way, a COE can be thought of as a consultancy service because its members routinely provide expert advice to others. To varying degrees, most COEs handle hands-on work too.
 
 Common COE responsibilities include:
 
-- Mentoring the internal Power BI community. For more information , see the [Community of practice](powerbi-adoption-roadmap-community-of-practice.md) article.
+- Mentoring the internal Power BI community. For more information, see the [Community of practice](powerbi-adoption-roadmap-community-of-practice.md) article.
 - Producing, curating, and promoting training materials. For more information, see the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article.
-- Creating documentation and resources to encourage adoption of standards and best practices. For more information, see the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article.
-- Applying, communicating, and assisting with governance guidelines. For more information , see the [Governance](powerbi-adoption-roadmap-governance.md) article.
-- Handling and assisting system oversight and administration. For more information ,see the [System oversight](powerbi-adoption-roadmap-system-oversight.md) article.
-- Responding to user support issues escalated from the help desk. For more information. see the [User support](powerbi-adoption-roadmap-user-support.md) article.
+- Creating documentation and resources to encourage consistent use of standards and best practices. For more information, see the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article.
+- Applying, communicating, and assisting with governance guidelines. For more information, see the [Governance](powerbi-adoption-roadmap-governance.md) article.
+- Handling and assisting with system oversight and administration. For more information, see the [System oversight](powerbi-adoption-roadmap-system-oversight.md) article.
+- Responding to user support issues escalated from the help desk. For more information, see the [User support](powerbi-adoption-roadmap-user-support.md) article.
 - Developing solutions and/or proofs of concept.
 - Establishing and maintaining the BI platform and data architecture.
 
 ## Staffing a COE
 
-People who are a good candidates as COE members tend to be those who:
+People who are good candidates as COE members tend to be those who:
 
 - Understand the analytics vision for the organization.
 - Have a desire to continually improve analytics practices for the organization.
 - Have a deep interest in, and expertise with, Power BI.
-- Have a deep interest to see Power BI used effectively and adopted successfully throughout the organization.
+- Are interested in seeing Power BI used effectively and adopted successfully throughout the organization.
 - Take the initiative to continually learn, adapt, and grow.
 - Readily share their knowledge with others.
 - Are interested in repeatable processes, standardization, and governance with a focus on user enablement.
@@ -88,11 +88,11 @@ Very generalized roles within a COE are listed below. It's common for multiple p
 | Data engineer | Plans Power BI deployment and architecture, including integration with Azure services and other data platforms. Publishes data assets which are utilized broadly across the organization. |
 | User support | Assists with the resolution of data discrepancies and escalated help desk support issues. |
 
-As mentioned previously, the scope of responsibilities for a COE can vary. Therefore, the roles found for COE member can vary, too.
+As mentioned previously, the scope of responsibilities for a COE can vary. Therefore, the roles found for COE members can vary too.
 
 ## Structuring a COE
 
-The COE structure can vary among organizations. The four most common ways you can structure the COE are: centralized, unified, federated, or decentralized. Additional variations exist, too.
+The selected COE structure can vary among organizations. The four most common ways you can structure the COE are: centralized, unified, federated, or decentralized. Additional variations exist too.
 
 > [!NOTE]
 > The following terms may differ to those defined for your organization, particularly the meaning of _federated_, which tends to have many different IT-related meanings.
@@ -125,7 +125,7 @@ A unified COE is a single, centralized, shared services team that has been expan
 
 **Cons:**
 
-- The embedded COE team members, who are dedicated to a specific business unit, have a different organizational chart responsibility than the people they serve directly within the business unit. It may potentially lead to complications, differences in priorities, or necessitate the involvement of the executive sponsor. The executive sponsor hopefully has a scope of authority that includes the COE and all involved business units to help resolve conflict.
+- The embedded COE team members, who are dedicated to a specific business unit, have a different organizational chart responsibility than the people they serve directly within the business unit. It may potentially lead to complications, differences in priorities, or necessitate the involvement of the executive sponsor. Preferably, the executive sponsor has a scope of authority that includes the COE and all involved business units to help resolve conflicts.
 
 ### Federated COE
 
@@ -139,7 +139,7 @@ A federated COE comprises a shared services team plus satellite members from eac
 
 **Cons:**
 
-- A federated approach requires strong leadership, excellent communication, robust project management, and ultra-clear expectations. It's because it involves core members plus satellite team members that span organizational boundaries.
+- Since core and satellite members span organizational boundaries, the federated COE approach requires strong leadership, excellent communication, robust project management, and ultra-clear expectations.
 - There's a higher risk of encountering competing priorities due to the federated structure.
 - This approach typically involves part-time people and/or _dotted line_ organizational chart accountability that can introduce competing time pressures.
 
@@ -159,8 +159,8 @@ Decentralized COEs are independently managed by business units.
 - Collaboration with a centralized team may be informal and/or inconsistent.
 - Inconsistent policies are created and applied across business units.
 - It's difficult to scale a decentralized model.
-- There's potential rework to bring one or more decentralized COEs inline with organizational-wide policies.
-- Larger business units with significant funding may have more resources available to them, which may not serve cost optimization goals from an organization-wide perspective.
+- There's potential rework to bring one or more decentralized COEs in alignment with organizational-wide policies.
+- Larger business units with significant funding may have more resources available to them, which may not serve cost optimization goals from an organizational-wide perspective.
 
 > [!IMPORTANT]
 > A highly centralized COE tends to be more _authoritarian_, while highly decentralized COEs tend to be more _siloed_. Each organization will need to weigh the pros and cons that apply to them to determine the best choice. For most organizations, the most effective approach tends to be the unified or federated, which bridges organizational boundaries.
@@ -177,10 +177,10 @@ When the COE operates as a cost center, it absorbs the operating costs. Generall
 
 When the COE operates as a profit center (for at least part of its budget), it could accept projects throughout the year based on funding from other business units. Sometimes this is called a _pull_ engagement model.
 
-Funding is important because it impacts on the way the COE communicates and engages with the internal community. As the COE experiences more and more successes, they may receive more requests from business units for help. It's especially the case as awareness grows throughout the organization.
+Funding is important because it impacts the way the COE communicates and engages with the internal community. As the COE experiences more and more successes, they may receive more requests from business units for help. It's especially the case as awareness grows throughout the organization.
 
 > [!TIP]
-> The choice of funding model can determine how the COE actively grows its influence and ability to help. The funding model can also have a big impact on where authority resides and how decision-making works. Further, it impacts the type of services a COE can offer, such as co-development projects and/or best practices reviews. For more information, see the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article.
+> The choice of funding model can determine how the COE actively grows its influence and ability to help. The funding model can also have a big impact on where authority resides and how decision-making works. Further, it impacts the types of services a COE can offer, such as co-development projects and/or best practices reviews. For more information, see the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article.
 
 Some organizations cover the COE operating costs with chargebacks to business units based on the usage metrics of Power BI. For a Power BI shared capacity, this could be based on number of active users. For Premium capacity, chargebacks could be allocated based on which business units are using the capacity. Ideally, chargebacks are directly correlated to the business value gained.
 
@@ -188,10 +188,10 @@ Some organizations cover the COE operating costs with chargebacks to business un
 
 Considerations and key actions you can take to establish or improve your Power BI COE:
 
-- Define the scope of responsibilities for the COE. Once it's known, identify the skills and competencies required to fulfill those responsibilities.
+- Define the scope of responsibilities for the COE. Once the scope is known, identify the skills and competencies required to fulfill those responsibilities.
 - Analyze whether the COE has the required systems and infrastructure in place to meet its goals and scope of responsibilities.
 - Determine what COE structure is most appropriate (centralized, unified, federated, or decentralized). Verify that staffing, roles and responsibilities, and appropriate organizational chart relationships (HR reporting) are in place.
-- Identify the internal customers, and any external customers, to be served by the COE. Identify also how the COE will generally engage with those customers (push model, pull model, or both).
+- Identify the internal customers, and any external customers, to be served by the COE. Identify how the COE will generally engage with those customers (push model, pull model, or both).
 - If you're starting out with a centralized or decentralized COE, consider how you will scale the COE over time with the unified or federated approach. Plan for any actions to take now that will facilitate future growth.
 - Verify the funding plan for the COE. Decide whether the COE is purely a cost center with an operating budget, whether it will operate partially as a profit center, and/or whether chargebacks to other business units will be required.
 - Create a [communications strategy](powerbi-adoption-roadmap-governance.md#governance-planning) to educate the Power BI community about the services the COE offers, and how to engage with the COE.
@@ -212,4 +212,4 @@ The following maturity levels will help you assess the current state of your COE
 
 In the [next article](powerbi-adoption-roadmap-governance.md) in the Power BI adoption roadmap series, learn about implementing governance guidelines, policies, and processes.
 
-Also, consider reading about [Microsoft's journey and experience with driving a data culture](center-of-excellence-microsoft-business-intelligence-transformation.md). This articles describes the importance of _discipline at the core_ and _flexibility at the edge_. It also shares Microsoft's views and experience about the importance of establishing a COE.
+Also, consider reading about [Microsoft's journey and experience with driving a data culture](center-of-excellence-microsoft-business-intelligence-transformation.md). This article describes the importance of _discipline at the core_ and _flexibility at the edge_. It also shares Microsoft's views and experiences about the importance of establishing a COE.

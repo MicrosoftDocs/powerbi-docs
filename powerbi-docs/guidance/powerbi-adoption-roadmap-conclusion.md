@@ -14,7 +14,7 @@ ms.date: 06/30/2021
 
 [!INCLUDE [powerbi-adoption-roadmap-context](includes/powerbi-adoption-roadmap-context.md)]
 
-This article concludes the series on Power BI adoption. It's hoped that the strategic and tactical considerations and action items presented in this series will assist you in your Power BI adoption efforts, and with creating a productive data culture in your organization.
+This article concludes the series on Power BI adoption. The strategic and tactical considerations and action items presented in this series will assist you in your Power BI adoption efforts, and with creating a productive data culture in your organization.
 
 This series covered the following aspects of adoption:
 
@@ -35,7 +35,9 @@ The rest of this article includes extra adoption-related resources that you migh
 
 ## Power BI adoption framework
 
-The [Power BI adoption framework](https://github.com/pbiaf/powerbiadoption) describes additional aspects of _how_ in more detail than the series of Power BI adoption articles. The original intent of the framework was to support Microsoft partners with a lightweight set of resources for use when helping their customers deploy and adopt Power BI.
+The [Power BI adoption framework](https://github.com/pbiaf/powerbiadoption) describes additional aspects of _how_ to adopt Power BI in more detail. The original intent of the framework was to support Microsoft partners with a lightweight set of resources for use when helping their customers deploy and adopt Power BI.
+
+The framework can augment this Power BI adoption roadmap series. The roadmap series focuses on the _why_ and _what_ of adopting Power BI, more so than the _how_.
 
 ## Enterprise deployment whitepaper
 
@@ -49,7 +51,7 @@ Consider reading about [Microsoft's journey and experience with driving a data c
 
 ## Power Platform adoption
 
-The Power Platform team has an excellent set of adoption-related content. It's primary focus is on Power Apps, Power Automate, and Power Virtual Agents. Many of these ideas presented in this content can be applied to Power BI also.
+The Power Platform team has an excellent set of adoption-related content. Its primary focus is on Power Apps, Power Automate, and Power Virtual Agents. Many of the ideas presented in this content can be applied to Power BI also.
 
 The [Power CAT Adoption Maturity Model](https://powerapps.microsoft.com/blog/power-cat-adoption-maturity-model-repeatable-patterns-for-successful-power-platform-adoption/), published by the Power CAT team, describes repeatable patterns for successful Power Platform adoption.
 

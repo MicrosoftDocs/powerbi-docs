@@ -14,7 +14,7 @@ ms.date: 06/30/2021
 
 [!INCLUDE [powerbi-adoption-roadmap-context](includes/powerbi-adoption-roadmap-context.md)]
 
-A critical objective for adoption efforts is to enable users to accomplish as much as they can within the requisite guardrails established by governance guidelines and policies. For this reason, the act of mentoring users is one of the most important responsibilities of the [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md) (COE), and it has a direct influence on how user adoption occurs. For more information about user adoption, see the [Power BI adoption maturity levels](powerbi-adoption-roadmap-maturity-levels.md#user-adoption-stages) article.
+A critical objective for adoption efforts is to enable users to accomplish as much as they can within the requisite guardrails established by [governance guidelines and policies](powerbi-adoption-roadmap-governance.md). For this reason, the act of mentoring users is one of the most important responsibilities of the [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md) (COE), and it has a direct influence on how user adoption occurs. For more information about user adoption, see the [Power BI adoption maturity levels](powerbi-adoption-roadmap-maturity-levels.md#user-adoption-stages) article.
 
 ## Skills mentoring
 
@@ -34,7 +34,7 @@ Office hours are a very popular and productive activity in many organizations. S
 The COE publishes the times for regular office hours when one or more COE members are available. Ideally, office hours are held on a regular and frequent basis. For instance, it could be every Tuesday and Thursday. Consider offering different time slots or rotating times if you have a global workforce.
 
 > [!TIP]
-> One option is to schedule an office hours each week. However, people may or may not show up, so that can end up being inefficient. Alternatively, consider leveraging [Microsoft Bookings](https://www.microsoft.com/microsoft-365/business/scheduling-and-booking-app) to schedule office hours. It shows the blocks of time when each COE expert is available, with Outlook integration ensuring availability is up to date.
+> One option is to set specific office hours each week. However, people may or may not show up, so that can end up being inefficient. Alternatively, consider leveraging [Microsoft Bookings](https://www.microsoft.com/microsoft-365/business/scheduling-and-booking-app) to schedule office hours. It shows the blocks of time when each COE expert is available, with Outlook integration ensuring availability is up to date.
 
 Office hours are an excellent user enablement approach because:
 
@@ -45,7 +45,7 @@ Office hours are an excellent user enablement approach because:
 
 Office hours benefit the COE as well because:
 
-- They're a great way for the COE to identify champions or people with specific skills, that the COE didn't previously know about.
+- They're a great way for the COE to identify champions or people with specific skills that the COE didn't previously know about.
 - The COE can learn what people throughout the organization are struggling with. It helps inform whether additional resources, documentation, or training might be required.
 
 > [!TIP]
@@ -118,7 +118,7 @@ Once the content has been deployed to the Power BI service, the best practices r
 From time to time, the COE may get involved with complex issues escalated from the help desk. For more information, see the [User support](powerbi-adoption-roadmap-user-support.md) article.
 
 > [!NOTE]
-> Offering mentoring services might be a culture shift for your organization. Your reaction might be that users don't usually ask for help with a tool like Excel, so why would they with Power BI? The answer lies in the fact that Power BI is an extraordinarily powerful tool, providing data preparation and data modeling capabilities in addition to data visualization. The complexity of the tool inherently means that there's a significant learning curve to develop mastery. Having the ability to aid and enable users can significantly improve their skills and increase the quality of their solutions—it reduce risks, too.
+> Offering mentoring services might be a culture shift for your organization. Your reaction might be that users don't usually ask for help with a tool like Excel, so why would they with Power BI? The answer lies in the fact that Power BI is an extraordinarily powerful tool, providing data preparation and data modeling capabilities in addition to data visualization. The complexity of the tool inherently means that there's a significant learning curve to develop mastery. Having the ability to aid and enable users can significantly improve their skills and increase the quality of their solutions—it reduces risks too.
 
 ## Centralized portal
 
@@ -139,31 +139,31 @@ A single centralized portal, or hub, is where the user community can find:
 > [!TIP]
 > In general, only 10%-20% of your community will go out of their way to actively seek out training and educational information. These types of people might naturally evolve to become your Power BI champions. Everyone else is usually just trying to get the job done as quickly as possible because their time, focus, and energy are needed elsewhere. Therefore, it's important to make information easy for your community users to find.
 
-The goal is to consistently direct users in the community to the centralized portal to find information. The corresponding obligation for the COE is to ensure that the information needed is there. It requires discipline when everyone is busy. It's an important priority.
+The goal is to consistently direct users in the community to the centralized portal to find information. The corresponding obligation for the COE is to ensure that the information users need is available in the centralized portal. Keeping the portal updated requires discipline when everyone is busy.
 
 In larger organizations, it may be difficult to implement one single centralized portal. When it's not practical to consolidate into a single portal, a centralized hub can serve as an aggregator, which contain links to the other locations.
 
 > [!IMPORTANT]
 > Although saving time finding information is important, the goal of a centralized portal is more than that. It's about making information readily available to help your user community do the right thing. They should be able to find information during their normal course of work, with as little friction as possible. Until it's easier to complete a task within the guardrails established by the COE and data governance team, some users will continue to complete their tasks by circumventing policies that are put in place. The recommended path must become the path of least resistance. Having a centralized portal can help achieve this goal.
 
-It takes time for community users to think of the centralized portal as their natural first stop for finding information. It takes consistent redirection to the portal to change habits. Sending someone a link to an original document location in the portal builds better habits than, for instance, including the answer in an email response. It's the same challenge described in the [User support](powerbi-adoption-roadmap-user-support.md#community-documentation) article (community documentation).
+It takes time for community users to think of the centralized portal as their natural first stop for finding information. It takes consistent redirection to the portal to change habits. Sending someone a link to an original document location in the portal builds better habits than, for instance, including the answer in an email response. It's the same challenge described in the [User support](powerbi-adoption-roadmap-user-support.md#community-documentation) article.
 
 ## Training
 
 A key factor for successfully enabling users in a Power BI community is training. It is important that the right training resources are readily available and easily discoverable. While some users are so enthusiastic about Power BI that they'll find information and figure things out on their own, it isn't true for most of the user community.
 
-Making sure your community of users has access to the training resources they need to be successful doesn't mean that you need to develop your own training content. Developing training content is often counterproductive due to the rapidly evolving nature of the product. Fortunately, an abundance of training resources are available in the worldwide community. A curated set of links goes a long way to help users organize and focus their training efforts, especially for tool training, which focuses on the technology. All external links should be validated by the COE for accuracy and credibility. It's a key opportunity for the COE to add value because COE stakeholders are in an ideal position to understand the learning needs of the community, and to identify and locate trusted sources of quality learning materials.
+Making sure your community users have access to the training resources they need to be successful doesn't mean that you need to develop your own training content. Developing training content is often counterproductive due to the rapidly evolving nature of the product. Fortunately, an abundance of training resources are available in the worldwide community. A curated set of links goes a long way to help users organize and focus their training efforts, especially for tool training, which focuses on the technology. All external links should be validated by the COE for accuracy and credibility. It's a key opportunity for the COE to add value because COE stakeholders are in an ideal position to understand the learning needs of the community, and to identify and locate trusted sources of quality learning materials.
 
 You'll find the greatest return on investment with creating custom training materials for _organizational-specific_ processes, while relying on content produced by others for everything else. It's also useful to have a short training class that focuses primarily on topics like how to find documentation, getting help, and interacting with the community.
 
 > [!TIP]
-> One of the goals of training is to help people learn new skills while helping them avoid bad habits. It can be a balancing act. For instance, you don't want to overwhelm people by adding in a lot of complexity and friction to a beginner-level class for report creators. However, it's a great investment to make newer content creators aware of things that could otherwise take them a while to figure out. An ideal example is teaching the ability to use live connection for reports to an existing dataset. By teaching this concept at the earliest logical time, you can save someone thinking they always need one dataset for every report and so encourage the good habit of reusing existing datasets across reports.
+> One of the goals of training is to help people learn new skills while helping them avoid bad habits. It can be a balancing act. For instance, you don't want to overwhelm people by adding in a lot of complexity and friction to a beginner-level class for report creators. However, it's a great investment to make newer content creators aware of things that could otherwise take them a while to figure out. An ideal example is teaching the ability to use a [live connection](../connect-data/desktop-report-lifecycle-datasets.md) to report from an existing dataset. By teaching this concept at the earliest logical time, you can save a less experienced creator thinking they always need one dataset for every report (and encourage the good habit of reusing existing datasets across reports).
 
-Some larger organizations experience a lot of continual employee transfers and turnover. It results in an increased need for a repeatable set of training resources.
+Some larger organizations experience continual employee transfers and turnover. Such frequent change results in an increased need for a repeatable set of training resources.
 
 ### Training resources and approaches
 
-There are many training approaches because people learn in different ways. If you can monitor and measure usage of your training materials, you'll learn over time what works best. Some training might be delivered more formally, such as classroom training with hands-on labs. While other types of training are less formal, such as:
+There are many training approaches because people learn in different ways. If you can monitor and measure usage of your training materials, you'll learn over time what works best. Some training might be delivered more formally, such as classroom training with hands-on labs. Other types of training are less formal, such as:
 
 - Lunch and learn presentations.
 - Short how-to videos targeted to a specific goal.
@@ -175,7 +175,7 @@ There are many training approaches because people learn in different ways. If yo
 The advantages of encouraging knowledge sharing among colleagues is described in the [Community of practice](powerbi-adoption-roadmap-community-of-practice.md) article.
 
 > [!TIP]
-> Whenever practical, learning should be correlated with building something meaningful and realistic. However, simple demo data does have value during a training course. It allows focusing on how to use the technology rather than the data itself. Consider following these types of training sessions by a _bring your own data_ type of session. These types of session encourage the learner to apply their new technical skills to an actual business problem. Try to include multiple facilitators from the COE during this type of follow-up session so questions can be answered quickly.
+> Whenever practical, learning should be correlated with building something meaningful and realistic. However, simple demo data does have value during a training course. It allows a learner to focus on how to use the technology rather than the data itself. After completion of introductory session(s), consider offering a _bring your own data_ type of session. These types of sessions encourage the learner to apply their new technical skills to an actual business problem. Try to include multiple facilitators from the COE during this type of follow-up session so questions can be answered quickly.
 
 The types of users you may target for training include:
 
@@ -191,7 +191,7 @@ The types of users you may target for training include:
 
 The completion of training can be a leading indicator for success with [user adoption](powerbi-adoption-roadmap-maturity-levels.md#user-adoption-stages). Some organizations grant badges, like _blue belt_ or _black belt_, as people progress through the training programs.
 
-Give some consideration to how you want to handle users at various stages of [user adoption](powerbi-adoption-roadmap-maturity-levels.md#user-adoption-stages). Training to onboarding new users (sometimes referred to as _training day zero_) and for less experienced users is very different to training for more experienced users.
+Give some consideration to how you want to handle users at various stages of [user adoption](powerbi-adoption-roadmap-maturity-levels.md#user-adoption-stages). Training to onboard new users (sometimes referred to as _training day zero_) and for less experienced users is very different to training for more experienced users.
 
 How the COE invests its time in creating and curating training materials will change over time as adoption and maturity grows. You may also find over time that some community champions want to run their own tailored set of training classes within their functional business unit.
 
@@ -208,7 +208,7 @@ Consider using [Microsoft Viva Learning](https://resources.techcommunity.microso
 
 In addition to Microsoft content and custom content produced by your organization, you may choose to provide your user community with a curated set of recommended links to trusted online sources. There is a wide array of videos, blogs, and articles produced by the worldwide community. The community comprises Power BI experts, [Microsoft Most Valued Professions (MVPs)](https://mvp.microsoft.com/), and enthusiasts. Providing a curated learning path that contains specific, reputable, current, and high quality resources will provide the most value to your user community.
 
-If you make the investment to create custom in-house training, consider creating short, targeted content that's targeted to solving one specific problem. It makes the training easier to find and consume. It's also easier to maintain and update over time.
+If you do make the investment to create custom in-house training, consider creating short, targeted content that focuses on solving one specific problem. It makes the training easier to find and consume. It's also easier to maintain and update over time.
 
 > [!TIP]
 > The **Help and Support** menu in the Power BI service is customizable. Once your centralized location for training documentation is operational, update the [tenant setting in the admin portal](admin-tenant-settings.md#publish-get-help-information) with the link. The link can then be accessed from menu when users select the **Get Help** option. Also, be sure to teach users about the **Help** ribbon tab in Power BI Desktop. It includes links to guided learning, training videos, documentation, and more.
@@ -239,21 +239,21 @@ Other aspects of Power BI can be managed by self-service users, decentralized te
 > [!TIP]
 > When planning for a centralized portal, as described earlier in this article, plan how to handle situations when guidance or governance policies need to be customized for one or more business units.
 
-There are also going to be some [governance](powerbi-adoption-roadmap-governance.md) decisions that have been made and documented, such as:
+There are also going to be some [governance](powerbi-adoption-roadmap-governance.md) decisions that have been made and should be documented, such as:
 
 - How to request content be certified.
 - What are the approved file storage locations.
 - What are the data retention and purge requirements.
 - What are the requirements for handling sensitive data and personally identifiable information (PII).
 
-Documentation should be located in your centralized portal, which is a searchable location where users already work. [Teams or SharePoint](/microsoft-365/community/should-i-store-my-files-in-teams-or-sharepoint-an-understanding-of-behind-the-scenes) work well. Creating documentation in either wiki pages or in documents can work equally well, provided that the content is organized well and is easy to find. Shorter documents that focus on accomplishing one topic are usually easier to consume than long, comprehensive documents.
+Documentation should be located in your centralized portal, which is a searchable location where, preferably, users already work. Either [Teams or SharePoint](/microsoft-365/community/should-i-store-my-files-in-teams-or-sharepoint-an-understanding-of-behind-the-scenes) work very well. Creating documentation in either wiki pages or in documents can work equally well, provided that the content is organized well and is easy to find. Shorter documents that focus on one topic are usually easier to consume than long, comprehensive documents.
 
 > [!IMPORTANT]
-> One of the most helpful pieces of documentation you can publish for the community is a description of the [tenant settings](admin-tenant-settings.md), and the group memberships required for each tenant setting. Users read about features and functionality online, and sometimes find that it doesn't work for them. When they are able to quickly lookup your organization's tenant settings, it can save them from becoming frustrated and attempts at creating workarounds. Effective documentation can reduce the number of help desk tickets that are submitted, too. It can also reduce the number of people who need to be assigned the Power BI administrator role (who might have this role solely for the purpose of viewing settings).
+> One of the most helpful pieces of documentation you can publish for the community is a description of the [tenant settings](admin-tenant-settings.md), and the group memberships required for each tenant setting. Users read about features and functionality online, and sometimes find that it doesn't work for them. When they are able to quickly look up your organization's tenant settings, it can save them from becoming frustrated and attempting workarounds. Effective documentation can reduce the number of help desk tickets that are submitted. It can also reduce the number of people who need to be assigned the Power BI administrator role (who might have this role solely for the purpose of viewing settings).
 
 Over time, you may choose to allow some documentation to be maintained by the community if you have willing volunteers. In this case, you may want to introduce an approval process for changes.
 
-When you see questions repeatedly arise in the Q&A forum (as described in the [User support](powerbi-adoption-roadmap-user-support.md) article), during office hours, or during lunch and learns, it's a great indicator that documentation may be appropriate. When the documentation exists, it allows colleagues to reference it when needed. It contributes to user enablement and a self-sustaining community.
+When you see questions repeatedly arise in the Q&A forum (as described in the [User support](powerbi-adoption-roadmap-user-support.md) article), during office hours, or during lunch and learns, it's a great indicator that creating new documentation may be appropriate. When the documentation exists, it allows colleagues to reference it when needed. It contributes to user enablement and a self-sustaining community.
 
 > [!TIP]
 > When creating custom documentation or training materials, reference existing Microsoft sites using links when possible. Since Power BI is in a continual state of evolution, it will reduce the level of documentation maintenance needed over time.
@@ -279,7 +279,7 @@ Power BI template files can improve efficiency and help people learn during the 
 - An example of report and/or dataset documentation can be included.
 
 > [!NOTE]
-> Providing templates not only saves your content creators time, it also helps them move quickly beyond an empty solution.
+> Providing templates not only saves your content creators time, it also helps them move quickly beyond a blank page in an empty solution.
 
 ## Considerations and key actions
 
@@ -287,7 +287,7 @@ Considerations and key actions you can take to establish, or improve, mentoring 
 
 - Establish regular office hours, ideally at least once per week (depending on demand from users as well as staffing and scheduling constraints).
 - Decide how you will communicate and advertise office hours to the user community.
-- Decide what the expectations will be for office hours, including allowed topics or types of issues user can bring, how the queue of requests will work, if any information should be submitted ahead of time, and whether any follow up afterwards can be expected.
+- Decide what the expectations will be for office hours, including allowed topics or types of issues users can bring, how the queue of requests will work, if any information should be submitted ahead of time, and whether any follow up afterwards can be expected.
 - Beyond office hours, consider what other types of mentoring services the COE could offer, such as co-development projects or best practices reviews.
 - Create a centralized portal to serve as the hub for Power BI training, documentation, and resources. The centralized portal should also provide links to other community resources such as the Q&A forum and how to find help.
 - Compile a curated list of reputable training resources that target the training needs and interests of your user community. Post the list in the centralized portal and create a schedule to review and validate the list.

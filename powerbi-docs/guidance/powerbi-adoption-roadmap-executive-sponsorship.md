@@ -20,7 +20,7 @@ Although some successes can be achieved by a few determined individual contribut
 
 - Formulating a strategic vision and priorities for BI and analytics.
 - Leading by example by actively using Power BI in a way that's consistent with data culture and adoption goals.
-- Allocating and prioritizing staff and resource.
+- Allocating staffing and prioritizing resources.
 - Approving funding (for example, Power BI licenses).
 - Communicating announcements that are of critical importance.
 - Decision-making, particularly for strategic-level governance decisions.
@@ -36,16 +36,16 @@ There are multiple ways to identify an executive sponsor.
 
 ### Top-down pattern
 
-An executive sponsor may be selected by a more senior executive. For example, the Chief Executive Officer (CEO) may hire a Chief Data Officer (CDO) or Chief Analytics Officer (CAO) to advance the organization's data culture objectives. The CDO or CAO then become the ideal candidate to become the executive sponsor for Power BI (or analytics in general).
+An executive sponsor may be selected by a more senior executive. For example, the Chief Executive Officer (CEO) may hire a Chief Data Officer (CDO) or Chief Analytics Officer (CAO) to advance the organization's data culture objectives. The CDO or CAO then becomes the ideal candidate to serve as the executive sponsor for Power BI (or analytics in general).
 
-Another example: The CEO may empower an existing executive, such as the Chief Financial Officer (CFO), because they have a good track record leading data and analytics in their organization. As the new executive sponsor, the CFO could then lead efforts to replicate the finance team's success to other areas of the organization.
+Here's another example: The CEO may empower an existing executive, such as the Chief Financial Officer (CFO), because they have a good track record leading data and analytics in their organization. As the new executive sponsor, the CFO could then lead efforts to replicate the finance team's success to other areas of the organization.
 
 > [!NOTE]
 > Having a Power BI executive sponsor at the C-level is an excellent indicator. It indicates that the organization recognizes the importance of data as a strategic asset and is advancing its data culture in a positive direction.
 
 ### Bottom-up pattern
 
-Alternatively, a candidate for the executive sponsor role could emerge due to the success they've delivered. For example, a business unit within the organization, such as Finance, has organically achieved great success with respect to their use of data and analytics. Essentially, they successfully formed their own data culture on a small scale. A leader who hasn't reached the executive level (such as a finance director) may then grow into the executive sponsor role by sharing successes with other business units across the organization.
+Alternatively, a candidate for the executive sponsor role could emerge due to the success they've experienced with BI. For example, a business unit within the organization, such as Finance, has organically achieved great success with respect to their use of data and analytics. Essentially, they successfully formed their own data culture on a small scale. A leader who hasn't reached the executive level (such as the Finance Director) may then grow into the executive sponsor role by sharing successes with other business units across the organization.
 
 The bottom-up approach is more likely to occur in smaller organizations. It's because the return on investment and strategic imperative of a data culture or digital transformation is not an urgent priority for C-level executives.
 

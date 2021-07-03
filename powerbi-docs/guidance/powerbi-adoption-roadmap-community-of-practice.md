@@ -26,18 +26,18 @@ The above diagram shows the following:
 - The **Center of Excellence (COE)** forms the nucleus of the community. It oversees the entire community and interacts most closely with its champions.
 - **Self-service content creators and subject matter experts (SMEs)** produce, publish, and support content that's used by their colleagues, who are consumers.
 - **Content consumers** view content produced by both self-service creators and enterprise BI developers.
-- **Champions** are a subset of the self-service content creators. It places champions in an excellent position to support their fellow content creators to generate effective Power BI solutions.
+- **Champions** are a subset of the self-service content creators. Champions are in an excellent position to support their fellow content creators to generate effective Power BI solutions.
 
 Champions are the smallest group among creators and SMEs. Self-service content creators and SMEs represent a larger number of people. Content consumers represent the largest number of people.
 
 > [!NOTE]
-> All references to the Power BI community in this adoption series of articles refer to internal users internal, unless explicitly stated otherwise. There's an active and vibrant worldwide community of bloggers and presenters who produce a wealth of knowledge about Power BI. However, internal users are the focus of this article.
+> All references to the Power BI community in this adoption series of articles refer to internal users, unless explicitly stated otherwise. There's an active and vibrant worldwide community of bloggers and presenters who produce a wealth of knowledge about Power BI. However, internal users are the focus of this article.
 
 For information about related topics including resources, documentation, and training provided for the Power BI community, see the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article.
 
 ## Champions network
 
-One important part of a community of practice is its _champions_. A champion is a Power BI content creator who works in a business unit that engages with the COE. A champion is recognized by their peers as the _go-to_ Power BI expert. A champion continually builds and shares their knowledge even if it's not an official part of their job role. Power BI champions are often influential. They are also helpful to their colleagues in many ways, such as solution development, learning, skills improvement, troubleshooting, and keeping up to date.
+One important part of a community of practice is its _champions_. A champion is a Power BI content creator who works in a business unit that engages with the COE. A champion is recognized by their peers as the _go-to_ Power BI expert. A champion continually builds and shares their knowledge even if it's not an official part of their job role. Power BI champions influence and help their colleagues in many ways including solution development, learning, skills improvement, troubleshooting, and keeping up to date.
 
 Champions emerge as leaders of the community of practice who:
 
@@ -121,9 +121,9 @@ The most critical communication objectives include ensuring your community membe
 
 There are generally four types of communication to plan for:
 
-1. **New employee communications** can be directed to new employees (and contractors). It's an excellent opportunity to provide onboarding materials for new employees to get started with Power BI. It can includes articles on topics like how to get Power BI Desktop installed, how to request a license, and where to find introductory training materials. It can also include general data governance guidelines that all users should be aware of.
+1. **New employee communications** can be directed to new employees (and contractors). It's an excellent opportunity to provide onboarding materials for new employees to get started with Power BI. It can include articles on topics like how to get Power BI Desktop installed, how to request a license, and where to find introductory training materials. It can also include general data governance guidelines that all users should be aware of.
 2. **Onboarding communications** can be directed to employees who are just acquiring a Power BI license or are getting involved with the Power BI community. It presents an excellent opportunity to provide the same materials as given to new employee communications (as mentioned above).
-3. **Ongoing communications** can include regular announcements and updates directed to all Power BI users, or a subsets of users. It can include announcing changes that are planned to key organizational content. For example, changes are to be published for a critical shared dataset that's used heavily throughout the organization. It can also include the announcement of new features from the [Microsoft Power BI blog](https://powerbi.microsoft.com/blog/) and [Microsoft Power BI release plan](https://powerbi.microsoft.com/roadmap/) updates. For more information about planning for change, see the [System oversight](powerbi-adoption-roadmap-system-oversight.md#planning-for-change) article. Feature announcements are more likely to receive attention from the reader if the message includes meaningful context about why it's important. (Although an RSS feed can be a helpful technique, with the frequent pace of change, it can become noisy and might be ignored.)
+3. **Ongoing communications** can include regular announcements and updates directed to all Power BI users, or subsets of users. It can include announcing changes that are planned to key organizational content. For example, changes are to be published for a critical shared dataset that's used heavily throughout the organization. It can also include the announcement of new features from the [Microsoft Power BI blog](https://powerbi.microsoft.com/blog/) and [Microsoft Power BI release plan](https://powerbi.microsoft.com/roadmap/) updates. For more information about planning for change, see the [System oversight](powerbi-adoption-roadmap-system-oversight.md#planning-for-change) article. Feature announcements are more likely to receive attention from the reader if the message includes meaningful context about why it's important. (Although an RSS feed can be a helpful technique, with the frequent pace of change, it can become noisy and might be ignored.)
 4. **Situational communications** can be directed to specific users or groups based on a specific occurrence discovered while [monitoring the platform](powerbi-adoption-roadmap-system-oversight.md#auditing-and-monitoring). For example, perhaps you notice a significant amount of sharing from the personal workspace a particular user, so you choose to send them some information about the benefits of workspaces and apps.
 
 > [!TIP]
@@ -149,7 +149,7 @@ Considerations and key actions you can take to initiate, grow, and sustain your 
 - Ensure champions have the resources they need, including:
   - Direct access to COE members.
   - Influence on data policies being implemented (for example, requirements for a dataset certification policy).
-  - Influence on best practices and guidance and how it's shared with the broader community (for example, recommendations for accessing a specific source system).
+  - Influence on the creation of best practices and guidance (for example, recommendations for accessing a specific source system).
 - Actively involve certain champions as satellite members of the COE. For more information about federating the COE, see the [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md#structuring-a-coe) article.
 - Create a feedback loop so champions can easily provide information or submit suggestions to the COE.
 - Routinely provide recognition and incentives for champions. Not only is praise an effective motivator, but the act of sharing examples of successful efforts can motivate and inspire others.
@@ -162,7 +162,8 @@ Considerations and key actions you can take improve knowledge sharing:
 
 Considerations and key actions you can take to introduce incentives:
 
-- Consider what type of incentives you could offer to your champions network, and to your broader internal community.
+- Consider what type of incentives you could offer to your champions network.
+- Consider what type of incentives you could offer to your broader internal community.
 
 Considerations and key actions you can take improve communications:
 
