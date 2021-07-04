@@ -40,7 +40,7 @@
       href: embedded-row-level-security.md
     - name: "Paginated reports Row-level security"
       href: paginated-reports-row-level-security.md
-    - name: "Multi-tenants solutions"
+    - name: "Multi-tenancy solutions"
       href: embed-multi-tenancy.md
     - name: "Connect a report using dynamic binding"
       href: embed-dynamic-binding.md
