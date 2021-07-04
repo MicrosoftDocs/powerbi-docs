@@ -33,7 +33,7 @@ Pausing your capacity prevents you from being billed. Pausing your capacity is g
 
 3. Select the capacity you want to pause.
 
-    :::image type="content" source="media/azure-pbie-pause-start/azure-portal-capacity-list.png" alt-text="Power BI Embedded capacity list ":::
+    :::image type="content" source="media/azure-pbie-pause-start/azure-portal-capacity-list-active.png" alt-text="Power BI Embedded capacity list ":::
 
 4. Select **Pause** above the capacity details.
 
@@ -55,7 +55,7 @@ Resume usage by starting your capacity. Starting your capacity also resumes bill
 
 3. Select the capacity you want to start.
 
-    :::image type="content" source="media/azure-pbie-pause-start/azure-portal-list-paused.png" alt-text="Power BI Embedded capacity list within Azure portal":::
+    :::image type="content" source="media/azure-pbie-pause-start/azure-portal-list.png" alt-text="Power BI Embedded capacity list within Azure portal":::
 
 4. Select **Start** above the capacity details.
 
