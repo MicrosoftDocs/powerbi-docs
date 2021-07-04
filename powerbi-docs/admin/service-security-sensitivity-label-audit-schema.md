@@ -22,7 +22,7 @@ Questions:
 
 ## ActionSource
 |Value |Member name  |Description  |
-|---------|---------|---------|
+|--|---------|---------|
 |2|Auto|An automatic process performed the action.|
 |3|Manual|A manual process performed the action.|
 
