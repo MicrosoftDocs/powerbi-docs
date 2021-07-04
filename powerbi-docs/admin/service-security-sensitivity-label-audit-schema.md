@@ -14,7 +14,7 @@ LocalizationGroup: Data from files
 
 Need some kind of description of what this is and isn't, plus links to other data
 Questions:
-* [Better name for "member"](/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32)? 
+* [Better name for "member"](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32)? 
 * What to call the ? column for Activity
 * RecordType, UserType also have numbers - we are not responsible? Link?
 * Some questions about Word doc: why do we need SensitivityLabelEventData? What is valid options?
@@ -66,7 +66,7 @@ Questions:
 |UserId|Edm.String|Yes||
 |[ActionSource](#actionsource)|Edm.Enum|Yes||
 |[ActionSourceDetail](#actionsourcedetail)|Edm.Enum|Yes| |	 
-|[LabelEventType)](#labeleventtype)|Edm.Enum|Yes||
+|[LabelEventType](#labeleventtype)|Edm.Enum|Yes||
 
 ## Next steps
 * [Sensitivity labels in Power BI](./service-security-sensitivity-label-overview.md)
