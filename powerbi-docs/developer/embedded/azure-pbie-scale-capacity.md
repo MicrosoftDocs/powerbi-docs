@@ -40,7 +40,7 @@ For information about autoscaling in Embedded Gen 2, see [Autoscaling in Embedde
     When you make your selection, information about that capacity is displayed next to it. This information again includes the current scaling under **SKU**.
 
     > [!div class="mx-imgBorder"]
-    > ![Essential information](media/azure-pbie-scale-capacity/azure-portal-capacity-info.png)
+    > ![Essential information](media/azure-pbie-scale-capacity/azure-portal-capacity-details.png)
 
 4. Select **Change size** under **Scale** within your capacity.
 
