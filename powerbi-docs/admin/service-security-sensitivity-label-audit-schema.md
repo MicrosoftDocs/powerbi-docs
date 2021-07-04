@@ -23,7 +23,7 @@ This article documents the information in the Power BI auditing schema that is s
 |---------|---------|---------|---------|
 |SensitivityLabelId|Edm.Guid||The guid of the new label. This field is only present when the activity key is SensitivityLabelApplied or SensitivityLabelChanged.|
 |OldSensitivityLabelId|Edm.Guid||The guid of the label on the artifact before the action. This field is only present when the activity key is SensitivityLabelChanged or SensitivityLabelRemoved.|
-|[ActionSource](#actionsource)|Edm.Enum|Yes|This field indicates whether the label change is the result of a automatic or manual process.|
+|[ActionSource](#actionsource)|Edm.Enum|Yes|This field indicates whether the label change is the result of an automatic or manual process.|
 |[ActionSourceDetail](#actionsourcedetail)|Edm.Enum|Yes|This field gives more detail about what caused the action to take place.|	 
 |[LabelEventType](#labeleventtype)|Edm.Enum|Yes|This field indicates whether the action resulted in a more restrictive label, less restrictive label, or a label of the same degree of sensitivity.|
 
@@ -45,8 +45,8 @@ This article documents the information in the Power BI auditing schema that is s
 |Value |Meaning  |Description  |
 |--|---------|---------|
 |0|None|There are no additional details.|
-|3|AutoByInheritance|The label change took place as a result of automatically triggered inheritance process|
-|4|AutoByDeploymentPipeline|The label change took place as a result automatically as a result of deployment pipeline process|
+|3|AutoByInheritance|The label change took place as a result of an automatically triggered inheritance process|
+|4|AutoByDeploymentPipeline|The label change took place automatically as a result of the deployment pipeline process|
 |5|PublicAPI|The label change action was performed by one of the following Power BI public admin REST APIs: [setLabels](https://docs.microsoft.com/rest/api/power-bi/admin/information-protection-set-labels-as-admin), [removeLabels](https://docs.microsoft.com/rest/api/power-bi/admin/information-protection-remove-labels-as-admin).|
 
 ## LabelEventType
