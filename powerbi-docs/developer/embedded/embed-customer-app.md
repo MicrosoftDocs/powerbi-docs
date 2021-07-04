@@ -56,19 +56,21 @@ In this tutorial, you'll use:
 
 ## Method
 
-To embed Power BI content in an *embed for your organization* solution, follow these steps:
+To embed Power BI content in an *embed for your customers* solution, follow these steps:
 
 1. [Configure your Azure AD app](#step-1---configure-your-azure-ad-app).
 
-2. [Get the embedding parameter values](#step-2---get-the-embedding-parameter-values).
+2. [Enable service principal access](#step-2---enable-service-principal-access).
 
-3. [Add the required NuGet packages](#step-3---add-the-required-nuget-packages)
+3. [Get the embedding parameter values](#step-3---get-the-embedding-parameter-values).
 
-4. [Enable server side authentication](#step-4---enable-server-side-authentication).
+4. [Add the required NuGet packages](#step-4---add-the-required-nuget-packages)
 
-5. [Build your app's client side](#step-5---build-your-apps-client-side).
+5. [Enable server side authentication](#step-5---enable-server-side-authentication).
 
-6. [Run your application](#step-6---run-your-application)
+6. [Build your app's client side](#step-6---build-your-apps-client-side).
+
+7. [Run your application](#step-7---run-your-application)
 
 ## Step 1 - Configure your Azure AD app
 
@@ -76,9 +78,13 @@ When your web app calls Power BI, it needs an [Azure AD token](embed-tokens.md#a
 
 If you don't have an Azure AD app, create one using the instructions in [Register an Azure AD application to use with Power BI](register-app.md).
 
-To configure your Azure AD app, follow the instructions in [Configure your Azure AD app](embed-sample-for-your-organization.md#configure-your-azure-ad-app).
+To configure your Azure AD app, follow the instructions in [Register an Azure AD application](embed-sample-for-customers.md#step-2---register-an-azure-ad-application).
 
-## Step 2 - Get the embedding parameter values
+## Step 2 - Enable service principal access
+
+After 
+
+## Step 3 - Get the embedding parameter values
 
 To embed your report, you'll need the following values:
 
@@ -118,7 +124,7 @@ If you don't know what's your domain or tenant ID, see [Find the Microsoft Azure
 >[!NOTE]
 >To get the report ID programmatically, use the [Get Reports In Group](/rest/api/power-bi/reports/getreportsingroup) API.
 
-## Step 3 - Add the required NuGet packages
+## Step 4 - Add the required NuGet packages
 
 Before you can start, you'll need to add the `Microsoft.Identity.Web`, and `Microsoft.PowerBI.Api` NuGet packages to your app.
 
@@ -140,7 +146,7 @@ If your app previously used `Microsoft.AspNetCore` to authenticate, remove this 
 dotnet remove package Microsoft.AspNetCore.Authentication.AzureAD.UI
 ```
 
-## Step 4 - Enable server-side authentication
+## Step 5 - Enable server-side authentication
 
 Enable server-side authentication in your app, by creating or modifying the files in the table below.
 
@@ -168,9 +174,9 @@ using Microsoft.Identity.Web;
 using Microsoft.Identity.Web.TokenCacheProviders;
 using Microsoft.Identity.Web.TokenCacheProviders.InMemory;
 using Microsoft.Identity.Web.UI;
-using UserOwnsData.Services;
+using AppOwnsData.Services;
 
-namespace UserOwnsData {
+namespace AppOwnsData {
 
   public class Startup {
 
@@ -273,7 +279,7 @@ The `RequiredScopes` field holds a string array containing a set of [delegated p
     using Microsoft.Rest;
     using Newtonsoft.Json;
     
-    namespace UserOwnsData.Services {
+    namespace AppOwnsData.Services {
     
       // A view model class to pass the data needed to embed a single report.
     	public class EmbeddedReportViewModel {
@@ -338,10 +344,10 @@ From the **Controllers** folder, open the **HomeController.cs** file and add to 
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using UserOwnsData.Models;
-using UserOwnsData.Services;
+using AppOwnsData.Models;
+using AppOwnsData.Services;
 
-namespace UserOwnsData.Controllers {
+namespace AppOwnsData.Controllers {
     [Authorize]
     public class HomeController : Controller {
 
@@ -372,7 +378,7 @@ namespace UserOwnsData.Controllers {
 }
 ```
 
-## Step 5 - Build your app's client side
+## Step 6 - Build your app's client side
 
 For client-side implementation, you'll need to create or modify the files in the table below
 
@@ -390,7 +396,7 @@ Create the **Embed.cshtml** file, which has a `div` element used as a container 
 2. Add the following code snippet to the **Embed.cshtml** file.
 
     ```html
-    @model UserOwnsData.Services.EmbeddedReportViewModel;
+    @model AppOwnsData.Services.EmbeddedReportViewModel;
 
     <div id="embed-container" style="height:800px;"></div>
     
@@ -472,7 +478,7 @@ The `powerbi.embed` function uses the `models` configuration object to embed you
     });
     ```
 
-## Step 6 - Run your application
+## Step 7 - Run your application
 
 After you've made all the adjustments listed in this tutorial, you're ready to run your application. Execute your application and experiment with the way your Power BI report is embedded. You can use the [Power BI embedded analytics Client APIs](/javascript/api/overview/powerbi/) to enhance your app using client side APIs.
 
