@@ -6,7 +6,7 @@ ms.author: painbar
 manager: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-eim
-ms.topic: Reference
+ms.topic: reference
 ms.date: 07/03/2021
 LocalizationGroup: Data from files
 ---
@@ -22,9 +22,9 @@ ArtifactType: (Edm.Enum)
 |SensitivityLabelId|Edm.Guid||
 |OldSensitivityLabelId|Edm.Guid| |
 |UserId|Edm.String|Yes||
-|[ActionSource](#actionsource)|Edm.Enum|Yes||
-|[ActionSourceDetail](#actionsourcedetail)|Edm.Enum|Yes| |	 
-|[LabelEventType)](#labeleventtype)|Edm.Enum|Yes||
+|[ActionSource](#actionsource-enum)|Edm.Enum|Yes||
+|[ActionSourceDetail](#actionsourcedetail-enum)|Edm.Enum|Yes| |	 
+|[LabelEventType)](#labeleventtype-enum)|Edm.Enum|Yes||
 
 ## ActionSource (Enum)
 value Member Description
@@ -34,7 +34,7 @@ value Member Description
 |2|Auto||
 |3|Manual||
 
-## LabelEventType(Enum) 
+## LabelEventType (Enum) 
 |Value |Member  |Description  |
 |---------|---------|---------|
 |1|LabelUpgraded|| 
@@ -42,7 +42,7 @@ value Member Description
 |3|LabelRemoved||
 |4|LabelChangedSameOrder||
 
-## ArtifactType(Enum): 
+## ArtifactType (Enum): 
 |Value |Member  |Description  |
 |---------|---------|---------|
 |1|Dashboard||
@@ -50,7 +50,7 @@ value Member Description
 |3|Dataset||
 |7|Dataflow||
 
-## ActionSourceDetail(Enum)
+## ActionSourceDetail (Enum)
 |Value |Member  |Description  |
 |---------|---------|---------|
 |0|None||
