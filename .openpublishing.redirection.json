@@ -1652,17 +1652,17 @@
         },
         {
             "source_path": "powerbi-docs/developer/migrate-code-snippets.md",
-            "redirect_url": "/power-bi/developer/embedded/migrate-code-snippets",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/migrate-from-powerbi-embedded.md",
-            "redirect_url": "/power-bi/developer/embedded/migrate-from-powerbi-embedded",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/migrate-tool.md",
-            "redirect_url": "/power-bi/developer/embedded/migrate-tool",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
             "redirect_document_id": false
         },
         {
@@ -3909,6 +3909,21 @@
             "source_path": "powerbi-docs/developer/embedded/embedding.md",
             "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
             "redirect_document_id": false
-        }
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/migrate-from-powerbi-embedded.md",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/migrate-tool.md",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/migrate-code-snippets.md",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
+            "redirect_document_id": false
+        }        
     ]           
 }
