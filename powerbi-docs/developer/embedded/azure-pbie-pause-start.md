@@ -55,7 +55,7 @@ Resume usage by starting your capacity. Starting your capacity also resumes bill
 
 3. Select the capacity you want to start.
 
-    :::image type="content" source="media/azure-pbie-pause-start/azure-portal-list.png" alt-text="Power BI Embedded capacity list within Azure portal":::
+    :::image type="content" source="media/azure-pbie-pause-start/azure-portal-capacity-list.png" alt-text="Power BI Embedded capacity list within Azure portal":::
 
 4. Select **Start** above the capacity details.
 
