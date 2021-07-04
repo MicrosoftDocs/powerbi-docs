@@ -58,7 +58,17 @@ You should now have a new folder for your visual with the following files and fo
 
 For a detailed explanation of the function of each of these files see [Power BI visual project structure](visual-project-structure.md).
 
-The two files we'll focus on in this tutorial are the `capabilities.json` file, which describes the visual to the host,  and the `src/barchart.ts` file, which replaces the `src/visual.ts` file as the one containing the visual's API.
+The two files we'll focus on in this tutorial are the `capabilities.json` file, which describes the visual to the host, and the `src/barchart.ts` file, which replaces the `src/visual.ts` file as the one containing the visual's API.
+
+The [`tsconfig.json`](visual-project-structure.md#tsconfigjson) file contains an object called "files" which contains a path the the file where the main class of the visual is located. The default file is called `visual.ts`. We are giving the file the more descriptive name of `barChart.ts`. Change the name of the file in `tsconfig.json` to `src/barChart.ts`
+
+```typescript
+"files": [
+    "src/barChart.ts"
+  ]
+```
+
+Your final `tsconfig.json` file should look like [this](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/tsconfig.json).
 
 Creating a bar chart visual involves the following steps:
 
@@ -673,18 +683,7 @@ For more detailed instructions on how to add color to your bar chart go to [Add 
 
 --------
 
-5. Change location of main source code in tsconfig and pbiviz
 
-First, define the bar chart view model, and iterate on what's exposed to your visual as you build it.
-Define the chart by creating a file in the src directory with the following.
-
-
-
-
-
-
-
-![Data bound object properties](./media/create-bar-chart/object-databound-property.png)
 
 ## Define and use ObjectEnumerationUtility
 
@@ -962,7 +961,7 @@ Each item in the array `dataViews[0].categorical.categories[0].objects` correspo
 
 The function `getCategoricalObjectValue` just provides a convenient way of accessing properties by their category index. You must provide an `objectName` and `propertyName` that match the object and property in *capabilities.json*.
 
-## Other features
+## Adding other features
 
 * [Add a property pane slider to control opacity](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/e2e0bc5888d9a3ca305a7a7af5046068645c8b30)
 * [Add support for tooltips](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14)
@@ -987,6 +986,8 @@ For more detailed instructions on packaging a visual, see the [packaging the vis
     ```
 
 4. Start the development app by running `pbiviz start` from the Powershell. Your visual is now running while being hosted on your computer.
+
+5. Change location of main source code in tsconfig and pbiviz
 
     >[!IMPORTANT]
     >Do not close the PowerShell window until the end of the tutorial. To stop the visual from running, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
