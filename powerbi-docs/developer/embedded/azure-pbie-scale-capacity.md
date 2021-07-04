@@ -9,7 +9,7 @@ tags: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 06/30/2021
+ms.date: 07/01/2021
 ---
 
 # Scale your Power BI Embedded capacity in the Azure portal
