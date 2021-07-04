@@ -26,7 +26,7 @@ Users also need Build permissions to work with the data *outside* Power BI:
 
 You give Build permission for a dataset in a few different ways:
 
-- Members of a workspace with at least a Contributor role automatically have Build permission for datasets in that workspace, and permission to copy a report. Read more about [roles in the new workspaces](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces).
+- Members of a workspace with at least a Contributor role automatically have Build permission for datasets in that workspace, and permission to copy a report. Read more about [roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md).
  
 - Members of the workspace where the dataset resides can assign the permission to specific users or security groups in the Permission center. If you're a member of the workspace, select **More options** (...) next to a dataset > **Manage Permissions**.
 
@@ -97,7 +97,7 @@ Certain actions, such as creating a report on top of a dataset or accessing the 
  
 ### Changing the access request behavior
 
-If you have an [Admin, Member, or Contributor role](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) on the workspace where the dataset is located, you can change the default access request behavior using the Request access options that are available in the dataset settings.
+If you have an [Admin, Member, or Contributor role](../collaborate-share/service-roles-new-workspaces.md) on the workspace where the dataset is located, you can change the default access request behavior using the Request access options that are available in the dataset settings.
 
 ![Screenshot of the Request access configuration dialog in the dataset settings.](media/service-datasets-build-permissions/build-permission-specific-instructions-dialog.png)
  
@@ -126,5 +126,5 @@ You can remove Build permission. If you do, the people whose permissions you hav
 
 * [Use datasets across workspaces](service-datasets-across-workspaces.md)
 * [Share a dataset](service-datasets-share.md)
-* [Roles in the new workspaces](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces)
+* [Roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

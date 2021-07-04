@@ -7,7 +7,7 @@ ms.reviewer: jonp
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 06/26/2021
 ms.custom: licensing support
 LocalizationGroup: Get started
 ---
