@@ -43,12 +43,12 @@ Questions:
 
 
 ## ArtifactType
-|Value |Member name  |Description  |
-|---------|---------|---------|
-|1|Dashboard||
-|2|Report||
-|3|Dataset||
-|7|Dataflow||
+|Value |Member name  |
+|---------|---------|
+|1|Dashboard|
+|2|Report|
+|3|Dataset|
+|7|Dataflow|
 
 ## LabelEventType
 |Value |Member name  |Description  |
