@@ -254,9 +254,9 @@ The [on-premises data gateway](../connect-data/service-gateway-onprem.md) facili
 
 There are three types of gateways:
 
-1. **On-premises data gateway (standard mode)** is a gateway service that supports connections to registered data sources for many users to use. The gateway software installations and updates are installed on a machine that's managed by the customer.
-2. **On-premises data gateway (personal mode)** is a gateway service that supports data refresh only. This gateway mode is typically installed on the PC of the user. It supports use by one user only. It does not support live connection or DirectQuery connections.
-3. **Virtual network data gateway** is a Microsoft managed service that supports connectivity for many users. Specifically, it supports connectivity for datasets and dataflows stored in workspaces assigned to Premium capacity or Premium Per User.
+- **On-premises data gateway (standard mode)** is a gateway service that supports connections to registered data sources for many users to use. The gateway software installations and updates are installed on a machine that's managed by the customer.
+- **On-premises data gateway (personal mode)** is a gateway service that supports data refresh only. This gateway mode is typically installed on the PC of the user. It supports use by one user only. It does not support live connection or DirectQuery connections.
+- **Virtual network data gateway** is a Microsoft managed service that supports connectivity for many users. Specifically, it supports connectivity for datasets and dataflows stored in workspaces assigned to Premium capacity or Premium Per User.
 
 > [!TIP]
 > The decision of [who can install gateway software](/power-platform/admin/onpremises-data-gateway-management#manage-gateway-installers) is a governance decision. For most organizations, use of options 1 or 3 should be strongly encouraged over option 2 because they are more scalable and manageable.

@@ -120,7 +120,3 @@ Other helpful resources include:
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
 
 Experienced Power BI partners are available to help your organization succeed with adoption of Power BI. To engage a Power BI partner, visit the [Power BI partner portal](https://powerbi.microsoft.com/partners/).
-
-## Acknowledgments
-
-This series of articles was written by Melissa Coates, Data Platform MVP, and owner of [Coates Data Strategies](https://www.coatesdatastrategies.com/), with significant contributions from Matthew Roche. Reviewers include Cory Moore, James Ward, Timothy Bindas, Greg Moir, Chuy Varela, Daniel Rubiolo, Sanjay Raut, and Peter Myers.
