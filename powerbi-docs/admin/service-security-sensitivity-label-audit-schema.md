@@ -44,7 +44,7 @@ Questions:
 
 ## ArtifactType
 |Value |Member name  |
-|---------|---------|
+|--|---------|
 |1|Dashboard|
 |2|Report|
 |3|Dataset|
