@@ -12,7 +12,7 @@ LocalizationGroup: Data from files
 ---
 # Audit schema for sensitivity labels in Power BI
 
-This article documents the information in the Power BI auditing schema that is specific to sensitivity labels in Power BI. It covers the following activity keys:
+This article documents the information in the Power BI auditing schema that is specific to sensitivity labels. It covers the following activity keys:
 
 * SensitivityLabelApplied
 * SensitivityLabelChanged
