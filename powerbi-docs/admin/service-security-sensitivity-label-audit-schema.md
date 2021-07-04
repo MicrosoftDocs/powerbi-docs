@@ -10,20 +10,13 @@ ms.topic: reference
 ms.date: 07/03/2021
 LocalizationGroup: Data from files
 ---
-# Sensitivity label audit schema
+# Audit schema for sensitivity labels in Power BI
 
-This article documents the auditing schema for the following activity keys:
+This article documents the information in the Power BI auditing schema that is specific to sensitivity labels in Power BI. It covers the following activity keys:
+
 * SensitivityLabelApplied
 * SensitivityLabelChanged
 * SensitivityLabelRemoved
-
-Need some kind of description of what this is and isn't, plus links to other data
-Questions:
-* [Better name for "member"](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32)? 
-* What to call the ? column for Activity
-* RecordType, UserType also have numbers - we are not responsible? Link?
-* Some questions about Word doc: why do we need SensitivityLabelEventData? What is valid options?
-* Need some description at the top. Do we need description for each item (i.e. ActionSource, etc.)?
 
 ## SensitivityLabelEventData
 |Field|Type|Must appear in the schema|Description|
@@ -50,7 +43,7 @@ Questions:
 
 ## ActionSourceDetail
 |Value |Meaning  |Description  |
-|---------|---------|---------|
+|--|---------|---------|
 |0|None|There are no additional details.|
 |3|AutoByInheritance|The label change took place as a result of automatically triggered inheritance process|
 |4|AutoByDeploymentPipeline|The label change took place as a result automatically as a result of deployment pipeline process|
@@ -58,7 +51,7 @@ Questions:
 
 ## LabelEventType
 |Value |Meaning  |Description  |
-|---------|---------|---------|
+|--|---------|---------|
 |1|LabelUpgraded|A more restrictive label was applied to the artifact.| 
 |2|LabelDowngraded|A less restrictive label was applied to the artifact.|
 |3|LabelRemoved|The label was removed from the artifact.|
@@ -66,3 +59,6 @@ Questions:
 
 ## Next steps
 * [Sensitivity labels in Power BI](./service-security-sensitivity-label-overview.md)
+* Power BI REST admin APIs:
+    * [setLabels](https://docs.microsoft.com/rest/api/power-bi/admin/information-protection-set-labels-as-admin)
+    * [removeLabels](https://docs.microsoft.com/rest/api/power-bi/admin/information-protection-remove-labels-as-admin)
