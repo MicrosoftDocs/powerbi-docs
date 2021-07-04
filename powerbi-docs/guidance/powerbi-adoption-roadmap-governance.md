@@ -67,7 +67,7 @@ Governance is not well-received when it's enacted with top-down mandates that ar
 
 There are three primary timing methods organizations take when introducing Power BI governance to an organization.
 
-:::image type="content" source="media/powerbi-adoption-roadmap-governance/powerbi-adoption-roadmap-governance-timing.png" alt-text="Image shows the three main ways governance is introduced, which are described in the table below.":::
+:::image type="content" source="media/powerbi-adoption-roadmap-governance/powerbi-adoption-roadmap-governance-timing.png" alt-text="Image shows the three main ways governance is introduced, which are described in the table below." border="false":::
 
 The methods in the above diagram include:
 
@@ -391,7 +391,7 @@ The organizational structure for data governance varies significantly between or
 
 Governance accountability is about checks and balances.
 
-:::image type="content" source="media/powerbi-adoption-roadmap-governance/powerbi-adoption-roadmap-governance-accountability.png" alt-text="Image shows the four types of operational, tactical, and strategic involvement, which are described in the table below.":::
+:::image type="content" source="media/powerbi-adoption-roadmap-governance/powerbi-adoption-roadmap-governance-accountability.png" alt-text="Image shows the four types of operational, tactical, and strategic involvement, which are described in the table below." border="false":::
 
 The levels in the above diagram include:
 

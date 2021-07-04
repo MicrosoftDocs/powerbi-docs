@@ -24,7 +24,7 @@ For a description of related topics, including skills mentoring, training, docum
 
 If a user has an issue, do they know what their options are to resolve it? The following diagram shows some common types of user support that organizations employ successfully:
 
-:::image type="content" source="media/powerbi-adoption-roadmap-user-support/powerbi-adoption-roadmap-user-support.png" alt-text="Image shows the four types of internal Power B I user support, and the two types of external support, which are described in the table below.":::
+:::image type="content" source="media/powerbi-adoption-roadmap-user-support/powerbi-adoption-roadmap-user-support.png" alt-text="Image shows the four types of internal Power B I user support, and the two types of external support, which are described in the table below." border="false":::
 
 The six types of user support shown in the above diagram include:
 

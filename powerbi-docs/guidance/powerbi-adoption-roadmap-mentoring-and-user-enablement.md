@@ -61,7 +61,7 @@ A co-development project forms a partnership between the business unit and the C
 
 Time involvement from the COE reduces over time until the business unit gains expertise and becomes self-reliant.
 
-:::image type="content" source="media/powerbi-adoption-roadmap-mentoring-and-user-enablement/powerbi-adoption-roadmap-center-of-excellence-mentoring.png" alt-text="Image shows expertise growing in the business unit as C O E involvement decreases over time, and is further described next.":::
+:::image type="content" source="media/powerbi-adoption-roadmap-mentoring-and-user-enablement/powerbi-adoption-roadmap-center-of-excellence-mentoring.png" alt-text="Image shows expertise growing in the business unit as C O E involvement decreases over time, and is further described next." border="false":::
 
 The active involvement shown in the above diagram changes over time, as follows:
 

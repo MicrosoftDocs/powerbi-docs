@@ -18,7 +18,7 @@ Advancing adoption and cultivating a data culture is about more than implementin
 
 This series of articles correlates with the following Power BI adoption roadmap diagram:
 
-:::image type="content" source="media/powerbi-adoption-roadmap-overview/powerbi-adoption-roadmap-overview-roadmap.png" alt-text="Image shows a diagram depicting the 10 high-level areas of Power B I adoption, which are described in the table below.":::
+:::image type="content" source="media/powerbi-adoption-roadmap-overview/powerbi-adoption-roadmap-overview-roadmap.png" alt-text="Image shows a diagram depicting the 10 high-level areas of Power B I adoption, which are described in the table below." border="false":::
 
 The areas in the above diagram include:
 

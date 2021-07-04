@@ -18,7 +18,7 @@ A _community of practice_ is a group of people with a common interest that inter
 
 The following diagram provides an overview of an internal community.
 
-:::image type="content" source="media/powerbi-adoption-roadmap-community-of-practice/powerbi-adoption-roadmap-community-of-practice.png" alt-text="Image shows the community relationships between the C O E, creators, champions, and consumers, which are described next.":::
+:::image type="content" source="media/powerbi-adoption-roadmap-community-of-practice/powerbi-adoption-roadmap-community-of-practice.png" alt-text="Image shows the community relationships between the C O E, creators, champions, and consumers, which are described next." border="false":::
 
 The above diagram shows the following:
 

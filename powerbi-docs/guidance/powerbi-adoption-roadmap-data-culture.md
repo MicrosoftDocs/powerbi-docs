@@ -30,7 +30,7 @@ Within an organization, certain business units or teams are likely to have their
 
 The following diagram conveys the inter-related aspects that influence your data culture:
 
-:::image type="content" source="media/powerbi-adoption-roadmap-data-culture/powerbi-adoption-roadmap-data-culture.png" alt-text="Image shows various relationships and influences in a data culture, which are described next.":::
+:::image type="content" source="media/powerbi-adoption-roadmap-data-culture/powerbi-adoption-roadmap-data-culture.png" alt-text="Image shows various relationships and influences in a data culture, which are described next." border="false":::
 
 The above circular diagram represents the somewhat ambiguous relationships among the following items:
 

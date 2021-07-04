@@ -18,7 +18,7 @@ There are three primary strategies for how business intelligence (BI) content is
 
 The organization's data culture is the driver for why, how, and by whom each of these three content ownership strategies are implemented.
 
-:::image type="content" source="media/powerbi-adoption-roadmap-content-ownership-and-management/powerbi-adoption-roadmap-content-ownership.png" alt-text="Image shows content ownership responsibilities for the three types of B I delivery, which are described in the table below.":::
+:::image type="content" source="media/powerbi-adoption-roadmap-content-ownership-and-management/powerbi-adoption-roadmap-content-ownership.png" alt-text="Image shows content ownership responsibilities for the three types of B I delivery, which are described in the table below." border="false":::
 
 The areas in the above diagram include:
 
