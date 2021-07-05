@@ -59,7 +59,7 @@ In this tutorial, you'll use:
 
 To embed Power BI content in an *embed for your customers* solution, follow these steps:
 
-1. [Configure your Azure AD app and enable service principal access](#step-1---configure-your-azure-ad-app).
+1. [Configure your Azure AD app and service principal](#step-1---configure-your-azure-ad-app-and-service-principal).
 
 2. [Get the embedding parameter values](#step-2---get-the-embedding-parameter-values).
 
@@ -71,7 +71,7 @@ To embed Power BI content in an *embed for your customers* solution, follow thes
 
 6. [Run your application](#step-6---run-your-application)
 
-## Step 1 - Configure your Azure AD app and enable service principal access
+## Step 1 - Configure your Azure AD app and service principal
 
 In this tutorial you'll use a *service principal* to authenticate you're web app against Azure AD. You'll also need an Azure AD app which will enable you to generate an [Azure AD token](embed-tokens.md#azure-ad-token). The *Azure AD token* enables your web app to call Power BI REST APIs and embed Power BI items such as reports, dashboards or tiles.
 

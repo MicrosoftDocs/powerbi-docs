@@ -23,7 +23,7 @@
     - name: "Embed content for national clouds"
       href: embed-sample-for-customers-national-clouds.md
     - name: "Embed a report in an app for your customers"
-      href: embed-customers-app.md       
+      href: embed-customer-app.md     
     - name: "Embed a report in an app for your organization"
       href: embed-organization-app.md      
   - name: Concepts
