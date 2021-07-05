@@ -28,7 +28,8 @@ The `capabilities.json` file looks like this:
 
 ```
 
-You can see the latest schema for the capablities.json file here
+You can see the latest schema for the capablities.json file [here](https://github.com/microsoft/powerbi-visuals-api/blob/master/schema.capabilities.json#L4-L65)
+
 The root objects of a visual's capabilities file are:  
 
 * [dataRoles](#define-the-data-fields-that-your-visual-expects-dataroles)
