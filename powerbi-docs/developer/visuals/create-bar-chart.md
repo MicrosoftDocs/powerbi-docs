@@ -681,9 +681,11 @@ We defined `visualTransform` as a construct that converts `dataView` to a view m
 
 For more detailed instructions on how to add color to your bar chart go to [Add colors to your Power BI visual](add-colors-power-bi-visual.md)
 
+
+
+For more information, see [How to use SelectionManager](./selection-api.md#how-to-use-selectionmanager-to-select-data-points).
+
 --------
-
-
 
 ## Define and use ObjectEnumerationUtility
 
@@ -714,88 +716,12 @@ export function getValue<T>(objects: DataViewObjects, objectName: string, proper
 }
 ```
 
-See [objectEnumerationUtility.ts](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/objectEnumerationUtility.ts) for source code.
+See [objectEnumerationUtility.ts](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/objectEnumerationUtility.ts) for the source code.
 
 
 
 
-## Selection and interactions
 
-Selection lets the user interact both with your visual and other visuals.
-
-### Add selection to each data point
-
-Since each data point is unique, add selection to each data point. You add the selection property on the `BarChartDataPoint` interface.
-
-```typescript
-/**
- * Interface for BarChart data points.
- *
- * @interface
- * @property {number} value             - Data value for the point.
- * @property {string} category          - Corresponding category of data value.
- * @property {string} color             - Color corresponding to data point.
- * @property {ISelectionId} selectionId - Id assigned to data point for cross filtering
- *                                        and visual interaction.
- */
-interface BarChartDataPoint {
-    value: number;
-    category: string;
-    color: string;
-    selectionId: ISelectionId;
-};
-```
-
-### Assign selection IDs to each data point
-
-Since you iterate through the data points in `visualTransform`, it's also the ideal place to create selection IDs. The host variable is an `IVisualHost`, which contains services that the visual may use, such as color and selection builder. 
-
-Use the `createSelectionIdBuilder` factory method on `IVisualHost` to create a new selection ID. Create a new selection builder for each data point.
-
-Since you're making selections based only on the category, you only need to define selections `withCategory`.
-
-```typescript
-for (let i = 0, len = Math.max(category.values.length, dataValue.values.length); i < len; i++) {
-    barChartDataPoints.push({
-        category: category.values[i],
-        value: dataValue.values[i],
-        color: colorPalette.getColor(category.values[i]).value,
-        selectionId: host.createSelectionIdBuilder()
-            .withCategory(category, i)
-            .createSelectionId()
-    });
-}
-```
-
-For more information, see [Create an instance of the selection builder](./selection-api.md#create-an-instance-of-the-selection-builder).
-
-### Interact with data points
-
-You can interact with each bar of the bar chart once a selection ID is assigned to the data point. The bar chart listens to `click` events.
-
-Use the `selectionManager` factory method on `IVisualHost` to create a selection manager for cross filtering and clearing selections.
-
-```typescript
-let selectionManager = this.selectionManager;
-
-//This must be an anonymous function instead of a lambda because
-//d3 uses 'this' as the reference to the element that was clicked.
-bars.on('click', function(d) {
-    selectionManager.select(d.selectionId).then((ids: ISelectionId[]) => {
-        bars.attr({
-            'fill-opacity': ids.length > 0 ? BarChart.Config.transparentOpacity : BarChart.Config.solidOpacity
-        });
-
-        d3.select(this).attr({
-            'fill-opacity': BarChart.Config.solidOpacity
-        });
-    });
-
-    (<Event>d3.event).stopPropagation();
-});
-```
-
-For more information, see [How to use SelectionManager](./selection-api.md#how-to-use-selectionmanager-to-select-data-points).
 
 ## Static objects
 
@@ -963,6 +889,7 @@ The function `getCategoricalObjectValue` just provides a convenient way of acces
 
 ## Adding other features
 
+* [Adding Selection and Interactions with Other Visuals](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/master/Tutorial/Selection.md)
 * [Add a property pane slider to control opacity](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/e2e0bc5888d9a3ca305a7a7af5046068645c8b30)
 * [Add support for tooltips](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14)
 
