@@ -12,6 +12,8 @@ LocalizationGroup: Data from files
 ---
 # Audit schema for sensitivity labels in Power BI
 
+Whenever a sensitivity label on a dataset, report, dashboard, or dataflow is applied, changed, or removed, that activity is recorded in the audit log for Power BI. You can track these activities in the unified audit log or in the Power BI activity log. See [Track user activities in Power BI](https://docs.microsoft.com/power-bi/admin/service-admin-auditing) for detail.
+
 This article documents the information in the Power BI auditing schema that is specific to sensitivity labels. It covers the following activity keys:
 
 * SensitivityLabelApplied
@@ -28,6 +30,9 @@ This article documents the information in the Power BI auditing schema that is s
 |[LabelEventType](#labeleventtype)|Edm.Enum|Yes|This field indicates whether the action resulted in a more restrictive label, less restrictive label, or a label of the same degree of sensitivity.|
 
 ## ArtifactType
+
+This field indicates the type of artifact the label change took place on.
+
 |Value |Field  |
 |--|---------|
 |1|Dashboard|
@@ -36,12 +41,18 @@ This article documents the information in the Power BI auditing schema that is s
 |7|Dataflow|
 
 ## ActionSource
+
+This field indicates whether the label change is the result of an automatic or manual process.
+
 |Value |Meaning  |Description  |
 |--|---------|---------|
 |2|Auto|An automatic process performed the action.|
 |3|Manual|A manual process performed the action.|
 
 ## ActionSourceDetail
+
+This field gives more detail about what caused the action to take place.
+
 |Value |Meaning  |Description  |
 |--|---------|---------|
 |0|None|There are no additional details.|
@@ -50,6 +61,9 @@ This article documents the information in the Power BI auditing schema that is s
 |5|PublicAPI|The label change action was performed by one of the following Power BI public admin REST APIs: [setLabels](https://docs.microsoft.com/rest/api/power-bi/admin/information-protection-set-labels-as-admin), [removeLabels](https://docs.microsoft.com/rest/api/power-bi/admin/information-protection-remove-labels-as-admin).|
 
 ## LabelEventType
+
+This field indicates whether the action resulted in a more restrictive label, less restrictive label, or a label of the same degree of sensitivity.
+
 |Value |Meaning  |Description  |
 |--|---------|---------|
 |1|LabelUpgraded|A more restrictive label was applied to the artifact.| 
@@ -59,6 +73,4 @@ This article documents the information in the Power BI auditing schema that is s
 
 ## Next steps
 * [Sensitivity labels in Power BI](./service-security-sensitivity-label-overview.md)
-* Power BI REST admin APIs:
-    * [setLabels](https://docs.microsoft.com/rest/api/power-bi/admin/information-protection-set-labels-as-admin)
-    * [removeLabels](https://docs.microsoft.com/rest/api/power-bi/admin/information-protection-remove-labels-as-admin)
+* [Track user activities in Power BI](https://docs.microsoft.com/power-bi/admin/service-admin-auditing)
