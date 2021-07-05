@@ -58,33 +58,25 @@ In this tutorial, you'll use:
 
 To embed Power BI content in an *embed for your customers* solution, follow these steps:
 
-1. [Configure your Azure AD app](#step-1---configure-your-azure-ad-app).
+1. [Configure your Azure AD app and enable service principal access](#step-1---configure-your-azure-ad-app).
 
-2. [Enable service principal access](#step-2---enable-service-principal-access).
+2. [Get the embedding parameter values](#step-2---get-the-embedding-parameter-values).
 
-3. [Get the embedding parameter values](#step-3---get-the-embedding-parameter-values).
+3. [Add the required NuGet packages](#step-3---add-the-required-nuget-packages)
 
-4. [Add the required NuGet packages](#step-4---add-the-required-nuget-packages)
+4. [Enable server side authentication](#step-4---enable-server-side-authentication).
 
-5. [Enable server side authentication](#step-5---enable-server-side-authentication).
+5. [Build your app's client side](#step-5---build-your-apps-client-side).
 
-6. [Build your app's client side](#step-6---build-your-apps-client-side).
+6. [Run your application](#step-6---run-your-application)
 
-7. [Run your application](#step-7---run-your-application)
+## Step 1 - Configure your Azure AD app and enable service principal access
 
-## Step 1 - Configure your Azure AD app
+In this tutorial you'll use a *service principal* to authenticate you're web app against Azure AD. You'll also need an Azure AD app which will enable you to generate an [Azure AD token](embed-tokens.md#azure-ad-token). The *Azure AD token* enables your web app to call Power BI REST APIs and embed Power BI items such as reports, dashboards or tiles.
 
-When your web app calls Power BI, it needs an [Azure AD token](embed-tokens.md#azure-ad-token). The *Azure AD token* enables your web app to call Power BI REST APIs and embed Power BI items such as reports, dashboards or tiles.
+Follow the [service principal instructions](embed-service-principal.md) to create an Azure AD app and enable the apps service principal to work with your Power BI content.
 
-If you don't have an Azure AD app, create one using the instructions in [Register an Azure AD application to use with Power BI](register-app.md).
-
-To configure your Azure AD app, follow the instructions in [Register an Azure AD application](embed-sample-for-customers.md#step-2---register-an-azure-ad-application).
-
-## Step 2 - Enable service principal access
-
-After 
-
-## Step 3 - Get the embedding parameter values
+## Step 2 - Get the embedding parameter values
 
 To embed your report, you'll need the following values:
 
@@ -124,7 +116,7 @@ If you don't know what's your domain or tenant ID, see [Find the Microsoft Azure
 >[!NOTE]
 >To get the report ID programmatically, use the [Get Reports In Group](/rest/api/power-bi/reports/getreportsingroup) API.
 
-## Step 4 - Add the required NuGet packages
+## Step 3 - Add the required NuGet packages
 
 Before you can start, you'll need to add the `Microsoft.Identity.Web`, and `Microsoft.PowerBI.Api` NuGet packages to your app.
 
@@ -146,7 +138,7 @@ If your app previously used `Microsoft.AspNetCore` to authenticate, remove this 
 dotnet remove package Microsoft.AspNetCore.Authentication.AzureAD.UI
 ```
 
-## Step 5 - Enable server-side authentication
+## Step 4 - Enable server-side authentication
 
 Enable server-side authentication in your app, by creating or modifying the files in the table below.
 
@@ -264,7 +256,7 @@ The code in this section uses the .NET Core dependency injection pattern. When y
 The `RequiredScopes` field holds a string array containing a set of [delegated permissions](/azure/active-directory/develop/v2-permissions-and-consent) supported by the Power BI service API. When your application calls across the network to acquire an Azure AD token, it will pass this set of delegated permissions so that Azure AD can include them in the access token it returns.
 
 >[!NOTE]
->Verify that your *Azure AD app* is configured with the scopes required by your web app. For more information, see [Change your Azure AD app's permissions](register-app.md#change-your-azure-ad-apps-permissions). 
+>Verify that your *Azure AD app* is configured with the scopes required by your web app. For more information, see [Change your Azure AD app's permissions](register-app.md#change-your-azure-ad-apps-permissions).
 
 1. In your app's project, create a new folder titled **Services**.
 
@@ -274,63 +266,127 @@ The `RequiredScopes` field holds a string array containing a set of [delegated p
 
     ```csharp
     using Microsoft.Identity.Web;
+    using Microsoft.Rest;
     using Microsoft.PowerBI.Api;
     using Microsoft.PowerBI.Api.Models;
-    using Microsoft.Rest;
     using Newtonsoft.Json;
     
     namespace AppOwnsData.Services {
     
-      // A view model class to pass the data needed to embed a single report.
-    	public class EmbeddedReportViewModel {
-    		public string Id;
-    		public string Name;
-    		public string EmbedUrl;
-    		public string Token;
-    	}
+    // A view model class to pass the data needed to embed a single report.
+      public class EmbeddedReportViewModel {
+        public string Id;
+        public string Name;
+        public string EmbedUrl;
+        public string Token;
+      }
     
-    	public class PowerBiServiceApi {
+      public class PowerBiServiceApi {
     
-    		private ITokenAcquisition tokenAcquisition { get; }
-    		private string urlPowerBiServiceApiRoot { get; }
+        private ITokenAcquisition tokenAcquisition { get; }
+        private string urlPowerBiServiceApiRoot { get; }
     
-    		public PowerBiServiceApi(IConfiguration configuration, ITokenAcquisition tokenAcquisition) {
-    			this.urlPowerBiServiceApiRoot = configuration["PowerBi:ServiceRootUrl"];
-    			this.tokenAcquisition = tokenAcquisition;
-    		}
+        public PowerBiServiceApi(IConfiguration configuration, ITokenAcquisition tokenAcquisition) {
+          this.urlPowerBiServiceApiRoot = configuration["PowerBi:ServiceRootUrl"];
+          this.tokenAcquisition = tokenAcquisition;
+        }
     
-    		public static readonly string[] RequiredScopes = new string[] {
-    			"https://analysis.windows.net/powerbi/api/Report.Read.All"
-    		};
+        public const string powerbiApiDefaultScope = "https://analysis.windows.net/powerbi/api/.default";
     
         // A method to get the Azure AD token (also known as 'access token')
-    		public string GetAccessToken() {
-    			return this.tokenAcquisition.GetAccessTokenForUserAsync(RequiredScopes).Result;
-    		}
+        public string GetAccessToken() {
+          return this.tokenAcquisition.GetAccessTokenForAppAsync(powerbiApiDefaultScope).Result;
+        }
     
-    		public PowerBIClient GetPowerBiClient()	{
-    			var tokenCredentials = new TokenCredentials(GetAccessToken(), "Bearer");
-    			return new PowerBIClient(new Uri(urlPowerBiServiceApiRoot), tokenCredentials);
-    		}
+        public PowerBIClient GetPowerBiClient() {
+          var tokenCredentials = new TokenCredentials(GetAccessToken(), "Bearer");
+          return new PowerBIClient(new Uri(urlPowerBiServiceApiRoot), tokenCredentials);
+        }
     
-    		public async Task<EmbeddedReportViewModel> GetReport(Guid WorkspaceId, Guid ReportId) {
-    			
-    			PowerBIClient pbiClient = GetPowerBiClient();
-    			
-    			// Call the Power BI Service API to get embedding data
-    			var report = await pbiClient.Reports.GetReportInGroupAsync(WorkspaceId, ReportId);
-    			
-    			// Return report embedding data to caller
-    			return new EmbeddedReportViewModel {
-    				Id = report.Id.ToString(),
-    				EmbedUrl = report.EmbedUrl,
-    				Name = report.Name,
-    				Token = GetAccessToken()
-    			};
-    		}
+        public async Task<EmbeddedReportViewModel> GetReport(Guid WorkspaceId, Guid ReportId) {
     
-    	}
+          PowerBIClient pbiClient = GetPowerBiClient();
     
+          // Call the Power BI service API to get the embedding data
+          var report = await pbiClient.Reports.GetReportInGroupAsync(WorkspaceId, ReportId);
+    
+          // Generate a read-only embed token for the report
+          var datasetId = report.DatasetId;
+          var tokenRequest = new GenerateTokenRequest(TokenAccessLevel.View, datasetId);
+          var embedTokenResponse = await pbiClient.Reports.GenerateTokenAsync(WorkspaceId, ReportId, tokenRequest);
+          var embedToken = embedTokenResponse.Token;
+    
+          // Return the report embedded data to caller
+          return new EmbeddedReportViewModel {
+            Id = report.Id.ToString(),
+            EmbedUrl = report.EmbedUrl,
+            Name = report.Name,
+            Token = embedToken
+          };
+        }
+    
+        public async Task<string> GetEmbeddedViewModel(string appWorkspaceId = "") {
+    
+          PowerBIClient pbiClient = GetPowerBiClient();
+    
+          Object viewModel;
+    
+          Guid workspaceId = new Guid(appWorkspaceId);
+          var workspaces = (await pbiClient.Groups.GetGroupsAsync()).Value;
+          var currentWorkspace = workspaces.First((workspace) => workspace.Id == workspaceId);
+          var datasets = (await pbiClient.Datasets.GetDatasetsInGroupAsync(workspaceId)).Value;
+          var reports = (await pbiClient.Reports.GetReportsInGroupAsync(workspaceId)).Value;
+    
+          IList<GenerateTokenRequestV2Dataset> datasetRequests = new List<GenerateTokenRequestV2Dataset>();
+          foreach (var dataset in datasets) {
+            datasetRequests.Add(new GenerateTokenRequestV2Dataset(dataset.Id));
+          };
+    
+          IList<GenerateTokenRequestV2Report> reportRequests = new List<GenerateTokenRequestV2Report>();
+          foreach (var report in reports) {
+            reportRequests.Add(new GenerateTokenRequestV2Report(report.Id, allowEdit: true));
+          };
+    
+    
+          IList<GenerateTokenRequestV2TargetWorkspace> workspaceRequests =
+            new GenerateTokenRequestV2TargetWorkspace[] {
+                    new GenerateTokenRequestV2TargetWorkspace(workspaceId)
+          };
+    
+    
+          GenerateTokenRequestV2 tokenRequest =
+            new GenerateTokenRequestV2(datasets: datasetRequests,
+                                        reports: reportRequests,
+                                        targetWorkspaces: workspaceRequests);
+    
+    
+          // Call the Power BI service API and pass the GenerateTokenRequest object to generate an embed token
+          string embedToken = pbiClient.EmbedToken.GenerateToken(tokenRequest).Token;
+    
+    
+          viewModel = new {
+            workspaces = workspaces,
+            currentWorkspace = currentWorkspace.Name,
+            datasets = datasets,
+            reports = reports,
+            token = embedToken
+          };
+    
+          return JsonConvert.SerializeObject(viewModel);
+        }
+    
+        public async Task<Group> GetFirstWorkspace() {
+          PowerBIClient pbiClient = this.GetPowerBiClient();
+          var workspaces = (await pbiClient.Groups.GetGroupsAsync()).Value;
+          if (workspaces.Count > 0) {
+            return workspaces.First();
+          }
+          else {
+            return null;
+          }
+        }
+    
+      }
     }
     ```
 
@@ -378,7 +434,7 @@ namespace AppOwnsData.Controllers {
 }
 ```
 
-## Step 6 - Build your app's client side
+## Step 5 - Build your app's client side
 
 For client-side implementation, you'll need to create or modify the files in the table below
 
@@ -478,7 +534,7 @@ The `powerbi.embed` function uses the `models` configuration object to embed you
     });
     ```
 
-## Step 7 - Run your application
+## Step 6 - Run your application
 
 After you've made all the adjustments listed in this tutorial, you're ready to run your application. Execute your application and experiment with the way your Power BI report is embedded. You can use the [Power BI embedded analytics Client APIs](/javascript/api/overview/powerbi/) to enhance your app using client side APIs.
 
