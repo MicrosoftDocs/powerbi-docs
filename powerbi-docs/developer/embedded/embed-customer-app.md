@@ -18,6 +18,7 @@ In this tutorial, you'll learn how to embed:
 >[!div class="checklist"]
 >* A Power BI report
 >* In an *embed for your customers* app
+>* Using a *service principal*
 >* Using .NET 5.0
 >* With the `Microsoft.Identity.Web` library (this library is also supported in .NET Core)
 
