@@ -28,7 +28,7 @@ The `capabilities.json` file has the following format:
 
 ```
 
-You can see the latest schema for the capablities.json file [here](https://github.com/microsoft/powerbi-visuals-api/blob/master/schema.capabilities.json#L4-L65)
+You can see the latest schema for the `capablities.json` file [here](https://github.com/microsoft/powerbi-visuals-api/blob/master/schema.capabilities.json#L4-L65)
 
 The root objects of a visual's capabilities file are:  
 
