@@ -1,13 +1,13 @@
 ---
 title: Automatic aggregations 
-description: This article describes using automatic aggregations to optimize query performance.
+description: Describes using automatic aggregations to optimize query performance.
 author: minewiskan
 ms.author: owend
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 06/28/2021
+ms.date: 07/06/2021
 LocalizationGroup: Transform and shape data
 ---
 # Automatic aggregations (Preview)
@@ -20,6 +20,9 @@ With automatic aggregations:
 - Report visualizations are faster - An optimal percentage of report queries are returned by the in-memory aggregations cache instead of backend data source systems. Outlier queries that cannot be returned by the in-memory cache are passed directly to the data source using DirectQuery.
 - Balanced architecture - Because most query results are returned by the Power BI query engine and in-memory aggregations cache, query processing load on data source systems at peak reporting times is significantly reduced.
 - Easy setup - Enable automatic aggregations and schedule one or more refreshes for the dataset - that's all it takes. With the first refresh, automatic aggregations takes over and begins creating the aggregations framework and optimal aggregations. The system automatically tunes itself over time, though with a single slide bar control you can easily fine-tune for your environment.
+
+> [!NOTE]
+> Automatic aggregations is in Preview. When in preview, functionality and documentation are likely to change.
 
 ## Optimized query response
 
@@ -124,8 +127,6 @@ In dataset settings, you can configure up to 48 refreshes each day. Dataset refr
 
 Data latency is the time between an update at the data source and when that update is reflected in a report. With DirectQuery, report queries are passed directly to and returned from the data source *almost* eliminating latency. We say *almost* because the time between data source system calculating and returning a result to the client report is in effect latency. between data at the data source and data stored in the dataset in-memory cache.
 
-
-
 The time you choose for your first scheduled refresh should be when the data source system is least active and prior to users actively working with reports. For most organizations, this will be overnight or early in the morning, after any ETL or maintenance processes at the data source have completed. This will give the training process in the first refresh plenty of system resources to complete and ensure refresh operations query and calculate aggregations from most recent source data. Be sure to schedule refreshes often enough so aggregations data stored in-memory most closely reflects that of data at the data source. At the same time, ensure you don't schedule so many refreshes that system resources are used unnecessarily.
 
 A single refresh operation has a total time allowed limit of 5 hours. However, because aggregations tables are typically quite small compared to normal import tables, it's unlikely a refresh operation will exceed the time limit. The exception could be composite model datasets. If your dataset is already a composite model, and large tables are stored in-memory, refresh on those tables could take longer.
@@ -149,4 +150,3 @@ Both aggregations created by using automatic aggregations and user defined aggre
 ## See also
 
 [DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
-
