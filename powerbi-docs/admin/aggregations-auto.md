@@ -129,13 +129,13 @@ If your data source is continuously being updated with real-time data, you may w
 
 Each refresh operation is recorded in the dataset cache refresh history.
 
-:::image type="content" source="media/aggregations-automatic/cache-refresh-history.png" alt-text="":::
+:::image type="content" source="media/aggregations-automatic/cache-refresh-history.png" alt-text="Cache refresh history":::
 
 Refresh history provides information about how scheduled training and refresh operations are going. Because the first scheduled refresh of the day or week includes the training operation, additional details about how much memory aggregations are using in the in-memory cache are provided. If you want to drill down a little further, click **Show** details. Ensure your scheduled refresh operations are completing within and acceptable period. If a training or refresh operation fails, reduce the percentage of queries that use the in-memory aggregations cache. This will reduce the number of aggregations created, but allow more time for refresh operations to complete.
 
 ## User-defined aggregations
 
-Automatic aggregations is built on top of existing [user-defined aggregations](aggregations-advanced.md) functionality first introduced with composite models for Power BI. Automatic aggregations can work side by side with user-defined aggregations. Aggregations created in the in-memory cache by the automatic aggregations training algorithm are identified as *System* aggregations. The training algorithm creates and deletes only those System aggregations as reporting queries are analyzed and adjustments are made to maintain the optimal aggregations for the dataset.
+Automatic aggregations is built on top of existing [user-defined aggregations](../transform-model/aggregations-advanced.md) functionality first introduced with composite models for Power BI. Automatic aggregations can work side by side with user-defined aggregations. Aggregations created in the in-memory cache by the automatic aggregations training algorithm are identified as *System* aggregations. The training algorithm creates and deletes only those System aggregations as reporting queries are analyzed and adjustments are made to maintain the optimal aggregations for the dataset.
 
 Both tables and aggregations in them created by using automatic aggregations and those user-defined aggregations are refreshed with dataset refresh. Only those aggregations created by automatic aggregations and marked as *System* are included in the training process.
 
