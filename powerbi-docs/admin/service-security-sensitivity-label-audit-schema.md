@@ -12,7 +12,7 @@ LocalizationGroup: Data from files
 ---
 # Audit schema for sensitivity labels in Power BI
 
-Whenever a sensitivity label on a dataset, report, dashboard, or dataflow is applied, changed, or removed, that activity is recorded in the audit log for Power BI. You can track these activities in the unified audit log or in the Power BI activity log. See [Track user activities in Power BI](https://docs.microsoft.com/power-bi/admin/service-admin-auditing) for detail.
+Whenever a sensitivity label on a dataset, report, dashboard, or dataflow is applied, changed, or removed, that activity is recorded in the audit log for Power BI. You can track these activities in the unified audit log or in the Power BI activity log. See [Track user activities in Power BI](service-admin-auditing.md) for detail.
 
 This article documents the information in the Power BI auditing schema that is specific to sensitivity labels. It covers the following activity keys:
 
@@ -58,7 +58,7 @@ This field gives more detail about what caused the action to take place.
 |0|None|There are no additional details.|
 |3|AutoByInheritance|The label change took place as a result of an automatically triggered inheritance process|
 |4|AutoByDeploymentPipeline|The label change took place automatically as a result of the deployment pipeline process|
-|5|PublicAPI|The label change action was performed by one of the following Power BI public admin REST APIs: [setLabels](https://docs.microsoft.com/rest/api/power-bi/admin/information-protection-set-labels-as-admin), [removeLabels](https://docs.microsoft.com/rest/api/power-bi/admin/information-protection-remove-labels-as-admin).|
+|5|PublicAPI|The label change action was performed by one of the following Power BI public admin REST APIs: [setLabels](/rest/api/power-bi/admin/information-protection-set-labels-as-admin), [removeLabels](/rest/api/power-bi/admin/information-protection-remove-labels-as-admin).|
 
 ## LabelEventType
 
@@ -72,5 +72,5 @@ This field indicates whether the action resulted in a more restrictive label, le
 |4|LabelChangedSameOrder|The label was replaced by another label with the same level of sensitivity.|
 
 ## Next steps
-* [Sensitivity labels in Power BI](./service-security-sensitivity-label-overview.md)
-* [Track user activities in Power BI](https://docs.microsoft.com/power-bi/admin/service-admin-auditing)
+* [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
+* [Track user activities in Power BI](service-admin-auditing.md)
