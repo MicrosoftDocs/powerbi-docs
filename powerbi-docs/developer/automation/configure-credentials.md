@@ -231,3 +231,8 @@ After you create the dataset, an automatic binding is created between the datase
 If you're using on-premises datasets, create the missing on-premises data sources, and bind the dataset to a gateway manually by using [Bind To Gateway](/rest/api/power-bi/datasets/bindtogateway).
 
 To discover gateways that could be bound, use [Discover Gateways](/rest/api/power-bi/datasets/discovergateways).
+
+## Next steps
+
+>[!div class="nextstepaction"]
+>[Power BI REST APIs](/rest/api/power-bi/)
