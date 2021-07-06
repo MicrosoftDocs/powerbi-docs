@@ -56,8 +56,8 @@ This field gives more detail about what caused the action to take place.
 |Value |Meaning  |Description  |
 |--|---------|---------|
 |0|None|There are no additional details.|
-|3|AutoByInheritance|The label change took place as a result of an automatically triggered inheritance process|
-|4|AutoByDeploymentPipeline|The label change took place automatically as a result of the deployment pipeline process|
+|3|AutoByInheritance|The label change took place as a result of an automatically triggered inheritance process.|
+|4|AutoByDeploymentPipeline|The label change took place automatically as a result of the deployment pipeline process.|
 |5|PublicAPI|The label change action was performed by one of the following Power BI public admin REST APIs: [setLabels](/rest/api/power-bi/admin/information-protection-set-labels-as-admin), [removeLabels](/rest/api/power-bi/admin/information-protection-remove-labels-as-admin).|
 
 ## LabelEventType
