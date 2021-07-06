@@ -1,5 +1,5 @@
 ---
-title: User defined aggregations
+title: User-defined aggregations
 description: Describes using manually configured aggregations to speed up data analysis over large datasets.
 author: minewiskan
 ms.author: owend
@@ -10,13 +10,13 @@ ms.topic: conceptual
 ms.date: 06/10/2021
 LocalizationGroup: Transform and shape data
 ---
-# User defined aggregations
+# User-defined aggregations
 
 Aggregations in Power BI can improve query performance over very large DirectQuery datasets. By using aggregations, you cache data at the aggregated level in-memory. Aggregations in Power BI can be manually configured in the data model, as described in this article, or for Premium subscriptions, automatically by enabling the [Automatic aggregations](../admin/aggregations-auto.md) feature in dataset Settings.
 
 ## Creating aggregation tables
 
-Depending on the data source type, an agg table can be created at the data source as a table or view, as a native query, or for the greatest performance, as an import table created in Power Query. You then use the Manage aggregations dialog in Power BI Desktop to define aggregations for aggregation columns with summarization, detail table, and detail column properties.
+Depending on the data source type, an aggregations table can be created at the data source as a table or view, as a native query, or for the greatest performance, as an import table created in Power Query. You then use the Manage aggregations dialog in Power BI Desktop to define aggregations for aggregation columns with summarization, detail table, and detail column properties.
 
 Dimensional data sources, like data warehouses and data marts, can use [relationship-based aggregations](#aggregation-based-on-relationships). Hadoop-based big-data sources often [base aggregations on GroupBy columns](#aggregation-based-on-groupby-columns). This article describes typical Power BI data modeling differences for each type of data source.
 

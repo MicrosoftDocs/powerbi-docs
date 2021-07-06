@@ -12,11 +12,11 @@ LocalizationGroup: Transform and shape data
 ---
 # Automatic aggregations (Preview)
 
-Automatic aggregations for DirectQuery datasets use state-of-the-art machine learning (ML) to self train and continuously optimize an in-memory cache with pre-aggregated query results, providing faster report visualization response times for even the largest datasets.
+Automatic aggregations for DirectQuery datasets use state-of-the-art machine learning (ML) to self-train and continuously optimize an in-memory cache with pre-aggregated query results, providing faster report visualization response times for even the largest datasets.
 
 With automatic aggregations:
 
-- Big data isn't so big - By using MLs predictive modeling, report query patterns are analyzed to determine pre-defined aggregations to store in the dataset in-memory aggregations cache. The amount of pre-aggregated data stored in-memory is typically small, but can answer the majority of report queries.
+- Big data isn't so big - By using MLs predictive modeling, report query patterns are analyzed to determine pre-defined aggregations to store in the dataset in-memory aggregations cache. The amount of pre-aggregated data stored in-memory is typically small, but can answer most report queries.
 - Report visualizations are faster - An optimal percentage of report queries are returned by the in-memory aggregations cache instead of backend data source systems. Outlier queries that cannot be returned by the in-memory cache are passed directly to the data source using DirectQuery.
 - Balanced architecture - Because most query results are returned by the Power BI query engine and in-memory aggregations cache, query processing load on data source systems at peak reporting times is significantly reduced.
 - Easy setup - Enable automatic aggregations and schedule one or more refreshes for the dataset - that's all it takes. With the first refresh, automatic aggregations takes over and begins creating the aggregations framework and optimal aggregations. The system automatically tunes itself over time, though with a single slide bar control you can easily fine-tune for your environment.
@@ -26,19 +26,19 @@ With automatic aggregations:
 
 ## Optimized query response
 
-With DirectQuery, each time a dataset user opens a report or interacts with a visualization, DAX queries are passed to the query engine and then on to the backend data source as SQL queries. The data source must then calculate and return aggregated results for each query. Compared to import mode datasets which are stored in-memory, that round trip can be both time and process intensive, often causing slow query response times in report visualizations.
+With DirectQuery, each time a dataset user opens a report or interacts with a visualization, DAX queries are passed to the query engine and then on to the backend data source as SQL queries. The data source must then calculate and return aggregated results for each query. Compared to import mode datasets that are stored in-memory, that round trip can be both time and process intensive, often causing slow query response times in report visualizations.
 
-When enabled for a DirectQuery dataset, automatic aggregations use machine learning (ML) predictive modeling algorithms to determine client reporting query patterns. Because almost all report queries calculate an aggregated result, a percentage of those aggregations are then cached in-memory. Aggregated query results are then automatically returned by the in-memory cache rather than being sent to and returned by the data source. Report and ad-hoc queries that require aggregations not included in the in-memory cache are passed to the backend data source, just like with typical DirectQuery.
+When enabled for a DirectQuery dataset, automatic aggregations use machine learning (ML) predictive modeling algorithms to determine client reporting query patterns. Because almost all report queries calculate an aggregated result, a percentage of those aggregations is then cached in-memory. Aggregated query results are then automatically returned by the in-memory cache rather than being sent to and returned by the data source. Report and ad-hoc queries that require aggregations not included in the in-memory cache are passed to the backend data source, just like with typical DirectQuery.
 
 :::image type="content" source="media/aggregations-automatic/auto-aggregations.png" border="false" alt-text="Automatic aggregations diagram":::
 
-Automatic aggregations predictive modeling continuously runs in the background. Your dataset is both self training and self optimizing. As client report query patterns change, automatic aggregations adjusts, prioritizing and caching those aggregations used most often.
+Automatic aggregations predictive modeling continuously runs in the background. Your dataset is both self-training and self-optimizing. As client report query patterns change, automatic aggregations adjusts, prioritizing and caching those aggregations used most often.
 
 ## Requirements
 
 ### Supported plans
 
-Automatic aggregations is supported for **Power BI Premium** and **Premium per user** datasets.
+Automatic aggregations are supported for **Power BI Premium** and **Premium per user** datasets.
 
 ### Supported data sources
 
@@ -69,7 +69,7 @@ To enable and configure automatic aggregations, you must have **Admin** permissi
 
     :::image type="content" source="media/aggregations-automatic/auto-aggs-refresh.png" alt-text="Configure aggregations refresh dialog":::
 
-    You must configure at least one refresh. The first refresh for the frequency you select will include both a *training* process and a refresh that loads new and updated aggregations into the in-memory cache. Schedule additional refreshes to ensure report queries that hit the aggregations cache are getting results that are most in-sync with the backend data source. To learn more, see [Refresh](#refresh) later in this article.
+    You must configure at least one refresh. The first refresh for the frequency you select will include both a *training* process and a refresh that loads new and updated aggregations into the in-memory cache. Schedule more refreshes to ensure report queries that hit the aggregations cache are getting results that are most in-sync with the backend data source. To learn more, see [Refresh](#refresh) later in this article.
 
 1. Click **Apply**.
 
@@ -103,7 +103,7 @@ Metrics:
 
 ##### Set target to seconds
 
-Threshold appears as a marker line on the lift chart. Use the threshold setting to define a target query response time for reports. For example, by setting threshold to 3 seconds, you can then fine-tune the percentage of queries that will use the aggregations cache to determine a new query percentage that meets the 3 second threshold.
+Threshold appears as a marker line on the lift chart. Use the threshold setting to define a target query response time for reports. For example, by setting threshold to 3 seconds, you can then fine-tune the percentage of queries that will use the aggregations cache to determine a new query percentage that meets the 3-second threshold.
 
 #### Aggregation tables bar chart
 
@@ -121,7 +121,7 @@ During training, automatic aggregations creates and deletes rows in aggregations
 
 Because aggregations are stored in the dataset in-memory aggregations cache, it's necessary to refresh the dataset to minimize latency between the aggregations cache and new and updated data at the data source. When you first enable automatic aggregations, you must configure at least one refresh operation for either day or week frequency. 
 
-The first refresh for the frequency you choose (Day or Week) includes the *training* operation. During training, in-memory aggregations tables are created, updated, or dropped, and queries are sent to the data source to determine aggregations to be included. Calculated aggregations data, however, is not loaded into the tables during training - it's queried and loaded during the subsequent refresh operation. The training operation has a time limit of 60 minutes, after which a refresh operation is run that loads new and updated aggregations data. Subsequent refreshes for that day or week are refresh only operations. For example, if you choose a **Day** frequency and schedule refreshes at 4:00AM, 9:00AM, 2:00PM, and 7:00PM, the 4:00AM refresh each day will include both a training operation *and* a refresh operation. The 9:00AM, 2:00PM, and 7:00PM scheduled refreshes will be refresh operations only.
+The first refresh for the frequency you choose (Day or Week) includes the *training* operation. During training, in-memory aggregations tables are created, updated, or dropped, and queries are sent to the data source to determine aggregations to be included. Calculated aggregations data, however, is not loaded into the tables during training - it's queried and loaded during the subsequent refresh operation. The training operation has a time limit of 60 minutes, after which a refresh operation is run that loads new and updated aggregations data. Subsequent refreshes for that day or week are refresh only operations. For example, if you choose a **Day** frequency and schedule refreshes at 4:00AM, 9:00AM, 2:00PM, and 7:00PM, the 4:00AM refresh each day will include both a training operation *and* a refresh operation. The 9:00AM, 2:00PM, and 7:00PM scheduled refreshes are refresh operations only.
 
 If your data source is continuously being updated with real-time data, you may want to schedule more refreshes to ensure aggregations stored in the cache are more closely in sync with data at the data source. At the same time, refresh operations for both the Power BI service and data source systems can be resource intensive. Refresh operations must be given enough time to complete before the next scheduled refresh begins. In dataset Settings, you can configure up to 48 refreshes each day. Dataset refreshes through the [XMLA endpoint](service-premium-connect-tools.md), however, are unlimited. Be sure to schedule refreshes often enough so aggregations data stored in-memory most closely reflects that of data at the data source. At the same time, ensure you don't schedule so many refreshes that system resources are used unnecessarily.
 
@@ -133,13 +133,13 @@ Each refresh operation is recorded in the dataset cache refresh history.
 
 Refresh history provides information about how scheduled training and refresh operations are going. Because the first scheduled refresh of the day or week includes the training operation, additional details about how much memory aggregations are using in the in-memory cache are provided. If you want to drill down a little further, click **Show** details. Ensure your scheduled refresh operations are completing within and acceptable period. If a training or refresh operation fails, reduce the percentage of queries that use the in-memory aggregations cache. This will reduce the number of aggregations created, but allow more time for refresh operations to complete.
 
-## User defined aggregations
+## User-defined aggregations
 
-Automatic aggregations is built on top of existing [user defined aggregations](aggregations-advanced.md) functionality first introduced with composite models for Power BI. Automatic aggregations can work side-by-side with user defined aggregations. Aggregations created in the in-memory cache by the automatic aggregations training algorithm are identified as *System* aggregations. The training algorithm creates and deletes only those System aggregations as reporting queries are analyzed and adjustments are made to maintain the optimal aggregations for the dataset.
+Automatic aggregations is built on top of existing [user-defined aggregations](aggregations-advanced.md) functionality first introduced with composite models for Power BI. Automatic aggregations can work side by side with user-defined aggregations. Aggregations created in the in-memory cache by the automatic aggregations training algorithm are identified as *System* aggregations. The training algorithm creates and deletes only those System aggregations as reporting queries are analyzed and adjustments are made to maintain the optimal aggregations for the dataset.
 
-Both tables and aggregations in them created by using automatic aggregations and those user defined aggregations are refreshed with dataset refresh. Only those aggregations created by automatic aggregations and marked as *System* are included in the training process.
+Both tables and aggregations in them created by using automatic aggregations and those user-defined aggregations are refreshed with dataset refresh. Only those aggregations created by automatic aggregations and marked as *System* are included in the training process.
 
 ## See also
 
-[User defined aggregations](aggregations-advanced.md)  
+[User-defined aggregations](../transform-model/aggregations-advanced.md)  
 [DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)  
