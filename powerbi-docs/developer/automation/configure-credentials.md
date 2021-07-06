@@ -102,7 +102,7 @@ Follow the steps in this article, to configure credentials programmatically for 
 6. Call [Update Datasource](/rest/api/power-bi/gateways/updatedatasource) to set credentials.
 
     ```csharp
-    pbiClient.Gateways.UpdateDatasource(gatewayId, datasourceId, credentialDetails);
+    pbiClient.Gateways.UpdateDatasource(datasource.GatewayId.Value, datasource.DatasourceId.Value, new UpdateDatasourceRequest(credentialDetails));
     ```
 
 ## Configure a new data source for a data gateway
