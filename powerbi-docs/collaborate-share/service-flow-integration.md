@@ -85,4 +85,6 @@ In this task, we create a simple flow from scratch that is triggered by a Power 
 ## Next steps
 * [Get started with Power Automate](/power-automate/getting-started/)
 * [Export and email a Power BI report with Power Automate](service-automate-power-bi-report-export.md)
+* [Create a Power Automate button visual](../create-reports/power-bi-automate-visual.md)
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)
+

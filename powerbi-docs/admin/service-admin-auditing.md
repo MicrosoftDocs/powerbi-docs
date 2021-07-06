@@ -361,9 +361,9 @@ The following operations are available in both the audit and activity logs.
 | Requested Power BI dataflow refresh               | RequestDataflowRefresh                      | Not currently used                       |
 | Requested Power BI dataset refresh                | RefreshDataset                              |                                          |
 | Retrieved Power BI workspaces                     | GetWorkspaces                               |                                          |
-| Sensitivity Label Applied                         | SensitivityLabelApplied                     |                                          |
-| Sensitivity Label Changed                         | SensitivityLabelChanged                     |                                          |
-| Sensitivity Label Removed                         | SensitivityLabelRemoved                     |                                          |
+| [Sensitivity Label Applied](service-security-sensitivity-label-audit-schema.md)                         | SensitivityLabelApplied                     |                                          |
+| [Sensitivity Label Changed](service-security-sensitivity-label-audit-schema.md)                         | SensitivityLabelChanged                     |                                          |
+| [Sensitivity Label Removed](service-security-sensitivity-label-audit-schema.md)                         | SensitivityLabelRemoved                     |                                          |
 | Set dataflow storage location for a workspace     | SetDataflowStorageLocationForWorkspace      |                                          |
 | Set scheduled refresh on Power BI dataflow        | SetScheduledRefreshOnDataflow               |                                          |
 | Set scheduled refresh on Power BI dataset         | SetScheduledRefresh                         |                                          |
