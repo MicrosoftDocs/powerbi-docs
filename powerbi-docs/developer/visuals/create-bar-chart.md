@@ -433,6 +433,33 @@ function visualTransform(options: VisualUpdateOptions, host: IVisualHost): BarCh
 ### Rendering
 
 Once the data is defined, we can render it. The visual is rendered from the `IVisual` function. The `IVisual` function is described on the [Visual API](visual-api.md) page. It contains a `constructor` class that creates the visual and an `update` class that is called each time the visual reloads.
+Before rendering the visual, we have to declare the members of the class:
+
+```typescript
+export class BarChart implements IVisual {
+    private svg: Selection<any>;
+    private host: IVisualHost;
+    private barContainer: Selection<SVGElement>;
+    private xAxis: Selection<SVGElement>;
+    private barDataPoints: BarChartDataPoint[];
+    private barChartSettings: BarChartSettings;
+
+    private barSelection: d3.Selection<d3.BaseType, any, d3.BaseType, any>;
+
+    static Config = {
+        xScalePadding: 0.1,
+        solidOpacity: 1,
+        transparentOpacity: 1,
+        margins: {
+            top: 0,
+            right: 0,
+            bottom: 25,
+            left: 30,
+        },
+        xAxisFontMultiplier: 0.04,
+    }
+ }
+```
 
 ### Construct the visual
 
@@ -646,9 +673,15 @@ To add a color picker for each category on the **Property** pane, add an additio
 
 Your final barChart.ts file should look like [this](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts).
 
-## (Optional) Rendering the X axis
+## (Optional) Rendering the X axis (static objects)
 
-Now that the visual can display data and scale to the correct size, we can add optional features to customize it. First we'll add an X-axis display that shows the names of the categories.
+You can add objects to the **Property** pane to further customize the visual. These customizations can be user interface changes, or changes related to the data that was queried. The sample uses static objects to render the X-axis for the bar chart.
+
+You can toggle objects on or off in the **Property** pane.
+
+![Objects in the Property pane](./media/create-bar-chart/property-pane.png)
+
+We'll add an X-axis display that shows the names of the categories.
 We already added an `enableAxis` property to the *capabilities* file and the barChartSettings interface.
 Add the following code to the `barChart.ts` file *before* the iVisual class to draw the X-axis:
 
@@ -675,15 +708,55 @@ function getAxisTextFillColor(
 }
 ```
 
-## (Optional) Color
+## (Optional) Adding color (databound objects)
+
+Databound objects are similar to static objects, but typically deal with data selection. For example, you can change the color associated with the data point.
+
+![Databound object properties](./media/create-bar-chart/object-databound-property.png)
 
 We already defined the `colorSelector` object in the *capabilities* file.
 
-We selected and assigned colors when defining individual data points, with [`IVisualHost`](#visual-transform). The `colorPalette` service manages these colors.
+Each data point is represented by a different color. We included color in the [BarChartDataPoint interface](#interfaces), and assign a default color to each data point when it is defined in [`IVisualHost`](#visual-transform).
 
-Each data point is represented by a different color. We already incorporated color to the [BarChartDataPoint interface](#interfaces).
+```typescript
+function getColumnColorByIndex(
+    category: DataViewCategoryColumn,
+    index: number,
+    colorPalette: ISandboxExtendedColorPalette,
+): string {
+    if (colorPalette.isHighContrast) {
+        return colorPalette.background.value;
+    }
 
-We defined `visualTransform` as a construct that converts `dataView` to a view model that a bar chart can use. Since `visualTransform` iterates through the data points, it's an ideal place to assign colors.
+    const defaultColor: Fill = {
+        solid: {
+            color: colorPalette.getColor(`${category.values[index]}`).value,
+        }
+    };
+
+    return getCategoricalObjectValue<Fill>(
+        category,
+        index,
+        'colorSelector',
+        'fill',
+        defaultColor
+    ).solid.color;
+}
+
+function getColumnStrokeColor(colorPalette: ISandboxExtendedColorPalette): string {
+    return colorPalette.isHighContrast
+        ? colorPalette.foreground.value
+        : null;
+}
+
+function getColumnStrokeWidth(isHighContrast: boolean): number {
+    return isHighContrast
+        ? 2
+        : 0;
+}
+```
+
+The `colorPalette` service, which is found in the `visualTransform` function, manages these colors. Since `visualTransform` iterates through each of the data points, it's an ideal place to assign categorical objects like color.
 
 For more detailed instructions on how to add color to your bar chart go to [Add colors to your Power BI visual](add-colors-power-bi-visual.md)
 
@@ -748,113 +821,21 @@ The function `getCategoricalObjectValue` provides a convenient way of accessing 
 
 See [objectEnumerationUtility.ts](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/objectEnumerationUtility.ts) for the source code.
 
------
+----
+## Test the visual
 
-## Static objects
+3. Navigate to the project's folder.
 
-You can add objects to the **Property** pane to further customize the visual. These customizations can be user interface changes, or changes related to the data that was queried. The sample uses static objects to render the X-axis for the bar chart.
+    ```powershell
+    cd BarChart
+    ```
 
-You can toggle objects on or off in the **Property** pane.
+4. Start the development app by running `pbiviz start` from the Powershell. Your visual is now running while being hosted on your computer.
 
-![Objects in the Property pane](./media/create-bar-chart/property-pane.png)
+5. Change location of main source code in tsconfig and pbiviz
 
-
-### Retrieve property values from dataView
-
-The `visualTransform` is the ideal place to manipulate the visual's view model. To continue this pattern, retrieve the object properties from the `dataView`.
-
-Define the default state of the property, and use `getValue` to retrieve the property from the `dataView`.
-
-```typescript
-let defaultSettings: BarChartSettings = {
-    enableAxis: {
-        show: false,
-    }
-};
-
-let barChartSettings: BarChartSettings = {
-    enableAxis: {
-        show: getValue<boolean>(objects, 'enableAxis', 'show', defaultSettings.enableAxis.show),
-    }
-}
-```
-
-### Control property update logic
-
-Once an object is added to the **Property** pane, each toggle triggers an update. Add specific object logic in `if` blocks:
-
-```typescript
-if(settings.enableAxis.show) {
-    let margins = BarChart.Config.margins;
-    height -= margins.bottom;
-}
-```
-
-## Databound objects
-
-Databound objects are similar to static objects, but typically deal with data selection. For example, you can change the color associated with the data point.
-
-![Databound object properties](./media/create-bar-chart/object-databound-property.png)
-
-### Use ObjectEnumerationUtility
-
-As with static objects, you need to retrieve object details from the `dataView`. However, instead of the object values being within metadata, the object values are associated with each category.
-
-```typescript
-/**
- * Gets property value for a particular object in a category.
- *
- * @function
- * @param {DataViewCategoryColumn} category - List of category objects.
- * @param {number} index                    - Index of category object.
- * @param {string} objectName               - Name of desired object.
- * @param {string} propertyName             - Name of desired property.
- * @param {T} defaultValue                  - Default value of desired property.
- */
-export function getCategoricalObjectValue<T>(category: DataViewCategoryColumn, index: number, objectName: string, propertyName: string, defaultValue: T): T {
-    let categoryObjects = category.objects;
-
-    if(categoryObjects) {
-        let categoryObject: DataViewObject = categoryObjects[index];
-        if(categoryObject) {
-            let object = categoryObject[objectName];
-            if(object) {
-                let property: T = object[propertyName];
-                if(property !== undefined) {
-                    return property;
-                }
-            }
-        }
-    }
-    return defaultValue;
-}
-```
-
-See [objectEnumerationUtility.ts](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/objectEnumerationUtility.ts) for source code.
-
-### Define default color and retrieve categorical object from dataView
-
-Each color is now associated with each category inside `dataView`. You can set each data point to its corresponding color.
-
-```typescript
-for (let i = 0, len = Math.max(category.values.length, dataValue.values.length); i < len; i++) {
-    let defaultColor: Fill = {
-        solid: {
-            color: colorPalette.getColor(category.values[i]).value
-        }
-    }
-
-    barChartDataPoints.push({
-        category: category.values[i],
-        value: dataValue.values[i],
-        color: getCategoricalObjectValue<Fill>(category, i, 'colorSelector', 'fill', defaultColor).solid.color,
-        selectionId: host.createSelectionIdBuilder()
-            .withCategory(category, i)
-            .createSelectionId()
-    });
-}
-```
-
+    >[!IMPORTANT]
+    >Do not close the PowerShell window until the end of the tutorial. To stop the visual from running, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
 
 ## Adding other features
 
@@ -877,18 +858,7 @@ This command creates a *pbiviz* file in the *dist/* directory of your visual pro
 For more detailed instructions on packaging a visual, see the [packaging the visual](custom-visual-develop-tutorial-format-options.md#packaging-the-custom-visual) in theCircle card tutorial.
 
 
-3. Navigate to the project's folder.
 
-    ```powershell
-    cd BarChart
-    ```
-
-4. Start the development app by running `pbiviz start` from the Powershell. Your visual is now running while being hosted on your computer.
-
-5. Change location of main source code in tsconfig and pbiviz
-
-    >[!IMPORTANT]
-    >Do not close the PowerShell window until the end of the tutorial. To stop the visual from running, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
 
 >[!NOTE]
 >
