@@ -214,7 +214,7 @@
         href: desktop-conditional-table-formatting.md
       - name: "Create dynamic, expression-based titles"
         href: desktop-conditional-format-visual-titles.md        
-      - name: "Sort by column"
+      - name: "Sort one column by another"
         href: desktop-sort-by-column.md
       - name: "Optimize reports for the mobile apps"
         href: desktop-create-phone-report.md
@@ -232,8 +232,6 @@
         href: ../collaborate-share/service-featured-content.md
       - name: "Let consumers customize visuals"
         href: power-bi-personalize-visuals.md
-      - name: "Save a report"
-        href: service-report-save.md
       - name: "Interact with a report in Editing view"
         href: service-interact-with-a-report-in-editing-view.md
       - name: "Analyze in Excel"

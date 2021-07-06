@@ -14,7 +14,7 @@ ms.date: 06/23/2021
 
 Every visual has a `capabilities.json` file that describes the visual to the host. The `capabilities.json` file tells the host what kind of data the visual accepts, what customizable attributes to put on the properties pane, and other information needed to create the visual. All properties in the `capabilities.json` file are *optional*.
 
-The `capabilities.json` file looks like this:
+The `capabilities.json` file has the following format:
 
 ```json
 {
@@ -28,18 +28,30 @@ The `capabilities.json` file looks like this:
 
 ```
 
+You can see the latest schema for the `capablities.json` file [here](https://github.com/microsoft/powerbi-visuals-api/blob/master/schema.capabilities.json#L4-L65)
+
 The root objects of a visual's capabilities file are:  
 
 * [dataRoles](#define-the-data-fields-that-your-visual-expects-dataroles)
 * [dataViewMappings](#dataviewmappings-how-you-want-the-data-mapped)
 * [objects](#objects-define-property-pane-options)
+* [tooltips](add-tooltips.md#add-tooltips-support-to-the-report-page)
 * [supportsHighlight](#supportshighlight-how-to-handle-partial-highlighting)
-* [advancedEditModeSupport](#advancededitmodesupport-how-to-handle-advanced-edit-mode)
 * [sorting](#sorting-data-sorting-options-for-your-visual)
+* [drilldown](drill-down-support.md)
+* suppressDefaultTitle
+* [supportsKeyboardFocus](supportskeyboardfocus-feature.md)
+* [supportsHighlight](highlight.md#highlight-data-points-with-categorical-data-view-mapping)
+* supportsSynchronizingFilterState
+* [advancedEditModeSupport](#advancededitmodesupport-how-to-handle-advanced-edit-mode)
+* [supportsLandingPage](landing-page.md#creating-a-landing-page)
+* [supportsEmptyDataView](landing-page.md#creating-a-landing-page)
+* [supportsMultiVisualSelection](supportsmultivisualselection-feature.md)
+* subtotals
 
 ## Define the data fields that your visual expects: dataroles
 
-To define fields that can be bound to data, you use `dataRoles`. `dataRoles` is an array of `DataViewRole` objects, which defines all the required properties. The `dataRoles` objects are those that appear on the **Properties pane**.
+To define fields that can be bound to data, you use `dataRoles`. `dataRoles` is an array of `DataViewRole` objects, which defines all the required properties. The `dataRoles` objects are the **fields** that appear on the [Properties pane](../../visuals/service-getting-started-with-color-formatting-and-axis-properties.md).
 
 The user drags data fields into them to bind data the data fields to the objects.
 
@@ -139,7 +151,7 @@ For more information, see [Understand data view mapping in Power BI visuals](dat
 
 ## objects: define property pane options
 
-Objects describe customizable properties that are associated with the visual. Each object can have multiple properties, and each property has a type that's associated with it.
+Objects describe customizable properties that are associated with the visual. These are the objects that appear in the [Format pane](../../create-reports/service-the-report-editor-take-a-tour.md#format-your-visuals). Each object can have multiple properties, and each property has a type that's associated with it.
 
 ```json
 "objects": {

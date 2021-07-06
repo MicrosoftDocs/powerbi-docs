@@ -10,8 +10,10 @@
   - name: Concepts
     expanded: true
     items: 
-      - name: "Organize work in workspaces"
+      - name: "The new workspace experience"
         href: service-new-workspaces.md
+      - name: "Roles in new workspaces"
+        href: service-roles-new-workspaces.md
       - name: "Monitor usage in classic workspaces"
         href: service-usage-metrics.md
       - name: "Monitor usage in new workspaces"

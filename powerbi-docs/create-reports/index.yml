@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 12/16/2020
+  ms.date: 07/01/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -59,8 +59,8 @@ landingContent:
             url: ../visuals/power-bi-map-tips-and-tricks.md
           - text: Export data from a visual
             url: ../visuals/power-bi-visualization-export-data.md
-          - text: "Decomposition tree visuals"
-            url: ../visuals/power-bi-visualization-decomposition-tree.md
+          - text: Power Automate visual for Power BI (preview)
+            url: power-bi-automate-visual.md
           - text: "Smart narratives"
             url: ../visuals/power-bi-visualization-smart-narrative.md
           - text: Slicers
