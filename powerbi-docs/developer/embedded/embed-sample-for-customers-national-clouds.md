@@ -437,8 +437,6 @@ An application sample is available within the [Embedding for your organization s
 
 * For more information about for Power BI for Germany cloud, reference [Power BI for Germany cloud FAQ](../../admin/service-govde-faq.yml)
 
-* [How to migrate Power BI Workspace Collection Workspace Collection content to Power BI](migrate-from-powerbi-embedded.md)
-
 Considerations and limitations
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
