@@ -14,7 +14,7 @@ LocalizationGroup: Share your work
 # Filter and share a Power BI report
 *Sharing* is a good way to give a few people access to your reports and dashboards. What if you want to share a filtered version of a report? Maybe you want the report to show only data for a specific city or salesperson or year. This article explains how to filter a report and share the filtered version of the report. Another way to share a filtered report is to [add query parameters to the report URL](service-url-filters.md). In both cases, the report is filtered when recipients first open it. They can clear the filter selections in the report. In this example, we're filtering the report page to show only values where **Business Area** equals **Distribution**, **Infrastructure**, or **Manufacturing**.
 
-![Sharing with report with filter](media/service-share-reports/share-report-with-filter.png)
+[![Sharing with report with filter](media/service-share-reports/share-report-with-filter.png)](media/service-share-reports/share-report-with-filter-expanded.png#lightbox)
 
 Power BI also offers [other ways to collaborate and distribute your reports](service-how-to-collaborate-distribute-dashboards-reports.md). With sharing, you and your recipients need a [Power BI Pro license](../fundamentals/service-features-license-type.md), or the content needs to be in a [Premium capacity](../admin/service-premium-what-is.md). 
 
