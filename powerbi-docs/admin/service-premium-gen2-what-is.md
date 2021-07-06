@@ -32,7 +32,7 @@ Premium Gen2 provides the following updates or improved experiences:
 
 * **Improved and streamlined metrics** with clear and normalized capacity utilization data, that's dependent only on the complexity of analytics operations the capacity performs, and not on its size, the level of load on the system while performing analytics, or other factors. With the improved metrics, utilization analysis, budget planning, chargebacks, and the need to upgrade are clearly visible with built-in reporting. Improved metrics will be made available later in the preview period. 
 
-* **Autoscale** is an optional feature that allows for *automatically adding* one v-core at a time for 24-hour periods when the load on the capacity exceeds its limits, preventing slowdowns caused by overload. V-cores are automatically removed when idle time is detected. Additional v-cores are charged to your Azure subscription on a pay-as-you-go basis. See [using Autoscale with Power BI Premium](service-premium-auto-scale.md) for steps on how to configure and use **Autoscale**.
+* **Autoscale** is an optional feature that allows for *automatically adding* one v-core at a time for 24-hour periods when the load on the capacity exceeds its limits, preventing slowdowns caused by overload. Additional v-cores are charged to your Azure subscription on a pay-as-you-go basis. See [using Autoscale with Power BI Premium](service-premium-auto-scale.md) for steps on how to configure and use **Autoscale**.
 
 * **Reduced management overhead** with proactive and configurable admin notifications about capacity utilization level and load increasing.
 
@@ -56,20 +56,13 @@ The following short video shows how to enable Premium Gen2.
 Optionally, you can also [configure and use Autoscale with Power BI Premium](service-premium-auto-scale.md) to ensure capacity and performance for your Premium users.
 
 
-## Reserved capacities and Premium Gen2
-
-With Power BI Premium Gen2, you get *reserved capacities*. In contrast to a shared capacity where workloads' analytics processing run on computational resources shared with other customers, a reserved capacity is for exclusive use by an organization. It's isolated with reserved computational resources, which provide dependable and consistent performance for hosted content. Note that the processing of the following types of Power BI content is stored in shared capacity rather than your reserved capacity:
-
-* Excel workbooks (unless data is first imported into Power BI Desktop)
-* [Push datasets](/rest/api/power-bi/pushdatasets)
-* [Streaming datasets](../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
-* [Q&A](../create-reports/power-bi-tutorial-q-and-a.md)
+## Workspaces and Premium Gen2
 
 Workspaces reside within capacities. Each Power BI user has a personal workspace known as **My Workspace**. Additional workspaces known as **workspaces** can be created to enable collaboration. By default, workspaces, including personal workspaces, are created in the shared capacity. When you have Premium capacities, both My Workspaces and workspaces can be assigned to Premium capacities.
 
 Capacity administrators automatically have their my workspaces assigned to Premium capacities.
 
-### Capacity nodes for Premium Gen2 (Preview)
+## Capacity nodes for Premium Gen2 (Preview)
 
 With **Premium Gen2** and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md), the amount of memory available on each node size is set to the limit of memory footprint of a single artifact, and not to the cumulative consumption of memory. For example, in Premium Gen2 P1 capacity, only a single dataset size is limited to 25 GB, in comparison to the original Premium, where the total memory footprint of the datasets being handled at the same time was limited to 25 GB.
 
@@ -82,6 +75,8 @@ Section notes:
 
 
 ## Monitoring in Gen2 (preview)
+
+The intent of monitoring in Premium Gen2 is to simplify monitoring and management of Premium capacities. Premium Gen2 customers can adapt their monitoring approach from a tool to ensure their Premium capacities are running properly, into a tool that alerts them if attention should be applied to correct overusage or if more resources are required. In other words, rather than constantly having to monitor for issues and adjust, Premium Gen2 aims to assure that everything is running properly and only alerts users if they must act. 
 
 **Updates for Premium Gen2 and Embedded Gen2 (Preview)** - Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) only require monitoring a single aspect: how much CPU time your capacity requires to serve the load at any moment.
 
@@ -123,6 +118,8 @@ Power BI Premium Gen2 is a tenant-level Microsoft 365 subscription available in 
 - **P** SKUs (P1-P5) for embedding and enterprise features, requiring a monthly or yearly commitment, billed monthly, and includes a license to install Power BI Report Server on-premises.
 
 - **EM** SKUs (EM1-EM3) for _organizational_ embedding, requiring a yearly commitment, billed monthly. EM1 and EM2 SKUs are available only through volume licensing plans. You can't purchase them directly.
+
+In addtion, **Premium Per User** has the benefits available with Premium Gen2, but on an individual user basis.
 
 ### Purchasing
 
