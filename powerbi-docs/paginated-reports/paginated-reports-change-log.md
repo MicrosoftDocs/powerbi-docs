@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 01/27/2021
+ms.date: 07/06/2021
 ---
 
 # Power BI Report Builder change log
@@ -17,6 +17,20 @@ ms.date: 01/27/2021
 Learn about new items, bug fixes, and known issues for each release of Power BI Report Builder. We update this article with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/desktop-latest-update.md).
 
 Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
+
+## June 2021 
+
+Version 15.6.01628.0002, released June 17, 2021 
+
+### Bug fixes 
+
+- Various accessibility fixes related to keyboard shortcuts and screen reading tools.
+
+### Features
+
+- Added new data tab which enables users to easily connect to all the most popular data sources when creating your paginated reports. 
+- Streamlined DAX copy/paste allowing these actions in the dataset without connecting to the model.
+- Added support for SSO for both SQL Server and Oracle data sources through the Power BI Enterprise Gateway.
 
 ## January 2021 
 
