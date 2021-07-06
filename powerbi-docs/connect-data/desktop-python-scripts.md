@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date:  06/02/2020
+ms.date:  05/14/2021
 LocalizationGroup: Connect to data
 ---
 # Run Python scripts in Power BI Desktop
@@ -84,7 +84,7 @@ When preparing and running a Python script in Power BI Desktop, there are a few 
 
 To run your Python Script in Power BI Desktop:
 
-1. In the Home ribbon, select **Get Data** > **Other**.
+1. In the Home ribbon, select **Get data** > **Other**.
 
 1. Select **Other** > **Python script** as shown in the following image:
 

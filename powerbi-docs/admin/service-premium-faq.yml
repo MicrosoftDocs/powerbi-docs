@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-premium
   ms.topic: conceptual
-  ms.date: 06/16/2021
+  ms.date: 07/06/2021
   LocalizationGroup: Premium
     
 title: Power BI Premium FAQ
@@ -37,9 +37,13 @@ sections:
           * The ability to maintain BI assets on-premises with Power BI Report Server.
           * One API surface, a consistent set of capabilities, and access to the latest features for embedded analytics.
           
-          
       - question: |
-          What does Power BI Premium do? How does it work?  
+          What is Power BI Premium Generation 2?
+        answer: |
+          Power BI Premium recently released a new version of Power BI Premium, **Premium Gen2**, currently in preview. Premium Gen2 will simplify the management of Premium capacities, and reduce management overhead. For more information about Premium Gen2, see [Power BI Premium Generation 2 (preview)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+    
+      - question: |
+          What does Power BI Premium do? How does it work? 
         answer: |
           Power BI Premium consists of capacity in the Power BI service exclusively allocated to each organization. The capacity is supported by dedicated hardware fully managed by Microsoft. Organizations can choose to apply their capacity broadly, or allocate it to assigned workspaces based on the number of users, workload needs, or other factors—and scale up or down as requirements change.
 

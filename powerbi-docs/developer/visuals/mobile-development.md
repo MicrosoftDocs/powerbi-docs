@@ -22,11 +22,11 @@ As a developer creating Power BI visuals, the unique constraints of each mobile 
 
 The following requirements are essential for developing mobile-friendly visuals:
 
-### Rendering
+* **Rendering**
 
-  A Power BI visual has to render on all [supported mobile devices](https://docs.microsoft.com/power-platform/admin/supported-web-browsers-and-mobile-devices), including browsers and applications. There should be no errors in reports, dashboards, or when running in **Focus** mode.
+  A Power BI visual has to render on all [supported mobile devices](/power-platform/admin/supported-web-browsers-and-mobile-devices), including browsers and applications. There should be no errors in reports, dashboards, or when running in **Focus** mode.
 
-### Interactivity
+* **Interactivity**
 
   Mobile devices should have the same interactive functionality as desktop devices. This means that all events handled on desktop browsers must be supported, or have comparable event handlers, on mobile devices.
   
@@ -53,7 +53,7 @@ The following requirements are essential for developing mobile-friendly visuals:
 
 The following are optional but can be used to create a better end-user experience.
 
-### Recommended rendering
+* **Recommended rendering**
 
   To support smaller visual sizes, add format options that allow the user to adjust the size of each element. For example, add format options to labels, for use in reports and dashboards. This allows users to customize a visual specifically for their mobile device.
   
@@ -62,11 +62,11 @@ The following are optional but can be used to create a better end-user experienc
   > [!NOTE]
   > To optimize a visual in **Focus** mode, both portrait and landscape screen size orientations should be considered. See [Display content in Focus mode](../../consumer/end-user-focus.md).
 
-### Recommended interactivity
+* **Recommended interactivity**
 
   Consider adding mobile-specific event handlers like dragging and scrolling.
 
-### Failover
+* **Failover**
 
   If a visual can't render on a mobile device, it should show a **descriptive** error.
 

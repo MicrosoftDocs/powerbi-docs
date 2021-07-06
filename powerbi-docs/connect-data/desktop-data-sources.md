@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/05/2021
+ms.date: 06/21/2021
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
@@ -87,7 +87,7 @@ The **Database** category provides the following data connections:
 * Actian (Beta)
 * AtScale cubes
 * BI Connector
-* Data Virtuality LDW (Beta)
+* Data Virtuality LDW
 * Denodo
 * Dremio
 * Exasol
@@ -114,8 +114,9 @@ The **Power Platform** category provides the following data connections:
 * Power BI datasets
 * Power BI dataflows
 * Common Data Service (Legacy)
-* Power Platform dataflows (Beta)
 * Dataverse
+* Power Platform dataflows (Beta)
+
 
 The following image shows the **Get Data** window for **Power Platform**.
 
@@ -138,8 +139,8 @@ The **Azure** category provides the following data connections:
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive Query
-* Azure Databricks
 * Azure Cost Management
+* Azure Databricks
 * Azure Time Series Insights (Beta)
 
 
@@ -188,18 +189,17 @@ The **Online Services** category provides the following data connections:
 * Hexagon PPM Smart API
 * Industrial App Store
 * Intune Data Warehouse (Beta)
-* Microsoft Graph Security (Beta)
 * Projectplace for Power BI
 * Product Insights (beta)
 * Quick Base
+* SoftOne BI (beta)
 * Spigit (Beta)
 * TeamDesk (Beta)
 * Webtrends Analytics (Beta)
 * Witivio (Beta)
 * Workplace Analytics (Beta)
 * Zoho Creator (Beta)
-* Dynamics 365 Customer Insights (Beta)
-* SoftOne BI (beta)
+
 
 
 The following image shows the **Get Data** window for **Online Services**.
@@ -225,8 +225,10 @@ The **Other** category provides the following data connections:
 * Acterys : Model Automation & Planning (Beta)
 * Anaplan Connector v1.0 (Beta)
 * Solver
+* Bloomberg Data and Analytics (Beta)
 * Cherwell (Beta)
 * Cognite Data Fusion
+* EQuIS (Beta)
 * FHIR
 * Information Grid (Beta)
 * Jamf Pro (Beta)
@@ -243,9 +245,6 @@ The **Other** category provides the following data connections:
 * Vena (Beta)
 * Vessel Insight (Beta)
 * Zucchetti HR Infinity (Beta)
-* MicroStrategy for Power BI
-* Microsoft Teams Personal Analytics (Beta)
-* Bloomberg Data and Analytics (Beta)
 * Blank Query
 
 
@@ -313,6 +312,10 @@ When you select the **Export PBIDS** button, Power BI Desktop generates the PBID
 ![Using a text editor to modify the PBIDS file](media/desktop-data-sources/data-sources-11.png)
 
 If you prefer to manually create your PBIDS files in a text editor, you must specify the required inputs for a single connection and save the file with the PBIDS extension. Optionally, you can also specify the connection mode as either DirectQuery or Import. If **mode** is missing/null in the file, the user who opens the file in Power BI Desktop is prompted to select **DirectQuery** or **Import**.
+
+> [!IMPORTANT]
+> Some data sources will generate an error if columns are encrypted in the data source. For example, if two or more columns in an Azure SQL Database are encrypted during an Import action, an error will be returned. For more information, see [SQL Database](/power-query/connectors/azuresqldatabase).
+
 
 
 ### PBIDS file examples

@@ -130,6 +130,8 @@
         href: end-user-apps.md
       - name: "Install and use apps"
         href: end-user-app-view.md
+      - name: "Datasets hub"
+        href: end-user-datasets-hub.md
       - name: "Connect to services"
         href: ../connect-data/service-connect-to-services.md
       - name: "Get a sample app from the app marketplace"

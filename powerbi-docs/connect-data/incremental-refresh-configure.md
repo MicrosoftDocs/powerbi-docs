@@ -1,5 +1,5 @@
 ---
-title: Incremental refresh in Power BI
+title: Configure incremental refresh for Power BI datasets
 description: Describes how to configure incremental refresh
 author: minewiskan
 ms.author: owend
@@ -7,7 +7,7 @@ ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/08/2021
+ms.date: 05/13/2021
 LocalizationGroup: 
 ---
 
@@ -19,17 +19,17 @@ Configuring incremental refresh includes creating RangeStart and RangeEnd parame
 
 ## Create parameters
 
-In this task, use Power Query Editor to create RangeStart and RangeEnd parameters with default values. The default values apply only when filtering the data to be loaded into the model in Power BI Desktop. The values you enter should include only small amount of the most recent data. When published to the service, these values are overridden by the incremental refresh policy.
+In this task, use Power Query Editor to create RangeStart and RangeEnd parameters with default values. The default values apply only when filtering the data to be loaded into the model in Power BI Desktop. The values you enter should include only small amount of the most recent data from your data source. When published to the service, these values are overridden by the incremental refresh policy.
 
 1. In Power BI Desktop, click **Transform data** to open Power Query Editor.
 
 1. Click **Manage Parameters** > **New Parameter**.
 
-1. In **Manage Parameters** > **Name**, type **RangeStart** (case sensitive), then in **Type**, select **Date/Time**, and then in **Current Value** enter a start date/time value, for example, 1/25/2014 12:00:00 AM.
+1. In **Manage Parameters** > **Name**, type **RangeStart** (case sensitive), then in **Type**, select **Date/Time**, and then in **Current Value** enter a start date/time value.
 
     ![Define Range Start parameter in Manage Parameters dialog](media/incremental-refresh-configure/create-range-start.png)
 
-1. Create a second parameter named **RangeEnd**. In **Type**, select **Date/Time**, and then in **Current Value** enter an end date/time value. In this example, we specify 1/28/2014 12:00:00 AM, which is the last transaction date and time in the data source table.
+1. Create a second parameter named **RangeEnd**. In **Type**, select **Date/Time**, and then in **Current Value** enter an end date/time value.
 
     ![Define Range End parameter in Manage Parameters dialog](media/incremental-refresh-configure/create-range-end.png)
 

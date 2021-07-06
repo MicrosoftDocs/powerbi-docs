@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/13/2020
+ms.date: 06/22/2021
 LocalizationGroup: Reports
 ---
 # Let users personalize visuals in a report
@@ -52,7 +52,7 @@ Keep the following considerations in mind when working with perspectives:
 
 To use Perspectives, you must enable Personalize visuals for the report. You also must create at least one Perspective that includes the dimensions and measures you want end-users to interact with for the Personalize visuals experience.
 
-To create the perspective use [Tabular Editor](https://tabulareditor.com/), which you can download from the following location: Tabular Editor download
+To create the perspective use Tabular Editor, which you can download from the following location: [Tabular Editor download](https://tabulareditor.com/).
 
 Once you install **Tabular Editor**, open your report in **Power BI Desktop** and launch **Tabular Editor** from the **External Tools** tab of the ribbon, as shown in the following image.
 

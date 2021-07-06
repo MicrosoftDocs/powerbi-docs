@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 06/16/2021
+ms.date: 07/06/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
 ---
@@ -248,7 +248,7 @@ With P Premium SKUs, anyone, whether they're inside or outside your organization
 
 ![Content sharing](media/service-premium-what-is/premium-sharing.png)
 
-Premium enables widespread distribution of content by Pro users without requiring Pro or Premium Per User (PPU) licenses for recipients who view the content. Pro or Premium Per User (PPU) licenses are required for content creators. Creators connect to data sources, model data, and create reports and dashboards that are packaged as workspace apps. User without a Pro or Premium Per User (PPU) license can still access a workspace that's in Power BI Premium capacity, as long as they have a Viewer role. 
+Premium enables widespread distribution of content by Pro users without requiring Pro or Premium Per User (PPU) licenses for recipients who view the content. Pro or Premium Per User (PPU) licenses are required for content creators. Creators connect to data sources, model data, and create reports and dashboards that are packaged as workspace apps. Users without a Pro or Premium Per User (PPU) license can still access a workspace that's in Power BI Premium capacity, as long as they only have a Viewer role. A Pro or PPU license is required for other roles. 
 
 To learn more, see [Power BI licensing](service-admin-licensing-organization.md).
 

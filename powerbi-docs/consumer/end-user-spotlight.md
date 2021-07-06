@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/06/2020
+ms.date: 06/16/2021
 LocalizationGroup: Consumer
 ---
 # Add spotlights to Power BI reports
@@ -22,7 +22,7 @@ With spotlight, you can draw attention to a specific visual on a report page.  I
 
 2. Decide which visual you'd like to highlight on the report page. Select the **More actions (...)** dropdown.  
 
-    ![Compare spotlight to focus mode](media/end-user-spotlight/power-bi-spotlight.png)
+    [![Compare spotlight to focus mode](media/end-user-spotlight/power-bi-spotlight.png)](media/end-user-spotlight/power-bi-spotlight-expanded.png#lightbox)
 
 3. Choose the option for **Spotlight**. The selected visual is highlighted, which causes all other visuals on the page to fade to near transparency. 
 

@@ -8,7 +8,7 @@ Ms.custom: css_fy20Q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 10/06/2020
+ms.date: 05/15/2021
 LocalizationGroup: Get started
 ---
 
@@ -34,7 +34,7 @@ The Power BI service runs in a browser.
 
 
 ### Step 2: type your email address
-The first time you sign in, Microsoft checks to see if you already have a Microsoft 365 account. In the example below, Pradtanna already has a license for other Microsoft services. 
+The first time you sign in, Microsoft asks if you already have a Microsoft 365 account. Select **SIGN IN**.
 
 ![Screenshot shows a sign-in message.](media/end-user-sign-in/power-bi-already.png)
 
@@ -54,11 +54,11 @@ Review the terms and conditions, and if you agree, select the checkbox and choos
 ### Step 4: review your Home landing page
 On your first visit, Power BI opens your **Home** landing page. If **Home** doesn't open, select it from the nav pane. 
 
-![screenshot showing Home selected](media/end-user-sign-in/power-bi-home-blank.png)
+![screenshot showing Home selected](media/end-user-sign-in/power-bi-home-first.png)
 
 On Home, you'll see all the content that you have permission to use. At first, there may not be much content, but don't worry, that will change as you start to use Power BI with your colleagues. Remember that report that your colleague shared with you via email? It's on your Home landing page under the heading **Shared with me**.
 
-![Home landing page](media/end-user-sign-in/power-bi-home-new.png)
+![Home landing page](media/end-user-sign-in/power-bi-new-home.png)
 
 If you don't want Power BI to open to Home, you can [set a **Featured** dashboard or report](end-user-featured.md) to open instead. 
 

@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 04/30/2021
 LocalizationGroup: Share your work
 ---
 
@@ -21,7 +21,7 @@ The **Embed** option supports [URL filters](service-url-filters.md) and URL sett
 
 1. Open a report in the Power BI service.
 
-2. On the **Share** menu, select **Embed report** >  **Website or portal**.
+2. On the **File** menu, select **Embed report** >  **Website or portal**.
 
     ![Website or portal option](media/service-embed-secure/power-bi-more-options-website.png)
 
