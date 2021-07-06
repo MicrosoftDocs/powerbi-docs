@@ -83,7 +83,7 @@ Before adjusting the percentage of queries that will use the aggregations cache,
 
 Increasing the percentage means a greater number of report queries are ranked higher and therefore aggregations for them are included in the in-memory aggregations cache. While increasing the percentage can mean more queries are answered from the in-memory cache, it can also mean longer training and refresh times. Training and refresh operations are process and resource intensive for both Power BI system and data source system resources. Increasing the percentage means more aggregations must be queried and calculated from data sources during training and refresh operations, increasing the probability of excessive use of system resources and potentially causing timeouts.
 
-Adjusting to a lower percentage can mean shorter training and refresh times, and less resource utilization, but report visualization performance could diminish because fewer report queries would be answered by the in-memory aggregations cache. Those report queries instead have to be passed to the data source by using DirectQuery.
+Adjusting to a lower percentage can mean shorter training and refresh times, and less resource utilization, but report visualization performance could diminish because fewer report queries would be answered by the in-memory aggregations cache. Those report queries instead must then be passed to the data source by using DirectQuery.
 
 An optimal percentage strikes a balance between providing pre-aggregated results from the in-memory aggregations cache for the most frequently used report queries, while accepting slower results for outlier and ad-hoc queries in exchange for faster training and refresh times and reduced burden on system resources.
 
