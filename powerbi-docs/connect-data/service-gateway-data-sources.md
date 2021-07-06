@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 06/04/2021
+ms.date: 07/06/2021
 ms.custom: ''
 LocalizationGroup: Gateways
 ---
@@ -53,16 +53,26 @@ If you don't have a gateway installed yet, see [Install an on-premises data gate
 
 6. Under **Advanced settings**, you could configure [Single Sign-On (SSO)](service-gateway-sso-overview.md) for your data source. 
 
-    ![advanced settings](media/service-gateway-data-sources/advanced-settings-02.png)
+    ![Screenshot of advanced settings. ](media/service-gateway-data-sources/advanced-settings-02.png)
 
-    You could either configure **Use SSO via Kerberos for DirectQuery queries**  or **Use SSO via Kerberos for DirectQuery And Import queries** for DirectQuery-based Reports and **Use SSO via Kerberos for DirectQuery And Import queries** for Refresh-based Reports.
+    You can either configure **Use SSO via Kerberos for DirectQuery queries**,  **Use SSO via Kerberos for DirectQuery And Import queries** or **Use SSO via Azure AD for DirectQuery queries** for DirectQuery-based reports and **Use SSO via Kerberos for DirectQuery And Import queries** for refresh-based reports.
 
-    If you use the **Use SSO via Kerberos for DirectQuery queries** and use this data source for a DirectQuery based Report, it will use the credentials of the user that signs in to the Power BI service. For a Refresh-based Report, it will use the credentials that you enter in the **Username** and **Password** fields.
+    If you use **Use SSO via Kerberos for DirectQuery queries** and use this data source for a DirectQuery-based report, it will use the credentials of the user that signs in to the Power BI service. For a refresh-based report, it will use the credentials that you enter in the **Username** and **Password** fields and the **Authentication** method chosen.
 
-    When you use the **Use SSO via Kerberos for DirectQuery And Import queries**, you don't need to provide any credentials. If this data source is used for DirectQuery based Report, it will use the user that's mapped to the (Azure) Active Directory user that signs in to the Power BI service.  For a Refresh based Report, it will use the dataset owner's security context
+    When you use **Use SSO via Kerberos for DirectQuery And Import queries**, you don't need to provide any credentials. If this data source is used for DirectQuery-based reports, it will use the user that's mapped to the (Azure) Active Directory user that signs in to the Power BI service. For a refresh-based report, it will use the dataset owner's security context.
 
-    > [!NOTE]
-    >SSO for Import Queries is available only for the list of SSO data sources using [Kerberos constrained delegation](service-gateway-sso-kerberos.md).
+    For more information on **Use SSO via Kerberos for DirectQuery queries** or **Use SSO via Kerberos for DirectQuery And Import queries**, see [Overview of single sign-on (SSO) for gateways in Power BI](service-gateway-sso-overview.md).
+
+    If you use **Use SSO via Azure AD for DirectQuery queries** and use this data source for a DirectQuery-based report, it will use the AAD token of the user who signs into the Power BI service. For a refresh-based report, it will use the credentials that you enter in the **Username** and **Password** fields and the **Authentication** method chosen. The **Use SSO via Azure AD for DirectQuery queries** option will be available only if the tenant admin allows AAD SSO via the on-prem data gateway and for the following data sources:
+
+    * SQL Server
+    * Azure Data Explorer
+    * Snowflake
+
+    For more information on **Use SSO via Azure AD for DirectQuery queries** please see [Azure AD Single Sign-On (SSO) for Gateway](../admin/service-admin-portal.md#azure-ad-single-sign-on-sso-for-gateway).
+
+    >[!NOTE]
+    > SSO for Import Queries is available only for the list of SSO data sources using [Kerberos constrained delegation](service-gateway-sso-kerberos.md).
 
 7. Under **Advanced settings**, optionally configure the [privacy level](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) for your data source (doesn't apply to [DirectQuery](desktop-directquery-about.md)).
 
