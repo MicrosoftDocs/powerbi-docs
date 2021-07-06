@@ -578,11 +578,17 @@ In addition to scaling, this update method also handles selections and colors. T
 
 ```
 
-### Populate Properties pane with enumerateObjectInstances
+After providing a selector for each property, you get the following `dataView` object array:
+
+![Data bound properties in source](./media/create-bar-chart/object-databound-property-source.png)
+
+Each item in the array `dataViews[0].categorical.categories[0].objects` corresponds to a category in the dataset.
+
+### Populate the properties pane
 
 The final method in the `IVisual` function is [`enumerateObjectInstances`](visual-api.md#enumerateobjectinstances-optional). This method goes through all the *objects* in the *capabilities.json* file (in our case, `enableAxis` and `colorSelector`) and places them inside the [**Format** pane](conditional-format.md). Each object is called with `enumerateObjectInstances`. The object's name is available from `EnumerateVisualObjectInstancesOptions`.
 
-For each object, define the property with its current state.
+To add a color picker for each category on the **Property** pane, add an additional case to the `switch` statement for `colorSelector`, and iterate through each data point with the associated color.
 
 ```typescript
     /**
@@ -681,13 +687,7 @@ We defined `visualTransform` as a construct that converts `dataView` to a view m
 
 For more detailed instructions on how to add color to your bar chart go to [Add colors to your Power BI visual](add-colors-power-bi-visual.md)
 
-
-
-For more information, see [How to use SelectionManager](./selection-api.md#how-to-use-selectionmanager-to-select-data-points).
-
---------
-
-## Define and use ObjectEnumerationUtility
+## Object enumeration utility
 
 Object property values are available as metadata on the `dataView`, but there's no service to help retrieve these properties. `ObjectEnumerationUtility` is a set of static functions used retrieve object values from the `dataView`, and for other visual projects. The `ObjectEnumerationUtility` is optional, but is great for iterating through the `dataView` to retrieve object properties.
 Create a file called called *objectEnumerationUtility.ts* in the `src` folder and copy the following code into it:
@@ -714,14 +714,41 @@ export function getValue<T>(objects: DataViewObjects, objectName: string, proper
     }
     return defaultValue;
 }
+
+/**
+ * Gets property value for a particular object in a category.
+ *
+ * @function
+ * @param {DataViewCategoryColumn} category - List of category objects.
+ * @param {number} index                    - Index of category object.
+ * @param {string} objectName               - Name of desired object.
+ * @param {string} propertyName             - Name of desired property.
+ * @param {T} defaultValue                  - Default value of desired property.
+ */
+export function getCategoricalObjectValue<T>(category: DataViewCategoryColumn, index: number, objectName: string, propertyName: string, defaultValue: T): T {
+    let categoryObjects = category.objects;
+
+    if (categoryObjects) {
+        let categoryObject: DataViewObject = categoryObjects[index];
+        if (categoryObject) {
+            let object = categoryObject[objectName];
+            if (object) {
+                let property: T = <T>object[propertyName];
+                if (property !== undefined) {
+                    return property;
+                }
+            }
+        }
+    }
+    return defaultValue;
+}
 ```
+
+The function `getCategoricalObjectValue` provides a convenient way of accessing properties by their category index. You must provide an `objectName` and `propertyName` that match the object and property in *capabilities.json*.
 
 See [objectEnumerationUtility.ts](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/objectEnumerationUtility.ts) for the source code.
 
-
-
-
-
+-----
 
 ## Static objects
 
@@ -828,66 +855,10 @@ for (let i = 0, len = Math.max(category.values.length, dataValue.values.length);
 }
 ```
 
-### Populate Properties pane with enumerateObjectInstances
-
-Use `enumerateObjectInstances` to populate the **Property** pane with objects.
-
-For this instance, add a color picker to render each category on the **Property** pane. To do this, add an additional case to the `switch` statement for `colorSelector`, and iterate through each data point with the associated color. 
-
-Selection is required to associate the color with the data point.
-
-```typescript
-/**
- * Enumerates through the objects defined in the capabilities and adds the properties to the format pane
- *
- * @function
- * @param {EnumerateVisualObjectInstancesOptions} options - Map of defined objects
- */
-public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions): VisualObjectInstanceEnumeration {
-    let objectName = options.objectName;
-    let objectEnumeration: VisualObjectInstance[] = [];
-
-    switch(objectName) {
-        case 'enableAxis':
-            objectEnumeration.push({
-                objectName: objectName,
-                properties: {
-                    show: this.barChartSettings.enableAxis.show,
-                },
-                selector: null
-            });
-            break;
-        case 'colorSelector':
-            for(let barDataPoint of this.barDataPoints) {
-                objectEnumeration.push({
-                    objectName: objectName,
-                    displayName: barDataPoint.category,
-                    properties: {
-                        fill: {
-                            solid: {
-                                color: barDataPoint.color
-                            }
-                        }
-                    },
-                    selector: barDataPoint.selectionId.getSelector()
-                });
-            }
-            break;
-    };
-
-    return objectEnumeration;
-}
-```
-
-After providing a selector for each property, you get the following `dataView` object array:
-
-![Data bound properties in source](./media/create-bar-chart/object-databound-property-source.png)
-
-Each item in the array `dataViews[0].categorical.categories[0].objects` corresponds to the concrete category of the dataset.
-
-The function `getCategoricalObjectValue` just provides a convenient way of accessing properties by their category index. You must provide an `objectName` and `propertyName` that match the object and property in *capabilities.json*.
 
 ## Adding other features
+
+For more information, see [How to use SelectionManager](./selection-api.md#how-to-use-selectionmanager-to-select-data-points)
 
 * [Adding Selection and Interactions with Other Visuals](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/master/Tutorial/Selection.md)
 * [Add a property pane slider to control opacity](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/e2e0bc5888d9a3ca305a7a7af5046068645c8b30)
