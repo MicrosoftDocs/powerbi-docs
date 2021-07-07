@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 01/04/2020
+ms.date: 07/01/2021
 ---
 
 # Chat in Microsoft Teams directly from the Power BI service
