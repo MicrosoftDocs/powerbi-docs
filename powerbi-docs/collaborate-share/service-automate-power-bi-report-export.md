@@ -90,4 +90,5 @@ Optionally, if you want to send the report based on row-level security (RLS), yo
 
 - [Integrate Power BI data alerts with Power Automate](service-flow-integration.md)
 - [Get started with Power Automate](/power-automate/getting-started/)
+- [Create a Power Automate button visual](../create-reports/power-bi-automate-visual.md)
 - More questions? [Try the Power BI Community](https://community.powerbi.com/)

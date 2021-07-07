@@ -197,6 +197,10 @@ To use this scrip, you'll need to provide a *workspace name* and and a *user pri
 
 ## Paginated reports
 
+### Why can't I see a paginated report?
+
+To view a paginated report in the pipeline, you need to have a [paginated reports workload](./../developer/embedded/embed-paginated-reports-organization.md#enable-paginated-reports-workload) enabled on your capacity.
+
 ### Why can't I deploy a paginated report?
 
 To deploy a paginated report, both of these conditions must be met:

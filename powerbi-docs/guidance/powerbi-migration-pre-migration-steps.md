@@ -92,7 +92,7 @@ Your [BI solution architecture](center-of-excellence-business-intelligence-solut
 - Define [Power BI administrators](../admin/service-admin-role.md).
 - Procure and assign initial [user licenses](../admin/service-admin-licensing-organization.md).
 - Configure and review [Power BI tenant settings](admin-tenant-settings.md).
-- Setup [workspace roles](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) and assign access to Azure Active Directory security groups and users.
+- Setup [workspace roles](../collaborate-share/service-roles-new-workspaces.md) and assign access to Azure Active Directory security groups and users.
 - Configure an initial [data gateway](../connect-data/service-gateway-deployment-guidance.md) cluster—with a plan to update regularly.
 - Procure initial [Premium capacity license](../admin/service-admin-premium-purchase.md) (if applicable).
 - Configure [Premium capacity workloads](../admin/service-admin-premium-workloads.md)—with a plan to manage on an ongoing basis.

@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom: contperf-fy21q2
-ms.date: 04/05/2021
+ms.date: 06/28/2021
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -121,6 +121,10 @@ To meet compliance requirements, organizations are often required to classify an
 * [Admin - InformationProtection SetLabelsAsAdmin](/rest/api/power-bi/admin/informationprotection_setlabelsasadmin)
 * [Admin - InformationProtection RemoveLabelsAsAdmin](/rest/api/power-bi/admin/informationprotection_removelabelsasadmin)
 
+## Auditing for activity on sensitivity labels
+
+Whenever a sensitivity label on a dataset, report, dashboard, or dataflow is applied, changed, or removed, that activity is recorded in the audit log for Power BI. You can track these activities in the unified audit log or in the Power BI activity log. See [Audit schema for sensitivity labels in Power BI](service-security-sensitivity-label-audit-schema.md) for detail.
+
 ## Sensitivity labels and protection on exported data
 
 When data is exported from Power BI to Excel, PDF files (service only) or PowerPoint files, Power BI automatically applies a sensitivity label on the exported file and protects it according to the label’s file encryption settings. This way your sensitive data remains protected no matter where it is.
@@ -214,6 +218,8 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * Getting data from encrypted Excel (.xlsx) files is not supported. This includes “Get data” and refresh scenarios.
 
+* Information protection in Power BI doesn’t support **B2B** and **multi-tenant scenarios**.
+
 ### Power BI service
 
 * Sensitivity labels can be applied only on dashboards, reports, datasets, and dataflows. They are not currently available for [paginated reports](../paginated-reports/report-builder-power-bi.md) and workbooks.
@@ -243,8 +249,6 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 * **Get data** can upload protected files only if they are local. Protected files from online services such as SharePoint Online or OneDrive for Business cannot be uploaded. For a protected file, you can either upload it from your local device, or first remove the file's label in Power BI Desktop and then upload it via one of the online services.
 
 * **Export to PDF** does not support sensitivity labels. If you export a file that has a sensitivity label to PDF, the PDF will not receive the label and no protection will be applied.
-
-* Information protection in Power BI Desktop doesn’t support **B2B** and **multi-tenant scenarios**.
 
 * If you overwrite a labeled dataset or report in the service with an unlabeled .pbix file, the labels in the service will be retained.
 

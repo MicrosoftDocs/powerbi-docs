@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 10/20/2020
+ms.date: 06/26/2021
 LocalizationGroup: Premium
 ---
 

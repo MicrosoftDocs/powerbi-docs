@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 06/13/2021
+ms.date: 06/28/2021
 LocalizationGroup: Data from files
 ---
 # Mandatory label policy for Power BI (preview)
@@ -57,6 +57,7 @@ Where:
 ## Considerations and limitations
 * Mandatory labeling in Power BI is in preview, so there may be flows that allow the user to create or edit unlabeled content.
 * Mandatory labeling in Power BI is not supported for service principals and APIs. Service principals and APIs are not affected by mandatory label policies.
+* Mandatory labeling in Power BI is not supported for [external guest users (B2B users)](service-admin-azure-ad-b2b.md). B2B users are not affected by mandatory label policies.
 
 ## Next steps
 
