@@ -21,10 +21,10 @@ In this tutorial, you learn how to:
 > [!div class="checklist"]
 >
 > * Define the [capabilities](capabilities.md) of your visual
-> * Bind data to the visual
+> * [Render the visual](#rendering)
 > * Add objects to the property pane.
 > * Understand the source code used to build a visual
-> * Package your visual.
+> * [Package the visual](#package-the-visual).
 
 >[!NOTE]
 >
@@ -824,7 +824,7 @@ See [objectEnumerationUtility.ts](https://github.com/Microsoft/PowerBI-visuals-s
 
 ## Test the visual
 
-Now, let's run the visual in the Power BI server to see how it looks:
+Run the visual in the **Power BI** server to see how it looks:
 
 1. In PowerShell, navigate to the project's folder and start the development app.
 
@@ -850,7 +850,7 @@ For more information, see [How to use SelectionManager](./selection-api.md#how-t
 * [Add a property pane slider to control opacity](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/e2e0bc5888d9a3ca305a7a7af5046068645c8b30)
 * [Add support for tooltips](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14)
 
-## Packaging
+## Package the visual
 
 Before you can load your visual into [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or share it with the community in the [Power BI Visual Gallery](https://visuals.powerbi.com/), you must package it.
 
