@@ -113,7 +113,7 @@ During training, automatic aggregations creates and drops tables in the in-memor
 
 #### Average row count bar chart
 
-During training, automatic aggregations creates and deletes rows in aggregations table in the in-memory cache. The average row count provides an estimate of the average number of rows included.  A higher number of rows can mean longer refresh times.
+During training, automatic aggregations creates and deletes rows in aggregations tables in the in-memory cache. The average row count provides an estimate of the average number of rows included.  A higher number of rows can mean longer refresh times.
 
 :::image type="content" source="media/aggregations-automatic/row-count-chart.png" alt-text="Average row count bar chart":::
 
