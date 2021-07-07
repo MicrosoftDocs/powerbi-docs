@@ -20,9 +20,9 @@ In this tutorial, you learn how to:
 
 > [!div class="checklist"]
 >
-> * Define the [capabilities](capabilities.md) of your visual
+> * [Define the capabilities](#define-capabilities) of your visual
 > * [Render the visual](#rendering)
-> * Add objects to the property pane.
+> * [Add objects to the property pane](#define-objects-for-properties-pane).
 > * Understand the source code used to build a visual
 > * [Package the visual](#package-the-visual).
 
@@ -838,8 +838,10 @@ Run the visual in the **Power BI** server to see how it looks:
     >Do not close the **PowerShell** window until the end of the tutorial. To stop the visual from running, enter *Ctrl+C*, and if prompted to terminate the batch job, enter *Y*, and press *Enter*.
 2. [View the visual in Power BI service](develop-circle-card.md#view-the-visual-in-power-bi-service).
 3. Add data to the visual
-4. Drag the edges of the visual to chage the size and notice how the scale adjusts.
+   ![Screenshot of data bound to field well.](./media/create-bar-chart/adding-data.png)
+4. Drag the edges of the visual to change the size and notice how the scale adjusts.
 5. Toggle the X-axis on and off.
+   ![Screenshot of X-Axis on property pane.](./media/create-bar-chart/object-show-property.png)
 6. Change the colors of the different categories.
 
 ## Adding other features
