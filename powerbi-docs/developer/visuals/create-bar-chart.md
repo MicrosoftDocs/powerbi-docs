@@ -671,8 +671,6 @@ To add a color picker for each category on the **Property** pane, add an additio
     }
 ```
 
-Your final barChart.ts file should look like [this](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts).
-
 ## (Optional) Rendering the X axis (static objects)
 
 You can add objects to the **Property** pane to further customize the visual. These customizations can be user interface changes, or changes related to the data that was queried. The sample uses static objects to render the X-axis for the bar chart.
@@ -708,11 +706,11 @@ function getAxisTextFillColor(
 }
 ```
 
-## (Optional) Adding color (databound objects)
+## (Optional) Adding color (data-bound objects)
 
-Databound objects are similar to static objects, but typically deal with data selection. For example, you can change the color associated with the data point.
+Data-bound objects are similar to static objects, but typically deal with data selection. For example, you can change the color associated with each data point.
 
-![Databound object properties](./media/create-bar-chart/object-databound-property.png)
+![Screenshot of color selection on properties](./media/create-bar-chart/object-databound-property.png)
 
 We already defined the `colorSelector` object in the *capabilities* file.
 
@@ -759,6 +757,9 @@ function getColumnStrokeWidth(isHighContrast: boolean): number {
 The `colorPalette` service, which is found in the `visualTransform` function, manages these colors. Since `visualTransform` iterates through each of the data points, it's an ideal place to assign categorical objects like color.
 
 For more detailed instructions on how to add color to your bar chart go to [Add colors to your Power BI visual](add-colors-power-bi-visual.md)
+
+> [!NOTE]
+> Verify that your final `barChart.ts` file looks like [this](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts), or download [this file](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts) to replace your file.
 
 ## Object enumeration utility
 
@@ -821,21 +822,22 @@ The function `getCategoricalObjectValue` provides a convenient way of accessing 
 
 See [objectEnumerationUtility.ts](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/objectEnumerationUtility.ts) for the source code.
 
-----
 ## Test the visual
 
-3. Navigate to the project's folder.
+Now, let's run the visual in the Power BI server to see how it looks:
+
+1. In PowerShell, navigate to the project's folder and start the development app.
 
     ```powershell
-    cd BarChart
+    pbiviz start
     ```
 
-4. Start the development app by running `pbiviz start` from the Powershell. Your visual is now running while being hosted on your computer.
-
-5. Change location of main source code in tsconfig and pbiviz
+     Your visual is now running while being hosted on your computer.
 
     >[!IMPORTANT]
-    >Do not close the PowerShell window until the end of the tutorial. To stop the visual from running, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
+    >Do not close the **PowerShell** window until the end of the tutorial. To stop the visual from running, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
+
+2. Change location of main source code in tsconfig and pbiviz
 
 ## Adding other features
 
@@ -847,18 +849,25 @@ For more information, see [How to use SelectionManager](./selection-api.md#how-t
 
 ## Packaging
 
-Before you can load your visual into [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or share it with the community in the [Power BI Visual Gallery](https://visuals.powerbi.com/), you must package it. Navigate to the root folder of your visual project, which contains the file *pbiviz.json*, and use the following command to generate a *pbiviz* file:
+Before you can load your visual into [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or share it with the community in the [Power BI Visual Gallery](https://visuals.powerbi.com/), you must package it.
 
-```bash
-pbiviz package
-```
+1. In **VS Code**, navigate to the root folder of your visual project, which contains the file *pbiviz.json* file.
+2. Edit the following fields in the *pbiviz.json* file:
+    * name
+    * displayName
+    * visualClassName
+    * description
+    * author name
+    * author email
+3. In PowerShell, enter the following command to generate a *pbiviz* file:
 
-This command creates a *pbiviz* file in the *dist/* directory of your visual project, and overwrites any previous *pbiviz* file that might exist.
+    ```bash
+    pbiviz package
+    ```
+
+    This command creates a *pbiviz* file in the *dist/* directory of your visual project, and overwrites any previous *pbiviz* file that might exist.
 
 For more detailed instructions on packaging a visual, see the [packaging the visual](custom-visual-develop-tutorial-format-options.md#packaging-the-custom-visual) in theCircle card tutorial.
-
-
-
 
 >[!NOTE]
 >
