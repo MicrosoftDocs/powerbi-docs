@@ -60,7 +60,7 @@ sections:
           Autoscale always makes sure that no single interactive operation can consume all of your capacity, and you must have two or more interactive operations taking place in a single evaluation cycle to initiate autoscale.
           
       - question: |
-          What happens to traffic during overload if I don't autoscale
+          What happens to traffic during overload if I don't autoscale?
         answer: |
           If a capacity’s utilization exceeded a 100% and it cannot use autoscale, due to being turned off or already at its maximum v-core utilization value, the capacity enters into a temporary *interactive request delay* mode, during which each interactive request (such as report load, visual interaction, and so on) is delayed before it is sent to the engine for execution. The amount of delay is proportional to the amount of overload detected. Overload of 100% will incur a delay of 20 seconds, while overloads smaller than 10% are allowed. 
           
