@@ -85,6 +85,22 @@ To see more information about the dataset, to explore related reports, or to cre
 
 The page header displays the dataset name, endorsement, if any, and dataset owner. To send an email to the dataset owner or the dataset certifier (if any), click the header and then click the name of the owner.
 
+### Action bar
+
+The Action bar at the top of the page contains a number of actions that you can launch.
+
+|Action  |Description  |
+|---------|---------|
+|**File**     | Download the .pbix file for this dataset, manage permissions to this dataset, or go to dataset settings.       |
+|**Refresh**     | Refresh this dataset.        |
+|**Share**     | Share this dataset.        |
+|**Create a report**     | Create a report based on this dataset either from scratch or from a template, if one exists.        |
+|**Analyze in Excel**     | Launch [Analyze in Excel](collaborate-share/service-analyze-in-excel.md) using this dataset.        |
+|**Lineage**     | Open the [lineage view](../collaborate-share/service-data-lineage.md) of this dataset.        |
+|**Chat in Teams**     | Invite people to start [chatting in Teams](../collaborate-share/service-share-report-teams.md).         |
+|**Show tables**     | Open a side panel showing the dataset's tables.        |
+
+
 ### Dataset details
 
 The dataset details section shows the name of the workspace where the dataset is located, the exact time of the last refresh, sensitivity (if set), the dataset description (if any), and certifier name (if certified). You can also open the dataset lineage from here.
