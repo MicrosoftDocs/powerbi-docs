@@ -24,7 +24,7 @@ This article explains what you see on the datasets hub and describes how to use 
 
 **What datasets do I see in the datasets hub?**
 * For a dataset to show up in the datasets hub, it must be located in a [new workspace experience](../collaborate-share/service-new-workspaces.md).
-* The datasets you can see in the datasets hub are those that you have at least [build permissions](service-datasets-build-permissions.md) for. If [dataset discoverability](../collaborate-share/service-discovery.md) has been enabled for you, you also see datasets that you don't have access to, but they appear greyed out, and you can't create reports from them or see their details. You can request access to them, though. 
+* The datasets you can see in the datasets hub are those that you have at least [build permissions](service-datasets-build-permissions.md) for. If [dataset discoverability](../collaborate-share/service-discovery.md) has been enabled for you, you also see datasets that you don't have access to, but they appear grayed out, and you can't create reports from them or see their details. You can request access to them, though. 
 * If you're a free user, you only see datasets in your *My workspace*, or datasets that you have [build permissions](service-datasets-build-permissions.md) for and that are located in Premium-capacity workspaces.
 
 ## Find the dataset you need
@@ -54,7 +54,7 @@ Recommended datasets are endorsed datasets (promoted or certified) that are pres
 
 ### Dataset list
 
-The dataset list shows you datasets in the organization that you have at least [build permissions](service-datasets-build-permissions.md) to. If [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you, you also see datasets you don't have access to. They appear greyed out.
+The dataset list shows you datasets in the organization that you have at least [build permissions](service-datasets-build-permissions.md) to. If [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you, you also see datasets you don't have access to. They appear grayed out.
 
 The list has three tabs to filter the list of datasets.
 * **All datasets**: Shows all the datasets in your organization that you have permission to find. 
