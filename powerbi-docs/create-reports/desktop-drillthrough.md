@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/12/2020
+ms.date: 07/01/2021
 LocalizationGroup: Create reports
 ---
 # Set up drillthrough in Power BI reports
@@ -40,7 +40,7 @@ You can set up drillthrough in your reports in Power BI Desktop or the Power BI 
 
 To use your own image for a back button, follow these steps:
 
-1. On the **Home** tab, select **Image**. Then, locate your image and place it on the drillthrough page.
+1. On the **Insert** tab, select **Image**. Then, locate your image and place it on the drillthrough page.
 
 2. Select your new image on the drillthrough page. Under the **Format image** pane, set the **Action** slider to **On**, and  then set the **Type** to **Back**. Your image now functions as a back button.
 
