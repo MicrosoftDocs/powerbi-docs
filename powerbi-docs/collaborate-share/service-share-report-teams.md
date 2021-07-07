@@ -1,6 +1,6 @@
 ---
 title: Chat in Microsoft Teams directly from the Power BI service
-description: You can share Power BI dashboards and reports directly to Microsoft Teams from the Power BI service.
+description: You can share Power BI dashboards, reports, and datasets directly to Microsoft Teams from the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -14,7 +14,7 @@ ms.date: 07/01/2021
 
 # Chat in Microsoft Teams directly from the Power BI service
 
-You can chat about Power BI dashboards, reports, and visuals directly to Microsoft Teams from the Power BI service. Use the **Chat in Teams** feature to quickly start conversations when you view reports and dashboards in the Power BI service.
+You can chat about Power BI dashboards, reports, visuals, and dashboards directly to Microsoft Teams from the Power BI service. Use the **Chat in Teams** feature to quickly start conversations when you view reports, dashboards, and [datasets](../connect-data/service-datasets-hub#view-dataset-details-and-explore-related-reports) in the Power BI service.
 
 ## Requirements
 
@@ -24,11 +24,11 @@ See [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft
 
 ## Chat about Power BI content in Microsoft Teams
 
-Follow these steps to share links to reports, dashboards, and visuals in the Power BI service, and chat about Microsoft Teams channels and chats.
+Follow these steps to share links to reports, dashboards, visuals, and dashboards in the Power BI service, and chat about Microsoft Teams channels and chats.
 
 1. Select one of these options:
 
-   * **Chat in Teams** in the action bar of a dashboard or report:
+   * **Chat in Teams** in the action bar of a dashboard, report, or dataset:
 
        ![Screenshot of Chat in Teams button in the action bar.](media/service-share-report-teams/service-teams-share-to-teams-action-bar-button.png)
     
