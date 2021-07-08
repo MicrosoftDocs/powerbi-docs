@@ -86,13 +86,13 @@ Each capacity consists of an equal number of frontend and backend v-cores. The C
 
 If you have a P1 subscription with 4 backend v-cores, each evaluation cycle quota equates to 120 seconds ( 4*30 = 120 seconds) of CPU utilization. If the sum of both interactive and background utilizations *exceeds* the total backend v-core quote in your capacity, and you have *not* optionally enabled autoscale, the workload for your Gen2 capacity will exceed your available resources, also called your *capacity threshold*. The following image illustrates this condition, called *overload*, when autoscale is *not* enabled.
 
-:::image type="content" source="media/service-premium-concepts/service-premium-concepts-02.png" alt-text="Diagram showing overload condition in premium generation two capacity.""lightbox="media/service-premium-concepts/service-premium-concepts-02.png":::
+:::image type="content" source="media/service-premium-concepts/service-premium-concepts-02.png" alt-text="Diagram showing overload condition in premium generation two capacity." lightbox="media/service-premium-concepts/service-premium-concepts-02.png":::
 
 In contrast, if autoscale is optionally enabled, if the sum of both interactive and background utilizations exceeds the total backend v-core quota in your capacity, your capacity is automatically autoscales (raised) by one v-core for the next 24 hours.
 
 The following image shows how autoscale works.
 
-:::image type="content" source="media/service-premium-concepts/service-premium-concepts-03.png" alt-text="Diagram showing auto scale operation in premium generation two capacity.""lightbox="media/service-premium-concepts/service-premium-concepts-03.png":::
+:::image type="content" source="media/service-premium-concepts/service-premium-concepts-03.png" alt-text="Diagram showing auto scale operation in premium generation two capacity." lightbox="media/service-premium-concepts/service-premium-concepts-03.png":::
 
 Autoscale always considers your current capacity size to evaluate how much you use, so if you already autoscaled into one v-core, that v-core is spread evenly at 50% for frontend utilization and 50% for backend utilization. This means your maximum capacity is now at (120 + 0.5 * 30 = 135 seconds) of CPU time in an evaluation cycle.
 
