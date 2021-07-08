@@ -81,9 +81,7 @@ Your final `tsconfig.json` file should look like [this](https://github.com/black
 
 ## Define capabilities
 
-The [`capabilities.json`](capabilities.md) file is where we describe the visual to the host. We tell it what kind of information to expect and what features the visual should have.
-
-This data binding acts on a **Field** well in Power BI.
+The [`capabilities.json`](capabilities.md) file is where we bind data to the host. We describe the kind of data fields it accepts and what features the visual should have.
 
 ![Data binding in a Field well](./media/create-bar-chart/data-binding.png)
 
@@ -91,10 +89,10 @@ This data binding acts on a **Field** well in Power BI.
 
 Variables are defined and bound in the [`dataRoles`](capabilities.md) section of the capabilities file. We want our bar chart to accept two types of variables:
 
-* Categorical data that will be represented by the different bars on the chart
-* Numerical, or measured data, which is represented by the height of each bar
+* **Categorical** data that will be represented by the different bars on the chart
+* **Numerical**, or measured data, which is represented by the height of each bar
 
-In Visual Studio Code, in the **capabilities.json** file, make sure the following JSON fragment appears in the object labeled **dataRoles**.
+In **Visual Studio Code**, in the `capabilities.json` file, confirm that the following JSON fragment appears in the object labeled *dataRoles*.
 
 ```json
     "dataRoles": [
@@ -115,7 +113,7 @@ In Visual Studio Code, in the **capabilities.json** file, make sure the followin
 
  Next, add [data mapping](dataview-mappings.md) to tell the host what to do with these variables:
 
-Replace the content of the **dataViewMappings** object with the following:
+Replace the content of the `"dataViewMappings"` object with the following:
 
 ```json
 "dataViewMappings": [
@@ -150,18 +148,18 @@ Replace the content of the **dataViewMappings** object with the following:
     ],
 ```
 
-The above code defines *"conditions"*  so that each field well can bind to only one field at a time. Notice that we use the data role's internal `name` to refer to each field.
+The above code defines `"conditions"` such that each field well can bind to only one field at a time. Notice that we use the data role's internal `name` to refer to each field.
 
 It also sets the [categorical data mapping](dataview-mappings.md#categorical-data-mapping)
 so that each field is mapped to the correct variable.
 
 ### Define objects for properties pane
 
-The [objects](objects-properties.md) section of the *capabilities* file is where we define the customizable features that should appear on the properties pane. These features don't affect the content of the chart but they can change its look and feel.
+The ["objects"](objects-properties.md) section of the *capabilities* file is where we define the customizable features that should appear on the [format pane](../../create-reports/service-the-report-editor-take-a-tour.md#format-your-visuals). These features don't affect the content of the chart but they can change its look and feel.
 
-Let's add an optional X-axis and the ability to define the color of each bar:
+We'll add an optional X-axis and the ability to define the color of each bar:
 
-Replace the content of the **objects** section of the capabilities file with the following:
+Replace the content of the `"objects"` section with the following:
 
 ```json
      "objects": {
@@ -185,38 +183,11 @@ Replace the content of the **objects** section of the capabilities file with the
                     }
                 }
             }
-        },
+        }
+     },
 ```
 
-For more information on objects and how they work, see [Objects](objects-properties.md). For another example of adding formatting to a visual, see the [Circle card tutorial](custom-visual-develop-tutorial-format-options.md#adding-formatting-options).
-
-### Other capabilities
-
-Finally, let's add some other optional features to the *capabilities* file. We won't use them now, but we might want to add [tool tips](add-tooltips.md), a [landing page](landing-page.md), or drill down capabilities in the future.
-
->[!NOTE]
->
->Your visual will still work if you choose not to add these features now.
-
-In Visual Studio Code, in the **capabilities.json** file, add the following code.
-
-```json
-    "tooltips": {
-        "supportedTypes": {
-        "default": true,
-        "canvas": true
-    },
-    "roles": [
-        "Tooltips"
-    ]
-        },
-    "supportsLandingPage": false,
-    "drilldown": {
-        "roles": [
-            "category"
-         ]
-    }
-```
+For more information on objects and how they work, see [Objects](objects-properties.md).
 
 Save the **capabilities.json** file.
 
@@ -226,13 +197,13 @@ Your final *capabilities* file should look like [the one in this example](https:
 
 All visuals start with a class that implements the `IVisual` interface. The `src/visual.ts` file is the default file that contains this class.
 
-In this tutorial, we'll call our API file `barChart.ts`. [Download the file](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts) if you haven't done so already. In the following section, we'll go through this file in detail and describe the various sections.
+In this tutorial, we'll call our *IVisual* file `barChart.ts`. [Download the file](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts) and save it to the */src* folder, if you haven't done so already. In the following section, we'll go through this file in detail and describe the various sections.
 
 ### Imports
 
-The first thing we have to do is import the modules that we'll be using for this visual. Notice that in addition to the Power BI visual modules, we also import the [d3 library](https://d3js.org/).
+The first section of the file imports the modules are needed for this visual. Notice that in addition to the Power BI visual modules, we also import the [d3 library](https://d3js.org/).
 
-Add the following imports to your barChart.ts file:
+The following modules are imported to your `barChart.ts` file:
 
 ```typescript
 import "./../style/visual.less";
@@ -280,13 +251,13 @@ import { dataViewWildcard } from "powerbi-visuals-utils-dataviewutils";
 
 ### Interfaces
 
-Next, we define the view model [interfaces](utils-interactivity-selections.md#defining-an-interface-for-data-points). Our sample bar chart is described by the following three interfaces:
+Next, we define the view model [interfaces](utils-interactivity-selections.md#defining-an-interface-for-data-points). The following three interfaces are used to describe our bar chart visual:
 
-* BarChartDataPoint - stores the data for each bar
+* BarChartDataPoint
 * BarChartViewModel
 * BarChartSettings
 
-Add the interfaces to your file:
+These interfaces are defined as follows:
 
 ```typescript
 /**
