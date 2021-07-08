@@ -63,7 +63,7 @@ Version 15.6.01340.0002, released September 3, 2020
 
 ### Features
 
-- Enabled new authentication type support for Azure SQL DB and Azure Synapse. It uses Azure AD Multi-Factor Authentication to align with the Power BI service.
+- Enabled new authentication type support for Azure SQL DB and Azure Synapse. It uses Azure Active Directory (Azure AD) Multi-Factor Authentication (MFA) to align with the Power BI service.
 - Enabled connectivity to Dataverse through the SQL data connection. This connectivity supports the use of the native relational query designer for SQL. 
 - Enabled auto expansion of parameter drop-down to support even the largest item in the list. 
 - Enabled better support for multi-value parameter for DAX. 
