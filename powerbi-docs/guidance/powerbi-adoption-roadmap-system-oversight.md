@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: reference
-ms.date: 06/30/2021
+ms.date: 07/08/2021
 ---
 
 # Power BI adoption roadmap: System oversight
@@ -208,7 +208,7 @@ This list is not all-inclusive. For a complete list of Premium features, see [Po
 
 #### Managing Premium capacity
 
-Overseeing the health of Power BI Premium capacity is an essential ongoing activity for administrators because, by definition, Premium capacity includes a fixed level of system resources. It equates to [memory and CPU limits](../admin/service-premium-what-is.md#limitations-in-premium-gen2) that must be managed to achieve optimal performance.
+Overseeing the health of Power BI Premium capacity is an essential ongoing activity for administrators because, by definition, Premium capacity includes a fixed level of system resources. It equates to memory and CPU limits that must be managed to achieve optimal performance.
 
 > [!CAUTION]
 > Lack of management and exceeding the limits of Premium capacity can often result in performance challenges and user experience challenges. Both challenges, if not managed correctly, can contribute to negative impact on adoption efforts.
@@ -344,7 +344,7 @@ Managing and optimizing the cost of cloud services, like Power BI, is an importa
 
 ## Security and data protection
 
-Security and data protection are joint responsibilities among all content creators, consumers, as well as administrators. That's no small task because there's sensitive information everywhere: customer data, personally identifiable information (PII), protected health information (PHI), intellectual property, proprietary organizational information, just to name a few. Governmental, industry, and contractual regulations may have a big impact on the [governance](powerbi-adoption-roadmap-governance.md) guidelines and policies that you create related to security.
+Security and data protection are joint responsibilities among all content creators, consumers, as well as administrators. That's no small task because there's sensitive information everywhere: personal data, customer data, or customer-authored data, protected health information, intellectual property, proprietary organizational information, just to name a few. Governmental, industry, and contractual regulations may have a big impact on the [governance](powerbi-adoption-roadmap-governance.md) guidelines and policies that you create related to security.
 
 The [Power BI security whitepaper](whitepaper-powerbi-security.md) is an excellent resource for understanding the breadth of considerations, including aspects that Microsoft manages. This section will introduce several topics that customers are responsible for managing.
 
