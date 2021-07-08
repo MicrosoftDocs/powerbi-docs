@@ -23,7 +23,7 @@ In this tutorial, you learn how to:
 > * [Define the capabilities]
 (#define-capabilities) of your visual
 > * [Understand the source code](#visual-api) used to build a visual
-> * [Render the visual](#rendering)
+> * [Render the visual](#rendering-the-visual)
 > * [Add objects to the property pane](#define-objects-for-properties-pane).
 > * [Package the visual](#package-the-visual).
 
@@ -315,9 +315,9 @@ let defaultSettings: BarChartSettings = {
 
 ### Visual transform
 
-Now that we defined our data structures, we map data onto them using the `visualTransform` function. This function receives data from the data view and transforms it to a format your visual can use. In this case, it returns the `BarChartViewModel` interface described above.
+Now that the data structures are defined, we need to map data onto them using the `visualTransform` function. This function receives data from the data view and transforms it to a format the visual can use. In this case, it returns the `BarChartViewModel` interface described above.
 
-The `DataView` contains the queried data to be visualized. This data can be in different forms, such as categorical and tabular. To build a categorical visual like a bar chart, you only need to use the categorical property on the `DataView`. Defining `visualTransform` lets you convert `DataView` into a view model your visual will use.
+The `DataView` contains the data to be visualized. This data can be in different forms, such as categorical or tabular. To build a categorical visual like a bar chart, use the *categorical* property on the `DataView`.
 
 This function is called whenever the visual is updated.
 
@@ -401,7 +401,7 @@ function visualTransform(options: VisualUpdateOptions, host: IVisualHost): BarCh
 >[!NOTE]
 >The next few functions in the `barChart.ts` file deal with color and creating the X axis. Those are optional and are discussed further down in this tutorial. This tutorial will continue from the `IVisual` function.
 
-### Rendering
+## Rendering the visual
 
 Once the data is defined, we can render it. The visual is rendered from the `IVisual` function. The `IVisual` function is described on the [Visual API](visual-api.md) page. It contains a `constructor` class that creates the visual and an `update` class that is called each time the visual reloads.
 Before rendering the visual, we have to declare the members of the class:
