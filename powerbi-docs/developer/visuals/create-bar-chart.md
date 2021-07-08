@@ -14,22 +14,22 @@ ms.date: 05/25/2021
 
 [!INCLUDE[Power B I visuals tutorials overview](../../includes/visual-tutorial-overview.md)]
 
-This tutorial teaches you how to develop a Power BI visual that displays data in the form of a simple bar chart. This visual supports a minimum amount of customization. Adding a [context menu](context-menu.md), [tool-tips](add-tooltips.md), and other customizations are explained on other pages of this documentation.
+This tutorial shows you how to develop a Power BI visual that displays data in the form of a simple bar chart. This visual supports a minimum amount of customization. Adding a [context menu](context-menu.md), [tool-tips](add-tooltips.md), and other customizations are explained on other pages of this documentation.
 
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
 >
-> * [Define the capabilities](#define-capabilities) of your visual
+> * [Define the capabilities]
+(#define-capabilities) of your visual
+> * [Understand the source code](#visual-api) used to build a visual
 > * [Render the visual](#rendering)
 > * [Add objects to the property pane](#define-objects-for-properties-pane).
-> * Understand the source code used to build a visual
 > * [Package the visual](#package-the-visual).
 
 >[!NOTE]
 >
->The purpose of this tutorial is to help you understand how a visual is structured and written. For the source code of the bar chart that we create in this tutorial, see [Sample bar chart](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/tree/barChartTutorial).
->This tutorial shows you how to create a new bar chart visual from scratch. Alternatively, You can download the above code and use it to follow along in this tutorial.
+>The purpose of this tutorial is to help you understand how a visual is structured and written. Follow these steps to create a new bar chart visual from scratch. Alternatively, you can [download the source code](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/tree/barChartTutorial) and use it to follow along without creating your own visual.
 
 ## Set up your environment
 
@@ -40,9 +40,17 @@ In this tutorial, you learn how to:
 > This tutorial uses version 5 of the [d3 JavaScript library](https://d3js.org/) to produce dynamic, interactive data visualizations.
 >If you didn't install this library as part of your setup, [install the D3 JavaScript library](environment-setup.md#d3-javascript-library) now.
 
+Creating a bar chart visual involves the following steps:
+
+* [Creating a new project](#create-a-new-project)
+* [Defining the capabilities](#define-capabilities) file -`capabilities.json`
+* Creating the [visual API](#visual-api)
+* Adding dependencies -`package.json`
+* Packaging your visual -`pbiviz.json`
+
 ## Create a new project
 
-If you are building the visual from scratch, first create it and give it a name. If you downloaded the [source code](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/tree/barChartTutorial), you can skip these steps.
+If you are building the visual from scratch, first create it and give it a name. If you downloaded the [source code](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/tree/barChartTutorial), you can skip these two steps.
 
 1. Open **PowerShell** and navigate to the folder you want to create your project in.
 
@@ -60,7 +68,8 @@ For a detailed explanation of the function of each of these files see [Power BI 
 
 The two files we'll focus on in this tutorial are the `capabilities.json` file, which describes the visual to the host, and the `src/barchart.ts` file, which replaces the `src/visual.ts` file as the one containing the visual's API.
 
-The [`tsconfig.json`](visual-project-structure.md#tsconfigjson) file contains an object called "files" which contains a path the the file where the main class of the visual is located. The default file is called `visual.ts`. We are giving the file the more descriptive name of `barChart.ts`. Change the name of the file in `tsconfig.json` to `src/barChart.ts`
+The [*tsconfig.json*](visual-project-structure.md#tsconfigjson) file contains an object called "files" which contains a path the the file where the main class of the visual is located. The default file is called `visual.ts`.
+In **VS Code**, open the `tsconfig.json` file and enter the more descriptive file name of `barChart.ts`. Change the name of the file in `tsconfig.json` to `src/barChart.ts`
 
 ```typescript
 "files": [
@@ -69,13 +78,6 @@ The [`tsconfig.json`](visual-project-structure.md#tsconfigjson) file contains an
 ```
 
 Your final `tsconfig.json` file should look like [this](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/tsconfig.json).
-
-Creating a bar chart visual involves the following steps:
-
-* [Defining the capabilities](#define-capabilities) file -`capabilities.json`
-* Creating the [visual API](#visual-api)
-* Adding dependencies -`package.json`
-* Packaging your visual -`pbiviz.json`
 
 ## Define capabilities
 
@@ -855,7 +857,7 @@ For more information, see [How to use SelectionManager](./selection-api.md#how-t
 Before you can load your visual into [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or share it with the community in the [Power BI Visual Gallery](https://visuals.powerbi.com/), you must package it.
 
 1. In **VS Code**, navigate to the root folder of your visual project, which contains the file *pbiviz.json* file.
-2. Edit the following fields in the *pbiviz.json* file:
+2. Fill in or edit the following fields in the *pbiviz.json* file:
     * visualClassName
     * description
     * author name
