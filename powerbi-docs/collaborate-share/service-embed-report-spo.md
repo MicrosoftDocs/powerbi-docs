@@ -36,7 +36,7 @@ To embed your report into SharePoint Online, you need to get the report URL and 
 
 1. Open a report in the Power BI service.
 
-2. On the **Share** menu, select **Embed report** > **SharePoint Online**.
+2. On the **File** menu, select **Embed report** > **SharePoint Online**.
 
     ![More options menu, SharePoint Online](media/service-embed-report-spo/power-bi-more-options-sharepoint-online.png)
 
