@@ -1,6 +1,6 @@
 ---
 title: Build a bar chart visual in Power BI 
-description: Use this step-by-step guide to build a simple Power BI bar chart visual with code. 
+description: Use this step-by-step guide to build a sample Power BI bar chart visual with code. 
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -28,7 +28,7 @@ In this tutorial, you learn how to:
 
 >[!NOTE]
 >
->The purpose of this tutorial is to help you understand how a visual is structured and written. For the source code of the bar chart that we create in this tutorial, see [Simple bar chart](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/tree/barChartTutorial).
+>The purpose of this tutorial is to help you understand how a visual is structured and written. For the source code of the bar chart that we create in this tutorial, see [Sample bar chart](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/tree/barChartTutorial).
 >This tutorial shows you how to create a new bar chart visual from scratch. Alternatively, You can download the above code and use it to follow along in this tutorial.
 
 ## Set up your environment
@@ -273,9 +273,7 @@ import { textMeasurementService as tms } from "powerbi-visuals-utils-formattingu
 import textMeasurementService = tms.textMeasurementService;
 
 import { getValue, getCategoricalObjectValue } from "./objectEnumerationUtility";
-import { getLocalizedString } from "./localization/localizationHelper"
 import { dataViewWildcard } from "powerbi-visuals-utils-dataviewutils";
-
 ```
 
 ### Interfaces
@@ -858,8 +856,6 @@ Before you can load your visual into [Power BI Desktop](https://powerbi.microsof
 
 1. In **VS Code**, navigate to the root folder of your visual project, which contains the file *pbiviz.json* file.
 2. Edit the following fields in the *pbiviz.json* file:
-    * name
-    * displayName
     * visualClassName
     * description
     * author name
