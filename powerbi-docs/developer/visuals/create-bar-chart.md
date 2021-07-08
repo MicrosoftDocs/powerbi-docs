@@ -68,8 +68,8 @@ For a detailed explanation of the function of each of these files see [Power BI 
 
 The two files we'll focus on in this tutorial are the `capabilities.json` file, which describes the visual to the host, and the `src/barchart.ts` file, which replaces the `src/visual.ts` file as the one containing the visual's API.
 
-The [*tsconfig.json*](visual-project-structure.md#tsconfigjson) file contains an object called "files" which contains a path the the file where the main class of the visual is located. The default file is called `visual.ts`.
-In **VS Code**, open the `tsconfig.json` file and enter the more descriptive file name of `barChart.ts`. Change the name of the file in `tsconfig.json` to `src/barChart.ts`
+The [`tsconfig.json`](visual-project-structure.md#tsconfigjson) file contains an object called "files" which contains a path the the file where the main class of the visual is located. The default file is called *visual.ts*.
+In **VS Code**, open the `tsconfig.json` file and enter the more descriptive file name of `barChart.ts`. Change the name of the file in `tsconfig.json` to *src/barChart.ts*
 
 ```typescript
 "files": [
