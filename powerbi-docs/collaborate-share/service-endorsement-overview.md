@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 10/26/2020
+ms.date: 10/27/2020
 LocalizationGroup: Share your work
 ---
 # Endorsement - Promoting and certifying Power BI content
@@ -33,7 +33,7 @@ There are two kinds of endorsement: **promotion** and **certification**.
 
 The image below illustrates how endorsed content (promoted and certified) is clearly identified when you're searching for a dataset to build a report on.
 
-![Endorsed dataflows highlighted in Power Query.](media/service-endorsement-overview/power-bi-content-endorsement-dataset-select.png)
+![Screenshot of endorsed datasets in a dataset selection dialog.](media/service-endorsement-overview/power-bi-content-endorsement-dataset-select.png)
 
 ## Content types that can be endorsed
 Power BI currently supports endorsement for:
