@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/11/2019
+ms.date: 07/02/2021
 LocalizationGroup: Visualizations
 ---
 # Display images in a table, matrix, or slicer in a report
@@ -21,7 +21,7 @@ A good way to enhance your reports is to add images to them. Static images on th
 
 1. Create a column with the URLs of the images. See [Considerations](#considerations) later in this article for requirements.
 
-1. Select that column. On the **Modeling** ribbon, for **Data category**, select **Image URL**.
+1. Select that column. On the **Column tools** ribbon, for **Data category**, select **Image URL**.
 
     ![Set Data category to Image URL](media/power-bi-images-tables/power-bi-set-url-image.png)
 
