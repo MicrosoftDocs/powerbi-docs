@@ -8,7 +8,7 @@ ms.custom: video-IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 08/07/2020
+ms.date: 08/08/2020
 LocalizationGroup: Reports
 ---
 # Comparing Power BI Desktop and the Power BI service
@@ -29,7 +29,7 @@ The Power BI service also hosts *paginated reports* in workspaces backed by a Po
 
 In both the application and the service, you build and edit Power BI *reports*. A report can have one or many pages, with visuals and collections of visuals. Add bookmarks, buttons, filters, and drillthrough, to enhance navigation in your reports.
 
-![Screenshots of Power B I Desktop and the Power B I service, with numbered sections.](media/service-service-vs-desktop/power-bi-editing-desktop-service.png)
+![Screenshots of Power BI Desktop and the Power BI service, with numbered sections.](media/service-service-vs-desktop/power-bi-editing-desktop-service.png)
 
 The report editors in Power BI Desktop and in the service are similar. They're made up of three sections:  
 
