@@ -97,7 +97,7 @@ The Action bar at the top of the page contains a number of actions that you can 
 |**Create a report**     | Create a report based on this dataset either from scratch or from a template, if one exists.        |
 |**Analyze in Excel**     | Launch [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) using this dataset.        |
 |**Lineage**     | Open the [lineage view](../collaborate-share/service-data-lineage.md) of this dataset.        |
-|**Chat in Teams**     | Invite people to start [chatting in Teams](../collaborate-share/service-share-report-teams.md).         |
+|**Chat in Teams**     | Invite people to start [chatting in Teams](../collaborate-share/service-share-report-teams.md). People you invite will receive a Teams chat message from you with a link to this dataset details page. If they have access to the dataset, the link will open this dataset details page in Teams.        |
 |**Show tables**     | Open a side panel showing the dataset's tables.        |
 
 
