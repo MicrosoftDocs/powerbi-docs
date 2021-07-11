@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 06/15/2021
+ms.date: 07/08/2021
 LocalizationGroup: Premium
 ---
 # Power BI Premium Gen2 metrics app (preview)
