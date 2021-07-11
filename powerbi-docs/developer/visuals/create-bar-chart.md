@@ -801,7 +801,10 @@ Run the visual in the **Power BI** server to see how it looks:
 
     >[!IMPORTANT]
     >Do not close the **PowerShell** window until the end of the tutorial. To stop the visual from running, enter *Ctrl+C*, and if prompted to terminate the batch job, enter *Y*, and press *Enter*.
-2. [View the visual in Power BI service](develop-circle-card.md#view-the-visual-in-power-bi-service).
+2. [View the visual in Power BI service](develop-circle-card.md#view-the-visual-in-power-bi-service) by selecting the **Developer visual** from the **Visualization pane**.
+
+   ![Screenshot of developer visual.](./media/develop-circle-card/developer-visual.png)
+
 3. Add data to the visual
 
    ![Screenshot of data bound to field well.](./media/create-bar-chart/adding-data.png)
