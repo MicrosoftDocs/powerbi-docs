@@ -68,8 +68,9 @@ For a detailed explanation of the function of each of these files see [Power BI 
 
 The two files we'll focus on in this tutorial are the `capabilities.json` file, which describes the visual to the host, and the `src/barchart.ts` file, which replaces the `src/visual.ts` file as the one containing the visual's API.
 
-Before we look at these two files we need to update description of the visual in the `tsconfig.json` file and the `package.json` file.
-The [`tsconfig.json`](visual-project-structure.md#tsconfigjson) file contains an object called *"files"* which contains a path to the file where the main class of the visual is located. The default file is called *visual.ts*.
+Before we look at these two files we need to update the description of the visual in the `tsconfig.json` file and the `package.json` file.
+
+The [*tsconfig.json*](visual-project-structure.md#tsconfigjson) file contains an object called *"files"* which contains a path to the file where the main class of the visual is located. The default file is called *visual.ts*.
 In **VS Code**, open the `tsconfig.json` file and enter the more descriptive file name of `barChart.ts`. Change the name of the file in `tsconfig.json` to *src/barChart.ts*
 
 ```typescript
@@ -80,7 +81,7 @@ In **VS Code**, open the `tsconfig.json` file and enter the more descriptive fil
 
 Your final `tsconfig.json` file should look like [this](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/tsconfig.json).
 
-The [`package.json`](visual-project-structure.md#packagejson) file describes the package and contain a list of project dependencies. Replace your project.json file with [this one](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/package.json).
+The [*package.json*](visual-project-structure.md#packagejson) file contains a list of project dependencies. Replace your `project.json` file with [this one](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/package.json).
 
 ## Define capabilities
 
