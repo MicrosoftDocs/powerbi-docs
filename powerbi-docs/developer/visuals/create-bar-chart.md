@@ -403,7 +403,7 @@ function visualTransform(options: VisualUpdateOptions, host: IVisualHost): BarCh
 
 ## Rendering the visual
 
-Once the data is defined, we can render it. The visual is rendered from the `IVisual` function. The `IVisual` function is described on the [Visual API](visual-api.md) page. It contains a `constructor` class that creates the visual and an `update` class that is called each time the visual reloads.
+Once the data is defined, we render the visual with the `IVisual` function. The `IVisual` function is described on the [Visual API](visual-api.md) page. It contains a `constructor` class that creates the visual and an `update` class that is called each time the visual reloads.
 Before rendering the visual, we have to declare the members of the class:
 
 ```typescript
@@ -434,8 +434,7 @@ export class BarChart implements IVisual {
 
 ### Construct the visual
 
-The [constructor function](visual-api.md#constructor) is called only once-when the visual is called for the first time. It tells the host to create an empty svg chart.
-It creates svg-containers for the bar chart and the X-axis.
+The [constructor function](visual-api.md#constructor) is called only once-when the visual is rendered for the first time. It creates empty svg-containers for the bar chart and the X-axis.
 Notice that it uses the d3 library to render the svg.
 
 ```typescript
@@ -575,12 +574,6 @@ In addition to scaling, this update method also handles selections and colors. T
     }
 
 ```
-
-After providing a selector for each property, you get the following `dataView` object array:
-
-![Data bound properties in source](./media/create-bar-chart/object-databound-property-source.png)
-
-Each item in the array `dataViews[0].categorical.categories[0].objects` corresponds to a category in the dataset.
 
 ### Populate the properties pane
 
