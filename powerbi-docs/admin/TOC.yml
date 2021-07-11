@@ -126,6 +126,8 @@
         href: service-security-enable-data-sensitivity-labels.md
       - name: "How to apply sensitivity labels"
         href: service-security-apply-data-sensitivity-labels.md
+      - name: "Set or remove sensitivity labels programmatically"
+        href: service-security-sensitivity-label-inheritance-set-remove-api.md
       - name: "Use Microsoft Cloud App Security with Power BI"
         href: service-security-using-microsoft-cloud-app-security-controls.md
       - name: "Protection metrics report"
