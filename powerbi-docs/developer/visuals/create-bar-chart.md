@@ -577,7 +577,7 @@ In addition to scaling, this update method also handles selections and colors. T
 
 ### Populate the properties pane
 
-The final method in the `IVisual` function is [`enumerateObjectInstances`](visual-api.md#enumerateobjectinstances-optional). This method goes through all the *objects* in the *capabilities.json* file (in our case, `enableAxis` and `colorSelector`) and places them inside the [**Format** pane](conditional-format.md). Each object is called with `enumerateObjectInstances`. The object's name is available from `EnumerateVisualObjectInstancesOptions`.
+The final method in the `IVisual` function is [`enumerateObjectInstances`](visual-api.md#enumerateobjectinstances-optional). This method goes through all the *"objects"* in the *capabilities.json* file (in our case, `enableAxis` and `colorSelector`) and places them inside the [**Format** pane](conditional-format.md). The object's name is available from `EnumerateVisualObjectInstancesOptions`.
 
 To add a color picker for each category on the **Property** pane, add an additional case to the `switch` statement for `colorSelector`, and iterate through each data point with the associated color.
 
@@ -637,14 +637,15 @@ To add a color picker for each category on the **Property** pane, add an additio
 
 ## (Optional) Rendering the X axis (static objects)
 
-You can add objects to the **Property** pane to further customize the visual. These customizations can be user interface changes, or changes related to the data that was queried. The sample uses static objects to render the X-axis for the bar chart.
+You can add objects to the **Property** pane to further customize the visual. These customizations can be user interface changes, or changes related to the data that was queried.
 
-You can toggle objects on or off in the **Property** pane.
+You can toggle these objects on or off in the **Property** pane.
 
 ![Objects in the Property pane](./media/create-bar-chart/property-pane.png)
 
-We'll add an X-axis display that shows the names of the categories.
-We already added an `enableAxis` property to the *capabilities* file and the barChartSettings interface.
+This example renders an X-axis on the bar chart as static object.
+
+We already added the `enableAxis` property to the *capabilities* file and the barChartSettings interface.
 Add the following code to the `barChart.ts` file *before* the iVisual class to draw the X-axis:
 
 ```typescript
@@ -672,13 +673,13 @@ function getAxisTextFillColor(
 
 ## (Optional) Adding color (data-bound objects)
 
-Data-bound objects are similar to static objects, but typically deal with data selection. For example, you can change the color associated with each data point.
+Data-bound objects are similar to static objects, but typically deal with data selection. For example, you can use data-bound objects to interactively select the color associated with each data point.
 
 ![Screenshot of color selection on properties](./media/create-bar-chart/object-databound-property.png)
 
 We already defined the `colorSelector` object in the *capabilities* file.
 
-Each data point is represented by a different color. We included color in the [BarChartDataPoint interface](#interfaces), and assign a default color to each data point when it is defined in [`IVisualHost`](#visual-transform).
+Each data point is represented by a different color. We include color in the [BarChartDataPoint interface](#interfaces), and assign a default color to each data point when it is defined in [`IVisualHost`](#visual-transform).
 
 ```typescript
 function getColumnColorByIndex(
@@ -718,7 +719,7 @@ function getColumnStrokeWidth(isHighContrast: boolean): number {
 }
 ```
 
-The `colorPalette` service, which is found in the `visualTransform` function, manages these colors. Since `visualTransform` iterates through each of the data points, it's an ideal place to assign categorical objects like color.
+The `colorPalette` service, in the `visualTransform` function, manages these colors. Since `visualTransform` iterates through each of the data points, it's an ideal place to assign categorical objects like color.
 
 For more detailed instructions on how to add color to your bar chart go to [Add colors to your Power BI visual](add-colors-power-bi-visual.md)
 
@@ -727,7 +728,7 @@ For more detailed instructions on how to add color to your bar chart go to [Add 
 
 ## Object enumeration utility
 
-Object property values are available as metadata on the `dataView`, but there's no service to help retrieve these properties. `ObjectEnumerationUtility` is a set of static functions used retrieve object values from the `dataView`, and for other visual projects. The `ObjectEnumerationUtility` is optional, but is great for iterating through the `dataView` to retrieve object properties.
+Object property values are available as metadata in the `dataView`, but there's no service to help retrieve these values. `ObjectEnumerationUtility` is an optional set of static functions that iterate through the `dataView` and retrieve object values.
 Create a file called called *objectEnumerationUtility.ts* in the `src` folder and copy the following code into it:
 
 ```typescript
@@ -790,7 +791,7 @@ See [objectEnumerationUtility.ts](https://github.com/Microsoft/PowerBI-visuals-s
 
 Run the visual in the **Power BI** server to see how it looks:
 
-1. In PowerShell, navigate to the project's folder and start the development app.
+1. In **PowerShell**, navigate to the project's folder and start the development app.
 
     ```powershell
     pbiviz start
@@ -802,11 +803,13 @@ Run the visual in the **Power BI** server to see how it looks:
     >Do not close the **PowerShell** window until the end of the tutorial. To stop the visual from running, enter *Ctrl+C*, and if prompted to terminate the batch job, enter *Y*, and press *Enter*.
 2. [View the visual in Power BI service](develop-circle-card.md#view-the-visual-in-power-bi-service).
 3. Add data to the visual
+
    ![Screenshot of data bound to field well.](./media/create-bar-chart/adding-data.png)
 4. Drag the edges of the visual to change the size and notice how the scale adjusts.
-5. Toggle the X-axis on and off.
+4. Toggle the X-axis on and off.
+
    ![Screenshot of X-Axis on property pane.](./media/create-bar-chart/object-show-property.png)
-6. Change the colors of the different categories.
+5. Change the colors of the different categories.
 
 ## Adding other features
 
