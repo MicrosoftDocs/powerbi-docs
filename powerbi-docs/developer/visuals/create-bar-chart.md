@@ -803,7 +803,7 @@ Run the visual in the **Power BI** server to see how it looks:
     >Do not close the **PowerShell** window until the end of the tutorial. To stop the visual from running, enter *Ctrl+C*, and if prompted to terminate the batch job, enter *Y*, and press *Enter*.
 2. [View the visual in Power BI service](develop-circle-card.md#view-the-visual-in-power-bi-service) by selecting the **Developer visual** from the **Visualization pane**.
 
-   ![Screenshot of developer visual.](./media/develop-circle-card/developer-visual.png)
+   ![Screenshot of developer visual.](./media/create-bar-chart/developer-visual.png)
 
 3. Add data to the visual
 
@@ -818,15 +818,15 @@ Run the visual in the **Power BI** server to see how it looks:
 
 ## Adding other features
 
-For more information, see [How to use SelectionManager](./selection-api.md#how-to-use-selectionmanager-to-select-data-points)
-
-* [Adding Selection and Interactions with Other Visuals](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/master/Tutorial/Selection.md)
+* [Add Selection and Interactions with Other Visuals](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/master/Tutorial/Selection.md)
 * [Add a property pane slider to control opacity](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/e2e0bc5888d9a3ca305a7a7af5046068645c8b30)
-* [Add support for tooltips](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14)
+* [Add support for tooltips](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/master/Tutorial/ReportPageTooltips.md)
+* [Add a landing page](landing-page.md)
+* [Add local language support](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/master/Tutorial/Locale.md)
 
 ## Package the visual
 
-Before you can load your visual into [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or share it with the community in the [Power BI Visual Gallery](https://visuals.powerbi.com/), you must package it.
+Before you can load your visual into [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or share it with the community in the [Power BI Visual Gallery](https://visuals.powerbi.com/), you have to package it.
 
 1. In **VS Code**, navigate to the root folder of your visual project, which contains the file *pbiviz.json* file.
 2. Fill in or edit the following fields in the *pbiviz.json* file:
