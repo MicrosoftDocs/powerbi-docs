@@ -68,7 +68,8 @@ For a detailed explanation of the function of each of these files see [Power BI 
 
 The two files we'll focus on in this tutorial are the `capabilities.json` file, which describes the visual to the host, and the `src/barchart.ts` file, which replaces the `src/visual.ts` file as the one containing the visual's API.
 
-The [`tsconfig.json`](visual-project-structure.md#tsconfigjson) file contains an object called "files" which contains a path the the file where the main class of the visual is located. The default file is called *visual.ts*.
+Before we look at these two files we need to update description of the visual in the `tsconfig.json` file and the `package.json` file.
+The [`tsconfig.json`](visual-project-structure.md#tsconfigjson) file contains an object called *"files"* which contains a path to the file where the main class of the visual is located. The default file is called *visual.ts*.
 In **VS Code**, open the `tsconfig.json` file and enter the more descriptive file name of `barChart.ts`. Change the name of the file in `tsconfig.json` to *src/barChart.ts*
 
 ```typescript
@@ -78,6 +79,8 @@ In **VS Code**, open the `tsconfig.json` file and enter the more descriptive fil
 ```
 
 Your final `tsconfig.json` file should look like [this](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/tsconfig.json).
+
+The [`package.json`](visual-project-structure.md#packagejson) file describes the package and contain a list of project dependencies. Replace your project.json file with [this one](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/package.json).
 
 ## Define capabilities
 
@@ -834,9 +837,9 @@ Before you can load your visual into [Power BI Desktop](https://powerbi.microsof
     * description
     * author name
     * author email
-3. In PowerShell, enter the following command to generate a *pbiviz* file:
+3. In **PowerShell**, enter the following command to generate a *pbiviz* file:
 
-    ```bash
+    ```powershell
     pbiviz package
     ```
 
@@ -846,7 +849,7 @@ For more detailed instructions on packaging a visual, see the [packaging the vis
 
 >[!NOTE]
 >
->For the full source code of a bar chart with more features, including [tool-tips](add-tooltips.md) and a [context menu](context-menu.md), see [PowerBI visuals sample bar chart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart)
+>For the full source code of a bar chart with more features, including [tool-tips](add-tooltips.md) and a [context menu](context-menu.md), see [PowerBI visuals sample bar chart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart).
 
 ## Next steps
 
