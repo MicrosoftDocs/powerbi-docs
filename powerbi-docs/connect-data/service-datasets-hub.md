@@ -83,6 +83,8 @@ To see more information about the dataset, to explore related reports, or to cre
 
 ![Screenshot of datasets hub explore related reports page](media/service-datasets-hub/datasets-hub-details-page.png)
 
+[ ![Screenshot of datasets hub explore related reports page.](media/service-datasets-hub/datasets-hub-details-page-inline.png)](media/service-datasets-hub/datasets-hub-details-page-expanded.png#lightbox)
+
 The page header displays the dataset name, endorsement, if any, and dataset owner. To send an email to the dataset owner or the dataset certifier (if any), click the header and then click the name of the owner.
 
 ### Action bar
