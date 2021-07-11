@@ -805,10 +805,12 @@ Run the visual in the **Power BI** server to see how it looks:
 3. Add data to the visual
 
    ![Screenshot of data bound to field well.](./media/create-bar-chart/adding-data.png)
+
 4. Drag the edges of the visual to change the size and notice how the scale adjusts.
 5. Toggle the X-axis on and off.
 
    ![Screenshot of X-Axis on property pane.](./media/create-bar-chart/object-show-property.png)
+
 6. Change the colors of the different categories.
 
 ## Adding other features
