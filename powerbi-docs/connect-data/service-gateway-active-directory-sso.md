@@ -15,11 +15,11 @@ LocalizationGroup: Gateways
 
 The on-premises data gateway supports Active Directory (AD) SSO for connecting to your on-premises data sources that have Active Directory configured. AD SSO includes both [Kerberos](service-gateway-sso-kerberos.md) constrained delegation  and [Security Assertion Markup Language (SAML)](service-gateway-sso-saml.md). For more information on SSO and list of data sources supported for AD SSO, see [Overview of single sign-on (SSO) for on-premises data gateways in Power BI](service-gateway-sso-overview.md).
 
-## Query steps when running SSO
+## Query steps when running Active Directory SSO
 
 A query that runs with SSO consists of three steps, as shown in the following diagram.
 
-![AD SSO query steps](media/service-gateway-active-directory-sso/sso-query-steps.png)
+![Active Directory single sign on query steps.](media/service-gateway-active-directory-sso/sso-query-steps.png)
 
 Here are additional details about each step:
 
