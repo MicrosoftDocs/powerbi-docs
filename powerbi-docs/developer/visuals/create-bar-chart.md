@@ -23,8 +23,8 @@ In this tutorial, you learn how to:
 > * [Define the capabilities](#define-capabilities) of your visual
 > * [Understand the source code](#visual-api) used to build a visual
 > * [Render the visual](#rendering-the-visual)
-> * [Add objects to the property pane](#define-objects-for-properties-pane).
-> * [Package the visual](#package-the-visual).
+> * [Add objects to the property pane](#define-objects-for-properties-pane)
+> * [Package the visual](#package-the-visual)
 
 >[!NOTE]
 >
@@ -41,11 +41,11 @@ In this tutorial, you learn how to:
 
 Creating a bar chart visual involves the following steps:
 
-* [Creating a new project](#create-a-new-project)
-* [Defining the capabilities](#define-capabilities) file -`capabilities.json`
-* Creating the [visual API](#visual-api)
-* Adding dependencies -`package.json`
-* Packaging your visual -`pbiviz.json`
+1. [Creating a new project](#create-a-new-project)
+2. [Defining the capabilities](#define-capabilities) file -`capabilities.json`
+3. Creating the [visual API](#visual-api)
+4. Adding dependencies -`package.json`
+5. Packaging your visual -`pbiviz.json`
 
 ## Create a new project
 
@@ -86,7 +86,7 @@ The [*package.json*](visual-project-structure.md#packagejson) file contains a li
 
 The [`capabilities.json`](capabilities.md) file is where we bind data to the host. We describe the kind of data fields it accepts and what features the visual should have.
 
-![Data binding in a Field well](./media/create-bar-chart/data-binding.png)
+![Data binding in a Field bucket](./media/create-bar-chart/data-binding.png)
 
 ### Define data roles
 
@@ -151,14 +151,16 @@ Replace the content of the `"dataViewMappings"` object with the following:
     ],
 ```
 
-The above code defines `"conditions"` such that each field well can bind to only one field at a time. Notice that we use the data role's internal `name` to refer to each field.
+The above code defines `"conditions"` such that each field bucket can bind to only one field at a time. Notice that we use the data role's internal `name` to refer to each field.
 
 It also sets the [categorical data mapping](dataview-mappings.md#categorical-data-mapping)
 so that each field is mapped to the correct variable.
 
-### Define objects for properties pane
+### Define objects for the properties pane
 
 The ["objects"](objects-properties.md) section of the *capabilities* file is where we define the customizable features that should appear on the [format pane](../../create-reports/service-the-report-editor-take-a-tour.md#format-your-visuals). These features don't affect the content of the chart but they can change its look and feel.
+
+For more information on objects and how they work, see [Objects](objects-properties.md).
 
 We'll add an optional X-axis and the ability to define the color of each bar:
 
@@ -190,8 +192,6 @@ Replace the content of the `"objects"` section with the following:
      },
 ```
 
-For more information on objects and how they work, see [Objects](objects-properties.md).
-
 Save the **capabilities.json** file.
 
 Your final *capabilities* file should look like [the one in this example](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/capabilities.json).
@@ -200,11 +200,11 @@ Your final *capabilities* file should look like [the one in this example](https:
 
 All visuals start with a class that implements the `IVisual` interface. The `src/visual.ts` file is the default file that contains this class.
 
-In this tutorial, we'll call our *IVisual* file `barChart.ts`. [Download the file](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts) and save it to the */src* folder, if you haven't done so already. In the following section, we'll go through this file in detail and describe the various sections.
+In this tutorial, we'll call our *IVisual* file `barChart.ts`. [Download the file](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts) and save it to the */src* folder, if you haven't done so already. In this section, we'll go through this file in detail and describe the various sections.
 
 ### Imports
 
-The first section of the file imports the modules are needed for this visual. Notice that in addition to the Power BI visual modules, we also import the [d3 library](https://d3js.org/).
+The first section of the file imports the modules that are needed for this visual. Notice that in addition to the Power BI visual modules, we also import the [d3 library](https://d3js.org/).
 
 The following modules are imported to your `barChart.ts` file:
 
@@ -437,8 +437,8 @@ export class BarChart implements IVisual {
 
 ### Construct the visual
 
-The [constructor function](visual-api.md#constructor) is called only once-when the visual is rendered for the first time. It creates empty svg-containers for the bar chart and the X-axis.
-Notice that it uses the d3 library to render the svg.
+The [constructor function](visual-api.md#constructor) is called only once, when the visual is rendered for the first time. It creates empty SVG containers for the bar chart and the X-axis.
+Notice that it uses the d3 library to render the SVG.
 
 ```typescript
 /**
@@ -646,7 +646,7 @@ You can toggle these objects on or off in the **Property** pane.
 
 ![Objects in the Property pane](./media/create-bar-chart/property-pane.png)
 
-This example renders an X-axis on the bar chart as static object.
+This example renders an X-axis on the bar chart as a static object.
 
 We already added the `enableAxis` property to the *capabilities* file and the barChartSettings interface.
 Add the following code to the `barChart.ts` file *before* the iVisual class to draw the X-axis:
@@ -727,12 +727,12 @@ The `colorPalette` service, in the `visualTransform` function, manages these col
 For more detailed instructions on how to add color to your bar chart go to [Add colors to your Power BI visual](add-colors-power-bi-visual.md)
 
 > [!NOTE]
-> Verify that your final `barChart.ts` file looks like [this](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts), or download [this file](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts) to replace your file.
+> Verify that your final `barChart.ts` file looks like this [`barChart.ts` source code](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts), or download the [`barChart.ts` source code](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts) and use it to replace your file.
 
-## Object enumeration utility
+## Object enumeration utility (optional)
 
 Object property values are available as metadata in the `dataView`, but there's no service to help retrieve these values. `ObjectEnumerationUtility` is an optional set of static functions that iterate through the `dataView` and retrieve object values.
-Create a file called called *objectEnumerationUtility.ts* in the `src` folder and copy the following code into it:
+Create a file called *objectEnumerationUtility.ts* in the `src` folder and copy the following code into it:
 
 ```typescript
 /**
@@ -786,7 +786,7 @@ export function getCategoricalObjectValue<T>(category: DataViewCategoryColumn, i
 }
 ```
 
-The function `getCategoricalObjectValue` provides a convenient way of accessing properties by their category index. You must provide an `objectName` and `propertyName` that match the object and property in *capabilities.json*.
+The function `getCategoricalObjectValue` provides a convenient way to access properties by their category index. You must provide an `objectName` and `propertyName` that match the object and property in *capabilities.json*.
 
 See [objectEnumerationUtility.ts](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/objectEnumerationUtility.ts) for the source code.
 
@@ -810,7 +810,7 @@ Run the visual in the **Power BI** server to see how it looks:
 
 3. Add data to the visual
 
-   ![Screenshot of data bound to field well.](./media/create-bar-chart/adding-data.png)
+   ![Screenshot of data bound to field bucket.](./media/create-bar-chart/adding-data.png)
 
 4. Drag the edges of the visual to change the size and notice how the scale adjusts.
 5. Toggle the X-axis on and off.
@@ -820,6 +820,8 @@ Run the visual in the **Power BI** server to see how it looks:
 6. Change the colors of the different categories.
 
 ## Adding other features
+
+You can further customize your visual by adding more features. You can add features that increase the visual's functionality, enhance its look and feel, or give the user more control over its appearance. For example, you can:
 
 * [Add Selection and Interactions with Other Visuals](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/master/Tutorial/Selection.md)
 * [Add a property pane slider to control opacity](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/e2e0bc5888d9a3ca305a7a7af5046068645c8b30)
