@@ -20,8 +20,7 @@ In this tutorial, you learn how to:
 
 > [!div class="checklist"]
 >
-> * [Define the capabilities]
-(#define-capabilities) of your visual
+> * [Define the capabilities](#define-capabilities) of your visual
 > * [Understand the source code](#visual-api) used to build a visual
 > * [Render the visual](#rendering-the-visual)
 > * [Add objects to the property pane](#define-objects-for-properties-pane).
