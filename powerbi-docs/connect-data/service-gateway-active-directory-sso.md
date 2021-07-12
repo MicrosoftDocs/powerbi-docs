@@ -19,7 +19,7 @@ The on-premises data gateway supports Active Directory (AD) SSO for connecting t
 
 A query that runs with SSO consists of three steps, as shown in the following diagram.
 
-![SSO query steps](media/service-gateway-active-directory-sso/sso-query-steps.png)
+![AD SSO query steps](media/service-gateway-active-directory-sso/sso-query-steps.png)
 
 Here are additional details about each step:
 
