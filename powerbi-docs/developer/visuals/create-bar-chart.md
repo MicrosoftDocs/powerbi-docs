@@ -23,7 +23,7 @@ In this tutorial, you learn how to:
 > * [Define the capabilities](#define-capabilities) of your visual
 > * [Understand the source code](#visual-api) used to build a visual
 > * [Render the visual](#rendering-the-visual)
-> * [Add objects to the property pane](#define-objects-for-properties-pane)
+> * [Add objects to the properties pane](#define-objects-for-the-properties-pane)
 > * [Package the visual](#package-the-visual)
 
 >[!NOTE]
