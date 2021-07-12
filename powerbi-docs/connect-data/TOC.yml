@@ -299,9 +299,9 @@
         items:
         - name: "SSO overview"
           href: service-gateway-sso-overview.md
-        - name: "AD SSO"
+        - name: "Active Directory SSO"
           items:
-          - name: "AD SSO"
+          - name: "Active Directory SSO overview"
             href: service-gateway-active-directory-sso.md
           - name: "Kerberos-based SSO"
             items:
@@ -321,7 +321,7 @@
             href: service-gateway-sso-saml.md
           - name: "Test single sign-on (SSO) configuration"
             href: service-gateway-sso-test-configuration.md
-        - name: "AAD SSO"
+        - name: "Azure Active Directory SSO"
           href: service-gateway-azure-active-directory-sso.md
       - name: "Troubleshoot the gateway"
         href: service-gateway-onprem-tshoot.md
