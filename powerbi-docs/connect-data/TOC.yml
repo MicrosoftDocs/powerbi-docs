@@ -299,24 +299,30 @@
         items:
         - name: "SSO overview"
           href: service-gateway-sso-overview.md
-        - name: "Kerberos-based SSO"
+        - name: "AD SSO"
           items:
-          - name: "Configure Kerberos-based SSO"
-            href: service-gateway-sso-kerberos.md
-          - name: "Datasource-specific configuration"
+          - name: "AD SSO"
+            href: service-gateway-active-directory-sso.md
+          - name: "Kerberos-based SSO"
             items:
-            - name: "SAP HANA"
-              href: service-gateway-sso-kerberos-sap-hana.md
-            - name: "SAP BW - sapcrypto.dll (Common Crypto Library)"
-              href: service-gateway-sso-kerberos-sap-bw-commoncryptolib.md
-            - name: "SAP BW - gx64krb5.dll"
-              href: service-gateway-sso-kerberos-sap-bw-gx64krb.md
-            - name: "Teradata and SSO"
-              href: service-gateway-sso-kerberos-teradata.md              
-        - name: "SAML-based SSO"
-          href: service-gateway-sso-saml.md
-        - name: "Test single sign-on (SSO) configuration"
-          href: service-gateway-sso-test-configuration.md
+            - name: "Configure Kerberos-based SSO"
+              href: service-gateway-sso-kerberos.md
+            - name: "Datasource-specific configuration"
+              items:
+              - name: "SAP HANA"
+                href: service-gateway-sso-kerberos-sap-hana.md
+              - name: "SAP BW - sapcrypto.dll (Common Crypto Library)"
+                href: service-gateway-sso-kerberos-sap-bw-commoncryptolib.md
+              - name: "SAP BW - gx64krb5.dll"
+                href: service-gateway-sso-kerberos-sap-bw-gx64krb.md
+              - name: "Teradata and SSO"
+                href: service-gateway-sso-kerberos-teradata.md              
+          - name: "SAML-based SSO"
+            href: service-gateway-sso-saml.md
+          - name: "Test single sign-on (SSO) configuration"
+            href: service-gateway-sso-test-configuration.md
+        - name: "AAD SSO"
+          href: service-gateway-azure-active-directory-sso.md
       - name: "Troubleshoot the gateway"
         href: service-gateway-onprem-tshoot.md
       - name: "Troubleshoot the gateway (personal mode)"
