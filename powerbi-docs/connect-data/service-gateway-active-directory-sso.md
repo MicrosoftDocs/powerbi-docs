@@ -1,6 +1,6 @@
 ---
-title: Overview of single sign-on (SSO) for on-premises data gateways
-description: Configure your gateway to enable single sign-on (SSO) from Power BI to on-premises data sources.
+title: Active Directory (AD) SSO
+description: Configure your gateway for connecting to your on-premises data sources that have Active Directory configured.
 author: arthiriyer
 ms.author: arthii
 ms.reviewer: ''
