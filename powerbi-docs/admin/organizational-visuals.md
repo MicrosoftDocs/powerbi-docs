@@ -191,19 +191,19 @@ Sometimes an organization develops its own Power BI visual and distributes it in
 
 2. Open the report that contains this visual. Both the visual uploaded from a file and the AppSource visual are visible in the visualization pane.
 
-3. In the report, replace the visual uploaded from a file with the visual from AppSource.
+3. In the report, highlight the visual uploaded from a file and in the visualization pane, select the AppSource visual to replace it. The visuals are swapped automatically. To verify that you're using the AppSource visual, in the visualization pane right-click the visual and select *about*.
 
 4. Complete **step 3** for all the reports that contain the visual in your organization.
 
-5. Delete the visual uploaded from a file.  
+5. Delete the visual that was uploaded from a file.  
 
 ## Next steps
 
-> [!div class="nextstepaction"]
+>[!div class="nextstepaction"]
 >[Administering Power BI in the admin portal](service-admin-portal.md)
 
-> [!div class="nextstepaction"]
+>[!div class="nextstepaction"]
 >[Visuals in Power BI](../developer/visuals/power-bi-custom-visuals.md)
 
-> [!div class="nextstepaction"]
+>[!div class="nextstepaction"]
 >[Organizational visuals in Power BI](../developer/visuals/power-bi-custom-visuals-organization.md)
