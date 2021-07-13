@@ -33,7 +33,7 @@ If your visual interacts with other visuals, selects data points, or filters oth
 
 Consider the following scenario: you want to create several bookmarks on a report page with each bookmark having different data points selected.
 
-First, you select one or more data points in your visual. The visual passes your selections to the host. You then select **Add** in the [**Bookmark pane**](../../consumer/end-user-bookmarks.md#open-bookmarks), and Power BI saves the current selections for the new bookmark.
+First, you select one or more data points in your visual. The visual passes your selections to the host. You then select **Add** in the [**Bookmark pane**](../../consumer/-bookmarks.md), and Power BI saves the current selections for the new bookmark.
 
 You do this several times to create new bookmarks. After you create the bookmarks, you can switch between them.
 
