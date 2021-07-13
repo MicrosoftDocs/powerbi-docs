@@ -12,17 +12,17 @@ LocalizationGroup: Admin
 ---
 # Automatic aggregations (Preview)
 
-Automatic aggregations use state-of-the-art machine learning (ML) to continuously optimize DirectQuery datasets for maximum report query performance. Automatic aggregations is built on top of existing [user-defined aggregations](../transform-model/aggregations-advanced.md) infrastructure first introduced with composite models for Power BI. But unlike user-defined aggregations, automatic aggregations doesn’t require extensive data modeling and query-optimization skills to configure and maintain. Automatic aggregations are both self-training and self-optimizing. They enable dataset owners of any skill level to improve query performance, providing faster report visualizations for even the largest datasets.
+Automatic aggregations use state-of-the-art machine learning (ML) to continuously optimize DirectQuery datasets for maximum report query performance. Automatic aggregations are built on top of existing [user-defined aggregations](../transform-model/aggregations-advanced.md) infrastructure first introduced with composite models for Power BI. But unlike user-defined aggregations, automatic aggregations don’t require extensive data modeling and query-optimization skills to configure and maintain. Automatic aggregations are both self-training and self-optimizing. They enable dataset owners of any skill level to improve query performance, providing faster report visualizations for even the largest datasets.
 
 With automatic aggregations:
 
 - Report visualizations are faster - An optimal percentage of report queries are returned by an automatically maintained in-memory aggregations cache instead of backend data source systems. Outlier queries that cannot be returned by the in-memory cache are passed directly to the data source using DirectQuery.
-- Easy setup - Any dataset owner with workspace admin permissions can enable automatic aggregations and schedule one or more refreshes for the dataset. With the first refresh, automatic aggregations takes over and begins creating an aggregations framework and optimal aggregations. The system automatically tunes itself over time.
-- Fine-tuning – With a simple and intuitive user interface in dataset Settings, you can estimate the performance gains for a different percentage of queries that use the aggregations cache and adjust the percentage for even greater gains. With a single slide bar control you can easily fine-tune for your environment.
-- Balanced architecture - When compared to pure DirectQuery mode, most query results are instead returned by the Power BI query engine and in-memory aggregations cache. Query processing load on data source systems at peak reporting times is significantly reduced, which means increased scalability in the data source backend.
+- Easy setup - Any dataset owner with workspace admin permissions can enable automatic aggregations and schedule one or more refreshes for the dataset. With the first refresh, automatic aggregations take over and begins creating an aggregations framework and optimal aggregations. The system automatically tunes itself over time.
+- Fine-tuning – With a simple and intuitive user interface in dataset Settings, you can estimate the performance gains for a different percentage of queries that use the aggregations cache and adjust the percentage for even greater gains. With a single slide bar control, you can easily fine-tune for your environment.
+- Balanced architecture - When compared to pure DirectQuery mode, most query results are instead returned by the Power BI query engine and in-memory aggregations cache. Query processing load on data source systems at peak reporting times can be significantly reduced, which means increased scalability in the data source backend.
 
 > [!IMPORTANT]
-> Automatic aggregations is in **Preview**. When in preview, functionality and documentation are likely to change.
+> Automatic aggregations are in **Preview**. When in preview, functionality and documentation are likely to change.
 
 ## Requirements
 
@@ -32,7 +32,7 @@ Automatic aggregations are supported for **Power BI Premium per capacity**, **Pr
 
 ### Supported data sources
 
-During preview, automatic aggregations is supported for the following data sources:
+During preview, automatic aggregations are supported for the following data sources:
 
 - Azure SQL Database
 - Azure Synapse Dedicated SQL pool
@@ -49,11 +49,11 @@ To enable and configure automatic aggregations, you must be the dataset owner an
 
 ## Configuring automatic aggregations
 
-Automatic aggregations are configured in dataset Settings. Before enabling, be sure to read through this article, it provides a good understanding of how automatic aggregations work and can help you decide if automatic aggregations is right for your environment. When you're ready for step-by-step instructions on how to enable automatic aggregations, configure a refresh schedule, and fine-tune for your environment, see [Configure automatic aggregations](aggregations-auto-configure.md).
+Automatic aggregations are configured in dataset Settings. Before enabling, be sure to read through this article, it provides a good understanding of how automatic aggregations work and can help you decide if automatic aggregations are right for your environment. When you're ready for step-by-step instructions on how to enable automatic aggregations, configure a refresh schedule, and fine-tune for your environment, see [Configure automatic aggregations](aggregations-auto-configure.md).
 
 ## Benefits
 
-With DirectQuery, each time a dataset user opens a report or interacts with a report visualization, DAX queries are passed to the query engine and then on to the backend data source as SQL queries. The data source must then calculate and return the results for each query. Compared to import mode datasets that are stored in-memory, these data source round trips can be both time and process intensive, often causing slow query response times in report visualizations.
+With DirectQuery, each time a dataset user opens a report or interacts with a report visualization, DAX queries are passed to the query engine and then on to the backend data source as SQL queries. The data source must then calculate and return the results for each query. Compared to import mode datasets stored in-memory, these data source round trips can be both time and process intensive, often causing slow query response times in report visualizations.
 
 When enabled for a DirectQuery dataset, aggregations can help boost query performance by avoiding data source round trips. Aggregated query results are automatically returned by the in-memory cache rather than being sent to and returned by the data source. The result is not only better query performance but also reduced load on the data source systems. With aggregations, only a small portion of report and ad-hoc queries that require aggregations not included in the in-memory cache are passed to the backend data source, just like with pure DirectQuery mode.
 
@@ -61,7 +61,7 @@ When enabled for a DirectQuery dataset, aggregations can help boost query perfor
 
 ## Automatic aggregations architecture
 
-When automatic aggregations is enabled for a dataset, with the first dataset refresh for the chosen Day or Week frequency, Power BI begins tracking report queries on a per-user and per-dataset basis in a query log. Power BI then launches a training operation during a data refresh cycle, Power BI analyzes the query logs to determine the optimal aggregations to include in the in-memory aggregations cache. During training, in-memory aggregations tables are created, updated, or dropped, and queries are sent to the data source to determine aggregations to be included. Calculated aggregations data, however, is not loaded into the in-memory cache during training - it's loaded during the subsequent refresh operation.
+When automatic aggregations are enabled for a dataset, with the first dataset refresh for the chosen Day or Week frequency, Power BI begins tracking report queries on a per-user and per-dataset basis in a query log. Power BI then launches a training operation during a data refresh cycle, Power BI analyzes the query logs to determine the optimal aggregations to include in the in-memory aggregations cache. During training, in-memory aggregations tables are created, updated, or dropped, and queries are sent to the data source to determine aggregations to be included. Calculated aggregations data, however, is not loaded into the in-memory cache during training - it's loaded during the subsequent refresh operation.
 
 :::image type="content" source="media/aggregations-automatic/auto-aggregations-training.png" border="false" alt-text="Report query log":::
 
@@ -156,13 +156,13 @@ Automatic aggregations tables are constantly changing as training operations det
 
 **IMPORTANT:** Power BI fully manages automatic aggregations table objects. Do not delete or modifying these tables yourself. Doing so can cause degraded performance.
 
-Power BI maintains the dataset configuration outside of the dataset. The presence of a system-managed system generated aggregations table in a dataset does not necessarily mean the dataset is in fact enabled for automatic aggregations. In other words, if you script out a full model definition for a dataset with automatic aggregations enabled, and create a new copy of the dataset (with a different name/workspace/capacity), the new resulting dataset is not yet enabled for automatic aggregations. You still need to enable automatic aggregations for the new dataset in dataset Settings.
+Power BI maintains the dataset configuration outside of the dataset. The presence of a system-managed aggregations table in a dataset does not necessarily mean the dataset is in fact enabled for automatic aggregations. In other words, if you script out a full model definition for a dataset with automatic aggregations enabled, and create a new copy of the dataset (with a different name/workspace/capacity), the new resulting dataset is not yet enabled for automatic aggregations. You still need to enable automatic aggregations for the new dataset in dataset Settings.
 
 The `SystemManaged` table property is new to the Tabular Object Model (TOM) in Analysis Services client libraries version 19.22.5 and higher. Be sure to upgrade your data modeling and admin tools to the latest version of the client libraries when working with datasets that have automatic aggregations enabled. For example, older versions of SQL Server Management Studio (SSMS) are not yet able to enumerate tables or script out these datasets because the older client libraries do not support the SystemManaged table property.
 
 ## Loading new and updated aggregations
 
-While automatic aggregations eliminates the need to create user-defined aggregations tables, a deeper familiarity with the underlying processes are helpful to understand the impact of the configuration and its dependencies. For example, you must perform at least one refresh for either the day or week frequency for Power BI to load the in-memory aggregations cache. Additional refreshes are necessary to improve the aggregations accuracy over time.
+While automatic aggregations eliminate the need to create user-defined aggregations tables, a deeper familiarity with the underlying processes is helpful to understand the impact of the configuration and its dependencies. For example, you must perform at least one refresh for either the day or week frequency for Power BI to load the in-memory aggregations cache. More refreshes are necessary to improve the aggregations accuracy over time.
 
 Power BI relies on the following to generate automatic aggregations:
 
@@ -187,7 +187,7 @@ Each refresh operation is recorded in the dataset cache refresh history. Among o
 
 :::image type="content" source="media/aggregations-automatic/cache-refresh-history.png" alt-text="Cache refresh history":::
 
-Refresh history provides information about how scheduled training and refresh operations are going. Because the first scheduled refresh of the day or week includes the training operation, additional details about how much memory aggregations are using in the in-memory cache are provided. If you want to drill down a little further, click Show details. Ensure your scheduled refresh operations are completing within and acceptable period. If a training or refresh operation fails, reduce the percentage of queries that use the in-memory aggregations cache. This will reduce the number of aggregations created, but allow more time for refresh operations to complete.
+Refresh history provides information about how scheduled training and refresh operations are going. Because the first scheduled refresh of the day or week includes the training operation, more details about how much memory aggregations are using in the in-memory cache are provided. If you want to drill down a little further, click Show details. Ensure your scheduled refresh operations are completing within and acceptable period. If a training or refresh operation fails, reduce the percentage of queries that use the in-memory aggregations cache. This will reduce the number of aggregations created, but allow more time for refresh operations to complete.
 
 ### Training and refresh failure handling
 
@@ -200,7 +200,7 @@ While Power BI performs training and refresh operations as part of the first dat
 
 ### Unlimited refresh through XMLA endpoint
 
-Periodic re-training ensures that aggregations tables adapt to evolving query patterns. However, some data sources update much more frequently. In these scenarios, you have the option to trigger the refresh using a custom solution based on XMLA endpoints. While Power BI limits the number of refreshes you can schedule in the user interface to 48, refreshes triggered through XMLA are unlimited. Equally important, you do not need to enable automatic aggregations for a dataset in the Power BI portal UI if you perform refreshes programmatically because you define the automatic aggregations configuration in your custom code directly.
+Periodic retraining ensures that aggregations tables adapt to evolving query patterns. However, some data sources update much more frequently. In these scenarios, you can trigger the refresh using a custom solution based on XMLA endpoints. While Power BI limits the number of refreshes you can schedule in the user interface to 48, refreshes triggered through XMLA are unlimited. Equally important, you do not need to enable automatic aggregations for a dataset in the Power BI portal UI if you perform refreshes programmatically because you define the automatic aggregations configuration in your custom code directly.
 
 The following code snippet shows how to trigger training and refresh operations by using the Analysis Services client libraries, which in turn communicate with Power BI by using XMLA endpoints. To learn more, refer to the [Tabular Object Model (TOM)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo.md?view=power-bi-premium-current&preserve-view=true) API documentation.
 
@@ -249,13 +249,13 @@ Automatic aggregations predictive modeling runs at regular user-defined interval
 
 ### Side-by-side
 
-Because automatic aggregations are built on top of the existing user-defined aggregations infrastructure, it's possible to use both user-defined and automatic aggregations together in the same dataset. Skilled data modelers can define aggregations for tables using DirectQuery, Import (with or without Incremental refresh), or Dual storage modes, while at the same time enjoying the benefits of additional automatic aggregations for queries over DirectQuery connections that don’t hit the user-defined aggregation tables. This flexibility enables balanced architectures that can reduce query loads and avoid bottlenecks.
+Because automatic aggregations are built on top of the existing user-defined aggregations infrastructure, it's possible to use both user-defined and automatic aggregations together in the same dataset. Skilled data modelers can define aggregations for tables using DirectQuery, Import (with or without Incremental refresh), or Dual storage modes, while at the same time enjoying the benefits of more automatic aggregations for queries over DirectQuery connections that don’t hit the user-defined aggregation tables. This flexibility enables balanced architectures that can reduce query loads and avoid bottlenecks.
 
 Aggregations created in the in-memory cache by the automatic aggregations training algorithm are identified as System aggregations. The training algorithm creates and deletes only those System aggregations as reporting queries are analyzed and adjustments are made to maintain the optimal aggregations for the dataset. Both user-defined and automatic aggregations are refreshed with dataset refresh. Only those aggregations created by automatic aggregations and marked as system-generated aggregations are included in automatic aggregations processing.
 
 ## Query caching and automatic aggregations
 
-Power BI Premium also supports [Query caching in Power BI Premium/Embedded](../connect-data/power-bi-query-caching.md) to maintain query results, which is a different feature from aggregations. With query caching, Power BI Premium uses its local caching service to implement caching, whereas automatic aggregations are implemented at the dataset level. With query caching, the service only caches queries for the initial report page load, therefore query performance isn't improved when users interact with a report. In contrast, automatic aggregations optimizes the majority of report queries by pre-caching aggregated query results, including for those queries generated when users interact with reports. Query caching and automatic aggregations can both be enabled side-by-side, but it may not be necessary.
+Power BI Premium also supports [Query caching in Power BI Premium/Embedded](../connect-data/power-bi-query-caching.md) to maintain query results, which is a different feature from aggregations. With query caching, Power BI Premium uses its local caching service to implement caching, whereas automatic aggregations are implemented at the dataset level. With query caching, the service only caches queries for the initial report page load, therefore query performance isn't improved when users interact with a report. In contrast, automatic aggregations optimize most report queries by pre-caching aggregated query results, including for those queries generated when users interact with reports. Query caching and automatic aggregations can both be enabled side by side, but it may not be necessary.
 
 ## Application Lifecycle Management
 
@@ -282,7 +282,7 @@ Azure Log Analytics (LA) is a service within Azure Monitor which Power BI can us
 
 If Power BI is configured with an Azure LA account, as described in [Configuring Azure Log Analytics for Power BI](../transform-model/log-analytics/desktop-log-analytics-configure.md), you can analyze the success rate of your automatic aggregations. Among other things, you can determine if report queries are answered from the in-memory cache.
 
-To leverage this ability, download the PBIT template from [here](https://aka.ms/byola_pbit_as) and connect it to your log analytics account, as described in this [post](https://powerbi.microsoft.com/blog/announcing-long-term-usage-and-performance-insights-public-preview/). In the report, you can view data at three different levels – summary view, DAX query level views, and SQL query level view.
+To use this ability, download the PBIT template from [here](https://aka.ms/byola_pbit_as) and connect it to your log analytics account, as described in this [post](https://powerbi.microsoft.com/blog/announcing-long-term-usage-and-performance-insights-public-preview/). In the report, you can view data at three different levels – summary view, DAX query level views, and SQL query level view.
 
 The following image shows the summary page for all the queries. As you can see, the marked chart shows the percentage of total queries that were satisfied by aggregations vs the ones had to utilize the data source.
 
@@ -313,12 +313,12 @@ When using automatic aggregations, keep the following limitations in mind:
 - Do not enable automatic aggregations if the DirectQuery data source is configured for single sign-on and uses dynamic data views or security controls to limit the data a user is allowed to access. Automatic aggregations are not aware of these data source-level controls, which makes it impossible to ensure correct data is provided on a per user basis.
 - Calculated columns are not considered for automatic aggregations. If you use a calculated column in DirectQuery mode, such as by using the COMBINEVALUES function to build a relationship based on multiple columns from two DirectQuery tables, the corresponding report queries will not hit the in-memory aggregations cache.
 - Automatic aggregations are only available in the Power BI service. Power BI Desktop does not create system-generated aggregations tables.
-- If you modify the metadata of a dataset with automatic aggregations enabled, query performance might degrade until the next training process is triggered. As a best practice, you should drop the automatic aggregations, makes the changes, and the retrain.
+- If you modify the metadata of a dataset with automatic aggregations enabled, query performance might degrade until the next training process is triggered. As a best practice, you should drop the automatic aggregations, make the changes, and then re-train.
 - Do not modify, delete, or create the system-generated aggregations tables unless you have automatic aggregations disabled and are cleaning up the dataset. The system takes responsibility for managing these objects.
 - During **preview**, you must use the Tabular Object Model (TOM) API to work with automatic aggregations programmatically. The Tabular Model Scripting Language (TMSL) to invoke training or specify the query percentage when triggering a data refresh is not yet supported.
 
 ## See also
 
-[Configure automatic aggregations](aggregations-auto-cnfigure.md)  
+[Configure automatic aggregations](aggregations-auto-configure.md)  
 [User-defined aggregations](../transform-model/aggregations-advanced.md)  
 [DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)  

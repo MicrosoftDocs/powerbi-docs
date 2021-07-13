@@ -24,12 +24,12 @@ Configuring automatic aggregations includes enabling the feature for a DirectQue
     
     :::image type="content" source="media/aggregations-automatic-configure/auto-aggs-enable.png" alt-text="Enable automatic aggregations":::
 
-1. In **Refresh schedule**, specify a refresh frequency and time zone. If the Refresh schedule controls are disabled, verify the data source configuration including gateway connection (if required) and data source credentials.
+1. In **Refresh schedule**, specify a refresh frequency and time zone. If the Refresh schedule controls are disabled, verify the data source configuration including gateway connection (if necessary) and data source credentials.
 1. Click **Add another time**, and then specify one or more refreshes.
 
     :::image type="content" source="media/aggregations-automatic-configure/auto-aggs-refresh.png" alt-text="Configure aggregations refresh dialog":::
 
-    You must scehdule at least one refresh. The first refresh for the frequency you select will include both a *training* operation and a refresh that loads new and updated aggregations into the in-memory cache. Schedule more refreshes to ensure report queries that hit the aggregations cache are getting results that are most in-sync with the backend data source. To learn more, see [Refresh operations](aggregations-auto.md#refresh-operations).
+    You must schedule at least one refresh. The first refresh for the frequency you select will include both a *training* operation and a refresh that loads new and updated aggregations into the in-memory cache. Schedule more refreshes to ensure report queries that hit the aggregations cache are getting results that are most in-sync with the backend data source. To learn more, see [Refresh operations](aggregations-auto.md#refresh-operations).
 
 1. Click **Apply**.
 
@@ -39,7 +39,7 @@ User-generated and system-generated aggregations tables are part of the dataset,
 
 ### Adjusting the percentage
 
-By default, the aggregations cache setting that determines the percentage of report queries that will use aggregations from the in-memory cache is set to 75%. Increasing the percentage means a greater number of report queries are ranked higher and therefore aggregations for them are included in the in-memory aggregations cache. While this can mean more queries are answered from the in-memory cache, it can also mean **longer training and refresh times**. Adjusting to a lower percentage, on the other hand, can mean shorter training and refresh times, and less resource utilization, but report visualization performance could diminish because fewer report queries would be answered by the in-memory aggregations cache, as those report queries instead must then roundtrip to the data source.
+By default, the aggregations cache setting that determines the percentage of report queries that will use aggregations from the in-memory cache is set to 75%. Increasing the percentage means a greater number of report queries are ranked higher and therefore aggregations for them are included in the in-memory aggregations cache. While a higher percentage can mean more queries are answered from the in-memory cache, it can also mean **longer training and refresh times**. Adjusting to a lower percentage, on the other hand, can mean shorter training and refresh times, and less resource utilization, but report visualization performance could diminish because fewer report queries would be answered by the in-memory aggregations cache, as those report queries instead must then roundtrip to the data source.
 
 Before the system can determine the optimal aggregations to include in the cache, it must first know the report query patterns being used most often. Be sure to allow several iterations of the training/refresh operations to be completed before adjusting the percentage of queries that will use the aggregations cache. This gives the training algorithm time to analyze report queries over a broader time period and self-adjust accordingly. For example, if you've scheduled refreshes for daily frequency, you might want to wait a full week. User reporting patterns on some days of the week may be different than others.
 
@@ -74,7 +74,7 @@ When disabling automatic aggregations, existing system-created aggregation table
 
 ### Removing system-created aggregation tables  
 
-The following code snippet demonstrates how to remove system-created aggregation tables from a dataset. This may  only be necessary after you've disabled automatic aggregations.
+The following code snippet demonstrates how to remove system-created aggregation tables from a dataset. Removing system-created tables may only be necessary after you've disabled automatic aggregations.
 
 ```csharp
 using System;
