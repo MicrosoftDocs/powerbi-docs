@@ -45,7 +45,7 @@ A Microsoft 365 administrator can enable a mandatory label policy for Power BI i
 
     ![Screenshot of mandatory label setting in the Microsoft compliance center.](media/service-security-sensitivity-label-mandatory-label-policy/mandatory-labels-config-in-compliance-center.png)
 
-* By using [Security & Compliance Center PowerShell](/powershell/module/exchange/set-labelpolicy).
+* By using the [Security & Compliance Center PowerShell setLabelPolicy API](/powershell/module/exchange/set-labelpolicy). (existing policies only) 
 
     ```powershell
     Set-LabelPolicy -Identity "<policy name>" -AdvancedSettings @{powerbimandatory="true"}
