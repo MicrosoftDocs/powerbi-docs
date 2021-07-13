@@ -33,20 +33,28 @@ The images below show the dialogs that prompt users to choose and apply a label 
 
 ## Enabling a mandatory label policy for Power BI
 
-A Microsoft 365 administrator can enable a mandatory label policy for Power BI using [Security & Compliance Center PowerShell](/powershell/module/exchange/set-labelpolicy). The mandatory label settings for Power BI are independent of the mandatory label settings that affect Office files and email.
+A Microsoft 365 administrator can enable a mandatory label policy for Power BI in two ways:
 
-```powershell
-Set-LabelPolicy -Identity "<policy name>" -AdvancedSettings @{powerbimandatory="true"}
-```
+* By selecting **Require users to apply a label to their Power BI content** in the [Microsoft 365 compliance center](https://compliance.microsoft.com/informationprotection). See [What label policies can do](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do).
 
-Where:
+    ![Screenshot of mandatory label setting in the Microsoft compliance center.](media/service-security-sensitivity-label-mandatory-label-policy/mandatory-labels-config-in-compliance-center.png)
 
-* policy name = the name of the policy where you want to set labeling in Power BI as mandatory.
+* By using [Security & Compliance Center PowerShell](/powershell/module/exchange/set-labelpolicy).
 
-### Requirements
+    ```powershell
+    Set-LabelPolicy -Identity "<policy name>" -AdvancedSettings @{powerbimandatory="true"}
+    ```
+    Where:
+
+    * policy name = the name of the policy where you want to set labeling in Power BI as mandatory.
+
+   **Requirements for using PowerShell**
  
-* You need the EXO V2 module to run this command. For more information, see [About the Exchange Online PowerShell V2 module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)
-* A connection to the Microsoft 365 compliance center is also required. For more information, see [Connect to Security & Compliance Center PowerShell using the EXO V2 module](/powershell/exchange/connect-to-scc-powershell)
+    * You need the EXO V2 module to run this command. For more information, see [About the Exchange Online PowerShell V2 module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)
+    * A connection to the Microsoft 365 compliance center is also required. For more information, see [Connect to Security & Compliance Center PowerShell using the EXO V2 module](/powershell/exchange/connect-to-scc-powershell)
+
+>[!NOTE]
+> The mandatory label settings for Power BI are independent of the mandatory label settings that affect Office files and email.
 
 ### Documentation
 
