@@ -13,12 +13,7 @@ LocalizationGroup: Data from files
 ---
 # Mandatory label policy for Power BI (preview)
 
-To help ensure comprehensive protection and governance of sensitive data, you can require your organization's Power BI users to apply sensitivity labels to content they create or edit in Power BI. You do this by enabling, in their sensitivity label policies, a special setting for mandatory labeling in Power BI.
-
-This article
-* Describes the user actions that are affected by a mandatory labeling policy.
-* Explains how to enable a mandatory labeling policy for Power BI in the Microsoft compliance center.
-* Shows how to enable the mandatory label setting for Power BI in an existing policy using [Security & Compliance Center PowerShell](/powershell/module/exchange/set-labelpolicy).
+To help ensure comprehensive protection and governance of sensitive data, you can require your organization's Power BI users to apply sensitivity labels to content they create or edit in Power BI. You do this by enabling, in their sensitivity label policies, a special setting for mandatory labeling in Power BI. This article describes the user actions that are affected by a mandatory labeling policy, and explains how to enable a mandatory labeling policy for Power BI.
 
 >[!NOTE]
 > The mandatory label policy setting for Power BI is independent of the mandatory label policy setting for files and email.
@@ -39,28 +34,23 @@ The images below show the dialogs that prompt users to choose and apply a label 
 
 ## Enabling a mandatory label policy for Power BI
 
-A Microsoft 365 administrator can enable a mandatory label policy for Power BI in two ways:
+A Microsoft 365 administrator can enable a mandatory label policy for Power BI by selecting the **Require users to apply a label to their Power BI content** checkbox in the [Microsoft 365 compliance center](https://compliance.microsoft.com/informationprotection). See [What label policies can do](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do).
 
-* By selecting **Require users to apply a label to their Power BI content** in the [Microsoft 365 compliance center](https://compliance.microsoft.com/informationprotection). See [What label policies can do](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do).
+![Screenshot of mandatory label setting in the Microsoft compliance center.](media/service-security-sensitivity-label-mandatory-label-policy/mandatory-labels-config-in-compliance-center.png)
 
-    ![Screenshot of mandatory label setting in the Microsoft compliance center.](media/service-security-sensitivity-label-mandatory-label-policy/mandatory-labels-config-in-compliance-center.png)
+For existing policies, it is also possible to enable mandatory labeling in Power BI using the [Security & Compliance Center PowerShell setLabelPolicy API](/powershell/module/exchange/set-labelpolicy).
 
-* By using the [Security & Compliance Center PowerShell setLabelPolicy API](/powershell/module/exchange/set-labelpolicy). (existing policies only) 
+```powershell
+Set-LabelPolicy -Identity "<policy name>" -AdvancedSettings @{powerbimandatory="true"}
+```
+Where:
 
-    ```powershell
-    Set-LabelPolicy -Identity "<policy name>" -AdvancedSettings @{powerbimandatory="true"}
-    ```
-    Where:
+* policy name = the name of the policy where you want to set labeling in Power BI as mandatory.
 
-    * policy name = the name of the policy where you want to set labeling in Power BI as mandatory.
-
-   **Requirements for using PowerShell**
+**Requirements for using PowerShell**
  
-    * You need the EXO V2 module to run this command. For more information, see [About the Exchange Online PowerShell V2 module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)
-    * A connection to the Microsoft 365 compliance center is also required. For more information, see [Connect to Security & Compliance Center PowerShell using the EXO V2 module](/powershell/exchange/connect-to-scc-powershell)
-
->[!NOTE]
-> The mandatory label settings for Power BI are independent of the mandatory label settings that affect Office files and email.
+* You need the EXO V2 module to run this command. For more information, see [About the Exchange Online PowerShell V2 module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)
+* A connection to the Microsoft 365 compliance center is also required. For more information, see [Connect to Security & Compliance Center PowerShell using the EXO V2 module](/powershell/exchange/connect-to-scc-powershell)
 
 ### Documentation
 
@@ -70,6 +60,7 @@ A Microsoft 365 administrator can enable a mandatory label policy for Power BI i
 
 ## Considerations and limitations
 * Mandatory labeling in Power BI is in preview, so there may be flows that allow the user to create or edit unlabeled content.
+* The mandatory label policy setting for Power BI is independent of the mandatory label policy setting for files and email.
 * Mandatory labeling in Power BI is not supported for service principals and APIs. Service principals and APIs are not affected by mandatory label policies.
 * Mandatory labeling in Power BI is not supported for [external guest users (B2B users)](service-admin-azure-ad-b2b.md). B2B users are not affected by mandatory label policies.
 
