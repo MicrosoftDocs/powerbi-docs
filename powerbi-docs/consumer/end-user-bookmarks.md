@@ -16,7 +16,7 @@ LocalizationGroup: Create reports
 
 There are two types of bookmarks: *personal* and *report*. Report bookmarks are added to reports by report *designers*. When the designers share their reports with colleagues, the bookmarks travel with the report. Everyone who can open and view that report can also see and use the report bookmarks. Personal bookmarks can be created by anyone who can open the report, they don't even require edit permissions. However, if you create personal bookmarks and share your report, the personal bookmarks do not travel with the report. Personal bookmarks are for your use only. 
 
-![Show dropdowns for both types of bookmarks.](media/end-user-bookmarks/power-bi-both-bookmarks.png)
+![Show dropdowns for both types of bookmarks.](media/end-user-bookmarks/power-bi-both-bookmark.png)
 
 This article explains how to create and use *personal* bookmarks.  It also explains how to interact with *report* bookmarks that have been created by others and shared with you. Viewing shared content requires either a Power BI Pro or a Premium Per User license. [Which license do I have?](end-user-license.md)
 
@@ -76,23 +76,23 @@ Configure a report page the way you want it to appear in the bookmark. In this e
 
 ![Add Personal bookmarks.](media/end-user-bookmarks/power-bi-personal.png)
 
-Once your report page and visuals are arranged how you want them, from the **Bookmarks** pane, select **Personal bookmarks > Add**. 
+1. Once your report page and visuals are arranged how you want them, from the **Bookmarks** pane, select **Personal bookmarks > Add**. 
 
-Power BI creates a personal bookmark and gives it a generic name or a name you enter. You can *rename*, *delete*, or *update* your bookmark by selecting the ellipses next to the bookmark's name, then selecting an action from the menu that appears.
+1. Power BI creates a personal bookmark and gives it a generic name or a name you enter. You can *rename*, *delete*, or *update* your bookmark by selecting the ellipses next to the bookmark's name, then selecting an action from the menu that appears.
 
-Select **Save**.
+1. Select **Save**.
 
-Open the **YTD Category** page of your report and create another personal bookmark. This bookmark captures YTD information for just our company, VanArsdel.
+1. Open the **YTD Category** page of your report and create another personal bookmark. This bookmark captures YTD information for just our company, VanArsdel.
 
-![Add a second personal bookmark.](media/end-user-bookmarks/power-bi-second-bookmark.png)
+    ![Add a second personal bookmark.](media/end-user-bookmarks/power-bi-second-bookmark.png)
 
-Now that you have two bookmarks, switch between them by selecting the bookmark in the **Bookmarks** pane. 
+1. Now that you have two bookmarks, switch between them by selecting the bookmark in the **Bookmarks** pane. 
 
-![Display a particular bookmark by selecting.](media/end-user-bookmarks/bookmarks.gif)
+    ![Display a particular bookmark by selecting.](media/end-user-bookmarks/bookmarks.gif)
 
-To return to the original published view of the report, select the **reset** icon.
+1. To return to the original published view of the report, select the **reset** icon.
 
-![screenshot with the revert icon selected](media/end-user-bookmarks/power-bi-revert.png)
+    ![screenshot with the revert icon selected](media/end-user-bookmarks/power-bi-revert.png)
 
 ## Open *report* bookmarks
 To view the report bookmarks created by the report *designer*, from the **Bookmarks** pane, select **Report bookmarks**.  
