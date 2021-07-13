@@ -12,9 +12,9 @@ ms.date: 06/23/2021
 
 # Capabilities and properties of Power BI visuals 
 
-Every visual has a `capabilities.json` file that describes the visual to the host. The `capabilities.json` file tells the host what kind of data the visual accepts, what customizable attributes to put on the properties pane, and other information needed to create the visual. All properties in the `capabilities.json` file are *optional*.
+Every visual has a *capabilities.json file* that describes the visual to the host. The *capabilities.json* file tells the host what kind of data the visual accepts, what customizable attributes to put on the properties pane, and other information needed to create the visual. All properties in the *capabilities.json* file are **optional**.
 
-The `capabilities.json` file has the following format:
+The *capabilities.json* file has the following format:
 
 ```json
 {
@@ -27,8 +27,6 @@ The `capabilities.json` file has the following format:
 }
 
 ```
-
-You can see the latest schema for the `capablities.json` file [here](https://github.com/microsoft/powerbi-visuals-api/blob/master/schema.capabilities.json#L4-L65)
 
 The root objects of a visual's capabilities file are:  
 
@@ -48,6 +46,8 @@ The root objects of a visual's capabilities file are:
 * [supportsEmptyDataView](landing-page.md#creating-a-landing-page)
 * [supportsMultiVisualSelection](supportsmultivisualselection-feature.md)
 * subtotals
+
+You can find all the objects and the parameters they take in the *capabilities.json* [schema](https://github.com/microsoft/powerbi-visuals-api/blob/master/schema.capabilities.json#L4-L65)
 
 ## Define the data fields that your visual expects: dataroles
 
