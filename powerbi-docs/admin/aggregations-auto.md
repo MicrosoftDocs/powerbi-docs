@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 07/06/2021
+ms.date: 07/13/2021
 LocalizationGroup: Admin
 ---
 # Automatic aggregations (Preview)
@@ -72,7 +72,7 @@ With this architecture:
 
 ### Metadata elements
 
-Datasets with automatic aggregations enabled contain aggregations tables. Aggregations tables aren't visible to users in reporting tools. They can however be seen by using tools through the XMLA endpoint. Automatic aggregations tables are identified by a `SystemManaged` property, as shown in the following code snippet. The `SystemManaged` property is set to `true` for automatic aggregations tables and `false` for regular tables. 
+Datasets with automatic aggregations enabled contain aggregations tables. Aggregations tables aren't visible to users in reporting tools. They can however be seen by using tools through the XMLA endpoint. Automatic aggregations tables are identified by a `SystemManaged` property, as shown in the following code snippet. The `SystemManaged` property is set to `true` for automatic aggregations tables and `false` for regular tables.
 
 ```csharp
 using System;
@@ -154,19 +154,19 @@ Executing this snippet outputs automatic aggregations tables currently included 
 
 Automatic aggregations tables are constantly changing as training operations determine the optimal aggregations to include in the in-memory aggregations cache.
 
-**IMPORTANT:** Power BI fully manages automatic aggregations table objects. Do not delete or modifying these tables yourself. Doing so can cause degraded performance.
+**IMPORTANT:** Power BI fully manages automatic aggregations table objects. Do not delete or modify these tables yourself. Doing so can cause degraded performance.
 
 Power BI maintains the dataset configuration outside of the dataset. The presence of a system-managed aggregations table in a dataset does not necessarily mean the dataset is in fact enabled for automatic aggregations. In other words, if you script out a full model definition for a dataset with automatic aggregations enabled, and create a new copy of the dataset (with a different name/workspace/capacity), the new resulting dataset is not yet enabled for automatic aggregations. You still need to enable automatic aggregations for the new dataset in dataset Settings.
 
-The `SystemManaged` table property is new to the Tabular Object Model (TOM) in Analysis Services client libraries version 19.22.5 and higher. Be sure to upgrade your data modeling and admin tools to the latest version of the client libraries when working with datasets that have automatic aggregations enabled. For example, older versions of SQL Server Management Studio (SSMS) are not yet able to enumerate tables or script out these datasets because the older client libraries do not support the SystemManaged table property.
+The `SystemManaged` table property is new to the Tabular Object Model (TOM) in Analysis Services client libraries version 19.22.5 and higher. Be sure to upgrade your data modeling and admin tools to the latest version of the client libraries when working with datasets that have automatic aggregations enabled. For example, older versions of SQL Server Management Studio (SSMS) are not yet able to enumerate tables or script out these datasets because the older client libraries do not support the `SystemManaged` table property.
 
 ## Loading new and updated aggregations
 
-While automatic aggregations eliminate the need to create user-defined aggregations tables, a deeper familiarity with the underlying processes is helpful to understand the impact of the configuration and its dependencies. For example, you must perform at least one refresh for either the day or week frequency for Power BI to load the in-memory aggregations cache. More refreshes are necessary to improve the aggregations accuracy over time.
+While automatic aggregations eliminate the need to create user-defined aggregations tables, a deeper familiarity with the underlying processes is helpful in understanding the impact of the configuration and its dependencies. For example, you must perform at least one refresh for either the day or week frequency for Power BI to load the in-memory aggregations cache. More refreshes are necessary to improve the aggregations accuracy over time.
 
 Power BI relies on the following to generate automatic aggregations:
 
-- As soon as automatic aggregations are enabled for a dataset, Power BI begins to track all report queries in a query log. As mentioned earlier, Power BI maintains seven days of data per dataset.
+- As soon as automatic aggregations are enabled for a dataset, Power BI begins to track all report queries in a query log. Power BI maintains seven days of log data per dataset.
 - During the first data refresh operation for your selected frequency, Power BI initiates the training operation to ensure the aggregations adapt to evolving query patterns. While training can only be performed on past queries, the results are sufficiently accurate to ensure future queries are covered. However, there is no guarantee that future queries hit the cache as those queries could be different.
 - With each dataset refresh operation, Power BI loads the in-memory cache with the latest aggregations data.
 
@@ -191,7 +191,7 @@ Refresh history provides information about how scheduled training and refresh op
 
 ### Training and refresh failure handling
 
-While Power BI performs training and refresh operations as part of the first dataset refresh day or week frequency you choose, these operations are implemented as separate transactions. If a training operation fails, Power BI might still be able to proceed refreshing the aggregations (and regular tables in a composite model) using the previous training state. In this case, the refresh history will indicate the refresh succeeded but training failed. Query performance might be less optimized but the achieved performance level should still be far superior than a pure DirectQuery dataset without any aggregations.
+While Power BI performs training and refresh operations as part of the first dataset refresh for the day or week frequency you choose, these operations are implemented as separate transactions. If a training operation fails, Power BI might still be able to proceed refreshing the aggregations (and regular tables in a composite model) using the previous training state. In this case, the refresh history will indicate the refresh succeeded but training failed. Query performance might be less optimized but the achieved performance level should still be far superior than a pure DirectQuery dataset without any aggregations.
 
 :::image type="content" source="media/aggregations-automatic/cache-refresh-history-partially-completed.png" alt-text="Refresh history partially completed":::
 
@@ -307,6 +307,7 @@ Drilling through to the next level will now show the details of the aggregations
 When using automatic aggregations, keep the following limitations in mind:
 
 - Aggregations stored in the in-memory aggregations cache may not be calculated on the most recent data at the data source. Unlike pure DirectQuery, and more like regular import tables, there is a latency between updates at the data source and aggregations data stored in the in-memory aggregations cache. While there will always be some degree of latency, it can be mitigated through an effective refresh schedule configured through dataset settings or programmatically.
+- To further optimize performance, set all dimension tables to Dual mode and leave fact tables in DirectQuery mode.
 - Automatic aggregations are not available with Power BI Pro, Azure Analysis Services, or SQL Server Analysis Services.  
 - Power BI does not support downloading datasets with automatic aggregations enabled. If you uploaded or published a Power BI Desktop (.pbix) file to Power BI and then enabled automatic aggregations, you can no longer download the PBIX file. Make sure you keep a copy of the PBIX file locally.
 - Automatic aggregations are only available for datasets using enhanced metadata. If you want to enable automatic aggregations for an older dataset, upgrade the dataset to enhanced metadata first. To learn more, see [Using enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md).

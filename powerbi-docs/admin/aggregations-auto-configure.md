@@ -3,11 +3,10 @@ title: Configure automatic aggregations
 description: Describes how to enable and configure automatic aggregations to optimize query performance.
 author: minewiskan
 ms.author: owend
-ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 07/06/2021
+ms.date: 07/13/2021
 LocalizationGroup: Admin
 ---
 # Configure automatic aggregations (Preview)
@@ -98,13 +97,13 @@ namespace AutoAggs
             // Enumerate system-managed tables.
             IEnumerable<Table> aggregationsTables = dataset.Model.Tables.Where(tbl => tbl.SystemManaged == true);
 
-            if(aggregationsTables.Any())
+
+            if (aggregationsTables.Any())
             {
-                Console.WriteLine("Press [Enter] to delete the following auto aggs tables from this dataset:");
+                Console.WriteLine("The following auto aggs tables exist in this dataset:");
                 foreach (Table table in aggregationsTables)
                 {
-                    dataset.Model.Tables.Remove(table);
-                    Console.WriteLine($"\t{table.Name} deleted.");
+                    Console.WriteLine($"\t{table.Name}");
                 }
                 dataset.Update(Microsoft.AnalysisServices.UpdateOptions.ExpandFull);
             }
@@ -115,6 +114,9 @@ namespace AutoAggs
 
             Console.WriteLine("\n\rPress [Enter] to exit the sample app...");
             Console.ReadLine();
+        }
+    }
+}
 
 ```
 
