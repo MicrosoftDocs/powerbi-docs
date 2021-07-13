@@ -5,6 +5,8 @@
   - name: Overview
     expanded: true
     items: 
+    - name: "Develop your own Power BI visual"
+      href: develop-power-bi-visuals.md
     - name: "Visuals in Power BI"
       href: power-bi-custom-visuals.md
   - name: Tutorials
