@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 06/28/2021
+ms.date: 07/13/2021
 LocalizationGroup: Data from files
 ---
 # Mandatory label policy for Power BI (preview)
