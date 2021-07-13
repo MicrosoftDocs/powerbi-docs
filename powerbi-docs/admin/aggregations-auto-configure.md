@@ -68,7 +68,7 @@ Threshold appears as a marker line on the lift chart and indicates the target qu
 
 **New query percentage** - An estimated duration in seconds for report queries answered from the in-memory aggregations cache for the newly selected percentage. As the percentage slider is changed, this metric reflects the potential change.
 
-## Disable automatic aggregations
+## Disable
 
 When disabling automatic aggregations, existing system-created aggregation tables remain in the dataset. Power BI continues to use them to get query results whenever possible. By disabling automatic aggregations, you are only disabling the self-training and self-optimization processes. If you want to revert a dataset back to its initial state, you must republish the original dataset or use an XMLA-based tool to remove the system-created aggregation tables from the dataset.
 

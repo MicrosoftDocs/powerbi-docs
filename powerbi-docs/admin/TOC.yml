@@ -148,7 +148,7 @@
         items:     
         - name: Automatic aggregations overview
           href: aggregations-auto.md
-        - name: Configure Automatic aggregations
+        - name: Configure automatic aggregations
           href: aggregations-auto-configure.md
       - name: Purchase Power BI Premium for testing
         href: service-admin-premium-testing.md        
