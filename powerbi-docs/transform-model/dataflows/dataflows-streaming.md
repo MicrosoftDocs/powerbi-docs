@@ -454,8 +454,9 @@ Once your report is ready and you have added all the content you want to share, 
 * A Power BI Premium subscription (capacity or PPU) is required in order to create and run streaming dataflows.
 * Only one type of dataflow is allowed per workspace.
 * Linking regular and streaming dataflows is not possible.
-* Capacities smaller than A3 cannot use streaming dataflows.
+* Capacities smaller than A3 create or run use streaming dataflows.
 * If dataflows or the enhanced calculation engine is not enabled in a tenant, users will not be able to create or run streaming dataflows.
+* Workspaces connected to a storage account are not supported.
 
 ### Licensing
 
