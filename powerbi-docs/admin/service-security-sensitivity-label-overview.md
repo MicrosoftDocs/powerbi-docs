@@ -68,14 +68,14 @@ Here's a quick example of how sensitivity labels in Power BI work. The image bel
 
 The sensitivity labels you apply to content persist and roam with the content as it's used and shared throughout Power BI. You can use  use the labeling to generate usage reports and to see activity data for your sensitive content.
 
-## Sensitivity labels in Power BI Desktop (preview)
+## Sensitivity labels in Power BI Desktop
 
 Sensitivity labels can also be applied in Power BI Desktop. This makes it possible to protect your data from the moment you first start developing your content. When you save your work in Desktop, the sensitivity label you applied, along with any associated encryption settings, is applied to the resulting .pbix file. If the label has encryption settings, the file is thus protected wherever it goes and however it is transmitted. Only those with the [necessary RMS permissions](#power-bi-desktop-preview) will be able to open it.
 
 >[!NOTE]
->* In this preview release, some limitations may apply. See [Limitations](#limitations).
+>* Some limitations may apply. See [Limitations](#limitations).
 
-If you apply a sensitivity label in Desktop, when you publish your work to the service, or when you upload a .pbix file of that work to the service, the label travels with the data into the service. In the service, the label will be applied to both the dataset and the report that you get with the file. If the dataset and report already have sensitivity labels, those labels will be overwritten by the label coming from Desktop.
+If you apply a sensitivity label in Desktop, when you publish your work to the service, or when you upload a .pbix file of that work to the service, the label travels with the data into the service. In the service, the label will be applied to both the dataset and the report that you get with the file. If the dataset and report already have sensitivity labels, you can choose to keep those labels or to to overwrite then with the label(s) coming from Desktop.
  
 If you upload a .pbix file that has never been published to the service before, and that has the same name as a report or dataset that already exists on the service, the upload will succeed only if the uploader has the RMS permissions necessary to change the label.
 
@@ -226,7 +226,7 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * Sensitivity labels on Power BI assets are visible in the workspace list, lineage, favorites, recents, and apps views; labels are not currently visible in the "shared with me" view. Note, however, that a label applied to a Power BI asset, even if not visible, will always persist on data exported to Excel, PowerPoint, and PDF files.
 
-### Power BI Desktop (preview)
+### Power BI Desktop
 
 * Power BI Desktop for Power BI Report Server does not support preview features, thus the Information protection preview feature is not available there. If you try to open a protected .pbix file, the file will not open and you will receive an error message, just as you would in regular Power BI Desktop with the Information protection preview feature turned off. Sensitivity-labeled .pbix files that are not encrypted can be opened as normal.
 
