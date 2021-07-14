@@ -35,7 +35,7 @@ Streaming dataflows in Power BI empower organizations to:
 * Democratize streaming data. Make data more accessible and easier to interpret with a no-code solution and reduce IT resources.
 * Accelerate time to insight. End-to-end streaming analytics solution with integrated data storage and BI.
 
-Streaming dataflows supports DirectQuery and [automatic page refresh/change detection](../create-reports/desktop-automatic-page-refresh.md). This allows users to build reports that update in near real-time, up to every second, using any visual available in Power BI.
+Streaming dataflows supports DirectQuery and [automatic page refresh/change detection](../../create-reports/desktop-automatic-page-refresh.md). This allows users to build reports that update in near real-time, up to every second, using any visual available in Power BI.
 
 ## Requirements
 
@@ -46,11 +46,11 @@ Streaming dataflows supports DirectQuery and [automatic page refresh/change dete
 
 2. Dataflows needs to be enabled for your tenant. For more information, please check the [enabling dataflows in Power BI premium](dataflows-premium-workload-configuration.md#enabling-dataflows-in-power-bi-premium) article.
 
-3. To make sure streaming dataflows work in your premium capacity, the [enhanced compute engine](../transform-model/dataflows-premium-features.md#the-enhanced-compute-engine) needs to be turned on. Good news is this is done by default, but Power BI capacity admins have the ability to turn it off. If this is case, please contact your admin to turn it on.
+3. To make sure streaming dataflows work in your premium capacity, the [enhanced compute engine](dataflows-premium-features.md#the-enhanced-compute-engine) needs to be turned on. Good news is this is done by default, but Power BI capacity admins have the ability to turn it off. If this is case, please contact your admin to turn it on.
 
-4. The [enhanced compute engine](../transform-model/dataflows-premium-features.md#the-enhanced-compute-engine) is only available in A3 and larger premium capacities, meaning that to use streaming dataflows you will need either PPU or an A3 or larger capacity. You can find more details about Premium SKUs and their specifications in [this article](../developer/embedded/embedded-capacity.md#capacity-and-skus).
+4. The [enhanced compute engine](dataflows-premium-features.md#the-enhanced-compute-engine) is only available in A3 and larger premium capacities, meaning that to use streaming dataflows you will need either PPU or an A3 or larger capacity. You can find more details about Premium SKUs and their specifications in [this article](../../developer/embedded/embedded-capacity.md#capacity-and-skus).
 
-5. Finally, to create reports that update in real time, you also need to make sure your admin (capacity and/or Power BI for PPU) has enabled automatic page refresh and they have allowed a minimum refresh interval that matches your needs. You can find more details about [automatic page refresh in our documentation](../create-reports/desktop-automatic-page-refresh.md).
+5. Finally, to create reports that update in real time, you also need to make sure your admin (capacity and/or Power BI for PPU) has enabled automatic page refresh and they have allowed a minimum refresh interval that matches your needs. You can find more details about [automatic page refresh in our documentation](../../create-reports/desktop-automatic-page-refresh.md).
 
 ## Create a streaming dataflow
 
@@ -82,7 +82,7 @@ A streaming dataflow is built on three main components: **streaming inputs, tran
 
 ## Inputs
 
-To add a streaming input input, click on icon in the ribbon and provide the info needed in the side pane to set it up. As of July 2021 , the streaming dataflows preview supports  [**Azure Event Hub**](https://docs.microsoft.com/azure/event-hubs/). and [**Azure IoT Hub**](https://docs.microsoft.com/azure/iot-hub/) as inputs.
+To add a streaming input input, click on icon in the ribbon and provide the info needed in the side pane to set it up. As of July 2021 , the streaming dataflows preview supports  [**Azure Event Hub**](/azure/event-hubs/). and [**Azure IoT Hub**](/azure/iot-hub/) as inputs.
 
 Azure Event Hubs and Azure IoT Hubs are streaming and big data services built on a common architecture to facilitate the fast and scalable ingestion and consumption of events. IoT Hubs in particular are tailored as a central message hub for communications in both directions between an IoT application and its attached devices.
 
@@ -94,7 +94,7 @@ To configure an Event Hub as an input for streaming dataflows, click on the EVen
 
 ![Event Hub configuration side pane](media/dataflows-streaming/dataflows-streaming-05.png)
 
-You have the option of pasting the Event Hub connection string and streaming dataflows will fill out all the necessary information, including the optional consumer group (which by default is "$Default"). If you want to enter all fields manually, you can enable the manual entry toggle to expose them. You can learn more about Event Hub connection strings in this [article](https://docs.microsoft.com/azure/event-hubs/event-hubs-get-connection-string).
+You have the option of pasting the Event Hub connection string and streaming dataflows will fill out all the necessary information, including the optional consumer group (which by default is "$Default"). If you want to enter all fields manually, you can enable the manual entry toggle to expose them. You can learn more about Event Hub connection strings in this [article](../azure/event-hubs/event-hubs-get-connection-string.md).
 
 Once you have setup your Event Hub credentials and select "Connect", you will have the option to add fields manually selection "+ Add field" if you know the field names or detect fields and data types automatically based on a sample of the incoming messages selecting "Auto-detect fields". Clicking on the gear icon allows you to edit the credentials if needed.
 
@@ -110,7 +110,7 @@ You can always edit the field names, remove or change the data type clicking in 
 
 IoT Hub is a managed service hosted in the cloud that acts as a central message hub for communications in both directions between an IoT application and its attached devices. You can connect millions of devices and their backend solutions reliably and securely. Almost any device can be connected to an IoT Hub.
 
-IoT Hub configuration is very similar to Event Hub because of their common architecture but there are some differences, including where to find the Event Hub compatible built-in endpoint connection string. You can learn more about the IoT Hub built-in endpoint in this [article](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-messages-read-builtin).
+IoT Hub configuration is very similar to Event Hub because of their common architecture but there are some differences, including where to find the Event Hub compatible built-in endpoint connection string. You can learn more about the IoT Hub built-in endpoint in this [article](../azure/iot-hub/iot-hub-devguide-messages-read-builtin.md).
 
 ![IoT Hub configuration side pane](media/dataflows-streaming/dataflows-streaming-08.png)
 
@@ -326,7 +326,7 @@ The last available table in the preview is Runtime errors (1). This table will p
 
 Since dataflows could run for a long period of time, this table offers the option to filter by time span and also to download the list of errors and refresh it needed (2).
 
-![Authoring errors table](media/dataflows-streaming/dataflows-streaming-29.png)
+![Runtime errors table](media/dataflows-streaming/dataflows-streaming-29.png)
 
 ## Configuration and settings
 
@@ -419,7 +419,7 @@ To connect to your streaming dataflows data:
 
 6. When asked to choose a Storage Mode, select DirectQuery if your goal is to create real-time visuals.
 
-![Output tables for streaming dataflows in Power BI Desktop](media/dataflows-streaming/dataflows-streaming-37.png)
+![Storage mode for streaming dataflows in Power BI Desktop](media/dataflows-streaming/dataflows-streaming-37.png)
 
 As of now you're good to go and create visuals, measures, etc. using any of the features available for you in Power BI Desktop.
 
@@ -430,7 +430,7 @@ As of now you're good to go and create visuals, measures, etc. using any of the 
 
 ### Turn on automatic page refresh for real-time visuals
 
-Once your report is ready and you have added all the content you want to share, the only step left is to make your visuals update in real time. For this, we will be using another feature the streaming dataflows team created called automatic page refresh which allows you to refresh visuals from a DirectQuery source as often as one second. You can find more details about [automatic page refresh here](../create-reports/desktop-automatic-page-refresh.md) (how to use, how to set it up, how to contact your admin if you are having trouble, etc.) but here we will go over the basics on how to set it up:
+Once your report is ready and you have added all the content you want to share, the only step left is to make your visuals update in real time. For this, we will be using another feature the streaming dataflows team created called automatic page refresh which allows you to refresh visuals from a DirectQuery source as often as one second. You can find more details about [automatic page refresh here](../../create-reports/desktop-automatic-page-refresh.md) (how to use, how to set it up, how to contact your admin if you are having trouble, etc.) but here we will go over the basics on how to set it up:
 
 1. Go to the report page where you want the visuals to update in real time.
 2. De-select any visual in the page and, if possible, click on the background of the page.
@@ -445,7 +445,7 @@ Once your report is ready and you have added all the content you want to share, 
 5. To share your real time report, publish back to Power BI service, setup your dataflows credentials for the dataset and share.
 
 > [!TIP]
-> If you are not seeing your report update as fast as you need it to or in real-time, check the [automatic page refresh documentation](../create-reports/desktop-automatic-page-refresh.md) and follow the FAQ and troubleshoot instructions to figure out why this could be happening.
+> If you are not seeing your report update as fast as you need it to or in real-time, check the [automatic page refresh documentation](../../create-reports/desktop-automatic-page-refresh.md) and follow the FAQ and troubleshoot instructions to figure out why this could be happening.
 
 ## Limitations and considerations
 
@@ -487,7 +487,8 @@ This article provided an overview of self-service streaming data prep using stre
 
 The following articles provide further information for how to test this capability and use of other streaming data features in Power BI.
 
-* [Build a sample IoT solution to test streaming dataflows with one click](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-build-an-iot-solution-using-stream-analytics)
-* [Use the Azure Raspberry Pi simulator and the Free tier of IoT hub to test streaming dataflows](https://docs.microsoft.com/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
-* [PUSH and streaming datasets in Power BI](../connect-data/service-real-time-streaming.md)
-* [Learn more about automatic page refresh](../create-reports/desktop-automatic-page-refresh.md)
+* [Build a sample IoT solution to test streaming dataflows with one click](../azure/stream-analytics/stream-analytics-build-an-iot-solution-using-stream-analytics.md)
+* [Use the Azure Raspberry Pi simulator and the Free tier of IoT hub to test streaming dataflows](../azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started.md)
+* [PUSH and streaming datasets in Power BI](../../connect-data/service-real-time-streaming.md)
+* [Learn more about automatic page refresh](../../create-reports/desktop-automatic-page-refresh.md)
+
