@@ -15,15 +15,15 @@ LocalizationGroup: Data from files
 
 ## Introduction to streaming dataflows
 
-Organizations want to work with data as it comes in, and not days, or weeks later. Power BI’s vision is simple — the distinctions between batch, real-time, and streaming data today will disappear. Users should be able to work with all data as soon as it is available.
+Organizations want to work with data as it comes in, and not days, or weeks later. Power BI’s vision is simple—the distinctions between batch, real-time, and streaming data today will disappear. Users should be able to work with all data as soon as it is available.
 
 Analysts usually need technical help to deal with streaming data sources, data preparation, complex time-based operations, and real-time data visualization.
 
-Therefore, IT departments must often rely on custom-built systems, and a combination of technologies from various vendors to perform analyses on the data in a timely manner. Without this, they are unable to provide decision makers with information in near real-time.
+Therefore, IT departments must often rely on custom-built systems, and a combination of technologies from various vendors to perform analyses on the data in a timely manner. Without this, they are unable to provide decision makers with information in near real time.
 
 **Streaming dataflows** allow authors to connect to, ingest, mashup, model, and build reports based on streaming, near real-time data directly in the Power BI service with beautiful, drag and drop, no-code experiences.  
 
-Users can mix and match streaming data with batch data if they need to. This is done through a friendly UI that includes a **diagram view** for easy data mashup. The final artifact produced is a dataflow which can be consumed in real-time, creating highly interactive, near real-time reporting. All of Power BI’s rich data visualization capabilities work with streaming data just as it does with batch data today.
+Users can mix and match streaming data with batch data if they need to. This is done through a friendly UI that includes a **diagram view** for easy data mashup. The final artifact produced is a dataflow, which can be consumed in real-time, creating highly interactive, near real-time reporting. All of Power BI’s rich data visualization capabilities work with streaming data just as it does with batch data today.
 
 ![streaming dataflows screen](media/dataflows-streaming/dataflows-streaming-01.png)
 
@@ -31,11 +31,11 @@ Users can perform data preparation operations like joins and filters as well as 
 
 Streaming dataflows in Power BI empower organizations to:
 
-* Make confident decisions in near real-time. Be more agile and take meaningful actions based on the most up to date insights.
+* Make confident decisions in near real time. Be more agile and take meaningful actions based on the most up-to-date insights.
 * Democratize streaming data. Make data more accessible and easier to interpret with a no-code solution and reduce IT resources.
 * Accelerate time to insight. End-to-end streaming analytics solution with integrated data storage and BI.
 
-Streaming dataflows supports DirectQuery and [automatic page refresh/change detection](../../create-reports/desktop-automatic-page-refresh.md). This allows users to build reports that update in near real-time, up to every second, using any visual available in Power BI.
+Streaming dataflows supports DirectQuery and [automatic page refresh/change detection](../../create-reports/desktop-automatic-page-refresh.md). This allows users to build reports that update in near real time, up to every second, using any visual available in Power BI.
 
 ## Requirements
 
@@ -46,7 +46,7 @@ Streaming dataflows supports DirectQuery and [automatic page refresh/change dete
 
 2. Dataflows needs to be enabled for your tenant. For more information, please check the [enabling dataflows in Power BI premium](dataflows-premium-workload-configuration.md#enabling-dataflows-in-power-bi-premium) article.
 
-3. To make sure streaming dataflows work in your premium capacity, the [enhanced compute engine](dataflows-premium-features.md#the-enhanced-compute-engine) needs to be turned on. Good news is this is done by default, but Power BI capacity admins have the ability to turn it off. If this is case, please contact your admin to turn it on.
+3. To make sure streaming dataflows work in your premium capacity, the [enhanced compute engine](dataflows-premium-features.md#the-enhanced-compute-engine) needs to be turned on. Good news are that this is done by default, but Power BI capacity admins have the ability to turn it off. If this is the case, contact your admin to turn it on.
 
 4. The [enhanced compute engine](dataflows-premium-features.md#the-enhanced-compute-engine) is only available in A3 and larger premium capacities, meaning that to use streaming dataflows you will need either PPU or an A3 or larger capacity. You can find more details about Premium SKUs and their specifications in [this article](../../developer/embedded/embedded-capacity.md#capacity-and-skus).
 
@@ -65,7 +65,7 @@ To create a streaming dataflow, launch the Power BI service in a browser then se
 
 ![new streaming dataflow](media/dataflows-streaming/dataflows-streaming-02.png)
 
-This will open a side pane where you must name your streaming dataflow. After entering a name (1) click on create (2).
+This will open a side pane where you must name your streaming dataflow. After entering a name (1), click on create (2).
 
 ![create streaming dataflow](media/dataflows-streaming/dataflows-streaming-03.png)
 
@@ -76,13 +76,13 @@ After clicking “Create” you will land in the empty streaming dataflows diagr
 1.	**Ribbon**: In the ribbon, you will see different sections that follow the order of a “classic” analytics process: inputs (also known as data sources), transformations (streaming ETL operations), outputs, and finally, a button to Save your progress.
 2.	**Diagram view**: graphical representation of your dataflow from inputs to operations to outputs
 3.	**Side pane**: depending on which component you have selected in the diagram view, you will have settings to modify each input, transformation, or output.
-4.	**Data preview / Authoring errors / Runtime errors**: for each card shown, the data preview will show you a preview of the results of that step (live for inputs and on-demand for transformations and outputs). This section also summarizes any authoring errors or warnings that you might have in your dataflows. Clicking on each error or warning will select that transform. Lastly, you will have access to runtime errors once the dataflow is running such as dropped messages. You can always minimize this section of streaming dataflows clicking on the arrow in the top right corner of the preview pane.
+4.	**Data preview / Authoring errors / Runtime errors**: for each card shown, the data preview will show you a preview of the results of that step (live for inputs and on-demand for transformations and outputs). This section also summarizes any authoring errors or warnings that you might have in your dataflows. Clicking on each error or warning will select that transform. Lastly, you will have access to runtime errors once the dataflow is running such as dropped messages. You can always minimize this section of streaming dataflows clicking on the arrow in the top-right corner of the preview pane.
 
 A streaming dataflow is built on three main components: **streaming inputs, transformations, and outputs**. You can have as many components as you want, including multiple inputs, parallel branches with multiple transformations, and multiple outputs.
 
 ## Inputs
 
-To add a streaming input input, click on icon in the ribbon and provide the info needed in the side pane to set it up. As of July 2021 , the streaming dataflows preview supports  [**Azure Event Hub**](/azure/event-hubs/). and [**Azure IoT Hub**](/azure/iot-hub/) as inputs.
+To add a streaming input, click on icon in the ribbon and provide the info needed in the side pane to set it up. As of July 2021, the streaming dataflows preview supports  [**Azure Event Hub**](/azure/event-hubs/). and [**Azure IoT Hub**](/azure/iot-hub/) as inputs.
 
 Azure Event Hubs and Azure IoT Hubs are streaming and big data services built on a common architecture to facilitate the fast and scalable ingestion and consumption of events. IoT Hubs in particular are tailored as a central message hub for communications in both directions between an IoT application and its attached devices.
 
@@ -90,19 +90,19 @@ Azure Event Hubs and Azure IoT Hubs are streaming and big data services built on
 
 Azure Event Hubs is a big data streaming platform and event ingestion service. It can receive and process millions of events per second. Data sent to an event hub can be transformed and stored by using any real-time analytics provider or batching/storage adapters.
 
-To configure an Event Hub as an input for streaming dataflows, click on the EVent Hub icon and a card will appear in the diagram view, including a side pane for its configuration.
+To configure an Event Hub as an input for streaming dataflows, click on the Event Hub icon and a card will appear in the diagram view, including a side pane for its configuration.
 
 ![Event Hub configuration side pane](media/dataflows-streaming/dataflows-streaming-05.png)
 
 You have the option of pasting the Event Hub connection string and streaming dataflows will fill out all the necessary information, including the optional consumer group (which by default is "$Default"). If you want to enter all fields manually, you can enable the manual entry toggle to expose them. You can learn more about Event Hub connection strings in this [article](/azure/event-hubs/event-hubs-get-connection-string).
 
-Once you have setup your Event Hub credentials and select "Connect", you will have the option to add fields manually selection "+ Add field" if you know the field names or detect fields and data types automatically based on a sample of the incoming messages selecting "Auto-detect fields". Clicking on the gear icon allows you to edit the credentials if needed.
+Once you have setup your Event Hub credentials and select "Connect", you can add fields manually using "+ Add field" if you know the field names or detect fields and data types automatically based on a sample of the incoming messages selecting "Autodetect fields". Clicking on the gear icon allows you to edit the credentials if needed.
 
 ![Input data options](media/dataflows-streaming/dataflows-streaming-06.png)
 
 When streaming dataflows detects the fields, you will see them in the list. You will also see a live preview of the incoming messages in the Data preview table under the diagram view.
 
-You can always edit the field names, remove or change the data type clicking in the three dots or ellipse right next to each field. Finally, you can also expand, select, and edit any nested fields from the incoming messages as it is shown in the following image.
+You can always edit the field names, remove, or change the data type clicking in the three dots or ellipse right next to each field. Finally, you can also expand, select, and edit any nested fields from the incoming messages as it is shown in the following image.
 
 ![Input data rename and data type edits](media/dataflows-streaming/dataflows-streaming-07.png)
 
@@ -110,11 +110,11 @@ You can always edit the field names, remove or change the data type clicking in 
 
 IoT Hub is a managed service hosted in the cloud that acts as a central message hub for communications in both directions between an IoT application and its attached devices. You can connect millions of devices and their backend solutions reliably and securely. Almost any device can be connected to an IoT Hub.
 
-IoT Hub configuration is very similar to Event Hub because of their common architecture but there are some differences, including where to find the Event Hub compatible built-in endpoint connection string. You can learn more about the IoT Hub built-in endpoint in this [article](/azure/iot-hub/iot-hub-devguide-messages-read-builtin).
+IoT Hub configuration is similar to Event Hub because of their common architecture but there are some differences, including where to find the Event Hub compatible built-in endpoint connection string. You can learn more about the IoT Hub built-in endpoint in this [article](/azure/iot-hub/iot-hub-devguide-messages-read-builtin).
 
 ![IoT Hub configuration side pane](media/dataflows-streaming/dataflows-streaming-08.png)
 
-After pasting the built-in endpoint connection string, all functionality for selecting, adding, auto-detecting, and editing fields coming in from IoT hub is the same as in Event Hubs. Editing the credentials is also possible clicking on the gear icon.
+After pasting the built-in endpoint connection string, all functionality for selecting, adding, autodetecting, and editing fields coming in from IoT hub is the same as in Event Hubs. Editing the credentials is also possible clicking on the gear icon.
 
 > [!TIP]
 > If you have access to the Event Hub or IoT Hub in your organization’s Azure portal and you want to use it as an input for your streaming dataflow, you can find the connection strings in the following locations:
@@ -142,11 +142,11 @@ The available data types for streaming dataflows fields are:
 
 ## Transformations
 
-Streaming data transformations are inherently different compared to batch since almost all streaming data has a time component which affects any data preparation tasks involved.
+Streaming data transformations are inherently different compared to batch since almost all streaming data has a time component, which affects any data preparation tasks involved.
 
 To add a streaming data transformation to your dataflow, click on the transformation icon in the ribbon for that transformation and the respective card will be dropped in the diagram view. Once you click on it, you will see the side pane for that transformation to configure it.
 
-As of July 2021 streaming dataflows supports the following streaming transformations:
+As of July 2021 streaming dataflows support the following streaming transformations:
 
 ### Filter
 
@@ -159,7 +159,7 @@ This transformation allows you to filter events based on the value of a field in
 
 ### Manage fields
 
-Manage fields allows you to add, remove, or rename fields coming in from an input or another transformation. The side pane settings gives you the option of adding a new one clicking on the “Add field” or add all fields at once.
+Manage fields allows you to add, remove, or rename fields coming in from an input or another transformation. The side pane settings give you the option of adding a new one clicking on the “Add field” or add all fields at once.
 
 ![Manage fields transformation configuration](media/dataflows-streaming/dataflows-streaming-10.png)
 
@@ -168,9 +168,9 @@ Manage fields allows you to add, remove, or rename fields coming in from an inpu
 
 ### Aggregate
 
-You can calculate an aggregation (**Sum, Minimum, Maximum, or Average**) every time a new event occurs over a period of time using the aggregate transformation. This operation also allows you to filter or slice the aggregation based on other dimensions in your data. You can have one or more aggregations in the the same transformation.
+You can calculate an aggregation (**Sum, Minimum, Maximum, or Average**) every time a new event occurs over a period of time using the aggregate transformation. This operation also allows you to filter or slice the aggregation based on other dimensions in your data. You can have one or more aggregations in the same transformation.
 
-To add an aggregation click on the transformation icon. Then connect an input, select the aggregation(s), add any filter/slice dimensions for your data aggregation and select the period of time over which the aggregation will be calculate. In this example, we are calculating the sum of the toll value by State where the vehicle is from over the last 10 seconds.
+To add an aggregation click on the transformation icon. Then connect an input, select the aggregation(s), add any filter/slice dimensions for your data aggregation, and select the period of time over which the aggregation will be calculate. In this example, we are calculating the sum of the toll value by State where the vehicle is from over the last 10 seconds.
 
 ![Aggregate transformation configuration](media/dataflows-streaming/dataflows-streaming-11.png)
 
@@ -187,7 +187,7 @@ Similarly to regular joins, you have different options for your join logic:
 
 To select the type of join, click on the icon for the preferred type in the side pane.
 
-Finally, select over what period of time you want the join to be calculated. In this example the join looks at the last 10 seconds. Keep in mind that longer the period, the less frequent the output and the more processing resources are used for the transformation.
+Finally, select over what period of time you want the join to be calculated. In this example, the join looks at the last 10 seconds. Keep in mind that longer the period, the less frequent the output, and the more processing resources are used for the transformation.
 
 By default, all fields from both tables are included with prefixes left (first node) and right (second node) in the output to help you differentiate the source.
 
@@ -196,7 +196,7 @@ By default, all fields from both tables are included with prefixes left (first n
 
 ### Group by
 
-The Group by transformation allows you to calculate aggregations across all events within a certain time window, with the option to group by the values in one or more fields. it is similar to aggregate but provides more options for aggregations and it also includes more complex time windowing options to calculate this aggregations over. Also similar to aggregate, you can add more than one aggregation per transformation.
+The Group by transformation allows you to calculate aggregations across all events within a certain time window, with the option to group by the values in one or more fields. It is similar to aggregate but, provides more options for aggregations and it also includes more complex time windowing options. Also similar to aggregate, you can add more than one aggregation per transformation.
 
 The aggregations available in this transformation are: **Average, Count, Maximum, Minimum, Percentile (continuous and discrete), Standard Deviation, Sum, and Variance**.
 
@@ -216,7 +216,7 @@ Union allows you to connect two or more inputs to add events with shared fields 
 
 Time windowing is one of the most complex concepts in streaming data. It sits at the core of streaming analytics.
 
-With streaming dataflows we have tried to make it as easy as possible to set up this complex transformation setting when aggregating data as an option for the Group by transformation.
+With streaming dataflows, we have tried to make it as easy as possible to set up this complex transformation setting when aggregating data as an option for the Group by transformation.
 
 > [!NOTE]
 > Keep in mind that all the windowing operations output results are calculated at the end of the time window. The output of the window will be single event based on the aggregate function used. This event will have the time stamp of the end of the window and all window functions are defined with a fixed length.
@@ -227,12 +227,12 @@ There are five kinds of temporal windows to choose from: Tumbling, Hopping, Slid
 
 ### Tumbling window
 
-This is the most common type of time window.The key characteristics of a tumbling window are that they repeat, have the same time length, do not overlap, and an event cannot belong to more than one tumbling window.
+This is the most common type of time window. The key characteristics of a tumbling window are that they repeat, have the same time length, do not overlap, and an event cannot belong to more than one tumbling window.
 
 ![Tumbling window diagram](media/dataflows-streaming/dataflows-streaming-15.png)
 
 When setting up a tumbling window in streaming dataflows, you need to provide the duration of the window (same for all windows in this case).
-You also have the option to provide an optional offset: by default, tumbling windows include the end of window and exclude the beginning. This parameter can be used to change this behavior and include the events in the beginning of the window and exclude the ones that happened in the end.
+You also can provide an optional offset: by default, tumbling windows include the end of window and exclude the beginning. This parameter can be used to change this behavior and include the events in the beginning of the window and exclude the ones that happened in the end.
 
 ![Tumbling window settings](media/dataflows-streaming/dataflows-streaming-16.png)
 
@@ -243,7 +243,7 @@ Hopping windows "hop" forward in time by a fixed period. It may be easy to think
 ![Hopping window diagram](media/dataflows-streaming/dataflows-streaming-17.png)
 
 When setting up a hopping window in streaming dataflows, you need to provide the duration of the window (same as with tumbling windows).
-You also need to provide the hop size which tells streaming dataflows how often you want the aggregation to be calculated for duration defined.
+You also need to provide the hop size, which tells streaming dataflows how often you want the aggregation to be calculated for duration defined.
 The offset parameter is also available in hopping windows for the same reason as in tumbling windows: to define the logic for including and excluding events for the beginning and end of the hopping window.
 
 ![Hopping window settings](media/dataflows-streaming/dataflows-streaming-18.png)
