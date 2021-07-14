@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/11/2021
+ms.date: 07/14/2021
 LocalizationGroup: Gateways
 ---
 
@@ -18,11 +18,11 @@ You can get seamless single sign-on connectivity, enabling Power BI reports and 
 * Active Directory (AD) SSO, which includes:
     * [Kerberos](service-gateway-sso-kerberos.md) constrained delegation.
     * Security Assertion Markup Language ([SAML](service-gateway-sso-saml.md)).
-* Azure Active Directory (AAD) SSO.
+* Azure Active Directory (Azure AD) SSO.
 
-AD SSO is usually configured for on-premises data sources which are secured within your on-premises network, while AAD SSO is configured for data sources that support Azure Active directory authentication (typically cloud data sources) secured behind an Azure Virtual network.
+AD SSO is usually configured for on-premises data sources which are secured within your on-premises network, while Azure AD SSO is configured for data sources that support Azure Active Directory authentication (typically cloud data sources) secured behind an Azure Virtual Network.
 
-While the on-premises data gateway supports SSO by using [DirectQuery](desktop-directquery-about.md) or for Refresh for the AD-based SSO options, only [DirectQuery](desktop-directquery-about.md), is supported for AAD SSO. 
+While the on-premises data gateway supports SSO by using [DirectQuery](desktop-directquery-about.md) or Refresh for the AD-based SSO options, only [DirectQuery](desktop-directquery-about.md) is supported for Azure AD SSO. 
 
 Power BI supports the following data sources:
 
@@ -35,10 +35,10 @@ Power BI supports the following data sources:
 * Spark (Kerberos)
 * Impala (Kerberos)
 * Denodo (Kerberos)
-* Azure Synapse Analytics (AAD)
-* Azure SQL (AAD) 
-* Azure Data Explorer (AAD)
-* Snowflake (AAD) 
+* Azure Synapse Analytics (Azure AD)
+* Azure SQL (Azure AD) 
+* Azure Data Explorer (Azure AD)
+* Snowflake (Azure AD) 
 
 > [!NOTE]
 > SQL Server Analysis Services also supports SSO, but does so using [Live connections](service-gateway-enterprise-manage-ssas.md#authentication-to-a-live-analysis-services-data-source), rather than using Kerberos or SAML. We don't currently support SSO for [M-extensions](https://github.com/microsoft/DataConnectors/blob/master/docs/m-extensions.md).

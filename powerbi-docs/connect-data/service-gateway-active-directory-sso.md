@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/11/2021
+ms.date: 07/14/2021
 LocalizationGroup: Gateways
 ---
 
@@ -38,4 +38,5 @@ Here are additional details about each step:
 Now that you understand the basics of enabling SSO through the gateway, read more detailed information about Kerberos and SAML:
 
 * [Single sign-on (SSO) - Kerberos](service-gateway-sso-kerberos.md)
-* [Single sign-on (SSO) - SAML](service-gateway-sso-saml.md
+* [Single sign-on (SSO) - SAML](service-gateway-sso-saml.md)
+* [Overview of single sign-on (SSO) for on-premises data gateways in Power BI](service-gateway-sso-overview.md)
