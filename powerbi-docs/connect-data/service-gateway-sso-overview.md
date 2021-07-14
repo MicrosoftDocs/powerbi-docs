@@ -51,5 +51,5 @@ You can also configure a report which is set up for refresh in the Power BI Serv
 
 Now that you understand the basics of enabling SSO through the gateway, read more detailed information about Kerberos and SAML:
 
-* [Single sign-on (SSO) - Kerberos](service-gateway-sso-kerberos.md)
-* [Single sign-on (SSO) - SAML](service-gateway-sso-saml.md)
+* [Active Directory (AD) SSO](service-gateway-active-directory-sso.md)
+* [Azure Active Directory (Azure AD) SSO](service-gateway-azure-active-directory-sso.md)
