@@ -189,7 +189,7 @@ To update a .pbiviz visual, follow these steps to replace the visual.
 >[Administering Power BI in the admin portal](service-admin-portal.md)
 
 > [!div class="nextstepaction"]
->[Where to find Power BI visuals](../developer/visuals/power-bi-custom-visuals.md)
+>[Visuals in Power BI](../developer/visuals/power-bi-custom-visuals.md)
 
 > [!div class="nextstepaction"]
 >[Organizational visuals in Power BI](../developer/visuals/power-bi-custom-visuals-organization.md)
