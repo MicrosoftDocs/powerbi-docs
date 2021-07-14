@@ -94,7 +94,7 @@ To configure an Event Hub as an input for streaming dataflows, click on the EVen
 
 ![Event Hub configuration side pane](media/dataflows-streaming/dataflows-streaming-05.png)
 
-You have the option of pasting the Event Hub connection string and streaming dataflows will fill out all the necessary information, including the optional consumer group (which by default is "$Default"). If you want to enter all fields manually, you can enable the manual entry toggle to expose them. You can learn more about Event Hub connection strings in this [article](../azure/event-hubs/event-hubs-get-connection-string.md).
+You have the option of pasting the Event Hub connection string and streaming dataflows will fill out all the necessary information, including the optional consumer group (which by default is "$Default"). If you want to enter all fields manually, you can enable the manual entry toggle to expose them. You can learn more about Event Hub connection strings in this [article](/azure/event-hubs/event-hubs-get-connection-string).
 
 Once you have setup your Event Hub credentials and select "Connect", you will have the option to add fields manually selection "+ Add field" if you know the field names or detect fields and data types automatically based on a sample of the incoming messages selecting "Auto-detect fields". Clicking on the gear icon allows you to edit the credentials if needed.
 
@@ -110,7 +110,7 @@ You can always edit the field names, remove or change the data type clicking in 
 
 IoT Hub is a managed service hosted in the cloud that acts as a central message hub for communications in both directions between an IoT application and its attached devices. You can connect millions of devices and their backend solutions reliably and securely. Almost any device can be connected to an IoT Hub.
 
-IoT Hub configuration is very similar to Event Hub because of their common architecture but there are some differences, including where to find the Event Hub compatible built-in endpoint connection string. You can learn more about the IoT Hub built-in endpoint in this [article](../azure/iot-hub/iot-hub-devguide-messages-read-builtin.md).
+IoT Hub configuration is very similar to Event Hub because of their common architecture but there are some differences, including where to find the Event Hub compatible built-in endpoint connection string. You can learn more about the IoT Hub built-in endpoint in this [article](/azure/iot-hub/iot-hub-devguide-messages-read-builtin).
 
 ![IoT Hub configuration side pane](media/dataflows-streaming/dataflows-streaming-08.png)
 
@@ -487,8 +487,7 @@ This article provided an overview of self-service streaming data prep using stre
 
 The following articles provide further information for how to test this capability and use of other streaming data features in Power BI.
 
-* [Build a sample IoT solution to test streaming dataflows with one click](../azure/stream-analytics/stream-analytics-build-an-iot-solution-using-stream-analytics.md)
-* [Use the Azure Raspberry Pi simulator and the Free tier of IoT hub to test streaming dataflows](../azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started.md)
+* [Build a sample IoT solution to test streaming dataflows with one click](/azure/stream-analytics/stream-analytics-build-an-iot-solution-using-stream-analytics)
+* [Use the Azure Raspberry Pi simulator and the Free tier of IoT hub to test streaming dataflows](/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
 * [PUSH and streaming datasets in Power BI](../../connect-data/service-real-time-streaming.md)
 * [Learn more about automatic page refresh](../../create-reports/desktop-automatic-page-refresh.md)
-
