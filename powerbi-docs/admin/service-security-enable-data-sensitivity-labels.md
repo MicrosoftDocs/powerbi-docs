@@ -42,7 +42,7 @@ Enabling sensitivity labels requires an Azure Information Protection license. Se
 
 ## Enable sensitivity labels
 
-Sensitivity labels must be enabled on the tenant before they can be used in both the service and in Desktop. This section describes how to enable them in the tenant settings. For additional considerations pertaining to Desktop, see [Disabling sensitivity labels in Desktop across your org](#disable-sensitivity-labels-in-desktop-across-your-org) below. 
+Sensitivity labels must be enabled on the tenant before they can be used in both the service and in Desktop. This section describes how to enable them in the tenant settings.
 
 To enable sensitivity labels on the tenant, go to the Power BI **Admin portal**, open the **Tenant settings** pane, and find the **Information protection** section.
 

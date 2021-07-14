@@ -24,7 +24,7 @@ For information about how to apply sensitivity labels on your Power BI content a
 
 ## Introduction
 
-Microsoft Information Protection sensitivity labels provide a simple way for your users to classify critical content in Power BI without compromising productivity or the ability to collaborate. They can be applied in both Power BI Desktop (preview) and the Power BI service, making it possible to protect your sensitive data from the moment you first start developing your content on through to when it's being accessed from Excel via a live connection. Sensitivity labels are retained when you move your content back and forth between Desktop and the service in the form of .pbix files.
+Microsoft Information Protection sensitivity labels provide a simple way for your users to classify critical content in Power BI without compromising productivity or the ability to collaborate. They can be applied in both Power BI Desktop and the Power BI service, making it possible to protect your sensitive data from the moment you first start developing your content on through to when it's being accessed from Excel via a live connection. Sensitivity labels are retained when you move your content back and forth between Desktop and the service in the form of .pbix files.
 
 In the Power BI service, sensitivity labels can be applied to datasets, reports, dashboards, and dataflows. When labeled data leaves Power BI, either via export to Excel, PowerPoint, PDF, or .pbix files, or via other supported export scenarios such as Analyze in Excel or live connection PivotTables in Excel, Power BI automatically applies the label to the exported file and protects it according to the label's file encryption settings. This way your sensitive data can remain protected, even when it leaves Power BI.
 
@@ -38,7 +38,7 @@ A [protection metrics report](service-security-data-protection-metrics-report.md
 
 In the Power BI service, sensitivity labeling **does not** affect access to content. Access to content in the service is managed solely by Power BI permissions. While the labels are visible, any associated encryption settings (configured in the [Microsoft 365 compliance center](https://compliance.microsoft.com/)) are not applied. They are applied only to data that leaves the service via a supported export path, such as export to Excel, PowerPoint, or PDF, and download to .pbix.
 
-In Power BI Desktop (preview), sensitivity labels with encryption settings **do** affect access to content. If a user does not have sufficient [permissions](#power-bi-desktop-preview) according to the encryption settings of the sensitivity label on the .pbix file, they will not be able to open the file. In addition, in Desktop, when you save your work, any sensitivity label you've added and its associated encryption settings will be applied to the saved .pbix file.
+In Power BI Desktop, sensitivity labels with encryption settings **do** affect access to content. If a user does not have sufficient [permissions](#power-bi-desktop) according to the encryption settings of the sensitivity label on the .pbix file, they will not be able to open the file. In addition, in Desktop, when you save your work, any sensitivity label you've added and its associated encryption settings will be applied to the saved .pbix file.
 
 Sensitivity labels and file encryption **are not** applied in non-supported export paths. The Power BI admin can block export from non-supported export paths.
 
@@ -70,7 +70,7 @@ The sensitivity labels you apply to content persist and roam with the content as
 
 ## Sensitivity labels in Power BI Desktop
 
-Sensitivity labels can also be applied in Power BI Desktop. This makes it possible to protect your data from the moment you first start developing your content. When you save your work in Desktop, the sensitivity label you applied, along with any associated encryption settings, is applied to the resulting .pbix file. If the label has encryption settings, the file is thus protected wherever it goes and however it is transmitted. Only those with the [necessary RMS permissions](#power-bi-desktop-preview) will be able to open it.
+Sensitivity labels can also be applied in Power BI Desktop. This makes it possible to protect your data from the moment you first start developing your content. When you save your work in Desktop, the sensitivity label you applied, along with any associated encryption settings, is applied to the resulting .pbix file. If the label has encryption settings, the file is thus protected wherever it goes and however it is transmitted. Only those with the [necessary RMS permissions](#power-bi-desktop) will be able to open it.
 
 >[!NOTE]
 >* Some limitations may apply. See [Limitations](#limitations).
