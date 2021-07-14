@@ -39,18 +39,18 @@ Streaming dataflows supports DirectQuery and [automatic page refresh/change dete
 
 ## Requirements
 
-1. You will need a workspace that is part of a **Premium capacity** or **Premium Per User (PPU)** to be able to create and run a streaming dataflow.
+- You will need a workspace that is part of a **Premium capacity** or **Premium Per User (PPU)** to be able to create and run a streaming dataflow.
 
 > [!IMPORTANT]
 > If you're using a Premium per User license and you want other users to consume reports created with streaming dataflows updating in real time, they will also need a Premium per User license to consume the report with the same refresh frequency you set up if that refresh is faster than every 30 minutes.
 
-2. Dataflows needs to be enabled for your tenant. For more information, please check the [enabling dataflows in Power BI premium](dataflows-premium-workload-configuration.md#enabling-dataflows-in-power-bi-premium) article.
+- Dataflows needs to be enabled for your tenant. For more information, please check the [enabling dataflows in Power BI premium](dataflows-premium-workload-configuration.md#enabling-dataflows-in-power-bi-premium) article.
 
-3. To make sure streaming dataflows work in your premium capacity, the [enhanced compute engine](dataflows-premium-features.md#the-enhanced-compute-engine) needs to be turned on. Good news are that this is done by default, but Power BI capacity admins have the ability to turn it off. If this is the case, contact your admin to turn it on.
+- To make sure streaming dataflows work in your premium capacity, the [enhanced compute engine](dataflows-premium-features.md#the-enhanced-compute-engine) needs to be turned on. The good news is that this is done by default, but Power BI capacity admins have the ability to turn it off. If this is the case, contact your admin to turn it on.
 
-4. The [enhanced compute engine](dataflows-premium-features.md#the-enhanced-compute-engine) is only available in A3 and larger premium capacities, meaning that to use streaming dataflows you will need either PPU or an A3 or larger capacity. You can find more details about Premium SKUs and their specifications in [this article](../../developer/embedded/embedded-capacity.md#capacity-and-skus).
+- The [enhanced compute engine](dataflows-premium-features.md#the-enhanced-compute-engine) is only available in A3 and larger premium capacities, meaning that to use streaming dataflows you will need either PPU or an A3 or larger capacity. You can find more details about Premium SKUs and their specifications in [this article](../../developer/embedded/embedded-capacity.md#capacity-and-skus).
 
-5. Finally, to create reports that update in real time, you also need to make sure your admin (capacity and/or Power BI for PPU) has enabled automatic page refresh and they have allowed a minimum refresh interval that matches your needs. You can find more details about [automatic page refresh in our documentation](../../create-reports/desktop-automatic-page-refresh.md).
+- Finally, to create reports that update in real time, you also need to make sure your admin (capacity and/or Power BI for PPU) has enabled automatic page refresh and they have allowed a minimum refresh interval that matches your needs. You can find more details about [automatic page refresh in our documentation](../../create-reports/desktop-automatic-page-refresh.md).
 
 ## Create a streaming dataflow
 
@@ -182,8 +182,8 @@ The join transformation allows you to combine events from two inputs based on th
 
 Similarly to regular joins, you have different options for your join logic:
 
-1. **Inner join**: only include records from both tables where the pair matches. In this example, where the license plate matches both inputs.
-2. **Left outer join**: include all records from the left (first) table and only the records from the second one that match the pair of fields. If there's not match, the fields from the second input will be blank.
+- **Inner join**: only include records from both tables where the pair matches. In this example, where the license plate matches both inputs.
+- **Left outer join**: include all records from the left (first) table and only the records from the second one that match the pair of fields. If there's not match, the fields from the second input will be blank.
 
 To select the type of join, click on the icon for the preferred type in the side pane.
 
@@ -391,8 +391,8 @@ Once your streaming dataflow is running, you are ready to start creating content
 
 As we have mentioned before, streaming dataflows saves data in two locations. The use of these two sources depends on what type of analysis you're trying to do:
 
-1. **Hot storage (real-time analysis)**: as data comes into Power BI from streaming dataflows, data is stored in a hot location for you to access with real-time visuals. How much data is saved in this storage depends on the settings of your "Retention Duration" defined in the streaming dataflow settings. The default (and minimum) is 24 hours but this can be changed.
-2. **Cold storage (historical analysis)**: Anytime period that does not fall in the period defined in your "Retention Duration" is saved on cold storage (blob) in Power BI for you to consume if needed.
+- **Hot storage (real-time analysis)**: as data comes into Power BI from streaming dataflows, data is stored in a hot location for you to access with real-time visuals. How much data is saved in this storage depends on the settings of your "Retention Duration" defined in the streaming dataflow settings. The default (and minimum) is 24 hours but this can be changed.
+- **Cold storage (historical analysis)**: Anytime period that does not fall in the period defined in your "Retention Duration" is saved on cold storage (blob) in Power BI for you to consume if needed.
 
 > [!NOTE]
 > There will be overlap between these two data storage locations, so please be aware that if you need to use both in conjunction (for example day over day percentage change) you might have to de-duplicate your records depending on the time intelligence calculations you are making and the retention policy.
