@@ -56,7 +56,9 @@
     - name: "Using DirectQuery with dataflows"
       href: ./dataflows/dataflows-directquery.md       
     - name: "Dataflows limitations and considerations"
-      href: dataflows/dataflows-features-limitations.md        
+      href: dataflows/dataflows-features-limitations.md
+    - name: "Streaming dataflows (preview)"
+      href: dataflows/dataflows-streaming.md
   - name: Log analytics
     items: 
     - name: "Using Azure Log Analytics in Power BI (Preview)"
