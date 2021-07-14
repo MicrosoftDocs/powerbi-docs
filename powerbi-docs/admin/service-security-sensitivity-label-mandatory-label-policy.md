@@ -34,7 +34,7 @@ The images below show the dialogs that prompt users to choose and apply a label 
 
 ## Enabling a mandatory label policy for Power BI
 
-A Microsoft 365 administrator can enable a mandatory label policy for Power BI by selecting the **Require users to apply a label to their Power BI content** checkbox in the [Microsoft 365 compliance center](https://compliance.microsoft.com/informationprotection). See [What label policies can do](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do).
+A Microsoft 365 administrator can enable a mandatory label policy for Power BI by selecting the **Require users to apply a label to their Power BI assets** checkbox in the [Microsoft 365 compliance center](https://compliance.microsoft.com/informationprotection). See [What label policies can do](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do).
 
 ![Screenshot of mandatory label setting in the Microsoft compliance center.](media/service-security-sensitivity-label-mandatory-label-policy/mandatory-labels-config-in-compliance-center.png)
 
