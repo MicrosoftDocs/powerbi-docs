@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 05/18/2021
+ms.date: 07/14/2021
 LocalizationGroup: Data from files
 ---
 # Enable sensitivity labels in Power BI
@@ -63,18 +63,6 @@ In the **Information Protection** section, perform the following steps:
 
 > [!IMPORTANT]
 > Only Power BI Pro users who have *create* and *edit* permissions on the asset, and who are part of the relevant security group that was set in this section, will be able to set and edit the sensitivity labels. Users who are not part of this group won’t be able to set or edit the label.  
-
-## Disable sensitivity labels in Desktop across your org
-
-For organizations that want to make sure that .pbix files **do not** work with sensitivity labels, the Power BI admin can create a group policy that causes Power BI to block users from classifying and protecting .pbix files or opening files that have already had protection applied to them. To create such a policy:
-
-1. Open the [Registry Editor](https://support.microsoft.com/windows/how-to-open-registry-editor-in-windows-10-deab38e6-91d6-e0aa-4b7c-8878d9e07b11).
-
-1. Find the key **HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop**.
-
-1. Find the valueName **EnableInformationProtection** and set it to **false**.
-
-See the [sensitivity label overview](./service-security-sensitivity-label-overview.md#limitations) for further limitations and considerations related to using sensitivity labels in Power BI Desktop.
 
 ## Troubleshooting
 
