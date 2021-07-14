@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 05/27/2021
+ms.date: 06/22/2021
 ms.custom: pbibetadocbug
 LocalizationGroup: Visualizations
 ---
@@ -67,9 +67,12 @@ Once selected, the **Convenience** data point is a nice shade of orange, and cer
 
 Even if you change visualization types, then return, Power BI remembers your selection and keeps **Convenience** orange.
 
+## Change the color of all data points
 You can change the color of a data point for one, several, or all data elements in the visualization. Perhaps you want your visual to mimic your corporate colors of yellow, green, and blue. 
 
 ![bar chart with bars that are green, yellow and blue](media/service-tips-and-tricks-for-color-formatting/power-bi-corporate.png)
+
+Or, perhaps you want a different color for each category. 
 
 There are all sorts of things you can do with colors. In the next section, we take a look at conditional formatting.
 
