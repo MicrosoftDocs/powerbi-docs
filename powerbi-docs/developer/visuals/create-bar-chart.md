@@ -162,7 +162,7 @@ The ["objects"](objects-properties.md) section of the *capabilities* file is whe
 
 For more information on objects and how they work, see [Objects](objects-properties.md).
 
-We'll add an optional X-axis and the ability to define the color of each bar:
+The following objects are optional. Add them if you want to do the optional sections of this tutorial of adding colors and rendering the X-axis.
 
 Replace the content of the `"objects"` section with the following:
 
