@@ -281,7 +281,7 @@ As of July of 2021, we only support one type of output: Power BI table.
 
 ### Output table
 
-This output will be your dataflow table (also known as entity) that can be used to create report in Power BI Desktop. You will also need to join the nodes of the previous step with the output you are creating to make it work. After that all you need to do is name the table and you are good to go.
+This output will be your dataflow table (also known as entity) that can be used to create report in Power BI Desktop. You will also need to join the nodes of the previous step with the output you are creating to make it work. After that all you need to do is named the table and you are good to go.
 
 ![Output table configuration](media/dataflows-streaming/dataflows-streaming-24.png)
 
@@ -306,7 +306,7 @@ You can also see the details of a specific record (a "cell" in the table) by sel
 
 ### Static preview for transformations and outputs
 
-After you add and set-up any steps in the diagram view, you can test its behavior clicking on the static data button ![Static data button](media/dataflows-streaming/dataflows-streaming-26.png)
+After you add and set up any steps in the diagram view, you can test its behavior clicking on the static data button ![Static data button](media/dataflows-streaming/dataflows-streaming-26.png)
 
 Once you do, streaming dataflows evaluates all transformation and outputs that are configured correctly and displays the results in the static data preview as it is shown in the following image.
 
@@ -331,17 +331,17 @@ Since dataflows could run for a long period of time, this table offers the optio
 ## Configuration and settings
 
 Same as with regular dataflows, streaming dataflows settings can be modified depending on the needs of owners and authors.
-In this section we will cover the settings that are unique to streaming dataflows. For the rest, because of the share infrastructure between the two types of dataflows, you can assume the use is the same.
+In this section, we will cover the settings that are unique to streaming dataflows. For the rest, because of the share infrastructure between the two types of dataflows, you can assume the use is the same.
 
 ![Streaming dataflows settings](media/dataflows-streaming/dataflows-streaming-30.png)
 
-* **Refresh history**: since streaming dataflows run continuously, refresh history will only show information regarding when the dataflow was started, cancelled, or when it failed with details and error codes when it applies, similar to regular dataflows. This information can be used to troubleshoot issues or to provide Power BI support with more information if requested or needed.
+* **Refresh history**: since streaming dataflows run continuously, refresh history will only show information regarding when the dataflow was started, canceled, or when it failed with details and error codes when it applies, similar to regular dataflows. This information can be used to troubleshoot issues or to provide Power BI support with more information if requested or needed.
 
 * **Data source credentials**: it will show the inputs that have configured for the specific streaming dataflow.
 
 * **Enhanced compute engine settings**: streaming dataflows needs the enhanced compute engine to provide real-time visuals so this setting is grayed out and on by default.
 
-* **Retention duration**: this setting is specific to streaming dataflows. Here you can define for how long you want to keep real-time to visualize in reports. Historical data is saved by default in blob storage: this setting is specific to the real-time side of your data (hot storage). The minimum value here is one day or 24 hours.
+* **Retention duration**: this setting is specific to streaming dataflows. Here you can define for how long you want to keep real time to visualize in reports. Historical data is saved by default in blob storage: this setting is specific to the real-time side of your data (hot storage). The minimum value here is 1 day or 24 hours.
 
 > [!IMPORTANT]
 > The amount of hot data stored by this retention duration directly influences the performance of your real time visuals when creating reports on top of this data. Keep in mind that the more retention you have here, the more your real-time visuals in reports can be affected by low performance. If you need to perform historical analysis, we recommend you use the cold storage provided for streaming dataflows.
@@ -350,9 +350,9 @@ In this section we will cover the settings that are unique to streaming dataflow
 
 ### Run your streaming dataflow
 
-After saving and configuring your streaming dataflow, now everything is ready for you to run itw and start ingesting data into Power BI with the streaming analytics logic you have defined.
+After saving and configuring your streaming dataflow, now everything is ready for you to run it and start ingesting data into Power BI with the streaming analytics logic you have defined.
 
-To do this, save your dataflow and head to the workspace where it was created. Hover your mouse over your streaming dataflow. You will see a play button appear. To start your streaming dataflow, click the play button. You will see a pop up message telling you that the streaming dataflow is being started.
+To do this, save your dataflow and head to the workspace where it was created. Hover your mouse over your streaming dataflow. You will see a play button appear. To start your streaming dataflow, click the play button. You will see a pop-up message telling you that the streaming dataflow is being started.
 
 ![Start streaming dataflow](media/dataflows-streaming/dataflows-streaming-31.png)
 
@@ -363,7 +363,7 @@ To do this, save your dataflow and head to the workspace where it was created. H
 
 While a streaming dataflow is running, it **cannot be edited**. Having said that, we have allowed users going into a streaming dataflow in a running state and be able to see the logic created by author as a way to help users understand the analytics logic that a running streaming dataflow is built on.
 
-When you go into a running streaming dataflow you will see that all edit options are disabled and a message is displayed: "The dataflow cannot be edited while it is running. Stop the dataflow if you wish to continue." You will also see that the data preview is disabled too.
+When you go into a running streaming dataflow, you will see that all edit options are disabled and a message is displayed: "The dataflow cannot be edited while it is running. Stop the dataflow if you wish to continue." You will also see that the data preview is disabled too.
 
 **To edit your streaming dataflow, you will have to stop it, resulting in data being missed while the dataflow is not running.**
 
@@ -381,25 +381,25 @@ This is better shown with an example. The following screenshot shows the message
 
 As you can see the data already saved in both tables that had schema and name changes will be deleted if we save the changes. For the table that stayed the same, we get the option to delete any old data and start from scratch or saving it for later analysis together with new data that would come in.
 
-Please keep in mind these nuances when editing your streaming dataflow, especially if you need historical data available later for further analysis.
+Keep in mind these nuances when editing your streaming dataflow, especially if you need historical data available later for further analysis.
 
 ## Consume a streaming dataflow
 
-Once your streaming dataflow is running, you are ready to start creating content on top of your streaming data. There are no structural changes compared to what you have to currently do to create reports that update in real-time but there are some nuances and updates that need to be considered to take advantage of this new type of data preparation for streaming data.
+Once your streaming dataflow is running, you are ready to start creating content on top of your streaming data. There are no structural changes compared to what you have to currently do to create reports that update in real time but there are some nuances and updates that need to be considered to take advantage of this new type of data preparation for streaming data.
 
 ### Data storage
 
 As we have mentioned before, streaming dataflows saves data in two locations. The use of these two sources depends on what type of analysis you're trying to do:
 
 1. **Hot storage (real-time analysis)**: as data comes into Power BI from streaming dataflows, data is stored in a hot location for you to access with real-time visuals. How much data is saved in this storage depends on the settings of your "Retention Duration" defined in the streaming dataflow settings. The default (and minimum) is 24 hours but this can be changed.
-2. **Cold storage (historical analysis)**: any time period that does not fall in the period defined in your "Retention Duration" is saved on cold storage (blob) in Power BI for you to consume if needed.
+2. **Cold storage (historical analysis)**: Anytime period that does not fall in the period defined in your "Retention Duration" is saved on cold storage (blob) in Power BI for you to consume if needed.
 
 > [!NOTE]
 > There will be overlap between these two data storage locations, so please be aware that if you need to use both in conjunction (for example day over day percentage change) you might have to de-duplicate your records depending on the time intelligence calculations you are making and the retention policy.
 
 ### Connect to streaming dataflows from Power BI Desktop
 
-With the July 2021 release of Power BI Desktop, there is a new Power Platform dataflows (Beta) connector available for you to use. As part of this new connector, for streaming dataflow you will see two tables available that match the data storage previously described.
+With the July 2021 release of Power BI Desktop, there is a new Power Platform dataflow (Beta) connector available for you to use. As part of this new connector, for streaming dataflow you will see two tables available that match the data storage previously described.
 
 To connect to your streaming dataflows data: 
 
@@ -421,7 +421,7 @@ To connect to your streaming dataflows data:
 
 ![Storage mode for streaming dataflows in Power BI Desktop](media/dataflows-streaming/dataflows-streaming-37.png)
 
-As of now you're good to go and create visuals, measures, etc. using any of the features available for you in Power BI Desktop.
+As of now you're good to create visuals, measures, etc. using any of the features available for you in Power BI Desktop.
 
 > [!NOTE]
 > The regular Power BI dataflows connector is still available and will work with streaming dataflows with two caveats:
@@ -430,7 +430,7 @@ As of now you're good to go and create visuals, measures, etc. using any of the 
 
 ### Turn on automatic page refresh for real-time visuals
 
-Once your report is ready and you have added all the content you want to share, the only step left is to make your visuals update in real time. For this, we will be using another feature the streaming dataflows team created called automatic page refresh which allows you to refresh visuals from a DirectQuery source as often as one second. You can find more details about [automatic page refresh here](../../create-reports/desktop-automatic-page-refresh.md) (how to use, how to set it up, how to contact your admin if you are having trouble, etc.) but here we will go over the basics on how to set it up:
+Once your report is ready and you have added all the content you want to share, the only step left is to make your visuals update in real time. For this, we will be using another feature the streaming dataflows team created called automatic page refresh, which allows you to refresh visuals from a DirectQuery source as often as one second. You can find more details about [automatic page refresh here](../../create-reports/desktop-automatic-page-refresh.md) (how to use, how to set it up, how to contact your admin if you are having trouble, etc.) but here we will go over the basics on how to set it up:
 
 1. Go to the report page where you want the visuals to update in real time.
 2. De-select any visual in the page and, if possible, click on the background of the page.
@@ -442,7 +442,7 @@ Once your report is ready and you have added all the content you want to share, 
 
 ![Set-up automatic page refresh](media/dataflows-streaming/dataflows-streaming-39.png)
 
-5. To share your real time report, publish back to Power BI service, setup your dataflows credentials for the dataset and share.
+5. To share your real-time report, publish back to Power BI service, set up your dataflows credentials for the dataset and share.
 
 > [!TIP]
 > If you are not seeing your report update as fast as you need it to or in real-time, check the [automatic page refresh documentation](../../create-reports/desktop-automatic-page-refresh.md) and follow the FAQ and troubleshoot instructions to figure out why this could be happening.
@@ -455,7 +455,7 @@ Once your report is ready and you have added all the content you want to share, 
 * Only one type of dataflow is allowed per workspace.
 * Linking regular and streaming dataflows is not possible.
 * Capacities smaller than A3 cannot use streaming dataflows.
-* If the dataflows or the enhanced calculation engine are not enabled in a tenant, users will not be able to create or run streaming dataflows.
+* If dataflows or the enhanced calculation engine is not enabled in a tenant, users will not be able to create or run streaming dataflows.
 
 ### Licensing
 
@@ -467,7 +467,7 @@ The number of streaming dataflows allowed per tenant depends on the license bein
 
 > Example: P1 has 8 vCores > 8 * 5 = 40 streaming dataflows
 
-* Premium per User: 1 streaming dataflow is allowed per user. If another user wants to consume a streaming dataflow in a PPU workspace, they will need a PPU license too.
+* Premium per User: One streaming dataflow is allowed per user. If another user wants to consume a streaming dataflow in a PPU workspace, they will need a PPU license too.
 
 ### Dataflow authoring
 
