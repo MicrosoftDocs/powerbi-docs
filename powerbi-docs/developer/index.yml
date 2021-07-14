@@ -68,9 +68,12 @@ conceptualContent:
     # Card
     - title: Power BI visuals
       links:
+        - url: visuals/develop-power-bi-visuals.md
+          itemType: overview
+          text: Develop your own visuals in Power BI
         - url: visuals/power-bi-custom-visuals.md
           itemType: overview
-          text: Visuals in Power BI
+          text: Where to find Power BI visuals
         - url: visuals/develop-circle-card.md
           itemType: tutorial
           text: Develop a Power BI visual
