@@ -99,7 +99,7 @@ After you've applied the label, it will be visible in the status bar.
 To remove a sensitivity label from a report, dashboard, dataset, or dataflow, follow the [same procedure used for applying labels in the Power BI service](#apply-sensitivity-labels-in-the-power-bi-service), but choose **(None)** when prompted to classify the sensitivity of the data.
 
 ### Desktop
-Removing the sensitivity label from a .pbix file after it has been saved with the label is currently not supported in Desktop. In such cases it is recommended to publish the file to the Power BI service and then there in the service to remove the label from the subsequent report and dataset.
+To remove a sensitivity label from a .pbix file, reselect the label in the sensitivity drop down menu.
 
 ## Considerations and limitations
 
