@@ -19,21 +19,24 @@ Visuals (also known as *charts* and *visualizations*) are picture representation
 
 The visuals described on this page are the ones that are packaged with Power BI. These are the visual types you'll encounter most often. This page gives you a quick overview of these pre-packaged visuals. For in-depth information about any of these visuals, see the [Power BI report *designer* documentation on visual types](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
-Visuals that are not automatically included with Power BI are referred to as *custom visuals*. Custom visuals can be imported into Power BI from external websites such as Microsoft AppSource or from internal sources such as your organizational store. Importing custom visuals requires edit permissions to the report. To learn about these add-in visuals, visit [Custom visuals in Power BI](../developer/visuals/power-bi-custom-visuals.md).
-
-
+Visuals that are not automatically included with Power BI are referred to as *custom visuals*. Custom visuals can be imported into Power BI from external websites such as Microsoft AppSource or from internal sources such as your organizational store. Importing custom visuals requires edit permissions to the report. To learn about these add-in visuals, visit [where to find Power BI visuals](../developer/visuals/power-bi-custom-visuals.md).
 
 ## List of visuals available in Power BI
+
 All of these visuals can be found in Power BI dashboards and reports, and [specified in Q&A](end-user-q-and-a.md). To learn how to interact with visuals, see [Interact with visuals in reports, dashboards, and apps](end-user-visualizations.md)
 
 ## A
+
 ### Area charts: basic (layered) and stacked
+
 ![area chart](media/end-user-visual-type/basic-area-map-small.png)
 
 The basic area chart is based on the line chart with the area between the axis and line filled in. Area charts emphasize the magnitude of change over time, and can be used to draw attention to the total value across a trend. For example, data that represents profit over time can be plotted in an area chart to emphasize the total profit.
 
 ## B
+
 ### Bar and column charts
+
 ![column chart](media/end-user-visual-type/pbi-nancy-viz-bar.png)
 
  ![bar chart](media/end-user-visual-type/pbi-nancy-viz-col.png)
@@ -41,23 +44,27 @@ The basic area chart is based on the line chart with the area between the axis a
 Bar charts are the standard for looking at a specific value across different categories.
 
 ## C
+
 ### Cards: Single number
+
 ![single number card](media/end-user-visual-type/pbi-nancy-viz-card.png)
 
 Single number cards display a single fact, a single data point. Sometimes a single number is the most important thing you want to track in your Power BI dashboard or report, such as total sales, market share year over year, or total opportunities.  
 
 ### Cards: Multi row
+
 ![multi row card](media/end-user-visual-type/multi-row-card.png)
 
 Multi row cards display one or more data points, one per row.
 
-
 ### Combo charts
+
 ![combo chart](media/end-user-visual-type/combo-small.png)
 
 A combo chart combines a column chart and a line chart. Combining the two charts into one lets you make a quicker comparison of the data. Combo charts can have one or two Y axes, so be sure to look closely. 
 
 Combo charts are a great choice:
+
 - when you have a line chart and a column chart with the same X axis.
 - to compare multiple measures with different value ranges
 - to illustrate the correlation between two measures in one visual
