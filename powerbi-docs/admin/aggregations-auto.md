@@ -36,8 +36,6 @@ During preview, automatic aggregations are supported for the following data sour
 
 - Azure SQL Database
 - Azure Synapse Dedicated SQL pool
-- Google Cloud BigQuery
-- Snowflake
 
 ### Supported modes
 
@@ -81,11 +79,11 @@ The training operation has a 60 minute time limit. If training is unable to comp
 
 ### Refresh operations
 
-As described above, after the training operation completes as part of the first scheduled refresh for your selected frequency, Power BI runs a refresh operation that loads new and updated aggregations data into the in-memory aggregations cache and removes any aggregations that no longer rank high enough (as determined by the training algorithm). All subsequent refresh operations for your chosen Day or Week frequency are *refresh only* operations that update existing aggregations data in the cache. Using our example above, the 9:00AM, 2:00PM, and 7:00PM scheduled refreshes for that day are *refresh only operations*. 
+As described above, after the training operation completes as part of the first scheduled refresh for your selected frequency, Power BI runs a refresh operation that queries and loads new and updated aggregations data into the in-memory aggregations cache and removes any aggregations that no longer rank high enough (as determined by the training algorithm). All subsequent refreshes for your chosen Day or Week frequency are *refresh only operations* that query the data source to update existing aggregations data in the cache. Using our example above, the 9:00AM, 2:00PM, and 7:00PM scheduled refreshes for that day are refresh only operations.
 
 :::image type="content" source="media/aggregations-automatic/auto-aggregations-refresh.png" border="false" alt-text="Refresh only operations":::
 
-Regularly scheduled refreshes throughout the day (or week) ensure aggregations data in the cache are more up to date with data at the backend data source. Through dataset settings, you can schedule up to 48 refreshes per day to ensure report queries that hit the aggregations cache are getting results that are most in-sync with the backend data source.
+Regularly scheduled refreshes throughout the day (or week) ensure aggregations data in the cache are more up to date with data at the backend data source. Through dataset settings, you can schedule up to 48 refreshes per day to ensure report queries that are returned by the aggregations cache are getting results based on the most recent refreshed data from the backend data source.
 
 > [!CAUTION]
 > Training and refresh operations are process and resource intensive for both the Power BI service and the data source systems. Increasing the percentage of queries that use aggregations means more aggregations must be queried and calculated from data sources during training and refresh operations, increasing the probability of excessive use of system resources and potentially causing timeouts. To learn more, see [Fine tuning](aggregations-auto-configure.md#fine-tuning).
