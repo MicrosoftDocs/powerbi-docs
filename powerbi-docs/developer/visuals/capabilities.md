@@ -24,9 +24,11 @@ The *capabilities.json* file has the following format:
     "supportsHighlight": true|false,
     "advancedEditModeSupport": 0|1|2,
     "sorting": { ... }
+    ...
 }
-
 ```
+
+When you create a new visual, the default *capabilities.json* file includes `dataRoles`, `objects`, and `dataViewMapping`. These are the objects needed for data-binding. You can add as many other objects to this file as you need.
 
 The root objects of a visual's capabilities file are:  
 
@@ -35,19 +37,19 @@ The root objects of a visual's capabilities file are:
 * [objects](#objects-define-property-pane-options)
 * [tooltips](add-tooltips.md#add-tooltips-support-to-the-report-page)
 * [supportsHighlight](#supportshighlight-how-to-handle-partial-highlighting)
-* [sorting](#sorting-data-sorting-options-for-your-visual)
+* [sorting](sort-options.md)
 * [drilldown](drill-down-support.md)
 * suppressDefaultTitle
 * [supportsKeyboardFocus](supportskeyboardfocus-feature.md)
 * [supportsHighlight](highlight.md#highlight-data-points-with-categorical-data-view-mapping)
 * supportsSynchronizingFilterState
-* [advancedEditModeSupport](#advancededitmodesupport-how-to-handle-advanced-edit-mode)
+* [advancedEditModeSupport](advanced-edit-mode.md)
 * [supportsLandingPage](landing-page.md#creating-a-landing-page)
 * [supportsEmptyDataView](landing-page.md#creating-a-landing-page)
 * [supportsMultiVisualSelection](supportsmultivisualselection-feature.md)
 * subtotals
 
-You can find all the objects and the parameters they take in the *capabilities.json* [schema](https://github.com/microsoft/powerbi-visuals-api/blob/master/schema.capabilities.json#L4-L65)
+You can find all these objects and their parameters in the [*capabilities.json* schema](https://github.com/microsoft/powerbi-visuals-api/blob/master/schema.capabilities.json#L4-L65)
 
 ## Define the data fields that your visual expects: dataroles
 
@@ -163,38 +165,6 @@ Objects describe customizable properties that are associated with the visual. Th
 ```
 
 For more information, see [Objects and properties of Power BI visuals](objects-properties.md).
-
-## supportsHighlight: how to handle partial highlighting
-
-By default, the `supportsHighlight` value is set to `false`. This means that when something on a page is selected your values are automatically filtered accordingly. This automatic filtering updates your visual to display only the selected value. If you want to display the full data but highlight only the selected items, you need to set `supportsHighlight` to `true` in your *capabilities.json* file.
-
-```json
-"supportsHighlight": true
-```
-
-For more information, see [Highlight data points in Power BI visuals](highlight.md).
-
-## advancedEditModeSupport: how to handle advanced edit mode
-
-By default, a visual doesn't support advanced edit mode:
-
-```json
-"advancedEditModeSupport": 0
-```
-
- Changing the advanced edit mode support can enable certain advanced UI controls. The `advancedEditModeSupport` object can be set to one of the following values:
-
-* 0 - NotSupported
-* 1 - SupportedNoAction
-* 2 - SupportedInFocus
-
-For more information, see [Advanced edit mode in Power BI visuals](advanced-edit-mode.md).
-
-## sorting: data sorting options for your visual
-
-A visual can define its sorting behavior through its capabilities. By default, a visual doesn't support modifying its sorting order, unless stated otherwise in the *capabilities.json* file.
-
-For more information, see [Sorting options for Power BI visuals](sort-options.md).
 
 ## Next steps
 
