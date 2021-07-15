@@ -172,26 +172,39 @@ After creating a capacity and assigning your workspace to it, you need to enable
 
 2. Select the capacity that has the workspace you want to upload the paginated report to.
 
-    ![Select capacity](media/embed-paginated-reports-organization/select-capacity.png)
+    ![Select capacity](media/embed-paginated-reports/select-capacity.png)
 
 3. Expand **Workloads**.
 
-    ![Expand workloads](media/embed-paginated-reports-organization/expand-workloads.png)
+    ![Expand workloads](media/embed-paginated-reports/expand-workloads.png)
 
 4. Activate the paginated reports workload.
 
-    ![Paginated reports workload](media/embed-paginated-reports-organization/paginated-reports-workload.png)
+    ![Paginated reports workload](media/embed-paginated-reports/paginated-reports-workload.png)
 
 ## Step 6 - Embed content using the sample application
 
+# [Embed for your customers](#tab/customers)
 
+Follow the instructions in the [embed content for your customers](embed-sample-for-customers.md) tutorial.
+
+Skip [Step 4 - Create and publish a Power BI report](embed-sample-for-customers.md#step-4---create-and-publish-a-power-bi-report) and use the paginated report you uploaded to the Power BI service, instead of the sample report suggested in the tutorial.
+
+# [Embed for your organization](#tab/organization)
+
+Follow the instructions in the [embed content for your organization](embed-sample-for-your-organization.md) tutorial.
+
+Skip [Step 3 - Create and publish a Power BI report](embed-sample-for-your-organization#step-3---create-and-publish-a-power-bi-report) and use the paginated report you uploaded to the Power BI service, instead of the sample report suggested in the tutorial.
+
+---
 
 ## Next steps
 
 > [!div class="nextstepaction"]
->[Embed content for your customers](embed-sample-for-customers.md)
+>[Tutorial: Embed a Power BI report in an application for your organization](embed-organization-app.md)
 
 > [!div class="nextstepaction"]
->[Embed content for your organization](embed-sample-for-your-organization.md)
+>[Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+> [!div class="nextstepaction"]
+>[Considerations when generating an embed token](generate-embed-token.md)
