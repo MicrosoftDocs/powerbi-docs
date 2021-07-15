@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 08/08/2020
+ms.date: 07/14/2021
 LocalizationGroup: Gateways 
 ---
 
@@ -42,6 +42,7 @@ When this option is enabled, you see your custom connectors as available data so
 * Make sure the folder you create is accessible to the background gateway service. Typically, folders under your user’s Windows folder or system folders won’t be accessible. The on-premises data gateway app shows a message if the folder isn't accessible. This instruction doesn't apply for the on-premises data gateway (personal mode).
 * For custom connectors to work with the on-premises data gateway, they need to implement a “TestConnection” section in the custom connector’s code. This section isn't required when you use custom connectors with Power BI Desktop. For this reason, you can have a connector that works with Power BI Desktop, but not with the gateway. For more information on how to implement a TestConnection section, see [this documentation](https://github.com/Microsoft/DataConnectors/blob/master/docs/m-extensions.md#implementing-testconnection-for-gateway-support).
 * If your custom connector is on a network drive, include the fully qualified path on the on-premises data gateway app.
+* You can only use one custom connector data source when working in DirectQuery mode; multiple custom connector data sources will not work when using DirectQuery.
 
 ## Next steps
 
