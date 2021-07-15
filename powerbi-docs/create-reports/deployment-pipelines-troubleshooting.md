@@ -199,7 +199,7 @@ To use this scrip, you'll need to provide a *workspace name* and and a *user pri
 
 ### Why can't I see a paginated report?
 
-To view a paginated report in the pipeline, you need to have a [paginated reports workload](./../developer/embedded/embed-paginated-reports-organization.md#enable-paginated-reports-workload) enabled on your capacity.
+To view a paginated report in the pipeline, you need to have a [paginated reports workload](./../developer/embedded/embed-paginated-reports.md#step-5---enable-paginated-reports-workload) enabled on your capacity.
 
 ### Why can't I deploy a paginated report?
 
@@ -207,7 +207,7 @@ To deploy a paginated report, both of these conditions must be met:
 
 * You need to be a workspace member in the workspace you're deploying from (the source stage workspace). If you're not a workspace member in the source stage, you'll not be able to deploy the paginated report.
 
-* In your target stage capacity, you need to [enable paginated reports workload](./../developer/embedded/embed-paginated-reports-organization.md#enable-paginated-reports-workload).
+* In your target stage capacity, you need to [enable paginated reports workload](./../developer/embedded/embed-paginated-reports.md#step-5---enable-paginated-reports-workload).
 
 ### Who's the owner of a deployed paginated report?
 

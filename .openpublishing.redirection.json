@@ -1572,7 +1572,7 @@
         },
         {
             "source_path": "powerbi-docs/developer/embed-paginated-reports-customers.md",
-            "redirect_url": "/power-bi/developer/embedded/embed-paginated-reports-customers",
+            "redirect_url": "/power-bi/developer/embedded/embed-paginated-reports",
             "redirect_document_id": false
         },
         {
@@ -3924,6 +3924,16 @@
             "source_path": "powerbi-docs/developer/embedded/migrate-code-snippets.md",
             "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
             "redirect_document_id": false
-        }        
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/embed-paginated-reports-organization.md",
+            "redirect_url": "/power-bi/developer/embedded/embed-paginated-reports",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/embed-paginated-reports-customers.md",
+            "redirect_url": "/power-bi/developer/embedded/embed-paginated-reports",
+            "redirect_document_id": false
+        }                                   
     ]           
 }

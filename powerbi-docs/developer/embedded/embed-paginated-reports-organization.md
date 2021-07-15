@@ -211,6 +211,6 @@ In this tutorial, you learned how to embed Power BI paginated reports into an ap
 >[Embed Power BI content for your customers](embed-sample-for-customers.md)
 
 > [!div class="nextstepaction"]
->[Embed Power BI paginated reports for your customers](embed-paginated-reports-customers.md)
+>[Embed Power BI paginated reports](embed-paginated-reports.md)
 
 If you have more questions, [try asking the Power BI Community](http://community.powerbi.com/).
