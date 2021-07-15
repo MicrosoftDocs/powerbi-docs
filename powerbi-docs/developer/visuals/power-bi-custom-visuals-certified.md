@@ -181,7 +181,7 @@ Your Power BI visual will be available to download from AppSource when this proc
 >[Frequently asked questions about certified visuals](power-bi-custom-visuals-faq.yml#certified-power-bi-visuals).
 
 >[!div class="nextstepaction"]
->[Visuals in Power BI](power-bi-custom-visuals.md)
+>[Develop your own visuals in Power BI](develop-power-bi-visuals.md)
 
 >[!div class="nextstepaction"]
 >[Publish Power BI visuals to Microsoft AppSource](office-store.md)

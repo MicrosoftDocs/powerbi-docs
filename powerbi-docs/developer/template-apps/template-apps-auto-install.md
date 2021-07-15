@@ -68,7 +68,7 @@ The main steps for automating the configuration of a template app installation, 
 
 ## Step 1: Create a Power BI client object
 
-Using Power BI REST APIs requires you to get an *access token* for your [service principal](../embedded/embed-service-principal.md) from Azure AD. You're required to get an [Azure AD access token](../embedded/get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) for your Power BI application before you make calls to the [Power BI REST APIs](/rest/api/power-bi/).
+Using Power BI REST APIs requires you to get an *access token* for your [service principal](../embedded/embed-service-principal.md) from Azure AD. You're required to get an [Azure AD access token](../embedded/generate-embed-token.md) for your Power BI application before you make calls to the [Power BI REST APIs](/rest/api/power-bi/).
 To create the Power BI client with your access token, you need to create your Power BI client object, which allows you to interact with the [Power BI REST APIs](/rest/api/power-bi/). You create the Power BI client object by wrapping the **AccessToken** with a **Microsoft.Rest.TokenCredentials** object.
 
 ```csharp
