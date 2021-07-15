@@ -41,7 +41,6 @@ The root objects of a visual's capabilities file are:
 * [drilldown](drill-down-support.md)
 * suppressDefaultTitle
 * [supportsKeyboardFocus](supportskeyboardfocus-feature.md)
-* [supportsHighlight](highlight.md#highlight-data-points-with-categorical-data-view-mapping)
 * supportsSynchronizingFilterState
 * [advancedEditModeSupport](advanced-edit-mode.md)
 * [supportsLandingPage](landing-page.md#creating-a-landing-page)
