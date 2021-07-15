@@ -203,7 +203,7 @@ Sometimes an organization develops its own Power BI visual and distributes it in
 >[Administering Power BI in the admin portal](service-admin-portal.md)
 
 >[!div class="nextstepaction"]
->[Visuals in Power BI](../developer/visuals/power-bi-custom-visuals.md)
+>[Where to find Power BI visuals](../developer/visuals/power-bi-custom-visuals.md)
 
 >[!div class="nextstepaction"]
 >[Organizational visuals in Power BI](../developer/visuals/power-bi-custom-visuals-organization.md)
