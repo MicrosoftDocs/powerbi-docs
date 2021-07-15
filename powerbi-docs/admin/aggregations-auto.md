@@ -88,9 +88,9 @@ As described above, after the training operation completes as part of the first 
 Regularly scheduled refreshes throughout the day (or week) ensure aggregations data in the cache are more up to date with data at the backend data source. Through dataset settings, you can schedule up to 48 refreshes per day to ensure report queries that hit the aggregations cache are getting results that are most in-sync with the backend data source.
 
 > [!CAUTION]
-> Scheduled refreshes configured through dataset settings have a time limit of 5 hours. However, training and refresh operations are process and resource intensive for both the Power BI service and the data source systems. Increasing the percentage of queries that use aggregations setting means more aggregations must be queried and calculated from data sources during training and refresh operations, increasing the probability of excessive use of system resources and potentially causing timeouts. To learn more, see [Fine tuning](aggregations-auto-configure.md#fine-tuning).
+> Training and refresh operations are process and resource intensive for both the Power BI service and the data source systems. Increasing the percentage of queries that use aggregations setting means more aggregations must be queried and calculated from data sources during training and refresh operations, increasing the probability of excessive use of system resources and potentially causing timeouts. To learn more, see [Fine tuning](aggregations-auto-configure.md#fine-tuning).
 
-#### Cache refresh history
+#### Refresh history
 
 Each refresh operation is recorded in the dataset cache Refresh history. Important information about each refresh is shown, including the amount of memory aggregations in the cache are consuming for the configured query percentage. To view refresh history, in the dataset Settings page, click on **Refresh history**. If you want to drill down a little further, click **Show** details.
 
@@ -98,7 +98,7 @@ Each refresh operation is recorded in the dataset cache Refresh history. Importa
 
 By regularly checking refresh history, you can ensure your scheduled refresh operations are completing within an acceptable period. Make sure refresh operations are successfully completing before the next scheduled refresh begins.
 
-### Training and refresh failures
+#### Training and refresh failures
 
 While Power BI performs training and refresh operations as part of the first scheduled dataset refresh for the day or week frequency you choose, these operations are implemented as separate transactions. If a training operation fails, Power BI might still be able to proceed refreshing the aggregations (and regular tables in a composite model) using the previous training state. In this case, the refresh history will indicate the refresh succeeded but training failed. Query performance might be less optimized but the achieved performance level should still be far superior than a pure DirectQuery dataset without any aggregations.
 
