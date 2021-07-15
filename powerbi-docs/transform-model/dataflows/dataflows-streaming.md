@@ -82,7 +82,7 @@ A streaming dataflow is built on three main components: **streaming inputs, tran
 
 ## Inputs
 
-To add a streaming input, click on icon in the ribbon and provide the info needed in the side pane to set it up. As of July 2021, the streaming dataflows preview supports  [**Azure Event Hub**](/azure/event-hubs/). and [**Azure IoT Hub**](/azure/iot-hub/) as inputs.
+To add a streaming input, click on icon in the ribbon and provide the info needed in the side pane to set it up. As of July 2021, the streaming dataflows preview supports  [**Azure Event Hub**](/azure/event-hubs/) and [**Azure IoT Hub**](/azure/iot-hub/) as inputs.
 
 Azure Event Hubs and Azure IoT Hubs are streaming and big data services built on a common architecture to facilitate the fast and scalable ingestion and consumption of events. IoT Hubs in particular are tailored as a central message hub for communications in both directions between an IoT application and its attached devices.
 
@@ -457,6 +457,7 @@ Once your report is ready and you have added all the content you want to share, 
 * Capacities smaller than A3 create or run use streaming dataflows.
 * If dataflows or the enhanced calculation engine is not enabled in a tenant, users will not be able to create or run streaming dataflows.
 * Workspaces connected to a storage account are not supported.
+* Each streaming dataflow can provide up to 1 MB / second of throughput.
 
 ### Licensing
 
