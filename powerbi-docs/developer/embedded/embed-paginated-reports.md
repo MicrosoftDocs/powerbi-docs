@@ -30,7 +30,7 @@ To get started, you're required to have:
 
 * Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup
 
-* A [capacity](#step-3---create-a-capacity), with [paginated reports](../../admin/service-admin-premium-workloads.md#paginated-reports) workload enabled
+* A [capacity](#step-3---create-a-capacity), with [paginated reports workload](../../admin/service-admin-premium-workloads.md#paginated-reports) enabled
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
@@ -61,7 +61,7 @@ To embed a paginated report using the sample app, follow these steps:
 
 1. [Create a workspace](#step-1---create-a-workspace).
 
-2. [Create and upload your paginated reports](#step-2---create-and-upload-your-paginated-reports).
+2. [Create and upload your paginated report](#step-2---create-and-upload-your-paginated-report).
 
 3. [Create a capacity](#step-3---create-a-capacity).
 
@@ -75,9 +75,9 @@ To embed a paginated report using the sample app, follow these steps:
 
 # [Embed for your customers](#tab/customers)
 
-As you're using a [service principal](embed-service-principal.md) to sign into your application, you'll need to create a [new workspaces](../../collaborate-share/service-create-the-new-workspaces.md).
+As you're using a [service principal](embed-service-principal.md) to sign into your application, you'll need to create a [new workspace](../../collaborate-share/service-create-the-new-workspaces.md).
 
-As a *service principal*, you must also be an admin or member of the Power BI workspaces involved with your application.
+Your *service principal* must also be an admin or member of the Power BI workspaces.
 
 # [Embed for your organization](#tab/organization)
 
@@ -85,19 +85,19 @@ In Power BI service, create a workspace for your paginated report.
 
 ---
 
-## Step 2 - Create and upload your paginated reports
+## Step 2 - Create and upload your paginated report
 
 You can create your paginated report using [Power BI Report Builder](../../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder), and then [upload the report to the service](../../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service).
 
 >[!NOTE]
->The end user uploading the paginated report must have a Power BI Pro or Premium Per User (PPU) license to publish to a workspace.
+>The user uploading the paginated report must have a Power BI Pro or Premium Per User (PPU) license to publish to a workspace.
 
 ## Step 3 - Create a capacity
 
 # [Embed for your customers](#tab/customers)
 
 Before you import or upload a paginated report to embed, the workspace containing the report must be assigned to a capacity. There are two types of capacity you can choose from:
-* **Power BI Premium** - For embedding a paginated report, an *EM* or *P* SKU is required. When embedding Power BI content, this solution is referred to as *Power BI embedding*. For more information regarding this subscription, see [What is Power BI Premium?](../../admin/service-premium-what-is.md)
+* **Power BI Premium** - For embedding a paginated report, an *EM* or *P* SKU is required. For more information regarding this subscription, see [What is Power BI Premium?](../../admin/service-premium-what-is.md)
 * **Azure Power BI Embedded** - You can purchase a capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 
     >[!NOTE]
@@ -113,7 +113,6 @@ The table below describes the resources and limits of each SKU. To determine whi
 | P1/A4 | 8 | 4 | 4 | 25 |
 | P2/A5 | 16 | 8 | 8 | 50 |
 | P3/A6 | 32 | 16 | 16 | 100 |
-| | | | | |
 
 # [Embed for your organization](#tab/organization)
 
@@ -123,15 +122,14 @@ The following table lists the Power BI Premium SKUs that can be used to create a
 
 | Capacity node | Total vCores | Back-end vCores | Front-end vCores | DirectQuery/live connection limits (per sec) |
 | --- | --- | --- | --- | --- | --- |
-| EM1 with [Embedded Gen2](power-bi-embedded-generation-2.md) | 1 | 0.5 | 0.5 | 3.75 per second |
-| EM2 with [Embedded Gen2](power-bi-embedded-generation-2.md) | 2 | 1 | 1 | 7.5 |
-| EM3 with [Embedded Gen2](power-bi-embedded-generation-2.md) | 4 | 2 | 2 | 15 |
+| EM1 with [Premium Gen2](../../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview) | 1 | 0.5 | 0.5 | 3.75 per second |
+| EM2 with [Premium Gen2](../../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview) | 2 | 1 | 1 | 7.5 |
+| EM3 with [Premium Gen2](../../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview) | 4 | 2 | 2 | 15 |
 | P1 |8 vCores |4 vCores, 25 GB of RAM |4 vCores |30 |
 | P2 |16 vCores |8 vCores, 50 GB of RAM |8 vCores |60 |
 | P3 |32 vCores |16 vCores, 100 GB of RAM |16 vCores |120 |
 | P4 |64 vCores |32 vCores, 200 GB of RAM |32 vCores |240 |
 | P5 |128 vCores |64 vCores, 400 GB of RAM |64 vCores |480 |
-|||||
 
 ---
 
@@ -141,10 +139,10 @@ The following table lists the Power BI Premium SKUs that can be used to create a
 
 Once you create a capacity, you can assign your app workspace to that capacity.
 
-To assign a capacity to a workspace using [service principal](embed-service-principal.md), use the [Power BI REST API](/rest/api/power-bi/capacities/groups_assigntocapacity). When you are using the Power BI REST APIs, make sure to use the [service principal object ID](embed-service-principal.md).
+To assign a capacity to a workspace using a [service principal](embed-service-principal.md), use the [Power BI REST API](/rest/api/power-bi/capacities/groups_assigntocapacity). When you are using the Power BI REST APIs, make sure to use the [service principal object ID](embed-service-principal.md).
 
 >[!NOTE]
->You can import paginated reports into the new workspaces using the [Power BI REST APIs](/rest/api/power-bi/imports/postimportingroup).
+>You can also import paginated reports into a *new workspace* using the [Power BI REST APIs](/rest/api/power-bi/imports/postimportingroup).
 
 # [Embed for your organization](#tab/organization)
 
@@ -170,7 +168,7 @@ After creating a capacity and assigning your workspace to it, you need to enable
 
 1. Sign into [Power BI > Admin portal > Capacity settings](https://app.powerbi.com/admin-portal/capacities).
 
-2. Select the capacity that has the workspace you want to upload the paginated report to.
+2. Select the capacity that has the workspace with your paginated report.
 
     ![Select capacity](media/embed-paginated-reports/select-capacity.png)
 
@@ -188,13 +186,13 @@ After creating a capacity and assigning your workspace to it, you need to enable
 
 Follow the instructions in the [embed content for your customers](embed-sample-for-customers.md) tutorial.
 
-Skip [Step 4 - Create and publish a Power BI report](embed-sample-for-customers.md#step-4---create-and-publish-a-power-bi-report) and use the paginated report you uploaded to the Power BI service, instead of the sample report suggested in the tutorial.
+Skip [Step 4 - Create and publish a Power BI report](embed-sample-for-customers.md#step-4---create-and-publish-a-power-bi-report) and use the paginated report you uploaded, instead of the sample report suggested in the tutorial.
 
 # [Embed for your organization](#tab/organization)
 
 Follow the instructions in the [embed content for your organization](embed-sample-for-your-organization.md) tutorial.
 
-Skip [Step 3 - Create and publish a Power BI report](embed-sample-for-your-organization.md#step-3---create-and-publish-a-power-bi-report) and use the paginated report you uploaded to the Power BI service, instead of the sample report suggested in the tutorial.
+Skip [Step 3 - Create and publish a Power BI report](embed-sample-for-your-organization.md#step-3---create-and-publish-a-power-bi-report) and use the paginated report you uploaded, instead of the sample report suggested in the tutorial.
 
 ---
 
