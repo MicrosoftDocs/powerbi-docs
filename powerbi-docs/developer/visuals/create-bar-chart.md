@@ -47,7 +47,7 @@ Creating a bar chart visual involves the following steps:
 
 The purpose of this tutorial is to help you understand how a visual is structured and written. You can follow these instructions to create a bar code visual from scratch, or you can [clone the source code repository](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/tree/barChartTutorial) and use it to follow along without creating your own visual.
 
-## [Create a new visual](#tab/Create new visual)
+### [Create a new visual](#tab/Create new visual)
 
 1. Open **PowerShell** and navigate to the folder you want to create your project in.
 
@@ -73,7 +73,7 @@ The purpose of this tutorial is to help you understand how a visual is structure
 
 4. The [*package.json*](visual-project-structure.md#packagejson) file contains a list of project dependencies. Replace your *project.json* file with [this one](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/package.json).
 
-## [Clone source code](#tab/Clone sourcecode) 
+### [Clone source code](#tab/Clone sourcecode) 
 
 ```PowerShell
 pbiviz new BarChart
