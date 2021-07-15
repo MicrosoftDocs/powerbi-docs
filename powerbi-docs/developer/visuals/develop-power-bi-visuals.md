@@ -18,7 +18,7 @@ Power BI comes with [default](power-bi-custom-visuals.md#default-power-bi-visual
 
 If none of these visuals meet your specific needs, you can create your own custom Power BI visual to be used by you, your organization, or the entire Power BI community.
 
-## Custom Power BI visuals
+## Creating Power BI visuals
 
 Power BI visuals are packages that include code for rendering the data served to them. Anyone can create a custom visual and package it as a single `.pbiviz` file, that can be imported into a Power BI report.
 
