@@ -30,7 +30,7 @@ To get started, you're required to have:
 
 * Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup
 
-* At least a [capacity](#create-a-capacity), with [paginated reports](../../admin/service-admin-premium-workloads.md#paginated-reports) workload enabled
+* A [capacity](#create-a-capacity), with [paginated reports](../../admin/service-admin-premium-workloads.md#paginated-reports) workload enabled
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
@@ -55,254 +55,138 @@ If you're not signed up for **Power BI Pro**, [sign up for a free trial](https:/
 
 ---
 
-* A [service principal (app-only token)](embed-service-principal.md)
-* A [Microsoft Azure](https://azure.microsoft.com/) subscription
-* Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup
-* At least an A4 or a P1 [capacity](#create-a-capacity), with [paginated reports](../../admin/service-admin-premium-workloads.md#paginated-reports) workload enabled
+## Method
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+To embed a paginated report using the sample app, follow these steps:
 
-> [!IMPORTANT]
-> * You must use a **service principal**. Master user is not supported.
->* [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) is not supported. You can use PPU to experiment with the solution, but you'll not be able to [move to production](move-to-production.md).
-> * Datasources that require single sign-on (SSO), are not supported. For a list of supported datasets and their authentication methods, see [Supported data sources for Power BI paginated reports](../../paginated-reports/paginated-reports-data-sources.md). 
-> * Power BI dataset is not supported as a [datasource](../../connect-data/service-get-data.md).
+1. [Create a workspace](#step-1---create-a-workspace).
 
-## Set up your Power BI environment
+2. [Create and upload your paginated reports](#step-2---create-and-upload-your-paginated-reports).
 
-Embedding a paginated report requires assigning a workspace to a capacity, and uploading the report to the workspace.
+3. [Create a capacity](#step-3---create-a-capacity).
 
-### Create an app workspace
+4. [Assign a workspace to a capacity](#step-4---assign-a-workspace-to-a-capacity).
 
-As you're using a [service principal](embed-service-principal.md) to sign into your application, you're required to use the [new workspaces](../../collaborate-share/service-create-the-new-workspaces.md). As a *service principal*, you must also be an admin or member of the app workspaces involved with your application.
+5. [Enable paginated reports workload](#step-5---enable-paginated-reports-workload).
 
-### Create a capacity
+6. [Embed content using the sample application](#step-6---embed-content-using-the-sample-application).
 
-Before you import or upload a paginated report to embed, the workspace containing the report must be assigned to at least an A4 or P1 capacity. There are two types of capacity you can choose from:
-* **Power BI Premium** - For embedding a paginated report, a *P* SKU capacity is required. When embedding Power BI content, this solution is referred to as *Power BI embedding*. For more information regarding this subscription, see [What is Power BI Premium?](../../admin/service-premium-what-is.md)
-* **Azure Power BI Embedded** - You can purchase a capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For embedding paginated reports you need at least an *A4* subscription. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
+## Step 1 - Create a workspace
+
+# [Embed for your customers](#tab/customers)
+
+As you're using a [service principal](embed-service-principal.md) to sign into your application, you'll need to create a [new workspaces](../../collaborate-share/service-create-the-new-workspaces.md).
+
+As a *service principal*, you must also be an admin or member of the Power BI workspaces involved with your application.
+
+# [Embed for your organization](#tab/organization)
+
+In Power BI service, create a workspace for your paginated report.
+
+---
+
+## Step 2 - Create and upload your paginated reports
+
+You can create your paginated report using [Power BI Report Builder](../../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder), and then [upload the report to the service](../../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service).
+
+>[!NOTE]
+>The end user uploading the paginated report must have a Power BI Pro or Premium Per User (PPU) license to publish to a workspace.
+
+## Step 3 - Create a capacity
+
+# [Embed for your customers](#tab/customers)
+
+Before you import or upload a paginated report to embed, the workspace containing the report must be assigned to a capacity. There are two types of capacity you can choose from:
+* **Power BI Premium** - For embedding a paginated report, an *EM* or *P* SKU is required. When embedding Power BI content, this solution is referred to as *Power BI embedding*. For more information regarding this subscription, see [What is Power BI Premium?](../../admin/service-premium-what-is.md)
+* **Azure Power BI Embedded** - You can purchase a capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 
     >[!NOTE]
     >Power BI Embedded recently released a new version, called **Embedded Gen2**. Embedded Gen2 will simplify the management of embedded capacities, and improve the Power BI Embedded experience. For more information, see [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md).
 
 The table below describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](./embedded-faq.yml#which-solution-should-i-choose-) table.
 
-| Capacity Nodes | Total v-cores | Backend v-cores | RAM (GB) | Frontend v-cores | 
+| Capacity Nodes | Total v-cores | Backend v-cores | Frontend v-cores | RAM (GB) | 
 | --- | --- | --- | --- | --- |
-| A1 with [Embedded Gen2](power-bi-embedded-generation-2.md) | 1 | 0.5 | 2.5 | 0.5 |
-| A2 with [Embedded Gen2](power-bi-embedded-generation-2.md) | 2 | 1 | 5 | 1 |
-| A3 with [Embedded Gen2](power-bi-embedded-generation-2.md) | 4 | 2 | 10 | 2 |
-| P1/A4 | 8 | 4 | 25 | 4 |
-| P2/A5 | 16 | 8 | 50 | 8 |
-| P3/A6 | 32 | 16 | 100 | 16 |
+| EM1/A1 with [Embedded Gen2](power-bi-embedded-generation-2.md) | 1 | 0.5 | 0.5 | 2.5 |
+| EM2/A2 with [Embedded Gen2](power-bi-embedded-generation-2.md) | 2 | 1 | 1 | 5 |
+| EM3/A3 with [Embedded Gen2](power-bi-embedded-generation-2.md) | 4 | 2 | 2 | 10 |
+| P1/A4 | 8 | 4 | 4 | 25 |
+| P2/A5 | 16 | 8 | 8 | 50 |
+| P3/A6 | 32 | 16 | 16 | 100 |
 | | | | | |
 
-### Assign an app workspace to a capacity
+# [Embed for your organization](#tab/organization)
+
+By creating a capacity, you can take advantage of having a resource for the content in your app workspace. For paginated reports, you must back your app workspace with an *EM* or a *P* capacity. You can create a capacity by using [Power BI Premium](../../admin/service-premium-what-is.md).
+
+The following table lists the Power BI Premium SKUs that can be used to create a capacity for paginated reports in [Microsoft Office 365](../../admin/service-admin-premium-purchase.md):
+
+| Capacity node | Total vCores | Back-end vCores | Front-end vCores | DirectQuery/live connection limits (per sec) |
+| --- | --- | --- | --- | --- | --- |
+| EM1 with [Embedded Gen2](power-bi-embedded-generation-2.md) | 1 | 0.5 | 0.5 | 3.75 per second |
+| EM2 with [Embedded Gen2](power-bi-embedded-generation-2.md) | 2 | 1 | 1 | 7.5 |
+| EM3 with [Embedded Gen2](power-bi-embedded-generation-2.md) | 4 | 2 | 2 | 15 |
+| P1 |8 vCores |4 vCores, 25 GB of RAM |4 vCores |30 |
+| P2 |16 vCores |8 vCores, 50 GB of RAM |8 vCores |60 |
+| P3 |32 vCores |16 vCores, 100 GB of RAM |16 vCores |120 |
+| P4 |64 vCores |32 vCores, 200 GB of RAM |32 vCores |240 |
+| P5 |128 vCores |64 vCores, 400 GB of RAM |64 vCores |480 |
+|||||
+
+---
+
+## Step 4 - Assign a workspace to a capacity
+
+# [Embed for your customers](#tab/customers)
 
 Once you create a capacity, you can assign your app workspace to that capacity.
 
 To assign a capacity to a workspace using [service principal](embed-service-principal.md), use the [Power BI REST API](/rest/api/power-bi/capacities/groups_assigntocapacity). When you are using the Power BI REST APIs, make sure to use the [service principal object ID](embed-service-principal.md).
 
-### Create and upload your paginated reports
+>[!NOTE]
+>You can import paginated reports into the new workspaces using the [Power BI REST APIs](/rest/api/power-bi/imports/postimportingroup).
 
-You can create your paginated report using [Power BI Report Builder](../../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder), and then [upload the report to the service](../../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service).
+# [Embed for your organization](#tab/organization)
 
-You can import paginated reports into the new workspaces using the [Power BI REST APIs](/rest/api/power-bi/imports/postimportingroup).
+After you create a capacity, you need to assign your workspace to that capacity. To complete this process, follow these steps:
 
-## Embed content using the sample application
+1. Within the Power BI service, expand workspaces and select **More** for the workspace you're using for embedding your content. Then select **Workspace settings**.
 
-This sample is deliberately kept simple for demonstration purposes. It's up to you or your developers to protect the application secret.
+    ![Edit a workspace](media/embed-paginated-reports/workspace-settings.png)
 
-Follow the steps below to start embedding your content using the sample application.
+2. Select **Premium** and enable **Capacity**. Select the capacity you created. Then select **Save**.
 
-1. Download [Visual Studio](https://www.visualstudio.com/) (version 2013 or later). Make sure to download the latest [NuGet package](https://www.nuget.org/profiles/powerbi).
+    ![Assign a capacity](media/embed-paginated-reports/capacity.png)
 
-2. Download the [App Owns Data sample](https://github.com/Microsoft/PowerBI-Developer-Samples) from GitHub to get started.
+3. After you select **Save**, you should see a diamond next to the app workspace name.
 
-    ![App Owns Data application sample](media/embed-sample-for-customers/embed-sample-for-customers-026.png)
+    ![App workspace tied to a capacity](media/embed-paginated-reports/diamond.png)
 
-3. Open the **Web.config** file in the sample application. There are fields you need to fill in to run the application. Choose **ServicePrincipal** for the **AuthenticationType**.
+---
 
-    Fill in the following fields:
-    * [applicationId](#application-id)
-    * [workspaceId](#workspace-id)
-    * [reportId](#report-id)
-    * [applicationsecret](#application-secret)
-    * [tenant](#tenant)
+## Step 5 - Enable paginated reports workload
 
-    > [!Note]
-    > The default **AuthenticationType** in this sample is MasterUser. Make sure you change it to **ServicePrincipal**. 
+After creating a capacity and assigning your workspace to it, you need to enable the paginated report workload on your capacity.
 
+1. Sign into [Power BI > Admin portal > Capacity settings](https://app.powerbi.com/admin-portal/capacities).
 
-    ![Web Config file](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
+2. Select the capacity that has the workspace you want to upload the paginated report to.
 
-### Application ID
+    ![Select capacity](media/embed-paginated-reports-organization/select-capacity.png)
 
-Fill in the **applicationId** information with the **Application ID** from **Azure**. The **applicationId** is used by the application to identify itself to the users from which you're requesting permissions.
+3. Expand **Workloads**.
 
-To get the **applicationId**, follow these steps:
+    ![Expand workloads](media/embed-paginated-reports-organization/expand-workloads.png)
 
-1. Sign into the [Azure portal](https://portal.azure.com).
+4. Activate the paginated reports workload.
 
-2. In the left-hand nav pane, select **All Services**, and search for **App Registrations**.
+    ![Paginated reports workload](media/embed-paginated-reports-organization/paginated-reports-workload.png)
 
-    ![App registration search](media/embed-paginated-reports-for-customers/app-registration.png)
+## Step 6 - Embed content using the sample application
 
-3. Select the application that needs the **applicationId**.
 
-    ![Screenshot shows the display names of applications with one selected that needs the application I D.](media/embed-paginated-reports-for-customers/display-name.png)
-
-4. There's an **Application ID** that is listed as a GUID. Use this **Application ID** as the **applicationId** for the application.
-
-    ![applicationId](media/embed-paginated-reports-for-customers/application-id.png)
-
-### Workspace ID
-
-Fill in the **workspaceId** information with the app workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using PowerShell.
-
-URL <br>
-
-![workspaceId](media/embed-paginated-reports-for-customers/groups-red-url.png)
-
-PowerShell <br>
-
-```powershell
-Get-PowerBIworkspace -name "Paginated Report Embed"
-```
-
-   ![workspaceId from PowerShell](media/embed-paginated-reports-for-customers/powershell.png)
-
-### Report ID
-
-Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using PowerShell.
-
-URL<br>
-
-![reportId](media/embed-paginated-reports-for-customers/rdl-report-url.png)
-
-PowerShell <br>
-
-```powershell
-Get-PowerBIworkspace -name "Paginated Report Embed" | Get-PowerBIReport
-```
-
-![reportId from PowerShell](media/embed-paginated-reports-for-customers/powershell-report-id.png)
-
-### Application secret
-
-Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in **Azure**.
-
-To get the **ApplicationSecret**, follow these steps:
-
-1. Sign in to the [Azure portal](https://portal.azure.com).
-
-2. In the left-hand nav pane, select **All services** and search for **App registrations**.
-
-    ![App registration search](media/embed-paginated-reports-for-customers/app-registration.png)
-
-3. Select the application that needs to use the **ApplicationSecret**.
-
-    ![Screenshot shows the display names of applications with one selected that needs the application secret.](media/embed-paginated-reports-for-customers/display-name-2.png)
-
-4. Select **Certificates and secrets** under **Manage**.
-
-5. Select **New client secrets**.
-
-6. Enter a name in the **Description** box and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you aren't able to retrieve the key value. If you lose the key value, create a new one in the Azure portal.
-
-    ![Key value](media/embed-paginated-reports-for-customers/client-secret.png)
-
-### Tenant
-
-Fill in the **tenant** information with your Azure tenant ID. You can get this information from the [Azure AD admin center](/onedrive/find-your-office-365-tenant-id) when signed into the Power BI service or by using PowerShell.
-
-### Run the application
-
-1. Select **Run** in **Visual Studio**.
-
-    ![Run the application](media/embed-sample-for-customers/embed-sample-for-customers-033.png)
-
-2. Then select **Embed Report**.
-
-    ![Select a content](media/embed-sample-for-customers/embed-sample-for-customers-034.png)
-
-3. Now you can view the report in the sample application.
-
-    ![View application](media/embed-paginated-reports-for-customers/embedded-paginated-report.png)
-
-## Embed Power BI paginated reports within your application
-
-Even though the steps to embed your Power BI paginated reports are done with the [Power BI REST APIs](/rest/api/power-bi/), the example codes described in this article are made with the **.NET SDK**.
-
-Embedding Power BI paginated reports for your customers within your application, requires you to have an **Azure AD** [service principal](embed-service-principal.md) and get an [Azure AD access token](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) for your Power BI application, before you make calls to the [Power BI REST APIs](/rest/api/power-bi/).
-
-To create the Power BI Client with your **access token**, create a Power BI client object, which allows you to interact with the [Power BI REST APIs](/rest/api/power-bi/). You create the Power BI client object by wrapping the **AccessToken** with a ***Microsoft.Rest.TokenCredentials*** object.
-
-```csharp
-using Microsoft.IdentityModel.Clients.ActiveDirectory;
-using Microsoft.Rest;
-using Microsoft.PowerBI.Api.V2;
-
-var tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
-
-// Create a Power BI Client object. it's used to call Power BI APIs.
-using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
-{
-    // Your code to embed items.
-}
-```
-
-### Get the paginated report you want to embed
-
-You can use the Power BI client object to retrieve a reference to the item you want to embed.
-
-Here is a code sample of how to retrieve the first report from a given workspace.
-
-*A sample of getting a content item whether it's a report, dashboard, or tile that you want to embed is available within the Services\EmbedService.cs file in the [sample application](https://github.com/Microsoft/PowerBI-Developer-Samples).*
-
-```csharp
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
-
-// You need to provide the workspaceId where the dashboard resides.
-ODataResponseListReport reports = await client.Reports.GetReportsInGroupAsync(workspaceId);
-
-// Get the first report in the group.
-Report report = reports.Value.FirstOrDefault();
-```
-
-### Create the embed token
-
-Generate an embed token, which can be used from the Power BI embedded analytics Client APIs. To create an embedded token for embedding Power BI paginated reports, use the [Reports GenerateTokenInGroup](/rest/api/power-bi/embedtoken/reports_generatetokeningroup) API.
-
-A sample of creating an embed token is available within the *Services\EmbedService.cs* file in the [sample application](https://github.com/Microsoft/PowerBI-Developer-Samples).
-
-```csharp
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
-
-// Generate Embed Token.
-var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
-EmbedToken tokenResponse = client.Reports.GenerateTokenInGroup(workspaceId, report.Id, generateTokenRequestParameters);
-
-// Generate Embed Configuration.
-var embedConfig = new EmbedConfig()
-{
-    EmbedToken = tokenResponse,
-    EmbedUrl = report.EmbedUrl,
-    Id = report.Id
-};
-```
-
-### Load an item using the Client APIs
-
-You can use the Power BI embedded analytics Client APIs to load a paginated report into a div element on your web page.
-
-For a full sample of using the Client API, you can use the [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo). The Playground tool is a quick way to play with different types of Power BI Embedded samples. You can also get more Information about the Power BI embedded analytics Client API by visiting the [Power BI embedded analytics Client APIs](/javascript/api/overview/powerbi/) page.
 
 ## Next steps
-
-In this tutorial, you've learned how to embed Power BI paginated reports into an application for your customers. You can also try to embed Power BI content for your customers or your organization.
 
 > [!div class="nextstepaction"]
 >[Embed content for your customers](embed-sample-for-customers.md)
