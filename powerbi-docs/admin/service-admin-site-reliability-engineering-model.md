@@ -13,8 +13,9 @@ LocalizationGroup: Administration
 
 # Power BI site reliability engineering (SRE) model
 
-
 This document describes the Power BI team's approach to maintaining a reliable, performant, and scalable service for customers. It describes monitoring service health, mitigating incidents, release management and acting on necessary improvements. Other important operational aspects such as security are outside of the scope of this document. This document was created to share knowledge with our customers, who often raise questions regarding site reliability engineering practices. The intention is to offer transparency into how Power BI minimizes service disruption through safe deployment, continuous monitoring, and rapid incident response. The techniques described here also provide a blueprint for teams hosting service-based solutions to build foundational live site processes that are efficient and effective at scale.
+
+**Author:** Yitzhak Kesselman
 
 ## Background
 
