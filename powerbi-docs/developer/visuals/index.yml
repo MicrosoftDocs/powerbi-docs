@@ -25,7 +25,9 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
-          - text: "Visuals in Power BI"
+          - text: "Develop your own Power BI visual"
+            url: develop-power-bi-visuals.md
+          - text: "Where to find Power BI visuals"
             url: power-bi-custom-visuals.md
           - text: "Power BI visual project structure"
             url: visual-project-structure.md

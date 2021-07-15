@@ -46,7 +46,7 @@ The list below uses present tense, but all tenses are recognized in most cases. 
 |**Times**  |am, pm, o'clock, noon, midnight, hour, minute, second, hh:mm:ss  |
 |  |  Examples: 10 pm, 10:35 pm, 10:35:15 pm, 10 o clock, noon, midnight, hour, minute, second.  |
 |**Top N**     |     (order, ranking): top, bottom, highest, lowest, first, last, next, earliest, newest, oldest, latest, most recent, next            |
-|**Visual types**     |  all visual types native to Power BI.  If it's an option in the Visualizations pane, then you can include it in your question.  The exception to this rule is [Power BI custom visuals](../developer/visuals/power-bi-custom-visuals.md) that you've manually added to the Visualization pane.  |
+|**Visual types**     |  all visual types native to Power BI.  If it's an option in the Visualizations pane, then you can include it in your question.  The exception to this rule is [Power BI custom visuals](../developer/visuals/develop-power-bi-visuals.md) that you've manually added to the Visualization pane.  |
 |  |  Example: show districts by month and sales total as bar chart               |
 |**Wh (relationship, qualified)**  | when, where, which, who, whom, how many, how much, how many times, how often, how frequently, amount, number, quantity, how long, what                |
 

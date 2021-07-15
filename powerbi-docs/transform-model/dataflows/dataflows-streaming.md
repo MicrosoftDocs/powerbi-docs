@@ -1,7 +1,7 @@
 ---
 title: Streaming dataflows (preview)
 description: Overview of streaming dataflows in Power BI service and how to use them
-author: miguelmartinez
+author: miguem
 ms.author: miguem
 ms.reviewer: ''
 ms.service: powerbi
@@ -76,13 +76,13 @@ After clicking “Create” you will land in the empty streaming dataflows diagr
 1.	**Ribbon**: In the ribbon, you will see different sections that follow the order of a “classic” analytics process: inputs (also known as data sources), transformations (streaming ETL operations), outputs, and finally, a button to Save your progress.
 2.	**Diagram view**: graphical representation of your dataflow from inputs to operations to outputs
 3.	**Side pane**: depending on which component you have selected in the diagram view, you will have settings to modify each input, transformation, or output.
-4.	**Data preview / Authoring errors / Runtime errors**: for each card shown, the data preview will show you a preview of the results of that step (live for inputs and on-demand for transformations and outputs). This section also summarizes any authoring errors or warnings that you might have in your dataflows. Clicking on each error or warning will select that transform. Lastly, you will have access to runtime errors once the dataflow is running such as dropped messages. You can always minimize this section of streaming dataflows clicking on the arrow in the top-right corner of the preview pane.
+4.	**Data preview / Authoring errors / Runtime errors**: for each card shown, the data preview will show you results for that step (live for inputs and on-demand for transformations and outputs). This section also summarizes any authoring errors or warnings that you might have in your dataflows. Clicking on each error or warning will select that transform. Lastly, you will have access to runtime errors once the dataflow is running such as dropped messages. You can always minimize this section of streaming dataflows clicking on the arrow in the top-right corner of the preview pane.
 
 A streaming dataflow is built on three main components: **streaming inputs, transformations, and outputs**. You can have as many components as you want, including multiple inputs, parallel branches with multiple transformations, and multiple outputs.
 
 ## Inputs
 
-To add a streaming input, click on icon in the ribbon and provide the info needed in the side pane to set it up. As of July 2021, the streaming dataflows preview supports  [**Azure Event Hub**](/azure/event-hubs/). and [**Azure IoT Hub**](/azure/iot-hub/) as inputs.
+To add a streaming input, click on icon in the ribbon and provide the info needed in the side pane to set it up. As of July 2021, the streaming dataflows preview supports  [**Azure Event Hub**](/azure/event-hubs/) and [**Azure IoT Hub**](/azure/iot-hub/) as inputs.
 
 Azure Event Hubs and Azure IoT Hubs are streaming and big data services built on a common architecture to facilitate the fast and scalable ingestion and consumption of events. IoT Hubs in particular are tailored as a central message hub for communications in both directions between an IoT application and its attached devices.
 
@@ -281,7 +281,7 @@ As of July of 2021, we only support one type of output: Power BI table.
 
 ### Output table
 
-This output will be your dataflow table (also known as entity) that can be used to create report in Power BI Desktop. You will also need to join the nodes of the previous step with the output you are creating to make it work. After that all you need to do is named the table and you are good to go.
+This output will be your dataflow table (also known as entity) that can be used to create reports in Power BI Desktop. You will also need to join the nodes of the previous step with the output you are creating to make it work. After that, all you need to do is name the table and you are good to go.
 
 ![Output table configuration](media/dataflows-streaming/dataflows-streaming-24.png)
 
@@ -457,6 +457,7 @@ Once your report is ready and you have added all the content you want to share, 
 * Capacities smaller than A3 create or run use streaming dataflows.
 * If dataflows or the enhanced calculation engine is not enabled in a tenant, users will not be able to create or run streaming dataflows.
 * Workspaces connected to a storage account are not supported.
+* Each streaming dataflow can provide up to 1 MB / second of throughput.
 
 ### Licensing
 

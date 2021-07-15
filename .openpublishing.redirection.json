@@ -1647,7 +1647,7 @@
         },
         {
             "source_path": "powerbi-docs/developer/get-azuread-access-token.md",
-            "redirect_url": "/power-bi/developer/embedded/get-azuread-access-token",
+            "redirect_url": "/power-bi/developer/embedded/generate-embed-token",
             "redirect_document_id": false
         },
         {
@@ -3924,6 +3924,11 @@
             "source_path": "powerbi-docs/developer/embedded/migrate-code-snippets.md",
             "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
             "redirect_document_id": false
-        }        
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/get-azuread-access-token.md",
+            "redirect_url": "/power-bi/developer/embedded/generate-embed-token",
+            "redirect_document_id": false
+        }                        
     ]           
 }

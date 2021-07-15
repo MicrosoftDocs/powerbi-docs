@@ -1,6 +1,6 @@
 ---
-title: Visuals in Power BI
-description: This article describes custom Power BI visuals.
+title: Finding Power BI visuals
+description: This article describes the main ways of getting Power BI visuals. 
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -12,13 +12,13 @@ ms.date: 05/14/2021
 LocalizationGroup: Visualizations
 ---
 
-# Visuals in Power BI
+# Where to find Power BI visuals
 
 Power BI visuals can be obtained from three main sources:
 
 * [Default](#default-power-bi-visuals) visuals are readily available on the visualization pane.
 * Visuals [imported](#appsource-power-bi-visuals) from Microsoft [AppSource](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fappsource.microsoft.com%2Fen-us%2Fmarketplace%2Fapps%3Fpage%3D1%26product%3Dpower-bi-visuals&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C6d9286afacb3468d4cde08d740b76694%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637049028749147718&sdata=igWm0e1vXdgGcbyvngQBrHQVAkahPnxPC1ZhUPntGI8%3D&reserved=0) or Power BI.
-* [Custom visuals](#custom-visual-files).
+* Create your own [custom visuals](#custom-visual-files).
 
 ## Default Power BI visuals
 
