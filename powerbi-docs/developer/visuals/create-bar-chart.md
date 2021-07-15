@@ -26,10 +26,6 @@ In this tutorial, you learn how to:
 > * [Add objects to the properties pane](#define-objects-for-the-properties-pane)
 > * [Package the visual](#package-the-visual)
 
->[!NOTE]
->
->The purpose of this tutorial is to help you understand how a visual is structured and written. Follow these steps to create a new bar chart visual from scratch. Alternatively, you can [download the source code](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/tree/barChartTutorial) and use it to follow along without creating your own visual.
-
 ## Set up your environment
 
 [!INCLUDE[Power B I tutorials prerequisites](../../includes/visual-tutorial-prerequisites.md)]
@@ -49,7 +45,9 @@ Creating a bar chart visual involves the following steps:
 
 ## Create a new project
 
-If you are building the visual from scratch, first create it and give it a name. If you downloaded the [source code](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/tree/barChartTutorial), you can skip these two steps.
+The purpose of this tutorial is to help you understand how a visual is structured and written. You can follow these instructions to create a bar code visual from scratch, or you can [clone the source code repository](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/tree/barChartTutorial) and use it to follow along without creating your own visual.
+
+## [Create a new visual](#tab/Create new visual)
 
 1. Open **PowerShell** and navigate to the folder you want to create your project in.
 
@@ -59,28 +57,36 @@ If you are building the visual from scratch, first create it and give it a name.
     pbiviz new BarChart
     ```
 
+    You should now have a folder called *BarChart* containing the visual's files.
+
+3. In **VS Code**, open the [*tsconfig.json*] (visual-project-structure.md#tsconfigjson) file and change the name of `"files"` to *src/barChart.ts*.
+
+    ```typescript
+    "files": [
+    "src/barChart.ts"
+    ]
+    ```
+
+    The *tsconfig.json* "files" object points to the file where the main class of the visual is located.
+
+    Your final *tsconfig.json* file should look like [this](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/tsconfig.json).
+
+4. The [*package.json*](visual-project-structure.md#packagejson) file contains a list of project dependencies. Replace your *project.json* file with [this one](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/package.json).
+
+## [Clone source code](#tab/Clone sourcecode) 
+
+    ```PowerShell
+    pbiviz new BarChart
+    ```
+---
+
 You should now have a new folder for your visual with the following files and folders:
 
 ![Structure of visuals](./media/create-bar-chart/visual-structure.png)
 
 For a detailed explanation of the function of each of these files see [Power BI visual project structure](visual-project-structure.md).
 
-The two files we'll focus on in this tutorial are the `capabilities.json` file, which describes the visual to the host, and the `src/barchart.ts` file, which replaces the `src/visual.ts` file as the one containing the visual's API.
-
-Before we look at these two files we need to update the description of the visual in the `tsconfig.json` file and the `package.json` file.
-
-The [*tsconfig.json*](visual-project-structure.md#tsconfigjson) file contains an object called *"files"* which contains a path to the file where the main class of the visual is located. The default file is called *visual.ts*.
-In **VS Code**, open the `tsconfig.json` file and enter the more descriptive file name of `barChart.ts`. Change the name of the file in `tsconfig.json` to *src/barChart.ts*
-
-```typescript
-"files": [
-    "src/barChart.ts"
-  ]
-```
-
-Your final `tsconfig.json` file should look like [this](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/tsconfig.json).
-
-The [*package.json*](visual-project-structure.md#packagejson) file contains a list of project dependencies. Replace your `project.json` file with [this one](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/package.json).
+The two files we'll focus on in this tutorial are the `capabilities.json` file, which describes the visual to the host, and the `src/barchart.ts` file, which contains the visual's API.
 
 ## Define capabilities
 
