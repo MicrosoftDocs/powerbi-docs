@@ -18,6 +18,8 @@ Configuring automatic aggregations includes enabling the feature for a DirectQue
 
 ## Enable
 
+You must have dataset Owner permissions to enable automatic aggregations. Workspace admins can take over dataset owner permissions.
+
 1. In dataset Settings, expand **Optimize performance**.
 1. Click the **Enable automatic aggregations** slider to **On**. If the enable slider is greyed out, ensure Data source credentials for the dataset are configured and signed in.
     
@@ -34,11 +36,11 @@ Configuring automatic aggregations includes enabling the feature for a DirectQue
 
 ## Fine-tuning
 
-User-generated and system-generated aggregations tables are part of the dataset, contribute to the dataset size, and subject to existing Power BI dataset size constraints. Aggregations processing also consumes resources and impacts dataset refresh durations. An optimal configuration strikes a balance between providing pre-aggregated results from the in-memory aggregations cache for the most frequently used report queries, while accepting slower results for outlier and ad-hoc queries in exchange for faster training and refresh times and a reduced burden on system resources.
+Both user-defined and system-generated aggregations tables are part of the dataset, contribute to the dataset size, and are subject to existing Power BI dataset size constraints. Aggregations processing also consumes resources and impacts dataset refresh durations. An optimal configuration strikes a balance between providing pre-aggregated results from the in-memory aggregations cache for the most frequently used report queries, while accepting slower results for outlier and ad-hoc queries in exchange for faster training and refresh times and a reduced burden on system resources.
 
 ### Adjusting the percentage
 
-By default, the aggregations cache setting that determines the percentage of report queries that will use aggregations from the in-memory cache is set to 75%. Increasing the percentage means a greater number of report queries are ranked higher and therefore aggregations for them are included in the in-memory aggregations cache. While a higher percentage can mean more queries are answered from the in-memory cache, it can also mean **longer training and refresh times**. Adjusting to a lower percentage, on the other hand, can mean shorter training and refresh times, and less resource utilization, but report visualization performance could diminish because fewer report queries would be answered by the in-memory aggregations cache, as those report queries instead must then roundtrip to the data source.
+By default, the aggregations cache setting that determines the percentage of report queries that will use aggregations from the in-memory cache is 75%. Increasing the percentage means a greater number of report queries are ranked higher and therefore aggregations for them are included in the in-memory aggregations cache. While a higher percentage can mean more queries are answered from the in-memory cache, it can also mean **longer training and refresh times**. Adjusting to a lower percentage, on the other hand, can mean shorter training and refresh times, and less resource utilization, but report visualization performance could diminish because fewer report queries would be answered by the in-memory aggregations cache, as those report queries instead must then roundtrip to the data source.
 
 Before the system can determine the optimal aggregations to include in the cache, it must first know the report query patterns being used most often. Be sure to allow several iterations of the training/refresh operations to be completed before adjusting the percentage of queries that will use the aggregations cache. This gives the training algorithm time to analyze report queries over a broader time period and self-adjust accordingly. For example, if you've scheduled refreshes for daily frequency, you might want to wait a full week. User reporting patterns on some days of the week may be different than others.
 
@@ -69,56 +71,7 @@ Threshold appears as a marker line on the lift chart and indicates the target qu
 
 ## Disable
 
-When disabling automatic aggregations, existing system-created aggregation tables remain in the dataset. Power BI continues to use them to get query results whenever possible. By disabling automatic aggregations, you are only disabling the self-training and self-optimization processes. If you want to revert a dataset back to its initial state, you must republish the original dataset or use an XMLA-based tool to remove the system-created aggregation tables from the dataset.
-
-### Removing system-created aggregation tables  
-
-The following code snippet demonstrates how to remove system-created aggregation tables from a dataset. Removing system-created tables may only be necessary after you've disabled automatic aggregations.
-
-```csharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.AnalysisServices.Tabular;
-
-namespace AutoAggs
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            string workspaceUri = "<Specify the URL of the workspace where your dataset resides>";
-            string datasetName = "<Specify the name of your dataset>";
-
-            Server sourceWorkspace = new Server();
-            sourceWorkspace.Connect(workspaceUri);
-            Database dataset = sourceWorkspace.Databases.GetByName(datasetName);
-
-            // Enumerate system-managed tables.
-            IEnumerable<Table> aggregationsTables = dataset.Model.Tables.Where(tbl => tbl.SystemManaged == true);
-
-
-            if (aggregationsTables.Any())
-            {
-                Console.WriteLine("The following auto aggs tables exist in this dataset:");
-                foreach (Table table in aggregationsTables)
-                {
-                    Console.WriteLine($"\t{table.Name}");
-                }
-                dataset.Update(Microsoft.AnalysisServices.UpdateOptions.ExpandFull);
-            }
-            else
-            {
-                Console.WriteLine($"This dataset has no auto aggs tables.");
-            }
-
-            Console.WriteLine("\n\rPress [Enter] to exit the sample app...");
-            Console.ReadLine();
-        }
-    }
-}
-
-```
+When disabling automatic aggregations, existing system-created aggregation tables remain in the dataset. Power BI continues to use them to get query results whenever possible. By disabling automatic aggregations, you are only disabling the self-training and self-optimization processes. If you want to revert a dataset back to its initial state, you must republish the original from the .pbix model.
 
 ## See also
 
