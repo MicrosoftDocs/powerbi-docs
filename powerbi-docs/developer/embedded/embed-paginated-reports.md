@@ -30,7 +30,7 @@ To get started, you're required to have:
 
 * Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup
 
-* A [capacity](#create-a-capacity), with [paginated reports](../../admin/service-admin-premium-workloads.md#paginated-reports) workload enabled
+* A [capacity](#step-3---create-a-capacity), with [paginated reports](../../admin/service-admin-premium-workloads.md#paginated-reports) workload enabled
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
@@ -194,7 +194,7 @@ Skip [Step 4 - Create and publish a Power BI report](embed-sample-for-customers.
 
 Follow the instructions in the [embed content for your organization](embed-sample-for-your-organization.md) tutorial.
 
-Skip [Step 3 - Create and publish a Power BI report](embed-sample-for-your-organization#step-3---create-and-publish-a-power-bi-report) and use the paginated report you uploaded to the Power BI service, instead of the sample report suggested in the tutorial.
+Skip [Step 3 - Create and publish a Power BI report](embed-sample-for-your-organization.md#step-3---create-and-publish-a-power-bi-report) and use the paginated report you uploaded to the Power BI service, instead of the sample report suggested in the tutorial.
 
 ---
 

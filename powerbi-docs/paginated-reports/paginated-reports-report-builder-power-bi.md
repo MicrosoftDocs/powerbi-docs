@@ -113,4 +113,4 @@ Here are some other features that aren't supported in the initial release:
 - [Online course: Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md)
 - [Sample Power BI paginated reports](paginated-reports-samples.md)
 - [Enter data directly in a paginated report](paginated-reports-enter-data.md)
-- [Embed Power BI paginated reports](../developer/embedded/embed-paginated-reports)
+- [Embed Power BI paginated reports](../developer/embedded/embed-paginated-reports.md)
