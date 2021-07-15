@@ -28,7 +28,7 @@ The *capabilities.json* file has the following format:
 }
 ```
 
-When you create a new visual, the default *capabilities.json* file includes `dataRoles`, `objects`, and `dataViewMapping`. These are the objects needed for data-binding. You can add as many other objects to this file as you need.
+When you create a new visual, the default *capabilities.json* file includes `dataRoles`, `objects`, and `dataViewMapping`. These objects are needed for data-binding. You can add as many other objects to this file as you need.
 
 The root objects of a visual's capabilities file are:  
 
@@ -51,7 +51,7 @@ The root objects of a visual's capabilities file are:
 
 You can find all these objects and their parameters in the [*capabilities.json* schema](https://github.com/microsoft/powerbi-visuals-api/blob/master/schema.capabilities.json#L4-L65)
 
-## Define the data fields that your visual expects: dataroles
+## Define the data fields that your visual expects: data roles
 
 To define fields that can be bound to data, you use `dataRoles`. `dataRoles` is an array of `DataViewRole` objects, which defines all the required properties. The `dataRoles` objects are the **fields** that appear on the [Properties pane](../../visuals/service-getting-started-with-color-formatting-and-axis-properties.md).
 

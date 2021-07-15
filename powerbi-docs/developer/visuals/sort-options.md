@@ -7,14 +7,12 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 06/18/2021
+ms.date: 06/18/2019
 ---
 
 # Sorting options for Power BI visuals
 
-This article describes how *sorting* options specify the the way a visual sorts items in Power BI.
-
-By default, a visual doesn't support modifying its sorting order, unless stated otherwise in the *capabilities.json* file.
+This article describes how *sorting* options specify the sorting behavior for Power BI visuals. 
 
 The sorting capability requires one of the following parameters.
 
@@ -59,11 +57,3 @@ Implicit sorting is sorting with the array parameter `clauses`, which describes 
 ## Custom sorting
 
 Custom sorting means that the sorting is managed by the developer in the visual's code.
-
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Understand data view mapping in Power BI visuals](dataview-mappings.md)
-
-> [!div class="nextstepaction"]
-> [Understanding capabilities](capabilities.md)
