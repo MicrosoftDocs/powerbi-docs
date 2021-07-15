@@ -75,9 +75,10 @@ The purpose of this tutorial is to help you understand how a visual is structure
 
 ## [Clone source code](#tab/Clone sourcecode) 
 
-    ```PowerShell
-    pbiviz new BarChart
-    ```
+```PowerShell
+pbiviz new BarChart
+```
+
 ---
 
 You should now have a new folder for your visual with the following files and folders:
