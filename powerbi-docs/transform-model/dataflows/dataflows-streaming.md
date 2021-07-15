@@ -281,7 +281,7 @@ As of July of 2021, we only support one type of output: Power BI table.
 
 ### Output table
 
-This output will be your dataflow table (also known as entity) that can be used to create report in Power BI Desktop. You will also need to join the nodes of the previous step with the output you are creating to make it work. After that all you need to do is name the table and you are good to go.
+This output will be your dataflow table (also known as entity) that can be used to create reports in Power BI Desktop. You will also need to join the nodes of the previous step with the output you are creating to make it work. After that, all you need to do is name the table and you are good to go.
 
 ![Output table configuration](media/dataflows-streaming/dataflows-streaming-24.png)
 
