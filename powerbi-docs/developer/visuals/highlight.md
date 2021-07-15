@@ -12,7 +12,9 @@ ms.date: 10/31/2019
 
 # Highlight data points in Power BI Visuals
 
-By default whenever an element is selected the `values` array in the `dataView` object will be filtered to just the selected values. It will cause all other visuals on the page to display just the selected data.
+This article describes how to highlight data in Power BI visuals.
+
+By default, the `supportsHighlight` value is set to `false`. This means that when something on a page is selected the values are automatically filtered accordingly, and your visual displays only the selected value. If you want to display the full data but highlight only the selected items, set `supportsHighlight` to `true` in your *capabilities.json* file.
 
 ![highlight `dataview` default behavior](media/highlight/highlight-dataview.png)
 
@@ -339,9 +341,9 @@ The sample data to create hierarchy for matrix data view mapping:
 |   R2   |   R23   |   R232   |   C2   |   C23   |   C232   |   18   |
 |   R2   |   R23   |   R233   |   C2   |   C23   |   C233   |   19   |
 
-Create the default visual project and apply sample of `capabilities.json`.
+Create a default visual project and apply sample of `capabilities.json`.
 
-Default visual source code after removing unessesray code will look:
+After removing unnecessary code, the default visual source code should look like this:
 
 ```typescript
 "use strict";
@@ -642,6 +644,8 @@ As the result you'll get the visual with buttons and values `highlighted value/d
 
 ## Next steps
 
-* [Read about matrix data view mappings](dataview-mappings.md#matrix-data-mapping)
+> [!div class="nextstepaction"]
+> [Matrix data view mappings](dataview-mappings.md#matrix-data-mapping)
 
-* [Read about capabilities of the visual](capabilities.md)
+> [!div class="nextstepaction"]
+> [Capabilities of the visual](capabilities.md)
