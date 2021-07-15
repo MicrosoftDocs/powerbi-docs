@@ -18,7 +18,13 @@ This document describes the Power BI approach to maintaining a reliable, perform
 
 ## Background
 
-Power BI is a global service, serving 260,000 organizations and 97% of the Fortune 500 companies. Power BI is deployed in 52 Azure regions around the world. During times of peak usage, the service executes nearly 20 million queries per hour and ingests over 90 petabytes of data into customer datasets. These activities are supported by 149 deployed clusters that are powered by more than 350,000 cores.  
+Power BI is a global service, supporting the following customers and capabilities:
+
+* Serving 260,000 organizations and 97% of Fortune 500 companies
+* Deployed in 52 Azure regions around the world
+* Executes nearly 20 million queries per hour at peak
+* Ingests over 90 petabytes of data per month into customer datasets
+* Employs 149 clusters powered by more than 350,000 cores
 
 Despite absorbing triple-digit growth over six years and substantial new capabilities, the Power BI service exhibits strong service reliability and operational excellence. The results shown in the following table are the direct consequence of engineering, tools, and culture changes made by the Power BI team over the past few years, and are highlighted in this article.
 
