@@ -6,7 +6,7 @@ ms.author: owend
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 07/13/2021
+ms.date: 07/15/2021
 LocalizationGroup: Admin
 ---
 # Configure automatic aggregations (Preview)
