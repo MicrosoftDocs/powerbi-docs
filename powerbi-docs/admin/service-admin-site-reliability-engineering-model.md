@@ -14,11 +14,11 @@ LocalizationGroup: Administration
 # Power BI site reliability engineering (SRE) model
 
 
-This document describes the Power BI approach to maintaining a reliable, performant, and scalable service. It describes monitoring service health, mitigating incidents, and acting on necessary improvements. Other important operational aspects such as safe deployment practices and security reviews are outside of the scope of this document. This document was created to share knowledge  with our customers, who often raise questions regarding site reliability engineering practices.
+This document describes the Power BI team's approach to maintaining a reliable, performant, and scalable service for customers. It describes monitoring service health, mitigating incidents, release management and acting on necessary improvements. Other important operational aspects such as security are outside of the scope of this document. This document was created to share knowledge with our customers, who often raise questions regarding site reliability engineering practices. The intention is to offer transparency into how Power BI minimizes service disruption through safe deployment, continuous monitoring, and rapid incident response. The techniques described here also provide a blueprint for teams hosting service-based solutions to build foundational live site processes that are efficient and effective at scale.
 
 ## Background
 
-Power BI is a global service, supporting the following customers and capabilities:
+Power BI is a native cloud offering and global service, supporting the following customers and capabilities:
 
 * Serving 260,000 organizations and 97% of Fortune 500 companies
 * Deployed in 52 Azure regions around the world
@@ -26,7 +26,7 @@ Power BI is a global service, supporting the following customers and capabilitie
 * Ingests over 90 petabytes of data per month into customer datasets
 * Employs 149 clusters powered by more than 350,000 cores
 
-Despite absorbing triple-digit growth over six years and substantial new capabilities, the Power BI service exhibits strong service reliability and operational excellence. The results shown in the following table are the direct consequence of engineering, tools, and culture changes made by the Power BI team over the past few years, and are highlighted in this article.
+Despite absorbing six straight years of triple-digit growth and substantial new capabilities, the Power BI service exhibits strong service reliability and operational excellence. As the service grew and large enterprises deployed it at scale to hundreds of thousands of users, the need for exceptional reliability became essential. The reliability results shown in the following table are the direct consequence of engineering, tools, and culture changes made by the Power BI team over the past few years, and are highlighted in this article.
 
 :::image type="content" source="media/service-admin-site-reliability-engineering-model/service-admin-site-reliability-engineering-model-01.png" alt-text="Table describing site reliability statistics.":::
 
@@ -34,21 +34,21 @@ Through solutions and disciplined operations, the Power BI team has sustained ex
 
 :::image type="content" source="media/service-admin-site-reliability-engineering-model/service-admin-site-reliability-engineering-model-02.png" alt-text="Graph showing decrease in site reliability engineering cost despite rapid growth.":::
 
-The efficiencies gained from site reliability engineering (SRE) team efforts offset the cost of funding such a team. The SRE team size, and its corresponding operational cost, has remained constant despite exponential service growth over the same period. Without their dedicated focus on efficiency, live site support costs would have grown substantially with increased service usage.
+The efficiencies gained from site reliability engineering (SRE) team efforts offset the cost of funding such a team. The SRE team size, and its corresponding operational cost, has remained constant despite exponential service growth over the same period. Without such dedicated focus on efficiency, live site support costs would have grown substantially with increased service usage.
 
-Further, an increasing percentage of Power BI live site incidents can now be addressed partially or completely through automation. The following chart shows a 90% decrease in Time to Mitigate (TTM) incidents over the past two years while usage has increased by 235%. The same period saw the introduction of alert automation to deflect more than 82% of incidents.
+Further, an increasing percentage of Power BI live site incidents can now be addressed partially or completely through automation. The following chart shows a 90% decrease in Time to Mitigate (TTM) incidents over the past two years while usage has more than tripled. The same period saw the introduction of alert automation to deflect more than 82% of incidents.
 
 :::image type="content" source="media/service-admin-site-reliability-engineering-model/service-admin-site-reliability-engineering-model-03.png" alt-text="Chart showing decreased response time despite increase in usage.":::
 
-These efforts have resulted in greatly improved service reliability to customers, approaching four nines (99.99%) reliability.
+These efforts have resulted in greatly improved service reliability to customers, approaching four nines (99.99%) success rate.
 
 The remainder of this article describes the approach and best practices put in place that enabled the SRE team to achieve the previous chart's outcomes. The following sections include details on live site incident types, standard investigation processes, best practices for operationalizing those processes at scale, and the Objective Key Results (OKRs) used by the team to measure success.
 
 ## Why incidents occur and how to live with them
 
-The Power BI team ships weekly feature updates to the service and on-demand targeted fixes to address service quality issues. The release process includes a comprehensive set of quality gates, including comprehensive code reviews, ad-hoc testing, automated component-based, and scenario-based tests, feature flighting, and regional safe deployment. However, even with these safeguards, live site incidents can and do happen.
+The Power BI team ships weekly feature updates to the service and on-demand targeted fixes to address service quality issues. The release process includes a comprehensive set of quality gates, including comprehensive code reviews, ad-hoc testing, automated component-based and scenario-based tests, feature flighting, and regional safe deployment. However, even with these safeguards, live site incidents can and do happen.
 
-Live site incidents can be divided into several different categories:
+Live site incidents can be divided into several categories:
 
 * Dependent-service issues (such as Azure AD, Azure SQL, Storage, virtual machine scale set, Service Fabric)
 * Infrastructure outage (such as a hardware failure, data center failure)
@@ -77,28 +77,29 @@ The Power BI team emphasizes a consistent, data-driven, and customer-centric app
 
 One way in which the Power BI team enables exponential service growth is by using a SRE team. These individuals are skilled with service architecture, automation and incident management practices, and are embedded within incidents to drive end-to-end resolution. The approach contrasts with the rotational model where engineering leaders from the product group take on an incident manager role for only a few weeks per year. The SRE team ensures that a consistent group of individuals are responsible for driving live site improvements and ensuring that learnings from previous incidents are incorporated into future escalations. The SRE team also assists with large-scale drills that test Business Continuity and Disaster Recovery (BCDR) capabilities of the service.
 
-SRE team members use their unique skill set and considerable live site experience, and also partner with feature teams to enhance SLIs and alerts provided by the product team in numerous ways. Some of the way they enhance SLIs include:
+SRE team members use their unique skill set and considerable live site experience, and also partner with feature teams to enhance SLIs and alerts provided by the product team in numerous ways. Some of the ways they enhance SLIs include:
 
 * **Anomaly Alerts:** SREs develop monitors that consider typical usage and operational patterns within a given production environment and alert when significant deviations occur. *Example: Datasets refresh latency increases by 50% relative to similar usage periods.*
 * **Customer/Environment-Specific Alerts:** SREs develop monitors that detect when specific customers, provisioned capacities, or deployed clusters deviate from expected behavior. *Example: A single capacity owned by a customer is failing to load datasets for querying.*
-* **Fine-Grained Alerts:** SREs consider subsets of the population that might experience issues independently of the broader population.  For such cases, specific alerts are crafted to ensure that alerts will in fact fire if those less common scenarios fail despite lower volume. *Example: Refreshing datasets that use the GitHub connector are failing.*
+* **Fine-Grained Alerts:** SREs consider subsets of the population that might experience issues independently of the broader population. For such cases, specific alerts are crafted to ensure that alerts will in fact fire if those less common scenarios fail despite lower volume. *Example: Refreshing datasets that use the GitHub connector are failing.*
 * **Perceived Reliability Alerts:** SREs also craft alerts that detect cases when customers are unsuccessful due to any type of error. This can include failures from user errors and indicate a need for improved documentation or a modified user experience. These alerts also can notify engineers of unexpected system errors that might otherwise be misclassified as a user error. *Example: Dataset refresh fails due to incorrect credentials.*
 
-Another critical role of the SRE team is to automate TSG actions to the extent possible through Geneva Automation. In cases where complete automation is not possible, the SRE team defines actions to *enrich* an alert with useful and incident-specific diagnostic information to accelerate subsequent investigation. Such enrichment is paired with prescriptive guidance in a corresponding TSG so that live site engineers can either take a specific action to mitigate the incident or quickly escalate to SMEs for more investigation. Alerts with enrichment are also candidates for complete automation when possible and when incident volume/severity provides a sufficiently high ROI.
+Another critical role of the SRE team is to automate TSG actions to the extent possible through Azure Automation. In cases where complete automation is not possible, the SRE team defines actions to *enrich* an alert with useful and incident-specific diagnostic information to accelerate subsequent investigation. Such enrichment is paired with prescriptive guidance in a corresponding TSG so that live site engineers can either take a specific action to mitigate the incident or quickly escalate to SMEs for more investigation. Alerts with enrichment are also candidates for complete automation when possible and when incident volume/severity provides a sufficiently high ROI.
 
 As a direct result of these efforts, more than 82% of incidents are mitigated without any human interaction. The remaining incidents have enough enrichment data and supporting documentation to be handled without SME involvement in 99.7% of cases. 
 
 :::image type="content" source="media/service-admin-site-reliability-engineering-model/service-admin-site-reliability-engineering-model-05.png" alt-text="Chart showing incident automation and deflection.":::
 
 Live Site SREs also enforce alert quality in several ways, including the following:
-* Ensuring that TSGs include impact analysis and escalation policy.
-* Ensuring that alerts execute for the absolute smallest time window possible for faster detection.
+
+* Ensuring that TSGs include impact analysis and escalation policy
+* Ensuring that alerts execute for the absolute smallest time window possible for faster detection
 * Ensuring that alerts use reliability thresholds instead of absolute limits to scale clusters of different size
 
 ## Best practices for incident response
-When an automated live site incident is created for the Power BI service, one of the first priorities is to notify customers of potential impact. Azure has a target notification time of 15 minutes, which is difficult to achieve when notifications are manually posted by incident managers after joining a call. Communications in such cases are at risk of being late or inaccurate due to required manual analysis. Azure Monitoring and Geneva offer centralized monitoring and alerting solutions that can detect impact to certain metrics within this time window. However, Power BI is a SaaS offering with complex scenarios and user interactions that cannot be easily modeled and tracked using such alerting systems. In response, the Power BI team developed a novel solution called **TTN0**.
+When an automated live site incident is created for the Power BI service, one of the first priorities is to notify customers of potential impact. Azure has a target notification time of 15 minutes, which is difficult to achieve when notifications are manually posted by incident managers after joining a call. Communications in such cases are at risk of being late or inaccurate due to required manual analysis. Azure Monitoring offers centralized monitoring and alerting solutions that can detect impact to certain metrics within this time window. However, Power BI is a SaaS offering with complex scenarios and user interactions that cannot be easily modeled and tracked using such alerting systems. In response, the Power BI team developed a novel solution called **TTN0**.
 
-* **TTN0 (Time To Notify “0”)** is a fully automated incident notification service that uses our internal alerting infrastructure to identify specific scenarios and customers that are impacted by a newly created incident. It is also integrated with external monitoring agents outside of Azure to detect connectivity issues that might otherwise go unnoticed. TTN0 allows customers to receive an email when TTN0 detects a service disruption or degradation. With TTN0, the Power BI team can send reliable, targeted notifications within 10 minutes of impact start time (which is 33% faster than the Azure target). Since the solution is fully automated, there is minimal risk from human error or delays. As of May 2021, more than 8,000 companies (including 16% of Microsoft strategic 500 accounts) have registered for TTN0 alerts.
+* **TTN0 (Time To Notify “0”)** is a *fully automated* incident notification service that uses our internal alerting infrastructure to identify specific scenarios and customers that are impacted by a newly created incident. It is also integrated with external monitoring agents outside of Azure to detect connectivity issues that might otherwise go unnoticed. TTN0 allows customers to receive an email when TTN0 detects a service disruption or degradation. With TTN0, the Power BI team can send reliable, targeted notifications within 10 minutes of impact start time (which is 33% faster than the Azure target). Since the solution is fully automated, there is minimal risk from human error or delays. As of May 2021, more than 8,000 companies have registered for TTN0 alerts.
 
 As mentioned in the previous section, Power BI’s live site philosophy emphasizes automated resolution of incidents to improve overall scalability and sustainability of the SRE team. The emphasis on automation enables mitigation at scale and can potentially avoid costly rollbacks or risky expedited fixes to production systems. When manual investigation is required, Power BI adopts a tiered approach with initial investigation done by a dedicated SRE team. SRE team members are experienced in managing live site incidents, facilitating cross-team communication, and driving mitigation. In cases where the acting SRE team member requires more context on an impacted scenario/component, they may engage the Subject Matter Expert (SME) of that area for guidance. Finally, the SME team conducts simulations of system component failures to understand and to mitigate issues in advance of an active live site incident. 
 
@@ -126,7 +127,7 @@ The following table shows the major live site health OKRs.
 
 :::image type="content" source="media/service-admin-site-reliability-engineering-model/service-admin-site-reliability-engineering-model-01.png" alt-text="Table describing major live site health objective key results.":::
 
-The time required for the Power BI team to react to incidents as measured by TTN, TTA, and TTM significantly exceeds targets. Alert automation directly correlates with the team’s ability to sustain exponential service growth, while continuing to meet or exceed target response times for incident alerting, notification, and mitigation. Over a two-year period, the Power BI SRE team added automation to deflect more than 82% of incidents and to enrich an additional six percent with details that empower engineers to quickly take action to mitigate incidents when they occur. The approach also enables product team DRIs to focus on feature and proactive quality improvements instead of repeatedly being engaged for reactive incident investigations.
+The time required for the Power BI team to react to incidents as measured by TTN, TTA, and TTM significantly exceeds targets. Alert automation directly correlates with the team’s ability to sustain exponential service growth, while continuing to meet or exceed target response times for incident alerting, notification, and mitigation. Over a two-year period, the Power BI SRE team added automation to deflect more than 82% of incidents and to enrich an additional six percent with details that empower engineers to quickly take action to mitigate incidents when they occur. The approach also enables SMEs to focus on features and proactive quality improvements instead of repeatedly being engaged for reactive incident investigations.
 
 The above OKRs are actively tracked by the Power BI live site team, and the Senior Leadership Team, to ensure that the team continues to meet or exceed the baseline required to support substantial service growth, to maintain a sustainable live site workload, and to ensure high customer satisfaction.
 
@@ -144,23 +145,15 @@ Scaling this deployment model to handle exponential service growth is accomplish
 
 * **Comprehensive Dependency Reviews:** Power BI is a complex service with many upstream dependencies and nontrivial hardware capacity requirements. The deployment team ensures the availability and necessary capacity of all dependent resources and services in a target deployment region. Usage models project capacity needs based on anticipated customer demands.
 
-* **Automation:** Power BI deployments are essentially “zero-touch” with little to no interaction required by the deployment team. Prebuilt rollout specifications exist for multiple deployment scenarios. Deployment configuration is validated at build-time to avoid unexpected errors during live deployment roll-outs.
+* **Automation:** Power BI deployments are essentially *zero-touch* with little to no interaction required by the deployment team. Prebuilt rollout specifications exist for multiple deployment scenarios. Deployment configuration is validated at build-time to avoid unexpected errors during live deployment roll-outs.
 
 * **Cluster Health Checks:** Power BI deployment infrastructure checks internal service health models before, during, and after an upgrade to identify unexpected behavior and potential regressions. When possible, deployment tooling attempts auto-mitigation of encountered issues.
 
-* **Incident Response Process:** Deployment issues are handled like other live site incidents using techniques that are discussed in more detail in the following sections. Engineers analyze issues with a focus on immediate mitigation and then follow-up with relevant manual or automated process changes to prevent future reoccurrence.
+* **Incident Response Process:** Deployment issues are handled like other live site incidents using techniques that are discussed in more detail in the following sections of this article. Engineers analyze issues with a focus on immediate mitigation and then follow up with relevant manual or automated process changes to prevent future reoccurrence.
 
 * **Feature Management/Exposure Control:** Power BI applies a comprehensive framework for selectively exposing new features to customers. Feature exposure is independent of deployment cadences and allows code for new scenario code to be deployed in a disabled state until it has passed all relevant quality bars. In addition, new features can be exposed to a subset of the overall Power BI population as an extra validation step prior to enabling globally. If an issue is detected, the Power BI feature management service provides the ability to disable an offending feature in seconds without waiting for more time-consuming deployment rollback operations.
 
-The above features have enabled the Power BI team to improve the success rate of deployments by 18 points while absorbing a 400% year-over-year growth in monthly deployments.
-
-
-
-
-
-
-
-
+These features have enabled the Power BI team to improve the success rate of deployments by 18 points while absorbing a 400% year-over-year growth in monthly deployments.
 
 ## What's next
 Another high priority item on the SRE team roadmap is the reduction of system *noise* from false positive alerts or ignorable alerts. In addition, the team will inventory *transient* alerts, drive RCAs, and determine if there are underlying systemic issues that need to be addressed.
