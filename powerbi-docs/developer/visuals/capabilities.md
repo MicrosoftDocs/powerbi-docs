@@ -28,7 +28,7 @@ The *capabilities.json* file has the following format:
 }
 ```
 
-When you create a new visual, the default *capabilities.json* file includes `dataRoles`, `objects`, and `dataViewMapping`. These objects are needed for data-binding. You can add as many other objects to this file as you need.
+When you create a new visual, the default *capabilities.json* file includes `dataRoles`, `objects`, and `dataViewMapping`. These objects are needed for data-binding. You can add as many other root objects to this file as you need.
 
 The root objects of a visual's capabilities file are:  
 
