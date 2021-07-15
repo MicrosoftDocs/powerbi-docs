@@ -41,7 +41,7 @@ To import a Power BI visual directly from AppSource, follow these steps:
 
 6. The visual now appears as a new icon in the visualizations pane of the current report. Select it to create the visual on the report canvas.
 
-   :::image type="content" source="media/import-visual/new-visualization.png" alt-text="Screenshot of new imported visualization.":::
+   :::image type="content" source="media/import-visual/new-visualization.png" alt-text="Screenshot of new imported visualization pane.":::
 
 7. If you want the visual to remain on the visualization pane for all reports right-click on it and select **Pin to visualization pane**.
   
@@ -60,7 +60,7 @@ To import a Power BI visual (*.pbiviz file) that has been downloaded to your loc
 
 4. If you get a message cautioning you about importing custom files, select **Import** if you trust the source of the file.
 
-  :::image type="content" source="media/import-visual/caution.png" alt-text="Screenshot of caution: import custom visual.":::
+   :::image type="content" source="media/import-visual/caution.png" alt-text="Screenshot of caution: import custom visual.":::
   
 5. Navigate to the folder that has the custom visual file (*.pbiviz) and open it.
 6. When the visual has successfully imported, select **OK**.
@@ -69,7 +69,7 @@ To import a Power BI visual (*.pbiviz file) that has been downloaded to your loc
 
 7. The visual now appears as a new icon in the visualizations pane of the current report. Select it to create the visual on the report canvas.
 
-   :::image type="content" source="media/import-visual/new-visualization.png" alt-text="Screenshot of new imported visualization.":::
+   :::image type="content" source="media/import-visual/new-visualization.png" alt-text="Screenshot of new imported visualization pane.":::
 
 8. If you want the visual to remain on the visualization pane for all reports right-click on it and select **Pin to visualization pane**.
 
@@ -82,6 +82,6 @@ To import a Power BI visual (*.pbiviz file) that has been downloaded to your loc
 >[Visualizations in Power BI](../../visuals/power-bi-report-visualizations.md)
 
 >[!div class="nextstepaction"]
->[Visuals in Power BI](power-bi-custom-visuals.md)
+>[Where to find Power BI visuals](power-bi-custom-visuals.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
