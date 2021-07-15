@@ -138,7 +138,7 @@ This will provide you with a list of all the pertinent queries. Drill through to
 
 ## Application Lifecycle Management
 
-From development to test and from test to production, automatic aggregations architecture must be carefully considered for datasets with automatic aggregations enabled.
+From development to test and from test to production, datasets with automatic aggregations enabled have special requirements for ALM solutions.
 
 ### Deployment pipelines
 
@@ -209,10 +209,10 @@ Executing this snippet outputs automatic aggregations tables currently included 
 
 :::image type="content" source="media/aggregations-automatic/auto-aggs-code.png" alt-text="Auto aggs code":::
 
-Automatic aggregations tables are constantly changing as training operations determine the optimal aggregations to include in the in-memory aggregations cache.
+Keep in mind, aggregations tables tables are constantly changing as training operations determine the optimal aggregations to include in the in-memory aggregations cache.
 
 > [!IMPORTANT]
-> Power BI fully manages automatic aggregations table objects. Do not delete or modify these tables yourself. Doing so can cause degraded performance.
+> Power BI fully manages automatic aggregations system-generated table objects. Do not delete or modify these tables yourself. Doing so can cause degraded performance.
 
 Power BI maintains the dataset configuration outside of the dataset. The presence of a system-managed aggregations table in a dataset does not necessarily mean the dataset is in fact enabled for automatic aggregations. In other words, if you script out a full model definition for a dataset with automatic aggregations enabled, and create a new copy of the dataset (with a different name/workspace/capacity), the new resulting dataset is not yet enabled for automatic aggregations. You still need to enable automatic aggregations for the new dataset in dataset Settings.
 
