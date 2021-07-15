@@ -122,7 +122,7 @@ The following table lists the Power BI Premium SKUs that can be used to create a
 
 | Capacity node | Total vCores | Back-end vCores | Front-end vCores | DirectQuery/live connection limits (per sec) |
 | --- | --- | --- | --- | --- | --- |
-| EM1 with [Premium Gen2](../../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview) | 1 | 0.5 | 0.5 | 3.75 per second |
+| EM1 with [Premium Gen2](../../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview) | 1 | 0.5 | 0.5 | 3.75 |
 | EM2 with [Premium Gen2](../../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview) | 2 | 1 | 1 | 7.5 |
 | EM3 with [Premium Gen2](../../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview) | 4 | 2 | 2 | 15 |
 | P1 |8 vCores |4 vCores, 25 GB of RAM |4 vCores |30 |
