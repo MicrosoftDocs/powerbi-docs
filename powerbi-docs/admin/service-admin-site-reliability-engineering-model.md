@@ -30,7 +30,9 @@ Despite absorbing triple-digit growth over six years and substantial new capabil
 
 :::image type="content" source="media/service-admin-site-reliability-engineering-model/service-admin-site-reliability-engineering-model-01.png" alt-text="Table describing site reliability statistics.":::
 
-Through solutions and disciplined operations, the Power BI team has sustained exponential growth and rapid update cycles without increasing overall cost or burden on live site management. 
+Through solutions and disciplined operations, the Power BI team has sustained exponential growth and rapid update cycles without increasing overall cost or burden on live site management. In the following graph, you can see the continuous and significant decline in Service Reliability Engineering cost per monthly active user (MAU). 
+
+:::image type="content" source="media/service-admin-site-reliability-engineering-model/service-admin-site-reliability-engineering-model-02.png" alt-text="Graph showing decrease in site reliability engineering cost despite rapid growth.":::
 
 The efficiencies gained from site reliability engineering (SRE) team efforts offset the cost of funding such a team. The SRE team size, and its corresponding operational cost, has remained constant despite exponential service growth over the same period. Without their dedicated focus on efficiency, live site support costs would have grown substantially with increased service usage.
 
