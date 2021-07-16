@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 04/28/2020
+ms.date: 07/15/2021
 LocalizationGroup: Samples
 ---
 # COVID-19 tracking sample for US state and local governments
@@ -116,7 +116,7 @@ If you make changes to the report in Power BI Desktop, you can publish and repla
 
 You can also mash up the data in this report with data from another source. The following example is based on data from [Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19). Before publishing this data, we recommend reviewing the [disclaimers](#disclaimers) in this article.
 
-1. Select **Get Data** > **Web**.
+1. In Power BI Desktop, select **Get Data** > **Web**.
 
     :::image type="content" source="media/sample-covid-19-us/power-bi-desktop-get-data.png" alt-text="Get data button":::
 

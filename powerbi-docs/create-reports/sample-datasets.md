@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 03/27/2020
+ms.date: 07/15/2021
 LocalizationGroup: Samples
 ---
 # Get samples for Power BI

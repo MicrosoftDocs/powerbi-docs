@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 04/02/2021
+ms.date: 07/15/2021
 LocalizationGroup: Samples
 ---
 # Customer Profitability sample for Power BI: Take a tour
@@ -34,7 +34,7 @@ Before you can use the sample, you must first download it as a [content pack](#g
 
 2. In the bottom-left corner, select **Get Data**.
 
-   ![Select Get Data](media/sample-datasets/power-bi-get-data.png)
+   ![Select Get Data](media/sample-customer-profitability/power-bi-get-data.png)
 3. On the **Get Data** page that appears, select **Samples**.
 
 4. Select **Customer Profitability Sample**, then choose **Connect**.  
@@ -119,9 +119,9 @@ Many of the tiles on the Customer Profitability sample dashboard were pinned fro
 
    If the tile was created in Q&A, selecting it opens the Q&A window. Select **Exit Q&A** to return to the dashboard and try a different tile.
 
-2. The report has three pages. Each tab at the bottom of the report represents a different page.
+2. The report has three pages. You can select the page you want from the **Pages** pane on the left.
 
-    ![Three tabs at bottom](media/sample-customer-profitability/power-bi-report-tabs.png)
+    ![Screenshot showing three pages at the left.](media/sample-customer-profitability/power-bi-report-tabs.png)
 
     * **Team Scorecard** focuses on the performance of the five managers and their books of business.
     * **Industry Margin Analysis** provides a way to analyze the profitability compared to what's happening in the entire industry.
@@ -172,17 +172,15 @@ This page has a custom page size format.
 ## Dig into the data by asking questions with Q&A
 For our analysis, it might be helpful to determine which industry generates the most revenue for Valery. Let's use Q&A.
 
-1. Select **Edit report** to open the report in Editing view. Editing view is available only if you own the report. This view is sometimes called *creator* mode. If instead, this report is only shared with you, you can't open it in Editing view.
-
-2.  From the top of the dashboard, select **Ask a question** to open the Q&A question box.
+1.  From the top of the dashboard, select **Ask a question** to open the Q&A question box.
 
     ![Ask a question about your data](media/sample-customer-profitability/power-bi-ask-question.png)
 
-3. Type *total revenue by industry for Valery* in the question box. Notice how the visualization updates as you type the question.
+2. Type *total revenue by industry for Valery* in the question box. Notice how the visualization updates as you type the question.
 
     ![Type question into question box](media/sample-customer-profitability/power-bi-qna.png)
 
-   As you can see, the Distribution industry is the biggest revenue area for Valery.
+   As you can see, the Services industry is the biggest revenue area for Valery.
 
 ### Dig deeper by adding filters
 Let's take a look at the Distribution industry.  
