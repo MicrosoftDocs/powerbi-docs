@@ -227,14 +227,14 @@
       items: 
       - name: "Template apps overview"
         href: service-template-apps-overview.md
-      - name: "Create template apps"
+      - name: "Create and publish a template app"
         href: service-template-apps-create.md
       - name: "Tips for creating template apps"
         href: service-template-apps-tips.md
-      - name: "Install & distribute template apps"
-        href: service-template-apps-install-distribute.md
-      - name: "Update, delete, and extract a Power BI template app"
+      - name: "Manage your published template app"
         href: service-template-update-delete-extract.md
+      - name: "Install, share, and update a template app"
+        href: service-template-apps-install-distribute.md
       - name: "Template apps samples"
         href: service-template-apps-samples.md        
     - name: Connect to services
@@ -353,3 +353,5 @@
       href: desktop-connector-extensibility.md
     - name: "Trusted third-party connectors"
       href: desktop-trusted-third-party-connectors.md
+    - name: "Manage DirectQuery connections to a published dataset"
+      href: desktop-disable-directquery-connections-to-dataset.md

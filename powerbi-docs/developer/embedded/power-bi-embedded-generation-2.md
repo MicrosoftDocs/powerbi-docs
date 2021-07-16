@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 05/10/2021
+ms.date: 07/08/2021
 ---
 
 # Power BI Embedded Generation 2 (preview)
@@ -39,7 +39,7 @@ All of the Power BI Embedded Gen 1 capabilities such as pausing and resuming the
     * The need to upgrade your capacity
 
     >[!NOTE]
-    >Improved metrics will be made available later in the preview period. Customers seeking access to utilization metrics for the past seven days, can do so by contacting customer support.
+    >Improved metrics will be made available later in the preview period. You can get usage metrics for Embedded Gen2 capacities by using the [Premium Gen 2 Capacity Utilization Metrics app](https://aka.ms/GenutilizationInstall).
 
 ## Using Embedded Gen2
 
@@ -64,17 +64,17 @@ Embedded Gen2 does not provide an out-of-the-box vertical autoscale feature. Ins
 
 ## Known limitations
 
-* Embedded Gen2 capacity utilization can't be tracked in the [metrics app](../../admin/service-admin-premium-monitor-capacity.md). For more information, see [Premium Gen2 monitor updates](../../admin/service-premium-what-is.md#updates-for-premium-gen2-preview).
+* Embedded Gen2 capacity utilization can't be tracked in the [metrics app](../../admin/service-admin-premium-monitor-capacity.md). For more information, see [updates for Premium Gen2 (Preview)](../../admin/service-premium-gen2-what-is.md#updates-for-premium-gen2-preview).
 
 * Memory allocation settings for specific workloads don't apply to Embedded Gen2 capacities. For more information, see [Embedded Gen 2 memory enhancements](embedded-capacity.md#embedded-gen-2-memory-enhancements-preview)
 
 * If you're using XMLA with Embedded Gen2, make sure you're using the most recent versions of the data modeling and management tools.
 
-* Analysis services features in Embedded Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are listed in [Known limitations in Premium Gen2](../../admin/service-premium-what-is.md#limitations-in-premium-gen2).
+* Analysis services features in Embedded Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are listed in [limitations in Premium Gen2](../../admin/service-premium-gen2-what-is.md#limitations-in-premium-gen2).
 
 * All the current Azure metrics and log diagnostics for Power BI Embedded, support only Gen1 capacities.
 
-* For a list of Embedded Gen2 memory restrictions, see [memory restrictions in Premium Gen2 and Embedded Gen2](../../admin/service-premium-what-is.md#memory-restrictions).
+* For a list of Embedded Gen2 memory restrictions, see [limitations in Premium Gen2](../../admin/service-premium-gen2-what-is.md#limitations-in-premium-gen2).
 
 ## Next steps
 

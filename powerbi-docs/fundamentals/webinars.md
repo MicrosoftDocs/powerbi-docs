@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 05/19/2021
+ms.date: 07/01/2021
 ---
 # Power BI webinars
 [//]: # "Tatevik Tatero (tatevik.teroyan@simple-concepts.com) is a vendor who works with Chauncy Freels and helps to maintain this list of webinars"
@@ -16,11 +16,28 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Upcoming webinars
 
+**June 7th, 2021**  
+**Leverage M365 sensitivity labels to improve your Power BI deployment compliance and protect sensitive business data**    
+by Anton Fritz (Principal Program Manager, Power BI R&D) and Igor Bekerman (Microsoft 365 CxE)  
+[Register to watch on June 7th, 8:00 AM – 9:00 AM (PST) 2021](https://mipc.eventbuilder.com/event/47133)
+
 [Upcoming webinars from the Power BI community](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks)
 
 ## Featured webinars
 
 Get started with these popular on-demand webinars:
+
+**Harness Power BI for Self Service Data Prep with Dataflows**  
+by Charles Webb  
+[Watch now](https://info.microsoft.com/ww-Landing-harness-PowerBI-SelfService-Prep-Dataflows.html?LCID=EN-US)  
+
+**Understanding Power BI Premium Gen 2**  
+by David Magar  
+[Watch now]( https://info.microsoft.com/ww-Landing-Understanding-Power-BI-Premium-Gen-2.html?LCID=EN-US)  
+
+**Demystifying Power BI datasets**  
+by Peter Myers and Chris Webb  
+[Watch now](https://info.microsoft.com/ww-landing-demystifying-PowerBI-datasets.html?LCID=EN-US)  
 
 **Securing your data in motion and at rest with Power BI**  
 by Anton Fritz and Yitzhak Kesselman  

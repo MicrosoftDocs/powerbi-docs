@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.custom: video-68YvRs49VZM
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 06/26/2021
 LocalizationGroup: Data from files
 ---
 # How to apply sensitivity labels in Power BI

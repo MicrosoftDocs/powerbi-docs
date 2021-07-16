@@ -5,7 +5,9 @@
   - name: Overview
     expanded: true
     items: 
-    - name: "Visuals in Power BI"
+    - name: "Develop your own Power BI visual"
+      href: develop-power-bi-visuals.md
+    - name: "Where to find Power BI visuals"
       href: power-bi-custom-visuals.md
   - name: Tutorials
     expanded: true
@@ -64,8 +66,6 @@
       href: create-display-dialog-box.md         
     - name: "Add a display warning icon to your visual"
       href: visual-display-warning-icon.md      
-    - name: "Create R-powered visuals"
-      href: create-r-based-power-bi-desktop.md  
     - name: "Test your Power BI visual"  
       href: submission-testing.md
     - name: "Visual interactions"
@@ -116,7 +116,7 @@
       href: visual-api.md
     - name: "Local storage API" 
       href: local-storage.md
-    - name: "Rendering events" 
+    - name: "'Rendering' events API" 
       href: event-service.md
     - name: "Sorting"
       href: sort-options.md
