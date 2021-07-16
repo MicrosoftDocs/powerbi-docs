@@ -53,7 +53,6 @@ There are a few important considerations and limitations associated with downloa
 * If your administrator has turned off the ability to download data, this feature won't be visible in the Power BI service.
 * Datasets with incremental refresh can't be downloaded to a .pbix file.
 * Datasets enabled for [large models](../admin/service-premium-large-models.md) can't be downloaded to a .pbix file.
-* Live connect reports can't be downloaded to a .pbix file.
 * Downloading a .pbix file after deployment isn't supported as part of the [deployment pipeline (ALM)](./deployment-pipelines-process.md). 
 * Usage metric reports can't be downloaded to a .pbix file
 * Datasets modified by using the [XMLA endpoint](../admin/service-premium-connect-tools.md) can't be downloaded to a .pbix file.
