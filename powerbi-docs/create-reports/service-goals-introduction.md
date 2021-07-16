@@ -86,13 +86,13 @@ We do not pull in the history of time series if we only have a partial date (day
 There are a couple of reasons why your goal could not be getting updated:
 
 -	It’s a manual goal: Manual goals are not updated automatically as they are not connected to a data source with regular refreshes.  If you want to see a history of a manual goal, you can achieve that through check-ins.
--	You do not have a scheduled refresh on top of the dataset: Goal values are only updated as often as the dataset is refreshed.  If you don’t have a scheduled refresh on your dataset, you will not see any updates in the goal value.  [Learn about scheduled refreshes](../power-bi/report-server/configure-scheduled-refresh)
+-	You do not have a scheduled refresh on top of the dataset: Goal values are only updated as often as the dataset is refreshed.  If you don’t have a scheduled refresh on your dataset, you will not see any updates in the goal value.  [Learn about scheduled refreshes](../power-bi/report-server/configure-scheduled-refresh.md)
 -	Goals don’t get updated if they are created from a push dataset. 
 
 
 <b>I am trying to create a goal but I can’t connect to my report- I see a yellow warning icon?</b>
 
-To connect your current value or target to data, you need build permissions to that report. [Learn about build permissions](../power-bi/connect-data/service-datasets-build-permissions) 
+To connect your current value or target to data, you need build permissions to that report. [Learn about build permissions](../power-bi/connect-data/service-datasets-build-permissions.md) 
     
 <b>I shared a scorecard but my users can’t do check-ins and add notes. Why? </b>
 
