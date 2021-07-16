@@ -161,7 +161,7 @@ Let's start with the *content packs*. The built-in samples are available in the 
 2. In the bottom-left corner, select **Get data**.
 
     ![Get Data icon](media/sample-datasets/power-bi-get-data.png)
-3. On the Get Data page that appears, select **Samples**.
+3. On the **Get Data** page that appears, select **Samples**.
 
    ![Samples on Get Data](media/sample-datasets/get-data-samples.png)
 4. Select one of the samples to open a description of that sample, and choose **Connect**.  
@@ -217,7 +217,7 @@ Each of the sample content packs is also available as an Excel workbook. The Exc
 4. In the bottom-left corner of the navigation pane, select **Get data**.
 
     ![Screenshot showing Get data icon.](media/sample-datasets/power-bi-get-data.png)
-5. On the **Get data** page that appears, select **Files > Get**.
+5. On the **Get Data** page that appears, select **Files** > **Get**.
 
     ![Files > Get](media/sample-datasets/power-bi-files.png)
 6. Select the location where you downloaded and saved the sample.

@@ -39,7 +39,7 @@ Before you can use the sample, you must first download it as a [content pack](#g
 2. In the bottom-left corner, select **Get data**.
    
    ![Screenshot showing Get data.](media/sample-human-resources/power-bi-get-data.png)
-3. On the **Get data** page that appears, select **Samples**.
+3. On the **Get Data** page that appears, select **Samples**.
    
 4. Select **Human Resources Sample**, then choose **Connect**.  
    
