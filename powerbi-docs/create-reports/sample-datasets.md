@@ -216,8 +216,8 @@ Each of the sample content packs is also available as an Excel workbook. The Exc
 
 4. In the bottom-left corner of the navigation pane, select **Get data**.
 
-    ![Get Data icon](media/sample-datasets/power-bi-get-data.png)
-5. On the **Get Data** page that appears, select **Files > Get**.
+    ![Screenshot showing Get data icon.](media/sample-datasets/power-bi-get-data.png)
+5. On the **Get data** page that appears, select **Files > Get**.
 
     ![Files > Get](media/sample-datasets/power-bi-files.png)
 6. Select the location where you downloaded and saved the sample.

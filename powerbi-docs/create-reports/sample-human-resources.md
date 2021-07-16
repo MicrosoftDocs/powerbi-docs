@@ -80,9 +80,9 @@ Let's explore new hires first.
 
 4. Select different age groups and genders in the charts to explore the relationships between age, gender, region, and ethnicity group.
 
-5. Select **Human Resources Sample** from the top nav pane to return to the dashboard.
+5. Select **Human Resources Sample** from the top nav bar to see detailed information about the dashboard.
 
-   ![Return to dashboard](media/sample-human-resources/power-bi-breadcrumbs.png)
+   ![Screenshot showing selection of Human Resources Sample in the top navigation bar.](media/sample-human-resources/power-bi-breadcrumbs.png)
 
 ## Compare currently active and former employees
 Let's explore data for currently active employees and employees who no longer work for the company.

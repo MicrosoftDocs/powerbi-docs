@@ -22,7 +22,7 @@ This tutorial explores the Customer Profitability sample content pack in the Pow
 
 You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace in the Power BI service. 
 
-## Get the Sample
+## Get the sample
 
 Before you can use the sample, you must first download it as a [content pack](#get-the-content-pack-for-this-sample), [.pbix file](#get-the-pbix-file-for-this-sample), or [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
@@ -32,10 +32,10 @@ Before you can use the sample, you must first download it as a [content pack](#g
 
    If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace.
 
-2. In the bottom-left corner, select **Get Data**.
+2. In the bottom-left corner, select **Get data**.
 
-   ![Select Get Data](media/sample-customer-profitability/power-bi-get-data.png)
-3. On the **Get Data** page that appears, select **Samples**.
+   ![Sreenshot showing Get data.](media/sample-customer-profitability/power-bi-get-data.png)
+3. On the **Get data** page that appears, select **Samples**.
 
 4. Select **Customer Profitability Sample**, then choose **Connect**.  
 
@@ -172,7 +172,7 @@ This page has a custom page size format.
 ## Dig into the data by asking questions with Q&A
 For our analysis, it might be helpful to determine which industry generates the most revenue for Valery. Let's use Q&A.
 
-1.  From the top of the dashboard, select **Ask a question** to open the Q&A question box.
+1.  From the top of the dashboard, select **Ask a question about your data** to open the Q&A question box.
 
     ![Ask a question about your data](media/sample-customer-profitability/power-bi-ask-question.png)
 
@@ -186,7 +186,7 @@ For our analysis, it might be helpful to determine which industry generates the 
 Let's take a look at the Distribution industry.  
 
 1. Open the **Industry Margin Analysis** report page.
-2. Without selecting any visualizations on the report page, expand the filter pane on the right (if it isn't already expanded). The **Filters** pane should display only **Page level filters**.  
+2. Without selecting any visualizations on the report page, expand the filter pane on the right (if it isn't already expanded). The **Filters** pane should display only page level filters.  
 
    ![Page level filters](media/sample-customer-profitability/power-bi-filters.png)
 3. Locate the filter for **Industry** and select the arrow to expand the list. Let's add a page filter for the Distribution industry. First, clear all selections by clearing the **Select All** checkbox. Then select **Distribution** only.  

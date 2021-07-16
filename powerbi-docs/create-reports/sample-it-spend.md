@@ -34,7 +34,7 @@ You don't need a Power BI license to explore the samples in Power BI Desktop. If
 
 2. In the bottom-left corner, select **Get data**.
    
-   ![Select Get Data](media/sample-it-spend/power-bi-get-data.png)
+   ![Screenshot showing Get data.](media/sample-it-spend/power-bi-get-data.png)
 3. On the **Get data** page that appears, select **Samples**.
    
 4. Select **IT Spend Analysis Sample**, then choose **Connect**.  
