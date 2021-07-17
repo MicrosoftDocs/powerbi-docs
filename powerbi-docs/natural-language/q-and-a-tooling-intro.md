@@ -52,7 +52,27 @@ The dialog will show all the columns and tables and their respective terms/synon
 
 - Include in Q&A - This option allows a column or table to be omitted from Q&A meaning it will not be shown nor a result can be displayed with this column. A circumstance where you may decide to not include a column is when dealing with dates. If there are numerous date fields, or foreign keys, you may decide to remove all but one of the date fields so the correct date column is picked when a user asks a date related question.
 
-- Suggested Terms - Q&A will also recommend suggested terms retrieved from our suggestions engine to help you quickly add terms/synonyms. If the suggestions are not added, They will still function but will give the user an orange dotted line indicating Q&A thinks it has an answer but is not sure. If the suggested synonym is correct, click the + icon so it can be used as a synonym. if the suggestion is incorrect, then click the x which will remove the term and ensure it will not be used as a term/synonym and will not function inside Q&A. The suggestions are powered by Office Dictionary and also come from renames found inside a report
+- Suggested Terms - Q&A will also recommend suggested terms retrieved from our suggestions engine to help you quickly add terms/synonyms. If the suggestions are not added, They will still function but will give the user an orange dotted line indicating Q&A thinks it has an answer but is not sure. If the suggested synonym is correct, click the + icon so it can be used as a synonym. if the suggestion is incorrect, then click the x which will remove the term and ensure it will not be used as a term/synonym and will not function inside Q&A. The initial suggestions are powered by Office Dictionary or can come from renames found inside a report. Another way to get more suggested terms is through synonymn sharing within your organization. 
+
+#### Synonym sharing
+With synonym sharing you can leverage your coworkers’ synonyms and minimize duplicate effort when adding synonyms to your models. 
+To connect to shared synonyms, navigate to **Q&A setup** > **Field synonyms** and click **Get more synonyms**.
+
+![get-shared-synonyms](https://user-images.githubusercontent.com/47899466/126048790-1f8733c0-989f-4a4f-986e-55e549753bb5.png)
+
+This process may take a few seconds, but once it’s completed, you also have the option to share your synonyms to everyone in your org as well. 
+> [!Note] 
+> The synonyms will only get shared when you publish the report.
+
+![share-your-synonyms](https://user-images.githubusercontent.com/47899466/126048811-c594d3be-6dd6-4993-8815-fd9e640365a4.png)
+
+Any shared synonyms that match with fields in your model will show up in the **Suggested terms** section. Then you can click the plus icon (+) on the suggested term to add it a field synonym.
+
+![share-synonyms-in-suggested-terms](https://user-images.githubusercontent.com/47899466/126048824-e1c1c996-61d7-44bf-98c1-c2e67c5c4956.png)
+
+As new synonyms get shared within your organization, you can click the refresh icon to ensure that your **Suggested terms** are in-sync with your organization:
+
+![refresh-shared-synonyms](https://user-images.githubusercontent.com/47899466/126048854-56f5c8c7-ffb2-4fd8-a961-5791c19e361b.png)
 
 ### Review questions
 
