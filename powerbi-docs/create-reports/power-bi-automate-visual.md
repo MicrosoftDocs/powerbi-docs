@@ -20,10 +20,13 @@ When you create a Power Automate visual in a Power BI report, your end-users can
 
 1. Select the Power Automate icon from the **Visualizations** pane.
 
-    :::image type="content" source="media/power-bi-automate-visual/power-automate-icon.png" alt-text="Select the Power Automate icon.":::
+    ![power-automate-icon-in-visualization-pane](https://user-images.githubusercontent.com/47899466/126046816-a3426b9b-686d-4bd6-a8c2-7060c4bfe5c5.png)
 
-    If you’re using **Power BI Desktop**, you can also add the visual from the ribbon by navigating to the **Insert** tab and selecting **Power Automate (preview)** within the **Power Platform** section
-    It automatically gets added to your current report page, with getting started instructions.
+    If you’re using **Power BI Desktop**, you can also add the visual from the ribbon by navigating to the **Insert** tab and selecting **Power Automate (preview)** within the **Power Platform** section.
+    
+    ![power-automate-icon-in-desktop-ribbon](https://user-images.githubusercontent.com/47899466/126046809-9b9d4533-8f80-44af-b003-c67bf67dc06d.png)
+
+    Once you select the visual, it automatically gets added to your current report page, with getting started instructions.
 
 1. Scroll, resize the visual, or select the **Focus mode** icon to see all the instructions.
 
