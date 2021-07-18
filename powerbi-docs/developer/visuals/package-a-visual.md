@@ -26,9 +26,9 @@ Packaging a visual involves the following steps:
 
 3. In the `visual` object, modify the `displayName` property.
 
-    In the **Visualizations** pane, hovering over the icon reveals the display name.
-
     ![Display Name visual](media/custom-visual-develop-tutorial-format-options/display-name-viz.png)
+
+    In the **Visualizations** pane, hovering over the icon reveals the display name.
 
 4. Fill in or edit the following fields in the *pbiviz.json* file:
     * `visualClassName`
