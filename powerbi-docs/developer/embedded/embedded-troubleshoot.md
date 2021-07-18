@@ -281,15 +281,15 @@ After acquiring the IError object, you should look at the appropriate common err
 
 ## Datasets
 
-### How can I control who can access data?
+### How can I control who can view data?
 
 Any user with read permissions for a dataset can see the entire schema (tables, columns and measures) and all the data.
 
-* You cannot configure granular access to portions of the schema. For example, you cannot hide tables, columns or measures from certain users.
+* You cannot configure viewing permissions to portions of the schema. For example, you cannot hide tables, columns or measures from certain users.
 
-* You cannot separately control access to raw and aggregated data in the same dataset.
+* You cannot separately control viewing permissions to raw and aggregated data in the same dataset.
 
-To control which users can access data, use one of these methods:
+To control which users can view data, use one of these methods:
 
 * Row-level filtering using Power BI [row-level security (RLS)](/power-bi/service-admin-rls).
 
