@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
-ms.date: 04/13/2021
+ms.date: 07/18/2021
 ---
 
 # Troubleshoot your embedded application
@@ -278,6 +278,22 @@ After acquiring the IError object, you should look at the appropriate common err
 | TokenExpired | Access token has expired, resubmit with a new access token. Couldn't render a report visual titled: <visual title> | N/A | Query data Expired token |
 | OpenConnectionError | Can't display the visual. Couldn't render a report visual titled: <visual title> | N/A | Capacity paused or deleted while a report related to the capacity was open in a session |
 | ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server and try again. | N/A | <li> Capacity paused <li> Capacity deleted |
+
+## Datasets
+
+### How can control who can access data?
+
+Any user with read permissions for a dataset can see the entire schema (tables, columns and measures) and all the data.
+
+* You cannot configure granular access to portions of the schema. For example, you cannot hide tables, columns or measures from certain users.
+
+* You cannot separately control access to raw and aggregated data in the same dataset.
+
+To control which users can access data, use one of these methods:
+
+* Row-level filtering using Power BI [row-level security (RLS)](/power-bi/service-admin-rls).
+
+* Separate the data into different datasets. For example, you can create a dataset that only contains aggregated data and give your users access to that dataset only.
 
 ## Content rendering
 
