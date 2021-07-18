@@ -68,8 +68,6 @@
       href: register-app.md
     - name: "Monitor Power BI Embedded"
       href: monitor-power-bi-embedded.md      
-    - name: "Get an Azure AD access token"
-      href: get-azuread-access-token.md
     - name: "Embedding Q&A"
       href: qanda.md
     - name: "Troubleshoot your embedded application"
