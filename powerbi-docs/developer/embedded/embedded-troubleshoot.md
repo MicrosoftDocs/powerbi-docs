@@ -281,7 +281,7 @@ After acquiring the IError object, you should look at the appropriate common err
 
 ## Datasets
 
-### How can control who can access data?
+### How can I control who can access data?
 
 Any user with read permissions for a dataset can see the entire schema (tables, columns and measures) and all the data.
 
