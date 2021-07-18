@@ -7,7 +7,7 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 07/18/F2021
+ms.date: 07/18/2021
 ---
 
 # Row-level security with Power BI Embedded
