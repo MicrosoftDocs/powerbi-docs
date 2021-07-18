@@ -94,9 +94,6 @@ When you create a report in Power BI Desktop that contains an ANY data type colu
 
 Visuals created in Power BI Desktop using such columns may behave or appear as designed prior to a refresh event, but may change (due to TRUE/FALSE being converted to -1/0) after the refresh event.
 
-## Resolve the error: Container exited unexpectedly with code 0x0000DEAD
-
-If you get the **Container exited unexpectedly with code 0x0000DEAD** error, try to disable the scheduled refresh and republish the dataset.
 
 ## Next steps
 
