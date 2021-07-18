@@ -40,8 +40,8 @@ Creating a bar chart visual involves the following steps:
 1. [Creating a new project](#create-a-new-project)
 2. [Defining the capabilities](#define-capabilities) file -`capabilities.json`
 3. Creating the [visual API](#visual-api)
-4. Adding dependencies -`package.json`
-5. Packaging your visual -`pbiviz.json`
+4. Adding dependencies - *package.json*
+5. Packaging your visual -*pbiviz.json*
 
 ## Create a new project
 
@@ -59,7 +59,7 @@ The purpose of this tutorial is to help you understand how a visual is structure
 
     You should now have a folder called *BarChart* containing the visual's files.
 
-3. In **VS Code**, open the [*tsconfig.json*] (visual-project-structure.md#tsconfigjson) file and change the name of `"files"` to *src/barChart.ts*.
+3. In **VS Code**, open the [*tsconfig.json*] (visual-project-structure.md#tsconfigjson) file and change the name of "files" to "src/barChart.ts".
 
     ```typescript
     "files": [
@@ -75,8 +75,8 @@ The purpose of this tutorial is to help you understand how a visual is structure
 
 ## [Clone source code](#tab/CloneSourcecode) 
 
-```PowerShell
-pbiviz new BarChart
+```typescript
+git clone
 ```
 
 ---
@@ -87,11 +87,11 @@ You should now have a new folder for your visual with the following files and fo
 
 For a detailed explanation of the function of each of these files see [Power BI visual project structure](visual-project-structure.md).
 
-The two files we'll focus on in this tutorial are the `capabilities.json` file, which describes the visual to the host, and the `src/barchart.ts` file, which contains the visual's API.
+The two files we'll focus on in this tutorial are the *capabilities.json* file, which describes the visual to the host, and the *src/barchart.ts* file, which contains the visual's API.
 
 ## Define capabilities
 
-The [`capabilities.json`](capabilities.md) file is where we bind data to the host. We describe the kind of data fields it accepts and what features the visual should have.
+The [*capabilities.json*](capabilities.md) file is where we bind data to the host. We describe the kind of data fields it accepts and what features the visual should have.
 
 ![Data binding in a Field bucket](./media/create-bar-chart/data-binding.png)
 
@@ -102,7 +102,7 @@ Variables are defined and bound in the [`dataRoles`](capabilities.md) section of
 * **Categorical** data that will be represented by the different bars on the chart
 * **Numerical**, or measured data, which is represented by the height of each bar
 
-In **Visual Studio Code**, in the `capabilities.json` file, confirm that the following JSON fragment appears in the object labeled *dataRoles*.
+In **Visual Studio Code**, in the *capabilities.json* file, confirm that the following JSON fragment appears in the object labeled "dataRoles".
 
 ```json
     "dataRoles": [
@@ -123,7 +123,7 @@ In **Visual Studio Code**, in the `capabilities.json` file, confirm that the fol
 
  Next, add [data mapping](dataview-mappings.md) to tell the host what to do with these variables:
 
-Replace the content of the `"dataViewMappings"` object with the following:
+Replace the content of the "dataViewMappings" object with the following:
 
 ```json
 "dataViewMappings": [
@@ -158,7 +158,7 @@ Replace the content of the `"dataViewMappings"` object with the following:
     ],
 ```
 
-The above code defines `"conditions"` such that each field bucket can bind to only one field at a time. Notice that we use the data role's internal `name` to refer to each field.
+The above code creates "conditions" that each data-role object can hold only one field at a time. Notice that we use the data-role's internal `name` to refer to each field.
 
 It also sets the [categorical data mapping](dataview-mappings.md#categorical-data-mapping)
 so that each field is mapped to the correct variable.
@@ -169,9 +169,9 @@ The ["objects"](objects-properties.md) section of the *capabilities* file is whe
 
 For more information on objects and how they work, see [Objects](objects-properties.md).
 
-The following objects are optional. Add them if you want to do the optional sections of this tutorial of adding colors and rendering the X-axis.
+The following objects are optional. Add them if you want to go through the optional sections of this tutorial of adding colors and rendering the X-axis.
 
-Replace the content of the `"objects"` section with the following:
+Replace the content of the "objects" section with the following:
 
 ```json
      "objects": {
@@ -199,21 +199,21 @@ Replace the content of the `"objects"` section with the following:
      },
 ```
 
-Save the **capabilities.json** file.
+Save the *capabilities.json* file.
 
 Your final *capabilities* file should look like [the one in this example](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/capabilities.json).
 
 ## Visual API
 
-All visuals start with a class that implements the `IVisual` interface. The `src/visual.ts` file is the default file that contains this class.
+All visuals start with a class that implements the `IVisual` interface. The *src/visual.ts* file is the default file that contains this class.
 
-In this tutorial, we'll call our *IVisual* file `barChart.ts`. [Download the file](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts) and save it to the */src* folder, if you haven't done so already. In this section, we'll go through this file in detail and describe the various sections.
+In this tutorial, we'll call our `IVisual` file *barChart.ts*. [Download the file](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts) and save it to the */src* folder, if you haven't done so already. In this section, we'll go through this file in detail and describe the various sections.
 
 ### Imports
 
 The first section of the file imports the modules that are needed for this visual. Notice that in addition to the Power BI visual modules, we also import the [d3 library](https://d3js.org/).
 
-The following modules are imported to your `barChart.ts` file:
+The following modules are imported to your *barChart.ts* file:
 
 ```typescript
 import "./../style/visual.less";
@@ -409,7 +409,7 @@ function visualTransform(options: VisualUpdateOptions, host: IVisualHost): BarCh
 ```
 
 >[!NOTE]
->The next few functions in the `barChart.ts` file deal with color and creating the X axis. Those are optional and are discussed further down in this tutorial. This tutorial will continue from the `IVisual` function.
+>The next few functions in the *barChart.ts* file deal with color and creating the X axis. Those are optional and are discussed further down in this tutorial. This tutorial will continue from the `IVisual` function.
 
 ## Rendering the visual
 
@@ -656,7 +656,7 @@ You can toggle these objects on or off in the **Property** pane.
 This example renders an X-axis on the bar chart as a static object.
 
 We already added the `enableAxis` property to the *capabilities* file and the barChartSettings interface.
-Add the following code to the `barChart.ts` file *before* the iVisual class to draw the X-axis:
+Add the following code to the *barChart.ts* file *before* the iVisual class to draw the X-axis:
 
 ```typescript
 function getAxisTextFillColor(
@@ -734,7 +734,7 @@ The `colorPalette` service, in the `visualTransform` function, manages these col
 For more detailed instructions on how to add color to your bar chart go to [Add colors to your Power BI visual](add-colors-power-bi-visual.md)
 
 > [!NOTE]
-> Verify that your final `barChart.ts` file looks like this [`barChart.ts` source code](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts), or download the [`barChart.ts` source code](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts) and use it to replace your file.
+> Verify that your final *barChart.ts* file looks like this [*barChart.ts* source code](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts), or download the [*barChart.ts* source code](https://github.com/blackleaden/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts) and use it to replace your file.
 
 ## Object enumeration utility (optional)
 
@@ -795,7 +795,7 @@ export function getCategoricalObjectValue<T>(category: DataViewCategoryColumn, i
 
 The function `getCategoricalObjectValue` provides a convenient way to access properties by their category index. You must provide an `objectName` and `propertyName` that match the object and property in *capabilities.json*.
 
-See [objectEnumerationUtility.ts](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/objectEnumerationUtility.ts) for the source code.
+See [*objectEnumerationUtility.ts*](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/objectEnumerationUtility.ts) for the source code.
 
 ## Test the visual
 
@@ -840,21 +840,7 @@ You can further customize your visual by adding more features. You can add featu
 
 Before you can load your visual into [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or share it with the community in the [Power BI Visual Gallery](https://visuals.powerbi.com/), you have to package it.
 
-1. In **VS Code**, navigate to the root folder of your visual project, which contains the file *pbiviz.json* file.
-2. Fill in or edit the following fields in the *pbiviz.json* file:
-    * visualClassName
-    * description
-    * author name
-    * author email
-3. In **PowerShell**, enter the following command to generate a *pbiviz* file:
-
-    ```powershell
-    pbiviz package
-    ```
-
-    This command creates a *pbiviz* file in the *dist/* directory of your visual project, and overwrites any previous *pbiviz* file that might exist.
-
-For more detailed instructions on packaging a visual, see the [packaging the visual](custom-visual-develop-tutorial-format-options.md#packaging-the-custom-visual) in theCircle card tutorial.
+Follow the instructions in [Package a Power BI visual](package-a-visual.md) to prepare the visual for sharing.
 
 >[!NOTE]
 >
