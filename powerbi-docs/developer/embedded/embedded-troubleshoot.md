@@ -293,7 +293,7 @@ To control which users can view data, use one of these methods:
 
 * Row-level filtering using Power BI [row-level security (RLS)](/power-bi/service-admin-rls).
 
-* Use [object level security (OLS)](/analysis-services/tabular-models/object-level-security).
+* [Object level security (OLS)](/analysis-services/tabular-models/object-level-security).
 
 * Separate the data into different datasets. For example, you can create a dataset that only contains aggregated data and give your users access to that dataset only.
 
