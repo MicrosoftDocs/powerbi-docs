@@ -26,7 +26,6 @@ You should always ensure that basic requirements for refresh are met and verifie
 
 Once you've confirmed those requirements are met, take a look through the following sections for more troubleshooting. 
 
-
 ## Email notifications
 
 If you're coming to this article from an email notification, and you no longer want to receive emails about refresh issues, contact your Power BI admin. Ask them to remove your email or an email list you're subscribed to from the appropriate datasets in Power BI. They can do this from the following area in the Power BI admin portal.
