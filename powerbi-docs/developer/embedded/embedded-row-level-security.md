@@ -90,7 +90,7 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
     {
         PowerBIClient pbiClient = this.GetPowerBIClient();
 
-        // Create a request for getting Embed token
+        // Create a request for getting an embed token
         // This method works only with new Power BI V2 workspace experience
         var tokenRequest = new GenerateTokenRequestV2(
             reports: new List<GenerateTokenRequestV2Report>() { new GenerateTokenRequestV2Report(reportId) },
@@ -99,7 +99,7 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
             identities: new List<EffectiveIdentity> { rls }
         );
 
-        // Generate Embed token
+        // Generate an embed token
         var embedToken = pbiClient.EmbedToken.GenerateToken(tokenRequest);
 
         return embedToken;
