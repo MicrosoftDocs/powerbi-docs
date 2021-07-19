@@ -6,6 +6,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/connect-data/desktop-disable-directquery-connections-to-dataset.md",
+            "redirect_url": "/power-bi/connect-data/desktop-discourage-directquery-connections-to-dataset",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-admin-power-bi-expressroute.md",
             "redirect_url": "/power-bi",
             "redirect_document_id": false
