@@ -27,7 +27,7 @@
       href: desktop-bidirectional-filtering.md
     - name: "Composite models"
       href: desktop-composite-models.md
-    - name: "User defined aggregations"
+    - name: "User-defined aggregations"
       href: aggregations-advanced.md   
     - name: "Manage storage mode"
       href: desktop-storage-mode.md

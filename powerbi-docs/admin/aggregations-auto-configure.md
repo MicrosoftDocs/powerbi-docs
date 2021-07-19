@@ -1,6 +1,6 @@
 ---
 title: Configure automatic aggregations 
-description: Describes how to enable and configure automatic aggregations to optimize query performance.
+description: Describes how to enable and configure automatic aggregations to optimize query performance for DirectQuery datasets.
 author: minewiskan
 ms.author: owend
 ms.service: powerbi
