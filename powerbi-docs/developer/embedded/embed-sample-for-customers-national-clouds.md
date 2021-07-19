@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: devx-track-js
-ms.date: 02/05/2019
+ms.date: 07/18/2021
 ---
 
 # Tutorial: Embed a Power BI content into your application for national clouds
