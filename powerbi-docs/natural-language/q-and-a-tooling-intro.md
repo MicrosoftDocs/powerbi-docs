@@ -36,9 +36,9 @@ Q&A tooling is only available in Power BI Desktop, and currently only supports i
 
     ![Screenshot of Q&A Getting started.](media/q-and-a-tooling-intro/qna-tooling-dialog.png)
 
-## Field Synonyms
+## Field synonyms
 
-Select **Field Synonyms** to see all the tables and columns that belong to the model. This view allows you to add alternative names to match the columns to help users. You can also choose whether or not a column or table should be hidden from Q&A.
+Select **Field synonyms** to see all the tables and columns that belong to the model. This view allows you to add alternative names to match the columns to help users. You can also choose whether or not a column or table should be hidden from Q&A.
 
 ![Screenshot of Q&A field synonyms home.](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-home.png)
 
