@@ -7,7 +7,7 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 02/05/2019
+ms.date: 07/18/2021
 ---
 
 # Multi-Geo support for Power BI Embedded
@@ -75,8 +75,6 @@ To support management of capacities with Multi-Geo through API, we have made som
 * When moving data from one region to another in a Multi-Geo environment, the source data may stay in the region from which the data was moved for up to 30 days. During that time, users don't have access to it. It's removed from this region and destroyed during the 30-day period.
 
 * Multi-Geo doesn't result in better performance in general. Loading reports and dashboards still involve requests to the home region for metadata.
-
-* In an embedding for your customers scenario, query text and query result continue to transit through the home tenant.
 
 ## Next steps
 
