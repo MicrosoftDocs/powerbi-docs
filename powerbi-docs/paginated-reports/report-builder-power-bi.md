@@ -3,7 +3,7 @@ title: "Power BI Report Builder"
 description: Power BI Report Builder is a tool for authoring paginated reports that you can publish to the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 05/12/2021
+ms.date: 07/19/2021
 ms.service: powerbi
 ms.subservice: report-builder
 ms.custom: video-78TZeiEhveY
