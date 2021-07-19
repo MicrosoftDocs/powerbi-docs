@@ -1542,7 +1542,7 @@
         },
         {
             "source_path": "powerbi-docs/developer/azure-pbie-what-is-power-bi-embedded.md",
-            "redirect_url": "/power-bi/developer/embedded/azure-pbie-what-is-power-bi-embedded",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
             "redirect_document_id": false
         },
         {
@@ -1647,22 +1647,22 @@
         },
         {
             "source_path": "powerbi-docs/developer/get-azuread-access-token.md",
-            "redirect_url": "/power-bi/developer/embedded/get-azuread-access-token",
+            "redirect_url": "/power-bi/developer/embedded/generate-embed-token",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/migrate-code-snippets.md",
-            "redirect_url": "/power-bi/developer/embedded/migrate-code-snippets",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/migrate-from-powerbi-embedded.md",
-            "redirect_url": "/power-bi/developer/embedded/migrate-from-powerbi-embedded",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/migrate-tool.md",
-            "redirect_url": "/power-bi/developer/embedded/migrate-tool",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
             "redirect_document_id": false
         },
         {
@@ -3617,8 +3617,13 @@
         },
         {
             "source_path": "powerbi-docs/service-report-save.md",
-            "redirect_url": "/power-bi/create-reports/service-report-save",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/create-reports/desktop-upload-desktop-files",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/service-report-save.md",
+            "redirect_url": "/power-bi/create-reports/desktop-upload-desktop-files",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-reports-visual-interactions.md",
@@ -3894,6 +3899,36 @@
 		    "source_path": "powerbi-docs/fundamentals/security-baselines.md",
 		    "redirect_url": "/security/benchmark/azure/baselines/power-bi-security-baseline",
 		    "redirect_document_id": false
-		}
+		},
+        {
+            "source_path": "powerbi-docs/developer/embedded/azure-pbie-what-is-power-bi-embedded.md",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/embedding.md",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/migrate-from-powerbi-embedded.md",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/migrate-tool.md",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/migrate-code-snippets.md",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/get-azuread-access-token.md",
+            "redirect_url": "/power-bi/developer/embedded/generate-embed-token",
+            "redirect_document_id": false
+        }                        
     ]           
 }

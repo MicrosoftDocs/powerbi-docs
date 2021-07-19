@@ -40,7 +40,7 @@ Key activities during a deployment to the test workspace typically include:
 - **Workspace content:** Publish datasets and reports to the test workspace, and create dashboards.
 - **App.** Publish an [app](../consumer/end-user-apps.md) using the content from the test workspace, if it will form part of the UAT process. Usually, app permissions are restricted to a small number of people involved with UAT.
 - **Data refresh:** [Schedule the dataset refresh](../connect-data/refresh-scheduled-refresh.md) for any Import datasets for the period when UAT is actively occurring.
-- **Security:** Update or verify [workspace roles](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces). Testing workspace access includes a small number of people who are involved with UAT.
+- **Security:** Update or verify [workspace roles](../collaborate-share/service-roles-new-workspaces.md). Testing workspace access includes a small number of people who are involved with UAT.
 
 > [!NOTE]
 > For more information about options for deployment to development, test, and production, see Section 9 of the [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP).
@@ -86,7 +86,7 @@ Key activities during a deployment to the production workspace typically include
 - **Data refresh:** [Schedule the dataset refresh](../connect-data/refresh-scheduled-refresh.md) for any imported datasets.
 - **Workspace content:** Publish datasets and reports to the production workspace, and create dashboards. [Deployment pipelines](../create-reports/deployment-pipelines-overview.md) can simplify the process to deploy to development, test, and production workspaces if your content has been published to workspaces on Premium capacity.
 - **App:** If apps are part of your content distribution strategy, publish an [app](../consumer/end-user-apps.md) using the content from the production workspace.
-- **Security:** Update and verify [workspace roles](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) based on your content distribution and collaboration strategy.
+- **Security:** Update and verify [workspace roles](../collaborate-share/service-roles-new-workspaces.md) based on your content distribution and collaboration strategy.
 - **Dataset settings:** Update and verify settings for each dataset, including:
   - [Endorsement](../collaborate-share/service-endorse-content.md) (such as certified or promoted)
   - Gateway connection or data source credentials

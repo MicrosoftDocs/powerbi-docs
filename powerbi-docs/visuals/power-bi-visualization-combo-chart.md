@@ -116,7 +116,7 @@ In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again
 From here you might want to:
 
 * [Add the combo chart as a dashboard tile](../create-reports/service-dashboard-tiles.md).
-* [Save the report](../create-reports/service-report-save.md).
+* Save the report.
 * [Make the report more accessible for people with disabilities](../create-reports/desktop-accessibility-overview.md).
 
 ## Cross-highlighting and cross-filtering

@@ -7,27 +7,38 @@ ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/31/2019
+ms.date: 06/21/2021
 ---
 
 # Highlight data points in Power BI Visuals
 
-By default whenever an element is selected the `values` array in the `dataView` object will be filtered to just the selected values. It will cause all other visuals on the page to display just the selected data.
+By default, whenever an element is selected, the `values` array in the `dataView` [object](objects-properties.md) is filtered to just the selected values. This filtering causes all other visuals on the page to display just the selected data.
 
-![highlight `dataview` default behavior](media/highlight/highlight-dataview.png)
+If you set the `supportsHighlight` property in your `capabilities.json` to `true`, you'll receive the full unfiltered `values` array along with a `highlights` array. The `highlights` array will be the same length as the values array and any non-selected values will be set to `null`. With this property enabled the visual will highlight the appropriate data by comparing the `values` array to the `highlights` array.
 
-If you set the `supportsHighlight` property in your `capabilities.json` to `true`, you'll receive the full unfiltered `values` array along with a `highlights` array. The `highlights` array will be the same length as the values array and any non-selected values will be set to `null`. With this property enabled it's the visual's responsibility to highlight the appropriate data by comparing the `values` array to the `highlights` array.
+### [No highlight support](#tab/Standard)
 
-![`dataview` supports highlight](media/highlight/highlight-dataview-supports.png)
+![highlight `dataview` default behavior](media/highlight/dataview-support.png)
 
-In the example, you'll notice that 1 bar is selected. And it's the only value in the highlights array. It's also important to note that there could be multiple selections and partial highlights. The highlighted values will be presented in the data view.
+### [Highlight support](#tab/Highlight)
+
+![`dataview` supports highlight](media/highlight/highlight-support.png)
+
+---
+
+In the example, you'll notice:
+
+* **Without** highlight support, the selection is the only value in the `values` array, and the only bar presented in the data view.
+* **With** highlight support, all values are in the `values` array. The `highlights` array contains a `null` value for non-highlighted elements. All bars appear in the data view with highlighted bar a different color.
+
+There can also be multiple selections and partial highlights. The highlighted values will be presented in the data view.
 
 > [!NOTE]
 > Table data view mapping doesn't support the highlights feature.
 
 ## Highlight data points with categorical data view mapping
 
-The visuals with categorical data view mapping have `capabilities.json` with `"supportsHighlight": true` parameter. For example:
+For visuals with [categorical data view mapping](dataview-mappings.md#categorical-data-mapping), add  `"supportsHighlight": true` to the `capabilities.json` file. For example:
 
 ```json
 {
@@ -213,7 +224,7 @@ categoryValues.forEach((category: PrimitiveValue, index: number) => {
     div.classList.add("horizontal");
     this.div.appendChild(div);
 
-    // div element to vizualize value of measure
+    // div element to visualize value of measure
     let barValue = document.createElement("div");
     barValue.style.width = +measureValue * 10 + "px";
     barValue.style.display = "flex";
@@ -223,7 +234,7 @@ categoryValues.forEach((category: PrimitiveValue, index: number) => {
     let bp = document.createElement("p");
     bp.innerText = category.toString();
 
-    // div element to vizualize highlight of measure
+    // div element to visualize highlight of measure
     let barHighlight = document.createElement("div");
     barHighlight.classList.add("highlight")
     barHighlight.style.backgroundColor = "blue";
@@ -241,7 +252,7 @@ categoryValues.forEach((category: PrimitiveValue, index: number) => {
 });
 ```
 
-Apply required styles for elements to use `flex box` and define colors for div elements:
+Apply required styles for elements to use `flexbox` and define colors for div elements:
 
 ```css
 div.vertical {
@@ -270,7 +281,7 @@ In the result, you should have the following view of the visual.
 
 ## Highlight data points with matrix data view mapping
 
-The visuals with matrix data view mapping have `capabilities.json` with `"supportsHighlight": true` parameter. For example:
+For visuals with [matrix data view mapping](dataview-mappings.md#matrix-data-mapping), add  `"supportsHighlight": true` to the `capabilities.json` file. For example:
 
 ```json
 {
@@ -423,7 +434,7 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-Clear content of `div` elements before render new data:
+Clear content of `div` elements before rendering new data:
 
 ```typescript
 public update(options: VisualUpdateOptions) {
@@ -541,7 +552,7 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-The main step of using highlighting is to process additional array of values.
+The main step of using highlighting is to create an additional array of values.
 
 If you inspect the object of terminal node, you can see that the values array has two properties - value and highlight:
 
@@ -575,13 +586,13 @@ JSON.stringify(options.dataViews[0].matrix.rows.root.children[0].children[0].chi
 }
 ```
 
-Where `value` property represents value of node without applying a selection from other visual, and highlight property indicates which part of data was highlighted.
+Where `value` represents the value of the node without applying a selection from other visual, and `highlight` indicates which part of the data was highlighted.
 
 > [!NOTE]
-> Value of `highlight` property can be less that value of `value` property.
-> In means that value was higlighted partially.
+> If the value of `highlight` is less than the value of `value`,
+> It means that `value` was highlighted partially.
 
-Add the code to process the `values` array of node if it is presented:
+Add code to process the `values` array of the node if it's presented:
 
 ```typescript
 public update(options: VisualUpdateOptions) {
@@ -642,6 +653,11 @@ As the result you'll get the visual with buttons and values `highlighted value/d
 
 ## Next steps
 
-* [Read about matrix data view mappings](dataview-mappings.md#matrix-data-mapping)
+>[!div class="nextstepaction"]
+>[Matrix data view mappings](dataview-mappings.md#matrix-data-mapping)
 
-* [Read about capabilities of the visual](capabilities.md)
+>[!div class="nextstepaction"]
+>[Capabilities of the visual](capabilities.md)
+
+>[!div class="nextstepaction"]
+>[Add interactivity to visual using selections](selection-api.md)

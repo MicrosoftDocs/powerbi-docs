@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 06/03/2021
+ms.date: 02/21/2020
 LocalizationGroup: Gateways
 ---
 
@@ -159,15 +159,15 @@ Complete the following configuration steps:
 
 1. Use the **Active Directory Users and Computers** MMC snap-in on the domain controller for the **ContosoFrontEnd** domain and verify no delegation settings are applied for the gateway service account.
 
-    ![Gateway connector properties](media/service-gateway-sso-kerberos-resource/gateway-connector-properties.png)
+    ![Gateway connector properties](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
 
 2. Use **Active Directory Users and Computers** on the domain controller for the **ContosoBackEnd** domain and verify no delegation settings are applied for the back-end service account.
 
-    ![SQL service properties](media/service-gateway-sso-kerberos-resource/sql-service-properties.png)
+    ![SQL service properties](media/service-gateway-sso-kerberos/sql-service-properties.png)
 
 3. In the **Attribute Editor** tab of the account properties, verify that the **msDS-AllowedToActOnBehalfOfOtherIdentity** attribute isn't set.
 
-    ![SQL service attributes](media/service-gateway-sso-kerberos-resource/sql-service-attributes.png)
+    ![SQL service attributes](media/service-gateway-sso-kerberos/sql-service-attributes.png)
 
 4. In **Active Directory Users and Computers**, create a group on the domain controller for the **ContosoBackEnd** domain. Add the **GatewaySvc** gateway service account to the **ResourceDelGroup** group. 
 

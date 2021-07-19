@@ -115,7 +115,7 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
 
 - During preview, the maximum length of a chain of models is three. Extending beyond the chain length of three is not supported and results in errors. 
 
-- Using third party tools, a *discourage chaining* flag can be set on a model to prevent a chain from being created or extended. To set it, look for the *DiscourageCompositeModels* property on a model. 
+- A *discourage chaining* flag can be set on a model to prevent a chain from being created or extended. See [Manage DirectQuery connections to a published dataset](desktop-disable-directquery-connections-to-dataset.md) for more information.
 
 - As with all DirectQuery connections, the connection to a Power BI dataset will not be shown in Power Query.
 
@@ -134,8 +134,6 @@ There are also a few **limitations** you need to keep in mind:
 - Using DirectQuery on datasets from “My workspace” is not currently supported. 
 
 - Using Power BI Embedded with datasets that include a DirectQuery connection to a Power BI datasets or Azure Analysis Services model is not currently supported.
-
-- Format strings on columns and measures from a remote source are not imported to the composite model.
 
 - Calculation groups on remote sources are not supported, with undefined query results.
 

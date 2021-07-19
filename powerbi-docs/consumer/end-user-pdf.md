@@ -8,7 +8,7 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/11/2021
+ms.date: 06/02/2021
 LocalizationGroup: Share your work
 ---
 # Export reports from Power BI to PDF

@@ -23,7 +23,7 @@ Here are some of the things you can do with the Power BI APIs.
 | Embed reports, dashboards, and tiles for Power BI users and Non-Power BI users. | [How to embed your Power BI dashboards, reports, and tiles ](../embedded/embed-sample-for-customers.md) |
 | Perform management tasks on Power BI objects. | [Power BI REST API reference](/rest/api/power-bi/) |
 | Extend an existing business workflow to push key data into a Power BI dashboard. | [Push data into a dashboard ](walkthrough-push-data.md) |
-| Authenticate to Power BI. | [Authenticate to Power BI ](../embedded/get-azuread-access-token.md) |
+| Authenticate to Power BI. | [Authenticate to Power BI ](../embedded/generate-embed-token.md) |
 
 > [!NOTE]
 > The Power BI APIs still refer to workspaces as groups. Any references to groups mean that you are working with workspaces.

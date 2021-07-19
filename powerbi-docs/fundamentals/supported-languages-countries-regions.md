@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 01/25/2021
+ms.date: 06/23/2021
 LocalizationGroup: Get started
 ---
 # Supported languages and countries/regions for Power BI
@@ -87,7 +87,7 @@ Stay tuned as we work to bring additional features to other languages.
 ### Choose your language in the browser
 Power BI detects your language based on the language preferences on your computer. The way you access and change these preferences may vary depending on your operating system and browser. Here's how to access these preferences from Microsoft Edge and Google Chrome.
 
-#### Microsoft Edge
+#### Microsoft Edge (version 91)
 1. Select the **Settings and more** ellipses (...) from the upper right corner of your browser window, and choose **Settings**.    
     ![Screenshot of Edge showing the Settings and more icon.](media/supported-languages-countries-regions/power-bi-setting-icon.png)
 
@@ -97,7 +97,7 @@ Power BI detects your language based on the language preferences on your compute
 
 1. Select your preferred language.
 
-#### Google Chrome (version 87)
+#### Google Chrome (version 91)
 1. Select the menu button in the upper right corner of your browser window, and choose **Settings**.
    
    ![Screenshot of Google Chrome showing the menu button.](media/supported-languages-countries-regions/power-bi-chrome.png)
