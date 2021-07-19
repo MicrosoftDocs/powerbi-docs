@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/07/2020
+ms.date: 07/19/2021
 LocalizationGroup: Visualizations
 ---
 # Slicers in Power BI
@@ -129,7 +129,7 @@ In the current report, the **District Monthly Sales** page has a **District Mana
     >If you sync a slicer to a page but don't make it visible on that page, slicer selections made on the other pages still filter the data on the page.
 
 ### Sync separate slicers
-You can also sync two or more separate slicers. This is particulary useful when working with composite models as you might want to make the same selection across sources without relying on cross source group relationships. To sync two or more separate slicers, you will need to create a group.
+You can also sync two or more separate slicers. This is particulary useful when working with composite models, as you might want to make the same selection across sources without relying on cross-source group relationships. To sync two or more separate slicers, you need to create a group.
 
 1. To get started, make sure the **Selection pane** is visible by selecting it from the **View** menu.
 
@@ -137,21 +137,24 @@ You can also sync two or more separate slicers. This is particulary useful when 
    
    ![Screenshot of creating a group using the Selection pane.](media/power-bi-visualization-slicers/power-bi-create-group.png)
 
-   Alternatively, you can create the group by selecting the slicers and selecting **Group** from the **Format** menu.
+   Alternatively, create the group by selecting the slicers and selecting **Group** from the **Format** menu.
 
-3. Rename the group you just created by double clicking on the group name in the **Selection pane** and confirming the rename:
+3. Rename the group you just created by double-clicking the group name in the **Selection pane** and confirming the rename.
 
    ![Screenshot of renaming a group in the Selection pane.](media/power-bi-visualization-slicers/power-bi-rename-group.png)
 
 4. Make sure the **Sync slicers** pane is visible by selecting it from the **View** menu.
 
-5. In the **Sync slicers** pane, select one of the slicers in the group and enter the group name under **Advanced options**:
+5. In the **Sync slicers** pane, select one of the slicers in the group and enter the group name under **Advanced options**.
 
    ![Screenshot of entering a group name in the Advanced section of the Selection pane.](media/power-bi-visualization-slicers/power-bi-sync-group.png)
 
-6. Make sure to select either **Sync field changes to other slicers**, **Sync filter changes to other slicers** or both depending on your scenario. If you just want to keep the slicers in sync so filters set by the slicers are kept in sync, select **Sync filter changes to other slicers**. If you also want to make sure that any changes you make to the field on which the slicers is based get synced across the group select **Sync field changes to other slicers**.
+6. Make sure to select either **Sync field changes to other slicers**, **Sync filter changes to other slicers** or both depending on your scenario. 
 
-7. Test the sync works as you need by changing the selection and / or field in one of the slicers and observe it gets updated in the other slicer(s) in the group.
+    - If you just want to keep the slicers in sync so filters set by the slicers are kept in sync, select **Sync filter changes to other slicers**. 
+    - If you also want to make sure that any changes you make to the field on which the slicers are based get synced across the group, select **Sync field changes to other slicers**.
+
+7. Test the sync works the way you want by changing the selection and / or field in one of the slicers. Observe that it gets updated in the other slicer(s) in the group.
 
 ## Filtering slicers
 You can apply visual-level filters to slicers to reduce the list of values that are displayed in the slicer. For example you might filter out blank values from a list slicer, or filter out certain dates from a range slicer. When you do this it only affects *the values that are shown in the slicer*, not *the filter that the slicer applies to other visuals* when you make a selection. For example, let's say you apply a filter to a range slicer to only show certain dates. The selection on the slicer will only show the first and last dates from that range, but you would still see other dates in your other visuals. Once you change the selected range in the slicer you'll see the other visuals update. Clearing the slicer would show all the dates again.
