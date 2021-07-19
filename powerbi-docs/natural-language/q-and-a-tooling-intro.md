@@ -6,7 +6,7 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 08/31/2020
+ms.date: 07/19/2021
 ---
 # Intro to Q&A tooling to train Power BI Q&A (preview)
 
@@ -30,21 +30,21 @@ Q&A tooling is only available in Power BI Desktop, and currently only supports i
 1. Open Power BI Desktop and use Q&A to create a visual. 
 2. From the corner of the visual, select the gear icon. 
 
-    ![Q&A visual gear](media/q-and-a-tooling-intro/qna-visual-gear.png)
+    ![Screenshot of Q&A visual gear.](media/q-and-a-tooling-intro/qna-visual-gear.png)
 
     The Getting started page opens.  
 
-    ![Q&A Getting started](media/q-and-a-tooling-intro/qna-tooling-dialog.png)
+    ![Screenshot of Q&A Getting started.](media/q-and-a-tooling-intro/qna-tooling-dialog.png)
 
 ### Field Synonyms
 
 Select **Field Synonyms** to see all the tables and columns that belong to the model. This view allows you to add alternative names to match the columns to help users. You can also choose whether or not a column or table should be hidden from Q&A.
 
-![Q&A field synonyms home](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-home.png)
+![Screenshot of Q&A field synonyms home.](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-home.png)
 
 Click on one of the tables to expand and you will see a dialog similar to the one below.
 
-![Q&A field synonyms expanded](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-expanded.png)
+![Screenshot of Q&A field synonyms expanded.](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-expanded.png)
 
 The dialog will show all the columns and tables and their respective terms/synonyms that users can use when asking questions against the dataset. You can quickly see all the terms in one place and also add or remove terms for multiple columns. 
 
@@ -58,39 +58,39 @@ The dialog will show all the columns and tables and their respective terms/synon
 With synonym sharing you can leverage your coworkers’ synonyms and minimize duplicate effort when adding synonyms to your models. 
 To connect to shared synonyms, navigate to **Q&A setup** > **Field synonyms** and click **Get more synonyms**.
 
-![get-shared-synonyms](https://user-images.githubusercontent.com/47899466/126048790-1f8733c0-989f-4a4f-986e-55e549753bb5.png)
+![Screenshot of selecting Field synonyms, then Get more synonyms.](media/q-and-a-tooling-intro/get-shared-synonyms.png)
 
 This process may take a few seconds, but once it’s completed, you also have the option to share your synonyms to everyone in your org as well. 
 > [!Note] 
 > The synonyms will only get shared when you publish the report.
 
-![share-your-synonyms](https://user-images.githubusercontent.com/47899466/126048811-c594d3be-6dd6-4993-8815-fd9e640365a4.png)
+![Screenshot of Success dialog box.](media/q-and-a-tooling-intro/share-your-synonyms.png)
 
-Any shared synonyms that match with fields in your model will show up in the **Suggested terms** section. Then you can click the plus icon (+) on the suggested term to add it a field synonym.
+Any shared synonyms that match fields in your model will show up in the **Suggested terms** section. Then you can select the plus icon (+) on the suggested term to add it as a field synonym.
 
-![share-synonyms-in-suggested-terms](https://user-images.githubusercontent.com/47899466/126048824-e1c1c996-61d7-44bf-98c1-c2e67c5c4956.png)
+![Screenshot of selecting the plus icon (+) on the suggested term to add it as a field synonym.](media/q-and-a-tooling-intro/share-synonyms-in-suggested-terms.png)
 
-As new synonyms get shared within your organization, you can click the refresh icon to ensure that your **Suggested terms** are in-sync with your organization:
+As new synonyms get shared within your organization, you can click the refresh icon to ensure that your **Suggested terms** are in sync with your organization:
 
-![refresh-shared-synonyms](https://user-images.githubusercontent.com/47899466/126048854-56f5c8c7-ffb2-4fd8-a961-5791c19e361b.png)
+![Screenshot of ensuring that your Suggested terms are in sync with your organization.](media/q-and-a-tooling-intro/refresh-shared-synonyms.png)
 
 ### Review questions
 
 Select **Review questions** to see a list of datasets being used in the Power BI service for your tenant. The **Review questions** page also displays the dataset owner, workspace, and last refreshed date. From here you can select a dataset and see what questions users have been asking. The data also shows words that were not recognized. All data shown here is for the last 28 days.
 
-![Q&A review questions](media/q-and-a-tooling-intro/qna-tooling-review-questions.png)
+![Screenshot of Q&A review questions.](media/q-and-a-tooling-intro/qna-tooling-review-questions.png)
 
 ### Teach Q&A
 
 The **Teach Q&A** section allows you to train Q&A to recognize words. To begin, type a question that contains a word or words that Q&A doesn't recognize. Q&A prompts you for the definition of that term. Enter either a filter or a field name that corresponds to what that word represents. Q&A then reinterprets the original question. If you're happy with the results, you can save your input. To learn more, see [Teach Q&A](q-and-a-tooling-teach-q-and-a.md)
 
-![Q&A teach synonym preview](media/q-and-a-tooling-intro/qna-tooling-teach-fixpreview.png)
+![Screenshot of Q&A teach synonym preview.](media/q-and-a-tooling-intro/qna-tooling-teach-fixpreview.png)
 
 ### Manage terms
 
 Anything you've saved from the Teach Q&A section shows up here, so you can review or delete terms you've defined. Currently you can't edit an existing definition, so to redefine a term you must delete and recreate that term.
 
-![Q&A Manage terms](media/q-and-a-tooling-intro/qna-manage-terms.png)
+![Screenshot of Q&A Manage terms.](media/q-and-a-tooling-intro/qna-manage-terms.png)
 
 ### Suggest questions
 
@@ -107,7 +107,7 @@ To start, type the question you want to add in the text box. In the preview sect
  
 Select the **Add** button to add this question to **Your suggested questions**. Every additional question is added to the end of this list. The questions will show up in the Q&A visual in the same order as they do in this list. 
 
-:::image type="content" source="media/q-and-a-tooling-intro/power-bi-qna-save-suggest-questions.png" alt-text="Save suggested questions":::
+:::image type="content" source="media/q-and-a-tooling-intro/power-bi-qna-save-suggest-questions.png" alt-text="Screenshot of saving suggested questions.":::
  
 Make sure to select **Save** to show your list of suggested questions in the Q&A visual. 
 
