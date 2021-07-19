@@ -840,9 +840,21 @@ The visual gets its data structure as described in the following code (only the 
 
 ## Data reduction algorithm
 
-To control the amount of data to receive in the data view, you can apply a data reduction algorithm.
+The data reduction algorithm controls which data and how much data is received in the data view.
 
-By default, all Power BI visuals have the top data reduction algorithm applied with the *count* set to 1000 data points. It's the same as setting the following properties in the *capabilities.json* file:
+The *count* is set to the maximum number of values that the data view can accept. If there are more than *count* values, the data reduction algorithm determines which values should be received.
+
+### Data reduction algorithm types
+
+There are four types of data reduction algorithm settings:
+
+* `top`: The first *count* values will be taken from the dataset.
+* `bottom`: The last *count* values will be taken from the dataset.
+* `sample`: The first and last items are included, and *count* number of items with equal intervals between them.
+For example, if you have a dataset [0, 1, 2, ... 100] and a *count* of 9, you'll receive the values [0, 10, 20 ... 100].
+* `window`: Loads one *window* of data points at a time containing *count* elements. Currently, `top` and `window` are equivalent. We are working toward fully supporting a windowing setting.
+
+By default, all Power BI visuals have the top data reduction algorithm applied with the *count* set to 1000 data points. This is equivalent to setting the following properties in the *capabilities.json* file:
 
 ```json
 "dataReductionAlgorithm": {
@@ -854,23 +866,11 @@ By default, all Power BI visuals have the top data reduction algorithm applied w
 
 You can modify the *count* value to any integer value up to 30000. R-based Power BI visuals can support up to 150000 rows.
 
-## Data reduction algorithm types
-
-There are four types of data reduction algorithm settings:
-
-* `top`: If you want to limit the data to values taken from the top of the dataset. The top first *count* values will be taken from the dataset.
-* `bottom`: If you want to limit the data to values taken from the bottom of the dataset. The last "count" values will be taken from the dataset.
-* `sample`: Reduce the dataset by a simple sampling algorithm, limited to a *count* number of items. It means that the first and last items are included, and a *count* number of items have equal intervals between them.
-For example, if you have a dataset [0, 1, 2, ... 100] and a *count* of 9,  you'll receive the values [0, 10, 20 ... 100].
-* `window`: Loads one *window* of data points at a time containing *count* elements. Currently, `top` and `window` are equivalent. We are working toward fully supporting a windowing setting.
-
-## Data reduction algorithm usage
+### Data reduction algorithm usage
 
 The data reduction algorithm can be used in categorical, table, or matrix data view mapping.
 
-You can set the algorithm into `categories` and/or group section of `values` for categorical data mapping.
-
-### Example 8
+In categorical data mapping, you can add the algorithm to "categories" and/or "group" section of `values` for categorical data mapping.
 
 ```json
 "dataViewMappings": {
@@ -903,9 +903,7 @@ You can set the algorithm into `categories` and/or group section of `values` for
 }
 ```
 
-You can apply the data reduction algorithm to the `rows` section of the Data View mapping table.
-
-### Example 9
+In table data view mapping, apply the data reduction algorithm to the `rows` section of the Data View mapping table.
 
 ```json
 "dataViewMappings": [
@@ -930,4 +928,5 @@ You can apply the data reduction algorithm to the `rows` and `columns` sections 
 
 ## Next steps
 
-Read how to [add drill-down support for data view mappings in Power BI visuals](drill-down-support.md).
+> [!div class="nextstepaction"]
+> [Add drill-down support for data view mappings in Power BI visuals](drill-down-support.md)
