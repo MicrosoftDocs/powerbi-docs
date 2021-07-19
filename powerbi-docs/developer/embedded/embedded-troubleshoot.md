@@ -285,7 +285,7 @@ After acquiring the IError object, you should look at the appropriate common err
 
 Any user with read permissions for a dataset can see the entire schema (tables, columns and measures) and all the data. You cannot separately control viewing permissions to raw and aggregated data in the same dataset.
 
-To manage viewing data for your users, use one of these methods:
+To manage which portion of the data your users can view, use one of these methods:
 
 * Row-level filtering using Power BI [row-level security (RLS)](/power-bi/service-admin-rls).
 
