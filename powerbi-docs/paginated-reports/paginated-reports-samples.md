@@ -7,7 +7,7 @@ ms.reviewer: 'swgupt'
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/09/2021
+ms.date: 07/19/2021
 ---
 
 # Sample Power BI paginated reports
