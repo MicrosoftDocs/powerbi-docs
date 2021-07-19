@@ -7,7 +7,7 @@ ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/25/2021
+ms.date: 07/19/2021
 LocalizationGroup: Create reports
 ---
 # Create a Power Automate visual for Power BI (preview)
@@ -20,11 +20,11 @@ When you create a Power Automate visual in a Power BI report, your end-users can
 
 1. Select the Power Automate icon from the **Visualizations** pane.
 
-    ![power-automate-icon-in-visualization-pane](https://user-images.githubusercontent.com/47899466/126046816-a3426b9b-686d-4bd6-a8c2-7060c4bfe5c5.png)
+    ![Screenshot of selecting the Power Automate icon from the Visualizations pane.](media/power-bi-automate-visual/power-automate-icon-in-visualization-pane.png)
 
-    If you’re using **Power BI Desktop**, you can also add the visual from the ribbon by navigating to the **Insert** tab and selecting **Power Automate (preview)** within the **Power Platform** section.
+    In **Power BI Desktop**, you can also add the visual from the ribbon. On the **Insert** tab, select **Power Automate (preview)** in the **Power Platform** section.
     
-    ![power-automate-icon-in-desktop-ribbon](https://user-images.githubusercontent.com/47899466/126046809-9b9d4533-8f80-44af-b003-c67bf67dc06d.png)
+    ![Screenshot of selecting the Power Automate icon on the Insert tab.](media/power-bi-automate-visual/power-automate-icon-in-desktop-ribbon.png)
 
     Once you select the visual, it automatically gets added to your current report page, with getting started instructions.
 
