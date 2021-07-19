@@ -129,7 +129,7 @@ In the current report, the **District Monthly Sales** page has a **District Mana
     >If you sync a slicer to a page but don't make it visible on that page, slicer selections made on the other pages still filter the data on the page.
 
 ### Sync separate slicers
-You can also sync two or more separate slicers. This is particulary useful when working with composite models, as you might want to make the same selection across sources without relying on cross-source group relationships. To sync two or more separate slicers, you need to create a group.
+You can also sync two or more separate slicers. This is particularly useful when working with composite models, as you might want to make the same selection across sources without relying on cross-source group relationships. To sync two or more separate slicers, you need to create a group.
 
 1. To get started, make sure the **Selection pane** is visible by selecting it from the **View** menu.
 
