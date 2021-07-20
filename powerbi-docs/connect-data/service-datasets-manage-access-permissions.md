@@ -1,6 +1,6 @@
 ---
-title: Share access to a dataset
-description: As a dataset owner, you share and grant access to your datasets so that others can use them. Learn how to grant access to your datasets.
+title: Manage dataset access permissions
+description: As a dataset owner, can review and manage access to your dataset, to help keep your sensitive data secure.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: yardena
