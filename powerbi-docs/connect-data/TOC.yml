@@ -173,6 +173,8 @@
         href: service-datasets-across-workspaces.md
       - name: "Share datasets"
         href: service-datasets-share.md
+      - name: "Manage dataset access"
+        href: service-datasets-manage-access-permissions.md
       - name: "Build permission for shared datasets"
         href: service-datasets-build-permissions.md
       - name: "Create reports based on datasets"
