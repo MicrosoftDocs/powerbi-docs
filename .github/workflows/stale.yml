@@ -1,0 +1,40 @@
+name: Mark stale issues and pull requests
+
+on:
+  schedule:
+  - cron: "0 */6 * * *"
+
+jobs:
+  stale:
+
+    runs-on: ubuntu-latest
+   
+    steps:
+    - uses: actions/stale@v3
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        days-before-pr-stale: 14
+        days-before-pr-close: 730
+        stale-pr-label: inactive
+        close-pr-label: auto-close
+        exempt-pr-labels: keep-open
+        stale-pr-message: >
+          This pull request has been inactive for 14 days.
+          If you're done making changes, don't forget to sign off. See the [contributor guide](https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-pull-request-automation) for instructions.
+          If you're still working and want to stop these notifications, apply the "keep-open" label to your PR. However, we don't advise long-running PRs due to the risk of merge conflicts. We'll begin auto-closing stale PRs in September 2021. Thank you!
+          
+          Power BI Docs Team
+          
+          [Contact Us](mailto:kfollisteam@microsoft.com)
+          
+          [Contributor Guide]https://review.docs.microsoft.com/en-us/help/contribute/powerbi-docs?branch=master)
+        close-pr-message: >
+          This pull request has been inactive for two years(!). At this time, we are closing the PR. 
+          If you decide to continue working on your change, you can reopen the PR and continue working. Thank you!
+           
+          Power BI Docs Team
+          
+          [Contact Us](mailto:kfollisteam@microsoft.com)
+          
+          [Contributor Guide](https://review.docs.microsoft.com/en-us/help/contribute/powerbi-docs?branch=master)
+        
