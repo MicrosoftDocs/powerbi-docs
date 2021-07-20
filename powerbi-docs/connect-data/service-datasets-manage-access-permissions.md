@@ -51,7 +51,8 @@ Click **+ Add user** to grant dataset access to another user. The [Share dataset
 
 The shared report links tab lists [links that have been created to shared reports](../collaborate-share/service-share-dashboards.md) that are based on your dataset. Such links may also grant access to the report’s underlying dataset, and so they are listed here. You can see what permissions the link carries and who created the link. You can also delete the link from the system if you so desire.
 
->[!WARNING] Deleting a link removes it from the system. Users who use the link to access a report may lose access to that report.
+>[!WARNING]
+> Deleting a link removes it from the system. Users who use the link to access a report may lose access to that report.
 
 ![Screenshot of shared report links tab on the dataset access management page.](media/service-datasets-manage-access-permissions/power-bi-dataset-shared-report-links-tab.png)
  
@@ -63,5 +64,6 @@ The pending tab lists dataset access requests that are waiting for your decision
 
 ## Next steps
 
+* [Share a dataset](service-datasets-share.md)
 * [Use datasets across workspaces](service-datasets-across-workspaces.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
