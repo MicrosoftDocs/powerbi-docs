@@ -59,7 +59,7 @@ Packaging a visual involves the following steps:
 
 4. Review the icon.
 
-    ![Viz pane image](media/package-a-visual/viz-pane-image.png)
+    ![Viz pane image](media/package-visual/viz-pane-image.png)
 
 ## Package the visual
 
@@ -73,7 +73,7 @@ Packaging a visual involves the following steps:
 
     This command creates a *pbiviz* file in the *dist/* directory of your visual project, and overwrites any previous *pbiviz* file that might exist.
 
-    ![Dist folder](media/package-a-visual/dist-folder.png)
+    ![Dist folder](media/package-visual/dist-folder.png)
 
 The package is output to the **dist** folder of the project. The package contains everything required to import the custom visual into either the Power BI service or a Power BI Desktop report. You have now packaged the custom visual, and it is now ready for use.
 
