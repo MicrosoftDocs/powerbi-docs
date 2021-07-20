@@ -12,9 +12,15 @@ ms.date: 01/28/2021
 
 # Understand data view mapping in Power BI visuals
 
-This article discusses data view mapping and describes how data roles relate to each other and allow you to specify conditional requirements for them. The article also describes each `dataMappings` type.
+This article discusses data view mapping and describes how data roles are used to create different types of visuals and how to specify conditional requirements for them. The article also describes each `dataMappings` type.
 
-Each valid mapping produces a data view, but we currently support performing only one query per visual. You ordinarily get only one data view. However, you can provide multiple data mappings in certain conditions, which allow:
+Each valid mapping produces a data view. You can provide multiple data mappings under certain conditions. The supported mapping options are:
+
+* [conditions](#conditions)
+* [categorical](#categorical-data-mapping)
+* [single](#single-data-mapping)
+* [table](#table-data-mapping)
+* [matrix](#matrix-data-mapping)
 
 ```json
 "dataViewMappings": [
@@ -28,7 +34,7 @@ Each valid mapping produces a data view, but we currently support performing onl
 ]
 ```
 
-Power BI creates a mapping to a data view if and only if the valid mapping is filled in `dataViewMappings`.
+Power BI creates a mapping to a data view if and only if the valid mapping is also defined in `dataViewMappings`.
 
 In other words, `categorical` might be defined in `dataViewMappings` but other mappings, such as `table` or `single`, might not be. For example:
 
@@ -40,7 +46,7 @@ In other words, `categorical` might be defined in `dataViewMappings` but other m
 ]
 ```
 
-Power BI produces a data view with a single `categorical` mapping, and `table` and other mappings are undefined:
+Power BI produces a data view with a single `categorical` mapping. In this case, `table` and other mappings are undefined:
 
 ```javascript
 {
@@ -54,9 +60,9 @@ Power BI produces a data view with a single `categorical` mapping, and `table` a
 
 ## Conditions
 
-This section describes conditions for a particular data mapping. You can provide multiple sets of conditions and, if the data matches one of the described sets of conditions, the visual accepts the data as valid.
+This section describes conditions for a particular data mapping. If the data matches one of the described sets of conditions, the visual accepts the data as valid.
 
-Currently, for each field, you can specify a minimum and maximum value. The value represents the number of fields that can be bound to that data role. 
+Currently, for each field, you can specify a minimum and maximum value. The value represents the number of fields that can be bound to that data role.
 
 > [!NOTE]
 > If a data role is omitted in the condition, it can have any number of fields.
@@ -74,6 +80,7 @@ You can drag multiple fields into each data role. In this example, you limit the
 ### Example 2
 
 In this example, either of two conditions is required:
+
 * Exactly one category data field and exactly two measures
 * Exactly two categories and exactly one measure.
 
