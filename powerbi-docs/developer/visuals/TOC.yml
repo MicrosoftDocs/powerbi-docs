@@ -14,7 +14,7 @@
       href: develop-circle-card.md  
     - name: "Tutorial: Create a Power BI visual using React"
       href: create-react-visual.md
-    - name: "Build a bar chart"
+    - name: "Tutorial: Build a bar chart"
       href: create-bar-chart.md
     - name: "Add formatting options"
       href: custom-visual-develop-tutorial-format-options.md
@@ -62,6 +62,8 @@
       href: submission-testing.md
     - name: "Use R-powered Power BI visuals in Power BI"
       href: ../../create-reports/desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
+    - name: "Package a visual"
+      href: package-a-visual.md
     - name: "Visual interactions"
       href: visuals-interactions.md
     - name: "Add selections"

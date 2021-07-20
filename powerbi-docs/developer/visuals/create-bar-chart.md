@@ -37,10 +37,10 @@ In this tutorial, you learn how to:
 
 Creating a bar chart visual involves the following steps:
 
-1. [Creating a new project](#create-a-new-project)
-2. [Defining the capabilities](#define-capabilities) file -`capabilities.json`
-3. Creating the [visual API](#visual-api)
-4. Adding dependencies - *package.json*
+1. [Create a new project](#create-a-new-project)
+2. [Define the capabilities](#define-capabilities) file -`capabilities.json`
+3. Create the [visual API](#visual-api)
+4. Add dependencies - *package.json*
 5. Packaging your visual -*pbiviz.json*
 
 ## Create a new project
@@ -169,7 +169,7 @@ The ["objects"](objects-properties.md) section of the *capabilities* file is whe
 
 For more information on objects and how they work, see [Objects](objects-properties.md).
 
-The following objects are optional. Add them if you want to go through the optional sections of this tutorial of adding colors and rendering the X-axis.
+The following objects are optional. Add them if you want to go through the optional sections of this tutorial to add colors and render the X-axis.
 
 Replace the content of the "objects" section with the following:
 
@@ -261,7 +261,7 @@ import { dataViewWildcard } from "powerbi-visuals-utils-dataviewutils";
 
 ### Interfaces
 
-Next, we define the view model [interfaces](utils-interactivity-selections.md#defining-an-interface-for-data-points). The following three interfaces are used to describe our bar chart visual:
+Next, we define the viewmodel [interfaces](utils-interactivity-selections.md#defining-an-interface-for-data-points). The following three interfaces are used to describe our bar chart visual:
 
 * BarChartDataPoint
 * BarChartViewModel
@@ -333,7 +333,7 @@ This function is called whenever the visual is updated.
 
 ```typescript
 /**
- * Function that converts queried data into a view model that will be used by the visual.
+ * Function that converts queried data into a viewmodel that will be used by the visual.
  *
  * @function
  * @param {VisualUpdateOptions} options - Contains references to the size of the container
@@ -681,7 +681,7 @@ function getAxisTextFillColor(
 }
 ```
 
-## (Optional) Adding color (data-bound objects)
+## (Optional) Add color (data-bound objects)
 
 Data-bound objects are similar to static objects, but typically deal with data selection. For example, you can use data-bound objects to interactively select the color associated with each data point.
 
@@ -826,7 +826,7 @@ Run the visual in the **Power BI** server to see how it looks:
 
 6. Change the colors of the different categories.
 
-## Adding other features
+## Add other features
 
 You can further customize your visual by adding more features. You can add features that increase the visual's functionality, enhance its look and feel, or give the user more control over its appearance. For example, you can:
 
