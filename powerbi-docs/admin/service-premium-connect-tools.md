@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/05/2021
+ms.date: 07/16/2021
 ms.custom: ''
 LocalizationGroup: Premium
 ---
@@ -236,6 +236,10 @@ To learn more about using SSMS to script metadata, see [Create Analysis Services
 The XMLA endpoint enables a wide range of scenarios for fine-grain refresh capabilities using SSMS, automation with PowerShell, [Azure Automation](/azure/automation/automation-intro), and [Azure Functions](/azure/azure-functions/functions-overview) using TOM. You can, for example, refresh certain [incremental refresh](../connect-data/incremental-refresh-overview.md) historical partitions without having to reload all historical data.
 
 Unlike configuring refresh in the Power BI service, refresh operations through the XMLA endpoint are not limited to 48 refreshes per day, and the [scheduled refresh timeout](../connect-data/refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout) is not imposed.
+
+Date, time, and status for dataset refresh operations that include a write transaction through the XMLA endpoint are recorded and shown in dataset Refresh history.
+
+:::image type="content" source="media/service-premium-connect-tools/refresh-history-via-xmla.png" alt-text="Refresh history  via XMLA endpoint":::
 
 ## Dynamic Management Views (DMV)
 
