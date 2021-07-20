@@ -20,11 +20,11 @@ In this tutorial, you learn how to:
 
 > [!div class="checklist"]
 >
-> * [Define the capabilities](#define-capabilities) of your visual
-> * [Understand the source code](#visual-api) used to build a visual
-> * [Render the visual](#rendering-the-visual)
-> * [Add objects to the properties pane](#define-objects-for-the-properties-pane)
-> * [Package the visual](#package-the-visual)
+> * Define the capabilities of your visual
+> * Understand the source code
+> * Render the visual
+> * Add objects to the properties pane
+> * Package the visual
 
 ## Set up your environment
 
@@ -40,8 +40,7 @@ Creating a bar chart visual involves the following steps:
 1. [Create a new project](#create-a-new-project)
 2. [Define the capabilities](#define-capabilities) file -`capabilities.json`
 3. Create the [visual API](#visual-api)
-4. Add dependencies - *package.json*
-5. Packaging your visual -*pbiviz.json*
+4. [Package](#package-the-visual) your visual -*pbiviz.json*
 
 ## Create a new project
 
