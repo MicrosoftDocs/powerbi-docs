@@ -843,7 +843,7 @@ Follow the instructions in [Package a Power BI visual](package-a-visual.md) to p
 
 >[!NOTE]
 >
->For the full source code of a bar chart with more features, including [tool-tips](add-tooltips.md) and a [context menu](context-menu.md), see [PowerBI visuals sample bar chart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart).
+>For the full source code of a bar chart with more features, including [tool-tips](add-tooltips.md) and a [context menu](context-menu.md), see [PowerBI visuals sample bar chart](package-visual.md).
 
 ## Next steps
 
