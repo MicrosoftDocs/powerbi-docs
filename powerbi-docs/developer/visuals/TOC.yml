@@ -60,6 +60,8 @@
       href: office-store.md
     - name: "Set up your environment for developing a Power BI visual"
       href: environment-setup.md
+    - name: "Package a Power BI visual"
+      href: package-visual.md
     - name: "Import a custom visual"
       href: import-visual.md
     - name: "Create a dialog box"
