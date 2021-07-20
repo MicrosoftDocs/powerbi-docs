@@ -40,8 +40,7 @@ Creating a bar chart visual involves the following steps:
 1. [Create a new project](#create-a-new-project)
 2. [Define the capabilities](#define-capabilities) file -`capabilities.json`
 3. Create the [visual API](#visual-api)
-4. Add dependencies - *package.json*
-5. Packaging your visual -*pbiviz.json*
+4. [Package](#package-the-visual) your visual -*pbiviz.json*
 
 ## Create a new project
 
