@@ -73,7 +73,7 @@ The last section contains sample scorecards. As a new user, you can select one t
 
 **Why don’t I see history for my goal when I connect to a Power BI data point?**
 
-You don’t see a history for a single data point, because we only pull history for time series data. To see the history of your goal when you connect to time series data, select **Track all data in this time series** when you connect. 
+You don’t see a history for a single data point because we only pull history for time series data. To see the history of your goal when you connect to time series data, select **Track all data in this time series** when you connect. 
 
 
 **I'm connecting to time series data and still don’t see the history of the goal. Why not?**
@@ -82,10 +82,10 @@ We don't pull in the history of time series if we only have a partial date (day 
 
 **Why aren't my goals getting updated over time in my scorecard?**
 
-There are a couple of reasons why your goal could not be getting updated:
+There are a few reasons why your goal may not be getting updated:
 
--	It’s a manual goal: Manual goals aren't updated automatically as they're not connected to a data source with regular refreshes.  To see a history of a manual goal, do regular check-ins.
--	You do not have a scheduled refresh on top of the dataset: Goal values are only updated as often as the dataset is refreshed.  If you don’t have a scheduled refresh on your dataset, you will not see any updates in the goal value.  Learn about [scheduled refreshes](../report-server/configure-scheduled-refresh.md).
+-	It’s a manual goal: Manual goals aren't updated automatically as they're not connected to a data source with regular refreshes.  To create a history for a manual goal, do regular check-ins.
+-	You don't have scheduled refresh for the dataset: Goal values are only updated as often as the dataset is refreshed.  If you don’t have a scheduled refresh on your dataset, you won't see any updates in the goal value. Learn about [scheduled refresh](../connect-data/refresh-scheduled-refresh.md).
 -	Goals don’t get updated if they're created from a push dataset. 
 
 **I'm trying to create a goal but I can’t connect to a report. Why do I see a yellow warning icon?**
@@ -110,7 +110,7 @@ Changing the tracking cycle only changes the trend that you see below your value
 
 **Why don’t I see the Power BI Premium workspace I’m looking for when I create a scorecard?**
 
-In order to create a scorecard in a premium workspace, you need contributor or owner access to that workspace.
+In order to create a scorecard in a Premium workspace, you need a contributor or owner role in that workspace. Learn about [roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md).
 
 ## Issues and limitations 
   
