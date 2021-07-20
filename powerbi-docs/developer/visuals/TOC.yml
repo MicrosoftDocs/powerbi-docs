@@ -16,7 +16,7 @@
       href: develop-circle-card.md  
     - name: "Tutorial: Adding formatting options"
       href: custom-visual-develop-tutorial-format-options.md
-    - name: "Build a bar chart"
+    - name: "Tutorial: Build a bar chart"
       href: create-bar-chart.md
     - name: "Tutorial: Create a Power BI visual using React"
       href: create-react-visual.md
