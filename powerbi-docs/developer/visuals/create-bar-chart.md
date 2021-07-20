@@ -83,7 +83,7 @@ git clone
 
 You should now have a new folder for your visual with the following files and folders:
 
-![Structure of visuals](./media/create-bar-chart/visual-structure.png)
+![Structure of visuals.](./media/create-bar-chart/visual-structure.png)
 
 For a detailed explanation of the function of each of these files see [Power BI visual project structure](visual-project-structure.md).
 
@@ -93,7 +93,7 @@ The two files we'll focus on in this tutorial are the *capabilities.json* file, 
 
 The [*capabilities.json*](capabilities.md) file is where we bind data to the host. We describe the kind of data fields it accepts and what features the visual should have.
 
-![Data binding in a Field bucket](./media/create-bar-chart/data-binding.png)
+![Data binding in a Field bucket.](./media/create-bar-chart/data-binding.png)
 
 ### Define data roles
 
@@ -651,7 +651,7 @@ You can add objects to the **Property** pane to further customize the visual. Th
 
 You can toggle these objects on or off in the **Property** pane.
 
-![Objects in the Property pane](./media/create-bar-chart/property-pane.png)
+![Objects in the Property pane.](./media/create-bar-chart/property-pane.png)
 
 This example renders an X-axis on the bar chart as a static object.
 
@@ -685,7 +685,7 @@ function getAxisTextFillColor(
 
 Data-bound objects are similar to static objects, but typically deal with data selection. For example, you can use data-bound objects to interactively select the color associated with each data point.
 
-![Screenshot of color selection on properties](./media/create-bar-chart/object-databound-property.png)
+![Screenshot of color selection on properties.](./media/create-bar-chart/object-databound-property.png)
 
 We already defined the `colorSelector` object in the *capabilities* file.
 
