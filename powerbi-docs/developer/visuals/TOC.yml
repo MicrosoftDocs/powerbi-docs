@@ -16,12 +16,12 @@
       href: develop-circle-card.md  
     - name: "Tutorial: Adding formatting options"
       href: custom-visual-develop-tutorial-format-options.md
+    - name: "Build a bar chart"
+      href: create-bar-chart.md    
     - name: "Tutorial: Create a Power BI visual using React"
       href: create-react-visual.md
     - name: "Tutorial: Create an R-powered visual"
       href: create-r-based-power-bi-desktop.md
-    - name: "Build a bar chart"
-      href: create-bar-chart.md
     - name: "Add unit tests for visual project"
       href: unit-tests-introduction.md
     - name: "Build a funnel plot from R script to R visual"
