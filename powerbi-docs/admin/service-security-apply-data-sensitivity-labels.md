@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.custom: video-68YvRs49VZM
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 06/26/2021
 LocalizationGroup: Data from files
 ---
 # How to apply sensitivity labels in Power BI
@@ -31,28 +31,24 @@ When data protection is enabled on your tenant, sensitivity labels appear in the
 ![Enable sensitivity labels](media/service-security-apply-data-sensitivity-labels/apply-data-sensitivity-labels-01.png)
 
 **To apply or change a sensitivity label on a report or dashboard**
-1. Click **More options (...)**.
-1. Select **Settings**.
-1. In the settings side pane choose the appropriate sensitivity label.
-1. Save the settings.
 
->[!NOTE]
->If the label is greyed out, you may not have the correct [usage rights](service-security-sensitivity-label-change-enforcement.md) to change the label. If you need to change a sensitivity label and can’t, either ask the person who applied the label in the first place to modify it, or contact the Microsoft 365/Office security administrator and request the necessary [usage rights](service-security-sensitivity-label-change-enforcement.md) for the label.
+1. Go to **Settings**.
+1. In the settings side pane, go to the Sensitivity label section and choose the appropriate sensitivity label.
+1. Save the settings.
 
 The following image illustrates these steps on a report
 
-![Set sensitivity labels](media/service-security-apply-data-sensitivity-labels/apply-data-sensitivity-labels-02.png)
-
-**To apply or change a sensitivity label on a dataset or dataflow**
-
-1. Click **More options (...)**.
-1. Select **Settings**.
-1. Select the datasets or dataflows tab, whichever is relevant.
-1. Expand the sensitivity labels section and choose the appropriate sensitivity label.
-1. Apply the settings.
+![Set sensitivity labels](media/service-security-apply-data-sensitivity-labels/downstream-inheritance-user-consent-checkbox.png)
 
 >[!NOTE]
 >If the label is greyed out, you may not have the correct [usage rights](service-security-sensitivity-label-change-enforcement.md) to change the label. If you need to change a sensitivity label and can’t, either ask the person who applied the label in the first place to modify it, or contact the Microsoft 365/Office security administrator and request the necessary [usage rights](service-security-sensitivity-label-change-enforcement.md) for the label.
+
+**To apply or change a sensitivity label on a dataset or dataflow**
+
+1. Go to **Settings**.
+1. Select the datasets or dataflows tab, whichever is relevant.
+1. Expand the sensitivity labels section and choose the appropriate sensitivity label.
+1. Apply the settings.
 
 The following two images illustrate these steps on a dataset.
 
@@ -63,6 +59,9 @@ Choose **More options (...)** and then **Settings**.
 On the settings datasets tab, open the sensitivity label section, choose the desired sensitivity label, and click **Apply**.
 
 ![Choose sensitivity label](media/service-security-apply-data-sensitivity-labels/apply-data-sensitivity-labels-06.png)
+
+>[!NOTE]
+>If the label is greyed out, you may not have the correct [usage rights](service-security-sensitivity-label-change-enforcement.md) to change the label. If you need to change a sensitivity label and can’t, either ask the person who applied the label in the first place to modify it, or contact the Microsoft 365/Office security administrator and request the necessary [usage rights](service-security-sensitivity-label-change-enforcement.md) for the label.
 
 ## Apply sensitivity labels in Power BI Desktop (preview)
 

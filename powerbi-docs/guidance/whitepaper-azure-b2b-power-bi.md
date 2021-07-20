@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
-ms.date: 03/07/2019
+ms.date: 03/08/2019
 LocalizationGroup: Conceptual
 ---
 
@@ -239,7 +239,7 @@ Power BI's integration with Azure AD B2B gives Contoso a seamless, hassle-free w
 
     In this approach, Contoso invites the guest users to its Azure AD ahead of time and then distributes Power BI content to them. Contoso can invite guest users from the Azure portal or using PowerShell. Here are the steps to invite guest users from the Azure portal:
 
-    - Contoso's Azure AD administrator navigates to **Azure portal > Azure Active Directory > Users and groups > All users > New guest user**
+    - Contoso's Azure AD administrator navigates to **Azure portal** > **Azure Active Directory** > **Users** > **All users** > **New guest user**
 
     ![Guest user](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_15.png)
 
@@ -394,7 +394,7 @@ This opens a page where Contoso's BI team can see the two roles they created.  N
 
 ![Row-level security](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_30.png)
 
-In the example Contoso is adding a user in a partner organization with email address "[adam@themeasuredproduct.com](mailto:adam@themeasuredproduct.com)" to the Europe role:
+In the example Contoso is adding a user in a partner organization with email address `admin@fabrikam.com` to the Europe role:
 
 ![Row-level security settings](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_31.png)
 
@@ -607,7 +607,7 @@ Reasons not to choose this alternative:
 
 The end user must always click through the consent experience before they can access content.
 
-If you will be inviting many guest users, we recommend that you delegate this from your core Azure AD admins by [adding a user to the guest inviter role in the resource organization](/azure/active-directory/active-directory-b2b-add-guest-to-role). This user can invite other users in the partner organization by using the sign-in UI, PowerShell scripts, or APIs. This reduces the administrative burden on your Azure AD admins to invite or resent invites to users at the partner organization.
+If you will be inviting many guest users, we recommend that you delegate this from your core Azure AD admins by [adding a user to the guest inviter role in the resource organization](/azure/active-directory/external-identities/add-users-administrator). This user can invite other users in the partner organization by using the sign-in UI, PowerShell scripts, or APIs. This reduces the administrative burden on your Azure AD admins to invite or resent invites to users at the partner organization.
 
 **Can Contoso force multi-factor authentication for guest users if its partners don't have multi-factor authentication?**
 

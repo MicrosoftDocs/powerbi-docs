@@ -51,9 +51,9 @@ In this tutorial, you'll learn how to embed:
 
 In this tutorial, you'll use:
 
-* Power BI REST [Reports API](https://docs.microsoft.com/rest/api/power-bi/reports) - Used to embed the URL and retrieve the embed token.
+* Power BI REST [Reports API](/rest/api/power-bi/reports) - Used to embed the URL and retrieve the embed token.
 
-* [Microsoft Identity Web authentication library](/active-directory/develop/microsoft-identity-web).
+* [Microsoft Identity Web authentication library](/azure/active-directory/develop/microsoft-identity-web).
 
 * [Power BI embedded analytics Client APIs](/javascript/api/overview/powerbi/) - Use to embed the report.
 
@@ -112,7 +112,7 @@ If you don't know what's your domain or tenant ID, see [Find the Microsoft Azure
 [!INCLUDE[Get the workspace ID](../../includes/embed-tutorial-workspace-id.md)]
 
 >[!NOTE]
->To get the workspace ID programmatically, use the [Get Groups](/api/power-bi/groups/getgroups) API.
+>To get the workspace ID programmatically, use the [Get Groups](/rest/api/power-bi/groups/getgroups) API.
 
 ### Report ID
 

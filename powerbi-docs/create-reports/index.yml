@@ -1,19 +1,19 @@
 ### YamlMime:Landing
 
 title: Create reports and dashboards in Power BI - documentation
-summary: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+summary: Power BI documentation provides expert information for creating reports, dashboards, goals, and paginated reports.
 
 metadata:
   title: Create reports and dashboards in Power BI - documentation
-  description: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+  description: Power BI documentation provides expert information for creating reports, dashboards, goals, and paginated reports.
   services: powerbi
   ms.service: powerbi
-  ms.subservice: powerbi
+  ms.subservice: pbi-reports-dashboards
   ms.topic: landing-page # Required
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 12/16/2020
+  ms.date: 07/01/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -59,8 +59,8 @@ landingContent:
             url: ../visuals/power-bi-map-tips-and-tricks.md
           - text: Export data from a visual
             url: ../visuals/power-bi-visualization-export-data.md
-          - text: "Decomposition tree visuals"
-            url: ../visuals/power-bi-visualization-decomposition-tree.md
+          - text: Power Automate visual for Power BI (preview)
+            url: power-bi-automate-visual.md
           - text: "Smart narratives"
             url: ../visuals/power-bi-visualization-smart-narrative.md
           - text: Slicers
@@ -102,6 +102,23 @@ landingContent:
             url: desktop-bookmarks.md
           - text: "Format filters in a report"
             url: power-bi-report-filter.md
+
+  # Card (optional)
+  - title: Goals and scorecards (preview)
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Get started with goals"
+            url: service-goals-introduction.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Create scorecards and manual goals"
+            url: service-goals-create.md
+          - text: "Create connected goals"
+            url: service-goals-create-connected.md
+          - text: "Stay on top of your goals"
+            url: service-goals-check-in.md
+
   # Card (optional)
   - title: Power BI paginated reports
     linkLists:

@@ -7,22 +7,43 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 06/18/2019
+ms.date: 05/18/2021
 ---
 
-# Add a landing page to your Power BI visuals
+# Add a landing page to your Power BI visual
 
-With API 2.3.0, you can design your own landing page for your Power BI visuals. The landing page is displayed whenever the visual has no data in it. With a landing page, your visual initializes and updates even before you add data to it.
+A Power BI visual’s landing page enables you to display information in your Power BI visual card, before it’s loaded with data. Here are a few examples of what a visual’s landing page can display:
 
-When the flag `supportsEmptyDataView` is true, the landing page now displays in the view mode whenever the visual has no data.
+* Text that explains how to use the visual
+* A link to your website
+* A link to a video
 
 An example of a landing page is shown in the following image:
 
 ![landing page screenshot](media/landing-page/app-landing-page.png)
 
-## Sample
+This article explains how to design a landing page for your visual. The landing page is displayed whenever the visual has no data in it.
 
-To create a landing page add `supportsLandingPage` to the capabilities file, and set it to true.
+>[!NOTE]
+>Designing a Power BI visual landing page is supported from API version 2.3.0. To find out which version you’re using, Run the `pbiviz -V` command.
+
+## Creating a landing page
+
+To create a landing page, certain capabilities have to be set in the `capabilities.json` file.
+
+* For the landing page to work, enable `supportsLandingPage`.
+* For the landing page to be displayed in view mode or for the visual to be interactive even when in [no data-roles mode](no-dataroles-support.md), enable `supportsEmptyDataView`.
+
+```json
+    {
+        "supportsLandingPage": true,
+        "supportsEmptyDataView": true,
+    }
+```
+
+## Example of a visual with a landing page
+
+The following code shows how a landing page can be added to bar chart visual.
 
 ```typescript
 export class BarChart implements IVisual {

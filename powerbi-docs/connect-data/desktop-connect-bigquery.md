@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/19/2021
+ms.date: 04/30/2021
+
 LocalizationGroup: Connect to data
 ---
 # Connect to a Google BigQuery database in Power BI Desktop
@@ -43,7 +44,7 @@ There are a few limits and considerations to keep in mind with the Google **BigQ
   Source = GoogleBigQuery.Database([BillingProject="Include-Billing-Project-Id-Here"])
   ```
 
-  Beginning in the September 2020 release, we enabled support for the [Google BigQuery Storage API](https://cloud.google.com/bigquery/docs/reference/storage). This feature is enabled by default and is controlled by the optional boolean argument called "UseStorageApi". Some customers might encounter issues with this feature if they use granular permissions. In this scenario, you might see the following error message:
+  [Google BigQuery Storage API](https://cloud.google.com/bigquery/docs/reference/storage) is enabled by default and is controlled by the optional boolean argument called "UseStorageApi". Some customers might encounter issues with this feature if they use granular permissions. In this scenario, you might see the following error message:
 
   `ERROR [HY000] [Microsoft][BigQuery] (131) Unable to authenticate with Google BigQuery Storage API. Check your account permissions`
 
@@ -54,6 +55,8 @@ There are a few limits and considerations to keep in mind with the Google **BigQ
   - `bigquery.readsessions.update` - Updates a read session via the BigQuery Storage API.
 
   These permissions typically are provided in the BigQuery.User role. For more information, see [Google BigQuery Predefined roles and permissions](https://cloud.google.com/bigquery/docs/access-control).
+  
+  Beginning with the April 2021 release of Power BI, if you do not have adequate permissions, you will see zero rows returned from queries. Make sure the specific permissions described previously are set properly on the account being used, to enabling refreshing a report or retrieving data from any tables.
   
   If the above steps do not resolve the problem or if you want to disable the support for Storage API, change your query to the following:
   ```

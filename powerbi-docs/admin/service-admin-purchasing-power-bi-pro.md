@@ -24,7 +24,7 @@ Power BI Pro is an individual user license that lets users read and interact wit
 This article explains how to buy Power BI Pro user licenses in the Microsoft 365 admin center. After you buy licenses, you can assign them to users in either the Microsoft 365 admin center or the Azure portal.
 
 > [!NOTE]
-> Beginning January 14, 2020, self-service purchase, subscription, and license management capabilities for Power Platform products (Power BI, Power Apps, and Power Automate) are available for commercial cloud customers. For more information, see [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq). To enable or disable self-service purchasing capabilities, see [Enable or disable self-service sign-up and purchasing](./service-admin-disable-self-service.md).
+> Self-service purchase, subscription, and license management capabilities for Power Platform products (Power BI, Power Apps, and Power Automate) are available for commercial cloud customers. For more information, see [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq). To enable or disable self-service purchasing capabilities, see [Enable or disable self-service sign-up and purchasing](./service-admin-disable-self-service.md).
 
 ### Prerequisites
 

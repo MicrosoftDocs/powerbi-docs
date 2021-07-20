@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 02/23/2021
+ms.date: 02/24/2021
 LocalizationGroup: Gateways
 ---
 
@@ -24,7 +24,7 @@ We support additional data sources with [Kerberos](service-gateway-sso-kerberos.
 For SAP HANA, we recommend that you enable encryption before you establish a SAML SSO connection. To enable encryption, configure the HANA server to accept encrypted connections, and then configure the gateway to use encryption to communicate with your HANA server. Because the HANA ODBC driver doesn't encrypt SAML assertions by default, the signed SAML assertion is sent from the gateway to the HANA server *in the clear* and is vulnerable to interception and reuse by third parties.
 
 > [!IMPORTANT]
-> Because [SAP no longer supports OpenSSL](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.05/en-US/de15ffb1bb5710148386ffdfd857482a.html), Microsoft has also discontinued its support. Your existing connections continue to work but, as of February 2021, you can no longer create new connections. Use SAP Cryptographic Library (CommonCryptoLib), or sapcrypto, instead.
+> Because [SAP no longer supports OpenSSL](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.05/en-US/de15ffb1bb5710148386ffdfd857482a.html), Microsoft has also discontinued its support. Your existing connections continue to work but you can no longer create new connections. Use SAP Cryptographic Library (CommonCryptoLib), or sapcrypto, instead.
 
 ## Configure the gateway and data source
 
@@ -211,6 +211,9 @@ Now you can use the **Manage Gateway** page in Power BI to configure the SAP HAN
 
    ![Screenshot of the "Advanced settings" section in Power BI.](media/service-gateway-sso-saml/advanced-settings.png)
 
+> [!NOTE]
+> SSO uses Windows Authentication so make sure the windows account can access the gateway machine. If not sure, make sure to add NT-AUTHORITY\Authenticated Users (S-1-5-11) to the local machine “Users” group.
+
 ## Troubleshoot using SAML for single sign-on to SAP HANA
 
 This section provides extensive steps to troubleshoot using SAML for single sign-on to SAP HANA. Using these steps can help you self-diagnose and correct any issues you might face.
@@ -270,7 +273,7 @@ When you investigate the Mashup[date]*.log, you'll see the following error messa
 
 To resolve this SSL error, go to the data source connection and then, in the **Validate Server Certificate** dropdown list, select **No**, as shown in the following image:
 
-:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-02.png" alt-text="Screenshot showing the SSL error being resolved on the 'Data Source Settings' pane.":::
+:::image type="content" source="media/service-gateway-sso-saml/sap-hana-kerberos-troubleshooting-02.png" alt-text="Screenshot showing the SSL error being resolved on the 'Data Source Settings' pane.":::
 
 After you've selected this setting, the error message will no longer appear.
 
@@ -318,7 +321,7 @@ First, determine whether your organization is using OpenSSL or commoncrypto as t
 1. Open the Administration Console for the tenant that you're using.
 1. Select the **Configuration** tab, and use **sslcryptoprovider** as a filter, as shown in the following image:
 
-   :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-03.png" alt-text="Screenshot of the sslcryptoprovider information in SAP HANA Studio.":::
+   :::image type="content" source="media/service-gateway-sso-saml/sap-hana-kerberos-troubleshooting-03.png" alt-text="Screenshot of the sslcryptoprovider information in SAP HANA Studio.":::
 
 Next, verify that the cryptographic library is set correctly by doing the following:
 
@@ -328,11 +331,11 @@ Next, verify that the cryptographic library is set correctly by doing the follow
 
     In the following image, **SAP Cryptographic Library** is selected:
 
-    :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-04.png" alt-text="Screenshot of SAP HANA Studio with 'SAP Cryptographic Library' selected as the sslcryptoprovider.":::
+    :::image type="content" source="media/service-gateway-sso-saml/sap-hana-kerberos-troubleshooting-04.png" alt-text="Screenshot of SAP HANA Studio with 'SAP Cryptographic Library' selected as the sslcryptoprovider.":::
 
 1. Deploy your changes by selecting the **Deploy** button at the upper right, as shown in the following image:
 
-    :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-05.png" alt-text="Screenshot of the 'Deploy' button for deploying your solution changes.":::
+    :::image type="content" source="media/service-gateway-sso-saml/sap-hana-kerberos-troubleshooting-05.png" alt-text="Screenshot of the 'Deploy' button for deploying your solution changes.":::
 
 **Validation**
 
@@ -380,7 +383,7 @@ The error indicates that nameId `johnny@contoso.com` is found in the SAML assert
 
 Go to the HANA database user and, under the selected SAML checkbox, select the **Configure** link. The following window appears:
 
-:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-06.png" alt-text="Screenshot showing that the incorrect user name is displayed.":::
+:::image type="content" source="media/service-gateway-sso-saml/sap-hana-kerberos-troubleshooting-06.png" alt-text="Screenshot showing that the incorrect user name is displayed.":::
 
 As the error message describes, HANA was trying to find *johnny@contoso.com*, but the external identity is displayed only as *johnny*. These two values must match. To resolve the issue, under **External Identity**, change the value to *johnny@contoso.com*. Note that this value is case sensitive.
 

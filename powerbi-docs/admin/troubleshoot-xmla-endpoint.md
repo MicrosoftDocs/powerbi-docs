@@ -7,8 +7,8 @@ ms.reviewer: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 04/19/2021
-ms.custom: seodec18, css_fy20Q4
+ms.date: 05/05/2021
+ms.custom: css_fy20Q4
 LocalizationGroup: Premium
 ---
 
@@ -128,7 +128,7 @@ When triggering a scheduled refresh or on-demand refresh in Power BI, Power BI t
 
 ### Overrides in Refresh TMSL command
 
-Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tmsl) allow users choosing a different partition query definition or data source definition for the refresh operation. Currently, **overrides are not supported**. An error,  "Out-of-line binding is not allowed in Power BI Premium. For additional information, see 'XMLA read/write support' in the product documentation." is returned.
+Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tmsl) allow users choosing a different partition query definition or data source definition for the refresh operation.
 
 ## Errors in SSMS - Premium Gen 2
 

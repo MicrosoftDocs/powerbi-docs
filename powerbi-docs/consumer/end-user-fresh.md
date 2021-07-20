@@ -1,5 +1,5 @@
 ---
-title: How Power BI ensures your content is up-to-date
+title: How to be sure that content is up to date
 description: Learn how Power BI ensures you are working with the latest version of the data, report, dashboard, and app.
 author: mihart
 ms.author: mihart
@@ -8,17 +8,17 @@ ms.subservice: pbi-explore
 ms.reviewer: mihart
 ms.custom:  
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 06/11/2021
 LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to be sure that I'm using the most-recent data and learn how to determine this.
 ---
 
-# Your content is up-to-date
+# How to be sure that content is up to date
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 
-As a *business user*, you interact with content that is created by *designers* and shared with you. You might wonder if that content is up-to-date or maybe you just want to know when that content was last refreshed. Knowing that you are working with the freshest content gives you confidence.  
+As a *business user*, you interact with content that is created by *designers* and shared with you. You might wonder if that content is up to date, or maybe you just want to know when that content was last refreshed. Knowing that you are working with the freshest content gives you confidence.  
  
 ![Power BI dashboard](media/end-user-fresh/power-bi-dashboard.png)
 
@@ -89,7 +89,7 @@ If a designer deletes an app, the dashboards and reports associated with that ap
 Another way to stay up-to-date, is to subscribe to a report or dashboard. Instead of having to log in and open a report or dashboard, you tell Power BI to send you a snapshot on a schedule you set.  For more information, see [subscribe to dashboards and reports](end-user-subscribe.md).
 
 ## Set data alerts
-Want to be notified if data changes above or beyond a limit you set? [Create a data alert](end-user-alerts.md).  It's easy to stay up-to-date using data alerts. With data alerts, you tell Power BI to send you an email if a value in a report passes a specific threshold.  For example, if inventory falls below 25 units or if sales exceed goals.  
+Want to be notified if data changes above or beyond a limit you set? [Create a data alert](end-user-alerts.md) for a dashboard.  It's easy to stay up-to-date using data alerts. With data alerts, you tell Power BI to send you an email if a value in a report passes a specific threshold.  For example, if inventory falls below 25 units or if sales exceed goals.  
 
 ## Next steps
 [Create a data alert](end-user-alerts.md)    

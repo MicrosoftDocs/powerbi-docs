@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/25/2021
+ms.date: 06/11/2021
 LocalizationGroup: Create reports
 ---
 # Create bookmarks in Power BI Desktop to share insights and build stories
@@ -15,7 +15,7 @@ With *bookmarks* in Power BI Desktop, you capture the currently configured view 
 
 You can also create a collection of bookmarks, arrange them in the order you want, and later step through each bookmark in a presentation to highlight a series of insights, or the story you want to tell with your visuals and reports. 
 
-![Bookmarks in Power BI](media/desktop-bookmarks/bookmarks_01.png)
+![Screenshot showing Bookmarks in Power BI.](media/desktop-bookmarks/bookmarks_01.png)
 
 There are many uses for bookmarking. For example, you can use bookmarks to keep track of your own progress in creating reports (bookmarks are easy to add, delete, and rename) and you can create bookmarks to build a PowerPoint-like presentation that steps through bookmarks in order, thereby telling a story with your report. 
 
@@ -23,9 +23,9 @@ There are many uses for bookmarking. For example, you can use bookmarks to keep 
 > For information about using personal bookmarks in the Power BI service, see [Announcing personal bookmarks in the Power BI Service](https://powerbi.microsoft.com/blog/announcing-personal-bookmarks-in-the-power-bi-service/). 
 
 ## Using bookmarks
-To use bookmarks, select the **View** tab from the Power BI Desktop ribbon, then select **Bookmarks Pane**. 
+To use bookmarks, select the **View** tab from the Power BI Desktop ribbon, and then select **Bookmarks**. 
 
-![Turn on Bookmarks pane](media/desktop-bookmarks/bookmarks_03.png)
+![Screenshot showing how to turn on the Bookmarks pane.](media/desktop-bookmarks/bookmarks_03.png)
 
 When you create a bookmark, the following elements are saved with the bookmark:
 
@@ -40,11 +40,11 @@ When you create a bookmark, the following elements are saved with the bookmark:
 
 Configure a report page as you want it to appear in the bookmark. After your report page and visuals are arranged how you want them, select **Add** from the **Bookmarks** pane to add a bookmark. 
 
-![Add a bookmark](media/desktop-bookmarks/bookmarks_04.png)
+![Add a bookmark.](media/desktop-bookmarks/bookmarks_04.png)
 
 Power BI Desktop creates a bookmark and gives it a generic name. You can easily **Rename**, **Delete**, or **Update** a bookmark by selecting the ellipsis next to the bookmark's name, then selecting an action from the menu that appears.
 
-![Select bookmark menu by using the ellipsis](media/desktop-bookmarks/bookmarks_05.png)
+![Screenshot showing selecting the bookmark menu by using the ellipsis.](media/desktop-bookmarks/bookmarks_05.png)
 
 After you've created a bookmark, display it by selecting it in the **Bookmarks** pane. 
 
@@ -59,7 +59,7 @@ As you create bookmarks, you might find that the order in which you create them 
 
    The yellow bar between bookmarks designates where the dragged bookmark will be placed.
 
-   ![Change bookmark order by drag-and-drop](media/desktop-bookmarks/bookmarks_06.png)
+   ![Screenshot showing changing bookmark order by drag-and-drop.](media/desktop-bookmarks/bookmarks_06.png)
 
 The order of your bookmarks can be important when you use the **View** feature of bookmarks, as described in the next section.
 
@@ -68,7 +68,7 @@ When you have a collection of bookmarks you would like to present, in order, you
 
 When in **View** mode, there are some features to notice.
 
-   ![Bookmark bookmark title bar features](media/desktop-bookmarks/bookmarks_07.png)
+   ![Screenshot showing bookmark title bar features.](media/desktop-bookmarks/bookmarks_07.png)
 
 1. The name of the bookmark appears in the bookmark title bar, which appears at the bottom of the canvas.
 
@@ -81,11 +81,11 @@ When you're in **View** mode, you can close the **Bookmarks** pane, by selecting
 ## Visibility: Using the Selection pane
 Related to the **Bookmarks** pane, the **Selection** pane provides a list of all objects on the current page and allows you to select an object and specify whether it's visible. 
 
-![Enable the Selection pane](media/desktop-bookmarks/bookmarks_08.png)
+![Screenshot showing enabling the Selection pane.](media/desktop-bookmarks/bookmarks_08.png)
 
 In the **Selection** pane, you select an object and toggle whether the object is currently visible by selecting the eye icon to the right of the object. 
 
-![Selection pane](media/desktop-bookmarks/bookmarks_09.png)
+![Screenshot showing Selection pane.](media/desktop-bookmarks/bookmarks_09.png)
 
 When you add a bookmark, the visibility status of each object is also saved, based on its setting in the **Selection** pane. 
 
@@ -100,13 +100,13 @@ You can also link shapes and images to bookmarks. With this feature, when you se
 
 To assign a bookmark to an object: 
 
-1. Select the object in the report canvas. Then, from the **Format Shape** pane that appears, turn the **Action** slider to **On**.
+1. Select the object in the report canvas. Then, from the **Format shape** pane that appears, turn the **Action** slider to **On**.
 
 2. Expand the **Action** section. Under **Type**, select **Bookmark**.
 
 3. Under **Bookmarks**, select a bookmark.
 
-   ![Add bookmark link to an object](media/desktop-bookmarks/bookmarks_10.png)
+   ![Screenshot showing adding a bookmark link to an object.](media/desktop-bookmarks/bookmarks_10.png)
 
 There are all sorts of interesting things you can do with object-linked bookmarking. You can create a visual table of contents on your report page, or you can provide different views (such as visual types) of the same information.
 
@@ -114,18 +114,18 @@ When you're in editing mode, press **Ctrl** and select the link to follow it. Wh
 
 ## Bookmark groups
 
-Beginning with the August 2018 release of Power BI Desktop, you can create and use bookmark groups. A bookmark group is a collection of bookmarks that you specify, which can be shown and organized as a group. 
+You can create and use bookmark groups. A bookmark group is a collection of bookmarks that you specify, which can be shown and organized as a group. 
 
 To create a bookmark group: 
 1. Press **Ctrl** and select the bookmarks you want to include in the group. 
 
 2. Select the ellipsis next to your selected bookmarks, and then select **Group** from the menu that appears.
 
-   ![Create a bookmark group](media/desktop-bookmarks/bookmarks_15.png)
+   ![Screenshot showing creating a bookmark group.](media/desktop-bookmarks/bookmarks_15.png)
 
 Power BI Desktop automatically names the group *Group 1*. You can select the ellipsis next to this name, select **Rename**, and rename it to whatever you want.
 
-![Rename a bookmark group](media/desktop-bookmarks/bookmarks_16.png)
+![Screenshot showing renaming a bookmark group.](media/desktop-bookmarks/bookmarks_16.png)
 
 As with any bookmark group, expanding the bookmark group's name only expands or collapses the group of bookmarks, and doesn't represent a bookmark by itself. 
 
@@ -140,7 +140,7 @@ To ungroup bookmarks:
 
 2. Select **Ungroup** from the menu that appears.
 
-   ![Ungroup a bookmark group](media/desktop-bookmarks/bookmarks_17.png)
+   ![Screenshot showing ungrouping a bookmark group.](media/desktop-bookmarks/bookmarks_17.png)
 
    Selecting **Ungroup** for any bookmark from a group removes all bookmarks from the group; it deletes the group, but not the bookmarks themselves. 
 
@@ -159,26 +159,32 @@ Let's compare spotlight to focus mode to see how they differ:
 
 2. With spotlight, you select **Spotlight** from the ellipsis of a visual to highlight one visual in its original size, which causes all other visuals on the page to fade to near transparency. 
 
-![Compare spotlight to focus mode](media/desktop-bookmarks/bookmarks_11.png)
+![Screenshot showing comparing spotlight to focus mode.](media/desktop-bookmarks/bookmarks_11.png)
 
 When you select the **Focus mode** icon of the visual in the previous image, the page appears as follows:
 
-![Focus mode](media/desktop-bookmarks/bookmarks_12.png)
+![Screenshot showing Focus mode.](media/desktop-bookmarks/bookmarks_12.png)
 
 In contrast, when **Spotlight** is selected from the visual's ellipsis menu, the page appears as follows:
 
-![Spotlight mode](media/desktop-bookmarks/bookmarks_13.png)
+![Screenshot showing Spotlight mode.](media/desktop-bookmarks/bookmarks_13.png)
 
 If either the focus or spotlight mode is selected when you add a bookmark, that mode is retained in the bookmark.
 
 ## Bookmarks in the Power BI service
-When you publish a report to the Power BI service with at least one bookmark, you can view and interact with those bookmarks in the Power BI service. When bookmarks are available in a report, you display the **Selection** and **Bookmarks** panes by selecting **View** > **Selection pane** or **View** > **Bookmarks pane**. 
+When you publish a report to the Power BI service with at least one bookmark, you can view and interact with those bookmarks in the Power BI service.
 
-![View bookmarks and selection panes in the Power BI service](media/desktop-bookmarks/bookmarks_14.png)
+In Reading view, to see the bookmarks that are available in a report, select **Bookmarks** and then select **Show more bookmarks**.
+
+![Screenshot showing the bookmark pane in Reading view in the Power BI service.](media/desktop-bookmarks/bookmarks-service.png)
+
+In Editing view, you can display the **Bookmark** and **Selection** panes by selecting **View** in the top menu bar, and then turning **Selection pane** and **Bookmark pane** to **On**. The panes then display in both Editing view and Reading view.
+
+![Screenshot showing enabling bookmark and selection panes in Editing mode in the Power BI service.](media/desktop-bookmarks/bookmarks_14.png)
 
 In the Power BI service, the **Bookmarks** pane operates just as it does in Power BI Desktop, including the ability to select **View** to show your bookmarks in order, like a slide show.
 
-Use the gray bookmark title bar, instead of the black arrows, to navigate through the bookmarks. (The black arrows move you through report pages, not bookmarks.)
+Use the gray bookmark title bar to navigate through the bookmarks.
 
 ## Limitations and considerations
 In this release of the bookmarks features, there are a few limitations and considerations to keep in mind.

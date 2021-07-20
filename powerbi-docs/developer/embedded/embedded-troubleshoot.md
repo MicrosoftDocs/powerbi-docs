@@ -1,13 +1,13 @@
 ---
-title: Troubleshooting your Power BI embedded analytics application to enable better embedded BI insights
-description: This article discusses some common issues you may encounter when embedding content from Power BI. Enable better embedded BI insights using Power BI embedded analytics.
+title: Troubleshooting your Power BI embedded analytics application
+description: This article discusses some common issues you may encounter when embedding content from Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
-ms.date: 04/13/2021
+ms.date: 07/18/2021
 ---
 
 # Troubleshoot your embedded application
@@ -145,7 +145,7 @@ To resolve this issue you should trim "oauth2/authorize/" from the end of your a
 
 **_(AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password)_**
 
-If you're using Power BI Embedded and using Azure AD Direct authentication, and you're receiving messages logging in such as ***error:unauthorized_client, error_description:AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password***, that is because direct authentication is no longer in use since June 14, 2018 by default.
+If you're using Power BI Embedded and using Azure AD Direct authentication, and you're receiving messages logging in such as ***error:unauthorized_client, error_description:AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password***, that is because direct authentication is no longer in use.
 
 There's a way to turn this back on using an [Azure AD Policy](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that is scoped to the organization or a [service principal](/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
@@ -237,7 +237,7 @@ When you *embed for your organization*, to allow Azure AD guest users access to 
 
 To find your tenant ID, you can use the instructions in [Find the Microsoft Azure AD tenant ID and primary domain name](/partner-center/find-ids-and-domain-names#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name).
 
-For more information, see [How to: Sign in any Azure Active Directory user using the multi-tenant application pattern](/active-directory/develop/howto-convert-app-to-be-multi-tenant).
+For more information, see [How to: Sign in any Azure Active Directory user using the multi-tenant application pattern](/azure/active-directory/develop/howto-convert-app-to-be-multi-tenant).
 
 ## Data sources
 
@@ -278,6 +278,20 @@ After acquiring the IError object, you should look at the appropriate common err
 | TokenExpired | Access token has expired, resubmit with a new access token. Couldn't render a report visual titled: <visual title> | N/A | Query data Expired token |
 | OpenConnectionError | Can't display the visual. Couldn't render a report visual titled: <visual title> | N/A | Capacity paused or deleted while a report related to the capacity was open in a session |
 | ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server and try again. | N/A | <li> Capacity paused <li> Capacity deleted |
+
+## Datasets
+
+### Manage which portion of the data your users can see
+
+Any user with read permissions for a dataset can see the entire schema (tables, columns and measures) and all the data. You cannot separately control viewing permissions to raw and aggregated data in the same dataset.
+
+To manage which portion of the data your users can view, use one of these methods:
+
+* Row-level filtering using Power BI [row-level security (RLS)](/power-bi/service-admin-rls).
+
+* [Object level security (OLS)](/analysis-services/tabular-models/object-level-security).
+
+* Separate the data into different datasets. For example, you can create a dataset that only contains aggregated data and give your users access to that dataset only.
 
 ## Content rendering
 

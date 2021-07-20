@@ -8,7 +8,7 @@ ms.custom: video-0tUwn8DHo3s
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 06/23/2020
+ms.date: 04/14/2021
 LocalizationGroup: Share your work
 ---
 # Request or grant access to shared dashboards or reports
@@ -35,11 +35,14 @@ If you're a report owner, you may receive an email from **Microsoft Power BI** s
 
 1. Select **Grant access**.
 
-    The report opens with the **Share report** dialog box already open and the requestor's name filled in.
+    The user’s **Pending** access request opens automatically. Select **Approve request** to grant the user Read permissions to the report.
 
-    :::image type="content" source="media/service-request-access/power-bi-share-report-request-access.png" alt-text="Share report access request":::
+    :::image type="content" source="media/service-request-access/power-bi-share-report-request-access.png" alt-text="Screenshot of Share report access request.":::
 
-1. Decide what permissions you want the requestor to have, then select **Share**.
+1. After you've approved the user’s request, you can select the **Direct access** tab to modify their permissions and give them **Reshare** permissions as well.
+
+    :::image type="content" source="media/service-request-access/power-bi-add-reshare-permission.png" alt-text="Screenshot of Add reshare permission.":::
+
 
 ## Next steps
 

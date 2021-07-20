@@ -12,7 +12,7 @@ LocalizationGroup: Transform and shape data
 ---
 # Formula editor in Power BI Desktop
 
-Beginning with the October 2018 **Power BI Desktop** release, the formula editor (often referred to as the DAX editor) includes robust editing and shortcut enhancements to make authoring and editing formulas easier and more intuitive. 
+The formula editor (often referred to as the DAX editor) includes robust editing and shortcut enhancements to make authoring and editing formulas easy and intuitive. 
 
 ## Using the formula editor
 

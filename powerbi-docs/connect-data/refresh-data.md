@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/14/2020
+ms.date: 05/07/2021
 LocalizationGroup: Data refresh
 ---
 
@@ -24,7 +24,7 @@ Whenever you refresh data, Power BI must query the underlying data sources, poss
 To understand how Power BI refreshes your datasets, reports, and dashboards, you must be aware of the following concepts:
 
 - **Storage modes and dataset types**: The storage modes and dataset types that Power BI supports have different refresh requirements. You can choose between re-importing data into Power BI to see any changes that occurred or querying the data directly at the source.
-- **Power BI refresh types**: Regardless of dataset specifics, knowing the various refresh types can help you understand where Power BI might spend its time during a refresh operation. And combining these details with storage mode specifics helps to understand what exactly Power BI performs when you select **Refresh Now** for a dataset.
+- **Power BI refresh types**: Regardless of dataset specifics, knowing the various refresh types can help you understand where Power BI might spend its time during a refresh operation. And combining these details with storage mode specifics helps to understand what exactly Power BI performs when you select **Refresh now** for a dataset.
 
 ### Storage modes and dataset types
 
@@ -59,12 +59,16 @@ Power BI does not import data over connections that operate in DirectQuery/LiveC
 
 Although DirectQuery mode and LiveConnect mode are similar in that Power BI forwards the queries to the source, it is important to note that Power BI does not have to transform queries in LiveConnect mode. The queries go directly to the Analysis Services instance hosting the database without consuming resources on shared capacity or a Premium capacity.
 
-Because Power BI does not import the data, you don't need to run a data refresh. However, Power BI still performs tile refreshes and possibly report refreshes, as the next section on refresh types explains. A tile is a report visual pinned to a dashboard, and dashboard tile refreshes happen about every hour so that the tiles show recent results. You can change the schedule in the dataset settings, as in the screenshot below, or force a dashboard update manually by using the **Refresh Now** option.
+Because Power BI does not import the data, you don't need to run a data refresh. However, Power BI still performs tile refreshes and possibly report refreshes, as the next section on refresh types explains. A tile is a report visual pinned to a dashboard, and dashboard tile refreshes happen about every hour so that the tiles show recent results. You can change the schedule in the dataset settings, as in the screenshot below, or force a dashboard update manually by using the **Refresh now** option.
 
 ![Refresh schedule](media/refresh-data/refresh-schedule.png)
 
 > [!NOTE]
 > The **Scheduled cache refresh** section of the **Datasets** tab is not available for datasets in import mode. These datasets don't require a separate tile refresh because Power BI refreshes the tiles automatically during each scheduled or on-demand data refresh.
+
+> [!NOTE]
+> Power BI does not support cross-border live connections to Azure Analysis Services (AAS) in a sovereign cloud.
+
 
 #### Push datasets
 
@@ -95,7 +99,7 @@ If the dataset resides on a Premium capacity, you can schedule up to 48 refreshe
 
 
 
-It is also important to call out that the shared-capacity limitation for daily refreshes applies to both scheduled refreshes and API refreshes combined. You can also trigger an on-demand refresh by selecting **Refresh Now** in the dataset menu, as the following screenshot depicts. On-demand refreshes are not included in the refresh limitation. Also note that datasets on a Premium capacity don't impose limitations for API refreshes. If you are interested in building your own refresh solution by using the Power BI REST API, see [Datasets - Refresh Dataset](/rest/api/power-bi/datasets/refreshdataset).
+It is also important to call out that the shared-capacity limitation for daily refreshes applies to both scheduled refreshes and API refreshes combined. You can also trigger an on-demand refresh by selecting **Refresh now** in the dataset menu, as the following screenshot depicts. On-demand refreshes are not included in the refresh limitation. Also note that datasets on a Premium capacity don't impose limitations for API refreshes. If you are interested in building your own refresh solution by using the Power BI REST API, see [Datasets - Refresh Dataset](/rest/api/power-bi/datasets/refreshdataset).
 
 ![Refresh now](media/refresh-data/refresh-now.png)
 
@@ -125,7 +129,7 @@ Note that the dataset settings page only shows the **OneDrive Credentials** and 
 
 ![OneDrive Credentials and OneDrive refresh](media/refresh-data/onedrive-credentials-refresh.png)
 
-If you disable OneDrive refresh for a dataset, you can still synchronize your dataset on-demand by selecting **Refresh Now** in the dataset menu. As part of the on-demand refresh, Power BI checks if the source file on OneDrive or SharePoint Online is newer than the dataset in Power BI and synchronizes the dataset if this is the case. The **Refresh history** lists these activities as on-demand refreshes on the **OneDrive** tab.
+If you disable OneDrive refresh for a dataset, you can still synchronize your dataset on-demand by selecting **Refresh now** in the dataset menu. As part of the on-demand refresh, Power BI checks if the source file on OneDrive or SharePoint Online is newer than the dataset in Power BI and synchronizes the dataset if this is the case. The **Refresh history** lists these activities as on-demand refreshes on the **OneDrive** tab.
 
 Keep in mind that OneDrive refresh does not pull data from the original data sources. OneDrive refresh simply updates the resources in Power BI with the metadata and data from the .pbix, .xlsx, or .csv file, as the following diagram illustrates. To ensure that the dataset has the most recent data from the data sources, Power BI also triggers a data refresh as part of an on-demand refresh. You can verify this in the **Refresh history** if you switch to the **Scheduled** tab.
 
@@ -211,7 +215,7 @@ Datasets that use cloud data sources, such as Azure SQL DB, don't require a data
 ![Configure data source credentials without a gateway](media/refresh-data/configure-data-source-credentials.png)
 
 > [!NOTE]
-> Each user can only have one set of credentials per data source, across all of the data sets they own, regardless of the workspaces where the datasets reside. 
+> Each user can only have one set of credentials per data source, across all of the datasets they own, regardless of the workspaces where the datasets reside. And each dataset can only have one owner. If your want to update the credentials for a dataset where you are not the dataset owner, you must first take over the dataset by clicking on the Take Over button on the dataset settings page.
 
 ### Accessing on-premises and cloud sources in the same source query
 
@@ -336,7 +340,7 @@ The warning icon helps to indicate current dataset issues, but it is also a good
 
 ## Automatic page refresh
 
-Automatic page refresh works at a report page level, and allows report authors to set a refresh interval for visuals in a page that is only active when the page is being consumed. Automatic page refresh is only available for DirectQuery data sources. The minimum refresh interval depends on which type of workspace the report is published in, and the capacity admin settings for Premium workspaces and [embedded workspaces](../developer/embedded/embedding.md).
+Automatic page refresh works at a report page level, and allows report authors to set a refresh interval for visuals in a page that is only active when the page is being consumed. Automatic page refresh is only available for DirectQuery data sources. The minimum refresh interval depends on which type of workspace the report is published in, and the capacity admin settings for Premium workspaces and [embedded workspaces](../developer/embedded/embedded-analytics-power-bi.md#power-bi-embedded).
 
 Learn more about automatic page refresh in the [automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) article.
 

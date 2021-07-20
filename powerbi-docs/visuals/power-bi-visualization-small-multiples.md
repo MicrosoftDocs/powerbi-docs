@@ -43,7 +43,7 @@ Now that you've created small multiples, see how you [Interact with small multip
 
 ## Format a small multiples visual
 
-Some new options in the formatting pane let you control the look and feel of the grid.
+Some options in the formatting pane let you control the look and feel of the grid.
 
 ### Change the grid dimensions
 
@@ -70,12 +70,12 @@ While the feature is in preview, we're constantly working on making sure it inte
 ### Visual interactions
 
 - Scroll to load more on the Categorical axis: In standard visuals with many categories in the axis, when you scroll to the end of the axis, the visual loads more categories. Currently, a small multiples visual doesn't load more categories.
-- Sort small multiples by measure: Sorting on small multiples is new functionality. You may be expecting to sort your small multiples by a measure. Currently, you can only sort your multiples by the field's natural sort order.
+- Sort small multiples by measure: You may be expecting to sort your small multiples by a measure. Currently, you can only sort your multiples by the field's natural sort order.
 - Right click/context menu -> Analyze: disabled for now.
 - Right click/context menu -> Summarize: disabled for now.
 - Selecting multiple data points with rectangular select: disabled for now.
 - Axis zoom: disabled for now.
-- Accessibility: You can adjust keyboard navigation and screen readouts to better support the new “grid” layer that small multiples bring to visuals. Some behavior is missing, such as keyboard navigation through the categorical axis scrollbar.
+- Accessibility: You can adjust keyboard navigation and screen readouts to better support the “grid” layer that small multiples bring to visuals. Some behavior is missing, such as keyboard navigation through the categorical axis scrollbar.
 
 ### Formatting options
 

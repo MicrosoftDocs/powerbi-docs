@@ -1,6 +1,6 @@
 ---
-title: Power BI data model versioning in Power BI embedded analytics for better embedded BI insights
-description: Data Model exposed by an OData Service. Enable better embedded BI insights using Power BI embedded analytics.
+title: Power BI data model versioning
+description: Data Model exposed by an OData Service.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''

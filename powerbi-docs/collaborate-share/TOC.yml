@@ -10,14 +10,18 @@
   - name: Concepts
     expanded: true
     items: 
-      - name: "Organize work in workspaces"
+      - name: "The new workspace experience"
         href: service-new-workspaces.md
+      - name: "Roles in new workspaces"
+        href: service-roles-new-workspaces.md
       - name: "Monitor usage in classic workspaces"
         href: service-usage-metrics.md
       - name: "Monitor usage in new workspaces"
         href: service-modern-usage-metrics.md
       - name: "Content endorsement"
         href: service-endorsement-overview.md
+      - name: "Dataset discoverability"
+        href: service-discovery.md
   - name: How-to guides
     expanded: true
     items:
@@ -61,9 +65,15 @@
         href: service-share-report-teams.md
       - name: "Get a link preview in Teams"
         href: service-teams-link-preview.md
+      - name: "View all your Power BI tabs in Teams"
+        href: service-teams-pivot.md
+      - name: "Analyze Teams usage in Teams"
+        href: service-teams-analytics.md
+      - name: "Get notifications in Teams"
+        href: service-teams-notifications.md
     - name: Publish and share your work
       items: 
-      - name: "Share dashboards and reports"
+      - name: "Share reports and dashboards"
         href: service-share-dashboards.md
       - name: "Request access to a report or dashboard"
         href: service-request-access.md
@@ -113,6 +123,8 @@
         href: service-automate-paginated-excel-sharepoint-list.md
       - name: Save a paginated report to a local folder
         href: service-automate-paginated-local-file.md
+      - name: "Power Automate button visual"
+        href: ../create-reports/power-bi-automate-visual.md
     - name: "Use third-party apps"
       href: service-power-bi-get-started-third-party-apps.md
     - name: Organizational content packs

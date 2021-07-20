@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 01/02/2020
+ms.date: 07/14/2021
 LocalizationGroup: Connect to data
 ---
 
@@ -38,6 +38,9 @@ The default Power BI Desktop data extension security setting is **(Recommended) 
 ![Uncertified Connectors dialog box](media/desktop-connector-extensibility/data-extension-security-2.png)
 
 To resolve the error, you can either change your **Data Extensions** security setting, or remove the uncertified connectors from your *Custom Connectors* folder.
+
+> [!IMPORTANT]
+> You can only use one custom connector data source when working in DirectQuery mode; multiple custom connector data sources will not work when using DirectQuery.
 
 ## Certified connectors
 

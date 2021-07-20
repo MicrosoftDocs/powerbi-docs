@@ -1,9 +1,9 @@
 ---
 title: "Power BI Report Builder"
-description: Power BI Report Builder is a tool for authoring paginated reports.
+description: Power BI Report Builder is a tool for authoring paginated reports that you can publish to the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 03/24/2021
+ms.date: 07/19/2021
 ms.service: powerbi
 ms.subservice: report-builder
 ms.custom: video-78TZeiEhveY
@@ -20,18 +20,9 @@ Ready to start authoring? [Install Power BI Report Builder](https://go.microsoft
 
 Prefer learning from videos? Check out the [Video-based course: Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md).
 
-The following paginated report features a matrix with row and column groups, sparklines, indicators, and a summary pie chart in the corner cell, accompanied by a map with two sets of geographic data represented by color and by circle size.  
+The following paginated report is a sample of an invoice. You can download it and other samples, such as letters, transcripts, and labels. Read more about [sample Power BI paginated reports](paginated-reports-samples.md). 
 
-![Paginated report in the Power BI service](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
-
-## Use deployment pipelines with paginated reports
-
-In the Power BI service, you can use the deployment pipeline tool with paginated reports. Deployment pipelines let you develop and test your Power BI paginated reports before you release them to your users. The tool is a pipeline with three stages:
-- Development
-- Test
-- Production
-
-Read about how to [get started with deployment pipelines](../create-reports/deployment-pipelines-get-started.md?tabs=paginated-reports) in the Power BI service.
+![Screenshot of a sample paginated report in Power BI Report Builder.](media/report-builder-power-bi/power-bi-report-builder-sample-invoice.png)
 
 ## Start with the Table, Matrix, or Chart wizard
 
@@ -65,7 +56,18 @@ Create reports that display aggregated data against a geographic or geometric ba
   
 -   **Set up subscriptions.** After you publish the report to the Power BI service, you can configure your report to run at a specific time and send as an e-mail subscription.  
 
+## Use deployment pipelines with paginated reports
+
+In the Power BI service, you can use the deployment pipeline tool with paginated reports. Deployment pipelines let you develop and test your Power BI paginated reports before you release them to your users. The tool is a pipeline with three stages:
+- Development
+- Test
+- Production
+
+Read about how to [get started with deployment pipelines](../create-reports/deployment-pipelines-get-started.md?tabs=paginated-reports) in the Power BI service.
+
 ## Next steps
 
 - [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
 - [Video-based course: Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md)
+- [Keyboard shortcuts for accessibility in Report Builder](/sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context)
+- [Sample Power BI paginated reports](paginated-reports-samples.md)

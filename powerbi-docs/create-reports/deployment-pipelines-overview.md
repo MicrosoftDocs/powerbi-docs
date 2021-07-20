@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
 ms.custom: contperf-fy21q1
-ms.date: 03/24/2021
+ms.date: 06/14/2021
 ---
 
 # Introduction to deployment pipelines
@@ -36,7 +36,7 @@ The tool is designed as a pipeline with three stages:
 
     After testing the content, use the production stage to share the final version of your content with business users across the organization.
 
-![A screenshot of a working deployment pipeline with all three stages, development, test and production, populated.](media/deployment-pipelines-overview/deployment-pipelines.png)
+:::image type="content" source="media/deployment-pipelines-overview/deployment-pipelines.png" alt-text="A screenshot of a working deployment pipeline with all three stages, development, test and production, populated.":::
 
 ## Next steps
 
@@ -45,6 +45,9 @@ The tool is designed as a pipeline with three stages:
 
 >[!div class="nextstepaction"]
 >[Understand the deployment pipelines process](deployment-pipelines-process.md)
+
+>[!div class="nextstepaction"]
+>[Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md)
 
 >[!div class="nextstepaction"]
 >[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.md)

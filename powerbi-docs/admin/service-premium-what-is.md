@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 04/21/2021
+ms.date: 07/08/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
 ---
@@ -34,89 +34,8 @@ This article introduces key features in Power BI Premium. Where necessary, links
 
 Power BI Premium recently released a new version of Power BI Premium, **Power BI Premium Generation 2**, referred to as **Premium Gen2** for convenience. Premium Gen2 is currently in preview, and is available for Premium subscribers to use during the preview period. You can select to use the original version of Premium, or switch to using Premium Gen2. You can only use one or the other for your Premium capacity.
 
->[!NOTE]
->To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).
+For more information about Premium Gen2, see [What is Power BI Premium Gen2?](service-premium-gen2-what-is.md)
 
-Premium Gen2 provides the following updates or improved experiences:
-
-* Ability to license **Premium Per User** in addition to by capacity.
-
-* Enhanced **performance** on any capacity size, anytime: Analytics operations run up to 16X faster on Premium Gen2. Operations will always perform at top speed and won't slow down when the load on the capacity approaches the capacity limits.
-
-* **Greater scale**:
-    * *No limits* on refresh concurrency, no longer requiring you to track schedules for datasets being refreshed on your capacity
-    * Fewer memory restrictions
-    * Complete separation between report interaction and scheduled refreshes
-
-* **Improved metrics** with clear and normalized capacity utilization data, that's dependent only on the complexity of analytics operations the capacity performs, and not on its size, the level of load on the system while performing analytics, or other factors. With the improved metrics, utilization analysis, budget planning, chargebacks, and the need to upgrade are clearly visible with built-in reporting. Improved metrics will be made available later in the preview period. Customers seeking access to utilization metrics for past 7 days can do so by contacting customer support. 
-
-* **Autoscale** allows for *automatically adding* one v-core at a time for 24-hour periods when the load on the capacity exceeds its limits, preventing slowdowns caused by overload. V-cores are automatically removed when idle time is detected. Additional v-cores are charged to your Azure subscription on a pay-as-you-go basis. See [using Autoscale with Power BI Premium](service-premium-auto-scale.md) for steps on how to configure and use **Autoscale**.
-
-* **Reduced management overhead** with proactive and configurable admin notifications about capacity utilization level and load increasing.
-
-
-### Using Premium Gen2
-
-Enable Premium Gen2 to take advantage of its updates. To enable Premium Gen2, take the following steps:
-
-1. In the admin portal, navigate to **Capacity settings**.
-1. Select **Power BI Premium**.
-1. If you have already allocated capacity, select it.
-1. A section appears titled **Premium Generation 2 (preview)**, and in that section is a slider to enable Premium Generation 2 (preview). 
-1. Move the slider to **Enabled**.
-
-The following image shows how to enable Premium Gen2. 
-
-![Enabling Premium Generation 2](media/service-premium-what-is/enable-premium-gen2.gif#lightbox) 
-
-You can also [configure and use Autoscale with Power BI Premium](service-premium-auto-scale.md) to ensure capacity and performance for your Premium users.
-
-### Limitations in Premium Gen2
-
-The following known limitations currently apply to Premium Gen2:
-
-1.    Premium Gen2 capacity utilization can't be tracked in the metrics app.
-
-1. Premium Gen2 does not support customer-managed encryption keys for data at rest (BYOK). [Learn more about using your own keys (BYOK)](service-encryption-byok.md).
-
-1.  If you're using XMLA on Premium Gen2, make sure you're using the most recent versions of the [data modeling and management tools](service-premium-connect-tools.md#data-modeling-and-management-tools). 
-
-1.  Analysis services features in Premium Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are:
-
-    |Tool|Minimum version required|
-    |---|---|
-    |SQL Server Management Studio (SSMS)|18.8|
-    |SQL Server Data Tools (SSDT)|2.9.15|
-    | AS PowerShell| Greater than 21.1.18229|
-
-4.  Memory restrictions are different in Premium Gen2. In the first generation of Premium, memory was restricted to a limited amount of RAM used by all artifacts simultaneously running. 
-In Gen2, there is no memory Limit for the capacity as a whole. Instead, individual artifacts (such as datasets, dataflows, paginated reports) are subject to the following RAM limitations:
-
-    - A single artifact cannot exceed the amount of memory the capacity SKU offers. 
-
-    The limitation includes all the operations (interactive and background) being processed for the artifact while in use (for example, while a report is being viewed, interacted with, or refreshed).
-
-    Dataset operations like queries are also subject to individual memory limits, just as they are in the first version of Premium.
-
-    To illustrate the restriction, consider a dataset with an in-memory footprint of 1 GB, and a user initiating an on-demand refresh while interacting with a report based on the same dataset. Two separate actions determine the amount of memory attributed to the original dataset, which may be larger than two times the dataset size: 
-
-    - The dataset needs to be loaded into memory.
-    - The refresh operation will cause the memory used by the dataset to double, at least, since the original copy of data is still available for active queries, while an additional copy is being processed by the refresh. Once the refresh transaction commits, the memory footprint will reduce.
-    - Report interactions will execute DAX queries. Each DAX query consumes a certain amount of temporary memory required to produce the results. Each query may consume a different amount of memory and will be subject to the query memory limitation as described.
-
-    The following table summarizes all the limitations that are dependent on the capacity size:
-
-    | **Capacity SKU** | **Size in vCores** | **Backend vCores** | **CPU time / minute** | **Memory per artifact\* [Gb]** | **Max memory per query\* [Gb]** | **DirectQuery\LC queries / sec \*** |
-    | --- | --- | --- | --- | --- | --- | --- |
-    | **A1\EM1** | 1 | 0.5 | 30 | 3 | 1 | 3.75 |
-    | **A2\EM2** | 2 | 1 | 60 | 6 | 2 | 7.5 |
-    | **A3\EM3** | 4 | 2 | 120 | 10 | 2 | 15 |
-    | **A4\P1** | 8 | 4 | 240 | 25 | 6 | 30 |
-    | **A5\P2** | 16 | 8 | 480 | 50 | 6 | 60 |
-    | **A6\P3** | 32 | 16 | 960 | 100 | 10 | 120 |
-    
-    \*The Premium Gen2 app doesn't currently expose these metrics.
-    
 
 ## Subscriptions and licensing
 
@@ -171,8 +90,8 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
-| P4 <sup>[1](#limit)</sup>| 64 | 32 | 200 | 32 | 240 | 48 |
-| P5 <sup>[1](#limit)</sup>| 128 | 64 | 400 | 64 | 480 | 96 |
+| P4/A7 <sup>[1](#limit)</sup>| 64 | 32 | 200 | 32 | 240 | 48 |
+| P5/A8 <sup>[1](#limit)</sup>| 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 
 <a name="limit">1</a> - By special request only. For very large models greater than 100 GB.
@@ -180,9 +99,6 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 >[!NOTE]
 >Using a single larger SKU (e.g. one P2 SKU) can be preferable to combining smaller SKUs (e.g. two P1 SKUs). For example, you can use larger models and achieve better parallelism with the P2.
 
-#### Capacity node updates for Premium Gen2 (Preview)
-
-With **Premium Gen2** and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md), the amount of memory available on each node size is set to the limit of memory footprint of a single artifact, and not to the cumulative consumption of memory. For example, in Premium Gen2 P1 capacity, only a single dataset size is limited to 25 GB, in comparison to the original Premium, where the total memory footprint of the datasets being handled at the same time was limited to 25 GB.
 
 ### Capacity workloads
 
@@ -206,7 +122,7 @@ Import models must be fully loaded into memory so they can be queried or refresh
 
 Import models are therefore loaded and removed from memory according to usage. An import model is loaded when it is queried (interactive operation), or if it needs to be refreshed (background operation).
 
-The removal of a model from memory is known as *eviction*. It's an operation Power BI can perform quickly depending on the size of the models. If the capacity isn't experiencing any memory pressure and the model isn't idle (i.e., actively in-used), the model can reside in memory without being evicted. When Power BI determines there is insufficient memory to load a model, the Power BI service will attempt to free up memory by evicting inactive models, typically defined as models loaded for interactive operations which have not been used in the last three minutes \[[1](#endnote-1)\]. If there are no inactive models to evict, the Power BI service attempts to evict models loaded for background operations. A last resort, after 30 seconds of failed attempts \[[1](#endnote-1)\], is to fail the interactive operation. In this case, the report user is notified of failure with a suggestion to try again shortly. In some cases, models may be unloaded from memory due to service operations.
+The removal of a model from memory is known as *eviction*. It's an operation Power BI can perform quickly depending on the size of the models. If the capacity isn't experiencing any memory pressure and the model isn't idle (i.e., actively in-used), the model can reside in memory without being evicted. When Power BI determines there is insufficient memory to load a model, the Power BI service will attempt to free up memory by evicting inactive models, typically defined as models loaded for interactive operations which have not been used in the last three minutes. If there are no inactive models to evict, the Power BI service attempts to evict models loaded for background operations. A last resort, after 30 seconds of failed attempts, is to fail the interactive operation. In this case, the report user is notified of failure with a suggestion to try again shortly. In some cases, models may be unloaded from memory due to service operations.
 
 It's important to stress that dataset eviction is a normal behavior on the capacity. The capacity strives to balance memory usage by managing the in-memory lifecycle of models in a way that is transparent to users. A high eviction rate does not necessarily mean the capacity is insufficiently resourced. It can, however, become a concern if the performance of queries or refreshes degrades due to the overhead of loading and evicting models repeatedly within a short span of time.
 
@@ -214,14 +130,8 @@ Refreshes of import models are always memory intensive as models must be loaded 
 
 Incremental refresh performs partition refresh instead of a full model refresh, and will typically be faster and require less memory, and can substantially reduce the capacity's resource usage. Refreshes can also be CPU-intensive for models, especially those with complex Power Query transformations, or calculated tables or columns that are complex or are based on a large volume of data.
 
-Refreshes, like queries, require the model be loaded into memory. If there is insufficient memory, the Power BI service will attempt to evict inactive models, and if this isn't possible (as all models are active), the refresh job is queued. Refreshes are typically CPU-intensive, even more so than queries. For this reason, a limit on the number of concurrent refreshes, calculated as the ceiling of 1.5 x the number of backend v-cores, is imposed. If there are too many concurrent refreshes, the scheduled refresh is queued until a refresh slot is available, resulting in the operation taking longer to complete. On-demand refreshes such as those triggered by a user request or an API call will retry three times \[[1](#endnote-1)\]. If there still aren't enough resources, the refresh will then fail.
+Refreshes, like queries, require the model be loaded into memory. If there is insufficient memory, the Power BI service will attempt to evict inactive models, and if this isn't possible (as all models are active), the refresh job is queued. Refreshes are typically CPU-intensive, even more so than queries. For this reason, a limit on the number of concurrent refreshes, calculated as the ceiling of 1.5 x the number of backend v-cores, is imposed. If there are too many concurrent refreshes, the scheduled refresh is queued until a refresh slot is available, resulting in the operation taking longer to complete. On-demand refreshes such as those triggered by a user request or an API call will retry three times. If there still aren't enough resources, the refresh will then fail.
 
-#### Refresh updates for Premium Gen2 (Preview)
-
-Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) don't require cumulative memory limits, and therefore concurrent dataset refreshes don't contribute to resource constraints. There is no limit on the number of refreshes running per v-core. However, the refresh of individual datasets continues to be governed by existing capacity memory and CPU limits. You can schedule and run as many refreshes as required at any given time, and the Power BI service will run those refreshes at the time scheduled as a best effort.
-
-Section notes:   
-<a name="endnote-1"></a>\[1\] Subject to change.
 
 ### Regional support
 
@@ -253,9 +163,6 @@ Monitoring in the portal provides a quick view with high-level metrics indicatin
 
 ![Screenshot shows capacity health in the Power B I Admin portal.](media/service-premium-what-is/premium-admin-portal-health.png)
 
-> [!NOTE]
-> **Updates for Premium Gen2 (Preview)** - Premium Gen2 only requires monitoring a single aspect: how much CPU time your capacity requires to serve the load at any moment. If you exceed your CPU time per the SKU size you purchased, your capacity either autoscales to accommodate the need, or throttles your interactive operations, based on your configuration settings.
-
 
 The **Power BI Premium Capacity Metrics** app provides the most in-depth information into how your capacities are performing. The app provides a high-level dashboard and more detailed reports.
 
@@ -266,13 +173,6 @@ From the app's dashboard, you can click a metric cell to open an in-depth report
 ![Periodic peaks of query wait time counts indicate potential CPU saturation](media/service-premium-capacity-scenarios/peak-query-wait-times.png)
 
 To learn more about monitoring capacities, see [Monitoring in the Power BI Admin portal](service-admin-premium-monitor-portal.md) and [Monitoring with the Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capacity.md).
-
-#### Updates for Premium Gen2 (Preview)
-**Premium Gen2** capacities don't use the Metrics app, they use the Capacity Utilization App, which will be made available during the preview. 
-
-You can download and install the metrics app for Premium Gen2 (Preview) using the [following link](https://aka.ms/GenutilizationInstall).
-
-Customers wanting to review their utilization can receive a copy of their utilization report for the past 7 days by requesting one from customer support. The report will be supplied within 72 hours of the request. The Capacity Utilization App will be launched from your capacity management page in the **Admin portal** for each capacity, and will allow anlayis of 30 days of data and more.
 
 ### Optimizing capacities
 
@@ -324,22 +224,17 @@ Paginated reports, supported on P1-P3 and A4_A6 SKUs, are based on Report Defini
 
 In Power BI Premium, Paginated reports are a workload that must be enabled for a capacity by using the Admin portal. Capacity admins can enable and then specify the amount of memory as a percentage of the capacity's overall memory resources. Unlike other types of workloads, Premium runs paginated reports in a contained space within the capacity. The maximum memory specified for this space is used whether or not the workload is active. The default is 20%. 
 
-> [!NOTE]
-> In **Premium Gen2 (preview)** and [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md), there is no memory management for Paginated reports. With Premium Gen2 and Embedded Gen2, Paginated reports are supported on the EM1-EM3 and A1-A3 SKUs.
+## Premium features unique to Dataflows
 
-### Paginated reports and Premium Gen2
+Dataflows are supported for Power BI Pro, Premium Per User (PPU), and Power BI Premium users. Some features are only available with a Power BI Premium subscription or Premium Per User (PPU) license. This article describes and details the Premium Per User (PPU) and Premium-only features and their uses.
 
-When using Premium Gen2, Paginated reports in Power BI benefit from the architectural and engineering improvements reflected in Premium Gen2. The following sections describe the benefits of Premium Gen2 for Paginated reports.
+To learn more, see [Premium features unique to Dataflows](../transform-model/dataflows/dataflows-premium-features.md).
 
-**Broader SKU availability** - Paginated reports running on Premium Gen2 can run reports across all available embedded and Premium SKUs. Billing is calculated per CPU hour, across a 24-hour period. This greatly expands the SKUs that support Paginated reports.
+## Deployment Pipelines
 
-**Dynamic scaling** - With Premium Gen2, challenges associated with spikes in activity, or need for resources, can be handled dynamically as need arises. 
+The deployment pipelines tool enables BI creators to manage the lifecycle of organizational content. It's an efficient and reusable tool for creators in an enterprise with Premium capacity. Deployment pipelines enable creators to develop and test Power BI content in the Power BI service, before the content is consumed by users. The content types include reports, paginated reports, dashboards, and datasets.
 
-**Improved caching** - Prior to Premium Gen2, Paginated reports were required to perform many operations in the context of memory allocated on the capacity for the workload. Now, using Premium Gen2, reductions in the required memory for many operations enhance customers' ability to perform long-running operations without impacting other user sessions. 
-
-**Enhanced security and code isolation** - With Premium Gen2, code isolation can occur at a per-user level rather than at per-capacity, as was the case in the original Premium offering. 
-
-To learn more, see [Paginated reports in Power BI Premium](../paginated-reports/paginated-reports-report-builder-power-bi.md). To learn more about enabling the Paginated reports workload, see [Configure workloads](service-admin-premium-workloads.md).
+To learn more, see [Introduction to Deployment Pipelines](../create-reports/deployment-pipelines-overview.md).
 
 ## Power BI Report Server
  
@@ -353,7 +248,7 @@ With P Premium SKUs, anyone, whether they're inside or outside your organization
 
 ![Content sharing](media/service-premium-what-is/premium-sharing.png)
 
-Premium enables widespread distribution of content by Pro users without requiring Pro or Premium Per User (PPU) licenses for recipients who view the content. Pro or Premium Per User (PPU) licenses are required for content creators. Creators connect to data sources, model data, and create reports and dashboards that are packaged as workspace apps. User without a Pro or Premium Per User (PPU) license can still access a workspace that's in Power BI Premium capacity, as long as they have a Viewer role. 
+Premium enables widespread distribution of content by Pro users without requiring Pro or Premium Per User (PPU) licenses for recipients who view the content. Pro or Premium Per User (PPU) licenses are required for content creators. Creators connect to data sources, model data, and create reports and dashboards that are packaged as workspace apps. Users without a Pro or Premium Per User (PPU) license can still access a workspace that's in Power BI Premium capacity, as long as they only have a Viewer role. A Pro or PPU license is required for other roles. 
 
 To learn more, see [Power BI licensing](service-admin-licensing-organization.md).
 
@@ -376,5 +271,6 @@ To learn more, see [Dataset connectivity with the XMLA endpoint](service-premium
 > [!div class="nextstepaction"]
 > [Managing Premium capacities](service-premium-capacity-manage.md)
 > [Azure Power BI Embedded Documentation](https://azure.microsoft.com/services/power-bi-embedded/)
+> [What is Power BI Premium Gen2?](service-premium-gen2-what-is.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

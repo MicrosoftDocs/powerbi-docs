@@ -1,6 +1,6 @@
 ---
-title: Create a dataset in Power BI embedded analytics for better embedded BI insights
-description: Walkthrough - Push data into a dataset - Create a dataset in Power BI. Enable better embedded BI insights using Power BI embedded analytics.
+title: Create a dataset
+description: Walkthrough - Push data into a dataset - Create a dataset in Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: madia
@@ -104,7 +104,7 @@ The next step shows you how to [get a dataset to add rows into a Power BI table]
 
 Below is the [complete code listing](#code).
 
-<a name="code"/>
+<a name="code"></a>
 
 ## Complete code listing
 

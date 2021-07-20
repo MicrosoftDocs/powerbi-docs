@@ -4,11 +4,10 @@ description: documentation for recents in Power BI
 author: mihart
 ms.reviewer: mihart
 ms.custom: video-G26dr2PsEpk
-
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/24/2020
+ms.date: 06/09/2021
 ms.author: mihart
 
 LocalizationGroup: Common tasks

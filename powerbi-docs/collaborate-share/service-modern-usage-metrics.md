@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 04/02/2021
+ms.date: 04/03/2021
 LocalizationGroup: Dashboards
 ---
 
@@ -27,7 +27,7 @@ If you create reports in modern workspaces, you have access to improved usage me
 
 - You need a Power BI Pro or Premium Per User (PPU) license to run and access the usage metrics data. However, the usage metrics feature captures usage information from all users, regardless of the license they're assigned.
 - To access improved usage metrics for a report, the report must reside in a modern workspace and you must have edit access to that report.
-- Your Power BI admin must have enabled usage metrics for content creators. Your Power BI admin may have also enabled collecting per-user data in usage metrics. Read about how to [enable these options in the admin portal](../admin/service-admin-portal.md#control-usage-metrics).
+- Your Power BI admin must have enabled usage metrics for content creators. Your Power BI admin may have also enabled collecting per-user data in usage metrics. Read about how to [enable these options in the admin portal](../admin/service-admin-portal.md#audit-and-usage-settings).
 
 ## Create & view an improved usage metrics report
 
@@ -123,7 +123,7 @@ Assuming all client telemetry reaches Power BI, the resulting metrics would be:
 Use the following procedure to take over a Usage Metrics Report dataset and update the credentials.
 
 1. Open the workspace that contains the report for which you want to update the Usage Metrics Report dataset.
-2. In the black header bar at the top, select the **Settings** icon, then select **Settings**.
+2. In the gray header bar at the top, select the **Settings** icon, then select **Settings**.
 
     ![Select Settings](media/service-modern-usage-metrics/power-bi-settings-settings.png)
 
@@ -153,7 +153,7 @@ Use the following procedure to take over a Usage Metrics Report dataset and upda
 
 ## Disable usage metrics reports
 
-Usage metrics reports are a feature that the Power BI or global administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they are On by default for all users in the organization. See [Control usage metrics](../admin/service-admin-portal.md#control-usage-metrics) in the Admin portal article for details on these settings.
+Usage metrics reports are a feature that the Power BI or global administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they are On by default for all users in the organization. See [Audit and usage metrics](../admin/service-admin-portal.md#audit-and-usage-settings) in the Admin portal article for details on these settings.
 
 > [!NOTE]
 > Only admins for the Power BI tenant can see the Admin portal and edit settings.
@@ -187,19 +187,19 @@ To dig into the report data, or to build your own reports against the underlying
 
 When you create a copy of the read-only, pre-built usage report, Power BI creates an editable instance of the report. At first glance, it looks the same. However, you can now open the report in Editing view, add new visualizations, filters, and pages, modify or delete existing visualizations, and so on. Power BI saves the new report in the current workspace.
 
-1. In the new usage metrics report, select the **More options** menu (...), then select **Save a copy**.
+1. In the new usage metrics report, select the **File** dropdown, then select **Save a copy**.
 
     ![Save a copy of the report](media/service-modern-usage-metrics/power-bi-modern-usage-metrics-save.png)
 
 2. In the **Save your report** dialog box, enter a name, then select **Save**.
 
-    Power BI creates an editable Power BI report, saved in the current workspace, and opens the report copy. 
+    Power BI creates an editable Power BI report saved in the current workspace. Select **Go to report** in the **Report saved** dialog box that appears.
 
-3. Select the **More options** menu (…), then select **Edit** to switch into Editing view. 
+3. Select **Edit** to switch into Editing view.
 
-    For example, you can change filters, add new pages, and build new visualizations, format the fonts and colors, etc.
+    From here you can change filters, add new pages, build new visualizations, format the fonts and colors, and so on.
 
-1. The new report is saved to the Reports tab in the current workspace and added to the Recent content list.
+1. The new report is saved to the **All** tab and the **Content** tab in the current workspace and added to the **Recent** list.
 
     ![The new report on the Reports tab](media/service-modern-usage-metrics/power-bi-modern-usage-metrics-new-report.png)
     
@@ -215,13 +215,13 @@ You can create a new usage report in Power BI Desktop, based on the Usage Metric
 
 2. If you aren't signed in to the Power BI service, on the **File** menu select **Sign in**.
 
-1. To connect to the Usage Metrics Report dataset, on the **Home** ribbon select **Get Data**.
+1. To connect to the Usage Metrics Report dataset, on the **Home** ribbon select **Get Data** > **More**.
 
 4. In the left pane, select **Power Platform**, then select **Power BI datasets** > **Connect**.
 
     ![Get data > Power Platform](media/service-modern-usage-metrics/power-bi-desktop-get-data.png)
 
-1. Scroll to the desired dataset or type *Usage Metrics Report* in the search box. 
+1. Scroll to the desired dataset or type *Usage Metrics* in the search box. 
 
 6. Verify in the Workspace column that you are selecting the correct dataset, then select **Create**. 
 
@@ -239,7 +239,7 @@ When you connect to the usage data in Excel, you can create PivotTables that use
 
 1. First, if you haven't done so already, [create a copy of the usage metrics report](#create-a-copy-of-the-usage-report). 
 
-2. Open the new usage metrics report, select the **More options** menu (…), and select **Analyze in Excel**.
+2. Open the new usage metrics report, select **Export** > **Analyze in Excel**.
 
     ![Analyze in Excel](media/service-modern-usage-metrics/power-bi-export-excel.png)
 

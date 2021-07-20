@@ -1,6 +1,6 @@
 ---
-title: Get an authentication access token  in Power BI embedded analytics for better embedded BI insights
-description: Walk through to push data - Get an authentication access token. Enable better embedded BI insights using Power BI embedded analytics.
+title: Get an authentication access token
+description: Walk through to push data - Get an authentication access token. 
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: madia

@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: report-builder
   ms.topic: conceptual
-  ms.date: 04/19/2021
+  ms.date: 07/19/2021
     
 title: "Paginated reports in Power BI: FAQ"
 summary: |
@@ -25,15 +25,16 @@ sections:
       - question: |
           What size Premium capacity do I need for paginated reports?
         answer: |
-          The paginated reports workload is available on P1 – P3 SKUs.  You may also use it with A4 – A6 SKUs for embed or test/dev scenarios.
-          
+          The paginated reports workload is available on P1 – P3 SKUs. You may also use it with A4 – A6 SKUs for embed or test/dev scenarios.
+
           > [!NOTE]
           > Power BI recently released a new version of Premium, called **Premium Gen2**, which is currently in preview. In **Premium Gen2**, the paginated reports workload is available on EM1-EM3 SKUs, P1-P3 SKUs and A1-A6 SKUs.  It also is available on a per user basis with Premium per user, which is built on Premium Gen2 and also in public preview. 
           >
           >Premium Gen2 simplifies the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2 (preview)](../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview).
           >
-          >To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).
-          
+          >To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).      
+          >  
+
       - question: |
           What is the maximum memory threshold I can put for paginated reports in my capacity?
         answer: |
@@ -96,15 +97,13 @@ sections:
           :::image type="content" source="media/paginated-reports-faq/paginated-reports-capacity-settings.png" alt-text="Paginated reports Capacity settings tab":::
           
           > [!NOTE]
-          > **Premium Gen2**, currently in preview, doesn't require you to change memory settings. The underlying system manages memory in Premium Gen2 automatically. Paginated reports workload is available on P1-P3 SKUs and A1-A6 SKUs in **Premium Gen2**.
+          > **Premium Gen2**, currently in preview, doesn't require you to change memory settings. The underlying system manages memory in Premium Gen2 automatically. Paginated reports workload is available on EM1-EM3 SKUs, P1-P3 SKUs and A1-A6 SKUs in **Premium Gen2**.
           
   - name: General
     questions:
       - question: |
           When should I use a paginated report vs. a Power BI report?
         answer: |
-          Paginated reports are best for scenarios that require a highly formatted, pixel-perfect output optimized for printing or PDF generation.  A profit and loss statement is a good example of the type of report you would probably want to create as a paginated report.  
-          
           Power BI reports are optimized for exploration and interactivity.  A sales report where different salespeople want to slice the data in the same report for their specific region/industry/customer and see how the numbers change would be best served by a Power BI report.
           
           For more information, see [When to use paginated reports in Power BI](../guidance/report-paginated-or-power-bi.md).
@@ -136,7 +135,7 @@ sections:
           
           - Shared data sources
           - Shared datasets
-          - Drill through and click-through to other reports
+          - Drillthrough and click-through to other reports
           - Linked reports
           - Custom fonts
           

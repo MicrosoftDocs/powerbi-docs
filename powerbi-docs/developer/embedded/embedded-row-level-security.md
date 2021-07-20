@@ -1,13 +1,13 @@
 ---
-title: Using row-level security with embedded content in Power BI embedded analytics for better embedded BI insights
-description: Learn about the steps you need to take to embed Power BI content within your application. Enable better embedded BI insights using Power BI embedded analytics.
+title: Using row-level security with embedded content in Power BI embedded analytics
+description: Learn about the steps you need to take to embed Power BI content within your application.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 06/10/2019 
+ms.date: 07/18/2021
 ---
 
 # Row-level security with Power BI Embedded
@@ -85,22 +85,25 @@ You can create the embed token by using the **GenerateTokenInGroup** method on *
 
 For example, you could change the *[PowerBI-Developer-Samples](https://github.com/Microsoft/PowerBI-Developer-Samples) > .NET Framework > Embed for your customers > **PowerBIEmbedded_AppOwnsData*** sample.
 
-**Before the change**
-
 ```csharp
-// Generate Embed Token with effective identities.
-generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view", identities: new List<EffectiveIdentity> { rls });
+public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional] Guid targetWorkspaceId)
+    {
+        PowerBIClient pbiClient = this.GetPowerBIClient();
 
-// Generate Embed Token for reports without effective identities.
-generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
-```
+        // Create a request for getting an embed token
+        // This method works only with new Power BI V2 workspace experience
+        var tokenRequest = new GenerateTokenRequestV2(
+            reports: new List<GenerateTokenRequestV2Report>() { new GenerateTokenRequestV2Report(reportId) },
+            datasets: datasetIds.Select(datasetId => new GenerateTokenRequestV2Dataset(datasetId.ToString())).ToList(),
+            targetWorkspaces: targetWorkspaceId != Guid.Empty ? new List<GenerateTokenRequestV2TargetWorkspace>() { new GenerateTokenRequestV2TargetWorkspace(targetWorkspaceId) } : null,
+            identities: new List<EffectiveIdentity> { rls }
+        );
 
-**After the change**
+        // Generate an embed token
+        var embedToken = pbiClient.EmbedToken.GenerateToken(tokenRequest);
 
-```csharp
-var generateTokenRequestParameters = new GenerateTokenRequest("View", null, identities: new List<EffectiveIdentity> { new EffectiveIdentity(username: "username", roles: new List<string> { "roleA", "roleB" }, datasets: new List<string> { "datasetId" }) });
-
-var tokenResponse = await client.Reports.GenerateTokenInGroupAsync("groupId", "reportId", generateTokenRequestParameters);
+        return embedToken;
+    }
 ```
 
 If you're calling the REST API, the updated API now accepts an additional JSON array, named **identities**, containing a username, list of string roles and list of string datasets. 

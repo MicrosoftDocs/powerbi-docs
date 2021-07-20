@@ -34,7 +34,7 @@ Use Ctrl+Click to select more than one visual at a time, which displays all sele
 ![Screenshot of the report canvas, showing how to use gridlines to align your visuals.](media/desktop-gridlines-snap-to-grid/snap-to-grid_2.png)
 
 ### Using gridlines inside visuals
-In Power BI there are also gridlines inside visuals that provide visible guides for comparing data points and values. Beginning with the September 2017 release of **Power BI Desktop**, you can now manage the gridlines within visuals using the **X axis** or **Y axis** card (as appropriate based on visual type), found in the **Format** section of the **Visualizations** pane. You can manage the following elements of gridlines within a visual:
+In Power BI there are also gridlines inside visuals that provide visible guides for comparing data points and values. You can manage the gridlines within visuals using the **X axis** or **Y axis** card (as appropriate based on visual type), found in the **Format** section of the **Visualizations** pane. You can manage the following elements of gridlines within a visual:
 
 * Turn gridlines on or off
 * Change the color of gridlines
@@ -85,4 +85,3 @@ You can also distribute your visuals evenly across the report canvas, either ver
 ![Screenshot of the report canvas, showing how to distribute your visuals evenly across the canvas using the Distribute option.](media/desktop-gridlines-snap-to-grid/snap-to-grid_8.png)
 
 With a few selections from these gridlines, alignment, and distribution tools, your reports will look just how you want them to.
-

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 04/06/2021
+ms.date: 06/28/2021
 ---
 # What's new in the mobile apps for Power BI
 For related "What's New" information, see:
@@ -17,6 +17,29 @@ For related "What's New" information, see:
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## June 2021
+### Updated look and new home page (preview) (Windows)
+We've introduced a new design and home page to simplify the way you find and open content. Turn on the **New look** toggle at the top of your screen and [check it out](mobile-windows-10-phone-app-get-started.md?tabs=new-look)!
+
+![Screenshot of new look for the Windows app home page](media/mobile-whats-new-in-the-mobile-apps/windows-10-new-look-home-page.png)
+
+### Paginated Report visuals (preview) now supported (iOS, Android, Windows)
+Paginated Report visuals (preview) enable you to render any paginated report uploaded to the service inside a Power BI report.
+Just like any other Power BI visual, Paginated Report visuals are fully-interactive, and are also supported in the Power BI Mobile apps.
+
+### Support for passing URL parameters to paginated reports (Android)
+Support for passing parameters to paginated reports via the URL now comes to Android! Passing parameters via the report URL automatically sets the report parameters to those values. [Learn more](../../paginated-reports/report-builder-url-pass-parameters.md)
+
+## May 2021
+### Support for passing URL parameters to paginated reports (iOS)
+We now support passing parameters to paginated reports via the URL. Passing parameters via the report URL automatically sets the report parameters to those values. [Learn more](../../paginated-reports/report-builder-url-pass-parameters.md)
+
+## April 2021
+### Support for Power BI in Split View (iPads)
+If your iPad supports multitasking, you can view and interact with your data side by side with another app using Split View mode. [Learn more!](mobile-apps-split-screen.md)
+
+![Screenshot of the mobile app being used in Split View mode.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-split-view.png)
 
 ## March 2021
 ### Easily find content by type
@@ -915,6 +938,7 @@ View [reports on your Windows 10 phone](mobile-reports-in-the-mobile-apps.md).
 Faster time to [insights on your Windows 10 mobile dashboards](mobile-tiles-in-the-mobile-apps.md): Share a tile snapshot or open a report directly from the dashboard.
 
 ### January 2016
+
 All of the January improvements are already in the new [Power BI app for Windows 10 phones](mobile-windows-10-phone-app-get-started.md), released in December 2015. Now they're rolling out to the other Power BI apps for mobile devices. Read the blog post about these improvements.
 
 **Real-time data support** Dashboards refresh in real time, so you don't need to refresh them manually.

@@ -8,12 +8,15 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: subject-monitoring
-ms.date: 03/04/2021
+ms.date: 04/29/2021
 ---
 
 # Monitoring Power BI Embedded data reference
 
 See [Monitor Power BI Embedded](monitor-power-bi-embedded.md) for details on collecting and analyzing monitoring data for Power BI Embedded.
+
+>[!TIP]
+>You can also use the [Premium Gen2 Monitoring App](../../admin/service-premium-gen2-metrics-app.md) to monitor your [Embedded Gen 2](power-bi-embedded-generation-2.md) capacity.
 
 ## Metrics
 

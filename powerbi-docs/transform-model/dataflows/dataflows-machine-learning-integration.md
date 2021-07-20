@@ -371,8 +371,6 @@ To learn more about Azure Machine Learning, please see:
 - Overview:  [What is Azure Machine Learning?](/azure/machine-learning/service/overview-what-is-azure-ml)
 - Quick Starts and Tutorials for Azure Machine Learning:  [Azure Machine Learning Documentation](/azure/machine-learning/)
 
-> [!NOTE]
-> A Power BI Premium subscription is required to use Azure Machine learning integration.
 
 ### Granting access to the Azure ML model to a Power BI user
 
@@ -443,6 +441,11 @@ If the model returns multiple output parameters, they are grouped together as a 
 [ ![expand the column](media/service-machine-learning-integration/machine-learning-integration-09.png) ](media/service-machine-learning-integration/machine-learning-integration-09.png#lightbox)
 
 Once you save your dataflow, the model is automatically invoked when the dataflow is refreshed, for any new or updated rows in the table table.
+
+##Limitations
+
+- AI insights (Cognitive Services and Azure ML models) are not supported on machines with proxy authentication setup.
+- AzureML models are not supported for Guest users.
 
 ## Next steps
 

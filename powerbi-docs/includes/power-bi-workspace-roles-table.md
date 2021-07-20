@@ -6,7 +6,7 @@ author: maggiesMSFT
 
 ms.service: powerbi
 ms.topic: include
-ms.date: 02/17/2021
+ms.date: 07/01/2021
 ms.author: maggies
 ms.custom: include file
 ---
@@ -26,8 +26,9 @@ ms.custom: include file
 | Feature dashboards and reports on colleagues' Home |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) |   |
 | Create, edit, and delete content in the workspace.  |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |
 | Publish reports to the workspace, delete content.  |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |
-| Create a report in another workspace based on a dataset in this workspace.<sup>2</sup> |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |
+| Create a report in another workspace based on a dataset in this workspace.<sup>3</sup> |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |
 | Copy a report.<sup>3</sup> | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
+| Create goals based on a dataset in the workspace.<sup>3</sup> | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
 | Schedule data refreshes via the on-premises gateway.<sup>4</sup> | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
 | Modify gateway connection settings.<sup>4</sup> | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
 | View and interact with an item.<sup>5</sup> |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  |
@@ -37,8 +38,9 @@ ms.custom: include file
 
 <sup>2</sup> Contributors and Viewers can also share items in a workspace if they have Reshare permissions.
 
-<sup>3</sup> To copy a report, and to create a report in another workspace based on a dataset in this workspace, you need [Build permission for the dataset](../connect-data/service-datasets-build-permissions.md). For datasets in this workspace, the people with Admin, Member, and Contributor roles automatically have Build permission through their workspace role.
+<sup>3</sup> To copy a report to another workspace, and to create a report in another workspace based on a dataset in this workspace, you need [Build permission for the dataset](../connect-data/service-datasets-build-permissions.md). For datasets in the original workspace, if you have at least the Contributor role you automatically have Build permission through your workspace role. See [Copy reports from other workspaces](../connect-data/service-datasets-copy-reports.md) for details.
 
 <sup>4</sup> Keep in mind that you also need permissions on the gateway. Those permissions are managed elsewhere, independent of workspace roles and permissions. See [Manage an on-premises gateway](/data-integration/gateway/service-gateway-manage) for details.
 
 <sup>5</sup> Even if you don't have a Power BI Pro license, you can view and interact with items in the Power BI service if the items are in a workspace in a Premium capacity.
+

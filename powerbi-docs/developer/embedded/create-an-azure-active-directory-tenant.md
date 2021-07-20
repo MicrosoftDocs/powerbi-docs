@@ -1,6 +1,6 @@
 ---
-title: Create an Azure Active Directory tenant to use with Power BI embedded analytics embedded BI
-description: Learn how to create a new Azure Active Directory (Azure AD) tenant for a custom embedded analytics application that calls Power BI REST APIs amd enables embedded BI intelligence for customers.
+title: Create an Azure Active Directory tenant to use with Power BI embedded 
+description: Learn how to create a new Azure Active Directory (Azure AD) tenant for a custom embedded analytics application that calls Power BI REST APIs and enables embedded BI intelligence for customers.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''

@@ -21,9 +21,15 @@ The Microsoft Sustainability Calculator provides new insight into carbon emissio
 
 To access the Microsoft Sustainability Calculator, you’ll need the following information from your organization’s Azure administrator:
 
-- Tenant ID
+**January 2020 release**
+
+- Enrollment ID
 - Access key
-- Enrollment number for Enterprise Agreement (EA) customers or billing account ID for Microsoft Customer Agreement (MCA)/Cloud Solution Provider (CSP) customers
+
+**December 2020 (preview) release**
+
+- Billing account ID for Microsoft Customer Agreement (MCA)/Cloud Solution Provider (CSP) customers or enrollment ID for Enterprise Agreement (EA) customers
+- Billing ID for MCA/CSP customers or EA Admin read (minimum) access for EA customers
 
 > [!NOTE]
 > Only Azure Administrator roles can authenticate and connect the Sustainability Calculator to company data. This note applies to the December 2020 preview release.
@@ -199,6 +205,10 @@ Your emissions can be reported as part of your company's Scope 3 indirect carbon
 **What can I do to reduce emissions further?**
 
 Being resource and cost efficient in Azure will reduce the environmental impact from your use of Azure. As an example, unused virtual machines are wasteful whether in the cloud or on-premises. Right-sizing virtual machines to improve compute utilization factors (CUF) decreases energy use per useful output, just as it does with physical servers. [Azure Cost Management](/azure/cost-management-billing/costs/cost-mgt-best-practices) gives you the tools to plan for, analyze and reduce your spending to maximize your cloud investment.
+
+**My company contract renewal process is underway and we'll have a new account number. Will I lose my historical emissions data?**
+
+Yes, you will. Before your renewal, be sure to download all historical data and reports you'll need for your records.
 
 #### Methodology
 
