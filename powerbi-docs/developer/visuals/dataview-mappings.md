@@ -36,50 +36,40 @@ Each valid mapping produces a data view. You can provide multiple data mappings 
 
 Power BI creates a mapping to a data view if and only if the valid mapping is also defined in `dataViewMappings`.
 
-In other words, `categorical` might be defined in `dataViewMappings` but other mappings, such as `table` or `single`, might not be. For example:
+In other words, `categorical` might be defined in `dataViewMappings` but other mappings, such as `table` or `single`, might not be. In that case, Power BI produces a data view with a single `categorical` mapping, while `table` and other mappings remain undefined. For example:
 
 ```json
 "dataViewMappings": [
     {
-        "categorical": { ... }
-    }
-]
-```
-
-Power BI produces a data view with a single `categorical` mapping. In this case, `table` and other mappings are undefined:
-
-```javascript
-{
     "categorical": {
         "categories": [ ... ],
         "values": [ ... ]
     },
     "metadata": { ... }
-}
+    }
+]
 ```
 
 ## Conditions
 
-This section describes conditions for a particular data mapping. If the data matches one of the described sets of conditions, the visual accepts the data as valid.
+The `conditions` section establishes rules for a particular data mapping. If the data matches one of the described sets of conditions, the visual accepts the data as valid.
 
 Currently, for each field, you can specify a minimum and maximum value. The value represents the number of fields that can be bound to that data role.
 
 > [!NOTE]
 > If a data role is omitted in the condition, it can have any number of fields.
 
-### Example 1
-
-You can drag multiple fields into each data role. In this example, you limit the category to one data field and the measure to two data fields.
+In the following example, you limit the `category` is limited to one data field and  `measure` to two data fields.
 
 ```json
 "conditions": [
-    { "category": { "max": 1 }, "y": { "max": 2 } },
+    { "category": { "max": 1 }, "measure": { "max": 2 } },
 ]
 ```
 
-### Example 2
+You can also set multiple conditions for a data role. In that case, the data is valid if any one of the conditions is met.
 
-In this example, either of two conditions is required:
+In the following example, either of two conditions is required:
 
 * Exactly one category data field and exactly two measures
 * Exactly two categories and exactly one measure.
@@ -93,14 +83,14 @@ In this example, either of two conditions is required:
 
 ## Single data mapping
 
-Single data mapping is the simplest form of data mapping. It accepts a single measure field and gives you the total. If the field is numeric, it gives you the sum. Otherwise, it gives you a count of unique values.
+Single data mapping is the simplest form of data mapping. It accepts a single measure field and returns the total. If the field is numeric, it returns the sum. Otherwise, it returns a count of unique values.
 
-To use single data mapping, you need to define the name of the data role that you want to map. This mapping works only with a single measure field. If a second field is assigned, no data view is generated, so it's also a good practice to include a condition that limits the data to a single field.
+To use single data mapping, define the name of the data role that you want to map. This mapping works only with a single measure field. If a second field is assigned, no data view is generated, so it's good practice to include a condition that limits the data to a single field.
 
 > [!NOTE]
-> This data mapping can't be used in conjunction with any other data mapping. It's meant to reduce data into a single numeric value.
+> This data mapping can't be used in conjunction with any other data mapping. It's meant to reduce data to a single numeric value.
 
-### Example 3
+For example:
 
 ```json
 {
