@@ -114,7 +114,7 @@ However, just looking at this chart and drawing conclusions can be misleading. W
 3. Use the **IT Area** and **IT Sub Area** slicers on the right to filter the values in the rest of the page and to explore the data. 
 
 ## Edit the report
-Select **Edit** in the top menu bar to explore in Editing view:
+Select **Edit** in the black **Power BI** header bar to explore in Editing view:
 
 * See how the pages are made, the fields in each chart, and the filters on the pages.
 * Add pages and charts, based on the same data.
