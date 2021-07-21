@@ -1,6 +1,6 @@
 ---
-title: Add Power BI URLs to allow list
-description: This article lists URL endpoints and ports to add to your allow list for connectivity to Power BI.
+title: Add Power BI URLs to allowlist
+description: This article lists URL endpoints and ports to add to your allowlist for connectivity to Power BI.
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
@@ -11,14 +11,14 @@ ms.date: 06/25/2020
 ms.custom: ''
 ---
 
-# Add Power BI URLs to your allow list
+# Add Power BI URLs to your allowlist
 [//]: # "suparnap, miwehnia, natham are contacts for maintaining this list"
 
 The Power BI service requires connectivity to the internet. The endpoints listed in the tables in this article should be reachable for customers using the Power BI service.
 
 To use the Power BI service, you must be able to connect to the endpoints marked **required** in the tables below, and to any endpoints marked **required** on the linked sites. If the link to an external site refers to a specific section, you only need to review the endpoints in that section.
 
-Endpoints marked **optional** may also be added to allow lists for specific functionality to work.
+Endpoints marked **optional** may also be added to allowlists for specific functionality to work.
 
 The Power BI service requires only TCP Port 443 to be opened for the listed endpoints.
 
@@ -96,7 +96,7 @@ Power BI depends on certain endpoints to view and access Power BI visuals. You m
 
 ## Related external sites
 
-Power BI links to other related sites. These sites host documentation, support, new feature requests, and more. Access to these sites won't affect the functionality of Power BI, so adding them to allow lists is optional.
+Power BI links to other related sites. These sites host documentation, support, new feature requests, and more. Access to these sites won't affect the functionality of Power BI, so adding them to allowlists is optional.
 
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
