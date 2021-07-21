@@ -42,7 +42,7 @@ To enable filtering for the visual, the *capabilities.json* file should contain 
 >
 > * If you are using an older (earlier than 3.x.x) version of the tools, include `powerbi-models` in the visuals package. For more information, see the short guide, [Add the Advanced Filter API to the custom visual](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/AddingAdvancedFilterAPI.md).
 
-All filters use the [`IFilter` interface](https://docs.microsoft.com/azure/machine-learning/studio-module-reference/ifilter-interface), as shown in the following code:
+All filters use the [`IFilter` interface](/azure/machine-learning/studio-module-reference/ifilter-interface), as shown in the following code:
 
 ```typescript
 export interface IFilter {
@@ -185,13 +185,15 @@ interface ITupleFilter extends IFilter {
 }
 ```
 
-Where `target` is an array of columns with table names:
+Where 
+
+* `target` is an array of columns with table names:
 
     ```typescript
     declare type ITupleFilterTarget = IFilterTarget[];
     ```
 
-  The filter can address columns from various tables.
+    The filter can address columns from various tables.
 
 * `$schema` is https://powerbi.com/product/schema#tuple.
 
