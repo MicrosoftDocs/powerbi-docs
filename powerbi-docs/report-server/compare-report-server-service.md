@@ -27,17 +27,17 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Lifecycle | Modern lifecycle policy | Fully managed service |  |
 | Release cycle | Three times a year (January, May, September) | Once a month | Latest features and fixes come to the Power BI service first. A rollup of features from Power BI Desktop releases for the service comes to Power BI Report Server in each release; most other features are only meant for the Power BI service. |
 | Composite models | No | Yes |
-| Content packs | No | Yes | [Organizational content packs: Introduction](../collaborate-share/service-organizational-content-pack-introduction.md) |
-| Connect to services like Salesforce | Yes | Yes | [Connect to the services you use](../connect-data/service-connect-to-services.md) with content packs in the Power BI service. In Power BI Report Server, use certified connectors to connect to services. See [Power BI report data sources in Power BI Report Server](data-sources.md) for details. |
+| Connect to services like Salesforce | Yes | Yes | [Connect to the services you use](../connect-data/service-connect-to-services.md) with template apps in the Power BI service. In Power BI Report Server, use certified connectors to connect to services. See [Power BI report data sources in Power BI Report Server](data-sources.md) for details. |
 | Create Power BI reports in Power BI Desktop | Yes | Yes |  |
 | Create Power BI reports in the browser | No | Yes |  |
 | Dashboards | No | Yes | [Dashboards in the Power BI service](../consumer/end-user-dashboards.md) |
 | Distribute group of reports using apps | No | Yes | [Create and publish apps with dashboards and reports](../collaborate-share/service-create-distribute-apps.md) |
 | Gateway required | No | Yes for on-premises data sources |  |
 | Host and connect to Power BI shared datasets | No | Yes | [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md) |
+| Organizational content packs | No | Yes | Organizational content packs are being deprecated, and replaced by template apps. |
 | Q&A | No | Yes | [Q&A in the Power BI service and Power BI Desktop](../create-reports/power-bi-tutorial-q-and-a.md) 
 | Quick insights | No | Yes | [Automatically generate data insights with Power BI](../consumer/end-user-insights.md) |
-| Paginated reports | Yes | Yes | [Paginated reports are available in the Power BI service](../paginated-reports/paginated-reports-report-builder-power-bi.md) in preview in a Premium capacity |
+| Paginated reports | Yes | Yes | [Paginated reports are available in the Power BI service](../paginated-reports/paginated-reports-report-builder-power-bi.md) in a Premium capacity |
 | Power BI mobile apps | Yes | Yes | [Power BI mobile apps overview](../consumer/mobile/mobile-apps-for-mobile-devices.md) |
 | Real-time streaming | No | Yes | [Real-time streaming in Power BI](../connect-data/service-real-time-streaming.md) |
 | Automatic page refresh for DirectQuery models | No | Yes | [Automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) |
@@ -55,6 +55,8 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Preview features | No | Yes | [Opt in for Power BI service preview](../consumer/end-user-preview-features.md) features |
 | Power BI visuals | Yes | Yes | [Power BI visuals](../developer/visuals/power-bi-custom-visuals.md) |
 | Power BI Desktop | Version optimized for Report Server, available for download with Report Server | Version optimized for Power BI Service, available from the Windows Store | [Power BI Desktop for the report server](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop for the Power BI service](https://aka.ms/pbidesktopstore) |
+| Template apps | No | Yes | [Install and distribute template apps in your organization](../connect-data/service-template-apps-install-distribute.md) |
+
 
 ## Next steps
 

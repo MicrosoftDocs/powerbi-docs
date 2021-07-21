@@ -504,7 +504,7 @@ For guest users enabled through the Allow external guest users to edit and manag
 - Power BI Publisher for Excel is not supported for guest users
 - Guest users cannot install a Power BI Gateway and connect it to your organization
 - Guest users cannot install apps publish to the entire organization
-- Guest users cannot use, create, update, or install organizational content packs
+- Guest users cannot use, create, update, or install template apps
 - Guest users cannot use Analyze in Excel
 - Guest users cannot be @mentioned in commenting ( this functionality will be added in an upcoming release )
 - Guest users cannot use subscriptions ( this functionality will be added in an upcoming release )
