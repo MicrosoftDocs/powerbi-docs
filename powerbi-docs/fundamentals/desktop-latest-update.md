@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.custom: video-r88EE4IzZlE
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 07/19/2021
+ms.date: 07/21/2021
 LocalizationGroup: Get started
 ---
 # What's new in Power BI?
 
-## July 2021 Update (2.95.421.0)
+## July 2021 Update (2.95.804.0)
 
 We're celebrating this month's release with fireworks, parades and a whole host of independent data connectors and visualizations. 
 
