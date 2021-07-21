@@ -15,16 +15,20 @@ This page contains a quick summary of the API versions. Versions listed here are
 
 ## API v3.6.0
   * Visual can receive updates from Power BI without the need to bind any data, by setting in **capabilities.json**: `"supportsLandingPage"` and newly added `"supportsEmptyDataView"` to a **"true"** value.  
+  * Supports Desktop 2021 February and later.
 
 ## API v3.4.0
   * `fetchMoreData` : new `aggregateSegments` parameter (default true), for supporting no-aggregation fetchMoreData
+  * Supports Desktop 2020 November and later.
 
 ## API v3.2.0
   * Supports **[supportsMultiVisualSelection](./supportsmultivisualselection-feature.md)**
+  * Supports Desktop 2019 September and later.
 
 ## API v2.6.0
   * Adds **isInFocus** to update option and **switchFocusModeState** method to visual host
   * Supports **subtotals** customization
+  * Supports Desktop 2019 June and later.
 
 ## API v2.5.0
   * Supports **[Analytics Pane](./analytics-pane.md)**
