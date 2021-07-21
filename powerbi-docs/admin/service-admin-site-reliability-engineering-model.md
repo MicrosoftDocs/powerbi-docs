@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/15/2021
+ms.date: 07/21/2021
 LocalizationGroup: Administration
 ---
 
@@ -73,7 +73,7 @@ In the second phase, which is the **incident response** phase, processes are str
 
 In the final phase, which is the **continuous improvement** phase, the team focuses on completion of relevant post-mortem analysis and resolution of any identified process, monitoring, or configuration or code fixes. The fixes are then prioritized against the team's general engineering backlog based on overall severity and risk of reoccurrence.
 
-## Best practices for service monitoring
+## Our practices for service monitoring
 The Power BI team emphasizes a consistent, data-driven, and customer-centric approach to its live site operations. Defining Service Level Indicators (SLIs) and implementing corresponding live site monitoring alerts is part of the approval criteria for enabling any new Power BI feature in production. Product group engineers also include steps for investigation and mitigation of alerts when they occur using a template Troubleshooting Guide (TSG). Those deliverables are then presented to the Site Reliability Engineering (SRE) team.
 
 One way in which the Power BI team enables exponential service growth is by using a SRE team. These individuals are skilled with service architecture, automation and incident management practices, and are embedded within incidents to drive end-to-end resolution. The approach contrasts with the rotational model where engineering leaders from the product group take on an incident manager role for only a few weeks per year. The SRE team ensures that a consistent group of individuals are responsible for driving live site improvements and ensuring that learnings from previous incidents are incorporated into future escalations. The SRE team also assists with large-scale drills that test Business Continuity and Disaster Recovery (BCDR) capabilities of the service.
@@ -97,7 +97,7 @@ Live Site SREs also enforce alert quality in several ways, including the followi
 * Ensuring that alerts execute for the absolute smallest time window possible for faster detection
 * Ensuring that alerts use reliability thresholds instead of absolute limits to scale clusters of different size
 
-## Best practices for incident response
+## Our practices for incident response
 When an automated live site incident is created for the Power BI service, one of the first priorities is to notify customers of potential impact. Azure has a target notification time of 15 minutes, which is difficult to achieve when notifications are manually posted by incident managers after joining a call. Communications in such cases are at risk of being late or inaccurate due to required manual analysis. Azure Monitoring offers centralized monitoring and alerting solutions that can detect impact to certain metrics within this time window. However, Power BI is a SaaS offering with complex scenarios and user interactions that cannot be easily modeled and tracked using such alerting systems. In response, the Power BI team developed a novel solution called **TTN0**.
 
 * **TTN0 (Time To Notify “0”)** is a *fully automated* incident notification service that uses our internal alerting infrastructure to identify specific scenarios and customers that are impacted by a newly created incident. It is also integrated with external monitoring agents outside of Azure to detect connectivity issues that might otherwise go unnoticed. TTN0 allows customers to receive an email when TTN0 detects a service disruption or degradation. With TTN0, the Power BI team can send reliable, targeted notifications within 10 minutes of impact start time (which is 33% faster than the Azure target). Since the solution is fully automated, there is minimal risk from human error or delays. As of May 2021, more than 8,000 companies have registered for TTN0 alerts.
@@ -111,7 +111,7 @@ Once the affected component/scenario of the service is determined, the Power BI 
 * **Leverage resiliency of dependent services:** Power BI proactively evaluates and invests in resiliency and redundancy efforts for all dependent services (such as SQL, Redis Cache, Key Vault). Resiliency includes sufficient component monitoring to detect upstream/downstream regressions as well as local, zonal, and regional redundancy (where applicable). Investing in these capabilities ensures that tooling exists for automatic or manual triggering of recovery operations to mitigate impact from an affected dependency.
 
 
-## Best practices for continuous improvement
+## Our practices for continuous improvement
 The Power BI team reviews all customer-impacting incidents during a Weekly Service Review with representation from all engineering groups that contribute to the Power BI service. The review disseminates key learnings from the incident to leaders across the organization and provides an opportunity to adapt our processes to close gaps and address inefficiencies.
 
 Prior to review, the SRE team prepares post-mortem content and identifies preliminary repair items for the live site team and product development team. Items may include code fixes, augmented telemetry, or updated alerts/TSGs. Power BI SREs are familiar with many of these areas and often proactively make the adjustments in real time while responding to an active incident. Doing so helps to ensure that changes are incorporated into the system in time to detect reoccurrence of a similar issue. In cases where an incident was the result of a customer escalation, the SRE team adjusts existing automated alerting and SLIs to reflect customer expectations. For the ~0.3% of incidents that require escalation to a Subject Matter Expert (SME) of the impacted scenario/component, the Power BI SRE team will review ways in which the same incident (or similar incidents) could be handled without escalation in the future. The detailed analysis by the SRE team helps the product development team to design a more resilient, scalable, and supportable product.
