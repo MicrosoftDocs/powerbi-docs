@@ -13,11 +13,11 @@ ms.date: 06/25/2021
 # Package a Power BI visual
 
 Before you can load a visual that you created into [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or share it with the community in the [Power BI Visual Gallery](https://visuals.powerbi.com/), you have to package it.
-Packaging a visual involves the following steps:
+Before packaging a visual, make sure to do the following:
 
-* [Providing property values](#enter-property-values) and meta data for the visual
-* Update the icon file
-* Packaging the custom visual
+* [Provide property values](#enter-property-values) and meta data for the visual
+* [Update the icon](#update-the-icon-optional)
+* [Package](#package-the-visual) the custom visual
 
 ## Enter property values
 
@@ -30,7 +30,7 @@ Packaging a visual involves the following steps:
 
     In the **Visualizations** pane, hovering over the icon reveals the display name.
 
-4. Fill in or edit the following fields in the *pbiviz.json* file:
+4. Fill in or modify the following additional fields in the *pbiviz.json* file:
     * `visualClassName`
     * `description`
 
@@ -45,7 +45,7 @@ Packaging a visual involves the following steps:
     }
     ```
 
-6. Enter your details in the `author` object.
+6. Enter your name and email in the `author` object.
 
 7. Save the *pbiviz.json* file.
 
