@@ -12,7 +12,7 @@ ms.date: 06/18/2021
 
 # The Visual Filters API in Power BI visuals
 
-The Visual Filters API allows you to filter data in Power BI visuals. The main difference between the filter API and other ways of selecting data is the way that it affects other visuals in the report. When the filter is applied to a visual, only the filtered data will be visible, despite highlight support by other visuals.
+The Visual Filters API allows you to filter data in Power BI visuals. The main difference between the filter API and other ways of selecting data is the way that it affects other visuals in the report. When a filter is applied to a visual, only the filtered data will be visible in all visuals, despite highlight support by other visuals.
 
 To enable filtering for the visual, the *capabilities.json* file should contain a `filter` object in the `general` section.
 
@@ -40,7 +40,7 @@ To enable filtering for the visual, the *capabilities.json* file should contain 
 >    npm install powerbi-models --save
 >    ```
 >
-> * If you are using an older (earlier than 3.x.x) version of the tools, you should include `powerbi-models` in the visuals package. For more information, see the short guide, [Add the Advanced Filter API to the custom visual](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/AddingAdvancedFilterAPI.md).
+> * If you are using an older (earlier than 3.x.x) version of the tools, include `powerbi-models` in the visuals package. For more information, see the short guide, [Add the Advanced Filter API to the custom visual](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/AddingAdvancedFilterAPI.md).
 
 All filters use the [`IFilter` interface](https://docs.microsoft.com/azure/machine-learning/studio-module-reference/ifilter-interface), as shown in the following code:
 
@@ -124,9 +124,9 @@ The [Advanced Filter API](https://github.com/Microsoft/powerbi-models) enables c
 
 This filter was introduced in the Visuals API version 1.7.0.
 
-The difference between the *Advanced Filter API* and the *Basic API*:
+As opposed to the *Basic API*, in the *Advanced Filter API*:
 
-* The `target` requires both a `table` and `column` name (as opposed to the Basic API which just had `column`).
+* The `target` requires both a `table` and `column` name (the *Basic API* just had `column`).
 * Operators are *And* and *Or* (as opposed to *In*).
 * The filter uses conditions (*less than*, *greater than* etc.) instead of values with the interface:
 
@@ -171,9 +171,9 @@ For the complete sample code for using the Advanced Filter API, go to the [Sampl
 
 ## The Tuple Filter API (multi-column filter)
 
-The Tuple Filter API was introduced in Visuals API 2.3.0. It is similar to the Basic Filter API, but it allows you to define conditions for several columns and tables.
+The *Tuple Filter* API was introduced in Visuals API 2.3.0. It is similar to the *Basic Filter API*, but it allows you to define conditions for several columns and tables.
 
-The filter interface is shown in the following code: 
+The filter interface is shown in the following code:
 
 ```typescript
 interface ITupleFilter extends IFilter {
@@ -185,9 +185,7 @@ interface ITupleFilter extends IFilter {
 }
 ```
 
-Where:
-
-* `target` is an array of columns with table names:
+Where `target` is an array of columns with table names:
 
     ```typescript
     declare type ITupleFilterTarget = IFilterTarget[];
@@ -261,7 +259,7 @@ visualHost.applyJsonFilter(filter, "general", "filter", FilterAction.merge);
 > [!IMPORTANT]
 > The order of the column names and condition values is important.
 
-The SQL equivalent is:
+The SQL equivalent of the above code is:
 
 ```sql
 SELECT * FROM DataTable WHERE ( Team = "Team1" AND Value = 5 ) OR ( Team = "Team2" AND Value = 6 );
@@ -283,7 +281,7 @@ export interface VisualUpdateOptions extends extensibility.VisualUpdateOptions {
 }
 ```
 
-When you switch, bookmarks, Power BI calls the `update` method of the visual, and the visual gets a corresponding `filter` object. For more information, see [Add bookmark support for Power BI visuals](bookmarks-support.md).
+When you switch bookmarks, Power BI calls the `update` method of the visual, and the visual gets a corresponding `filter` object. For more information, see [Add bookmark support for Power BI visuals](bookmarks-support.md).
 
 ### Sample JSON filter
 
