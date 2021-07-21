@@ -30,7 +30,7 @@ Before packaging a visual, make sure to do the following:
 
     In the **Visualizations** pane, hovering over the icon reveals the display name.
 
-4. Fill in or edit the following fields in the *pbiviz.json* file:
+4. Fill in or modify the following additional fields in the *pbiviz.json* file:
     * `visualClassName`
     * `description`
 
@@ -45,7 +45,7 @@ Before packaging a visual, make sure to do the following:
     }
     ```
 
-6. Enter your details in the `author` object.
+6. Enter your name and email in the `author` object.
 
 7. Save the *pbiviz.json* file.
 
