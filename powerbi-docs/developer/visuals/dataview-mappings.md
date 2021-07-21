@@ -12,7 +12,7 @@ ms.date: 01/28/2021
 
 # Understand data view mapping in Power BI visuals
 
-This article discusses data view mapping and describes how data roles are used to create different types of visuals and how to specify conditional requirements for them. The article also describes each `dataMappings` type.
+This article discusses data view mapping and describes how data roles are used to create different types of visuals. It explains how to specify conditional requirements for data roles, as well as the different `dataMappings` types.
 
 Each valid mapping produces a data view. You can provide multiple data mappings under certain conditions. The supported mapping options are:
 
@@ -69,11 +69,6 @@ In the following example, you limit the `category` is limited to one data field 
 
 You can also set multiple conditions for a data role. In that case, the data is valid if any one of the conditions is met.
 
-In the following example, either of two conditions is required:
-
-* Exactly one category data field and exactly two measures
-* Exactly two categories and exactly one measure.
-
 ```json
 "conditions": [
     { "category": { "min": 1, "max": 1 }, "measure": { "min": 2, "max": 2 } },
@@ -81,11 +76,16 @@ In the following example, either of two conditions is required:
 ]
 ```
 
+In the above example, either one of the following two conditions is required:
+
+* Exactly one category field and exactly two measures
+* Exactly two categories and exactly one measure.
+
 ## Single data mapping
 
 Single data mapping is the simplest form of data mapping. It accepts a single measure field and returns the total. If the field is numeric, it returns the sum. Otherwise, it returns a count of unique values.
 
-To use single data mapping, define the name of the data role that you want to map. This mapping works only with a single measure field. If a second field is assigned, no data view is generated, so it's good practice to include a condition that limits the data to a single field.
+To use single data mapping, define the name of the data role that you want to map. This mapping works only with a single measure field. If a second field is assigned, no data view is generated, so it's good practice to include a condition limiting the data to a single field.
 
 > [!NOTE]
 > This data mapping can't be used in conjunction with any other data mapping. It's meant to reduce data to a single numeric value.
@@ -118,7 +118,7 @@ For example:
 }
 ```
 
-The resulting data view still contains the other types (table, categorical, and so on), but each mapping contains only the single value. The best practice is to access the value only in single.
+The resulting data view can still contain other types (table, categorical, and so on), but each mapping contains only the single value. The best practice is to access the value only in single.
 
 ```JSON
 {
@@ -137,30 +137,9 @@ The resulting data view still contains the other types (table, categorical, and 
 }
 ```
 
-Code sample to process simple data view mapping
+Code sample to process simple data views mapping
 
 ```typescript
-"use strict";
-import powerbi from "powerbi-visuals-api";
-import DataView = powerbi.DataView;
-import DataViewSingle = powerbi.DataViewSingle;
-// standart imports
-// ...
-
-export class Visual implements IVisual {
-    private target: HTMLElement;
-    private host: IVisualHost;
-    private valueText: HTMLParagraphElement;
-
-    constructor(options: VisualConstructorOptions) {
-        // constructor body
-        this.target = options.element;
-        this.host = options.host;
-        this.valueText = document.createElement("p");
-        this.target.appendChild(this.valueText);
-        // ...
-    }
-
     public update(options: VisualUpdateOptions) {
         const dataView: DataView = options.dataViews[0];
         const singleDataView: DataViewSingle = dataView.single;
@@ -175,20 +154,20 @@ export class Visual implements IVisual {
 }
 ```
 
-As a result the visual displays a single value from Power BI:
+The above code results in the display of a single value from Power BI:
 
 ![Single dataview mapping visual example](media/dataview-mappings/visual-simple-dataview-mapping.png)
 
 ## Categorical data mapping
 
-Categorical data mapping is used to get one or two independent groupings of data.
+Categorical data mapping is used to get independent groupings, or categories, of data. The categories can also be further grouped together using *group by* in the data mapping.
 
-### Example 4
+### Simple categorical data mapping
 
-Here is the definition from the previous example for data roles:
+Here are the data roles and mappings from the previous example:
 
 ```json
-"dataRole":[
+"dataRoles":[
     {
         "displayName": "Category",
         "name": "category",
@@ -199,12 +178,7 @@ Here is the definition from the previous example for data roles:
         "name": "measure",
         "kind": "Measure"
     }
-]
-```
-
-Here is the mapping:
-
-```json
+],
 "dataViewMappings": {
     "categorical": {
         "categories": {
@@ -219,14 +193,14 @@ Here is the mapping:
 }
 ```
 
-It's a simple example. It reads "Map my `category` data role so that for every field I drag into `category`, its data is mapped to `categorical.categories`. Also map my `measure` data role to `categorical.values`."
+The above example reads "Map my `category` data role so that for every field I drag into `category`, its data is mapped to `categorical.categories`. Also, map my `measure` data role to `categorical.values`."
 
-* **for...in**: For all the items in this data role, include them in the data query.
-* **bind...to**: Produces the same result as in *for...in*, but expects that the data role will have a condition restricting it to a single field.
+* **for...in**: Include *all* items in this data role, in the data query.
+* **bind...to**: Produces the same result as in *for...in*, but expects that the data role will have a condition restricting it to a *single* field.
 
-### Example 5
+### Grouping categorical data
 
-This example uses the first two data roles from the previous example and additionally defines `grouping` and `measure2`.
+The next example uses the same two data roles as the previous example, and adds `grouping` and `measure2`.
 
 ```json
 "dataRole":[
@@ -250,12 +224,7 @@ This example uses the first two data roles from the previous example and additio
         "name": "measure2",
         "kind": "Grouping"
     }
-]
-```
-
-Here is the mapping:
-
-```json
+],
 "dataViewMappings":{
     "categorical": {
         "categories": {
@@ -274,11 +243,11 @@ Here is the mapping:
 }
 ```
 
-Here the difference is in how we are mapping categorical.values. We are saying that "Map my `measure` and `measure2` data roles to be grouped by the data role `grouping`."
+Here, the difference is in how we map `categorical.values`. By mapping the `measure` and `measure2` data roles to the data role `grouping`, we can scale the x axis and y axis appropriately.
 
-### Example 6
+In the next example, we group the categorical data to create a hierarchy, which can be used to support [drill-down](drill-down-support.md) actions.
 
-Here are the data roles:
+Here are the data roles and mappings:
 
 ```json
 "dataRoles": [
@@ -297,12 +266,7 @@ Here are the data roles:
         "name": "series",
         "kind": "Measure"
     }
-]
-```
-
-Here is the data view mapping:
-
-```json
+],
 "dataViewMappings": [
     {
         "categorical": {
@@ -327,7 +291,7 @@ Here is the data view mapping:
 ]
 ```
 
-The categorical data view could be visualized like this:
+If the categorical data contained the following:
 
 | Country | 2013 | 2014 | 2015 | 2016 |
 |---------|------|------|------|------|
@@ -336,8 +300,7 @@ The categorical data view could be visualized like this:
 | Mexico | 645 | x | x | x |
 | UK | x | x | 831 | x |
 
-
-Power BI produces it as the categorical data view. It's the set of categories.
+Power BI produces a categorical data view with the following set of categories.
 
 ```JSON
 {
@@ -359,15 +322,15 @@ Power BI produces it as the categorical data view. It's the set of categories.
 }
 ```
 
-Each category maps to a set of values as well. Each of these values is grouped by series, which is expressed as years.
+Each `category` maps to a set of `values` as well. Each of these `values` is grouped by `series`, which is expressed as years.
 
-For example, each `values` array represents data for each year.
-Also each `values` array has 4 values, for Canada, USA, UK and Mexico respectively:
+For example, each `values` array represents one year.
+Also, each `values` array has four values: Canada, USA, UK, and Mexico:
 
 ```JSON
 {
     "values": [
-        // Values for 2013 year
+        // Values for year 2013
         {
             "source": {...},
             "values": [
@@ -378,7 +341,7 @@ Also each `values` array has 4 values, for Canada, USA, UK and Mexico respective
             ],
             "identity": [...],
         },
-        // Values for 2014 year
+        // Values for year 2014
         {
             "source": {...},
             "values": [
@@ -389,7 +352,7 @@ Also each `values` array has 4 values, for Canada, USA, UK and Mexico respective
             ],
             "identity": [...],
         },
-        // Values for 2015 year
+        // Values for year 2015
         {
             "source": {...},
             "values": [
@@ -400,7 +363,7 @@ Also each `values` array has 4 values, for Canada, USA, UK and Mexico respective
             ],
             "identity": [...],
         },
-        // Values for 2016 year
+        // Values for year 2016
         {
             "source": {...},
             "values": [
@@ -415,7 +378,7 @@ Also each `values` array has 4 values, for Canada, USA, UK and Mexico respective
 }
 ```
 
-Code sample for processing categorical data view mapping is described below. The sample creates Hierarchical structure `Country => Year => Value`
+Below is a code sample for processing categorical data view mapping. This sample creates the hierarchical structure `Country => Year => Value`
 
 ```typescript
 "use strict";
@@ -424,7 +387,7 @@ import DataView = powerbi.DataView;
 import DataViewCategorical = powerbi.DataViewCategorical;
 import DataViewValueColumnGroup = powerbi.DataViewValueColumnGroup;
 import PrimitiveValue = powerbi.PrimitiveValue;
-// standart imports
+// standard imports
 // ...
 
 export class Visual implements IVisual {
@@ -482,7 +445,7 @@ export class Visual implements IVisual {
 }
 ```
 
-The result of the visual:
+This is the result of the visual:
 
 ![The visual with categorical data view mapping](media/dataview-mappings/categorical-data-view-mapping-visual.png)
 
