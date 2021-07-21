@@ -10,8 +10,10 @@
   - name: Concepts
     expanded: true
     items: 
-      - name: "Organize work in workspaces"
+      - name: "The new workspace experience"
         href: service-new-workspaces.md
+      - name: "Roles in new workspaces"
+        href: service-roles-new-workspaces.md
       - name: "Monitor usage in classic workspaces"
         href: service-usage-metrics.md
       - name: "Monitor usage in new workspaces"
@@ -67,6 +69,8 @@
         href: service-teams-pivot.md
       - name: "Analyze Teams usage in Teams"
         href: service-teams-analytics.md
+      - name: "Get notifications in Teams"
+        href: service-teams-notifications.md
     - name: Publish and share your work
       items: 
       - name: "Share reports and dashboards"
@@ -119,16 +123,12 @@
         href: service-automate-paginated-excel-sharepoint-list.md
       - name: Save a paginated report to a local folder
         href: service-automate-paginated-local-file.md
+      - name: "Power Automate button visual"
+        href: ../create-reports/power-bi-automate-visual.md
     - name: "Use third-party apps"
       href: service-power-bi-get-started-third-party-apps.md
     - name: Organizational content packs
       items:
-      - name: "Intro to organizational content packs"
-        href: service-organizational-content-pack-introduction.md
-      - name: "Create and publish a content pack"
-        href: service-organizational-content-pack-create-and-publish.md
-      - name: "Copy, refresh, get access to content packs"
-        href: service-organizational-content-pack-copy-refresh-access.md
       - name: "Manage, update, delete content packs"
         href: service-organizational-content-pack-manage-update-delete.md
       - name: "Remove a connection to a content pack"

@@ -33,7 +33,7 @@ You can only run usage metrics reports in the Power BI service. However, if you 
 
 - You need a Power BI Pro or Premium Per User (PPU) license to run and access the usage metrics data. However, the usage metrics feature captures usage information from all users, regardless of the license they're assigned.
 - To access usage metrics for a particular dashboard or report, you must have edit access to that dashboard or report.
-- Your Power BI admin has to have enabled usage metrics for content creators. You Power BI admin may have also enabled collecting per-user data in usage metrics. Read about how to [enable these options in the admin portal](../admin/service-admin-portal.md#control-usage-metrics). 
+- Your Power BI admin has to have enabled usage metrics for content creators. You Power BI admin may have also enabled collecting per-user data in usage metrics. Read about how to [enable these options in the admin portal](../admin/service-admin-portal.md#audit-and-usage-settings). 
 
 ## View a Usage Metrics report
 
@@ -80,7 +80,7 @@ To dig into the report data, or to build your own reports against the underlying
 
 | Metric | Dashboard | Report | Description |
 | --- | --- | --- | --- |
-| Distribution method slicer |yes |yes |How users got access to the content. There are 3 possible methods: users can access the dashboard or report by being members of a [workspace](../consumer/end-user-experience.md), by having the content [shared with them](service-share-dashboards.md), or by installing a content pack/app.  Note that views through an app are counted as "content pack." |
+| Distribution method slicer |yes |yes |How users got access to the content. There are 3 possible methods: users can access the dashboard or report by being members of a [workspace](../consumer/end-user-experience.md), by having the content [shared with them](service-share-dashboards.md), or by installing an app.  Note that views through an app are counted as "content pack." |
 | Platforms slicer |yes |yes |Was the dashboard or report accessed via the Power BI service (powerbi.com) or a mobile device? Mobile includes all our iOS, Android, and Windows apps. |
 | Report page slicer |no |yes |If the report has more than 1 page, slice the report by the page(s) that was viewed. "Blank" means a report page was recently added (within 24 hours the actual name of the new page appears in the slicer list) or report pages have been deleted. "Blank" captures these types of situations. |
 | Views per day |yes |yes |Total number of views per day - a view is defined as a user loading a report page or dashboard. |
@@ -143,7 +143,7 @@ By default, per-user data is enabled for usage metrics, and content consumer acc
 
 When disabling usage metrics for their entire organization, admins can use the **delete all existing usage metrics content** option to delete all existing reports and dashboard tiles that were built using the usage metrics reports. This option removes access to usage metrics data for users in the organization who may already be using it. Deleting existing usage metrics content is irreversible.
 
-See [Control usage metrics](../admin/service-admin-portal.md#control-usage-metrics) in the Admin portal article for details on these settings. 
+See [Audit and usage metrics](../admin/service-admin-portal.md#audit-and-usage-settings) in the Admin portal article for details on these settings. 
 
 ## Usage metrics in national clouds
 

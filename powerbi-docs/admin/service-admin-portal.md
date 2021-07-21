@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 05/27/2021
+ms.date: 06/12/2021
 ms.custom: ''
 LocalizationGroup: Administration
 ---
@@ -62,11 +62,11 @@ Here's a breakdown of what you can see in each tile:
     ![Distinct count of dashboards, reports, datasets](media/service-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
 
 
-* Most consumed dashboard by number of users who can access it. For example: You have a dashboard that you shared with three users. You also added the dashboard to a content pack that two different users connected to. The dashboard's count would be 6 (1 + 3 + 2).
+* Most consumed dashboard by number of users who can access it. For example: You have a dashboard that you shared with three users. You also added the dashboard to an app that two different users connected to. The dashboard's count would be 6 (1 + 3 + 2).
   
     ![Most consumed dashboards](media/service-admin-portal/powerbi-admin-usage-metrics-top-dashboards.png)
 
-* The most popular content users connected to. The content would be anything the users could reach through the Get Data process, such as SaaS content packs, Organizational content packs, files, or databases.
+* The most popular content users connected to. The content would be anything the users could reach through the Get Data process, such as SaaS template apps, files, or databases.
 
   
     ![Most consumed packages](media/service-admin-portal/powerbi-admin-usage-metrics-top-connections.png)
@@ -82,39 +82,6 @@ Here's a breakdown of what you can see in each tile:
 The second section shows the same type of information, but based on groups. This section lets you see which groups in your organization are most active and what kind of content they're consuming.
 
 With this information, you can get real insights into how people are using Power BI across your organization.
-
-## Control usage metrics
-
-Usage metrics reports are a feature that the Power BI or global administrator can turn on or off. Administrators have granular control over which users have access to usage metrics. They are **On** by default for all users in the organization.
-
-Admins can also determine whether content creators can see per-user data in usage metrics. 
-
-See [Monitor usage metrics for Power BI dashboards and reports](../collaborate-share/service-usage-metrics.md) for details about the reports themselves.
-
-### Usage metrics for content creators
-
-1. In the Admin portal, select **Tenant settings** > **Audit and usage settings** > **Usage metrics for content creators**.
-
-    :::image type="content" source="media/service-admin-portal/admin-portal-usage-metrics.png" alt-text="Screenshot that shows the Admin portal tenant settings usage metrics.":::
-
-1. Enable (or disable) usage metrics > **Apply**.
-
-    :::image type="content" source="media/service-admin-portal/power-bi-usage-metrics-content-creators.png" alt-text="Screenshot that shows the Usage metrics for content creators setting enabled.":::
-
-### Per-user data in usage metrics for content creators
-
-By default, per-user data is enabled for usage metrics, and account information is included in the metrics report. If you don't want to include account information for some or all users, disable the feature for specified security groups or for an entire organization. Account information then shows in the report as *Unnamed*.
-
-![Per-user usage data](media/service-admin-portal/power-bi-admin-per-user-usage-data.png)
-
-### Delete all existing usage metrics content
-
-When disabling usage metrics for their entire organization, admins can also choose one or both options to:
-
-- **Delete all existing usage metrics content** to delete all existing reports and dashboard tiles that were built using the usage metrics reports and datasets. This option removes all access to usage metrics data for all users in the organization who may already be using it.
-- **Delete all existing per-user data in current usage metrics content** to remove all access to per-user data for all users in the organization who may already be using it.
-
-Be careful, because deleting existing usage and per-user metrics content is irreversible.
 
 ## Users
 
@@ -545,7 +512,12 @@ This setting must be enabled for audit log entries to be recorded. There can be 
 
 ### Usage metrics for content creators
 
-Users in the organization can see usage metrics for dashboards and reports they create. [Learn more](../collaborate-share/service-usage-metrics.md)
+When enabled, users in the organization can see usage metrics for dashboards, reports, and datasets that they have appropriate permissions for. [Learn more](../collaborate-share/service-usage-metrics.md)
+
+1. In the Admin portal, select **Tenant settings** > **Audit and usage settings** > **Usage metrics for content creators**.
+1. Enable (or disable) usage metrics > **Apply**.
+
+    :::image type="content" source="media/service-admin-portal/admin-portal-usage-metrics.png" alt-text="Screenshot that shows the Admin portal tenant settings usage metrics.":::
 
 ### Per-user data in usage metrics for content creators
 
@@ -573,7 +545,7 @@ Users in the organization can add and view web content tiles on Power BI dashboa
 
 ### Embed content in apps
 
-Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting prevents users from being able to use the REST APIs to embed Power BI content within their application. [Learn more](../developer/embedded/embedding.md)
+Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting prevents users from being able to use the REST APIs to embed Power BI content within their application. [Learn more](../developer/embedded/embedded-analytics-power-bi.md)
 
 ### Allow service principals to use Power BI APIs
 
@@ -627,7 +599,7 @@ The **Power BI Premium** tab enables you to manage any Power BI Premium capaciti
 
 The **Power BI Embedded** tab enables you to view your Power BI Embedded (A SKU) capacities that you've purchased for your customer. Since you can only purchase A SKUs from Azure, you [manage embedded capacities in Azure](../developer/embedded/azure-pbie-create-capacity.md) from **the Azure portal**.
 
-For more information about how to manage Power BI Embedded (A SKU) settings, see [What is Power BI Embedded](../developer/embedded/azure-pbie-what-is-power-bi-embedded.md).
+For more information about Power BI Embedded SKUs, see [Capacity and SKUs in Power BI embedded analytics](../developer/embedded/embedded-capacity.md).
 
 ## Embed codes
 
@@ -669,7 +641,7 @@ As an administrator, you can view the workspaces that exist in your organization
 
 Admins can also control users' ability to create new workspace experience workspaces, and classic workspaces. See [Workspace settings](#workspace-settings) in this article for details.
 
-The table columns on the **Workspaces** tab correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Organize work in the new workspaces](../collaborate-share/service-new-workspaces.md).
+The table columns on the **Workspaces** tab correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [The new workspaces](../collaborate-share/service-new-workspaces.md).
 
 On the **Workspaces** tab, you see the *state* for each workspace. The following table gives more details about the meaning of those states.
 

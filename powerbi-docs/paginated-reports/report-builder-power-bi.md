@@ -3,7 +3,7 @@ title: "Power BI Report Builder"
 description: Power BI Report Builder is a tool for authoring paginated reports that you can publish to the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 05/11/2021
+ms.date: 07/19/2021
 ms.service: powerbi
 ms.subservice: report-builder
 ms.custom: video-78TZeiEhveY
@@ -22,7 +22,7 @@ Prefer learning from videos? Check out the [Video-based course: Power BI Paginat
 
 The following paginated report is a sample of an invoice. You can download it and other samples, such as letters, transcripts, and labels. Read more about [sample Power BI paginated reports](paginated-reports-samples.md). 
 
-![Paginated report in the Power BI service](media/report-builder-power-bi/power-bi-report-builder-sample-invoice.png)
+![Screenshot of a sample paginated report in Power BI Report Builder.](media/report-builder-power-bi/power-bi-report-builder-sample-invoice.png)
 
 ## Start with the Table, Matrix, or Chart wizard
 
@@ -69,6 +69,5 @@ Read about how to [get started with deployment pipelines](../create-reports/depl
 
 - [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
 - [Video-based course: Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md)
-- [Keyboard shortcuts for accessibility in Report Builder](/sql/reporting-services/report-builder/keyboard-shortcuts-report-builder)
-- [Keyboard shortcuts for accessibility in Report Builder - with context](https://docs.microsoft.com/sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context)
+- [Keyboard shortcuts for accessibility in Report Builder](/sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context)
 - [Sample Power BI paginated reports](paginated-reports-samples.md)

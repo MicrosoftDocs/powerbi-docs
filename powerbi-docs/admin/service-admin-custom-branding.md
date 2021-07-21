@@ -4,6 +4,7 @@ description: Custom branding lets you change the look and feel of the Power BI s
 author: kfollis
 ms.author: kfollis
 ms.service: powerbi
+ms.subservice: powerbi-admin
 ms.topic: how-to 
 ms.date: 05/19/2021
 ms.custom: template-how-to

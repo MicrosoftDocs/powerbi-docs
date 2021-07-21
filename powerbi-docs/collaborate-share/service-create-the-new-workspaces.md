@@ -92,7 +92,7 @@ After you've configured the OneDrive location, you get to it in the same way you
 
     ![Screenshot of Get data, get files.](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
 
-1.  Select **SharePoint - Team Sites**.
+1. Select **SharePoint - Team Sites**.
 
     ![Screenshot of SharePoint - Team Sites, get data.](media/service-create-the-new-workspaces/workspace-get-data-sharepoint-team-sites.png)
 
@@ -108,7 +108,7 @@ After you've configured the OneDrive location, you get to it in the same way you
 
 You can create and publish *apps* from the new workspace experiences. Each workspace can hold the content for an associated *app*, a collection of dashboards, reports, and datasets which you can distribute to others in your organization. Read more about [publishing apps from the new workspaces](service-create-distribute-apps.md).
 
-By default, only workspace Admins and Members can publish and update the app for the workspace. The **Allow contributors to update the app for this workspace** setting lets workspace Admins delegate the ability to update the app for the workspace to users with the workspace Contributor role. Read more about the different [roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces).
+By default, only workspace Admins and Members can publish and update the app for the workspace. The **Allow contributors to update the app for this workspace** setting lets workspace Admins delegate the ability to update the app for the workspace to users with the workspace Contributor role. Read more about the different [roles in the new workspaces](service-roles-new-workspaces.md).
 
 1. Access the **Allow contributors to update the app** setting in one of two ways:
 
@@ -142,8 +142,15 @@ On the **Premium** tab in the **Settings** pane, you can choose settings related
 
 1. Choose **Default storage limit**. Read more about [enabling large datasets](../admin/service-premium-large-models.md#enable-large-datasets).
 
+## Give users access to your workspace
+
+Now that you've created the workspace, you'll want to add other users to *roles* in the workspace, so you can collaborate with them. See these articles for more information:
+
+- [Give users access to the new workspaces](service-give-access-new-workspaces.md)
+- [Roles in the new workspaces in Power BI](service-roles-new-workspaces.md)
+
 ## Next steps
-* Read about [organizing work in the new workspaces experience in Power BI](service-new-workspaces.md)
+* Read about [the new workspace experience in Power BI](service-new-workspaces.md)
 * [Create classic workspaces](service-create-workspaces.md)
 * [Publish an app from the new workspaces in Power BI](service-create-distribute-apps.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

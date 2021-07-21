@@ -12,10 +12,13 @@ LocalizationGroup: Get started
 ---
 
 # What is Power BI?
+
 **Power BI** is a collection of software services, apps, and connectors that work together to turn your unrelated sources of data into coherent, visually immersive, and interactive insights. Your data may be an Excel spreadsheet, or a collection of cloud-based and on-premises hybrid data warehouses. Power BI lets you easily connect to your data sources, visualize and discover what's important, and share that with anyone or everyone you want.
 
 ## The parts of Power BI
-Power BI consists of several elements that all work together, starting with these three basics: 
+
+Power BI consists of several elements that all work together, starting with these three basics:
+
 - A Windows desktop application called **Power BI Desktop**.
 - An online SaaS (*Software as a Service*) service called the **Power BI service**. 
 - Power BI **mobile apps** for Windows, iOS, and Android devices.
@@ -30,6 +33,7 @@ Beyond those three, Power BI also features two other elements:
 - **Power BI Report Server**, an on-premises report server where you can publish your Power BI reports, after creating them in Power BI Desktop. Read more about [Power BI Report Server](#on-premises-reporting-with-power-bi-report-server) later in this article.
 
 ## How Power BI matches your role
+
 How you use Power BI may depend on your role in a project or on a team. Other people, in other roles, might use Power BI differently.
 
 For example, you might primarily use the **Power BI service** to view reports and dashboards. Your number-crunching, business-report-creating coworker might make extensive use of **Power BI Desktop** or **Power BI Report Builder** to create reports, then publish those reports to the Power BI service, where you view them. Another coworker, in sales, might mainly use the **Power BI phone app** to monitor progress on sales quotas, and to drill into new sales lead details.
@@ -46,12 +50,12 @@ Explore documents that pertain to your role:
 - Power BI Report Builder for [*enterprise report creators*](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 - Power BI for [*administrators*](../admin/service-admin-administering-power-bi-in-your-organization.md)
 - Power BI for *developers*
-    * [Embedded analytics with Power BI](../developer/embedded/embedding.md)
-    * [What is Power BI Embedded in Azure?](../developer/embedded/azure-pbie-what-is-power-bi-embedded.md)
-    * [Visuals in Power BI](../developer/visuals/power-bi-custom-visuals.md)
+    * [What is Power BI embedded analytics?](../developer/embedded/embedded-analytics-power-bi.md)
+    * [Create your own visuals in Power BI](../developer/visuals/develop-power-bi-visuals.md)
     * [What can developers do with the Power BI API?](../developer/automation/overview-of-power-bi-rest-api.md)
 
 ## The flow of work in Power BI
+
 One common workflow in Power BI begins by connecting to data sources in Power BI Desktop and building a report. You then publish that report from Power BI Desktop to the Power BI service, and share it so business users in the Power BI service and on mobile devices can view and interact with the report.
 
 This workflow is common, and shows how the three main Power BI elements complement one another.

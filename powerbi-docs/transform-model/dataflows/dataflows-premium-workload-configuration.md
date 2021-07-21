@@ -15,8 +15,6 @@ LocalizationGroup: Data from files
 
 You can create dataflow workloads in your Power BI Premium subscription. Power BI uses the concept of *workloads* to describe Premium content. Workloads include datasets, paginated reports, dataflows, and AI. The *dataflows* workload lets you use dataflows self-service data preparation to ingest, transform, integrate, and enrich data. Power BI Premium dataflows are managed in the **Admin portal**.
 
-![Admin portal for dataflows in Power BI premium](media/dataflows-premium-workload-configuration/dataflows-premium-workloads-01.png)
-
 The following sections describe how to enable dataflows in your organization, how to refine their settings in your Premium capacity, and guidance for common usage.
 
 ## Enabling dataflows in Power BI premium
@@ -100,7 +98,7 @@ This section provides guidance for common scenarios when using dataflow workload
 
 Slow refresh times are usually a parallelism issue. You should review the following options, in order:
 
-1. A key concept for slow refresh times is the nature of your data preparation. In our restaurant analogy explained earlier in this article, imagine having prepared food already, waiting to be used. In this scenario, the food can be cooked much faster due to minimal prep time. Similarly, whenever you can optimize your slow refresh times by taking advantage of your data source actually doing the preparation and performing upfront query logic, you should do s. Specifically, when using a relational database such as SQL as your source, see if the initial query can be run on the source, and use that source query for your initial extraction dataflow for the data source. If you cannot use a native query in the source system, perform operations that the dataflows [engine can fold to the data source](/power-query/power-query-folding).
+1. A key concept for slow refresh times is the nature of your data preparation. In our restaurant analogy explained earlier in this article, imagine having prepared food already, waiting to be used. In this scenario, the food can be cooked much faster due to minimal prep time. Similarly, whenever you can optimize your slow refresh times by taking advantage of your data source actually doing the preparation and performing upfront query logic, you should do so. Specifically, when using a relational database such as SQL as your source, see if the initial query can be run on the source, and use that source query for your initial extraction dataflow for the data source. If you cannot use a native query in the source system, perform operations that the dataflows [engine can fold to the data source](/power-query/power-query-folding).
 
 2. Evaluate spreading out refresh times on the same capacity. Refresh operations are a process that requires significant compute. Using our restaurant analogy, spreading out refresh times is akin to limiting the number of guests in your restaurant. Just as restaurants will schedule guests and plan for capacity, you also want to consider refresh operations during times when usage is not at its full peak. This can go a long way toward alleviating strain on the capacity.
 
@@ -110,11 +108,11 @@ Slow refresh times are usually a parallelism issue. You should review the follow
 
 5. Do both of the previous steps, allowing for an even higher degree of parallelism, because you get more cooks and a bigger kitchen.
     
-6. If the steps in this section don't provide the desired degree of parallelism, consider upgrading your capacity to a higher SKU. Then follow steps the previous steps in this section again.
+6. If the steps in this section don't provide the desired degree of parallelism, consider upgrading your capacity to a higher SKU. Then follow the previous steps in this sequence again.
 
 ### Out of memory exceptions
 
-When you experience **out of memory exceptions**, you need to increase performance of the containers and memory. Take the following steps.
+When you experience **out of memory exceptions**, you need to increase performance of the containers and memory. Take the following steps:
 
 1. Increase memory on the container. This is similar to having one star chef versus many chefs, as described in the previous section.
 

@@ -63,7 +63,7 @@ The datasets workload is enabled by default and cannot be disabled. Use the foll
 |---------------------------------|----------------------------------------|
 | **Max Memory (%)** | The maximum percentage of available memory that datasets can use in a capacity. |
 | **XMLA Endpoint** | Specifies that connections from client applications honor the security group membership set at the workspace and app levels. For more information, see [Connect to datasets with client applications and tools](service-premium-connect-tools.md). |
-| **Max Intermediate Row Set Count** | The maximum number of intermediate rows returned by DirectQuery. The default value is 1000000, and the allowable range is between 100000 and 2147483647. |
+| **Max Intermediate Row Set Count** | The maximum number of intermediate rows returned by DirectQuery. The default value is 1000000, and the allowable range is between 100000 and 2147483646. Note that the upper limit may need to be further constrained based on what the datasource supports. |
 | **Max Offline Dataset Size (GB)** | The maximum size of the offline dataset in memory. This is the compressed size on disk. The default value is 0, which is the highest limit defined by SKU. The allowable range is between 0 and the capacity size limit. |
 | **Max Result Row Set Count** | The maximum number of rows returned in a DAX query. The default value is -1 (no limit), and the allowable range is between 100000 and 2147483647. |
 | **Query Memory Limit (%)** | The maximum percentage of available memory in the workload that can be used for executing a MDX or DAX query. The default value is 0, which results in SKU-specific automatic query memory limit being applied. |

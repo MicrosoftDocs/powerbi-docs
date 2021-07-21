@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 04/21/2021
+ms.date: 06/10/2021
 LocalizationGroup: Get started
 ---
 # Data sources for the Power BI service
@@ -19,18 +19,14 @@ You can get data from any of the data sources in Power BI by selecting **Get Dat
 
 ![Screenshot of Get Data, showing it in lower left of Power B I service screen.](media/service-get-data/pbi-getdata-navigation-link.png) 
 
-After you select **Get Data**, you can choose the data you want to access
+After you select **Get data**, you can choose the data you want to access.
 
 ![Screenshot of the Get Data choices, showing the options to choose the data you want to access.](media/service-get-data/pbi-getdata-startscreen.png)
 
 ## Discover content
 ![Screenshot of the Discover content section, showing partner logos.](media/service-get-data/pbi-getdata-discovercontent.png)
 
-The **Discover content** section contains all the data and reports you need already prepared for you. In Power BI, there are two types of content packs: Organizational and Services. 
-
-**Organizational**: If you and other users in your organization have a Power BI Pro or Premium Per User (PPU) account, you can create, share, and use content packs. To learn more, see [Intro to organizational content packs](../collaborate-share/service-organizational-content-pack-introduction.md).
-
-**Services**: There are literally dozens of services with content packs for Power BI, and more are being added all the time. Most services require you to have an account. To learn more, see [Connect to services you use with Power BI](service-connect-to-services.md).
+The **Discover content** section contains data and reports you need, already prepared for you. In Power BI, there are many services with *template apps* for Power BI, and more are being added all the time. Most services require you to have an account. To learn more, see [Connect to services you use with Power BI](service-connect-to-services.md).
 
 ## Create new content
 
@@ -65,7 +61,7 @@ For other database types in your organization, you'll need to use Power BI Deskt
 ## What if my data comes from a different source?
 There are hundreds of different data sources you can use with Power BI. Wherever you get your data from, that data has to be in a format consumable by the Power BI service. With consumable data, the Power BI service can create reports and dashboards, answer questions with **Q&A**, and so on.
 
-Some data sources already have data formatted for the Power BI service. These sources are like content packs from service providers like Google Analytics and Twilio. SQL Server Analysis Services Tabular model databases are ready for use, too. You can also connect live to databases in the cloud like Azure SQL Database and Spark on HDInsight.
+Some data sources already have data formatted for the Power BI service. These sources are similar to template apps from service providers like Google Analytics and Twilio. SQL Server Analysis Services Tabular model databases are ready for use, too. You can also connect live to databases in the cloud like Azure SQL Database and Spark on HDInsight.
 
 In other cases, it might be necessary to query and load the data you want into a file. For example, let's say you have logistics data in your organization. You store that data in a data warehouse database on a server. In the Power BI service, you can't connect to that database and begin exploring its data unless it's a tabular model database. But, you can use Power BI Desktop or Excel to query and load that logistics data into a data model you then save as a file. You can then import that file into Power BI where a dataset exists.
 
@@ -78,7 +74,7 @@ You see, even though you can't connect to your data source directly from the Pow
 ## Some more details
 You'll see the terms dataset and data source used a lot in Power BI. They're often used synonymously. But they really are two different things, although they're related.
 
-You create a **dataset** automatically in Power BI when you use **Get Data**. With **Get Data**, you connect to and import data from a content pack, file, or you connect to a live data source. A dataset contains information about the data source and data-source credentials. In many cases, it also includes a subset of data copied from the data source. When you create visualizations in reports and dashboards, you're often looking at data in the dataset.
+You create a **dataset** automatically in Power BI when you use **Get Data**. With **Get Data**, you connect to and import data from a template app, file, or you connect to a live data source. A dataset contains information about the data source and data-source credentials. In many cases, it also includes a subset of data copied from the data source. When you create visualizations in reports and dashboards, you're often looking at data in the dataset.
 
 A **data source** is where the data in a dataset comes from. For example, the data could come from:
 
@@ -91,7 +87,7 @@ Maybe you save your files on your local drive or a drive somewhere in your organ
 
 If you save your files on OneDrive for Business or SharePoint - Team Sites, you can then connect to or import them into Power BI. Then, your dataset, reports, and dashboard will always be up-to-date. Because both OneDrive and Power BI are in the cloud, Power BI can connect directly to your saved file. It connects about once every hour and checks for updates. The dataset and any visualizations refresh automatically if there are any updates.
 
-Content packs from services are automatically updated. In most cases, they're updated once a day. You can manually refresh, but if you see any updated data will depend on the service provider. Updates to content packs from people in your organization will depend on the data sources used. They'll also depend on how the person who created the content pack configured the refresh.
+Template apps from services are automatically updated. In most cases, they're updated once a day. You can manually refresh, but if you see any updated data will depend on the service provider. Updates to template apps from people in your organization will depend on the data sources used. They'll also depend on how the person who created the template app configured the refresh.
 
 Azure SQL Database, Azure Synapse Analytics (formerly SQL Data Warehouse), and Spark on Azure HDInsight are data sources in the Cloud. The Power BI service is also in the cloud so Power BI can connect to those data sources live, using **DirectQuery**. What you see in Power BI is always in sync and there's no need to set up a scheduled refresh.
 

@@ -215,7 +215,7 @@ Datasets that use cloud data sources, such as Azure SQL DB, don't require a data
 ![Configure data source credentials without a gateway](media/refresh-data/configure-data-source-credentials.png)
 
 > [!NOTE]
-> Each user can only have one set of credentials per data source, across all of the data sets they own, regardless of the workspaces where the datasets reside. 
+> Each user can only have one set of credentials per data source, across all of the datasets they own, regardless of the workspaces where the datasets reside. And each dataset can only have one owner. If your want to update the credentials for a dataset where you are not the dataset owner, you must first take over the dataset by clicking on the Take Over button on the dataset settings page.
 
 ### Accessing on-premises and cloud sources in the same source query
 
@@ -340,7 +340,7 @@ The warning icon helps to indicate current dataset issues, but it is also a good
 
 ## Automatic page refresh
 
-Automatic page refresh works at a report page level, and allows report authors to set a refresh interval for visuals in a page that is only active when the page is being consumed. Automatic page refresh is only available for DirectQuery data sources. The minimum refresh interval depends on which type of workspace the report is published in, and the capacity admin settings for Premium workspaces and [embedded workspaces](../developer/embedded/embedding.md).
+Automatic page refresh works at a report page level, and allows report authors to set a refresh interval for visuals in a page that is only active when the page is being consumed. Automatic page refresh is only available for DirectQuery data sources. The minimum refresh interval depends on which type of workspace the report is published in, and the capacity admin settings for Premium workspaces and [embedded workspaces](../developer/embedded/embedded-analytics-power-bi.md#power-bi-embedded).
 
 Learn more about automatic page refresh in the [automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) article.
 

@@ -6,11 +6,7 @@
     expanded: true
     items:
     - name: "What is Power BI embedded analytics?"
-      href: /javascript/api/overview/powerbi/power-bi-embedded-analytics?toc=/power-bi/developer/embedded/TOC.json?bc=/power-bi/breadcrumb/toc.json
-    - name: "What is embedding with Power BI"
-      href: embedding.md
-    - name: "What is Power BI Embedded in Azure"
-      href: azure-pbie-what-is-power-bi-embedded.md
+      href: embedded-analytics-power-bi.md
     - name: "What is Power BI Embedded Generation 2"
       href: "power-bi-embedded-generation-2.md"      
   - name: Tutorials
@@ -44,7 +40,7 @@
       href: embedded-row-level-security.md
     - name: "Paginated reports Row-level security"
       href: paginated-reports-row-level-security.md
-    - name: "Manage multi-tenants"
+    - name: "Multi-tenancy solutions"
       href: embed-multi-tenancy.md
     - name: "Connect a report using dynamic binding"
       href: embed-dynamic-binding.md
@@ -74,8 +70,6 @@
       href: register-app.md
     - name: "Monitor Power BI Embedded"
       href: monitor-power-bi-embedded.md      
-    - name: "Get an Azure AD access token"
-      href: get-azuread-access-token.md
     - name: "Embedding Q&A"
       href: qanda.md
     - name: "Troubleshoot your embedded application"
@@ -90,14 +84,6 @@
         href: azure-pbie-scale-capacity.md
       - name: Pause and start a capacity in Azure
         href: azure-pbie-pause-start.md
-    - name: Migrate from Workspace Collections
-      items:
-      - name: "How to migrate from Power BI Workspace Collections"
-        href: migrate-from-powerbi-embedded.md  
-      - name: Migration tool
-        href: migrate-tool.md
-      - name: "Migration code snippets"
-        href: migrate-code-snippets.md
   - name: Reference
     items:
     - name: APIs

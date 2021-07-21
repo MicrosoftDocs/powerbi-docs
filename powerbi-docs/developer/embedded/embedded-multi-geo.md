@@ -7,7 +7,7 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 02/05/2019
+ms.date: 07/18/2021
 ---
 
 # Multi-Geo support for Power BI Embedded
@@ -76,13 +76,11 @@ To support management of capacities with Multi-Geo through API, we have made som
 
 * Multi-Geo doesn't result in better performance in general. Loading reports and dashboards still involve requests to the home region for metadata.
 
-* In an embedding for your customers scenario, query text and query result continue to transit through the home tenant.
-
 ## Next steps
 
 Learn more about Power BI Embedded capacities and Multi-Geo options for all capacities by referencing the links below.
 
-* [What is Power BI Embedded?](azure-pbie-what-is-power-bi-embedded.md)
+* [What is Power BI Embedded?](embedded-analytics-power-bi.md)
 
 * [Create a Power BI Embedded capacity](azure-pbie-create-capacity.md)
 

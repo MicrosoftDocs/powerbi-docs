@@ -23,25 +23,21 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Embedded analytics with Power BI
+    - title: What is embedded analytics in Power BI
       itemType: overview
-      url: embedded/embedding.md
+      url: embedded/embedded-analytics-power-bi.md
     # Card
-    - title: What is Power BI Embedded in Azure?
+    - title: Develop your own Power BI visual
       itemType: overview
-      url: embedded/azure-pbie-what-is-power-bi-embedded.md  
-    # Card
-    - title: Visuals in Power BI
-      itemType: overview
-      url: visuals/power-bi-custom-visuals.md
-    # Card
-    - title: Power BI embedded analytics Client APIs
-      itemType: whats-new
-      url: /javascript/api/overview/powerbi/
+      url: visuals/develop-power-bi-visuals.md
     # Card
     - title: Power BI Embedded Generation 2 (preview)
       itemType: whats-new
-      url: embedded/power-bi-embedded-generation-2.md    
+      url: embedded/power-bi-embedded-generation-2.md        
+    # Card
+    - title: Power BI embedded analytics Client APIs
+      itemType: whats-new
+      url: /javascript/api/overview/powerbi/  
     # Card
     - title: Automated  template app configuration
       itemType: concept
@@ -56,13 +52,13 @@ conceptualContent:
     # Card
     - title: Embedded analytics
       links:
-        - url: embedded/embedding.md
+        - url: embedded/embedded-analytics-power-bi.md
           itemType: overview
-          text: Embedded analytics with Power BI
-        - url: embedded/azure-pbie-what-is-power-bi-embedded.md
+          text: What is Power BI embedded analytics?
+        - url: embedded/embedded-analytics-power-bi.md
           itemType: overview
-          text: What is Power BI Embedded in Azure?
-        - url: embedded/embedded-capacity.md
+          text: What is Power BI Embedded Generation 2          
+        - url: embedded/power-bi-embedded-generation-2.md
           itemType: concept
           text: Capacity and SKUs
       # footerLink (optional)
@@ -72,9 +68,9 @@ conceptualContent:
     # Card
     - title: Power BI visuals
       links:
-        - url: visuals/power-bi-custom-visuals.md
+        - url: visuals/develop-power-bi-visuals.md
           itemType: overview
-          text: Visuals in Power BI
+          text: Develop your own Power BI visual
         - url: visuals/develop-circle-card.md
           itemType: tutorial
           text: Develop a Power BI visual

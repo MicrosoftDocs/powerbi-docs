@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/05/2020
+ms.date: 05/06/2020
 LocalizationGroup: Data from files
 ---
 # Publish to Power BI from Microsoft Excel
 With Microsoft Excel 2016 and later, you can publish your Excel workbooks directly to your [Power BI](https://powerbi.microsoft.com) workspace, where you can create highly interactive reports and dashboards based on your workbook’s data. You can then share your insights with others in your organization.
 
-![Publish a workbook to Power BI](media/service-publish-from-excel/pbi_uploadexport2.png)
+![Publish a workbook to Power BI](media/service-publish-from-excel/power-bi-upload-export-2.png)
 
 When publishing a workbook to Power BI, there are few things to consider:
 
@@ -38,22 +38,22 @@ Excel supports publishing of local Excel files. They do not need to be saved to 
 
 When you select **Publish**, you can select the workspace to which you want to publish. If your Excel file resides on OneDrive for Business, you can only publish to your *My Workspace*. If your Excel file resides on a local drive, you can publish to *My Workspace* or a shared workspace to which you have access.
 
-![Screenshot shows Publish to Power B I with My Workspace selected.](media/service-publish-from-excel/pbi_choose_workspace.png)
+![Screenshot shows Publish to Power B I with My Workspace selected.](media/service-publish-from-excel/power-bi-choose-workspace.png)
 
 Two options on how to get your workbook into Power BI.
 
-![Screenshot shows Publish with My Workspace selected.](media/service-publish-from-excel/pbi_uploadexport3.png)
+![Screenshot shows Publish with My Workspace selected.](media/service-publish-from-excel/power-bi-upload-export-3.png)
 
 Once published, the workbook content you publish is imported into Power BI, separate from the local file. If you want to update the file in Power BI, you must publish the updated version again, or you can refresh the data by configuring a scheduled refresh, on the workbook, or on the dataset in Power BI.
 
 ### Publishing from a standalone Excel installation
 When publishing from a standalone Excel installation, the workbook must be saved to OneDrive for Business. Select **Save to Cloud** and choose a location in OneDrive for Business.
 
-![Save to OneDrive for Business](media/service-publish-from-excel/pbi_savetoonedrive2.png)
+![Save to OneDrive for Business](media/service-publish-from-excel/power-bi-save-onedrive-2.png)
 
 Once your workbook is saved to OneDrive for Business, when you select **Publish**, you have two options to get your workbook into Power BI, **Upload** or **Export**:
 
-![Options for Power BI](media/service-publish-from-excel/pbi_uploadexport2.png)
+![Options for Power BI](media/service-publish-from-excel/power-bi-upload-export-2.png)
 
 #### Upload your workbook to Power BI
 When you choose the **Upload** option, your workbook will appear in Power BI just like it would in Excel Online. But, unlike Excel Online, you’ll have some options that enable you to help you pin elements from your worksheets to dashboards.
@@ -78,11 +78,11 @@ Using **Export** is very similar to using **Get Data > File > OneDrive for Busin
 ## Publishing
 When you choose either option, Excel signs in to Power BI with your current account, then publishes your workbook to your Power BI workspace. You can monitor the status bar in Excel to see how the publish process is progressing.
 
-![status bar for publishing to Power BI](media/service-publish-from-excel/pbi_publishingstatus.png)
+![status bar for publishing to Power BI](media/service-publish-from-excel/power-bi-publishing-status.png)
 
 When complete, you can go to Power BI directly from Excel.
 
-![go to Power BI](media/service-publish-from-excel/pbi_gotopbi.png)
+![go to Power BI](media/service-publish-from-excel/power-bi-publish.png)
 
 ## Next steps
 [Excel data in Power BI](service-excel-workbook-files.md)  

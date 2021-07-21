@@ -77,7 +77,7 @@ Don't like the name of a page in your Power BI report?  A new name is just a cli
     ![type new page name](media/service-rename/new-name.png)
 
 ## Considerations and troubleshooting
-* If the item to be renamed has been shared with you, or is part of a content pack, you won't see the gear icon and you won't have access to Settings.
+* If the item to be renamed has been shared with you, or is part of an app, you won't see the gear icon and you won't have access to Settings.
 * On the **Datasets** tab, if you don't see **More options** (...), expand your browser window.
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

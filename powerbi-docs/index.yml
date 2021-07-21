@@ -15,7 +15,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 02/03/2021 #Required; mm/dd/yyyy format.
+  ms.date: 07/01/2021 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
 # Maximum of 8 items 
@@ -31,25 +31,25 @@ highlightedContent:
       itemType: concept
       url: connect-data/incremental-refresh-overview.md
     # Card
-    - title: Power BI Desktop diagnostics collection
-      itemType: overview
-      url: fundamentals/desktop-diagnostics.md
+    - title: External tools in Power BI Desktop
+      itemType: reference
+      url: transform-model/desktop-external-tools.md
     # Card
     - title: Create a Power BI visual using React
       itemType: tutorial
       url: developer/visuals/create-react-visual.md
     # Card
-    - title: Add the Power BI app to Microsoft Teams
+    - title: Create a Power Automate visual for Power BI (preview)
       itemType: how-to-guide
-      url: collaborate-share/service-microsoft-teams-app.md
+      url: create-reports/power-bi-automate-visual.md
     # Card
     - title: Power BI embedded analytics client APIs
       itemType: overview
       url: /javascript/api/overview/powerbi/
     # Card
-    - title: Get started with goals in Power BI (preview)
+    - title: Mandatory label policy for content (preview)
       itemType: concept
-      url: create-reports/service-goals-introduction.md
+      url: admin/service-security-sensitivity-label-mandatory-label-policy.md
     # Card
     - title: Power BI on Microsoft Learn 
       itemType: learn
@@ -115,8 +115,8 @@ conceptualContent:
           text: Embedded analytics
         - url: developer/visuals/index.yml
           itemType: overview
-          text: Power BI visuals
-        - url: developer/automation/index.yml
+          text: Power BI Embedded Generation 2 (preview)
+        - url: developer/embedded/power-bi-embedded-generation-2.md
           itemType: overview
           text: Automation
       # footerLink (optional)
@@ -196,9 +196,9 @@ conceptualContent:
         - url: collaborate-share/service-create-the-new-workspaces.md
           itemType: how-to-guide
           text: Create the new workspaces
-        - url: collaborate-share/service-collaborate-microsoft-teams.md
-          itemType: concept
-          text: Collaborate in Microsoft Teams
+        - url: collaborate-share/service-teams-notifications.md
+          itemType: how-to-guide
+          text: Get notifications in Teams about Power BI activity
       # footerLink (optional)
       footerLink:
         url: collaborate-share/index.yml
