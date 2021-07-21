@@ -839,7 +839,7 @@ You can further customize your visual by adding more features. You can add featu
 
 Before you can load your visual into [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or share it with the community in the [Power BI Visual Gallery](https://visuals.powerbi.com/), you have to package it.
 
-Follow the instructions in [Package a Power BI visual](package-a-visual.md) to prepare the visual for sharing.
+Follow the instructions in [Package a Power BI visual](package-visual.md) to prepare the visual for sharing.
 
 >[!NOTE]
 >
