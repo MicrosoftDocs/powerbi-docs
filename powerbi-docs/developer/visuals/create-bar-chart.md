@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 05/25/2021
+ms.date: 07/20/2021
 ---
 
 # Tutorial: Build a bar chart
@@ -839,11 +839,11 @@ You can further customize your visual by adding more features. You can add featu
 
 Before you can load your visual into [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or share it with the community in the [Power BI Visual Gallery](https://visuals.powerbi.com/), you have to package it.
 
-Follow the instructions in [Package a Power BI visual](custom-visual-develop-tutorial-format-options.md#packaging-the-custom-visual) to prepare the visual for sharing.
+Follow the instructions in [Package a Power BI visual](package-visual.md) to prepare the visual for sharing.
 
 >[!NOTE]
 >
->For the full source code of a bar chart with more features, including [tool-tips](add-tooltips.md) and a [context menu](context-menu.md), see [PowerBI visuals sample bar chart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart).
+>For the full source code of a bar chart with more features, including [tool-tips](add-tooltips.md) and a [context menu](context-menu.md), see [PowerBI visuals sample bar chart](package-visual.md).
 
 ## Next steps
 
