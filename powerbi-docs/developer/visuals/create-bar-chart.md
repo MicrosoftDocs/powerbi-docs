@@ -21,7 +21,7 @@ In this tutorial, you learn how to:
 > [!div class="checklist"]
 >
 > * Define the capabilities of your visual
-> * Understand the source code
+> * Understand the source code used to build a visual
 > * Render the visual
 > * Add objects to the properties pane
 > * Package the visual
