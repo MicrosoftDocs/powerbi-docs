@@ -304,7 +304,7 @@ There are a few considerations to keep in mind while working with private endpoi
 * Usage metrics do *not* work when private endpoints are enabled.
 * Publish to Web is not supported (and grayed out) when you enable **Block Public Internet Access** in Power BI.
 * Email subscriptions are not supported when you enable **Block Public Internet Access** in Power BI. 
-* [Microsoft Information Protection (MIP)](/microsoft-365/compliance/information-protection?view=o365-worldwide) does not currently support Private Links. This means that in [Power BI Desktop](service-security-sensitivity-label-overview.md#sensitivity-labels-in-power-bi-desktop-preview) running in an isolated network, the Sensitivity button will be grayed out, label information will not appear, and decryption of *.pbix* files will fail.
+* [Microsoft Information Protection (MIP)](/microsoft-365/compliance/information-protection?view=o365-worldwide) does not currently support Private Links. This means that in [Power BI Desktop](service-security-sensitivity-label-overview.md#sensitivity-labels-in-power-bi-desktop) running in an isolated network, the Sensitivity button will be grayed out, label information will not appear, and decryption of *.pbix* files will fail.
 
    To enable these capabilities in Power BI Desktop, admins can configure [Service Tags](/azure/virtual-network/service-tags-overview) for the underlying services that support MIP, [EOP](/azure/virtual-network/service-tags-overview#eopexternalpublishedips) and AIP. Please make sure you understand the implications of using Service Tags in a Private Links isolated network.
 * Gateways enabled for Power BI private endpoints will not work properly with non-Power BI scenarios. 
