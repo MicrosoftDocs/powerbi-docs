@@ -17,10 +17,10 @@ This article discusses data view mapping and describes how data roles are used t
 Each valid mapping produces a data view. You can provide multiple data mappings under certain conditions. The supported mapping options are:
 
 * [conditions](#conditions)
-* [categorical](#categorical-data-mapping)
+* [categorical](#mapping-categorical-data)
 * [single](#single-data-mapping)
-* [table](#table-data-mapping)
-* [matrix](#matrix-data-mapping)
+* [table](#mapping-tables)
+* [matrix](#mapping-matrix-data)
 
 ```json
 "dataViewMappings": [
@@ -158,13 +158,13 @@ The above code results in the display of a single value from Power BI:
 
 ![Single dataview mapping visual example](media/dataview-mappings/visual-simple-dataview-mapping.png)
 
-## Categorical data mapping
+## Mapping categorical data
 
 Categorical data mapping is used to get independent groupings, or categories, of data. The categories can also be further grouped together using *group by* in the data mapping.
 
-### Simple categorical data mapping
+### Basic categorical data mapping
 
-Here are the data roles and mappings from the previous example:
+Consider the following data roles and mappings:
 
 ```json
 "dataRoles":[
@@ -196,11 +196,11 @@ Here are the data roles and mappings from the previous example:
 The above example reads "Map my `category` data role so that for every field I drag into `category`, its data is mapped to `categorical.categories`. Also, map my `measure` data role to `categorical.values`."
 
 * **for...in**: Include *all* items in this data role, in the data query.
-* **bind...to**: Produces the same result as in *for...in*, but expects that the data role will have a condition restricting it to a *single* field.
+* **bind...to**: Produces the same result as in *for...in*, but expects the data role to have a condition restricting it to a *single* field.
 
 ### Grouping categorical data
 
-The next example uses the same two data roles as the previous example, and adds `grouping` and `measure2`.
+The next example uses the same two data roles as the previous example, and adds to more data roles named `grouping` and `measure2`.
 
 ```json
 "dataRole":[
@@ -243,9 +243,11 @@ The next example uses the same two data roles as the previous example, and adds 
 }
 ```
 
-Here, the difference is in how we map `categorical.values`. By mapping the `measure` and `measure2` data roles to the data role `grouping`, we can scale the x axis and y axis appropriately.
+The difference between this mapping and the basic one, is in how we map `categorical.values`. By mapping the `measure` and `measure2` data roles to the data role `grouping`, we can scale the x axis and y axis appropriately.
 
-In the next example, we group the categorical data to create a hierarchy, which can be used to support [drill-down](drill-down-support.md) actions.
+### Grouping hierarchal data
+
+In the next example, we use the categorical data to create a hierarchy, which can be used to support [drill-down](drill-down-support.md) actions.
 
 Here are the data roles and mappings:
 
@@ -291,7 +293,7 @@ Here are the data roles and mappings:
 ]
 ```
 
-If the categorical data contained the following:
+Consider the following categorical data:
 
 | Country | 2013 | 2014 | 2015 | 2016 |
 |---------|------|------|------|------|
@@ -381,29 +383,6 @@ Also, each `values` array has four values: Canada, USA, UK, and Mexico:
 Below is a code sample for processing categorical data view mapping. This sample creates the hierarchical structure `Country => Year => Value`
 
 ```typescript
-"use strict";
-import powerbi from "powerbi-visuals-api";
-import DataView = powerbi.DataView;
-import DataViewCategorical = powerbi.DataViewCategorical;
-import DataViewValueColumnGroup = powerbi.DataViewValueColumnGroup;
-import PrimitiveValue = powerbi.PrimitiveValue;
-// standard imports
-// ...
-
-export class Visual implements IVisual {
-    private target: HTMLElement;
-    private host: IVisualHost;
-    private categories: HTMLElement;
-
-    constructor(options: VisualConstructorOptions) {
-        // constructor body
-        this.target = options.element;
-        this.host = options.host;
-        this.categories = document.createElement("pre");
-        this.target.appendChild(this.categories);
-        // ...
-    }
-
     public update(options: VisualUpdateOptions) {
         const dataView: DataView = options.dataViews[0];
         const categoricalDataView: DataViewCategorical = dataView.categorical;
@@ -416,10 +395,10 @@ export class Visual implements IVisual {
         }
 
         // Categories have only one column in data buckets
-        // If you want to support several columns of categories data bucket, you should iterate categoricalDataView.categories array.
+        // To support several columns of categories data bucket, iterate categoricalDataView.categories array.
         const categoryFieldIndex = 0;
         // Measure has only one column in data buckets.
-        // If you want to support several columns on data bucket, you should iterate years.values array in map function
+        // To support several columns on data bucket, iterate years.values array in map function
         const measureFieldIndex = 0;
         let categories: PrimitiveValue[] = categoricalDataView.categories[categoryFieldIndex].values;
         let values: DataViewValueColumnGroup[] = categoricalDataView.values.grouped();
@@ -449,7 +428,7 @@ Here's the resulting visual:
 
 ![The visual with categorical data view mapping](media/dataview-mappings/categorical-data-view-mapping-visual.png)
 
-## Table data mapping
+## Mapping tables
 
 The table data view is a simple data mapping. Essentially, it's a list of data points, where numeric data points could be aggregated.
 
@@ -642,7 +621,7 @@ td {
 
 ![The visual with table data view mapping](media/dataview-mappings/table-dataview-mapping-visual.png)
 
-## Matrix data mapping
+## Mapping matrix data
 
 Matrix data mapping is similar to table data mapping, but the rows are presented hierarchically. Any of the data role values can be used as a column header value.
 
