@@ -13,6 +13,12 @@ ms.date: 03/13/2019
 # Power BI visuals API changelog
 This page contains a quick summary of the API versions. Versions listed here are considered stable and will not change.
 
+## API v3.8.0
+* Supports Desktop 2021 May and later.
+
+## API v3.7.0
+* Supports Desktop 2021 April and later.
+
 ## API v3.6.0
   * Visual can receive updates from Power BI without the need to bind any data, by setting in **capabilities.json**: `"supportsLandingPage"` and newly added `"supportsEmptyDataView"` to a **"true"** value.  
   * Supports Desktop 2021 February and later.
