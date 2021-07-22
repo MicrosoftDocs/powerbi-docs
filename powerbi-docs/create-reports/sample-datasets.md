@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 03/27/2020
+ms.date: 07/15/2021
 LocalizationGroup: Samples
 ---
 # Get samples for Power BI
@@ -160,7 +160,8 @@ Let's start with the *built-in samples*. The built-in samples are available in t
 2. Navigate to your My Workspace, or another workspace where you want to install the sample. 
 2. In the bottom-left corner, select **Get data**.
 
-    ![Get Data icon](media/sample-datasets/power-bi-get-data.png)
+   :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
+
 3. On the Get Data page that appears, select **Samples**.
 
    ![Samples on Get Data](media/sample-datasets/get-data-samples.png)
@@ -216,7 +217,8 @@ Each of the built-in samples is also available as an Excel workbook. The Excel w
 
 4. In the bottom-left corner of the navigation pane, select **Get data**.
 
-    ![Get Data icon](media/sample-datasets/power-bi-get-data.png)
+   :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
+
 5. On the **Get Data** page that appears, select **Files > Get**.
 
     ![Files > Get](media/sample-datasets/power-bi-files.png)
