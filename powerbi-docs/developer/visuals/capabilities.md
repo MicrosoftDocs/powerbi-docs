@@ -34,11 +34,9 @@ When you create a new visual, the default *capabilities.json* file includes the 
 * [dataViewMappings](#dataviewmappings-how-you-want-the-data-mapped)
 * [objects](#objects-define-property-pane-options)
 
-These are the objects needed for data-binding.
+The above objects are the ones needed for data-binding. They can be edited as necessary for your visual.
 
-The following additional root objects can be added as needed:
-
-The root objects of a visual's capabilities file are:  
+The following extra root objects can be added as needed:
 
 * [tooltips](add-tooltips.md#add-tooltips-support-to-the-report-page)
 * [supportsHighlight](highlight.md)
@@ -157,7 +155,7 @@ For more information, see [Understand data view mapping in Power BI visuals](dat
 
 ## objects: define property pane options
 
-Objects describe customizable properties that are associated with the visual. These are the objects that appear in the [Format pane](../../create-reports/service-the-report-editor-take-a-tour.md#format-your-visuals). Each object can have multiple properties, and each property has a type that's associated with it.
+Objects describe customizable properties that are associated with the visual. The objects defined in this section are the objects that appear in the [Format pane](../../create-reports/service-the-report-editor-take-a-tour.md#format-your-visuals). Each object can have multiple properties, and each property has a type that's associated with it.
 
 ```json
 "objects": {
