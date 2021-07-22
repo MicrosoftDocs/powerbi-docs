@@ -35,7 +35,7 @@ To familiarize yourself with this particular built-in sample and its scenario, s
 
 2. Select **Get Data** at the bottom of the nav pane. 
 
-   ![Select Get Data](media/sample-datasets/power-bi-get-data.png)
+   :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
 
    If you don't see **Get Data**, expand the nav pane by selecting the following icon at the top of the pane: ![hamburger icon](media/sample-tutorial-connect-to-the-samples/expand-nav.png).
 

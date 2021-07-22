@@ -34,8 +34,9 @@ Before you can use the sample, you must first [download it in the Power BI servi
 
 2. In the bottom-left corner, select **Get data**.
 
-   ![Sreenshot showing Get data.](media/sample-customer-profitability/power-bi-get-data.png)
-3. On the **Get data** page that appears, select **Samples**.
+   :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
+
+3. On the **Get Data** page that appears, select **Samples**.
 
 4. Select **Customer Profitability Sample**, then choose **Connect**.  
 
