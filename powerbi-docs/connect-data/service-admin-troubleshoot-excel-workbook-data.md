@@ -54,7 +54,7 @@ When you import an Excel workbook, Power BI looks for these tables and imports t
    
     ![Data formatted as a table](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-table.png)
 6. Save your workbook.
-7. Return to Power BI. Select Get Data at the bottom of the nav pane.
+7. Return to Power BI. Select **Get data** at the bottom of the nav pane.
    
     :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
 
