@@ -36,7 +36,7 @@ When you create a new visual, the default *capabilities.json* file includes the 
 
 The above objects are the ones needed for data-binding. They can be edited as necessary for your visual.
 
-The following extra root objects can be added as needed:
+The following additional root objects can be added as needed:
 
 * [tooltips](add-tooltips.md#add-tooltips-support-to-the-report-page)
 * [supportsHighlight](highlight.md)
