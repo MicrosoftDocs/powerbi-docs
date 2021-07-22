@@ -47,7 +47,7 @@ In addition to the natively supported data sources above, the following data sou
 For paginated reports, Azure Analysis Services currently can't be accessed via a Power BI enterprise gateway. When authenticating with SSO service principal is not supported.
 
 > [!IMPORTANT]
-> Using the **SSO via Kerberos** options within the gateway's **Advanced settings** requires the [configuration of Kerberos Contrained Delegation](../connect-data/service-gateway-sso-ker.md) on the on-premises data source and gateway service.
+> Using the **SSO via Kerberos** options within the gateway's **Advanced settings** requires the [configuration of Kerberos Contrained Delegation](../connect-data/service-gateway-sso-kerberos.md) on the on-premises data source and gateway service.
 
 ## Azure SQL Database authentication
 
