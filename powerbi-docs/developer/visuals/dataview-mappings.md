@@ -445,7 +445,7 @@ export class Visual implements IVisual {
 }
 ```
 
-This is the result of the visual:
+Here's the resulting visual:
 
 ![The visual with categorical data view mapping](media/dataview-mappings/categorical-data-view-mapping-visual.png)
 
