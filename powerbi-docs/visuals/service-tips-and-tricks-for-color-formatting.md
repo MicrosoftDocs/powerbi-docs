@@ -61,7 +61,7 @@ Expand the **Data colors** card and turn the slider On for **Show all**. This di
 
 Set **Convenience** to orange. 
 
-![column chart with one orange column](media/service-tips-and-tricks-for-color-formatting/power-bi-one-color.png)
+![column chart with one orange column](media/service-tips-and-tricks-for-color-formatting/power-bi-one-color-orange.png)
 
 Once selected, the **Convenience** data point is a nice shade of orange, and certainly stands out.
 
