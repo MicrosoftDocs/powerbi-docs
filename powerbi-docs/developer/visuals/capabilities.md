@@ -30,7 +30,7 @@ The *capabilities.json* file has the following format:
 
 When you create a new visual, the default *capabilities.json* file includes the following root objects:
 
-* [dataRoles](#define-the-data-fields-that-your-visual-expects-dataroles)
+* [dataRoles](#dataroles-define-the-data-fields-that-your-visual-expects)
 * [dataViewMappings](#dataviewmappings-how-you-want-the-data-mapped)
 * [objects](#objects-define-property-pane-options)
 
