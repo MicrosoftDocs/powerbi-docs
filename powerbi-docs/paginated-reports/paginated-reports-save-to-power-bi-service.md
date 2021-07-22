@@ -69,7 +69,7 @@ You can also start from the Power BI service and upload a paginated report.
 
 1. Select **Get Data**.
 
-    ![Power BI Get Data](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-get-data.png)
+   :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
 
 1. In the **Files** box, select **Get**.
 
