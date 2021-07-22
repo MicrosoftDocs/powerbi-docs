@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 05/18/2021
+ms.date: 07/22/2021
 ---
 
 # Supported data sources for Power BI paginated reports
@@ -45,6 +45,9 @@ In addition to the natively supported data sources above, the following data sou
 - ODBC
 
 For paginated reports, Azure Analysis Services currently can't be accessed via a Power BI enterprise gateway. When authenticating with SSO service principal is not supported.
+
+> [!IMPORTANT]
+> Using the **SSO via Kerberos** options within the gateway's **Advanced settings** requires the [configuration of Kerberos constrained delegation](../connect-data/service-gateway-sso-kerberos.md) on the on-premises data source and gateway service.
 
 ## Azure SQL Database authentication
 
