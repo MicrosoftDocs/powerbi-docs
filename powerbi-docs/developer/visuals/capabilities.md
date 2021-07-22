@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 07/22/2021
+ms.date: 07/21/2021
 ---
 
 # Capabilities and properties of Power BI visuals 
