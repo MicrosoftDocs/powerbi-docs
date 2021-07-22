@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 04/02/2021
+ms.date: 07/15/2021
 LocalizationGroup: Samples
 ---
 # Human Resources sample for Power BI: Take a tour
@@ -36,9 +36,9 @@ Before you can use the sample, you must first [download it in the service](#get-
 
    If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace.
 
-2. In the bottom-left corner, select **Get Data**.
+2. In the bottom-left corner, select **Get data**.
    
-   ![Select Get Data](media/sample-datasets/power-bi-get-data.png)
+   ![Screenshot showing Get data.](media/sample-human-resources/power-bi-get-data.png)
 3. On the **Get Data** page that appears, select **Samples**.
    
 4. Select **Human Resources Sample**, then choose **Connect**.  
@@ -80,9 +80,9 @@ Let's explore new hires first.
 
 4. Select different age groups and genders in the charts to explore the relationships between age, gender, region, and ethnicity group.
 
-5. Select **Human Resource Sample** from the top nav pane to return to the dashboard.
+5. Select **Human Resources Sample** from the black **Power BI** header bar to see detailed information about the dashboard.
 
-   ![Return to dashboard](media/sample-human-resources/power-bi-breadcrumbs.png)
+   ![Screenshot showing selection of Human Resources Sample in the black Power B I header bar.](media/sample-human-resources/power-bi-breadcrumbs.png)
 
 ## Compare currently active and former employees
 Let's explore data for currently active employees and employees who no longer work for the company.
@@ -149,7 +149,7 @@ In the [Q&A question box](power-bi-tutorial-q-and-a.md) in the dashboard, you ca
 
    ![Q&A box suggestions](media/sample-human-resources/pbi_hr_sample_qabox.png)
 
-2. You can pick one of those suggestions, or enter: *show age group, gender, and bad hires SPLY where region is east*.  
+2. You can pick one of those suggestions, or enter: *show age group, gender, and bad hires SPLY where region is East*.  
 
    ![Q&A box answers](media/sample-human-resources/pbi_hr_sample_qa_answer.png)
 
