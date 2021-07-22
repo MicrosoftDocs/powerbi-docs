@@ -28,13 +28,18 @@ The *capabilities.json* file has the following format:
 }
 ```
 
-When you create a new visual, the default *capabilities.json* file includes `dataRoles`, `objects`, and `dataViewMapping`. These objects are needed for data-binding. You can add as many other root objects to this file as you need.
-
-The root objects of a visual's capabilities file are:  
+When you create a new visual, the default *capabilities.json* file includes the following root objects:
 
 * [dataRoles](#define-the-data-fields-that-your-visual-expects-dataroles)
 * [dataViewMappings](#dataviewmappings-how-you-want-the-data-mapped)
 * [objects](#objects-define-property-pane-options)
+
+These are the objects needed for data-binding.
+
+The following additional root objects can be added as needed:
+
+The root objects of a visual's capabilities file are:  
+
 * [tooltips](add-tooltips.md#add-tooltips-support-to-the-report-page)
 * [supportsHighlight](highlight.md)
 * [sorting](sort-options.md)
