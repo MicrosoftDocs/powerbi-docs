@@ -95,7 +95,7 @@ It's important to note that slicers continue to filter a report page, regardless
 > [!NOTE]
 > When using the **Selection** pane in combination with bookmarks, changing the visibility of a selection results in its visibility reverting to the default setting. After making such changes, you can right-click a bookmark and select *update* to update its visibility.
 
-## Assign bookmarks to shapes and images
+## Assign bookmarks to buttons
 You can also link shapes and images to bookmarks. With this feature, when you select an object, it shows the bookmark associated with that object. This feature can be especially useful when you work with buttons. For more information, see [Using buttons in Power BI](desktop-buttons.md). 
 
 To assign a bookmark to an object: 
@@ -124,11 +124,13 @@ When editing a report, you can create and use bookmark groups. A bookmark group 
 
    ![Screenshot showing creating a bookmark group.](media/desktop-bookmarks/bookmarks_15.png)
 
-Power BI Desktop automatically names the group *Group 1*. You can select the ellipsis next to this name, select **Rename**, and rename it to whatever you want.
+    Power BI Desktop automatically names the group *Group 1*. You can select the ellipsis next to this name, select **Rename**, and rename it to whatever you want.
 
-![Screenshot showing renaming a bookmark group.](media/desktop-bookmarks/bookmarks_16.png)
+    ![Screenshot showing renaming a bookmark group.](media/desktop-bookmarks/bookmarks_16.png)
 
-As with any bookmark group, expanding the bookmark group's name only expands or collapses the group of bookmarks, and doesn't represent a bookmark by itself. 
+Expanding the bookmark group's name only expands or collapses the group of bookmarks, and doesn't represent a bookmark by itself.
+
+### Bookmark groups in View mode
 
 When you use the **View** feature of bookmarks, the following details apply:
 
