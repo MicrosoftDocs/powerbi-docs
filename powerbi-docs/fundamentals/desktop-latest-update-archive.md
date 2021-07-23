@@ -28,7 +28,7 @@ You can also watch the **Latest Updates** video from the beginning, right inside
 The following sections describe previous months' updates to **Power BI Desktop** and the **Power BI service**.
 
 
-## June 2021 Update (2.94.242.0)
+## June 2021 Update (2.94.781.0)
 
 With June's release, warm and sunny updates were in the forecast for your reports. 
 
