@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting Sign in with OData Feed in Power BI Desktop
-description: Solutions to common issues for  sign-in with OData feed.
+title: Troubleshooting OData sign in errors in Power BI Desktop
+description: Solutions to common sign in issue with OData connections.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 6/4/2019
+ms.date: 07/23/2021
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshooting sign in with OData feed
