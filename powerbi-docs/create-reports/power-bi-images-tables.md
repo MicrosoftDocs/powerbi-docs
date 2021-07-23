@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/22/2021
+ms.date: 07/23/2021
 LocalizationGroup: Visualizations
 ---
 # Display images in a table, matrix, or slicer in a report
@@ -49,8 +49,8 @@ Your organization may not allow displaying images stored on OneDrive for Busines
 
 1. In OneDrive for Business, open an image and select **View original**.
 1. Copy the URL that generates.
-1. Generate a sharing link that "Anyone can view" so that it has anonymous access set.
-
+1. Select **Anyone with the link** to generate a sharing link that anyone can view, so that it has anonymous access set.
+    :::image type="content" source="media/power-bi-images-tables/power-bi-onedrive-business-anyone.png" alt-text="Select Anyone with the link to generate a sharing link that anyone can view.":::
 
 ## Considerations
 
