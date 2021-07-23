@@ -324,6 +324,7 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI report                           | DeleteReport                                |                                          |
 | Deleted Power BI template app workspace | DeleteTemplateApp |
 | Deleted Power BI template app package | DeleteTemplateAppPackage |
+| Deleted snapshot for user in Power BI tenant | DeleteSnapshot | Generated when a user deletes a snapshot that describes a dataset |
 | Deployed to a pipeline stage                           | DeployAlmPipeline                                |                                          |
 | Discovered Power BI dataset data sources          | GetDatasources                              |                                          |
 | Downloaded Power BI report                        | DownloadReport                              |                                          |
@@ -343,6 +344,7 @@ The following operations are available in both the audit and activity logs.
 | Generated Power BI Embed Token                    | GenerateEmbedToken                          |                                          |
 | Generate screenshot                       | GenerateScreenshot |                     |
 | Imported file to Power BI                         | Import                                      |                                          |
+| Inserted snapshot for user in Power BI tenant | InsertSnapshot | Generated when user uploads a snapshot that describes their dataset |
 | Installed Power BI app                            | InstallApp                                  |                                          |
 | Installed Power BI template app | InstallTemplateApp |
 | Migrated workspace to a capacity                  | MigrateWorkspaceIntoCapacity                |                                          |
@@ -361,6 +363,7 @@ The following operations are available in both the audit and activity logs.
 | Requested Power BI dataflow refresh               | RequestDataflowRefresh                      | Not currently used                       |
 | Requested Power BI dataset refresh                | RefreshDataset                              |                                          |
 | Retrieved Power BI workspaces                     | GetWorkspaces                               |                                          |
+| Retrieved snapshots for user in Power BI tenant | GetSnapshots | Generated when user retrieves snapshots that describe a dataset |
 | Sensitivity Label Applied                         | SensitivityLabelApplied                     |                                          |
 | Sensitivity Label Changed                         | SensitivityLabelChanged                     |                                          |
 | Sensitivity Label Removed                         | SensitivityLabelRemoved                     |                                          |
@@ -394,6 +397,7 @@ The following operations are available in both the audit and activity logs.
 | Updated Power BI gateway data source credentials  | UpdateDatasourceCredentials                 |                                          |
 | Updated Power BI template app settings | UpdateTemplateAppSettings |
 | Updated Power BI template app test access permissions | UpdateTemplateAppTestPackagePermissions |
+| Updated snapshots for user in Power BI tenant | UpdateSnapshot | Generated when user updates snapshots that describe their datasets |
 | Viewed Power BI dashboard                         | ViewDashboard                               |                                          |
 | Viewed Power BI dataflow                          | ViewDataflow                                |                                          |
 | Viewed Power BI report                            | ViewReport                                  |                                          |
