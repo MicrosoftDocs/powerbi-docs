@@ -1,17 +1,17 @@
 ---
-title: Use bookmarks in Power BI Desktop to share insights and build stories
-description: Bookmarks in Power BI Desktop let you save views and settings in your reports, and build story-like presentations
+title: Create bookmarks in Power BI to share insights and build stories
+description: Bookmarks in Power BI let you save views and settings in your reports, and build story-like presentations
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/11/2021
+ms.date: 07/22/2021
 LocalizationGroup: Create reports
 ---
-# Create bookmarks in Power BI Desktop to share insights and build stories
-With *bookmarks* in Power BI Desktop, you capture the currently configured view of a report page, including filtering and the state of visuals. Later, you can go back to that state by selecting the saved bookmark. 
+# Create bookmarks in Power BI to share insights and build stories
+With *bookmarks* in Power BI Desktop and the Power BI service, you capture the currently configured view of a report page, including filtering and the state of visuals. Later, you can go back to that state by selecting the saved bookmark. 
 
 You can also create a collection of bookmarks, arrange them in the order you want, and later step through each bookmark in a presentation to highlight a series of insights, or the story you want to tell with your visuals and reports. 
 
@@ -20,12 +20,17 @@ You can also create a collection of bookmarks, arrange them in the order you wan
 There are many uses for bookmarking. For example, you can use bookmarks to keep track of your own progress in creating reports (bookmarks are easy to add, delete, and rename) and you can create bookmarks to build a PowerPoint-like presentation that steps through bookmarks in order, thereby telling a story with your report. 
 
 > [!TIP]
-> For information about using personal bookmarks in the Power BI service, see [Announcing personal bookmarks in the Power BI Service](https://powerbi.microsoft.com/blog/announcing-personal-bookmarks-in-the-power-bi-service/). 
+> For information about using personal bookmarks, see [Bookmarks in the Power BI service](../consumer/end-user-bookmarks.md). 
 
-## Using bookmarks
-To use bookmarks, select the **View** tab from the Power BI Desktop ribbon, and then select **Bookmarks**. 
+## Create bookmarks
 
-![Screenshot showing how to turn on the Bookmarks pane.](media/desktop-bookmarks/bookmarks_03.png)
+To create bookmarks in Power BI Desktop, on the **View** tab, select **Bookmarks**. 
+
+![Screenshot showing how to turn on the Bookmarks pane in Power B I Desktop.](media/desktop-bookmarks/bookmarks_03.png)
+
+To create bookmarks in the Power BI service, select **View**, then turn on **Bookmarks pane**.
+
+:::image type="content" source="media/desktop-bookmarks/service-view-bookmarks.png" alt-text="Screenshot showing how to turn on the Bookmarks pane in the Power B I service.":::
 
 When you create a bookmark, the following elements are saved with the bookmark:
 
@@ -42,7 +47,7 @@ Configure a report page as you want it to appear in the bookmark. After your rep
 
 ![Add a bookmark.](media/desktop-bookmarks/bookmarks_04.png)
 
-Power BI Desktop creates a bookmark and gives it a generic name. You can easily **Rename**, **Delete**, or **Update** a bookmark by selecting the ellipsis next to the bookmark's name, then selecting an action from the menu that appears.
+Power BI creates a bookmark and gives it a generic name. You can easily **Rename**, **Delete**, or **Update** a bookmark by selecting the ellipsis next to the bookmark's name, then selecting an action from the menu that appears.
 
 ![Screenshot showing selecting the bookmark menu by using the ellipsis.](media/desktop-bookmarks/bookmarks_05.png)
 
