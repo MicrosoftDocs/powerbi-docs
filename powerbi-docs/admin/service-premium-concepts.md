@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 07/21/2021
+ms.date: 07/23/2021
 LocalizationGroup: Premium
 ---
 # Understanding Power BI Premium Gen2 (preview)
