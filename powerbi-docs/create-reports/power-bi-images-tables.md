@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/02/2021
+ms.date: 07/22/2021
 LocalizationGroup: Visualizations
 ---
 # Display images in a table, matrix, or slicer in a report
@@ -28,6 +28,29 @@ A good way to enhance your reports is to add images to them. Static images on th
 1. Add the column to a table, matrix, slicer, or multi-row card.
 
     ![Slicer with images](media/power-bi-images-tables/power-bi-url-images-slicer.png)
+
+### Add images from OneDrive
+
+Images in your report need to be anonymously accessible. On OneDrive, you may be able to get an embed code that points directly to them.
+
+1. On your OneDrive site, open an image and select **More options (...)** > **Embed**.
+
+    :::image type="content" source="media/power-bi-images-tables/power-bi-onedrive-embed.png" alt-text="Select More options > Embed.":::
+1. Select **Generate**.
+
+    :::image type="content" source="media/power-bi-images-tables/power-bi-onedrive-embed-generate.png" alt-text="Select Generate.":::
+1. Copy the URL and paste it in the **Image URL** column.
+
+    :::image type="content" source="media/power-bi-images-tables/power-bi-onedrive-embed-copy-url.png" alt-text="Copy the URL.":::
+
+### Add images from OneDrive for Business
+
+Your organization may not allow displaying images stored on OneDrive for Business. If they do allow it, follow these steps.
+
+1. In OneDrive for Business, open an image and select **View original**.
+1. Copy the URL that generates.
+1. Generate a sharing link that "Anyone can view" so that it has anonymous access set.
+
 
 ## Considerations
 
