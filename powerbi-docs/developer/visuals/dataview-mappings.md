@@ -910,4 +910,7 @@ You can apply the data reduction algorithm to the `rows` and `columns` sections 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Add drill-down support for data view mappings in Power BI visuals](drill-down-support.md)
+> [Rendering a visual](drill-down-support.md)
+
+> [!div class="nextstepaction"]
+> [Rendering a visual without requiring data binding](no-dataroles-support.md)
