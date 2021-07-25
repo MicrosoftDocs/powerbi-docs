@@ -474,7 +474,7 @@ Here's the resulting visual:
 
 ## Mapping tables
 
-The table data view is a simple data mapping. Essentially, it's a list of data points, where numeric data points could be aggregated.
+The *table* data view is essentially a list of data points, where numeric data points can be aggregated.
 
 For example, using the [same data as in the previous section](#grouping-hierarchal-data), but with the following capabilities:
 
@@ -664,7 +664,7 @@ The resulting visual looks like this:
 
 ## Matrix data mapping
 
-Matrix data mapping is similar to table data mapping, but the rows are presented hierarchically. Any of the data role values can be used as a column header value.
+*Matrix* data mapping is similar to table data mapping, but the rows are presented hierarchically. Any of the data role values can be used as a column header value.
 
 ```json
 {
@@ -910,7 +910,7 @@ You can apply the data reduction algorithm to the `rows` and `columns` sections 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Rendering a visual](drill-down-support.md)
+> [Drill down support](drill-down-support.md)
 
 > [!div class="nextstepaction"]
 > [Rendering a visual without requiring data binding](no-dataroles-support.md)
