@@ -140,6 +140,27 @@ The resulting data view can still contain other types (table, categorical, and s
 Code sample to process simple data views mapping
 
 ```typescript
+"use strict";
+import powerbi from "powerbi-visuals-api";
+import DataView = powerbi.DataView;
+import DataViewSingle = powerbi.DataViewSingle;
+// standard imports
+// ...
+
+export class Visual implements IVisual {
+    private target: HTMLElement;
+    private host: IVisualHost;
+    private valueText: HTMLParagraphElement;
+
+    constructor(options: VisualConstructorOptions) {
+        // constructor body
+        this.target = options.element;
+        this.host = options.host;
+        this.valueText = document.createElement("p");
+        this.target.appendChild(this.valueText);
+        // ...
+    }
+
     public update(options: VisualUpdateOptions) {
         const dataView: DataView = options.dataViews[0];
         const singleDataView: DataViewSingle = dataView.single;
@@ -383,6 +404,29 @@ Also, each `values` array has four values: Canada, USA, UK, and Mexico:
 Below is a code sample for processing categorical data view mapping. This sample creates the hierarchical structure `Country => Year => Value`
 
 ```typescript
+"use strict";
+import powerbi from "powerbi-visuals-api";
+import DataView = powerbi.DataView;
+import DataViewCategorical = powerbi.DataViewCategorical;
+import DataViewValueColumnGroup = powerbi.DataViewValueColumnGroup;
+import PrimitiveValue = powerbi.PrimitiveValue;
+// standart imports
+// ...
+
+export class Visual implements IVisual {
+    private target: HTMLElement;
+    private host: IVisualHost;
+    private categories: HTMLElement;
+
+    constructor(options: VisualConstructorOptions) {
+        // constructor body
+        this.target = options.element;
+        this.host = options.host;
+        this.categories = document.createElement("pre");
+        this.target.appendChild(this.categories);
+        // ...
+    }
+
     public update(options: VisualUpdateOptions) {
         const dataView: DataView = options.dataViews[0];
         const categoricalDataView: DataViewCategorical = dataView.categorical;
@@ -432,9 +476,7 @@ Here's the resulting visual:
 
 The table data view is a simple data mapping. Essentially, it's a list of data points, where numeric data points could be aggregated.
 
-### Example 7
-
-With the given capabilities:
+For example, using the [same data as in the previous section](#grouping-hierarchal-data), but with the following capabilities:
 
 ```json
 "dataRoles": [
@@ -448,10 +490,7 @@ With the given capabilities:
         "name": "value",
         "kind": "Measure"
     }
-]
-```
-
-```json
+],
 "dataViewMappings": [
     {
         "table": {
@@ -474,7 +513,7 @@ With the given capabilities:
 ]
 ```
 
-You can visualize the table data view as the following:  
+You can visualize the table data view like this:  
 
 Data example:
 
@@ -492,7 +531,7 @@ Data binding:
 
 ![Table data view mapping data binds](media/dataview-mappings/table-dataview-mapping-data.png)
 
-Power BI displays your data as the table data view. You shouldn't assume that the data is ordered.
+Power BI displays your data as the table data view. *Don't assume that the data is ordered*.
 
 ```JSON
 {
@@ -534,9 +573,9 @@ Power BI displays your data as the table data view. You shouldn't assume that th
 }
 ```
 
-You can aggregate the data by selecting the desired field and then selecting sum.  
+To aggregate the data, select the desired field and then select *sum*.  
 
-![Data aggregation](media/dataview-mappings/data-aggregation.png)
+![Data aggregation.](media/dataview-mappings/data-aggregation.png)
 
 Code sample to process table data view mapping.
 
@@ -619,7 +658,9 @@ td {
 }
 ```
 
-![The visual with table data view mapping](media/dataview-mappings/table-dataview-mapping-visual.png)
+The resulting visual looks like this:
+
+![The visual with table data view mapping.](media/dataview-mappings/table-dataview-mapping-visual.png)
 
 ## Mapping matrix data
 
@@ -700,7 +741,8 @@ Dataset:
 
 The core matrix visual of Power BI renders the data as a table.
 
-![Matrix visual](media/dataview-mappings/matrix-visual-smaple.png)
+![Matrix visual.
+](media/dataview-mappings/matrix-visual-smaple.png)
 
 The visual gets its data structure as described in the following code (only the first two table rows are shown here):
 
