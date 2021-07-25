@@ -27,9 +27,9 @@ highlightedContent:
       itemType: overview
       url: embedded/embedded-analytics-power-bi.md
     # Card
-    - title: Visuals in Power BI
+    - title: Develop your own Power BI visual
       itemType: overview
-      url: visuals/power-bi-custom-visuals.md
+      url: visuals/develop-power-bi-visuals.md
     # Card
     - title: Power BI Embedded Generation 2 (preview)
       itemType: whats-new
@@ -68,9 +68,9 @@ conceptualContent:
     # Card
     - title: Power BI visuals
       links:
-        - url: visuals/power-bi-custom-visuals.md
+        - url: visuals/develop-power-bi-visuals.md
           itemType: overview
-          text: Visuals in Power BI
+          text: Develop your own Power BI visual
         - url: visuals/develop-circle-card.md
           itemType: tutorial
           text: Develop a Power BI visual

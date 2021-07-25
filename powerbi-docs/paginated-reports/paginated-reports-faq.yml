@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: report-builder
   ms.topic: conceptual
-  ms.date: 04/19/2021
+  ms.date: 07/19/2021
     
 title: "Paginated reports in Power BI: FAQ"
 summary: |
@@ -97,7 +97,7 @@ sections:
           :::image type="content" source="media/paginated-reports-faq/paginated-reports-capacity-settings.png" alt-text="Paginated reports Capacity settings tab":::
           
           > [!NOTE]
-          > **Premium Gen2**, currently in preview, doesn't require you to change memory settings. The underlying system manages memory in Premium Gen2 automatically. Paginated reports workload is available on P1-P3 SKUs and A1-A6 SKUs in **Premium Gen2**.
+          > **Premium Gen2**, currently in preview, doesn't require you to change memory settings. The underlying system manages memory in Premium Gen2 automatically. Paginated reports workload is available on EM1-EM3 SKUs, P1-P3 SKUs and A1-A6 SKUs in **Premium Gen2**.
           
   - name: General
     questions:

@@ -187,6 +187,8 @@
       href: service-admin-power-bi-security.md      
     - name: "Privacy levels"
       href: desktop-privacy-levels.md
+    - name: "Power BI site reliability engineering model"
+      href: service-admin-site-reliability-engineering-model.md      
   - name: Troubleshoot
     items: 
     - name: "Can't sign in?"
