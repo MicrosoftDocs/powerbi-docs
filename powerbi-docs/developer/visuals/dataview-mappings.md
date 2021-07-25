@@ -17,10 +17,10 @@ This article discusses data view mapping and describes how data roles are used t
 Each valid mapping produces a data view. You can provide multiple data mappings under certain conditions. The supported mapping options are:
 
 * [conditions](#conditions)
-* [categorical](#mapping-categorical-data)
+* [categorical](#categorical-data-mapping)
 * [single](#single-data-mapping)
 * [table](#mapping-tables)
-* [matrix](#mapping-matrix-data)
+* [matrix](#matrix-data-mapping)
 
 ```json
 "dataViewMappings": [
@@ -179,7 +179,7 @@ The above code results in the display of a single value from Power BI:
 
 ![Single dataview mapping visual example](media/dataview-mappings/visual-simple-dataview-mapping.png)
 
-## Mapping categorical data
+## Categorical data mapping
 
 Categorical data mapping is used to get independent groupings, or categories, of data. The categories can also be further grouped together using *group by* in the data mapping.
 
@@ -662,7 +662,7 @@ The resulting visual looks like this:
 
 ![The visual with table data view mapping.](media/dataview-mappings/table-dataview-mapping-visual.png)
 
-## Mapping matrix data
+## Matrix data mapping
 
 Matrix data mapping is similar to table data mapping, but the rows are presented hierarchically. Any of the data role values can be used as a column header value.
 
