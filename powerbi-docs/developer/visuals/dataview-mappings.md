@@ -266,7 +266,7 @@ The next example uses the same two data roles as the previous example, and adds 
 
 The difference between this mapping and the basic one, is in how we map `categorical.values`. By mapping the `measure` and `measure2` data roles to the data role `grouping`, we can scale the x axis and y axis appropriately.
 
-### Grouping hierarchal data
+### Grouping hierarchical data
 
 In the next example, we use the categorical data to create a hierarchy, which can be used to support [drill-down](drill-down-support.md) actions.
 
