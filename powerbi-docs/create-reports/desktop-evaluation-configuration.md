@@ -52,7 +52,7 @@ You can change these setting in the user interface in Power BI Desktop. On the *
 :::image type="content" source="media/desktop-evaluation-configuration/desktop-evaluation-configuration-settings.png" alt-text="Changing data loading parallelization settings in Power BI Desktop":::
 
 ## In registry settings
-You can also change these settings by setting the appreciate DWORD registry values. Admins can also use this method to control the setting for their whole organization.
+You can also change these settings by setting the appropriate DWORD registry values. Admins can also use this method to control the setting for their whole organization.
 
 To change the number of evaluation containers set the DWORD registry value `ForegroundEvaluationContainerCount`.
 To change the available memory per evaluation container set the DWORD registry value `MaxEvaluationWorkingSetInMB`. 
