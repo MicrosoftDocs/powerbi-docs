@@ -7,40 +7,41 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 04/02/2021
+ms.date: 07/15/2021
 LocalizationGroup: Samples
 ---
 # Customer Profitability sample for Power BI: Take a tour
 
-The Customer Profitability sample content pack contains a dashboard, report, and dataset for a company that manufactures marketing materials. This dashboard was created by a CFO to see key metrics about their five business unit managers (executives), products, customers, and gross margins (GM). At a glance, they can see what factors are impacting profitability.
+The Customer Profitability sample contains a dashboard, report, and dataset for a company that manufactures marketing materials. This dashboard was created by a CFO to see key metrics about their five business unit managers (executives), products, customers, and gross margins (GM). At a glance, they can see what factors are impacting profitability.
 
 ![Dashboard for the Customer Profitability sample](media/sample-customer-profitability/power-bi-dash.png)
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](http://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: content pack, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](http://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: a built-in sample in the service, a .pbix Power BI Desktop file, or an Excel workbook. See [Samples for Power BI](sample-datasets.md). 
 
-This tutorial explores the Customer Profitability sample content pack in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
+This tutorial explores the built-in Customer Profitability sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
 
 You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace in the Power BI service. 
 
-## Get the Sample
+## Get the sample
 
-Before you can use the sample, you must first download it as a [content pack](#get-the-content-pack-for-this-sample), [.pbix file](#get-the-pbix-file-for-this-sample), or [Excel workbook](#get-the-excel-workbook-for-this-sample).
+Before you can use the sample, you must first [download it in the Power BI service](#download-the-built-in-sample), or get the [.pbix file](#get-the-pbix-file-for-this-sample) or [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
-### Get the content pack for this sample
+### Download the built-in sample
 
 1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample.
 
    If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace.
 
-2. In the bottom-left corner, select **Get Data**.
+2. In the bottom-left corner, select **Get data**.
 
-   ![Select Get Data](media/sample-datasets/power-bi-get-data.png)
+   :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
+
 3. On the **Get Data** page that appears, select **Samples**.
 
 4. Select **Customer Profitability Sample**, then choose **Connect**.  
 
     ![Connect to sample](media/sample-customer-profitability/get-supplier-sample.png)
-5. Power BI imports the content pack and then adds a new dashboard, report, and dataset to your current workspace.
+5. Power BI imports the sample, adding a new dashboard, report, and dataset to your current workspace.
 
     ![Customer Profitability Sample entry](media/sample-customer-profitability/customer-profitability-sample-entry.png)
 
@@ -119,9 +120,9 @@ Many of the tiles on the Customer Profitability sample dashboard were pinned fro
 
    If the tile was created in Q&A, selecting it opens the Q&A window. Select **Exit Q&A** to return to the dashboard and try a different tile.
 
-2. The report has three pages. Each tab at the bottom of the report represents a different page.
+2. The report has three pages. You can select the page you want from the **Pages** pane on the left.
 
-    ![Three tabs at bottom](media/sample-customer-profitability/power-bi-report-tabs.png)
+    ![Screenshot showing three pages at the left.](media/sample-customer-profitability/power-bi-report-tabs.png)
 
     * **Team Scorecard** focuses on the performance of the five managers and their books of business.
     * **Industry Margin Analysis** provides a way to analyze the profitability compared to what's happening in the entire industry.
@@ -172,23 +173,21 @@ This page has a custom page size format.
 ## Dig into the data by asking questions with Q&A
 For our analysis, it might be helpful to determine which industry generates the most revenue for Valery. Let's use Q&A.
 
-1. Select **Edit report** to open the report in Editing view. Editing view is available only if you own the report. This view is sometimes called *creator* mode. If instead, this report is only shared with you, you can't open it in Editing view.
-
-2.  From the top of the dashboard, select **Ask a question** to open the Q&A question box.
+1.  From the top of the dashboard, select **Ask a question about your data** to open the Q&A question box.
 
     ![Ask a question about your data](media/sample-customer-profitability/power-bi-ask-question.png)
 
-3. Type *total revenue by industry for Valery* in the question box. Notice how the visualization updates as you type the question.
+2. Type *total revenue by industry for Valery* in the question box. Notice how the visualization updates as you type the question.
 
     ![Type question into question box](media/sample-customer-profitability/power-bi-qna.png)
 
-   As you can see, the Distribution industry is the biggest revenue area for Valery.
+   As you can see, the Services industry is the biggest revenue area for Valery.
 
 ### Dig deeper by adding filters
 Let's take a look at the Distribution industry.  
 
 1. Open the **Industry Margin Analysis** report page.
-2. Without selecting any visualizations on the report page, expand the filter pane on the right (if it isn't already expanded). The **Filters** pane should display only **Page level filters**.  
+2. Without selecting any visualizations on the report page, expand the filter pane on the right (if it isn't already expanded). The **Filters** pane should display only page level filters.  
 
    ![Page level filters](media/sample-customer-profitability/power-bi-filters.png)
 3. Locate the filter for **Industry** and select the arrow to expand the list. Let's add a page filter for the Distribution industry. First, clear all selections by clearing the **Select All** checkbox. Then select **Distribution** only.  

@@ -339,12 +339,12 @@
         href: ../collaborate-share/desktop-troubleshooting-analyze-in-excel.md
       - name: "Error: We couldn't find any data in your Excel workbook"
         href: service-admin-troubleshoot-excel-workbook-data.md
-      - name: "How to refresh your Xero content pack credentials if refresh failed"
-        href: service-refresh-xero-credentials.md
       - name: "Troubleshoot importing Access and Excel .xls files"
         href: desktop-access-database-errors.md
       - name: "Troubleshoot developing DirectQuery models"
         href: desktop-directquery-troubleshoot.md
+      - name: "Troubleshooting Nested Values"
+        href: service-troubleshooting-nested-values.md
   - name: Reference
     items: 
     - name: "Data types in Power BI Desktop"
@@ -354,4 +354,6 @@
     - name: "Trusted third-party connectors"
       href: desktop-trusted-third-party-connectors.md
     - name: "Manage DirectQuery connections to a published dataset"
-      href: desktop-disable-directquery-connections-to-dataset.md
+      href: desktop-discourage-directquery-connections-to-dataset.md
+    - name: "Troubleshooting sign in with OData Feed connections"
+      href: desktop-troubleshoot-odata.md      

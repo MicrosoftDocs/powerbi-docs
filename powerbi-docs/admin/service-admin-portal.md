@@ -62,11 +62,11 @@ Here's a breakdown of what you can see in each tile:
     ![Distinct count of dashboards, reports, datasets](media/service-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
 
 
-* Most consumed dashboard by number of users who can access it. For example: You have a dashboard that you shared with three users. You also added the dashboard to a content pack that two different users connected to. The dashboard's count would be 6 (1 + 3 + 2).
+* Most consumed dashboard by number of users who can access it. For example: You have a dashboard that you shared with three users. You also added the dashboard to an app that two different users connected to. The dashboard's count would be 6 (1 + 3 + 2).
   
     ![Most consumed dashboards](media/service-admin-portal/powerbi-admin-usage-metrics-top-dashboards.png)
 
-* The most popular content users connected to. The content would be anything the users could reach through the Get Data process, such as SaaS content packs, Organizational content packs, files, or databases.
+* The most popular content users connected to. The content would be anything the users could reach through the Get Data process, such as SaaS template apps, files, or databases.
 
   
     ![Most consumed packages](media/service-admin-portal/powerbi-admin-usage-metrics-top-connections.png)
@@ -512,7 +512,7 @@ This setting must be enabled for audit log entries to be recorded. There can be 
 
 ### Usage metrics for content creators
 
-When enabled, users in the organization can see usage metrics for dashboards, reports, and datasets that they have appropriate permissions for. [Learn more](../collaborate-share/service-usage-metrics.md)
+When enabled, users in the organization can see usage metrics for dashboards, reports, and datasets that they have appropriate permissions for. Learn more about [usage metrics](../collaborate-share/service-modern-usage-metrics.md).
 
 1. In the Admin portal, select **Tenant settings** > **Audit and usage settings** > **Usage metrics for content creators**.
 1. Enable (or disable) usage metrics > **Apply**.
@@ -521,7 +521,7 @@ When enabled, users in the organization can see usage metrics for dashboards, re
 
 ### Per-user data in usage metrics for content creators
 
-Usage metrics for content creators will expose display names and email addresses of users who are accessing content. [Learn more](../collaborate-share/service-usage-metrics.md)
+Usage metrics for content creators will expose display names and email addresses of users who are accessing content. Learn more about [usage metrics](../collaborate-share/service-modern-usage-metrics.md).
 
 Per-user data is enabled for usage metrics by default, and content creator account information is included in the metrics report. If you do not wish to gather this information for all users, you can disable the feature for specified security groups or for an entire organization. Account information for the excluded users will then show in the report as *Unnamed*.
 
