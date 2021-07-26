@@ -5,7 +5,7 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 03/08/2019
 LocalizationGroup: Conceptual

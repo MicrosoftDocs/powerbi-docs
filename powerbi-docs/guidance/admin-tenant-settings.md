@@ -5,7 +5,7 @@ author: paulinbar
 ms.author: painbar
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 04/20/2021
 ---
