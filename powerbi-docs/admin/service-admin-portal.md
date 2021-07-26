@@ -521,7 +521,7 @@ When enabled, users in the organization can see usage metrics for dashboards, re
 
 ### Per-user data in usage metrics for content creators
 
-Usage metrics for content creators will expose display names and email addresses of users who are accessing content. Learn more about [usage metrics](../collaborate-share/service-modern-usage-metric.md).
+Usage metrics for content creators will expose display names and email addresses of users who are accessing content. Learn more about [usage metrics](../collaborate-share/service-modern-usage-metrics.md).
 
 Per-user data is enabled for usage metrics by default, and content creator account information is included in the metrics report. If you do not wish to gather this information for all users, you can disable the feature for specified security groups or for an entire organization. Account information for the excluded users will then show in the report as *Unnamed*.
 
