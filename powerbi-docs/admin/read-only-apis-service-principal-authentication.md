@@ -1,5 +1,5 @@
 ---
-title: Enable service principal authentication for read-only admin APIs (preview)
+title: Enable service principal authentication for read-only admin APIs
 description: Learn how to enable service principal authentication to permit use of read-only admin APIs.
 author: paulinbar
 ms.reviewer: ''
@@ -13,7 +13,7 @@ ms.custom:
 LocalizationGroup: Administration
 ---
 
-# Enable service principal authentication for read-only admin APIs (preview)
+# Enable service principal authentication for read-only admin APIs
 
 Service principal is an authentication method that can be used to let an Azure Active Directory (Azure AD) application access Power BI service content and APIs.
 When you create an Azure AD app, a [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is created. The service principal object, also known simply as the service principal, allows Azure AD to authenticate your app. Once authenticated, the app can access Azure AD tenant resources.
@@ -41,7 +41,7 @@ To enable service principal authentication for Power BI read-only APIs, follow t
         > Make sure there are no Power BI admin-consent-required permissions set on this application. See [Managing consent to applications and evaluating consent requests](/azure/active-directory/manage-apps/manage-consent-requests) for more information. 
 4. Enable the Power BI service admin settings. To do this:
     1. Log into the Power BI admin portal. You need to be a Power BI admin to see the tenant settings page.
-    1. Under **Admin API settings**, you will see **Allow service principals to use read-only Power BI admin APIs (Preview)**. Set the toggle to Enabled, and then select the **Specific security groups** radio button and add the security group you created in Step 2 in the text field that appears below it, as shown in the figure below.
+    1. Under **Admin API settings**, you will see **Allow service principals to use read-only Power BI admin APIs**. Set the toggle to Enabled, and then select the **Specific security groups** radio button and add the security group you created in Step 2 in the text field that appears below it, as shown in the figure below.
 
         ![Screenshot of allow service principals tenant setting.](media/read-only-apis-service-principal-auth/allow-service-principals-tenant-setting.png)
 
@@ -54,12 +54,17 @@ To enable service principal authentication for Power BI read-only APIs, follow t
 
 Service principal currently supports the following APIs:
 * [GetGroupsAsAdmin](/rest/api/power-bi/admin/groups_getgroupsasadmin) with $expand for dashboards, datasets, reports, and dataflows 
+* [GetGroupUsersAsAdmin](/rest/api/power-bi/admin/groups-get-group-users-as-admin)
 * [GetDashboardsAsAdmin](/rest/api/power-bi/admin/dashboards_getdashboardsasadmin) with $expand tiles
+* [GetDashboardUsersAsAdmin](/rest/api/power-bi/admin/dashboards-get-dashboard-users-as-admin)
+* [GetAppsAsAdmin](/rest/api/power-bi/admin/apps-get-apps-as-admin)
+* [GetAppUsersAsAdmin](/rest/api/power-bi/admin/apps-get-app-users-as-admin)
 * [GetDatasourcesAsAdmin](/rest/api/power-bi/admin/datasets_getdatasourcesasadmin) 
 * [GetDatasetToDataflowsLinksAsAdmin](/rest/api/power-bi/admin/datasets_getdatasettodataflowslinksingroupasadmin)
 * [GetDataflowDatasourcesAsAdmin](/rest/api/power-bi/admin/dataflows_getdataflowdatasourcesasadmin) 
 * [GetDataflowUpstreamDataflowsAsAdmin](/rest/api/power-bi/admin/dataflows_getupstreamdataflowsingroupasadmin) 
 * [GetCapacitiesAsAdmin](/rest/api/power-bi/admin/getcapacitiesasadmin)
+* [GetCapacityUsersAsAdmin](/rest/api/power-bi/admin/capacities-get-capacity-users-as-admin)
 * [GetActivityLog](/rest/api/power-bi/admin/getactivityevents)
 * [GetModifiedWorkspaces](/rest/api/power-bi/admin/workspace-info-get-modified-workspaces)
 * [WorkspaceGetInfo](/rest/api/power-bi/admin/workspace-info-post-workspace-info)
@@ -69,8 +74,10 @@ Service principal currently supports the following APIs:
 * [GetTilesAsAdmin](/rest/api/power-bi/admin/dashboards_gettilesasadmin)
 * [ExportDataflowAsAdmin](/rest/api/power-bi/admin/dataflows_exportdataflowasadmin)
 * [GetDataflowsAsAdmin](/rest/api/power-bi/admin/dataflows_getdataflowsasadmin)
+* [GetDataflowUsersAsAdmin](/rest/api/power-bi/admin/dataflows-get-dataflow-users-as-admin)
 * [GetDataflowsInGroupAsAdmin](/rest/api/power-bi/admin/dataflows_getdataflowsingroupasadmin)
 * [GetDatasetsAsAdmin](/rest/api/power-bi/admin/datasets_getdatasetsasadmin)
+* [GetDatasetUsersAsAdmin](/rest/api/power-bi/admin/datasets-get-dataset-users-as-admin)
 * [GetDatasetsInGroupAsAdmin](/rest/api/power-bi/admin/datasets_getdatasetsingroupasadmin)
 * [Get Power BI Encryption Keys](/rest/api/power-bi/admin/getpowerbiencryptionkeys)
 * [Get Refreshable For Capacity](/rest/api/power-bi/admin/getrefreshableforcapacity)
@@ -78,6 +85,7 @@ Service principal currently supports the following APIs:
 * [Get Refreshables For Capacity](/rest/api/power-bi/admin/getrefreshablesforcapacity)
 * [GetImportsAsAdmin](/rest/api/power-bi/admin/imports_getimportsasadmin)
 * [GetReportsAsAdmin](/rest/api/power-bi/admin/reports_getreportsasadmin)
+* [GetReportUsersAsAdmin](/rest/api/power-bi/admin/reports-get-report-users-as-admin)
 * [GetReportsInGroupAsAdmin](/rest/api/power-bi/admin/reports_getreportsingroupasadmin)
 
 ## Considerations and limitations
