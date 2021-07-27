@@ -44,7 +44,7 @@ The following additional root objects can be added as needed:
 * [drilldown](drill-down-support.md)
 * suppressDefaultTitle
 * [supportsKeyboardFocus](supportskeyboardfocus-feature.md)
-* supportsSynchronizingFilterState
+* [supportsSynchronizingFilterState](enable-sync-slicers.md)
 * [advancedEditModeSupport](advanced-edit-mode.md)
 * [supportsLandingPage](landing-page.md#creating-a-landing-page)
 * [supportsEmptyDataView](landing-page.md#creating-a-landing-page)
