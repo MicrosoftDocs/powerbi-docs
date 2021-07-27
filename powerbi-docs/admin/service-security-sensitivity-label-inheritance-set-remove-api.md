@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.custom:
-ms.date: 07/11/2021
+ms.date: 07/27/2021
 LocalizationGroup: Data from files
 ---
 # Set or remove sensitivity labels using Power BI REST admin APIs
