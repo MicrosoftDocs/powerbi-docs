@@ -3708,7 +3708,7 @@
         {
             "source_path": "powerbi-docs/service-new-look.md",
             "redirect_url": "/power-bi/fundamentals/power-bi-overview",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/power-bi/consumer/service-new-look.md",
