@@ -4,7 +4,7 @@ description: How to use Power BI Q&A to create new visualizations on dashboards 
 author: maggiesMSFT
 ms.author: maggies
 ms.service: powerbi
-ms.subservice: pbi-reports-dashboards
+ms.subservice: powerbi-ai
 ms.topic: how-to
 ms.date: 05/13/2019
 ms.custom: video-qMf7OLJfCz8
