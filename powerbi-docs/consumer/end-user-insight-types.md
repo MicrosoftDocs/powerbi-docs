@@ -5,7 +5,7 @@ author: mihart
 ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: pbi-explore
+ms.subservice: powerbi-ai
 ms.topic: conceptual
 ms.date: 10/12/2020
 LocalizationGroup: Dashboards
