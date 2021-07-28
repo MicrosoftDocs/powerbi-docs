@@ -3707,7 +3707,12 @@
         },
         {
             "source_path": "powerbi-docs/service-new-look.md",
-            "redirect_url": "/power-bi/consumer/service-new-look",
+            "redirect_url": "/power-bi/fundamentals/power-bi-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi/consumer/service-new-look.md",
+            "redirect_url": "/power-bi/consumer/end-user-reading-view",
             "redirect_document_id": true
         },
         {
