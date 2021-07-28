@@ -948,7 +948,7 @@
         {
             "source_path": "powerbi-docs/service-reading-view-and-editing-view.md",
             "redirect_url": "/power-bi/consumer/end-user-reading-view",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-free-vs-pro.md",
