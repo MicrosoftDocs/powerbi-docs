@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 06/16/2021
+ms.date: 07/28/2021
 # Customer intent: As a Power BI customer or potential customer, I'd like to know what the differences are between the previous look of the Power BI service and the new look
 LocalizationGroup: Get started
 ROBOTS: NOINDEX
