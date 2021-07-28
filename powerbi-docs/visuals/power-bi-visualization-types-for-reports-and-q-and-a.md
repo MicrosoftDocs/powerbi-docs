@@ -140,7 +140,7 @@ Line charts emphasize the overall shape of an entire series of values, usually o
 
 ## Maps
 
-### Basic maps
+### Basic map
 
 ![Basic map](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi-nancy-viz-map.png)
 
@@ -148,7 +148,7 @@ Use a basic map to associate both categorical and quantitative information with 
 
 For more information, see [Tips and tricks for map visuals](power-bi-map-tips-and-tricks.md).
 
-### ArcGIS maps
+### ArcGIS map
 
 ![ArcGIS map](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
 
@@ -156,7 +156,7 @@ The combination of ArcGIS maps and Power BI takes mapping beyond the presentatio
 
 For more information, see [ArcGIS maps in Power BI](power-bi-visualizations-arcgis.md).
 
-### Azure maps
+### Azure map
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/azure-maps-visual-hero.png" alt-text="Screenshot of Azure Maps visual for Power BI.":::
 
@@ -165,7 +165,7 @@ For more information, see [ArcGIS maps in Power BI](power-bi-visualizations-arcg
 
 For more information, see [Azure Maps visual for Power BI](/azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/create-reports/context/context).
 
-### Filled maps (Choropleth)
+### Filled map (Choropleth)
 
 ![filled map](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi-nancy-viz-filledmap.png)
 
@@ -176,7 +176,7 @@ A filled map uses shading or tinting or patterns to display how a value differs 
 
 For more information, see [Filled Maps in Power BI](power-bi-visualization-filled-maps-choropleths.md).
 
-### Shape maps
+### Shape map
 
 ![shape map of Texas](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-shape-map2.png)
 
@@ -220,7 +220,7 @@ For more information, see [Q&A visuals in Power BI](power-bi-visualization-q-and
 
 ## R script visuals
 
-![R visuals](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-r-visuals.png)
+![R visuals](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-r-visual.png)
 
 >[!TIP]
 >Visuals created with R scripts, commonly called *R visuals*, can present advanced data shaping and analytics such as forecasting, using the rich analytics and visualization power of R. R visuals can be created in Power BI Desktop and published to the Power BI service.
@@ -237,7 +237,7 @@ For more information, see [Ribbon charts in Power BI](desktop-ribbon-charts.md).
 
 ## Scatter
 
-### Scatter, bubble, and dot plot charts
+### Scatter, bubble, and dot plot chart
 
 A scatter chart always has two value axes to show one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart displays points at the intersection of an x and y numerical value, combining these values into single data points. These data points may be distributed evenly or unevenly across the horizontal axis, depending on the data.
 
