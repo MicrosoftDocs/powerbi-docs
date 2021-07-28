@@ -308,9 +308,9 @@ For more information, see [Working with tables in Power BI](power-bi-visualizati
 
 ![treemap](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi-nancy-viz-tree.png)
 
-Tree maps are charts of colored rectangles, with size representing value.  They can be hierarchical, with rectangles nested within the main rectangles. The space inside each rectangle is allocated based on the value being measured. And the rectangles are arranged in size from top left (largest) to bottom right (smallest).
+Treemaps are charts of colored rectangles, with size representing value.  They can be hierarchical, with rectangles nested within the main rectangles. The space inside each rectangle is allocated based on the value being measured. And the rectangles are arranged in size from top left (largest) to bottom right (smallest).
 
-Tree maps are a great choice:
+Treemaps are a great choice:
 
 - to display large amounts of hierarchical data
 - when a bar chart can't effectively handle the large number of values

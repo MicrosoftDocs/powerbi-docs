@@ -66,7 +66,7 @@ Q&A does its best to understand and answer the question being asked. It tries to
 
 When typing natural language queries with Power BI Q&A, you can specify the visual type in your query.  For example:
 
-"***sales by state as tree map***"
+"***sales by state as treemap***"
 
 ![q&a session](media/end-user-q-and-a-tips/qa-treemap.png)
 
