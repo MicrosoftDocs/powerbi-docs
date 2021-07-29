@@ -30,6 +30,7 @@ To access the Microsoft Sustainability Calculator, you’ll need the following i
 
 - Billing account ID for Microsoft Customer Agreement (MCA)/Cloud Solution Provider (CSP) customers or enrollment ID for Enterprise Agreement (EA) customers
 - Billing ID for MCA/CSP customers or EA Admin read (minimum) access for EA customers
+- Azure subscription of type "Azure Plan"
 
 > [!NOTE]
 > Only Azure Administrator roles can authenticate and connect the Sustainability Calculator to company data. This note applies to the December 2020 preview release.
