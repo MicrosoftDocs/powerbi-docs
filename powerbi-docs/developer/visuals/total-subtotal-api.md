@@ -19,6 +19,9 @@ The *Total and Subtotal API* enables custom visuals with a matrix data-view to r
 
 Every time a visual refreshes its data, it issues a [data fetch request](fetch-more-data.md) to the Power BI backend. These data requests are usually for the values of the fields the user dragged into the field wells of the visual. Sometimes the visual needs additional aggregations/subtotals (e.g., sum, count) applied to these fields. The API customizes the outgoing data query to request the extra aggregation/subtotal data. Since these calculations are performed by the Power BI backend, they are highly efficient and applicable to large datasets.
 
+> [!div class="mx-imgBorder"]
+>![Screenshot of visual with subtotals row and columns highlighted.](media/total-subtotal/subtotal-visual-results.png)
+
 ## The subtotals API
 
 For each data-view type (currently just the matrix) the API offers the following **boolean customization switches**:
