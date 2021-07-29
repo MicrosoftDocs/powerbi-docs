@@ -18,7 +18,7 @@ Knowing the location of the region where your data is stored is important becaus
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0fOxaHJPvdM?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-When the first user in your organization signs up for Power BI or Microsoft 365, they choose a country or region for the business identity. Azure Active Directory (AAD), the shared identity and access management service for the cloud, creates a tenant in the datacenter region closest to the selected country or region. AAD is a multi-tenant service, and each enrolled organization is represented as an individual tenant in the datacenter. 
+When the first user in your organization signs up for Power BI or Microsoft 365, they choose a country or region for the business identity. Azure Active Directory (AAD), the shared identity and access management service for the cloud, creates a tenant in the data center region closest to the selected country or region. AAD is a multi-tenant service, and each enrolled organization is represented as an individual tenant in the data center.
 
 The region selected during sign-up determines where data is stored and will be same location for all users in your organization, no matter where they are. Ideally, the selected region will be in the same geographical area where most users are located.For more information about signing up for Power BI and choosing the data region, see [Get a Power BI service subscription for your organization](service-admin-org-subscription.md).
 
@@ -39,7 +39,7 @@ To find the default data region for your organization, follow these steps:
 
 1. Look for the value next to **Your data is stored in**. The location shown is the default region for your organization and is the region where your data is stored, unless you're using capacities in different regions for your workspaces.
 
-    :::image type="content" source="/media/service-admin-where-is-my-tenant-located/power-bi-data-region.png) alt-text="Screen capture showing help and support menu with about Power B I highlighted..":::
+    :::image type="content" source="/media/service-admin-where-is-my-tenant-located/power-bi-data-region.png) alt-text="Screen capture showing about Power B I with data storage location highlighted..":::
 
 ## Next steps
 
