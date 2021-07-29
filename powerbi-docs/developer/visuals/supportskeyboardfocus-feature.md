@@ -25,7 +25,8 @@ For a brief illustration of how keyboard navigation works:
     The focus moves to the next data point each time you hit **Tab**.
 3. Press **Enter** to select the highlighted data point.
 
-![Supports keyboard focus example](./media/supportskeyboardfocus-feature/supports-keyboard-focus-example.png)
+> [!div class="mx-imgBorder"]
+> ![Supports keyboard focus example](./media/supportskeyboardfocus-feature/supports-keyboard-focus-example.png)
 
 To learn more about keyboard navigation for visuals, see [Keyboard Navigation](../../create-reports/desktop-accessibility-consuming-tools.md#keyboard-navigation).
 
