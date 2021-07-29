@@ -3,8 +3,8 @@ title: "Tutorial: Consume an Azure Machine Learning model in Power BI"
 titleSuffix: Azure Machine Learning
 description: Learn how to consume Azure Machine Learning models in Power BI.
 services: machine-learning
-ms.service: machine-learning
-ms.subservice: core
+ms.service: powerbi
+ms.subservice: powerbi-ai
 ms.topic: tutorial
 ms.author: samkemp
 author: samuel100

@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: devx-track-js
-ms.date: 02/05/2019
+ms.date: 07/18/2021
 ---
 
 # Tutorial: Embed a Power BI content into your application for national clouds
@@ -142,7 +142,7 @@ If you downloaded the [Embedding for your customer sample](https://github.com/mi
 
 ## Step 2 - get an access token from Azure AD
 
-Within your application, you need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md). Since there are different national cloud affiliations, there are distinct URLs to get an access token for your application.
+Within your application, you need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](generate-embed-token.md). Since there are different national cloud affiliations, there are distinct URLs to get an access token for your application.
 
 * Government Community Cloud (GCC) - ```https://login.microsoftonline.com```
 

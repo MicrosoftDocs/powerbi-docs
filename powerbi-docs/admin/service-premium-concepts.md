@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 06/16/2021
+ms.date: 07/21/2021
 LocalizationGroup: Premium
 ---
 # Understanding Power BI Premium Gen2 (preview)
@@ -72,7 +72,7 @@ Refreshes are run on Premium Gen2 capacities at the time they are scheduled, or 
 
 While processing the refresh, datasets may consume more memory to complete the refresh process. The refresh engine makes sure no artifact can exceed the amount of memory that their base SKU allows them to consume (for example, 25 GB on a P1 subscription, 50 GB on a P2 subscription, and so on).
 	
-## How autoscale works in Premium Gen2
+## How capacity size limits are enforced when viewing reports
 
 Premium Gen2 evaluates utilization by aggregating utilization records every 30 seconds. Each evaluation consists of 2 different aggregations: 
 * Interactive utilization

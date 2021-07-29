@@ -4,7 +4,7 @@ description: How to use Power BI Q&A to explore your data and create visualizati
 author: mohaali
 ms.author: mohaali
 ms.service: powerbi
-ms.subservice: pbi-reports-dashboards
+ms.subservice: powerbi-ai
 ms.topic: conceptual
 ms.date: 04/14/2021
 ---

@@ -4,7 +4,7 @@ description: How to use Power BI Desktop to edit the linguistic schema used by P
 author: mohaali
 ms.author: mohaali
 ms.service: powerbi
-ms.subservice: pbi-reports-dashboards
+ms.subservice: powerbi-ai
 ms.topic: conceptual
 ms.date: 10/18/2019
 ---
