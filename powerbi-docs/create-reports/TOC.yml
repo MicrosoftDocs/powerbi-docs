@@ -357,11 +357,11 @@
       - name: "Optimize data for Quick Insights"
         href: service-insights-optimize.md
       - name: "Types of Quick Insights"
-        href: end-user-insight-types.md
+        href: ../consumer/end-user-insight-types.md
       - name: "View automatic insights for dashboard tiles"
-        href: end-user-insights.md
+        ../consumer/href: end-user-insights.md
       - name: "Use AI Insights (preview)"
-        href: desktop-ai-insights.md        
+        href: ../transform-model/desktop-ai-insights.md        
       - name: "Anomaly detection"
         href: ../visuals/power-bi-visualization-anomaly-detection.md
       - name: "Decomposition tree visuals"
