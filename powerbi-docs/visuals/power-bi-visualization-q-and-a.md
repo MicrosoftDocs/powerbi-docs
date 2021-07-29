@@ -5,7 +5,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: rien
 ms.service: powerbi
-ms.subservice: pbi-visuals
+ms.subservice: powerbi-ai
 ms.topic: how-to
 ms.date: 04/02/2021
 ---

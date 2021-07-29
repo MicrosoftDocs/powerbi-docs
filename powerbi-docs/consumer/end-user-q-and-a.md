@@ -5,7 +5,7 @@ author: mihart
 ms.author: mihart
 ms.reviewer: mohammad.ali
 ms.service: powerbi
-ms.subservice: pbi-explore
+ms.subservice: powerbi-ai
 ms.topic: how-to
 ms.date: 06/03/2021
 LocalizationGroup: Ask questions of your data

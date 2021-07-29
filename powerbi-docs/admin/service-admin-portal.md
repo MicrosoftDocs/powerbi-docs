@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 06/12/2021
+ms.date: 06/30/2021
 ms.custom: ''
 LocalizationGroup: Administration
 ---
@@ -489,6 +489,24 @@ Users in the organization can create Power BI reports directly from SharePoint a
 This feature is on by default. Even if the feature is disabled, in SharePoint and Microsoft Lists users will still see **Power BI** > **Visualize the list**, and any existing Power BI reports, on the **Integrate** menu. If they select **Visualize the list**, they go to an error page explaining that their admin has disabled the feature.
 
 Learn more about [creating reports from SharePoint and Microsoft Lists](../create-reports/service-quick-create-sharepoint-list.md).
+
+### Snowflake (SSO)
+
+For dataset owners to be able to enable single sign-on for DirectQuery connections to Snowflake in dataset settings, a Power BI admin must enable the **Snowflake SSO** setting. This setting approves sending Azure AD credentials to Snowflake for authentication for the entire organization. See [Connect to Snowflake in Power BI Service](../connect-data/service-connect-snowflake.md) for more detail.
+
+![Screenshot of Snowflake (SSO)tenant switch.](media/service-admin-portal/powerbi-admin-portal-snowflake-sso-setting.png)
+
+### Azure AD Single Sign-On (SSO) for Gateway
+
+This setting enables Azure Active Directory (Azure AD) single sign-on (SSO) through on-premises data gateways to cloud data sources that rely on Azure AD-based authentication. It gives seamless Azure AD SSO connectivity to Azure-based data sources, such as Azure Synapse Analytics (SQL DW), Azure Data Explorer, Snowflake on Azure, and Azure Databricks through an on-premises data gateway.
+
+This feature is important for users who work with reports that require SSO connectivity in DirectQuery mode to data sources deployed in an Azure virtual network (Azure VNet). When you configure SSO for an applicable data source, queries execute under the Azure AD identity of the user that interacts with the Power BI report.
+
+An important security-related consideration is that gateway owners have full control over their on-premises data gateways. This means that it is theoretically possible for a malicious gateway owner to intercept Azure AD SSO tokens as they flow through an on-premises data gateway (this is not a concern for VNet data gateways because they are maintained by Microsoft). 
+
+Because of this possible threat, the Azure AD Single Sign-On feature is disabled by default for on-premises data gateways. As a Power BI admin, you must enable the **Azure AD Single Sign-On (SSO) for Gateway** tenant setting (shown below) in the Power BI admin portal before data sources can be enabled for Azure AD SSO on an on-premises data gateway. Before enabling the feature, make sure to restrict the ability to deploy on-premises data gateways in your organization to appropriate administrators.  
+
+![Screenshot of Azure AD Single Sign-On (SSO) for Gateway tenant switch.](media/service-admin-portal/powerbi-admin-portal-azure-ad-sso-for-gateway-setting.png)
 
 ## R and Python visuals settings
 
