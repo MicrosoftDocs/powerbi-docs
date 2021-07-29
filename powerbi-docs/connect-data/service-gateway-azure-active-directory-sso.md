@@ -24,7 +24,7 @@ For more information on SSO and list of data sources supported for Azure AD SSO,
 
 ## Query steps when running Azure AD SSO
 
-![Azure AD SSO query steps](media/service-gateway-azure-active-directory-sso/aad-sso-query-steps.png)
+![Screenshot of Azure AD SSO query steps.](media/service-gateway-azure-active-directory-sso/aad-sso-query-steps.png)
 
 Since the Azure AD token of the user is passed via the gateway, it is possible for an admin of the gateway machine to obtain access to these tokens. To make sure a user with malicious intent isn't able to intercept these tokens, the following safeguard mechanisms are available:
 

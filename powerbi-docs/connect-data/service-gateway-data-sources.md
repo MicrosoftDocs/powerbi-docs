@@ -63,7 +63,7 @@ If you don't have a gateway installed yet, see [Install an on-premises data gate
 
     For more information on **Use SSO via Kerberos for DirectQuery queries** or **Use SSO via Kerberos for DirectQuery And Import queries**, see [Overview of single sign-on (SSO) for gateways in Power BI](service-gateway-sso-overview.md).
 
-    If you use **Use SSO via Azure AD for DirectQuery queries** and use this data source for a DirectQuery-based report, it will use the AAD token of the user who signs into the Power BI service. For a refresh-based report, it will use the credentials that you enter in the **Username** and **Password** fields and the **Authentication** method chosen. The **Use SSO via Azure AD for DirectQuery queries** option will be available only if the tenant admin allows AAD SSO via the on-prem data gateway and for the following data sources:
+    If you use **Use SSO via Azure AD for DirectQuery queries** and use this data source for a DirectQuery-based report, it will use the Azure AD token of the user who signs into the Power BI service. For a refresh-based report, it will use the credentials that you enter in the **Username** and **Password** fields and the **Authentication** method chosen. The **Use SSO via Azure AD for DirectQuery queries** option will be available only if the tenant admin allows Azure AD SSO via the on-premises data gateway and for the following data sources:
 
     * SQL Server
     * Azure Data Explorer
