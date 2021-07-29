@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/07/2020
+ms.date: 07/29/2021
 LocalizationGroup: Dashboards
 ---
 # Dashboard tiles in Power BI
@@ -39,8 +39,6 @@ Need help understanding the building blocks that make up Power BI?  See [Power B
    * [Open the report that was used to create the tile](end-user-reports.md) ![report icon](./media/end-user-tiles/chart-icon.jpg)  
 
    * [Open the Q&A question that was used to create the tile](end-user-reports.md) ![Q&A icon](./media/end-user-tiles/qna-icon.png)  
-
-   * [Open the workbook that was used to create the tile](end-user-reports.md) ![worksheet icon](./media/end-user-tiles/power-bi-open-worksheet.png)  
 
    * [View the tile in focus mode](end-user-focus.md) ![focus icon](./media/end-user-tiles/fullscreen-icon.jpg)  
 
