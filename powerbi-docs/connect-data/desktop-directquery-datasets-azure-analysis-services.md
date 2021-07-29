@@ -145,7 +145,7 @@ There are also a few **limitations** you need to keep in mind:
 
 - Take over of a dataset which is using the **DirectQuery to other datasets** feature isn't currently supported.
 
-- [As with any DirectQuery data source](https://docs.microsoft.com/power-bi/connect-data/desktop-directquery-about#reporting-limitations), hierarchies defined in a Azure Analysis Services model or Power BI dataset will not be shown when connecting to the model or dataset in DirectQuery mode using Excel. 
+- [As with any DirectQuery data source](https://docs.microsoft.com/power-bi/connect-data/desktop-directquery-about#reporting-limitations), hierarchies defined in an Azure Analysis Services model or Power BI dataset will not be shown when connecting to the model or dataset in DirectQuery mode using Excel. 
 
 ### Tenant considerations
 
