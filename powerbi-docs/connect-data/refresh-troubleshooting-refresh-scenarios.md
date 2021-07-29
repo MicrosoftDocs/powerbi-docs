@@ -26,7 +26,6 @@ You should always ensure that basic requirements for refresh are met and verifie
 
 Once you've confirmed those requirements are met, take a look through the following sections for more troubleshooting. 
 
-
 ## Email notifications
 
 If you're coming to this article from an email notification, and you no longer want to receive emails about refresh issues, contact your Power BI admin. Ask them to remove your email or an email list you're subscribed to from the appropriate datasets in Power BI. They can do this from the following area in the Power BI admin portal.
@@ -94,6 +93,9 @@ When you create a report in Power BI Desktop that contains an ANY data type colu
 
 Visuals created in Power BI Desktop using such columns may behave or appear as designed prior to a refresh event, but may change (due to TRUE/FALSE being converted to -1/0) after the refresh event.
 
+## Resolve the error: Container exited unexpectedly with code 0x0000DEAD
+
+If you get the **Container exited unexpectedly with code 0x0000DEAD** error, try to disable the scheduled refresh and republish the dataset.
 
 ## Next steps
 

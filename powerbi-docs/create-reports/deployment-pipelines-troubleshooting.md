@@ -5,7 +5,7 @@ author: KesemSharabi
 ms.author: kesharab
 ms.topic: troubleshooting
 ms.service: powerbi
-ms.subservice: pbi-deployment
+ms.subservice: pbi-deployment-pipeline
 ms.date: 06/22/2021
 ---
 

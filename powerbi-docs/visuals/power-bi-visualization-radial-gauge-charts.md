@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 06/17/2020
+ms.date: 07/28/2021
 LocalizationGroup: Visualizations
 ---
 # Radial gauge charts in Power BI
@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-A radial gauge chart has a circular arc and shows a single value that measures progress toward a goal or a Key Performance Indicator (KPI). The line (or *needle*) represents the goal or target value. The shading represents the progress toward that goal. The The value inside the arc represents the progress value. Power BI spreads all possible values evenly along the arc, from the minimum (left-most value) to the maximum (right-most value).
+A radial gauge chart has a circular arc and shows a single value that measures progress toward a goal or a Key Performance Indicator (KPI). The line (or *needle*) represents the goal or target value. The shading represents the progress toward that goal. The value inside the arc represents the progress value. Power BI spreads all possible values evenly along the arc, from the minimum (left-most value) to the maximum (right-most value).
 
 ![Screenshot of radial gauge.](media/power-bi-visualization-radial-gauge-charts/gauge-m.png)
 

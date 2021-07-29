@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 05/27/2021
+ms.date: 07/22/2021
 ms.custom: pbibetadocbug
 LocalizationGroup: Visualizations
 ---
@@ -61,17 +61,33 @@ Expand the **Data colors** card and turn the slider On for **Show all**. This di
 
 Set **Convenience** to orange. 
 
-![column chart with one orange column](media/service-tips-and-tricks-for-color-formatting/power-bi-one-color.png)
+![column chart with one orange column](media/service-tips-and-tricks-for-color-formatting/power-bi-one-color-orange.png)
 
 Once selected, the **Convenience** data point is a nice shade of orange, and certainly stands out.
 
+If you expect to add new columns to the chart, and want to maintain the same color scheme, be sure to set the **Default color** to grey.
+
+![Data colors control showing default color choice.](media/service-tips-and-tricks-for-color-formatting/power-bi-default-color.png)
+
 Even if you change visualization types, then return, Power BI remembers your selection and keeps **Convenience** orange.
 
+## Change the color of all data points
 You can change the color of a data point for one, several, or all data elements in the visualization. Perhaps you want your visual to mimic your corporate colors of yellow, green, and blue. 
 
 ![bar chart with bars that are green, yellow and blue](media/service-tips-and-tricks-for-color-formatting/power-bi-corporate.png)
 
+Or, perhaps you want a different color for each category. 
+
+![Line chart with five categories.](media/service-tips-and-tricks-for-color-formatting/power-bi-line-charts.png)
+
+Notice that the legend colors match the data colors. Legend colors aren't set separately, but inherit the colors set for the **Data colors**. 
+
+> [!NOTE]
+> There are certain circumstances where Power BI will change the legend (and data) colors. One example is when your visual is created using streaming data, a new month begins, and a new category is introduced into your visual. Let's say that you've set the data colors for all five categories in the line chart above. And now it's Jan-13 and another manufacturer has entered the market. Because you did not set a data color for that new manufacturer, you may find that Power BI has changed the data colors for the original five manufacturers. When a new category is introduced, you may have to reassign data colors to the new and existing categories using the **Formatting > Data colors** pane.  
+
 There are all sorts of things you can do with colors. In the next section, we take a look at conditional formatting.
+
+
 
 ## Conditional formatting for visualizations
 Visualizations often benefit from dynamically setting color based on the numeric value of a field. By doing this, you could show a different value than what’s used for the size of a bar, and show two values on a single graph. Or you can use this to highlight data points over (or under) a certain value – perhaps highlighting areas of low profitability.

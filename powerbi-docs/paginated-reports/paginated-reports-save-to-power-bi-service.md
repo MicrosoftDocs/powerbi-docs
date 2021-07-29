@@ -67,9 +67,9 @@ You can also start from the Power BI service and upload a paginated report.
 
 1. Open the Power BI service in a browser and browse to the Premium workspace where you want to publish the report. Note the diamond icon ![Power BI Premium capacity diamond icon](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) next to the name. 
 
-1. Select **Get Data**.
+1. Select **Get data** at the bottom of the nav pane. 
 
-    ![Power BI Get Data](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-get-data.png)
+   :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
 
 1. In the **Files** box, select **Get**.
 

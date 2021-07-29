@@ -81,7 +81,7 @@ When you create a new report based on the dataset, the report edit canvas opens.
 
 To see more information about the dataset, to explore related reports, or to create a new report based on the dataset, from scratch or from a template, pick a dataset from the recommended datasets or from the datasets list. A page will open that shows you information about the dataset, lists the reports that are built on top of the dataset, and provides entry points for creating new reports based on the dataset or pulling the data into Excel via [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md).
 
-![Screenshot of datasets hub explore related reports page](media/service-datasets-hub/datasets-hub-details-page.png)
+[ ![Screenshot of datasets hub explore related reports page.](media/service-datasets-hub/datasets-hub-details-page-inline-and-expanded.png)](media/service-datasets-hub/datasets-hub-details-page-inline-and-expanded.png#lightbox)
 
 The page header displays the dataset name, endorsement, if any, and dataset owner. To send an email to the dataset owner or the dataset certifier (if any), click the header and then click the name of the owner.
 
@@ -97,7 +97,7 @@ The Action bar at the top of the page contains a number of actions that you can 
 |**Create a report**     | Create a report based on this dataset either from scratch or from a template, if one exists.        |
 |**Analyze in Excel**     | Launch [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) using this dataset.        |
 |**Lineage**     | Open the [lineage view](../collaborate-share/service-data-lineage.md) of this dataset.        |
-|**Chat in Teams**     | Invite people to start [chatting in Teams](../collaborate-share/service-share-report-teams.md).         |
+|**Chat in Teams**     | Invite people to start [chatting in Teams](../collaborate-share/service-share-report-teams.md). People you invite will receive a Teams chat message from you with a link to this dataset details page. If they have access to the dataset, the link will open this dataset details page in Teams.        |
 |**Show tables**     | Open a side panel showing the dataset's tables.        |
 
 

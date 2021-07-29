@@ -16,19 +16,14 @@
       - name: Create reports and dashboards
         tocHref: /azure/azure-maps/
         topicHref: /power-bi/create-reports/index
-
-- name: Docs
-  href: /
-  topicHref: /
-  items:
   - name: Power Platform
     href: /sql/
     topicHref: /power-platform/
     items:
     - name: Power BI
-      tocHref: /sql/reporting-services/
-      topicHref: /power-bi/
+      tocHref: /power-bi/
+      topicHref: /sql/reporting-services/report-builder/index
       items:
       - name: Create reports and dashboards
-        tocHref: /sql/reporting-services/report-builder/
-        topicHref: /power-bi/create-reports/index
+        tocHref: /power-bi/create-reports/
+        topicHref: /sql/reporting-services/report-builder/index
