@@ -278,22 +278,16 @@
         href: service-reports-visual-interactions.md
       - name: "Customize x-axis and y-axis properties"
         href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
-      - name: "Anomaly detection"
-        href: ../visuals/power-bi-visualization-anomaly-detection.md
       - name: "Basic area charts"
         href: ../visuals/power-bi-visualization-basic-area-chart.md
       - name: "Create card visuals (big number tiles)"
         href: ../visuals/power-bi-visualization-card.md
       - name: "Combo charts"
         href: ../visuals/power-bi-visualization-combo-chart.md
-      - name: "Decomposition tree visuals"
-        href: ../visuals/power-bi-visualization-decomposition-tree.md
       - name: "Doughnut charts"
         href: ../visuals/power-bi-visualization-doughnut-charts.md
       - name: "Funnel charts"
         href: ../visuals/power-bi-visualization-funnel-charts.md
-      - name: "Key influencers visuals"
-        href: ../visuals/power-bi-visualization-influencers.md
       - name: "KPI visuals"
         href: ../visuals/power-bi-visualization-kpi.md
       - name: "Paginated report visuals"
@@ -350,24 +344,62 @@
         href: ../visuals/power-bi-visualization-small-multiples.md
       - name: "Interact with small multiples (preview)"
         href: ../visuals/power-bi-visualization-small-multiples-interact.md
-      - name: "Smart narratives"
-        href: ../visuals/power-bi-visualization-smart-narrative.md
       - name: "Tables in reports and dashboards"
         href: ../visuals/power-bi-visualization-tables.md
       - name: "Treemaps"
         href: ../visuals/power-bi-visualization-treemaps.md
       - name: "Waterfall charts"
         href: ../visuals/power-bi-visualization-waterfall-charts.md
-    - name: Goals
+    - name: Artificial intelligence
       items: 
-      - name: "Get started with goals"
-        href: service-goals-introduction.md
-      - name: "Create scorecards and manual goals"
-        href: service-goals-create.md
-      - name: "Create connected goals"
-        href: service-goals-create-connected.md
-      - name: "Stay on top of your goals"
-        href: service-goals-check-in.md        
+      - name: "Quick Insights"
+        href: service-insights.md
+      - name: "Optimize data for Quick Insights"
+        href: service-insights-optimize.md
+      - name: "Types of Quick Insights"
+        href: end-user-insight-types.md
+      - name: "View automatic insights for dashboard tiles"
+        href: end-user-insights.md
+      - name: "Use AI Insights (preview)"
+        href: desktop-ai-insights.md        
+      - name: "Anomaly detection"
+        href: ../visuals/power-bi-visualization-anomaly-detection.md
+      - name: "Decomposition tree visuals"
+        href: ../visuals/power-bi-visualization-decomposition-tree.md
+      - name: "Key influencers visuals"
+        href: ../visuals/power-bi-visualization-influencers.md
+      - name: "Smart narratives"
+        href: ../visuals/power-bi-visualization-smart-narrative.md
+      - name: "Use Cognitive Services"
+        href: ../connect-data/service-tutorial-use-cognitive-services.md
+      - name: "Build a machine learning model"
+        href: ../connect-data/service-tutorial-build-machine-learning-model.md
+      - name: "Consume a machine learning model in a report"
+        href: ../connect-data/service-aml-integrate.md
+      - name: "Use Machine Learning and Cognitive Services with dataflows"
+        href: ../transform-model/dataflows/dataflows-machine-learning-integration.md  
+      - name: Python
+        items: 
+        - name: "Run Python scripts"
+          href: ../connect-data/desktop-python-scripts.md
+        - name: "Use Python in Query Editor"
+          href: ../connect-data/desktop-python-in-query-editor.md
+        - name: "Use an external Python IDE"
+          href: ../connect-data/desktop-python-ide.md
+        - name: "Create visuals with Python"
+          href: ../connect-data/desktop-python-visuals.md
+        - name: "Learn which Python packages are supported"
+          href: ../connect-data/service-python-packages-support.md
+      - name: R in Power BI
+        items: 
+        - name: "Run R scripts"
+          href: ../connect-data/desktop-r-scripts.md
+        - name: "Use R in Query Editor"
+          href: ../connect-data/desktop-r-in-query-editor.md
+        - name: "Use an external R IDE"
+          href: ../connect-data/desktop-r-ide.md
+        - name: "Create visuals with R packages"
+          href: ../connect-data/service-r-packages-support.md
     - name: Natural language Q&A
       items: 
       - name: "Create a Q&A visual"
@@ -386,10 +418,16 @@
         href: service-q-and-a-create-featured-questions.md
       - name: "Use Q&A with live connections"
         href: service-q-and-a-direct-query.md
-      - name: "Quick Insights"
-        href: service-insights.md
-      - name: "Optimize data for Quick Insights"
-        href: service-insights-optimize.md
+    - name: Goals
+      items: 
+      - name: "Get started with goals"
+        href: service-goals-introduction.md
+      - name: "Create scorecards and manual goals"
+        href: service-goals-create.md
+      - name: "Create connected goals"
+        href: service-goals-create-connected.md
+      - name: "Stay on top of your goals"
+        href: service-goals-check-in.md        
     - name: Dashboards
       items: 
       - name: "Intro to dashboards"
