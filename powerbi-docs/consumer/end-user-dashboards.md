@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 05/24/2021
+ms.date: 08/29/2021
 LocalizationGroup: Dashboards
 ---
 # Dashboards for business users of the Power BI service
@@ -35,7 +35,7 @@ Dashboards are a wonderful way to monitor your business, to look for answers, an
 A dashboard isn't just a pretty picture; it's interactive and the tiles update as the underlying data changes.
 
 ## Dashboards versus reports for Power BI ***business users***
-Reports are often confused with dashboards since they too are canvases filled with visualizations. But there are some major differences from a Power BI *business user* point of view.
+The way you interact with Power BI will depend on your job role. As a consumer or *business user*, you are the person who receives content (dashboards, reports, and apps) from *creator* colleagues. Reports are often confused with dashboards since they too are canvases filled with visualizations. But there are some major differences from a Power BI *business user* point of view.
 
 | **Capability** | **Dashboards** | **Reports** |
 | --- | --- | --- |

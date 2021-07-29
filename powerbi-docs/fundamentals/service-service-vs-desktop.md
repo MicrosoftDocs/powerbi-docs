@@ -8,14 +8,12 @@ ms.custom: video-IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 08/07/2020
+ms.date: 07/28/2021
 LocalizationGroup: Reports
 ---
 # Comparing Power BI Desktop and the Power BI service
 
-In a Venn diagram comparing Power BI Desktop and the Power BI service, the area in the middle shows how the two overlap. Some tasks you can do in either Power BI Desktop or the service. The two sides of the Venn diagram show the features that are unique to the application and the service.  
 
-![Venn diagram showing the relationship between Power B I Desktop and the Power B I service.](media/service-service-vs-desktop/power-bi-venn-desktop-service.png)
 
 **Power BI Desktop** is a complete data analysis and report creation tool that you install for free on your local computer. It includes the Query Editor, in which you can connect to many different sources of data, and combine them (often called modeling) into a data model. Then you design a report based on that data model. The [Power BI Desktop getting started guide](desktop-getting-started.md) walks through the process.
 
@@ -24,6 +22,10 @@ The **Power BI service** is a cloud-based service. It supports light report edit
 Most Power BI report designers who work on business intelligence projects use **Power BI Desktop** to create Power BI reports, and then use the **Power BI service** to collaborate and distribute their reports.
 
 The Power BI service also hosts *paginated reports* in workspaces backed by a Power BI Premium capacity. You create paginated reports with Power BI Report Builder. See [Compare Power BI reports and paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md#compare-power-bi-reports-and-paginated-reports) in the article "What are paginated reports in Power BI Premium?" for more information.
+
+In a Venn diagram comparing Power BI Desktop and the Power BI service, the area in the middle shows some of the areas where the two overlap. Some tasks you can do in either Power BI Desktop or the service. The two outer sides of the Venn diagram show the features that are unique to wither the Desktop application or to the Power BI service.  
+
+![Venn diagram showing the relationship between Power B I Desktop and the Power B I service.](media/service-service-vs-desktop/power-bi-venn-desktop-service.png)
 
 ## Editing Power BI reports
 
