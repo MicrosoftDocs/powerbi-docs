@@ -15,9 +15,9 @@ LocalizationGroup: Reports
 
 
 
-**Power BI Desktop** is a complete data analysis and report creation tool that you install for free on your local computer. It includes the Query Editor, in which you can connect to many different sources of data, and combine them (often called modeling) into a data model. Then you design a report based on that data model. The [Power BI Desktop getting started guide](desktop-getting-started.md) walks through the process.
+**Power BI Desktop** is an application that you download and install for free on your local computer. Desktop is a complete data analysis and report creation tool that is used to connect to, transform, visualize, and analyze your data. It includes the Query Editor, in which you can connect to many different sources of data, and combine them (often called modeling) into a data model. Then you design a report based on that data model. Reports can be shared with others directly or by publishing to the Power BI service. The [Power BI Desktop getting started guide](desktop-getting-started.md) walks through the process.
 
-The **Power BI service** is a cloud-based service. It supports light report editing and collaboration for teams and organizations. You can connect to data sources in the Power BI service, too, but modeling is limited.
+The **Power BI service** is a cloud-based service, or *software as a service* (SaaS). It supports report editing and collaboration for teams and organizations. You can connect to data sources in the Power BI service, too, but modeling is limited. The Power BI service is used to do things such as creating dashboards, creating and sharing apps, analyzing and exploring your data to uncover business insights, and much more. [What is the Power BI service](power-bi-service-overview.md) details many of the capabilities of the Power BI service.
 
 Most Power BI report designers who work on business intelligence projects use **Power BI Desktop** to create Power BI reports, and then use the **Power BI service** to collaborate and distribute their reports.
 
