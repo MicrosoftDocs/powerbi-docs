@@ -93,6 +93,6 @@ Do the following steps to recreate the configuration of the original region:
 
 1. Recreate capacities and move workspaces back to Premium.
 1. If push datasets were deleted, recreate them.
-1. Reconfigure your data gateways. Follow the steps in [Migrate, restore, or take over an on-premises data gateway](../data-integration/gateway/service-gateway-migrate).
+1. Reconfigure your data gateways. Follow the steps in [Migrate, restore, or take over an on-premises data gateway](/data-integration/gateway/service-gateway-migrate).
 1. Excel workbooks that use the Analyze in Excel feature may fail to refresh. You may need to update the connection string or redownload the ODC connection for that dataset. Follow the steps in [Analyze in Excel](../collaborate-share/service-tutorial-analyze-in-excel.md) if necessary.
 1. Links to Power BI that are embedded in content might fail to connect when migration is complete. For example, an embedded link in SharePoint may result in a user error. To resolve this problem, you have to regenerate the embedded link in Power BI and then update the locations where they're used.
