@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 04/02/2021
+ms.date: 07/29/2021
 LocalizationGroup: Samples
 ---
 # Retail Analysis sample for Power BI: Take a tour
@@ -32,7 +32,7 @@ You don't need a Power BI license to explore the samples in Power BI Desktop. If
 
     If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace.
 
-2. In the bottom-left corner, select **Get Data**.
+2. In the bottom-left corner, select **Get data**.
 
    :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
 
@@ -72,7 +72,7 @@ If you want to view the data source for this sample, it's also available as an [
 
    The **FD-01** district has the highest average **Sales per Square Foot** and FD-02 has the lowest **Total Sales Variance** compared to last year. FD-03 and FD-04 are worst performers overall.
 4. Select individual bubbles or other charts to see cross highlighting, revealing the impact of your selections.
-5. To return to the dashboard, select  **Retail Analysis Sample** from the top nav pane.
+5. To return to the dashboard, select  **Retail Analysis Sample** from the left navigation bar.
 
    ![Navigation bar](media/sample-retail-analysis/power-bi-breadcrumbs.png)
 6. On the dashboard, select the **This Year's Sales New & Existing Stores** tile, which is equivalent to typing *This year sales* in the Q&A question box.
@@ -86,10 +86,10 @@ If you want to view the data source for this sample, it's also available as an [
 ## Review a tile created with Power BI Q&A
 Let's get more specific.
 
-1. Change the question to _this year sales **by district**_. Observe the result: Q&A automatically places the answer in a bar chart and suggests other phrases:
+1. Change the question to _this year's sales **by district**_. Observe the result: Q&A automatically places the answer in a bar chart:
 
    ![This year's sales by district in Q&A](media/sample-retail-analysis/retail8.png)
-2. Now change the question to _this year sales **by zip and chain**_.
+2. Now change the question to _this year's sales **by zip and chain**_.
 
    Notice how Power BI answers the question as you type and displays the appropriate chart.
 3. Experiment with more questions and see what kind of results you get.
@@ -156,6 +156,6 @@ The last area we want to explore is our growth by examining the new stores opene
 6. Explore by selecting other bars, lines, and bubbles throughout the charts and see what insights you can discover.
 
 ## Next steps: Connect to your data
-This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get Data** for a new copy of this sample.
+This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get data** for a new copy of this sample.
 
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into sample data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](../fundamentals/service-get-started.md).

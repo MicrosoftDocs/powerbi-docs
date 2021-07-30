@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 04/02/2021
+ms.date: 07/29/2021
 LocalizationGroup: Samples
 ---
 # Supplier Quality Analysis sample for Power BI: Take a tour
@@ -37,7 +37,7 @@ Before you can use the sample, you must first [download it as a sample in the Po
 
    If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace.
 
-2. In the bottom-left corner, select **Get Data**.
+2. In the bottom-left corner, select **Get data**.
    
    :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
 
@@ -78,7 +78,7 @@ Let's analyze the downtime caused by defective materials and see which vendors a
 ### Which are the worst suppliers?
  We want to find the worst eight suppliers and determine what percentage of the downtime they're responsible for creating. We can do so by changing the **Downtime (min) by Vendor** area chart to a treemap.  
 
-1. On the **Downtime Analysis** page of the report, select **Edit report** in the upper-left corner.  
+1. On the **Downtime Analysis** page of the report, select **Edit** in the top menu.  
 2. Select the **Downtime (min) by Vendor** area chart, and in the **Visualizations** pane, select the **Treemap** icon.  
 
    ![Select treemap icon](media/sample-supplier-quality/supplier4.png)  
@@ -88,7 +88,7 @@ Let's analyze the downtime caused by defective materials and see which vendors a
     ![Downtime (min) by Vendor treemap](media/sample-supplier-quality/supplier5.png)  
 
    From this treemap, we can see the top eight vendors are the eight blocks on the left of the treemap. We can also see they account for about 50% of all downtime minutes.  
-3. Select **Supplier Quality Analysis Sample** in the top nav pane to return to the dashboard.
+3. Select **Supplier Quality Analysis Sample** from the left navigation bar to return to the dashboard.
 
 ### Comparing plants
 Now let's explore which plant does a better job managing defective material, resulting in less downtime.  
@@ -107,7 +107,7 @@ Now let's explore which plant does a better job managing defective material, res
 3. Select the **Logistics** bubble in the bubble chart and observe the plants in Springfield and Naperville, IL. Naperville seems to be doing a much better job of managing defective supplies as it has a high number of rejects and few impacts, compared to Springfield's large number for impacts.  
 
    ![Select Logistics](media/sample-supplier-quality/supplier8.png)  
-4. Select **Supplier Quality Analysis Sample** in the top nav pane to return to the dashboard.
+4. Select **Supplier Quality Analysis Sample** in the left navigation bar to return to the dashboard.
 
 ## Which material type is best managed?
 The best managed material type is the one with lowest downtime or no impact, regardless of defect quantity.
@@ -132,7 +132,7 @@ The best managed material type is the one with lowest downtime or no impact, reg
 
     ![Total Defect Qty by Month and Year chart](media/sample-supplier-quality/supplier11.png)  
 3. Do more defects translate into more downtime? Ask questions in the Q&A box to find out.  
-4. Select **Supplier Quality Analysis Sample** in the top nav pane to return to the dashboard.  
+4. Select **Supplier Quality Analysis Sample** in the left navigation bar to return to the dashboard.  
 5. Because we know that raw materials have the highest number of defects, type in the question box: *show material types, year, and total defect qty*.  
 
     There were many more raw materials defects in 2014 than in 2013.  
@@ -164,6 +164,6 @@ Let's look at another dashboard tile related to total defective quantity.
 5. Select **Exit Q&A** in the upper-left corner to return to the dashboard.
 
 ## Next steps: Connect to your data
-This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get Data** for a new copy of this sample.
+This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get data** for a new copy of this sample.
 
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into sample data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](../fundamentals/service-get-started.md).

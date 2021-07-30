@@ -1,5 +1,5 @@
 ---
-title: Explore to the Retail Analysis sample
+title: Explore the Retail Analysis sample
 description: Learn to install and explore the Retail Analysis sample in the Power BI service and in Power BI Desktop.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 04/02/2021
+ms.date: 07/29/2021
 LocalizationGroup: Samples
 ---
 # Explore the Retail Analysis sample
@@ -33,7 +33,7 @@ To familiarize yourself with this particular built-in sample and its scenario, s
 
     If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace.
 
-2. Select **Get Data** at the bottom of the nav pane. 
+2. Select **Get data** at the bottom of the nav pane. 
 
    :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
 
@@ -48,21 +48,21 @@ To familiarize yourself with this particular built-in sample and its scenario, s
 ## What was imported?
 With the built-in samples, when you select **Connect**, Power BI gets a copy of that built-in sample and stores it for you in the cloud. Because the person who created the built-in sample included a dataset, a report, and a dashboard, that's what you get when you select **Connect**. 
 
-1. When you select **Connect**, Power BI creates the new dashboard and lists it on your **Dashboards** tab. 
+1. When you select **Connect**, Power BI creates the new dashboard, report, and dataset in your your workspace. 
    
-   ![Retail Analysis Sample entry](media/sample-retail-analysis/retail-entry.png)
-2. Open the **Reports** tab. Here, you'll see a new report named *Retail Analysis Sample*.
+   ![Retail Analysis Sample entry](media/sample-tutorial-connect-to-the-samples/retail-entry.png)
+2. On the **Content** tab, you see the dashboard and the report named *Retail Analysis Sample*.
    
-   ![Retail Analysis Sample report entry](media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png)
+   ![Screenshot showing the Retail Analysis Sample Content tab with dashboard and report entries.](media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png)
    
-   Check out the **Datasets** tab; there's a new dataset there as well.
+3. On the **Datasets + dataflows** tab, you see the dataset named *Retail Analysis Sample*.
    
-   ![Retail Analysis Sample dataset entry](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
-
+   ![Screenshot showing the Retail Analysis Sample Datasets + dataflows tab with the dataset entry.](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
+   
 ## Explore your new content
 Now explore the dashboard, dataset, and report on your own. There are many different ways to navigate to your dashboards, reports, and datasets. One of these ways is described in the following procedure.  
 
-1. Navigate back to the **Dashboards** tab, and then select the **Retail Analysis Sample** dashboard to open it.       
+1. From your workspace, select the **Retail Analysis Sample** dashboard to open it.       
 
    The dashboard opens, which has a variety of visualization tiles.   
  
@@ -82,9 +82,16 @@ Now explore the dashboard, dataset, and report on your own. There are many diffe
    
    ![Retail Analysis Sample dataset entry](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
    
-1. One way of exploring the dataset is by creating your own visualizations and reports from scratch. Select the chart icon ![Chart icon](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) to open the dataset in report editing mode.
-     
+1. One way of exploring the dataset is by creating your own visualizations and reports from scratch.
+   
+   Select **More options (...)** > **Create report**
+   
+   ![Screenshot showing the Create report menu item.](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) to open the dataset in report editing mode.
+   
+   The dataset opens in report editing mode.
+   
    ![Brand-new report](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
+   
 
 1. Another way of exploring the dataset is to run [quick insights](../consumer/end-user-insights.md). Select **More options** (...), and then choose **Get quick insights**. When the insights are ready, select **View insights**.
      
@@ -109,7 +116,7 @@ Unlike editing a report in the Power BI service, in Power BI Desktop you can als
 When you download a sample .pbix file, you've downloaded not just a report but also the *underlying dataset*. When you open the file, Power BI Desktop loads the data with its associated queries and relationships. You can view the underlying data and relationships, but you can't view the underlying queries in the Query Editor.
 
 
-1. Switch to [Data view](../connect-data/desktop-data-view.md) by selecting the table icon ![table icon](media/sample-tutorial-connect-to-the-samples/power-bi-data-icon.png).
+1. Switch to [Data view](../connect-data/desktop-data-view.md) by selecting the data icon ![data icon](media/sample-tutorial-connect-to-the-samples/power-bi-data-icon.png).
  
     ![Desktop data view](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-sample-data.png)
 
@@ -117,14 +124,14 @@ When you download a sample .pbix file, you've downloaded not just a report but a
 
     When you're modeling your data, sometimes you want to see what's actually in the rows and columns of a table, without creating a visual on the report canvas. This is especially true when you're creating measures and calculated columns, or you need to identify a data type or data category.
 
-1. Switch to [Relationships view](../transform-model/desktop-relationship-view.md) by selecting the following icon: ![Relationship view icon](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png).
+1. Switch to [Model view](../transform-model/desktop-relationship-view.md) by selecting the following icon: ![Model view icon](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png).
  
     ![Relationship view in Power BI Desktop](media/sample-tutorial-connect-to-the-samples/power-bi-relationships.png)
 
     Relationship view shows all of the tables, columns, and relationships in your model. From here you can view, change, and create relationships.
 
 ## Next steps
-This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get Data** for a new copy of this sample.
+This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get data** for a new copy of this sample.
 
 We hope this tour has shown how Power BI dashboards, datasets, relationships, and reports can provide insights into sample data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](../fundamentals/service-get-started.md) and [Get started with Power BI Desktop](../fundamentals/desktop-getting-started.md).  
 
