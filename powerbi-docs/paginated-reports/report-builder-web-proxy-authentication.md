@@ -21,17 +21,17 @@ The registry entry can be placed in the following location:
 
 `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Report Builder]`
 
-Once the registry entry is created (a reboot may be necessary) the proxy settings defined in Internet Explorer are used when Power BI Report Builder makes web requests.
+After you create the registry entry, a reboot may be necessary. From then on, when Power BI Report Builder makes web requests, it uses the proxy settings that are defined in Internet Explorer.
 
-As with any change to proxy or credential settings, there are security implications to creating this registry entry, so administrators must make sure they have configured the Internet Explorer proxies correctly before enabling this feature.
+As with any change to proxy or credential settings, there are security implications to creating this registry entry. Administrators must make sure they have configured the Internet Explorer proxies correctly before they enable this feature.
 
 ## Limitations and considerations for using default system credentials
 
 Administrators, there are security implications to consider before enabling this capability. Follow these recommendations whenever enabling this feature for clients:
 
-- Only use **Negotiation** as the authentication scheme on the for the proxy server, to ensure only proxy servers that are joined to the Active Directory network are used by the client. 
+- Only use **Negotiation** as the authentication scheme for the proxy server, to ensure only proxy servers that are joined to the Active Directory network are used by the client. 
 - Don't use **NTLM fallback** on clients that use this feature.
-- If users aren't on a network with a proxy when this feature is enabled and configured as recommended in this article, the process of attempting to contact the proxy server and using default system credentials isn't used.
+- If users aren't on a network with a proxy when admins enable and configure this feature as recommended in this article, the process of attempting to contact the proxy server and using default system credentials isn't used.
 
 ## Next steps
 
