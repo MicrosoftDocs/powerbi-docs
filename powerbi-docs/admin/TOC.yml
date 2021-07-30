@@ -94,7 +94,7 @@
         href: service-admin-syndication-partner.md
     - name: "Power BI and datacenter regions"
       items:
-      - name: "Where is my data stored?"
+      - name: "Find where data is stored"
         href: service-admin-where-is-my-tenant-located.md
       - name: "Move between regions"
         href: service-admin-region-move.md
