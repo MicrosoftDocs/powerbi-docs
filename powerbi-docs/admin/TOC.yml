@@ -7,8 +7,6 @@
     items: 
     - name: "What is Power BI administration?"
       href: service-admin-administering-power-bi-in-your-organization.md
-    - name: "Where is my tenant located?"
-      href: service-admin-where-is-my-tenant-located.md
     - name: What is Power BI Premium?
       href: service-premium-what-is.md
   - name: Concepts
@@ -94,6 +92,12 @@
         href: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
       - name: "Add Power BI with a Microsoft 365 partner"
         href: service-admin-syndication-partner.md
+    - name: "Power BI and datacenter regions"
+      items:
+      - name: "Where is my data stored?"
+        href: service-admin-where-is-my-tenant-located.md
+      - name: "Move between regions"
+        href: service-admin-region-move.md
     - name: "Using the admin portal"
       href: service-admin-portal.md
     - name: "Add custom branding"

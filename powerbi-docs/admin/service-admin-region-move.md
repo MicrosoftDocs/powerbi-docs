@@ -20,11 +20,11 @@ This article describes how to request a move between regions. Be sure you're awa
 
 - The person who requests the data region move must be assigned the global administrator role.
 - We must receive written approval confirming your awareness and agreement of the effect of the tenant migration on your organization.
-- You must provide a point of contact for after business hours during the migration.
+- Provide a point of contact for after business hours during the migration.
 
 ## Prepare
 
-The migration process moves all tenant data to the new region. The GUID assigned to datasets, reports, dashboards, and other content doesn’t change. However, there are some limitations you should be aware of and preparation steps you need to take.
+The migration process moves all tenant data to the new region. The GUID assigned to datasets, reports, dashboards, and other content don’t change. However, there are some limitations you should be aware of and preparation steps you need to take.
 
 ### Awareness
 
@@ -34,11 +34,11 @@ The migration process moves all tenant data to the new region. The GUID assigned
 
 - Capacities and Premium workspaces can't be migrated.
 - After migration Excel workbooks that use the Analyze in Excel feature may fail to refresh. You may need to update the connection string or redownload the ODC connection for that dataset. Follow the steps in [Analyze in Excel](/collaborate-share/service-tutorial-analyze-in-excel.md) if necessary.
-- Power BI Goals data will be lost during the region move. This is a known issue that we are working to mitigate.
+- Power BI Goals data will be lost during the region move. We're working to fix this issue.
 - Push datasets might not be migrated. If they can't be migrated, you'll need to delete the datasets. Support will let you know if this step is needed.
-- All data gateways have to be reconfigured after migration.
+- Data gateways have to be reconfigured after migration.
 - Dataset and workspace storage modes shouldn't be changed one day before the migration. Changing the storage mode before the migration can leave the datasets unusable after the migration.
-- Some usage data collected prior to migration is unavailable after migration. Usage data in the sources listed below will be lost:
+- Some usage data collected before migration is unavailable after migration. Usage data in the sources listed below will be lost:
   - [Power BI Activity Log](service-admin-auditing.md)
   - View count in [Lineage view](collaborate-share/service-data-lineage.md)
   - [Data protection metrics report](service-security-data-protection-metrics-report.md)
@@ -46,15 +46,15 @@ The migration process moves all tenant data to the new region. The GUID assigned
 
 ### Preparation steps
 
-After the request for a region move is approved, our support team will work with you to verify that the following steps are performed to prepare for the migration:
+Our support team will work with you to verify that the following steps are done to prepare for the migration:
 
 - We can't migrate capacities and Premium workspaces, so you have to delete all capacities before  migration. After the region move, these resources can be recreated. If you move resources from a Premium workspace to a shared workspace, datasets larger than 1 GB can't be viewed until they're moved back to Premium capacity.
 
-- If there are gateways in both source and target regions that have the same name, the gateway should be deleted in the target region to avoid conflicts during migration.
+- Gateways that have the same name in both source and target regions should be deleted in the target region to avoid conflicts during migration.
 
-- Microsoft 365 Apps for enterprise licenses ([formerly named Office 365 ProPlus](/deployoffice/name-change)) should be removed from users before the migration since the capacity that supports this license type can't be migrated. For more information about this license type, see [Device-based licensing for Microsoft 365 Apps for enterprise](/deployoffice/device-based-licensing).
+- Microsoft 365 Apps for enterprise licenses ([formerly named Office 365 ProPlus](/deployoffice/name-change)) should be removed from users before the migration. The capacity that supports this license type can't be moved. For more information about this license type, see [Device-based licensing for Microsoft 365 Apps for enterprise](/deployoffice/device-based-licensing).
 
-- To keep user activity logs, follow the steps in [Track user activities in Power BI](service-admin-auditing.md) to get log data from either the Power BI activity log or the Unified audit log.
+- To keep user activity logs, follow the steps in [Track user activities in Power BI](service-admin-auditing.md). You can get log data from either the Power BI activity log or the Unified audit log.
 
 ## Request a region move
 
@@ -74,25 +74,25 @@ To find out the best way to contact support, read [Power BI support options](ser
 1. Select **Next** to continue to **Select your support plan**. Choose your support plan. Add a description. Under **Is the problem you're reporting related to a recent service change?**, choose N/A. Select a severity level, then select **Next**.
 1. Add your contact information, then **Submit**.
 
-Our support team will be in touch. The support team will verify that you are authorized to make this request, will confirm your awareness of the issues listed above, and will obtain written approval confirming that you want to move your tenant between regions.
+Our support team will be in touch. The support team makes sure you're authorized to make this request, confirms your awareness of the issues listed above, and obtains written approval to confirm you want to move your tenant between regions.
 
-Provide contact details for someone who can act as the point of contact for Support and is available after business hours.
+Provide contact details for someone who can act as the point of contact for Support. The contact has to be available after business hours.
 
-Support will collect required information, including your tenant object ID, the current data region, and the target data region. After details are collected, we will provide you with choices for the proposed migration time frame.
+Support will collect required information, including your tenant object ID, current data region, and target data region. After details are collected, we'll provide you with choices for the proposed migration time frame.
 
 ## During the region move
 
 - Don't do any manual or scheduled refreshes until after migration is complete.
-- Support will copy your data to the new region. During this time Power BI won't be available to users.
+- Support will copy your data to the new region. Power BI won't be available to users during the move.
 
 ## After the region move
 
-When migration is complete, you'll be able to access Power BI in about 20-30 minutes. Support will contact you to make sure that everything is working. 
+When migration is complete, you'll be able to access Power BI in about 20-30 minutes. Support will contact you to make sure everything is working.
 
-Perform the following steps to recreate the configuration of the original region:
+Do the following steps to recreate the configuration of the original region:
 
 1. Recreate capacities and move workspaces back to Premium.
 1. If push datasets were deleted, recreate them.
 1. Reconfigure your data gateways. Follow the steps in [Migrate, restore, or take over an on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-migrate).
 1. Excel workbooks that use the Analyze in Excel feature may fail to refresh. You may need to update the connection string or redownload the ODC connection for that dataset. Follow the steps in [Analyze in Excel](..collaborate-share/service-tutorial-analyze-in-excel.md) if necessary.
-1. Links to Power BI that are embedded in content might fail to connect when migration is complete. For example, an embedded link in SharePoint may result in a user error. To resolve this problem, you have to re-generate the embedded link in Power BI and then update the locations where they're used.
+1. Links to Power BI that are embedded in content might fail to connect when migration is complete. For example, an embedded link in SharePoint may result in a user error. To resolve this problem, you have to regenerate the embedded link in Power BI and then update the locations where they're used.
