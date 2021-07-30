@@ -75,7 +75,7 @@ Follow these steps to sign up:
 >
 >
  
-4. Complete the form to tell us about yourself. Be sure to choose the correct country or region. The country you select determines where your data is stored, as explained in [Find the default region for your organization](service-admin-where-is-my-tenant-located.md#Find-the-default-region-for-your-organization). The country or region doesn't have to match your physical location, but should match the location for the majority of your users.
+4. Complete the form to tell us about yourself. Be sure to choose the correct country or region. The country you select determines where your data is stored, as explained in [Find the default region for your organization](service-admin-where-is-my-tenant-located.md#find-the-default-region-for-your-organization). The country or region doesn't have to match your physical location, but should match the location for the majority of your users.
 
    ![Tell us about yourself](media/service-admin-org-subscription/tell-about-yourself.png)
 

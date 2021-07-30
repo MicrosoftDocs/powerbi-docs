@@ -1,88 +1,98 @@
 ---
-title: #Required; page title is displayed in search results. Include the brand.
-description: #Required; article description that is displayed in search results. 
-author: #Required; your GitHub user alias, with correct capitalization.
-ms.author: #Required; microsoft alias of author; optional team alias.
-ms.service: #Required; service per approved list. slug assigned by ACOM.
-ms.topic: how-to #Required; leave this attribute/value as-is.
-ms.date: #Required; mm/dd/yyyy format.
-ms.custom: template-how-to #Required; leave this attribute/value as-is.
+title: Move Power BI between regions
+description: If the default region for your organization's Power BI data isn't optimal, you may want to move to another region. You can't move regions by yourself. This article describes how to work with support to move between regions. 
+author: kfollis
+ms.author: kfollis
+ms.service: powerbi
+ms.subservice: powerbi-admin
+ms.topic: how-to 
+ms.date: 07/29/2021
+ms.custom: template-how-to; subject-moving-resources
 ---
 
-<!--
-Remove all the comments in this template before you sign-off or merge to the 
-main branch.
--->
+# Move between regions
 
-<!--
-This template provides the basic structure of a how-to article.
-See the [how-to guidance](contribute-how-to-write-howto.md) in the contributor guide.
+Your default data region is determined by the location selected during sign-up. However, this region may not be optimal if most of your users are located in a different geographic location. You might want to move to another region to reduce latency or to ensure data governance. You can’t move your organization’s tenant between regions by yourself. Self-service migration of Power BI resources stored in Azure isn’t supported. If you need to change your default data location from the current region to another region, you have to contact support to manage the migration for you.
 
-To provide feedback on this template contact 
-[the templates workgroup](mailto:templateswg@microsoft.com).
--->
-
-<!-- 1. H1
-Required. Start your H1 with a verb. Pick an H1 that clearly conveys the task the 
-user will complete.
--->
-
-# [H1 heading here]
-
-<!-- 2. Introductory paragraph 
-Required. Lead with a light intro that describes, in customer-friendly language, 
-what the customer will learn, or do, or accomplish. Answer the fundamental “why 
-would I want to do this?” question. Keep it short.
--->
-
-[Add your introductory paragraph]
-
-<!-- 3. Prerequisites 
-Optional. If you need prerequisites, make them your first H2 in a how-to guide. 
-Use clear and unambiguous language and use a list format.
--->
+This article describes how to request a move between regions. Be sure you're aware of what can’t be moved and steps you have to do before and after the region move. Moving between regions is considered a tenant migration. To determine your current data region, follow the steps in [Where is data for the Power BI service stored?](service-admin-where-is-my-tenant-located.md)
 
 ## Prerequisites
 
-- <!-- prerequisite 1 -->
-- <!-- prerequisite 2 -->
-- <!-- prerequisite n -->
-<!-- remove this section if prerequisites are not needed -->
+- The person who requests the data region move must be assigned the global administrator role.
+- We must receive written approval confirming your awareness and agreement of the effect of the tenant migration on your organization.
+- You must provide a point of contact for after business hours during the migration.
 
-<!-- 4. H2s 
-Required. A how-to article explains how to do a task. The bulk of each H2 should be 
-a procedure.
--->
+## Prepare
 
-## [Section 1 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+The migration process moves all tenant data to the new region. The GUID assigned to datasets, reports, dashboards, and other content doesn’t change. However, there are some limitations you should be aware of and preparation steps you need to take.
 
-## [Section 2 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+### Awareness
 
-## [Section n heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+- Migration requires about six hours of down time. During migration, users can't access Power BI and will see an error message similar to the one shown below. The actual down time depends on the volume of data to be migrated.
 
-<!-- 5. Next steps
-Required. Provide at least one next step and no more than three. Include some 
-context so the customer can determine why they would click the link.
--->
+  :::image type="content" source="media\service-admin-region-move\user-error-message.png" alt-text="Screen capture showing example error message shown to users during migration.":::
 
-## Next steps
-<!-- Add a context sentence for the following links -->
-- [Write how-to guides](contribute-how-to-write-howto.md)
-- [Links](links-how-to.md)
+- Capacities and Premium workspaces can't be migrated.
+- After migration Excel workbooks that use the Analyze in Excel feature may fail to refresh. You may need to update the connection string or redownload the ODC connection for that dataset. Follow the steps in [Analyze in Excel](/collaborate-share/service-tutorial-analyze-in-excel.md) if necessary.
+- Power BI Goals data will be lost during the region move. This is a known issue that we are working to mitigate.
+- Push datasets might not be migrated. If they can't be migrated, you'll need to delete the datasets. Support will let you know if this step is needed.
+- All data gateways have to be reconfigured after migration.
+- Dataset and workspace storage modes shouldn't be changed one day before the migration. Changing the storage mode before the migration can leave the datasets unusable after the migration.
+- Some usage data collected prior to migration is unavailable after migration. Usage data in the sources listed below will be lost:
+  - [Power BI Activity Log](service-admin-auditing.md)
+  - View count in [Lineage view](collaborate-share/service-data-lineage.md)
+  - [Data protection metrics report](service-security-data-protection-metrics-report.md)
+  - [Usage metrics(preview)](collaborate-share/service-modern-usage-metrics.md)
 
-<!--
-Remove all the comments in this template before you sign-off or merge to the 
-main branch.
--->
+### Preparation steps
+
+After the request for a region move is approved, our support team will work with you to verify that the following steps are performed to prepare for the migration:
+
+- We can't migrate capacities and Premium workspaces, so you have to delete all capacities before  migration. After the region move, these resources can be recreated. If you move resources from a Premium workspace to a shared workspace, datasets larger than 1 GB can't be viewed until they're moved back to Premium capacity.
+
+- If there are gateways in both source and target regions that have the same name, the gateway should be deleted in the target region to avoid conflicts during migration.
+
+- Microsoft 365 Apps for enterprise licenses ([formerly named Office 365 ProPlus](/deployoffice/name-change)) should be removed from users before the migration since the capacity that supports this license type can't be migrated. For more information about this license type, see [Device-based licensing for Microsoft 365 Apps for enterprise](/deployoffice/device-based-licensing).
+
+- To keep user activity logs, follow the steps in [Track user activities in Power BI](service-admin-auditing.md) to get log data from either the Power BI activity log or the Unified audit log.
+
+## Request a region move
+
+To find out the best way to contact support, read [Power BI support options](service-support-options.md). Most admins can use the **Help + support** experience in the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/support) to submit a service request. Follow the steps below to get started.
+
+1. Go to [Power Platform Admin Center Help + support](https://admin.powerplatform.microsoft.com/support) and sign in using admin credentials.
+1. Select **New support request**, then select the following options to request a region move:
+    1. Product: Power BI Pro
+    1. Problem type: Administration
+    1. Category: Tenant Management
+    1. Tell us what you need help with: Move to a different region
+    
+    Select **See solutions** to move to the next screen.
+
+     :::image type="content" source="media\service-admin-region-move\ppac-new-support-request.png" alt-text="Screen capture showing field entries for a new support request for a region move in Power Platform Admin Center.":::
+
+1. Select **Next** to continue to **Select your support plan**. Choose your support plan. Add a description. Under **Is the problem you're reporting related to a recent service change?**, choose N/A. Select a severity level, then select **Next**.
+1. Add your contact information, then **Submit**.
+
+Our support team will be in touch. The support team will verify that you are authorized to make this request, will confirm your awareness of the issues listed above, and will obtain written approval confirming that you want to move your tenant between regions.
+
+Provide contact details for someone who can act as the point of contact for Support and is available after business hours.
+
+Support will collect required information, including your tenant object ID, the current data region, and the target data region. After details are collected, we will provide you with choices for the proposed migration time frame.
+
+## During the region move
+
+- Don't do any manual or scheduled refreshes until after migration is complete.
+- Support will copy your data to the new region. During this time Power BI won't be available to users.
+
+## After the region move
+
+When migration is complete, you'll be able to access Power BI in about 20-30 minutes. Support will contact you to make sure that everything is working. 
+
+Perform the following steps to recreate the configuration of the original region:
+
+1. Recreate capacities and move workspaces back to Premium.
+1. If push datasets were deleted, recreate them.
+1. Reconfigure your data gateways. Follow the steps in [Migrate, restore, or take over an on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-migrate).
+1. Excel workbooks that use the Analyze in Excel feature may fail to refresh. You may need to update the connection string or redownload the ODC connection for that dataset. Follow the steps in [Analyze in Excel](..collaborate-share/service-tutorial-analyze-in-excel.md) if necessary.
+1. Links to Power BI that are embedded in content might fail to connect when migration is complete. For example, an embedded link in SharePoint may result in a user error. To resolve this problem, you have to re-generate the embedded link in Power BI and then update the locations where they're used.
