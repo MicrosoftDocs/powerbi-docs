@@ -48,7 +48,7 @@ To familiarize yourself with this particular built-in sample and its scenario, s
 ## What was imported?
 With the built-in samples, when you select **Connect**, Power BI gets a copy of that built-in sample and stores it for you in the cloud. Because the person who created the built-in sample included a dataset, a report, and a dashboard, that's what you get when you select **Connect**. 
 
-1. When you select **Connect**, Power BI creates the new dashboard, report, and dataset in your your workspace. 
+1. When you select **Connect**, Power BI creates the new dashboard, report, and dataset in your workspace. 
    
    ![Retail Analysis Sample entry](media/sample-tutorial-connect-to-the-samples/retail-entry.png)
 2. On the **Content** tab, you see the dashboard and the report named *Retail Analysis Sample*.
@@ -84,7 +84,7 @@ Now explore the dashboard, dataset, and report on your own. There are many diffe
    
 1. One way of exploring the dataset is by creating your own visualizations and reports from scratch.
    
-   Select **More options (...)** > **Create report**
+   Select **More options (...)** > **Create report**.
    
    ![Screenshot showing the Create report menu item.](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) to open the dataset in report editing mode.
    
@@ -126,9 +126,9 @@ When you download a sample .pbix file, you've downloaded not just a report but a
 
 1. Switch to [Model view](../transform-model/desktop-relationship-view.md) by selecting the following icon: ![Model view icon](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png).
  
-    ![Relationship view in Power BI Desktop](media/sample-tutorial-connect-to-the-samples/power-bi-relationships.png)
+    ![Model view in Power BI Desktop](media/sample-tutorial-connect-to-the-samples/power-bi-relationships.png)
 
-    Relationship view shows all of the tables, columns, and relationships in your model. From here you can view, change, and create relationships.
+    Model view shows all of the tables, columns, and relationships in your model. From here you can view, change, and create relationships.
 
 ## Next steps
 This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get data** for a new copy of this sample.
