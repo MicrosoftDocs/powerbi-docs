@@ -14,7 +14,7 @@ ms.custom: template-how-to; subject-moving-resources
 
 Your default data region is determined by the location selected during sign-up. However, this region may not be optimal if most of your users are located in a different geographic location. You might want to move to another region to reduce latency or to ensure data governance. You can’t move your organization’s tenant between regions by yourself. Self-service migration of Power BI resources stored in Azure isn’t supported. If you need to change your default data location from the current region to another region, you have to contact support to manage the migration for you.
 
-This article describes how to request a move between regions. Be sure you're aware of what can’t be moved and steps you have to do before and after the region move. Moving between regions is considered a tenant migration. To determine your current data region, follow the steps in [Where is data for the Power BI service stored?](service-admin-where-is-my-tenant-located.md)
+This article describes how to request a move between regions. Be sure you're aware of what can’t be moved and steps you have to do before and after the region move. Moving between regions is considered a tenant migration. To determine your current data region, follow the steps in [Find where data is stored](service-admin-where-is-my-tenant-located.md)
 
 ## Prerequisites
 
