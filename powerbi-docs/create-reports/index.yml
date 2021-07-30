@@ -30,16 +30,14 @@ landingContent:
             url: desktop-ribbon.md
           - text: "Accessibility overview"
             url: desktop-accessibility-overview.md
-          - text: "Get sample data"
-            url: sample-datasets.md
       - linkListType: tutorial
         links:
           - text: From Excel to report in Power BI Desktop
             url: desktop-excel-stunning-report.md
-          - text: "Import & open sample packs"
-            url: sample-tutorial-connect-to-the-samples.md
       - linkListType: sample
         links:
+          - text: "Get sample data"
+            url: sample-datasets.md
           - text: "COVID-19 sample: US data"
             url: sample-covid-19-us.md
 
