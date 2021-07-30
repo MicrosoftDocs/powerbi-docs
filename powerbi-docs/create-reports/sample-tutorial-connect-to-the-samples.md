@@ -82,11 +82,9 @@ Now explore the dashboard, dataset, and report on your own. There are many diffe
    
    ![Retail Analysis Sample dataset entry](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
    
-1. One way of exploring the dataset is by creating your own visualizations and reports from scratch.
+1. One way of exploring the dataset is by creating your own visualizations and reports from scratch. Select **More options (...)** > **Create report**.
    
-   Select **More options (...)** > **Create report**.
-   
-   ![Screenshot showing the Create report menu item.](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) to open the dataset in report editing mode.
+   ![Screenshot showing the Create report menu item.](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png)
    
    The dataset opens in report editing mode.
    
@@ -108,7 +106,7 @@ Unlike editing a report in the Power BI service, in Power BI Desktop you can als
 
 1. The file opens in Report view. Notice the four tabs at the bottom of the report editor; these tabs represent the four pages in this report. For this example, the **New Stores** page is currently selected. 
 
-    ![New Stores tab highlighted](media/sample-tutorial-connect-to-the-samples/power-bi-sample-tabs.png).
+    ![New Stores tab highlighted](media/sample-tutorial-connect-to-the-samples/power-bi-sample-tabs.png)
 
 1. For a deep dive into the report editor, see [Take a tour of the report editor](service-the-report-editor-take-a-tour.md).
 
