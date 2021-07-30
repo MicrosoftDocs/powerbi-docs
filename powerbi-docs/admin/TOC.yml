@@ -7,7 +7,7 @@
     items: 
     - name: "What is Power BI administration?"
       href: service-admin-administering-power-bi-in-your-organization.md
-    - name: What is Power BI Premium?
+    - name: "What is Power BI Premium?"
       href: service-premium-what-is.md
   - name: Concepts
     expanded: true
