@@ -61,10 +61,27 @@ landingContent:
             url: ../visuals/power-bi-visualization-export-data.md
           - text: Power Automate visual for Power BI (preview)
             url: power-bi-automate-visual.md
-          - text: "Smart narratives"
-            url: ../visuals/power-bi-visualization-smart-narrative.md
           - text: Slicers
             url: ../visuals/power-bi-visualization-slicers.md
+
+  # Card (optional)
+  - title: Artificial intelligence in Power BI
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: "Anomaly detection"
+            url: ../visuals/power-bi-visualization-anomaly-detection.md
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: "Generate data insights automatically"
+            url: service-insights.md
+          - text: "Decomposition tree visuals"
+            url: ../visuals/power-bi-visualization-decomposition-tree.md
+          - text: "Smart narrative visuals"
+            url: ../visuals/power-bi-visualization-smart-narrative.md
+          - text: "Key influencers visuals"
+            url: ../visuals/power-bi-visualization-influencers.md
 
   # Card (optional)
   - title: Design reports
@@ -75,7 +92,6 @@ landingContent:
             url: desktop-report-themes.md
           - text: "Text boxes and shapes"
             url: power-bi-reports-add-text-and-shapes.md
-
       - linkListType: how-to-guide
         links:
           - text: "Conditional table formatting"
@@ -120,6 +136,22 @@ landingContent:
             url: service-goals-check-in.md
 
   # Card (optional)
+  - title: Natural language Q&A
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Intro to Power BI Q&A
+            url: ../natural-language/q-and-a-intro.md
+      - linkListType: tutorial
+        links:
+          - text: Use Q&A to explore data and create visuals
+            url: power-bi-tutorial-q-and-a.md
+      - linkListType: how-to-guide
+        links:
+          - text: Create a Q&A visual
+            url: ../visuals/power-bi-visualization-q-and-a.md
+
+  # Card (optional)
   - title: Power BI paginated reports
     linkLists:
       - linkListType: overview
@@ -132,18 +164,10 @@ landingContent:
         links:
           - text: "Online course: Paginated reports in a day"
             url: ../learning-catalog/paginated-reports-online-course.md
-      - linkListType: concept
-        links:
-          - text: "Expression examples"
-            url: ../paginated-reports/report-builder-expression-examples.md
-          - text: "Tables, matrixes, and lists"
-            url: ../paginated-reports/report-builder-tables-matrices-lists.md
       - linkListType: how-to-guide
         links:
           - text: "Create a report on a shared dataset"
             url: ../paginated-reports/report-builder-shared-datasets.md
-          - text: "Create parameters"
-            url: ../paginated-reports/paginated-reports-parameters.md
 
   # Card (optional)
   - title: Dashboards
