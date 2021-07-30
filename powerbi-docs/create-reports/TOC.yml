@@ -83,6 +83,8 @@
       items: 
       - name: Report Builder in Power BI
         href: ../paginated-reports/report-builder-power-bi.md
+      - name: Paginated reports FAQ
+        href: ../paginated-reports/paginated-reports-faq.yml
       - name: Report Builder change log
         href: ../paginated-reports/paginated-reports-change-log.md
       - name: Sample Power BI paginated reports
@@ -111,8 +113,8 @@
         href: ../paginated-reports/paginated-reports-pagination.md
       - name: Previewing reports
         href: ../paginated-reports/report-builder-previewing-reports.md
-      - name: Paginated reports FAQ
-        href: ../paginated-reports/paginated-reports-faq.yml
+      - name: Default system credentials for web proxy
+        href: ../paginated-reports/report-builder-web-proxy-authentication.md
     - name: "Deployment pipelines"  
       items:
       - name: "Introduction to deployment pipelines"
