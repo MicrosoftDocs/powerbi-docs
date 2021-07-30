@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 04/15/2021
+ms.date: 07/29/2021
 LocalizationGroup: Connect to data
 ---
 # Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)
@@ -144,6 +144,8 @@ There are also a few **limitations** you need to keep in mind:
 - Automatic page refresh (APR) is only supported for some scenarios, depending on the data source type. See the article [Automatic page refresh in Power BI](../create-reports/desktop-automatic-page-refresh.md) for more information.
 
 - Take over of a dataset which is using the **DirectQuery to other datasets** feature isn't currently supported.
+
+- [As with any DirectQuery data source](desktop-directquery-about.md#reporting-limitations), hierarchies defined in an Azure Analysis Services model or Power BI dataset will not be shown when connecting to the model or dataset in DirectQuery mode using Excel. 
 
 ### Tenant considerations
 

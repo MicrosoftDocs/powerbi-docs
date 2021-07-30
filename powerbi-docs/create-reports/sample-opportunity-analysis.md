@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 04/02/2021
+ms.date: 07/29/2021
 LocalizationGroup: Samples
 ---
 # Opportunity Analysis sample for Power BI: Take a tour
@@ -42,7 +42,7 @@ Before you can use the sample, you must first [download it in the service](#get-
 
     If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace.
 
-2. In the bottom-left corner, select **Get Data**.
+2. In the bottom-left corner, select **Get data**.
 
    :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
 
@@ -129,6 +129,6 @@ Note the following details:
 * In general, the factored revenue numbers fluctuate based on sales stage, number of opportunities, and deal size. Add filters for these factors by using the **Filter** pane on the right to discover further insights.
 
 ## Next steps: Connect to your data
-This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get Data** for a new copy of this sample.
+This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get data** for a new copy of this sample.
 
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into sample data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](../fundamentals/service-get-started.md).
