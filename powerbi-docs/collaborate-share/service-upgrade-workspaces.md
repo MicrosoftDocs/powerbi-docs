@@ -192,7 +192,7 @@ When you switch back to a classic workspace, you aren't restoring an exact copy 
 
 ## Manage migration to the new workspaces for your tenant 
 
-Organizations that desire to proactively migrate to the new workspace experience can do so through the Power BI admin portal. The Power BI admin can select one or more workspaces to upgrade. Power BI admin-initiated workspace upgrades share the same considerations and limitations for workspace admin-initiated workspace upgrades. [Learn more](../admin/service-admin-portal.md#workspaces) 
+Organizations that desire to proactively migrate to the new workspace experience can do so through the Power BI admin portal. The Power BI admin can select one or more workspaces to upgrade or use **Upgrade all** to queue upgrade of all workspaces. Power BI admin-initiated workspace upgrades share the same considerations and limitations for workspace admin-initiated workspace upgrades. [Learn more](../admin/service-admin-portal.md#workspaces) 
 
 We recommend that organizations wanting to manage such a process, take the following steps to ensure clear communication with impacted workspace admins.
 
