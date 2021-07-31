@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/22/2021
+ms.date: 07/30/2021
 LocalizationGroup: Reports
 ---
 # Let users personalize visuals in a report
@@ -66,7 +66,7 @@ You can double-click the text to rename the perspective.
 
 ![Rename the perspective](media/power-bi-personalize-visuals/power-bi-personalize-perspective-04.png)
 
-Next, add fields to the perspective by opening the **Tables** folder in Tabular Editor, the right-click on the fields you want to show in the perspective.
+Next, add fields to the perspective by opening the **Tables** folder in Tabular Editor. Then right-click on the fields you want to show in the perspective.
 
 ![Add fields to a perspective](media/power-bi-personalize-visuals/power-bi-personalize-perspective-05.png)
 
@@ -94,7 +94,7 @@ You can enable the feature either in Power BI Desktop or the Power BI service. Y
 
 ### In Power BI Desktop
 
-To enable the feature in Power BI Desktop, go to **File** > **Options and Settings** > **Options** > **Current file** > **Report settings**. Make sure **Personalize visuals** is turned on.
+To enable the feature in Power BI Desktop, go to **File** > **Options and settings** > **Options** > **Current file** > **Report settings**. Make sure **Personalize visuals** is turned on.
 
 :::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-desktop.png" alt-text="Enable personalization in a report":::
 

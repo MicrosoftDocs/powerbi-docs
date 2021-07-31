@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/12/2021
+ms.date: 07/30/2021
 LocalizationGroup: Reports
 ---
 # Add a filter to a report in Power BI
@@ -45,7 +45,7 @@ By the way, this article uses the Retail Analysis sample, if you'd like to insta
 
 ### Filter with a field that's not in the visual
 
-1. In the Power BI service, select **More options (...)** > **Edit** to open your report in Editing view.
+1. In the Power BI service, select **Edit** to open your report in Editing view.
    
    ![Edit report button.](media/power-bi-report-add-filter/power-bi-edit-view.png)
 
@@ -77,7 +77,7 @@ You can also add a page-level filter to filter an entire page.
 
 1. In the Power BI service, open the Retail Analysis report, then go to the **District Monthly Sales** page. 
 
-2. Select **...** > **Edit report** to open your report in Editing view.
+2. Select **Edit** to open your report in Editing view.
    
    ![Edit report button](media/power-bi-report-add-filter/power-bi-edit-view.png)
 
@@ -95,7 +95,7 @@ You can also add a page-level filter to filter an entire page.
 
 ## Add a report-level filter to filter an entire report
 
-1. Select **Edit report** to open the report in Editing view.
+1. Select **Edit** to open the report in Editing view.
    
    ![Edit report button](media/power-bi-report-add-filter/power-bi-edit-view.png)
 
