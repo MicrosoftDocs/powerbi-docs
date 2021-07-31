@@ -605,6 +605,14 @@ Control which users in the organization can download and install template apps *
 
 ![Install template apps not listed in AppSource setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-non-app-source.png)
 
+## Share data with your Microsoft 365 services
+
+### Allow your Microsoft 365 services to process or store Power BI data which may be outside of your Power BI tenant's geographic area.
+
+asdfad
+
+![Screenshot of admin switch allowing Microsoft 365 services to process and store Power BI content remotely.](media/service-admin-portal/allow-m365-process-store-data-remotely-admin-portal-switch.png)
+
 ## Capacity settings
 
 ### Power BI Premium
