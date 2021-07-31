@@ -607,7 +607,7 @@ Control which users in the organization can download and install template apps *
 
 ## Share data with your Microsoft 365 services
 
-### Allow your Microsoft 365 services to process or store Power BI data which may be outside of your Power BI tenant's geographic area.
+### Allow your Microsoft 365 services to process or store Power BI data which may be outside of your Power BI tenant's geographic area
 
 asdfad
 
