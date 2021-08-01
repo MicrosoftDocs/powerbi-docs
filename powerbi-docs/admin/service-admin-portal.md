@@ -609,7 +609,19 @@ Control which users in the organization can download and install template apps *
 
 ### Allow your Microsoft 365 services to process or store Power BI data which may be outside of your Power BI tenant's geographic area
 
-asdfad
+This switch controls whether Power BI content gets listed in the Most Recently Viewed list on the home page of Office.com. It is disabled by default. When enabled, it allows Power BI content to be listed.
+
+Office.com and Power BI may have different data residency requirements. To ensure that features such as the Most Recently Viewed list work, Office.com and Microsoft 365 services may process and/or store Power BI data outside the geographic location of the Power BI tenant where the data is located.
+
+By enabling the switch, the Power BI administrator is explicitly opting in to this feature, and acknowledges that to enable these cross-service capabilities, certain information about their Power BI content may potentially flow outside the geographic region where it is located.
+
+The Power BI content affected includes reports, dashboards, apps, workbooks, paginated reports, and workspaces. The information required by the Most Recently Viewed functionality includes:
+
+* The display name of the content.
+* When the content was last accessed.
+* The type of content that was accessed (report, dashboard etc.).
+
+To enable the switch, go to **Admin portal > Tenant settings > Share data with your Microsoft 365 services > Allow your Microsoft 365 services to process or store Power BI data which may be outside of your Power BI tenant's geographic area**
 
 ![Screenshot of admin switch allowing Microsoft 365 services to process and store Power BI content remotely.](media/service-admin-portal/allow-m365-process-store-data-remotely-admin-portal-switch.png)
 
