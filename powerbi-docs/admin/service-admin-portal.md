@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 06/30/2021
+ms.date: 08/02/2021
 ms.custom: ''
 LocalizationGroup: Administration
 ---
@@ -604,6 +604,30 @@ Users in the organization can download and install template apps **only** from [
 Control which users in the organization can download and install template apps **not listed on [AppSource](https://appsource.microsoft.com)**.
 
 ![Install template apps not listed in AppSource setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-non-app-source.png)
+
+## Share data with your Microsoft 365 services
+
+### Allow your Microsoft 365 services to process or store Power BI data outside of your Power BI tenant's geographic area
+
+![Screenshot of admin switch allowing Microsoft 365 services to process and store Power BI content remotely.](media/service-admin-portal/allow-m365-process-store-data-remotely-admin-portal-switch.png)
+
+This switch controls whether Power BI content gets listed in the Most Recently Viewed list on the home page of Office.com. Because of the data residency considerations described below, it is disabled by default. When enabled, it allows Power BI content to be listed.
+
+Office.com and Power BI may have different data residency requirements. To ensure that features such as the Most Recently Viewed list work, Office.com and Microsoft 365 services may need to process and/or store Power BI data outside the geographic location of the Power BI tenant the data is located in.
+
+By enabling the switch, you, as a Power BI administrator, are explicitly opting in to this feature, and acknowledging that to enable these cross-service capabilities, certain information about your Power BI content may potentially flow outside the geographic region where it is located.
+
+The Power BI content affected includes reports, dashboards, apps, workbooks, paginated reports, and workspaces. The information required by the Most Recently Viewed functionality includes:
+
+* The display name of the content.
+* When the content was last accessed.
+* The type of content that was accessed (report, dashboard etc.).
+
+To enable the switch, go to **Admin portal > Tenant settings > Share data with your Microsoft 365 services.** Expand the switch and set the toggle switch to **Enabled**.
+
+References:
+* [Where is my Power BI tenant located?](service-admin-where-is-my-tenant-located.md)
+* [Microsoft Privacy - Where is Your Data Located](https://www.microsoft.com/trust-center/privacy/data-location)
 
 ## Capacity settings
 

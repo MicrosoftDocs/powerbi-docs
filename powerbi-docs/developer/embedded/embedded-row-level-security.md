@@ -249,7 +249,7 @@ When deciding on filtering your data in a report, you can use **row-level securi
 
 ## Token-based Identity with Azure SQL Database
 
-The **token-based identity** allows you to specify the effective identity for an embed token using **Azure Active Directory (AAD)** access token for an **Azure SQL Database**.
+The **token-based identity** allows you to specify the effective identity for an embed token using an [Azure Active Directory (AAD) access token](/azure/databricks/dev-tools/api/latest/aad/app-aad-token) for an **Azure SQL Database**.
 
 Customers that hold their data in **Azure SQL Database** can now enjoy a new capability to manage users and their access to data in Azure SQL when integrating with **Power BI Embedded**.
 
