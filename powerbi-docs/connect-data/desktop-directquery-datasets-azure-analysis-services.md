@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 07/29/2021
+ms.date: 08/02/2021
 LocalizationGroup: Connect to data
 ---
 # Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)
@@ -21,7 +21,7 @@ Since the functionality is currently in preview, you must first enable it. To do
 
 ## Using DirectQuery for live connections
 
-Using DirectQuery for Power BI datasets and Azure Analysis Services requires  your report to have a local model. You can start from a live connection and add or upgrade to a local model, or start with a DirectQuery connection or imported data, which  automatically creates a local model in your report.
+Using DirectQuery for Power BI datasets and Azure Analysis Services requires your report to have a local model. You can start from a live connection and add or upgrade to a local model, or start with a DirectQuery connection or imported data, which automatically creates a local model in your report.
 
 To see which connections are being used in your model, check the status bar in the bottom right corner of Power BI Desktop. If you're only connected to an Azure Analysis Services source, you see a message like the following image:
 
@@ -43,7 +43,7 @@ When you're connected live to an Analysis Services source, there is no local mod
 
 ## Chaining
 
-Datasets, and the datasets and models they are based, on form a *chain*. This process, called **chaining** lets you publish a report and dataset based on other Power BI datasets, a feature that previously was not possible.
+Datasets, and the datasets and models they are based, on form a *chain*. This process, called **chaining**, lets you publish a report and dataset based on other Power BI datasets, a feature that previously was not possible.
 
 For example, imagine your colleague publishes a Power BI dataset called *Sales and Budget* that's based on an Azure Analysis Services model called *Sales*, and combines it with an Excel sheet called *Budget*.
 
@@ -51,7 +51,7 @@ When you publish a new report (and dataset) called *Sales and Budget Europe* tha
 
 ![The process of chaining datasets](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-04.png)
 
-The chain in the previous image is of length three, which is the maximum length during this preview period. Extending beyond a chain length of three is  not supported and results in errors.
+The chain in the previous image is of length three, which is the maximum length during this preview period. Extending beyond a chain length of three is not supported and results in errors.
 
 ## Security warning
 
