@@ -7,14 +7,14 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 06/23/2021
+ms.date: 07/21/2021
 ---
 
 # Capabilities and properties of Power BI visuals 
 
-Every visual has a `capabilities.json` file that describes the visual to the host. The `capabilities.json` file tells the host what kind of data the visual accepts, what customizable attributes to put on the properties pane, and other information needed to create the visual. All properties in the `capabilities.json` file are *optional*.
+Every visual has a *capabilities.json file* that describes the visual to the host. The *capabilities.json* file tells the host what kind of data the visual accepts, what customizable attributes to put on the properties pane, and other information needed to create the visual. All properties in the *capabilities.json* file are **optional**.
 
-The `capabilities.json` file has the following format:
+The *capabilities.json* file has the following format:
 
 ```json
 {
@@ -24,32 +24,36 @@ The `capabilities.json` file has the following format:
     "supportsHighlight": true|false,
     "advancedEditModeSupport": 0|1|2,
     "sorting": { ... }
+    ...
 }
-
 ```
 
-You can see the latest schema for the `capablities.json` file [here](https://github.com/microsoft/powerbi-visuals-api/blob/master/schema.capabilities.json#L4-L65)
+When you create a new visual, the default *capabilities.json* file includes the following root objects:
 
-The root objects of a visual's capabilities file are:  
-
-* [dataRoles](#define-the-data-fields-that-your-visual-expects-dataroles)
+* [dataRoles](#dataroles-define-the-data-fields-that-your-visual-expects)
 * [dataViewMappings](#dataviewmappings-how-you-want-the-data-mapped)
 * [objects](#objects-define-property-pane-options)
+
+The above objects are the ones needed for data-binding. They can be edited as necessary for your visual.
+
+The following additional root objects can be added as needed:
+
 * [tooltips](add-tooltips.md#add-tooltips-support-to-the-report-page)
-* [supportsHighlight](#supportshighlight-how-to-handle-partial-highlighting)
-* [sorting](#sorting-data-sorting-options-for-your-visual)
+* [supportsHighlight](highlight.md)
+* [sorting](sort-options.md)
 * [drilldown](drill-down-support.md)
 * suppressDefaultTitle
 * [supportsKeyboardFocus](supportskeyboardfocus-feature.md)
-* [supportsHighlight](highlight.md#highlight-data-points-with-categorical-data-view-mapping)
-* supportsSynchronizingFilterState
-* [advancedEditModeSupport](#advancededitmodesupport-how-to-handle-advanced-edit-mode)
+* [supportsSynchronizingFilterState](enable-sync-slicers.md)
+* [advancedEditModeSupport](advanced-edit-mode.md)
 * [supportsLandingPage](landing-page.md#creating-a-landing-page)
 * [supportsEmptyDataView](landing-page.md#creating-a-landing-page)
 * [supportsMultiVisualSelection](supportsmultivisualselection-feature.md)
 * subtotals
 
-## Define the data fields that your visual expects: dataroles
+You can find all these objects and their parameters in the [*capabilities.json* schema](https://github.com/microsoft/powerbi-visuals-api/blob/master/schema.capabilities.json#L4-L65)
+
+## dataroles: define the data fields that your visual expects
 
 To define fields that can be bound to data, you use `dataRoles`. `dataRoles` is an array of `DataViewRole` objects, which defines all the required properties. The `dataRoles` objects are the **fields** that appear on the [Properties pane](../../visuals/service-getting-started-with-color-formatting-and-axis-properties.md).
 
@@ -151,7 +155,7 @@ For more information, see [Understand data view mapping in Power BI visuals](dat
 
 ## objects: define property pane options
 
-Objects describe customizable properties that are associated with the visual. These are the objects that appear in the [Format pane](../../create-reports/service-the-report-editor-take-a-tour.md#format-your-visuals). Each object can have multiple properties, and each property has a type that's associated with it.
+Objects describe customizable properties that are associated with the visual. The objects defined in this section are the objects that appear in the [Format pane](../../create-reports/service-the-report-editor-take-a-tour.md#format-your-visuals). Each object can have multiple properties, and each property has a type that's associated with it.
 
 ```json
 "objects": {
@@ -163,38 +167,6 @@ Objects describe customizable properties that are associated with the visual. Th
 ```
 
 For more information, see [Objects and properties of Power BI visuals](objects-properties.md).
-
-## supportsHighlight: how to handle partial highlighting
-
-By default, the `supportsHighlight` value is set to `false`. This means that when something on a page is selected your values are automatically filtered accordingly. This automatic filtering updates your visual to display only the selected value. If you want to display the full data but highlight only the selected items, you need to set `supportsHighlight` to `true` in your *capabilities.json* file.
-
-```json
-"supportsHighlight": true
-```
-
-For more information, see [Highlight data points in Power BI visuals](highlight.md).
-
-## advancedEditModeSupport: how to handle advanced edit mode
-
-By default, a visual doesn't support advanced edit mode:
-
-```json
-"advancedEditModeSupport": 0
-```
-
- Changing the advanced edit mode support can enable certain advanced UI controls. The `advancedEditModeSupport` object can be set to one of the following values:
-
-* 0 - NotSupported
-* 1 - SupportedNoAction
-* 2 - SupportedInFocus
-
-For more information, see [Advanced edit mode in Power BI visuals](advanced-edit-mode.md).
-
-## sorting: data sorting options for your visual
-
-A visual can define its sorting behavior through its capabilities. By default, a visual doesn't support modifying its sorting order, unless stated otherwise in the *capabilities.json* file.
-
-For more information, see [Sorting options for Power BI visuals](sort-options.md).
 
 ## Next steps
 

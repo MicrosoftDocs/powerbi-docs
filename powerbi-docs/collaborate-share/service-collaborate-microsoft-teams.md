@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 06/28/2021
+ms.date: 07/17/2021
 ---
 
 # Collaborate in Microsoft Teams with Power BI

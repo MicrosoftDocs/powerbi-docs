@@ -20,7 +20,7 @@ There are two elements to getting Azure Log Analytics working for Power BI: conf
 
 ## Pre-requisites
 
-Before you can configure Log Analytics integration from Power BI, you need to [create a Log Analytics Workspace](https://docs.microsoft.com/azure/azure-monitor/logs/quick-create-workspace) in the Azure portal. You must also give permission in Azure for the Power BI service to write logs. The exact requirements are:
+Before you can configure Log Analytics integration from Power BI, you need to [create a Log Analytics Workspace](/azure/azure-monitor/logs/quick-create-workspace) in the Azure portal. You must also give permission in Azure for the Power BI service to write logs. The exact requirements are:
 
 * Register the 'microsoft.insights' resource provider in the Azure subscription where you will collect Power BI log data
 * The user who will set up Log Analytics integration in Power BI must be in the Owner role for the Log Analytics Workspace. See FAQ for workarounds if Owner cannot be given.

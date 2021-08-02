@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 07/16/2021
+ms.date: 07/26/2021
 LocalizationGroup: Data from files
 ---
 
@@ -458,6 +458,21 @@ Once your report is ready and you have added all the content you want to share, 
 * If dataflows or the enhanced calculation engine is not enabled in a tenant, users will not be able to create or run streaming dataflows.
 * Workspaces connected to a storage account are not supported.
 * Each streaming dataflow can provide up to 1 MB / second of throughput.
+
+### Availability
+
+The streaming dataflows preview is not available in the following regions:
+
+* Central India
+* Germany North
+* Norway East
+* Norway West
+* UAE Central
+* South Africa North
+* South Africa West
+* Switzerland North
+* Switzerland West
+* Brazil Southeast
 
 ### Licensing
 

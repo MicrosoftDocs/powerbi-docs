@@ -5,7 +5,7 @@ author: mihart
 ms.author: mihart
 ms.reviewer: juluczni
 ms.service: powerbi
-ms.subservice: pbi-visuals
+ms.subservice: powerbi-ai
 ms.topic: how-to
 ms.date: 01/10/2020
 LocalizationGroup: Visualizations
