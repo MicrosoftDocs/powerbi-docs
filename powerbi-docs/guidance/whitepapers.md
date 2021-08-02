@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 83/02/2021
+ms.date: 08/02/2021
 ---
 # White papers for Power BI
 
