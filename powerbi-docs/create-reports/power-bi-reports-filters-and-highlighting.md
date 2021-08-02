@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/12/2021
+ms.date: 08/02/2021
 LocalizationGroup: Reports
 ---
 # Filters and highlighting in Power BI reports
@@ -76,7 +76,7 @@ Each visual has filters for all the fields in the visual. When you create a repo
 
 In Reading view, you explore the data by modifying the existing filters. You're only filtering your view of the report. When you exit the report, the changes you make are saved with your view of the report, even if you open the report in a mobile app. To undo your filtering and return to the defaults set by the report author, select **Reset to default** from the top menu bar.
 
-:::image type="content" source="../consumer/media/end-user-report-filter/power-bi-reset-icon.png" alt-text="Reset to default icon.":::
+:::image type="content" source="../media/power-bi-reset-icon.png" alt-text="Reset to default icon.":::
 
 Learn more about Reading view: [Take a tour of the report Filters pane](../consumer/end-user-report-filter.md).
 
@@ -104,7 +104,7 @@ You can explore the relationships between the visuals in your report without usi
 
 To remove the highlighting, select the value again, or select any empty space in the same visual. For more examples, see the [Cross-filtering and cross-highlighting](../consumer/end-user-interactions.md#cross-filtering-and-cross-highlighting) section of "How visuals cross-filter each other in a Power BI report."
 
-![Animation showing cross-filtering and cross-highlighting.](media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif)
+:::image type="content" source="media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif" alt-text="Animation showing cross-filtering and cross-highlighting.":::
 
 ## Next steps
 
