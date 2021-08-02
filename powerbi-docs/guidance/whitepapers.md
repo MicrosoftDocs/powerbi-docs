@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 03/10/2021
+ms.date: 08/02/2021
 ---
 # White papers for Power BI
 
@@ -17,7 +17,6 @@ White papers allow you to explore Power BI topics at a deeper level. Here you ca
 | --- | --- | --- |
 | [Planning a Power BI Enterprise Deployment](https://aka.ms/PBIEnterpriseDeploymentWP) |This updated technical white paper outlines considerations and best practices for a well-performing and secure organizational Power BI deployment. | June 2020 |
 | [Power BI and Dataflows](https://go.microsoft.com/fwlink/?linkid=2034388&clcid=0x409)| This white paper describes dataflows in technical detail, and describes the capabilities and initiatives behind dataflow features and functionality. | November 2018 |
-| [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Describes Power BI Premium, both as it exists when launched and also how it will evolve. | October 2017 |
 | [Power BI Premium Planning and Deployment](whitepaper-powerbi-premium-deployment.md)| The content of this white paper has been incorporated into general guidance. See the link for guidance and best practices for planning and deploying Premium capacity for well-defined workloads.| March 2019 |
 | [Capacity planning guidance for Power BI Report Server](../report-server/capacity-planning.md) |This paper aims to offer guidance on capacity planning for Power BI Report Server by sharing results of numerous load test executions of various workloads against a report server. | March 2018 |
 | [Security](../admin/service-admin-power-bi-security.md) |Provides a detailed explanation of security within Power BI. | March 2019 |
