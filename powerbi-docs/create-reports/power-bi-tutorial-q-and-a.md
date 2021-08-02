@@ -62,7 +62,7 @@ The answer to your question is displayed as an interactive visualization and upd
 
 ## Part 2: Use Q&A in a report in Power BI service or Power BI Desktop
 
-Use Q&A to explore your dataset and to add visualizations to the report and to dashboards. A report is based on a single dataset and may be completely blank or contain pages full of visualizations. But just because a report is blank, doesn't mean there isn't any data for you to explore -- the dataset is linked to the report and is waiting for you to explore and create visualizations.  To see which dataset is being used to create a report, open the report in Power BI service Reading view and select **View related** from the menubar.
+Use Q&A to explore your dataset and to add visualizations to the report and to dashboards. A report is based on a single dataset and may be completely blank or contain pages full of visualizations. But just because a report is blank, doesn't mean there isn't any data for you to explore -- the dataset is linked to the report and is waiting for you to explore and create visualizations.  To see which dataset is being used to create a report, open the report in Power BI service Reading view and select **...** > **See related content** from the menu bar.
 
 ![View related datasets](media/power-bi-tutorial-q-and-a/power-bi-view-related.png)
 
@@ -70,11 +70,11 @@ To use Q&A in reports, you must have edit permissions for the report and underly
 
 1. In Power BI service, open a report in Editing view and select **Ask a question** from the menu bar. In Power BI Desktop Report view, select **Q&A** from the **Insert** tab.
 
-    **Power BI Desktop**    
-    ![Select Ask A Question in Power BI Desktop](media/power-bi-tutorial-q-and-a/power-bi-desktop-question.png)
-
     **Service**    
     ![Select Ask a question in the Power BI service](media/power-bi-tutorial-q-and-a/power-bi-service.png)
+
+    **Power BI Desktop**    
+    ![Select Ask A Question in Power BI Desktop](media/power-bi-tutorial-q-and-a/power-bi-desktop-question.png)
 
 2. A Q&A question box displays on your report canvas. In the example below, the question box displays on top of another visualization. This is fine, but it might be better to add a blank page to the report before asking a question.
 
@@ -97,7 +97,7 @@ To use Q&A in reports, you must have edit permissions for the report and underly
    If you've created the visualization in Power BI service, you can even [pin it to a dashboard](service-dashboard-pin-tile-from-q-and-a.md).
 
 ## Tell Q&A which visualization to use
-With Q&A, not only can you ask your data to speak for itself, you can tell Power BI how to display the answer. Just add "as a <visualization type>" to the end of your question.  For example, "show inventory volume by plant as a map" and "show total inventory as a card".  Try it for yourself.
+With Q&A, not only can you ask your data to speak for itself, you can tell Power BI how to display the answer. Just add "as a \<visualization type>" to the end of your question.  For example, "show inventory volume by plant as a map" and "show total inventory as a card".  Try it for yourself.
 
 ## Considerations and troubleshooting
 - If you've connected to a dataset using a live connection or gateway, Q&A needs to be [enabled for that dataset](service-q-and-a-direct-query.md).

@@ -85,7 +85,7 @@ When you open a report in Power BI Desktop, you see that **Filters** is just one
 
 ![Filters pane in Editing view](media/power-bi-reports-filters-and-highlighting/power-bi-add-filter-editing-view.png)
 
-We see this page of the report has three page-level filters and one report-level filter. By selecting the column chart, we see it also has three visual-level filters.
+We see this page of the report has four page-level filters. By selecting the column chart, we see it also has three visual-level filters.
 
 #### Work with filters in Editing view
 
