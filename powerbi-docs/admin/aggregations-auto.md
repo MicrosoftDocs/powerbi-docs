@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 07/19/2021
+ms.date: 08/02/2021
 LocalizationGroup: Admin
 ---
 # Automatic aggregations (Preview)
@@ -36,6 +36,8 @@ During preview, automatic aggregations are supported for the following data sour
 
 - Azure SQL Database
 - Azure Synapse Dedicated SQL pool
+- Google BigQuery
+- Snowflake
 
 ### Supported modes
 
