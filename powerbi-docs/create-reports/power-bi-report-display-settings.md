@@ -17,9 +17,7 @@ We understand it's critical to keep your report layout pixel perfect. Sometimes,
 
 The default display view is **Fit to page** and the default display size is **16:9**. If you want to lock in a different aspect ratio, or want to fit your report in a different way, there are two tools to help you: ***Page view*** settings and ***Page size*** settings.
 
-<!-- "This video is unavailable."
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5tg-OXzxe2g" frameborder="0" allowfullscreen></iframe>
--->
 
 ## Where to find Page view settings in the Power BI service and Power BI Desktop
 Page view settings are available in both the Power BI service and Power BI Desktop, but the interface is a little different. The following sections explain where you can find View settings in each Power BI tool.

@@ -36,6 +36,48 @@ Not only does this feature allow for new exploration capabilities. It also inclu
 - Reset all their changes for a visual
 - Clear out their recent changes
 
+## Enable personalization in a report
+
+You can enable the feature either in Power BI Desktop or the Power BI service. You can also enable it in embedded reports.
+
+### In Power BI Desktop
+
+To enable the feature in Power BI Desktop, go to **File** > **Options and settings** > **Options** > **Current file** > **Report settings**. Make sure **Personalize visuals** is turned on.
+
+:::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-desktop.png" alt-text="Enable personalization in a report":::
+
+### In the Power BI service
+
+To enable the feature in the Power BI service instead, go to **Settings** for your report.
+
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-report-service-settings-personalize-visual.png" alt-text="Report settings in the Power BI service":::
+
+Turn on **Personalize visuals** > **Save**.
+
+:::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-service.png" alt-text="Turn on Personalize visuals in the service":::
+
+## Turn the feature on or off at a page or visual level
+
+When you enable Personalize visuals for a given report, by default all visuals in that report can be personalized. If you don't want all the visuals to be personalized, you can turn the setting on or off per page or per visual.
+
+### Per page
+
+Select the page tab > select **Format** in the **Visualizations** pane.
+
+:::image type="content" source="media/power-bi-personalize-visuals/personalize-page-level-setting.png" alt-text="Select Personalize Visual for a page.":::
+ 
+Slide **Personalize visual** >  **On** or **Off**.
+
+### Per visual
+
+Select the visual > select **Format** in the **Visualizations** pane > expand **Visual header**.
+
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-header-personalize.png" alt-text="Select Visual header":::
+ 
+Slide **Personalize visual** >  **On** or **Off**.
+
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-personalize-on-off.png" alt-text="Personalize visual slider on or off":::
+
 ## Use Perspectives for a more focused view
 
 For Personalize visuals, you can use **Perspectives** to choose a subset of a model that provides a more focused view. Choosing a subset can be helpful when working with a large data model, allowing you to focus on a manageable subset of fields, and not overwhelm report readers with the full collection of fields in that large model. 
@@ -87,49 +129,6 @@ The selection for *Report-reader perspective* is set to *Default fields* initial
 Once you set the Perspective for the report page, the Personalize visuals experience for that page is filtered to the selected Perspective. Selecting **Apply to all pages** lets you apply your Perspective setting to all existing pages in your report.
 
 ![Select Apply to all pages for the perpective to apply to the entire report](media/power-bi-personalize-visuals/power-bi-personalize-perspective-09.png)
-
-## Enable personalization in a report
-
-You can enable the feature either in Power BI Desktop or the Power BI service. You can also enable it in embedded reports.
-
-### In Power BI Desktop
-
-To enable the feature in Power BI Desktop, go to **File** > **Options and settings** > **Options** > **Current file** > **Report settings**. Make sure **Personalize visuals** is turned on.
-
-:::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-desktop.png" alt-text="Enable personalization in a report":::
-
-### In the Power BI service
-
-To enable the feature in the Power BI service instead, go to **Settings** for your report.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-report-service-settings-personalize-visual.png" alt-text="Report settings in the Power BI service":::
-
-Turn on **Personalize visuals** > **Save**.
-
-:::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-service.png" alt-text="Turn on Personalize visuals in the service":::
-
-## Turn the feature on or off at a page or visual level
-
-When you enable Personalize visuals for a given report, by default all visuals in that report can be personalized. If you don't want all the visuals to be personalized, you can turn the setting on or off per page or per visual.
-
-### Per page
-
-Select the page tab > select **Format** in the **Visualizations** pane.
-
-:::image type="content" source="media/power-bi-personalize-visuals/personalize-page-level-setting.png" alt-text="Select Personalize Visual for a page.":::
- 
-Slide **Personalize visual** >  **On** or **Off**.
-
-### Per visual
-
-Select the visual > select **Format** in the **Visualizations** pane > expand **Visual header**.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-header-personalize.png" alt-text="Select Visual header":::
- 
-Slide **Personalize visual** >  **On** or **Off**.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-personalize-on-off.png" alt-text="Personalize visual slider on or off":::
-
 
 ## Limitations
 

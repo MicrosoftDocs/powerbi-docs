@@ -25,7 +25,7 @@ You interact with reports in two different views: Reading view and Editing view.
 
 Because filters *persist*, when you navigate away from the report Power BI retains the filter, slicer, and other data view changes that you've made. So you can pick up where you left off when you return to the report. If you don't want your filter changes to persist, select **Reset to default** from the top menu bar.
 
-:::image type="content" source="../consumer/media/end-user-report-filter/power-bi-reset-icon.png" alt-text="Reset to default icon.":::
+:::image type="content" source="../media/power-bi-reset-icon.png" alt-text="Reset to default icon.":::
 
 Keep in mind that as the report creator, whatever filters you save with the report become the *default filter state* for all your report readers. When they select **Reset to default**, that's what they return to.
 
