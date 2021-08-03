@@ -6,7 +6,7 @@ ms.author: kfollis
 ms.reviewer: asaxton
 ms.custom: video-3t9W7Xvpzo0
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 01/29/2020
 ---

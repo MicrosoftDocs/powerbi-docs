@@ -5,7 +5,7 @@ author: peter-myers
 ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 04/02/2021
 ---
@@ -47,7 +47,7 @@ For more information about architectural considerations, see **Section 3** of th
 - Is a new workspace needed for this new solution?
 - Will separate workspaces be needed to accommodate development, test, and production?
 - Will separate workspaces be used for data and reports, or will a single workspace be sufficient? Separate workspaces have numerous advantages, especially for securing datasets. When necessary, they can be managed separately from those users who publish reports.
-- What are the security requirements for the workspace? It influences planning for [workspace roles](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces). If an app will be used by content consumers, [permissions for the app](../collaborate-share/service-create-distribute-apps.md#publish-your-app) are managed separately from the workspace. Distinct permissions for app viewers allow additional flexibility in meeting security requirements for read-only consumers of reports or dashboards.
+- What are the security requirements for the workspace? It influences planning for [workspace roles](../collaborate-share/service-roles-new-workspaces.md). If an app will be used by content consumers, [permissions for the app](../collaborate-share/service-create-distribute-apps.md#publish-your-app) are managed separately from the workspace. Distinct permissions for app viewers allow additional flexibility in meeting security requirements for read-only consumers of reports or dashboards.
 - Can existing groups be used for securing the new content? Both Azure Active Directory and Microsoft 365 groups are supported. When aligned with existing processes, using groups makes permissions management easier than assignments to individual users.
 - Are there any security considerations related to external guest users? You may need to work with your Azure Active Directory administrator and your Power BI administrator to configure [guest user access](../admin/service-admin-azure-ad-b2b.md).
 

@@ -5,7 +5,7 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: pbi-dataflows
+ms.subservice: powerbi-ai
 ms.topic: how-to
 ms.date: 04/02/2021
 LocalizationGroup: Data from files

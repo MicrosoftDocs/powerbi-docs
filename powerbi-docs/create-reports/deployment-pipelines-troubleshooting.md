@@ -5,7 +5,7 @@ author: KesemSharabi
 ms.author: kesharab
 ms.topic: troubleshooting
 ms.service: powerbi
-ms.subservice: pbi-deployment
+ms.subservice: pbi-deployment-pipeline
 ms.date: 06/22/2021
 ---
 
@@ -196,6 +196,10 @@ You can also review our PowerShell script, [AddUserToWorkspacePipeline](https://
 To use this scrip, you'll need to provide a *workspace name* and and a *user principal name (UPN)*. The script will find the pipeline that the workspace is assigned to, and add admin permissions to the user you specified.
 
 ## Paginated reports
+
+### Why can't I see a paginated report?
+
+To view a paginated report in the pipeline, you need to have a [paginated reports workload](./../developer/embedded/embed-paginated-reports-organization.md#enable-paginated-reports-workload) enabled on your capacity.
 
 ### Why can't I deploy a paginated report?
 

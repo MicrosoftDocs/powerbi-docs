@@ -3,7 +3,8 @@ title: Consumers learning catalog
 description: Find all the training options for Power BI for consumers who use reports and dashboards, from most basic to most advanced.
 author: margoc
 ms.author: margoc
-ms.prod: powerbi
+ms.service: powerbi
+ms.subservice: powerbi-resource
 ms.topic: article
 ms.date: 03/25/2020
 ---

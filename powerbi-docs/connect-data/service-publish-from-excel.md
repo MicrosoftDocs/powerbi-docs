@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/06/2020
+ms.date: 07/29/2021
 LocalizationGroup: Data from files
 ---
 # Publish to Power BI from Microsoft Excel
@@ -21,6 +21,7 @@ When publishing a workbook to Power BI, there are few things to consider:
 * You cannot publish an empty workbook, or a workbook that doesn’t have any Power BI supported content.
 * You cannot publish encrypted or password protected workbooks, or workbooks with Information Protection Management.
 * Publishing to Power BI requires modern authentication be enabled (default). If disabled, the Publish option is not available from the File menu.
+* Publishing to Power BI from Excel Desktop is not supported for sovereign clouds.
 
 ## Publish your Excel workbook
 To publish your Excel workbook, in Excel, select **File** > **Publish** and select either **Upload** or **Export**.

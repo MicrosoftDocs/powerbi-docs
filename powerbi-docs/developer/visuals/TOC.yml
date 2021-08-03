@@ -5,7 +5,9 @@
   - name: Overview
     expanded: true
     items: 
-    - name: "Visuals in Power BI"
+    - name: "Develop your own Power BI visual"
+      href: develop-power-bi-visuals.md
+    - name: "Where to find Power BI visuals"
       href: power-bi-custom-visuals.md
   - name: Tutorials
     expanded: true
@@ -14,12 +16,12 @@
       href: develop-circle-card.md  
     - name: "Tutorial: Adding formatting options"
       href: custom-visual-develop-tutorial-format-options.md
+    - name: "Tutorial: Build a bar chart"
+      href: create-bar-chart.md
     - name: "Tutorial: Create a Power BI visual using React"
       href: create-react-visual.md
     - name: "Tutorial: Create an R-powered visual"
       href: create-r-based-power-bi-desktop.md
-    - name: "Build a bar chart"
-      href: create-bar-chart.md
     - name: "Add unit tests for visual project"
       href: unit-tests-introduction.md
     - name: "Build a funnel plot from R script to R visual"
@@ -58,6 +60,8 @@
       href: office-store.md
     - name: "Set up your environment for developing a Power BI visual"
       href: environment-setup.md
+    - name: "Package a Power BI visual"
+      href: package-visual.md
     - name: "Import a custom visual"
       href: import-visual.md
     - name: "Create a dialog box"

@@ -17,13 +17,13 @@ Discoverability is a feature that makes it possible for users to find endorsed d
 
 Endorsement is a way of telling users that a dataset is a trusted, quality source of data that they can safely use. However, in Power BI, endorsed datasets, like all other datasets, are only visible to those who have access to them. This makes it difficult for people without access to find these trusted sources of data. Not only do they not have access to an endorsed dataset, they don't know it exists, so they can't even request access.
 
-To overcome this problem, authorized users who have an [Admin or Member role](service-new-workspaces.md#roles-in-the-new-workspaces) in the workspace where a endorsed dataset resides can mark that dataset as discoverable. After the dataset has been marked as discoverable, it will be listed in the [datasets hub](../connect-data/service-datasets-hub.md), even for users who don't have access to it. They can then request [build permission](../connect-data/service-datasets-build-permissions.md) on the dataset by whatever [access request mechanism](../connect-data/service-datasets-build-permissions.md#configure-how-users-request-build-permission) has been provided.
+To overcome this problem, authorized users who have an [Admin or Member role](service-roles-new-workspaces.md) in the workspace where a endorsed dataset resides can mark that dataset as discoverable. After the dataset has been marked as discoverable, it will be listed in the [datasets hub](../connect-data/service-datasets-hub.md), even for users who don't have access to it. They can then request [build permission](../connect-data/service-datasets-build-permissions.md) on the dataset by whatever [access request mechanism](../connect-data/service-datasets-build-permissions.md#configure-how-users-request-build-permission) has been provided.
 
 To be operable in an organization, dataset discovery must be set up by a Power BI administrator. See [How to set up dataset discoverability in an organization](#how-to-set-up-dataset-discovery-in-an-organization), below.
 
 ## How to mark a dataset as discoverable
 
-If you have an [Admin or Member role](service-new-workspaces.md#roles-in-the-new-workspaces) in the workspace where an endorsed dataset resides, you can mark that dataset as discoverable.
+If you have an [Admin or Member role](service-roles-new-workspaces.md) in the workspace where an endorsed dataset resides, you can mark that dataset as discoverable.
 
 1. Go to dataset settings and open the **Endorsement and discovery** section.
 
