@@ -186,7 +186,7 @@ For more information, see [Shape Maps in Power BI](desktop-shape-map.md).
 
 ## Matrix
 
-[![Screenshot of matrix visual.](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-matrix-expanded.png#lightbox)
+[![Screenshot of matrix visual.](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix-expanded.png#lightbox)
 
 The matrix visual is a type of table visual (see [Tables](#tables) in this article) that supports a stepped layout. A table supports two dimensions, but a matrix makes it easier to display data meaningfully across multiple dimensions. Often, report designers include matrixes in reports and dashboards to allow users to select one or more element (rows, columns, cells) in the matrix to cross-highlight other visuals on a report page.
 
