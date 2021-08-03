@@ -248,7 +248,7 @@
         href: desktop-upload-desktop-files.md
     - name: Visualizations
       items: 
-      - name: "Visualization types in Q&A"
+      - name: "Visualization types in Power BI"
         href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
       - name: "Add visuals to a report (part 1)"
         href: ../visuals/power-bi-report-add-visualizations-i.md

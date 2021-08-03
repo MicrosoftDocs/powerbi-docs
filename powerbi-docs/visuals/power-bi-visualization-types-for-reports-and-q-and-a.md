@@ -70,7 +70,7 @@ For more information, see [Combo charts in Power BI](power-bi-visualization-comb
 
 ## Decomposition tree
 
-![decomposition tree](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-decomposition.png)
+[![Decomposition tree.](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-decomposition.png)](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-decomposition-expanded.png#lightbox)
 
 The decomposition tree visual lets you visualize data across multiple dimensions. It automatically aggregates data and enables drilling down into your dimensions in any order. It is also an artificial intelligence (AI) visualization, so you can ask it to find the next dimension to drill down into based on certain criteria. This makes it a valuable tool for ad hoc exploration and conducting root cause analysis.
 
@@ -186,9 +186,9 @@ For more information, see [Shape Maps in Power BI](desktop-shape-map.md).
 
 ## Matrix
 
-![screenshot of matrix visual](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)
+[![Screenshot of matrix visual.](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-matrix-expanded.png#lightbox)
 
-The matrix visual is a type of table visual (see "Table" below) that supports a stepped layout. A table supports two dimensions, but a matrix makes it easier to display data meaningfully across multiple dimensions. Often, report designers include matrixes in reports and dashboards to allow users to select one or more element (rows, columns, cells) in the matrix to cross-highlight other visuals on a report page.
+The matrix visual is a type of table visual (see [Tables](#tables) in this article) that supports a stepped layout. A table supports two dimensions, but a matrix makes it easier to display data meaningfully across multiple dimensions. Often, report designers include matrixes in reports and dashboards to allow users to select one or more element (rows, columns, cells) in the matrix to cross-highlight other visuals on a report page.
 
 >[!TIP]
 > The matrix automatically aggregates the data and enables drilling down into the data.
@@ -281,6 +281,8 @@ For more information, see [Slicers in Power BI](power-bi-visualization-slicers.m
 ![smart narrative](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-smart-narrative.png)
 
 The Smart narrative adds text to reports to point out trends, key takeaways, and add explanations and context. The text helps users to understand the data and identify the important findings quickly.
+
+For more information, see [Create smart narrative summaries](power-bi-visualization-smart-narrative.md).
 
 ## Standalone images
 
