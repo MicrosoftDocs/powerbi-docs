@@ -5,7 +5,7 @@ author: otarb
 ms.author: otarb
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: pbi-data-sources
+ms.subservice: powerbi-ai
 ms.topic: how-to
 ms.date: 05/14/2021
 LocalizationGroup: Connect to data

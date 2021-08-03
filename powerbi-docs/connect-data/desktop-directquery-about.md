@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 05/05/2021
+ms.date: 07/29/2021
 LocalizationGroup: Connect to data
 ---
 # About using DirectQuery in Power BI
@@ -158,6 +158,7 @@ Almost all reporting capabilities are supported for DirectQuery models. As such,
 
 * **Quick Insights isn't supported:** Power BI Quick Insights searches different subsets of your dataset while applying a set of sophisticated algorithms to discover potentially interesting insights. Given the need for very high performance queries, this capability isn't available on datasets using DirectQuery.
 * **Using Explore in Excel will likely result in poorer performance:** You can explore your data by using the Explore in Excel capability on a dataset. This approach allows Pivot Tables and Pivot Charts to be created in Excel. While this capability is supported on datasets using DirectQuery, the performance is generally slower than creating visuals in Power BI, and therefore if the use of Excel is important for your scenarios, this fact should be accounted for in your decision to use DirectQuery.
+* **Hierarchies are not shown in Excel:** When connecting using DirectQuery from Excel to an Azure Analysis Services model or Power BI dataset, for example using [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), any hierarchies defined in the model or dataset are not shown.
 * **Maximum length for text columns:** The maximum length of the data in a text column for datasets using DirectQuery is 32,764 characters. Reporting on longer texts than that will result in an error.
 
 ### Security

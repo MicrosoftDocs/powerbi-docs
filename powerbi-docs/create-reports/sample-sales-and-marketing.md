@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 04/02/2021
+ms.date: 07/29/2021
 LocalizationGroup: Samples
 ---
 # Sales and Marketing sample for Power BI: Take a tour
@@ -34,7 +34,7 @@ Before you can use the sample, you must first download the [dashboard, report, a
 
    If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace.
 
-2. In the bottom-left corner, select **Get Data**.
+2. In the bottom-left corner, select **Get data**.
    
    :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
 
@@ -76,13 +76,13 @@ By using Q&A, you can discover additional details in the data.
 
    ![Q&A question: Total units by segment for VanArsdel](media/sample-sales-and-marketing/sales2.png)
 3. Our share in the **Moderation** and **Convenience** categories is high; these segments are the ones where we compete.
-4. Return to the dashboard by selecting the **Sales and Marketing Sample** in the top nav pane.
+4. Return to the dashboard by selecting the **Sales and Marketing Sample** from the left navigation bar.
 
 ### What does total unit market share look like for category (versus region)?
 1. Notice the **Total Units YTD by Manufacturer, Region** tile. What is the total unit market share by category?
 
    ![Total Units YTD by Manufacturer, Region tile](media/sample-sales-and-marketing/sales3.png)
-2. Select the question box at the top of the dashboard and type the question, *total units by manufacturer and category for 2014 as a treemap*. Notice how the visualization updates as you type the question.
+2. Select the question field at the top of the dashboard and type the question, *total units by manufacturer and category for 2014 as a treemap*. Notice how the visualization updates as you type the question.
 
    ![Q&A question: Total units by manufacturer and category](media/sample-sales-and-marketing/sales12.png)
 3. To compare the findings, pin the chart to your dashboard. Notice this interesting fact: In 2014, VanArsdel sold only products in the **Urban** category.
@@ -123,17 +123,6 @@ Page one of the report focuses on VanArsdel's market share.
 
 We're still looking to find out why our market share dipped so low in June. Next, let's check the **Sentiment Analysis** page of the report.
 
-### Sentiment Analysis page
-Page three of the report focuses on consumer sentiment.
-
-![Sentiment Analysis page](media/sample-sales-and-marketing/sales6.png)
-
-Tweets, Facebook, blogs, and articles all contribute to consumer sentiment, which is shown in the two line charts on left side of the page. The **VanArsdel - Sentiment by Month** chart in the top-left corner shows that sentiment for our products was mostly neutral up until February. Then, a large drop started in February and bottomed out in June. What happened to cause this drop in sentiment? 
-
-Let's look at external sources. In February, several articles and blog posts rated VanArsdel's customer service as the worst in the industry. This bad press had a direct correlation to customer sentiment and sales. VanArsdel worked hard to improve customer service, and customers and the industry took note. In July, positive sentiment started to rise and then reached an all-time high in the 60s. This uptick in sentiment is reflected in the **Total Units by Month** charts on pages one and two of the report. Perhaps this partially explains our market share dips for June?
-
-Sentiment gap might be another area to explore. Which districts have the highest sentiment gap, how can management capitalize on it, and how can they replicate it in other districts?
-
 ### YTD Category Trend Analysis page
 Page two of the report focuses on the year-to-date category trend.
 
@@ -145,6 +134,17 @@ Notice the following details:
 * The treemap shows VanArsdel in green. In the East region, customers prefer our competition, but in the Central region we're doing okay. Our share in the East region is our lowest.
 * Geography has an impact on units sold. The East region is the dominant region for most manufacturers and VanArsdel has a strong presence in the Central region as well.
 * On the **Total Units YTD Var % by Month and Manufacturer** chart in the bottom right, notice that we have positive variance, which is a good sign. We're doing better than last year, but so is our competitor, Aliqui.
+
+### Sentiment Analysis page
+Page three of the report focuses on consumer sentiment.
+
+![Sentiment Analysis page](media/sample-sales-and-marketing/sales6.png)
+
+Tweets, Facebook, blogs, and articles all contribute to consumer sentiment, which is shown in the two line charts on left side of the page. The **VanArsdel - Sentiment by Month** chart in the top-left corner shows that sentiment for our products was mostly neutral up until February. Then, a large drop started in February and bottomed out in June. What happened to cause this drop in sentiment? 
+
+Let's look at external sources. In February, several articles and blog posts rated VanArsdel's customer service as the worst in the industry. This bad press had a direct correlation to customer sentiment and sales. VanArsdel worked hard to improve customer service, and customers and the industry took note. In July, positive sentiment started to rise and then reached an all-time high in the 60s. This uptick in sentiment is reflected in the **Total Units by Month** charts on pages one and two of the report. Perhaps this partially explains our market share dips for June?
+
+Sentiment gap might be another area to explore. Which districts have the highest sentiment gap, how can management capitalize on it, and how can they replicate it in other districts?
 
 ### Growth Opportunities page
 Page four of the report focuses on competitive product analysis.
@@ -159,6 +159,6 @@ Notice the following details:
 By filtering the visualizations by VanArsdel, by segment, by month, and by region, we can discover growth opportunities for VanArsdel.
 
 ## Next steps: Connect to your data
-This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get Data** for a new copy of this sample.
+This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get data** for a new copy of this sample.
 
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into human resources data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](../fundamentals/service-get-started.md).

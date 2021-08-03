@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 06/29/2021
+ms.date: 07/30/2021
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,15 @@ ms.date: 06/29/2021
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## July 2021 QFE 1
+
+*Version: 2.95.983.0, Released: July 29th, 2021*
+
+Bug fixes/improvements:
+- Fix for script visuals: now they can be enabled.
+- Fix for SAP BW reports: now tables are not duplicated if click refresh.
+- Fix for Enhanced-Tooltips: now tooltips stick long enough for users to interact with the drill buttons in the tooltip.
 
 ## June 2021 QFE 1
 
