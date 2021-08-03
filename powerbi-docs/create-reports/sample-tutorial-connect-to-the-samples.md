@@ -84,11 +84,11 @@ Now explore the dashboard, dataset, and report on your own. There are many diffe
 
     This tile was created with Power BI Q&A, a natural-language feature where you can ask questions about your data. So when you select it, Q&A opens again.
 
-     :::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-q-n-a-this-years-sales.png" alt-text="The tile opens in Q&A with "this year's sales".":::
+     :::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-q-n-a-this-years-sales.png" alt-text="The tile opens in Q&A with this year's sales.":::
 
 1. In the top bar, next to **this year's sales**, start typing "by store". Q&A creates a bar chart of values for each store.
 
-    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-q-n-a-this-years-sales-store.png" alt-text="Type "by store" in the Q&A bar.":::
+    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-q-n-a-this-years-sales-store.png" alt-text="Type by store in the Q&A bar.":::
 
 1. In the upper-right corner, select **Pin visual**. 
 1. Pin your new visual to your existing dashboard, **Retail Analysis Sample**.
