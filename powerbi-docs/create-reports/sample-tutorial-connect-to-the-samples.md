@@ -1,31 +1,37 @@
 ---
-title: Explore the Retail Analysis sample
+title: Tutorial: Explore the Retail Analysis sample
 description: Learn to install and explore the Retail Analysis sample in the Power BI service and in Power BI Desktop.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: amac
+ms.reviewer: 
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: conceptual
-ms.date: 07/29/2021
+ms.topic: tutorial
+ms.date: 08/02/2021
 LocalizationGroup: Samples
 ---
-# Explore the Retail Analysis sample
+# Tutorial: Explore the Retail Analysis sample
 
-This tutorial shows you how to: 
+The Retail Analysis sample is one of several that you can either download in the Power BI service or open in Power BI Desktop. In a *built-in sample*, the report is bundled with a dashboard and dataset, and built into the Power BI service. The *.pbix file* that you can view in Power BI Desktop contains a report and dataset. This tutorial shows you how to: 
 
-- Import the Retail Analysis sample, add it to the Power BI service, and open the contents. A *built-in sample* is one in which the dataset is bundled with a dashboard and report, and built into the Power BI service. 
-- Open the Retail Analysis sample .pbix file in Power BI Desktop.
+> [!div class="checklist"]
+> * Sign up for a Power BI license, if you don't have one.
+> * Import the Retail Analysis sample
+> * add it to the Power BI service
+> * Explore the sample in the service
+> * Open the Retail Analysis sample .pbix file in Power BI Desktop.
 
-If you'd like more background information, see [Sample datasets for Power BI](sample-datasets.md). In that article you'll learn all about the samples: how to get them, where to save them, how to use them, and some of the stories each sample can tell. 
 
-## Prerequisites
-The samples are available for the Power BI service and Power BI Desktop. We're using the Retail analysis sample, if you want to follow along.
+If you'd like more background information, see [Sample datasets for Power BI](sample-datasets.md). In that article you learn all about the samples: how to get them, where to save them, how to use them, and some of the stories each sample can tell. 
 
-The *Retail Analysis* built-in sample used in this tutorial consists of a dashboard, report, and dataset.
 To familiarize yourself with this particular built-in sample and its scenario, see
  [Retail Analysis sample for Power BI: Take a tour](sample-retail-analysis.md) before you begin.
+
+## Prerequisites
+
+- To download a sample in the Power BI service, you can sign up for a [free or trial license](../fundamentals/service-self-service-signup-purchase-for-power-bi.md).
+- To open a Power BI .pbix file, you need to [get Power BI Desktop](../fundamentals/desktop-get-the-desktop.md). It's a free download.
 
 ## Import the sample in the Power BI service
 
@@ -37,22 +43,23 @@ To familiarize yourself with this particular built-in sample and its scenario, s
 
    :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
 
-   If you don't see **Get Data**, expand the nav pane by selecting the following icon at the top of the pane: ![hamburger icon](media/sample-tutorial-connect-to-the-samples/expand-nav.png).
+   If you don't see **Get Data**, expand the nav pane by selecting the following icon at the top of the pane: ![Expand the nav pane icon.](media/sample-tutorial-connect-to-the-samples/expand-nav.png).
 
-5. On the **Get Data** page that appears, select **Samples**.
-   
-6. Select **Retail Analysis Sample**, and then choose **Connect**.   
-   
+1. On the **Get Data** page that appears, select **Samples**.
+
+1. Select **Retail Analysis Sample** > **Connect**.
+
    ![Connect button](media/sample-tutorial-connect-to-the-samples/pbi_retailanalysissampleconnect.png)
 
 ## What was imported?
-With the built-in samples, when you select **Connect**, Power BI gets a copy of that built-in sample and stores it for you in the cloud. Because the person who created the built-in sample included a dataset, a report, and a dashboard, that's what you get when you select **Connect**. 
 
-1. When you select **Connect**, Power BI creates the new dashboard, report, and dataset in your workspace. 
-   
+With the built-in samples, when you select **Connect**, Power BI gets a copy of that built-in sample and stores it for you in the cloud.
+
+1. Power BI creates the new dashboard, report, and dataset in your workspace. 
+
    ![Retail Analysis Sample entry](media/sample-tutorial-connect-to-the-samples/retail-entry.png)
-2. On the **Content** tab, you see the dashboard and the report named *Retail Analysis Sample*.
-   
+2. On the **Content** tab, you see the dashboard and the report, both named *Retail Analysis Sample*.
+
    ![Screenshot showing the Retail Analysis Sample Content tab with dashboard and report entries.](media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png)
    
 3. On the **Datasets + dataflows** tab, you see the dataset named *Retail Analysis Sample*.
@@ -60,12 +67,23 @@ With the built-in samples, when you select **Connect**, Power BI gets a copy of 
    ![Screenshot showing the Retail Analysis Sample Datasets + dataflows tab with the dataset entry.](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
    
 ## Explore your new content
+
 Now explore the dashboard, dataset, and report on your own. There are many different ways to navigate to your dashboards, reports, and datasets. One of these ways is described in the following procedure.  
 
-1. From your workspace, select the **Retail Analysis Sample** dashboard to open it.       
+1. From your workspace, select the **Retail Analysis Sample** dashboard to open it.
 
-   The dashboard opens, which has a variety of visualization tiles.   
+   The dashboard opens, with a variety of visualization tiles.
  
+1. Select the **This Year's Sales, New & Existing Stores** tile, of **$22 M**.
+
+    Power BI opens Q&A, a natural-language feature where you can ask questions about your data. 
+
+1. In the top bar, next to **this year's sales**, type "by store".
+
+    Q&A creates a bar chart of values for each store.
+1. In the upper-right corner, select **Pin visual**. 
+1. Pin your new visual to your existing dashboard, **Retail Analysis Sample**.
+1. Select **Exit Q&A**. Power BI added your new tile at the end of the dashboard. You can resize it and drag it anywhere you want on the dashboard. You see how the other tiles move to make way for it.
 1. Select one of the tiles in the dashboard to open the underlying report. In this example, we'll select the area chart, **This Year's Sales, Last Year's Sales by Fiscal Month**.  
 
    ![Retail Analysis Sample dashboard with visual highlighted](media/sample-tutorial-connect-to-the-samples/power-bi-dashboards2new.png)
