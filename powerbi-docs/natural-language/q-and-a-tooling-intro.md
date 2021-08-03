@@ -42,17 +42,17 @@ Select **Field synonyms** to see all the tables and columns that belong to the m
 
 ![Screenshot of Q&A field synonyms home.](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-home.png)
 
-Select one of the tables to expand and you will see a dialog similar to the one below.
+Select one of the tables to expand and you'll see a dialog similar to the one below.
 
 ![Screenshot of Q&A field synonyms expanded.](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-expanded.png)
 
-The dialog will show all the columns and tables and their respective terms/synonyms that users can use when asking questions against the dataset. You can quickly see all the terms in one place and also add or remove terms for multiple columns. 
+The dialog shows all the columns, tables, and respective terms/synonyms that users can use when asking questions against the dataset. You can quickly see all the terms in one place and also add or remove terms for multiple columns. 
 
 - Add terms - If you have a field called sales, you may decide to add a term called revenue so a user can use this word instead of being required to use the word sales. Select **Add** to quickly add a new term.
 
-- Include in Q&A - This option allows a column or table to be omitted from Q&A meaning it will not be shown nor a result can be displayed with this column. A circumstance where you may decide to not include a column is when dealing with dates. If there are numerous date fields, or foreign keys, you may decide to remove all but one of the date fields so the correct date column is picked when a user asks a date related question.
+- Include in Q&A - This option allows a column or table to be omitted from Q&A, meaning it won't be shown nor a result can be displayed with this column. A circumstance where you may decide to not include a column is when dealing with dates. If there are numerous date fields, or foreign keys, you may decide to remove all but one of the date fields so the correct date column is picked when a user asks a date related question.
 
-- Suggested Terms - Q&A will also recommend suggested terms retrieved from our suggestions engine to help you quickly add terms/synonyms. If the suggestions are not added, They will still function but will give the user an orange dotted line indicating Q&A thinks it has an answer but is not sure. If the suggested synonym is correct, select the plus icon (+) so it can be used as a synonym. If the suggestion is incorrect, select the x to remove the term. It won't be used as a term/synonym and won't function inside Q&A. The initial suggestions are powered by Office Dictionary or can come from renames found inside a report. Another way to get more suggested terms is through synonym sharing within your organization. 
+- Suggested Terms - Q&A also recommends suggested terms retrieved from our suggestions engine to help you quickly add terms/synonyms. If the suggestions aren't added, They still function, but they give the user an orange dotted line indicating Q&A thinks it has an answer but isn't sure. If the suggested synonym is correct, select the plus icon (+) so it can be used as a synonym. If the suggestion is incorrect, select the x to remove the term. It won't be used as a term/synonym and won't function inside Q&A. The initial suggestions are powered by Office Dictionary or can come from renames found inside a report. Another way to get more suggested terms is through synonym sharing within your organization. 
 
 ### Synonym sharing
 With synonym sharing, you can leverage your coworkers’ synonyms and minimize duplicate effort when adding synonyms to your models. 
@@ -77,7 +77,7 @@ As new synonyms get shared within your organization, you can select the refresh 
 
 ## Review questions
 
-Select **Review questions** to see a list of datasets being used in the Power BI service for your tenant. The **Review questions** page also displays the dataset owner, workspace, and last refreshed date. From here, you can select a dataset and see what questions users have been asking. The data also shows words that were not recognized. All data shown here is for the last 28 days.
+Select **Review questions** to see a list of datasets being used in the Power BI service for your tenant. The **Review questions** page also displays the dataset owner, workspace, and last refreshed date. From here, you can select a dataset and see what questions users have been asking. The data also shows words that weren't recognized. All data shown here is for the last 28 days.
 
 ![Screenshot of Q&A review questions.](media/q-and-a-tooling-intro/qna-tooling-review-questions.png)
 
@@ -99,7 +99,7 @@ Anything you've saved from the Teach Q&A section shows up here, so you can revie
 > The suggested questions show up for all instances of the Q&A visual. It isn't possible to create a separate set of suggestions for each Q&A visual.
 > 
 
-Without doing any setup, the Q&A visual will suggest several questions to get started with. These questions are automatically generated based on your data model. In **Suggest questions**, you can overwrite the autogenerated questions with your own questions.
+Without doing any setup, the Q&A visual suggest several questions to get started with. These questions are automatically generated based on your data model. In **Suggest questions**, you can overwrite the autogenerated questions with your own questions.
 
 To start, type the question you want to add in the text box. In the preview section, you see what the result will look like in the Q&A visual. 
 
