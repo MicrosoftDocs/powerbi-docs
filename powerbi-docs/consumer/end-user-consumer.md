@@ -14,7 +14,7 @@ LocalizationGroup: Get started
 
 # The Power BI service for business users
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 You live in a data culture, where business decisions are based on facts, not opinions. You need data to make these decisions, and your colleagues don't let you down.     
  
