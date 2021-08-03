@@ -6,7 +6,7 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 07/19/2021
+ms.date: 08/03/2021
 ---
 # Intro to Q&A tooling to train Power BI Q&A (preview)
 
@@ -52,7 +52,7 @@ The dialog will show all the columns and tables and their respective terms/synon
 
 - Include in Q&A - This option allows a column or table to be omitted from Q&A meaning it will not be shown nor a result can be displayed with this column. A circumstance where you may decide to not include a column is when dealing with dates. If there are numerous date fields, or foreign keys, you may decide to remove all but one of the date fields so the correct date column is picked when a user asks a date related question.
 
-- Suggested Terms - Q&A will also recommend suggested terms retrieved from our suggestions engine to help you quickly add terms/synonyms. If the suggestions are not added, They will still function but will give the user an orange dotted line indicating Q&A thinks it has an answer but is not sure. If the suggested synonym is correct, select the plus icon (+) so it can be used as a synonym. If the suggestion is incorrect, select the x to remove the term. It won't be used as a term/synonym and won't function inside Q&A. The initial suggestions are powered by Office Dictionary or can come from renames found inside a report. Another way to get more suggested terms is through synonymn sharing within your organization. 
+- Suggested Terms - Q&A will also recommend suggested terms retrieved from our suggestions engine to help you quickly add terms/synonyms. If the suggestions are not added, They will still function but will give the user an orange dotted line indicating Q&A thinks it has an answer but is not sure. If the suggested synonym is correct, select the plus icon (+) so it can be used as a synonym. If the suggestion is incorrect, select the x to remove the term. It won't be used as a term/synonym and won't function inside Q&A. The initial suggestions are powered by Office Dictionary or can come from renames found inside a report. Another way to get more suggested terms is through synonym sharing within your organization. 
 
 ### Synonym sharing
 With synonym sharing you can leverage your coworkers’ synonyms and minimize duplicate effort when adding synonyms to your models. 
