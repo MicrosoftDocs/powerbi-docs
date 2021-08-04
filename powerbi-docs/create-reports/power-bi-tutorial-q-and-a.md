@@ -62,7 +62,7 @@ The answer to your question is displayed as an interactive visualization and upd
 
 ## Part 2: Use Q&A in a report in Power BI service or Power BI Desktop
 
-Use Q&A to explore your dataset and to add visualizations to the report and to dashboards. A report is based on a single dataset and may be completely blank or contain pages full of visualizations. But just because a report is blank, doesn't mean there isn't any data for you to explore -- the dataset is linked to the report and is waiting for you to explore and create visualizations.  To see which dataset is being used to create a report, open the report in Power BI service Reading view and select ** More options (...)** > **See related content** from the menu bar.
+Use Q&A to explore your dataset and to add visualizations to the report and to dashboards. A report is based on a single dataset and may be completely blank or contain pages full of visualizations. But just because a report is blank, doesn't mean there isn't any data for you to explore -- the dataset is linked to the report and is waiting for you to explore and create visualizations.  To see which dataset is being used to create a report, open the report in Power BI service Reading view and select **More options (...)** > **See related content** from the menu bar.
 
 ![View related datasets](media/power-bi-tutorial-q-and-a/power-bi-view-related.png)
 
