@@ -10,4 +10,4 @@
  ms.custom: include file
 ---
 
-**APPLIES TO:**  ✔️&nbsp;Power&nbsp;BI&nbsp;Report&nbsp;Builder ✔️&nbsp;Power&nbsp;BI&nbsp;service ❌&nbsp;Power&nbsp;BI&nbsp;Desktop
+**APPLIES TO:** ✔️&nbsp;Power&nbsp;BI&nbsp;Report&nbsp;Builder ✔️&nbsp;Power&nbsp;BI&nbsp;service ❌&nbsp;Power&nbsp;BI&nbsp;Desktop
