@@ -24,7 +24,7 @@ This article describes how to request a move between regions. Be sure you're awa
 
 ## Prepare
 
-The migration process moves all tenant data to the new region. The GUID assigned to datasets, reports, dashboards, and other content don’t change. However, there are some limitations you should be aware of and preparation steps you need to take.
+The migration process moves all tenant data to the new region. The GUIDs assigned to datasets, reports, dashboards, and other content don’t change. However, there are some limitations you should be aware of and preparation steps you need to take.
 
 ### Awareness
 
@@ -33,8 +33,8 @@ The migration process moves all tenant data to the new region. The GUID assigned
   :::image type="content" source="media\service-admin-region-move\user-error-message.png" alt-text="Screen capture showing example error message shown to users during migration.":::
 
 - Capacities and Premium workspaces can't be migrated.
+- Power BI Premium Per User (PPU) capacity will be deleted before migration starts. After the migration, PPU capacity will be recreated at first PPU user sign-in. For more information about PPU licenses, see [Power BI Premium Per User](service-premium-per-user-faq.md).
 - After migration Excel workbooks that use the Analyze in Excel feature may fail to refresh. You may need to update the connection string or redownload the ODC connection for that dataset. Follow the steps in [Analyze in Excel](/collaborate-share/service-tutorial-analyze-in-excel.md) if necessary.
-- Power BI Goals data will be lost during the region move. We're working to fix this issue.
 - Push datasets might not be migrated. If they can't be migrated, you'll need to delete the datasets. Support will let you know if this step is needed.
 - Data gateways have to be reconfigured after migration.
 - Dataset and workspace storage modes shouldn't be changed one day before the migration. Changing the storage mode before the migration can leave the datasets unusable after the migration.
@@ -50,9 +50,7 @@ Our support team will work with you to verify that the following steps are done 
 
 - We can't migrate capacities and Premium workspaces, so you have to delete all capacities before  migration. After the region move, these resources can be recreated. If you move resources from a Premium workspace to a shared workspace, datasets larger than 1 GB can't be viewed until they're moved back to Premium capacity.
 
-- Gateways that have the same name in both source and target regions should be deleted in the target region to avoid conflicts during migration.
-
-- Microsoft 365 Apps for enterprise licenses ([formerly named Office 365 ProPlus](/deployoffice/name-change)) should be removed from users before the migration. The capacity that supports this license type can't be moved. For more information about this license type, see [Device-based licensing for Microsoft 365 Apps for enterprise](/deployoffice/device-based-licensing).
+- Gateways should be deleted in the target region to avoid conflicts during migration.
 
 - To keep user activity logs, follow the steps in [Track user activities in Power BI](service-admin-auditing.md). You can get log data from either the Power BI activity log or the Unified audit log.
 

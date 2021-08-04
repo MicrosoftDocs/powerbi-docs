@@ -40,7 +40,6 @@ To find the default data region for your organization, follow these steps:
 
 1. Look for the value next to **Your data is stored in**. The location shown is the default region where your data is stored. You may also be using capacities in different regions for your workspaces.
 
-
      :::image type="content" source="media\service-admin-where-is-my-tenant-located\power-bi-data-region.png" alt-text="Screen capture showing about Power B I with data storage location highlighted..":::
 
 ## Next steps
