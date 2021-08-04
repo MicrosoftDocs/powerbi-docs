@@ -16,11 +16,17 @@ ms.date: 05/14/2020
 
 When you render a paginated report in the Power BI service, the default view is HTML based and interactive. Another report view, for fixed page formats like PDF, is the new Page View option.
 
-**Default interactive view**
+## Prerequisites 
+
+- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
+
+## Report views
+
+### Default interactive view
 
 ![Default View](media/page-view/power-bi-paginated-default-view.png)
 
-**Page View**
+### Page View
 
 ![Page View](media/page-view/power-bi-paginated-page-view.png)
 
