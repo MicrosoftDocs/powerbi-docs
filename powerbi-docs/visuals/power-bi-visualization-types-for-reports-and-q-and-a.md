@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 03/18/2021
+ms.date: 08/04/2021
 LocalizationGroup: Visualizations
 ---
 # Visualization types in Power BI
@@ -241,9 +241,13 @@ For more information, see [Ribbon charts in Power BI](desktop-ribbon-charts.md).
 
 A scatter chart always has two value axes to show one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart displays points at the intersection of an x and y numerical value, combining these values into single data points. These data points may be distributed evenly or unevenly across the horizontal axis, depending on the data.
 
-![bubble chart](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi-nancy-viz-bubble.png)
+![Screenshot of scatter chart, with points at the intersection of the x and y axis.](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-scatter-chart.png)
 
 A bubble chart replaces data points with bubbles, with the bubble size representing an additional dimension of the data.
+
+![Screenshot of bubble chart, with bubble size representing an additional dimension of data.](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi-nancy-viz-bubble.png)
+
+Both scatter and bubble charts can also have a play axis, which can show changes over time.
 
 A dot plot chart is similar to a bubble chart and scatter chart except that it can plot numerical or categorical data along the X axis. This example happens to use squares instead of circles and plots sales along the X axis.
 
