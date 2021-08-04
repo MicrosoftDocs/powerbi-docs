@@ -33,7 +33,7 @@ The migration process moves all tenant data to the new region. The GUIDs assigne
   :::image type="content" source="media\service-admin-region-move\user-error-message.png" alt-text="Screen capture showing example error message shown to users during migration.":::
 
 - Capacities and Premium workspaces can't be migrated.
-- Power BI Premium Per User (PPU) capacity will be deleted before migration starts. After the migration, PPU capacity will be recreated at first PPU user sign-in. For more information about PPU licenses, see [Power BI Premium Per User](service-premium-per-user-faq.md).
+- Power BI Premium Per User (PPU) capacity will be deleted before migration starts. After the migration, PPU capacity will be recreated at first PPU user sign-in. For more information about PPU licenses, see [Power BI Premium Per User](service-premium-per-user-faq.yml).
 - After migration Excel workbooks that use the Analyze in Excel feature may fail to refresh. You may need to update the connection string or redownload the ODC connection for that dataset. Follow the steps in [Analyze in Excel](/collaborate-share/service-tutorial-analyze-in-excel.md) if necessary.
 - Push datasets might not be migrated. If they can't be migrated, you'll need to delete the datasets. Support will let you know if this step is needed.
 - Data gateways have to be reconfigured after migration.
