@@ -87,7 +87,7 @@ A: There are limitations for custom visuals and animated visuals.
 
 
 ## Next steps
-More about [Visualizations in Power BI reports](end-user-visual-type.md)
+More about [Visualizations in Power BI reports](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 If you have edit permissions to a report, you can [copy and paste visuals within the same report](../visuals/power-bi-visualization-copy-paste.md). 
 

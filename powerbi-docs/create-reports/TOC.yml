@@ -77,8 +77,6 @@
           href: ../natural-language/q-and-a-tooling-advanced.md
         - name: "Q&A limitations"
           href: ../natural-language/q-and-a-limitations.md
-        - name: "Visualization types in Q&A"
-          href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
     - name: Paginated reports
       items: 
       - name: Report Builder in Power BI
@@ -250,6 +248,8 @@
         href: desktop-upload-desktop-files.md
     - name: Visualizations
       items: 
+      - name: "Visualization types in Power BI"
+        href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
       - name: "Add visuals to a report (part 1)"
         href: ../visuals/power-bi-report-add-visualizations-i.md
       - name: "Add visuals to a report (part 2)"
