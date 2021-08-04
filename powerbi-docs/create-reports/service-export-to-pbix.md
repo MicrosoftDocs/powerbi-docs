@@ -49,6 +49,7 @@ There are a few important considerations and limitations associated with downloa
 * The report must have been created by using Power BI Desktop and *published* to the Power BI service, or the .pbix file must have been *uploaded* to the Power BI service.
 * Reports must be published or updated after November 23, 2016. Reports published earlier aren't downloadable.
 * This feature won't work with reports and the built-in downloadable samples originally created in the Power BI service, unless the report was created through the [quick create experience](./service-quick-create-report.md).
+* Reports created in the Power BI service must be saved before they can be downloaded.
 * Always use the latest version of Power BI Desktop when you open downloaded files. Downloaded .pbix files might not open in non-current versions of Power BI Desktop. For example, you cannot open downloaded .pbix files using a Desktop version that does not support information protection.
 * If your administrator has turned off the ability to download data, this feature won't be visible in the Power BI service.
 * Datasets with incremental refresh can't be downloaded to a .pbix file.
