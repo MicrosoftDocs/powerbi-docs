@@ -680,9 +680,9 @@ _Selecting one or more workspaces for upgrade._
 
 Admins can upgrade classic workspaces to the new workspace experience. Admins can select one or more workspaces with Type **Group** to upgrade or use **Upgrade all** to queue up upgrade of all **Group** workspaces. Upgrades are queued and executed asynchronously. It may take several minutes to several days to complete all **Pending** upgrades because the overall rate of admin-initiated upgrades is limited to keep the service running smoothly. The **Workspace upgrade status** column helps admins track the progress of the admin-initiated upgrades. Admins can cancel admin-initiated upgrades when they are **Pending**. To upgrade a workspace immediately, contact the Workspace Admin and have them start the upgrade through the workspace settings pane. Learn more about [workspace upgrade](../collaborate-share/service-upgrade-workspaces.md) before starting your Power BI admin-initiated workspace upgrade.
 
-![Admins can choose to Upgrade all workspaces.](media/service-admin-portal/admin-portal-manage-workspaces.png)
+![Admins can choose to Upgrade all workspaces.](media/service-admin-portal/admin-portal-workspaces-upgrade-all.png)
 
-_Upgrade all queues up all workspaces for upgrade_
+_Upgrade all queues up all workspaces for upgrade._
 
 The following table gives more details about the status of the upgrade.
 
