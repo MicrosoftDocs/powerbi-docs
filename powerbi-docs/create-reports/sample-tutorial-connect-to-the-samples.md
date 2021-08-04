@@ -13,6 +13,8 @@ LocalizationGroup: Samples
 ---
 # Explore the Retail Analysis sample
 
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 This tutorial shows you how to: 
 
 - Import the Retail Analysis sample, add it to the Power BI service, and open the contents. A *built-in sample* is one in which the dataset is bundled with a dashboard and report, and built into the Power BI service. 
