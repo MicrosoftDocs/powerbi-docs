@@ -34,6 +34,11 @@ Paginated reports connect to on-premises data sources by way of a [Power BI gate
 
 See [Report Data in Power BI Report Builder](report-builder-data.md) for more detailed information.
 
+
+## Prerequisites 
+
+- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
+
 ## Create an embedded data source
   
 1. Open Power BI Report Builder.

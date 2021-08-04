@@ -18,6 +18,10 @@ This document describes paginated report PDF Rendering Extension conformance to 
 > [!NOTE]
 > You can save or print this whitepaper by selecting  **Print**  from your browser, then selecting  **Save as PDF**.
 
+## Prerequisites 
+
+- For Power BI paginated reports in the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
+
 ## 1.  Scope
 
 Not applicable

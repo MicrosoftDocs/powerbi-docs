@@ -24,6 +24,10 @@ The following paginated report is a sample of an invoice. You can download it an
 
 ![Screenshot of a sample paginated report in Power BI Report Builder.](media/report-builder-power-bi/power-bi-report-builder-sample-invoice.png)
 
+## Prerequisites 
+
+- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
+- 
 ## Start with the Table, Matrix, or Chart wizard
 
 Create a data source connection, drag and drop fields to create a dataset query, select a layout and style, and customize your report.  
