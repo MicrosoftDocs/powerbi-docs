@@ -167,7 +167,7 @@ For more information, see [Azure Maps visual for Power BI](/azure/azure-maps/pow
 
 ### Filled map (Choropleth)
 
-![filled map](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi-nancy-viz-filledmap.png)
+![filled map](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi-nancy-viz-filled-map.png)
 
 A filled map uses shading or tinting or patterns to display how a value differs in proportion across a geography or region. Quickly display these relative differences with shading that ranges from light (less-frequent/lower) to dark (more-frequent/more).
 
