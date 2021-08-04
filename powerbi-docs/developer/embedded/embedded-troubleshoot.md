@@ -279,23 +279,35 @@ After acquiring the IError object, you should look at the appropriate common err
 | OpenConnectionError | Can't display the visual. Couldn't render a report visual titled: <visual title> | N/A | Capacity paused or deleted while a report related to the capacity was open in a session |
 | ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server and try again. | N/A | <li> Capacity paused <li> Capacity deleted |
 
+## Datasets
+
+### Manage which portion of the data your users can see
+
+Any user with read permissions for a dataset can see the entire schema (tables, columns and measures) and all the data. You cannot separately control viewing permissions to raw and aggregated data in the same dataset.
+
+To manage which portion of the data your users can view, use one of these methods:
+
+* Row-level filtering using Power BI [row-level security (RLS)](/power-bi/service-admin-rls).
+
+* [Object level security (OLS)](/analysis-services/tabular-models/object-level-security).
+
+* Separate the data into different datasets. For example, you can create a dataset that only contains aggregated data and give your users access to that dataset only.
+
 ## Content rendering
 
-When you render Power BI content there are many variables that may impact your performance. To enhance your performance, we recommend that you follow the suggestions in this section.
+Problems with rendering and performance etc.
 
-### Verify that the Power BI item loads in Power BI service
+### Verify that the Power BI item loads in Power BI service and playground
 
-To rule out issues with your application or the embedding APIs, verify that the item can be viewed in the Power BI service (powerbi.com).
+To rule out issues with your application or the embedding APIs, verify that the item can be viewed in the Power BI service (powerbi.com). +++ add playground
+
+You can verify ...application... playground
 
 ### Verify that your access token didn't expire
 
 For security purposes, access tokens (An Azure AD token or an embed token) have a limited lifetime. You should constantly monitor your access token and refresh it if needed. For more information see [Refresh the access token](/javascript/api/overview/powerbi/refresh-token).
 
-### Optimize your report's performance
-
-When a report isn't performing as expected, it's often to do with underlining issues in the report's design. Use the [performance analyzer](../../create-reports/desktop-performance-analyzer.md) to test and improve your report's performance.
-
-### Follow our best practices
+### Performance
 
 To get the best performing embedded content, we recommend that you follow the [Power BI embedded analytics best practices](embedded-performance-best-practices.md).
 

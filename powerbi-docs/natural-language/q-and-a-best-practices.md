@@ -4,7 +4,7 @@ description: How to optimize Power BI Q&A and make it work better
 author: mohaali
 ms.author: mohaali
 ms.service: powerbi
-ms.subservice: pbi-reports-dashboards
+ms.subservice: powerbi-ai
 ms.topic: how-to
 ms.date: 10/23/2019
 ---

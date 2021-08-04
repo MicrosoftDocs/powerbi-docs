@@ -45,7 +45,7 @@ The training options available to you are nearly endless, from in-person lab tra
 You can find additional options online, such as:
 
 * **edX.org** offers a free course, [Analyzing and Visualizing Data with Power BI](https://www.edx.org/course/data-analysis-in-power-bi).
-* **Lynda.com** offers has courses such as [Power BI Pro Essential Training](https://www.lynda.com/Power-BI-tutorials/Power-BI-Pro-Essential-Training/485820-2.html).
+* **Lynda.com** offers has courses such as [Power BI Pro Essential Training](https://www.linkedin.com/learning/power-bi-essential-training-3).
 * Look for in-person "**Dashboard in a Day**" training sessions.
 
 ## 7 Ask or search in the Power BI community

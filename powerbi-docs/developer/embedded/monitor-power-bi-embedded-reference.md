@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: subject-monitoring
-ms.date: 04/29/2021
+ms.date: 08/02/2021
 ---
 
 # Monitoring Power BI Embedded data reference
@@ -33,6 +33,7 @@ Resource Provider and Type: [Microsoft.PowerBIDedicated/capacities](/azure/azure
 | Name | Metric | Unit | Description |
 |:---|:-------|:-----|:------------|
 |CPU (Gen2) |cpu_metric |Percent |CPU utilization. Supported only for Power BI Embedded Generation 2 resources. |
+|CPU Per Workload (Gen2) |cpu_workload_metric |Percent |CPU utilization per workload. Supported only for Power BI Embedded Generation 2 resources. |
 |Overload (Gen2) |overload_metric |0/1 |Resource overload, 1 if resource is overloaded, otherwise 0. Supported only for Power BI Embedded Generation 2 resources. |
 |Memory (Gen1) |memory_metric               |Bytes        |Memory. Range 0-3 GB for A1, 0-5 GB for A2, 0-10 GB for A3, 0-25 GB for A4, 0-50 GB for A5 and 0-100 GB for A6. Supported only for Power BI Embedded Generation 1 resources. |
 |Memory Thrashing (Datasets) (Gen1) |memory_thrashing_metric     |Percent      |Average memory thrashing. Supported only for Power BI Embedded Generation 1 resources. |

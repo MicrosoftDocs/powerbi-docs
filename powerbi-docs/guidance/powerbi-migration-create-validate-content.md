@@ -5,7 +5,7 @@ author: peter-myers
 ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 08/20/2020
 ---
@@ -95,7 +95,7 @@ In an Import dataset, data permissions are applied by defining [row-level securi
 
 The main ways to grant access to Power BI content are:
 
-- [Workspace roles](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) (for content editors and viewers).
+- [Workspace roles](../collaborate-share/service-roles-new-workspaces.md) (for content editors and viewers).
 - [App permissions](../collaborate-share/service-create-distribute-apps.md#publish-your-app) applied to a packaged set of workspace content (for viewers).
 - [Sharing](../collaborate-share/service-share-dashboards.md) an individual report or dashboard (for viewers).
 
