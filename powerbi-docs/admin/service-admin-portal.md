@@ -609,7 +609,7 @@ Control which users in the organization can download and install template apps *
 
 ### Allow your Microsoft 365 services to process or store Power BI data outside of your Power BI tenant's geographic area
 
-![Screenshot of admin switch allowing Microsoft 365 services to process and store Power BI content remotely.](media/service-admin-portal/allow-m365-process-store-data-remotely-admin-portal-switch.png)
+:::image type="content" source="media/service-admin-portal/allow-m365-process-store-data-remotely-admin-portal-switch.png" alt-text="Screenshot of admin switch allowing Microsoft 365 services to process and store Power BI content remotely.":::
 
 This switch controls whether Power BI content gets listed in the Most Recently Viewed list on the home page of Office.com. Because of the data residency considerations described below, it is disabled by default. When enabled, it allows Power BI content to be listed.
 
