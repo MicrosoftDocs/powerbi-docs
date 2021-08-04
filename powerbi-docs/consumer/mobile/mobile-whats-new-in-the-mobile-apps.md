@@ -20,7 +20,7 @@ For related "What's New" information, see:
 
 ## July
 ### New report footer (phones only)
-We've updated the report footer to make it easier to find and understand the actions you can do with reports.
+We've updated the report footer to make it easier to find and understand the actions you can do with reports. Just tap **More**!
 
 :::image type="content" source="media/mobile-whats-new-in-the-mobile-apps/new-report-footer-for-phones.png" alt-text="Screenshot new report footer for phones.":::
 
