@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2021
+ms.date: 08/04/2021
 ---
 # What's new in the mobile apps for Power BI
 For related "What's New" information, see:
@@ -18,7 +18,7 @@ For related "What's New" information, see:
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
-## July
+## July 2021
 ### New report footer (phones only)
 We've updated the report footer to make it easier to find and understand the actions you can do with reports. Just tap **More**!
 
