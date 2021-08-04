@@ -8,14 +8,14 @@ ms.reviewer: 'tessa'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 04/28/2021
+ms.date: 08/03/2021
 ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY
 LocalizationGroup: Visualizations
 ---
 
 # Export the data that was used to create a visualization
 
-> [!IMPORTANT]
+> [!IMPORTANT
 > Not all data can be viewed or exported by all users. There are safeguards that report designers and administrators use when building dashboards and reports. Some data is restricted, hidden, or confidential, and cannot be seen or exported without special permissions. 
 
 ## Who can export data
@@ -268,6 +268,6 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
   - The first character of the text is one of the following: **=, @, +, -**
 
 - Power BI admins can disable the export of data.
-- If a dynamic format string is applied to a measure, the exported data would not preserve this formatting in Excel.
+- If a dynamic format string is applied to a measure, the exported data would not preserve this formatting in Excel. Also, visual-specific formatting such as percent of grand total for a measure would not be preserved in Excel.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
