@@ -15,17 +15,17 @@ ms.date: 08/05/2021
 
 The article describes the interaction between the Power BI user, visual, and host.
 
-Actions and subsequent updates in Power BI visuals occur in one of these three patterns:
+The [`update` method](visual-api.md#update) is called whenever the size of the visual of any one of its values changes. The `update` method contains the main logic of the visual and is responsible for rendering a chart or visualizing data.
+
+Actions and subsequent updates in Power BI can be initiated by the user or the visual itself. They usually occur in one of these three patterns:
 
 1. User interacts with a visual through Power BI.
 2. User interacts with the visual directly.
 3. Visual interacts with Power BI.
 
-The following figure depicts how common visual-based actions that a user takes, like selecting a bookmark, are processed in Power BI.
+The following figure depicts how common visual-based actions, like selecting a bookmark, are processed in Power BI.
 
 ![Power BI visual action diagram](media/power-bi-visuals-concept/visual-concept.png)
-
-The [`update` method](visual-api.md#update) is called whenever the size of the visual of any one of its values changes. The `update` method contains the main logic of the visual and is responsible for rendering a chart or visualizing data.
 
 ## User interacts with a visual through Power BI
 
