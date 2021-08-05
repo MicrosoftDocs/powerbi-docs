@@ -110,7 +110,7 @@ Once the content has been deployed to the Power BI service, the best practices r
 - [Contacts](../create-reports/service-item-contact.md) are identified, and correctly correlate to the [owners of the content](powerbi-adoption-roadmap-content-ownership-and-management.md).
 - [Sensitivity labels](../admin/service-security-apply-data-sensitivity-labels.md) are correctly assigned.
 - Artifact [endorsement](../collaborate-share/service-endorse-content.md) (certified or promoted) is appropriate.
-- [Data refresh](../connect-data/refresh-data.md) is configured correctly, failure notifications include the proper users, and uses the appropriate [data gateway](/connect-data/service-gateway-onprem.md) in standard mode (if applicable).
+- [Data refresh](../connect-data/refresh-data.md) is configured correctly, failure notifications include the proper users, and uses the appropriate [data gateway](/data-integration/gateway/service-gateway-onprem) in standard mode (if applicable).
 - All [best practices rules](https://powerbi.microsoft.com/blog/best-practice-rules-to-improve-your-models-performance-and-design-v1-1/) are followed and, preferably, are automated via a community tool called Best Practices Analyzer for maximum efficiency and productivity.
 
 ### Extended support

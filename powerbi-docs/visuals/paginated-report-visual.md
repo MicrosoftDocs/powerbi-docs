@@ -12,19 +12,16 @@ ms.date: 06/22/2021
 
 # Create and use the paginated report visual
 
-
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)]
+[!INCLUDE [applies-yes-paginated-yes-service-yes-desktop](../includes/applies-yes-paginated-yes-service-yes-desktop.md)]
 
 In this article, you learn how to use the paginated report visual for Power BI reports. This native Power BI visual allows you to render any paginated report you’ve uploaded to the service in a Power BI report.  
 
 This visual brings the power of paginated reports to your Power BI reports. You can map fields from your Power BI dataset to be used as parameter values for your paginated report visual. This provides a fully interactive experience like any other visual.  
 
- 
-
 ## Prerequisites 
 
 - To access a paginated report to include in your Power BI report with a paginated report visual, you need access to a workspace in a [Power BI Premium capacity](../admin/service-premium-what-is.md). 
-- To publish your Power BI report with a paginated report visual to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity. 
+- To publish your Power BI report with a paginated report visual to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
 
 ## Create a paginated report visual 
 
