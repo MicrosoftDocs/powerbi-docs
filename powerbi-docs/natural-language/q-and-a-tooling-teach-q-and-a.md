@@ -4,7 +4,7 @@ description: How to use Power BI Q&A to explore your data
 author: maggiesMSFT
 ms.author: maggies
 ms.service: powerbi
-ms.subservice: pbi-reports-dashboards
+ms.subservice: powerbi-ai
 ms.topic: how-to
 ms.date: 04/21/2020
 LocalizationGroup: Ask questions of your datadefintion

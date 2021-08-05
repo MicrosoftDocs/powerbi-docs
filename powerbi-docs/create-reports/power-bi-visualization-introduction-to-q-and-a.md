@@ -5,9 +5,9 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: pbi-reports-dashboards
+ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 05/13/2019
+ms.date: 08/02/2021
 LocalizationGroup: Ask questions of your data
 ---
 
@@ -53,7 +53,7 @@ How would we go about creating this line chart using Q&A?
 
     ![Retail Analysis sample dashboard](media/power-bi-visualization-introduction-to-q-and-a/power-bi-dashboard.png)
 
-1. Open the report in Editing View by selecting **Edit Report**.  If you aren't the owner of a report, you don't have the option to open the report in Editing view.
+1. Open the report in Editing View by selecting **Edit**.  If you aren't the owner of a report, you don't have the option to open the report in Editing view.
    
     ![Edit report button](media/power-bi-visualization-introduction-to-q-and-a/power-bi-edit-report.png)
 4. Select the area chart and review the settings in the **Fields** pane.  The report creator built this chart by selecting these three values (**Last Year Sales** and **This Year Sales > Value** from the **Sales** table, and **FiscalMonth** from the **Time** table) and organizing them in the **Axis** and **Values** wells.

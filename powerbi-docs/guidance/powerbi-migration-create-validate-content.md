@@ -5,7 +5,7 @@ author: peter-myers
 ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 08/20/2020
 ---
@@ -60,7 +60,7 @@ The essential activities related to development of a Power BI report or dashboar
 - Decide on using a Live Connection to an existing data model, or creating a new data model
 - When creating a new data model, decide on the [data storage mode](../transform-model/desktop-storage-mode.md) for model tables (Import, DirectQuery, or Composite).
 - Decide on the best data visualization tool to meet requirements: Power BI Desktop, Paginated Report Builder, or Excel.
-- Decide on the [best visuals](../consumer/end-user-visual-type.md) to tell the story the report needs to tell, and to address the questions the report needs to answer.
+- Decide on the [best visuals](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md) to tell the story the report needs to tell, and to address the questions the report needs to answer.
 - Ensure all visuals present clear, concise, and business-friendly terminology.
 - Address interactivity requirements.
 - When using Live Connection, add [report-level measures](../transform-model/desktop-tutorial-create-measures.md).

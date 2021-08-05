@@ -5,7 +5,7 @@ author: aphilip94
 ms.author: anphil
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: pbi-visuals
+ms.subservice: powerbi-ai
 ms.custom: video-RE4M2hp
 ms.topic: how-to
 ms.date: 05/11/2021
