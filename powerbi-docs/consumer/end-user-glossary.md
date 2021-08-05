@@ -69,7 +69,7 @@ A mathematical determination of the size or number of something.
 [Power BI Premium] Data models running on hardware fully managed by Microsoft in Microsoft cloud data centers to help ensure consistent performance at scale. BI solutions are delivered to the entire organization regardless of Power BI license.
 
 **card** (visual type)    
-A Power BI [visual type](end-user-visual-type.md).
+A Power BI [visual type](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
 **card** (Power BI Home)    
 Power BI Home displays rectangular and square pictures that represent dashboards, reports, apps, and more. These pictures are referred to as *cards*.
