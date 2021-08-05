@@ -1,6 +1,6 @@
 ---
-title: Power BI visuals concepts
-description: The article describes how visuals integrate with Power BI and how a user can interact with a visual in Power BI.
+title: Power BI visual interactions
+description: The article describes the interaction between the Power BI user, visual, and host.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -8,32 +8,26 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 06/18/2019
+ms.date: 08/05/2021
 ---
 
 # Power BI visuals system integration
 
-The article describes how visuals integrate with Power BI and how a user can interact with a visual in Power BI. 
+The article describes the interaction between the Power BI user, visual, and host.
+
+Actions and subsequent updates in Power BI visuals occur in one of these three patterns:
+
+1. User interacts with a visual through Power BI.
+2. User interacts with the visual directly.
+3. Visual interacts with Power BI.
 
 The following figure depicts how common visual-based actions that a user takes, like selecting a bookmark, are processed in Power BI.
 
 ![Power BI visual action diagram](media/power-bi-visuals-concept/visual-concept.svg)
 
-## Visuals get updates from Power BI
+The [`update` method](visual-api.md#update) is called whenever the size of the visual of any one of its values changes. The `update` method contains the main logic of the visual and is responsible for rendering a chart or visualizing data.
 
-A visual calls an `update` method to get updates from Power BI. The `update` method usually contains the main logic of the visual and is responsible for rendering a chart or visualizing data.
-
-Updates are triggered when the visual calls the `update` method.
-
-## Action and update patterns
-
-Actions and subsequent updates in Power BI visuals occur in one of these three patterns:
-
-* User interacts with a visual through Power BI.
-* User interacts with the visual directly.
-* Visual interacts with Power BI.
-
-### User interacts with a visual through Power BI
+## User interacts with a visual through Power BI
 
 * A user opens the visual's properties panel.
 
@@ -77,7 +71,7 @@ Actions and subsequent updates in Power BI visuals occur in one of these three p
 
     For more information about bookmarks and filters, see [Visual Filters API in Power BI visuals](filter-api.md).
 
-### User interacts with the visual directly
+## User interacts with the visual directly
 
 * A user hovers the mouse over a data element.
 
@@ -105,7 +99,7 @@ Actions and subsequent updates in Power BI visuals occur in one of these three p
 
     For more information about selections in a Power BI visual, see [Add interactivity by using Power BI visual selections](selection-api.md).
 
-### Visual interacts with Power BI
+## Visual interacts with Power BI
 
 * A visual requests more data from Power BI.
 
