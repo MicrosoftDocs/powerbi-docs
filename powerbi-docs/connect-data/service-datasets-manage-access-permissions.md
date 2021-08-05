@@ -12,16 +12,18 @@ LocalizationGroup: Share your work
 ---
 # Manage dataset access permissions
 
-The dataset access management page enables you monitor and manage access to your dataset. It has two and sometimes three tabs that help you control access to your dataset:
+The dataset access management page enables you monitor and manage access to your dataset. It has two tabs that help you control access to your dataset:
 * **Direct access**: Enables you to monitor, add, modify, or delete access permissions for individual named users.
 * **Shared report links**: Shows you [links that were generated for sharing reports](../collaborate-share/service-share-dashboards.md). Such links sometimes also give access to your dataset. On this tab you can review them and remove them if necessary.
-* **Pending**: Shows you pending access requests for your dataset and enables you to grant or reject them.
 
-This document explains how to get to the dataset access management page and how to use the three tabs it contains.
+This document explains how to use the dataset access management page.
 
-## View the dataset access management page
+>[!NOTE]
+> You must be one of the dataset owners to be able to access the dataset access management page.
 
-To view the dataset access management page:
+## Open the dataset access management page
+
+To open the dataset access management page:
 
 * From the [datasets hub](service-datasets-hub.md#find-the-dataset-you-need): Click **Manage permissions** on the **More options (…)** menu.
 
@@ -31,11 +33,11 @@ To view the dataset access management page:
 
     ![Screenshot of dataset access management page entry points on the dataset info page.](media/service-datasets-manage-access-permissions/power-bi-dataset-manage-permissions-entry-dataset-info-page.png)
 
-* From the [Share dataset dialog](service-datasets-share.md#share-your-dataset): In the dialog header, click **Manage permissions** on the **More options (…)** menu. A **Manage permissions** side pane will open. Choose **Advanced** at the bottom of the pane.
+* From the [Share dataset dialog](service-datasets-share.md): In the dialog header, click **Manage permissions** on the **More options (…)** menu. This opens the **Manage permissions** side pane. In the side pane, choose **Advanced** at the bottom of the pane.
 
     ![Screenshot of dataset access management page entry point on the Share dataset dialog.](media/service-datasets-manage-access-permissions/power-bi-dataset-manage-permissions-entry-share-dataset-dialog.png)
  
-These actions will open the datasets access management page. The access management page opens.  The access management page has two and possibly three tabs to help you manage dataset access.
+These actions will open the datasets access management page. The access management page has two tabs to help you manage dataset access.
 
 ## Manage direct access
 
@@ -43,7 +45,7 @@ The direct access tab lists users who have been granted access. For each user yo
 
 To modify a user’s permissions, click **More options (…)** and choose one of the available options.
  
-Click **+ Add user** to grant dataset access to another user. The [Share dataset dialog](service-datasets-share.md#share-your-dataset) will open.
+Click **+ Add user** to grant dataset access to another user. The [Share dataset dialog](service-datasets-share.md) will open.
 
 ![Screenshot of direct access tab on the dataset access management page.](media/service-datasets-manage-access-permissions/power-bi-dataset-direct-access-tab.png)
 
@@ -55,15 +57,9 @@ The shared report links tab lists [links that have been created to shared report
 > Deleting a link removes it from the system. Users who use the link to access a report may lose access to that report.
 
 ![Screenshot of shared report links tab on the dataset access management page.](media/service-datasets-manage-access-permissions/power-bi-dataset-shared-report-links-tab.png)
- 
-## Review and act on pending access requests
-
-The pending tab lists dataset access requests that are waiting for your decision. This tab is not present if no access requests are pending.
-
-![Screenshot of pending tab on the dataset access management page.](media/service-datasets-manage-access-permissions/service-datasets-manage-access.png)
 
 ## Next steps
 
-* [Share a dataset](service-datasets-share.md)
+* [Share access to a dataset](service-datasets-share.md)
 * [Use datasets across workspaces](service-datasets-across-workspaces.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
