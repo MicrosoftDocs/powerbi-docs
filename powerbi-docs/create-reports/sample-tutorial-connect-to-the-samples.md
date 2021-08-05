@@ -25,6 +25,8 @@ This tutorial shows you how to:
 > * Sign up for a Power BI license, if you don't have one.
 > * Import the Retail Analysis sample and add it to the Power BI service.
 > * Explore the sample in the service.
+> * Create a visual by using natural language in *Q&A*.
+> * Generate *quick insights* based on the dataset.
 > * Open the Retail Analysis sample .pbix file in Power BI Desktop.
 
 If you'd like more background information, see [Sample datasets for Power BI](sample-datasets.md). In that article you learn about how to get the samples, where to save them, and how to use them. 
@@ -67,19 +69,25 @@ With the built-in samples, when you select **Connect**, Power BI gets a copy of 
 
    ![Screenshot showing the Retail Analysis Sample Content tab with dashboard and report entries.](media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png)
    
-3. On the **Datasets + dataflows** tab, you see the dataset named *Retail Analysis Sample*.
+3. On the **Datasets + dataflows** tab, you see the dataset, also named *Retail Analysis Sample*.
    
    ![Screenshot showing the Retail Analysis Sample Datasets + dataflows tab with the dataset entry.](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
    
 ## Explore your new content
 
-Now explore the dashboard, dataset, and report on your own. There are many different ways to navigate to your dashboards, reports, and datasets. If a tile was created by using [Power BI Q&A](power-bi-tutorial-q-and-a.md), the Q&A page opens when you select it. If a tile was pinned from a report, the report opens. If a tile was [pinned from Excel](service-dashboard-pin-tile-from-excel.md), Excel Online will open inside of Power BI. Some of these methods are described in the following procedures.
+Now explore the dashboard, dataset, and report on your own. There are many different ways to navigate to your dashboards, reports, and datasets. 
+
+- If a tile was created by using [Power BI Q&A](power-bi-tutorial-q-and-a.md), the Q&A page opens when you select it. 
+- If a tile was pinned from a report, the report opens. 
+- If a tile was [pinned from Excel](service-dashboard-pin-tile-from-excel.md), Excel Online will open inside of Power BI. 
+
+The first two of these methods are described in the following procedures.
 
 ### Explore in Q&A
 
-THe Q&A feature in Power BI lets you explore your data in your own words, asking questions using natural language.
+The Q&A feature in Power BI lets you explore your data in your own words, asking questions using natural language.
 
-1. From your workspace, select the **Retail Analysis Sample** dashboard to open it.
+1. From your workspace, select the **Retail Analysis Sample** *dashboard* to open it.
 
    The dashboard opens, with a variety of visualization tiles.
  
@@ -114,11 +122,11 @@ THe Q&A feature in Power BI lets you explore your data in your own words, asking
 
 1. Check out [Dive deeper into the data](sample-retail-analysis.md#dive-deeper-into-the-data) in the article "Retail Analysis sample for Power BI: Take a tour" for suggestions on exploring the report.
 
-### Explore Quick Insights
+### Explore quick insights
 
-One easy way of exploring a dataset is to run [quick insights](../consumer/end-user-insights.md). 
+One easy way of exploring a *dataset* is to run [quick insights](../consumer/end-user-insights.md). 
 
-1. On the **Deatasets** tab, select **More options** (...), and then choose **Get quick insights**. 
+1. On the **Datasets** tab, select **More options** (...), and then choose **Get quick insights**. 
 1. When the insights are ready, select **View insights**.
      
     ![Insights report](media/sample-tutorial-connect-to-the-samples/retail-quick-insights.png)
@@ -142,9 +150,10 @@ When someone shares an app with colleagues, they typically want to share only th
 1. Now you can create any visuals you want, or you can try the tutorial [Create a decomposition tree with a Power BI sample](sample-tutorial-decomp-tree.md), which uses the same data.
 
 ## Download the sample in Power BI Desktop 
-When you first open the sample .pbix file in Power BI Desktop, it displays in Report view where you can explore, create, and modify any number of report pages with visualizations. Report view provides almost the same design experience as a report's Editing view in the Power BI service. You can move visualizations around, copy and paste, merge, and so on. 
 
-Unlike editing a report in the Power BI service, in Power BI Desktop you can also work with your queries and model your data to ensure your data supports the best insights in your reports. You can then save your Power BI Desktop file wherever you like, whether it's to your local drive or to the cloud.
+When you first open the sample .pbix file in Power BI Desktop, it displays in Report view where you can explore and modify existing report pages and add new ones, with your own visualizations. Report view provides almost the same design experience as report Editing view in the Power BI service. You can move visualizations around, copy and paste, change the kind of visualization, and so on. 
+
+Unlike editing a report in the Power BI service, in Power BI Desktop you can also work with your queries and model your data to ensure your data supports the best insights in your reports. You can then save your Power BI Desktop file wherever you like, whether it's to your local drive or to the Power BI service.
 
 1. Download the [Retail Analysis sample .pbix file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) and open it in Power BI Desktop. 
 
@@ -171,7 +180,7 @@ When you download a sample .pbix file, you've downloaded not just a report but a
  
     ![Model view in Power BI Desktop](media/sample-tutorial-connect-to-the-samples/power-bi-relationships.png)
 
-    Model view shows all of the tables, columns, and relationships in your model. From here you can view, change, and create relationships.
+    Model view shows all of the tables and columns in your model, and the relationships between them. From here you can view, change, and create relationships.
 
 ## Next steps
 This environment is a safe one to play in, because you can choose not to save your changes. And if you do save them, you can always select **Get data** for a new copy of this sample.

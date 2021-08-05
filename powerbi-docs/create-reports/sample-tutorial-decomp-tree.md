@@ -15,18 +15,17 @@ LocalizationGroup: Samples
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-In this tutorial, you start with a built-in Power BI sample dataset and create a report with a decomposition tree. 
+In this tutorial, you start with a built-in Power BI sample dataset and create a report with a *[decomposition tree](../visuals/power-bi-visualization-decomposition-tree.md)*, an interactive visual for ad hoc exploration and conducting root cause analysis. It is also an artificial intelligence (AI) visualization, so you can ask it to find the next dimension to drill down into based on certain criteria.
 
-:::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-report-overview.png" alt-text="Retail Analysis Sample, Overview page.":::
-
+:::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-final.png" alt-text="Completed decomposition tree.":::
 This tutorial shows you how to: 
 
 > [!div class="checklist"]
 > * Sign up for a Power BI license, if you don't have one.
 > * Import the Retail Analysis sample and add it to the Power BI service.
 > * Create a decomposition tree.
-> * Do ad hoc exploration of your data in the decomp tree in Edit mode.
-> * Save the report and do ad hoc exploration in reading view.
+> * Do root cause analysis on your data in the decomp tree in Edit mode.
+> * Save the report and continue root cause analysis in reading view.
 
 If you want to familiarize yourself with the built-in sample in this tutorial and its scenario, see [Retail Analysis sample for Power BI: Take a tour](sample-retail-analysis.md) before you begin.
 
@@ -71,7 +70,7 @@ When someone shares an app with colleagues, they typically want to share only th
 
 ## Create a decomp tree
 
-Let's add a decomposition tree, or decomp tree, for ad hoc analysis.
+Let's add a decomposition tree, or decomp tree, to our report for ad hoc analysis.
 
 1. In the **Visualizations** pane, select the **Decomposition tree** icon.
 
@@ -81,11 +80,20 @@ Let's add a decomposition tree, or decomp tree, for ad hoc analysis.
 
     :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-resize.png" alt-text="Resize the decomposition tree.":::
 
-1. Decomp trees analyze one value by many categories. Expand **Sales** > **This Year Sales** and select **Value**. Power BI adds **Value** to the **Analyze** box.
+1. Decomp trees analyze one value by many categories, or *dimensions*. Expand **Sales** > **This Year Sales** and select **Value**. Power BI adds **Value** to the **Analyze** box.
 
     :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-analyze-sales.png" alt-text="Analyze Sales Value in the decomp tree.":::
 
-1. Next, select category fields and add them to the **Explain by** box. Add as many as you want, in any order. You can use them or not in the decomp tree.
+1. Next, select dimension fields and add them to the **Explain by** box. Add as many as you want, in any order. You can use them or not, in any order, in the decomp tree. We added:
+
+    - District Manager
+    - Category
+    - FamilyName
+    - Segment
+    - Chain
+    - PostalCode
+    - Store Type
+    - Territory
 
      :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-explain-by.png" alt-text="Explain sales by these categories.":::
 
@@ -93,7 +101,7 @@ Let's add a decomposition tree, or decomp tree, for ad hoc analysis.
 
 Now comes the ad hoc analysis part. 
 
-1. Select the plus sign (+) next to **This Year Sales** and select **High value**. That means you want Power BI to analyze all the different categories in the **Explain by** box, and pick the one to drill into to get the highest value of the measure being analyzed. 
+1. Select the plus sign (+) next to **This Year Sales** and select **High value**. That means Power BI will use artificial intelligence to analyze all the different categories in the **Explain by** box, and pick the one to drill into to get the highest value of the measure being analyzed.
 
     :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-select-high-value.png" alt-text="Let Power BI select the highest value.":::
 
@@ -107,14 +115,20 @@ Now comes the ad hoc analysis part.
 
     Or select other values yourself, and see what you end up with.
 
+1. You can delete levels by selecting the **X** in the heading.
+
+    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-delete-dimension.png" alt-text="Delete a dimension from the decomp tree.":::
+
 1. Save your report. Now anyone who views your report can interact with the decomp tree, starting from the first **This Year Sales** and choosing their own path to follow.
 
     :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-reading-view.png" alt-text="The decomp tree in Reading view.":::
+
+
+Learn about everything else you can do with decomp trees in [Create and view decomposition tree visuals in Power BI](../visuals/power-bi-visualization-decomposition-tree.md).
 
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Tutorial: Explore a Power BI sample](sample-tutorial-connect-to-the-samples.md)
-> [Create and view decomposition tree visuals in Power BI](../visuals/power-bi-visualization-decomposition-tree.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
