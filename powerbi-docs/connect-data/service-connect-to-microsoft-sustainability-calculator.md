@@ -17,52 +17,55 @@ The Microsoft Sustainability Calculator provides new insight into carbon emissio
 > [!NOTE]
 > This connector version only supports enrollments from the [Azure Enterprise portal](https://ea.azure.com). China enrollments aren't currently supported.
 
-
 ## Prerequisites
 
 To access the Microsoft Sustainability Calculator, you’ll need the following information from your organization’s Azure administrator:
 
 **August 2021 release**
-- [Addition of First Party App ID in your Azure tenant](#addition-of-first-party-app-id-in-your-azure-tenant)
-- Supported for **EA Direct and MCA / MPA (CSP with Azure Plan)** Accounts 
-- You must be either an Enrollment or a Billing Admin with the below roles. 
-   a. **EA-direct**: Enrollment Administrators with Read/Write permissions. 
-   b. **MCA / MPA (CSP with Azure Plan)**: Billing Account Administrators with roles as Billing Account Reader/Contributor/Owner.                                    
-- You must have a Power BI Pro License
+* [Addition of First Party App ID in your Azure tenant](#addition-of-first-party-app-id-in-your-azure-tenant).
+* Supported for **EA Direct and MCA / MPA (CSP with Azure Plan)** Accounts. 
+* You must be either an Enrollment or a Billing Admin with the following roles: 
+    * **EA-direct**: Enrollment Administrators with Read/Write permissions.
+    * **MCA / MPA (CSP with Azure Plan)**: Billing Account Administrators with roles as Billing Account Reader/Contributor/Owner.
+* You must have a Power BI Pro License
 
 ## Addition of First Party App ID in your Azure tenant
-1. You must be an admin with read & write permissions on the Azure tenant. Else, you must reach out to their Azure admin with read & write permissions.
-2. Verify if the First-Party App is already in your tenant. Following are the steps to verify the App ID:
+
+1. You must be an admin with read/write permissions on the Azure tenant. If you don't have such permissions, contact an Azure admin who has read/write permissions.
+
+2. See whether the First-Party App is already in your tenant. Follow the steps below to verify the App ID:
    1. Sign into the [Azure portal](https://portal.azure.com).
    2. Go to **Azure Active Directory**.
    3. Go to **Enterprise applications**.
-   4. In the **Application type** field, select **Microsoft applications** and click on **Apply** button.
+   4. In the **Application type** field, select **Microsoft applications** and click **Apply**.
    5. In the search field, enter **D365-ES-CustomerEnrollmentService**.
-   6. Verify that **D365-ES-CustomerEnrollmentService** is in the list. Other applications might have similar names. Therefore, make sure that you find the correct application with the app ID **cdab484a-9bdc-4c3a-9df3-a90d95040bcf**.
+   6. Verify that **D365-ES-CustomerEnrollmentService** is in the list. Other applications may have similar names, so make sure you find the correct application with the app ID **cdab484a-9bdc-4c3a-9df3-a90d95040bcf**.
 
-3. If the application is in the list already, then you can proceed to the Power BI App installation.
-4. If the application isn't in the list, you must add it to your tenant by the following steps:     
+3. If the application is already in the list, you can continue on with installing the Power BI App.
+
+4. If the application isn't in the list, you must add it to your tenant. Follow the steps below:
    1. In the **Azure portal**, on the toolbar, select the button to open **Azure Cloud Shell**.
 
-      ![Azure portal tool bar header](media/service-connect-to-microsoft-sustainability-calculator/azure-portal-tool-bar-header.png)
+        :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/azure-portal-tool-bar-header.png" alt=text="Screenshot of Azure portal tool bar header.":::
 
-   2. Click on **Powershell** option.
+   2. Click the **Powershell** option.
 
-      ![Azure cloud shell](media/service-connect-to-microsoft-sustainability-calculator/azure-cloud-shell.png)
+        :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/azure-cloud-shell.png" alt=text="Screenshot of Azure cloud shell.":::
 
-   3. Click on **Create Storage** option.
+   3. Click the **Create Storage** option.
 
-      ![create storage](media/service-connect-to-microsoft-sustainability-calculator/create-storage.png)
+        :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/create-storage.png" alt=text="Screenshot of create storage.":::
 
-   4. After successful storage creation, you will get the below **Powershell interface**.
+   4. After successful storage creation, you will get the following **Powershell interface**.
 
-      ![powershell interface](media/service-connect-to-microsoft-sustainability-calculator/powershell-interface.png)
+        :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/powershell-interface.png" alt=text="Screenshot of powershell interface.":::
 
-   5. Run the **command Install-Module AzureAD**. Enter **A** to install the module.
-   6. Run the **command Get-InstalledModule -Name "AzureAD"** to verify that the module is installed.
-   7. Run the **command Connect-AzureAD -Confirm** to run the authentication.
+   5. Run the command **Install-Module AzureAD**. Enter **A** to install the module.
+   6. Run the command **Get-InstalledModule -Name "AzureAD"** to verify that the module is installed.
+   7. Run the command **Connect-AzureAD -Confirm** to run authentication.
    8. Run the command **New-AzureADServicePrincipal -AppId cdab484a-9bdc-4c3a-9df3-a90d95040bcf**.         
-5. After adding the App ID, check the below steps to verify that the app ID is in your tenant, and you can proceed to the Power BI App installation.
+
+5. After adding the App ID, use the following steps to verify that the app ID is in your tenant.
    1. Sign into the [Azure portal](https://portal.azure.com).
    2. Go to **Azure Active Directory**.
    3. Go to **Enterprise applications**.
@@ -70,13 +73,15 @@ To access the Microsoft Sustainability Calculator, you’ll need the following i
    5. In the search field, enter **D365-ES-CustomerEnrollmentService**.
    6. Verify that **D365-ES-CustomerEnrollmentService** is in the list. Other applications might have similar names. Therefore, make sure that you find the correct application with the app ID **cdab484a-9bdc-4c3a-9df3-a90d95040bcf**.
 
+    If the app ID is in your tenant, you can proceed with installing the Power BI App.
 
 ### Find your company’s enrollment number
 
 This procedure applies to EA customers only.
 
 1. Sign into the [Azure Enterprise portal](https://ea.azure.com) as an admin.
-2. Select **Active Directory** or **Manage** on the left-hand navigation bar. Your company’s enrollment number will display.
+
+1. Select **Active Directory** or **Manage** on the left-hand navigation bar. Your company’s enrollment number will display.
 
    ![Find enrollment number](media/service-connect-to-microsoft-sustainability-calculator/enrollment-number.png)
 
@@ -102,85 +107,87 @@ Microsoft’s carbon accounting extends across all three scopes of emissions wit
 
 The Microsoft Sustainability Calculator runs on Power BI Pro. If you don’t have Power BI Pro, [get a free trial now](https://powerbi.microsoft.com/power-bi-pro).
 
-Before you install(First time) or update, please make sure you have already added our First Party AppId in your Azure tenant. [Follow these steps](#addition-of-first-party-app-id-in-your-azure-tenant).
+Before you install (first time) or update, please make sure you have already added our First Party AppId in your Azure tenant. [Follow these steps](#addition-of-first-party-app-id-in-your-azure-tenant).
 
-You’ll need your Azure enrollment number or Billing AccountID with valid permissions if you don’t have it, ask your organization’s Azure administrator for help. For more information, see [Prerequisites](#prerequisites).
+You’ll need your Azure enrollment number or Billing AccountID with valid permissions. If you don’t have one of these, ask your organization’s Azure administrator for help. For more information, see [Prerequisites](#prerequisites).
 
 ### Connecting the calculator: Five easy steps to carbon accounting
 
 **First time Installation**
+1. Download the app from [AppSource](https://go.microsoft.com/fwlink/?linkid=2151690).
 
-   1. Download the app from [AppSource](https://go.microsoft.com/fwlink/?linkid=2151690).
+    ![Microsoft Sustainability Calculator on AppSource](media/service-connect-to-microsoft-sustainability-calculator/appsource.png)
 
-      ![Microsoft Sustainability Calculator on AppSource](media/service-connect-to-microsoft-sustainability-calculator/appsource.png)
+    You can also search for the app in Power BI.
 
-      You can also search for the app in Power BI.
+    ![Search for Microsoft Sustainability Calculator on AppSource](media/service-connect-to-microsoft-sustainability-calculator/power-bi.png)
 
-      ![Search for Microsoft Sustainability Calculator on AppSource](media/service-connect-to-microsoft-sustainability-calculator/power-bi.png)
+1. Open the app.
 
-   2. Open the app.
+1. Select **Connect your data**. In the **Connect to Microsoft Sustainability Calculator (Preview)** window, do one of the following sets of steps, depending on whether you're an EA Direct or an MCA/MPA (CSP with Azure Plan):
 
-   3. Select **Connect your data**. In the **Connect to Microsoft Sustainability Calculator (Preview)** window, do one of the following sets of steps, depending on whether you're an EA Direct and MCA / MPA (CSP with Azure Plan):
+    **EA Direct customers**
+    > [!Note]
+    > Make sure you have installed [First Party App ID](#addition-of-first-party-app-id-in-your-azure-tenant) in your Azure tenant.
 
-      #### EA Direct customers
-      > [!Note]
-      > Make sure you have installed [First Party App ID](#addition-of-first-party-app-id-in-your-azure-tenant) in your Azure tenant.
+    Under **EnrollmentIDorBillingAccountID**, enter your enrollment number. For more information about obtaining your enrollment number, see [Find your company’s enrollment number](#find-your-companys-enrollment-number).
 
-      1. Under **EnrollmentIDorBillingAccountID**, enter your enrollment number. For more information about obtaining your enrollment number, see [Find your company’s enrollment number](#find-your-companys-enrollment-number).
+    ![EA Direct customers connect to Microsoft Sustainability Calculator](media/service-connect-to-microsoft-sustainability-calculator/connect-enterprise-agreement.png)
 
-         ![EA Direct customers connect to Microsoft Sustainability Calculator](media/service-connect-to-microsoft-sustainability-calculator/connect-enterprise-agreement.png)
+    **MCA / MPA (CSP with Azure Plan) customers**
+    Under **EnrollmentIDorBillingAccountID**, enter your billing account ID. For more information about obtaining your billing account ID, see [Find your company's billing account ID](#find-your-companys-billing-account-id).
 
-      **MCA / MPA (CSP with Azure Plan)**
+    ![MCA/CSP customers connect to Microsoft Sustainability Calculator](media/service-connect-to-microsoft-sustainability-calculator/connect-microsoft-customer-agreement.png)
 
-      1. Under **EnrollmentIDorBillingAccountID**, enter your billing account ID
+1. Connect your account:
 
-      For more information about obtaining your billing account ID, see [Find your company's billing account ID](#find-your-companys-billing-account-id).
+    * For **Authentication method**, choose **OAuth2**.
+    * For **Privacy level setting for this data source**, choose **Organizational**.
+    * When done, click **Sign in and connect**.
 
-      ![MCA/CSP customers connect to Microsoft Sustainability Calculator](media/service-connect-to-microsoft-sustainability-calculator/connect-microsoft-customer-agreement.png)
+    ![Screenshot of parameters authentication first dialog.](media/service-connect-to-microsoft-sustainability-calculator/connecting-1-of-2.png)
 
-   4. Connect your account:
-      - while connecting  **Authentication method**, select **OAuth2**, and under **Privacy level setting for this data source**, select **Organizational**. Click on sign in and continue.
+1. Select the user account. Please make sure to login with the credentials which have access to the enrollmentID/Billing AccountID with valid permissions as explained [here](#prerequisites)
 
-         ![Screenshot of parameters authentication first dialog.](media/service-connect-to-microsoft-sustainability-calculator/connecting-1-of-2.png)
+    ![Pick an account](media/service-connect-to-microsoft-sustainability-calculator/pick-account.png)
 
-      - Select the user account. Please make sure to login with the credentials which have access to the enrollmentID/Billing AccountID with valid permissions as explained [here](#prerequisites)
-
-         ![Pick an account](media/service-connect-to-microsoft-sustainability-calculator/pick-account.png)
-
-
-   5. Wait for the view to build, which can take up to 24 hours. Please refresh the dataset after 24 hours.
+1. Wait for the view to build, which can take up to 24 hours. Please refresh the dataset after 24 hours.
 
 
-### Updating process:
+### Updating process
 
-   > [!Note]
-   > Make sure you have installed [First Party App ID](#addition-of-first-party-app-id-in-your-azure-tenant) in your Azure tenant.
+> [!Note]
+> Make sure you have installed [First Party App ID](#addition-of-first-party-app-id-in-your-azure-tenant) in your Azure tenant.
 
-   1. After you receive the update from Appsource / Power BI about the new version of the app. Install that version. The following options are displayed:
-      ![updating app](media/service-connect-to-microsoft-sustainability-calculator/update-app.png)
-      - Select **Update the workspace and the app** and click on **Install**. This will install the update on the existing/installed workspace and the app.
+When you receive the update notification from Appsource/Power BI about a new version of the app, install that version. The following options are available:
 
+![updating app](media/service-connect-to-microsoft-sustainability-calculator/update-app.png)
 
+Choose **Update the workspace and the app**, then click **Install**. This will install the update on the existing/installed workspace and the app.
 
 ### Issues
 
-If there is any issue with the dataset refresh/app update during the updating process, please validate these steps and refresh the dataset.
-Please make sure your dataset configurations are set correctly through the below steps:
-   1. Go to the workspace panel and open the app workspace.
-   2. Open the **Scheduled Refresh** option in the Dataset settings and make sure the **Enrollment ID / Billing Account ID** as per the format mentioned [here](#ea-direct-customers) **Parameters** section and configure the datasource once again in **Data Source** section with the credentials which you have access to the **Enrollment ID / Billing Account ID** with valid permissions, as in step 3.
-   3.     
-   
-      ![schedule refresh](media/service-connect-to-microsoft-sustainability-calculator/schedule-refresh.png)
+If there are any issues with the dataset refresh/app update during the updating process, please validate these steps and refresh the dataset.
 
-      ![Data source Credentials Parameters](media/service-connect-to-microsoft-sustainability-calculator/data-source-credentials-parameters.png)
-   
-   4. Once the above steps are validated, go back to the app workspace and click on Refresh option. 
+Follow the steps below to make sure your dataset configurations are set correctly:
 
-      ![Data Refresh](media/service-connect-to-microsoft-sustainability-calculator/data-refresh.png)
-   
-   5. Once the dataset is refreshed successfully, click on the “Update App” option on the top-right corner on the app workspace.
+1. Go to the workspace panel and open the app workspace.
 
-      ![Updating App](media/service-connect-to-microsoft-sustainability-calculator/updating-app.png)
+1. Open the **Scheduled Refresh** option in the dataset settings and make sure the **Enrollment ID / Billing Account ID** is as per the format mentioned [here](#ea-direct-customers).
+
+    :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/schedule-refresh.png" alt=text="Screenshot of schedule refresh.":::
+
+1. Open the **Parameters** section and configure the data source once again in the **Data Source** section with the credentials with which you have access to the **Enrollment ID / Billing Account ID** with valid permissions, as shown in step 3, below.
+
+    :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/data-source-credentials-parameters.png" alt=text="Screenshot of Data source Credentials Parameters.":::
+
+1. Once the above steps are validated, go back to the app workspace and click on the **Refresh** option.
+
+    :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/data-refresh.png" alt=text="Screenshot of Data Refresh.":::
+
+1. Once the dataset has refreshed successfully, click the **Update App** option at the top-right corner of the app workspace.
+
+    :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/updating-app.png" alt=text="Screenshot of Updating App.":::
 
 
 ### Additional resources
@@ -206,7 +213,7 @@ No. Carbon emissions from Azure services are reported as Microsoft's scope 1 and
 
 **Why are my emissions from use of the Microsoft cloud so much lower than they would be if I were using an on-premises solution?**
 
-Microsoft conducted [a study, published in 2018](https://blogs.microsoft.com/on-the-issues/2018/05/17/microsoft-cloud-delivers-when-it-comes-to-energy-efficiency-and-carbon-emission-reductions-study-finds/) that evaluated the difference between the Microsoft cloud and on-premises or traditional datacenters. The results show that Azure Compute and Storage are between 52 and 79 percent more energy-efficient than traditional enterprise datacenters, depending on the specific comparison too low, medium, or high efficiency on-premises alternative being made. When taking into account our renewable energy purchases, Azure is between 79 and 98 percent more carbon efficient. These savings are due to four key features of the Microsoft Cloud: IT operational efficiency, IT equipment efficiency, datacenter infrastructure efficiency, and renewable electricity.
+Microsoft conducted [a study, published in 2018](https://blogs.microsoft.com/on-the-issues/2018/05/17/microsoft-cloud-delivers-when-it-comes-to-energy-efficiency-and-carbon-emission-reductions-study-finds/) that evaluated the difference between the Microsoft cloud and on-premises or traditional datacenters. The results show that Azure Compute and Storage are between 52 and 79 percent more energy-efficient than traditional enterprise datacenters, depending on the specific comparison to low, medium, or high efficiency on-premises alternative being made. When taking into account our renewable energy purchases, Azure is between 79 and 98 percent more carbon efficient. These savings are due to four key features of the Microsoft Cloud: IT operational efficiency, IT equipment efficiency, datacenter infrastructure efficiency, and renewable electricity.
 
 **If Microsoft's operations are carbon neutral and powered by renewables, why aren't customer emissions from Azure services zero?**
 
