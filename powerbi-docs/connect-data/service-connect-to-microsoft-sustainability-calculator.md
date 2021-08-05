@@ -35,10 +35,15 @@ To access the Microsoft Sustainability Calculator, you’ll need the following i
 
 2. See whether the First-Party App is already in your tenant. Follow the steps below to verify the App ID:
    1. Sign into the [Azure portal](https://portal.azure.com).
+
    2. Go to **Azure Active Directory**.
+
    3. Go to **Enterprise applications**.
+
    4. In the **Application type** field, select **Microsoft applications** and click **Apply**.
+
    5. In the search field, enter **D365-ES-CustomerEnrollmentService**.
+
    6. Verify that **D365-ES-CustomerEnrollmentService** is in the list. Other applications may have similar names, so make sure you find the correct application with the app ID **cdab484a-9bdc-4c3a-9df3-a90d95040bcf**.
 
 3. If the application is already in the list, you can continue on with installing the Power BI App.
@@ -61,16 +66,24 @@ To access the Microsoft Sustainability Calculator, you’ll need the following i
         :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/powershell-interface.png" alt-text="Screenshot of powershell interface.":::
 
    5. Run the command **Install-Module AzureAD**. Enter **A** to install the module.
+
    6. Run the command **Get-InstalledModule -Name "AzureAD"** to verify that the module is installed.
+
    7. Run the command **Connect-AzureAD -Confirm** to run authentication.
+
    8. Run the command **New-AzureADServicePrincipal -AppId cdab484a-9bdc-4c3a-9df3-a90d95040bcf**.         
 
 5. After adding the App ID, use the following steps to verify that the app ID is in your tenant.
    1. Sign into the [Azure portal](https://portal.azure.com).
+
    2. Go to **Azure Active Directory**.
+
    3. Go to **Enterprise applications**.
+
    4. In the **Application type** field, select **Microsoft applications** and click on **Apply** button.
+
    5. In the search field, enter **D365-ES-CustomerEnrollmentService**.
+
    6. Verify that **D365-ES-CustomerEnrollmentService** is in the list. Other applications might have similar names. Therefore, make sure that you find the correct application with the app ID **cdab484a-9bdc-4c3a-9df3-a90d95040bcf**.
 
     If the app ID is in your tenant, you can proceed with installing the Power BI App.
@@ -90,7 +103,9 @@ This procedure applies to EA customers only.
 This procedure applies to MCA/CSP customers only.
 
 1. In the [Azure portal](https://portal.azure.com), navigate to **Cost Management + Billing**.
+
 2. Select your billing account.
+
 3. Under **Settings**, select **Properties**. Your billing account ID will display under **Billing account**.
 
    ![Find billing account ID](media/service-connect-to-microsoft-sustainability-calculator/billing-account-id.png)
