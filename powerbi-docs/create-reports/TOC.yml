@@ -17,6 +17,10 @@
       href: desktop-dimensional-model-report.md
     - name: "Power BI service: From Excel to report"
       href: service-from-excel-to-stunning-report.md
+    - name: "Explore a Power BI sample"
+      href: sample-tutorial-connect-to-the-samples.md
+    - name: "Create a decomposition tree"
+      href: sample-tutorial-decomp-tree.md
     - name: "Online course: Paginated reports"
       href: ../learning-catalog/paginated-reports-online-course.md
     - name: Create a paginated report and upload
@@ -40,8 +44,6 @@
       href: sample-procurement.md
     - name: "Retail Analysis sample"
       href: sample-retail-analysis.md 
-    - name: "Explore Retail Analysis sample"
-      href: sample-tutorial-connect-to-the-samples.md
     - name: "Sales and Marketing sample"
       href: sample-sales-and-marketing.md
     - name: "Supplier Quality Analysis sample"

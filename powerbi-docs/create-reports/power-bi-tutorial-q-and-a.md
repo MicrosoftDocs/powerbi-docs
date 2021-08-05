@@ -6,7 +6,7 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 05/13/2019
+ms.date: 08/02/2021
 ms.custom: video-qMf7OLJfCz8
 LocalizationGroup: Ask questions of your data
 ---
@@ -22,7 +22,7 @@ Q&A is interactive, even fun. Often, one question leads to others as the visuali
 
 ## Part 1: Use Q&A on a dashboard in the Power BI service
 
-In the Power BI service (app.powerbi.com), a dashboard contains tiles pinned from one or more datasets, so you can ask questions about any of the data contained in any of those datasets. To see what reports and datasets were used to create the dashboard, select **View related** from the menu bar.
+In the Power BI service (app.powerbi.com), a dashboard contains tiles pinned from one or more datasets, so you can ask questions about any of the data contained in any of those datasets. To see what reports and datasets were used to create the dashboard, select **More options (...)** from the menu bar, and then select **See related content**.
 
 ![View related reports and datasets](media/power-bi-tutorial-q-and-a/power-bi-view-related.png)
 
@@ -32,11 +32,7 @@ The Q&A question box is located in the upper-left corner of your dashboard, wher
 
 The answer to your question is displayed as an interactive visualization and updates as you modify the question.
 
-1. Open a dashboard and place your cursor in the question box. In the upper-right corner, select **New Q&A experience**.
-
-    ![Power BI New Q&A experience](media/power-bi-tutorial-q-and-a/power-bi-qna-new-experience.png)
-
-1. Even before you start typing, Q&A displays a new screen with suggestions to help you form your question. You see phrases and complete questions containing the names of the tables in the underlying datasets and may even see complete questions listed if the dataset owner has created [featured questions](service-q-and-a-create-featured-questions.md),
+1. Open a dashboard and place your cursor in the question box. Even before you start typing, Q&A displays a new screen with suggestions to help you form your question. You see phrases and complete questions containing the names of the tables in the underlying datasets and may even see complete questions listed if the dataset owner has created [featured questions](service-q-and-a-create-featured-questions.md),
 
    ![Q&A suggested questions](media/power-bi-tutorial-q-and-a/power-bi-qna-suggested-questions.png)
 
@@ -66,19 +62,19 @@ The answer to your question is displayed as an interactive visualization and upd
 
 ## Part 2: Use Q&A in a report in Power BI service or Power BI Desktop
 
-Use Q&A to explore your dataset and to add visualizations to the report and to dashboards. A report is based on a single dataset and may be completely blank or contain pages full of visualizations. But just because a report is blank, doesn't mean there isn't any data for you to explore -- the dataset is linked to the report and is waiting for you to explore and create visualizations.  To see which dataset is being used to create a report, open the report in Power BI service Reading view and select **View related** from the menubar.
+Use Q&A to explore your dataset and to add visualizations to the report and to dashboards. A report is based on a single dataset and may be completely blank or contain pages full of visualizations. But just because a report is blank, doesn't mean there isn't any data for you to explore -- the dataset is linked to the report and is waiting for you to explore and create visualizations.  To see which dataset is being used to create a report, open the report in Power BI service Reading view and select **More options (...)** > **See related content** from the menu bar.
 
 ![View related datasets](media/power-bi-tutorial-q-and-a/power-bi-view-related.png)
 
 To use Q&A in reports, you must have edit permissions for the report and underlying dataset. In the [Q&A for consumers](../consumer/end-user-q-and-a.md) article, we refer to this as a *creator* scenario. If instead you're *consuming* a report that has been shared with you, Q&A isn't available.
 
-1. Open a report in Editing view (Power BI service) or Report view (Power BI Desktop) and select **Ask a question** from the menu bar.
-
-    **Power BI Desktop**    
-    ![Select Ask A Question in Power BI Desktop](media/power-bi-tutorial-q-and-a/power-bi-desktop-question.png)
+1. In Power BI service, open a report in Editing view and select **Ask a question** from the menu bar. In Power BI Desktop Report view, select **Q&A** from the **Insert** tab.
 
     **Service**    
     ![Select Ask a question in the Power BI service](media/power-bi-tutorial-q-and-a/power-bi-service.png)
+
+    **Power BI Desktop**    
+    ![Select Ask A Question in Power BI Desktop](media/power-bi-tutorial-q-and-a/power-bi-desktop-question.png)
 
 2. A Q&A question box displays on your report canvas. In the example below, the question box displays on top of another visualization. This is fine, but it might be better to add a blank page to the report before asking a question.
 
@@ -101,7 +97,7 @@ To use Q&A in reports, you must have edit permissions for the report and underly
    If you've created the visualization in Power BI service, you can even [pin it to a dashboard](service-dashboard-pin-tile-from-q-and-a.md).
 
 ## Tell Q&A which visualization to use
-With Q&A, not only can you ask your data to speak for itself, you can tell Power BI how to display the answer. Just add "as a <visualization type>" to the end of your question.  For example, "show inventory volume by plant as a map" and "show total inventory as a card".  Try it for yourself.
+With Q&A, not only can you ask your data to speak for itself, you can tell Power BI how to display the answer. Just add "as a \<visualization type>" to the end of your question.  For example, "show inventory volume by plant as a map" and "show total inventory as a card".  Try it for yourself.
 
 ## Considerations and troubleshooting
 - If you've connected to a dataset using a live connection or gateway, Q&A needs to be [enabled for that dataset](service-q-and-a-direct-query.md).

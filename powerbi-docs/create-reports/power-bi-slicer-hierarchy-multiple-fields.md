@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/27/2021
+ms.date: 08/02/2021
 ms.custom: pbibetadocbug
 LocalizationGroup: Create reports
 ---
@@ -24,7 +24,7 @@ When you add multiple fields to the slicer, by default it displays an arrow, or 
 :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-arrow.png" alt-text="Screenshot of Hierarchy slicer dropdown in Power B I.":::
  
  
-When you select one or more children for an item, you see a semi-selected circle for the top-level item.
+When you select one or more children for an item, you see a semi-selected square for the top-level item.
  
 :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-semi-selected.png" alt-text="Screenshot of Single-selection hierarchy slicer in Power B I.":::
 
