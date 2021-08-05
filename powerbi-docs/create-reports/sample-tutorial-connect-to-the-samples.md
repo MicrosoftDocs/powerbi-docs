@@ -112,6 +112,8 @@ THe Q&A feature in Power BI lets you explore your data in your own words, asking
 
    ![District Monthly Sales report page](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
 
+1. Check out [Dive deeper into the data](sample-retail-analysis.md#dive-deeper-into-the-data) in the article "Retail Analysis sample for Power BI: Take a tour" for suggestions on exploring the report.
+
 ### Explore Quick Insights
 
 One easy way of exploring a dataset is to run [quick insights](../consumer/end-user-insights.md). 
@@ -119,7 +121,7 @@ One easy way of exploring a dataset is to run [quick insights](../consumer/end-u
 1. On the **Deatasets** tab, select **More options** (...), and then choose **Get quick insights**. 
 1. When the insights are ready, select **View insights**.
      
-    ![Insights report](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
+    ![Insights report](media/sample-tutorial-connect-to-the-samples/retail-quick-insights.png)
 
 1. If an insight is interesting, pin it to the dashboard.
 
