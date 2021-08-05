@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 08/06/2021
 LocalizationGroup: Share your work
 ---
-# Manage dataset access permissions
+# Manage dataset access permissions (preview)
 
 The dataset access management page enables you monitor and manage access to your dataset. It has two tabs that help you control access to your dataset:
 * **Direct access**: Enables you to monitor, add, modify, or delete access permissions for individual named users.
