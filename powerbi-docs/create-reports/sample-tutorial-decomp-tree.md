@@ -77,11 +77,11 @@ Let's add a decomposition tree, or decomp tree, for ad hoc analysis.
 
     :::image type="content" source="media/sample-tutorial-decomp-tree/retail-visualizations-decomp-tree.png" alt-text="Screenshot of the Visualizations pane, Decomposition tree.":::
 
-1. Drag the edge so it fills most of the page. Decomposition trees can get big.
+1. Drag the edge so it fills most of the page. Decomposition trees can get wide.
 
     :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-resize.png" alt-text="Resize the decomposition tree.":::
 
-1. Decomp trees analyze one value by a number of categories. Expand **Sales** > **This Year Sales** and select **Value**. Power BI adds **Value** to the **Analyze** box.
+1. Decomp trees analyze one value by many categories. Expand **Sales** > **This Year Sales** and select **Value**. Power BI adds **Value** to the **Analyze** box.
 
     :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-analyze-sales.png" alt-text="Analyze Sales Value in the decomp tree.":::
 
