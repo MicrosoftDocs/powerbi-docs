@@ -295,21 +295,21 @@ To manage which portion of the data your users can view, use one of these method
 
 ## Content rendering
 
-To resolve performance problems such as slow rendering in embedded Power BI items (such as reports and dashboards), review this section.
-
-### Verify that the Power BI item loads in the Power BI embedded analytics playground
-
-To rule out issues with your application, verify that the Power BI item can be viewed in the [Power BI embedded analytics playground](https://aka.ms/pbieplayground).
+To resolve rendering issues in embedded Power BI items (such as reports and dashboards), review this section.
 
 ### Verify that the Power BI item loads in Power BI service
 
 To rule out issues with your application *or the embedding APIs*, verify that the item can be viewed in the Power BI service (powerbi.com).
 
+### Verify that the Power BI item loads in the Power BI embedded analytics playground
+
+To rule out issues with your application, verify that the Power BI item can be viewed in the [Power BI embedded analytics playground](https://aka.ms/pbieplayground).
+
 ### Verify that your access token didn't expire
 
 For security purposes, access tokens (An Azure AD token or an embed token) have a limited lifetime. You should constantly monitor your access token and refresh it if needed. For more information see [Refresh the access token](/javascript/api/overview/powerbi/refresh-token).
 
-### Performance
+## Performance
 
 To get the best performing embedded content, we recommend that you follow the [Power BI embedded analytics best practices](embedded-performance-best-practices.md).
 
