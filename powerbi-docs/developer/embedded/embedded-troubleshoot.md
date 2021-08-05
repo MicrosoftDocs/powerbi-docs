@@ -258,10 +258,10 @@ After acquiring the IError object, you should look at the appropriate common err
 | TokenExpired | Access token has expired, resubmit with a new access token | 403 | Expired token  |
 | PowerBIEntityNotFound | Get report failed | 404 | <li> Wrong Report ID <li> Report doesn't exist  |
 | Invalid parameters | powerbiToken parameter not specified | N/A | <li> No access token provided <li> No Report ID provided |
-| LoadReportFailed | Fail to initialize - Couldn't resolve cluster | 403 | * Bad access token * Embed type doesn't match token type |
+| LoadReportFailed | Fail to initialize - Couldn't resolve cluster | 403 | <li> Bad access token <li> Embed type doesn't match token type |
 | PowerBINotAuthorizedException | Get report failed | 401 | <li> Wrong group ID <li> Unauthorized group |
-| TokenExpired | Access token has expired, resubmit with a new access token. Couldn't render a report visual titled: <visual title> | N/A | Query data Expired token |
-| OpenConnectionError | Can't display the visual. Couldn't render a report visual titled: <visual title> | N/A | Capacity paused or deleted while a report related to the capacity was open in a session |
+| TokenExpired | Access token has expired, resubmit with a new access token. Couldn't render a report visual titled: *visual title* | N/A | Query data Expired token |
+| OpenConnectionError | Can't display the visual. Couldn't render a report visual titled: *visual title* | N/A | Capacity paused or deleted while a report related to the capacity was open in a session |
 | ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server and try again. | N/A | <li> Capacity paused <li> Capacity deleted |
 
 ### Typical errors when embedding for non-Power BI users (using an Embed Token)
@@ -275,8 +275,8 @@ After acquiring the IError object, you should look at the appropriate common err
 | Invalid parameters | powerbiToken parameter not specified | N/A | <li> No access token provided <li> No Report ID provided |
 | LoadReportFailed | Fail to initialize - Couldn't resolve cluster | 403 | Wrong token type, Bad Token |
 | PowerBINotAuthorizedException | Get   report failed | 401 | Wrong/unauthorize group ID |
-| TokenExpired | Access token has expired, resubmit with a new access token. Couldn't render a report visual titled: <visual title> | N/A | Query data Expired token |
-| OpenConnectionError | Can't display the visual. Couldn't render a report visual titled: <visual title> | N/A | Capacity paused or deleted while a report related to the capacity was open in a session |
+| TokenExpired | Access token has expired, resubmit with a new access token. Couldn't render a report visual titled: *visual title* | N/A | Query data Expired token |
+| OpenConnectionError | Can't display the visual. Couldn't render a report visual titled: *visual title* | N/A | Capacity paused or deleted while a report related to the capacity was open in a session |
 | ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server and try again. | N/A | <li> Capacity paused <li> Capacity deleted |
 
 ## Datasets
