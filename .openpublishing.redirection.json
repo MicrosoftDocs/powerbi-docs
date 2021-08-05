@@ -876,6 +876,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/consumer/end-user-visual-type.md",
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-preview-features.md",
             "redirect_url": "/power-bi/consumer/end-user-preview-features",
             "redirect_document_id": true

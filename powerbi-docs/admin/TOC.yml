@@ -76,7 +76,7 @@
         href: service-security-sensitivity-label-custom-help-link.md
       - name: Audit schema for sensitivity labels
         href: service-security-sensitivity-label-audit-schema.md
-    - name: "Enhanced metadata scanning"
+    - name: "Enhanced metadata scanning (preview)"
       href: service-admin-enhanced-metadata-scanning.md
   - name: How to
     items: 
