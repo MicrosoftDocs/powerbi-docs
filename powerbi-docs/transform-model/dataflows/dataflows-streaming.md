@@ -337,7 +337,7 @@ You can also see the details of a specific record (a "cell" in the table) by sel
 
 ### Static preview for transformations and outputs
 
-After you add and set up any steps in the diagram view, you can test its behavior by selecting the static data button :::image type="icon" source="media/dataflows-streaming/dataflows-streaming-26.png":::.
+After you add and set up any steps in the diagram view, you can test their behavior by selecting the static data button :::image type="icon" source="media/dataflows-streaming/dataflows-streaming-26.png":::.
 
 After you do, streaming dataflows evaluate all transformation and outputs that are configured correctly. Streaming dataflows then display the results in the static data preview, as shown in the following image.
 
@@ -489,7 +489,7 @@ For more information about the feature, see [Automatic page refresh in Power BI]
 * Capacities smaller than A3 don't allow the use of streaming dataflows.
 * If dataflows or the enhanced calculation engine is not enabled in a tenant, you can't create or run streaming dataflows.
 * Workspaces connected to a storage account are not supported.
-* Each streaming dataflow can provide up to 1 megabytes per second of throughput.
+* Each streaming dataflow can provide up to 1 megabyte per second of throughput.
 
 ### Availability
 
