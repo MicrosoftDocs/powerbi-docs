@@ -7,7 +7,7 @@ ms.reviewer: yardena
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 07/20/2021
+ms.date: 08/06/2021
 LocalizationGroup: Share your work
 ---
 # Manage dataset access permissions

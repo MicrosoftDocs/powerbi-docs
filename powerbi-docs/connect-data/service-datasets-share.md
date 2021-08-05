@@ -31,7 +31,7 @@ To share your dataset
     ![Screenshot of the Share dataset dialog.](media/service-datasets-share/power-bi-dataset-grant-access-dialog.png)
 
     * **Allow recipients to share this dataset**: This option allows the recipients to grant access to other users via sharing.
-    * **Allow recipients to build content with the data associated with this dataset**: This option allows the recipients to build new reports, and dashboards based on the data associated with this dataset.
+    * **Allow recipients to build content with the data associated with this dataset**: This option grants the recipients [Build permission](service-datasets-build-permissions.md) on the dataset, which enables them to build new reports and dashboards based on the data associated it.
 
         If you clear this checkbox, the user will get **read-only** permission on the dataset. Read-only permission allows them to explore the dataset on the [dataset's info page](service-datasets-hub.md#view-dataset-details-and-explore-related-reports) but doesn't allow them to build new content based on the dataset.
     * **Send an email notification**: When this option is selected, an email will be sent to the recipients notifying them that they have been granted access to the dataset. You can add an optional message to the email message.
