@@ -126,7 +126,7 @@ The Q&A feature in Power BI lets you explore your data in your own words, asking
 
 One easy way of exploring a *dataset* is to run [quick insights](../consumer/end-user-insights.md). 
 
-1. On the **Datasets** tab, select **More options** (...), and then choose **Get quick insights**. 
+1. On the **Datasets + dataflows** tab, select **More options (...)** next to the **Retail Analysis Sample** dataset, then choose **Get quick insights**.
 1. When the insights are ready, select **View insights**.
      
     ![Insights report](media/sample-tutorial-connect-to-the-samples/retail-quick-insights.png)
@@ -135,11 +135,11 @@ One easy way of exploring a *dataset* is to run [quick insights](../consumer/end
 
 ### Create a report from the dataset
 
-When someone shares an app with colleagues, they typically want to share only the insights, rather than provide direct access to the data. On the **Datasets** tab, you have several options for exploring your dataset. However, you can't view the rows and columns of your data, as you can in Power BI Desktop or Excel. 
+On the **Datasets** tab, you have several options for exploring your dataset. However, you can't view the rows and columns of your data, as you can in Power BI Desktop or Excel. One way to explore the dataset is to create your own visualizations and reports from scratch. 
 
 ![Retail Analysis Sample dataset entry](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
    
-1. One way of exploring the dataset is by creating your own visualizations and reports from scratch. Select **More options (...)** > **Create report**.
+1. Select **More options (...)** next to the **Retail Analysis Sample** dataset, then choose **Create report**.
    
    ![Screenshot showing the Create report menu item.](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png)
    
@@ -147,7 +147,7 @@ When someone shares an app with colleagues, they typically want to share only th
    
    ![Brand-new report](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
 
-1. Now you can create any visuals you want, or you can try the tutorial [Create a decomposition tree with a Power BI sample](sample-tutorial-decomp-tree.md), which uses the same data.
+1. Now you can create any visuals you want, or you can try the tutorial [Create a decomposition tree with a Power BI sample](sample-tutorial-decomp-tree.md#create-a-decomp-tree), which uses the same data.
 
 ## Download the sample in Power BI Desktop 
 

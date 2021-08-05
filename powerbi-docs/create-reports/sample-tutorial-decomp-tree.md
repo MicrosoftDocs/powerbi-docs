@@ -15,7 +15,7 @@ LocalizationGroup: Samples
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-In this tutorial, you start with a built-in Power BI sample dataset and create a report with a *[decomposition tree](../visuals/power-bi-visualization-decomposition-tree.md)*, an interactive visual for ad hoc exploration and conducting root cause analysis. It is also an artificial intelligence (AI) visualization, so you can ask it to find the next dimension to drill down into based on certain criteria.
+In this tutorial, you start with a built-in Power BI sample dataset and create a report with a *[decomposition tree](../visuals/power-bi-visualization-decomposition-tree.md)*, an interactive visual for ad hoc exploration and conducting root cause analysis. It is also an artificial intelligence (AI) visualization, so you can ask it to find the next category, or *dimension*, to drill down into based on certain criteria.
 
 :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-final.png" alt-text="Completed decomposition tree.":::
 This tutorial shows you how to: 
@@ -52,15 +52,13 @@ If you want to familiarize yourself with the built-in sample in this tutorial an
 
 1. Select **Retail Analysis Sample** > **Connect**.
 
-   ![Connect button](media/sample-tutorial-connect-to-the-samples/pbi_retailanalysissampleconnect.png)
-
 ### Create a report from the dataset
 
-When someone shares an app with colleagues, they typically want to share only the insights, rather than provide direct access to the data. On the **Datasets** tab, you have several options for exploring your dataset.
+On the **Datasets + dataflows** tab, you have several options for exploring your dataset. In this tutorial, you're going to explore the dataset is by creating your own report from scratch. 
 
 ![Retail Analysis Sample dataset entry](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
    
-1. One way of exploring the dataset is by creating your own reports from scratch. Select **More options (...)** > **Create report**.
+1. Select **More options (...)** > **Create report**.
    
    ![Screenshot showing the Create report menu item.](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png)
    
