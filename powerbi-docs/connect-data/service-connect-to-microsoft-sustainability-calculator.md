@@ -46,19 +46,19 @@ To access the Microsoft Sustainability Calculator, you’ll need the following i
 4. If the application isn't in the list, you must add it to your tenant. Follow the steps below:
    1. In the **Azure portal**, on the toolbar, select the button to open **Azure Cloud Shell**.
 
-        :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/azure-portal-tool-bar-header.png" alt=text="Screenshot of Azure portal tool bar header.":::
+        :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/azure-portal-tool-bar-header.png" alt-text="Screenshot of Azure portal tool bar header.":::
 
    2. Click the **Powershell** option.
 
-        :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/azure-cloud-shell.png" alt=text="Screenshot of Azure cloud shell.":::
+        :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/azure-cloud-shell.png" alt-text="Screenshot of Azure cloud shell.":::
 
    3. Click the **Create Storage** option.
 
-        :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/create-storage.png" alt=text="Screenshot of create storage.":::
+        :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/create-storage.png" alt-text="Screenshot of create storage.":::
 
    4. After successful storage creation, you will get the following **Powershell interface**.
 
-        :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/powershell-interface.png" alt=text="Screenshot of powershell interface.":::
+        :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/powershell-interface.png" alt-text="Screenshot of powershell interface.":::
 
    5. Run the command **Install-Module AzureAD**. Enter **A** to install the module.
    6. Run the command **Get-InstalledModule -Name "AzureAD"** to verify that the module is installed.
@@ -175,19 +175,19 @@ Follow the steps below to make sure your dataset configurations are set correctl
 
 1. Open the **Scheduled Refresh** option in the dataset settings and make sure the **Enrollment ID / Billing Account ID** is as per the format mentioned [here](#ea-direct-customers).
 
-    :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/schedule-refresh.png" alt=text="Screenshot of schedule refresh.":::
+    :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/schedule-refresh.png" alt-text="Screenshot of schedule refresh.":::
 
 1. Open the **Parameters** section and configure the data source once again in the **Data Source** section with the credentials with which you have access to the **Enrollment ID / Billing Account ID** with valid permissions, as shown in step 3, below.
 
-    :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/data-source-credentials-parameters.png" alt=text="Screenshot of Data source Credentials Parameters.":::
+    :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/data-source-credentials-parameters.png" alt-text="Screenshot of Data source Credentials Parameters.":::
 
 1. Once the above steps are validated, go back to the app workspace and click on the **Refresh** option.
 
-    :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/data-refresh.png" alt=text="Screenshot of Data Refresh.":::
+    :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/data-refresh.png" alt-text="Screenshot of Data Refresh.":::
 
 1. Once the dataset has refreshed successfully, click the **Update App** option at the top-right corner of the app workspace.
 
-    :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/updating-app.png" alt=text="Screenshot of Updating App.":::
+    :::image type="content" source="media/service-connect-to-microsoft-sustainability-calculator/updating-app.png" alt-text="Screenshot of Updating App.":::
 
 
 ### Additional resources
