@@ -11,7 +11,7 @@ ms.topic: troubleshooting
 ---
 # Use default system credentials for web proxy in Power BI Report Builder
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
 Web requests issued by Power BI Report Builder don't use web proxy credentials. In networks that use a proxy server, Power BI Report Builder may not be able to successfully make web requests.
 
