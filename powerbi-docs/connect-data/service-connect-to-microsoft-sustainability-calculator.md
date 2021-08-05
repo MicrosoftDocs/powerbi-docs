@@ -126,7 +126,7 @@ You’ll need your Azure enrollment number or Billing AccountID with valid permi
 
 1. Select **Connect your data**. In the **Connect to Microsoft Sustainability Calculator (Preview)** window, do one of the following sets of steps, depending on whether you're an EA Direct or an MCA/MPA (CSP with Azure Plan):
 
-    **EA Direct customers**
+    #### EA Direct customers
     > [!Note]
     > Make sure you have installed [First Party App ID](#addition-of-first-party-app-id-in-your-azure-tenant) in your Azure tenant.
 
@@ -134,7 +134,7 @@ You’ll need your Azure enrollment number or Billing AccountID with valid permi
 
     ![EA Direct customers connect to Microsoft Sustainability Calculator](media/service-connect-to-microsoft-sustainability-calculator/connect-enterprise-agreement.png)
 
-    **MCA / MPA (CSP with Azure Plan) customers**
+    #### MCA / MPA (CSP with Azure Plan)
     Under **EnrollmentIDorBillingAccountID**, enter your billing account ID. For more information about obtaining your billing account ID, see [Find your company's billing account ID](#find-your-companys-billing-account-id).
 
     ![MCA/CSP customers connect to Microsoft Sustainability Calculator](media/service-connect-to-microsoft-sustainability-calculator/connect-microsoft-customer-agreement.png)
