@@ -295,13 +295,15 @@ To manage which portion of the data your users can view, use one of these method
 
 ## Content rendering
 
-Problems with rendering and performance etc.
+To resolve performance problems such as slow rendering in embedded Power BI items (such as reports and dashboards), review this section.
 
-### Verify that the Power BI item loads in Power BI service and playground
+### Verify that the Power BI item loads in the Power BI embedded analytics playground
 
-To rule out issues with your application or the embedding APIs, verify that the item can be viewed in the Power BI service (powerbi.com). +++ add playground
+To rule out issues with your application, verify that the Power BI item can be viewed in the [Power BI embedded analytics playground](https://aka.ms/pbieplayground).
 
-You can verify ...application... playground
+### Verify that the Power BI item loads in Power BI service
+
+To rule out issues with your application *or the embedding APIs*, verify that the item can be viewed in the Power BI service (powerbi.com).
 
 ### Verify that your access token didn't expire
 
