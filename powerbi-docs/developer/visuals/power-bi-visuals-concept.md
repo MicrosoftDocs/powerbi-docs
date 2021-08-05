@@ -23,7 +23,7 @@ Actions and subsequent updates in Power BI visuals occur in one of these three p
 
 The following figure depicts how common visual-based actions that a user takes, like selecting a bookmark, are processed in Power BI.
 
-![Power BI visual action diagram](media/power-bi-visuals-concept/visual-concept.svg)
+![Power BI visual action diagram](media/power-bi-visuals-concept/visual-concept.png)
 
 The [`update` method](visual-api.md#update) is called whenever the size of the visual of any one of its values changes. The `update` method contains the main logic of the visual and is responsible for rendering a chart or visualizing data.
 
