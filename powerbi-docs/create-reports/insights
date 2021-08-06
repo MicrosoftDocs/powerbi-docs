@@ -1,0 +1,133 @@
+---
+title: Insights
+description: 'Get insights in reports'
+author: aphilip94
+ms.author: anphil
+ms.reviewer: 
+ms.service: powerbi
+ms.subservice: powerbi-ai
+ms.custom: 
+ms.topic: how-to
+ms.date: 08/06/2021
+LocalizationGroup: 
+---
+# Get insights in reports
+
+ Insights help users easily explore and find insights such as anomalies, trends, KPI analysis in their data as they interact and consume their reports in Power BI service.
+ 
+ ![Screenshot showing Insights](media/power-bi-insights/insights.gif)
+ 
+## License requirements
+
+Automated Insights is supported for reports in Premium or Premium Per User (PPU) workspaces. You can also use the feature in non-premium workspaces if you have a PPU license, but toast notifications will not be supported. 
+
+ 
+## Toast notification
+
+You will receive toast notifications if there are “Top” insights in your data. Note that Toasts are supported only in Premium workspaces.
+
+ ![Screenshot showing toast](media/power-bi-insights/toast.png)
+ 
+Click on the “See insights” button to open the Insights pane.  
+Choose “Show me later” if you’d not like to get further notifications in the current session for this report. 
+
+If you usually dismiss these notifications or do not engage with them, they will be disabled for the current session. You can click on “Keep Showing” to continue getting notifications
+
+ ![Screenshot showing toast for dismisses](media/power-bi-insights/toast-dismiss.png)
+ 
+ To stop getting notifications for a report, turn it off in the report settings as shown below:
+ 
+ ![Screenshot showing report setting](media/power-bi-insights/report-setting.png)
+ 
+ 
+## Get insights on reports and visuals
+
+Clicking on the “Get insights” in the action bar also brings up the Insights pane.  Note that the light bulb turns yellow when there are “Top” insights in your data. 
+![Screenshot showing Get Insights button](media/power-bi-insightsn/get-insights-button.png)
+
+“Get insights” button is also available on the visual settings. Clicking on this will show you insights about just this visual.
+![Screenshot showing Get Insights on visual](media/power-bi-insightsn/get-insights-button-visual.png)
+
+## Insights
+The Insights pane currently shows you three types of insights – Anomalies, Trends and KPI analysis.
+The “Top” tab shows you key insights that are noteworthy based on factors like recency, significance of the trend/anomaly. “All” tab shows you both Top insights and additional insights. 
+![Screenshot showing Insights pane](media/power-bi-insightsn/insights-pane.png)
+
+### Anomalies
+An anomaly is an abnormality in time-series data, such as unexpected spikes and dips in the data.  The algorithm computes a boundary around what’s considered a normal or expected value. Any value found outside this boundary is marked as an anomaly. Check out this technical blog for more details about the algorithm.  There are three types of anomaly insights:
+Significant Anomaly: 
+The anomaly has a high score. Anomaly score indicates how far the point is from the expected range. 
+Recent Anomaly: 
+The most recent anomaly in the measure.
+Anomaly summary: 
+This insight type summarizes multiple anomalies in the measure.
+
+### Trends
+A trend occurs when a prolonged increase or decrease appears in time-series data. There are a series of steps the Power BI algorithm uses to find meaningful trends: It first performs data smoothening, interpolation, time-series sampling. Then trends are identified for statistical significance based on the slope and length of a change in value, and then the algorithm removes noise like seasonality and outliers. For example, if sales jump in December, the algorithm won't mark that as a noteworthy trend because it's common for sales to jump around the holidays.
+Long trend:
+The trend is significant and is the longest trend within a single series or across multiple series in a visual. 
+Steep trend:
+The trend is significant and is the steepest trend within a single series or across multiple series in a visual.
+Recent trend:
+The trend is significant and is the most recent trend within a single series or across multiple series in a visual.
+Trend reversal:
+Recent trend in a single series or across multiple series in a visual where the reversal is significant compared to the previous trend segment.
+
+### KPI Analysis
+KPI analysis with a target looks at the variance of the current value to its target, and it's considered significant if the variance is either very high or very low compared to other segments. Whereas KPI analysis without a target looks at the value itself and flags ones that are significantly high or low compared to other segments. For example, Overall revenue is on track to reach the target. However, we detected that revenue for Product A is not on track.
+
+KPI Analysis without target (for Cards, Bar and Column charts) on the other hand looks at the value itself and flags ones that are significantly high or low compared to other segments. For example, Overall Customer Satisfaction has a value of 9. However, when we only look at Product A, it is significantly lower with a value of 4.
+
+Note that insights are computed every time you open a report or interact with a report such as changing pages, changing filters, or cross-filtering your data
+
+## Explanations
+You can click on the card to get more details about the insight. 
+Expand/collapse the cards under “Possible Explanations” to view/hide the explanation visuals and text. 
+
+### Anomalies
+When an anomaly in your data is flagged, Power BI runs analysis across different dimensions in your data model to look for spikes or dips in the measure that correlate to the anomaly. They are shown as possible explanations ranked by strength. Check out this documentation to learn more.	
+
+![Screenshot showing Anomaly explanations](media/power-bi-insights/anomalies-explanations.png)
+
+### Trends
+When a trend in your data is flagged, Power BI looks for and identifies the categories that most influenced the increase or decrease in the identified trend. Possible explanations are ranked based on the relative contributions from different categories to the increase or decrease in trend. Learn more here.
+
+![Screenshot showing Trend explanations](media/power-bi-insightn/trend-explanations.png)
+
+### KPI Analysis
+For KPI analysis explanations, Power BI looks for and identifies the categories that have significantly high or low values. For KPI analysis with target, possible explanations are ranked based on Z-scores of the difference of the value from the target. Whereas for KPI analysis without target, possible explanations are ranked based on the Z-scores of the value itself.
+
+![Screenshot showing KPI explanations](media/power-bi-insights/KPI-explanations.png)
+
+## Details
+If the insight talks about multiple anomalies, or trends, clicking on the insight card will show you the “Details” cards to help you choose the specific anomaly/trend you’d like to get explanations for.
+
+![Screenshot showing KPI explanations](media/power-bi-insights/Details.png)
+
+## Limitations
+1. If no insights found are found, you’ll be shown the following message. “We didn’t find any insights”.  This happens if:
+   a)	The data & visuals are not supported
+     o	 Anomalies and trend insights are supported on time series with numeric data on visuals such as Line chart, Area chart, Stacked Area chart, Stacked bar chart, Stacked column chart, Clustered bar chart, Clustered column chart, KPI. KPI analysis insight is supported on KPI, Gauge and Card.
+
+     o	Anomalies and trends are only supported for built-in date hierarchy or date time fields. They are not supported on custom date hierarchy. 
+  b)	The data does not have significant anomalies and trends. You can try filtering your data or check back later when there’s new data.
+  c)	In addition, the following functionality is not supported:
+    •	On-premises Reporting Services
+    •	Publish to Web
+    •	On-premises Analysis Services
+    •	Live Connection to Azure Analysis Services or SQL Server Analysis Services
+    •	MultiDimensional Analysis Services data sources
+    •	Power BI Report Server
+
+ 2.	Explanations are not supported in the following cases.           
+    •	TopN filters
+    •	Include/exclude filters
+    •	Some complex measure filters
+    •	Non-numeric measures
+    •	Use of "Show value as"
+    •	Filtered measures - filtered measures are visual level calculations with a specific filter applied (for example, Total Sales for France), and are used on some of the visuals created by the insights feature
+    •	Some measure types such as % grand total and measures from extension schemas
+    •	RLS: row level security
+
+  If no explanations are found, you’ll be shown the following message: “We didn’t find any significant explanations”. In this case, you can try bringing in more fields for the analysis.
+
