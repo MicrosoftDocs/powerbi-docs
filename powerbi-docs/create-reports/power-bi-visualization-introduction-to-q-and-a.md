@@ -1,6 +1,6 @@
 ---
-title: Create a visual with Power BI Q&A
-description: 'Learn to create a visual with Q&A in the Power BI service using the Retail Analysis sample'
+title: Create a Q&A visual in a dashboard
+description: 'Learn to create a Q&A visual in a dashboard the Power BI service using the Retail Analysis sample'
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -11,15 +11,15 @@ ms.date: 08/02/2021
 LocalizationGroup: Ask questions of your data
 ---
 
-# Create a visual with Power BI Q&A
+# Create a Q&A visual in a dashboard in Power BI
 
-Sometimes the fastest way to get an answer from your data is to ask a question using natural language.  In this article, we look at two different ways of creating the same visualization: first, asking a question with Q&A, and second, building it in a report. We use the Power BI service to build the visual in the report, but the process is almost identical using Power BI Desktop.
+Sometimes the fastest way to get an answer from your data is to ask a question using natural language.  In this article, we look at two different ways of creating the same visualization: first, asking a question with Q&A in a dashboard, and second, building it in a report. We use the Power BI service to build the visual in the report, but the process is almost identical using Power BI Desktop.
 
 ![Power BI filled chart](media/power-bi-visualization-introduction-to-q-and-a/power-bi-qna-create-visual.png)
 
 To follow along, you must use a report that you can edit, so we'll use one of the samples available with Power BI.
 
-## Create a visual with Q&A
+## Create a Q&A visual in a dashboard
 
 How would we go about creating this line chart using Q&A?
 
