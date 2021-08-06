@@ -406,7 +406,7 @@
           href: ../connect-data/service-r-packages-support.md
     - name: Natural language Q&A
       items: 
-      - name: "Create a Q&A visual"
+      - name: "Create a Q&A visual in a report"
         href: ../visuals/power-bi-visualization-q-and-a.md
       - name: "Teach Q&A to understand"
         href: ../natural-language/q-and-a-tooling-teach-q-and-a.md
@@ -414,7 +414,7 @@
         href: ../natural-language/q-and-a-best-practices.md
       - name: "Use Q&A to explore your data"
         href: power-bi-tutorial-q-and-a.md
-      - name: "Create a visual with Q&A"
+      - name: "Create a Q&A visual in a dashboard"
         href: power-bi-visualization-introduction-to-q-and-a.md
       - name: "Make Excel data work well with Q&A"
         href: service-prepare-data-for-q-and-a.md
