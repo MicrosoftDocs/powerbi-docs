@@ -55,22 +55,22 @@ The “Top” tab shows you key insights that are noteworthy based on factors li
 
 ### Anomalies
 An anomaly is an abnormality in time-series data, such as unexpected spikes and dips in the data.  The algorithm computes a boundary around what’s considered a normal or expected value. Any value found outside this boundary is marked as an anomaly. Check out this technical blog for more details about the algorithm.  There are three types of anomaly insights:
-Significant Anomaly: 
+- Significant Anomaly: 
 The anomaly has a high score. Anomaly score indicates how far the point is from the expected range. 
-Recent Anomaly: 
+- Recent Anomaly: 
 The most recent anomaly in the measure.
-Anomaly summary: 
+- Anomaly summary: 
 This insight type summarizes multiple anomalies in the measure.
 
 ### Trends
 A trend occurs when a prolonged increase or decrease appears in time-series data. There are a series of steps the Power BI algorithm uses to find meaningful trends: It first performs data smoothening, interpolation, time-series sampling. Then trends are identified for statistical significance based on the slope and length of a change in value, and then the algorithm removes noise like seasonality and outliers. For example, if sales jump in December, the algorithm won't mark that as a noteworthy trend because it's common for sales to jump around the holidays.
-Long trend:
+- Long trend:
 The trend is significant and is the longest trend within a single series or across multiple series in a visual. 
-Steep trend:
+- Steep trend:
 The trend is significant and is the steepest trend within a single series or across multiple series in a visual.
-Recent trend:
+- Recent trend:
 The trend is significant and is the most recent trend within a single series or across multiple series in a visual.
-Trend reversal:
+- Trend reversal:
 Recent trend in a single series or across multiple series in a visual where the reversal is significant compared to the previous trend segment.
 
 ### KPI Analysis
@@ -107,27 +107,27 @@ If the insight talks about multiple anomalies, or trends, clicking on the insigh
 ## Limitations
 1. If no insights found are found, you’ll be shown the following message. “We didn’t find any insights”.  This happens if:
    a)	The data & visuals are not supported
-     o	 Anomalies and trend insights are supported on time series with numeric data on visuals such as Line chart, Area chart, Stacked Area chart, Stacked bar chart, Stacked column chart, Clustered bar chart, Clustered column chart, KPI. KPI analysis insight is supported on KPI, Gauge and Card.
+     -	 Anomalies and trend insights are supported on time series with numeric data on visuals such as Line chart, Area chart, Stacked Area chart, Stacked bar chart, Stacked column chart, Clustered bar chart, Clustered column chart, KPI. KPI analysis insight is supported on KPI, Gauge and Card.
 
-     o	Anomalies and trends are only supported for built-in date hierarchy or date time fields. They are not supported on custom date hierarchy. 
+     -	Anomalies and trends are only supported for built-in date hierarchy or date time fields. They are not supported on custom date hierarchy. 
   b)	The data does not have significant anomalies and trends. You can try filtering your data or check back later when there’s new data.
   c)	In addition, the following functionality is not supported:
-    •	On-premises Reporting Services
-    •	Publish to Web
-    •	On-premises Analysis Services
-    •	Live Connection to Azure Analysis Services or SQL Server Analysis Services
-    •	MultiDimensional Analysis Services data sources
-    •	Power BI Report Server
+    - On-premises Reporting Services
+    - Publish to Web
+    -	On-premises Analysis Services
+    -	Live Connection to Azure Analysis Services or SQL Server Analysis Services
+    -	MultiDimensional Analysis Services data sources
+    -	Power BI Report Server
 
  2.	Explanations are not supported in the following cases.           
-    •	TopN filters
-    •	Include/exclude filters
-    •	Some complex measure filters
-    •	Non-numeric measures
-    •	Use of "Show value as"
-    •	Filtered measures - filtered measures are visual level calculations with a specific filter applied (for example, Total Sales for France), and are used on some of the visuals created by the insights feature
-    •	Some measure types such as % grand total and measures from extension schemas
-    •	RLS: row level security
+    - TopN filters
+    - Include/exclude filters
+    - Some complex measure filters
+    - Non-numeric measures
+    - Use of "Show value as"
+    - Filtered measures - filtered measures are visual level calculations with a specific filter applied (for example, Total Sales for France), and are used on some of the visuals created by the insights feature
+    - Some measure types such as % grand total and measures from extension schemas
+    - RLS
 
   If no explanations are found, you’ll be shown the following message: “We didn’t find any significant explanations”. In this case, you can try bringing in more fields for the analysis.
 
