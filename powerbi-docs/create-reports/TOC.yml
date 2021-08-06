@@ -344,9 +344,9 @@
         href: desktop-high-density-sampling.md
       - name: "High-density sampling in scatter charts"
         href: desktop-high-density-scatter-charts.md
-      - name: "Create small multiples (preview)"
+      - name: "Create small multiples"
         href: ../visuals/power-bi-visualization-small-multiples.md
-      - name: "Interact with small multiples (preview)"
+      - name: "Interact with small multiples"
         href: ../visuals/power-bi-visualization-small-multiples-interact.md
       - name: "Tables in reports and dashboards"
         href: ../visuals/power-bi-visualization-tables.md
