@@ -6,9 +6,9 @@ ms.author: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 04/14/2021
+ms.date: 08/05/2021
 ---
-# Intro to Power BI Q&A
+# Introduction: Use natural language to explore your data using Power BI Q&A
 
 Sometimes the fastest way to get an answer from your data is to perform a search over your data using natural language. The Q&A feature in Power BI lets you explore your data in your own words using natural language. Q&A is interactive, even fun. Often, one question leads to others as the visualizations reveal interesting paths to pursue. Asking the question is just the beginning. Travel through your data, refining or expanding your question, uncovering new information, zeroing in on details, or zooming out for a broader view. The experience is interactive and fast, powered by an in-memory storage. 
 
@@ -64,6 +64,7 @@ As you type your question, Q&A tries to instantly interpret and visualize the an
 - Area
 - Pie chart
 - Scatter/Bubble chart
+- Map
  
 ![Q&A visual results](media/qna-visual-results-date.png)
 
@@ -74,15 +75,15 @@ You can add Q&A to a report in Power BI Desktop or the Power BI service in two d
 - Add a Q&A visual.
 - Add a Q&A button.
 
-To add the Q&A visual to a report, select the new **Q&A** icon the select the new Q&A visual in the Visualization pane. Alternatively, double-click anywhere on the report canvas to insert the Q&A visual.
+To add the Q&A visual to a report, select the **Q&A** icon, or select the Q&A visual in the Visualization pane. Alternatively, double-clicking anywhere on the report canvas automatically inserts the Q&A visual.
 
 ![Q&A visual icon](media/qna-visual-icon.png)
 
-To add a button, on the **Home** ribbon, select **Buttons** > **Q&A** You can completely customize the Q&A button image.
+To add a button, on the **Home** ribbon, select **Buttons** > **Q&A**. You can completely customize the Q&A button image.
 
 ## Use Q&A for dashboards
 
-By default, Q&A is available at the top of dashboards. To use Q&A, type in the **Ask a question on your data** box.
+By default, Q&A is available at the top of dashboards. To use Q&A, type in the **Ask a question about your data** box.
 
 ![Q&A Dashboard](media/qna-dashboard.png)
 
