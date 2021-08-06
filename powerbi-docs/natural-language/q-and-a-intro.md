@@ -1,6 +1,6 @@
 ---
-title: Use natural language to explore your data using Power BI Q&A
-description: How to use Power BI Q&A to explore your data and create visualizations by using natural language for queries.
+title: Use natural language to explore data with Power BI Q&A
+description: How to use Power BI Q&A to explore your data and create visualizations by using Power BI Q&A with natural language queries.
 author: mohaali
 ms.author: mohaali
 ms.service: powerbi
@@ -8,7 +8,7 @@ ms.subservice: powerbi-ai
 ms.topic: conceptual
 ms.date: 08/05/2021
 ---
-# Introduction: Use natural language to explore your data using Power BI Q&A
+# Introduction: Use natural language to explore data with Power BI Q&A
 
 Sometimes the fastest way to get an answer from your data is to perform a search over your data using natural language. The Q&A feature in Power BI lets you explore your data in your own words using natural language. Q&A is interactive, even fun. Often, one question leads to others as the visualizations reveal interesting paths to pursue. Asking the question is just the beginning. Travel through your data, refining or expanding your question, uncovering new information, zeroing in on details, or zooming out for a broader view. The experience is interactive and fast, powered by an in-memory storage. 
 
