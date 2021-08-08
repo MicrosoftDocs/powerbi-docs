@@ -7,13 +7,13 @@ ms.reviewer: yardena
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/06/2021
+ms.date: 08/07/2021
 LocalizationGroup: Share your work
 ---
 # Manage dataset access permissions (preview)
 
 The dataset access management page enables you monitor and manage access to your dataset. It has two tabs that help you control access to your dataset:
-* **Direct access**: Enables you to monitor, add, modify, or delete access permissions for individual named users.
+* **Direct access**: Enables you to monitor, add, modify, or delete access permissions for specific people or groups (distribution groups or security groups).
 * **Shared report links**: Shows you [links that were generated for sharing reports](../collaborate-share/service-share-dashboards.md). Such links sometimes also give access to your dataset. On this tab you can review them and remove them if necessary.
 
 This document explains how to use the dataset access management page.
@@ -62,4 +62,5 @@ The shared report links tab lists [links that have been created to shared report
 
 * [Share access to a dataset](service-datasets-share.md)
 * [Use datasets across workspaces](service-datasets-across-workspaces.md)
+* [Share a report via link](../collaborate-share/service-share-dashboards.md#share-a-report-via-link)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
