@@ -7,12 +7,12 @@ ms.reviewer: yardena
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/06/2021
+ms.date: 08/07/2021
 LocalizationGroup: Share your work
 ---
 # Share access to a dataset
 
-To make it possible for other users to take advantage of your dataset, you can grant them access to it by sharing it. This document shows you how to grant access to your dataset using the **Share dataset** dialog.
+To make it possible for other users to take advantage of your dataset, you can *share* it with them. Sharing a dataset means granting access to it. This document shows you how to grant access to your dataset using the **Share dataset** dialog.
 
 To share your dataset
 
@@ -26,7 +26,7 @@ To share your dataset
 
         ![Screenshot of dataset share icon on the dataset info page.](media/service-datasets-share/power-bi-dataset-share-icon.png)
 
-1. In the **Share dataset** dialog that appears, enter the names of the users and/or security groups you want to grant access to, then choose the types of access you wish to grant.
+1. In the **Share dataset** dialog that appears, enter the names or email addresses of the specific people or groups (distribution groups or security groups) that you want to grant access to, then choose the types of access you wish to grant. You can optionally choose to send them an email notifying them that they've been granted access.
 
     ![Screenshot of the Share dataset dialog.](media/service-datasets-share/power-bi-dataset-grant-access-dialog.png)
 
@@ -47,4 +47,5 @@ To monitor, change, or remove user access to your dataset, see [Manage dataset a
 
 * [Manage dataset access permissions](service-datasets-manage-access-permissions.md)
 * [Use datasets across workspaces](service-datasets-across-workspaces.md)
+* [Share a report via link](../collaborate-share/service-share-dashboards.md#share-a-report-via-link)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
