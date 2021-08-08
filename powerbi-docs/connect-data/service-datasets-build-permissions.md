@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/25/2021
+ms.date: 08/09/2021
 LocalizationGroup: Share your work
 ---
 # Build permission for shared datasets
