@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/04/2021
+ms.date: 08/09/2021
 ---
 # What's new in the mobile apps for Power BI
 For related "What's New" information, see:
@@ -20,7 +20,7 @@ For related "What's New" information, see:
 
 ## July 2021
 ### New report footer (phones only)
-We've updated the report footer to make it easier to find and understand the actions you can do with reports. Just tap **More**!
+We’ve simplified and improved the report footer to make it easier to find and understand the actions you can do with reports. Just tap **More**!
 
 :::image type="content" source="media/mobile-whats-new-in-the-mobile-apps/new-report-footer-for-phones.png" alt-text="Screenshot new report footer for phones.":::
 
