@@ -6,7 +6,7 @@ ms.author: davidi
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
-ms.subservice: pbi-data-sources
+ms.subservice: powerbi-ai
 ms.topic: how-to
 ms.date: 05/13/2021
 LocalizationGroup: Connect to data
