@@ -587,6 +587,21 @@ Control which users in the organization can download and install template apps *
 
 ![Install template apps not listed in AppSource setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-non-app-source.png)
 
+## Q&A settings
+
+### Review questions
+When this setting is enabled, dataset owners can review questions end-users ask about their data.
+
+![Screenshot of Q and A review questions admin setting.](media/service-admin-portal/admin-setting-review-questions.png)
+
+### Synonym sharing
+When this setting is enabled, users can share Q&A synonyms as suggested terms with everyone in your organization.
+
+![Screenshot of Q and A synonym sharing admin setting.](media/service-admin-portal/admin-setting-synonym-sharing.png)
+
+> [!NOTE]
+> If you disable this setting and apply the changes, and then later re-enable synonym sharing, it might take a few weeks to reshare all the synonyms within your organization.
+
 ## Capacity settings
 
 ### Power BI Premium
