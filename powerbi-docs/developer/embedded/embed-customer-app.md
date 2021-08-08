@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 06/23/2021
+ms.date: 08/08/2021
 ---
 
 # Tutorial: Embed a Power BI report in an application for your customers
