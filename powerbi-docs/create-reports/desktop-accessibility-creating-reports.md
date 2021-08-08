@@ -159,7 +159,7 @@ While we suggest report authors to turn on data labels and markers, turning them
 
 ![Be thoughtful about applying data labels](media/desktop-accessibility/accessibility-creating-reports-16.png)
 
-If you're not sure whether your visual or report is too busy, test that by doing a [squint test](https://chrome.google.com/webstore/detail/the-squint-test/gppnipfbappicilfniaimcnagbpfflpg).  If your eyes are drawn more to the data labels than the data points, turn off your data labels.
+If you're not sure whether your visual or report is too busy, test that by doing a [squint test](https://pluginsaddonsextensions.com/google-chrome/the-squint-test-chrome-extension_86008).  If your eyes are drawn more to the data labels than the data points, turn off your data labels.
 
 
 ### Themes, contrast and colorblind-friendly colors

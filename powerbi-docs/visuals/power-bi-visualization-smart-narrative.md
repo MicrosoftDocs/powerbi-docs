@@ -13,9 +13,7 @@ LocalizationGroup: Visualizations
 ---
 # Create smart narrative summaries
 
-[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
-
-[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 The smart narrative visualization helps you quickly summarize visuals and reports. It provides relevant innovative insights that you can customize.
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
-ms.date: 07/18/2021
+ms.date: 07/01/2021
 ---
 
 # Troubleshoot your embedded application
@@ -258,10 +258,10 @@ After acquiring the IError object, you should look at the appropriate common err
 | TokenExpired | Access token has expired, resubmit with a new access token | 403 | Expired token  |
 | PowerBIEntityNotFound | Get report failed | 404 | <li> Wrong Report ID <li> Report doesn't exist  |
 | Invalid parameters | powerbiToken parameter not specified | N/A | <li> No access token provided <li> No Report ID provided |
-| LoadReportFailed | Fail to initialize - Couldn't resolve cluster | 403 | * Bad access token * Embed type doesn't match token type |
+| LoadReportFailed | Fail to initialize - Couldn't resolve cluster | 403 | <li> Bad access token <li> Embed type doesn't match token type |
 | PowerBINotAuthorizedException | Get report failed | 401 | <li> Wrong group ID <li> Unauthorized group |
-| TokenExpired | Access token has expired, resubmit with a new access token. Couldn't render a report visual titled: <visual title> | N/A | Query data Expired token |
-| OpenConnectionError | Can't display the visual. Couldn't render a report visual titled: <visual title> | N/A | Capacity paused or deleted while a report related to the capacity was open in a session |
+| TokenExpired | Access token has expired, resubmit with a new access token. Couldn't render a report visual titled: *visual title* | N/A | Query data Expired token |
+| OpenConnectionError | Can't display the visual. Couldn't render a report visual titled: *visual title* | N/A | Capacity paused or deleted while a report related to the capacity was open in a session |
 | ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server and try again. | N/A | <li> Capacity paused <li> Capacity deleted |
 
 ### Typical errors when embedding for non-Power BI users (using an Embed Token)
@@ -275,8 +275,8 @@ After acquiring the IError object, you should look at the appropriate common err
 | Invalid parameters | powerbiToken parameter not specified | N/A | <li> No access token provided <li> No Report ID provided |
 | LoadReportFailed | Fail to initialize - Couldn't resolve cluster | 403 | Wrong token type, Bad Token |
 | PowerBINotAuthorizedException | Get   report failed | 401 | Wrong/unauthorize group ID |
-| TokenExpired | Access token has expired, resubmit with a new access token. Couldn't render a report visual titled: <visual title> | N/A | Query data Expired token |
-| OpenConnectionError | Can't display the visual. Couldn't render a report visual titled: <visual title> | N/A | Capacity paused or deleted while a report related to the capacity was open in a session |
+| TokenExpired | Access token has expired, resubmit with a new access token. Couldn't render a report visual titled: *visual title* | N/A | Query data Expired token |
+| OpenConnectionError | Can't display the visual. Couldn't render a report visual titled: *visual title* | N/A | Capacity paused or deleted while a report related to the capacity was open in a session |
 | ExplorationContainer_FailedToLoadModel_DefaultDetails | Couldn't load the model schema associated with this report. Make sure you have a connection to the server and try again. | N/A | <li> Capacity paused <li> Capacity deleted |
 
 ## Datasets
@@ -295,21 +295,23 @@ To manage which portion of the data your users can view, use one of these method
 
 ## Content rendering
 
-### Performance
+To resolve rendering issues in embedded Power BI items (such as reports and dashboards), review this section.
 
-[Power BI Embedded performance](embedded-performance-best-practices.md)
+### Verify that the Power BI item loads in Power BI service
 
-### Rendering, or consumption, of embedded content, fails or times out
+To rule out issues with your application *or the embedding APIs*, verify that the item can be viewed in the Power BI service (powerbi.com).
 
-Make sure the embed token did not expire. Make sure you're checking the embed token expiration and refreshing it. For more information, see [Refresh token using JavaScript SDK](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Refresh-token-using-JavaScript-SDK-example).
+### Verify that the Power BI item loads in the Power BI embedded analytics playground
 
-### Report or dashboard doesn't load
+To rule out issues with your application, verify that the Power BI item can be viewed in the [Power BI embedded analytics playground](https://aka.ms/pbieplayground).
 
-If the user is unable to see the report or dashboard, make sure the report or dashboard loads correctly within powerbi.com. The report or dashboard doesn't work within your application if it doesn't load within powerbi.com.
+### Verify that your access token didn't expire
 
-### Report or dashboard is performing slowly
+For security purposes, access tokens (An Azure AD token or an embed token) have a limited lifetime. You should constantly monitor your access token and refresh it if needed. For more information see [Refresh the access token](/javascript/api/overview/powerbi/refresh-token).
 
-Open the file from Power BI Desktop, or within powerbi.com, and verify that performance is acceptable to rule out issues with your application or the embedding APIs.
+## Performance
+
+To get the best performing embedded content, we recommend that you follow the [Power BI embedded analytics best practices](embedded-performance-best-practices.md).
 
 ## Embed setup tool
 
