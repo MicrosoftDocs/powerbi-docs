@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 08/07/2021
 LocalizationGroup: Share your work
 ---
-# Share access to a dataset
+# Share access to a dataset (preview)
 
 To make it possible for other users to take advantage of your dataset, you can *share* it with them. Sharing a dataset means granting access to it. This document shows you how to grant access to your dataset using the **Share dataset** dialog.
 
