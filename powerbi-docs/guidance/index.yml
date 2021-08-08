@@ -7,7 +7,7 @@ metadata:
   description: "Power BI guidance documentation provides best practice information from the team that builds Power BI and the folks that work with our enterprise customers. Here you’ll find learnings to improve performance and success with Power BI. We’ll update and add to them as new information is available."  
   services: powerbi
   ms.service: powerbi
-  ms.subservice: powerbi
+  ms.subservice: powerbi-resource
   ms.topic: landing-page # Required
   ms.collection: collection
   author: maggiesMSFT

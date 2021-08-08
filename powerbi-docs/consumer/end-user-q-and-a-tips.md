@@ -5,7 +5,7 @@ author: mihart
 ms.author: mihart
 ms.reviewer: Mohammad.ali
 ms.service: powerbi
-ms.subservice: pbi-explore
+ms.subservice: powerbi-ai
 ms.topic: how-to
 ms.date: 09/23/2020
 LocalizationGroup: Ask questions of your data
@@ -61,6 +61,14 @@ Q&A does its best to understand and answer the question being asked. It tries to
 * adds a double underline to words it doesn't understand.
 * adds a single underline to words it does understand.
 * allows you to contact the report or dashboard owner when your term isn't found or your question doesn't get results.
+
+## Tell Q&A which visual to use
+
+When typing natural language queries with Power BI Q&A, you can specify the visual type in your query.  For example:
+
+"***sales by state as treemap***"
+
+![q&a session](media/end-user-q-and-a-tips/qa-treemap.png)
 
 ## Don't stop now
 After Q&A displays your results, keep the conversation going! Use the interactive features of the visual and of Q&A to uncover more insights.

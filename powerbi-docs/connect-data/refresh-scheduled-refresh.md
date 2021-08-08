@@ -41,7 +41,7 @@ You can also select the enterprise gateway if one is available for you. You only
 
 ### Power BI Gateway - Personal
 
-If you are using the personal gateway to refresh data, you must supply the credentials to connect to the back-end data source. If you connected to a content pack from an online service, the credentials you entered to connect are carried over for scheduled refresh.
+If you are using the personal gateway to refresh data, you must supply the credentials to connect to the back-end data source. If you connected to an app from an online service, the credentials you entered to connect are carried over for scheduled refresh.
 
 ![Data source credentials](media/refresh-scheduled-refresh/data-source-credentials-pgw.png)
 

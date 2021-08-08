@@ -109,12 +109,6 @@ If you want to distribute official content to a large audience within your organ
 
 Apps are the evolution of organizational content packs, which are being deprecated. Now is a good time to upgrade your content packs to apps, if you haven't started yet. Ready to migrate your classic workspace now? See [Upgrade classic workspaces to the new workspaces in Power BI](service-upgrade-workspaces.md) for details.
 
-### Comparing apps and organizational content packs
-
-* After business users install a content pack, it loses its grouped identity: it's just a list of dashboards and reports interspersed with other dashboards and reports. Apps, on the other hand, maintain their grouping and identity even after installation. This grouping makes it easy for business users to continue to navigate to them over time.
-* You can create multiple content packs from any workspace, but an app has a 1:1 relationship with its workspace. 
-* You can't consume or create content packs in the new workspaces.
-
 ## Next steps
 
 - [Install and use apps in Power BI](service-create-distribute-apps.md)
