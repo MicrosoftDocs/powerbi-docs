@@ -6,6 +6,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/connect-data/desktop-disable-directquery-connections-to-dataset.md",
+            "redirect_url": "/power-bi/connect-data/desktop-discourage-directquery-connections-to-dataset",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-admin-power-bi-expressroute.md",
             "redirect_url": "/power-bi",
             "redirect_document_id": false
@@ -871,6 +876,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/consumer/end-user-visual-type.md",
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-preview-features.md",
             "redirect_url": "/power-bi/consumer/end-user-preview-features",
             "redirect_document_id": true
@@ -943,7 +953,7 @@
         {
             "source_path": "powerbi-docs/service-reading-view-and-editing-view.md",
             "redirect_url": "/power-bi/consumer/end-user-reading-view",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-free-vs-pro.md",
@@ -1647,22 +1657,22 @@
         },
         {
             "source_path": "powerbi-docs/developer/get-azuread-access-token.md",
-            "redirect_url": "/power-bi/developer/embedded/get-azuread-access-token",
+            "redirect_url": "/power-bi/developer/embedded/generate-embed-token",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/migrate-code-snippets.md",
-            "redirect_url": "/power-bi/developer/embedded/migrate-code-snippets",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/migrate-from-powerbi-embedded.md",
-            "redirect_url": "/power-bi/developer/embedded/migrate-from-powerbi-embedded",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/migrate-tool.md",
-            "redirect_url": "/power-bi/developer/embedded/migrate-tool",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
             "redirect_document_id": false
         },
         {
@@ -2002,13 +2012,23 @@
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-copy-refresh-access.md",
-            "redirect_url": "/power-bi/collaborate-share/service-organizational-content-pack-copy-refresh-access",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-organizational-content-pack-copy-refresh-access.md",
+            "redirect_url": "/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-create-and-publish.md",
             "redirect_url": "/power-bi/collaborate-share/service-organizational-content-pack-create-and-publish",
-            "redirect_document_id": true
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-organizational-content-pack-create-and-publish.md",
+            "redirect_url": "/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-disconnect.md",
@@ -2017,8 +2037,13 @@
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-introduction.md",
-            "redirect_url": "/power-bi/collaborate-share/service-organizational-content-pack-introduction",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-organizational-content-pack-introduction.md",
+            "redirect_url": "/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-manage-update-delete.md",
@@ -2817,8 +2842,13 @@
         },
         {
             "source_path": "powerbi-docs/service-refresh-xero-credentials.md",
-            "redirect_url": "/power-bi/connect-data/service-refresh-xero-credentials",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/connect-data/service-connect-to-xero",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/service-refresh-xero-credentials.md",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-xero",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-r-packages-support.md",
@@ -3682,7 +3712,12 @@
         },
         {
             "source_path": "powerbi-docs/service-new-look.md",
-            "redirect_url": "/power-bi/consumer/service-new-look",
+            "redirect_url": "/power-bi/fundamentals/power-bi-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/power-bi/consumer/service-new-look.md",
+            "redirect_url": "/power-bi/consumer/end-user-reading-view",
             "redirect_document_id": true
         },
         {
@@ -3909,6 +3944,26 @@
             "source_path": "powerbi-docs/developer/embedded/embedding.md",
             "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
             "redirect_document_id": false
-        }
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/migrate-from-powerbi-embedded.md",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/migrate-tool.md",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/migrate-code-snippets.md",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/get-azuread-access-token.md",
+            "redirect_url": "/power-bi/developer/embedded/generate-embed-token",
+            "redirect_document_id": false
+        }                        
     ]           
 }

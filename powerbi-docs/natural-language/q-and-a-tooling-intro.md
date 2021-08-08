@@ -4,7 +4,7 @@ description: Introduction to Power BI Q&A tooling
 author: maggiesMSFT
 ms.author: maggies
 ms.service: powerbi
-ms.subservice: pbi-reports-dashboards
+ms.subservice: powerbi-ai
 ms.topic: conceptual
 ms.date: 08/31/2020
 ---

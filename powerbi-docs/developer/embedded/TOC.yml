@@ -42,7 +42,7 @@
       href: embedded-row-level-security.md
     - name: "Paginated reports Row-level security"
       href: paginated-reports-row-level-security.md
-    - name: "Multi-tenants solutions"
+    - name: "Multi-tenancy solutions"
       href: embed-multi-tenancy.md
     - name: "Connect a report using dynamic binding"
       href: embed-dynamic-binding.md
@@ -72,8 +72,6 @@
       href: register-app.md
     - name: "Monitor Power BI Embedded"
       href: monitor-power-bi-embedded.md      
-    - name: "Get an Azure AD access token"
-      href: get-azuread-access-token.md
     - name: "Embedding Q&A"
       href: qanda.md
     - name: "Troubleshoot your embedded application"
@@ -88,14 +86,6 @@
         href: azure-pbie-scale-capacity.md
       - name: Pause and start a capacity in Azure
         href: azure-pbie-pause-start.md
-    - name: Migrate from Workspace Collections
-      items:
-      - name: "How to migrate from Power BI Workspace Collections"
-        href: migrate-from-powerbi-embedded.md  
-      - name: Migration tool
-        href: migrate-tool.md
-      - name: "Migration code snippets"
-        href: migrate-code-snippets.md
   - name: Reference
     items:
     - name: APIs

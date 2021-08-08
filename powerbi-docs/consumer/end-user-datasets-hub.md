@@ -4,7 +4,7 @@ description: Learn how you can find, explore, and use the datasets and their rel
 author: mihart
 ms.author: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 6/21/2021
 LocalizationGroup: Get started

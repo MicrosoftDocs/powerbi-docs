@@ -12,7 +12,7 @@ ms.date: 04/02/2021
 
 # Tutorial: Create a paginated report and upload it to the Power BI service
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
 In this tutorial, you connect to a sample Azure SQL database. Then you use a wizard in Power BI Report Builder to create a paginated report with a table that wraps to multiple pages. Then you upload the paginated report to a workspace in a Premium capacity in the Power BI service.
 

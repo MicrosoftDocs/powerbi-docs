@@ -7,16 +7,43 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 01/27/2021
+ms.date: 08/06/2021
 ---
 
 # Power BI Report Builder change log
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
 Learn about new items, bug fixes, and known issues for each release of Power BI Report Builder. We update this article with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/desktop-latest-update.md).
 
 Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
+
+## August 2021 
+
+Version 15.7.01678.0001, released August 6, 2021 
+
+### Bug fixes 
+
+- Various accessibility fixes related to keyboard shortcuts and screen reading tools.
+
+### Features
+
+- Moved to 64 bit architechture for enhanced memory limits and other performance gains. Note: Previously installed third-party data providers may need to be updated to their x64 bit versions.
+- Enhanced support for DAX DateTime parameters.
+
+## June 2021 
+
+Version 15.6.01628.0002, released June 17, 2021 
+
+### Bug fixes 
+
+- Various accessibility fixes related to keyboard shortcuts and screen reading tools.
+
+### Features
+
+- Added new data tab which enables users to easily connect to all the most popular data sources when creating your paginated reports. 
+- Streamlined DAX copy/paste allowing these actions in the dataset without connecting to the model.
+- Added support for SSO for both SQL Server and Oracle data sources through the Power BI Enterprise Gateway.
 
 ## January 2021 
 
@@ -49,7 +76,7 @@ Version 15.6.01340.0002, released September 3, 2020
 
 ### Features
 
-- Enabled new authentication type support for Azure SQL DB and Azure Synapse. It uses Azure AD Multi-Factor Authentication to align with the Power BI service.
+- Enabled new authentication type support for Azure SQL DB and Azure Synapse. It uses Azure Active Directory (Azure AD) Multi-Factor Authentication (MFA) to align with the Power BI service.
 - Enabled connectivity to Dataverse through the SQL data connection. This connectivity supports the use of the native relational query designer for SQL. 
 - Enabled auto expansion of parameter drop-down to support even the largest item in the list. 
 - Enabled better support for multi-value parameter for DAX. 

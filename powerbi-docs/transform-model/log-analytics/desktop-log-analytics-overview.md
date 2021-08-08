@@ -60,6 +60,7 @@ In another article, you can see how to configure Azure Log Analytics to work wit
 ## Considerations and limitations
 Keep the following considerations and limitations in mind when working with Azure Log Analytics and Power BI:
 
+* [Sovereign clouds](https://powerbi.microsoft.com/clouds/) are not supported.
 * Only Premium workspaces are supported.
 * Only Workspace v2 support Log Analytics connections.
 * You cannot connect multiple Power BI workspaces to the same Log Analytics workspace yet. This restriction will be removed during the Preview. 
