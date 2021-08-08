@@ -4,11 +4,11 @@ description: Learn how to integrate or embed a Power BI paginated report into an
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
-ms.topic: tutorial
+ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: ''
-ms.date: 07/13/2021
+ms.date: 08/08/2021
 
 ---
 
