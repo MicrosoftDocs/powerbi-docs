@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 07/23/2021
+ms.date: 08/09/2021
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -283,6 +283,7 @@ The following operations are available in both the audit and activity logs.
 | Assigned a workspace to a deployment pipeline                          | AssignWorkspaceToPipeline                              |                                          |
 | Attached dataflow storage account                 | AttachedDataflowStorageAccount              |                                          |
 | Binded Power BI dataset to gateway                | BindToGateway                               |                                          |
+| Binded dataset to data sources                     | BindMonikersToDatasources                  |                                            |
 | Canceled dataflow refresh                        | CancelDataflowRefresh                       |                                          |
 | Changed capacity state                            | ChangeCapacityState                         |                                          |
 | Changed capacity user assignment                  | UpdateCapacityUsersAssignment               |                                          |
