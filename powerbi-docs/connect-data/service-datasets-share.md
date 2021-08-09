@@ -7,14 +7,16 @@ ms.reviewer: yardena
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/07/2021
+ms.date: 08/09/2021
 LocalizationGroup: Share your work
 ---
 # Share access to a dataset (preview)
 
-To make it possible for other users to take advantage of your dataset, you can *share* it with them. Sharing a dataset means granting access to it. This document shows you how to grant access to your dataset using the **Share dataset** dialog.
+To make it possible for other users to take advantage of a dataset, you can *share* it with them. Sharing a dataset means granting access to it. This document shows you how to grant access to a dataset using the **Share dataset** dialog.
 
-To share your dataset
+## Share a dataset
+
+To share a dataset
 
 1. On either the [datasets hub page](service-datasets-hub.md#find-the-dataset-you-need) or on the [dataset info page](service-datasets-hub.md#view-dataset-details-and-explore-related-reports), choose **Share** as follows:
 
