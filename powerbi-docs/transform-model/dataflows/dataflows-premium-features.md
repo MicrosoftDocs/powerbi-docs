@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 08/09/2021
 LocalizationGroup: Data from files
 ---
 # Premium features of dataflows
