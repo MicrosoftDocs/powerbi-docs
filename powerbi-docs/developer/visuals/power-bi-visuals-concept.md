@@ -124,5 +124,8 @@ Sometimes the visual initiates communication with the Power BI host without any 
 
 Interested in creating visualizations and adding them to Microsoft AppSource? See these articles:
 
-* [Developing a Power BI circle card visual](./develop-circle-card.md)
-* [Publish Power BI visuals to Partner Center](office-store.md)
+> [!div class="nextstepaction"]
+> [Developing a Power BI circle card visual](./develop-circle-card.md)
+
+> [!div class="nextstepaction"]
+> [Publish Power BI visuals to Partner Center](office-store.md)
