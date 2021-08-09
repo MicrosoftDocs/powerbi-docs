@@ -38,9 +38,7 @@ By default, the enhanced compute engine is **On**. If the enhanced compute engin
 
 ### Using the enhanced compute engine
 
-The enhanced compute engine is enabled from the **Capacity Settings** page in the Power BI service, in the **dataflows** section. By default, the enhanced compute engine is **On**. If it is set to **Off**, enable the enhanced compute engine by switching the toggle to **On** as shown in the following image, and save your settings. 
-
-![Turn on the enhanced compute engine](media/dataflows-premium-features/compute-engine-settings.png)
+The enhanced compute engine is enabled from the **Capacity Settings** page in the Power BI service, in the **dataflows** section. By default, the enhanced compute engine is **On**. If it is set to **Off**, enable the enhanced compute engine by switching the toggle to **On** and save your settings. 
 
 > [!IMPORTANT]
 > The enhanced compute engine works only for Power BI capacities of A3 and larger.
@@ -64,7 +62,7 @@ To make best use of the compute engine, split the ETL stage into two separate da
 
 **Question:** I cannot see the enhanced compute engine toggle. Why?
 
-**Answer:** The enhanced compute engine is being released in stages to regions around the world. We anticipate all regions will supported by the end of 2020.
+**Answer:** The enhanced compute engine is being released in stages to regions around the world, but is not yet available in every region.
 
 **Question:** What are the supported data types for the compute engine?
 
@@ -92,12 +90,14 @@ Using DirectQuery with dataflows enables the following enhancements to your Powe
 
 ### Using DirectQuery for dataflows
 
-Using DirectQuery with dataflows is a preview feature available in Power BI Desktop. 
+Using DirectQuery with dataflows is available in Power BI Desktop. 
 
 There are also prerequisites for using DirectQuery with dataflows:
 
 * Your dataflow must reside within a Power BI Premium enabled workspace
 * The **compute engine** must be turned on
+
+You can learn more about DirectQuery with dataflows in the [using DirectQuery with dataflows](dataflows-directquery.md) article.
 
 ### Enable DirectQuery for dataflows
 
@@ -110,8 +110,6 @@ Once you've applied that setting, refresh the dataflow for the optimization to t
 ### Considerations and limitations for DirectQuery
 
 There are a few known limitations with DirectQuery and dataflows:
-
-* During the preview period of this feature, some customers may experience timeouts or performance issues when using DirectQuery with dataflows. Such issues are being actively addressed during this preview period.
 
 * Composite/mixed models that have import and DirectQuery data sources are currently not supported.
 
