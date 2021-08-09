@@ -13,21 +13,23 @@ ms.date: 08/05/2021
 
 # Power BI visuals system integration
 
-The article describes the interaction between the Power BI user, visual, and host.
+The article describes how Power BI handles the interactions between the user, visual, and host.
 
-The [`update` method](visual-api.md#update) is called whenever the size of the visual of any one of its values changes. The `update` method contains the main logic of the visual and is responsible for rendering a chart or visualizing data.
+The [`update` method](visual-api.md#update) is called whenever the visual's size or any of its values changes. The `update` method contains the main logic of the visual and is responsible for rendering a chart or visualizing data.
 
-Actions and subsequent updates in Power BI can be initiated by the user or the visual itself. They usually occur in one of these three patterns:
+Actions and subsequent updates in Power BI can be initiated by the user or by the visual itself. They usually occur in one of the following three patterns:
 
-1. User interacts with a visual through Power BI.
-2. User interacts with the visual directly.
-3. Visual interacts with Power BI.
+1. [User interacts with a visual through Power BI](#user-interacts-with-a-visual-through-power-bi).
+2. [User interacts with the visual directly](#user-interacts-with-the-visual-directly).
+3. [Visual interacts with Power BI](#visual-interacts-with-power-bi).
 
-The following figure depicts how common visual-based actions, like selecting a bookmark, are processed in Power BI.
+The following figure shows how common visual-based actions, like selecting a bookmark, are processed in Power BI.
 
 ![Power BI visual action diagram](media/power-bi-visuals-concept/visual-concept.png)
 
 ## User interacts with a visual through Power BI
+
+The user can interact with Power BI to update a visual in the following ways:
 
 * A user opens the visual's properties panel.
 
@@ -61,10 +63,9 @@ The following figure depicts how common visual-based actions, like selecting a b
 
 * A user selects a bookmark in the bookmarks panel of the report.
 
-    When a user selects a bookmark in the report's bookmarks panel, one of two actions can occur:
+    When a user selects a bookmark in the report's bookmarks panel, one of the following two actions can occur:
 
     * Power BI calls a function that's passed and registered by the `registerOnSelectionCallback` method. The callback function gets arrays of selections for the corresponding bookmark.
-
     * Power BI calls the `update` method with a corresponding `filter` object inside the `options` object.
 
     In either case, the visual must change its state according to the received selections or `filter` object.
@@ -73,13 +74,15 @@ The following figure depicts how common visual-based actions, like selecting a b
 
 ## User interacts with the visual directly
 
+The user can also interact directly with the visual to update it as follows:
+
 * A user hovers the mouse over a data element.
 
     A visual can display more information about a data point through the Power BI Tooltips API. When a user hovers the mouse over a visual element, the visual can handle the event and display data about the associated tooltip element. The visual can display either a standard tooltip or a report page tooltip.
 
     For more information, see [Tooltips in Power BI visuals](add-tooltips.md).
 
-* A user changes visual properties. (For example, a user expands a tree and the visual saves state in the visual properties.)
+* A user changes visual properties (For example, by expanding a tree) and the visual saves the new state in the visual properties.
 
     A visual can save properties values through the Power BI API. For example, when a user interacts with the visual and the visual needs to save or update properties values, the visual can call the `presistProperties` method.
 
@@ -100,6 +103,8 @@ The following figure depicts how common visual-based actions, like selecting a b
     For more information about selections in a Power BI visual, see [Add interactivity by using Power BI visual selections](selection-api.md).
 
 ## Visual interacts with Power BI
+
+Sometimes the visual initiates communication with the Power BI host without any input from the user:
 
 * A visual requests more data from Power BI.
 
