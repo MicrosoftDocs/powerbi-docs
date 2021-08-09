@@ -105,29 +105,30 @@ If the insight talks about multiple anomalies, or trends, clicking on the insigh
 ![Screenshot showing KPI explanations](media/power-bi-insights/Details.png)
 
 ## Limitations
+
 1. If no insights found are found, you’ll be shown the following message. “We didn’t find any insights”.  This happens if:
-   a)	The data & visuals are not supported
+  - The data & visuals are not supported
      -	 Anomalies and trend insights are supported on time series with numeric data on visuals such as Line chart, Area chart, Stacked Area chart, Stacked bar chart, Stacked column chart, Clustered bar chart, Clustered column chart, KPI. KPI analysis insight is supported on KPI, Gauge and Card.
 
      -	Anomalies and trends are only supported for built-in date hierarchy or date time fields. They are not supported on custom date hierarchy. 
-  b)	The data does not have significant anomalies and trends. You can try filtering your data or check back later when there’s new data.
-  c)	In addition, the following functionality is not supported:
-    - On-premises Reporting Services
-    - Publish to Web
-    -	On-premises Analysis Services
-    -	Live Connection to Azure Analysis Services or SQL Server Analysis Services
-    -	MultiDimensional Analysis Services data sources
-    -	Power BI Report Server
-
- 2.	Explanations are not supported in the following cases.           
-    - TopN filters
-    - Include/exclude filters
-    - Some complex measure filters
-    - Non-numeric measures
-    - Use of "Show value as"
-    - Filtered measures - filtered measures are visual level calculations with a specific filter applied (for example, Total Sales for France), and are used on some of the visuals created by the insights feature
-    - Some measure types such as % grand total and measures from extension schemas
-    - RLS
+  -	The data does not have significant anomalies and trends. You can try filtering your data or check back later when there’s new data.
+  -	In addition, the following functionality is not supported:
+     - On-premises Reporting Services
+     - Publish to Web
+     -	On-premises Analysis Services
+     -	Live Connection to Azure Analysis Services or SQL Server Analysis Services
+     -	MultiDimensional Analysis Services data sources
+     -	Power BI Report Server
+  
+2. Explanations are not supported in the following cases:         
+   - TopN filters
+   - Include/exclude filters
+   - Some complex measure filters
+   - Non-numeric measures
+   - Use of "Show value as"
+   - Filtered measures - filtered measures are visual level calculations with a specific filter applied (for example, Total Sales for France), and are used on some of the visuals created by the insights feature
+   - Some measure types such as % grand total and measures from extension schemas
+   - RLS
 
   If no explanations are found, you’ll be shown the following message: “We didn’t find any significant explanations”. In this case, you can try bringing in more fields for the analysis.
 
