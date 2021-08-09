@@ -64,6 +64,8 @@
         href: service-premium-per-user-faq.yml
     - name: Information protection
       items:
+      - name: Default label policy (preview)
+        href: service-security-sensitivity-label-default-label-policy.md
       - name: Mandatory label policy (preview)
         href: service-security-sensitivity-label-mandatory-label-policy.md
       - name: Sensitivity label downstream inheritance (preview)
