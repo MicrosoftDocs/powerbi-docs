@@ -28,7 +28,7 @@ To get started, you're required to have:
 
 * Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup
 
-* A [capacity](#step-3---create-a-capacity), with [paginated reports workload](../../admin/service-admin-premium-workloads.md#paginated-reports) enabled
+* A [capacity](#step-2---create-a-capacity), with [paginated reports workload](../../admin/service-admin-premium-workloads.md#paginated-reports) enabled
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
@@ -59,13 +59,13 @@ To embed a paginated report using the sample app, follow these steps:
 
 1. [Create a workspace](#step-1---create-a-workspace).
 
-2. [Create a capacity](#step-3---create-a-capacity).
+2. [Create a capacity](#step-2---create-a-capacity).
 
-3. [Assign a workspace to a capacity](#step-4---assign-a-workspace-to-a-capacity).
+3. [Assign a workspace to a capacity](#step-3---assign-a-workspace-to-a-capacity).
 
-4. [Enable paginated reports workload](#step-5---enable-paginated-reports-workload).
+4. [Enable paginated reports workload](#step-4---enable-paginated-reports-workload).
 
-5. [Create and upload your paginated report](#step-2---create-and-upload-your-paginated-report).
+5. [Create and upload your paginated report](#step-5---create-and-upload-your-paginated-report).
 
 6. [Embed content using the sample application](#step-6---embed-content-using-the-sample-application).
 
