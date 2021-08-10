@@ -43,15 +43,16 @@ If you usually dismiss these notifications or do not engage with them, they will
 ## Get insights on reports and visuals
 
 Clicking on the “Get insights” in the action bar also brings up the Insights pane.  Note that the light bulb turns yellow when there are “Top” insights in your data. 
-![Screenshot showing Get Insights button](media/power-bi-insightsn/get-insights-button.png)
+![Screenshot showing Get Insights button](media/power-bi-insights/get-insights-button.png)
 
 “Get insights” button is also available on the visual settings. Clicking on this will show you insights about just this visual.
-![Screenshot showing Get Insights on visual](media/power-bi-insightsn/get-insights-button-visual.png)
+![Screenshot showing Get Insights on visual](media/power-bi-insights/get-insights-button-visual.png)
 
 ## Insights
 The Insights pane currently shows you three types of insights – Anomalies, Trends and KPI analysis.
 The “Top” tab shows you key insights that are noteworthy based on factors like recency, significance of the trend/anomaly. “All” tab shows you both Top insights and additional insights. 
-![Screenshot showing Insights pane](media/power-bi-insightsn/insights-pane.png)
+
+![Screenshot showing Insights pane](media/power-bi-insights/insights-pane.png)
 
 ### Anomalies
 An anomaly is an abnormality in time-series data, such as unexpected spikes and dips in the data.  The algorithm computes a boundary around what’s considered a normal or expected value. Any value found outside this boundary is marked as an anomaly. Check out this technical blog for more details about the algorithm.  There are three types of anomaly insights:
@@ -92,7 +93,7 @@ When an anomaly in your data is flagged, Power BI runs analysis across different
 ### Trends
 When a trend in your data is flagged, Power BI looks for and identifies the categories that most influenced the increase or decrease in the identified trend. Possible explanations are ranked based on the relative contributions from different categories to the increase or decrease in trend. Learn more here.
 
-![Screenshot showing Trend explanations](media/power-bi-insightn/trend-explanations.png)
+![Screenshot showing Trend explanations](media/power-bi-insights/trend-explanations.png)
 
 ### KPI Analysis
 For KPI analysis explanations, Power BI looks for and identifies the categories that have significantly high or low values. For KPI analysis with target, possible explanations are ranked based on Z-scores of the difference of the value from the target. Whereas for KPI analysis without target, possible explanations are ranked based on the Z-scores of the value itself.
@@ -102,7 +103,7 @@ For KPI analysis explanations, Power BI looks for and identifies the categories 
 ## Details
 If the insight talks about multiple anomalies, or trends, clicking on the insight card will show you the “Details” cards to help you choose the specific anomaly/trend you’d like to get explanations for.
 
-![Screenshot showing KPI explanations](media/power-bi-insights/Details.png)
+![Screenshot showing details pane](media/power-bi-insights/details.png)
 
 ## Limitations
 
