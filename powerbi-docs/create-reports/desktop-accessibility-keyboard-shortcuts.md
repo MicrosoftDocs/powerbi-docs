@@ -55,6 +55,7 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Move a visual on the canvas (bigger moves)* | **Shift + arrow keys** |
 | Resize a visual* | **Arrow keys**  |
 | Maintain aspect ratio*  | **Shift** + drag the resize handles |
+| Group Visuals*  | select visuals + **Ctrl + G** |
 
 
 \* Must be in editing mode
