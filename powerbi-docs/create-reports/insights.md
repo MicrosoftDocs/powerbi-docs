@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: 
 ms.topic: how-to
-ms.date: 08/06/2021
+ms.date: 08/11/2021
 LocalizationGroup: 
 ---
 # Insights (preview)
