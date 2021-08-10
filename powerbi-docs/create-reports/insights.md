@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.date: 08/06/2021
 LocalizationGroup: 
 ---
-# Get insights in reports (preview)
+# Insights (preview)
 
  Insights help users easily explore and find insights such as anomalies, trends, KPI analysis in their data as they interact and consume their reports in Power BI service.
  
@@ -43,9 +43,11 @@ If you usually dismiss these notifications or do not engage with them, they will
 ## Get insights on reports and visuals
 
 Clicking on the “Get insights” in the action bar also brings up the Insights pane.  Note that the light bulb turns yellow when there are “Top” insights in your data. 
+
 ![Screenshot showing Get Insights button](media/power-bi-insights/get-insights-button.png)
 
 “Get insights” button is also available on the visual settings. Clicking on this will show you insights about just this visual.
+
 ![Screenshot showing Get Insights on visual](media/power-bi-insights/get-insights-button-visual.png)
 
 ## Insights
