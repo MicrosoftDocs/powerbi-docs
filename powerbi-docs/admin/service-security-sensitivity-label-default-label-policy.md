@@ -39,7 +39,7 @@ Set-LabelPolicy -Identity "<default label policy name>" -AdvancedSettings @{powe
 ```
 Where:
 
-* default label policy name = the name of the policy whose associated sensitivity label you want to be applied by default to unlabeled content in Power BI.
+* &lt;default label policy name&gt; = the name of the policy whose associated sensitivity label you want to be applied by default to unlabeled content in Power BI.
 
 >[!IMPORTANT]
 >A default label policy will apply for a user if and only if it is the user's highest priority policy.
