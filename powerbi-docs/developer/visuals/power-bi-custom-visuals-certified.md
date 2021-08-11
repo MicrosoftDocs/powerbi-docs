@@ -24,13 +24,13 @@ The certification process is optional. Power BI visuals that are not certified, 
 
 ## Certification requirements
 
-To get your Power BI visual [certified](#get-a-power-bi-visual-certified), your Power BI visual must comply with the requirements listed in this section.
+To get your Power BI visual certified, your Power BI visual must comply with the requirements listed in this section.
 
 ### General requirements
 
-Your Power BI visual has to be approved by Partner Center. We recommend that your Power BI visual is already in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals). To learn how to publish a Power BI visual to AppSource, see [Publish Power BI visuals to Partner Center](office-store.md).
+All certified Power BI visuals have to be approved by Partner Center. We recommend that you publish your Power BI visual  in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) before submitting it for certification. To learn how to publish a Power BI visual to AppSource, see [Publish Power BI visuals to Partner Center](office-store.md).
 
-Before submitting your Power BI visual to be certified, verify that it complies with the [guidelines for Power BI visuals](guidelines-powerbi-visuals.md).
+Before submitting your Power BI visual to be certified, verify that it complies with the [guidelines for Power BI visuals](guidelines-powerbi-visuals.md), and that it [passes all the necessary tests](submission-testing.md).
 
 When submitting the Power BI visual, make sure that the compiled package exactly matches the submitted package.
 
@@ -57,10 +57,10 @@ The repository must include the following files:
 * **capabilities.json** - If you are submitting newer version of your Power BI visual with changes to the properties in this file, verify that they do not break reports for existing users.
 * **pbiviz.json**
 * **package.json**. The visual must have the following package installed:
-   * ["tslint"](https://www.npmjs.com/package/tslint) - Version 5.18.0 or higher
-   * ["typescript"](https://www.npmjs.com/package/typescript) - Version 3.0.0 or higher
-   * ["tslint-microsoftcontrib"](https://www.npmjs.com/package/tslint-microsoft-contrib) - Version 6.2.0 or higher
-   * The file must contain a command for running linter -  `"lint": "tslint -c tslint.json -p tsconfig.json"`
+  * ["tslint"](https://www.npmjs.com/package/tslint) - Version 5.18.0 or higher
+  * ["typescript"](https://www.npmjs.com/package/typescript) - Version 3.0.0 or higher
+  * ["tslint-microsoftcontrib"](https://www.npmjs.com/package/tslint-microsoft-contrib) - Version 6.2.0 or higher
+  * The file must contain a command for running linter -  `"lint": "tslint -c tslint.json -p tsconfig.json"`
 * **package-lock.json**
 * **tsconfig.json**
 
@@ -105,7 +105,7 @@ The following are **Not allowed**:
 You can request to have your Power BI visual certified by the Power BI team via Partner Center.
 
 >[!TIP]
->The Power BI certification process might take time. If you're creating a new Power BI visual, we recommend that you publish your Power BI visual via the Partner Center before you request Power BI certification. This ensures that the publishing of your visual is not delayed.
+>The Power BI certification process might take time. If you're creating a new Power BI visual, we recommend that you [publish](office-store.md) your Power BI visual via the Partner Center before you request Power BI certification. This ensures that the publishing of your visual is not delayed.
 
 To request Power BI certification:
 

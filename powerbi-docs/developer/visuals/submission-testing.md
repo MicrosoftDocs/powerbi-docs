@@ -1,5 +1,5 @@
 ---
-title: Submission testing of a Power BI visual
+title: Testing submissions of Power BI visuals
 description: This article describes test cases that your visual must pass before publishing to AppSource. There are also option test cases.
 author: KesemSharabi
 ms.author: kesharab
@@ -7,12 +7,12 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 02/09/2021
+ms.date: 08/09/2021
 ---
 
-# Testing a Power BI visual before submission
+# Test a Power BI visual before submission
 
-Before you publish your visual to [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), it must pass the tests listed in this article. Test your visual before you submit it. If your visual doesn't pass the required test cases, it will be rejected.
+Before you publish your visual to [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), it must pass the tests listed in this article. It is important to test your visual before you submit it. If your visual doesn't pass the required test cases, it will be rejected.
 
 For more information about the publishing process, see [Publish Power BI visuals to Partner Center](./office-store.md).
 
@@ -20,7 +20,7 @@ For more information about the publishing process, see [Publish Power BI visuals
 
 By default, Power BI loads the latest published version of the visual from AppSource, even if you import the visual from a local file.
 
-If you're testing or debugging a new version of an already published visual, you can override the AppSource version with a local file version, by enabling Developer mode in either Power BI Desktop, or Power BI service.
+When testing or debugging a new version of an already published visual, it is important that you **do not change the GUID of the visual**. You can override the AppSource version with a local file version, by enabling Developer mode in either Power BI Desktop, or Power BI service.
 
 ### Enable Developer mode in Power BI Desktop
 
@@ -29,18 +29,16 @@ In Power BI Desktop, Developer mode is only valid for one session. If you open a
 To enable Developer mode, follow these steps:
 
 1. Open Power BI Desktop.
-
-2.  Select **File** > **Options and settings**.
-
-3.  Select **Options**.
-
+2. Select **File** > **Options and settings**.
+3. Select **Options**.
 4. In the Options window, from the CURRENT FILE list, select **Report settings**.
-
 5. In Developer Mode, select the **Turn on developer mode for this session** option.
+
+![Screenshot of developer mode in PBI Desktop.](media/submission-testing/developer-mode-desktop.png)
 
 ### Enable Developer mode in Power BI service
 
-In Power BI service, Developer mode is kept per user account. Every time a user loads the package from the local file, Power BI will ignore the AppSource version of the visual.
+In Power BI service, Developer mode is kept per user account. Whenever a user loads the package from the local file, Power BI will ignore the AppSource version of the visual.
 
 To enable Developer mode in Power BI service, follow the instructions in [Set up Power BI service for developing a visual](environment-setup.md#set-up-power-bi-service-for-developing-a-visual).
 
@@ -129,5 +127,8 @@ Your visual should perform at an acceptable level. Use developer tools to valida
 
 >[!div class="nextstepaction"]
 >[Publish Power BI visuals to Partner Center](./office-store.md)
+
+>[!div class="nextstepaction"]
+>[Get a Power BI visual certified](power-bi-custom-visuals-certified.md)
 
 **More questions?** [Ask the Power BI Community](https://community.powerbi.com/).
