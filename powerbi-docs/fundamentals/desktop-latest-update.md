@@ -75,7 +75,7 @@ The following updates are new to Power BI Desktop this month:
 The following updates are new to the Power BI service this month:
 
 
-* Sensitivity labels for paginated reports (preview)  [[video]](https://youtu.be/thmvP1I6QVs?t=472)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419601)  [[article]](../admin/service-security-sensitivity-label-overview.md#paginatedreports)
+* Sensitivity labels for paginated reports (preview)  [[video]](https://youtu.be/thmvP1I6QVs?t=472)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419601)  [[article]](../admin/service-security-sensitivity-label-overview.md)
 * Use automatic aggregations to enhance performance of DirectQuery datasets  [[video]](https://youtu.be/thmvP1I6QVs?t=494)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419602)
 * Power BI REST API support for DAX queries (preview)  [[video]](https://youtu.be/thmvP1I6QVs?t=712)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419603)
 * Detailed historical activity information for Premium datasets (preview)  [[video]](https://youtu.be/thmvP1I6QVs?t=754)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419604)  [[article]](../transform-model/log-analytics/desktop-log-analytics-overview.md)
