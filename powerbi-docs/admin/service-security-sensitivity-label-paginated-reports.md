@@ -1,6 +1,6 @@
 ---
-title: Sensitivity label inheritance from data sources in Power BI
-description: Learn how Power BI datasets can inherit sensitivity labels from data sources
+title: Sensitivity label support in paginated reports
+description: Learn using Microsoft Information Protection sensitivity labels with paginated reports.
 author: paulinbar
 ms.author: painbar
 manager: kfollis
@@ -8,48 +8,31 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 08/02/2021
+ms.date: 08/10/2021
 LocalizationGroup: Data from files
 ---
-# Sensitivity label inheritance from data sources (preview)
+# Sensitivity label support in paginated reports (preview)
 
-Power BI datasets that connect to sensitivity-labeled data in supported data sources can inherit those labels, so that the data remains classified and secure when brought into Power BI.
+Sensitivity labels can be applied to paginated reports hosted in the Power BI service. After uploading a paginated report to the service, you apply the label to the report just as you would to a [regular Power BI report](service-security-apply-data-sensitivity-labels.md#apply-sensitivity-labels-in-the-power-bi-service).
 
-Currently supported data sources:
-* Excel
-* Azure Synapse Analytics (formerly SQL Data Warehouse)
-* Azure SQL Database
+When you export data from a labeled paginated report to a supported file type (Excel, PDF, PPTX, and Word), the sensitivity label on the paginated report is applied to the exported file.
 
-To be operative, [sensitivity label inheritance from data sources must be enabled on the tenant](service-admin-portal.md#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview).
-
-## Requirements
-* The data in the data source must be labeled with Microsoft Information Protection labels.
-
-    For Azure Synapse Analytics and Azure SQL Database, this is accomplished using a two-step Purview flow:
-    1. [Automatically apply sensitivity labels to your data](/azure/purview/create-sensitivity-label).
-    1. [Classify your Azure SQL data using Azure Purview labels](/azure/sql-database/scripts/sql-database-import-purview-labels).
-    * The scope of the labels must be **Files and emails** and **Azure Purview assets**. See [Extending sensitivity labels to Azure Purview](/azure/purview/create-sensitivity-label#extending-sensitivity-labels-to-azure-purview) and [Creating new sensitivity labels or modifying existing labels](/azure/purview/create-sensitivity-label#creating-new-sensitivity-labels-or-modifying-existing-labels).
-* [Sensitivity labels must be enabled in Power BI](service-security-enable-data-sensitivity-labels.md).
-* The **[Apply sensitivity labels from data sources to their data in Power BI (preview)](service-admin-portal.md#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview)** tenant admin setting must be enabled.
-* All conditions for applying a label must be met.
-
-## Inheritance behavior
-* In the Power BI service, when the dataset is connected to the data source, Power BI inherits the label and applies it automatically to the dataset. Subsequently, inheritance occurs upon dataset refresh. In Power BI Desktop, when you connect to the data source via **Get data**, Power BI inherits the label and automatically applies it to the *.pbix* file (both the dataset and report). Subsequently inheritance occurs upon refresh. 
-* If the data source has sensitivity labels of different degrees, the most restrictive is chosen for inheritance. In order to be applied, that label (the most restrictive) must be published for the dataset owner.
-* Labels from data sources never overwrite manually applied labels.
-* Less restrictive labels from the data source never overwrite more restrictive labels on the dataset.
-* In Desktop, if the incoming label is more restrictive than the label that is currently applied in Desktop, a banner will appear recommending to the user to apply the more restrictive label.
-* Dataset refresh will succeed even if for some reason the label from the data source is not applied. 
-
->[!NOTE]
-> No inheritance takes place if the dataset owner is not authorized to apply sensitivity labels in Power BI, or if the specific label in question has not been published for the dataset owner.
+Sensitivity labels on paginated reports are included in protection metrics (as part of the Report count), and can be audited (label-change audits only) and modified by public APIs, just like labels on regular Power BI reports.
 
 ## Limitations
-* Inheritance from data sources is not supported for datasets located in classic workspaces. My Workspace and V2 workspaces are supported.
-* Inheritance from data sources is supported only for datasets with enhanced metadata. See [Using enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md) for more information.
-* Inheritance from data sources is supported only for datasets using the Import data connectivity mode. Live connection and DirectQuery connectivity is not supported.
-* Inheritance from data sources is not supported in connections via gateways or Azure Virtual Network (VNet). This means that inheritance from an Excel file located on a local machine won't work, because this requires a gateway. 
+
+Sensitivity label support is now in public preview, and the following limitations apply:
+
+* Sensitivity labels are not supported for paginated reports in deployment pipelines. A sensitivity label on a paginated report in a deployment pipeline will not be deployed to subsequent pipeline stages.
+* [Downstream inheritance](service-security-sensitivity-label-downstream-inheritance.md) is not supported. The label of an upstream model will not propagate down to its downstream paginated reports. Likewise, the label of a paginated report will not propagate down to the report’s downstream content.
+* [Mandatory labeling](service-security-sensitivity-label-mandatory-label-policy.md) will not apply to paginated reports.
+
+## Paginated Report visuals (preview)
+
+A Paginated Report visual is a special type of visual that you can include in a regular Power BI report. It renders a selected paginated report inside the regular Power BI report.
+
+When a supported file type is exported from a Paginated Report visual that is included in a Power BI report, and the original paginated report being rendered in the visual has a sensitivity label, the exported file inherits the sensitivity label of the original paginated report. If the original paginated report does not have a label, the exported file inherits the label of the Power BI report, if it has one.
 
 ## Next steps
-* [Enable sensitivity label inheritance from data sources](service-admin-portal.md#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview)
+* [Apply sensitivity labels in Power BI](service-security-apply-data-sensitivity-labels.md)
 * [Sensitivity label overview](service-security-sensitivity-label-overview.md)
