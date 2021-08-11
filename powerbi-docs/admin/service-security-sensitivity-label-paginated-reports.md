@@ -1,5 +1,5 @@
 ---
-title: Sensitivity label support in paginated reports
+title: Sensitivity label support for paginated reports
 description: Learn using Microsoft Information Protection sensitivity labels with paginated reports.
 author: paulinbar
 ms.author: painbar
@@ -11,7 +11,7 @@ ms.custom:
 ms.date: 08/10/2021
 LocalizationGroup: Data from files
 ---
-# Sensitivity label support in paginated reports (preview)
+# Sensitivity label support for paginated reports (preview)
 
 Sensitivity labels can be applied to paginated reports hosted in the Power BI service. After uploading a paginated report to the service, you apply the label to the report just as you would to a [regular Power BI report](service-security-apply-data-sensitivity-labels.md#apply-sensitivity-labels-in-the-power-bi-service).
 
