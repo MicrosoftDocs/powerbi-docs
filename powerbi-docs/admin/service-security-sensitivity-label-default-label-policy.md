@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 08/09/2021
+ms.date: 08/10/2021
 LocalizationGroup: Data from files
 ---
 # Default label policy for Power BI (preview)
@@ -42,7 +42,7 @@ Where:
 * &lt;default label policy name&gt; = the name of the policy whose associated sensitivity label you want to be applied by default to unlabeled content in Power BI.
 
 >[!IMPORTANT]
->A default label policy will apply for a user if and only if it is the user's highest priority policy.
+>If a user has more than one label policy, the default label setting is always taken from the policy with the highest priority, so be sure to configure the default label on that policy.
 
 **Requirements for using PowerShell**
  
@@ -63,4 +63,5 @@ Where:
 
 ## Next steps
 
+* [Mandatory label policy for Power BI](service-security-sensitivity-label-mandatory-label-policy.md)
 * [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
