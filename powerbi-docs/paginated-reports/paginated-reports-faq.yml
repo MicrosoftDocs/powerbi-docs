@@ -184,7 +184,7 @@ sections:
       - question: |
           Can I use Power BI embedded to embed my paginated reports into an app I'm hosting?
         answer: |
-          SaaS embedding, including Secure Embed support, is already available. For PaaS embedding, refer to the [Embed Power BI paginated reports into an application for your customers](../developer/embedded/embed-paginated-reports-customers.md) tutorial.
+          Yes, to learn how to embed a paginated report, refer to [Embed Power BI paginated reports](../developer/embedded/embed-paginated-reports.md).
           
       - question: |
           Can I drill through from a Power BI report to a paginated report?

@@ -16,10 +16,6 @@
       href: embed-sample-for-customers.md
     - name: "Embed content for your organization"
       href: embed-sample-for-your-organization.md
-    - name: "Embed paginated reports for customers"
-      href: embed-paginated-reports-customers.md
-    - name: "Embed paginated reports for your organization"
-      href: embed-paginated-reports-organization.md      
     - name: "Embed content for national clouds"
       href: embed-sample-for-customers-national-clouds.md
     - name: "Embed a report in an app for your customers"
@@ -56,6 +52,8 @@
       href: embed-service-principal.md
     - name: "Embed using service principal and a certificate"
       href: embed-service-principal-certificate.md
+    - name: "Embed a paginated report"
+      href: embed-paginated-reports.md        
     - name: "Move an embedded app to production"
       href: move-to-production.md          
     - name: "Export report to file"
