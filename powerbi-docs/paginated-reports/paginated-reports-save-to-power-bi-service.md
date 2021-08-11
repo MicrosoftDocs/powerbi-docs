@@ -111,4 +111,4 @@ As with any other Power BI report, if the paginated report data source is on pre
 
 - [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
 - [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
-- [Tutorial: Embed Power BI paginated reports into an application for your customers](../developer/embedded/embed-paginated-reports-customers.md)
+- [Embed Power BI paginated reports](../developer/embedded/embed-paginated-reports.md)
