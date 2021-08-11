@@ -20,7 +20,7 @@ For more information about the publishing process, see [Publish Power BI visuals
 
 By default, Power BI loads the latest published version of the visual from AppSource, even if you import the visual from a local file.
 
-When testing or debugging an already published visual, you can override the AppSource version with a local file version, by enabling Developer mode in either Power BI Desktop, or Power BI service.
+When testing or updating an already published visual, make sure you're using the correct version of the visual **without changing the GUID**. You can override the AppSource version with a local file version by enabling Developer mode in either Power BI Desktop, or Power BI service.
 
 >[!IMPORTANT]
 >When testing or debugging a new version of a visual that is available in AppSource, **do not change the GUID of the visual**. Use Developer mode instead.
@@ -120,7 +120,7 @@ Test your visual in the current version of [Power BI Desktop](https://powerbi.mi
 
 ## Performance testing
 
-Your visual should perform at an acceptable level. Use developer tools to validate performance. Don't rely on visual cues and the console time logs.
+Your visual should perform at an acceptable level. Use developer tools to validate its performance. Don't rely on visual cues and the console time logs.
 
 | Test case | Expected results
 | --------- | ----------------
