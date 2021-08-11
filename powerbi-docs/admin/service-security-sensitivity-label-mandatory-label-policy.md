@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 07/13/2021
+ms.date: 08/10/2021
 LocalizationGroup: Data from files
 ---
 # Mandatory label policy for Power BI (preview)
@@ -27,6 +27,7 @@ When a mandatory label policy is in effect,
 * Users must apply a sensitivity label before saving updates to the settings or content of existing unlabeled reports and dashboards. If they try to save the updates without applying a label, a dialog prompts them to apply a label before allowing them to save.
 * If users try to import data from an unlabeled *.pbix* file, a dialog prompts them to apply a label before allowing import to continue.
 * Users can't publish an unlabeled *.pbix* file from Desktop to the service. They must first apply a label to the file in Desktop.
+* In Desktop, if users try to save a unlabeled *.pbix*will be prompted to apply a sensitivity 
 
 The images below show the dialogs that prompt users to choose and apply a label when they try to save or import unlabeled content. The save button only becomes active when the user selects a label.
 
