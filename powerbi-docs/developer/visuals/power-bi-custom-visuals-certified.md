@@ -30,9 +30,11 @@ To get your Power BI visual certified, your Power BI visual must comply with all
 
 All certified Power BI visuals have to be approved by Partner Center. We recommend that you publish your Power BI visual  in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) before submitting it for certification. To learn how to publish a Power BI visual to AppSource, see [Publish Power BI visuals to Partner Center](office-store.md).
 
-Before submitting your Power BI visual to be certified, verify that it complies with the [guidelines for Power BI visuals](guidelines-powerbi-visuals.md), and that it [passes all the necessary tests](submission-testing.md).
+Before submitting your Power BI visual to be certified, verify that:
 
-When submitting the Power BI visual, make sure that the compiled package exactly matches the submitted package.
+* it complies with the [guidelines for Power BI visuals](guidelines-powerbi-visuals.md)
+* it [passes all the necessary tests](submission-testing.md)
+* the compiled package exactly matches the submitted package.
 
 ### Code repository requirements
 
@@ -170,9 +172,6 @@ Your Power BI visual will be available to download from AppSource when this proc
 * If you're requesting certification for an existing Power BI visual, the certification badge will be visible within two weeks of your submission.
 
 ## Next steps
-
->[!div class="nextstepaction"]
->[Developing a Power BI circle card visual](develop-circle-card.md)
 
 >[!div class="nextstepaction"]
 >[Guidelines for publishing Power BI visuals](guidelines-powerbi-visuals.md)
