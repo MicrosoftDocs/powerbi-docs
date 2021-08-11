@@ -1,5 +1,5 @@
 ---
-title: Backup and restore Power BI Premium datasets (preview)
+title: Backup and restore Power BI Premium datasets
 description: Learn how to backup and restore datasets in Power BI Premium spaces
 author: davidiseminger
 ms.author: davidi
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 05/07/2021
 LocalizationGroup: Connect to data
 ---
-# Backup and restore datasets with Power BI Premium (preview)
+# Backup and restore datasets with Power BI Premium
 
 You can use the **Backup and Restore** feature with Power BI datasets if you have a Power BI Premium or Premium Per User (PPU) license, similar to the backup and restore operations available in tabular models for Azure Analysis Services (Azure AS).
 
@@ -22,8 +22,6 @@ The ability to backup and restore Power BI datasets provides a migration path fr
 
 ## Using dataset backup and restore
 
-**Backup and Restore** is in preview, and its features and functionality may change as we gather feedback from customers. 
-
 The **Backup and Restore** feature uses existing connections between Power BI and Azure, such as the ability to register an Azure Data Lake Gen2 (ADLS Gen2) storage account at the tenant- or workspace-level to facilitate dataflow storage and operations. Since Backup and Restore uses the same connection, no other storage account is required. 
 
 You can also perform offline backups, downloading the files from your ADLS Gen2 storage account using the file system, Azure Storage Explorer, .NET tools, and PowerShell cmdlets, such as the *Get-AzDataLakeGen2ItemContent* cmdlet. The following image shows a workspace with three datasets and their corresponding backup files in Azure Storage Explorer.
@@ -34,9 +32,7 @@ To learn how to configure Power BI to use an ADLS Gen2 storage account, see [con
 
 ### Multi-geo considerations
 
-Even if you have configured your Power BI Premium capacities for multi-geo support, the **Backup and Restore** feature is not supported for multi-geo during preview. 
-
-As such, you must provision the storage account in your tenant’s home region, which also means that dataflow data and dataset backups might not be stored in the region of your Power BI Premium capacity. Check your data residency requirements before configuring your workspaces on a multi-geo capacity with a storage account.
+Backup and Restore relies on the Azure connections infrastructure in Power BI to register an Azure Data Lake Gen2 (ADLS Gen2) storage account at the tenant or workspace level. As such, you should provision the storage account in the region of your Power BI Premium capacity to avoid data transfer costs across regional boundaries. Check your data residency requirements before configuring your workspaces on a multi-geo Premium capacity with a storage account.
 
 ### Who can perform backup and restore
 

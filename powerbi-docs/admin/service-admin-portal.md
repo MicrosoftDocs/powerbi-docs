@@ -690,15 +690,23 @@ On the **Workspaces** tab, you see the *state* for each workspace. The following
 |State  |Description  |
 |---------|---------|
 | **Active** | A normal workspace. It doesn't indicate anything about usage or what's inside, only that the workspace itself is "normal". |
-| **Orphaned** | A workspace with no admin user. |
+| **Orphaned** | A workspace with no admin user. Please assign an admin. |
 | **Deleted** | A deleted workspace. We maintain enough metadata to restore the workspace for up to 90 days. |
 | **Removing** | A workspace that is being deleted, but not gone yet. Users can delete their own workspaces, putting things into Removing and eventually Deleted. |
 
 Admins can also manage and recover workspaces, using either the admin portal or PowerShell cmdlets.
 
-:::image type="content" source="media/service-admin-portal/power-bi-workspaces-admin-portal.png" alt-text="Screenshot that shows the Power B I workspaces list in the admin portal.":::
+![Admins can also manage and recover workspaces.](media/service-admin-portal/admin-portal-manage-workspaces.png)
 
-Admins can upgrade classic workspaces to the new workspace experience. Admins can select one or more workspaces with Type **Group** to upgrade. Upgrades are queued and executed asynchronously. It may take several minutes to several days to complete all **Pending** upgrades because the overall rate of admin-initiated upgrades is limited to keep the service running smoothly. The **Workspace upgrade status** column helps admins track the progress of the admin-initiated upgrades. Admins can cancel admin-initiated upgrades when they are **Pending**. To upgrade a workspace immediately, contact the Workspace Admin and have them start the upgrade through the workspace settings pane. [Learn more about workspace upgrade before starting your Power BI admin-initiated workspace upgrade.](../collaborate-share/service-upgrade-workspaces.md).
+_Selecting one or more workspaces for upgrade._
+
+### Upgrade workspaces
+
+Admins can upgrade classic workspaces to the new workspace experience. Admins can select one or more workspaces with Type **Group** to upgrade or use **Upgrade all** to queue up upgrade of all **Group** workspaces. Upgrades are queued and executed asynchronously. It may take several minutes to several days to complete all **Pending** upgrades because the overall rate of admin-initiated upgrades is limited to keep the service running smoothly. The **Workspace upgrade status** column helps admins track the progress of the admin-initiated upgrades. Admins can cancel admin-initiated upgrades when they are **Pending**. To upgrade a workspace immediately, contact the Workspace Admin and have them start the upgrade through the workspace settings pane. Learn more about [workspace upgrade](../collaborate-share/service-upgrade-workspaces.md) before starting your Power BI admin-initiated workspace upgrade.
+
+![Admins can choose to Upgrade all workspaces.](media/service-admin-portal/admin-portal-workspaces-upgrade-all.png)
+
+_Upgrade all queues up all workspaces for upgrade._
 
 The following table gives more details about the status of the upgrade.
 
@@ -707,12 +715,20 @@ The following table gives more details about the status of the upgrade.
 | **(Blank)** | The workspace is not being upgraded by a Power BI admin. |
 | **Pending** | The workspace is queued to be upgraded. The upgrade can be canceled. |
 | **In Progress** | The workspace is actively being upgraded. The upgrade can't be canceled. |
+| **Failed** | The workspace failed because of a validation rule. Power BI has released and will continue to release fixes for upgrade failures, please retry any 'Failed' upgrades. |
 | **Completed** | The workspace was upgraded in the last 30 days by a Power BI admin. A workspace admin can go back to classic option during the 30-day period after the workspace was upgraded. |
 
-> [!NOTE]
-> There are a few limitations to upgrading workspaces, such as those listed here. Learn more about [upgrading workspaces](../collaborate-share/service-upgrade-workspaces.md) before attempting an upgrade.
-> - If the admin for a workspace hasn't accessed Power BI recently (in the last 14 days), the upgrade may fail. Have the workspace admin access Power BI or change to a different admin before trying to upgrade.
-> - If the group associated with the workspace doesn't have a group owner in Azure Active Directory or Microsoft 365, the upgrade may fail. Assign a group owner in Azure Active Directory or Microsoft 365 before upgrading.
+#### Limitations to upgrading workspaces
+
+There are a few limitations to upgrading workspaces, such as those listed here. Learn more about [upgrading workspaces](../collaborate-share/service-upgrade-workspaces.md) before attempting an upgrade.
+
+- If the admin for a workspace hasn't accessed Power BI recently (in the last 14 days), the upgrade may fail. Have the workspace admin access Power BI or change to a different admin before trying to upgrade.
+- If the group associated with the workspace doesn't have a group owner in Azure Active Directory or Microsoft 365, the upgrade may fail. Assign a group owner in Azure Active Directory or Microsoft 365 before upgrading.
+- As noted above, please check for **Orphaned** workspaces after upgrade and be sure to assign an admin to those workspaces. Power BI Admins may use filters from the Admin Portal to find Orphaned workspaces and assign admins one by one or in bulk.
+
+![Use text filters from column headers to find the workspaces you want to take action on.](media/service-admin-portal/admin-portal-orphaned-workspaces.png)
+
+_Helpful tip: Use text filters from column headers to find the workspaces you want to take action on, like finding Orphaned workspaces to assign admins to._
 
 ## Custom branding
 

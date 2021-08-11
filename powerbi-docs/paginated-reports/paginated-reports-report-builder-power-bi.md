@@ -13,7 +13,7 @@ ms.date: 04/02/2021
 
 # What are paginated reports in Power BI Premium?
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
 *Paginated reports* are designed to be printed or shared. They're called *paginated* because they're formatted to fit well on a page. They display all the data in a table, even if the table spans multiple pages. They're also called *pixel perfect* because you can control their report page layout exactly. Power BI Report Builder is the standalone tool for authoring paginated reports for the Power BI service. 
 
@@ -113,4 +113,4 @@ Here are some other features that aren't supported in the initial release:
 - [Online course: Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md)
 - [Sample Power BI paginated reports](paginated-reports-samples.md)
 - [Enter data directly in a paginated report](paginated-reports-enter-data.md)
-- [Tutorial: Embed Power BI paginated reports into an application for your customers](../developer/embedded/embed-paginated-reports-customers.md)
+- [Embed Power BI paginated reports](../developer/embedded/embed-paginated-reports.md)

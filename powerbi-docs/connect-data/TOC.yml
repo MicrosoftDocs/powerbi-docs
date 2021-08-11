@@ -171,8 +171,10 @@
       items: 
       - name: "Use datasets across workspaces"
         href: service-datasets-across-workspaces.md
-      - name: "Share datasets"
+      - name: "Share dataset access (preview)"
         href: service-datasets-share.md
+      - name: "Manage dataset access (preview)"
+        href: service-datasets-manage-access-permissions.md
       - name: "Build permission for shared datasets"
         href: service-datasets-build-permissions.md
       - name: "Create reports based on datasets"
