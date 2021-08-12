@@ -58,6 +58,8 @@
       href: office-store.md
     - name: "Test your Power BI visual"  
       href: submission-testing.md
+    - name: "Create mobile friendly visuals"
+      href: mobile-development.md
     - name: "Set up your environment for developing a Power BI visual"
       href: environment-setup.md
     - name: "Package a Power BI visual"
@@ -102,8 +104,6 @@
       href: no-dataroles-support.md  
     - name: "Debug visuals"
       href: visuals-how-to-debug.md  
-    - name: "Mobile development"
-      href: mobile-development.md
     - name: "Troubleshoot  environment setup"
       href: power-bi-custom-visuals-troubleshoot.md
   - name: Reference
