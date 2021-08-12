@@ -57,8 +57,8 @@ Imagine you need to create dataflows for consumption but have security requireme
 
 In this scenario, you likely have two types of workspaces:
 
-1. Backend workspaces where you develop dataflows and build out the business logic
-2. End-user workspaces where you want to expose some dataflows or tables to a particular group of users for consumption
+- Backend workspaces where you develop dataflows and build out the business logic
+- End-user workspaces where you want to expose some dataflows or tables to a particular group of users for consumption
 
   - End-user workspace contains linked tables that point to the dataflows in the backend workspace
   - End users have viewer access to the consumer workspace, and no access to the backend workspace
@@ -128,7 +128,7 @@ Using an optimized data source and query is your best option. Often, the data so
 
 You can also use the [Value.NativeQuery()](/powerquery-m/value-nativequery) M function that allows you to do this by setting *EnableFolding=true* in the third parameter. It's documented [here](/power-query/connectors/postgresql) for the Postgres connector and it also works for the SQL Server connector.
 
-### Solution 3: Break the dataflow into ingestion and consumption dataflows to take advantage of the enhanced compute engine and Linked Entities.**
+### Solution 3: Break the dataflow into ingestion and consumption dataflows to take advantage of the enhanced compute engine and Linked Entities.
 
 Breaking a dataflow into separate ingestion and consumption dataflows allows you to take advantage of the Enhanced Compute Engine, and Linked Entities. You can learn more about this  pattern and others in our [best practices documentation](dataflows-best-practices.md).
 
