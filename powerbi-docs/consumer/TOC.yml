@@ -86,8 +86,6 @@
           href: paginated-reports-subscriptions.md
     - name: Visualizations
       items: 
-      - name: "What can I do with visualizations?"
-        href: end-user-visualizations.md
       - name: "Types of visualizations"
         href: end-user-visual-type.md
       - name: "Show the data that was used to create the visualization"

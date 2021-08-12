@@ -5,7 +5,9 @@
   - name: Overview
     expanded: true
     items: 
-    - name: "Visuals in Power BI"
+    - name: "Develop your own Power BI visual"
+      href: develop-power-bi-visuals.md
+    - name: "Where to find Power BI visuals"
       href: power-bi-custom-visuals.md
   - name: Tutorials
     expanded: true
@@ -14,12 +16,12 @@
       href: develop-circle-card.md  
     - name: "Tutorial: Adding formatting options"
       href: custom-visual-develop-tutorial-format-options.md
+    - name: "Tutorial: Build a bar chart"
+      href: create-bar-chart.md
     - name: "Tutorial: Create a Power BI visual using React"
       href: create-react-visual.md
     - name: "Tutorial: Create an R-powered visual"
       href: create-r-based-power-bi-desktop.md
-    - name: "Build a bar chart"
-      href: create-bar-chart.md
     - name: "Add unit tests for visual project"
       href: unit-tests-introduction.md
     - name: "Build a funnel plot from R script to R visual"
@@ -46,10 +48,6 @@
       href: objects-properties.md
     - name: "Advanced edit mode"
       href: advanced-edit-mode.md
-    - name: "supportsKeyboardFocus feature"
-      href: supportskeyboardfocus-feature.md
-    - name: "supportsMultiVisualSelection feature"
-      href: supportsmultivisualselection-feature.md
   - name: How to
     items:
     - name: "Get a Power BI visual certified"
@@ -58,6 +56,8 @@
       href: office-store.md
     - name: "Set up your environment for developing a Power BI visual"
       href: environment-setup.md
+    - name: "Package a Power BI visual"
+      href: package-visual.md
     - name: "Import a custom visual"
       href: import-visual.md
     - name: "Create a dialog box"
@@ -90,6 +90,10 @@
       href: conditional-format.md
     - name: "Highlight data in visuals"
       href: highlight.md
+    - name: "Enable selection across multiple visuals"
+      href: supportsmultivisualselection-feature.md
+    - name: "Enable keyboard navigation"
+      href: supportskeyboardfocus-feature.md
     - name: "Add high-contrast mode support"
       href: high-contrast-support.md
     - name: "Enable sync slicers"

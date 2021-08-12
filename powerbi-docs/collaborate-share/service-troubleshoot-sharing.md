@@ -3,12 +3,11 @@ title: Troubleshoot sharing dashboards and reports
 description: How to resolve issues for sharing Power BI dashboards and reports with colleagues in and out of your organization.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: lukaszp
-ms.custom: video-0tUwn8DHo3s
+ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: troubleshooting
-ms.date: 06/23/2020
+ms.date: 07/26/2021
 LocalizationGroup: Share your work
 ---
 # Troubleshoot sharing dashboards and reports
@@ -23,21 +22,21 @@ The people you share with may see a locked tile in a dashboard, or a "Permission
 
 If so, you need to grant them permission to the underlying dataset.
 
-1. Go to the **Datasets** tab in your content list.
+1. Go to the **All** or the **Datasets + dataflows** tab in your content list.
 
-1. Select the ellipsis (**...**) next to the dataset, then select **Manage permissions**.
+1. Select **More options (...)** next to a dataset, then select **Manage permissions**.
 
-    ![Manage permissions](media/service-share-dashboards/power-bi-sharing-manage-permissions.png)
+    ![Select More options, then Manage permissions.](media/service-troubleshoot-sharing/power-bi-sharing-manage-permissions.png)
 
 1. Select **Add user**.
 
-    ![Select Add user](media/service-share-dashboards/power-bi-share-dataset-add-user.png)
+    ![Select Add user.](media/service-troubleshoot-sharing/power-bi-share-dataset-add-user.png)
 
-1. Enter the full email addresses for individuals, distribution groups, or security groups. You can't share with dynamic distribution lists.
+1. Enter the full email addresses for individuals, distribution groups, or security groups. You can't share with dynamic distribution lists. Decide if they can **share this dataset** or **build content with the data associated with this dataset**, and if you want to **send an email notification**.
 
-    ![Add email addresses](media/service-share-dashboards/power-bi-add-user-dataset.png)
+    ![Add email addresses, then Grant access.](media/service-troubleshoot-sharing/power-bi-add-user-dataset.png)
 
-1. Select **Add**.
+1. Select **Grant access**.
 
 ## I can't share a dashboard or report
 
@@ -53,5 +52,5 @@ If you see a "Request access" message when you select the link to a report or da
 
 - [Share Power BI dashboards and reports with coworkers and others](service-share-dashboards.md)
 - [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md)
--  [Share a filtered Power BI report](service-share-reports.md)
+- [Share a filtered Power BI report](service-share-reports.md)
 - Questions? [Try the Power BI Community](https://community.powerbi.com/)

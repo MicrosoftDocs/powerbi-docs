@@ -7,7 +7,7 @@ ms.reviewer: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 05/05/2021
+ms.date: 07/16/2021
 ms.custom: css_fy20Q4
 LocalizationGroup: Premium
 ---
@@ -208,10 +208,6 @@ As stated in the error message, to resolve this issue, either delete or rename t
 ## Workspace/server alias
 
 Unlike Azure Analysis Services, server name [aliases](/azure/analysis-services/analysis-services-server-alias) **are not supported** for Premium workspaces.
-
-## Dataset refresh through the XMLA endpoint
-
-Last refresh date and time is shown in a number of places in Power BI such as Refreshed columns in reports and lists, Dataset details, Dataset settings, and Dataset refresh history. Currently, refresh date and times shown in Power BI **do not** include refresh operations performed through the XMLA endpoint by using TMSL/TOM, SSMS, or third-party tools.
 
 ## DISCOVER_M_EXPRESSIONS 
 

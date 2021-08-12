@@ -13,9 +13,7 @@ LocalizationGroup: Visualizations
 ---
 # Create and use combo charts in Power BI
 
-[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
-
-[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 In Power BI, a combo chart is a single visualization that combines a line chart and a column chart. Combining the 2 charts into one lets you make a quicker comparison of the data.
 
@@ -116,7 +114,7 @@ In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again
 From here you might want to:
 
 * [Add the combo chart as a dashboard tile](../create-reports/service-dashboard-tiles.md).
-* [Save the report](../create-reports/service-report-save.md).
+* Save the report.
 * [Make the report more accessible for people with disabilities](../create-reports/desktop-accessibility-overview.md).
 
 ## Cross-highlighting and cross-filtering

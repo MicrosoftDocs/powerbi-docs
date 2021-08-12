@@ -5,7 +5,7 @@ author: KesemSharabi
 ms.author: kesharab
 ms.topic: troubleshooting
 ms.service: powerbi
-ms.subservice: pbi-deployment
+ms.subservice: pbi-deployment-pipeline
 ms.date: 06/22/2021
 ---
 
@@ -187,15 +187,19 @@ When working with deployment pipelines, you might end up with a pipeline that do
 
 When a pipeline is left without an owner, a Power BI administrator can use the [admin Power BI REST APIs](/rest/api/power-bi/admin) to add an owner to the pipeline, or delete it. To add an owner to the pipeline, use the [Admin - Pipelines UpdateUserAsAdmin](/rest/api/power-bi/admin/pipelines-update-user-as-admin) API.
 
-You can also review our PowerShell script, [AddUserToWorkspacePipeline](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/Admin-DeploymentPipelines-AddUserToWorkspacePipeline) (available form the [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples) GtHub repository), which lets you do the following:
+You can also review our PowerShell script, [AddUserToWorkspacePipeline](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/Admin-DeploymentPipelines-AddUserToWorkspacePipeline) (available form the [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples) GitHub repository), which lets you do the following:
 
 * *Manage pipeline access* - Add any user to a workspace in a pipeline.
 
 * *Reclaim workspace ownership* - Add any user to a workspace in a pipeline that doesn't have an owner, allowing you to unblock it.
 
-To use this scrip, you'll need to provide a *workspace name* and and a *user principal name (UPN)*. The script will find the pipeline that the workspace is assigned to, and add admin permissions to the user you specified.
+To use this script, you'll need to provide a *workspace name* and and a *user principal name (UPN)*. The script will find the pipeline that the workspace is assigned to, and add admin permissions to the user you specified.
 
 ## Paginated reports
+
+### Why can't I see a paginated report?
+
+To view a paginated report in the pipeline, you need to have a [paginated reports workload](./../developer/embedded/embed-paginated-reports.md#step-4---enable-paginated-reports-workload) enabled on your capacity.
 
 ### Why can't I deploy a paginated report?
 
@@ -203,7 +207,7 @@ To deploy a paginated report, both of these conditions must be met:
 
 * You need to be a workspace member in the workspace you're deploying from (the source stage workspace). If you're not a workspace member in the source stage, you'll not be able to deploy the paginated report.
 
-* In your target stage capacity, you need to [enable paginated reports workload](./../developer/embedded/embed-paginated-reports-organization.md#enable-paginated-reports-workload).
+* In your target stage capacity, you need to [enable paginated reports workload](./../developer/embedded/embed-paginated-reports.md#step-4---enable-paginated-reports-workload).
 
 ### Who's the owner of a deployed paginated report?
 

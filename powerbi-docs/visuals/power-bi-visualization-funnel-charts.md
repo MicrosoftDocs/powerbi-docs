@@ -13,9 +13,7 @@ LocalizationGroup: Visualizations
 ---
 # Create and use funnel charts
 
-[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
-
-[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 A funnel chart helps you visualize a linear process that has sequential connected stages. For example, a sales funnel that tracks customers through stages: Lead \> Qualified Lead \> Prospect \> Contract \> Close.  At a glance, the shape of the funnel conveys the health of the process you're tracking.
 
@@ -88,7 +86,7 @@ Now create your own funnel chart that shows the number of opportunities we have 
      
      ![details for Proposal bar](media/power-bi-visualization-funnel-charts/funnelhover-new.png)
 
-6. [Save the report](../create-reports/service-report-save.md).
+6. Save the report.
 
 ## Highlighting and cross-filtering
 For information about using the Filters pane, see [Add a filter to a report](../create-reports/power-bi-report-add-filter.md).

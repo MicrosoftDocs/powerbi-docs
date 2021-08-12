@@ -12,9 +12,7 @@ LocalizationGroup: Visualizations
 ---
 # Add visuals to a Power BI report (part 2)
 
-[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
-
-[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 In [Part 1](power-bi-report-add-visualizations-i.md), you created a basic visualization by selecting checkboxes next to field names.  In Part 2, you'll learn how to use drag-and-drop and make full use of the **Fields** and **Visualizations** panes to create and modify visualizations.
 
@@ -55,7 +53,7 @@ Create a visualization by selecting a field from the **Fields** pane. The type o
 5. [Resize the visualization](power-bi-visualization-move-and-resize.md) by selecting the visualization, grabbing one of the outline circles and dragging. Make it wide enough to eliminate the scrollbar and small enough to give us enough room to add another visualization.
    
    ![screenshot of area chart visual](media/power-bi-report-add-visualizations-ii/pbi_part2_7b.png)
-6. [Save the report](../create-reports/service-report-save.md).
+6. Save the report.
 
 ### Add a map visualization that looks at sales by location
 

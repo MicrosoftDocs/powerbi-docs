@@ -6,7 +6,7 @@ ms.author: kfollis
 ms.reviewer: maggies
 ms.custom: video-DN1t5p9aui0
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: tutorial
 ms.date: 12/31/2020
 ---

@@ -13,9 +13,7 @@ LocalizationGroup: Visualizations
 ---
 # Create and use filled maps (choropleth maps) in Power BI
 
-[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
-
-[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 A filled map uses shading or tinting or patterns to display how a value differs in proportion across a geography or region.  Quickly display these relative differences with shading that ranges from light (less-frequent/lower) to dark (more-frequent/more).    
 
@@ -86,7 +84,7 @@ This tutorial uses the [Sales and Marketing sample PBIX file](https://download.m
 7. The filled map is shaded in orange and blue, with orange representing the lower sentiment numbers and blue representing the higher, more-positive sentiment.  To display additional detail, drag a field into the Tooltips well.  Here we've added **SalesFact** > **Sentiment gap**. Highlighting the state of Idaho (ID) shows us that sentiment gap is low, at 6.
    ![filled map showing Idaho tooltips](media/power-bi-visualization-filled-maps-choropleths/power-bi-idaho.png)
 
-10. [Save the report](../create-reports/service-report-save.md).
+8. Save the report.
 
 Power BI gives you plenty of control over the appearance of your filled map. Play around with these data color controls until you get the look you want. 
 

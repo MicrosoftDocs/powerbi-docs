@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 12/15/2020
+ms.date: 07/07/2021
 LocalizationGroup: Share your work
 ---
 # Datasets discovery using the datasets hub (preview)
@@ -24,7 +24,7 @@ This article explains what you see on the datasets hub and describes how to use 
 
 **What datasets do I see in the datasets hub?**
 * For a dataset to show up in the datasets hub, it must be located in a [new workspace experience](../collaborate-share/service-new-workspaces.md).
-* The datasets you can see in the datasets hub are those that you have at least [build permissions](service-datasets-build-permissions.md) for. If [dataset discoverability](../collaborate-share/service-discovery.md) has been enabled for you, you also see datasets that you don't have access to, but they appear greyed out, and you can't create reports from them or see their details. You can request access to them, though. 
+* The datasets you can see in the datasets hub are those that you have at least [build permissions](service-datasets-build-permissions.md) for. If [dataset discoverability](../collaborate-share/service-discovery.md) has been enabled for you, you also see datasets that you don't have access to, but they appear grayed out, and you can't create reports from them or see their details. You can request access to them, though. 
 * If you're a free user, you only see datasets in your *My workspace*, or datasets that you have [build permissions](service-datasets-build-permissions.md) for and that are located in Premium-capacity workspaces.
 
 ## Find the dataset you need
@@ -54,7 +54,7 @@ Recommended datasets are endorsed datasets (promoted or certified) that are pres
 
 ### Dataset list
 
-The dataset list shows you datasets in the organization that you have at least [build permissions](service-datasets-build-permissions.md) to. If [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you, you also see datasets you don't have access to. They appear greyed out.
+The dataset list shows you datasets in the organization that you have at least [build permissions](service-datasets-build-permissions.md) to. If [dataset discoverability](../collaborate-share/service-discovery.md) is enabled for you, you also see datasets you don't have access to. They appear grayed out.
 
 The list has three tabs to filter the list of datasets.
 * **All datasets**: Shows all the datasets in your organization that you have permission to find. 
@@ -81,9 +81,25 @@ When you create a new report based on the dataset, the report edit canvas opens.
 
 To see more information about the dataset, to explore related reports, or to create a new report based on the dataset, from scratch or from a template, pick a dataset from the recommended datasets or from the datasets list. A page will open that shows you information about the dataset, lists the reports that are built on top of the dataset, and provides entry points for creating new reports based on the dataset or pulling the data into Excel via [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md).
 
-![Screenshot of datasets hub explore related reports page](media/service-datasets-hub/datasets-hub-explore-related-reports.png)
+[ ![Screenshot of datasets hub explore related reports page.](media/service-datasets-hub/datasets-hub-details-page-inline-and-expanded.png)](media/service-datasets-hub/datasets-hub-details-page-inline-and-expanded.png#lightbox)
 
 The page header displays the dataset name, endorsement, if any, and dataset owner. To send an email to the dataset owner or the dataset certifier (if any), click the header and then click the name of the owner.
+
+### Action bar
+
+The Action bar at the top of the page contains a number of actions that you can launch.
+
+|Action  |Description  |
+|---------|---------|
+|**File**     | Download the .pbix file for this dataset, manage permissions to this dataset, or go to dataset settings.       |
+|**Refresh**     | Refresh this dataset.        |
+|**Share**     | Share this dataset.        |
+|**Create a report**     | Create a report based on this dataset either from scratch or from a template, if one exists.        |
+|**Analyze in Excel**     | Launch [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) using this dataset.        |
+|**Lineage**     | Open the [lineage view](../collaborate-share/service-data-lineage.md) of this dataset.        |
+|**Chat in Teams**     | Invite people to start [chatting in Teams](../collaborate-share/service-share-report-teams.md). People you invite will receive a Teams chat message from you with a link to this dataset details page. If they have access to the dataset, the link will open this dataset details page in Teams.        |
+|**Show tables**     | Open a side panel showing the dataset's tables.        |
+
 
 ### Dataset details
 

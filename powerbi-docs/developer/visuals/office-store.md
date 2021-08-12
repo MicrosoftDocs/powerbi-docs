@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 07/14/2020
+ms.date: 07/14/2021
 ---
 
 # Publish Power BI visuals to Partner Center
@@ -43,6 +43,7 @@ When you are ready to submit your Power BI visual, verify that your visual meets
 To submit a Power BI visual you need an app package XML from the Power BI team. To get the app package XML, send an email to the Power BI visuals submission team ([pbivizsubmit@microsoft.com](mailto:pbivizsubmit@microsoft.com)).
 
 Before you create the **pbiviz** package, you must fill the following fields in the **pbiviz.json** file:
+
 * description
 * supportUrl
 * author
@@ -59,11 +60,11 @@ Attach the **pbiviz file** and the **sample report pbix file** to your email. Th
 To submit your Power BI visual to AppSource, you need to get an app package from the Power BI team, and then submit it to Partner Center.
 
 >[!IMPORTANT]
->If you're resubmitting a visual, you cannot change its GUID.
+>If you're resubmitting or updating a visual, **do not change its GUID**. Follow these instructions to [test a new version of a visual](submission-testing.md#testing-a-new-version-of-a-published-visual)
 
 ### Getting the app package
 
-You must send an email with the **pbiviz** file and the **pbix** file to the Power BI team before submitting to AppSource. This allows the Power BI team to upload the files to the public share server. Otherwise, the store will not be able to retrieve the files. 
+You must send an email with the **pbiviz** file and the **pbix** file to the Power BI team before submitting to AppSource. This allows the Power BI team to upload the files to the public share server. Otherwise, the store will not be able to retrieve the files.
 
 The Power BI team has to check files for new Power BI visual submissions, updates to existing Power BI visuals, and fixes to rejected submissions.
 
@@ -73,6 +74,7 @@ To submit your Power BI visual to Partner Center, you have to be registered with
 
 >[!NOTE]
 >**Individual publishers** can use one of these methods to submit a Power BI visual:
+>
 >* If you have an old Seller Dashboard account, you can continue using this account's credentials to sign into partner Center.
 >* If you don't have an old Seller Dashboard account, and are not registered to Partner Center, you'll need to [Open a developer account in Partner Center](/office/dev/store/open-a-developer-account) using your work email.
 
@@ -102,7 +104,6 @@ Follow the steps below to submit your Power BI visual to Partner Center. For mor
 
 10. Select **Product setup** and click **Review and publish**.
 
-
 ## Tracking submission status and usage
 
 You can review the [validation policies](/legal/marketplace/certification-policies#1180-power-bi-visuals).
@@ -118,10 +119,10 @@ Once your visual is created, if you want you can get your visual [certified](pow
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Developing a Power BI circle card visual](develop-circle-card.md)
+>[Guidelines for publishing Power BI visuals](guidelines-powerbi-visuals.md)
 
 >[!div class="nextstepaction"]
->[Test you Power BI visual](submission-testing.md)  
+>[Test your Power BI visual](submission-testing.md)  
 
 >[!div class="nextstepaction"]
 >[Getting a Power BI visual certified](power-bi-custom-visuals-certified.md)
