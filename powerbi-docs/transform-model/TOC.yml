@@ -59,6 +59,8 @@
       href: dataflows/dataflows-features-limitations.md
     - name: "Streaming dataflows (preview)"
       href: dataflows/dataflows-streaming.md
+    - name: "Developing dataflows solutions"
+      href: dataflows/dataflows-develop-solutions.md      
   - name: Log analytics
     items: 
     - name: "Using Azure Log Analytics in Power BI (Preview)"
