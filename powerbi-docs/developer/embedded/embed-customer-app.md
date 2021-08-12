@@ -63,13 +63,13 @@ To embed Power BI content in an *embed for your customers* solution, follow thes
 
 2. [Get the embedding parameter values](#step-2---get-the-embedding-parameter-values).
 
-3. [Add the required NuGet packages](#step-3---add-the-required-nuget-packages)
+3. [Add the required NuGet packages](#step-3---add-the-required-nuget-packages).
 
 4. [Enable server side authentication](#step-4---enable-server-side-authentication).
 
 5. [Build your app's client side](#step-5---build-your-apps-client-side).
 
-6. [Run your application](#step-6---run-your-application)
+6. [Run your application](#step-6---run-your-application).
 
 ## Step 1 - Configure your Azure AD app and service principal
 
