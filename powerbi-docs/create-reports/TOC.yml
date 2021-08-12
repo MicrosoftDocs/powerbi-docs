@@ -401,7 +401,7 @@
         - name: "Create visuals with R packages"
           href: ../connect-data/service-r-packages-support.md
        - name: "Quick Insights"
-        items:
+         items:
         - name: "Quick Insights"
           href: service-insights.md
         - name: "Optimize data for Quick Insights"
