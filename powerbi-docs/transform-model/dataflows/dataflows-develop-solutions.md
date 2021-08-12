@@ -114,7 +114,7 @@ Imagine you have a dataflow that is millions of rows of data, but you want build
 
 ### Solution: Use Schema View
 
-You can [use Schema view](https://docs.microsoft.com/en-us/power-query/schema-view), which is designed to optimize your flow when working on schema level operations by putting your query's column information front and center. Schema view provides contextual interactions to shape your data structure, and lower latency operations as it only requires the column metadata to be computed and not the complete data results.
+You can [use Schema view](/power-query/schema-view), which is designed to optimize your flow when working on schema level operations by putting your query's column information front and center. Schema view provides contextual interactions to shape your data structure, and lower latency operations as it only requires the column metadata to be computed and not the complete data results.
 
 ## Working with bigger data sources
 
@@ -122,11 +122,11 @@ Imagine you run a query on the source system, but you don't want to provide dire
 
 ### Solution 1: Use a View for the query or optimize the query
 
-Using an optimized data source and query is your best option. Often, the data source operates best with queries intended for it, and Power Query has advanced query folding capabilities to delegate these workloads. Power BI also provides step folding indicators in Power Query Online. You can read more about types of indicators in the [step folding indicators documentation](https://docs.microsoft.com/power-query/step-folding-indicators).
+Using an optimized data source and query is your best option. Often, the data source operates best with queries intended for it, and Power Query has advanced query folding capabilities to delegate these workloads. Power BI also provides step folding indicators in Power Query Online. You can read more about types of indicators in the [step folding indicators documentation](/power-query/step-folding-indicators).
 
 ### Solution 2: Use Native Query
 
-You can also use the [Value.NativeQuery()](https://docs.microsoft.com/en-us/powerquery-m/value-nativequery) M function that allows you to do this by setting *EnableFolding=true* in the third parameter. It's documented [here](https://docs.microsoft.com/en-us/power-query/connectors/postgresql#native-query-folding) for the Postgres connector and it also works for the SQL Server connector.
+You can also use the [Value.NativeQuery()](/powerquery-m/value-nativequery) M function that allows you to do this by setting *EnableFolding=true* in the third parameter. It's documented [here](/power-query/connectors/postgresql) for the Postgres connector and it also works for the SQL Server connector.
 
 ### Solution 3: Break the dataflow into ingestion and consumption dataflows to take advantage of the enhanced compute engine and Linked Entities.**
 
@@ -146,9 +146,9 @@ Imagine you have business requirements to automate imports, exports, or refreshe
 
 | **Type** | **Mechanism** |
 | --- | --- |
-| Use the [PowerAutomate templates](dataflow-power-automate-connector-templates.md) | No-code |
+| Use the [PowerAutomate templates](/power-query/dataflows/dataflow-power-automate-connector-templates) | No-code |
 | Use [automation scripts in PowerShell](https://github.com/microsoft/powerbi-powershell/tree/master/examples/dataflows) | Automation Scripts |
-| Build your own business logic using [the APIs](https://docs.microsoft.com/rest/api/power-bi/dataflows) | Rest API |
+| Build your own business logic using [the APIs](/rest/api/power-bi/dataflows) | Rest API |
 
 For more information about refresh, see [understanding and optimizing dataflows refresh](dataflows-understand-optimize-refresh.md)
 
