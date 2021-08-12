@@ -73,4 +73,5 @@ Where:
 
 ## Next steps
 
+* [Default label policy for Power BI](service-security-sensitivity-label-default-label-policy.md)
 * [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
