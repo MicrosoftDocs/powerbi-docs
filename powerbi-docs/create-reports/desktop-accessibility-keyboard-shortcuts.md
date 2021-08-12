@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/04/2020
+ms.date: 08/10/2021
 LocalizationGroup: Create reports
 ---
 # Keyboard shortcuts in Power BI Desktop
@@ -55,6 +55,7 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Move a visual on the canvas (bigger moves)* | **Shift + arrow keys** |
 | Resize a visual* | **Arrow keys**  |
 | Maintain aspect ratio*  | **Shift** + drag the resize handles |
+| Group Visuals*  | Select visuals + **Ctrl + G** |
 
 
 \* Must be in editing mode

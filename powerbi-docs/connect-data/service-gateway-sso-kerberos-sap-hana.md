@@ -60,17 +60,19 @@ To follow the steps in this section, you need to [collect gateway logs](/data-in
 
 **Error symptoms**
 
-This issue has multiple symptoms. When you try to add a new data source, you might see an error message like the following:
+This issue has multiple symptoms.
 
-```Unable to connect: We encountered an error while trying to connect to . Details: "We could not register this data source for any gateway instances within this cluster. Please find more details below about specific errors for each gateway instance."```
+- When you try to add a new data source, you might see an error message like the following:
 
-When you try to create or refresh a report, you might see the following error message:
+   ```Unable to connect: We encountered an error while trying to connect to . Details: "We could not register this data source for any gateway instances within this cluster. Please find more details below about specific errors for each gateway instance."```
 
-:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-01.png" alt-text="Screenshot of a 'Cannot load model' troubleshooting SSL error window.":::
+- When you try to create or refresh a report, you might see the following error message:
 
-When you investigate the Mashup[date]*.log, you'll see the following error message:
+   :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-01.png" alt-text="Screenshot of a 'Cannot load model' troubleshooting SSL error window.":::
 
-```A connection was successfully established with the server, but then an error occurred during the login process and The certificate chain was issued by an authority that is not trusted.```
+- When you investigate the Mashup[date]\*.log, you'll see the following error message:
+
+   ```A connection was successfully established with the server, but then an error occurred during the login process and The certificate chain was issued by an authority that is not trusted.```
 
 **Resolution**
 
@@ -81,6 +83,8 @@ To resolve this SSL error, go to the data source connection and then, in the **V
 After you've selected this setting, the error message will no longer appear.
 
 #### Impersonation
+
+**Symptom**
 
 Log entries for impersonation contain entries similar to the following: ```About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Impersonation).``` 
 
@@ -98,13 +102,16 @@ Refresh or create the report, and then collect the gateway logs. Open the most r
 
 
 #### Delegation
+
+**Symptom**
+
 Delegation issues usually appear in the Power BI service as generic errors. To make sure that the issue is not a delegation issue, collect Wireshark traces and use *Kerberos* as a filter. To learn more about Wireshark, and for information about Kerberos errors, see the blog post about [Kerberos errors in network captures](/archive/blogs/askds/kerberos-errors-in-network-captures).
 
 The following symptoms and troubleshooting steps can help remedy some common issues.
 
 **SPN issues**
 
-If you experience service principal name (SPN) issues when you're investigating the Mashup[date]*.log, you see the following error: ```The import [table] matches no exports. Did you miss a module reference?:```
+If you see the following error: ```The import [table] matches no exports. Did you miss a module reference?:``` while investigating the Mashup[date]\*.log, then you are experiencing service principal name (SPN) issues.
 
 When you investigate further by using Wireshark traces, you reveal the error **KRB4KDC_ERR_S_PRINCIPAL_UNKOWN**, which means that the SPN was not found or does not exist. The following image shows an example:
 

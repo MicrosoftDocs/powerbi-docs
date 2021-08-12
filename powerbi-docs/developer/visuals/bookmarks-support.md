@@ -200,4 +200,4 @@ To save a property value as a filter state, set the object property as `"filterS
 > [What are bookmarks](../../consumer/end-user-bookmarks.md)
 
 > [!div class="nextstepaction"]
-> [Create bookmarks in desktop reports](../../create-reports/desktop-bookmarks.md#using-bookmarks)
+> [Create bookmarks in desktop reports](../../create-reports/desktop-bookmarks.md#create-report-bookmarks)

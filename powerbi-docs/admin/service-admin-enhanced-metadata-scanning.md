@@ -1,5 +1,5 @@
 ---
-title: Enhanced metadata scanning
+title: Enhanced metadata scanning (preview)
 description: Learn about how to scan to get detailed, low-level metadata about your organization's Power BI data assets.
 author: paulinbar
 ms.author: painbar
@@ -11,7 +11,7 @@ ms.date: 06/23/2021
 LocalizationGroup: Administration
 ---
 
-# Enhanced metadata scanning
+# Enhanced metadata scanning (preview)
 
 Scanner APIs are a set of Admin REST APIs used for extracting high-level metadata about the artifacts in your organization. This high-level metadata includes such things as artifact name, sensitivity, endorsement status, etc. *Enhanced metadata scanning* is a feature that enables you to get more detailed, granular, lower-level information, such as the names of dataset tables and columns, measures, DAX expressions, and mashup queries.
 
