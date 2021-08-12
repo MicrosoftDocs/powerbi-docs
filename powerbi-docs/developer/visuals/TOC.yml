@@ -48,8 +48,6 @@
       href: objects-properties.md
     - name: "Advanced edit mode"
       href: advanced-edit-mode.md
-    - name: "supportsMultiVisualSelection feature"
-      href: supportsmultivisualselection-feature.md
   - name: How to
     items:
     - name: "Get a Power BI visual certified"
@@ -92,6 +90,8 @@
       href: conditional-format.md
     - name: "Highlight data in visuals"
       href: highlight.md
+    - name: "Enable selection across multiple visuals"
+      href: supportsmultivisualselection-feature.md
     - name: "Enable keyboard navigation"
       href: supportskeyboardfocus-feature.md
     - name: "Add high-contrast mode support"
