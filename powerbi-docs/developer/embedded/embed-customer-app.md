@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 08/08/2021
+ms.date: 08/12/2021
 ---
 
 # Tutorial: Embed a Power BI report in an application for your customers
@@ -128,15 +128,9 @@ Add the NuGet packages listed below to your app:
 * In **Visual studio**, navigate to *Tools* > *NuGet Package Manager* > *Package Manager Consol* and type in the code below.
 
 ```powershell
-dotnet add package Microsoft.Identity.Web -v 0.3.0-preview
-dotnet add package Microsoft.Identity.Web.UI -v 0.3.0-preview
+dotnet add package Microsoft.Identity.Web
+dotnet add package Microsoft.Identity.Web.UI
 dotnet add package Microsoft.PowerBI.Api
-```
-
-If your app previously used `Microsoft.AspNetCore` to authenticate, remove this package from your project by typing:
-
-```powershell
-dotnet remove package Microsoft.AspNetCore.Authentication.AzureAD.UI
 ```
 
 ## Step 4 - Enable server-side authentication
@@ -163,45 +157,84 @@ Add the code snippet below to your app's **Startup.cs** file.
 >3. The call to `services.AddScoped(typeof(PowerBiServiceApi))` configures the `PowerBiServiceApi` class as a service class that can be added to other classes using dependency injection.
 
 ```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.Identity.Web;
-using Microsoft.Identity.Web.TokenCacheProviders;
-using Microsoft.Identity.Web.TokenCacheProviders.InMemory;
 using Microsoft.Identity.Web.UI;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using AppOwnsData.Services;
 
-namespace AppOwnsData {
+namespace AppOwnsData
+{
+    public class Startup
+    {
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
 
-  public class Startup {
+        public IConfiguration Configuration { get; }
 
-    public Startup (IConfiguration configuration) {
-      Configuration = configuration;
+        // This method gets called by the runtime. Use this method to add services to the container.
+        public void ConfigureServices(IServiceCollection services) {
+
+    services.AddMicrosoftIdentityWebAppAuthentication(Configuration)
+            .EnableTokenAcquisitionToCallDownstreamApi()
+            .AddInMemoryTokenCaches();
+
+            services.AddScoped(typeof(PowerBiServiceApi));
+
+            services.AddControllersWithViews(options => {
+                var policy = new AuthorizationPolicyBuilder()
+                    .RequireAuthenticatedUser()
+                    .Build();
+                options.Filters.Add(new AuthorizeFilter(policy));
+            });
+            services.AddRazorPages()
+                    .AddMicrosoftIdentityUI();
+        }
+
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Home/Error");
+                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                app.UseHsts();
+            }
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+
+            app.UseRouting();
+
+            app.UseAuthentication();
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapRazorPages();
+            });
+        }
     }
-
-    public IConfiguration Configuration { get; }
-
-    // This method gets called by the runtime. Use this method to add services to the container.
-    public void ConfigureServices (IServiceCollection services) {
-
-      services
-        .AddMicrosoftIdentityWebAppAuthentication(Configuration)
-        .EnableTokenAcquisitionToCallDownstreamApi(PowerBiServiceApi.RequiredScopes)
-        .AddInMemoryTokenCaches();
-
-      services.AddScoped (typeof (PowerBiServiceApi));
-
-      var mvcBuilder = services.AddControllersWithViews (options => {
-        var policy = new AuthorizationPolicyBuilder()
-          .RequireAuthenticatedUser()
-          .Build();
-        options.Filters.Add (new AuthorizeFilter (policy));
-      });
-
-      mvcBuilder.AddMicrosoftIdentityUI();
-
-      services.AddRazorPages();
-
-    }
-  }
 }
 ```
 
@@ -214,28 +247,28 @@ In this tutorial, the `appsettings.json` file contains sensitive information suc
 2. Add the following code to **appsettings.json**:
 
     ```json
-    {
-        "AzureAd": {
-            "Instance": "https://login.microsoftonline.com/",
-            "Domain": "",
-            "TenantId": "",
-            "ClientId": "",
-            "ClientSecret": "",
-            "CallbackPath": "/signin-oidc",
-            "SignedOutCallbackPath": "/signout-callback-oidc"
-        },
-        "PowerBi": {
-            "ServiceRootUrl": "https://api.powerbi.com"
-        },
-        "Logging": {
-            "LogLevel": {
-                "Default": "Information",
-                "Microsoft": "Warning",
-                "Microsoft.Hosting.Lifetime": "Information"
-            }
-        },
-        "AllowedHosts": "*"
-    }
+   {
+     "AzureAd": {
+       "Instance": "https://login.microsoftonline.com/",
+       "Domain": "yourtenant.onMicrosoft.com",
+       "TenantId": "",
+       "ClientId": "",
+       "ClientSecret": "",
+       "CallbackPath": "/signin-oidc",
+       "SignedOutCallbackPath": "/signout-callback-oidc"
+     },
+     "PowerBi": {
+       "ServiceRootUrl": "https://api.powerbi.com/"
+     },
+     "Logging": {
+       "LogLevel": {
+         "Default": "Information",
+         "Microsoft": "Warning",
+         "Microsoft.Hosting.Lifetime": "Information"
+       }
+     },
+    "AllowedHosts": "*"
+   }
     ```
 
 3. Fill in the embedding parameter values obtained from [Step 2 - Get the embedding parameter values](#step-2---get-the-embedding-parameter-values).
@@ -266,6 +299,10 @@ The `RequiredScopes` field holds a string array containing a set of [delegated p
 3. Add the following code to **PowerBiServiceApi.cs**.
 
     ```csharp
+    using System;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using Microsoft.Extensions.Configuration;
     using Microsoft.Identity.Web;
     using Microsoft.Rest;
     using Microsoft.PowerBI.Api;
@@ -273,121 +310,60 @@ The `RequiredScopes` field holds a string array containing a set of [delegated p
     using Newtonsoft.Json;
     
     namespace AppOwnsData.Services {
-    
-    // A view model class to pass the data needed to embed a single report.
-      public class EmbeddedReportViewModel {
-        public string Id;
-        public string Name;
-        public string EmbedUrl;
-        public string Token;
-      }
-    
-      public class PowerBiServiceApi {
-    
-        private ITokenAcquisition tokenAcquisition { get; }
-        private string urlPowerBiServiceApiRoot { get; }
-    
-        public PowerBiServiceApi(IConfiguration configuration, ITokenAcquisition tokenAcquisition) {
-          this.urlPowerBiServiceApiRoot = configuration["PowerBi:ServiceRootUrl"];
-          this.tokenAcquisition = tokenAcquisition;
+
+        // A view model class to pass the data needed to embed a single report.
+        public class EmbeddedReportViewModel {
+            public string Id;
+            public string Name;
+            public string EmbedUrl;
+            public string Token;
         }
     
-        public const string powerbiApiDefaultScope = "https://analysis.windows.net/powerbi/api/.default";
+        public class PowerBiServiceApi {
     
-        // A method to get the Azure AD token (also known as 'access token')
-        public string GetAccessToken() {
-          return this.tokenAcquisition.GetAccessTokenForAppAsync(powerbiApiDefaultScope).Result;
+            private ITokenAcquisition tokenAcquisition { get; }
+            private string urlPowerBiServiceApiRoot { get; }
+    
+            public PowerBiServiceApi(IConfiguration configuration, ITokenAcquisition tokenAcquisition) {
+                this.urlPowerBiServiceApiRoot = configuration["PowerBi:ServiceRootUrl"];
+                this.tokenAcquisition = tokenAcquisition;
+            }
+    
+            public const string powerbiApiDefaultScope = "https://analysis.windows.net/powerbi/api/.default";
+    
+            // A method to get the Azure AD token (also known as 'access token')
+            public string GetAccessToken() {
+                return this.tokenAcquisition.GetAccessTokenForAppAsync(powerbiApiDefaultScope).Result;
+            }
+    
+            public PowerBIClient GetPowerBiClient() {
+                var tokenCredentials = new TokenCredentials(GetAccessToken(), "Bearer");
+                return new PowerBIClient(new Uri(urlPowerBiServiceApiRoot), tokenCredentials);
+            }
+    
+            public async Task<EmbeddedReportViewModel> GetReport(Guid WorkspaceId, Guid ReportId) {
+    
+                PowerBIClient pbiClient = GetPowerBiClient();
+    
+                // Call the Power BI service API to get the embedding data
+                var report = await pbiClient.Reports.GetReportInGroupAsync(WorkspaceId, ReportId);
+    
+                // Generate a read-only embed token for the report
+                var datasetId = report.DatasetId;
+                var tokenRequest = new GenerateTokenRequest(TokenAccessLevel.View, datasetId);
+                var embedTokenResponse = await pbiClient.Reports.GenerateTokenAsync(WorkspaceId, ReportId, tokenRequest);
+                var embedToken = embedTokenResponse.Token;
+    
+                // Return the report embedded data to caller
+                return new EmbeddedReportViewModel {
+                    Id = report.Id.ToString(),
+                    EmbedUrl = report.EmbedUrl,
+                    Name = report.Name,
+                    Token = embedToken
+                };
+            }
+    
         }
-    
-        public PowerBIClient GetPowerBiClient() {
-          var tokenCredentials = new TokenCredentials(GetAccessToken(), "Bearer");
-          return new PowerBIClient(new Uri(urlPowerBiServiceApiRoot), tokenCredentials);
-        }
-    
-        public async Task<EmbeddedReportViewModel> GetReport(Guid WorkspaceId, Guid ReportId) {
-    
-          PowerBIClient pbiClient = GetPowerBiClient();
-    
-          // Call the Power BI service API to get the embedding data
-          var report = await pbiClient.Reports.GetReportInGroupAsync(WorkspaceId, ReportId);
-    
-          // Generate a read-only embed token for the report
-          var datasetId = report.DatasetId;
-          var tokenRequest = new GenerateTokenRequest(TokenAccessLevel.View, datasetId);
-          var embedTokenResponse = await pbiClient.Reports.GenerateTokenAsync(WorkspaceId, ReportId, tokenRequest);
-          var embedToken = embedTokenResponse.Token;
-    
-          // Return the report embedded data to caller
-          return new EmbeddedReportViewModel {
-            Id = report.Id.ToString(),
-            EmbedUrl = report.EmbedUrl,
-            Name = report.Name,
-            Token = embedToken
-          };
-        }
-    
-        public async Task<string> GetEmbeddedViewModel(string appWorkspaceId = "") {
-    
-          PowerBIClient pbiClient = GetPowerBiClient();
-    
-          Object viewModel;
-    
-          Guid workspaceId = new Guid(appWorkspaceId);
-          var workspaces = (await pbiClient.Groups.GetGroupsAsync()).Value;
-          var currentWorkspace = workspaces.First((workspace) => workspace.Id == workspaceId);
-          var datasets = (await pbiClient.Datasets.GetDatasetsInGroupAsync(workspaceId)).Value;
-          var reports = (await pbiClient.Reports.GetReportsInGroupAsync(workspaceId)).Value;
-    
-          IList<GenerateTokenRequestV2Dataset> datasetRequests = new List<GenerateTokenRequestV2Dataset>();
-          foreach (var dataset in datasets) {
-            datasetRequests.Add(new GenerateTokenRequestV2Dataset(dataset.Id));
-          };
-    
-          IList<GenerateTokenRequestV2Report> reportRequests = new List<GenerateTokenRequestV2Report>();
-          foreach (var report in reports) {
-            reportRequests.Add(new GenerateTokenRequestV2Report(report.Id, allowEdit: true));
-          };
-    
-    
-          IList<GenerateTokenRequestV2TargetWorkspace> workspaceRequests =
-            new GenerateTokenRequestV2TargetWorkspace[] {
-                    new GenerateTokenRequestV2TargetWorkspace(workspaceId)
-          };
-    
-    
-          GenerateTokenRequestV2 tokenRequest =
-            new GenerateTokenRequestV2(datasets: datasetRequests,
-                                        reports: reportRequests,
-                                        targetWorkspaces: workspaceRequests);
-    
-    
-          // Call the Power BI service API and pass the GenerateTokenRequest object to generate an embed token
-          string embedToken = pbiClient.EmbedToken.GenerateToken(tokenRequest).Token;
-    
-    
-          viewModel = new {
-            workspaces = workspaces,
-            currentWorkspace = currentWorkspace.Name,
-            datasets = datasets,
-            reports = reports,
-            token = embedToken
-          };
-    
-          return JsonConvert.SerializeObject(viewModel);
-        }
-    
-        public async Task<Group> GetFirstWorkspace() {
-          PowerBIClient pbiClient = this.GetPowerBiClient();
-          var workspaces = (await pbiClient.Groups.GetGroupsAsync()).Value;
-          if (workspaces.Count > 0) {
-            return workspaces.First();
-          }
-          else {
-            return null;
-          }
-        }
-    
-      }
     }
     ```
 
@@ -398,38 +374,51 @@ In this code example, you'll use dependency injection. As you registered the `Po
 From the **Controllers** folder, open the **HomeController.cs** file and add to it the following code snippet:
 
 ```csharp
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using AppOwnsData.Models;
 using AppOwnsData.Services;
 
-namespace AppOwnsData.Controllers {
+namespace AppOwnsData.Controllers
+{
     [Authorize]
-    public class HomeController : Controller {
-
+    public class HomeController : Controller
+    {
         private PowerBiServiceApi powerBiServiceApi;
 
-        public HomeController (PowerBiServiceApi powerBiServiceApi) {
+        public HomeController(PowerBiServiceApi powerBiServiceApi)
+        {
             this.powerBiServiceApi = powerBiServiceApi;
         }
 
         [AllowAnonymous]
-        public IActionResult Index() {
+        public IActionResult Index()
+        {
             return View();
         }
 
         public async Task<IActionResult> Embed() {
+
+            // Replace these two GUIDs with the workspace ID and report ID you recorded earlier
             Guid workspaceId = new Guid("11111111-1111-1111-1111-111111111111");
             Guid reportId = new Guid("22222222-2222-2222-2222-222222222222");
+
             var viewModel = await powerBiServiceApi.GetReport(workspaceId, reportId);
+
             return View(viewModel);
         }
 
         [AllowAnonymous]
-        [ResponseCache (Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error() {
-            return View (new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }
@@ -493,46 +482,48 @@ The `powerbi.embed` function uses the `models` configuration object to embed you
 2. Add the following code snippet to the **embed.js** file.
 
     ```javascript
-    $(function(){
-        // 1 - Get DOM object for div that is report container
-        let reportContainer = document.getElementById("embed-container");
+    $(function () {
     
+        // 1 - Get DOM object for div that is report container 
+        var reportContainer = document.getElementById("embed-container");
+      
         // 2 - Get report embedding data from view model
-        let reportId = window.viewModel.reportId;
-        let embedUrl = window.viewModel.embedUrl;
-        let token = window.viewModel.token
-    
+        var reportId = window.viewModel.reportId;
+        var embedUrl = window.viewModel.embedUrl;
+        var token = window.viewModel.token
+      
         // 3 - Embed report using the Power BI JavaScript API.
-        let models = window['powerbi-client'].models;
-        let config = {
-            type: 'report',
-            id: reportId,
-            embedUrl: embedUrl,
-            accessToken: token,
-            permissions: models.Permissions.All,
-            tokenType: models.TokenType.Aad,
-            viewMode: models.ViewMode.View,
-            settings: {
-                panes: {
-                    filters: { expanded: false, visible: true },
-                    pageNavigation: { visible: false }
-                }
+        var models = window['powerbi-client'].models;
+      
+        var config = {
+          type: 'report',
+          id: reportId,
+          embedUrl: embedUrl,
+          accessToken: token,
+          permissions: models.Permissions.All,
+          tokenType: models.TokenType.Embed,
+          viewMode: models.ViewMode.View,
+          settings: {
+            panes: {
+              filters: { expanded: false, visible: true },
+              pageNavigation: { visible: false }
             }
+          }
         };
-    
+      
         // Embed the report and display it within the div container.
-        let report = powerbi.embed(reportContainer, config);
-    
+        var report = powerbi.embed(reportContainer, config);
+      
         // 4 - Add logic to resize embed container on window resize event
-        let heightBuffer = 12;
-        let newHeight = $(window).height() - ($("header").height() + heightBuffer);
+        var heightBuffer = 12;
+        var newHeight = $(window).height() - ($("header").height() + heightBuffer);
         $("#embed-container").height(newHeight);
-        $(window).resize(function() {
-            var newHeight = $(window).height() - ($("header").height() + heightBuffer);
-            $("#embed-container").height(newHeight);
+        $(window).resize(function () {
+          var newHeight = $(window).height() - ($("header").height() + heightBuffer);
+          $("#embed-container").height(newHeight);
         });
-        
-    });
+      
+      });
     ```
 
 ## Step 6 - Run your application
