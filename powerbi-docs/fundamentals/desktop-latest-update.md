@@ -13,7 +13,7 @@ LocalizationGroup: Get started
 ---
 # What's new in Power BI?
 
-## August 2021 Update (2.96.661.0)
+## August 2021 Update (2.96.701.0)
 
 This month's release is like a warm summer day, with rays of new updates shining down on all of our Power BI enthusiasts and customers independent. 
 
