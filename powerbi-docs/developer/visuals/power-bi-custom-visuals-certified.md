@@ -28,7 +28,7 @@ To get your Power BI visual certified, your Power BI visual must comply with all
 
 ### General requirements
 
-All certified Power BI visuals have to be approved by Partner Center. We recommend that you publish your Power BI visual  in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) before submitting it for certification. To learn how to publish a Power BI visual to AppSource, see [Publish Power BI visuals to Partner Center](office-store.md).
+All certified Power BI visuals have to be approved by Partner Center. We recommend that you publish your Power BI visual in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) before submitting it for certification. To learn how to publish a Power BI visual to AppSource, see [Publish Power BI visuals to Partner Center](office-store.md).
 
 Before submitting your Power BI visual to be certified, verify that:
 
