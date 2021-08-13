@@ -118,17 +118,15 @@ If the insight talks about multiple anomalies, or trends, clicking on the insigh
      -	Anomalies and trends are only supported for built-in date hierarchy or date time fields. They aren't supported on custom date hierarchy. 
   -	The data doesn't have significant anomalies or trends. You can try filtering your data or check back later when there’s new data.
   -	The following functionality isn't supported:
-     - On-premises Reporting Services
      - Publish to Web
-     -	On-premises Analysis Services
      -	Live Connection to Azure Analysis Services or SQL Server Analysis Services
-     -	MultiDimensional Analysis Services data sources
+     -	MultiDimensional Analysis Services data sources (e.g. SAP BW, SAP HANA)
      -	Power BI Report Server
   
 - Explanations aren't supported in the following cases:         
    - TopN filters
    - Include/exclude filters
-   - Some complex measure filters
+   - Measure filters
    - Non-numeric measures
    - Use of "Show value as"
    - Filtered measures: filtered measures are visual level calculations with a specific filter applied (for example, Total Sales for France), and are used on some of the visuals created by the insights feature.
