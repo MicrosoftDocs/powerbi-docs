@@ -15,7 +15,7 @@ LocalizationGroup:
 
  The Insights feature help users easily explore and find insights such as anomalies, trends in their data as they interact and consume their reports in Power BI service. It  notifies a user if there are interesting insights in the reports and also provides explanations for the insights. It works out of the box on any report so the consumers can automatically start getting insights from their reports without any set up.
  
- ![Screenshot showing how to get insights.](media/power-bi-insights/insights.gif)
+ [![Screenshot showing how to get insights.](media/power-bi-insights/insights.gif)](media/power-bi-insights/insights.gif#lightbox)
  
 ## License requirements
 
