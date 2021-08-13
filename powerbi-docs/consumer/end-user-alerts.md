@@ -8,7 +8,7 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 08/13/2021
 #Customer intent: As a Power BI service consumer, I want to learn how to create and update a data alert so that I get notified when important data changes above/below my set threshold.
 LocalizationGroup: Dashboards
 ---
@@ -99,7 +99,7 @@ Next, Power BI sends an alert to your Notification center and, optionally, in em
    :::image type="content" source="media/end-user-alerts/power-bi-email.png" alt-text="Screenshot showing an email message for the Alert for Sentiment alert. A link in the message is labeled Go to dashboard.":::
 2. Power BI also adds a message to your **Notification center**.
 
-   :::image type="content" source="media/end-user-alerts/power-bi-task.png" alt-text="Screenshot showing the Search box and a few icon buttons, with the notification icon called out.":::
+   :::image type="content" source="media/end-user-alerts/power-bi-task.png" alt-text="Screenshot showing the Power BI menu bar. The Search box and a few icon buttons are visible. The notification icon is called out.":::
 3. Open your Notification center to see the alert details.
 
    :::image type="content" source="media/end-user-alerts/power-bi-notifications.png" alt-text="Screenshot showing the Notification center, with the notification icon called out and a few notifications visible.":::
@@ -125,11 +125,13 @@ There are many ways to manage your alerts: from the dashboard tile itself, from 
 ### From the Power BI settings menu
 
 1. Select the gear icon from the Power BI menubar.
-   
-    ![gear icon](media/end-user-alerts/power-bi-gear-icon.png).
+
+   :::image type="content" source="media/end-user-alerts/power-bi-gear-icon.png" alt-text="Screenshot showing the Power BI menu bar. The Search box and a few icon buttons are visible. The gear icon is called out.":::
+
 2. Under **Settings** select **Alerts**.
-   
-    ![Alerts tab of Settings window](media/end-user-alerts/power-bi-settings.png)
+
+   :::image type="content" source="media/end-user-alerts/power-bi-settings.png" alt-text="Screenshot showing the Alerts tab of the Settings window. A few alerts are visible, and the Alerts tab is called out.":::
+
 3. From here you can turn alerts on and off, open the **Manage alerts** window to make changes, or delete the alert.
 
 ## Tips and troubleshooting 
