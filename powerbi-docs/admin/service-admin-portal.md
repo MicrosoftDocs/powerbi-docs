@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 08/02/2021
+ms.date: 08/07/2021
 ms.custom: ''
 LocalizationGroup: Administration
 ---
@@ -605,29 +605,20 @@ Control which users in the organization can download and install template apps *
 
 ![Install template apps not listed in AppSource setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-non-app-source.png)
 
-## Share data with your Microsoft 365 services
+## Q&A settings
 
-### Allow your Microsoft 365 services to process or store Power BI data outside of your Power BI tenant's geographic area
+### Review questions
+When this setting is enabled, dataset owners can review questions end-users ask about their data.
 
-![Screenshot of admin switch allowing Microsoft 365 services to process and store Power BI content remotely.](media/service-admin-portal/allow-m365-process-store-data-remotely-admin-portal-switch.png)
+![Screenshot of Q and A review questions admin setting.](media/service-admin-portal/admin-setting-review-questions.png)
 
-This switch controls whether Power BI content gets listed in the Most Recently Viewed list on the home page of Office.com. Because of the data residency considerations described below, it is disabled by default. When enabled, it allows Power BI content to be listed.
+### Synonym sharing
+When this setting is enabled, users can share Q&A synonyms as suggested terms with everyone in your organization.
 
-Office.com and Power BI may have different data residency requirements. To ensure that features such as the Most Recently Viewed list work, Office.com and Microsoft 365 services may need to process and/or store Power BI data outside the geographic location of the Power BI tenant the data is located in.
+![Screenshot of Q and A synonym sharing admin setting.](media/service-admin-portal/admin-setting-synonym-sharing.png)
 
-By enabling the switch, you, as a Power BI administrator, are explicitly opting in to this feature, and acknowledging that to enable these cross-service capabilities, certain information about your Power BI content may potentially flow outside the geographic region where it is located.
-
-The Power BI content affected includes reports, dashboards, apps, workbooks, paginated reports, and workspaces. The information required by the Most Recently Viewed functionality includes:
-
-* The display name of the content.
-* When the content was last accessed.
-* The type of content that was accessed (report, dashboard etc.).
-
-To enable the switch, go to **Admin portal > Tenant settings > Share data with your Microsoft 365 services.** Expand the switch and set the toggle switch to **Enabled**.
-
-References:
-* [Where is my Power BI tenant located?](service-admin-where-is-my-tenant-located.md)
-* [Microsoft Privacy - Where is Your Data Located](https://www.microsoft.com/trust-center/privacy/data-location)
+> [!NOTE]
+> If you disable this setting and apply the changes, and then later re-enable synonym sharing, it might take a few weeks to reshare all the synonyms within your organization.
 
 ## Capacity settings
 
