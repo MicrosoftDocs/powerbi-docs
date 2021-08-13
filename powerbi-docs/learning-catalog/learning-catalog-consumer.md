@@ -1,15 +1,15 @@
 ---
-title: Consumers learning catalog
-description: Find all the training options for Power BI for consumers who use reports and dashboards, from most basic to most advanced.
+title: Business users learning catalog
+description: Find all the training options for Power BI for business users who use reports and dashboards, from most basic to most advanced.
 author: margoc
 ms.author: margoc
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: article
-ms.date: 03/25/2020
+ms.date: 08/13/2021
 ---
 
-# Consumers learning catalog
+# Business users learning catalog
 
 Do you use reports and dashboards created by others, to make business decisions? 
 
