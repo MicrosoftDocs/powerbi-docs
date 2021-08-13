@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 03/17/2021
+ms.date: 08/13/2021
 LocalizationGroup: Create reports
 ---
 # Use the Analytics pane in Power BI Desktop
