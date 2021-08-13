@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 06/30/2021
+ms.date: 08/05/2021
 ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
 ---
@@ -93,6 +93,7 @@ Limitations to be aware of:
 
 - Workspaces can contain a maximum of 1,000 datasets, or 1,000 reports per dataset. 
 - Power BI publisher for Excel isn't supported.
+- Certain special characters aren't supported in workspace names when using an XMLA endpoint. As a workaround, use URL encoding of special characters, for example, for a forward slash **/**, use **%2F**.
 
 ## Frequently asked questions
 

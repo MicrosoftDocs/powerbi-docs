@@ -60,11 +60,11 @@ Attach the **pbiviz file** and the **sample report pbix file** to your email. Th
 To submit your Power BI visual to AppSource, you need to get an app package from the Power BI team, and then submit it to Partner Center.
 
 >[!IMPORTANT]
->If you're resubmitting a visual, you cannot change its GUID.
+>If you're resubmitting or updating a visual, **do not change its GUID**. Follow these instructions to [test a new version of a visual](submission-testing.md#testing-a-new-version-of-a-published-visual)
 
 ### Getting the app package
 
-You must send an email with the **pbiviz** file and the **pbix** file to the Power BI team before submitting to AppSource. This allows the Power BI team to upload the files to the public share server. Otherwise, the store will not be able to retrieve the files. 
+You must send an email with the **pbiviz** file and the **pbix** file to the Power BI team before submitting to AppSource. This allows the Power BI team to upload the files to the public share server. Otherwise, the store will not be able to retrieve the files.
 
 The Power BI team has to check files for new Power BI visual submissions, updates to existing Power BI visuals, and fixes to rejected submissions.
 

@@ -111,6 +111,10 @@ Downstream inheritance is a critical link in Power BI’s end-to-end information
 
 [Read more about downstream inheritance](service-security-sensitivity-label-downstream-inheritance.md)
 
+## Default label policy (preview)
+
+To help ensure comprehensive protection and governance of sensitive data, organizations can create default label policies for Power BI that automatically apply default sensitivity labels to unlabeled content. Currently, default label policies are supported in Power BI Desktop only. See [Default label policy](service-security-sensitivity-label-default-label-policy.md) for more information.
+
 ## Mandatory label policy (preview)
 
 To help ensure comprehensive protection and governance of sensitive data, organizations can require users to apply labels to their sensitive Power BI content. Such a policy is called a mandatory label policy. See [Mandatory label policy](service-security-sensitivity-label-mandatory-label-policy.md) for more information.
@@ -161,6 +165,10 @@ The following embedding scenarios are supported:
 * [Embed for your organization](../developer/embedded/embed-sample-for-your-organization.md)
 * Microsoft 365 apps (for example, [Teams](../collaborate-share/service-embed-report-microsoft-teams.md) and [SharePoint](../collaborate-share/service-embed-report-spo.md))
 * [Secure URL embedding](../collaborate-share/service-embed-secure.md) (embedding from the Power BI service) 
+
+## Sensitivity labels in paginated reports
+
+Sensitivity labels can be applied to paginated reports hosted in the Power BI service. After uploading a paginated report to the service, you apply the label to the report just as you would to a regular Power BI report. See [Sensitivity label support for paginated reports](service-security-sensitivity-label-paginated-reports.md) for detail.
 
 ## Sensitivity labels in deployment pipelines
 Sensitivity labels are supported in deployment pipelines. See the [deployment pipeline documentation](../create-reports/deployment-pipelines-process.md#item-properties-copied-during-deployment) for details about how sensitivity labels are handled as content is deployed from stage to stage.

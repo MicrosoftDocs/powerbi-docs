@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 05/26/2021
+ms.date: 08/05/2021
 
 
 LocalizationGroup: Common tasks
@@ -64,7 +64,7 @@ See [Considerations and troubleshooting](../consumer/end-user-subscribe.md#consi
 
 ### General
 
-- When creating a subscription, you can add other email addresses in the same domain to the subscription. If the report or dashboard is hosted in a [Premium or Premium-Per-User capacity](../admin/service-premium-what-is.md), you can subscribe group aliases, whether they're in your domain or not. You don't have to subscribe individual email addresses. The aliases are based on the current active directory.
+- When creating a subscription, you can add other email addresses in the same domain to the subscription. If the report or dashboard is hosted in a [Premium capacity](../admin/service-premium-what-is.md), you can subscribe group aliases, whether they're in your domain or not. You don't have to subscribe individual email addresses. The aliases are based on the current active directory.
 - There's a limit to the number of subscribers for one report or dashboard. After you pass 200 subscribers, you may encounter issues with delivery. To reduce the number, use group email aliases instead. Each email alias counts as one subscriber.
 - You can choose whether to include a link back to the content in Power BI and give users access to the content you're subscribing them to. If you choose to include a link, ensure that all users have access to the content. Subscribed users receive report attachments, with data based on your permissions.
 - The option to provide access to the report/dashboard always shows as enabled when you edit an existing subscription.  If you clear this option and save the subscription, it saves that state. However, if you edit the report again, the option will be checked again by default.

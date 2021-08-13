@@ -70,7 +70,6 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Essbase | Yes | Yes | Yes | Yes | Yes | No |
 | Exasol | Yes | Yes | Yes | Yes | Yes | No |
 | Excel | Yes <sup>2</sup> | Yes <sup>2</sup> | No | Yes <sup>2</sup> | No <sup>3</sup> | Yes |
-| Facebook | Yes | Yes | No | No | No | No |
 | File | Yes | Yes | No | Yes | Yes | Yes |
 | Folder | Yes | Yes | No | Yes | Yes | Yes |
 | GitHub | Yes | Yes | No | No | No | No |

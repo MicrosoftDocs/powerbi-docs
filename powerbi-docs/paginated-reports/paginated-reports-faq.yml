@@ -12,7 +12,7 @@ metadata:
     
 title: "Paginated reports in Power BI: FAQ"
 summary: |
-  [!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+  [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
   
   This article answers frequently asked questions about paginated reports. These reports are highly formatted, pixel-perfect output optimized for printing or PDF generation. They're called "paginated" because they're formatted to fit well on multiple pages. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. 
   
@@ -184,7 +184,7 @@ sections:
       - question: |
           Can I use Power BI embedded to embed my paginated reports into an app I'm hosting?
         answer: |
-          SaaS embedding, including Secure Embed support, is already available. For PaaS embedding, refer to the [Embed Power BI paginated reports into an application for your customers](../developer/embedded/embed-paginated-reports-customers.md) tutorial.
+          Yes, to learn how to embed a paginated report, refer to [Embed Power BI paginated reports](../developer/embedded/embed-paginated-reports.md).
           
       - question: |
           Can I drill through from a Power BI report to a paginated report?
