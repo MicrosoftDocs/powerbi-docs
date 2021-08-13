@@ -400,16 +400,16 @@
           href: ../connect-data/desktop-r-ide.md
         - name: "Create visuals with R packages"
           href: ../connect-data/service-r-packages-support.md
-       - name: "Quick Insights"
-         items:
-         - name: "Quick Insights"
-           href: service-insights.md
-         - name: "Optimize data for Quick Insights"
-           href: service-insights-optimize.md
-         - name: "Types of Quick Insights"
-           href: ../consumer/end-user-insight-types.md
-         - name: "View automatic insights for dashboard tiles"
-           href: ../consumer/end-user-insights.md
+      - name: "Quick Insights"
+        items:
+        - name: "Quick Insights"
+          href: service-insights.md
+        - name: "Optimize data for Quick Insights"
+          href: service-insights-optimize.md
+        - name: "Types of Quick Insights"
+          href: ../consumer/end-user-insight-types.md
+        - name: "View automatic insights for dashboard tiles"
+          href: ../consumer/end-user-insights.md
     - name: Natural language Q&A
       items: 
       - name: "Create a Q&A visual"
