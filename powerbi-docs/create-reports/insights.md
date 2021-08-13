@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: 
 ms.topic: how-to
-ms.date: 08/11/2021
+ms.date: 08/16/2021
 LocalizationGroup: 
 ---
 # Insights (preview)
 
- The Insights feature help users easily explore and find insights such as anomalies, trends in their data as they interact and consume their reports in Power BI service. It  notifies a user if there are interesting insights in the reports and also provides explanations for the insights. It works out of the box on any report so the consumers can automatically start getting insights from their reports without any set up.
+ The Insights feature helps users easily explore and find insights such as anomalies, trends in their data as they interact and consume their reports. It  notifies a user if there are interesting insights in the reports and also provides explanations for the insights. It works out of the box on any report so the consumers can automatically start getting insights from their reports without any setup.
  
  [![Screenshot showing how to get insights.](media/power-bi-insights/insights.gif)](media/power-bi-insights/insights.gif#lightbox)
  
@@ -24,12 +24,11 @@ LocalizationGroup:
  
 ## Notifications
 
-Power BI automatically runs insights analysis when you open a report. The light bulb turns yellow and toast notifications are shown if there are **Top** insights in your current report page. **Top** insights are those that are noteworthy based on factors like recency, significance of the trend/anomaly. These notifications are supported only in Premium and Premium Per User (PPU) workspaces.
+Power BI automatically runs insights analysis when you open a report. The light bulb in the action bar turns yellow and toast notifications are shown if there are **Top** insights for visuals in your current report page. **Top** insights are those that are noteworthy based on factors like recency, significance of the trend/anomaly. These notifications are supported only in Premium and PPU workspaces.
 
  ![Screenshot showing toast notification for insights.](media/power-bi-insights/toast.png)
  
-Click on the **See insights** button to open the Insights pane.  
-Choose **Show me later** if you’d not like to get further notifications for this report in the current session.
+Click on the **See insights** button to open the Insights pane or choose **Show me later** if you’d not like to get further notifications for this report in the current session.
 
 If you usually dismiss these notifications or don't engage with them, they'll be disabled for the current session. You can click on **Keep Showing** to continue getting notifications.
 
@@ -42,24 +41,26 @@ If you usually dismiss these notifications or don't engage with them, they'll be
  
 ## Get insights on reports and visuals
 
-You can click on **Get insights** in the action bar to get insights for your current report page. The light bulb turns yellow when there are **Top** insights in your data. 
+Click on **Get insights** in the action bar to open the Insights pane.
 
 ![Screenshot showing Get Insights button in the app bar.](media/power-bi-insights/get-insights-button.png)
 
 The pane only shows insights about the current report page and it updates when you select a different page on the report.
 
-You can select **More options (...)** in the upper-right corner of a visual and then **Get insights** to see insights about just this visual.
+Select **More options (...)** in the upper-right corner of a visual and then **Get insights** to see insights about just that visual.
 
 ![Screenshot showing Get Insights on visual settings.](media/power-bi-insights/get-insights-button-visual.png)
 
 ## Insights
 The Insights pane currently shows you three types of insights – Anomalies, Trends, and KPI analysis.
-The **Top** tab shows you key insights that are noteworthy based on factors like recency, significance of the trend/anomaly. **All** tab shows you both Top insights and other insights. 
+The **Top** tab shows you Top insights. **All** tab shows you both Top insights and other insights. 
 
 ![Screenshot showing pane containing insights.](media/power-bi-insights/insights-pane.png)
 
+Insights are computed every time you open a report or interact with a report such as changing pages, changing filters, or cross-filtering your data.
+
 ### Anomalies
-An anomaly is an abnormality in time-series data, such as unexpected spikes and dips in the data.  The algorithm computes a boundary around what’s considered a normal or expected value. Any value found outside this boundary is marked as an anomaly.  Check out this technical blog for more details about the algorithm.  There are three types of anomaly insights:
+An anomaly is an abnormality in time-series data, such as unexpected spikes and dips in the data. The algorithm computes a boundary around what’s considered a normal or expected value. Any value found outside this boundary is marked as an anomaly. Check out this technical blog for more details about the algorithm. There are three types of anomaly insights:
 - Significant Anomaly: 
 The anomaly has a high score. Anomaly score indicates how far the point is from the expected range. 
 - Recent Anomaly: 
@@ -81,12 +82,8 @@ Recent trend in a single series or across multiple series in a visual where the 
 ### KPI analysis
 KPI analysis with a target looks at the variance of the current value to its target, and it's considered significant if the variance is significantly high or low compared to other segments. Whereas KPI analysis without a target looks at the value itself and flags ones that are significantly high or low compared to other segments. 
 
-KPI Analysis without target (for Cards, Bar and Column charts) looks at the value itself and flags ones that are significantly high or low compared to other segments. 
-
-Insights are computed every time you open a report or interact with a report such as changing pages, changing filters, or cross-filtering your data
-
 ## Explanations
-You can click on the card to get more details about the insight. 
+Click on the card to get more details about the insight. 
 Expand/collapse the cards under **Possible Explanations** to view/hide the explanation visuals and text. 
 
 ### Anomalies
@@ -113,7 +110,7 @@ If the insight talks about multiple anomalies, or trends, clicking on the insigh
 
 - If no insights found are found, you’ll be shown the following message: “We didn’t find any insights”. This can be because:
   - The data or visuals aren't supported
-     -	 Anomalies and trend insights are supported on time series with numeric data on visuals such as Line chart, Area chart, Stacked Area chart, Stacked bar chart, Stacked column chart, Clustered bar chart, Clustered column chart, KPI. KPI analysis insight is supported on KPI, Gauge, and Card.
+     -	 Anomalies and trend insights are supported on time series with numeric data on visuals such as Line chart, Area chart, Stacked Area chart, Stacked bar chart, Stacked column chart, Clustered bar chart, Clustered column chart, KPI. KPI analysis insight is supported on KPI, Gauge, Cards, Bar, and Column charts.
 
      -	Anomalies and trends are only supported for built-in date hierarchy or date time fields. They aren't supported on custom date hierarchy. 
   -	The data doesn't have significant anomalies or trends. You can try filtering your data or check back later when there’s new data.
