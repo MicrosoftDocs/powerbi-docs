@@ -61,12 +61,12 @@ To find out the best way to contact support, read [Power BI support options](ser
 
 1. Go to [Power Platform Admin Center Help + support](https://admin.powerplatform.microsoft.com/support) and sign in using admin credentials.
 1. Select **New support request**, then select the following options to request a region move:
-    1. Product: Power BI Pro
-    1. Problem type: Administration
-    1. Category: Tenant Management
-    1. Tell us what you need help with: Move to a different region
+   - Product: Power BI Pro
+   - Problem type: Administration
+   - Category: Tenant Management
+   - Tell us what you need help with: Move to a different region
 
-       Select **See solutions** to move to the next screen.
+   Select **See solutions** to move to the next screen.
 
      :::image type="content" source="media\service-admin-region-move\ppac-new-support-request.png" alt-text="Screen capture showing field entries for a new support request for a region move in Power Platform Admin Center.":::
 
@@ -78,7 +78,7 @@ To find out the best way to contact support, read [Power BI support options](ser
    |Current region | [Find where data is stored](service-admin-where-is-my-tenant-located.md)|
    |Proposed region | [International availability of Microsoft Power Platform](/power-platform/availability)|
    |Proposed date and time for migration |Give us three options in UTC time. The proposed dates should be at least two weeks later than when you submit the request.|
-   |Contact available after during off-business hours|Phone number and email address|
+   |Contact available after during off-business hours|Name, phone number, and email address|
 
 1. Under **Is the problem you're reporting related to a recent service change?**, choose N/A. Select a severity level, then select **Next**.
 1. Add your contact information, then **Submit**.
